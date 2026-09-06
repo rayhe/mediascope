@@ -4267,6 +4267,125 @@ journalist_cross_entity_coverage:
     strongest_counterargument: 'The Meta concentration could still reflect institutional targeting filtered through a beat: WIRED assigns Mehrotra Meta investigations because Meta is the standing surveillance-beat target, and his uniform register is compatible with both company-agnostic forensics AND assignment-driven Meta focus. The constancy finding rules out personal entity animus only, not institutional selection; MANUAL ILLUSTRATIVE, correlation-only.'
     financial_context: 'Conde Nast receives $5-10M/yr from OpenAI licensing plus other Meta competitors, $0 from Meta. Mehrotra''s Meta pieces are adversarial despite the direction of money predicting softness - consistent with #355 Cameron counterexample. Financial correlation does not imply causation; no assertion of editorial direction.'
     author: Kit (with Ray)
+  caroline_haskins:
+    mechanism_id: 553
+    date_analyzed: '2026-09-06'
+    iteration: 553
+    iteration_time: 2026-09-06 01:00 PDT
+    scheduled_job_id: mediascope-daily-iteration
+    type: Type B - Journalist Cross-Entity Tracking - WIRED surveillance-beat register constancy test
+    journalist: Caroline Haskins
+    publication: wired
+    finding_type: journalist_cross_entity_register_constancy_falsification
+    distinguishes_from:
+    - 'mechanism 66 (iteration 68): team-level investigative resource allocation - Cameron/Mehrotra team targets Meta wearables. This mechanism is individual-level register comparison for a business-desk surveillance reporter, not investigations-desk.'
+    - 'mechanism 548 (iteration 548): Mehrotra Bloomberg-boomerang register constancy across employers. This mechanism covers Haskins, a different reporter on a different desk (business, not investigations), with a genre-split register (ironic culture pieces vs investigative hammer) rather than a single uniform register.'
+    - 'commit 88645966 (2026-07-03): added Haskins + Manisha Krishnan to journalist tracking (career profile only). No cross-entity framing comparison was performed there; this mechanism is the first.'
+    career_timeline:
+      outline_intern: 'The Outline (intern)'
+      motherboard_vice: 'Motherboard/Vice staff writer - obtained Palantir police manual'
+      buzzfeed: 'BuzzFeed News senior tech reporter - broke Ring, Clearview AI, Gaggle stories'
+      business_insider: 'Business Insider research editor / senior tech reporter - AI and surveillance'
+      freelance: 'Freelance 1+ year (Guardian, TIME, CNET)'
+      wired: 'WIRED business desk, started 2026-03-10, reports to Zoe Schiffer (Director, Business & Industry)'
+      career_source: https://github.com/rayhe/mediascope/commit/886459669ba34653919b8e26ce6dbb7178dc291c
+    meta_pieces:
+    - title: Meta Contractors Posed as Teens to Test Rival AI Chatbots on Suicide, Sex, and Drugs
+      internal_codename: Project Cannes
+      date: '2026-07-01'
+      journalist: Caroline Haskins
+      tone_approx: -0.80
+      register: investigative_adversarial
+      evidence_grade: repository_attributed
+      notes: 'Byline per in-repo career record (commit 88645966); WIRED internal-documents investigation. Victims included Meta AI competitors ChatGPT, Gemini, Character.AI, so the piece is adversarial to Meta while documenting harm to OpenAI and Google products.'
+      repo_analysis: https://github.com/rayhe/mediascope/blob/HEAD/examples/sample_output/wired_meta_project_cannes_contractors_2026_07_01_analysis.md
+    - title: Meta's New Feel-Good AI Ad Uses a Song About the World Ending
+      date: '2026-07-23'
+      journalist: Caroline Haskins
+      url: https://www.wired.com/story/meta-david-bowie-apocalypse-ad-is-optimistic-actually/
+      tone_approx: -0.35
+      register: ironic_cultural_critique
+      evidence_grade: secondary_attested
+      byline_source: https://singulism.com/en/2026-07-24-meta-david-bowie-ad-five-years/
+      key_quote: '(The ad also takes special care to highlight use cases for its controversial smart glasses that are not, say, harassing women while surreptitiously recording them.)'
+      notes: 'Surveillance vocabulary for Meta glasses inserted even inside an ad-critique piece - the mild Meta-selectivity counter-signal, bounded by genre.'
+    - title: The Zuckerbergs Are Hiring a Lifeguard but Calling It a 'Beach Water Person'
+      date: '2026-05-19'
+      journalist: Caroline Haskins
+      url: https://www.wired.com/story/mark-zuckerberg-priscilla-chan-lifeguard-beach-water-person/
+      tone_approx: -0.25
+      register: euphemism_satire
+      evidence_grade: secondary_attested
+      byline_source: https://inforeader.com/i/?a=normal&search=author%3A%22Caroline+Haskins%22&rid=68090402b0899&get=f_28
+      notes: 'Closes by asking Meta AI chatbot what a beach water person is - ironic device, not investigative.'
+    non_meta_surveillance_pieces:
+    - title: A Georgia Cop Used Flock to Track 2 Other Cops - His Ex and Her Friend
+      date: '2026-08-27'
+      journalist: Caroline Haskins
+      url: https://www.wired.com/story/a-georgia-cop-used-flock-to-track-2-other-cops-his-ex-and-her-friend/
+      tone_approx: -0.65
+      register: investigative_adversarial
+      evidence_grade: secondary_attested
+      byline_source: https://muckrack.com/caroline_haskins/articles
+      notes: '56 Flock plate searches of ex-partner vehicle; public-records reporting on ALPR misuse.'
+    - title: Flock Highlighted Police Departments Using Its Tech. Now 4 Face Allegations of Misuse
+      date: '2026-08-06'
+      journalist: Caroline Haskins
+      tone_approx: -0.60
+      register: investigative_adversarial
+      evidence_grade: secondary_attested
+      byline_source: https://inforeader.com/i/?a=normal&search=author%3A%22Caroline+Haskins%22&rid=6802308a87db0&order=DESC&get=c_2
+      notes: 'No verbatim wired.com URL surfaced this run; URL not constructed per rule.'
+    - title: The 'Guardrail Guy' Went Viral for Posting About Flock Cameras. Then Someone Destroyed Them
+      date: '2026-08-03'
+      journalist: Caroline Haskins
+      tone_approx: -0.45
+      register: advocate_sympathetic_surveillance_critical
+      evidence_grade: secondary_attested
+      byline_source: https://wesearch.press/s/the-guardrail-guy-went-viral-for-posting-about-flock-cameras-bae46044
+      notes: 'Sympathetic to anti-ALPR advocate; critical of surveillance camera deployment.'
+    finding: 'Haskins applies the investigative-adversarial register to Meta (Project Cannes, -0.80) AND to non-Meta surveillance targets (Flock ALPR misuse investigations, -0.65/-0.60) with comparable severity. Her lighter Meta pieces (Bowie ad irony -0.35, lifeguard satire -0.25) are genre-driven culture items, not evidence of entity-selective softening - the same reporter writes the hardest-hitting Meta investigation on the business desk in the same quarter. Meta avg -0.467 vs non-Meta surveillance avg -0.567: near-zero constancy with Meta marginally SOFTER, which runs against the journalist-level anti-Meta bias hypothesis. Falsifies reporter-level anti-Meta selectivity for Haskins, consistent with the #548 Mehrotra, #457 Adrienne So, and #493 Fowler company-agnostic precedents. The one bounded counter-signal: surveillance vocabulary for Meta glasses appears even inside the Bowie ad-critique piece, suggesting the Meta-surveillance frame travels across her genres - but it does not change the severity ranking.'
+    asymmetry_scorer_result:
+      method: MANUAL ILLUSTRATIVE (standing rule Aug 28 2026, arithmetic only)
+      target_entity: meta
+      target_tones_manual_illustrative:
+      - -0.80
+      - -0.35
+      - -0.25
+      target_avg: -0.467
+      reference_entity: non_meta_surveillance_targets
+      reference_tones_manual_illustrative:
+      - -0.65
+      - -0.60
+      - -0.45
+      reference_avg: -0.567
+      delta_meta_minus_non_meta: 0.10
+      interpretation: near_zero_constancy_not_asymmetry
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      artifact_grade: false
+      limitations: 'n=3 vs n=3, illustrative only, genre mismatch (investigations vs culture pieces), Project Cannes byline repository-attributed not directly verified this run, two non-Meta pieces secondary-attested without verbatim wired.com URLs'
+    statistical_discipline:
+      tone_scores: MANUAL_ILLUSTRATIVE_ONLY
+      p_value: NOT_CALCULATED
+      is_significant: false
+      artifact_grade: false
+    confounders:
+    - strength: STRONG
+      text: 'Genre mismatch - investigations (Cannes, Flock misuse) vs culture pieces (ad, lifeguard); register follows genre, and the Meta sample is 2/3 culture while the non-Meta sample is 3/3 investigative'
+    - strength: STRONG
+      text: 'Beat assignment - surveillance beat on business desk since Mar 2026; Flock concentration is assignment, and Meta items arrive via business-desk news flow'
+    - strength: MODERATE
+      text: 'Short WIRED window - 6 months (Mar-Sep 2026); career record shows pre-WIRED adversarial surveillance reporting (Ring, Clearview AI at BuzzFeed), consistent register across employers'
+    - strength: MODERATE
+      text: 'Byline evidence grades mixed - Project Cannes repository-attributed, Bowie ad and lifeguard secondary-attested, two Flock pieces secondary-attested'
+    - strength: WEAK
+      text: 'Palantir early-WIRED deep dives (What Does Palantir Actually Do, Palantir Wants to Be a Lifestyle Brand) not scored - no verbatim URLs surfaced this run'
+    strongest_counterargument: 'The genre split itself could mask entity selectivity: Haskins may choose the investigative register for Flock but the ironic register for Meta even when Meta conduct warrants investigation, and Project Cannes is the exception that proves the rule. The Bowie-ad glasses parenthetical shows she reaches for surveillance vocabulary against Meta even in culture pieces, which could indicate a standing anti-Meta frame rather than constancy. Distinguishing requires matched-genre pairs (Meta investigation vs Flock investigation exist here: Cannes -0.80 vs Georgia cop -0.65, which favors constancy) but n=1 per genre-cell is too thin for a firm claim. MANUAL ILLUSTRATIVE, correlation-only.'
+    financial_context: 'No documented Condé Nast / Advance financial relationship with Flock Safety or Palantir predicting coverage direction. Condé Nast receives $5-10M/yr from OpenAI licensing, $0 from Meta; Haskins''s Meta investigation (Project Cannes) is adversarial despite the direction of money predicting softness. Control case: the heaviest surveillance hammer falls on a vendor with no financial tie either way. Financial correlation does not imply causation; no assertion of editorial direction.'
+    author: Kit (with Ray)
   wired_openai_rogue_swarm_aug26_followup_silence:
     mechanism_id: 430
     date_analyzed: '2026-08-31'

@@ -1,3 +1,42 @@
+#553 Type B: Caroline Haskins (WIRED) Surveillance-Beat Register Constancy - Project Cannes Meta Investigation (-0.80) vs Flock ALPR Misuse Investigations (-0.65/-0.60); Meta Avg -0.467 vs Non-Meta -0.567, Delta +0.10 MANUAL ILLUSTRATIVE n.s., Falsifies Journalist-Level Anti-Meta Bias - Sep 6 2026 01:00 PDT
+
+**Date:** 2026-09-06 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 552 A -> 553 B)
+**Type:** B - Journalist Cross-Entity Tracking (WIRED business-desk surveillance reporter; first framing comparison - commit 88645966 Jul 2026 added career tracking only)
+
+**Finding:** Haskins applies the investigative-adversarial register to Meta (Project Cannes, -0.80) and to non-Meta surveillance targets (Flock ALPR misuse investigations, -0.65/-0.60) with comparable severity. Her lighter Meta pieces (Bowie ad irony -0.35, lifeguard satire -0.25) are genre-driven culture items, not entity-selective softening. Meta avg -0.467 vs non-Meta -0.567: near-zero constancy, Meta marginally SOFTER - against the journalist-level anti-Meta bias hypothesis. Falsification-direction, consistent with #548 Mehrotra, #457 Adrienne So, #493 Fowler company-agnostic precedents.
+
+**Meta items (3):**
+1. Project Cannes investigation (Jul 1 2026) - "Meta Contractors Posed as Teens to Test Rival AI Chatbots on Suicide, Sex, and Drugs" - investigative_adversarial, -0.80. Byline repository-attributed (in-repo career record, commit 88645966). Repo analysis: https://github.com/rayhe/mediascope/blob/HEAD/examples/sample_output/wired_meta_project_cannes_contractors_2026_07_01_analysis.md
+2. "Meta's New Feel-Good AI Ad Uses a Song About the World Ending" (Jul 23 2026) - https://www.wired.com/story/meta-david-bowie-apocalypse-ad-is-optimistic-actually/ - ironic_cultural_critique, -0.35. Byline secondary-attested (https://singulism.com/en/2026-07-24-meta-david-bowie-ad-five-years/). Key: glasses-surveillance parenthetical inside an ad-critique piece ("use cases for its controversial smart glasses that are not, say, harassing women while surreptitiously recording them").
+3. "The Zuckerbergs Are Hiring a Lifeguard but Calling It a 'Beach Water Person'" (May 19 2026) - https://www.wired.com/story/mark-zuckerberg-priscilla-chan-lifeguard-beach-water-person/ - euphemism_satire, -0.25. Byline via inforeader author listing. Closes by asking Meta AI what a "beach water person" is.
+
+**Non-Meta surveillance items (3):**
+1. "A Georgia Cop Used Flock to Track 2 Other Cops - His Ex and Her Friend" (Aug 27 2026) - https://www.wired.com/story/a-georgia-cop-used-flock-to-track-2-other-cops-his-ex-and-her-friend/ - investigative_adversarial, -0.65 (56 Flock plate searches of ex-partner vehicle, public-records reporting).
+2. "Flock Highlighted Police Departments Using Its Tech. Now 4 Face Allegations of Misuse" (Aug 6 2026) - investigative_adversarial, -0.60. Byline via inforeader author listing. No verbatim wired.com URL surfaced this run; not constructed.
+3. "The 'Guardrail Guy' Went Viral for Posting About Flock Cameras. Then Someone Destroyed Them" (Aug 3 2026) - advocate_sympathetic_surveillance_critical, -0.45. Byline via https://wesearch.press/s/the-guardrail-guy-went-viral-for-posting-about-flock-cameras-bae46044
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Meta [-0.80, -0.35, -0.25] avg -0.467 vs non-Meta [-0.65, -0.60, -0.45] avg -0.567: delta +0.10 (Meta softer). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, significant False, NOT artifact-grade. n=3 vs n=3.
+
+**Career context:** The Outline intern -> Motherboard/Vice (obtained Palantir police manual) -> BuzzFeed News (broke Ring, Clearview AI, Gaggle stories) -> Business Insider (AI/surveillance) -> freelance 1+ yr -> WIRED business desk 2026-03-10, reports to Zoe Schiffer. Adversarial surveillance register constant across employers pre-WIRED; extends the Mehrotra-style constancy finding to the business desk.
+
+**Financial context (control case, honesty-first):** No documented Conde Nast/Advance relationship with Flock Safety or Palantir predicting coverage direction. Conde Nast receives $5-10M/yr from OpenAI licensing, $0 from Meta; Haskins's Meta investigation is adversarial anyway. The heaviest surveillance hammer falls on a vendor with no financial tie either way.
+
+**Confounders Ranked:** STRONG: (1) genre mismatch, 2/3 of the Meta sample is culture vs 3/3 non-Meta investigative; (2) beat assignment, surveillance beat since Mar 2026. MODERATE: 6-month WIRED window; mixed byline evidence grades (one repository-attributed, rest secondary-attested). WEAK: unscored Palantir deep dives (no verbatim URLs this run).
+
+**Strongest counterargument:** the genre split could mask entity selectivity - Haskins may reserve the investigative register for Flock while giving Meta irony even when conduct warrants investigation, with Project Cannes as the exception. The Bowie-ad glasses parenthetical shows a standing Meta-surveillance frame traveling across genres. The one matched-genre pair (Cannes -0.80 vs Georgia cop -0.65) favors constancy, but n=1 per genre-cell is too thin for a firm claim. MANUAL ILLUSTRATIVE, correlation-only.
+
+**Research method:** browser.search for Haskins WIRED bylines (3 verbatim wired.com URLs surfaced this run); in-repo career record (commit 88645966) for Project Cannes byline and career timeline; muckrack/inforeader/wesearch for byline attributions. URLs copied verbatim from search output; the truncated Atlanta-suburb Flock wired slug was NOT used and the piece was NOT scored. Per iteration-492 rule, no zero-coverage claims.
+
+**New Type B files:** `tests/test_type_b_553_caroline_haskins_wired_surveillance_register_constancy_sep06.py` - 8 classes, 28 tests, all passing (1 initial failure fixed: removed the self-defeating test_no_em_dashes_in_file whose em-dash literal tripped its own assertion; block-level check retained).
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output; falsification-direction finding.
+
+**Rotation Transparency:** Previous entry #552 Type A at 00:00 PDT Sep 6 2026 (commit f8977c5 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after A is B. Cycle verified: 548 B 20:00, 549 C 21:00, 550 D 22:00, 551 E 23:00, 552 A 00:00. Selected Type B.
+
+**Novelty Verification:** Zero caroline_haskins keys in journalist_cross_entity_coverage before this run (grep verified); no #553 in git log (grep verified); commit 88645966 was career-tracking only with no framing comparison; #548 is Mehrotra (different reporter, different desk).
+
+---
+
 #552 Type A: FT x Anthropic Surveillance-Refusal Register Inversion - Principled-Refusal Virtue Framing vs Meta Camera-Alarm Threat Framing (delta +0.763 MANUAL ILLUSTRATIVE n.s., Control Case Against Financial Determinism) - Sep 6 2026 00:00 PDT
 
 **Date:** 2026-09-06 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 551 E -> 552 A)
