@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 29236 | Across 879 test files |
+| Tests | 29319 | Across 882 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **29236 tests** across 879 test files, each covering a different analytical capability:
+MediaScope has **29319 tests** across 882 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1394,6 +1394,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_545_scorer_consistency_542_543_rotation_doc_sync_sep05_5pm.py` | 28 | Type D #545: scorer cross-mechanism consistency extended to #542 (-0.195, first competitor-target mechanism: Google vs Anthropic, target-harsher sign convention holds) and #543 (-0.525, Roose, Hugging Face control excluded from delta); standing-rule discipline ratchet for both (YAML NOT_CALCULATED/n.s., arrays byte-match engine inputs); #544 qualitative boundary (no tone delta); engine is_significant=True on #537 n=2v2 pinned as arithmetic-vs-finding separation; 541-544 rotation-cycle adjacency guard; 541-545 doc-sync ratchet - Sep 5 2026 17:00 PDT |
 | `test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` | 32 | Type C #539: Dotdash Meredith (People Inc) triple-payer AI revenue architecture - OpenAI flat-fee (May 2024, ~$16M/yr, all-you-can-eat) + Microsoft PCM pay-per-use (Nov 5 2025, a la carte, Copilot first buyer) + Meta Dec 5 2025 (undisclosed); Google adversarial leg (search 54pct to 24pct, AI Overviews blamed); first triple-payer in corpus; Conde Nast $0-from-Meta mirror contrast - Sep 5 2026 11:00 PDT |
 | `test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py` | 25 | Type D #540: scorer cross-mechanism consistency extended to #537 (-0.30) and #538 (-0.0875) with engine bootstrap-CI structure checks + #532/#533 re-locks; standing-rule discipline ratchet (engine p computed but not promoted - YAML keeps NOT_CALCULATED/n.s.); #539 qualitative boundary (no tone delta); 536-539 rotation-cycle adjacency guard; 536-540 doc-sync ratchet - Sep 5 2026 12:00 PDT |
+| `test_type_c_554_mistral_afp_wire_service_licensing_sep06_2am.py` | 33 | Type C #554: Mistral AI x AFP wire-service content licensing deal (Jan 16 2025) - multi-year, terms undisclosed; full AFP text archive back to 1983 + ~2,300 stories/day in 6 languages for Le Chat factuality grounding (photos/video excluded); first content partnership of its kind for Mistral; Sifted frames Mistral as European alternative to 'OpenAI, Meta and Google'; completes the wire-service AI-licensing triad (AP->OpenAI/Google, Reuters->Meta Oct 2024, AFP->Mistral); new mistral entity under payer-placement convention; directional predictions only, no coverage-tone claim - Sep 6 2026 02:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |
