@@ -4148,6 +4148,125 @@ journalist_cross_entity_coverage:
     - https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
     - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
     test_file: tests/test_dell_cameron_openai_vs_meta_severity_framing_aug28.py
+  dhruv_mehrotra:
+    mechanism_id: 548
+    date_analyzed: '2026-09-05'
+    iteration: 548
+    type: Type B - Journalist Cross-Entity Tracking - Bloomberg boomerang career-migration register-constancy test
+    journalist: Dhruv Mehrotra
+    publication: wired
+    finding_type: journalist_cross_entity_register_constancy_falsification
+    extends_mechanism: 66
+    distinguishes_from:
+    - 'mechanism 66 (iteration 68): team-level investigative resource allocation - Cameron/Mehrotra team targets Meta wearables. This mechanism is individual-level register constancy across employers.'
+    - 'mechanism 366 (iteration 355): Cameron OpenAI vs Meta severity inversion. This mechanism covers Mehrotra alone, not Cameron.'
+    career_timeline:
+      wired_first_stint: 'JD Vance Venmo, Epstein island phone tracking, ShotSpotter, Neuralink monkeys'
+      bloomberg_stint: 'Epstein Inbox data work (Sep 2025, 18,000 emails)'
+      wired_return: '2026-05-18'
+      return_source: https://www.editorandpublisher.com/stories/dhruv-mehrotra-is-welcomed-back-to-wired,261589
+    meta_pieces_wired_return:
+    - title: Meta Smart Glasses Had Hidden Facial Recognition Code (NameTag)
+      alt_title: Meta Silently Added Face-Recognition Code for Its Smart Glasses to Millions of Phones
+      url: https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+      date: '2026-06-04'
+      authors:
+      - Dell Cameron
+      - Dhruv Mehrotra
+      tone_approx: -0.75
+      register: data_forensics_adversarial
+    - title: Meta pulls facial recognition code one day after WIRED expose
+      date: '2026-06-05'
+      authors:
+      - Dhruv Mehrotra
+      - Dell Cameron
+      tone_approx: -0.70
+      register: data_forensics_adversarial
+      evidence_grade: secondary_attested
+      notes: 'Quoted in repository sample_output wearables_advocacy_coalition_analysis_2026_jul.md'
+    - title: Meta face recognition for glasses came from Pentagon contractor (Rank One Computing)
+      date: '2026-06'
+      authors:
+      - Dell Cameron
+      - Dhruv Mehrotra
+      tone_approx: -0.75
+      register: data_forensics_adversarial
+      evidence_grade: secondary_attested
+      source_url: https://thetechstreetnow.com/meta-face-recognition-for-its-glasses-came-from-a-pentagon-contractor-wired-reports/
+    - title: Project Cannes - Meta contractors posed as minors to test rival AI chatbots
+      date: '2026-06-29'
+      authors:
+      - Joel Khalili
+      - Dhruv Mehrotra
+      tone_approx: -0.80
+      register: data_forensics_adversarial
+      evidence_grade: repository_material
+      notes: 'Adversarial Meta piece whose victims include Meta competitors ChatGPT, Gemini, Character.AI (repo commit f4c52c7400f8a297fc90d21f4a9ca3e229904034)'
+    non_meta_adversarial_forensics_baseline:
+    - title: Jeffrey Epstein's Island Visitors Exposed by Data Broker
+      publication: wired
+      period: pre-Bloomberg stint
+      journalist: Dhruv Mehrotra
+      tone_approx: -0.80
+      register: data_forensics_adversarial
+      source_url: https://www.404media.co/the-journalist-who-tracked-epstein-island-visitors-phones-with-dhruv-mehrotra/
+    - title: They Are Not Breathing - Inside the Chaos of ICE Detention Center 911 Calls
+      publication: wired
+      period: pre-Bloomberg stint
+      journalist: Dhruv Mehrotra
+      tone_approx: -0.80
+      register: data_forensics_adversarial
+      source_url: https://www.404media.co/the-journalist-who-tracked-epstein-island-visitors-phones-with-dhruv-mehrotra/
+    - title: Epstein's Inbox - 18,000 emails reveal Ghislaine Maxwell's secrets
+      publication: bloomberg
+      date: '2025-09'
+      journalist: Dhruv Mehrotra
+      tone_approx: -0.75
+      register: data_forensics_adversarial
+      source_url: https://www.404media.co/the-journalist-who-tracked-epstein-island-visitors-phones-with-dhruv-mehrotra/
+    finding: 'Mehrotra''s adversarial data-forensics register is constant across targets and employers. At WIRED (May-Sep 2026 return) his four Meta pieces all use forensic-adversarial register (avg -0.75); his pre-return Bloomberg and WIRED-first-stint investigations of non-Meta targets (Epstein network, ICE detention) use the identical register (avg -0.783). The Meta concentration is explained by WIRED investigations-desk beat assignment (mechanism 66 team-level), not by individual entity-targeting. Falsifies the reporter-level bias hypothesis for Mehrotra, consistent with the #457 Adrienne So and #493 Fowler company-agnostic precedents.'
+    asymmetry_scorer_result:
+      method: MANUAL ILLUSTRATIVE (standing rule Aug 28 2026, arithmetic only)
+      target_entity: meta
+      target_tones_manual_illustrative:
+      - -0.75
+      - -0.70
+      - -0.75
+      - -0.80
+      target_avg: -0.75
+      reference_entity: non_meta_targets
+      reference_tones_manual_illustrative:
+      - -0.80
+      - -0.80
+      - -0.75
+      reference_avg: -0.783
+      delta_meta_minus_non_meta: 0.033
+      interpretation: near_zero_constancy_not_asymmetry
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      artifact_grade: false
+      limitations: 'n=4 vs n=3, illustrative only, all four Meta pieces co-bylined (dilution), non-Meta baseline attested via 404 Media interview not direct byline URLs'
+    statistical_discipline:
+      tone_scores: MANUAL_ILLUSTRATIVE_ONLY
+      p_value: NOT_CALCULATED
+      is_significant: false
+      artifact_grade: false
+    confounders:
+    - strength: STRONG
+      text: 'Co-byline dilution - all four Meta pieces co-bylined (Cameron x3, Khalili x1); framing decisions shared'
+    - strength: STRONG
+      text: 'Beat assignment - WIRED investigations desk routes Meta probes to him; Meta concentration is assignment, not preference'
+    - strength: MODERATE
+      text: 'Short post-return window - 3.5 months at WIRED (May 18 - Sep 5 2026); sample too small for a career-level claim'
+    - strength: MODERATE
+      text: 'Subject-matter mismatch - Epstein/ICE stories differ in genre from tech-company investigations'
+    - strength: WEAK
+      text: 'Baseline attested second-hand - non-Meta bylines verified via 404 Media interview, not opened direct URLs this run'
+    strongest_counterargument: 'The Meta concentration could still reflect institutional targeting filtered through a beat: WIRED assigns Mehrotra Meta investigations because Meta is the standing surveillance-beat target, and his uniform register is compatible with both company-agnostic forensics AND assignment-driven Meta focus. The constancy finding rules out personal entity animus only, not institutional selection; MANUAL ILLUSTRATIVE, correlation-only.'
+    financial_context: 'Conde Nast receives $5-10M/yr from OpenAI licensing plus other Meta competitors, $0 from Meta. Mehrotra''s Meta pieces are adversarial despite the direction of money predicting softness - consistent with #355 Cameron counterexample. Financial correlation does not imply causation; no assertion of editorial direction.'
+    author: Kit (with Ray)
   wired_openai_rogue_swarm_aug26_followup_silence:
     mechanism_id: 430
     date_analyzed: '2026-08-31'

@@ -1,3 +1,26 @@
+#548 Type B: Dhruv Mehrotra Bloomberg-Boomerang Register Constancy - Adversarial Data-Forensics Register Constant Across Meta and Non-Meta Targets (falsifies reporter-level bias, extends #66) - Sep 5 2026 20:00 PDT
+
+**Date:** 2026-09-05 20:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 547 A -> 548 B)
+**Type:** B - Journalist Cross-Entity Tracking (Dhruv Mehrotra, WIRED investigative data reporter)
+
+**Finding:** Mehrotra's adversarial data-forensics register is constant across targets and employers. WIRED-return Meta pieces (4): NameTag exposé (Jun 4, 2026, Cameron + Mehrotra, -0.75, direct wired.com URL); NameTag removal follow-up (Jun 5, -0.70, secondary-attested); Rank One Pentagon-contractor face-recognition follow-up (Jun 2026, -0.75, secondary-attested); Project Cannes (Jun 29, 2026, Khalili + Mehrotra: Meta contractors posed as minors to test rival AI chatbots ChatGPT/Gemini/Character.AI, -0.80). Non-Meta baseline (3): Epstein island visitors data-broker story (WIRED, -0.80), ICE detention 911 calls (WIRED, -0.80), Epstein's Inbox 18,000 emails (Bloomberg Sep 2025, -0.75), all attested via 404 Media interview with Mehrotra. Career: WIRED first stint -> Bloomberg -> returned to WIRED May 18, 2026 (E&P announcement, Monday verified via date -d). Scorer MANUAL ILLUSTRATIVE: Meta [-0.75,-0.70,-0.75,-0.80] avg -0.75 vs non-Meta [-0.80,-0.80,-0.75] avg -0.783, delta (Meta minus non-Meta) +0.033 (near-zero constancy, NOT asymmetry); p_value NOT_CALCULATED, is_significant False, NOT artifact-grade. The Meta concentration is WIRED investigations-desk beat assignment (mechanism #66 team-level), not individual entity-targeting. Distinction: #66 is team-level resource allocation; #366 (iteration #355) is Cameron-only severity inversion; this is Mehrotra-individual register constancy with a career-migration (Bloomberg boomerang) dimension.
+
+**Confounders Ranked:** STRONG: (1) co-byline dilution - all four Meta pieces co-bylined (Cameron x3, Khalili x1); (2) beat assignment - WIRED investigations desk routes Meta probes to him. MODERATE: (1) short post-return window (3.5 months); (2) subject-matter mismatch (Epstein/ICE vs tech-company). WEAK: non-Meta baseline attested second-hand via 404 Media interview, not direct byline URLs.
+
+**Strongest counterargument:** The Meta concentration could still reflect institutional targeting filtered through a beat - WIRED assigns Mehrotra Meta investigations because Meta is the standing surveillance-beat target, and his uniform register is compatible with both company-agnostic forensics AND assignment-driven Meta focus. The constancy finding rules out personal entity animus only, not institutional selection. MANUAL ILLUSTRATIVE, correlation-only.
+
+**Financial context (correlation, not causation):** Condé Nast receives $5-10M/yr from OpenAI licensing plus other Meta competitors, $0 from Meta. Mehrotra's Meta pieces are adversarial despite the direction of money predicting softness - consistent with the #355 Cameron counterexample.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero dhruv_mehrotra keys in journalist_cross_entity_coverage before this run (grep verified); no #548 in git log --grep; #66 (team-level) and #366 (Cameron-only) do not cover Mehrotra individually; zero test_type_b_548 files before this run.
+
+**New Type B files:** `tests/test_type_b_548_dhruv_mehrotra_register_constancy_boomerang_sep05.py` - 6 classes, 22 tests.
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output; falsification finding (constancy), not a new asymmetry.
+
+**Rotation Transparency:** Previous entry #547 Type A at 19:00 PDT Sep 5 2026 (commit be7e2f7 verified present via git log before this run's commit; #547 was an interrupted run whose research, YAML insertion, and test file were rescued and committed by the 20:00 run before #548 research began). Per rotation A->B->C->D->E, next after A is B. Cycle verified: 544 C 16:00, 545 D 17:00, 546 E 18:00, 547 A 19:00. Selected Type B.
+
+---
+
 #547 Type A: WIRED x Google/Samsung Camera Glasses 45-Day Coverage Silence + Enthusiastic I/O 2026 Register vs WIRED x Meta Glasses Alarm Baseline (-0.773) - First Scored WIRED x Google Mechanism (google financial "adversarial" prediction FAILS this product lane) - Sep 5 2026 19:00 PDT
 
 **Date:** 2026-09-05 19:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 546 E -> 547 A)
