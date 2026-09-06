@@ -3660,6 +3660,146 @@ competitor_relationships:
     direction: "none"
     description: "No licensing deal. NYT critical of Google AI Overviews. Part of broader publisher coalition against Google scraping."
     coverage_prediction: "adversarial"
+    mechanism_562_nyt_google_adversarial_register_confirmed_vs_meta_bifurcation_sep06:
+      mechanism_id: 562
+      date_analyzed: '2026-09-06'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 562
+      iteration_type: A
+      iteration_time: '2026-09-06 10:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The New York Times
+      competitor_pair: 'Google vs Meta'
+      author: 'Kit (with Ray)'
+      finding: 'First dedicated Type A mechanism under competitor_relationships.google in nytimes.yaml, which previously held only financial metadata and zero mechanisms. The New York Times applies an ADVERSARIAL register to Google AI, confirming the standing coverage_prediction of adversarial and extending it from antitrust reportage into AI-product quality. Three Google data points: (1) NYT commissioned the Oumi AI Overviews accuracy study and was first to report it (2026-04-09), framing Google AI Overviews as generating tens of millions of incorrect answers per hour with more than half of accurate responses ungrounded, a misinformation crisis, quoting News/Media Alliance CEO Danielle Coffey calling AI Overviews a disaster for publishers; (2) NYT filed its own court motion against Google and the DOJ in the search monopoly remedy trial (2025-04-07), its filing saying both gave lip service to public access; (3) NYT reporting by David McCabe on Google avoiding harshest penalties in the landmark search monopoly ruling (2025-09-02) and the Sep 2026 ad tech ruling, straight-to-critical register. Three Meta comparators from the in-corpus baseline: (1) Meta open-source AI philosophy receives POSITIVE framing per mechanism #69, serving the anti-OpenAI litigation narrative; (2) NYT Meta AI voluntary-review and government-review holdout coverage (2026-06-23, in-corpus sample output) applies adversarial scrutiny; (3) NYT Arena prediction-markets scoop (2026-06-26, in-corpus reconstruction) is neutral business reporting. MANUAL ILLUSTRATIVE delta -0.45 (Google harsher than Meta). Financial predictor check: Google pays NYT nothing in AI licensing ($0, adversarial tie) but is the dominant traffic referrer whose traffic reduction the NYT 10-Q flags as a business risk, and Canada C-18 has Google paying C$100M per year into the publisher fund while Meta blocks news entirely (#529). Commercial dependency does NOT buy softness here: the paper commissions adversarial AI-quality investigations against its traffic provider. This mechanism is a control case against financial determinism, joining #557, #552, and #193. The registers look litigation-posture instrumental: adversarial Google AI and positive Meta open-source strands both serve the publisher coalition stance and the anti-OpenAI litigation narrative respectively. Correlation is not causation.'
+      financial_relationship:
+        google_direct: '$0 direct NYT to Google AI licensing, adversarial tie confirmed this run'
+        nyt_openai_microsoft_litigation: 'NYT sued OpenAI and Microsoft Dec 2023 for copyright infringement (ongoing at Jul 2025 terms disclosure), the context that makes the positive Meta open-source strand instrumental per mechanism #69'
+        google_traffic_dependency: 'NYT 10-Q flags Google traffic reduction as a business risk (#559). No NYT Google licensing deal exists.'
+        canada_c18_context: 'Google pays C$100M per year into the Canada C-18 publisher fund while Meta blocks news in Canada entirely (#529). Commercial posture toward publishers is payment vs block.'
+        meta_financial: '$0 AI licensing deal, no-deal'
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. The money-sympathy direction is INVERTED here: commercial dependency on Google (traffic, C-18 fund) coincides with the harsher register, which falsifies naive financial determinism for this lane. This mechanism is a control case against financial determinism, joining #557, #552, and #193.'
+        editorial_independence_note: 'The New York Times editorial standards require source verification and balance. No evidence of direct directive linking any commercial relationship to Google coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      nyt_google_sources_sep06_2026:
+        - title: 'NYT first to report Oumi AI Overviews accuracy study'
+          date: '2026-04-09'
+          url: 'https://mobilesyrup.com/2026/04/09/google-ai-overviews-misinformation-study/'
+          url_source: 'secondary MobileSyrup, verbatim Full-URL listing this run, explicitly attributes first reporting to The New York Times. Backup: https://nypost.com/2026/04/09/business/googles-ai-overviews-spew-out-millions-of-false-answers-per-hour-bombshell-study/ also attributes NYT as first to report on Oumi analysis. No direct nytimes.com URL surfaced verbatim this run.'
+          framing: 'commissioned_misinformation_investigation'
+          tone_manual_illustrative: -0.70
+          language:
+            - 'tens of millions of incorrect answers every hour'
+            - 'more than half of the accurate responses were ungrounded'
+            - 'misinformation crisis'
+            - 'disaster for publishers'
+          notes: 'NYT-commissioned adversarial investigation of Google AI quality. Oumi analyzed 4,326 searches, Gemini 2 85 percent and Gemini 3 95 percent correct, Google spokesperson Ned Adriance quoted downplaying. This is the strongest in-run Google adversarial data point.'
+        - title: 'New York Times pushes for improved public access in Google monopoly remedy trial'
+          date: '2025-04-07'
+          url: 'https://www.editorandpublisher.com/stories/new-york-times-pushes-for-improved-public-access-in-google-monopoly-remedy-trial,255176'
+          url_source: 'secondary Editor and Publisher, verbatim Full-URL listing this run, reporting on NYT court filing. Institutional action, not a coverage-tone item per se.'
+          framing: 'institutional_adversarial_action'
+          tone_manual_illustrative: -0.50
+          language:
+            - 'slammed the Justice Department and Google'
+            - 'lip service to public access'
+          notes: 'NYT as institutional actor against Google in court. Confounder-classified: a legal filing is not coverage tone, but the institutional adversarial posture bounds the coverage register reading.'
+        - title: 'Google avoids harshest penalties in landmark search monopoly ruling'
+          date: '2025-09-02'
+          url: 'https://www.editorandpublisher.com/stories/google-avoids-harshest-penalties-in-landmark-search-monopoly-ruling,257531'
+          url_source: 'secondary Editor and Publisher reprint of David McCabe NYT reporting, verbatim Full-URL listing this run. Sep 2026 ad tech ruling also reported by NYT per secondary attribution in-run.'
+          framing: 'monopoly_adversarial_reportage'
+          tone_manual_illustrative: -0.40
+          language:
+            - 'avoids harshest penalties'
+            - 'falls short of the sweeping changes proposed'
+          notes: 'Straight-to-critical register on Google monopoly outcomes. David McCabe is the NYT tech policy reporter.'
+      nyt_meta_sources_sep06_2026:
+        - title: 'Meta open-source AI philosophy positive strand'
+          date: 'corpus'
+          url: 'in-repo mechanism #69 pointer'
+          url_source: 'corpus pointer per mechanism #69, Meta coverage is BIFURCATED by topic with open-source AI philosophy receiving POSITIVE framing serving the anti-OpenAI litigation narrative.'
+          framing: 'open_source_philosophy_positive'
+          tone_manual_illustrative: 0.40
+          language:
+            - 'open-source philosophy positive'
+            - 'serves anti-OpenAI litigation narrative'
+          notes: 'Instrumental positive strand. Meta gets the softer register where its stance is useful to the Times litigation posture against OpenAI.'
+        - title: 'NYT Meta AI voluntary review and government review holdout'
+          date: '2026-06-23'
+          url: 'https://www.nytimes.com/2026/06/23/technology/meta-ai-voluntary-review.html'
+          url_source: 'in-repo corpus pointer, profiles/nytimes.yaml line 1603, with full text at examples/sample_output/nyt_meta_ai_voluntary_review_2026_06_23_article.txt and government-review holdout variant.'
+          framing: 'ai_execution_adversarial_scrutiny'
+          tone_manual_illustrative: -0.65
+          language:
+            - 'voluntary review'
+            - 'government review holdout'
+          notes: 'Adversarial scrutiny on Meta AI execution, the standard adversarial half of the #69 bifurcation.'
+        - title: 'NYT Meta Arena prediction markets partnership scoop'
+          date: '2026-06-26'
+          url: 'https://www.reuters.com/business/zuckerberg-asks-meta-explore-working-with-polymarket-kalshi-nyt-reports-2026-06-26/'
+          url_source: 'secondary Reuters, verbatim Full-URL listing this run, attributes scoop to NYT citing three employees. In-repo reconstruction at examples/sample_output/nyt_meta_arena_polymarket_partnership_2026_06_26_article.txt.'
+          framing: 'neutral_business_scoop'
+          tone_manual_illustrative: 0.0
+          language:
+            - 'citing three employees with knowledge of the matter'
+            - 'may not be released'
+          notes: 'Neutral register business reporting, the midpoint of the Meta baseline.'
+      register_analysis: 'The NYT adversarial register on Google is not confined to antitrust reportage. The paper commissions its own AI-quality investigations against Google (Oumi AI Overviews study) and files court motions against Google institutionally. Meta at the same paper receives a bifurcated register: adversarial on AI execution and social platform issues, positive on open-source AI philosophy where that stance serves the anti-OpenAI litigation narrative. Google has no equivalent instrumental positive strand at NYT in this window: no Google item scored above -0.40. The register gap runs OPPOSITE to the naive money predictor: Google is the commercial dependency (traffic referrer, C-18 payer) and Meta is the news-blocking hostile party, yet Google absorbs the harsher AI-lane treatment. This bounds any claim that publisher financial dependency predicts coverage softness.'
+      asymmetry_scoring_manual_illustrative:
+        note: 'MANUAL ILLUSTRATIVE not empirical n=3 vs n=3 per entity insufficient for inferential significance'
+        target_entity: 'Google NYT adversarial register'
+        peer_entity: 'Meta NYT bifurcated register'
+        target_scores_manual_illustrative: [-0.70, -0.50, -0.40]
+        target_avg_manual_illustrative: -0.5333
+        peer_scores_manual_illustrative: [0.40, -0.65, 0.0]
+        peer_avg_manual_illustrative: -0.0833
+        delta_manual_illustrative: -0.45
+        delta_direction: 'target harsher than peer by 0.45'
+        p_value: 'NOT CALCULATED no observed corpus'
+        cohens_d: 'NOT CALCULATED'
+        ci_95: 'NOT CALCULATED'
+        significant: false
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+        synthetic_note: 'Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary not observed NYT corpus empirical scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on full NYT corpus Apr 2025 to Sep 2026 window. Synthetic result demonstrates scorer sensitivity. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation. Engine run this iteration: target-minus-peer -0.45, p ~0.28 not significant, both layers agree not significant (agreement pole with #558).'
+      confounders:
+        strong:
+          - 'instrumentality: both registers may be litigation-posture instruments rather than independent editorial judgments. The positive Meta open-source strand serves the NYT anti-OpenAI lawsuit narrative, and the Google hostility serves the publisher-vs-scraping coalition. Instrumental registers track legal posture, not financial ties.'
+          - 'item selection: the three Google items were selected for adversarial register. A positive or neutral Google item (for example Gemini 3 launch coverage) would narrow the gap. This run searched for NYT Google Gemini coverage and surfaced no verbatim nytimes.com URL, disclosed, not treated as a zero-coverage claim per iteration-492 rule.'
+          - 'institutional action vs coverage: the Apr 2025 court motion is NYT as litigant, not NYT as publisher. It is classified as institutional posture, and removing it would move the Google average from -0.5333 to -0.55, so the finding is robust to its exclusion.'
+        moderate:
+          - 'timing: Google sources span Apr 2025 to Sep 2026 while Meta sources span 2026 only. Temporal mismatch weakens the same-window reading; the window is bounded by corpus availability, not matched design.'
+          - 'genuine conduct: Google AI Overviews accuracy problems and the monopoly verdicts are genuinely newsworthy adversarial facts. Real facts legitimately shape register.'
+          - 'dependency ambiguity: traffic referral is not a payment, and the C-18 fund is a regulatory exaction, not a commercial deal. The falsification claim is about commercial dependency, which is weaker than a licensing-deal claim.'
+        weak:
+          - 'thin sample: n=3 vs n=3 is directional only, never dispositive for a publication-level claim.'
+      open_empirical_test: 'The NYT will cover the next major Google AI product launch (Gemini 4 or equivalent, expected window unconfirmed) and the next major Meta open-source model release. If the Google register stays adversarial while the Meta open-source strand stays positive, the litigation-instrumentality hypothesis strengthens. If Google launch coverage runs positive, the selection confounder dominates and this mechanism weakens. Not asserted either way this run.'
+      finding_summary: 'The New York Times covers Google AI with an adversarial register (commissioned Oumi AI Overviews misinformation study, institutional court motion against Google, critical monopoly-ruling reportage) at MANUAL ILLUSTRATIVE -0.53, harsher than its bifurcated Meta baseline (-0.08) with delta -0.45. This CONFIRMS the standing coverage_prediction of adversarial for NYT x Google and extends it into AI-product quality. Financial predictor check runs against naive determinism: Google is the commercial dependency (dominant traffic referrer, C-18 C$100M per year payer) and Meta is the news-blocking hostile party, yet Google absorbs the harsher AI-lane treatment. This is a control case against financial determinism joining #557, #552, and #193. Strongest confounders are litigation instrumentality, item selection, and the institutional-action-vs-coverage distinction. Open empirical test named: next Google AI launch vs next Meta open-source release register comparison. Correlation does not imply causation.'
+      source_urls:
+        - 'https://mobilesyrup.com/2026/04/09/google-ai-overviews-misinformation-study/'
+        - 'https://nypost.com/2026/04/09/business/googles-ai-overviews-spew-out-millions-of-false-answers-per-hour-bombshell-study/'
+        - 'https://www.editorandpublisher.com/stories/new-york-times-pushes-for-improved-public-access-in-google-monopoly-remedy-trial,255176'
+        - 'https://www.editorandpublisher.com/stories/google-avoids-harshest-penalties-in-landmark-search-monopoly-ruling,257531'
+        - 'https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html'
+        - 'https://www.nytimes.com/2026/06/23/technology/meta-ai-voluntary-review.html'
+        - 'https://www.reuters.com/business/zuckerberg-asks-meta-explore-working-with-polymarket-kalshi-nyt-reports-2026-06-26/'
+        - 'https://www.citybiz.co/article/889210/new-york-times-moves-cade-metz-to-science-desk-to-cover-ai/'
+      cross_references: [69, 504, 509, 529, 537, 547, 549, 552, 557, 558, 559]
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: 'MANUAL ILLUSTRATIVE'
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: 'Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores'
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. The money-sympathy direction is inverted here: commercial dependency on Google coincides with the harsher register, which falsifies naive financial determinism for this lane. This mechanism is a control case against financial determinism. Litigation instrumentality and item selection and the institutional-action distinction are the strongest confounders.'
+      new_test_file: 'tests/test_type_a_562_nyt_google_adversarial_register_vs_meta_bifurcation_sep06.py'
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

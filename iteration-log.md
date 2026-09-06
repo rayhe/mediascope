@@ -1,3 +1,35 @@
+#562 Type A: NYT x Google Adversarial Register Confirmed vs Meta Bifurcation - First Dedicated Mechanism Under nytimes.yaml competitor_relationships.google, Delta -0.45 MANUAL ILLUSTRATIVE n.s. (Google Harsher), Control Case Against Financial Determinism (Inverted Money-Sympathy) - Sep 6 2026 10:00 PDT
+
+**Date:** 2026-09-06 10:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 561 E -> 562 A)
+**Type:** A - Competitor Coverage Deep Dive (The New York Times x Google vs Meta)
+
+**Finding:** The New York Times applies an ADVERSARIAL register to Google AI, confirming the standing coverage_prediction of adversarial in the google stub (previously only financial metadata, zero mechanisms) and extending it from antitrust reportage into AI-product quality:
+1. NYT commissioned the Oumi AI Overviews accuracy study and was first to report it (2026-04-09) - 4,326 searches, Gemini 2 85% / Gemini 3 95% correct, framed as tens of millions of incorrect answers per hour with more than half of accurate responses "ungrounded," a misinformation crisis; quotes News/Media Alliance CEO Danielle Coffey calling AI Overviews "a disaster for publishers." Score -0.70. URLs (verbatim this run): https://mobilesyrup.com/2026/04/09/google-ai-overviews-misinformation-study/ and https://nypost.com/2026/04/09/business/googles-ai-overviews-spew-out-millions-of-false-answers-per-hour-bombshell-study/ (both attribute NYT as first to report; no direct nytimes.com URL surfaced this run).
+2. NYT filed its own court motion against Google and the DOJ in the search monopoly remedy trial (2025-04-07), its filing saying both gave "lip service" to public access. Score -0.50; classified as institutional posture, exclusion-robust (Google avg moves -0.5333 to -0.55 without it). URL: https://www.editorandpublisher.com/stories/new-york-times-pushes-for-improved-public-access-in-google-monopoly-remedy-trial,255176
+3. NYT reporting by David McCabe on Google avoiding harshest penalties in the landmark search monopoly ruling (2025-09-02) and the Sep 2 2026 ad tech ruling, straight-to-critical register. Score -0.40. URL: https://www.editorandpublisher.com/stories/google-avoids-harshest-penalties-in-landmark-search-monopoly-ruling,257531
+
+Three Meta comparators from the in-corpus baseline: (1) Meta open-source AI philosophy POSITIVE strand per mechanism #69, serving the anti-OpenAI litigation narrative (+0.40); (2) NYT Meta AI voluntary-review and government-review holdout (2026-06-23, in-corpus sample output, https://www.nytimes.com/2026/06/23/technology/meta-ai-voluntary-review.html) adversarial (-0.65); (3) NYT Arena prediction-markets scoop (2026-06-26, in-corpus reconstruction via Reuters https://www.reuters.com/business/zuckerberg-asks-meta-explore-working-with-polymarket-kalshi-nyt-reports-2026-06-26/) neutral (0.0).
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Google target [-0.70, -0.50, -0.40] avg -0.5333 vs Meta peer [+0.40, -0.65, 0.0] avg -0.0833: engine target-minus-peer -0.45 == logged delta_manual_illustrative -0.45 (1e-4). Engine p ~ 0.28, is_significant False: BOTH layers agree not significant (agreement pole, same class as #558). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED.
+
+**Falsification/control case:** The money-sympathy direction is INVERTED. Google is the commercial dependency (dominant traffic referrer whose traffic reduction the NYT 10-Q flags as a business risk per #559; Canada C-18 has Google paying C$100M/yr into the publisher fund while Meta blocks news entirely per #529), yet Google absorbs the harsher AI-lane treatment. Commercial dependency does NOT buy softness: the paper commissions adversarial AI-quality investigations against its traffic provider. Joins the falsification family #552, #557, #193.
+
+**Confounders Ranked:** STRONG: (1) litigation instrumentality - adversarial Google AI and positive Meta open-source strands both serve legal postures (publisher coalition, anti-OpenAI suit), not independent editorial judgments; (2) item selection - no verbatim nytimes.com URL surfaced for a positive Google AI item this run, disclosed per iteration-492 rule, not zero-claimed; (3) institutional action vs coverage - the court motion is NYT as litigant. MODERATE: timing mismatch (Apr 2025 to Sep 2026 vs 2026-only Meta), genuine conduct (real adversarial facts), dependency ambiguity (traffic is not payment, C-18 is regulatory exaction). WEAK: n=3 vs n=3 directional only.
+
+**Open empirical test:** Next major Google AI launch (Gemini 4 or equivalent) vs next major Meta open-source release at NYT. Persisting registers support the instrumentality hypothesis; positive Google launch coverage weakens this mechanism.
+
+**Research method:** 3 browser.search query sets this run (NYT Google AI coverage; NYT Meta coverage; NYT Google monopoly trial remedies), verbatim full-URL listings from search results; in-corpus NYT x Meta URLs as comparators; engine arithmetic run via calculate_asymmetry before writing. No zero-coverage claims.
+
+**New Type A files:** `tests/test_type_a_562_nyt_google_adversarial_register_vs_meta_bifurcation_sep06.py` - 7 classes, 26 tests, all passing. YAML insertion as `mechanism_562_nyt_google_adversarial_register_confirmed_vs_meta_bifurcation_sep06` under `competitor_relationships.google` in profiles/nytimes.yaml; YAML re-parse validated; em-dash discipline checked (zero in block).
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output with n=3 vs n=3 and secondary attributions; control-case mechanism is directional, not artifact-grade.
+
+**Rotation Transparency:** Previous entry #561 Type E at 09:00 PDT Sep 6 2026 (commit fe4528b verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Selected Type A.
+
+**Novelty Verification:** Zero dedicated NYT x Google mechanisms before this run (google stub held only financial metadata, grep verified); no #562 in git log (grep verified); zero test_type_a_562 files on disk before this run (glob verified); the 557-561 rotation window (from #561) is extended, not duplicated.
+
+---
+
 #561 Type E: Podcast Sentiment 35th Verification Cycle - GF 498 Hold No 499 (10h-crawl secondary, 499 plausible near Sep 7, Chortle LPF Sep 13), EHE 28-Day Hold (Times/Engadget/feminist.org/Hyperallergic-x2 re-surfaces all pre-verified in-corpus, circular GitHub rejected, zero new motifs), Attention Sphere 35th No-Match (Spotify Creators 3h-fresh re-confirms nonprofit), ONE New Press Surface (Startup Fortune Kenyan-contractors amended-complaint re-report ~Sep 5, newest in-corpus surface superseding #531 Jezebel, no tier-1 corroboration) - Sep 6 2026 09:00 PDT
 
 **Date:** 2026-09-06 09:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 560 D -> 561 E)
