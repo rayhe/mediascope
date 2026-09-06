@@ -1,3 +1,35 @@
+#560 Type D: Scorer Consistency Extended to #557 (Second Engine-Significance/Finding-Layer Divergence, |Delta| 0.4833) and #558 (Both Layers Agree n.s., +0.1333), #559 Qualitative Boundary, No-Brittle Sweep, 555-559 Rotation Guard, 556-560 Doc-Sync Ratchet (incl #556/#557/#558/#559 Miss Repair) - Sep 6 2026 08:00 PDT
+
+**Date:** 2026-09-06 08:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 559 C -> 560 D)
+**Type:** D - Test & Verify (scorer consistency, standing-rule ratchet, brittle sweep, rotation guard, doc-sync)
+
+**Finding:** Suite health good with one genuine new ratchet and one doc-sync miss repair:
+1. #557 (Type A, The Verge x Anthropic aspirational-register vs Meta deficit register, Sep 6 05:00 PDT): engine target-minus-peer = -0.4833; |delta| == logged delta_manual_illustrative 0.4833 (abs 1e-4). The mechanism frames delta peer-minus-target ('peer softer than target by 0.48'); the engine's negative sign under target-minus-peer convention is the same arithmetic, mirrored. Logged arrays byte-match engine inputs; logged avgs (-0.2667 / 0.2167) match engine within 4-decimal rounding.
+2. SECOND divergence ratchet: for #557's input pair the engine computes p ~ 0.0047 and is_significant True, while the YAML keeps significant: false with p_value 'NOT CALCULATED no observed corpus' and empirical_required: true. The standing rule (Aug 28) holds the finding layer even when the engine would claim significance - arithmetic layer vs finding layer separation, pinned deliberately, not an oversight. #552 was the first; two independent divergence pins now bound this boundary.
+3. #558 (Type B, Bradshaw FT business-register constancy, Sep 6 06:00 PDT): engine delta 0.13333333333333336 == logged delta_meta_minus_non_meta 0.1333 (1e-4); arrays byte-match; logged avgs (0.1167 / -0.0167) match. The complementary boundary: BOTH layers agree not significant (engine p ~ 0.35). This pins the agreement pole so the suite covers divergence AND agreement. Directionally distinct from #557: opposite sign classes (target-harsher asymmetry vs near-zero constancy falsification), |#557| > 3.6x |#558|.
+4. #559 (Type C, Amazon x NYT) qualitative boundary pinned: mechanism_559_amazon_nyt_ai_licensing_deal carries no asymmetry_scorer section, statistical_discipline tone_scores NOT_SCORED, p_value NOT_CALCULATED, is_significant false.
+5. #556 (Type E, podcast 34th verification) monitoring boundary pinned: no tone arrays, no delta, no scorer claim; log entry describes verification holds, not an asymmetry observation.
+6. No-brittle sweep: zero test_type_d_560-style brittle newest-first heading-equality assertions in any 556-559 window file (all four already use the anchored presence-assertion convention per #495/#555); sweep test pins the convention against regression.
+7. Novelty-repair: #558's test_novelty_single_558_test_file asserted exactly one file with "558" in its name - the Type D filename convention (covered iteration numbers embedded in the filename, per #555's 552_553 precedent) breaks it. Repaired to exclude test_type_d_* cross-reference files from the uniqueness set, with the repair rationale embedded in the #558 file; a new test in the #560 file verifies the repaired behavior. Write to history-adjacent test code justified by the #555/#495 precedent.
+8. Rotation: 555 D -> 556 E -> 557 A -> 558 B -> 559 C adjacency verified in git-commit order newest-first; this run closes the C->D edge by committing Type D.
+9. Doc-sync miss repair: README and ARCHITECTURE rows for #556 (44 tests, 8 classes), #557 (26, 6), #558 (24, 5), #559 (34, 9) were MISSING from both docs before this run - repaired in the #510/#555 miss-repair convention with authoritative def-test counts; #560 row added (35 tests, 6 classes). README aggregate stats refreshed to count_stats.py --check values; --check gate green.
+
+**Asymmetry scorer:** Arithmetic-layer verification only (engine mean-delta reproduction, sign-convention pinning, divergence ratchet); no finding-layer claims, p_value NOT_CALCULATED per standing rule. No analysis.json update - below artifact-grade threshold.
+
+**Confounders Ranked:** STRONG: (1) the #557 divergence test asserts against a magic p-value (~0.0047) and is_significant True - engine-implementation coupling; if the engine's test statistic changes, the 'is True' assertion needs review (same caveat as #552 in #555). MODERATE: (2) count_stats --check scans 887+ test files - slow gate (~minutes). WEAK: (3) the README/ARCHITECTURE miss-repair window spans 4 iterations (556-559) because Type D cadence fell 4 hours behind doc-sync; the ratchet now restores it.
+
+**Research method:** Engine probes via calculate_asymmetry directly (fast) + pytest on the new #560 file + the 556-559 window mechanism files + count_stats.py --check gate. YAML re-parse with leaf-type/value assertions for the #557/#558 scorer blocks; full-suite pytest run in background for regression coverage.
+
+**New Type D files:** `tests/test_type_d_560_scorer_consistency_557_558_divergence_rotation_doc_sync_sep06_8am.py` - 6 classes, 35 tests.
+
+**Artifact readiness:** No analysis.json update warranted. Test-layer only.
+
+**Rotation Transparency:** Previous entry #559 Type C at 07:00 PDT Sep 6 2026 (commit 79f1de3 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D.
+
+**Novelty Verification:** Zero test files with 560 on disk before this run (glob verified); no commit with #560 in the title (git log --grep verified); zero '557/558 in scorer-consistency' coverage before this run (repo grep verified); the 555-559 rotation window was never guarded; the 551-555 doc-sync window (from #555) is extended, not duplicated.
+
+---
+
 #559 Type C: Amazon x New York Times AI Content Licensing Deal (May 29 2025) - $20-25M/Yr, Amazon's First Publisher AI Deal, NYT's First AI Licensing Pact, Sue-One-Lab-Deal-Another Bifurcation, First Dedicated Mechanism for an Amazon Deal With a Tracked Publication - Sep 6 2026 07:00 PDT
 
 **Date:** 2026-09-06 07:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 558 B -> 559 C)

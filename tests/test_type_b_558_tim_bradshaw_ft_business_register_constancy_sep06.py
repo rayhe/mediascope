@@ -274,7 +274,16 @@ class TestRotationAndIterationLog:
         assert "557 A -> 558 B" in text
 
     def test_novelty_single_558_test_file(self):
+        # Novelty-repair (Type D #560, following the #555/#495 brittle-repair
+        # convention): Type D scorer-consistency files conventionally embed
+        # the covered iteration numbers in their filenames (e.g.
+        # test_type_d_560_scorer_consistency_557_558_divergence_...), which
+        # breaks a naive '"558" in filename' uniqueness check. The intent
+        # of this test is that no OTHER mechanism file claims to be #558's
+        # mechanism test, so test_type_d_* cross-reference files are
+        # excluded from the match set.
         tests_dir = os.path.join(REPO, "tests")
-        matches = [f for f in os.listdir(tests_dir) if "558" in f]
+        matches = [f for f in os.listdir(tests_dir)
+                   if "558" in f and not f.startswith("test_type_d_")]
         assert len(matches) == 1
         assert matches[0].startswith("test_type_b_558_tim_bradshaw")
