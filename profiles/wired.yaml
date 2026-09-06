@@ -2498,6 +2498,98 @@ competitor_relationships:
       '
     coverage_prediction: adversarial
     case_reference: Advance Publications Inc. v. Google LLC, SDNY (Jan 14, 2026), consolidated MDL
+    mechanism_547_wired_google_samsung_camera_glasses_silence_vs_meta_alarm_sep05:
+      mechanism_id: 547
+      date: '2026-09-05'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 547
+      iteration_type: A
+      iteration_time: 2026-09-05 19:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED (Conde Nast)
+      publication_pair: WIRED x Google
+      competitor: google
+      comparison_entities:
+      - meta
+      - samsung
+      author: Kit (with Ray)
+      finding: 'First scored WIRED x Google camera-glasses mechanism in the corpus. Before this run, wired.yaml carried no target_entity google asymmetry scorer run; the google entity block only held the adversarial-litigation financial prediction, which this run tests and which FAILS for this product lane. Two WIRED-Google/Samsung camera-glasses data points vs the WIRED Meta glasses alarm baseline. (1) Google I/O 2026 (May 19, 2026): WIRED sent five reporters, including Lauren Goode, Julian Chokkattu, and Steven Levy, to live-blog Google''s camera-equipped Gemini smart glasses with an enthusiastic/playful register (per mechanism #3740: "actually bananas", zero privacy or surveillance vocabulary). The same Chokkattu who framed Meta''s glasses as a tool for mass surveillance. WIRED Google I/O claims remain proxy-only per mechanism #430: no direct wired.com URL surfaced in this run''s search, so this item is second-hand attested and proxy-flagged. MANUAL ILLUSTRATIVE +0.15. (2) Samsung "intelligent eyewear", announced at Galaxy Unpacked Jul 22, 2026 (London): same Snapdragon AR1 Gen 1 chip as Meta''s glasses; built-in camera with LED indicator and a visible physical camera-kill switch on the stage unit; a single right-side camera only (two unnecessary, not intended for 3D face mapping or face recognition, per MobileSyrup''s on-stage account); Warby Parker and Gentle Monster frames; fall 2026 US/South Korea launch. WIRED standalone coverage Jul 22 to Sep 5, 2026 (45 days): zero articles surfaced. This extends the 38-day silence documented through Aug 28 (mechanism #374/#5722) and is stated as a bounded search-result absence per the iteration-492 rule, not a proven zero. The hardware privacy control Samsung ships (a physical camera switch) gets no WIRED privacy-register coverage. Comparator baseline (WIRED x Meta glasses, direct wired.com URLs, corpus tones): "Meta Is Warned That Facial Recognition Glasses Will Arm Sexual Predators" (Dell Cameron, Apr 13, 2026, -0.82, hypothetical feature, no actual harm); "The Rise of the Ray-Ban Meta Creep" (Mar 23, 2026, -0.72); "Meta Silently Added Face-Recognition Code for Its Smart Glasses to Millions of Phones" / NameTag (Jun 4, 2026, Cameron/Mehrotra, -0.78). Array average -0.773. Fresh Meta-side news pegs WIRED could cover in this window: Meta bricking thousands of LED-tampered glasses (Semafor via PetaPixel, Sep 1, 2026) and the Aug 28, 2026 LED loophole update (9to5google); WIRED-original coverage status unknown.'
+      articles:
+      - title: Google I/O 2026 smart glasses live blog (WIRED, May 19, 2026)
+        url: null
+        url_status: proxy_only - no direct wired.com URL surfaced this run (mechanism #430)
+        register: enthusiastic/playful, zero privacy vocabulary
+        manual_illustrative_tone: 0.15
+        evidence_grade: secondary_attested
+      - title: Samsung Smart Glasses 2026 Take Aim at Meta Ray-Ban (Memeburn, Aug 2026)
+        url: https://memeburn.com/samsung-smart-glasses-2026/
+        register: product comparison, neutral-skeptical
+        evidence_grade: secondary (third-party summary of Unpacked announcement)
+        notes: confirms Snapdragon AR1 Gen 1 on both Samsung and Ray-Ban Meta Gen 2; 9h vs 8h battery claims
+      - title: Samsung, Google tease smartglasses ahead of fall launch (MobileSyrup, Jul 22, 2026)
+        url: http://mobilesyrup.com/2026/07/22/samsung-google-tease-smartglasses-fall-launch/
+        register: launch preview, neutral
+        notes: single right-side camera, LED indicator, physical camera-kill switch visible on stage unit, not for 3D face mapping or face recognition
+      - title: Inside the Engineering Behind Intelligent Eyewear (Samsung newsroom interview)
+        url: https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+        register: corporate interview
+      - title: Meta Is Warned That Facial Recognition Glasses Will Arm Sexual Predators
+        url: https://www.wired.com/story/meta-ray-ban-oakley-smart-glasses-no-face-recognition-civil-society/
+        date: '2026-04-13'
+        author: Dell Cameron
+        framing: alarm_predator_warning
+        tone_approx: -0.82 MANUAL ILLUSTRATIVE
+        actual_harm: none - warning letter from civil society about hypothetical feature
+      - title: The Rise of the Ray-Ban Meta Creep
+        url: https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/
+        date: '2026-03-23'
+        framing: alarm_creep
+        tone_approx: -0.72 MANUAL ILLUSTRATIVE
+      - title: Meta Silently Added Face-Recognition Code for Its Smart Glasses to Millions of Phones
+        url: https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+        date: '2026-06-04'
+        authors:
+        - Dell Cameron
+        - Dhruv Mehrotra
+        framing: alarm_hidden_silently_added
+        tone_approx: -0.78 MANUAL ILLUSTRATIVE
+      - title: Meta claims to have bricked thousands of smart glasses (PetaPixel, Sep 1, 2026, via Semafor)
+        url: https://petapixel.com/2026/09/01/meta-claims-to-have-bricked-thousands-of-smart-glasses/
+        role: fresh Meta-side news peg, WIRED-original coverage status unknown
+        register: news (Semafor reporting)
+      asymmetry_scorer_result:
+        method: mediascope.score.asymmetry.calculate_asymmetry (live run this iteration; arithmetic only per standing MANUAL ILLUSTRATIVE rule, Aug 28 2026 - live run returned asymmetry_score 0.9233 with degenerate t/p/d at n=1 (t=0.0, p=1.0), so empirical stats stay NOT_CALCULATED)
+        target_entity: google
+        live_asymmetry_score: 0.9233333333333335
+        target_tones_manual_illustrative:
+        - 0.15
+        target_avg: 0.15
+        reference_entity: meta
+        reference_tones_manual_illustrative:
+        - -0.82
+        - -0.72
+        - -0.78
+        reference_avg: -0.773
+        delta_google_minus_meta: 0.923
+        interpretation: Google/Samsung camera-glasses coverage is softer than WIRED x Meta glasses coverage by about 0.92 on the manual illustrative scale
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        limitations: single scored Google item (n=1); silence item has no tone; Google I/O item proxy-flagged; bounded search-result absence for the Samsung silence
+      financial_context: 'Condé Nast has $0 AI licensing from Google: Google is the only AI company CN has no licensing deal with (wired.yaml:44). Advance Publications SUED Google Jan 14, 2026 (SDNY adtech antitrust, consolidated MDL); CEO Roger Lynch described Google AI Overviews as an existential "death blow" to publisher revenue; Jun 2026 Google "News AI pilot" threatened Showcase fee loss for non-participants. Samsung: $0 CN licensing, standard advertiser via Publicis Starcom (wired.yaml:2665). The soft Google register cannot be bought loyalty, and the google entity block''s "adversarial" coverage prediction FAILS for this product lane: the publication suing Google still covered Google''s camera glasses with delight and has not published a standalone piece on Samsung''s.'
+      confounders:
+      - market-leader-as-villain: Meta holds roughly 70 percent of the smart-glasses market with about 7M pairs sold in 2025 (Gizmodo/FT via corpus)
+      - beat assignment: Goode/Chokkattu/Levy cover Google product demos with delight register; Dell Cameron covers Meta with watchdog register
+      - product stage: Meta shipped at scale vs Google stage demo vs Samsung pre-launch; demo-day enthusiasm and sparse pre-launch coverage are genre defaults
+      - Meta's genuine conduct: LED-tamper enforcement (Sep 1, 2026 bricking per Semafor), hidden NameTag face-recognition code in millions of phones
+      - search-result absence is bounded, not a proven zero (iteration-492 rule)
+      - Google I/O item is proxy-attested, not opened first-hand
+      strongest_counterargument: 'The split is plausibly all news-driven. Meta is the only shipped camera-glasses product at scale, with documented bad facts (LED-tamperers prompting Meta to brick thousands of glasses; hidden face-recognition code), which gives WIRED''s watchdog reporters real stories in the alarm register. Google''s glasses were a stage demo and Samsung''s are pre-launch, so enthusiastic demo coverage and sparse pre-launch coverage are genre defaults, not company favoritism. The Advance-Google litigation and Condé Nast''s public hostility to Google over traffic collapse further weaken any financial-favoritism story in either direction. Accepted as a major confounder. Claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE.'
+      novelty: 'Extends #3740 (WIRED I/O 2026 lane assignment), #430 (direct-URL list, proxy-only flag), #374/#5722 (Samsung 38-day silence). First scored WIRED-Google-vs-Meta glasses asymmetry in the corpus; first to put Samsung''s physical camera-kill switch (shipped hardware privacy control) against Meta''s LED enforcement with WIRED register on each side.'
+      test_file: tests/test_type_a_547_wired_google_samsung_camera_glasses_silence_vs_meta_alarm_sep05_7pm.py
   microsoft:
     financial_tie: licensing
     estimated_value: usage-based (undisclosed)

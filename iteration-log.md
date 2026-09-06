@@ -1,3 +1,16 @@
+#547 Type A: WIRED x Google/Samsung Camera Glasses 45-Day Coverage Silence + Enthusiastic I/O 2026 Register vs WIRED x Meta Glasses Alarm Baseline (-0.773) - First Scored WIRED x Google Mechanism (google financial "adversarial" prediction FAILS this product lane) - Sep 5 2026 19:00 PDT
+
+**Date:** 2026-09-05 19:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 546 E -> 547 A)
+**Type:** A - Competitor Coverage Deep Dive (WIRED x Google/Samsung camera glasses)
+
+**Finding:** First scored WIRED x Google mechanism in the corpus. Google I/O 2026 (May 19): five WIRED reporters (incl. Goode, Chokkattu, Levy) live-blogged camera-equipped Gemini smart glasses in enthusiastic/playful register ("actually bananas", zero privacy vocabulary; mechanism #3740); same Chokkattu who framed Meta glasses as a mass-surveillance tool. Samsung "intelligent eyewear" (Unpacked Jul 22, London): same Snapdragon AR1 Gen 1 chip as Meta glasses, camera with LED + physical camera-kill switch on stage unit, single right-side camera (not for 3D face mapping/face recognition per MobileSyrup), Warby Parker/Gentle Monster frames, fall 2026 launch. WIRED standalone coverage Jul 22-Sep 5 (45 days): zero articles surfaced (bounded search-result absence per iteration-492 rule, extends 38-day silence through Aug 28 per #374/#5722). Baseline: three WIRED x Meta glasses alarm pieces avg -0.773 (Cameron "predators" Apr 13 -0.82 hypothetical feature no actual harm; "Ray-Ban Meta Creep" Mar 23 -0.72; NameTag Jun 4 -0.78). Scorer MANUAL ILLUSTRATIVE: Google +0.15 vs Meta -0.773, delta (Google minus Meta) +0.923; n=1 scored Google item, proxy-flagged I/O claims, heavy confounders; p_value NOT_CALCULATED, is_significant False, NOT artifact-grade. Falsification-family finding: the google entity block's "adversarial" financial-prediction (Advance v. Google litigation) FAILS for this product lane; Condé Nast gets $0 AI licensing from Google, the only AI company CN has no licensing deal with.
+
+**Interrupted run note (this rescue commit):** The 19:00 PDT run completed research, the wired.yaml mechanism insertion (mechanism_547), and the test file, but was interrupted before writing this log entry or committing. This run (20:00 PDT #548) repaired two test bugs in the owning #547 file (hypothetical-actual_harm assertion wording; confounders dict-join) per the #534/#515 precedent and commits the orphaned work here, then proceeds with #548 Type B. Rotation unaffected: #548 = B.
+
+**New Type A files:** `tests/test_type_a_547_wired_google_samsung_camera_glasses_silence_vs_meta_alarm_sep05_7pm.py` - 6 classes, 29 tests, all passing.
+
+---
+
 #546 Type E: Podcast Sentiment 32nd Verification Cycle - GF 498 Hold No 499 (zeno.fm + ListenNotes Both Opened First-Hand This Run), EHE 26-Day Hold (feminist.org/sifted.eu/LatestLY/afrotech Re-Surfaces All Pre-Verified In-Corpus, Zero New Motifs), Attention Sphere 32nd No-Match (Spotify Creators 1h-Fresh Nonprofit Re-Confirmation), No New Press Surfaces (Sep 4 Window Returns Only Older In-Corpus Items, #531 Jezebel Newest) - Sep 5 2026 18:00 PDT
 
 **Date:** 2026-09-05 18:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 545 D -> 546 E)
