@@ -16464,6 +16464,205 @@ journalists:
       google_search_dependency: high
       samsung_advertising: $9.7B annual
       meta_relationship: none
+    type_b_588_scott_stein_handson_review_register_constancy:
+          asymmetry_scorer_result_illustrative:
+            correlation_not_causation: true
+            delta: -0.05
+            delta_calc: target_avg - peer_avg = 0.65 - 0.70 = -0.05
+            delta_direction: 'near-zero: register CONSTANCY across entities. Both items sit
+              in the enthusiastic hands-on review band (+0.6 to +0.7). The 5-point gap is below
+              any meaningful threshold and within hand-scoring noise.'
+            is_significant: false
+            methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register
+              reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1
+              vs n=1. NOT an empirical measurement; no inference can be drawn from these scores.
+              p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored
+              items would manufacture precision that does not exist. is_significant is false.
+              correlation_not_causation is true.'
+            p_value: NOT_CALCULATED
+            peer_avg: 0.7
+            peer_entity: Samsung/Google
+            peer_scores:
+            - 0.7
+            target_avg: 0.65
+            target_entity: Meta
+            target_scores:
+            - 0.65
+          block_key: type_b_588_scott_stein_handson_review_register_constancy
+          confounders:
+          - '[STRONG] Hands-on demo genre: both pieces are company-controlled demo reportage
+            (Meta campus briefing + Samsung midtown New York demo). The enthusiastic-reviewer
+            register is the industry-standard hands-on genre convention - the standing Type
+            B genre boundary (#493 Fowler, #498 Swisher, #503 Preston, #508 Wagner, #513 Kerr,
+            #563 Heath, #568 Frier, #578 Bogost, #583 Lopatto).'
+          - '[STRONG] Product-class asymmetry: Meta item reviews smart glasses ($799), Samsung
+            item reviews a VR headset ($1,799). Different baselines, price anchors, and evaluation
+            criteria limit direct comparability; the constancy claim is directional.'
+          - '[MODERATE] Symmetric executive access: Meta gave Zuckerberg 2022 demo + Himmel
+            interview + White quotes; Samsung/Google gave Choi conversation + Samat chat. Capture
+            is a symmetric, not entity-selective, risk here.'
+          - '[MODERATE] Thin corpus: n=1 vs n=1. Minimum viable unit; two pieces cannot carry
+            a writer-level register claim.'
+          - '[WEAK] Headline authorship: CNET headlines may be editor-written; the superlative
+            Samsung headline is not verifiably Stein''s own wording.'
+          - '[WEAK] Timing: Sep 18 vs Oct 22 2025, a five-week span; both predate the products''
+            retail reality.'
+          counterevidence:
+          - 'Honest-reviewer caveats on both sides: Meta gets "take that with a grain of salt",
+            prescription-range limits, the Orion step-down, and "sometimes feels a bit weird";
+            Samsung/Google gets "hard to see who the Galaxy XR is meant for at its price", "Gemini''s
+            accuracy is still imperfect", and "still very expensive". This is measured-review
+            register, not captured puffery.'
+          - 'Meta is not spared comparisons: the Samsung piece explicitly ranks the XR2+ Gen
+            2 as "better than the Meta Quest 3", and frames Samsung/Google as "a lot more integrated
+            ... than Meta''s VR and glasses approach" - the favorable direction is product-specific,
+            not entity-loyal.'
+          - 'Privacy deferral is symmetric-non-adversarial: Meta gets zero privacy treatment;
+            Samsung/Google gets one exec-quoted control line. Neither gets adversarial framing,
+            consistent with #106''s broader claim that hands-on reviews don''t do adversarial
+            privacy - #106''s ENTITY-SELECTIVE gradient (privacy dismissal for Meta vs superlatives
+            for Google) was found in the Google I/O news/roundup register, whose domain this
+            unit bounds.'
+          - 'Apple as neutral benchmark: Stein uses Apple Vision Pro as the comparison yardstick
+            in BOTH pieces, with mixed verdicts for all parties - register constancy across
+            three entities, not two.'
+          cross_references:
+          - 'mechanism #106 (Scott Stein entity-selective enthusiasm gradient, bounded this
+            run)'
+          - '#457/#102 Adrienne So (WIRED Gear-desk constancy parallel)'
+          - '#548 Dhruv Mehrotra (register constancy falsification parallel)'
+          - '#578 Ian Bogost (register inversion - opposite verdict class)'
+          date: '2026-09-07'
+          design: 'within-journalist, hands-on-review register constancy test: CNET senior editor
+            Scott Stein on Meta Ray-Ban Display (Sep 2025) vs Samsung Galaxy XR (Oct 2025)'
+          finding: 'REGISTER CONSTANCY, not gradient: Stein runs the same enthusiastic hands-on
+            reviewer register on Meta and on Samsung/Google hardware. Both pieces carry superlative
+            headlines, gushing capability claims, measured product caveats, named-executive
+            access, and zero adversarial privacy framing. This bounds in-corpus mechanism #106
+            (enthusiasm gradient with privacy deferral, found in the May 2026 Google I/O news/launch-keynote
+            piece): the gradient is a news-register phenomenon, not Stein''s writer-level review
+            register.'
+          incentive_context: 'CNET owned by Ziff Davis since Q3 2024; Google search-traffic
+            dependency high; no documented Meta financial relationship. Finding is writer-register
+            constancy, not an exoneration of publication-level incentive patterns - a review
+            register can be entity-neutral while news-register gradients (cf. #106) still follow
+            incentive gradients.'
+          iteration: 588
+          meta_item:
+            authorship_corroboration: 'full CNET article text carried by three independent syndicated
+              mirrors, all crediting Scott Stein/CNET photo credits; CNET''s own YouTube channel
+              promotes Stein''s Display-glasses coverage (TWiT Tech News Weekly appearance with
+              Stein). Canonical cnet.com URL not retrievable via search this run; treated per
+              iteration-492 rule: three-mirror corroboration, no zero-coverage claim.'
+            byline: Scott Stein
+            caveats:
+            - Meta promises a surprising 6 hours of mixed-use battery life ... take that with
+              a grain of salt.
+            - only designed to fit a +4.00 to -4.00 prescription range for now.
+            - a functional step down from the Orion dream of last year.
+            - I do have major questions about how it'll work in the real world and not feel
+              distracting or distancing.
+            - 'Meta''s images of things I demoed in-display aren''t exactly the same thing:
+              they only appear in one eye, which sometimes feels a bit weird.'
+            date: '2025-09-18'
+            enthusiasm_quotes:
+            - And they're wild to use.
+            - Neural wristband feels like the start of a new paradigm (section heading).
+            - One of the most amazing things about Meta's Ray-Ban Display Glasses is that you
+              can't see a display projected in the right lens. Like, at all.
+            - These glasses look and feel a lot more impressive than I was expecting.
+            - the current Meta Ray-Bans ... they're also the best smart glasses right now.
+            - Some ideas wowed me. Video chats in-glasses can share my POV.
+            illustrative_tone: 0.65
+            meta_exec_access:
+            - Mark Zuckerberg demoed the neural band to Stein in 2022
+            - Alex Himmel, Meta head of wearables, interviewed and photographed wearing the
+              glasses
+            - Paralympic trainee Jon White quotes on testing the glasses and band
+            price: $799 (on sale Sep 30 2025)
+            privacy_treatment: zero privacy or surveillance mentions in the full article text;
+              display invisibility framed as a PERK ("Maybe I could privately see things displayed
+              and not weird anyone out"); bystander questions ("Will I swipe, tap and glance
+              as I walk into a supermarket or drop my kid off at school?") framed as social
+              awkwardness, never privacy
+            publication: cnet
+            source_urls:
+            - https://newsatw.com/i-wore-metas-new-ray-ban-display-glasses-and-neural-band-i-feel-augmented/
+            - https://newsflash.one/2025/09/18/i-wore-metas-new-ray-ban-display-glasses-and-neural-band-i-feel-augmented/
+            - https://motozurnals.lv/tehnologija/i-wore-metas-new-ray-ban-display-glasses-and-neural-band-i-feel-augmented/407040/
+            title: I Wore Meta's New Ray-Ban Display Glasses and Neural Band. I Feel Augmented
+          novelty: 'type_b_588 is the first dedicated Type B block on Scott Stein. Distinguishes
+            mechanism #106 (same journalist: the enthusiasm gradient with privacy deferral was
+            found in the May 2026 Google I/O news/launch-keynote register - this unit bounds
+            its domain to that register rather than overturning it); #457/#102 Adrienne So (WIRED
+            Gear-desk constancy parallel, different journalist); #548 Dhruv Mehrotra (register
+            constancy falsification parallel); #578 Ian Bogost (opposite verdict class: register
+            inversion). Rotation: 587 A -> 588 B.'
+          research_method: browser.search for Stein-authored CNET hands-on pieces (Sep-Oct 2025);
+            full article text recovered from syndicated mirrors (newsatw.com primary for both,
+            corroborated by newsflash.one, motozurnals.lv, parlournews.com, technologynewso.com);
+            authorship corroborated by repeated Scott Stein/CNET photo credits, CNET's own YouTube
+            channel linking the Galaxy XR piece (zdcs.link/aADDRw), and Fast Company quoting
+            the CNET headline; canonical cnet.com URLs not retrievable via search (no URL guessing
+            per browser rules); quote-level verification from full mirror text; mirror-first-body
+            quote extraction for all cited lines.
+          samsung_google_item:
+            authorship_corroboration: 'four independent syndicated mirrors crediting Scott Stein/CNET
+              photo credits; CNET''s own YouTube channel description links the piece ("I Tried
+              Samsung Galaxy XR: Like Apple Vision Pro for Half the Price (and Twice the AI)
+              https://zdcs.link/aADDRw"); Fast Company independently quotes the CNET headline
+              ("tech blog CNET described as Like Apple Vision Pro for half the price"). Canonical
+              cnet.com URL not retrievable via search this run; same iteration-492 handling
+              as the Meta item.'
+            byline: Scott Stein
+            caveats:
+            - it's hard to see who the Galaxy XR is meant for at its price.
+            - feels as much like a stepping stone as an actual product.
+            - Gemini's accuracy is still imperfect, though (Chrome search launched instead of
+              Maps; wrong football field-goal answer).
+            - The Galaxy XR is half the price of the Vision Pro but still very expensive.
+            - I look forward to a full review of Galaxy XR in the coming weeks.
+            date: '2025-10-22'
+            enthusiasm_quotes:
+            - 'headline: "Like Apple Vision Pro for Half the Price (and Twice the AI)".'
+            - the headset felt like an open door to product ideas to come.
+            - some exclusive apps that Meta and Apple would kill for.
+            - Google Maps, and its 3D globe modes and 3D-scanned location walkthroughs, are
+              even better.
+            - can recognize more things in both 2D apps and the world around me than any other
+              mixed reality headset AI I've ever tried before. It's an all-seeing type of magic.
+            - a living testbed for live AI that can sit on your shoulder and see what you're
+              seeing. Other headsets don't have anything like it yet.
+            - The field of view and display resolution of the Samsung Galaxy XR felt better
+              than Apple Vision Pro. It's lighter, too.
+            - The specs for the micro OLED displays are impressive.
+            - a lot more integrated between VR, AR, AI and smart glasses than Meta's VR and
+              glasses approach and Apple's headset-only current strategy.
+            illustrative_tone: 0.7
+            price: $1,799
+            privacy_treatment: 'no adversarial privacy framing; camera AI "see what you''re
+              seeing" repeated as a capability, never a concern; one privacy-control line delivered
+              via Google exec quote ("you can authorize particular apps to be visible by the
+              camera-enabled AI, and hide others" - Sameer Samat), i.e. privacy deferral with
+              exec quotes, same pattern as #106 for Google'
+            publication: cnet
+            samsung_google_exec_access:
+            - Samsung COO of Mobile Experiences Won-Joon Choi interviewed "in a conversation
+              in New York"
+            - Google President of the Android Ecosystem Sameer Samat "explained to me in a chat
+              after my demo"
+            source_urls:
+            - https://newsatw.com/i-tried-samsung-galaxy-xr-like-apple-vision-pro-for-half-the-price-and-twice-the-ai/
+            - https://newsflash.one/2025/10/22/i-tried-samsung-galaxy-xr-like-apple-vision-pro-for-half-the-price-and-twice-the-ai/
+            - https://parlournews.com/i-tried-samsung-galaxy-xr-like-apple-vision-pro-for-half-the-price-and-twice-the-ai/
+            - https://technologynewso.com/i-tried-samsung-galaxy-xr-like-apple-vision-pro-for-half-the-price-and-twice-the-ai/
+            title: 'I Tried Samsung Galaxy XR: Like Apple Vision Pro for Half the Price (and
+              Twice the AI)'
+          time_pt: '13:00'
+          type: B
+          verdict: 'register_constancy: hands-on review register is entity-neutral for Stein
+            across Meta and Samsung/Google. #106 remains valid but domain-bounded to the news/launch-keynote
+            register; it does not replicate in Stein''s product hands-ons.'
 - name: Wesley Hilliard
   publication: appleinsider
   notes: Rumor Expert at AppleInsider and AppleInsider Podcast co-host. 10-year US Navy veteran (nuclear-trained electrician) who became captivated by Apple privacy and device security. Applies resolution-conditional privacy vocabulary inversion to camera wearable coverage.
