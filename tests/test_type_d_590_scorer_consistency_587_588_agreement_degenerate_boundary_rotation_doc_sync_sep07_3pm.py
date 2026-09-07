@@ -552,7 +552,7 @@ class TestNoBrittleSweep590:
 
 
 class TestRotationCycleGuard590:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "eb31037"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type D #590 followup: ...") and doc-sync ("Type C #589
