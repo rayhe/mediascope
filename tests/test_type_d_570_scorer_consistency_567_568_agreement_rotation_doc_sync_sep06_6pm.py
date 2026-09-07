@@ -526,7 +526,12 @@ class TestNoBrittleSweep570:
 
 
 class TestRotationCycleGuard570:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    # ANCHORED at this run's commit (382abc3) via the followup-commit
+    # convention established by Type D #565 (see commit bd7f2fd): the main
+    # commit carried the POST_COMMIT_ANCHOR placeholder and this followup
+    # patches it to the real hash. The guard verifies the rotation was
+    # valid AT THAT TIME, which is immutable.
+    ANCHORED_COMMIT = "382abc3"
 
     @staticmethod
     def _git_subjects(n=5):
