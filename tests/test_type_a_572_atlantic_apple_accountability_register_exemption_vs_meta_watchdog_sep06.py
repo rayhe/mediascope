@@ -363,7 +363,7 @@ class TestIterationLogAndNovelty:
         # the main commit exists; it is patched to the real hash in the
         # followup commit, and this guard is excluded from the pre-commit
         # run, verified green post-commit.
-        anchored = "POST_COMMIT_ANCHOR"
+        anchored = "e10400d"
         subjects = subprocess.run(
             ['git', 'log', '--format=%H %s', anchored],
             capture_output=True, text=True, cwd=REPO,
