@@ -18213,3 +18213,125 @@ wikimedia_enterprise_ai_training_deals_579:
     date: '2026-09-07 04:00 PDT'
     yaml_parse_clean: true
     ascii_only: true
+
+disney_openai_1b_sora_deal_arc_584:
+  mechanism_id: 584
+  iteration: 584
+  iteration_type: C
+  type: financial_incentive_mapping
+  type_label: Financial Incentive Mapping
+  rotation: 'Type C'
+  date_analyzed: '2026-09-07'
+  time_pdt: '09:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'Disney x OpenAI $1B Sora deal arc (Dec 11 2025 - Mar 24 2026) - largest entertainment licensing relationship, equity-plus-licensing-plus-API-customer structure, terminated with zero dollars transferred; first dedicated mechanism'
+  overview: 'On Dec 11 2025 Disney announced a $1B equity investment in OpenAI plus warrants for additional equity, alongside a 3-year licensing agreement giving Sora and ChatGPT Images access to 200+ Disney, Marvel, Pixar, and Star Wars characters, with Disney also becoming a major OpenAI API customer. On Mar 24 2026 OpenAI discontinued Sora outright and Disney exited the deal; no money ever changed hands. This is the first dedicated Disney mechanism in the corpus (zero disney mentions in competitor-entities.yaml before insertion, grep verified). The arc is a natural experiment for the financial-incentive model: a $1B+ prospective incentive that existed for 3.5 months and then vanished before a dollar transferred. Disney owns ABC News, a major news organization covering AI and OpenAI. Meta holds $0 Disney financial relationship throughout.'
+  announcement:
+    date: '2025-12-11'
+    announced_by: 'Disney (press release) and OpenAI'
+    primary_report: 'Reuters'
+    talks_origin: 'CEO Bob Iger and Sam Altman began talking years earlier about pairing generative AI with Disney characters and stories (Reuters, source familiar)'
+    market_reaction: 'Disney shares rose 2% in early trading on the news (Morningstar/MarketWatch)'
+  equity_leg:
+    investment: '$1B equity investment in OpenAI by Disney'
+    warrants: 'warrants to purchase additional equity in OpenAI (Reuters, Morningstar)'
+    distinctiveness: 'investment relationship type - Disney as prospective OpenAI investor, distinct from the licensing-only publisher deals in the corpus'
+  licensing_leg:
+    term: '3-year licensing agreement'
+    characters: '200+ animated, masked, and creature characters from Disney, Marvel, Pixar, and Star Wars, including costumes, props, vehicles, and iconic environments (Gizmodo, Disney press release)'
+    surfaces: 'Sora short-form user-prompted social videos for fan viewing and sharing; ChatGPT Images fully generated images from user text (Gizmodo)'
+    exclusions: 'no talent likenesses or voices (Reuters, Gizmodo)'
+    guardrails: 'guide rails to protect against characters being depicted in inappropriate situations (Reuters)'
+    disney_plus: 'curated selection of user videos to stream on Disney+ (Reuters, Marketplace)'
+    start: 'fan video generation from early 2026 (Morningstar)'
+  customer_leg:
+    api_customer: 'Disney becomes a major customer of OpenAI, using its APIs to build new products, tools, and experiences including for Disney+ (Gizmodo)'
+    employee_deployment: 'deploying ChatGPT for Disney employees (Gizmodo, Marketplace)'
+    production_use: 'Disney planned to use OpenAI tools for internal film-production efficiency (Reuters)'
+  union_reaction: 'Hollywood unions reacted cautiously to the December deal (Reuters); months earlier Creative Artists Agency had criticized OpenAI for exposing artists to significant risk through Sora (Reuters)'
+  termination:
+    date: '2026-03-24'
+    announcement_channel: 'OpenAI announced on X: "We are saying goodbye to Sora" (TheStreet, TechSpot, PetaPixel)'
+    scope: 'Sora iOS app, API, and Sora.com shut down; WSJ reports full-scale plug-pulling including no video functionality inside ChatGPT (PetaPixel)'
+    internal_direction: 'CEO Sam Altman told staff OpenAI is shutting down products using its generative video models (PetaPixel)'
+    strategic_rationale: 'refocus on business and coding functions ahead of a potential IPO as soon as Q4 2026 (PetaPixel, TechSpot); Sora demanded heavy compute, leaving less capacity for other research teams (TechSpot)'
+    reason_given: 'OpenAI gave no public reason for the shutdown (TheStreet, Campaign)'
+  disney_exit:
+    deal_status: 'dead - Disney exited the landmark deal alongside the Sora shutdown (TheStreet, TechSpot)'
+    money_transferred: 'zero - "Disney ended its $1 billion OpenAI deal; no money changed hands" (TheStreet)'
+    rug_pull: 'Disney executives learned of the shutdown 30 minutes after meeting with OpenAI teams about Sora future; "It was a big rug-pull," a person familiar told Reuters (TechSpot)'
+    disney_statement: '"As the nascent AI field advances rapidly, we respect OpenAI''s decision to exit the video generation business and to shift its priorities elsewhere" - Disney spokesperson (Campaign, Gizmodo)'
+    ceo_transition: 'Josh D''Amaro took over as Disney CEO days before the termination (TheWrap)'
+    forward_posture: '"we will continue to engage with AI platforms to find new ways to meet fans where they are while responsibly embracing new technologies that respect IP and the rights of creators" - Disney (Gizmodo)'
+  sora_metrics:
+    launch_history: 'first Sora Dec 2024; Sora 2 plus standalone app Sep 2025 (The Times)'
+    peak: 'Sensor Tower: 5M worldwide downloads Oct 2025, up 4,400% from 107K in September; number one app in the App Store in October (Barron''s)'
+    collapse: 'Appfigures: US App Store downloads fell 32% month-on-month Dec 2025 and a further 45% in Jan 2026, reaching 1.2M cumulative installs (Campaign)'
+    controversies: 'copyright-training questions, deepfake and AI-slop warnings from academics; Sora blocked deepfakes of deceased public figures after family requests; Bryan Cranston likeness reproduced without permission, OpenAI called it unintentional (The Times)'
+  mediascope_significance:
+    largest_entertainment_licensing: 'largest single entertainment licensing relationship OpenAI ever signed by headline value ($1B equity + warrants + 3-year character license + API customer leg)'
+    equity_distinctiveness: 'only corpus mechanism with an AI-lab equity leg attached to a content deal - Disney as prospective investor, not just licensee-counterparty'
+    abc_news_ownership: 'Disney owns ABC News, a major news organization covering AI, OpenAI, and tech; a $1B+ prospective financial relationship existed Dec 2025 - Mar 2026'
+    natural_experiment: 'deal announced, then terminated with $0 transferred: the financial incentive was prospective, never realized - tests whether announced-but-unfunded relationships belong in the incentive model at the same weight as funded deals'
+    tracked_surface: 'The Verge (tracked publication) annotated Mar 31 2026 ($122B funding-round piece noting "ending $1B Disney deal") and Apr 8 2026 ("The vibes are off at OpenAI", "Sora discontinuation 30 mins after Disney collab") - single publication, no comparator corpus, no tone claim'
+    meta_contrast: 'Meta holds $0 Disney financial relationship throughout the arc - no licensing, no equity, no API customer leg'
+  structural_contrasts:
+    - 'mechanism 504: Conde Nast x OpenAI is bilateral publisher display licensing with no equity leg; Disney x OpenAI adds equity plus API-customer legs on top of licensing'
+    - 'mechanism 549: News Corp x Meta ($50M/yr) is a CLOSED and funded publisher deal; Disney x OpenAI was announced but never funded - the unfunded-announcement boundary case for the incentive model'
+    - 'mechanism 519: News Corp dual-payer (OpenAI + Meta) shows funded bilateral deals on both sides; Disney shows a single-sided prospective OpenAI relationship that evaporated'
+    - 'mechanism 391: Perplexity Comet Plus is funded publisher revenue share; Disney x OpenAI is the inverse - headline $1B, realized $0'
+  directional_predictions:
+    - 'OpenAI: the Disney arc adds no funded financial incentive to the model; announced-but-unfunded deals should be tracked separately from funded legs in incentive tallies'
+    - 'Disney-owned media (ABC News): prospective $1B+ relationship existed Dec 2025 - Mar 2026; any coverage-tone analysis of that window must note the prospective incentive, bounded by the zero-transfer fact'
+    - 'Meta: $0 Disney relationship throughout; no change to standing predictions'
+  predictions_not_findings: true
+  ranked_confounders:
+    - rank: 1
+      strength: strong
+      confounder: 'no money changed hands - the $1B incentive was prospective, never realized; an unfunded announcement creates a weaker incentive than a funded deal, so the headline figure overstates the dependency'
+    - rank: 2
+      strength: strong
+      confounder: 'short duration - roughly 3.5 months from announcement to termination; limited window for any incentive to transmit to editorial decisions'
+    - rank: 3
+      strength: strong
+      confounder: 'entertainment IP, not news content - character licensing for video generation is a different leverage class than publisher display or training-data deals; the transmission mechanism to news coverage is indirect (owner-level, via ABC News)'
+    - rank: 4
+      strength: moderate
+      confounder: 'product-driven failure - Sora download collapse (minus 32% then minus 45% MoM) and compute costs drove the shutdown, not the Disney relationship; termination reflects product economics'
+    - rank: 5
+      strength: moderate
+      confounder: 'second-hand excerpts - no pages opened first-hand this run; deal facts rest on search-result excerpts, bounded per iteration-492'
+    - rank: 6
+      strength: weak
+      confounder: 'CEO transition - Josh D Amaro took over as Disney CEO days before termination; leadership change may have altered Disney-side deal appetite independent of Sora economics'
+  statistical_discipline:
+    scope: 'qualitative structural mapping only'
+    correlation_not_causation: true
+    p_value: 'NOT_CALCULATED'
+    cohens_d: 'NOT_CALCULATED'
+    ci_95: 'NOT_CALCULATED'
+    is_significant: false
+    tone_scores: 'NOT_SCORED'
+  correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+  cautious_language_required: true
+  no_coverage_tone_claim: true
+  sources:
+    - 'https://www.reuters.com/business/media-telecom/disney-makes-1-billion-investment-openai-brings-characters-sora-2025-12-11/'
+    - 'https://www.marketplace.org/story/2025/12/23/why-disney-is-partnering-with-openais-sora'
+    - 'https://www.barrons.com/articles/disney-openai-sora-deal-collapse-ai-strategy-6ed5f56c'
+    - 'https://www.morningstar.com/news/marketwatch/20251211200/walt-disney-invests-1-billion-in-openai-and-licenses-characters-for-use-on-sora'
+    - 'https://www.thestreet.com/technology/openai-is-shutting-down-sora-and-the-disney-deal-is-off'
+    - 'https://www.techspot.com/news/111812-openai-pulls-plug-sora-ending-1-billion-disney.html'
+    - 'https://www.campaignlive.com/article/openai-shuts-down-sora-billion-dollar-disney-deal-comes-end/1952808?utm_source=website&utm_medium=social'
+    - 'https://petapixel.com/2026/03/24/openai-kills-sora-and-loses-disneys-1b-investment/'
+    - 'https://www.thewrap.com/industry-news/business/sora-disney-openai-dead-why/'
+    - 'https://gizmodo.com/disney-openai-sora-deal-dead-2000737676'
+  research_method: '2 browser.search query sets this run (Disney OpenAI Sora deal ended terminated 2026; Disney OpenAI $1B Sora licensing deal announced December 2025 terms), verbatim full-URL listings; deal facts second-hand via search-result excerpts, bounded in-mechanism; no pages opened first-hand; pre-commit repo greps confirmed zero disney mentions in profiles/competitor-entities.yaml and no dedicated Disney mechanism (the-verge.yaml annotations at Mar 31 and Apr 8 2026 note the deal ending but carry no Type C financial-incentive mechanism); no zero-coverage claims per iteration-492 rule; no canonical URLs constructed'
+  novelty: 'first dedicated Disney mechanism in the corpus; zero disney mentions in profiles/competitor-entities.yaml (grep verified); no Disney x OpenAI deal arc in iteration-log.md (grep verified); distinct from mechanism 504 (Conde Nast x OpenAI bilateral publisher licensing, no equity leg), mechanism 549 (News Corp x Meta funded publisher deal - the funded counterpart to this unfunded-announcement boundary case), mechanism 519 (News Corp dual-payer), and mechanism 391 (Perplexity funded revenue share - the inverse of headline-$1B-realized-$0)'
+  verification:
+    iteration: 584
+    type: 'C'
+    date: '2026-09-07 09:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
