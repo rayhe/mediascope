@@ -550,7 +550,7 @@ class TestRotationCycleGuard575:
     # POST_COMMIT_ANCHOR placeholder and the followup patches it to the
     # real hash. The guard verifies the rotation was valid AT THAT TIME,
     # which is immutable.
-    ANCHORED_COMMIT = "bcff2bbd1816a553e07108e414654f0b6cce048a"
+    ANCHORED_COMMIT = "1d5d312704e409a4b9ca4e3f34868b76e26a8d0b"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type D #575 followup: ...") and doc-sync ("Type C #574
