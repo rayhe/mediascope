@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 30539 | Across 910 test files |
+| Tests | 30580 | Across 911 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -1436,3 +1436,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_wsj_news_corp_google_youtube_child_safety_settlement_coverage_accountability_asymmetry_aug27.py` | 15 | Test: WSJ/News Corp Google/YouTube Child Safety Settlement-Week Coverage Accountability Asymmetry |
 | `test_zoe_schiffer_hardware_talent_war_aug2026.py` | 9 | Regression tests (module docstring pending) |
 | `test_type_a_582_gizmodo_openai_rogue_agent_null_tie_symmetric_adversarial_sep07_7am.py` | 48 | Type A #582: Gizmodo x OpenAI rogue-agent null-tie control - THIRD zero-tie control in the Gizmodo set (after #512 Google, #577 Anthropic); first dedicated mechanism under gizmodo.yaml competitor_relationships.openai (previously zero mechanisms); OpenAI undisclosed DSEWiki agent swarm (-0.70, first-hand) + Hugging Face hack anatomy (-0.50, first-hand) + Astra monitorability (-0.65, first-hand) vs Meta facial-recognition glasses (-0.70, #512 carryover) + scrapped AI photo tool (-0.55, #512 carryover) + layoffs headline snark (-0.60, #577 carryover); delta 0.00 MANUAL ILLUSTRATIVE n.s. (arithmetic coincidence, not a measured zero), p_value/cohens_d/ci NOT_CALCULATED per standing rule Aug 28 2026; sharpest incident-class parallel in the corpus (#577 Anthropic Mythos autonomous hacks vs OpenAI rogue-agent incidents, same publication, same week, same adversarial accountability register); domain-bounded to controversy/news - Sep 7 2026 07:00 PDT |
+| `test_type_b_583_elizabeth_lopatto_meta_manifesto_openai_trial_sep07_8am.py` | 41 | Type B #583: Elizabeth Lopatto (The Verge) Meta vs OpenAI writer-level consistency check - CONSISTENT-BUT-NON-EVIDENTIAL (bound), not a thesis win: adversarial toward Meta AI manifesto (Aug 10 2026 "Mark Zuckerberg doesn't understand how to live", -0.70) vs Musk v. Altman trial dispatch with "never been more sympathetic to Sam Altman" line (Apr 29 2026, +0.10); delta +0.80 MANUAL ILLUSTRATIVE n.s. (n=1 vs n=1, p_value NOT_CALCULATED per standing rule); sympathy line is Musk-relative not OpenAI-warmth, same coverage mocks Brockman ("nobody looks good doing it"); genre mismatch is the standing Type B boundary condition; opposite verdict class from #578 (Bogost inversion); cross-references #498 (Swisher same-deal falsification) and #425 (Verge product-domain bound) - Sep 7 2026 08:00 PDT |

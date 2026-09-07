@@ -12453,6 +12453,67 @@ journalists:
   - https://sciencewritersmeeting.org/speakers/elizabeth-lopatto
   - https://kenyonreview.org/blog/page/284/
   - https://sciencefriday.com/person/liz-lopatto/
+  competitor_coverage:
+    type_b_583_elizabeth_lopatto_meta_manifesto_openai_trial:
+      iteration: 583
+      date: '2026-09-07'
+      type: B
+      design: 'Within-journalist cross-entity comparison: Elizabeth Lopatto (The Verge senior reporter, chaos beat) on Meta vs OpenAI. Tests whether the writer-level register tracks the publication-level financial gradient: Vox Media carries an OpenAI strategic content-and-product partnership (May 29 2024, in-corpus mechanism #494, The Verge content licensed to OpenAI) and no documented Meta AI licensing deal, predicting softer OpenAI coverage than Meta coverage at the same outlet. Meta corpus: the Aug 10 2026 personal column on Zuckerberg''s AI manifesto (adversarial). OpenAI corpus: the Apr 29-30 2026 Musk v. Altman trial courtroom dispatch (sympathetic moment toward Altman).'
+      hypothesis: 'At a publication with a deal-side financial tie to OpenAI and no Meta tie, the standing prediction is softer OpenAI coverage than Meta coverage from the same writer. The trial dispatch''s verbatim marker (''I have never been more sympathetic to Sam Altman in my life'') reads, on its face, as directionally consistent with that prediction.'
+      finding: 'CONSISTENT-BUT-NON-EVIDENTIAL (bound), not a thesis win. Elizabeth Lopatto is adversarial toward Meta''s AI manifesto (Aug 10 2026 ''Mark Zuckerberg doesn''t understand how to live'': ''An AI future of sleek, streamlined, and totally empty relationships.'') and writes the Musk v. Altman trial dispatch containing the ''never been more sympathetic to Sam Altman'' line (Apr 29 2026 ''Elon Musk''s worst enemy in court is Elon Musk''). The ILLUSTRATIVE delta is +0.80 (OpenAI +0.10 minus Meta -0.70: target softer than peer), directionally consistent with the softer-OpenAI prediction. But the sympathy line is a Musk-relative measure, not an OpenAI measure: it records how badly Musk performed on cross-examination, and the same coverage mocks OpenAI''s own Brockman (''if you can define the word epistemology, you should not testify in your own defence'') and frames the trial as ''nobody looks good doing it''. Genre mismatch (personal column vs courtroom dispatch) is the standing Type B boundary condition. The unit therefore bounds the corpus: a case that looks direction-consistent on the headline line collapses under genre and subject confounders. CORRELATION NOT CAUSATION.'
+      incentive_context:
+        deal: 'Vox Media x OpenAI strategic content-and-product partnership (May 29 2024, in-corpus mechanism #494): OpenAI gets Vox/Verge current content plus full archive for training; Vox builds on OpenAI tech including ad-targeting extensions. Terms undisclosed. The Verge included. Meta: zero AI content licensing deal documented in-corpus.'
+        deal_date: '2024-05-29'
+        deal_url: 'https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/'
+        coverage_prediction: 'softer'
+        meta_financial_tie: 'none documented'
+        prediction_tested: 'softer OpenAI than Meta at writer level'
+        prediction_result: 'directionally consistent on illustrative delta (+0.80) but NON-EVIDENTIAL: genre and Musk-relative-subject confounders void the test'
+      meta_corpus:
+      - title: 'Mark Zuckerberg doesn''t understand how to live'
+        date: '2026-08-10'
+        byline: 'Elizabeth Lopatto (solo)'
+        url: 'https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision'
+        verification: 'Canonical URL verbatim from wesearch.press metadata this run (byline Elizabeth Lopatto, publication 2026-08-10T18:00:00-04:00). Authorship corroborated by the buzzsumo journalist profile listing the piece under her recent articles and by the Vergecast video discussion of the essay (youtube f4KgyG-AuAo). theverge.com direct fetch policy-blocked this run; bounded second-hand.'
+        register: 'adversarial personal-column essay on the Zuckerberg AI manifesto'
+        verbatim_markers: '''An AI future of sleek, streamlined, and totally empty relationships.'' (subhead); ''Love is not just a feeling; it is a way of paying attention.''; the September 1 2026 Vergecast expands the critique across a full 41-minute discussion.'
+      openai_corpus:
+      - title: 'Elon Musk''s worst enemy in court is Elon Musk'
+        date: '2026-04-29'
+        date_note: 'Published Apr 29-30 2026 per mirror timestamps (ai-news-tracker 2026-04-29T21:35:11-04:00; inkbrief Apr 30 05:31 AM); bounded to 2026-04-29'
+        byline: 'Elizabeth Lopatto (solo)'
+        url: 'https://www.theverge.com/tech/921022/elon-musk-cross-openai-altman'
+        verification: 'Canonical URL verbatim from the GitHub ai-news-tracker 2026-04-30.md listing this run (title, excerpt, and URL match). Byline and verbatim quote corroborated by inkbrief (''The Verge 30 April 2026'', byline Elizabeth Lopatto), times42 (''Elizabeth Lopatto @ The Verge''), washingtonhorizon (''Verge reporter Elizabeth Lopatto wrote''), and el-balad. theverge.com direct fetch policy-blocked this run; bounded second-hand.'
+        register: 'courtroom dispatch, Musk cross-examination day'
+        verbatim_markers: '''About five hours into Elon Musk''s testimony, I typed the following sentence into my notes: "I have never been more sympathetic to Sam Altman in my life."''; week-2 synthesis of her coverage: ''both Musk and Brockman damaged their credibility on the stand'' and ''neither does [come off well]''; on Brockman: ''if you can define the word epistemology, you should not testify in your own defence.'''
+      asymmetry_scorer_result_illustrative:
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1 vs n=1. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        target_entity: OpenAI
+        target_scores:
+        - 0.1
+        target_avg: 0.1
+        peer_entity: Meta
+        peer_scores:
+        - -0.7
+        peer_avg: -0.7
+        delta: 0.8
+        delta_calc: 'target_avg - peer_avg = 0.10 - (-0.70) = 0.80'
+        delta_direction: 'target softer than peer by 0.80: directionally CONSISTENT with the softer-OpenAI prediction, but NON-EVIDENTIAL under genre and Musk-relative-subject confounders'
+        p_value: NOT_CALCULATED
+        is_significant: false
+        correlation_not_causation: true
+      confounders:
+      - '[STRONG] Genre asymmetry: the Meta item is a personal adversarial column; the OpenAI item is a courtroom dispatch. The register difference is equally consistent with genre-driven framing, the standing Type B boundary condition (#493 Fowler, #498 Swisher, #503 Preston, #508 Wagner, #513 Kerr, #563 Heath, #568 Frier, #578 Bogost).'
+      - '[STRONG] Musk-relative subject: the ''sympathetic to Altman'' line measures Musk''s cross-examination performance, not OpenAI''s virtue. The trial''s spectacle is Musk, so the OpenAI-side tone is contaminated by the plaintiff''s conduct.'
+      - '[MODERATE] Timing mismatch: Apr 29 2026 vs Aug 10 2026, a four-month span across which the Musk v. Altman trial and the Meta AI-manifesto discourse both moved.'
+      - '[MODERATE] Thin corpus: n=1 vs n=1. Minimum viable unit; a single column and a single dispatch cannot carry a writer-level register claim.'
+      - '[WEAK] Headline authorship: Verge headlines are frequently editor-written; the ''worst enemy in court'' framing is likely but not verifiably Lopatto''s own wording.'
+      counterevidence:
+      - 'Musk-relative measure: ''I have never been more sympathetic to Sam Altman in my life'' is a statement about Musk''s testimony, not OpenAI coverage warmth. Same logic as #578''s not-Meta-the-company counterevidence: entity treatment is inferred from stance toward a proxy, not direct company coverage.'
+      - 'Within-piece anti-OpenAI-founder material: the same trial coverage mocks Greg Brockman (''if you can define the word epistemology, you should not testify in your own defence'') and the week-2 synthesis frames the trial as ''nobody looks good doing it'' - the OpenAI side is not treated warmly overall.'
+      - '#498 Swisher deal-partner falsification: the same Vox Media x OpenAI deal (May 29 2024) did not soften Kara Swisher''s OpenAI coverage, so a consistent-direction read here would be overdetermined by the financial tie.'
+      - '#425 domain-bounding: the Verge OpenAI-aspiration vs Meta-deficit incentive pattern held in the PRODUCT/AI-model domain; this unit''s courtroom genre is outside that domain, and #425''s own boundary note says the pattern is domain-bounded, not universal.'
+      novelty: 'First dedicated Type B on Elizabeth Lopatto. Zero test_type_b_583 files present in repo (glob verified this run). No Type B commit with 583 in title (git log --grep verified this run). No existing competitor_coverage block on her careers entry (YAML-parsed verified pre-insert). Prior repo mentions of Lopatto are career-profile only (Bloomberg tenure, Verge senior reporter, chaos beat, courtroom method, the Zuckerberg/Rogan line) - never a within-writer cross-entity unit. Distinct from #436 (Goode, Apple Vision Pro vs Meta Ray-Ban), #498 (Swisher, same Vox Media x OpenAI deal, falsification), #425 (Verge publication-level product-domain pattern, the domain bound), and #578 (Bogost, writer-register INVERSION of its prediction - this unit is consistent-but-non-evidential, the opposite verdict class).'
 - career:
   - beat: web technology, consumer tech
     end: '2006'
