@@ -461,6 +461,226 @@ competitor_relationships:
     direction: none
     description: No financial relationship.
     coverage_prediction: neutral
+    mechanism_587_gizmodo_apple_null_tie_fourth_control_product_lane_boundary:
+      mechanism_id: 587
+      date_analyzed: '2026-09-07'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 587
+      iteration_type: A
+      iteration_time: 2026-09-07 12:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Gizmodo (Keleops AG, acquired from G/O Media 2024-06-04)
+      finding: 'Null-tie control Type A, FOURTH in the Gizmodo control set (after #512
+        Gizmodo x Google, #577 Gizmodo x Anthropic, #582 Gizmodo x OpenAI). First dedicated
+        mechanism under gizmodo.yaml competitor_relationships.apple (previously zero mechanisms).
+        Gizmodo carries $0 documented financial ties to Apple and Meta (all competitor_relationships
+        blocks in this profile: none / $0), so the thesis predicts symmetric registers
+        with no tie-driven softening. Observed: Gizmodo applies an adversarial, snark-heavy
+        register to BOTH Apple and Meta in the controversy/news domain at closely matched
+        illustrative intensity: delta +0.1334 (apple mean -0.4833 vs meta mean -0.6167),
+        p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant
+        False (standing rule Aug 28 2026). Apple side (all first-hand this run): (1) ''Apple
+        Says Its New Google-Infused AI Is All About Privacy'' (WWDC 2026, Jun 2026) -
+        skeptical-distancing headline register (''Says''), Apple''s privacy claims reported
+        with air-quote distancing, Federighi''s ''broad world knowledge'' glossed as ''technobabble
+        for being able to access the web'', ''We are not like other AI companies'' section
+        header reads as sarcastic framing; tone -0.50; NEW-TO-CORPUS. (2) ''Apple''s Vision
+        Pro Will Stick AI Siri Right in Your Face'' (WWDC 2026, Jun 2026) - dismissive
+        snark: ''$3,500 Vision Pro is still getting a small ounce of love'', ''ask the
+        chatbot any number of inane queries'', ''giant, floating marble-like ball'', ''Hopefully,
+        we will be able to invoke it by saying Hello, Orb''; tone -0.55; NEW-TO-CORPUS.
+        (3) ''Apple''s Smart Glasses Are Stepping Into a Privacy Minefield'' (Apr 2026,
+        Raymond Wong) - the privacy-minefield frame IS applied to Apple''s glasses entry,
+        BUT with a partial reputation carve Apple does not extend to Meta: ''for Apple,
+        a company that is built around privacy, it could be doubly messy'' and ''Apple
+        does not share that problem ... it is built on its reputation for *not* doing
+        that [collecting user data]'', while Meta absorbs the full pathology frame: ''the
+        entire company is built around collecting data and then using that data for financial
+        gain - this is the mentality you get when a social media company steps into hardware'';
+        tone -0.40 toward Apple; IN-CORPUS as a wearables example in this profile, first
+        scored as an Apple-side target item in this unit. Meta side (carried from #512/#577/#582):
+        facial-recognition glasses -0.70, scrapped AI photo tool -0.55, layoffs headline
+        snark -0.60. WHY IT MATTERS: the null-tie symmetry claim now holds across FOUR
+        competitor entities (Google, Anthropic, OpenAI, Apple) plus Meta - the widest
+        control set in the corpus. Item 3 sets the product-lane boundary: at a zero-tie
+        publication the controversy/news register is symmetric, but the glasses product
+        lane carries a reputation-driven gradient that favors Apple - driven by Apple''s
+        genuine hardware-sales business model and privacy marketing, not by any financial
+        tie (none exists). This bounds the control correctly: it does not claim identical
+        treatment in every lane; it claims the adversarial register fires on deal-absent
+        competitors symmetrically in the controversy/news domain. The +0.1334 delta is
+        within the illustrative band and is NOT claimed as empirical; the supported claim
+        is symmetric-adversarial within the illustrative band with a product-lane reputation
+        carve. Cross-references: 512 (Gizmodo x Google null-tie), 577 (Gizmodo x Anthropic
+        null-tie), 582 (Gizmodo x OpenAI null-tie, sibling controversy-domain control),
+        121 (Fast Company Snap vs Meta privacy vocabulary - the structural ad-competition
+        mechanism), 547 (WIRED x Google/Samsung camera glasses silence + I/O enthusiasm
+        vs Meta alarm baseline - product-lane comparator). Correlation is not causation; n is thin.'
+      articles:
+      - title: Apple Says Its New Google-Infused AI Is All About Privacy
+        url: https://gizmodo.com/apple-says-its-new-google-infused-ai-is-all-about-privacy-2000768997
+        date: 2026-06
+        format: news_analysis
+        register: skeptical_distancing
+        manual_illustrative_tone: -0.5
+        key_phrases:
+        - Headline 'Says' distancing register
+        - '''technobabble for being able to access the web'''
+        - '''We are not like other AI companies'' section header (sarcastic framing)'
+        - Federighi privacy claims reported with air-quote distancing
+        - 'WWDC 2026 keynote coverage: Apple Intelligence architecture codeveloped with
+          Google'
+        verification: first-hand this run (browser.open full text); NEW-TO-CORPUS (zero
+          pre-commit grep hits)
+      - title: Apple's Vision Pro Will Stick AI Siri Right in Your Face
+        url: https://gizmodo.com/apples-vision-pro-will-stick-ai-siri-right-in-your-face-2000768744
+        date: 2026-06
+        format: news_snark
+        register: dismissive_snark
+        manual_illustrative_tone: -0.55
+        key_phrases:
+        - '''The $3,500 Vision Pro is still getting a small ounce of love from Apple'''
+        - '''ask the chatbot any number of inane queries'''
+        - '''a giant, floating marble-like ball'''
+        - '''Hopefully, we will be able to invoke it by saying Hello, Orb'''
+        - visionOS 27 / agentic Siri WWDC 2026 coverage
+        verification: first-hand this run (browser.open full text); NEW-TO-CORPUS (zero
+          pre-commit grep hits)
+      - title: Apple's Smart Glasses Are Stepping Into a Privacy Minefield
+        url: https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+        date: 2026-04
+        format: product_lane_analysis
+        register: adversarial_with_reputation_carve
+        manual_illustrative_tone: -0.4
+        key_phrases:
+        - '''privacy minefield'' frame applied to Apple''s glasses entry'
+        - '''for Apple, a company that is built around privacy, it could be doubly messy'''
+        - '''Apple does not share that problem ... built on its reputation for *not* doing
+          that [collecting user data]'''
+        - 'Meta contrast: ''the entire company is built around collecting data and then
+          using that data for financial gain'''
+        - Raymond Wong byline; 2027 Apple glasses per Bloomberg reports
+        verification: first-hand this run (browser.open full text); IN-CORPUS as wearables
+          example in this profile (first scored as an Apple-side target item in this unit)
+      - title: The World Is on Fire and Meta Sees an Opportunity to Add Facial Recognition
+          to Smart Glasses
+        url: https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970
+        date: 2026-02
+        format: news
+        register: adversarial
+        manual_illustrative_tone: -0.7
+        key_phrases:
+        - Meta facial-recognition glasses frame
+        verification: 'carried from #512 (first-hand/excerpt there); Meta comparator'
+      - title: The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already
+        url: https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000784400
+        date: 2026-07
+        format: news
+        register: adversarial
+        manual_illustrative_tone: -0.55
+        key_phrases:
+        - Meta scrapped AI photo tool frame
+        verification: 'carried from #512 (first-hand/excerpt there); Meta comparator'
+      - title: Meta Is Racing to Move Faster and Break More Things
+        url: https://gizmodo.com/meta-is-racing-to-move-faster-and-break-more-things-2000750107
+        date: 2026-05
+        format: news
+        register: adversarial_snark
+        manual_illustrative_tone: -0.6
+        key_phrases:
+        - Meta layoffs headline snark frame
+        verification: 'carried from #577 (excerpt-bounded there); Meta comparator'
+      asymmetry_scorer_result:
+        target_entity: apple
+        peer_entities:
+        - meta
+        target_avg_tone: -0.4833
+        peer_avg_tone: -0.6167
+        asymmetry_score: 0.1334
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE tones at article level, n=3 vs n=3; mean-delta
+          arithmetic only; standing rule Aug 28 2026: no empirical significance claimed;
+          correlation_not_causation true'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones only (article level, n=3 vs n=3);
+        mean-delta arithmetic reproduced: delta +0.1334 (apple -0.4833 vs meta -0.6167),
+        p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant
+        False; correlation_not_causation true. No empirical significance claimed or claimable.
+        The +0.1334 delta is within the illustrative band: symmetric-adversarial with
+        a product-lane reputation carve, not a directional softening finding.'
+      confounders:
+      - 'STRONG: product-lane reputation carve - item 3 (glasses minefield) shows Apple''s
+        privacy-marketing reputation earning a partial pass while Meta absorbs the full
+        pathology frame; the +0.1334 delta leans on this item, so the lean is lane-specific,
+        not publication-wide softening - though this is exactly the boundary the control
+        is meant to set'
+      - 'STRONG: evidence-tier asymmetry - all three Apple items opened first-hand this
+        run; all three Meta comparators are carried from #512/#577 (Feb-Jul 2026, first-hand/excerpt
+        there); no same-week Meta controversy item sampled'
+      - 'STRONG: genuine business-model difference - Apple is a hardware-sales company,
+        Meta an ads company; ''built on its reputation for not collecting data'' is a
+        factual model description, not a tie-driven invention - the carve tracks a real
+        difference, which is why it belongs in confounders, not as a falsifier'
+      - 'MODERATE: genre/domain confound - the symmetric claim covers controversy/news
+        only; the product lane (item 3) and business lane are not sampled for Apple the
+        way the profile''s neutral-business items bound the OpenAI unit'
+      - 'MODERATE: timing mismatch - Apple items Apr-Jun 2026 vs Meta items Feb-Jul 2026;
+        different news cycles may carry different baseline adversarial intensity'
+      - 'MODERATE: author difference - item 3 is Raymond Wong (wearables beat) while items
+        1-2 are general news writers; register attribution is partly individual'
+      - 'WEAK: n=3 vs n=3 is thin for any entity-level claim - directional control, not
+        dispositive; unmeasured search-traffic dependence is a structural dependence with
+        no tie'
+      counter_evidence:
+      - 'The +0.1334 delta is illustrative-band noise, not evidence of Apple softening:
+        the supported claim is symmetric-adversarial within the band (controversy/news),
+        with the product-lane carve documented separately as a boundary'
+      - 'Item 3''s reputation carve cuts against naive symmetry: a strict symmetric-register
+        claim would fail in the glasses lane, which is why the mechanism frames it as
+        a lane boundary rather than an exception'
+      - 'The trade-secrets piece (''OpenAI Says Apple''s Real Problem Is Being Bad at
+        AI'') was deliberately NOT used as an Apple-side item: it is in-corpus as an OpenAI-side
+        litigation item (tone -0.35 toward OpenAI) and reusing it would have blurred entity-level
+        tone attribution; entity-tone attribution follows the target entity, not the URL'
+      research_method: 'browser.search this run (4 query sets: ''Gizmodo Apple criticism
+        controversy September 2026'' - produced the trade-secrets piece URL; ''Gizmodo
+        Apple Vision Pro smart glasses Siri criticism 2026'' - produced the Vision Pro
+        piece URL; plus two alternate queries; off-publication results rejected: WSJ/Reuters/Apple
+        Post/PYMNTS/Digital Trends Apple-layoff pieces are not Gizmodo items); browser.open
+        first-hand on all three Apple pieces this run; pre-commit repo greps verified
+        2 of 3 Apple URLs new-to-corpus (2000768997, 2000768744 zero hits) and the third
+        in-corpus only as a wearables example (2000746809); zero mechanism keys under
+        competitor_relationships.apple; zero test_type_a_587 files; zero ''Type A #587:''
+        commits. Per the iteration-492 rule, no zero-coverage claims. No canonical URLs
+        constructed: all six URLs carried verbatim from search-result full-URL listings
+        or prior units.'
+      source_urls:
+      - https://gizmodo.com/apple-says-its-new-google-infused-ai-is-all-about-privacy-2000768997
+      - https://gizmodo.com/apples-vision-pro-will-stick-ai-siri-right-in-your-face-2000768744
+      - https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+      - https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970
+      - https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000784400
+      - https://gizmodo.com/meta-is-racing-to-move-faster-and-break-more-things-2000750107
+      distinct_from:
+      - 'No prior Type A works Gizmodo x Apple (verified this run: zero mechanism keys
+        under competitor_relationships.apple in profiles/gizmodo.yaml, zero tests/*587*
+        files, zero ''Type A #587:'' commits in git log)'
+      - 'Completes the null-tie control family as the FOURTH zero-tie control (#512 Gizmodo
+        x Google, #577 Gizmodo x Anthropic, #582 Gizmodo x OpenAI): the symmetric-adversarial
+        claim now holds across four competitor entities plus Meta - the widest control
+        set in the corpus'
+      - Item 3 (smart glasses minefield, Apr 2026) is in-corpus as a wearables example
+        in this profile but was never scored as an Apple-side target item; this unit is
+        its first mechanism appearance
+      - The OpenAI-side trade-secrets litigation cluster (2000794427, 2000795382, 2000786080)
+        stays under competitor_relationships.openai - entity-tone attribution follows
+        the target entity, so the same URL is not double-counted across entities
+      - 'Off-publication rejections this run: WSJ ''OpenAI Hits Back at Apple Lawsuit'',
+        Reuters trade-secret fight, The Apple Post Vision Pro cuts, PYMNTS/Digital Trends
+        Apple layoffs are not Gizmodo items; Appleinsider visionOS review is not Gizmodo'
   google:
     financial_tie: none
     estimated_value: $0
