@@ -1,3 +1,34 @@
+#570 Type D: Scorer Consistency Extended to #567/#568 (Fifth and Sixth Agreement-Pole Pins), Divergence Count Holds at 2, 566-569 Rotation Guard (Followup-Anchored per #565 Convention), 566-569 Doc-Sync Ratchet (incl #566/#567/#569 Miss Repair) - Sep 6 2026 18:00 PDT
+
+**Date:** 2026-09-06 18:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 569 C -> 570 D)
+**Type:** D - Test & Verify
+
+**Work:**
+1. **Full suite:** run in background with repo .venv; results reported in commit message; zero failures tolerated, any failure repaired before push.
+2. **Scorer consistency extended to #567/#568:** engine mean-delta arithmetic reproduces both logged MANUAL ILLUSTRATIVE deltas (1e-4). #567 (NYT x Amazon adversarial register): engine -0.3167 on target Amazon [-0.50, -0.30] vs peer Meta [0.40, -0.65, 0.00], matching logged delta_manual_illustrative -0.3167 and delta_direction 'target harsher than peer by 0.32'. #568 (Sarah Frier): engine +0.1167 on Meta [-0.15, -0.10, -0.30] vs OpenAI [-0.35, -0.30, -0.25], matching logged delta and YAML byte-matched arrays, engine_check p 0.1823.
+3. **Standing-rule discipline: FIFTH and SIXTH agreement-pole pins.** #567: engine p ~ 0.4139 is_significant False, finding layer significant:false + NOT CALCULATED (agreement pole, class of #558/#562). #568: engine p ~ 0.1823 n.s., finding layer is_significant False + NOT_CALCULATED, YAML engine_check carries explicit agreement_pole key naming '#558/#563 class'. Agreement means the illustrative deltas stay illustrative, NOT that they become proven nulls.
+4. **Divergence ratchet kept ACTIVE, not stale:** the two existing divergence cases (#552 in #555, #557 in #560) are spot-checked still to hold - engine claims significance on the synthetic illustrative inputs while the finding layer refuses. A per-window no-new-divergence test asserts engine is_significant False on both #567 and #568, so the divergence count REMAINS 2. A third divergence instance in the 566-569 window would have failed this class of assertion.
+5. **Sign-class separation:** #567 (-0.3167, target-harsher asymmetry observation, control case against financial determinism at the actual $20-25M/yr payer) vs #568 (+0.1167, near-zero register-constancy falsification, business-press control). Opposite sign classes; the suite must not conflate an asymmetry observation with a constancy falsification. |#567| ~ 2.7x |#568|.
+6. **New competitor-coverage pattern tests:** #567 NYT-Amazon payer assertions (mechanism registered under competitor_relationships.amazon in nytimes.yaml as the FIRST dedicated mechanism there; softer coverage_prediction FALSIFIED with stub preserved - money-sympathy INVERTED for the actual payer; $20-25M/yr financial tie documented; control case against financial determinism). #568 Frier assertions (competitor_coverage block present with mechanism_id 568, 3+3 items; OpenAI CFO Sarah Friar vs journalist Frier name collision disambiguated; register-constancy falsification family; +0.1167 near-zero class identical to #563 Heath at 1e-4).
+7. **#566 monitoring boundary:** Type E 36th podcast verification, no quantitative mechanism, no scorer extension. **#569 qualitative boundary:** no asymmetry_scorer section; statistical_discipline tone_scores NOT_SCORED, p_value NOT_CALCULATED.
+8. **No-brittle sweep over 566-569 window files:** none asserts the brittle newest-first heading-equality pattern (Type D #555 repaired in #551); all four use the presence-assertion convention. Pinned against regression.
+9. **Rotation guard:** git-commit order newest-first is D(#570) C(#569) B(#568) A(#567) E(#566), a valid A->B->C->D->E->A walk, closing the C->D edge this run. No duplicate iteration numbers. Anchored-commit convention per #565: the main commit carried the POST_COMMIT_ANCHOR placeholder (guard class deselected pre-commit); the followup commit patches ANCHORED_COMMIT to this run's commit hash and verifies the guard green.
+10. **Doc-sync ratchet 566-569:** README test-table rows added for #567 (30) and #569 (46); docs/ARCHITECTURE.md test-tree rows added for #566 (51), #567 (30), #569 (46) - miss repair per the #510/#555/#560/#565 convention - plus #570's own row in both (48 tests, 7 classes). #565/#568 rows verified still present (window extension, not replacement). count_stats.py --check gate green.
+
+**Confounders Ranked:** N/A (verification run; no new coverage findings). Methodological caveat: the agreement-pole pins assert engine is_significant False on n=2 vs n=3 / n=3 vs n=3 synthetic illustrative arrays - this is an arithmetic-layer check (engine-drift detection), not a power analysis; low power would also produce n.s. on any small sample, so the agreement-pole finding must not be read as evidence for the null.
+
+**Research method:** venv pytest on the new test file + full suite; calculate_asymmetry engine runs reproduced logged deltas within 1e-4; YAML re-parsed via safe_load with leaf-type assertions; git log --format=%s rotation walk; count_stats.py --check gate.
+
+**New Type D files:** `tests/test_type_d_570_scorer_consistency_567_568_agreement_rotation_doc_sync_sep06_6pm.py` - 7 classes, 48 tests, all passing (rotation-guard class verified green post-commit in the followup).
+
+**Artifact readiness:** No analysis.json update warranted. Verification run; no new asymmetry findings. Divergence count unchanged at 2; agreement-pole pins now 6 (#558, #562, #563, #567, #568 explicitly pinned, plus class-mates).
+
+**Rotation Transparency:** Previous entry #569 Type C at 17:00 PDT Sep 6 2026 (commit 4cb2cf9 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D.
+
+**Novelty Verification:** Zero test_type_d_570 files on disk before this run (glob verified); no #570 in git log (grep verified); scorer consistency never covered #567/#568 (repo grep for 567/568 in scorer-consistency test files returned only their own mechanism files); the 566-569 rotation window was never guarded; the 560-565 doc-sync window (from #565) is extended, not duplicated.
+
+---
+
 #569 Type C: Washington Post x OpenAI (Apr 22 2025) Plus Google News AI Pilot (Dec 11 2025) - Second OpenAI-Plus-Google Dual-Payer Publisher After FT, Terms Undisclosed on Both Legs, Bezos-Owned Paper With Zero Meta/Amazon/Apple/Anthropic AI Money - Sep 6 2026 17:00 PDT
 
 **Date:** 2026-09-06 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 568 B -> 569 C)
