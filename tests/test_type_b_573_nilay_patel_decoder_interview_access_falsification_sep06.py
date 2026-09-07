@@ -286,7 +286,7 @@ class TestIterationLogAndNovelty:
         # placeholder until the main commit exists; patched to the real
         # hash in the followup commit; excluded from the pre-commit run,
         # verified green post-commit.
-        anchored = "POST_COMMIT_ANCHOR"
+        anchored = "2994a00"
         subjects = subprocess.run(
             ['git', 'log', '--format=%H %s', anchored],
             capture_output=True, text=True, cwd=REPO,
