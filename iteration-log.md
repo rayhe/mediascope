@@ -1,3 +1,36 @@
+#580 Type D: Dependency Restoration (39 Modules) + Scorer Consistency for #577 (SEVENTH Agreement-Pole Pin) and #578 (FIRST Degenerate-Boundary Pin) - Sep 7 2026 05:00 PDT
+
+**Date:** 2026-09-07 05:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 579 C -> 580 D)
+**Type:** D - Test & Verify (dependency restoration, scorer cross-mechanism consistency, rotation guard, doc-sync ratchet)
+
+**Finding (repair):**
+1. **Broken collection fixed:** the full suite would not even COLLECT at run start - 39 test modules errored on `ModuleNotFoundError: textblob` (mediascope/analyze/sentiment.py imports it), and pytest itself failed to launch on missing `pygments`. Installed system-wide via pip --break-system-packages (externally managed env): pygments 2.21.0, textblob, vaderSentiment (second missing module in sentiment.py, surfaced after textblob). Collection now clean: **30372 tests collected, 0 errors** - exactly matching the README's authoritative count, so `scripts/count_stats.py --check` now passes green again (it had reported a false STALE: README=30372 vs actual=29430, an artifact of the 39 collection errors, not a real README drift).
+2. **Full suite re-run:** fresh full-suite run launched in background after the dep fix (the pre-fix run was killed as stale; its result would have reflected the broken state, not the repaired one).
+3. **Scorer consistency extended to #577/#578:**
+   - #577 (Type A, Gizmodo x Anthropic null-tie control, Sep 7 02:00 PDT): engine reproduces the logged manual delta - asymmetry_score +0.1167 vs logged +0.12, avgs -0.50 vs -0.6167 matching logged -0.50/-0.617. SEVENTH agreement-pole pin: engine Welch p ~0.1021 n.s., is_significant False, and the finding layer refuses (NOT_CALCULATED, significant False) - engine and finding agree to refuse, joining the agreement pole (#567/#568 FIFTH+SIXTH in #570).
+   - #578 (Type B, Bogost writer-register inversion, Sep 7 03:00 PDT): engine reproduces the logged delta -0.75 (mean-difference arithmetic intact) but hits the engine's SMALL-SAMPLE GUARD: peer arm n=1 < 2, so welch_t_test returns the degenerate (t=0.0, p=1.0) and is_significant False, while cohens_d computes -10.61. FIRST DEGENERATE-BOUNDARY pin: the engine refuses significance STRUCTURALLY (guard path) while the finding layer refuses DELIBERATELY (NOT_CALCULATED) - an agreement via different mechanisms, the first corpus pin of the n<2 degenerate path. The agreement pole (engine n.s. on real computation) and the degenerate boundary (engine refuses to compute) are now pinned as distinct boundary classes.
+4. **#579 qualitative boundary** (mirroring #574 in #575): wikimedia_enterprise_ai_training_deals_579 has no scorer section; statistical_discipline carries tone_scores NOT_SCORED, p_value NOT_CALCULATED, is_significant false - scorer consistency explicitly does NOT apply.
+5. **#576 monitoring boundary** (mirroring #571 in #575): 38th podcast verification, monitoring-only, no tone delta.
+6. **Sign-class separation:** #577 (+0.1167, null-tie symmetric-adversarial control, directional-support) vs #578 (-0.75, writer-level inversion, falsification family) - opposite sign classes; the suite must not conflate a control with a falsification.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE ONLY, NOT empirical (standing rule Aug 28 2026). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False on the finding layer for both #577 and #578. Engine outputs (Welch p, d, t) are COMPUTED for drift detection but deliberately NOT promoted to findings - the separation is pinned by the agreement-pole and degenerate-boundary classes. Correlation not causation; no causal claim.
+
+**Confounders Ranked:** STRONG: (1) dep restoration changed the collection environment, not the findings - all mechanism YAML assertions are content-independent of the installer; (2) the pre-fix background suite run was killed mid-flight as stale - its eventual non-result is not a pass/fail verdict. MODERATE: (1) system-wide pip installs (not .venv) make the fix host-specific; the .venv python still lacks textblob/vaderSentiment - documented here, not silently assumed; (2) full-suite wall time ~10+ min, so the green full-run result is asynchronous to this commit. WEAK: (1) agreement-pole count labels (FIFTH/SIXTH/SEVENTH) are corpus-internal bookkeeping, not empirical claims.
+
+**Research method:** No browser research this run (Type D). Engine outputs verified live via calculate_asymmetry on the logged manual arrays; YAML leaf values verified via direct grep/yaml parse; collection counts verified via pytest --collect-only (30372, 0 errors) and count_stats.py --check (green). No zero-coverage claims per iteration-492 rule.
+
+**New Type D files:** `tests/test_type_d_580_scorer_consistency_577_578_agreement_degenerate_boundary_rotation_doc_sync_sep07_5am.py` - 7 classes, 45 tests, all passing (rotation-guard class deselected pre-commit per #565 convention; anchored post-commit in the followup).
+
+**Artifact readiness:** No analysis.json update warranted. Agreement-pole and degenerate-boundary pins are statistical-discipline pins, not new empirical findings; the dependency restoration is infrastructure.
+
+**Rotation Transparency:** Previous entry #579 Type C at 04:00 PDT Sep 7 2026 (commit 9cce36b verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. #580 continues the sequence with no duplicate iteration numbers.
+
+**Novelty Verification:** Zero test_type_d_580 files on disk before this run (glob verified); no #580 in git log (grep verified); scorer consistency has never covered #577/#578 (repo grep confirmed); the 576-579 rotation window was never guarded; the 571-574 doc-sync window (from #575) is extended to 576-579, not duplicated; the degenerate-boundary class is new to the corpus (no prior test asserts the engine's n<2 guard path).
+
+**Doc-sync:** #580 row added to README.md table and docs/ARCHITECTURE.md tree; #575 row verified surviving; README stats row left at 30372 (verified current via count_stats.py --check after the dep fix - the earlier STALE verdict was a collection artifact).
+
+---
+
 #579 Type C: Wikimedia Enterprise AI Training Deals (Jan 15 2026) - Reference-Layer AI Licensing Architecture Across Six Tracked Entities, OpenAI Standout Absence - Sep 7 2026 04:00 PDT
 
 **Date:** 2026-09-07 04:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 578 B -> 579 C)
