@@ -1,3 +1,34 @@
+#590 Type D: Scorer Cross-Mechanism Consistency for #587 (NINTH Agreement-Pole Pin, Closest-To-Significance Variant) + #588 (THIRD Degenerate-Boundary Pin, Smallest-Magnitude Variant) + 586-590 Rotation Guard + Doc-Sync MISS REPAIR - Sep 7 2026 15:00 PDT
+
+**Date:** 2026-09-07 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 589 C -> 590 D)
+**Type:** D - Test & Verify (scorer consistency for the two newest quantitative mechanisms #587/#588, qualitative boundary #589, monitoring boundary #586; divergence ratchet; doc-sync miss repair; rotation guard)
+
+**Finding:** The two newest quantitative mechanisms (#587 Type A Gizmodo x Apple null-tie, #588 Type B Scott Stein register constancy) had never been covered by scorer consistency, so the engine-drift check had a two-iteration blind spot. This run closes it, extending both boundary classes the corpus uses to keep the standing rule (MANUAL ILLUSTRATIVE, never empirical) honest.
+
+- **#587 NINTH agreement-pole pin, closest-to-significance variant:** engine reproduces the logged +0.1334 delta (mean-difference arithmetic on n=3 vs n=3) and runs a REAL Welch computation: t=2.1381, p=0.0993 n.s., d=1.7457, is_significant False. p=0.0993 is the CLOSEST any agreement pin has come to nominal significance (previous closest: #577 p~0.1021; #582 p=1.0). The pole's integrity is stress-tested at the boundary and holds: the computation flirts with the line, the engine still refuses, and the finding layer still refuses deliberately (p_value/cohens_d/ci NOT_CALCULATED, significant False).
+- **#588 THIRD degenerate-boundary pin, smallest-magnitude variant:** Meta [0.65] vs Samsung/Google [0.70], mean-difference -0.05 arithmetic intact; both arms n=1 < 2 so welch_t_test returns the degenerate (t=0.0, p=1.0), is_significant False, cohens_d computes 0.0 (guard specific to the t-test path, like #583's 0.0; contrast #578's -10.61 with n=2 vs n=1). |-0.05| is the smallest degenerate delta in the class (#578 -0.75, #583 +0.80): the guard fires on sample size, not magnitude. Engine refuses structurally, finding refuses deliberately.
+- Sign-class separation: #587 (+0.1334, positive small, null-tie control) vs #588 (-0.05, negative near-zero, register constancy) - ratio 2.67x, different mechanism families, must not conflate.
+- Divergence ratchet intact: #572/#573 spot-checked still holding (engine claims significance, finding refuses).
+- #589 (Type C, Ziff Davis v. OpenAI lawsuit) is the qualitative boundary: no scorer keys, tone NOT_SCORED, p_value/cohens_d/ci_95 NOT_CALCULATED, significant False, scope "qualitative structural mapping only" - scorer consistency explicitly does NOT apply. First adversarial (negative-sign) financial-incentive mechanism in the corpus.
+- #586 (Type E, podcast 40th verification) is the monitoring boundary: no quantitative mechanism, no scorer extension.
+
+**Doc-sync MISS REPAIR (mirrors Type D #510 precedent):** the #588 run added its ARCHITECTURE.md tree row but MISSED the README.md table row; the #589 run missed BOTH rows (neither README nor ARCHITECTURE carries the #589 row). All three missing rows added in this run before the #590 rows. Additionally README top-level stats (line 55) were stale: README said 30831 tests / 916 files, authoritative count_stats.py collect said 30776 / 917 before this run's file (30776 / 918 with it). Stats refreshed to the authoritative totals; count_stats.py --check is the gate and is green.
+
+**Asymmetry scorer:** ENGINE-DRIFT CHECKS ONLY (Aug 28 2026 standing rule). No empirical claims; p_value NOT_CALCULATED in the finding layer; is_significant False throughout.
+
+**Confounders Ranked:** STRONG: (1) p=0.0993 proximity to significance - engine n.s. holds, but the pole's margin is thinnest here; mitigant: finding-layer refusal is unconditional (NOT_CALCULATED regardless of engine p); (2) mean-difference rounding (logged 0.1334 vs engine 0.13333) - byte-match asserted via approx, not exact equality. MODERATE: (1) degenerate-guard uniformity - #588's d=0.0 matches #583's but contrasts #578's -10.61; the guard is t-test-path-specific, pinned explicitly; (2) doc-sync repair scope - three missing rows repaired; risk of mischaracterizing a run's own row, mitigated by content mirroring the run's file docstrings. WEAK: (1) the --check gate runs pytest --collect-only (~10s) inside the suite, adding suite time; (2) ANCHORED_COMMIT placeholder convention requires the followup commit to land for the guard to run live (same as #565/#580/#585).
+
+**Research method:** Repo-local verification only (no browser this run): engine probes via calculate_asymmetry on logged arrays; YAML re-parse for #587/#588/#589 mechanism blocks; git-log main-commit filter (^Type [A-E] #\d+:) for the 586-590 rotation window; count_stats.py --check as authoritative gate. No zero-coverage claims per iteration-492 rule.
+
+**New Type D files:** `tests/test_type_d_590_scorer_consistency_587_588_agreement_degenerate_boundary_rotation_doc_sync_sep07_3pm.py` - 7 classes, 46 tests, all passing (rotation-guard class deselected pre-commit per the #565 followup convention; anchor patched in the followup). README.md: +3 rows (#588/#589 repair, #590 own) + stats refresh. docs/ARCHITECTURE.md: +2 rows (#589 repair, #590 own). All rows carry authoritative def-test counts (58/47/38/42/46); #585 row survival verified.
+
+**Artifact readiness:** No analysis.json update warranted. These are statistical-discipline pins, not empirical findings.
+
+**Rotation Transparency:** Previous main commit #589 Type C at 14:00 PDT Sep 7 2026 (a94bd3c, verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. The 586-590 window reads D,C,B,A,E newest-first, closing the C->D edge.
+
+**Novelty Verification:** Zero test_type_d_590 files on disk before this run (glob verified); no #590 in git log (grep verified); scorer consistency never covered #587/#588 (grep for 587/588 in scorer-consistency test files returned only their own mechanism files); the 586-589 rotation window never guarded; p=0.0993 closest-to-significance agreement pin is new to the corpus; degenerate class gains its THIRD member at the smallest magnitude yet (-0.05); the doc-sync miss repair covers three missing rows (#588 README, #589 both) never previously repaired.
+
+
 #589 Type C: Ziff Davis v. OpenAI Copyright Lawsuit (Filed Apr 24 2025, Live Through Sep 2026) - First Adversarial Financial-Incentive Mechanism: Publisher Suing the AI Lab for Hundreds of Millions in Damages, Inverse of the Licensing-Deal Incentives; Owner-Level Tie to CNET and ZDNET - Sep 7 2026 14:00 PDT
 
 **Date:** 2026-09-07 14:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 588 B -> 589 C)

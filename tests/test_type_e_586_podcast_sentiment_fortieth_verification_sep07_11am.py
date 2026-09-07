@@ -30,6 +30,7 @@ surfaced, distinct from 581, fortieth verification cycle, extends #581 by
 5 hours, not duplicate, iteration-log entry present and newest-first.
 """
 import re
+import subprocess
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
@@ -367,13 +368,24 @@ class TestConfoundersAndLog:
         assert "11:00 PDT Sep 7" in block
 
     def test_log_entry_present_newest_first(self):
+        # Anchored at the #586 main commit (85f8cf0): this verified the
+        # #586 run prepended its entry newest-first AT THAT TIME. Later
+        # iterations (#587+) prepend their own entries, so the live
+        # newest-first assertion is a time-bombshell; the anchored form is
+        # immutable (rotation-guard anchor convention, Type D #565
+        # followup). Repaired in the #590 run after it decayed, mirroring
+        # the #585 repair of the #581 file's identical bombshell.
         log = LOG_PATH.read_text(encoding="utf-8")
         assert "Iteration #586" in log or "#586 Type E" in log
-        first_iteration = log.find("#586 Type E")
-        prev_iteration = log.find("#585")
-        assert first_iteration != -1 and prev_iteration != -1
-        assert first_iteration < prev_iteration, \
-            "iteration-log.md is not newest-first for #586"
+        out = subprocess.run(
+            ["git", "-C", str(REPO_ROOT), "show", "85f8cf0:iteration-log.md"],
+            capture_output=True, text=True, check=True)
+        anchored = out.stdout
+        assert re.search(r"^#586 Type E", anchored, re.MULTILINE), \
+            "no #586 Type E entry in iteration-log.md at 85f8cf0"
+        first_entry = re.search(r"^#\d+", anchored, re.MULTILINE)
+        assert first_entry and first_entry.group(0) == "#586", \
+            "iteration-log.md was not newest-first at #586 at 85f8cf0"
 
     def test_rotation_transparency(self):
         log = LOG_PATH.read_text(encoding="utf-8")
