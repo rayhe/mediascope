@@ -347,7 +347,7 @@ class TestRotationGuard:
         # hash is a placeholder until the main commit exists; patched to the
         # real hash in the followup commit; excluded from the pre-commit run,
         # verified green post-commit.
-        anchored = "TODO_574_HASH"
+        anchored = "3be92ad"
         subjects = subprocess.run(
             ['git', 'log', '--format=%H %s', anchored],
             capture_output=True, text=True, cwd=REPO,
