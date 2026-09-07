@@ -18088,3 +18088,128 @@ ft_dual_ai_payer_portfolio_437:
       not primary source verified exact terms undisclosed. Requires observed article-level
       dataset for empirical validation. MANUAL ILLUSTRATIVE scores not statistically
       significant.
+
+wikimedia_enterprise_ai_training_deals_579:
+  mechanism_id: 579
+  iteration: 579
+  iteration_type: C
+  type: financial_incentive_mapping
+  type_label: Financial Incentive Mapping
+  rotation: 'Type C'
+  date_analyzed: '2026-09-07'
+  time_pdt: '04:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'Wikimedia Enterprise AI training deals (Jan 15 2026) - reference-layer AI licensing architecture across six tracked entities; first dedicated mechanism'
+  overview: 'On Jan 15 2026 (Wikipedia 25th anniversary) the Wikimedia Foundation announced Wikimedia Enterprise partnerships with Microsoft, Meta, and Amazon for AI training-data access, plus disclosed that Perplexity and Mistral AI signed over the prior year, that Meta and Amazon were enlisted previously, and that Google has had an arrangement since 2022. Financial terms undisclosed. This is the reference-layer complement to the corpus publisher-deal mapping (mechanisms 504, 514, 519, 549, 559, 564, 569, 391): every major AI lab trains on Wikipedia (65M articles, 300+ languages, 250,000 volunteer editors), and six tracked entities now pay for structured access. The announced-roster absences are OpenAI, Anthropic, Apple, xAI, Samsung, and Snap (bounded per iteration-492 rule - Reuters says "among other firms"). OpenAI is the standout asymmetry: the lab with the MOST publisher content deals (24+, in-corpus publisher_content_deal_portfolio) has no disclosed Wikimedia Enterprise deal.'
+  announcement:
+    date: '2026-01-15'
+    occasion: 'Wikipedia 25th anniversary'
+    announced_by: 'Wikimedia Foundation'
+    channel: 'Wikimedia Enterprise (commercial platform)'
+    primary_report: 'Reuters'
+  payer_roster:
+    - entity: 'Microsoft'
+      status: 'newly announced Jan 15 2026'
+    - entity: 'Meta'
+      status: 'announced Jan 15 2026; Reuters notes Meta enlisted previously'
+    - entity: 'Amazon'
+      status: 'announced Jan 15 2026; Reuters notes Amazon enlisted previously'
+    - entity: 'Perplexity'
+      status: 'signed over the prior year'
+    - entity: 'Mistral AI'
+      status: 'signed over the prior year'
+    - entity: 'Google'
+      status: 'arrangement in place since 2022'
+  corpus_scale:
+    articles: '65 million'
+    languages: '300+'
+    editors: 'about 250,000 volunteer editors globally'
+  cost_pressure:
+    crawler_vs_human: 'Wikipedia receives more requests from automated web crawlers than human users (deeplearning.ai)'
+    wales_costs: 'Founder Jimmy Wales said crawlers gathering data to train AI systems caused hosting, memory, and server costs to skyrocket (deeplearning.ai)'
+    nonprofit_funding: 'primary source of income is small donations from the public (Reuters)'
+  enterprise_product:
+    description: 'commercial platform providing structured, high-volume access to Wikipedia content tailored for large-scale AI and commercial use'
+    includes: 'APIs for encyclopedia articles, Wikimedia Commons images, Wiktionary dictionary, Wikidata machine-readable knowledge base'
+    free_plan: 'limited data updates plus support portal'
+    paid_plan: 'daily snapshots, potentially unlimited data requests (limits vary by payment), streaming real-time revisions, human technical support; terms not public'
+    noncommercial: 'open Kaggle dataset for noncommercial AI training'
+  becker_quotes:
+    reuters_interview: '"Wikipedia is a critical component of these tech companies'' work that they need to figure out how to support financially" - Lane Becker, president of Wikimedia Enterprise, to Reuters'
+    reuters_interview_2: '"It took us a little while to understand the right set of features and functionality to offer if we''re going to move these companies from our free platform to a commercial platform ... but all our Big Tech partners really see the need for them to commit to sustaining Wikipedia''s work."'
+    verge_via_medianama: '"We take feature requests, we build features and functionality, and sort of try to structure the data in ways that support these companies'' needs." - Becker to The Verge (via MediaNama)'
+    verge_via_medianama_2: '"it is in every AI company''s best interest to support the long-term sustainability of Wikipedia, because Wikipedia and all the other projects that we support are so core to their business."'
+    title_note: 'Reuters titles Becker president of Wikimedia Enterprise; MediaNama titles him senior director of Wikimedia Enterprise'
+  terms_disclosed: false
+  absent_from_announced_roster:
+    entities:
+      - 'OpenAI'
+      - 'Anthropic'
+      - 'Apple'
+      - 'xAI'
+      - 'Samsung'
+      - 'Snap'
+    bounded: 'absence is roster-bounded per the iteration-492 rule; Reuters says "among other firms", so unannounced partners are possible; not a proven non-deal'
+    openai_standout: 'OpenAI holds the most publisher content licensing deals of any AI lab (24+ per in-corpus publisher_content_deal_portfolio) yet has no disclosed Wikimedia Enterprise deal - the inverse posture to its publisher-deal maximalism'
+  tracked_publication_surface:
+    the_verge: 'The Verge (tracked publication; Vox Media x OpenAI deal mechanism 494) interviewed Becker on the Enterprise program (via MediaNama citation); single surface, no comparator corpus, no tone claim'
+  structural_contrasts:
+    - 'mechanism 391: Perplexity is BOTH a publisher payer (Comet Plus 80/20 revenue share, Conde Nast incl. WIRED) AND a Wikimedia Enterprise payer - dual-layer AI content spend'
+    - 'mechanism 509: Anthropic institutionalized zero-deal posture extends to the reference layer - no publisher deals AND no announced Wikimedia Enterprise deal'
+    - 'mechanism 574: Apple is a data-vendor payer (Shutterstock $25-50M, Defined.ai) with zero publisher deals and no announced Wikimedia Enterprise deal'
+    - 'mechanism 549: Meta pays publishers (News Corp up to $50M/yr) AND Wikimedia Enterprise, yet remains $0 at all 7 tracked publications'
+    - 'xai publisher_deals_note: xAI free-rides on CC Wikipedia content via Grokipedia (near-verbatim Wikipedia articles) with no payment and no announced Enterprise deal'
+  directional_predictions:
+    - 'Meta: pays Wikimedia plus 13 known publisher partners (meta_ai_deals overview); still $0 at all 7 tracked publications, so adversarial coverage stays structurally cheap - no change to standing predictions'
+    - 'Microsoft: Wikimedia Enterprise adds a non-profit reference layer to the septuple publisher leverage (buyer plus marketplace operator plus dual lab investor); soft-coverage prediction unchanged'
+    - 'OpenAI: IF the announced-roster absence is a true non-deal, OpenAI is the only top-tier lab relying purely on free CC access for the single most important training corpus - worth a future verification pass, not a finding'
+    - 'Anthropic: roster absence is consistent with mechanism 509 zero-deal posture'
+    - 'Apple: roster absence is consistent with mechanism 574 (data-vendor payer, zero publisher deals)'
+    - 'xAI: Grokipedia free-riding is consistent with the zero-deal publisher note'
+  predictions_not_findings: true
+  ranked_confounders:
+    - rank: 1
+      strength: strong
+      confounder: 'terms undisclosed - the fee size is unquantified; a nominal payment creates no meaningful financial dependency, so the incentive magnitude cannot be estimated from the announcement'
+    - rank: 2
+      strength: strong
+      confounder: 'roster incompleteness - Reuters says "among other firms" and notes prior Meta/Amazon enlistment; absence of OpenAI/Anthropic/Apple from the announced roster is bounded per the iteration-492 rule, not a proven non-deal'
+    - rank: 3
+      strength: strong
+      confounder: 'CC-licensed free availability - payment buys API convenience, reliability, and structured feeds, not content exclusivity; the leverage structure differs from proprietary publisher display deals'
+    - rank: 4
+      strength: moderate
+      confounder: 'timing - announcement Jan 15 2026 is 7.5 months before this run; unannounced additions since are possible'
+    - rank: 5
+      strength: moderate
+      confounder: 'second-hand excerpts - Reuters not opened first-hand this run; deal facts rest on search-result excerpts, bounded'
+    - rank: 6
+      strength: weak
+      confounder: 'The Verge Becker interview is a single tracked-publication surface with no comparator corpus (n=1); no tone claim is made or supportable'
+  statistical_discipline:
+    scope: 'qualitative structural mapping only'
+    correlation_not_causation: true
+    p_value: 'NOT_CALCULATED'
+    cohens_d: 'NOT_CALCULATED'
+    ci_95: 'NOT_CALCULATED'
+    is_significant: false
+    tone_scores: 'NOT_SCORED'
+  correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+  cautious_language_required: true
+  no_coverage_tone_claim: true
+  sources:
+    - 'https://www.reuters.com/business/retail-consumer/wikipedia-owner-signs-microsoft-meta-ai-content-training-deals-2026-01-15/'
+    - 'https://www.techrepublic.com/article/news-microsoft-meta-amazon-paying-wikipedia/'
+    - 'https://www.medianama.com/2026/01/223-wikipedia-ai-licensing-deals-microsoft-meta-and-others-amid-rising-costs/'
+    - 'https://www.thehindubusinessline.com/info-tech/wikipedia-partners-with-microsoft-meta-amazon-in-ai-content-training-deals/article70512455.ece'
+    - 'https://www.deeplearning.ai/the-batch/wikimedia-foundation-strikes-deals-with-amazon-meta-microsoft-mistral-ai-and-perplexity'
+    - 'https://q106fm.com/2026/01/15/wikipedia-owner-signs-on-microsoft-meta-in-ai-content-training-deals/'
+  research_method: '2 browser.search query sets this run (Meta AI content licensing 2026; Wikimedia Enterprise Meta Microsoft deals), verbatim full-URL listings; deal facts second-hand via search-result excerpts, bounded in-mechanism; no pages opened first-hand; pre-commit repo greps confirmed zero wikimedia/Wikimedia Enterprise mentions in iteration-log.md and no dedicated mechanism (wikipedia hits in tests 432/534 are incidental encyclopedia citations); no zero-coverage claims per iteration-492 rule; no canonical URLs constructed'
+  novelty: 'first dedicated Wikimedia Enterprise mechanism in the corpus; zero wikimedia mentions in iteration-log.md (grep verified); no dedicated block in profiles/competitor-entities.yaml (grep verified); distinct from mechanism 391 (Perplexity Comet Plus publisher revenue share - this unit shows Perplexity is ALSO a Wikimedia payer), mechanism 509 (Anthropic zero-deal posture), mechanism 574 (Apple data-vendor payer architecture), mechanism 549 (News Corp x Meta publisher deal), the meta_ai_deals 13-partner overview (last verified 2026-08-06, publisher-only), and the xai publisher_deals_note (Grokipedia free-riding)'
+  verification:
+    iteration: 579
+    type: 'C'
+    date: '2026-09-07 04:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true

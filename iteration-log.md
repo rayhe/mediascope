@@ -1,3 +1,34 @@
+#579 Type C: Wikimedia Enterprise AI Training Deals (Jan 15 2026) - Reference-Layer AI Licensing Architecture Across Six Tracked Entities, OpenAI Standout Absence - Sep 7 2026 04:00 PDT
+
+**Date:** 2026-09-07 04:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 578 B -> 579 C)
+**Type:** C - Financial Incentive Mapping (Wikimedia Enterprise AI training deals; first dedicated mechanism, new to corpus)
+
+**Finding:**
+1. **Announcement (Jan 15 2026, Wikipedia 25th anniversary):** the Wikimedia Foundation unveiled Wikimedia Enterprise partnerships with Microsoft, Meta, and Amazon for AI training-data access (Reuters primary). Also disclosed: Perplexity and Mistral AI signed over the prior year; Meta and Amazon enlisted previously; Google has had an arrangement since 2022. Financial terms undisclosed on all legs.
+2. **Cost-pressure driver:** Wikipedia receives more automated crawler requests than human requests; founder Jimmy Wales said crawler-driven training-data gathering caused hosting, memory, and server costs to skyrocket at the donation-funded non-profit (deeplearning.ai). Enterprise is the monetization response: paid APIs, daily snapshots, streaming real-time revisions, human support; free plans limited; open Kaggle dataset for noncommercial training.
+3. **Scale:** 65M articles, 300+ languages, ~250,000 volunteer editors (Reuters). Lane Becker (Wikimedia Enterprise; Reuters titles him president, MediaNama senior director): "Wikipedia is a critical component of these tech companies' work that they need to figure out how to support financially"; to The Verge (via MediaNama): "We take feature requests, we build features and functionality, and sort of try to structure the data in ways that support these companies' needs."
+4. **Roster structure:** six tracked entities pay (meta, microsoft, amazon, perplexity, mistral, google). Announced-roster ABSENCES: OpenAI, Anthropic, Apple, xAI, Samsung, Snap - bounded per the iteration-492 rule (Reuters says "among other firms", so unannounced partners possible; not a proven non-deal). **OpenAI is the standout asymmetry:** the lab with the MOST publisher content deals (24+, in-corpus publisher_content_deal_portfolio) has no disclosed Wikimedia Enterprise deal - inverse posture to its publisher-deal maximalism. Anthropic (mechanism 509 zero-deal posture), Apple (mechanism 574 data-vendor payer), and xAI (Grokipedia free-rides on CC Wikipedia content) are consistent with their existing corpus postures.
+5. **Structural contrasts:** mechanism 391 - Perplexity is BOTH a publisher payer (Comet Plus 80/20 revenue share, Conde Nast incl. WIRED) AND a Wikimedia Enterprise payer (dual-layer AI content spend); mechanism 549 - Meta pays publishers (News Corp up to $50M/yr) AND Wikimedia yet stays $0 at all 7 tracked publications; Microsoft - Wikimedia adds a non-profit reference layer to the septuple publisher leverage.
+6. **Tracked-publication surface:** The Verge (Vox Media x OpenAI deal, mechanism 494) interviewed Becker on the Enterprise program - single surface, no comparator corpus, no tone claim made.
+
+**Asymmetry scorer:** not applicable (Type C structural mapping). MANUAL ILLUSTRATIVE ONLY, NOT empirical (standing rule Aug 28 2026). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False. Tone scores NOT_SCORED. Correlation not causation; no causal claim.
+
+**Confounders Ranked:** STRONG: (1) terms undisclosed - fee size unquantified, a nominal payment creates no meaningful dependency; (2) roster incompleteness - "among other firms" plus prior Meta/Amazon enlistment; absence is bounded, not a proven non-deal (iteration-492); (3) CC-licensed free availability - payment buys API convenience/reliability, not content exclusivity, unlike proprietary publisher display deals. MODERATE: (1) timing - announcement 7.5 months old, unannounced additions possible; (2) second-hand excerpts - Reuters not opened first-hand this run. WEAK: (1) The Verge interview is n=1 with no comparator corpus.
+
+**Research method:** 2 browser.search query sets this run (Meta AI content licensing 2026; Wikimedia Enterprise Meta Microsoft deals); URLs copied verbatim from Full-URL listings; no pages opened first-hand; pre-commit repo greps confirmed new-to-corpus (zero wikimedia/Wikimedia Enterprise hits in iteration-log.md; only incidental wikipedia encyclopedia citations in tests 432/534); no zero-coverage claims per iteration-492 rule; no canonical URLs constructed.
+
+**New Type C files:** `tests/test_type_c_579_wikimedia_enterprise_ai_training_deals_sep07_4am.py` - 7 classes, 43 tests, all passing. Mechanism key: `wikimedia_enterprise_ai_training_deals_579` (top-level, after ft_dual_ai_payer_portfolio_437; ASCII-only, YAML re-parse validated with leaf-type/value assertions).
+
+**Artifact readiness:** No analysis.json update warranted. Structural mapping only; directional predictions marked predictions-not-findings.
+
+**Rotation Transparency:** Previous entry #578 Type B at 03:00 PDT Sep 7 2026 (commit c44a805 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after B is C. Selected Type C. #579 continues the sequence with no duplicate iteration numbers.
+
+**Novelty Verification:** Zero test_type_c_579 files on disk before this run (glob verified); no #579 in git log (grep verified); zero wikimedia mentions in iteration-log.md before this entry (grep count 0); no dedicated Wikimedia block in profiles/competitor-entities.yaml (grep verified). Distinct from mechanism 391 (Perplexity Comet Plus publisher revenue share), 509 (Anthropic zero-deal posture), 574 (Apple data-vendor payer architecture), 549 (News Corp x Meta), the meta_ai_deals 13-partner overview (publisher-only, last verified 2026-08-06), and the xai publisher_deals_note.
+
+**Doc-sync:** #579 row added to README.md table and docs/ARCHITECTURE.md tree; #578 README-row miss repaired (its ARCHITECTURE row existed, README row was absent); README stats row refreshed via scripts/count_stats.py --check.
+
+---
+
 #578 Type B: Ian Bogost (Atlantic) Meta vs Apple Writer-Register Inversion - Writer-Level Falsification of the Publication-Level Softer-Apple Prediction (delta -0.75 MANUAL ILLUSTRATIVE n.s.) - Sep 7 2026 03:00 PDT
 
 **Date:** 2026-09-07 03:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 577 A -> 578 B)
