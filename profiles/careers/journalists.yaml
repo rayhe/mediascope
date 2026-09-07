@@ -14338,6 +14338,119 @@ journalists:
   - https://computerhistory.org/profile/nilay-patel/
   - https://podcasts.voxmedia.com/show/decoder
   - https://leighbureau.com/speakers/nilay-patel/
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 573
+      iteration: 573
+      type: 'Type B: Journalist Cross-Entity Tracking - Nilay Patel (The Verge) Decoder CEO-interview entity selection'
+      journalist: Nilay Patel
+      publication: the-verge
+      role_at_window: editor_in_chief
+      date: '2026-09-06'
+      pattern: interview_access_entity_selection_deal_falsification
+      description: 'On Decoder, The Verge flagship interview show, Meta CEO Mark Zuckerberg gets recurring product-forward sit-downs (Oct 2022 Quest Pro, Sep 2023 Quest 3/Threads, Sep 2024 Orion), always guest-hosted by Meta-beat deputy editor Alex Heath. Deal-partner OpenAI (Vox Media x OpenAI strategic partnership, May 29 2024, in-corpus mechanism #494) gets no Decoder CEO sit-down in the bounded window and is instead covered through adversarial third-party episodes, all post-dating the deal. Anthropic, with no Vox deal, received an aspirational executive sit-down (CPO Mike Krieger, 2024). The naive deal-predicts-softer expectation is falsified at the interview-access layer.'
+      verdict: falsified_softer_prediction
+      openai_items:
+      - title: 'Ronan Farrow on Sam Altman''s strained relationship with the truth'
+        date: '2026-04-17'
+        host: 'Nilay Patel (host)'
+        framing: "adversarial third-party accountability: 'Sam Altman's strained relationship with the truth', thesis 'Sam unconstrained by truth', sex crime allegations, culture of silence and fear"
+        source_url: https://www.youtube.com/watch?v=TfN5ket9L8Q
+        tone_manual_illustrative: -0.70
+      - title: 'What Apple''s OpenAI lawsuit is really about'
+        date: '2026-07-27'
+        host: 'Nilay Patel (host)'
+        framing: 'adversarial: Apple trade-secrets lawsuit, "already-damaged reputation", hardware plans and IPO at risk'
+        source_url: https://www.goloudnow.com/podcasts/decoder-with-nilay-patel-385/ai-will-make-money-sooner-than-you-think-says-cohere-ceo-aidan-gomez-473167
+        tone_manual_illustrative: -0.60
+      - title: 'OpenAI''s executive exodus has one big winner'
+        date: '2026-08-27'
+        host: 'Nilay Patel (host)'
+        framing: 'skeptical: Brockman power consolidation as senior leaders exit in rapid succession'
+        source_url: http://au.radio.net/podcast/recodedecode
+        tone_manual_illustrative: -0.45
+      meta_items:
+      - title: 'Why Mark Zuckerberg wants to end the smartphone era'
+        date: '2024-09'
+        host: 'Alex Heath (guest host)'
+        framing: 'product-forward sit-down: Orion AR glasses; Zuck reframes Cambridge Analytica as "overblown and misrepresented", done apologizing'
+        source_url: https://www.everand.com/podcast/773063094/Why-Mark-Zuckerberg-wants-to-end-the-smartphone-era-The-Meta-CEO-wants-to-get-into-AR-and-out-of-politics
+        tone_manual_illustrative: -0.20
+      - title: 'Mark Zuckerberg on Threads, the future of AI, and Quest 3'
+        date: '2023-09'
+        host: 'Alex Heath (guest host)'
+        framing: 'product-forward sit-down: Quest 3, Ray-Ban smart glasses, AI chatbots, Threads vs X'
+        source_url: https://www.everand.com/podcast/674090997/Mark-Zuckerberg-on-Threads-the-future-of-AI-and-Quest-3-The-Meta-CEO-sits-down-with-Decoder-guest-host-Alex-Heath-to-discuss-the-future-of-AI-the
+        tone_manual_illustrative: -0.15
+      - title: 'Mark Zuckerberg on the Quest Pro, future of the metaverse'
+        date: '2022-10'
+        host: 'Alex Heath (guest host)'
+        framing: 'product-forward sit-down: $1,499 Quest Pro, metaverse commitment'
+        source_url: https://www.podchaser.com/podcasts/decoder-with-nilay-patel-100800/episodes/mark-zuckerberg-on-the-quest-p-152263701
+        tone_manual_illustrative: -0.15
+      anthropic_calibration:
+        title: 'Anthropic''s Mike Krieger wants to build AI products that are worth the hype'
+        date: '2024-08'
+        host: 'Nilay Patel (host)'
+        framing: aspirational_executive_sitdown
+        source_url: https://zeno.fm/podcast/decoder-with-nilay-patel/episodes/anthropics-mike-krieger-wants-to-build-ai-products-that-are-worth-the-hype/
+        note: 'Anthropic has no Vox Media content deal in-corpus; the non-deal AI lab gets the aspirational sit-down while the deal partner gets adversarial third-party coverage.'
+      scorer:
+        method: manual_illustrative
+        note: 'MANUAL ILLUSTRATIVE, standing rule Aug 28 2026; arithmetic only; n=3 vs n=3'
+        target_entity: openai
+        peer_entities:
+        - meta
+        target_scores:
+        - -0.70
+        - -0.60
+        - -0.45
+        peer_scores:
+        - -0.20
+        - -0.15
+        - -0.15
+        delta_manual_illustrative: -0.4167
+        delta_direction: 'target harsher than peer by 0.42'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        correlation_not_causation: true
+        empirical_required: true
+        engine_check:
+          asymmetry: -0.4167
+          p_value: 0.0243
+          cohens_d: -4.56
+          is_significant: true
+          divergence: 'fourth engine/finding divergence'
+        divergence_note: 'FOURTH engine/finding-layer divergence (#552 first in #555, #557 second in #560, #572 third in #572): the engine claims significance on the synthetic illustrative inputs (Welch p ~ 0.0243, d = -4.56, is_significant True) while the finding layer refuses (significant False, p_value NOT_CALCULATED, empirical_required True). Arithmetic-layer vs finding-layer separation pinned deliberately per the standing rule.'
+      confounders_ranked:
+        strong:
+        - 'Host mismatch: Zuckerberg sit-downs are guest-hosted by Alex Heath (Meta beat), OpenAI episodes are Patel/Field-hosted; the comparison crosses hosts, unlike pure within-journalist designs.'
+        - 'Secondary-source limitation: tone scores rest on podcast-listing episode descriptions, not transcript listens this run.'
+        - 'Bounded absence: no Altman Decoder sit-down surfaced in bounded searches; cannot distinguish declined/unavailable from not-invited (iteration-492 rule, no zero-coverage claims).'
+        moderate:
+        - 'Temporal mismatch: Meta sit-downs 2022-2024 vs OpenAI episodes Apr-Aug 2026.'
+        - 'Genre mismatch: sit-down interviews vs third-party accountability episodes; the claim is register SELECTION (which entity gets the sit-down), like #572.'
+        - 'Deal-level vs show-level: the Vox-OpenAI partnership is owner-level; #494 documents EIC non-interference assurances and a pre-deal critical baseline on OpenAI.'
+        weak:
+        - 'n=3 vs n=3 directional only; thin by design for an hourly iteration.'
+      counter_evidence:
+      - 'Mechanism #6 (EIC Delegation Paradox) already established Patel personally interviews Google/Microsoft CEOs constructively while delegating Zuck to Heath; the delegation pattern is broader than and predates the OpenAI case.'
+      - 'In-corpus #494 documents a pre-deal critical baseline on OpenAI (environmental impact, board upheavals, trustworthiness), so the adversarial register predates the deal; the falsification concerns the prediction, not the cause.'
+      financial_context: 'Vox Media x OpenAI strategic content and product partnership, May 29 2024 (in-corpus mechanism #494, test_type_c_494): The Verge included, current content plus full archive for training, terms undisclosed, newsroom blindsided. Naive prediction: softer OpenAI treatment on the owner flagship interview show. Observed: adversarial third-party register plus no CEO sit-down. Meta: $0 Vox AI licensing money in-corpus. Correlation not causation throughout.'
+      distinction_from_498: 'Kara Swisher #498 falsifies via personal adversarial register uniform across entities (star-franchise interviewer brand). This mechanism falsifies via interview-ACCESS entity selection on a single show: who gets the sit-down.'
+      distinction_from_mechanism_6: 'Mechanism #6 covers Patel delegating Zuck to Heath while personally interviewing Google/Microsoft CEOs. This mechanism adds the OpenAI deal-partner case: no sit-down at all plus adversarial third-party coverage, extending the delegation paradox to the financial-tie prediction.'
+      cross_references:
+      - 498
+      - 494
+      - 552
+      - 557
+      - 562
+      - 567
+      research_method: 'browser.search this run (4 query sets: Patel Decoder Zuckerberg 2025/2026; Patel Decoder Altman 2025/2026; Patel Decoder Amodei; Patel Decoder Meta Connect 2025; Patel Decoder Tim Cook). URLs copied verbatim from Full-URL listings. No pages opened first-hand; episode descriptions from podcast-listing mirrors. No zero-coverage claims per iteration-492 rule.'
+      test_file: tests/test_type_b_573_nilay_patel_decoder_interview_access_falsification_sep06.py
 - career:
   - beat: smartphones, mobile OS, consumer electronics
     end: 2011-11
