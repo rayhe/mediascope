@@ -1,18 +1,22 @@
 """Type D #580 (2026-09-07 05:00 PDT): dependency restoration + scorer
 cross-mechanism consistency extended to #577/#578 (rotation 579 C -> 580 D).
 
-REPAIR: the suite would not COLLECT at run start - 39 test modules errored
-on ModuleNotFoundError: textblob (mediascope/analyze/sentiment.py imports
-it), and pytest itself failed to launch on missing pygments. Installed
-system-wide via pip --break-system-packages (externally managed env):
-pygments 2.21.0, textblob, vaderSentiment (second missing module in
-sentiment.py, surfaced after textblob). Collection now clean: 30372 tests,
-0 errors - exactly the README's authoritative count, so
-scripts/count_stats.py --check passes green again. Its pre-fix STALE
-verdict (README=30372 vs actual=29430) was a collection artifact of the 39
-erroring modules, not real README drift. The .venv python still lacks
-textblob/vaderSentiment - the fix is host-specific to the system python3,
-documented in the iteration-log entry, not silently assumed.
+REPAIR (corrected per commit 80f2832 - the as-written paragraph this replaces
+was wrong): the suite would not COLLECT at run start because the run used the
+SYSTEM python3, whose site-packages (/usr/local/lib/python3.12/dist-packages)
+had been wiped by a service restart mid-run - 39 test modules errored on
+ModuleNotFoundError: textblob (mediascope/analyze/sentiment.py imports it),
+and pytest itself failed to launch on missing pygments. A system-wide pip
+install (--break-system-packages: pygments 2.21.0, textblob, vaderSentiment)
+was applied but was TRANSIENT - the next restart wiped it again, silently
+re-breaking the same 39 modules. The DURABLE fix: the repo .venv
+(~/workspace/repos/mediascope/.venv/bin/python) already carried pytest +
+pygments + textblob + vaderSentiment all along and is the CANONICAL
+interpreter; system-python collection is not a supported path. Never install
+test deps into system site-packages - the doc-sync count_stats.py --check
+gate and all verification runs must use the .venv interpreter. Collection
+under the .venv is now clean; the pre-fix STALE verdicts were collection
+artifacts of the interpreter mismatch, not real README drift.
 
 SCORER CONSISTENCY: the Aug 28 2026 standing rule says MANUAL ILLUSTRATIVE
 deltas are NOT empirical - p_value NOT_CALCULATED, is_significant False in

@@ -23,6 +23,7 @@ thirty-ninth verification cycle, extends #576 by 5 hours, not duplicate,
 iteration-log entry present and newest-first.
 """
 import re
+import subprocess
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
@@ -85,10 +86,21 @@ class TestIterationNumberAndRotation:
         assert "distinct from 576" in lower
 
     def test_iteration_log_entry_present_and_newest(self):
-        log = LOG_PATH.read_text(encoding="utf-8")
-        assert re.search(r"^#581 Type E", log, re.MULTILINE), "no #581 Type E entry in iteration-log.md"
+        # Anchored at the #581 main commit (a288c86): this verified the #581
+        # run prepended its entry newest-first AT THAT TIME. Later
+        # iterations (#582+) prepend their own entries, so the live
+        # newest-first assertion is a time-bombshell; the anchored form is
+        # immutable (rotation-guard anchor convention, Type D #565
+        # followup). Repaired in the #585 run after it decayed.
+        out = subprocess.run(
+            ["git", "-C", str(REPO_ROOT), "show", "a288c86:iteration-log.md"],
+            capture_output=True, text=True, check=True)
+        log = out.stdout
+        assert re.search(r"^#581 Type E", log, re.MULTILINE), \
+            "no #581 Type E entry in iteration-log.md at a288c86"
         first_entry = re.search(r"^#\d+", log, re.MULTILINE)
-        assert first_entry and first_entry.group(0) == "#581", "iteration-log.md is not newest-first at #581"
+        assert first_entry and first_entry.group(0) == "#581", \
+            "iteration-log.md was not newest-first at #581 at a288c86"
 
     def test_novelty_single_581_test_file(self):
         files = list((REPO_ROOT / "tests").glob("test_type_e_581*"))
