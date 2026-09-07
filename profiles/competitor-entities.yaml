@@ -7254,6 +7254,109 @@ entities:
       - https://www.fool.com/investing/2026/06/26/apple-paying-google-billion-year-for-ai-winner/
       - https://tech-insider.org/apple-google-gemini-siri-deal-1-billion-2026/
       - https://ppc.land/apple-ads-set-june-quarter-record-as-services-revenue-gains-12-to-30-7bn/
+    mechanism_574_apple_training_data_purchasing_architecture:
+      mechanism_id: 574
+      iteration: 574
+      rotation: Type C
+      date_analyzed: '2026-09-06'
+      time_pdt: '23:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Apple x Shutterstock $25-50M training-data licensing deal (signed in the months following ChatGPT late-2022 launch, reported Apr 2024) plus Dec 2023 $50M news-publisher offers (Conde Nast, NBC News, IAC - no confirmed closings in 2.5 years) plus Defined.ai agreement - Apple as data-vendor AI payer with zero confirmed publisher AI deals'
+      type: financial_incentive_mapping
+      type_c_focus: 'Formalizes Apple''s AI training-data purchasing architecture with citations (NYT Dec 2023 reporting via secondary coverage, Reuters Apr 2024). Adds the evidentiary base for siri_ai_publisher_deals phase_1 (previously a summary line with no sources) and creates the first dedicated Apple data-vendor AI-payer mechanism in the corpus (Shutterstock, Defined.ai, Photobucket pursuit). Corrects the corpus ''Apple $0'' shorthand: Apple is a training-data payer via data vendors, not a publisher payer. Distinct from mechanism 504 (Conde Nast x OpenAI - single-leg publisher display deal at WIRED''s owner), the apple_google_gemini_deal bypass chain (Apple pays Google $1B/yr for a Gemini model trained on publisher content, not publishers themselves), siri_ai_content_licensing (2026 Siri AI pay-per-use negotiations, Phase 3 of the reversal), the Getty OpenAI display deals (Jun 2026 - display-only, no training rights), and mechanism 331 (Meta Dec 2025 seven-publisher bundle).'
+      publisher_offer_leg:
+        report_date: '2023-12-22'
+        original_report: 'The New York Times, citing four people familiar with the discussions speaking on condition of anonymity'
+        offer_terms: 'multiyear deals worth at least $50 million to license archives of news articles for generative AI training'
+        recipients:
+        - 'Conde Nast (publisher of Vogue, The New Yorker, WIRED, Vanity Fair, Ars Technica, GQ - the parent of tracked publication WIRED)'
+        - 'NBC News'
+        - 'IAC (owner of People, The Daily Beast, Better Homes and Gardens)'
+        publisher_reception: 'mixed - some publishers lukewarm; terms described as too expansive; Apple vague about how it would apply generative AI to news; Tom''s Guide reported Apple''s pitch stated publishers could potentially be on the hook for legal liabilities stemming from the AI integration'
+        positive_note: 'some publishers optimistic, pleased Apple asked permission rather than training on published news without permission as other AI companies had done'
+        apple_posture: 'Apple spokesman declined to comment; CEO Tim Cook had said Apple had work going on connected to AI but declined to elaborate; the negotiations were among the earliest examples of Apple trying to catch up to rivals in generative AI'
+        outcome_as_of_2026_09_06: 'no confirmed closings - 2.5 years after the Dec 2023 offers, no signed publisher deal has surfaced in corpus reporting or this run''s search; the in-corpus Gemini bypass commit (a72eba5b) independently records publishers were lukewarm with no confirmed deal signed in 2.5 years'
+      shutterstock_leg:
+        report_date: '2024-04-06'
+        original_report: 'Reuters'
+        deal_value_estimated: '$25-50 million'
+        signing_date: 'in the months following the release of ChatGPT in late 2022 (reported 16 months later, Apr 2024)'
+        what_licensed: 'millions of images, videos, and music files from the Shutterstock library to train AI models'
+        confirmation: 'Shutterstock CFO Jarrod Yahes confirmed to Reuters that the initial agreements tech companies entered into ranged from $25 million to $50 million each, with most later being expanded'
+        parallel_deals: 'Meta, Google, and Amazon struck similar Shutterstock licensing agreements in the same $25-50M range in recent months (Reuters, via VentureBeat)'
+      defined_ai_and_photobucket:
+        defined_ai: 'Apple also has agreements in place with Defined.ai, a Seattle-based AI data firm that licenses data to tech firms training AI models (Reuters, via Gadgets360)'
+        defined_ai_ceo_rates: 'Defined.ai CEO Daniela Braga told Reuters companies generally pay $1-2 per image, $2-4 per short-form video, $100-300 per hour of longer films, and around $0.001 per word for text'
+        photobucket_pursuit: 'Apr 8 2024 (Reuters via MacRumors) - Apple is among companies seeking an agreement with Photobucket, whose library of over 13 billion photos and videos attracted renewed interest as tech companies license visual content for AI training'
+      apple_spend_posture:
+        data_vendor_payer: 'Apple pays for training data via data vendors - Shutterstock $25-50M (estimated, signed late 2022), Defined.ai agreement, Photobucket pursuit'
+        publisher_zero: 'Apple has ZERO confirmed publisher AI deals - the Dec 2023 $50M offers to Conde Nast, NBC News, and IAC produced no confirmed closings as of Sep 6 2026'
+        corrected_shorthand: 'Apple is not a non-payer in AI content acquisition; it is a data-vendor payer that bypasses publishers directly and then via the $1B/yr Google Gemini deal (publisher content reaches Siri through Google''s training pipeline with no direct publisher compensation)'
+        payer_contrast: 'OpenAI runs 24+ publisher display deals ($300-400M/yr estimated portfolio); Meta licenses a publisher bundle (incl News Corp up to $50M/yr, mechanism 549); Amazon licenses publishers (NYT $20-25M/yr mechanism 559; Conde Nast and Hearst Rufus mechanism 564); Google runs publisher deals plus its own training-data pipeline; Apple alone among the five pays data vendors instead of publishers'
+        conde_nast_specificity: 'WIRED''s parent Conde Nast was directly offered $50M by Apple for training rights and has no confirmed Apple AI money; Conde Nast receives OpenAI money (Aug 2024, mechanism 504), Amazon Rufus money (Jul 2025, mechanism 564), and Microsoft PCM money (Feb 2026 per the Gemini commit) - Apple and Meta are the only tracked payers paying Conde Nast $0'
+      directional_predictions:
+      - 'Apple: neutral-to-no-publisher-incentive (pays data vendors for training data, not publishers; publishers hold no AI-training revenue from Apple; the $50M offer that never closed leaves no financial lever)'
+      - 'Meta: $0 AI money to Conde Nast and to the other two approached publishers - no incentive lever at WIRED''s owner'
+      - 'OpenAI: softer (direct payer at Conde Nast since Aug 2024, mechanism 504 - $5-10M/yr range per corpus)'
+      - 'Amazon: softer (Rufus licensing leg at Conde Nast since Jul 2025, mechanism 564)'
+      - 'Google: softer-to-neutral as a direct publisher payer, but additionally Apple''s $1B/yr AI intermediary - Google monetizes publisher content twice (its own models and the Apple pass-through)'
+      predictions_not_findings: true
+      structural_contrasts:
+      - Mechanism 504 (Conde Nast x OpenAI - single-leg OpenAI publisher deal at WIRED's owner; Apple's Dec 2023 offer to the SAME owner produced nothing)
+      - Mechanism 564 (Amazon x Conde Nast Rufus - second AI-lab payer at WIRED's owner; Apple and Meta remain the $0 pair)
+      - Mechanism 559 (Amazon x NYT $20-25M/yr - a publisher deal that closed, the counterpoint to Apple's offer that did not)
+      - Mechanism 549 (News Corp x Meta up to $50M/yr - a $50M AI-content deal that closed, the counterpoint to Apple's $50M offers that did not)
+      - Mechanism 331 (Meta Dec 2025 seven-publisher bundle - display/licensing deals to publishers, vs Apple's vendor-route spend)
+      - 'siri_ai_publisher_deals (this mechanism supplies the sourced evidentiary base for its phase_1 summary line: 2023 approach, $50M, Conde Nast/NBC News/IAC, no deals closed)'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'publisher-offer facts are second-hand via search-result excerpts this run (no pages opened first-hand); the NYT original is paywalled, so the four-source anonymous attribution and $50M figure rest on secondary coverage'
+      - rank: 2
+        strength: strong
+        confounder: 'the Shutterstock deal value is an estimated $25-50M range confirmed by the vendor CFO for tech-company deals generally, not Apple-specific terms; signed in late 2022 but reported Apr 2024 - a 16-month gap with no contemporaneous Apple disclosure'
+      - rank: 3
+        strength: strong
+        confounder: 'the no-confirmed-closings outcome is an absence claim, bounded per the iteration-492 rule: no signed publisher deal surfaced in corpus reporting or this run''s search, which does not disprove a quiet closing, only that none is confirmed'
+      - rank: 4
+        strength: moderate
+        confounder: 'the Conde Nast multi-payer contrast leans on in-corpus claims (OpenAI Aug 2024, Amazon Rufus Jul 2025, Microsoft PCM Feb 2026) re-asserted here rather than re-verified this run'
+      - rank: 5
+        strength: moderate
+        confounder: 'training-data licensing (Shutterstock, Defined.ai) and display/licensing publisher deals (OpenAI, Meta bundles) are different instruments - the data-vendor spend does not create a publisher editorial incentive, so Apple remains a $0 publisher payer despite real AI-content spend'
+      - rank: 6
+        strength: weak
+        confounder: 'Apple is a tracked entity but not a publisher''s parent in this corpus except via the Conde Nast offer; no coverage-tone claim is made at the publication level from this mechanism'
+      statistical_discipline:
+        scope: qualitative structural mapping only
+        correlation_not_causation: true
+        p_value: NOT_CALCULATED
+        is_significant: false
+        tone_scores: NOT_SCORED
+      cautious_language_required: true
+      correlational_note: 'This mapping documents Apple''s AI training-data purchasing architecture: a confirmed $25-50M (estimated) Shutterstock training-data deal signed in the months after ChatGPT''s late-2022 launch, a Defined.ai agreement, and a Photobucket pursuit, alongside Dec 2023 $50M news-publisher offers to Conde Nast, NBC News, and IAC with no confirmed closings as of Sep 6 2026. Apple is a data-vendor AI payer, not a publisher AI payer. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+      no_coverage_tone_claim: true
+      sources:
+      - https://9to5mac.com/2023/12/22/apple-wants-to-train-its-ai-with-50-million-worth-of-licensed-news-articles/
+      - https://www.nasdaq.com/articles/apple-aapl-to-license-news-archives-for-its-generative-ai
+      - https://www.tomsguide.com/news/apples-reportedly-plans-a-different-way-of-training-ai-for-apple-gpt
+      - http://macrumors.com/2023/12/22/apple-ai-major-publisher-deals/
+      - https://www.engadget.com/apple-is-reportedly-looking-to-team-up-with-news-publishers-to-train-its-ai-074348010.html
+      - https://www.cultofmac.com/news/apple-licenses-shutterstock-image-library-ai-model-training
+      - https://venturebeat.com/ai/apples-25-50-million-shutterstock-deal-highlights-fierce-competition-for-ai-training-data
+      - https://appleinsider.com/articles/24/04/06/apple-licenses-millions-of-shutterstock-images-to-train-its-ai-models
+      - https://www.macobserver.com/news/apple-shutterstock-deal-millions-of-images-ai-dataset/
+      - https://www.macrumors.com/2024/04/08/apple-deal-to-license-images-to-train-ai/
+      - https://github.com/rayhe/mediascope/commit/a72eba5b0d53f752a6e469e83834667e947f8f86
+      research_method: 'browser.search this run (3 query sets - Apple $50M publisher AI licensing offers Dec 2023; Apple Shutterstock training-data deal outcome and terms; Apple publisher deal closings check surfacing the Gemini-bypass corpus commit), verbatim full-URL listings from search results; deal facts via search-result excerpts (second-hand), bounded per iteration-492 rule; no pages opened first-hand this run; Dec 2023 no-closings outcome cross-checked against the in-corpus Gemini bypass commit a72eba5b'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 574
+        type: C
+        date: 2026-09-06 23:00 PDT
   google:
     display_name: Google / Alphabet
     aliases:
