@@ -3210,6 +3210,76 @@ journalists:
     institution: University of California, Los Angeles
     source_url: https://en.wikipedia.org/wiki/Ian_Bogost
   multi_publication: true
+  competitor_coverage:
+    type_b_578_ian_bogost_meta_apple_writer_register_inversion:
+      iteration: 578
+      date: '2026-09-07'
+      type: B
+      design: 'Within-journalist cross-entity comparison: Ian Bogost (Atlantic contributing editor, 2013-present) on Meta vs Apple. Tests whether a writer-level philosophical register (copyright permissiveness toward training-data use; longstanding design skepticism toward Apple) inverts the publication-level financial gradient: The Atlantic carries a DUAL Apple financial tie (~$17B LPJ Trust AAPL holdings via Emerson Collective ownership + Apple News+ platform revenue, coverage_prediction softer) and no documented Meta deal, predicting softer Apple coverage than Meta coverage.'
+      hypothesis: 'At a publication with a deal-side financial tie to Apple and no Meta tie, the standing prediction is softer Apple coverage than Meta coverage. Writer-level ideology is expected to be subordinate to the publication-level incentive.'
+      finding: 'WRITER-LEVEL FALSIFICATION (bound) of the publication-level prediction, not causal evidence. Ian Bogost is affirmative toward Meta''s AI training-data use (Sep 27 2023 "My Books Were Used to Train Meta''s Generative AI. Good." - subhead "It can have my next one too") while adversarial toward Apple across seven years (Feb 2017 "The Myth of Apple''s Great Design" - "Apple has great design is the biggest myth in technology today"; Feb 3 2024 "The Apple Vision Pro Is Spectacular and Sad" - melancholy first-person review). Direction is OPPOSITE the Atlantic-Apple softer prediction: the same writer treats the no-deal entity (Meta) warmly and the deal-tied entity (Apple) coldly. This BOUNDS mechanism #572 (Type A, same publication, Apple vs Meta): #572 found publication-level register selection directionally consistent with softer Apple (Warzel + Bogost Vision Pro pieces vs Meta AI Watchdog investigations); #578 shows the writer-level register can invert the gradient entirely. The coexistence is the finding: publication-level financial incentives and writer-level philosophical registers are SEPARABLE mechanisms pulling in opposite directions at the same outlet. CORRELATION NOT CAUSATION.'
+      incentive_context:
+        deal: 'Atlantic-Apple DUAL financial tie: (1) OWNERSHIP EQUITY - Laurene Powell Jobs Trust holds ~$17B in Apple stock; LPJ owns The Atlantic via Emerson Collective. (2) PLATFORM REVENUE - Apple News+ is "by far the most valuable syndication partner for The Atlantic" per chief growth officer Megha Garibaldi (Digiday, May 2025); partner since 2019 launch. Neither link ever disclosed in Apple coverage.'
+        deal_date: 'ongoing (Apple News+ partnership since 2019 launch)'
+        deal_url: 'https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/'
+        sec_url: 'https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs'
+        coverage_prediction: 'softer'
+        meta_financial_tie: 'none documented'
+        prediction_tested: 'softer Apple than Meta at writer level'
+        prediction_result: 'inverted at writer level (Apple harder, Meta warmer)'
+      meta_corpus:
+      - title: 'My Books Were Used to Train Meta''s Generative AI. Good.'
+        date: '2023-09-27'
+        byline: 'Ian Bogost (solo)'
+        url: 'https://www.theatlantic.com/technology/archive/2023/09/books3-database-meta-training-ai/675461/'
+        verification: 'Canonical URL verified this run via academic bibliography citation (ouci.dntb.gov.ua: "Ian Bogost. 2023. My Books Were Used to Train Meta''s Generative AI. Good. The Atlantic (Sep 2023).") and bogost.com author archive confirming the piece and its lede ("When The Atlantic revealed last month that tens of thousands of books... had been used without permission to train Meta''s AI language model, well-known authors were outraged"). theatlantic.com direct fetch policy-blocked this run; content characterization via verified secondary quotations (hansdezwart.nl bibliography: "27 sep. 2023 - It can have my next one too").'
+        register: 'affirmative copyright-philosophy essay'
+        verbatim_markers: '"My Books Were Used to Train Meta''s Generative AI. Good."; subhead "It can have my next one too"; lede contrasts his stance with outraged authors calling Books3 a "smoking gun" for mega-corporate misbehavior.'
+      apple_corpus:
+      - title: 'The Apple Vision Pro Is Spectacular and Sad'
+        date: '2024-02-03'
+        byline: 'Ian Bogost (solo)'
+        url: 'https://www.theatlantic.com/technology/archive/2024/02/apple-vision-pro-headset-review/677347/'
+        verification: 'URL verbatim from GitHub awesome-vision-pro Articles section (secondary listing this run); authorship confirmed via hansdezwart.nl Ian Bogost author page, frontporchrepublic.com ("Ian Bogost has some concerns with the new ''spectacles'' from Apple"), and redef.com Ian Bogost archive. theatlantic.com direct fetch policy-blocked; bounded second-hand.'
+        register: 'melancholy first-person review'
+        verbatim_markers: '"The Apple Vision Pro Is Spectacular and Sad"; "A dispatch from the gypsum dunes of cyberspace"; "Maybe if I act like a computer, I will look more normal."'
+      - title: 'The Myth of Apple''s Great Design'
+        date: '2017-02'
+        date_note: 'Feb 10-14 2017 per loopinsight/downes.ca; bounded to month'
+        byline: 'Ian Bogost (solo)'
+        url: 'https://www.theatlantic.com/technology/archive/2017/02/themythofapplesgreatdesign/516093/'
+        verification: 'URL via secondary bibliography citation (student.hca.westernsydney.edu.au PDF); authorship and adversarial content confirmed via kottke.org ("In the Atlantic, Ian Bogost takes on the accepted view that Apple has great design"), macworld.com, and loopinsight.com. bogost.com design archive confirms the piece ("The company''s new ''spaceship'' headquarters shows how its beauty has always been skin deep"). Bounded second-hand.'
+        register: 'adversarial design criticism'
+        verbatim_markers: '"Apple has great design is the biggest myth in technology today"; "In truth, Apple''s products hide a shambles of bad design under the perfection of sleek exteriors."'
+      asymmetry_scorer_result_illustrative:
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1 vs n=2. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        target_entity: Apple
+        target_scores:
+        - -0.25
+        - -0.35
+        target_avg: -0.3
+        peer_entity: Meta
+        peer_scores:
+        - 0.45
+        peer_avg: 0.45
+        delta: -0.75
+        delta_calc: 'target_avg - peer_avg = -0.30 - 0.45 = -0.75'
+        delta_direction: 'target harder than peer by 0.75: INVERSION of the softer-Apple prediction'
+        p_value: NOT_CALCULATED
+        is_significant: false
+        correlation_not_causation: true
+      confounders:
+      - '[STRONG] Genre asymmetry: the Meta item is a personal copyright-philosophy essay; the Apple items are product/design criticism. The register difference is equally consistent with genre-driven framing, the standing Type B boundary condition (#493 Fowler, #498 Swisher, #503 Preston, #508 Wagner, #513 Kerr, #563 Heath, #568 Frier).'
+      - '[STRONG] Personal stake and ideology: Bogost''s own books are in the Books3 database; his open-source/copyright-permissive philosophy and longstanding design skepticism predate all three pieces. The Meta warmth may be ideological self-interest (endorsing the use of his own work) rather than entity warmth toward Meta.'
+      - '[MODERATE] Timing mismatch: Feb 2017 vs Sep 2023 vs Feb 2024 - a seven-year span across which the Atlantic''s Apple business relationship and the AI-copyright discourse both changed substantially.'
+      - '[MODERATE] Thin Meta corpus: n=1 on the Meta side. A single essay cannot carry a writer-level Meta register claim; the comparison is directional only.'
+      - '[WEAK] Headline authorship: Atlantic headlines are frequently editor-written; the "Good." kicker and "It can have my next one too" subhead are likely but not verifiably Bogost''s own wording.'
+      counterevidence:
+      - 'Same-discourse opposite treatment (#16 Reisner): Reisner''s Books3 investigation at the same publication foregrounded Meta adversarially ("Meta pirated millions of books") while Bogost responded to the same Books3 discourse with "Good." toward Meta - writer-level variance within the same outlet and news event, supporting separability of writer and publication mechanisms.'
+      - '#572 publication-level opposite direction: the same 2024 Vision Pro piece that #572 coded as publication-level register selection directionally consistent with softer Apple is here coded as writer-level adversarial Apple treatment - the unit of analysis changes the verdict, which is exactly the bound being tested.'
+      - 'The Meta piece is not Meta-the-company coverage: it is a copyright-philosophy essay in which Meta is the named practitioner of a practice Bogost endorses. Entity treatment is inferred from stance toward the practice, not direct company coverage.'
+      - 'Bogost''s Apple criticism is design-philosophy, not conduct scrutiny: zero accountability-register investigation of Apple appears in his corpus, consistent with #572''s register-selection claim - the Apple items are adversarial at product level but never investigative, so #572 and #578 can both hold at different registers.'
+      novelty: 'First dedicated Type B on Ian Bogost. Zero test_type_b_578 files present in repo (glob verified this run). No Type B commit with 578 in title (git log --grep verified this run). No existing competitor_coverage block on his careers entry (YAML-parsed verified pre-insert). Prior repo mentions of Bogost: key_journalists entry (profiles/atlantic.yaml), #572 historical-context citation of the 2017 Myth piece and apple_articles entry for the 2024 Vision Pro piece - both publication-level, never a within-writer cross-entity unit. Distinct from mechanism #16 (Reisner, same Books3 discourse, opposite Meta treatment - cross-referenced) and mechanism #572 (Type A publication-level, opposite direction - the bound target).'
 - career:
   - beat: news broadcasting
     end: '2016'
