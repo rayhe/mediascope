@@ -513,14 +513,14 @@ class TestNoBrittleSweep585:
 # Rotation guard: 581-585 window, closing the C->D edge this run.
 # ANCHORED at this run's commit via the followup-commit convention
 # established by Type D #565: the main commit carried the
-# POST_COMMIT_ANCHOR placeholder (guard class deselected pre-commit);
+# 8e2f87a placeholder (guard class deselected pre-commit);
 # the followup patches it to the real hash. The guard verifies the
 # rotation was valid AT THAT TIME, which is immutable.
 # ---------------------------------------------------------------------------
 
 
 class TestRotationCycleGuard585:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "8e2f87a"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type D #575 followup: ...") and doc-sync ("Type C #574
