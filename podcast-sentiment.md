@@ -10499,3 +10499,80 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 ### 8. Test File
 
 - tests/test_type_e_581_podcast_sentiment_thirtyninth_verification_sep07_6am.py - checks covering mechanism_id 581, Type E, iteration 581, date 2026-09-07 06:00 PDT, rotation 580 D -> 581 E, Guilty Feminist 498 hold no 499 thirty-ninth cycle bounded secondary-only (stale Listen Notes crawls 159-224d, official site 2h crawl no episode number, Chortle 4h crawl Sep 13 Kings Place LPF, 498-latest rests on #576 Audible UK verification, weaker evidence tier disclosed) with 499-penciled-for-Sep-7 still not surfaced by 06:00, EHE 28-day hold with Times/Engadget/LatestLY/PetaPixel/Hyperallergic/feminist.org re-surfaces verified already-in-corpus via pre-commit grep (Sifted ban piece explicitly distinguished as IN CORPUS via #480, not new; no double-counting, no competitor-equivalent in thirty-nine cycles), Attention Sphere 39th no-match with circular GitHub rejection and Spotify-Creators nonprofit re-confirmation (4h crawl), TWO new press surfaces (Times "Fear and loathing" field test ~Sep 6-7, 0l82sx8sw zero hits; Cybernews bystander-recordings amended complaint + Sep 4 Illinois NameTag class action, meta-lawsuit-ai-glasses/september 4th/CM3leon/bystander recordings zero hits; snippet-bounded; newest in-corpus surface ADVANCES from #561 Startup Fortune to the Times piece), Bloomberg Law/Startup Fortune bricking/ET pieces explicitly distinguished as in-corpus lineage, Reuters HateAid in corpus, MANUAL ILLUSTRATIVE no false significance, no em dashes, verbatim URLs incl WWW.ENGADGET.COM and http hyperallergic listings as surfaced, distinct from 576, thirty-ninth verification cycle, extends #576 by 5 hours, not duplicate, iteration-log entry present and newest-first.
+
+## Iteration #586 - Mon 2026-09-07 11:00 PDT (Type E: Podcast Sentiment Tracking)
+
+**Rotation:** 585 D -> 586 E (job_id mediascope-daily-iteration, goal_54093bda4145)
+
+### 1. Guilty Feminist - Fortieth 498 Hold, No 499
+
+- **Result:** As of Sep 7 11:00 PDT, no episode 499 has surfaced in bounded search. The latest verified episode remains 498 ("Politics with Felicity Ward and Hannah Spencer", Aug 31 2026) per the #576 Audible UK verification. Audible UK re-surfaced this run (crawled 5 days ago) still lists 498 as the latest episode in retrieved text. Fortieth consecutive cycle with no new episode.
+- **Cadence note:** weekly cadence; 498 released Monday Aug 31, so 499 was penciled for Sep 7 and has not surfaced by 11:00 PDT (18:00 UK) - bounded search-result observation, not a claim of non-release.
+- **This run's evidence tier:** secondary-only (search-result snippets, not a direct page open). Returns this cycle: Chortle (crawled 2 hours: Sep 13 Kings Place London Podcast Festival, no new episode announced in retrieved text), Ivy.fm (crawled 2 days: Sep 5 Newcastle Open Space past event, Sep 13 Kings Place upcoming), Audible.ca (crawled 21 days, stale), Listen Notes localized crawls (206-224 days old, latest indexed 467-491). None surfaced a 499. Stated explicitly.
+- **Live-show slate:** Chortle confirms Sep 13 Kings Place (London Podcast Festival), show starts 14:00.
+
+### 2. Everyone Hates Elon - 28-Day Hold, Zero New Campaign Motifs
+
+- **Hold:** activist group, not a podcast. Aug 10 Epstein spoof poster remains the last primary campaign (28 days as of Sep 7); Jul 13-17 bus stops (Kylie Jenner lenticular ad, "pervert technology" poster) remain the last primary-verified amplification via Engadget, PetaPixel, Hyperallergic.
+- **Search this run:** query "Everyone Hates Elon" activist Meta glasses campaign returned only in-corpus items. Pre-commit repo grep verified already-in-corpus status for every re-surfaced shape: the LatestLY Epstein fact-check (39 days, crawled 15 days), the Engadget bus-stops take-over (52 days, crawled 3 days), the PetaPixel Kylie lenticular piece (46 days, crawled 13 days), the AfroTech ethics piece (52 days, crawled 3 hours, in corpus), and the corpus's own GitHub commit pages plus the podcast-sentiment.md mirror (rejected as circular evidence per established discipline, not cited as discovery). No double-counting. No new primary campaign motif surfaced.
+- **No competitor-equivalent guerrilla campaign** against Apple, Google, Samsung, or Snap camera wearables has surfaced in any of the forty verification cycles. Bounded search-result absence.
+
+### 3. Attention Sphere - Fortieth No-Match Verification
+
+- **Result:** Sep 7 11:00 PDT quoted search for "Attention Sphere" podcast technology media analysis returned no matching podcast (fortieth no-match).
+- **What results returned:** this repository's own GitHub commit pages and podcast-sentiment.md mirror (rejected as circular evidence per established discipline, not cited as discovery), plus the Spotify Creators listing for Anita Nowak's Purposeful Empathy (crawled less than 1 hour before this run) re-confirming "The Attention Sphere: Ava's non-profit organization, committed to designing tech that strengthens real-world community" at theattentionstudio.com. Ava Smithing's actual podcast remains Left to Their Own Devices (Toronto Star).
+- **Status unchanged:** task-spec name remains misidentified; Attention Sphere is a nonprofit, not a podcast.
+- **Bounded claim:** bounded search-result absence, not proof of universal non-existence.
+
+### 4. New Press Surfaces This Cycle: TWO New-To-Corpus (Distinct Outlets on Existing Strands)
+
+- **NEW (1):** Neoteo "Meta Disables Tampered Ray-Ban Cameras" (https://www.neoteo.com/en/meta-disables-tampered-ray-ban-cameras; listed updated ~1 day ago, crawled 2 hours before this run): Meta confirms camera functions disabled on thousands of tampered Ray-Ban Meta glasses after detecting LED-defeating modifications (covering or drilling the capture LED); the reported company estimate puts tampering below 0.1% of glasses sold (reported estimate, not an exact count); a newer update closes a second loophole in which recording could begin before the LED was covered mid-capture. Distinct OUTLET from the in-corpus #576 Startup Fortune and #547 PetaPixel bricking pieces; neoteo.com is a new-to-corpus domain (zero pre-commit grep hits for "neoteo" in podcast-sentiment.md, iteration-log.md, profiles/competitor-entities.yaml). Newest-in-corpus surface does NOT advance: the #581 Times "Fear and loathing" piece (~Sep 6-7) remains the recency frontier; neoteo (~Sep 6) is contemporaneous.
+- **NEW (2):** Let's Data Science "Meta Faces Expanded Smart Glasses Privacy Lawsuit" (https://letsdatascience.com/news/meta-faces-expanded-smart-glasses-privacy-lawsuit-8bd7207f; listed updated 2 days ago, crawled 2 days before this run): Fortune-reported amended complaint filed Aug 31 in the U.S. District Court for the Northern District of California (original plaintiffs Gina Bartone of New Jersey and Mateo Canu of California; Meta and Luxottica co-defendants); the amended complaint adds bystanders who neither bought nor wore the glasses, broadening the alleged data collection to footage reviewed and labeled by overseas contractors. letsdatascience.com is IN CORPUS (the Aug 2026 "Meta Updates Smart Glasses to Close Recording Loophole" piece) but this ARTICLE is new-to-corpus (zero pre-commit hits for the slug "meta-faces-expanded-smart-glasses-privacy-lawsuit"). Distinct outlet/angle vs the #561 Startup Fortune Kenyan-contractors surface, the #576 Bloomberg Law false-ad surface, and the #581 Cybernews bystander-recordings surface; the underlying amended-complaint lineage is shared. Snippet-bounded; these are allegations, not court findings.
+- **Not new (in-corpus lineage or older):** the Times "Fear and loathing" piece (in corpus via #581; remains newest-in-corpus surface); the Cybernews piece (in corpus via #581); the Bloomberg Law false-ad class suit (in corpus via #576); the Startup Fortune Sep 1 bricking re-report (in corpus via #576); the Startup Fortune Kenyan-contractors re-report (in corpus via #561); the Reuters HateAid criminal-complaint piece (in corpus); the FastCo 91571430 URL (in-corpus Jul 10 roundup); the Road to VR v26 update piece (61 days old, in corpus); the Reuters Dec 2025 take-off piece (271 days old, in corpus); the AfroTech ethics piece (in corpus); all EHE motifs above.
+
+### 5. Scores (MANUAL ILLUSTRATIVE only)
+
+- p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False
+- EHE entity-selective posture unchanged: MANUAL ILLUSTRATIVE -8/10 toward Meta glasses (activist, not press). No competitor equivalent surfaced across forty cycles, bounded search-result absence.
+- Correlation not causation. No claim of empirical significance. Do not claim empirical significance.
+
+### 6. Sources (verbatim full URLs from search full-URL listings this run)
+
+- https://www.chortle.co.uk/shows/edinburgh_fringe_2026/g/39124/the_guilty_feminist (GF, crawled 2h; Sep 13 Kings Place LPF, no new episode announced in retrieved text)
+- https://www.audible.ca/podcast/The-Guilty-Feminist/episodes/B08K5X4F73 (GF, crawled 21d; stale)
+- https://www.audible.co.uk/podcast/The-Guilty-Feminist/B08K5Y1B25 (GF, crawled 5d; latest listed 498 "Politics with Felicity Ward and Hannah Spencer", no 499)
+- https://www.listennotes.com/pt/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/ (GF, stale crawl 206d; latest indexed 469)
+- https://www.listennotes.com/nl/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/ (GF, stale crawl 214d; latest indexed 467)
+- https://ivy.fm/podcast/the-guilty-feminist-616404 (GF, crawled 2d; Sep 5 Newcastle Open Space past event, Sep 13 Kings Place upcoming)
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html (EHE Epstein fact-check, 39 days, crawled 15d; in corpus)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE bus stops, 52 days, crawled 3d; in corpus)
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (EHE lenticular, 46 days, crawled 13d; in corpus)
+- https://afrotech.com/smart-glasses-ethics-and-consent (EHE ethics piece, 52 days, crawled 3h; in corpus)
+- https://github.com/rayhe/mediascope/commit/584f331bde53b2f9eafbfed1bbd138546ea8820a (EHE query return; own corpus commit, circular, rejected)
+- https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md (query return; own corpus file, circular, rejected)
+- https://www.neoteo.com/en/meta-disables-tampered-ray-ban-cameras (NEW: tampered-camera bricking, distinct outlet; listed updated ~1d, crawled 2h; snippet-bounded)
+- https://letsdatascience.com/news/meta-faces-expanded-smart-glasses-privacy-lawsuit-8bd7207f (NEW: amended-complaint re-report, Fortune strand; listed updated 2d, crawled 2d; snippet-bounded)
+- https://www.thetimes.com/uk/technology-uk/article/meta-glasses-rayban-privacy-recording-ai-0l82sx8sw (in corpus via #581; newest-in-corpus surface, NOT new)
+- https://cybernews.com/ai-news/meta-lawsuit-ai-glasses/ (in corpus via #581; NOT new)
+- https://news.bloomberglaw.com/litigation/meta-faces-false-ad-suit-over-ai-glasses-privacy-promise (in corpus via #576; NOT new)
+- https://startupfortune.com/meta-permanently-disables-cameras-on-thousands-of-tampered-smart-glasses/ (in corpus via #576; NOT new)
+- https://startupfortune.com/meta-glasses-lawsuit-says-intimate-footage-trained-ai-via-kenyan-contractors/ (in corpus via #561; NOT new)
+- https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/ (in corpus, 61 days; NOT new)
+- https://www.reuters.com/sustainability/boards-policy-regulation/ray-ban-meta-glasses-take-off-face-privacy-competition-test-2025-12-09/ (in corpus, 271 days; NOT new)
+- https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses (in-corpus Jul 10 roundup; NOT new)
+- https://creators.spotify.com/pod/profile/anita-nowak/ (Attention Sphere nonprofit re-confirmation, crawled <1h before run)
+
+### 7. Confounders (ranked)
+
+- STRONG Snippet-bounded search results are not full articles or transcripts; register claims are bounded to retrieved text. NOT_CALCULATED.
+- STRONG Guilty Feminist verification this cycle is secondary-only (search-result snippets, not a direct page open); the 498-latest claim rests on #576's Audible UK verification plus this run's re-surface (5d crawl still listing 498). The no-499 finding is a bounded search-result absence. NOT_CALCULATED.
+- STRONG The two NEW surfaces are cited from search-result full-URL listings (neoteo listed updated ~1d/crawled 2h, Let's Data Science listed updated 2d/crawled 2d), not direct page opens; neoteo's sub-0.1% figure is a company estimate reported in the snippet. NOT_CALCULATED.
+- STRONG No new Guilty Feminist episode / no new EHE primary campaign motif / no Attention Sphere podcast / zero competitor-equivalent campaign are bounded search-result absences, not universal non-existence. NOT_CALCULATED.
+- STRONG Five-hour cadence means genuinely new developments can land between cycles; the hold findings are time-bounded to 11:00 PDT Sep 7. NOT_CALCULATED.
+- MODERATE EHE is an activist group, not a podcast; its inclusion is per task spec as an amplification source, not as audio sentiment evidence. NOT_CALCULATED.
+- MODERATE The Let's Data Science amended-complaint strand is a distinct outlet/angle from the #561/#576/#581 surfaces; counted as a new surface, not a duplicate, but the underlying amended-complaint claim lineage is shared. NOT_CALCULATED.
+- MODERATE The neoteo bricking strand is a distinct outlet from the #547 PetaPixel and #576 Startup Fortune bricking pieces; the underlying Meta LED-tamper enforcement fact is shared. NOT_CALCULATED.
+
+### 8. Test File
+
+- tests/test_type_e_586_podcast_sentiment_fortieth_verification_sep07_11am.py - checks covering mechanism_id 586, Type E, iteration 586, date 2026-09-07 11:00 PDT, rotation 585 D -> 586 E, Guilty Feminist 498 hold no 499 fortieth cycle bounded secondary-only (Audible UK 5d crawl re-surface still lists 498 latest "Politics with Felicity Ward and Hannah Spencer", Chortle 2h crawl Sep 13 Kings Place LPF no new episode, Ivy.fm 2d crawl Sep 5 Newcastle past / Sep 13 Kings Place upcoming, stale Listen Notes 206-224d, no 499 by 11:00 PDT / 18:00 UK, weekly cadence note, 498-latest rests on #576 verification, weaker evidence tier disclosed), EHE 28-day hold with LatestLY/Engadget/PetaPixel/AfroTech re-surfaces verified already-in-corpus via pre-commit grep (GitHub commit/mirror hits rejected as circular, no double-counting, no new primary motif, no competitor-equivalent in forty cycles), Attention Sphere 40th no-match with circular GitHub rejection and Spotify-Creators nonprofit re-confirmation (<1h crawl, Left to Their Own Devices named, task-spec misidentified), TWO new press surfaces (neoteo.com "Meta Disables Tampered Ray-Ban Cameras" ~Sep 6, neoteo zero corpus hits, sub-0.1% company estimate, second-loophole detail, snippet-bounded, distinct outlet vs #547 PetaPixel / #576 Startup Fortune, does NOT advance the #581 Times recency frontier; letsdatascience.com "Meta Faces Expanded Smart Glasses Privacy Lawsuit" 8bd7207f, domain in corpus but slug zero hits, Fortune-reported Aug 31 amended complaint ND Cal, Bartone/Canu plaintiffs, bystanders added, distinct outlet/angle vs #561/#576/#581 surfaces, snippet-bounded), Times/Cybernews/Bloomberg Law/Startup Fortune bricking/Kenyan/HateAid/FastCo/RoadToVR/Reuters-Dec-2025/AfroTech explicitly distinguished as in-corpus lineage, MANUAL ILLUSTRATIVE no false significance, no em dashes, verbatim URLs incl WWW.ENGADGET.COM and neoteo/en/ and letsdatascience 8bd7207f listings as surfaced, distinct from 581, fortieth verification cycle, extends #581 by 5 hours, not duplicate, iteration-log entry present and newest-first.
