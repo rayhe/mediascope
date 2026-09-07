@@ -1,3 +1,32 @@
+#577 Type A: Gizmodo x Anthropic Null-Tie Control - Symmetric Adversarial Register Toward a Second Deal-Absent Entity (delta +0.12 MANUAL ILLUSTRATIVE n.s.) - Sep 7 2026 02:00 PDT
+
+**Date:** 2026-09-07 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 576 E -> 577 A)
+**Type:** A - Competitor Coverage Deep Dive (Gizmodo x Anthropic; first dedicated mechanism under gizmodo.yaml competitor_relationships.anthropic, previously zero mechanisms)
+
+**Finding:** SECOND zero-tie control in the Gizmodo control pair (after #512 Gizmodo x Google). Gizmodo carries $0 documented financial ties to Anthropic, Meta, OpenAI, and Google, so the thesis predicts symmetric registers with no tie-driven softening. Observed: Gizmodo applies an adversarial, sarcastic register to BOTH Anthropic and Meta in the controversy/news domain:
+1. "Anthropic Says It Hit the Brakes on AI Testing Following Autonomous Hacks" (Sep 1 2026, excerpt-bounded second-hand): "paying lip service to the need for globally enforceable guardrails", "The autonomous hacks clearly left both companies rattled", "would not publicly release its much-feared Mythos model". URL: https://gizmodo.com/?p=2000805796
+2. "Anthropic Agrees to $1.5 Billion Settlement for Downloading Pirated Books to Train AI" (Sep 2025, first-hand opened this run): straight-news frame with adversarial kicker - "Anthropic touted the earlier ruling from June", "all the company needed to do was buy every book it pirated to lawfully train its models, something that certainly costs less than $3,000 per book", judge ruled "executives at the company knew they were downloading pirated works". URL: https://gizmodo.com/anthropic-agrees-to-1-5-billion-settlement-for-downloading-pirated-books-to-train-ai-2000654666
+3. "Anthropic Releases a Safer Version of Its 'Too Dangerous' Mythos AI" (Jun 2026, first-hand opened this run): scare quotes around the safety claim, "in a considerably nerfed fashion", "(hasn't (yet) been deemed fit for public availability)", "Opus 4.8 has already been annoying some users after Anthropic boosted the model's honesty". URL: https://gizmodo.com/anthropic-releases-a-safer-version-of-its-too-dangerous-mythos-ai-2000769492
+Meta comparators: "The World Is on Fire, and Meta Sees an Opportunity to Add Facial Recognition to Smart Glasses" (Feb 2026, -0.70, first-hand in #512); "The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already" (Jul 2026, -0.55, excerpt in #512); "Meta Is Racing to Move Faster and Break More Things" (May 2026, -0.60, excerpt-bounded second-hand this run).
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Anthropic mean -0.50 vs Meta mean -0.617: delta +0.12. p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False. The +0.12 lean is noise at n=3 vs n=3. Correlation not causation.
+
+**Confounders Ranked:** STRONG: (1) genre confound - all six items are controversy/news pieces; business-domain Anthropic items in the same profile (Project Glasswing, TeraWulf 20-year lease) run neutral-business; (2) safety-narrative alignment - Gizmodo's house skepticism of AI-safety marketing invites scare-quote snark at Anthropic's safety-first brand, reflecting an editorial stance on safety theater rather than entity favoritism. MODERATE: (1) timing mismatch - settlement piece Sep 2025 vs Meta pieces Feb-Jul 2026; (2) author difference across six pieces. WEAK: unmeasured search-traffic dependence; n=3 vs n=3 thin - directional control, not dispositive.
+
+**Why this matters:** the symmetric-adversarial claim now holds across TWO competitor entities (Google #512, Anthropic this unit) plus Meta, all at $0 tie. This bounds the thesis claim so that softening at deal publications (FT-OpenAI, Verge-OpenAI product domain #425) cannot be dismissed as generic big-tech house style. Domain-bounded: controversy/news only. Cross-references: 512, 517 (Guardian x Anthropic book-piracy gradient, comparator), 552 (FT x Anthropic inversion), 557 (Verge x Anthropic aspirational), 121 (Fast Company Snap vs Meta).
+
+**Research method:** browser.search this run (2 targeted query sets, verbatim full-URL listings); browser.open first-hand on the Anthropic settlement and Mythos pieces; no zero-coverage claims per iteration-492 rule; no canonical URLs constructed.
+
+**New Type A files:** `tests/test_type_a_577_gizmodo_anthropic_null_tie_symmetric_adversarial_sep07_2am.py` - 7 classes, 47 tests, all passing. Mechanism key: mechanism_577_gizmodo_anthropic_null_tie_symmetric_adversarial under competitor_relationships.anthropic in profiles/gizmodo.yaml (ASCII-only, YAML re-parse validated with leaf-type/value assertions).
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only control; significant False.
+
+**Rotation Transparency:** Previous entry #576 Type E at 01:00 PDT Sep 7 2026 (commit 0fb3c00 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Selected Type A.
+
+**Novelty Verification:** Zero test_type_a_577 files on disk before this run (glob verified); no Type A #577 in git log (grep verified); zero mechanism keys under gizmodo.yaml competitor_relationships.anthropic before insertion (verified this run).
+
+---
+
 #576 Type E: Podcast Sentiment Thirty-Eighth Verification (GF 498 Hold No 499, EHE 28-Day Hold, Attention Sphere 38th No-Match, TWO New-To-Corpus Press Surfaces: Bloomberg Law False-Ad Class Suit + Startup Fortune Sep 1 Bricking Re-Report) - Sep 7 2026 01:00 PDT
 
 **Date:** 2026-09-07 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 575 D -> 576 E)
