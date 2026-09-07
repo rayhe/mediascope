@@ -1304,6 +1304,106 @@ competitor_relationships:
     source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs"
     apple_news_source: "https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/"
     coverage_prediction: "softer"
+    mechanism_572_atlantic_apple_accountability_register_exemption_vs_meta_watchdog:
+      mechanism_id: 572
+      date_analyzed: '2026-09-06'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 572
+      iteration_type: A
+      iteration_time: '2026-09-06 20:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The Atlantic
+      competitor_pair: 'Apple vs Meta'
+      author: 'Kit (with Ray)'
+      finding: 'First dedicated Type A mechanism under competitor_relationships.apple in atlantic.yaml, which previously held only the financial stub (DUAL investment + platform revenue tie: ~$17B LPJ Trust AAPL holdings plus Apple News+ syndication revenue, direction mutual, coverage_prediction softer, neither link ever disclosed in Apple coverage). The Atlantic applies a philosophical design-criticism and melancholy-review register to Apple, Metas direct XR-hardware competitor, while reserving its AI Watchdog accountability-investigation register for Meta. Apple items: Warzels Jun 2023 The Vision Pro Is the Perfect Gadget for the Apocalypse (-0.35, dystopian-philosophical essay: expensive gadget and a gimmick, an invitation to narrow our collective aperture); the Feb 3 2024 The Apple Vision Pro Is Spectacular and Sad (-0.25, melancholy first-person review, zero conduct scrutiny). Historical context: Bogosts Feb 2017 The Myth of Apples Great Design shows the design-criticism register is a longstanding Atlantic Apple mode. Meta comparators (in-corpus): Jul 24 2026 AI Watchdog Why Would Meta Download So Much Porn? (-0.75, Meta named in headline, Strike 3 lawsuit, Celebgate and GirlsDoPorn file lists, mechanism 481); Mar 25 2025 The Unbelievable Scale of AIs Pirated-Books Problem (-0.65, unsealed Meta internal comms, MZ permission to download LibGen). Scorer MANUAL ILLUSTRATIVE: Apple target [-0.35, -0.25] avg -0.30 vs Meta peer [-0.75, -0.65] avg -0.70, engine target-minus-peer +0.40, delta_manual_illustrative 0.40. THIRD engine/finding-layer DIVERGENCE (#552 first in #555, #557 second in #560): engine claims significance on the synthetic illustrative inputs (Welch p ~ 0.0299, d = 5.66, is_significant True) while the finding layer refuses (significant False, p_value NOT_CALCULATED, empirical_required True): arithmetic layer vs finding layer separation, pinned deliberately per the standing rule, not an oversight. NOT artifact-grade: n=2 vs n=2, genre mismatch, secondary verification. Honesty note: the standing coverage_prediction for Atlantic x Apple was SOFTER, set on the dual financial tie. Observed is an accountability-register exemption for Apple vs watchdog-register targeting of Meta, directionally consistent with softer: the first directional confirmation in the recent control run, against the falsification family (#552, #557, #562, #567) which stands as the contrasting pole. The claim is register SELECTION, not tone magnitude: the Apple items are genuinely adversarial at product level, which is why the genre-mismatch confounder is STRONG and the verdict is directionally_supported_not_proven. Correlation is not causation.'
+      discovery_summary: 'Bounded absences per iteration-492 rule, bounded by search-index visibility: no Atlantic AI Watchdog or equivalent accountability investigation of Apples AI training-data practices surfaced in bounded searches; no Atlantic accountability-register coverage of the May 5 2026 $250M Siri false-advertising settlement (Landsheft v. Apple, N.D. Cal.) surfaced either. The claim is register SELECTION, not tone magnitude. First mechanism ever under competitor_relationships.apple in atlantic.yaml; distinct from #481 (Atlantic x OpenAI watchdog entity selection) and #404 (Atlantic x Anthropic mitigation credit); joins the register-asymmetry strand of #492 (Verge x Google dek-level privacy equivalence vs multi-article escalation).'
+      apple_articles:
+        - title: 'The Vision Pro Is the Perfect Gadget for the Apocalypse'
+          author: 'Charlie Warzel'
+          date: '2023-06'
+          url: 'https://www.theatlantic.com/technology/archive/2023/06/apple-vision-pro-screen-concession-gadget/674375/'
+          url_source: 'secondary artnet quotation, verbatim Full-URL listing this run; theatlantic.com direct fetch policy-blocked'
+          secondary_url: 'https://news.artnet.com/market/apple-vision-pro-and-art-world-2320826'
+          register: 'dystopian_philosophical_essay'
+          tone_score: -0.35
+          key_quote: 'The Vision Pro may be merely an expensive gadget and a gimmick, but it represents a rationale that feels almost comically ill-suited to our moment: an invitation to narrow our collective aperture at a moment that asks us to bear witness and that demands our clear, unblinking gaze.'
+          framing:
+            - 'dystopian philosophical essay, zero conduct scrutiny of Apple'
+        - title: 'The Apple Vision Pro Is Spectacular and Sad'
+          date: '2024-02-03'
+          url: 'https://www.theatlantic.com/technology/archive/2024/02/apple-vision-pro-headset-review/677347/'
+          url_source: 'URL verbatim from GitHub awesome-vision-pro list Articles section, verbatim Full-URL listing this run'
+          secondary_url: 'https://github.com/godber/awesome-vision-pro'
+          register: 'melancholy_first_person_review'
+          tone_score: -0.25
+          framing:
+            - 'melancholy first-person review, zero conduct scrutiny of Apple'
+      meta_articles:
+        - title: 'Why Would Meta Download So Much Porn?'
+          series: 'AI Watchdog'
+          date: '2026-07-24'
+          url: 'https://web.archive.org/web/20260724235323/https://www.theatlantic.com/technology/2026/07/meta-strike-3-porn-lawsuit/688023/'
+          url_source: 'in-corpus mechanism 481 pointer'
+          register: 'accountability_investigation_headline_named'
+          tone_score: -0.75
+          framing:
+            - 'Meta named in headline, Strike 3 lawsuit, Celebgate and GirlsDoPorn file lists'
+        - title: 'The Unbelievable Scale of AIs Pirated-Books Problem'
+          date: '2025-03-25'
+          url: 'https://www.theatlantic.com/technology/archive/2025/03/libgenmetaopenai/682093/'
+          url_source: 'in-corpus pointer'
+          register: 'accountability_investigation_court_records'
+          tone_score: -0.65
+          framing:
+            - 'unsealed Meta internal comms, MZ permission to download LibGen'
+      historical_context:
+        - title: "The Myth of Apple's Great Design"
+          author: 'Ian Bogost'
+          date: '2017-02'
+          register: 'adversarial_design_criticism'
+          secondary_url: 'https://kottke.org/17/02/the-myth-of-apples-great-design'
+          notes: 'Design-criticism register is a longstanding Atlantic Apple mode; the Apple register predates the Meta AI Watchdog era.'
+      asymmetry_scoring_manual_illustrative:
+        note: 'MANUAL ILLUSTRATIVE not empirical n=2 vs n=2 per entity insufficient for inferential significance; standing rule Aug 28 2026, arithmetic only'
+        target_entity: 'Apple Atlantic design-criticism and review register'
+        peer_entity: 'Meta Atlantic AI Watchdog accountability register'
+        target_scores_manual_illustrative: [-0.35, -0.25]
+        target_avg_manual_illustrative: -0.30
+        peer_scores_manual_illustrative: [-0.75, -0.65]
+        peer_avg_manual_illustrative: -0.70
+        delta_manual_illustrative: 0.40
+        delta_direction: 'target softer than peer by 0.40'
+        p_value: 'NOT CALCULATED no observed corpus'
+        cohens_d: 'NOT CALCULATED'
+        ci_95: 'NOT CALCULATED'
+        significant: false
+        engine_divergence: true
+        engine_is_significant: true
+        empirical_required: true
+        divergence_note: 'THIRD engine/finding-layer divergence (#552 first in #555, #557 second in #560): the engine claims significance on the synthetic illustrative inputs (Welch p ~ 0.0299, d = 5.66, is_significant True) while the finding layer refuses (significant False, p_value NOT_CALCULATED, empirical_required True). Arithmetic layer vs finding layer separation, pinned deliberately per the standing rule, not an oversight.'
+        artifact_grade: false
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+      prediction_test:
+        standing_prediction: 'softer'
+        verdict: 'directionally_supported_not_proven'
+        rationale: 'Standing coverage_prediction for Atlantic x Apple was softer, set on the dual financial tie. Observed is an accountability-register exemption for Apple vs watchdog-register targeting of Meta, directionally consistent with softer: the first directional confirmation in the recent control run, against the falsification family (#552, #557, #562, #567) which stands as the contrasting pole. The claim is register SELECTION, not tone magnitude.'
+      confounders_ranked:
+        strong:
+          - 'genre mismatch: investigative vs essay/review. The comparison is about register SELECTION, which entity gets the accountability register, not tone magnitude. The Apple items are genuinely adversarial at product level, which is why the verdict is directionally_supported_not_proven.'
+          - 'genuine conduct differences: Meta items rest on unsealed court records and filed lawsuits (Strike 3, LibGen comms); Apple training-data practices produced no equivalent court-record surface in the window.'
+          - 'timing mismatch: Apple items 2023-2024 vs Meta items 2025-2026; the Atlantic AI Watchdog vertical did not exist in the Apple-item window.'
+        moderate:
+          - 'secondary-source limitation: theatlantic.com direct fetch policy-blocked; Apple URLs verified via secondary quotation and listing pages only, bounded per iteration-492 rule.'
+          - 'thin sample: n=2 vs n=2 is directional only, never dispositive for a publication-level claim.'
+        weak:
+          - 'author concentration: Apple and Meta items carry different bylines, so a byline effect cannot be separated from the entity effect.'
+      correlation_not_causation: true
+      cautious_language: 'Correlation only, not causation. Financial relationships are structural incentive predictors, not proof of editorial control. Synthetic scores illustrative only; the genre mismatch confounder is STRONG and the verdict is directionally_supported_not_proven.'
+      cross_references: [481, 404, 16, 193]
+      no_em_dash_verified: true
+      research_date: '2026-09-06 UTC'
+      new_test_file: 'tests/test_type_a_572_atlantic_apple_accountability_register_exemption_vs_meta_watchdog_sep06.py'
   google:
     financial_tie: "adversarial_litigation"
     estimated_value: "$0 (suing for damages)"
