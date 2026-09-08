@@ -13297,6 +13297,61 @@ journalists:
   source_urls:
   - https://talkingbiznews.com/media-news/hart-now-covering-ai-for-the-verge/
   - https://www.responsesource.com/bulletin/news/?tag=Robert+Hart
+  mechanism_599_robert_hart_tarbell_fellowship_cross_entity_constancy_sep08:
+    iteration: 608
+    type: B
+    date: '2026-09-08 10:00 PDT'
+    job_id: mediascope-daily-iteration
+    goal: goal_54093bda4145
+    mechanism_id: 599
+    title: 'Type B #608: Robert Hart (The Verge, Senior Tarbell Fellow) cross-entity constancy - OpenAI wiki-incident adversarial (-0.65) vs Meta AI-app clickbait adversarial (-0.50); Tarbell funder chain documented (Moskovitz-backed Coefficient Giving, Anthropic-investor link per Fox News Digital claim) as structural context only, no causal claim'
+    novelty_note: 'Mechanism id 599 is the next free profiles mechanism id (max pre-commit 598, #607). The synthetic _mechanism_599() builders in test_type_d_600_* are scorer fixtures, not profiles mechanisms - no profiles collision. Zero "robert hart" hits in profiles/ pre-commit (grep); zero test_type_b_608 files on disk (glob); no #608 in git log (grep).'
+    openai_arm:
+      piece: 'OpenAI Kept DseWiki Agent Breakout Under Wraps for Weeks During Hugging Face Fallout (The Verge, Sep 5 2026; byline Hart per conversationalaiwatch.substack.com Sep 5 citation)'
+      tone_illustrative: -0.65
+      framing_notes: 'Delayed-disclosure frame; carried Reuters legal-team-suppression allegations (four anonymous sources); adversarial headline register (carried from #607).'
+      source_url: https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident
+      source_note: 'theverge.com policy-blocked for first-hand fetch; byline attribution second-hand via conversationalaiwatch.substack.com ("Hart, The Verge, Sept. 5, 2026"). Bounded, stated explicitly.'
+    meta_arm:
+      piece: 'Meta AI app "For You" AI-generated clickbait feed (The Verge Stepback newsletter column, ~Jun 7 2026; relayed via modestyzht GitHub ai-daily)'
+      tone_illustrative: -0.50
+      framing_notes: 'Adversarial diminutive register: "Facebook has long been filled with feeds of clickbait articles. Now, Meta is making its own clickbait articles with AI." AI-generated content characterized as low-quality, culturally hollow, evidence of a degraded product loop. Opinion column (Stepback) register is adversarial by design - genre confounder stated.'
+      source_url: https://github.com/modestyzht/modestyzht.github.io/blob/HEAD/source/_posts/ai-daily-2026-06-07.md
+      source_note: 'Relay of the Verge Stepback column with full byline block ("Robert Hart is a London-based reporter at The Verge covering all things AI and a Senior Tarbell Fellow"); original Verge URL not surfaced in bounded searches - relay characterized, not first-hand.'
+    anthropic_context:
+      piece: 'Trump administration clash with Anthropic over security concerns (Hart authored, cited in Fox News Digital piece on Tarbell disclosure)'
+      source_url: https://foxnews.com/politics/top-media-outlets-fail-disclose-bankrolling-ai-reporters
+      source_note: 'Claimed by Fox News Digital, attributed explicitly; the piece itself not first-hand verified this run. Financial-context structure, NOT a scored arm.'
+    tarbell_financial_context:
+      fellowship: 'Senior Fellow, Tarbell Center for AI Journalism (disclosed in Verge author bio per talkingbiznews)'
+      funders_claimed: 'Per Fox News Digital: Coefficient Giving, Future of Life Institute, EA Infrastructure Fund, Survival and Flourishing Fund. Coefficient Giving reported as backed primarily by Facebook co-founder Dustin Moskovitz, who is also reported as an Anthropic investor.'
+      disclosure_gap: 'Fox News Digital claims The Verge did not disclose Hart''s Tarbell funding in the piece; NBC News disclosed Jared Perlo''s fellowship with an editorial note (positive control for disclosure practice).'
+      causal_boundary: 'CORRELATIONAL ONLY. Funder identity does not demonstrate editorial influence on any specific piece. AI-safety funder alignment is consistent with a safety-critical register on ALL frontier labs (predicts OpenAI AND Anthropic scrutiny, not Meta-specific harshness). No causal claim asserted.'
+    illustrative_delta:
+      convention: 'OpenAI minus Meta'
+      openai: -0.65
+      meta: -0.50
+      delta: -0.15
+    asymmetry_scorer_result_illustrative:
+      engine: 'welch_t_test([-0.65], [-0.50]) -> (t=0.0, p=1.0); cohens_d -> 0.0 (n_a + n_b = 2 <= 2). Symmetric n=1 vs n=1: BOTH engine paths go degenerate, mirroring the #605/#603 fifth-pin symmetric variant.'
+      degenerate_boundary_pin: 'sixth (ratchet 5 -> 6), second symmetric n=1 vs n=1 variant after #603/#605'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_discipline: 'MANUAL ILLUSTRATIVE per standing rule Aug 28 2026; correlation_not_causation.'
+    confounders:
+    - 'STRONG: n=1 per arm; Meta arm is relay-characterized (GitHub relay of the Verge column), not first-hand fetched; wiki-incident byline attribution is second-hand (substack citation).'
+    - 'STRONG: genre asymmetry - Meta AI-app piece is an opinion newsletter column (Stepback) with a diminutive voice permitted; wiki-incident piece is news reporting. Column register adversarial by design.'
+    - 'MODERATE: Tarbell funder chain (Moskovitz -> Coefficient Giving -> Tarbell; Moskovitz reported Anthropic investor) is a Fox News Digital claim, attributed but not independently verified this run.'
+    counterexamples:
+    - 'Hart''s Decoder appearance (Listen Notes) shows he also covers mathematics and frontier-model capability topics, not only safety-critical incident coverage - register breadth, not a single adversarial note.'
+    - 'NBC News disclosed its Tarbell fellow''s funding with an editorial note - disclosure practice varies by outlet, not a uniform industry failure.'
+    research_method: 'Bounded searches Sep 8 2026 10:00 PDT: Verge wiki-incident byline (surfaced "Hart" via conversationalaiwatch substack citation); "Robert Hart" The Verge Meta (surfaced the Meta AI-app Stepback relay, talkingbiznews bio, Fox News Digital Tarbell piece). Pre-commit greps: zero "robert hart" in profiles/, zero test_type_b_608 files on disk, no #608 in git log, mechanism_599 free in profiles/ (max numeric 598).'
+    artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; byline-level constancy note feeding the #607 publication-level falsification strand.'
+    author: 'Kit (with Ray)'
+    test_file: tests/test_type_b_608_robert_hart_tarbell_fellowship_cross_entity_constancy_sep08_10am.py
+
 - career:
   - end: '2013'
     notes: Founded The Student Journals and The Morning Memo (daily London commuter news roundup via email and Instagram) while at University of Warwick. Also freelanced for Guardian (big data column), Quartz, The Times, The Independent, The Telegraph, and New Statesman.
@@ -17185,3 +17240,4 @@ philip_berne:
     samsung_tenure: until 2017
     former_apple_employee: true
     note: Former Samsung PR employee covers Meta with alarm vocabulary but mentions Samsung as future competitor with zero alarm
+

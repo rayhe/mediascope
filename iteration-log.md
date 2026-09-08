@@ -1,3 +1,42 @@
+#608 Type B: Robert Hart (The Verge, Senior Tarbell Fellow) Cross-Entity Register Constancy - OpenAI DseWiki Adversarial (-0.65) vs Meta AI-App Clickbait Adversarial (-0.50); Tarbell Funder Chain (Moskovitz-Backed Coefficient Giving) Documented as Structural Context, Correlational-Only Boundary - Degenerate-Pin Ratchet 5 -> 6 - Sep 8 2026 10:00 PDT
+
+**Date:** 2026-09-08 10:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 607 A -> 608 B)
+**Type:** B - Journalist Cross-Entity Tracking (writer-level control: Robert Hart, The Verge London AI reporter)
+
+## Rotation inspection
+- Newest-5 git-log, MAIN-commits only (subjects `^Type [A-E] #\d+:`), prior to this run: #607 A (main 536be32, followup 28115bb), #606 E, #605 D, #604 C, #603 B. Followup commits interleave between mains, confirming the #575-lesson: rotation guards filter on MAIN subjects only.
+- This run is Type B, closing the A->B edge. Rotation guard covers the 604-608 window (B,A,E,D,C newest-first); anchor patched post-commit per the #565 followup convention.
+
+## Journalist selection (novelty-gated)
+- Pre-commit greps: zero "robert hart" in profiles/ outside the pre-existing career entry in profiles/careers/journalists.yaml (Lexology -> Forbes -> The Verge migration, 2024); zero test_type_b_608 files on disk (glob); no #608 in git log (grep); mechanism_599 free in profiles/ (max numeric 598, #607).
+- Mechanism_599 is a synthetic _mechanism_599() builder in test_type_d_600_* scorer fixtures, NOT a profiles mechanism - no collision; documented in the mechanism novelty_note.
+- Mechanism 599 attached to the pre-existing Robert Hart entry in profiles/careers/journalists.yaml (not a duplicate entry - one entry, merged during this run after a duplicate was caught by the test fixture).
+
+## Research (10:00 PDT, bounded, primary-source-first)
+- OpenAI arm: The Verge "OpenAI Kept DseWiki Agent Breakout Under Wraps for Weeks During Hugging Face Fallout" (Sep 5 2026), canonical URL https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident. theverge.com policy-blocked per standing rule - byline "Hart" second-hand via conversationalaiwatch.substack.com Sep 5 citation ("Hart, The Verge, Sept. 5, 2026"). Adversarial delayed-disclosure register (-0.65, MANUAL ILLUSTRATIVE), carried from #607.
+- Meta arm: Hart's Verge Stepback newsletter column on the Meta AI app "For You" feed (~Jun 7 2026), relayed via modestyzht GitHub ai-daily (https://github.com/modestyzht/modestyzht.github.io/blob/HEAD/source/_posts/ai-daily-2026-06-07.md): "Facebook has long been filled with feeds of clickbait articles. Now, Meta is making its own clickbait articles with AI." Adversarial diminutive register (-0.50, MANUAL ILLUSTRATIVE). Relay characterized, not first-hand; original Verge URL not surfaced in bounded searches.
+- Tarbell financial context (structural, correlational-only): Hart is a Senior Fellow of the Tarbell Center for AI Journalism (Verge author bio per talkingbiznews: https://talkingbiznews.com/media-news/hart-now-covering-ai-for-the-verge/). Fox News Digital claims The Verge did not disclose the fellowship in the wiki-incident piece while NBC News disclosed Jared Perlo's with an editorial note (positive control); claimed funders include Coefficient Giving, reported as backed primarily by Facebook co-founder Dustin Moskovitz, who is also reported as an Anthropic investor (https://foxnews.com/politics/top-media-outlets-fail-disclose-bankrolling-ai-reporters, attributed, not independently verified). Causal boundary: CORRELATIONAL ONLY - AI-safety funder alignment predicts safety-critical scrutiny of ALL frontier labs (OpenAI AND Anthropic), not Meta-specific harshness. No causal claim asserted.
+- Anthropic comparator exists only as attributed context (Trump-administration/Anthropic security-clash piece, cited in the Fox piece), NOT a scored arm.
+
+## Finding
+1. Illustrative delta (OpenAI minus Meta) -0.15: adversarial register is CONSTANT across a frontier lab and Meta - no Meta-specific asymmetry. The finding is constancy, not divergence.
+2. Engine on illustrative arms: welch_t_test([-0.65], [-0.50]) -> (t=0.0, p=1.0); cohens_d -> 0.0 (n_a + n_b = 2 <= 2). Symmetric n=1 vs n=1: BOTH engine paths go degenerate, mirroring the #605/#603 fifth-pin symmetric variant. Degenerate-boundary pin ratchet 5 -> 6 (sixth pin, second symmetric variant).
+3. Finding layer: p_value / cohens_d / ci_95 NOT_CALCULATED, is_significant False. NOT an agreement-pole pin (pole requires a non-degenerate engine computation) - agreement pole intact at 11, divergence intact at 6.
+4. Feeds the #607 publication-level strand: The Verge's wiki-incident adversarial register is a WRITER-level constant (Hart applies it to Meta too), not a publication-level OpenAI-specific posture.
+
+## Empirical stance
+- MANUAL ILLUSTRATIVE throughout. p_value / cohens_d / ci_95 NOT_CALCULATED per standing rule Aug 28 2026; is_significant False. No tone scores beyond the hand-scored illustrative arms; no false significance; correlation_not_causation.
+
+## Confounders Ranked
+- STRONG: (1) n=1 per arm; Meta arm relay-characterized, wiki-incident byline second-hand; (2) genre asymmetry - Meta piece is an opinion newsletter column (adversarial-by-design register) vs news reporting.
+- MODERATE: Tarbell funder chain is a Fox News Digital claim, attributed but not independently verified this run.
+- Counterexamples: (1) Hart's Decoder appearance shows capability-topic breadth beyond safety-critical coverage; (2) NBC News disclosed its Tarbell fellow - disclosure practice varies by outlet.
+
+## Rotation guard
+- 604-608 window (B,A,E,D,C newest-first) closing the A->B edge; anchor patched in the followup run per #565 convention.
+
+---
+
 #607 Type A: The Verge x OpenAI Wiki-Incident Adversarial Register - Vox-Deal "Softer" Prediction Falsified at the Incident-Coverage Layer (Second Vox-Deal Falsification After #573) - Falsification Family 8 -> 9 - Sep 8 2026 09:00 PDT
 
 **Date:** 2026-09-08 09:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 606 E -> 607 A)
