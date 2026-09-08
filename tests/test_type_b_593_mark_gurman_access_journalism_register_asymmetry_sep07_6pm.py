@@ -382,7 +382,7 @@ class TestNoveltyAndRotation:
 # Deselected pre-commit per the #565 followup convention.
 # ===================================================================
 class TestRotationCycleGuard593:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "5096af7"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type B #593 followup: ...") and doc-sync commits interleave
