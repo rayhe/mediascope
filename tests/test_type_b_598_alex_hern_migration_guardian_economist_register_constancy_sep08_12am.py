@@ -437,7 +437,7 @@ class TestNovelty:
 class TestRotationCycleGuard598:
     # POST_COMMIT_ANCHOR placeholder; patched to the main-commit short hash
     # in the followup commit per the #565 convention.
-    ANCHORED_COMMIT = "PENDING"
+    ANCHORED_COMMIT = "d1e8632"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type B #598 followup: ...") and doc-sync commits interleave
