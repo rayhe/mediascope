@@ -2436,6 +2436,200 @@ competitor_relationships:
     source_url: "https://www.reuters.com/sustainability/boards-policy-regulation/rolling-stone-billboard-owner-penske-sues-google-over-ai-overviews-2025-09-14/"
     adtech_lawsuit_source: "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
     coverage_prediction: "adversarial"
+    mechanism_590_verge_google_adversarial_litigation_boundary_replication:
+      mechanism_id: 590
+      iteration: 592
+      iteration_type: "A"
+      iteration_time: "2026-09-07 17:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      entity_pair: "Google vs Meta"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        PMC (The Verge parent) sues Google on TWO fronts: AI Overviews
+        (D.D.C., Sep 2025, first major publisher suit on AI search summaries)
+        and adtech (SDNY, Jan 2026), while Vox Media admits in its SDNY
+        complaint that it relies on digital advertising for well over half
+        its revenue. The naive negative-sign prediction says Verge Google
+        coverage should run adversarial across all domains. Observed: Verge
+        non-litigation Google coverage (May-Jul 2026, n=3) runs
+        neutral-to-product-forward (avg -0.0833) while same-window Verge
+        Meta glasses coverage runs adversarial (avg -0.55, Victoria Song
+        columns). Illustrative delta +0.4667, n.s. This replicates the NYT
+        #471 boundary condition at a second adversarial-posture publication:
+        adversarial financial posture predicts adversarial tone WITHIN the
+        litigation domain only. The adversarial-posture confound named in
+        #492 is now resolved as domain-bounded, not entity-wide.
+      finding: >
+        (1) PMC's dual Google lawsuits (AI Overviews Sep 2025, adtech Jan
+        2026) constitute the strongest adversarial publisher-entity posture
+        in the corpus, stronger than NYT's single OpenAI suit in #471.
+        (2) Within the litigation domain, Verge coverage is adversarial by
+        plaintiff position, as the theory predicts; this domain is not
+        re-scored here. (3) OUTSIDE the litigation domain, three Verge
+        Google items from May-Jul 2026 show no adversarial bleed: the
+        Google I/O 2026 Android XR glasses news piece (slug-descriptive,
+        cited as primary by Glass Almanac), the May 19 2026 Gemini sparkle
+        icon Docs/Workspace piece (descriptive news per attesting
+        aggregator quote), and Preston's Jul 22 2026 Samsung/Google
+        glasses hands-on (dek-level privacy equivalence, carried from
+        #492). (4) The same window's Verge Meta glasses set (Song Jul 7
+        LED-tamper, Jul 20 "pervert glasses" editorial, late-Jul "holds
+        all the cards" opener with activist "mass surveillance predator
+        glasses" language) runs -0.55 average adversarial. (5) Lane
+        contrast with #547: WIRED's Google/Samsung camera-glasses coverage
+        ran -0.773 adversarial in the same product lane where The Verge
+        runs product-forward, so the softening is publication-specific,
+        not lane-determined. (6) Consistent with #557 (Verge x Anthropic
+        aspirational +0.483 vs Meta deficit): Vox/PMC's deal and lawsuit
+        portfolio does not mechanically set Verge entity tone outside the
+        relationship domain. Correlation is not causation; n=3 vs n=3 is
+        directional, not dispositive. Cross-references: 492 (predecessor
+        gradient plus named confound, now resolved), 471 (NYT boundary
+        condition replicated), 589 (Ziff Davis negative-sign family, second
+        boundary pin), 557 (Verge Anthropic), 547 (WIRED Google lane
+        contrast).
+      articles:
+        - entity: "google"
+          title: "The Verge Google I/O 2026 Android XR glasses piece (exact headline not verified; slug-derived)"
+          date: "2026-05"
+          author: "The Verge"
+          url: "https://www.theverge.com/tech/933125/android-xr-samsung-warby-parker-gentle-monster-project-aura-xreal-google-io-2026"
+          register: "neutral_news_explainer"
+          manual_illustrative_tone: 0.0
+          key_phrases:
+            - "Android XR"
+            - "Warby Parker"
+            - "Gentle Monster"
+            - "Project Aura"
+            - "Xreal"
+            - "Google I/O 2026"
+          verification: "URL verbatim from search-result full-URL listing (Glass Almanac sources); theverge.com policy-blocked for direct fetch this run; register inferred from descriptive slug and primary-citation context, NOT first-hand body text"
+          evidence_tier: "slug_plus_citation_context"
+        - entity: "google"
+          title: "Google I/O 2026 Gemini sparkle icon Docs/Workspace piece (exact headline not verified)"
+          date: "2026-05-19"
+          author: "The Verge"
+          url: "https://www.theverge.com/tech/931752/google-io-2026-gemini-icon-docs-workspace"
+          register: "descriptive_news"
+          manual_illustrative_tone: -0.05
+          key_phrases:
+            - "sparkle icon"
+            - "no longer a niche feature"
+            - "new standard for Google's productivity ecosystem"
+          verification: "URL verbatim from search-result full-URL listing (ai.nidal.cloud attribution quote: 'As reported by The Verge on May 19, 2026'); theverge.com policy-blocked; register from attesting aggregator's neutral descriptive quote, NOT first-hand body text"
+          evidence_tier: "attested_secondary_quote"
+        - entity: "google"
+          title: "Here is what Samsung's smart glasses actually look like"
+          date: "2026-07-22"
+          author: "Dominic Preston"
+          url: "https://technewstube.com/theverge/1852147/samsungs-smart-glasses-actually-look-like/"
+          register: "product_forward_hands_on_with_dek_privacy_equivalence"
+          manual_illustrative_tone: -0.2
+          key_phrases:
+            - "With a camera on every pair, Google's and Samsung's AI glasses face the same privacy problems as Meta's"
+            - "impressive 9-hour battery life"
+          verification: "Carried from #492; mirror of theverge.com piece, theverge.com policy-blocked; dek quotes Google by name at the privacy-problems frame"
+          evidence_tier: "mirror_verified_492"
+        - entity: "meta"
+          title: "Meta Ray-Ban glasses will disable the camera if the privacy light is tampered with"
+          date: "2026-07-07"
+          author: "Victoria Song"
+          url: null
+          register: "adversarial_origin_story"
+          manual_illustrative_tone: -0.55
+          key_phrases:
+            - "LED-tamper"
+          verification: "Carried from #492 meta_comparator_set; no verbatim URL in corpus for this Song item; scored at headline/excerpt level per #492"
+          evidence_tier: "carried_492_no_verbatim_url"
+        - entity: "meta"
+          title: "Leaning into 'pervert glasses' sure is a choice"
+          date: "2026-07-20"
+          author: "Victoria Song"
+          url: null
+          register: "adversarial_editorial"
+          manual_illustrative_tone: -0.6
+          key_phrases:
+            - "pervert glasses"
+          verification: "Carried from #492 meta_comparator_set; no verbatim URL in corpus for this Song item; scored at headline/excerpt level per #492"
+          evidence_tier: "carried_492_no_verbatim_url"
+        - entity: "meta"
+          title: "With smart glasses, Meta holds all the cards but fails to play them well"
+          date: "2026-07-26"
+          author: "Victoria Song"
+          url: "https://www.aivanet.com/2026/07/with-smart-glasses-meta-holds-all-the-cards-but-fails-to-play-them-well/"
+          register: "adversarial_backlash_narrative"
+          manual_illustrative_tone: -0.5
+          key_phrases:
+            - "mass surveillance predator glasses"
+            - "biggest advancement in pervert technology since the trenchcoat"
+          verification: "Carried from #492 meta_comparator_set; mirror URL verbatim in-corpus (article_examples); opens with activist guerrilla-ad language"
+          evidence_tier: "mirror_in_corpus_492"
+      litigation_domain_control:
+        note: "Within the litigation domain the adversarial prediction HOLDS and is not re-tested here: PMC v. Google AI Overviews (D.D.C. Sep 2025) and PMC/SheMedia v. Google adtech (SDNY Jan 2026) are plaintiff-position coverage, adversarial by construction. The mechanism tests ONLY non-litigation-domain coverage."
+        ai_overviews_suit: "PMC v. Google, D.D.C., Sep 2025"
+        adtech_suit: "PMC/SheMedia v. Google, SDNY, Jan 2026"
+        source_url: "https://www.reuters.com/sustainability/boards-policy-regulation/rolling-stone-billboard-owner-penske-sues-google-over-ai-overviews-2025-09-14/"
+      asymmetry_scorer_result:
+        target_entity: "google"
+        peer_entities: ["meta"]
+        target_scores_illustrative: [0.0, -0.05, -0.2]
+        peer_scores_illustrative: [-0.55, -0.6, -0.5]
+        target_avg_tone: -0.0833
+        peer_avg_tone: -0.55
+        asymmetry_score: 0.4667
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        confidence_interval: "NOT_CALCULATED"
+        is_significant: false
+        scorer: "mediascope/score/asymmetry.py calculate_asymmetry, run on illustrative arrays in test file"
+        methodology: "MANUAL ILLUSTRATIVE ONLY: synthetic tone arrays encoding observed register (neutral/product-forward vs adversarial), not observed corpus measurements. No empirical significance claimed. Delta sign is POSITIVE (Google coverage less adversarial than Meta coverage) despite PMC suing Google twice: the inversion that bounds the theory. correlation_not_causation."
+      statistical_discipline: >
+        MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=3 vs n=3;
+        p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, confidence_interval
+        NOT_CALCULATED; is_significant False. Delta +0.4667 is inside the
+        illustrative band: directional, not dispositive. Requires Welch
+        t-test plus Cohen d plus bootstrap CI on observed article-level
+        tone scores for empirical validation. DO NOT claim empirical
+        significance.
+      confounders:
+        - "STRONG: evidence-tier asymmetry - Google-side items characterized from slugs, citation context, and mirrors (theverge.com policy-blocked); Meta-side from #492 excerpt-level scores. The +0.4667 delta leans on thinner Google evidence."
+        - "STRONG: product-maturity and news-peg asymmetry - Meta glasses shipped (7M+ units 2025) with documented misuse incidents, lawsuits, and LED-tamper mods; Google glasses pre-launch at Jul 2026 with no incident record. Adversarial escalation tracks available news pegs, same as #492."
+        - "STRONG: author and genre difference - Song writes opinion-forward reviewer columns; the Google items are news explainers and a Preston hands-on. Register gap may be genre-driven."
+        - "MODERATE: Vox-OpenAI deal and Microsoft PCM leg do not cover Google; PMC-Google relationship is purely adversarial litigation plus ad-exchange dependence, so no competing softening incentive is unmeasured on the Google side."
+        - "MODERATE: timing - Google items May-Jul 2026 vs Meta items Jul 2026; one-month skew."
+        - "MODERATE: litigation-domain boundary is itself a theory commitment; defining the domain post hoc risks circularity (adversarial items labeled in-domain, neutral items out-of-domain)."
+        - "WEAK: unmeasured Google ad-revenue dependence of Vox/PMC (Search traffic, exchange) could soften Google coverage independent of the lawsuit posture."
+        - "WEAK: dek and headline authorship - deks are often editor-written, so the Preston dek equivalence may be desk-level, not author-level."
+      counter_evidence:
+        - "The +0.4667 delta sits inside the illustrative band with n=3 vs n=3: directional only."
+        - "Preston's dek DID apply privacy-problems vocabulary to Google by name, the one dek-level adversarial datum (-0.2); adversarial posture is not zero outside litigation, it is dek-confined."
+        - "Neutral non-litigation coverage is also consistent with editorial independence, not only with domain-bounded incentives; the mechanism cannot distinguish the two."
+        - "illustrative-band: all deltas in this unit are hand-scored and non-empirical per the Aug 28 standing rule."
+      distinct_from:
+        - "#492 (same publication pair): resolves #492's named adversarial-posture confound as litigation-domain-bounded; #492 scored the gradient, this unit scores the boundary."
+        - "#471 (NYT x OpenAI): this is a REPLICATION of the #471 boundary condition at a second publication with a stronger adversarial posture (two suits vs one), not a duplication."
+        - "#547 (WIRED x Google/Samsung -0.773): lane contrast; WIRED is adversarial in the camera-glasses lane where The Verge is product-forward, bounding the claim as publication-specific."
+        - "#557 (Verge x Anthropic +0.483): same-publication, different-entity unit; no double counting of Verge Meta comparators across units (Meta set carried from #492, scored once there)."
+      research_method: >
+        3 browser.search query sets this run (Verge Google Android XR
+        hands-on 2026; theverge.com Google Gemini 2026; Verge Android XR
+        Project Aura I/O 2026). theverge.com direct fetch policy-blocked
+        (browser.open fails); characterization uses slug-derived titles,
+        attesting-secondary quotes (ai.nidal.cloud May 19 2026 quote),
+        and #492-verified mirrors. No zero-coverage claims per
+        iteration-492 rule: all three Google items exist as named pieces
+        with verbatim URLs from search-result full-URL listings; two Song
+        Meta comparators lack verbatim URLs and are carried from #492 with
+        url null and explicit evidence-tier labels. No canonical URLs
+        constructed. Pre-commit greps: zero test_type_a_592 files; zero
+        "Type A #592:" commits; zero mechanism_590 keys before insertion.
+      source_urls:
+        - "https://www.theverge.com/tech/933125/android-xr-samsung-warby-parker-gentle-monster-project-aura-xreal-google-io-2026"
+        - "https://www.theverge.com/tech/931752/google-io-2026-gemini-icon-docs-workspace"
+        - "https://technewstube.com/theverge/1852147/samsungs-smart-glasses-actually-look-like/"
+        - "https://www.aivanet.com/2026/07/with-smart-glasses-meta-holds-all-the-cards-but-fails-to-play-them-well/"
     mechanism_492_verge_google_samsung_glasses_149_correction_privacy_equivalence_dek:
       mechanism_id: 492
       iteration: 492

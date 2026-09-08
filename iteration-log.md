@@ -1,3 +1,33 @@
+#592 Type A: The Verge x Google Adversarial-Litigation Boundary Replication - PMC Dual Lawsuits Do Not Bleed Into Non-Litigation Google Coverage (delta +0.4667 MANUAL ILLUSTRATIVE n.s.) - Sep 7 2026 17:00 PDT
+
+**Date:** 2026-09-07 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 591 E -> 592 A)
+**Type:** A - Competitor Coverage Deep Dive (The Verge x Google; mechanism #590; second adversarial-posture boundary pin after #471)
+
+**Finding:**
+1. PMC (The Verge's parent) sues Google on TWO fronts - AI Overviews (D.D.C., Sep 2025, first major publisher suit targeting AI search summaries) and adtech (SDNY, Jan 2026) - while Vox Media admits in its SDNY complaint that it "relies on digital advertising for well over half of its revenue." This is the strongest adversarial publisher-entity posture in the corpus, stronger than NYT's single OpenAI suit in #471.
+2. The naive negative-sign prediction says Verge Google coverage should run adversarial across all domains. Observed: Verge NON-LITIGATION Google coverage (May-Jul 2026, n=3) runs neutral-to-product-forward while the same window's Verge Meta glasses coverage runs adversarial.
+3. Google side (n=3): (a) the Google I/O 2026 Android XR glasses news piece https://www.theverge.com/tech/933125/android-xr-samsung-warby-parker-gentle-monster-project-aura-xreal-google-io-2026 - slug-descriptive, cited as primary by Glass Almanac, tone 0.0; (b) the May 19 2026 Gemini sparkle icon Docs/Workspace piece https://www.theverge.com/tech/931752/google-io-2026-gemini-icon-docs-workspace - attested by ai.nidal.cloud quote "As reported by The Verge on May 19, 2026, the 'sparkle icon' is no longer a niche feature; it is the new standard for Google's productivity ecosystem", tone -0.05; (c) Preston Jul 22 2026 Samsung/Google hands-on (carried from #492, technewstube mirror) with dek-level privacy equivalence naming Google, tone -0.2.
+4. Meta comparators (carried from #492 meta_comparator_set): Song Jul 7 LED-tamper (-0.55), Song Jul 20 "pervert glasses" editorial (-0.60), Song late-Jul "holds all the cards" opener with activist "mass surveillance predator glasses" language (aivanet mirror, -0.50). Two of three carry url null with explicit evidence-tier labels; no verbatim URLs in corpus, no URL construction.
+5. WHY IT MATTERS: this REPLICATES the NYT #471 boundary condition at a second adversarial-posture publication - adversarial financial posture predicts adversarial tone WITHIN the litigation domain only (plaintiff-position coverage, not re-scored here). It also resolves the adversarial-posture confound named in #492 as domain-bounded, not entity-wide. Lane contrast with #547: WIRED's Google/Samsung camera-glasses coverage ran -0.773 adversarial in the same product lane where The Verge runs product-forward, so the softening is publication-specific, not lane-determined.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Google target avg -0.0833 (0.0, -0.05, -0.2) vs Meta peer avg -0.55 (-0.55, -0.60, -0.50): delta +0.4667 (target-minus-peer), p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False. The delta sign is POSITIVE (Google coverage less adversarial than Meta coverage) despite PMC suing Google twice - the inversion that bounds the theory. Correlation is not causation; n=3 vs n=3 is directional, not dispositive.
+
+**Confounders Ranked:** STRONG: (1) evidence-tier asymmetry - Google items from slugs/citation context/mirrors (theverge.com policy-blocked), Meta items from #492 excerpt-level scores; (2) product-maturity/news-peg asymmetry - Meta glasses shipped 7M+ units with incidents vs Google pre-launch; (3) author/genre difference - Song opinion-forward columns vs news explainers/hands-on. MODERATE: (1) Vox-OpenAI deal and Microsoft PCM leg do not cover Google, no competing softening incentive unmeasured; (2) timing skew May-Jul vs Jul 2026; (3) litigation-domain boundary is itself a theory commitment, post-hoc domain definition risks circularity. WEAK: (1) unmeasured Google ad-revenue dependence (Search traffic); (2) dek authorship.
+
+**Counterevidence (4):** (1) delta inside the illustrative band, n thin; (2) Preston's dek DID name Google in the privacy-problems frame (-0.2) - adversarial posture is dek-confined, not zero, outside litigation; (3) neutral coverage is also consistent with editorial independence, indistinguishable here; (4) all tones hand-scored, non-empirical per Aug 28 rule.
+
+**Research method:** 3 browser.search query sets this run (Verge Google Android XR hands-on 2026; theverge.com Google Gemini 2026; Verge Android XR Project Aura I/O 2026). theverge.com direct fetch policy-blocked (browser.open fails); characterization from slug-derived titles, attesting-secondary quotes, and #492-verified mirrors. No zero-coverage claims per iteration-492 rule. No canonical URLs constructed: all four source URLs verbatim from search-result full-URL listings or in-corpus units. Pre-commit greps: zero test_type_a_592 files; zero "Type A #592:" commits; zero mechanism_590 keys before insertion.
+
+**New Type A files:** `tests/test_type_a_592_verge_google_adversarial_litigation_boundary_replication_sep07_5pm.py` - 7 classes, 41 tests, all passing.
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only boundary replication, significant False; second pin in the negative-sign boundary family (#471, #589).
+
+**Rotation Transparency:** Previous main commit #591 Type E at 16:00 PDT Sep 7 2026 (commit e76158b verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Selected Type A.
+
+**Novelty Verification:** Zero test_type_a_592 files on disk before this run (glob verified); no Type A #592 in git log (grep verified); zero mechanism_590 keys under the-verge.yaml competitor_relationships.google before insertion (verified this run); max pre-existing mechanism_id was 589.
+
+---
+
 #591 Type E: Podcast Sentiment 41st Verification - GF 498 Hold No 499, EHE 28-Day Hold, Attention Sphere FIRST POSITIVE IDENTITY (Advocacy Group, ED Kendall Schrohe), MediaNama IFF Khan Market Notice + WebProNews Altman-Rejects-Glasses New Surfaces - Sep 7 2026 16:00 PDT
 
 **Date:** 2026-09-07 16:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 590 D -> 591 E)
