@@ -1376,8 +1376,103 @@ editorial_leadership:
 
 key_journalists:
   - name: "Alex Hern"
-    beat: "UK technology editor"
-    known_patterns: "Critical of Big Tech, surveillance, AI hype. 12+ year tenure. Core stability anchor."
+    beat: "UK technology editor (2013 - Sep 2024; now AI writer at The Economist)"
+    known_patterns: "Critical of Big Tech, surveillance, AI hype. 11-year Guardian tenure ended Sep 2024 (farewell TechScape newsletter); joined The Economist as AI writer ~Oct 2024. MIGRATION CONFIRMED 2026-09-08: register-constancy mechanism 592."
+    cross_entity_coverage_analysis:
+      mechanism_592_alex_hern_migration_guardian_economist_register_constancy_sep08:
+        mechanism_id: 592
+        iteration: 598
+        iteration_type: "B"
+        iteration_time: "2026-09-08 00:00 PDT"
+        scheduled_job_id: "mediascope-daily-iteration"
+        goal_id: "goal_54093bda4145"
+        journalist: "Alex Hern"
+        publication_focus: "The Guardian (UK technology editor, ~2013 - Sep 2024) to The Economist (AI writer, ~Oct 2024 - present)"
+        type: "B - Journalist Cross-Entity Tracking (Guardian x Economist x Alex Hern, institutional-migration register-constancy class)"
+        driver_class: "Journalist-level accountability habit, NOT publication-driven and NOT financial-deal-driven: the adversarial register toward Meta AND OpenAI survives a move from a progressive daily broadsheet to a centrist subscription weekly, and the Guardian-OpenAI licensing deal (Feb 2025) POSTDATES his Sept 2024 departure, so no deal-softening pressure ever applied to his Guardian tenure. This is a journalist-level control for the financial theory, parallel in function to #472 (Bhuiyan within-Guardian discipline check) and #538 (Metz litigation-adversary symmetry), and the first Type B to take up the in-corpus journalists.yaml 'CRITICAL MIGRATION ... high-signal migration for the DiD analysis' flag."
+        status: "BASELINE: cross-institution register constancy observed at journalist level; directional, not dispositive (post-migration corpus is broadcast/podcast, not print bylines)"
+        finding_summary: "Hern's adversarial accountability register is constant across the institution change. Guardian-era (2013-2024): 2019 Meta fact-checking-guidelines scoop ('some fact checkers say they learned about the change only from Zuckerberg's testimony', Mediagazer-attributed Alex Hern/The Guardian); 2023 Meta WhatsApp Online Safety Bill refusal ('would refuse to comply with the UK's Online Safety Bill requirements to remove end-to-end encryption', Techmeme-attributed); Guardian Today in Focus metaverse episode calling the pitch 'the impossibility of it' and diagnosing 'the fear of the fact that Facebook relies on other people's platforms' plus 'Facebook is losing with young people' (Best of the Left transcript mirror). Economist-era (Oct 2024+): Babbage 'OpenAI's alarming escape' (Jul 29 2026) framing OpenAI's model breakout as 'the first ever fully autonomous AI hack' with Hern as The Economist's AI writer and his 'exclusive conversation with Demis Hassabis about AI regulation' promoted alongside; BBC Media Show (Sep 2026) with Hern as 'AI correspondent at The Economist' outlining implications of 'Meta reducing its investment in virtual-reality projects'; Times Radio Moltbook segment weighing 'the actual threat AI only social media platforms like Moltbook pose to the future of society'. The skepticism travels with the person, not the masthead."
+        migration:
+          guardian_role: "UK technology editor, ~2013 - September 2024 (11 years)"
+          economist_role: "AI writer, ~October 2024 - present (covers AI science/technology and quantum computing; alexhern@economist.com)"
+          farewell_evidence: "Muck Rack profile: 'this is my last newsletter... the end of my 11 years at the Guardian, almost to the week: my first day was the release of the iPhone 5S, and on 9 September we will see the launch of the iPhone 16'; in-corpus profiles/careers/journalists.yaml career record lists Economist start Oct 2024"
+          institutional_contrast: "progressive daily broadsheet (Guardian) to centrist subscription weekly (Economist)"
+          financial_temporal_boundary: "Guardian-OpenAI licensing partnership announced 2025-02-19 (in-corpus guardian.yaml), five months AFTER Hern's departure - no deal pressure applied during his Guardian tenure"
+        guardian_era_corpus:
+          - date: "2019-10-26"
+            headline: "Facebook updated fact-checking guidelines in August to include ads, but some fact checkers say they learned about the change only from Zuckerberg's testimony"
+            attribution: "Mediagazer-attributed (Alex Hern/The Guardian)"
+            register_note: "accountability scoop - fact-checkers blindsided, learned from testimony not the company"
+            illustrative_tone: -0.55
+            url: "https://mediagazer.com/191026/p4"
+          - date: "2023-03-09"
+            headline: "Meta's Head of WhatsApp, Will Cathcart, says the service would refuse to comply with the UK's Online Safety Bill requirements to remove end-to-end encryption"
+            attribution: "Techmeme-attributed (Alex Hern/The Guardian)"
+            register_note: "Meta refusal framed as regulatory confrontation; encryption-privacy beat alignment"
+            illustrative_tone: -0.45
+            url: "https://www.techmeme.com/230309/p20"
+          - date: "~2022-03"
+            headline: "Today in Focus #1467: No One Asked For The Next Big Thing (Metaverse)"
+            attribution: "Guardian podcast, Hern quoted in transcript (Best of the Left mirror)"
+            register_note: "metaverse pitch called 'the impossibility of it'; 'the fear of the fact that Facebook relies on other people's platforms'; 'Facebook is losing with young people'"
+            illustrative_tone: -0.55
+            url: "https://assets.nationbuilder.com/bestoftheleft/pages/5150/attachments/original/1644505335/_1467_No_One_Asked_For_The_Next_Big_Thing_%28Metaverse%29.pdf?1644505335"
+        economist_era_corpus:
+          - date: "2026-07-29"
+            headline: "OpenAI's alarming escape (Babbage, The Economist)"
+            attribution: "Acast episode listing; 'Alex Hern, The Economist's AI writer'"
+            register_note: "OpenAI model breakout framed as 'the first ever fully autonomous AI hack' and 'alarming'; Hern's 'exclusive conversation with Demis Hassabis about AI regulation' promoted alongside"
+            illustrative_tone: -0.55
+            url: "https://shows.acast.com/theeconomistbabbage/episodes/ai-catastrophe-could-be-around-the-corner"
+          - date: "2026-09"
+            headline: "BBC Media Show: Meta reducing VR investment"
+            attribution: "ivy.fm listing; 'Alex Hern, AI correspondent at The Economist'"
+            register_note: "'Meta is reducing its investment in virtual-reality projects and directing greater resources into AI... Alex Hern ... outline the implications' - skepticism-adjacent implications framing"
+            illustrative_tone: -0.35
+            url: "https://ivy.fm/tag/alex-hern"
+          - date: "2026"
+            headline: "Moltbook: AI Social Media a Flash in the Pan (Times Radio)"
+            attribution: "YouTube listing; 'The Economist's AI Writer, Alex Hern'"
+            register_note: "weighing 'the actual threat AI only social media platforms like Moltbook pose to the future of society' - AI-hype skepticism, company-agnostic"
+            illustrative_tone: -0.3
+            url: "https://www.youtube.com/watch?v=RaTeJXdGezM"
+        asymmetry_scorer_result:
+          scorer: "MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026)"
+          guardian_era_meta_avg: -0.5167
+          economist_era_avg: -0.4
+          cross_institution_delta: -0.1167
+          p_value: "NOT_CALCULATED"
+          cohens_d: "NOT_CALCULATED"
+          ci_95: "NOT_CALCULATED"
+          is_significant: false
+          correlation_not_causation: true
+          interpretation: "Delta -0.12 is within hand-scoring noise: register CONSTANCY across the institution change, not a gradient. Same journalist, two mastheads, adversarial accountability register toward both Meta and OpenAI."
+        confounders_ranked:
+          - "STRONG: evidence-tier asymmetry - Guardian-era items are written bylines via Techmeme/Mediagazer attributions; Economist-era items are broadcast/podcast appearances (Babbage, BBC Media Show, Times Radio), a weaker tier for print-register comparison"
+          - "STRONG: genre asymmetry - news scoops vs podcast guest commentary"
+          - "MODERATE: beat shift - platform regulation/social media (Guardian) to AI science/quantum (Economist)"
+          - "MODERATE: timing skew - 2019-2023 vs 2026"
+          - "WEAK: selection bias - broadcast bookings favor contrarian voices, may overstate constancy"
+          - "WEAK: employer-audience shift - Economist subscription weekly vs Guardian daily"
+        counterevidence:
+          - "Post-migration corpus is broadcast-only; no Economist print bylines surfaced in bounded search - print register could differ from broadcast register"
+          - "'Why the AI race won't have a winner' Mistral CEO Arthur Mensch interview (Economist YouTube, 2026) is a neutral industry-conversation register, not adversarial"
+          - "Hassabis 'exclusive conversation about AI regulation' is access-based, softer by construction"
+          - "Guardian-era Meta sample is n=3 with two items from relay attributions (secondary tier)"
+          - "Guardian-OpenAI deal (Feb 2025) postdates his departure, so his tenure never tested deal pressure - this is a boundary condition on the financial theory, not a falsification of it"
+        novelty: "Distinct from #472 (Bhuiyan within-Guardian discipline check, same-day pair, no migration); from the within-institution constancy family #548/#558/#563/#568/#588 (none cross institutions); from #85 (Welch migration block, Bloomberg source, financial-null); from #589-family migration notes. FIRST mechanism on Hern's Guardian-to-Economist migration, the in-corpus 'CRITICAL MIGRATION' flag. Rotation 597 A -> 598 B."
+        source_urls:
+          - "https://muckrack.com/alex-hern-8"
+          - "https://talkingbiznews.com/media-news/guardian-tech-editor-hern-is-departing/"
+          - "https://newsworks.org.uk/news-and-opinion/the-guardian-releases-new-flagship-technology-newsletter/"
+          - "https://champions-speakers.co.uk/speaker-agent/alex-hern"
+          - "https://mediagazer.com/191026/p4"
+          - "https://www.techmeme.com/230309/p20"
+          - "https://assets.nationbuilder.com/bestoftheleft/pages/5150/attachments/original/1644505335/_1467_No_One_Asked_For_The_Next_Big_Thing_%28Metaverse%29.pdf?1644505335"
+          - "https://shows.acast.com/theeconomistbabbage/episodes/ai-catastrophe-could-be-around-the-corner"
+          - "https://ivy.fm/tag/alex-hern"
+          - "https://www.youtube.com/watch?v=RaTeJXdGezM"
+        artifact_readiness: "No analysis.json update warranted. Illustrative-only scorer output; directional constancy finding, significant False."
   - name: "Dan Milmo"
     beat: "Global technology editor"
     known_patterns: "EU tech regulation, social media harms, AI policy. Since 2021."
@@ -2545,6 +2640,12 @@ editorial_history:
     left tech beat (2021), Kari Paul departed entirely (2024), Hibaq Farah left for NYT (2024),
     and Samantha Oltman's "Reworked" AI series lost its founding editor after only 4 months (2026).
     Core stability comes from Alex Hern (UK, since 2013) and Dan Milmo (global, since 2021).
+    MIGRATION UPDATE 2026-09-08 (mechanism 592, Type B #598): Hern departed the Guardian
+    in September 2024 after 11 years (farewell TechScape newsletter) and joined The
+    Economist as AI writer ~Oct 2024; his UK tech editor role needed
+    filling/restructuring, so the 'core stability' characterization for Hern is
+    historical as of Sep 2024. His adversarial register toward Meta and OpenAI is
+    constant across the migration (cross-institution constancy, illustrative delta -0.12).
     Blake Montgomery (US editor, since 2023) and Johana Bhuiyan (US reporter, since 2021) now
     anchor the US desk. NOTE: Kiran Stacey is the Guardian's UK POLICY editor covering British
     politics — NOT a tech reporter. Previously incorrectly listed as "US tech policy."
