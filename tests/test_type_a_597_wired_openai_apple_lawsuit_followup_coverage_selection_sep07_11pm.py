@@ -347,7 +347,7 @@ class TestNoBrittle:
 # POST_COMMIT_ANCHOR placeholder (guard class deselected pre-commit);
 # anchor patched in the followup commit per the #565 convention.
 class TestRotationCycleGuard597:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "f05c703"
 
     MAIN_COMMIT_PATTERN = re.compile(r"^Type [A-E] #\d+:")
 
