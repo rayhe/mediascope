@@ -17117,6 +17117,103 @@ journalists:
       research_method: '2 browser.search query sets this run (Mark Gurman Bloomberg Meta Ray-Ban Display review neural band October 2025; Mark Gurman Bloomberg Apple smart glasses like Meta Ray-Bans July 2026). All four source URLs verbatim from Full-URL listings. Meta characterization Techmeme-relay-bounded; Apple characterizations MacRumors/Slashdot/Road-to-VR-relay-bounded (Bloomberg originals paywalled/newsletter). No zero-coverage claims per iteration-492 rule. No canonical URLs constructed.'
       verdict: 'BOUNDARY/NULL pin for the financial theory: within one access-dependent journalist, the camera-glasses lane runs spec-critical for Meta (reviewable product, no access to preserve) and insider-aspirational for Apple (employee-sourced scoops, access to preserve). The deal gradient predicts nothing here (Bloomberg has no deals with either entity); the gap is access-explained. Joins the reporter-level falsification/alternative-driver family with #538 (Metz) and the genre-boundary family with #588 (Stein). Illustrative only, significant False.'
 
+- career:
+  - end: '2025-02'
+    notes: 'Hardware Editor at TechCrunch until early 2025, per the current TechCrunch author-bio page. Prior stops: Engadget, PCMag, Laptop, Tech Times (Managing Editor). Bylines also in Spin, Wired, Playboy, Entertainment Weekly, The Onion, Boing Boing, Publishers Weekly, The Daily Beast.'
+    publication: techcrunch
+    role: hardware_editor
+  - beat: interview podcast, tech culture
+    end: present
+    notes: 'Hosts the weekly Boing Boing interview podcast RiYL; appears as a regular NPR contributor.'
+    publication: boing-boing
+    role: podcast_host
+  multi_publication: true
+  name: Brian Heater
+  notes: 'TechCrunch hardware editor through early 2025 with a hands-on, design-forward, first-person hardware register. KEY ANALYTICAL VALUE: one writers desk carries Meta glasses coverage (Ray-Ban Meta review Oct 2023, Orion announcement Sep 2024) beside Apple coverage (Vision Pro Day One Feb 2024) and a comparative Snap dig (Spectacles 5 inside the Orion piece) - a compact three-entity natural experiment inside a single hardware-editor voice, time-bounded by his early-2025 TechCrunch departure, which leaves no post-departure TechCrunch series to extend.'
+  source_urls:
+  - https://techcrunch.com/2024/09/25/meta-teases-orion-the-most-advanced-glasses-the-world-has-ever-seen
+  - http://techcrunch.com/2023/10/17/ray-ban-meta-review/1200
+  - https://techcrunch.com/2024/01/31/apple-vision-pro-day-one/
+  mechanism_602_brian_heater_techcrunch_meta_vs_apple_hands_on_register_constancy_sep08:
+    iteration: 613
+    type: B
+    date: '2026-09-08 16:00 PDT'
+    job_id: mediascope-daily-iteration
+    goal: goal_54093bda4145
+    mechanism_id: 602
+    title: 'Type B #613: Brian Heater (TechCrunch, hardware editor until early 2025) cross-entity register constancy - Meta Ray-Ban Meta review (Oct 2023) + Meta Orion (Sep 2024) vs Apple Vision Pro Day One (Feb 2024); body register constant (hands-on, design-forward, self-deprecating), two bounded headline/price-framing divergences; CONSTANCY pin for the financial theory, directional only'
+    novelty_note: 'First dedicated Type B block on Brian Heater. Zero "brian heater"/"Brian Heater" hits in tests/*.py, profiles/*.yaml, docs, scripts, README.md, ARCHITECTURE.md pre-commit (bounded greps this run). Zero test_type_b_613 files on disk (glob). No #613 in git log. No existing careers entry - created this run. Mechanism id 602 is the next free profiles mechanism id (max pre-commit 601, wired.yaml #612). Distinct from #593 (Gurman: same three-entity glasses-lane shape, but access-economics asymmetry verdict; Heater is the constancy-side sibling with headline/price-framing divergences only) and #588 (Stein: hands-on genre-boundary convention, constancy sibling on CNET). Rotation: 612 A -> 613 B.'
+    design: 'Within-journalist cross-entity comparison: Brian Heater (TechCrunch hardware editor through early 2025) on Meta vs Apple in the glasses/headset lane, Oct 2023 - Sep 2024. Tests the financial-deal gradient prediction - TechCrunch has no documented AI content-licensing deals with Meta or Apple in-corpus, so the gradient predicts a NULL gap - against the observed register. Body-register constancy vs headline/price-framing divergences are tracked separately: the finding layer distinguishes (a) review-body register (constant, hands-on, design-forward) from (b) headline register and (c) price framing (the two bounded divergences).'
+    meta_arm:
+      rayban_meta_review:
+        piece: 'Ray-Ban Meta sunglasses have "influencer" written all over them (TechCrunch, Oct 17 2023; Heater-authored, first-hand field review: JFK airport, Seattle/Pike Place livestreams, photo stills)'
+        tone_illustrative: -0.10
+        framing_notes: 'Snide headline register ("influencer written all over them") sits atop a design-positive body: "genuinely impressed by the industrial design", "surprisingly few concessions", "a lot of clever touches", "a cinch to use". Price-value caveat: "$299... It''s a lot to pay, however, for sheer novelty". Privacy register is Meta-favorable: the recording LED is "extremely necessary" and "privacy is paramount for a device like this" frames Meta''s tamper-evident design as doing it right.'
+        source_url: http://techcrunch.com/2023/10/17/ray-ban-meta-review/1200
+        source_note: 'First-hand fetch this run; authorship confirmed by image credit "Brian Heater" in the article gallery and the byline bio block.'
+      orion:
+        piece: 'Meta teases Orion, brain-powered true AR glasses in a tiny package (TechCrunch, Sep 25 2024; Connect announcement news piece)'
+        tone_illustrative: 0.10
+        framing_notes: 'Neutral-technical headline; straight news with bounded skepticism ("don''t appear to be too far beyond the concept phase", "$10,000 per unit" cost cited as one of the "bumps along the road"). Closing is Meta-favorable: "hard to accuse Zuckerberg of hyperbole when compared to the likes of Snapchat Spectacles on one end and Apple''s Vision Pro on the other". Carries the sharpest entity-comparative dig of the three pieces, and it lands on Snap: Spectacles 5 are "extremely large with a very narrow FOV" vs Orion "strikingly smaller".'
+        source_url: https://techcrunch.com/2024/09/25/meta-teases-orion-the-most-advanced-glasses-the-world-has-ever-seen
+        source_note: 'First-hand fetch this run; author bio block ("Hardware Editor at TechCrunch until early 2025") confirms the departure date used in the career entry.'
+    apple_arm:
+      vision_pro_day_one:
+        piece: 'Apple Vision Pro: Day One (TechCrunch, Feb 1 2024; @bheater; launch-day second-person setup diary)'
+        tone_illustrative: 0.20
+        framing_notes: 'Cozy second-person launch diary; $3,500 justified via R&D apologia ("it''s a first-gen product. Manufacturing isn''t at full consumer scale and you''ve got to factor in the millions poured into seven or eight years of R&D"). Self-deprecating Persona jokes ("talking thumb with a huffing addiction", "fuzzy Max Headroom") and a motion-sickness caveat keep it playful, not pure puffery. Headline is neutral-service ("Day One"), not social-frame.'
+        source_url: https://techcrunch.com/2024/01/31/apple-vision-pro-day-one/
+        source_note: 'First-hand fetch this run; embedded TechCrunch tweet quotes "@bheater''s experience with the Vision Pro", confirming Heater authorship.'
+    snap_context:
+      piece: 'Snap Spectacles 5 digs inside the Orion piece (same URL as the orion arm) - "strikingly smaller than Snap''s recently announced Spectacles 5"; Spectacles 5 are "extremely large with a very narrow FOV".'
+      scoring: 'NOT_SCORED - comparative context only, not a scored arm; the piece belongs to Meta''s arm.'
+      source_url: https://techcrunch.com/2024/09/25/meta-teases-orion-the-most-advanced-glasses-the-world-has-ever-seen
+    price_framing_divergence:
+      apple: 'Vision Pro $3,500 justified via explicit R&D apologia ("millions poured into seven or eight years of R&D").'
+      meta_rayban: 'Ray-Ban Meta $299 framed as value-caveat ("It''s a lot to pay, however, for sheer novelty") - no R&D apologia.'
+      meta_orion: 'Orion''s $10,000/unit build cost cited as a "bump along the road", "nothing nearly that astronomical" vs Quest losses - no R&D apologia.'
+      note: 'Bounded to price-sentences only; the body registers otherwise stay design-forward and hands-on across entities.'
+    headline_register_divergence:
+      meta_rayban: '"Ray-Ban Meta sunglasses have ''influencer'' written all over them" - snide social-use-case frame.'
+      apple: '"Apple Vision Pro: Day One" - neutral-service frame.'
+      meta_orion: '"Meta teases Orion, brain-powered true AR glasses in a tiny package" - neutral-technical frame.'
+      note: 'Headline divergence is bounded to the Ray-Ban review; the Orion Meta headline is register-matched to the Apple piece.'
+    illustrative_delta:
+      convention: 'Meta minus Apple'
+      meta_scores: [-0.10, 0.10]
+      meta_avg: 0.0
+      apple_scores: [0.20]
+      apple_avg: 0.20
+      delta: -0.20
+    asymmetry_scorer_result_illustrative:
+      engine: 'welch_t_test([-0.10, 0.10], [0.20]) -> (t=0.0, p=1.0); degenerate guard fires on the n=1 apple arm (t-path guarded per the #603 pin). cohens_d([-0.10, 0.10], [0.20]) -> -1.414213562373095 (nonzero): the ASYMMETRIC n=2 vs n=1 variant mirroring the #593/#607 asymmetric variant - documented as a mirror, NOT a new pin, per the #610 taxonomy.'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_discipline: 'MANUAL ILLUSTRATIVE per standing rule Aug 28 2026; correlation_not_causation.'
+    verdict: 'CONSTANCY pin for the financial theory: Heater applies one hands-on, design-forward, first-person register to Meta and Apple alike (body-level constancy: field testing, design praise, self-deprecating humor, use-case caveats for both entities). The two observed divergences - (1) headline register (snide "influencer" for Meta Ray-Ban vs neutral "Day One" for Apple) and (2) price framing (R&D apologia for Apple $3,500 vs value-caveat for Meta $299 vs bump-citation for Orion $10K) - are bounded to framing layers above the body register and are both genre-plausible (review-vs-launch-diary). Joins the reporter-level falsification/alternative-driver constancy family with #538 (Metz), #548 (Mehrotra), #553 (Haskins), #563 (Heath), #568 (Frier), #578 (Bogost), #583 (Lopatto), #588 (Stein), #608 (Hart). Illustrative only, significant False, directional not dispositive.'
+    confounders:
+    - '[STRONG] Genre skew: the Ray-Ban Meta piece is a shipped-product REVIEW (price-value caveats genre-conventional, the standing #593 genre boundary); Vision Pro Day One is a launch-day service diary (cozy second-person register launch-genre-conventional). The headline/price divergence may be genre-driven, not entity-driven.'
+    - '[STRONG] Timing skew: Oct 2023 (pre-launch review of Ray-Ban Meta Gen 2) vs Feb 2024 (Vision Pro launch day) vs Sep 2024 (Orion announcement). Three distinct product-cycle moments with different news values.'
+    - '[MODERATE] The "influencer" headline is consistent with Heater''s established wry-headline voice (his bylines include The Onion); the Vision Pro second-person diary is launch-diary voice. Register may be genre voice, not entity favoritism.'
+    - '[WEAK] Time-bounded corpus: Heater left TechCrunch in early 2025, so no within-journalist post-departure update is possible; the series cannot be extended at TechCrunch.'
+    counterexamples:
+    - 'Heater''s Orion piece elevates Meta over BOTH competitors: "strikingly smaller than Snap''s recently announced Spectacles 5" and "hard to accuse Zuckerberg of hyperbole when compared to the likes of Snapchat Spectacles on one end and Apple''s Vision Pro on the other" - a within-journalist Meta-favorable comparison, counter to any uniform anti-Meta register claim.'
+    - 'The Ray-Ban Meta review praises Meta''s privacy design: the recording LED is "extremely necessary" and "privacy is paramount for a device like this" frames Meta''s tamper-evident design as doing it right - the privacy-critical register is pro-design here, not hostile.'
+    - 'The Vision Pro piece is not pure puffery: the Persona gets "talking thumb with a huffing addiction" and "fuzzy Max Headroom"; motion sickness is flagged at the end. The register is excusing and playful, not uncritical.'
+    research_method: '3 browser.search query sets + 3 first-hand TechCrunch page fetches this run (Orion Sep 2024 announcement, Ray-Ban Meta review Oct 2023, Vision Pro Day One Feb 2024); all three URLs verbatim from Full-URL listings; authorship verified from the TechCrunch bio/image-credit/tweet block on each page (Heater image credit, @bheater quote, author bio). No zero-coverage claims per iteration-492 rule. No canonical URLs constructed.'
+    artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; constancy pin feeding the reporter-level falsification/alternative-driver family.'
+    block_key: type_b_613_brian_heater_techcrunch_meta_apple_hands_on_constancy
+    cross_refs:
+    - '#593 (Gurman: same three-entity glasses-lane shape, access-economics asymmetry verdict; Heater is the constancy-side sibling - opposite verdict, same standing #593 genre boundary)'
+    - '#588 (Stein: hands-on genre-boundary convention, constancy sibling on CNET)'
+    - '#538/#548/#553/#563/#568/#578/#583/#608 (reporter-level falsification/alternative-driver constancy family)'
+    - '#603 (Joanna Stern: cross-entity inversion magnitude contrast - Stern inverts +0.55 to -1.25 on migration; Heater holds constancy within one desk)'
+    - '#599 (Victoria Song: writer-level behavioral pin - Heater contrasts as a constancy-side pin)'
+    author: 'Kit (with Ray)'
+    test_file: tests/test_type_b_613_brian_heater_techcrunch_meta_apple_hands_on_constancy_sep08_4pm.py
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
