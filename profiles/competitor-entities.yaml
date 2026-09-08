@@ -18442,3 +18442,112 @@ ziff_davis_openai_lawsuit_adversarial_incentive_589:
     date: '2026-09-07 14:00 PDT'
     yaml_parse_clean: true
     ascii_only: true
+news_corp_five_leg_ai_revenue_architecture_594:
+  mechanism_id: 594
+  iteration: 594
+  iteration_type: C
+  type: financial_incentive_mapping
+  type_label: Financial Incentive Mapping
+  rotation: 'Type C'
+  date_analyzed: '2026-09-07'
+  time_pdt: '19:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'News Corp five-leg AI revenue architecture (Sep 2026 status verification) - OpenAI + Meta + Microsoft/HarperCollins + Anthropic settlement + Bloomberg expanded Dow Jones AI rights; densest AI-revenue stack of any tracked-publication owner'
+  overview: 'First dedicated aggregation mechanism for News Corp''s AI revenue stack. The owner of tracked publication The Wall Street Journal (profiles/news-corp.yaml) collects AI revenue through five distinct channels as of Sep 2026: (1) OpenAI news licensing, $250M over 5 years, May 2024 (mechanism 519); (2) Meta news licensing, up to $50M/yr, 3-year, Mar 4 2026 (mechanism 549); (3) Microsoft book licensing via HarperCollins, $5,000/title split 50/50 author/publisher, 3-year term, Nov 2024, Bloomberg-reported via anonymous sources and never officially confirmed (mechanism 524); (4) Anthropic copyright-settlement share, expected payout ''starting later this calendar year'' per Thomson on the Q2 FY2026 call, class action approved Jul 20 2026, $1.5B pool, $3,000 per work (profiles/news-corp.yaml); (5) Bloomberg expanded AI-rights deal for Dow Jones content, announced on the Q2 FY2026 earnings call Feb 5 2026 - NEW TO CORPUS, verified first-hand this run via the MarketBeat earnings transcript. Profile-level notes in news-corp.yaml listed four legs but no mechanism block existed. Structural sibling: mechanism 539 (Dotdash Meredith triple-payer).'
+  legs:
+    openai_leg:
+      partner: 'OpenAI'
+      announced: '2024-05-22'
+      value: '$250M over 5 years'
+      scope: 'News Corp US/UK news content for training and ChatGPT display with attribution'
+      mechanism: 519
+    meta_leg:
+      partner: 'Meta'
+      announced: '2026-03-04'
+      value: 'up to $50M/yr, 3-year'
+      scope: 'News Corp US/UK news content for Meta AI training and retrieval; archives included; Australian mastheads excluded'
+      mechanism: 549
+    microsoft_leg:
+      partner: 'Microsoft (HarperCollins)'
+      announced: '2024-11-19'
+      value: '$5,000 per title, 50/50 author/publisher split, 3-year term'
+      scope: 'HarperCollins backlist nonfiction for training an undisclosed Microsoft AI model; author opt-in required; output capped at 200 consecutive words or 5% of book text; Microsoft identity Bloomberg-reported via anonymous sources, never officially confirmed'
+      mechanism: 524
+    anthropic_leg:
+      partner: 'Anthropic'
+      channel: 'settlement_revenue'
+      approved: '2026-07-20'
+      value: 'share of $1.5B class-action settlement, $3,000 per work'
+      status: 'Thomson on the Q2 FY2026 call Feb 5 2026: ''We and our authors at HarperCollins naturally expect to receive our fair share of that payout starting later this calendar year''; Sep 6 2026 TechCrunch: publishers including HarperCollins asserting claims on author payments, including reverted-rights titles (April Henry example), distribution-phase friction'
+    bloomberg_leg:
+      partner: 'Bloomberg'
+      announced: '2026-02-05'
+      announcement_channel: 'News Corp Q2 FY2026 earnings call'
+      value: 'undisclosed'
+      scope: 'expanded AI rights for Dow Jones content'
+      verbatim: 'We are establishing new AI partnerships, which we expect to generate additional revenues, including an expanded deal with Bloomberg for AI rights for our peerless Dow Jones content.'
+      read_first_hand: true
+      read_date: '2026-09-07'
+      corpus_status: 'NEW TO CORPUS - zero mentions in profiles/competitor-entities.yaml and iteration-log.md before this run (grep verified)'
+      bloomberg_posture_note: 'qualifies mechanism 85''s Bloomberg financial-null baseline on the buyer side: Bloomberg LP, previously mapped as Terminal-revenue-driven with zero documented AI licensing deals, is now a disclosed AI-rights BUYER from News Corp'
+  thomson_doctrine:
+    input_company: 'Q3 FY2026 call May 7 2026: ''We are an AI inputs company, and that fact was reflected in our recent deal with Meta, which complements our partnership with OpenAI.'' ''Semiconductors are inputs. Energy is an input. Editorial is an absolutely essential input.'''
+    pipeline: 'Q3 FY2026 call May 7 2026: ''We are negotiating several further deals with companies who recognize the preciousness of our provenance and which should have a positive impact on our revenue and profitability.'''
+    woo_and_sue: 'Morgan Stanley TMT conference Mar 2026: ''We have what you might call a woo and a sue strategy. We will woo you. We would like you to be our partner. But if you are stealing our stuff, we are going to sue you.'' (Engadget)'
+    vertical_ai: 'Q3 FY2026 call May 7 2026: ''We are also seeing a rapid proliferation of vertical specialist AI companies focusing on specific segments. We believe this is a whole new generation of opportunity for our companies, whether our mastheads, HarperCollins, or Digital Real Estate.'''
+    factiva_genai: 'Q2 FY2026 call Feb 5 2026: Factiva GenAI capabilities bolstered with expanded licensing rights from more than 8,000 premium news and business information sources'
+  directional_predictions:
+    - 'OpenAI softer (direct payer, $250M/5yr - deepest news-licensing leg)'
+    - 'Meta softer (direct payer, $50M/yr) - this NEUTRALIZES any Meta-adversarial prediction for WSJ; News Corp is the dual-payer template per #519/#549'
+    - 'Microsoft softer-to-neutral (HarperCollins book leg, Bloomberg-anonymous, never officially confirmed - weak transmission to WSJ newsroom)'
+    - 'Anthropic softer-to-neutral (settlement is involuntary litigation payout, not a cooperative licensing deal - one-time financial interest, not ongoing partnership)'
+    - 'Bloomberg softer-to-neutral (buyer-side tie: Bloomberg pays News Corp for Dow Jones AI rights)'
+    - 'Google harder-to-neutral ($0 AI legs; adversarial search-traffic history)'
+    - 'Apple neutral ($0 AI licensing; Apple News+ is distribution, not AI licensing)'
+  predictions_not_findings: true
+  ranked_confounders:
+    - rank: 1
+      strength: strong
+      confounder: 'Bloomberg leg terms undisclosed - size, scope, and payment structure unknown; an expanded rights deal of nominal value creates no meaningful dependency'
+    - rank: 2
+      strength: strong
+      confounder: 'Anthropic leg is involuntary litigation payout, not a cooperative licensing deal - the incentive channel is one-time compensation, not ongoing partnership softening'
+    - rank: 3
+      strength: strong
+      confounder: 'newsroom independence - Dow Jones editorial independence from the corporate licensing operation is the standing claim; no documented editorial directive links licensing revenue to coverage decisions'
+    - rank: 4
+      strength: moderate
+      confounder: 'Thomson quotes are CEO salesmanship on earnings calls - the ''input company'' doctrine is investor positioning, not an audited revenue figure'
+    - rank: 5
+      strength: moderate
+      confounder: 'Microsoft leg identity is Bloomberg-anonymous-source only, never officially confirmed - the channel may not exist as stated'
+    - rank: 6
+      strength: weak
+      confounder: 'single-source transcript (MarketBeat) for the Bloomberg expansion - no second primary source; bounded per iteration-492 rule'
+  statistical_discipline:
+    scope: 'qualitative structural mapping only'
+    correlation_not_causation: true
+    p_value: 'NOT_CALCULATED'
+    cohens_d: 'NOT_CALCULATED'
+    ci_95: 'NOT_CALCULATED'
+    is_significant: false
+    tone_scores: 'NOT_SCORED'
+  correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. Aggregation across five legs compounds the correlational discipline, it does not convert it into proof. No causal claim.'
+  cautious_language_required: true
+  no_coverage_tone_claim: true
+  sources:
+    - 'https://www.marketbeat.com/earnings/reports/2026-2-5-news-co-stock-1/'
+    - 'https://www.MarketBeat.com/earnings/reports/2026-5-7-news-co-stock-1/'
+    - 'https://www.thewrap.com/industry-news/business/news-corp-q3-earnings/'
+    - 'https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/'
+    - 'https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244'
+    - 'https://www.eweek.com/news/harpercollins-books-train-microsoft-ai-models/'
+  research_method: '4 browser.search query sets this run (Meta AI publisher content licensing deals 2026 announcement; Meta signs AI licensing deal publisher 2026 since 2026-04-01; Anthropic content licensing publisher deal 2026; Robert Thomson News Corp AI licensing revenue input company 2026), verbatim full-URL listings; browser.open first-hand read of the News Corp Q2 FY2026 earnings transcript (MarketBeat, Feb 5 2026) verifying the Bloomberg expanded-AI-rights line and the Anthropic settlement-share expectation; Q3 FY2026 Thomson quotes second-hand via search-result excerpts, bounded in-mechanism per iteration-492 rule; no zero-coverage claims; no canonical URLs constructed; pre-commit greps confirmed zero Bloomberg-leg mentions in competitor-entities.yaml and iteration-log.md, zero test_type_c_594 files on disk, no #594 in git log'
+  novelty: 'first dedicated News Corp multi-leg aggregation mechanism in the corpus - profile-level notes in news-corp.yaml listed four legs but no mechanism block existed; first corpus record of the Bloomberg expanded Dow Jones AI-rights deal (announced Feb 5 2026, zero prior mentions grep-verified); distinct from mechanism 519 (OpenAI leg), 524 (Microsoft/HarperCollins leg), 549 (Meta leg), 509 (Anthropic zero-deal posture context), 539 (Dotdash Meredith triple-payer structural sibling), and 85 (Bloomberg financial-null baseline, now buyer-side qualified)'
+  verification:
+    iteration: 594
+    type: 'C'
+    date: '2026-09-07 19:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true

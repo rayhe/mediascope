@@ -68,7 +68,18 @@ revenue_relationships:
   verified: true
   notes: 'Makes News Corp the FIRST publisher receiving revenue from THREE major AI companies simultaneously: OpenAI (licensing),
     Meta (licensing), Anthropic (settlement). With the Microsoft/HarperCollins book-licensing leg (Nov 2024), the owner-level
-    count is FOUR - the only tracked-publication owner collecting AI revenue from four labs through four distinct channels.'
+    count is FOUR - the only tracked-publication owner collecting AI revenue from four labs through four distinct channels.
+    Plus Bloomberg AI rights (Feb 2026) - five channels total. See mechanism 594 (news_corp_five_leg_ai_revenue_architecture_594).'
+- partner: Bloomberg
+  type: ai_licensing
+  value: undisclosed
+  signed: February 2026
+  scope: 'Expanded AI rights for Dow Jones content. Announced by Thomson on the Q2 FY2026 earnings call Feb 5 2026:
+    ''We are establishing new AI partnerships, which we expect to generate additional revenues, including an expanded
+    deal with Bloomberg for AI rights for our peerless Dow Jones content.'' First-hand transcript read Sep 7 2026.
+    NEW TO CORPUS - first record in mechanism 594.'
+  source_url: https://www.marketbeat.com/earnings/reports/2026-2-5-news-co-stock-1/
+  verified: true
 - partner: Apple
   type: news_distribution
   value: undisclosed
