@@ -320,7 +320,7 @@ class TestRotationCycleGuard609:
         ("Type D", 605),
     ]
     # Anchor: patched in followup - see iteration-log entry for #609.
-    ANCHOR_MAIN_COMMIT = "POST_COMMIT_PATCH_IN_FOLLOWUP"
+    ANCHOR_MAIN_COMMIT = "02c1028"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     MAIN_COMMIT_PATTERN = re.compile(r"^Type [A-E] #\d+:")
