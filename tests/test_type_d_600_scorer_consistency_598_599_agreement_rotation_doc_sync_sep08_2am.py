@@ -594,7 +594,7 @@ class TestRotationCycleGuard600:
     # in the followup commit per the #565 convention. This class is
     # deselected pre-commit (it asserts the post-commit anchor) and runs
     # green in the followup.
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "b378223"
 
     @staticmethod
     def _mains():
@@ -617,14 +617,22 @@ class TestRotationCycleGuard600:
                 f"position {i}: expected Type {typ} {num}, got {subjects[i]!r}"
 
     def test_rotation_adjacency_cycle_valid(self):
-        # The 5-window newest-first is D,C,B,A,E: each adjacent pair must be
-        # a valid forward rotation step (A->B->C->D->E->A), closing the C->D
-        # edge this run.
-        order = ["A", "B", "C", "D", "E"]
-        types = ["D", "C", "B", "A", "E"]
-        for prev, cur in zip(types, types[1:]):
-            assert order[(order.index(prev) + 1) % 5] == cur, \
-                f"rotation step {prev}->{cur} invalid"
+        # D->C is the edge this run closes; the full 5-window must be a
+        # rotation walk in commit-newest-first order: D,C,B,A,E (the rotation
+        # runs backward in newest-first order). (order[a] - order[b]) % 5 == 1
+        # steps one position backward from the newer commit a to the older
+        # commit b, i.e. one rotation step forward.
+        order = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
+        subjects = self._mains()
+        observed = []
+        for s in subjects[:5]:
+            m = re.search(r"Type ([A-E]) #(\d+):", s)
+            assert m, f"unparseable rotation subject: {s!r}"
+            observed.append(m.group(1))
+        assert observed == ["D", "C", "B", "A", "E"]
+        for a, b in zip(observed, observed[1:]):
+            assert (order[a] - order[b]) % 5 == 1, \
+                f"rotation broken: {a} -> {b} is not a valid cycle edge"
 
     def test_anchor_is_post_commit(self):
         assert self.ANCHORED_COMMIT != "POST_COMMIT_ANCHOR", \
