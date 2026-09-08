@@ -2632,3 +2632,114 @@ journalist_cross_entity:
       evidence in the dataset.
 
       '
+  mechanism_596_joanna_stern_independent_phase_cross_entity_gradient_inversion_sep08:
+    mechanism_id: 596
+    iteration: 603
+    date: '2026-09-08'
+    hour_type: B
+    title: 'Joanna Stern independent-phase cross-entity gradient inversion: Apple Siri AI constructive (+0.60, Jun 2026 New Things week-long hands-on) vs Meta LED investigation adversarial (-0.65, Jun 2026); same New Things phase, opposite registers - the independent-phase Meta adversarial turn is TARGET-SELECTED, not a uniform register shift'
+    finding: |
+      In Stern's independent (New Things) phase, two June 2026 pieces in the SAME product-hands-on genre
+      carry OPPOSITE registers: the Meta Ray-Ban LED-modding investigation is adversarial (-0.65, carried
+      from the journalist_cross_entity.joanna_stern block: 'How People With Meta Glasses Can Secretly
+      Record You', paid $100 modder in NJ garage, 30-state LED-removal industry documented, Meta firmware
+      update driven) while the Apple iOS 27 Siri AI week-long hands-on is constructive (+0.60: 9to5Mac
+      Jun 19 2026 re-report 'Joanna Stern spent one week with new Siri AI, and it is very good'; her
+      video answers 'Is Siri finally good?' 'strongly in the affirmative'; beach-souvenirs personal-context
+      anecdote - 'Siri that is pretty dead-on... AI is only as good as the data it has. And oh boy, does
+      Apple have a lot of mine. I am even considering switching to Apple Mail, and that says a lot').
+      Cross-entity delta (Meta minus Apple): WSJ phase +0.55 (+0.35 vs -0.20) INVERTS to independent phase
+      -1.25 (-0.65 vs +0.60). At WSJ, Meta got her most positive treatment and Apple the most critical;
+      post-migration the registers swap poles. The independent-phase turn is therefore Meta-target-selected,
+      not a uniform adversarial shift across all companies.
+    independent_phase_corpus:
+      meta:
+        article: 'How People With Meta Glasses Can Secretly Record You'
+        date: 2026-06
+        platform: New Things (YouTube) + NBC News
+        tone: -0.65
+        quote: spy cameras, covert cameras, stealth mode, glassholes
+        impact: 'Meta released firmware update directly in response to Stern''s reporting'
+        source_url: https://www.youtube.com/watch?v=EaJSPeJmqis
+        impact_relay: https://www.androidheadlines.com/2026/06/people-are-paying-100-to-turn-metas-ray-bans-into-spy-glasses.html
+        note: 'Android Headlines Jun 2026 re-report: "Joanna Stern, formerly of The Wall Street Journal,
+          went in-depth on how this industry works in her latest YouTube video" - corroborates the
+          investigation as the definitive LED-modding record'
+      apple:
+        article: 'Is Siri finally good? - one week with new Siri AI (iOS 27)'
+        date: 2026-06
+        platform: New Things (YouTube)
+        tone: 0.60
+        quote: 'Siri that is pretty dead-on... I am even considering switching to Apple Mail, and that says a lot'
+        framing: Constructive product hands-on - personal-context data synthesis praised, guardrails/shortcomings noted
+        source_url: https://9to5mac.com/2026/06/19/joanna-stern-spent-one-week-with-new-siri-ai-and-its-very-good/
+        tier_note: 'Relay characterization (9to5Mac re-report); New Things video not fetched first-hand this run'
+      snap_control:
+        article: 'Are Snap''s $2,195 smart glasses the next big thing in tech? (NPR Morning Edition)'
+        date: 2026-06-19
+        tone: 0.0
+        quote: 'Every tech company right now is trying to work on this future'
+        framing: Neutral industry analyst - discussed Snap Specs as part of broader smart-glasses trend, no privacy investigation
+        source_url: https://www.kdlg.org/as-heard-on-npr/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech
+      constancy_control:
+        article: 'Tech journalist Joanna Stern on leaving the Wall Street Journal and moving on to New Things (NiemanLab)'
+        date: 2026-05
+        quote: 'my guiding principle has always been... to be the person who guides you through the world of technology'
+        significance: 'Stern claims voice/register continuity across the migration; observed cross-entity
+          gradient inverts (Meta +0.55 vs Apple flips sign) - continuity claim bounded by target-selection'
+        source_url: https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/
+    asymmetry_scorer:
+      method: MANUAL_ILLUSTRATIVE
+      wsj_phase_meta_minus_apple_delta: 0.55
+      independent_phase_meta_minus_apple_delta: -1.25
+      inversion_magnitude: 1.80
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      correlation_not_causation: true
+      n_per_arm: 1
+      note: 'Single-article arms; illustrative-only per the Aug 28 2026 standing rule'
+    confounders_ranked:
+      strong:
+      - 'Genre asymmetry: investigative expose (Meta LED) vs product hands-on (Siri AI) - the hands-on genre
+        is constructive by default; the inversion may measure genre, not entity target'
+      - 'n=1 per arm in each phase; the WSJ-phase arms are themselves carried single articles'
+      - 'Revenue incentives apply to both phases (WSJ: balanced deals; New Things: YouTube algorithm,
+        newsletter subs, sponsored content per the in-corpus financial_context) - incentives differ,
+        not absent'
+      moderate:
+      - 'Apple Siri piece is relay-characterized (9to5Mac), not first-hand fetched'
+      - 'Siri video did note shortcomings (guardrails, mistakes per 9to5Mac) - not a pure puff, but the
+        verdict frame is affirmative'
+      weak:
+      - 'New Things sponsor identities undisclosed; sponsor-conflict bound is speculative'
+      - 'MacDailyNews Jun 20 relay "WSJ''s Joanna Stern" byline attribution is stale (she left WSJ Apr 2026)'
+    counterevidence:
+    - 'Stern''s WSJ-phase Meta coverage was the most positive in her portfolio (+0.35) - the inversion is
+      against her own baseline, not a career-long anti-Meta register'
+    - 'The Siri AI video tested shortcomings too - constructive verdict, not uncritical'
+    - 'Stern published Meta''s firmware-update response as a special-edition newsletter (in-corpus
+      follow_up) - fair-process journalism, not pure adversarial targeting'
+    - 'The reverse Heikkila pattern (in-corpus) still holds: financial-structure change predicts the
+      direction of Meta tone change; this mechanism only refines it to target-selection within
+      an adversarial turn, not a uniform one'
+    distinct_from:
+    - 'mechanism #105 (iteration #108): the career-migration natural experiment itself (tone shift
+      +0.35 to -0.65) - this mechanism adds the independent-phase Apple cross-entity comparator'
+    - '#108/Aug-7 Type B commit 2999c7d: same migration block, no cross-entity comparator arms'
+    - '#598 Alex Hern: cross-institution constancy (register survives migration) - Stern is the
+      inversion case, Hern the constancy case; together they bound the migration mechanism'
+    - 'Falsification family (#538 Metz, #563 Heath, #568 Frier, #578 Bogost, #583 Lopatto, #588 Stein,
+      #599 Song): writer-level pins bounding the deal-gradient hypothesis - Stern is a Meta-negative
+      writer-level gradient, distinct from the falsification members'
+    research_method: '3 browser.search query sets this run (Joanna Stern Meta Ray-Ban glasses September
+      2026 since=2026-08-15; New Things Joanna Stern Meta glasses LED firmware response since=2026-07-01;
+      Joanna Stern New Things September 2026 tech video since=2026-08-20); verbatim URLs from Full-URL
+      listings; no canonical URLs constructed; no zero-coverage claims per iteration-492 rule;
+      pre-commit greps: zero mechanism_596 keys in profiles/, zero "siri" hits in profiles/news-corp.yaml,
+      zero 9to5mac.com/2026/06/19 hits anywhere in repo (NiemanLab URL already in corpus via careers
+      + competitor-coverage-research)'
+    artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; n=1 per arm;
+      is_significant false.'
+    author: 'Kit (with Ray)'
