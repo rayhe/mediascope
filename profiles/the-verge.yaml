@@ -468,6 +468,21 @@ revenue_relationships:
       This creates a structural incentive asymmetry in coverage.
 
       Post-PMC acquisition: unclear if the licensing deal transfers to PMX or needs renegotiation.
+
+      SEP 2026 STATUS VERIFICATION (Type C iteration #599, 2026-09-08): bounded Sep 2026 searches
+      (Vox Media OpenAI content licensing deal status 2026; Vox Media PMC acquisition completed
+      OpenAI licensing deal) surfaced NO termination, cancellation, or renegotiation news for the
+      Vox Media-OpenAI deal; the May 29, 2024 multiyear agreement is treated as still ACTIVE. The
+      PMX-transfer question remains UNRESOLVED (no new reporting surfaced this run; the in-corpus
+      uncertainty stands - disclosed, not claimed). The full incentive stack at the Sep 2026 status
+      date: OpenAI licensing (active, terms undisclosed, multi-year) + Google programmatic
+      ad-revenue dependence of Vox/PMC properties + Meta $0 in AI licensing. Behavioral pin:
+      Victoria Song (The Verge senior reviewer, wearables beat) scored Google's first-gen Pixel
+      Watch (-0.35 illustrative) harsher than Meta's first-gen Ray-Ban Display glasses (-0.10
+      illustrative) - writer-level falsification of the deal-gradient prediction (see
+      profiles/careers/journalists.yaml, block type_c_599_victoria_song_vox_financial_stack_behavioral_pin,
+      mechanism 593). The incentive map is verified at the financial layer; its behavioral reach is
+      bounded by writer-level register constancy.
     date_established: "2024-05-29"
     source_urls:
       - "https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"

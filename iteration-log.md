@@ -1,3 +1,28 @@
+#599 Type C: Vox Media AI-Revenue Architecture (Sep 2026 Status Verification) + Victoria Song Writer-Level Behavioral Pin - Financial Map Verified, Behavioral Prediction Bounded - Sep 8 2026 01:00 PDT
+
+**Date:** 2026-09-08 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 598 B -> 599 C)
+**Type:** C - Financial Incentive Mapping (Vox Media AI-revenue architecture Sep 2026 status verification; mechanism 593, next free numeric id; FIRST writer-level behavioral pin on the Vox deal stack)
+
+**Finding:**
+1. Leg 1 - OpenAI licensing ACTIVE: Vox Media signed a content licensing and product partnership with OpenAI on May 29, 2024 (announced same day as The Atlantic's similar deal; multiyear, terms undisclosed). OpenAI gets current content AND full archive (including The Verge's) for training; Vox Media gets licensing fees + OpenAI tech. Announced without consulting Vox Media Union journalists (WGAE "serious concerns"; Kelsey Piper publicly frustrated on X). Bounded Sep 2026 searches this run (Vox Media OpenAI content licensing deal status 2026; Vox Media PMC acquisition completed OpenAI licensing deal) surfaced NO termination, cancellation, or renegotiation news - the multiyear deal is treated as still ACTIVE (in-corpus the-verge.yaml revenue_relationships, extended with the Sep 2026 verification paragraph).
+2. Post-PMC-acquisition transfer UNRESOLVED: the in-corpus note ("unclear if the licensing deal transfers to PMX or needs renegotiation") stands; no new reporting surfaced this run. Disclosed, not claimed.
+3. Leg 2 - Google ad-revenue dependence: "Vox Media (The Verge parent) depends on Google programmatic ad revenue" (in-corpus the-verge.yaml:3736).
+4. Leg 3 - Meta $0: "Meta pays The Verge's parent $0 for AI content" (in-corpus the-verge.yaml:3482).
+5. Behavioral pin - Victoria Song (The Verge senior reviewer, wearables beat): Meta Ray-Ban Display corpus Sep-Nov 2025 (thehotjem relay of her Verge review: "fascinating and frustrating at the same time" -0.1; wazupnaija relay of Optimizer Rome essay: "impressive piece of engineering... actually had a great time" 0.0; UploadVR relay: Neural Band "shockingly well" +0.1) vs Google corpus (Android Authority relay of her original Pixel Watch review: "good-but-not-yet-great", "alarmingly quick battery drain" -0.35; Slashdot relay of her Pixel Watch 4 first look: original was "quintessential first-gen... dismal battery life... product graveyard" jokes, now "clear vision" +0.1). Illustrative delta +0.13 (0.00 vs -0.125) n.s.: she scored Google's first-gen watch HARSHER than Meta's first-gen Display glasses - opposite the money prediction. Writer-level falsification of the deal-gradient prediction; privacy framing tracks the camera, not the corporate payer. Register-scoped: her broader Meta narrative register is genuinely privacy-adversarial (in-corpus Jul 7 2026 LED tamper-proof origin node, "pervert glasses" editorial).
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Meta [-0.1, 0.0, +0.1] avg 0.00 vs Google [-0.35, +0.1] avg -0.125: delta +0.125 (rounded 0.13), n=3 vs n=2. p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, correlation_not_causation True.
+
+**Verdict:** FINANCIAL MAP VERIFIED, BEHAVIORAL PREDICTION BOUNDED. The incentive stack is real money; its behavioral reach is bounded by writer-level constancy. Joins the falsification family (#538, #563, #568, #578, #583, #588) with the first dedicated Vox-deal writer-level pin. Distinct from #594 (News Corp five-leg: different owner, no writer-level pin) and #507 (deal-incentive pattern domain-bounded at The Verge: this run adds the wearables-beat writer-level boundary).
+
+**Tests:** 36 (8 classes) in test_type_c_599_vox_media_ai_revenue_architecture_sep08.py - YAML/block/schema, three-leg financial architecture, Sep 2026 status verification with bounded-absence discipline, behavioral pin (tones, URLs verbatim, delta arithmetic, sign check), statistical discipline, graded confounders + counterevidence, novelty (exactly one 599 file, no #599 commit, mechanism_593 zero pre-commit hits in HEAD), rotation-cycle guard (anchor patched post-commit per #565 convention; expected window 599 C / 598 B / 597 A / 596 E / 595 D).
+
+**Doc-sync:** README.md test-table row + docs/ARCHITECTURE.md tests listing row added; count_stats.py --check green.
+
+**Sources (all URLs verbatim):** https://thehotjem.com/meta-ray-ban-display-glasses-a-new-frontier-of-smart-wearables/ ; https://www.wazupnaija.com/counting-renaissance-butts-in-rome-with-the-meta-ray-ban-display/ ; https://www.Uploadvr.com/meta-ray-ban-display-hands-on-meta-neural-band/ ; https://www.androidauthority.com/google-pixel-watch-buyers-guide-3221637/ ; https://hardware.slashdot.org/story/25/08/20/2113247/googles-pixel-watch-4-has-a-big-focus-on-ai?sdsrc=nextbtmprev ; deal background https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+
+**Rotation:** 598 B -> 599 C. This run also completed the midnight 00:00 PDT run's uncommitted Type B #598 (Alex Hern) work: verified 37/40 pre-commit, committed as d1e8632, followup anchored e86b844 (40/40 green).
+
+---
 #598 Type B: Alex Hern Institutional-Migration Register Constancy - Adversarial Accountability Register Toward Meta and OpenAI Survives Guardian (2013-2024) to Economist (Oct 2024+) Move, Illustrative Delta -0.1167 n.s. (Constancy, Not Gradient) - Sep 8 2026 00:00 PDT
 
 **Date:** 2026-09-08 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 597 A -> 598 B)

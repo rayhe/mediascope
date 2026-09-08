@@ -10588,6 +10588,96 @@ journalists:
   - https://www.pcmag.com/author/victoria-song
   - https://muckrack.com/victoria-song/articles
   multi_publication: true
+  competitor_coverage:
+    type_c_599_victoria_song_vox_financial_stack_behavioral_pin:
+      mechanism_id: 593
+      iteration: 599
+      date: '2026-09-08'
+      type: C
+      design: 'Type C financial-incentive mapping, Sep 2026 status verification of the Vox Media AI-revenue architecture: leg 1 = OpenAI content licensing + product partnership (May 29 2024, multiyear, terms undisclosed; bounded Sep 2026 searches surfaced no termination/cancellation/renegotiation - treated as still ACTIVE; post-PMC-acquisition transfer to PMX remains UNRESOLVED per in-corpus note); leg 2 = Google programmatic ad-revenue dependence of Vox/PMC properties (in-corpus the-verge.yaml:3736); leg 3 = Meta pays $0 in AI licensing (in-corpus the-verge.yaml:3482). The incentive stack predicts softer treatment of the paying entities (OpenAI, Google) and neutral-to-adversarial treatment of Meta. The writer-level behavioral pin is Victoria Song (The Verge senior reviewer, wearables beat, Optimizer newsletter): her Meta (Ray-Ban Display, Sep-Nov 2025) vs Google (original Pixel Watch Oct 2022, Pixel Watch 4 Aug 2025) product-register corpus tests whether the money gradient bends the beat. Observed register constancy plus a sign-reversed Google first-gen score bounds the incentive map: verified financially, bounded behaviorally.'
+      hypothesis: 'If the financial-deal stack drives coverage tone, Google items should read softer than Meta items. NULL alternative: the writer-level product-review register is genre-anchored and consistent across entities, with the privacy frame tracking the camera (glasses) rather than the company. A positive or near-zero illustrative delta constitutes writer-level falsification of the deal-driven prediction, bounding (not refuting) the incentive map. The map remains verified at the financial layer; its behavioral reach is the open empirical question.'
+      meta_corpus:
+      - date: '2025-10'
+        outlet: the-verge (via thehotjem relay)
+        title: 'Meta Ray-Ban Display review: ''fascinating and frustrating at the same time'''
+        register: product-critical
+        notes: 'thehotjem relay of Song''s Verge review: the glasses are ''among the most advanced smart wearables available today'', a ''blend of style, innovation, and futuristic possibilities'' at $799; verdict is ''fascinating and frustrating at the same time''. Critique is first-gen friction, not adversarial framing. Evidence tier: secondary relay; Verge original not opened this run.'
+        source_url: https://thehotjem.com/meta-ray-ban-display-glasses-a-new-frontier-of-smart-wearables/
+        tone: -0.1
+      - date: '2025-11'
+        outlet: the-verge Optimizer newsletter (via wazupnaija relay)
+        title: 'Counting Renaissance butts in Rome with the Meta Ray-Ban Display'
+        register: privacy-conflicted-positive
+        notes: 'Relay of Song''s Optimizer essay: ''In a nutshell, the glasses were an impressive piece of engineering. I felt conflicted about the privacy and cultural questions they raised'' - she ''actually had a great time'' using live translation in Rome. Net-positive product experience with explicit privacy conflict. Evidence tier: secondary relay.'
+        source_url: https://www.wazupnaija.com/counting-renaissance-butts-in-rome-with-the-meta-ray-ban-display/
+        tone: 0.0
+      - date: '2025-09'
+        outlet: the-verge (via uploadvr relay)
+        title: 'Meta Ray-Ban Display hands-on: Neural Band works ''shockingly well'''
+        register: hands-on-positive
+        notes: 'UploadVR hands-on relay quotes Song''s verdict that the Meta Neural Band sEMG gesture controls work ''shockingly well''. Positive hardware register from her directly; the relay author could not independently verify. Evidence tier: secondary relay of a quote.'
+        source_url: https://www.Uploadvr.com/meta-ray-ban-display-hands-on-meta-neural-band/
+        tone: 0.1
+      google_corpus:
+      - date: '2022-10'
+        outlet: the-verge (via androidauthority relay)
+        title: 'Original Pixel Watch review: ''good-but-not-yet-great'''
+        register: product-critical
+        notes: 'Android Authority relay cites Song''s Verge review of the original Pixel Watch: ''good-but-not-yet-great'' option for Android users, ''alarmingly quick battery drain'', and durability questioned with cracked-screen images. Substantively harsher than anything she wrote about Meta''s first-gen Display glasses. Evidence tier: secondary relay.'
+        source_url: https://www.androidauthority.com/google-pixel-watch-buyers-guide-3221637/
+        tone: -0.35
+      - date: '2025-08-20'
+        outlet: the-verge (via slashdot relay)
+        title: 'Pixel Watch 4 first look: from graveyard jokes to ''clear vision'''
+        register: forgiving-first-gen-optimistic
+        notes: 'Slashdot relay of Song''s Pixel Watch 4 first look: the original was a ''quintessential first-gen device, with thicc bezels, dismal battery life, and a host of quirks''; ''my DMs were full of people wondering when the watch would be unceremoniously dumped into Google''s infamous product graveyard''; ''a part of me wondered if Google was going to spend the next decade playing catch-up''; now ''it''s evident that Google has a clear vision about where smartwatches are going''. Forgiving redemption arc. Evidence tier: secondary relay.'
+        source_url: https://hardware.slashdot.org/story/25/08/20/2113247/googles-pixel-watch-4-has-a-big-focus-on-ai?sdsrc=nextbtmprev
+        tone: 0.1
+      asymmetry_scorer_result_illustrative:
+        correlation_not_causation: true
+        delta: 0.13
+        delta_calc: 'target_avg - peer_avg = 0.00 - (-0.125) = +0.125 (rounded to 0.13)'
+        delta_direction: 'positive: Song reads marginally kinder on Meta first-gen glasses (''impressive piece of engineering'', Neural Band ''shockingly well'') than on Google first-gen hardware (''good-but-not-yet-great'', ''dismal battery life'', cracked-screen durability shots) - the OPPOSITE sign of the deal-gradient prediction. n=3 vs n=2, all hand-scored, illustrative only, n.s.'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=3 vs n=2. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        p_value: NOT_CALCULATED
+        peer_avg: -0.125
+        peer_entity: Google
+        peer_scores:
+        - -0.35
+        - 0.1
+        target_avg: 0.0
+        target_entity: Meta
+        target_scores:
+        - -0.1
+        - 0.0
+        - 0.1
+      confounders:
+      - '[STRONG] Product-category privacy register: camera glasses legitimately attract privacy framing; smartwatches attract spec/battery framing. Song''s privacy language follows the camera, not the company - consistent with her Jul 2026 ''pervert glasses'' editorial applying surveillance framing even to Ray-Ban partner marketing.'
+      - '[STRONG] Same-genre review norms: both corpora are review/hands-on lane items; register constancy is genre-anchored. The standing Type B genre-boundary convention (#493 Fowler, #498 Swisher, #503 Preston, #508 Wagner, #513 Kerr, #563 Heath, #568 Frier, #578 Bogost, #583 Lopatto, #588 Stein).'
+      - '[MODERATE] Evidence tier: all five items are secondary relays (thehotjem, wazupnaija, UploadVR, Android Authority, Slashdot); no Verge original opened this run.'
+      - '[MODERATE] Timing skew: original Pixel Watch (Oct 2022) vs Ray-Ban Display (Sep-Nov 2025) vs Pixel Watch 4 (Aug 2025) - different product maturity eras.'
+      - '[MODERATE] n=3 vs n=2 with hand-score noise: the +0.125 delta could compress to zero or flip sign on re-scoring.'
+      - '[WEAK] Optimizer newsletter voice is more personal/confessional than review voice - the Rome essay tone may not generalize to her newsroom register.'
+      counterevidence:
+      - 'Song''s broader Meta narrative register is genuinely privacy-adversarial (in-corpus: Jul 7 2026 LED tamper-proof origin node, ''pervert glasses'' editorial, EHE campaign citation) - this 3-item corpus samples her product-review register only; the falsification is register-scoped, not a blanket Meta-favorable claim.'
+      - 'The Pixel Watch 4 +0.10 item is hands-on-forgiving, not a full review; the Meta -0.10 item is a full review - genre skew inflates the positive delta.'
+      - 'Song quotes Meta VP Alex Himel directly and has a working relationship with Meta wearables PR (in-corpus) - access dynamics, not money, could pull the Meta items positive.'
+      - 'Hand-scoring noise: -0.10 for the Display review and -0.35 for the original Pixel Watch are judgment calls; the illustrative delta carries no error model.'
+      financial_context: 'Vox Media signed a content licensing and product partnership with OpenAI on May 29 2024 (announced same day as The Atlantic''s similar deal; in-corpus the-verge.yaml lines 453-460); Google is a major advertising-revenue partner of PMC/Vox properties; Meta pays $0 in AI licensing to Vox Media. The deal gradient predicts softer treatment of Google and neutral-to-adversarial treatment of Meta. Observed: Song scored Google''s first-gen watch (-0.35) harsher than Meta''s first-gen Display glasses (-0.10) - a writer-level falsification of the deal-driven gradient prediction, joining the reporter-level falsification family (#538 Metz, #563 Heath, #568 Frier, #578 Bogost, #583 Lopatto). The privacy-register difference (privacy language on camera glasses, spec language on watches) is product-category-explained, not money-explained.'
+      block_key: type_c_599_victoria_song_vox_financial_stack_behavioral_pin
+      cross_refs:
+      - '#538 (Cade Metz: reporter-level litigation-adversary symmetry - same falsification family)'
+      - '#563 (Alex Heath: Verge Meta-beat register constancy - same publication, same verdict class)'
+      - '#568 (Sarah Frier: business-press constancy control - parallel falsification)'
+      - '#578 (Ian Bogost: Atlantic writer-level inversion vs publication prediction - writer beats publication)'
+      - '#583 (Elizabeth Lopatto: Verge writer-level consistency check - same publication)'
+      - '#588 (Scott Stein: hands-on review register constancy - same verdict class, opposite journalist/lane)'
+      - '#593 (Mark Gurman: access-boundary pin - opposite driver attribution; Song has Meta PR access, not Bloomberg-style scoop dependence)'
+      - 'the-verge.yaml lines 453-460 (Vox Media-OpenAI content licensing deal, May 29 2024 - the deal-gradient source)'
+      novelty: 'First Type C Sep-2026 status verification of the Vox Media-OpenAI licensing deal: bounded Sep 2026 searches (Vox Media OpenAI deal status 2026; Vox Media PMC acquisition OpenAI licensing deal) surfaced no termination, cancellation, or renegotiation news - the May 29 2024 multiyear deal is treated as still ACTIVE; the post-PMC-acquisition PMX-transfer question remains UNRESOLVED (in-corpus note stands, disclosed not claimed). First writer-level behavioral pin on the Vox deal stack (Song). Zero test_type_c_599 files on disk (glob verified this run). No Type C commit with 599 in the title (git log --grep verified this run). Zero pre-commit hits for mechanism_593 outside this run''s files. Victoria Song''s careers entry had no competitor_coverage block before this run; her prior repo mentions are mechanism-adjacent (Jul 7 2026 LED tamper-proof origin node, Jul 2026 ''pervert glasses'' editorial, EHE citation cascade in her smart-glasses narrative) - never a financial-incentive-map unit. Distinct from #594 (News Corp five-leg: different owner, no writer-level pin) and #507 (deal-incentive pattern domain-bounded at The Verge: this run adds the wearables-beat writer-level boundary). Rotation: 598 B -> 599 C.'
+      research_method: '5 browser.search query sets this run: 3 journalist-corpus sets (Victoria Song The Verge Meta Ray-Ban Display review wearables; Victoria Song The Verge Google Pixel Watch 4 review; theverge.com Victoria Song Pixel Watch 4 review ''clear vision'' 2025) + 2 financial-verification sets (Vox Media OpenAI content licensing deal status 2026; Vox Media PMC acquisition completed OpenAI licensing deal) - the latter two surfaced no 2026 termination/cancellation/renegotiation news (bounded-absence discipline per iteration-492 rule). All five source URLs verbatim from Full-URL listings; Verge originals not opened (relay-bounded). No zero-coverage claims beyond the bounded absence. No canonical URLs constructed.'
+      verdict: 'FINANCIAL MAP VERIFIED, BEHAVIORAL PREDICTION BOUNDED: the Vox Media AI-revenue architecture holds three legs at the Sep 2026 status date - OpenAI licensing (May 29 2024, multiyear, still active per bounded-absence verification), Google programmatic ad-revenue dependence (in-corpus), Meta $0. The deal-gradient prediction (softer Google, neutral-to-adversarial Meta) fails at the writer level on The Verge wearables beat: Victoria Song applies a consistent product-critical review register across Meta and Google and scored Google''s first-gen watch (-0.35) harsher than Meta''s first-gen Display glasses (-0.10) - opposite the money prediction, illustrative delta +0.13 n.s. Her privacy-conflicted framing of camera glasses tracks the camera, not the corporate payer. The incentive map is real money; its behavioral reach is bounded by writer-level constancy. Illustrative only, significant False. Joins the falsification family (#538, #563, #568, #578, #583, #588) with the first dedicated Vox-deal writer-level pin.'
 - career:
   - beat: daily news
     end: 2015
