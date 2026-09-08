@@ -16877,6 +16877,101 @@ journalists:
   - https://yro.slashdot.org/story/17/12/09/0414237/reporter-regrets-letting-amazons-delivery-people-into-his-house
   - https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?artguid=bc9f63cc-eb9d-4028-9880-61de14178b88
 
+
+- career:
+  - end: '2016'
+    publication: 9to5mac
+    role: senior_editor
+    start: '2013'
+  - beat: global consumer technology, Apple, Power On newsletter
+    end: present
+    publication: bloomberg
+    role: managing_editor
+    start: '2016'
+  multi_publication: true
+  name: Mark Gurman
+  notes: 'Career arc: 9to5Mac (senior editor, Apple scoop beat) → Bloomberg (managing editor, global consumer tech; Power On newsletter). The pre-eminent Apple-beat access journalist: his Apple scoops are sourced from anonymous Apple employees and drive high-engagement traffic with low legal risk. In-corpus: the-verge.yaml notes Apple design scoops via Gurman/Bloomberg as high-value traffic drivers vs Meta privacy investigations requiring legal review (access journalism incentive, mechanism-adjacent). KEY ANALYTICAL VALUE: (1) Bloomberg LP revenue is Terminal-subscription driven with zero AI content-licensing deals documented for Meta, Apple, or OpenAI - so the financial-deal gradient predicts a NULL register gap for Gurman, making him a boundary/null test of the financial theory. (2) His Apple coverage is structurally access-dependent (employee sources feed Power On), while his Meta hardware coverage is reviewable-product journalism (no access to preserve) - a natural access-economics contrast within one writer. (3) First Type B block on Gurman; prior repo mentions are source-attribution only, never a within-writer cross-entity unit.'
+  source_urls:
+  - https://www.bloomberg.com/authors/ARbTQlRLRjE/mark-gurman
+  competitor_coverage:
+    type_b_593_mark_gurman_access_journalism_register_asymmetry:
+      iteration: 593
+      date: '2026-09-07'
+      type: B
+      design: 'Within-journalist cross-entity comparison: Mark Gurman (Bloomberg, managing editor global consumer tech, Power On) on Meta vs Apple in the camera-glasses lane, Oct 2025 - Jul 2026. Tests two competing predictions: (a) the financial-deal gradient - Bloomberg has no documented AI licensing deals with Meta, Apple, or OpenAI (in-corpus #85: Terminal revenue, zero deals), so the deal gradient predicts a NULL gap; (b) the access-journalism incentive - Apple scoops arrive via anonymous Apple employees (access preservation), Meta hardware arrives as reviewable product (no access), predicting an aspirational-insider register for Apple vs a spec-critical register for Meta.'
+      hypothesis: 'Deal-gradient prediction is NULL (no deals either side). Access-journalism prediction: Apple items run strategy-aspirational (scoop register, employee-sourced superlatives like ''higher-end build'' and ''icon''), Meta item runs spec-critical (reviewable specs get caveats). If observed, the register gap is ACCESS-explained, not money-explained: a boundary/null pin for the financial theory, joining the reporter-level falsification family (#538 Metz, #471 NYT boundary).'
+      meta_corpus:
+      - date: '2025-10-09'
+        outlet: bloomberg (via techmeme relay)
+        title: 'Meta Ray-Ban Display review: neural band great, display/camera specs caveats'
+        register: spec-critical
+        notes: 'Techmeme relay of Gurman Bloomberg review. Verbatim relay headline: ''good for uses like navigation and AI queries, the neural band is great, but the display has low resolution and the camera is 1080p (Mark Gurman/Bloomberg)''. Register is reviewable-product criticism: praise is capability-anchored (navigation, AI queries, neural band), caveats are specification-anchored (low-resolution display, 1080p camera). No strategic framing, no insider-sourced rationale. Evidence tier: secondary relay (Techmeme); Bloomberg original paywalled, not directly opened this run.'
+        source_url: http://www.techmeme.com/251009/p36
+        tone: -0.15
+      apple_corpus:
+      - date: '2026-04-13'
+        outlet: bloomberg Power On (via macrumors relay)
+        title: 'Apple smart glasses: four styles in testing, acetate premium materials'
+        register: insider-aspirational
+        notes: 'MacRumors relay of Gurman Power On newsletter: four frame styles in testing, acetate described as ''more durable and luxurious'' than standard plastic, designs ''instantly recognizable as Apple'' (''icon'' internally), ''many'' color options. Framing is strategy-forward and design-celebratory, sourced to Gurman''s Apple pipeline. Same hardware category (camera glasses) rendered without spec caveats because the product is unreleased.'
+        source_url: https://www.macrumors.com/2026/04/13/apple-smart-glasses-four-styles/
+        tone: 0.45
+      - date: '2026-04-13'
+        outlet: bloomberg Power On (via slashdot relay)
+        title: 'Apple AI glasses will rival Meta''s: ''better made'', ''outdo competitors'''
+        register: insider-aspirational
+        notes: 'Slashdot relay of same Gurman report: ''Apple is looking to go head-to-head with Meta''s Ray-Ban collection by offering a ''higher-end build''; per Apple employees speaking to Bloomberg, strategy is to ''outdo competitors by tightly integrating the glasses with the iPhone and offering a higher-end build''; standalone design vs EssilorLuxottica/Warby Parker partner models. The ''better made'' and ''outdo competitors'' lines are attributed to Apple employees in the underlying Bloomberg reporting - source-embedded corporate positioning rendered unchallenged in the scoop register. Also notes Gurman''s ''concerned that its AI failings may undermine the new product'' employee line (mild insider concern, not moralizing).'
+        source_url: https://apple.slashdot.org/story/26/04/13/215252/apple-ai-glasses-will-rival-metas-with-several-styles-oval-cameras
+        tone: 0.35
+      - date: '2026-07'
+        outlet: bloomberg Power On (via roadtovr relay)
+        title: 'Apple shelves Vision Air, accelerates N50 smart glasses to rival Meta'
+        register: insider-aspirational
+        notes: 'Road to VR relay of Gurman: Apple putting Vision Air on hold and shifting resources to accelerate N50 smart glasses (two-type strategy: N50 audio pair for 2027 plus display pair later) to ''take on Ray-Ban Meta and the new Meta Ray-Ban Display glasses'' ($800 US). Register is competitive-strategy narrative - Apple''s roadmap told from inside, Meta positioned as the incumbent to be taken on. No product caveats because nothing has shipped.'
+        source_url: https://roadtovr.com/apple-vision-pro-smart-glasses-meta-report/
+        tone: 0.35
+      asymmetry_scorer_result_illustrative:
+        correlation_not_causation: true
+        delta: -0.55
+        delta_calc: target_avg - peer_avg = -0.15 - 0.40 = -0.55
+        delta_direction: 'negative: Meta item reads harsher (spec-critical review register) than Apple items (insider-aspirational scoop register). n=1 vs n=3, all hand-scored. Directionally consistent with the ACCESS prediction and with a NULL deal-gradient prediction (Bloomberg has no deals with either entity per in-corpus #85), so the gap does not support the financial theory: it is access-explained, not money-explained.'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1 vs n=3. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        p_value: NOT_CALCULATED
+        peer_avg: 0.4
+        peer_entity: Apple
+        peer_scores:
+        - 0.45
+        - 0.35
+        - 0.35
+        target_avg: -0.15
+        target_entity: Meta
+        target_scores:
+        - -0.15
+      confounders:
+      - '[STRONG] Genre asymmetry: the Meta item is a shipped-product REVIEW (specs reviewable, caveats genre-conventional); the Apple items are unreleased-product SCOOPS (scoop register reports company plans; aspirational framing is genre-conventional). The register difference may be entirely genre-driven, not entity-driven - the standing Type B genre boundary (#493 Fowler, #498 Swisher, #503 Preston, #508 Wagner, #513 Kerr, #563 Heath, #568 Frier, #578 Bogost, #583 Lopatto, #588 Stein).'
+      - '[STRONG] Product reality: the Meta Ray-Ban Display actually shipped with a 20-degree FOV display and 1080p camera; spec critique is fact-anchored. Apple N50 has shipped nothing, so there is nothing concrete to criticize - unreleased products always read aspirationally in scoop coverage.'
+      - '[MODERATE] Access-preservation incentive: Gurman''s Apple scoops depend on anonymous Apple employees; adversarial Apple coverage risks source loss. This is the proposed driver class, so its strength as a confound is partly circular - stated explicitly as a theory commitment, not an independent check.'
+      - '[MODERATE] Evidence tier: Meta characterization is Techmeme-relay-bounded (Bloomberg original paywalled, not opened this run); Apple characterizations are MacRumors/Slashdot/Road-to-VR-relay-bounded. All are secondary relays of Gurman''s newsletter.'
+      - '[MODERATE] Timing skew: Oct 2025 (Meta review) vs Apr-Jul 2026 (Apple scoops).'
+      - '[WEAK] The ''better made''/''outdo competitors'' lines are attributed to Apple employees in the underlying Bloomberg reporting (via wccftech relay of the same story), not to Gurman''s own voice - used for register context, excluded from the tone scores.'
+      counterevidence:
+      - 'Gurman''s Meta review was net-positive on substance (neural band ''great'', good for navigation and AI queries) - the -0.15 is caveat-heavy, not adversarial; not a hostility finding.'
+      - 'Gurman''s Apple scoops carried one real insider concern (Apple employees ''concerned that its AI failings may undermine the new product'') - the access register is not pure puffery.'
+      - 'The delta is illustrative with n=1 vs n=3; hand-scoring noise alone could compress or flip the sign. Directional, not dispositive.'
+      - 'Bloomberg''s financial independence (Terminal revenue, no deals) also means there is no counterfactual publication-with-deals for Gurman at Bloomberg; the null is structural, not comparative.'
+      financial_context: 'Bloomberg LP: revenue is Bloomberg Terminal-subscription driven; no documented AI content-licensing deals with Meta, Apple, or OpenAI (in-corpus mechanism #85, Chris Welch career-migration block). The financial-deal gradient therefore predicts a NULL register gap for Gurman. The observed gap (-0.55 illustrative) is better explained by ACCESS economics: the-verge.yaml in-corpus notes ''Apple design scoops via Gurman/Bloomberg drive high-engagement traffic, low legal risk vs Meta privacy investigations which require legal review'' - access journalism is the driver class, money is not.'
+      block_key: type_b_593_mark_gurman_access_journalism_register_asymmetry
+      cross_refs:
+      - '#85 (Chris Welch Verge→Bloomberg career migration: Bloomberg zero AI deals, Terminal revenue - establishes the Bloomberg financial-null used here)'
+      - '#471 (NYT litigation-posture boundary: adversarial posture does not bleed across domains at publication level)'
+      - '#538 (Cade Metz: reporter-level litigation-adversary symmetry - joins the same reporter-level falsification family)'
+      - '#588 (Scott Stein: hands-on genre boundary convention - genre, not entity, explains register)'
+      - '#421 (Will Knight: Meta framing inversion correction - same publication, opposite inversion direction)'
+      novelty: 'First dedicated Type B block on Mark Gurman. Zero test_type_b_593 files on disk (glob verified this run). No Type B commit with 593 in the title (git log --grep verified this run). No existing competitor_coverage block on his careers entry (he had no careers entry at all before this run). Prior repo mentions of Gurman are source-attribution only (Power On relays cited by other mechanisms) - never a within-writer cross-entity unit. Distinct from #85 (Chris Welch career migration: establishes the Bloomberg Terminal-revenue zero-deal financial-null used as this unit''s NULL baseline), #538 (Cade Metz: same reporter-level falsification family, verdict-class sibling), #471 (NYT publication-level litigation boundary: publication-level vs writer-level), #588 (Stein: same standing genre-boundary convention, opposite verdict - constancy vs boundary), #421 (Will Knight: same-lane journalist asymmetry, opposite sign direction). Mechanism id 593 is first-assigned to this journalist (max pre-existing mechanism_id was 590 per #592). Rotation: 592 A -> 593 B.'
+      research_method: '2 browser.search query sets this run (Mark Gurman Bloomberg Meta Ray-Ban Display review neural band October 2025; Mark Gurman Bloomberg Apple smart glasses like Meta Ray-Bans July 2026). All four source URLs verbatim from Full-URL listings. Meta characterization Techmeme-relay-bounded; Apple characterizations MacRumors/Slashdot/Road-to-VR-relay-bounded (Bloomberg originals paywalled/newsletter). No zero-coverage claims per iteration-492 rule. No canonical URLs constructed.'
+      verdict: 'BOUNDARY/NULL pin for the financial theory: within one access-dependent journalist, the camera-glasses lane runs spec-critical for Meta (reviewable product, no access to preserve) and insider-aspirational for Apple (employee-sourced scoops, access to preserve). The deal gradient predicts nothing here (Bloomberg has no deals with either entity); the gap is access-explained. Joins the reporter-level falsification/alternative-driver family with #538 (Metz) and the genre-boundary family with #588 (Stein). Illustrative only, significant False.'
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
