@@ -314,11 +314,11 @@ class TestNoveltyAndSources:
 
 # ===================================================================
 # Rotation-cycle guard. Deselected pre-commit per the #565 followup
-# convention; the followup commit patches POST_COMMIT_ANCHOR with the
+# convention; the followup commit patches 290db01 with the
 # main iteration commit hash.
 # ===================================================================
 class TestRotationCycleGuard594:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "290db01"
 
     MAIN_COMMIT_PATTERN = re.compile(r"^Type [A-E] #\d+:")
 
