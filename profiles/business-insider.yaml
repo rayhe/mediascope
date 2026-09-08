@@ -11,6 +11,14 @@ ownership_chain:
     entity_type: "parent_company"
     description: "German media conglomerate"
 
+# Type C #604 ownership correction (2026-09-08): the majority-owned-by-KKR wording
+# is stale as of Apr 29 2025, when the KKR split finalized (Reuters) - media assets
+# (Bild, Politico, Business Insider, Die Welt) are closely held by CEO Mathias
+# Doepfner and Friede Springer; KKR/CPP Investments hold the classifieds
+# (Stepstone, Aviv) majority only. Mechanism 143's KKR triple-layer leg is REMOVED
+# for the media business; preserved as historical record.
+ownership_correction_2026_09_08: "CORRECTED 2026-09-08: Axel Springer media assets closely held by CEO Mathias Doepfner and Friede Springer since the KKR split finalized Apr 29 2025 (Reuters). KKR retains classifieds majority only. Telegraph Media Group acquired Jun 30 2026 (GBP 575M)."
+
 revenue_relationships:
   - partner: "OpenAI"
     relationship_type: "licensing"
@@ -428,6 +436,17 @@ competitor_relationships:
       strongest_counterargument: "The chase register may be entirely news-driven rather than narrative-position-driven: Google genuinely trailed on frontier coding models in this window (WSJ independently documents scrapped 3.5 Pro candidates, the flagship hole, and high-profile researcher departures), so deficit framing is accurate reporting. And the Anthropic aspirational piece was a funding-news peg where exuberance is the genre default. The $0-deal split could be pure news-value, not hype-cycle position. Accepted as confounder, not rebutted; the claim stays bounded, correlation-only, and MANUAL ILLUSTRATIVE."
       cross_references: [399, 420]
       artifact_readiness: "No analysis.json update warranted. MANUAL ILLUSTRATIVE, thin n, not significant; per standing rule, below artifact-grade threshold. Follows 512/513/518 precedent of profile-mechanism-only data writes."
+  microsoft:
+    financial_tie: "strategic_partnership_via_parent"
+    partner: "Microsoft"
+    relationship_type: "four_channel_partnership"
+    estimated_value: "undisclosed"
+    cash_terms_disclosed: false
+    description: "Axel Springer x Microsoft expanded strategic partnership (Apr 29 2024, PR Newswire): (1) Microsoft Advertising ad-server adoption + US expansion, POLITICO integrates Microsoft Advertising tech and joins Microsoft Advertising Network; (2) AI-driven chat pilots on Axel Springer journalism, Chat Ads API generative-AI monetization, Hey_ AI assistant powered among others by Azure OpenAI Service; (3) Microsoft Start-MSN premium content expansion (Business Insider, POLITICO, BILD, WELT); (4) SAP solutions migration to Microsoft Azure. Makes Axel Springer a dual-AI-payer owner (OpenAI + Microsoft). FIRST corpus formalization - Type C #604, mechanism 597."
+    coverage_prediction: "neutral"
+    source_urls:
+      - "https://www.prnewswire.co.uk/news-releases/axel-springer-and-microsoft-expand-partnership-across-advertising-ai-content-and-azure-services-302128889.html"
+    verification_date: "2026-09-08"
 
 key_journalists:
   - name: "Amanda Hoover"

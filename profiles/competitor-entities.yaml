@@ -17769,13 +17769,24 @@ publisher_entities:
       - https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
       date: '2026-08-25'
   axel_springer_business_insider:
-    parent_company: Axel Springer SE (majority-owned by KKR)
-    ownership_chain: KKR → Axel Springer SE → Business Insider / Politico / Bild /
-      Welt
+    parent_company: Axel Springer SE (media assets closely held by CEO Mathias
+      Doepfner and Friede Springer since the KKR split finalized Apr 29 2025;
+      KKR/CPP Investments hold the classifieds majority)
+    ownership_chain: Doepfner/Friede Springer → Axel Springer SE (media) →
+      Business Insider / Politico / Bild / Welt / Telegraph (from Jun 30 2026)
+    ownership_correction_2026_09_08: 'CORRECTION Type C #604: the majority-owned-by-KKR
+      wording was stale as of Apr 29 2025, when the KKR split finalized (Reuters) -
+      media assets (Bild, Politico, Business Insider, Die Welt) to Doepfner/Friede
+      Springer, classifieds (Stepstone, Aviv) to KKR/CPP Investments majority.
+      Mechanism 143 KKR triple-layer leg is therefore REMOVED for the media business;
+      preserved as historical record.'
     headquarters: Berlin, Germany
     meta_financial_relationship: none
     openai_financial_relationship: content licensing deal (Dec 2023, tens of millions
-      EUR/year)
+      EUR across the 3-year deal per Bloomberg Law source-familiar; NOT per year)
+    microsoft_partnership: four-channel strategic partnership (Apr 29 2024, PR
+      Newswire) - adtech, AI chat pilot + Chat Ads API, Start-MSN content, Azure
+      SAP migration; commercial terms undisclosed
     google_financial_relationship: search traffic dependency
     meta_as_ad_competitor: true
     publications:
@@ -17783,24 +17794,41 @@ publisher_entities:
     - Politico
     - Bild
     - Welt
+    - Telegraph Media Group (Daily Telegraph, Sunday Telegraph; acquired Jun 30 2026, GBP 575M)
     content_licensing_deals:
     - partner: OpenAI
       date: '2023-12-13'
-      value_description: tens of millions of euros per year
+      value_description: tens of millions of euros across the 3-year deal (Bloomberg Law source-familiar; NOT per year)
       scope: content licensing + model training data + ChatGPT integration
+    - partner: Microsoft
+      date: '2024-04-29'
+      value_description: four-channel strategic partnership, commercial terms undisclosed
+      scope: adtech (Microsoft Advertising), AI chat pilot + Chat Ads API + Azure OpenAI, Start-MSN content, Azure SAP migration
     pe_owner:
       name: KKR
       ai_infrastructure_portfolio_b: 34
       helix_digital_infrastructure_b: 10
       ecp_partnership_b: 50
+      status: REMOVED for media assets Apr 29 2025 - KKR split finalized (Reuters); KKR/CPP Investments retain classifieds (Stepstone, Aviv) majority only
     notes: Triple-layer financial architecture - OpenAI content deal, KKR PE ownership
       with $34B+ AI infrastructure serving Meta competitors, Google search traffic
       dependency. Business Insider produces adversarial Meta glasses coverage with
       alarm vocabulary while publishing zero comparable Samsung/Google glasses privacy
       articles despite identical hardware (Snapdragon AR1, 12MP camera, LED indicator).
+      Type C iteration 604 CORRECTION dated 2026-09-08 - the KKR leg was stale as of Apr 29 2025
+      (KKR split finalized - media to Doepfner/Friede Springer, classifieds to
+      KKR/CPP majority); the OpenAI deal is tens of millions EUR across the 3-year
+      term, NOT per year; added the Microsoft four-channel partnership (Apr 29 2024)
+      making Axel Springer dual-AI-payer, and the Telegraph Media Group acquisition
+      (closed Jun 30 2026, GBP 575M).
     mechanisms:
     - mechanism_id: 143
       mechanism_name: Axel Springer KKR OpenAI Triple-Layer Financial Architecture
+      historical_note: KKR triple-layer leg REMOVED Apr 29 2025 (KKR split finalized); preserved as historical record
+    - mechanism_id: 597
+      mechanism_name: Axel Springer Dual-AI-Payer Architecture (Sep 2026 status) - Microsoft Four-Channel + KKR-Split Correction + Telegraph Acquisition
+      iteration: 604
+      date_analyzed: '2026-09-08'
   sarah_perez_cross_entity_mechanism_142:
     parent_company: Yahoo (Apollo Global Management)
     publication: TechCrunch
@@ -18551,3 +18579,89 @@ news_corp_five_leg_ai_revenue_architecture_594:
     date: '2026-09-07 19:00 PDT'
     yaml_parse_clean: true
     ascii_only: true
+axel_springer_dual_ai_payer_microsoft_four_channel_kkr_split_telegraph_597:
+    mechanism_id: 597
+    iteration: 604
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-08'
+    time_pdt: '06:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'Axel Springer dual-AI-payer architecture (Sep 2026 status) - Microsoft four-channel partnership (Apr 29 2024) formalized; KKR-split ownership correction (finalized Apr 29 2025); Telegraph Media Group acquisition closed Jun 30 2026 (GBP 575M); OpenAI 3-year deal expiry Dec 2026 with renewal UNRESOLVED; Business Insider control-case persistence'
+    overview: 'First dedicated aggregation mechanism for Axel Springer SE, owner of tracked publication Business Insider. Four findings this run: (1) the Microsoft x Axel Springer expanded partnership (Apr 29 2024, PR Newswire primary source) is formalized for the FIRST time in the corpus - four commercial channels (adtech, AI chat, content distribution, cloud) making Axel Springer a DUAL-AI-PAYER owner (OpenAI + Microsoft); (2) the KKR ownership leg of mechanism 143 triple-layer architecture is CORRECTED - the KKR split finalized Apr 29 2025 (Reuters), so the media assets (Bild, Politico, Business Insider, Die Welt) are now closely held by CEO Mathias Doepfner and Friede Springer, while KKR/CPP Investments hold the classifieds (Stepstone, Aviv) majority; the corpus majority-owned-by-KKR wording (competitor-entities.yaml axel_springer_business_insider, competitor-coverage-research.yaml) was stale as of Apr 2025 and is corrected with a dated note, with mechanism 143 preserved as historical record; (3) Axel Springer CLOSED the Telegraph Media Group acquisition Jun 30 2026 for GBP 575M (Reuters) - second-largest investment since 1946, with Doepfner explicitly tying it to AI-powered digital transformation; NEW TO CORPUS; (4) the OpenAI 3-year licensing deal (Dec 13 2023, tens of millions EUR per Bloomberg Law source-familiar) expires ~Dec 2026 - bounded Sep 2026 searches surfaced NO renewal, extension, or termination reporting, so renewal status is UNRESOLVED (disclosed, not claimed per iteration-492 rule).'
+    legs:
+      openai_leg:
+        partner: 'OpenAI'
+        announced: '2023-12-13'
+        term: '3-year (Bloomberg Law, source familiar with undisclosed terms)'
+        value: 'tens of millions EUR across the deal (Bloomberg Law wording; CB Insights lists $25M+; do NOT assert precise annual value - the corpus tens-of-millions-EUR/year phrasing is unsupported)'
+        scope: 'Axel Springer content (Politico, Business Insider, Bild, Die Welt) for training and ChatGPT display with attribution and links'
+        expiry: '~2026-12'
+        renewal_status: 'UNRESOLVED - no renewal/extension/termination reporting in bounded Sep 2026 searches'
+        mechanism: 143
+      microsoft_leg:
+        partner: 'Microsoft'
+        announced: '2024-04-29'
+        form: 'expanded strategic partnership (PR Newswire primary source)'
+        channel_1_adtech: 'Axel Springer adopts Microsoft Advertising as ad server, US expansion; POLITICO integrates Microsoft Advertising technology + AdLib layer and joins Microsoft Advertising Network'
+        channel_2_ai: 'pilot AI-driven chat experiences on Axel Springer journalism; Chat Ads API for generative-AI monetization; AI assistant Hey_ powered among others by Azure OpenAI Service'
+        channel_3_content: 'Microsoft Start-MSN premium content expansion - Business Insider, POLITICO, BILD, WELT'
+        channel_4_cloud: 'SAP solutions migration to Microsoft Azure'
+        significance: 'FIRST corpus formalization; makes Axel Springer dual-AI-payer (OpenAI + Microsoft); Microsoft is a Meta competitor in AI and OpenAI largest investor, compounding the incentive geometry at Business Insider'
+      ownership_correction:
+        prior_corpus_claim: 'Axel Springer SE majority-owned by KKR (mechanism 143 triple-layer leg 2; axel_springer_business_insider parent_company; competitor-coverage-research.yaml)'
+        correction: 'KKR split FINALIZED Apr 29 2025 (Reuters): media assets (Bild, Politico, Business Insider, Die Welt) closely held by CEO Mathias Doepfner and Friede Springer; KKR + CPP Investments hold classifieds majority (Stepstone, Aviv); Axel Springer retains 10pct classifieds stake'
+        effect: 'KKR PE-ownership leg of the triple-layer is REMOVED for the media business; mechanism 143 preserved as historical record with dated correction note'
+        sources:
+          - 'https://www.reuters.com/markets/deals/german-media-empire-axel-springer-split-deal-with-kkr-2024-09-19/'
+          - 'https://947thebeast.com/2025/04/29/axel-springer-and-kkr-finalize-division-of-media-group/'
+          - 'https://www.fipp.com/news/axel-springer-announces-new-corporate-structure/'
+      telegraph_acquisition:
+        acquirer: 'Axel Springer SE'
+        target: 'Telegraph Media Group (Daily Telegraph, Sunday Telegraph)'
+        announced: '2026-03-06'
+        closed: '2026-06-30'
+        value: 'GBP 575M (~$761-770M)'
+        regulatory: 'approved UK, Ireland, Austria'
+        significance: 'second-largest Axel Springer investment since 1946 (after Politico $1B 2021); Doepfner ties it to AI-powered digital transformation; expands English-language footprint of Business Insider owner; NEW TO CORPUS'
+        sources:
+          - 'https://www.reuters.com/legal/transactional/germanys-axel-springer-closes-acquisition-telegraph-media-group-2026-06-30/'
+          - 'https://www.thetimes.com/business/companies-markets/article/axel-springer-completes-575m-telegraph-takeover-pzgx8ghhh'
+    openai_expiry_renewal_mapping:
+      deal: 'Axel Springer x OpenAI, announced Dec 13 2023, 3-year term per Bloomberg Law source familiar'
+      expiry_window: '~Dec 2026 (approx 3 months from Sep 8 2026)'
+      renewal_search: 'bounded Sep 2026 searches (Axel Springer OpenAI deal renewal extension 2026; Axel Springer AI licensing deal publisher 2026 Google Anthropic) surfaced NO renewal, extension, renegotiation, or termination reporting'
+      status: 'ACTIVE-but-expiring; renewal UNRESOLVED - disclosed, not claimed (iteration-492 rule: no zero-coverage claim beyond the bounded searches actually run)'
+      implication: 'if renewed, the OpenAI leg persists; if lapsed, Axel Springer AI-payer set collapses to Microsoft-only, weakening the financial-incentive stack at Business Insider while the KKR leg is already gone'
+    bi_control_case_persistence:
+      in_corpus_scores: 'OpenAI -0.42 (deal partner, HARDEST, #399); Anthropic +0.12 ($0, aspirational, #420); Meta +0.08 ($0, product-execution, #399/#420); Google -0.075 ($0, chase-deficit, #542)'
+      implication: 'mechanism 597 revises the payer set (REMOVES KKR, ADDS Microsoft four-channel) without rescuing the financial prediction: with TWO AI payers (OpenAI licensing + Microsoft partnership) the money predicts OpenAI/Microsoft softest at BI, but the observed in-corpus pattern has OpenAI hardest (-0.42). The control case against financial determinism STANDS and is now cleaner - the payer set is correctly identified. MANUAL ILLUSTRATIVE only; no new tone arrays scored this run (standing rule Aug 28 2026).'
+      falsification_family: 'joins #538, #563, #568, #578, #583, #588, #599'
+    meta_zero:
+      status: 'No known Axel Springer-Meta AI content licensing deal as of Sep 8 2026. Meta pays Business Insider owner $0.'
+    correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. Ownership corrections change the incentive map, not the causal claim. No causal claim.'
+    cautious_language_required: true
+    no_coverage_tone_claim: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value/cohens_d/ci_95 NOT_CALCULATED. In-corpus BI tone values (#399/#420/#542) cited as MANUAL ILLUSTRATIVE context, not re-scored.'
+    sources:
+      - 'https://www.prnewswire.co.uk/news-releases/axel-springer-and-microsoft-expand-partnership-across-advertising-ai-content-and-azure-services-302128889.html'
+      - 'https://www.reuters.com/legal/transactional/germanys-axel-springer-closes-acquisition-telegraph-media-group-2026-06-30/'
+      - 'https://www.reuters.com/markets/deals/german-media-empire-axel-springer-split-deal-with-kkr-2024-09-19/'
+      - 'https://947thebeast.com/2025/04/29/axel-springer-and-kkr-finalize-division-of-media-group/'
+      - 'https://www.fipp.com/news/axel-springer-announces-new-corporate-structure/'
+      - 'https://www.thetimes.com/business/companies-markets/article/axel-springer-completes-575m-telegraph-takeover-pzgx8ghhh'
+      - 'https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content'
+      - 'https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism'
+      - 'https://llmpulse.ai/blog/ai-content-licensing-deals/'
+    research_method: '3 browser.search query sets this run (Axel Springer OpenAI deal renewal extension 2026; Axel Springer AI licensing deal publisher 2026 Google Anthropic; Axel Springer KKR split completed media classifieds Doepfner) + 1 follow-up (Axel Springer Telegraph Media Group bid 575 million outcome) + browser.open first-hand read of the CTOL Digital partnership summary; PR Newswire release text verified via search-result excerpts (technode.global, aap.com.au relays); all URLs verbatim from Full-URL listings; no canonical URLs constructed; bounded absences per iteration-492 rule; pre-commit greps confirmed zero Microsoft-Axel Springer partnership mentions in competitor-entities.yaml (one passing line-2704 Sherwood secondary-summary mention only), zero KKR-split-finalization mentions, zero Telegraph-acquisition mentions, zero test_type_c_604 files on disk, no #604 in git log, mechanism_id 597 free'
+    novelty: 'FIRST corpus formalization of the Microsoft x Axel Springer four-channel partnership (Apr 29 2024); FIRST KKR-split ownership correction (Apr 29 2025 finalization) with dated note on the stale majority-owned-by-KKR wording; FIRST corpus record of the Telegraph Media Group acquisition (closed Jun 30 2026, GBP 575M); FIRST OpenAI-deal expiry/renewal mapping (Dec 2026) for any tracked-publication owner; distinct from mechanism 143 (OpenAI+KKR+Google triple-layer, now partially corrected), #443 (Microsoft PCM, different instrument), #399/#420 (BI behavioral control case, no financial-architecture change), and #448 (Reddit dual-licensing, different owner)'
+    verification:
+      iteration: 604
+      type: 'C'
+      date: '2026-09-08 06:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
