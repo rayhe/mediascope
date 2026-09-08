@@ -448,7 +448,7 @@ class TestNoBrittleSweep596:
 
 
 class TestRotationCycleGuard596:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "9590385"  # anchored to main commit by followup
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type E #596 followup: ...") and doc-sync commits interleave
