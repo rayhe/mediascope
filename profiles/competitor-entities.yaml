@@ -14210,6 +14210,18 @@ relationship_types:
     for majority of digital ad revenue - distinct from licensing or investment
   indirect_endowment: No direct financial tie, but publisher's parent institution
     has endowment exposure to entity's investors
+  licensing_via_parent: Licensing deal signed by publisher's parent company,
+    flowing to the publication (e.g. Axel Springer-OpenAI deal covering
+    Business Insider) - added Sep 2026, Type A #399
+  strategic_partnership_via_parent: >-
+    Multi-channel strategic partnership signed by publisher's parent
+    (e.g. Axel Springer x Microsoft four-channel deal Apr 29 2024 -
+    ad-tech, AI chat pilots, MSN content, Azure migration) - added
+    Sep 2026, Type C #604 mechanism 597
+  none_direct_indirect_via_google: >-
+    No direct financial tie to the entity, but indirect exposure via a
+    third party (e.g. FT-Anthropic via Google channel) - added Sep 2026,
+    Type A #441
 coverage_predictions:
   softer: Financial incentive predicts measurably softer coverage tone
   softer_than_expected: Coverage softer than editorial stance would predict, given

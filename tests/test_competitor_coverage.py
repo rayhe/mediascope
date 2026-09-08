@@ -38,23 +38,39 @@ class TestCompetitorEntities:
         assert expected.issubset(set(entities.keys())) or set(entities.keys()) == expected or "perplexity" in entities
 
     def test_entity_has_required_fields(self):
-        """Each entity must have display_name, aliases, regex, and category."""
+        """Each canonical competitor entity must have display_name, aliases,
+        regex, and category. Canonical = entries carrying display_name.
+        Type C mechanism records under entities: (flat with mechanism_id,
+        e.g. srmg_pif_pmc..._422 from Type C #609; or nested-mechanism
+        containers, e.g. reddit holding mechanism_448 from Type C #448 via
+        Type D #449) use a different schema and are excluded - the same
+        mechanism-entry filter convention as
+        test_financial_relationships.py
+        TestCompetitorCoverageResearch.test_publications_have_meta_coverage."""
         import yaml
         with open(Path(PROFILES_DIR) / "competitor-entities.yaml") as f:
             data = yaml.safe_load(f)
-        for key, defn in data["entities"].items():
+        canonical = {k: v for k, v in data["entities"].items()
+                     if isinstance(v, dict) and "display_name" in v}
+        assert len(canonical) >= 17, \
+            f"expected >=17 canonical competitor entities, got {len(canonical)}"
+        for key, defn in canonical.items():
             assert "display_name" in defn, f"{key} missing display_name"
             assert "aliases" in defn, f"{key} missing aliases"
             assert "regex" in defn, f"{key} missing regex"
             assert "category" in defn, f"{key} missing category"
 
     def test_entity_regex_compiles(self):
-        """Every entity regex should compile without error."""
+        """Every canonical competitor entity regex should compile without
+        error. Type C mechanism records under entities: carry no regex field
+        and are excluded."""
         import re
         import yaml
         with open(Path(PROFILES_DIR) / "competitor-entities.yaml") as f:
             data = yaml.safe_load(f)
         for key, defn in data["entities"].items():
+            if not isinstance(defn, dict) or "display_name" not in defn:
+                continue
             try:
                 re.compile(defn["regex"])
             except re.error as e:
@@ -148,7 +164,9 @@ class TestPublicationRelationships:
             "indirect", "indirect_endowment", "mixed", "negotiating",
             "adversarial", "litigation", "adversarial_litigation",
             "settlement", "settlement_reported", "settlement_revenue",
-            "coercive", "commercial_partnership", "none"
+            "coercive", "commercial_partnership", "none",
+            "none_direct_indirect_via_google",  # added Sep 2026 FT Anthropic, Type A #441
+            "lawsuit_active",  # added Sep 2026 news-corp Perplexity, Type A #522
         }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]
@@ -163,7 +181,9 @@ class TestPublicationRelationships:
         valid_predictions = {
             "softer", "softer_than_expected", "neutral", "adversarial",
             "positive_if_deal_confirmed", "unknown", "neutral_to_absent",
-            "neutral_to_skeptical", "mixed"  # added Aug 2026 FT Anthropic and news-corp Google, Type D #402 cross-validation
+            "neutral_to_skeptical", "mixed",  # added Aug 2026 FT Anthropic and news-corp Google, Type D #402 cross-validation
+            "softer via Google channel",  # added Sep 2026 FT Anthropic, Type A #441
+            "harder",  # added Sep 2026 news-corp Perplexity lawsuit_active counterpart, Type A #522
         }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]

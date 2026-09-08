@@ -38,15 +38,27 @@ class TestCompetitorEntities(unittest.TestCase):
                         f"Missing entities: {expected - actual}")
 
     def test_entity_has_required_fields(self):
-        """Each entity must have display_name, aliases, regex, category."""
+        """Each canonical competitor entity must have display_name, aliases,
+        regex, category. Canonical = entries carrying display_name. Type C
+        mechanism records under entities: (flat with mechanism_id, or
+        nested-mechanism containers) use a different schema and are excluded -
+        see the mechanism-entry filter in
+        TestCompetitorCoverageResearch.test_publications_have_meta_coverage."""
         required = {"display_name", "aliases", "regex", "category"}
-        for name, entity in self.entities["entities"].items():
+        canonical = {n: e for n, e in self.entities["entities"].items()
+                     if isinstance(e, dict) and "display_name" in e}
+        self.assertTrue(len(canonical) >= 17,
+                        f"expected >=17 canonical entities, got {len(canonical)}")
+        for name, entity in canonical.items():
             for field in required:
                 self.assertIn(field, entity, f"{name} missing {field}")
 
     def test_entity_regexes_compile(self):
-        """All entity regexes must be valid."""
+        """All canonical entity regexes must be valid. Type C mechanism
+        records under entities: carry no regex and are excluded."""
         for name, entity in self.entities["entities"].items():
+            if not isinstance(entity, dict) or "display_name" not in entity:
+                continue
             try:
                 re.compile(entity["regex"])
             except re.error as e:

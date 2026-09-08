@@ -1828,6 +1828,18 @@ competitor_relationships:
     direction: none
     description: No financial relationship.
     coverage_prediction: neutral
+  amazon:
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No known direct financial relationship.
+    coverage_prediction: neutral
+  apple:
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No known direct financial relationship. Major App Store distribution partner, high-value advertiser ecosystem. No AI licensing deal disclosed.
+    coverage_prediction: neutral
 cross_entity_coverage_analysis:
   guardrails_investigation_partner_validation:
     mechanism_number: 10
