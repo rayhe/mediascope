@@ -30366,3 +30366,30 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 
 
 ---
+
+---
+#612 Type A: WIRED x Samsung Galaxy Glasses Selection-Gap Persistence at 48 Days - Mechanism 374 Extended 38 to 48 Days - Sep 8 2026 15:00 PDT
+
+**Date:** 2026-09-08 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 611 E -> 612 A)
+**Type:** A - Competitor Coverage Deep Dive (WIRED x Samsung Galaxy Glasses vs Meta)
+
+**Finding:** WIRED standalone-article selection gap on Samsung Galaxy Glasses persists to 48 days (Jul 22 to Sep 8 2026). Bounded search-engine verification with the identical query as the Aug 29 check (site:wired.com Samsung Galaxy Glasses) returns no WIRED standalone article this run, the same result as Aug 29. The site operator is unsupported by this engine, so this is a search-index-bounded absence per the iteration-492 rule, never a corpus-proven zero. The Boone Ashworth Aug 2 category-headline piece carries the single known WIRED in-passing mention (mechanism 89); it is not a standalone article and does not close the gap. Product newsworthiness is intact: fall 2026 shipping window active, fresh third-party corroboration (martincid.com crawl 7h ago, TechTimes Unpacked piece crawl 18h ago, Wikipedia updated 15 days ago, Android Police Jul 23 hands-on), quoting 12MP Sony IMX681 with autofocus (a capability Meta Ray-Ban fixed-focus lacks) and 379 to 499 USD pricing matching the Meta Ray-Ban Gen 2 bracket, so the old-news defense does not apply. In the same window the Meta privacy-framing cycle continued in peer publications (The Times Sep 7 2026 London street-test, pervert glasses framing, 7M sold 2025 figure, autumn Snap and Google entries named). Extends mechanism 374 persistence from 38 to 48 days. NOT a falsification-family member; selection-gap persistence extension in the mechanism 39/42/89/374 lineage. Verdict: bounded absence persists, directional not dispositive. Correlation is not causation.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule). Carried illustrative arms from mechanism 374: Meta [-0.72, -0.82, -0.78, -0.65, -0.7], Samsung [0.1, 0.08, 0.05, 0.12, 0.07]. Current venv engine on these synthetic arrays: welch t=-25.340748822079505 p=1.0386087222857895e-06, cohens_d=-16.02689677840004 (differs from the Aug 29 YAML-recorded -9.14/3.0e-05/-4.12; exact values depend on the scoring module per the 374 note). Finding layer refuses: p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False. Engine-side significance on synthetic inputs vs finding-layer refusal is the standing engine/finding divergence, not an oversight.
+
+**Confounders Ranked:** STRONG: (1) Meta 70 percent smart glasses market share with 7M sold 2025 naturally attracts more scrutiny. MODERATE: (1) WIRED may hold Samsung glasses coverage for a review closer to the fall 2026 shipping date (preview-not-review still applies); (2) search-engine index coverage of wired.com is bounded and the site operator is unsupported by this engine. WEAK: (1) Samsung shared the Jul 22 Unpacked stage with foldables and watches, glasses not the lead product.
+
+**Research method:** browser.search for the identical site query as Aug 29 plus unquoted corroboration queries; URLs copied verbatim from the Full-URL listings (including the capital-W TechTimes URL as surfaced); wired.com direct fetch policy-blocked; own-corpus GitHub commits in the quoted query rejected as circular per the #611 convention; no zero-coverage claims per the iteration-492 rule.
+
+**New Type A files:** `tests/test_type_a_612_wired_samsung_gap_persistence_48_days_sep08_3pm.py` - 7 classes, 62 def-tests (59 passing, rotation-guard class deselected pre-commit per the #565 followup convention; anchor patched in the followup). YAML insertion: mechanism_id 601 (next free numeric), key `gap_persistence_48_day_check_sep08_612` under competitor_relationships.samsung in profiles/wired.yaml; validated by re-parse with leaf-type/value assertions; no em dashes in mechanism or test file.
+
+**Artifact readiness:** No analysis.json update warranted. Selection-absence finding with illustrative-only scorer; mechanism is directional.
+
+**Rotation Transparency:** Previous entry #611 Type E at 14:00 PDT Sep 8 2026 (commit 96be212 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Selected Type A.
+
+**Novelty Verification:** Zero test_type_a_612 files on disk before this run (glob verified); no Type A commit with 612 in the title (git log --grep verified); mechanism_id 601 verified next-free across profiles/*.yaml and profiles/careers/.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #612 file (rotation guard deselected pre-commit): 59 passed, 0 failed
+- count_stats.py --check: green (32172 tests / 940 files)
+---

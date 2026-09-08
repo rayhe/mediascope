@@ -3278,6 +3278,100 @@ competitor_relationships:
       - Engadget explicitly notes Meta hacking services allow perverts to disable LED and predicts Samsung will experience similar influx - identical privacy risk acknowledged in other pubs but not in WIRED selection
       - Selection gap means WIRED smart glasses narrative focuses exclusively on Meta as privacy threat without acknowledging identical Samsung/Google hardware - entity-selective privacy vocabulary
       cautious_language: Financial correlation does not imply causation. Variable pay creates structural incentive for softer coverage not proof of editorial influence. Market share (Meta 70% 7M sold 2025) and cultural consensus (pervert glasses meme Jimmy Kimmel Lorde TikTok/X) are strong confounders for entity selection. Editorial lane (enthusiast vs investigative) mediates financial incentive. Waveform positive counterexample shows enthusiast lane produces innovation framing for same product that investigative lane frames as surveillance. Samsung zero coverage is selection gap not softer coverage, leaving financial predictor untested for WIRED specifically. No claim of editorial control, only structural incentive alignment. Illustrative tone scores are synthetic controlled arrays not empirical corpus significance. 38-day zero-article gap is empirical search verification Aug 29 2026.
+    gap_persistence_48_day_check_sep08_612:
+      mechanism_id: 601
+      date_analyzed: '2026-09-08'
+      type: Type A - Competitor Coverage Deep Dive - WIRED x Samsung Galaxy Glasses - 48-Day Selection-Gap Persistence Check
+      iteration: 612
+      iteration_type: A
+      iteration_title: 'Type A #612: WIRED x Samsung Galaxy Glasses selection-gap persistence at 48 days'
+      iteration_time: '2026-09-08 15:00 PDT'
+      goal_id: goal_54093bda4145
+      scheduled_job_id: mediascope-daily-iteration
+      publication_focus: WIRED
+      entity_pair: 'Samsung vs Meta'
+      pair: 'WIRED x Samsung Galaxy Glasses (vs Meta)'
+      finding: >
+        WIRED standalone-article selection gap on Samsung Galaxy Glasses persists
+        to 48 days (Jul 22 to Sep 8 2026). Bounded search-engine verification
+        (identical query as the Aug 29 check: site:wired.com Samsung Galaxy
+        Glasses) returns no WIRED standalone article this run, the same result
+        as Aug 29. The Boone Ashworth Aug 2 category-headline piece carries the
+        single known WIRED in-passing mention of Samsung glasses, which is not
+        a standalone article and does not close the gap. The product remains
+        newsworthy: the fall 2026 shipping window is active and third-party
+        corroboration is fresh (martincid.com crawl 7h ago, TechTimes Unpacked
+        piece crawl 18h ago, Wikipedia updated 15 days ago, all quoting hands-on
+        impressions and 379 to 499 USD pricing), so the old-news defense does
+        not apply. In the same window the Meta privacy-framing cycle continued
+        in peer publications (The Times Sep 7 2026 London street-test of Meta
+        glasses with pervert glasses framing, 7M sold 2025 figure, autumn Snap
+        and Google entries named). Extends mechanism 374 persistence from 38 to
+        48 days. Verdict: bounded absence persists, search-index-bounded per the
+        iteration-492 rule, directional not dispositive. Correlation is not
+        causation.
+      gap_days: 48
+      gap_start: '2026-07-22'
+      gap_check_date: '2026-09-08'
+      prior_check: '2026-08-29 (38 days, mechanism 374)'
+      search_verification_sep08: 'browser.search site:wired.com Samsung Galaxy Glasses returns No results found on Sep 8 2026, same engine and same query as the Aug 29 check; the site operator is unsupported by this engine, so this is a search-index-bounded absence, not a corpus-proven zero'
+      known_wired_mention: 'Boone Ashworth Aug 2 2026 Is It Possible to Make Smart Glasses That Are Not Creepy: single dismissive sentence framing Samsung as future entrants, mechanism 89, in-passing mention not a standalone article'
+      peer_coverage_freshness:
+        - title: 'Samsung Galaxy Glasses ship this fall in Warby Parker and Gentle Monster frames'
+          source: martincid.com
+          crawl_note: '7h ago'
+          url: 'https://www.martincid.com/technology-sv/samsung-android-xr-glasses-warby-parker-gentle-monster-2/'
+          url_source: 'verbatim Full-URL listing from browser.search Sep 8 2026'
+        - title: 'Samsung Galaxy Unpacked 2026: Two Folds, Titanium Fix, and First AI Glasses'
+          source: techtimes.com
+          published: '2026-07-22'
+          crawl_note: '18h ago'
+          url: 'https://Www.techtimes.com/articles/321249/20260722/samsung-galaxy-unpacked-2026-two-folds-titanium-fix-first-ai-glasses.htm'
+          url_source: 'verbatim Full-URL listing from browser.search Sep 8 2026'
+          key_detail: 'Galaxy Glasses 12MP Sony IMX681 with autofocus, a capability Meta Ray-Ban fixed-focus lacks; 379 to 499 USD matching Meta Ray-Ban Gen 2 bracket'
+        - title: 'Samsung Galaxy Glasses'
+          source: 'Wikipedia'
+          updated: '15 days ago'
+          url: 'https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses'
+          url_source: 'verbatim Full-URL listing from browser.search Sep 8 2026'
+        - title: 'We went hands-on with Samsungs smartglasses. Here is why Meta should be worried'
+          source: androidpolice.com
+          published: '2026-07-23'
+          url: 'https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/'
+          url_source: 'verbatim Full-URL listing from browser.search Sep 8 2026'
+      meta_cycle_comparator: 'The Times Sep 7 2026 Fear and loathing on the streets of London with Meta smart glasses: pervert glasses framing, 7M sold 2025 figure, autumn Snap and Google entries named; snippet-verbatim, full article not opened. Shows the Meta privacy-framing cycle is active while WIRED extends no equivalent scrutiny to Samsung identical hardware.'
+      meta_cycle_url: 'https://www.thetimes.com/uk/technology-uk/article/meta-glasses-rayban-privacy-recording-ai-0l82sx8sw'
+      meta_cycle_url_source: 'verbatim Full-URL listing from browser.search Sep 8 2026'
+      carried_illustrative_arms:
+        note: 'Carried unchanged from mechanism 374. Synthetic controlled arrays, NOT empirical WIRED corpus scores.'
+        meta_tones: [-0.72, -0.82, -0.78, -0.65, -0.7]
+        samsung_tones: [0.1, 0.08, 0.05, 0.12, 0.07]
+      asymmetry_scorer_result:
+        method: manual_illustrative
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        score_direction: samsung_minus_meta_selection_absence
+        engine_drift_check: 'Current venv engine on the carried illustrative arrays: welch_t_test gives t=-25.340748822079505 p=1.0386087222857895e-06, cohens_d gives d=-16.02689677840004. Differs from the Aug 29 YAML-recorded -9.14/3.0e-05/-4.12, exact values depend on the scoring module per the 374 note. Engine-side significance on synthetic inputs vs finding-layer refusal is the standing engine/finding divergence, not an oversight.'
+        statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. p_value/cohens_d NOT_CALCULATED at the finding layer. correlation_not_causation. Bounded absence per the iteration-492 rule: no zero-coverage claims.'
+      research_method: 'browser.search for the identical site query as Aug 29 plus unquoted corroboration queries; URLs copied verbatim from the Full-URL listings; wired.com direct fetch policy-blocked; own-corpus GitHub commits in the quoted query rejected as circular per the #611 convention; no zero-coverage claims per the iteration-492 rule.'
+      discovery_summary: 'WIRED Samsung Galaxy Glasses standalone-article selection gap extends from 38 days (mechanism 374, Aug 29) to 48 days (Sep 8) with product newsworthiness intact. Joins the selection-gap strand of mechanisms 39, 42, 89, 374.'
+      cross_references:
+        - 39
+        - 42
+        - 89
+        - 374
+      legitimate_factors:
+        - factor: 'WIRED may hold Samsung glasses coverage for a review closer to the fall 2026 shipping date; preview-not-review still applies'
+          strength: moderate
+        - factor: 'Search-engine index coverage of wired.com is bounded and the site operator is unsupported by this engine'
+          strength: moderate
+        - factor: 'Samsung shared the Jul 22 Unpacked stage with foldables and watches; glasses were not the lead product'
+          strength: weak
+        - factor: 'Meta 70 percent smart glasses market share with 7M sold 2025 naturally attracts more scrutiny'
+          strength: strong
+      cautious_language: 'Bounded absence per the iteration-492 rule: bounded by search-index visibility, not a corpus-proven zero. Financial correlation does not imply causation. The gap is a selection absence (no standalone WIRED article surfaced in the bounded query sets), not a framing measurement. No claim of editorial control. Illustrative tone scores are synthetic controlled arrays, not empirical corpus significance.'
 cross_entity_wearables_framing:
   date_analyzed: '2026-08-05'
   summary: 'WIRED''s wearable coverage reveals stark framing asymmetry by manufacturer identity. Camera-equipped wearables from Apple and Snap receive empathetic/playful product coverage from WIRED''s most senior consumer tech correspondent (Lauren Goode), while Meta''s camera glasses receive institutional surveillance/privacy alarm framing from other staffers (Dell Cameron, Dhruv Mehrotra). Same hardware capability (face-mounted cameras), radically different narrative treatment determined by manufacturer identity. The asymmetry is most visible in the HARDWARE COMPARISON: Apple Vision Pro has 12 outward- facing cameras, 5 sensors, and 6 microphones - technically the most surveillance-capable consumer wearable ever sold - yet receives ZERO surveillance/privacy framing from WIRED. Meta Ray-Ban has a single 12MP camera - and receives sustained investigative surveillance framing.
