@@ -92,7 +92,7 @@ and the README top-level stats (Tests / Test files) are refreshed to the
 post-run totals.
 
 Rotation guard: the 591-595 window follows A->B->C->D->E->A adjacency in
-git-commit order (newest first) as E,D,C,B,A, closing the C->D edge this
+git-commit order (newest first) as D,C,B,A,E, closing the D->C edge this
 run. ANCHORED at this run's commit via the followup-commit convention
 established by Type D #565: the main commit carries the
 POST_COMMIT_ANCHOR placeholder (guard class deselected pre-commit);
@@ -630,7 +630,7 @@ class TestNoBrittleSweep595:
 
 
 class TestRotationCycleGuard595:
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "8fed1125e9bf74a51034183737acee8abd82d979"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type D #595 followup: ...") and doc-sync ("Type C #594
@@ -666,8 +666,8 @@ class TestRotationCycleGuard595:
                 f"position {i}: expected Type {typ} {num}, got {subjects[i]!r}"
 
     def test_rotation_adjacency_cycle_valid(self):
-        # E->D is the edge this run closes; the full 5-window must be a
-        # rotation walk in commit-newest-first order: E,D,C,B,A (the
+        # D->C is the edge this run closes; the full 5-window must be a
+        # rotation walk in commit-newest-first order: D,C,B,A,E (the
         # rotation runs backward in newest-first order). (order[a] -
         # order[b]) % 5 == 1 steps one position backward from the newer
         # commit a to the older commit b, i.e. one rotation step forward.
@@ -678,7 +678,7 @@ class TestRotationCycleGuard595:
             m = re.search(r"Type ([A-E]) #(\d+):", s)
             assert m, f"unparseable rotation subject: {s!r}"
             observed.append(m.group(1))
-        assert observed == ["E", "D", "C", "B", "A"]
+        assert observed == ["D", "C", "B", "A", "E"]
         for a, b in zip(observed, observed[1:]):
             assert (order[a] - order[b]) % 5 == 1, \
                 f"rotation broken: {a} -> {b} is not a valid cycle edge"
