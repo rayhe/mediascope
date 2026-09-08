@@ -336,7 +336,7 @@ class TestRotationCycleGuard603:
         ("Type C", 599),
     ]
     # Anchor: patched in followup - see iteration-log entry for #603.
-    ANCHOR_MAIN_COMMIT = "PENDING_FOLLOWUP_PATCH"
+    ANCHOR_MAIN_COMMIT = "811c1ed"
 
     def test_window_sequence(self):
         seq = [(t, n) for t, n in self.EXPECTED_WINDOW_NEWEST_FIRST]
