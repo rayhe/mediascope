@@ -97,9 +97,12 @@ class TestIterationNumberAndRotation:
 
     def test_previous_main_type_was_d(self):
         subjects = self._mains()
-        assert re.search(r"Type D #600:", subjects[0]), (
-            f"expected newest main commit to be Type D #600, got: {subjects[0]!r}"
-        )
+        # Pre-commit the newest main commit is #600 D; post-commit it is
+        # this run's #601 E with #600 D directly beneath. Either way, #600 D
+        # must be the rotation predecessor in the top two main commits.
+        assert re.search(r"Type D #600:", subjects[0]) or re.search(
+            r"Type D #600:", subjects[1]
+        ), f"#600 D not found in top two mains: {subjects[:2]!r}"
 
     def test_rotation_next_after_d_is_e(self):
         order = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
