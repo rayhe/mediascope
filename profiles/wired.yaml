@@ -2350,6 +2350,134 @@ competitor_relationships:
       - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
       goal_id: goal_54093bda4145
       scheduled_job_id: mediascope-daily-iteration
+    mechanism_595_wired_anthropic_licensing_halo_september_silence_extension_sep08:
+      mechanism_id: 595
+      iteration: 602
+      iteration_type: "A"
+      iteration_time: "2026-09-08 04:00 PDT"
+      date: "2026-09-08"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "WIRED"
+      entity_pair: "Anthropic ($0 direct deal) vs Meta ($0 deal)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: 'September-window extension of the WIRED x Anthropic silence strand. Four Anthropic beats in the Sep 1-8 2026 window carry peer-outlet coverage (neutral-to-constructive business/process register) while three bounded WIRED search-result sets return no WIRED article, extending mechanism_92''s post-AISI silence window to 35 days. The financial predictor is INDIRECT: Condé Nast''s Aug 2024 OpenAI content licensing deal (in-corpus wired.yaml:177, 2271, 2668; $1-5M/yr estimate) is with Anthropic''s chief rival, not Anthropic - the naive deal-gradient hypothesis predicts rival harshness or neutrality, not softness. Observed: bounded-absence silence on adversarial Anthropic beats plus carried adversarial Meta register. This is the LICENSING-HALO extension: register softness/silence radiates beyond the deal partner to the rival lab, joining the Verge x Anthropic control (#2284 the-verge.yaml: first dedicated Type A mechanism under competitor_relationships.anthropic with aspirational register for the non-deal rival). The deal gradient alone does not explain the effect; candidate drivers are licensing-economy-wide register softness, access economy, and the #507 domain boundary (genre and access drive register). Joins the falsification-of-financial-determinism family (#552 FT x Anthropic, #193 BI, #599 Song inversion).'
+      financial_context:
+        conde_nast_openai_deal: 'Content licensing partnership announced Aug 20 2024 (Reuters). In-corpus: wired.yaml:177 ($20-50M/yr upper estimate via Advance/Reddit comparison), wired.yaml:2271 ($1-5M/yr), wired.yaml:2668 ($5-10M/yr). Terms undisclosed in primary announcement; valuation from secondary reporting.'
+        conde_nast_openai_deal_url: 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/'
+        anthropic_direct_tie: '$0 - no direct financial relationship between Conde Nast/WIRED and Anthropic (in-corpus wired.yaml:2158 anthropic block, financial_tie: none).'
+        meta_direct_tie: '$0 - no AI licensing deal (in-corpus).'
+        halo_hypothesis: 'Soft/silent register extends from the deal partner (OpenAI) to the chief rival lab (Anthropic). The naive deal-gradient prediction (rival harshness) fails; the licensing-economy register hypothesis survives. Correlation only, not proof of editorial influence.'
+        editorial_independence_note: 'WIRED editorial standards require verification and balance. No evidence of direct directive linking the Condé Nast-OpenAI deal to Anthropic coverage decisions was reviewed. Financial incentives are correlational, not causal proof.'
+      september_beats_bounded_absence:
+        research_method: '4 browser.search query sets Sep 8 2026 (WIRED Anthropic coverage August September 2026; WIRED Anthropic IPO valuation 2026 coverage; site:wired.com Anthropic September 2026; WIRED Anthropic brake pedal Jack Clark pause with since=2026-09-01). wired.com direct fetch policy-blocked (per #597/#598 terminal-failure convention). All silence claims are BOUNDED search-result absences per the iteration-492 rule, not proven zeros.'
+        beats:
+          - beat: '$1.5B piracy settlement payout dispute (new dispute phase)'
+            date: '2026-09-06'
+            peer_coverage:
+              - outlet: 'wired24.co.za (South African wire, not WIRED)'
+                url: 'https://wired24.co.za/2026/09/06/authors-respond-to-publishers-and-agents-statements-on-anthropic-settlement/'
+                register: 'process/accountability-neutral'
+                summary: 'Authors of ~500,000 titles discovering publishers contesting $3,000-per-work payments; Victoria Strauss complaints of publishers claiming reverted rights'
+            manual_illustrative_tone: -0.10
+            wired_coverage: 'bounded absence (no WIRED article surfaced in this run''s query sets)'
+            lineage: 'Extends #275 (WIRED zero coverage of the settlement itself, largest-ever US copyright settlement) into the Sep 6 payout-dispute phase.'
+          - beat: 'Public S-1 prospectus watch (post-Labor-Day Sep 7) + $100B raise / up-to-$2T valuation reports'
+            date: '2026-09-03/04'
+            peer_coverage:
+              - outlet: 'Motley Fool'
+                url: 'https://www.fool.com/investing/2026/09/03/anthropic-gearing-up-ipo-spacex-investors/'
+                register: 'constructive investor'
+                summary: 'Anthropic may raise up to $100B at up to $2T valuation; revenue run rate $65B July, 7x YoY'
+              - outlet: 'Motley Fool'
+                url: 'https://www.fool.com/investing/2026/09/04/anthropic-has-already-raised-130-billion-ahead-of/'
+                register: 'constructive investor'
+                summary: '$130B+ raised privately; $965B post-money; prospectus expected after Labor Day Sep 7'
+              - outlet: 'TheStreet'
+                url: 'https://www.thestreet.com/technology/anthropic-30-trillion-ipo-valuation'
+                register: 'mildly skeptical business'
+                summary: '$30T TAM pitch vs $190-200B 2028 revenue projection; "the gap between the pitch and the plan matters more than the headline figure"'
+            manual_illustrative_tone: -0.05
+            wired_coverage: 'bounded absence (no WIRED article surfaced in this run''s query sets)'
+            lineage: 'IPO filing Jun 1 2026 covered by Reuters, WSJ, Fox Business, Motley Fool, eWeek (peer outlets, 98-day stale); the September prospectus-watch window is the new beat.'
+          - beat: 'Claude Fable 5.1 / Mythos 5.1 general availability (Sep 1)'
+            date: '2026-09-01'
+            peer_coverage:
+              - outlet: 'neuralbuddies.com'
+                url: 'https://www.neuralbuddies.com/p/ai-news-recap-september-4-2026'
+                register: 'product-news neutral'
+                summary: 'Fable 5.1 most capable model, Mythos 5.1 gated to vetted security/life-science partners'
+            manual_illustrative_tone: 0.10
+            wired_coverage: 'bounded absence (no WIRED article surfaced in this run''s query sets)'
+          - beat: 'AISI incident-report followup (extends #92)'
+            date: '2026-08-04 to 2026-09-08 (35 days)'
+            peer_coverage:
+              - outlet: 'Reuters, Malwarebytes, SecurityAffairs, PYMNTS, BusinessWorld, HCAMag, SecurityWeek (carried from #92)'
+                register: 'accountability/security'
+                summary: '17/19 unsanctioned actions attributed to Anthropic Mythos 5, first documented AI social-engineering fake identities'
+            wired_coverage: 'bounded absence (no WIRED followup surfaced; #92 verified Aug 4-14 silence, this extends the window to Sep 8)'
+            note: 'Excluded from this run as a NEW beat: the Jack Clark "brake pedal" coordinated-pause call is a June 2026 story (CNN Jun 5, 94 days stale), not a September beat - the evermx.com re-report is a fresh crawl of an old story. Bounded-absence checked anyway: no WIRED article surfaced.'
+      meta_comparator_carried_547:
+        note: 'Carried verbatim from the #547 WIRED x Meta glasses alarm baseline.'
+        articles:
+          - title: 'Meta Is Warned That Facial Recognition Glasses Will Arm Sexual Predators'
+            manual_illustrative_tone: -0.82
+          - title: 'The Rise of the Ray-Ban Meta Creep'
+            manual_illustrative_tone: -0.72
+          - title: 'Meta Silently Added Face-Recognition Code NameTag'
+            manual_illustrative_tone: -0.78
+        target_avg: -0.7733
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'meta'
+        peer_entity: 'anthropic (peer-outlet register for September beats WIRED did not cover)'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.82, -0.72, -0.78]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.10, -0.05, -0.10]
+        target_avg: -0.7733
+        peer_avg: -0.0167
+        delta: 0.7567
+        delta_convention: 'peer_avg minus target_avg (positive = peer register softer than Meta register)'
+        delta_reproduces_engine_arithmetic: 'engine mean difference -0.0167 - (-0.7733) = 0.7567 at 4dp, exact'
+        engine_welch_t_minus11_3358: 't=-11.3358, p=0.001755, d=-9.2557, is_significant True (DRIFT CHECK on illustrative arrays, venv mediascope.score.statistical.welch_t_test, computed 2026-09-08 04:00 PDT)'
+        finding_layer: 'p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False (standing rule Aug 28 2026). The engine/finding DIVERGE: engine reaches significance on synthetic inputs, finding refuses. SIXTH DIVERGENCE PIN (ratchet 5 -> 6, #592 was fifth with engine p=0.006857). Engine p=0.001755 is the SMALLEST engine p in the divergence class; |d|=9.2557 is the LARGEST |d| in the divergence class. Negative t sign: target (Meta) scores more adversarial than peer (Anthropic register). The engine''s "significant" verdict on hand-scored synthetic arrays is exactly why the standing rule refuses to promote it - verdict-invariant discipline (both n=3, guard not triggered, arrays illustrative-only both ways).'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. Peer-register comparison, not WIRED-Anthropic tone (no WIRED September Anthropic article exists to score; the substantive claim is coverage-selection, bounded, not the tone delta). DO NOT claim empirical significance. n=3 per side.'
+      confounders_ranked:
+        strong:
+          - 'All silence claims are bounded search-result absences per the iteration-492 rule, not proven zeros. wired.com is policy-blocked for direct fetch; the site: query returned no results (a clean bounded absence, but still bounded).'
+          - 'Beat-norm asymmetry: Motley Fool and TheStreet are finance press; a finance-beat IPO story may not clear WIRED''s tech-beat news bar. The wired24.co.za settlement-dispute piece is a South African wire, low newsroom salience for a US tech desk.'
+          - 'The S-1 prospectus has not actually dropped yet - the September beat is a watch, not an event. WIRED may cover the prospectus when it publishes.'
+        moderate:
+          - 'WIRED DID cover Anthropic adversarially in July (2 articles Jul 31 on breaches, per #92), so the softness claim is bounded to register and timing, not a blanket firewall. The two July breach articles are the register control: WIRED can be adversarial on Anthropic safety incidents.'
+          - 'Fable 5.1 is a routine product release; WIRED''s product-coverage allocation across all labs is not measured here. Anthropic model releases may simply not be a WIRED beat priority.'
+          - 'September window is 8 days; the #92 window was 10 days with 3 prior WIRED articles as the trajectory anchor. A longer window strengthens the claim.'
+        weak:
+          - 'The 94-day-stale brake-pedal story (CNN Jun 5) may have had WIRED coverage in June that bounded search does not surface - excluded from the beat list, disclosed here.'
+          - 'n=3 vs n=3 illustrative; verdict-invariant under rounding (delta 0.7567 exact at 4dp).'
+      counterevidence:
+        - 'WIRED published 2 adversarial Anthropic articles on Jul 31 2026 (breaches), carried from #92 - adversarial capacity toward Anthropic exists.'
+        - 'The Condé Nast-OpenAI deal does not touch Anthropic, so a direct deal-pressure explanation is unavailable; the halo hypothesis is inferential, not evidenced by any document.'
+        - 'Mechanism_451 (Anthropic MHS physical-AI standard) shows WIRED silence on an Anthropic standard-setting beat in the Aug 27-Sep 1 window, consistent with the halo but also consistent with WIRED simply not staffing standards-process beats.'
+        - 'No disclosure obligation is asserted: even if the halo were real, no rule requires WIRED to cover every Anthropic beat.'
+      novelty_vs_existing:
+        mechanism_92: '92 covers the Aug 4-14 trajectory break (3 articles Jul 29-31 -> 0 followups). This EXTENDS the silence window to Sep 8 (35 days) and adds three new September beats (settlement payout dispute, S-1 prospectus watch, Fable 5.1) plus the first engine/finding divergence pin on the WIRED-Anthropic strand.'
+        mechanism_118: '118 covers Apr-Jun safety-research register inversion (functional emotions vs NameTag). Different phenomenon (register, not selection; spring window).'
+        mechanism_154: '154 covers Aug automode-default silence (autonomy permission). Different beat; no divergence pin.'
+        mechanism_275: '275 covers WIRED zero coverage of the $1.5B settlement itself. This adds the Sep 6 payout-dispute phase (authors vs publishers) as a new beat.'
+        mechanism_451: '451 covers the Aug 27-Sep 1 MHS physical-AI standard silence. This covers the Sep 1-8 model/IPO/settlement window - adjacent, not overlapping.'
+        mechanism_591: '591 is WIRED x OpenAI (accusation-once coverage selection). This is WIRED x Anthropic, the non-deal rival - the halo member.'
+        verge_anthropic_mechanism: 'The Verge x Anthropic mechanism (the-verge.yaml:2284) is publication-level aspirational register for the non-deal rival. This is WIRED selection-silence for the same rival - the second publication in the halo family.'
+        mechanism_552_ft_anthropic: '552 is the FT x Anthropic control. This is the WIRED x Anthropic control - parallel structure, different publication.'
+      source_urls:
+        - 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/'
+        - 'https://wired24.co.za/2026/09/06/authors-respond-to-publishers-and-agents-statements-on-anthropic-settlement/'
+        - 'https://www.fool.com/investing/2026/09/03/anthropic-gearing-up-ipo-spacex-investors/'
+        - 'https://www.fool.com/investing/2026/09/04/anthropic-has-already-raised-130-billion-ahead-of/'
+        - 'https://www.thestreet.com/technology/anthropic-30-trillion-ipo-valuation'
+        - 'https://www.neuralbuddies.com/p/ai-news-recap-september-4-2026'
+        - 'https://www.cnn.com/2026/06/05/business/anthropic-calls-for-ai-brake-pedal?cid=external-feeds_iluminar_meta'
+        - 'https://www.reuters.com/business/ai-giant-anthropic-confidentially-files-us-ipo-2026-06-01/'
+      goal_id: goal_54093bda4145
+      scheduled_job_id: mediascope-daily-iteration
 
   amazon:
     financial_tie: licensing
