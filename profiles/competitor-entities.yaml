@@ -18665,3 +18665,87 @@ axel_springer_dual_ai_payer_microsoft_four_channel_kkr_split_telegraph_597:
       date: '2026-09-08 06:00 PDT'
       yaml_parse_clean: true
       ascii_only: true
+
+first_gen_openai_publisher_deal_renewal_window_600:
+    mechanism_id: 600
+    iteration: 609
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-08'
+    time_pdt: '11:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'First-gen OpenAI publisher-deal renewal window (Sep 2026 status) - Conde Nast (Aug 2024 multiyear), Atlantic (May 2024 multiyear), FT (Apr 2024, duration undisclosed) renewal mapping; bounded searches surface NO renewal/extension/termination reporting; treated ACTIVE per #599 convention; OpenAI Jul 2026 local-news renewal ($5M) as positive control'
+    overview: 'FIRST corpus renewal-window mapping for the first-generation OpenAI publisher licensing cohort (Apr-Aug 2024): FT (Apr 29 2024), The Atlantic (May 29 2024), Conde Nast (Aug 20 2024). Three bounded Sep 2026 browser.search query sets plus one expired/terminated sweep surfaced NO renewal, extension, renegotiation, or termination reporting for any of the three deals - only 2024 announcement coverage re-surfaces. Renewal status is UNRESOLVED for all three (disclosed, not claimed per iteration-492 rule). Per the #599 Vox convention (no termination reporting => treated as still ACTIVE), all three legs are treated ACTIVE with the renewal window flagged as the next observable financial-incentive event (companion to #604 Axel Springer Dec 2026 expiry mapping). Positive control: OpenAI DID renew a publisher deal in Jul 2026 (local-news partnership, $5M investment, newscaststudio, in-corpus competitor-entities.yaml:837/881) - renewals happen and get reported, so the absence for the three 2024 deals is informative, not a non-reporting artifact. Methodological implication: the money-to-tone predictor legs for WIRED/Atlantic/FT rest on undisclosed-terms deals of unconfirmed current term; the asymmetry framework financial leg is durable only under the ACTIVE assumption. Microsoft-OpenAI partnership noise (Oct 2025 PBC restructure, Apr 2026 exclusivity end) dominates 2026 deal-renewal search space and may mask publisher-deal reporting - recorded as a search-space confounder, not a coverage claim.'
+    legs:
+      conde_nast_leg:
+        partner: 'OpenAI'
+        publication: 'WIRED (Conde Nast brand; deal covers Vogue, The New Yorker, Vanity Fair, GQ, WIRED)'
+        announced: '2024-08-20'
+        term: 'multi-year (Reuters primary; TheWrap; Lynch company memo)'
+        value: 'undisclosed (in-corpus estimate $20-50M/yr, wired.yaml:177)'
+        scope: 'content display in ChatGPT and SearchGPT prototype with attribution and links'
+        renewal_status: 'UNRESOLVED - bounded Sep 2026 search (Conde Nast OpenAI deal renewal extension 2026) returned only 2024 announcement coverage; no renewal/extension/termination reporting'
+        in_corpus: 'wired.yaml:48 (multiyear deal since Aug 2024); the_verge.yaml:3579 (competitor halo); competitor-entities.yaml:4446 (Rufus + OpenAI + Microsoft deals)'
+        sources:
+          - 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/?outputType=chromeless'
+          - 'http://thewrap.com/conde-nast-openai-partnership/'
+          - 'https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777'
+      atlantic_leg:
+        partner: 'OpenAI'
+        publication: 'The Atlantic (Emerson Collective / Laurene Powell Jobs)'
+        announced: '2024-05-29'
+        term: 'multiyear (TheWrap)'
+        value: 'undisclosed'
+        scope: 'strategic content and product partnership; Atlantic as premium news source in ChatGPT; Atlantic Labs product collaboration with privileged OpenAI tech access and feedback channel'
+        renewal_status: 'UNRESOLVED - bounded Sep 2026 search (The Atlantic OpenAI partnership renewal 2026) returned only 2024 announcement coverage; no renewal/extension/termination reporting'
+        in_corpus: 'atlantic.yaml (licensing deal + Atlantic Labs + LPJ-OpenAI entanglement notes)'
+        sources:
+          - 'https://openai.com/index/enhancing-news-in-chatgpt-with-the-atlantic/'
+          - 'https://www.thewrap.com/vox-the-atlantic-chatgpt-openai-deal/'
+          - 'https://news.bloomberglaw.com/ip-law/openai-strikes-licensing-deals-with-the-atlantic-and-vox-media'
+      ft_leg:
+        partner: 'OpenAI'
+        publication: 'Financial Times (Nikkei)'
+        announced: '2024-04-29'
+        term: 'duration undisclosed - NOT claimed as one-year; no verified term length'
+        value: '$5-10M/yr estimated (WSJ via Digiday secondary; Reuters primary did not disclose terms)'
+        scope: 'FT journalism in ChatGPT with attribution and links'
+        renewal_status: 'UNRESOLVED - bounded Sep 2026 search (Financial Times OpenAI deal renewal extension expires 2026) returned NO publisher-deal renewal reporting; result set was dominated by Microsoft-OpenAI partnership news (Oct 2025 PBC restructure, Apr 2026 exclusivity end, ~27pct Microsoft stake, IP license through 2032). The FT renewal question is therefore the least observable of the three legs - bounded-absence with a documented search-space confounder.'
+        in_corpus: 'financial-times.yaml:3485 (payment direction: OpenAI -> FT $5-10M/yr est. + Google News AI pilot; Meta $0); #497 (FT Google DeepMind leadership renewal register, same-treatment replication of #487)'
+    positive_control:
+      event: 'OpenAI renewed a publisher partnership in Jul 2026 - local-news partnership with $5M investment (newscaststudio, Jul 22 2026; in-corpus competitor-entities.yaml:837/881)'
+      significance: 'renewals happen AND get trade-press coverage; the absence of renewal reporting for the three 2024 deals is therefore informative rather than an artifact of a non-reporting press environment'
+      boundary: 'local-news partnership is a different deal tier than the first-gen flagship publisher deals - control is on the reporting channel (renewals are reported), not on deal economics'
+    cohort_geometry:
+      first_gen_cohort: 'Axel Springer (Dec 13 2023, 3-year, expiry ~Dec 2026 mapped #604) + FT (Apr 29 2024) + Atlantic (May 29 2024) + Conde Nast (Aug 20 2024) + Vox Media (May 29 2024, #599 ACTIVE) + News Corp (May 2024, #594 five-leg)'
+      next_observable_event: 'Axel Springer OpenAI 3-year deal expiry ~Dec 2026 (#604) is the first dated renewal/decision point in the cohort; the three legs mapped here have no dated expiry on record'
+      monitoring_item: 're-run the renewal query set after the Axel Springer decision point; a lapse there would test whether first-gen deals are being quietly retired vs renewed'
+    financial_predictor_implication:
+      claim: 'the money-to-tone predictor legs for WIRED (Conde Nast), Atlantic, and FT rest on undisclosed-terms deals whose current term is unconfirmed - the asymmetry framework treats them ACTIVE under the #599 convention, but the ACTIVE status is an assumption, not a verified fact'
+      effect_on_falsification_family: 'does not join or break the falsification family (#538, #563, #568, #578, #583, #588, #599, #604) - it BOUNDS the financial leg of the whole framework: any money-predicts-tone claim at these three publications is only as durable as the ACTIVE assumption on undisclosed-terms deals with no public renewal record'
+      meta_zero: 'Meta pays $0 in AI licensing to Conde Nast, The Atlantic, and the FT (in-corpus); the $0 side of the gradient is better documented than the payer side'
+    correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. Renewal-status UNRESOLVED is a disclosed research state, not a finding of lapse. No causal claim.'
+    cautious_language_required: true
+    no_coverage_tone_claim: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value/cohens_d/ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026).'
+    sources:
+      - 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/?outputType=chromeless'
+      - 'http://thewrap.com/conde-nast-openai-partnership/'
+      - 'https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777'
+      - 'https://openai.com/index/enhancing-news-in-chatgpt-with-the-atlantic/'
+      - 'https://www.thewrap.com/vox-the-atlantic-chatgpt-openai-deal/'
+      - 'https://news.bloomberglaw.com/ip-law/openai-strikes-licensing-deals-with-the-atlantic-and-vox-media'
+      - 'https://www.newscaststudio.com/2026/07/22/openai-renews-local-news-partnership-with-5-million-investment/'
+      - 'https://www.reuters.com/legal/litigation/microsoft-end-exclusive-license-openais-technology-2026-04-27/'
+    research_method: '4 browser.search query sets this run (Conde Nast OpenAI deal renewal extension 2026; The Atlantic OpenAI partnership renewal 2026; Financial Times OpenAI deal renewal extension expires 2026; OpenAI publisher licensing deal expired terminated 2026); all URLs verbatim from Full-URL listings; no canonical URLs constructed; bounded absences per iteration-492 rule; pre-commit greps confirmed zero renewal/expiry mentions for the three 2024 OpenAI deals in profiles/ (only #604 Axel Springer expiry mapped), zero mechanism_600 keys (max numeric 599), zero test_type_c_609 files on disk, no #609 in git log'
+    novelty: 'FIRST corpus renewal-window mapping for the first-gen OpenAI publisher cohort (FT Apr 2024, Atlantic May 2024, Conde Nast Aug 2024); FIRST bounded renewal-status UNRESOLVED finding for all three; FIRST positive-control use of the Jul 2026 OpenAI local-news renewal; distinct from #604 (Axel Springer expiry ~Dec 2026, single-owner financial architecture), #599 (Vox deal stack ACTIVE convention adopted here), #594 (News Corp five-leg, no renewal mapping), and the falsification family (this run BOUNDS rather than joins it)'
+    verification:
+      iteration: 609
+      type: 'C'
+      date: '2026-09-08 11:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true

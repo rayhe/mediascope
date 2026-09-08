@@ -1,3 +1,51 @@
+#609 Type C: First-Gen OpenAI Publisher-Deal Renewal Window (Sep 2026 Status) - Conde Nast (Aug 2024 Multiyear), Atlantic (May 2024 Multiyear), FT (Apr 2024, Duration Undisclosed) Renewal Mapping; Bounded Searches Surface NO Renewal/Extension/Termination Reporting; Treated ACTIVE per #599 Convention; Jul 2026 Local-News Renewal ($5M) as Positive Control; BOUNDS the Falsification Family - Sep 8 2026 11:00 PDT
+
+**Date:** 2026-09-08 11:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 608 B -> 609 C)
+**Type:** C - Financial Incentive Mapping (first-generation OpenAI publisher licensing cohort renewal window; mechanism 600, verified next free numeric id pre-commit)
+
+## Rotation inspection
+- Newest-5 git-log, MAIN-commits only (subjects `^Type [A-E] #\d+:`), prior to this run: #608 B (main 1016ef0, followup e85ccd1), #607 A, #606 E, #605 D, #604 C. Followup commits interleave between mains, confirming the #575-lesson: rotation guards filter on MAIN subjects only.
+- This run is Type C, closing the B->C edge. Rotation guard covers the 605-609 window (C,B,A,E,D newest-first); anchor patched post-commit per the #565 followup convention.
+
+## Research (11:00 PDT, bounded, primary-source-first)
+- Conde Nast x OpenAI (Aug 20 2024): bounded search (Conde Nast OpenAI deal renewal extension 2026) returned only 2024 announcement coverage - Reuters primary (multi-year partnership, ChatGPT + SearchGPT, terms undisclosed), TheWrap (Lynch memo), Campaign US. NO renewal/extension/renegotiation/termination reporting. Deal is multi-year (Reuters, TheWrap, Lynch memo); in-corpus value estimate $20-50M/yr (wired.yaml:177).
+- The Atlantic x OpenAI (May 29 2024): bounded search (The Atlantic OpenAI partnership renewal 2026) returned only 2024 announcement coverage - OpenAI blog (strategic content + product partnership, Atlantic Labs), TheWrap (multiyear), Bloomberg Law. NO renewal reporting. Terms undisclosed.
+- FT x OpenAI (Apr 29 2024): bounded search (Financial Times OpenAI deal renewal extension expires 2026) returned NO publisher-deal renewal reporting; result set dominated by Microsoft-OpenAI partnership news (Oct 2025 PBC restructure ~27pct stake, Apr 2026 exclusivity end, IP license through 2032, revenue share capped through 2030). Duration undisclosed - NOT claimed as one-year; $5-10M/yr estimated (WSJ via Digiday secondary, in-corpus financial-times.yaml:3485). The FT leg is the least observable of the three - search-space confounder documented, not a coverage claim.
+- Expired/terminated sweep (OpenAI publisher licensing deal expired terminated 2026): returned only Microsoft-OpenAI cloud/agreement news (TechCrunch Apr 27 2026 on the $50B Amazon deal legal peril, Reuters, Unite.AI) - zero publisher licensing deal expirations or terminations surfaced.
+- URLs copied verbatim from Full-URL listings; no canonical URLs constructed; bounded absences per iteration-492 rule.
+
+## Finding
+1. FIRST corpus renewal-window mapping for the first-gen OpenAI publisher cohort (Apr-Aug 2024): FT (Apr 29), Atlantic (May 29), Conde Nast (Aug 20). Renewal status UNRESOLVED for all three - no renewal/extension/termination reporting in bounded Sep 2026 searches, only 2024 announcement coverage re-surfaces.
+2. All three legs treated ACTIVE per the #599 Vox convention (no termination reporting => still active). The renewal window is flagged as the next observable financial-incentive event, companion to #604's Axel Springer Dec 2026 expiry mapping.
+3. Positive control: OpenAI DID renew a publisher deal in Jul 2026 (local-news partnership, $5M investment, newscaststudio Jul 22 2026, in-corpus competitor-entities.yaml:837/881). Renewals happen AND get trade-press coverage - so the absence for the three 2024 deals is informative, not a non-reporting artifact. Boundary: local-news tier differs from flagship publisher deals; control is on the reporting channel, not deal economics.
+4. Framework implication: this run BOUNDS the falsification family rather than joining it (#538, #563, #568, #578, #583, #588, #599, #604 - does not join or break). The money-to-tone predictor legs for WIRED/Atlantic/FT rest on undisclosed-terms deals of unconfirmed current term; any money-predicts-tone claim at these three publications is only as durable as the ACTIVE assumption. The Meta $0 side of the gradient is better documented than the payer side. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026).
+5. Cohort geometry: Axel Springer (Dec 13 2023, 3-year, expiry ~Dec 2026 mapped #604) + FT + Atlantic + Conde Nast + Vox Media (May 29 2024, #599 ACTIVE) + News Corp (May 2024, #594 five-leg). The Axel Springer ~Dec 2026 decision point is the cohort's first dated renewal/decision - monitoring item re-runs the renewal query set after it; a lapse there would test whether first-gen deals are being quietly retired vs renewed.
+
+## Empirical stance
+- QUALITATIVE Type C mapping. tone_scores NOT_SCORED; p_value/cohens_d/ci_95 NOT_CALCULATED per standing rule Aug 28 2026; is_significant False. Correlational language only; no causal claim; no coverage-tone claim. Renewal-status UNRESOLVED is a disclosed research state, not a finding of lapse.
+
+## Confounders Ranked
+- STRONG: (1) Microsoft-OpenAI partnership news (PBC restructure, $50B Amazon deal, exclusivity end) dominates the 2026 deal-renewal search space and may mask quiet publisher-deal renewals - the FT leg's search-space confounder is documented explicitly; (2) all three deals are undisclosed-terms, so even a verified ACTIVE status would not size the incentive - the mapping is structural, not sized.
+- MODERATE: (1) bounded searches may miss reporting behind paywalls or in non-English press; (2) the ACTIVE convention is an assumption adopted for framework continuity, not a verified fact - a quiet lapse would invert the payer-side gradient.
+- WEAK: (1) the local-news positive control is a different deal tier - controls the reporting channel only.
+
+## Counterevidence (3)
+- (1) The #599 Vox convention treats no-termination-reporting as ACTIVE - this run adopts it, but the convention itself is an inference, and the Microsoft-OpenAI confounder weakens the inference for the FT leg specifically.
+- (2) OpenAI's Jul 2026 local-news renewal shows OpenAI renews publisher deals - cuts both ways: the three flagship deals may have been quietly renewed under undisclosed terms too (UNRESOLVED, not lapsed).
+- (3) Conde Nast's AI-licensing stack has grown since (Amazon Rufus Jul 2025, Perplexity 2025, Microsoft Copilot Dec 2025 pilot, Apple Intelligence in negotiations per in-corpus Adweek May 2026) - the OpenAI leg is one of several payers, diluting any single-deal incentive reading at WIRED.
+
+## Validation
+- New #609 test file: 67 def-tests, 8 classes (62 passing, rotation-guard class deselected pre-commit per #565 convention; anchor patched in followup).
+- scripts/count_stats.py --check: gate green on the repo .venv interpreter (31983 tests / 937 files).
+- YAML parse clean on competitor-entities.yaml; ASCII-only verified in test.
+
+**Novelty Verification:** Zero mechanism_600 keys in profiles/ pre-commit (grep; max numeric mechanism_id 599); zero test_type_c_609 files on disk (glob); no #609 in git log (grep); zero renewal/expiry mentions for the three 2024 OpenAI deals anywhere in profiles/ pre-commit (only #604's Axel Springer Dec 2026 expiry mapped); FIRST corpus renewal-window mapping for the first-gen cohort; FIRST positive-control use of the Jul 2026 local-news renewal; FIRST bounded renewal-status UNRESOLVED finding x3; distinct from #604 (Axel Springer single-owner architecture + Dec 2026 expiry), #599 (Vox deal stack, whose ACTIVE convention is adopted here), #594 (News Corp five-leg, no renewal mapping), and the falsification family (this run BOUNDS rather than joins).
+
+**Rotation Transparency:** Previous main commit #608 Type B at 10:00 PDT Sep 8 2026 (commit 1016ef0 verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after B is C. Selected Type C. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard609 covers window 605-609 (C,B,A,E,D newest-first), closing the B->C edge; anchor patched in followup per #565/#595/#600/#601/#602/#603/#604/#605/#606/#607/#608 convention.
+
+**Artifact readiness:** No analysis.json update warranted. Qualitative mapping; renewal statuses UNRESOLVED; no empirical tone result.
+
+---
 #608 Type B: Robert Hart (The Verge, Senior Tarbell Fellow) Cross-Entity Register Constancy - OpenAI DseWiki Adversarial (-0.65) vs Meta AI-App Clickbait Adversarial (-0.50); Tarbell Funder Chain (Moskovitz-Backed Coefficient Giving) Documented as Structural Context, Correlational-Only Boundary - Degenerate-Pin Ratchet 5 -> 6 - Sep 8 2026 10:00 PDT
 
 **Date:** 2026-09-08 10:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 607 A -> 608 B)
