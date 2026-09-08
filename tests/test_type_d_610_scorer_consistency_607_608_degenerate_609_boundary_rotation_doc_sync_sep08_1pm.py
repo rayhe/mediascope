@@ -617,11 +617,19 @@ class TestNoBrittleSweep606to610:
         raw = (TESTS_DIR / THIS_FILE).read_bytes()
         assert all(b < 128 for b in raw), "non-ASCII bytes in test file"
 
-    def test_no_precommit_610_in_git_log(self):
+    def test_exactly_one_610_main_commit_in_git_log(self):
+        # Post-commit novelty guard: exactly one Type D #610 main commit
+        # (subject ^Type D #610:). Verified zero pre-commit hits before the
+        # main commit e4e4fc2 (the pre-commit form of this guard ran green);
+        # post-commit it asserts the single main commit. Followup commits
+        # use the "Type D #610 followup:" subject and do not match.
         out = subprocess.run(
             ["git", "-C", str(REPO_ROOT), "log", "--oneline", "--grep", "#610"],
             capture_output=True, text=True)
-        assert out.stdout.strip() == "", "pre-commit #610 hit in git log"
+        mains = [l for l in out.stdout.splitlines()
+                 if re.match(r"^[0-9a-f]+ Type D #610:", l)]
+        assert len(mains) == 1, \
+            f"expected exactly one #610 main commit: {mains}"
 
 
 class TestDocSyncRatchet610:
@@ -681,7 +689,7 @@ class TestRotationCycleGuard610:
     # in the followup commit per the #565 convention. This class is
     # deselected pre-commit (it asserts the post-commit anchor) and runs
     # green in the followup.
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "e4e4fc2"
 
     @staticmethod
     def _mains():
