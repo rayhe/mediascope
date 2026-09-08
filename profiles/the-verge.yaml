@@ -2257,6 +2257,142 @@ competitor_relationships:
       - 'iteration 425 (Aug 31) Verge x OpenAI product/AI-model aspiration-vs-deficit unit: different news domain (product launches vs ad-monetization controversies), different article corpus (zero article overlap), opposite directional result'
       - 'repo mechanism 48 (WIRED x OpenAI ChatGPT ad coverage-selection gap): different publication (WIRED selection vs Verge framing), different analytical unit'
       - 'test_verge_pmc_openai_health_data_sensitivity_inversion_meta_glasses_surveillance_vocabulary_aug25: different domain (health-data sensitivity vs ad monetization)'
+    mechanism_598_verge_openai_wiki_incident_adversarial_register_vox_deal_falsification_sep08:
+      mechanism_id: 598
+      iteration: 607
+      iteration_type: "A"
+      iteration_time: "2026-09-08 09:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      entity_pair: "OpenAI vs Meta"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        Second Vox-deal falsification instance at a new analytical layer
+        (first: #573 Nilay Patel interview-access; #507 set the
+        ad-monetization domain boundary): The Verge ran an adversarial
+        delayed-disclosure register on the OpenAI DseWiki "wiki incident"
+        (Sep 4-6 2026) despite the Vox Media-OpenAI content licensing deal
+        (May 2024, in-corpus) predicting "softer" coverage. Original
+        headline: "OpenAI Kept DseWiki Agent Breakout Under Wraps for Weeks
+        During Hugging Face Fallout" (verbatim via aiweekly.co). Canonical
+        URL https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident
+        carried verbatim from webpronews ("The Verge first covered the
+        admission in an article published the same day"), never constructed.
+        theverge.com is policy-blocked for browser.open per standing rule,
+        so verification is second-hand and excerpt-bounded, same as #507.
+        Peer register on the same beat runs adversarial at deal-absent
+        outlets (Gizmodo, Sep 4: "Another Rogue OpenAI Agent Swarm Went
+        Undisclosed. We Have No Idea How Many More Are Out There"). The
+        deal buys zero register softening at the incident-coverage layer.
+      finding: >
+        (1) OpenAI arm (n=1, MANUAL ILLUSTRATIVE): wiki-incident piece
+        tone -0.65 - adversarial headline register ("Kept ... Under Wraps
+        for Weeks"), delayed-disclosure frame, carried Reuters
+        legal-team-suppression allegations (four anonymous sources).
+        (2) Meta comparator (carried from #592, same-outlet same-window
+        glasses set): [-0.55, -0.6, -0.5], avg -0.55 (Song Jul 7 LED-tamper
+        privacy-light piece; Jul 20 "pervert glasses" editorial; late-Jul
+        "holds all the cards" opener with activist "mass surveillance
+        predator glasses" language). (3) Illustrative delta (OpenAI minus
+        Meta) -0.10: the deal PARTNER is covered marginally MORE
+        adversarially than the $0-tie baseline. (4) Engine on illustrative
+        arms: welch_t_test([-0.65], [-0.55, -0.6, -0.5]) returns
+        (0.0, 1.0) - the #603-pinned degenerate guard fires on the n=1 arm;
+        cohens_d computes -2.0 (rounded), the asymmetric n=1 vs n=3
+        variant mirroring #593. Finding layer refuses:
+        p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False. NOT
+        an agreement-pole pin: the pole requires a non-degenerate engine
+        computation; the degenerate guard fires on the n=1 arm, so the
+        engine/finding agreement is degenerate-boundary, not a pole pin.
+        (5) Falsification family ratchet 8 -> 9: #607 joins #538, #563,
+        #568, #578, #583, #588, #599, #604. Related but distinct: #498
+        (Swisher Vox-deal, interview-register), #573 (Nilay Patel,
+        interview-access layer), #507 (ad-monetization domain boundary,
+        non-family). Correlation is not causation; n=1 vs n=3 is
+        directional, not dispositive.
+      articles:
+      - entity: "openai"
+        title: "OpenAI Kept DseWiki Agent Breakout Under Wraps for Weeks During Hugging Face Fallout"
+        date: "2026-09-05"
+        url: "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident"
+        url_note: "canonical URL carried verbatim from webpronews (2026-09-08 search), never constructed; theverge.com policy-blocked for browser.open per standing rule"
+        headline_note: "original headline carried verbatim from aiweekly.co (2026-09-08 search): Reuters/Verge dual attribution"
+        register: "adversarial delayed-disclosure incident coverage"
+        manual_illustrative_tone: -0.65
+        key_phrases:
+        - "kept DseWiki agent breakout under wraps for weeks"
+        - "during Hugging Face fallout"
+        - "delayed disclosure"
+        verification: "second-hand via search excerpts (webpronews verbatim URL, aiweekly verbatim headline); bounded to surfaced text, no first-hand page open"
+      - entity: "meta"
+        title: "Victoria Song Jul 7 2026 LED-tamper privacy-light piece (carried from #592)"
+        date: "2026-07"
+        register: "adversarial product-safety"
+        manual_illustrative_tone: -0.55
+        carried_from: "iteration 592, same-outlet same-window Meta glasses set"
+      - entity: "meta"
+        title: "Victoria Song Jul 20 2026 pervert-glasses editorial (carried from #592)"
+        date: "2026-07"
+        register: "adversarial editorial"
+        manual_illustrative_tone: -0.6
+        carried_from: "iteration 592, same-outlet same-window Meta glasses set"
+      - entity: "meta"
+        title: "late-Jul 2026 holds-all-the-cards opener with activist mass-surveillance-predator-glasses language (carried from #592)"
+        date: "2026-07"
+        register: "adversarial opener"
+        manual_illustrative_tone: -0.5
+        carried_from: "iteration 592, same-outlet same-window Meta glasses set"
+      peer_context:
+      - outlet: "Gizmodo"
+        title: "Another Rogue OpenAI Agent Swarm Went Undisclosed. We Have No Idea How Many More Are Out There"
+        date: "2026-09-04"
+        url: "https://gizmodo.com/another-rogue-openai-agent-swarm-went-undisclosed-we-have-no-idea-how-many-more-are-out-there-2000807447"
+        register: "adversarial (deal-absent outlet, null-tie per #582)"
+        financial_tie: "none"
+      - outlet: "Reuters"
+        title: "OpenAI acknowledges 'wiki incident' and need for more transparency around unintended AI behavior"
+        date: "2026-09-05"
+        url: "https://www.reuters.com/business/media-telecom/openai-acknowledges-wiki-incident-need-more-transparency-around-unintended-ai-2026-09-05/"
+        register: "wire neutral-adversarial"
+        financial_tie: "none"
+      asymmetry_scorer_result:
+        method: "manual_illustrative"
+        openai_tones: [-0.65]
+        meta_tones: [-0.55, -0.6, -0.5]
+        openai_avg: -0.65
+        meta_avg: -0.55
+        asymmetry_score: -0.10
+        score_direction: "openai_minus_meta"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_drift_check: "welch_t_test([-0.65], [-0.55, -0.6, -0.5]) -> (0.0, 1.0) degenerate guard fires on n=1 arm (per #603 pin); cohens_d -> -2.0 rounded (asymmetric n=1 vs n=3 variant, mirrors #593); computed 2026-09-08 09:00 PDT on illustrative arms only; finding layer refuses both"
+      confounders_ranked:
+        strong:
+        - "n=1 OpenAI arm: single article, headline-register scoring - directional, not dispositive"
+        - "PMC acquired Vox Media in 2026; the May 2024 deal's transfer status is unclear (carried from #425/#507 counter-evidence), which weakens any 2026 coverage prediction drawn from the deal"
+        moderate:
+        - "second-hand verification only (theverge.com policy-blocked); register scored from headline plus third-party excerpts, not full text"
+        - "headline may follow Reuters wire framing (Reuters/Verge dual attribution in aiweekly headline); register attribution partly institutional, not purely editorial"
+        weak:
+        - "Verge house adversarial register toward all big tech inflates both arms; the falsification claim rests on the RELATIVE delta, not absolute tone"
+      research_method: "browser.search this run (5 targeted query sets, verbatim full-URL listings, since 2026-09-01); theverge.com policy-blocked for browser.open per standing rule - no Verge page opened first-hand; canonical Verge URL carried verbatim from webpronews, original headline verbatim from aiweekly.co; no zero-coverage claims per iteration-492 rule (absence claims bounded to search-result sets)"
+      statistical_discipline: "MANUAL ILLUSTRATIVE tones only; p_value/cohens_d/ci_95 NOT_CALCULATED per standing rule Aug 28 2026; is_significant False; no significance claimed or claimable; correlation_not_causation true; no artifact-grade claims"
+      falsification_family: "#538, #563, #568, #578, #583, #588, #599, #604, #607 (ratchet 8 -> 9); related Vox-deal falsifications #498, #573 at distinct layers; #507 ad-monetization boundary"
+      source_urls:
+      - "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident"
+      - "https://www.webpronews.com/openai-agents-hijack-obscure-german-wiki-in-coordinated-breakout/"
+      - "https://aiweekly.co/alerts/openai-held-rogue-agent-wiki-hijack-quiet-amid-hugging-face-fallout"
+      - "https://www.reuters.com/business/media-telecom/openai-acknowledges-wiki-incident-need-more-transparency-around-unintended-ai-2026-09-05/"
+      - "https://gizmodo.com/another-rogue-openai-agent-swarm-went-undisclosed-we-have-no-idea-how-many-more-are-out-there-2000807447"
+      - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+      novelty_verification: "pre-commit greps: zero mechanism_598 keys in profiles/, zero wiki hits in profiles/the-verge.yaml, no #607 in git log (grep); the-verge openai wiki-incident coverage never mechanismized (only #507 ad-monetization domain and #573 interview-access layer touch the Vox-OpenAI deal)"
+      distinct_from:
+      - "iteration 573 (Nilay Patel Decoder interview-access falsification): different analytical layer (CEO-interview entity selection vs incident-coverage register), different article corpus, second Vox-deal falsification instance"
+      - "iteration 507 (ad-monetization register boundary): different news domain (ads monetization vs rogue-agent incident), zero article overlap, #507 is domain-boundary not family member"
+      - "iteration 592 (Verge x Google adversarial-litigation boundary): different entity (Google vs OpenAI), Meta comparator arms carried from its set"
   meta:
     financial_tie: "none"
     estimated_value: "$0"
