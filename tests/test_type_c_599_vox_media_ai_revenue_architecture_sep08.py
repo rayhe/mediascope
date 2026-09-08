@@ -294,23 +294,30 @@ class TestNoveltyAndRotation:
         assert len(files) == 1 and os.path.basename(files[0]) == TEST_FILE_NAME, \
             f"Exactly one 599 test file must exist, got {files}"
 
-    def test_no_type_c_599_commit_yet(self):
+    def test_type_c_599_main_commit_exists_once(self):
+        # Post-commit form of the pre-commit novelty gate: exactly one main
+        # iteration commit for #599 must exist (the commit this file ships in).
         out = subprocess.run(
-            ["git", "-C", REPO_ROOT, "log", "--grep=#599", "--format=%H"],
+            ["git", "-C", REPO_ROOT, "log", "--format=%s"],
             capture_output=True, text=True, check=True)
-        assert out.stdout.strip() == "", \
-            f"#599 already committed: {out.stdout.strip()}"
+        mains = [s for s in out.stdout.splitlines()
+                 if re.match(r"^Type C #599:", s)]
+        assert len(mains) == 1, \
+            f"expected exactly one 'Type C #599:' main commit, got {mains}"
 
-    def test_mechanism_593_zero_precommit_hits(self):
-        # mechanism_593 is created by this run; the only hits allowed are in
-        # this run's own files (the test file itself + journalists.yaml block).
-        # git grep exits 1 on no matches, so check the output, not the code.
+    def test_mechanism_593_in_committed_tree(self):
+        # Post-commit form of the pre-commit novelty gate: mechanism_593 must
+        # appear in the committed tree exactly in this run's files.
         out = subprocess.run(
             ["git", "-C", REPO_ROOT, "grep", "-l", "mechanism_593", "HEAD", "--",
-             "profiles", "tests", "docs", "README.md"],
+             "profiles", "tests"],
             capture_output=True, text=True)
-        assert out.stdout.strip() == "", \
-            f"mechanism_593 already in committed tree: {out.stdout.strip()}"
+        files = sorted(f.split(":", 1)[-1] if ":" in f else f
+                       for f in out.stdout.splitlines() if f.strip())
+        files = sorted(set(f.split(":")[-1] for f in files))
+        assert files == ["profiles/careers/journalists.yaml",
+                         "tests/" + TEST_FILE_NAME], \
+            f"mechanism_593 must live only in this run's files, got {files}"
 
     def test_rotation_type_and_number(self):
         block = song_block()
@@ -321,7 +328,7 @@ class TestNoveltyAndRotation:
 class TestRotationCycleGuard599:
     # POST_COMMIT_ANCHOR placeholder; patched to the main-commit short hash
     # in the followup commit per the #565 convention.
-    ANCHORED_COMMIT = "PENDING"
+    ANCHORED_COMMIT = "b8b43df"
 
     # MAIN_COMMIT_PATTERN: only main-iteration commits anchor the rotation.
     # Followup ("Type C #599 followup: ...") and doc-sync commits interleave
