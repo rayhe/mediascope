@@ -1867,6 +1867,258 @@ competitor_relationships:
       - https://www.neowin.net/news/alphabet-revenue-jumps-to-1198-billion-as-google-cloud-growth-accelerates/
       - https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
       - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+    mechanism_591_wired_openai_apple_lawsuit_followup_coverage_selection_sep07:
+      mechanism_id: 591
+      iteration: 597
+      iteration_type: "A"
+      iteration_time: "2026-09-07 23:00 PDT"
+      date: "2026-09-07"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "WIRED"
+      entity_pair: "OpenAI vs Meta"
+      competitor: "openai"
+      publication_pair: "WIRED x OpenAI"
+      comparison_entities:
+        - meta
+        - apple
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        WIRED published exactly 1 article on the Apple v. OpenAI hardware
+        trade-secrets case (Jul 10 2026, Maxwell Zeff, the accusation: Apple
+        calls OpenAI's nascent hardware business "rotten to its core").
+        Across the next 59 days the case escalated through 5 more beats, all
+        carrying OpenAI's counter-narrative, and 3 bounded search-result sets
+        this run surfaced zero WIRED articles on any of them: Jul 14 OpenAI
+        public response; Aug 3 Apple preliminary-injunction + expedited
+        discovery bid with OpenAI's "based on false information and
+        completely unnecessary" blog-post rebuttal; Aug 6 OpenAI motion to
+        dismiss calling the allegations "meritless"; Aug 31 Apple's new
+        forensic-evidence filing on Liu's MacBook; Sep 1 OpenAI's "this
+        dispute is a mess of Apple's own making" filing, which Reuters, WSJ,
+        MacRumors, Bloomberg Law, 9to5Mac, TechRepublic and Outlook Business
+        all treated as a beat worth covering. The accusation gets covered;
+        the defendant's rebuttals do not. Coverage-selection form of the
+        Conde Nast x OpenAI licensing prediction (#504, ~$1-5M/yr), distinct
+        from the tone-form finding in the pre-existing apple_v_openai_silence
+        block. Illustrative delta +0.5733 (OpenAI target minus Meta peer),
+        MANUAL ILLUSTRATIVE n.s., standing rule Aug 28 2026.
+      finding: >
+        (1) The case sits squarely in WIRED's core beat: OpenAI's $6.5B io
+        acquisition, 400+ former Apple employees hired, a first consumer
+        hardware device on track for H2 2026 reveal, and trade-secrets
+        allegations involving former Apple VP of product design Tang Tan and
+        engineer Chang Liu. (2) WIRED's single article (Jul 10 2026, Zeff,
+        in-corpus URL verbatim) covers the accusation phase. Its framing is
+        IP-drama with zero surveillance-alarm vocabulary, consistent with the
+        apple_v_openai_silence block's softer-framing characterization;
+        scored -0.2 MANUAL ILLUSTRATIVE from relay characterization (wired.com
+        policy-blocked for first-hand fetch this run). (3) The five followup
+        beats, each with peer coverage by mainstream outlets, surface zero
+        WIRED articles across 3 bounded search sets: the Jul 14 OpenAI
+        response; the Aug 3-4 injunction fight (Apple "irreparably harmed"
+        filing, OpenAI open letter "Apple is getting this wrong"); the Aug 6
+        motion to dismiss; the Aug 31 "shocking evidence" filing (Apple
+        alleges Liu downloaded a confidential Apple circuit schematic and
+        used it in his OpenAI work; Bloomberg Law reports Apple accuses
+        OpenAI of destroying evidence); the Sep 1 OpenAI rebuttal filing.
+        (4) The Sep 1 rebuttal is the strongest peer-coverage control: WSJ
+        itself published "OpenAI Hits Back at Apple Lawsuit Claiming It Stole
+        Trade Secrets" quoting the "mess of Apple's own making" line, so a
+        news desk at a $250M OpenAI deal partner judged the beat
+        newsworthy. WIRED did not. (5) The naive reading (cover the
+        accusation once, then walk away) is also consistent with ordinary
+        litigation-news norms, so the selection effect is bounded and
+        directional only. (6) Compare the #547 WIRED x Meta glasses alarm
+        baseline, carried verbatim from corpus: Cameron "Meta Is Warned That
+        Facial Recognition Glasses Will Arm Sexual Predators" (-0.82),
+        "The Rise of the Ray-Ban Meta Creep" (-0.72), Cameron/Mehrotra "Meta
+        Silently Added Face-Recognition Code NameTag" (-0.78), avg -0.773.
+        WIRED sustains adversarial Meta coverage across every beat while its
+        OpenAI hardware-IP-theft story stops at the accusation.
+        Cross-references: 504 (Conde Nast x OpenAI deal), 547 (WIRED Meta
+        alarm baseline + Google/Samsung delight register), 532 (WSJ dual-deal
+        symmetry test; WSJ covered the Sep 1 rebuttal), 356 (old-style WIRED
+        x OpenAI hardware vs Meta glasses surveillance inversion).
+      articles:
+        - entity: "openai"
+          title: "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets"
+          date: "2026-07-10"
+          author: "Maxwell Zeff"
+          url: "https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/"
+          register: "accusation_phase_ip_drama"
+          manual_illustrative_tone: -0.2
+          key_phrases:
+            - "allegedly stealing hardware secrets"
+            - "Tang Tan"
+            - "io"
+            - "zero surveillance vocabulary (per in-corpus characterization)"
+          verification: "URL and title verbatim from in-corpus apple_v_openai_silence block (Aug 28 correction); wired.com policy-blocked for first-hand fetch this run; tone is relay-characterized MANUAL ILLUSTRATIVE, not first-hand scored"
+          evidence_tier: "in_corpus_carried_secondary"
+        - entity: "openai"
+          title: "Jul 14 2026 (Tue): OpenAI public response to Apple lawsuit - no WIRED article surfaced"
+          date: "2026-07-14"
+          author: "WIRED"
+          url: null
+          register: "bounded_search_absence"
+          manual_illustrative_tone: null
+          key_phrases:
+            - "OpenAI statement on employee mobility"
+            - "peer coverage: MacRumors Jul 14"
+          verification: "3 bounded search-result sets this run (wired.com Apple OpenAI trade secrets; WIRED Tang Tan Chang Liu Aug 2026; WIRED OpenAI September 2026) surfaced zero WIRED articles on the Jul 14 beat; peer URL verbatim: https://www.macrumors.com/2026/07/14/openai-apple-lawsuit-response/"
+          evidence_tier: "bounded_search_absence"
+        - entity: "openai"
+          title: "Aug 3-4 2026: Apple preliminary injunction + expedited discovery bid; OpenAI open-letter rebuttal - no WIRED article surfaced"
+          date: "2026-08-03"
+          author: "WIRED"
+          url: null
+          register: "bounded_search_absence"
+          manual_illustrative_tone: null
+          key_phrases:
+            - "irreparably harmed absent a preliminary injunction"
+            - "based on false information and completely unnecessary"
+            - "Apple is getting this wrong"
+          verification: "3 bounded search-result sets this run surfaced zero WIRED articles; peer URLs verbatim: https://wixx.com/2026/08/04/apple-seeks-preliminary-injunction-against-openai-in-trade-secrets-case/ ; https://www.macrumors.com/2026/08/04/openai-posts-public-rebuttal-to-apple/ ; https://appleinsider.com/articles/26/08/04/apple-demands-openai-injunction-discovery-testimony-now-to-prevent-more-harm"
+          evidence_tier: "bounded_search_absence"
+        - entity: "openai"
+          title: "Aug 6 2026: OpenAI motion to dismiss as meritless - no WIRED article surfaced"
+          date: "2026-08-06"
+          author: "WIRED"
+          url: null
+          register: "bounded_search_absence"
+          manual_illustrative_tone: null
+          key_phrases:
+            - "meritless"
+            - "baseless and pretextual lawsuit"
+            - "building something entirely new and different"
+          verification: "3 bounded search-result sets this run surfaced zero WIRED articles; peer URL verbatim: https://www.macrumors.com/2026/08/06/openai-asks-judge-to-dismiss-apple-lawsuit/ ; in-corpus Reuters: https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/"
+          evidence_tier: "bounded_search_absence"
+        - entity: "openai"
+          title: "Aug 31 2026 (Mon): Apple new forensic-evidence filing (Liu MacBook) - no WIRED article surfaced"
+          date: "2026-08-31"
+          author: "WIRED"
+          url: null
+          register: "bounded_search_absence"
+          manual_illustrative_tone: null
+          key_phrases:
+            - "shocking evidence"
+            - "confidential Apple circuit schematic"
+            - "destroying evidence (Bloomberg Law)"
+          verification: "3 bounded search-result sets this run surfaced zero WIRED articles; peer URLs verbatim: https://news.bloomberglaw.com/artificial-intelligence/apple-says-openai-is-destroying-evidence-in-trade-secrets-case ; https://9to5mac.com/2026/09/01/openai-calls-trade-secret-dispute-a-mess-of-apples-own-making/ (MacRumors Aug 31 1:22 pm PDT popular-story relay)"
+          evidence_tier: "bounded_search_absence"
+        - entity: "openai"
+          title: "Sep 1 2026 (Tue): OpenAI rebuttal filing, a mess of Apple's own making - no WIRED article surfaced"
+          date: "2026-09-01"
+          author: "WIRED"
+          url: null
+          register: "bounded_search_absence"
+          manual_illustrative_tone: null
+          key_phrases:
+            - "a mess of Apple's own making"
+            - "sloppy procedures"
+            - "chill employee mobility"
+            - "peer coverage: Reuters, WSJ, MacRumors, Bloomberg Law, 9to5Mac, TechRepublic, Outlook Business"
+          verification: "3 bounded search-result sets this run surfaced zero WIRED articles; peer URLs verbatim: https://www.reuters.com/legal/litigation/openai-says-apple-has-only-itself-blame-trade-secret-fight-2026-09-01/ ; https://www.wsj.com/tech/openai-hits-back-at-apple-lawsuit-claiming-it-stole-trade-secrets-c0d34f44 ; https://www.macrumors.com/2026/09/01/dispute-said-to-be-mess-of-apples-own-making/ ; https://www.techrepublic.com/article/news-apple-openai-macbook-evidence-trade-secrets/ ; https://9to5mac.com/2026/09/01/openai-calls-trade-secret-dispute-a-mess-of-apples-own-making/ ; https://www.outlookbusiness.com/corporate/openai-vs-apple-trade-secret-theft-lawsuit-proceedings-employee-exits-hardware-design-manufacturing-data"
+          evidence_tier: "bounded_search_absence"
+        - entity: "meta"
+          title: "Meta comparator set carried verbatim from #547 WIRED x Meta glasses alarm baseline"
+          date: "2026-03/2026-04/2026-06"
+          author: "WIRED (Cameron; Cameron/Mehrotra)"
+          url: null
+          register: "carried_baseline"
+          manual_illustrative_tone: null
+          key_phrases:
+            - "Meta Is Warned That Facial Recognition Glasses Will Arm Sexual Predators (-0.82)"
+            - "The Rise of the Ray-Ban Meta Creep (-0.72)"
+            - "Meta Silently Added Face-Recognition Code NameTag (-0.78)"
+            - "array avg -0.773"
+          verification: "Carried from tests/test_type_a_547_wired_google_samsung_camera_glasses_silence_vs_meta_alarm_sep05_7pm.py comparator baseline; scores unchanged this run"
+          evidence_tier: "in_corpus_carried_secondary"
+      asymmetry_scorer_result:
+        method: "MANUAL ILLUSTRATIVE (standing rule Aug 28 2026; arithmetic only, NOT empirical)"
+        openai_target_scores: [-0.2]
+        openai_target_avg: -0.2
+        openai_n: 1
+        meta_peer_scores: [-0.82, -0.72, -0.78]
+        meta_peer_avg: -0.7733
+        meta_n: 3
+        delta_openai_minus_meta: 0.5733
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        note: "The scored delta is thin (n=1 scored OpenAI item vs n=3 carried Meta items); the substantive claim of this mechanism is coverage-selection on lawsuit followups, stated as bounded search-result absence, not the tone delta."
+      statistical_discipline: >
+        MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule: no empirical
+        claims. p_value, cohens_d, ci_95 NOT_CALCULATED. is_significant
+        False. The followup-silence claim is a bounded search-result absence
+        (3 query sets, Sep 7 2026), not a universal non-publication claim.
+        The single scored OpenAI item is relay-characterized, not first-hand.
+        Correlation is not causation.
+      confounders:
+        - strength: STRONG
+          text: "Litigation-news norms: initial filings get covered, routine motions often do not. The 5 followup beats are motion-stage developments; a news desk can reasonably treat them as incremental rather than newsworthy."
+        - strength: STRONG
+          text: "All silence claims are bounded search-result absences, not universal non-existence; a WIRED article could exist behind a paywall or outside the 3 query sets and still have been missed."
+        - strength: MODERATE
+          text: "wired.com is policy-blocked for direct fetch, so the Jul 10 Zeff characterization rests on the in-corpus block and relay excerpts; the -0.2 tone is illustrative, not measured."
+        - strength: MODERATE
+          text: "Product-reality asymmetry: Meta's glasses are shipped at 7M+ units with documented bad facts (LED tampering, NameTag code), giving WIRED real alarm stories; the OpenAI device is unreleased, so there is less to write about beyond the lawsuit."
+        - strength: WEAK
+          text: "Beat-bench differences: Reuters/Bloomberg Law staff courtrooms daily; WIRED's tech desk may simply not staff N.D. Cal. motion practice."
+      counter_evidence:
+        - "WIRED DID cover the accusation (Jul 10 Zeff article), which argues against a hard suppression theory; the selection effect is on followups, not a blanket blackout."
+        - "WSJ, a $250M OpenAI deal partner, published the Sep 1 OpenAI rebuttal prominently, so deal money alone does not mechanically suppress followup coverage; the effect is publication-specific."
+        - "The Jul 10 article relayed Apple's accusations (rotten to its core via Digital Trends), so the accusation was not soft-pedaled in WIRED's telling."
+        - "n=1 scored vs n=3 carried is directional, not dispositive; hand-scoring noise could compress the delta."
+      distinct_from:
+        - "apple_v_openai_silence block (Aug 28 correction): documented the 1-article correction and tone-form softer framing; this mechanism adds the Sep 1 followup beat and the coverage-selection form, not a duplicate."
+        - "Mechanism #356 (old-style, Aug 28): WIRED x OpenAI hardware delay framing vs Meta glasses surveillance; this mechanism is lawsuit-followup selection, a different analytical unit."
+        - "Mechanism #547: WIRED x Google/Samsung coverage silence; supplies the carried Meta alarm baseline, no overlap in target entity."
+        - "Iteration #532 (WSJ x OpenAI): dual-deal symmetry test; WSJ's Sep 1 rebuttal coverage is used here as a peer-coverage control, not re-scored."
+        - "REPLICATION: none; this is the first coverage-selection mechanism on the Apple v. OpenAI litigation beat."
+      novelty_verification: >
+        Pre-commit greps: zero test_type_a_597 files on disk (glob); no
+        Type A #597 in git log (grep); zero mechanism_591 keys in profiles/
+        (grep, max numeric mechanism_id was 590); zero "followup" Apple
+        lawsuit mechanisms in wired.yaml (grep for "mess of Apple's own
+        making" and "Liu MacBook" returned zero hits before insertion);
+        mechanism_591 is the next free numeric mechanism id.
+      research_method: >
+        3 browser.search query sets this run (WIRED OpenAI Sweet Pea hardware
+        device Jony Ive, since 2026-08-01; WIRED Apple suing OpenAI Maxwell
+        Zeff; WIRED OpenAI Apple trade secret lawsuit mess of Apple's own
+        making, since 2026-09-01; WIRED Tang Tan Chang Liu Apple lawsuit Aug
+        2026, since 2026-08-04; WIRED OpenAI article September 2026 Meta
+        glasses surveillance, since 2026-08-20). wired.com direct fetch
+        policy-blocked (browser.open failed); characterization is
+        relay-bounded and labeled. All URLs verbatim from Full-URL listings
+        this run or from the in-corpus apple_v_openai_silence block; no
+        canonical URLs constructed. No zero-coverage claims per
+        iteration-492 rule: the followup silence is stated as bounded
+        search-result absence. Weekday grounding via TZ=America/Los_Angeles
+        date -d for all 7 event dates.
+      source_urls:
+        - https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/
+        - https://www.reuters.com/legal/litigation/openai-says-apple-has-only-itself-blame-trade-secret-fight-2026-09-01/
+        - https://www.wsj.com/tech/openai-hits-back-at-apple-lawsuit-claiming-it-stole-trade-secrets-c0d34f44
+        - https://www.macrumors.com/2026/09/01/dispute-said-to-be-mess-of-apples-own-making/
+        - https://www.macrumors.com/2026/08/06/openai-asks-judge-to-dismiss-apple-lawsuit/
+        - https://www.macrumors.com/2026/08/04/openai-posts-public-rebuttal-to-apple/
+        - https://www.macrumors.com/2026/07/14/openai-apple-lawsuit-response/
+        - https://news.bloomberglaw.com/artificial-intelligence/apple-says-openai-is-destroying-evidence-in-trade-secrets-case
+        - https://9to5mac.com/2026/09/01/openai-calls-trade-secret-dispute-a-mess-of-apples-own-making/
+        - https://www.techrepublic.com/article/news-apple-openai-macbook-evidence-trade-secrets/
+        - https://www.outlookbusiness.com/corporate/openai-vs-apple-trade-secret-theft-lawsuit-proceedings-employee-exits-hardware-design-manufacturing-data
+        - https://wixx.com/2026/08/04/apple-seeks-preliminary-injunction-against-openai-in-trade-secrets-case/
+        - https://appleinsider.com/articles/26/08/04/apple-demands-openai-injunction-discovery-testimony-now-to-prevent-more-harm
+      financial_context:
+        publication: "WIRED / Conde Nast"
+        tie: "Conde Nast x OpenAI multi-year content licensing deal, Aug 2024 (#504)"
+        estimated_value: "$1-5M/yr (undisclosed)"
+        coverage_prediction: "softer"
+        verdict: "CONSISTENT in coverage-selection form: the accusation was covered once; the defendant's five counter-narrative beats were not (bounded). Not a tone-form verdict; the single scored item is illustrative."
   meta:
     financial_tie: none
     estimated_value: $0
