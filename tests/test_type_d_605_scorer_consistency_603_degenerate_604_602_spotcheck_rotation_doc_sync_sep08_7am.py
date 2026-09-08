@@ -628,7 +628,7 @@ class TestRotationCycleGuard605:
     # in the followup commit per the #565 convention. This class is
     # deselected pre-commit (it asserts the post-commit anchor) and runs
     # green in the followup.
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "30d3f4e"
 
     @staticmethod
     def _mains():
