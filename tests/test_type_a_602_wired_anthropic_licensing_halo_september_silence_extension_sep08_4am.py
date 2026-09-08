@@ -402,12 +402,23 @@ class TestRotationCycleGuard602:
                 f"rotation broken: {a} -> {b} is not a valid cycle edge"
             )
 
-    def test_anchor_is_previous_main_e962d39(self):
-        # Pre-commit anchor: the #601 main commit. The followup patches this
-        # to the #602 main commit SHA once it is known.
-        subjects = self._mains()
-        assert subjects[0].startswith("Type E #601:"), (
-            f"pre-commit anchor broken: newest main is not #601: {subjects[0]!r}"
+    def test_anchor_is_main_d4526ee(self):
+        # Post-commit anchor: the #602 main commit. Patched in the followup
+        # per the #565 convention once the main commit SHA is known.
+        out = subprocess.run(
+            ["git", "log", "--format=%H %s"],
+            cwd=str(REPO_ROOT),
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.splitlines()
+        mains = [
+            l for l in out if re.match(r"^[0-9a-f]{40} Type [A-E] #\d+:", l)
+        ]
+        sha, subject = mains[0].split(" ", 1)
+        assert sha.startswith("d4526ee"), f"anchor drifted: {sha}"
+        assert subject.startswith("Type A #602:"), (
+            f"post-commit anchor broken: newest main is not #602: {subject!r}"
         )
 
 
