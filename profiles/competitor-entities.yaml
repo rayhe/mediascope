@@ -3180,6 +3180,100 @@ entities:
         iteration: 569
         type: C
         date: 2026-09-06 17:00 PDT
+    mechanism_609_openai_india_attribution_deal_blitz:
+      mechanism_id: 609
+      type: 'Type C - Financial Incentive Mapping (OpenAI India publisher-deal blitz, Sep 7-8 2026)'
+      date_mapped: '2026-09-09'
+      iteration: 624
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      deals:
+      - counterparty: 'BCCL (Bennett, Coleman and Co. Ltd., Times Group)'
+        announced: '2026-09-07'
+        publications:
+        - 'The Times of India'
+        - 'The Economic Times'
+        structure: 'ChatGPT content discovery partnership; attributed excerpts and summaries with direct links back to the publisher'
+        financial_terms: 'undisclosed; no fee, duration, or revenue share disclosed'
+      - counterparty: 'Indian Express Group'
+        announced: '2026-09-08'
+        publications:
+        - 'The Indian Express'
+        - 'The Financial Express'
+        - 'business properties'
+        content_scope: 'live reporting plus archived content'
+        languages:
+        - English
+        - Hindi
+        - Marathi
+        - Malayalam
+        - Tamil
+        - Bengali
+        - Gujarati
+        structure: 'attributed excerpts or summaries surfaced in ChatGPT with source identification and direct links to the original articles'
+        editorial_control: 'Group retains complete and independent editorial control; OpenAI holds no editorial role'
+        financial_terms: 'undisclosed; no fee, duration, or revenue share disclosed'
+        quotes:
+        - speaker: 'Nandagopal Rajan, CEO, Indian Express Digital'
+          text: 'Our priority remains credible journalism, with full editorial responsibility for everything we publish.'
+        - speaker: 'Varun Shetty, Vice President, Media Partnerships, OpenAI'
+          text: 'We want AI to help more people discover that work, with clear attribution and direct links, reflecting our commitment to working constructively with publishers.'
+      deal_structure_note: 'Both deals are framed by the parties as content discovery and attribution partnerships; neither company describes either agreement as a training-data licence. Zero dollars of disclosed fee on both legs.'
+      sue_then_sign_arc:
+      - 'Nov 2024: ANI files copyright infringement suit against OpenAI in the Delhi High Court, alleging ChatGPT used its content without permission for training.'
+      - 'Feb 2025: the Indian Express, NDTV, Network18, Hindustan Times and the DNPA seek to join the suit; OpenAI''s 31-page filing (Reuters) denies using any applicant or DNPA member content to train its models and argues no obligation to sign partnership deals for publicly available content.'
+      - 'Jul 24 2026: Delhi High Court denies ANI''s application for interim relief.'
+      - 'Sep 8 2026: ANI''s infringement appeal is listed at the Delhi High Court and adjourned to Sep 14 (Bar and Bench, via FourWeekMBA); the Indian Express Group partnership is announced the same day. Timing coincidence on the record, not a coordination claim.'
+      - 'Net arc: the Indian Express sought to join the anti-OpenAI suit in Feb 2025 and signed an OpenAI partnership in Sep 2026. Sue-then-sign sequence.'
+      structural_contrasts:
+      - 'Mechanism 514 (Guardian x OpenAI): sue-one-sign-the-other sequence at a tracked publication; the India blitz is the same sequence at ecosystem publishers'
+      - 'Mechanism 519 (News Corp x OpenAI): woo-and-sue dual posture; the Indian Express mirrors it, seeking to join the ANI suit before signing'
+      - 'Mechanism 614 (Reddit v. Anthropic): pay-or-sue three-leg bifurcation; the ANI appeal (Sep 14) versus the BCCL/Indian Express attribution deals is the India-market instance'
+      - 'Mechanism 412 (Google News AI pilot): The Times of India is already a Google pilot publisher in the corpus; the Sep 7 OpenAI deal makes TOI a Google-plus-OpenAI dual-payer publisher, the third in the corpus after FT (mechanism 437) and WaPo (mechanism 569)'
+      - 'Iteration 609 (first-gen OpenAI publisher-deal renewal window, Sep 2026 status): the India blitz shows OpenAI expanding the deal map to new markets while first-gen Western deals sit in their renewal window'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'financial terms are fully undisclosed on both legs; no fee disclosed is not evidence of no fee paid, so zero-fee-dependency readings would overclaim'
+      - rank: 2
+        strength: strong
+        confounder: 'deal facts are second-hand via search-result excerpts this run (no pages opened first-hand), bounded per the iteration-492 rule'
+      - rank: 3
+        strength: moderate
+        confounder: 'attribution-discovery partnerships are structurally different from training-data licences; they are not directly comparable in dollar terms to the News Corp $250M/5yr training deal'
+      - rank: 4
+        strength: moderate
+        confounder: 'the back-to-back 48-hour sequencing may be PR choreography around the ANI appeal listing on Sep 8; FourWeekMBA explicitly flags the timing coincidence as on-the-record coincidence, not coordination'
+      - rank: 5
+        strength: weak
+        confounder: 'neither counterparty is a MediaScope tracked publication, so no coverage-tone follow-up is possible in this corpus; ecosystem-deal mapping only'
+      statistical_discipline:
+        scope: qualitative structural mapping only
+        correlation_not_causation: true
+        p_value: NOT_CALCULATED
+        is_significant: false
+        tone_scores: NOT_SCORED
+      cautious_language_required: true
+      correlational_note: 'This mapping describes OpenAI signing two Indian publisher groups to attribution-and-links ChatGPT discovery partnerships within 48 hours (Sep 7-8 2026) with undisclosed financial terms, against the backdrop of ANI''s live infringement appeal (adjourned to Sep 14). The Indian Express sought to join the anti-OpenAI suit in Feb 2025 before signing. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+      no_coverage_tone_claim: true
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C ecosystem-deal mapping; no new tracked-publication finding.'
+      sources:
+      - https://fourweekmba.com/ai-openai-india-publisher-deals-attribution-strategy/
+      - https://mediabrief.com/indian-express-group-partners-with-openai/
+      - https://indiantelevision.com/mam/indian-express-group-partners-with-openai-to-expand-discovery-of-its-journalism/
+      - https://www.storyboard18.com/digital/indian-express-openai-partner-for-content-discovery-ws-l-110051.htm
+      - https://adtribe.world/indian-express-group-signs-openai-deal-covering-seven-languages
+      - https://thetechportal.com/2025/02/13/openai-denies-allegations-of-using-indian-media-groups-content-to-train-chatgpt-report/
+      - https://llmpulse.ai/blog/ai-content-licensing-deals/
+      research_method: 'browser.search this run (2 query sets: AI content licensing deals Sep 2026; OpenAI Indian Express partnership Sep 8 2026), verbatim full-URL listings from search results; deal facts via search-result excerpts (second-hand), bounded per iteration-492 rule; no pages opened first-hand this run; ANI litigation timeline via FourWeekMBA summary of Bar and Bench plus thetechportal/Reuters Feb 2025 filing report'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 624
+        type: C
+        date: 2026-09-09 03:00 PDT
 
   anthropic:
     display_name: Anthropic
