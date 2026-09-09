@@ -17411,6 +17411,93 @@ journalists:
     author: 'Kit (with Ray)'
     test_file: tests/test_type_b_613_brian_heater_techcrunch_meta_apple_hands_on_constancy_sep08_4pm.py
 
+- name: Samuel Gibbs
+  notes: 'Guardian News and Media consumer technology editor (Dec 2018 to present; assistant technology editor Aug 2016 to Dec 2018; technology reporter Sep 2013 to Aug 2016; previously news editor at Gizmodo UK). Hardware-review register: hands-on evaluative reviews plus straight launch announcements. KEY for MediaScope: Gibbs authored BOTH the aspirational Apple Vision Pro review (+0.35, #622 Apple arm) and the neutral-positive Meta Ray-Ban Display launch announcement (Sep 2025, this run), enabling a clean within-writer cross-entity comparison that isolates genre from entity.'
+  career:
+  - publication: guardian
+    role: Consumer Technology Editor
+    beat: consumer technology, hardware reviews
+    start: '2018-12'
+    end: present
+    source_url: https://me.sh/profile/samuel-gibbs
+  source_urls:
+  - https://me.sh/profile/samuel-gibbs
+  - https://aspicts.substack.com/p/nvidia-invests-5b-in-intel-china
+  multi_publication: false
+  competitor_coverage:
+    type_b_628_samuel_gibbs_guardian_within_writer_genre_register:
+      mechanism_id: 611
+      iteration: 628
+      date: '2026-09-09 07:00 PDT'
+      type: B
+      scheduled_job_id: 'mediascope-daily-iteration'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      design: 'Type B journalist cross-entity tracking, within-writer register comparison. Question: does Samuel Gibbs, the Guardian consumer technology editor, apply a different editorial register to Meta hardware than to Apple hardware, or does his register track the article genre? Two Gibbs bylines: (a) the Meta arm, Sep 17 2025 Guardian launch announcement of the Meta Ray-Ban Display (neutral-positive announcement register); (b) the Apple arm, Aug 16 2024 Guardian hands-on Vision Pro review (aspirational review register, +0.35 carried from #622). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No zero-coverage claims per the iteration-492 rule: both comparator arms are positive Gibbs bylines.'
+      meta_arm:
+        entity: 'meta'
+        title: 'Meta announces first Ray-Ban smart glasses with in-built augmented reality display'
+        publication: 'guardian'
+        author_byline: 'Samuel Gibbs'
+        role: 'Consumer Technology Editor'
+        date: '2025-09-17'
+        date_note: 'UK publication Sep 17 2025; cited Sep 18 in some listings'
+        genre: 'launch announcement (news)'
+        tone_score: 0.10
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text mirror (theguardian.com direct fetch policy-blocked per standing rule)'
+        mirror_url: 'https://www.richardhartley.com/2025/09/meta-announces-first-ray-ban-smart-glasses-with-in-built-augmented-reality-display/'
+        byline_attribution_urls:
+        - 'https://aspicts.substack.com/p/nvidia-invests-5b-in-intel-china'
+        - 'https://www.iask.ca/news/dc07e04941e6cdcc29771d5371057133/meta-announces-first-ray-ban-smart-glasses-with-in-built-augmented-reality-display'
+        key_quotes:
+        - 'The Meta Ray-Ban Display will be the first smart glasses with a heads-up display from a mainstream brand since the ill-fated Google Glass.'
+        - 'A small, bright and crisp colour display is projected on to the inside of the right lens.'
+        - 'An LED alerts others when the camera is active.'
+        - 'There were some hiccups during the demo, which Zuckerberg attributed to the wifi at the event.'
+        register_notes: 'Straight product announcement: specs, pricing ($799 US from Sep 30), availability, plus the Oakley Meta Vanguard and second-gen Ray-Ban Meta lines. Zero privacy-alarm vocabulary (contrast Barbara Speed pervert-glasses opinion -0.60 in the same publication, #622 Meta arm). The single evaluative jab (ill-fated Google Glass) lands on a competitor, not Meta. Demo hiccups reported neutrally, attributed to venue wifi.'
+      apple_arm:
+        entity: 'apple'
+        title: 'Vision Pro review: Apple''s cutting-edge headset lives up to the hype'
+        publication: 'guardian'
+        author_byline: 'Samuel Gibbs'
+        date: '2024-08-16'
+        genre: 'hands-on review'
+        tone_score: 0.35
+        tone_basis: 'carried from #622 (Type A) at the identical value, no rescoring'
+        evidence_tier: 'full-text mirror (theguardian.com direct fetch policy-blocked per standing rule)'
+        mirror_url: 'http://richardhartley.com/2024/08/vision-pro-review-apples-cutting-edge-headset-lives-up-to-the-hype/'
+        register_notes: 'Aspirational hands-on review register. Both arms are full-text mirrors hosted on the same mirror domain (richardhartley.com), so the evidence tier is symmetric across arms.'
+      asymmetry_scorer:
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+        meta_tone: 0.10
+        apple_tone: 0.35
+        delta_meta_minus_apple: -0.25
+        delta_calc: '0.10 - 0.35 = -0.25'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Genre skew: hands-on review (inherently evaluative, lives up to the hype) vs launch announcement (inherently neutral-descriptive). The -0.25 illustrative gap is fully explained by genre before any entity effect is invoked.'
+      - strength: 'STRONG'
+        text: 'Timing skew: Aug 2024 vs Sep 2025, thirteen months apart, two distinct product-cycle moments (Vision Pro post-launch review window vs Ray-Ban Display launch day).'
+      - strength: 'MODERATE'
+        text: 'Form-factor skew: VR headset vs AI smart glasses; different review vocabularies attach to different categories.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm. Directional, not dispositive; a second Gibbs pair (e.g. a Gibbs Meta review) would be needed for a register claim above the genre boundary.'
+      verdict: 'WITHIN-WRITER GENRE REGISTER. Samuel Gibbs shows no anti-Meta register: his Meta Ray-Ban Display piece is a neutral-positive launch announcement (+0.10) with zero privacy-alarm vocabulary, and his one evaluative jab lands on Google Glass, not Meta. The -0.25 illustrative gap to his aspirational Vision Pro review (+0.35) is fully explained by the STRONG genre confound (review vs announcement). NOT a falsification-family member: Guardian-Apple $0 and Guardian-Meta $0, so the incentive theory predicts nothing for this pair (same zero-financial-gradient boundary as #622). NOT a pure asymmetry pin. First dedicated Type B mechanism on Samuel Gibbs.'
+      financial_context: 'Guardian-OpenAI: content licensing deal documented (#537). Guardian-Apple: $0, no deal documented. Guardian-Meta: $0, no deal documented. The money gradient predicts nothing for the Apple-vs-Meta pair; the observed gap is genre-driven. Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#622 (Type A: Gibbs Vision Pro review +0.35 as the Apple arm; Barbara Speed pervert-glasses -0.60 as the same-publication Meta arm; this run is the within-writer Gibbs complement)'
+      - '#537 (Guardian OpenAI deal context)'
+      - '#613 (Heater: reporter-level constancy sibling, same three-entity glasses-lane shape)'
+      - '#618 (Song: writer-level behavioral pin, genre-boundary contrast)'
+      block_key: 'type_b_628_samuel_gibbs_guardian_within_writer_genre_register'
+      author: 'Kit (with Ray)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer genre-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First dedicated Type B mechanism on Samuel Gibbs (zero journalist entries pre-commit; entry created this run). Zero test_type_b_628 files on disk (glob verified this run). No Type B commit with 628 in the title (git log --grep verified this run). The Apple arm tone is carried from #622 at the identical +0.35 value (no rescoring); the Meta arm tone +0.10, the -0.25 genre-register delta and the NOT-falsification-family verdict are new this run. Mechanism id 611 is the next free profiles mechanism id (max pre-commit 610). Rotation: 627 A -> 628 B.'
+      research_method: '3 browser.search query sets this run: (1) Samuel Gibbs Guardian Meta Ray-Ban glasses (surfaced the Sep 17 2025 announcement with Gibbs byline attribution); (2) Barbara Speed Guardian glasses surveillance privacy Apple (rejected: search noise, no verbatim Speed comparator pieces); (3) Jennifer Pattison Tuohy Portal Meta review plus Google Nest review (rejected: Tuohy is a smart-home reviewer with no Meta-side bylines surfacing; no zero-coverage claims per iteration-492 rule). Meta arm full text read first-hand via the richardhartley.com full-text mirror (verbatim URL from search results); theguardian.com direct fetch policy-blocked per standing rule. Byline attribution via two independent third-party listings (aspicts.substack.com, iask.ca). Apple arm carried from #622 (same mirror domain, symmetric evidence tier). URLs verbatim from Full-URL listings; none constructed. No zero-coverage claims per iteration-492 rule (both arms are positive Gibbs bylines). No em dashes.'
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
