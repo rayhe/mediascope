@@ -4313,6 +4313,64 @@ entities:
         date: '2026-09-08 17:00 PDT'
         yaml_parse_clean: true
         ascii_only: true
+    anthropic_settlement_distribution_phase_payout_fight_629:
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-09'
+      time_pdt: '08:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_id: 612
+      iteration: 629
+      mechanism_name: 'Anthropic $1.5B Settlement Distribution-Phase Payout Fight (Sep 2026) - Publisher Over-Claims on Reverted Rights, Literary-Agent Claims, Recordkeeping-vs-Strategy Ambiguity; First Dedicated Distribution-Phase Mechanism'
+      overview: 'TechCrunch (Anthony Ha, weekend editor, Sep 6 2026) reports that authors expecting their share of the $1.5B Anthropic copyright settlement received surprise emails informing them that someone else was making a claim on their payments. Settlement terms: nearly 500,000 titles, $3,000 paid for each pirated work; 50-50 split between author and publisher if the book is still in print with a traditional publisher; 100 percent to the author if the book was self-published or if the publisher reverted the rights by allowing the book to go out of print. The settlement received final approval in July (corpus author_settlement_detail: Jul 20 2026, Judge Araceli Martinez-Olguin), and payments are moving forward. Named example: mystery and thriller author April Henry asked what HarperCollins was playing at, saying HarperCollins claimed one of her books on the settlement that reverted back at least 17 years ago, and that on the same day she got a credit alert saying HarperCollins had been added as her employer, which they never were. Writers Beware (Victoria Strauss) documents two complaint categories: publishers seeking payment for works they no longer have a legitimate claim on because the rights have reverted, and publishers seeking a full 100 percent payment when they are only entitled to 50 percent. Strauss says she is reluctant to attribute to malice what can be plausibly explained by poor recordkeeping, and notes some publishers have said this is a mistake they asked Anthropic to fix. Strauss calls the complaints a peek through a small crack in a massive wall; the unusually large number of reports received over the last two days, with authors reporting the exact same errors over and over, suggests something much more widespread and systemic than routine glitches. Authors Guild CEO Mary Rasenberger told The New York Times she does not see this as a grab by the publishers and does not believe publishers are specifically trying to screw any author over; she calls it the predictable result of bad recordkeeping and a confusing settlement process. Literary agencies are also making claims; Strauss notes agents are not rightsholders in the books that they sell. Author Courtney Milan (pen name of Heidi Bond, former law clerk and law professor) wrote bluntly in a Bluesky post that agents claiming percentages on the settlement should stop. Dispute mechanics shared by Milan and the Authors Guild: in order for an author to make a 100 percent claim on a book, the rights reversion needs to have happened before August 10, 2022, the download date in the settlement.'
+      distribution_mechanics:
+        per_work_amount: '$3,000 per pirated work (nearly 500,000 titles; corpus author_settlement_detail: 482,460 works on list, 92.77 percent claims filed, claim deadline 2026-03-30, payments starting circa Aug 10 2026 in up to 3 installments)'
+        in_print_split: '50-50 between author and publisher (circa $1,500 each per work)'
+        reverted_or_self_published: '100 percent to the author'
+        download_date_cutoff: 'August 10, 2022 - reversion must predate this date for a 100 percent author claim'
+        final_approval: 'Jul 20 2026, Judge Araceli Martinez-Olguin (corpus author_settlement_detail; TechCrunch: deal received final approval in July)'
+      claim_categories:
+        - 'Reverted-rights claims: publishers seeking payment for works they no longer have a legitimate claim on because rights reverted (April Henry / HarperCollins example: reverted at least 17 years ago)'
+        - 'Share inflation: publishers seeking a full 100 percent payment when only entitled to 50 percent'
+        - 'Non-rightsholder claims: literary agencies making claims despite not being rightsholders (Strauss; Milan Bluesky post)'
+      recordkeeping_vs_strategy:
+        strauss_position: 'Reluctant to attribute to malice what can be plausibly explained by poor recordkeeping; some publishers have said this is a mistake they asked Anthropic to fix; but the unusually large number of reports over two days with the exact same errors suggests something much more widespread and systemic than routine glitches'
+        rasenberger_position: 'Not a grab by the publishers; predictable result of bad recordkeeping and a confusing settlement process (to The New York Times)'
+        status: 'Unresolved - malice-versus-recordkeeping is not adjudicated in the reporting; both named observers land on recordkeeping/confusion while Strauss flags a systemic pattern'
+      financial_incentive_mapping:
+        publisher_claim_value: 'Each in-print work converts to a circa $1,500 publisher claim under the 50-50 rule, creating a standing incentive to claim broadly at distribution'
+        over_claim_arbitrage: 'Claiming a reverted-rights work at 100 percent, or an in-print work at 100 percent instead of 50 percent, doubles or captures the full $3,000 per work; the settlement design makes over-claims profitable unless disputed'
+        voluntary_comparator: 'HarperCollins-Microsoft (Bloomberg-reported, Nov 2024, mechanism 524): $5,000 per nonfiction title, $2,500 author plus $2,500 publisher, author opt-in required. The voluntary pay-side price ($2,500 publisher share) exceeds the settlement in-print publisher share ($1,500), while the settlement is involuntary and court-ordered'
+        news_corp_angle: 'Thomson on the Q2 FY2026 call Feb 5 2026: we and our authors at HarperCollins naturally expect to receive our fair share of that payout starting later this calendar year (mechanism 594). The expectation materialized as the Sep 2026 claims fight; HarperCollins is the named over-claimer in the TechCrunch piece (April Henry allegation, reported not adjudicated)'
+      theory_prediction:
+        direction: 'Adversarial and involuntary: Anthropic pays under court order after a piracy finding on shadow libraries (LibGen, PiLiMi per corpus), not as a cooperative licensing partner. No ongoing relationship, no partnership goodwill.'
+        prediction: 'The incentive theory predicts NO coverage softening from this money flow. Money flows from Anthropic to publishers/authors as a litigation penalty, so the directional prediction is neutral-to-harder Anthropic coverage, not softer. This mechanism BOUNDS the falsification family: money flows but in the penalty direction, the opposite of the paid-licensing legs (OpenAI, Google, Meta) that predict softening.'
+        falsification_family: 'Boundary member, not a new pin: the observed financial layer (involuntary payout) predicts against softening, consistent with the falsification-alternative-driver family structure; no coverage-tone claim is made from this mechanism'
+      confounders:
+        - 'STRONG: The April Henry HarperCollins claim is a single-author allegation reported by TechCrunch; HarperCollins has no on-record response in the piece, and the claim is not adjudicated. Strauss herself cautions against malice attribution.'
+        - 'STRONG: Strauss and Rasenberger both land on recordkeeping and process confusion, not strategy; the systemic-pattern reading is Strauss inference from two days of complaint volume, not an audit of claims data.'
+        - 'MODERATE: Claiming the lawful 50 percent publisher share on legitimately in-print works is proper participation in a court-approved settlement; only the reverted-rights and 100-versus-50 categories are disputed, and the piece does not quantify their share of total claims.'
+        - 'WEAK: Single-outlet primary reporting (TechCrunch) plus two blogs (Writers Beware) and an NYT quote; no publisher-side or administrator-side response in the corpus yet.'
+      counterexamples:
+        - 'The settlement is a PAYOUT TO publishers/authors, so Anthropic is the financial counterparty of the publishing industry here, but involuntarily; this is structurally distinct from every paid-licensing leg in the corpus (OpenAI, Google, Meta, Microsoft), where the lab chose to pay.'
+        - 'News Corp expected the payout (Thomson Feb 5 2026 call) and HarperCollins is the named claimant, yet no WSJ coverage-posture change toward Anthropic is asserted by this mechanism; no tone claim.'
+      correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. A distribution-phase claims fight changes the incentive map at the publisher level; it does not prove newsroom behavior. The April Henry allegation is reported, not adjudicated. No causal claim.'
+      cautious_language_required: true
+      no_coverage_tone_claim: true
+      tone_scores: 'NOT_SCORED'
+      statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False. No new tone arrays scored this run (standing rule Aug 28 2026). The $1,500 per-work publisher share is arithmetic from the reported 50-50 split, not a disclosed figure.'
+      sources:
+        - 'https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/'
+      research_method: '2 browser.search query sets this run (OpenAI publisher licensing deal September 2026; Anthropic publisher licensing deal September 2026) + browser.open first-hand read of the TechCrunch Sep 6 2026 piece (Anthony Ha); all URLs verbatim from Full-URL listings; pre-commit novelty greps confirmed zero anthropic_settlement_distribution keys in profiles/, zero test_type_c_629 files on disk, no #629 in git log, mechanism_id 612 next free (max 611); corpus cross-refs: mechanism 594 status note (Sep 6 TechCrunch at profile level), mechanism 509 (Anthropic zero-deal posture plus $1.5B settlement), mechanism 524 (HarperCollins-Microsoft $5K/title comparator), author_settlement_detail (482,460 works, 92.77 percent claims, Jul 20 2026 final approval), mechanism 614 (Reddit v. Anthropic $0 payer leg); no zero-coverage claims per iteration-492 rule (all claims are positive documented facts); no em dashes'
+      novelty: 'FIRST corpus formalization of the Sep 2026 Anthropic settlement distribution-phase payout fight as a dedicated mechanism; FIRST corpus record of publisher over-claims on reverted rights (April Henry / HarperCollins example); FIRST corpus record of literary-agency claims on the settlement (Strauss: agents are not rightsholders); FIRST corpus record of the August 10 2022 download-date cutoff for 100 percent author claims; FIRST distribution-phase extension of mechanism 594 profile-level status note into a mechanism block'
+      test_file: tests/test_type_c_629_anthropic_settlement_distribution_payout_fight_sep09_8am.py
+      verification:
+        iteration: 629
+        type: 'C'
+        date: '2026-09-09 08:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
   amazon:
     display_name: Amazon
     aliases:
