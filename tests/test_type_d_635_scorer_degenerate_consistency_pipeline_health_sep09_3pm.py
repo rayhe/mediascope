@@ -327,7 +327,7 @@ class TestDocSync635:
 class TestRotationCycleGuard635:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #635 main-commit SHA is known.
-    ANCHORED_SHA = "PENDING_PATCH_IN_FOLLOWUP"  # #635 main commit (patched in followup per #565 convention)
+    ANCHORED_SHA = "53aeb8b744a8c995925f48f5fa89d1856ac799cc"  # #635 main commit (patched in followup per #565 convention)
 
     @staticmethod
     def _mains():
