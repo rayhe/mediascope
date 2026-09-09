@@ -1,3 +1,33 @@
+#623 Type B: Kashmir Hill (NYT, Privacy/Surveillance Beat) Surveillance-Register Constancy - FIRST dedicated Type B on Hill competitor_coverage (mechanism 608, next free; max pre-commit 607; Hill entry had 0 blocks) - Meta arm Feb 13 2026 NYT NameTag exposé (Hill + Kalley Huang + Mike Isaac, leaked Reality Labs memo "dynamic political environment" quote, tone -0.80 carried from nytimes.yaml at identical value) vs Clearview AI arm Jan 18 2020 solo-Hill "The Secretive Company That Might End Privacy as We Know It" (-0.85, triggered 8 federal class actions + 40+ org PCLOB letter, court-document citation) vs automaker arm Mar 11 2024 "Automakers Are Sharing Consumers' Driving Behavior With Insurance Companies" (-0.75, GM cut LexisNexis ties 11 days later, Wyden/Markey FTC letter) - illustrative delta meta-minus-non-meta 0.00 MANUAL ILLUSTRATIVE, p_value/cohens_d NOT_CALCULATED, is_significant False; verdict SURVEILLANCE-REGISTER CONSTANCY (register tracks surveillance behavior, not entity; 11th falsification-family member, extends #538/#548/#553/#563/#568/#578/#583/#588/#613); NOT a pure asymmetry pin; no zero-coverage claims per iteration-492 rule (all comparator arms positive Hill bylines); distinct from publication-level nytimes.yaml Hill analysis; nytimes.com policy-blocked, third-party/court-document bounded + 619-623 Rotation Guard Closing A->B + Doc-Sync Ratchet (Tracked Stats 32790->32838 / 950->951) - Sep 9 2026 02:00 PDT
+
+**Date:** 2026-09-09 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 622 A -> 623 B)
+**Type:** B - Journalist Cross-Entity Tracking (Kashmir Hill, NYT privacy/surveillance reporter; distinct from the publication-level nytimes.yaml Hill cross-entity analysis)
+
+**Finding:** Hill's adversarial investigative register is constant across entity classes:
+1. Meta NameTag (Feb 13 2026, Hill+Huang+Isaac): leaked internal memo with political-timing quote, -0.80 (carried from nytimes.yaml tone_score, identical value). Byline verified via pxlnv.com and tipranks.com; memo quote via MacRumors mirror.
+2. Clearview AI (Jan 18 2020, solo Hill): "The Secretive Company That Might End Privacy as We Know It", -0.85. 8 federal class actions within weeks, 40+ org letter to PCLOB, Big Tech cease-and-desists Feb 5-6 2020. Cited via S.D.N.Y. court memorandum and Wikipedia.
+3. Automakers (Mar 11 2024, Hill): driver-data sales to LexisNexis/Verisk, -0.75. GM cut ties Mar 22 2024, Wyden/Markey FTC letter, Texas AG suit. Archived NYT URL via web.archive.org.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE (Aug 28 2026 standing rule). Meta -0.80 vs non-meta avg (-0.85 + -0.75)/2 = -0.80: delta 0.00. p_value/cohens_d NOT_CALCULATED, is_significant False.
+
+**Confounders Ranked:** STRONG: (1) beat-driven register (the finding: falsifies journalist-level anti-Meta bias); (2) news-peg skew (genuine adversarial peg each arm). MODERATE: (1) timing skew 2020/2024/2026; (2) co-byline dilution on NameTag. WEAK: entity-type skew (startup vs platform vs automakers, no observed modulation).
+
+**Financial context (correlation, not causation):** NYT-Meta $0 deal; NYT-Amazon $20-25M/yr (May 2025); NYT sued OpenAI Dec 2023. Hill's register fires on Meta, Clearview and automakers alike: verified money does not predict her writer-level register.
+
+**Cross-references:** nytimes.yaml Hill analysis (publication-level, distinct); falsification family #538/#548/#553/#563/#568/#578/#583/#588/#613 (this run extends); #543 (Roose, NYT).
+
+**Research method:** 4 browser.search query sets this run; nytimes.com policy-blocked (paywall), all items bounded via third-party citations/court documents; URLs verbatim from Full-URL listings; no zero-coverage claims per iteration-492 rule; no em dashes.
+
+**New Type B files:** `tests/test_type_b_623_kashmir_hill_surveillance_register_constancy_sep09_2am.py` - 6 classes, 48 tests.
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output; journalist-level constancy pin.
+
+**Rotation Transparency:** Previous entry #622 Type A at 01:00 PDT Sep 9 2026. Per rotation A->B->C->D->E, next after A is B. Selected Type B.
+
+**Novelty Verification:** Zero test_type_b_623 files on disk before this run (glob verified); no Type B commit with 623 in the title (git log --grep verified); Hill competitor_coverage had 0 blocks pre-commit (entry verified present); mechanism_id 608 next free (max pre-commit 607 verified via repo-wide YAML scan).
+
+---
+
 #622 Type A: The Guardian x Apple Vision Pro Aspirational Register vs Meta Pervert-Glasses Adversarial Register - Zero-Financial-Gradient Control - FIRST dedicated Type A under guardian.yaml competitor_relationships.apple (mechanism 607) - Apple arm aspirational (Gibbs Vision Pro review 'lives up to the hype' +0.35 Aug 16 2024 full-text mirror via richardhartley.com with Guardian photo-credit; Guardian roundup 'stunning potential with big trade-offs' +0.10 Jan 30 2024 headline-bounded) vs Meta arm adversarial (Barbara Speed opinion "Why I'll never be convinced by Meta's 'pervert' glasses" -0.60 Aug 5 2026; official Guardian YouTube short + buzzsumo journalist profile + biztoc mirror metadata; theguardian.com direct fetch policy-blocked) - illustrative delta -0.825 meta-minus-apple MANUAL ILLUSTRATIVE, p_value/cohens_d NOT_CALCULATED, is_significant False; Apple $0 Meta $0 no deal either side so tone gap is incident/news-value driven (STRONG: incident news value, form-factor skew, genre skew, timing skew) not money; Guardian OpenAI deal contrast (#537) sharpened; Everyone Hates Elon confirmed activist campaign not podcast; NOT a falsification-family member + 618-622 Rotation Guard Closing D->E->A + Doc-Sync Ratchet (Tracked Stats 32747->32790 / 949->950) - Sep 9 2026 01:00 PDT
 
 **Date:** 2026-09-09 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 621 E -> 622 A)

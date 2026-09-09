@@ -2085,6 +2085,99 @@ journalists:
   - https://pen.org/people/kashmir-hill/
   - https://talkingbiznews.com/they-talk-biz-news/ny-times-biz-desk-hires-kashmir-hill/
   multi_publication: true
+  competitor_coverage:
+    type_b_623_kashmir_hill_surveillance_register_constancy:
+      mechanism_id: 608
+      iteration: 623
+      date: '2026-09-09 02:00 PDT'
+      type: B
+      scheduled_job_id: 'mediascope-daily-iteration'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      design: 'Type B journalist cross-entity tracking, register-constancy audit. Question: does Kashmir Hill apply a different editorial register to Meta than to other surveillance actors, or is her adversarial register constant across entities? Within-writer comparison across three Hill bylines on three entity classes: (a) the Meta arm, Feb 13 2026 NYT NameTag exposé (co-bylined Hill + Kalley Huang + Mike Isaac); (b) the Clearview AI arm, Jan 18 2020 NYT solo-Hill exposé; (c) the automaker driver-data arm, Mar 11 2024 NYT Hill investigation. All three sit in the adversarial_investigative_expose register. Tests whether the NameTag adversarial register is target-selected entity bias or beat-driven register constancy. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No zero-coverage claims per the iteration-492 rule: every comparator arm is a positive Hill byline.'
+      meta_arm:
+        entity: 'meta'
+        title: 'Meta Plans Facial Recognition Feature for Ray-Ban Smart Glasses'
+        date: '2026-02-13'
+        byline: 'Kashmir Hill, Kalley Huang, Mike Isaac'
+        register: 'adversarial_investigative_expose'
+        manual_illustrative_tone: -0.8
+        tone_provenance: 'carried from profiles/nytimes.yaml Hill cross_entity_coverage_analysis meta_coverage recent_articles tone_score -0.80, identical value, no rescoring'
+        key_evidence: 'Leaked internal Reality Labs memo: ''We will launch during a dynamic political environment where many civil society groups that we would expect to attack us would have their resources focused on other concerns.'' Internal name ''Name Tag''; feature would let wearers identify people via the Meta AI assistant. Meta had discussed the feature since early 2025; original plan to pilot at a conference for the blind did not happen.'
+        note: 'Co-byline dilutes individual register attribution (Huang, Isaac share framing decisions); Hill''s presence as lead privacy voice is the load-bearing fact. nytimes.com direct fetch policy-blocked per standing rule; byline verified via two independent third-party attributions, memo quote via MacRumors mirror of the NYT reporting.'
+        source_urls:
+        - 'https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/'
+        - 'https://pxlnv.com/linklog/meta-ray-bans-facial-recognition/'
+        - 'https://www.tipranks.com/news/the-fly/meta-planning-to-add-facial-recognition-tech-to-smart-glasses-ny-times-reports-thefly'
+        evidence_tier: 'byline_attribution_third_party_this_run_memo_quote_mirror'
+      comparator_arms:
+      - entity: 'clearview_ai'
+        title: 'The Secretive Company That Might End Privacy as We Know It'
+        date: '2020-01-18'
+        byline: 'Kashmir Hill'
+        register: 'adversarial_investigative_expose'
+        manual_illustrative_tone: -0.85
+        key_evidence: 'Solo Hill byline. Clearview scraped 3 billion images (later 30B+) from Facebook, YouTube, Venmo and other sites without consent; sold a 99%-accuracy face-search app to 600+ law enforcement agencies. Hill went inside the secretive startup and interviewed Hoan Ton-That.'
+        documented_impact: 'Triggered 8 federal class actions within weeks of publication; 40+ tech and civil-rights organizations sent a letter to the Privacy and Civil Liberties Oversight Board and four congressional committees; Google, YouTube, Facebook and Venmo sent cease-and-desist letters Feb 5-6 2020; Hill expanded it into the book Your Face Belongs to Us (2023, Royal Society Trivedi Science Book Prize shortlist).'
+        note: 'The maximally adversarial Hill register in the corpus: the headline itself declares the technology ''might end privacy as we know it.'' Court filings cite the article verbatim with the nytimes.com URL; two slug variants appear across filings (clearviewprivacyfacialrecognition vs clearview-privacy-facial-recognition), so the NYT URL is carried via the court-document citation, not asserted as a live link.'
+        source_urls:
+        - 'https://en.wikipedia.org/wiki/Clearview_AI'
+        - 'https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2020cv01296/532050/51/'
+        - 'https://www.techpolicy.press/your-face-belongs-to-us-a-conversation-with-kashmir-hill/'
+        evidence_tier: 'court_document_citation_tertiary_this_run'
+      - entity: 'automakers'
+        title: 'Automakers Are Sharing Consumers'' Driving Behavior With Insurance Companies'
+        date: '2024-03-11'
+        byline: 'Kashmir Hill'
+        register: 'adversarial_investigative_expose'
+        manual_illustrative_tone: -0.75
+        key_evidence: 'GM, Honda, Kia, Hyundai, Subaru and Mitsubishi tracked braking, acceleration, speed and mileage via connected cars and sold it to data brokers LexisNexis and Verisk, which built insurance risk scores. Hill discovered her own Chevrolet Bolt had been enrolled in Smart Driver+ without her recall; a 130-page LexisNexis dossier covered 640 trips.'
+        documented_impact: 'GM cut ties with LexisNexis on Mar 22 2024, 11 days after publication; Senators Wyden and Markey asked the FTC to investigate the auto industry''s data practices; Texas AG sued GM; Florida Cadillac driver filed suit after his premium doubled.'
+        note: 'Non-tech, non-platform comparator: the adversarial register fires on automakers too. Archived NYT URL captured Mar 11 2024 via web.archive.org; impact chain verified via Autoblog and Fast Company this run.'
+        source_urls:
+        - 'https://web.archive.org/web/20240311090514/https://www.nytimes.com/2024/03/11/technology/carmakers-driver-tracking-insurance.html'
+        - 'https://www.autoblog.com/2024/03/25/gm-cuts-ties-with-some-third-party-data-brokers-after-nyt-report/'
+        - 'https://www.fastcompany.com/91175277/general-motors-texas-driver-data-ron-wyden-ed-markey?s=04'
+        evidence_tier: 'archived_nyt_url_impact_chain_third_party_this_run'
+      asymmetry_scorer_result_illustrative:
+        correlation_not_causation: true
+        target_entity: 'meta'
+        peer_entities: ['clearview_ai', 'automakers']
+        meta_tone: -0.8
+        clearview_tone: -0.85
+        automaker_tone: -0.75
+        non_meta_avg: -0.8
+        delta_meta_minus_non_meta: 0.0
+        delta_calc: '(-0.85 + -0.75)/2 = -0.80 non-meta avg; -0.80 - (-0.80) = 0.00'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        note: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule. The 0.00 delta is the sharpest within-writer cross-entity constancy pin in the Hill corpus: the adversarial register does not move between a platform giant (Meta), a startup (Clearview) and automakers. It is a BEAT register, not an entity register - see confounders and verdict.'
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Beat-driven register: Hill is the NYT''s dedicated privacy/surveillance reporter; the adversarial_investigative_expose register is her beat''s register. This is the finding, not a flaw: it falsifies journalist-level anti-Meta bias by showing the same register fires on non-Meta surveillance actors. But it means the comparison is register-constant by beat assignment, not a controlled entity test.'
+      - strength: 'STRONG'
+        text: 'News-peg skew: each arm has a genuine adversarial peg - a leaked internal memo with a political-timing quote (Meta), a secretive startup with 3B non-consensually scraped images (Clearview), 130-page insurance dossiers on unknowing drivers (automakers). Adversarial register tracks adversarial facts, which Hill''s beat selects for.'
+      - strength: 'MODERATE'
+        text: 'Timing skew: 2020 vs 2024 vs 2026, a six-year span. The register is stable across the span, which strengthens the constancy claim, but contemporaneous same-window pairing (as in #618) is not available for Hill.'
+      - strength: 'MODERATE'
+        text: 'Co-byline dilution on the Meta arm (Huang, Isaac share framing decisions) vs solo/lead Hill on the comparator arms. Mitigant: Hill is the privacy-beat lead on the NameTag piece and the memo-driven surveillance framing is her signature register.'
+      - strength: 'WEAK'
+        text: 'Entity-type skew: startup vs platform giant vs automakers. Market-cap sympathy could modulate register, but the observed tones (-0.85/-0.80/-0.75) show no such modulation - the constancy survives the skew.'
+      verdict: 'SURVEILLANCE-REGISTER CONSTANCY. Kashmir Hill applies the same adversarial investigative register to Meta''s NameTag plans (-0.80), to Clearview AI (-0.85) and to automakers'' driver-data sales (-0.75): illustrative delta 0.00. The register tracks the surveillance behavior (non-consensual biometric or behavioral data collection turned into a product), not the entity. This EXTENDS the falsification family (#538, #548, #553, #563, #568, #578, #583, #588, #613) - writer-level constancy falsifies journalist-level anti-Meta bias; Hill is the 11th falsification-family member at the iteration level. NOT a pure asymmetry pin. Distinct from the publication-level nytimes.yaml Hill analysis: that block makes zero-coverage claims that predate the iteration-492 standing rule; this journalist-level mechanism makes none, and its comparator arms are all positive Hill bylines. Illustrative only, is_significant False, correlation not causation.'
+      financial_context: 'NYT-Meta: no AI content licensing deal documented ($0). NYT-Amazon: $20-25M/yr AI licensing (May 2025, carried from nytimes.yaml). NYT-OpenAI: adversarial (NYT sued OpenAI/Microsoft Dec 2023). Hill''s adversarial register fires on Meta (no deal), Clearview (no deal) and automakers (no deal) alike - the incentive map is verified money, but her writer-level behavior is beat-driven constancy; the money gradient does not predict her register. Correlational boundary only.'
+      cross_refs:
+      - 'profiles/nytimes.yaml Hill cross_entity_coverage_analysis (publication-level; this mechanism is the journalist-level distinct pin)'
+      - '#538 (Cade Metz), #548 (Mehrotra), #553 (Haskins), #563 (Heath), #568 (Frier), #578 (Bogost), #583 (Lopatto), #588 (Stein), #613 (Heater) - falsification family, this run extends it'
+      - '#543 (Roose, NYT Hard Fork - same publication, different beat)'
+      - 'https://pxlnv.com/linklog/meta-ray-bans-facial-recognition/ (NameTag byline attribution this run)'
+      - 'https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2020cv01296/532050/51/ (Clearview article citation in S.D.N.Y. memorandum)'
+      block_key: type_b_623_kashmir_hill_surveillance_register_constancy
+      author: 'Kit (with Ray)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level register-constancy pin on an in-corpus journalist (Hill); illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First dedicated Type B mechanism on Kashmir Hill (zero competitor_coverage blocks pre-commit; entry verified present with 0 blocks). Zero test_type_b_623 files on disk (glob verified this run). No Type B commit with 623 in the title (git log --grep verified this run). The Meta arm tone is carried from nytimes.yaml at the identical -0.80 value (no rescoring); the Clearview and automaker arms, the 0.00 constancy delta and the 11th falsification-family membership are new this run. Mechanism id 608 is the next free profiles mechanism id (max pre-commit 607). Rotation: 622 A -> 623 B.'
+      research_method: '4 browser.search query sets this run: (1) Kashmir Hill NYT Meta NameTag facial recognition glasses; (2) Kashmir Hill Clearview AI investigation; (3) quoted NameTag byline verification (pxlnv, tipranks); (4) Kashmir Hill automakers LexisNexis Mar 2024 (autoblog, Fast Company, web.archive.org). nytimes.com direct fetch policy-blocked per standing rule (paywall) - all items byline/excerpt/impact-bounded via third-party citations and court documents, stated explicitly. URLs verbatim from Full-URL listings; none constructed. No zero-coverage claims per iteration-492 rule (all comparator arms are positive Hill bylines). No em dashes.'
 - name: Kevin Roose
   career:
   - publication: nytimes
