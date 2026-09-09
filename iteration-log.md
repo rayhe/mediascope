@@ -25,7 +25,7 @@
 
 **Novelty Verification:** Zero test_type_e_636 files on disk before this run (glob verified); no Type E commit with 636 in the title (git log --grep verified); no iteration-636 mechanism block in profiles/ (repo-walk test asserts); the turbo.gadgets360.com/en/wearables/meta-smart-glasses-facial-recognition-support-report-8360221 URL had zero repo-wide hits pre-commit (md/tests/profiles greps plus git-grep over tracked py/yaml, both clean except an unrelated gadgets360 Alphabet-earnings mention).
 
-**Commit hashes:** (filled in doc-sync post-commit)
+**Commit hashes:** main e9caeeb, followup 2971203 (ANCHORED_COMMIT patched per #565 convention; rotation-guard regex fixed raw double-backslash to non-raw single-escape mid-followup so the digit class matches; 59/59 green post-anchor). count_stats.py --check green: 33554 tests / 964 files, README stats current (--pytest authoritative method via repo .venv). podcast-sentiment.md Tracked Sources table 49->50 cycles; README #635 test-table row repaired (was in ARCHITECTURE, missed in README doc-sync). Note: #631/#632/#635 guard window tests now fail by designed supersession (#636 main moved the newest-5 window); their non-window tests still pass. No analysis.json changes (monitoring-only window).
 
 ---
 
