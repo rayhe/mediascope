@@ -25,6 +25,8 @@
 
 **Novelty Verification:** Zero test_type_e_631 files on disk before this run (glob verified); no Type E commit with 631 in the title (git log --grep verified); no iteration-631 mechanism block in profiles/ (repo-walk test asserts); the petapixel.com/2026/09/09/us-police-warn-meta-smart-glasses-could-be-a-security-threat/ URL had zero repo-wide hits pre-commit (md grep across the repo plus git-grep over all tracked py/yaml files, both clean); bloomberglaw false-ad suit in corpus via #576; petapixel Sep 1 bricked piece in corpus via #547; hyperallergic.com/guerrilla in corpus (re-surfaced this run after absence from #626).
 
+**Doc-Sync (post-commit):** Main commit e7bf62d, followup fcee08b (ANCHORED_COMMIT patched per #565 convention; dual --grep #62/#63 range fix for the 627-631 window verified 64/64 green post-anchor). count_stats.py --check green: 33315 tests / 959 files, README stats current. podcast-sentiment.md Tracked Sources table 48->49 cycles. No analysis.json changes (monitoring-only window).
+
 ---
 
 #630 Type D: Scorer Consistency for the 626-630 Window (Verge x Amazon Ring Delta +0.8167 Reproduces Exactly, Zero-Financial-Gradient Control Holds; Gibbs Within-Writer Genre Register Delta -0.25 Reproduces Exactly; Anthropic Distribution-Phase Mechanism 612 NOT_SCORED Boundary; Podcast 48th Verification, Frontier TIED Sep 8) + 626-630 Rotation Guard + Doc-Sync Ratchet - Sep 9 2026 10:00 PDT
