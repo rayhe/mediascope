@@ -2176,6 +2176,73 @@ competitor_relationships:
     direction: "none"
     description: "No known direct financial relationship."
     coverage_prediction: "neutral"
+    mechanism_607_guardian_apple_vision_pro_aspirational_vs_meta_pervert_glasses:
+      mechanism_id: 607
+      mechanism_name: "Guardian x Apple Vision Pro aspirational register vs Meta pervert-glasses adversarial register - zero-financial-gradient control"
+      iteration: 622
+      iteration_type: "A"
+      iteration_time: "2026-09-09 01:00 PDT"
+      date: "2026-09-09"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "The Guardian"
+      competitor_pair: "Apple"
+      financial_channel: "$0 both sides"
+      type: "Type A - Competitor Coverage Deep Dive"
+      summary: "FIRST dedicated Type A mechanism under guardian.yaml competitor_relationships.apple. The Guardian's Apple wearables coverage runs aspirational while its Meta glasses coverage runs adversarial, despite ZERO financial gradient (Apple $0, Meta $0, no direct deal either side). Zero-financial-gradient CONTROL against the financial-determinism reading: the tone gap is incident and news-value driven, not money driven."
+      articles_apple:
+      - title: "Vision Pro review: Apple's cutting-edge headset lives up to the hype"
+        author: "Samuel Gibbs"
+        date: "2024-08-16"
+        register: "aspirational_product_review"
+        framing: "Immersive-experience register: Yosemite snowfall, Tatooine speeder, Rogue One in 3D; passthrough leagues ahead of rivals; caveats (price, bulk) confined to asides. No privacy vocabulary despite the inward/outward camera array and EyeSight face display."
+        manual_illustrative_tone: 0.35
+        tone_note: "Headline 'lives up to the hype' is aspirational; body delights in the device."
+        url: "http://richardhartley.com/2024/08/vision-pro-review-apples-cutting-edge-headset-lives-up-to-the-hype/"
+        evidence_tier: "full_text_mirror"
+        attribution_note: "Author's personal-site mirror of the Guardian review; Guardian photo-credit line (Photograph: Martin Godwin/The Guardian) confirms the Guardian original. theguardian.com direct fetch policy-blocked this run."
+      - title: "Apple Vision Pro reviews roundup: stunning potential with big trade-offs"
+        date: "2024-01-30"
+        register: "balanced_aggregate_positive_lean"
+        framing: "'Stunning potential' lede aggregate; trade-offs confined to price and weight. No surveillance framing of the EyeSight outward display."
+        manual_illustrative_tone: 0.10
+        tone_note: "Aggregate register; positivity carries the headline."
+        url: "https://www.theguardian.com/technology/2024/jan/30/apple-vision-pro-reviews-roundup-stunning-potential-with-big-trade-offs"
+        evidence_tier: "headline_bounded"
+        attribution_note: "theguardian.com URL surfaced verbatim via search; page body policy-blocked for direct fetch this run."
+      articles_meta:
+      - title: "Why I'll never be convinced by Meta's 'pervert' glasses"
+        author: "Barbara Speed"
+        date: "2026-08-05"
+        register: "adversarial_surveillance_opinion"
+        framing: "Opinion register: 'pervert glasses' as the governing noun; Black Mirror comparator; 20,000+ GDPR-objection signatures via the Everyone Hates Elon guerrilla-ad campaign; German ban consideration; survivor testimony. No product upside granted."
+        manual_illustrative_tone: -0.60
+        tone_note: "Opinion desk; maximal surveillance-threat framing of a camera-glasses form factor."
+        url: "https://www.youtube.com/shorts/Cb8gV-uNBnM"
+        evidence_tier: "full_transcript_excerpt_bounded"
+        attribution_note: "Official Guardian YouTube channel short of the piece. Journalist profile (https://buzzsumo.com/journalist/barbara-speed-145324357/) confirms Barbara Speed, theguardian.com, 2026-08-05. Mirror metadata (https://biztoc.com/x/84569d50c96ed261) confirms theguardian.com publication 2026-08-05 14:13:33. theguardian.com direct fetch policy-blocked this run."
+      manual_illustrative_tones_meta: [-0.60]
+      manual_illustrative_tones_apple: [0.35, 0.10]
+      illustrative_delta_meta_minus_apple: -0.825
+      p_value: "NOT_CALCULATED"
+      cohens_d: "NOT_CALCULATED"
+      is_significant: false
+      financial_context: "Guardian has no known direct financial relationship with Apple (financial_tie none, $0). Guardian also has no direct Meta deal. The tone gradient therefore runs WITHOUT a financial gradient; money cannot explain it. Contrast sharpened by the Guardian OpenAI licensing deal (Feb 2025): the paid entity gets stewardship register (#537) while the two unpaid entities split between aspirational review register (Apple) and surveillance register (Meta)."
+      confounders_ranked:
+        strong:
+        - "Incident-driven news value: documented non-consensual filming cases (pickup-artist rings, London street testing, Sama/Kenya annotator leaks) create genuine news value for the adversarial register."
+        - "Form-factor skew: discreet everyday glasses vs bulky obvious headset; the surveillance affordance differs materially."
+        - "Genre skew: opinion column vs hands-on product review; genre predicts register independent of target."
+        - "Timing skew: Aug 2024 review predates the 2026 pervert-glasses backlash wave."
+        moderate:
+        - "Reporter skew: Samuel Gibbs (consumer-tech product reviewer) vs Barbara Speed (deputy head of opinion); different briefs."
+        - "Single Meta piece: n=1 on the Meta arm."
+        weak:
+        - "No Guardian test case yet for a discreet Apple camera-glasses device (rumored 2027); the aspirational finding is headset-specific."
+      research_method: "search_result_attribution_bounded_sep09: five search passes (domain-style, exact-title, journalist profile, mirror), all URLs copied verbatim from surfaced results; zero-coverage claims per iteration-492 avoided; theguardian.com direct fetch policy-blocked (attributed mirrors used). MANUAL ILLUSTRATIVE tones only (Aug 28 standing rule)."
+      finding: "FIRST dedicated Type A under guardian.yaml competitor_relationships.apple. Zero-financial-gradient CONTROL: Guardian Meta arm adversarial (-0.60) vs Apple arm aspirational (+0.225 avg), illustrative delta -0.825 meta-minus-apple, NOT significant. Strong confounders (incident news value, genre, form factor, timing) fully account for the gap; no financial attribution. NOT a falsification-family member (no deal on either side, so the incentive theory predicts nothing); the mechanism separates incident-driven news value from financial incentive as explanations."
+      coverage_prediction_stands: "neutral"
   google:
     financial_tie: "mixed"
     estimated_value: "undisclosed"
