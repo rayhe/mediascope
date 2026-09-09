@@ -406,7 +406,7 @@ class TestRotationCycleGuard625:
     # in the followup commit per the #565 convention. This class is
     # deselected pre-commit (it asserts the post-commit anchor) and runs
     # green in the followup.
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "cc3ed5c"
     EXPECTED_WINDOW_NEWEST_FIRST = [
         ("D", 625),
         ("C", 624),
