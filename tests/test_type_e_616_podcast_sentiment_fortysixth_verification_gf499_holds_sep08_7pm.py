@@ -478,7 +478,7 @@ class TestRotationCycleGuard616:
     commit after the main commit SHA is known. Pre-commit it is deselected.
     """
 
-    ANCHORED_COMMIT = "PATCH_ME_IN_FOLLOWUP"
+    ANCHORED_COMMIT = "8d3cfcd"  # main commit of Type E #616, patched in followup per #565 convention
 
     def _mains(self):
         out = subprocess.run(
