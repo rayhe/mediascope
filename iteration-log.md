@@ -1,3 +1,22 @@
+#625 Type D: Scorer Consistency for #621 (Podcast 47th Monitoring Boundary) + #622 (Guardian x Apple Delta -0.825 Reproduces Exactly, Zero-Financial-Gradient Control) + #623 (Kashmir Hill Register Constancy Delta 0.00 Reproduces Exactly, 11th Falsification-Family Member) + #624 (OpenAI India Mechanism 609 Qualitative Boundary) + New Competitor-Coverage Pattern Tests + 621-625 Rotation Guard Closing C->D + Doc-Sync Ratchet (Tracked Stats 32891->32953 / 952->953) - Sep 9 2026 04:00 PDT
+
+**Date:** 2026-09-09 04:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 624 C -> 625 D)
+**Type:** D - Test & Verify (scorer consistency across the 621-625 window)
+
+**Finding:**
+1. #622 Type A (Guardian x Apple, mechanism 607): illustrative delta -0.825 reproduces EXACTLY - meta arm -0.60 minus apple arm avg 0.225 ([0.35, 0.10]); p_value/cohens_d NOT_CALCULATED, is_significant False; financial_channel "$0 both sides"; NOT a falsification-family member (no deal either side, the incentive theory predicts nothing). Zero-financial-gradient control holds: the gap is incident/news-value driven.
+2. #623 Type B (Kashmir Hill surveillance-register constancy): illustrative delta 0.00 reproduces EXACTLY - non-meta avg (-0.85 + -0.75)/2 = -0.80, meta -0.80; p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False; MANUAL ILLUSTRATIVE ONLY; all comparator arms positive Hill bylines (no zero-coverage claims per iteration-492). Verdict: SURVEILLANCE-REGISTER CONSTANCY, 11th falsification-family member - beat register, not entity register.
+3. #624 Type C (OpenAI India attribution-deal blitz, mechanism 609): qualitative boundary. tone_scores NOT_SCORED; p_value NOT_CALCULATED; is_significant False; financial terms undisclosed on both legs; sue-then-sign arc (Indian Express sought to join ANI suit Feb 2025, signed Sep 2026); TOI third Google-plus-OpenAI dual-payer (after FT mechanism 437, WaPo mechanism 569); no coverage-tone claim.
+4. #621 Type E (podcast sentiment 47th verification): monitoring boundary. No iteration-621 mechanism block in profiles/ (repo-wide grep verified); podcast-sentiment.md carries the 47th verification (GF 499 HOLDS, Attention Sphere 47th no-match as podcast, EHE 30-day hold); TWO new-to-corpus press surfaces (Reuters Sep 8 Meta Muse piece; USA Today Sep 8 Meta Glasses blurb, usatoday.com NEW domain); recency frontier ADVANCES Sep 7 to Sep 8.
+
+**New Type D files:** `tests/test_type_d_625_scorer_consistency_621_622_623_624_rotation_doc_sync_sep09_4am.py` - 8 classes, 62 def-tests (57 passing pre-commit, rotation-guard class deselected per the #565 followup convention; anchor patched in the followup). New competitor-coverage pattern tests: zero-financial-gradient control, register-constancy falsification, sue-then-sign dual posture, podcast monitoring boundary, India-market namespace 609.
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only + qualitative window; no new empirical finding at the publication level.
+
+**Rotation Transparency:** Previous entry #624 Type C at 03:00 PDT Sep 9 2026 (commit 37ce2bb verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D.
+
+**Novelty Verification:** Zero test_type_d_625 files on disk before this run (glob verified); no Type D commit with 625 in the title (git log --grep verified); mechanism 607/608/609 pins reproduced verbatim from profiles, not re-written.
+
 #624 Type C: OpenAI India Attribution-Deal Blitz (Sep 7-8 2026) - BCCL/Times Group (Times of India + Economic Times) Sep 7 + Indian Express Group (Indian Express + Financial Express + business properties, live + archives, 7 languages) Sep 8; Zero-Disclosed-Fee Attribution-and-Links Structure (NOT Training Licences); Sue-Then-Sign Arc (Indian Express Sought to Join ANI Suit Feb 2025, ANI Appeal Listed Sep 8 Adjourned to Sep 14); TOI Becomes Third Google-plus-OpenAI Dual-Payer Publisher (After FT #437, WaPo #569); FIRST Dedicated India-Market Mechanism (mechanism 609, next free; max pre-commit 608) + 620-624 Rotation Guard Closing B->C + Doc-Sync Ratchet (Tracked Stats 32838->32891 / 951->952) - Sep 9 2026 03:00 PDT
 
 **Date:** 2026-09-09 03:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 623 B -> 624 C)
