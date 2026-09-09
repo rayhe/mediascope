@@ -338,10 +338,13 @@ class TestRotationCycleGuard631:
     per the #565 convention; these tests fail by design pre-anchor.
     """
 
-    ANCHORED_COMMIT = "PATCH_IN_FOLLOWUP_PER_565"
+    ANCHORED_COMMIT = "e7bf62d"
 
     def test_window_627_631_closes_d_to_e(self):
-        result = _run_git("log", "--oneline", "--grep=^Type [A-E] #63")
+        result = _run_git(
+            "log", "--oneline",
+            "--grep=^Type [A-E] #62", "--grep=^Type [A-E] #63",
+        )
         assert result.returncode == 0
         types = []
         for line in result.stdout.splitlines():
