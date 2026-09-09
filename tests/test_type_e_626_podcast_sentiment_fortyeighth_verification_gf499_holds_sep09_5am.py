@@ -496,7 +496,7 @@ class TestRotationCycleGuard626:
     commit after the main commit SHA is known. Pre-commit it is deselected.
     """
 
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"  # main commit of Type E #626, patched in followup per #565 convention
+    ANCHORED_COMMIT = "53e66f4"  # main commit of Type E #626, patched in followup per #565 convention
     EXPECTED_WINDOW_NEWEST_FIRST = [
         ("E", 626),
         ("D", 625),
