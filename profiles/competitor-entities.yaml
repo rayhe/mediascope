@@ -4153,6 +4153,72 @@ entities:
       - https://gizmodo.com/some-unknown-group-is-reportedly-using-claude-mythos-without-permission-2000749327
       - https://gizmodo.com/anthropics-mythos-ai-reportedly-hacked-the-nsas-most-sensitive-systems-in-hours-2000776836
       test_file: tests/test_gizmodo_anthropic_ai_safety_clean_control_adversarial_coverage_aug14.py
+    reddit_anthropic_adversarial_litigation_614:
+      mechanism_id: 603
+      iteration: 614
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-08'
+      time_pdt: '17:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Reddit v. Anthropic adversarial litigation (filed Jun 4 2025, San Francisco Superior Court; removed to federal court as Case 3:25-cv-05643-TLT, Reddit remand motion filed Mar 30 2026, live as of Sep 2026) - second corpus adversarial-litigation financial mechanism after #589 (Ziff Davis v. OpenAI); Anthropic pays Reddit $0 while Google ($60M/yr) and OpenAI (~$70M/yr) pay; Huffman''s pay-us-or-take-a-hike norm is now LITIGATED, not just licensed'
+      overview: 'Reddit sued Anthropic on Jun 4 2025 in the Superior Court of California, San Francisco (SiliconANGLE, URL dated 2025/06/04) for unauthorized scraping and commercial use of Reddit user data to train Claude. Claims: breach of contract, trespass to chattels, unjust enrichment, tortious interference, unfair competition. Reddit alleges Anthropic accessed the platform without permission more than 100,000 times even after publicly stating it had stopped, and continued training on Reddit data in violation of the user agreement and robots.txt. Relief sought: damages, disgorgement of Claude profits, and a court order blocking further use of Reddit data. Chief legal officer Ben Lee (Bloomberg Law): "We will not tolerate profit-seeking entities like Anthropic commercially exploiting Reddit content for billions of dollars without any return for redditors or respect for their privacy." Reddit held several licensing conversations with Anthropic and views the suit as the final option to force Anthropic back to the bargaining table. Anthropic spokesperson: "disagree with Reddit''s claims and will defend ourselves vigorously." The complaint (FindLaw) alleges training on Reddit posts since Dec 2021 and quotes CEO Dario Amodei: "Training [AI models] on large public preference modeling data sourced from ... Reddit comments ... significantly improves sample efficiency when subsequently finetuning on small preference modeling datasets." The case was removed to federal court as Case 3:25-cv-05643-TLT; Reddit''s motion for remand (Document 60, filed 03/30/26, Loeb PDF) means the litigation is LIVE as of Sep 2026. Fast Company''s 2026 Most Innovative Companies profile gives the owner-level framing: strategy formulated after ChatGPT''s Nov 2022 debut is "Pay us, or take a hike." Licensing revenue ($140M in 2025 "other" revenue, 6% of total) is small but the renewal negotiations for the Google and OpenAI contracts are a coming leverage event (Citizens'' Andrew Boone). On the non-payers: "Last year, it took this battle to court by filing suits against Anthropic and Perplexity." On whether Reddit tried deals first, CEO Steve Huffman: "Oh my gosh, yes" ... "We got to a point where there''s no deal to be done, because you can''t do a deal with somebody you don''t trust." Mobile World Live: "Other giants in the AI space understand and respect Reddit''s rules... OpenAI and Google have entered into formal partnerships with Reddit whereby they are permitted to use public Reddit content but only after agreeing to Reddit''s licensing terms" and "Unlike its competitors, Anthropic has refused to agree to respect Reddit users'' basic privacy rights, including removing deleted posts from its systems."'
+      pay_or_sue_bifurcation:
+        google_leg:
+          partner: 'Google'
+          announced: '2024-02-22'
+          value: '$60M/yr (Reuters); Barron''s Sep 2026 reports the contract adds about $130M to Reddit revenue and is in active renewal talks with expiry early 2027'
+          status: 'paid leg - licensed'
+        openai_leg:
+          partner: 'OpenAI'
+          announced: '2024-05-16'
+          value: '~$70M/yr (secondary estimates; CoinDesk citing analyst consensus)'
+          status: 'paid leg - licensed'
+        anthropic_leg:
+          partner: 'Anthropic'
+          value: '$0 - no licensing deal; Corpus confirms Anthropic holds ZERO voluntary publisher content licensing deals (publisher_deals_note line 3430)'
+          status: 'non-payer leg - SUED Jun 4 2025, adversarial_litigation tier'
+        bifurcation_note: 'Three-leg structure: two labs pay, one lab is sued. The damages/disgorgement sought are the enforcement arm of the same pricing norm the paid legs embody. Reddit v. Perplexity (DMCA suit, claims survived Jul 31 2026 per Reuters, reddit_perplexity_litigation in google block) is the sibling; Reddit v. Anthropic is the first adversarial-litigation formalization on the ANTHROPIC entity, which previously had zero reddit mentions.'
+      ownership_chain_to_wired:
+        chain: 'Reddit is Advance-owned (2026 proxy: 42,191,092 Class B + 16,182 Class A shares; ~21.9% economic, ~65.2% voting per mechanism 448 correction; ~$5.94B stake at the $140.67 post-earnings close). Advance owns Conde Nast, which owns WIRED. The litigation is Reddit corporate action, but the financial beneficiary of any pay-for-content norm enforcement is Advance, and the coverage incentive lands at Advance-owned WIRED.'
+        meta_contrast: 'Meta is Reddit''s named competitor (Threads/Forum per mechanism 448) AND pays Reddit $0 for data. Meta thus sits in the adversarial tier at Reddit alongside Anthropic, while Google/OpenAI sit in the paid tier. WIRED adversarial Meta coverage therefore reinforces the same pay-for-content norm that benefits Advance''s Reddit stake in the Anthropic litigation.'
+      mediascope_relevance: 'Second corpus adversarial-litigation financial-incentive mechanism (after #589 Ziff Davis v. OpenAI, different owner/lab pair), and the FIRST adversarial-litigation record on the Anthropic entity, which otherwise carries a ZERO-voluntary-deal posture. Financial prediction: the adversarial tier predicts HARDER Anthropic coverage at Advance-owned WIRED than Google/OpenAI paid-leg coverage. KEY TENSION (cross-ref #602): mechanism #602 documented a WIRED x Anthropic LICENSING-HALO divergence (softer/silent Anthropic coverage at WIRED) pointing the OPPOSITE direction from this mechanism''s prediction. This mechanism therefore BOUNDS rather than confirms the falsification family: the predicted adversarial signal exists at the financial layer, but the observed coverage layer (per #602) runs against it. The falsification-alternative-driver family (#538/#548/#553/#563/#568/#578/#583/#588/#608) is extended with a corpus-recorded counter-direction data point, not a new member.'
+      confounders:
+        - 'STRONG: Ownership/editorial firewall. Advance and Conde Nast publish editorial-independence claims; a Reddit corporate lawsuit is two causal hops from WIRED newsroom tone (corporate litigation -> parent financial incentive -> newsroom coverage). Structural incentive, not editorial control.'
+        - 'STRONG: The suit is Reddit corporate legal strategy, not WIRED editorial policy. The coverage prediction requires the parent-level financial exposure to transmit through editorial process, which the corpus cannot observe directly.'
+        - 'MODERATE: #602 WIRED x Anthropic licensing-halo divergence contradicts the harder-coverage prediction. If the financial theory held at this entity pair, WIRED Anthropic coverage should skew harder than its OpenAI coverage; #602 shows the opposite pattern. This is the most direct in-corpus counterevidence.'
+        - 'MODERATE: Anthropic''s ZERO-voluntary-deal posture is corpus-wide (not Reddit-specific), so the differential incentive at WIRED may be diluted across all Anthropic coverage, not sharpened at the Reddit-pairing.'
+        - 'WEAK: The case sits in a remand procedural fight (Document 60 filed 03/30/26); no merits ruling exists, so the adversarial financial outcome (damages/disgorgement) is unresolved and the incentive is prospective.'
+        - 'WEAK: The $60M/yr Google and ~$70M/yr OpenAI figures are secondary-reporting estimates, not disclosed terms; the $0 Anthropic leg is exact (no deal exists).'
+      counterexamples:
+        - '#602 WIRED x Anthropic licensing-halo divergence: WIRED coverage pattern on Anthropic runs softer/silent relative to the financial prediction, the opposite of what this mechanism predicts. Cross-referenced, not hand-waved.'
+        - 'Meta is Reddit''s named competitor AND a $0 non-payer, so the adversarial tier is not Anthropic-specific; any harder-Anthropic-coverage prediction competes with the WIRED-adversarial-Meta incentive (mechanism 448) for the same editorial resources.'
+        - 'Reddit''s own "pay us, or take a hike" norm is enforced by LICENSING where deals close (Google, OpenAI); the lawsuit is the exception path (Anthropic, Perplexity), so non-payer coverage effects may be driven by the sue-path salience, not the dollar amounts.'
+      correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. An adversarial lawsuit at the Reddit corporate level changes the incentive map at the Advance parent level; it does not prove WIRED newsroom behavior. No causal claim.'
+      cautious_language_required: true
+      no_coverage_tone_claim: true
+      tone_scores: 'NOT_SCORED'
+      statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False. No new tone arrays scored this run (standing rule Aug 28 2026). All financial figures are secondary-reporting estimates except the $0 Anthropic leg.'
+      sources:
+        - 'https://siliconangle.com/2025/06/04/reddit-sues-anthropic-alleged-scraping-commercial-use-user-data/'
+        - 'https://news.bloomberglaw.com/artificial-intelligence/reddit-sues-anthropic-says-ai-company-exploited-user-data'
+        - 'https://www.findlaw.com/legalblogs/courtside/reddits-lawsuit-over-data-scraping-could-reshape-the-future-of-ai/'
+        - 'https://www.livemint.com/technology/tech-news/reddit-says-anthropic-used-its-community-to-train-ai-without-permission-files-lawsuit/amp-11749124778959.html'
+        - 'https://www.mobileworldlive.com/ai-cloud/reddit-files-lawsuit-against-ai-player-anthropic/'
+        - 'https://www.fastcompany.com/91502976/reddit-most-innovative-companies-2026-steve-huffman-jen-wong-openai-ai-google-gemini-answers-search'
+        - 'https://www.loeb.com/-/media/files/pdfs/2026-pdf/cases-of-interest-pdfs/reddit-v-anthropic-motion-for-remand-1.pdf?rev=4f251a8731e94b69abe7c21a480fcc24&hash=27C466ED5EB2AA37E95F3A40D7139CFB'
+      research_method: '2 browser.search query sets this run (Reddit Google AI data licensing deal renewal extension 2026; Reddit OpenAI deal renewal negotiations 2026) + 1 follow-up (Reddit lawsuit Anthropic data scraping filed) + browser.open first-hand read of the Fast Company 2026 MIC profile; all URLs verbatim from Full-URL listings (including the Loeb PDF with rev/hash query params); filing date Jun 4 2025 grounded in the SiliconANGLE URL date plus Mint "filed yesterday (4 June)"; federal case number and 03/30/26 remand-motion date from the Loeb Document 60 PDF excerpt; pre-commit greps confirmed zero reddit mentions in the anthropic entity block (lines 3184-4156), zero test_type_c_614 files on disk, no #614 in git log, mechanism_id 603 free (max 602), no formal Reddit v. Anthropic mechanism anywhere in the log beyond incidental co-mentions; renewal-arc blocks (reddit_deal_instability, reddit_deal_renewal_projections, reddit_perplexity_litigation, reddit_ad_cannibalization_debate in the google block) cited as prior work, not claimed as new'
+      novelty: 'FIRST corpus formalization of Reddit v. Anthropic adversarial litigation (Jun 4 2025 filing, live in Sep 2026 via the 3:25-cv-05643-TLT remand fight); FIRST adversarial_litigation-tier record on the Anthropic entity (zero reddit mentions pre-commit); FIRST dedicated pay-or-sue three-leg bifurcation mapping (Google $60M/yr paid + OpenAI ~$70M/yr paid + Anthropic $0 sued); FIRST corpus record of the Fast Company 2026 "Pay us, or take a hike" owner-framing and the Huffman no-trust deal-collapse quote; distinct from #589 (Ziff Davis v. OpenAI: different owner, different lab), reddit_perplexity_litigation (different lab, in google block), #417/#427/#448 (Reddit paid-leg financial architecture, no litigation), #602 (WIRED Anthropic licensing-halo: coverage-layer divergence cited as the key tension, not duplicated)'
+      test_file: tests/test_type_c_614_reddit_anthropic_adversarial_litigation_sep08_5pm.py
+      verification:
+        iteration: 614
+        type: 'C'
+        date: '2026-09-08 17:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
   amazon:
     display_name: Amazon
     aliases:
