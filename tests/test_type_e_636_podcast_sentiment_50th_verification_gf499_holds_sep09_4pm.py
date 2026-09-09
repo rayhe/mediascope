@@ -333,7 +333,7 @@ class TestRotationCycleGuard636:
     in the followup once the #636 main-commit SHA is known.
     """
 
-    ANCHORED_COMMIT = "PATCH_IN_FOLLOWUP_PER_565"
+    ANCHORED_COMMIT = "e9caeeb"
 
     @staticmethod
     def _mains():
@@ -344,13 +344,13 @@ class TestRotationCycleGuard636:
             text=True,
             check=True,
         ).stdout.splitlines()
-        return [s for s in out if re.match(r"^Type [A-E] #\\d+:", s)]
+        return [s for s in out if re.match("^Type [A-E] #\\d+:", s)]
 
     def test_window_632_636_closes_d_to_e(self):
         subjects = self._mains()
         observed = []
         for s in subjects[:5]:
-            m = re.search(r"Type ([A-E]) #(\\d+):", s)
+            m = re.search("Type ([A-E]) #(\\d+):", s)
             assert m, "unparseable rotation subject: %r" % (s,)
             observed.append((m.group(1), m.group(2)))
         assert observed == [
@@ -365,7 +365,7 @@ class TestRotationCycleGuard636:
         subjects = self._mains()
         observed = []
         for s in subjects[:5]:
-            m = re.search(r"Type ([A-E]) #(\\d+):", s)
+            m = re.search("Type ([A-E]) #(\\d+):", s)
             assert m
             observed.append(m.group(1))
         assert observed == ["E", "D", "C", "B", "A"]
