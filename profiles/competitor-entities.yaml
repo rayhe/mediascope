@@ -19025,3 +19025,96 @@ first_gen_openai_publisher_deal_renewal_window_600:
       date: '2026-09-08 11:00 PDT'
       yaml_parse_clean: true
       ascii_only: true
+
+associated_press_triple_ai_payer_wire_architecture_615:
+    mechanism_id: 615
+    iteration: 634
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-09'
+    time_pdt: '14:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'Associated Press triple-AI-payer wire architecture (Sep 2026 status) - OpenAI prototype 2-year deal post-expiry mapping (Jul 2023 to circa Jul 2025, renewal UNRESOLVED); Google Gemini leg (Jan 15 2025, first Google publisher Gemini deal, Dec 2025 pilot re-confirmation); Microsoft Publisher Content Marketplace leg (Feb 5 2026 first-wave pilot); FIRST AP entity in corpus'
+    overview: 'FIRST dedicated mechanism for The Associated Press in the corpus (zero pre-commit AP mentions in profiles). Three findings: (1) the AP-OpenAI deal (Jul 13 2023) is the FIRST OpenAI publisher licensing deal and the only first-gen deal whose stated 2-year term has fully elapsed (circa Jul 2025 expiry; Axios exclusive relayed by Dexerto; Engadget two-year confirmation; archive back to 1985; terms undisclosed) - bounded Sep 2026 searches surfaced NO renewal, extension, renegotiation, or termination reporting, so renewal status is UNRESOLVED (disclosed, not claimed per iteration-492 rule), treated ACTIVE per the number-599 convention which this run STRESS-TESTS as its weakest application (about 14 months past stated expiry); (2) the AP-Google Gemini leg (Jan 15 2025, the first Google publisher deal for Gemini, real-time feed, terms undisclosed, Google declined to say whether AP is credited or linked) is re-confirmed in the Dec 11 2025 Google AI pilot (AP named among Estadao, Antara, Yonhap as real-time partners for the Gemini app, Press Gazette Sep 7 2026); (3) the AP-Microsoft leg (Feb 5 2026 Publisher Content Marketplace announcement, AP named first-wave pilot partner alongside Business Insider Inc, Vox Media, USA Today, People Inc, Hearst, Conde Nast; usage-based payments; Copilot grounding pilot; Digiday Feb 2026 expansion coverage). The AP is the corpus FIRST triple-AI-payer wire service (OpenAI plus Google plus Microsoft) and the wire feeding every tracked publication - upstream incentive geometry, not a publication-level tone claim.'
+    legs:
+      openai_leg:
+        partner: 'OpenAI'
+        announced: '2023-07-13'
+        term: '2-year (Axios exclusive via Dexerto relay; Engadget confirms two-year deal)'
+        value: 'undisclosed (both AP press release and all announcement coverage)'
+        scope: 'OpenAI licenses part of AP text archive back to 1985 for training; AP leverages OpenAI technology and product expertise; joint exploration of generative AI use cases in news products'
+        expiry: 'circa 2025-07'
+        renewal_status: 'UNRESOLVED - bounded Sep 2026 searches surfaced no renewal, extension, renegotiation, or termination reporting; only 2023 announcement coverage re-surfaces'
+        convention_applied: 'ACTIVE per number-599 Vox convention (no termination reporting equals still active); WEAKEST application of the convention in the cohort - the only first-gen deal whose stated term has fully elapsed, about 14 months past expiry'
+        prototype_significance: 'FIRST OpenAI publisher licensing deal; prototype for the entire first-gen cohort (Axel Springer, FT, Atlantic, Conde Nast, Vox Media, News Corp)'
+        primary_sources:
+          - 'https://www.ap.org/media-center/press-releases/2023/ap-open-ai-agree-to-share-select-news-content-and-technology-in-new-collaboration/'
+          - 'https://www.ap.org/media-center/ap-in-the-news/2023/chatgpt-maker-openai-signs-deal-with-ap-to-license-news-stories/'
+          - 'https://www.dexerto.com/tech/the-associated-press-signs-deal-with-openai-to-help-train-chatgpt-2210858/'
+          - 'http://www.engadget.com/ai/google-brings-real-time-information-from-the-associated-press-to-gemini-190317150.html'
+      google_leg:
+        partner: 'Google'
+        announced: '2025-01-15'
+        form: 'Gemini real-time news feed (the first Google publisher deal for Gemini)'
+        value: 'undisclosed (Google declined further comment per AP reporting)'
+        scope: 'AP delivers feed of real-time information to enhance Gemini app results; Google declined to say whether AP journalism would be credited or linked back'
+        reconfirmation: '2025-12-11 Google AI pilot - AP named among Estadao, Antara, Yonhap as real-time information partners for the Gemini app (Google statement via Press Gazette Sep 7 2026)'
+        sources:
+          - 'https://www.ap.org/media-center/ap-in-the-news/2025/google-signs-deal-with-ap-to-deliver-up-to-date-news-through-its-gemini-ai-chatbot/'
+          - 'https://techcrunch.com/2025/01/15/google-inks-deal-with-the-associated-press-to-bring-more-real-time-info-to-gemini/'
+          - 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/'
+      microsoft_leg:
+        partner: 'Microsoft'
+        announced: '2026-02-05'
+        form: 'Publisher Content Marketplace (PCM) first-wave pilot partner'
+        value: 'usage-based payments (publishers paid on delivered value; terms per publisher undisclosed)'
+        scope: 'AP content licensable by AI builders for grounding; Copilot early grounded-response experiments; usage-based reporting to publishers'
+        co_pilots: 'Business Insider Inc, Vox Media Inc, USA Today Co., People Inc, Hearst Magazines, Conde Nast (Digiday first-wave list); Yahoo among first demand partners onboarding'
+        sources:
+          - 'https://www.technologyrecord.com/article/new-microsoft-platform-lets-publishers-set-terms-for-ai-content-use'
+          - 'https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191'
+          - 'https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/'
+    upstream_significance: 'AP is the wire service feeding all 7 tracked publications - its payer geometry is UPSTREAM of publication-level coverage. Three AI payers (OpenAI, Google, Microsoft) versus Meta at 0 dollars on record: the wire has zero Meta AI money. This is structural incentive mapping, not a coverage-tone claim (no tone arrays scored, standing rule Aug 28 2026).'
+    ap_cooperative_structure: 'AP is a nonprofit news cooperative founded 1846, member-owned - the incentive geometry differs from for-profit publishers: no shareholder monetization pressure, stated revenue-diversification motive (AP explicitly sought to diversify revenue per Jan 2025 coverage). Documented as a STRUCTURAL confounder, not a nullification.'
+    confounders_ranked:
+      strong:
+        - 'all three legs are undisclosed-terms - the mapping is structural, not sized; even a verified ACTIVE OpenAI leg would not size the incentive'
+        - 'the ACTIVE convention (number 599) is weakest here: about 14 months past the stated 2-year expiry with no renewal reporting - a quiet lapse is as consistent with the evidence as a quiet renewal; UNRESOLVED cuts both ways'
+      moderate:
+        - 'Microsoft-OpenAI partnership news (PBC restructure, Amazon cloud deals) dominates the 2026 deal-renewal search space and may mask quiet AP-OpenAI renewal reporting (same confounder as the number-609 FT leg)'
+        - 'the Google and Microsoft legs are usage, display, and grounding instruments - weaker formalized incentives than the OpenAI training-license leg'
+      weak:
+        - 'bounded searches may miss reporting behind paywalls or in non-English press'
+    counterevidence:
+      - 'AP cooperative nonprofit structure and explicit fair-compensation and IP-protection framing (Heitmann statements 2023 and 2025) cut against pay-for-tone readings - the wire has brand equity in nonpartisanship'
+      - 'the OpenAI leg may have quietly lapsed circa Jul 2025 - if so the payer set collapses to Google plus Microsoft and the ACTIVE convention fails its weakest test; the convention, not the evidence, decides this'
+      - 'the Google Dec 2025 pilot deals are explicitly NOT licensing deals per Press Gazette (commercial partnerships in the News Showcase-style model) - the Google leg is a commercial partnership, not a training license'
+    cohort_geometry:
+      first_gen_cohort: 'AP (Jul 13 2023, 2-year, only elapsed term) plus Axel Springer (Dec 13 2023, 3-year, expiry circa Dec 2026, number 604) plus FT (Apr 29 2024) plus Atlantic (May 29 2024) plus Conde Nast (Aug 20 2024) plus Vox Media (May 29 2024) plus News Corp (May 2024) - the AP deal is the prototype and the only post-expiry data point'
+      meta_zero: 'Meta pays 0 dollars in AI licensing to the AP on record; the Meta side of the wire-level gradient is 0 dollars while three Meta AI competitors pay'
+      falsification_family: 'BOUNDS the falsification family (numbers 538, 563, 568, 578, 583, 588, 599, 604, 609) without joining it - no tone arrays scored; the number-599 ACTIVE convention survives here only by assumption, and this run documents it as the convention weakest application'
+      monitoring_item: 're-run the AP-OpenAI renewal query set quarterly; any renewal or lapse reporting resolves the cohort prototype; the Axel Springer Dec 2026 decision point remains the first dated first-gen renewal decision'
+    sources:
+      - 'https://www.ap.org/media-center/press-releases/2023/ap-open-ai-agree-to-share-select-news-content-and-technology-in-new-collaboration/'
+      - 'https://www.ap.org/media-center/ap-in-the-news/2023/chatgpt-maker-openai-signs-deal-with-ap-to-license-news-stories/'
+      - 'https://www.dexerto.com/tech/the-associated-press-signs-deal-with-openai-to-help-train-chatgpt-2210858/'
+      - 'http://www.engadget.com/ai/google-brings-real-time-information-from-the-associated-press-to-gemini-190317150.html'
+      - 'https://www.ap.org/media-center/ap-in-the-news/2025/google-signs-deal-with-ap-to-deliver-up-to-date-news-through-its-gemini-ai-chatbot/'
+      - 'https://techcrunch.com/2025/01/15/google-inks-deal-with-the-associated-press-to-bring-more-real-time-info-to-gemini/'
+      - 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/'
+      - 'https://www.technologyrecord.com/article/new-microsoft-platform-lets-publishers-set-terms-for-ai-content-use'
+      - 'https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191'
+      - 'https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/'
+    research_method: '3 browser.search query sets this run (Associated Press OpenAI partnership renewal extension 2025 2026; Associated Press Google Gemini AI partnership news 2025; AP OpenAI two-year deal expired July 2025 renewed licensing agreement status) plus 2 follow-ups (Associated Press Microsoft Publisher Content Marketplace partnership 2026; Associated Press OpenAI partnership 2026 archive licensing current status) plus browser.open first-hand read of the Press Gazette Sep 7 2026 deal-tracker (1617 lines, AP Google and AP OpenAI sections); all URLs verbatim from Full-URL listings; no canonical URLs constructed; bounded absences per iteration-492 rule; pre-commit greps confirmed zero AP mentions in profiles (only one passing mention in one Aug-27 test file), zero mechanism_615 keys (max numeric 614), zero test_type_c_634 files on disk, no number-634 in git log'
+    novelty: 'FIRST AP entity anywhere in profiles (zero pre-commit mentions; the one Aug-27 test mention is incidental); FIRST triple-AI-payer wire architecture in the corpus (OpenAI plus Google plus Microsoft); FIRST post-expiry mapping of a first-gen OpenAI publisher deal (the only elapsed stated term in the cohort); FIRST documentation of the number-599 ACTIVE convention at its weakest application point; distinct from number 609 (2024-cohort renewal sweep, no AP), number 604 (Axel Springer single-owner), number 569 (Google AI pilot legs at WaPo, FT, Guardian - AP Gemini leg distinct), and the PCM mechanism (Microsoft PCM partner list - this run is the AP-side formalization)'
+    verification:
+      iteration: 634
+      type: 'C'
+      date: '2026-09-09 14:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per number 540 and number 544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
