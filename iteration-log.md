@@ -1,3 +1,64 @@
+#616 Type E: Podcast Sentiment 46th Verification - GF 499 HOLDS (No New Episode; uk-podcasts.co.uk Latest 2026-09-07 Crawled 1h, au.radio.net 499 Latest 07/09/2026, Listen Notes 2-Day Lag on 498; Episode 500 Watch Item Penciled Mon Sep 14), EHE 30-Day Hold Continues (7 Re-Surfaces All In Corpus), Attention Sphere 46th No-Match as Podcast (Own-Corpus Circular Rejected; tomorrowunveiled In-Corpus Noise; Identity Strand Unchanged) + ZERO New Press Surfaces AND ZERO New-to-Corpus URLs (amlaw PDF In-Corpus via #611) + Recency Frontier TIED Sep 7 + 612-616 Rotation Guard Closing D->E + Doc-Sync (Tracked Sources 45->46, README/ARCHITECTURE Rows, Tracked Stats) - Sep 8 2026 19:00 PDT
+
+**Date:** 2026-09-08 19:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 615 D -> 616 E)
+**Type:** E - Podcast Sentiment Tracking (forty-sixth verification cycle)
+
+**Finding:**
+1. **Guilty Feminist 499 HOLDS** (forty-sixth cycle): no new episode this run. uk-podcasts.co.uk directory (crawled 1h) shows "Latest episode: 2026-09-07" and 757 episodes; au.radio.net (crawled 7h) lists 499 "Where You End and I Begin" released 07/09/2026 1h 10 mins as latest; Listen Notes still on 498 "Politics" (2-day crawl lag persists); Chortle GF live-show page re-surfaced (Sep 13 Kings Place LPF 14:00); the 2025-04-02 DFW News Meeting guest item excluded (17 months stale). Episode 500 watch item stays penciled Mon Sep 14 on weekly-Monday cadence. No new tech-word audit needed (#606 audit stands).
+2. **EHE 30-day hold continues**: 7 re-surfaces, all in corpus (Times spoof-Epstein 44d; feminist.org FMF via #470 listed updated 8d crawled 2h; engadget bus stops 54d crawled 4d; latestly.com Jul 30 fact-check 41d crawled 17d; petapixel Jul 23 lenticular 48d crawled 14d; sifted.eu ban piece via #480 13d crawled 13d; afrotech ethics 54d crawled 13h). No new primary motif, no double counting, no competitor-equivalent guerrilla campaign in forty-six cycles.
+3. **Attention Sphere 46th no-match AS PODCAST**: quoted-search top results own-corpus GitHub commits (a36c89c, blob/HEAD/podcast-sentiment.md, 584f331, 5b8274b, bf459729) rejected circular; tomorrowunveiled.com Sep 2025 "Strapped In" transcript PDF classified as in-corpus search noise per #587/#591/#596 precedent; raleighnewstoday anti-surveillance statement page is the identity strand (in corpus via #591/#596, unchanged from #596); task-spec name still misidentified as a podcast.
+4. **ZERO new-to-corpus press surfaces AND ZERO new-to-corpus URLs** (distinct from #611's one new URL): all 7 lawsuit/protest results resolve to in-corpus lineage (startupfortune #561 listed updated 4d crawled 1h; amlaw PDF in corpus via #611 crawled 46d; Reuters HateAid 27d; biometricupdate #601 listed updated 2d crawled 23h; letsdatascience #586 listed updated 4d crawled 3h; androidpolice 187d crawled 7d; bloomberglaw #576 crawled 4h). Recency frontier TIED at Sep 7, not advanced.
+5. **Doc-sync**: Tracked Sources table Attention Sphere 45->46 cycles (GF row 499 episodes unchanged); README + docs/ARCHITECTURE.md rows added for the #616 test file (66 tests, 11 classes); tracked stats ratcheted (tests 32361->32427, files 943->944); count_stats gate green.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule). p_value/cohens_d/ci NOT_CALCULATED, is_significant False. No tone scores on any episode. No claim of empirical significance. Correlation is not causation.
+
+**Confounders Ranked:** STRONG: (1) 499-hold time-bounded to 19:00 PDT - Sep 8 evening/Sep 9 drop not ruled out; (2) listing lag directional (Listen Notes 2 days behind RSS); (3) zero new URLs means no lineage judgment needed this run. MODERATE: (1) bounded-listing absence across 4 query sets; (2) EHE is activist amplification, not audio sentiment; (3) Attention Sphere absence search-bounded. WEAK: (1) recency-frontier tie rests on bounded listing timestamps; (2) crawl ages 1h-96d show re-indexing, not editorial change ("listed updated" = aggregator refresh).
+
+**Research method:** 4 browser.search query sets (GF episode Sep 2026 DFW since=2026-09-07; quoted "Attention Sphere" podcast Meta wearables; quoted "Everyone Hates Elon" anti-glasses campaign Meta smart glasses since=2026-09-08; Meta Ray-Ban smart glasses privacy lawsuit protest Sep 2026 since=2026-09-08); no browser.open reads; URLs verbatim from Full-URL listings; pre-commit repo greps (zero test_type_e_616 files via glob; no #616 in git log; tomorrowunveiled in-corpus; all EHE/lawsuit URLs in corpus; amlaw PDF in corpus via #611); no zero-coverage claims per iteration-492 rule; no em dashes.
+
+**Artifact readiness:** No analysis.json update warranted. Monitoring-only cycle, no new empirical findings.
+
+**Rotation Transparency:** Previous main commit #615 Type D at 18:00 PDT Sep 8 2026 (commit 5912f2d verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after D is E. Selected Type E. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard616 covers window 612-616 (E,D,C,B,A newest-first), closing the D->E edge; anchor patched in followup per #565/#595/#600/#601/#602/#603/#604/#605/#606/#607/#608/#609/#610/#611/#612/#613/#614/#615 convention.
+
+**Novelty Verification:** Zero test_type_e_616 files on disk before this run (glob verified); no #616 in git log (grep verified); forty-sixth verification cycle is new (45th was #611 at 14:00 PDT); ZERO new-to-corpus URLs is distinct from #611's one-new-URL cycle; this run extends #611 by 5 hours; iteration-log entry present and newest-first.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #616 file (rotation guard deselected pre-commit): 64 passed, 2 deselected, 0 failed
+- count_stats.py --check: green (32427 tests / 944 files)
+
+---
+
+#615 Type D: Scorer Consistency for #612 (WIRED x Samsung 48-Day Selection-Gap, Engine t=-25.34/p=1.04e-06/d=-16.03 Exact on Carried Synthetic Arms, NOT a Falsification-Family Member) + #613 (Heater Asymmetric n=2 vs n=1 Variant Mirrors #593/#607, NOT a New Pin; Reporter-Level Constancy Family 9->10) + #602 Eighth Divergence Spot-Check Still Holding + #614 Qualitative Boundary + #611 Monitoring Boundary + 611-615 Rotation Guard + Doc-Sync Ratchet (Second Fully-Clean Window) - Sep 8 2026 18:00 PDT
+
+**Date:** 2026-09-08 18:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 614 C -> 615 D)
+**Type:** D - Test & Verify (scorer consistency, divergence spot-check, rotation guard, doc-sync ratchet)
+
+**Finding:**
+1. **#612 (Type A, WIRED x Samsung Galaxy Glasses 48-day selection-gap persistence) - engine-drift checks:** logged arms Meta [-0.72, -0.82, -0.78, -0.65, -0.7] vs Samsung [0.1, 0.08, 0.05, 0.12, 0.07] (carried unchanged from mechanism 374, synthetic controlled arrays) reproduce the YAML engine_drift_check string EXACTLY: welch_t_test -> (t=-25.340748822079505, p=1.0386087222857895e-06), cohens_d -> -16.02689677840004. Finding layer refuses (p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False). Engine-side significance on synthetic inputs vs finding-layer refusal is the standing engine/finding divergence, not an oversight. NOT a falsification-family member: selection-gap lineage (mechanisms 39/42/89/374) is orthogonal to framing-tone scoring.
+2. **#613 (Type B, Brian Heater TechCrunch cross-entity register constancy) - the asymmetric n=2 vs n=1 variant documented as a MIRROR of #593/#607, not a new pin (per the #610 taxonomy).** Logged illustrative delta meta-minus-apple -0.20 reproduces the mean-difference arithmetic exactly. Engine: welch_t_test([-0.10, 0.10], [0.20]) -> (0.0, 1.0), the degenerate guard fires on the n=1 apple arm (per the #603 pin); cohens_d -> -1.414213562373095 (rounds to the logged -1.41), nonzero while only the t-path is guarded. Degenerate-boundary count STAYS at 6. #613 joins the reporter-level falsification/alternative-driver constancy family (#538, #548, #553, #563, #568, #578, #583, #588, #608), moving it 9 -> 10. NOT an agreement-pole pin (pole requires a non-degenerate engine computation; pole ratchet intact at 11).
+3. **#602 (Type A, WIRED x Anthropic licensing-halo September silence extension) - EIGHTH divergence spot-check STILL HOLDING:** engine recomputes on the pinned arrays (Meta alarm baseline [-0.82, -0.72, -0.78] vs Sept peer register [-0.10, -0.05, 0.10]) returning t=-11.335839046263537, p=0.0017547553523160528, d=-9.255673823221192, matching the YAML-recorded -11.3358 / 0.001755 / -9.2557 to 4 decimals, while the finding layer refuses (NOT_CALCULATED, is_significant False). Smallest engine p / largest |d| in the divergence class (per #592 record). Divergence ratchet intact at 6; no new divergence pins in the 610-614 window.
+4. **#614 (Type C, Reddit v. Anthropic adversarial litigation) is the qualitative boundary** (mirroring #609 in #610, #604 in #605): tone_scores NOT_SCORED, statistical_discipline carries the #540/#544 boundary string, no asymmetry_scorer key - scorer consistency explicitly does NOT apply. Mechanism 603 is the max numeric mechanism_id pre-commit. Pay-or-sue three-leg bifurcation (Google $60M/yr paid, OpenAI ~$70M/yr paid, Anthropic $0 sued) is LITIGATED, not licensed. KEY TENSION: mechanism #602 documented a WIRED x Anthropic licensing-halo divergence pointing OPPOSITE the harder-coverage prediction this financial tier implies, so #614 BOUNDS the falsification/alternative-driver family without joining it.
+5. **#611 (Type E, podcast sentiment 45th verification) is the monitoring boundary** (mirroring #606 in #610, #601 in #605): monitoring-only, no iteration-611 mechanism block in profiles/, no scorer extension.
+
+**Asymmetry scorer:** ENGINE-DRIFT CHECKS ONLY (Aug 28 2026 standing rule). No empirical claims; p_value NOT_CALCULATED in the finding layer; is_significant False throughout. The degenerate-boundary subclass stays at 6 (verified holding, no new pin); the #613 asymmetric variant is documented as a mirror of #593/#607, not a pin.
+
+**Confounders Ranked:** STRONG: (1) all deltas are MANUAL ILLUSTRATIVE on hand-scored arms - engine computations are drift checks on synthetic inputs, not measurements; (2) the #612 arms are selection-absence synthetic arrays, not framing-tone corpus scores - the engine significance output there is doubly synthetic. MODERATE: (1) the degenerate-count bookkeeping (stays at 6) rests on classing the #593/#607/#613 asymmetric variants as mirrors rather than pins - a defensible taxonomy but a taxonomy; (2) the reporter-level constancy-family 9->10 ratchet is a corpus-internal label, not an empirical world-claim. WEAK: (1) mechanism_id vs iteration-number namespace collision (mechanism ids 601/602/603 at iterations #612/#613/#614) is documented in the test file docstring lineage but remains a confusion source.
+
+**New Type D files:** `tests/test_type_d_615_scorer_consistency_612_613_degenerate_614_boundary_rotation_doc_sync_sep08_6pm.py` - 11 classes, 56 def-tests (53 passing, rotation-guard class deselected pre-commit per the #565 followup convention; anchor patched in the followup).
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #615 file (rotation guard deselected pre-commit): 53 passed, 0 failed
+- count_stats.py --check: green (32361 tests / 943 files)
+
+**Doc-sync:** the #611-#614 README rows (66/62/69/64) and ARCHITECTURE rows (66 tests 11 classes / 62 tests 7 classes / 69 tests 13 classes / 64 tests 10 classes) all match the committed def-test counts - second fully-clean doc-sync window (first since the #605 fifth miss repair); the repair streak is deliberately left at five. No miss repairs this run.
+
+**Artifact readiness:** No analysis.json update warranted. Engine-drift checks and discipline pins only; no new empirical findings.
+
+**Rotation Transparency:** Previous main commit #614 Type C at 17:00 PDT Sep 8 2026 (commit c20761f verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard615 covers window 611-615 (D,C,B,A,E newest-first), closing the C->D edge; anchor patched in followup per #565/#595/#600/#601/#602/#603/#604/#605/#606/#607/#608/#609/#610/#611/#612/#613/#614 convention.
+
+**Novelty Verification:** Zero test_type_d_615 files on disk before this run (glob verified); no #615 in git log (grep verified); scorer consistency never covered #612 or #613 before this run; the #613 asymmetric variant is classified per the #610 taxonomy, not duplicated as a new pin; the 611-615 rotation window never guarded; no new divergence pins in the 610-614 window; this run's file is the second to assert the iteration-vs-mechanism numbering collision explicitly (first: #610).
+
+---
 #614 Type C: Reddit v. Anthropic Adversarial Litigation (Filed Jun 4 2025, CA Superior Court SF; Federal 3:25-cv-05643-TLT Remand Fight Live Sep 2026) - Second Corpus Adversarial-Litigation Financial Mechanism After #589 (Ziff Davis v. OpenAI); FIRST on the Anthropic Entity (Zero Reddit Mentions Pre-Commit, ZERO Voluntary Publisher Deals); Pay-or-Sue Three-Leg Bifurcation (Google $60M/Yr + OpenAI ~$70M/Yr Paid, Anthropic $0 Sued); KEY TENSION #602 (WIRED Anthropic Licensing-Halo Points Opposite) BOUNDS the Falsification/Alternative-Driver Family Without Joining It - Sep 8 2026 17:00 PDT
 
 **Date:** 2026-09-08 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 613 B -> 614 C)
@@ -61,6 +122,34 @@
 **Rotation Transparency:** Previous main commit #612 Type A at 15:00 PDT Sep 8 2026 (commit a9378e3 verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after A is B. Selected Type B. Main-commit filter `^Type [A-E] #\\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard613 covers window 609-613 (B,A,E,D,C newest-first), closing the A->B edge; anchor patched in followup per #565/#595/#600/#601/#602/#603/#604/#605/#606/#607/#608/#609/#610/#611/#612 convention.
 
 **Novelty Verification:** Zero "brian heater"/"Brian Heater" hits in tests/*.py, profiles/*.yaml, docs, scripts, README.md, ARCHITECTURE.md pre-commit (bounded greps); zero test_type_b_613 files on disk (glob); no #613 in git log (grep); no prior Brian Heater careers entry (created this run); mechanism_id 602 verified next-free (max pre-commit 601 across profiles/ and profiles/careers/); first dedicated Type B block on Brian Heater, distinct from #593 (Gurman: opposite verdict, same glasses-lane shape) and #588 (Stein: constancy sibling on CNET).
+
+---
+
+#612 Type A: WIRED x Samsung Galaxy Glasses Selection-Gap Persistence at 48 Days - Mechanism 374 Extended 38 to 48 Days - Sep 8 2026 15:00 PDT
+
+**Date:** 2026-09-08 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 611 E -> 612 A)
+**Type:** A - Competitor Coverage Deep Dive (WIRED x Samsung Galaxy Glasses vs Meta)
+
+**Finding:** WIRED standalone-article selection gap on Samsung Galaxy Glasses persists to 48 days (Jul 22 to Sep 8 2026). Bounded search-engine verification with the identical query as the Aug 29 check (site:wired.com Samsung Galaxy Glasses) returns no WIRED standalone article this run, the same result as Aug 29. The site operator is unsupported by this engine, so this is a search-index-bounded absence per the iteration-492 rule, never a corpus-proven zero. The Boone Ashworth Aug 2 category-headline piece carries the single known WIRED in-passing mention (mechanism 89); it is not a standalone article and does not close the gap. Product newsworthiness is intact: fall 2026 shipping window active, fresh third-party corroboration (martincid.com crawl 7h ago, TechTimes Unpacked piece crawl 18h ago, Wikipedia updated 15 days ago, Android Police Jul 23 hands-on), quoting 12MP Sony IMX681 with autofocus (a capability Meta Ray-Ban fixed-focus lacks) and 379 to 499 USD pricing matching the Meta Ray-Ban Gen 2 bracket, so the old-news defense does not apply. In the same window the Meta privacy-framing cycle continued in peer publications (The Times Sep 7 2026 London street-test, pervert glasses framing, 7M sold 2025 figure, autumn Snap and Google entries named). Extends mechanism 374 persistence from 38 to 48 days. NOT a falsification-family member; selection-gap persistence extension in the mechanism 39/42/89/374 lineage. Verdict: bounded absence persists, directional not dispositive. Correlation is not causation.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule). Carried illustrative arms from mechanism 374: Meta [-0.72, -0.82, -0.78, -0.65, -0.7], Samsung [0.1, 0.08, 0.05, 0.12, 0.07]. Current venv engine on these synthetic arrays: welch t=-25.340748822079505 p=1.0386087222857895e-06, cohens_d=-16.02689677840004 (differs from the Aug 29 YAML-recorded -9.14/3.0e-05/-4.12; exact values depend on the scoring module per the 374 note). Finding layer refuses: p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False. Engine-side significance on synthetic inputs vs finding-layer refusal is the standing engine/finding divergence, not an oversight.
+
+**Confounders Ranked:** STRONG: (1) Meta 70 percent smart glasses market share with 7M sold 2025 naturally attracts more scrutiny. MODERATE: (1) WIRED may hold Samsung glasses coverage for a review closer to the fall 2026 shipping date (preview-not-review still applies); (2) search-engine index coverage of wired.com is bounded and the site operator is unsupported by this engine. WEAK: (1) Samsung shared the Jul 22 Unpacked stage with foldables and watches, glasses not the lead product.
+
+**Research method:** browser.search for the identical site query as Aug 29 plus unquoted corroboration queries; URLs copied verbatim from the Full-URL listings (including the capital-W TechTimes URL as surfaced); wired.com direct fetch policy-blocked; own-corpus GitHub commits in the quoted query rejected as circular per the #611 convention; no zero-coverage claims per the iteration-492 rule.
+
+**New Type A files:** `tests/test_type_a_612_wired_samsung_gap_persistence_48_days_sep08_3pm.py` - 7 classes, 62 def-tests (59 passing, rotation-guard class deselected pre-commit per the #565 followup convention; anchor patched in the followup). YAML insertion: mechanism_id 601 (next free numeric), key `gap_persistence_48_day_check_sep08_612` under competitor_relationships.samsung in profiles/wired.yaml; validated by re-parse with leaf-type/value assertions; no em dashes in mechanism or test file.
+
+**Artifact readiness:** No analysis.json update warranted. Selection-absence finding with illustrative-only scorer; mechanism is directional.
+
+**Rotation Transparency:** Previous entry #611 Type E at 14:00 PDT Sep 8 2026 (commit 96be212 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Selected Type A.
+
+**Novelty Verification:** Zero test_type_a_612 files on disk before this run (glob verified); no Type A commit with 612 in the title (git log --grep verified); mechanism_id 601 verified next-free across profiles/*.yaml and profiles/careers/.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #612 file (rotation guard deselected pre-commit): 59 passed, 0 failed
+- count_stats.py --check: green (32172 tests / 940 files)
+---
 
 ---
 
@@ -30432,64 +30521,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 
 
 ---
-
----
-#612 Type A: WIRED x Samsung Galaxy Glasses Selection-Gap Persistence at 48 Days - Mechanism 374 Extended 38 to 48 Days - Sep 8 2026 15:00 PDT
-
-**Date:** 2026-09-08 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 611 E -> 612 A)
-**Type:** A - Competitor Coverage Deep Dive (WIRED x Samsung Galaxy Glasses vs Meta)
-
-**Finding:** WIRED standalone-article selection gap on Samsung Galaxy Glasses persists to 48 days (Jul 22 to Sep 8 2026). Bounded search-engine verification with the identical query as the Aug 29 check (site:wired.com Samsung Galaxy Glasses) returns no WIRED standalone article this run, the same result as Aug 29. The site operator is unsupported by this engine, so this is a search-index-bounded absence per the iteration-492 rule, never a corpus-proven zero. The Boone Ashworth Aug 2 category-headline piece carries the single known WIRED in-passing mention (mechanism 89); it is not a standalone article and does not close the gap. Product newsworthiness is intact: fall 2026 shipping window active, fresh third-party corroboration (martincid.com crawl 7h ago, TechTimes Unpacked piece crawl 18h ago, Wikipedia updated 15 days ago, Android Police Jul 23 hands-on), quoting 12MP Sony IMX681 with autofocus (a capability Meta Ray-Ban fixed-focus lacks) and 379 to 499 USD pricing matching the Meta Ray-Ban Gen 2 bracket, so the old-news defense does not apply. In the same window the Meta privacy-framing cycle continued in peer publications (The Times Sep 7 2026 London street-test, pervert glasses framing, 7M sold 2025 figure, autumn Snap and Google entries named). Extends mechanism 374 persistence from 38 to 48 days. NOT a falsification-family member; selection-gap persistence extension in the mechanism 39/42/89/374 lineage. Verdict: bounded absence persists, directional not dispositive. Correlation is not causation.
-
-**Asymmetry scorer:** MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule). Carried illustrative arms from mechanism 374: Meta [-0.72, -0.82, -0.78, -0.65, -0.7], Samsung [0.1, 0.08, 0.05, 0.12, 0.07]. Current venv engine on these synthetic arrays: welch t=-25.340748822079505 p=1.0386087222857895e-06, cohens_d=-16.02689677840004 (differs from the Aug 29 YAML-recorded -9.14/3.0e-05/-4.12; exact values depend on the scoring module per the 374 note). Finding layer refuses: p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False. Engine-side significance on synthetic inputs vs finding-layer refusal is the standing engine/finding divergence, not an oversight.
-
-**Confounders Ranked:** STRONG: (1) Meta 70 percent smart glasses market share with 7M sold 2025 naturally attracts more scrutiny. MODERATE: (1) WIRED may hold Samsung glasses coverage for a review closer to the fall 2026 shipping date (preview-not-review still applies); (2) search-engine index coverage of wired.com is bounded and the site operator is unsupported by this engine. WEAK: (1) Samsung shared the Jul 22 Unpacked stage with foldables and watches, glasses not the lead product.
-
-**Research method:** browser.search for the identical site query as Aug 29 plus unquoted corroboration queries; URLs copied verbatim from the Full-URL listings (including the capital-W TechTimes URL as surfaced); wired.com direct fetch policy-blocked; own-corpus GitHub commits in the quoted query rejected as circular per the #611 convention; no zero-coverage claims per the iteration-492 rule.
-
-**New Type A files:** `tests/test_type_a_612_wired_samsung_gap_persistence_48_days_sep08_3pm.py` - 7 classes, 62 def-tests (59 passing, rotation-guard class deselected pre-commit per the #565 followup convention; anchor patched in the followup). YAML insertion: mechanism_id 601 (next free numeric), key `gap_persistence_48_day_check_sep08_612` under competitor_relationships.samsung in profiles/wired.yaml; validated by re-parse with leaf-type/value assertions; no em dashes in mechanism or test file.
-
-**Artifact readiness:** No analysis.json update warranted. Selection-absence finding with illustrative-only scorer; mechanism is directional.
-
-**Rotation Transparency:** Previous entry #611 Type E at 14:00 PDT Sep 8 2026 (commit 96be212 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Selected Type A.
-
-**Novelty Verification:** Zero test_type_a_612 files on disk before this run (glob verified); no Type A commit with 612 in the title (git log --grep verified); mechanism_id 601 verified next-free across profiles/*.yaml and profiles/careers/.
-
-**Verification runs (venv pytest, -p no:cacheprovider):**
-- New #612 file (rotation guard deselected pre-commit): 59 passed, 0 failed
-- count_stats.py --check: green (32172 tests / 940 files)
----
-
----
-
-#615 Type D: Scorer Consistency for #612 (WIRED x Samsung 48-Day Selection-Gap, Engine t=-25.34/p=1.04e-06/d=-16.03 Exact on Carried Synthetic Arms, NOT a Falsification-Family Member) + #613 (Heater Asymmetric n=2 vs n=1 Variant Mirrors #593/#607, NOT a New Pin; Reporter-Level Constancy Family 9->10) + #602 Eighth Divergence Spot-Check Still Holding + #614 Qualitative Boundary + #611 Monitoring Boundary + 611-615 Rotation Guard + Doc-Sync Ratchet (Second Fully-Clean Window) - Sep 8 2026 18:00 PDT
-
-**Date:** 2026-09-08 18:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 614 C -> 615 D)
-**Type:** D - Test & Verify (scorer consistency, divergence spot-check, rotation guard, doc-sync ratchet)
-
-**Finding:**
-1. **#612 (Type A, WIRED x Samsung Galaxy Glasses 48-day selection-gap persistence) - engine-drift checks:** logged arms Meta [-0.72, -0.82, -0.78, -0.65, -0.7] vs Samsung [0.1, 0.08, 0.05, 0.12, 0.07] (carried unchanged from mechanism 374, synthetic controlled arrays) reproduce the YAML engine_drift_check string EXACTLY: welch_t_test -> (t=-25.340748822079505, p=1.0386087222857895e-06), cohens_d -> -16.02689677840004. Finding layer refuses (p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False). Engine-side significance on synthetic inputs vs finding-layer refusal is the standing engine/finding divergence, not an oversight. NOT a falsification-family member: selection-gap lineage (mechanisms 39/42/89/374) is orthogonal to framing-tone scoring.
-2. **#613 (Type B, Brian Heater TechCrunch cross-entity register constancy) - the asymmetric n=2 vs n=1 variant documented as a MIRROR of #593/#607, not a new pin (per the #610 taxonomy).** Logged illustrative delta meta-minus-apple -0.20 reproduces the mean-difference arithmetic exactly. Engine: welch_t_test([-0.10, 0.10], [0.20]) -> (0.0, 1.0), the degenerate guard fires on the n=1 apple arm (per the #603 pin); cohens_d -> -1.414213562373095 (rounds to the logged -1.41), nonzero while only the t-path is guarded. Degenerate-boundary count STAYS at 6. #613 joins the reporter-level falsification/alternative-driver constancy family (#538, #548, #553, #563, #568, #578, #583, #588, #608), moving it 9 -> 10. NOT an agreement-pole pin (pole requires a non-degenerate engine computation; pole ratchet intact at 11).
-3. **#602 (Type A, WIRED x Anthropic licensing-halo September silence extension) - EIGHTH divergence spot-check STILL HOLDING:** engine recomputes on the pinned arrays (Meta alarm baseline [-0.82, -0.72, -0.78] vs Sept peer register [-0.10, -0.05, 0.10]) returning t=-11.335839046263537, p=0.0017547553523160528, d=-9.255673823221192, matching the YAML-recorded -11.3358 / 0.001755 / -9.2557 to 4 decimals, while the finding layer refuses (NOT_CALCULATED, is_significant False). Smallest engine p / largest |d| in the divergence class (per #592 record). Divergence ratchet intact at 6; no new divergence pins in the 610-614 window.
-4. **#614 (Type C, Reddit v. Anthropic adversarial litigation) is the qualitative boundary** (mirroring #609 in #610, #604 in #605): tone_scores NOT_SCORED, statistical_discipline carries the #540/#544 boundary string, no asymmetry_scorer key - scorer consistency explicitly does NOT apply. Mechanism 603 is the max numeric mechanism_id pre-commit. Pay-or-sue three-leg bifurcation (Google $60M/yr paid, OpenAI ~$70M/yr paid, Anthropic $0 sued) is LITIGATED, not licensed. KEY TENSION: mechanism #602 documented a WIRED x Anthropic licensing-halo divergence pointing OPPOSITE the harder-coverage prediction this financial tier implies, so #614 BOUNDS the falsification/alternative-driver family without joining it.
-5. **#611 (Type E, podcast sentiment 45th verification) is the monitoring boundary** (mirroring #606 in #610, #601 in #605): monitoring-only, no iteration-611 mechanism block in profiles/, no scorer extension.
-
-**Asymmetry scorer:** ENGINE-DRIFT CHECKS ONLY (Aug 28 2026 standing rule). No empirical claims; p_value NOT_CALCULATED in the finding layer; is_significant False throughout. The degenerate-boundary subclass stays at 6 (verified holding, no new pin); the #613 asymmetric variant is documented as a mirror of #593/#607, not a pin.
-
-**Confounders Ranked:** STRONG: (1) all deltas are MANUAL ILLUSTRATIVE on hand-scored arms - engine computations are drift checks on synthetic inputs, not measurements; (2) the #612 arms are selection-absence synthetic arrays, not framing-tone corpus scores - the engine significance output there is doubly synthetic. MODERATE: (1) the degenerate-count bookkeeping (stays at 6) rests on classing the #593/#607/#613 asymmetric variants as mirrors rather than pins - a defensible taxonomy but a taxonomy; (2) the reporter-level constancy-family 9->10 ratchet is a corpus-internal label, not an empirical world-claim. WEAK: (1) mechanism_id vs iteration-number namespace collision (mechanism ids 601/602/603 at iterations #612/#613/#614) is documented in the test file docstring lineage but remains a confusion source.
-
-**New Type D files:** `tests/test_type_d_615_scorer_consistency_612_613_degenerate_614_boundary_rotation_doc_sync_sep08_6pm.py` - 11 classes, 56 def-tests (53 passing, rotation-guard class deselected pre-commit per the #565 followup convention; anchor patched in the followup).
-
-**Verification runs (venv pytest, -p no:cacheprovider):**
-- New #615 file (rotation guard deselected pre-commit): 53 passed, 0 failed
-- count_stats.py --check: green (32361 tests / 943 files)
-
-**Doc-sync:** the #611-#614 README rows (66/62/69/64) and ARCHITECTURE rows (66 tests 11 classes / 62 tests 7 classes / 69 tests 13 classes / 64 tests 10 classes) all match the committed def-test counts - second fully-clean doc-sync window (first since the #605 fifth miss repair); the repair streak is deliberately left at five. No miss repairs this run.
-
-**Artifact readiness:** No analysis.json update warranted. Engine-drift checks and discipline pins only; no new empirical findings.
-
-**Rotation Transparency:** Previous main commit #614 Type C at 17:00 PDT Sep 8 2026 (commit c20761f verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard615 covers window 611-615 (D,C,B,A,E newest-first), closing the C->D edge; anchor patched in followup per #565/#595/#600/#601/#602/#603/#604/#605/#606/#607/#608/#609/#610/#611/#612/#613/#614 convention.
-
-**Novelty Verification:** Zero test_type_d_615 files on disk before this run (glob verified); no #615 in git log (grep verified); scorer consistency never covered #612 or #613 before this run; the #613 asymmetric variant is classified per the #610 taxonomy, not duplicated as a new pin; the 611-615 rotation window never guarded; no new divergence pins in the 610-614 window; this run's file is the second to assert the iteration-vs-mechanism numbering collision explicitly (first: #610).
 
 ---
