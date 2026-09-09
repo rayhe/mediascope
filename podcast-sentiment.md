@@ -9,7 +9,7 @@ Tracks how podcasts frame Meta, wearables, AI, and competitors. Complements the 
 | Source | Type | Status | Notes |
 |--------|------|--------|-------|
 | Everyone Hates Elon | **Activist group** (not a podcast) | Active | London-based guerrilla campaign group targeting Meta glasses. Coverage amplified via other podcasts. |
-| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 46 verification cycles through Sep 8 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). |
+| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 47 verification cycles through Sep 9 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). |
 | The Guilty Feminist | **Podcast** (Deborah Frances-White) | Active, 499 episodes (Sep 8 2026) | UK feminist comedy podcast, TOP 0.01% global rank. Tech-relevant episodes cover algorithms, Palantir/surveillance, and gendered tech critique. |
 
 ### Secondary Sources (discovered via research)
@@ -11084,3 +11084,91 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 ### 8. Test File
 
 - tests/test_type_e_616_podcast_sentiment_fortysixth_verification_gf499_holds_sep08_7pm.py - checks covering iteration 616, Type E, date 2026-09-08 19:00 PDT, rotation 615 D -> 616 E, forty-sixth verification cycle, Guilty Feminist 499 HOLDS (uk-podcasts.co.uk latest 2026-09-07 crawled 1h, au.radio.net 499 latest released 07/09/2026, Listen Notes 2-day crawl still lagging on 498, Chortle live-show re-surface; episode 500 watch item still penciled Mon Sep 14 on weekly-Monday cadence; no new tech-word audit since no new episode), EHE 30-day hold (7 re-surfaces all in corpus: Times 44d, feminist.org FMF via #470 listed updated 8d crawled 2h, engadget 54d crawled 4d, latestly.com Jul 30 fact-check 41d crawled 17d, petapixel Jul 23 lenticular 48d crawled 14d, sifted.eu ban piece via #480 13d crawled 13d, afrotech 54d crawled 13h; no new primary motif; no double counting; no competitor-equivalent in forty-six cycles), Attention Sphere 46th no-match as podcast (quoted-search top results own-corpus GitHub commits rejected circular; tomorrowunveiled.com PDF in-corpus search noise per #587/#591/#596 precedent; identity strand unchanged from #596; task-spec still misidentified; Tracked Sources 45->46 cycles doc-sync repair), ZERO new-to-corpus press surfaces AND ZERO new-to-corpus URLs (amlaw PDF in corpus via #611; all lawsuit lineage surfaces in corpus), recency frontier TIED at Sep 7 not advanced, MANUAL ILLUSTRATIVE no false significance, no em dashes, verbatim URLs as surfaced, extends #611 by 5 hours, 612-616 rotation-cycle guard closing the D->E edge (anchor patched post-commit per #565 convention), count_stats gate - Sep 8 2026 19:00 PDT.
+
+
+## Iteration #621 - Wed 2026-09-09 00:00 PDT (Type E: Podcast Sentiment Tracking)
+
+**Rotation:** 620 D -> 621 E (job_id mediascope-daily-iteration, goal_54093bda4145)
+
+### 1. Guilty Feminist - 499 HOLDS (Forty-Seventh Cycle, 499 Still Latest)
+
+- **Result:** No new episode this run. Episode 499 "Where You End and I Begin" remains the latest release as of Sep 9 00:00 PDT (08:00 UK). The episode-500 watch item stays penciled for Mon Sep 14 (weekly Monday cadence: 498 on Aug 31, 499 on Sep 7).
+- **Evidence:** uk-podcasts.co.uk directory (crawled 6h this run) shows "Latest episode: 2026-09-07" and 757 episodes. au.radio.net (crawled 12h) lists "499. Where You End and I Begin with Lindsey Mendick, 07/09/2026, 1h 10 mins" as latest. Listen Notes still lists 498 "Politics" as latest (crawled 3d; 2-day crawl lag persists). podscan.fm (crawled 4h) 499 TKE Studios Margate intro transcript confirms the art episode is the newest numbered release. Chortle GF live-show page re-surfaced (Sep 13 Kings Place London Podcast Festival 14:00, crawled 5h). live.org.uk GF live show re-surfaced (Road to Gilead, crawled 4h).
+- **No new tech-word audit needed:** no new episode dropped, so the #606 audit (zero Meta/glasses/AI/wearables/privacy/surveillance in 499 title/description) stands unchanged. No tone scores on any episode. MANUAL ILLUSTRATIVE.
+
+### 2. EHE 30-Day Hold Continues (Forty-Seventh Cycle, Re-Surfaces Only)
+
+- **No new primary campaign motif.** Six re-surfaces observed this run, all in corpus:
+  - latestly.com Jul 30 fact-check (in corpus; 41 days, crawled 17d)
+  - engadget bus-stop piece (in corpus; 54 days, crawled 4d)
+  - fstoppers.com lenticular piece (in corpus, 13 hits; crawled 2d; NOT new)
+  - feminist.org FMF piece (in corpus via #470; listed updated 8d, crawled 3h)
+  - petapixel Jul 23 lenticular piece (in corpus; 48 days, crawled 15d)
+  - thedrum.com Mark Palmer opinion piece (in corpus, 10 hits; 26 days, crawled less than 1h; NOT new)
+- Three prior-cycle lineage items remain in corpus per #616 (thetimes.com spoof-Epstein piece 45 days, sifted.eu ban piece via #480, afrotech ethics piece) but did not re-surface in this run's top results.
+- **No double counting:** all count as one EHE-source amplification strand, not independent adoptions.
+- **No competitor-equivalent guerrilla campaign in forty-seven cycles.** EHE is an activist campaign group, NOT a podcast (verified 2026-09-07). Logged as amplification source, never as podcast episodes.
+
+### 3. Attention Sphere - Forty-Seventh No-Match as a Podcast; Identity Strand Unchanged
+
+- **Podcast no-match (47th):** quoted search for "Attention Sphere" podcast returned no matching podcast (forty-seventh no-match). Top results were this repository's own GitHub commits (podcast-sentiment.md blob/HEAD, mechanism #144 commit a36c89c; rejected as circular) plus creators.spotify.com and podcasters.spotify.com Purposeful Empathy episode pages that name "The Attention Sphere" as Ava Smithing's non-profit organization (identity-strand confirmation, NOT a podcast). The tomorrowunveiled.com Sep 2025 "Strapped In" transcript PDF did not surface this run (in-corpus search noise per #587/#591/#596 precedent).
+- **Identity strand unchanged from #596:** the anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, affiliated with anti-Meta glasses ad campaigns in DC and New York City, stands as logged in #591. No new Attention Sphere surfaces this run.
+- **Status unchanged:** the task-spec name remains misidentified as a podcast (still no podcast).
+- **Doc-sync repair:** the Tracked Sources table row for Attention Sphere said "46 verification cycles through Sep 8 2026"; updated to 47 cycles through Sep 9 2026. The Guilty Feminist row (499 episodes) needed no change.
+
+### 4. New Surfaces - TWO New-to-Corpus Press Surfaces (Frontier Advances Sep 7 to Sep 8)
+
+- **New-to-corpus press surfaces this run (both postdate the Sep 7 frontier):**
+  - Reuters Sep 8: "Meta launches AI agent that can access other apps to send emails, make payments" - Muse/Hatch agent rollout Tuesday Sep 8; "Meta said it plans to add the agent to its line of smart glasses 'soon,' without elaborating"; internal concern that the technology "mismanaged its access to sensitive personal data" noted; product-forward register with a balanced adversarial note; Reuters has no known Meta financial relationship (null-tie). URL: https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/
+  - USA Today Sep 8: "The best tech products of 2026" - Meta Glasses blurb ("The latest Meta Glasses fuse fashion with functionality", $299 at Meta, 12MP ultra-wide camera, 3K video; positive product-register); usatoday.com is a NEW domain to the corpus. URL: https://www.usatoday.com/story/shopping/tech/2026/09/08/best-tech-products-2026/91584576007/
+- **New-to-corpus URLs predating the frontier (NOT press-surface advances):** techtime.news Lumus waveguide piece (Sep 2; supply-chain industry news; https://techtime.news/2026/09/02/lumus-2/); eagle1063.iheart.com Meta camera-disable/tampering piece (Sep 2; https://eagle1063.iheart.com/content/2026-09-02-meta-disables-cameras-on-thousands-of-ai-glasses-after-tampering/).
+- **In-corpus re-surfaces (NOT new):** thetimes.com "Fear and loathing" London field test (in corpus via #581; 2 days, crawled 1d); letsdatascience expanded-lawsuit re-report (in corpus via #586; listed updated 4d, crawled less than 1h); amlaw.com complaint PDF (in corpus via #611; March ND Cal false-ad complaint filing, Case 4:26-cv-02015-HSG; known lineage, NOT a press surface).
+- **Recency frontier:** ADVANCES Sep 7 to Sep 8 (Reuters Sep 8 Meta Muse piece + USA Today Sep 8 Meta Glasses blurb are the new frontier).
+
+### 5. Scores (MANUAL ILLUSTRATIVE only)
+
+- p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False
+- EHE entity-selective posture unchanged: MANUAL ILLUSTRATIVE -8/10 toward Meta glasses (activist, not press). No competitor equivalent surfaced across forty-seven cycles, bounded search-result absence.
+- No tone scores computed on any episode this run (no new episode). No claim of empirical significance. Do not claim empirical significance.
+- Correlation not causation.
+
+### 6. Sources (verbatim full URLs from search full-URL listings this run)
+
+- https://uk-podcasts.co.uk/podcast/the-guilty-feminist/deborah-frances-white-on-the-news-meeting (uk-podcasts GF directory; 757 episodes, "Latest episode: 2026-09-07"; crawled 6h)
+- https://au.radio.net/podcast/the-guilty-feminist (radio.net GF directory; lists 499 "Where You End and I Begin" 07/09/2026 1h 10 mins as latest; crawled 12h)
+- https://www.listennotes.com/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/ (GF; still lists 498 "Politics" as latest; 2-day crawl lag persists; crawled 3d)
+- https://podscan.fm/podcasts/the-guilty-feminist (GF analytics page; 499 TKE Studios Margate intro transcript confirming art episode; crawled 4h)
+- https://www.chortle.co.uk/shows/edinburgh_fringe_2026/g/39124/the_guilty_feminist (Chortle GF live-show page; Sep 13 Kings Place LPF 14:00; crawled 5h)
+- https://www.live.org.uk/whats-on/guilty-feminist (GF live show, in corpus; crawled 4h)
+- https://www.stagewhispers.com.au/reviews/guilty-feminist-podcast-live (Stage Whispers GF live review; 95-day crawl; not a new episode)
+- https://www.railwaymuseum.org.uk/whats-on/open-talkguilty-feminist-women-medicine (GF Women in Medicine livestream; 97-day crawl; not a new episode)
+- https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md (own-corpus file; Attention Sphere quoted-search result; REJECTED as circular)
+- https://github.com/rayhe/mediascope/commit/a36c89c83706224c46bc7bd987a106e15054f484 (own-corpus commit; Attention Sphere quoted-search result; REJECTED as circular)
+- https://creators.spotify.com/pod/profile/anita-nowak/ (Purposeful Empathy profile; names "The Attention Sphere" as Ava Smithing's non-profit organization; identity-strand confirmation, NOT a podcast)
+- https://raleighnewstoday.com/meta-is-royally-screwing-up-its-smart-glasses-rollout (Attention Sphere anti-surveillance statement page; identity strand; in corpus via #591/#596)
+- https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/ (Reuters Sep 8 Meta Muse/Hatch agent piece; NEW to corpus; postdates Sep 7 frontier; glasses hook "soon")
+- https://www.usatoday.com/story/shopping/tech/2026/09/08/best-tech-products-2026/91584576007/ (USA Today Sep 8 best-tech roundup; NEW to corpus; NEW domain to corpus; Meta Glasses blurb)
+- https://techtime.news/2026/09/02/lumus-2/ (techtime.news Lumus waveguide piece Sep 2; NEW to corpus; predates frontier; NOT a press-surface advance)
+- https://eagle1063.iheart.com/content/2026-09-02-meta-disables-cameras-on-thousands-of-ai-glasses-after-tampering/ (camera-disable/tampering piece Sep 2; NEW to corpus; predates frontier; NOT a press-surface advance)
+- https://www.thetimes.com/uk/technology-uk/article/meta-glasses-rayban-privacy-recording-ai-0l82sx8sw (Times "Fear and loathing" London field test, in corpus via #581; 2 days, crawled 1d; NOT new)
+- https://letsdatascience.com/news/meta-faces-expanded-smart-glasses-privacy-lawsuit-8bd7207f (letsdatascience expanded-lawsuit re-report, in corpus via #586; listed updated 4d, crawled less than 1h; NOT new)
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html (Jul 30 fact-check, in corpus; 41 days, crawled 17d; NOT new)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (engadget bus-stop piece, in corpus; 54 days, crawled 4d; NOT new)
+- https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612 (Fstoppers lenticular piece, in corpus; crawled 2d; NOT new)
+- https://feminist.org/news/helpful-or-hurtful-the-growing-privacy-debate-over-meta-glasses/ (FMF piece, in corpus via #470; listed updated 8d, crawled 3h; NOT new)
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (PetaPixel lenticular piece, in corpus; 48 days, crawled 15d; NOT new)
+- https://www.thedrum.com/opinion/mark-palmer-is-the-glasses-partnership-with-meta-making-ray-ban-lose-its-cool (The Drum opinion piece, in corpus; 26 days, crawled less than 1h; NOT new)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (Times spoof-Epstein piece, in corpus; 45 days; NOT new)
+- https://pdfserver.amlaw.com/legalradar/pm-63515270_complaint.pdf (in corpus via #611; March ND Cal false-ad complaint filing, Case 4:26-cv-02015-HSG; known lineage, NOT a press surface)
+
+### 7. Confounders and Research Method
+
+- STRONG: (1) no new GF episode dropped this run, so the 499-hold is time-bounded to 00:00 PDT Sep 9 - a Sep 9 drop cannot be ruled out from listing metadata alone; the 500-watch item is penciled for Mon Sep 14 on weekly-cadence grounds, but off-cadence releases have occurred; (2) listing lag is directional - Listen Notes lags 2 days behind the RSS, so any listing-based "latest" claim is a lagging indicator; (3) the two new-to-corpus press surfaces (Reuters, USA Today) carry Sep 8 publication dates per URL path and snippet metadata - the frontier advance rests on those listing timestamps, not on independent date verification of the underlying articles.
+- MODERATE: (1) the new-surface findings rest on bounded query sets (4 query sets this run) - any web-wide absence claim beyond the observed surfaces is search-bounded, not a web-wide claim; (2) EHE is an activist group per task spec as amplification source, not audio sentiment evidence; (3) the Attention Sphere no-match rests on the quoted-search result set, which is dominated by own-corpus commits plus Spotify nonprofit-identity pages - the absence is search-bounded, not a web-wide claim.
+- WEAK: (1) crawl ages on re-surfaces (2d to 17d) show active re-indexing, not editorial change - "listed updated" dates on re-reports reflect aggregator refresh, not new reporting; (2) the techtime.news and eagle1063.iheart.com URLs are new-to-corpus but predate the Sep 7 frontier, so they do not advance it; their press-surface status is not adjudicated this run.
+- **Research method:** 4 browser.search query sets this run (Guilty Feminist latest episode Deborah Frances-White September 2026; quoted "Everyone Hates Elon" Meta glasses campaign ad September 2026; quoted "Attention Sphere" podcast; Meta smart glasses news September 8 2026); no direct browser.open reads this run - uk-podcasts.co.uk, au.radio.net, Listen Notes, Chortle, podscan.fm, live.org.uk metadata came from search snippets (crawled 6h / 12h / 3d / 5h / 4h / 4h); URLs copied verbatim from Full-URL listings; feed path NOT re-opened (opened directly in #606); story facts snippet-bounded per the no-canonical-URL rule; pre-commit repo greps for new-to-corpus verification (zero test_type_e_621 files on disk via glob; no #621 in git log via grep; zero "meta-launches-ai-agent", "best-tech-products-2026", "techtime.news", "eagle1063" hits in podcast-sentiment.md and iteration-log.md; usatoday.com zero hits in both files; fstoppers and thedrum slugs in corpus; tomorrowunveiled resolves to in-corpus search-noise precedent; no zero-coverage claims per iteration-492 rule).
+- **Novelty verification:** forty-seventh verification cycle is new (the 46th cycle was #616 at 19:00 PDT Sep 8); this run extends #616 by 5 hours; TWO new-to-corpus press surfaces this run (Reuters Sep 8 Meta Muse agent piece + USA Today Sep 8 Meta Glasses blurb), both postdating the Sep 7 frontier, distinct from #611's single new primary-document URL and from #616's zero-new cycle; distinct from #616 (46th cycle); iteration-log entry present and newest-first.
+
+### 8. Test File
+
+- tests/test_type_e_621_podcast_sentiment_fortyseventh_verification_gf499_holds_sep09_12am.py - checks covering iteration 621, Type E, date 2026-09-09 00:00 PDT, rotation 620 D -> 621 E, forty-seventh verification cycle, Guilty Feminist 499 HOLDS (uk-podcasts.co.uk latest 2026-09-07 crawled 6h, au.radio.net 499 latest released 07/09/2026, Listen Notes 2-day crawl still lagging on 498, podscan.fm 499 transcript confirms art episode, Chortle live-show re-surface; episode 500 watch item still penciled Mon Sep 14 on weekly-Monday cadence; no new tech-word audit since no new episode), EHE 30-day hold (6 re-surfaces observed this run all in corpus: latestly.com Jul 30 fact-check 41d crawled 17d, engadget bus stops 54d crawled 4d, fstoppers.com lenticular crawled 2d, feminist.org FMF via #470 listed updated 8d crawled 3h, petapixel Jul 23 lenticular 48d crawled 15d, thedrum.com Mark Palmer opinion 26d crawled less than 1h; three prior-cycle lineage items carried in corpus: thetimes.com spoof-Epstein 45d, sifted.eu ban piece via #480, afrotech ethics piece; no new primary motif; no double counting; no competitor-equivalent in forty-seven cycles), Attention Sphere 47th no-match as podcast (quoted-search top results own-corpus GitHub commits rejected circular; Spotify nonprofit-identity pages confirm Ava Smithing's nonprofit, not a podcast; tomorrowunveiled.com PDF absent this run, in-corpus search noise per #587/#591/#596 precedent; identity strand unchanged from #596; task-spec still misidentified; Tracked Sources 46->47 cycles doc-sync repair), TWO new-to-corpus press surfaces (Reuters Sep 8 Meta Muse/Hatch agent piece with glasses hook; USA Today Sep 8 Meta Glasses blurb, usatoday.com NEW domain to corpus; recency frontier ADVANCES Sep 7 to Sep 8; distinct from #611 and #616) with techtime.news + eagle1063.iheart.com new URLs predating frontier (NOT press-surface advances) and in-corpus re-surfaces (thetimes.com Fear-and-loathing via #581, letsdatascience expanded-lawsuit via #586, amlaw PDF via #611), MANUAL ILLUSTRATIVE no false significance, no em dashes, verbatim URLs as surfaced, extends #616 by 5 hours, 617-621 rotation-cycle guard closing the D->E edge (anchor patched post-commit per #565 convention), count_stats gate - Sep 9 2026 00:00 PDT.
