@@ -26,6 +26,8 @@
 
 **Novelty Verification:** Zero test_type_d_635 files on disk before this run (glob verified); no Type D #635 in git log (grep verified); max mechanism_id 615 verified unique pre-commit (no 616); no #635 iteration entry pre-commit.
 
+**Commit hashes:** main 53aeb8b, followup 85ddb7c, doc-sync d688216 (amended post-commit to record hashes). Full new-file run 34/34 green post-doc-sync; count_stats gate 33495 tests / 963 files FRESH; full-suite background run cross-validating.
+
 ---
 
 #634 Type C: Associated Press Triple-AI-Payer Wire Architecture (Sep 2026 Status) - OpenAI Prototype 2-Year Deal Post-Expiry Mapping (Jul 2023 to circa Jul 2025, Renewal UNRESOLVED, ACTIVE Convention at Its Weakest Application); Google Gemini Leg (Jan 15 2025, First Google Publisher Gemini Deal, Dec 2025 Pilot Re-Confirmation); Microsoft Publisher Content Marketplace Leg (Feb 5 2026 First-Wave Pilot); FIRST AP Entity in Corpus (mechanism 615); BOUNDS the Falsification Family - Sep 9 2026 14:00 PDT
