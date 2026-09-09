@@ -49,10 +49,10 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
 | Annotated articles | 206 | Full manual analysis in `examples/sample_output/` |
-| Journalists tracked | 264 | Career data with source URLs |
+| Journalists tracked | 265 | Career data with source URLs |
 | Career-entry migrations | 978 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 33363 | Across 960 test files |
+| Tests | 33398 | Across 961 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **264 journalists** (60 with structured education records) across 440+ publications (978 tracked migrations). Notable high-value migrations include:
+Ships with verified career data for **265 journalists** (60 with structured education records) across 440+ publications (978 tracked migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -376,7 +376,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 13 distinct correction paths (A–N), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 264 journalists, 760 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 265 journalists, 760 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 29-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
@@ -1490,3 +1490,5 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_631_podcast_sentiment_49th_verification_gf499_holds_sep09_11am.py` | 64 | Type E #631: podcast sentiment 49th verification - GF 499 HOLDS (no new episode; uk-podcasts.co.uk latest 2026-09-07 crawled 5h, au.radio.net 499 latest 07/09/2026 crawled 23h, Listen Notes 2-day lag on 498 crawled 3d, podscan.fm 499 TKE Studios Margate transcript crawled 5h, Chortle Sep 13 Kings Place LPF 14:00 re-surfaced crawled <1h, live.org.uk re-surfaced crawled <1h; episode 500 watch item penciled Mon Sep 14) + EHE 30-day hold (7 re-surfaces observed this run all in corpus: thetimes.com spoof-Epstein 44d, feminist.org FMF via #470 updated 8d, petapixel lenticular 48d, sifted.eu ban piece via #480 14d, engadget bus stops 54d, afrotech ethics 54d, hyperallergic.com guerrilla 56d re-surfaced after #626 absence; no new primary motif; no competitor-equivalent in 49 cycles) + Attention Sphere 49th no-match as podcast (own-corpus GitHub commits rejected circular; creators.spotify.com nonprofit-identity confirmation; identity strand unchanged from #596; task-spec still misidentified) + ONE new-to-corpus press surface (petapixel.com Sep 9 2026 US-police-warn Meta smart glasses security threat, zero repo-wide hits pre-commit md + git-grep py/yaml) - recency frontier ADVANCES Sep 8 to Sep 9 (distinct from #626's tie); 627-631 rotation-cycle guard closing D->E (anchor patched post-commit per #565 convention); no analysis.json update warranted (monitoring-only); count_stats gate - Sep 9 2026 11:00 PDT |
 
 | `test_type_a_632_news_corp_wsj_microsoft_blackbox_vs_meta_muse_launch_sep09_12pm.py` | 48 | Type A #632: News Corp (WSJ) x Microsoft Azure-disclosure black-box register vs Meta Muse launch register (same week Sep 2-9 2026) - FIRST dedicated dual-deal-symmetry mechanism (mechanism_id 613, next free; max pre-commit 612); Microsoft arm [0.00 neutral straight report Sep 2 Nakrosis, -0.70 adversarial Flash Heard black-box analysis card Sep 3, hardest Microsoft register in corpus] vs Meta arm [+0.40 aspirational launch feature Sep 8 Bobrowsky, +0.30 positive Market Talk roundup Sep 9 Mizuho Muse note]; illustrative delta (Meta minus Microsoft) +0.70 MANUAL ILLUSTRATIVE, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False; both sides News Corp licensing payers (Microsoft HarperCollins book leg #524, Meta Dow Jones news leg up to $50M/yr #549) so theory predicts symmetric softening; Microsoft arm FALSIFIES the woo-side prediction (partial falsification-family member); STRONG genre skew (Heard-on-the-Street analysis vs launch news) + STRONG event skew (disclosure opacity vs product launch) dominate; complements #527 (Apr-Jul Microsoft woo-side average +0.07 vs -0.35 Sep average here; woo-side cushion not uniform); 628-632 rotation-cycle guard closing E->A (anchor patched post-commit per #565 convention); no analysis.json update warranted; count_stats gate - Sep 9 2026 12:00 PDT |
+
+| `test_type_b_633_anthony_ha_techcrunch_meta_vs_anthropic_trust_register_sep09_1pm.py` | 35 | Type B #633: Anthony Ha (TechCrunch, weekend editor) within-writer trust register - Meta AI manifesto skeptical podcast-preview -0.45 (Aug 16 2026, first-hand read; harshest lines panelist-voiced, Amodei the anti-Dario foil) vs Anthropic trust-crisis straight news report +0.15 (same day, same AI category, first-hand read); illustrative delta meta-minus-anthropic -0.60, MANUAL ILLUSTRATIVE only, p_value/cohens_d NOT_CALCULATED, is_significant False; directionally consistent with the Apollo compound publisher incentive (Apollo XPV Anthropic $35B-$100B financing + Apollo owns Yahoo/TechCrunch; sibling #305 Bellan inversion Meta -0.20/Anthropic +0.15, Bellan a quoted panelist here) but STRONG genre+messenger confounds dominate, correlation not causation, no newsroom-behavior claim; NOT a falsification-family member, NOT a pure asymmetry pin; FIRST dedicated Type B on Ha (mechanism_id 614, next free, max pre-commit 613); 629-633 rotation-cycle guard closing A->B (anchor patched post-commit per #565 convention); journalists 265, migrations 978, count_stats gate - Sep 9 2026 13:00 PDT |
