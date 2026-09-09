@@ -401,13 +401,13 @@ class TestRotationCycleGuard620:
     # in the followup commit per the #565 convention. This class is
     # deselected pre-commit (it asserts the post-commit anchor) and runs
     # green in the followup.
-    ANCHORED_COMMIT = "POST_COMMIT_ANCHOR"
+    ANCHORED_COMMIT = "766998e"
     EXPECTED_WINDOW_NEWEST_FIRST = [
-        ("Type D", 620),
-        ("Type C", 619),
-        ("Type B", 618),
-        ("Type A", 617),
-        ("Type E", 616),
+        ("D", 620),
+        ("C", 619),
+        ("B", 618),
+        ("A", 617),
+        ("E", 616),
     ]
 
     @staticmethod
@@ -444,7 +444,7 @@ class TestRotationCycleGuard620:
 
     def test_closes_c_to_d_edge(self):
         types = [t for t, _ in self.EXPECTED_WINDOW_NEWEST_FIRST]
-        assert types[0] == "Type D" and types[1] == "Type C"
+        assert types[0] == "D" and types[1] == "C"
 
     def test_five_window_members(self):
         assert len(self.EXPECTED_WINDOW_NEWEST_FIRST) == 5
