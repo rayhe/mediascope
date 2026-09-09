@@ -30459,3 +30459,37 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - New #612 file (rotation guard deselected pre-commit): 59 passed, 0 failed
 - count_stats.py --check: green (32172 tests / 940 files)
 ---
+
+---
+
+#615 Type D: Scorer Consistency for #612 (WIRED x Samsung 48-Day Selection-Gap, Engine t=-25.34/p=1.04e-06/d=-16.03 Exact on Carried Synthetic Arms, NOT a Falsification-Family Member) + #613 (Heater Asymmetric n=2 vs n=1 Variant Mirrors #593/#607, NOT a New Pin; Reporter-Level Constancy Family 9->10) + #602 Eighth Divergence Spot-Check Still Holding + #614 Qualitative Boundary + #611 Monitoring Boundary + 611-615 Rotation Guard + Doc-Sync Ratchet (Second Fully-Clean Window) - Sep 8 2026 18:00 PDT
+
+**Date:** 2026-09-08 18:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 614 C -> 615 D)
+**Type:** D - Test & Verify (scorer consistency, divergence spot-check, rotation guard, doc-sync ratchet)
+
+**Finding:**
+1. **#612 (Type A, WIRED x Samsung Galaxy Glasses 48-day selection-gap persistence) - engine-drift checks:** logged arms Meta [-0.72, -0.82, -0.78, -0.65, -0.7] vs Samsung [0.1, 0.08, 0.05, 0.12, 0.07] (carried unchanged from mechanism 374, synthetic controlled arrays) reproduce the YAML engine_drift_check string EXACTLY: welch_t_test -> (t=-25.340748822079505, p=1.0386087222857895e-06), cohens_d -> -16.02689677840004. Finding layer refuses (p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False). Engine-side significance on synthetic inputs vs finding-layer refusal is the standing engine/finding divergence, not an oversight. NOT a falsification-family member: selection-gap lineage (mechanisms 39/42/89/374) is orthogonal to framing-tone scoring.
+2. **#613 (Type B, Brian Heater TechCrunch cross-entity register constancy) - the asymmetric n=2 vs n=1 variant documented as a MIRROR of #593/#607, not a new pin (per the #610 taxonomy).** Logged illustrative delta meta-minus-apple -0.20 reproduces the mean-difference arithmetic exactly. Engine: welch_t_test([-0.10, 0.10], [0.20]) -> (0.0, 1.0), the degenerate guard fires on the n=1 apple arm (per the #603 pin); cohens_d -> -1.414213562373095 (rounds to the logged -1.41), nonzero while only the t-path is guarded. Degenerate-boundary count STAYS at 6. #613 joins the reporter-level falsification/alternative-driver constancy family (#538, #548, #553, #563, #568, #578, #583, #588, #608), moving it 9 -> 10. NOT an agreement-pole pin (pole requires a non-degenerate engine computation; pole ratchet intact at 11).
+3. **#602 (Type A, WIRED x Anthropic licensing-halo September silence extension) - EIGHTH divergence spot-check STILL HOLDING:** engine recomputes on the pinned arrays (Meta alarm baseline [-0.82, -0.72, -0.78] vs Sept peer register [-0.10, -0.05, 0.10]) returning t=-11.335839046263537, p=0.0017547553523160528, d=-9.255673823221192, matching the YAML-recorded -11.3358 / 0.001755 / -9.2557 to 4 decimals, while the finding layer refuses (NOT_CALCULATED, is_significant False). Smallest engine p / largest |d| in the divergence class (per #592 record). Divergence ratchet intact at 6; no new divergence pins in the 610-614 window.
+4. **#614 (Type C, Reddit v. Anthropic adversarial litigation) is the qualitative boundary** (mirroring #609 in #610, #604 in #605): tone_scores NOT_SCORED, statistical_discipline carries the #540/#544 boundary string, no asymmetry_scorer key - scorer consistency explicitly does NOT apply. Mechanism 603 is the max numeric mechanism_id pre-commit. Pay-or-sue three-leg bifurcation (Google $60M/yr paid, OpenAI ~$70M/yr paid, Anthropic $0 sued) is LITIGATED, not licensed. KEY TENSION: mechanism #602 documented a WIRED x Anthropic licensing-halo divergence pointing OPPOSITE the harder-coverage prediction this financial tier implies, so #614 BOUNDS the falsification/alternative-driver family without joining it.
+5. **#611 (Type E, podcast sentiment 45th verification) is the monitoring boundary** (mirroring #606 in #610, #601 in #605): monitoring-only, no iteration-611 mechanism block in profiles/, no scorer extension.
+
+**Asymmetry scorer:** ENGINE-DRIFT CHECKS ONLY (Aug 28 2026 standing rule). No empirical claims; p_value NOT_CALCULATED in the finding layer; is_significant False throughout. The degenerate-boundary subclass stays at 6 (verified holding, no new pin); the #613 asymmetric variant is documented as a mirror of #593/#607, not a pin.
+
+**Confounders Ranked:** STRONG: (1) all deltas are MANUAL ILLUSTRATIVE on hand-scored arms - engine computations are drift checks on synthetic inputs, not measurements; (2) the #612 arms are selection-absence synthetic arrays, not framing-tone corpus scores - the engine significance output there is doubly synthetic. MODERATE: (1) the degenerate-count bookkeeping (stays at 6) rests on classing the #593/#607/#613 asymmetric variants as mirrors rather than pins - a defensible taxonomy but a taxonomy; (2) the reporter-level constancy-family 9->10 ratchet is a corpus-internal label, not an empirical world-claim. WEAK: (1) mechanism_id vs iteration-number namespace collision (mechanism ids 601/602/603 at iterations #612/#613/#614) is documented in the test file docstring lineage but remains a confusion source.
+
+**New Type D files:** `tests/test_type_d_615_scorer_consistency_612_613_degenerate_614_boundary_rotation_doc_sync_sep08_6pm.py` - 11 classes, 56 def-tests (53 passing, rotation-guard class deselected pre-commit per the #565 followup convention; anchor patched in the followup).
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #615 file (rotation guard deselected pre-commit): 53 passed, 0 failed
+- count_stats.py --check: green (32361 tests / 943 files)
+
+**Doc-sync:** the #611-#614 README rows (66/62/69/64) and ARCHITECTURE rows (66 tests 11 classes / 62 tests 7 classes / 69 tests 13 classes / 64 tests 10 classes) all match the committed def-test counts - second fully-clean doc-sync window (first since the #605 fifth miss repair); the repair streak is deliberately left at five. No miss repairs this run.
+
+**Artifact readiness:** No analysis.json update warranted. Engine-drift checks and discipline pins only; no new empirical findings.
+
+**Rotation Transparency:** Previous main commit #614 Type C at 17:00 PDT Sep 8 2026 (commit c20761f verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard615 covers window 611-615 (D,C,B,A,E newest-first), closing the C->D edge; anchor patched in followup per #565/#595/#600/#601/#602/#603/#604/#605/#606/#607/#608/#609/#610/#611/#612/#613/#614 convention.
+
+**Novelty Verification:** Zero test_type_d_615 files on disk before this run (glob verified); no #615 in git log (grep verified); scorer consistency never covered #612 or #613 before this run; the #613 asymmetric variant is classified per the #610 taxonomy, not duplicated as a new pin; the 611-615 rotation window never guarded; no new divergence pins in the 610-614 window; this run's file is the second to assert the iteration-vs-mechanism numbering collision explicitly (first: #610).
+
+---
