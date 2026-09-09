@@ -1,3 +1,37 @@
+#619 Type C: Apple Siri AI Publisher Negotiation Silence Status Check (Mechanism 606) - 27 Days Post-WSJ Aug 12 Report, ZERO Signed-Deal Announcements, Mechanism 156 Stays PREDICTIVE - EXTENDS #156, News Corp Originator Self-Disclosure Carried - Sep 8 2026 22:00 PDT
+
+**Date:** 2026-09-08 22:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 618 B -> 619 C)
+**Type:** C - Financial Incentive Mapping (Apple Siri AI publisher negotiation status check, Sep 8 2026)
+
+**Finding:**
+1. **Status check on mechanism 156 (Apple Siri AI variable pay-per-use negotiation):** 27 days after the Aug 12 2026 WSJ report, zero signed Apple publisher deal announcements have surfaced in this run's searches and no counterparty publisher has been named. The variable pay-per-use model (payment when content is used, not lump sum), nine-figure budget, and multiyear deal shape all come from the WSJ's unnamed people familiar with the discussions; Apple declined to comment. Bounded absence per iteration-492 rule: no announcements found is not proof no deals exist, since signed-but-NDA content deals are routine. Mechanism 156 stays PREDICTIVE, not observed.
+2. **Corroboration stack (all verbatim URLs, none constructed):** WSJ (primary), MacRumors Aug 12 2026 5:03pm PDT by Juli Clover, TheWrap, TechRepublic, Engadget, AppleMagazine x2, MediaCopilot (explicitly: "No deals have been announced. The Wall Street Journal reported that discussions are underway"), ArchyNewsy, Lumida News. 9to5Mac and AppleInsider Aug 12-13 pieces were already in the mechanism-156 source_urls; this run adds the eight above.
+3. **Originator self-disclosure (new to corpus):** the originating WSJ piece itself notes that News Corp, owner of The Wall Street Journal, has a commercial agreement to supply news through Apple services. The outlet breaking the Apple-publisher-deal story is itself an Apple commercial content partner. Carried as a nominal conflict in the financial math, capture direction ambiguous (report is neutral-to-positive on Apple, corroborated by multiple outlets).
+4. **Retrieval-vs-training distinction (secondary analysis, AppleMagazine):** variable per-use pricing is structurally coherent for RETRIEVAL (a specific article maps to a specific Siri answer, usage is traceable) but not for TRAINING (bulk archive transfer with unmeasurable per-item influence). Apple's proposal is scoped to current news and information retrieval, not archive training rights.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule). p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False. Qualitative Type C mapping; no coverage-tone claim made.
+
+**Confounders Ranked:** STRONG: (1) bounded absence is not proof - signed-but-NDA deals are routine in content licensing; (2) enterprise deal time runs 6-18 months, WSJ says publishers were approached "in recent months", so 27 days of silence is normal deal time. MODERATE: (1) secondary-source stack is low-institutional-weight, only WSJ carries primary weight, variable-model detail rests on unnamed sources; (2) no publisher-side confirmation exists. WEAK: (1) News Corp's own Apple commercial agreement - nominal conflict, report corroborated, capture direction ambiguous.
+
+**Financial context (carried, unchanged):** Apple's AI-payer stack stays: Shutterstock ($25-50M), data-vendor deals, Gemini bypass chain ($1B/yr to Google, mechanism in corpus); publisher leg remains prospective. Apple remains the tracked competitor with the most prospective publisher financial leverage (sixth lever, mechanism 156) and the least observed adversarial coverage.
+
+**Watch item:** Siri AI ships fall 2026 with iOS 27. If it launches with licensed-content-powered news accuracy, mechanism 156 converts predictive-to-observed and the variable model becomes the industry benchmark. If no deals close before launch, the benchmark dissolves. Next Type C Apple check penciled after iOS 27 launch.
+
+**Research method:** 3 browser.search query sets this run (Apple Siri AI publisher deal since 2026-08-20; Amazon NYT licensing control query; Apple signed publisher agreement since 2026-08-13). No zero-coverage claims per iteration-492 rule; no em dashes; URLs verbatim from Full-URL listings. Pre-commit greps: zero test_type_c_619 files on disk; no #619 in git log; zero siri_ai_negotiation_silence_status_check keys in profiles/ before insertion; no mechanism_606 keys in profiles/ before insertion (max numeric pre-commit 605); WSJ/secondary URLs verified verbatim against tool output.
+
+**Artifact readiness:** No analysis.json update warranted. Status check on an in-corpus predictive mechanism; illustrative-only output, no new deal signed.
+
+**Rotation Transparency:** Previous main commit #618 Type B at 21:00 PDT Sep 8 2026 (commit 19100ed verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after B is C. Selected Type C. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard619 covers window 615-619 (C,B,A,E,D newest-first), closing the B->C edge; anchor patched in followup per #565 convention.
+
+**Novelty Verification:** Zero test_type_c_619 files on disk before this run (glob verified); no #619 in git log (grep verified); zero siri_ai_negotiation_silence_status_check keys in profiles/*.yaml pre-commit (grep verified); no mechanism_606 keys in profiles/ pre-commit (max numeric 605); the WSJ Aug 12 report URL was already in corpus (mechanism-156 source_urls), but the Sep 8 recency check, the eight corroborating URLs, the News Corp self-disclosure, and the retrieval-vs-training distinction are new this run; mechanism_id 606 next free.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #619 file (rotation guard deselected pre-commit): 47 passed, 4 deselected, 0 failed
+- count_stats.py --check: green (32605 tests / 947 files)
+
+---
+
+---
 #618 Type B: Victoria Song (The Verge) Jul 2026 Escalation Audit - REGISTER-CONDITIONED ASYMMETRY (Mechanism 605) - Meta Privacy-Editorial Trilogy Adversarial Escalation vs Same-Window Apple Product-News Arm (Illustrative Delta -0.90 MANUAL ILLUSTRATIVE, p/cohens_d NOT_CALCULATED, is_significant False) - EXTENDS #75, REFINES the Song Data-Integrity Correction, BOUNDS the Falsification Family; NOT a Falsification-Family Member, NOT a Pure Asymmetry Pin - Sep 8 2026 21:00 PDT
 
 **Date:** 2026-09-08 21:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 617 A -> 618 B)

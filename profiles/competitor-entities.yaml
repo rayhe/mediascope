@@ -6281,6 +6281,52 @@ entities:
       - https://appleinsider.com/articles/26/08/13/siri-ai-could-get-a-boost-from-news-content-with-new-publisher-deal
       - https://www.thewrap.com/industry-news/tech/apple-ai-siri-news-media-publishing-deals/
       - https://www.editorandpublisher.com/stories/untitled,263027
+    siri_ai_negotiation_silence_status_check_606:
+        mechanism_id: 606
+        type: 'Type C - Financial Incentive Mapping (Sep 2026 status check on mechanism 156)'
+        date_checked: '2026-09-08'
+        extends_mechanism_id: 156
+        origin_report: 'WSJ Aug 12 2026, Apple in Talks to Pay Publishers to Improve AI-Powered Siri: Apple has reached out to publishers in recent months to propose new multiyear deals giving Siri AI access to current news and information; variable compensation plan with payments made when content is used, not lump sum; nine-figure budget discussed; Apple declined to comment; purpose is retrieval for Siri responses, not archive training.'
+        corroboration_stack_new_this_run:
+        - 'MacRumors Aug 12 2026 5:03pm PDT (Juli Clover): multiyear agreements, payment when content is used, nine-figure budget; noted prior Apple publisher deals that included AI training rights and Apple News+ since 2019'
+        - 'TheWrap Aug 2026: nine-figure deals in talks, variable compensation model, cited WSJ people familiar with the discussions'
+        - 'TechRepublic Aug 2026: per-use compensation differs from guaranteed-fee norm; Siri AI combines web retrieval with onscreen awareness; beta fall 2026'
+        - 'Engadget Aug 2026: negotiations ongoing, Siri AI public release expected later 2026'
+        - 'AppleMagazine x2: pay-per-use traceability analysis; retrieval vs training scope distinction'
+        - 'MediaCopilot Aug 2026: no deals announced; Apple has not publicly detailed the proposal'
+        - 'ArchyNewsy Aug 2026: royalty-based compensation framing'
+        - 'Lumida News Aug 2026: pay-first approach as differentiation from the scrape-first AI playbook'
+        finding: 'As of Sep 8 2026, 27 days after the WSJ report, NO signed Apple publisher deal announcement has surfaced in this run''s searches and none of the corroborating coverage names a counterparty publisher. Bounded absence per iteration-492 rule: absence of announcements is not proof no deal exists, since signed-but-NDA''d deals are common in content licensing. Mechanism 156 stays PREDICTIVE, not observed.'
+        originator_self_disclosure: 'The originating WSJ piece itself notes that News Corp, owner of The Wall Street Journal, has a commercial agreement to supply news through Apple services. The outlet breaking the Apple-publisher-deal story is itself an Apple commercial content partner, a nominal conflict to carry in the financial math.'
+        retrieval_vs_training_distinction: 'Secondary analysis (AppleMagazine): variable per-use pricing is practical for RETRIEVAL, where a specific article maps to a specific Siri answer and usage is traceable, but not for TRAINING, where bulk archive transfer has unmeasurable per-item influence. Apple''s proposal is scoped to current news and information retrieval, not archive training rights, which is why the pay-per-use model is structurally coherent here.'
+        watch_item: 'Siri AI ships fall 2026 with iOS 27. If it launches with licensed-content-powered news accuracy, the variable pay-per-use model becomes the industry benchmark and mechanism 156 converts from predictive to observed. If no deals close before launch, the benchmark dissolves.'
+        confounders_ranked:
+        - strength: STRONG
+          description: 'Bounded absence is not proof. Publishers and Apple routinely sign content deals under NDA and announce later. The 27-day silence could reflect deal-closing time, not deal failure.'
+        - strength: MODERATE
+          description: 'Enterprise licensing negotiations run 6 to 18 months. WSJ says publishers were approached in recent months, so the negotiation window is still young; 27 days of silence is normal deal time, not a signal.'
+        - strength: MODERATE
+          description: 'Secondary-source stack is low-institutional-weight. Only WSJ carries primary-source weight; the variable-model detail rests on unnamed people familiar with the discussions. No publisher-side confirmation exists.'
+        - strength: WEAK
+          description: 'News Corp has its own Apple commercial agreement, so the originating outlet has a business relationship with Apple. The report is neutral-to-positive on Apple and corroborated by multiple outlets, so capture direction is ambiguous rather than adverse.'
+        statistical_discipline: 'Qualitative Type C mapping. tone_scores NOT_SCORED, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, MANUAL ILLUSTRATIVE labeling, correlational structural incentives only, no causal claim.'
+        cross_references:
+        - mechanism_id: 156
+          relationship: extends
+          description: 'Sep 8 2026 status check on the Siri AI variable pay-per-use negotiation. Mechanism 156 remains predictive. Zero signed-deal announcements 27 days post-report.'
+        - mechanism_id: 80
+          relationship: related
+          description: 'Apple News platform leverage now paired with prospective Siri AI per-use dependency'
+        source_urls:
+        - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+        - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
+        - https://www.techrepublic.com/article/news-apple-publisher-deals-siri-ai/
+        - https://www.engadget.com/2236317/apple-is-reportedly-turning-to-publishers-for-help-with-siri-ai/
+        - https://www.thewrap.com/industry-news/tech/apple-ai-siri-news-media-publishing-deals/
+        - https://applemagazine.com/siri-ai-apple-publisher-content-deals/
+        - https://www.archynewsy.com/apple-to-pay-news-publishers-for-siri-ai-integration/
+        - https://mediacopilot.ai/apple-siri-ai-publisher-payments/
+        - https://lumidanews.com/apple-is-paying-publishers-for-real-time-news-to-power-ai-siri-multiyear-content-deals-signal-a-different-strategy-than-the-scrape-first-ai-playbook/
     q3_fy26_earnings:
       report_date: '2026-07-30'
       quarter_ended: '2026-06-27'
