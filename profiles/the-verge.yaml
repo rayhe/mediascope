@@ -2560,6 +2560,203 @@ competitor_relationships:
     direction: "none"
     description: "No known direct licensing deal."
     coverage_prediction: "neutral"
+    mechanism_610_verge_amazon_ring_surveillance_vs_meta_mixed_register:
+      mechanism_id: 610
+      iteration: 627
+      iteration_type: A
+      iteration_time: 2026-09-09 06:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: The Verge
+      title: 'Type A #627: The Verge x Amazon Ring surveillance register - adversarial
+        surveillance framing on a $0-tie arm vs mixed Meta product register (zero-financial-gradient
+        control)'
+      finding: 'FIRST dedicated Type A mechanism under the-verge.yaml competitor_relationships.amazon
+        (novelty: zero mechanism keys under the amazon entity before insertion; zero hits
+        for 876866 in profiles/; max numeric mechanism_id was 609 per the #624 record).
+        The Verge carries NO financial tie to Amazon (financial_tie none, $0, no AI-content
+        deal), yet its Feb 11 2026 Jennifer Pattison Tuohy piece on Amazon Ring''s Search
+        Party Super Bowl ad applies the full adversarial surveillance register (manual
+        illustrative tone -0.80, first-hand full-text read via the archived copy): headline
+        framing ''fears of mass surveillance''; privacy expert Chris Gilliard quoted calling
+        the ad ''a clumsy attempt by Ring to put a cuddly face on a rather dystopian reality:
+        widespread networked surveillance by a company that has cozy relationships with
+        law enforcement''; Sen. Ed Markey quoted ''This definitely isn''t about dogs,
+        it''s about mass surveillance''; Search Party enabled by default on enrolled outdoor
+        cameras; the close lands on distrust (''If Ring is cloaking its ambitions behind
+        our instinct to protect our furry friends, that trust will be hard to find.'').
+        The Aug 26 Tuohy encryption piece (listing-bounded from the Verge''s own related-links
+        section) extends the register at -0.60. The Meta comparator set (framing carried
+        from the #425 in-corpus record; tones hand-assigned this run): May 14 2026 virtual-writing
+        GA feature-drop (+0.45), Jul 27 2026 iterative AI update (+0.20), Jan 6 2026 expansion-pause
+        deficit (-0.30). Illustrative delta (Meta minus Amazon) +0.82, so the $0-tie Amazon
+        arm reads SHARPER adversarial than the $0-tie Meta arm. This is a zero-financial-gradient
+        CONTROL, NOT a falsification-family member: with no financial channel on either
+        side, the register gap is event/genre-driven (a surveillance-controversy event
+        draws adversarial framing; a product cycle draws a mixed register), not money-driven.
+        Bounded claim only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False
+        (Aug 28 standing rule).'
+      amazon_articles:
+      - title: Amazon Ring's lost dog ad sparks backlash amid fears of mass surveillance
+        author: Jennifer Pattison Tuohy
+        date: '2026-02-11'
+        url: https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Fwww.theverge.com%2Ftech%2F876866%2Fring-search-party-super-bowl-ad-online-backlash
+        url_note: Verbatim archived-copy wrapper URL as surfaced this run; it embeds the
+          Verge page tech/876866/ring-search-party-super-bowl-ad-online-backlash. The
+          decoded canonical form is NOT used as a citation; no canonical URL constructed.
+        register: surveillance_adversarial
+        manual_illustrative_tone: -0.8
+        key_framing: Headline frames 'fears of mass surveillance'; Super Bowl ad treated
+          as 'surveilling' neighborhoods; Gilliard 'dystopian reality' quote; Sen. Markey
+          'mass surveillance' quote; Flock Safety partnership and ICE-access fears centered;
+          Search Party on-by-default criticized; Ring spokesperson Emma Daniels denial
+          ('These are not tools for mass surveillance') quoted then undercut by the close
+          on distrust.
+        verification: Full article text read first-hand this run via the dejavu.org archived
+          copy of the Verge page (verbatim wrapper URL); byline Jennifer Pattison Tuohy
+          and date Feb 11 2026 on page.
+        evidence_tier: full_text_mirror
+      - title: Ring says its new encryption limits what it can give police
+        author: Jennifer Pattison Tuohy
+        date: '2026-08-26'
+        date_note: Day and month from the Verge related-links listing on the Search Party
+          piece; year 2026 bounded.
+        url_note: No URL surfaced this run; none constructed per the verbatim-only rule.
+        register: surveillance_adversarial
+        manual_illustrative_tone: -0.6
+        key_framing: 'Listing-bounded: headline carries the encryption-limits-police-access
+          frame inside the ongoing Ring surveillance controversy; tone assigned from headline-level
+          framing only.'
+        verification: 'Surfaced in the Verge''s own related-links (''More in'') section
+          on the Search Party piece: title, author, ''Aug 26''. No URL surfaced.'
+        evidence_tier: listing_bounded
+      meta_articles_same_domain:
+      - title: Virtual Writing GA (Meta Ray-Ban Display)
+        author: Jay Peters
+        date: '2026-05-14'
+        url: https://www.theverge.com/tech/930941/meta-ray-ban-display-virtual-neural-handwriting-apps-developer
+        register: product_feature_drop
+        manual_illustrative_tone: 0.45
+        key_framing: 'Positive feature-drop: neural wristband handwriting GA for WhatsApp/Messenger/Instagram,
+          display recording lens, walking directions US-wide plus London Paris Rome, live
+          captions, developer preview. Framing carried from #425.'
+        verification: 'Carried from the #425 in-corpus record at #425''s recorded framing;
+          URL verbatim from the #425 record; no fresh read this run.'
+        evidence_tier: framing_carried_tone_hand_assigned
+      - title: AI Update Iterative (Meta Ray-Ban Display)
+        author: Emma Roth
+        date: '2026-07-27'
+        url: https://www.theverge.com/tech/971604/metas-ray-ban-display-glasses-get-an-ai-update
+        register: product_iterative
+        manual_illustrative_tone: 0.2
+        key_framing: 'Iterative upgrade: Threads support, neural handwriting prompting,
+          Meta AI powered by new Muse Spark models; brief product-focused register. Framing
+          carried from #425.'
+        verification: 'Carried from the #425 in-corpus record at #425''s recorded framing;
+          URL verbatim from the #425 record; no fresh read this run.'
+        evidence_tier: framing_carried_tone_hand_assigned
+      - title: Expansion Pause Supply Constraint (Meta Ray-Ban Display)
+        author: Jess Weatherbed
+        date: '2026-01-06'
+        url: https://www.theverge.com/news/856216/meta-ray-ban-display-smart-glasses-international-expansion-paused
+        register: product_deficit
+        manual_illustrative_tone: -0.3
+        key_framing: 'Supply-constraint deficit: international expansion paused. Framing
+          carried from #425.'
+        verification: 'Carried from the #425 in-corpus record at #425''s recorded framing;
+          URL verbatim from the #425 record; no fresh read this run.'
+        evidence_tier: framing_carried_tone_hand_assigned
+      asymmetry_scorer_manual_illustrative:
+        target_entity: meta
+        target_tones:
+        - 0.45
+        - 0.2
+        - -0.3
+        peer_entities:
+        - amazon
+        peer_tones:
+        - -0.8
+        - -0.6
+        publication_slug: the-verge
+        window: 2026-01 to 2026-08-26
+        target_avg_tone: 0.1167
+        peer_avg_tone: -0.7
+        delta_manual_illustrative: 0.8167
+        delta_direction: meta_minus_amazon
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval_95: NOT_CALCULATED
+        is_significant: false
+        scorer: mediascope.score.asymmetry.calculate_asymmetry (MANUAL ILLUSTRATIVE ONLY
+          per Aug 28 2026 standing rule)
+        synthetic_note: 'Tones hand-assigned from the first-hand read (Search Party piece),
+          headline-level listing (encryption piece), and #425-recorded framing (Meta items);
+          n=2 vs n=3; descriptive only. No empirical significance claimed or computed.
+          Documents the analyst''s reading for reproducibility and challenge.'
+      financial_triangulation:
+        amazon_zero_channel: 'The Verge carries no known financial tie to Amazon (financial_tie
+          none, $0, no AI-content deal). The observed register (adversarial surveillance,
+          -0.80/-0.60) runs opposite to any pro-advertiser softness intuition: Amazon,
+          the larger potential ad account, receives the sharper treatment in this bounded
+          pair.'
+        meta_zero_channel: 'Meta has $0 known AI licensing with The Verge; PMC sold all
+          Meta shares in Q2 2025 (mechanism #112). The Meta comparator register is mixed
+          (feature-drop +0.45 / iterative +0.20 / deficit -0.30), not uniformly adversarial.'
+        correlation_not_causation: 'Both arms sit at a $0 financial gradient, so no financial
+          mechanism is available to explain the observed illustrative gap (Meta minus
+          Amazon +0.82). Event/genre is the STRONG rival explanation: a surveillance-controversy
+          event draws adversarial framing while a product cycle draws a mixed register.
+          This is a zero-gradient CONTROL bounding the financial theory''s explanatory
+          scope, NOT a falsification-family member.'
+      confounders_ranked:
+        strong:
+        - 'Event-genre skew: both Amazon items are surveillance-controversy coverage (Ring
+          Search Party / Flock / ICE news cycle, Feb-Aug 2026); all three Meta items are
+          product-cycle news (feature GA, iterative AI update, expansion pause). Controversy
+          events draw adversarial registers; product cycles draw mixed registers. Genre
+          alone explains the gap.'
+        - 'Reporter skew: both Amazon items are Jennifer Pattison Tuohy (senior reviewer,
+          smart-home and IoT beat critic); the Meta items are Jay Peters, Emma Roth, and
+          Jess Weatherbed (product and feature writers). Beat register is structural,
+          not entity-specific.'
+        moderate:
+        - 'Evidence-tier asymmetry: one Amazon item is first-hand full-text via the archived
+          copy; one is listing-bounded (title/author/date only); all Meta tones are hand-assigned
+          from #425-recorded framing with no fresh reads this run.'
+        - 'Window skew: Amazon items Feb-Aug 2026 (active Ring/ICE controversy cycle);
+          Meta items Jan-Jul 2026 (product cycle). Not overlap-aligned; the comparison
+          is cross-register, not contemporaneous.'
+        weak:
+        - 'n=2 vs n=3: descriptive only, no statistical significance (by design, NOT_CALCULATED).'
+        - The Aug 26 encryption piece tone (-0.60) is headline-level only, so the Amazon
+          average leans on a thinner read than the first-hand -0.80 anchor.
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026.
+        n=2 (amazon) vs n=3 (meta). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence
+        interval NOT_CALCULATED; is_significant False. The asymmetry scorer was not run
+        for empirical inference on this mechanism. Illustrative delta only (+0.82, Meta
+        minus Amazon); not evidence of bias or of financial influence; documents the analyst''s
+        reading for reproducibility and challenge. No zero-coverage claims (iteration-492
+        rule): the Amazon corpus here is bounded to two surfaced items; no web-wide coverage
+        claim is made.'
+      novelty_verification: 'Repo-wide grep this run: zero mechanism keys under competitor_relationships
+        in profiles/the-verge.yaml before insertion (the amazon entity held financial
+        fields only); zero hits for 876866 in profiles/ before insertion; no mechanism_610
+        key anywhere in profiles/ before insertion (max numeric mechanism_id was 609 per
+        the #624 record); no Type A #627 in git log; zero test_type_a_627 files on disk
+        before this run. Distinct from #604/#617 (Verge x Samsung launch-cycle register)
+        and #425 (Verge x OpenAI licensing): different entity, different window, surveillance
+        register rather than product or licensing register.'
+      research_method: '7 browser.search query sets this run across five rejected candidate
+        pairs (WIRED x EssilorLuxottica, WIRED x Perplexity, Atlantic x Google, Business
+        Insider x Microsoft, NYT x Apple: all rejected because no verbatim attributable
+        publication-side URLs surfaced for a 2-3 article set), then The Verge x Amazon.
+        One browser.open first-hand full-text read of the Feb 11 2026 Ring Search Party
+        piece via the dejavu.org archived copy (verbatim wrapper URL, nothing constructed).
+        The Aug 26 encryption piece is listing-bounded from the Verge''s own related-links
+        section (title, author, Aug 26; no URL surfaced, none constructed). Meta-side
+        framing carried from the #425 in-corpus record with tones hand-assigned this run.
+        theverge.com direct fetch policy-blocked per standing rule. No zero-coverage claims
+        per iteration-492 rule; no em dashes; all URLs verbatim as surfaced, none constructed.'
   apple:
     financial_tie: "none"
     estimated_value: "$0"
