@@ -479,6 +479,115 @@ competitor_relationships:
       artifact_readiness: 'No analysis.json update warranted. Directional, n.s. scorer output on manual illustrative tones; no new artifact-grade tone data.'
       verification_date: '2026-09-04'
       author: 'Kit (with Ray)'
+    mechanism_613_wsj_microsoft_blackbox_vs_meta_muse_launch_sep09:
+      mechanism_id: 613
+      mechanism_name: 'WSJ x Microsoft Azure-Disclosure Black-Box Register vs Meta Muse Launch Register - Dual-Deal Symmetry Boundary'
+      iteration: 632
+      iteration_type: 'A'
+      date: '2026-09-09'
+      summary: 'Same-week paired comparison: two WSJ Microsoft pieces (Sep 2-3, Azure reporting-shift announcement plus Flash Heard black-box analysis) vs two WSJ Meta pieces (Sep 8-9, Muse personal-AI-agent launch feature plus Market Talk analyst roundup). Both companies are News Corp licensing payers (Microsoft via the HarperCollins book leg #524, Meta via the Dow Jones news leg up to $50M/yr #549), so the incentive theory predicts symmetric softening. Observed: Meta register aspirational (+0.35 avg), Microsoft register mixed-to-adversarial (-0.35 avg, anchored by the -0.70 black-box analysis card). Illustrative delta (Meta minus Microsoft) +0.70. The Microsoft arm falsifies the woo-side softening prediction for the HarperCollins leg; the Meta arm is directionally consistent with #549. Partial falsification-family member on the Microsoft arm only; genre and event confounds dominate.'
+      financial_context: 'Dual-deal symmetry: News Corp receives Microsoft AI revenue through the HarperCollins book-licensing leg (Nov 2024, $5K per title 50/50 split, 3-year term, Bloomberg-reported via anonymous sources, never officially confirmed by either party - mechanism 524) AND Meta AI revenue through the Dow Jones news leg (up to $50M/yr, Mar 2026, mechanism 549). Direction of money predicts direction of editorial sympathy on both sides (correlation, not causation). The Microsoft arm runs AGAINST that prediction: the hardest Microsoft register in the corpus (-0.70) despite the licensing leg. FIRST dedicated dual-deal-symmetry mechanism in the corpus.'
+      articles:
+        - title: 'Microsoft to Change Reporting Structure to Reflect Effects of AI'
+          date: '2026-09-02'
+          byline: 'Stephen Nakrosis'
+          url: 'https://www.wsj.com/tech/ai/microsoft-to-change-reporting-structure-to-reflect-effects-of-ai-59dce66d'
+          register: 'neutral_straight_report'
+          tone_MANUAL_ILLUSTRATIVE: 0.00
+          research_method: 'first_hand_browser_open_sep09'
+          key_quotes:
+            - 'Microsoft is changing its reporting structure from three segments to two'
+            - 'The Agents and Infra segment is expected to report fiscal year 2027 first-quarter revenue of $75.15 billion to $75.75 billion'
+          note: 'Dow Jones Newswires straight report; zero evaluative language; Nadella quotes presented without editorial comment. The wire-register control inside the same-week Microsoft set.'
+        - title: 'Flash Heard: Microsoft Unveils a New Black Box for Investors'
+          date: '2026-09-03'
+          byline: 'Heard on the Street / markets desk'
+          url: 'https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-03-2026/card/-flash-heard-microsoft-unveils-a-new-black-box-for-investors-RqUpB7tcXJPwBppuyb6T'
+          register: 'adversarial_disclosure_analysis'
+          tone_MANUAL_ILLUSTRATIVE: -0.70
+          research_method: 'first_hand_browser_open_sep09'
+          key_quotes:
+            - 'Microsoft Unveils a New Black Box for Investors'
+            - 'It is actually reducing its number of reporting segments to two from three, rather than disaggregating them'
+            - 'management has just smooshed the bulk of its operations into a single segment'
+            - 'Opacity has long been the norm with Microsoft''s financial reporting. It will still be a black box under the new structure, just with a few new touches of gray.'
+          note: 'Hardest Microsoft register in the corpus. Licensing-payer (HarperCollins leg #524) receives adversarial treatment in an analysis register, running directly against the woo-side softening prediction. Complements #527, which found a +0.07 cushioned average on the Apr-Jul 2026 Microsoft set; the woo-side cushion is not uniform.'
+      meta_comparator:
+        article: 'Meta Launches a Personal AI Agent Designed to Be Easy to Use'
+        date: '2026-09-08'
+        byline: 'Meghan Bobrowsky'
+        url: 'https://www.wsj.com/tech/ai/meta-launches-a-personal-ai-agent-designed-to-be-easy-to-use-3eb5cfac'
+        tone_MANUAL_ILLUSTRATIVE: 0.40
+        register: 'aspirational_product_launch'
+        research_method: 'first_hand_browser_open_sep09'
+        key_quotes:
+          - 'Meta Platforms is betting that making AI agents easy to use will get mainstream consumers to start adopting them in their daily lives'
+          - 'The company is also heavily promoting the safety and security of its new agents'
+          - 'The AI agent is free to access for "most of what people need"'
+        note: 'Launch register: Wang executive quotes, Meta safety framing reproduced, monetization pressure ($130B spend, subscription tiers) and rogue-agent concerns included but cushioned. Same Bobrowsky who filed the Aug 2026 WSJ Meta rogue-model pieces, showing within-reporter register range.'
+      meta_comparator_2:
+        article: 'Tech, Media and Telecom Roundup: Market Talk (Muse/Mizuho note)'
+        date: '2026-09-09'
+        url: 'https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-1307ac74'
+        tone_MANUAL_ILLUSTRATIVE: 0.30
+        register: 'positive_market_roundup'
+        research_method: 'snippet_bounded_search_metadata_sep09'
+        key_quotes:
+          - 'Muse may mark the beginning of a substantial product cycle for Meta that isn''t currently priced into the company''s shares'
+          - 'Muse''s user experience to be significantly more consumer-focused than other AI engines'
+          - 'Meta shares are up 4.5%'
+        note: 'Third-party analyst positivity (Mizuho) amplified in the roundup slot; no negative Meta items in the visible block. Evidence tier below first-hand (snippet-bounded); tone carries wider uncertainty.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'microsoft'
+        peer_entity: 'meta'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.00, -0.70]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.40, 0.30]
+        delta: 0.70
+        delta_note: 'Peer (Meta) avg 0.35 minus target (Microsoft) avg -0.35 equals 0.70. Direction: Meta covered notably softer than Microsoft in the same September 2026 week despite dual-deal symmetry on both sides.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        significant: false
+        significant_empirical: false
+        cohens_d: 'not_calculated - illustrative only'
+        ci_95: ['not_calculated', 'not_calculated']
+        methodology_note: 'MANUAL ILLUSTRATIVE synthetic tone scores from first-hand framing analysis. Illustrative only. Requires observed WSJ corpus plus Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Do not claim statistical significance from synthetic scores.'
+      confounders:
+        - level: 'STRONG'
+          factor: 'genre_skew'
+          description: 'The -0.70 Microsoft anchor is a Heard-on-the-Street-style analysis product (Flash Heard), a genre adversarial by design; the Meta pieces are launch news plus market roundup, genres descriptive or positive by design. The register gap may be genre-driven, not entity-driven.'
+          adjustment: 'dominates'
+        - level: 'STRONG'
+          factor: 'event_skew'
+          description: 'Disclosure-opacity events draw adversarial financial scrutiny (black-box framing); product-launch events draw aspirational coverage. The events differ in kind, not only in entity.'
+          adjustment: 'dominates'
+        - level: 'MODERATE'
+          factor: 'timing_skew'
+          description: 'Microsoft set Sep 2-3, Meta set Sep 8-9. Six-day gap inside one week; windows overlap but are not matched days.'
+          adjustment: '-0.05'
+        - level: 'MODERATE'
+          factor: 'beat_assignment'
+          description: 'Microsoft pieces by the Dow Jones Newswires and markets desk (Nakrosis, Heard) vs Meta pieces by the Meta AI reporter (Bobrowsky). Same confounder class as #522 and #527.'
+          adjustment: 'register heterogeneity noted'
+        - level: 'MODERATE'
+          factor: 'evidence_tier_asymmetry'
+          description: 'The Meta Market Talk item is snippet-bounded (no first-hand read); the other three arms are first-hand browser.open reads. The +0.30 roundup tone carries wider uncertainty.'
+          adjustment: 'tone uncertainty'
+        - level: 'WEAK'
+          factor: 'illustrative_tones_subjective'
+          description: 'Manual illustrative tone scores are subjective estimates. n=2 vs n=2.'
+          adjustment: 'not_calculated'
+      strongest_counterargument: 'The genre confound fully explains the register gap before any entity or money effect is invoked: analysis products are adversarial and launch news is aspirational in every newsroom regardless of licensing deals. The black-box card sits on the markets desk, not the newsroom desk that serves the licensing partners, so no deal-to-coverage transmission is tested. The dual-deal symmetry boundary needs matched-genre arms to bite.'
+      cross_references:
+        - '#527 WSJ x Microsoft woo-side register (comparator lineage; +0.07 Apr-Jul average vs -0.35 Sep average here)'
+        - '#522 WSJ x Perplexity sue-side register'
+        - '#524 News Corp x Microsoft HarperCollins book licensing (fourth AI revenue leg)'
+        - '#549 News Corp x Meta $50M/yr Dow Jones news leg'
+        - '#594 News Corp five-leg AI revenue architecture'
+        - '#621 Reuters Sep 8 Meta Muse launch piece (corpus comparator, same event)'
+      research_method: '3 first-hand browser.open reads of WSJ articles this run (Sep 8 Muse launch, Sep 2-3 Microsoft reporting shift, Sep 3 black-box analysis card); 1 snippet-bounded market-roundup item; verbatim full-URL listings from browser.search. Per the iteration-492 rule, no zero-coverage claims.'
+      correlation_not_causation: true
+      artifact_readiness: 'No analysis.json update warranted. Directional, n.s. scorer output on manual illustrative tones; no new artifact-grade tone data.'
+      verification_date: '2026-09-09'
+      author: 'Kit (with Ray)'
   anthropic:
     financial_tie: settlement_revenue
     estimated_value: share of $1.5B class-action settlement (Bartz v. Anthropic)
