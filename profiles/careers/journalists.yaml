@@ -10678,6 +10678,110 @@ journalists:
       novelty: 'First Type C Sep-2026 status verification of the Vox Media-OpenAI licensing deal: bounded Sep 2026 searches (Vox Media OpenAI deal status 2026; Vox Media PMC acquisition OpenAI licensing deal) surfaced no termination, cancellation, or renegotiation news - the May 29 2024 multiyear deal is treated as still ACTIVE; the post-PMC-acquisition PMX-transfer question remains UNRESOLVED (in-corpus note stands, disclosed not claimed). First writer-level behavioral pin on the Vox deal stack (Song). Zero test_type_c_599 files on disk (glob verified this run). No Type C commit with 599 in the title (git log --grep verified this run). Zero pre-commit hits for mechanism_593 outside this run''s files. Victoria Song''s careers entry had no competitor_coverage block before this run; her prior repo mentions are mechanism-adjacent (Jul 7 2026 LED tamper-proof origin node, Jul 2026 ''pervert glasses'' editorial, EHE citation cascade in her smart-glasses narrative) - never a financial-incentive-map unit. Distinct from #594 (News Corp five-leg: different owner, no writer-level pin) and #507 (deal-incentive pattern domain-bounded at The Verge: this run adds the wearables-beat writer-level boundary). Rotation: 598 B -> 599 C.'
       research_method: '5 browser.search query sets this run: 3 journalist-corpus sets (Victoria Song The Verge Meta Ray-Ban Display review wearables; Victoria Song The Verge Google Pixel Watch 4 review; theverge.com Victoria Song Pixel Watch 4 review ''clear vision'' 2025) + 2 financial-verification sets (Vox Media OpenAI content licensing deal status 2026; Vox Media PMC acquisition completed OpenAI licensing deal) - the latter two surfaced no 2026 termination/cancellation/renegotiation news (bounded-absence discipline per iteration-492 rule). All five source URLs verbatim from Full-URL listings; Verge originals not opened (relay-bounded). No zero-coverage claims beyond the bounded absence. No canonical URLs constructed.'
       verdict: 'FINANCIAL MAP VERIFIED, BEHAVIORAL PREDICTION BOUNDED: the Vox Media AI-revenue architecture holds three legs at the Sep 2026 status date - OpenAI licensing (May 29 2024, multiyear, still active per bounded-absence verification), Google programmatic ad-revenue dependence (in-corpus), Meta $0. The deal-gradient prediction (softer Google, neutral-to-adversarial Meta) fails at the writer level on The Verge wearables beat: Victoria Song applies a consistent product-critical review register across Meta and Google and scored Google''s first-gen watch (-0.35) harsher than Meta''s first-gen Display glasses (-0.10) - opposite the money prediction, illustrative delta +0.13 n.s. Her privacy-conflicted framing of camera glasses tracks the camera, not the corporate payer. The incentive map is real money; its behavioral reach is bounded by writer-level constancy. Illustrative only, significant False. Joins the falsification family (#538, #563, #568, #578, #583, #588) with the first dedicated Vox-deal writer-level pin.'
+    type_b_618_victoria_song_jul2026_escalation_audit:
+      mechanism_id: 605
+      iteration: 618
+      date: '2026-09-08 21:00 PDT'
+      type: B
+      scheduled_job_id: 'mediascope-daily-iteration'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      design: 'Type B journalist cross-entity tracking, escalation audit. Question: does Victoria Song''s Jul 2026 Meta trilogy break the data-integrity correction''s fair-journalist verdict (commit d6d89d7, carried in mechanism_75 context), or refine it? Within-writer comparison across two registers: (a) the privacy-editorial register, Jul 2026 Meta trilogy, three items in 20 days; (b) the product-news register, Apple Siri-AI Watch item Jul 13 2026 (same two-week window), Samsung Galaxy XR hands-on Oct 2025, Google Android XR JARVIS comparison Dec 2024, plus Meta-positive product arms Sep 2025 and Feb 2024. Tests whether the escalation is target-selected entity bias or register/event-driven. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_trilogy_jul2026:
+      - title: 'Meta Ray-Ban glasses will disable the camera if the privacy light is tampered with'
+        date: '2026-07-07'
+        author: 'Victoria Song'
+        register: 'adversarial_origin_story'
+        manual_illustrative_tone: -0.55
+        note: 'Song broke the story at The Verge; cascade to Techmeme (219 pts), Gizmodo (''as noticed by the Verge''s Victoria Song''), PetaPixel, RoadToVR, 9to5Google, TheStreet, 8+ outlets (in-corpus notes line 10576). Tone carried from #492 meta_comparator_set. The data-integrity correction scored this item -0.2 (proactive-response reporting); the -0.55 vs -0.2 dual scoring is recorded, not resolved - the item reports a real Meta action (tamper-proof update), and the adversarial reading comes from the Jul 8 FT ''super sensing'' juxtaposition, not from the item''s own text.'
+        evidence_tier: 'carried_492_notes_10576'
+      - title: 'Leaning into ''pervert glasses'' sure is a choice.'
+        date: '2026-07-20'
+        author: 'Victoria Song'
+        register: 'adversarial_editorial'
+        manual_illustrative_tone: -0.6
+        note: 'Muck Rack listing (https://muckrack.com/victoria-song/articles): posted Jul 20 2026 4:15 PM UTC; dek verbatim ''Leonardo Del Vecchio, president of Ray-Ban and chief strategy officer at EssilorLuxottica, posted these to his Instagram story.'' Buzzsumo journalist profile (https://buzzsumo.com/journalist/victoria-song-16465716/) lists the title under recent articles dated Jul 20 2026. Song frames a glasses-partner executive''s own social post through the surveillance-backlash lens - the adversarial register is applied to legitimate partner marketing, the sharpest item in the trilogy. Tone carried from #492.'
+        evidence_tier: 'title_dek_listing_muckrack_buzzsumo_this_run'
+      - title: 'With smart glasses, Meta holds all the cards but fails to play them well'
+        date: '2026-07-27'
+        author: 'Victoria Song'
+        register: 'adversarial_backlash_narrative'
+        manual_illustrative_tone: -0.5
+        note: 'Buzzsumo lists Jul 27 2026 (corpus carries ''late Jul''/Jul 26 - variance recorded, not resolved). Mirror URL in-corpus (article_examples): https://www.aivanet.com/2026/07/with-smart-glasses-meta-holds-all-the-cards-but-fails-to-play-them-well/. Opens with the Everyone Hates Elon guerrilla campaign (''the biggest advancement in pervert technology since the trenchcoat'', ''mass surveillance predator glasses''); activist street art becomes the opening frame of the highest-authority wearables voice. Tone carried from #492.'
+        evidence_tier: 'mirror_in_corpus_492_buzzsumo_date_this_run'
+      competitor_arms:
+      - entity: 'apple'
+        title: 'Siri AI makes the Apple Watch finally feel like a wrist computer'
+        date: '2026-07-13'
+        author: 'Victoria Song'
+        register: 'product_news_aspirational'
+        manual_illustrative_tone: 0.35
+        note: 'Buzzsumo journalist profile recent-articles listing, Jul 13 2026, theverge.com. Same two-week window as the Meta trilogy (Jul 13 vs Jul 20/27) - the cleanest same-writer same-window cross-entity pair in the Song corpus. Aspirational product-news register on an Apple wearable while the Meta wearable gets activist-vocabulary editorials in the same fortnight. Title-listing bounded; body not read this run.'
+        evidence_tier: 'title_listing_buzzsumo_this_run'
+      - entity: 'samsung'
+        title: 'Samsung Galaxy XR hands-on: It is like a cheaper Apple Vision Pro and launches today'
+        date: '2025-10-21'
+        author: 'Victoria Song'
+        register: 'hands_on_product_forward'
+        manual_illustrative_tone: 0.15
+        note: 'Verified this run via mirrors (https://worldofsoftware.org/samsung-galaxy-xr-hands-on-its-like-a-cheaper-apple-vision-pro-and-launches-today/, https://newsflash.one/2025/10/21/samsung-galaxy-xr-hands-on-its-like-a-cheaper-apple-vision-pro-and-launches-today/, https://digitpatrox.com/samsung-galaxy-xr-hands-on-its-like-a-cheaper-apple-vision-pro-and-launches-today/) and the Verge YouTube hands-on (https://www.youtube.com/watch?v=qq7YVwl11vY). Body is product-forward: comfort, weight distribution, passthrough quality, $1,799 price framing (''cheaper Vision Pro''). Zero privacy vocabulary in the body despite front cameras and eye/hand/face tracking. Timing-skew confounder vs the Jul 2026 Meta arm (Oct 2025 vs Jul 2026).'
+        evidence_tier: 'mirror_excerpts_youtube_this_run'
+      - entity: 'google'
+        title: 'Android XR hands-on: J.A.R.V.I.S. comparison'
+        date: '2024-12-12'
+        author: 'Victoria Song'
+        register: 'hands_on_aspirational'
+        manual_illustrative_tone: 0.4
+        note: 'Carried from #115 lineage: Wikipedia Android XR cites Song comparing the Android XR glasses experience to J.A.R.V.I.S., the Marvel AI (https://en.wikipedia.org/wiki/Android_XR). Aspirational pop-culture framing for camera-equipped Google glasses - no privacy vocabulary. Timing skew vs Jul 2026 (19 months).'
+        evidence_tier: 'carried_115_wikipedia_citation'
+      - entity: 'meta_positive'
+        title: 'Meta Ray-Ban Display: best glasses I have ever tried'
+        date: '2025-09'
+        author: 'Victoria Song'
+        register: 'product_review_positive'
+        manual_illustrative_tone: 0.3
+        note: 'Carried from the data-integrity correction (commit d6d89d7) and thehotjem relay (in-corpus mechanism_593 notes): ''among the most advanced smart wearables available today'', Neural Band ''shockingly well''. Feb 2024 arm also carried: Song argued Meta''s approach may be BETTER than Apple''s. These positive Meta product-register arms coexist with the Jul 2026 adversarial privacy-register trilogy - the coexistence is the core evidence for the register-conditioned model.'
+        evidence_tier: 'carried_correction_593_relays'
+      asymmetry_scorer_result_illustrative:
+        correlation_not_causation: true
+        target_entity: 'meta'
+        peer_entities: ['apple', 'samsung', 'google']
+        meta_trilogy_avg: -0.55
+        apple_jul13_arm: 0.35
+        delta_meta_minus_apple_jul2026_window: -0.9
+        delta_calc: '(-0.55 + -0.60 + -0.50)/3 = -0.55 meta avg; -0.55 - 0.35 = -0.90'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        note: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule. The -0.90 is the sharpest within-writer same-window Meta-vs-competitor gradient in the Song corpus, but it is a REGISTER gradient (privacy-editorial vs product-news), not a uniform entity gradient - see confounders and verdict.'
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Genre skew: the Meta arm is two opinion pieces plus one privacy-news origin story; the Apple arm is product-news; the Samsung/Google arms are hands-on reviews. Genre alone predicts the register split - editorials are adversarial by construction, reviews are product-forward by construction. The comparison is across registers, which is the finding, not a controlled test.'
+      - strength: 'STRONG'
+        text: 'News-peg skew: each Meta item has a genuine adversarial news peg - a real Meta tamper-proof enforcement action (Jul 7), a real EssilorLuxottica executive Instagram post (Jul 20), a real EHE guerrilla campaign across three cities (Jul 27). The Apple item''s peg is a software update. Adversarial register tracks adversarial events, not just the entity.'
+      - strength: 'MODERATE'
+        text: 'Timing skew: Apple arm Jul 13 vs Meta trilogy Jul 20/27 is one week - small. Samsung Oct 2025 and Google Dec 2024 arms carry 9-19 month skew - directional only, and the same-window Apple pair is the load-bearing comparison.'
+      - strength: 'MODERATE'
+        text: 'Product-lane skew: watches (Apple) vs glasses (Meta/Samsung/Google). The #599 pin shows Song''s privacy vocabulary tracks the camera on the face, not the company - the watch arm is a weaker comparator for privacy-register claims.'
+      - strength: 'WEAK'
+        text: 'Title-listing bounded Apple arm (buzzsumo listing, body not read); theverge.com direct fetch policy-blocked per standing rule. n=3 vs n=1 in the same-window pair - descriptive only.'
+      verdict: 'REGISTER-CONDITIONED ASYMMETRY. The Jul 2026 trilogy is real within-writer adversarial escalation on Meta in the privacy-editorial register (illustrative delta -0.90 vs the same-window Apple product-news arm), and it postdates the data-integrity correction''s fair-journalist verdict. But the escalation does NOT overturn that verdict - it bounds it: (1) the adversarial register is confined to the privacy-editorial lane while the product-review lane stays balanced-to-positive on Meta itself (Sep 2025 Display praise, Feb 2024 better-than-Apple, #599 Pixel Watch 4 scored harsher than Meta Display); (2) each trilogy item has a genuine adversarial news peg, so event-driven register explains the escalation without entity bias; (3) no equivalent adversarial privacy-editorial exists for Samsung/Google glasses, but no equivalent adversarial NEWS PEG (tamper enforcement, exec post, guerrilla campaign) existed for them either - the missing counterfactual is untestable. MODEL UPDATE: mechanism #75''s bifurcation thesis is refined into a register-conditioned model - the same journalist is fair in product register and adversarial in privacy register, and the privacy register activates on real events. EXTENDS #75; REFINES the Song data-integrity correction; BOUNDS the falsification family (#538, #548, #553, #563, #568, #578, #583, #588, #608, #613) - writer-level constancy holds in the product register, the privacy-editorial register is the bounded exception. NOT a falsification-family member; NOT a pure asymmetry pin. Illustrative only, is_significant False, correlation not causation.'
+      financial_context: 'Carried from #599 (verified Sep 8 2026): Vox Media-OpenAI licensing (May 29 2024, multiyear, still active), Google programmatic ad-revenue dependence, Meta $0. The Jul 2026 window shows adversarial Meta + aspirational Apple; Apple pays nothing in the Vox AI-revenue stack, so a pure money gradient predicts neutral Apple, not aspirational Apple - the observed Apple softness is writer/genre-driven, not deal-driven. The incentive map is verified money; its writer-level behavioral reach stays bounded.'
+      cross_refs:
+      - '#75 (Victoria Song privacy vocabulary bifurcation - this run refines it into a register-conditioned model)'
+      - '#115 (Verge Google litigation-vs-wearables paradox - Song JARVIS arm carried)'
+      - '#492 (meta_comparator_set origin - trilogy tones carried at identical values)'
+      - '#599 (Song writer-level behavioral pin - product-register constancy, falsification family)'
+      - '#613 (Brian Heater - reporter-level constancy family, same verdict class in product register)'
+      - '#617 (Verge x Samsung launch-cycle gradient - Song trilogy reused as Meta comparator)'
+      - 'buzzsumo journalist profile https://buzzsumo.com/journalist/victoria-song-16465716/ (this run: Jul 13/20/27 2026 title listings)'
+      - 'muckrack https://muckrack.com/victoria-song/articles (this run: Jul 20 4:15 PM UTC posting, Del Vecchio dek verbatim)'
+      block_key: type_b_618_victoria_song_jul2026_escalation_audit
+      author: 'Kit (with Ray)'
+      artifact_readiness: 'No analysis.json update warranted. Register-conditioned refinement of an in-corpus journalist model (Song); illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First dedicated Type B escalation audit on Victoria Song''s Jul 2026 Meta trilogy. Zero ''escalation_audit'' keys in profiles/*.yaml pre-commit (grep verified this run). Zero test_type_b_618 files on disk (glob verified this run). No Type B commit with 618 in the title (git log --grep verified this run). The trilogy tones are carried from #492/#617 at identical values (no rescoring); the Apple Jul 13 arm, Samsung Oct 2025 mirror verification, and the register-conditioned model are new this run. Distinct from mechanism #75 (bifurcation at piece level, no Jul 20/27 escalation items) and from the #599 Type C pin (financial-stack verification, no escalation audit). Mechanism id 605 is the next free profiles mechanism id (max pre-commit 604, the-verge.yaml #617). Rotation: 617 A -> 618 B.'
+      research_method: '5 browser.search query sets this run: (1) Victoria Song Samsung Galaxy Glasses theverge + Snap/Apple Vision Pro alternates; (2) Victoria Song Meta Ray-Ban Jul 2026 trilogy verification; (3) quoted Victoria Song Samsung Galaxy XR hands-on + Meta Ray-Ban Display/Snap alternates; (4) Victoria Song Meta Ray-Ban Display review Sep 2026 + Google Android XR alternates; (5) quoted Leaning into pervert glasses title. theverge.com direct fetch policy-blocked per standing rule - all items excerpt/listing-bounded or carried from #492/#599/#115 lineage at identical tones, stated explicitly. URLs verbatim from Full-URL listings; none constructed. No zero-coverage claims per iteration-492 rule (bounded-listing absence stated as bounded). No em dashes.'
 - career:
   - beat: daily news
     end: 2015
