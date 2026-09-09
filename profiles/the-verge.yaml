@@ -3063,6 +3063,205 @@ competitor_relationships:
     direction: "none"
     description: "No financial relationship. Nilay Patel has been vocally critical of Elon Musk's management of X."
     coverage_prediction: "adversarial"
+  samsung:
+    financial_tie: "advertising"
+    estimated_value: "$9.7B global ad spend (4th-largest advertiser)"
+    direction: "receiving"
+    description: >-
+      Samsung is the 4th-largest global advertiser at roughly $9.7B annual
+      global ad spend (in-corpus: this profile's samsung section at
+      profiles/the-verge.yaml line 3898, global_ad_spend_billions: 9.7).
+      It is a significant buyer across Vox Media/PMC outlets including The
+      Verge. No direct content licensing deal between Samsung and The Verge
+      is on record; the financial channel is advertising. Contrast:
+      PMC sold ALL Meta shares in Q2 2025 (mechanism #112), and the meta
+      entity in this block codes financial_tie none with $0.
+    coverage_prediction: "softer"
+    mechanism_604_verge_samsung_launch_cycle_register:
+      mechanism_id: 604
+      iteration: 617
+      iteration_type: "A"
+      iteration_time: "2026-09-08 20:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      title: "Type A #617: The Verge x Samsung launch-cycle register gradient - commitment/leak/hands-on product-forward vs Meta adversarial escalation (Victoria Song trilogy, Jul 2026)"
+      finding: >-
+        FIRST dedicated Type A mechanism under the-verge.yaml
+        competitor_relationships.samsung (novelty: zero prior samsung entity
+        key in this block; the two new Samsung URLs are new-to-corpus per
+        repo-wide grep this run). Three Verge Samsung-side items in the
+        Mar-Jul 2026 launch cycle run product-forward registers: (1) Mar 2026
+        launch-commitment piece, slug-derived title, tech/890533; (2) Apr 27
+        2026 leak piece, gadgets/919189, price bands $379-$499 vs Meta
+        Ray-Ban parity; (3) Jul 22 2026 Dominic Preston hands-on (in-corpus
+        via #492) whose dek states verbatim that Google's and Samsung's AI
+        glasses face the same privacy problems as Meta's. Privacy vocabulary
+        on the Samsung side is confined to that dek level while the body
+        stays product-forward (nine-hour battery, fall 2026 launch, Gentle
+        Monster / Warby Parker fashion framing). Meta-side (Victoria Song
+        trilogy, carried from #492 meta_comparator_set at identical tones):
+        Jul 7 LED-tamper origin story (-0.55), Jul 20 "pervert glasses"
+        editorial (-0.60), Jul 26 "holds all the cards" (-0.50). Illustrative
+        peer avg +0.15 vs target avg -0.55; manual illustrative delta
+        (target minus peer) -0.70, p_value/cohens_d NOT_CALCULATED,
+        is_significant False (Aug 28 standing rule). Prediction direction
+        is consistent with the advertising-softer hypothesis (Samsung $9.7B
+        ad spend softer; Meta $0 adversarial). BUT the register gradient is
+        launch-cycle confounded: pre-launch coverage is inherently
+        excitement-framed (commitment, leak, hands-on genres), so genre is
+        the STRONG rival explanation. Correlation, not causation. This is a
+        prediction-consistent case; it does NOT join the falsification
+        family (#552, #557, #562, #567, #572, #592, #607), and it bounds the
+        advertising-channel attribution because launch-cycle genre alone
+        explains the gradient without any financial mechanism.
+      samsung_articles:
+        - title: "Samsung is still planning to launch its first smart glasses in 2026"
+          title_note: "Slug-derived title; theverge.com direct fetch policy-blocked per standing rule"
+          date: "2026-03"
+          url: "https://www.theverge.com/tech/890533/samsung-is-still-planning-to-launch-its-first-smart-glasses-in-2026"
+          register: "launch_commitment"
+          manual_illustrative_tone: 0.15
+          key_framing: >-
+            Commitment-news register around Samsung's first-party launch
+            confirmation (CNBC/MWC 2026 Jay Kim interview lineage). Slug
+            phrasing ("still planning") carries mild delay-skepticism, which
+            is why the tone sits at 0.15 rather than higher. No adversarial
+            privacy vocabulary in any surfaced excerpt.
+          verification: "URL verbatim from glassalmanac Mar 2026 source list this run; no primary fetch (policy-blocked)"
+          evidence_tier: "url_verbatim_excerpt_bounded"
+        - title: "Samsung's first smart glasses have leaked"
+          date: "2026-04-27"
+          url: "https://www.theverge.com/gadgets/919189/samsung-galaxy-glasses-leaked-images"
+          register: "leak_exclusive"
+          manual_illustrative_tone: 0.10
+          key_framing: >-
+            Leak-exclusive register: leaked images (codename "Jinju"),
+            display-free camera-forward pair at $379-$499 vs a 2027
+            micro-LED tier at $600-$900, Snapdragon AR1, 12MP Sony IMX681
+            camera. Pricing framed as aggressive / price parity with Meta
+            Ray-Bans, which is competitive-news register, not adversarial.
+            No privacy-adversarial vocabulary in surfaced excerpts.
+          verification: "biztoc attribution 'appeared on theverge.com, 2026-04-27 16:25:51' + daily-curator 'The Verge - All Posts' entry + glassalmanac source list (opened first-hand this run); no primary fetch (policy-blocked)"
+          evidence_tier: "headline_attributed_excerpt_bounded"
+        - title: "Here is what Samsung's smart glasses actually look like"
+          author: "Dominic Preston"
+          date: "2026-07-22"
+          register: "hands_on_product_forward"
+          manual_illustrative_tone: 0.20
+          dek_verbatim: "With a camera on every pair, Google's and Samsung's AI glasses face the same privacy problems as Meta's."
+          key_framing: >-
+            Product-forward hands-on per mirror excerpts: first in-person
+            look at four frames (Gentle Monster, Warby Parker), "impressive
+            9-hour battery life", fall 2026 launch, Samsung executive quotes.
+            Privacy discussion is confined to the dek level in the verified
+            excerpts; body characterization stays on design and battery.
+            #492's correction stands: the binary zero-claim is dead, the
+            gradient survives.
+          verification: "In-corpus via mechanism #492 this profile; dek quoted verbatim via three independent mirrors (TechNewsTube, Amkio, TheTechStreetNow)"
+          evidence_tier: "in_corpus_492_mirror_verified"
+      meta_articles_same_domain:
+        - title: "LED-tamper origin story (Song)"
+          date: "2026-07-07"
+          author: "Victoria Song"
+          register: "adversarial_origin_story"
+          manual_illustrative_tone: -0.55
+          verification: "Carried from #492 meta_comparator_set; no verbatim URL in corpus; scored at headline/excerpt level per #492"
+          evidence_tier: "carried_492_no_verbatim_url"
+        - title: "Leaning into 'pervert glasses' sure is a choice"
+          date: "2026-07-20"
+          author: "Victoria Song"
+          register: "adversarial_editorial"
+          manual_illustrative_tone: -0.60
+          verification: "Carried from #492 meta_comparator_set; scored at headline/excerpt level per #492"
+          evidence_tier: "carried_492_no_verbatim_url"
+        - title: "With smart glasses, Meta holds all the cards but fails to play them well"
+          date: "2026-07-26"
+          author: "Victoria Song"
+          url: "https://www.aivanet.com/2026/07/with-smart-glasses-meta-holds-all-the-cards-but-fails-to-play-them-well/"
+          register: "adversarial_backlash_narrative"
+          manual_illustrative_tone: -0.50
+          verification: "Carried from #492 meta_comparator_set; mirror URL verbatim in-corpus"
+          evidence_tier: "mirror_in_corpus_492"
+      asymmetry_scorer_manual_illustrative:
+        target_entity: "meta"
+        target_tones: [-0.55, -0.60, -0.50]
+        peer_entities: ["samsung"]
+        peer_tones: [0.15, 0.10, 0.20]
+        publication_slug: "the-verge"
+        window: "2026-03 to 2026-07-26"
+        target_avg_tone: -0.55
+        peer_avg_tone: 0.15
+        delta_manual_illustrative: -0.70
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        confidence_interval_95: "NOT_CALCULATED"
+        is_significant: false
+        scorer: "mediascope.score.asymmetry.calculate_asymmetry (MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule)"
+        synthetic_note: >-
+          Tones hand-assigned from headline, dek, and excerpt-level framing
+          reads this run; n=3 per side; descriptive only. No empirical
+          significance claimed or computed. Documents the analyst's reading
+          for reproducibility and challenge.
+      financial_triangulation:
+        samsung_ad_channel: >-
+          Samsung's ~$9.7B annual global ad spend (4th-largest advertiser,
+          in-corpus this profile) is the financial channel predicting softer
+          coverage. Direction of the observed register (product-forward,
+          dek-confined privacy framing) is consistent with that prediction.
+        meta_zero_channel: >-
+          PMC sold ALL Meta shares in Q2 2025 (mechanism #112); Meta has $0
+          known AI licensing with The Verge. Direction of observed register
+          (adversarial escalation) is consistent with the $0 prediction.
+        correlation_not_causation: >-
+          Both directions are prediction-consistent, but the launch-cycle
+          genre confound (STRONG) explains the gradient without any
+          financial mechanism: commitment/leak/hands-on genres are
+          inherently excitement-framed. No financial attribution is
+          established by this mechanism.
+      confounders_ranked:
+        strong:
+          - "Launch-cycle genre skew: all three Samsung items are pre-launch genres (commitment, leak, hands-on) which are inherently excitement-framed; all three Meta items are adversarial-editorial genres in a backlash window. Genre alone explains the register gradient."
+          - "Timing skew: Samsung window Mar-Jul 2026 (pre-launch news cycle) vs Meta Jul 2026 backlash window. The Samsung shipping beat is still pending; post-launch coverage could invert the gradient."
+        moderate:
+          - "Reporter skew: Samsung-side items are Preston + unattributed slug pieces; Meta-side items are all Victoria Song (wearables beat), whose register is structurally more adversarial across entities."
+          - "Evidence-tier asymmetry: two Samsung items are excerpt-bounded (policy-blocked primary); all Meta tones are carried from #492. The finding rests on secondary characterizations, not first-hand reads."
+        weak:
+          - "The Mar 2026 piece's 'still planning' phrasing hints at delay-framing, which would pull the Samsung avg down; tone 0.15 already reflects this."
+          - "n=3 per side: descriptive only, no statistical significance (by design, NOT_CALCULATED)."
+      statistical_discipline: >-
+        MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=3 vs n=3.
+        p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence
+        interval NOT_CALCULATED; is_significant False. The asymmetry scorer
+        was not run for empirical inference on this mechanism. Large
+        descriptive delta only (-0.70); not evidence of bias or of financial
+        influence; documents the analyst's reading for reproducibility and
+        challenge. No zero-coverage claims (iteration-492 rule): the Samsung
+        corpus here is bounded to surfaced items, and #492 already falsified
+        the absolute-zero variant.
+      novelty_verification: >-
+        Repo-wide grep this run: zero 'samsung' entity key under
+        competitor_relationships in profiles/the-verge.yaml before insertion;
+        zero hits for URLs 890533 and 919189 in profiles/the-verge.yaml
+        (the profile's other samsung section at line 3898 holds ad-spend and
+        source URLs, not a competitor_relationships entity); no mechanism_604
+        key anywhere in profiles/ before insertion (max numeric
+        mechanism_id was 603); no Type A #617 in git log; zero
+        test_type_a_617 files on disk before this run. Distinct from #492
+        (Google/Samsung hands-on correction) and #612 (WIRED x Samsung
+        selection-gap): different publication, different window, two new
+        pre-launch items.
+      research_method: >-
+        3 browser.search query sets this run (theverge.com Samsung Galaxy
+        Glasses; site-restricted theverge Samsung Galaxy Glasses leaks;
+        theverge.com Meta Ray-Ban smart glasses privacy); theverge.com
+        direct fetch policy-blocked per standing rule, so Samsung-side
+        characterization is excerpt- and attribution-bounded (no first-hand
+        reads); one browser.open of the glassalmanac leak article
+        (first-hand, cited the Verge URL verbatim in its sources); Meta-side
+        items carried from #492 at identical tones; weekday grounding
+        skipped (month-level dates only, no day-of-week claims); no em
+        dashes; all URLs verbatim as surfaced, none constructed.
 
 
 # ===================================================================
