@@ -1,3 +1,30 @@
+#620 Type D: Scorer Consistency for #617/#618 (Deltas -0.70/-0.90 Reproduce Exactly), #619 Qualitative Boundary (156 PREDICTIVE), #616 Monitoring Boundary (Podcast 46th) + 616-620 Rotation Guard Closing C->D - Sep 8 2026 23:00 PDT
+
+**Date:** 2026-09-08 23:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 619 C -> 620 D)
+**Type:** D - Test & Verify (scorer consistency for the 616-619 window, no new mechanism)
+
+**Finding:**
+1. #617 (Type A, Verge x Samsung launch-cycle register gradient, mechanism 604, the-verge.yaml): illustrative delta -0.70 reproduces EXACTLY from pinned tone arrays (peer [0.15, 0.10, 0.20] avg 0.15; target [-0.55, -0.60, -0.50] avg -0.55; -0.55 minus 0.15 = -0.70). p_value/cohens_d NOT_CALCULATED, is_significant False; scorer block labeled "MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule"; no welch/engine claims. Finding carries "Correlation, not causation" and the launch-cycle-genre STRONG rival explanation; NOT a falsification-family member.
+2. #618 (Type B, Victoria Song Jul 2026 escalation audit, mechanism 605, journalists.yaml Victoria Song competitor_coverage): illustrative delta meta-minus-apple -0.90 reproduces EXACTLY (trilogy avg (-0.55 + -0.60 + -0.50)/3 = -0.55 minus Jul 13 Apple arm 0.35; delta_calc string matches verbatim). p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False; no engine_t keys; note carries MANUAL ILLUSTRATIVE ONLY per Aug 28 standing rule. Register-conditioned verdict intact: EXTENDS #75, REFINES the Song data-integrity correction, BOUNDS the falsification family (NOT a member).
+3. #619 (Type C, Apple Siri AI negotiation silence status check, mechanism 606, competitor-entities.yaml entities.apple): qualitative boundary mirroring #614 in #615. statistical_discipline carries tone_scores NOT_SCORED + p_value/cohens_d/ci_95 NOT_CALCULATED + is_significant False; mechanism 156 stays PREDICTIVE (27 days post-WSJ, zero signed-deal announcements); no asymmetry_scorer key in the block; bounded-absence language per iteration-492; News Corp originator self-disclosure carried; 9 verbatim source URLs; EXTENDS 156 cross-reference intact.
+4. #616 (Type E, podcast sentiment 46th verification): monitoring boundary mirroring #611 in #615. No iteration-616 mechanism block in profiles/ (repo-wide grep verified); podcast-sentiment.md carries the 46th verification (GF 499 holds, uk-podcasts.co.uk latest 2026-09-07; Attention Sphere 46th no-match as podcast); no scorer claims in the #616 test file.
+5. Window-recency staleness (expected, NOT regressions): 7 tests in the #616/#617 files now fail against newer history, all HEAD-anchored recency pins superseded by newer guards - #616 TestRotationCycleGuard616 window_612_616_closes_d_to_e + adjacency (HEAD now shows C619/B618/A617/E616/D615), #616 test_previous_main_type_was_d, #617 window_613_617_closes_e_to_a + adjacency + anchor_is_main_d5edeff, #617 test_iteration_log_has_617_entry_newest_first (#618/#619 entries are newer). Each was green at its own commit time (followups 5fdf0b3 64/64 and b71f4af 64/64); rewriting pinned windows would falsify their historical assertions, so they are left as documented staleness. Full-suite pytest attempt killed: suite-wide run progresses ~1% per 9 min (module-scope journalists.yaml re-parse dominates per-file cost); bounded window verification remains the standing Type D practice per #605/#610/#615 precedent.
+
+**New Type D files:** `tests/test_type_d_620_scorer_consistency_617_618_619_monitoring_boundary_rotation_doc_sync_sep08_11pm.py` - 11 classes, 69 def-tests (64 passing, rotation-guard class 5 tests deselected pre-commit per the #565 followup convention; anchor patched in followup). 20 initial failures fixed this run: (a) wrong _siri_606 locator - the 606 block sits directly under entities.apple, not under siri_ai_publisher_deals (KeyError on first parse); (b) correlation_not_causation key absent in the 604 scorer block (phrase lives in finding text; pinned target_tones/peer_tones arrays + scorer label instead); (c) methodology key absent in the 605 scorer (the note field carries the standing-rule string); (d) README/ARCHITECTURE rows not yet added (doc-sync tests); stats ratcheted 32605->32674 / 947->948.
+
+**Artifact readiness:** No analysis.json update warranted. Monitoring + illustrative-only window; no new empirical finding at the publication level.
+
+**Rotation Transparency:** Previous main commit #619 Type C at 22:00 PDT Sep 8 2026 (commit 5359f27 verified present via main-commit git log filter before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard620 covers window 616-620 (D,C,B,A,E newest-first), closing the C->D edge; anchor patched in followup per #565 convention.
+
+**Novelty Verification:** Zero test_type_d_620 files on disk before this run (glob verified); no Type D commit with 620 in the title (git log --grep verified); no iteration-620 mechanism block added this run (test-only; max numeric mechanism id stays 606).
+
+**Verification runs (.venv pytest, -p no:cacheprovider):**
+- New #620 file (rotation guard deselected pre-commit): 64 passed, 5 deselected, 0 failed
+- Window files #616/#617/#618/#619: 237 passed, 7 failed (all 7 are superseded HEAD-anchored recency pins documented above; #618/#619 files fully green)
+- count_stats.py --check: green (32674 tests / 948 files)
+
+---
+
 #619 Type C: Apple Siri AI Publisher Negotiation Silence Status Check (Mechanism 606) - 27 Days Post-WSJ Aug 12 Report, ZERO Signed-Deal Announcements, Mechanism 156 Stays PREDICTIVE - EXTENDS #156, News Corp Originator Self-Disclosure Carried - Sep 8 2026 22:00 PDT
 
 **Date:** 2026-09-08 22:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 618 B -> 619 C)
