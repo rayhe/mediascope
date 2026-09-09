@@ -17498,6 +17498,103 @@ journalists:
       artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer genre-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
       novelty: 'First dedicated Type B mechanism on Samuel Gibbs (zero journalist entries pre-commit; entry created this run). Zero test_type_b_628 files on disk (glob verified this run). No Type B commit with 628 in the title (git log --grep verified this run). The Apple arm tone is carried from #622 at the identical +0.35 value (no rescoring); the Meta arm tone +0.10, the -0.25 genre-register delta and the NOT-falsification-family verdict are new this run. Mechanism id 611 is the next free profiles mechanism id (max pre-commit 610). Rotation: 627 A -> 628 B.'
       research_method: '3 browser.search query sets this run: (1) Samuel Gibbs Guardian Meta Ray-Ban glasses (surfaced the Sep 17 2025 announcement with Gibbs byline attribution); (2) Barbara Speed Guardian glasses surveillance privacy Apple (rejected: search noise, no verbatim Speed comparator pieces); (3) Jennifer Pattison Tuohy Portal Meta review plus Google Nest review (rejected: Tuohy is a smart-home reviewer with no Meta-side bylines surfacing; no zero-coverage claims per iteration-492 rule). Meta arm full text read first-hand via the richardhartley.com full-text mirror (verbatim URL from search results); theguardian.com direct fetch policy-blocked per standing rule. Byline attribution via two independent third-party listings (aspicts.substack.com, iask.ca). Apple arm carried from #622 (same mirror domain, symmetric evidence tier). URLs verbatim from Full-URL listings; none constructed. No zero-coverage claims per iteration-492 rule (both arms are positive Gibbs bylines). No em dashes.'
+- name: Anthony Ha
+  notes: 'TechCrunch weekend editor (role current as of Sep 2026; previously a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm; lives in New York City; contact anthony.ha@techcrunch.com, per his TechCrunch bio). AI-category beat with a trust-and-skepticism register. KEY for MediaScope: Ha authored BOTH same-day Aug 16 2026 AI-category pieces in the trust lane, a skeptical podcast-preview on Zuckerberg''s Meta AI manifesto (-0.45) and a straight executive-statement report on Anthropic CEO Dario Amodei''s trust-crisis framing (+0.15), enabling a clean within-writer cross-entity comparison where Anthropic''s CEO is the virtuous foil inside Ha''s own Meta piece.'
+  career:
+  - publication: techcrunch
+    role: Weekend Editor
+    beat: AI, media and entertainment
+    start: '2026-09'
+    end: present
+    source_url: https://techcrunch.com/author/anthony-ha/
+    date_note: 'role current as of Sep 2026; exact start not documented this run'
+  source_urls:
+  - https://techcrunch.com/author/anthony-ha/
+  - https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/
+  - https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/
+  - https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-make-claims-on-anthropic-settlement/
+  multi_publication: false
+  competitor_coverage:
+    type_b_633_anthony_ha_techcrunch_meta_vs_anthropic_trust_register:
+      mechanism_id: 614
+      iteration: 633
+      date: '2026-09-09 13:00 PDT'
+      type: B
+      scheduled_job_id: 'mediascope-daily-iteration'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      design: 'Type B journalist cross-entity tracking, within-writer trust-register comparison. Question: does Anthony Ha, TechCrunch''s weekend editor, apply a different editorial register to Meta AI than to Anthropic on the same trust question? Two Ha bylines in the same AI category on the same day: (a) the Meta arm, Aug 16 2026, a skeptical podcast-preview of Zuckerberg''s 6,500-word AI manifesto; (b) the Anthropic arm, Aug 16 2026, a straight news report of Anthropic CEO Dario Amodei''s X posts framing the AI backlash as a crisis of trust. Same day, same author, same category, same theme. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No zero-coverage claims per the iteration-492 rule: both comparator arms are positive Ha bylines.'
+      meta_arm:
+        entity: 'meta'
+        title: 'Why people aren''t buying Mark Zuckerberg''s AI future'
+        publication: 'techcrunch'
+        author_byline: 'Anthony Ha'
+        role: 'Weekend Editor'
+        date: '2026-08-16'
+        genre: 'podcast preview (opinion-adjacent, Equity episode excerpt)'
+        tone_score: -0.45
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run)'
+        url: 'https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/'
+        byline_attribution_urls:
+        - 'http://techcrunch.com/author/anthony-ha/'
+        key_quotes:
+        - 'Comparing Zuckerberg to Anthropic CEO Dario Amodei (who spent the weekend pushing back against the idea that he is an AI doomer), Rebecca said the Meta CEO seems to be positioning himself "almost like an anti-Dario."'
+        - 'Russell Brandom, our AI editor, wrote about this this week: the manifesto is "exactly why people don''t like AI."'
+        - 'You look back to the social media days... And what do we have instead? We have rage-baiting and advertisements, and not connection.'
+        - 'I think last year... what that looks like for Meta, I mean, of course, Llama is great; it is a great tool and open source, but I think that on a consumer level, how are people using Meta AI? Well, there is like a lot of creepy-ass chatbots.'
+        - 'I think that [Zuckerberg''s] letter and his idea of personal empowerment is putting a bad taste in a lot of people''s mouths because it is him who is saying it.'
+        - 'Meta does not tend to come up in the conversation [of leading companies]... this is an attempt to reposition them and try to claim space that they really have not been that successful at before.'
+        register_notes: 'Skeptical podcast-preview register. The harshest lines are voiced by panelists (Rebecca Bellan, Kirsten Korosec, Russell Brandom) and Ha curates rather than authors them; Ha''s own framing is a repositioning-failure narrative (Meta absent from the frontier-labs conversation, claiming space it has not earned). Anthropic CEO Dario Amodei is the virtuous foil INSIDE the Meta piece itself: Amodei pushes back on being an AI doomer while Zuckerberg is cast as the anti-Dario. Related Ha Meta-side byline in the corpus: the Sep 6 2026 Anthropic settlement piece was read first-hand in #629; Ha''s Aug 14 2026 "Meta''s open AI, and a $250M deal gone very wrong" is an additional Meta-side byline, not scored this run.'
+      anthropic_arm:
+        entity: 'anthropic'
+        title: 'Anthropic CEO says AI backlash is "fundamentally a crisis of trust"'
+        publication: 'techcrunch'
+        author_byline: 'Anthony Ha'
+        role: 'Weekend Editor'
+        date: '2026-08-16'
+        genre: 'news report (executive statement on X posts)'
+        tone_score: 0.15
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run)'
+        url: 'https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/'
+        byline_attribution_urls:
+        - 'http://techcrunch.com/author/anthony-ha/'
+        key_quotes:
+        - 'I think it is fundamentally a crisis of trust. I think that ordinary people do not trust companies, governments, or the tech industry and always suspect that we are cooking up some new way to screw them over.'
+        - 'I do not agree that my messaging has been disproportionately negative. In fact it has been about equally balanced between risks and benefits.'
+        - 'I think by far the most accurate criticism of AI companies including Anthropic is that we have not yet delivered on our big promises to benefit the world. That is totally on us.'
+        - 'Promising that AI will cure cancer is "more a cliche than it is inspiring;" what would actually change people''s opinions of AI would be "actually curing cancer."'
+        register_notes: 'Straight executive-statement news report. Amodei''s rebuttal to investor Gavin Baker (who argued Amodei''s warnings fueled the backlash and data-center opposition) carries the piece; Baker''s criticism is presented then answered. No skeptical counter-voices; the trust-crisis framing is adopted uncritically; Amodei''s self-criticism ("totally on us") is relayed as candor. Ha bio footer on this piece confirms the byline: "Anthony Ha is TechCrunch''s weekend editor."'
+      asymmetry_scorer:
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+        meta_tone: -0.45
+        anthropic_tone: 0.15
+        delta_meta_minus_anthropic: -0.60
+        delta_calc: '-0.45 - 0.15 = -0.60'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Genre skew: podcast-preview reacting to a 6,500-word manifesto (opinion-adjacent, inherently evaluative) vs news report of executive X posts (inherently straight relay). Much of the -0.60 illustrative gap is genre before entity.'
+      - strength: 'STRONG'
+        text: 'Messenger skew: the Meta harshness is voiced by panelists (Bellan, Korosec, Brandom) whom Ha curates, while the Anthropic piece relays Amodei''s own self-defensive words. Curated-third-party skepticism reads harsher than executive self-criticism by construction.'
+      - strength: 'MODERATE'
+        text: 'News-peg skew: Zuckerberg manifesto launch (a marketing event, inviting rebuttal) vs Baker-versus-Amodei dispute (a defensive news peg where the executive gets the last word).'
+      - strength: 'WEAK'
+        text: 'n=1 per arm. Directional, not dispositive; a second Ha Meta-vs-Anthropic pair in matched genre would be needed for a register claim above the genre boundary.'
+      verdict: 'WITHIN-WRITER TRUST REGISTER, directionally consistent with the Apollo compound publisher incentive but NOT a falsification pin. Ha''s Meta AI piece reads harsher (-0.45 illustrative) than his same-day Anthropic trust piece (+0.15 illustrative), and Anthropic''s CEO is the virtuous foil inside the Meta piece itself. The Apollo chain documented in competitor-entities.yaml (Apollo participates in $35B to $100B Anthropic XPV infrastructure financing AND owns Yahoo, which owns TechCrunch) predicts softer Anthropic coverage at TechCrunch, and the observed register is directionally consistent; #305 documents the sibling Bellan TechCrunch inversion (Meta -0.20, Anthropic +0.15, same Aug 2026 window), and Bellan is one of the quoted panelists in Ha''s Meta piece. Correlation is not causation per the Aug 28 rule: the STRONG genre and messenger confounds fully explain the gap before any incentive effect is invoked, and no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin. First dedicated Type B mechanism on Anthony Ha.'
+      financial_context: 'TechCrunch is owned by Yahoo, owned by Apollo Global Management. Apollo simultaneously participates in the $35B to $100B Anthropic XPV infrastructure financing (Aug 2026, competitor-entities.yaml) and owns the publisher. No documented TechCrunch-to-Meta or TechCrunch-to-OpenAI content licensing deal in the corpus. The money gradient predicts softer Anthropic coverage at TechCrunch; the observed -0.60 illustrative gap is directionally consistent. Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#629 (Type D: Ha''s Sep 6 2026 Anthropic settlement-distribution piece read first-hand; Ha byline established in the corpus here)'
+      - '#305 (Bellan TechCrunch vocabulary inversion Meta -0.20 / Anthropic +0.15, same Aug 2026 window; Bellan is a quoted panelist in Ha''s Meta piece)'
+      - '#632 (Type A: WSJ Muse launch +0.40, publication-level sibling in the Sep 2026 Meta AI-agent news cycle)'
+      block_key: 'type_b_633_anthony_ha_techcrunch_meta_vs_anthropic_trust_register'
+      author: 'Kit (with Ray)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer trust-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First dedicated Type B mechanism on Anthony Ha (zero journalist entries pre-commit; entry created this run). Zero test_type_b_633 files on disk (glob verified this run). No Type B commit with 633 in the title (git log --grep verified this run). Both tones hand-assigned this run (MANUAL ILLUSTRATIVE); the Sep 6 2026 Anthropic settlement byline is a separate Ha byline read in #629, not rescored. Mechanism id 614 is the next free profiles mechanism id (max pre-commit 613). Rotation: 632 A -> 633 B.'
+      research_method: '3 browser.search query sets this run: (1) TechCrunch Muse launch (surfaced the Sep 8 2026 Muse article, attribution resolved to Sarah Perez per webpronews line 27, rejected as studied); (2) Max Zeff AI reporter TechCrunch WIRED (no clean Meta-vs-competitor pair: Zeff appears in the corpus only in competitor-entities, no journalists.yaml entry, insufficient exact byline URLs); (3) TechCrunch weekend editor Anthony Ha (surfaced Ha''s author page; the Aug 16 same-day AI-category Meta-vs-Anthropic pair was identified there). Both arms opened first-hand via browser.open (verbatim URLs from the open result headers); Ha''s author page opened first-hand (verbatim http URL from the run''s own fetch). Byline confirmed on the Anthropic arm''s bio footer and the author page''s Latest listing. Kurt Wagner rejected (already studied, #508 Type B). No zero-coverage claims per iteration-492 rule (both arms are positive Ha bylines). No em dashes.'
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
