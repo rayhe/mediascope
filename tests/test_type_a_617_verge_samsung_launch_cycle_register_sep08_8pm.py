@@ -341,7 +341,7 @@ class TestRotationCycleGuard617:
                 f"rotation broken: {a} -> {b} is not a valid cycle edge"
             )
 
-    def test_anchor_is_main_patch_in_followup(self):
+    def test_anchor_is_main_d5edeff(self):
         # Post-commit anchor: the #617 main commit. Patched in the followup
         # per the #565 convention once the main commit SHA is known.
         out = subprocess.run(
@@ -355,7 +355,7 @@ class TestRotationCycleGuard617:
             l for l in out if re.match(r"^[0-9a-f]{40} Type [A-E] #\d+:", l)
         ]
         sha, subject = mains[0].split(" ", 1)
-        assert sha.startswith("PATCH_IN_FOLLOWUP"), f"anchor drifted: {sha}"
+        assert sha.startswith("d5edeff"), f"anchor drifted: {sha}"
         assert subject.startswith("Type A #617:"), (
             f"post-commit anchor broken: newest main is not #617: {subject!r}"
         )
