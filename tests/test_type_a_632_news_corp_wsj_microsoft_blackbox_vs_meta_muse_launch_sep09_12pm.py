@@ -277,7 +277,7 @@ class TestRotationCycleGuard632:
     per the #565 convention; these tests fail by design pre-anchor.
     """
 
-    ANCHORED_COMMIT = "UNPATCHED"
+    ANCHORED_COMMIT = "2705957"  # main commit, patched in followup per #565 convention
 
     def _window_lines(self):
         result = _run_git(
@@ -290,7 +290,7 @@ class TestRotationCycleGuard632:
     def test_window_628_632_closes_e_to_a(self):
         types = []
         for line in self._window_lines():
-            match = re.match(r"^[0-9a-f]+ Type ([A-E]) #(\\d+):", line)
+            match = re.match(r"^[0-9a-f]+ Type ([A-E]) #(\d+):", line)
             if match and int(match.group(2)) >= 628:
                 types.append((int(match.group(2)), match.group(1)))
         types.sort(reverse=True)
