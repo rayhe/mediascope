@@ -3017,6 +3017,91 @@ entities:
       - https://www.adweek.com/media/openai-dotdash-meredith-licensing-payment/?utm_source=www.thedeepview.co&utm_medium=newsletter&utm_campaign=interview-microsoft-vp-on-agentic-push-and-ignite&_bhlid=dab9663d3f42fa896cb98be12e360193f757047e
       caution: Structural mapping only. Documents the OpenAI-leg renewal window, the Roberts all-you-can-eat confirmation, and the RSL publisher-side diversification leg, not editorial capture. No coverage-tone claim is made.
 
+    mechanism_627_news_corp_openai_renewal_window_250m_five_year_sep2026:
+      mechanism_name: 'News Corp (Dow Jones) x OpenAI Renewal Window (Sep 2026 Status) - 28 Months Post-May 22 2024 $250M/5yr Deal, No Renewal/Extension/Termination Reporting, Treated ACTIVE per #599 Convention; Thomson Q4 FY2026 Trusted-Relationship Confirmation; Seventh Member of the #609 First-Gen Cohort'
+      mechanism_id: 627
+      iteration: 654
+      rotation: 'Type C'
+      type: financial_incentive_mapping
+      time_pdt: '10:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      date_analyzed: '2026-09-10'
+      deal_structure:
+        announced: '2024-05-22 (newscorp.com and openai.com press releases; Press Gazette tracker lists 22 May 2024)'
+        value: 'more than $250M over five years, per News Corp own-outlet WSJ reporting, never officially disclosed; the $250M figure includes compensation in the form of cash and credits for use of OpenAI technology per the Bloomberg Law Dave Lee column'
+        content_scope: 'current and archived content from WSJ, Barron, New York Post, MarketWatch, Investor Business Daily, FN, Times, Sunday Times, Sun, The Australian, news.com.au, Daily Telegraph (AU), Courier Mail, Advertiser, Herald Sun; display rights in ChatGPT answers plus model training; journalistic-expertise leg'
+        elapsed_months: 28
+        expiry_estimate: '~May 2029 (5-year term from May 22 2024; no dated renewal on record)'
+        renewal_due: false
+      renewal_window_query_sets:
+      - query: 'News Corp OpenAI partnership renewal extension 2026'
+        result: 'NO renewal/extension/renegotiation/termination reporting; only May 2024 announcement re-surfaces (thewrap, theregister, campaignlive, srnnews, metro.us)'
+      - query: '"News Corp" OpenAI "renewal" OR "extension" OR "renegotiated" OR "terminated" licensing'
+        result: 'NO News Corp-OpenAI renewal items; results are NYT/MNG litigation noise (techxplore, torrentfreak) - bounded absence confirmed'
+      - query: 'News Corp OpenAI 250 million dollar deal May 2024 five year term news'
+        result: '2024 announcement re-surfaces only; Press Gazette tracker (crawled 19h before this run) lists 22 May 2024 with the $250m/5yr figure, no renewal note'
+      - query: 'News Corp Robert Thomson AI partnership new deals August 2026 earnings'
+        result: 'Q4 FY2026 call (Aug 5 2026): Thomson confirms trusted content relationships with OpenAI and Meta; advanced discussions with several other companies for significant deals - no new signed deal announced as of Sep 10 2026'
+      status: ACTIVE
+      status_convention: '#599 ACTIVE convention (no termination reporting => treated as still ACTIVE)'
+      affirmative_confirmation: 'CEO Robert Thomson, Q4 FY2026 earnings call Aug 5 2026: We have trusted content relationships with OpenAI and Meta, and are in advanced discussions with several other companies (Reuters Aug 5 2026; WSJ Alexandra Bruell self-report) - the trusted-relationship quote already sits in corpus via the Aug 15 Type C test; this run extends the confirmation into the dedicated renewal query set'
+      cohort_membership: 'SEVENTH member of the #609 first-gen OpenAI publisher renewal cohort (after FT, Atlantic, Conde Nast via #609; Time via #639 mechanism 618; Vox via #644 mechanism 621; Dotdash Meredith via #649 mechanism 624). AP is a separate elapsed-term case (mechanism 615, #634); Axel Springer carries the cohort first dated expiry (Dec 2026, mechanism 597, #604). News Corp is the last unmapped major first-gen publisher leg.'
+      positive_controls:
+      - 'Jul 2026 local-news $5M OpenAI renewal got trade-press coverage (per #609) - renewals get covered, so the News Corp OpenAI absence is informative'
+      - 'News Corp own AI-deal news surfaces when it happens: the Mar 2026 Meta leg was WSJ self-reported (Alexandra Bruell, mechanism 549) - a News Corp OpenAI renewal event would likewise surface'
+      meta_leg_status: 'Mar 2026 Meta Dow Jones news leg (up to $50M/yr, 3yr, mechanism 549) stands; 6 months elapsed, no renewal due; Thomson Q4 FY2026 confirms both relationships in one breath'
+      anthropic_perplexity_sweep: 'bounded absence unchanged; the zero-deal entity set from mechanism 539 stands; the News Corp Anthropic channel remains the involuntary $1.5B settlement payout (mechanism 594 counterevidence), not a cooperative licensing leg'
+      press_gazette_corroboration: 'Press Gazette tracker (crawled 19h before this run) independently re-confirms the DDM $16M/yr figure already in corpus via Adweek Nov 2024 (mechanism 534 fixed_payment_reported) with its Update: OpenAI appears to be paying at least $16m per year to Dotdash Meredith - cross-source corroboration of the cohort payout scale ($50M/yr News Corp vs $16M/yr DDM)'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'The 5-year term means no renewal is due until ~May 2029, so the no-renewal-reporting finding is expected, not surprising; the informative content is the affirmative ACTIVE confirmation and the absence of early renegotiation or termination signals'
+      - rank: 2
+        strength: strong
+        confounder: 'The $250M figure is WSJ-reported on its own owner (mechanism 519 notes own-outlet reporting), never officially disclosed; the cash-vs-credits split is unverified, so the $50M/yr annualization is a WSJ-derived estimate'
+      - rank: 3
+        strength: moderate
+        confounder: 'WSJ self-reports its owner deals (Meta leg, mechanism 549); absence of News Corp-OpenAI renewal reporting may reflect news judgment on a non-newsworthy non-event rather than deal status - bounded per the iteration-492 rule'
+      - rank: 4
+        strength: moderate
+        confounder: 'The Thomson Q4 FY2026 confirmation is CEO investor-call language (already in corpus via the Aug 15 test), not deal text; trusted content relationships is phrasing, not a dated contract status'
+      - rank: 5
+        strength: weak
+        confounder: 'Bounded searches may miss trade-press items behind paywalls or in non-English press (Australian coverage of the Australian mastheads leg)'
+      strongest_counterargument: 'The dual-payer template (mechanism 519) means the OpenAI leg is only half the WSJ incentive stack; the Meta leg (up to $50M/yr) is 6 months in and the OpenAI leg is 28 months into a 5-year term, so any coverage-tone prediction would need the combined ~$100M/yr stack, not the OpenAI leg alone. Thomson himself frames woo-and-sue as simultaneous (pursue pilferers while signing honorable companies), so the incentive is explicit portfolio strategy, not covert capture; the null (independent Dow Jones standards) predicts no tone effect, and mechanism 616 already logged the hardest OpenAI register in the WSJ corpus this cycle (Tumbler Ridge -0.55) running against the softer prediction.'
+      cross_references:
+      - 'Mechanism 519 News Corp x OpenAI deal structure (the renewal query set baseline; $250M/5yr, May 2024)'
+      - 'Mechanism 594 News Corp five-leg AI revenue architecture (this run is the OpenAI-leg renewal-status mapping the five-leg did not do)'
+      - '#609 first-gen OpenAI publisher renewal cohort (cohort method template; FT/Atlantic/Conde Nast bounded query sets; Jul 2026 local-news $5M positive control)'
+      - '#599 ACTIVE convention (no termination reporting => treated ACTIVE)'
+      - '#649 DDM renewal window (sixth cohort member; Press Gazette DDM $16M/yr update corroborates the mechanism 534 Adweek datum)'
+      - '#644 Vox renewal window (fifth cohort member)'
+      - '#639 Time renewal window (fourth cohort member, mechanism 618)'
+      - '#604 Axel Springer Dec 2026 expiry (cohort first dated renewal decision point; the monitoring item stands)'
+      - 'Mechanism 616 WSJ x OpenAI Tumbler Ridge vs Meta Muse (hardest OpenAI register in WSJ corpus, against the softer prediction)'
+      - 'Mechanism 549 News Corp x Meta leg (dual-payer template second leg; WSJ self-reported)'
+      novelty_verification:
+      - 'Zero mechanism_627 keys repo-wide pre-commit (grep verified; max numeric mechanism id pre-commit 626)'
+      - 'Zero test_type_c_654 files on disk pre-commit (glob verified)'
+      - 'No Type C commit with 654 in title (git log --grep verified)'
+      - 'Zero News Corp OpenAI renewal-window mentions in competitor-entities.yaml pre-commit (grep verified; mechanisms 519/594/616/632 cover structure, five-leg, and register windows, never renewal status)'
+      - 'FIRST corpus dedicated renewal-window mapping for the News Corp x OpenAI deal; SEVENTH and final major member of the #609 first-gen cohort'
+      - 'NOT a falsification-family member: the renewal window BOUNDS rather than joins the falsification family; no coverage-tone claim is made'
+      statistical_discipline: 'qualitative structural mapping only; correlation not causation; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; tone_scores NOT_SCORED; is_significant False'
+      source_urls:
+      - https://www.thewrap.com/news-corp-openai-multi-year-licensing-deal/
+      - https://www.theregister.com/2024/05/23/openai_news_corp/?td=rt-9cs
+      - https://www.campaignlive.com/article/openai-inks-multi-year-content-deal-news-corp/1874244
+      - https://venturebeat.com/ai/openai-partners-with-wall-street-journal-publisher-news-corp
+      - https://www.nation.lk/online/openai-to-start-using-news-content-from-news-corp-as-part-of-a-multiyear-deal-266208.html
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
+      - https://www.wsj.com/business/media/news-corp-revenue-rises-with-growth-across-all-segments-d5313004
+      - https://finance.biggo.com/news/US_NWS_2026-08-05
+      - https://www.thewrap.com/industry-news/business/news-corp-q3-earnings/
+      caution: Structural mapping only. Documents the News Corp x OpenAI renewal window, the #599 ACTIVE treatment with Thomson Q4 FY2026 affirmative confirmation, and the cohort membership, not editorial capture. No coverage-tone claim is made.
+
     mechanism_544_vox_media_microsoft_pcm_pay_per_use_leg:
       mechanism_id: 544
       iteration: 544
