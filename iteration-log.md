@@ -24,7 +24,7 @@
 
 **Rotation Transparency:** Previous main commit #639 Type C at 19:00 PDT Sep 9 2026 (commit fd7c893 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard640 covers window 636-640 (D,C,B,A,E newest-first), closing the C->D edge; anchor patched in followup per #565 convention.
 
-**Novelty Verification:** Zero test_type_d_640 files on disk before this run (glob verified, pinned in TestNovelty640); no Type D #640 main commit pre-commit (git log --grep verified, pinned in TestNovelty640); mechanism_id 618 max and unique pre-commit (no 619 anywhere); no #640 iteration entry pre-commit.
+**Novelty Verification:** Zero test_type_d_640 files on disk before this run (glob verified, pinned in TestNovelty640); no Type D #640 main commit pre-commit (git log verified by shell); exactly one Type D #640 main commit post-commit, SHA matching the rotation-guard anchor (pinned in TestNovelty640); mechanism_id 618 max and unique pre-commit (no 619 anywhere); no #640 iteration entry pre-commit.
 
 **Commit hashes:** PENDING (patched in followup/doc-sync per #565 convention). count_stats.py --check gate to be run at doc-sync.
 

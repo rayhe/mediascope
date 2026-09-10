@@ -84,19 +84,27 @@ class TestNovelty640:
             "test_type_d_640_scorer_statistical_meaningfulness_corpus_integrity_sweep_sep09_8pm.py"
         )
 
-    def test_no_type_d_640_main_commit_pre_followup(self):
-        # Pre-commit there is no #640 main commit; the followup lands the
-        # rotation guard for THIS run's main commit, so this pins novelty at
-        # test time without duplicating the guard class.
+    def test_type_d_640_main_commit_unique_and_anchored(self):
+        # Post-commit the #640 main commit exists exactly once (this run's);
+        # its SHA matches the rotation-guard anchor patched in the followup
+        # per the #565 convention. Novelty was verified pre-commit by shell
+        # greps (zero test_type_d_640 files, no #640 in git log); this test
+        # pins that no duplicate #640 main commit ever appears.
         out = subprocess.run(
-            ["git", "log", "--format=%s"],
+            ["git", "log", "--format=%H %s"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
             check=True,
         ).stdout.splitlines()
-        mains = [s for s in out if re.match(r"^Type D #640:", s)]
-        assert mains == [], f"unexpected pre-existing Type D #640 commit: {mains}"
+        mains = [l for l in out if re.match(r"^[0-9a-f]{40} Type D #640:", l)]
+        assert len(mains) == 1, (
+            f"expected exactly one Type D #640 main commit, got: {mains}"
+        )
+        sha = mains[0].split(" ", 1)[0]
+        anchor = TestRotationCycleGuard640.ANCHORED_SHA
+        assert anchor != "PATCH_ME_IN_FOLLOWUP", "anchor not patched"
+        assert sha == anchor, f"main commit {sha} != guard anchor {anchor}"
 
 
 class TestScorerIllustrativePairsSep89:
@@ -368,7 +376,7 @@ class TestDocSync640:
 class TestRotationCycleGuard640:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #640 main-commit SHA is known.
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # #640 main commit (patched in followup per #565 convention)
+    ANCHORED_SHA = "437aff75c3684a379ad63786ec5589b203a18a9b"  # #640 main commit (patched in followup per #565 convention)
 
     @staticmethod
     def _mains():
