@@ -18,7 +18,7 @@
 
 **Research method:** 4 browser.search query sets this run: (1) Guilty Feminist latest episode September 2026 (episode-500 watch); (2) "Everyone Hates Elon" anti Meta glasses campaign September 2026 (quoted, 7 re-surfaces); (3) "Attention Sphere" podcast Ava Smithing Meta glasses (quoted, 52nd no-match); (4) Meta smart glasses privacy news surveillance (bounded press-surface sweep, since 2026-09-08; all 6 surfaced URLs in-corpus re-surfaces). All URLs verbatim from Full-URL listings; none constructed. Novelty verified by repo-wide greps (podcast-sentiment.md, iteration-log.md, tests/, profiles/) pre-commit - zero new-to-corpus URLs. Per the iteration-492 rule, no zero-coverage claims: every claim is a positive documented fact.
 
-**New Type E files:** `tests/test_type_e_646_podcast_sentiment_52nd_verification_gf499_holds_sep10_2am.py` - 10 classes, 44 def-tests (37 green pre-commit; rotation-guard class 3 + novelty anchor 1 + doc-sync class 3 deselected pre-commit per #565 convention, anchor MAIN_SHA patched in followup FOLLOWUP_SHA, 7/7 green post-anchor; doc-sync ratchet class 3 green post-doc-sync). Commits: main MAIN_SHA, followup FOLLOWUP_SHA, doc-sync (this commit). 44/44 green post-doc-sync; count_stats gate COUNT_STATS tests / COUNT_FILES files green.
+**New Type E files:** `tests/test_type_e_646_podcast_sentiment_52nd_verification_gf499_holds_sep10_2am.py` - 10 classes, 44 def-tests (37 green pre-commit; rotation-guard class 3 + novelty anchor 1 + doc-sync class 3 deselected pre-commit per #565 convention, anchor 3b1703e patched in followup ce1dd9c, 7/7 green post-anchor; doc-sync ratchet class 3 green post-doc-sync). Commits: main 3b1703e, followup ce1dd9c, doc-sync (this commit). 44/44 green post-doc-sync; count_stats gate 34050 tests / 974 files green.
 
 **Artifact readiness:** No analysis.json update warranted. Monitoring-only window with a recency-frontier tie (no advance); no publication-level empirical finding.
 
@@ -26,7 +26,7 @@
 
 **Novelty Verification:** Zero test_type_e_646 files on disk before this run (glob verified); no Type E commit with 646 in the title (git log --grep verified); no iteration-646 mechanism block in profiles/ (repo-walk test asserts); all 7 EHE-sweep URLs verified in corpus pre-commit (repo-wide md/tests greps); all 6 press-sweep URLs verified in corpus pre-commit; the table-row 51->52 edit plus the GF row Sep 8->Sep 10 edit are the only podcast-sentiment.md changes.
 
-**Commit hashes:** main MAIN_SHA, followup FOLLOWUP_SHA (ANCHORED_SHA patched per #565 convention; 41/41 green post-doc-sync including the 642-646 window guard). count_stats.py --check green: COUNT_STATS tests / COUNT_FILES files, README stats current (--pytest authoritative method via repo .venv). Doc-sync ratchet: Tracked Sources 51->52 cycles; GF row Sep 8->Sep 10; README+ARCHITECTURE rows for #646; README stats table refreshed. No analysis.json changes (monitoring-only window, recency-frontier tie).
+**Commit hashes:** main 3b1703e, followup ce1dd9c (ANCHORED_SHA patched per #565 convention; 41/41 green post-doc-sync including the 642-646 window guard). count_stats.py --check green: 34050 tests / 974 files, README stats current (--pytest authoritative method via repo .venv). Doc-sync ratchet: Tracked Sources 51->52 cycles; GF row Sep 8->Sep 10; README+ARCHITECTURE rows for #646; README stats table refreshed. No analysis.json changes (monitoring-only window, recency-frontier tie).
 
 ---
 
