@@ -335,7 +335,7 @@ class TestIterationLogEntry646:
 class TestRotationCycleGuard646:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #646 main-commit SHA is known.
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched in followup per #565 convention
+    ANCHORED_SHA = "3b1703e1da61470fc1fd5c88e208e5425b26e9eb"  # patched in followup per #565 convention
 
     @staticmethod
     def _mains():
@@ -378,9 +378,12 @@ class TestRotationCycleGuard646:
             )
 
     def test_anchor_is_main_commit_patched_in_followup(self):
-        result = _run_git("log", "--oneline", "--grep=^Type E #646:")
+        result = _run_git("log", "--format=%H %s")
         assert result.returncode == 0
-        main = result.stdout.splitlines()[0].split()[0] if result.stdout else ""
+        mains = [
+            line for line in result.stdout.splitlines() if "Type E #646:" in line
+        ]
+        main = mains[0].split()[0] if mains else ""
         assert self.ANCHORED_SHA == main, (
             "anchor patched in followup per #565 convention"
         )
