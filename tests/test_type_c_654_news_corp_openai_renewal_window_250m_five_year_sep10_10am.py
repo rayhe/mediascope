@@ -44,7 +44,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 MECH_KEY = "mechanism_627_news_corp_openai_renewal_window_250m_five_year_sep2026"
 FILENAME = "test_type_c_654_news_corp_openai_renewal_window_250m_five_year_sep10_10am.py"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "ad0974f146f3151988eb70777604a079997daa99"
 
 
 def _find_all(o, key, hits):
