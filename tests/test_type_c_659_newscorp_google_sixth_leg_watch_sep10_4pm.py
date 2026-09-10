@@ -46,7 +46,7 @@ NEWSCORP_PATH = os.path.join(REPO_ROOT, "profiles", "news-corp.yaml")
 MECH_KEY = "mechanism_630_news_corp_google_ai_licensing_talks_sixth_leg_watch_sep2026"
 FILENAME = "test_type_c_659_newscorp_google_sixth_leg_watch_sep10_4pm.py"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "c8b3e77"
 
 
 def _find_all(o, key, hits):
