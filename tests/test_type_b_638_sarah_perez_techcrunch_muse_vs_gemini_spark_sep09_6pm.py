@@ -313,7 +313,7 @@ class TestRotationCycleGuard638:
             l for l in out if re.match(r"^[0-9a-f]{40} Type [A-E] #\d+:", l)
         ]
         sha, subject = mains[0].split(" ", 1)
-        assert sha.startswith("PATCH_ME_IN_FOLLOWUP"), f"anchor not yet patched: {sha}"
+        assert sha.startswith("5d28004"), f"anchor not yet patched: {sha}"
         assert subject.startswith("Type B #638:"), (
             f"post-commit anchor broken: newest main is not #638: {subject!r}"
         )
