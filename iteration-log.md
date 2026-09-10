@@ -22,7 +22,7 @@
 
 **Novelty Verification:** Zero test_type_c_654 files on disk before this run (glob verified); no Type C commit with 654 in the title (git log --grep verified); zero mechanism_627 keys repo-wide pre-commit (grep verified; max pre-commit 626); zero News Corp OpenAI renewal-window mentions in competitor-entities.yaml pre-commit (grep verified); the DDM $16m Press Gazette update corroborates (not duplicates) the in-corpus mechanism 534 Adweek $16M/yr datum (grep verified: no "appears to be paying at least" anywhere repo-wide pre-commit). FIRST corpus dedicated renewal-window mapping for the News Corp x OpenAI deal. Distinct from #594 (five-leg architecture, no renewal mapping), #616/#632 (register windows), #519 (deal structure).
 
-**Commit hashes:** main TBD, followup TBD (ANCHORED_SHA patched per #565 convention). count_stats.py --check green. Doc-sync ratchet: ARCHITECTURE row for #654; README stats table refreshed (34396->34471 tests, 981->982 files) + test-file table row for #654; iteration-log #654 entry.
+**Commit hashes:** main ad0974f, followup bbdcaeb (ANCHORED_SHA patched per #565 convention). count_stats.py --check green. Doc-sync ratchet: ARCHITECTURE row for #654; README stats table refreshed (34396->34471 tests, 981->982 files) + test-file table row for #654; iteration-log #654 entry.
 
 #653 Type B: Robert Hart (The Verge) launch-week register differentiation - Meta Muse market-defeat register (-0.35) vs OpenAI Astra pre-launch safety-watchdog register (-0.25), illustrative delta +0.10; second Hart mechanism (626), register differentiation WITHIN constancy, Vox-OpenAI licensing gradient weakened not contradicted, NOT a falsification-family member - Sep 10 2026 09:00 PDT
 
