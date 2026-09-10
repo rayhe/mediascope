@@ -3460,6 +3460,225 @@ competitor_relationships:
         skipped (month-level dates only, no day-of-week claims); no em
         dashes; all URLs verbatim as surfaced, none constructed.
 
+  snap:
+    financial_tie: "indirect"
+    estimated_value: "no direct Vox Media/PMC deal on record; incentive runs via Snap's AI partners (OpenAI licensing partner of PMC since May 29 2024, ACTIVE per #599; Google programmatic ad dependence)"
+    direction: "receiving (via partner alignment)"
+    description: >-
+      Snap Inc. Specs AR glasses ($2,195, shipping fall 2026) are a direct
+      Meta glasses competitor. No direct content licensing or advertising
+      deal between Snap and The Verge/Vox Media/PMC is on record; the
+      financial channel is INDIRECT: Snap Specs ship with OpenAI API
+      integration (Snap pays OpenAI; in-corpus competitor-entities.yaml)
+      and Google Gemini integration (agentic coding, Lens Studio tools),
+      and OpenAI is PMC/Vox Media's multiyear content licensing partner
+      (May 29 2024, ACTIVE per #599) while Google is the programmatic
+      ad-revenue dependence across Vox/PMC properties. The documented Snap
+      publisher payment ($58M Discover revenue-share 2016; $2-4M/yr flat
+      fees) ran to Conde Nast (mechanism 239), NOT Vox Media. Contrast:
+      PMC sold ALL Meta shares in Q2 2025 (mechanism #112), and the meta
+      entity in this block codes financial_tie none with $0.
+    coverage_prediction: "softer"
+    mechanism_628_verge_snap_sep_specs_event_vs_meta_led_tamper_alarm_sep10:
+      mechanism_id: 628
+      iteration: 657
+      iteration_type: "A"
+      iteration_time: "2026-09-10 14:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      pair: "The Verge x Snap vs Meta"
+      title: "Type A #657: The Verge x Snap Specs Sep-2026 shipping-phase event register vs Meta LED-tamper surveillance-alarm register (mechanism 628)"
+      finding: >-
+        FIRST dedicated Type A mechanism under the-verge.yaml
+        competitor_relationships.snap (novelty: zero prior snap entity key
+        in this block; both register-evidence URLs new-to-corpus per
+        repo-wide grep this run). Shipping-phase extension of the Aug 9
+        2026 Verge x Snap Specs deep dive (commit 17b7cf4): The Verge's
+        Sep 2026 pre-ship Specs launch-event coverage (973155) carries an
+        event-forward product register (+0.2 MANUAL ILLUSTRATIVE) while the
+        comparable Verge Meta glasses register (Song Jul 7 2026 LED-tamper
+        piece, carried -0.2 from the Aug 9 block) is surveillance-alarm.
+        Illustrative delta (Snap minus Meta) +0.40. Direction
+        prediction-consistent with the aligned-AI-ecosystem incentive stack
+        (OpenAI licensing ACTIVE; Google ad dependence; Meta $0), but the
+        financial claim is SECOND-ORDER: no direct Snap-to-Vox-Media
+        payment is on record, and the counterweight (Vergecast
+        negative-on-Snap product grounds; TechCrunch hard-question-on-Snap
+        preorder numbers) bounds the claim to register-specific, not
+        valence-general. Not a falsification-family member.
+      snap_articles:
+        - title: "Snap is hosting a Specs launch event in September"
+          date: "2026-09 (pre-Sep-16 event)"
+          publication: "The Verge"
+          byline: "unattested (excerpt-bounded)"
+          url: "https://www.theverge.com/tech/973155/snap-is-hosting-a-specs-launch-event-in-september"
+          register: "event_forward_product"
+          manual_illustrative_tone: 0.2
+          framing: >-
+            Event-forward product register: Snap hosting a Specs launch
+            event ahead of the Sep 16 launch / fall shipping window. No
+            surveillance or privacy-alarm language in the surfaced
+            characterization. Existence and topic verified via third-party
+            citation (Glass Almanac Sep 2026 piece citing the Verge URL
+            verbatim); full text NOT read this run (theverge.com blocked by
+            browser policy, single attempt, not retried). Tone hand-assigned
+            from topic/title-class evidence; illustrative only, challenge
+            by reading the primary.
+          source_attribution_url: "https://glassalmanac.com/they-want-to-try-specs-ignites-debate-as-snap-posts-19-revenue-lift-in-2026/"
+          evidence_tier: "excerpt_bounded"
+      meta_articles:
+        - title: "Meta's glasses will turn off the camera if you tamper with the privacy light"
+          date: "2026-07-07"
+          publication: "The Verge (via secondary reprint)"
+          byline: "Victoria Song"
+          url: "https://thetechstreetnow.com/metas-glasses-will-turn-off-the-camera-if-you-tamper-with-the-privacy-light/"
+          register: "surveillance_alarm"
+          manual_illustrative_tone: -0.2
+          framing: >-
+            Surveillance-alarm register: Meta's proactive tamper-response
+            (camera disabled when the privacy LED is tampered with) is
+            framed through the privacy-controversy lens - the story exists
+            because of privacy backlash, not product capability enthusiasm.
+            Register carried from the Aug 9 2026 Verge x Snap deep dive
+            block (tone -0.2 pinned there); this run re-surfaces it via the
+            reprint. The reprint states "Copyright of this story solely
+            belongs to theverge.com"; the canonical Verge URL is unattested
+            and is NOT invented per the no-canonical-URL rule.
+          canonical_url_note: "unattested; not invented per no-canonical-URL rule"
+          evidence_tier: "mirror_bounded"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        scorer: "mediascope.score.asymmetry.calculate_asymmetry (MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule)"
+        methodology: >-
+          MANUAL ILLUSTRATIVE ONLY. Tones hand-assigned from headline,
+          topic-class, and excerpt-level framing reads this run; n=1 per
+          side; descriptive only. No empirical significance claimed or
+          computed. Documents the analyst's reading for reproducibility and
+          challenge. DO NOT claim empirical significance.
+        publication_slug: "the-verge"
+        target_entity: "snap"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.2]
+        target_avg: 0.2
+        peer_entity: "meta"
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.2]
+        peer_avg: -0.2
+        delta_manual_illustrative: 0.4
+        window: "2026-07 to 2026-09"
+        synthetic_note: "Tones hand-assigned; n=1 per side; descriptive only."
+        tone_scores: "NOT_SCORED"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        confidence_interval_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_degenerate: "engine NOT run on manual-illustrative tones (p=1.0, d=0.0 per the n=1 degenerate contract); no divergence pin"
+        finding_layer: "NOT_CALCULATED; is_significant False; DO NOT claim empirical significance"
+      financial_context:
+        predictor: "aligned_incentive (indirect)"
+        prediction: "softer_than_expected"
+        chain: >-
+          Snap Specs ship with OpenAI API integration (AI Lenses) and
+          Google Gemini integration (agentic coding, Lens Studio tools) -
+          both Meta AI competitors. OpenAI x Vox Media/PMC content
+          licensing deal (May 29 2024, multiyear) treated ACTIVE per #599.
+          Google is the programmatic ad-revenue dependence across Vox/PMC
+          properties (in-corpus). Meta: $0 AI licensing with PMC, and PMC
+          sold ALL Meta shares in Q2 2025 (mechanism #112). The financial
+          gradient runs toward the aligned AI ecosystem; Snap's glasses sit
+          inside it.
+        status: >-
+          correlate only. SECOND-ORDER/inferential: no direct
+          Snap-to-Vox-Media payment is on record. The documented Snap
+          publisher payment ($58M Discover revenue-share 2016; $2-4M/yr
+          flat fees) ran to Conde Nast (mechanism 239), a different
+          publisher. DO NOT claim a direct Verge-Snap deal.
+      confounders_ranked:
+        strong:
+          - >-
+            Excerpt-bounded Verge register: theverge.com returned a policy
+            block for browser.open this run (single attempt, not retried),
+            so the 973155 register is inferred from topic/title-class plus
+            third-party characterization, not a first-hand read. The
+            finding cannot stand without this bound; a primary read could
+            move the Snap tone down.
+          - >-
+            Genre/phase skew: pre-ship event-announcement genre (Snap) is
+            structurally excitement-framed; the Meta item is an
+            enforcement-response piece inside a Jul 2026 backlash window.
+            Genre alone predicts the register split.
+          - >-
+            Time-window skew: Snap item Sep 2026 vs Meta item Jul 7 2026,
+            about eight weeks apart. The Sep-window Verge Meta item (Hart
+            Muse, mechanism 626) is an AI-agent story, not a glasses
+            story; the glasses register comparison crosses windows.
+        moderate:
+          - >-
+            Mirror-bounded Meta evidence: the Song Jul 7 piece is carried
+            via the thetechstreetnow.com reprint, which is corpus-consistent
+            ("Copyright of this story solely belongs to theverge.com"); the
+            canonical Verge URL is unattested and not invented.
+          - >-
+            Scale asymmetry: Meta sold 7M glasses in 2025 (in-corpus via
+            Semafor/BI reporting) vs Snap preorders not yet shipped.
+            Misuse newsworthiness scales with installed base; the alarm
+            register may track scale, not manufacturer identity.
+          - >-
+            Byline asymmetry: the Meta arm is Victoria Song (wearables
+            beat; bifurcated product-vs-privacy modes per mechanism #75);
+            the Snap arm byline is unattested and may not be Song.
+            Writer-level register may dominate publisher-level register.
+        weak:
+          - >-
+            n=1 per arm: descriptive only, no statistical significance (by
+            design, NOT_CALCULATED).
+          - >-
+            Preorder-deposit facts ($200) and the Sep 16 event date are
+            logistics, not register evidence; they carry no tone.
+      counterevidence:
+        - >-
+          Vergecast "Snap's Specs look good on nobody" (in-corpus, tone
+          -0.3): The Verge IS willing to be negative about Snap on product
+          grounds (aesthetics, practicality). The soft gradient is
+          register-specific (surveillance framing), not valence-general.
+        - >-
+          TechCrunch Aug 3 2026: "Snap CEO sidesteps Specs pre-order
+          questions on Q2 earnings call" - hard questions ARE asked of Snap
+          (preorder numbers dodged), but by a competitor publication, not in
+          The Verge's Sep event piece. The register gap is
+          publication-specific, not industry-wide.
+          (https://techcrunch.com/2026/08/03/snap-ceo-sidesteps-specs-pre-order-questions-on-q2-earnings-call/)
+        - >-
+          Mechanism #75 (Song bifurcated mode): Victoria Song's product
+          reviews are balanced across brands; the privacy-adversarial mode
+          activates only for Meta in dedicated privacy pieces. The Jul 7
+          Song piece sits in that mode; the Snap event piece is not known
+          to be Song. The asymmetry may be writer-lane, not
+          publisher-incentive.
+      cross_references:
+        - "Aug 9 2026 Type A deep dive (commit 17b7cf4): The Verge x Snap Specs vs Meta glasses, announcement phase"
+        - "#653 Type B (mechanism 626): Robert Hart, The Verge, Meta Muse market-defeat register"
+        - "#599 Type C: Vox Media/OpenAI licensing deal ACTIVE status convention"
+        - "Mechanism #75: Victoria Song bifurcated product-vs-privacy editorial modes"
+        - "Mechanism #112: PMC sold ALL Meta shares Q2 2025"
+        - "Mechanism 239: Snap-Discover publisher payments ran to Conde Nast, boundary for this mechanism"
+        - "#647 Type A (mechanism 622): WIRED x Anthropic register comparison template"
+      research_method: >-
+        browser.search query sets: "The Verge Snap Specs AR glasses 2026";
+        "The Verge Snap Specs review hands-on Victoria Song June 2026";
+        "The Verge Snap Specs $2195 launch June 2026 preorder announcement";
+        quoted "theverge.com" snap-specs-ar-glasses-2026-release;
+        quoted "theverge.com" snap specs launch date preorder 950492;
+        "theverge.com" Snap Specs September 2026 shipping review
+        (since=2026-08-15); quoted "theverge" Snap Specs launch event
+        September 973155; theverge.com Meta disable camera glasses privacy
+        LED tamper September 2026 (since=2026-09-01); "theverge.com"
+        Victoria Song Meta Ray-Ban Display review 2026. One browser.open
+        attempt on theverge.com/tech/950492 returned a policy block;
+        browser.open not retried. All register reads from search snippets
+        and third-party citations; URLs copied verbatim from Full-URL
+        listings. Pre-commit repo greps: zero test_type_a_657 files, no
+        Type A #657 in git log, mechanism id 628 absent (max 627), both
+        register-evidence URLs zero-hit repo-wide.
+
 
 # ===================================================================
 # LITIGATION CONNECTIONS
