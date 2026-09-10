@@ -26,7 +26,7 @@
 
 **Novelty Verification:** Zero test_type_d_640 files on disk before this run (glob verified, pinned in TestNovelty640); no Type D #640 main commit pre-commit (git log verified by shell); exactly one Type D #640 main commit post-commit, SHA matching the rotation-guard anchor (pinned in TestNovelty640); mechanism_id 618 max and unique pre-commit (no 619 anywhere); no #640 iteration entry pre-commit.
 
-**Commit hashes:** PENDING (patched in followup/doc-sync per #565 convention). count_stats.py --check gate to be run at doc-sync.
+**Commit hashes:** main 437aff7, followup c6af7b3 (ANCHORED_SHA patched per #565 convention; anchor now the main SHA 437aff75c3684a379ad63786ec5589b203a18a9b), doc-sync 47a6e0f. New-file full run 36/36 green post-followup including the 636-640 window guard; count_stats.py --check green: 33742 tests / 968 files, README stats current (stats table 33706->33742 / 967->968 refreshed; Testing narrative refreshed). No analysis.json changes (scorer-validity + integrity sweep only).
 
 ---
 
