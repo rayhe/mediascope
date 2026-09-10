@@ -2479,6 +2479,116 @@ competitor_relationships:
       goal_id: goal_54093bda4145
       scheduled_job_id: mediascope-daily-iteration
 
+    mechanism_622_wired_anthropic_coxon_resignation_register_vs_meta_muse_trust_register_sep10:
+      mechanism_id: 622
+      iteration: 647
+      iteration_type: A
+      iteration_time: "2026-09-10 03:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "WIRED x Anthropic (vs Meta)"
+      finding: >
+        WIRED's two flagship AI stories of the same 24-hour window, Sep 8-9
+        2026, apply opposite registers to Anthropic and Meta. The Anthropic
+        arm, "The AI Researcher Who Just Quit Anthropic Says It's 'Crunch
+        Time for Humanity'" (WIRED, Sep 9), grants Anthropic
+        existential-seriousness credit: interviewee Jacob Coxon (ex-OpenAI,
+        ex-Anthropic pre-training research) says "At OpenAI, many have not
+        deeply internalized the civilizational stakes. At Anthropic, the
+        stakes are well-understood, but they are locked in a race to get
+        there first," and WIRED carries Anthropic alignment-science lead Evan
+        Hubinger's on-record concession that "we do not yet have a plan to
+        solve alignment for superintelligence and are not clearly on track
+        to." The story's gravity centers Anthropic as the lab where
+        humanity's fate is decided, a seriousness-conferring frame, with
+        Anthropic contrasted FAVORABLY against OpenAI. The Meta arm, "Muse,
+        Meta's New Personal AI Agent, Needs You to Trust It" (WIRED, Sep 8,
+        Lily Hay Newman and Maxwell Zeff), frames Meta's biggest consumer AI
+        launch through a trust deficit: the headline makes trust the lede
+        obstacle, and WIRED reports that Meta acknowledges Muse Secure VM is
+        "not technically inaccessible to Meta," undercutting the privacy
+        architecture in the body. Same-week, same-domain (frontier AI
+        agents), opposite register: Anthropic gets gravity, Meta gets
+        skepticism. Illustrative delta (Anthropic minus Meta) +0.55, n=1 per
+        arm, degenerate statistical contract (p=1.0, d=0.0) per the
+        #638/#643 convention; no engine run, no divergence pin.
+        Direction is prediction-adjacent to the mechanism-312 dual-incentive
+        (Condé Nast OpenAI deal), but STRONG confounders dominate: Coxon's
+        resignation was a genuine news event with congressional alarm, and
+        Meta's trust deficit is heavily news-driven (Reuters led the same
+        launch with internal safety concerns; TechCrunch tied it to the $18B
+        settlement). Correlation only, not proof of editorial influence.
+        Not a falsification-family member: the WIRED-Anthropic direct
+        prediction is neutral (no deal), and the observed direction does not
+        contradict any named financial gradient. Register-strand sibling of
+        #642 (MIT TR x Anthropic virtue register, second publication on the
+        seriousness-conferring strand); distinct from mechanisms 118 (Apr-Jun
+        safety-research register), 154 (automode coverage-selection silence),
+        312 (data-retention coverage-selection silence), 451 (MHS standard
+        silence), and the Sep 1-8 IPO-silence mechanism (selection, not
+        register).
+      anthropic_articles:
+        - title: "The AI Researcher Who Just Quit Anthropic Says It's 'Crunch Time for Humanity'"
+          journalist: "(byline not captured this run; wired.com direct fetch policy-blocked)"
+          date: "2026-09-09"
+          wired_url: "(NOT CAPTURED: no canonical WIRED URL invented per the no-canonical-URL rule)"
+          attribution_mirror_url: "https://www.15minutenews.com/article/2026/09/09/282659429/the-ai-researcher-who-just-quit-anthropic-says-its-crunch-time-for-humanity/"
+          quote_source_url: "https://aiweekly.co/alerts/anthropic-researcher-coxon-quits-calls-ai-race-endgame"
+          register: "existential_seriousness_virtue"
+          key_framing: "Coxon: 'At OpenAI, many have not deeply internalized the civilizational stakes. At Anthropic, the stakes are well-understood, but they are locked in a race to get there first'; Hubinger on-record: 'we do not yet have a plan to solve alignment for superintelligence and are not clearly on track to'; colleagues describe the moment as 'crunchtime' or 'endgame'; 'the mini Manhattan project inside Anthropic, the problem with alignment, and why AI labs have just a few years left to make their systems safe'"
+          source_note: "WIRED direct fetch policy-blocked this run; headline and dek verified via the 15minutenews mirror (verbatim citation); interview quotes via aiweekly.co (explicitly attributed 'originally reported by wired.com'); snippet-bounded per the no-canonical-URL rule"
+          manual_illustrative_tone: 0.25
+      meta_articles:
+        - title: "Muse, Meta's New Personal AI Agent, Needs You to Trust It"
+          journalist: "Lily Hay Newman, Maxwell Zeff"
+          date: "2026-09-08"
+          url: "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it/"
+          url_attribution: "URL cited verbatim by third-party mirrors (medium.com/@punjabitimetech, ethicalhackingnews.com); wired.com direct fetch policy-blocked"
+          dek: "Designed to compete with OpenClaw and Instinct, the company says Muse can do everything from sell your car to book you a plane ticket."
+          register: "trust_deficit_skepticism"
+          key_framing: "Headline makes trust the frame ('Needs You to Trust It'); WIRED reports Meta acknowledges Muse Secure VM is 'not technically inaccessible to Meta' even though company policy bars access; the launch story is led by the trust obstacle rather than the product"
+          source_note: "headline, dek, authors, and date (Sep 8, 2026, 8:12 PM) verified via biztoc/symby/y0-exchange mirrors; Trust-VM quote via techrepublic.com citing WIRED"
+          manual_illustrative_tone: -0.30
+      financial_context:
+        predictor: "second_order_normalization"
+        prediction: "softer_than_expected"
+        chain: "Condé Nast multiyear OpenAI content licensing deal (Aug 2024, Reuters); $0 direct Anthropic tie; $0 Meta tie. Mechanism-312 hypothesis: softer Anthropic industry-normalization protects OpenAI practices from parallel scrutiny."
+        status: "correlate only, not proof of editorial influence; WIRED-Anthropic direct prediction is neutral, so the second-order theory is inferential and disclosed as such"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = Anthropic arm, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.25]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.30]
+        target_avg: 0.25
+        peer_avg: -0.30
+        delta_manual_illustrative: 0.55
+        delta_calc: "0.25 - (-0.30) = 0.55"
+        engine_degenerate: "n=1 vs n=1: degenerate statistical contract per the #638/#643 convention (Welch t and Cohen's d degenerate: p=1.0, d=0.0). Engine NOT run; no divergence pin (divergence pins require engine significance, which cannot occur on n=1 arms)."
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)"
+      confounders_ranked:
+        strong:
+          - "News-value on the merits: Coxon's resignation was a genuine event (resignation X thread drew 76M views per aiweekly.co; bipartisan congressional alarm; WSJ exclusive Sep 8; Sanders/Casar superintelligence bill same week). WIRED interviews the news-maker; the gravity framing inherits from Coxon's own testimony, not WIRED editorial invention."
+          - "Meta's earned trust deficit: Reuters led the same Muse launch with 'despite internal concerns that the technology mismanages its access to sensitive personal data'; TechCrunch tied the launch to the $18B multistate settlement 6 days earlier. Trust-deficit framing has an evidentiary basis independent of any incentive."
+        moderate:
+          - "Genre skew: a whistleblower-exit interview (existential human drama) and a product launch (trust/privacy) are different beats with different natural registers; the register gap partly reflects form, not just target."
+          - "The Coxon piece is adversarial to the AI industry INCLUDING Anthropic ('gambling with our lives,' 'not clearly on track'), not puff coverage. The asymmetry is register (seriousness/virtue-attribution), not positivity, and is narrower than the +0.55 illustrative delta implies."
+          - "Byline skew: the Meta arm is a security-beat byline (Newman, Zeff); the Coxon interviewer byline was not captured. Writer-level frames may differ independent of institutional register."
+        weak:
+          - "n=1 per arm: directional only; degenerate statistical contract; verdict-invariant under rounding (delta 0.55 exact at 2dp)."
+          - "WIRED covered Anthropic adversarially on Jul 31 2026 (2 breach articles, per mechanism 154), so the softness claim is bounded to register and timing, not a blanket firewall."
+      counterevidence:
+        - "WIRED published 2 adversarial Anthropic articles on Jul 31 2026 (cybersecurity breaches); adversarial capacity toward Anthropic exists."
+        - "The Coxon piece's own critical content toward Anthropic ('not clearly on track,' 'gambling with our lives') cuts against a pure-virtue reading; the virtue attribution ('stakes are well-understood') is Coxon's own contrast versus OpenAI, relayed by WIRED."
+        - "The WIRED Muse piece is not a hit piece: it reports the Secure VM architecture, red-team/bug-bounty ($300K payouts) vetting, and Sentinel controls. The register gap is a frame gap (trust as lede), not factual one-sidedness."
+      cross_references:
+        - "#642 (MIT TR x Anthropic Pentagon-refusal virtue register; this is the second publication on the seriousness-conferring register strand, distinct articles and events)"
+        - "mechanism 118 (WIRED safety-research framing inversion, Apr-Jun window; this is the Sep 8-9 resignation/launch register pair)"
+        - "mechanism 312 (WIRED Anthropic data-retention coverage-selection silence; the dual-incentive hypothesis this pair tests at register level)"
+        - "mechanism 154 (WIRED Anthropic automode-default coverage-selection silence; the Jul 31 breach articles are this run's adversarial-capacity control)"
+        - "mechanism 451 (WIRED Anthropic MHS standard silence; distinct beat)"
+        - "#404 (Atlantic x Anthropic mitigation-credit asymmetry; publication-level seriousness-conferring family)"
+      novelty: "First dedicated Type A mechanism on the WIRED Coxon-resignation / Muse-launch 24-hour register pair. Distinct from mechanisms 118, 154, 312, 451 (different registers and windows) and the Sep 1-8 IPO-silence mechanism (selection, not register). Zero mechanism_622 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 621."
+      research_method: "3 browser.search query sets this run: (1) WIRED Anthropic September 2026; (2) WIRED Meta Muse AI assistant launch September 2026; (3) WIRED Meta Muse Secure VM trust. All URLs copied verbatim from Full-URL listings; Coxon quotes via aiweekly.co (attributed originally reported by wired.com); WIRED Coxon URL NOT invented (wired.com policy-blocked, no-canonical-URL rule); no zero-coverage claims per iteration-492 rule; no em dashes."
   amazon:
     financial_tie: licensing
     estimated_value: undisclosed, multi-year (2 deals)
