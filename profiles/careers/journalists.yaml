@@ -17595,6 +17595,102 @@ journalists:
       artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer trust-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
       novelty: 'First dedicated Type B mechanism on Anthony Ha (zero journalist entries pre-commit; entry created this run). Zero test_type_b_633 files on disk (glob verified this run). No Type B commit with 633 in the title (git log --grep verified this run). Both tones hand-assigned this run (MANUAL ILLUSTRATIVE); the Sep 6 2026 Anthropic settlement byline is a separate Ha byline read in #629, not rescored. Mechanism id 614 is the next free profiles mechanism id (max pre-commit 613). Rotation: 632 A -> 633 B.'
       research_method: '3 browser.search query sets this run: (1) TechCrunch Muse launch (surfaced the Sep 8 2026 Muse article, attribution resolved to Sarah Perez per webpronews line 27, rejected as studied); (2) Max Zeff AI reporter TechCrunch WIRED (no clean Meta-vs-competitor pair: Zeff appears in the corpus only in competitor-entities, no journalists.yaml entry, insufficient exact byline URLs); (3) TechCrunch weekend editor Anthony Ha (surfaced Ha''s author page; the Aug 16 same-day AI-category Meta-vs-Anthropic pair was identified there). Both arms opened first-hand via browser.open (verbatim URLs from the open result headers); Ha''s author page opened first-hand (verbatim http URL from the run''s own fetch). Byline confirmed on the Anthropic arm''s bio footer and the author page''s Latest listing. Kurt Wagner rejected (already studied, #508 Type B). No zero-coverage claims per iteration-492 rule (both arms are positive Ha bylines). No em dashes.'
+- name: Sarah Perez
+  notes: 'TechCrunch Consumer News Editor. Reporter at TechCrunch since August 2011; previously 3+ years at ReadWriteWeb; IT background across banking, retail, and software. Covers consumer tech and AI, including trust-and-privacy angles on both Meta and Google.'
+  career:
+  - beat: consumer tech, AI
+    event_type: hired
+    notes: 'Consumer News Editor, TechCrunch; reporter since August 2011. Author-page bio footer: previously ReadWriteWeb (3+ years); prior IT work in banking, retail, software.'
+    publication: techcrunch
+    role: consumer_news_editor
+    source_url: https://techcrunch.com/author/sarah-perez/
+  source_urls:
+  - https://techcrunch.com/author/sarah-perez/
+  multi_publication: false
+  competitor_coverage:
+    type_b_638_sarah_perez_techcrunch_meta_muse_vs_google_gemini_spark_trust_register_sep09:
+      iteration: 638
+      mechanism_id: 617
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-09 18:00 PDT'
+      block_key: 'type_b_638_sarah_perez_techcrunch_meta_muse_vs_google_gemini_spark_trust_register_sep09'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-writer trust-register comparison. Question: does Sarah Perez, TechCrunch''s Consumer News Editor, apply the same trust register to Meta''s consumer AI agent as to Google''s, in the same week and category? Two Perez bylines in consumer AI agents, 4 days apart: (a) the Meta arm, Sep 8 2026, the Muse launch piece whose headline asks "Will consumers trust it?" and whose body recites Meta''s privacy-violation history; (b) the Google arm, Sep 4 2026, the Gemini Spark Google Photos integration piece, a capability-news register with zero trust interrogation despite Spark accessing the user''s entire photo library. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Meta debuts its Muse AI agent. Will consumers trust it?'
+        url: https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/
+        date: '2026-09-08'
+        author_byline: Sarah Perez
+        publication: techcrunch
+        role: Consumer News Editor
+        genre: consumer launch news (trust-framed)
+        key_quotes:
+        - 'Less than two weeks after Meta agreed to a massive $18 billion multistate settlement in a lawsuit over social media''s consumer harms, the company announced its biggest bet on consumer AI to date - and one that requires significantly more trust than social media ever did.'
+        - 'To use Muse, consumers will have to trust Meta with more of their personal information than ever before.'
+        - 'Could Meta''s history hurt Muse adoption?'
+        - 'Meta has a history of proclaiming one thing and doing another. In 2011, for instance, the tech giant settled with the FTC over charges that it deceived consumers by making users'' private information public without their approval.'
+        - 'Time will tell if this personal connection and the utility Muse provides are enough for consumers to once again trust Meta with their personal information.'
+        register_notes: 'Trust-interrogating launch register. The HEADLINE poses the trust question. The lede couples the launch to the $18B multistate settlement. A dedicated "Could Meta''s history hurt Muse adoption?" section recites Meta''s privacy-violation history 2011-2026 (2011 FTC charges, 2019 $5B FTC settlement, 2023 FTC privacy-order charge, plaintext password storage, Cambridge Analytica, congressional testimony, $942M New Mexico order, pending school-district and personal-injury cases). Meta''s own safeguards (Muse Secure VM, Sentinel, no ads-data sharing, opt-out, confidential version) are relayed as "claims" that "will require deeper investigation by security experts."'
+        tone_score: -0.45
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run)'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/sarah-perez/
+        - https://www.webpronews.com/metas-muse-ai-agent-tests-the-limits-of-consumer-trust/
+      google_arm:
+        title: 'Google''s Gemini Spark can now manage your Google Photos library'
+        url: https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/
+        date: '2026-09-04'
+        author_byline: Sarah Perez
+        publication: techcrunch
+        role: Consumer News Editor
+        genre: consumer product news (capability register)
+        key_quotes:
+        - 'Google is integrating more of its services with AI, as the company announced that its personal agent, Gemini Spark, can now manage your Google Photos library.'
+        - 'That means you can ask Gemini Spark to execute tasks in Google Photos, like editing images, curating albums, automatically creating shared albums with your favorite shots, turning concert flyer photos into calendar appointments, running workflows, and more.'
+        - 'But I''ve always dreamed of having a power agent to help me get the most out of my 143,206 photos and videos. And that day has come! (Google Photos lead Shimrit Ben-Yair on X, quoted without skeptical counterweight)'
+        - 'Announcements like this from Google are part of the problem. While they may make certain tasks easier, on their own, such features don''t seem revolutionary or even, really, necessary.'
+        register_notes: 'Capability-news register. The HEADLINE announces a capability. No trust question in the headline. Zero interrogation of Google''s privacy record despite Gemini Spark being granted access to the user''s entire Google Photos library - the 143,206-photo quote is presented as a dream come true, with no "could Google''s history hurt Spark adoption" counterpart section anywhere in the piece. The single skeptical paragraph targets industry AI-hype ("part of the problem", "not revolutionary, not necessary"), not Google''s trustworthiness.'
+        tone_score: 0.05
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run)'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/sarah-perez/
+      asymmetry_scorer:
+        meta_tone: -0.45
+        google_tone: 0.05
+        delta_meta_minus_google: -0.5
+        delta_calc: '-0.45 - 0.05 = -0.50'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'News-peg skew: Muse was a brand-new product LAUNCH (new app, new data flows, a launch peg invites trust questions); Gemini Spark Photos was a feature EXPANSION of an existing May 2026 product. Launches invite trust scrutiny; expansions invite capability coverage.'
+      - strength: 'STRONG'
+        text: 'Settlement recency: Meta''s $18B multistate settlement was about two weeks old at publication (plus the $942M New Mexico order); Google had no comparable fresh privacy event in the window. The history section has a genuine timeliness basis.'
+      - strength: 'MODERATE'
+        text: 'Writer history: Perez applies scrutiny to Google too ("If you use Google, you''re training its AI. Here''s how to opt out." Jul 6 2026). This pair is a product-cycle comparison, not a reporter-trait claim.'
+      - strength: 'MODERATE'
+        text: 'The Meta piece relays Meta''s safeguards in detail (Secure VM, Sentinel, no ads sharing, opt-out) and frames them as "claims" needing "deeper investigation" - trust-framed but evidence-bearing, not a pure hit piece.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm; 4 days apart (Sep 4 vs Sep 8), not same-day; tones hand-assigned illustrative, not empirical corpus scores.'
+      verdict: 'WITHIN-WRITER TRUST REGISTER. Perez asks "Will consumers trust it?" of Meta''s Muse in the headline and devotes a "Could Meta''s history hurt Muse adoption?" section to Meta''s 2011-2026 privacy-violation record (-0.45 illustrative); four days earlier she announces Google''s Gemini Spark gaining access to users'' entire Google Photos libraries in a capability-news register (+0.05 illustrative) with zero trust interrogation of Google - the mirror question ("Could Google''s history hurt Spark adoption?") is never posed. Illustrative delta (Meta minus Google) = -0.50. Directionally consistent with the harder-register-on-Meta pattern in the corpus, but NOT a falsification pin: no named financial gradient predicts this pair (no documented TechCrunch/Yahoo-Google payer relationship; the Apollo-Anthropic XPV chain documented in #633 predicts softer ANTHROPIC coverage, not Google). Correlation is not causation per the Aug 28 rule; the STRONG news-peg and settlement-recency confounds carry the gap before any incentive effect is invoked; no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin. First Type B mechanism on Sarah Perez.'
+      financial_context: 'TechCrunch is owned by Yahoo, owned by Apollo Global Management. Apollo simultaneously participates in the $35B to $100B Anthropic XPV infrastructure financing (Aug 2026, competitor-entities.yaml) and owns the publisher - but that chain predicts softer ANTHROPIC coverage, and this pair''s comparator is GOOGLE, not Anthropic. No documented TechCrunch-to-Meta, TechCrunch-to-Google, or Yahoo-to-Google content-licensing deal in the corpus. The observed -0.50 illustrative gap therefore has no named incentive gradient under it. Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#210 (Type A, iteration 218: the prior Perez mechanism - three-entity camera-wearable study, Google +0.75 / Meta -0.80 / Apple +0.60, May-Aug 2026 window; different study type, different category, different article set)'
+      - '#633 (Type B: Ha TechCrunch Meta-vs-Anthropic within-writer sibling; Ha''s run explicitly deferred the Perez Muse piece as studied - this run takes it as the Meta arm of a NEW matched pair)'
+      - '#632 (Type A: WSJ Muse launch +0.40, publication-level sibling in the Sep 2026 Meta AI-agent news cycle)'
+      - '#305 (Bellan TechCrunch vocabulary inversion Meta -0.20 / Anthropic +0.15, Aug 2026 window; TechCrunch harder-on-Meta family)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer trust-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First dedicated Type B mechanism on Sarah Perez (zero journalists.yaml competitor_coverage entries pre-commit; entry created this run). Zero test_type_b_638 files on disk (glob verified this run). No Type B commit with 638 in the title (git log --grep verified this run). Both TechCrunch URLs zero repo-wide hits pre-commit (git-grep verified this run). Both tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 617 is the next free profiles mechanism id (max pre-commit 616). #210 (Type A, iteration 218) studied Perez on camera wearables (May-Aug 2026 window) - different study type, different category, different article set; it is cross-referenced, not duplicated. #633 explicitly deferred the Muse piece ("rejected as studied") - this run studies it as the Meta arm of a NEW matched pair against Gemini Spark (Sep 4 2026, byline confirmed on Perez''s TechCrunch author-page Latest listing). Rotation: 637 A -> 638 B.'
+      research_method: 'Search sequence this run: (1) Adrienne So WIRED Meta glasses - surfaced the Apr 19 2026 So "face-wearable war" review relay; rejected, already studied (#457 Type B). (2) Joanna Stern WSJ Muse + Christopher Mims WSJ Muse - no clean within-writer pair surfaced. (3) WSJ "A Quieter Kind of AI Breakthrough" opened first-hand - within-piece Meta-vs-Anthropic register observed but byline unattributable (newsletter desk; Tom Loftus editor); rejected. (4) Geoffrey Fowler WaPo smart glasses - rejected, already studied (#493 Type B). (5) Sarah Perez TechCrunch author page - surfaced the Sep 8 2026 Muse piece (byline confirmed via the piece''s own bio footer and the webpronews Sep 8 attribution) and the Sep 4 2026 Gemini Spark Photos piece in her Latest listing. Both arms opened first-hand via browser.open (verbatim techcrunch.com URLs from the open result headers). No zero-coverage claims per iteration-492 rule (both arms are positive Perez bylines). No em dashes.'
+
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
