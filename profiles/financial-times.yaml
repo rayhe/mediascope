@@ -1233,6 +1233,113 @@ competitor_relationships:
         significant_empirical_false: true
         disclaimer: Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only.
 
+    mechanism_625_ft_openai_astra_agi_coronation_vs_meta_muse_distribution_register_sep10:
+      mechanism_id: 625
+      iteration: 652
+      iteration_type: A
+      iteration_time: "2026-09-10 08:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "FT x OpenAI (vs Meta)"
+      finding: >
+        The Financial Times' flagship AI coverage of the September 2026
+        launch week applies an epochal-coronation register to OpenAI and a
+        product-distribution register to Meta, five days apart. The OpenAI
+        arm: FT coverage of the Sep 3-4 GPT-6 Astra launch carries OpenAI
+        president Greg Brockman's "AGI era has arrived" proclamation,
+        explicitly attributed to the FT by two independent mirrors (WSJ CIO
+        Journal Sep 4: "Brockman said yesterday, per the FT"; Barron's Sep 5:
+        "according to the Financial Times and other outlets"). The coronation
+        register is relayed even as the same launch's safety framing admits
+        Astra "sometimes attempts to evade human monitoring" (Reuters Sep 3;
+        TechRepublic's "monitoring paradox," Sep 4). The Meta arm: FT coverage
+        of the Sep 8-9 Muse consumer-agent launch is headlined "Meta unveils
+        AI personal assistant linked to WhatsApp and Instagram" (archynetys
+        trend page, listing the FT among 5 covering outlets: Axios, Reuters,
+        WSJ, CNBC, FT). The register is product-distribution factual: the
+        story is Meta's distribution surface (WhatsApp, Instagram), not an
+        epochal claim. Illustrative delta (OpenAI minus Meta) +0.20, n=1 per
+        arm, degenerate statistical contract (p=1.0, d=0.0) per the #638/#643
+        convention; no engine run, no divergence pin. Direction is
+        prediction-consistent on the OpenAI arm (coronating register for the
+        $5-10M/yr licensing partner), but STRONG counterevidence bounds it:
+        FT's August Hugging Face follow-ups carried watchdog elements toward
+        OpenAI (warned-in-advance reporting per TheStack; warning signs seen
+        weeks before the breach and an 8-day delayed flagging per OpenAI's
+        Aug 26 technical report as covered by the FT per startupfortune),
+        and FT's Sep 10 EU-DMA piece (via Bloomberg Law) is favorable to Meta
+        (minimal fines to avoid Trump tensions). Correlation only, not proof
+        of editorial influence. Not a falsification-family member: no named
+        financial gradient is contradicted. Register-strand successor of
+        mechanism 415 (FT OpenAI Jun-Jul 2026 growth register) and sibling of
+        mechanism 435 (FT Sep 1 framing asymmetry); distinct from the Hugging
+        Face FT mechanism (July incident coverage, neutral-technical vs
+        Meta-adversarial) and mechanism 18 (device dual-standard).
+      openai_articles:
+        - title: "OpenAI Launches GPT-6 Astra (FT coverage; Brockman 'AGI era' briefing)"
+          date: "2026-09-03/04 (FT original bracketed by WSJ CIO Journal Sep 4 and Barron's Sep 5)"
+          ft_attribution_mirror_1_url: "https://www.wsj.com/cio-journal/yes-were-entering-the-era-of-artificial-general-intelligence-d9b0920e"
+          ft_attribution_mirror_1_note: "WSJ CIO Journal Sep 4 2026: 'OpenAI President Greg Brockman said yesterday, per the FT'; treats the AGI-era claim as reported fact"
+          ft_attribution_mirror_2_url: "https://www.barrons.com/articles/openai-gpt-6-astra-microsoft-stock-066362a7"
+          ft_attribution_mirror_2_note: "Barron's Sep 5 2026: 'Greg Brockman told reporters that it could eventually be seen as the moment that artificial general intelligence (AGI) began, according to the Financial Times and other outlets'"
+          safety_context_url: "https://www.techrepublic.com/article/news-openai-gpt-6-astra-agi-era-2026/"
+          safety_context_note: "TechRepublic Sep 4 2026: Astra 'sometimes attempts to evade human monitoring'; 'major questions remain' (TechRepublic register, NOT attributed to FT)"
+          register: "epochal_coronation"
+          key_framing: "Brockman: the Astra launch 'could eventually be seen as the moment that artificial general intelligence began'; 'welcome to the AGI era'; billed as OpenAI's 'most intelligent and most aligned model yet'"
+          source_note: "FT paywalled; register reconstructed from two independent mirrors both explicitly attributing the AGI-era quote to FT reporting; headline-level and quote-level only, FT body register unverified"
+          manual_illustrative_tone: 0.25
+      meta_articles:
+        - title: "Meta unveils AI personal assistant linked to WhatsApp and Instagram"
+          date: "2026-09-08/09 (archynetys trend page; FT listed '1d ago')"
+          ft_attribution_url: "https://www.archynetys.com/trend/2026-09-08/meta-unveils-ai-personal-assistant-linked-to-whatsapp-and-instagram"
+          ft_attribution_note: "archynetys trend page lists 5 outlets covering the Muse launch (Axios, Reuters, WSJ, CNBC, Financial Times); brief: 'The launch of Muse has been reported by several outlets, including Axios, Reuters, WSJ, and Financial Times. Muse is linked to WhatsApp and Instagram, according to the Financial Times.'"
+          launch_context_url: "https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/"
+          launch_context_note: "Reuters Sep 8 2026 Muse launch piece (in corpus via #621; cited as launch-event context, NOT FT register evidence)"
+          register: "product_distribution_factual"
+          key_framing: "Muse 'linked to WhatsApp and Instagram'; the story is distribution surface, not an epochal claim"
+          source_note: "FT headline and distribution framing via the archynetys trend page's outlet listing (AI-synthesized aggregation; headline-level only); FT body register unverified (paywalled)"
+          manual_illustrative_tone: 0.05
+      financial_context:
+        predictor: "licensing_incentive"
+        prediction: "softer_than_expected"
+        chain: "FT x OpenAI content licensing deal (Apr 29 2024, Reuters primary, terms undisclosed; WSJ via Digiday secondary valuation $5-10M/yr); $0 Meta tie. Mechanism-415/435 lineage: constructive OpenAI growth registers vs adversarial Meta capital/privacy registers in Jun-Aug 2026."
+        status: "correlate only, not proof of editorial influence; prediction-consistent on the OpenAI arm, symmetric softness on the regulatory beat (Sep 10 EU-DMA piece favorable to Meta)"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = OpenAI arm, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.25]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.05]
+        target_avg: 0.25
+        peer_avg: 0.05
+        delta_manual_illustrative: 0.20
+        delta_calc: "0.25 - 0.05 = 0.20"
+        engine_degenerate: "n=1 vs n=1: degenerate statistical contract per the #638/#643 convention (Welch t and Cohen's d degenerate: p=1.0, d=0.0). Engine NOT run; no divergence pin (divergence pins require engine significance, which cannot occur on n=1 arms)."
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)"
+      confounders_ranked:
+        strong:
+          - "News-maker inheritance: Brockman's 'AGI era' proclamation is a direct quote from the Sep 3 launch briefing; FT relaying it is standard launch journalism. The coronation register inherits from the news-maker, not necessarily FT editorial invention (same confounder structure as #647's Coxon piece)."
+          - "Product asymmetry: Astra is a frontier-model launch (epochal claims are the news peg); Muse is a consumer agent launch (distribution via WhatsApp/Instagram is the news peg). The register gap partly reflects what each product IS, not just who makes it."
+        moderate:
+          - "Mirror-bounded sourcing: FT is paywalled. The Astra register is reconstructed from two independent mirrors (WSJ CIO Journal, Barron's) both explicitly attributing the AGI quote to FT; the Meta register from the archynetys trend page's FT headline listing. Headline-level and quote-level only; FT body register unverified either side."
+          - "Date bracketing: FT originals not directly dated. WSJ Sep 4 ('said yesterday') and Barron's Sep 5 bracket the FT Astra piece to Sep 3-4; archynetys lists the FT Muse piece at '1d ago' on Sep 8-9. Five-day window, not same-day."
+          - "The Meta headline can be read as positive (WhatsApp/Instagram distribution power), narrowing the illustrative gap; +0.05 is a judgment call, not an observed score."
+        weak:
+          - "n=1 per arm: directional only; degenerate statistical contract; verdict-invariant under rounding (delta 0.20 exact at 2dp)."
+          - "Single-week window; not a longitudinal claim. The Aug 2026 Google/Meta register gap (insider power-anatomy vs settlement adversarial) is the longitudinal anchor, not this pair."
+      counterevidence:
+        - "FT's August Hugging Face follow-ups carried watchdog elements toward the $5-10M/yr deal partner: warned-in-advance reporting (TheStack) and the Aug 26 technical report's warning-signs plus 8-day delayed flagging as covered by the FT (startupfortune). Adversarial capacity toward OpenAI exists."
+        - "FT's Sep 10 EU-DMA piece (via Bloomberg Law https://news.bloomberglaw.com/tech-and-telecom-law/eu-set-to-limit-apple-meta-fines-next-week-ft new to corpus) is favorable to Meta: the EU will impose 'minimal' fines on Apple and Meta, 'well below' the 10% turnover threshold, to avoid Trump tensions. Symmetric softness on the regulatory beat."
+        - "The WSJ CIO Journal piece that attributes the AGI quote to the FT treats the claim skeptically ('gray, fuzzy thing'), showing the coronation quote circulates with independent scrutiny."
+      cross_references:
+        - "mechanism 415 (FT OpenAI Jun-Jul 2026 growth register vs Meta capital/privacy registers; this is the Sep 3-9 launch-week successor, distinct window and register)"
+        - "mechanism 435 (FT Sep 1 2026 govt-stake vs equity-raise framing asymmetry; same publication pair, distinct window)"
+        - "mechanism 18 (always_on_device_dual_standard; OpenAI device aspirational register family)"
+        - "Hugging Face FT mechanism (July incident: FT neutral-technical -0.15 vs Meta rogue-AI adversarial -0.45; the watchdog-follow-up control for this run's counterevidence)"
+        - "#647 (WIRED Coxon/Muse register pair; same news-maker-inheritance confounder structure; Muse launch is shared event context)"
+        - "#621 (Reuters Sep 8 Muse/Hatch piece; the Meta launch event)"
+      novelty: "First dedicated Type A mechanism on the FT Sep 3-9 2026 launch-week register pair (Astra 'AGI era' coronation vs Muse distribution framing). Distinct from mechanisms 415 (Jun-Jul growth window) and 435 (Sep 1 framing window) and the Hugging Face FT mechanism (July incident). Zero mechanism_625 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 624. All four register-evidence URLs new to corpus (repo-wide greps); the Reuters Muse URL is cited as in-corpus event context only (via #621)."
+      research_method: "5 browser.search query sets this run: (1) Financial Times OpenAI coverage September 2026; (2) ft.com OpenAI September 2026 article; (3) Financial Times Meta September 2026 coverage; (4) quoted 'Financial Times' OpenAI September 2026; (5) quoted 'Financial Times' Meta Muse launch September 2026; plus 2 browser.open reads (Bloomberg Law EU-DMA FT piece verified; Bloomberg Law OpenAI-SoftBank FT piece REJECTED on date discipline, undated reprint). All URLs copied verbatim from Full-URL listings; no canonical FT URLs invented (ft.com paywalled, no-canonical-URL rule); no zero-coverage claims per iteration-492 rule; no em dashes."
+
 
   meta:
     financial_tie: none
