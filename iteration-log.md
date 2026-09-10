@@ -29,7 +29,7 @@
 
 **Novelty Verification:** Zero test_type_c_639 files on disk before this run (glob verified). No #639 in git log (--grep verified). Zero mechanism_618 keys repo-wide (grep verified). Max numeric key-form mechanism id pre-commit 616 (mechanism_id 617 lives in journalists.yaml via #638).
 
-**Commit hashes:** PENDING (patched in followup/doc-sync per #565 convention).
+**Commit hashes:** main ae794a6, followup c313a05 (PATCH_ME_IN_FOLLOWUP patched per #565 convention; anchor now the main SHA ae794a6), doc-sync PENDING.
 
 ---
 
