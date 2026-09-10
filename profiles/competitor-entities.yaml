@@ -19118,3 +19118,73 @@ associated_press_triple_ai_payer_wire_architecture_615:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per number 540 and number 544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+
+time_openai_renewal_window_dual_channel_618:
+    mechanism_id: 618
+    iteration: 639
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-09'
+    time_pdt: '19:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'Time x OpenAI strategic partnership renewal window (Jun 27 2024 multi-year deal, 101-year archive) plus dual-channel incentive geometry - direct OpenAI licensing leg plus Benioff-Salesforce-Anthropic owner-equity leg (mechanism 36), Meta $0 on both channels'
+    overview: 'FIRST dedicated corpus mechanism for the Time x OpenAI direct licensing leg (previously only a one-line passing mention inside mechanism 36). Extends the #609 first-gen OpenAI publisher renewal cohort: FT (Apr 29 2024), Atlantic (May 29 2024), Time (Jun 27 2024), Conde Nast (Aug 20 2024). Bounded Sep 2026 searches surface NO renewal, extension, renegotiation, or termination reporting for the Time leg: status UNRESOLVED, treated ACTIVE per the #599 Vox convention. Dual-channel geometry: Time collects direct OpenAI licensing money (leg 1) and sits inside the Benioff to Salesforce to Anthropic owner-equity chain (leg 2, mechanism 36); Meta collects $0 on both channels. Qualitatively BOUNDS the falsification family; no new tone arrays scored.'
+    legs:
+      openai_licensing_leg:
+        partner: 'OpenAI'
+        announced: '2024-06-27'
+        term: 'multi-year (stated; duration not specified in announcement coverage)'
+        financial_terms: 'undisclosed'
+        what_openai_gets: 'Current and historical Time content from the last 101 years (1923 to 2024) to enhance OpenAI products and display in response to user queries, with citation and link back to Time.com'
+        what_time_gets: 'Access to OpenAI technology to develop new products and audiences; strategic input on refining journalism delivery in ChatGPT and other OpenAI products; Preferred Publisher Program enhanced visibility and commercial benefits'
+        principals_quoted:
+        - 'Mark Howard, Time COO: "Throughout our 101-year history, Time has embraced innovation" - partnership advances mission to expand access to trusted information globally'
+        - 'Brad Lightcap, OpenAI COO: "We are partnering with Time to make it easier for people to access news content through our AI tools, and to support reputable journalism by providing proper attribution to original sources"'
+        primary_sources:
+        - 'https://www.thewrap.com/time-openai-partnership/ (multi-year deal, 101 years archive, citation and link, Howard and Lightcap quotes; first reported by Axios)'
+        - 'https://www.silicon.co.uk/e-innovation/artificial-intelligence/openai-signs-content-agreement-with-time-570009 (multi-year, terms undisclosed, Time gets OpenAI tech, Preferred Publisher Program context)'
+        - 'https://www.silicon.co.uk/e-innovation/artificial-intelligence/openai-signs-content-agreement-with-time-570009/amp (AMP mirror of the same)'
+        - 'https://www.theregister.com/2024/06/28/openai_google_ai/?td=readmore (multi-year, archive back to 1923, RAG integration note, cash amount not disclosed, "no word on how much cash is changing hands")'
+        - 'https://srnnews.com/openai-signs-multi-year-content-deal-with-time-magazine/ (Reuters relay Jun 27 2024, terms not disclosed)'
+        - 'https://www.adweek.com/morning-media-newsfeed/as-time-signs-content-licensing-deal-with-openai/ (Axios first report, multiyear, 101-year archive, Time joins AP, DotDash Meredith, Axel Springer)'
+        - 'https://mexicobusiness.news/cloudanddata/news/time-magazine-licenses-editorial-archive-openai-chatgpt (Jun 28 2024, Preferred Publisher Program enhanced visibility and commercial benefits)'
+      renewal_window:
+        status: 'UNRESOLVED'
+        bounded_searches:
+        - 'TIME OpenAI strategic partnership renewal 2026 (returned only 2024 announcement coverage; no renewal reporting)'
+        - 'TIME OpenAI multi-year partnership June 2024 Brad Lightcap 101 years archive terms (returned only 2024 announcement coverage; no renewal reporting)'
+        convention: 'Treated ACTIVE per the #599 Vox convention (no termination reporting implies continued activity)'
+        cohort: 'Fourth member of the first-gen OpenAI publisher renewal cohort: #609 mapped FT (Apr 29 2024), Atlantic (May 29 2024), Conde Nast (Aug 20 2024); Time (Jun 27 2024) slots chronologically between Atlantic and Conde Nast'
+        positive_control: 'OpenAI DID renew a local-news publisher deal in Jul 2026 ($5M, per #609), so renewals happen AND get trade-press coverage; the absence for Time is informative, not a non-reporting artifact'
+      benioff_anthropic_equity_leg:
+        owner: 'Marc Benioff (acquired Time 2018 for $190M)'
+        chain: 'Salesforce invested more than $300M in Anthropic starting early 2023, per Benioff to the WSJ (Apr 2026); Benioff is Salesforce CEO and Time owner. Structural asymmetry: Salesforce would have invested in OpenAI as well, but OpenAI''s initial contract with Microsoft prohibited it (per Benioff, same WSJ piece) - the OpenAI equity channel was contractually closed while the Anthropic channel stayed open'
+        coverage_evidence: 'Time named Anthropic the World''s Most Disruptive Company (Aug 2026); WEEX directly noted the conflict, per mechanism 36 (salesforce_benioff_time chain block)'
+        meta_side: 'none documented (time_meta_deal: none, per the mechanism 36 block)'
+        owner_posture_tension: 'Benioff said at Davos that AI companies ripped off intellectual property: "All the training data has been stolen" (Bloomberg Law, Bloomberg House WEF interview). The owner publicly accusing AI firms of IP theft while his magazine holds an OpenAI licensing deal and his company holds a large Anthropic equity position complicates any naive pay-for-tone reading - documented as counterevidence, not ignored.'
+    confounders_ranked:
+    - strength: 'STRONG'
+      text: 'All legs have undisclosed financial terms - the mapping is structural, not sized. The OpenAI leg is multi-year with no stated duration, so no expiry date can be computed; UNRESOLVED cuts both ways.'
+    - strength: 'STRONG'
+      text: 'Owner-posture confound: Benioff''s public "stolen training data" accusation (Davos, Bloomberg Law) runs AGAINST a naive pay-for-tone reading of the OpenAI leg. The deal exists alongside owner hostility toward AI data practices, and the Salesforce-Anthropic equity position dwarfs any plausible Time licensing payment in personal-wealth terms.'
+    - strength: 'MODERATE'
+      text: 'Salesforce is a dual-vendor AI customer (uses Anthropic Claude AND OpenAI models for Agentforce, per the WSJ Apr 2026 piece), so the corporate relationship with OpenAI is neither purely adversarial nor purely friendly.'
+    - strength: 'WEAK'
+      text: 'Bounded searches may miss renewal reporting behind paywalls or in non-English press; absence of reporting is not proof of absence of a deal event.'
+    counterevidence:
+    - 'Benioff''s Davos IP-theft accusation is adversarial toward the licensing counterparty itself - hard to square with a purchased-editorial-softening story.'
+    - 'Time''s Anthropic "Most Disruptive" honor came with a disclosed-in-corpus conflict flag (WEEX, via mechanism 36), not a hidden one - the ecosystem self-documented the tension.'
+    - 'The Meta $0 side is well documented; the incentive gradient predicts directional sympathy toward OpenAI and Anthropic relative to Meta, which is a prediction about coverage, not proof of editorial control.'
+    novelty: 'FIRST dedicated Time x OpenAI mechanism in the corpus (previously only a one-line passing mention inside mechanism 36''s salesforce_benioff_time chain block). Fourth member of the #609 first-gen OpenAI publisher renewal cohort (FT, Atlantic, Conde Nast). FIRST dual-channel geometry formalization at one publisher: direct OpenAI licensing money plus owner-equity Anthropic exposure (mechanism 36), Meta $0 on both channels. Benioff "stolen training data" posture tension is new to the corpus.'
+    research_method: '3 browser.search query sets this run: (1) TIME OpenAI strategic partnership renewal 2026; (2) TIME OpenAI multi-year partnership June 2024 Brad Lightcap 101 years archive terms; (3) TIME most disruptive companies 2026 Anthropic Benioff owner conflict Salesforce investor. All URLs verbatim from Full-URL listings; no canonical URLs constructed. Bounded absences per iteration-492 rule (no renewal reporting surfaced; not claimed as proof of non-renewal). Pre-commit greps: zero test_type_c_639 files on disk (glob); no #639 in git log (--grep); zero mechanism_618 keys repo-wide (grep); max numeric key-form mechanism id pre-commit 616 (mechanism_id 617 lives in journalists.yaml via #638). No em dashes; ASCII-only.'
+    verification:
+      iteration: 639
+      type: 'C'
+      date: '2026-09-09 19:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
