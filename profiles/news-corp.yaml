@@ -85,6 +85,23 @@ revenue_relationships:
   value: undisclosed
   scope: WSJ available on Apple News+. Revenue sharing arrangement.
   verified: true
+- partner: Google
+  type: ai_licensing_talks_unconfirmed
+  value: none (talks only, no signed deal as of 2026-09-10)
+  signed: null
+  scope: 'POTENTIAL SIXTH AI-revenue leg, WATCH ONLY - not a signed deal. Digiday (~Nov 2025, first-hand read Sep 10 2026)
+    reported News Corp exploring a multi-LLM licensing strategy beyond the May 2024 OpenAI deal, with Google in AI
+    licensing talks with publishers since summer 2025 and News Corp exploring closer Gemini work (AI Overviews era).
+    News Corp declined to confirm AI licensing negotiations with Google. Thomson (Times Tech Summit, Oct 21 2025)
+    described a partnership with Google alongside significant partnerships with OpenAI and Apple, but the AI-licensing
+    character of the Google relationship is unconfirmed - the quote most plausibly describes the existing
+    commercial/product relationship. Three bounded Sep 2026 query sets surfaced NO signed News Corp x Google AI
+    licensing deal; Press Gazette tracker (updated ~Sep 7 2026) and LLM Pulse deal map (updated Sep 7 2026) list
+    News Corp-OpenAI only. Status: TALKS DOCUMENTED / NO SIGNED DEAL / UNRESOLVED (bounded absence per
+    iteration-492 rule). Operationalizes the #654 advanced-discussions watch item. Mechanism 630 in
+    competitor-entities.yaml (iteration 659, Sep 10 2026 16:00 PDT).'
+  source_url: https://digiday.com/media/news-corp-in-talks-with-google-for-ai-licensing-deal/
+  verified: false
 editorial_leadership:
 - name: Emma Tucker
   title: Editor-in-Chief, The Wall Street Journal

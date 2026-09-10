@@ -10927,6 +10927,97 @@ entities:
       - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
       - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
       test_file: tests/test_mechanism_427_reddit_10k_rpo_type_c.py
+    mechanism_630_news_corp_google_ai_licensing_talks_sixth_leg_watch_sep2026:
+      mechanism_id: 630
+      iteration: 659
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-10'
+      time_pdt: '16:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'News Corp x Google AI Licensing Talks (Nov 2025, Digiday) - Sixth-Leg Watch: Talks Documented, No Signed Deal in Bounded Sep 2026 Searches; Multi-LLM Portfolio Doctrine Extends the Five-Leg Architecture'
+      overview: 'First dedicated corpus mapping of the potential SIXTH News Corp AI-revenue leg (Google). Digiday first-hand read this run (published ~Nov 2025, zero pre-commit corpus hits): News Corp is scoping a multi-LLM licensing portfolio strategy beyond the May 2024 OpenAI deal (AI licensing deals non-exclusive by design); Google began AI licensing talks with a selection of publishers in summer 2025; News Corp has since summer 2025 been looking at closer work with Google Gemini (which powers AI Overviews); News Corp declined to comment on whether it was speaking with Google about AI licensing; Thomson at The Times Tech Summit in London on Oct 21 2025 said News Corp had a partnership with Google and significant partnerships with OpenAI and Apple; Sun publisher Dominic Carter (Digiday Publishing Summit Europe, Lisbon): do your deals where it is appropriate, whether it is in our case with OpenAI or with Google and possibly others; Google spokesperson: exploring new types of partnerships and product experiences, no details on specific conversations. NO signed News Corp x Google AI licensing deal surfaced in 3 bounded Sep 2026 query sets this run; the Press Gazette generative-AI-deals tracker (updated ~Sep 7 2026, crawled 1d before this run) and the LLM Pulse master deal map (updated Sep 7 2026, crawled 2h before this run) both list News Corp-OpenAI only. Sixth-leg status: TALKS DOCUMENTED, NO SIGNED DEAL, UNRESOLVED (bounded absence per iteration-492 rule, not proof of absence). The Aug 5 2026 Q4 FY2026 advanced-discussions line (mechanism 627 via #654) keeps the watch live.'
+      google_talks_leg:
+        talks_window: 'summer 2025 onward'
+        first_documented: 'Digiday ~Nov 2025 (News Corp explores multi-LLM licensing playbook)'
+        what_talks_cover: 'AI licensing with Google Gemini; closer Gemini integration in the AI Overviews era'
+        existing_relationship: 'News Corp uses the Google product set (Gmail, Workspace) for years; the Thomson Oct 21 2025 partnership with Google remark describes the existing commercial/product relationship, distinct from a signed AI licensing deal'
+        signed_ai_licensing_deal: 'NONE on record as of Sep 10 2026'
+        status: 'UNRESOLVED'
+      thomson_multi_llm_doctrine:
+        woo_and_sue: 'Aug 2025 earnings call framing, re-affirmed Morgan Stanley TMT Mar 2026 and Q4 FY2026 Aug 2026: woo partners who pay, sue pilferers who scrape'
+        non_exclusivity: 'Deals non-exclusive by design; publishers pursuing multiple LLM revenue streams; Gunderson Dettmer via Digiday: the default expectation is that these deals are going to be non-exclusive'
+        pay_per_usage_shift: 'Industry shift from lump-sum toward pay-per-usage deals as publishers recognize LLM dependence on fresh content for RAG'
+        carter_quote: 'Sun publisher Dominic Carter: You have to do your deals where it is appropriate, whether it is in our case with OpenAI or with Google and possibly others'
+        brave_callout: 'Q4 FY2026 call: Thomson accused Brave of shamelessly stealing content at scale; the theregister.com Aug 6 2026 re-surface corroborates the advanced-discussions quote this run'
+      five_leg_context:
+        mechanism: 594
+        legs: 'OpenAI ($250M/5yr, mechanism 519) + Meta (up to $50M/yr 3yr, mechanism 549) + Microsoft/HarperCollins (mechanism 524) + Anthropic settlement share + Bloomberg expanded Dow Jones AI rights'
+        google_would_be: 'sixth leg, and the first from a search-platform counterparty'
+      perplexity_sue_leg_status:
+        suit: 'News Corp sued Perplexity Oct 2024 for alleged massive illegal copying'
+        dismissal_bid: 'rejected Aug 2025; case ongoing as of Nov 2025 per Digiday'
+        deal: 'NONE - the sue half of woo-and-sue, running in parallel with the Google woo talks'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'Talks are not revenue - documented discussions do not establish a payment leg; the sixth leg does not exist as a financial fact until a deal is signed, so no tone prediction attaches to Google at WSJ'
+      - rank: 2
+        strength: strong
+        confounder: 'Thomson Oct 21 2025 partnership with Google quote is ambiguous - it most plausibly describes the existing commercial/product relationship (Workspace, product set), not a signed AI licensing deal; Digiday itself keeps the AI-licensing question as unconfirmed talks with News Corp declining comment'
+      - rank: 3
+        strength: moderate
+        confounder: 'Digiday talks reporting rests on sources familiar with the matter (anonymous); the counterparty names in direct Thomson negotiations were not established'
+      - rank: 4
+        strength: moderate
+        confounder: 'The advanced-discussions investor line recurs since Nov 2023 (Digiday Nov 2023: advanced discussions with a range of digital companies expected to bring significant revenue) - recurring CEO salesmanship on earnings calls, so the Aug 5 2026 iteration is a weak predictor of imminent signing'
+      - rank: 5
+        strength: weak
+        confounder: 'Bounded searches may miss a quietly signed deal behind paywalled trade press; absence of reporting is not proof of absence of a deal event'
+      strongest_counterargument: 'The elephant-in-the-room frame inside the Digiday piece itself cuts against a Google woo: Google AI Overviews and AI Mode have damaged publisher referral traffic, including the WSJ, The Times, and The Sun - the same titles a licensing deal would cover. A Google leg would sit alongside an active traffic-cannibalization grievance, and the UK CMA strategic-market-status designation of Google search keeps the counterparty adversarial in London. The financial prediction for a signed Google leg (Google softer at WSJ) is therefore bounded by a pre-existing adversarial channel, unlike the clean OpenAI/Meta woo legs.'
+      cross_references:
+      - 'Mechanism 594 News Corp five-leg AI revenue architecture (this run maps the sixth-leg watch the five-leg did not cover)'
+      - 'Mechanism 627 News Corp x OpenAI renewal window via #654 (the Aug 5 2026 advanced-discussions line is the standing watch item this run operationalizes)'
+      - 'Mechanism 519 News Corp x OpenAI deal structure ($250M/5yr)'
+      - 'Mechanism 549 News Corp x Meta licensing leg (up to $50M/yr)'
+      - 'Mechanism 624 Dotdash Meredith OpenAI renewal window via #649 (People Inc CEO Vogel Cloudflare-blocking quote appears in the same Digiday piece: blocking crawlers brought almost everyone to the table)'
+      - 'Mechanism 529 Canada C18 Google $100M Meta-zero natural experiment (Google publisher-payment precedent in this file)'
+      - '#609 first-gen OpenAI publisher renewal cohort (complete; a Google leg would sit outside the cohort)'
+      - 'Press Gazette generative-AI-deals tracker (lists News Corp-OpenAI only, Sep 2026 update)'
+      query_sets:
+      - query: 'News Corp AI licensing deal announced September 2026 (since 2026-08-05)'
+        result: 'NO new signed deal announcement; only May 2024 OpenAI announcement re-surfaces (thewrap, barchart, metro.us, techxplore, campaignlive, bloomberglaw) plus the Mar 2026 Meta leg (engadget, crawled 4h) and the Thomson advanced-negotiations quote at Morgan Stanley TMT'
+      - query: 'News Corp advanced discussions AI partnerships significant deals Thomson (since 2026-08-01)'
+        result: 'Q4 FY2026 quote re-confirmed via WSJ self-report (in corpus) and the theregister.com Aug 6 2026 re-surface (crawled 3d); no new signed deal; afaqs.com relay notes Meta has also signed publisher deals with People Inc, USA Today, CNN, Fox News'
+      - query: 'News Corp AI deal Google Perplexity Anthropic xAI licensing 2026 (since 2026-01-01)'
+        result: 'NEW TO CORPUS Digiday ~Nov 2025 multi-LLM playbook piece (Google talks documented); Press Gazette tracker (updated ~Sep 7 2026) and LLM Pulse deal map (updated Sep 7 2026) list News Corp-OpenAI only; Perplexity suit ongoing; Google publisher AI pilot (pymnts/Bloomberg) has News Corp unconfirmed'
+      statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). tone_scores NOT_SCORED; p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim. NOT a falsification-family member.'
+      source_urls:
+      - https://digiday.com/media/news-corp-in-talks-with-google-for-ai-licensing-deal/
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      - https://llmpulse.ai/blog/ai-content-licensing-deals/
+      - https://www.theregister.com/ai-and-ml/2026/08/06/news-corp-labels-some-ai-companies-crass-kleptomaniacs/5283848
+      - https://www.wsj.com/business/media/news-corp-revenue-rises-with-growth-across-all-segments-d5313004
+      - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
+      - https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html
+      novelty_verification:
+      - 'FIRST dedicated News Corp x Google AI-licensing-talks mapping in the corpus; FIRST sixth-leg watch mechanism for the News Corp AI revenue architecture'
+      - 'FIRST corpus record of the Digiday ~Nov 2025 multi-LLM licensing playbook piece (zero pre-commit hits in competitor-entities.yaml, iteration-log.md, profiles/news-corp.yaml)'
+      - 'Zero mechanism_630 keys repo-wide pre-commit (max numeric mechanism id pre-commit 629, in profiles/careers/journalists.yaml via #658 Type B)'
+      - 'Zero test_type_c_659 files on disk pre-commit (glob verified)'
+      - 'No Type C #659 in git log pre-commit (grep verified)'
+      - 'Distinct from mechanism 594 (five-leg, no Google leg), mechanism 627 (OpenAI renewal query set; this watch operationalizes its standing watch item), mechanism 529 (Google publisher-payment precedent, Canada C18, different structure)'
+      - 'NOT a falsification-family member'
+      research_method: '3 browser.search query sets this run (listed under query_sets); 1 browser.open first-hand read of the Digiday multi-LLM playbook piece (~Nov 2025, all 101 lines read); all URLs verbatim from Full-URL listings; no canonical URLs constructed. Bounded absences per iteration-492 rule (no signed News Corp x Google AI deal in the searched windows; none claimed as proof). Pre-commit greps: zero test_type_c_659 files on disk (glob); no Type C #659 in git log (--grep); zero mechanism_630 keys repo-wide (grep); max numeric mechanism id repo-wide pre-commit 629. No em dashes; ASCII-only.'
+      verification:
+        iteration: 659
+        type: 'C'
+        date: '2026-09-10 16:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
   x_twitter:
     display_name: X / Twitter
     aliases:
