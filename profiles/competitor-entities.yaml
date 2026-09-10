@@ -19188,3 +19188,95 @@ time_openai_renewal_window_dual_channel_618:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+vox_media_triple_ai_payer_openai_renewal_window_621:
+    mechanism_id: 621
+    iteration: 644
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-10'
+    time_pdt: '00:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'Vox Media triple-AI-payer architecture (Sep 2026 status) - OpenAI May 29 2024 deal renewal window UNRESOLVED plus Microsoft Publisher Content Marketplace pay-per-use leg plus ProRata 50-percent revenue-share leg, Meta $0, PMX-split counterparty-continuity confound'
+    overview: 'Extends mechanism 494 (Vox Media x OpenAI deal structure, iteration 494) and the iteration-544 Vox Media x Microsoft PCM dual-payer mapping into the first dedicated Vox Media triple-payer aggregation: the pre-split owner of tracked publication The Verge collects AI revenue from three distinct channels while Meta pays $0. The OpenAI leg (announced May 29 2024 via the same Axios scoop as the Atlantic deal, terms undisclosed) is the FIFTH member of the #609 first-gen OpenAI publisher renewal cohort and the only one never given its own bounded renewal query set: #609 mapped Conde Nast, Atlantic, and FT (three bounded query sets) and named Vox in cohort geometry only. Bounded Sep 2026 searches this run surface NO renewal, extension, renegotiation, or termination reporting for the Vox leg: status UNRESOLVED, treated ACTIVE per the #599 Vox convention. The ProRata leg (Jun 2025 publisher wave, Digiday) is the FIRST dedicated ProRata mechanism in the corpus - previously only passing mentions. Structural complication: the Jun-Jul 2026 ownership split (Lupa Systems/Murdoch took NY Mag plus Vox.com plus podcast network for circa $300M, closed Jul 8; PMC took The Verge plus Eater plus SB Nation into the new PMX subsidiary, completed Jun 18, per the-verge.yaml) means the May 2024 OpenAI counterparty was the pre-split Vox Media - deal assignment to successor entities is unreported, a bounded continuity confound. Qualitatively BOUNDS the falsification family; no new tone arrays scored.'
+    legs:
+      openai_leg:
+        partner: 'OpenAI'
+        announced: '2024-05-29'
+        mechanism: 494
+        term: 'multi-year (TheWrap); TechCrunch Jun 2024 notes the Vox term length is undisclosed, unlike the Atlantic two-year contract reported in the same piece'
+        financial_terms: 'undisclosed'
+        scope: 'Current content plus full archive licensed for ChatGPT training and display with brand attribution and audience referrals; product collaboration (Strategist Gift Scout affiliate-commerce tool, Forte first-party ad-targeting platform extension)'
+        principals: 'Jim Bankoff (Vox Media co-founder/chair/CEO, went with Lupa Jul 2026), Pam Wasserstein (Vox Media president), Brad Lightcap (OpenAI COO - same OpenAI counterparty as the Hearst deal in mechanism 489)'
+        scoop: 'Axios exclusive by Sara Fischer, May 29 2024 (same scoop as the Atlantic deal)'
+        primary_sources:
+        - 'https://www.voxmedia.com/2024/5/29/24166483/vox-media-openai-strategic-content-and-product-partnership/ (Vox Media announcement, Bankoff/Wasserstein/Lightcap quotes, Forte and Gift Scout product flow)'
+        - 'https://www.thewrap.com/vox-the-atlantic-chatgpt-openai-deal/ (multi-year, archives, citation terms; News Corp deal the prior week as context)'
+        - 'https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media (compensation precedent framing, IP protection via attribution and summary limits)'
+        - 'https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/ (Reuters primary relay, per the-verge.yaml source list)'
+        - 'https://www.thewrap.com/vox-media-union-openai-deal-demands-transparency/?ref=biztoc.com (Vox Media Union blindsided rollout, demanded transparency)'
+      renewal_window:
+        status: 'UNRESOLVED'
+        bounded_searches:
+        - 'Vox Media OpenAI partnership renewal extension 2025 2026 (returned only 2024 announcement coverage plus the repo''s own #494 commit, rejected circular; NO renewal/extension/termination reporting)'
+        - 'Vox Media AI content licensing deals 2026 ProRata Microsoft Publisher Content Marketplace (returned PCM and ProRata coverage; NO OpenAI-leg renewal reporting)'
+        convention: 'Treated ACTIVE per the #599 Vox convention (no termination reporting implies continued activity)'
+        cohort: 'Fifth member of the #609 first-gen OpenAI publisher renewal cohort: FT (Apr 29 2024), Atlantic (May 29 2024, same scoop day), Conde Nast (Aug 20 2024), Time (Jun 27 2024, mapped #639); Vox (May 29 2024) is the only cohort member that never received its own bounded renewal query set - #609 named it in cohort geometry only'
+        positive_control: 'OpenAI DID renew a local-news publisher deal in Jul 2026 ($5M, per #609), so renewals happen AND get trade-press coverage; the absence for Vox is informative, not a non-reporting artifact'
+      microsoft_pcm_leg:
+        partner: 'Microsoft'
+        announced: '2026-02'
+        mechanism: '#544 dual-payer mapping'
+        structure: 'Publisher Content Marketplace (PCM): pay-per-use licensing for AI grounding; Vox Media a first-wave co-design partner alongside Business Insider, USA Today Co., People Inc, AP, Hearst Magazines, Conde Nast (Digiday, Nikhil Kolar interview); Microsoft Copilot first buyer; Yahoo first demand partner onboarding; eight-publisher pilot with Microsoft investing north of $10M (WSJ via #544)'
+        pricing_model: 'a la carte (Vogel distinction first documented at DDM, #539) - Vox now spans both flat-fee (OpenAI) and usage-priced (PCM) models'
+        payer_nexus_caveat: 'Both the OpenAI and Microsoft legs sit inside the same $13.75B OpenAI-Microsoft investment nexus (mechanism 82 datum); legs aggregate conservatively at nexus level, per #544'
+        sources:
+        - 'https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191 (PCM launch, co-designed with Vox Media, paid on delivered value)'
+        - 'https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/ (pilot expansion beyond initial phase, publisher pricing tests)'
+        - 'https://dataconomy.com/2026/02/04/microsoft-unveils-ai-licensing-hub-to-pay-publishers-for-model-training/ (Vox Media named participating publisher)'
+      prorata_leg:
+        partner: 'ProRata AI'
+        announced: 'circa Jun 2025 (Digiday publisher wave; ~461 days before the Sep 2026 crawl)'
+        structure: 'Revenue-share licensing program: ProRata pays out 50 percent of ALL its revenue to publisher partners on a recurring basis, weighted by how often a publisher''s content powers an AI response (attribution/pay-per-use); operates Gist.ai AI search engine (launched Dec 2024, answers from licensed content only); 500 publishers at the announcement wave including The Atlantic, Guardian, Fortune, Sky News, Time; revenue from advertising, subscriptions planned Q3'
+        comparison: 'Perplexity publisher program caps publisher payout at 25 percent (WSJ via Digiday) - ProRata pays double the ceiling, which Digiday called a no-brainer for publishers'
+        corpus_status: 'FIRST dedicated ProRata mechanism in the corpus; previously only passing mentions (Guardian mechanism plural-licensing note, portfolio lines, the-verge.yaml neutral-marketplace references)'
+        intermediary_disclosure: 'ProRata is an intermediary marketplace, not a Meta competitor - this leg maps publisher-side AI-revenue diversification, not competitor money. Disclosed as such to avoid overstating the incentive geometry.'
+        source: 'https://digiday.com/media/boston-globe-future-vox-media-join-proratas-generative-ai-licensing-model/ (Boston Globe, Future, Vox Media wave; 50 percent payout; Perplexity 25 percent cap comparison)'
+      meta_side:
+        status: '$0 AI licensing from Meta to Vox Media / PMX / Lupa Vox Media on record'
+        evidence: 'LLM Pulse AI content-licensing deal map (Sep 2026, crawled ~3h before this run) lists Meta AI licensing partners as Reuters, News Corp, Le Figaro, Prisa, Suddeutsche Zeitung, plus reported CNN, Fox News, USA Today, and People Inc. deals - no Vox Media, PMX, or Lupa entity present. Bounded absence per iteration-492 rule.'
+        corpus: 'The meta_ai_deals section documents 13 confirmed Meta AI content partners; Vox/PMX/Lupa excluded; fits the excluded_publishers registry pattern (tracked-publication owners with competitor deals and zero Meta deals)'
+        source: 'https://llmpulse.ai/blog/ai-content-licensing-deals/ (Sep 2026 deal map, Meta partner list)'
+      ownership_split_continuity:
+        event: 'Jun-Jul 2026: Lupa Systems (James Murdoch) acquired New York Magazine (incl. The Cut, Vulture, Intelligencer, The Strategist, Curbed, Grub Street), the Vox Media Podcast Network (~40 shows), and Vox.com for circa $300M+ (NYT), closed Jul 8 2026; PMC acquired the remaining Vox Media brands (The Verge, Eater, SB Nation, Popsugar, The Dodo, Punch, Thrillist) into the new PMX subsidiary, completed Jun 18 2026 (Adweek, Editor and Publisher, voxmedia.com). Documented in the-verge.yaml.'
+        personnel: 'Jim Bankoff (Vox Media CEO and OpenAI-deal signatory) went with Lupa as CEO; Ryan Pauley (ex-Vox Media president) became PMX president under PMC (Jay Penske chairman/CEO)'
+        continuity_question: 'The May 29 2024 OpenAI counterparty was the pre-split Vox Media. No reporting surfaced on which successor entity (Lupa Vox Media, PMX, or both via assignment) holds the deal post-split. Bounded absence; treated as continuity confound, NOT as deal lapse.'
+        relevance: 'The Verge (tracked publication) now sits under PMC/PMX, not under the Bankoff-led Vox Media that signed the OpenAI deal - the owner-level tie to OpenAI is inherited, not freshly negotiated. Any publication-level tone prediction requires assuming deal-rights transfer to PMX, which is unreported.'
+    confounders_ranked:
+    - strength: 'STRONG'
+      text: 'All three legs have undisclosed or unquantified financial terms - the mapping is structural, not sized. The OpenAI leg is multi-year with no stated duration (TechCrunch Jun 2024: Vox term undisclosed, unlike Atlantic two-year); UNRESOLVED cuts both ways - the deal could have lapsed quietly without trade-press notice.'
+    - strength: 'STRONG'
+      text: 'Ownership-splinter confound: the May 2024 OpenAI counterparty no longer exists as a single entity. Lupa holds the Vox Media name and Bankoff (the signatory); PMX/PMC holds The Verge. Any tone prediction at the publication level requires assuming deal-rights transfer to PMX, which is unreported.'
+    - strength: 'MODERATE'
+      text: 'Payer-nexus caveat: the OpenAI and Microsoft legs aggregate at the $13.75B OpenAI-Microsoft investment nexus (mechanism 82); the triple-payer count overstates payer independence.'
+    - strength: 'MODERATE'
+      text: 'ProRata is an intermediary, not a Meta competitor - including it in the payer architecture maps revenue diversification, not competitor incentive. Kept as a separate leg precisely to avoid inflating the competitor-incentive count.'
+    - strength: 'WEAK'
+      text: 'Bounded searches may miss renewal reporting behind paywalls or in non-English press; absence of reporting is not proof of absence of a deal event.'
+    counterevidence:
+    - 'PMC sues Google in TWO active lawsuits (AI Overviews copyright, Ad Tech antitrust, mechanism 112) - the same owner that collects AI licensing money litigates aggressively against a payer-adjacent ecosystem, against a naive purchased-silence reading.'
+    - 'The Verge covered the Microsoft PCM announcement at editorial arm''s length (reached out to Microsoft for comment on the PCM build, per the technologymag relay of The Verge''s reporting) - a payer relationship coexists with normal editorial distance.'
+    - 'Jeff Jarvis ''pure lobbying'' critique (the-decoder.com, circa Nov 2024): AI company media deals are ''simply purchasing the silence of these publishers when it comes to litigation and legislation'' - an adversarial third-party frame documented as counter-hypothesis, not ignored.'
+    - 'Vox Media Union opposition to the OpenAI deal (TheWrap, May 31 2024: ''extremely concerning'', blindsided rollout) shows the financial tie was contested inside the newsroom, not welcomed as editorial direction.'
+    novelty: 'FIRST dedicated Vox Media OpenAI renewal-window mapping in the corpus (mechanism 494 mapped deal structure only; #609 mapped Conde Nast, Atlantic, FT renewal windows and named Vox in cohort geometry only; #639 mapped Time). Fifth and final cohort member. FIRST dedicated ProRata mechanism anywhere in the corpus (previously only passing mentions). FIRST triple-payer aggregation for Vox (extends the #544 OpenAI-plus-Microsoft dual-payer with the ProRata leg). FIRST formalization of the Jun-Jul 2026 Lupa/PMC ownership-splinter as a deal-continuity confound on the OpenAI leg. Distinct from #544 (PCM leg only), mechanism 494 (deal structure), the #609 renewal mechanism (cohort without a Vox query set), and mechanism 112 (PMC-Google litigation paradox).'
+    research_method: '4 browser.search query sets this run: (1) Vox Media OpenAI partnership renewal extension 2025 2026; (2) Vox Media AI content licensing deals 2026 ProRata Microsoft Publisher Content Marketplace; (3) Meta AI Vox Media content licensing deal The Verge (bounded absence: returned repo commits, the LLM Pulse Sep 2026 deal map with Meta partners excluding Vox, and a Meta-Newsmax Dec 2025 item; no Meta-Vox deal); (4) Vox Media Perplexity publisher program revenue share deal (returned the ProRata Digiday piece plus Perplexity program explainers; no Vox-Perplexity deal surfaced). All URLs verbatim from Full-URL listings; no canonical URLs constructed. Bounded absences per iteration-492 rule (no renewal reporting, no Meta-Vox deal, no deal-assignment reporting post-split; none claimed as proof). Pre-commit greps: zero test_type_c_644 files on disk (glob); no #644 in git log (--grep); zero mechanism_621 keys repo-wide (grep); max numeric mechanism id repo-wide pre-commit 620 (mechanism_id 620 lives in journalists.yaml via #643). No em dashes; ASCII-only.'
+    verification:
+      iteration: 644
+      type: 'C'
+      date: '2026-09-10 00:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
