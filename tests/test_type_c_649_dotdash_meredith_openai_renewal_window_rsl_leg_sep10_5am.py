@@ -42,7 +42,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 MECH_KEY = "mechanism_624_dotdash_meredith_openai_renewal_window_rsl_leg_sep2026"
 FILENAME = "test_type_c_649_dotdash_meredith_openai_renewal_window_rsl_leg_sep10_5am.py"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "f1cf194b58e91661d133775dceca1b1f31832d8d"
 
 
 def _find_all(o, key, hits):
