@@ -17691,6 +17691,103 @@ journalists:
       research_method: 'Search sequence this run: (1) Adrienne So WIRED Meta glasses - surfaced the Apr 19 2026 So "face-wearable war" review relay; rejected, already studied (#457 Type B). (2) Joanna Stern WSJ Muse + Christopher Mims WSJ Muse - no clean within-writer pair surfaced. (3) WSJ "A Quieter Kind of AI Breakthrough" opened first-hand - within-piece Meta-vs-Anthropic register observed but byline unattributable (newsletter desk; Tom Loftus editor); rejected. (4) Geoffrey Fowler WaPo smart glasses - rejected, already studied (#493 Type B). (5) Sarah Perez TechCrunch author page - surfaced the Sep 8 2026 Muse piece (byline confirmed via the piece''s own bio footer and the webpronews Sep 8 attribution) and the Sep 4 2026 Gemini Spark Photos piece in her Latest listing. Both arms opened first-hand via browser.open (verbatim techcrunch.com URLs from the open result headers). No zero-coverage claims per iteration-492 rule (both arms are positive Perez bylines). No em dashes.'
 
 
+- name: Amanda Silberling
+  notes: 'TechCrunch Senior Writer covering the intersection of technology and culture. Co-host of the Wow If True internet-culture podcast. Previously wrote for Polygon, MTV, the Kenyon Review, NPR, and Business Insider. Covers AI, social platforms, and the legal/regulatory battles around both.'
+  career:
+  - beat: technology and culture, AI, social
+    event_type: hired
+    notes: 'Senior Writer, TechCrunch. Author-page bio footer: co-host of Wow If True (internet culture podcast) with Isabel J. Kim; previously Polygon, MTV, the Kenyon Review, NPR, Business Insider; B.A. English, University of Pennsylvania.'
+    publication: techcrunch
+    role: senior_writer
+    source_url: https://techcrunch.com/author/amanda-silberling/
+  source_urls:
+  - https://techcrunch.com/author/amanda-silberling/
+  multi_publication: false
+  competitor_coverage:
+    type_b_643_amanda_silberling_techcrunch_meta_settlement_vs_openai_copyright_register_sep09:
+      iteration: 643
+      mechanism_id: 620
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-09 23:00 PDT'
+      block_key: 'type_b_643_amanda_silberling_techcrunch_meta_settlement_vs_openai_copyright_register_sep09'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-writer accountability-register comparison. Question: does Amanda Silberling, TechCrunch Senior Writer, apply the same accountability register to Meta''s legal outcomes as to OpenAI''s, in the same publication and a 7-day window? Two Silberling bylines in legal/regulatory coverage: (a) the Meta arm, Aug 26 2026, the $18B child-safety settlement analysis piece whose headline says the deal "hinges on age-verification tech that doesn''t work well"; (b) the OpenAI arm, Sep 2 2026, the Trump-administration-brief piece "US government sides with OpenAI on issue of training LLMs on copyrighted material". MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Meta''s $18B child-safety deal hinges on age-verification tech that doesn''t work well'
+        url: https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+        date: '2026-08-26'
+        author_byline: Amanda Silberling
+        publication: techcrunch
+        role: Senior Writer
+        genre: legal/regulatory accountability news (skeptical register)
+        key_quotes:
+        - 'Meta reached an $18 billion settlement on Wednesday over a lawsuit brought by 29 U.S. states concerning children''s safety.'
+        - 'Indeed, Meta reported more than $200 billion in total revenue in 2025, which puts the $18 billion price tag in perspective. But the bigger story here isn''t the dollar amount. It''s what Meta now has to build: the most detailed child-safety rules any major platform has agreed to, resting on age-verification technology that still doesn''t work particularly well.'
+        - 'Meta hasn''t admitted wrongdoing, even as it settles allegations that it intentionally designed its platforms to keep children hooked - a common tactic for companies looking to avoid a jury trial, where the risk of a worse outcome is higher.'
+        - 'The settlement "gives the AGs what they want, which is the political story that they''ve extracted a huge amount of benefit for the public from this settlement, including the platform changes," Jessica Nall, a technology litigator at Withers, told TechCrunch.'
+        - 'Meta is now running full-page newspaper ads calling on TikTok and YouTube to adopt similar design changes, without mentioning that its own adoption came as part of a legal settlement. Under the agreement, roughly 30% of Meta''s settlement payment depends on whether TikTok and YouTube also comply with these guidelines.'
+        register_notes: 'Accountability-skeptical register. The HEADLINE undercuts the deal before the lede. The lede contextualizes $18B against Meta''s $200B-plus 2025 revenue and pivots to the tech that "still doesn''t work particularly well". The "hasn''t admitted wrongdoing" frame names the intentional-design allegations. A litigator quote characterizes the settlement as "the political story" the AGs extracted. The close notes Meta''s full-page ads omitting that the changes came from a lawsuit, and that 30% of the payment depends on TikTok and YouTube. Expert quotes run both directions (Ingber skeptical of the tech; Yannella less pessimistic), so the piece is evidence-bearing, not a hit piece - but the editorial frame interrogates Meta''s narrative, not the settlement''s existence.'
+        tone_score: -0.40
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run)'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/amanda-silberling/
+      openai_arm:
+        title: 'US government sides with OpenAI on issue of training LLMs on copyrighted material'
+        url: https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/
+        date: '2026-09-02'
+        author_byline: Amanda Silberling
+        publication: techcrunch
+        role: Senior Writer
+        genre: legal/regulatory news (straight register)
+        key_quotes:
+        - 'In a lawsuit that The New York Times filed against OpenAI, the Trump administration has contributed a 20-page brief in defense of the ChatGPT maker''s unlicensed use of copyrighted material to train its LLMs.'
+        - 'Many publishers, including The New York Times in this case, have sought to argue that it is illegal for AI companies like OpenAI to train AI models on their copyrighted material.'
+        - 'So far, cases about AI training and copyright infringement have largely been favorable to AI companies.'
+        - '"Constraining LLM development under a misunderstanding of fair use doctrine would thwart such creative and scientific progress while hindering American prosperity and economic mobility," the brief says.'
+        - 'This new Trump administration brief is not a ruling, as the case is being tried in the U.S. District Court for the Southern District of New York, and the authors of the brief do not have jurisdiction. However, this intervention by the Trump administration could still carry weight.'
+        register_notes: 'Straight legal-news register. The HEADLINE states the news peg neutrally (the government sided with OpenAI). The NYT''s opposing position is stated. No publisher-side or creator-side counter-voices are quoted to stress-test the brief''s claims, and the "unlicensed use" framing is the brief''s own characterization relayed without the undercut-the-narrative frame applied to Meta''s deal (no "hasn''t admitted wrongdoing" analogue, no litigator characterizing the filing as a "political story"). The piece does note the brief "is not a ruling" and its authors lack jurisdiction, so it is not stenography - but the register gap is a frame gap: Meta''s narrative gets interrogated, the government''s pro-OpenAI intervention gets relayed. The closing line grants the intervention weight.'
+        tone_score: 0.05
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run)'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/amanda-silberling/
+      asymmetry_scorer:
+        meta_tone: -0.40
+        openai_tone: 0.05
+        delta_meta_minus_openai: -0.45
+        delta_calc: '-0.40 - 0.05 = -0.45'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'News-peg asymmetry: the Meta story is ABOUT the adequacy of a settlement (the news value IS scrutiny of the deal''s substance); the OpenAI story is about a third party, the US government, endorsing OpenAI''s legal position (the news value IS the endorsement). Interrogating deal terms is the Meta story''s job; interrogating a government brief''s beneficiary would be a different story.'
+      - strength: 'STRONG'
+        text: 'Genre within legal news: the Meta piece is an analysis/second-day item built on three expert interviews (litigator Jessica Nall, Syracuse professor Alexis Ingber, Blank Rome''s Philip Yannella) invited to stress-test the deal; the OpenAI piece is a short first-day news brief relaying a court filing. Analysis invites skepticism; breaking briefs relay events. The register gap partly reflects form, not just target.'
+      - strength: 'MODERATE'
+        text: 'No within-writer baseline for Silberling: zero prior corpus mechanisms on her, so there is no way to distinguish a Meta-specific register from a settlement-analysis register she applies to all parties. Her other recent headlines touch multiple large companies critically (Apple "shocking evidence" trade-secrets piece Aug 31, Amazon rare-books AI-training piece Aug 17), but neither was studied this run.'
+      - strength: 'MODERATE'
+        text: 'The OpenAI piece is not uncritical: it states the NYT''s opposing position and explicitly notes the brief "is not a ruling" and that its authors "do not have jurisdiction". The register gap is narrower than the -0.45 illustrative delta suggests; the delta captures frame, not factual one-sidedness.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm; 7 days apart (Aug 26 vs Sep 2), not same-day; tones hand-assigned illustrative, not empirical corpus scores.'
+      verdict: 'WITHIN-WRITER ACCOUNTABILITY REGISTER. Silberling''s Meta $18B settlement piece applies an undercut-the-narrative frame: the headline says the deal "hinges on age-verification tech that doesn''t work well"; the body notes Meta hasn''t admitted wrongdoing, quotes a litigator characterizing the settlement as "the political story" the AGs extracted, and closes on Meta''s full-page ads omitting that the changes came from a lawsuit (-0.40 illustrative). Seven days later her OpenAI piece relays the Trump administration''s 20-page brief defending OpenAI''s unlicensed training-data use in a straight news register (+0.05 illustrative): the NYT''s opposing position is stated, but no publisher-side counter-voices are quoted and the brief''s claims are not stress-tested the way Meta''s deal terms were. Illustrative delta (Meta minus OpenAI) = -0.45. Directionally consistent with the harder-register-on-Meta pattern in the corpus, but NOT a falsification pin: no named financial gradient predicts this pair (no documented TechCrunch/Yahoo-OpenAI payer relationship; the Apollo-Anthropic XPV chain documented in #633 predicts softer ANTHROPIC coverage, not OpenAI). Correlation is not causation per the Aug 28 rule; the STRONG news-peg and genre confounds carry the gap before any incentive effect is invoked; no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin. First Type B mechanism on Amanda Silberling.'
+      financial_context: 'TechCrunch is owned by Yahoo, owned by Apollo Global Management. Apollo simultaneously participates in the $35B to $100B Anthropic XPV infrastructure financing (Aug 2026, competitor-entities.yaml) and owns the publisher - but that chain predicts softer ANTHROPIC coverage, and this pair''s comparator is OPENAI, not Anthropic. No documented TechCrunch-to-Meta, TechCrunch-to-OpenAI, or Yahoo-to-OpenAI content-licensing deal in the corpus. The observed -0.45 illustrative gap therefore has no named incentive gradient under it. Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#638 (Type B: Perez TechCrunch Meta-vs-Google within-writer sibling; the Silberling pair is the second TechCrunch legal/regulatory-register within-writer pair this cycle; different writer, different category)'
+      - '#633 (Type B: Ha TechCrunch Meta-vs-Anthropic within-writer sibling; the Apollo-Anthropic XPV chain documented there predicts softer Anthropic coverage, scoped away from OpenAI here)'
+      - '#305 (Bellan TechCrunch vocabulary inversion Meta -0.20 / Anthropic +0.15, Aug 2026 window; TechCrunch harder-on-Meta family)'
+      - '#642 (Type A Sep 9 22:00: MIT TR x Anthropic Pentagon-refusal virtue register vs Meta security-failure register; publication-level harder-on-Meta family)'
+      - 'test_techcrunch_yahoo_openai_chatgpt_ads_europe_coverage_selection_silence_aug27.py and test_lucas_ropek_techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation_aug26.py (prior corpus uses of the settlement URL as context; this run is the first SILBERLING-BYLINE mechanism on it)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer accountability-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First dedicated Type B mechanism on Amanda Silberling (zero journalists.yaml mentions pre-commit; entry created this run). Zero test_type_b_643 files on disk (glob verified this run). No Type B commit with 643 in the title (git log --grep verified this run). The settlement URL appears in corpus only as context (test_lucas_ropek..., test_techcrunch_yahoo..., profiles/competitor-coverage-research.yaml) - never as a Silberling-byline mechanism. The OpenAI copyright URL is new-to-corpus this run (git-grep zero hits pre-commit). Both TechCrunch URLs opened first-hand this run via verbatim techcrunch.com URLs. Both tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 620 is the next free profiles mechanism id (max pre-commit 619). Rotation: 642 A -> 643 B.'
+      research_method: 'Search sequence this run: (1) Victoria Song The Verge Meta Ray-Ban Display vs Google Android XR - rejected, substantial duplication with #599 Type C and #605 Type B mechanisms. (2) Sarah Perez TechCrunch - rejected, already studied (#638 Type B). (3) Devin Coldewey TechCrunch - no timely 2026 pair (recent bylines all 2024). (4) Wes Davis The Verge - no clean pair established. (5) Ina Fried Axios - axios.com policy-blocked, no resolvable first-party URLs; not pursued. (6) Amanda Silberling TechCrunch author page - surfaced the Aug 26 2026 $18B settlement analysis piece and the Sep 2 2026 OpenAI copyright brief piece in her Latest listing (byline confirmed via the author-page listing and the OpenAI piece''s bio footer naming her Senior Writer). Both arms opened first-hand via browser.open (verbatim techcrunch.com URLs from the open result headers). No zero-coverage claims per iteration-492 rule (both arms are positive Silberling bylines). No em dashes.'
+
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
