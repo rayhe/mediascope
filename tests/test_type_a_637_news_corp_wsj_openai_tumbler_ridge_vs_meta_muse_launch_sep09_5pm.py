@@ -326,7 +326,7 @@ class TestRotationCycleGuard637:
     per the #565 convention; these tests fail by design pre-anchor.
     """
 
-    ANCHORED_COMMIT = "PLACEHOLDER_PATCH_IN_FOLLOWUP"  # patched per #565 convention
+    ANCHORED_COMMIT = "ec96db0"  # patched per #565 convention
 
     def _window_lines(self):
         result = _run_git(

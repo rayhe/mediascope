@@ -21,7 +21,7 @@
 
 **Research method:** 2 browser.search query sets this run (theverge.com Anthropic settlement $1.5 billion, since 2026-09-05; wsj.com OpenAI news September 2026, since 2026-09-02) + 3 first-hand browser.open reads (WSJ Tumbler Ridge 30-lawsuits piece, WSJ US-govt-backs-OpenAI copyright piece, WSJ Muse launch piece disclosure re-check); 1 snippet-bounded item carried from #632 (Market Talk roundup); four candidate pairs evaluated, one selected; all URLs verbatim from Full-URL listings or corpus; no zero-coverage claims per iteration-492 rule; no em dashes.
 
-**New Type A files:** `tests/test_type_a_637_news_corp_wsj_openai_tumbler_ridge_vs_meta_muse_launch_sep09_5pm.py` - 8 classes, 48 def-tests (44 green pre-commit; rotation-guard class 4 deselected pre-anchor per the #565 followup convention).
+**New Type A files:** `tests/test_type_a_637_news_corp_wsj_openai_tumbler_ridge_vs_meta_muse_launch_sep09_5pm.py` - 8 classes, 44 def-tests (40 green pre-commit; rotation-guard class 4 deselected pre-anchor per the #565 followup convention).
 
 **Artifact readiness:** No analysis.json update warranted. Directional, n.s. scorer output on manual illustrative tones; no new artifact-grade tone data.
 
