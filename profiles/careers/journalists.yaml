@@ -13548,6 +13548,90 @@ journalists:
     artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; byline-level constancy note feeding the #607 publication-level falsification strand.'
     author: 'Kit (with Ray)'
     test_file: tests/test_type_b_608_robert_hart_tarbell_fellowship_cross_entity_constancy_sep08_10am.py
+  mechanism_626_robert_hart_muse_catch_up_vs_astra_safety_disaster_launch_register_sep10:
+    iteration: 653
+    type: B
+    date: '2026-09-10 09:00 PDT'
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_id: 626
+    block_key: type_b_653_robert_hart_muse_catch_up_vs_astra_safety_disaster_launch_register_sep10
+    journalist: Robert Hart
+    publication: The Verge
+    beat: AI (London-based AI reporter; frontier labs, safety threats)
+    title: 'Type B #653: Robert Hart (The Verge) launch-week register differentiation - Meta Muse gets market-defeat register (-0.35: catch up / ailing / setbacks and failures) vs OpenAI Astra gets pre-launch safety-watchdog register (-0.25: safety disaster / chain-of-thought monitoring reliance); second Hart mechanism, distinct angle from #608 (incident constancy)'
+    novelty_note: 'Second dedicated Type B mechanism on Robert Hart (first: mechanism 599 / #608, incident-constancy angle, Sep 5-8 articles). New angle: launch-week register differentiation (market-legitimacy attack on Meta launch vs safety-watchdog attack on OpenAI launch). New articles: Meta Muse Sep 8 2026 + OpenAI Astra safety circa Sep 2 2026, both post-dating #608 arms. Zero meta-bets-on-ai-agent-muse-to-catch-up and zero researchers-fear-safety-disaster hits repo-wide pre-commit; zero test_type_b_653 files on disk; no #653 in git log; mechanism 626 next free (max 625).'
+    meta_arm:
+      piece: 'Meta bets on AI agent Muse to catch up in AI race (The Verge, Sep 8 2026 3:00pm; byline Robert Hart per technewstube attribution)'
+      date: '2026-09-08'
+      tone_illustrative: -0.35
+      register: market_legitimacy_defeat
+      evidence_quotes:
+      - 'Headline: "Meta bets on AI agent Muse to catch up in AI race"'
+      - '"The product is the latest step in a multi-billion dollar strategy overhaul designed to revitalize the company''s ailing position in the AI race"'
+      - '"Muse ... is being positioned as the centerpiece of Meta''s AI strategy going forward as the company seeks to regain ground after years of setbacks and failures."'
+      - '"Meta calls Muse ''the world''s first personal AI agent built for everyone,'' a claim the competitive lineup does not support on its face."'
+      framing_notes: 'Market-position register: Muse is framed as a catch-up move by an ailing company with a history of failures; the "world''s first" marketing claim is editorially debunked in-text. Trust scrutiny present (opt-out default unknown) but the dominant register is market-legitimacy defeat, not privacy alarm.'
+      source_urls:
+      - https://thetechstreetnow.com/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race/
+      - https://technewstube.com/theverge/1865479/meta-bets-ai-agent-muse-to-catch-up-ai-race/
+      - https://rocketnews.com/2026/09/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race/
+      - https://www.brocker.org/meta-muse-consumer-ai-agent-launch
+      source_note: 'theverge.com policy-blocked for first-hand fetch per #608 convention; byline attribution via technewstube mirror ("By Robert Hart Sep 8, 2026, 3:00 pm"); reprint text verified verbatim across four independent mirrors. Snippet-bounded characterization.'
+    openai_arm:
+      piece: 'Researchers fear safety disaster ahead of OpenAI''s Astra release (The Verge, circa Sep 2 2026; byline Robert Hart per mirror follow-topics attribution)'
+      date: 'circa 2026-09-02 (bounded: 8d crawl age at Sep 10 2026 search; pre-Astra-launch Sep 3-4)'
+      tone_illustrative: -0.25
+      register: safety_watchdog_prelaunch
+      evidence_quotes:
+      - 'Headline: "Researchers fear safety disaster ahead of OpenAI''s Astra release"'
+      - '"He added that OpenAI''s communications left him concerned that the company ''plans on being extremely reliant on chain-of-thought monitoring for safety.''"'
+      - '"OpenAI did not respond to The Verge''s request to confirm or deny whether looped transformers were used for Astra"'
+      - 'Chief scientist Jakub Pachocki "voiced fears of ''a race into unmonitorability kicked off by confused reporting.''"'
+      framing_notes: 'Safety-watchdog register applied to the licensing partner pre-launch: researcher alarm centered, company communications criticized, non-response noted. No market-legitimacy defeat language; Astra''s commercial position is not the attack surface.'
+      source_urls:
+      - https://newsatw.com/researchers-fear-safety-disaster-ahead-of-openais-astra-release/
+      - https://onlinetechguru.co.uk/researchers-fear-safety-disaster-ahead-of-openais-astra-release/
+      - https://best-technologies.info/tech/researchers-fear-safety-disaster-ahead-of-openais-astra-release/
+      - https://canadian-reviews.ca/researchers-fear-safety-disaster-ahead-of-openais-astra-release/
+      source_note: 'Byline attribution via mirror follow-topics blocks ("Follow topics and authors from this story - Robert Hart -") on verbatim reprints of the Verge original; date circa from search crawl age (8d at Sep 10 2026). Snippet-bounded characterization.'
+    asymmetry_scorer:
+      convention: OpenAI minus Meta
+      scoring_label: MANUAL ILLUSTRATIVE
+      meta_tone: -0.35
+      openai_tone: -0.25
+      illustrative_delta_openai_minus_meta: 0.1
+      manual_illustrative: true
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      verdict: 'Register differentiation WITHIN constancy: both arms adversarial (replicating #608''s cross-entity constancy at launch-week granularity), but the CRITICISM TYPE differs - market-legitimacy attack on Meta vs safety-watchdog attack on OpenAI. NOT a falsification-family member: the Vox-OpenAI licensing gradient is weakened for this journalist (watchdog register applied to the deal partner pre-launch) but not contradicted as a named gradient (reporter-level, not publication-level; strong confounds). NOT a pure asymmetry pin. Correlation only, not causation.'
+    financial_context: 'Vox Media (The Verge parent) signed a multi-year OpenAI content licensing and product partnership May 29, 2024 (deal terms undisclosed). Gradient prediction: softer OpenAI coverage. This mechanism documents within-writer watchdog scrutiny of the licensing partner (Astra safety-disaster pre-launch piece), weakening the financial-determinist reading for Hart specifically. Hart''s Tarbell Center Senior Fellowship (see mechanism 599) is structural context only; AI-safety funder alignment is consistent with a safety-critical register on ALL frontier labs, not an OpenAI-specific effect. Correlation only, not causation.'
+    confounders_ranked:
+      strong:
+      - 'Genre peg: Meta arm is launch-day product news (market-position register is the natural peg); OpenAI arm is a pre-launch safety investigation (safety register is the natural peg). The register difference inherits from story type before any reporter-level preference.'
+      - 'n=1 per arm; both arms snippet-bounded via reprint mirrors (The Verge direct fetch policy-blocked per #608 convention); headline may be desk-written rather than Hart''s.'
+      moderate:
+      - 'Astra piece date circa (8d crawl age), not a verified publication date; five-to-six-day window, not same-day.'
+      - 'The "world''s first" debunk line is the harshest Meta-arm element; its placement and context are unverified without full text.'
+      weak:
+      - 'Single-week window; not a longitudinal claim.'
+      - 'n=1 per arm degenerate contract: verdict-invariant under rounding (delta 0.10 exact at 2dp).'
+    cross_references:
+    - 'mechanism 599 / #608 (Hart cross-entity constancy baseline; this mechanism replicates constancy at launch-week granularity with register differentiation)'
+    - '#607 (falsification strand; this run is bounded counterevidence, not a family member)'
+    - '#652 (Type A FT Astra coronation vs Meta Muse distribution; same launch-week event pair, publication-level)'
+    - '#647 (WIRED Coxon/Muse register pair; same Muse launch event context)'
+    - '#355 / mechanism 366 (Cameron severity inversion; counterexample precedent)'
+    - '#462 / mechanism 462 (Weatherbed falsification-style bound; same honest-bound posture)'
+    research_method: 'Snippet-bounded characterization for both arms (verbatim reprint mirrors; first-hand fetch policy-blocked). Bounded searches Sep 10 2026 09:00 PDT: (1) quoted Lauren Goode WIRED Meta glasses (surfaced own-corpus commits e29a2f4/54c9bd58 only; Goode already covered, rejected); (2) WIRED Muse piece quoted title (reprints surfaced, no byline); (3) WIRED Muse byline attribution (no byline surfaced); (4) Verge Muse piece author (surfaced technewstube byline "By Robert Hart Sep 8, 2026, 3:00 pm"); (5) quoted "Robert Hart" The Verge Astra (surfaced safety-disaster mirrors + talkingbiznews bio); (6) Will Knight / Maxwell Zeff / Dell Cameron freshness checks (already covered: #359, mechanism #63, #355/366). Pre-commit greps: zero meta-bets-on-ai-agent-muse-to-catch-up and zero researchers-fear-safety-disaster hits repo-wide (md/py/yaml); zero test_type_b_653 files on disk; no #653 in git log; mechanism 626 next free (max 625 both styles). URLs copied verbatim from Full-URL listings; wired.com and theverge.com direct fetch policy-blocked; no canonical URLs invented; no zero-coverage claims per iteration-492 rule; no em dashes.'
+    artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; register-differentiation note feeding the #607 falsification strand as bounded counterevidence.'
+    author: 'Kit (with Ray)'
+    test_file: tests/test_type_b_653_robert_hart_muse_catch_up_vs_astra_safety_disaster_launch_register_sep10_9am.py
+
 
 - career:
   - end: '2013'
