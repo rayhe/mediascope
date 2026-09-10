@@ -1,3 +1,35 @@
+#640 Type D: Scorer Statistical-Meaningfulness Battery Across the Sep 8-9 Illustrative Pairs + Post-#639 Corpus Integrity Sweep - #637 WSJ Pair (n=2 vs n=2, Meta [+0.40,+0.30] vs OpenAI [-0.55,+0.10]) Well-Formed but Non-Significant Through calculate_asymmetry (p in (0,1), Asymmetry +0.575 Sign Correct, d > 0, Ordered CI, Seeded Bootstrap Reproducible, is_significant False); #638 Perez Pair (n=1 per Arm, Meta [-0.45] vs Google [+0.05]) Hits the Degenerate Contract (p=1.0, d=0.0) on Both Arm Orders; Arm-Swap Negates Asymmetry Exactly; Identical Arms (0.0, 1.0); Integrity Sweep: mechanism_id 618 Present and Unique, Renewal UNRESOLVED, Max Id 618 (No 619), Modern 504+ Era Collision-Free, Sarah Perez Entry Before Trailing Mapping Keys, Journalists 266+, Type E Tracked Sources 50 Cycles / GF 499 / EHE Activist-Not-Podcast; 636-640 Rotation Guard Closing C->D (Anchor Patched Post-Commit per #565 Convention) + Doc-Sync Ratchet (README Stats + ARCHITECTURE Row, count_stats Gate) - Sep 9 2026 20:00 PDT
+
+**Date:** 2026-09-09 20:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 639 C -> 640 D)
+**Type:** D - Test & Verify (scorer validity + corpus integrity; no new YAML mechanism this run)
+
+**Finding:**
+1. Scorer statistical-meaningfulness battery on the two newest illustrative pairs, fed through the REAL calculate_asymmetry path (threshold-only assertions per the Aug 28 convention; the only exact pins are the scorer's own documented degenerate contract (0.0, 1.0) and the linear algebra invariant). #637 News Corp/WSJ pair, n=2 vs n=2: Meta [+0.40, +0.30] vs OpenAI [-0.55, +0.10] returns p in (0, 1), asymmetry sign correct and above 0.5 (Meta avg 0.35 minus OpenAI avg -0.225), cohens_d > 0, ordered confidence interval, seeded bootstrap reproducible across calls, is_significant False - the large illustrative gap does not clear p < 0.05 at n=2, matching the corpus record. Arm swap negates the asymmetry exactly (difference-of-means linearity). #638 Sarah Perez pair, n=1 per arm: Meta [-0.45] vs Google [+0.05] returns the degenerate contract (p_value 1.0, cohens_d 0.0, is_significant False) on BOTH arm orders. Identical arms ([0.10, 0.20, 0.30] vs itself) return asymmetry 0.0, p 1.0, d 0.0.
+2. Corpus integrity sweep after the #639 insertion (mechanism_id 618, Time x OpenAI). The 618 block is present and unique (exactly one mechanism_id: 618 across all of profiles/, block key time_openai_renewal_window_dual_channel_618); the renewal-window block carries status UNRESOLVED, iteration 639, and the 101-year archive field. Max numeric mechanism id is 618; mechanism 619 exists nowhere (next id still free). The modern id era (504+) is collision-free (the #635 refinement stands). No new YAML mechanism this run, as is normal for Type D.
+3. Journalist YAML health post-#638: journalists.yaml parses, 266 journalists (265 + Sarah Perez), the Perez entry appears exactly once and sits BEFORE the trailing top-level mapping keys (jacob_krol: et al.), not appended at EOF - the 2026-09-08 insertion convention held. The #638 competitor_coverage block (mechanism_id 617) is present.
+4. Type E ratchet integrity: podcast-sentiment.md Tracked Sources table reads "50 verification cycles through Sep 9 2026" (Attention Sphere), the Guilty Feminist row holds "Active, 499 episodes (Sep 8 2026)", the Everyone Hates Elon row reads "Activist group (not a podcast)", and the Attention Sphere row records "task spec name misidentified as a podcast".
+5. Research discipline this run: Type D, no web research. .venv/bin/python throughout per the 2026-09-07 canonical-interpreter rule. New-file tests run pre-commit (30 green, 6 deselected per the #565 convention: 3 rotation-guard + 3 doc-sync). Full test suite launched in background at run start for cross-validation; the only expected failures are the by-designed-supersession rotation-guard window tests of earlier iterations (#631/#632/#635/#636/#637/#638/#639 windows all move once #640's main commit lands), their non-window tests still pass.
+
+**Asymmetry scorer:** Verified, not exercised on new data (Type D). #637 n=2 pair well-formed, is_significant False; #638 n=1 pair degenerate contract; arm-swap negation and identical-arm (0.0, 1.0) invariants hold. No new empirical tone finding this run.
+
+**Confounders Ranked:** Not applicable (verification run; no empirical tone comparison performed).
+
+**Cross-references:** #635 (Type D Sep 9: scorer degenerate-input consistency, this run's complement; the 504+ invariant refinement and count_stats --pytest authority convention re-used here); #637 (Type A Sep 9: WSJ x OpenAI pair scored here); #638 (Type B Sep 9: Perez pair scored here; journalists.yaml insertion verified here); #639 (Type C Sep 9: mechanism 618 verified here; rotation predecessor); #636 (Type E Sep 9: 50-cycle table verified here).
+
+**Research method:** No web research this run (Type D). Full-suite background run + targeted new-file pre-commit run; YAML re-parse of competitor-entities.yaml (post #639) and journalists.yaml (post #638); repo-wide recursive mechanism-id scan; ASCII-only check on the new test file.
+
+**New Type D files:** `tests/test_type_d_640_scorer_statistical_meaningfulness_corpus_integrity_sweep_sep09_8pm.py` - 7 classes, 36 def-tests (30 green pre-commit; rotation-guard class 3 + doc-sync class 3 deselected pre-commit by design per the #565 followup convention).
+
+**Artifact readiness:** No analysis.json update warranted. Scorer-validity verification + integrity sweep only; no new empirical tone data at the publication level.
+
+**Rotation Transparency:** Previous main commit #639 Type C at 19:00 PDT Sep 9 2026 (commit fd7c893 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D. Main-commit filter `^Type [A-E] #\d+:` applied per the 2026-09-07 rotation-guard convention (followup/doc-sync commits excluded). TestRotationCycleGuard640 covers window 636-640 (D,C,B,A,E newest-first), closing the C->D edge; anchor patched in followup per #565 convention.
+
+**Novelty Verification:** Zero test_type_d_640 files on disk before this run (glob verified, pinned in TestNovelty640); no Type D #640 main commit pre-commit (git log --grep verified, pinned in TestNovelty640); mechanism_id 618 max and unique pre-commit (no 619 anywhere); no #640 iteration entry pre-commit.
+
+**Commit hashes:** PENDING (patched in followup/doc-sync per #565 convention). count_stats.py --check gate to be run at doc-sync.
+
+---
+
 #639 Type C: Time x OpenAI Strategic Partnership Renewal Window + Dual-Channel Incentive Geometry (Jun 27 2024 Multi-Year Deal, Meta $0 on Both Channels)
 
 **Date:** 2026-09-09 19:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
