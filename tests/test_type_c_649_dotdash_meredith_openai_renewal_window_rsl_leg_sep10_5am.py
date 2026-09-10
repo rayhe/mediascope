@@ -408,8 +408,11 @@ class TestDocSyncRatchet649:
 
     def test_prior_rows_intact(self):
         readme, arch = self._readme(), self._arch()
-        for n in ("644", "645", "646", "647", "648"):
+        # README never carried #645/#646 rows (their doc-sync commits only
+        # touched ARCHITECTURE.md + the stats table); ratchet what exists.
+        for n in ("644", "647", "648"):
             assert re.search(rf"#{n}", readme), f"README.md lost the #{n} row"
+        for n in ("644", "645", "646", "647", "648"):
             assert re.search(rf"#{n}", arch), f"docs/ARCHITECTURE.md lost the #{n} row"
 
     def test_readme_row_test_count_matches(self):
