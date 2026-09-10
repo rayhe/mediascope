@@ -2929,6 +2929,94 @@ entities:
       - https://www.adweek.com/media/anthropic-content-licensing-lawsuits-publishers/
       - https://www.adweek.com/media/openai-dotdash-meredith-licensing-payment/
       caution: Structural mapping only. Documents the triple-payer revenue architecture, pricing-model distinction, Google adversarial leg, and zero-deal entity set, not editorial capture. No coverage-tone claim is made.
+
+    mechanism_624_dotdash_meredith_openai_renewal_window_rsl_leg_sep2026:
+      mechanism_name: 'Dotdash Meredith (People Inc) OpenAI Renewal Window (Sep 2026 Status) - 28 Months Post-Deal, No Renewal/Extension/Termination Reporting, Treated ACTIVE per #599 Convention; Roberts Mar 2026 All-You-Can-Eat Confirmation; RSL Publisher-Side Diversification'
+      mechanism_id: 624
+      iteration: 649
+      rotation: 'Type C'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      date_analyzed: '2026-09-10'
+      time_pdt: '05:00'
+      type: 'financial_incentive_mapping'
+      type_c_focus: 'OpenAI-leg renewal window for the corpus first triple-payer publisher (mechanisms 534, 539). Four bounded Sep 2026 browser.search query sets: (1) DDM OpenAI renewal/extension 2026; (2) People Inc OpenAI 2026 (post-rebrand naming); (3) DDM Meta AI deal 2025 (bounded check on the Dec 2025 leg); (4) DDM Anthropic/Perplexity 2026 (new-leg sweep). No renewal, extension, renegotiation, or termination reporting for the May 7 2024 DDM-OpenAI deal surfaced in any set - only 2024 announcement re-surfaces. Renewal status UNRESOLVED (disclosed, not claimed per iteration-492 rule), treated ACTIVE per the #599 Vox convention. New-to-corpus: Digiday Mar 25 2026 Jon Roberts keynote (all-you-can-eat confirmation plus revenue-lag bound) and CJR Sep 2026 RSL-backing report (publisher-side diversification, not a competitor incentive).'
+      renewal_window:
+        announcement_date: '2024-05-07'
+        elapsed_months: 28
+        stated_term: 'multiyear, no dated expiry on record (contrast the Axel Springer Dec 2026 dated expiry mapped in #604)'
+        status: UNRESOLVED
+        convention: 'treated ACTIVE per #599 (no termination reporting)'
+        reporting_basis: two bounded Sep 2026 query sets surfaced only 2024 announcement re-surfaces (nasdaq PRNewswire mirror, thewrap, iac.com, engadget, bloomberg law); no 2025 or 2026 renewal reporting
+        cohort_position: 'sixth member of the #609 first-gen OpenAI publisher renewal cohort (after FT/Atlantic/Conde Nast via #609, Time via #639, Vox via #644); first dedicated DDM renewal query set'
+        next_observable: a dated renewal/decision point; the Axel Springer Dec 2026 decision point (#604) remains the cohort's first dated expiry
+      positive_control:
+        openai_local_news_renewal: 'OpenAI renewed a local-news publisher deal in Jul 2026 ($5M, per #609) - renewals happen AND get trade-press coverage, so the absence for DDM is informative, not a non-reporting artifact'
+        press_gazette_tracker: Press Gazette AI-deals tracker updated 3 days before this run (Sep 7 2026) lists the Nov 2025 Microsoft leg and Dec 2025 Meta leg for People Inc with no DDM-OpenAI renewal entry - a curated-trade-press absence, not an authoritative registry
+      roberts_confirmation:
+        source: Digiday Mar 25 2026, Sara Guaglione reporting, People Inc chief innovation officer Jon Roberts keynote at the Digiday Publishing Summit, Vail - NEW TO CORPUS
+        openai_meta_all_you_can_eat: 'With OpenAI and with Meta, they are the consumer. They are the end user. We are working with their AI labs. They know that the better the inputs they have, the better the outputs they are going to have. They are multi-year deals and it is all you can eat. They have full access to all the content that falls within the scope of the contract.'
+        microsoft_a_la_carte: Microsoft Publisher Content Marketplace is pay-per-use (usage-triggered payment), contrasted with the OpenAI/Meta all-you-can-eat model - same pricing distinction mechanism 539 attributes to Vogel
+        revenue_lag: 'I think there is a boom in companies who claim they will sell your content for money, and not yet a boom in the money from those deals. So there seems to be more of these marketplaces every minute. But not all of them are going to be meaningful.'
+        implication: 'the OpenAI leg is confirmed ACTIVE as of Mar 2026 by a company executive (not deal text); the multi-year all-you-can-eat characterization corroborates the #599 ACTIVE treatment'
+      rsl_leg:
+        finding: People Inc joined Reddit, Yahoo, and Medium in backing Really Simple Licensing (RSL) in September 2026, per the CJR analysis (crawled 11 hours before this run) - NEW TO CORPUS
+        model: standardized clearinghouse modeled after music-industry ASCAP/BMI frameworks; publishers set payment terms and attribution requirements; no major AI company has committed to honoring the standard yet
+        disclosure: 'publisher-side revenue diversification, NOT a Meta-competitor incentive - same disclosure class as the ProRata leg in #644'
+        strategic_signal: RSL backing plus the Cloudflare bot-blocking posture (dig.watch, mechanism 539) shows People Inc extracting payment through access leverage, consistent with the Vogel all-you-can-eat vs a la carte pricing discourse
+      anthropic_perplexity_sweep:
+        bounded_absence: query set 4 surfaced no People Inc x Anthropic or x Perplexity licensing deal - only the GitHub api-evangelist/meredith repo documenting People Inc brands blocking ClaudeBot, anthropic-ai, CCBot, PerplexityBot via robots.txt
+        note: the zero-deal entity set from mechanism 539 (Anthropic, Google, Amazon, Apple) is unchanged this run
+      meta_leg_status:
+        press_gazette_dec_2025_list: Press Gazette Sep 2026 tracker confirms the Dec 5 2025 Meta deals list (CNN, Fox News, Fox Sports, Le Monde Group, People Inc, The Daily Caller, The Washington Examiner, USA Today plus the USA Today Network of regional newsbrands) - Meta leg stands as mapped in mechanism 539, no renewal event due (9 months elapsed)
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'All renewal-status evidence is bounded-search absence; absence of reporting is not proof of deal continuity - the #609 positive-control argument (renewals get covered) is inferential, not dispositive'
+      - rank: 2
+        strength: strong
+        confounder: The Roberts all-you-can-eat confirmation is a company-executive keynote statement (Mar 2026), not deal text; the multi-year term has no dated expiry on record, so 28 months elapsed is elapsed time, not a renewal decision point
+      - rank: 3
+        strength: moderate
+        confounder: The Press Gazette tracker is a trade-press curation, not an authoritative deal registry; a quiet renewal could exist without trade-press coverage (the DDM-OpenAI original deal itself had minimal trade-press fee disclosure)
+      - rank: 4
+        strength: moderate
+        confounder: The RSL leg is publisher-side diversification (disclosed), and no major AI company has committed - its incentive effect is prospective, not current
+      - rank: 5
+        strength: weak
+        confounder: CJR crawled 11 hours before this run; the September RSL-backing month is as reported in the piece, not independently dated
+      strongest_counterargument: 'Roberts own revenue-lag framing (not yet a boom in the money from those deals) is the strongest bound on the incentive: AI licensing remains a small line against People Inc 269M quarterly digital revenue (IAC reported, via dig.watch Nov 2025), and the company is actively extracting payment through crawler-blocking leverage (Cloudflare; blocking non-paying bots brought almost everyone to the table) - a publisher playing market-power, not passively receiving capture money. Licensing product reviews for model training does not require editorial favoritism, and the null (independent review standards) predicts no tone effect.'
+      cross_references:
+      - 'Mechanism 534 Dotdash Meredith x OpenAI deal structure (the renewal query set baseline; $16M fixed floor, ad-tech leg, Lifewire exposure)'
+      - 'Mechanism 539 Dotdash Meredith triple-payer architecture (OpenAI plus Microsoft PCM plus Meta legs; zero-deal entity set unchanged this run)'
+      - '#609 first-gen OpenAI publisher renewal cohort (FT/Atlantic/Conde Nast bounded query sets; cohort method template; Jul 2026 local-news renewal positive control)'
+      - '#599 ACTIVE convention (no termination reporting => treated as still ACTIVE)'
+      - '#644 Vox Media renewal window plus ProRata publisher-side diversification (RSL is the DDM analogue of the ProRata leg; both disclosed as non-competitor instruments)'
+      - '#634 AP triple-payer (#634 stress-tested the ACTIVE convention for the elapsed-term case; DDM at 28 months with no stated expiry is the earlier and weaker application)'
+      - '#604 Axel Springer Dec 2026 expiry (the cohort first dated renewal decision point; the monitoring item there stands)'
+      novelty_verification:
+      - 'Zero mechanism_624 keys repo-wide pre-commit (grep verified; the 624 string hits in profiles are iteration: 624 records, a techtarget URL, and an androidauthority URL - none are mechanism keys)'
+      - Zero test_type_c_649 files on disk pre-commit (glob verified)
+      - No Type C commit with 649 in title (git log --grep verified)
+      - Zero Dotdash Meredith / People Inc renewal mentions in competitor-entities.yaml pre-commit (grep verified)
+      - FIRST corpus renewal-window mapping for the DDM-OpenAI deal (mechanisms 534/539 cover structure and triple-payer, never renewal status)
+      - 'NEW TO CORPUS: Digiday Mar 25 2026 Jon Roberts AI-licensing keynote (all-you-can-eat confirmation plus revenue-lag quote)'
+      - 'NEW TO CORPUS: CJR Sep 2026 Really Simple Licensing backing (Reddit, Yahoo, Medium, People Inc)'
+      - 'NOT a falsification-family member: the renewal window BOUNDS rather than joins the falsification family; no coverage-tone claim is made'
+      statistical_discipline: 'qualitative structural mapping only; correlation not causation; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; tone_scores NOT_SCORED; is_significant False'
+      source_urls:
+      - https://digiday.com/media/people-incs-jon-roberts-on-the-ai-licensing-boom-and-the-revenue-lag/
+      - https://www.cjr.org/analysis/reddit-winning-ai-licensing-deals-openai-google-gemini-answers-rsl.php
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      - https://llmpulse.ai/blog/ai-content-licensing-deals/
+      - https://www.nasdaq.com/press-release/dotdash-meredith-announces-strategic-partnership-with-openai-bringing-iconic-brands
+      - https://www.thewrap.com/dotdash-meredith-openai-licensing-deal/
+      - https://www.engadget.com/openai-partners-with-people-publisher-dotdash-meredith-212832821.html?src=rss/
+      - http://news.bloomberglaw.com/ip-law/openai-inks-deal-with-people-magazine-publisher-dotdash-meredith
+      - https://dig.watch/updates/microsoft-deal-signals-pay-per-use-path-for-ai-access-to-people-inc-content
+      - https://www.adweek.com/media/openai-dotdash-meredith-licensing-payment/?utm_source=www.thedeepview.co&utm_medium=newsletter&utm_campaign=interview-microsoft-vp-on-agentic-push-and-ignite&_bhlid=dab9663d3f42fa896cb98be12e360193f757047e
+      caution: Structural mapping only. Documents the OpenAI-leg renewal window, the Roberts all-you-can-eat confirmation, and the RSL publisher-side diversification leg, not editorial capture. No coverage-tone claim is made.
+
     mechanism_544_vox_media_microsoft_pcm_pay_per_use_leg:
       mechanism_id: 544
       iteration: 544
