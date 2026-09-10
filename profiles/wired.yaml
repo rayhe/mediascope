@@ -894,6 +894,90 @@ key_journalists:
 
       '
     test_file: tests/test_paresh_dave_cross_entity.py
+    adversarial_actor_selection_asymmetry:
+      mechanism_name: adversarial_actor_selection_asymmetry
+      mechanism_id: 623
+      type: B
+      iteration: 648
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      block_key: type_b_648_paresh_dave_meta_robots_vs_anthropic_supply_chain_adversarial_actor_sep10
+      date_analyzed: '2026-09-10'
+      summary: |
+        Paresh Dave (WIRED, ex-Reuters) applies a constant worker-sympathetic labor register across entities, but the adversarial actor is selected differently by entity: in the Aug 28 2026 Meta data-center robots story Meta is positioned as the cost-cutting antagonist and workers as victims, while in the March 2026 Anthropic supply-chain-risk trilogy the Pentagon/DoD is positioned as the antagonist ('attempt to cripple', 'illegally punishing') and Anthropic as the sympathetic company-victim deserving judicial protection. The register is constant; the antagonist slot flips by entity. Counterevidence: Dave's Apr 9 2026 'Meta Cafeteria Workers Did What Execs Won't: Took on ICE and Won' is positive Meta labor coverage where the adversary is ICE, proving the register is genuinely worker-sympathetic rather than Meta-hostile per se, but in employer-vs-labor conflicts Meta lands in the antagonist slot. Distinct from mechanism 8 (emotional register on internal dysfunction): different articles, different angle. All WIRED characterization is snippet-bounded (WIRED fetch blocked, no canonical URLs invented, per #647 convention).
+      research_method: '2 browser.search query sets this run: (1) techmeme Paresh Dave Wired Meta robots data centers August 2026; (2) Paresh Dave Wired OpenAI Google article 2026. Full-text reads of both TechCrunch and WIRED Muse pieces for context; WIRED direct fetch blocked so WIRED characterization is snippet-bounded. seattlemetromagazine.com author page opened first-hand for the Anthropic trilogy attributions. All URLs copied verbatim from Full-URL listings; no zero-coverage claims per iteration-492 rule; no em dashes.'
+      meta_arm:
+        title: 'Sources: Meta is testing robots from ABB and others to handle data center tasks such as swapping cables and resetting servers as it seeks to lower labor costs'
+        date: '2026-08-28'
+        byline: Paresh Dave
+        publication: WIRED
+        sourcing: snippet_bounded
+        antagonist: Meta (cost-cutting employer)
+        victim_vector: workers fear for jobs
+        tone_score: -0.30
+        tone_basis: MANUAL ILLUSTRATIVE hand-assigned this run
+        source_urls:
+        - https://biztoc.com/x/454337b9dce86e40
+        - https://cryptopanic.com/news/33294835/Meta-tests-data-center-robots-as-workers-fear-for-their-jobs
+        - https://agntbox.com/inside-metas-push-to-put-robots-to-work-in-data-centers-2026-09-08/
+        evidence_quotes:
+        - 'as it seeks to lower labor costs'
+        - 'Meta tests data center robots as workers fear for their jobs'
+      anthropic_arm:
+        title: Anthropic supply-chain-risk trilogy
+        dates: '2026-03-20, 2026-03-24, 2026-03-26'
+        byline: Paresh Dave
+        publication: WIRED
+        sourcing: snippet_bounded
+        antagonist: Pentagon / US Department of Defense
+        victim_vector: Anthropic (company deserving judicial protection)
+        tone_score: 0.25
+        tone_basis: MANUAL ILLUSTRATIVE hand-assigned this run
+        articles:
+        - title: 'Anthropic Denies It Could Sabotage AI Tools During War'
+          date: '2026-03-20'
+        - title: "Pentagon's 'Attempt to Cripple' Anthropic Is Troubling, Judge Says"
+          date: '2026-03-24'
+          evidence_quote: 'The US Department of Defense appears to be illegally punishing Anthropic for trying to restrict the use of its AI tools by the military, US district judge Rita Lin said during a...'
+        - title: 'Anthropic Supply-Chain-Risk Designation Halted by Judge'
+          date: '2026-03-26'
+          evidence_quote: 'Anthropic won a preliminary injunction barring the US Department of Defense from labeling it a supply-chain risk, potentially clearing the way for customers to resume working with the company.'
+        source_urls:
+        - https://www.seattlemetromagazine.com/author/paresh-dave/
+      counterevidence:
+        title: "Meta Cafeteria Workers Did What Execs Won't: Took on ICE and Won"
+        date: '2026-04-09'
+        byline: Paresh Dave
+        publication: WIRED
+        reading: 'Positive Meta labor coverage; adversary is ICE (immigration agents), not Meta. Proves the register is genuinely worker-sympathetic rather than Meta-hostile per se, but bounds the claim: in employer-vs-labor conflicts Meta lands in the antagonist slot.'
+        source_url: https://www.seattlemetromagazine.com/author/paresh-dave/
+      asymmetry_scorer:
+        method: MANUAL ILLUSTRATIVE hand-assigned tones
+        meta_tone: -0.30
+        anthropic_tone: 0.25
+        illustrative_delta_anthropic_minus_meta: 0.55
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        statistical_contract: degenerate_n1_per_arm
+        verdict: 'WITHIN-WRITER ADVERSARIAL-ACTOR SELECTION, but NOT a falsification pin: no named financial gradient predicts this pair (per #647 the WIRED-Anthropic direct prediction is neutral, no deal). Correlation is not causation per the Aug 28 rule. NOT a falsification-family member. NOT a pure asymmetry pin. Directional only.'
+      confounders_ranked:
+        strong:
+        - 'Antagonist follows the facts: Meta voluntarily testing labor-replacing robots vs Pentagon designating Anthropic a supply-chain risk. The news pegs genuinely assign the antagonist.'
+        - 'Five-month gap (Mar 2026 vs Aug 2026) spans different news cycles.'
+        moderate:
+        - 'Court-beat genre: the Anthropic trilogy is legal-proceedings coverage where the judge''s own language ("troubling", "illegally punishing") supplies the adversarial frame; the reporter inherits the register from the courtroom.'
+        - 'Source structure: Anthropic executive court filings vs anonymous Meta workers; the sympathy vector follows who the sources are.'
+        - 'All characterization snippet-bounded (WIRED paywall); no first-hand read.'
+        weak:
+        - 'n=1 Meta arm; directional only.'
+        - 'Cafeteria-workers counterevidence suggests reporter-level labor sympathy, bounding the claim to actor-selection not Meta-hostility.'
+      financial_context: 'Condé Nast receives $5-10M/yr from OpenAI licensing plus 5 other Meta competitors; per #647 the WIRED-Anthropic direct prediction is neutral (no deal). No financial gradient predicts softer Anthropic coverage here. Correlation only, not causation.'
+      cross_references: 'mechanism 8 (Dave emotional register asymmetry, sibling on same reporter); #647 (WIRED snippet-bounded sourcing convention); #638/#643 (degenerate n=1 manual-illustrative statistical contract convention)'
+      artifact_readiness: 'No analysis.json update warranted. Illustrative manual-tone finding with degenerate n=1 statistical contract; directional only.'
+      test_file: tests/test_type_b_648_paresh_dave_meta_robots_vs_anthropic_supply_chain_adversarial_actor_sep10_4am.py
 - name: Lauren Goode
   beat: Consumer tech, Big Tech
   known_patterns: Product reviews with editorial commentary
