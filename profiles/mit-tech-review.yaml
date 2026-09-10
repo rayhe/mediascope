@@ -2261,6 +2261,133 @@ competitor_relationships:
         - "Wong Camera Paradox (Gizmodo) — same pattern: camera parity acknowledged then asymmetric framing applied"
         - "NYT Rogue AI Natural Experiment — Anthropic receives more coverage but equivalent framing to OpenAI; Meta absent"
         - "WDH journalist profile (this file) — individual journalist asymmetry score 0.58 consistent with institutional pattern"
+    mechanism_619_mit_tr_anthropic_pentagon_refusal_register_vs_meta_security_failure_register_sep09:
+      mechanism_id: 619
+      iteration: 642
+      iteration_type: A
+      iteration_time: "2026-09-09 22:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "MIT Technology Review x Anthropic (vs Meta)"
+      finding: >
+        MIT TR applies a principled-refusal virtue register to Anthropic's
+        Pentagon surveillance-refusal while reserving a security-failure /
+        ironic-diminishment register for Meta's equivalent AI activities. The
+        flagship piece "The Pentagon's culture war tactic against Anthropic has
+        backfired" (James O'Donnell, Mar 30 2026) frames the Pentagon, not
+        Anthropic, as the aggressor: "what is really a contract dispute never
+        needed to reach such a frenzy. It did so because the government
+        disregarded the existing process ... The Pentagon, in other words,
+        wanted a culture war." The companion "OpenAI's 'compromise' with the
+        Pentagon is what Anthropic feared" (Mar 2 2026) uses Anthropic as the
+        moral anchor against which OpenAI's posture is measured as an
+        "ideological seesaw" compromise. The Jun 5 2026 Download piece is the
+        within-article control: Anthropic's Mythos is the "superpowered AI
+        systems" cyber-risk guardian frame while Meta's Instagram customer-support
+        agent hack is the "far simpler exploits" failure frame in the same item.
+        Meta-side comparators run ironic-diminishment ("Meta has an AI for brain
+        typing, but it's stuck in the lab: weighs a half a ton, costs $2
+        million, and won't ever leave the lab") and accountability-adversarial
+        ("Three reasons Meta will struggle with community fact-checking")
+        registers. Direction of the register gap is CONSISTENT with the
+        in-corpus three-hop endowment incentive (softer_than_expected), but
+        STRONG confounders dominate: Anthropic won the legal fight on the
+        merits (Aug 27 2026 permanent injunction, "illegal and baseless";
+        Commerce Secretary Lutnick "back on the right side"), and MIT TR's
+        safety-research editorial priors (mechanistic interpretability beat,
+        Will Douglas Heaven) independently predispose sympathy for
+        refusal postures. Correlation only, not proof of editorial influence.
+        Not a falsification-family member: the observed direction is consistent
+        with the money prediction, so it cannot contradict it. Register-strand
+        sibling of #552 (FT x Anthropic surveillance-refusal inversion, different
+        publication and event window); distinct from mechanism 15 (Jun-Jul 2026
+        product/research register, different article set).
+      anthropic_articles:
+        - title: "The Pentagon's culture war tactic against Anthropic has backfired"
+          journalist: "James O'Donnell"
+          date: "2026-03-30"
+          url: "https://www.technologyreview.com/2026/03/30/1134881/the-pentagons-culture-war-tactic-against-anthropic-has-backfired/"
+          register: "principled_refusal_virtue"
+          key_framing: "Pentagon wanted a culture war; Anthropic the disciplined process party; contract dispute that never needed the frenzy"
+          source_note: "search-result snippet bounded; technologyreview.com direct fetch not attempted this run"
+          manual_illustrative_tone: 0.35
+        - title: "OpenAI's 'compromise' with the Pentagon is what Anthropic feared"
+          date: "2026-03-02"
+          url: "https://www.technologyreview.com/2026/03/02/1133850/openais-compromise-with-the-pentagon-is-what-anthropic-feared/"
+          register: "moral_anchor_refusal"
+          key_framing: "Anthropic's feared outcome used as the benchmark; OpenAI on an 'ideological seesaw' compromise deferring to the law"
+          source_note: "search-result snippet bounded"
+          manual_illustrative_tone: 0.25
+        - title: "The Download: AI hacking beyond Mythos, and chatbots' impact on our brains"
+          journalist: "Grace Huckins"
+          date: "2026-06-05"
+          url: "https://www.technologyreview.com/2026/06/05/1138452/the-download-ai-hacking-mythos-chatbots-brain-impacts/"
+          register: "within_article_guardian_vs_failure"
+          key_framing: "headline 'The Meta hack shows there's more to AI security than Mythos'; Anthropic's Mythos is the superpowered-systems guardian frame; Meta's agent hack is the 'far simpler exploits' failure frame, same item"
+          source_note: "within-article control; search-result snippet bounded"
+          manual_illustrative_tone: 0.15
+      meta_articles:
+        - title: "The Meta hack shows there's more to AI security than Mythos"
+          journalist: "Grace Huckins"
+          date: "2026-06-05"
+          url: "https://www.technologyreview.com/2026/06/05/1138452/the-download-ai-hacking-mythos-chatbots-brain-impacts/"
+          register: "security_failure_diminishment"
+          key_framing: "Instagram AI customer-support agent used to steal accounts via 'far simpler exploits'; Meta as the vulnerability exemplar"
+          source_note: "in-article Meta arm of the same Download piece; search-result snippet bounded"
+          manual_illustrative_tone: -0.40
+        - title: "Meta has an AI for brain typing, but it's stuck in the lab"
+          date: "2025-02-07"
+          url: "https://www.technologyreview.com/2025/02/07/1111292/meta-has-an-ai-for-brain-typing-but-its-stuck-in-the-lab/"
+          register: "ironic_diminishment"
+          key_framing: "'Back in 2017, Facebook unveiled plans ... Now the company ... has actually done it. Except it weighs a half a ton, costs $2 million, and won't ever leave the lab.'"
+          source_note: "timing-skew confounder: 2025 piece vs 2026 Anthropic set; register direction noted, not tone-matched"
+          manual_illustrative_tone: -0.35
+        - title: "Three reasons Meta will struggle with community fact-checking"
+          date: "2025-01-29"
+          url: "https://www.technologyreview.com/2025/01/29/1110630/three-reasons-meta-will-struggle-with-community-fact-checking/"
+          register: "accountability_adversarial"
+          key_framing: "Zuckerberg rollback of fact-checking; 'trail of moderation controversies'; misinformation and hate spreading unchecked"
+          source_note: "timing-skew confounder: 2025 piece; accountability register carried as institutional baseline"
+          manual_illustrative_tone: -0.55
+      financial_context:
+        predictor: "indirect_endowment"
+        prediction: "softer_than_expected"
+        chain: "Google 14 percent Anthropic stake (~$135B value) and Amazon $13B+ investment feed MIT $27.4B endowment returns; Anthropic ~$1T October 2026 IPO target raises the stakes of validating coverage"
+        status: "correlate only, not proof of editorial influence; in-corpus mit-tech-review.yaml competitor_relationships.anthropic description"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = Anthropic arm, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.35, 0.25, 0.15]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.40, -0.35, -0.55]
+        target_avg: 0.25
+        peer_avg: -0.4333
+        delta_manual_illustrative: 0.6833
+        delta_calc: "(0.35+0.25+0.15)/3 - ((-0.40-0.35-0.55)/3) = 0.2500 - (-0.4333) = 0.6833"
+        engine_welch_t_8_2000: "t=8.2000, p=0.001213, d=6.6953, is_significant True (Welch t-test on the illustrative arrays, scipy.stats.ttest_ind equal_var=False; Cohen's d with pooled SD)"
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule: engine significance on synthetic illustrative arrays is never promoted). SEVENTH DIVERGENCE PIN (ratchet 6 -> 7; #602 was sixth with p=0.001755). Engine p=0.001213 is the SMALLEST in the divergence class; |d|=6.6953 is not the largest (#602 holds |d|=9.2557). Logged delta 0.6833 reproduces engine mean-difference arithmetic exactly at 4dp."
+      confounders_ranked:
+        strong:
+          - "News-value on the merits: Anthropic won the legal fight (Aug 27 2026 permanent injunction, 'illegal and baseless'; Lutnick 'back on the right side'); principled framing has an evidentiary basis independent of any incentive"
+          - "Editorial priors: MIT TR's safety-research beat (mechanistic interpretability, Will Douglas Heaven) independently predisposes sympathy for refusal postures; refusal-as-story fits the publication's worldview"
+          - "Timing skew: Meta arm includes 2025 pieces (brain typing, fact-checking) vs 2026 Anthropic set; the Jun 5 Download piece is the timing-matched within-article control"
+          - "Event asymmetry: Meta had no equivalent refusal event to cover; there is no Meta comparator for a Pentagon legal victory, so the register gap is partly selection by reality"
+        moderate:
+          - "Anthropic's June breach articles showed MIT TR adversarial capacity exists on the strand (per in-corpus pattern); the refusal register is event-specific, not a blanket firewall"
+          - "The Jun 5 Download piece's Mythos frame also warns that Anthropic's own superpowered systems are the cyber-risk; guardian and risk frames coexist"
+          - "Court-outcome timing: the Mar 2026 MIT TR pieces predate the Aug 2026 victories, so the virtue framing preceded the legal vindication; direction of causation with news cycle is ambiguous"
+        weak:
+          - "n=3 vs n=3 illustrative; verdict invariant under rounding (delta 0.6833 at 4dp)"
+          - "Two Anthropic pieces are James O'Donnell's beat; writer-level consistency may reflect a single journalist's frame, not institutional register"
+      counterevidence:
+        - "MIT TR covered Anthropic's July 2026 rogue-agent Hugging Face breach adversarially in peer echoes (in-corpus); no refusal firewall"
+        - "The 'what Anthropic feared' piece is openly skeptical that the compromise position holds ('hard not to see the company as sitting on an ideological seesaw'); skepticism toward the Pentagon deal cuts both ways"
+        - "No direct MIT TR-Anthropic financial relationship is documented; the three-hop endowment chain is inferential and disclosed as such"
+      cross_references:
+        - "#552 FT x Anthropic surveillance-refusal register inversion (first publication member; this is the second publication on the refusal-register strand, distinct articles and events)"
+        - "mechanism 15 pre-IPO product validation amplifier (Jun-Jul 2026 product/research register; this is the legal/regulatory register, distinct article set)"
+        - "mechanism 476 MIT TR x Google coverage tone vs Meta"
+      novelty: "First dedicated Type A mechanism on MIT TR x Anthropic legal/regulatory register. Distinct from mechanism 15 (product/research register, Jun-Jul) and #552 (FT, different publication and event window). Zero mechanism_619 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 618."
+      research_method: "5 browser.search query sets this run: site:technologyreview.com Anthropic (since Aug 1 2026); technologyreview.com Anthropic Pentagon lawsuit or Mythos or IPO September (since Aug 15); site:technologyreview.com Anthropic Pentagon court; MIT Technology Review Meta AI 2026 coverage (since Jul 1); MIT Technology Review Meta settlement or superintelligence (since Jul 15). All URLs copied verbatim from Full-URL listings; story facts snippet-bounded per the no-canonical-URL rule; no zero-coverage claims per iteration-492 rule (silence claims, where made, are bounded search-result absences); technologyreview.com direct fetch not attempted this run (single-attempt terminal-failure convention not triggered; snippets sufficed)."
   amazon:
     financial_tie: "indirect"
     estimated_value: "undisclosed"
