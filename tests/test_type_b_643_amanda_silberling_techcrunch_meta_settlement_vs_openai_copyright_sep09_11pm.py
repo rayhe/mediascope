@@ -79,7 +79,7 @@ AUTHOR_URL = "https://techcrunch.com/author/amanda-silberling/"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "0000000"
+ANCHORED_SHA = "7caee04"
 
 
 def _journalists():
