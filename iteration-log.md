@@ -1,3 +1,28 @@
+#645 Type D: Scorer Consistency for the Sep 9-10 Illustrative Pairs (#642 MIT-TR n=3 Pair Engine-Exact + #643 Silberling Degenerate Contract) + Post-#644 Corpus Integrity Sweep - Sep 10 2026 01:00 PDT
+
+**Date:** 2026-09-10 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+
+**Type:** D - Test & Verify (rotation C -> D; #644 Type C preceded)
+
+**Finding:**
+1. **#642 scorer reproduction (n=3 vs n=3):** The MIT Technology Review illustrative pair (Anthropic [0.35, 0.25, 0.15] vs Meta [-0.40, -0.35, -0.55]) run through the REAL `calculate_asymmetry` path reproduces the engine values logged in the #642 mechanism block EXACTLY: t=8.2000, p=0.001213, d=6.6953, asymmetry +0.6833 (Anthropic avg +0.25 vs Meta avg -0.4333), seeded bootstrap CI (0.5500, 0.8167) byte-identical across runs. Arm swap negates asymmetry exactly (+0.6833 to -0.6833); article counts (3, 3).
+2. **Seventh divergence pin holds:** The engine reports is_significant True (p=0.001213 < 0.05) while the corpus finding layer records is_significant False per the Aug 28 2026 standing rule. #642 logged this as the SEVENTH divergence pin (smallest divergence-class p-value; |d|=6.6953 not the largest, #602 holds 9.2557). This run verifies the divergence persists through the real scorer path; it does NOT re-pin or extend the class. Manual-illustrative tones can never clear the finding layer, whatever the engine says.
+3. **#643 degenerate contract (n=1 per arm):** The Silberling pair (Meta [-0.40] vs OpenAI [+0.05]) hits the degenerate contract: p=1.0, d=0.0, asymmetry -0.45, is_significant False, on both arm orders. This is the fourth n=1-per-arm pair in the corpus to hit the degenerate contract (#633, the #635 n=1 subsets, #638, now #643). Identical arms give (0.0, 1.0). The Aug 28 standing rule (illustrative pairs are never significant) is reproduced by the code itself, not just asserted in docs.
+4. **Post-#644 integrity sweep:** mechanism_id 621 (`vox_media_triple_ai_payer_openai_renewal_window_621`) present and unique; the 621 block carries renewal status UNRESOLVED and the ProRata leg; max numeric mechanism id repo-wide == 621 with no 622 anywhere; the modern (504+) id era is collision-free; journalists.yaml parses cleanly (267 journalists) with the #643 Silberling entry before the trailing `jacob_krol:` mapping key (EOF-append convention intact); Type E Tracked Sources at 51 verification cycles with GF 499, EHE activist-not-podcast, and Attention Sphere no-match rows intact.
+
+**Asymmetry scorer:** ENGINE-CONSISTENCY, not new findings. The engine values were logged in-corpus by #642/#643; this run pins their reproduction. p_value, cohens_d, ci_95 for the illustrative pairs remain NOT_CALCULATED at the finding layer per the Aug 28 2026 standing rule; is_significant False at the finding layer.
+
+**Confounders ranked:** Not applicable (scorer-validity run; no new tone claims). The divergence-pin persistence is a property of the standing rule, not evidence for or against any incentive theory.
+
+**Cross-references:** #642 (seventh divergence pin, t=8.2000 p=0.001213 d=6.6953), #643 (degenerate contract -0.45), #638/#633/#635 (prior degenerate-contract pairs), #640 (prior scorer battery pattern), #635 (modern-era collision invariant), #565 (followup anchor convention), #604 (known pre-existing id-597 double-registration, unchanged).
+
+**Research method:** No browser research this run (Type D). Pinned tones copied verbatim from the #642/#643 test-file docstrings (TARGET_SCORES/PEER_SCORES and META_TONE/OPENAI_TONE), not re-typed. Pre-commit greps: zero test_type_d_645 files on disk (glob); no #645 in git log (--grep). No em dashes; ASCII-only.
+
+**New Type D files:** `tests/test_type_d_645_scorer_consistency_642_643_corpus_integrity_post_644_sep10_1am.py` - 7 classes, 35 def-tests (28 green pre-commit; TestRotationCycleGuard645 3 + novelty anchor 1 deselected pre-commit per #565 convention, anchor d2888416c49e14c7b99ca4f3b1ded2aed191e8f9 patched in followup f939982, 4/4 green post-anchor; TestDocSync645 3 green post-doc-sync). Commits: main d288841, followup f939982, doc-sync (this commit). 35/35 green post-doc-sync; count_stats gate 34006 tests / 973 files green (stats table 33971->34006 tests, 972->973 files; journalists 267 unchanged).
+
+**Artifact readiness:** No analysis.json update warranted. Scorer-validity only; no new tone data.
+
+
 #644 Type C: Vox Media Triple-AI-Payer Architecture (Sep 2026 Status) - OpenAI May 29 2024 Deal Renewal Window UNRESOLVED (Fifth #609 Cohort Member, First Dedicated Vox Renewal Query Set) + Microsoft PCM Pay-Per-Use Leg + FIRST Dedicated ProRata 50-Percent Revenue-Share Leg, Meta $0, PMX-Split Counterparty-Continuity Confound (mechanism 621) - Sep 10 2026 00:00 PDT
 
 **Date:** 2026-09-10 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
