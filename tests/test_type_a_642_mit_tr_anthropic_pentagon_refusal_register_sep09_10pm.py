@@ -340,8 +340,15 @@ class TestNovelty642:
         assert glob.glob(os.path.join(REPO, "tests", "test_type_a_642*")) == [os.path.join(REPO, "tests", TEST_BASENAME)]
 
     def test_no_642_in_git_log_pre_commit(self):
-        result = _run_git("log", "--oneline", "--grep=Type A #642:")
-        assert "Type A #642" not in result.stdout
+        # Pre-commit this asserted zero matches; post-main-commit it pins
+        # exactly one main commit for #642 (followup/doc-sync commits use
+        # different subjects and are not counted).
+        result = _run_git("log", "--oneline", "-E", "--grep=^Type A #642:")
+        lines = [
+            l for l in result.stdout.splitlines()
+            if re.match(r"^[0-9a-f]+ Type A #642:", l)
+        ]
+        assert len(lines) == 1, result.stdout
 
     def test_distinct_from_mechanism_15(self):
         novel = _mechanism()["novelty"]
@@ -364,12 +371,12 @@ class TestRotationCycleGuard642:
     per the #565 convention; these tests fail by design pre-anchor.
     """
 
-    ANCHORED_COMMIT = "PATCH_ME_IN_FOLLOWUP"  # patched per #565 convention
+    ANCHORED_COMMIT = "7a23fe2"  # patched per #565 convention
 
     def _window_lines(self):
         result = _run_git(
-            "log", "--oneline",
-            "--grep=^Type [A-E] #64",
+            "log", "--oneline", "-E",
+            "--grep=^Type [A-E] #(638|639|64[0-2]):",
         )
         assert result.returncode == 0
         return result.stdout.splitlines()
