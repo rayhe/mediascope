@@ -217,6 +217,108 @@ competitor_relationships:
       distinct_from_prior: 'Distinct from the profile rogue_ai_framing_tone entries (Jul-Aug rogue-AI window, -0.2 vs -0.45) and from #522/#527 (Perplexity/Microsoft registers). New event window (Astra cycle Sep 2026, settlement Aug 2026), new articles, new theoretical test (#519 dual-deal symmetry).'
       author: 'Kit (with Ray)'
       correlation_not_causation: true
+    mechanism_616_wsj_openai_tumbler_ridge_watchdog_vs_meta_muse_launch_aspirational_sep09:
+      mechanism_id: 616
+      mechanism_name: 'WSJ x OpenAI Tumbler Ridge Liability Watchdog vs Meta Muse Launch Aspirational - Dual-Deal Boundary II'
+      iteration: 637
+      iteration_type: 'A'
+      date: '2026-09-09'
+      summary: 'Second News Corp dual-deal boundary mechanism (complements #632 Microsoft arm, #532 Sep 5 symmetry window). News Corp receives ~$50M/yr from BOTH OpenAI (May 2024, $250M/5yr) and Meta (Mar 2026 Dow Jones news leg, up to $50M/yr per #549); incentive theory predicts symmetric softening. Sep 2-9 2026 same-week 2x2: two WSJ OpenAI pieces (Georgia Wells Tumbler Ridge 30-lawsuits piece; Alexandra Bruell US-govt-backs-OpenAI copyright piece, both first-hand browser.open reads this run) vs two WSJ Meta Muse-launch pieces carried from #632 un-rescored per #628/#630 convention (Meghan Bobrowsky Sep 8 launch feature; Sep 9 Market Talk Mizuho note, snippet-bounded). OpenAI arm: hard incident-watchdog register (-0.55) plus measured legal-process register (+0.10), avg -0.225. Meta arm: aspirational launch register +0.35 avg. Illustrative delta (Meta minus OpenAI) +0.575, directionally OPPOSITE to the softer-prediction for the licensing payer. The Tumbler Ridge piece is the hardest OpenAI register in the WSJ corpus this cycle. Disclosure discipline: both OpenAI pieces carry inline "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI."; the Muse launch piece carries no Meta-deal disclosure (verified first-hand this run), confounded by disclosure-relevance-by-topic. Editorial-independence data: the copyright piece prints the DOJ argument that narrowing fair use would "disproportionately benefit legacy media outlets" (against own-industry interest) and notes Trump sued both the NYT and the WSJ. p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 standing rule). MANUAL ILLUSTRATIVE only.'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing; WSJ, NY Post, Barron''s, MarketWatch, Times, Sun content); Meta leg Mar 2026 (up to $50M/yr, 3yr, US+UK content for Meta AI training/retrieval, Dow Jones news leg per #549). Both predict softer WSJ coverage per incentive theory; #519 predicts the softening is SYMMETRIC. This run tests the OpenAI side of the symmetry against the Meta side in the Sep 2-9 launch/liability window. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      articles_openai:
+        - title: 'OpenAI Hit With 30 Lawsuits Over Canadian School Shooting'
+          date: '2026-09-02'
+          byline: 'Georgia Wells'
+          url: 'https://www.wsj.com/us-news/law/openai-lawsuits-mount-over-canadian-school-shooting-ca24c762'
+          register: 'adversarial_incident_watchdog'
+          tone_MANUAL_ILLUSTRATIVE: -0.55
+          research_method: 'first_hand_browser_open_sep09_637'
+          key_quotes:
+            - 'Victims from the Tumbler Ridge massacre filed 30 lawsuits against OpenAI over its failure to alert police about ChatGPT interactions with the suspect months before the February mass shooting in Canada.'
+            - 'They allege the AI company was negligent, violated product-liability standards and aided and abetted the massacre.'
+            - 'Months before Jesse Van Rootselaar became the suspect in the Tumbler Ridge massacre, OpenAI considered alerting law enforcement about her interactions with ChatGPT... OpenAI leaders ultimately decided not to contact authorities until after the shooting.'
+            - 'News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'
+          vivid_victim_framing:
+            - 'Seventh-grade teacher Deidre Rushlow sheltered students under her desk'
+            - 'A.C., a 13-year-old boy who played dead among his classmates'
+            - 'D.I., a student who had to step over the body of a classmate to evacuate'
+            - 'Paige Hoekstra survived a shot to the chest; Desirae Pisarski lost her 12-year-old daughter'
+          note: 'Hardest OpenAI register in the WSJ corpus this cycle: negligence and aiding-and-abetting liability theory foregrounded, OpenAI''s own counter-evidence (banned suspect account months before, enhanced referral rules, Altman April apology) present but subordinated to the liability frame. Inline OpenAI-deal disclosure present even in this adversarial piece. Date inferred from search-index recency (crawled 6d, updated 7d as of Sep 9) consistent with the story''s "new batch of lawsuits" framing after the April 2026 filings.'
+        - title: 'U.S. Government Backs OpenAI in Copyright Fight With Publishers'
+          date: '2026-09-02'
+          byline: 'Alexandra Bruell'
+          url: 'https://www.wsj.com/tech/ai/u-s-government-backs-openai-in-copyright-fight-with-publishers-64a0735b'
+          register: 'measured_legal_process_balanced'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          research_method: 'first_hand_browser_open_sep09_637'
+          key_quotes:
+            - 'The U.S. government has filed a statement in support of OpenAI in its legal battle with the New York Times and other publishers, arguing that training on news content is within the bounds of "fair use" under U.S. copyright law.'
+            - '"The Administration is siding with a handful of trillion-dollar AI companies at the expense of the countless American creators whose work they stole," a New York Times spokesman said in a statement.'
+            - 'News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'
+            - 'The government said in its filing that narrowing fair-use could hurt competition for LLMs because only "the largest technology companies might have the capital necessary to pay licensing fees." It would also "disproportionately benefit legacy media outlets" because they have more content than smaller independents.'
+            - 'The Trump administration has taken an aggressive approach to interactions with the media, and President Trump has filed lawsuits against both the New York Times and The Wall Street Journal over their coverage.'
+          note: 'Net news event is favorable to OpenAI (DOJ backing in the NYT copyright fight), but the WSJ carries the adversarial NYT spokesman quote prominently, prints a DOJ argument against legacy media''s own economic interests, and discloses the OpenAI deal inline. Editorial-independence data point against capture readings. Date inferred from search-index recency (crawled 6d, updated 7d as of Sep 9); the filing it reports is dated "this week" in the piece.'
+      articles_meta:
+        - title: 'Meta Launches a Personal AI Agent Designed to Be Easy to Use'
+          date: '2026-09-08'
+          byline: 'Meghan Bobrowsky'
+          url: 'https://www.wsj.com/tech/ai/meta-launches-a-personal-ai-agent-designed-to-be-easy-to-use-3eb5cfac'
+          register: 'aspirational_launch_feature'
+          tone_MANUAL_ILLUSTRATIVE: 0.40
+          research_method: 'carried_from_632_first_hand_read'
+          meta_disclosure_check_this_run: 'No Meta-licensing disclosure line present in the piece as read first-hand this run (full text, 47 lines); the only inline boilerplate is the byline contact.'
+          key_quotes:
+            - 'Meta Platforms is betting that making AI agents easy to use will get mainstream consumers to start adopting them in their daily lives'
+            - 'The company is also heavily promoting the safety and security of its new agents at a moment when researchers have been sounding alarms about the potential for AI to escape the control of humans'
+            - '"Muse can and will still make mistakes, but we expect they''ll be much less frequent and cause much less damage due to the safety systems we''ve built in," Meta said'
+          note: 'Aspirational launch register with executive voice (Wang quotes), $130B monetization pressure and rogue-agent concerns included but cushioned. Carried from #632 at identical values, no rescoring, per #628/#630 convention. Disclosure check added this run.'
+        - title: 'Tech, Media and Telecom Roundup: Market Talk (Mizuho Muse note)'
+          date: '2026-09-09'
+          register: 'positive_market_talk_roundup'
+          tone_MANUAL_ILLUSTRATIVE: 0.30
+          research_method: 'carried_from_632_snippet_bounded'
+          key_quotes:
+            - 'Muse may mark the beginning of a substantial product cycle for Meta that isn''t currently priced into the company''s shares'
+            - 'Meta shares are up 4.5%'
+          note: 'Snippet-bounded per #632. Carried at identical values, no rescoring.'
+          url: 'https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-1307ac74'
+          url_source: 'carried_from_632_snippet_bounded'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'meta'
+        peer_entity: 'openai'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.40, 0.30]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.55, 0.10]
+        target_avg: 0.35
+        peer_avg: -0.225
+        delta: 0.575
+        delta_note: 'Meta avg 0.35 minus OpenAI avg -0.225 equals +0.575. Direction: Meta softer than OpenAI in this window, OPPOSITE to the incentive-theory softer-prediction for the licensing payer (OpenAI).'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, n=2 per side, not empirical corpus scores. DO NOT claim empirical significance.'
+        within_arm_register_range: 'OpenAI arm spans 0.65 (+0.10 to -0.55), EXCEEDING the between-entity gap of 0.575. Same "register range exceeds the gap" pattern as #632''s Microsoft arm (0.70 range vs 0.70 gap). Incident liability coverage, not entity favoritism, drives the hard end.'
+      disclosure_register_analysis: 'Inline OpenAI-deal disclosure present in BOTH OpenAI pieces this run (the liability piece and the copyright piece), matching #532''s Astra pieces where the disclosure also appeared. The Muse launch piece carries NO Meta-deal disclosure (verified first-hand this run). STRONG relevance confound: the copyright piece''s topic (publisher-vs-AI-company fair use, NYT suit) makes a publisher licensing deal directly news-relevant; the liability piece''s disclosure appears to be per-company boilerplate applied to OpenAI stories. Whether WSJ applies the same boilerplate to Meta stories could not be determined from one launch piece. Not scored as evidence either way; logged as a disclosure-discipline observation with the confound explicit.'
+      confounders_ranked:
+        strong:
+          - 'Event skew: mass-shooting liability allegations vs DOJ legal backing vs consumer product launch vs analyst roundup are different news events with different natural registers; the liability story would draw watchdog treatment on any entity.'
+          - 'Genre skew: investigative liability reporting vs legal-process reporting vs launch feature vs Market Talk roundup each carry built-in registers independent of entity.'
+        moderate:
+          - 'Timing skew: OpenAI arm Sep 2 vs Meta arm Sep 8-9, six to seven days apart; same week but unmatched days.'
+          - 'Beat assignment: Georgia Wells (law/courts) and Alexandra Bruell (media) vs Meghan Bobrowsky (Meta AI beat) plus markets desk; different desks apply different registers (same class as #522/#527).'
+          - 'Disclosure-relevance confound: copyright-topic stories make the licensing deal directly relevant; launch stories do not.'
+        weak:
+          - 'n=2 per side; article selection could drive the observed gap.'
+          - 'Tones are hand-assigned illustrative, not empirical corpus scores.'
+      counter_evidence:
+        - '#532 (Sep 5) found near-symmetry (OpenAI -0.20 vs Meta -0.275, delta -0.075) in the Astra cyber-rating vs $18B settlement window; the dual-deal symmetry prediction is window-dependent, not universal.'
+        - 'The copyright piece''s DOJ argument against legacy media''s own economic interests plus the inline disclosure in an adversarial OpenAI piece both cut against capture readings.'
+        - 'The Muse launch piece includes adversarial-adjacent content ($130B monetization pressure, rogue-agent concerns, data-leak risk), showing the aspirational register is not pure hagiography.'
+      relation_to_632: 'Direct complement to #632''s Microsoft arm: second News Corp licensing-payer watchdog data point (OpenAI -0.55 this run, Microsoft -0.70 #632). Both dual-deal sides falsify the uniform-softening prediction at the incident/liability layer. Partial falsification-family member on the OpenAI arm.'
+      relation_to_532: 'Distinct event window and article set from #532 (Astra cyber-rating vs $18B settlement, near-symmetry). This run''s window (liability vs launch) DIVERGES from #532''s symmetry, showing the dual-deal prediction is window-dependent. The register-range-exceeds-gap pattern is shared.'
+      distinct_from_prior: 'First dedicated News Corp x OpenAI mechanism since #532 with a new event window (Sep 2-9 liability/launch window), new OpenAI article set (Wells Tumbler Ridge liability, Bruell DOJ copyright backing), first-hand reads on both OpenAI pieces, Meta arm carried from #632 with an added first-hand disclosure check, and the first logged disclosure-register observation (OpenAI disclosure present, Meta disclosure absent).'
+      author: 'Kit (with Ray)'
+      correlation_not_causation: true
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
