@@ -97,7 +97,7 @@ ANTHROPIC_URLS = [
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "954011b"
 
 
 def _careers():
