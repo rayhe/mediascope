@@ -7786,6 +7786,81 @@ journalists:
     co_author: Reece Rogers
     cross_reference_to: mechanism_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31
     test_file: tests/test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py
+  mechanism_629_reece_rogers_muse_image_opt_out_alarm_vs_claude_cowork_playful_register_jul07:
+    mechanism_id: 629
+    iteration: 658
+    date: '2026-09-10 15:00 PDT'
+    type: B
+    scheduled_job_id: 'mediascope-daily-iteration'
+    job_id: 'mediascope-daily-iteration'
+    goal_id: 'goal_54093bda4145'
+    design: 'Type B journalist cross-entity tracking, same-day same-journalist register asymmetry. FIRST dedicated Type B mechanism on Reece Rogers (WIRED staff writer, service/generalist, 952+ articles; prior repo presence limited to mechanism_431_crossref_boone_ashworth co-author context and wired.yaml publication-level Rogers coverage notes). Pair: Rogers published TWO AI-product launch pieces on the SAME day (Tuesday July 7 2026) in the SAME product category (consumer AI agent/generative features), one on Meta, one on Anthropic. The Meta piece runs the opt-out-alarm register (consent-violation framing, how-to-opt-out service journalism, vindicated within 3 days when Meta scrapped the feature amid CAA/SAG-AFTRA backlash). The Anthropic piece runs the playful product-enthusiasm register (zero alarm vocabulary despite Claude Cowork pulling data from user email threads, Slack channels, and meeting transcripts). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+    meta_arm:
+      piece: 'Meta Now Lets Anyone Use Your Instagram Photos in AI Images, Unless You Opt Out (WIRED, Reece Rogers, 2026-07-07; title em dash normalized per repo rule)'
+      date: '2026-07-07'
+      register: 'opt_out_alarm'
+      tone_illustrative: -0.45
+      evidence_quotes:
+      - 'Meta launched its inaugural AI image model from the Meta Superintelligence Labs on Tuesday'
+      - 'public Instagram profiles are now automatically opted into being fodder for generative AI remixes'
+      - 'All someone has to do is tag your account''s profile in a prompt, if it''s public, and they can use Meta AI to generate an image using your likeness'
+      - 'Allow people to use your content on Instagram and with AI features on Meta'
+      source_urls:
+      - 'https://www.wired.com/story/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/'
+      - 'https://technologistmag.com/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/'
+      - 'https://technewsvision.co.uk/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/'
+      - 'https://www.ohiosap.org/news/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images'
+      - 'https://tech.slashdot.org/story/26/07/07/2239255/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images'
+      source_note: 'Snippet-bounded: WIRED paywalled, not opened first-hand this run. Canonical WIRED URL verbatim from the AI News Digest 2026-07-08 WIRED listing; date 2026-07-07 verified via Slashdot story URL /26/07/07/ and the digest date. Quotes verbatim from Muck Rack snippet and verbatim mirror reprints (Technologist Mag, Tech News Vision). Rogers byline verified via his Muck Rack profile listing.'
+      aftermath: 'Within three days Meta removed the feature amid scrutiny from users and talent agencies including CAA; SAG-AFTRA escalated on Jul 9 urging members to opt out. The alarm register was vindicated by events, which strengthens the news-peg confound (genuine consent violation) rather than the entity-bias reading.'
+    anthropic_arm:
+      piece: 'Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone (WIRED, Reece Rogers, 2026-07-07)'
+      date: '2026-07-07'
+      register: 'playful_product_enthusiasm'
+      tone_illustrative: 0.1
+      evidence_quotes:
+      - 'Shut Those Laptops!'
+      - 'The era of half-cracking a laptop to keep AI agents running comes to a close'
+      - 'Claude Cowork now keeps working on tasks even after you close your laptop'
+      - 'pull together data from email threads, Slack channels, meeting transcripts, and recent online chatter'
+      source_urls:
+      - 'https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/'
+      - 'https://thetechstreetnow.com/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/'
+      - 'https://newsheadlinealert.com/news/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone-6a4d6801e8fdc'
+      - 'https://aibreaking.news/news/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone'
+      source_note: 'Snippet-bounded: WIRED paywalled, not opened first-hand this run. Canonical WIRED URL verbatim from en.zicos.com mirror body (2026-09-10 search); date Tuesday July 7 2026 06:00 PM verbatim from the same mirror (from Wired: Tech). Quotes verbatim from Muck Rack snippet and verbatim mirror reprints (The Tech Street Now, AI Breaking News). Rogers byline verified via his Muck Rack profile listing. Zero alarm vocabulary in any mirror snippet despite the agent accessing email, Slack, and transcripts.'
+    asymmetry_scorer:
+      meta_tone: -0.45
+      anthropic_tone: 0.1
+      illustrative_delta_anthropic_minus_meta: 0.55
+      scoring: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      statistical_contract: 'degenerate_n1_per_arm'
+      verdict: 'Gradient-consistent but peg-confounded register asymmetry. Same journalist, same day, same AI-product category: Meta gets the consent-violation alarm register, Anthropic gets the playful product-enthusiasm register with zero alarm vocabulary on an agent that ingests email, Slack, and meeting transcripts. Directionally consistent with the Conde Nast competitor-payment gradient (Anthropic is a Meta competitor; Meta pays $0), but the STRONG news-peg confound (a genuine default-opt-in likeness-harvesting policy, vindicated by Meta''s 3-day reversal under CAA/SAG-AFTRA pressure) bounds the entity-bias reading. NOT a falsification-family member. NOT a pure asymmetry pin. Correlation only, not causation. NOT a causal claim about editorial influence.'
+    confounders_ranked:
+      strong:
+      - 'News peg genuinely differs: the Meta piece reports a default-opt-in likeness-harvesting policy change (consent violation IS the news; alarm vindicated by the 3-day reversal), while the Anthropic piece reports a feature expansion (phone control for an existing agent). The alarm register tracks the peg, not necessarily the company.'
+      - 'Consent posture genuinely differs: ambient harvesting of public Instagram photos for AI likeness generation (opt-out burden on non-consenting third parties whose likeness can be tagged) vs user-initiated task delegation where the user asks Cowork to pull their own email and Slack. Different consent models legitimately invite different registers.'
+      moderate:
+      - 'Headline register may be editor-written: the alarm headline (Unless You Opt Out) and the playful headline (Shut Those Laptops!) could reflect WIRED headline-desk choices, not Rogers'' own framing. Body-register evidence is snippet-bounded.'
+      - 'Snippet-bounded sourcing: WIRED paywalled this run; evidence rests on Muck Rack snippets plus verbatim mirror reprints. Full-text first-hand read not completed, so body-level register claims are bounded by snippet fidelity.'
+      weak:
+      - 'n=1 per arm (degenerate_n1_per_arm contract): a single same-day pair cannot establish a writer-level pattern. Directional, not dispositive.'
+      - 'Meta reversal vindication cuts both ways: it validates the alarm but also proves the piece was pegged to a real, newsworthy violation, which is the strongest alternative explanation for the register gap.'
+    financial_context: 'Conde Nast receives $5-10M/yr from OpenAI content licensing plus payments from 5 other Meta competitors (6 total), $0 from Meta (in-corpus, per #523). Anthropic is a Meta competitor in the AI-agent race. Direction of money predicts direction of editorial sympathy at the publication level; Rogers'' same-day register split is direction-consistent with that gradient. Correlation, not causation: no evidence links Rogers'' register choices to the payment stack, and the news-peg confound is the stronger explanation for this pair.'
+    cross_references:
+    - '#648 (Paresh Dave WIRED Meta-vs-Anthropic sibling: adversarial-actor selection asymmetry, mechanism 623; this run is a different journalist, different arms, register angle not actor angle)'
+    - '#599 (Vox Media financial-stack Type C; mechanism 593 Victoria Song writer-level pin on the Vox deal stack)'
+    - '#365 (Boone Ashworth OpenAI-vs-Meta ambient camera hardware register asymmetry; mechanism cross-ref 431 context on Rogers)'
+    - 'wired.yaml Rogers publication-level coverage notes (Muse Image opt-out burden Jul 7 2026, ghost dot sticker, Meta fixes LED tamper Aug 27; this run adds the first same-journalist Anthropic comparator arm)'
+    - 'mechanism_431_crossref_boone_ashworth (Rogers prior repo context; this is his FIRST dedicated Type B mechanism)'
+    block_key: 'type_b_658_reece_rogers_muse_image_opt_out_alarm_vs_claude_cowork_playful_register_jul07'
+    research_method: 'browser.search query sets this run: (1) Reece Rogers WIRED Meta Muse (surfaced both target pieces on his Muck Rack profile with verbatim snippets); (2) WIRED Snap Specs review 2026 / Chokkattu Snap Specs (dead end: no WIRED Snap review by Rogers surfaced; Chokkattu Samsung angle already covered by mechanism 362, dropped); (3) Will Knight WIRED Meta Muse (no verifiable bylines surfaced, dropped per iteration-492 bounded-absence discipline, no zero-coverage claim made); (4) Sam Schechner WSJ Meta AI (EU-fine beat only, story-type mismatch with Astra safety-eval piece per #533 genre trap, dropped); (5) Reece Rogers WIRED Meta Muse exact-title search (surfaced the Muse Image piece with 2026-07-07 date via Slashdot /26/07/07/ URL, AI News Digest 2026-07-08 WIRED listing with canonical URL, and the Meta 3-day reversal via Slashdot update plus Music Business Worldwide CAA-backlash piece); (6) Claude Cowork WIRED exact-title search (pinned date Tuesday July 7 2026 06:00 PM and canonical WIRED URL verbatim from en.zicos.com mirror body). All source URLs verbatim from Full-URL listings; no canonical URLs constructed; no zero-coverage claims. Snippet-bounded per paywall convention.'
+    artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; mechanism is directional. Journalist-level pin, not publication-level.'
+    novelty: 'FIRST dedicated Type B mechanism on Reece Rogers (mechanism_id 629, next free; max pre-commit 628). Zero dedicated Type B Rogers mechanisms pre-commit (git-grep verified: only mechanism_431_crossref_boone_ashworth co-author context). The Claude Cowork Jul 7 2026 piece is new-to-corpus (zero mechanism references pre-commit). The Muse Image piece existed only at publication level (wired.yaml notes) never in a same-journalist cross-entity mechanism. Same-day (Jul 7 2026) same-journalist same-category pair is a first for the corpus. Distinct from #648 (Paresh Dave, different journalist, actor-selection angle) and #653 (Robert Hart, different publication, Muse-agent launch not Muse Image).'
 - career:
   - beat: local news
     end: 1979-01
