@@ -22,7 +22,7 @@
 
 **Novelty Verification:** Zero test_type_a_677 files on disk pre-commit (glob verified); no Type A commit with 677 in the title pre-commit (git log --grep verified); no mechanism_id 640 in profiles/ pre-commit (grep verified); test_single_type_a_677_file pins exactly one file; test_type_a_677_main_commit_unique_and_anchored pins exactly one Type A #677 main commit post-followup; both new URLs (WIRED hands-on, eweek tamper-detection) zero hits in profiles/ pre-commit via grep; distinct from #547 (coverage selection, proxy-only Google arm), #431 (Type B journalist-level LED-fix week), #622 (Anthropic comparator, Muse trust register).
 
-**Commit hashes:** main 5508b2a, followup TBD (ANCHORED_SHA patched per #565 convention). count_stats.py --check green (with repo .venv; 35704 tests / 1005 files, delta +38 = the #677 file exactly). Doc-sync ratchet: ARCHITECTURE tree row for #677; README stats table refreshed + narrative line + test-file table row for #677; iteration-log #677 entry.
+**Commit hashes:** main 5508b2a, followup a94f72e (ANCHORED_SHA patched per #565 convention). count_stats.py --check green (with repo .venv; 35704 tests / 1005 files, delta +38 = the #677 file exactly). Doc-sync ratchet: ARCHITECTURE tree row for #677; README stats table refreshed + narrative line + test-file table row for #677; iteration-log #677 entry.
 
 ---
 
