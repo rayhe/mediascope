@@ -16,7 +16,7 @@
 
 **Research method:** No browser.open this run (wired.com direct fetch policy-blocked per #677). Evidence carried from corpus: both URLs, bylines, dates, and register descriptions verbatim from mechanism 640 (#677, profiles/wired.yaml) and mechanism #431. Tones carried from #677; no new hand-scoring this run. Novelty verified via shell greps pre-commit (zero test_type_b_678 files, no Type B #678 commit, no mechanism_id 641 in profiles). No zero-coverage claims per iteration-492 rule. No em dashes; ASCII-only.
 
-**New Type B files:** `tests/test_type_b_678_boone_ashworth_meta_led_fix_vs_google_xr_hands_on_byline_register_sep11_11am.py` - 9 classes, 44 tests (34 green pre-commit; rotation-guard 4 + doc-sync 5 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 5 + rotation-guard 4 + novelty-anchor 1 green post-doc-sync). Commits: main bac818b, followup TBD (ANCHORED_SHA patched per #565 convention). 44/44 green post-doc-sync; count_stats gate green.
+**New Type B files:** `tests/test_type_b_678_boone_ashworth_meta_led_fix_vs_google_xr_hands_on_byline_register_sep11_11am.py` - 9 classes, 44 tests (34 green pre-commit; rotation-guard 4 + doc-sync 5 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 5 + rotation-guard 4 + novelty-anchor 1 green post-doc-sync). Commits: main bac818b, followup 704f670 (ANCHORED_SHA patched per #565 convention). 44/44 green post-doc-sync; count_stats gate green.
 
 **Artifact readiness:** No analysis.json update warranted. Manual-illustrative journalist-level pin with carried tones; co-byline dilution bounds attribution; no new empirical finding.
 
@@ -24,7 +24,7 @@
 
 **Novelty Verification:** Zero test_type_b_678 files on disk pre-commit (glob verified); no Type B commit with 678 in the title pre-commit (git log --grep verified); no mechanism_id 641 in profiles/ pre-commit (grep verified); test_single_type_b_678_file pins exactly one file; test_type_b_678_main_commit_unique_and_anchored pins exactly one Type B #678 main commit post-followup; both URLs in-corpus comparators reused per #672 precedent (Meta LED-fix via #431, Google hands-on via #677); distinct from #431 (broad tamper-enforcement family with Samsung/Apple), #677 (publication-level scoring), iteration_385 (OpenAI Dev Day vs Business Wars podcast).
 
-**Commit hashes:** main bac818b, followup TBD (ANCHORED_SHA patched per #565 convention). count_stats.py --check green (with repo .venv). Doc-sync ratchet: ARCHITECTURE tree row for #678; README test-file table row for #678; iteration-log #678 entry.
+**Commit hashes:** main bac818b, followup 704f670 (ANCHORED_SHA patched per #565 convention). count_stats.py --check green (with repo .venv). Doc-sync ratchet: ARCHITECTURE tree row for #678; README test-file table row for #678; iteration-log #678 entry.
 
 ---
 
@@ -44,7 +44,7 @@
 
 **Research method:** No browser.open this run (wired.com direct fetch policy-blocked; developer instruction terminal for this turn: no repeat open, no exec/curl reproduction). Evidence from this run's search-result URLs (eweek tamper-detection URL verbatim from search results), the mechanism #431 commit note (WIRED hands-on URL, date, bylines, register), and corpus re-verification (petapixel bricking URL in-corpus via #547; WIRED LED-fix URL in-corpus via journalists.yaml #431 block; zero profiles/ hits for both new URLs pre-commit via grep). No em dashes.
 
-**New Type A files:** `tests/test_type_a_677_wired_google_enforcement_strength_register_inversion_vs_meta_sep11_10am.py` - 8 classes, 36 tests (29 green pre-commit; rotation-guard 3 + doc-sync 3 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 3 + rotation-guard 3 + novelty-anchor 1 green post-doc-sync). Commits: main TBD, followup TBD (ANCHORED_SHA patched per #565 convention). 36/36 green post-doc-sync; count_stats gate green.
+**New Type A files:** `tests/test_type_a_677_wired_google_enforcement_strength_register_inversion_vs_meta_sep11_10am.py` - 8 classes, 36 tests (29 green pre-commit; rotation-guard 3 + doc-sync 3 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 3 + rotation-guard 3 + novelty-anchor 1 green post-doc-sync). Commits: main TBD, followup 704f670 (ANCHORED_SHA patched per #565 convention). 36/36 green post-doc-sync; count_stats gate green.
 
 **Artifact readiness:** No analysis.json update warranted. Manual-illustrative finding; descriptive only.
 
@@ -72,7 +72,7 @@
 
 **Research method:** 4 browser.search query sets this run (Guilty Feminist latest episode Deborah Frances-White September 2026 with since=2026-09-10; quoted "Everyone Hates Elon" Meta glasses campaign anti-glasses with since=2026-09-10; quoted "Attention Sphere" podcast Ava Smithing; Meta smart glasses news Ray-Ban with since=2026-09-10); no direct browser.open reads this run - uk-podcasts.co.uk, au.radio.net, ie.radio.net, Listen Notes, podscan.fm, Chortle, thetimes.com, latestly.com, petapixel.com, engadget.com, feminist.org, sifted.eu, afrotech.com, gizmodo.com, techcrunch.com, digitaltrends.com, Reuters metadata came from search snippets (crawled 4h / 2d / 1d / 5d / 4h / 4h / 46d / 19d / 17d / 7d / 3h / 16d / 4h / 3h / 45d / 46d / 2d / 241d / 3d / 247d / 275d); URLs copied verbatim from Full-URL listings; pre-commit repo greps for new-to-corpus verification (zero test_type_e_676 files on disk via glob; no #676 in git log via grep; ie.radio.net GF page in corpus via #656; Chortle exact URL in corpus; engadget lowercase URL in corpus; petapixel.com/2026/09/09 in corpus via #631; reuters/techtime.news/thetimes.com all in corpus; all seven EHE re-surface URLs in corpus; gizmodo.com domain in corpus with exact Blazer/Scriber URL logged as stale re-index this run; techcrunch.com prescription URL 164d-stale treated as re-index; digitaltrends.com v19.2 URL logged in #671; no zero-coverage claims per iteration-492 rule); no em dashes.
 
-**New Type E files:** `tests/test_type_e_676_podcast_sentiment_58th_verification_gf499_holds_sep11_9am.py` - 10 classes, 51 tests (44 green pre-commit; rotation-guard 3 + doc-sync 3 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 3 + rotation-guard 3 + novelty-anchor 1 green post-doc-sync). Commits: main TBD, followup TBD (ANCHORED_SHA patched per #565 convention). 51/51 green post-doc-sync; count_stats gate green.
+**New Type E files:** `tests/test_type_e_676_podcast_sentiment_58th_verification_gf499_holds_sep11_9am.py` - 10 classes, 51 tests (44 green pre-commit; rotation-guard 3 + doc-sync 3 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 3 + rotation-guard 3 + novelty-anchor 1 green post-doc-sync). Commits: main TBD, followup 704f670 (ANCHORED_SHA patched per #565 convention). 51/51 green post-doc-sync; count_stats gate green.
 
 **Artifact readiness:** No analysis.json update warranted. Manual-illustrative monitoring; descriptive only.
 
