@@ -455,7 +455,7 @@ class TestNovelty667:
 class TestRotationCycleGuard667:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #667 main-commit SHA is known.
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+    ANCHORED_SHA = "d0edb822affb5364fe207b6661d6b10d1b44d84b"
 
     @staticmethod
     def _mains():
