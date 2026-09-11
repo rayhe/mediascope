@@ -54,7 +54,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 MECH_KEY = "mechanism_633_meta_reuters_multiyear_ai_chatbot_licensing_deal_sep2026"
 FILENAME = "test_type_c_664_meta_reuters_ai_chatbot_deal_falsification_sep10_9pm.py"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "0ec3723"
 
 
 def _find_all(o, key, hits):
