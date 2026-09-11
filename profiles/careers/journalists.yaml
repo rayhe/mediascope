@@ -10426,6 +10426,87 @@ journalists:
     - 385
     - 426
     test_file: tests/test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py
+  mechanism_641_boone_ashworth_meta_led_fix_vs_google_xr_hands_on_byline_register_sep11:
+    mechanism_id: 641
+    date: '2026-09-11'
+    type: 'B'
+    iteration: 678
+    iteration_type: 'B'
+    iteration_time: 2026-09-11 11:00 PDT
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    block_key: type_b_678_boone_ashworth_meta_led_fix_vs_google_xr_hands_on_byline_register_sep11
+    journalist: Boone Ashworth
+    publication: WIRED (Conde Nast)
+    publication_owner: Conde Nast (Advance Publications)
+    author: Kit (with Ray)
+    finding: 'Journalist-level byline-isolated register contrast. The same WIRED Gear-desk writer who authored the Aug 27, 2026 Meta Ray-Ban Display second LED fix piece as SOLE byline (reactive "closes loophole" register, manual illustrative -0.15) co-authored the May 19, 2026 WIRED Android XR smart glasses hands-on (enthusiastic register, zero surveillance vocabulary, manual illustrative +0.15) with Julian Chokkattu. Same journalist, same desk, same publication, same product category (camera smart glasses), opposite registers: Meta enforcement gets the reactive register while Google''s weaker documented safeguard gets enthusiasm. Tones carried from mechanism 640 (#677); no new hand-scoring this run; the new work is byline attribution. MANUAL ILLUSTRATIVE delta (Google minus Meta) +0.30; no engine run; n=1 per arm; degenerate statistical contract per the #638/#643 convention; is_significant false; NOT artifact-grade. Lane-constancy result: both items are written WIRED Gear-desk pieces by Ashworth himself, so the "beat assignment / editorial lane" confound invoked in mechanism #431 is CONTROLLED at journalist level; what varies is entity plus product stage plus news peg, not lane. The co-byline on the Google arm (Chokkattu) is the leading attribution caveat. Not a financial-gradient claim: Advance Publications SUED Google Jan 14, 2026 (SDNY adtech antitrust) and Conde Nast holds $0 AI licensing from Google, so the named financial ties predict against Google softness. Correlation only, not proof of editorial influence.'
+    meta_arm:
+      title: Meta Ray-Ban Display Second LED Fix
+      url: https://www.wired.com/story/meta-ray-ban-display-second-led-fix/
+      publication: WIRED
+      date: '2026-08-27'
+      byline: Boone Ashworth (sole)
+      byline_attribution: full - sole byline, reactive register fully attributable to Ashworth
+      register: reactive "closes loophole"
+      register_detail: 'Reactive register on a fix that blocks mid-recording LED covering; sits inside WIRED''s broader Meta surveillance-alarm register (corpus baseline -0.773)'
+      tone_illustrative: -0.15
+      tone_provenance: carried from mechanism 640 (#677); no new hand-scoring this run
+      evidence_grade: in-corpus comparator (mechanism #431, mechanism 640)
+    google_arm:
+      title: Hands-On With All of Google's New Upcoming Android XR Smart Glasses
+      url: https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/
+      publication: WIRED
+      date: '2026-05-19'
+      byline: Julian Chokkattu + Boone Ashworth (co-byline)
+      byline_attribution: partial - shared with Chokkattu; enthusiastic register not fully attributable to Ashworth (STRONG confound)
+      register: enthusiastic/playful hands-on, zero surveillance vocabulary
+      register_detail: 'Enthusiastic hands-on register for Google''s pre-launch XR glasses; Google''s July 2026 tamper-detection announcement (no documented automatic camera shutdown per eweek) received zero WIRED privacy-register scrutiny in the Jul 22 to Sep 11, 2026 window (bounded absence per mechanism #677)'
+      tone_illustrative: 0.15
+      tone_provenance: carried from mechanism 640 (#677); no new hand-scoring this run
+      evidence_grade: in-corpus comparator (mechanism 640); direct wired.com URL corpus-verified via the mechanism #431 commit note
+    asymmetry_scorer_result:
+      target_entity: google
+      reference_entity: meta
+      target_tones_manual_illustrative:
+      - 0.15
+      reference_tones_manual_illustrative:
+      - -0.15
+      target_avg: 0.15
+      reference_avg: -0.15
+      delta_google_minus_meta: 0.3
+      delta_calc: '0.15 - (-0.15) = 0.30'
+      interpretation: 'Ashworth-signed Google register is softer than Ashworth-signed Meta register by about 0.30 on the manual illustrative scale, with the co-byline caveat on the Google arm'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      artifact_grade: false
+      method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; tones carried from mechanism 640, no engine run'
+      statistical_contract: degenerate_n1_per_arm
+      limitations: 'n=1 scored item per arm (degenerate statistical contract per the #638/#643 convention); tones carried not re-scored; Google arm co-byline dilutes journalist-level attribution; no engine run'
+    financial_context: 'Correlation, not causation. No financial gradient predicts this journalist-level gap: Conde Nast holds $0 AI licensing from Google (mechanism #547 carried); Advance Publications SUED Google Jan 14, 2026 (SDNY adtech antitrust, consolidated MDL); CEO Roger Lynch described Google AI Overviews as an existential "death blow" to publisher revenue. The named financial ties predict harder Google coverage, opposite to the observed direction. The Meta arm''s reactive register has a genuine news-peg basis (second fix, bricking). Nothing here proves editorial influence.'
+    confounders:
+    - '[STRONG] Co-byline dilution (Google arm): Julian Chokkattu shared the May 19, 2026 hands-on byline; the enthusiastic register cannot be fully attributed to Ashworth. This is the leading journalist-level caveat and the reason this is a bounded pin, not a pure asymmetry claim.'
+    - '[STRONG] Product stage / shipping: Meta''s glasses shipped mass-market (2023-present) with documented real-world LED tampering and the Sep 1, 2026 bricking news peg; Google''s XR glasses were a May 2026 pre-launch stage demo. Shipped products with documented abuse invite reactive registers; demos invite enthusiasm.'
+    - '[STRONG] Time order: the Google hands-on (May 19, 2026) predates Google''s July 2026 tamper-detection announcement, so the hands-on could not have scrutinized the safeguard; the relevant WIRED silence window is Jul 22 to Sep 11, 2026 (bounded absence per mechanism #677).'
+    - '[MODERATE] Meta''s genuine conduct: LED tamperers in the wild prompted the bricking; hidden NameTag face-recognition code in millions of phones; these give watchdog reporters real alarm-register news pegs independent of entity animus.'
+    - '[MODERATE] Hands-on genre default: demo-day enthusiasm is the genre default for first-look hardware pieces; reactive "closes loophole" is the default for fix/response news. Register follows story type.'
+    - '[WEAK] n=1 per arm is thin for a journalist-level claim: directional, not dispositive.'
+    lane_constancy: 'Both arms are written WIRED Gear-desk pieces by Ashworth himself (sole on Meta, co-byline on Google). The "beat assignment / editorial lane" confound invoked in mechanism #431 is CONTROLLED at journalist level: same journalist, same desk, same publication, same product category. What varies is entity plus product stage plus news peg, not lane.'
+    cross_references:
+    - '#677 (Type A publication-level scoring of the same pair, mechanism 640; this run re-scores at journalist level with byline attribution)'
+    - '#431 (mechanism 431: Ashworth tamper-enforcement family, Meta vs Samsung vs Google vs Apple, delta -0.625; this run isolates the byline-attributable pair)'
+    - '#547 (WIRED x Google publication-level mechanism; Advance-Google adversarial litigation financial context)'
+    - '#638/#643 (degenerate statistical contract convention)'
+    - '#672 (in-corpus comparator reuse precedent)'
+    - 'iteration_385 (Ashworth OpenAI Dev Day +0.85 vs Business Wars Meta podcast -0.7, different medium, distinct pair)'
+    verdict: 'Journalist-level byline-isolation pin. Illustrative delta +0.30 (Google softer) with the co-byline caveat bounding attribution. NOT a falsification-family member. NOT a pure asymmetry pin (co-byline dilution plus product-stage plus time-order confounds bound it). No analysis.json update warranted: manual-illustrative tones carried from #677, no empirical significance.'
+    novelty: 'FIRST journalist-level byline-isolated mechanism on Boone Ashworth for the Meta LED-fix vs Google XR hands-on pair. Distinct from mechanism #431 (broad tamper-enforcement family with Samsung and Apple in the mix, delta -0.625) and from #677/mechanism 640 (publication-level scoring of the same pair). Distinct from iteration_385 (OpenAI Dev Day piece vs Business Wars podcast, different medium and different comparator). Zero test_type_b_678 files on disk pre-commit (glob verified); no Type B commit with 678 in the title pre-commit (git log --grep verified); mechanism_id 641 next free pre-commit (max 640).'
+    research_method: 'No browser.open this run (wired.com direct fetch policy-blocked per #677). Evidence carried from corpus: both URLs, bylines, dates, and register descriptions verbatim from mechanism 640 (#677, profiles/wired.yaml) and mechanism #431. Tones carried from #677; no new hand-scoring this run. Novelty verified via shell greps pre-commit. No zero-coverage claims per iteration-492 rule. No em dashes; ASCII-only.'
+    artifact_readiness: 'No analysis.json update warranted: manual-illustrative journalist-level pin with carried tones; co-byline dilution bounds attribution; no new empirical finding.'
+    test_file: tests/test_type_b_678_boone_ashworth_meta_led_fix_vs_google_xr_hands_on_byline_register_sep11_11am.py
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
   career:
