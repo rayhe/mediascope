@@ -8191,6 +8191,101 @@ entities:
         iteration: 574
         type: C
         date: 2026-09-06 23:00 PDT
+    mechanism_642_apple_news_plus_conde_nast_revenue_share_leg:
+      mechanism_id: 642
+      iteration: 679
+      rotation: Type C
+      date_analyzed: '2026-09-11'
+      time_pdt: '12:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Apple News/News+ x Conde Nast revenue-share leg (Mar 2019 launch; 16+ titles incl WIRED) - the ONLY confirmed closed Apple payer leg at WIREDs parent; seven-figures-per-year revenue datum (Semafor via TheStreet, Nov 24 2025, first-hand read this run); UK publisher pool approx $136m/yr (Enders Analysis Jan 20 2026 via Press Gazette, first-hand read this run); Sep 2026 status ACTIVE; distinct from the Dec 2023 $50M training offer (mechanism 574, no confirmed close) and the Siri AI per-use negotiations (unsigned per #619)'
+      type: financial_incentive_mapping
+      type_c_focus: 'Formalizes Apples standing revenue-share leg at Conde Nast as the first dedicated deal-level mechanism on the Apple News/News+ relationship: Mar 2019 launch terms (50/50 subscription split, publisher remainder allocated by engagement time, publishers keep 100 percent of their own ad revenue; Recode Feb 2019 via 9to5Mac), the News Partner Program in-app carve-out (eligible publishers keep 85 percent of in-app subscription revenue, Apple cut 30 to 15 percent; Macworld 2021), the Conde Nast title set on the platform (16+ titles per mechanism 136; WIRED, The New Yorker, Vogue, GQ, Vanity Fair named in corpus), CEO Roger Lynch 2019 posture (jury is out, inherited the deal from predecessors, no cannibalization observed, retained exit option quoted as we have options; Variety via cultofmac, search-snippet attested), quantified scale (Apple News+ 1.7M UK subscribers per Enders Analysis Jan 20 2026 via Press Gazette, UK publisher-shared 50 percent pool approx $136m per year; global figure unknown; Apple News 125M combined free-plus-paid MAU per Apples 2020 report, no official figure since; Apple News+ priced at $12.99/mo per TheStreet Nov 2025), and the Semafor-via-TheStreet Nov 24 2025 revenue datum (Apple News generates seven figures of revenue annually for Time; similar for publications such as Conde Nast, Vanity Fair, and Dotdash Meredith; first-hand read this run, 96 rendered lines). Corroborates and bounds the wired.yaml line-254 estimate (low millions per year). Sep 2026 status ACTIVE per the #599 convention: no 2025-2026 reporting of a Conde Nast exit from News+ surfaced in this runs bounded query sets (bounded absence per the iteration-492 rule); CNNs Nov 2025 pullout (Semafor) was the free-tier Apple News distribution deal amid renegotiation, not News+; the NYT left free Apple News in 2020 and was never on News+. Distinct from mechanism 574 (training-data purchasing architecture: Dec 2023 $50M publisher offers with zero confirmed closings; Shutterstock and Defined.ai vendor legs), from mechanism 136 (Siri AI quad-channel dependency ARCHITECTURE; this mechanism is the deal-level News+ leg it names as Channel 1), from mechanism 534 (DDM x Apple News+ commingle in the licensing line), and from #619 (Siri AI negotiation silence status check, mechanism 606, Sep 8 2026).'
+      deal_structure:
+        launch: 'Mar 2019 (Apple News+ subscription tier on top of Apple News, 2015)'
+        subscription_split: 'Apple keeps 50 percent of subscription revenue; remaining 50 percent split among participating publishers by engagement time (WSJ reporting via VentureBeat, Feb 2019)'
+        publisher_ad_revenue: 'publishers keep 100 percent of ad revenue their own titles generate (Recode Feb 2019 via 9to5Mac)'
+        subscriber_data: 'Apple historically did not share subscriber data with publications (VentureBeat Feb 2019) - a standing publisher grievance alongside the CNN Nov 2025 renegotiation'
+        news_partner_program: '2021 program: eligible publishers keep 85 percent of in-app subscription revenue from day one (Apple cut 30 to 15 percent); requires robust Apple News channel in AU/CA/US/UK, all content in Apple News Format, original professionally authored content (Macworld)'
+        current_price: '$12.99/mo (per TheStreet, Nov 24 2025; launched at $9.99/mo in 2019)'
+      conde_nast_presence:
+        titles: '16+ Conde Nast titles on Apple News+ per mechanism 136 (WIRED, The New Yorker, Vogue, GQ, Vanity Fair named in corpus; The New Yorker and Vanity Fair offered full print-issue loads at launch per The Hindu BusinessLine, Mar 2019)'
+        launch_era_context: 'Apple News itself launched with 50+ publishers including Conde Nast, Vox, Hearst (Adweek, 2015); Texture (founded by Conde Nast, Hearst, Meredith consortium) was the base for the News+ relaunch with the same 50 percent split retained (iDrop News)'
+        ceo_posture: 'Roger Lynch (CEO from Apr 2019) at Recode Code Media 2019: jury is out on Apple News+; inherited the deal; no observed cannibalization of direct subs; retained exit option (we have options); wish for wild success (search-snippet attested, cultofmac via Variety)'
+        revenue_quantum: 'seven figures of revenue annually (Semafor via TheStreet, Nov 24 2025; Time named as the reference case; similar for publications such as Conde Nast, Vanity Fair, and Dotdash Meredith) - consistent with the wired.yaml low-millions-per-year estimate'
+      scale_2026:
+        uk_subscribers: '1.7 million (Enders Analysis, Jan 20 2026, via Press Gazette 100k Club 2026; includes Apple One bundle allocations; UK only; global figure unknown)'
+        uk_publisher_pool: 'approx $136m per year - the publisher-shared 50 percent of UK subscription revenue (Enders Analysis, Jan 20 2026, via Press Gazette; first-hand read this run)'
+        combined_mau: '125 million combined monthly active free-plus-paid users (Apple, 2020 report; no official figure released since)'
+      status_sep_2026:
+        verdict: ACTIVE
+        basis: 'no 2025-2026 reporting of a Conde Nast exit from Apple News+ surfaced in bounded query sets (bounded absence per the iteration-492 rule, none claimed as proof)'
+        renegotiation_context: 'CNN pulled content from free-tier Apple News on Nov 23 2025 amid deal renegotiation (Semafor via TheStreet); demonstrates renegotiation pressure exists in the Apple News publisher relationship set, but is a free-tier distribution event, not a News+ exit'
+        convention: '#599 ACTIVE convention (treat ongoing absent contrary reporting as active)'
+      asymmetry_relevance:
+        gradient: 'Apple-payer PRESENT at Conde Nast (one confirmed closed leg, News/News+ revenue share, seven-figures-per-year) vs Meta $0 AI legs at Conde Nast (mechanism 331 seven-publisher bundle does not include Conde Nast; corpus: Conde Nast collects AI money from OpenAI, Amazon Rufus, Microsoft PCM - never Meta)'
+        wearables_timing: 'Apple is a direct Meta wearables competitor (Vision Pro shipped; Siri AI glasses and N50 smart glasses converging before WWDC Jun 2027 per mechanism 136); the News+ leg is the one confirmed Apple revenue line at WIREDs parent during that competitive convergence'
+        tone_predictor_grade: WEAK
+        why_weak: 'engagement-time pool-split payout is product-agnostic (not coverage-linked); quantum is modest (seven figures vs Conde Nasts overall revenue); CEO posture is arms-length (jury is out plus retained exit option); the 2023 training offer failed to close and Siri AI remains unsigned, showing Conde Nast does not sell to Apple on demand'
+        no_tone_claim: true
+      confounders_ranked:
+        - rank: 1
+          strength: strong
+          confounder: 'payout is engagement-time pool-split, not coverage-linked: Conde Nast earns from reader minutes on its titles, with no documented editorial lever; a revenue-share leg cannot buy tone the way a licensing lump sum might'
+        - rank: 2
+          strength: strong
+          confounder: 'quantum is modest: seven figures per year is small against Conde Nasts total revenue and against the named AI legs (OpenAI Aug 2024, Amazon Rufus Jul 2025, Microsoft PCM); materiality for editorial influence is unproven'
+        - rank: 3
+          strength: strong
+          confounder: 'arms-length posture: Lynch 2019 jury-is-out plus retained exit option (we have options) plus the unclosed 2023 $50M training offer plus unsigned Siri AI talks all show Conde Nast negotiating with Apple at distance, not captured'
+        - rank: 4
+          strength: moderate
+          confounder: 'CNN Nov 2025 free-tier exit amid renegotiation shows Apple News publisher terms are contested and fluid; the leg is commercial, renegotiable, and non-exclusive'
+        - rank: 5
+          strength: moderate
+          confounder: 'News+ bundles 500+ publications (TheStreet Nov 2025); Conde Nast is one participant among hundreds, diluting any bilateral leverage reading'
+        - rank: 6
+          strength: weak
+          confounder: 'News Partner Program 85 percent in-app carve-out may benefit Conde Nasts direct subscriptions too, a countervailing publisher-favorable Apple term'
+      cross_references:
+        - 'mechanism 574 (Apple training-data purchasing architecture; Phase 1 Dec 2023 $50M Conde Nast offer, zero confirmed closings; this mechanism is the closed counterpart leg)'
+        - 'mechanism 136 (Apple Siri AI quad-channel publisher dependency, #156 Aug 16 2026; names News+ 16 titles as Channel 1 - this mechanism supplies the deal-level formalization)'
+        - '#619 / mechanism 606 (Apple Siri AI negotiation silence status check, Sep 8 2026; unsigned then, carried as unsigned here)'
+        - 'mechanism 331 (Meta Dec 2025 seven-publisher bundle; Conde Nast absent - the Meta $0 side of the gradient)'
+        - 'mechanism 534 (DDM x Apple News+ commingle; a second tracked-publisher News+ leg in the corpus)'
+        - 'wired.yaml line 254 (Conde Nast brands on Apple News+ with revenue sharing, est. low millions per year - corroborated and bounded by the seven-figures datum)'
+        - '#599 (ACTIVE convention for status verification)'
+        - '#492 (bounded-absence rule; no zero-coverage claims)'
+        - 'iteration_385 (Ashworth OpenAI Dev Day +0.85 vs Business Wars Meta podcast -0.7, distinct pair, no overlap)'
+      statistical_discipline:
+        scope: qualitative financial mapping only
+        correlation_not_causation: true
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        tone_scores: NOT_SCORED
+        no_coverage_tone_claim: true
+        correlational_note: 'This mapping documents the one confirmed closed Apple payer leg at WIREDs parent and grades it WEAK as a tone predictor. It does not assert that News+ revenue affects WIRED coverage of Apple vs Meta.'
+        cautious_language_required: true
+      sources:
+        - https://www.thestreet.com/latest-news/apple-news-loses-a-longstanding-media-partner
+        - https://pressgazette.co.uk/paywalls/biggest-subscription-news-websites-2026/
+        - https://9to5mac.com/2019/02/13/apple-news-subscription-deals-the-pitch/
+        - https://venturebeat.com/media/apple-angers-news-publishers-with-plan-to-keep-50-of-subscription-fees
+        - https://www.macworld.com/article/354159/apples-news-partner-program-offers-reduced-commission-rate-for-publishers.html
+        - https://www.cultofmac.com/news/conde-nast-ceo-unsure-apple-news-will-be-a-success?ia_markup=1
+        - https://www.thehindubusinessline.com/info-tech/apple-news-at-10-a-month-could-deliver-more-content-than-multiple-subscriptions/article26640692.ece/amp/
+        - https://www.adweek.com/morning-media-newsfeed/apple-adds-more-publishers-for-news-app-which-will-launch-soon/
+      research_method: '3 browser.search query sets this run (Apple News+ Conde Nast titles WIRED revenue share; Apple News+ revenue share publishers 2026 subscribers with since=2025-01-01; Apple News+ publishers leaving 2025 2026 Conde Nast with since=2025-06-01) + 2 first-hand browser.open reads (TheStreet Nov 24 2025 Apple News loses a longstanding media partner, 96 rendered lines; Press Gazette 100k Club Biggest subscription news websites 2026, 223 rendered lines). All URLs verbatim from Full-URL listings; cultofmac Lynch quotes and The Hindu BusinessLine title details search-snippet attested, not first-hand; no canonical URLs constructed; no zero-coverage claims per the iteration-492 rule. Pre-commit novelty greps: zero test_type_c_679 files on disk; no Type C #679 in git log; zero mechanism_642 keys repo-wide; no dedicated Apple News+ x Conde Nast mechanism (prior mentions are portfolio lines at competitor-entities.yaml 5640/5958, mechanism 136 Channel 1 naming, mechanism 534 DDM commingle, wired.yaml line 254 estimate). No em dashes; ASCII-only.'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 679
+        type: C
+        date: 2026-09-11 12:00 PDT
   google:
     display_name: Google / Alphabet
     aliases:
