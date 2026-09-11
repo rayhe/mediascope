@@ -3164,6 +3164,79 @@ competitor_relationships:
       strongest_counterargument: 'The split is plausibly all news-driven. Meta is the only shipped camera-glasses product at scale, with documented bad facts (LED-tamperers prompting Meta to brick thousands of glasses; hidden face-recognition code), which gives WIRED''s watchdog reporters real stories in the alarm register. Google''s glasses were a stage demo and Samsung''s are pre-launch, so enthusiastic demo coverage and sparse pre-launch coverage are genre defaults, not company favoritism. The Advance-Google litigation and Condé Nast''s public hostility to Google over traffic collapse further weaken any financial-favoritism story in either direction. Accepted as a major confounder. Claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE.'
       novelty: 'Extends #3740 (WIRED I/O 2026 lane assignment), #430 (direct-URL list, proxy-only flag), #374/#5722 (Samsung 38-day silence). First scored WIRED-Google-vs-Meta glasses asymmetry in the corpus; first to put Samsung''s physical camera-kill switch (shipped hardware privacy control) against Meta''s LED enforcement with WIRED register on each side.'
       test_file: tests/test_type_a_547_wired_google_samsung_camera_glasses_silence_vs_meta_alarm_sep05_7pm.py
+    mechanism_640_wired_google_enforcement_strength_register_inversion_vs_meta_sep11:
+      mechanism_id: 640
+      date: '2026-09-11'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 677
+      iteration_type: A
+      iteration_time: 2026-09-11 10:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED (Conde Nast)
+      publication_pair: WIRED x Google
+      competitor: google
+      comparison_entities:
+      - meta
+      author: Kit (with Ray)
+      finding: 'Enforcement-strength register inversion at publication level. The company with the strongest documented LED-tamper enforcement in consumer camera glasses (Meta) gets WIRED''s skeptical register; the company with the weaker documented safeguard (Google) gets the enthusiastic hands-on register. Meta arms (in-corpus comparators, reused per the #672 precedent): WIRED''s Meta second LED fix piece (Boone Ashworth, Aug 27, 2026, https://www.wired.com/story/meta-ray-ban-display-second-led-fix/) runs the reactive "closes loophole" register on a fix that blocks mid-recording LED covering; the Sep 1, 2026 Semafor reporting (via PetaPixel, https://petapixel.com/2026/09/01/meta-claims-to-have-bricked-thousands-of-smart-glasses/) that Meta bricked thousands of LED-tampered glasses sits inside WIRED''s broader Meta surveillance-alarm register (corpus baseline -0.773). Google arms (new evidence this run): WIRED''s hands-on Android XR smart glasses piece (May 19, 2026, Julian Chokkattu + Boone Ashworth) carries the enthusiastic hands-on register with zero surveillance vocabulary; this run supplies the direct wired.com URL (https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/), verified via the mechanism #431 commit note (Sep 1, 2026), resolving the proxy-only gap flagged in mechanism #547 (zero hits for this URL in profiles/ before this run). Second Google arm: Google''s Android XR tamper detection, announced July 2026, has no documented automatic camera shutdown and no documented processing location or full enforcement mechanics (eweek, https://www.eweek.com/news/android-xr-tamper-detection/, third-party attested via search snippet this run, new URL to corpus); WIRED did not cover it as a privacy feature in the Jul 22 to Sep 11, 2026 window (bounded search-result absence per the iteration-492 rule, not a proven zero, first documented at journalist level in mechanism #431). The inversion: Meta ships camera auto-disable on LED tamper and bricks tampered units, and WIRED''s register is "closes loophole" reactive. Google announces tamper detection without documented camera auto-disable, and WIRED''s register is hands-on enthusiasm. MANUAL ILLUSTRATIVE delta (Google minus Meta) +0.30 on the register axis (Google hands-on +0.15 vs Meta "closes loophole" reactive -0.15); no engine run, small n, degenerate statistical contract per the #638/#643 convention, is_significant false. Not a financial-gradient claim: the Advance-Google adversarial litigation (mechanism #547) predicts against Google favoritism, so the observed direction is not explained by the named financial tie. Correlation only, not proof of editorial influence.'
+      articles:
+      - title: Hands-On With All of Google's New Upcoming Android XR Smart Glasses (WIRED, May 19, 2026)
+        url: https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/
+        authors: Julian Chokkattu, Boone Ashworth
+        date: '2026-05-19'
+        register: enthusiastic/playful hands-on, zero surveillance vocabulary
+        manual_illustrative_tone: 0.15
+        evidence_grade: direct URL, corpus-verified via the mechanism #431 commit note (Sep 1, 2026); wired.com direct fetch policy-blocked this run
+        url_novelty: first profiles/ appearance this run (zero hits before)
+      - title: Android XR tamper detection safeguard (eWeek, Jul 2026)
+        url: https://www.eweek.com/news/android-xr-tamper-detection/
+        register: third-party technical scrutiny of safeguard limits
+        key_claim: Google announced tamper detection for Android XR glasses but had not documented automatic camera shutdown, processing location, or full enforcement mechanics
+        evidence_grade: third-party, search-snippet attested this run (not opened first-hand)
+        url_novelty: first corpus appearance this run
+        notes: WIRED did not cover this as a privacy feature in the Jul 22 to Sep 11, 2026 window (bounded search-result absence per the iteration-492 rule)
+      - title: Meta Ray-Ban Display Second LED Fix (WIRED, Aug 27, 2026)
+        url: https://www.wired.com/story/meta-ray-ban-display-second-led-fix/
+        author: Boone Ashworth
+        date: '2026-08-27'
+        register: reactive "closes loophole"
+        manual_illustrative_tone: -0.15
+        evidence_grade: 'in-corpus comparator (mechanism #431)'
+      - title: Meta Claims to Have Bricked Thousands of Smart Glasses (Semafor via PetaPixel, Sep 1, 2026)
+        url: https://petapixel.com/2026/09/01/meta-claims-to-have-bricked-thousands-of-smart-glasses/
+        date: '2026-09-01'
+        register: enforcement news (Meta bricking LED-tampered units)
+        evidence_grade: 'in-corpus comparator (mechanism #547)'
+      asymmetry_scorer_result:
+        target_entity: google
+        publication: wired
+        target_tones_manual_illustrative:
+        - 0.15
+        target_avg: 0.15
+        reference_entity: meta
+        reference_tones_manual_illustrative:
+        - -0.15
+        reference_avg: -0.15
+        delta_google_minus_meta: 0.3
+        interpretation: WIRED x Google enforcement/safeguard register is softer than WIRED x Meta enforcement register by about 0.30 on the manual illustrative scale
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        limitations: 'n=1 scored item per arm (degenerate statistical contract per the #638/#643 convention); Meta "closes loophole" tone is a manual illustrative assignment for the reactive register, not a corpus-scored WIRED piece; eweek tamper-detection weakness is third-party search-snippet attested; WIRED tamper-detection silence is a bounded search-result absence; no engine run'
+      financial_context: 'Same financial context as mechanism #547 (carried, not re-verified this run): Condé Nast has $0 AI licensing from Google; Advance Publications SUED Google Jan 14, 2026 (SDNY adtech antitrust, consolidated MDL); CEO Roger Lynch described Google AI Overviews as an existential "death blow" to publisher revenue. The google entity block''s "adversarial" coverage prediction FAILS for this register lane as well: the publication suing Google still covered Google''s camera glasses with delight and has not scrutinized Google''s weaker tamper safeguard.'
+      confounders:
+      - 'product stage: Meta is the only shipped camera-glasses product at scale with documented tampering in the wild (the bricking news peg); Google''s glasses were a May 2026 stage demo and the hardware is pre-launch; demo-day enthusiasm is a genre default'
+      - 'time order: WIRED''s Google hands-on (May 19, 2026) predates Google''s tamper-detection announcement (July 2026), so the hands-on could not have scrutinized the safeguard; the relevant WIRED silence window for the safeguard is Jul 22 to Sep 11, 2026 (bounded absence)'
+      - 'Meta''s genuine conduct: LED tamperers in the wild prompted the bricking; hidden NameTag face-recognition code in millions of phones; these give watchdog reporters real alarm-register news'
+      - 'beat assignment: Chokkattu/Ashworth Gear desk does hands-on enthusiasm; Dell Cameron covers Meta with the watchdog register (lane assignment per #3740)'
+      - 'third-party attestation: the eweek tamper-detection weakness is search-snippet attested this run, not opened first-hand; wired.com direct fetch policy-blocked this run'
+      - 'search-result absence is bounded, not a proven zero (iteration-492 rule)'
+      strongest_counterargument: 'The inversion is an artifact of product stage and news flow. Meta''s enforcement exists because Meta''s glasses are the only shipped camera glasses at scale with documented tampering in the wild, which generates real watchdog news (the bricking, the loophole fix). Google''s safeguard is a pre-launch announcement with no tampered units and no news peg, so there is nothing for WIRED''s privacy register to bite on. The enthusiastic hands-on predates the safeguard announcement entirely. Accepted as a major confounder. Claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE.'
+      novelty: 'Distinct from #547 (coverage selection: Google/Samsung silence vs Meta alarm; Google arm proxy-only), #431 (Type B journalist-level: Boone Ashworth LED-fix week), and #622 (Anthropic comparator, Muse trust register). First publication-level mechanism to put safeguard-strength against register: new direct-URL WIRED Google hands-on evidence resolving #547''s proxy-only gap, and first corpus citation of eweek''s Google tamper-detection weakness documentation.'
+      test_file: tests/test_type_a_677_wired_google_enforcement_strength_register_inversion_vs_meta_sep11_10am.py
   microsoft:
     financial_tie: licensing
     estimated_value: usage-based (undisclosed)
