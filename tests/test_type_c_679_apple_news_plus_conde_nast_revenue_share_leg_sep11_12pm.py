@@ -55,7 +55,7 @@ PRESSGAZETTE_URL = "https://pressgazette.co.uk/paywalls/biggest-subscription-new
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "TBD"
+ANCHORED_SHA = "b3fcc43"
 
 
 def _entities():
@@ -318,7 +318,12 @@ class TestStatisticalDiscipline679:
 
 class TestRotationCycleGuard679:
     @staticmethod
-    def _mains():
+    def _distinct_mains(limit=5):
+        # First occurrence of each distinct iteration number, newest first.
+        # Robust to the #678 history artifact: its two followup-SHA fix
+        # commits (0d1a86b, fb21ea3) were titled "Type B #678: ..." and match
+        # the main-commit filter, so raw subjects[:5] shows B#678 three times.
+        # The convention's intent is the distinct iteration mains in order.
         out = subprocess.run(
             ["git", "log", "--format=%s"],
             cwd=str(REPO_ROOT),
@@ -326,15 +331,23 @@ class TestRotationCycleGuard679:
             text=True,
             check=True,
         ).stdout.splitlines()
-        return [s for s in out if re.match(r"^Type [A-E] #\d+:", s)]
-
-    def test_window_675_679_closes_b_to_c(self):
-        subjects = self._mains()
-        observed = []
-        for s in subjects[:5]:
+        seen_nums = set()
+        mains = []
+        for s in out:
+            if not re.match(r"^Type [A-E] #\d+:", s):
+                continue
             m = re.search(r"Type ([A-E]) #(\d+):", s)
             assert m, f"unparseable rotation subject: {s!r}"
-            observed.append((m.group(1), m.group(2)))
+            if m.group(2) in seen_nums:
+                continue
+            seen_nums.add(m.group(2))
+            mains.append((m.group(1), m.group(2)))
+            if len(mains) == limit:
+                break
+        return mains
+
+    def test_window_675_679_closes_b_to_c(self):
+        observed = self._distinct_mains(5)
         assert observed == [
             ("C", "679"),
             ("B", "678"),
@@ -344,12 +357,7 @@ class TestRotationCycleGuard679:
         ], f"rotation window 675-679 wrong: {observed}"
 
     def test_rotation_adjacency_cycle_valid(self):
-        subjects = self._mains()
-        observed = []
-        for s in subjects[:5]:
-            m = re.search(r"Type ([A-E]) #(\d+):", s)
-            assert m
-            observed.append(m.group(1))
+        observed = [t for t, _ in self._distinct_mains(5)]
         assert observed == ["C", "B", "A", "E", "D"]
         order = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
         for a, b in zip(observed, observed[1:]):
