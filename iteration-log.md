@@ -22,7 +22,7 @@
 
 **Novelty Verification:** Zero test_type_e_676 files on disk pre-commit (glob verified); no Type E commit with 676 in the title pre-commit (git log --grep verified); test_single_type_e_676_file pins exactly one file; test_type_e_676_main_commit_unique_and_anchored pins exactly one Type E #676 main commit post-followup; ie.radio.net GF page in corpus via #656; Chortle exact URL in corpus; engadget lowercase URL in corpus (uppercase WWW form logged verbatim this run as same page); digitaltrends.com v19.2 URL logged in #671; gizmodo.com and techcrunch.com exact URLs first logged this run as stale re-indexes; distinct from #671 (57th cycle, digitaltrends v19.2 exact-URL surface) and #666 (56th cycle, railwaymuseum.org.uk stale live-show listing).
 
-**Commit hashes:** main TBD, followup TBD (ANCHORED_SHA patched per #565 convention). count_stats.py --check green (with repo .venv). Doc-sync ratchet: ARCHITECTURE tree row for #676; README stats table refresh + test-file table row for #676; iteration-log #676 entry.
+**Commit hashes:** main eb45c53, followup 13af401 (ANCHORED_SHA patched per #565 convention). count_stats.py --check green (with repo .venv; 35666 tests / 1004 files). Doc-sync ratchet: ARCHITECTURE tree row for #676; README stats table refreshed (35615->35666 tests, 1003->1004 files) + narrative line + test-file table row for #676; iteration-log #676 entry.
 
 ---
 
