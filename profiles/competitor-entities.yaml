@@ -11615,7 +11615,110 @@ entities:
         value parity with the OpenAI leg, WSJ self-report, woo-and-sue Meta
         application, and directional predictions, not editorial capture. No
         coverage-tone claim is made.
-      test_file: tests/test_type_c_549_newscorp_meta_50m_yr_deal_sep05_9pm.py
+    mechanism_633_meta_reuters_multiyear_ai_chatbot_licensing_deal_sep2026:
+      mechanism_id: 633
+      iteration: 664
+      rotation: Type C
+      date_analyzed: '2026-09-10'
+      time_pdt: '21:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Meta x Reuters Multiyear AI Chatbot News Licensing Deal (Oct 2024) - Meta''s First AI News Deal; Payer-Leg Falsification Pin, Falsification-Family Member 13'
+      type: financial_incentive_mapping
+      overview: 'FIRST corpus formalization of the Meta x Reuters AI content licensing deal. Announced Oct 25 2024 (Axios first; Reuters self-report by Aditya Soni, Bengaluru; Meta spokesperson confirmed): multi-year term, confidential financial terms, Reuters compensated per Axios sourcing. Real-time Reuters news wired into the Meta AI chatbot for US users across Facebook, Instagram, WhatsApp, Messenger: news-related answers carry summaries and links to Reuters content with attribution. Training rights on Llama undisclosed (Meta never disclosed; SiliconANGLE flagged the ambiguity). Context: Meta''s first news deal in years, after Meta had been reducing news content on its services; Reuters has been a Meta fact-checking partner since 2020; one month earlier Zuckerberg told The Verge publishers "tend to overestimate the value" of their content. LLM Pulse deal map (updated ~Sep 7 2026) timeline: "Meta signs Reuters in October, its first news deal." Sep 2026 renewal-window status check: 4 bounded query sets surfaced NO renewal, extension, renegotiation, or termination reporting; treated ACTIVE per the #599/#609 convention (bounded absence per the iteration-492 rule, not proof of activity). Owner-level financial disclosure (primary-source earnings transcripts): Thomson Reuters Q3 2024 (+10% Reuters News revenue, boosted by generative-AI licensing revenue, terms confidential, partners unnamed); Q4 2025 ($5M generative-AI transactional content licensing revenue in the agency business, Feb 5 2026 call transcript via MarketBeat); Motley Fool Q4 2025 transcript (one-off decline in Reuters GenAI licensing revenue 2025 vs 2024, acceleration forecast for 2026); Q1 2026 (Reuters organic +6% on the LSEG news-agreement and agency business, $3M intercompany licensing line, no external GenAI line disclosed). DISAMBIGUATION: Thomson Reuters (the company, NYSE:TRI) is not Robert Thomson (News Corp CEO, mechanism 594); both held earnings calls on Feb 5 2026 (TRI Q4 2025; News Corp Q2 FY2026). FALSIFICATION PIN: Meta PAYS Reuters under an active multiyear deal, yet Reuters'' Sep 8 2026 Katie Paul piece on the Meta Muse agent launch runs a hard accountability register: "despite internal concerns that the technology mismanages its access to sensitive personal data"; "RAISING THE STAKES FOR SAFETY" section header; internal tests reveal mixed results; privacy and safety stakes foregrounded. The incentive theory predicts softer coverage from the paid counterparty; the observed register is adversarial accountability. THIRTEENTH falsification-family member (after #662 twelfth; #632/#637 partial members only). First payer-Meta-leg falsification pin: the money direction is Meta-as-payer, not OpenAI or Google. Excerpt-bounded evidence tier (search excerpts plus business-reporter.co.uk mirror reprint; reuters.com not opened first-hand this run).'
+      announcement_date: '2024-10-25'
+      broke_by: 'Axios first reported (Friday Oct 25 2024 morning); Reuters self-reported the same day (Aditya Soni, Bengaluru; edited by Ken Li and Anna Driver); Meta spokesperson confirmed the partnership to Reuters and TheWrap'
+      deal_terms:
+        term: 'multi-year (Axios: "set to run for several years")'
+        value: 'confidential; Reuters compensated per Axios sourcing; neither Meta nor Thomson Reuters disclosed financial details'
+        scope: 'Reuters news content accessible to the Meta AI chatbot for US users; real-time answers to news and current-events questions'
+        surfaces: 'Facebook, Instagram, WhatsApp, Messenger (Meta AI embedded in search and messaging features)'
+        use_cases: 'Meta AI draws on licensed articles to answer news questions; every generated response expected to include a summary and a link to the Reuters story it is based on (Axios, SiliconANGLE)'
+        training_rights: 'UNDISCLOSED: "Meta did not disclose whether it plans to use Reuters content to train its large-language model" (Reuters); SiliconANGLE: "unclear whether the agreement will let Meta use the licensed content to train Llama"'
+        training_rights_note: 'narrower scope than the News Corp x Meta leg (#549, retrieval plus archive training); the falsification pin does not depend on training rights'
+      context:
+        first_news_deal_in_years: 'Reuters: "The arrangement would be its first news deal in years"; comes as Meta had been reducing news content on its services after regulator and publisher criticism over misinformation and revenue-sharing disagreements'
+        fact_checking_since_2020: 'Reuters has been a Meta fact-checking partner since 2020 (pre-dates the AI deal by four years)'
+        zuckerberg_verge_quote: 'One month earlier (Sep 2024) Zuckerberg told The Verge that "individual creators or publishers tend to overestimate the value" of their content, while "certain partnerships" would be made "when content is really important and valuable" (per TheWrap) - negotiation-framing baseline: the Reuters wire qualified as "really important and valuable"'
+        llm_pulse_timeline: 'LLM Pulse 2023-2026 timeline (updated ~Sep 7 2026): "2024: ... Meta signs Reuters in October, its first news deal"; 2026 row: Meta announced News Corp, Le Figaro, Prisa, Suddeutsche Zeitung in March 2026'
+      status_check_sep2026:
+        query_sets:
+          - 'Meta Reuters multiyear AI deal October 2024 Meta AI chatbot news content terms'
+          - 'Meta Reuters AI licensing deal renewal extension 2026 status (since 2026-01-01)'
+          - 'Meta AI news answers Reuters partnership Meta AI assistant 2026 (since 2026-01-01)'
+          - 'Thomson Reuters AI licensing revenue growth 2026 Reuters deals (since 2026-01-01)'
+        result: 'NO renewal, extension, renegotiation, or termination reporting surfaced; only Oct 2024 announcement coverage re-surfaces plus the Sep 8 2026 Muse-launch wire'
+        status: 'ACTIVE per the #599/#609 convention (no termination reporting means treated as still active)'
+        discipline: 'bounded absence per the iteration-492 rule: absence of reporting is not proof of absence; the deal may have quietly lapsed or been renegotiated behind undisclosed terms'
+      thomson_reuters_financial_disclosure:
+        q3_2024: 'Reuters News revenue +10% (Nov 5 2024, ~11 days post-deal): "benefited from acquisitions and generative AI-related licensing revenue"; company spokesperson said AI-deal terms were confidential and did not name partners'
+        q4_2025_call: 'Feb 5 2026 Q4 2025 earnings call transcript (MarketBeat): "$5 million of generative AI-related transactional content licensing revenue in our agency business"; Q4 Reuters organic revenue +5% on the LSEG news agreement plus the AI line'
+        q4_2025_motley: 'Motley Fool transcript: "Despite a one-off decline in Reuters'' generative AI-related content licensing revenue in 2025 versus 2024, management forecast an acceleration in 2026 due to easier comparisons and renewed product momentum"'
+        q1_2026: 'May 5 2026 Q1 2026 call transcript (MarketBeat): Reuters organic +6% "driven primarily by growth from the news agreement with the data and analytics business of LSEG and our agency business"; agency line included "$3 million of intercompany transactional licensing revenue related to Reuters news content being used for other Thomson Reuters products"; no external GenAI licensing line item disclosed for the quarter'
+        confidentiality: 'Thomson Reuters never names AI licensing partners on calls; Meta-specific share of the GenAI licensing revenue is unquantified in public filings'
+        disambiguation: 'Thomson Reuters (the company, NYSE:TRI) is NOT Robert Thomson (News Corp CEO, mechanism 594). Both held earnings calls on Feb 5 2026: TRI Q4 2025 and News Corp Q2 FY2026. Namespace guard: every "Thomson" reference in this mechanism means the Reuters parent company unless explicitly stated otherwise.'
+        incentive_relevance: 'verified owner-level disclosure that AI licensing is a real, earnings-called revenue line for the Reuters parent; the money flow Meta-to-Reuters is therefore material at the owner level even if the Meta-specific share is undisclosed'
+      falsification_family:
+        membership: 'THIRTEENTH falsification-family member (after #662 twelfth; #625 eleventh; #632/#637 partial members only, not counted)'
+        prediction: 'the incentive theory predicts SOFTER coverage from the paid counterparty: Meta pays Reuters under an active multiyear licensing deal'
+        observed: 'Reuters Sep 8 2026 (Katie Paul): "Meta launches AI agent that can access other apps to send emails, make payments" (the Muse agent) runs a hard accountability register: "rolled out on Tuesday a long-touted AI assistant that can autonomously send emails, sell a car and book travel on a person''s behalf, despite internal concerns that the technology mismanages its access to sensitive personal data"; "RAISING THE STAKES FOR SAFETY" section header; internal tests reveal mixed results; privacy, security, and reliability stakes foregrounded'
+        illustrative_tone: '-0.45 MANUAL ILLUSTRATIVE (excerpt-bounded; not an empirical corpus score per the Aug 28 standing rule)'
+        first_payer_meta_pin: 'first falsification pin where Meta is the payer leg: OpenAI-payer legs (Vox/Swisher #494, FT #502) and Google-payer legs (#508) had pins; the Meta payer leg now has one'
+        cross_outlet_nuance: 'same event (Sep 8 2026 Muse launch), opposite registers at two Meta-paid counterparties: WSJ Bobrowsky ran +0.40 aspirational launch feature (carried from #662, News Corp up-to-$50M/yr Meta leg #549) while the paid wire ran -0.45 accountability. Payment direction alone does not determine register; the falsification is Reuters-specific, bounded by source-driven accountability (below) and wire-service genre'
+        excerpt_bounded: 'reuters.com not opened first-hand this run; register read from verbatim search excerpts plus the business-reporter.co.uk mirror reprint (bylined Katie Paul, "NEW YORK, Sept 8 (Reuters)")'
+      ranked_confounders:
+        - rank: 1
+          strength: strong
+          confounder: 'the hard register tracks Meta''s own on-record admission: Vishal Shah (VP AI products) confirmed the April launch was delayed to improve security and that the extra work "crossed the threshold" on safety, security, privacy, and model performance. Source-driven accountability, not entity-selective bias, is the leading alternative explanation'
+        - rank: 2
+          strength: strong
+          confounder: 'wire-service genre: Reuters sells neutrality to every newsroom; the Thomson Reuters Trust Principles mandate independence; n=1 for the falsification pin (one launch piece), so the pin is boundary-scoped to product-launch coverage, not a wire-wide Meta register claim'
+        - rank: 3
+          strength: strong
+          confounder: 'payment magnitude unknown: Reuters leg value is undisclosed; a small fee predicts a weak incentive effect, so the falsification bite scales with deal materiality. The owner-level $5M Q4 2025 GenAI line is real but Meta-specific share is unquantified'
+        - rank: 4
+          strength: moderate
+          confounder: 'launch-news register: a flagship AI-agent launch with documented internal safety concerns inherently draws accountability framing from any wire, payer or not'
+        - rank: 5
+          strength: weak
+          confounder: 'deal scope is chatbot-RAG licensing with no disclosed training rights, a narrower incentive linkage than archive-training deals like the News Corp x Meta leg'
+      counterevidence:
+        - 'Reuters'' own Q3 2024 earnings release tied Reuters News revenue growth (+10%) to generative-AI licensing revenue: the wire profits from the deals it covers, and still ran hard Muse coverage - the pin survives inside the disclosed conflict'
+        - 'the Oct 25 2024 Reuters self-report of the deal was neutral, facts-first reporting (terms, scope, fact-checking context), not adversarial: the wire''s Meta register is not blanket-hard, which bounds the falsification to the accountability-launch register'
+        - 'the Mar 2026 News Corp x Meta leg coincides with SOFT launch coverage (WSJ Bobrowsky +0.40 aspirational, #662): the same payer CAN sit alongside soft coverage at another paid counterparty, so the Reuters pin is a counterparty-specific falsification, not a payer-universal one'
+      cross_references:
+        - '#549 (News Corp x Meta up-to-$50M/yr leg: the other Meta payer leg; sibling mechanism in the same meta entity block)'
+        - '#662 (twelfth falsification-family member; carried the WSJ Bobrowsky +0.40 Muse arm used in the cross-outlet nuance)'
+        - '#625 (eleventh falsification-family member, via #623)'
+        - '#632/#637 (partial falsification-family members, not counted in the ordinal)'
+        - '#609/#599/#644 (renewal-window ACTIVE convention this mechanism follows)'
+        - '#594 (News Corp five-leg architecture; Robert Thomson Feb 5 2026 Q2 FY2026 call - different Thomson, disambiguation recorded above)'
+        - 'mechanism 529 (Google Canada C18 publisher-payment precedent: different instrument, payer leg with disclosed payments)'
+        - 'LLM Pulse deal map (Meta partner list: Reuters, News Corp, Le Figaro, Prisa, Suddeutsche Zeitung, plus reported CNN, Fox News, USA Today, People Inc.)'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tone only (-0.45 for the Reuters Muse piece, excerpt-bounded); no synthetic-hand-scored array significance per the Aug 28 2026 standing rule. tone_scores NOT_SCORED; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False. Engine NOT run. Correlational language only; no causal claim; no blanket coverage-tone claim beyond the single pinned piece.'
+      research_method: '4 browser.search query sets this run (listed under status_check_sep2026.query_sets); all items via search-result excerpts (second-hand, excerpt-bounded, marked in-mechanism); reuters.com not opened first-hand this run. All URLs verbatim from Full-URL listings; no canonical URLs constructed. Bounded absences per the iteration-492 rule (no renewal reporting surfaced; none claimed as proof). Pre-commit greps: zero test_type_c_664 files on disk (glob); no Type C #664 in git log (--grep); zero mechanism_633 keys repo-wide (grep); max numeric mechanism id pre-commit 632 (mechanism_632 in profiles/careers/journalists.yaml via #663). No em dashes; ASCII-only.'
+      source_urls:
+        - 'https://www.reuters.com/technology/artificial-intelligence/meta-platforms-use-reuters-news-content-ai-chatbot-2024-10-25/?outputType=chromeless'
+        - 'https://www.thewrap.com/meta-strikes-ai-deal-with-reuters/'
+        - 'https://siliconangle.com/2024/10/25/meta-inks-multiyear-ai-content-licensing-deal-reuters/'
+        - 'https://www.engadget.com/ai/meta-ai-gains-access-to-reuters-news-content-in-multi-year-deal-142214611.html?src=rss'
+        - 'https://www.nasdaq.com/articles/meta-integrates-reuters-content-new-ai-chatbot-expansion'
+        - 'https://www.inc.com/reuters/meta-ai-to-use-reuters-content-to-answer-user-questions-in-real-time/90995365'
+        - 'https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/'
+        - 'https://www.business-reporter.co.uk/news/meta-launches-ai-agent-that-can-access-other-apps-to-send-emails-make-payments-15234'
+        - 'https://llmpulse.ai/blog/ai-content-licensing-deals/'
+        - 'https://www.reuters.com/business/media-telecom/thomson-reuters-reports-higher-third-quarter-revenue-2024-11-05/'
+        - 'https://www.marketbeat.com/earnings/reports/2026-2-5-thomson-reuters-corp-can-stock/'
+        - 'http://fool.com/earnings/call-transcripts/2026/02/05/thomson-reuters-tri-q4-2025-earnings-transcript/'
+        - 'https://www.MarketBeat.com/earnings/reports/2026-5-5-thomson-reuters-corp-can-stock/'
+      novelty_verification:
+        - 'FIRST corpus formalization of the Meta x Reuters AI content licensing deal: Zero mechanism_633 keys repo-wide pre-commit; zero meta_reuters mechanism keys repo-wide pre-commit (only competitor-coverage-research.yaml fact rows meta_reuters_relationship / reuters_meta_deal, data rows not mechanisms)'
+        - 'Zero test_type_c_664 files on disk pre-commit (glob verified)'
+        - 'No Type C #664 in git log pre-commit (git log --grep verified)'
+        - 'mechanism_id 633 next free; max numeric mechanism id pre-commit 632 (mechanism_632 in profiles/careers/journalists.yaml via #663 Type B)'
+        - 'Distinct from mechanism 549 (News Corp x Meta leg, different counterparty and disclosed-value structure), #453 (Meta publisher-licensing provenance correction), mechanism 529 (Google Canada C18 precedent), mechanism 594 (News Corp five-leg; Robert Thomson disambiguation recorded)'
+      caution: 'Structural mapping with one falsification pin. Documents the deal terms, the Sep 2026 status check, the owner-level earnings disclosures, and the single Reuters Muse-launch accountability register. The falsification pin is boundary-scoped (one launch piece, excerpt-bounded evidence, strong source-driven confound) and does not claim a wire-wide Meta register. Correlation, not causation.'
+      test_file: tests/test_type_c_664_meta_reuters_ai_chatbot_deal_falsification_sep10_9pm.py
   xai:
     display_name: xAI
     aliases:
