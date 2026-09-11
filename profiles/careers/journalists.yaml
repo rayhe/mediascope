@@ -18099,6 +18099,100 @@ journalists:
       novelty: 'First dedicated Type B mechanism on Amanda Silberling (zero journalists.yaml mentions pre-commit; entry created this run). Zero test_type_b_643 files on disk (glob verified this run). No Type B commit with 643 in the title (git log --grep verified this run). The settlement URL appears in corpus only as context (test_lucas_ropek..., test_techcrunch_yahoo..., profiles/competitor-coverage-research.yaml) - never as a Silberling-byline mechanism. The OpenAI copyright URL is new-to-corpus this run (git-grep zero hits pre-commit). Both TechCrunch URLs opened first-hand this run via verbatim techcrunch.com URLs. Both tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 620 is the next free profiles mechanism id (max pre-commit 619). Rotation: 642 A -> 643 B.'
       research_method: 'Search sequence this run: (1) Victoria Song The Verge Meta Ray-Ban Display vs Google Android XR - rejected, substantial duplication with #599 Type C and #605 Type B mechanisms. (2) Sarah Perez TechCrunch - rejected, already studied (#638 Type B). (3) Devin Coldewey TechCrunch - no timely 2026 pair (recent bylines all 2024). (4) Wes Davis The Verge - no clean pair established. (5) Ina Fried Axios - axios.com policy-blocked, no resolvable first-party URLs; not pursued. (6) Amanda Silberling TechCrunch author page - surfaced the Aug 26 2026 $18B settlement analysis piece and the Sep 2 2026 OpenAI copyright brief piece in her Latest listing (byline confirmed via the author-page listing and the OpenAI piece''s bio footer naming her Senior Writer). Both arms opened first-hand via browser.open (verbatim techcrunch.com URLs from the open result headers). No zero-coverage claims per iteration-492 rule (both arms are positive Silberling bylines). No em dashes.'
 
+- career:
+  - beat: technology, AI, consumer data privacy
+    event_type: hired
+    notes: 'Chief Technology Correspondent at Axios; writes the Axios AI+ newsletter. "In reporting on tech for nearly 30 years" per the Sep 3 2026 Masters of Scale episode page. AllThingsD veteran who moved with the Mossberg/Swisher team to Recode at the Jan 2014 split (per the Lauren Goode entry in this file). Long-running "What They Know About You" series examining consumer data and privacy policies of AI products from OpenAI, Anthropic, Meta, and Google.'
+    publication: axios
+    role: chief_technology_correspondent
+    source_url: https://muckrack.com/inafried/articles
+  name: Ina Fried
+  mechanism_638_ina_fried_axios_meta_muse_vs_apple_ambient_ai_register_sep08_sep10:
+    mechanism_id: 638
+    type: B
+    journalist: 'Ina Fried'
+    publication: axios
+    iteration: 673
+    iteration_type: B
+    iteration_time: '2026-09-11 06:00 PDT'
+    discovery_date: '2026-09-11'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_673_ina_fried_axios_meta_muse_vs_apple_ambient_ai_register_sep08_sep10
+    pattern: 'Same Axios journalist, about 48 hours apart: Meta agent launch framed through an executive-access business register vs Apple ambient-AI wearables features framed through a privacy-virtue headline register.'
+    meta_arm:
+      piece: 'Axios Sep 8 2026 Meta Muse launch, byline Ina Fried'
+      date: '2026-09-08'
+      byline: 'Ina Fried'
+      register: executive_access_business_launch
+      tone_illustrative: 0.10
+      evidence_quotes:
+        - 'Byline attestation (flipboard Axios author listing, observed this run): "Axios - Ina Fried" on "Meta debuts Muse, its long-planned personal AI agent"'
+        - 'Verbatim Axios text via reprint (Slashdot, first-hand this run): "Wang told Axios" that Muse is built on models developed under chief AI officer Alexandr Wang'
+        - 'Verbatim Axios text via reprint (Slashdot, first-hand this run): "There is no advertising within Muse, for example, although that could change over time"'
+        - 'Verbatim Axios text via reprint (Slashdot, first-hand this run): the agent "runs on a dedicated virtual machine in Meta''s cloud"'
+        - 'Verbatim Axios text via reprint (Slashdot, first-hand this run): "Meta says it designed the privacy architecture" with a human "Sentinel" review team'
+        - 'Verbatim Axios text via reprint (Slashdot, first-hand this run): "Meta debuted new AI models... that power its Ray-Ban smart glasses, which are expected to get an update soon with more agentic capabilities"'
+        - 'Verbatim Axios text via reprint (Benton Institute, first-hand this run): "For the vast majority of users, they should be able to do what they need to within the free tier," said Wang'
+      source_urls:
+        - 'https://meta.slashdot.org/story/26/09/08/2012246/meta-debuts-muse-its-long-planned-personal-ai-agent'
+        - 'https://www.benton.org/headlines/meta-debuts-muse-its-long-planned-personal-ai-agent'
+        - 'https://flipboard.com/@axiosnews/stories-by-ina-fried-c0n8an9kz'
+      source_note: 'axios.com direct fetch policy-blocked this run (browser.open failed); no axios.com URLs constructed. Meta arm body text via two verbatim Axios reprints read first-hand (Slashdot full text, Benton excerpt); byline attested via the flipboard Axios author listing. Evidence tier: body-bounded via verbatim reprints, byline via author-listing attestation.'
+    apple_arm:
+      piece: 'Axios circa Sep 10 2026 Apple ambient-AI wearables features, byline Ina Fried'
+      date: '2026-09-10'
+      byline: 'Ina Fried'
+      register: privacy_virtue_headline
+      tone_illustrative: 0.30
+      evidence_quotes:
+        - 'Headline (Muck Rack author page, first-hand this run): Apple bets on "ambient AI" without the always-recording baggage'
+        - 'Dek (Muck Rack author page, first-hand this run): The iPhone Duo got all the attention, but Apple also used Wednesday''s event to debut Apple Watch and iPhone features that could put its mark on the AI era'
+        - 'Dek continued (Muck Rack author page, first-hand this run): Why it matters: Apple is aiming to show it can be more private and useful, even as it plays catch-up to the state of the art in AI'
+      source_urls:
+        - 'https://muckrack.com/inafried/articles'
+      source_note: 'Headline-and-dek bounded: body text not recovered (axios.com policy-blocked; no reprint mirror found this run). Date recorded as 2026-09-10, inferred Sep 9-10 window from the "Wednesday''s event" reference (the Sep 9 Apple event) and top-of-profile listing order. Byline via the Muck Rack ina-fried author page itself.'
+    bound_arm_openai:
+      piece: 'Axios Ina Fried: "Welcome to the AGI era," OpenAI says as GPT-6 Astra debuts'
+      note: 'Same journalist gives OpenAI the same executive-access coronation register as the Meta arm ("generational leap", Brockman interview): the launch register is entity-neutral, bounding any Meta-animus reading of the Meta-vs-Apple headline gap.'
+      source_note: 'Title-and-dek bounded from the first-hand Muck Rack author-page read this run; body not opened.'
+    asymmetry_scorer:
+      meta_tone: 0.10
+      apple_tone: 0.30
+      illustrative_delta_apple_minus_meta: 0.2
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run; Apple arm scored on headline/dek only'
+      verdict: 'Gradient-absent headline-register contrast in the #663 family: the same Axios journalist frames Meta''s agent launch through an executive-access business register and Apple''s ambient-AI wearables features through a privacy-virtue headline register about 48 hours later. NOT a falsification-family member. NOT a pure asymmetry pin (Apple arm headline-bounded, strong news-peg confounds, and the OpenAI control arm shows the coronation register is entity-neutral). Correlation only, not causation. Hypothesis-generating only.'
+    confounders_ranked:
+      strong:
+        - 'News-peg and story-type asymmetry: the Meta arm is a standalone product launch built around a direct executive interview (Wang gave Axios the interview); the Apple arm is hardware-event feature coverage. The register gap may be peg-driven, not entity-driven.'
+        - 'Apple arm is headline-and-dek only: no body text was recovered, so the contrast cannot be verified below the headline and the privacy-virtue read rests on three lines.'
+      moderate:
+        - 'Access asymmetry: the business-launch register in the Meta arm follows directly from granted executive access ("Wang told Axios"); the Apple piece shows no executive interview, so register follows access, not favoritism.'
+        - '"Always-recording baggage" may invoke the general wearables-privacy discourse rather than Meta specifically; reading it as a Meta contrast is an inference, recorded as such, not a verified authorial intent.'
+      weak:
+        - 'n=1 per arm: directional only, degenerate statistical contract.'
+        - 'Axios house "Why it matters" style constrains both pieces; about 48 hours apart (Sep 8 vs circa Sep 10).'
+    counterevidence:
+      - 'Fried''s OpenAI GPT-6 Astra piece ("Welcome to the AGI era", "generational leap", Brockman interview) uses the same executive-access coronation register as the Meta Muse piece: the launch register is entity-neutral.'
+      - 'Fried''s Aug 20 2026 "OpenAI to rewrite its safety rules post-Hugging Face" applies an accountability register to OpenAI: she does not reserve scrutiny for Meta.'
+      - 'The Meta Muse piece itself carried substantive privacy reporting (dedicated VM, privacy architecture, Sentinel human review, no advertising within Muse, user controls): the gap is headline-register, not body-omission.'
+    financial_context: 'The corpus holds no verified AI-lab licensing or payment leg for Axios and none is asserted here, so no one-sided financial gradient predicts a Meta-vs-Apple register gap: gradient-absent per the #663 family. The news-peg and access confounds are stronger than any money story. Correlation, not causation.'
+    cross_references:
+      - '#668 Type B (WIRED Newman Meta-vs-Apple wearable-register pair, mechanism 635): this run extends the cross-entity wearable-register comparison to a second journalist and publication (Axios/Fried).'
+      - '#663 (gradient-absent control-case family precedent).'
+      - '#653 (direct-fetch policy-block precedent, wired.com analog for axios.com).'
+      - 'Prior not-pursued research notes on Ina Fried (this file lines 15957 and 18100, Bobrowsky-entry note and Silberling-entry research_method): rejected for lack of resolvable first-party URLs; overridden this run by new evidence (flipboard byline attestation, verbatim reprint bodies, first-hand Muck Rack author-page read).'
+    research_method: 'browser.search query sets this run: (1) Ina Fried Axios September 2026 Muse (surfaced the flipboard author listing attesting the Axios/Ina Fried byline); (2) Ina Fried Axios OpenAI Anthropic September 2026 (surfaced the Muck Rack author page); (3) Ina Fried Axios Apple iPhone event September 2026; (4) quoted-phrase search on the Apple ambient-AI headline. browser.open first-hand reads: the full Muck Rack ina-fried author page (both arms'' headlines and deks), the Benton Institute verbatim Axios reprint of the Muse piece, the Slashdot verbatim Axios reprint of the Muse piece (full text). browser.open on axios.com FAILED (policy-blocked) this run; no axios.com URLs constructed or invented. No zero-coverage claims. No em dashes; ASCII-only.'
+    novelty: 'FIRST dedicated Type B mechanism on Ina Fried; no Ina Fried journalist entry pre-commit (grep verified: only mention-notes inside other entries); mechanism_id 638 next free pre-commit (max 637); no test_type_b_673 files pre-commit; Apple ambient-AI piece new-to-corpus (zero repo-wide hits for "always-recording" pre-commit, grep verified). Overrides the prior not-pursued notes with new evidence as documented in cross_references.'
+    artifact_readiness: 'No analysis.json update warranted: illustrative headline-register pair only, manual tones, no empirical significance.'
+  notes: 'Axios chief technology correspondent; see career block. Analytical value: Fried runs a dedicated consumer-AI-privacy series ("What They Know About You") covering OpenAI, Anthropic, Meta, and Google symmetrically, which makes her cross-entity register choices a clean Type B target once evidence cleared the first-party-URL bar.'
+
 
 jacob_krol:
   name: Jacob Krol
