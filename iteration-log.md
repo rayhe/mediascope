@@ -16,7 +16,7 @@
 
 **Research method:** 5 browser.search query sets this run (Anthropic refused submit model UK AI Safety Institute Financial Times September 2026; Financial Times Anthropic refused UK AI Safety Institute testing; FT Anthropic AISI refusal September 2026; Coxon/BBC accountability coverage; OpenAI wiki incident/BBC September 2026) + attestation excerpts only (FT original paywalled, not opened). All five attestation URLs carried verbatim from Full-URL listings; no ft.com URLs constructed. Pre-commit repo greps: zero test_type_a_682 files on disk; no #682 in git log; mechanism_643 nowhere in profiles/ or tests/; all five attestation URLs zero corpus hits; max modern mechanism_id 642. No em dashes.
 
-**New Type A files:** `tests/test_type_a_682_ft_anthropic_aisi_refusal_accountability_scoop_vs_meta_sep11_4pm.py` - 8 classes, 40 tests (anchor guard + novelty anchor + doc-sync deselected pre-commit per #565; patched green in followup).
+**New Type A files:** `tests/test_type_a_682_ft_anthropic_aisi_refusal_accountability_scoop_vs_meta_sep11_4pm.py` - 8 classes, 43 tests, all passing (anchor guard + novelty anchor + doc-sync deselected pre-commit per #565; patched green in followup).
 
 **Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output; falsification-family membership directional, not artifact-grade.
 
