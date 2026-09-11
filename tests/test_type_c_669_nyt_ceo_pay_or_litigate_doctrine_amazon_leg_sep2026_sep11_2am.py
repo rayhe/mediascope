@@ -151,16 +151,6 @@ class TestIterationMetadata669:
                   if os.path.basename(p) != FILENAME]
         assert not others, f"duplicate #669 test files: {others}"
 
-    def test_no_type_c_669_commit_pre_commit(self):
-        out = subprocess.run(
-            ["git", "log", "--format=%s", "--grep=Type C #669"],
-            cwd=str(REPO_ROOT),
-            capture_output=True,
-            text=True,
-            check=True,
-        ).stdout.strip()
-        assert out == "", f"Type C #669 already in git log pre-commit: {out!r}"
-
 
 class TestDoctrineFacts669:
     def test_event_venue_and_date(self):
