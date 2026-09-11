@@ -6074,6 +6074,98 @@ entities:
         iteration: 559
         type: C
         date: 2026-09-06 07:00 PDT
+    mechanism_636_nyt_ceo_pay_or_litigate_doctrine_sep2026:
+      mechanism_id: 636
+      iteration: 669
+      rotation: Type C
+      date_analyzed: '2026-09-11'
+      time_pdt: '02:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: NYT CEO Pay-or-Litigate Doctrine (Sep 2026 Status Summit) - On-Record Commercial-Agreement Demand, $4.2M Q1 2026 AI-Litigation Spend, Two-Pronged Litigate-and-License Posture, Addendum to the Amazon x NYT $20-25M/Yr Leg
+      type: financial_incentive_mapping
+      block_key: type_c_669_nyt_ceo_pay_or_litigate_doctrine_amazon_leg_sep2026
+      type_c_focus: On-record publisher-side doctrine (Sep 2026 Status Summit) formalizing the NYT stance toward AI model makers; commercial-agreement conditions; the Amazon leg as the doctrine's one approved deal; the $4.2M quarterly litigation burn rate; falsification adjacency to mechanism 559 and the nytimes.yaml competitor_relationships.amazon adversarial-on-payer block (#562); contrast with the Anthropic zero-deal posture (Adweek Aug 2026); flagged-but-unverified sponsored Anthropic x NYT settlement surface (NOT asserted).
+      event:
+        venue: Status Summit, New York (panel discussion)
+        event_date: '2026-09-09'
+        speaker: Meredith Kopit Levien, NYT CEO
+        questioner: Oliver Darcy, Status founder
+        headlined_at: '2026-09-09'
+      doctrine_quotes:
+        pay_us: 'They have to pay us.'
+        commercial_agreement_required: 'If a company - if a model maker - is using our work to develop their generative AI tools, they need a commercial agreement with us.'
+        enforce_rights: 'We are not letting anybody off. And as you have seen, we are prepared to enforce our rights where necessary.'
+        conditions: any agreement requires the Times permission, gives the publisher control over how its journalism is used, and provides compensation it considers fair and sustainable
+        big_tech_role: 'These companies, including Google, have enormous responsibility for the quality of information and discourse that the public has access to. They control so much of how information is surfaced and discovered and engaged with.'
+      google_exchange:
+        darcy_pressed_on: Google AI search practices and whether the Times had discussed the issue with Google
+        levien_response: declined to discuss any company the Times had not addressed publicly or say whether the publisher might take action against Google; emphasized the conditions apply broadly to model makers using Times journalism
+        google_leg_status: bounded absence - no Google x NYT AI licensing deal on record; posture toward Google unstated (iteration-492 rule)
+      two_pronged_posture:
+        litigation: copyright litigation against OpenAI, Microsoft, and Perplexity (active; NYT sued OpenAI and Microsoft Dec 2023 per mechanism 559)
+        commercial_deals: open to commercial agreements; struck an AI licensing deal with Amazon in 2025 (mechanism 559, announced May 29 2025, $20-25M/yr per WSJ sourcing; Amazon uses Times, NYT Cooking, Athletic content in Alexa and to train proprietary AI models)
+        litigation_spend: $4.2 million on AI-related litigation during Q1 2026 (TheWrap prior reporting, un-corroborated this run)
+      doctrine_to_deal_linkage:
+        q1_2026_earnings_conditions: 'We have done a partnership with Amazon because it met those conditions. And so far, so good. We are learning a lot there. (Meredith Kopit Levien, Q1 2026 earnings, May 6 2026; carried from mechanism 559; conditions = consistent with long-term strategy, sustainable fair value exchange, control over how content is used)'
+        conditional_payment_reading: the publisher frames licensing payment as a conditional commercial transaction (permission plus control plus fair compensation), not goodwill; the doctrine supplies the mechanism by which the NYT claims payment does not purchase editorial softness
+        announcement_day_quote: 'The deal is consistent with our long-held principle that high-quality journalism is worth paying for. (Meredith Kopit Levien, note to staff, May 29 2025; carried from mechanism 559)'
+      falsification_adjacency:
+        status: NOT a coverage-tone pin; this is qualitative Type C financial-incentive mapping, no scorer run, no tone scores, no analysis.json update
+        adjacent_pin: the nytimes.yaml competitor_relationships.amazon block (#562, first dedicated Type A mechanism) - the NYT applies an ADVERSARIAL register to Amazon despite Amazon being the $20-25M/yr AI licensing payer (Karen Weise Oct 2025 robotics reporting; Jul 30 2026 AI-capex coverage); money-sympathy INVERTED for the actual payer
+        doctrine_consistency: the pay-or-litigate doctrine is consistent with the sue-one-lab-license-another bifurcation of mechanism 559 (sued OpenAI/Microsoft Dec 2023, licensed Amazon May 2025) and the woo-and-sue doctrine of mechanism 549 (News Corp x Meta); the NYT takes the payer's money on stated commercial conditions while covering the payer adversarially
+        anthropic_contrast: Adweek (Aug 2026) reports Anthropic has negotiated NO content licensing agreements with major news publishers (fair-use position; VP product partnerships Tom Turvey, per three of five media executives); mechanism 509 (Anthropic zero-deal posture); the NYT litigates the labs that did NOT pay (OpenAI, Microsoft, Perplexity) while licensing the one that did (Amazon)
+      flagged_but_unverified:
+        surface: "FinancialContent / markets.financialcontent.com syndicated piece titled 'Breaking: Anthropic and The New York Times Reach Landmark Confidential Settlement, Ending High-Stakes Copyright Battle'"
+        url_path_channel: "'tokenring-2025-12-29' in the URL path (paid-distribution channel marker)"
+        claimed_date: '2025-12-29'
+        content_claimed: Anthropic and NYT confidential settlement with recurring revenue, MCP API access, data-hygiene purge, attribution source cards
+        verdict: NOT asserted as fact; unverified sponsored-distribution surface; contradicts the Adweek Aug 2026 zero-deal reporting and the Sep 2026 doctrine (litigation posture toward Anthropic unstated in corpus; bounded absence of any Anthropic x NYT deal per iteration-492); documented here so future runs do not cite it as evidence; per the flagged-surface discipline, it cannot enter sources/
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: trade-event performative posture - the Status Summit is a media-industry audience; the remarks may be advocacy (signaling to publishers, litigants, and Congress) rather than enforceable internal policy
+      - rank: 2
+        strength: strong
+        confounder: TheWrap second-hand quote reporting - verbatim quote text rendered and read first-hand this run via browser.open, but TheWrap is not a primary source; no transcript of the panel was consulted
+      - rank: 3
+        strength: moderate
+        confounder: the $4.2M Q1 2026 litigation-spend figure comes from TheWrap's prior reporting, not from the Status Summit remarks; un-corroborated this run
+      - rank: 4
+        strength: moderate
+        confounder: Google-specific posture unstated (declined to discuss Google); bounded absence of a Google leg per iteration-492, not evidence of a dispute-free relationship
+      - rank: 5
+        strength: weak
+        confounder: no term-length or renewal data on the Amazon leg in the remarks; leg status stays ACTIVE per the #599/#609 convention (bounded absence of renewal/termination reporting)
+      statistical_discipline:
+        scope: qualitative structural mapping only
+        correlation_not_causation: true
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        tone_scores: NOT_SCORED
+        engine_run: false
+      cautious_language_required: true
+      correlational_note: This mapping formalizes the NYT CEO's Sep 2026 on-record stance and its consistency with the corpus Amazon x NYT leg and the adversarial-on-payer coverage pin. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.
+      no_coverage_tone_claim: true
+      analysis_json_update: false
+      sources:
+      - https://www.thewrap.com/media-platforms/journalism/nyt-ai-companies-pay/
+      research_method: 'browser.search this run (3 query sets - Anthropic publisher licensing; Anthropic NYT; NYT Amazon AI licensing, since 2026-01-01 for the first), verbatim full-URL listings; TheWrap piece opened first-hand this run (32 lines rendered; headline, dek, all quotes, $4.2M figure, event/date/context attested from the page itself); Adweek Anthropic zero-deal piece via search excerpts (second-hand); FinancialContent tokenring surface via search excerpts, flagged not asserted; no canonical URLs constructed; no zero-coverage claims per iteration-492 rule'
+      novelty:
+        dedicated_mechanism_on_sep2026_doctrine: first (no mechanism on the Sep 2026 Status Summit remarks anywhere in corpus; Kopit Levien Sep 2026 pay-or-litigate quotes new to profiles/)
+        thewrap_sep2026_url: new to corpus (zero repo-wide hits pre-commit, grep verified)
+        flag_tokenring_surface: first formal documentation of the sponsored Anthropic x NYT settlement surface with an explicit do-not-cite verdict
+        distinct_from: mechanism 559 (the Amazon x NYT deal structure itself, Sep 6), the nytimes.yaml competitor_relationships.amazon #562 adversarial-on-payer Type A block, mechanism 549 (News Corp woo-and-sue)
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 669
+        type: C
+        date: 2026-09-11 02:00 PDT
     mechanism_564_amazon_conde_nast_rufus_ai_licensing_deal:
       mechanism_id: 564
       iteration: 564
