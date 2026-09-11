@@ -1929,6 +1929,114 @@ competitor_relationships:
         significant_false: true
         significant_empirical_false: true
         disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. Direct financial predictor absent for Anthropic pair: no documented FT Anthropic licensing deal found this run. This mechanism is a control case against financial determinism. Beat assignment and news genre are the strongest confounders.'
+    mechanism_643_ft_anthropic_aisi_refusal_accountability_scoop_vs_meta_openai_launch_week_register_sep11:
+      mechanism_id: 643
+      date: '2026-09-11'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 682
+      iteration_type: A
+      iteration_time: 2026-09-11 16:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Financial Times
+      publication_pair: FT x Anthropic
+      competitor: anthropic
+      comparison_entities:
+      - meta
+      - openai
+      author: Kit (with Ray)
+      finding: 'FT broke (Wed Sep 9, 2026) an adversarial accountability scoop: Anthropic refused to submit its latest model (Claude Mythos 5.1) to the UK AI Security Institute before release, the first time it had bypassed UK testing, with two AISI architects (Rishi Sunak, Matt Clifford) now working at Anthropic; the story was raised at PMQs (Ed Davey question, PM Andy Burnham response). Register: watchdog accountability, MANUAL ILLUSTRATIVE -0.45. This CONTRADICTS the anthropic entity block coverage_prediction ("softer via Google channel", mechanism 441): the indirect Google channel did not prevent a watchdog scoop and did not soften the register. Same-window FT comparators run the other direction: FT''s Sep 10 OpenAI Astra coverage is the "AGI era" coronation (+0.25, carried from mechanism 625), FT''s Meta Muse coverage is neutral product-distribution framing (+0.05, carried from mechanism 625), and FT''s Sep 10 EU-DMA piece is favorable to Meta (via Bloomberg Law). No FT September accountability piece surfaced on OpenAI''s safety-negative week (Sep 5 wiki incident, Coxon resignation, Altman slowdown openness) across four search query sets: bounded search-result absence per the iteration-492 rule, not a proven zero. MANUAL ILLUSTRATIVE delta (Meta minus Anthropic) +0.50 on the register axis (Meta distribution +0.05 vs Anthropic accountability scoop -0.45); no engine run, n=1 scored item per arm, degenerate statistical contract per the #638/#643 convention, is_significant false, NOT artifact-grade. Correlation only, not proof of editorial influence.'
+      articles:
+      - title: FT Anthropic AISI-refusal accountability scoop (FT original, Wed Sep 9/10 2026)
+        ft_original_paywalled: true
+        attestation_url: https://www.thetimes.com/uk/technology-uk/article/tech-giants-gambling-with-lives-superintelligence-gh275qr8d
+        attestation_excerpt: 'On Wednesday the Financial Times reported that Anthropic had refused to submit its latest model to the UK''s AI Security Institute (AISI). Two of the architects of AISI, Rishi Sunak and Matt Clifford, the government''s former AI tsar, now work for Anthropic.'
+        date: '2026-09-09'
+        register: accountability scoop, watchdog, refusal framing plus revolving-door note
+        manual_illustrative_tone: -0.45
+        evidence_grade: FT original paywalled; register reconstructed from five attestation snippets this run
+        url_novelty: first corpus appearance this run (zero repo-wide hits before)
+      - title: Anthropic did not submit most powerful AI model for UK testing (The Times, Sep 9 2026)
+        url: https://www.thetimes.com/business/companies-markets/article/anthropic-did-not-submit-most-powerful-ai-model-for-uk-testing-claude-g37tct2vm
+        attestation_excerpt: 'The story was reported by the Financial Times.'
+        date: '2026-09-09'
+        register: second attestation of the FT scoop (Claude Mythos 5.1, first UK bypass, US-only trusted access)
+        url_novelty: first corpus appearance this run
+      - title: UK PM acknowledges AI risks as Anthropic expert warns of catastrophe (Financial News via lse.co.uk, Sep 2026)
+        url: https://www.lse.co.uk/news/uk-pm-acknowledges-ai-risks-as-anthropic-expert-warns-of-catastrophe-srkc3uncwn4t4tk.html
+        attestation_excerpt: 'It comes after the Financial Times reported that San Francisco, California-based firm Anthropic had withheld its latest model from the UK''s AI Safety Institute'
+        register: PMQs pickup of the FT scoop (Ed Davey question, PM Andy Burnham response)
+        url_novelty: first corpus appearance this run
+      - title: Anthropic withheld its latest AI model from UK testing (brieftea)
+        url: https://brieftea.com/a/anthropic-withheld-its-latest-ai-model-from-uk-testing-102LBWTnUURrip9oKjCa
+        attestation_excerpt: 'Reported by Financial Times'
+        url_novelty: first corpus appearance this run
+      - title: Anthropic Faces Scrutiny Over Account Security and Internal Warnings on AI Risk (theaiinsider.tech, Sep 9 2026)
+        url: https://theaiinsider.tech/2026/09/09/anthropic-faces-scrutiny-over-account-security-and-internal-warnings-on-ai-risk/
+        attestation_excerpt: 'The Financial Times separately reported that Anthropic withheld its newest model from the UK''s AI Security Institute, a claim the company declined to address directly'
+        url_novelty: first corpus appearance this run
+      - title: Meta unveils AI personal assistant linked to WhatsApp and Instagram (FT via archynetys mirror, Sep 8 2026)
+        url: https://www.archynetys.com/trend/2026-09-08/meta-unveils-ai-personal-assistant-linked-to-whatsapp-and-instagram
+        launch_context_url: https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/
+        date: '2026-09-08'
+        register: product_distribution_factual
+        manual_illustrative_tone: 0.05
+        evidence_grade: 'in-corpus comparator (mechanism 625)'
+      - title: OpenAI Launches GPT-6 Astra (FT coverage; Brockman AGI era briefing, Sep 10 2026)
+        ft_attribution_mirror_1_url: https://www.wsj.com/cio-journal/yes-were-entering-the-era-of-artificial-general-intelligence-d9b0920e
+        ft_attribution_mirror_2_url: https://www.barrons.com/articles/openai-gpt-6-astra-microsoft-stock-066362a7
+        safety_context_url: https://www.techrepublic.com/article/news-openai-gpt-6-astra-agi-era-2026/
+        date: '2026-09-10'
+        register: epochal_coronation
+        manual_illustrative_tone: 0.25
+        evidence_grade: 'in-corpus comparator (mechanism 625)'
+      - title: FT Sep 10 EU-DMA piece favorable to Meta (via Bloomberg Law)
+        url: https://news.bloomberglaw.com/tech-and-telecom-law/eu-set-to-limit-apple-meta-fines-next-week-ft
+        date: '2026-09-10'
+        register: regulatory favorable to Meta (EU to impose minimal fines on Apple and Meta, well below 10 percent turnover threshold)
+        evidence_grade: 'in-corpus comparator (mechanism 625)'
+      asymmetry_scorer_result:
+        target_entity: anthropic
+        target_tones_manual_illustrative:
+        - -0.45
+        target_avg: -0.45
+        peer_entities:
+        - meta
+        peer_tones_manual_illustrative:
+        - 0.05
+        peer_avg: 0.05
+        delta_meta_minus_anthropic: 0.5
+        interpretation: FT x Meta register is softer than FT x Anthropic register by about 0.50 on the manual illustrative scale in the Sep 8-10 2026 window
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        limitations: 'n=1 scored item per arm (degenerate statistical contract per the #638/#643 convention); Anthropic tone is a manual illustrative assignment for the mirror-attested accountability scoop register, not a corpus-scored FT piece; Meta tone carried from mechanism 625, not independently scored this run; FT original paywalled; FT OpenAI accountability silence is a bounded search-result absence; no engine run'
+      financial_context: 'Same financial context as the anthropic entity block (carried, not re-verified this run): FT has $0 direct Anthropic deal; indirect via FT Google commercial partnership (single-figure millions GBP/yr News AI pilot) plus Google up to $40B planned Anthropic investment. Mechanism 441''s coverage_prediction ("softer via Google channel") FAILS for the accountability lane: FT''s own adversarial AISI-refusal scoop on Anthropic is the watchdog register the prediction argues against. The soft register cannot be bought indirectly. Correlation only, not proof of editorial influence.'
+      confounders:
+      - 'news-value gap: the AISI refusal is a genuine watchdog scoop (first-ever UK safety-testing bypass, two AISI architects now at Anthropic, PMQs pickup); newsworthy regardless of money, and news-value alone can produce the adversarial register'
+      - 'mirror attestation: FT original paywalled; register reconstructed from five attestation snippets (Times x2, lse.co.uk/Alliance News, brieftea, theaiinsider); full-text register could differ'
+      - 'lane asymmetry: Meta''s week was product-launch news (Muse distribution, Sep 8) and regulatory-favorable (EU-DMA, Sep 10); Anthropic''s week was a safety-accountability event; different news pegs invite different registers'
+      - 'bounded FT OpenAI accountability absence: no FT September piece surfaced on the OpenAI wiki incident (Sep 5), the Coxon resignation, or Altman''s slowdown openness across four search query sets (iteration-492 rule); not a proven zero'
+      - 'n=1 scored item per arm (degenerate statistical contract per the #638/#643 convention); Meta arm tone carried from mechanism 625, not independently scored this run; Anthropic tone hand-assigned; no engine run'
+      - 'indirect-channel attenuation: the Google channel predicts softening in the fundraising/aspirational lane (mechanism 441''s lane); the accountability lane may be outside the prediction''s scope, which bounds rather than refutes the prediction'
+      - 'single-reporter beat attribution for the FT scoop is unverified; byline unknown'
+      strongest_counterargument: 'The falsification membership is at the coverage-selection level and directional only. Mechanism 441''s "softer via Google channel" prediction was made for the fundraising/aspirational coverage lane (Anthropic fundraising aspirational vs Meta capital-raise desperation); an adversarial AISI-refusal safety scoop does not refute a softening prediction scoped to fundraising framing. The watchdog register is driven by genuine news value: a first-ever UK safety-testing bypass, two AISI architects now at Anthropic, and a PMQs question. A scope-bounded version of the prediction (softening applies to company-led financial narratives, not watchdog safety events) survives this finding intact. Accepted as a major counterweight; claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE; NOT artifact-grade.'
+      falsification_family: 'FIFTEENTH falsification-family member. Mechanism 441''s coverage_prediction ("softer via Google channel") is contradicted at the coverage-selection/register level by FT''s own adversarial AISI-refusal accountability scoop on Anthropic (Wed Sep 9, 2026): the indirect Google channel did not prevent a watchdog scoop and did not soften the refusal register. Ledger advances from 14 (mechanism 634, #667; #675 verified no FIFTEENTH anywhere in profiles/). Membership is directional, not artifact-grade: FT original paywalled (mirror-attested register), n=1 scored item per arm, degenerate statistical contract, and the scope-bounded counterargument stands unresolved. Correlation is not causation.'
+      research_method: 'Five attestation URLs carried verbatim from browser.search output this run; FT original paywalled, not opened; all five URLs repo-wide-grep verified new to corpus this run; bounded search-result absence for FT September OpenAI accountability coverage per the iteration-492 rule (four query sets, Sep 5 wiki incident, Coxon resignation, Altman slowdown); Meta/OpenAI comparator arms carried from mechanism 625 in-corpus (#672 precedent); no ft.com URLs constructed; no em dashes.'
+      source_urls:
+      - https://www.thetimes.com/uk/technology-uk/article/tech-giants-gambling-with-lives-superintelligence-gh275qr8d
+      - https://www.thetimes.com/business/companies-markets/article/anthropic-did-not-submit-most-powerful-ai-model-for-uk-testing-claude-g37tct2vm
+      - https://www.lse.co.uk/news/uk-pm-acknowledges-ai-risks-as-anthropic-expert-warns-of-catastrophe-srkc3uncwn4t4tk.html
+      - https://brieftea.com/a/anthropic-withheld-its-latest-ai-model-from-uk-testing-102LBWTnUURrip9oKjCa
+      - https://theaiinsider.tech/2026/09/09/anthropic-faces-scrutiny-over-account-security-and-internal-warnings-on-ai-risk/
+      - https://www.archynetys.com/trend/2026-09-08/meta-unveils-ai-personal-assistant-linked-to-whatsapp-and-instagram
+      - https://www.wsj.com/cio-journal/yes-were-entering-the-era-of-artificial-general-intelligence-d9b0920e
+      - https://news.bloomberglaw.com/tech-and-telecom-law/eu-set-to-limit-apple-meta-fines-next-week-ft
+      cross_references: [441, 625, 634]
+      novelty: 'First dedicated Type A mechanism on FT''s Sep 9/10 2026 Anthropic AISI-refusal accountability scoop vs same-window FT Meta/OpenAI registers. Distinct from mechanism 441 (fundraising lane), mechanism 625 (OpenAI x Meta launch-week pair), and mechanisms 532/193/524 (surveillance register comparisons). Zero mechanism_643 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 642. All five attestation URLs new to corpus (repo-wide greps this run). FIFTEENTH falsification-family member (ledger at 14 via mechanism 634, verified #675).'
+      test_file: tests/test_type_a_682_ft_anthropic_aisi_refusal_accountability_scoop_vs_meta_sep11_4pm.py
   x_twitter:
     financial_tie: none
     estimated_value: $0
