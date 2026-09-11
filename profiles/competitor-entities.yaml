@@ -1007,6 +1007,190 @@ entities:
       caution: Structural mapping only. Documents disclosure posture and
         confidentiality, not editorial capture. Axios continued adversarial OpenAI
         coverage is recorded above and bounds the finding.
+    mechanism_639_axios_openai_layer2_leg_sep2026_status_correction_673:
+      mechanism_id: 639
+      mechanism_name: OpenAI x Axios Layer-2 Salary-Funding Leg Sep 2026 Status Verification and Formal Correction to 673 Gradient-Absent Premise
+      type: financial_incentive_mapping
+      type_c_focus: Sep 2026 status verification of the OpenAI x Axios Layer-2
+        newsroom-funding leg (first-hand primary-source read this run) plus a
+        formal correction to Type B 673 / mechanism 638, whose finding asserted
+        the corpus holds no verified AI-lab licensing or payment leg for Axios.
+        That premise is contradicted by the corpus itself (mechanism 53 Layer 2,
+        mechanism 478) and is now additionally verified against the primary
+        source first-hand.
+      date_analyzed: '2026-09-11'
+      iteration: 674
+      rotation: Type C
+      time_pdt: '07:00'
+      scheduled_job_id: mediascope-daily-iteration
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      sep2026_status_verification:
+        deal_active: true
+        basis: First-hand browser.open read of the OpenAI announcement page this
+          run (123 lines rendered; URL verbatim from this run Full-URL listing).
+        primary_source_quote: '"we are announcing a new content partnership with
+          Axios, and funding to help expand its local news coverage by building
+          newsrooms enabled by our technology in four new cities"'
+        four_cities: Pittsburgh PA, Kansas City MO, Boulder CO, Huntsville AL
+        vandehei_quote: '"OpenAI''s investment allows us to continue our
+          expansion"'
+        term: three-year (Jan 2025 to Jan 2028 per mechanism 478)
+        expansion_jan2026: nine additional local communities (Editor and
+          Publisher, Feb 4 2026); Axios Local to 43 communities total via the
+          multi-year OpenAI partnership
+        expansion_scale_apr2026: 35 cities active (Press Gazette, list dated
+          April 2026; piece crawled Sep 2026)
+        adweek_2026_mechanics: original Jan 2025 deal provided cash to hire
+          reporters and absorb startup costs plus enterprise access and usage
+          tokens; OpenAI receives training permission and feed access for
+          retrieval; second round (Jan 2026) funds seven to nine more markets
+          as smaller one-reporter geographies grouped into regional local
+          supersystems
+        renewal_or_termination_reporting: none surfaced in bounded Sep 2026
+          query sets; treated ACTIVE per the 599 convention (term runs to
+          Jan 2028)
+      correction_to_673:
+        false_premise_quoted: '"No one-sided financial gradient at Axios predicts
+          the gap (corpus holds no verified AI-lab licensing/payment leg for
+          Axios)"'
+        verdict: premise FALSE
+        corpus_contradictions:
+          - 'Mechanism 53 triple_layer_journalism_funding Layer 2 (salary
+            funding): OpenAI x Axios, Jan 2025, deal_type content licensing
+            plus training plus direct newsroom funding; first time OpenAI
+            directly funded journalist salaries'
+          - 'Mechanism 478 (Type C 478, Sep 2 2026): three-year deal,
+            confidential significant payment, training rights, Jan 2026
+            expansion to 13 newsletters, 43-city target, disclosure gap in own
+            coverage and job listings'
+        primary_source_confirmation_this_run: OpenAI announcement page read
+          first-hand; OpenAI states the funding and the four-city newsroom
+          buildout on its own domain
+        likely_cause_of_miss: the leg is categorized as Layer-2 newsroom
+          funding rather than a standard content-licensing leg, and mechanism
+          478 is nine days old; the 673 worker appears to have searched
+          licensing-leg keys only
+        mechanism_638_block_untouched: per the Type D read-only convention
+          (established 670), the original 638 block is left in place; this
+          mechanism carries the dated correction for audit integrity
+      revised_verdict:
+        publication_level: gradient PRESENT at Axios (OpenAI to Axios, Layer 2
+          salary funding plus training licensing, active and expanding Sep 2026)
+        pair_level_meta_vs_apple: the OpenAI gradient does not directly predict
+          a Meta-vs-Apple register gap; the 673 pair-level confounds (news-peg
+          and story-type asymmetry, Apple arm headline-bounded) stand
+        counterevidence_reweighted: the 673 OpenAI control arm (Fried gives
+          OpenAI GPT-6 Astra the same coronation register, read as
+          entity-neutral) is INVALIDATED as counterevidence; a coronation
+          register for the outlet funding OpenAI newsrooms is
+          funder-consistent, not entity-neutral
+        control_set_update: Axios is REMOVED from the clean-control set for
+          future Type A and Type B work; any Axios x OpenAI coverage analysis
+          must carry the Layer-2 leg as a ranked confound
+        label_supersession: mechanism 638 gradient-absent label is superseded
+          for the publication-level claim; revised label is gradient-present
+          but pair-misaligned for the Meta-vs-Apple comparison
+      multlab_sweep_context:
+        purpose: bounded Sep 2026 new-deal sweep across labs to bound the
+          frontier; none of the sets surfaced a new paid publisher licensing
+          signing
+        meta: no new Meta publisher AI deals in bounded sets (since
+          2026-08-15); portfolio stands at 13 per meta_ai_deals; only
+          re-surfaces (News Corp Mar 2026, Reuters Oct 2024)
+        openai: only the India attribution blitz (Sep 7-8, mechanism 624
+          territory); no new paid licensing signings in Sep 2026 sets; the
+          fourweekmba Sep 8 analysis piece is second-hand commentary on 624
+        google: pilot and Showcase-ultimatum facts already in corpus (mechanism
+          412, 356); no new Sep 2026 signings; News Corp x Google remains
+          talks-only per mechanism 630
+        anthropic: zero-deal posture holds (Adweek Aug 2026, mechanism 509);
+          Sep 2026 news is the 1.5B distribution fight (mechanism 629)
+        perplexity: 42.5M revenue-share pool already in corpus; no new program
+          members surfaced
+        xai: no publisher deals surfaced
+        out_of_scope_noted: Warner Music Group x Suno (Sep 10 2026) is a
+          music-industry training license, not a news-publisher deal; noted
+          and not mapped
+      statistical_discipline:
+        correlation_not_causation: true
+        is_significant: false
+        no_tone_scores: true
+        no_p_value: true
+        qualitative_only: true
+      ranked_confounders:
+        - rank: 1
+          strength: strong
+          confounder: Continued adversarial OpenAI coverage by Axios (teen
+            suicide allegations, Musk litigation, per mechanism 478) bounds any
+            capture claim; the leg predicts a softening incentive, not a
+            captured newsroom
+        - rank: 2
+          strength: strong
+          confounder: 'Pair-level confounds from 673 stand (news-peg asymmetry:
+            granted-executive-interview launch vs event feature; Apple arm
+            headline-bounded); the correction changes the publication-level
+            premise, not the pair-level evidence grade'
+        - rank: 3
+          strength: moderate
+          confounder: Layer-2 funding targets Axios Local newsrooms, not the
+            national tech desk where Fried sits; transmission from local-news
+            funding to tech-desk register is unmeasured
+        - rank: 4
+          strength: weak
+          confounder: Exact payment amount remains confidential (significant
+            per VandeHei); incentive magnitude unquantified
+      cross_references:
+        - Type B 673 / mechanism 638 (corrected premise; journalists.yaml)
+        - Mechanism 478 Axios x OpenAI disclosure posture (deal terms,
+          disclosure gap, Jan 2026 expansion)
+        - Mechanism 53 triple_layer_journalism_funding Layer 2 (deal structure)
+        - 663 gradient-absent family (638 membership now qualified)
+        - Type B 349 Sara Fischer Axios vocabulary bifurcation (coverage-side
+          companion)
+        - Mechanism 624 OpenAI India attribution blitz (sweep comparator)
+        - Mechanism 629 Anthropic 1.5B distribution fight (sweep comparator)
+        - Mechanism 630 News Corp x Google talks (sweep comparator)
+      novelty_verification:
+        - Zero mechanism_639 keys repo-wide pre-commit (grep verified; max
+          numeric mechanism id pre-commit 638)
+        - FIRST Sep 2026 status verification of the Axios leg with first-hand
+          primary-source read (openai.com announcement, 123 lines)
+        - FIRST formal correction to the 673 gradient-absent premise
+        - FIRST control-set removal of Axios documented as a mechanism
+        - Distinct from mechanism 478 (disclosure posture) and mechanism 53
+          (deal structure); this mechanism adds status verification plus the
+          673 correction
+      research_method: '6 browser.search query sets this run (Meta AI news
+        licensing Sep 2026 since 2026-08-15; OpenAI publisher licensing Sep
+        2026 since 2026-09-01; Google AI news publisher licensing Sep 2026
+        since 2026-09-01; Anthropic xAI Perplexity publisher deals Sep 2026
+        since 2026-09-01; Axios OpenAI local news expansion 2026 since
+        2026-01-01) plus 2 first-hand browser.open reads (LLM Pulse master
+        deal map updated Sep 7 2026, 249 lines; OpenAI Axios announcement,
+        123 lines). All URLs verbatim from Full-URL listings; no canonical
+        URLs constructed. Bounded absences per the iteration-492 rule (no new
+        Meta signings, no new OpenAI paid signings beyond India, no new
+        Google/Anthropic/xAI/Perplexity publisher deals in the searched
+        windows; none claimed as proof). Pre-commit greps: zero
+        test_type_c_674 files on disk (glob); no Type C 674 in git log (grep);
+        zero mechanism_639 keys repo-wide (grep); max numeric mechanism id
+        pre-commit 638. No em dashes; ASCII-only.'
+      source_urls:
+        - http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+        - https://www.editorandpublisher.com/stories/axios-openai-expand-partnership-to-scale-local-news,260008
+        - https://www.adweek.com/media/axios-local-openai-2026/
+        - https://www.cjr.org/feature/axios-wants-to-save-local-news-with-ai-jim-vandehei-tech-newsletters.php
+        - https://pressgazette.co.uk/newsletters/axios-local-newsletters-scale-cities-profit/
+        - https://llmpulse.ai/blog/ai-content-licensing-deals/
+        - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
+      caution: Status verification and premise correction only. The OpenAI to
+        Axios Layer-2 leg is verified active and expanding; it predicts a
+        softening incentive toward OpenAI, not newsroom capture (bounded by
+        continued adversarial Axios OpenAI coverage). The 673 Meta-vs-Apple
+        pair-level confounds are preserved; only the publication-level
+        no-gradient premise and the entity-neutral counterevidence are
+        superseded.
     mechanism_483_schibsted_openai_realtime_content_deal:
       mechanism_id: 483
       mechanism_name: Schibsted Media x OpenAI Real-Time Content Deal and Terms Opacity Mapping
