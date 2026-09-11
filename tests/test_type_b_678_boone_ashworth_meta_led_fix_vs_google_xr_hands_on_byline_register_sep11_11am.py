@@ -84,7 +84,7 @@ GOOGLE_URL = "https://www.wired.com/story/hands-on-with-all-of-google-new-upcomi
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "bac818b0aa3bbd91e0e2d2af60002bab127fc10f"
 
 
 def _careers():
