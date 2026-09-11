@@ -5448,6 +5448,87 @@ journalists:
     source_url: https://www.wired.com/author/lily-hay-newman/
     start: 2017-07
   name: Lily Hay Newman
+  mechanism_635_lily_hay_newman_meta_muse_trust_deficit_vs_apple_watch_listening_reassurance_sep08_sep09:
+    mechanism_id: 635
+    type: B
+    journalist: 'Lily Hay Newman'
+    publication: wired
+    iteration: 668
+    iteration_type: B
+    iteration_time: '2026-09-11 01:00 PDT'
+    discovery_date: '2026-09-11'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_668_lily_hay_newman_meta_muse_trust_deficit_vs_apple_watch_listening_reassurance_sep08_sep09
+    pattern: 'Same security-desk journalist, 23 hours apart: Meta agent launch framed through a trust deficit vs Apple Watch microphone features framed through adopted reassurance.'
+    meta_arm:
+      piece: 'WIRED Sep 8 2026 Meta Muse launch, byline Lily Hay Newman and Maxwell Zeff'
+      date: '2026-09-08'
+      byline: 'Lily Hay Newman, Maxwell Zeff'
+      register: launch_framed_through_trust_deficit
+      tone_illustrative: -0.30
+      evidence_quotes:
+        - 'Headline variant A (Muck Rack listing): Muse, Meta''s New Personal AI Agent, Needs You To Trust It'
+        - 'Headline variant B (verbatim reprint mirror): Meta Releases Muse, a Personal AI Agent With Privacy ''Built Into It'''
+        - 'Dek (verbatim reprint mirror): Designed to compete with OpenClaw and Instinct, the company says Muse can do everything from sell your car to book you a plane ticket.'
+        - 'Byline and timestamp (verbatim reprint mirror): By Lily Hay Newman, Maxwell Zeff Sep 8, 2026, 4:12 pm'
+      source_urls:
+        - 'https://technewstube.com/wired/1865498/meta-releases-muse-personal-ai-agent-privacy-built-into/'
+        - 'https://muckrack.com/lily-hay-newman/articles'
+      source_note: 'First-hand browser.open reads of the verbatim WIRED reprint mirror (renders WIRED byline, date, dek, headline verbatim); WIRED body text NOT first-hand (wired.com direct fetch policy-blocked per #653); Muck Rack listing verbatim. Evidence tier: headline and dek bounded, mirror-bounded characterization.'
+    apple_arm:
+      piece: 'WIRED Sep 9 2026 Apple Watch listening features, byline Lily Hay Newman solo'
+      date: '2026-09-09'
+      byline: 'Lily Hay Newman'
+      register: reassurance_adoption_with_skeptical_dek_caveat
+      tone_illustrative: 0.10
+      evidence_quotes:
+        - 'Headline (verbatim reprint mirror): Apple Doesn''t Want You to Worry About the New Apple Watch''s Listening Features'
+        - 'Dek (verbatim reprint mirror): The new Apple Watch includes several ''intelligent'' listening features that have privacy and security baked in. But the protections cannot change the facts of what the tools do.'
+        - 'Byline and timestamp (verbatim reprint mirror): By Lily Hay Newman Sep 9, 2026, 3:14 pm'
+        - 'Hardware detail (Muck Rack snippet): four opt-in ''audio intelligence'' tools that are powered by audio gathered by the watches'' microphones'
+        - 'Hardware detail (wired.jp edition snippet): Live Rewind surfaces the last 15 seconds of ambient conversation as text; Apple itself is wary that users may feel constantly listened to'
+      source_urls:
+        - 'https://technewstube.com/wired/1865899/apple-doesnt-to-worry-new-apple-watchs-listening/'
+      source_note: 'First-hand browser.open reads of the verbatim WIRED reprint mirror (renders WIRED byline, date, dek, headline verbatim); WIRED body text NOT first-hand (wired.com direct fetch policy-blocked per #653). Evidence tier: headline and dek bounded, mirror-bounded characterization.'
+    bound_arm_openai:
+      piece: 'WIRED Lily Hay Newman: OpenAI''s Hugging Face Hack Debrief Raises More Questions Than It Answers'
+      note: 'Same journalist runs adversarial on OpenAI, the $5-10M/yr Condé Nast deal partner, bounding any claim of deal-driven softness at the security desk.'
+      source_note: 'Title-bounded from the Muck Rack listing; body not opened this run.'
+    asymmetry_scorer:
+      meta_tone: -0.30
+      apple_tone: 0.10
+      illustrative_delta_apple_minus_meta: 0.4
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run; matches the #647 pin on the same Meta article for corpus consistency'
+      verdict: 'Gradient-absent register asymmetry in the #663 family: the same security-desk journalist frames Meta''s agent launch through a trust deficit and adopts Apple''s reassurance frame as a headline 23 hours later for microphone hardware. NOT a falsification-family member. NOT a pure asymmetry pin (headline-level gap with a skeptical dek caveat and strong news-peg confounds). Correlation only, not causation.'
+    confounders_ranked:
+      strong:
+        - 'News-peg asymmetry: the Meta arm covers a launch demanding email, calendar, payment, and health data access two weeks after the $18B settlement, so trust-skepticism is the legitimate news question; the Apple arm covers opt-in watch features with on-device processing claims, so reassurance is the natural frame.'
+        - 'Co-byline dilution: the Meta arm is co-written with Maxwell Zeff (AI-business reporter), so the trust-deficit headline register may be Zeff''s or a desk editor''s, not Newman''s alone; the Apple arm is solo Newman.'
+      moderate:
+        - 'Headline-level gap vs mixed dek: the Apple dek carries a real skeptical caveat (protections cannot change the facts of what the tools do), so the gap is headline-framing, not full-article inversion.'
+        - 'Beat-register norm: security-desk launch coverage of a data-hungry agent is structurally more adversarial than wearables feature coverage.'
+      weak:
+        - 'n=1 per arm: directional only, degenerate statistical contract.'
+        - 'WIRED headline A/B rotation: the trust-deficit variant may not be the only or final Meta headline.'
+    counterevidence:
+      - 'Newman''s OpenAI Hugging Face hack debrief runs adversarial on the $5-10M/yr deal partner: WIRED''s security desk does not go easy on deal partners.'
+      - 'The Apple headline itself borrows a skeptical frame (Apple telling readers not to worry) and the dek undercuts the reassurance: this may show privacy-beat consistency more than entity favoritism.'
+    financial_context: 'Condé Nast receives $5-10M/yr from OpenAI content licensing (May 2024 deal, ACTIVE per #599/#609); Apple is not a Condé Nast AI-licensing deal partner per the corpus (deals on record: OpenAI May 2024, Amazon Nov 2024, Microsoft Feb 2026, Perplexity Jan 2026). No one-sided financial gradient predicts a Meta-vs-Apple register gap here, so this pair is gradient-absent. The news-peg confound is stronger than any money story. Correlation, not causation.'
+    cross_references:
+      - '#647 Type A (WIRED publication-level Coxon vs Muse pair, mechanism 622, same Meta article): this run adds the same-journalist Apple comparator per the #648 Dave precedent for a new angle.'
+      - '#599 (Condé Nast OpenAI licensing deal provenance, ACTIVE).'
+      - '#663 (gradient-absent control-case family precedent: no one-sided money gradient, news-valence confound leads).'
+      - '#653 (register differentiation within constancy precedent; wired.com direct-fetch block precedent).'
+    research_method: 'First-hand evidence this run: browser.search (Newman Muck Rack profile, Zeff cross-checks), browser.open on the Muck Rack full listing, browser.open on both technewstube verbatim WIRED reprint mirrors rendering WIRED byline, date, dek, and headline verbatim. wired.com direct fetch policy-blocked. No canonical URLs constructed or invented. No zero-coverage claims. Evidence tier: headline and dek bounded, snippet and mirror bounded.'
+    novelty: 'FIRST dedicated Type B mechanism on Lily Hay Newman; mechanism_id 635 next free pre-commit (max 634); no test_type_b_668 files and no #668 commits pre-commit; Apple Watch listening piece new-to-corpus (zero repo-wide hits, grep verified).'
+    artifact_readiness: 'No analysis.json update warranted: illustrative register pair only, manual tones, no empirical significance.'
   notes: 'Wired''s senior security/privacy writer. Education: Johns Hopkins Univ (BA Writing + History of Science & Technology, editor-in-chief of Hopkins News-Letter), NYU SHERP 2013. Career: JHU → NYU SHERP → intern at Metro NY, Baltimore City Paper, Gizmodo → Slate/Future Tense (2014-2017) → Wired (2017-present). ~9 years at Wired as of 2026, making her one of the security desk''s longest-serving current staff alongside Andy Greenberg. 2026 National Magazine Award finalist (Service Journalism) with Andy Greenberg for government surveillance article. ANALYTICAL VALUE: Newman''s Slate/Future Tense background (Slate + New America Foundation + Arizona State University) means she entered Wired from a think-tank-adjacent environment focused on technology''s societal implications  -  a more advocacy-oriented pipeline than typical journalism-to-journalism moves. Her beat overlaps with Matt Burgess (Wired UK) but from US lens, enabling cross-continental editorial comparison within the same desk.
     Hosts Wired video "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior Editor, Security & Investigations).'
   multi_publication: true
