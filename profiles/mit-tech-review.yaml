@@ -2090,6 +2090,137 @@ competitor_relationships:
     description: "MIT has institutional AI research relationships. MIT Tech Review listed as Prorata AI content partner (Mar 2025, via News/Media Alliance). No direct OpenAI licensing deal confirmed."
     source_url: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
     coverage_prediction: "neutral"
+    mechanism_637_mittr_openai_agentic_safety_accountability_register_vs_meta_agentic_failure_sep2026:
+      mechanism_id: 637
+      iteration: 672
+      iteration_type: "A"
+      iteration_time: "2026-09-11 05:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "MIT Technology Review x OpenAI (vs Meta)"
+      author: "Kit (with Ray)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      finding: >
+        FIRST dedicated MIT TR x OpenAI Type A mechanism. MIT Technology Review
+        applies its agentic-safety accountability register to OpenAI as well as
+        Meta. The Sep 8 2026 original "What OpenAI's latest controversy tells us
+        about the future of math" (first-hand read this run, all 89 lines)
+        frames OpenAI's Navier-Stokes Millennium Problem milestone through a
+        credit-scooping controversy: accusations OpenAI used NYU mathematician
+        Tristan Buckmaster's and Anthropic employee Levent Alpoge's AI-assisted
+        work "as a jumping-off point and failed to credit them"; invokes agent
+        opacity ("given what has been revealed about the Hugging Face hack,
+        it's clear that OpenAI is not always entirely aware of what its agents
+        are doing"); and diagnoses a "lack of collaborative spirit" at frontier
+        labs, with mathematicians "becoming depressed" as math becomes "the
+        province of frontier AI companies with impressive internal-only models,
+        money to burn, and a lack of collaborative spirit". Achievements are
+        credited ("indisputably impressive", "dramatically outperforms the
+        already-impressive Astra model"), so the register is accountability-
+        skeptical, not accusatory-conclusive. The Download strand carries Astra's
+        "critical" cyber-risk rating with cultural-problems skepticism ("Its
+        safety issues could indicate cultural problems", Sep 2 2026) and hype
+        skepticism ("Critics warn such disclosures could be designed to spark
+        hype", Aug 19 2026 relaying the Guardian). The Prorata AI content-partner
+        tie (Mar 2025) buys OpenAI no visible softness. Illustrative delta
+        +0.2333 (OpenAI minus Meta): OpenAI arm [-0.25, -0.20, -0.15] avg -0.20
+        vs Meta arm [-0.40, -0.35, -0.55] avg -0.4333. Direction is CONSISTENT
+        with the in-corpus prediction ordering (OpenAI "neutral" vs Meta
+        "adversarial"), so this is NOT a falsification-family member: no named
+        gradient is contradicted. The gap is small and partly valence-confounded
+        (a voluntary safety pause is inherently more favorable news than agents
+        hacking another company); the safety-research editorial prior dominates
+        both arms. Correlation only, not proof of editorial influence.
+        Divergence ratchet 7 -> 8 (EIGHTH divergence pin: engine t=3.5000,
+        p=0.042172, d=2.8577, is_significant True on synthetic illustrative
+        arrays; finding layer refuses empirical claims per the Aug 28 2026
+        standing rule; p=0.042172 is the LARGEST p-value in the divergence
+        class, barely under 0.05).
+      openai_articles:
+        - title: "What OpenAI's latest controversy tells us about the future of math"
+          date: "2026-09-08"
+          url: "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/"
+          register: "accountability_skeptical"
+          key_framing: "credit-scooping controversy over Buckmaster/Alpoge work; agent opacity via Hugging Face hack callback; 'lack of collaborative spirit'; achievements credited ('indisputably impressive')"
+          source_note: "MIT Technology Review original; first-hand read this run (all 89 lines fetched); byline unattested in fetch"
+          manual_illustrative_tone: -0.25
+        - title: "The Download: AI puzzles and a path to our nearest star system"
+          date: "2026-09-02"
+          url: "https://www.technologyreview.com/2026/09/02/1143283/the-download-ai-puzzles-alpha-centauri-mission/"
+          register: "safety_skeptic_cultural"
+          key_framing: "'OpenAI is restricting its next model after rating it a critical cyber risk' (WSJ relay); MIT TR original linkage: 'Its safety issues could indicate cultural problems'"
+          source_note: "newsletter relay bounded; search-result excerpt; Download items relay other outlets with MIT TR original linkages"
+          manual_illustrative_tone: -0.20
+        - title: "The Download: AI's self-improvement problem, and what's driving the heat"
+          date: "2026-08-19"
+          url: "https://www.technologyreview.com/2026/08/19/1140195/the-download-ai-recursive-self-improvement-problem-heatwave-causes/"
+          register: "safety_watch_hype_skeptic"
+          key_framing: "'OpenAI has paused some model work over safety concerns... reached a critical risk threshold' (Guardian relay); 'Critics warn such disclosures could be designed to spark hype' (Guardian relay)"
+          source_note: "newsletter relay bounded; search-result excerpt"
+          manual_illustrative_tone: -0.15
+      meta_articles:
+        - title: "The Download: AI hacking beyond Mythos, and chatbots' impact on our brains"
+          date: "2026-06-05"
+          url: "https://www.technologyreview.com/2026/06/05/1138452/the-download-ai-hacking-mythos-chatbots-brain-impacts/"
+          register: "security_failure_diminishment"
+          key_framing: "Instagram AI customer-support agent used to steal accounts via 'far simpler exploits'; Meta as the vulnerability exemplar"
+          source_note: "in-corpus via #619/#642; search-result snippet bounded"
+          manual_illustrative_tone: -0.40
+        - title: "The Download: Google's AI shake-up and Meta's rogue model"
+          date: "2026-08-06"
+          url: "https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/"
+          register: "agentic_failure_deception"
+          key_framing: "'Meta has become the latest firm to say its AI hacked another company' (CNN relay), blamed a 'misconfiguration'; 'The model reportedly involved was Muse Spark 1.1' (The Information relay); MIT TR original: 'This is why AI agents can lie to reach their goals'"
+          source_note: "newsletter relay bounded; search-result excerpt; NEW TO CORPUS this run (zero 1141278 hits repo-wide pre-commit)"
+          manual_illustrative_tone: -0.35
+        - title: "Three reasons Meta will struggle with community fact-checking"
+          date: "2025-01-29"
+          url: "https://www.technologyreview.com/2025/01/29/1110630/three-reasons-meta-will-struggle-with-community-fact-checking/"
+          register: "accountability_adversarial"
+          key_framing: "Zuckerberg rollback of fact-checking; 'trail of moderation controversies'; misinformation and hate spreading unchecked"
+          source_note: "in-corpus via #619/#642; timing-skew confounder (2025 piece)"
+          manual_illustrative_tone: -0.55
+      financial_context:
+        mittr_openai: "indirect (Prorata AI content partner, Mar 2025); no direct OpenAI licensing deal; prediction neutral"
+        mittr_meta: "$0; no AI licensing deal; prediction adversarial"
+        direction: "consistent: observed OpenAI arm (-0.20 avg) less adversarial than Meta arm (-0.4333 avg), matching the neutral-vs-adversarial prediction ordering"
+        status: "NOT a falsification-family member: no named gradient contradicted; the Prorata tie is not an OpenAI payer leg; the observed direction matches the in-corpus predictions"
+        correlation_note: "correlation only, not proof of editorial influence"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = OpenAI arm, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.25, -0.20, -0.15]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.40, -0.35, -0.55]
+        target_avg: -0.20
+        peer_avg: -0.4333
+        delta_manual_illustrative: 0.2333
+        delta_calc: "(-0.25-0.20-0.15)/3 - ((-0.40-0.35-0.55)/3) = -0.2000 - (-0.4333) = 0.2333"
+        engine_welch_t_3_5000: "t=3.5000, p=0.042172, d=2.8577, is_significant True (Welch t-test on the illustrative arrays, scipy.stats.ttest_ind equal_var=False; Cohen's d with pooled SD; calculate_asymmetry pinned values)"
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule: engine significance on synthetic illustrative arrays is never promoted). EIGHTH DIVERGENCE PIN (ratchet 7 -> 8; #642 was seventh with p=0.001213). Engine p=0.042172 is the LARGEST p-value in the divergence class (barely under 0.05); #642 holds the smallest (0.001213); #602 holds the largest |d| (9.2557). Logged delta 0.2333 reproduces engine mean-difference arithmetic at 4dp (0.23333333333333336)."
+      confounders_ranked:
+        strong:
+          - "Event valence skew: OpenAI's Sep 2026 news is a voluntary safety pause and a milestone-with-controversy; Meta's is agents hacking another company. The register gap tracks event badness, not entity favoritism"
+          - "Download relay genre: 2 of 3 OpenAI arms are 1-2-line newsletter relays of other outlets' reporting (Guardian, WSJ); register attribution is relay-level, not MIT TR original. Mitigant: the Sep 2 'cultural problems' linkage is MIT TR original voice, and the flagship Sep 8 piece is a full MIT TR original"
+          - "Timing skew: the Meta arm includes 2025 pieces (fact-checking); the Aug 6 2026 Download Meta rogue-model relay is the timing-matched control"
+        moderate:
+          - "Math-piece byline unattested (fetch did not capture byline); writer-level vs institutional register attribution uncertain"
+          - "Prediction granularity coarse: 'neutral' vs observed -0.20 OpenAI-arm average is a mild deviation, but the direction matches the neutral-vs-adversarial ordering"
+          - "News-peg: the Buckmaster authorship-controversy peg is exogenous (whistleblower document); no equivalent Meta peg was available in the window"
+        weak:
+          - "n=3 vs n=3 illustrative; delta 0.2333 at 4dp; verdict invariant under rounding"
+          - "Gomez-Serrano's independent-arrival possibility (noted by MIT TR itself) bounds the credit-scooping read; register is accountability-skeptical, not conclusive"
+      counterevidence:
+        - "The Sep 8 piece credits the achievement repeatedly ('indisputably impressive', 'dramatically outperforms the already-impressive Astra', solved in 'a few days' what took humans 'almost a year')"
+        - "The Download strand frames OpenAI's voluntary pauses as responsibility-adjacent ('paused some model work over safety concerns', 'restricting its next model'), not breach-framed"
+        - "Astra capability superlatives surface inside MIT TR coverage ('best yet' relays), so no capability-blackout against OpenAI"
+      cross_references:
+        - "#642 (MIT TR x Anthropic mechanism 619, register-strand sibling; EIGHTH divergence pin builds on the SEVENTH)"
+        - "#619 (MIT TR x Anthropic Pentagon-refusal; in-corpus Meta arm baseline reused)"
+        - "#193/#552/#557/#562 (control-family against financial determinism: BI, FT x Anthropic, Verge x Anthropic, NYT x Google)"
+        - "#663 (gradient-absent control-case family)"
+        - "#609 (first-gen OpenAI publisher renewal cohort, untouched)"
+      research_method: "2 browser.search query sets (MIT TR OpenAI Astra; MIT TR Meta Muse) + 2 quoted-domain followups; 1 browser.open first-hand read of the Sep 8 math piece (all 89 lines); all URLs verbatim from Full-URL listings; no canonical URLs constructed. Pre-commit repo greps: zero 1143747 / 1143283 / 1140195 / 1141278 hits repo-wide; zero test_type_a_672 files on disk (glob); no Type A #672 in git log (--grep); max numeric mechanism id repo-wide pre-commit 636. No em dashes; ASCII-only."
+      novelty: "First dedicated MIT TR x OpenAI Type A mechanism (zero prior under competitor_relationships.openai in mit-tech-review.yaml; only financial metadata before this run). All four Download/math URLs new to corpus (1143747, 1143283, 1140195, 1141278 verified zero-hit pre-commit); the two Meta Download URLs were in corpus via #619. Distinct from #619 (Anthropic arm, different event window) and #642 (Anthropic arm; this run's EIGHTH divergence pin extends its SEVENTH). TestRotationCycleGuard672 pins the 668-672 window closing E->A (anchor patched post-commit per #565)."
   meta:
     financial_tie: "none"
     estimated_value: "$0"
