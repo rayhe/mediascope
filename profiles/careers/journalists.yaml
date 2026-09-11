@@ -15804,6 +15804,78 @@ journalists:
   source_urls:
   - https://www.wsj.com/news/author/meghan-bobrowsky
   - https://muckrack.com/meghan-bobrowsky
+  mechanism_632_woo_bobrowsky_ai_researcher_departure_register_meta_desperation_vs_google_homecoming_aug29_sep09:
+    mechanism_id: 632
+    iteration: 663
+    date: '2026-09-10 20:00 PDT'
+    type: B
+    scheduled_job_id: 'mediascope-daily-iteration'
+    job_id: 'mediascope-daily-iteration'
+    goal_id: 'goal_54093bda4145'
+    design: 'Type B journalist cross-entity tracking, same WSJ byline pair (Erin Woo + Meghan Bobrowsky) on two AI-researcher job-move stories about two weeks apart, different subject entities (Meta vs Google). The Meta departure piece runs a desperation register; the Google arrival piece runs a homecoming register with a named company spokesman quoted warmly near the top. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+    meta_arm:
+      piece: 'Star AI Researcher Is Leaving Meta for Anthropic (WSJ, Erin Woo and Meghan Bobrowsky, 2026-09-09)'
+      date: '2026-09-09'
+      register: 'departure_as_desperation'
+      tone_illustrative: -0.40
+      evidence_quotes:
+      - 'capped a frantic recruiting spree last summer, when Meta threw money at researchers to try to catch up in the race to build artificial intelligence'
+      - 'The company has been fighting to get back in the AI race'
+      - 'released competitive models and a dirt-cheap coding agent in recent months'
+      - 'Meta declined to comment on his exit'
+      - 'His departure adds to a string of high-profile defections among AI researchers'
+      source_urls:
+      - 'https://www.wsj.com/tech/ai/star-ai-researcher-is-leaving-meta-8906e4aa'
+      source_note: 'First-hand: full text opened via browser.open this run (wsj.com rendered). Date bounded: the piece states Tulloch announced his exit a day after Meta launched its Muse AI agent on Sep 8 2026, pinning publication to about Sep 9 2026. Byline verified in the piece footer: Write to Erin Woo at erin.woo@wsj.com and Meghan Bobrowsky at meghan.bobrowsky@wsj.com.'
+    google_arm:
+      piece: 'Thinking Machines Lab Co-Founder Barret Zoph Joins Google (WSJ, Erin Woo and Meghan Bobrowsky, 2026-08-29)'
+      date: '2026-08-29'
+      register: 'arrival_as_homecoming'
+      tone_illustrative: 0.15
+      evidence_quotes:
+      - 'We look forward to Barret returning to Google and bringing his RL and post-training expertise to Gemini (Google spokesman Thomas Schoenfelder)'
+      - 'Zoph, who served as chief technology officer at the startup and led a push to sell artificial-intelligence products to businesses at OpenAI, is joining Alphabet''s Google as a vice president of research, the company said'
+      - 'Google is seeking to catch up to Anthropic and OpenAI in developing AI that can create code, to date the most lucrative application for the technology'
+      - 'Zoph''s arrival at Google comes as the company has been restructuring its AI development efforts, and follows a string of departures by high-profile AI researchers'
+      source_urls:
+      - 'https://www.wsj.com/tech/ai/thinking-machines-lab-co-founder-barret-zoph-joins-google-49f594e6'
+      source_note: 'First-hand: full text opened via browser.open this run (wsj.com rendered). Date bounded: the piece carries a Corrections and Amplifications stamp dated Aug 29 2026, pinning publication to about Aug 28-29 2026. Byline verified in the piece footer: Write to Erin Woo at erin.woo@wsj.com and Meghan Bobrowsky at meghan.bobrowsky@wsj.com.'
+    asymmetry_scorer:
+      meta_tone: -0.40
+      google_tone: 0.15
+      illustrative_delta_google_minus_meta: 0.55
+      scoring: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      statistical_contract: 'degenerate_n1_per_arm'
+      verdict: 'Gradient-absent but valence-confounded register asymmetry. Same WSJ byline pair, same story type (AI-researcher job moves), about two weeks apart: Meta''s departure gets the desperation register (frantic, threw money, fighting to get back, dirt-cheap), Google''s arrival gets the homecoming register (welcoming spokesman quote, respectful credential framing, catch-up confined to one clause). No one-sided money gradient exists at WSJ to explain the gap (corpus: News Corp balanced at $50M/yr Meta + $50M/yr OpenAI), so this pair functions as a gradient-absent control case. The STRONG news-valence confound (a departure story is inherently more negative than an arrival story) is the leading alternative explanation and bounds the entity-bias reading. NOT a falsification-family member (no one-sided financial predictor exists here to test). NOT a pure asymmetry pin. Correlation only, not causation. NOT a causal claim about editorial influence.'
+    confounders_ranked:
+      strong:
+      - 'News-valence asymmetry: a star-departure story is inherently more negative than a star-arrival story. The register gap may track the news event (leaving vs joining), not the entity. This is the leading alternative explanation.'
+      - 'The $1B-plus pay package is objectively newsworthy excess: Meta offered Tulloch up to $1.5B per the Journal''s prior reporting, so the threw-money framing tracks documented facts rather than pure editorial color.'
+      moderate:
+      - 'Zoph-Murati firing drama crowded out Google-framing space: the piece''s negative energy went to the interpersonal dispute (firing, undisclosed relationship, reduced responsibilities), leaving less room for Google-directed scrutiny.'
+      - 'Headline register may be editor-written: the alarm headline (Star AI Researcher Is Leaving Meta for Anthropic) and the neutral arrival headline could reflect WSJ headline-desk choices, not the byline pair''s own framing. Body-register evidence is first-hand this run.'
+      weak:
+      - 'n=1 per arm (degenerate_n1_per_arm contract): a single about-two-week-apart pair cannot establish a writer-level pattern. Directional, not dispositive.'
+      - 'Spokesperson availability: Meta declined to comment (possibly a genuine non-response), while Google supplied Schoenfelder. The warm-quote asymmetry may partly reflect source cooperation, not editorial choice.'
+    counterevidence:
+    - 'The Google piece lists Google''s own departures: Hassabis stepped aside, Jeff Dean left with three senior researchers, Noam Shazeer left for OpenAI, John Jumper left for Anthropic. Not a purely positive piece.'
+    - 'The Meta piece credits Meta with competitive models, a positive product fact, even inside the desperation register.'
+    - 'Both pieces note cross-movement symmetrically: the Google piece reports Luke Metz joining Meta; the Meta piece reports Zoph joining Google. The byline pair shows awareness of the symmetric talent flow.'
+    - 'No money gradient at WSJ (balanced $50M Meta + $50M OpenAI per corpus): the register gap appears without a one-sided financial predictor, consistent with #662''s boundary finding that money does not buy the softest register.'
+    financial_context: 'News Corp balanced financial ties: $50M/yr Meta + $50M/yr OpenAI (in-corpus per #337). No one-sided gradient exists, so this pair is a gradient-absent control case: the register gap cannot be read as money buying tone. The news-valence confound (departure vs arrival) is the stronger explanation for this pair. Correlation, not causation: no evidence links the byline pair''s register choices to any payment stack.'
+    cross_references:
+    - '#371 (Kylie Robison WIRED talent-war direction framing, mechanism 371; different journalist, different publication, different pieces; this run is the first WSJ byline-pair treatment of the researcher job-move beat)'
+    - '#662 (News Corp WSJ Apple Duo launch, mechanism 631; same publication; Bobrowsky carried as a Meta comparator arm there)'
+    - '#337 (Bobrowsky settlement-week vocabulary bifurcation; same journalist, accountability-vocabulary angle, not the job-move beat)'
+    - '#49 (Bobrowsky smart-glasses entity targeting; same journalist, hardware-privacy angle, not the job-move beat)'
+    block_key: 'type_b_663_woo_bobrowsky_ai_researcher_departure_register_meta_desperation_vs_google_homecoming_aug29_sep09'
+    research_method: 'browser.search query sets this run: (1) Meghan Bobrowsky WSJ September 2026 (surfaced her Muck Rack author page with both target pieces listed); (2) browser.open on the Muck Rack page (full 299-line listing viewed); (3) browser.open on both canonical wsj.com URLs verbatim from the Muck Rack outlinks (full text rendered first-hand, both bylines verified in footers). A prior run''s research-method note (journalists.yaml line 17947) shows Ina Fried/Axios was policy-blocked and Amanda Silberling was taken by #643, so the Bobrowsky pair was selected as the novel Type B. No canonical URLs constructed; no zero-coverage claims. No em dashes.'
+    artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; mechanism is directional. Journalist-level pin, not publication-level.'
+    novelty: 'FIRST dedicated Type B mechanism on the Woo+Bobrowsky byline pair (mechanism_id 632, next free; max pre-commit 631). Both WSJ URLs new-to-corpus (zero mechanism references pre-commit, git-grep verified). Distinct from #371 (Kylie Robison, WIRED, different pieces) and from Bobrowsky mechanisms #49/#155/#337 (smart-glasses and settlement angles). Same byline pair on mirrored researcher job-move stories is a first for the corpus.'
 - career:
   - beat: government technology, surveillance, privacy, police tech
     end: '2024'
