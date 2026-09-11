@@ -69,7 +69,7 @@ THEWRAP_URL = "https://www.thewrap.com/media-platforms/journalism/nyt-ai-compani
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "9e39f09"
 
 
 def _entities():
