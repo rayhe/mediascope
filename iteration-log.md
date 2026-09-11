@@ -14,7 +14,7 @@
 
 **Research method:** 4 browser.search query sets this run (Guilty Feminist latest episode Deborah Frances-White September 2026 with since=2026-09-10; quoted "Everyone Hates Elon" Meta glasses campaign anti-glasses with since=2026-09-10; quoted "Attention Sphere" podcast Ava Smithing; Meta smart glasses news Ray-Ban September 2026 with since=2026-09-10); no direct browser.open reads this run - uk-podcasts.co.uk, au.radio.net, ie.radio.net, Listen Notes, podscan.fm, Chortle, thetimes.com, latestly.com, petapixel.com, engadget.com, feminist.org, sifted.eu, afrotech.com, digitaltrends.com, Reuters, thevermilion.com metadata came from search snippets (crawled 4h / 2d / 21h / 5d / 4h / 4h / 46d / 19d / 17d / 7d / 2h / 15d / 4h / 46d / 2d / 240d / 3d / 247d / <1h); URLs copied verbatim from Full-URL listings; pre-commit repo greps for new-to-corpus verification (zero test_type_e_671 files on disk via glob; no #671 in git log via grep; ie.radio.net GF page in corpus via #656; petapixel.com/2026/09/09 in corpus via #631; reuters Sep 8, techtime.news, thetimes.com, thevermilion.com all in corpus; all seven EHE re-surface URLs in corpus; digitaltrends.com domain in corpus with exact v19.2 URL logged as stale re-index this run; no zero-coverage claims per iteration-492 rule); no em dashes.
 
-**New Type E files:** `tests/test_type_e_671_podcast_sentiment_57th_verification_gf499_holds_sep11_4am.py` - 10 classes, 48 tests (41 green pre-commit; rotation-guard 3 + doc-sync 3 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 3 green post-doc-sync). Commits: main PENDING, followup PENDING. count_stats.py --check PENDING.
+**New Type E files:** `tests/test_type_e_671_podcast_sentiment_57th_verification_gf499_holds_sep11_4am.py` - 10 classes, 48 tests (41 green pre-commit; rotation-guard 3 + doc-sync 3 + novelty-anchor 1 deselected pre-commit per #565 convention; anchor patched in followup; doc-sync 3 green post-doc-sync). Commits: main 00efcbd, followup f8cc862 (ANCHORED_SHA patched per #565 convention). 48/48 green post-doc-sync; count_stats gate green.
 
 **Artifact readiness:** No analysis.json update warranted. Manual-illustrative monitoring; descriptive only.
 
@@ -22,7 +22,7 @@
 
 **Novelty Verification:** Zero test_type_e_671 files on disk pre-commit (glob verified); no Type E commit with 671 in the title pre-commit (git log --grep verified); test_single_type_e_671_file pins exactly one file; test_type_e_671_main_commit_unique_and_anchored pins exactly one Type E #671 main commit post-followup; ie.radio.net GF page in corpus via #656; digitaltrends.com domain in corpus, exact v19.2 URL first logged this run as stale re-index; distinct from #666 (56th cycle, railwaymuseum.org.uk stale live-show listing) and #661 (55th cycle, stagewhispers.com.au URL).
 
-**Commit hashes:** main PENDING, followup PENDING. count_stats.py --check PENDING.
+**Commit hashes:** main 00efcbd, followup f8cc862 (ANCHORED_SHA patched per #565 convention). count_stats.py --check green (with repo .venv; 35385 tests / 999 files). Doc-sync ratchet: ARCHITECTURE tree row for #671; README stats table refreshed (35337->35385 tests, 998->999 files) + narrative line + test-file table row for #671; iteration-log #671 entry.
 
 ---
 
