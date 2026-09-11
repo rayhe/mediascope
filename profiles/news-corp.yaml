@@ -933,6 +933,214 @@ competitor_relationships:
         - "Mechanism #205 (Apple camera wearable LED double standard)"
       test_file: test_wsj_apple_camera_airpods_leak_coverage_selection_silence_aug21.py
       test_count: 22
+    wsj_apple_duo_launch_register_vs_payer_arms_sep10:
+        mechanism_id: 631
+        mechanism_name: 'WSJ x Apple Duo Launch Celebration Register vs Meta/OpenAI/Microsoft Licensing-Payer Arms - Zero-Deal Entity Softest, Launch-Genre Boundary Falsification'
+        iteration: 662
+        iteration_type: 'A'
+        date: '2026-09-10'
+        iteration_time: '2026-09-10 19:00 PDT'
+        goal_id: 'goal_54093bda4145'
+        scheduled_job_id: 'mediascope-daily-iteration'
+        pair: 'News Corp (WSJ) x Apple Duo launch register vs Meta/OpenAI/Microsoft payer comparator arms'
+        author: 'Kit (with Ray)'
+        summary: >
+          Triple-payer comparison inside one publication week: the WSJ's Sep 9 2026
+          Apple foldable-iPhone-Duo launch piece carries a celebration register
+          (+0.45 MANUAL ILLUSTRATIVE, excerpt-bounded) that is as soft as, marginally
+          softer than, the same-week WSJ Meta Muse launch register (+0.35 avg: Bobrowsky
+          +0.40 aspirational launch feature Sep 8, Mizuho Market Talk roundup +0.30 Sep 9,
+          carried from #632/m613), and well softer than the WSJ OpenAI arms (-0.225 avg:
+          Tumbler Ridge liability watchdog -0.55, copyright news +0.10, carried from
+          #637/m616) and the WSJ Microsoft arms (-0.35 avg: reporting-structure straight
+          report 0.00 Sep 2, Heard black-box analysis -0.70 Sep 3, carried from #632/m613).
+          Illustrative delta (Apple minus Meta) +0.10; four-arm ledger orders
+          Apple +0.45 > Meta +0.35 > OpenAI -0.225 > Microsoft -0.35. Apple has NO News Corp
+          AI licensing deal on record ($0 in the AI-licensing dimension; bounded absence
+          per #659, Thomson Oct 21 2025 'partnerships with OpenAI/Apple' quote ambiguous),
+          against OpenAI $50M/yr (May 22 2024 $250M/5yr, re-confirmed #654), Meta up to
+          $50M/yr (Dow Jones news leg, Mar 2026, #549), and Microsoft via the HarperCollins
+          book leg (#524). The named licensing-payer softer-prediction is contradicted on
+          the matched-launch-genre boundary: the zero-deal entity gets the softest register.
+          TWELFTH falsification-family member (after #625's eleventh; #632 and #637 were
+          partial members only). STRONG genre/event confounds bound the claim; correlation
+          only, not causation; no empirical-significance claim.
+        research_method: >
+          browser.search verbatim-excerpt evidence (Sep 11 2026 UTC): WSJ Duo article URL
+          and title surfaced in the search Full-URLs listing verbatim; 6+ excerpt surfaces
+          characterize the register. browser.open to wsj.com was BLOCKED BY POLICY this run
+          (per developer instruction, terminal for this turn; not a paywall claim), so no
+          first-hand WSJ read and no byline attestation. Meta/OpenAI/Microsoft arms are
+          carried with their #632/#637 evidence tiers intact (first-hand browser.open reads
+          for Bobrowsky Sep 8, Microsoft Sep 2-3, Tumbler Ridge; snippet-bounded for the
+          Mizuho roundup and copyright piece). Reuters exact-URL pieces (Sep 9 launch,
+          Sep 10 $1999-question, Aug 26 preview) corroborate event facts only, not WSJ
+          register. No canonical URLs invented; no zero-coverage claims (iteration-492 rule).
+        apple_article:
+          title: 'Apple Debuts New Foldable iPhone Duo, New CEO and New (Higher) Prices'
+          date: '2026-09-09'
+          byline: 'unattested - wsj.com first-hand fetch blocked by policy this run'
+          url: 'https://www.wsj.com/tech/apple-to-debut-new-foldable-iphone-new-ceo-and-new-prices-b2485b9f'
+          register: 'launch_celebration_with_price_scrutiny'
+          manual_illustrative_tone: 0.45
+          evidence_tier: 'excerpt_bounded'
+          framing: >
+            Search-excerpt register: 'the most consequential product event in years',
+            'a truly new iPhone', 'hopes consumers focus on the foldable and new CEO
+            rather than higher prices', 'the Duo is the most significant Apple device
+            in a decade', 'Ternus may spark a new wave of innovation', 'Ternus smiled
+            broadly'. The celebration is moderated by a consumer-harm price thread:
+            headline carries 'New (Higher) Prices'; 'the bad news for consumers was
+            that Apple increased iPhone prices... to protect its profit margins'.
+            Celebration-dominant, scrutiny-moderated. MANUAL ILLUSTRATIVE; do not
+            claim empirical significance.
+          price_thread_quotes:
+            - 'New (Higher) Prices (headline)'
+            - 'The bad news for consumers was that Apple increased iPhone prices across the lineup... to protect its profit margins'
+            - 'hopes consumers focus on the foldable and new CEO rather than higher prices'
+          corroborating_event_urls:
+            - 'https://www.reuters.com/business/retail-consumer/apple-expected-unveil-first-folding-phone-with-new-ceo-ternus-command-2026-09-09/'
+            - 'https://www.reuters.com/business/retail-consumer/apples-foldable-iphone-poses-1999-question-who-is-it-2026-09-10/'
+            - 'https://www.reuters.com/technology/apple-sets-sept-9-date-next-iphone-launch-event-2026-08-26/'
+          canonical_url_note: 'URL verbatim from browser.search Full-URLs listing; not constructed. URL slug encodes a pre-event headline variant (apple-to-debut-new-foldable-iphone), standard WSJ slug-freeze behavior, not evidence against authenticity.'
+        meta_comparator_arm:
+          carried_from: '#632 / mechanism 613'
+          articles:
+            - title: 'Meta Launches a Personal AI Agent Designed to Be Easy to Use'
+              date: '2026-09-08'
+              byline: 'Meghan Bobrowsky'
+              url: 'https://www.wsj.com/tech/ai/meta-launches-a-personal-ai-agent-designed-to-be-easy-to-use-3eb5cfac'
+              register: 'aspirational_product_launch'
+              manual_illustrative_tone: 0.40
+              evidence_tier: 'first_hand_browser_open_sep09'
+            - title: 'Tech, Media and Telecom Roundup: Market Talk (Muse/Mizuho note)'
+              date: '2026-09-09'
+              url: 'https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-1307ac74'
+              register: 'positive_market_roundup'
+              manual_illustrative_tone: 0.30
+              evidence_tier: 'snippet_bounded_search_metadata_sep09'
+          avg_tone_manual_illustrative: 0.35
+        openai_comparator_arm:
+          carried_from: '#637 / mechanism 616'
+          articles:
+            - title: 'OpenAI Tumbler Ridge liability piece'
+              register: 'adversarial_liability_watchdog'
+              manual_illustrative_tone: -0.55
+              evidence_tier: 'first_hand_browser_open_sep09'
+            - title: 'OpenAI copyright piece'
+              register: 'straight_news'
+              manual_illustrative_tone: 0.10
+              evidence_tier: 'snippet_bounded_search_metadata_sep09'
+          avg_tone_manual_illustrative: -0.225
+        microsoft_comparator_arm:
+          carried_from: '#632 / mechanism 613'
+          articles:
+            - title: 'Microsoft to Change Reporting Structure to Reflect Effects of AI'
+              date: '2026-09-02'
+              url: 'https://www.wsj.com/tech/ai/microsoft-to-change-reporting-structure-to-reflect-effects-of-ai-59dce66d'
+              register: 'neutral_straight_report'
+              manual_illustrative_tone: 0.00
+              evidence_tier: 'first_hand_browser_open_sep09'
+            - title: 'Flash Heard: Microsoft Unveils a New Black Box for Investors'
+              date: '2026-09-03'
+              register: 'adversarial_disclosure_analysis'
+              manual_illustrative_tone: -0.70
+              evidence_tier: 'first_hand_browser_open_sep09'
+          avg_tone_manual_illustrative: -0.35
+        asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+          target_entity: 'apple'
+          peer_entities: ['meta', 'openai', 'microsoft']
+          target_scores_MANUAL_ILLUSTRATIVE: [0.45]
+          meta_peer_scores_MANUAL_ILLUSTRATIVE: [0.40, 0.30]
+          openai_peer_scores_MANUAL_ILLUSTRATIVE: [-0.55, 0.10]
+          microsoft_peer_scores_MANUAL_ILLUSTRATIVE: [0.00, -0.70]
+          delta_manual_illustrative: 0.10
+          target_avg: 0.45
+          meta_peer_avg: 0.35
+          openai_peer_avg: -0.225
+          microsoft_peer_avg: -0.35
+          four_arm_ledger: 'apple +0.45 > meta +0.35 > openai -0.225 > microsoft -0.35'
+          delta_note: 'Apple avg 0.45 minus Meta avg 0.35 equals 0.10. The zero-deal entity is covered marginally softer than the up-to-$50M/yr licensing payer in the matched launch genre.'
+          p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+          is_significant: false
+          significant_empirical: false
+          cohens_d: 'not_calculated - illustrative only'
+          ci_95: ['not_calculated', 'not_calculated']
+          engine_degenerate: 'n=1 vs n=2 per arm; p=1.0, d=0.0 degenerate contract per #638/#643; engine NOT run; no divergence pin'
+          finding_layer: 'NOT_CALCULATED; is_significant False; no empirical-significance claim'
+          methodology: 'MANUAL ILLUSTRATIVE synthetic tone scores from excerpt-bounded framing analysis (Apple arm) plus carried #632/#637 arms. Illustrative only. Requires observed WSJ corpus plus Welch t-test plus Cohen d plus bootstrap CI for empirical validation. DO NOT claim empirical significance from synthetic scores.'
+        financial_context:
+          predictor: 'licensing_payer_softer'
+          prediction: 'News Corp AI-licensing payers covered softer than zero-deal entities'
+          chain: >
+            OpenAI: $250M/5yr ($50M/yr) May 22 2024 content-licensing deal, ACTIVE per
+            #654 with Thomson Q4 FY2026 affirmative confirmation ('trusted content
+            relationships with OpenAI and Meta', Aug 5 2026). Meta: up to $50M/yr Dow
+            Jones news leg, Mar 2026 (#549). Microsoft: HarperCollins book-licensing leg,
+            Nov 2024, $5K per title 50/50 split, 3-year term (#524). Apple: $0 AI-licensing
+            on record; bounded absence per #659; Thomson Oct 21 2025 described 'partnership
+            with Google' plus 'significant partnerships with OpenAI/Apple' (quote ambiguous,
+            most plausibly existing commercial/product ties, not AI licensing). WSJ also
+            rides Apple News+ distribution revenue (entity-level tie), orthogonal to the
+            AI-licensing gradient tested here.
+          status: >
+            CONTRADICTED on the matched-launch-genre boundary: the $0 entity's launch
+            register (+0.45) is as soft as, marginally softer than, the up-to-$50M/yr
+            payer's (+0.35 avg). The OpenAI (-0.225) and Microsoft (-0.35) harder arms
+            are dominated by genre confounds (adversarial investigation/analysis vs launch
+            celebration) and are carried as context, not as gradient tests. Correlation
+            only, not causation; no editorial-influence claim.
+          correlate_only: true
+          do_not_claim: 'DO NOT claim Apple coverage softness is caused by the absence of a deal, or that payer coverage is caused by deals. The genre confound dominates.'
+        confounders_ranked:
+          strong:
+            - 'Launch-genre celebration skew: Apple and Meta arms are both product-launch coverage, a genre soft by design in every newsroom regardless of licensing deals. The falsification bite is bounded to this genre; it does not generalize to adversarial registers.'
+            - 'Excerpt-bounded Apple register: wsj.com first-hand fetch blocked by policy this run, so the +0.45 is inferred from 6+ browser.search verbatim excerpts, not a full read. Byline unattested. Register could shift on a full read.'
+            - 'Event/innovation skew: a foldable iPhone plus a first CEO transition in the Tim Cook era is a genuine breakthrough-news event ("most significant Apple device in a decade"). The celebration register may track genuine newsworthiness, not entity favoritism.'
+          moderate:
+            - 'Time-window skew: Apple Sep 9 vs Microsoft Sep 2-3 vs OpenAI Tumbler Ridge earlier in the window. Not matched days; the news cycle moved between arms.'
+            - 'Evidence-tier asymmetry: Apple arm excerpt-bounded vs Meta/OpenAI/Microsoft arms with first-hand reads in #632/#637. The +0.45 carries wider uncertainty than the carried arms.'
+            - 'Price-scrutiny thread: the Apple piece carries consumer-harm price framing ("bad news for consumers", "to protect its profit margins"), so +0.45 is celebration-dominant not uncritical; a harsher reading of the price thread could pull it to +0.30.'
+          weak:
+            - 'n=1 Apple arm vs n=2 comparator arms: degenerate statistical contract (p=1.0, d=0.0); illustrative tones subjective.'
+            - 'Single search-surface: all Apple excerpts from one bounded browser.search run (Sep 11 UTC); mirrors corroborate URL/title but not register independently.'
+        counterevidence:
+          - 'The Apple piece''s own price thread: "New (Higher) Prices" in the headline and "the bad news for consumers was that Apple increased iPhone prices... to protect its profit margins" in text. Consumer-harm framing inside the celebration; the +0.45 is moderated, not pure coronation.'
+          - 'WSJ Apple-side selection-silence precedent (mechanism 206): WSJ published ZERO coverage of the Aug 2026 Apple camera-AirPods leak in 3+ days while investigating Meta''s camera glasses. Apple-side selectivity cuts toward silence, not softness, in other registers.'
+          - 'The licensing deals are real and documented (OpenAI $50M/yr #654, Meta up-to-$50M/yr #549); the falsification is genre-bounded. Money may still matter in adversarial registers; this run does not test that.'
+        strongest_counterargument: >
+          The genre confound explains the register before any money effect is invoked:
+          launch coverage is celebratory and watchdog coverage is adversarial in every
+          newsroom. The only matched-genre pair (Apple +0.45 vs Meta +0.40/+0.30) is
+          near-symmetric, and the +0.10 delta is within excerpt-bounded scoring noise.
+          The falsification-family membership rests on a single excerpt-bounded article
+          whose register could shift on a full read.
+        finding: >
+          TWELFTH falsification-family member (after #625's eleventh; #632/#637 partial
+          members only): on the matched-launch-genre boundary, the zero-AI-licensing
+          entity (Apple, $0) receives the softest WSJ register of the Sep 2-10 window
+          (+0.45), marginally softer than the up-to-$50M/yr Meta payer's launch register
+          (+0.35 avg) and well softer than the $50M/yr OpenAI payer's (-0.225 avg) and
+          the Microsoft HarperCollins leg's (-0.35 avg). The named licensing-payer
+          softer-prediction is contradicted: money does not buy the softest register
+          here. BOUNDED by STRONG genre/event confounds (launch celebration vs adversarial
+          investigation) and by the excerpt-bounded Apple evidence tier. Correlation only,
+          not causation; no empirical-significance claim (p NOT_CALCULATED, is_significant
+          False). Not a pure asymmetry pin; a boundary-condition falsification.
+        cross_references:
+          - '#632 / mechanism 613 (Meta +0.35 and Microsoft -0.35 arms carried; partial falsification on the Microsoft arm)'
+          - '#637 / mechanism 616 (OpenAI -0.225 arm carried; Tumbler Ridge watchdog vs Meta Muse launch)'
+          - 'mechanism 206 (WSJ Apple camera-AirPods selection silence; Apple-side selectivity precedent)'
+          - '#654 / mechanism 627 (News Corp-OpenAI $50M/yr renewal re-confirm; Thomson trusted-relationships quote)'
+          - '#549 (Meta Dow Jones up-to-$50M/yr leg)'
+          - '#524 (Microsoft HarperCollins book leg)'
+          - '#659 / mechanism 630 (Thomson partnerships-with-OpenAI/Apple ambiguity; bounded absence of signed Apple AI licensing deal)'
+          - '#607 (falsification family 8->9; strand origin)'
+        test_file: test_type_a_662_news_corp_wsj_apple_duo_launch_vs_meta_openai_microsoft_payer_arms_sep10_7pm.py
+        verification_date: '2026-09-11'
+        correlation_not_causation: true
+        artifact_readiness: 'No analysis.json update warranted. Directional, n.s. scorer output on manual illustrative tones; no new artifact-grade tone data.'
+
   google:
     financial_tie: mixed
     estimated_value: undisclosed (advertising + Google Showcase payments)
