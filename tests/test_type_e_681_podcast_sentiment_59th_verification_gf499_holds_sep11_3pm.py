@@ -338,10 +338,16 @@ class TestNoAnalysisJsonUpdate681:
 class TestRotationCycleGuard681:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #681 main-commit SHA is known.
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched in followup per #565 convention
+    ANCHORED_SHA = "3ba349a0ffef0b1df77c65987ef32117c46794a0"  # patched in followup per #565 convention
 
     @staticmethod
     def _mains():
+        # First occurrence of each distinct iteration number, newest first.
+        # Robust to the #678 history artifact: its two followup-SHA fix
+        # commits (0d1a86b, fb21ea3) were titled "Type B #678: ..." and match
+        # the main-commit filter, so raw subjects[:5] shows B#678 three times.
+        # The convention's intent is the distinct iteration mains in order
+        # (per the #679/#680 guards' _distinct_mains).
         out = subprocess.run(
             ["git", "log", "--format=%s"],
             cwd=str(REPO_ROOT),
@@ -349,7 +355,14 @@ class TestRotationCycleGuard681:
             text=True,
             check=True,
         ).stdout.splitlines()
-        return [s for s in out if re.match(r"^Type [A-E] #\d+:", s)]
+        seen = set()
+        mains = []
+        for s in out:
+            m = re.match(r"^Type [A-E] #(\d+):", s)
+            if m and m.group(1) not in seen:
+                seen.add(m.group(1))
+                mains.append(s)
+        return mains
 
     def test_window_677_681_closes_d_to_e(self):
         subjects = self._mains()
