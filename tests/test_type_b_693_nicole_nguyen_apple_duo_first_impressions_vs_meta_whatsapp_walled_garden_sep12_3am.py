@@ -111,7 +111,7 @@ NEWS_CORP_META_DEAL_URL = "https://www.wsj.com/business/media/news-corp-meta-in-
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4"
+ANCHORED_SHA = "2c7f14952d514101638d67bc50d1e458777866a0"
 
 
 def _careers():
