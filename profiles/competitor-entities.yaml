@@ -3753,6 +3753,115 @@ entities:
       novelty: "First dedicated Reuters x OpenAI Type A mechanism (mechanism 634). Zero mechanism_634 keys repo-wide pre-commit; max numeric mechanism_id pre-commit 633. All three OpenAI-arm URLs new to corpus (repo-wide greps this run on URL fragments); the Reuters Muse URL cited as in-corpus via #664/m633. Journalist check: journalists.yaml has a Katie Paul list entry (Reuters tech reporter); no journalist career mechanism added this run (OpenAI-arm bylines unattested at the original level; the Muse piece is already covered by #664)."
       research_method: "browser.search this run, 3 query sets: (1) OpenAI chip design enterprise growth cost advantage September 2026; (2) OpenAI ChatGPT financial services launch September 2026; (3) Reuters OpenAI content licensing deal partnership AI news. Register read from verbatim search-result excerpts (excerpt-bounded); Friar-piece detail via the Sina English mirror reprint of the Reuters wire (Krystal Hu byline marked reprint-level only, Reuters original byline unverified). reuters.com not opened first-hand this run. All URLs copied verbatim from Full-URL listings; no canonical URLs invented; no em dashes; ASCII-only."
 
+    mechanism_657_ani_openai_india_litigation_leg_sep2026:
+      mechanism_id: 657
+      iteration: 704
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-12'
+      time_pdt: '14:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'ANI v. OpenAI India Litigation Leg (Nov 2024 Delhi HC suit; Jul 24 2026 interim-relief denial; Sep 14 2026 Division Bench appeal) - FIRST dedicated litigation-type financial-incentive mechanism on the India-market contest leg; Medianama BATNA-pricing insight'
+      overview: 'First dedicated corpus mapping of the ANI v. OpenAI copyright suit as a litigation-type financial relationship (the contest leg of OpenAI''s India dual track). Asian News International, the first Indian media house to sue OpenAI, filed in the Delhi High Court in Nov 2024; Justice Amit Bansal denied interim relief on Jul 24 2026 in the only Indian ruling on AI training on copyrighted news (prima facie fair dealing under Section 52(1)(a) of the Copyright Act 1957); ANI appealed to a Division Bench on Sep 8 2026 and the matter is listed for Sep 14 2026. Medianama''s BATNA insight is the financial-incentive link: the order under appeal is the number every Indian publisher is working from in licensing talks, setting the value of the alternative to a licence. The litigation leg thus prices OpenAI''s licensing economics in India - the contest counterpart to the license-the-willing attribution deals with BCCL and the Indian Express Group (mechanism 609).'
+      counterparty: 'Asian News International (ANI)'
+      case_title: 'ANI MEDIA PVT. LTD. Vs. OPEN AI OPCO LLC'
+      forum: 'Delhi High Court'
+      relationship_type: 'litigation'
+      litigation_timeline:
+      - 'Nov 2024: ANI files copyright infringement suit against OpenAI in the Delhi High Court, alleging ChatGPT used its content without permission for training; first Indian media house to sue OpenAI/ChatGPT (lawbeat.in summary of the Jul 24 order).'
+      - 'Feb 2025: the Indian Express, NDTV, Network18, Hindustan Times and the DNPA seek to join the suit; OpenAI''s 31-page filing (Reuters/thetechportal) denies using any applicant or DNPA member content to train its models and argues no obligation to sign partnership deals for publicly available content (carried from mechanism 609).'
+      - 'Mar 27 2026: the Delhi High Court reserves its verdict on ANI''s interim injunction application (lawbeat.in).'
+      - 'Jul 24 2026: Justice Amit Bansal denies ANI''s interim relief on a prima facie basis (lawbeat.in); the order is the only Indian ruling on whether AI companies may train on copyrighted news (Medianama).'
+      - 'Sep 8 2026: ANI appeals to the Division Bench (Justices V. Kameshwar Rao and Manmeet Pritam Singh Arora); the bench did not assemble (Justice Rao appointed Chief Justice of Patna High Court); the matter is listed for Sep 14 2026 (LiveLaw, Bar and Bench, Medianama, Indian Television).'
+      - 'Sep 14 2026: Division Bench hearing listed (watch item; outcome unresolved this run).'
+      jul24_holdings:
+      - 'LLM training as research: the process of training LLMs underlying ChatGPT can be considered a form of research for generating new knowledge and advancing AI systems, within Section 52(1)(a) of the Copyright Act 1957 (fair dealing for private or personal use, including research) - Medianama summary of Justice Bansal''s order.'
+      - 'Storage covered: the explanation to Section 52(1)(a) says storing a work electronically for those purposes shall not constitute infringement (Medianama).'
+      - 'Commercial character not dispositive: the court declined to treat OpenAI''s commercial character as an automatic disqualifier of the fair-dealing exception (Medianama).'
+      - 'No substantial similarity (prima facie): ChatGPT responses were not substantially similar to ANI''s original literary works; ANI had not established memorisation and reproduction through ChatGPT responses (Indian Television, LawBeat).'
+      - 'No market harm shown (prima facie): nothing on record that ANI lost market share or suffered reduced subscription revenues; no market substitution and no actual or potential damage (LawBeat).'
+      - 'Territorial jurisdiction upheld: the court rejected OpenAI''s maintainability objection, holding the Delhi High Court has territorial jurisdiction to entertain ANI''s claims (LawBeat).'
+      - 'Amicus framework: court-appointed amicus curiae Arul George Scaria proposed a two-step framework to assess infringement and the fair-dealing exception under Section 52 (LawBeat).'
+      - 'DNPA intervened for ANI: the Digital News Publishers Association contended unauthorised use of publishers'' content by AI platforms threatens the economic sustainability of the news industry by diverting readers and advertising revenue (LawBeat).'
+      ani_allegations:
+      - 'ChatGPT verbatim reproduces ANI''s original content in response to user queries on a real-time basis (LiveLaw).'
+      - 'ChatGPT accredited ANI with statements and news that never occurred, damaging its reputation (LiveLaw).'
+      - 'Original news content exploited for commercial gain without a licence (LiveLaw).'
+      openai_defenses:
+      - 'AI training is transformative and akin to reading material; machine learning does not prohibit the mere use of data (LiveLaw).'
+      - 'News facts and news of the day cannot be copyrighted (LiveLaw).'
+      - 'Models are not trained in India and servers are based in the United States; maintainability challenged (LiveLaw).'
+      - 'Outlets can request placement on a blocklist if they do not wish to be crawled (LiveLaw).'
+      appeal_arguments:
+      - 'Making news content publicly available does not amount to permission for OpenAI to commercially exploit, reproduce or store that material for AI training without authorisation (Indian Television).'
+      - 'The single judge''s fair-dealing interpretation could stretch the exception for commercial purposes beyond what the Copyright Act permits (Indian Television).'
+      appeal_status: 'APPEAL PENDING - listed for Sep 14 2026 before the Division Bench; bench did not assemble on Sep 8 2026 (Justice Rao appointed Chief Justice of Patna High Court).'
+      batna_insight: 'Medianama (Sep 9 2026): the order under appeal is the only Indian ruling on whether AI companies may train on copyrighted news; it is an interim, prima facie ruling; and it is also the number every Indian publisher is quietly working from in licensing talks - it sets the value of the alternative to a licence. This is the financial-incentive link: the litigation outcome prices OpenAI''s licensing economics in India.'
+      dual_track: 'License the willing, contest the rest: OpenAI signed attribution-discovery partnerships with BCCL (Sep 7) and the Indian Express Group (Sep 8) within 48 hours (mechanism 609) while ANI''s infringement appeal works through the Delhi High Court. The Sep 14 appeal outcome either validates the zero/low-fee attribution template (if the fair-dealing holding survives) or reprices it.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'all Jul-24 holding details and appeal-bench facts are second-hand via search-result excerpts this run; the LiveLaw page is paywalled (free access expired); the judgment text (2026: DHC: 5900) was not read first-hand'
+      - rank: 2
+        strength: strong
+        confounder: 'the Jul 24 2026 order is an interim prima facie ruling, not a final merits adjudication; the Division Bench appeal (Sep 14) can reverse it, so the BATNA-pricing insight is directional until the appeal resolves'
+      - rank: 3
+        strength: moderate
+        confounder: 'ANI is not a MediaScope tracked publication, so no coverage-tone follow-up is possible in this corpus; litigation-leg mapping only'
+      - rank: 4
+        strength: moderate
+        confounder: 'the Sep 8 2026 appeal listing coincides with the Indian Express Group partnership announcement the same day; FourWeekMBA flags the timing as on-the-record coincidence, not coordination'
+      - rank: 5
+        strength: weak
+        confounder: 'mechanism 609 already documents the suit timeline in summary form; this leg formalizes the litigation-type financial relationship as its own unit of analysis (distinct key, fields, and the BATNA-pricing insight), not a duplicate'
+      statistical_discipline:
+        scope: qualitative structural mapping only
+        correlation_not_causation: true
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        tone_scores: NOT_SCORED
+        qualitative_only: true
+        artifact_grade: false
+      cautious_language_required: true
+      correlational_note: 'This mapping describes the ANI v. OpenAI copyright suit in the Delhi High Court as a litigation-type financial relationship: the Jul 24 2026 interim order (prima facie fair dealing for AI training) is the pricing anchor for OpenAI''s licensing negotiations with Indian publishers, with the Division Bench appeal listed Sep 14 2026. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+      no_coverage_tone_claim: true
+      falsification_family: 'NOT a member - litigation-type leg with no coverage-tone pair; the ledger stays at 21 after #703''s TWENTY-FIRST (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C litigation-leg mapping; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 609 (OpenAI India attribution-deal blitz: the license-the-willing counterpart of the dual track; this leg is the contest counterpart)'
+      - 'mechanism 636 (NYT pay-or-litigate doctrine: the US-market instance of the license-versus-litigate bifurcation)'
+      - 'mechanism 519 (News Corp x OpenAI woo-and-sue dual posture)'
+      - 'mechanism 614 (Reddit v. Anthropic pay-or-sue three-leg bifurcation)'
+      - 'mechanism 509 (Anthropic institutionalized zero-deal posture, Adweek Aug 26 2026: OpenAI contests in India while Anthropic declines licensing talks entirely - posture contrast)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded litigation facts)'
+      - 'iteration-492 rule (bounded absence: no signed ANI-OpenAI settlement or licence in the searched windows; none claimed as proof of absence)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      novelty: 'FIRST dedicated ANI v. OpenAI litigation-leg mechanism in the corpus. Zero mechanism_657 keys repo-wide pre-commit; max numeric mechanism_id pre-commit 656. Six of seven source URLs new to profiles/ and tests/; the FourWeekMBA India synthesis piece is legitimately shared with mechanism 609''s block and its #624 test file (the acknowledged parent deal-blitz mechanism). Distinct from mechanism 609 (deal-blitz unit of analysis; ANI appears there only as timeline context).'
+      sources:
+      - https://www.medianama.com/2026/09/223-ani-ai-training-indian-news/
+      - https://indiantelevision.com/regulators/ani-appeals-delhi-hc-order-denying-interim-relief-against-openai/
+      - https://Www.Livelaw.In/high-court/delhi-high-court/ani-moves-delhi-high-court-against-rejection-of-interim-relief-in-copyright-infringement-suit-against-chatgpt-549028
+      - https://www.livelaw.in/amp/high-court/delhi-high-court/ani-moves-delhi-high-court-against-rejection-of-interim-relief-in-copyright-infringement-suit-against-chatgpt-549028
+      - https://www.barandbench.com/news/ani-files-appeal-before-delhi-hc-challenging-denial-of-interim-relief-in-case-against-openai
+      - https://lawbeat.in/news-updates/ani-v-openai-delhi-high-court-refuses-interim-injunction-against-chatgpt-training-1615482
+      - https://fourweekmba.com/ai-openai-india-publisher-deals-attribution-strategy/
+      research_method: 'browser.search this run, 4 query sets: (1) publisher AI content licensing deal announced September 2026; (2) Anthropic publisher licensing deal partnership; (3) OpenAI BCCL Times of India Economic Times ChatGPT content partnership September 2026; (4) ANI OpenAI Delhi High Court appeal copyright case (since 2026-09-06). 1 browser.open first-hand read (FourWeekMBA India attribution-deal piece, 147 rendered lines). Litigation facts via verbatim search-result excerpts (excerpt-bounded, second-hand per #503); LiveLaw page paywalled (free access expired). Query set 1 surfaced the India-blitz already in corpus via mechanism 609, redirecting this run to the unmapped ANI litigation leg. All URLs copied verbatim from Full-URL listings; no canonical URLs invented; no em dashes; ASCII-only.'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 704
+        type: C
+        date: 2026-09-12 14:00 PDT
+
   anthropic:
     display_name: Anthropic
     aliases:
