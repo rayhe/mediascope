@@ -93,7 +93,7 @@ X_GROK_URL = "https://www.nytimes.com/2026/01/26/business/europeanunionx-grokaii
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "placeholder-patched-in-followup-per-565"
+ANCHORED_SHA = "dfa438b00b3e701ebae3a09bffff6acc8ac182d7"
 
 
 def _careers():
