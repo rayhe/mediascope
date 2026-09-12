@@ -12211,6 +12211,119 @@ entities:
         - 'Distinct from mechanism 549 (News Corp x Meta leg, different counterparty and disclosed-value structure), #453 (Meta publisher-licensing provenance correction), mechanism 529 (Google Canada C18 precedent), mechanism 594 (News Corp five-leg; Robert Thomson disambiguation recorded)'
       caution: 'Structural mapping with one falsification pin. Documents the deal terms, the Sep 2026 status check, the owner-level earnings disclosures, and the single Reuters Muse-launch accountability register. The falsification pin is boundary-scoped (one launch piece, excerpt-bounded evidence, strong source-driven confound) and does not claim a wire-wide Meta register. Correlation, not causation.'
       test_file: tests/test_type_c_664_meta_reuters_ai_chatbot_deal_falsification_sep10_9pm.py
+    mechanism_648_meta_european_publishers_bundle_mar2026:
+      mechanism_id: 648
+      iteration: 689
+      rotation: Type C
+      date_analyzed: '2026-09-11'
+      time_pdt: '23:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Meta x European Publishers Bundle (Le Figaro / Prisa / Suddeutsche Zeitung) March 2026 AI News Licensing Deal - FIRST Corpus Formalization of the European Payer Leg; El Pais Falsification Pin, SEVENTEENTH Falsification-Family Member'
+      type: financial_incentive_mapping
+      type_c_focus: 'FIRST dedicated deal-level mechanism on Meta''s March 2026 European publishers AI news licensing bundle. Meta''s own about.fb.com announcement (~Mar 13 2026, French edition read this run): new partnerships with News Corp, Le Figaro, Prisa, and Suddeutsche Zeitung, "dans la continuite des precedents partenariats avec d''autres medias, dont Le Monde" (in continuation of previous partnerships with other media, including Le Monde). Meta AI news answers will carry information and links from these outlets; "just the beginning" of an expanding publisher network. Financial terms not publicly disclosed (Seeking Alpha). The bundle extends the Meta-as-payer leg inside Meta''s own product (Meta AI chatbot grounding), alongside the News Corp leg (mechanism 549, up-to-$50M/yr disclosed quantum) and the Reuters leg (mechanism 633). FIRST formalization of the three European counterparties: zero le_figaro / prisa / sueddeutsche mechanism keys repo-wide pre-commit.'
+      overview: 'Meta announced in March 2026 that Meta AI would start offering real-time news content sourced from News Corp, Le Figaro, Prisa, and Suddeutsche Zeitung. The about.fb.com post (French edition, ~Mar 13 2026; crawled 2d) frames the bundle as a diversification play: Meta AI answers to news questions will draw on "une plus grande variete de contenus en temps reel" (a wider variety of real-time content) and link out to the publishers'' sites, giving them "la possibilite de toucher de nouveaux publics" (the possibility of reaching new audiences). The English-language coverage (eloutput, abit.ee, Seeking Alpha, all ~Mar 2026) confirms the four named counterparties and that the integration targets European users first ("initial phase" per eloutput), spanning breaking news to entertainment and lifestyle. The bundle sits beside Engadget''s Mar 3 2026 reporting that Meta had already signed multi-year agreements with USA Today, People, CNN, and Fox News, and the WSJ''s Mar 4 2026 (Alexandra Bruell) report that the News Corp leg alone pays up to $50M a year for at least three years with both retrieval and archive-training rights. Only the News Corp leg carries a disclosed quantum; the European legs'' terms are confidential. Sep 2026 status ACTIVE per the #599 convention (bounded absence of exit reporting, iteration-492 rule).'
+      announcement_date: '2026-03-13'
+      announced_by: 'Meta about.fb.com newsroom post (French edition, ~Mar 13 2026): new partnerships with News Corp, Le Figaro, Prisa, Suddeutsche Zeitung; continuation of previous partnerships with other media including Le Monde; long-term ambition to keep enriching Meta AI with new content sources and themes'
+      deal_terms:
+        counterparties: 'Le Figaro (France), Prisa (Spain; owns El Pais), Suddeutsche Zeitung (Germany), plus News Corp in the same announcement tranche'
+        value: 'confidential; "Financial terms of the deal were not publicly disclosed" (Seeking Alpha). Only the News Corp leg has a disclosed quantum (up to $50M/yr, at least 3 years, WSJ Alexandra Bruell Mar 4 2026)'
+        scope: 'real-time news content integrated into Meta AI answers for European users (initial phase); spans breaking news, entertainment, lifestyle, general interest; Meta AI displays links to the original articles'
+        training_rights: 'UNDISCLOSED for the European legs: no reporting confirms whether Le Figaro / Prisa / SZ content may train Meta models (narrower than the News Corp leg, which includes archive training per the WSJ)'
+        prior_partners: 'Meta names Le Monde as a previous partner ("dans la continuite des precedents partenariats avec d''autres medias, dont Le Monde"); Engadget (updated Mar 3 2026) reports multi-year agreements with USA Today, People, CNN, Fox News'
+        mechanics_note: 'retrieval-grounding licensing for Meta AI (RAG-style answers with attribution links), not a display/advertising bundle; traffic to publisher sites is the stated publisher benefit'
+      status_check_sep2026:
+        query_sets:
+          - 'Meta AI content licensing deal Le Figaro Prisa Suddeutsche Zeitung news publishers March 2026'
+          - 'El Pais Meta Zuckerberg article critica Meta 2026 (since 2026-06-01)'
+          - 'Meta Muse AI agent launch coverage September 2026 European press'
+        result: 'NO renewal, extension, renegotiation, or termination reporting for the March 2026 bundle surfaced; LLM Pulse deal map (updated ~Sep 7 2026) still lists the March 2026 announcement as the 2026 row for Meta'
+        status: 'ACTIVE per the #599/#609 convention (no termination reporting means treated as still active)'
+        discipline: 'bounded absence per the iteration-492 rule: absence of reporting is not proof of absence; the European-leg terms may have been renegotiated behind undisclosed terms'
+      falsification_family:
+        membership: 'SEVENTEENTH falsification-family member (ledger stood at 16 after #688; #687 explicitly no SIXTEENTH)'
+        prediction: 'the incentive theory predicts SOFTER coverage from the paid counterparty: Meta pays Prisa under the active March 2026 bundle'
+        observed: 'El Pais (Prisa''s flagship daily) Aug 30 2026: "Los otros vertidos toxicos del imperio Zuckerberg: limpieza etnica, explotacion masiva de datos y desinformacion" (the other toxic spills of the Zuckerberg empire: ethnic cleansing, massive data exploitation and disinformation). The excerpt ties the piece to the US agreement to pay up to $18 billion to end the youth-harms lawsuits, then catalogs the empire''s scandal history: "De la explotacion masiva de datos personales hasta una infraestructura que potencia la desinformacion y premia los discursos que generan odio" (from massive exploitation of personal data to an infrastructure that powers disinformation and rewards hate-generating discourse), plus Cambridge Analytica as "la filtracion como estrategia politica" (the leak as political strategy). Hard accountability register from a Meta-paid counterparty.'
+        illustrative_tone: '-0.55 MANUAL ILLUSTRATIVE (excerpt-bounded; harder than the Reuters -0.45 pin; not an empirical corpus score per the Aug 28 standing rule)'
+        second_meta_payer_pin: 'second falsification pin where Meta is the payer leg (first: #664 mechanism 633, Reuters -0.45 on the Muse launch). The Meta-payer leg now has two pins.'
+        corroborating_lemonade_pin: 'Le Monde (named by Meta as a previous AI partner) Aug 11 2026: "Facebook et les fausses informations, dix ans d''hesitations et une volte-face de Zuckerberg" (Facebook and disinformation, ten years of hesitation and a Zuckerberg U-turn) - a hard accountability register on Meta''s US fact-checking shutdown and "allegiance" to Trump. WEAKER pin: Meta''s announcement names Le Monde as a previous partner but no independent reporting confirms the Le Monde leg''s terms or active status; recorded as corroborating only, not counted in the membership ordinal.'
+        cross_outlet_nuance: 'same payer (Meta), divergent registers across three paid counterparties: WSJ Bobrowsky +0.40 aspirational launch feature (News Corp leg #549, #662); Reuters Katie Paul -0.45 accountability (Reuters leg #633, #664); El Pais toxic-spills accountability -0.55 illustrative (Prisa leg, this run). Payment direction alone does not determine register; each falsification is counterparty-specific.'
+        excerpt_bounded: 'elpais.com not opened first-hand this run; register read from verbatim search excerpts (Spanish original). No tone-engine run; degenerate n=1 pin.'
+      ranked_confounders:
+        - rank: 1
+          strength: strong
+          confounder: 'settlement-news register: the piece is anchored on the real $18B multistate youth-harms settlement (~Sep 3 2026); genuine accountability news that any paper, paid or not, would frame hard. The register tracks the news event, not necessarily the payer relationship'
+        - rank: 2
+          strength: strong
+          confounder: 'excerpt-bounded evidence: elpais.com not opened first-hand this run; the register read rests on search-result excerpts in Spanish; full-text nuance (op-ed vs news, author, framing qualifiers) unconfirmed'
+        - rank: 3
+          strength: strong
+          confounder: 'payment magnitude unknown: the European-leg quantum is undisclosed; a small fee predicts a weak incentive effect, so the falsification bite scales with deal materiality. The up-to-$50M/yr figure is the News Corp leg, not Prisa''s'
+        - rank: 4
+          strength: moderate
+          confounder: 'parent-to-outlet attribution: Meta''s announcement names "Prisa", and El Pais is Prisa''s flagship daily, but no reporting confirms the bundle specifically licenses El Pais content (could be other Prisa titles)'
+        - rank: 5
+          strength: moderate
+          confounder: 'timing and genre: the piece ran Aug 30 2026, five months after the March announcement, in an accountability-series register (summer series format per lemonde.fr URL convention observed on the corroborating piece); not product-launch coverage, so it tests the incentive theory on scandal coverage, not Meta AI coverage'
+        - rank: 6
+          strength: weak
+          confounder: 'deal scope is chatbot-RAG licensing with attribution links that drive publisher traffic; the link-out design may weaken the incentive channel relative to lump-sum training deals'
+      counterevidence:
+        - 'the same El Pais excerpt that runs hard on Meta is exactly what a paper does when the accountability news is real: the $18B settlement, the youth-harms lawsuits, and Cambridge Analytica are documented facts, so the register may be news-driven, not incentive-defying'
+        - 'the Meta announcement''s link-out design ("apportant de la valeur aux editeurs en leur offrant la possibilite de toucher de nouveaux publics") is genuinely publisher-friendly; a cooperative commercial relationship can coexist with adversarial editorial without contradiction if editorial independence holds'
+        - 'the corroborating Le Monde pin is weak on leg status (previous partner named by Meta, terms unconfirmed); if the Le Monde leg has lapsed, only the El Pais pin constrains the active European bundle'
+      cross_references:
+        - 'mechanism 549 (News Corp x Meta up-to-$50M/yr leg: the disclosed-quantum sibling leg in the same March 2026 announcement tranche)'
+        - 'mechanism 633 (Meta x Reuters multiyear AI chatbot deal, #664: first Meta-payer falsification pin; this run adds the second)'
+        - '#664 (the run that minted mechanism 633; excerpt-bounded pin convention this run follows)'
+        - '#662 (twelfth falsification-family member; WSJ Bobrowsky +0.40 Muse-launch arm used in the cross-outlet nuance)'
+        - '#688 (SIXTEENTH falsification-family member; ledger-at-16 baseline this run advances)'
+        - '#687 (explicitly no SIXTEENTH; boundary-condition replication)'
+        - '#684 (Microsoft PCM x Conde Nast bilateral leg; MODERATE-WEAK tone-predictor grade comparator)'
+        - '#679 (Apple News/News+ x Conde Nast revenue-share leg; WEAK grade comparator)'
+        - '#644 (Vox Media triple-AI-payer architecture; Vox-OpenAI May 29 2024 deal)'
+        - '#477/#482/#488/#493/#498/#508/#513/#518 (register-constancy falsification-family shape)'
+        - '#144 (cultural-consensus distinction for activist posture; not applied here)'
+        - '#599/#609 (ACTIVE renewal-window convention this mechanism follows)'
+        - '#492 (bounded-absence rule)'
+        - 'LLM Pulse deal map (Meta 2026 row: News Corp, Le Figaro, Prisa, Suddeutsche Zeitung in March 2026)'
+        - 'Aug 28 2026 standing rule (finding-layer is_significant False; illustrative-only tone)'
+      asymmetry_relevance:
+        gradient: 'Meta-payer PRESENT at all four March 2026 counterparties (News Corp, Le Figaro, Prisa, Suddeutsche Zeitung) plus the prior Le Monde leg named by Meta; the European legs are confidential-quantum, retrieval-grounding legs inside Meta''s own product'
+        tone_predictor_grade: 'MODERATE-WEAK'
+        why_moderate_weak: 'stronger than the Apple News+ WEAK leg (mechanism 642) because this is AI-chatbot grounding licensing inside Meta''s own assistant, not a newsstand revenue share, so the commercial linkage is direct; weaker than the News Corp leg because the European-leg quantum is undisclosed, training rights are unconfirmed, the deal is voluntary and non-exclusive, and the link-out design returns traffic to publishers. The observed El Pais register is the opposite of the prediction, so the grade is bounded by the falsification.'
+        no_tone_claim: true
+      statistical_discipline:
+        scorer: 'none'
+        tone_scores: 'NOT_SCORED'
+        illustrative_only: 'MANUAL ILLUSTRATIVE tone only (-0.55 for the El Pais piece, excerpt-bounded; not an empirical corpus score per the Aug 28 2026 standing rule)'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        qualitative_only: true
+        correlation_not_causation: true
+        is_significant: false
+        artifact_grade: false
+      research_method: '3 browser.search query sets this run (Meta European publishers bundle March 2026; El Pais Meta coverage since 2026-06-01; Muse launch European press coverage); all items via search-result excerpts (second-hand, excerpt-bounded, marked in-mechanism); elpais.com and lemonde.fr not opened first-hand this run; about.fb.com French-edition excerpt read via search results (French original, English glosses mine). All URLs verbatim from Full-URL listings; no canonical URLs constructed. Bounded absences per the iteration-492 rule (no bundle exit reporting surfaced; none claimed as proof). Pre-commit greps: zero test_type_c_689 files on disk (glob); no Type C #689 in git log (--grep); zero mechanism_648 keys repo-wide (text grep of profiles/ and iteration-log.md); zero le_figaro / prisa / sueddeutsche mechanism keys repo-wide pre-commit (grep of meta entity block); max numeric mechanism id pre-commit 647 (mechanism_647 in profiles/careers/journalists.yaml via #688 Type B); zero SEVENTEENTH hits in iteration-log.md pre-commit. No em dashes; ASCII-only.'
+      source_urls:
+        - 'https://about.fb.com/fr/news/2026/03/meta-annonce-un-nouveau-partenariat-avec-plusieurs-medias-dont-le-figaro-pour-enrichir-meta-ai-avec-davantage-dactualites-et-de-contenus-internationaux/'
+        - 'https://seekingalpha.com/news/4564325-meta-strikes-news-content-deal-with-wsj-owner-leading-european-media-firms'
+        - 'https://en.eloutput.com/news/social-media/meta-ai-will-integrate-news-from-major-international-media-outlets-in-Europe/'
+        - 'https://abit.ee/et/tehisintellekt/meta-ai-news-le-figaro-sddeutsche-zeitung-news-corp-prisa-media-partnership-et'
+        - 'https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html'
+        - 'https://www.editorandpublisher.com/stories/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year,260471'
+        - 'https://elpais.com/tecnologia/2026-08-30/los-otros-vertidos-toxicos-del-imperio-zuckerberg-limpieza-etnica-explotacion-masiva-de-datos-y-desinformacion.html'
+        - 'https://www.lemonde.fr/series-d-ete/article/2026/08/11/facebook-et-les-fausses-informations-dix-ans-d-hesitations-et-une-volte-face-de-zuckerberg_6744010_3451060.html'
+        - 'https://llmpulse.ai/blog/ai-content-licensing-deals/'
+      novelty_verification:
+        - 'FIRST corpus formalization of the Meta x European publishers March 2026 AI news licensing bundle: zero mechanism_648 keys repo-wide pre-commit; zero le_figaro / prisa / sueddeutsche mechanism keys repo-wide pre-commit (grep of the meta entity block; only LLM Pulse mentions in the mechanism_633 cross-references)'
+        - 'Zero test_type_c_689 files on disk pre-commit (glob verified)'
+        - 'No Type C #689 in git log pre-commit (git log --grep verified)'
+        - 'mechanism_id 648 next free; max numeric mechanism id pre-commit 647 (mechanism_647 in profiles/careers/journalists.yaml via #688 Type B)'
+        - 'El Pais Aug 30 2026 toxic-spills URL zero repo-wide hits pre-commit (new to corpus); Le Monde Aug 11 2026 URL zero repo-wide hits pre-commit (new to corpus, corroborating only)'
+        - 'Distinct from mechanism 549 (News Corp x Meta leg: same announcement tranche, different counterparty and disclosed-value structure), mechanism 633 (Reuters leg, different counterparty), #664 (the run that minted 633), mechanism 539 (DDM PCM bilateral), mechanism 642 (Apple News+ leg)'
+      caution: 'Structural mapping with one falsification pin and one corroborating pin. Documents the March 2026 bundle terms, the Sep 2026 status check, the El Pais Aug 30 2026 accountability register, and the weaker Le Monde corroboration. The falsification pin is boundary-scoped (one piece, excerpt-bounded evidence in Spanish, strong settlement-news confound) and does not claim a Prisa-wide or European-press-wide Meta register. Correlation, not causation.'
+      test_file: tests/test_type_c_689_meta_european_publishers_bundle_sep11_11pm.py
   xai:
     display_name: xAI
     aliases:
