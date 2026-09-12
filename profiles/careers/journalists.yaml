@@ -16934,7 +16934,73 @@ journalists:
   notes: 'WSJ technology columnist, author of "Arriving Today: From Factory to Front Door  -  Why Everything Has Changed About How and What We Buy" (2021, Harper Business). One of the most widely-read tech columnists at a mainstream business publication. KEY for MediaScope WEARABLES NARRATIVE: Mims represents the business press framing of smartglasses  -  treats it as a product/market story rather than a privacy/surveillance story. His Jul 2026 coverage uses competitive market framing (Meta vs Google vs Samsung vs Snap vs Apple) rather than privacy-violation framing. This is important as a CONTROL for the coordination hypothesis: if WIRED/Verge/ Gizmodo frame smartglasses as privacy crisis while WSJ/Bloomberg/FT frame it as market opportunity, the divergence maps onto publication type (consumer tech press vs business press) rather than coordinated direction. Email: christopher.mims@wsj.com. MIGRATION: Long-tenured WSJ columnist  -  no known Condé Nast history.'
   source_urls:
   - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
-- career:
+- mechanism_650_nicole_nguyen_apple_duo_first_impressions_vs_meta_whatsapp_walled_garden_sep12:
+    mechanism_id: 650
+    iteration: 693
+    type: B
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    block_key: type_b_693_nicole_nguyen_apple_duo_first_impressions_vs_meta_whatsapp_walled_garden_sep12
+    journalist: Nicole Nguyen
+    publication: The Wall Street Journal
+    pair_shape: same-journalist cross-entity byline-isolated register pair
+    apple_arm:
+      date: '2026-09-10'
+      title: 'My First Impressions of the New Folding iPhone Duo'
+      url: https://www.wsj.com/tech/personal-tech/iphone-duo-apple-first-impressions-7234f86e
+      byline: Nicole Nguyen (sole)
+      byline_attribution: full - byline sign-off read first-hand this run ("Write to Nicole Nguyen at <nicole.nguyen@wsj.com>", 77 rendered lines of full text); URL verbatim from search listing, opened first-hand; URL new to corpus this run (zero repo-wide hits pre-commit)
+      register: enthusiast consumer-tech first-impressions
+      register_detail: 'Desire-forward hands-on review register. "My desire for a folding phone before today was zero. After today, it is a lot more than zero." "I feel a pull toward this device." "I could actually picture myself using this new half-phone, half-tablet hybrid." Crease camouflage beats Samsung: crease "barely visible... more subtle than Samsung''s... looked as flat and smooth as the one on an iPad." Moderated by reviewer caveats: "I am not ready to recommend the Duo... just yet" (pending full testing); heavier and thicker than rivals (254g, 11.3mm closed vs Galaxy Fold 8 201g, 9.7mm); one-handed typing a challenge; missed 8X zoom; $800 premium over iPhone 18 Pro; "not sure I want to spend that premium on a first-generation Apple device."'
+      tone_illustrative: 0.4
+      evidence_grade: 'first-hand read this run (wsj.com, 77 rendered lines, full text); byline sign-off confirmed; publication date pegged 2026-09-10 from "at Apple Park on Wednesday" (Sep 9 2026 event); date not printed in the read'
+    meta_arm:
+      date: '2025-11-20'
+      title: 'WhatsApp Breaks Through Apple''s Walled Garden'
+      url: https://www.livemint.com/technology/whatsapp-is-breaking-through-apple-s-walled-garden-11763375190283.html
+      byline: Nicole Nguyen (sole)
+      byline_attribution: full - livemint mirror of the WSJ piece carries the WSJ byline sign-off "Write to Nicole Nguyen at nicole.nguyen@wsj.com" (read first-hand this run, 87 rendered lines); title/date confirmed by Muck Rack listing; in-corpus via mechanism_67 sample_articles; URL new to corpus this run (zero repo-wide hits pre-commit); WSJ canonical URL not verbatim in listings this run
+      register: competitive-growth adoption reporting
+      register_detail: 'Meta-positive through an Apple-adversarial lens. "The Meta-owned app is the world''s default messaging platform, with over three billion users." "Yes, blue-bubble snobs are breaking out of Apple''s walled garden." "The iPad version is great." "WhatsApp is still winning over users." "so much more functional than iMessage" (Anirudh Kamath). Moderated by the Meta-money caveat: WhatsApp "has to delicately balance initiatives from its parent company Meta - including money-making ones. Recently, it began rolling out ads in a separate tab and gave Meta AI more prominent placement." Apple Watch app "isn''t as useful as I''d hoped." Author personally "prefer[s] Signal for its simplicity and focus on privacy, but can''t deny that WhatsApp is more fun."'
+      tone_illustrative: 0.15
+      evidence_grade: 'first-hand read this run via livemint mirror of the WSJ piece (87 rendered lines, byline sign-off confirmed); mirror-bounded (not wsj.com); title/date in-corpus via mechanism_67 sample_articles (inherited 0.1 tone estimate reaffirmed upward to 0.15 on full read)'
+    third_entity_note:
+      dragnet_era: 'Nguyen''s Feb 13 2026 "Dragnet Era of Home Security Cameras" (mechanism_67 surveillance_coverage) targets Ring (Amazon) and Nest (Google) with privacy-adversarial framing while NOT targeting Meta glasses - a separate register (surveillance-adversarial) with its own target pattern; the constancy found here is bounded to the consumer-tech register and does not extend to surveillance coverage'
+      corroboration_role: 'Bounds the finding: Nguyen runs an adversarial register on Amazon/Google in surveillance coverage, so the constancy in the consumer-tech pair is not evidence of blanket cross-entity softness - it is register-specific'
+    asymmetry_scorer_result:
+      method: 'MANUAL ILLUSTRATIVE (Aug 28 2026 standing rule) - tones hand-assigned from first-hand full-text reads this run, illustrative only; no engine run'
+      target_tones_manual_illustrative: [0.4]
+      reference_tones_manual_illustrative: [0.15]
+      target_avg: 0.4
+      reference_avg: 0.15
+      delta_apple_minus_meta: 0.25
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      artifact_grade: false
+      limitations: 'no co-byline confound (both sole byline); degenerate n=1 per arm per #638/#643; genre asymmetry (hands-on review vs adoption-trend report); 10-month time gap; product-category asymmetry (Apple hardware vs Meta software); Meta arm mirror-bounded'
+    verdict: 'REGISTER CONSTANCY - NINETEENTH falsification-family member. Same-journalist, same-publication byline-isolated pair: Nguyen applies same-signed positive consumer-tech registers to Apple (+0.40 illustrative, Duo first-impressions) and Meta (+0.15 illustrative, WhatsApp walled-garden challenger). The journalist-level "soft on Apple, hard on Meta" attribution fails on her byline - her Meta arm is Meta-positive (competitive vs Apple). The Meta-deal-softness attribution also fails on ordering: News Corp holds a $50M/yr Meta AI licensing deal (in-corpus per #337), yet the paid counterparty''s arm is the LESS positive of the two - the register ordering tracks genre (review enthusiasm vs trend reportage), not the deal. This extends and constrains mechanism_67''s beat-assignment asymmetry: the WSJ structural separation (Nguyen consumer voice vs Bobrowsky investigative voice) is not individual bias - Nguyen''s own byline carries Meta-positive framing when the beat allows. Correlation, not causation. No analysis.json update warranted.'
+    financial_context: 'Correlation, not causation. News Corp balanced financial ties: $50M/yr Meta + $50M/yr OpenAI AI licensing deals (in-corpus per #337; Meta deal source https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244). The deal-predicts-softness gradient would expect Meta-softness at News Corp; Nguyen''s Meta arm IS positive (+0.15), but it is LESS positive than her Apple arm (+0.40) despite Meta being the paid counterparty and Apple having no News Corp AI licensing deal in corpus. The register ordering (Apple > Meta) is the opposite of what a journalist-level deal-softness attribution predicts, and it is better explained by genre (hands-on review enthusiasm vs adoption-trend reportage). Finding constrains the deal theory to publication-level aggregates with real one-sided gradients and away from journalist-level softness attribution here.'
+    confounders:
+      - '[STRONG] Genre asymmetry: the Apple arm is a hands-on first-impressions hardware review (desire-forward enthusiasm is the genre''s native register); the Meta arm is an adoption-trend report on messaging-app growth. The +0.25 gap may track genre, not entity.'
+      - '[STRONG] Product-category asymmetry: Apple arm is hardware (foldable phone), Meta arm is software (WhatsApp); Nguyen''s enthusiasm may track the hardware-review genre rather than Apple.'
+      - '[STRONG] Meta arm positivity is Apple-adversarial: WhatsApp''s appeal is framed as escape from Apple''s walled garden, so the Meta-positive register rides an anti-Apple comparative frame - not a pure Meta-enthusiasm read.'
+      - '[MODERATE] Time order: Meta arm Nov 20 2025, Apple arm ~Sep 10 2026 (10 months apart); register drift across the gap cannot be ruled out, though both sit inside the personal-tech beat.'
+      - '[MODERATE] Mirror-bounded Meta arm: full text read via livemint mirror, not wsj.com; mirror may omit WSJ-side framing elements (images, pull quotes), though body text and byline sign-off appeared complete.'
+      - '[MODERATE] Third-entity bound: Nguyen''s surveillance register targets Amazon/Google (Ring, Nest) while sparing Meta glasses (mechanism_67), so the constancy found here is register-specific, not blanket cross-entity softness.'
+      - '[WEAK] Author personal disclosure: Nguyen personally prefers Signal for privacy while conceding WhatsApp "is more fun" - her stated preference hedges the Meta-positivity.'
+    cross_references:
+      - '#477/#482/#488/#493/#498/#508/#513/#518 (prior falsification-family register-constancy pins)'
+      - '#672/#678 (Type B byline-isolated pair shape)'
+      - '#67/mechanism_67 (this journalist''s beat-assignment asymmetry; extended and constrained here - structure, not individual bias)'
+      - '#662/m631 (WSJ Duo launch-celebration +0.45, distinct WSJ piece; launch-genre series)'
+      - '#638/#643 (degenerate convention)'
+      - '#337 (News Corp balanced-deal baseline)'
+    novelty: 'FIRST dedicated Type B mechanism on Nicole Nguyen (zero mechanism_* keys pre-existing under her entry). The Duo first-impressions vs WhatsApp walled-garden pair was never a mechanism. Distinct from the Satariano (#688) and Hart constancy pins (different journalists) and from #56 (Field volume analysis). Extends mechanism_67 from a beat-assignment description to a pinned same-journalist byline-isolated pair.'
+  career:
   - beat: tech products, lifestyle tech
     end: '2015'
     notes: Assistant tech editor. Early career before BuzzFeed. Covered consumer gadgets and lifestyle technology.
