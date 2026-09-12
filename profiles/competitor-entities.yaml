@@ -6711,6 +6711,104 @@ entities:
         \ targets Meta as the\n    primary adversary, not Apple - despite Apple's\
         \ bypass being\n    arguably more damaging to publisher revenue than Meta's\
         \ model\n    of offering voluntary direct licensing.\n"
+    mechanism_654_apple_google_gemini_publisher_content_bypass_leg_sep2026:
+      mechanism_name: 'Apple x Google Gemini Multi-Year AI Deal (Jan 12 2026) - Publisher-Content Bypass Leg: ~$1B/yr Apple-to-Google Payment for Custom 1.2T Gemini Powering Siri AI; Publishers Paid $0 Directly'
+      mechanism_id: 654
+      iteration: 699
+      rotation: Type C
+      date_analyzed: '2026-09-12'
+      time_pdt: '09:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      type: financial_incentive_mapping
+      type_c_focus: 'First dedicated deal-level mechanism formalizing the Apple x Google Gemini publisher-content bypass leg. Extends the publisher_content_bypass block (no mechanism key) and mechanism 156s phase_2_bypass line into a first-class financial leg with Sep 2026 status verification, quantum corroboration, the asymmetric-dependency finding, and the brand-layer-erasure finding. Completes the Apple six-lever financial architecture with a dated, sourced, ACTIVE deal leg.'
+      announcement_date: '2026-01-12'
+      broke_by: 'Bloomberg News (Mark Gurman), Nov 5 2025 - Apple finalizing deal for a custom 1.2-trillion-parameter Gemini at ~$1B/yr; officially confirmed Jan 12 2026 via CNBC/9to5Mac reporting and a joint statement on Googles Keyword blog'
+      deal_parties:
+        payer: 'Apple (Siri / Apple Intelligence)'
+        counterparty: 'Google (Gemini models + cloud technology)'
+      deal_terms:
+        quantum: '~$1 billion per year (Bloomberg, Nov 5 2025, via people familiar with the matter; neither company has publicly disclosed exact financial terms)'
+        multiyear_total_estimate: 'up to $5 billion total multi-year value (Gene Munster, Deepwater Asset Management, via tech-insider.org Sep 2026; analyst estimate, not company-stated)'
+        duration: 'multi-year (Google Keyword blog statement; CNBC)'
+        model: 'custom 1.2-trillion-parameter Gemini (reported figure, not an Apple specification, per macobserver.com Sep 10 2026); Apple distills/modifies for private deployment'
+        scope: 'Siri AI summarizer and planner functions; Apple Foundation Models powering Apple Intelligence features (Live Translation, Image Playground, more personalized Siri); models run on Apple Private Cloud Compute, not Google servers'
+        selection: 'Apple evaluated OpenAI (ChatGPT) and Anthropic (Claude) models in 2025 and chose Google (Macworld, Nov 5 2025)'
+        stopgap_frame: 'Bloomberg frames the deal as a stopgap until Apples own systems are ready; Apple reportedly working on its own 1-trillion-parameter model for public use as early as next year'
+      bypass_chain:
+        step_1: 'Google trains Gemini on publisher content (Hachette Book Group / Cengage Learning / Elsevier / Scott Turow putative class action, filed Jul 2026, S.D.N.Y. case 1:26-cv-05870: alleges willful infringement of millions of textual works; the Google Books agreement permitted snippet display, not training-data repurposing, per Adweek; an internal Google document cited in the complaint estimated the company faced $10Bs-$100Bs in potential fines)'
+        step_2: 'Apple pays Google ~$1B/yr for the custom Gemini model'
+        step_3: 'Siri AI (beta with iOS 27, launching Sep 14 2026; confirmed at the Sep 9 2026 Surprise and Shine event) serves AI responses derived from that content on 2B+ Apple devices'
+        step_4: 'Publishers receive $0 from Apple for this content flow'
+        contrast: 'Meta pays News Corp up to $50M/yr directly (mechanism 549); OpenAI pays Conde Nast et al directly; Amazon pays NYT $20-25M/yr directly (mechanism 559); Apple pays publishers $0 directly and ~$1B/yr to Google'
+      asymmetric_dependency:
+        finding: 'PYMNTS CEO Karen Webster, Sep 9 2026: "Google is now Apples AI supplier and its largest single Services customer through the search deal. Thats a dependency on a competitor, twice over." Apple pays Google ~$1B/yr for Gemini while Google pays Apple ~$20B/yr (2022 figure, via MacRumors) for default search placement; the AI leg is roughly 5% of the search leg.'
+        new_to_corpus: 'the Webster twice-over dependency quote and its Sep 9 2026 event context'
+      brand_layer_erasure:
+        finding: 'Apple did not mention Google or Gemini on stage during the Sep 9 2026 Surprise and Shine keynote; all branding is Apple Foundation Models / Apple Intelligence (PYMNTS, Sep 9 2026). Apple has described the Google involvement in exactly one published sentence (June press release: Apple Foundation Models "were custom-built in collaboration with Google and its Gemini models"); nothing on Apples consumer pages goes further (macobserver.com, Sep 10 2026).'
+        mediascope_note: 'The erasure is brand-layer only; the financial leg is real and dated. Coverage of "Siri AI" as a pure Apple product reads the brand, not the intelligence layer.'
+      status_sep2026: 'ACTIVE per the #599 convention (bounded absence of exit, renegotiation, or termination reporting per the iteration-492 rule). Affirmatively corroborated Sep 9-10 2026: PYMNTS confirms "Siri now runs on Gemini" at the event; macobserver confirms Siri AI beta ships Sep 14 2026 on Gemini. No signed Apple-publisher direct deal has replaced the bypass (mechanism 606 / #619 status check stands).'
+      wearables_coverage_prediction: 'Extends mechanism 156s wearables prediction: if Apple launches smart glasses (rumored 2027-2028), publications negotiating Siri AI direct deals (mechanism 606) would carry Apple-side financial reasons to frame Apple glasses favorably, while the bypass leg shows Apple extracting publisher content value into Siri without paying publishers - the incentive runs through Google, not the publisher. Predictions, not findings.'
+      source_urls:
+      - https://www.macrumors.com/2025/11/05/apple-google-new-siri-payment/
+      - https://www.reuters.com/business/apple-use-googles-ai-model-run-new-siri-bloomberg-news-reports-2025-11-05/
+      - https://9to5google.com/2026/01/12/gemini-will-officially-power-apples-ai-enhanced-siri-starting-later-this-year/
+      - https://www.cnn.com/2026/01/12/tech/apple-google-gemini-siri
+      - https://www.pymnts.com/apple/2026/after-two-years-of-hype-apple-says-siri-ai-is-ready/
+      - https://www.pymnts.com/apple/2026/early-apple-siri-ai-cant-read-gmail-or-whatsapp-messages/
+      - https://www.macobserver.com/tips/round-ups/does-siri-ai-use-google-gemini/
+      - https://tech-insider.org/apple-google-gemini-siri-deal-1-billion-2026/
+      - https://www.hachettebookgroup.com/hachette-book-group-news/publishers-and-authors-file-class-action-lawsuit-against-google-for-willful-copyright-infringement-to-develop-gemini-ai-models/
+      - https://www.adweek.com/media/book-publishers-sue-google/
+      - https://www.thewrap.com/industry-news/tech/hachette-scott-turow-google-gemini-ai-copyright-lawsuit/
+      cross_references:
+      - 'mechanism 156 (Apple Siri AI publisher deals: the phase_2_bypass origin line; this mechanism is its first dedicated deal-level formalization)'
+      - 'publisher_content_bypass block (the bypass chain, negotiation history, and Conde Nast double-loss note; this mechanism adds the dated deal leg, quantum corroboration, asymmetric dependency, and Sep 2026 status)'
+      - '#619 / mechanism 606 (Sep 8 2026 Siri AI publisher negotiation status check: no signed direct deal has replaced the bypass; premise re-verified this run)'
+      - '#679 (Apple News+ x Conde Nast revenue-share leg: a separate Apple-publisher financial lever)'
+      - '#684 (Microsoft PCM x Conde Nast bilateral leg: fixed-fee comparator)'
+      - '#674 (Sep 11 2026 multi-lab new-deal sweep: no new paid publisher signings for Apple surfaced; consistent)'
+      - 'mechanism 549 (News Corp x Meta up-to-$50M/yr direct leg: the voluntary-direct comparator)'
+      - 'Adweek parallel Meta suit (May 2026, same plaintiff roster vs Meta over Llama training, Reuters-reported: the bypass chain has a Meta-side litigation mirror)'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'the ~$1B/yr quantum is a Bloomberg-reported figure via people familiar with the matter; neither Apple nor Google has publicly disclosed exact financial terms (CNN, Jan 12 2026; tech-insider.org, Sep 2026). Actual payments could differ materially.'
+      - rank: 2
+        strength: strong
+        confounder: 'the bypass chain links BOOK and JOURNAL training litigation (Hachette/Cengage/Elsevier) to general-assistant Siri outputs; the complaint alleges training on books and articles, and the specific news-content link runs through Googles publisher relationships (Showcase, News AI pilot), not the book suit'
+      - rank: 3
+        strength: moderate
+        confounder: 'Apple evaluated OpenAI and Anthropic and chose Google on capability and infrastructure grounds (Macworld, Nov 5 2025); the bypass outcome may be incidental to capability-driven procurement, not evasion-driven. Bloomberg frames the deal as a stopgap until Apples own models are ready.'
+      - rank: 4
+        strength: moderate
+        confounder: 'the Hachette/Cengage/Elsevier allegations are unproven (no ruling on Googles liability has issued); the $10Bs-$100Bs figure is a cited internal estimate, not an adjudicated finding'
+      - rank: 5
+        strength: weak
+        confounder: 'Siri AI beta ships with capability constraints (no Gmail or WhatsApp access at launch, per NYT via PYMNTS Sep 9 2026); the bypass delivers content access, not content quality'
+      novelty_verification:
+      - 'Zero test_type_c_699 files on disk pre-commit (glob verified)'
+      - 'No Type C #699 in git log pre-commit (grep verified)'
+      - 'Zero mechanism_654 keys in profiles/ pre-commit (grep verified)'
+      - 'Max numeric mechanism id pre-commit 653 (Raymond Wong, journalists.yaml)'
+      - 'No dedicated Apple-Google Gemini deal mechanism before insertion (only phase_2_bypass lines inside mechanism 156 and the unkeyed publisher_content_bypass block; parsed-verified)'
+      - 'New-to-corpus: PYMNTS Webster twice-over dependency quote (Sep 9 2026); macobserver one-sentence brand-erasure finding (Sep 10 2026); Munster/Deepwater up-to-$5B multi-year estimate (tech-insider.org, Sep 2026); Adweek Google Books snippet-agreement origin plus $10Bs-$100Bs internal estimate; Reuters Nov 5 2025 Bloomberg-relay URL; tech-insider.org Sep 2026 explainer URL'
+      research_method: '3 browser.search query sets this run (Apple Google Gemini deal Siri September 2026 status, since 2026-08-01; Apple pays Google $1 billion per year Gemini Siri; Hachette Cengage Elsevier lawsuit Google Gemini training data unauthorized books 2026). URLs copied verbatim from Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps (zero test_type_c_699 files; no #699 in git log; zero mechanism_654 keys; max 653). No zero-coverage claims per iteration-492 rule; bounded absence only. No em dashes; ASCII-only.'
+      statistical_discipline:
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      falsification_family:
+        membership: 'NOT a member - deal-level leg with no coverage-tone pair; ledger stays at 20 after #698s TWENTIETH'
+        boundary_note: 'per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence'
+      artifact_readiness: 'No analysis.json update warranted. Deal-level leg; descriptive only.'
+      caution: 'Structural mapping only. Documents the bypass chain, quantum, asymmetric dependency, and brand-layer erasure, not editorial capture. No coverage-tone claim is made.'
     apple_news_platform_leverage:
       overview: 'Apple News+ creates a financial dependency between Apple and 400+
 
