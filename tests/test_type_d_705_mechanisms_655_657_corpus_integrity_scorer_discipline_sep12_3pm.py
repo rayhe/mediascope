@@ -285,7 +285,7 @@ class TestPost704CorpusIntegrity:
 
 # ── Rotation guard / novelty anchor (#565 convention) ───────────────────────
 
-ANCHORED_SHA = "PATCH_IN_FOLLOWUP"
+ANCHORED_SHA = "3336b073b241935817dd6c480659d290820ea0ec"
 
 
 class TestRotationCycleGuard705:

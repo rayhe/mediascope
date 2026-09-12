@@ -18,7 +18,7 @@
 
 **Novelty Verification:** Zero test_type_d_705 files on disk pre-commit (glob verified); no Type D commit with 705 in the title pre-commit (git log --grep verified); zero mechanism_658 keys in profiles/ and tests/ pre-commit; max numeric mechanism_id 657 pre-commit; no Type D run covering mechanisms 655-657 jointly before (the #700 file covered 652/653; m655-657 had individual iteration files only).
 
-**Commit hashes:** main TBD; followup TBD (ANCHORED_SHA patched post-commit per #565 convention)
+**Commit hashes:** main 3336b073b241935817dd6c480659d290820ea0ec; followup TBD (ANCHORED_SHA patched post-commit per #565 convention)
 
 ---
 
