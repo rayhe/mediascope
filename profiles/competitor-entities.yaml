@@ -8666,6 +8666,136 @@ entities:
         iteration: 697
         type: A
         date: 2026-09-12 07:00 PDT
+    mechanism_655_fastcompany_apple_duo_launch_register_vs_fastcompany_meta_muse_register_sep12:
+      mechanism_id: 655
+      iteration: 702
+      iteration_type: A
+      iteration_time: "2026-09-12 12:00 PDT"
+      date_analyzed: "2026-09-12"
+      publication_focus: "fastcompany"
+      competitor: "apple"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      author: "Kit (with Ray)"
+      pair: "Fast Company x Apple (vs Meta)"
+      event: "Apple iPhone Duo foldable launch (Sep 9 2026) vs Meta Muse AI-agent launch (Sep 8 2026): launch-week pegs at Fast Company (Mansueto Ventures)"
+      test_file: "tests/test_type_a_702_fastcompany_apple_duo_launch_register_vs_meta_muse_sep12_12pm.py"
+      finding: >
+        Fast Company covered Apple's iPhone Duo through a design-delight
+        register (launch-day design piece, +0.35 illustrative) and Meta's
+        Muse launch through a security-and-trust register with a dedicated
+        "Security and trust" section (-0.30 illustrative): 'The biggest
+        barrier to users handing over their personal affairs to a Meta AI
+        agent may be trust. Meta''s core advertising business is built on
+        harvesting the personal data of its social app users, and the
+        company has shown a disregard for the mental health of young
+        users.' Illustrative delta (Apple minus Meta) +0.65, n=1 vs n=1,
+        classic degenerate statistical contract per the #638/#643
+        convention (t=0.0, p=1.0, d=0.0); no engine run, no divergence pin.
+        Financial context: Fast Company (Mansueto Ventures) carries NO
+        known AI licensing deal with Apple or Meta on record (bounded
+        absence this run: LLM Pulse deal-map search and quoted
+        deal-search returned no Mansueto/Fast Company licensing deal;
+        Mansueto's RSL 1.0 endorsement is an open-standards endorsement,
+        not a paid deal; mechanism #121's prior record confirms no FC AI
+        licensing deals). This is a zero-gradient control: the incentive
+        theory makes no differential prediction, so the observed gap
+        cannot contradict it - NOT a falsification-family member; the
+        ledger stands at 20 after #698's TWENTIETH. The Duo launch-genre
+        series now spans five publications: WSJ celebrated (+0.45,
+        #662/m631), The Verge celebrated (+0.38 avg, #687/m646), Reuters
+        ran skeptical (-0.05 avg, #692/m649), Gizmodo celebrated (+0.325
+        avg, #697/m652), Fast Company celebrated (+0.35). The
+        launch-celebration register holds at tech/business press and
+        breaks at the wire. Correlation only, not proof of editorial
+        influence.
+      apple_arm:
+        items:
+          - title: "Apple's new iPhone Duo changes the dock UI for the first time ever"
+            date: "2026-09-09 (Fast Company; opened first-hand this run)"
+            url: "https://www.fastcompany.com/91604701/apples-iphone-duo-has-a-new-intuitive-vertical-interface"
+            byline: "Hunter Schwarz (Fast Company contributor; design/advertising beat)"
+            register: "product_design_forward"
+            key_framing: "'Not only is Apple going foldable with its new iPhone Duo, its user interface is going vertical too'; 'turning parts of the iPhone''s longtime UI on its head'; the horizontal home-screen dock 'has now been moved to the side'; 'it puts major controls closer to the user''s thumb, helpful for a phone that folds out longer than it is tall'; status bar 'redesigned... into a more compact graphic'; 'two different home screens at once when it''s unfolded, or even two different apps'; 'the first iPhone to support the Apple Pencil'; 'Despite the changes, Apple said it designed the new system to feel natural and familiar... it''s meant to be intuitive for longtime iPhone users'; zero caveats in the piece"
+            manual_illustrative_tone: 0.35
+            source_note: "first-hand browser.open this run, 48 rendered lines"
+        average_manual_illustrative: 0.35
+      meta_arm:
+        carried_from: "new to corpus this run (no prior Fast Company x Meta Muse mechanism)"
+        items:
+          - title: "Meta wants its new Muse AI agent to run your digital life"
+            date: "2026-09-09 (Fast Company; opened first-hand this run)"
+            url: "https://www.fastcompany.com/91603856/meta-wants-its-new-ai-agent-to-run-your-digital-life"
+            byline: "unattested in the opened rendered text"
+            register: "security_anchored_launch_coverage"
+            key_framing: "Dedicated 'Security and trust' section: 'The biggest barrier to users handing over their personal affairs to a Meta AI agent may be trust. Meta''s core advertising business is built on harvesting the personal data of its social app users, and the company has shown a disregard for the mental health of young users'; 'The more agency and autonomy an AI possesses, the greater the potential for privacy or security breaches'; Miranda Bogen (CDT): agents could 'damage someone''s reputation, leak sensitive medical information, or even deplete bank accounts'; 'Meta has spent copious amounts of money on the AI research talent and computing power'; capability admitted: dedicated Muse Secure VM with own browser, Sentinel agent privacy thresholds, user holds decryption key for Confidential VM, audit trail, opt-out of ad systems and training data use, Link wallet one-time-use cards"
+            manual_illustrative_tone: -0.3
+            source_note: "first-hand browser.open this run, 57 rendered lines"
+        average_manual_illustrative: -0.3
+      financial_context:
+        predictor: "null_tie_control"
+        prediction: "no_differential_prediction"
+        chain: "Fast Company (Mansueto Ventures): NO known AI licensing deal with Apple or Meta on record (bounded search this run: LLM Pulse AI Content Licensing Deal map search and quoted Mansueto/Fast Company deal search returned no paid licensing deal; Mansueto Group's Dec 2025 RSL 1.0 endorsement is an open-standards endorsement, not a payment flow; mechanism #121's prior corpus record confirms Fast Company has no OpenAI/Google/Anthropic AI content licensing deals)."
+        status: "zero-gradient control: the theory makes no differential prediction at Fast Company, so the observed +0.65 illustrative gap cannot contradict it. NOT a falsification-family member; ledger stands at 20 after #698's TWENTIETH. Correlational only, not proof of editorial influence."
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = Apple arm, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.35]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.3]
+        target_avg: 0.35
+        peer_avg: -0.3
+        delta_manual_illustrative: 0.65
+        delta_calc: "0.35 - (-0.3) = 0.65"
+        engine_degenerate: "n=1 vs n=1: classic degenerate statistical contract per the #638/#643 convention (Welch t=0.0, p=1.0, d=0.0). Engine NOT run; no divergence pin (divergence pins require engine significance, which cannot occur on degenerate arms)."
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)"
+        artifact_grade: false
+      falsification_family:
+        membership: "NOT a falsification-family member: zero-gradient control (no known Fast Company x Apple or Fast Company x Meta AI licensing deal on record, bounded absence this run); the incentive theory makes no differential prediction, so contradiction is impossible. Ledger stands at 20 after #698's TWENTIETH; #699 Type C, #700 Type D and #701 Type E claimed no membership."
+        prediction: "the incentive theory makes no differential prediction at a zero-gradient publication: no known paid AI content licensing deal between Mansueto/Fast Company and Apple or Meta; the theory is silent on the expected direction"
+        observed: "register gap observed (Apple +0.35 vs Meta -0.30; illustrative delta Apple-minus-Meta +0.65), but with no named gradient the gap is a genre/desk confound, not a theory contradiction; no membership claimed"
+        within_arm_range_vs_gap: "n=1 vs n=1: no within-arm range exists; the between-entity gap (+0.65) is the entire signal. The desk-mismatch confound carries the explanatory load."
+        publication_genre_boundary: "fifth publication in the Duo launch-genre series: WSJ +0.45 celebration (#662/m631), The Verge +0.38 avg celebration (#687/m646), Reuters -0.05 avg with skeptical follow-up (#692/m649), Gizmodo +0.325 avg celebration (#697/m652), Fast Company +0.35 design-forward celebration (this run). The launch-celebration register holds at tech/business press (WSJ, Verge, Gizmodo, Fast Company) and breaks at the wire (Reuters)"
+      confounders_ranked:
+        strong:
+          - "Desk/register mismatch dominates the gap: the Apple arm is a design-desk product piece by a design/advertising-beat contributor (Hunter Schwarz); the Meta arm is a tech-policy launch piece with a dedicated 'Security and trust' section. Comparing a design register to a trust-register compares desks, not entity preference; the #627 verbatim-URL discipline does not fix desk asymmetry."
+          - "News-peg valence skew: the Muse piece is anchored on trust and Meta's ad-business surveillance economics ('built on harvesting the personal data of its social app users') while the Duo piece is anchored on UI design delight at a launch event. The registers track their news pegs, not entity preference."
+          - "Author-level variance unruled-out: the Duo piece carries a byline (Hunter Schwarz, design/advertising beat); the Muse piece byline was unattested in the opened rendered text, so author-style variance cannot be bounded."
+        moderate:
+          - "Tight timing window: Duo piece Sep 9, Muse piece Sep 9 (launch Sep 8). Same-week pegs make timing skew minimal, a strength of the pair."
+          - "Evidence tiers symmetric: both pieces read first-hand this run (48 and 57 rendered lines); sample is degenerate (n=1 vs n=1) so the delta is arithmetic only."
+          - "Fast Company publication baseline: the outlet covers Apple through a design/innovation lens and Meta through a trust/surveillance lens as a standing pattern (mechanism #121: Snap Specs aspirational profile vs Meta glasses controversy compilation at the same publication)."
+          - "RSL 1.0 standards endorsement (Mansueto Group, Dec 2025): a posture toward AI licensing terms, not a paid deal with any lab - no payer gradient exists to contradict."
+        weak:
+          - "Headline register leakage: 'run your digital life' primes an autonomy-concern read before the body."
+          - "Most Innovative Companies Awards promo footer on both Fast Company pages: house promotion, no tonal effect."
+          - "n=1 vs n=1: classic degenerate statistical contract; verdict-invariant under rounding (delta +0.65 exact at 2dp)."
+      counterevidence:
+        - "#121 / Fast Company cross-entity privacy vocabulary asymmetry (Mechanism #121, Aug 15): the same publication ran ZERO privacy vocabulary on Snap's camera-equipped Spectacles (4 cameras, aspirational CEO profile) while compiling Meta glasses controversies (EFF cited twice, criminal penalties). The trust register is entity-selective, not a generic anti-camera-hardware stance. This bounds the 'Fast Company is tough on all surveillance hardware' reading and supports the structural ad-competition driver (Meta $131B ad revenue vs Snap $4.6B)."
+        - "Reuters #692 (-0.05 Apple arm avg): the same Duo launch drew skepticism at the wire; the celebration register is publication-bounded, not a property of the Duo event."
+        - "#587 / Gizmodo x Apple null-tie control (delta +0.1334 n.s., Sep 7): launch-peg registers are event-driven; a non-launch peg drew near-neutral tone at a tech publication."
+        - "The Muse piece admits capability ('dedicated Muse Secure VM', Sentinel agent privacy thresholds, user-held decryption key, audit trail, opt-out of ad systems and training): the trust critique is framed against Meta's stated safeguards, which bounds the -0.30 read and prevents a -0.45-tier score."
+      cross_references:
+        - "#662 / mechanism 631 (WSJ x Apple Duo launch celebration +0.45; launch-genre series first publication)"
+        - "#687 / mechanism 646 (The Verge x Apple Duo launch celebration +0.38 avg; launch-genre series second publication)"
+        - "#692 / mechanism 649 (Reuters x Apple Duo launch register vs Reuters x Meta Muse register; launch-genre series third publication)"
+        - "#697 / mechanism 652 (Gizmodo x Apple Duo launch register vs Gizmodo x Meta Muse experiment register; launch-genre series fourth publication; same zero-gradient control structure)"
+        - "#121 / mechanism 121 (Fast Company Snap Specs vs Meta glasses privacy vocabulary asymmetry; same publication, structural ad-competition driver; first FC mechanism without AI licensing deals)"
+        - "#587 (Gizmodo x Apple null-tie control, delta +0.1334 n.s.)"
+        - "#627 (Verge x Amazon zero-gradient control; same control structure)"
+        - "#698 / mechanism 653 (TWENTIETH falsification-family member; ledger-at-20 baseline)"
+        - "#638/#643 convention (degenerate statistical contract on n=1 and n=2 arms)"
+        - "iteration-492 rule (bounded absence for the FT/Guardian/WIRED/BI and FT/Duo pairs this run; no zero-coverage claims)"
+        - "#700 convention (designed supersession of #700's no-655 sweep tests)"
+        - "#565 convention (followup anchor patch)"
+      novelty: "First dedicated Fast Company x Apple Duo Type A mechanism (mechanism 655); first Fast Company x Meta Muse mechanism (prior Fast Company x Meta mechanisms 103/121 use glasses pegs, old schema). Fifth publication in the Duo launch-genre series (#662 WSJ, #687 Verge, #692 Reuters, #697 Gizmodo). Zero mechanism_655 keys in profiles/ pre-commit (pinned by #700's sweep tests, superseded by design this run per the #700 convention); max numeric mechanism_id pre-commit 654 (#699/m654). Both Fast Company URLs new to corpus pre-commit (repo-wide grep zero hits). #700's test_max_modern_mechanism_id_is_654, test_no_mechanism_655_in_profiles, test_no_mechanism_655_key_in_profiles, and test_no_mechanism_655_in_tests fail by designed supersession (the last because this run's own test file references mechanism_655; the sweep excludes only its own __file__). Journalist check: no journalist career mechanism added (Duo byline Hunter Schwarz is a Fast Company contributor covered at publication level; Muse byline unattested)."
+      research_method: "8 browser.search query sets this run (Financial Times Apple iPhone launch foldable since 2026-09-08; Financial Times Meta Muse since 2026-09-07; ft.com iPhone Duo Ternus since 2026-09-09; thetimes.com Meta Muse since 2026-09-08; Bloomberg iPhone Duo since 2026-09-09; fastcompany.com iPhone Duo since 2026-09-09; Fast Company Mansueto AI content licensing deal; quoted Fast Company/Mansueto licensing-deal search) + 2 first-hand browser.opens (both Fast Company pieces: Duo 48 rendered lines, Muse 57). FT, Guardian, WIRED, and Bloomberg queries did not surface usable verbatim same-publication Apple Duo and Meta Muse URLs (bounded search-result absence per the iteration-492 rule, not noncoverage); the Times surfaced a Duo URL but no Times Muse piece; the run pivoted to Fast Company, where verbatim URLs for both pegs surfaced in this run's Full-URL listings. All URLs copied verbatim; no canonical URLs invented; no zero-coverage claims; no em dashes; ASCII-only. Pre-commit novelty greps: zero test_type_a_702 files on disk; no Type A #702 in git log; zero mechanism_655 keys in profiles/ pre-commit; both FC URLs new to corpus repo-wide (profiles/, tests/, docs/)."
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 702
+        type: A
+        date: 2026-09-12 12:00 PDT
 
   google:
     display_name: Google / Alphabet
