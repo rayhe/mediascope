@@ -42,7 +42,7 @@ import yaml
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 COMPETITOR = os.path.join(REPO, "profiles", "competitor-entities.yaml")
 ITERATION = 699
-ANCHOR_SHA = "75dd23c"
+ANCHOR_SHA = "9a4a1d9"
 MECH_KEY = "mechanism_654_apple_google_gemini_publisher_content_bypass_leg_sep2026"
 
 
@@ -389,7 +389,11 @@ class TestRotationCycleGuard699:
         assert self.WINDOW[699] == "C" and self.WINDOW[698] == "B"
 
     def test_anchor_is_followup_commit(self):
-        pytest.skip("anchor patched to the #699 main commit in the followup, per #565 convention")
+        # Per #565 convention the anchor is patched to the #699 main commit
+        # in the followup; verify the patch landed.
+        assert git("cat-file", "-e", f"{ANCHOR_SHA}^{{commit}}").returncode == 0
+        msg = git("log", "-1", "--format=%s", ANCHOR_SHA).stdout.strip()
+        assert "Type C #699" in msg
 
     def test_iteration_log_entry_regex_self_check(self):
         sample = "#699 Type C: Apple x Google Gemini bypass leg"
@@ -421,4 +425,4 @@ class TestDocSyncRatchet699:
 
     def test_doc_count_stats_sync(self):
         text = open(self.README, encoding="utf-8").read()
-        assert "| Tests | 36852 |" in text and "Across 1027 test files" in text
+        assert "| Tests | 36861 |" in text and "Across 1027 test files" in text
