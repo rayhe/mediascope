@@ -388,7 +388,7 @@ class TestIterationLog692:
 class TestRotationCycleGuard692:
     """Rotation window 688-692 closes E->A. Anchor patched in followup per #565."""
 
-    ANCHORED_SHA = "0000000000000000000000000000000000000000"
+    ANCHORED_SHA = "3843b2719d5e76c14ee5941ef6d09d5c2a800f20"
 
     def _window(self):
         text = _read(LOG_PATH)
