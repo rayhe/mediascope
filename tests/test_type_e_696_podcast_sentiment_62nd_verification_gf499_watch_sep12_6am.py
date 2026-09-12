@@ -320,7 +320,7 @@ class TestStandingRules696:
         # code assignment), not mere mentions inside comments or this
         # assertion. The pattern below must not match its own source line.
         text = _read("tests/" + TEST_BASENAME)
-        assert not re.search(r"^\\s*mechanism_id\\s*[:=]", text, re.M), (
+        assert not re.search(r"^\s*mechanism_id\s*[:=]", text, re.M), (
             "assigned mechanism-id key found; Type E logs no mechanism"
         )
 
@@ -345,7 +345,7 @@ class TestNoAnalysisJsonUpdate696:
 class TestRotationCycleGuard696:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #696 main-commit SHA is known.
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+    ANCHORED_SHA = "3798775aec82e45fb99e0af0684c4ddb4679afb4"
 
     @staticmethod
     def _mains():
@@ -420,7 +420,7 @@ class TestDocSync696:
         path = os.path.join(REPO_ROOT, "README.md")
         with open(path) as fh:
             text = fh.read()
-        m = re.search(r"\\| Tests \\| (\\d+) \\| Across (\\d+) test files \\|", text)
+        m = re.search(r"\| Tests \| (\d+) \| Across (\d+) test files \|", text)
         assert m, "README stats table row not found"
         return int(m.group(1)), int(m.group(2))
 
@@ -447,7 +447,7 @@ class TestDocSync696:
         path = os.path.join(REPO_ROOT, "README.md")
         with open(path) as fh:
             text = fh.read()
-        m = re.search(r"has \\*\\*(\\d+) tests\\*\\* across (\\d+) test files", text)
+        m = re.search(r"has \*\*(\d+) tests\*\* across (\d+) test files", text)
         assert m, "README narrative test-count line not found"
         total, files = self._actual_counts()
         assert (int(m.group(1)), int(m.group(2))) == (total, files)
