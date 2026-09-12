@@ -16608,7 +16608,83 @@ journalists:
     field: Financial Journalism
     institution: City, University of London
     source_url: https://me.sh/profile/hannahmurphyftcom
-- career:
+- mechanism_653_raymond_wong_duo_hands_on_vs_ray_ban_gen2_review_register_constancy_sep12:
+    mechanism_id: 653
+    iteration: 698
+    type: B
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    block_key: type_b_698_raymond_wong_duo_hands_on_vs_ray_ban_gen2_review_register_constancy_sep12
+    journalist: Raymond Wong
+    publication: Gizmodo
+    pair_shape: same-journalist cross-entity byline-isolated review-register pair
+    apple_arm:
+      date: '2026-09-09'
+      title: 'iPhone Duo Hands-On: The Inner Screen Looks Like Real Paper'
+      url: https://gizmodo.com/iphone-duo-hands-on-2000808932
+      byline: Ray Wong (sole)
+      byline_attribution: full - listed on https://gizmodo.com/author/raywong page 1 (verified first-hand this run); read first-hand in #697 (78 rendered lines)
+      author_page: https://gizmodo.com/author/raywong
+      register: celebratory hands-on review
+      register_detail: 'On-site hands-on from the Apple Steve Jobs Theater event. "the iPhone Duo is a stunning device to hold in your hands", "I immediately marveled at the iPhone Duo''s thinness", matte nano-texture inner screen "absolutely gorgeous. It looks like paper; it''s not reflective at all", "Apple may have made the most desirable foldable ever created". Moderated by reviewer caveats: "the crease is not completely invisible", "The loss of Face ID is going to take some getting used to", "Is it worth $2,000 or more? I don''t have an answer for that yet".'
+      tone_illustrative: 0.45
+      evidence_grade: 'first-hand read in #697 (gizmodo.com, 78 rendered lines); byline verified this run via author-page listing (full)'
+    meta_arm:
+      date: '2026-04'
+      title: 'Ray-Ban Meta Gen 2 Review: Still the Best Non-Display Smart Glasses'
+      url: https://gizmodo.com/ray-ban-meta-gen-2-review-still-the-best-non-display-smart-glasses-2000664295
+      byline: Raymond Wong (sole)
+      byline_attribution: 'partial - byline header not captured in this run''s render; photo credits all "@ Raymond Wong / Gizmodo" with first-person long-term-owner voice (read first-hand this run, 120 rendered lines); the sibling Meta Ray-Ban Display review disambiguates: its author texts "my colleague, Ray Wong", so that review is not his while this one carries no such reference; corpus profiles/gizmodo.yaml attributes it to Wong; author-archive depth (fall 2025, page 8 fetch failed this run) left unverified'
+      register: hands-on product review with verdict box
+      register_detail: 'Review-unit hands-on with scored verdict box (3.5): "Ray-Ban Meta AI Glasses Gen 2 aren''t exciting but they''re better then the original". "These are the best pair of Ray-Ban Meta AI glasses you can buy without a screen. Period." "best battery in a pair of non-display Ray-Ban Meta AI glasses yet." Full-day battery test (100% to 15% over ~5h audio, 32-min call 100% to 96%). Moderated by Meta-AI caveats: Meta AI "still finicky at best", the Meta AI app "loves to promote AI slop", privacy caveat "Meta has a pretty bad track record on that front... you''d best steer clear of Ray-Ban smart glasses".'
+      tone_illustrative: 0.3
+      verdict_score: 3.5
+      evidence_grade: 'first-hand read this run (gizmodo.com, 120 rendered lines, full text); date from search-listing "Last Updated: 157 days ago" pegging ~Apr 8 2026, corpus profiles/gizmodo.yaml dates 2026-04; URL in corpus via profiles/gizmodo.yaml examples (no mechanism)'
+    register_bound_note:
+      register_282: 'news/opinion register - the Aug 24 vocabulary-concentration test (file-local, not a YAML mechanism) found alarm vocabulary ("glasshole", "privacy nightmare", "surveillance", "spiraling") applied EXCLUSIVELY to Meta camera glasses while Samsung Galaxy Glasses and Google Android XR glasses received neutral-to-enthusiastic coverage'
+      register_698: 'review register - this pair''s constancy finding'
+      contradiction: false
+      bound_statement: 'The constancy found here does not extend to Wong''s news/opinion register, where #282''s alarm-vocabulary concentration stands unchallenged. The "Wong goes hard on Meta" journalist-level attribution fails in the review register but the register-specific vocabulary asymmetry remains; the attribution is register-bounded, not reviewer-level.'
+      corroborating_meta_positive_url: https://gizmodo.com/the-meta-ray-ban-displays-dumb-smart-glasses-ai-is-dumb-no-more-2000791752
+      corroborating_note: 'Wong''s Jul 30 2026 "The Meta Ray-Ban Display''s Dumb Smart Glasses AI Is Dumb No More" (in-corpus profiles/gizmodo.yaml, author Raymond Wong) is a Meta-positive product piece ("Dare I say it was actually helpful") - alarm vocabulary is not his only Meta register, consistent with register variance rather than blanket entity bias'
+    asymmetry_scorer_result:
+      method: 'MANUAL ILLUSTRATIVE (Aug 28 2026 standing rule) - Apple tone carried from #697 hand score; Meta tone hand-scored from first-hand full-text read this run; illustrative only; no engine run'
+      target_tones_manual_illustrative: [0.45]
+      reference_tones_manual_illustrative: [0.3]
+      target_avg: 0.45
+      reference_avg: 0.3
+      delta_apple_minus_meta: 0.15
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      artifact_grade: false
+      limitations: 'Meta arm byline partial (author-page listing unverified this run); ~5-month time gap (Apr vs Sep 2026); product-novelty asymmetry (first-gen foldable vs iterative refresh); verdict box exists only on the Meta arm; degenerate n=1 per arm per #638/#643'
+    verdict: 'REGISTER CONSTANCY in the review register - TWENTIETH falsification-family member. Same-journalist, same-publication byline-isolated pair, genre-matched (both hands-on review registers): Wong applies same-signed positive review registers to Apple (+0.45 illustrative, Duo hands-on) and Meta (+0.30 illustrative, Ray-Ban Gen 2 review). The journalist-level "Wong goes hard on Meta" attribution fails in his review register - his Meta review is product-positive ("Still the Best", verdict 3.5, "best pair... Period"). This bounds #282''s vocabulary-concentration finding to the news/opinion register: register-specific asymmetry, not reviewer-level bias. The +0.15 gap tracks product novelty (first-gen foldable delight vs iterative "aren''t exciting but improved" refresh) rather than entity. Correlation, not causation. No analysis.json update warranted.'
+    financial_context:
+      predictor: null_tie_control
+      prediction: no_differential_prediction
+      detail: 'Correlation, not causation. Gizmodo (Keleops AG, formerly G/O Media) carries NO known AI licensing deal with Apple or Meta (both financial_tie none in profiles/gizmodo.yaml competitor_relationships, established #697) - zero-gradient control: the deal theory makes no differential prediction and the observed constancy cannot be attributed to a deal gradient. The falsification here is at the journalist-attribution level (Wong''s byline), not the deal-gradient level, consistent with the family''s attribution class.'
+    confounders:
+      - '[STRONG] Meta-arm byline is partial: the author-archive page listing that would be definitive (fall 2025, ~page 8) failed to fetch this run, so attribution rests on photo credits + first-person voice + corpus + the colleague-RW disambiguator in the sibling Display review. If the byline were misattributed, the pair collapses.'
+      - '[STRONG] Time order: Meta arm ~Apr 2026, Apple arm Sep 9 2026 (~5 months apart); register drift across the gap cannot be ruled out, though both sit inside Wong''s consumer-tech beat.'
+      - '[STRONG] Product-novelty asymmetry: the Apple arm reviews a first-gen foldable (novelty premium: "most desirable foldable ever created") while the Meta arm reviews an iterative refresh ("aren''t exciting but they''re better then the original"); the +0.15 gap may track product novelty, not entity.'
+      - '[MODERATE] Access economy: the Duo hands-on was filed from Apple''s Steve Jobs Theater launch event (per #697), structurally rewarding enthusiasm; the Gen 2 review was a review-unit desk/field test. The access differential can explain part of the celebration register.'
+      - '[MODERATE] Verdict-box asymmetry: only the Meta arm carries a scored verdict box (3.5); the Duo hands-on has no score, so the tone comparison is hand-illustrative on both sides with different calibration anchors.'
+      - '[MODERATE] Register bound (#282): the constancy found here does not extend to Wong''s news/opinion register, where alarm vocabulary concentrates on Meta - the finding is register-specific.'
+      - '[WEAK] n=1 per arm degenerate contract; delta +0.15 exact at 2dp, verdict-invariant under rounding.'
+    cross_references:
+      - '#697/m652 (Apple arm source pair; Duo hands-on +0.45 hand score carried; publication-level pair with different Meta arm and different unit of analysis)'
+      - '#693/m650 (NINETEENTH falsification-family member; same journalist-attribution class, different journalist)'
+      - '#688 (SIXTEENTH member, Satariano register-constancy shape)'
+      - '#282 (Aug 24 Raymond Wong vocabulary-concentration test, file-local; this pair bounds it to the news/opinion register)'
+      - '#638/#643 (degenerate statistical contract convention)'
+      - '#565 (followup/anchor convention)'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False)'
+    novelty: 'FIRST byline-isolated pair mechanism on Raymond Wong (journalist profile entry pre-existed at journalists-list index 245 with zero mechanism_* keys; mechanism_653 added as the entry''s first mechanism key this run). The Duo-hands-on vs Ray-Ban-Gen-2-review pair was never a mechanism. Distinct from #282 (vocabulary concentration, no pair, no YAML mechanism), from the Nguyen (#693), Satariano (#688) and Hart (#653) constancy pins (different journalists), and from #697 (publication-level pair, same Apple arm, different Meta arm and different unit of analysis). Rotation: 697 A -> 698 B.'
+  career:
   - beat: consumer technology, gadgets, smartphones
     end: '2018'
     event_type: hired
