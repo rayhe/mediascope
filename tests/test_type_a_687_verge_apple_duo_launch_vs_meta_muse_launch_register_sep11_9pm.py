@@ -129,7 +129,7 @@ class TestNovelty687:
         mains = [
             line
             for line in out.stdout.splitlines()
-            if re.match(r"^Type A #687 \(main\):", line.split(" ", 1)[-1])
+            if re.match(r"^[0-9a-f]{40} Type A #687:", line)
         ]
         assert len(mains) == 1, "expected exactly one Type A #687 main commit, got %r" % (mains,)
         sha = mains[0].split()[0]
@@ -336,7 +336,7 @@ class TestIterationLog687:
 class TestRotationCycleGuard687:
     """Rotation window 683-687 closes B->A. Anchor patched in followup per #565."""
 
-    ANCHORED_SHA = "d88b1fb"
+    ANCHORED_SHA = "d88b1fb19e3d04186f825e83a12941e10c5fd0fa"
 
     def _window(self):
         text = open(LOG).read()
