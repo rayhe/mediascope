@@ -107,7 +107,7 @@ AUTHOR_PAGE = "https://gizmodo.com/author/raywong"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "a7f061751058c7cbfd7859f2d349992e11755120"
 
 
 def _careers():
@@ -410,7 +410,7 @@ class TestConfounders698:
 class TestRotationCycleGuard698:
     # Deselected pre-commit per the #565 followup convention; the rotation
     # window only closes once the #698 main commit exists.
-    ANCHORED_SHA = ANCHORED_SHA
+    ANCHORED_SHA = "a7f061751058c7cbfd7859f2d349992e11755120"
 
     @staticmethod
     def _mains():
