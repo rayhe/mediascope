@@ -12234,6 +12234,88 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/morning-brew-hires-field-as-tech-writer/
   - https://theorg.com/org/the-verge/org-chart/hayden-field
   multi_publication: true
+  mechanism_644_hayden_field_meta_muse_spark_reentry_deficit_vs_openai_gpt56_regulatory_launch_byline_register_sep11:
+    mechanism_id: 644
+    date: '2026-09-11'
+    type: 'B'
+    iteration: 683
+    iteration_type: 'B'
+    iteration_time: 2026-09-11 17:00 PDT
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    block_key: type_b_683_hayden_field_meta_muse_spark_reentry_deficit_vs_openai_gpt56_regulatory_launch_byline_register_sep11
+    journalist: Hayden Field
+    publication: The Verge (Vox Media)
+    publication_owner: Vox Media (PMC/PMX since 2026)
+    author: Kit (with Ray)
+    finding: 'Journalist-level byline-isolated register contrast with differentiation within constancy, FIRST dedicated Type B on Hayden Field (no mechanism blocks existed on her entry pre-commit). Field, The Verge senior AI reporter (CNBC hire Jun 2025; beat OpenAI, Anthropic, Google, Meta, Apple), authored both arms as SOLE byline: full byline attribution, zero co-byline dilution. Meta arm (Apr 8, 2026): "Meta is reentering the AI race with a new model called Muse Spark" - competitive-deficit re-entry register ("first model since Mark Zuckerberg spent billions overhauling the company''s AI efforts"), manual illustrative -0.15. OpenAI arm (Jun 26, 2026): "OpenAI unveils GPT-5.6 amid US AI regulatory drama" - product-unveiling under regulatory-friction register ("Less than 24 hours after news broke that OpenAI would stagger its next model release at the request of the Trump administration"; "limited preview" of Sol flagship and Terra medium-tier), manual illustrative -0.10. The same writer applies adversarial-adjacent frames to both entities but differentiates the criticism type: competitive-legitimacy deficit for Meta vs government-regulatory friction for OpenAI. The Vox Media May 29 2024 OpenAI content-licensing and product partnership (OpenAI trains on The Verge archive; $0 Meta relationship; no termination announced as of Aug 31 2026, mechanism #425) does NOT predict a softer OpenAI register at this journalist - the deal-predicts-softness hypothesis fails for Field, making this a constancy pin in the mechanism #626/#653 Robert Hart analytic shape. Three-entity beat-lens constancy check: Field applies the same "AI race loser" deficit lens to Google (Decoder Aug 13 2026: "Does Google even want to win at AI?" / "Is Google losing the AI race?") and Apple (Jun 9 2025: "Apple punts on Siri updates as it struggles to keep up in the AI race") - the deficit register is beat-lens, not Meta-targeted. MANUAL ILLUSTRATIVE delta (OpenAI minus Meta) +0.05; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci NOT_CALCULATED; is_significant False; statistical_contract degenerate_n1_per_arm per the #638/#643 convention; no engine run; NOT artifact-grade. Correlation only.'
+    meta_arm:
+      title: Meta is reentering the AI race with a new model called Muse Spark
+      url: https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/
+      publication: The Verge
+      date: '2026-04-08'
+      byline: Hayden Field (sole)
+      byline_attribution: full - sole byline, re-entry-deficit register fully attributable to Field
+      register: competitive-deficit re-entry
+      register_detail: 'Headline "reentering the AI race" frames the launch as a return from behind; body describes Muse Spark as "the first model since Mark Zuckerberg spent billions overhauling the company''s AI efforts" - the peg is Meta''s competitive comeback, not model capabilities'
+      tone_illustrative: -0.15
+      tone_provenance: hand-scored this run (#683); illustrative only per Aug 28 rule
+      evidence_grade: mirror-verified byline (technewstube mirror shows "By Hayden Field Apr 8, 2026, 12:12 pm"); canonical theverge.com fetch policy-blocked per #492
+    openai_arm:
+      title: OpenAI unveils GPT-5.6 amid US AI regulatory drama
+      url: https://technewstube.com/theverge/1844887/openai-unveils-gpt-5-6-us-ai-regulatory-drama/
+      publication: The Verge
+      date: '2026-06-26'
+      byline: Hayden Field (sole)
+      byline_attribution: full - sole byline, regulatory-friction register fully attributable to Field
+      register: product-unveiling under regulatory friction
+      register_detail: 'Lead: "Less than 24 hours after news broke that OpenAI would stagger its next model release at the request of the Trump administration, that model, GPT-5.6, is here" - "limited preview" of Sol flagship and Terra medium-tier; launch framed through the government-action news peg with zero launch-celebratory vocabulary'
+      tone_illustrative: -0.10
+      tone_provenance: hand-scored this run (#683); illustrative only per Aug 28 rule
+      evidence_grade: mirror-verified byline (technewstube mirror shows "By Hayden Field Jun 26, 2026, 1:00 pm"); canonical theverge.com fetch policy-blocked per #492
+    asymmetry_scorer_result:
+      scorer_mode: MANUAL ILLUSTRATIVE
+      target_tones_manual_illustrative:
+      - -0.10
+      reference_tones_manual_illustrative:
+      - -0.15
+      target_avg: -0.10
+      reference_avg: -0.15
+      delta_openai_minus_meta: 0.05
+      delta_calc: -0.10 - (-0.15) = 0.05
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      convention: '#638/#643'
+      engine_run: false
+      artifact_grade: false
+      method: 'MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026); hand-assigned n=1 illustrative tones this run (#683), arithmetic only, no engine run'
+      limitations: 'Both arms sole bylines (full attribution, no co-byline confound, stronger isolation than #678). Degenerate n=1-per-arm statistical contract per #638/#643; no artificial statistical claims from hand-assigned scores. Meta tone -0.15 vs OpenAI tone -0.10: the register gradient is register differentiation within constancy, not a magnitude asymmetry.'
+    financial_context: 'Vox Media signed an OpenAI content-licensing and product partnership May 29 2024: OpenAI gets current content plus the full archive (including The Verge) to train ChatGPT; Vox gets licensing fees and technology access; deal signed without union consultation (WGAE concerns, mechanism #425). PMC acquired Vox Media 2026 (PMX subsidiary); no termination announced as of Aug 31 2026. $0 Meta relationship. The money direction predicts softer OpenAI framing at The Verge; Field''s GPT-5.6 arm runs adversarial-adjacent (regulatory friction), the opposite direction. Correlation, not causation.'
+    confounders:
+    - '[STRONG] News peg / genre mismatch - the Meta piece is a model-launch peg that invites competitive-positioning language; the OpenAI piece is a regulatory-delayed-launch peg (Trump administration stagger request) that invites regulatory framing; register tracks the peg, not necessarily the entity'
+    - '[STRONG] Time order - Apr 8 vs Jun 26 2026, nearly 11 weeks apart in different news cycles; not a same-window comparison'
+    - '[STRONG] Genuine Meta turmoil basis - Meta''s 2025-2026 AI overhaul and MSL restructure give legitimate grounding for re-entry framing; the deficit register is not fabricated'
+    - '[MODERATE] n=1 per arm - two pieces only, illustrative tones hand-assigned; no generalization to Field''s full portfolio'
+    - '[MODERATE] Mirror byline confidence - bylines verified on the technewstube mirrors; canonical theverge.com fetch is policy-blocked (per #492), so attribution is strong but second-hand'
+    - '[WEAK] The Google Decoder item is podcast audio, not a written piece - register comparability across mediums is imperfect; retained as a third-entity beat-lens signal only'
+    lane_constancy: 'Beat-lens constancy, three entities. Field''s "AI race loser" deficit lens hits Meta (Muse Spark re-entry), Google (Decoder Aug 13 2026: "Does Google even want to win at AI?" / "Is Google losing the AI race?"), and Apple (Jun 9 2025: "Apple punts on Siri updates as it struggles to keep up in the AI race") - the register is her AI-beat lens, applied wherever a launch invites it, not Meta-selective. The OpenAI arm shows the same writer CAN run adversarial-adjacent on the deal-holding entity (regulatory friction), which bounds any Vox-deal softness claim to publication-level aggregates, not this journalist.'
+    cross_references:
+    - '#56 (Hayden Field AI-beat concentration: OpenAI/Anthropic volume concentration with Meta framed follower/deficit - this run isolates the same framing at byline level with verified sole-bylines)'
+    - '#425 (Type A publication-level Verge OpenAI aspiration vs Meta deficit; already cites the GPT-5.6 and Muse Spark material - #683 reuses those comparators under the #672/#678 reuse precedent; new work is byline attribution, not new sourcing)'
+    - '#626/#653 (Robert Hart Meta Muse catch-up vs OpenAI Astra register contrast - same analytic shape: register differentiation within constancy, same journalist, deal-holding owner)'
+    - '#371 (Kylie Robison Meta talent-war - different Verge AI reporter, different pair)'
+    - '#599/#608 (Vox-OpenAI deal falsification context)'
+    - '#492 (no zero-coverage claims; bounded mirror-byline convention)'
+    verdict: 'Constancy pin: the Vox-deal softness prediction FAILS at Hayden Field, joining the constancy family (#626/#653). NOT a falsification-family member (single journalist, reporter-level constancy pin, not publication-level claim defeat). NOT a pure asymmetry pin (delta +0.05 is near-null; register differentiation within constancy is the finding, plus STRONG news-peg/time-order confounds). No analysis.json update warranted.'
+    novelty: 'FIRST dedicated Type B on Hayden Field; zero mechanism blocks on her journalists.yaml entry pre-commit (verified via yaml parse). Distinct from mechanism #56 (beat-concentration volume analysis, Aug 11; no byline-isolated pair scoring) and mechanism #425 (Type A publication-level). Reuses #425''s GPT-5.6/Muse Spark comparators under the #672/#678 reuse precedent (in-corpus comparator, byline attribution as the new analytical work). Zero test_type_b_683 files on disk pre-commit; no #683 in git log; mechanism_id 644 unused repo-wide pre-commit.'
+    research_method: 'browser.search surfaced the two Field pieces (technewstube mirrors of theverge.com items); browser.open on each exact URL verified the byline line ("By Hayden Field Apr 8, 2026, 12:12 pm" / "By Hayden Field Jun 26, 2026, 1:00 pm") and captured headline plus lead-sentence register evidence. Third-entity checks: Field''s Google Decoder episode (Aug 13 2026) and Apple Siri piece (Jun 9 2025) from prior corpus research; talkingbiznews bio for the senior-AI-reporter role. Pre-commit greps: zero test_type_b_683 files, no Type B commit with 683 in the subject, mechanism_id 644 absent from profiles/ and tests/.'
+    artifact_readiness: 'No analysis.json update warranted. Manual-illustrative journalist-level pin; descriptive only, not artifact-grade.'
+    test_file: tests/test_type_b_683_hayden_field_meta_muse_spark_reentry_deficit_vs_openai_gpt56_regulatory_launch_byline_register_sep11_5pm.py
+    notes: 'Both arms carry full byline attribution (sole bylines), which isolates better than #678''s co-byline Google arm. Near-null delta (+0.05) is itself the honest read: Field is not softer on OpenAI despite the Vox deal. The analytical payload is register differentiation (deficit vs regulatory friction) plus the three-entity beat-lens check.'
 - career:
   - beat: journalism, political science
     end: '2017'
