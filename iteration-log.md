@@ -22,7 +22,7 @@
 
 **Novelty Verification:** Zero test_type_c_704 files on disk pre-commit (glob verified); no Type C commit with 704 in the title (git log --grep verified); zero mechanism_657 keys in profiles/ pre-commit (grep verified); max numeric mechanism_id 656 pre-commit; no dedicated ANI v. OpenAI litigation mechanism in the corpus pre-commit (mechanism 609 covers the deal-blitz; ANI appears there only as timeline context); six of seven source URLs new to profiles/ and tests/ (the FourWeekMBA India synthesis piece is legitimately shared with mechanism 609's block and its #624 test, the acknowledged parent). No zero-coverage claims per iteration-492 rule; bounded absence only.
 
-**Commit hashes:** main PENDING; followup TBD (ANCHORED_SHA patched post-commit per #565 convention)
+**Commit hashes:** main 76ea86ed17ad5eaf79a347a566d9cdc18fc6e450; followup TBD (ANCHORED_SHA patched post-commit per #565 convention)
 
 ---
 
