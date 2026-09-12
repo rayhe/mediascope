@@ -16375,7 +16375,83 @@ journalists:
   - https://thenewjournalatyale.com/author/tina-li/
   - https://www.wsj.com/tech/ai/the-ai-price-war-is-here-piling-pressure-on-openai-and-anthropic-86e1d21b
   multi_publication: true
-- name: Parmy Olson
+- mechanism_656_parmy_olson_coxon_resignation_anthropic_adversarial_register_constancy_sep12:
+    mechanism_id: 656
+    iteration: 703
+    type: B
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    block_key: type_b_703_parmy_olson_coxon_resignation_anthropic_adversarial_register_constancy_sep12
+    journalist: Parmy Olson
+    publication: Bloomberg Opinion
+    pair_shape: same-journalist cross-entity byline-isolated column-register pair; temporal falsification update on the Aug 8 file-local Olson identity-capture finding
+    anthropic_arm:
+      date: '2026-09-10'
+      title: 'Anthropic Staff Think AI May End Us. Why Not Stop?'
+      display_title_variant: 'Some Anthropic Engineers Think AI Might End Us. Why Race Ahead?'
+      url: https://news.bloomberglaw.com/author/parmy-olson-22420307
+      canonical_url_note: 'Bloomberg Opinion canonical column URL is paywalled and was not verbatim-recoverable this run; the author-page listing (title, byline, outlet, exact date) is the verified citation. No URL constructed or guessed.'
+      byline: Parmy Olson (sole)
+      byline_attribution: 'full - listed under "Parmy Olson''s Latest Stories" on the Bloomberg Law author page (verified first-hand this run)'
+      register: accusatory opinion column, safety-resignation peg
+      register_detail: 'Dek (Muck Rack verbatim): "Anthropic was founded to be more safety-conscious than OpenAI, yet it clings to that mission statement while building ever more powerful agents, says Parmy Olson for Bloomberg Opinion." Lede (Muck Rack verbatim): "It''s becoming harder for Anthropic PBC to justify some of the most unfalsifiable circular logic to ever come out of Silicon Valley: the pursuit of artificial superintelligence, which by its own admission could kill a lot of humans. Anthropic researcher Jacob Coxon recently resigned, saying that his previous employer and its rival OpenAI were gambling with our lives by building systems that could improve themselves." Loaded language: "unfalsifiable circular logic", "could kill a lot of humans", "gambling with our lives", "Why Not Stop?". No "Amodei" CEO personalization in the headline, consistent with the Aug 8 0% Anthropic-personalization finding.'
+      news_peg: 'Jacob Coxon (Anthropic pretraining researcher, ex-OpenAI) resigned Sep 8-9 2026: "Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives." Confirmed by Anthropic science lead Evan Hubinger: "Jacob is correct here - we really do earnestly believe AI could kill all humans!" Corroborating outlets verified this run: thewrap.com, people.com, techspot.com.'
+      tone_illustrative: -0.55
+      evidence_grade: 'second-hand (excerpt-bounded) - title/date/byline verified first-hand via Bloomberg Law author page; dek + lede verbatim via Muck Rack syndication listings (first-hand); full column NOT read (Bloomberg Opinion paywall); per the #503 Preston second-hand precedent, disclosed'
+    meta_arm:
+      date: '2026-04 through 2026-07 (carried corpus)'
+      title: 'Meta opinion corpus (8 headlines, carried from Aug 8 file-local Olson Type B)'
+      url: tests/test_parmy_olson_cross_entity.py
+      byline: Parmy Olson (sole)
+      register: accusatory opinion column, AI-strategy topics
+      register_detail: '87.5% personalized to "Zuckerberg"/"Mark Zuckerberg". Exemplars: "Mark Zuckerberg''s Free AI Is a Clever Form of Bait" (-0.65, deception, "bait"); "Mark Zuckerberg''s AI Slop Will Make Ads Worse" (-0.70, contempt, "slop"); "Zuckerberg and Musk''s AI Failure Club Has Its Perks" (-0.55, mockery, "Meta Platforms Inc.''s chronic inability to develop an original idea"); "Meta''s Days of Giving Away AI for Free Are Numbered" (-0.35).'
+      tone_illustrative: -0.51
+      evidence_grade: 'carried from the Aug 8 file-local test (tests/test_parmy_olson_cross_entity.py), which verified the Bloomberg Law source URLs'
+    register_bound_note:
+      register_aug8: 'business-strategy opinion columns Jul-Aug 2026 - Anthropic competitively/protectively framed ("Anthropic Has Just Turned Up the Heat on Nvidia", +0.25; "Anthropic and OpenAI Face a New Threat from China", +0.05; avg +0.15); identity-capture thesis holds'
+      register_703: 'safety-resignation opinion column Sep 10 2026 - Anthropic adversarially framed (-0.55 illustrative); identity-capture thesis fails'
+      contradiction: false
+      bound_statement: 'The Aug 8 asymmetry finding and this constancy finding are register-bounded companions, not contradictions: identity capture predicts softness in business-strategy columns but not in the safety-scandal register, where Olson''s adversarial register is entity-portable. The CEO-personalization asymmetry (Meta 87.5% vs Anthropic 0%) survives; only the tone asymmetry collapses.'
+      corroborating_note: 'Same-week OpenAI arms corroborate the register break: "Altman''s Opaque AI Creates a New Security Dilemma" (Sep 4 2026, adversarial on OpenAI, and personalizes to "Altman" in the headline - itself a break from the Aug 8 0%-OpenAI-personalization finding) and "Don''t Be Seduced by the Language of AI" (Sep 2 2026, adversarial on OpenAI''s Hugging Face rogue-agent breach). Both listed on the Bloomberg Law author page verified this run.'
+    asymmetry_scorer_result:
+      method: 'MANUAL ILLUSTRATIVE (Aug 28 2026 standing rule) - Anthropic arm hand-scored from verbatim dek + lede excerpts; Meta tone carried from Aug 8 file-local corpus average; illustrative only; no engine run'
+      target_tones_manual_illustrative: [-0.55]
+      reference_tones_manual_illustrative: [-0.51]
+      target_avg: -0.55
+      reference_avg: -0.51
+      delta_anthropic_minus_meta: -0.04
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      artifact_grade: false
+      limitations: 'Anthropic arm is n=1 vs a carried corpus average; the arm is excerpt-bounded (paywall); ~2-5 month time gap between Meta corpus items and the Sep 10 arm; topic gap (AI-strategy vs safety-resignation); degenerate contract per #638/#643'
+    verdict: 'REGISTER CONSTANCY in the accusatory opinion-column register - TWENTY-FIRST falsification-family member (journalist-attribution class). Same-journalist, same-outlet byline-isolated pair: Olson applies the same adversarial register to Anthropic (-0.55 illustrative; "unfalsifiable circular logic", "could kill a lot of humans", hypocrisy accusation) as to her Meta corpus (-0.51). The journalist-level "Olson softens Anthropic" attribution from the Aug 8 identity-capture thesis fails in the Sep 2026 safety-resignation register - the thesis is register-bounded to the Jul-Aug business-strategy opinion corpus, not journalist-global. It does not predict entity-selective softness when the news peg is a genuine safety scandal (Coxon resignation, company-confirmed by Anthropic''s own science lead). Corroboration: Olson applies the same accusatory register to OpenAI in the same week (Sep 2, Sep 4 columns), the other entity her book thesis supposedly protects. Correlation, not causation. No analysis.json update warranted.'
+    financial_context:
+      predictor: null_tie_control
+      prediction: no_differential_prediction
+      detail: 'Correlation, not causation. Bloomberg carries NO known AI content licensing deals with OpenAI, Google, Amazon, or Anthropic (per the Aug 8 Olson file) - zero-gradient control: the deal theory makes no differential prediction and the observed constancy cannot be attributed to a deal gradient. The identity-capture mechanism is a journalist-level book incentive ("Supremacy", 2024, FT-shortlisted), not a publication-level financial tie. The falsification here is at the journalist-attribution level, consistent with the family''s attribution class.'
+    confounders:
+      - '[STRONG] Second-hand bounded: the Bloomberg Opinion column is paywalled; this run verified title/date/byline first-hand and dek + lede verbatim via Muck Rack syndication listings, but did not read the full column. Moderating passages may exist.'
+      - '[STRONG] News-peg asymmetry: the Anthropic arm is anchored on a genuinely adversarial event (Coxon resignation Sep 8-9 2026, "gambling with our lives", confirmed by Anthropic science lead Evan Hubinger). The adversarial intensity may be peg-driven rather than register-driven; no equivalent Meta safety-resignation peg existed in the comparison window.'
+      - '[STRONG] Dual-register ambiguity: the column may be safety-sympathetic (toward the resigning researcher) rather than purely company-adversarial; the accusatory language is company-directed, but a mixed register would moderate the tone read.'
+      - '[MODERATE] Time and topic gap: Meta corpus items span Apr-Jul 2026 AI-strategy topics; the Anthropic arm is a Sep 10 safety-resignation topic. Register drift across the gap cannot be ruled out.'
+      - '[MODERATE] CEO-personalization asymmetry survives: the Anthropic headline contains no "Amodei" personalization, consistent with the Aug 8 0% finding - only the tone asymmetry collapses, not the personalization asymmetry.'
+      - '[WEAK] n=1 Anthropic arm vs carried corpus-average degenerate contract; delta -0.04 exact at 2dp, verdict-invariant under rounding.'
+    cross_references:
+      - 'Aug 8 2026 file-local Olson Type B (tests/test_parmy_olson_cross_entity.py; Meta -0.51, OpenAI -0.11, Anthropic +0.15; CEO-personalization asymmetry; professional identity capture; Bloomberg has no AI licensing deals) - this mechanism bounds it'
+      - '#698/m653 (TWENTIETH falsification-family member; same journalist-attribution class, different journalist)'
+      - '#693/m650 (NINETEENTH; attribution class)'
+      - '#688 (SIXTEENTH; Satariano register-constancy shape)'
+      - '#638/#643 (degenerate statistical contract convention)'
+      - '#503 (second-hand evidence-grade precedent: paywalled originals verified via mirrors/excerpts)'
+      - '#647/m622 (same Coxon-resignation news event, WIRED publication-level Type A pair vs Meta Muse trust register, explicitly NOT falsification-family; different journalist, outlet, and unit of analysis)'
+      - '#565 (followup/anchor convention)'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False)'
+    novelty: 'FIRST YAML mechanism on Parmy Olson (journalists.yaml entry pre-existed with name/multi_publication/beats/career/awards/notes/source_urls and zero mechanism_* keys; mechanism_656 added as the entry''s first mechanism key this run). The Aug 8 Olson Type B was file-local only. The Sep 10 2026 Olson column is new-to-corpus (the column title has no prior corpus hits). The Coxon resignation EVENT is already in-corpus via #647/m622 (WIRED Sep 9 interview piece, publication-level Type A pair vs Meta Muse trust register, explicitly NOT falsification-family) - this run''s novelty is Olson''s own column on that event and the same-journalist column-vs-Meta-corpus pair, which was never a mechanism. Distinct from #698/m653 (TWENTIETH, Wong), #693/m650 (NINETEENTH, Nguyen), #688 (SIXTEENTH, Satariano), and from #647/m622 (same event, different journalist, outlet, and unit of analysis). Rotation: 702 A -> 703 B.'
+  name: Parmy Olson
   multi_publication: true
   beats:
   - artificial_intelligence
