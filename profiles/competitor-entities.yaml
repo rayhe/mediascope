@@ -8439,6 +8439,135 @@ entities:
         iteration: 692
         type: A
         date: 2026-09-12 02:00 PDT
+    mechanism_652_gizmodo_apple_duo_launch_register_vs_gizmodo_meta_muse_experiment_sep12:
+      mechanism_id: 652
+      iteration: 697
+      iteration_type: A
+      iteration_time: "2026-09-12 07:00 PDT"
+      date_analyzed: "2026-09-12"
+      publication_focus: "gizmodo"
+      competitor: "apple"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      author: "Kit (with Ray)"
+      pair: "Gizmodo x Apple (vs Meta)"
+      event: "Apple iPhone Duo foldable launch (Sep 9 2026) vs Meta Muse AI-agent launch (Sep 9 2026): same-day launch pegs at Gizmodo"
+      test_file: "tests/test_type_a_697_gizmodo_apple_duo_launch_register_vs_meta_muse_experiment_sep12_7am.py"
+      finding: >
+        The tech blog that covers Apple with launch-day enthusiasm ran
+        celebratory coverage of the iPhone Duo (launch news +0.20
+        illustrative, hands-on +0.45, arm average +0.325) while its
+        same-day Meta Muse coverage was a skeptical-playful experiment
+        (-0.25 illustrative): the author tried to waste as much free
+        compute as possible and framed the product as 'the sheer volume
+        of slop Meta is letting free users generate.' Illustrative delta
+        (Apple minus Meta) +0.575, n=2 vs n=1, degenerate statistical
+        contract per the #638/#643 convention; no engine run, no
+        divergence pin. Financial context: Gizmodo carries NO known AI
+        licensing deal with either Apple or Meta (both financial_tie none
+        in profiles/gizmodo.yaml competitor_relationships). This is a
+        zero-gradient control: the incentive theory makes no differential
+        prediction, so the observed gap cannot contradict it - NOT a
+        falsification-family member; the ledger stands at 19. The Duo
+        launch-genre series now spans four publications: WSJ celebrated
+        (+0.45, #662/m631), The Verge celebrated (+0.38 avg, #687/m646),
+        Reuters ran skeptical (-0.05 avg, #692/m649), Gizmodo celebrated
+        (+0.325 avg). The launch-celebration register holds at tech press
+        and breaks at the wire. Correlation only, not proof of editorial
+        influence.
+      apple_arm:
+        items:
+          - title: "Apple's Foldable iPhone Is Officially Called the iPhone Duo"
+            date: "2026-09-09 (Gizmodo; opened first-hand this run)"
+            url: "https://gizmodo.com/iphone-duo-2000808898"
+            byline: "unattested in the opened rendered text"
+            register: "product_launch_forward"
+            key_framing: "'one more thing' at Apple's 'Surprise and Shine' event; 'the first wholly new iPhone form factor'; 'Apple being Apple, of course, the corners are rounded'; thinnest iPhone ever unfolded, slimmer than the 5.6mm iPhone Air; 5.4-inch outer screen, 7.6-inch inner folding screen; iOS 27 optimized with the dock moved to the right side; Apple Pencil support coming later; A20 chip; 'Color choices aren't much to write home about: you get a Night Sky or a Star White. Cosmic Orange would have stood out more and could probably convince consumers to buy it just to show off. But alas, dark and light is all we get'; 256GB to 'start at a whopping $1,999'; pre-order Oct 16, sales Oct 23; correction note: inner screen is 7.6 inches, not 7.8"
+            manual_illustrative_tone: 0.2
+            source_note: "first-hand browser.open this run, 42 rendered lines; byline line not captured in the rendered text"
+          - title: "iPhone Duo Hands-On: The Inner Screen Looks Like Real Paper"
+            date: "2026-09-09 (Gizmodo; opened first-hand this run)"
+            url: "https://gizmodo.com/iphone-duo-hands-on-2000808932"
+            byline: "Ray Wong (@raywongy)"
+            register: "celebratory_hands_on"
+            key_framing: "'the iPhone Duo is a stunning device to hold in your hands'; 'I immediately marveled at the iPhone Duo's thinness'; inner screen with matte nano-texture display 'absolutely gorgeous. It looks like paper; it's not reflective at all'; 'Holy shit the nano texture inner screen on iPhone Duo looks like paper'; 'I can't stop thinking about the transition animation when you open the iPhone Duo'; 'Apple may have made the most desirable foldable ever created'; caveats: 'the crease is not completely invisible. I could still see it at various angles'; 'The loss of Face ID is going to take some getting used to... it still feels like a step backward, in my opinion'; 'Is it worth $2,000 or more? I don't have an answer for that yet'"
+            manual_illustrative_tone: 0.45
+            source_note: "first-hand browser.open this run, 78 rendered lines"
+        average_manual_illustrative: 0.325
+      meta_arm:
+        carried_from: "new to corpus this run (no prior Gizmodo x Meta Muse mechanism)"
+        items:
+          - title: "Meta's Muse Let Me Waste a Mind-Boggling Amount of Free Compute on Nothing in Particular"
+            date: "2026-09-09 (Gizmodo; opened first-hand this run)"
+            url: "https://gizmodo.com/metas-muse-let-me-waste-a-mind-boggling-amount-of-free-compute-on-nothing-in-particular-2000808945"
+            byline: "unattested in the opened rendered text"
+            register: "skeptical_playful_experiment"
+            key_framing: "100M free tokens/week via a Zuckerberg Threads post; 'Meta is shoveling ungodly amounts of money into compute' ($145B capex, 91% free-cash-flow drop Q1-Q2); Kantrowitz: Meta AI users are 'bumping into it instead' of seeking it out; 'I don't have any busywork that I trust an agent to do'; author tokenmaxxed on a free account, 'astonished that I wasn't even getting close to being cut off'; 'these agentic systems don't tend to be overly ambitious... splatter out the bare minimum'; 'it's still a very bad game'; 'So much it's disturbing... the sheer volume of slop Meta is letting free users generate'; 'None of this should be mistaken for a product review'; capability admitted: 'The Paint application works', three games plus a bootable fake Mac built in-session"
+            manual_illustrative_tone: -0.25
+            source_note: "first-hand browser.open this run, 90 rendered lines; byline line not captured in the rendered text"
+        average_manual_illustrative: -0.25
+      financial_context:
+        predictor: "null_tie_control"
+        prediction: "no_differential_prediction"
+        chain: "Gizmodo: NO known AI licensing deal with Apple or Meta (both financial_tie none in profiles/gizmodo.yaml competitor_relationships). No named gradient to contradict; the incentive theory is silent at this publication."
+        status: "zero-gradient control: the theory makes no differential prediction at Gizmodo, so the observed +0.575 illustrative gap cannot contradict it. NOT a falsification-family member; ledger stands at 19. Correlational only, not proof of editorial influence."
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = Apple arms, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.2, 0.45]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.25]
+        target_avg: 0.325
+        peer_avg: -0.25
+        delta_manual_illustrative: 0.575
+        delta_calc: "0.325 - (-0.25) = 0.575"
+        engine_degenerate: "n=2 vs n=1: degenerate statistical contract per the #638/#643 convention (Welch t and Cohen's d degenerate: p=1.0, d=0.0). Engine NOT run; no divergence pin (divergence pins require engine significance, which cannot occur on degenerate arms)."
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)"
+        artifact_grade: false
+      falsification_family:
+        membership: "NOT a falsification-family member: zero-gradient control (Gizmodo financial_tie none on both the Apple and Meta legs per profiles/gizmodo.yaml); the incentive theory makes no differential prediction, so contradiction is impossible. Ledger stands at 19 after #693's NINETEENTH; #694 Type C, #695 Type D and #696 Type E claimed no membership."
+        prediction: "the incentive theory makes no differential prediction at a zero-gradient publication: no known Gizmodo x Apple or Gizmodo x Meta AI licensing deal on record (both financial_tie none); the theory is silent on the expected direction"
+        observed: "register gap observed (Apple +0.325 vs Meta -0.25; illustrative delta Apple-minus-Meta +0.575), but with no named gradient the gap is a launch-genre/access confound, not a theory contradiction; no membership claimed"
+        within_arm_range_vs_gap: "the within-Apple-arm register range (0.25) is SMALLER than the between-entity gap (0.575): unlike #637/#692, publication-internal variance does not account for the delta; the genre-mismatch confound carries the explanatory load"
+        publication_genre_boundary: "fourth publication in the Duo launch-genre series: WSJ +0.45 celebration (#662/m631), The Verge +0.38 avg celebration (#687/m646), Reuters -0.05 avg with skeptical follow-up (#692/m649), Gizmodo +0.325 avg celebration (this run). The launch-celebration register holds at tech press (WSJ, Verge, Gizmodo) and breaks at the wire (Reuters)"
+      confounders_ranked:
+        strong:
+          - "Genre mismatch dominates the gap: the Meta arm is a playful experiment/essay that explicitly disclaims review status ('None of this should be mistaken for a product review'), while the Apple arms are straight launch news and an on-site hands-on. Comparing a straight-news register to an opinion-experiment register conflates genre with entity preference; the #627 verbatim-URL discipline does not fix genre asymmetry."
+          - "News-peg valence skew: the Muse piece is anchored on Meta's free-compute economics and capex-overbuild critique ('shoveling ungodly amounts of money into compute', $145B capex, 91% FCF drop) while the Duo pieces are anchored on hardware delight at a launch event. The registers track their news pegs, not entity preference."
+          - "Access economy: both Duo pieces were filed from Apple's Steve Jobs Theater launch event (the hands-on explicitly from the demo floor); event access structurally rewards enthusiasm ('stunning device to hold in your hands'). The Muse piece was a desk experiment on a free account. The access differential, not an entity differential, can explain the celebration register."
+        moderate:
+          - "Bylines: the Duo hands-on is by Ray Wong (Gizmodo); the launch-piece and Muse-piece bylines were unattested in this run's renders, so author-level style variance cannot be ruled out."
+          - "Same-day pegs (both entities Sep 9 2026): the tightest possible timing window; timing skew is minimal, a strength of the pair."
+          - "Evidence tiers symmetric: all three pieces read first-hand this run (42, 78, 90 rendered lines); sample is degenerate (n=2 vs n=1) so the delta is arithmetic only."
+          - "Gizmodo's snark-house-style baseline: the outlet's voice runs snarky on everyone ('Apple being Apple, of course, the corners are rounded'; 'But alas, dark and light is all we get'); the celebration register is measured against that baseline, not against a neutral wire."
+        weak:
+          - "Headline register leakage: the Muse headline ('waste a mind-boggling amount of free compute on nothing in particular') primes the skeptical read before the body."
+          - "Post-ID sequencing (2000808898, 2000808932, 2000808945) suggests same-day filing across the three pieces; no date contradiction."
+          - "n=2 vs n=1: degenerate statistical contract; verdict-invariant under rounding (delta +0.575 exact at 3dp)."
+      counterevidence:
+        - "#587 / Gizmodo x Apple null-tie control (delta +0.1334 n.s., Sep 7): the same publication ran near-neutral on Apple on a non-launch peg two days earlier. The register shift tracks the launch-event peg, not Apple favoritism."
+        - "Reuters #692 (-0.05 Apple arm avg): the same Duo launch drew skepticism at the wire; the celebration register is publication-bounded, not a property of the Duo event."
+        - "#627 Verge x Amazon zero-gradient control: the same zero-gradient control structure was used at another publication; controls document genre/access bounds, not entity effects."
+        - "The Muse piece admits capability ('it dispensed with this assignment' quickly; 'The Paint application works'; three games plus a bootable fake Mac built in-session): the skepticism is purpose-directed ('AI agents simply aren't my thing'), not capability-denying, which bounds the -0.25 read."
+      cross_references:
+        - "#662 / mechanism 631 (WSJ x Apple Duo launch celebration +0.45; launch-genre series first publication)"
+        - "#687 / mechanism 646 (The Verge x Apple Duo launch celebration +0.38 avg; launch-genre series second publication)"
+        - "#692 / mechanism 649 (Reuters x Apple Duo launch register vs Reuters x Meta Muse register; launch-genre series third publication; same Duo-vs-Muse comparator structure)"
+        - "#587 (Gizmodo x Apple null-tie control, delta +0.1334 n.s.; second Gizmodo x Apple Type A overall; same publication, old schema under profiles/gizmodo.yaml)"
+        - "#627 (Verge x Amazon zero-gradient control; same control structure)"
+        - "#693 / mechanism 650 (NINETEENTH falsification-family member; ledger-at-19 baseline)"
+        - "#638/#643 convention (degenerate statistical contract on n=1 and n=2 arms)"
+        - "iteration-492 rule (bounded absence for the FT/Guardian/WIRED/BI pairs this run; no zero-coverage claims)"
+        - "#695 convention (designed supersession of #695's no-652 sweep tests)"
+        - "#565 convention (followup anchor patch)"
+      novelty: "First dedicated Gizmodo x Apple Duo Type A mechanism (mechanism 652); second Gizmodo x Apple Type A overall (after #587's Sep 7 null-tie control, old schema under profiles/gizmodo.yaml). Fourth publication in the Duo launch-genre series (#662 WSJ, #687 Verge, #692 Reuters). Zero mechanism_652 keys in profiles/ pre-commit (pinned by #695's sweep tests, superseded by design this run per the #695 convention); max numeric mechanism_id pre-commit 651 (#694/m651). All three Gizmodo URLs new to corpus pre-commit (repo-wide grep zero hits). #695's test_max_modern_mechanism_id_is_651, test_no_mechanism_652_in_profiles, test_no_mechanism_652_key_in_profiles, and test_no_mechanism_652_in_tests fail by designed supersession (the last because this run's own test file references mechanism_652; the sweep excludes only its own __file__). Journalist check: no journalist career mechanism added (Duo hands-on byline Ray Wong is a Gizmodo staffer already covered at publication level; launch and Muse bylines unattested)."
+      research_method: "4 browser.search query sets this run (FT iPhone Duo foldable; Guardian iPhone Duo; Wired iPhone Duo foldable; Business Insider iPhone Duo Meta Muse) + 3 first-hand browser.opens (all three Gizmodo pieces: launch 42 rendered lines, hands-on 78, Muse 90). The FT/Guardian/WIRED/BI queries did not surface usable same-publication Apple Duo and Meta Muse pairs (bounded search-result absence per the iteration-492 rule, not noncoverage); the run pivoted to Gizmodo, where verbatim URLs for both pegs surfaced in this run's Full-URL listings. All URLs copied verbatim; no canonical URLs invented; no em dashes; ASCII-only. Pre-commit novelty greps: zero test_type_a_697 files on disk; no Type A #697 in git log; zero mechanism_652 keys in profiles/; no dedicated Gizmodo x Apple Duo Type A (prior Gizmodo x Apple mechanism 587 is the Sep 7 null-tie control)."
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 697
+        type: A
+        date: 2026-09-12 07:00 PDT
 
   google:
     display_name: Google / Alphabet
