@@ -70,7 +70,7 @@ WSJ_URL = "https://www.wsj.com/business/media/marketplaces-are-the-next-frontier
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "de717ba"
 
 
 def _entities():
