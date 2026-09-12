@@ -63,7 +63,7 @@ ADNEWS_URL = "https://www.adnews.com.au/news/nine-closes-ai-content-deal-with-mi
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "PENDING"
+ANCHORED_SHA = "dcd427a"
 
 
 def _entities():
