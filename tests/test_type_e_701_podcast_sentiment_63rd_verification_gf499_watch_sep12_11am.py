@@ -347,7 +347,7 @@ class TestNoAnalysisJsonUpdate701:
 class TestRotationCycleGuard701:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #701 main-commit SHA is known.
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+    ANCHORED_SHA = "e22788c0aeed83ebabd6077d683dfdf9870816aa"
 
     @staticmethod
     def _mains():
