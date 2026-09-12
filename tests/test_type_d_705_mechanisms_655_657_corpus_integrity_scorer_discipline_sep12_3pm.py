@@ -318,10 +318,14 @@ class TestRotationCycleGuard705:
 class TestRotationSequenceContinuity:
     """702 A -> 703 B -> 704 C -> 705 D is the rotation."""
 
-    def test_type_d_705_not_already_in_log(self):
-        # The log gains its #705 entry in this run's commit, not before.
+    def test_type_d_705_log_entry_landed_with_commit(self):
+        # Post-commit companion to the pre-commit novelty grep: the #705
+        # entry is in the iteration log and the main commit exists.
+        log = open(os.path.join(REPO_ROOT, "iteration-log.md"), encoding="utf-8").read()
+        assert "#705 Type D" in log
+        assert TEST_BASENAME in log
         out = _run_git("log", "--format=%s")
-        assert "Type D #705:" not in out.stdout, "a Type D #705 commit already exists"
+        assert "Type D #705:" in out.stdout
 
     def test_previous_hours_present_in_log(self):
         log = open(os.path.join(REPO_ROOT, "iteration-log.md"), encoding="utf-8").read()
