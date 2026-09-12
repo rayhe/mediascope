@@ -13643,6 +13643,91 @@ entities:
         artifact_grade: false
 
 
+
+    mechanism_651_microsoft_nine_entertainment_apac_first_copilot_grounding_jul2026:
+      mechanism_id: 651
+      iteration: 694
+      rotation: Type C
+      date_analyzed: '2026-09-12'
+      time_pdt: '04:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Microsoft x Nine Entertainment (Jul 3 2026) - first Microsoft news-content AI deal in Asia-Pacific; Copilot real-time grounding in Nine mastheads (AFR, SMH, The Age, Brisbane Times, WAToday); eighth leg of the Microsoft publisher-leverage architecture'
+      type: financial_incentive_mapping
+      type_c_focus: 'FIRST dedicated deal-level mechanism on Microsoft''s first APAC publisher AI content agreement. Extends the septuple-publisher-leverage architecture (entities.microsoft.septuple_publisher_leverage) geographically: EU leg Axel Springer (#604), PCM bilateral Conde Nast leg (#684/m645), now the APAC bilateral Nine leg. Microsoft''s own announcement (news.microsoft.com, Jul 3 2026) is the primary source; Press Gazette AI-deals tracker, B&T, Mediaweek, AdNews corroborate.'
+      announcement_date: '2026-07-03'
+      deal_parties:
+        payer: 'Microsoft (Copilot AI assistant)'
+        counterparty: 'Nine Entertainment Co (Nine), Australia''s largest locally owned media company'
+        mastheads: 'The Australian Financial Review, The Sydney Morning Herald, The Age, Brisbane Times, WAToday (B&T list; Microsoft announcement lists AFR, SMH, The Age, Brisbane Times)'
+      deal_structure:
+        access: 'Microsoft Copilot may reference the text of Nine''s masthead content beyond paywalled previews during AI searches to contextualise and ground outputs'
+        display: 'Copilot displays snippets, headlines and summaries and directs audiences to Nine''s mastheads for the full story'
+        rights_scope: 'real-time reports; beyond-paywall text grounding; attribution and link-back to full story'
+        training_rights: 'unconfirmed - announcement describes grounding/retrieval for AI answers, not model training'
+      deal_terms:
+        quantum: 'undisclosed (AdNews: "undisclosed sum") - materiality unmeasurable from public sources'
+        duration: 'undisclosed'
+        exclusivity: 'not stated; Nine CEO revealed in February it had already signed two deals with Australian corporates for proprietary AI ecosystems (AdNews)'
+      apac_first_claim:
+        claim: 'first-of-its-kind in Australia (Microsoft announcement); first of its kind for Microsoft in the Asia Pacific Region (Tory Maguire, Nine MD Publishing, via B&T); "Microsoft''s first deal of this kind in the Asia Pacific region" (Press Gazette)'
+        evidence_tier: 'press-release and trade-press framing; corroborated by three independent trade outlets but not by an independent primary audit'
+      executive_quotes:
+        - 'Matt Stanton, Nine CEO: "This collaboration is a win-win, delivering for users of AI while respecting copyright and protecting the long-term value of our intellectual property."'
+        - 'Jane Livesey, president of Microsoft Australia and New Zealand: "Our agreement with Nine will ground responses from Microsoft Copilot in trusted mastheads, giving people verified facts, a clear path to the full story, and confidence in what they read."'
+        - 'Tory Maguire, Nine managing director publishing: "Microsoft has been a proactive, engaged partner who is committed to attribution of sources. This continues to unlock new revenue opportunities for our mastheads as the media ecosystem continues to evolve, supporting local and trusted Australian journalism."'
+      status_sep2026: 'ACTIVE per the #599 convention - 71 days post-announcement; bounded absence of exit/renewal reporting per the iteration-492 rule (no exit reporting found is not proof of continuation)'
+      architecture_context:
+        - 'Eighth distinct Microsoft-publisher financial mechanism in the corpus: joins the septuple stack (OpenAI investment axis, Anthropic investment, PCM marketplace operator, Copilot Daily content, MSN/Start licensing, Bing search advertising, Azure enterprise hosting)'
+        - 'Geographic arc of Microsoft publisher expansion in 2026: Axel Springer EU four-channel formalization (#604, Apr 2026), Microsoft PCM launch with international-expansion goal (#684/m645, Feb 2026), Nine APAC bilateral (Jul 2026)'
+        - 'Real-time grounding structure mirrors the Meta Dec 2025 seven-publisher bundle (mechanism 331) and the OpenAI first-gen licensing shape: retrieval for AI answers with attribution and link-out, training rights unconfirmed'
+      confounders_ranked:
+        strong:
+          - 'Terms undisclosed: quantum, duration, and exclusivity all unstated, so financial materiality is unmeasurable; a first-APAC deal at nominal value would be architecturally symbolic rather than material'
+          - 'Announcement-PR evidence tier: both parties'' quotes are launch-day PR; the "first of its kind" claims rest on Microsoft/Nine framing corroborated only by trade press, not independent audit'
+        moderate:
+          - 'Nine is not a MediaScope-profiled publication: no direct coverage-tone comparison is possible against the seven tracked publications'
+          - 'Grounding is retrieval-scoped: no confirmed training rights, so the mechanism is closer to the Google News AI pilot shape (display/grounding) than to OpenAI-style training licenses'
+        weak:
+          - '71-day announcement age: deal predates the Sep 2026 cycle; no Sep 2026 reporting surfaces new terms'
+      falsification_family:
+        membership: 'NOT a member - qualitative financial mapping only; no coverage-tone claim made; ledger stays at 19 after #693''s NINETEENTH'
+        boundary_note: 'Mirrors the #609/#614 qualitative boundary convention: tone_scores NOT_SCORED; the Microsoft payer stack grows while the Microsoft-softness register persists as a background claim (septuple stack), but no new empirical tone evidence is asserted here'
+      cross_references:
+        - '#604 (Axel Springer dual-AI-payer architecture: EU leg of the same geographic-expansion arc)'
+        - '#684/m645 (Microsoft PCM x Conde Nast bilateral: the PCM bilateral-leg shape; Nine is a direct bilateral, not PCM-routed)'
+        - 'entities.microsoft.septuple_publisher_leverage (the seven-mechanism stack this leg extends to eight)'
+        - '#624/m609 (TOI India dual-payer: the other 2026 geographic-expansion data point)'
+        - 'mechanism 331 (Meta Dec 2025 seven-publisher bundle: same retrieval-plus-attribution deal shape)'
+      source_urls:
+        - 'https://news.microsoft.com/source/asia/2026/07/03/nine-microsoft-copilot-agreement/'
+        - 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/'
+        - 'https://www.bandt.com.au/nine-inks-deal-to-let-microsoft-copilot-reference-paywalled-content-in-ai-searches/'
+        - 'https://www.mediaweek.com.au/nine-microsoft-australian-first-ai-agreement'
+        - 'https://www.adnews.com.au/news/nine-closes-ai-content-deal-with-microsoft'
+      research_method: '2 browser.search query sets this run (Meta AI news content licensing deal publisher USA Today People CNN Fox News 2026 with 3 alternates; Meta publisher AI content licensing deal new 2026 Reuters News Corp renewal with 3 alternates) + 1 first-hand browser.open read (Press Gazette AI-deals tracker, 1617 lines rendered, Nine-Microsoft section lines 790-813 read this run; FT AI-pilot update line 925 noted). All URLs verbatim from Full-URL listings; no canonical URLs constructed; no zero-coverage claims per the iteration-492 rule; bounded absence for exit reporting. Pre-commit novelty greps: zero test_type_c_694 files on disk (glob); no Type C #694 in git log (--grep); zero mechanism_651 keys repo-wide; max numeric mechanism id pre-commit 650 (journalists.yaml, #693). No em dashes; ASCII-only.'
+      novelty_verification:
+        - 'Zero test_type_c_694 files on disk pre-commit (glob verified)'
+        - 'No Type C #694 in git log pre-commit (--grep verified)'
+        - 'Zero mechanism_651 keys in profiles/ and tests/ pre-commit (grep verified)'
+        - 'Max numeric mechanism id pre-commit 650 (#693, journalists.yaml)'
+        - 'Zero "Nine Entertainment" hits in profiles/ pre-commit (grep verified); Microsoft x Nine never formalized before this run'
+      statistical_discipline:
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      artifact_readiness: 'No analysis.json update warranted. Deal-level financial mapping, qualitative only, no new empirical tone finding; extends the Microsoft payer-architecture bookkeeping.'
+      watch_items:
+        - 'Any Sep 2026 terms disclosure (quantum, duration) for the Nine deal converts materiality from unmeasurable to bounded'
+        - 'Reach-Amazon usage-based Nova/Alexa deal (Mar 2 2026, Press Gazette) is new-to-corpus and un-mined: candidate for a future Type C Amazon-leg mechanism'
+        - 'Nine x OpenAI/Anthropic absence: no Nine deal with any other AI lab on record (bounded absence); if Nine signs a second AI-lab deal it becomes a dual-payer test of the register-prediction'
+
   snowflake:
     display_name: Snowflake
     aliases:
