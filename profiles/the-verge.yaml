@@ -2763,6 +2763,102 @@ competitor_relationships:
     direction: "none"
     description: "No direct financial tie. The Verge historically covers Apple product launches favorably."
     coverage_prediction: "softer"
+    mechanism_646_verge_apple_duo_launch_register_vs_meta_muse_launch_register_sep11:
+      mechanism_id: 646
+      iteration: 687
+      author: "Kit (with Ray)"
+      test_file: tests/test_type_a_687_verge_apple_duo_launch_vs_meta_muse_launch_register_sep11_9pm.py
+      iteration_type: "A"
+      date_analyzed: '2026-09-11'
+      time_analyzed: 2026-09-11 21:00 PDT
+      publication_focus: the-verge
+      competitor: apple
+      event: Apple iPhone Duo foldable launch (Sep 9 2026) vs Meta Muse agent launch (Sep 8 2026), both covered by The Verge
+      apple_arm:
+        items:
+          - url: https://thetechstreetnow.com/apples-foldable-iphone-duo-will-reportedly-start-at-2-000/
+            title: "Apple's foldable 'iPhone Duo' will reportedly start at $2,000"
+            byline: Richard Lawler
+            byline_role: senior editor
+            date: 2026-09-09
+            evidence_tier: mirror-attested
+            evidence_note: "thetechstreetnow syndication carries the full byline, dateline (Sep 9, 2026, 5:26 AM UTC), image credit (Cath Virginia / The Verge), and the copyright line 'Copyright of this story solely belongs to www.theverge.com'; text is truncated mid-sentence; no theverge.com canonical URL invented"
+            verbatim_excerpts:
+              - "Apple might recycle the name from Microsoft's dual-screen device for its first folding iPhone."
+              - "With only a few hours left until the first iPhone launch event since John Ternus took over as the CEO of Apple, Bloomberg reporter Mark Gurman says the name of the company's long-rumored folding phone is the iPhone Duo."
+            register: neutral pre-launch news
+            tone_illustrative: 0.25
+          - url: https://dailyguardian.ca/verge-staffers-react-to-the-iphone-duo-what-we-love-and-dont-love/
+            title: "Verge staffers react to the iPhone Duo: What we love and don't love"
+            date: 2026-09-09
+            evidence_tier: mirror-attested
+            evidence_note: "dailyguardian mirror of the Verge staffers-reaction original; photos credited Antonio G. Di Benedetto / The Verge; eight staff voices (Peters, Tuohy, McShane, Edwards, Galperina, Roth, Higgins, Preston)"
+            verbatim_quotes:
+              - "I've never wanted a new iPhone more. (Jennifer Tuohy, senior reviewer)"
+              - "The Apple Pencil support makes the Duo an iPad Mini killer (Kevin McShane, editorial director, audio and video)"
+              - "a far superior ratio! (Marina Galperina, senior tech editor)"
+              - "I dig the form factor of the iPhone Duo (Nathan Edwards, senior reviews editor)"
+              - "a minimum of $2,000 is too much for me to take a chance (John Higgins, senior reviewer, TVs and audio)"
+            register: celebratory hands-on gut-reaction with price, crease, and camera caveats
+            tone_illustrative: 0.5
+        corroborating:
+          - url: https://www.youtube.com/watch?v=BORNUd_FdLA
+            title: "We unfolded the iPhone Duo | The Vergecast"
+            evidence_tier: listing-metadata
+            evidence_note: "Official episode description: 'Apple did the one more thing: This week it announced its much-anticipated folding phone'; 'Allison Johnson and Vee Song report back from California after having more hands-on time with Apple's new devices'; not transcript-verified, corroborating only"
+        apple_arm_average: 0.38
+      meta_arm:
+        carried_from: mechanism_626_iteration_653
+        items:
+          - url: https://thetechstreetnow.com/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race/
+            title: "Meta bets on AI agent Muse to catch up in AI race"
+            byline: Robert Hart
+            byline_role: The Verge AI reporter
+            date: 2026-09-08
+            evidence_tier: mirror-attested
+            evidence_note: "Meta arm carried verbatim from mechanism_626 (#653): theverge.com policy-blocked for first-hand fetch; byline attribution via technewstube mirror ('By Robert Hart Sep 8, 2026, 3:00 pm'); reprint text verified verbatim across four independent mirrors (thetechstreetnow, technewstube, rocketnews, brocker.org)"
+            verbatim_quotes:
+              - "Headline: Meta bets on AI agent Muse to catch up in AI race"
+              - "The product is the latest step in a multi-billion dollar strategy overhaul designed to revitalize the company's ailing position in the AI race"
+              - "Muse ... is being positioned as the centerpiece of Meta's AI strategy going forward as the company seeks to regain ground after years of setbacks and failures."
+              - "Meta calls Muse 'the world's first personal AI agent built for everyone,' a claim the competitive lineup does not support on its face."
+            register: market_legitimacy_defeat
+            tone_illustrative: -0.35
+        meta_arm_average: -0.35
+      asymmetry_scorer:
+        method: MANUAL ILLUSTRATIVE
+        meta_arm_average: -0.35
+        apple_arm_average: 0.38
+        delta_meta_minus_apple: -0.73
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        note: "Apple arm average is the mean of the two scored written items (0.25, 0.50) = 0.375 rounded to 0.38; delta = -0.35 - 0.375 = -0.725 rounded to -0.73. n=2 vs n=1 degenerate statistical contract per the #638/#643 convention; engine NOT run; no divergence pin per Aug 28 2026 standing rule."
+      financial_context: 'Correlation only, not causation. The Verge apple block carries financial_tie "none", $0, coverage_prediction "softer": this finding is CONSISTENT with the block prediction, not a contradiction of it. Vox Media May 29 2024 OpenAI content-licensing and product partnership (OpenAI trains on The Verge archive; $0 Meta relationship; carried from #644/#683). Both arms are $0-deal entities, so the deal gradient cannot distinguish them; the observed gap is entity-specific editorial prior plus genre, not money.'
+      confounders_ranked:
+        strong:
+          - "Sub-genre mismatch within launch coverage: the Duo arm is hands-on hardware event coverage (access economy structurally favors celebration) while the Hart Muse piece is a market-legitimacy analysis that editorially debunks Meta's marketing claims; different sub-genres within the same launch week."
+          - "Opinion-genre bound: the staffers piece is explicitly a gut-reaction format; a Verge staffers-react piece on Muse was never published and could in principle run celebratory; the celebration register may be genre-bounded rather than entity-bounded."
+          - "Genuine market context: the 'ailing position / setbacks and failures' register tracks well-documented Meta AI turmoil in 2025-26 (corpus-wide), giving the Hart register a news-value basis independent of editorial preference."
+        moderate:
+          - "Mirror-bounded Apple evidence: the Lawler piece is attested via a truncated syndication (full-text register unconfirmed); no canonical theverge.com URL was invented."
+          - "The Vergecast evidence is listing-metadata (official episode description), not a transcript; corroborating only, not scored."
+        weak:
+          - "Degenerate contract: n=2 vs n=1 scored items, tones hand-assigned, no engine run."
+      falsification_family_member: false
+      falsification_note: "NOT a falsification-family member: no named deal-gradient prediction is contradicted (both arms $0 at The Verge; the Vox-OpenAI deal prediction is scoped to OpenAI coverage and is untested here; #686 verified no SIXTEENTH member anywhere). This is the second publication on the launch-genre boundary-condition family (#662 WSJ the first): the zero-deal competitor Apple carries the celebratory launch register."
+      cross_refs:
+        - "662 (first launch-genre boundary-condition data point: WSJ Apple Duo +0.45 vs Meta +0.35, OpenAI -0.225, Microsoft -0.35)"
+        - "653/mechanism_626 (Hart Meta Muse -0.35 vs OpenAI Astra safety -0.25; Meta arm carried)"
+        - "683/mechanism_644 (Hayden Field byline-isolated Verge pair; Vox-deal softness fails at this journalist)"
+        - "657/mechanism_628 (Verge Snap Specs shipping-phase vs Meta LED-tamper surveillance register; mirror-bounded convention)"
+        - "425 (Verge OpenAI aspiration vs Meta deficit publication-level precedent)"
+        - "644 (Vox Media triple-AI-payer architecture; Vox-OpenAI May 29 2024 deal; Meta $0)"
+        - "608/mechanism_599 (Hart incident constancy: hard on both entities)"
+      research_method: "5 browser.search query sets + 2 browser.open first-hand mirror reads (Lawler via thetechstreetnow, staffers via dailyguardian) with verbatim quotes; no theverge.com URLs constructed; Vergecast via YouTube listing metadata; Meta arm carried verbatim from mechanism_626; pre-commit repo greps: zero test_type_a_687 files, no #687 in git log, zero mechanism_646 hits, both evidence URLs zero repo-wide hits."
+      artifact_readiness: "No analysis.json update warranted. Illustrative-only scorer output; boundary-condition replication, not artifact-grade."
   google:
     financial_tie: "adversarial_litigation"
     estimated_value: "$0 (dual lawsuits - AI Overviews + adtech)"
