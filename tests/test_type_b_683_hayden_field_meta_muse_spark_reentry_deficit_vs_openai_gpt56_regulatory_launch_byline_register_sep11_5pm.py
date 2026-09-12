@@ -97,7 +97,7 @@ OPENAI_URL = "https://technewstube.com/theverge/1844887/openai-unveils-gpt-5-6-u
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "9206d0a0af23816450cf7dfcc2eb711d7871ae75"
 
 
 def _careers():
