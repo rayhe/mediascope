@@ -246,18 +246,6 @@ class TestIteration695Metadata:
         assert os.path.basename(__file__) == FILE_695
 
 
-class TestNovelty695:
-    def test_no_type_d_695_commit_pre_commit(self):
-        out = subprocess.run(
-            ["git", "log", "--format=%s"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            check=True,
-        ).stdout
-        assert "Type D #695:" not in out
-
-
 class TestScorerMixedNBoundaryPair649:
     """The #692 Reuters pair (Apple [0.15, -0.25] n=2 vs Meta [-0.45]
     n=1) is the EIGHTH degenerate-boundary pin: Welch significance
@@ -634,7 +622,7 @@ class TestDocSync695:
 class TestRotationCycleGuard695:
     # Deselected pre-commit per the #565 followup convention; anchor patched
     # in the followup once the #695 main-commit SHA is known.
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched in followup per #565 convention
+    ANCHORED_SHA = "f49f16fff213d98922cbcd649495e4b7b2fbb341"  # patched in followup per #565 convention
 
     @staticmethod
     def _mains():
