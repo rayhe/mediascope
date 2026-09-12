@@ -87,7 +87,7 @@ LLMPULSE_URL = "https://llmpulse.ai/blog/ai-content-licensing-deals/"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "PENDING_PATCH_689"
+ANCHORED_SHA = "b95def6"
 
 
 def _entities():
