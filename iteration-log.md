@@ -22,7 +22,7 @@
 
 **Novelty Verification:** Zero test_type_e_686 files on disk before this run (glob verified); no Type E commit with 686 in the title (git log --grep verified); 60th verification cycle is new (59th was #681 at 15:00 PDT Sep 11 2026). The #681 geeky-gadgets surface is now in-corpus (2 grep hits); it did not re-surface this run and is not new again.
 
-**Commit hashes:** main 9abca67, followup (ANCHORED_SHA patched per #565 convention). count_stats gate: authoritative .venv pytest collection 36,144 tests / 1,014 files (delta +47/+1 = the #686 file exactly). Doc-sync ratchet: ARCHITECTURE tree row for #686; README stats table refreshed (36097->36144 tests, 1013->1014 files) + narrative line + test-file table row for #686; iteration-log #686 entry.
+**Commit hashes:** main 9abca67, followup ffafebc (ANCHORED_SHA patched per #565 convention). count_stats gate: authoritative .venv pytest collection 36,144 tests / 1,014 files (delta +47/+1 = the #686 file exactly). Doc-sync ratchet: ARCHITECTURE tree row for #686; README stats table refreshed (36097->36144 tests, 1013->1014 files) + narrative line + test-file table row for #686; iteration-log #686 entry.
 
 ---
 
