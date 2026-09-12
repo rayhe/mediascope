@@ -13280,6 +13280,102 @@ entities:
         unique_key_check: pending
         mechanism_id_unique: pending
         provenance: url_backed
+    mechanism_645_microsoft_pcm_conde_nast_bilateral_leg:
+      mechanism_id: 645
+      iteration: 684
+      rotation: Type C
+      date_analyzed: '2026-09-11'
+      time_pdt: '18:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Microsoft Publisher Content Marketplace (PCM) x Conde Nast bilateral deal-level leg (Feb 2026) - FIRST dedicated deal-level mechanism on WIRED''s parent''s Microsoft AI licensing leg; Conde Nast first-wave PCM pilot partner; US text-based editorial content licensed for grounding AI-generated summary responses across Copilot experiences; pay-for-demonstrated-value pricing still experimental in Feb 2026; first-party Copilot plus Yahoo demand; Microsoft invested north of $10M including publisher payments (WSJ Jul 2026, Tim Frank); Sep 2026 status ACTIVE; Meta is a zero-PCM participant'
+      type: financial_incentive_mapping
+      type_c_focus: 'Formalizes the Microsoft x Conde Nast bilateral PCM leg as the first dedicated deal-level mechanism on WIRED''s parent''s Microsoft AI relationship: the Feb 2026 PCM launch (Microsoft Advertising blog; co-designed with Business Insider Inc, Vox Media Inc, USA Today Co, People Inc, the Associated Press, Hearst Magazines, and Conde Nast; publishers set their own licensing and usage terms; usage-based reporting; Yahoo onboarding as demand partner; reported by searchengineland, technologyrecord, computerworld, windowscentral, gadgets360), Conde Nast''s Feb 9 2026 pilot-partner announcement (US text-based editorial content licensed for use in grounding AI-generated summary responses across Microsoft''s Copilot experiences; WebWire press-release distribution sourced to condenast.com), the Digiday Q and A with Nikhil Kolar, VP Microsoft AI (first-hand read this run, 92 rendered lines, published ~Feb 2026: pilot moving beyond the initial phase toward a broader ecosystem; first-wave publisher list above; goal is expanding to more publishers and demand partners, US and international; pricing anchored on pay for demonstrated value with standardized click-to-sign contracts planned on the MSN 18,000-brands playbook; bring-your-own-license lets existing deals ride the marketplace rails; demand side is first-party Copilot - MAI consumer copilot and M365 copilot enterprise - plus Yahoo as onboarding demand partner), the Adweek Vasanth Williams appointment piece (Conde Nast CPO and CTO from Dec 8; quote: the media company also has content licensing agreements in place with OpenAI, Perplexity, and Amazon), and the WSJ Jul 2026 marketplaces piece (search-snippet attested this run: pilot with eight publishers - up from the seven named first-wave partners - including People, the Associated Press and Hearst; Yahoo and Microsoft''s own Copilot participating as buyers; Microsoft invested north of $10M including on payments to publishers, per Tim Frank, corporate vice president at Microsoft AI monetisation, and expects that number to rise). Distinct from mechanism 443 (PCM marketplace transparency paradox: architecture-level, operator-plus-first-buyer dual role; this mechanism is the bilateral deal-level Conde Nast leg it implied but never formalized), from mechanism 504 (Conde Nast x OpenAI Aug 2024 first AI-lab payer), from mechanism 564 (Amazon x Conde Nast Rufus Jul 2025 second AI-lab payer), from mechanism 391 (Perplexity Comet Plus 80/20 revenue share with Conde Nast), from mechanism 642 (Apple News/News+ x Conde Nast revenue-share leg: different incentive mechanics, subscription pool split vs AI-grounding licensing), from mechanism 559 (Amazon x NYT $20-25M/yr: the disclosed-quantum comparator), from mechanism 549 (News Corp x Meta: the Meta-pays-publishers counterpart showing Meta does pay AI licensing, just not to Conde Nast), and from mechanism 539 (Dotdash Meredith triple payer: the first dedicated PCM bilateral leg in the corpus; Conde Nast is the second, and the highest-traffic tracked-publication owner on PCM).'
+      launch_date: '2026-02-03 (Microsoft Advertising blog launch; first public news Sep 2025 Monaco invite-only publisher summit; Digiday Kolar Q and A and WebWire Conde Nast announcement early Feb 2026)'
+      conde_nast_participation:
+        announcement: 'Feb 9 2026: Conde Nast joins Microsoft as pilot partner in a two-sided content marketplace created to compensate publishers for use of content by AI companies and products (WebWire press-release distribution, sourced to condenast.com/news/conde-nast-joins-microsoft-pilot-partner-ai-content-marketplace)'
+        scope: 'Conde Nast''s US text-based editorial content licensed for use in grounding AI-generated summary responses across Microsoft''s Copilot experiences'
+        first_wave_partners: 'Business Insider Inc, Vox Media Inc, USA Today Co, People Inc, the Associated Press, Hearst Magazines, and Conde Nast (Digiday Q and A, Nikhil Kolar, VP Microsoft AI; first-hand read this run)'
+        executive_posture: 'Conde Nast named Vasanth Williams chief product and technology officer (Dec 8 start) alongside the Microsoft pilot; Adweek: the media company also has content licensing agreements in place with OpenAI, Perplexity, and Amazon - Microsoft is the fourth named AI licensor'
+      deal_terms:
+        pricing_model: 'pay for demonstrated value (Kolar, Digiday Q and A): sometimes the value is knowing a fact, sometimes a non-substitutable source for a high-consideration decision commands much more; pricing still experimental in Feb 2026 (quote: we are working through all those business models now)'
+        contract_path: 'pilot phase used individual negotiations; target is standardized click-to-sign contracts (the MSN playbook: 18,000 brands); not finalized at the Q and A'
+        publisher_controls: 'publishers set licensing and usage terms, express usage-rights encumbrances, retain ownership; usage-based reporting feeds back how content was used and where demand is highest (searchengineland, technologyrecord)'
+        demand_side: 'first-party Copilot demand (MAI consumer copilot, M365 copilot enterprise) plus Yahoo onboarding as external demand partner; expansion to LLMs and any AI builders, US and international, including European publishers'
+        bring_your_own_license: 'publishers with pre-negotiated licenses can route them through the marketplace rails - the marketplace becomes infrastructure for delivering any license negotiated outside it'
+        payment_terms_cn: 'undisclosed - no Conde Nast-specific payment amount or rate card stated by Microsoft, Conde Nast, or any reporting outlet'
+      scale_2026:
+        microsoft_investment: 'north of $10M invested, including on payments to publishers, per Tim Frank, corporate vice president at Microsoft AI monetisation (WSJ, Jul 2026, search-snippet attested); expects that number to rise - the FIRST Microsoft-PCM-spend quantum datum in the corpus'
+        pilot_size: 'seven named first-wave publishers (Feb 2026) expanding to eight by Jul 2026 (WSJ); Microsoft expects publisher and demand-partner counts to keep growing'
+        quantum_caveat: 'the $10M figure covers Microsoft''s total marketplace investment across all publishers plus infrastructure; it is NOT a Conde Nast payment figure - do not quote it as one'
+      status_sep_2026:
+        verdict: ACTIVE
+        basis: 'WSJ Jul 2026 confirms the pilot active with eight publishers and rising investment; the since=2026-06-01 query set surfaced no Conde Nast exit reporting (bounded absence per the iteration-492 rule, none claimed as proof)'
+        expansion_signal: 'Kolar: we are actually starting to expand these conversations now beyond the US - European publishers being engaged to co-design region-specific contracts'
+        convention: '#599 ACTIVE convention (treat ongoing absent contrary reporting as active)'
+      asymmetry_relevance:
+        gradient: 'Microsoft-payer PRESENT at Conde Nast (fourth named AI licensor; PCM bilateral leg now formalized) vs Meta $0 AI legs at Conde Nast (mechanism 331 seven-publisher bundle excludes Conde Nast; corpus: Conde Nast collects AI money from OpenAI, Amazon Rufus, Microsoft PCM, Perplexity - never Meta). Meta is a zero-PCM participant (mechanism 443); Meta runs 13 bilateral publisher AI deals including News Corp $50M/yr (mechanism 549) but no marketplace presence.'
+        structural_exclusion: 'PCM scales Meta''s exclusion as new AI builders join as demand partners (mechanism 443; Kolar: the goal is expanding to more publishers and demand partners, LLMs and any AI builders); the marketplace is the infrastructure layer where Meta''s absence compounds'
+        ai_native: 'unlike the Apple News/News+ leg (mechanism 642, subscription pool split), PCM is AI-content-native: Conde Nast content grounds responses in Copilot, a direct Meta AI competitor product - the payer-competitor overlap is direct'
+        tone_predictor_grade: MODERATE-WEAK
+        why_moderate_weak: 'stronger than the News+ WEAK leg because PCM is AI-grounding licensing inside a direct Meta AI competitor product with structural exclusion dynamics; weaker than a training/display lump sum because the Conde Nast-specific quantum is undisclosed, pricing was experimental in Feb 2026, and Microsoft''s operator-plus-first-buyer dual role muddies a simple payer-softness read'
+        no_tone_claim: true
+      confounders_ranked:
+        - rank: 1
+          strength: strong
+          confounder: 'Conde Nast-specific quantum is undisclosed: the north-of-$10M WSJ figure covers Microsoft''s total marketplace investment across all publishers plus infrastructure, not a Conde Nast payment; pay-for-demonstrated-value pricing was still experimental in Feb 2026, so the leg cannot be weighted against the OpenAI or Amazon legs'
+        - rank: 2
+          strength: strong
+          confounder: 'grounding/activation deal, not training or display lump sum: PCM licenses content for grounding AI-generated summary responses in Copilot - mechanics closer to the Amazon Rufus activation leg (mechanism 564) than the OpenAI ChatGPT display leg (mechanism 504); editorial-tone directional predictions are weaker here than for mechanism 504'
+        - rank: 3
+          strength: strong
+          confounder: 'Microsoft is marketplace operator AND first buyer via Copilot (mechanism 443 transparency paradox): Conde Nast is paid but Microsoft controls the rails, pricing experiments, and usage reporting - a capture reading and an arms-length reading both fit the structure'
+        - rank: 4
+          strength: moderate
+          confounder: 'adversarial-plus-licensing coexistence in the corpus (NYT licensed to Amazon while suing OpenAI; Guardian sued Cohere one day before signing OpenAI; News Corp licensed to OpenAI then sued Perplexity): deal presence does not imply editorial capture, bounding tone predictions at both ends'
+        - rank: 5
+          strength: moderate
+          confounder: 'PCM is voluntary, non-exclusive, publisher-set terms with ownership retained (searchengineland, technologyrecord) - an arms-length commercial design, not capture infrastructure'
+        - rank: 6
+          strength: weak
+          confounder: 'independent Sep 2026 coverage is thin: status rests on the WSJ Jul 2026 snippet plus bounded absence; the Feb 2026 launch reporting clusters in a two-week window, so first-wave composition details are single-era attested'
+      cross_references:
+        - 'mechanism 443 (Microsoft PCM marketplace transparency paradox: architecture-level; this mechanism is the bilateral Conde Nast deal-level leg it implied but never formalized)'
+        - 'mechanism 504 (Conde Nast x OpenAI Aug 2024: the FIRST AI-lab payer of WIRED''s owner)'
+        - 'mechanism 564 (Amazon x Conde Nast Rufus Jul 2025: the SECOND AI-lab payer; also a grounding/activation deal, the closest mechanics comparator)'
+        - 'mechanism 391 (Perplexity Comet Plus 80/20 revenue share with Conde Nast)'
+        - 'mechanism 642 (Apple News/News+ x Conde Nast revenue-share leg: same parent, different incentive mechanics)'
+        - 'mechanism 559 (Amazon x NYT $20-25M/yr: the disclosed-quantum comparator for the undisclosed PCM leg)'
+        - 'mechanism 549 (News Corp x Meta $50M/yr: the Meta-pays-publishers counterpart)'
+        - 'mechanism 539 (DDM triple payer: the first dedicated PCM bilateral leg in the corpus; Conde Nast is the second)'
+        - 'mechanism 331 (Meta Dec 2025 seven-publisher bundle: Conde Nast absent - the Meta $0 side of the gradient)'
+        - '#599 (ACTIVE convention for status verification)'
+        - '#492 (bounded-absence rule; no zero-coverage claims)'
+        - '#674 / mechanism 639 (status-verification style precedent: OpenAI x Axios Layer-2 leg)'
+      source_urls:
+        - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
+        - https://www.WebWire.com/ViewPressRel.asp?aId=350303
+        - https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+        - https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+        - https://www.technologyrecord.com/article/new-microsoft-platform-lets-publishers-set-terms-for-ai-content-use
+        - https://www.computerworld.com/article/4128254/microsoft-aims-to-reward-publishers-for-content-used-by-ai.html
+        - https://www.windowscentral.com/microsoft/microsoft-publisher-content-marketplace-announcement
+        - https://www.gadgets360.com/ai/news/microsoft-publisher-content-marketplace-licensing-platform-ai-usage-introduced-10946054?pfrom=home-ndtvworld_world_gadgets&technology
+        - https://winbuzzer.com/2026/02/10/amazon-ai-content-marketplace-microsoft-xcxwbn/
+        - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+      research_method: '3 browser.search query sets this run (Microsoft Publisher Content Marketplace Conde Nast AI licensing pilot 2026; Microsoft PCM pay-per-use publishers expansion 2026; Microsoft PCM publishers demand partners 2026 since=2026-06-01) + 1 first-hand browser.open read (Digiday Nikhil Kolar Q and A, 92 rendered lines). All URLs verbatim from Full-URL listings; WSJ Jul 2026 snippet-attested (paywall, not first-hand); Adweek Williams quotes search-snippet attested per the first query set; no canonical URLs constructed. Bounded absences per the iteration-492 rule (no Conde Nast PCM exit reporting in the searched windows; none claimed as proof). Pre-commit novelty greps: zero test_type_c_684 files on disk (glob); no Type C 684 in git log (--grep); zero mechanism_645 keys repo-wide (text-grep); max numeric mechanism id pre-commit 644; no prior dedicated Microsoft x Conde Nast bilateral deal-level mechanism (closest: mechanism 443 marketplace architecture; portfolio lines). No em dashes; ASCII-only.'
+      statistical_discipline:
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+
+
   snowflake:
     display_name: Snowflake
     aliases:
@@ -14575,6 +14671,7 @@ entities:
         Times property.
     - url: https://mergr.com/investor/regent
       note: Mergr profile showing 28 transactions, 26 portfolio companies.
+
   perplexity:
     display_name: Perplexity AI
     aliases:
