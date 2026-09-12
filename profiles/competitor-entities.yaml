@@ -8286,6 +8286,160 @@ entities:
         iteration: 679
         type: C
         date: 2026-09-11 12:00 PDT
+    mechanism_649_reuters_apple_duo_launch_register_vs_reuters_meta_muse_register_sep12:
+      mechanism_id: 649
+      iteration: 692
+      iteration_type: A
+      iteration_time: "2026-09-12 02:00 PDT"
+      date_analyzed: "2026-09-12"
+      publication_focus: "reuters"
+      competitor: "apple"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      author: "Kit (with Ray)"
+      pair: "Reuters x Apple (vs Meta)"
+      event: "Apple iPhone Duo foldable launch (Sep 9 2026) vs Meta Muse AI-agent launch (Sep 8 2026): same-week launch pair at the Reuters wire"
+      test_file: "tests/test_type_a_692_reuters_apple_duo_launch_register_vs_meta_muse_register_sep12_2am.py"
+      finding: >
+        The wire that Meta pays ran harder straight-news coverage of the
+        payer's own launch than of the non-payer's launch in the Sep 8-10
+        2026 window. The Apple arms: (1) Sep 9, the iPhone Duo foldable
+        launch news item, verbatim Reuters URL slug dated 2026-09-09
+        (headline "Apple debuts $1,999 passport-shaped foldable phone,
+        called Duo"): biggest design change in years, first launch under
+        new CEO John Ternus, passport-shaped, 7.6-inch inner display,
+        $1,999 start, PP Foresight analyst Paolo Pescatore quote calling
+        it a "new premium growth opportunity" (+0.15 illustrative,
+        excerpt-bounded from verbatim search-result excerpts); (2) Sep 10,
+        the next-day skeptical follow-up "Apple's foldable iPhone poses a
+        $1,999 question: Who is it for?" (opened first-hand this run, 61
+        rendered lines): observers "left questioning its appeal beyond
+        wealthy tech enthusiasts", analyst Carolina Milanesi "they really
+        shied away from it" on buyer definition, Neil Shah (Counterpoint)
+        "a little bit of a lapse in positioning", IDC foldables under 3%
+        of the 2026 smartphone market, Vision Pro "stumbled out of the
+        gate in 2023" analogy, $3,199 top-storage price (-0.25
+        illustrative). Apple arm average -0.05. The Meta arm: Reuters' own
+        Sep 8 Katie Paul Muse-launch piece runs a hard accountability
+        register, "despite internal concerns that the technology mismanages
+        its access to sensitive personal data," with a "RAISING THE STAKES
+        FOR SAFETY" section header (-0.45 illustrative, carried from
+        #664/m633 via #667/m634). Illustrative delta (Apple minus Meta)
+        +0.40, n=2 vs n=1, degenerate statistical contract (p=1.0, d=0.0)
+        per the #638/#643 convention; no engine run. Financial gradient:
+        Reuters is PAID BY Meta under the Oct 25 2024 multiyear AI news
+        licensing deal (mechanism 633, ACTIVE per the #599/#609
+        convention), while no Reuters x Apple AI licensing deal exists on
+        record (bounded absence per the iteration-492 rule; this run's
+        dedicated search surfaced only Apple-as-licensee deals -
+        Shutterstock, publisher-archive talks - with Reuters as the
+        reporter of those deals, never Apple paying Reuters). The
+        incentive theory predicts softer coverage of the payer than of the
+        non-payer at the same wire; the observed direction is opposite:
+        the payer's launch piece (-0.45) is the hardest register in the
+        pair while the non-payer's coverage averages -0.05. EIGHTEENTH
+        falsification-family member (ledger stood at 17 after #689's
+        SEVENTEENTH; #690 Type D and #691 Type E claimed no membership).
+        Publication-genre boundary: this is the third publication in the
+        Duo launch-genre series - WSJ celebrated (+0.45, #662/m631), The
+        Verge celebrated (+0.38 avg, #687/m646), Reuters ran a skeptical
+        next-day follow-up (-0.25). The launch-celebration register is
+        publication-bounded, not universal: the wire's house skepticism
+        overrides it, on both entities. Correlation only, not proof of
+        editorial influence.
+      apple_arm:
+        items:
+          - title: "Apple debuts $1,999 passport-shaped foldable phone, called Duo"
+            date: "2026-09-09 (Reuters URL slug; search-result headline post-event)"
+            url: "https://www.reuters.com/business/retail-consumer/apple-expected-unveil-first-folding-phone-with-new-ceo-ternus-command-2026-09-09/"
+            byline: "unattested in excerpts"
+            register: "product_launch_forward"
+            key_framing: "Apple on Wednesday unveiled a $1,999 foldable phone called Duo, introducing the biggest change in years in the company's flagship product; sized and shaped like a passport with rounded edges, opens into a 7.6-inch-wide screen; first folding-phone event with new CEO John Ternus; A20 chip plus new C2 modem moving away from Qualcomm; PP Foresight analyst Paolo Pescatore: 'Apple has created a new premium growth opportunity, opened up another revenue stream and injected fresh momentum into the iPhone business'; shares down 1.8% at end of presentation"
+            manual_illustrative_tone: 0.15
+            source_note: "excerpt-bounded: register read from verbatim search-result excerpts; reuters.com not opened first-hand for this URL; slug reads 'expected-unveil' (pre-event slug, post-event headline) - noted, not normalized"
+          - title: "Apple's foldable iPhone poses a $1,999 question: Who is it for?"
+            date: "2026-09-10 (Reuters URL slug; opened first-hand this run)"
+            url: "https://www.reuters.com/business/retail-consumer/apples-foldable-iphone-poses-1999-question-who-is-it-2026-09-10/"
+            byline: "unattested in the opened rendered text"
+            register: "skeptical_launch_followup"
+            key_framing: "observers 'left questioning its appeal beyond wealthy tech enthusiasts'; Milanesi (Creative Strategies): 'Apple doesn't usually define who the buyer is, but in this case specifically, they really shied away from it'; Shah (Counterpoint): 'a little bit of a lapse in positioning', est. 6M Duo units by year-end on pent-up demand; IDC: foldables under 3% of 2026 global smartphone market; 'A QUESTION OF PURPOSE' section header; Vision Pro 'stumbled out of the gate in 2023' with analysts lauding the tech but doubting price and use; $3,199 top-storage price; Samsung 'reheating our leftovers' mockery noted"
+            manual_illustrative_tone: -0.25
+            source_note: "first-hand browser.open this run, 61 rendered lines; byline line not captured in the rendered text"
+        average_manual_illustrative: -0.05
+      meta_arm:
+        carried_from: "#667/m634 (itself carried from #664/m633)"
+        items:
+          - title: "Meta launches AI agent that can access other apps to send emails, make payments"
+            date: "2026-09-08 (Reuters; carried from #664/m633; in corpus)"
+            url: "https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/"
+            byline: "Katie Paul"
+            register: "accountability_launch"
+            key_framing: "rolled out on Tuesday a long-touted AI assistant that can autonomously send emails, sell a car and book travel on a person's behalf, despite internal concerns that the technology mismanages its access to sensitive personal data; RAISING THE STAKES FOR SAFETY section header; internal tests reveal mixed results; privacy, security, and reliability stakes foregrounded"
+            manual_illustrative_tone: -0.45
+            source_note: "carried from #664 / mechanism 633 via #667 / mechanism 634; in corpus; excerpt-bounded"
+        average_manual_illustrative: -0.45
+      financial_context:
+        predictor: "payer_leg_incentive"
+        prediction: "softer_than_expected"
+        chain: "Meta x Reuters multiyear AI news licensing deal, Oct 25 2024 (mechanism 633; ACTIVE per the #599/#609 convention). Reuters x Apple: NO AI licensing deal on record (bounded absence per the iteration-492 rule; this run's dedicated search returned Apple-as-licensee deals - Shutterstock $25-50M, publisher-archive talks - with Reuters as reporter, never Apple paying Reuters)."
+        status: "contradicted on the pinned arms: the paid counterparty's Meta launch coverage (-0.45) is harder than the non-payer's Apple launch coverage (-0.05 avg). EIGHTEENTH falsification-family member. Correlational only, not proof of editorial influence."
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = Apple arms, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.15, -0.25]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.45]
+        target_avg: -0.05
+        peer_avg: -0.45
+        delta_manual_illustrative: 0.4
+        delta_calc: "-0.05 - (-0.45) = 0.40"
+        engine_degenerate: "n=2 vs n=1: degenerate statistical contract per the #638/#643 convention (Welch t and Cohen's d degenerate: p=1.0, d=0.0). Engine NOT run; no divergence pin (divergence pins require engine significance, which cannot occur on degenerate arms)."
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)"
+        artifact_grade: false
+      falsification_family:
+        membership: "EIGHTEENTH falsification-family member (ledger stood at 17 after #689's SEVENTEENTH; #690 Type D and #691 Type E claimed no membership; #687 explicitly not a member)"
+        prediction: "the incentive theory predicts SOFTER coverage of the payer: Reuters is paid by Meta (Oct 25 2024 multiyear AI news licensing deal, mechanism 633, ACTIVE), so Meta's launch coverage should run softer than the zero-deal Apple arms at the same wire"
+        observed: "opposite: payer Meta's Muse launch piece runs -0.45 (hardest register in the pair: 'despite internal concerns', 'RAISING THE STAKES FOR SAFETY'), non-payer Apple's two Duo pieces average -0.05 (+0.15 launch news, -0.25 skeptical follow-up). Illustrative delta (Apple minus Meta) +0.40."
+        within_arm_range_equals_gap: "the within-Apple-arm register range (0.40) EQUALS the between-entity gap (0.40): Reuters' own Apple coverage spans the full gap internally (+0.15 to -0.25), so entity favoritism is not needed to explain the delta (same structure as #637, where the within-arm range exceeded the gap)"
+        publication_genre_boundary: "third publication in the Duo launch-genre series: WSJ +0.45 celebration (#662/m631), The Verge +0.38 avg celebration (#687/m646), Reuters -0.05 avg with skeptical next-day follow-up (this run). The launch-celebration register is publication-bounded, not universal: the wire's house skepticism overrides it on both entities"
+      confounders_ranked:
+        strong:
+          - "Within-arm range equals the gap: Reuters' Apple arms span +0.15 to -0.25 (range 0.40), exactly the 0.40 between-entity gap. Publication-internal register variance fully accounts for the observed delta; entity favoritism is not required (the #637 structure, where the range exceeded the gap)."
+          - "News-peg valence skew: the Muse piece's hardness is source-driven accountability anchored on Meta's own on-record admission (VP AI products Vishal Shah confirmed the April delay and the safety-threshold crossing, carried from #664). The Duo follow-up's skepticism is analyst-driven positioning critique (Milanesi, Shah/Counterpoint, IDC). Both registers track their news pegs, not entity preference."
+          - "Wire-service genre and independence mandate: Reuters sells neutrality to every newsroom; the Thomson Reuters Trust Principles mandate independence (carried from mechanism 633). The skeptical register lands on both entities (Muse -0.45, Duo follow-up -0.25); the pin is boundary-scoped to straight-news launch coverage, not a wire-wide claim."
+        moderate:
+          - "Evidence-tier asymmetry: the Duo follow-up was read first-hand (61 rendered lines); the Duo launch piece is excerpt-bounded (reuters.com not opened for that URL); the Meta arm is carried from #664/#667, not re-read this run."
+          - "Bylines unattested on both Duo pieces in this run's reads; the Muse byline (Katie Paul) is carried from #664."
+          - "Date window: Muse Sep 8, Duo launch Sep 9, Duo follow-up Sep 10 - three consecutive days, the tightest window in the falsification family; timing skew is minimal."
+          - "Criticism-class asymmetry: the Duo skepticism centers on positioning and pricing (product critique), the Muse skepticism on safety and privacy (trust critique). Different criticism classes may carry different baseline hardness at a wire."
+        weak:
+          - "n=2 vs n=1: degenerate statistical contract; verdict-invariant under rounding (delta +0.40 exact at 2dp)."
+          - "Bounded absence of a Reuters x Apple AI licensing deal (iteration-492 rule): absence of reporting is not proof of absence; an undisclosed Reuters-Apple arrangement would reclassify the non-payer leg."
+      counterevidence:
+        - "WSJ #662 (+0.45 Duo celebration) and The Verge #687 (+0.38 avg Duo celebration): cross-publication, the same Duo launch event drew celebratory registers elsewhere. Reuters' skepticism is a publication-genre bound, not evidence about Apple."
+        - "Reuters' own Sep 4 Breakingviews opinion column runs adversarial on OpenAI (-0.25 illustrative, #634): the wire demonstrates adversarial capacity toward non-payers; the pin is scoped to straight-news register, not blanket softness toward Apple."
+        - "WSJ's OpenAI Tumbler Ridge coverage (#637/m616) reached -0.55 illustrative: harder registers exist at other outlets on non-payers, so the cross-outlet spectrum does not single out Reuters' Meta arm."
+        - "The Meta Muse register's hardness tracks Shah's on-record safety admission and documented internal concerns: source-driven accountability is the leading alternative to entity-selective bias."
+      cross_references:
+        - "#667 / mechanism 634 (Reuters x OpenAI sibling; the Meta arm is carried from here via #664/m633)"
+        - "#664 / mechanism 633 (Meta x Reuters multiyear AI news licensing deal plus the Sep 8 Muse accountability register)"
+        - "#662 / mechanism 631 (WSJ x Apple Duo launch celebration +0.45; the Duo URLs in corpus via this run's news-corp.yaml entries)"
+        - "#687 / mechanism 646 (The Verge x Apple Duo launch celebration +0.38 avg; launch-genre series second publication)"
+        - "#637 / mechanism 616 (within-arm register range vs between-entity gap structure)"
+        - "#689 / mechanism 648 (SEVENTEENTH falsification-family member; ledger-at-17 baseline this run advances)"
+        - "#638/#643 convention (degenerate statistical contract on n=1 and n=2 arms)"
+        - "#599/#609 convention (Meta x Reuters deal ACTIVE status)"
+        - "iteration-492 rule (bounded absence for the Reuters x Apple no-deal reading; no zero-coverage claims)"
+        - "#650 convention (designed supersession of #690's no-649 sweep tests)"
+      novelty: "First dedicated Reuters x Apple Type A mechanism (mechanism 649). Zero mechanism_649 keys in profiles/ pre-commit (pinned by #690's sweep tests, superseded by design this run per the #650 convention); max numeric mechanism_id pre-commit 648 (#690). The two Duo URLs appear in corpus only via #662 (news-corp.yaml plus its test file, as WSJ-run cross-publication context); first Reuters-Duo Type A arms. #690's test_max_modern_mechanism_id_is_648, test_no_mechanism_649_in_profiles, test_no_mechanism_649_key_in_profiles, and test_no_mechanism_649_in_tests fail by designed supersession (the last because this run's own test file references mechanism_649; the sweep excludes only its own __file__). Journalist check: no journalist career mechanism added (Duo bylines unattested at the original level; the Muse piece is already covered by #664)."
+      research_method: "3 browser.search query sets this run (New York Times iPhone Duo foldable launch Sep 2026; New York Times Meta Muse AI assistant launch Sep 2026; Reuters Apple content licensing deal AI partnership) + 1 first-hand browser.open (Reuters Duo follow-up, 61 rendered lines). The NYT queries surfaced Reuters wire pieces and no usable NYT verbatim URLs, so the NYT x Apple candidate was rejected on the #627 verbatim-URL discipline and the run pivoted to Reuters x Apple, where both arms carry verbatim URLs. Duo launch piece excerpt-bounded from verbatim search-result excerpts (reuters.com not opened for that URL). Meta Muse arm carried verbatim from #667/m634 (in corpus via #664/m633). All URLs copied verbatim from Full-URL listings; no canonical URLs invented; no zero-coverage claims per the iteration-492 rule; no em dashes; ASCII-only. Pre-commit novelty greps: zero test_type_a_692 files on disk; no Type A #692 in git log; zero mechanism_649 keys in profiles/; no dedicated Reuters x Apple Type A (prior Reuters mechanisms 633/634 are Meta- and OpenAI-paired)."
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 692
+        type: A
+        date: 2026-09-12 02:00 PDT
+
   google:
     display_name: Google / Alphabet
     aliases:
