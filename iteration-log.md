@@ -24,7 +24,7 @@
 
 **Novelty Verification:** Zero test_type_b_703 files on disk pre-commit (glob verified); no Type B commit with 703 in the title (git log --grep verified); zero mechanism_656 keys in profiles/ pre-commit (max pre-commit mechanism_id 655); Olson journalist entry pre-existed with zero mechanism_* keys; the Sep 10 2026 Olson column title has zero prior corpus hits (repo-wide grep; the Coxon resignation event itself is in-corpus via #647/m622 WIRED - distinct journalist, outlet, and unit of analysis); the column-vs-Meta-corpus pair was never a mechanism. FIRST YAML mechanism on Parmy Olson. #700's no-655 sweep tests fail by designed supersession (max is now 656; per #700 convention).
 
-**Commit hashes:** main TBD; followup TBD (ANCHORED_SHA patched post-commit per #565 convention)
+**Commit hashes:** main efa8e4117d4a7952c46c6f363372971061f5c42b; followup TBD (ANCHORED_SHA patched post-commit per #565 convention)
 
 ---
 

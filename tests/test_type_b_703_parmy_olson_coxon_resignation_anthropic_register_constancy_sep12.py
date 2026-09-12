@@ -128,7 +128,7 @@ MECH_KEY = "mechanism_656_parmy_olson_coxon_resignation_anthropic_adversarial_re
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. The rotation-guard class is deselected pre-commit.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "efa8e4117d4a7952c46c6f363372971061f5c42b"
 
 
 def _careers():
