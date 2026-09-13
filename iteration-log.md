@@ -33355,3 +33355,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 **Rotation Transparency:** Previous commit Type D #720 at 08:00 PDT Sep 13 2026 (verified via git log before this run's commit). Per rotation A->B->C->D->E, next after D is E. Selected Type E.
 
 **Novelty Verification:** Zero test_type_e_721 files on disk before this run (glob verified); no Type E commit with 721 in the title (git log --grep verified).
+
+**Commit hashes (followup):** main commit 669e21472354982898003d56a4bc40a8781a569b ("Type E #721: podcast sentiment 67th verification cycle ..."); followup 197970efa1858a23487bfe2be670394e3faf9bb4 (ANCHORED_SHA patch per #565 + rotation guard rewrite to the #716-style distinct-mains window, fixing a naive guard that false-flagged on the followup's own "Type E #721 followup:" subject). Test file 36/36 green post-amend.
