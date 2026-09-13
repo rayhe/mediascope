@@ -36,9 +36,16 @@ def load_entities():
 
 
 def find_mechanism(data, mech_id):
-    """Recursively search for a mechanism by ID in the YAML data."""
+    """Recursively search for a mechanism by ID in the YAML data.
+
+    Skips cross-reference stubs: since 2026-08-17 (commit 968b4f5,
+    Mechanism #145) the corpus carries stub dicts with only
+    mechanism_id + relationship (e.g. the line-3306 stub for #138)
+    that shadow the real block in a naive first-match walk. The real
+    block always carries mechanism_name. Fixed in Type D #725.
+    """
     if isinstance(data, dict):
-        if data.get("mechanism_id") == mech_id:
+        if data.get("mechanism_id") == mech_id and "mechanism_name" in data:
             return data
         for v in data.values():
             result = find_mechanism(v, mech_id)
