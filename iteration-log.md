@@ -9,6 +9,7 @@
 - Novelty verification: zero test_type_a_727 files, no "Type A #727" in git log, zero mechanism_670 keys repo-wide pre-commit, all shell-verified pre-commit; #725's zero-670 sweeps fail by designed supersession (per #710/#720 convention).
 - 20-test file green post-followup (anchor + full rotation guard + mechanism content + supersession + ledger). YAML-folding lesson: multi-line folded assertions need whitespace-normalized compare in tests (added _fold helper).
 - Commit hashes: main commit b1d9c129d70b8c69e91de9fd05845a3168e3e1ce ("Type A #727: WIRED x Apple Audio Intelligence always-listening register test ..."); followup 4347287e1eee0e1075a8f303b683beb0a1cc6a9a (ANCHORED_SHA patch per #565, anchor test green)
+- Push: PENDING - egress proxy TCP-down (connection refused on hatch-egress-proxy:3128) and direct github.com HTTPS unreachable (000) as of 15:00 PDT Sep 13; all 6 commits since #725 (6d05edc/f5e6fe8/1e9d2db #726 + b1d9c12/4347287/5c52575 #727) are local-only. Next hourly run: retry push first via the atomic proxy-credential workflow.
 
 
 #726 Type E: podcast sentiment 68th verification cycle (Sep 13 2026, 14:00 PDT; committed/logged by 15:00 recovery run)
