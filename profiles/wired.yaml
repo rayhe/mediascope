@@ -3062,6 +3062,168 @@ competitor_relationships:
       - https://web.archive.org/web/20260323110645/https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/
       - https://www.wired.com/story/why-apple-might-put-cameras-into-its-next-airpods/
       test_file: tests/test_type_a_446_wired_apple_camera_airpods_persistent_silence_sep01_12pm.py
+    mechanism_670_wired_apple_audio_intelligence_always_listening_register_asymmetry_sep13:
+      mechanism_id: 670
+      iteration: 727
+      iteration_type: A
+      iteration_title: "Type A: Competitor Coverage Deep Dive"
+      iteration_time: "2026-09-13 15:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "WIRED x Apple (vs Meta) - Audio Intelligence always-listening register test"
+      finding: >
+        THIRD leg of the Apple-always-listening corpus strand after m207/m446
+        (camera AirPods silence) and m668 (Engadget Cherlynn Low control case):
+        WIRED covered Apple's Sep 9 2026 always-listening Audio Intelligence
+        suite (Series 12/Ultra 4, S11 Secure Exclave) via Apple's own 11-page
+        technical privacy paper, shared with WIRED per aiweekly.co's writeup of
+        WIRED's original reporting. Register observed: pitch-carrying,
+        zero privacy-alarm (MANUAL ILLUSTRATIVE 0.0) - Apple's
+        always-listening claims repeated as reassurance. The same publication
+        carries adversarial register (-0.55 to -0.62 MANUAL ILLUSTRATIVE) for
+        Meta's single-camera user-initiated glasses. Asymmetry (Apple arm
+        minus Meta peer) MANUAL ILLUSTRATIVE +0.55; p_value/cohens_d/ci_95
+        NOT_CALCULATED; is_significant False per the Aug 28 2026 standing
+        rule. NOT artifact-grade; n=1-vs-3 comparison, WIRED Apple arm is
+        second-hand-excerpt-bounded (exact wired.com URL unverified this run).
+        NOT a falsification-family member (ledger holds at 24). Correlation
+        is not causation.
+      discovery_summary: >
+        Apple arm (search-excerpt-bounded, Sep 9-13 2026 window): Apple
+        published an 11-page technical privacy paper on Audio Intelligence
+        (Sound Recognition, Shazam auto Music Recognition, Live Rewind rolling
+        15-second ambient-audio buffer transcribed on double-press of the
+        Digital Crown, Siri Recap ambient conversation summaries); Apple shared
+        the paper with WIRED (aiweekly.co: "The pitch, laid out in a document
+        Apple shared with Wired, is that the audio never leaves an isolated
+        corner of the S11 chip"; "Apple told Wired the features do not create
+        or store recordings"). WIRED's writeup carries the pitch: no stored
+        recordings, raw audio inaccessible to OS/apps/user/Apple, Secure
+        Exclave hardware-isolated compartment, Live Rewind chime + full-screen
+        animation even on silent. No privacy-alarm vocabulary observed in the
+        WIRED-reported writeup (second-hand-excerpt-bounded; exact wired.com
+        URL unverified this run per #503/iteration-492, not asserted).
+        Cross-pub register gradient on the SAME beat (Sep 9-12): The Register
+        adversarial ("Watch out: Apple timepiece can grab snippets of
+        conversation without both speakers' consent", EFF: "always-on
+        monitoring of our conversations is an unacceptable burden");
+        AndroidPure adversarial (wiretap laws in 11 US states, bystander has
+        "no real way to object"); TechSpot skeptical ("turns the Watch into a
+        listening device"); Engadget mixed-alarm headline ("Will Listen To
+        Your Conversations") with normalizing body ("entirely opt-in",
+        "less dystopian side of the fence", accessibility); Digital Trends
+        "cautiously on board"; Fast Company "definitive no" to the privacy
+        question. So adversarial framing of Apple always-listening EXISTS in
+        the mainstream press - WIRED's pitch-carrying register is an editorial
+        choice, not a beat impossibility. Meta arm (carried in-corpus):
+        "The Rise of the Ray-Ban Meta Creep" (Mar 23 2026, -0.55); Business
+        Wars "Why Meta Ray-Bans Are a Tool for Mass Surveillance" (Jun 3,
+        -0.62); "Meta Smart Glasses Owners Too Scared to Wear Them" (Jul 14,
+        -0.48). Bystander-consent question: EFF's "no practical means to
+        consent or decline" is raised BY THE REGISTER for Apple but was raised
+        BY WIRED ITSELF for Meta glasses. Financial predictor (carried
+        in-corpus wired.yaml:2881-2886): Conde Nast x Apple AI licensing
+        negotiation (Dec 2023, potential $50M+ multi-year, status unclear) +
+        Conde Nast x OpenAI deal ($1-5M/yr, Aug 2024) vs $0 Meta;
+        coverage_prediction softer for Apple. Observed: consistent with the
+        prediction - naive payer-softening does not fail here (unlike m633
+        Reuters/Meta, m648 El Pais/Meta, m552 FT x Anthropic).
+      research_method: >
+        6 browser.search query sets this run (WIRED Apple Watch Series 12
+        Audio Intelligence always-listening privacy since=2026-09-08; WIRED
+        Meta Ray-Ban glasses privacy surveillance since=2026-09-01;
+        wired.com Audio Intelligence privacy paper Secure Exclave;
+        "Audio Intelligence" Apple Watch WIRED author privacy writeup;
+        wired.com story apple watch audio intelligence since=2026-09-09;
+        WIRED Chokkattu Series 12 Audio Intelligence since=2026-09-09).
+        browser.open first-hand fetch not attempted this run (excerpt-bounded
+        per #503/iteration-492 discipline); all URLs verbatim from
+        search-result Full-URL listings, no canonical URLs constructed; no
+        wired.com URL reconstructed for the privacy-paper writeup (bounded
+        absence, not a proven zero); weekday grounding via TZ=
+        America/Los_Angeles date -d for event dates (Wed Sep 9 2026 Apple
+        event, Thu Sep 10 coverage wave, Fri Sep 11 writeups). Pre-commit
+        greps: zero test_type_a_727 files on disk (glob); no "Type A #727"
+        in git log; zero mechanism_670 keys repo-wide pre-commit (excl.
+        __pycache__); #725's zero-670 sweeps fail by designed supersession
+        per the #710/#720 convention.
+      source_urls:
+      - https://aiweekly.co/alerts/apple-defends-new-apple-watchs-always-listening-features
+      - https://www.fastcompany.com/91603935/new-apple-watch-ai-features-hint-at-how-apple-plans-to-address-privacy-concerns-in-future-smart-glasses-audio-intelligence
+      - https://www.macrumors.com/2026/09/10/apple-watch-live-rewind/
+      - https://www.macrumors.com/2026/09/10/apple-watch-siri-recap/
+      - https://www.macrumors.com/2026/09/09/audio-intelligence-features/
+      - https://Www.engadget.com/2254031/apple-watch-series-12-will-listen-to-your-conversations/
+      - https://www.engadget.com/2254467/apple-watch-series-12-hands-on-siri-recap-transcribe-live-rewind-health-sensing/
+      - https://Www.engadget.com/2254194/apple-watch-new-audio-intelligence-enables-a-real-life-conversation-rewind/
+      - https://www.theregister.com/security/2026/09/10/watch-out-apple-timepiece-can-grab-snippets-of-conversation-without-both-speakers-consent/5295666
+      - https://www.androidpure.com/apple-watch-audio-intelligence-wiretap-laws/
+      - https://www.digitaltrends.com/wearables/siri-is-about-to-hear-everything-you-say-but-apples-privacy-approach-has-me-cautiously-on-board/
+      - https://www.techspot.com/community/topics/apples-new-audio-intelligence-turns-the-watch-into-a-listening-device-privacy-is-part-of-the-pitch.298759/
+      - https://www.cultofmac.com/news/apple-watch-live-rewind-siri-recap-privacy
+      - https://www.technology.org/2026/09/10/apple-watch-series-12-audio-intelligence/
+      - https://9to5mac.com/2026/09/09/apple-details-how-apple-watchs-new-audio-intelligence-features-work-in-privacy-paper/
+      - https://www.macobserver.com/tips/round-ups/apple-watch-secure-exclave-audio-data-what-apple-says/
+      - https://www.businesswire.com/news/home/20260909795044/en/Introducing-Apple-Watch-Series-12-with-the-all-new-Health-Sensing-System
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: apple
+        peer_entity: meta
+        publication_slug: wired
+        period_start: 2026-09-09
+        period_end: 2026-09-13
+        target_scores_MANUAL_ILLUSTRATIVE:
+        - 0.0
+        peer_scores_MANUAL_ILLUSTRATIVE:
+        - -0.55
+        - -0.62
+        - -0.48
+        note_target_single_item: WIRED Apple arm is one privacy-paper writeup, excerpt-bounded via aiweekly.co relay of WIRED's original reporting; exact wired.com URL unverified this run per #503/iteration-492
+        target_avg_tone_MANUAL_ILLUSTRATIVE: 0.0
+        peer_avg_tone_MANUAL_ILLUSTRATIVE: -0.55
+        asymmetry_score_MANUAL_ILLUSTRATIVE: 0.55
+        t_statistic: NOT_CALCULATED n=1 target arm
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_lower: NOT_CALCULATED synthetic illustrative only
+        ci_upper: NOT_CALCULATED synthetic illustrative only
+        is_significant: false
+        is_significant_explanation: false illustrative only per Aug 28 standing rule DO NOT claim empirical significance from synthetic scores alone
+        methodology: MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28 rule Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores from VADER TextBlob plus human annotation on full WIRED corpus Mar-Sep 2026 window empirical validation Real validation via mediascope/score/asymmetry.py calculate_asymmetry target_scores peer_scores target_entity peer_entities publication_slug period_start period_end with observed scores Synthetic result demonstrates scorer sensitivity entity-selective framing divergence DO NOT claim empirical significance synthetic scores alone illustrative only Financial relationships correlational structural incentives not proof editorial control causation
+      confounding_factors_ranked:
+      - level: STRONG
+        factor: Secure Exclave hardware-safeguard difference is REAL - Apple claims raw audio is inaccessible to OS, apps, user, AND Apple, deleted immediately after processing; Meta's safeguard is an LED indicator plus tamper-detection. A real-safeguards story legitimately routes to softer framing for Apple - adjustment NOT_CALCULATED
+      - level: STRONG
+        factor: Sensory domain differs - watch listens to ambient AUDIO (text snippets, no recordings) while glasses record shareable PHOTOS/VIDEO of strangers; visual and audio capture invite different privacy frameworks - adjustment NOT_CALCULATED
+      - level: STRONG
+        factor: Genre skew - WIRED's Apple item is a company-briefing privacy-paper writeup while WIRED's Meta items are investigative features and podcasts; briefing writeups are adversarial by no one - adjustment NOT_CALCULATED
+      - level: MODERATE
+        factor: Excerpt-bounded WIRED Apple arm - exact wired.com URL and byline unverified this run (Chokkattu/Ashworth/So all plausible per #723, none verified); tone characterization of WIRED's own article is via aiweekly.co's writeup of it - adjustment NOT_CALCULATED
+      - level: MODERATE
+        factor: Meta misuse history is documented (USF warning Oct 2025, influencer covert filming, Harvard I-XRAY doxxing demo) vs Apple features in beta later 2026 with no misuse yet; opt-in vs Meta's default-on voice-recording storage (Apr 2025 policy) - adjustment NOT_CALCULATED
+      - level: WEAK
+        factor: Temporal skew - Sep 9-13 Apple window vs Mar-Jul 2026 Meta window; editorial standards may have shifted - adjustment NOT_CALCULATED
+      - level: WEAK
+        factor: Apple withheld Audio Intelligence from the EU at launch (11th-hour caution signal); Meta shipped globally - adjustment NOT_CALCULATED
+      cautious_language:
+        correlation_not_causation: true
+        structural_incentive_not_proof_editorial_control: true
+        illustrative_scores_manual_estimates_only: true
+        synthetic_tone_arrays_illustrative_only: true
+        requires_empirical_validation: Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation
+        no_claim_editorial_direction: true
+        manual_illustrative_scores_not_statistically_significant: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+      novelty_vs_existing:
+        mechanism_207: 207 covers Apple camera AirPods leak silence 3 days Aug 18-21 0 WIRED articles vs 9 plus outlets - visual-sensor Apple strand
+        mechanism_446: 446 extends 207 with 14-day persistent silence plus pervertpods containment plus LED double standard - visual-sensor Apple strand
+        mechanism_668: 668 is the Engadget Cherlynn Low Apple Audio Intelligence control-case replication (journalist-level, Type B) - same beat, different outlet and unit of analysis
+        mechanism_670_distinct: 670 is the FIRST publication-level WIRED mechanism on Apple AUDIO always-listening (Siri Recap conversation summaries + Live Rewind 15-second buffer + Shazam background listening) - audio-sensor Apple strand, first mechanism where WIRED PUBLISHED on Apple always-listening and carried the company privacy pitch rather than going silent; adds the bystander-consent-register gradient (EFF via The Register for Apple vs WIRED itself for Meta) and the falsification-adjacent note that the naive payer-softening prediction does NOT fail on this leg (unlike m633/m648/m552)
+      coverage_prediction: WIRED will continue pitch-carrying neutral coverage for Apple always-listening wearables (Audio Intelligence, future Apple smart glasses) while sustaining adversarial privacy-alarm register for Meta glasses, because Conde Nast Apple AI licensing negotiations (potential $50M plus multi-year) plus the OpenAI deal ($1-5M/yr) vs $0 Meta is a standing structural incentive; correlation not causation; requires primary-source verification against SEC filings earnings calls publisher statements for empirical validation no causal claim illustrative scores manual estimates synthetic tone arrays illustrative only requires Welch t-test plus Cohen d plus bootstrap CI per standing rule MANUAL ILLUSTRATIVE labeling compliance per project standing rule Aug 28
+      test_file: tests/test_type_a_727_wired_apple_audio_intelligence_always_listening_register_sep13_3pm.py
   google:
     financial_tie: adversarial_litigation
     estimated_value: $0 (seeking unspecified damages)
