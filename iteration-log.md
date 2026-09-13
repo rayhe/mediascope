@@ -33398,4 +33398,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Rotation guard: 720-724 window closes B->C (D->E->A->B->C; anchor patched post-commit per #565). No analysis.json update warranted.
 - #723's max-668 sweep fails by designed supersession (per #710/#720 convention); #723's zero-669 profiles sweep stays green by designed keying; ledger holds at 24.
 - 46-test file (45 green pre-commit, anchor 1 deselected, patched green in followup)
-- Commit hashes (followup): PENDING
+- Commit hashes (followup): main commit d1455ed7239bf1b53d152382a1ed05892d41986d ("Type C #724: Meta x Newsmax AI content partnership ideology-bundle leg ..."); anchor followup 3aa6a3f73f26a91604f7a68ffe828310107cd7fe (ANCHORED_SHA patched per #565, anchor test green); log-hash followup updates this line
