@@ -264,7 +264,7 @@ class TestRotationCycleGuard723:
     first occurrence of each distinct iteration number, newest first.
     """
 
-    ANCHORED_SHA = "PATCHED_IN_FOLLOWUP"
+    ANCHORED_SHA = "23c167cb4738ec9428ddea9a192c89384458fcf7"
 
     @staticmethod
     def _mains():
@@ -312,7 +312,6 @@ class TestRotationCycleGuard723:
                 "rotation broken: %s (older) -> %s (newer) is not a valid cycle edge" % (older, newer)
             )
 
-    @pytest.mark.skip(reason="anchor patched in followup per #565 convention")
     def test_anchor_is_main_commit_patched_in_followup(self):
         """Rotation window 719-723 closes A->B. Anchor patched in followup per #565."""
         result = _run_git("log", "--format=%H %s")
