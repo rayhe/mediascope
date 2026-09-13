@@ -3783,6 +3783,151 @@ competitor_relationships:
     description: "NYT left Apple News in 2020 (pulled articles). Wirecutter and The Athletic still appear in Apple News. Apple Podcasts subscription partnership. No AI content deal."
     source_url: "https://www.techadvisor.com/article/739646/the-new-york-times-ends-its-apple-news-partnership.html"
     coverage_prediction: "neutral"
+    mechanism_661_nyt_apple_duo_hands_on_value_review_vs_nyt_meta_muse_capability_list_sep13:
+      mechanism_id: 661
+      iteration: 712
+      iteration_type: A
+      iteration_time: "2026-09-13 00:00 PDT"
+      date_analyzed: "2026-09-13"
+      publication_focus: "nytimes"
+      competitor: "apple"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      author: "Kit (with Ray)"
+      pair: "NYT x Apple (vs Meta)"
+      event: "Apple iPhone Duo foldable launch (Sep 9 2026) vs Meta Muse AI-agent launch (Sep 8 2026): NYT consumer-tech hands-on value review vs NYT Muse launch capability listing"
+      test_file: "tests/test_type_a_712_nyt_apple_duo_hands_on_vs_nyt_meta_muse_sep13_12am.py"
+      finding: >
+        The New York Times covered Apple's iPhone Duo through a
+        consumer-tech hands-on VALUE REVIEW register (Brian X. Chen,
+        lead consumer technology writer: price-skepticism title "Why is
+        Apple's New Foldable iPhone Duo $1,999?"; trade-off listing -
+        crease occasionally noticed, missing advanced camera system,
+        no face scanner; mild positive hands-on notes - "extremely
+        thin", "dainty", Netflix full-screen delight, less chunky than
+        rival foldables; +0.15 illustrative) and Meta's Muse launch
+        through a neutral capability-listing register (connected
+        services enumerated: Gmail, Spotify, Ticketmaster, OpenTable,
+        Shopify; +0.05 illustrative). Illustrative delta (Apple minus
+        Meta) +0.10, n=1 vs n=1, classic degenerate statistical
+        contract per the #638/#643 convention (t=0.0, p=1.0, d=0.0); no
+        engine run, no divergence pin. The +0.10 gap is the SMALLEST
+        positive delta in the Duo launch-genre series: WSJ +0.45
+        (#662/m631), The Verge +0.38 avg (#687/m646), Reuters -0.05
+        avg (#692/m649), Gizmodo +0.325 avg (#697/m652), Fast Company
+        +0.35 (#702/m655), Bloomberg +0.40 (#707/m658), NYT +0.10
+        (this run). The Times' price-first, trade-off-listing register
+        lands well below the launch-celebration norm of tech/business
+        press. Financial context: NYT x Apple carries NO known AI
+        licensing deal on record (financial_tie mixed/minimal mutual:
+        NYT left Apple News in 2020; Wirecutter and The Athletic still
+        appear in Apple News; Apple Podcasts subscription partnership;
+        no AI content deal; coverage_prediction neutral) - MINIMAL-
+        GRADIENT control: the incentive theory makes no differential
+        prediction, and the observed gap is consistent with the neutral
+        prediction, so the pair cannot contradict the theory - NOT a
+        falsification-family member; the ledger stands at 22 after
+        #708's TWENTY-SECOND (m659). Evidence is second-hand bounded:
+        nytimes.com is blocked by policy in this environment; no
+        verbatim nytimes.com URL for either peg surfaced in 5
+        browser.search query sets this run, so both arms are read from
+        verbatim NYT passages carried by secondary surfaces (Duo arm:
+        the full NYT piece quoted verbatim on a mirror plus two
+        independent syndications quoting Chen's "dainty" passage;
+        Muse arm: "According to the New York Times" attributions from
+        two independent sources) per #503's excerpt-bounded discipline
+        and the m471 secondary-attestation precedent. No canonical NYT
+        URLs invented. Correlation only, not proof of editorial
+        influence.
+      apple_arm:
+        carried_from: "new to corpus this run (no prior NYT x Apple Duo mechanism; first YAML mechanism under competitor_relationships.apple in nytimes.yaml)"
+        items:
+          - title: "Why is Apple's New Foldable iPhone Duo $1,999? - The New York Times"
+            date: "2026-09-10/11 (NYT consumer-tech hands-on; verbatim NYT text carried by mirror, searched/crawled Sep 13 2026)"
+            attesting_url: "https://www.armwoodtechnology.com/2026/09/why-is-apples-new-foldable-iphone-duo.html"
+            byline: "Brian X. Chen (lead consumer technology writer for The Times; photos by Jason Henry for The New York Times)"
+            register: "consumer_value_review"
+            key_framing: "'In my tests, when opened, the iPhone Duo was extremely thin, measuring two-tenths of an inch. I liked that a Netflix video took up the full screen instead of showing black bars on the sides, which has been the case with other foldables.'; 'Closed up, the phone felt dainty and was about the size of a passport. It also felt less chunky in my pocket than other foldables I have tested, such as the $1,900 Google Pixel 11 Pro Fold.'; 'The inner screen has a matte texture to reduce glare. Still, I occasionally noticed the crease in the center where the screen folds. I did not mind it, but that might bother nit-pickers.'; 'Apple also had to leave out some components to make a phone this thin - the iPhone Duo lacks the advanced camera system featured in the $1,199 iPhone 18 Pro phones. It also does not have a face scanner for unlocking the device, relying instead on a fingerprint sensor on the side of the phone.'; 'The iPhone Duo appears to be addressing some of the shortcomings of previous foldable phones.'; analyst Frommer: 'When Apple makes something, there is an allure to it to encourage people to at least check it out.'"
+            corroborating_attestations:
+              - "https://nypost.com/2026/09/12/lifestyle/left-handed-users-slam-apples-iphone-duo-over-awkward-design/ ('New York Times consumer technology writer Brian X. Chen described the Duo as extremely thin while opened and said that, folded shut, it felt almost dainty - about the size of a passport and less bulky in his pocket than other foldables he had tested.'; IDC niche-market data cited by The Times: foldables under 2% of global mobile sales, Apple arrival may pique curiosity)"
+              - "https://timesnewsnetworks.com/left-handed-apple-users-cry-discrimination-as-new-foldable-iphone-duo-designed-for-right-handers/ (same verbatim Chen passages)"
+            manual_illustrative_tone: 0.15
+            source_note: "No verbatim nytimes.com URL surfaced in 5 browser.search query sets; nytimes.com blocked by policy in this environment. Apple arm read second-hand: verbatim NYT piece text (title, byline, Chen quotes) carried on a mirror site plus two independent syndications quoting the same passages - per #503 excerpt-bounded discipline and the m471 secondary-attestation precedent. No canonical NYT URL invented."
+        average_manual_illustrative: 0.15
+      meta_arm:
+        carried_from: "new to corpus this run (no prior NYT x Meta Muse mechanism)"
+        items:
+          - title: "NYT Meta Muse launch coverage (headline unattested in the accessible attestations)"
+            date: "2026-09-08 (Muse launch day; techseen story record: The New York Times added a related source record Sep 8 2026 13:05 PDT)"
+            attesting_urls:
+              - "https://www.mitrade.com/au/insights/news/live-news/article-3-2069276-20260909"
+              - "https://techseen.com/story/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race-d6f6510"
+            byline: "unattested"
+            register: "neutral_capability_listing"
+            key_framing: "'According to the New York Times, Muse has access to services like Gmail, Spotify, Ticketmaster, OpenTable, and Shopify.'; techseen story history records 'The New York Times added a related source record' on the Sep 8 Muse launch story, confirming NYT covered the launch peg on day one."
+            manual_illustrative_tone: 0.05
+            source_note: "No verbatim nytimes.com Muse URL surfaced; NYT attribution carried by two independent secondary sources (mitrade, techseen) - per #503 excerpt-bounded discipline and the m471 secondary-attestation precedent. No trust-caveat content attested; the +0.05 neutral read is attestation-bounded, not body-verified. No canonical NYT URL invented."
+        average_manual_illustrative: 0.05
+      financial_context:
+        predictor: "minimal_gradient_control"
+        prediction: "neutral (coverage_prediction neutral on the NYT x Apple pair; no AI content deal)"
+        chain: "NYT x Apple: financial_tie mixed, estimated_value minimal, direction mutual. NYT left Apple News in 2020 (pulled articles); Wirecutter and The Athletic still appear in Apple News; Apple Podcasts subscription partnership; NO AI content deal on record (bounded absence). The incentive theory makes no differential prediction at a minimal gradient: the observed +0.10 gap is consistent with the neutral prediction, not a contradiction."
+        status: "minimal-gradient control: the theory makes no differential prediction at NYT x Apple, so the observed +0.10 illustrative gap cannot contradict it. NOT a falsification-family member; ledger stands at 22 after #708's TWENTY-SECOND (m659). Correlational only, not proof of editorial influence."
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = Apple arm, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.15]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.05]
+        target_avg: 0.15
+        peer_avg: 0.05
+        delta_manual_illustrative: 0.1
+        delta_calc: "0.15 - 0.05 = 0.10"
+        engine_degenerate: "n=1 vs n=1: classic degenerate statistical contract per the #638/#643 convention (Welch t=0.0, p=1.0, d=0.0). Engine NOT run; no divergence pin (divergence pins require engine significance, which cannot occur on degenerate arms)."
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)"
+        artifact_grade: false
+      falsification_family:
+        membership: "NOT a falsification-family member: minimal-gradient control (no known NYT x Apple AI licensing deal on record; NYT left Apple News in 2020; coverage_prediction neutral); the incentive theory makes no differential prediction, so contradiction is impossible. Ledger stands at 22 after #708's TWENTY-SECOND."
+        prediction: "the incentive theory makes no differential prediction at a minimal-gradient publication: no known paid AI content licensing deal between NYT and Apple; expected register neutral per the carried coverage_prediction"
+        observed: "register gap observed (Apple +0.15 vs Meta +0.05; illustrative delta Apple-minus-Meta +0.10), consistent with the neutral prediction; no membership claimed"
+        within_arm_range_vs_gap: "n=1 vs n=1: no within-arm range exists; the between-entity gap (+0.10) is the entire signal. Second-hand-bounded conservatism: both tones pinned to attested passages; moderating passages beyond the attestations are unverified."
+        publication_genre_boundary: "seventh publication in the Duo launch-genre series: WSJ +0.45 celebration (#662/m631), The Verge +0.38 avg celebration (#687/m646), Reuters -0.05 avg with skeptical follow-up (#692/m649), Gizmodo +0.325 avg celebration (#697/m652), Fast Company +0.35 design-forward celebration (#702/m655), Bloomberg +0.40 business-growth celebration (#707/m658), NYT +0.10 consumer value review (this run). The NYT price-first trade-off-listing register lands well below the launch-celebration norm; the celebration register holds at tech/business press (WSJ, Verge, Gizmodo, Fast Company, Bloomberg) and breaks at the wire (Reuters) and the paper of record (NYT value review)."
+      confounders_ranked:
+        strong:
+          - "Second-hand bounded: nytimes.com is blocked by policy in this environment and no verbatim nytimes.com URL for either peg surfaced in 5 browser.search query sets this run. Both arms are read from verbatim NYT passages carried by secondary surfaces (Duo: mirror + two independent syndications; Muse: two independent 'According to the New York Times' attributions). Per #503's excerpt-bounded discipline and the m471 secondary-attestation precedent, moderating passages beyond the attested excerpts may exist; both tones are attestation-bounded, not body-verified. The armwoodtechnology.com mirror is an unattested mirror - its verbatim quotes are corroborated by two independent syndications quoting the same Chen passages, but full-piece integrity is unverifiable."
+          - "Genre asymmetry: the Apple arm is a consumer-tech hands-on value review (price in the title, byline Brian X. Chen, lead consumer technology writer) while the Meta arm is day-one launch business coverage (desk unattested); the hands-on-review vs launch-news genre mismatch may carry part of the register gap independent of entity preference."
+          - "NYT Meta bifurcation (mechanism #69): NYT Meta coverage is topic-bifurcated (open-source AI philosophy positive; AI execution and social platforms adversarial). Muse sits in the AI-execution domain where the Times runs adversarial, but the attested Muse register is neutral capability-listing. The +0.05 read may miss adversarial passages beyond the attestations; the true gap could be larger or structured differently."
+        moderate:
+          - "Tight timing window: Muse launch Sep 8, Duo launch Sep 9, both pieces within days of their pegs; same-week coverage makes timing skew minimal, a strength of the pair."
+          - "Evidence tiers symmetric: both arms second-hand-attested (no first-hand NYT reads); sample is degenerate (n=1 vs n=1) so the delta is arithmetic only."
+          - "Price-peg skew: the Duo piece's title is price-skepticism ('Why is it $1,999?') driven by the price announcement peg; the value-review register may track the price event, not an Apple-specific posture. Chen's hardware judgments ('extremely thin', 'dainty', full-screen delight) are the entity-adjacent signal, and they run mildly positive against the price-skepticism title."
+        weak:
+          - "The analyst quote ('When Apple makes something, there is an allure to it to encourage people to at least check it out') is mild and single-source; its tilt on the +0.15 read is small."
+          - "n=1 vs n=1: classic degenerate statistical contract; verdict-invariant under rounding (delta +0.10 exact at 2dp)."
+      counterevidence:
+        - "Reuters #692 (-0.05 Apple arm avg): the same Duo launch drew skepticism at the wire; the celebration register is publication-bounded, not a property of the Duo event - consistent with the NYT's sub-celebration value review."
+        - "WSJ #662 Nicole Nguyen hands-on ('I feel a pull toward this device'; 'Maybe I do not need my iPad Mini anymore'): same-week consumer hands-on by a peer reviewer runs more excited than Chen's measured value review - the NYT register is reviewer-tempered, not event-maximal."
+        - "NYT x Amazon m567 (licensing-payer adversarial control): the Times applies an adversarial register to Amazon DESPITE Amazon paying an estimated $20-25M/yr in AI licensing - the paper can and does go hard at financial counterparties, which bounds any sympathy-by-money reading of the mild +0.15 Apple arm."
+        - "The Muse arm is attestation-bounded: if NYT's Muse coverage beyond the attestations carries the trust register Reuters/Tier pieces ran, the true gap could be larger."
+      cross_references:
+        - "#662 / mechanism 631 (WSJ x Apple Duo launch celebration +0.45; launch-genre series first publication)"
+        - "#687 / mechanism 646 (The Verge x Apple Duo launch celebration +0.38 avg; launch-genre series second publication)"
+        - "#692 / mechanism 649 (Reuters x Apple Duo launch register vs Reuters x Meta Muse register; launch-genre series third publication; the wire breaks the celebration register)"
+        - "#697 / mechanism 652 (Gizmodo x Apple Duo launch register vs Gizmodo x Meta Muse experiment register; launch-genre series fourth publication)"
+        - "#702 / mechanism 655 (Fast Company x Apple Duo launch register vs Fast Company x Meta Muse register; launch-genre series fifth publication; same zero-gradient control structure)"
+        - "#707 / mechanism 658 (Bloomberg x Apple Duo launch register vs Bloomberg x Meta Muse register; launch-genre series sixth publication; excerpt-bounded control structure precedent)"
+        - "#708 / mechanism 659 (TWENTY-SECOND falsification-family member; ledger-at-22 baseline)"
+        - "mechanism #69 (NYT Meta bifurcation: open-source AI philosophy positive vs AI execution/social adversarial; Meta comparator baseline)"
+        - "#567 / mechanism 567 (NYT x Amazon licensing-payer adversarial control; the Times goes adversarial at paying counterparties)"
+        - "#471 / mechanism 471 (NYT x OpenAI litigation-posture boundary condition; secondary-attestation precedent for NYT pieces)"
+        - "#638/#643 convention (degenerate statistical contract on n=1 and n=2 arms)"
+        - "iteration-492 rule (bounded absence; no zero-coverage claims; excerpt-bounded sourcing)"
+        - "#503 (second-hand evidence-grade precedent for the attestation-bounded reads this run)"
+        - "#710 convention (designed supersession of #710's no-661 sweep tests)"
+        - "#565 convention (followup anchor patch)"
+      novelty: "First dedicated NYT x Apple Duo Type A mechanism (mechanism 661); first YAML mechanism under competitor_relationships.apple in nytimes.yaml; first NYT x Meta Muse mechanism. Seventh publication in the Duo launch-genre series (#662 WSJ, #687 Verge, #692 Reuters, #697 Gizmodo, #702 Fast Company, #707 Bloomberg). Zero real mechanism_661 keys in profiles/ pre-commit (pinned by #710's sweep tests, superseded by design this run per the #710 convention); max numeric mechanism_id pre-commit 660 (#709/m660). All NYT-attestation URLs new to corpus pre-commit (repo-wide grep zero hits). #710's test_max_mechanism_id_is_660, test_zero_mechanism_661_keys_in_profiles and test_zero_mechanism_661_references_in_tests fail by designed supersession (the last because this run's own test file references mechanism_661; the sweep excludes only its own __file__). Journalist check: no journalist career mechanism added (Brian X. Chen covered at publication level; the Meta Muse byline is unattested)."
+      research_method: "5 browser.search query sets this run (nytimes.com iPhone Duo foldable Apple launch since 2026-09-08; nytimes.com Meta Muse AI assistant since 2026-09-06; New York Times iPhone Duo foldable Tripp Mickle review; New York Times Meta Muse Roose Metz; Brian X. Chen iPhone Duo 'dainty' hands-on). Zero verbatim nytimes.com URLs surfaced for either peg; nytimes.com blocked by policy in this environment. Pair built from verbatim NYT passages carried by secondary surfaces: Duo arm - the NYT piece 'Why is Apple's New Foldable iPhone Duo $1,999?' (Brian X. Chen, Jason Henry photos) quoted verbatim on a mirror (armwoodtechnology.com) and corroborated by two independent syndications (nypost.com Sep 12, timesnewsnetworks.com) quoting the same Chen passages; Muse arm - two independent 'According to the New York Times' attributions (mitrade.com, coinstats.app) plus techseen story history recording a NYT source record on the Sep 8 launch story. All URLs copied verbatim from Full-URL listings; no canonical NYT URLs invented; no zero-coverage claims; no em dashes; ASCII-only. Pre-commit novelty greps: zero test_type_a_712 files on disk; no Type A #712 in git log; zero real mechanism_661 keys in profiles/ pre-commit (mechanism_id 661 text refs confined to #710's sweep-test assertions); max numeric mechanism 660; all six attestation URLs new to corpus repo-wide (profiles/, tests/, docs/)."
+      verification:
+        yaml_parse_clean: true
   google:
     financial_tie: "adversarial"
     estimated_value: "$0"
