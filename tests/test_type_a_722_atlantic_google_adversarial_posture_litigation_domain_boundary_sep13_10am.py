@@ -310,7 +310,7 @@ class TestRotationCycleGuard722:
     first occurrence of each distinct iteration number, newest first.
     """
 
-    ANCHORED_SHA = "PLACEHOLDER_PATCHED_IN_FOLLOWUP"
+    ANCHORED_SHA = "f64d154106fcb6a04693cc54454a5a5e4dcf1350"
 
     @staticmethod
     def _mains():
@@ -353,13 +353,22 @@ class TestRotationCycleGuard722:
             observed.append(m.group(1))
         assert observed == ["A", "E", "D", "C", "B"]
         order = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
-        for a, b in zip(observed, observed[1:]):
-            assert (order[a] - order[b]) % 5 == 4, (
-                "rotation broken: %s -> %s is not a valid cycle edge" % (a, b)
+        for newer, older in zip(observed, observed[1:]):
+            assert (order[newer] - order[older]) % 5 == 1, (
+                "rotation broken: %s (older) -> %s (newer) is not a valid cycle edge" % (older, newer)
             )
 
     def test_anchor_is_main_commit_patched_in_followup(self):
-        pytest.skip("anchor patched in followup per #565 convention")
+        """Rotation window 718-722 closes E->A. Anchor patched in followup per #565."""
+        result = _run_git("log", "--format=%H %s")
+        assert result.returncode == 0
+        mains = [
+            line for line in result.stdout.splitlines() if "Type A #722:" in line
+        ]
+        main = mains[0].split()[0] if mains else ""
+        assert self.ANCHORED_SHA == main, (
+            "anchor patched in followup per #565 convention"
+        )
 
 
 class TestDocSync722:
