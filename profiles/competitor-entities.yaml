@@ -8906,6 +8906,135 @@ entities:
         type: A
         date: 2026-09-12 12:00 PDT
 
+    mechanism_658_bloomberg_apple_duo_launch_register_vs_bloomberg_meta_muse_register_sep12:
+      mechanism_id: 658
+      iteration: 707
+      iteration_type: A
+      iteration_time: "2026-09-12 18:00 PDT"
+      date_analyzed: "2026-09-12"
+      publication_focus: "bloomberg"
+      competitor: "apple"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      author: "Kit (with Ray)"
+      pair: "Bloomberg x Apple (vs Meta)"
+      event: "Apple iPhone Duo foldable launch (Sep 9 2026) vs Meta Muse AI-agent launch (Sep 8 2026): launch-week pegs across the Bloomberg News ecosystem (Bloomberg Law / Bloomberg Tax syndication surfaces)"
+      test_file: "tests/test_type_a_707_bloomberg_apple_duo_launch_register_vs_bloomberg_meta_muse_sep12_6pm.py"
+      finding: >
+        Bloomberg covered Apple's iPhone Duo through a business-growth
+        launch-celebration register ('Biggest-Ever iPhone Revamp' title;
+        'betting that a new category can energize growth for its
+        biggest-selling lineup'; CEO John Ternus 'mocking competing
+        handsets as two phones awkwardly stuck together'; 'the largest
+        display ever on an iPhone'; +0.40 illustrative) and Meta's Muse
+        launch through a neutral capability-listing register ('unveiled a
+        new artificial intelligence agent designed to carry out tasks on
+        a user's behalf, advancing Mark Zuckerberg's vision'; capability
+        list with no visible trust caveats in the lede; +0.05
+        illustrative). Illustrative delta (Apple minus Meta) +0.35, n=1
+        vs n=1, classic degenerate statistical contract per the #638/#643
+        convention (t=0.0, p=1.0, d=0.0); no engine run, no divergence
+        pin. Evidence is excerpt-bounded: both pieces are gated behind
+        Bloomberg Law/Tax login walls; browser.open failed upstream this
+        run (terminal per turn), so only ledes and verbatim search
+        excerpts were read; moderating passages beyond the lede may exist
+        (#503 excerpt-bounded discipline). Financial context: Bloomberg LP
+        carries NO known AI licensing deal with Apple or Meta on record -
+        zero-gradient control; the incentive theory makes no differential
+        prediction, so the observed gap cannot contradict it - NOT a
+        falsification-family member; the ledger stands at 21 after
+        #703's TWENTY-FIRST (m656). The Duo launch-genre series now
+        spans six publications: WSJ celebrated (+0.45, #662/m631), The
+        Verge celebrated (+0.38 avg, #687/m646), Reuters ran skeptical
+        (-0.05 avg, #692/m649), Gizmodo celebrated (+0.325 avg,
+        #697/m652), Fast Company celebrated (+0.35, #702/m655), Bloomberg
+        celebrated (+0.40). The launch-celebration register holds at
+        tech/business press and breaks at the wire. Correlation only, not
+        proof of editorial influence.
+      apple_arm:
+        items:
+          - title: "Apple Debuts Foldable Duo in Biggest-Ever iPhone Revamp (1)"
+            date: "2026-09-09 (Bloomberg News via Bloomberg Law syndication; excerpt-bounded, searched/crawled Sep 12 2026)"
+            url: "https://news.bloomberglaw.com/artificial-intelligence/apple-debuts-iphone-pro-airpods-ahead-of-foldable-unveiling-1"
+            byline: "unattested in the accessible lede (Bloomberg News; Bloomberg Law syndication page)"
+            register: "business_growth_launch_celebration"
+            key_framing: "'Apple Inc. unveiled the company''s first foldable smartphone during a wide-ranging event Wednesday, betting that a new category can energize growth for its biggest-selling lineup'; 'The device, called the iPhone Duo, will improve on rivals'' foldable models, newly appointed Chief Executive Officer John Ternus said, mocking competing handsets as ''two phones awkwardly stuck together'''; 'The Duo unfolds to reveal a 7.6-inch (19.3-centimeter) screen, the largest display ever on an iPhone'; outer 5.4-inch screen; CEO-debut frame (first event under John Ternus)"
+            manual_illustrative_tone: 0.4
+            source_note: "verbatim title + lede from search-result listing; Bloomberg Law AI-vertical syndication page; gated beyond lede (Log in to keep reading); browser.open failed upstream this run, terminal per turn - excerpt-bounded per #503"
+        average_manual_illustrative: 0.4
+      meta_arm:
+        carried_from: "new to corpus this run (no prior Bloomberg x Meta Muse mechanism)"
+        items:
+          - title: "Meta Debuts AI Assistant for Personal Tasks and Organization"
+            date: "2026-09-08 (Bloomberg News via Bloomberg Tax syndication; excerpt-bounded, searched/crawled Sep 12 2026)"
+            url: "https://news.bloombergtax.com/artificial-intelligence/meta-debuts-ai-assistant-for-personal-tasks-and-organization"
+            byline: "unattested in the accessible lede (Bloomberg News; Bloomberg Tax syndication page)"
+            register: "neutral_capability_listing"
+            key_framing: "'Meta Platforms Inc. unveiled a new artificial intelligence agent designed to carry out tasks on a user''s behalf, advancing Mark Zuckerberg''s vision of a future where people each have a personalized AI assistant'; 'Called Muse, the new agent shares its name with the series of models Meta''s AI lab is developing and can help automate a variety of tasks'; capability list: online shopping, buying movie tickets, scheduling appointments; app releasing to US-based users; no trust/surveillance caveats visible in the accessible lede"
+            manual_illustrative_tone: 0.05
+            source_note: "verbatim title + lede from search-result listing; Bloomberg Tax AI-vertical syndication page; gated beyond lede; browser.open failed upstream this run, terminal per turn - excerpt-bounded per #503"
+        average_manual_illustrative: 0.05
+      financial_context:
+        predictor: "null_tie_control"
+        prediction: "no_differential_prediction"
+        chain: "Bloomberg LP: NO known AI licensing deal with Apple or Meta on record (bounded absence this run; no licensing-deal mapping change since mechanism #121's prior corpus record). Parmy Olson's Bloomberg Opinion register-constancy finding (#703/m656, TWENTY-FIRST) is a journalist-level book incentive at Bloomberg Opinion, a distinct desk from Bloomberg News launch coverage - no publication-level gradient either."
+        status: "zero-gradient control: the theory makes no differential prediction at Bloomberg, so the observed +0.35 illustrative gap cannot contradict it. NOT a falsification-family member; ledger stands at 21 after #703's TWENTY-FIRST. Correlational only, not proof of editorial influence."
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = Apple arm, peer = Meta arm"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.4]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.05]
+        target_avg: 0.4
+        peer_avg: 0.05
+        delta_manual_illustrative: 0.35
+        delta_calc: "0.4 - 0.05 = 0.35"
+        engine_degenerate: "n=1 vs n=1: classic degenerate statistical contract per the #638/#643 convention (Welch t=0.0, p=1.0, d=0.0). Engine NOT run; no divergence pin (divergence pins require engine significance, which cannot occur on degenerate arms)."
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)"
+        artifact_grade: false
+      falsification_family:
+        membership: "NOT a falsification-family member: zero-gradient control (no known Bloomberg LP x Apple or Bloomberg LP x Meta AI licensing deal on record); the incentive theory makes no differential prediction, so contradiction is impossible. Ledger stands at 21 after #703's TWENTY-FIRST."
+        prediction: "the incentive theory makes no differential prediction at a zero-gradient publication: no known paid AI content licensing deal between Bloomberg LP and Apple or Meta; the theory is silent on the expected direction"
+        observed: "register gap observed (Apple +0.40 vs Meta +0.05; illustrative delta Apple-minus-Meta +0.35), but with no named gradient the gap is a genre/desk confound, not a theory contradiction; no membership claimed"
+        within_arm_range_vs_gap: "n=1 vs n=1: no within-arm range exists; the between-entity gap (+0.35) is the entire signal. Excerpt-bounded conservatism: both tones pinned to the visible ledes; moderating passages beyond the lede are unverified."
+        publication_genre_boundary: "sixth publication in the Duo launch-genre series: WSJ +0.45 celebration (#662/m631), The Verge +0.38 avg celebration (#687/m646), Reuters -0.05 avg with skeptical follow-up (#692/m649), Gizmodo +0.325 avg celebration (#697/m652), Fast Company +0.35 design-forward celebration (#702/m655), Bloomberg +0.40 business-growth celebration (this run). The launch-celebration register holds at tech/business press (WSJ, Verge, Gizmodo, Fast Company, Bloomberg) and breaks at the wire (Reuters)"
+      confounders_ranked:
+        strong:
+          - "Second-hand bounded: both pieces are gated behind Bloomberg Law/Tax login walls; only verbatim titles, ledes and search excerpts were read this run; browser.open failed upstream (terminal per turn). Per #503's excerpt-bounded discipline, moderating passages - including trust/surveillance caveats in the Muse piece - may exist beyond the lede; the near-neutral +0.05 Meta read is lede-pinned, not body-verified."
+          - "Syndication-surface mismatch: the Apple arm was served from Bloomberg Law's AI vertical and the Meta arm from Bloomberg Tax's AI vertical; both carry Bloomberg News provenance, but the vertical branding and the underlying Bloomberg News desks (product launch vs AI agent coverage) may differ. Comparing verticals compares presentation surfaces, not necessarily the same desk."
+          - "Provenance advantage: the iPhone Duo naming scoop itself came from Bloomberg's Mark Gurman (macrumors.com/2026/09/09/iphone-duo-start-at-2000/, citing Gurman); Bloomberg is the home outlet of the Duo story's provenance, which may independently inflate the celebratory register (own-scoop pride) separate from any entity preference."
+        moderate:
+          - "Tight timing window: Duo piece Sep 9, Muse piece Sep 8 (launches Sep 9 and Sep 8 respectively); same-week pegs make timing skew minimal, a strength of the pair."
+          - "Evidence tiers symmetric: both arms excerpt-bounded from verbatim search listings (title + lede); sample is degenerate (n=1 vs n=1) so the delta is arithmetic only."
+          - "Category mismatch: the Duo is a hardware product launch while Muse is a software AI-agent launch; the registers may track the hardware/software genre split rather than entity preference."
+          - "Bloomberg publication baseline: Bloomberg News' Apple launch coverage runs through Gurman's access-journalism register (#593: Gurman x Apple access-journalism register asymmetry, Sep 7); Bloomberg Opinion's Meta register is separately adversarial (Olson corpus -0.51 avg, #703) - desks diverge within the company, so a Bloomberg News pair cannot be read as a Bloomberg-wide verdict."
+        weak:
+          - "The Meta arm's 'advancing Mark Zuckerberg''s vision' phrase is mildly aspirational and bounds the +0.05 read from dropping negative; it is a single clause, so the tilt is small."
+          - "n=1 vs n=1: classic degenerate statistical contract; verdict-invariant under rounding (delta +0.35 exact at 2dp)."
+      counterevidence:
+        - "Reuters #692 (-0.05 Apple arm avg): the same Duo launch drew skepticism at the wire; the celebration register is publication-bounded, not a property of the Duo event."
+        - "#587 / Gizmodo x Apple null-tie control (delta +0.1334 n.s., Sep 7): launch-peg registers are event-driven; a non-launch peg drew near-neutral tone at a tech publication."
+        - "Parmy Olson's Bloomberg Opinion Sep 10 column applies the same accusatory register to Anthropic (-0.55 illustrative) as to Meta (-0.51 corpus avg) (#703/m656, TWENTY-FIRST): at the Opinion desk, the identity-capture thesis collapses; the adversarial register is journalist-global there, which bounds any Bloomberg-wide asymmetry reading of this Bloomberg News pair."
+        - "The Muse lede lists no caveats but the piece is gated: the +0.05 near-neutral read is explicitly lede-pinned; if the body carries the trust register Reuters/Tier pieces ran, the true gap could be larger or structured differently."
+      cross_references:
+        - "#662 / mechanism 631 (WSJ x Apple Duo launch celebration +0.45; launch-genre series first publication)"
+        - "#687 / mechanism 646 (The Verge x Apple Duo launch celebration +0.38 avg; launch-genre series second publication)"
+        - "#692 / mechanism 649 (Reuters x Apple Duo launch register vs Reuters x Meta Muse register; launch-genre series third publication)"
+        - "#697 / mechanism 652 (Gizmodo x Apple Duo launch register vs Gizmodo x Meta Muse experiment register; launch-genre series fourth publication)"
+        - "#702 / mechanism 655 (Fast Company x Apple Duo launch register vs Fast Company x Meta Muse register; launch-genre series fifth publication; same zero-gradient control structure)"
+        - "#703 / mechanism 656 (Parmy Olson Bloomberg Opinion register-constancy, TWENTY-FIRST; journalist-level, distinct desk from this Bloomberg News pair)"
+        - "#593 (Gurman x Apple access-journalism register asymmetry, Sep 7; Bloomberg News provenance advantage for the Duo story)"
+        - "#587 (Gizmodo x Apple null-tie control, delta +0.1334 n.s.)"
+        - "#627 (Verge x Amazon zero-gradient control; same control structure)"
+        - "#638/#643 convention (degenerate statistical contract on n=1 and n=2 arms)"
+        - "iteration-492 rule (bounded absence; excerpt-bounded sourcing; no zero-coverage claims)"
+        - "#503 (second-hand evidence-grade precedent for the excerpt-bounded reads this run)"
+        - "#705 convention (designed supersession of #705's no-658 sweep tests)"
+        - "#565 convention (followup anchor patch)"
+      novelty: "First dedicated Bloomberg x Apple Duo Type A mechanism (mechanism 658); first Bloomberg x Meta Muse mechanism. Sixth publication in the Duo launch-genre series (#662 WSJ, #687 Verge, #692 Reuters, #697 Gizmodo, #702 Fast Company). Zero mechanism_658 keys in profiles/ pre-commit (pinned by #705's sweep tests, superseded by design this run per the #705 convention); max numeric mechanism_id pre-commit 657 (#704/m657). Both Bloomberg URLs new to corpus pre-commit (repo-wide grep zero hits). #705's test_no_mechanism_658_in_profiles and test_no_mechanism_658_in_tests fail by designed supersession (the last because this run's own test file references mechanism_658; the sweep excludes only its own __file__). Journalist check: no journalist career mechanism added (both bylines unattested in the accessible ledes)."
+      research_method: "2 browser.search query sets this run (Bloomberg Apple iPhone Duo foldable launch; Bloomberg Meta Muse AI agent) + 2 browser.open attempts (both failed upstream, terminal per turn). Pair built excerpt-bounded from verbatim titles, ledes, and Full-URL listings (#503 precedent): Apple arm title 'Apple Debuts Foldable Duo in Biggest-Ever iPhone Revamp (1)' at news.bloomberglaw.com, Meta arm title 'Meta Debuts AI Assistant for Personal Tasks and Organization' at news.bloombergtax.com. URLs copied verbatim; no canonical URLs invented; no zero-coverage claims; no em dashes; ASCII-only. Pre-commit novelty greps: zero test_type_a_707 files on disk; no Type A #707 in git log; zero mechanism_658 keys in profiles/ pre-commit; max numeric mechanism 657; both Bloomberg URLs new to corpus repo-wide (profiles/, tests/, docs/). Iteration-492 convention applies: both Bloomberg URLs surfaced positively this run (no bounded-absence claim); the iteration-492 rule's no-zero-coverage-claims discipline still applies."
+      verification:
+        yaml_parse_clean: true
+
   google:
     display_name: Google / Alphabet
     aliases:
