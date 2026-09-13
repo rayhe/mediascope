@@ -503,7 +503,7 @@ class TestFullSuiteStatus720:
 
 # -- Rotation guard / novelty anchor (#565 convention) ---------------------------
 
-ANCHORED_SHA = "0" * 40  # placeholder: no main commit exists pre-commit
+ANCHORED_SHA = "2d975210c5d61d46207d5178ac9f96a2f676678b"
 
 
 class TestRotationCycleGuard720:

@@ -16,9 +16,9 @@
 
 **Novelty Verification:** Zero test_type_d_720 files on disk pre-commit (glob verified); no Type D commit with 720 in the title pre-commit (git log --grep verified); zero mechanism_667 keys in profiles/ and tests/ pre-commit (pattern rescoped per #715); max numeric mechanism_id 666 post-#719; no Type D run covering mechanisms 664-666 jointly before (the #715 file covered 661-663).
 
-**Commit hashes:** main PENDING (verified via git rev-parse); followup patches ANCHORED_SHA to the main SHA and logs hashes (anchor 41/41 green post-followup).
+**Commit hashes:** main 2d975210c5d61d46207d5178ac9f96a2f676678b (verified via git rev-parse); followup patches ANCHORED_SHA to 2d97521 and re-runs anchor + doc-sync tests green per #565 (anchor 41/41 green post-followup).
 
-**Push status:** PENDING this run - will use the atomic proxy-credential workflow (extract + test + use in one command block); if egress is down, main + followup stay local-only and push pends a future run with working egress.
+**Push status:** BLOCKED this run - egress proxy hatch-egress-proxy:3128 unreachable (all 6 credential candidates curl 000, same fleet-side blocked state as #710-#715); main 2d97521 + followup 2fbb687 local-only, push pending a future run with working egress (33 commits ahead of origin/main).
 
 **Doc-sync ratchet:** README stats table + test-file table row; ARCHITECTURE.md header stats + tree row; iteration-log #720 entry (this entry).
 
