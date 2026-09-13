@@ -33333,3 +33333,25 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 
 
 - 2026-09-11 04:05 PDT (followup to #670): main-agent recovery — pushed 3 local commits (0201d02/1d1f61a/eaa128d) to origin/main via atomic proxy workflow; new Type D test file verified 45/45 green under .venv pytest (worker "green" claim confirmed). Full 35K suite NOT re-run this turn: worker background session killed by 03:01 PDT VM recycle; full suite exceeds turn time budget. Next Type D run should re-launch it.
+
+
+# Type E #721: podcast sentiment 67th verification cycle - GF Sep 12 unnumbered Indhu Rubasingham special (numbered-500 watch holds), Times of India UK-bans piece NEW URL key, EHE 35-day hold, Attention Sphere 67th no-match, frontier tied at Sep 9 - Sep 13 2026 09:00 PDT
+
+**Date:** 2026-09-13 09:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 720 D -> 721 E)
+**Type:** E - Podcast Sentiment Tracking (67th verification cycle)
+
+**Finding:** First new Guilty Feminist episode content in corpus since 499: "In Conversation with Indhu Rubasingham" (released 12 Sep 2026, 49 mins, recorded 9 Sep at the National Theatre), an UNNUMBERED special (theatre topic; zero Meta/AI/wearables/privacy/surveillance in title/description). Numbered-episode 500 has NOT dropped; the penciled Sep 12 item was the unnumbered special, so the 500-watch holds (Mon Sep 14 per weekly cadence). EHE 35-day hold continues; 6 known URL keys re-surface, plus one NEW-to-corpus editorial surface: Times of India "metas-spy-glasses-face-resistance-in-uk-banned-by-restaurants-pubs-and-theatres" (articleshow/133146816) covering UK venue bans, the "pervert glasses" nickname, Lorde's onstage attack, EHE bus-stop ads, and the Apple glasses privacy-pitch delay. Attention Sphere: 67th no-match as a podcast. Recency frontier TIED at Sep 9 (eighteenth consecutive tie).
+
+**Asymmetry scorer:** NOT_SCORED (standing rule Aug 28 2026). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False. Type E monitoring-only, no mechanism block in profiles/. No analysis.json update warranted.
+
+**Confounders Ranked:** MODERATE: (1) search-result absence is bounded by index freshness, not exhaustive; (2) podcast directories have multi-day crawl lag (au.radio.net 4d, Listen Notes 7d), so episode-500 could exist unindexed; mitigant: multi-directory triangulation with the no-drop discipline from #503/iteration-492. WEAK: the Indhu Rubasingham special has no direct episode URL in the returned results, so it is logged as new content on the logged ie.radio.net listing key, not as its own URL key.
+
+**Research method:** 4 browser.search query sets (Guilty Feminist latest episode with since=2026-09-12; quoted "Everyone Hates Elon" Meta glasses campaign with since=2026-09-12; quoted "Attention Sphere" podcast; Meta smart glasses Ray-Ban privacy news with since=2026-09-12). Pre-commit repo-wide grep (excluding .git/tests/.venv) verified every search-result URL key already in corpus except three new keys logged verbatim (Times of India 133146816 editorial surface; bbc.bm host-mirror of the in-corpus Reuters Dec 2025 piece, same content; GF special as new content on a logged listing key). No em dashes; ASCII-only.
+
+**New Type E files:** `tests/test_type_e_721_podcast_sentiment_67th_verification_sep13_9am.py` - 8 classes, 36 tests (33 green pre-commit; anchor test deselected per #565 followup convention; 2 verbatim-string asserts fixed pre-commit). podcast-sentiment.md gained Iteration #721 section; Tracked Sources table 66->67 cycles; GF row now "499 numbered episodes + Sep 12 2026 unnumbered special".
+
+**Artifact readiness:** No analysis.json update warranted. Monitoring-only cycle.
+
+**Rotation Transparency:** Previous commit Type D #720 at 08:00 PDT Sep 13 2026 (verified via git log before this run's commit). Per rotation A->B->C->D->E, next after D is E. Selected Type E.
+
+**Novelty Verification:** Zero test_type_e_721 files on disk before this run (glob verified); no Type E commit with 721 in the title (git log --grep verified).
