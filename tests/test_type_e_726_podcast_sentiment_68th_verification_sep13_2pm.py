@@ -99,7 +99,7 @@ class TestRotationCycleGuard726:
     occurrence of each distinct iteration number, newest first.
     """
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+    ANCHORED_SHA = "6d05edc31b0b50f7faced4cbb9450d02823cfa96"
 
     @staticmethod
     def _mains():
