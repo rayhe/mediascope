@@ -52,7 +52,7 @@ MECH_KEY = "mechanism_663_perplexity_premium_data_licensing_cashmere_sep2026"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor tests are deselected pre-commit.
-ANCHORED_SHA = "f84ace56999b2811335132b40f47ac1f5600f05a"
+ANCHORED_SHA = "afe77c3779c46e65b3757010b2689660be9da8f6"
 
 
 def load_competitor():
