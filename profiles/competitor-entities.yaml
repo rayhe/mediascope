@@ -3949,6 +3949,135 @@ entities:
       research_method: '2 browser.search query sets this run (OpenAI publisher content licensing deal announced September 2026, since=2026-09-08; BCCL Times of India OpenAI ChatGPT content partnership terms payment fee) + 1 browser.open first-hand read attempt (Medianama BCCL piece; failed upstream with an egress tool failure, terminal per turn per developer instruction - piece read excerpt-bounded from verbatim search-result excerpts per #503). URLs copied verbatim from Full-URL listings; no canonical URLs constructed; ASCII-only. Pre-commit novelty greps: zero test_type_c_709 files on disk; no Type C #709 in git log; zero mechanism_660 keys in profiles/; max numeric mechanism 659; all five new URLs zero-hit repo-wide.'
       verification:
         yaml_parse_clean: true
+    mechanism_664_reuters_openai_slowdown_week_register_vs_meta_muse_accountability_sep13:
+      mechanism_id: 664
+      iteration: 717
+      iteration_type: A
+      iteration_time: "2026-09-13 05:00 PDT"
+      date_analyzed: "2026-09-13"
+      publication_focus: "reuters"
+      competitor: "openai"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      author: "Kit (with Ray)"
+      pair: "Reuters x OpenAI (vs Meta)"
+      event: "Slowdown-week register pair at the Reuters wire: OpenAI Altman 'not 2026' IPO safety framing (Sep 12 2026) vs Meta Muse AI-agent launch accountability register (Sep 8 2026). Second Reuters x OpenAI Type A after m634 (#667). FIRST slowdown-week Type A; direct sequel to m634 (Reuters x OpenAI enterprise-news vs Reuters x Meta Muse, #667, FOURTEENTH member) and m649 (Reuters x Apple Duo vs Reuters x Meta Muse, #692)."
+      test_file: "tests/test_type_a_717_reuters_openai_slowdown_register_vs_meta_muse_register_sep13_5am.py"
+      finding: >
+        The wire that Meta pays relays OpenAI's CEO safety-virtue framing
+        earnestly while holding its payer's own launch to a hard
+        accountability register, four days apart. The OpenAI arm: Reuters Sep
+        12 2026 (Lisa Baertlein), "OpenAI IPO will not happen in 2026 amid AI
+        safety fears, Altman says" - Altman tells Fortune a 2026 IPO would be
+        an "ill-advised moment" given AI safety, "we don't feel pressure on
+        that," "I would say not 2026. Yeah, we got a lot of stuff to do, like
+        meeting this moment of what is going to be required for safety and
+        alignment"; Altman "suggested that OpenAI and other leading AI
+        companies may be close to announcing an agreement to slow AI
+        development"; Altman posted agreement with Amodei's "pace the
+        frontier" call. The piece relays the safety-responsibility narrative
+        with zero skepticism markers and no accountability language (+0.30
+        illustrative, earnest safety-virtue relay, excerpt-bounded from
+        verbatim search-result excerpts). The Meta arm (carried from m633 via
+        m649): Reuters Sep 8 2026 Katie Paul Muse-launch piece runs a hard
+        accountability register, "despite internal concerns that the
+        technology mismanages its access to sensitive personal data," with a
+        "RAISING THE STAKES FOR SAFETY" section header (-0.45 illustrative).
+        Illustrative delta (OpenAI minus Meta) +0.75, n=1 vs n=1, degenerate
+        statistical contract (t=0.0, p=1.0, d=0.0) per the #638/#643
+        convention; no engine run. Financial gradient: Reuters is PAID BY
+        Meta under the Oct 25 2024 multiyear AI news licensing deal
+        (mechanism 633, ACTIVE per the #599/#609 convention - no renewal,
+        extension, renegotiation, or termination reporting surfaced), while
+        no Reuters x OpenAI AI licensing deal exists on record (bounded
+        absence per the iteration-492 rule; Thomson Reuters CEO Steve Hasker
+        confirmed only licensing TALKS with multiple AI providers, talks are
+        not deals). The incentive theory predicts softer coverage of the
+        payer than of the non-payer at the same wire; the observed direction
+        is opposite: the payer's launch piece (-0.45) is the hardest register
+        in the pair while the non-payer's CEO safety framing gets earnest
+        relay (+0.30). TWENTY-THIRD falsification-family member (ledger stood
+        at 22 after #708's TWENTY-SECOND). Correlation only, not proof of
+        editorial influence. Strongest confound is genre mismatch: a CEO's
+        self-framed safety interview and a product launch default to
+        different registers independent of incentives.
+      openai_arm:
+        title: "OpenAI IPO will not happen in 2026 amid AI safety fears, Altman says"
+        date: "2026-09-12 (Reuters URL slug)"
+        byline: "Lisa Baertlein"
+        url: "https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/"
+        register: "safety_virtue_earnest_relay"
+        key_framing: "'I actually think that, given everything happening with safety, right now would be an ill-advised moment to go public, and we don't feel pressure on that,' Altman told Fortune; 'I would say not 2026. Yeah, we got a lot of stuff to do, like meeting this moment of what is going to be required for safety and alignment'; Altman suggested OpenAI and other leading AI companies 'may be close to announcing an agreement to slow AI development'; Altman posted agreement with Amodei's 'pace the frontier' call; context paragraphs note lawmaker alarm and rogue-agent incidents but the dominant frame is Altman's safety-responsibility narrative with zero skepticism markers"
+        manual_illustrative_tone: 0.3
+        source_note: "excerpt-bounded: register read from verbatim search-result excerpts (crawled <1h); reuters.com not opened first-hand this run; URL new to corpus pre-commit (zero-hit repo-wide grep)"
+      meta_arm:
+        title: "Meta launches AI agent that can access other apps, send emails, make payments"
+        date: "2026-09-08 (Reuters URL slug)"
+        byline: "Katie Paul"
+        url: "https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/"
+        register: "hard_accountability"
+        key_framing: "'despite internal concerns that the technology mismanages its access to sensitive personal data'; 'RAISING THE STAKES FOR SAFETY' section header; internal tests reveal mixed results; privacy and safety stakes foregrounded"
+        manual_illustrative_tone: -0.45
+        source_note: "carried from mechanism 633 via mechanism 649 (#692); in corpus pre-commit"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_scores_MANUAL_ILLUSTRATIVE:
+        - 0.3
+        peer_scores_MANUAL_ILLUSTRATIVE:
+        - -0.45
+        target_avg: 0.3
+        peer_avg: -0.45
+        delta_manual_illustrative: 0.75
+        delta_calc: "0.30 - (-0.45) = 0.75"
+        engine_run: false
+        degenerate_contract: "n=1 per arm: t=0.0, p=1.0, d=0.0, is_significant False per #638/#643"
+      financial_context:
+        gradient: "Meta PAYS Reuters (multiyear AI news licensing deal, Oct 25 2024, mechanism 633, ACTIVE per #599/#609); no Reuters x OpenAI AI licensing deal on record"
+        predictor: "incentive_theory_payer_softening"
+        prediction: "softer Meta coverage than OpenAI coverage at the same wire"
+        observed: "opposite: payer Meta -0.45 (hard accountability) vs non-payer OpenAI +0.30 (earnest safety-virtue relay)"
+        reuters_openai_deal_absence: "bounded absence per iteration-492 rule: Thomson Reuters CEO Steve Hasker confirmed licensing TALKS with multiple AI providers (competitor-coverage-research.yaml financial_context); talks are not deals; zero deal announcements surfaced"
+      statistical_discipline:
+        scope: "MANUAL ILLUSTRATIVE only - thin n=1-per-arm comparison"
+        p_value: NOT_CALCULATED
+        is_significant: false
+        tone_scores: ILLUSTRATIVE_NOT_EMPIRICAL
+        engine: "not run (degenerate by design)"
+        rule: "Aug 28 2026 standing rule (finding-layer is_significant False)"
+      falsification_family:
+        membership: "TWENTY-THIRD member (ledger stood at 22 after #708's TWENTY-SECOND, m659)"
+        rationale: "real financial gradient (Meta-Reuters payer leg active) + directional prediction + observed opposite direction, same structure as m649 (EIGHTEENTH)"
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: "genre mismatch: Altman's self-framed safety interview (the news peg IS Altman's own statement) vs a product launch with internal privacy concerns; different pegs default to different registers independent of outlet incentives"
+      - rank: 2
+        strength: strong
+        confounder: "Altman self-framing advantage: the OpenAI arm's earnest register relays the subject's own narrative; no equivalent first-person virtue frame exists in the Muse launch peg"
+      - rank: 3
+        strength: moderate
+        confounder: "4-day window gap (Sep 8 vs Sep 12); different news cycles, though both within the same slowdown/launcher fortnight"
+      - rank: 4
+        strength: moderate
+        confounder: "excerpt-bounded OpenAI arm (reuters.com not opened first-hand this run per #503); moderating context beyond verbatim excerpts may exist"
+      cross_references:
+      - "mechanism 633 (Meta x Reuters multiyear AI deal, #664 Type C: payer-leg falsification pin, THIRTEENTH member; deal ACTIVE per #599/#609)"
+      - "mechanism 634 (Reuters x OpenAI enterprise-news vs Reuters x Meta Muse, #667 Type A: FOURTEENTH member; same pair, same Meta arm, different peg/register - the replication baseline this block extends)"
+      - "mechanism 649 (Reuters x Apple Duo vs Reuters x Meta Muse, #692 Type A: EIGHTEENTH member; Meta arm -0.45 carried from m633; same-wire predecessor pair)"
+      - "mechanism 659 (McCracken journalist-attribution class, #708: TWENTY-SECOND member; ledger-at-22 baseline)"
+      - "#503 (second-hand evidence-grade precedent for the excerpt-bounded OpenAI arm)"
+      - "#565 (followup anchor-patch convention)"
+      - "#638/#643 (degenerate statistical contract convention)"
+      - "#692 (Reuters Duo series third publication; wire house-skepticism boundary)"
+      - "iteration-492 rule (bounded absence; no zero-coverage claims; talks-are-not-deals)"
+      - "Aug 28 2026 standing rule (finding-layer is_significant False)"
+      artifact_readiness: "No analysis.json update warranted. Illustrative-only Type A mechanism, degenerate engine, falsification-family membership claimed (TWENTY-THIRD); no new empirical tone scores."
+      correlational_note: "Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. The observed register gap is correlation only; the genre-mismatch confound is load-bearing. No causal claim."
+      sources:
+      - https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/
+      novelty: "SECOND Reuters x OpenAI Type A mechanism (first was m634, iteration #667, Sep 11 2026: Reuters x OpenAI enterprise-news arms vs the same Reuters x Meta Muse -0.45 arm, FOURTEENTH falsification-family member, delta +0.625); FIRST slowdown-week Type A; FIRST dedicated mechanism on the Altman 'not 2026' IPO safety-framing at any tracked publication. Zero mechanism_664 keys repo-wide pre-commit; max numeric mechanism_id pre-commit 663. The Altman Reuters URL is new to the corpus pre-commit (zero-hit repo-wide grep across profiles/, tests/, iteration-log.md). Distinct from m634 (same publication+competitor pair and same Meta arm, but a different news peg and register: m634's OpenAI arms were Sep 8-10 enterprise/product news (+0.15/+0.25 avg), this block's OpenAI arm is the Sep 12 CEO safety-virtue interview (+0.30) - a same-pair replication test of m634's payer-penalty pin in a new genre); distinct from m649 (Reuters x Apple Duo, same-wire predecessor) and m633 (the deal leg itself)."
+      research_method: "browser.search sweeps this run (slowdown-week coverage across WIRED, FT, Verge, Guardian, BI, Gizmodo, Atlantic, MIT TR, NYT, CNN, Times, WSJ, Reuters, TechCrunch; publication-attribution verification for WIRED/FT/Verge/BI/Gizmodo/MIT-TR/Guardian pairs - all rejected on bounded search-result absence or prior-corpus coverage per the iteration-492 rule); reuters.com not opened first-hand (excerpt-bounded per #503). URLs copied verbatim from Full-URL listings; no canonical URLs constructed; ASCII-only. Pre-commit novelty greps: zero test_type_a_717 files on disk; no Type A #717 in git log; zero mechanism_664 keys in profiles/ and tests/ (own file excluded; test_type_c_664 historical collision noted per #715 - pattern rescoped to mechanism_664/mechanism_id-adjacent); max numeric mechanism 663; Altman URL zero-hit repo-wide."
+      verification:
+        yaml_parse_clean: true
 
   anthropic:
     display_name: Anthropic
