@@ -100,27 +100,60 @@ class TestNovelty721:
 
 
 class TestRotationCycleGuard721:
-    """Rotation: #720 Type D at 08:00 PDT Sep 13; per A->B->C->D->E this run is Type E."""
+    """Rotation: distinct-mains window test, #716-style.
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+    Robust to the #678 history artifact and the #565 followup convention: first
+    occurrence of each distinct iteration number, newest first.
+    """
 
-    def test_previous_entry_is_type_d_720(self):
+    ANCHORED_SHA = "669e21472354982898003d56a4bc40a8781a569b"
+
+    @staticmethod
+    def _mains():
+        # First occurrence of each distinct iteration number, newest first.
         out = subprocess.run(
-            ["git", "-C", REPO_ROOT, "log", "--format=%s", "-20"],
+            ["git", "-C", REPO_ROOT, "log", "--format=%s"],
             capture_output=True,
             text=True,
-        )
-        assert any(l.startswith("Type D #720:") for l in out.stdout.splitlines())
+            check=True,
+        ).stdout.splitlines()
+        seen = set()
+        mains = []
+        for s in out:
+            m = re.match(r"^Type [A-E] #(\d+):", s)
+            if m and m.group(1) not in seen:
+                seen.add(m.group(1))
+                mains.append(s)
+        return mains
 
-    def test_no_type_e_between_720_and_721(self):
-        out = subprocess.run(
-            ["git", "-C", REPO_ROOT, "log", "--format=%s", "-5"],
-            capture_output=True,
-            text=True,
-        )
-        titles = out.stdout.splitlines()
-        d720_idx = next(i for i, l in enumerate(titles) if l.startswith("Type D #720:"))
-        assert not any(l.startswith("Type E #") for l in titles[:d720_idx])
+    def test_window_717_721_closes_d_to_e(self):
+        subjects = self._mains()
+        observed = []
+        for s in subjects[:5]:
+            m = re.search(r"Type ([A-E]) #(\d+):", s)
+            assert m, "unparseable rotation subject: %r" % (s,)
+            observed.append((m.group(1), m.group(2)))
+        assert observed == [
+            ("E", "721"),
+            ("D", "720"),
+            ("C", "719"),
+            ("B", "718"),
+            ("A", "717"),
+        ], "rotation window 717-721 wrong: %r" % (observed,)
+
+    def test_rotation_adjacency_cycle_valid(self):
+        subjects = self._mains()
+        observed = []
+        for s in subjects[:5]:
+            m = re.search(r"Type ([A-E]) #(\d+):", s)
+            assert m
+            observed.append(m.group(1))
+        assert observed == ["E", "D", "C", "B", "A"]
+        order = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
+        for a, b in zip(observed, observed[1:]):
+            assert (order[a] - order[b]) % 5 == 1, (
+                "rotation broken: %s -> %s is not a valid cycle edge" % (a, b)
+            )
 
 
 class TestGF67thCycle:
