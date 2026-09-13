@@ -56,7 +56,7 @@ ALTMAN_URL = "https://www.fastcompany.com/91531465/world-id-tools-for-humanity-p
 
 # Patched to the real main-commit SHA in the followup commit per the #565
 # convention; the guard classes are deselected pre-commit.
-ANCHORED_SHA = "b35d217defbb2ba9cdb24ad01b2be138f03c28c9"
+ANCHORED_SHA = "755971879129a47ba9ed732d904576886c2b5c2d"
 
 
 def _careers():
