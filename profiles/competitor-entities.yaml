@@ -12476,6 +12476,112 @@ entities:
         date: '2026-09-10 16:00 PDT'
         yaml_parse_clean: true
         ascii_only: true
+    mechanism_666_eu_antitrust_google_publisher_ai_optout_quiz_sep2026:
+      mechanism_id: 666
+      iteration: 719
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-13'
+      time_pdt: '07:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'EU Antitrust Probe into Google Publisher-AI Content Use (Dec 9 2025) + Sep 2026 Publisher Opt-Out Questionnaire - FIRST dedicated regulatory-adversarial mechanism on the Google x publisher financial vector'
+      overview: 'On Dec 9 2025 the European Commission opened an antitrust investigation into Google''s use of web publishers'' online content and YouTube videos to train AI models and power AI Overviews/AI Mode, concerned Google uses publisher content without appropriate compensation and without giving publishers the option to refuse. Triggered by a July 2025 complaint from the Independent Publishers Alliance, the Movement for an Open Web, and the British non-profit Foxglove. EU antitrust chief Teresa Ribera: "Google may be abusing its dominant position as a search engine to impose unfair trading conditions on publishers by using their online content to provide its own AI-powered services." Google: "This complaint risks stifling innovation in a market that is more competitive than ever." The fifth EU antitrust probe into Google, which has racked up more than 10 billion euros in EU fines over nearly two decades. On Sep 1 2026 Reuters reported EU regulators are quizzing publishers on Google''s AI search opt-out proposal via a questionnaire seen by Reuters, with publisher feedback potentially determining the outcome and another hefty fine possible if the proposal fails to address concerns. This run formalizes the probe plus the opt-out remedy arc as the corpus''s first regulatory-adversarial mechanism on the Google x publisher financial vector, distinct from the cooperative licensing legs and the copyright-litigation adversarial legs.'
+      investigation_arc:
+      - '2025-07: complaint by the Independent Publishers Alliance, the Movement for an Open Web (whose members include digital advertisers and publishers), and British non-profit Foxglove; Google rejected the complaint'
+      - '2025-12-09: European Commission opens antitrust investigation (Reuters); the Commission''s second investigation into Google in less than a month; the fifth EU antitrust probe into Google overall'
+      - 'Ribera: "Google may be abusing its dominant position as a search engine to impose unfair trading conditions on publishers by using their online content to provide its own AI-powered services"'
+      - 'Ribera: "A healthy information ecosystem depends on publishers having the resources to produce quality content. We will not allow gatekeepers to dictate those choices"'
+      - 'Google response: "This complaint risks stifling innovation in a market that is more competitive than ever"; "Europeans deserve to benefit from the latest technologies and we will continue to work closely with the news and creative industries as they transition to the AI era"'
+      - '2026-06: Google announces an AI opt-out for publishers, the same day the UK antitrust watchdog ordered publishers be given the option to stop their content being used to power AI features; Google completed the global rollout on Aug 31 2026 (Reuters Sep 1)'
+      - '2026-07: EC questionnaire sent to publishers with an Aug 28 deadline for replies; asked whether publishers would make use of the opt-out and the factors influencing their decision, plus views on May changes bringing AI Overviews and AI Mode into one AI Search'
+      - '2026-09-01: Reuters reports the questionnaire; publishers'' feedback could determine the outcome of the ongoing investigation, which could result in another hefty fine for Google if the proposal fails to address competition concerns; Google declined comment and referred to its June 3 blog post'
+      - 'Prior fines: Google has racked up more than 10 billion euros in EU antitrust fines for various violations over nearly two decades (Reuters Sep 1)'
+      optout_remedy:
+        what: 'Publishers can opt out of AI search without affecting their rankings in search results'
+        announced: 'June 2026, same day as the UK CMA order'
+        global_rollout_complete: '2026-08-31'
+        questionnaire_sent: 'July 2026, replies due Aug 28'
+        questionnaire_asks:
+        - 'Would publishers make use of the opt-out'
+        - 'Factors influencing their decision'
+        - 'Views on the May changes merging AI Overviews and AI Mode into one AI Search'
+        stakes: 'Publisher feedback could determine the investigation outcome; another hefty fine possible if the proposal fails'
+        uptake_caveat: 'The questionnaire''s own first question (would you use it?) implies uptake is uncertain; publishers depend on Google Search for traffic, which weakens the refusal threat'
+      youtube_leg:
+        scope: 'The Commission is also investigating Google''s use of YouTube videos uploaded by users to train AI models'
+        asymmetry: 'The Commission notes rival AI developers are barred from using YouTube content to train their own models and must pay YouTube for training content, while Google allegedly forces permission from creators without pay (thecurrent.com) - an asymmetric cost structure favoring Google''s own models'
+        same_concerns: 'Reuters: the same appropriate-compensation and refusal-option concerns as the publisher-content leg'
+      meta_whatsapp_parallel:
+        note: 'The EC opened a separate investigation into Meta''s new AI policy on WhatsApp, which regulators say could block competing AI providers from the platform, just days before the Dec 9 Google probe (thecurrent.com, crawled 1d)'
+        also: 'Less than a month before the Dec 9 probe, the Commission opened an investigation into whether Google Search unfairly demoted web publishers'' pages containing third-party commercial content such as affiliate links and sponsored editorial articles (thecurrent.com)'
+        bounded: 'Separate probes with different facts; no equivalence claimed; included only as cross-entity regulatory-context notes'
+      pilot_coercion_crossref:
+        note: 'Jun 25 2026 The Information via PYMNTS: Google''s News AI pilot asks publishers for broad rights including training-data use, or they lose the annual fee for Google News inclusion; Google says it formed commercial partnerships with more than 3,000 publications, platforms and content providers paying for extended display rights'
+        corpus_link: 'The pilot coercion vector is mapped in corpus as google_news_ai_pilot_deal_structure_cma_neutralization; the EC probe is its regulatory counterweight - the same "refuse and lose" structure the Commission is investigating'
+      theory_prediction:
+        mechanism_class: 'regulatory-adversarial financial vector - first on the Google x publisher axis; distinct from cooperative licensing legs (OpenAI, Meta, Microsoft, Google AP/Reddit) and from copyright-litigation adversarial legs (m589 Ziff Davis v OpenAI)'
+        direction: 'If the EC finds abuse, Google faces fines and forced compensation or opt-out terms; the probe REDUCES Google''s publisher-hostile leverage. An opt-out with real uptake shrinks Google''s AI-content supply and shifts bargaining power toward publishers'
+        prediction: 'The incentive theory predicts the coercion channel weakens if the remedy bites; no coverage-softening prediction attaches (adversarial vector, like m589); Type A/B work can test whether publishers with opt-out uptake cover Google differently from those without'
+        bounded: 'No tone claim made in this mechanism; structural mapping only'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'Regulatory process, not outcome - the questionnaire is procedural; the Dec 2025 probe may close without findings; Google''s opt-out may satisfy the Commission; no fine or compensation term exists yet, so no financial fact attaches to Google at any publisher'
+      - rank: 2
+        strength: strong
+        confounder: 'Publishers may not use the opt-out - traffic dependence on Google Search weakens the refusal threat (the Penske "devastating to leave search" argument, corpus mechanism 112 context); the questionnaire''s own first question implies uptake is uncertain'
+      - rank: 3
+        strength: moderate
+        confounder: 'The opt-out was announced the same day as the UK CMA order, so the remedy may be CMA-driven rather than EC-driven; attributing it to the EC probe overstates the probe''s leverage'
+      - rank: 4
+        strength: moderate
+        confounder: 'The Meta WhatsApp probe is a separate case with different facts; bundling it as a cross-entity pattern risks false equivalence - the Google probe concerns publisher compensation, the Meta probe concerns platform access for competing AI providers'
+      - rank: 5
+        strength: weak
+        confounder: 'The Sep 1 Reuters piece rests on a questionnaire "seen by Reuters" that is not public; the publisher feedback results are not reported, only the questionnaire''s existence'
+      strongest_counterargument: 'Google''s mutual-benefit frame cuts against the coercion reading: Google says AI Overviews send traffic to a greater diversity of sites and that it sends billions of clicks to sites daily (Jose Castaneda, via corpus PMC coverage), and publishers'' structural dependence on search referrals makes the opt-out threat toothless in practice - preserving Google''s leverage regardless of the probe''s outcome'
+      statistical_discipline:
+        scope: 'qualitative structural mapping only'
+        correlation_not_causation: true
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        tone_scores: 'NOT_SCORED'
+      correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. Regulatory-adversarial vectors (probes, fines, forced terms) carry the same correlational discipline as cooperative incentives (licensing). No causal claim.'
+      cautious_language_required: true
+      no_coverage_tone_claim: true
+      cross_references:
+      - 'Mechanism 589 Ziff Davis v OpenAI (copyright-litigation adversarial class; this run adds the regulatory-adversarial sibling on the Google x publisher axis)'
+      - 'google_news_ai_pilot_deal_structure_cma_neutralization (the coercion vector this probe counterweights)'
+      - 'Mechanism 529 Canada C18 Google $100M Meta-zero natural experiment (Google publisher-payment precedent; legislative vector)'
+      - 'Mechanism 64 cloudflare_publisher_crawl_block (publisher leverage via private blocking infrastructure; the opt-out is the regulatory analog)'
+      - 'Mechanism 112 verge_pmc_google_litigation_wearables_paradox (PMC sues Google while covering Google wearables aspirationally)'
+      source_urls:
+      - https://www.reuters.com/sustainability/boards-policy-regulation/eu-launches-antitrust-probe-into-googles-use-online-content-ai-purposes-2025-12-09/
+      - https://www.reuters.com/legal/litigation/eu-antitrust-regulators-quiz-publishers-googles-ai-search-opt-out-2026-09-01/
+      - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+      - https://www.thecurrent.com/marketing/data-privacy-google-new-eu-antitrust-probe-allegedly-publisher-youtube-content-ai
+      - https://kessler-prod.reta52d8.eas.morningstar.com/news/marketwatch/2025120915/european-commission-opens-another-antitrust-investigation-into-google-this-time-its-ai
+      research_method: '5 browser.search query sets this run: (1) xAI publisher licensing deal 2026 - no deal signal, zero-deal posture re-affirmed; (2) Anthropic publisher licensing deal 2026 - zero-deal posture re-confirmed via llmpulse tracker (updated Sep 7 2026); (3) Conde Nast Cohere lawsuit status - covered in corpus (Press Gazette Sep 2 2026 tracker, mechanism 514 context); (4) Ziff Davis OpenAI lawsuit update - covered (mechanism 589, updated Sep 7); (5) Penske Google lawsuit - covered (mechanism 112 block); (6) News Corp Google AI licensing talks - m630 watch unchanged, no Sep 2026 closure; (7) Cloudflare pay-per-crawl - covered (mechanism 64); (8) Yahoo Microsoft PCM - covered (tier_2_marketplace); (9) EU Google publisher-AI antitrust - SELECTED. Excerpt-bounded second-hand evidence per #503 (no browser.open first-hand reads this run). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; one morningstar URL carried verbatim from its listing. The PYMNTS URL is legitimately shared with existing corpus coverage (google pilot context). Pre-commit novelty greps: zero test_type_c_719 files on disk (glob); no Type C #719 in git log (--grep); zero mechanism_666 keys repo-wide (grep; the test_type_e_666 file carries iteration 666 via _mechanism()["iteration"], not a mechanism_666 key, per the #715 lesson - pattern rescoped accordingly); max numeric mechanism id 665 pre-commit (profiles/careers/journalists.yaml via #718 Type B); zero "European Commission" antitrust/AI hits in profiles/competitor-entities.yaml pre-commit; 4 of 5 source URLs zero-hit repo-wide pre-commit (PYMNTS shared). No em dashes; ASCII-only.'
+      novelty_verification:
+      - 'FIRST dedicated EU-antitrust-probe mechanism in the corpus; zero "European Commission" antitrust/AI hits in profiles/competitor-entities.yaml pre-commit'
+      - 'FIRST corpus record of the Sep 1 2026 Reuters publisher opt-out questionnaire piece (12 days old at analysis)'
+      - 'Zero mechanism_666 keys repo-wide pre-commit; max numeric mechanism id 665 pre-commit'
+      - 'Zero test_type_c_719 files on disk pre-commit (glob verified); no Type C #719 in git log pre-commit (grep verified)'
+      - 'Distinct from mechanism 589 (copyright-litigation adversarial, different vector and forum), mechanism 64 (Cloudflare private blocking leverage), mechanism 112 (PMC litigation paradox at publication level), mechanism 529 (Canada C18 legislative payment precedent)'
+      - 'NOT a falsification-family member (ledger stays at 24 after #718''s TWENTY-FOURTH; per #609/#614 qualitative boundary)'
+      verification:
+        iteration: 719
+        type: 'C'
+        date: '2026-09-13 07:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
   x_twitter:
     display_name: X / Twitter
     aliases:
