@@ -16,7 +16,7 @@
 
 **Novelty Verification:** Zero test_type_d_725 files on disk pre-commit (glob verified); no Type D commit with 725 in the title pre-commit (git log --grep verified); zero mechanism_670 keys in profiles/ and tests/ pre-commit (pattern rescoped per #715, own file excluded); max numeric mechanism_id 669 post-#724; no Type D run covering mechanisms 667-669 jointly before (the #720 file covered 664-666).
 
-**Commit hashes:** main 3712f0f619d522adf1bf7ad81e4b46355008f55f (Type D #725 main, 5 files, 602 insertions); followup pending (anchor patch + this hash line)
+**Commit hashes:** main 3712f0f619d522adf1bf7ad81e4b46355008f55f (Type D #725 main, 5 files, 602 insertions); followup 4439c296e8d45f3e7fd487c2c079b291c8a47767 (anchor patch + dual-mode rotation guard, 2 files)
 
 **Push status:** BLOCKED this run - egress proxy hatch-egress-proxy:3128 unreachable (curl 000 on no-auth and dummy-auth probes, same fleet-side blocked state as #710-#720); commits local-only, push pending a future run with working egress.
 
