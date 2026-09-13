@@ -24808,6 +24808,108 @@ cross_publication_findings:
     - https://www.techmeme.com/260709/p20#a260709p20
     - https://www.techmeme.com/250520/p43
     - https://muckrack.com/dominic-preston
+  kit_eaton_inc_register_inversion_meta_positive_apple_adversarial:
+    competitor: Apple
+    confounders:
+    - 'STRONG: Temporal gap about 23.5 months (Meta arm circa Thu Sep 26 2024, Connect
+      2024 week; Apple arm circa Thu Sep 10 2026, day after the Wed Sep 9 2026 Apple
+      event). Eaton''s register may have shifted with the ambient-AI backlash climate
+      (UK venue bans, German nonprofit criminal complaint, EFF criticism all postdate
+      the Meta piece), not entity.'
+    - 'STRONG: Genre differs across arms: the Meta arm is launch-event product coverage
+      (Connect keynote, PR-guided, embargo briefings); the Apple arm is controversy
+      news pegged to EFF and wiretap-law criticism. Genre, not entity, may drive the
+      register gap.'
+    - 'STRONG: Meta''s glasses accumulated a documented misuse history between the arms
+      (extortion case, courtroom use, South Korea criminal charge, Svenska Dagbladet
+      contractor exposure of sensitive captures); Eaton''s 2024 enthusiasm predates all
+      of it, so the arms are not time-matched.'
+    - 'MODERATE: Both arms are search-excerpt-bounded this run (no direct page reads;
+      browser.open terminally unavailable per developer constraint); full-text moderating
+      passages may exist.'
+    - 'MODERATE: Byline attribution rests on URL paths (''kit-eaton'' in both canonical
+      URLs, verbatim from search-result Full URL listings), not page-rendered byline
+      confirmation.'
+    - 'MODERATE: Apple''s Audio Intelligence presents a genuinely novel bystander-consent
+      puzzle (ambient summarization, no speaker attribution, 15-second rolling buffer)
+      that plausibly warrants more scrutiny than 2024 camera glasses; the register gap
+      may track real news value.'
+    - 'WEAK: n=1 per arm: directional only, degenerate statistical contract.'
+    - 'WEAK: Inc.''s founder/manager audience makes ''banned at the office'' audience-service
+      workplace framing, not necessarily Apple animus.'
+    - 'WEAK: Eaton''s Aug 21 2026 Inc. Apple camera-AirPods piece used a 5-step
+      resolution-rationalization structure favorable to Apple (in-corpus cross-medium
+      corroboration, iteration-log); his Apple register varies by story, so single-piece
+      variance cannot be ruled out.'
+    connects_to:
+    - 668
+    - 670
+    - 150
+    counterevidence:
+    - 'COUNTEREVIDENCE: Eaton''s Apple piece tracks a real news event (EFF criticism via
+      Adam Schwartz, 11-state wiretap-law questions, TechCrunch''s normalization thesis);
+      the controversy frame may be peg-driven journalism, not entity animus.'
+    - 'COUNTEREVIDENCE: Eaton''s Aug 21 2026 Inc. piece on Apple camera AirPods used a
+      5-step resolution-rationalization structure favorable to Apple (in-corpus,
+      iteration-log); his Apple register varies by story, weakening any ''Eaton is
+      anti-Apple'' reading.'
+    - 'COUNTEREVIDENCE: The Meta arm predates the entire Meta-glasses backlash wave
+      (2025-2026); a 2026 Eaton Meta wearables piece might carry the same controversy
+      register, which would collapse the inversion to temporal drift.'
+    discovery_date: '2026-09-13'
+    finding: 'Kit Eaton (Inc.) INVERTS the WIRED outlet gradient at journalist level.
+      Meta arm: ''Meta Bets on Augmented Reality Devices as the Future of Wearable Tech''
+      (Inc., circa Thu Sep 26 2024, Connect 2024 week) covers Meta''s Orion AR glasses and
+      Ray-Ban Meta camera/microphone sunglasses in an enthusiastic product register:
+      ''much more chic Ray Ban AR sunglasses''; ''the really neat thing about the
+      sunglasses is that you can ask Meta''s AI what it can see in front of you, through
+      the cameras''; Orion ''looks more like a product people could one day wear when
+      walking down the street'' (vs Apple Vision Pro ''bulky and hugely expensive'').
+      Always-on cameras and microphones are described neutrally as features; zero
+      privacy-alarm vocabulary in search excerpts. MANUAL ILLUSTRATIVE register +0.55.
+      Apple arm: ''The Apple Watch Got a Massive AI Upgrade - and the Controversy Could
+      Get It Banned at the Office'' (Inc., circa Thu Sep 10 2026, day after the Wed Sep 9
+      2026 Apple event; original headline uses an em dash, rendered here with a hyphen
+      per the ASCII-only corpus convention) frames Apple''s Audio Intelligence (Live
+      Rewind 15-second ambient buffer, Siri Recap) through a controversy-forward register:
+      headline ''Controversy Could Get It Banned at the Office''; cites TechCrunch''s
+      ''normalizing the idea that technology is always listening''; same-beat context
+      includes EFF''s Adam Schwartz (''Our right to conversational privacy must include
+      freedom from other people, without our clear opt-in consent'') and wiretap-law
+      analysis (''a chime does not give a bystander a real way to object''). MANUAL
+      ILLUSTRATIVE register -0.50. Apple-minus-Meta delta -1.05 (INVERSION). This bounds
+      mechanism #670 (WIRED outlet gradient: Apple +0.0 pitch-carrying vs Meta -0.55 to
+      -0.62 adversarial) as outlet-specific, not a journalist-universal law: the same
+      ambient-sensing controversy frame Eaton applies adversarially to Apple, WIRED applies
+      leniently to Apple and adversarially to Meta. MANUAL ILLUSTRATIVE: p_value
+      NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False,
+      engine NOT run, NOT artifact-grade, no engine divergence pin. Verdict:
+      directionally_supported_not_proven. NOT a falsification-family member (ledger holds
+      at 24). Correlation is not causation.'
+    finding_type: journalist_cross_entity
+    iteration: 728
+    journalist: Kit Eaton
+    mechanism_id: 671
+    publication: Inc. (Mansueto Ventures)
+    rotation_type: B
+    source_urls:
+    - https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
+    - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
+    - https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/
+    test_count: 41
+    test_file: tests/test_type_b_728_kit_eaton_inc_meta_positive_apple_adversarial_register_inversion_sep13_4pm.py
+    testable_predictions:
+    - 'If Eaton covers Meta''s Ray-Ban Display (Sep 2025) or 2026 Meta wearables with
+      the same enthusiasm register despite the intervening misuse history, the
+      entity-effect interpretation strengthens; if he applies the controversy frame,
+      the inversion collapses to temporal drift.'
+    - 'If other Inc. authors replicate the Meta-positive/Apple-adversarial pattern on
+      ambient wearables, the bound generalizes to outlet level; if Inc. authors replicate
+      WIRED''s gradient instead, the inversion is Eaton-idiosyncratic.'
+    - 'WIRED''s mechanism-670 gradient should persist at WIRED across additional authors;
+      if a WIRED author shows Eaton''s inversion, the outlet-specificity claim needs
+      revision.'
+    verdict: directionally_supported_not_proven
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

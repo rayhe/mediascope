@@ -19003,3 +19003,23 @@ philip_berne:
     former_apple_employee: true
     note: Former Samsung PR employee covers Meta with alarm vocabulary but mentions Samsung as future competitor with zero alarm
 
+
+kit_eaton:
+  name: Kit Eaton
+  current_role: Contributor (exact staff title unconfirmed this run)
+  current_publication: Inc.
+  publication_owner: Mansueto Ventures
+  beat: wearables, AI hardware, consumer tech
+  career_history:
+  - employer: Inc.
+    role: Contributor
+    period: 2024-present
+    source_url: https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
+  notes: 'Byline verified via URL paths on both Inc. pieces (inc.com/kit-eaton/ slug);
+    no page-rendered byline confirmation this run (browser.open terminally unavailable
+    per developer constraint). Previously cited in-corpus for the Aug 21 2026 Apple
+    camera-AirPods piece (5-step resolution-rationalization structure, iteration-log).
+    FIRST Type B subject (mechanism 671, iteration #728).'
+  source_urls:
+  - https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
+  - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
