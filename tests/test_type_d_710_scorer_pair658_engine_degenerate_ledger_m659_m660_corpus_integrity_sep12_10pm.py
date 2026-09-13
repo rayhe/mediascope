@@ -292,7 +292,7 @@ class TestPost709CorpusIntegrity:
 
 
 # ── Rotation guard / novelty anchor (#565 convention) ───────────────────────────
-ANCHORED_SHA = "NOT_YET_COMMITTED_anchor_deselected_pre_commit_per_565"
+ANCHORED_SHA = "3faa867db40112e6d8e18bcbe01d6962fafd6703"
 
 
 class TestRotationCycleGuard710:
