@@ -15786,6 +15786,101 @@ entities:
         unique_key_check: pending
         mechanism_id_unique: pending
         provenance: url_backed
+    mechanism_663_perplexity_premium_data_licensing_cashmere_sep2026:
+      mechanism_id: 663
+      iteration: 714
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-13'
+      time_pdt: '02:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'Perplexity Premium-Data Licensing Layer via Cashmere (Wiley May 8 2025, Harvard Business Publishing, Princeton University Press Sep 2026, Rockefeller UP, Springer Publishing) - RAG-Only No-LLM-Training Per-Token Pricing, First Dedicated Perplexity Paid-Licensing Mechanism, License-Leg of the Sign-One-Sue-Other Bifurcation (Dow Jones/NY Post v. Perplexity Oct 2024)'
+      overview: 'First dedicated corpus mapping of Perplexity AI''s PAID licensing leg with publishers: the premium-data integration layer operated by Cashmere (cashmere.io), the AI licensing infrastructure startup whose $5M seed (Reach Capital lead; NAVER D2SF, Founders Future, Fortitude Ventures, Ingram Content Group, Pearson) and proprietary OmniPub stack underpin Perplexity''s publisher-pay architecture. Cashmere built the Wiley-Perplexity integration (announced May 8 2025, Perplexity''s first education partner) and, per CEO Jonathan Munk (Publishers Weekly), now handles ALL of Perplexity''s premium data integrations: "Basically anytime that Perplexity brings in a new data partner, they run it on Cashmere." Publisher-side roster: John Wiley & Sons (May 8 2025), Harvard Business Publishing (announced via NAVER D2SF PR Feb 4 2026), Princeton University Press (Sep 2026, circa Sep 8; announced this week, exact publication date unverified), Rockefeller University Press and Springer Publishing (both 2026, PW roster reporting). Cashmere''s model is RAG-only: no-LLM-training, content parsed into a proprietary knowledge-graph format ("omnipub"), licensed per-token, per-use, or per-relationship, with token-level access control, rights management, usage tracking and revenue settlement; publishers grant and rescind licenses via dashboard. Mar 9 2026: Cashmere x KGL (KnowledgeWorks Global Ltd.) strategic partnership extends the rails to KGL publisher customers. The licensed leg coexists with the 2024 ad revenue-share Publishers'' Program (Time, Der Spiegel, Fortune, Gannett, The Independent, Automattic; Comet Plus $42.5M pool, 80/20 split, mechanism 391) and with Perplexity''s litigation leg: Dow Jones and the NY Post sued Perplexity in SDNY on Oct 21 2024 (case 1:24-cv-07984) after a July 2024 licensing-demand letter went unanswered; Forbes (Jun 2024 plagiarism accusation) and Conde Nast/CNN suits frame the adversarial leg. Sign-one-sue-other bifurcation is Perplexity''s version of the corpus pattern already mapped for OpenAI (mechanisms 609/660 vs ANI), News Corp (mechanism 519) and Reddit/Anthropic (mechanism 614).'
+      counterparties:
+      - 'John Wiley & Sons - May 8 2025; Perplexity''s first education partner; Enterprise Pro subscribers access Wiley collections (nursing, business, engineering); pilot Texas A&M and Texas State University plus UK institutions; ALL Wiley employees receive Enterprise Pro licenses (in-kind enterprise-tool consideration leg)'
+      - 'Harvard Business Publishing - announced Feb 4 2026 via NAVER D2SF investment PR; premium-data partner roster member'
+      - 'Princeton University Press - Sep 2026, circa Sep 8 (announced this week, PW Sep 2026; exact publication date unverified); catalog for "copyright compliant" AI platforms with RAG-licensing focus (live search/information retrieval); PUP retains title/term control; CEO Jonathan Munk + PUP director Christie Henry quotes'
+      - 'Rockefeller University Press - 2026; Cashmere roster per PW Sep 2026'
+      - 'Springer Publishing - 2026; Cashmere roster per PW Sep 2026'
+      infrastructure_operator:
+        company: 'Cashmere (cashmere.io)'
+        ceo: 'Jonathan Munk'
+        funding: '$5M seed, Reach Capital lead; participants NAVER D2SF, Founders Future, Fortitude Ventures, Ingram Content Group, Pearson (PW + NAVER D2SF PR Feb 4 2026)'
+        headcount: 'fewer than 10 employees, plans to stay lean (PW)'
+        model_claims:
+        - 'no-LLM-training licensing model (keeps deals aligned with publishing licensing norms; PUP deal explicitly RAG-focused)'
+        - 'proprietary "omnipub" knowledge-graph ingestion format for unstructured content'
+        - 'per-token, per-use, or per-relationship pricing (a la carte usage pricing, cf. Vogel distinction in mechanism 539)'
+        - 'token-level access control, rights management, usage tracking, revenue settlement'
+        - 'IP protection: full text never exposed to the AI platform ("near impossible to reconstruct a book or a catalog", per Munk)'
+        - 'publishers grant/rescind licenses and redefine terms via dashboard'
+        reach_claim: 'Cashmere built the Wiley-Perplexity integration and now handles all of Perplexity''s premium data integrations ("Basically anytime that Perplexity brings in a new data partner, they run it on Cashmere")'
+        expansion: 'Mar 9 2026 Cashmere x KGL (KnowledgeWorks Global Ltd.) strategic partnership - commercial and technical rails for KGL publisher customers (EIN Presswire)'
+        buyer_side_interest: 'NAVER D2SF plans NAVER-Cashmere collaboration, leveraging NAVER''s 25+ years as Korea''s top search engine - a search-market player entering publisher-pay rails'
+      executive_quotes:
+      - 'Josh Jarrett, Wiley SVP AI growth: "Wiley saw the potentially huge benefits of AI early on and chose to fully invest in it... between a trusted publisher and an AI innovator"'
+      - 'Dmitry Shevelenko, Perplexity chief business officer: "This new partnership represents a significant step in our commitment to providing accurate, sourced information through AI."'
+      - 'Jonathan Munk, Cashmere CEO: "Our goal at Cashmere is to give publishers the confidence and the tools to participate in the AI economy on their own terms."'
+      - 'Christie Henry, PUP director: infrastructure gives the press the ability to make content available to AI applications "on terms that we define, with the transparency, ethics and accountability our authors and readers deserve."'
+      pricing_model_innovation: 'Per-token/per-use/per-relationship RAG licensing is the corpus''s clearest usage-based (a la carte) pricing instance, extending the Vogel all-you-can-eat vs a la carte distinction documented in mechanism 539 (DDM triple-payer). Contrast with flat-fee training-licensing templates (OpenAI News Corp $250M/5yr reported; OpenAI DDM $16M/yr; Meta People Inc Dec 2025 undisclosed) and with the zero-fee-disclosed India attribution template (mechanism 660). The payer-side economic exposure scales with content consumption, not with a fixed annual ticket.'
+      license_litigate_bifurcation: 'Perplexity licenses the willing through Cashmere premium-data integrations while contesting News Corp''s licensing demands: Dow Jones + NY Post v. Perplexity, SDNY 1:24-cv-07984, filed Oct 21 2024 after the July 2024 demand letter went unanswered (corpus line 2784; Thomson quote "abuse of intellectual property"). Conde Nast/CNN v Perplexity (corpus #509 inventory) and the Forbes Jun 2024 plagiarism accusation round out the adversarial leg. Academic/book publishers (Wiley, HBP, PUP) occupy the licensed leg; news publishers occupy the litigation leg - a surface-split dual posture comparable to mechanisms 609/660 (OpenAI India), 519 (News Corp), 614 (Reddit v Anthropic).'
+      meta_zero: 'Meta has zero documented premium-data or publisher licensing relationship with Wiley, HBP, PUP, or Cashmere; Meta''s publisher-pay roster (Reuters Oct 2024, People Inc Dec 2025) does not intersect this layer. Per the standing correlational convention, that absence is structural context, not a coverage-tone claim.'
+      correlational_note: 'This mapping describes a structural financial relationship: Perplexity pays publishers via two templates (2024 ad revenue-share Publishers'' Program / Comet Plus, plus Cashmere-operated premium-data integrations) while being sued by news publishers it has not licensed. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim is made; Type A follow-ups flagged.'
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'All financial terms undisclosed - Wiley, HBP, PUP, RUP, Springer Publishing, and the Cashmere pricing tiers all lack dollar values. The mapping is architectural (who pays whom through what rails), not sized.'
+      - strength: 'STRONG'
+        text: 'Publisher-surface mismatch: Wiley/HBP/PUP are academic/book publishers, not among the 7 tracked news publications. Perplexity''s exposure to the tracked set runs through the Comet Plus revenue-share program (mechanism 391), not this premium-data layer; do not read this mechanism as a claim about WIRED/NYT/Verge/FT coverage.'
+      - strength: 'MODERATE'
+        text: 'Enterprise-tool in-kind consideration: all Wiley employees receive Perplexity Enterprise Pro licenses, so part of the consideration may be non-cash, complicating any future dollar-flow comparison with flat-fee deals.'
+      - strength: 'MODERATE'
+        text: 'RAG-only surface: the no-LLM-training model means the licensed content feeds retrieval/grounding, not model weights - a different technical surface than training-data licensing, weakening naive template comparisons with OpenAI/News Corp style deals.'
+      - strength: 'WEAK'
+        text: 'Evidence grade: excerpt-bounded, second-hand (browser.open not used this run; per #503) - the "handles ALL premium data integrations" claim is Munk''s own statement as reported by PW, with obvious self-promotion incentive.'
+      - strength: 'WEAK'
+        text: 'PUP announcement timing approximate: "Last Crawl: 5 days ago" places the PW piece circa Sep 8 2026; announcement date bounded, not verbatim-confirmed.'
+      counterevidence:
+      - 'Dow Jones and NY Post sued Perplexity (SDNY Oct 21 2024, 1:24-cv-07984) - the unlicensed leg of the same market Perplexity licenses elsewhere, limiting any claim that Perplexity''s publisher strategy is uniformly licensed'
+      - 'Conde Nast v Perplexity and the Forbes Jun 2024 plagiarism accusation - adversarial publisher postures toward the same lab'
+      - 'Perplexity''s stated position (Search Engine Land, Jul 2024): it "does not need to license content as it is not training its language model on publishers'' writing" - the premium-data layer sits in deliberate tension with the lab''s no-license-necessary rhetoric'
+      - 'The "no-LLM-training" and "near impossible to reconstruct" claims are Cashmere''s marketing framing as reported by PW, not independently audited technical guarantees'
+      cross_references:
+      - 'mechanism 391 (Perplexity Comet Plus 80/20 revenue-share with Conde Nast, Aug 2025 - the OTHER Perplexity publisher-pay template)'
+      - 'mechanism 539 (People Inc triple-payer - Vogel all-you-can-eat vs a la carte pricing distinction; the Cashmere per-token model is the corpus''s purest a la carte instance)'
+      - 'mechanism 519 (News Corp x OpenAI woo-and-sue dual posture - Perplexity''s Wiley/HBP vs Dow Jones/NY Post split is the same architecture)'
+      - 'mechanism 609/660 (OpenAI India attribution deals vs ANI litigation - license-the-willing-contest-the-rest dual track)'
+      - 'mechanism 614 (Reddit v. Anthropic pay-or-sue three-leg bifurcation)'
+      - 'mechanism 509 (Anthropic institutionalized zero-deal posture - Perplexity is the nearest contrast case: partial licensing vs total refusal)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded deal facts)'
+      - '#492 iteration rule (bounded absence only, no zero-coverage claims)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative tone scoring not applied)'
+      novelty: 'FIRST dedicated Perplexity premium-data/paid-licensing mechanism in the corpus. Zero "wiley" or "Harvard Business Publishing" hits repo-wide pre-commit; zero Cashmere keys; mechanism 391 covers only the Comet Plus revenue-share template (not the premium-data layer); corpus line 1109 references the $42.5M pool only. Pre-commit novelty checks: zero test_type_c_714 files on disk (glob); no Type C #714 in git log (--grep); zero mechanism_663 keys repo-wide (grep); max numeric mechanism id repo-wide pre-commit 662. No em dashes; ASCII-only.'
+      sources:
+      - https://newsroom.wiley.com/press-releases/press-release-details/2025/Wiley-and-Perplexity-Announce-New-AI-Search-Partnership/default.aspx
+      - https://www.businesswire.com/news/home/20250508857307/en/Wiley-and-Perplexity-Announce-New-AI-Search-Partnership
+      - https://www.thebookseller.com/news/wiley-partners-with-ai-company-perplexity
+      - https://www.silicon.co.uk/press-release/wiley-and-perplexity-announce-new-ai-search-partnership
+      - https://www.publishersweekly.com/pw/newsbrief/index.html?record=5355
+      - http://www.publishersweekly.com/pw/by-topic/industry-news/publisher-news/article/100971-princeton-university-press-partners-with-cashmere-on-ai-licensing.html
+      - https://www.publishersweekly.com/pw/by-topic/digital/content-and-e-books/article/99705-the-stealthy-startup-promising-better-ai-publishing-licensing-deals.html
+      - https://www.morningstar.com/news/pr-newswire/20260204cn78664/naver-d2sf-invests-in-cashmere-a-data-infrastructure-platform-bridging-premium-content-and-ai
+      - https://www.einnews.com/pr_news/897582490/cashmere-and-kgl-partner-to-power-the-commercial-technical-rails-for-premium-content-in-ai
+      research_method: '4 browser.search query sets this run: (1) publisher AI licensing deal announced September 2026; (2) Disney OpenAI Sora licensing deal characters 2026 (rejected as out-of-scope: Disney is not a Meta competitor, deal is Dec 2025); (3) Wiley Perplexity licensing partnership AI; (4) Cashmere AI licensing platform publisher deals 2026. Excerpt-bounded, second-hand evidence per #503 (no browser.open first-hand reads this run; no pages opened). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; one PW URL carried http (not https) verbatim from its listing. Pre-commit novelty: zero test_type_c_714 files (glob); no Type C #714 in git log (--grep); zero mechanism_663 keys repo-wide (grep); max numeric mechanism id 662 pre-commit. No em dashes; ASCII-only.'
+      tone_scores: 'NOT_SCORED'
+      statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value NOT_CALCULATED. significant False per the Aug 28 2026 standing rule. Not a falsification-family member (ledger stays 22 after #708''s TWENTY-SECOND; per #609/#614 qualitative boundary).'
+      verification:
+        iteration: 714
+        type: 'C'
+        date: '2026-09-13 02:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
   srmg_pif_pmc_dual_revenue_anti_meta_mechanism_422:
     mechanism_id: 422
     type: Type C - Financial Incentive Mapping
