@@ -415,7 +415,7 @@ class TestFullSuiteStatus715:
 
 
 # -- Rotation guard / novelty anchor (#565 convention) ---------------------------
-ANCHORED_SHA = "PENDING_715_MAIN_COMMIT_SHA"
+ANCHORED_SHA = "c0ea1eecf66df91a077401a054391d84cb69d404"
 
 
 class TestRotationCycleGuard715:

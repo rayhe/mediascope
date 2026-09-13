@@ -16,7 +16,9 @@
 
 **Novelty Verification:** Zero test_type_d_715 files on disk pre-commit (glob verified); no Type D commit with 715 in the title pre-commit (git log --grep verified); zero mechanism_664 keys in profiles/ and tests/ pre-commit; max numeric mechanism_id 663 pre-commit; no Type D run covering mechanisms 661-663 jointly before (the #710 file covered 658-660).
 
-**Commit hashes:** PENDING (filled in followup per #565).
+**Commit hashes:** main c0ea1eecf66df91a077401a054391d84cb69d404 (verified via git rev-parse); followup patches ANCHORED_SHA to c0ea1ee and logs hashes (anchor 35/35 green post-followup).
+
+**Push status:** BLOCKED this run - egress proxy hatch-egress-proxy:3128 unreachable (all 6 credential candidates curl 000, same fleet-side blocked state as #710/#711/#712/#713/#714); main + followup local-only, push pending a future run with working egress.
 
 **Doc-sync ratchet:** README stats table 37548/1042 + test-file table row; ARCHITECTURE.md header stats + tree row; iteration-log #715 entry (this entry).
 
