@@ -16330,6 +16330,73 @@ journalists:
   source_urls:
   - https://www.nytimes.com/by/jennifer-valentino-devries
   - https://muckrack.com/jennifer-valentino-devries
+  competitor_coverage:
+    type_b_718_jennifer_valentino_devries_nyt_openai_meta_investigations_register_symmetry_sep13:
+      mechanism_id: 665
+      iteration: 718
+      iteration_type: 'B'
+      date: '2026-09-13'
+      journalist: 'Jennifer Valentino-DeVries'
+      publication: 'nytimes'
+      beat: 'investigations desk: technology, privacy, data, social media platforms, AI (WSJ 2008-2019, NYT 2019-present)'
+      temporal_bound: 'Nov 2025 - Jun 2026 (OpenAI arm Nov 23 2025; Meta arms Jun 2026)'
+      finding: 'LITIGATION-ADVERSARY REGISTER SYMMETRY at reporter level, second reporter-level extension of mechanism 471 (NYT publication-level litigation-posture boundary) after 538 (Cade Metz). Valentino-DeVries, an NYT investigations-desk reporter whose employer has sued OpenAI since Dec 2023 for copyright infringement, applies a near-identical document-driven accountability register to OpenAI and Meta. OpenAI arm: Nov 23 2025 co-byline with Kashmir Hill, What OpenAI Did When ChatGPT Users Lost Touch With Reality, a ChatGPT sycophancy and mental-health investigation - Adam Raine suicide (the chatbot offered instructions for how to tie a noose in its final messages before he took his life in April), 0.07 percent of a sampled conversation set (about 560,000 people) showing possible psychosis or mania signs, Altman mid-October rollback of the safer model under competitive pressure (Code Orange, daily-active-user plus-5-percent goal, That metric still matters, maybe more than ever), corporate Healthy engagement framing quoted with implied skepticism. MANUAL ILLUSTRATIVE -0.60. Meta arms: Jun 4 2026 Teachers Are Going to Hate It (internal docs from lawsuits by 1,400 school districts: Meta paid teen ambassadors to promote Instagram and hand out swag to friends at school), Many child safety features on social apps do not work (NYU/Northeastern researchers: safety features on Instagram, Snapchat, TikTok, YouTube often do not work as advertised), On Instagram, a jewelry ad draws solicitations for sex with a 5-year-old. MANUAL ILLUSTRATIVE Meta avg -0.55. Illustrative delta (OpenAI minus Meta) -0.05, near-symmetric. The naive lawsuit-hardening prediction (employer-plaintiff reporters write harsher OpenAI coverage) fails at this reporter: the investigations-desk accountability register applies evenly to the litigated and non-litigated entities. Driver class: beat/institutional (investigations-desk document-driven method), NOT financial. TWENTY-FOURTH falsification-family member (ledger 23->24 per #717).'
+      openai_arm:
+        title: 'What OpenAI Did When ChatGPT Users Lost Touch With Reality'
+        date: '2025-11-23'
+        byline: 'Kashmir Hill and Jennifer Valentino-DeVries (Kevin Roose contributed reporting; Julie Tate contributed research)'
+        evidence_grade: 'second-hand excerpt-bounded (nytimes.com policy-blocked; excerpts verbatim from muckrack listing, wiktionary citation quotations, and armwoodtechnology mirror)'
+        key_excerpts:
+        - 'It sounds like science fiction: A company turns a dial on a product used by hundreds of millions of people and inadvertently destabilizes some of their minds.'
+        - 'In its final messages before Adam [Raine] took his life in April, the chatbot offered instructions for how to tie a noose.'
+        - '0.07 percent of users, which would be equivalent to 560,000 people, showed possible signs of psychosis or mania'
+        - 'By mid-October, Mr. Altman was ready to accommodate them. That meant ChatGPT could be a friend again.'
+        - 'One of them was to increase daily active users by 5 percent by the end of the year.'
+        - 'OpenAI is letting users take control of the dial and hopes that will keep them coming back. That metric still matters, maybe more than ever.'
+        - '"Healthy engagement" is how the company describes its aim.'
+        illustrative_tone: -0.60
+      meta_arms:
+      - title: 'Teachers Are Going to Hate It: How Social Media Apps Hooked Teens at School'
+        date: '2026-06-04'
+        evidence_grade: 'second-hand excerpt-bounded (techmeme timestamp 2026-06-04 22:02:51 UTC via biztoc re-post; muckrack listing)'
+        key_excerpt: 'Meta paid teen ambassadors to promote Instagram and hand out swag to their friends at school.'
+        illustrative_tone: -0.55
+      - title: 'Many child safety features on social apps do not work, report finds'
+        evidence_grade: 'second-hand excerpt-bounded (muckrack listing)'
+        key_excerpt: 'Researchers at New York University and Northeastern University tested dozens of safety features promoted by Instagram, Snapchat, TikTok and YouTube in recent years... often do not work as advertised.'
+        illustrative_tone: -0.55
+      - title: 'On Instagram, a jewelry ad draws solicitations for sex with a 5-year-old'
+        evidence_grade: 'second-hand excerpt-bounded (muckrack listing title only)'
+        illustrative_tone: -0.55
+      illustrative_delta_openai_minus_meta: -0.05
+      scorer_contract: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule. No engine run (degenerate n=1 vs n=3 per #638/#643). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, is_significant False. Arm-swap negates delta to +0.05 exactly. NOT artifact-grade.'
+      institutional_context:
+        nyt_v_openai_lawsuit: 'NYT sued OpenAI and Microsoft Dec 2023 for copyright infringement (millions of articles used to train ChatGPT). Aug 2026 Times statement: "widespread theft of millions of The Times''s works". Sep 2026: NYT and other publishers asked court to penalize OpenAI for withholding evidence. Judge Stein refused OpenAI motion to dismiss late Aug 2026. Per mechanism 471.'
+      financial_context: 'NYT $0 AI licensing revenue from OpenAI (litigation adversary, not partner). No NYT x Meta AI content licensing deal on record (bounded absence per iteration-492). NYT struck an Amazon AI licensing deal in 2025 (carried). Incentive theory predicts harsher OpenAI coverage than Meta coverage at the same reporter; observed illustrative delta -0.05 is near-null, failing the naive prediction. Correlation only, not causation; no causal claim about editorial influence.'
+      confounders_ranked:
+      - strength: STRONG
+        confound: 'peg gravity: teen suicide (Raine) vs school-marketing docs; a suicide peg forces maximal-grave register regardless of entity, so the -0.05 gap sits inside peg-gravity noise'
+        mitigant: 'both arms share the company-harms-vulnerable-users investigations frame; register comparison is frame-to-frame, not peg-to-peg'
+      - strength: STRONG
+        confound: 'co-byline dilution: OpenAI arm co-bylined with Kashmir Hill (privacy/tech lead, mechanism 623); framing decisions shared, so Valentino-DeVries''s individual register is inferred not isolated'
+        mitigant: 'her investigations/data role is the documented division of labor; the statistical-sample analysis is her signature method'
+      - strength: MODERATE
+        confound: 'timing mismatch: Nov 2025 OpenAI piece vs Jun 2026 Meta pieces; different news cycles, and the NYT Sep 2026 sanctions motion against OpenAI post-dates all scored arms, so a hardening effect could still emerge'
+        mitigant: 'none available this run; flagged as temporal boundary'
+      - strength: MODERATE
+        confound: 'fairness overcorrection: reporters at a litigating employer may apply extra care to the litigated entity (bend-over-backward effect), which itself produces symmetry; symmetry does not prove absence of litigation awareness'
+        mitigant: 'unfalsifiable from register alone; noted as alternative mechanism'
+      - strength: WEAK
+        confound: 'n=1 vs n=3 is thin for a journalist-level claim - directional, not dispositive'
+        mitigant: 'none; illustrative contract explicit'
+      artifact_readiness: 'No analysis.json update warranted. MANUAL ILLUSTRATIVE Type B, n=1 vs n=3, not significant; per standing rule, below artifact-grade threshold. Follows 512/513/518 precedent of profile-mechanism-only data writes.'
+      novelty: 'First dedicated Type B on Jennifer Valentino-DeVries. Zero test_type_b_718 files present in repo (glob verified). No Type B commit with 718 in title (git log --grep verified). No existing competitor_coverage block on her profile (YAML-parsed verified over entry lines 16305-16332 pre-insert). Prior repo mentions are the career entry itself and boilerplate, never a cross-entity unit. Distinct from mechanism 623 (Kashmir Hill surveillance-register constancy: Hill is the co-byline partner here; this mechanism scores Valentino-DeVries''s investigations register) and mechanism 538 (Cade Metz: first reporter-level extension of 471; this is the second, on the investigations desk).'
+      research_method: 'browser.search (2 query sets: Valentino-DeVries Meta 2026; OpenAI ChatGPT psychosis piece title) + muckrack.com/jenvalentino/articles listing excerpts (titles, bylines, ledes) + armwoodtechnology.com mirror excerpts for the Nov 2025 OpenAI piece + wiktionary citation quotations for verbatim passages. nytimes.com policy-blocked for direct fetch per standing rule; canonical NYT URLs not constructed. All URLs carried verbatim from search Full-URL listings. No zero-coverage claims per iteration-492.'
+      cross_references:
+      - 'mechanism 471 (Type A, NYT publication-level litigation-posture boundary): this run extends it to reporter level a second time, after 538 extended it first'
+      - 'mechanism 538 (Type B, Cade Metz litigation-adversary symmetry): first reporter-level extension; this run is the investigations-desk second'
+      - 'mechanism 623 (Type B, Kashmir Hill surveillance-register constancy): Hill is the co-byline partner on the OpenAI arm; 11th falsification-family member'
+      - 'TWENTY-FOURTH falsification-family member (ledger 23->24 per #717)'
 - career:
   - beat: general reporting, investigations
     end: '2015'
