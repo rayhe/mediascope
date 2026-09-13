@@ -5998,6 +5998,94 @@ cross_publication_findings:
     publication: platformer
     test_count: 27
     test_file: tests/test_casey_newton_cross_entity.py
+  cherlynn_low_engadget_apple_audio_intelligence_control_replication:
+    competitor: Apple
+    confounders:
+    - 'STRONG: Apple hardware safeguards materially differ from Meta''s reported
+      ambient sensing: Secure Exclave hardware isolation, on-device processing,
+      audible chime plus mic indicator on Live Rewind activation, opt-in, raw audio
+      inaccessible and deleted (per Apple''s 11-page privacy paper shared with WIRED,
+      Sep 2026). Meta''s glasses train AI on captured "Hey Meta" content per its terms
+      of service, with contractor exposure of sensitive captures reported by Svenska
+      Dagbladet.'
+    - 'STRONG: Form factor differs: wrist-worn watch vs face-worn glasses; bystander
+      visibility, recording notice, and social recording norms are not equivalent.'
+    - 'STRONG: Genre is controlled across arms but limits inference: both arms are
+      hands-on demo product pieces, not privacy investigations; genre cannot explain any
+      differential, but it also cannot support privacy-scrutiny comparisons.'
+    - 'MODERATE: Apple arm evidence is search-excerpt-bounded this run (no direct page
+      read; browser.open terminally unavailable per developer constraint), while the
+      Meta arm rests on in-corpus #150 findings.'
+    - 'MODERATE: Meta Glasses carry a documented misuse history (extortion case,
+      courtroom use, South Korea criminal charge, UK venue bans; Gizmodo: "much of it
+      has been well deserved") while Apple''s Audio Intelligence has no misuse record
+      as of Sep 2026.'
+    - 'MODERATE: Low is Engadget''s product hands-on specialist, not privacy beat;
+      privacy scrutiny is structurally assigned elsewhere (Bell), so low alarm is
+      role-expected.'
+    - 'WEAK: Apple hands-on was an event-floor demo with limited time and PR-guided
+      access.'
+    - 'WEAK: Temporal gap: Meta arm Jun 2026, Apple arm Sep 2026; 11 weeks of evolving
+      ambient-AI news could shift any journalist''s register.'
+    - 'WEAK: Outlet-register variance: Conditt''s adversarial "spy equipment" news lede
+      at the same outlet shows register varies by assignment within Engadget, which
+      supports rather than confounds the beat-assignment mechanism; listed as weak
+      because it is an un-scored single-piece observation.'
+    connects_to:
+    - 113
+    - 150
+    - 151
+    counterevidence:
+    - 'COUNTEREVIDENCE: Apple''s privacy architecture genuinely deserves lighter
+      scrutiny - the lenient register may track real safeguards, not bias.'
+    - 'COUNTEREVIDENCE: Conditt''s adversarial Apple lede at the same outlet shows
+      Engadget does criticize Apple, weakening any outlet-level Apple-favoritism story
+      (limited impact: this mechanism is journalist-level control, not outlet-level).'
+    - 'COUNTEREVIDENCE: Siri Recap sends condensed text to Private Cloud Compute -
+      Low''s "not against" stance may reflect personal risk tolerance, not an entity
+      effect.'
+    discovery_date: '2026-09-13'
+    finding: 'Cherlynn Low (Engadget) extends her Mechanism #150 control case to a THIRD
+      entity: her Apple Watch Series 12 hands-on (Thu Sep 10, 2026, one day after the
+      Wed Sep 9, 2026 "Surprise and Shine" event) covers Audio Intelligence
+      always-listening features - Live Rewind''s rolling 15-second ambient audio buffer
+      and Siri Recap conversation summaries - with the same zero-privacy-alarm register
+      she applied to Meta Glasses (Tue Jun 23, 2026). Key evidence
+      (search-excerpt-bounded): Low states she is "not against AI wearables that listen
+      to your surroundings and conversations, as long as done responsibly and with
+      accountability," and is "intrigued by things like Siri Recap and Live Rewind" -
+      explicit normalization of ambient-listening wearables by the same journalist whose
+      Meta coverage #150 found uniformly alarm-free. This is a REPLICATION of Mechanism
+      #150, not a new asymmetry finding: journalist-level privacy vocabulary continues
+      to be routed through editorial beat assignment (Karissa Bell''s Meta-only privacy
+      investigations at the same outlet) rather than individual journalist bias.
+      Journalist-level privacy-alarm differential Meta vs Apple = 0.00 (NULL
+      DIFFERENTIAL, both arms zero alarm). MANUAL ILLUSTRATIVE: p_value NOT_CALCULATED,
+      cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False, engine NOT
+      run, NOT artifact-grade, no engine divergence pin. Verdict:
+      directionally_supported_not_proven. NOT a falsification-family member (ledger
+      holds at 24). Correlation is not causation.'
+    iteration: 723
+    journalist: Cherlynn Low
+    mechanism_id: 668
+    publication: Engadget (Yahoo/Apollo)
+    rotation_type: B
+    source_urls:
+    - https://www.engadget.com/2254467/apple-watch-series-12-hands-on-siri-recap-transcribe-live-rewind-health-sensing/
+    - https://www.engadget.com/2199519/meta-ai-glasses-hands-on-kylie-jenner-edition/
+    test_count: 39
+    test_file: tests/test_type_b_723_cherlynn_low_engadget_apple_audio_intelligence_control_replication_sep13_11am.py
+    testable_predictions:
+    - When Samsung/Google Android XR eyewear ships, Low''s hands-on coverage will
+      contain zero privacy alarm terms, consistent with her Meta/Snap/Apple register.
+    - Engadget will NOT publish a standalone Bell-style privacy investigation of
+      Apple''s Audio Intelligence despite ambient listening, while Meta glasses privacy
+      investigations continue - if one appears, this replication''s control-case
+      interpretation weakens.
+    - Low''s future Meta glasses hands-ons will maintain the zero-alarm register even
+      as the backlash documented in Sep 2026 (UK venue bans, German nonprofit criminal
+      complaint) intensifies.
+    verdict: directionally_supported_not_proven
   cherlynn_low_engadget_cross_entity_beat_assignment_control:
     competitor: Snap
     confounders:
