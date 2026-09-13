@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 268 | Career data with source URLs |
 | Career-entry migrations | 978 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 37481 | Across 1040 test files |
+| Tests | 37513 | Across 1041 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **37481 tests** across 1040 test files, each covering a different analytical capability:
+MediaScope has **37513 tests** across 1041 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1567,3 +1567,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_710_scorer_pair658_engine_degenerate_ledger_m659_m660_corpus_integrity_sep12_10pm.py` | 27 | Type D #710: scorer-degenerate consistency (m658 Bloomberg Apple Duo [0.40] vs Meta Muse [0.05], EIGHTEENTH n=1-per-arm degenerate pair reproducing through real calculate_asymmetry: asymmetry 0.35 within 1e-9 of pinned illustrative delta, t=0.0, p=1.0, d=0.0, is_significant False, arm-swap -0.35; zero-gradient control NOT falsification-family member) + m659 McCracken TWENTY-SECOND ledger membership (journalist-attribution class, delta -0.10, ledger holds at 22) + m660 qualitative-only discipline (NOT_SCORED, NOT_CALCULATED, NOT a member per #609/#614 boundary); corpus integrity post-#709: max numeric mechanism_id 660, zero mechanism_661 keys, m658/m659/m660 unique, TWENTY-FIRST and TWENTY-SECOND present, TWENTY-THIRD absent; 37K-suite launched under #705 was killed mid-run - re-launched this run to goal hidden_files type_d_710_full_suite.log, next Type D run checks it; 708-712 rotation window closes C->D->E->A (anchor patched post-commit per #565); no analysis.json update - Sep 12 2026 22:00 PDT - 27 tests, 7 classes |
 
 | `test_type_a_712_nyt_apple_duo_hands_on_vs_nyt_meta_muse_sep13_12am.py` | 51 | Type A #712: NYT x Apple iPhone Duo hands-on value review (+0.15: "Why is Apple's New Foldable iPhone Duo $1,999?" by Brian X. Chen; price-skepticism title + trade-off listing "crease in the center", "lacks the advanced camera system", "no face scanner", moderated by "extremely thin", "dainty", "less chunky in my pocket than other foldables") vs NYT x Meta Muse (+0.05 neutral capability list "According to the New York Times, Muse has access to services like Gmail, Spotify, Ticketmaster, OpenTable, and Shopify") - MANUAL ILLUSTRATIVE delta (Apple minus Meta) +0.10 SMALLEST positive in the Duo launch-genre series, degenerate n=1 vs n=1 per #638/#643, no engine run, no divergence pin, NOT artifact-grade; SEVENTH Duo launch-genre publication after #662 WSJ (+0.45), #687 Verge (+0.38 avg), #692 Reuters (-0.05 avg), #697 Gizmodo (+0.325 avg), #702 Fast Company (+0.35), #707 Bloomberg (+0.40); SECOND-HAND BOUNDED per #503 (nytimes.com blocked by policy; zero verbatim nytimes.com URLs in 5 query sets; Duo arm via verbatim Chen passages on mirror + 2 syndications; Muse arm via 2 attributions; m471 secondary-attestation precedent); MINIMAL-GRADIENT CONTROL (no NYT-AI content deal on record; NYT left Apple News 2020; coverage_prediction neutral) - NOT a falsification-family member (ledger 22); first dedicated NYT x Apple Duo Type A; first YAML mechanism under nytimes.yaml competitor_relationships.apple (mechanism 661, next free, max pre-commit 660); first NYT x Meta Muse mechanism; 708-712 rotation guard closing E->A (anchor patched post-commit per #565); #710's no-661 sweep tests fail by designed supersession (per #710 convention); no analysis.json update; count_stats gate (authoritative .venv pytest collection 37481/1040; delta +51/+1 = the #712 file exactly) - Sep 13 2026 00:00 PDT - 51 tests, 11 classes |
+| `tests/test_type_b_713_brian_x_chen_duo_value_review_vs_rayban_privacy_alarm_register_gradient_sep13.py` | Type B #713: Brian X. Chen (NYT) Meta Ray-Ban privacy-alarm (-0.50) vs Apple iPhone Duo value review (+0.15), second-Apple-comparator extension of #458/m484; illustrative delta (Meta minus Apple) -0.65, degenerate n=1 vs n=1, no engine run, zero-gradient control, NOT a falsification-family member (ledger stays 22) |

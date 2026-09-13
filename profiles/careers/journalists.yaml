@@ -8113,7 +8113,83 @@ journalists:
       description: 'Cross-publication framing shift correlates with institutional financial incentives. At Gizmodo (G/O Media, no AI deals): adversarial coverage of ALL companies including Meta (Project Ghostbusters) and OpenAI (board crisis). At WIRED (Condé Nast, OpenAI deal Aug 2024): bifurcated coverage  -  Meta receives institutional-decay framing (layoffs, morale); OpenAI/Anthropic receive access-based business journalism (executive profiles, revenue scoops). Source access asymmetry reinforces: cultivated inside access at Anthropic (Boris Cherny, Claude Code ARR exclusive) and OpenAI (Brockman interviews, internal memos); no comparable Meta AI access. WIRED output Nov 2025-Aug 2026: 6+ OpenAI, 3+ Anthropic, 0 dedicated Meta AI business pieces. Third Gizmodo→WIRED migration under Barrett  -  adversarial instincts selectively channeled (applied to Meta, muted for OpenAI/Anthropic). CONTRAST with #60 (Hao target-shift) and #57 (Seetharaman frame-lock): Zeff shows FRAMING-shift  -  same
         companies, different treatment at different outlets.'
   multi_publication: true
-- career:
+- mechanism_662_brian_x_chen_duo_value_review_vs_rayban_privacy_alarm_register_gradient_sep13:
+    mechanism_id: 662
+    iteration: 713
+    type: B
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    block_key: type_b_713_brian_x_chen_duo_value_review_vs_rayban_privacy_alarm_register_gradient_sep13
+    journalist: Brian X. Chen
+    publication: The New York Times
+    pair_shape: 'same-journalist cross-entity byline-isolated register pair; second-Apple-comparator extension of the #458/m484 Chen privacy-bifurcation finding (m484 paired the Meta Ray-Ban arm with the Apple Vision Pro arm); this run pairs the same carried Meta arm with the Sep 2026 Apple iPhone Duo hands-on carried from #712/m661'
+    meta_arm:
+      date: '2023-12'
+      title: "Meta's Ray-Bans Are Alarming for Privacy in Private Spaces, Not in Public"
+      url: https://pxlnv.com/linklog/meta-ray-bans-privacy/
+      url_note: 'Pixel Envy linklog quoting the NYT column verbatim (nytimes.com canonical URL not verbatim-recoverable this run; none constructed per #503)'
+      byline: Brian X. Chen (sole)
+      byline_attribution: 'full - title, date, and sole byline verified via the Pixel Envy linklog this run (search-result verbatim, crawled 13d); m484 pinned the same URL'
+      register: privacy-alarm product evaluation, Tech Fix societal-critique register
+      register_detail: 'LED-indicator covert-capture experiment: "As I shot 200 photos and videos with the glasses in public, including on BART trains, on hiking trails and in parks, no one looked at the LED light or confronted me about it. And why would they? It would be rude to comment on a stranger''s glasses, let alone stare at them." Surveillance-critic interview: Chris Gilliard on private-space implications. Framing: "alarming for privacy in private spaces" - Meta "reframing the creepiness of [camera glasses] as a virtue, as is the company''s business model" (Pixel Envy commentary on the column).'
+      tone_illustrative: -0.50
+      evidence_grade: 'second-hand (excerpt-bounded) - verbatim passages via the Pixel Envy linklog (search-result verbatim this run); the NYT original paywalled and nytimes.com policy-blocked for direct fetch; per the #503 precedent, disclosed'
+    apple_arm:
+      date: '2026-09'
+      title: "Why is Apple's New Foldable iPhone Duo $1,999?"
+      canonical_url_note: 'nytimes.com canonical URL not verbatim-recoverable (#712 run: nytimes.com blocked by policy; verbatim Chen passages recovered on a mirror plus 2 syndications). No URL constructed or guessed.'
+      byline: Brian X. Chen (sole, photos by Jason Henry)
+      byline_attribution: 'full - carried from #712, which verified the Chen byline via the mirror and syndications'
+      register: consumer value review, price-skepticism hands-on
+      register_detail: 'Carried from #712: price-skepticism title; trade-off listing ("I occasionally noticed the crease in the center where the screen folds"; "the iPhone Duo lacks the advanced camera system featured in the $1,199 iPhone 18 Pro phones"; "does not have a face scanner for unlocking the device, relying instead on a fingerprint sensor"); mild positive hands-on notes ("extremely thin, measuring two-tenths of an inch"; "felt dainty... about the size of a passport"; "less chunky in my pocket than other foldables I have tested").'
+      tone_illustrative: 0.15
+      evidence_grade: 'carried from #712/m661 - second-hand (excerpt-bounded) per the #503 precedent, disclosed'
+    asymmetry_scorer_result:
+      method: 'MANUAL ILLUSTRATIVE (Aug 28 2026 standing rule) - Meta arm hand-scored this run from the carried m484 verbatim excerpts; Apple arm carried from #712; illustrative only; no engine run'
+      target_tones_manual_illustrative:
+      - -0.50
+      reference_tones_manual_illustrative:
+      - 0.15
+      target_avg: -0.50
+      reference_avg: 0.15
+      delta_meta_minus_apple: -0.65
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      artifact_grade: false
+      limitations: 'n=1 per arm degenerate contract per #638/#643; about 33-month temporal gap (Dec 2023 vs Sep 2026); genre gap (privacy investigation vs product value review); both arms excerpt-bounded (full columns not read first-hand); Apple arm carried from #712 rather than re-verified this run'
+    verdict: 'BOUNDED ASYMMETRY - second-Apple-comparator extension of the m484 Chen privacy bifurcation, in the #663 gradient-absent family. Same-journalist, same-outlet byline-isolated pair: Chen applies the privacy-alarm register to Meta''s glasses (-0.50 illustrative; LED covert-capture experiment, Gilliard private-space interview, "alarming for privacy in private spaces") and the consumer value-review register to Apple''s foldable (+0.15 illustrative, carried #712; price-skepticism title, trade-off listing, mild hands-on positives). The m484 bifurcation direction (Meta alarm, Apple non-alarm) reproduces on a second, newer Apple comparator. Zero-gradient financial control: the deal theory makes no differential prediction and the observed gap is genre/peg/timing driven. NOT a falsification-family member; the ledger stays at 22 after #708''s TWENTY-SECOND. Correlation, not causation. No analysis.json update warranted.'
+    financial_context:
+      predictor: zero_gradient_control
+      prediction: no_differential_prediction
+      detail: 'Correlation, not causation. NYT x Apple: NO known AI content licensing deal on record; NYT left Apple News in 2020 (carried from #712; Wirecutter and The Athletic still appear in Apple News; Apple Podcasts subscription partnership; no AI content deal; coverage_prediction neutral). NYT x Meta: NO known AI licensing deal on record (Meta''s Mar 2026 European publisher bundle #689 covered Le Figaro/Prisa/Suddeutsche Zeitung, not NYT; NYT is in active litigation against OpenAI, not a licensee). Zero-gradient control in the #663 family: the incentive theory predicts no differential, and the observed register gap is consistent with the neutral prediction given the genre/peg/timing confounds.'
+    confounders:
+    - '[STRONG] Genre skew: the Meta arm is a privacy investigation (Tech Fix societal-critique register); the Apple arm is a day-one product value review. The register gap is genre-functional: privacy vocabulary belongs to the privacy story, price vocabulary to the value story.'
+    - '[STRONG] News-peg asymmetry: the Meta arm is anchored on a genuine surveillance-model concern (Meta''s ad business, camera glasses mainstreaming, private-space recording risk attested by Gilliard); the Duo arm''s peg is a $1,999 price/value question on a foldable. Intensity follows the peg.'
+    - '[STRONG] Temporal gap: Dec 2023 vs Sep 2026, about 33 months apart; Chen''s Tech Fix column evolved across the gap and the Duo piece is a launch-window hands-on.'
+    - '[MODERATE] Second-hand bounded both arms: Meta arm via Pixel Envy verbatim excerpts (m484); Apple arm carried from #712''s mirror/syndication excerpts; nytimes.com blocked for direct fetch on both runs.'
+    - '[MODERATE] Not independent evidence of a journalist-global pattern: both Apple comparators (Vision Pro m484, Duo this run) are Chen product-review register; the finding is bounded to the privacy-expose vs product-review genre pair.'
+    - '[WEAK] n=1 per arm degenerate contract; delta -0.65 exact at 2dp, verdict-invariant under rounding.'
+    counterevidence:
+    - 'Chen''s Apr 11 2018 Facebook data column ("I Downloaded All the Information that Facebook Has on Me. Yikes", https://www.nytimes.com/2018/04/11/technology/personaltech/i-downloaded-the-information-that-facebook-has-on-me-yikes.html) shows the privacy-alarm register is his longstanding Tech Fix mode across the industry, not Meta-specific.'
+    - 'Chen''s late-2025 iPhone Air review (with Tripp Mickle, per the Chen entry) carried a thin-is-not-enough hardware critique: he applies critical registers to Apple hardware too.'
+    - 'The 2019 George Polk citation (per the Chen entry) was for coverage "reshaping public perceptions of Silicon Valley" broadly - institutional adversarial posture toward the whole industry, not a Meta exclusion.'
+    cross_references:
+    - '#712/m661 (Apple Duo arm source; Chen authored the Duo piece - direct journalist-level continuation; the #712 Duo-vs-Muse pair becomes the Duo-vs-Ray-Ban pair here)'
+    - '#458/m484 (Meta Ray-Ban arm source; the Chen privacy-bifurcation finding this run extends with a second Apple comparator)'
+    - '#69 (NYT Meta bifurcation; publication-level comparator baseline)'
+    - '#663 (gradient-absent control-case family precedent)'
+    - '#503 (second-hand evidence-grade precedent)'
+    - '#638/#643 (degenerate statistical contract convention)'
+    - '#565 (followup/anchor convention)'
+    - 'iteration-492 rule (no zero-coverage claims; both arms positive Chen bylines)'
+    - '#710 (designed-supersession convention for #710''s no-662 sweeps)'
+    novelty: 'FIRST mechanism key on the Brian X. Chen journalist entry (zero mechanisms pre-commit, grep verified; mechanism_662 added as the entry''s first mechanism key). #458/m484 (nytimes.yaml, publication-profile) covered Chen''s Meta-vs-Apple privacy vocabulary bifurcation with the Vision Pro comparator. The Duo-vs-Ray-Ban Chen pair was never a mechanism: the Duo piece (Sep 2026) postdates m484 by a year, and #712 paired the Duo with Meta Muse, not with Chen''s Ray-Ban piece. Distinct from #708/m659 (McCracken), #703/m656 (Olson), #698/m653 (Wong), #693/m650 (Nguyen), #688/m647 (Satariano). Rotation: 712 A -> 713 B.'
+    artifact_readiness: 'No analysis.json update warranted: illustrative-only mechanism, degenerate statistical contract, zero-gradient control; no new empirical findings; no falsification-family membership change; no profiles/ entity changes beyond the new mechanism block.'
+  career:
   - beat: Apple, consumer technology
     end: 2009-01
     event_type: hired
