@@ -59,7 +59,7 @@ FB_DATA_URL = "https://www.nytimes.com/2018/04/11/technology/personaltech/i-down
 
 # Patched to the real main-commit SHA in the followup commit per the #565
 # convention; the guard classes are deselected pre-commit.
-ANCHORED_SHA = "PATCHED_IN_FOLLOWUP_PER_565"
+ANCHORED_SHA = "f2f1665d2b0f2b57fca69dfed1c5f4c06f570526"
 
 
 def _careers():
