@@ -1419,6 +1419,192 @@ competitor_relationships:
       Advance Publications, Vox Media, PMC, McClatchy, and others.
     source_url: "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
     coverage_prediction: "adversarial"
+    mechanism_667_atlantic_google_adversarial_posture_litigation_domain_boundary_replication_sep13:
+      mechanism_id: 667
+      iteration: 722
+      iteration_type: A
+      iteration_title: "Type A: Competitor Coverage Deep Dive"
+      iteration_time: "2026-09-13 10:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "The Atlantic x Google (vs Meta)"
+      finding: >
+        First dedicated Type A mechanism under competitor_relationships.google
+        in atlantic.yaml, which previously held only the financial stub
+        (adversarial_litigation: The Atlantic sued Google in SDNY Jan 13 2026,
+        Case 1:26-cv-00272, for adtech antitrust violations; $0 direction
+        adversarial; coverage_prediction adversarial). The naive prediction
+        from the adversarial financial posture is adversarial Google coverage
+        across all domains. Observed: the adversarial posture holds ONLY
+        within the litigation domain. The Atlantic non-litigation Google
+        coverage (Jan-Apr 2026, n=2) runs less adversarial than its
+        entity-targeted Meta coverage. THIRD adversarial-posture boundary
+        replication pin after #471 (NYT x OpenAI) and #592 (Verge x Google):
+        adversarial publisher-entity posture predicts adversarial tone WITHIN
+        the litigation domain only. MANUAL ILLUSTRATIVE delta (Google target
+        minus Meta peer) +0.425; p_value/cohens_d/ci_95 NOT_CALCULATED;
+        is_significant False per the Aug 28 2026 standing rule. NOT
+        artifact-grade; n=2 vs n=2. NOT a falsification-family member
+        (ledger holds at 24); boundary family 2->3. Correlation is not
+        causation.
+      discovery_summary: >
+        Google-side (non-litigation domain): (1) Alex Reisner AI Watchdog
+        "AI's Memorization Crisis" (Fri Jan 9 2026): Stanford/Yale study shows
+        four labs models (OpenAI GPT, Anthropic Claude, Google Gemini, xAI
+        Grok) store and reproduce large portions of books they trained on;
+        quotes Google 2023 letter to the US Copyright Office ("there is no
+        copy of the training data, whether text, images, or other formats,
+        present in the model itself") and contradicts it via the study;
+        adversarial investigation register applied entity-generically, Google
+        one of four, no entity-targeted Google investigation. Tone
+        -0.45 MANUAL ILLUSTRATIVE (mirror-excerpt-bounded; theatlantic.com
+        direct fetch failed this run, terminal tool failure, no retry per
+        convention). (2) "Inside the Dirty, Dystopian World of AI Data
+        Centers" (Apr 2026, Atlantic magazine): xAI Colossus target; names
+        Amazon, Microsoft, Meta, and Google in the "$600 billion"-plus capex
+        stack; industry-generic. Tone -0.10 MANUAL ILLUSTRATIVE
+        (listing-bounded via archive snippet). Litigation-domain anchor
+        (expected adversarial, observed adversarial, not scored by design):
+        The Atlantic own SDNY complaint vs Google: "$30 billion from
+        manipulating auctions" (2022), auction manipulations "inherently
+        unfair," clearing prices suppressed ~40%; thewrap/pressgazette
+        reporting; complaint PDF via ppc.land. Meta comparators (carried
+        in-corpus from mechanism 481): "Why Would Meta Download So Much
+        Porn?" (Fri Jul 24 2026, AI Watchdog, Meta named in headline,
+        -0.75); "The Unbelievable Scale of AI's Pirated-Books Problem" (Mar
+        2025, Meta foregrounded, -0.65). Bounded absence per the
+        iteration-492 rule: no dedicated Atlantic AI Watchdog or equivalent
+        accountability investigation isolating Google on training-data
+        memorization surfaced in bounded searches (the Memorization piece is
+        entity-generic across four labs); no Atlantic editorial treatment of
+        Google Android XR glasses (fall 2026 launch) surfaced in bounded
+        searches - stated as bounded search-result absence, not a proven
+        zero.
+      research_method: >
+        5 browser.search query sets this run (Atlantic Google Android XR
+        smart glasses 2026 since 2026-06-01; Atlantic Google AI Overviews
+        Gemini criticism 2026 since 2026-06-01; theatlantic.com Google article
+        2026 since 2026-05-01; theatlantic.com Meta glasses Ray-Ban 2026
+        since 2026-05-01; quoted Atlantic Reisner "AI's Memorization Crisis"
+        date verification; Atlantic Google adtech lawsuit Jan 2026 editorial
+        coverage). browser.open first-hand fetch FAILED this run (terminal
+        tool failure: egress-approvals-admin.sock missing; continued without
+        the tool per convention, no retry). Google characterizations from
+        verbatim search-result excerpts and multi-mirror quotations; all URLs
+        verbatim from search-result Full-URL listings; no canonical URLs
+        constructed; weekday grounding via TZ=America/Los_Angeles date -d for
+        all 4 event dates; no zero-coverage claims per the iteration-492
+        rule. Pre-commit greps: zero test_type_a_722 files on disk (glob); no
+        "Type A #722" in git log; zero mechanism_667 keys repo-wide
+        (grep); max numeric mechanism_id 666 pre-commit; zero mechanism keys
+        under competitor_relationships.google in atlantic.yaml pre-insertion.
+      google_articles:
+        - title: "AI's Memorization Crisis"
+          date: "2026-01-09"
+          weekday: "Friday"
+          author: "Alex Reisner"
+          vertical: "AI Watchdog"
+          url: "https://technologiesdigest.com/ais-memorization-crisis-the-atlantic/"
+          url_note: "Third-party mirror of the Atlantic piece; original Atlantic URL not in verbatim search results; no URL constructed"
+          evidence_tier: "mirror_excerpt_bounded"
+          corroboration:
+            - "https://www.bespacific.com/ais-memorization-crisis-large-language-models-dont-learn-they-copy/"
+            - "https://arxiv.org/pdf/2604.06754"
+          framing: "entity_generic_adversarial_investigation_four_labs"
+          key_quotes:
+            - "Four popular large language models, OpenAI's GPT, Anthropic's Claude, Google's Gemini, and xAI's Grok, have stored large portions of some of the books they've been trained on"
+            - "Google similarly told the Copyright Office that 'there is no copy of the training data, whether text, images, or other formats, present in the model itself'"
+            - "The Stanford study proves that there are such copies in AI models"
+          tone_MANUAL_ILLUSTRATIVE: -0.45
+          tone_notes: "Adversarial investigation register applied entity-generically; Google one of four; Google Copyright Office denial directly contradicted; no entity-targeted Google investigation"
+        - title: "Inside the Dirty, Dystopian World of AI Data Centers"
+          date: "2026-04"
+          publication: "The Atlantic (magazine)"
+          url: "https://web.archive.org/web/20260503001248/https://www.theatlantic.com/magazine/2026/04/ai-data-centers-energy-demands/686064/"
+          evidence_tier: "listing_bounded"
+          framing: "industry_generic_capex_stack"
+          key_quotes:
+            - "Since ChatGPT's launch, in November 2022, the capital expenditures of Amazon, Microsoft, Meta, and Google have exceeded $600 billion"
+          tone_MANUAL_ILLUSTRATIVE: -0.1
+          tone_notes: "xAI Colossus is the target; Google named neutrally among four spenders; no Google-specific scrutiny"
+      litigation_domain_anchor:
+        entity: "The Atlantic v. Google (plaintiff posture)"
+        venue: "SDNY"
+        case_number: "1:26-cv-00272"
+        filed: "2026-01-13"
+        weekday_filed: "Tuesday"
+        complaint_pdf: "https://ppc.land/content/files/2026/01/gov.uscourts.nysd.656070.1.0.pdf"
+        reporting:
+          - "https://www.thewrap.com/industry-news/business/the-atlantic-google-alphabet-lawsuit/"
+          - "https://pressgazette.co.uk/marketing/five-us-publishers-sue-google-over-deceptive-and-manipulative-adtech-practices/"
+          - "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
+        key_quotes:
+          - "'The enrichment and benefit to Google came at the expense of The Atlantic'"
+          - "auction manipulations were 'inherently unfair'"
+          - "Google made '$30 billion from manipulating auctions for ad space across the Internet' in 2022"
+        adx_dependency_quote: "The Atlantic cannot forgo the significant revenue it earns from the Google Ads demand available only through AdX"
+        scored: false
+        score_reason: "Litigation-domain anchor excluded from tone arms by design; plaintiff posture is adversarial by construction"
+      meta_articles:
+        - title: "Why Would Meta Download So Much Porn?"
+          date: "2026-07-24"
+          vertical: "AI Watchdog"
+          url: "https://web.archive.org/web/20260724235323/https://www.theatlantic.com/technology/2026/07/meta-strike-3-porn-lawsuit/688023/"
+          carried_from: "mechanism 481 (in-corpus)"
+          framing: "entity_targeted_headline_accusation"
+          tone_MANUAL_ILLUSTRATIVE: -0.75
+        - title: "The Unbelievable Scale of AI's Pirated-Books Problem"
+          date: "2025-03"
+          author: "Alex Reisner"
+          vertical: "AI Watchdog"
+          carried_from: "mechanism 481 lineage (in-corpus)"
+          framing: "entity_foregrounded_despite_dual_lab_exposure"
+          tone_MANUAL_ILLUSTRATIVE: -0.65
+      tone_comparison:
+        google_target_tones_MANUAL_ILLUSTRATIVE: [-0.45, -0.1]
+        google_target_avg: -0.275
+        meta_peer_tones_MANUAL_ILLUSTRATIVE: [-0.75, -0.65]
+        meta_peer_avg: -0.7
+        delta_target_minus_peer_MANUAL_ILLUSTRATIVE: 0.425
+        methodology: "MANUAL ILLUSTRATIVE synthetic tone scores based on observed Atlantic language and register. Illustrative only. Requires observed corpus plus Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Do not claim statistical significance from synthetic arrays."
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        artifact_grade: false
+        scorer_version: "mediascope/score/asymmetry.py v0.1.0"
+        engine_run: false
+        engine_divergence_pin: false
+      confounders_ranked:
+        strong:
+          - "entity dilution: the Google arm never isolates Google (one of four labs in the Watchdog piece; one of four in the capex stack); the Meta arm is entity-targeted in the headline - the delta may measure targeting granularity, not financial posture"
+          - "genre skew: investigative feature (Google) vs accountability investigation with entity accusation (Meta); the Memorization piece is entity-generic by design"
+          - "news-peg asymmetry: the Meta items rest on filed lawsuits with dramatic court evidence (Strike 3 file-transfer lists, unsealed LibGen comms); Google had no equivalent 2026 accountability news peg in the window"
+        moderate:
+          - "cross-incentive: The Atlantic licenses content to OpenAI (Google direct AI rival, May 2024 deal); an OpenAI-favoring rival narrative could independently explain relative Google softness - alternative incentive story not ruled out"
+          - "timing skew: Google items Jan-Apr 2026 vs Meta items Mar 2025 / Jul 2026"
+          - "post-hoc domain definition: the litigation-domain boundary is itself a theory commitment; defining the domain after observing the pattern risks circularity"
+        weak:
+          - "publishers rarely cover their own lawsuits - no dedicated Atlantic editorial on its own SDNY suit is normative, not informative"
+          - "evidence-tier asymmetry: Google arm from mirror excerpts (theatlantic.com direct fetch failed this run), Meta arm from in-corpus full text"
+          - "the AdX revenue admission ('cannot forgo') coexists with the suit, complicating the adversarial-dependence story in both directions"
+      counterevidence:
+        - "The Atlantic DID sue Google - the strongest possible adversarial act; the litigation-domain arm is adversarial by construction, so the theory prediction holds exactly where it predicts"
+        - "the Memorization Crisis does explicitly contradict Google Copyright Office claims (-0.45 adversarial on Google); adversarial Google content exists in the corpus, it is entity-diluted, not absent"
+        - "n=2 vs n=2 thin and illustrative; directionally consistent, not dispositive"
+        - "OpenAI-licensing cross-incentive offers a rival explanation for the observed Google softness relative to Meta (rival of the licensing partner)"
+      financial_context: "Correlation, not causation: The Atlantic sued Google (adversarial_litigation, $0, coverage_prediction adversarial) while admitting it cannot forgo Google Ads demand revenue via AdX - adversarial posture coexisting with revenue dependency. Direction of the litigation predicts adversarial tone WITHIN the litigation domain only, per the #471/#592 boundary family."
+      novelty: "First dedicated mechanism under competitor_relationships.google in atlantic.yaml; distinct from #481 (Atlantic x OpenAI watchdog entity selection), #404 (Atlantic x Anthropic mitigation credit), #572 (Atlantic x Apple register exemption, same register-asymmetry strand, different competitor), #592 (Verge x Google boundary replication, different publication); distinct from the in-corpus google_coverage_summary note (competitor-coverage-research.yaml) which documents the suit without tone analysis"
+      cross_references:
+        - "mechanism 481 (Atlantic x OpenAI watchdog entity selection; Meta comparator carried)"
+        - "mechanism 471 (NYT x OpenAI adversarial-posture boundary pin, FIRST)"
+        - "mechanism 592 (Verge x Google adversarial-posture boundary replication, SECOND)"
+        - "mechanism 572 (Atlantic x Apple accountability-register exemption; register-asymmetry strand sibling)"
+        - "mechanism 666 (Type C #719 EU antitrust Google publisher-AI opt-out; adjacent Google publisher-adversarial vector)"
+      falsification_family_member: false
+      boundary_family: "THIRD adversarial-posture litigation-domain boundary pin"
+      artifact_grade: false
+      verdict: "directionally_supported_not_proven"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"
