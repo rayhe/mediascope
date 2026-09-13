@@ -62,7 +62,7 @@ MECH_KEY = "mechanism_666_eu_antitrust_google_publisher_ai_optout_quiz_sep2026"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor tests are deselected pre-commit.
-ANCHORED_SHA = "PENDING_MAIN_COMMIT_SHA"
+ANCHORED_SHA = "cd71ea2de130d14817ac15decd6da68b0249c96a"
 
 
 def load_competitor():
