@@ -18640,6 +18640,102 @@ journalists:
   notes: 'Axios chief technology correspondent; see career block. Analytical value: Fried runs a dedicated consumer-AI-privacy series ("What They Know About You") covering OpenAI, Anthropic, Meta, and Google symmetrically, which makes her cross-entity register choices a clean Type B target once evidence cleared the first-party-URL bar.'
 
 
+- mechanism_659_harry_mccracken_altman_world_id_anthropic_mythos_adversarial_register_constancy_sep12:
+    mechanism_id: 659
+    iteration: 708
+    type: B
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    block_key: type_b_708_harry_mccracken_altman_world_id_anthropic_mythos_adversarial_register_constancy_sep12
+    journalist: Harry McCracken
+    publication: Fast Company
+    pair_shape: 'same-journalist cross-entity byline-isolated column-register pair; temporal falsification update on the Aug 20 file-local McCracken CEO-attribution finding (mechanism #201, iteration #209)'
+    altman_arm:
+      date: '2026-04-24'
+      title: 'Can Sam Altman make proving you are human seem cool - and essential?'
+      title_note: 'Fast Company display title uses an em dash (cool - and essential); rendered here with a hyphen per the ASCII-only corpus convention.'
+      url: https://www.fastcompany.com/91531465/world-id-tools-for-humanity-proof-of-human-worldcoin
+      byline: Harry McCracken (sole)
+      byline_attribution: 'full - title, date, and sole byline verified via the BuzzSumo Harry McCracken journalist profile and the Fast Company Plugged In newsletter index (search-result verbatim this run)'
+      register: adversarial tech column, biometric-identity peg
+      register_detail: 'Dek (Fast Company Plugged In newsletter, verbatim): "His startup Tools for Humanity''s World ID proof-of-human technology just got some big partners. But it also faces daunting challenges." Body excerpts (search-result verbatim, crawled 2d): "Altman - whose association with the company lashes it to the controversy he generates in his day job - mentioned ''a lot of wonderful things'' the technology is doing, but didn''t specify what they were." / "It''s clear, however, that it''s working hard to make getting verified seem cool rather than a utilitarian necessary evil, like dental insurance or a sump pump." / "In a strange mini-scandal, after TFH announced at the event that it was ''joining'' Bruno Mars'' upcoming tour with ''VIP experiences for verified humans,'' Wired''s Maxwell Zeff and Lauren Goode reported that Mars'' team and concert producer Live Nation denied such a partnership existed or had even been broached. A TFH spokesperson attributed the on-stage claim to ''a miscommunication.''" / "It''s not obvious that anyone will get much out of having proven they''re human, other than clawing back a shred of pre-AI normalcy." Loaded language: "lashes it to the controversy", "strange mini-scandal", "miscommunication", "utilitarian necessary evil", "clawing back a shred". Framing: CEO-personalized adversarial column - Altman named in the headline and lashed to controversy in the body, the same CEO-attribution register the Aug 20 finding treated as Meta-exclusive.'
+      tone_illustrative: -0.50
+      evidence_grade: 'second-hand (excerpt-bounded) - title/date/byline verified via the BuzzSumo journalist profile and the Fast Company Plugged In index (search-result verbatim this run); dek plus body excerpts verbatim from search results (crawled 2d); full column NOT read first-hand; per the #503 precedent, disclosed'
+    anthropic_arm:
+      date: '2026-04-10'
+      title: 'Anthropic''s ''Mythos'' AI proves that obsessing over AGI is folly'
+      canonical_url_note: 'Fast Company canonical URL not verbatim-recoverable this run; title and date verified via the BuzzSumo Harry McCracken journalist profile (search-result verbatim). No URL constructed or guessed.'
+      byline: Harry McCracken (sole)
+      byline_attribution: 'full - title, date, and sole byline verified via the BuzzSumo Harry McCracken journalist profile (search-result verbatim this run)'
+      register: adversarial tech column, AI-strategy peg
+      register_detail: 'Dek (BuzzSumo profile, verbatim): "Maybe LLMs will beat humanity at everything someday. But they''re adept at exploiting software vulnerabilities right now - and we can''t wait for fixes." Mission-dismissive framing: "obsessing over AGI is folly".'
+      tone_illustrative: -0.45
+      evidence_grade: 'second-hand (excerpt-bounded) - title/dek verbatim from the BuzzSumo journalist profile (search-result verbatim this run); full column NOT read first-hand; per #503, disclosed'
+    meta_arm:
+      date: '2021-09-09 and 2022 (carried corpus)'
+      title: 'McCracken Meta corpus (carried from the Aug 20 file-local mechanism #201, iteration #209)'
+      url: tests/test_harry_mccracken_fastco_cross_entity_ceo_attribution_humanization_differential_aug20.py
+      byline: Harry McCracken (sole)
+      byline_attribution: 'full - carried from the Aug 20 file-local test, which verified the Fast Company source URLs'
+      register: feature and analysis column, smart-glasses peg
+      register_detail: '2021 "Facebook gets in your Ray-Bans: A first look at its new smart glasses" (https://www.fastcompany.com/90673958/facebook-smart-glasses-ray-ban-stories-luxottica): "Dystopia averted" section heading, praised privacy safeguards - balanced, about -0.10. 2022 "Why Mark Zuckerberg is fixated on creating AR''s ''iPhone moment''" (https://www.fastcompany.com/90741172/mark-zuckerberg-meta-ar-glasses-nazere-hypernova): "''Zuck''s ego is intertwined with [the glasses],'' a former employee tells me"; "fixated on creating AR''s ''iPhone moment''"; "one of his biggest disappointments was missing out on owning a smartphone operating system" - adversarial CEO-attribution, about -0.65. Carried average -0.375, rounded to -0.38 illustrative this run.'
+      tone_illustrative: -0.38
+      evidence_grade: 'carried from the Aug 20 file-local test (mechanism #201, iteration #209), which verified the Fast Company source URLs'
+    register_bound_note:
+      register_201: 'Meta-vs-Snap CEO-attribution humanization differential (2021-2026 glasses coverage): Spiegel humanized ("As a Stanford student, he told me this week", "The father of four sons", "laser focused on trying to make computing more human", zero privacy vocabulary in the 2,500-word Jun 16 2026 Specs piece); Zuckerberg strategic/ego-framed ("fixated", "ego is intertwined", anonymous former-employee critics). Asymmetry score 0.72.'
+      register_708: 'Apr 2026 AI-strategy columns: Altman CEO-personalized and adversarial ("lashes it to the controversy he generates in his day job", Altman named in the headline, "strange mini-scandal"); Anthropic mission-dismissed ("obsessing over AGI is folly"). Combined non-Meta arm -0.475 vs Meta arm -0.38.'
+      contradiction: false
+      bound_statement: 'The #201 asymmetry and this constancy finding are attribution-bounded companions, not contradictions: the humanization differential is Snap-specific and CEO-access-driven (exclusive Spiegel interview for the Jun 16 2026 Specs launch), not a Meta-exclusion rule. In the Apr 2026 AI-strategy column register, McCracken applies the same CEO-personalized adversarial register to Altman and the same mission-dismissive register to Anthropic that he applies to Zuckerberg and Meta. The #201 thesis does not generalize to OpenAI-adjacent or Anthropic entities.'
+    asymmetry_scorer_result:
+      method: 'MANUAL ILLUSTRATIVE (Aug 28 2026 standing rule) - all arms hand-scored this run from verbatim excerpts (competitor arms) and carried #201 excerpts (Meta arm); illustrative only; no engine run'
+      target_tones_manual_illustrative:
+      - -0.50
+      - -0.45
+      reference_tones_manual_illustrative:
+      - -0.38
+      target_avg: -0.475
+      reference_avg: -0.38
+      delta_competitor_minus_meta: -0.10
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      artifact_grade: false
+      limitations: 'Competitor arms n=2 vs carried Meta corpus-average; competitor arms excerpt-bounded (full columns not read first-hand); 4-5 year time span across the Meta corpus vs Apr 2026 competitor arms; genre gap (Plugged In newsletter column vs feature); degenerate contract per #638/#643'
+    verdict: 'REGISTER CONSTANCY in the adversarial AI-strategy column register - TWENTY-SECOND falsification-family member (journalist-attribution class). Same-journalist, same-outlet byline-isolated pair: McCracken applies CEO-personalized adversarial framing to Altman (-0.50 illustrative; "lashes it to the controversy he generates in his day job", Altman named in the headline, "strange mini-scandal") and mission-dismissive framing to Anthropic (-0.45 illustrative; "obsessing over AGI is folly") at the same intensity as his Meta corpus (-0.38 illustrative; "fixated", "ego is intertwined", anonymous critics). The journalist-level "McCracken humanizes non-Meta CEOs" attribution from the Aug 20 CEO-attribution thesis fails for OpenAI-adjacent and Anthropic entities in the Apr 2026 column register - the humanization differential is Snap-specific and CEO-access-driven (exclusive Spiegel interview), not a Meta-exclusion rule. Corroboration: the Altman headline itself personalizes to "Sam Altman", a register break from any Meta-only-personalization reading. Correlation, not causation. No analysis.json update warranted.'
+    financial_context:
+      predictor: null_tie_control
+      prediction: no_differential_prediction
+      detail: 'Correlation, not causation. Mansueto Ventures / Fast Company carries NO known AI content licensing deals with OpenAI, Anthropic, or Meta (per #702: no Mansueto/Fast Company AI licensing deal with Apple or Meta on record) - zero-gradient control: the deal theory makes no differential prediction and the observed constancy cannot be attributed to a deal gradient. The falsification here is at the journalist-attribution level, consistent with the family''s attribution class.'
+    confounders:
+    - '[STRONG] Second-hand bounded: the Altman and Anthropic columns were verified via search-result excerpts (BuzzSumo journalist profile, Fast Company Plugged In index) crawled within 2 days, not first-hand full reads. Moderating passages may exist.'
+    - '[STRONG] TFH-is-not-OpenAI peg specificity: the Altman column targets Tools for Humanity / World (Altman''s side project, formerly Worldcoin), not OpenAI itself; the adversarial register may be peg-specific (biometric orb-scanning controversy, the Bruno Mars mini-scandal) rather than OpenAI-portable.'
+    - '[STRONG] News-peg asymmetry: the Altman arm is anchored on a genuinely adversarial mini-scandal (the denied Bruno Mars partnership, on-stage "miscommunication"); intensity may be peg-driven rather than register-driven.'
+    - '[MODERATE] Time and genre gap: Meta corpus spans 2021-2026 features; competitor arms are Apr 2026 Plugged In newsletter columns. Register drift across the gap cannot be ruled out.'
+    - '[MODERATE] CEO-access asymmetry (carried from #201): the Snap humanization arm rests on an exclusive Spiegel interview; neither the Altman nor Meta arms had equivalent CEO access.'
+    - '[WEAK] n=2 competitor arms vs carried corpus-average degenerate contract; delta -0.10 exact at 2dp, verdict-invariant under rounding.'
+    cross_references:
+    - 'Aug 20 2026 file-local McCracken Type B (tests/test_harry_mccracken_fastco_cross_entity_ceo_attribution_humanization_differential_aug20.py; mechanism #201, iteration #209; Meta-vs-Snap CEO-attribution humanization differential, asymmetry score 0.72; McCracken MORE balanced than Fast Company editorial, publication-level #121 asymmetry larger) - this mechanism bounds it'
+    - '#703/m656 (TWENTY-FIRST falsification-family member; same journalist-attribution class, different journalist)'
+    - '#698/m653 (TWENTIETH; attribution class)'
+    - '#693/m650 (NINETEENTH; attribution class)'
+    - '#688 (SIXTEENTH; Satariano register-constancy shape)'
+    - '#638/#643 (degenerate statistical contract convention)'
+    - '#503 (second-hand evidence-grade precedent)'
+    - '#121 (Fast Company publication-level asymmetry, referenced by #201)'
+    - '#565 (followup/anchor convention)'
+    - 'Aug 28 2026 standing rule (finding-layer is_significant False)'
+    novelty: 'FIRST YAML mechanism on Harry McCracken (no McCracken journalist entry pre-commit, grep verified; mechanism_659 added as the new entry''s first mechanism key). The Aug 20 file-local test (mechanism #201, iteration #209) documented the Meta-vs-Snap CEO-attribution differential. The Apr 2026 Altman World ID column and Anthropic Mythos column are new-to-corpus (exact titles have zero repo-wide hits, grep verified). This run''s novelty is the temporal falsification update: the same-journalist Meta-vs-OpenAI/Anthropic column-register pair, which was never a mechanism. Distinct from #703/m656 (Olson), #698/m653 (Wong), #693/m650 (Nguyen). Rotation: 707 A -> 708 B.'
+    artifact_readiness: 'No analysis.json update warranted: illustrative register-constancy pair only, manual tones, no empirical significance.'
+  name: Harry McCracken
+  publication: Fast Company
+  beats:
+  - technology
+  - artificial_intelligence
+  notes: 'Fast Company global technology editor (San Francisco); Plugged In newsletter columnist. Analytical value: the Aug 20 #201 finding documented a Meta-vs-Snap CEO-attribution humanization differential; his Apr 2026 Altman/Anthropic columns bound that thesis to the Snap-specific access-driven case.'
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
