@@ -51,7 +51,7 @@ BIZTOC_URL = "https://biztoc.com/x/a33fe91fadf42459"
 
 # Patched to the real main-commit SHA in the followup commit per the #565
 # convention; the guard classes are deselected pre-commit.
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_IN_FOLLOWUP"
+ANCHORED_SHA = "64200d4fe6eefd741ffa6d9b66ba53515f127cb8"
 
 
 def _careers():
@@ -293,15 +293,12 @@ class TestRotationCycleGuard718:
         assert matches == [os.path.join(TESTS_DIR, TEST_BASENAME)]
 
     def test_type_b_718_main_commit_unique_and_anchored(self):
-        # Deselect pre-commit; the followup patches ANCHORED_SHA to the real
-        # main-commit SHA per the #565 convention.
-        pytest.skip("anchor patched in followup per #565 convention")
         result = _run_git("log", "--format=%H %s")
         assert result.returncode == 0
         mains = [line for line in result.stdout.splitlines() if "Type B #718:" in line]
         assert len(mains) == 1
         main = mains[0].split()[0]
-        assert ANCHORED_SHA == main, "anchor patched in followup per #565 convention"
+        assert ANCHORED_SHA == main, "anchor test pinned to main commit %s" % ANCHORED_SHA
 
 
 class TestDocSync718:

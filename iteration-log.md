@@ -16,7 +16,7 @@
 
 **Novelty Verification:** Zero test_type_b_718 files on disk pre-commit (glob verified); no Type B commit with 718 in the title pre-commit (git log --grep verified); zero mechanism_665 keys in profiles/ and tests/ pre-commit; max numeric mechanism 664 pre-commit; no competitor_coverage block on the Valentino-DeVries entry pre-insert (YAML-parsed verified).
 
-**Commit hashes:** main TBD (verified via git rev-parse post-commit); followup patches ANCHORED_SHA and logs hashes per #565.
+**Commit hashes:** main 64200d4 (verified via git rev-parse); followup patches ANCHORED_SHA to 64200d4 and re-runs the anchor test green per #565.
 
 #717 Type A: Reuters x OpenAI slowdown-week register (+0.30) vs Reuters x Meta Muse accountability register (-0.45) - SECOND Reuters x OpenAI Type A (first m634 #667); FIRST slowdown-week Type A (post-Duo series opener); FIRST dedicated mechanism on Altman "not 2026" IPO safety-framing (mechanism 664); MANUAL ILLUSTRATIVE delta (OpenAI minus Meta) +0.75; TWENTY-THIRD falsification-family member (ledger 22->23) - Sep 13 2026 05:00 PDT
 
