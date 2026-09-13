@@ -16,7 +16,7 @@
 
 **Novelty Verification:** Zero test_type_a_717 files on disk pre-commit (glob verified); no Type A commit with 717 in the title pre-commit (git log --grep verified); zero mechanism_664 keys in profiles/ and tests/ pre-commit (pattern rescoped per #715 to mechanism_664/mechanism_id-adjacent, avoiding the test_type_c_664 iteration-number collision); max numeric mechanism 663 pre-commit; Altman Reuters URL zero-hit repo-wide pre-commit.
 
-**Commit hashes:** main TBD (verified via git rev-parse post-commit); followup patches ANCHORED_SHA and logs hashes per #565.
+**Commit hashes:** main 28d7f57 (verified via git rev-parse post-commit); followup patches ANCHORED_SHA and logs hashes per #565.
 
 #716 Type E: podcast sentiment 66th verification (GF 499 holds at stale directories; uk-podcasts.co.uk 758/latest 2026-09-12 UNCHANGED since #706, still UNVERIFIED; title-verification search returned no episode-500 title; 500-watch HOLDS ADVANCED; one NEW URL key logged verbatim = KCL 2020-era profile interview, stale re-index not episode listing; EHE 35-day hold; Attention Sphere 66th no-match; ZERO new-to-corpus editorial press; frontier TIED at Sep 9, seventeenth consecutive tie) + doc-sync ratchet correction (#715 followup wrote 37548/1042 by adding #715's 35 to #713's 37513 gate, skipping #714's 68 tests; corrected to authoritative 37671/1044) - Sep 13 2026 04:00 PDT
 

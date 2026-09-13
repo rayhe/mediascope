@@ -359,7 +359,7 @@ class TestIterationLog717:
 class TestRotationCycleGuard717:
     """Rotation window 713-717 closes E->A. Anchor patched in followup per #565."""
 
-    ANCHORED_SHA = "PLACEHOLDER_PATCHED_IN_FOLLOWUP"
+    ANCHORED_SHA = "28d7f576a65bd6c90adb6f8d3b1c9113a4cf75c1"
 
     def _window(self):
         text = _read(LOG_PATH)
@@ -377,7 +377,15 @@ class TestRotationCycleGuard717:
             assert order[t_older] == t_newer, (n_newer, t_newer, n_older, t_older)
 
     def test_anchor_is_main_commit_patched_in_followup(self):
-        pytest.skip("anchor patched in followup per #565 convention")
+        result = _run_git("log", "--format=%H %s")
+        assert result.returncode == 0
+        mains = [
+            line for line in result.stdout.splitlines() if "Type A #717:" in line
+        ]
+        main = mains[0].split()[0] if mains else ""
+        assert ANCHORED_SHA == main, (
+            "anchor patched in followup per #565 convention"
+        )
 
 
 class TestDocSync717:
