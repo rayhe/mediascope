@@ -10,6 +10,8 @@
 
 **New Type C files:** `tests/test_type_c_714_perplexity_premium_data_licensing_cashmere_sep13_2am.py` - 8 classes, 68 tests. Anchor (ANCHORED_SHA) patched post-commit per #565 followup; doc-sync count stats patched in followup.
 
+**Commit hashes:** main afe77c3779c46e65b3757010b2689660be9da8f6 (amended pre-push, never pushed as f84ace5); followup 2b928029aad4cb3e5137c9a6575cfb5a9a56411e (both verified via git rev-parse). PUSH BLOCKED: egress proxy hatch-egress-proxy:3128 unreachable (all 6 credential lines curl 000, TCP connect refused; direct HTTPS to github.com also 000) - same fleet-side blocked state as #710/#711/#712/#713; all #714 commits local-only.
+
 **Artifact readiness:** No analysis.json update warranted. Qualitative Type C only; structural financial mapping.
 
 **Rotation Transparency:** Previous entry #713 Type B at 01:00 PDT Sep 13 2026 (commit f2f1665 + followups f939cc1/2efcbbc, verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after B is C. Selected Type C.
