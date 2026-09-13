@@ -70,7 +70,7 @@ MECH_KEY = "newsmax_meta_ai_content_partnership_jul2026"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor test deselected pre-commit.
-ANCHORED_SHA = "PENDING_FOLLOWUP"
+ANCHORED_SHA = "d1455ed7239bf1b53d152382a1ed05892d41986d"
 
 
 def load_competitor():
