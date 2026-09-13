@@ -3862,6 +3862,94 @@ entities:
         type: C
         date: 2026-09-12 14:00 PDT
 
+    mechanism_660_openai_india_attribution_deal_economics_layer_sep2026:
+      mechanism_id: 660
+      iteration: 709
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-12'
+      time_pdt: '21:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'OpenAI India Attribution-Deal Economics Layer (Sep 7-8 2026): Medianama fee-template contrast, internal-use exploration clause, editorial-independence clause - economics layer on mechanism 609'
+      overview: 'Economics-layer mapping on top of mechanism 609''s India deal blitz (BCCL Sep 7, Indian Express Group Sep 8, 2026). New reporting this run (Medianama BCCL piece crawled 1h; Storyboard18; mediabrief; adtribe; theoutpost - all five URLs new to the corpus pre-commit, verified by zero-hit repo-wide greps) adds three findings: (1) the fee-template contrast - Medianama: "In similar global publisher deals, such as those with the Associated Press, Axel Springer, and News Corp, OpenAI has made licensing payments. However, BCCL and OpenAI have not stated whether this agreement follows the same model" - no fee, duration, or revenue share confirmed; (2) the internal-use exploration clause - "archive search, research support, data analysis, translation, back-end processes, and reader-facing products" - "No timeline, product names, or financial terms have been disclosed for this internal-use exploration"; (3) the editorial-independence clause - "BCCL retaining complete editorial control over its journalism ... OpenAI having no role in determining coverage or editorial positions" (theoutpost). Trade-press framing (adtribe): "Naming the publication and linking to the article is a narrow fix, but it is the specific fix publishers have been asking for." New-deal sweep since Sep 8 2026: ZERO new AI publisher licensing deals announced (bounded absence via the since-filter query set, per the iteration-492 rule - the Hearst, Atlantic/Vox, News Corp, Axel Springer, Dotdash Meredith results that surfaced are 2023-2024 deals re-indexed this week). Analytical read: the India template shifts from the 2023-2025 paid training-licensing template (Axel Springer "tens of millions", News Corp $250M/5yr reported per mechanism 654, AP and Hearst terms undisclosed) to a zero-fee-disclosed attribution-discovery template: OpenAI pays nothing disclosed for attributed surfacing while gaining (a) an attribution-shielded content surface, (b) sue-then-sign defection from the ANI litigation bloc (Indian Express sought to join the DNPA-side suit in Feb 2025, signed Sep 2026), and (c) BATNA validation at zero disclosed dollars ahead of the Sep 14 2026 Division Bench appeal (mechanism 657).'
+      counterparties:
+      - 'BCCL (Bennett, Coleman and Co. Ltd., Times Group) - Sep 7 2026; The Times of India + The Economic Times + English and Indian-language properties; live reporting plus archives'
+      - 'Indian Express Group - Sep 8 2026; The Indian Express + The Financial Express; live and archived, 7 languages (carried from mechanism 609)'
+      fee_template_contrast:
+        verbatim_medianama: 'Neither company has disclosed the financial details of the agreement. There is no confirmation of a licensing fee, revenue-sharing structure, or contract duration. In similar global publisher deals, such as those with the Associated Press, Axel Springer, and News Corp, OpenAI has made licensing payments. However, BCCL and OpenAI have not stated whether this agreement follows the same model.'
+        contrast_class: 'paid training-licensing template (2023-2025: AP undisclosed, Axel Springer "tens of millions" per Bloomberg News via Tom Rubin, News Corp $250M/5yr reported per mechanism 654, Hearst/Atlantic/Vox/Dotdash Meredith terms undisclosed) vs zero-fee-disclosed attribution-discovery template (Sep 2026 India: BCCL, Indian Express Group)'
+        caveat: 'no confirmation of a fee is not confirmation of no fee; Medianama explicitly frames the same-model question as unanswered, not resolved'
+      internal_use_exploration:
+        verbatim_medianama: 'The two companies will explore how OpenAI''s technology can support BCCL''s operations, including archive search, research support, data analysis, translation, back-end processes, and reader-facing products. No timeline, product names, or financial terms have been disclosed for this internal-use exploration.'
+        significance: 'unpriced technology-transfer option embedded in the deal: OpenAI products inside BCCL newsroom operations (archive, translation, analysis) on undefined terms - the same opacity class as the fee, but a distinct incentive leg (newsroom dependency) from the attribution surface'
+        novelty: 'FIRST documentation of an internal-use exploration clause on any OpenAI India deal in the corpus'
+      editorial_independence_clause:
+        verbatim_theoutpost: 'The partnership explicitly protects editorial independence, with BCCL retaining complete editorial control over its journalism. Editors and journalists will continue to make all decisions related to reporting, verification, editing and publication, with OpenAI having no role in determining coverage or editorial positions. Any newsroom use of AI technology will remain subject to the editorial standards, policies and human oversight of the relevant BCCL publication.'
+        significance: 'standard editorial-control carve-out; does not address whether the attribution surface or internal-use leg creates leverage independent of coverage decisions'
+      executive_quotes:
+      - speaker: 'Mohit Jain, COO and Board Member, BCCL (via Storyboard18, mediabrief)'
+        text: 'For almost two centuries, BCCL has believed that journalism is a public trust - rooted in facts, guided by independent judgment, and sustained by the trust of our readers. As technology has evolved, we have continually embraced new ways to make our content accessible to readers wherever and however they choose to engage with it. Our partnership with OpenAI is another step in that journey, enabling audiences to discover journalism from across our publications while preserving the source, context, and identity of the original reporting.'
+      - speaker: 'Varun Shetty, VP Media Partnerships, OpenAI (via Storyboard18, mediabrief)'
+        text: 'BCCL is an important part of how millions of people understand India and the world. This partnership will help ChatGPT users discover reporting from BCCL''s English and Indian-language publications, with clear attribution and direct links to the original articles. We want to build practical, constructive relationships with publishers in India. That means listening to their priorities, respecting editorial independence and developing products that help readers connect with news.'
+      trade_press_framing:
+      - surface: 'adtribe.world'
+        verbatim: 'Naming the publication and linking to the article is a narrow fix, but it is the specific fix publishers have been asking for.'
+        significance: 'trade press separates the two publisher demands: the India deals satisfy the discovery/attribution demand, not the training-compensation demand - the attribution surface does not answer the licensing-fee question the fee-template contrast raises'
+      new_deal_sweep_sep8_sep12:
+        query: '"OpenAI publisher content licensing deal announced September 2026" with since=2026-09-08'
+        result: 'ZERO new AI publisher licensing deals announced Sep 8-12 2026. Results that surfaced are re-indexes of 2023-2024 deals (Hearst Oct 2024 via thewrap; Atlantic/Vox May 2024 and Dotdash Meredith May 2024 via Bloomberg Law re-crawls; News Corp May 2024 via Bloomberg Law re-crawl; Axel Springer Dec 2023 via Reuters re-crawl) plus the in-corpus India pieces (FourWeekMBA synthesis, shared with mechanism 609).'
+        rule: 'bounded absence per the iteration-492 rule - the since filter covers announcements on/after 2026-09-08; no zero-coverage claim beyond the filter'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'all source facts this run are excerpt-bounded via verbatim search-result excerpts per #503; the browser.open first-hand read of the Medianama BCCL piece failed upstream (terminal per turn, not retried); the piece itself was not read first-hand, so moderating context beyond the verbatim excerpts may exist'
+      - rank: 2
+        strength: strong
+        confounder: 'fee terms fully undisclosed; "no confirmation of a fee" is not confirmation of no fee - Medianama explicitly frames the same-model question as unanswered, so any zero-fee-dependency reading would overclaim (carries 609''s confounder 1)'
+      - rank: 3
+        strength: moderate
+        confounder: 'attribution-discovery partnerships are structurally different from training-data licences; the fee-template contrast compares different product surfaces, and the training-compensation demand stays unanswered regardless of the attribution fix (adtribe''s narrow-fix framing)'
+      - rank: 4
+        strength: moderate
+        confounder: 'theoutpost.ai and adtribe.world are trade/aggregator surfaces; evidence grade below Medianama and Storyboard18 (CNBC-TV18 trade property); the verbatim quotes via Storyboard18/mediabrief carry outlet-level transcription risk'
+      - rank: 5
+        strength: weak
+        confounder: 'Indian Express Group leg detail is carried from mechanism 609; no Indian Express internal-use equivalent surfaced this run, so the internal-use leg is BCCL-only on the record'
+      statistical_discipline:
+        scope: qualitative structural mapping only
+        correlation_not_causation: true
+        p_value: NOT_CALCULATED
+        is_significant: false
+        tone_scores: NOT_SCORED
+      falsification_family: 'NOT a member: qualitative Type C economics layer on mechanism 609; no tone arms, no engine, no deal-gradient prediction falsified or confirmed; ledger stays at 22 after #708''s TWENTY-SECOND (per #609/#614 qualitative boundary)'
+      cross_references:
+      - 'mechanism 609 (OpenAI India attribution-deal blitz, iteration 624: the parent deal-blitz mechanism this leg extends; sue-then-sign arc; $0 disclosed fee noted but without Medianama''s fee-template contrast or the internal-use clause)'
+      - 'mechanism 657 (ANI v. OpenAI India litigation leg, #704: the contest leg; Sep 14 2026 Division Bench appeal outcome reprices the zero-fee template if the fair-dealing holding falls)'
+      - 'mechanism 654 (News Corp OpenAI $250M/5yr reported: the paid-template anchor on the other side of the fee-template contrast)'
+      - 'mechanism 412 (Google News AI pilot: TOI already a Google pilot publisher; Sep 7 OpenAI deal makes it dual-payer, carried from 609)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 (second-hand evidence-grade precedent for the excerpt-bounded reads this run)'
+      - '#565 (followup anchor-patch convention)'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      - 'iteration-492 rule (bounded absence; no zero-coverage claims)'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C economics-layer mapping on a parent deal-blitz mechanism; no new tracked-publication finding; NOT a falsification-family member - ledger stays at 22.'
+      correlational_note: 'This mapping describes OpenAI''s Sep 2026 India attribution deals as a zero-fee-disclosed template against the paid training-licensing template of 2023-2025, with an unpriced internal-use technology-transfer option and a standard editorial-independence carve-out, on second-hand excerpt-bounded reporting. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+      no_coverage_tone_claim: true
+      sources:
+      - https://www.medianama.com/2026/09/223-bccl-openai-content-partnership-toi/
+      - https://www.storyboard18.com/brand-marketing/bccl-openai-partner-to-expand-journalism-discovery-via-chatgpt-ws-l-109959.htm
+      - https://mediabrief.com/bccl-openai-partner-on-journalism-discovery/
+      - https://adtribe.world/bccl-and-openai-sign-partnership-on-discovery-and-attribution-in-chatgpt
+      - https://theoutpost.ai/news-story/bccl-partners-with-open-ai-to-enhance-journalism-discovery-through-chat-gpt-attribution-30564/
+      novelty: 'FIRST dedicated economics-layer mechanism on the India attribution deals. Zero mechanism_660 keys repo-wide pre-commit; max numeric mechanism_id pre-commit 659 (#708/m659 on McCracken, journalists.yaml). All five source URLs new to the corpus pre-commit (zero-hit repo-wide greps across profiles/, tests/, docs/); the FourWeekMBA India synthesis piece is NOT in this block''s sources (belongs to mechanism 609). Distinct from mechanism 609 (deal-blitz unit of analysis; this is the fee-template contrast, internal-use clause, and editorial-independence clause as economics legs).'
+      research_method: '2 browser.search query sets this run (OpenAI publisher content licensing deal announced September 2026, since=2026-09-08; BCCL Times of India OpenAI ChatGPT content partnership terms payment fee) + 1 browser.open first-hand read attempt (Medianama BCCL piece; failed upstream with an egress tool failure, terminal per turn per developer instruction - piece read excerpt-bounded from verbatim search-result excerpts per #503). URLs copied verbatim from Full-URL listings; no canonical URLs constructed; ASCII-only. Pre-commit novelty greps: zero test_type_c_709 files on disk; no Type C #709 in git log; zero mechanism_660 keys in profiles/; max numeric mechanism 659; all five new URLs zero-hit repo-wide.'
+      verification:
+        yaml_parse_clean: true
+
   anthropic:
     display_name: Anthropic
     aliases:
