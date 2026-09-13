@@ -505,7 +505,7 @@ class TestFullSuiteTombstone720:
 
 # -- Rotation guard / novelty anchor (#565 convention) ---------------------------
 
-ANCHORED_SHA = "NOT_YET_COMMITTED_725"
+ANCHORED_SHA = "3712f0f619d522adf1bf7ad81e4b46355008f55f"
 
 
 class TestRotationCycleGuard725:
@@ -527,8 +527,16 @@ class TestRotationCycleGuard725:
         assert any(l.startswith("d1455ed") and "Type C #724:" in l for l in lines)
 
     def test_no_type_d_725_main_commit_pre_anchor(self):
-        out = _git("log", "--oneline", "--grep", "Type D #725")
-        assert out.stdout.strip() == "", "pre-commit the #725 main commit must not exist"
+        # Dual-mode rotation guard (pre/post-commit safe). Pre-commit
+        # (ANCHORED_SHA unpatched) no Type D #725 main commit may exist;
+        # post-commit the anchor must be the one and only such commit.
+        out = _git("log", "--format=%H %s", "--grep", "Type D #725").stdout.strip()
+        if ANCHORED_SHA == "NOT_YET_COMMITTED_725":
+            assert out == "", "pre-commit the #725 main commit must not exist"
+        else:
+            lines = [ln for ln in out.splitlines() if ln.strip()]
+            assert len(lines) == 1, f"expected exactly one Type D #725 main commit, got {len(lines)}"
+            assert lines[0].startswith(ANCHORED_SHA), "anchor must be the #725 main commit"
 
     def test_anchor_is_main_commit_725(self):
         # Runs green only post-main-commit per the #565 followup convention.
