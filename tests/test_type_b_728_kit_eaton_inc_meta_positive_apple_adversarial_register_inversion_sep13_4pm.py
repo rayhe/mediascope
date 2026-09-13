@@ -121,7 +121,6 @@ class TestNovelty728:
         assert len(matches) == 1, "expected exactly this file, got %r" % (matches,)
         assert matches[0].endswith(TEST_BASENAME)
 
-    @pytest.mark.skip(reason="main commit not yet made; unskip after main commit")
     def test_type_b_728_main_commit_unique(self):
         # Green post-main-commit; novelty verified pre-commit by shell greps
         # (zero test_type_b_728 files, no "Type B #728" in git log, zero
@@ -312,7 +311,7 @@ class TestRotationCycleGuard728:
     first occurrence of each distinct iteration number, newest first.
     """
 
-    ANCHORED_SHA = "PATCHED_IN_FOLLOWUP"
+    ANCHORED_SHA = "f02c542fbf2e7765c345764137fd5edc07b8bf9d"
 
     @staticmethod
     def _mains():
@@ -331,7 +330,6 @@ class TestRotationCycleGuard728:
                 mains.append(s)
         return mains
 
-    @pytest.mark.skip(reason="main commit not yet made; unskip after main commit")
     def test_window_724_728_closes_a_to_b(self):
         subjects = self._mains()
         observed = []
@@ -347,7 +345,6 @@ class TestRotationCycleGuard728:
             ("C", "724"),
         ], "rotation window 724-728 wrong: %r" % (observed,)
 
-    @pytest.mark.skip(reason="main commit not yet made; unskip after main commit")
     def test_rotation_adjacency_cycle_valid(self):
         subjects = self._mains()
         observed = []
@@ -362,7 +359,6 @@ class TestRotationCycleGuard728:
                 "rotation broken: %s (older) -> %s (newer) is not a valid cycle edge" % (older, newer)
             )
 
-    @pytest.mark.skip(reason="anchor patched in followup per #565 convention")
     def test_anchor_is_main_commit_patched_in_followup(self):
         """Rotation window 724-728 closes A->B. Anchor patched in followup per #565."""
         result = _run_git("log", "--format=%H %s")
