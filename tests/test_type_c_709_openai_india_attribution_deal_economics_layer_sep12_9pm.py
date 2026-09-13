@@ -52,7 +52,7 @@ MECH_KEY = "mechanism_660_openai_india_attribution_deal_economics_layer_sep2026"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor tests are deselected pre-commit.
-ANCHORED_SHA = "PATCH_IN_FOLLOWUP"
+ANCHORED_SHA = "4fb22bca5308ba7236c3aabf050c9525c507d8f2"
 
 
 def load_competitor():
