@@ -33619,5 +33619,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Rotation guard: 734-738 window closes C->B (C #734 -> D #735 -> E #736 -> A #737 -> B #738; anchor patched post-commit per #565)
 - #737's zero-677 profiles sweep fails by designed supersession (per #710/#720 convention); #737's max-676 assertion likewise superseded
 - 42-test file (39 green pre-commit, anchor 1 deselected per #565 convention, rotation-window 2 fail pre-main-commit by design; anchor patched post-commit, full suite green)
-- Commit hashes: main PENDING (to be filled post-commit via git rev-parse); anchor followup PENDING
+- Commit hashes: main 42d3bb6f10ccdb5f9dbc4d8468fc49d1eb39f9c2 (verified via git rev-parse); anchor followup PENDING (to be filled post-commit)
 - Push status: PENDING (to be verified this run via atomic proxy-credential workflow; #737 left 89+3 local-only commits as of 02:30 PDT Sep 14)
