@@ -24910,6 +24910,114 @@ cross_publication_findings:
       if a WIRED author shows Eaton''s inversion, the outlet-specificity claim needs
       revision.'
     verdict: directionally_supported_not_proven
+  jessica_conditt_engadget_apple_adversarial_beat_routing_refinement:
+    competitor: Apple
+    confounders:
+    - 'STRONG: Search-excerpt-bounded evidence only this run (browser.open declared
+      terminal per developer constraint; excerpt fidelity relies on the search index,
+      not page reads).'
+    - 'STRONG: Meta-arm bounded absence is not a proven zero (iteration-492): a
+      bounded search is not an exhaustive corpus of Conditt''s output; absence claims
+      stay bounded, never absolute.'
+    - 'STRONG: Genre asymmetry between arms (the Apple arm is event-day breaking
+      coverage of a privacy paper and launch; the Meta comparator is Bell''s
+      investigative work, not a same-genre Conditt Meta piece that does not
+      exist).'
+    - 'MODERATE: Engadget published Daniel Cooper''s separate Apple Watch Series 12
+      piece (2254031) the same week; the adversarial register is reporter-specific
+      (Conditt), not outlet-uniform, which complicates any Engadget-level claim.'
+    - 'MODERATE: Apple''s Secure Exclave / opt-in / no-audio-storage safeguards are
+      real technical facts a privacy-conscious reporter could accept at face value;
+      Conditt''s adversarial framing goes beyond the safeguards, but the safeguards
+      bound how far skepticism can reasonably go.'
+    - 'MODERATE: n=1 on the Conditt Apple arm; single-piece variance cannot be ruled
+      out (Conditt''s register varies by story, as all beat reporters'' do).'
+    - 'WEAK: Byline confirmed via Engadget homepage listing snippets, not a
+      page-rendered byline (browser.open unavailable); homepage listing attribution
+      is a standard but second-hand byline source.'
+    - 'WEAK: The podcast Meta-adjacent presence is a Sep 2024 episode, ~2 years
+      before the Apple arm; temporal drift between podcast-era and 2026 coverage
+      cannot be excluded.'
+    - 'WEAK: The ''spyware feature'' dek variant appeared in one homepage-listing
+      snippet while the article page reads ''transcription feature''; dek wording may
+      have been copy-edited post-publication, so dek-level adversariality is
+      discounted relative to body-text register.'
+    connects_to:
+    - 113
+    - 150
+    - 151
+    - 668
+    - 670
+    - 671
+    counterevidence:
+    - 'COUNTEREVIDENCE: The adversarial register may be peg-driven, not
+      reporter-stable: Audio Intelligence genuinely is an always-listening feature
+      announced the same week, a defensible news peg for privacy-critical
+      coverage.'
+    - 'COUNTEREVIDENCE: Engadget''s Daniel Cooper covered the same Apple Watch in a
+      less adversarial register (''Apple Watch Series 12 Will Listen To Your
+      Conversations''), so Conditt''s register may be personal style, not evidence
+      about Engadget or about cross-entity standards.'
+    - 'COUNTEREVIDENCE: Conditt may have covered Meta wearables in print or formats
+      the bounded searches missed (newsletters, video); the bounded absence is
+      bounded, not exhaustive.'
+    discovery_date: '2026-09-13'
+    finding: 'Jessica Conditt (Engadget) EXTENDS and REFINES mechanism #150''s
+      beat-assignment routing claim at journalist level. Apple arm: ''Apple Watch''s
+      New Audio Intelligence Enables A Real-Life Conversation Rewind'' (Engadget,
+      event-day Wed Sep 9 2026; ''By Jessica Conditt'' byline confirmed via
+      Engadget''s own homepage listings in bounded searches) applies an adversarial
+      always-listening register to Apple: ''Apple Watch, as it turns out, is a
+      fabulous piece of spy equipment. This is by Apple''s own admission and it''s
+      at the heart of the company''s new Audio Intelligence feature for Apple Watch
+      Series 12''; homepage dek ''Apple says its taking privacy concerns seriously
+      with its new spyware feature for Watch Series 12'' (one listing variant; the
+      article page reads ''transcription feature''). MANUAL ILLUSTRATIVE register
+      -0.55. Meta arm: bounded absence - zero written Meta wearables coverage by
+      Conditt surfaced in bounded searches (iteration-492, not a proven zero); her
+      only Meta-adjacent corpus presence is the Sep 26 2024 Engadget Podcast (PS5
+      Pro / Meta Connect 2024 episode) where she handled the PlayStation segment
+      while Karissa Bell handled Meta Connect 2024, Orion, and Ray-Ban Meta.
+      REFINEMENT of #150: #150 claimed Engadget''s privacy-vocabulary asymmetry
+      ''operates through editorial beat assignment (Karissa Bell''s Meta-only
+      privacy investigations), not individual journalist bias.'' The Conditt arm
+      complicates that clause: the adversarial always-listening register IS
+      reporter-portable to Apple inside the same newsroom (Conditt adversarial on
+      Apple, as adversarial as Bell on Meta), while Low''s zero-alarm register is
+      reporter-portable across Meta, Snap, and Apple (per #723 / mechanism 668).
+      Registers are reporter-stable and entity-portable; the Meta-vs-Apple outlet
+      asymmetry is a composition effect of WHO covers WHICH entity (Bell assigned
+      Meta investigations, Conditt assigned Apple news, Low assigned hands-on), not
+      entity animus per se. MANUAL ILLUSTRATIVE: p_value NOT_CALCULATED, cohens_d
+      NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False, engine NOT run,
+      NOT artifact-grade, no engine divergence pin. Verdict:
+      directionally_supported_not_proven. NOT a falsification-family member (ledger
+      holds at 24). Correlation is not causation.'
+    finding_type: journalist_cross_entity
+    iteration: 733
+    journalist: Jessica Conditt
+    mechanism_id: 674
+    publication: Engadget (Yahoo/Apollo)
+    rotation_type: B
+    source_urls:
+    - https://Www.engadget.com/2254194/apple-watch-new-audio-intelligence-enables-a-real-life-conversation-rewind/
+    - https://www.engadget.com/gaming/playstation/engadget-podcast-ps5-pro-hands-on-and-metas-wild-orion-ar-glasses-133029580.html?src=rss&rand=43
+    - https://Www.engadget.com/2254031/apple-watch-series-12-will-listen-to-your-conversations/
+    - https://www.theregister.com/security/2026/09/10/watch-out-apple-timepiece-can-grab-snippets-of-conversation-without-both-speakers-consent/5295666
+    test_count: 42
+    test_file: tests/test_type_b_733_jessica_conditt_engadget_apple_adversarial_beat_routing_sep13_9pm.py
+    testable_predictions:
+    - 'If Conditt publishes a Meta wearables piece applying the same adversarial
+      always-listening register, the composition-effect interpretation strengthens;
+      if she applies a softer register to Meta, the reporter-stability claim needs
+      revision.'
+    - 'If other Engadget news-desk reporters (Cooper, Holt) replicate Conditt''s
+      adversarial Apple register, the pattern generalizes beyond one reporter; if
+      they stay neutral, Conditt''s register is idiosyncratic.'
+    - 'If Karissa Bell applies her adversarial register to a future Apple
+      always-listening product, the reporter-stable finding strengthens further;
+      her current Meta-only scope keeps the assignment-composition reading live.'
+    verdict: directionally_supported_not_proven
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
