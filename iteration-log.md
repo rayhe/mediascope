@@ -10,7 +10,7 @@
 - #733's zero-underscore-675 sweep stays green by designed keying (block keys as seattle_times_newsday_grant_then_sue_openai_microsoft_sep2026 with mechanism_id: 675 colon-form per the #723 lesson); #733's max-674 sweep fails by designed supersession (per #710/#720 convention); ledger holds at 24.
 - 56-test file (45 green pre-commit, anchor 7 + doc-sync 4 deselected, patched green in followup).
 - Commit hashes (followup): main commit b24a663279efe0ee9e6fb275d18f0144e9adc81d ("Type C #734: Seattle Times + Newsday v. OpenAI + Microsoft grant-then-sue leg (mechanism 675) - Sep 13 2026 22:00 PDT"); anchor followup 80d6aa30cafeddf84b8954b967c3db10b84926a0 (ANCHORED_SHA patch per #565, anchor + doc-sync + full rotation guard green 56/56); log-hash followup updates this line.
-- Push status (this run, 22:00 PDT Sep 13): PENDING_PUSH_STATUS.
+- Push status (this run, 22:30 PDT Sep 13): BLOCKED. Egress proxy hatch-egress-proxy:3128 TCP connection-refused (all 6 credential candidates returned curl 000 in the atomic extract-test-use block; outage continuous since 15:00 PDT Sep 13 per #727 through #733 reports). All local commits (71 carried + 2 from this run: main b24a663279efe0ee9e6fb275d18f0144e9adc81d, anchor followup a7c739174be918c56183b3daba3cce328e654594) remain local-only. Retry next run.
 
 #733 Type B: Jessica Conditt (Engadget) adversarial always-listening register on Apple Audio Intelligence - journalist-level refinement of mechanism #150's beat-assignment routing claim (mechanism 674)
 - Rotation: Type B (schedule: A/B/C/D/E cycle). Window 729-733 closes C (#729) -> D (#730) -> E (#731) -> A (#732) -> B (#733); novelty anchor patched in the followup per the #565 convention (two-commit: main, then anchor SHA patch).
