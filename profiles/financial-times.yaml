@@ -2037,6 +2037,126 @@ competitor_relationships:
       cross_references: [441, 625, 634]
       novelty: 'First dedicated Type A mechanism on FT''s Sep 9/10 2026 Anthropic AISI-refusal accountability scoop vs same-window FT Meta/OpenAI registers. Distinct from mechanism 441 (fundraising lane), mechanism 625 (OpenAI x Meta launch-week pair), and mechanisms 532/193/524 (surveillance register comparisons). Zero mechanism_643 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 642. All five attestation URLs new to corpus (repo-wide greps this run). FIFTEENTH falsification-family member (ledger at 14 via mechanism 634, verified #675).'
       test_file: tests/test_type_a_682_ft_anthropic_aisi_refusal_accountability_scoop_vs_meta_sep11_4pm.py
+    mechanism_676_ft_anthropic_slowdown_week_profitability_scoop_register_sep14:
+      mechanism_id: 676
+      date: '2026-09-13'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 737
+      iteration_type: A
+      iteration_time: 2026-09-14 02:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Financial Times
+      publication_pair: FT x Anthropic
+      entity_pair: "Anthropic vs Meta"
+      competitor: anthropic
+      comparison_entities:
+      - meta
+      - openai
+      author: Kit (with Ray)
+      finding: 'FT ran a constructive company-briefed business scoop on Anthropic on Sun Sep 13, 2026: Anthropic told shareholders adjusted operating income will be positive for a second straight quarter, gross margins above 80% before revenue shared with distribution partners (Amazon) and before model-training costs; framed for the planned IPO (Nasdaq venue per BI). Reuters could not independently verify; Anthropic did not respond outside business hours. Register: constructive business scoop, MANUAL ILLUSTRATIVE +0.20. Timing: the scoop published in the SAME 48-hour window as the slowdown-week cluster - Amodei''s 3800-word We Must Pace the Frontier essay (Sat Sep 12, coordinated-slowdown call, embedded evaluators, antitrust waiver ask), the Coxon resignation (Tue Sep 8, 79M+ X views, Hubinger agreement on >10% extinction risk), Altman''s no-2026-IPO safety framing (Fortune, Sat Sep 12), WSJ''s adversarial Anthropic Moral Conflict piece (Sun Sep 13), WSJ''s Biggest AI Rivals Agree They Need to Slow It Down (Mon Sep 14), Reuters Breakingviews on the slowdown (Mon Sep 14), and CNN''s Anderson Cooper exclusive (Sat Sep 12). FT''s weekend selection was the constructive investor-briefing scoop, not the Coxon or moral-conflict accountability lane (bounded search-result absence across 3 query sets, not a proven zero). Combined with mechanism 643 (adversarial AISI-refusal watchdog scoop, Thu Sep 9/10, -0.45), FT''s Anthropic register MIXES within one week: watchdog on regulatory refusal, constructive on company-briefed business numbers. Vs Meta comparator (carried): Meta''s AI work is never covered through the business-constructive lens - the concentration paradox (Murgia 2025-26: Anthropic 9+, OpenAI 4, Google 4, Meta 0 AI-lens articles); FT Meta Muse coverage is neutral product-distribution (+0.05, carried from mechanism 625); FT Meta glasses coverage runs the surveillance-threat register (-0.58 to -0.62, carried). Incentive attribution is INCONCLUSIVE: no direct FT-Anthropic licensing deal exists (OpenAI holds the $5-10M per yr FT deal; Anthropic is $0 direct), so a company-briefed investor scoop needs no financial explanation - it is a beat-access and news-value story (pre-IPO company math, 80%+ margins, $2T IPO framing). The register mix extends mechanism 643''s scope-bounded counterargument: company-briefed financial narratives get constructive treatment, watchdog safety events get adversarial treatment, and Meta''s AI work receives neither register from the FT AI desk. Correlation only, not proof of editorial influence. NOT artifact-grade.'
+      articles:
+      - title: FT Anthropic profitability scoop (FT original, Sun Sep 13 2026)
+        ft_original_paywalled: true
+        attestation_url: https://www.reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13/
+        attestation_excerpt: 'Anthropic has told shareholders that its adjusted operating income will be positive for a second straight quarter, the Financial Times reported on Sunday, citing multiple people with knowledge of the matter. Gross margins above 80% before revenue shared with distribution partners including Amazon and before model-training costs. Reuters could not independently verify.'
+        date: '2026-09-13'
+        register: constructive company-briefed business scoop, IPO-framing
+        manual_illustrative_tone: 0.20
+        evidence_grade: FT original paywalled; register reconstructed from Reuters and mirror attestation snippets this run (Reuters, livemint, moneymorning, tradingview)
+        url_novelty: first corpus appearance this run (zero repo-wide hits before)
+      - title: FT Anthropic AISI-refusal accountability scoop (carried from mechanism 643, iteration 682)
+        date: '2026-09-09'
+        register: watchdog accountability scoop
+        manual_illustrative_tone: -0.45
+        carried_from: 'mechanism 643 (#682 Type A)'
+      - title: FT Meta Muse neutral product-distribution (carried from mechanism 625)
+        date: '2026-09-08'
+        register: neutral product-distribution
+        manual_illustrative_tone: 0.05
+        carried_from: 'mechanism 625 (in-corpus)'
+      - title: FT x Anthropic Coxon-resignation / moral-conflict lane - no ft.com item surfaced
+        date: '2026-09-13'
+        url: NONE_SURFACED_BOUNDED_ABSENCE
+        register: coverage-selection gap (bounded per iteration-492, not a proven zero)
+        manual_illustrative_tone: NOT_SCORED
+      peer_context:
+      - outlet: Wall Street Journal
+        title: Anthropic's Moral Conflict Is Playing Out in Real Time
+        date: '2026-09-13'
+        url: https://www.wsj.com/tech/ai/anthropics-moral-conflict-is-playing-out-in-real-time-c503e0c1
+        register: adversarial moral-conflict, workforce safety beliefs
+        note: same-publication-day adversarial Anthropic piece; no FT equivalent surfaced
+      - outlet: Wall Street Journal
+        title: Biggest AI Rivals Agree They Need to Slow It Down
+        date: '2026-09-14'
+        url: https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-slow-the-pace-a4267b56
+        register: consensus slowdown news, Musk Altman Amodei unity
+      - outlet: CNN
+        title: Anthropic CEO calls for pacing the frontier of AI race amid safety concerns
+        date: '2026-09-12'
+        url: https://www.cnn.com/2026/09/12/tech/anthropic-ceo-essay-ai?cid=external-feeds_iluminar_meta
+        register: essay coverage plus Anderson Cooper exclusive interview
+      - outlet: Reuters Breakingviews
+        title: AI frontier slowdown could give second tier leg up
+        date: '2026-09-14'
+        url: https://www.reuters.com/commentary/breakingviews/ai-frontier-slowdown-could-give-second-tier-leg-up-2026-09-14/
+        register: markets commentary on the slowdown calls
+      - outlet: Reuters
+        title: OpenAI IPO will not happen in 2026 amid AI safety fears, Altman says (carried from mechanism 717)
+        date: '2026-09-12'
+        url: https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/
+        register: wire, Altman no-2026 IPO safety framing, Fortune interview
+        carried_from: 'mechanism 717 (#717 Type A)'
+      - outlet: The Times
+        title: AI giants gambling with our lives, warns former researcher (carried from mechanism 643)
+        date: '2026-09-09'
+        url: https://www.thetimes.com/uk/technology-uk/article/tech-giants-gambling-with-lives-superintelligence-gh275qr8d
+        register: Coxon resignation coverage, 79M X views
+        carried_from: 'mechanism 643 (#682 Type A)'
+      - outlet: TradingView / Stocktwits
+        title: Anthropic IPO targets second straight quarter of adjusted profit as CEO slowdown call sparks debate
+        date: '2026-09-13'
+        url: https://www.tradingview.com/news/stocktwits:31ab54064094b:0-anthropic-ipo-claude-maker-reportedly-targets-second-straight-quarter-of-adjusted-profit-as-ceo-s-ai-slowdown-call-sparks-debate/
+        register: skeptical market reactions - Chanos Cost-Adjusted EBITDA, Asay made-up accounting fiction
+        note: counterevidence to the FT constructive register - the same scoop drew market mockery
+      asymmetry_scorer_result:
+        method: manual_illustrative
+        note: 'Engine NOT run per the Aug 28 2026 standing rule; n=1 scored item per arm (degenerate statistical contract per the #638/#643 convention). Reported as register contrast, not a computed asymmetry score.'
+        anthropic_this_run_tones: [0.20]
+        anthropic_carried_m643_tones: [-0.45]
+        meta_carried_tones: [0.05]
+        within_publication_register_swing_m643_to_m674: 0.65
+        asymmetry_score: NOT_COMPUTED_DEGENERATE
+        score_direction: anthropic_minus_meta
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_drift_check: 'engine NOT run this run; no engine divergence pin'
+      confounders:
+      - 'news-value gap: a pre-IPO company briefing 80%+ margins and a second green quarter with $2T IPO framing is inherently business-constructive; needs no incentive explanation'
+      - 'company-briefed register: the scoop is sourced to Anthropic''s own shareholders (multiple people with knowledge), not FT investigation; Reuters could not independently verify; the constructive register may reflect source framing more than editorial framing'
+      - 'skepticism counterevidence: Jim Chanos (Cost-Adjusted EBITDA) and Oracle''s Matt Asay (made-up accounting fiction) mocked the adjusted-profitability claim the same day; FT''s uncritical carry is the operative register choice'
+      - 'bounded absence: no ft.com item surfaced on the Coxon resignation or the moral-conflict lane across 3 query sets (iteration-492 rule); FT may have covered it in unindexed pages'
+      - 'beat assignment: FT AI desk (Murgia/Hammond) vs platform desk (Murphy); the concentration paradox (Meta AI work exclusively through the surveillance lens) is carried from mechanism 441, not re-verified this run'
+      - 'lane asymmetry: different news pegs (investor briefing vs regulatory refusal) invite different registers; the within-week swing is a selection-plus-register observation, not a same-peg pair'
+      - 'FT original paywalled: register reconstructed from attestation snippets (Reuters, livemint, moneymorning, tradingview); full-text register could differ'
+      - 'single-reporter beat attribution for the FT scoop is unverified; byline unknown'
+      strongest_counterargument: 'Mechanism 643''s scope-bounded counterargument extends directly: mechanism 441''s ''softer via Google channel'' prediction was scoped to the fundraising and aspirational coverage lane, and this run''s finding lands exactly in that lane - a company-briefed financial narrative with constructive treatment. The prediction survives intact. The sharper unresolved asymmetry is the Meta arm: FT''s AI desk has never covered Meta''s AI work through the business-constructive lens (concentration paradox carried from mechanism 441: Murgia 2025-26 Anthropic 9+, OpenAI 4, Google 4, Meta 0 AI-lens). With $0 direct FT-Anthropic deal vs the $5-10M per yr FT-OpenAI deal, the constructive Anthropic register cannot be deal-purchased; it is beat-access and news-value driven. The financial predictor that does hold across lanes is the negative one: Meta ($0 across all channels) receives the adversarial or null treatment. Accepted as a major counterweight; claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE; NOT artifact-grade.'
+      falsification_family: 'NOT a member - register-mix refinement of the mechanism 643 control case (the FIFTEENTH member, #682); this run adds the constructive company-briefed lane to the same-entity same-week corpus. No new directional contradiction of any coverage_prediction; the scope-bounded version of 441''s prediction survives. Ledger holds at 24.'
+      open_empirical_test: 'Does the FT extend the constructive company-briefed register to Meta''s AI work at the Sep 23-24 Meta Connect announcements, or does the surveillance lens persist? A business-constructive FT piece on Meta''s AI announcements would bound the concentration paradox; continued surveillance-only framing deepens it.'
+      research_method: 'Five browser.search query sets this run (FT OpenAI IPO safety; quoted FT Anthropic Amodei pace-the-frontier essay; Anthropic profitable second straight quarter; FT Meta glasses facial recognition; FT Anthropic Coxon resignation; since filters 2026-08-01 to 2026-09-12); URLs verbatim from Full-URL listings; FT original paywalled, not opened; register reconstructed from Reuters and mirror attestation snippets; all six novel this-run URLs repo-wide-grep verified new to corpus pre-commit; two peer-context URLs carried from mechanisms 717 and 643 by design; bounded search-result absence for the FT Coxon and moral-conflict lane per the iteration-492 rule (3 query sets); no ft.com URLs constructed; no em dashes; ASCII-only.'
+      source_urls:
+      - https://www.reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13/
+      - https://www.cnn.com/2026/09/12/tech/anthropic-ceo-essay-ai?cid=external-feeds_iluminar_meta
+      - https://www.wsj.com/tech/ai/anthropics-moral-conflict-is-playing-out-in-real-time-c503e0c1
+      - https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-slow-the-pace-a4267b56
+      - https://www.reuters.com/commentary/breakingviews/ai-frontier-slowdown-could-give-second-tier-leg-up-2026-09-14/
+      - https://www.tradingview.com/news/stocktwits:31ab54064094b:0-anthropic-ipo-claude-maker-reportedly-targets-second-straight-quarter-of-adjusted-profit-as-ceo-s-ai-slowdown-call-sparks-debate/
+      cross_references: [441, 625, 643, 717]
+      novelty: 'First dedicated Type A mechanism on FT''s Sep 13 2026 Anthropic profitability scoop (constructive company-briefed register) vs the mechanism 643 adversarial accountability scoop (same entity, 4-day window) vs the carried FT Meta AI-lens baseline. Distinct from mechanism 717 (Reuters x OpenAI slowdown-week pair), mechanism 643 (FT x Anthropic accountability lane), mechanism 441 (FT x Anthropic fundraising lane), mechanism 625 (OpenAI x Meta launch-week pair), and mechanisms 674 (Conditt/Engadget, #733) and 675 (Seattle Times/Newsday grant-then-sue, #734). Zero mechanism_676 keys repo-wide pre-commit (underscore and colon forms); max numeric mechanism_id pre-commit 675. All six novel this-run source URLs zero-hit repo-wide pre-commit. #734''s and #735''s zero-676 sweeps fail by designed supersession per the #710/#720 convention.'
+      test_file: tests/test_type_a_737_ft_anthropic_slowdown_week_profitability_scoop_sep14_2am.py
   x_twitter:
     financial_tie: none
     estimated_value: $0
