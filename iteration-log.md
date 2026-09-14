@@ -33634,3 +33634,16 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - 64-test file (anchor 1 deselected pre-commit per #565 convention, doc-sync + iteration-log tests green pre-commit, patched green in followup).
 - Commit hashes (followup): main commit 8083313e95d0dfb54351d3b91fed28c5749882ff ("Type C #739: ANI $7.5M license-offer pricing datum + Sep 14 2026 Division Bench hearing-day leg (mechanism 678) - Sep 14 2026 04:00 PDT"); anchor followup 26d56790a600dcd3a7849f84f6b599383a2b3949 (ANCHORED_SHA patched per #565, full 64/64 green post-followup); log-hash followup updates this line.
 - Push status (this run, 04:30 PDT Sep 14): BLOCKED. Egress proxy hatch-egress-proxy:3128 TCP connection-refused (verified via /dev/tcp); outage continuous since Sep 13 15:00 PDT per #727 through #738 reports. All local commits (98 carried + 3 from this run: main 8083313, anchor followup 26d5679) remain local-only. Retry next run.
+
+#740 Type D: m676/m677/m678 qualitative-discipline verification + post-#739 corpus integrity + #735 suite tombstone (8th consecutive death) + doc-sync repair - Sep 14 2026 05:00 PDT
+- m676 (FT x Anthropic profitability scoop, Type A #737): MANUAL ILLUSTRATIVE +0.20, p/d/ci NOT_CALCULATED, is_significant False, engine NOT run, NOT artifact-grade; NOT falsification-family (ledger holds at 24).
+- m677 (Jason Aten (Inc.) Google-aspirational vs Apple-adversarial gradient, Type B #738): Apple arm -0.55 MANUAL ILLUSTRATIVE, directionally_supported_not_proven, engine NOT run; NOT falsification-family.
+- m678 (ANI $7.5M license-offer pricing datum, Type C #739): exact $7.5M amount_usd verified, scorer none, tone NOT_SCORED, p/d/ci NOT_CALCULATED, engine NOT run, no causal claim, no analysis.json update.
+- Corpus integrity post-#739: max numeric mechanism_id 678; zero mechanism_679 keys in profiles/ and tests/ (sweep-carriers excluded per #715); m676/m677/m678 unique; ledger TWENTY-FOURTH present / TWENTY-FIFTH absent, holds at 24.
+- Fresh synthetic engine meaningfulness: strong n=5 pair asym +1.08, t=30.82, p=1.36e-09, d=19.49, CI (1.022, 1.146), engine significant; near-null 0.022 silent (p=0.51); degenerate n=1 contract t=0.0/p=1.0/d=0.0, arm-swap negates.
+- #735 suite tombstone: type_d_735_full_suite.log stalled 3229 bytes / 7% (no live MediaScope pytest) - EIGHTH consecutive background-suite death; re-launched to goal hidden_files type_d_740_full_suite.log.
+- Doc-sync repair (Type D mandate): 15 missing README rows + 8 missing ARCHITECTURE rows + #600 truncated-filename repair; 17-row tests/-prefix normalization; 5 stale per-file counts fixed (#703 15->25, #690 65->56, #695 71->64, #700 71->64, #729 48->69); headers re-synced to authoritative .venv pytest collection 38671/1068 (#739's file-count was 3 stale: 1064 vs true 1067). TestTestFileListingConsistency 8/8 green (was 5 failed).
+- 51-test file (anchor 1 deselected pre-commit per #565 convention, doc-sync + iteration-log tests green pre-commit, patched green in followup).
+- Rotation guard: 736-740 window closes E->A->B->C->D (anchor patched post-commit per #565). No analysis.json update warranted (verification-only).
+- Commit hashes: TBD_MAIN (main commit; ANCHORED_SHA patched to exact SHA in followup per #565).
+- Push status (this run): TBD_PUSH.
