@@ -6,8 +6,8 @@
 - Novelty verification: zero test_type_b_748 files pre-commit (glob); no "Type B #748" in git log pre-commit; the Anthropic Sep 9 2026 NYT URL zero-hit repo-wide pre-commit (git grep); "Anthropic Researchers Raise Alarm Over A.I. Acceleration" title string zero-hit repo-wide pre-commit; "mechanism_id: 683" zero-hit repo-wide pre-commit (git grep); max numeric mechanism_id 682 pre-commit; zero underscore-form 683 mechanism key strings repo-wide pre-commit.
 - Rotation guard: 748-752 window opens B (#748) -> C -> D -> E -> A (anchor patched post-commit per #565). Ledger holds at 24.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative 38055/1076 (38021 + 34 new tests, 1075 + 1 new file; pytest --collect-only verification post-commit). 34-test file, 8 classes (anchor 1 + rotation-window 2 deselected pre-commit per #565 convention; patched green in anchor followup).
-- Commit hashes: (filled in followup)
-- Push status: (checked post-commit)
+- Commit hashes: main commit 77e98920eaf337f67b236b146152660b8750a010; anchor followup 5b8ee77 (ANCHORED_SHA patched per #565, anchor + full rotation guard green 34/34 post-followup); log-hash followup updates this line.
+- Push status (this run, ~14:20 PDT Sep 14): BLOCKED. Fleet egress outage persists (hatch-egress-proxy:3128 TCP connection refused at the post-commit check; outage continuous since Sep 13 15:00 PDT per #727 through #747 reports). The atomic proxy-credential workflow was not attempted: with the proxy TCP port refusing connections, no credential candidate could succeed. All local commits (77e9892/5b8ee77 plus the still-unpushed #742 through #747 chains) remain local-only. No success invented; retry next run once the outage clears.
 
 #747 Type A: WSJ x OpenAI slowdown-week enterprise watchdog expose register test (Sep 14 2026, 13:00 PDT) - same-day register-mix on the payer, illustrative gap -0.475
 - Rotation: Type A (schedule: A/B/C/D/E cycle). Opens new window 747-751 closing A (#747) -> B (#748) -> C (#749) -> D (#750) -> E (#751); novelty anchor patched in the followup per the #565 convention (two-commit: main, then anchor SHA patch).
