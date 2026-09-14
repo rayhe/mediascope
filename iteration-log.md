@@ -33531,4 +33531,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - #729's zero-673 profiles sweep fails by designed supersession (per #710/#720 convention); #729's zero-672 underscore sweep stays green by designed keying; ledger holds at 24.
 - 21-test file (18 green pre-commit, anchor 1 deselected per #565, rotation-window 2 fail pre-main-commit by design; anchor + full rotation guard green post-followup).
 - Commit hashes (followup): main commit 380c6e08a1a17e56eb2bd945792901056a94a15f ("Type A #732: The Verge x OpenAI DOJ statement-of-interest coverage-selection test"); anchor followup 1779c121df1dff2bb36dbbd1040cc05121ac80f3 (ANCHORED_SHA patched per #565, anchor test green); log-hash followup updates this line.
-- Push status (this run, 20:00 PDT Sep 13): PENDING_ATTEMPT.
+- Push status (this run, 20:00 PDT Sep 13): BLOCKED. Egress proxy hatch-egress-proxy:3128 TCP connection-refused (verified via /dev/tcp + git push attempt, "Failed to connect to hatch-egress-proxy port 3128"); outage continuous since #727's 15:00 PDT report. All local commits (69 carried + 3 from this run) remain local-only. Retry next run.
