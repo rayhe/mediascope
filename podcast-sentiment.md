@@ -9,8 +9,8 @@ Tracks how podcasts frame Meta, wearables, AI, and competitors. Complements the 
 | Source | Type | Status | Notes |
 |--------|------|--------|-------|
 | Everyone Hates Elon | **Activist group** (not a podcast) | Active | London-based guerrilla campaign group targeting Meta glasses. Coverage amplified via other podcasts. |
-| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 69 verification cycles through Sep 13 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). |
-| The Guilty Feminist | **Podcast** (Deborah Frances-White) | Active, 499 numbered episodes + Sep 12 2026 unnumbered special (Sep 13 2026) | UK feminist comedy podcast, TOP 0.01% global rank. Tech-relevant episodes cover algorithms, Palantir/surveillance, and gendered tech critique. New: "In Conversation with Indhu Rubasingham" special (theatre topic, zero Meta/wearables content). Numbered-episode 500 watch holds. |
+| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 70 verification cycles through Sep 14 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). |
+| The Guilty Feminist | **Podcast** (Deborah Frances-White) | Active, 499 numbered episodes + Sep 12 2026 unnumbered special (Sep 14 2026) | UK feminist comedy podcast, TOP 0.01% global rank. Tech-relevant episodes cover algorithms, Palantir/surveillance, and gendered tech critique. New: "In Conversation with Indhu Rubasingham" special (theatre topic, zero Meta/wearables content). Numbered-episode 500 watch holds: projected day (Mon Sep 14) arrived with no episode 500 detected. |
 
 ### Secondary Sources (discovered via research)
 
@@ -12485,3 +12485,56 @@ SIX results observed; ALL previously-logged URL keys, ALL verified in corpus pre
 ### Test file
 
 - tests/test_type_e_731_podcast_sentiment_69th_verification_sep13_7pm.py
+
+## Iteration #736 - Seventieth Cycle (Sep 14 2026, 00:00 PDT)
+
+Type E #736. The seventieth verification cycle is new (the sixty-ninth was #731 at 19:00 PDT Sep 13).
+
+### Guilty Feminist
+
+No new GF episode content this run. au.radio.net (Last Updated 2 days ago, crawled 6h) still lists 758 episodes with "In Conversation with Indhu Rubasingham" (12/09/2026, 49 mins) on top, unchanged from #731. uk-podcasts.co.uk (crawled 4h) still shows 758 episodes / "Latest episode: 2026-09-12", unchanged since #706 - still an UNVERIFIED single-directory signal; no drop is asserted per #503/iteration-492 discipline. Listen Notes (crawled 8d) still lags on 498 (756 episodes). podscan.fm signal carried from #726 (crawled 4h at that time): the 499 transcript was the newest NUMBERED release; no new podscan result this run, and per #503 discipline that bounded absence is not a claim. ZERO NEW URL KEYS this run: the chortle.co.uk Edinburgh Fringe live-show listing key (https://www.chortle.co.uk/shows/edinburgh_fringe_2026/g/39124/the_guilty_feminist) was already in corpus; the Sun 13 Sep Kings Place London Podcast Festival date is a live-show listing, not a release. The 500-watch HOLDS: the projected day (Mon Sep 14) arrived with no numbered episode 500 detected; the numbered-500 cadence (499 released Sep 7) had pointed at TODAY. No first-hand page read was attempted this run. No tone scores computed on any episode this run (no verified new numbered episode).
+
+### Everyone Hates Elon (activist group, not a podcast)
+
+37-day hold continues (Aug 10 -> Sep 14, inclusive count). 7 re-surfaces observed: 6 previously-logged URL keys, ALL verified in corpus pre-commit: thetimes.com meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (49 days, crawled 49d); WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (59 days, crawled 9d; corpus holds lowercase URL; WWW uppercase form logged verbatim as same page per #676 convention); petapixel.com kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (53 days, crawled 20d); latestly.com 7538349.html (46 days, crawled 22d; in corpus since #383/#445/#465); http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/ (61 days, crawled 6h; exact http key in corpus via examples/sample_output + #383 test); fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612 (lenticular piece re-surfaced, crawled 4h; in corpus via #465/#536). Plus the Times of India 133146816 UK-venue-bans editorial piece re-surfaced (in corpus via #721, crawled 7d; snippet shows content refreshed since #721: Tim Martin/Wetherspoons ban quote, Lorde Madrid stage attack, "pervert glasses" nickname, Bloomberg Apple-glasses-delay-to-WWDC-2027 note; same canonical key, no new key). No new primary campaign motif. Last campaign phase remains the circa Aug 10 Epstein poster. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 70 cycles.
+
+### Attention Sphere
+
+The quoted "Attention Sphere" search returned no matching podcast (seventieth no-match). Top results were this repository's own GitHub pages (rejected as circular per established discipline), the Andrew Bosworth "Possible" iHeart episode (2025-03-26, crawled 284d; a Meta-CTO wearables-positive interview unrelated to any podcast named Attention Sphere), and QA-correction commit pages for this same file. Identity strand unchanged from #596. Task-spec name remains misidentified. Tracked Sources 69->70 cycles through Sep 14 2026.
+
+### Press surfaces
+
+SIX results observed; ALL previously-logged URL keys, ALL verified in corpus pre-commit: livemint.com/news/trends/are-mark-zuckerbergs-meta-ai-smart-glasses-watching-you-privacy-row-fuels-online-fears-puts-spotlight-on-dpdp-act-11772781893202.html (crawled 186d; in corpus); livemint.com/technology/tech-news/meta-ray-ban-smart-glasses-could-store-voice-recordings-by-default-what-it-means-for-users/amp-11746118684276.html (voice-recordings-by-default policy piece, crawled 331d; in corpus); techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/ (Mar 2026 Swedish-newspapers contractor-review lawsuit piece, crawled 40d; in corpus via profiles/wired.yaml + profiles/competitor-coverage-research.yaml); https://bbc.bm/ray-ban-meta-glasses-take-off-but-face-privacy-and-competition-test (host-mirror of the in-corpus Reuters Dec 2025 piece, in corpus via #721); https://www.reuters.com/sustainability/boards-policy-regulation/ray-ban-meta-glasses-take-off-face-privacy-competition-test-2025-12-09/ (Dec 2025 take-off/privacy-competition piece; 278 days, crawled 278d; in corpus via profiles/competitor-coverage-research.yaml); https://www.forbesindia.com/article/ai-tracker/why-metas-ray-ban-smart-glasses-are-causing-a-privacy-scandal/2991937/1 (privacy-scandal roundup incl. LED-visibility critique, Apr 2025 voice-storage policy, USF filming warning, Feb 2026 facial-recognition-plan report; crawled 159d; in corpus). Recency frontier: TIED at Sep 9 (twenty-first consecutive tie after #636 through #731); the petapixel.com Sep 9 piece remains the newest date-verified in-corpus Meta-glasses press item; no advance.
+
+### Standing rules and research method
+
+**Standing rule (Aug 28 2026):** No tone scores computed on any episode this run (no verified new numbered episode); p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False; Type E monitoring-only, no mechanism block in profiles/. No analysis.json update warranted. No claim of empirical significance. Do not claim empirical significance.
+
+**Research method:** 4 browser.search query sets this run (Guilty Feminist latest episode Deborah Frances-White September 2026 with since=2026-09-13; quoted "Everyone Hates Elon" Meta glasses campaign bus ads with since=2026-09-13; quoted "Attention Sphere" podcast Meta tech wearables, no since filter; Meta smart glasses Ray-Ban privacy news with since=2026-09-13). Pre-commit repo-wide git grep verified every search-result URL key already in corpus; ZERO new URL keys this run. No em dashes; ASCII-only.
+
+**Sources (verbatim from this run's Full-URL listings):**
+- https://www.chortle.co.uk/shows/edinburgh_fringe_2026/g/39124/the_guilty_feminist (pre-existing corpus key; live-show listing, not an episode)
+- https://au.radio.net/podcast/the-guilty-feminist
+- https://uk-podcasts.co.uk/podcast/the-guilty-feminist/deborah-frances-white-on-the-news-meeting
+- https://www.listennotes.com/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/
+- https://www.goloudnow.com/podcasts/the-guilty-feminist-152/deborah-frances-white-on-the-news-meeting-519585
+- https://www.listennotes.com/pt/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+- http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
+- https://appwritefunc.yet-another-testing-domain.com/api/grab?url=https://timesofindia.indiatimes.com/technology/tech-news/metas-spy-glasses-face-resistance-in-uk-banned-by-restaurants-pubs-and-theatres-across-the-country/articleshow/133146816.cms (proxy wrapper; canonical key in corpus via #721)
+- https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612
+- https://www.livemint.com/news/trends/are-mark-zuckerbergs-meta-ai-smart-glasses-watching-you-privacy-row-fuels-online-fears-puts-spotlight-on-dpdp-act-11772781893202.html
+- https://www.livemint.com/technology/tech-news/meta-ray-ban-smart-glasses-could-store-voice-recordings-by-default-what-it-means-for-users/amp-11746118684276.html
+- https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/
+- https://bbc.bm/ray-ban-meta-glasses-take-off-but-face-privacy-and-competition-test
+- https://www.reuters.com/sustainability/boards-policy-regulation/ray-ban-meta-glasses-take-off-face-privacy-competition-test-2025-12-09/
+- https://www.forbesindia.com/article/ai-tracker/why-metas-ray-ban-smart-glasses-are-causing-a-privacy-scandal/2991937/1
+- https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md (circular, rejected)
+- https://www.iheart.com/podcast/269-possible-110532142/episode/andrew-bosworth-on-ai-wearables-and-271029551/ (unrelated wearables-positive Boz interview)
+
+### Test file
+
+- tests/test_type_e_736_podcast_sentiment_70th_verification_sep14_midnight.py
