@@ -123,7 +123,7 @@ class TestRotationCycleGuard749:
     opens the new 749-753 window, closing B->C->D->E->A.
     """
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # main commit this run, per #565
+    ANCHORED_SHA = "9eeeb484ebdbc1a5aa016bb7bf52e1ba65fee1cb"  # main commit this run, per #565
 
     @staticmethod
     def _mains():
@@ -199,14 +199,16 @@ class TestRotationCycleGuard749:
     def test_followup_titles_do_not_match_mains_regex(self):
         # The #565 followup convention ("Type C #749 followup: ...", no colon
         # right after the number) must never collide with the mains regex, or
-        # the rotation window picks up phantom iterations.
+        # the rotation window picks up phantom iterations. The main commit
+        # subject mentions "followup" in prose, so this test only applies to
+        # subjects in the followup TITLE form.
         out = subprocess.run(
             ["git", "-C", REPO_ROOT, "log", "--format=%s"],
             capture_output=True,
             text=True,
         )
         for s in out.stdout.splitlines():
-            if "followup" in s.lower() and "#749" in s:
+            if re.match(r"^Type [A-E] #749 followup:", s):
                 assert not re.match(r"^Type [A-E] #749:", s), "followup collided with mains: %r" % (s,)
 
 
