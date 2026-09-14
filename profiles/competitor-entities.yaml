@@ -3862,6 +3862,114 @@ entities:
         type: C
         date: 2026-09-12 14:00 PDT
 
+    doj_statement_of_interest_nyt_v_openai_fair_use_sep2026:
+      mechanism_id: 672
+      iteration: 729
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-13'
+      time_pdt: '17:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'US DOJ Statement of Interest in NYT v. OpenAI (filed Sep 1, 2026) - FIRST dedicated political-incentive leg on the OpenAI x publisher financial vector: the federal government argues AI training is fair use, against the NYT paid-licensing position'
+      overview: 'On Sep 1, 2026 (Sep 2 per the Scholarly Kitchen - one-day source discrepancy logged) the US Department of Justice filed a 20-page Statement of Interest under 28 U.S.C. section 517 in the consolidated OpenAI copyright litigation, In re: OpenAI Inc. Copyright Infringement Litig., S.D.N.Y., No. 25-md-03143, presiding Judge Sidney H. Stein. The filing urges the court to hold that training large language models on copyrighted texts is fair use, arguing the training stage is "highly transformative" and that "constraining LLM development under a misunderstanding of fair use doctrine would thwart such creative and scientific progress while hindering American prosperity and economic mobility." The DOJ told the court the United States has "a strong interest in this court rejecting any argument that training LLMs on copyrighted texts violates copyright law," citing scientific advancement and national security. Associate Attorney General Stanley Woodward wrote on X: "AI dominance is critical to promote national security, prosperity, and economic mobility for all Americans. This Administration will never let our Nation be at a disadvantage relative to our foreign adversaries based on a plainly incorrect understanding of copyright law." The filing landed days before dueling motions for summary judgment were due on Sep 4, 2026. This run formalizes the intervention as the corpus FIRST political-incentive leg: state power aligned WITH the AI payer (OpenAI) and AGAINST the publisher plaintiff (the NYT) - the inverse direction of the usual payer-softening prediction.'
+      filing_facts:
+      - 'Case: In re: OpenAI Inc. Copyright Infringement Litig., S.D.N.Y., No. 25-md-03143; Judge Sidney H. Stein (Bloomberg Law)'
+      - 'Instrument: 20-page Statement of Interest under 28 U.S.C. section 517, which lets the government weigh in on any case touching its interest without leave of court (JD Supra / Sterne Kessler)'
+      - 'Filed Sep 1, 2026 (TechRepublic, Publishing Perspectives, JD Supra, Bloomberg Law); the Scholarly Kitchen dates it Sep 2 - discrepancy logged, recorded as Sep 1-2'
+      - 'Question addressed: whether the use of copyrighted works at the training stage - copying works to feed data into the model as learning material - constitutes fair use; the government position: "the training of AI models on copyrighted material, in and of itself, does not violate copyright laws" (JD Supra)'
+      - 'Dueling motions for summary judgment due Sep 4, 2026 (Publishing Perspectives)'
+      - 'DOJ revisited the conflicting Bartz and Kadrey fair-use decisions, favoring Bartz over Kadrey (JD Supra)'
+      - 'The brief cites the Trump National Policy Framework for Artificial Intelligence: creators and publishers protected from infringing AI outputs "without undercutting lawful innovation and free expression" (Bloomberg Law)'
+      - 'DOJ noted the irony that the NYT itself uses LLMs for journalistic purposes (Bloomberg Law; Sterne Kessler)'
+      - 'NYT position (Sep 4 court filing, via USA Today): "Microsoft and OpenAI stole from The New York Times to make commercial products that substitute for its journalism, threaten its business, and undermine its industry"; the Times seeks monetary damages, a training ban on its material, and destruction of models trained on its work'
+      - 'Scale: over 100 current copyright lawsuits against AI companies (Santa Clara Law professor Edward Lee, via USA Today)'
+      key_quotes:
+      - '"The United States has a strong interest in this court rejecting any argument that training LLMs on copyrighted texts violates copyright law" (DOJ filing, via TechRepublic and Publishing Perspectives)'
+      - '"constraining LLM development under a misunderstanding of fair use doctrine would thwart such creative and scientific progress while hindering American prosperity and economic mobility" (DOJ filing, via USA Today and Publishing Perspectives)'
+      - '"It is not in the public''s interest for the largest technology companies to have an oligopoly on LLM training due to licensing entry barriers that function primarily as large subsidies for old mainstream media" (DOJ brief, via Publishing Perspectives)'
+      - '"LLMs can and should help level the playing field between mainstream and independent publishers" (DOJ brief, via Publishing Perspectives)'
+      - '"AI dominance is critical to promote national security, prosperity, and economic mobility for all Americans. This Administration will never let our Nation be at a disadvantage relative to our foreign adversaries based on a plainly incorrect understanding of copyright law." - Associate Attorney General Stanley Woodward on X (via TechRepublic)'
+      - '"Microsoft and OpenAI stole from The New York Times to make commercial products that substitute for its journalism, threaten its business, and undermine its industry" - NYT Sep 4 court filing (via USA Today)'
+      - 'The government was "siding with a handful of ''trillion-dollar A.I. companies'' at the expense of American creators" - Graham James, NYT spokesman (via Reason)'
+      financial_incentive_link: 'The DOJ brief is a state-level intervention in the licensing-economics fight at the heart of the corpus: it argues paid-licensing requirements would be "large subsidies for old mainstream media" that create licensing entry barriers, i.e., the federal government argues AGAINST the paid-licensing regime that OpenAI''s $300-400M/yr publisher portfolio (24+ deals, 160+ outlets, mechanisms 494/499/504/514/519/549/569/609/660) represents. The brief pushes the license-alternative price toward zero, complementing Medianama''s BATNA insight (mechanism 657) that the Jul 24 2026 ANI interim order "sets the value of the alternative to a licence" in India. Timing compression: dueling summary-judgment motions due Sep 4 (US) and the ANI Division Bench appeal listed Sep 14 (India) put two fair-use pricing events ten days apart. Directional contrast with mechanism 666 (EU antitrust probe pushing Google TOWARD paid publisher licensing): the same policy question, opposite state vectors. Political-vector caveat: the intervention is administration-specific (Trump National Policy Framework for AI), not a structural financial relationship; state power here aligns WITH the payer and AGAINST the publisher plaintiff - the inverse of the naive payer-softening prediction.'
+      related_mechanisms:
+      - 471
+      - 519
+      - 549
+      - 589
+      - 609
+      - 657
+      - 660
+      - 666
+      confounders:
+        strong:
+        - 'Excerpt-bounded second-hand evidence: no first-hand read of the 20-page filing; all quotes via secondary coverage (per #503)'
+        - 'Administration-specific politics: the intervention reflects the Trump administration''s National Policy Framework for AI; a different administration might not intervene - political vector, not structural financial vector'
+        - 'Judge independence: Judge Stein may reject the argument; a statement of interest is not binding on the court'
+        moderate:
+        - 'Timing peg: dueling summary-judgment motions were due Sep 4, so the intervention may be motion-timed rather than a standing policy on publisher economics'
+        - 'Consolidated-case scope: No. 25-md-03143 consolidates multiple plaintiffs; the NYT is one of several and the brief addresses training-stage fair use generally'
+        - 'Judicial disagreement persists: the DOJ favors Bartz over Kadrey, but Kadrey went the other way - the fair-use question is unsettled'
+        weak:
+        - 'Filing-date discrepancy: Sep 1 per four sources, Sep 2 per the Scholarly Kitchen - logged as Sep 1-2, unresolved'
+        - 'NYT''s own LLM use is asserted by the DOJ but not quantified (Bloomberg Law: "leveraging LLMs for themselves for journalistic purposes")'
+        - 'The brief does not unwind OpenAI''s existing paid portfolio (24+ deals stand); it affects future licensing leverage only'
+      counterevidence:
+      - 'The NYT reads the intervention as corporate capture: spokesman Graham James says the government is "siding with a handful of ''trillion-dollar A.I. companies'' at the expense of American creators" (Reason)'
+      - 'The publisher is not retreating: the NYT''s Sep 4 filing doubles down with "stole from The New York Times" (USA Today)'
+      - 'Paid licensing IS being priced elsewhere: Anthropic''s $1.5B copyright settlement received final approval in July 2026, with authors fighting publishers and agents over $3,000-per-work payouts (TechCrunch, Sep 6 2026) - the fair-use push is contested'
+      - 'Edward Lee''s count of 100+ AI copyright lawsuits shows the contest leg is broad, not NYT-specific (USA Today)'
+      bounded_absences:
+      - 'No first-hand read of the 20-page filing this run (bounded per iteration-492; not asserted)'
+      - 'No DOJ statements of interest in the other 100+ AI copyright cases surfaced in bounded searches (not claimed as none exist)'
+      - 'No reporting this run on whether the filing has moved any pending licensing negotiation (the BATNA-pricing read is analytical)'
+      - 'No evidence this affects OpenAI''s existing 24+ paid deals (terms stand)'
+      correlational_note: 'This mapping describes the Sep 1, 2026 DOJ Statement of Interest in the NYT v. OpenAI consolidated copyright litigation as a political-incentive leg on the OpenAI x publisher financial vector: the federal government argued training-stage fair use against the NYT''s paid-licensing position, pushing the license-alternative price toward zero. Financial and political relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+      no_coverage_tone_claim: true
+      falsification_family: 'NOT a member - political-incentive leg with no coverage-tone pair; the ledger holds at 24 after #728 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C political-incentive mapping; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 471 (NYT x OpenAI litigation-posture boundary condition: the adversarial-posture tone pair this political leg backstops)'
+      - 'mechanism 657 (ANI v. OpenAI India litigation leg: the other litigation-type financial-incentive leg; Medianama BATNA insight)'
+      - 'mechanism 666 (EU antitrust probe pushing Google TOWARD paid publisher licensing: opposite state vector on the same policy question)'
+      - 'mechanism 609 (OpenAI India attribution-deal blitz: the license-the-willing leg the DOJ brief''s fair-use push complements)'
+      - 'mechanism 589 (Ziff Davis v. OpenAI copyright-litigation adversarial leg)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded litigation facts)'
+      - 'iteration-492 rule (bounded absence: no DOJ statements in other AI cases in the searched windows; none claimed as proof of absence)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      novelty: 'FIRST dedicated DOJ-statement-of-interest mechanism in the corpus. Zero "Statement of Interest" hits repo-wide pre-commit (grep); zero underscore-form 672 mechanism keys repo-wide pre-commit (per the #723 designed-keying convention this block keys as doj_statement_of_interest_nyt_v_openai_fair_use_sep2026 with mechanism_id: 672 in colon form, so #728''s zero-672-underscore sweep stays green); max numeric mechanism_id 671 pre-commit. All eight source URLs new to profiles/ and tests/ pre-commit. Distinct from mechanism 657 (ANI India litigation leg: different jurisdiction, different instrument), mechanism 666 (EU regulatory-adversarial on Google), mechanism 589 (Ziff Davis private litigation), and #471 (tone pair, not an incentive leg).'
+      sources:
+      - 'Scholarly Kitchen (Sep 10, 2026): "Ask the Chefs: AI and Copyright Licensing" - DOJ filed Statement of Interest Sep 2 in NYT v. OpenAI and Microsoft, SDNY; argues strongly for OpenAI, against infringement, fair use / transformative'
+      - 'TechRepublic (Sep 3, 2026): "US Government Backs OpenAI in Major AI Copyright Fight" - 20-page statement filed Sept 1 in Manhattan federal court; urged Judge Sidney H. Stein to reject the Times argument; Associate AG Stanley Woodward X quote'
+      - 'Publishing Perspectives (Andrew Richard Albanese, Sep 2026): DOJ brief rejecting "market dilution" claims; requiring paid licensing would "put U.S. AI companies at a competitive disadvantage"; dueling summary judgment motions due Sep 4'
+      - 'Bloomberg Law: "Trump Administration Backs OpenAI in NY Times Copyright Suit" - case No. 25-md-03143, statement of interest filed 9/1/26; National Policy Framework for AI citation'
+      - 'JD Supra / Sterne Kessler: 28 U.S.C. section 517; DOJ favors Bartz over Kadrey; "training of AI models on copyrighted material, in and of itself, does not violate copyright laws"'
+      - 'USA Today (Sep 6, 2026): "Can AI train on copyrighted work? The government hopes so" - NYT Sep 4 filing "stole from The New York Times"; 100+ AI copyright lawsuits (Edward Lee); NYT seeks damages, training ban, model destruction'
+      - 'Reason (Sep 4, 2026): NYT spokesman Graham James "trillion-dollar A.I. companies" quote'
+      - 'TechCrunch (Sep 6, 2026): Anthropic $1.5B settlement author/publisher payment dispute (counterevidence context)'
+      source_urls:
+      - https://scholarlykitchen.sspnet.org/2026/09/10/ask-the-chefs-ai-and-copyright-licensing/
+      - https://www.techrepublic.com/article/news-openai-us-government-ai-copyright-fight/
+      - https://publishingperspectives.com/2026/09/u-s-department-of-justice-files-legal-brief-urging-court-to-find-ai-training-to-be-fair-use/
+      - https://news.bloomberglaw.com/ip-law/trump-administration-backs-openai-in-ny-times-copyright-suit
+      - https://www.jdsupra.com/legalnews/ip-hot-topic-the-doj-chimes-in-on-fair-5800952/
+      - https://www.usatoday.com/story/tech/2026/09/06/doj-openai-nyt-legal-battle-over-copyright-training/91613054007/
+      - https://reason.com/2026/09/04/doj-says-barring-ai-training-on-copyrighted-material-could-severely-hamper-tech-progress/printer/
+      - https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/
+      research_method: '2 browser.search query sets this run: (1) AI publisher licensing deal September 2026 - surfaced UMG x ElevenLabs (Sep 10) and Suno x Warner/BMG (Sep 9) music-licensing news (rejected: music vertical, outside the publication-AI financial-incentive scope) plus the Scholarly Kitchen DOJ piece (SELECTED); (2) DOJ statement of interest NYT OpenAI fair use September 2026 - 6 corroborating sources, all URLs copied verbatim from Full-URL listings, no canonical URLs constructed. Excerpt-bounded, second-hand evidence per #503 (no browser.open first-hand reads this run). Filing facts via verbatim search-result excerpts. Pre-commit novelty greps: zero test_type_c_729 files on disk (glob); no "Type C #729" in git log (--grep); zero underscore-form 672 mechanism-key strings repo-wide (grep); zero "Statement of Interest" hits repo-wide (grep); max numeric mechanism_id 671 pre-commit; all 8 source URLs zero-hit repo-wide pre-commit. No em dashes; ASCII-only.'
+      test_file: tests/test_type_c_729_doj_statement_of_interest_nyt_v_openai_sep13_5pm.py
+      verification:
+        iteration: 729
+        type: 'C'
+        date: '2026-09-13 17:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+
     mechanism_660_openai_india_attribution_deal_economics_layer_sep2026:
       mechanism_id: 660
       iteration: 709
