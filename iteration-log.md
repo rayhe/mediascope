@@ -9,6 +9,7 @@
 - Novelty verification: zero test_type_c_729 files on disk pre-commit (glob), no "Type C #729" in git log pre-commit, zero "mechanism_672" underscore-form strings repo-wide pre-commit, zero "Statement of Interest" hits repo-wide pre-commit, max numeric mechanism 671 pre-commit, all 8 source URLs zero-hit repo-wide pre-commit
 - Rotation guard: 725-729 window closes D->C (D->E->A->B->C; anchor patched post-commit per #565). No analysis.json update warranted.
 - #728's zero-mechanism_672 sweep stays green by designed keying (block keys as doj_statement_of_interest_nyt_v_openai_fair_use_sep2026 with mechanism_id: 672 colon-form per the #723 lesson); #728's max-671 sweep fails by designed supersession (per #710/#720 convention).
+- Commit hashes (followup): main commit 5468a02ac0079939d8f60ce7f72dcd894be4b3f9 ("Type C #729: US DOJ Statement of Interest in NYT v. OpenAI political-incentive leg (mechanism 672) - Sep 13 2026 17:00 PDT"); followup 9f8749662a7ae4b55d79f9ec46193bf90f76e540 (ANCHORED_SHA patch per #565 + full rotation guard green). Test file 69/69 green post-followup (anchor + 725-729 window guard D->E->A->B->C).
 
 
 #728 Type B: Kit Eaton (Inc.) register INVERSION - Meta wearables enthusiasm vs Apple Audio Intelligence controversy-forward framing (mechanism 671; FIRST Type B on Eaton; Sep 13 2026, 16:00 PDT)
