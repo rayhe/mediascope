@@ -18,7 +18,7 @@
 
 **Commit hashes:** main fc33b3f462f910e93692aff401fd7f599184d9f1 (verified via git rev-parse); anchor followup d5168c018cd1ea7aa5b2bf893ca5f583b8f6826d patches ANCHORED_SHA to fc33b3f and re-runs anchor + doc-sync + full rotation guard green post-followup (10/10) per #565.
 
-**Push status:** (updated post-commit)
+**Push status:** BLOCKED this run (23:30 PDT Sep 13) - egress proxy hatch-egress-proxy:3128 TCP connection-refused (verified via /dev/tcp); outage continuous since #731's 15:00 PDT report. All 83 local commits (80 carried + 3 from this run) remain local-only. Retry next run.
 
 **Doc-sync ratchet:** README stats table 38095/1058 -> 38417/1063 (authoritative .venv pytest --collect-only this run) + test-file table row; ARCHITECTURE.md header stats + tree row; iteration-log #735 entry (this entry).
 
