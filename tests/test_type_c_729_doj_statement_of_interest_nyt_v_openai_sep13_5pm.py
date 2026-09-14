@@ -59,7 +59,7 @@ MECH_KEY = "doj_statement_of_interest_nyt_v_openai_fair_use_sep2026"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor tests are deselected pre-commit.
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "5468a02ac0079939d8f60ce7f72dcd894be4b3f9"
 
 
 def load_competitor():
