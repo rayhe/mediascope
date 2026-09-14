@@ -33687,5 +33687,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Rotation guard: 739-743 window closes C->D->E->A->B (anchor patched post-commit per #565). #742's max-679 sweep fails by designed supersession (#710/#720); #742's zero-680 profile sweep stays green by designed keying (no underscore-form "mechanism_680" anywhere in profiles/); ledger holds at 24.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative 38774 tests across 1071 test files (pytest --collect-only this run).
 - 47-test file pre-commit: anchor test fails by design per #565 convention (patched green in anchor followup); all other 46 green.
-- Commit hashes (followup): main commit TBD_MAIN (anchor followup TBD_ANCHOR; log-hash followup updates this line).
+- Commit hashes: main commit fc05287 (full SHA fc05287045b491d9c40355ae4438a30d66bf2577; anchor SHA patched in test line 265, full 47-test file green post-patch), anchor followup 63ca824 (per #565), log-hash followup 893b75a.
 - Push status (this run): TBD_PUSH.
