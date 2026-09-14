@@ -66,7 +66,7 @@ FOURWEEKMBA_URL = "https://fourweekmba.com/ai-openai-india-publisher-deals-attri
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor test is deselected pre-commit.
-ANCHORED_SHA = "TBD_PATCHED_IN_FOLLOWUP"
+ANCHORED_SHA = "a78480f1c37d596ec7e46309967181588057803e"
 
 
 def load_block():
