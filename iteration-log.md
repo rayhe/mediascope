@@ -6,8 +6,8 @@
 - Novelty verification: zero test_type_c_749 files pre-commit (glob); no "Type C #749" in git log pre-commit; the GlobeNewswire URL zero-hit repo-wide pre-commit (git grep); "Getty Images x Perplexity" combined zero-hit in profiles/ and tests/ pre-commit (git grep -in getty+perplexity); "mechanism_id: 684" zero-hit repo-wide pre-commit; zero underscore-form 684 keys repo-wide pre-commit; max numeric mechanism_id 683 pre-commit (mechanism 683 in competitor-coverage-research.yaml, #748).
 - Rotation guard: 748-752 window continues B (#748) -> C (#749) -> D -> E -> A (anchor patched post-commit per #565). Ledger holds at 24.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced (pytest --collect-only this run; pre-existing textblob ModuleNotFoundError collection errors in other test dirs, same as #746/#747/#748). 41-test file, 8 classes (anchor 1 + rotation-window 3 deselected pre-commit per #565 convention; patched green in anchor followup).
-- Commit hashes: main commit <MAIN_SHA>; anchor followup <ANCHOR_SHA> (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-followup); log-hash followup updates this line.
-- Push status (this run, ~15:35 PDT Sep 14): <PUSH_STATUS>
+- Commit hashes: main commit 9eeeb484ebdbc1a5aa016bb7bf52e1ba65fee1cb; anchor followup fa07326 (ANCHORED_SHA patched per #565, anchor + full rotation guard green 41/41 post-followup); log-hash followup updates this line.
+- Push status (this run, ~15:31 PDT Sep 14): BLOCKED. Fleet egress outage persists (hatch-egress-proxy:3128 TCP connection refused at the post-commit check; outage continuous since Sep 13 15:00 PDT per #727 through #749 reports). The atomic proxy-credential workflow was not attempted: with the proxy TCP port refusing connections, no credential candidate could succeed. All local commits (9eeeb48/fa07326 plus the still-unpushed #742 through #748 chains) remain local-only. No success invented; retry next run once the outage clears.
 
 
 #748 Type B: Kate Conger (NYT) X/Musk-adversarial vs AI-lab-concern register split (Sep 14 2026, 14:00 PDT) - Gawker-to-NYT pipeline career mechanism, mechanism 683
