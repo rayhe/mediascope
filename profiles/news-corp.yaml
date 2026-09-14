@@ -433,7 +433,103 @@ competitor_relationships:
       distinct_from_prior: 'FIRST dedicated WSJ x OpenAI slowdown-week mechanism; first dedicated mechanism on the Sep 14 2026 Altman "very badly" piece (URL zero-hit repo-wide pre-commit); first WSJ OpenAI-vs-Anthropic within-publication axis in the corpus (prior News Corp legs paired OpenAI with Meta or Microsoft).'
       financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing); Meta leg Mar 2026 (up to $50M/yr, 3yr, Dow Jones news leg per #549); Anthropic leg $0 AI licensing (only HarperCollins settlement-revenue share, different vector). #519 predicts symmetric softening on the OpenAI-vs-Meta axis; the incentive structure predicts OpenAI softer than Anthropic on the within-week axis. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
       research_method: '4 browser.search query sets this run (The Atlantic OpenAI; WIRED OpenAI slowdown; WSJ OpenAI Altman interview; Vox OpenAI Altman slowdown) + 1 first-hand browser.open (WSJ Altman piece, 41 rendered lines, byline Gareth Vipers). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes. #503 second-hand grade not needed - the anchor article was read first-hand.'
-      novelty: 'Zero test_type_a_742 files on disk pre-commit; no "Type A #742" in git log pre-commit; the Altman piece URL (very-badly-1e840a6c) zero-hit repo-wide pre-commit; the "Biggest AI Rivals" URL carried from #737 by design; the Anthropic "Moral Conflict" URL carried from #737 sources by design; max numeric mechanism_id 678 pre-commit; zero underscore-form 679 mechanism key strings repo-wide pre-commit (excluding the #740 sweep instrument and the #739 carrier test per the #715 pattern-rescope lesson).'
+      novelty: 'Zero test_type_a_747 files on disk pre-commit; no "Type A #747" in git log pre-commit; the Clash piece URL (openai-anthropic-crisis-money-safety-847bc1d6) zero-hit repo-wide pre-commit; the "Clash Between Money and Safety" title string zero-hit repo-wide pre-commit; the relay URLs (very-badly-1e840a6c, a4267b56) carried from #742 by design; max numeric mechanism_id 681 pre-commit; zero underscore-form 682 mechanism key strings repo-wide pre-commit (excluding the #744/#745 sweep-instrument carrier test names per the #715 pattern-rescope lesson).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+    wsj_openai_clash_money_safety_expose_vs_altman_relay_sep14:
+      mechanism_id: 682
+      iteration: 747
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-14'
+      time_pdt: '13:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'WSJ x OpenAI Slowdown-Week Enterprise Watchdog Expose (Sep 14 2026) - Money-vs-Safety Crisis Framing vs Same-Day Constructive Altman Relay; Register-Mix Within 24 Hours'
+      key_design_note: 'Descriptive block key carries no underscore-form 682 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the #744/#745 zero-682 profile sweep instruments green while mechanism_id advances in colon form.'
+      overview: 'On Mon Sep 14 2026, the Wall Street Journal published an enterprise watchdog expose, "How the Clash Between Money and Safety Created a Monumental Crisis for AI" (bylines Robert McMillan, Amrith Ramkumar, Keach Hagey, Erin Woo), framing the frontier labs - OpenAI first among them - as leaders trapped in a "Greek tragedy" of their own race, with David Sacks quoted "stop pretending the motivation to slow down is purely altruistic" and a DeepMind "hot goss" channel demanding "actual, tangible actions they are taking to change their pace to be safer." The SAME publication, on the SAME day, carried Gareth Vipers'' constructive CEO-framing relay of Sam Altman''s overnight X-post safety comments (m679, +0.10). News Corp collects ~$50M/yr from OpenAI (May 2024, $250M/5yr). The same-day within-publication illustrative gap between the watchdog expose (-0.40) and the relay-pair average (+0.075) is -0.475: watchdog HARDER than relay on the payer within 24 hours. This is the tightest temporal register-mix the corpus has logged on a licensing payer (prior tightest: m616''s Tumbler Ridge -0.55 vs m679''s relay +0.10, twelve days apart), and it extends m679''s one-month register-mix finding into a same-publication-day bound.'
+      articles_this_run:
+        - title: 'How the Clash Between Money and Safety Created a Monumental Crisis for AI'
+          publication: Wall Street Journal
+          byline: Robert McMillan, Amrith Ramkumar, Keach Hagey, Erin Woo
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/openai-anthropic-crisis-money-safety-847bc1d6'
+          url_status: 'NOVEL this run - zero hits repo-wide pre-commit'
+          research_method: 'search_excerpt_bounded_21_rendered_lines_across_2_query_sets'
+          register: 'enterprise_watchdog_expose'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          key_quotes:
+            - 'By the end of the summer, it was emerging that the fast-improving systems were capable of deploying swarms of autonomous agents able and willing to band together, deceive and cut corners in the real world to advance their aims.'
+            - 'The calls by top executives to better pace the development of their own technologies represents a classic Silicon Valley story of world-changing new technology, vast wealth, breakneck competition and the euphoria of unlocking new capabilities, even in the face of product safety concerns.'
+            - '"It looks like a Greek tragedy: these well-meaning business leaders who are trapped in this race to the bottom," said Max Tegmark, an AI safety campaigner.'
+            - 'On Saturday, in the "hot goss" channel within Google''s DeepMind AI lab, a worker posted about Altman agreeing with Amodei, saying it seemed like a sign of momentum toward pacing frontier AI development. But the person added: "The thing I really want to see is agreement on actual, tangible actions they are taking to change their pace to be safer."'
+            - '"If the unreleased models are scary enough that you think you should slow down, I support your decision to be responsible," Sacks said. But he added that AI leaders should "stop pretending the motivation to slow down is purely altruistic."'
+            - 'The president on Sunday defended the administration''s strategy and alluded to ulterior motives behind the leaders'' call for better pacing of AI development.'
+          tone_observations:
+            - 'The headline frame is crisis-declaring ("Monumental Crisis") with the money-vs-safety clash as the causal diagnosis; OpenAI leads the named labs (Altman/Amodei/Hassabis/Musk named; the URL slug leads with openai-anthropic).'
+            - 'Third-party voices do the adversarial work: Tegmark''s "Greek tragedy," Sacks'' "stop pretending," the DeepMind skeptic''s "actual, tangible actions." Journalist selection assembles a motive-skepticism choir around Altman''s safety turn.'
+            - 'The piece still relays the industry line (evaluator pledges, Amodei framework) - the watchdog register is motive-questioning, not fabricating.'
+          disclosure_observation: 'No disclosure visibility claim is made: the piece was NOT read first-hand (browser.open failed terminally this run, upstream_unavailable, not retried per turn constraint); excerpt-bounded analysis cannot rule in or out boilerplate disclosure.'
+      articles_carried_relay_context:
+        - title: 'Microsoft Sets Limits for AI Models as Altman Details Control Risks'
+          publication: Wall Street Journal
+          byline: Gareth Vipers
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/altman-says-ais-rapid-progress-could-go-very-badly-1e840a6c'
+          url_status: 'carried from #742 (m679) by design'
+          register: 'constructive_ceo_framing_relay'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          note: 'Same-day constructive CEO relay of the payer. Carried at identical values, no rescoring.'
+        - title: 'Biggest AI Rivals Agree They Need to Slow It Down'
+          publication: Wall Street Journal
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-slow-the-pace-a4267b56'
+          url_status: 'carried from #742 (m679) by design'
+          register: 'balanced_duo_framing'
+          tone_MANUAL_ILLUSTRATIVE: 0.05
+          note: 'Altman positioned as cooperative respondent. Carried at identical values, no rescoring.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'openai'
+        peer_arm: 'same_publication_same_day_relay_pair'
+        expose_score_MANUAL_ILLUSTRATIVE: -0.40
+        relay_scores_MANUAL_ILLUSTRATIVE: [0.10, 0.05]
+        relay_avg: 0.075
+        delta: -0.475
+        delta_note: 'Expose -0.40 minus relay avg +0.075 equals -0.475. Direction: watchdog HARDER than relay on the same payer (OpenAI, ~$50M/yr News Corp licensing) within 24 hours and within one publication. Tightest temporal register-mix on a payer in the corpus.'
+        register_range_note: 'Same-week WSJ OpenAI register range now spans +0.10 (relay) to -0.55 (Tumbler Ridge m616) = 0.65, exceeding every between-entity gap in the corpus. Register SELECTION dominates entity targeting at WSJ x OpenAI.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, n=1 new expose (excerpt-bounded) vs n=2 carried relay arms, un-rescored. Engine NOT run. DO NOT claim empirical significance.'
+      finding: 'Register MIXES within 24 hours on the same payer in the same publication: enterprise watchdog expose ("Monumental Crisis," motive-skepticism choir) at -0.40 vs constructive CEO-framing relay (+0.10) and balanced duo framing (+0.05) on the same day, all toward OpenAI, the ~$50M/yr News Corp licensing payer. Incentive attribution is INCONCLUSIVE and leans negative: if the licensing tie purchased uniform softening, the day''s hardest OpenAI register in the corpus would not be the money-vs-safety expose - yet it is. The Tumbler Ridge precedent (m616, -0.55, twelve days earlier) was already the bound; this run compresses the register-mix to a single publication day. NOT a falsification-family member - register-mix refinement, not a uniform-prediction test. Ledger holds at 24. NOT artifact-grade. Correlation is not causation.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted.'
+      confounders_ranked:
+        strong:
+          - 'Genre skew: enterprise watchdog feature vs overnight news relay vs duo-framing news story are different genres with different built-in registers; the expose register would read adversarial on any entity it profiled.'
+          - 'Excerpt-bounded read: the Clash piece was NOT read first-hand (browser.open failed terminally this run, upstream_unavailable, not retried); the -0.40 tone is hand-assigned from 21 rendered search-excerpt lines across 2 query sets, which skew toward the most quotable adversarial lines.'
+          - 'Multi-lab piece: OpenAI is the lead named entity but the expose targets all four frontier labs (Altman/Amodei/Hassabis/Musk named); the -0.40 is the OpenAI-attributable register of an industry-wide watchdog piece, not an OpenAI-only investigation like Tumbler Ridge.'
+        moderate:
+          - 'Third-party voice selection: the adversarial lines are reported speech (Tegmark, Sacks, DeepMind worker, Trump) assembled by journalist choice - selection, not invention, so the tone is the paper''s but the words are sources''.'
+          - 'News-peg structure: m679''s relay had a same-day news peg (Microsoft code of conduct, Altman X posts); the expose''s peg is the week''s accumulated slowdown narrative - different editorial products, not interchangeable slots.'
+          - 'n=1 new article; hand-assigned illustrative tones, not empirical corpus scores.'
+        weak:
+          - 'Disclosure visibility unknown (no first-hand read): cannot say whether the expose carried the News Corp-OpenAI licensing boilerplate seen in #532/#616 OpenAI pieces.'
+          - 'The Altman relay piece (m679) itself relayed "stoked fears" mild adversarialism aimed at the non-payer; the expose''s even harder register on the payer is the incentive-inconsistent direction, but excerpt bounding caps the claim.'
+      bounded_absence: 'No first-hand WSJ OpenAI-disclosure-visibility check was possible this run (browser.open terminal failure); Bounded search-result absence per iteration-492, not a proven zero.'
+      counter_evidence:
+        - 'm679 (this same morning): WSJ ran the constructive Altman relay (+0.10) - the register-mix is the point, not uniformity in either direction.'
+        - 'The expose is industry-wide, not OpenAI-only: Anthropic, DeepMind, and xAI share the target, so payer-specific capture readings are doubly unsupported.'
+        - 'The piece still relays the industry line (evaluator pledges, Amodei framework) - motive-questioning watchdog, not fabrication.'
+      relation_to_679: 'Direct same-day extension: m679 found a constructive CEO relay (+0.10) toward the OpenAI payer in the Sep 14 slowdown window; this run finds the SAME publication publishing a watchdog enterprise expose (-0.40) toward the SAME payer on the SAME day. Compresses m679''s one-month register-mix bound (Tumbler Ridge -0.55 vs relay +0.10, twelve days apart) to a 24-hour window. Both mechanisms agree: register SELECTION dominates entity targeting at WSJ x OpenAI.'
+      relation_to_616: 'Third leg on the WSJ x OpenAI register-range pattern: m616 Tumbler Ridge -0.55 (hardest, Sep 2), m679 Altman relay +0.10 (softest, Sep 14 AM), this run Clash expose -0.40 (Sep 14, watchdog-mid). Same-week range 0.65 - no between-entity gap in the corpus is that large.'
+      distinct_from_prior: 'FIRST dedicated mechanism on the Sep 14 2026 WSJ "How the Clash Between Money and Safety Created a Monumental Crisis for AI" enterprise expose (URL zero-hit repo-wide pre-commit); first same-publication-day register-mix test on a licensing payer in the corpus; first mechanism to pair a multi-lab watchdog expose with a single-entity constructive relay as the same-day comparator.'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing); Meta leg Mar 2026 (up to $50M/yr, 3yr, Dow Jones news leg per #549); Anthropic leg $0 AI licensing (only HarperCollins settlement-revenue share, different vector). If the tie purchased uniform softening, the hardest OpenAI register in the corpus would not be a Sep 14 WSJ enterprise expose - yet the same-week range spans +0.10 to -0.55 on the payer. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      research_method: '4 browser.search query sets this run (Financial Times OpenAI Altman slowdown; FT OpenAI Microsoft Altman interview pacing; Financial Times Anthropic Amodei profitability pace; Guardian OpenAI Altman slowdown) + 1 browser.open attempt of the Clash piece failed terminally (upstream_unavailable, NOT retried per turn constraint) - excerpt-bounded per #503. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_747 files on disk pre-commit; no "Type A #747" in git log pre-commit; the Clash piece URL (openai-anthropic-crisis-money-safety-847bc1d6) zero-hit repo-wide pre-commit; the "Clash Between Money and Safety" title string zero-hit repo-wide pre-commit; the relay URLs (very-badly-1e840a6c, a4267b56) carried from #742 by design; max numeric mechanism_id 681 pre-commit; zero underscore-form 682 mechanism key strings repo-wide pre-commit (excluding the #744/#745 sweep-instrument carrier test names per the #715 pattern-rescope lesson).'
       no_analysis_json_update: true
       correlation_not_causation: true
   meta:
