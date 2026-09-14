@@ -72,7 +72,7 @@ E4M_URL = "https://www.exchange4media.com/digital-news/openai-vs-ani-courts-inte
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor test is deselected pre-commit.
-ANCHORED_SHA = "TBD_PATCHED_IN_FOLLOWUP"
+ANCHORED_SHA = "8083313e95d0dfb54351d3b91fed28c5749882ff"
 
 
 def load_block():
