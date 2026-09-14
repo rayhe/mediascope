@@ -25019,6 +25019,127 @@ cross_publication_findings:
       her current Meta-only scope keeps the assignment-composition reading live.'
     verdict: directionally_supported_not_proven
 
+  jason_aten_inc_google_aspirational_vs_apple_adversarial_register_gradient:
+    competitor: Google/Apple
+    confounders:
+    - 'STRONG: Search-excerpt-bounded evidence on the Apple arm only this run
+      (browser.open declared terminal per developer constraint; excerpt fidelity
+      relies on the search index, not page reads).'
+    - 'STRONG: Topic asymmetry between arms: the Google arm covers I/O product
+      announcements (a peg that structurally invites aspirational framing), the
+      Apple arm covers an always-listening privacy feature (a peg that invites
+      adversarial framing); the register differential may be peg-driven, not
+      entity-driven.'
+    - 'STRONG: n=1 per arm; single-column variance cannot be ruled out (Aten''s
+      register varies by story, as all columnists'' do).'
+    - 'MODERATE: Four-month temporal gap between arms (May 21 vs Sep 11 2026);
+      columnist register can drift over a product cycle.'
+    - 'MODERATE: Byline on the Apple arm verified via the inc.com/jason-aten/ URL
+      slug only, not a page-rendered byline (browser.open unavailable); URL-slug
+      attribution is a standard but second-hand byline source.'
+    - 'MODERATE: The Google arm''s framing characterization ("aspirational,
+      positive competitive") is the corpus''s Aug 16 2026 coding, not re-verified
+      this run; the differential inherits that coding''s uncertainty.'
+    - 'WEAK: Genre is matched across arms (both first-person Inc. opinion columns),
+      which helps, but the Apple piece is a privacy-skeptic column while the
+      Google piece is an event takeaway - sub-genre differs.'
+    - 'WEAK: Aten''s Apple column explicitly grants Apple''s technical privacy
+      claims ("Doing all of this in a privacy-protecting way"), so the
+      adversariality is about social meaning, not factual challenge - this bounds
+      how far the differential can be read.'
+    - 'WEAK: Meta-arm bounded absence is not a proven zero (iteration-492): zero Aten
+      Meta-wearables pieces surfaced in this run''s bounded query set; absence claims
+      stay bounded, never absolute, so the pair is Google-vs-Apple only.'
+    connects_to:
+    - 137
+    - 150
+    - 668
+    - 670
+    - 671
+    - 674
+    counterevidence:
+    - 'COUNTEREVIDENCE: The Google arm''s peg (I/O announcements) structurally
+      invites the "shipped Apple''s AI promises" frame, which is inherently
+      pro-Google; a Google privacy-scandal peg might have drawn Aten''s adversarial
+      register too, which would collapse the entity-gradient reading.'
+    - 'COUNTEREVIDENCE: Both Inc. columnists being Apple-adversarial may reflect
+      the Audio Intelligence news peg (a genuinely always-listening feature)
+      rather than an outlet or financial pattern; WIRED''s pitch-carrying on the
+      same story shows the peg does not force adversariality, but the peg still
+      confounds.'
+    - 'COUNTEREVIDENCE: Mansueto''s Google dependency (mechanism 137) is
+      outlet-level financial context, not evidence about Aten''s motives;
+      attributing his Google softness to the dependency risks the ecological
+      fallacy at journalist level - stated as illustrative only.'
+    discovery_date: '2026-09-14'
+    finding: 'Jason Aten (Inc.) shows a journalist-level cross-entity register
+      gradient: Google-aspirational versus Apple-adversarial, in the same column,
+      five months apart. Google arm (in-corpus since Aug 16 2026, mechanism 137
+      context): "At I/O, Google Just Shipped Apple''s AI Promises" (Inc., Thu May
+      21 2026) - corpus-coded framing "aspirational, Google as deliverer of Apple
+      promises, positive competitive". Apple arm (NEW, byline via
+      inc.com/jason-aten/ URL slug): "For Years, People Have Worried Their Devices
+      Were Listening. Apple Just Made It a Feature" (Inc., Fri Sep 11 2026;
+      search "Last Updated: 3 days ago" observed Sep 14 2026;
+      Search-excerpt-bounded per developer constraint): "there is a huge problem,
+      which is that you can talk about privacy all you want, but I think it is
+      underestimated how much we live our lives with the understanding that most
+      of what we say is off the record"; "most people just hear yada, yada, yada,
+      you are recording me"; "I am not sure any of us are ready for a world where
+      listening devices become ubiquitous and are normalized - even if they provide
+      real utility"; "I am not sure Apple has counted the cost associated with a
+      feature that requires this much explanation to reassure people''s privacy
+      concerns." MANUAL ILLUSTRATIVE Apple-arm register -0.55; Google arm NOT
+      re-scored this run (corpus coding carried). JOURNALIST-LEVEL INSTANTIATION
+      of mechanism 137: the Aug 16 outlet-level finding documented Mansueto
+      Ventures'' Google financial dependency (55% advertising revenue, Google
+      programmatic/search traffic dependency, zero Meta deals) correlating with
+      softer Google coverage; Aten''s own Google-aspirational column is the
+      journalist-level case of that outlet pattern, now paired with his
+      Apple-adversarial column. EXTENSION of mechanism 671 (#728, Kit Eaton):
+      Eaton gave Inc. its Meta-positive/Apple-adversarial inversion; Aten adds a
+      Google-aspirational/Apple-adversarial gradient at the same outlet - two Inc.
+      columnists, both Apple-adversarial on Audio Intelligence (Eaton has since
+      published a second Apple piece, the Sep 10 workplace-ban column: three
+      adversarial-leaning Inc. columns total), each soft on a different non-Apple
+      entity. The common Inc. thread is Apple-adversariality, consistent with the
+      naive payer-softening prediction (no AI-lab licensing deals at Inc. in
+      corpus; no payer, no softening) - illustrative only, NOT a financial proof;
+      columnist selection and opinion-genre confound it. MANUAL ILLUSTRATIVE:
+      p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED,
+      is_significant False, engine NOT run, NOT artifact-grade, no engine
+      divergence pin. Verdict: directionally_supported_not_proven. NOT a
+      falsification-family member (ledger holds at 24). Correlation is not
+      causation.'
+    finding_type: journalist_cross_entity
+    iteration: 738
+    journalist: Jason Aten
+    mechanism_id: 677
+    publication: Inc. (Mansueto Ventures)
+    rotation_type: B
+    source_urls:
+    - https://www.inc.com/jason-aten/for-years-people-have-worried-their-devices-were-listening-apple-just-made-it-a-feature/91404202
+    - http://www.inc.com/jason-aten/at-i-o-google-just-shipped-apples-ai-promises/91191832
+    - https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
+    - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
+    - https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/
+    test_count: 42
+    test_file: tests/test_type_b_738_jason_aten_inc_google_aspirational_vs_apple_adversarial_register_gradient_sep14_3am.py
+    testable_predictions:
+    - 'If Aten publishes a Meta wearables column applying the same adversarial
+      always-listening register, the gradient extends to a third entity and the
+      Google-softness looks entity-specific; if he applies a softer register to
+      Meta, the Google-vs-Apple gap is the anomaly to explain.'
+    - 'If a future Aten Google privacy-story column applies his adversarial
+      register to Google, the register is peg-driven (privacy stories get
+      adversarial treatment regardless of entity) and the entity-gradient reading
+      weakens.'
+    - 'If a third Inc. columnist publishes an adversarial Audio Intelligence take,
+      the outlet-level Apple-adversarial pattern hardens; if Inc. publishes a
+      pitch-carrying take, the #733 composition-effect reading is confirmed at a
+      second outlet.'
+    verdict: directionally_supported_not_proven
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

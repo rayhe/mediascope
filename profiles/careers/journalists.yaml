@@ -19044,3 +19044,29 @@ jessica_conditt:
   source_urls:
   - https://Www.engadget.com/2254194/apple-watch-new-audio-intelligence-enables-a-real-life-conversation-rewind/
   - https://www.engadget.com/gaming/playstation/engadget-podcast-ps5-pro-hands-on-and-metas-wild-orion-ar-glasses-133029580.html?src=rss&rand=43
+
+jason_aten:
+  name: Jason Aten
+  current_role: Columnist (exact staff title unconfirmed this run)
+  current_publication: Inc.
+  publication_owner: Mansueto Ventures
+  beat: Apple, Google, consumer tech, privacy
+  career_history:
+  - employer: Inc.
+    role: Columnist
+    period: present
+    source_url: https://www.inc.com/jason-aten/for-years-people-have-worried-their-devices-were-listening-apple-just-made-it-a-feature/91404202
+  notes: 'Byline verified via the inc.com/jason-aten/ URL slug on the Sep 2026 Audio
+    Intelligence column; no page-rendered byline confirmation this run (browser.open
+    terminally unavailable per developer constraint). Previously cited in-corpus for
+    the May 21 2026 Google I/O column "At I/O, Google Just Shipped Apple''s AI
+    Promises" (aspirational Google framing, mechanism 137 context). FIRST dedicated
+    Type B subject on Aten (mechanism 677, iteration #738): journalist-level
+    cross-entity register gradient - Google-aspirational (May 2026, in-corpus) vs
+    Apple-Audio-Intelligence-adversarial (Sep 2026, -0.55 MANUAL ILLUSTRATIVE);
+    journalist-level instantiation of mechanism 137''s Mansueto Google-dependency
+    outlet finding. Extends the Inc. columnist strand from mechanism 671 (Kit Eaton,
+    #728).'
+  source_urls:
+  - https://www.inc.com/jason-aten/for-years-people-have-worried-their-devices-were-listening-apple-just-made-it-a-feature/91404202
+  - http://www.inc.com/jason-aten/at-i-o-google-just-shipped-apples-ai-promises/91191832
