@@ -432,7 +432,7 @@ class TestFullSuiteTombstone730:
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor tests are deselected pre-commit.
-ANCHORED_SHA = "NOT_YET_COMMITTED_735"
+ANCHORED_SHA = "fc33b3f462f910e93692aff401fd7f599184d9f1"  # main-commit SHA, patched post-commit per #565
 
 
 class TestRotationCycleGuard735:
