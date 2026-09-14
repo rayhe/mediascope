@@ -2393,6 +2393,159 @@ competitor_relationships:
       - "iteration 573 (Nilay Patel Decoder interview-access falsification): different analytical layer (CEO-interview entity selection vs incident-coverage register), different article corpus, second Vox-deal falsification instance"
       - "iteration 507 (ad-monetization register boundary): different news domain (ads monetization vs rogue-agent incident), zero article overlap, #507 is domain-boundary not family member"
       - "iteration 592 (Verge x Google adversarial-litigation boundary): different entity (Google vs OpenAI), Meta comparator arms carried from its set"
+    mechanism_673_verge_openai_doj_soi_coverage_selection_test_sep13:
+      mechanism_id: 673
+      iteration: 732
+      iteration_type: "A"
+      iteration_time: "2026-09-13 20:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      entity_pair: "OpenAI vs Meta"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        Coverage-SELECTION test on the Vox Media x OpenAI strategic
+        partnership (May 29 2024, in-corpus via venturebeat, carried from
+        #507/#573/#598): the DOJ filed a 20-page statement of interest on
+        Sep 1 2026 in the consolidated In re OpenAI Copyright Infringement
+        Litigation (S.D.N.Y. MDL 25-md-03143, Judge Sidney H. Stein) - the
+        first federal government intervention in AI copyright cases - siding
+        WITH OpenAI (the Vox deal partner) AGAINST publishers including the
+        NYT (fact base carried from mechanism 672, #729 Type C). Six
+        browser.search query sets this run surfaced zero theverge.com items
+        on the story (one set returned zero results total); bounded absence
+        per iteration-492, NOT a proven zero. Four days later (Sep 5) The
+        Verge published the adversarial wiki-incident piece (m598, -0.65
+        MANUAL ILLUSTRATIVE). The operative margin is SELECTION not TONE:
+        m598 proves the adversarial register is available on the deal
+        partner when the outlet selects the story. theverge.com
+        policy-blocked for browser.open per standing rule; verification is
+        search-excerpt-bounded, same as #507/#598.
+      finding: >
+        (1) OpenAI arm: carried m598 wiki-incident piece (Sep 5 2026,
+        adversarial delayed-disclosure register, -0.65 MANUAL ILLUSTRATIVE)
+        proves The Verge both selects and covers OpenAI legal-adjacent news
+        adversarially; this-run DOJ SOI selection test (filed Sep 1,
+        reported Sep 2-6 across Reuters/WSJ/USA Today/Reason/TechTimes/ghacks/
+        aiweekly) returns zero theverge.com items in 6 bounded search sets.
+        (2) Meta comparator: carried from #592 same-outlet Meta glasses set
+        ([-0.55, -0.6, -0.5], avg -0.55) as the standing same-outlet
+        adversarial baseline; the Meta arm is NOT a same-domain pair (no
+        Verge Meta-copyright item in corpus; the Kadrey query set this run
+        surfaced no theverge.com item either, same bounded-absence caveat).
+        (3) Selection differential: within one 4-day window the deal partner
+        draws adversarial incident coverage but no indexed coverage of a
+        pro-partner federal legal intervention. (4) Incentive attribution is
+        INCONCLUSIVE: the valence triangle (deal partner OpenAI vs fellow
+        publishers NYT et al vs the government) makes publisher-solidarity
+        cross-pressure an equally-weighted confounder - non-coverage avoids
+        an awkward story for a publisher holding an OpenAI deal regardless
+        of tone incentives. (5) Statistical discipline: no tone pair exists
+        on the SOI arm (no coverage, no tone); engine NOT run;
+        p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT
+        artifact-grade. (6) NOT a falsification-family member: selection
+        finding, not register finding; ledger holds at 24. Correlation is
+        not causation.
+      articles:
+      - entity: "openai"
+        title: "OpenAI Kept DseWiki Agent Breakout Under Wraps for Weeks During Hugging Face Fallout (carried from m598)"
+        date: "2026-09-05"
+        url: "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident"
+        register: "adversarial delayed-disclosure incident coverage"
+        manual_illustrative_tone: -0.65
+        carried_from: "mechanism 598, iteration 607"
+      - entity: "openai"
+        title: "DOJ Statement of Interest in NYT v. OpenAI (Sep 1 2026) - no theverge.com item in 6 bounded search sets"
+        date: "2026-09-01"
+        url: "NONE_SURFACED_BOUNDED_ABSENCE"
+        register: "coverage-selection gap (bounded per iteration-492, not a proven zero)"
+        manual_illustrative_tone: "NOT_SCORED"
+        fact_base: "mechanism 672 (competitor-entities.yaml, #729 Type C)"
+      - entity: "meta"
+        title: "Victoria Song Jul 7 2026 LED-tamper privacy-light piece (carried from #592)"
+        date: "2026-07"
+        register: "adversarial product-safety"
+        manual_illustrative_tone: -0.55
+        carried_from: "iteration 592, same-outlet same-window Meta glasses set"
+      - entity: "meta"
+        title: "Victoria Song Jul 20 2026 pervert-glasses editorial (carried from #592)"
+        date: "2026-07"
+        register: "adversarial editorial"
+        manual_illustrative_tone: -0.6
+        carried_from: "iteration 592, same-outlet same-window Meta glasses set"
+      - entity: "meta"
+        title: "late-Jul 2026 holds-all-the-cards opener with activist mass-surveillance-predator-glasses language (carried from #592)"
+        date: "2026-07"
+        register: "adversarial opener"
+        manual_illustrative_tone: -0.5
+        carried_from: "iteration 592, same-outlet same-window Meta glasses set"
+      peer_context:
+      - outlet: "Reuters"
+        title: "US government backs OpenAI in New York Times copyright case"
+        date: "2026-09-02"
+        url: "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/"
+        register: "wire neutral"
+        note: "carried from mechanism 672 source set (#729)"
+      - outlet: "Wall Street Journal"
+        title: "U.S. Government Backs OpenAI in Copyright Fight With Publishers"
+        date: "2026-09-02"
+        url: "https://www.wsj.com/tech/ai/u-s-government-backs-openai-in-copyright-fight-with-publishers-64a0735b"
+        register: "straight news"
+        note: "carried from mechanism 672 source set (#729); News Corp holds an OpenAI licensing partnership"
+      - outlet: "USA Today"
+        title: "Can AI train on copyrighted work? The government hopes so"
+        date: "2026-09-06"
+        url: "https://www.usatoday.com/story/tech/2026/09/06/doj-openai-nyt-legal-battle-over-copyright-training/91613054007/"
+        register: "explainer, quotes Lessig/Lemley for fair use"
+        note: "carried from mechanism 672 source set (#729)"
+      asymmetry_scorer_result:
+        method: "manual_illustrative"
+        note: "SELECTION-margin test: no tone pair exists on the SOI arm (no coverage, no tone). Scorer not run on a null arm per Aug 28 2026 standing rule."
+        openai_tones: [-0.65]
+        meta_tones: [-0.55, -0.6, -0.5]
+        openai_avg: -0.65
+        meta_avg: -0.55
+        asymmetry_score: "NOT_COMPUTED_SELECTION_TEST"
+        score_direction: "openai_minus_meta"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_drift_check: "engine NOT run this run; no engine divergence pin"
+      confounders_ranked:
+        strong:
+        - "search-index incompleteness: bounded absence across 6 query sets is not proof of non-coverage (per #503/iteration-492); The Verge may have covered the SOI in a newsletter, video, or unindexed page"
+        - "publisher-solidarity cross-pressure: Vox is a publisher; the NYT is a rival publisher; the story is the government siding against publishers - non-coverage is incentive-ambiguous regardless of the OpenAI deal"
+        - "the SOI is advisory and non-binding (28 U.S.C. 517): lower news value than a ruling; a legal filing may simply not clear The Verge's news bar while an agent-breakout incident does"
+        moderate:
+        - "PMC acquired Vox Media in 2026; the May 2024 deal's transfer status is unclear (carried from #425/#507), weakening any 2026 coverage prediction drawn from the deal"
+        - "beat assignment: the wiki incident is AI-beat news with a Verge-native peg (Hugging Face fallout); the SOI is legal-domain news possibly outside the assigned beats on Sep 1-2"
+        - "second-hand verification only (theverge.com policy-blocked for browser.open); selection scored from search-result sets, not a full archive check"
+        weak:
+        - "4-day window is tight but both stories broke within it (Sep 1 filing, Sep 5 wiki piece)"
+        - "Verge house adversarial register toward all big tech inflates the m598 arm; the selection claim rests on coverage presence, not relative tone"
+      counterevidence:
+      - "m598: The Verge CAN and DOES run adversarial OpenAI coverage (wiki incident, -0.65) - tone softening is not the operative margin"
+      - "#592: The Verge covers legal-domain stories adversarially (Verge x Google litigation boundary) - legal domain alone does not explain non-coverage"
+      - "broad pickup elsewhere (Reuters, WSJ, USA Today, Reason, TechTimes, ghacks, aiweekly): the story is high-salience, not a low-news-value filing"
+      - "the SOI is PRO-OpenAI: a naive softness story would predict coverage, not silence - the gap cuts against the simplest deal-softening read"
+      research_method: "browser.search this run (6 targeted query sets, verbatim full-URL listings, since filters 2026-01-15 to 2026-09-01); theverge.com policy-blocked for browser.open per standing rule - no Verge page opened first-hand; SOI fact base carried from mechanism 672 (#729 Type C, competitor-entities.yaml); no zero-coverage claims per iteration-492 rule (absence claims bounded to search-result sets)"
+      statistical_discipline: "MANUAL ILLUSTRATIVE tones only on carried arms; SOI arm NOT_SCORED (no coverage, no tone); p_value/cohens_d/ci_95 NOT_CALCULATED per standing rule Aug 28 2026; is_significant False; engine NOT run; no significance claimed or claimable; correlation_not_causation true; no artifact-grade claims"
+      falsification_family: "NOT a member - selection-margin finding, not a register finding; ledger holds at 24"
+      open_empirical_test: "Does The Verge cover the Sep 14 ANI Division Bench appeal listing or the Sep 4 summary-judgment motion outcomes in the consolidated MDL? A continued selection gap on pro-OpenAI legal developments vs adversarial incident coverage would strengthen the selection-margin pin; coverage would bound it."
+      source_urls:
+      - "https://www.techtimes.com/articles/326401/20260903/doj-backs-openai-fair-use-claim-ai-copyright-fight-creators-must-try-congress.htm"
+      - "https://www.ghacks.net/2026/09/03/trump-administration-backs-open-ai-in-new-york-times-copyright-case-calling-ai-training-fair-use/"
+      - "https://www.aiweekly.co/alerts/doj-backs-openais-fair-use-defense-in-nyt-training-case"
+      - "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident"
+      - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+      novelty_verification: "pre-commit greps: zero mechanism_673 keys repo-wide (underscore and colon forms), zero test_type_a_732 files, no 'Type A #732' in git log, max numeric mechanism_id 672; the 3 this-run source URLs (techtimes, ghacks, aiweekly) zero-hit repo-wide pre-commit; SOI fact URLs carried from mechanism 672 (#729) by design, not re-novelty-claimed"
+      distinct_from:
+      - "mechanism 672 (#729 Type C, competitor-entities.yaml): same event, different analytical layer - 672 maps the political incentive (state power WITH the payer, AGAINST the publisher plaintiff); 673 tests publication-level coverage selection at The Verge. Cross-type follow-up by design."
+      - "mechanism 598 (iteration 607 Type A): same publication x entity, different margin - 598 is a TONE finding (adversarial register available on the deal partner, falsification-family member); 673 is a SELECTION finding (no indexed coverage of the pro-partner intervention). 598 bounds 673: tone is not the operative margin."
+      - "iteration 573 (Nilay Patel Decoder interview-access falsification): different analytical layer (CEO-interview entity selection vs legal-intervention coverage selection), different article corpus"
+      - "iteration 507 (ad-monetization register boundary): different news domain (ads monetization vs copyright-litigation intervention), zero article overlap; 673 extends 507's domain-bounded pattern to the selection margin as a bounded hypothesis"
+      - "iteration 592 (Verge x Google adversarial-litigation boundary): different entity (Google vs OpenAI); 592's Meta comparator arms carried as the standing same-outlet baseline"
   meta:
     financial_tie: "none"
     estimated_value: "$0"
