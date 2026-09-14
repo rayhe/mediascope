@@ -497,13 +497,23 @@ class TestRotationCycleGuard735:
             )
 
     def test_anchor_is_main_commit_patched_in_followup(self):
-        """Rotation window 731-735 closes E->D. Anchor patched in followup per #565."""
+        """Rotation window 731-735 closes E->D. Anchor patched in followup per #565.
+
+        The main commit is selected robustly: followup and push-pending-note
+        commits also carry the "Type D #735:" subject, so the naive newest-match
+        would shadow the main commit once the note is committed (the #731-#734
+        runs only passed because they verified before committing their notes).
+        """
         result = _git("log", "--format=%H %s")
         assert result.returncode == 0
         mains = [
-            line for line in result.stdout.splitlines() if "Type D #735:" in line
+            line for line in result.stdout.splitlines()
+            if "Type D #735:" in line
+            and "followup" not in line
+            and "push-pending note" not in line
         ]
-        main = mains[0].split()[0] if mains else ""
+        assert len(mains) == 1, f"expected exactly one Type D #735 main commit, got {mains}"
+        main = mains[0].split()[0]
         assert self.ANCHORED_SHA == main, (
             "anchor patched in followup per #565 convention"
         )

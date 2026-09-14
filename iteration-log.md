@@ -16,7 +16,7 @@
 
 **Novelty Verification:** Zero test_type_d_735 files on disk pre-commit (glob verified); no Type D commit with 735 in the title pre-commit (git log --grep verified); zero mechanism_676 keys in profiles/ pre-commit (grep verified, sweep-carriers excluded per #715); max numeric mechanism_id 675 post-#734; no Type D run covering mechanisms 673-675 jointly before (the #730 file covered 670-672).
 
-**Commit hashes:** main fc33b3f462f910e93692aff401fd7f599184d9f1 (verified via git rev-parse); anchor followup d5168c018cd1ea7aa5b2bf893ca5f583b8f6826d patches ANCHORED_SHA to fc33b3f and re-runs anchor + doc-sync + full rotation guard green post-followup (10/10) per #565.
+**Commit hashes:** main fc33b3f462f910e93692aff401fd7f599184d9f1 (verified via git rev-parse); anchor followup d5168c018cd1ea7aa5b2bf893ca5f583b8f6826d patches ANCHORED_SHA to fc33b3f and re-runs anchor + doc-sync + full rotation guard green post-followup (10/10) per #565; rotation-guard hardening followup (this run) makes the anchor main-commit selection robust to push-pending-note subjects (naive newest-match shadowed the main commit once the note landed; final full-file run 44/44 green).
 
 **Push status:** BLOCKED this run (23:30 PDT Sep 13) - egress proxy hatch-egress-proxy:3128 TCP connection-refused (verified via /dev/tcp); outage continuous since #731's 15:00 PDT report. All 83 local commits (80 carried + 3 from this run) remain local-only. Retry next run.
 
