@@ -33591,4 +33591,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Rotation guard: 732-736 window closes A->E (A #732 -> B #733 -> C #734 -> D #735 -> E #736; anchor patched post-commit per #565). No analysis.json update warranted.
 - 27-test file (26 green pre-commit, anchor 1 deselected per #565 convention, rotation-window 2 fail pre-main-commit by design; anchor + full rotation guard green post-followup).
 - Commit hashes (followup): main commit 7fe8a139ee783dc334722695ef5cfced1ca16b35 ("Type E #736: podcast sentiment 70th verification cycle (Sep 14 2026, 00:00 PDT) - GF 500-watch holds on projected day Sep 14, EHE 37-day hold, Attention Sphere 70th no-match"); anchor followup (ANCHORED_SHA patched per #565, anchor + full rotation guard green 29/29); log-hash followup updates this line
-- Push status (this run): [PENDING PUSH ATTEMPT]
+- Push status (this run, 00:30 PDT Sep 14): BLOCKED. Egress proxy hatch-egress-proxy:3128 TCP connection-refused (verified via /dev/tcp); outage continuous since #727's 15:00 PDT report. All 86 local commits (83 carried + 3 from this run) remain local-only. Retry next run.
