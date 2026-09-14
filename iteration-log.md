@@ -33784,4 +33784,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - New Type D files: tests/test_type_d_750_m682_m683_m684_qualitative_corpus_integrity_sep14_4pm.py - 10 classes, 66 tests (65 green pre-commit, anchor 1 deselected per #565 convention, patched green in followup).
 - Artifact readiness: No analysis.json update warranted. Verification-layer run; no new empirical findings, only discipline checks on existing mechanisms.
 - Commit hashes: main c89819e9c32b4d0ed7203acba7968274cad50c3e; anchor followup 8604e88 (ANCHORED_SHA patch per #565; anchor + full rotation guard green post-followup; novelty pre-commit test red by design post-commit, matching #745 precedent).
-- Push status: PENDING (to be determined at push step this run).
+- Push status: BLOCKED (egress proxy hatch-egress-proxy:3128 connection refused at Sep 14 2026 ~16:45 PDT; outage continuous since Sep 13 15:00 PDT). All local commits (c89819e/8604e88/aa2e35f plus the still-unpushed #742/#743/#744/#745 chains) remain local-only. No success invented; retry next run once the outage clears.
