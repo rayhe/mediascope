@@ -33702,5 +33702,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Rotation guard: 740-744 window closes D->E->A->B->C (anchor patched post-commit per #565). #743's max-680 sweep fails by designed supersession (#710/#720); #743's zero-681 profile sweep stays green by designed keying (#723); ledger holds at 24.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative 37904 tests across 1072 test files (pytest --collect-only this run; 39 files with pre-existing collection errors from missing textblob module, unrelated to this iteration).
 - 72-test file (anchor 1 deselected pre-commit per #565 convention, patched green in followup).
-- Commit hashes (followup): main commit <MAIN_SHA>; anchor followup <ANCHOR_SHA> (ANCHORED_SHA patched per #565, anchor + full rotation guard green 72/72); log-hash followup updates this line.
+- Commit hashes (followup): main commit a78480f1c37d596ec7e46309967181588057803e; anchor followup 501913da0c3c96d889dc02dd6cbc934eba18c1c8 (ANCHORED_SHA patched per #565, anchor + full rotation guard green 72/72); log-hash followup updates this line.
 - Push status (this run): BLOCKED. Fleet egress outage persists (hatch-egress-proxy:3128 TCP connection refused; outage continuous since Sep 13 15:00 PDT per #727 through #743 reports). All local commits remain local-only. Retry next run.
