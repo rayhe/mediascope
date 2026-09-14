@@ -8122,7 +8122,7 @@ cross_publication_findings:
       day_7_register: aspirational
       day_7_topic: OpenAI camera+FR companion = "quietly follows users"
       span_days: 20
-    test_count: 45
+    test_count: 47
     test_file: tests/test_digital_trends_openai_companion_aspirational_coverage_meta_adversarial_vocabulary_aug19.py
   dispatch_markets_newsletter_podcast_economic_framing_pipeline:
     asymmetry_score: 0.68
@@ -15528,7 +15528,7 @@ cross_publication_findings:
     - https://www.adweek.com/media/openais-ad-business-is-on-pace-to-miss-its-own-forecast-by-90-analyst-says/
     - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
     - https://www.pulse.bot/entertainment/news/openai-not-planning-to-share-advertising-revenue-with-publishers-9d05c358-0f4b-465f-8ee5-b27c3bd3461c/
-    test_count: 45
+    test_count: 47
     test_file: tests/test_openai_zero_ad_revenue_share_publisher_financial_captivity_aug19.py
   parallel_publisher_copyright_litigation_financial_conflict:
     confounding_factors:
@@ -16059,7 +16059,7 @@ cross_publication_findings:
     - https://petapixel.com/2026/03/09/meta-sued-after-workers-watched-private-moments-recorded-on-ai-smart-glasses/
     - https://petapixel.com/2026/06/10/smart-glasses-in-pennsylvania-may-soon-legally-require-a-visible-recording-light/
     - https://petapixel.com/2026/03/24/these-smart-glasses-come-with-a-cover-for-the-camera-inmo-go-3/
-    test_count: 45
+    test_count: 47
     test_file: tests/test_petapixel_camera_publication_coverage_selection_samsung_zero_aug19.py
     vocabulary_inventory:
       meta_alarm_terms:
@@ -25140,6 +25140,119 @@ cross_publication_findings:
       second outlet.'
     verdict: directionally_supported_not_proven
 
+  hamish_hector_techradar_snap_sci_fi_vs_meta_alarm_register_gradient:
+    competitor: Snap/Meta
+    confounders:
+    - 'STRONG: Search-excerpt-bounded evidence on the Snap arm only this run (browser.open
+      declared terminal per developer constraint; excerpt fidelity relies on the search
+      index, not page reads).'
+    - 'STRONG: Topic asymmetry between arms: the Meta arm is a sales-popularity reaction
+      piece (a peg that structurally invites cultural-anxiety framing), the Snap arm
+      is an AWE prototype hands-on (a peg that structurally invites tech-enthusiasm);
+      the register differential may be peg-driven, not entity-driven.'
+    - 'STRONG: n=1 per arm; single-column variance cannot be ruled out (Hector''s register
+      varies by story, as all columnists'' do).'
+    - 'MODERATE: Byline on the Snap arm verified via third-party reprint (ispr.info
+      quoting the TechRadar piece: "By Hamish Hector, June 17, 2026"), not a page-rendered
+      byline (browser.open unavailable); reprint attribution is a standard but second-hand
+      byline source.'
+    - 'MODERATE: The Meta arm''s framing characterization (alarm_hedged, privacy vocabulary
+      frightening/worrying/creepy/concerned/scary) is the corpus''s m115 coding, not
+      re-verified this run; the differential inherits that coding''s uncertainty.'
+    - 'MODERATE: Six-week temporal gap between arms (Meta piece in-corpus, Snap Jun 17
+      2026); columnist register can drift over a product cycle.'
+    - 'WEAK: The product tiers differ: Meta''s $379 mass-market camera glasses in public
+      spaces versus Snap''s $2,195 developer-tier hardware; different consumer risk
+      profiles could plausibly justify different privacy attention, bounding the entity
+      reading.'
+    - 'WEAK: Future plc''s Google traffic dependency (m115 outlet context) is outlet-level
+      financial context, not journalist-level evidence about Hector''s motives; attributing
+      the Snap softness to it risks the ecological fallacy - stated as illustrative
+      only.'
+    - 'WEAK: Bounded absence: no Hector Android XR/Xiaomi wearables pieces surfaced in
+      bounded queries this run (iteration-492 convention applies to the same-arm check),
+      so no three-point within-journalist gradient can be tested yet - not a proven zero.'
+    connects_to:
+    - 115
+    - 150
+    - 354
+    - 362
+    - 395
+    - 671
+    - 677
+    counterevidence:
+    - 'COUNTEREVIDENCE: Hector''s Meta piece is hedged, not purely adversarial ("exciting
+      AND frightening in equal measure") - the alarm is balanced by genuine enthusiasm,
+      which weakens the adversarial reading of the Meta arm.'
+    - 'COUNTEREVIDENCE: The Snap peg (AWE prototype hands-on) structurally invites "sci-fi"
+      enthusiasm; a Snap privacy-scandal peg might have drawn Hector''s alarm register
+      too, which would collapse the entity-gradient reading.'
+    - 'COUNTEREVIDENCE: Snap is not a Future plc payer in corpus, so the naive payer-softening
+      predictor does NOT predict Snap softness - the gradient needs a different mechanism
+      (novelty/tech-enthusiast bias vs Meta-specific stigma), and a two-column sample
+      cannot choose between them.'
+    discovery_date: '2026-09-14'
+    finding: 'Hamish Hector (TechRadar, Senior Staff Writer, VR/AR/Wearables/Smart Glasses
+      beat) shows a journalist-level cross-entity register gradient: Snap-aspirational
+      versus Meta-alarm, in the same first-person TechRadar column register. Snap arm
+      (NEW, Jun 17 2026, byline verified via third-party reprint quoting "By Hamish
+      Hector, June 17, 2026"; Search-excerpt-bounded per developer constraint): "Snap''s
+      AR glasses cost $2,195 - and despite the high price, I think they could be the
+      best XR gadget of 2026 if they live up to their prototype" - "They''re incredible,
+      truly sci-fi, and cost $2,195 (Around 1,640)"; "nothing quite like the Snap Specs
+      on the market right now, and that''s a major advantage for Snap as it leapfrogs
+      Meta, Android XR, and the rest." Zero surveillance or privacy vocabulary in the
+      surfaced excerpt despite the Specs carrying strictly MORE sensor hardware than
+      Meta''s single 12MP camera (dual Snapdragon, hand tracking, environment meshing,
+      spatial anchoring; the fifth-gen Spectacles line carried four cameras plus a
+      six-mic array). MANUAL ILLUSTRATIVE Snap-arm register +0.55. Meta arm (in-corpus
+      since m115): "The Ray-Ban Meta smart glasses are majorly popular, which is exciting
+      and frightening in equal measure" - corpus-coded alarm_hedged with privacy vocabulary
+      frightening/worrying/creepy/concerned/scary/"wearable recording devices", every
+      positive paired with an alarm counterpart, Google Glass assault stories invoked.
+      Price inversion: the $2,195 device gets aspirational register while the $379 device
+      gets alarm register - price does not explain the differential. Apple arm (corpus
+      context): Hector''s Vision Pro column calls it "the most sophisticated, powerful,
+      and coolest hardware Apple ever built" despite $3,499 - admiring, no alarm. JOURNALIST-LEVEL
+      INSTANTIATION of mechanism 115: the outlet-level finding documented Future plc''s
+      Google traffic dependency correlating with softer non-Meta coverage; Hector''s
+      own Snap-aspirational column is the journalist-level case, now paired against
+      his Meta-alarm column. EXTENSION of the #728/#738 columnist strand: Kit Eaton
+      and Jason Aten gave Inc. its Meta-positive/Apple-adversarial inversion; Hector
+      adds a TechRadar Meta-alarm/Snap-aspirational gradient - now two outlets where
+      same-journalist cross-entity pairs diverge on camera-wearables. Contrast with
+      mechanism 354 (WIRED Chokkattu price-hostile on the same $2,195 Snap device):
+      same hardware, same price, opposite registers across outlets - an outlet-level
+      divergence worth a future three-journalist panel. MANUAL ILLUSTRATIVE: p_value
+      NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant
+      False, engine NOT run, NOT artifact-grade, no engine divergence pin. Verdict:
+      directionally_supported_not_proven. NOT a falsification-family member (ledger
+      holds at 24). Correlation is not causation.'
+    finding_type: journalist_cross_entity
+    iteration: 743
+    journalist: Hamish Hector
+    mechanism_id: 680
+    publication: TechRadar (Future plc)
+    rotation_type: B
+    source_urls:
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/snaps-ar-glasses-cost-usd2-195-and-despite-the-high-price-i-think-they-could-be-the-best-xr-gadget-of-2026-if-they-live-up-to-their-prototype
+    - https://ispr.info/2026/06/18/snap-specs-ar-glasses-use-new-combo-of-xr-tech-to-evoke-impressive-presence/
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-smart-glasses-are-majorly-popular-which-is-exciting-and-frightening-in-equal-measure
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/i-dont-know-if-vision-pro-is-alive-or-dead-but-it-is-still-the-most-sophisticated-powerful-and-coolest-hardware-apple-ever-built-and-we-can-surely-thank-it-for-the-glasses-that-will-follow
+    test_count: 47
+    test_file: tests/test_type_b_743_hamish_hector_techradar_snap_sci_fi_vs_meta_alarm_register_gradient_sep14_8am.py
+    testable_predictions:
+    - 'If Hector publishes a Meta wearables column that drops the alarm hedge after
+      the Aug 27 2026 LED tamper-proof fix, the gradient narrows and the differential
+      is fix-responsive, not entity-fixed.'
+    - 'If Hector applies his alarm vocabulary to the Snap Specs consumer launch (Sep
+      16 2026 LA event, fall 2026 shipping), the gradient is peg-driven and collapses
+      on a consumer peg.'
+    - 'If a second TechRadar writer (e.g. Krol) covers Snap Specs with alarm vocabulary,
+      the Hector gradient is journalist-specific, not outlet-level; if TechRadar''s
+      Specs coverage stays uniformly aspirational, the outlet-level reading hardens.'
+    verdict: directionally_supported_not_proven
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -28566,7 +28679,7 @@ publications:
     - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
     - https://ambermac.com/the-ambermac-show-ep056-metas-pervert-smart-glasses-openais-canadian-safety-promise/
     - 'https://www.youtube.com/watch?v=gxZj-XGIQ3Y'
-    test_count: 45
+    test_count: 47
     test_file: tests/test_type_e_5pm_macrumors_show_apple_camera_airpods_aspirational_framing_cross_medium_privacy_vocabulary_zero_aug22.py
     type: E
   malcolm_owen_appleinsider_cross_entity_aspirational_cautionary_dyad_mechanism_234:

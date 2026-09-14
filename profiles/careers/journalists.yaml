@@ -18949,8 +18949,22 @@ hamish_hector:
       google_glass_assault_stories_invoked: true
       mechanism_id: 115
     samsung_google_coverage: none_found
+    snap_specs_2026:
+      headline: Snap's AR glasses cost $2,195 - and despite the high price, I think they could be the best XR gadget of 2026 if they live up to their prototype
+      date: '2026-06-17'
+      tone: aspirational
+      framing:
+      - incredible
+      - truly sci-fi
+      - best XR gadget of 2026
+      - leapfrogs Meta
+      privacy_vocabulary_count: 0
+      byline_verification: 'third-party reprint (ispr.info) quoting "By Hamish Hector, June 17, 2026"; browser.open terminal this run'
+      mechanism_id: 680
   mechanism_ids:
   - 115
+  - 680
+  notes: 'Hamish Hector (TechRadar, VR/AR/Wearables/Smart Glasses beat): mechanism 680 (Type B #743, Sep 14 2026) pairs his aspirational Snap Specs $2,195 column (Jun 17 2026, "truly sci-fi", zero privacy vocabulary despite dual-Snapdragon/hand-tracking/environment-meshing sensor hardware) against his in-corpus alarm_hedged Meta Ray-Ban column (m115: "exciting and frightening in equal measure", frightening/worrying/creepy/scary vocabulary) - journalist-level INSTANTIATION of mechanism 115.'
 philip_berne:
   name: Philip Berne
   current_role: Editor
