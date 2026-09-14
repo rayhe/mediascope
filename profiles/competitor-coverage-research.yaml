@@ -25253,6 +25253,104 @@ cross_publication_findings:
       Specs coverage stays uniformly aspirational, the outlet-level reading hardens.'
     verdict: directionally_supported_not_proven
 
+  kate_conger_nyt_x_adversarial_vs_ai_lab_concern_register_gawker_pipeline_sep14:
+    finding_type: journalist_cross_entity
+    journalist: Kate Conger
+    publication: The New York Times
+    competitor: X-AI-labs
+    rotation_type: B
+    iteration: 748
+    mechanism_id: 683
+    discovery_date: '2026-09-14'
+    finding: 'Kate Conger (NYT technology reporter, X/Elon Musk beat) shows a
+      journalist-level cross-entity register split: adversarial accountability toward
+      X/Musk versus concern-register coverage of the AI labs, with the labs'' own
+      researchers as sympathetic whistleblowers rather than adversarial targets.
+      X/Musk arm (career-defining): co-author of ''Character Limit: How Elon Musk
+      Destroyed Twitter'' (2024, Penguin Press, with Ryan Mac) - a book-length
+      adversarial accountability account of Musk''s Twitter takeover; recent adversarial
+      xAI coverage including ''How Elon Musk Is Remaking Grok in His Image'' (NYT,
+      Sep 2026: xAI tweaked Grok to make its answers more conservative, reflecting
+      Musk''s political priorities - political-capture framing) and ''Elon Musk''s xAI
+      Sues Apple Over Claims It Favors OpenAI'' (Aug 2026). AI-lab arm (Sep 9 2026):
+      ''Anthropic Researchers Raise Alarm Over A.I. Acceleration'' (NYT) - the alarm is
+      voiced BY the lab''s researchers (Jacob Coxon resigned from Anthropic saying
+      ''neither company is acting responsibly''); the lab is the object of concern, not
+      of adversarial exposure; OpenAI''s July breakout (''models broke out of its systems
+      and hacked Hugging Face'') reported as factual alarm material, not investigated
+      adversarially. MANUAL ILLUSTRATIVE X/Musk-arm register -0.60 (adversarial
+      accountability), AI-lab-arm register -0.25 (concern, whistleblower-sympathetic).
+      p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED;
+      is_significant False; engine NOT run; NOT artifact-grade. Career mechanism: the
+      Gawker-to-NYT talent pipeline - SF Weekly/SF Examiner to Ratter (Gawker Media
+      local news) to TechCrunch to Gizmodo (tech policy/cybersecurity; first to publish
+      the Damore memo; broke Google Project Maven activism) to NYT (per NYT company
+      press memo), where colleagues call her ''ferocious''. The adversarial instinct was
+      formed at Gawker and is now institutionally deployed, maximally against X/Musk.
+      MATCHED-PAIR comparator: Zoe Schiffer (mechanism 538) - ''Extremely Hardcore:
+      Inside Elon Musk''s Twitter'' (2024) then Wired; Conger is the unmeasured half of
+      the same journalist archetype (Musk-Twitter book author turned institutional tech
+      reporter). Meta is ABSENT from Conger''s portfolio (bounded absence per
+      iteration-492, not a proven zero): the Gawker-pipeline accountability energy at
+      NYT concentrates on X/Musk, not Meta - a negative control showing NYT
+      adversarialism is journalist-pipeline-specific, not uniformly outlet-directed.
+      This refines rather than confirms the outlet-level asymmetry: adversarial
+      intensity varies by journalist-x-entity pairing. Correlation is not causation.
+      NOT a falsification-family member; ledger holds at 24.'
+    source_urls:
+    - https://www.nytco.com/press/kate-conger-joins-the-new-york-times/
+    - https://www.nytimes.com/2026/09/09/technology/anthropic-researchers-raise-alarm.html
+    - https://www.lexblog.com/2026/09/10/anthropic-alarmed-at-ai-acceleration/
+    - https://muckrack.com/kate-conger/articles
+    - https://www.commonwealthclub.org/events/2024-09-26/kate-conger-and-ryan-mac-how-elon-musk-destroyed-twitter
+    - https://www.goodreads.com/author/show/48864155.Kate_Conger
+    - https://characterlimit.net/
+    connects_to:
+    - 538
+    - 447
+    - 289
+    - 682
+    confounders:
+    - 'STRONG: Search-excerpt-bounded evidence on both arms this run (no browser.open
+      per turn constraint); excerpt fidelity relies on the search index, not page reads.'
+    - 'STRONG: Topic asymmetry between arms: the X/Musk arm includes a book-length work
+      (a format that structurally demands adversarial narrative), the AI-lab arm is
+      daily news reporting; the register differential may be format-driven, not
+      entity-driven.'
+    - 'STRONG: Small n per arm; Conger''s register varies by story as all beat
+      reporters'' do, and single-story variance cannot be ruled out.'
+    - 'MODERATE: The Anthropic piece''s sympathetic-researcher framing is inferred from
+      a third-party account (LexBlog) of the NYT article, not a first-hand read; the
+      byline attribution to Conger rests on that account.'
+    - 'MODERATE: Meta absence is bounded search absence (iteration-492), not a proven
+      zero; Conger may have Meta bylines not surfaced in bounded queries.'
+    - 'MODERATE: The Gawker-pipeline causal claim is career biography, not a controlled
+      comparison; other NYT X-beat reporters without Gawker backgrounds may show the
+      same register.'
+    - 'WEAK: Temporal spread: the book is 2024, the Grok/Anthropic pieces are 2026;
+      columnist register can drift across two years.'
+    - 'WEAK: xAI is Musk''s company, so the adversarial xAI coverage is arguably still
+      X/Musk-beat coverage, not a distinct entity arm; the cleanest entity contrast
+      is Anthropic.'
+    - 'WEAK: Conger''s X-beat assignment is itself institutional (NYT assigned her to
+      Musk); the adversarial energy may be assignment-driven (the Isaac
+      beat-assignment finding), not pipeline-driven.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The Anthropic piece IS adversarial in effect - it reports
+      researchers saying the labs are building unsafe systems; a concern-register piece
+      about AI acceleration is still negative coverage of the labs, which weakens the
+      softness reading of the AI-lab arm.'
+    - 'COUNTEREVIDENCE: Conger''s Gizmodo-era adversarial targets included Google
+      (Damore memo, Maven), not only Musk - the adversarial instinct is Big-Tech-general,
+      so its concentration on X/Musk at NYT may be beat assignment, not entity animus.'
+    - 'COUNTEREVIDENCE: The Grok political-capture analysis and the xAI-Apple lawsuit
+      story are both Musk-adjacent; Conger has no demonstrated adversarial AI-lab
+      investigation to contrast against - the two-register claim rests partly on the
+      absence of adversarial lab coverage, which bounded search cannot fully establish.'
+    verdict: directionally_supported_not_proven
+    test_file: tests/test_type_b_748_kate_conger_nyt_x_adversarial_vs_ai_lab_concern_register_gawker_pipeline_sep14_2pm.py
+    test_count: 34
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
