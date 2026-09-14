@@ -336,6 +336,106 @@ competitor_relationships:
       distinct_from_prior: 'First dedicated News Corp x OpenAI mechanism since #532 with a new event window (Sep 2-9 liability/launch window), new OpenAI article set (Wells Tumbler Ridge liability, Bruell DOJ copyright backing), first-hand reads on both OpenAI pieces, Meta arm carried from #632 with an added first-hand disclosure check, and the first logged disclosure-register observation (OpenAI disclosure present, Meta disclosure absent).'
       author: 'Kit (with Ray)'
       correlation_not_causation: true
+    wsj_openai_altman_slowdown_relay_vs_anthropic_moral_conflict_sep14:
+      mechanism_id: 679
+      iteration: 742
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-14'
+      time_pdt: '07:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'WSJ x OpenAI Slowdown-Week Altman Relay (Sep 14 2026) - Constructive CEO-Framing Relay vs Anthropic Moral-Conflict Adversarialism; Dual-Payer Symmetry Extension'
+      key_design_note: 'Descriptive block key carries no underscore-form 679 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the #740 zero-679 sweep instruments green while mechanism_id advances in colon form.'
+      overview: 'The Wall Street Journal published a same-week pair with opposite registers toward the two frontier labs. On Mon Sep 14 2026, Gareth Vipers'' WSJ piece "Microsoft Sets Limits for AI Models as Altman Details Control Risks" relays Sam Altman''s overnight X-post safety comments constructively: federal framework welcomed, "pacing" framed as responsible, and the potential IPO delay presented as a safety call. On Sun Sep 13, the same paper ran "Anthropic''s Moral Conflict Is Playing Out in Real Time" - adversarial moral framing of the non-payer. News Corp collects ~$50M/yr from OpenAI (May 2024, $250M/5yr) and $0/yr in AI licensing from Anthropic (only a HarperCollins settlement-revenue share, a different vector). The within-week OpenAI-minus-Anthropic illustrative delta is +0.55, directionally consistent with the deal predictor (payer softer than non-payer). This EXTENDS the m616 dual-deal symmetry window (#519): OpenAI-vs-Meta gap stays small under symmetric softening, while the OpenAI-vs-Anthropic gap is the one the incentive structure predicts.'
+      articles_this_run:
+        - title: 'Microsoft Sets Limits for AI Models as Altman Details Control Risks'
+          publication: Wall Street Journal
+          byline: Gareth Vipers
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/altman-says-ais-rapid-progress-could-go-very-badly-1e840a6c'
+          url_status: 'NOVEL this run - zero hits repo-wide pre-commit'
+          research_method: 'first_hand_browser_open_41_rendered_lines'
+          register: 'constructive_ceo_framing_relay'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          key_quotes:
+            - 'warning that the dizzying pace of progress could go "very badly" and that humans could lose "control of the future to AI"'
+            - '"We welcome a federal framework that sets consistent safety requirements for frontier AI," Altman said in a post on X overnight. "No amount of American competitive pressure should justify recklessness," he said.'
+            - 'Altman said "pacing" the advancement of AI tools didn''t mean stopping. "Progress has been rapid and will continue to be," he wrote. "But it should be slower than it otherwise could be; interventions like safety cases and monitoring have significant costs." He has suggested that OpenAI might need to delay its much anticipated initial public offering to focus on safety.'
+            - 'His warning came days after one of his employees stoked fears that there was a greater than 10% chance that AI systems could destroy civilization.'
+            - 'The debate over the rapid progress of AI development was sparked following a series of hacks by AI agents in recent months.'
+          tone_observations:
+            - 'Altman''s safety narrative is relayed at length and unchallenged; the IPO delay is framed as a safety call with no market-timing skepticism in the surfaced text (no $1T valuation figure, no SpaceX-slide cautionary tale from Fortune''s own framing, no Motley Fool Aug 29 financial-convenience read).'
+            - 'The one adversarial-adjacent line - "stoked fears" - aims at Anthropic''s Coxon (the non-payer), not at Altman.'
+            - 'Lead news peg is Microsoft''s code of conduct; OpenAI is the secondary element, so the tone is respondent-positioning as much as editorial choice (confound logged).'
+          disclosure_observation: 'No inline News Corp-OpenAI licensing disclosure in the 41-line surfaced text (contrast #532 and #616 OpenAI pieces where it appeared). Caveat: paywall render may truncate boilerplate; confounded by disclosure-relevance-by-topic (a CEO-commentary piece is not a publisher-licensing story). Logged as observation, not evidence.'
+      articles_carried_peer_context:
+        - title: 'Biggest AI Rivals Agree They Need to Slow It Down'
+          publication: Wall Street Journal
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-slow-the-pace-a4267b56'
+          url_status: 'carried from #737 (m676 peer context) by design'
+          register: 'balanced_duo_framing'
+          tone_MANUAL_ILLUSTRATIVE: 0.05
+          note: 'Altman positioned as cooperative respondent ("said on X he agreed", "will do the same" on evaluators). Carried at identical values, no rescoring.'
+        - title: 'Anthropic''s Moral Conflict Is Playing Out in Real Time'
+          publication: Wall Street Journal
+          date: '2026-09-13'
+          url: 'https://www.wsj.com/tech/ai/anthropics-moral-conflict-is-playing-out-in-real-time-c503e0c1'
+          url_status: 'carried from #737 sources by design'
+          register: 'adversarial_moral_framing'
+          tone_MANUAL_ILLUSTRATIVE: -0.45
+          note: 'Adversarial moral framing of Anthropic, the entity with no News Corp AI licensing deal. Carried at identical values, no rescoring.'
+      meta_comparator_carried:
+        - 'WSJ Meta Muse-launch pieces avg +0.35 aspirational (m616, carried, no rescoring)'
+        - 'WSJ Meta smartglasses (Jul 15) and AI-layoff-discrimination (Jul 14) pieces adversarial (corpus, carried)'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'openai'
+        peer_entity: 'anthropic'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.10, 0.05]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.45]
+        target_avg: 0.075
+        peer_avg: -0.45
+        delta: 0.525
+        delta_note: 'OpenAI avg +0.075 minus Anthropic -0.45 equals +0.525. Direction: payer (OpenAI, ~$50M/yr) softer than non-payer (Anthropic, $0 AI licensing) in the same slowdown-week window - directionally CONSISTENT with the financial-incentive predictor.'
+        meta_arm_note: 'OpenAI avg +0.075 vs Meta arm +0.35 (m616 carried) - small gap, directionally consistent with #519 dual-payer symmetric softening (both payers ~$50M/yr).'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, n=2 OpenAI / n=1 Anthropic, carried arms un-rescored. Engine NOT run. DO NOT claim empirical significance.'
+        within_arm_register_range: 'OpenAI arm range 0.05 (+0.05 to +0.10) is narrow, but the full WSJ OpenAI corpus arm including m616''s Tumbler Ridge -0.55 spans 0.65 - the same "register range exceeds the gap" pattern as #632''s Microsoft arm and #616. Incident liability coverage, not entity favoritism, drives the hard end.'
+      finding: 'Register MIXES within one month on the same payer: incident/liability watchdog (Tumbler Ridge -0.55, m616, the hardest OpenAI register in the WSJ corpus, twelve days earlier) vs constructive CEO-briefed safety framing (+0.10 this run). The slowdown-week within-publication contrast maps to the deal structure on the OpenAI-vs-Anthropic axis (+0.525 illustrative delta, payer softer than non-payer) while the OpenAI-vs-Meta axis stays near-symmetric per #519. Incentive attribution is INCONCLUSIVE: the Altman piece''s lead peg is Microsoft''s announcement, the tone is respondent-positioning, and m616''s Tumbler Ridge precedent bounds any capture reading. NOT a falsification-family member - register-mix refinement, not a uniform-prediction test. Ledger holds at 24. NOT artifact-grade. Correlation is not causation.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted.'
+      confounders_ranked:
+        strong:
+          - 'Topic and genre skew: overnight X-post CEO commentary relay vs investigative moral-conflict feature vs liability investigation are different news events with different natural registers; the commentary relay would draw stenographic treatment on any entity.'
+          - 'News-peg structure: the piece''s lead peg is Microsoft''s code of conduct; OpenAI is the secondary element. The constructive tone is respondent-positioning as much as editorial choice.'
+          - 'Tumbler Ridge precedent (m616): the same publication ran the hardest OpenAI register in the WSJ corpus (-0.55) twelve days earlier, bounding any capture reading of this run''s +0.10.'
+        moderate:
+          - 'Desk and byline skew: Gareth Vipers vs Georgia Wells (law/courts) - different desks apply different registers (same class as #522/#527).'
+          - 'Timing: Sep 13 vs Sep 14 - adjacent days, same slowdown-week window, unmatched days.'
+          - 'First-hand read is a 41-rendered-line paywall surface; full text may carry additional context (disclosure boilerplate, added scrutiny) not in the surfaced render.'
+        weak:
+          - 'n=1 new article; hand-assigned illustrative tones, not empirical corpus scores.'
+          - 'The IPO-delay market-timing counter-narrative exists in non-WSJ press (Fortune''s own $1T/SpaceX framing, Motley Fool Aug 29); its absence from the WSJ piece is a bounded-absence observation, not evidence of suppression.'
+          - 'No disclosure in surfaced text may be render truncation, not editorial choice.'
+      bounded_absence: 'No WSJ item in the Sep 13-14 window pressing the IPO-delay-as-market-timing read surfaced across 2 bounded query sets this run (WSJ OpenAI Altman interview; Vox OpenAI Altman slowdown). Bounded search-result absence per iteration-492, not a proven zero.'
+      counter_evidence:
+        - 'm616 (Sep 2-9): WSJ ran the Tumbler Ridge liability investigation at -0.55 on OpenAI with inline deal disclosure - the hardest OpenAI register in the corpus, directionally opposite to a uniform-softening prediction.'
+        - '#532 (Sep 5): near-symmetry (OpenAI -0.20 vs Meta -0.275) in the Astra cyber-rating vs $18B settlement window - the dual-deal prediction is window-dependent.'
+        - 'The Altman piece''s "stoked fears" line shows the same page CAN do mild adversarialism - aimed at the non-payer, which is the incentive-consistent direction, but also consistent with plain news judgment about an extraordinary claim.'
+      relation_to_616: 'Direct extension of m616''s dual-deal symmetry window into Sep 13-14: new event window (slowdown-week CEO commentary vs moral-conflict investigation), new article set, first-hand read on the Altman piece, Meta arm carried. The register-range-exceeds-gap pattern is shared; the OpenAI-vs-Anthropic axis is new to the symmetry analysis.'
+      relation_to_737: 'Complements m676 (FT x Anthropic slowdown-week profitability scoop): #737 showed FT mixing watchdog and constructive registers on Anthropic; this run shows WSJ mixing watchdog (m616) and constructive (this run) registers on OpenAI. Both publications'' slowdown-week coverage is register-mixed, and both mixes align with each paper''s deal structure (FT: OpenAI deal, Anthropic $0; WSJ/News Corp: both payers, Anthropic $0).'
+      distinct_from_prior: 'FIRST dedicated WSJ x OpenAI slowdown-week mechanism; first dedicated mechanism on the Sep 14 2026 Altman "very badly" piece (URL zero-hit repo-wide pre-commit); first WSJ OpenAI-vs-Anthropic within-publication axis in the corpus (prior News Corp legs paired OpenAI with Meta or Microsoft).'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing); Meta leg Mar 2026 (up to $50M/yr, 3yr, Dow Jones news leg per #549); Anthropic leg $0 AI licensing (only HarperCollins settlement-revenue share, different vector). #519 predicts symmetric softening on the OpenAI-vs-Meta axis; the incentive structure predicts OpenAI softer than Anthropic on the within-week axis. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      research_method: '4 browser.search query sets this run (The Atlantic OpenAI; WIRED OpenAI slowdown; WSJ OpenAI Altman interview; Vox OpenAI Altman slowdown) + 1 first-hand browser.open (WSJ Altman piece, 41 rendered lines, byline Gareth Vipers). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes. #503 second-hand grade not needed - the anchor article was read first-hand.'
+      novelty: 'Zero test_type_a_742 files on disk pre-commit; no "Type A #742" in git log pre-commit; the Altman piece URL (very-badly-1e840a6c) zero-hit repo-wide pre-commit; the "Biggest AI Rivals" URL carried from #737 by design; the Anthropic "Moral Conflict" URL carried from #737 sources by design; max numeric mechanism_id 678 pre-commit; zero underscore-form 679 mechanism key strings repo-wide pre-commit (excluding the #740 sweep instrument and the #739 carrier test per the #715 pattern-rescope lesson).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
