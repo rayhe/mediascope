@@ -262,7 +262,7 @@ class TestIterationLog743:
 
 
 class TestRotationCycleGuard743:
-    ANCHORED_SHA = "ANCHORED_SHA"  # main-commit SHA, patched post-commit per #565
+    ANCHORED_SHA = "fc05287045b491d9c40355ae4438a30d66bf2577"  # main commit this run, per #565
 
     @staticmethod
     def _rotation_files():
