@@ -3974,6 +3974,120 @@ entities:
         type: C
         date: 2026-09-14 04:00 PDT
 
+    ani_sep14_hearing_outcome_watch_two_tier_synthesis_leg:
+      mechanism_id: 681
+      iteration: 744
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-14'
+      time_pdt: '10:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'Sep 14 Division Bench hearing-day outcome watch (second check, ~22:30 IST) + India attribution-deal economics first-hand synthesis leg (FourWeekMBA Sep 9 2026) - FIRST dedicated corpus mapping of the two-tier global licensing structure and the multilingual-archive corpus-value inference; extension of mechanisms 657/678/609'
+      overview: 'Two sub-findings. (1) Hearing-day outcome watch, second check: the ANI v. OpenAI Division Bench appeal was listed for today, Sep 14 2026 (Justices V. Kameshwar Rao and Manmeet PS Arora; Rao now Chief Justice of Patna High Court; bench did not assemble Sep 8 per LiveLaw). Mechanism 678''s first check (~04:00 PDT / 16:30 IST, hearing window open) found a bounded absence of outcome reporting. This run''s second check (~10:00 PDT / ~22:30 IST, hearing window likely closed) finds the bounded absence continues: no hearing-outcome reporting surfaced in five bounded browser.search query sets. Continued absence at 22:30 IST suggests either the bench did not assemble again or reporting has not surfaced; neither is claimed (bounded absence per iteration-492). Financial-incentive consequence: the Sep 14 appeal is the event that reprices the India licensing template (the $0 attribution template from mechanism 609 vs ANI''s $7.5M ask from mechanism 678); an unresolved listing defers the repricing, and the zero-fee template keeps setting precedent in the interim. (2) First-hand synthesis read: the FourWeekMBA Sep 9 2026 analysis piece (already a corpus source on mechanisms 609 and 657; read first-hand this run, 147 rendered lines) independently corroborates the corpus''s dual-track reading and adds three analytical claims not previously carried in the corpus: (a) a two-tier global pricing structure - paid licences in high-GDP, litigation-heavy markets (US, UK, EU) vs attribution deals in high-volume, cost-sensitive markets; (b) a corpus-value inference - the seven-language archives are worth more as scarce Indian-language model-building text than as live-headlines feed; (c) attribution-as-consideration as a precedent that weakens every subsequent publisher''s negotiating position in cost-sensitive markets ("the deal structure is the precedent, and the precedent is already set"; "traffic in lieu of cash"). The piece also models evidentiary discipline the corpus requires: it explicitly flags the Sep 8 appeal-listing/deal-announcement timing as on-the-record coincidence ("the licence-versus-litigate framing below is analysis, not a claim that OpenAI coordinated the events").'
+      hearing_day_outcome_watch:
+        listed: 'Sep 14 2026, Division Bench of the Delhi High Court (appeal against the Jul 24 interim-relief denial)'
+        bench: 'Justices V. Kameshwar Rao and Manmeet PS Arora (per m657/LiveLaw); Justice Rao appointed Chief Justice of Patna High Court - bench did not assemble Sep 8'
+        first_check: 'mechanism 678 (~04:00 PDT / 16:30 IST Sep 14): bounded absence of outcome reporting, hearing window open'
+        second_check: 'this run (~10:00 PDT / ~22:30 IST Sep 14): bounded absence continues across five query sets; hearing window likely closed'
+        reading: 'continued absence suggests either non-assembly (again) or unreported outcome - neither claimed per iteration-492'
+        repricing_consequence: 'the appeal outcome reprices the India template ($0 attribution vs $7.5M ask); unresolved listing defers the repricing while the zero-fee template keeps setting precedent'
+      two_tier_structure:
+        claim: 'paid licences in high-GDP, litigation-heavy markets (US, UK, EU) vs attribution deals in high-volume, cost-sensitive markets - the economic value of AI-adjacent journalism is being priced very differently by geography'
+        us_paid_side: 'News Corp (~$250M/5yr, 2024), Axel Springer, FT, AP, Hearst - reported cash payments (carried m494 family)'
+        india_attribution_side: 'BCCL (Sep 7) and Indian Express Group (Sep 8): attribution and referral links as stated consideration; no fee, no duration, no revenue share disclosed'
+        first_hand_quote: '"The India sequence accelerates a two-tier global structure: paid licences in high-GDP, litigation-heavy markets (US, UK, EU); attribution deals in high-volume, cost-sensitive ones."'
+        implication: '"Attribution-as-consideration may become the baseline, not the floor. If both dominant Indian English groups accept traffic and citation in lieu of cash, the precedent weakens every subsequent publisher''s negotiating position in cost-sensitive markets."'
+      corpus_value_inference:
+        claim: 'a partnership reaching into archives across seven languages is worth more as structured, high-quality, multilingual Indian-language text than a live-headlines feed would be - exactly the scarce material that matters as the model-building frontier moves beyond English'
+        first_hand_quote: '"Whether or not today''s agreement is, legally or operationally, a training-data licence, it deepens OpenAI''s access to exactly the kind of scarce Indian-language material that matters as the model-building frontier moves beyond English. The parties have not described it this way; the inference is mine."'
+        grade: 'the piece flags this as its own analysis, not the companies'' stated terms - carried with the same caution'
+      precedent_reading:
+        claim: '"What OpenAI executed in India between September 7 and September 8 is the clearest single-market demonstration yet of a dual-track content strategy: sign the publishers who will deal - BCCL and Indian Express Group, back-to-back, no fee, attribution in lieu of cash - while ANI''s infringement appeal works its way through the Delhi High Court."'
+        distribution_legitimacy: 'the deals signal institutional legitimacy to regulators, enterprise buyers, and future government partners in OpenAI''s largest user market - "A ChatGPT that cites The Economic Times and The Indian Express is a different product perception than one that scrapes without acknowledgment"'
+        piece_discipline: 'the piece explicitly models the caution this corpus requires - timing coincidence flagged as on-the-record coincidence per Bar and Bench; licence-versus-litigate framing labeled as analysis, not a coordination claim'
+      first_hand_facts:
+        - 'BCCL (Times Group) deal: Sep 7 2026, Times of India + Economic Times, attribution-and-links basis, no fee disclosed'
+        - 'Indian Express Group deal: announced Sep 8 2026, Indian Express + Financial Express, live and archives, 7 languages, quoted Varun Shetty (OpenAI VP Media Partnerships) and Nandagopal Rajan (Indian Express Digital CEO); no financial terms: no fee, no duration, no revenue share'
+        - '48-hour picture stat block: 2 dominant English publisher groups signed in under 48 hours; 7 languages; $0 disclosed fee; 1 active infringement case (ANI) adjourned to Sep 14'
+        - 'neither deal described by the parties as a training-data licence; framed as content discovery and attribution partnerships; OpenAI holds no editorial role'
+      ranked_confounders:
+        - rank: 1
+          strength: strong
+          confounder: 'the FourWeekMBA piece is independent business analysis, not primary reporting: deal terms come via its reading of the parties'' announcements; the two-tier structure, corpus-value inference, and precedent reading are the author''s framework, not the companies'' stated terms (the piece flags this itself)'
+        - rank: 2
+          strength: strong
+          confounder: 'the Sep 14 hearing outcome is unobserved as of ~22:30 IST; the repricing-consequence claim is conditional on an appeal outcome that has not been reported - the template sets or reprices only when the bench acts'
+        - rank: 3
+          strength: moderate
+          confounder: 'the continued bounded absence at 22:30 IST could be non-assembly, an unreported brief listing, or reporting lag on Indian trade press; none is distinguishable from the search surface'
+        - rank: 4
+          strength: moderate
+          confounder: 'the $0-attribution template vs $7.5M-ask comparison mixes disclosed-stated consideration with a plaintiff litigation ask - the zero-fee deals may carry undisclosed value (technology transfer, internal-use clauses per mechanism 709)'
+        - rank: 5
+          strength: weak
+          confounder: 'ANI is not a MediaScope tracked publication; litigation-leg mapping only, no coverage-tone follow-up possible in this corpus'
+        - rank: 6
+          strength: weak
+          confounder: 'the two-tier geography claim ("high-GDP litigation-heavy" vs "cost-sensitive") is the analyst''s allocation narrative; OpenAI''s actual negotiating leverage per market is unobserved'
+      bounded_absences:
+        - 'no Sep 14 2026 hearing outcome surfaced in five bounded query sets as of ~10:00 PDT / ~22:30 IST (bounded absence per iteration-492, not a proven zero)'
+        - 'no new AI publisher licensing deals announced Sep 8-14 2026 surfaced (stale 2023-2024 re-indexes only: Hearst, News Corp, Atlantic/Vox)'
+        - 'no new Meta publisher licensing deals surfaced since Mar 2026 (News Corp $50M/yr item is 194 days old)'
+        - 'no new developments in the Seattle Times + Newsday v. OpenAI/Microsoft suit since the Sep 4-5 filing coverage (all 7 URLs already in corpus via m675)'
+        - 'no second-source corroboration of the $7.5M ANI offer (carried from m678)'
+      statistical_discipline:
+        scope: qualitative structural synthesis and temporal watch only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: 'two-tier structure and corpus-value inference documented (first-hand read); hearing outcome unobserved (bounded absence); incentive-repricing inference is directional_only'
+      cautious_language_required: true
+      correlational_note: 'This mapping extends mechanism 657/678''s India litigation-leg series with a first-hand synthesis read and a second hearing-day watch check. The two-tier pricing structure and corpus-value inference are an independent analyst''s framework, carried with the piece''s own stated caution; the repricing consequence is conditional on an unobserved appeal outcome. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+      no_coverage_tone_claim: true
+      falsification_family: 'NOT a falsification-family member - synthesis/watch-type leg with no coverage-tone pair; ledger holds at 24 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C synthesis leg; no new tracked-publication finding.'
+      cross_references:
+        - 'mechanism 657 (ANI v. OpenAI litigation leg: the parent BATNA-pricing insight this leg extends)'
+        - 'mechanism 678 (ANI $7.5M pricing datum + first hearing-day check at 16:30 IST: this leg is the second check at 22:30 IST)'
+        - 'mechanism 609 (OpenAI India attribution-deal blitz: the $0 license-the-willing counterpart whose economics this leg synthesizes)'
+        - 'mechanism 709 (India attribution economics layer: the zero-fee template analysis this leg''s two-tier reading extends)'
+        - 'mechanism 672 (US DOJ Statement of Interest: the US fair-use pricing leg; the India appeal outcome is the other repricing event)'
+        - 'mechanism 636 (NYT pay-or-litigate doctrine: the US-market license-versus-litigate bifurcation)'
+        - 'mechanism 519 (News Corp x OpenAI woo-and-sue dual posture)'
+        - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+        - '#503 second-hand evidence-grade precedent (this run''s synthesis facts are first-hand read; litigation facts remain excerpt-bounded)'
+        - 'iteration-492 rule (bounded absence: no Sep 14 hearing outcome surfaced; none claimed as proof of absence)'
+        - '#565 followup/anchor convention'
+        - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      novelty: 'FIRST dedicated corpus mapping of the two-tier global licensing structure and the multilingual-archive corpus-value inference (both zero-hit repo-wide pre-commit); FIRST second-check hearing-day outcome watch (m678 was the first check). Zero underscore-form 681 mechanism keys repo-wide pre-commit (the #743 sweep instrument is the designed-keying target, excluded as sweep carrier per #715); max numeric mechanism_id 680 pre-commit; the FourWeekMBA URL is legitimately shared with mechanisms 609/657 (acknowledged parent mechanisms). Distinct from mechanism 678 (pricing datum, no synthesis) and mechanism 657 (litigation leg, no economics framework).'
+      source_urls:
+        - https://fourweekmba.com/ai-openai-india-publisher-deals-attribution-strategy/
+      sources:
+        - 'FourWeekMBA (Sep 9 2026, first-hand read this run, 147 rendered lines): "The India sequence accelerates a two-tier global structure: paid licences in high-GDP, litigation-heavy markets (US, UK, EU); attribution deals in high-volume, cost-sensitive ones."'
+        - 'FourWeekMBA: "Whether or not today''s agreement is, legally or operationally, a training-data licence, it deepens OpenAI''s access to exactly the kind of scarce Indian-language material that matters as the model-building frontier moves beyond English. The parties have not described it this way; the inference is mine."'
+        - 'FourWeekMBA: "What OpenAI executed in India between September 7 and September 8 is the clearest single-market demonstration yet of a dual-track content strategy: sign the publishers who will deal ... while ANI''s infringement appeal works its way through the Delhi High Court."'
+        - 'FourWeekMBA piece discipline (carried): "the licence-versus-litigate framing below is analysis, not a claim that OpenAI coordinated the events"'
+      research_method: '5 browser.search query sets this run: (1) ANI OpenAI Delhi High Court Division Bench appeal hearing September 14 outcome (since 2026-09-13) - Medianama pre-hearing explainer + Sep 8 recaps, no outcome reporting; (2) ANI OpenAI Delhi High Court hearing today (since 2026-09-14) - LiveLaw/Bar and Bench/bestmediainfo recaps, no outcome reporting; (3) Seattle Times Newsday lawsuit OpenAI Microsoft copyright (since 2026-09-10) - no new developments, all 7 URLs already in corpus via m675; (4) OpenAI publisher licensing deal news partnership announced September 2026 (since 2026-09-01) - stale 2023-2024 re-indexes only (Hearst, News Corp, Atlantic/Vox), zero new deals; (5) Meta AI publisher content licensing deal news partnership (since 2026-08-20) - stale Mar 2026 (News Corp $50M/yr) and Dec 2025 (People/USA Today/CNN/Fox) items, all carried in corpus. 1 browser.open first-hand read (FourWeekMBA India attribution-deal synthesis, 147 rendered lines) - all URLs copied verbatim from Full-URL listings; no canonical URLs constructed; no em dashes; ASCII-only. Pre-commit greps: zero test_type_c_744 files on disk (glob); no "Type C #744" in git log (--grep); max numeric mechanism_id 680 pre-commit; zero underscore-form mechanism_681 keys repo-wide pre-commit (excluding #743 sweep instrument per #715).'
+      test_file: 'tests/test_type_c_744_ani_sep14_outcome_watch_two_tier_synthesis_sep14_10am.py'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 744
+        type: C
+        date: 2026-09-14 10:00 PDT
+
     doj_statement_of_interest_nyt_v_openai_fair_use_sep2026:
       mechanism_id: 672
       iteration: 729
