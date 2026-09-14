@@ -33673,5 +33673,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Rotation guard: 738-742 window closes B->C->D->E->A (anchor patched post-commit per #565). #740 max-678 sweep fails by designed supersession (#710/#720); #740 zero-679 sweeps stay green by designed keying (#723); #739 carrier green.
 - Doc-sync: README + ARCHITECTURE rows added; #741's merged #740/#741 README row split into two proper rows (cosmetic repair); headers re-synced to authoritative 38727/1070; TestTestFileListingConsistency 8/8 green.
 - 25-test file (anchor 1 deselected pre-commit per #565 convention, rotation-window 2 fail pre-main-commit by design; anchor + full rotation guard green post-followup).
-- Commit hashes (followup): main commit TBD_MAIN; anchor followup TBD_ANCHOR (ANCHORED_SHA patched per #565); log-hash followup updates this line.
-- Push status (this run): TBD_PUSH.
+- Commit hashes (followup): main commit c83e8f23d837d837bc9a9bf93d737d3453d4bf61; anchor followup 5ba376b5930dd711284f4f4cfdc0634392777f0e (ANCHORED_SHA patched per #565, anchor + full rotation guard green 25/25); log-hash followup updates this line.
+- Push status (this run, ~07:45 PDT Sep 14): BLOCKED. Egress proxy hatch-egress-proxy:3128 TCP connection-refused (verified via /dev/tcp); outage continuous since Sep 13 15:00 PDT per #727 through #741 reports. All local commits (102 carried + 3 from this run: main c83e8f2, anchor followup 5ba376b) remain local-only. Retry next run.
