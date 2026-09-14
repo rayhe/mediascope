@@ -19,7 +19,7 @@
 - Artifact readiness: read-only Type D run (no mechanism content claims); all #730 tests pass; no analysis.json update required.
 - Rotation Transparency: 726 E (#720's tombstone family line) -> 727 A -> 728 B -> 729 C -> 730 D. No Type D #730 main commit may exist before the anchor patch (dual-mode guard). Next iteration: Type E #731.
 - Novelty Verification: no corpus content claims added this run (Type D test-only iteration); new test file's assertions verified against the live corpus - m670/m671/m672 blocks read from their home YAMLs, mechanism 673 sweep confirms no forward shadow, synthetic engine pins use fresh values distinct from the #720/#725 pins.
-- Commit hashes: [MAIN], [ANCHOR-PATCH].
+- Commit hashes: c6d6e0a47cd74f339d828a879dfce00e0f13d145 (main), 46923e6c8e99c012ccdc70851abb28ae5cba6ce5 (anchor followup), f08818c (log amendment: push status). All via git rev-parse in-run.
 - Push status: BLOCKED - hatch-egress-proxy:3128 TCP-unreachable at push time (all 6 credential lines returned curl 000; git: "Couldn't connect to server"). Matches the 2026-09-13 fleet-side egress outage noted in AGENTS.md. Commits c6d6e0a (main) + 46923e6 (anchor followup) are local; push to be retried by the next scheduled run. Committed locally 2026-09-13 18:0x PDT.
 - Doc-sync ratchet: README.md stats table + test-file table row; docs/ARCHITECTURE.md header stats + tree row; iteration-log.md entry - all landed pre-main-commit per the #719 convention.
 #729 Type C: US DOJ Statement of Interest in NYT v. OpenAI (filed Sep 1, 2026) - FIRST dedicated political-incentive leg on the OpenAI x publisher financial vector (mechanism 672)
