@@ -57,7 +57,7 @@ MECH_KEY = "seattle_times_newsday_grant_then_sue_openai_microsoft_sep2026"
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor tests are deselected pre-commit.
-ANCHORED_SHA = "PENDING_FOLLOWUP"
+ANCHORED_SHA = "b24a663279efe0ee9e6fb275d18f0144e9adc81d"  # main-commit SHA, patched post-commit per #565
 
 
 def load_competitor():
