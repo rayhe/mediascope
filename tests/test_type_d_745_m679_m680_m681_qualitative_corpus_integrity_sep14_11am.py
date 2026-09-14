@@ -107,7 +107,7 @@ M681_TEST_FILE = "test_type_c_744_ani_sep14_outcome_watch_two_tier_synthesis_sep
 
 # Patched in the followup commit per the #565 convention once the main
 # commit SHA is known. Anchor test is deselected pre-commit.
-ANCHORED_SHA = "TBD_PATCHED_IN_FOLLOWUP"
+ANCHORED_SHA = "a3a2ce3a583af7ee5a7f45eae6eded4ef391ac56"
 
 
 def _git(*args):
