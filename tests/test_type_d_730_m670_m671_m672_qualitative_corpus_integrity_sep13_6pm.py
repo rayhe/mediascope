@@ -418,7 +418,7 @@ class TestFailingBandRepair730:
 
 # -- Rotation guard / novelty anchor (#565 convention) ---------------------------
 
-ANCHORED_SHA = "NOT_YET_COMMITTED_730"
+ANCHORED_SHA = "c6d6e0a47cd74f339d828a879dfce00e0f13d145"
 
 
 class TestRotationCycleGuard730:
