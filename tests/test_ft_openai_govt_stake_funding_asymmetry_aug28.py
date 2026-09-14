@@ -68,15 +68,24 @@ def test_meta_coverage_comparator_desperation():
 
 
 def test_competitor_relationships_openai_enriched():
-    """competitor_relationships.openai has recent_coverage_examples with 4 articles and source URLs."""
+    """competitor_relationships.openai has recent_coverage_examples with articles and source URLs.
+
+    The Aug 28 2026 snapshot keyed this as recent_coverage_examples_2026_h1_h2
+    (>=4 articles); #415 (edb3eb5, Aug 31 2026) deliberately restructured the
+    block into iteration-keyed coverage-source lists. The govt-stake / $100B
+    funding coverage examples now live in iteration_435's
+    ft_openai_sources_sep01_2026 (3 articles, each with HTTPS URL, framing
+    label, and deal_disclosed False). Repointed in Type D #730; corpus
+    untouched.
+    """
     data = load_profile()
     rels = data["competitor_relationships"]
     assert "openai" in rels
     assert rels["openai"]["financial_tie"] == "licensing"
     assert rels["openai"]["coverage_prediction"] == "softer"
-    assert "recent_coverage_examples_2026_h1_h2" in rels["openai"]
-    examples = rels["openai"]["recent_coverage_examples_2026_h1_h2"]
-    assert len(examples) >= 4
+    i435 = rels["openai"]["iteration_435_sep01_2026_ft_openai_govt_stake_vs_meta_equity_raise_framing_asymmetry"]
+    examples = i435["ft_openai_sources_sep01_2026"]
+    assert len(examples) >= 3
     for ex in examples:
         assert "url" in ex and ex["url"].startswith("https://")
         assert "framing" in ex

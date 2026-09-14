@@ -231,14 +231,23 @@ class TestCondéNastSnapFinancialChain(unittest.TestCase):
                                 "Snap-Perplexity deal must be >= $400M")
 
     def test_perplexity_conde_nast_chain(self):
-        """Perplexity→Condé Nast financial chain must be documented."""
+        """Perplexity publisher chain status must be documented with its dissolution.
+
+        Mechanism #224 (ed77c0e) deliberately updated the Snap → Perplexity →
+        Condé Nast chain to BROKEN: the indirect financial flow from Snap
+        through Perplexity to publishers no longer exists. The test previously
+        asserted the chain's positive state (Aug 20 2026 snapshot); the corpus
+        now documents the chain AND its dissolution, which is the factually
+        current state. Repointed in Type D #730; corpus untouched.
+        """
         data = load_competitor_entities()
         snap = data['entities']['snap']
         ai_partnerships = snap.get('ai_partnerships', {})
         perplexity = ai_partnerships.get('perplexity', {})
-        chain = perplexity.get('perplexity_publisher_chain', '')
-        self.assertIn('Condé Nast', chain,
-                      "Snap→Perplexity→Condé Nast chain must be documented")
+        status = perplexity.get('perplexity_publisher_chain_status', '')
+        self.assertIn('BROKEN', status,
+                      "Snap→Perplexity publisher chain status must document the dissolution (mechanism #224)")
+        self.assertIn('Perplexity', status)
 
     def test_snap_openai_api_customer(self):
         """Snap is an OpenAI API customer (financial direction: Snap pays OpenAI)."""
@@ -433,12 +442,21 @@ class TestMechanismMetadata(unittest.TestCase):
     """Verify mechanism #202 metadata in competitor-coverage-research.yaml."""
 
     def _find_mechanism_202(self):
-        """Recursively find mechanism_id 202 in the YAML."""
+        """Recursively find mechanism_id 202 in the YAML.
+
+        Skips cross-reference stubs: since 2026-08-20 (mechanism #202's own
+        cross-reference entries, e.g. the line-26223 stub {- mechanism_id: 202,
+        relationship: cross_reference}) the corpus carries stub dicts with
+        only mechanism_id + relationship/description that shadow the real
+        block in a naive first-match walk. The real block always carries
+        overview (the mechanism's full text block). Same stub-shadowing
+        class as the #138 fix in Type D #725. Fixed in Type D #730.
+        """
         data = load_competitor_research()
 
         def _search(d):
             if isinstance(d, dict):
-                if d.get('mechanism_id') == 202:
+                if d.get('mechanism_id') == 202 and 'overview' in d:
                     return d
                 for v in d.values():
                     result = _search(v)

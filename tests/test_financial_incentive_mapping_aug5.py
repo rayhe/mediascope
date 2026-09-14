@@ -156,10 +156,37 @@ class TestAnthropicPublisherAbsence:
                     f"{pub['name']} has unexpected Anthropic deal"
 
     def test_anthropic_warns_about_fabricated_nyt_report(self, entities):
-        """Publisher deals note should warn about the fabricated TokenRing report."""
-        anthropic = entities['entities']['anthropic']
-        note = anthropic['publisher_deals_note'].lower()
-        assert 'fabricated' in note or 'tokenring' in note or 'financialcontent' in note
+        """Corpus should flag the fabricated TokenRing report as do-not-cite.
+
+        The Aug 2026 warning lived in the anthropic publisher_deals_note; Type C
+        #669 (9e39f09, Sep 11 2026) deliberately relocated and formalized it as
+        the flagged_but_unverified surface in the mechanism 636/669 block
+        (nyt_ai_content_pay_or_litigate_doctrine / mechanism chain), with an
+        explicit do-not-cite verdict: unverified sponsored-distribution surface,
+        cannot enter sources/. The warning was moved, not deleted. Repointed
+        in Type D #730; corpus untouched.
+        """
+        def _walk(obj):
+            if isinstance(obj, dict):
+                if 'flagged_but_unverified' in obj:
+                    return obj['flagged_but_unverified']
+                for v in obj.values():
+                    r = _walk(v)
+                    if r is not None:
+                        return r
+            elif isinstance(obj, list):
+                for v in obj:
+                    r = _walk(v)
+                    if r is not None:
+                        return r
+            return None
+        surface = _walk(entities)
+        assert surface is not None, "flagged_but_unverified surface missing from corpus"
+        text = str(surface).lower()
+        assert 'tokenring' in text or 'financialcontent' in text, \
+            "TokenRing/fabricated-report flag must be documented"
+        assert 'not asserted' in text or 'do-not-cite' in text.replace(' ', '-'), \
+            "flag must carry an explicit do-not-cite verdict"
 
 
 # ===================================================================
