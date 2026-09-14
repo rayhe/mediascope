@@ -646,7 +646,8 @@ class TestDocSyncRatchet745:
         # Recent runs (#736-#744) append entries at the end of iteration-log.md
         # (the file head stays frozen at #735 per #735's committed doc-sync
         # test), so the #745 entry is asserted at the tail. Window widened to
-        # 6000 chars: this run's entry is 5484 chars (the tombstone lineage
-        # and three mechanism verifications), so 4000 would miss its header.
-        tail = open(LOG, encoding="utf-8").read()[-6000:]
+        # 7000 chars: this run's entry is ~6725 chars (three mechanism
+        # verifications + tombstone lineage + push-status followup), so a
+        # smaller window would miss its header.
+        tail = open(LOG, encoding="utf-8").read()[-7000:]
         assert "#745 Type D:" in tail, tail[-200:]
