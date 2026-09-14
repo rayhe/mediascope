@@ -3970,6 +3970,106 @@ entities:
         yaml_parse_clean: true
         ascii_only: true
 
+    seattle_times_newsday_grant_then_sue_openai_microsoft_sep2026:
+      mechanism_id: 675
+      iteration: 734
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-13'
+      time_pdt: '22:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Seattle Times + Newsday v. OpenAI + Microsoft (filed Fri Sep 4, 2026, S.D.N.Y.) - FIRST dedicated grant-then-sue leg on the OpenAI x publisher financial vector: two Oct 2024 $10M OpenAI-Microsoft AI grant recipients suing the grant-makers over paywalled-content training'
+      overview: 'On Fri Sep 4, 2026 the Seattle Times and Newsday jointly sued OpenAI and Microsoft in the U.S. District Court for the Southern District of New York (Reuters wire Sep 5), alleging the companies scraped the newspapers'' websites, including paywalled content, and incorporated the articles into datasets used to train and operate ChatGPT, Microsoft Copilot and Bing AI features. Both plaintiffs are recipients of the Oct 2024 $10M OpenAI-Microsoft AI Collaborative and Fellowship Grant (2-year fellowships at five newsrooms: Chicago Public Media, Minnesota Star Tribune, Newsday, Philadelphia Inquirer, Seattle Times; carried from the corpus grant block). The grant relationship did not buy compliance: two of the five grant newsrooms sued the grant-makers about 23 months later, as the fellowship window closes (Oct 2024 + 2 years = Oct 2026). This run formalizes the suit as the corpus FIRST grant-then-sue leg: philanthropic money flowing from AI labs to publishers did not prevent adversarial litigation - the inverse of the naive payer-softening prediction, mirroring mechanism 672''s state-power inversion one level down (the DOJ brief sided WITH the AI payer; here the publisher grantees moved AGAINST the AI payer).'
+      suit_facts:
+      - 'Plaintiffs: The Seattle Times (Seattle) and Newsday (Long Island, NY); defendants: OpenAI and Microsoft; filed Fri Sep 4, 2026, U.S. District Court for the Southern District of New York (Reuters Sep 5 wire; Medianama Sep 2026)'
+      - 'Core allegation: methodical scraping of the newspapers'' websites, including content behind paywalls, incorporated into training/operation datasets - complaint names WebText, WebText2, Common Crawl and Microsoft''s Bing search index (Medianama)'
+      - 'Output-side evidence: AI products reproduce passages nearly verbatim and closely paraphrase articles, reducing the need to visit the sites or buy subscriptions; complaint includes an 88-word verbatim stretch of the Seattle Times'' Pulitzer-winning Boeing 737 MAX coverage generated from a headline-plus-URL prompt (GeekWire); false-attribution hallucinations and copyright-management-information removal alleged (Engadget)'
+      - 'Terms-of-service posture: the Seattle Times prohibits using its content for AI training or grounding and automated scraping; Newsday prohibits using its content to develop software including AI systems; Newsday''s robots.txt instructed OpenAI and Common Crawl not to crawl its site (Medianama)'
+      - 'Relief sought: order requiring destruction of copies of their works plus training datasets or AI models incorporating them (Reuters) - the same destruction ask as the NYT suit'
+      - 'Complaint rhetoric: generative AI as "a snake eating its own tail" that would destroy the news organizations it trained on; AI products as "rapacious consumers, devouring human-authored content" (TechCrunch)'
+      - 'Seattle Times CEO Alan Fisco memo: "This was not an easy decision. However, we feel strongly that we must defend our content - which we spend millions of dollars a year to produce - from being used without our consent or compensation" (GeekWire, Reuters); Fisco took over as CEO Jan 1, 2026 succeeding 40-year leader Frank Blethen'
+      - 'Defendant responses: OpenAI - models trained on publicly available data, grounded in fair use, no comment on the suit specifically (Reuters); Microsoft - "While we are surprised by the lawsuit, we appreciate the importance of local journalism and we are always happy to sit down and explore solutions to this type of dispute" (Reuters, GeekWire); unclear whether licensing talks preceded the suit (GeekWire)'
+      - 'DOJ-timing linkage: GeekWire notes the suit echoes the NYT''s 2023 case against the same defendants, "which just this week drew a U.S. Justice Department brief siding with Microsoft and OpenAI" - the grant-then-sue leg landed in the same week as mechanism 672''s statement of interest'
+      - 'Engadget covered the suit (engadget.com 2251707), framing the industry split as sue (NYT, Ziff Davis, Seattle Times, Newsday, CNN v. Perplexity) vs partner (AP, Vox Media with OpenAI) - candidate for future Type B outlet-coverage analysis'
+      grant_then_sue_theory:
+      - 'The Oct 2024 $10M OpenAI-Microsoft AI Collaborative and Fellowship Grant is the corpus''s philanthropic layer (layer_3_philanthropic_grants): 2-year fellowships, five newsrooms, two grantors that are now defendants. The grant was carried in the corpus since Oct 2024 with no attached compliance condition in the record.'
+      - 'Naive payer-softening prediction: grant recipients do not sue grantors. Observation: 2 of 5 grant newsrooms (40%) sued the grantors. The prediction fails on the observed arms; the grant bought zero observed litigation forbearance.'
+      - 'Relationship-direction taxonomy this leg completes: (1) sue-then-sign (Indian Express: joined the anti-OpenAI suit Feb 2025, signed an OpenAI partnership Sep 2026, mechanism 624); (2) pay-or-litigate bifurcation (mechanism 636); (3) grant-then-sue (this leg). Three distinct orderings of the money-flow/litigation sequence now have dedicated mechanisms.'
+      - 'Asymmetry vs the paid-deal portfolio: OpenAI''s $300-400M/yr paid publisher portfolio (24+ deals, mechanism 672 context) has produced no publisher-plaintiff among the paid counterparties in the record; the philanthropic-grant channel, by contrast, produced two plaintiffs. Paid licensing correlates with forbearance; unpaid philanthropy did not - directionally consistent with the price-of-compliance reading, but no causal claim (posture selection, grant-size materiality, and unobserved licensing talks all confound).'
+      statistical_discipline: 'scorer none, tone NOT_SCORED, p_value/cohens_d/ci NOT_CALCULATED, is_significant False, engine NOT run, NOT artifact-grade; qualitative-only per #609/#614; NOT a falsification-family member (ledger holds at 24); no analysis.json update. Correlation is not causation.'
+      confounders:
+        strong:
+        - 'Excerpt-bounded second-hand evidence per #503: all suit facts via search-result excerpts (Reuters wire, Medianama, GeekWire, TechCrunch, Engadget, TradingView); no first-hand complaint read this run'
+        - 'Motive unobserved: the grant-to-suit causal arrow is not established - the suit may reflect the grant window expiring (Oct 2024 + 2 years = Oct 2026, suit filed Sep 4, 2026), failed or absent licensing talks (GeekWire: status unknown), or independent copyright grievance; timing overlap with fellowship expiry is a confounder, not a claim'
+        - 'Partial response: 3 of 5 grant newsrooms (Chicago Public Media, Minnesota Star Tribune, Philadelphia Inquirer) have not sued in the bounded searches - the grant-then-sue pattern holds for 40% of the grant cohort, not the cohort'
+        moderate:
+        - 'Consolidation status unconfirmed this run: the complaint was filed in S.D.N.Y. (same court as the consolidated MDL 25-md-03143, Judge Stein) but no transfer/consolidation order surfaced in the bounded searches'
+        - 'Reuters wire is the sole filing-date source for Sep 4; TradingView/GuruFocus aggregation adds Microsoft-stock framing but no independent reporting'
+        - 'Unjust-enrichment and DMCA-adjacent theories (robots.txt, CMI removal) face the headwinds of the Aug 6, 2026 Judge Stein Ziff Davis orders (partial dismissal: robots.txt not a DMCA technological measure; stayed/dismissed dilution claims) - carried from this run''s first query set, not separately novelty-verified'
+        weak:
+        - 'Fisco/Blethen leadership transition Jan 2026 (Fifth-generation family ownership) as alternative suit-timing explanation - unquantified'
+        - 'Seattle Times Union contract-negotiation context: the union supports the suit but notes the company refused to guarantee no AI replacement of non-reporter newsroom jobs (GeekWire) - labor layer not an incentive leg'
+        - '88-word verbatim reproduction required an adversarial headline-plus-URL prompt - output-side evidence strength is prompt-dependent'
+      counterevidence:
+      - 'AP and Vox Media chose the partner route with OpenAI rather than the suit route (Engadget) - the pay-or-litigate bifurcation is live, and grant-then-sue is one branch, not the only outcome'
+      - 'OpenAI''s paid-deal counterparties have not sued in the record - the grant-then-sue pattern does not generalize to the paid portfolio'
+      - 'Microsoft''s "surprised" response plus stated openness to talks leaves a licensing resolution path open; GeekWire could not confirm whether talks preceded the suit'
+      - 'The grant program also funded journalism fellowships (hiring AI fellows) whose newsroom effects are not measured - philanthropy had a production-side footprint independent of the litigation outcome'
+      bounded_absences:
+      - 'No first-hand read of the complaint this run (bounded per iteration-492; not asserted)'
+      - 'No reporting this run on whether Chicago Public Media, Minnesota Star Tribune, or the Philadelphia Inquirer plan similar suits (not claimed as none exist)'
+      - 'No evidence on grant terms (whether the $10M fellowships carried content-use permissions or training-data consent - not in the record)'
+      - 'No MDL consolidation or transfer order for the Seattle Times/Newsday complaint surfaced in bounded searches'
+      correlational_note: 'This mapping describes the Sep 4, 2026 Seattle Times + Newsday copyright suit against OpenAI and Microsoft as a financial-incentive leg on the OpenAI x publisher vector: both plaintiffs were Oct 2024 $10M OpenAI-Microsoft AI grant recipients, and the grant relationship did not prevent adversarial litigation. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.'
+      no_coverage_tone_claim: true
+      falsification_family: 'NOT a member - litigation-type leg with no coverage-tone pair; the ledger holds at 24 after #728 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C grant-then-sue mapping; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 672 (DOJ Statement of Interest political-incentive leg: filed Sep 1, same litigation family, same week; the state-power inversion complement)'
+      - 'mechanism 589 (Ziff Davis v. OpenAI copyright-litigation adversarial leg: the Aug 6, 2026 Judge Stein partial-dismissal orders bound the robots.txt/CMI theories this leg''s complaint relies on)'
+      - 'mechanism 624 / mechanism 609 (OpenAI India attribution-deal blitz: the sue-then-sign counterpart in the relationship-direction taxonomy)'
+      - 'mechanism 636 (NYT pay-or-litigate doctrine: the US-market license-versus-litigate bifurcation this leg''s branch belongs to)'
+      - 'mechanism 657 (ANI v. OpenAI India litigation leg: the other litigation-type financial-incentive leg; Medianama BATNA insight)'
+      - 'layer_3_philanthropic_grants $10M OpenAI-Microsoft AI Collaborative and Fellowship Grant (Oct 2024: the grant this leg inverts)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded litigation facts)'
+      - 'iteration-492 rule (bounded absence: no complaint read, no consolidation order, no grant terms in the record; none claimed as proof of absence)'
+      - '#565 followup/anchor convention'
+      - '#710/#720 designed-supersession convention'
+      - '#715 sweep-carrier rescope convention'
+      - '#723 designed-keying convention (block key avoids the underscore-form 675 key)'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      novelty: 'FIRST dedicated grant-then-sue mechanism in the corpus. Zero dedicated Seattle Times/Newsday lawsuit mechanisms repo-wide pre-commit (grep; the only prior mentions are the Oct 2024 grant-block newsroom list). Zero underscore-form 675 mechanism keys in profiles/ and tests/ pre-commit (sweep carriers excluded per #715). Max numeric mechanism_id 674 pre-commit. All eight source URLs zero-hit repo-wide pre-commit. Distinct from mechanism 672 (DOJ political incentive, same week, different instrument), mechanism 589 (Ziff Davis private litigation, different plaintiff), mechanism 624/609 (India deal blitz, sue-then-sign), mechanism 657 (ANI India litigation), and #636 (pay-or-litigate doctrine, not a dedicated mechanism).'
+      sources:
+      - 'TradingView / GuruFocus (Sep 7, 2026): "Microsoft''s OpenAI Partnership Draws Fresh Legal Fire" - Seattle Times and Newsday sue Microsoft and OpenAI; both previously joined the $10M AI Collaborative and Fellowship Grant; MSFT -1.5% Tuesday; precedent risk framing'
+      - 'Reuters (Sep 5, 2026): "Seattle Times, Newsday sue OpenAI, Microsoft, alleging copyright infringement" - filed Friday in S.D.N.Y.; scraped websites including paywalled content; ChatGPT, Microsoft Copilot, Bing AI features; Fisco memo quote; OpenAI fair-use response; Microsoft "surprised" response; destruction-of-copies relief'
+      - 'Medianama (Sep 2026): "Seattle Times, Newsday sue OpenAI and Microsoft over alleged use of copyrighted journalism" - complaint filed Sep 4, 2026; datasets named (WebText, WebText2, Common Crawl, Bing index); robots.txt and ToS restrictions; CMI removal; "nothing transformative about copying" quote'
+      - 'Engadget (Sep 2026): "Two More News Organizations Sue OpenAI And Microsoft For Copyright Infringement" - "snake eating its own tail" framing; sue-vs-partner industry split (CNN v. Perplexity; AP and Vox Media partnered with OpenAI)'
+      - 'TechCrunch (Sep 5, 2026): "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft" - "broken beyond repair"; "rapacious consumers" complaint quote; grant funding noted as "particularly notable"'
+      - 'GeekWire (Sep 5, 2026): "Seattle Times sues Microsoft and OpenAI" - 88-word verbatim Boeing 737 MAX stretch from headline-plus-URL prompt; Fisco/Blethen transition; union contract context; licensing-talk status unknown; DOJ-brief "just this week" linkage'
+      - 'LiveMint (Sep 5, 2026): Reuters wire reprint - SEATTLE-TIMES-OPENAI-LAWSUIT bullet corrections'
+      - 'Business Day (Sep 6, 2026): Reuters wire reprint - Bengaluru agency edition'
+      source_urls:
+      - https://www.tradingview.com/news/gurufocus:0f442ee79094b:0-microsoft-s-openai-partnership-draws-fresh-legal-fire/
+      - https://www.reuters.com/legal/government/seattle-times-newsday-sue-openai-microsoft-alleging-copyright-infringement-2026-09-05/
+      - https://www.medianama.com/2026/09/223-seattle-times-sue-openai-copyrighted-journalism/
+      - https://www.engadget.com/2251707/seattle-times-newsday-sue-openai-microsoft-for-copyright-infringement/
+      - https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/
+      - https://www.geekwire.com/2026/seattle-times-sues-microsoft-and-openai-alleging-they-trained-their-ai-on-its-journalism/
+      - https://www.livemint.com/technology/tech-news/seattle-times-newsday-sue-openai-microsoft-alleging-copyright-infringement-11788578229143.html
+      - https://www.businessday.co.za/world/international-companies/2026-09-06-seattle-times-newsday-sue-openai-and-microsoft-over-ai-use-of-journalism/
+      research_method: '2 browser.search query sets this run: (1) Ziff Davis OpenAI lawsuit September 2026 development - surfaced the Seattle Times/Newsday suit via TradingView/GuruFocus (SELECTED) plus the Aug 6, 2026 Judge Stein Ziff Davis partial-dismissal orders (justia/courtlistener, carried as context not a mechanism) and the justia 20-page memorandum order; (2) Seattle Times Newsday sue Microsoft OpenAI copyright (since 2026-09-01) - 7 corroborating sources (Reuters, LiveMint, Medianama, Engadget, TechCrunch, GeekWire, Business Day). All 8 URLs copied verbatim from Full-URL listings; no canonical URLs constructed. Excerpt-bounded, second-hand evidence per #503 (no browser.open first-hand reads this run). Pre-commit novelty greps: zero test_type_c_734 files on disk (glob); no "Type C #734" in git log (--grep); zero dedicated Seattle Times/Newsday lawsuit mechanisms repo-wide (grep); zero underscore-form 675 mechanism keys in profiles/ and tests/ (sweep carriers excluded per #715); max numeric mechanism_id 674 pre-commit; all 8 source URLs zero-hit repo-wide pre-commit. No em dashes; ASCII-only.'
+      test_file: tests/test_type_c_734_seattle_times_newsday_grant_then_sue_sep13_10pm.py
+      verification:
+        iteration: 734
+        type: 'C'
+        date: '2026-09-13 22:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+
     mechanism_660_openai_india_attribution_deal_economics_layer_sep2026:
       mechanism_id: 660
       iteration: 709
