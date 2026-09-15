@@ -18879,6 +18879,19 @@ journalists:
   - technology
   - artificial_intelligence
   notes: 'Fast Company global technology editor (San Francisco); Plugged In newsletter columnist. Analytical value: the Aug 20 #201 finding documented a Meta-vs-Snap CEO-attribution humanization differential; his Apr 2026 Altman/Anthropic columns bound that thesis to the Snap-specific access-driven case.'
+- name: Devindra Hardawar
+  publication: Engadget
+  beats:
+  - vr_ar_headsets
+  - wearables
+  - product_reviews
+  notes: 'Engadget senior editor and Engadget Podcast host; bylined first-hand reviews of Meta hardware (Quest 3, Oct 2023; Ray-Ban Stories, Sep 2021) and Apple hardware (Vision Pro, Feb 2024). Type B #753 (Sep 14 2026): mechanism 686 review-register constancy - Quest 3 enthusiastic (+0.55 MANUAL ILLUSTRATIVE: "simply blew me away", "best standalone VR headset we have ever seen") vs Vision Pro product-curious (+0.35: "far from a slam dunk, but ... one of the most fascinating devices we have ever seen"); illustrative delta (Meta minus Apple) +0.20 near-null with Meta-favoring sign; same genre, same category, four months apart; zero-gradient control (no documented Yahoo/Engadget/Apollo AI licensing deal with Meta or Apple; in-corpus Apollo chain points at Anthropic, mechanism 305); review-register analogue of mechanism 698 (Wong); TWENTY-FIFTH falsification-family member (ledger 24->25).'
+  mechanism_ids: [686]
+  source_urls:
+  - https://www.engadget.com/meta-quest-3-review-mixed-reality-vr-150009788.html?src=rss/
+  - https://www.engadget.com/engadget-podcast-meta-quest-3-pixel-8-reviews-123048988.html?src=rss
+  - https://www.engadget.com/engadget-podcast-apple-vision-pro-review-133053827.html?src=rss
+  - https://www.engadget.com/facebook-ray-ban-stories-smart-glasses-ar-160006477.html?src=rss
 
 jacob_krol:
   name: Jacob Krol

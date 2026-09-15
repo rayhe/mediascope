@@ -25351,6 +25351,99 @@ cross_publication_findings:
     test_file: tests/test_type_b_748_kate_conger_nyt_x_adversarial_vs_ai_lab_concern_register_gawker_pipeline_sep14_2pm.py
     test_count: 34
 
+  devindra_hardawar_engadget_quest3_vs_visionpro_review_register_constancy_sep14:
+    finding_type: journalist_cross_entity
+    journalist: Devindra Hardawar
+    publication: Engadget
+    competitor: Apple
+    rotation_type: B
+    iteration: 753
+    mechanism_id: 686
+    discovery_date: '2026-09-14'
+    finding: 'Devindra Hardawar (Engadget senior editor and Engadget Podcast host)
+      shows journalist-level cross-entity REGISTER CONSTANCY in the product-review
+      genre: his first-hand reviews of Meta''s Quest 3 (Oct 2023) and Apple''s
+      Vision Pro (Feb 2024) run the same enthusiastic-hardware-reviewer register,
+      four months apart, same category (VR/AR headsets), same byline, same desk.
+      Meta arm: "Meta Quest 3 review: A bit of mixed reality makes for better VR"
+      - "simply blew me away" (mixed-reality multitasking), "makes every virtual
+      element look incredibly sharp", "the first time I have genuinely enjoyed
+      using Meta''s finger tracking"; the Engadget Podcast episode on the review
+      (Oct 2023, hosted by Hardawar) calls it "the best standalone VR headset we
+      have ever seen". Caveats are product-anchored (app usefulness, awkward
+      virtual keyboard). MANUAL ILLUSTRATIVE +0.55. Apple arm: "Apple Vision Pro
+      review: Beta testing the future" (Feb 2024) - "It is far from a slam dunk,
+      but it is also one of the most fascinating devices we have ever seen";
+      "impressive 3D Immersive Videos", "the elegant simplicity of the Vision
+      Pro''s eye tracking and hand gestures", "the trouble with wearing such a
+      heavy headset". MANUAL ILLUSTRATIVE +0.35. Illustrative delta (Meta minus
+      Apple) +0.20 - near-null constancy, and the sign is Meta-favoring,
+      directionally opposite to any Meta-penalty reading. This is the
+      review-register analogue of mechanism 698 (Raymond Wong, Gizmodo, +0.15
+      delta): it bounds the review-register asymmetry findings (mechanism 528
+      Chokkattu -1.025, mechanism 662 Chen -0.65) to journalist-specific, not
+      genre-general, gradients - the enthusiastic review register is
+      entity-agnostic for Hardawar. Financial context: no documented AI
+      content-licensing deal between Yahoo/Engadget (Apollo-owned) and Meta or
+      Apple in corpus; the Apollo financial chain in-corpus points at Anthropic
+      (mechanism 305: Apollo XPV Anthropic infrastructure financing via
+      Yahoo/TechCrunch), a different entity axis - so the deal-gradient prediction
+      on the Meta/Apple axis is NULL and the observed gap is near-null: a
+      zero-gradient control. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED;
+      ci_95 NOT_CALCULATED; is_significant False; engine NOT run; NOT
+      artifact-grade. TWENTY-FIFTH falsification-family member (ledger 24->25 per
+      #753). Correlation is not causation. NOT a publication-level finding:
+      Engadget''s outlet-level patterns (mechanisms 150/668 Low control cases) are
+      separate.'
+    source_urls:
+    - https://www.engadget.com/meta-quest-3-review-mixed-reality-vr-150009788.html?src=rss/
+    - https://www.engadget.com/engadget-podcast-meta-quest-3-pixel-8-reviews-123048988.html?src=rss
+    - https://www.engadget.com/engadget-podcast-apple-vision-pro-review-133053827.html?src=rss
+    - https://www.engadget.com/engadget-podcast-our-apple-vision-pro-hangover-133021630.html
+    - https://www.engadget.com/facebook-ray-ban-stories-smart-glasses-ar-160006477.html?src=rss
+    connects_to:
+    - 698
+    - 305
+    - 150
+    - 668
+    confounders:
+    - 'STRONG: Search-excerpt-bounded evidence on both arms this run
+      (browser.open terminally failed upstream_unavailable, not retried per
+      developer constraint); excerpt fidelity relies on the search index, not
+      page reads.'
+    - 'STRONG: Price/class asymmetry: $500 Quest 3 vs $3,500 Vision Pro -
+      enthusiasm may be value-relative (exceeds expectations for the price),
+      not entity-driven.'
+    - 'STRONG: Generation asymmetry: Quest 3 is a third-generation refined
+      product; Vision Pro is a first-generation device - review registers
+      conventionally run warmer on mature products.'
+    - 'MODERATE: Temporal spread: Oct 2023 vs Feb 2024 (four months); reviewer
+      register can drift.'
+    - 'MODERATE: The Vision Pro enthusiasm quotes arrive via the Engadget
+      Podcast episode description relaying Hardawar''s own review, not a
+      first-hand page read.'
+    - 'MODERATE: n=1 per arm; single-review variance cannot be ruled out.'
+    - 'WEAK: Hardawar hosts the Engadget Podcast, so his reviews double as
+      podcast content, which may select for enthusiasm on both arms.'
+    - 'WEAK: The Quest 3 "best standalone VR headset" line is from the podcast
+      episode description, not the review text proper.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The +0.20 delta is nonzero and Meta-favoring - a larger
+      sample could resolve a real pro-Meta tilt (an inversion of the asymmetry
+      thesis), so the constancy reading depends on the illustrative noise band.'
+    - 'COUNTEREVIDENCE: The Vision Pro review''s "far from a slam dunk" opener
+      applies the caveat register to Apple too, but the enthusiasm may be
+      novelty-driven (Apple''s first headset in a decade), not entity-driven.'
+    - 'COUNTEREVIDENCE: Hardawar''s 2021 Ray-Ban Stories piece was also
+      Meta-positive ("far more compelling than any smart glasses today"),
+      consistent with constancy - but the Apollo-Anthropic chain (mechanism 305)
+      shows his outlet IS subject to financial-gradient effects on the
+      Anthropic axis, so this constancy does not generalize beyond the
+      Meta/Apple pair.'
+    verdict: directionally_supported_not_proven
+    test_file: tests/test_type_b_753_devindra_hardawar_engadget_quest3_vs_visionpro_review_constancy_sep14_7pm.py
+    test_count: 32
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
