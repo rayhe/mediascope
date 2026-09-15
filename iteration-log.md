@@ -33873,5 +33873,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Suite note: the #755-re-launched background full suite (type_d_755_full_suite.log, --continue-on-collection-errors) outcome check deferred to the next Type D run; this run stayed on targeted Type E verification per the brief.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative 39282/1084 (.venv pytest --collect-only this run; delta +31/+1 = the #756 file exactly). ARCHITECTURE tree repaired mid-run: the #751 row was replaced in-place by the #756 row, breaking chronology; restored #751 after #750 and appended #756 after #755 (chronological order holds again).
 - New Type E files: tests/test_type_e_756_podcast_sentiment_74th_verification_sep14_10pm.py - 7 classes, 31 tests (28 green pre-commit, anchor 1 + rotation-window 2 deselected per #565 convention, patched green in followup).
-- Commit hashes: main commit PENDING; anchor followup PENDING (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-followup); log-hash followup updates this line.
+- Commit hashes: main commit 2f9a4a270d63544d7529c6f39655d6cf18e141f6; anchor followup 2f47662 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-followup, 31/31); log-hash followup updates this line.
 - Push status (this run): PENDING - to be checked at push time.
