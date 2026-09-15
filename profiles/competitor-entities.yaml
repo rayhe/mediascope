@@ -16073,6 +16073,104 @@ entities:
       - 108
       - 111
       - 112
+    apollo financial architecture post techcrunch sale engadget only chain correction sep2026:
+      block_key: type_c_769_apollo_financial_architecture_post_tc_sale_engadget_only_chain_sep15_11am
+      mechanism_id: 693
+      iteration: 769
+      iteration_type: C
+      type: C
+      type_label: Financial Incentive Mapping
+      rotation_type: C
+      iteration_time: '2026-09-15 11:00 PDT'
+      discovery_date: '2026-09-15'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'Apollo AI-Infrastructure Financial Architecture: Post-TechCrunch-Sale Correction and Sep 2026 Status (Mechanism 111 Update Leg). xAI Valor $3.5B (Jan 2026) + Anthropic XPV $35B (Jun 2026) legs re-verified live; $5B Yahoo-acquisition figure correction; Engadget-only Apollo chain; FIRST new mechanism on the Yahoo/Apollo entity since the Aug 26 ownership correction'
+      overview: 'Type C financial-incentive mapping: correction-and-status leg on mechanism 111 (Apollo Q2 2026 AI-infrastructure financial architecture, mapped Aug 15 2026 as Type C iteration #113). Mechanism 111 documented Apollo financing TWO frontier AI labs: xAI via the $3.5B Valor Compute Infrastructure capital solution (Jan 7 2026) and Anthropic via the $35B Broadcom AI XPV Platform lead (Jun 9 2026), with a Yahoo ownership chain stated as "Yahoo publishes TechCrunch and Engadget." The Aug 26 ownership correction (this entity, ownership_correction_aug26) severed the TechCrunch arm: TechCrunch was sold by Yahoo to Regent LP in Mar 2025. Mechanism 111''s chain is therefore partially stale. This mechanism formalizes the post-sale correction: the Apollo financial-incentive chain now runs Apollo -> Yahoo -> Engadget ONLY; re-verifies both financing legs as live in Sep 2026; corrects the corpus $11.2B Yahoo-acquisition figure to the verified $5B; refines mechanism 104''s $3.4B xAI figure to $3.5B; and honestly reports the analytical consequence: the correction WEAKENS the Apollo-chain coverage case, because the strongest Apollo-chain coverage evidence (#305, Rebecca Bellan at TechCrunch) reattributes to the Regent LP chain.'
+      financing_legs:
+        xai_valor_leg:
+          announced: '2026-01-07'
+          apollo_role: 'Apollo-managed funds and affiliates led a $3.5B capital solution'
+          vehicle: 'Valor Compute Infrastructure L.P. (VCI), a fund managed by Valor Equity Partners'
+          total_transaction: '$5.4B acquisition and lease of data center compute infrastructure, including NVIDIA GB200 GPUs, to a subsidiary of xAI Corp'
+          structure: 'Triple net lease'
+          purpose: 'One of the world''s most powerful compute clusters for ongoing model training and development of Grok; xAI''s second data center'
+          nvidia_role: 'Anchor Limited Partner in VCI alongside Valor institutional investors'
+          principals_quoted: 'Christopher Lahoud (Apollo Partner): "hallmark, downside-protected investment." Antonio Gracias (Valor founder, CEO and CIO): "extension of our continued service as a firm to xAI."'
+          status_sep2026: 'Live; no unwind or termination reporting surfaced in bounded searches'
+        anthropic_xpv_leg:
+          announced: '2026-06-09'
+          apollo_role: 'Apollo-managed funds and affiliates leading an initial $35B capital solution as part of Broadcom''s AI XPV Platform, with Blackstone and leading global banks'
+          target: '20GW+ compute capacity for frontier AI labs through 2028'
+          anthropic_arm: 'Facilitates Anthropic''s 1GW+ compute expansion for training and inference from mid-2026'
+          structure: 'SPV purchases Google TPUs, leases to Anthropic; Anthropic keeps hardware off balance sheet (IPO-relevant)'
+          broadcom_role: '$30B residual value guarantees on debt tranches'
+          counsel: 'Milbank LLP (investors'' counsel); Travers Smith (UK/EU regulatory)'
+          distinction: 'One of the largest private financings ever executed'
+          expansion: 'Aug 20 2026: Broadcom seeking $60B+ more (up to $100B with junior debt); already in corpus (anthropic entity xpv_debt_expansion_aug_2026)'
+          status_sep2026: 'Live; Travers Smith regulatory-advice piece (crawled ~Sep 12 2026) re-confirms the $35B deal as current'
+      ownership_chain:
+        apollo_yahoo: 'Apollo completed the Verizon Media (renamed Yahoo) acquisition Sep 2021: $5B total ($4.25B cash + $750M preferred interests); Verizon retained a 10% stake'
+        yahoo_publications_sep2026: 'Engadget (live Apollo chain); AOL; Yahoo properties'
+        techcrunch_severed: 'TechCrunch sold by Yahoo to Regent LP Mar 2025 (this entity, ownership_correction_aug26; regent_lp entity). Apollo chain SEVERED.'
+        figure_correction: 'The anthropic-entity xpv_debt_expansion_aug_2026.apollo_compound_publisher_incentive string states "$11.2B Yahoo acquisition"; verified this run as $5B per TechCrunch and Engadget primary-source reporting. The $11.2B string''s provenance is unlogged in the corpus. Documented here as an additive correction; the old string is NOT edited in place.'
+        xai_figure_refinement: 'Mechanism 104''s "$3.4B for xAI chip leasing" refined to "$3.5B Apollo-led capital solution supporting a $5.4B acquisition and lease" per the Apollo Jan 7 2026 press release'
+      incentive_geometry: 'Apollo simultaneously (1) finances compute for two frontier AI labs (xAI via Valor VCI; Anthropic via XPV) and (2) owns the publisher (Yahoo) of Engadget, which covers both labs'' AI products. Directional prediction (NOT a finding): softer Engadget coverage of xAI/Anthropic vs non-financed labs. The financing is downside-protected asset-based debt (Lahoud: "downside-protected investment"), so Apollo''s return rides on lease payments, not lab equity upside; this MUTES the softness incentive relative to equity stakes. No coverage-tone claim is made in this iteration.'
+      coverage_evidence_reattribution: 'Mechanism #305 (Rebecca Bellan, TechCrunch, Meta -0.20 vs Anthropic +0.15 vocabulary inversion, Aug 2026 window) was cited as Apollo-chain coverage evidence; per the Aug 26 correction it reattributes to the Regent LP chain. The Apollo chain retains the Engadget surface: mechanism 109 (Engadget Google privacy vocabulary zero-out) and mechanism 113 (Karissa Bell journalist-level entity-selective methodology). Net effect: the correction WEAKENS the Apollo-chain coverage case. Reported as a weakening, not hidden.'
+      bounded_absences:
+      - 'Sep 13-15 2026 new-deal sweep: zero new AI publisher licensing deals announced (continuation of #749/#764); since=2026-09-13 query surfaced 2024-2026 re-indexes (OpenAI-Hearst, News Corp-OpenAI, Microsoft PCM, NMA-Bria, News Corp-Meta Mar 2026) plus the already-mapped Publishers Weekly Princeton-Cashmere piece'
+      - 'Regent LP x AI-lab financial ties: zero surfaced in bounded searches (bounded absence per iteration-492, not a proven zero)'
+      - 'Apple Siri AI publisher deals (WSJ Aug 12 2026 nine-figure variable-pay proposal): zero announced closures as of Sep 15 2026'
+      - 'Amazon AI content marketplace: zero Sep 2026 launch or update reporting'
+      correlational_note: 'No causal claim. The financing relationships are documented; any coverage-tone effect is UNMEASURED in this iteration. The post-sale correction is a factual ownership update, not a prediction.'
+      confounders_ranked:
+      - 'STRONG: the Aug 26 correction severs the TechCrunch arm; the strongest Apollo-chain coverage evidence (#305 Bellan) reattributes to Regent LP, leaving Engadget as the sole live chain'
+      - 'STRONG: infrastructure-debt financing, not content licensing; the incentive path is indirect (balance-sheet and fee exposure to lab success); the downside-protected lease structure mutes the softness incentive vs equity'
+      - 'STRONG: search-excerpt-bounded verification per #503 (no browser.open this turn; fleet egress proxy down)'
+      - 'MODERATE: PE ownership of media is industry-standard; the Yahoo asset is a 2021 vintage acquisition, not an AI-era purchase'
+      - 'MODERATE: Apollo is diversified ($1T+ AUM per mechanism 111); AI infrastructure is one of many business lines'
+      - 'WEAK: the $5B correction is arithmetic on primary-source reporting; n=2 financing legs'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Engadget''s Karissa Bell (mechanism 113) applies ADVERSARIAL methodology to Meta (5 articles) with zero adversarial coverage of Snap; the Apollo chain predicts softness toward FINANCED labs (xAI, Anthropic), not hardness toward Meta; the Meta-adversarial pattern is unexplained by Apollo financing'
+      - 'COUNTEREVIDENCE: Yahoo CEO Jim Lanzone is publicly anti-AI-scraping (mechanism 111 confounding factor); editorial posture runs against the financing incentive'
+      - 'COUNTEREVIDENCE: the financing vehicles (VCI SPV, XPV SPV) sit one layer removed from the labs themselves'
+      cross_references:
+      - 'Mechanism 111 (Apollo Q2 2026 AI-infrastructure financial architecture, competitor-coverage-research.yaml): the corrected and updated parent; this leg formalizes the post-sale ownership correction and Sep 2026 status'
+      - 'Mechanism 104 (TechCrunch privacy indictment): $3.4B figure refined to $3.5B; ownership reattributed to Regent LP per the Aug 26 correction'
+      - 'Mechanism 109 (Engadget Google privacy vocabulary zero-out): live Apollo-chain coverage surface'
+      - 'Mechanism 113 (Karissa Bell journalist-level entity-selective methodology): live Apollo-chain coverage surface'
+      - 'Mechanism #305 (Bellan TechCrunch vocabulary inversion): REATTRIBUTED to the Regent LP chain per the Aug 26 correction'
+      - 'ownership_correction_aug26 (this entity): the TechCrunch-to-Regent sale'
+      - 'regent_lp entity: TechCrunch current owner; zero AI-lab financial ties surfaced (bounded absence)'
+      - 'xpv_debt_expansion_aug_2026 (anthropic entity): $11.2B figure corrected to $5B here; Aug 20 $60B+ expansion already mapped'
+      - '#503 (excerpt-bounded method), iteration-492 (bounded absence), #565 (followup convention), Aug 28 2026 standing rule (qualitative-only), #609/#614 (qualitative boundary), #710/#720 (designed supersession), #752 (novelty claim pinned in block)'
+      novelty: 'FIRST new mechanism on the yahoo_apollo entity since the Aug 26 ownership correction; FIRST formal post-TechCrunch-sale Apollo-chain correction (zero post-sale-correction keys repo-wide pre-commit); FIRST $5B Yahoo-acquisition figure correction (zero $11.2B-correction keys pre-commit); FIRST Sep 2026 live-status re-verification of both Apollo AI-lab financing legs with the Travers Smith regulatory-advice corroboration. Distinct from mechanism 111 (the pre-sale Q2 2026 architecture mapping): this is the correction-and-status leg, not a duplicate.'
+      novelty_verification: 'Pre-commit novelty verified by shell greps. Zero test_type_c_769 files on disk pre-commit. no "Type C #769" in git log pre-commit. "post techcrunch sale engadget only chain correction" zero-hit repo-wide pre-commit. max numeric mechanism_id 692 pre-commit. Zero underscore-form 693 keys repo-wide pre-commit (excluding #768''s sweep-instrument carrier per #715).'
+      research_method: '4 browser.search query sets this run: (1) Apollo xAI Valor Compute $3.5B financing (SELECTED: Apollo Jan 7 2026 press release via apollo.com, ir.apollo.com, GlobeNewswire; NVIDIA anchor LP; triple-net lease; Lahoud/Gracias quotes); (2) Apollo Anthropic XPV Broadcom financing since 2026-08-25 (SELECTED: Jun 9 2026 $35B Apollo press release, WSJ, Barron''s, Motley Fool, Milbank corroboration, Travers Smith regulatory piece crawled ~Sep 12 re-confirming live status; Aug 20 $60B+ expansion already in corpus); (3) Apollo Verizon Media Yahoo $5B acquisition with TechCrunch/Engadget (SELECTED: TechCrunch Sep 2021 $5B close piece, Engadget May 2021 sale piece; $4.25B cash + $750M preferred, Verizon 10% retained; corrects the corpus $11.2B string); (4) Regent LP TechCrunch AI investment (bounded absence: zero AI-lab financial ties surfaced). Plus the since=2026-09-13 new-deal sweep (zero new AI publisher licensing deals; re-indexes only). 0 browser.open attempts (fleet egress proxy down). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. No em dashes; ASCII-only.'
+      source_urls:
+      - 'https://www.apollo.com/insights-news/pressreleases/2026/01/apollo-backs-5-4-billion-valor-and-xai-data-center-compute-infrastructure-transaction-with-3-5-billion-capital-solution-3214463'
+      - 'https://ir.apollo.com/news-events/press-releases/detail/599/apollo-backs-5-4-billion-valor-and-xai-data-center-compute'
+      - 'https://www.globenewswire.com/news-release/2026/01/07/3214463/0/en/Apollo-Backs-5-4-Billion-Valor-and-xAI-Data-Center-Compute-Infrastructure-Transaction-with-3-5-Billion-Capital-Solution.html'
+      - 'https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai'
+      - 'https://www.milbank.com/en/news/milbank-advises-on-apollo-led-dollar35b-capital-solution-for-broadcom-ai-xpv-platform.html'
+      - 'https://www.wsj.com/tech/ai/broadcom-apollo-blackstone-launch-35-billion-ai-infrastructure-platform-8fc8f65e'
+      - 'https://www.barrons.com/articles/broadcom-stock-price-ai-xpv-platform-7bcdfe21f53e'
+      - 'https://techcrunch.com/?p=2196989'
+      - 'https://www.engadget.com/verizon-media-sale-yahoo-apollo-funds-122155517.html'
+      tone_scores: 'NOT_SCORED'
+      statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value NOT_CALCULATED. cohens_d NOT_CALCULATED. ci_95 NOT_CALCULATED. is_significant False per the Aug 28 2026 standing rule. Engine NOT run. NOT a falsification-family member (ledger holds at 26; per #609/#614 qualitative boundary). NOT artifact-grade. Verdict: directionally_supported_not_proven on the financial-relationship documentation and the ownership correction; no coverage-tone claim.'
+      falsification_family: 'NOT a falsification-family member - financial-relationship documentation and ownership-correction leg (thesis-consistent direction: Engadget-only chain preserved); ledger holds at 26.'
+      artifact_readiness: 'No analysis.json update warranted - qualitative Type C only.'
+      no_analysis_json_update: true
+      verification:
+        iteration: 769
+        type: 'C'
+        date: '2026-09-15 11:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
   versant_media_group:
     display_name: Versant Media Group (CNBC, MS Now, E!, USA Network)
     aliases:
