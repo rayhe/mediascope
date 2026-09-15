@@ -134,7 +134,7 @@ class TestMetzProfileStructure:
         assert len(sci) == 1, "Science-desk career entry missing or duplicated"
         entry = sci[0]
         assert entry.get("publication") == "nytimes"
-        assert entry.get("event_type") == "moved"
+        assert entry.get("event_type") == "beat_change"
         assert entry.get("start") == "2026-08"
 
     def test_science_desk_entry_sources_wasik_memo(self):

@@ -100,7 +100,7 @@ journalists:
     start: 2017-10
   - beat: AI, science of artificial intelligence
     end: present
-    event_type: moved
+    event_type: beat_change
     notes: 'Moved from Tech desk to Science desk ~Aug 13 2026 to inaugurate a dedicated AI beat on the Science desk (Bill Wasik memo via Editor and Publisher). Wasik: AI should be examined "through the same kind of lens that we use to cover other forms of discovery" - achievements as well as setbacks and enduring mysteries. Register-shift event: science/discovery framing displaces Tech-desk accountability framing for his AI coverage. Continues from San Francisco bureau. First-day-Monday memo dated ~Aug 10 2026; post-move bylines include the Z.ai open-weight cybersecurity piece and the AI-consciousness agents piece.'
     publication: nytimes
     role: correspondent
@@ -18221,14 +18221,9 @@ journalists:
     notes: 'Hardware Editor at TechCrunch until early 2025, per the current TechCrunch author-bio page. Prior stops: Engadget, PCMag, Laptop, Tech Times (Managing Editor). Bylines also in Spin, Wired, Playboy, Entertainment Weekly, The Onion, Boing Boing, Publishers Weekly, The Daily Beast.'
     publication: techcrunch
     role: hardware_editor
-  - beat: interview podcast, tech culture
-    end: present
-    notes: 'Hosts the weekly Boing Boing interview podcast RiYL; appears as a regular NPR contributor.'
-    publication: boing-boing
-    role: podcast_host
   multi_publication: true
   name: Brian Heater
-  notes: 'TechCrunch hardware editor through early 2025 with a hands-on, design-forward, first-person hardware register. KEY ANALYTICAL VALUE: one writers desk carries Meta glasses coverage (Ray-Ban Meta review Oct 2023, Orion announcement Sep 2024) beside Apple coverage (Vision Pro Day One Feb 2024) and a comparative Snap dig (Spectacles 5 inside the Orion piece) - a compact three-entity natural experiment inside a single hardware-editor voice, time-bounded by his early-2025 TechCrunch departure, which leaves no post-departure TechCrunch series to extend.'
+  notes: 'TechCrunch hardware editor through early 2025 with a hands-on, design-forward, first-person hardware register. KEY ANALYTICAL VALUE: one writers desk carries Meta glasses coverage (Ray-Ban Meta review Oct 2023, Orion announcement Sep 2024) beside Apple coverage (Vision Pro Day One Feb 2024) and a comparative Snap dig (Spectacles 5 inside the Orion piece) - a compact three-entity natural experiment inside a single hardware-editor voice, time-bounded by his early-2025 TechCrunch departure, which leaves no post-departure TechCrunch series to extend. Post-TechCrunch: hosts the weekly Boing Boing interview podcast RiYL and appears as a regular NPR contributor (kept in notes rather than as a career event: the start date is undated and the tracker excludes dateless events from timeline analysis).'
   source_urls:
   - https://techcrunch.com/2024/09/25/meta-teases-orion-the-most-advanced-glasses-the-world-has-ever-seen
   - http://techcrunch.com/2023/10/17/ray-ban-meta-review/1200
