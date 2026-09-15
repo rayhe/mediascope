@@ -33824,5 +33824,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Careers backlink: Devindra Hardawar added to profiles/careers/journalists.yaml (journalists 269->270; mechanism_ids [686]; 5 verbatim source URLs; Type B #753 note) - the 270th journalist entry.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced (.venv pytest --collect-only this run). 33-test file, 8 classes (anchor 1 + rotation-window 2 deselected pre-commit per #565 convention; patched green in anchor followup).
 - New Type B files: tests/test_type_b_753_devindra_hardawar_engadget_quest3_vs_visionpro_review_constancy_sep14_7pm.py - 8 classes, 33 tests (30 green pre-commit, anchor 1 + rotation-window 2 deselected per #565 convention, patched green in followup).
-- Commit hashes: main commit PENDING; anchor followup PENDING (ANCHORED_SHA patched per #565, anchor + full rotation guard green 33/33 post-followup); log-hash followup updates this line.
+- Commit hashes: main commit 4f72963; anchor followup b8055f0 (ANCHORED_SHA 4f72963a0500a577a7453230c5c0c05ef675f46c patched per #565, 33/33 green post-followup); push blocked by fleet egress outage.
 - Push status: PENDING.
