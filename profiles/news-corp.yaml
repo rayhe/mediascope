@@ -532,6 +532,136 @@ competitor_relationships:
       novelty: 'Zero test_type_a_747 files on disk pre-commit; no "Type A #747" in git log pre-commit; the Clash piece URL (openai-anthropic-crisis-money-safety-847bc1d6) zero-hit repo-wide pre-commit; the "Clash Between Money and Safety" title string zero-hit repo-wide pre-commit; the relay URLs (very-badly-1e840a6c, a4267b56) carried from #742 by design; max numeric mechanism_id 681 pre-commit; zero underscore-form 682 mechanism key strings repo-wide pre-commit (excluding the #744/#745 sweep-instrument carrier test names per the #715 pattern-rescope lesson).'
       no_analysis_json_update: true
       correlation_not_causation: true
+    wsj_openai_biggest_rivals_unity_consensus_register_vs_clash_expose_sep14:
+      mechanism_id: 689
+      iteration: 762
+      iteration_type: "A"
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-15'
+      time_pdt: '04:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      incentive_attribution: "INCONCLUSIVE and MIXED: m682's watchdog expose bounded capture readings (uniform softening falsified by the day's hardest OpenAI register), while this run's unity-consensus piece bounds adversarial-uniformity readings (uniform hostility falsified by the day's softest CEO treatment). The triad is better explained by desk/genre routing than by the licensing tie. Correlation is not causation."
+      mechanism_name: 'WSJ x OpenAI Slowdown-Week Unity-Consensus Register (Sep 14 2026) - "Biggest AI Rivals Agree They Need to Slow It Down" Statesman Framing vs Same-Day Watchdog Expose; Register Triad Within 24 Hours'
+      key_design_note: 'Descriptive block key carries no underscore-form 689 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the #760 zero-689 profile sweep instruments green while mechanism_id advances in colon form. The anchor article URL (a4267b56) is carried from #742 (m679) by design; the novelty is the FIRST dedicated mechanism on its unity-consensus register, not the URL.'
+      overview: 'On Mon Sep 14 2026, the WSJ published "Biggest AI Rivals Agree They Need to Slow It Down" (URL a4267b56, carried from #742/m679 by design as a "balanced duo framing" relay arm), framing Elon Musk, Sam Altman, and Dario Amodei in a unity-consensus statesman register: "a rare display of unity" among the three CEOs, Altman''s IPO delay framed as a safety sacrifice ("may need to delay its much-anticipated IPO to focus on safety"), Altman adopting Amodei''s evaluator proposal ("a great idea, and we will do the same"). MANUAL ILLUSTRATIVE +0.15 - the softest CEO treatment of the OpenAI payer in the WSJ slowdown-week cluster, published the SAME DAY as the Clash watchdog expose (-0.40, m682). The same-week WSJ OpenAI register set now forms a TRIAD within 24 hours: watchdog expose (-0.40), constructive CEO relay (+0.10), unity-consensus statesman (+0.15).'
+      articles_this_run:
+        - title: 'Biggest AI Rivals Agree They Need to Slow It Down'
+          publication: Wall Street Journal
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-slow-the-pace-a4267b56'
+          url_status: 'carried from #742 (m679) by design - URL zero-hit claim NOT made; the dedicated-register mechanism is the novelty'
+          register: 'unity_consensus_statesman_framing'
+          tone_MANUAL_ILLUSTRATIVE: 0.15
+          tone_basis: 'Hand-assigned from 6+ rendered search-excerpt lines across 2 query sets this run (excerpt-bounded per #503; the piece was NOT read first-hand - no browser.open attempted this run, WSJ paywalled). Slightly softer than the m679 relay (+0.10) because of the IPO-sacrifice frame: Altman "may need to delay its much-anticipated IPO to focus on safety" casts a commercial sacrifice as a virtue signal, the reputation-positive direction.'
+          excerpts_verbatim:
+            - 'The leaders of three of the biggest AI companies agreed that they needed to slow development of the technology before their advances create a menace that can''t be controlled.'
+            - 'It was a rare display of unity by Elon Musk, Sam Altman and Dario Amodei, who have been spending tens of billions of dollars to develop evermore powerful artificial intelligence models.'
+            - 'Altman even suggested that his company, OpenAI, may need to delay its much-anticipated IPO to focus on safety.'
+            - 'In a post on X, Amodei said Anthropic would provide third-party evaluators with ''permanent, employee-level access to our systems, so that they can verify adherence to our safety measures, report on incidents, and assess models'' alignment during training.'''
+            - 'Shortly after Amodei published his post, Musk, the CEO of SpaceX, said in an X post, "Dario is right."'
+            - 'Altman said on X he agreed with Amodei about the need for pacing. "Committing to having independent evaluators with employee-like access is a great idea, and we will do the same," he wrote, promising to share more details soon.'
+          tone_observations:
+            - 'The "rare display of unity" frame grants all three CEOs - including Altman, head of the News Corp licensing payer - the statesman-among-peers register; no motive-skepticism choir accompanies the consensus story, unlike the Clash expose''s Tegmark/Sacks/DeepMind-voice assembly on the same day.'
+            - 'Altman is positioned as cooperative respondent to Amodei''s essay (agreeing "about the need for pacing," adopting the evaluator pledge), the gentlest structural role available in a three-CEO story: he follows rather than leads the accountability ask.'
+            - 'The "spending tens of billions" line carries mild cost-scale framing even inside the consensus register - the piece is constructive, not hagiographic.'
+          disclosure_observation: 'No disclosure visibility claim is made: the piece was NOT read first-hand (WSJ paywalled; no browser.open attempted this run); excerpt-bounded analysis cannot rule in or out boilerplate disclosure, per the m682 bounded-absence convention.'
+      articles_corraborating_this_run:
+        - title: 'What Amodei, Altman and Musk have said about AI risks, stoking ''doom'' fears'
+          publication: Reuters
+          date: '2026-09-14'
+          url: 'https://www.reuters.com/business/what-amodei-altman-musk-have-said-about-ai-risks-stoking-doom-fears-2026-09-14/'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'Executive-summary explainer corroborating the Sep 14 three-CEO consensus news event; Amodei 3800-word essay, Altman agreeing "about the need for pacing," Musk "Dario is right."'
+        - title: 'AI leaders call for slowing down. The government doesn''t want to.'
+          publication: USA Today
+          date: '2026-09-14'
+          url: 'https://www.usatoday.com/story/tech/2026/09/14/ai-pace-frontier-regulation/91682225007/'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'Corroborates the Sep 14 consensus event and the regulatory counter-position (Vance: "We don''t want to slow down AI progress").'
+        - title: 'Anthropic CEO Calls for Global AI Slowdown to Prevent Internet ''Swarm'' Threat'
+          publication: Barron''s
+          date: '2026-09-14'
+          url: 'https://www.barrons.com/articles/anthropic-ceo-ai-slowdown-letter-2ac6a113'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'News Corp sibling (Barron''s) coverage of the same Amodei essay peg; bounds the consensus story as a genuine news event, not a WSJ-only framing choice.'
+        - title: 'OpenAI''s Sam Altman says it would be ''ill-advised'' to go public in 2026'
+          publication: TechCrunch
+          date: '2026-09-12'
+          url: 'https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'Corroborates the IPO-delay-as-safety-framing that the WSJ unity piece casts as Altman''s sacrifice; the "ill-advised" line originated in Altman''s Fortune interview.'
+        - title: 'OpenAI IPO will not happen in 2026 amid AI safety fears, Altman says'
+          publication: Reuters
+          date: '2026-09-12'
+          url: 'https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/'
+          url_status: 'already in corpus (3 hits) - carried by design'
+          note: 'The safety-framed IPO delay originated with Altman''s own Fortune framing; WSJ''s unity piece relays the company''s preferred frame.'
+      articles_carried_triad_context:
+        - title: 'How the Clash Between Money and Safety Created a Monumental Crisis for AI'
+          mechanism: 682
+          publication: Wall Street Journal
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/openai-anthropic-crisis-money-safety-847bc1d6'
+          url_status: 'carried from #747 (m682) by design'
+          register: 'watchdog_enterprise_expose_motive_skepticism'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          note: 'Same-day watchdog triad arm: "Greek tragedy," Sacks "stop pretending the motivation to slow down is purely altruistic." Carried at identical values, no rescoring.'
+        - title: 'Microsoft Sets Limits for AI Models as Altman Details Control Risks'
+          mechanism: 679
+          publication: Wall Street Journal
+          byline: Gareth Vipers
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/altman-says-ais-rapid-progress-could-go-very-badly-1e840a6c'
+          url_status: 'carried from #742 (m679) by design'
+          register: 'constructive_ceo_framing_relay'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          note: 'Same-day constructive relay triad arm. Carried at identical values, no rescoring.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'openai'
+        peer_arm: 'same_publication_same_day_expose_arm'
+        unity_score_MANUAL_ILLUSTRATIVE: 0.15
+        expose_score_MANUAL_ILLUSTRATIVE: -0.40
+        delta: 0.55
+        delta_note: 'Unity +0.15 minus expose -0.40 equals +0.55. Direction: unity-consensus register SOFTER than the watchdog expose on the same payer (OpenAI, ~$50M/yr News Corp licensing) within 24 hours and within one publication. The same-day register span on a single payer is the widest in the corpus.'
+        triad_range_note: 'Same-day WSJ OpenAI register TRIAD now spans +0.15 (unity statesman) to -0.40 (watchdog expose) = 0.55 within 24 hours; the same-week corpus range including m616 Tumbler Ridge (-0.55, Sep 2) spans +0.15 to -0.55 = 0.70, exceeding every between-entity gap in the corpus. Register SELECTION dominates entity targeting at WSJ x OpenAI.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, n=1 new unity-register mechanism (excerpt-bounded, 6+ rendered lines, 2 query sets) vs n=1 carried expose arm and n=1 carried relay arm, un-rescored. Engine NOT run. DO NOT claim empirical significance.'
+      finding: 'Register TRIAD within 24 hours on the same payer in the same publication: the same paper that indicted the money-vs-safety race as a "Greek tragedy" with Sacks'' "stop pretending the motivation to slow down is purely altruistic" (m682, -0.40) simultaneously anointed its central figure as the responsible statesman sacrificing a much-anticipated IPO "to focus on safety" (m689, +0.15) - the watchdog and the consensus-statesman registers share a publication day. Meta - the other News Corp AI payer (~$50M/yr) - is absent from the unity consensus: the "rare display of unity" seats Musk/Altman/Amodei only, with no statesman seat for Meta''s leadership in the surfaced excerpts (bounded observation, not a proven zero - the full text may mention Meta). Incentive attribution is INCONCLUSIVE and now MIXED: m682''s expose bounded capture readings (uniform softening falsified by the day''s hardest OpenAI register), while m689''s unity piece bounds adversarial-uniformity readings (uniform hostility falsified by the day''s softest CEO treatment). The triad is better explained by desk/genre routing (enterprise investigative vs news-desk consensus coverage of a genuine three-CEO news event) than by the licensing tie. NOT a falsification-family member - register-mix refinement, not a uniform-prediction test. Ledger holds at 26. NOT artifact-grade. Correlation is not causation.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted.'
+      confounders_ranked:
+        strong:
+          - 'Excerpt-bounded read: the unity piece was NOT read first-hand (WSJ paywalled; no browser.open attempted this run); the +0.15 tone is hand-assigned from 6+ rendered search-excerpt lines across 2 query sets, which skew toward the most quotable consensus lines.'
+          - 'Genre skew: consensus-news story vs enterprise watchdog feature are different genres with different built-in registers; the unity register would read constructive on any entity it positioned as a cooperating respondent.'
+          - 'Respondent positioning: the piece''s lead peg is Amodei''s 3800-word essay; Altman is the respondent who "agreed about the need for pacing" - the softness is partly the structural role (follower of the accountability ask), not payer-specific favor.'
+        moderate:
+          - 'Byline/desk unconfirmed from excerpts (the Clash piece carried 4 bylines; the unity piece''s byline not surfaced) - desk-routing is inferred from genre, not verified.'
+          - 'The IPO-sacrifice frame originated in Altman''s own Fortune interview (Sep 12); WSJ relays the company''s preferred frame, so the +0.15 partly scores Altman''s PR positioning, not WSJ invention.'
+          - 'n=1 new unity-register mechanism; hand-assigned illustrative tones, not empirical corpus scores.'
+        weak:
+          - 'Meta absence is excerpt-bounded (full text may mention Meta) - the no-statesman-seat observation is bounded, not a proven zero.'
+          - 'The "spending tens of billions" line shows the consensus register is not hagiographic - mild cost-scale framing persists even in the softest arm.'
+          - 'Barron''s (News Corp sibling) covered the same peg, which bounds WSJ-only framing claims but is itself a single-sibling observation.'
+      bounded_absence: '5 browser.search query sets this run (FT OpenAI Altman slowdown; FT OpenAI Microsoft Altman interview pacing; FT Anthropic Amodei profitability; Guardian OpenAI Altman slowdown; BI OpenAI IPO) found no Financial Times, NYT, Guardian, or Business Insider piece on the slowdown-week consensus event - bounded search-result absence per iteration-492, not a proven zero. No first-hand WSJ disclosure-visibility check was possible (paywall; no browser.open attempted).'
+      counter_evidence:
+        - 'm682 (same day): WSJ ran the watchdog expose (-0.40) - the register triad is the point, not uniformity in either direction.'
+        - 'm616 (Sep 2): Tumbler Ridge (-0.55) remains the hardest WSJ OpenAI register - the payer gets the corpus''s hardest AND softest treatment within 12 days.'
+        - 'The unity piece''s own "spending tens of billions" line and the Clash piece''s Sacks quote show the paper can hold cost-scale and motive-skepticism frames even while running consensus coverage.'
+      relation_to_679: 'Direct same-week extension: m679 carried the unity piece as an unscored "balanced duo framing" relay arm (+0.05, no dedicated mechanism); this run gives it its first dedicated mechanism and re-registers it as unity-consensus statesman framing (+0.15), slightly softer than the Vipers relay (+0.10) because of the IPO-sacrifice frame. m679''s relay-pair finding (constructive toward the payer) is refined, not contradicted.'
+      relation_to_682: 'Same-day triad completion: m682 found the watchdog expose (-0.40) published the same day as the constructive relay pair; this run finds the SAME publication publishing the unity-statesman piece (+0.15) the SAME day as the expose. The same-day register span on the payer widens from 0.475 (m682''s expose-vs-relay delta) to 0.55 (unity-vs-expose). Both mechanisms agree: register SELECTION dominates entity targeting at WSJ x OpenAI; the licensing tie predicts neither arm.'
+      relation_to_616: 'Fourth leg on the WSJ x OpenAI register-range pattern: m616 Tumbler Ridge -0.55 (hardest, Sep 2), m682 Clash expose -0.40 (Sep 14, watchdog), m679 Altman relay +0.10 (Sep 14 AM), this run unity consensus +0.15 (Sep 14, softest). Same-week range 0.70 - no between-entity gap in the corpus is that large.'
+      distinct_from_prior: 'FIRST dedicated mechanism on the WSJ "Biggest AI Rivals Agree They Need to Slow It Down" unity-consensus register (URL carried from #742/m679 by design; the dedicated-register mechanism is the novelty, not the URL); first same-publication-day register TRIAD (three registers, one payer, 24 hours) in the corpus; first mechanism to observe Meta''s absence from the slowdown-week unity consensus (no statesman seat for the other News Corp AI payer, excerpt-bounded).'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing); Meta leg Mar 2026 (up to $50M/yr, 3yr, Dow Jones news leg per #549); Anthropic leg $0 AI licensing (only HarperCollins settlement-revenue share, different vector). If the tie purchased uniform softening, the day''s hardest OpenAI register in the corpus would not be a Sep 14 WSJ enterprise expose - yet the same-day triad spans +0.15 to -0.40 on the payer. If the tie purchased nothing, the consensus-statesman treatment of the payer''s CEO would need no explanation - yet it is the softest CEO treatment in the slowdown-week cluster. Both uniform stories fail; register SELECTION dominates. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      research_method: '5 browser.search query sets this run (Financial Times OpenAI Altman slowdown Sep 2026; FT OpenAI Microsoft Altman interview AI pacing slowdown; Financial Times Anthropic Amodei profitability slow down pace; Guardian OpenAI Altman slowdown Amodei Musk; Business Insider OpenAI IPO delay 2026 Altman) + 0 browser.open attempts (WSJ paywalled; FT/Guardian/BI absence searches needed no opens) - excerpt-bounded per #503. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_762 files on disk pre-commit; no "Type A #762" in git log pre-commit; the unity-piece URL (a4267b56) carried from #742 (m679) by design - NOT claimed novel; the unity_consensus_statesman_framing register string zero-hit repo-wide pre-commit; the 4 corroborating URLs (Reuters doom-fears explainer, USA Today pace-frontier-regulation, Barron''s anthropic-ceo-ai-slowdown-letter, TechCrunch ill-advised-IPO) zero-hit repo-wide pre-commit; the Reuters IPO piece already in corpus (3 hits) carried by design; max numeric mechanism_id 688 pre-commit; zero underscore-form 689 mechanism key strings repo-wide pre-commit (excluding the #760 sweep-instrument carrier test names per the #715 pattern-rescope lesson).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
