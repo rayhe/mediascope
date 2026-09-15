@@ -58,7 +58,7 @@ ARCH_PATH = os.path.join(REPO_ROOT, "docs", "ARCHITECTURE.md")
 LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 
 # Placeholder pre-commit; patched to the main-commit SHA in the #565 followup.
-ANCHORED_SHA = "PENDING_ANCHOR_PATCH_PER_565"
+ANCHORED_SHA = "1fe0712885456567907f4bb7c0fd9a9cadfc94ea"
 
 
 def _read(path):
@@ -446,5 +446,5 @@ class TestIterationLog769:
     def test_iteration_log_entry_769(self):
         assert "Type C #769" in _read(LOG_PATH)
 
-    def test_iteration_log_mentions_mechanism_693(self):
+    def test_iteration_log_mentions_m693(self):
         assert "693" in _read(LOG_PATH)
