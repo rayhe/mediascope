@@ -40,7 +40,7 @@ MECH_KEY = (
     "max miller engadget privacy moralization asymmetry meta facial "
     "recognition vs apple att sep15"
 )
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "4c9f9048a6a3237534f86cef60727b22ee6e1f60"
 META_URL = (
     "https://www.engadget.com/2190115/"
     "meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/"
