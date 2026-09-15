@@ -116,7 +116,7 @@ class TestRotationCycleGuard761:
     opens the 761-765 window, opening E->A->B->C->D.
     """
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+    ANCHORED_SHA = "3ee6dc4b2f9b6f5c8e49b7d07648a0d04dd2e873"  # main commit this run, per #565
 
     @staticmethod
     def _mains():
