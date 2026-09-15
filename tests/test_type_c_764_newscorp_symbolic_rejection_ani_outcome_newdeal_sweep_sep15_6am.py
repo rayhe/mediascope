@@ -142,7 +142,7 @@ class TestRotationCycleGuard764:
     E->A->B->C->D).
     """
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # main commit this run, per #565
+    ANCHORED_SHA = "e3c5a19309fe84dd6e23ca2d5d97c85a9257717e"  # main commit this run, per #565
 
     @staticmethod
     def _mains():
