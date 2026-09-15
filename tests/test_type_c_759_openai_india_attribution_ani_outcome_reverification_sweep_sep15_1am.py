@@ -123,7 +123,7 @@ class TestRotationCycleGuard759:
     closes the 755-759 window, closing D->E->A->B->C.
     """
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # main commit this run, per #565
+    ANCHORED_SHA = "906b1ba708752b72eb04e621500319b7a4f78e0c"  # main commit this run, per #565
 
     @staticmethod
     def _mains():
