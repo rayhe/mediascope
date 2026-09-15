@@ -40,7 +40,7 @@ MECH_KEY = (
     "hearst_openai_renewal_window_oct2024_third_microsoft_pcm_payer_leg_sep2026"
 )
 NEXT_SIBLING = "\n    mechanism_544_vox_media_microsoft_pcm_pay_per_use_leg:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "bb98aa081b2520f494b902686c8a5bcecac98d08"
 
 
 def _read(rel):
