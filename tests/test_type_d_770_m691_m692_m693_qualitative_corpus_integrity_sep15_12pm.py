@@ -502,9 +502,9 @@ class TestTypeDRotationGuard:
 
     def test_anchor_sha_placeholder_present(self):
         # ANCHORED_SHA patched in followup per #565 to the main commit:
-        # PLACEHOLDER770
-        anchor = "PLACEHOLDER770"
-        assert anchor == "PLACEHOLDER770"
+        # 051cd88
+        anchor = "051cd88"
+        assert anchor == "051cd88"
 
     def test_ledger_wording(self):
         # TWENTY-SIXTH present, TWENTY-SEVENTH absent in this file
