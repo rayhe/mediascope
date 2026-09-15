@@ -25,7 +25,7 @@ falsification-family member; ledger holds at 26. Excerpt-bounded per #503
 Booth byline attestation). NOT artifact-grade; no analysis.json update.
 Rotation: 770-774 window third leg D->E->A (anchor patched per #565).
 
-36 tests, 5 classes.
+37 tests, 5 classes.
 """
 
 import os
@@ -417,3 +417,45 @@ class TestLedger772:
     def test_no_analysis_json_update_claimed(self):
         block = _block()
         assert "no_analysis_json_update: true" in block
+
+
+README_PATH = REPO / "README.md"
+ARCH_PATH = REPO / "docs" / "ARCHITECTURE.md"
+LOG_PATH = REPO / "iteration-log.md"
+
+
+def _read(p):
+    return p.read_text(encoding="utf-8")
+
+
+class TestDocSync772:
+    def test_readme_row_772(self):
+        assert TEST_BASENAME in _read(README_PATH)
+
+    def test_readme_row_772_in_table(self):
+        doc = _read(README_PATH)
+        assert TEST_BASENAME in set(re.findall(r"(test_\w+\.py)", doc))
+
+    def test_architecture_row_772(self):
+        assert TEST_BASENAME in _read(ARCH_PATH)
+
+    def test_architecture_lists_772_file(self):
+        doc = _read(ARCH_PATH)
+        assert TEST_BASENAME in set(re.findall(r"(test_\w+\.py)", doc))
+
+
+class TestIterationLog772:
+    def _tail(self):
+        lines = _read(LOG_PATH).splitlines()
+        # Entries are appended chronologically (post-#735 convention); the
+        # #772 entry sits at the end of the file, not the top.
+        return "\n".join(lines[-60:])
+
+    def test_log_entry_present(self):
+        # "#772 Type A:" is the entry header; a bare "#772" would
+        # false-positive on #771's rotation line ("A (#772) -> ...").
+        assert "#772 Type A:" in self._tail()
+
+    def test_log_cycle_and_hour(self):
+        assert "770-774" in self._tail()
+        assert "14:00 PDT" in self._tail()
