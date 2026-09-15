@@ -3286,6 +3286,124 @@ entities:
       - https://www.thewrap.com/industry-news/business/news-corp-q3-earnings/
       caution: Structural mapping only. Documents the News Corp x OpenAI renewal window, the #599 ACTIVE treatment with Thomson Q4 FY2026 affirmative confirmation, and the cohort membership, not editorial capture. No coverage-tone claim is made.
 
+    hearst_openai_renewal_window_oct2024_third_microsoft_pcm_payer_leg_sep2026:
+      mechanism_name: 'Hearst x OpenAI Renewal Window (Sep 2026 Status) - 23 Months Post-Oct 8 2024 Strategic Partnership, No Renewal/Extension/Termination Reporting, Treated ACTIVE per #599 Convention; EIGHTH Member of the #609 First-Gen Cohort; Microsoft PCM Pay-Per-Use Leg (Feb 2026) Joins the Amazon Rufus Leg (Jul 2025) to Make Hearst a Triple-AI-Payer Publisher, Meta $0'
+      mechanism_id: 696
+      iteration: 774
+      iteration_type: C
+      rotation: 'Type C'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      time_pdt: '16:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      date_analyzed: '2026-09-15'
+      discovery_date: '2026-09-15'
+      overview: 'Extends mechanism 489 (Hearst x OpenAI strategic partnership structure, Oct 8 2024, iteration 489) with the first dedicated Hearst OpenAI-leg renewal query set plus a new third payer leg: the Microsoft Publisher Content Marketplace (PCM) pay-per-use program, launched Feb 2026, names Hearst among its co-design pilot publishers in Microsoft own-channel announcements (The Keyword blog, Feb 2026), Search Engine Land, and the WSJ Jul 2026 marketplace survey. Combined with the Amazon Rufus multi-year leg (Jul 10 2025, carried from mechanism 489) and the LLM Pulse Sep 2026 deal map corroborating all three legs, Hearst is now a triple-AI-payer publisher collecting AI-licensing revenue from three Meta competitors (OpenAI bilateral since Oct 2024, Microsoft pay-per-use since Feb 2026, Amazon shopping-assistant since Jul 2025) while Meta pays $0 - the third triple-payer publisher architecture in the corpus after News Corp (mechanism 594 five-leg) and Vox Media (mechanism 621). Qualitatively BOUNDS the falsification family; no new tone arrays scored.'
+      openai_leg_renewal_window:
+        announced: '2024-10-08 (hearst.com and openai.com press releases; Axios exclusive the day before)'
+        elapsed_months: 23
+        term: 'undisclosed (mechanism 489; TheWrap and Engadget contemporaneous reporting both note financial terms not disclosed)'
+        decision_window_note: 'The Atlantic OpenAI leg carried a disclosed two-year contract (TechCrunch Jun 2024, mechanism 621 cohort note); the Hearst leg at 23 months sits at the same decision-window age, which makes this renewal query set time-sensitive rather than routine'
+        renewal_window_query_sets:
+        - query: 'Hearst OpenAI partnership renewal extension 2026'
+          result: 'NO renewal/extension/renegotiation/termination reporting; only Oct 2024 announcement re-surfaces (thewrap, nytimesnewstoday, venturebeat, bloomberglaw, pymnts, telecomtalk)'
+        - query: '"Hearst" OpenAI "renewal" OR "extension" OR "renegotiated" licensing'
+          result: 'NO renewal items; results are 2024 announcement re-surfaces only (thewrap, venturebeat, bloomberglaw, analyticsinsight, moneyweb, pymnts, dataconomy) - bounded absence confirmed'
+        - query: 'Hearst AI content licensing deal Meta Microsoft 2026'
+          result: 'Surfaces the Microsoft PCM co-design leg and the LLM Pulse Sep 2026 deal map (new legs, mapped separately below); NO OpenAI-leg renewal items - bounded absence confirmed'
+        - query: 'Hearst Meta AI licensing deal news partnership 2026'
+          result: 'NO Meta x Hearst AI licensing deal; Meta partner lists (LLM Pulse Sep 2026, Press Gazette tracker Sep 2026) contain no Hearst entry - the m489 Meta-leg zero finding re-confirmed'
+        status: ACTIVE
+        status_convention: '#599 ACTIVE convention (no termination reporting => treated as still ACTIVE)'
+        cohort_membership: 'EIGHTH member of the #609 first-gen OpenAI publisher renewal cohort (after FT, Atlantic, Conde Nast via #609; Time via #639 mechanism 618; Vox via #644 mechanism 621; Dotdash Meredith via #649 mechanism 624; News Corp via #654 mechanism 627). AP is a separate elapsed-term case (mechanism 615, #634); Axel Springer carries the cohort first dated expiry (Dec 2026, mechanism 597, #604).'
+        positive_controls:
+        - 'Jul 2026 local-news $5M OpenAI renewal got trade-press coverage (per #609) - renewals get covered, so the Hearst OpenAI absence is informative'
+        - 'Press Gazette AI-deals tracker updated within 5 hours of this run (Sep 7 2026 edition visible Sep 15) lists Hearst-OpenAI with NO renewal note - a curated-trade-press absence, not an authoritative registry'
+      microsoft_pcm_third_payer_leg:
+        partner: 'Microsoft'
+        announced: '2026-02'
+        mechanism: 'Publisher Content Marketplace (PCM): pay-per-use AI content licensing; publishers set licensing and usage terms, AI builders license for specific grounding scenarios; payments tied to recorded usage (Microsoft The Keyword blog, Feb 2026)'
+        hearst_role: 'Hearst named among the co-design pilot publishers in Microsoft own-channel announcements (The Keyword blog: Business Insider, Conde Nast, Hearst, The Associated Press, USA TODAY, Vox Media) and in Search Engine Land launch coverage (Business Insider, Conde Nast, Hearst, AP, USA TODAY, Vox Media); WSJ Jul 2026 marketplace survey confirms the eight-publisher PCM pilot includes Hearst and that Microsoft invested north of $10M including on payments to publishers (Tim Frank, CVP Microsoft)'
+        pricing_model: 'pay-per-use (usage-priced) - Hearst now spans bilateral flat-fee (OpenAI) and marketplace usage-priced (Microsoft) models, the same model spread Vox Media crossed in mechanism 621'
+        additional_microsoft_channel: 'LLM Pulse Sep 2026 deal map (crawled 3h before this run) lists Hearst among Microsoft Copilot Daily partners (Financial Times, Reuters, Axel Springer, Hearst, USA Today Network) - a second Microsoft-side content channel, corroborating the PCM leg rather than duplicating it'
+        triple_payer_significance: 'Hearst joins News Corp (mechanism 594) and Vox Media (mechanism 621) as the corpus third triple-AI-payer publisher: OpenAI (Oct 2024 bilateral) + Microsoft (Feb 2026 PCM pay-per-use) + Amazon (Jul 2025 Rufus leg carried from mechanism 489), Meta $0 on every leg'
+        sources:
+        - 'https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191 (PCM launch; Hearst named among co-design publishers; Microsoft Advertising launched Feb 3 2026)'
+        - 'https://thekeyword.medium.com/microsoft-launches-program-for-publishers-to-license-content-for-ai-9474957facaf (Microsoft own-channel: Hearst named among partner publishers, pay-based-on-usage model)'
+        - 'https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00 (Jul 2026 marketplace survey; eight-publisher PCM pilot includes Hearst; Microsoft invested north of $10M, Tim Frank CVP)'
+        - 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/ (Sep 2026 tracker, crawled 5h: FT, Reuters, Axel Springer, Hearst Mags, USA Today Network - Microsoft; Hearst - OpenAI with no renewal note)'
+        - 'https://llmpulse.ai/blog/ai-content-licensing-deals/ (Sep 2026 deal map, crawled 3h: Hearst in the Microsoft Copilot Daily partner list; Hearst in the no-public-price bucket with Vox Media, Atlantic, Time, Conde Nast, Guardian, Washington Post, Reuters, AFP)'
+      amazon_rufus_leg_carried:
+        announced: '2025-07-10 (carried from mechanism 489; Digiday/Jessica Davies, Hearst spokesperson confirmed, terms undisclosed)'
+        scope: 'multi-year licensing agreements for the Amazon AI shopping assistant; titles named include Good Housekeeping, Cosmopolitan, Harper Bazaar'
+        llm_pulse_branding_note: 'LLM Pulse Sep 2026 maps Conde Nast and Hearst for Alexa for Shopping (July 2025) and labels the Amazon column Alexa for Shopping (formerly Amazon Rufus) - the same leg mechanism 489 recorded as Rufus, now under Amazon consolidated shopping-assistant branding; corroboration of the leg, not a new fourth payer'
+        context: 'announced six weeks after the NYT x Amazon AI licensing deal (May 2025); Conde Nast signed a parallel Rufus deal the same week (mechanism 489)'
+      meta_leg_status: 'Meta x Hearst AI licensing: $0, re-confirmed this run. Press Gazette Sep 2026 tracker maps only Reuters - Meta on the Meta column; LLM Pulse Sep 2026 Meta partner table (Reuters, News Corp, Le Figaro, Prisa, Suddeutsche Zeitung, CNN, Fox News, USA Today, People Inc) contains no Hearst entry; the mechanism 489 zero-leg finding stands 12 days later. Structural financial asymmetry: Hearst collects AI-licensing revenue from three Meta competitors and $0 from Meta. CORRELATION NOT CAUSATION.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'All renewal-status evidence is bounded-search absence; absence of reporting is not proof of deal continuity - the #609 positive-control argument (Jul 2026 local-news renewal got covered) is inferential, not dispositive'
+      - rank: 2
+        strength: strong
+        confounder: 'The Hearst-OpenAI deal term is undisclosed, so the 2-year decision-window framing borrows the Atlantic disclosed two-year contract as an analog, not a fact about Hearst; the window is plausible timing, not a dated expiry'
+      - rank: 3
+        strength: strong
+        confounder: 'The PCM leg is usage-priced and pilot-stage with north-of-$10M total Microsoft investment across eight publishers - actual Hearst PCM revenue is unverified and could be small relative to the bilateral OpenAI leg; payer COUNT (three) is not payer VOLUME'
+      - rank: 4
+        strength: moderate
+        confounder: 'The Press Gazette tracker is a trade-press curation, not an authoritative deal registry; a quiet Hearst-OpenAI renewal could exist without trade-press coverage'
+      - rank: 5
+        strength: moderate
+        confounder: 'The Microsoft Copilot Daily partner list (LLM Pulse) is secondary-map attribution; the primary Microsoft channels (The Keyword, Search Engine Land, WSJ) corroborate the PCM co-design leg, not the Copilot Daily list separately - double-counting risk if both are treated as independent legs'
+      - rank: 6
+        strength: moderate
+        confounder: 'The LLM Pulse Alexa-for-Shopping vs Rufus branding consolidation is the mapper interpretation; mechanism 489 primary sources (Digiday, Engadget, Glossy) call the Jul 2025 leg Rufus - the consolidated branding claim is carried, not independently verified this run'
+      - rank: 7
+        strength: weak
+        confounder: 'The Hearst OpenAI partnership covers magazines and newspapers only (scope exclusion, mechanism 489); the PCM leg scope for Hearst Magazines vs Hearst Newspapers titles is not itemized in the launch coverage'
+      - rank: 8
+        strength: weak
+        confounder: 'Bounded searches may miss renewal reporting behind trade-press paywalls or in non-English press'
+      strongest_counterargument: 'The payer-count framing (three competitors pay, Meta pays zero) describes REVENUE DIRECTION, not editorial capture; the Hearst deal carries the corpus most-documented internal-friction record (WGAE formal information request, mechanism 489) and a pre-existing convening entanglement (Brown Institute summit), both of which bound sudden-capture readings in the opposite direction; the null (independent Hearst editorial standards across news and magazine titles) predicts no tone effect, and no coverage-tone claim is made here.'
+      cross_references:
+      - 'Mechanism 489 Hearst x OpenAI deal structure plus Amazon Rufus dual-payer (this run is the OpenAI-leg renewal-status mapping and the third-payer extension the dual-payer did not do)'
+      - '#609 first-gen OpenAI publisher renewal cohort (cohort method template; FT/Atlantic/Conde Nast bounded query sets; Jul 2026 local-news $5M positive control)'
+      - '#599 ACTIVE convention (no termination reporting => treated ACTIVE)'
+      - '#654 News Corp OpenAI renewal window (seventh cohort member, mechanism 627; the $250M/5yr scale contrast to the undisclosed Hearst terms)'
+      - '#649 DDM renewal window (sixth cohort member, mechanism 624; DDM now also a PCM participant per the Jul 2026 WSJ survey - the PCM wave is the cohort-wide second/third-payer mechanism)'
+      - 'Mechanism 594 News Corp five-leg AI revenue architecture (first multi-payer architecture in corpus)'
+      - 'Mechanism 621 Vox Media triple-AI-payer architecture (second triple-payer; Hearst is the third)'
+      - 'Mechanism 645 Conde Nast Microsoft PCM bilateral leg (Hearst is the second tracked PCM co-design publisher with a dedicated mechanism)'
+      - '#443 Microsoft PCM marketplace transparency paradox (Type C; seven-publisher co-design with dual-role operator-and-buyer critique, in corpus via GitHub commit search this run - circular, not ingested)'
+      falsification_family: 'NOT a member (ledger holds at 26 per the #754 convention; renewal windows BOUND rather than join the falsification family; no coverage-tone claim is made)'
+      verdict: 'directionally_supported_not_proven'
+      no_analysis_json_update: true
+      artifact_grade: false
+      novelty_verification:
+      - 'Zero test_type_c_774 files on disk pre-commit (glob verified)'
+      - 'No Type C commit with 774 in title (git log --grep verified)'
+      - 'Hearst OpenAI renewal / Hearst renewal window zero-hit repo-wide pre-commit (case-insensitive git grep verified)'
+      - 'Max numeric mechanism id pre-commit 695; zero underscore-form 696 markers repo-wide pre-commit (sweep-instrument carriers excluded per #715)'
+      - 'FIRST corpus dedicated renewal-window mapping for the Hearst x OpenAI deal; FIRST dedicated Hearst Microsoft PCM leg; EIGHTH member of the #609 first-gen cohort; THIRD corpus triple-AI-payer publisher'
+      - 'NOT a falsification-family member: the renewal window BOUNDS rather than joins the falsification family; no coverage-tone claim is made'
+      statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Tone scores NOT_SCORED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. is_significant False per the Aug 28 2026 standing rule. Engine NOT run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run. Correlational language only; no causal claim; no coverage-tone claim.'
+      research_method: '4 browser.search query sets this run (Hearst OpenAI partnership renewal extension 2026; Hearst AI content licensing deal Meta Microsoft 2026; quoted Hearst OpenAI renewal OR extension OR renegotiated licensing; Hearst Meta AI licensing deal news partnership 2026). 0 browser.open attempts (fleet egress proxy down). Search-excerpt-bounded per #503; the Microsoft PCM leg corroborated by Microsoft own-channel (The Keyword blog) plus trade-press (Search Engine Land, WSJ Jul 2026) plus the Press Gazette Sep 2026 tracker; all URLs copied verbatim from search-result Full-URL listings, none constructed. The Sep 2026 LLM Pulse deal map (crawled 3h) is used as secondary corroboration only. ASCII-only, no em dashes.'
+      source_urls:
+      - 'http://thewrap.com/openai-hearst-content-licensing-partnership/'
+      - 'https://www.thewrap.com/wgae-hearst-openai-deal-statement/'
+      - 'https://venturebeat.com/ai/openai-will-bring-cosmopolitan-publisher-hearsts-content-to-chatgpt'
+      - 'https://news.bloomberglaw.com/ip-law/openai-hearst-strike-deal-to-bring-news-content-to-chatgpt'
+      - 'https://www.pymnts.com/artificial-intelligence-2/2024/openai-products-to-integrate-hearst-newspaper-and-magazine-content/'
+      - 'https://www.dataconomy.com/2024/10/09/openai-partners-with-hearst-now-has-more-content-to-train-ai/'
+      - 'https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191'
+      - 'https://thekeyword.medium.com/microsoft-launches-program-for-publishers-to-license-content-for-ai-9474957facaf'
+      - 'https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00'
+      - 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/'
+      - 'https://llmpulse.ai/blog/ai-content-licensing-deals/'
+      caution: Structural mapping only. Documents the Hearst x OpenAI renewal window, the #599 ACTIVE treatment, the Microsoft PCM third-payer leg, and the Meta $0 re-confirmation, not editorial capture. No coverage-tone claim is made.
+
+
     mechanism_544_vox_media_microsoft_pcm_pay_per_use_leg:
       mechanism_id: 544
       iteration: 544
