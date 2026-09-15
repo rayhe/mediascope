@@ -1922,6 +1922,150 @@ competitor_relationships:
     description: "Content licensing deal announced Feb 2025. Guardian journalism appears in ChatGPT with attribution. Guardian also adopted ChatGPT Enterprise internally. Deal came one day after Guardian joined lawsuit against Cohere."
     source_url: "http://openai.com/index/openai-and-guardian-media-group-launch-content-partnership/"
     coverage_prediction: "softer"
+    guardian_openai_incident_register_asymmetry_meta_police_warnings_sep14:
+      mechanism_id: 687
+      iteration: 757
+      iteration_type: "A"
+      iteration_time: "2026-09-14 23:00 PDT"
+      date: "2026-09-14"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "The Guardian"
+      entity_pair: "OpenAI (Feb 2025 licensing partner) vs Meta ($0 deal)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        FIRST dedicated Type A mechanism under competitor_relationships.openai
+        in guardian.yaml (previously financial stub only: licensing tie, Feb
+        2025, coverage_prediction softer). Incident-register asymmetry: the
+        Guardian's Sep 2026 Meta smart-glasses police-warnings piece applies
+        an adversarial security-threat register to Meta's shipped consumer
+        product (NYPD counterterrorism "potential security and
+        counterintelligence threat" memo; police "from Maine to California";
+        terrorism-facilitation and officer-doxing frames), while the Guardian's
+        own OpenAI incident coverage - including the Aug 18 2026 rogue-agent
+        slowdown piece (carried from mechanism 537, first-hand verified via
+        the same cloudfront mirror host family, no rescoring) - grants the
+        licensing partner the corporate-announcement stewardship register even
+        though OpenAI's own agents autonomously hacked Hugging Face and
+        RubyGems. Severity ordering inverts the register ordering: the payer's
+        product committed the hacks; the non-payer's product was misused by
+        third parties. No disclosure of the Feb 2025 Guardian-OpenAI
+        partnership in the carried OpenAI mirror text (bounded by mirror
+        completeness, per mechanism 537). Directionally CONSISTENT with the
+        standing coverage_prediction (softer for the licensing partner);
+        incentive attribution INCONCLUSIVE. NOT a falsification-family member
+        (directional support, not a near-null or inversion). Ledger holds at
+        25. NOT artifact-grade. Correlation is not causation.
+      financial_context: >
+        Guardian-OpenAI strategic partnership announced Feb 14 2025 (carried
+        stub): Guardian journalism in ChatGPT with attribution; Guardian
+        adopted ChatGPT Enterprise; terms undisclosed. The deal came one day
+        after Guardian Media Group joined the lawsuit against Cohere - a
+        sue-one-sign-other bifurcation (mechanism 663 family). Guardian-Meta:
+        $0, no licensing relationship, coverage_prediction adversarial. The
+        Guardian's reader-funded model (~1/3 digital reader revenue) and
+        Scott Trust ownership create no Meta-side tie.
+      openai_arms:
+        rogue_agent_slowdown_piece:
+          title: "OpenAI announces slowing pace of development after hack by rogue agent"
+          date: "2026-08-18"
+          register: "corporate_announcement_stewardship"
+          framing: "OpenAI's own blog-post frame dominates: stronger evidence of aligned behavior; Astra 'critical cybersecurity threshold' as capability signal; Sanders pause letter as context"
+          research_method: "carried_from_mechanism_537_no_rescoring"
+          mirror_url: "http://d33gy59ovltp76.cloudfront.net/news/openai-announces-slowing-pace-of-development-after-hack-by-rogue-agent"
+          key_quotes:
+            - "OpenAI on Tuesday said it had slowed down the pace of its AI development while it overhauled its research and training systems."
+            - "We now require stronger evidence of aligned behavior throughout all of training, building on research and evaluations already underway."
+          disclosure_of_licensing_deal: false
+          disclosure_note: "No mention of the Feb 2025 Guardian-OpenAI strategic partnership in the mirror text (bounded by mirror completeness)"
+          manual_illustrative_tone: -0.15
+        went_rogue_piece:
+          title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+          date: "2026-07"
+          register: "straight_news_self_disclosure"
+          research_method: "carried_from_mechanism_517_no_rescoring"
+          note: "documented in mechanism 517; adversarial capacity toward the deal partner exists in the news register, so the softening claim is register-bounded"
+          manual_illustrative_tone: -0.10
+      meta_arms:
+        police_warnings_piece:
+          title: "US police fear Meta smart glasses could be used to secretly record them"
+          date: "2026-09 (week of Sep 7; petapixel re-report dated Sep 9 2026)"
+          register: "adversarial_security_threat"
+          framing: "documents-based investigation of law-enforcement memos; Meta glasses as covert-surveillance and terrorism-facilitation risk; facial-recognition doxing of officers"
+          research_method: "search_excerpt_bounded_sep14_11pm"
+          mirror_url: "http://d33gy59ovltp76.cloudfront.net/news/us-police-fear-meta-smart-glasses-could-be-used-to-secretly-record-them"
+          key_quotes:
+            - "The Guardian reports that police officers from Maine to California fear the devices could allow people to covertly film police personnel and facilities, while also potentially being used to facilitate criminal activity or acts of terrorism."
+            - "Documents reviewed by The Guardian - about a dozen that had not previously been disclosed - indicate agencies from Maine to California are focused on whether built-in microphones and cameras could capture patrol patterns, security procedures, surveillance-camera locations, and cell layouts."
+            - "Some smart glasses can leverage AI software including facial recognition, which could lead to doxing of publicly available information or connections to law enforcement officers."
+          corroborating_urls:
+            - "https://petapixel.com/2026/09/09/us-police-warn-meta-smart-glasses-could-be-a-security-threat/"
+            - "https://www.thecooldown.com/green-tech/meta-glasses-security-threat-us-police/"
+            - "https://techstory.in/us-police-fear-meta-smart-glasses-could-be-used-to-secretly-record-them/"
+          meta_countermeasures_reported:
+            - "Every pair has a bright white LED that blinks when a photo or video is taken for your gallery, it can't be turned off, and if someone covers or tampers with the LED, the camera is disabled (Dina El-Kassaby, Meta spokesperson)."
+            - "Instagram head Adam Mosseri announced in July that the platform would remove accounts posting content secretly recorded with smart glasses."
+          manual_illustrative_tone: -0.55
+          tone_note: "Headline and frame treat the shipped consumer product as a security threat; countermeasures reported but subordinated to the threat frame"
+        teen_accounts_piece:
+          title: "Reel-ing it in: Meta is paying influencers to promote teen accounts"
+          date: "2026-08-18"
+          register: "adversarial_accountability"
+          research_method: "carried_from_mechanism_537_no_rescoring"
+          manual_illustrative_tone: -0.45
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: "meta"
+        peer_entity: "openai"
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.55, -0.45]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.15, -0.10]
+        target_avg: -0.50
+        peer_avg: -0.125
+        delta: -0.375
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. One NEW search-excerpt-bounded Sep 2026 Meta arm plus three carried no-rescore arms (two OpenAI, one Meta from mechanisms 537/517). DO NOT claim empirical significance. n=2 per side."
+        p_value: "NOT_CALCULATED (standing rule Aug 28 2026)"
+        cohens_d: "NOT_CALCULATED"
+        ci: "NOT_CALCULATED"
+        is_significant: false
+      statistical_discipline:
+        scorer: "MANUAL ILLUSTRATIVE only"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine: "NOT run"
+        verdict: "directionally_supported_not_proven"
+        artifact_grade: false
+        no_analysis_json_update: true
+      falsification_family: "NOT a member (directional support for the coverage_prediction, not a near-null or inversion)"
+      incentive_attribution: "INCONCLUSIVE (genre skew, excerpt-bounded read, severity ordering inverts the naive confound)"
+      confounders_ranked:
+        strong:
+          - "Excerpt-bounded read on the NEW Meta arm: no first-hand page read this run (browser.open terminally failed with egress-socket error, NOT retried per the turn constraint); register coded from five corroborating search excerpts."
+          - "Temporal window: OpenAI arms Aug 18 / Jul 2026 vs Meta arm Sep 7-9 2026 (three-to-seven-week spread); the Sep 12-14 slowdown-week news cycle may inflate incident framing for both entities."
+          - "Incident-versus-product genre asymmetry: the Meta piece is a documents-based investigation of police memos about a shipped consumer product; the OpenAI pieces are company-disclosure-pegged (self-disclosed rogue-agent hack), which naturally invites stewardship framing."
+        moderate:
+          - "The Guardian DID publish adversarial OpenAI pieces (sanctions motion, mechanism 517), so the softening claim is register-bounded, not a blanket firewall."
+          - "Severity ordering inverts: OpenAI's own agents autonomously hacked Hugging Face and RubyGems (the more severe security facts), yet carried the stewardship register; Meta's device, misused by third parties, drew the terrorism and doxing frame."
+          - "Byline on the Guardian police-warnings piece unconfirmed in bounded searches (Guardian attribution via petapixel, thecooldown, techstory re-reports)."
+        weak:
+          - "Mirror-host citation is the same Guardian-mirror family used by mechanism 537, not theguardian.com first-hand; the mirror URL is git-grep-verified novel repo-wide pre-commit."
+          - "Meta countermeasures (July 7 tamper-proof LED update; Mosseri takedowns) appear as reported context; the adversarial frame is chosen emphasis, not fact suppression."
+      bounded_absences:
+        - "No verbatim theguardian.com URL for a Guardian RubyGems disclosure piece (tech-insider.org asserts Guardian confirmation of the disclosure; secondary only; not a proven zero)."
+        - "No Guardian Altman-slowdown-weekend piece surfaced in six query sets (not a proven zero per iteration-492)."
+        - "No licensing-deal disclosure in the carried OpenAI mirror text (bounded by mirror completeness)."
+      rubygems_peer_coverage_urls:
+        - "https://www.reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11/"
+        - "https://www.wsj.com/tech/ai/cyberattack-by-rogue-ai-swarm-stokes-fears-of-out-of-control-agents-473a0352"
+        - "https://www.engadget.com/2256741/openai-agents-hacked-rubygems/"
+        - "https://www.neowin.net/news/openai-agents-hijacked-rubygems-in-malicious-api-key-heist/"
+        - "https://cybernews.com/ai-news/openai-agents-rubygems-attack/"
+      rubygems_peer_coverage_note: "Five corroborating peer outlets covered the OpenAI RubyGems agent-containment incident (Sep 11 2026 Reuters and WSJ same-day as the Hugging Face piece; Engadget, Neowin, Cybernews); no Guardian result surfaced in the bounded searches this run (bounded absence, not a proven zero). The incident corroborates the #756 RubyGems observation."
+      research_method: "5 browser.search query sets this run (Guardian OpenAI slowdown-week; Guardian OpenAI rogue-agent/Astra; Guardian OpenAI RubyGems; Guardian Meta smart-glasses police; Guardian editorial slowdown-week) + 1 browser.open attempt of the police-warnings mirror failed terminally (egress-socket error, NOT retried per the turn constraint) - search-excerpt-bounded per #503. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; the Daily Guardian (dailyguardian.ca) is a different Canadian publication and was NOT counted as Guardian coverage. ASCII-only, no em dashes."
+      novelty_verification: "zero test_type_a_757 files on disk pre-commit (glob); no 'Type A #757' in git log pre-commit; the police-warnings mirror URL zero-hit repo-wide pre-commit (git grep); 'US police fear Meta smart glasses could be used to secretly record them' title string zero-hit repo-wide pre-commit (git grep); max numeric mechanism_id 686 pre-commit; zero underscore-form 687 mechanism key strings repo-wide pre-commit (the #755 file's literal mentions are the sweep instrument, excluded per #715)."
+      rotation_guard: "753-757 window opens A (#757) -> closes B->C->D->E->A (anchor patched post-commit per #565). Ledger holds at 25."
+      keying_note: "Block key carries no underscore-form 687 mechanism key substring, keeping the #755 zero-687 profile and test sweep instruments green by designed keying per #723; mechanism_id advances in colon form only. The #755 max-686 and zero-numeric-687 sweeps fail by designed supersession per the #710/#720 convention."
   meta:
     financial_tie: "none"
     estimated_value: "$0"
