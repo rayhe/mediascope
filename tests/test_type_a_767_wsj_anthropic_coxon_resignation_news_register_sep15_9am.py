@@ -50,7 +50,7 @@ UNITY_URL = "https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-s
 RELAY_URL = "https://www.wsj.com/tech/ai/altman-says-ais-rapid-progress-could-go-very-badly-1e840a6c"
 
 # Anchor placeholder: patched to the main commit SHA in the #565 follow-up.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "3672c8dd63275abf4a6c40e626f2a29638dc0b63"
 
 # Distinctive Coxon-piece excerpt substrings (safe for raw-text match).
 COXON_QUOTES = [
