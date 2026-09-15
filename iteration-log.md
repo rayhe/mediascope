@@ -33857,5 +33857,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Rotation guard: 751-755 window closes E->A->B->C->D (anchor patched post-commit per #565). Ledger holds at 25 (TWENTY-FIFTH present / TWENTY-SIXTH absent per profiles-corpus guard).
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative 39251/1083 (.venv pytest --collect-only post-run this run; README body line 467 stale 39191/1081 also corrected); TestTestFileListingConsistency 8/8 green post-sync. count_stats gate (39251/1083; delta +33/+1 = the #755 file exactly).
 - New Type D files: tests/test_type_d_755_m685_m686_qualitative_corpus_integrity_sep14_9pm.py - 9 classes, 33 tests (33 green pre-commit, anchor 1 + rotation-window 2 deselected per #565 convention, patched green in followup).
-- Commit hashes: main <MAIN_SHA>; anchor followup <ANCHOR_SHA> (ANCHORED_SHA patched per #565, anchor + full rotation guard green 33/33 post-followup); log-hash followup <LOG_SHA> updates this line.
+- Commit hashes: main 250f7b4145f30c935c01b6ed1b99cc0a0553e450; anchor followup 2a91bc3dc14f5363f441f974143eef49ce4b1818 (ANCHORED_SHA patched per #565, anchor + full rotation guard green 33/33 post-followup); log-hash followup 1379a81c22dbcdaad5e84e56b1e88b4a04e4fc40 updates this line.
 - Push status: PENDING / see run notes.
