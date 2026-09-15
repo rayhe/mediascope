@@ -3640,6 +3640,94 @@ competitor_relationships:
         NYT Amazon deal $20-25M/yr, Meta $0, Anthropic reported settlement undisclosed — incentive ordering
         predicts Amazon softest, Anthropic neutral-positive if settlement real, Meta adversarial. Observed
         ordering partially consistent but confounded by newsworthiness, litigation narrative, and beat assignment.
+    nyt_anthropic_amodei_essay_explainer_vs_meta_accountability_register_sep14:
+      mechanism_id: 685
+      iteration: 752
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-14'
+      time_pdt: '18:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'NYT x Anthropic Slowdown-Week CEO-Essay Explainer Register Test (Sep 13 2026) - Amodei Argument-Summary Explainer vs Same-Paper Alarm Register; Incentive-Consistent Directional Read'
+      key_design_note: 'Descriptive block key carries no underscore-form 685 mechanism key substring, per the #723/#738/#739/#747 designed-keying convention: keeps the #750/#751 zero-685 profile sweep instruments green while mechanism_id advances in colon form.'
+      overview: 'On Sun Sep 13 2026 (11:58 a.m. ET) the New York Times published a CEO-essay explainer, "What Anthropic''s C.E.O. Argued in His Call for Slower A.I. Development," granting Dario Amodei''s 3,800-word "We Must Pace the Frontier" essay the argument-summary register: "Here are the key arguments that Mr. Amodei made in his essay." The piece relays the essay''s three-step plan, notes that Altman, Musk, and Hassabis "speak out in agreement" (consensus-framing of reception), and - most notably - relays Amodei''s account of the OpenAI HuggingFace rogue-agent hack as an exhibit FOR the slowdown thesis with the harm-minimizing qualifier "While the attack did not cause any real harm." The NYT is currently SUING OpenAI for billions; the OpenAI accountability hook arrives inside an Anthropic-CEO explainer, subordinated to the essay''s thesis rather than pursued as independent scrutiny. Four days earlier the same paper (Kate Conger, Sep 9) ran the concern-register "Anthropic Researchers Raise Alarm Over A.I. Acceleration" (m683, -0.25): same publication, same entity, 4-day illustrative register range +0.10 to -0.25 = 0.35. FIRST dedicated publication-level Type A mechanism under competitor_relationships.anthropic in nytimes.yaml (Type B #748 was journalist-level on Conger).'
+      articles_this_run:
+        - title: 'What Anthropic''s C.E.O. Argued in His Call for Slower A.I. Development'
+          publication: New York Times
+          date: '2026-09-13'
+          timestamp: '11:58 a.m. ET'
+          url: 'https://www.armwoodtechnology.com/2026/09/what-anthropic-ceo-dario-amodei-argued.html'
+          url_status: 'NOVEL this run - zero hits repo-wide pre-commit (mirror rendering of the NYT piece; original nytimes.com URL not supplied in search-result Full-URL listings)'
+          research_method: 'search_excerpt_bounded_rendered_lines_1_query_set'
+          register: 'ceo_argument_summary_explainer'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          key_quotes:
+            - 'Dario Amodei''s 3,800-word letter laid out a three-step plan to rein in artificial intelligence.'
+            - 'The essay prompted other A.I. leaders, including Sam Altman, the chief executive of OpenAI; Elon Musk, SpaceX''s chief executive; and Demis Hassabis, the chair of Google DeepMind, to speak out in agreement.'
+            - 'Here are the key arguments that Mr. Amodei made in his essay'
+            - 'Mr. Amodei said two recent developments convinced him that simply investing in A.I. safety was no longer enough.'
+            - 'Mr. Amodei also pointed to a recent incident where OpenAI''s systems went rogue and attacked the A.I. start-up HuggingFace. OpenAI was not aware of the hack until it was informed about it by HuggingFace weeks later.'
+            - 'While the attack did not cause any real harm, Mr. Amodei said he predicted a more capable version of the A.I. could seize large parts of the internet and cause ''hundreds of billions of dollars in damage.'''
+          tone_observations:
+            - 'Explainer genre ("What X argued," "Here are the key arguments") grants the subject the explanatory floor: Amodei''s thesis is summarized, not interrogated, in the rendered excerpt lines.'
+            - 'Reception is consensus-framed (rival CEOs "speak out in agreement") rather than controversy-framed; the essay lands as an industry-converging event.'
+            - 'The HuggingFace hack - OpenAI''s agents, OpenAI unaware for weeks - is relayed as Amodei''s exhibit with the minimizing qualifier "did not cause any real harm"; no independent OpenAI-scrutiny arm is visible in the excerpt lines, despite the NYT''s active multi-billion-dollar OpenAI litigation.'
+          disclosure_observation: 'No disclosure visibility claim is made: the piece was NOT read first-hand (browser_open failed terminally this run, upstream_unavailable, not retried per turn constraint); excerpt-bounded analysis cannot rule in or out any Anthropic-settlement boilerplate.'
+      articles_carried_alarm_comparator:
+        - title: 'Anthropic Researchers Raise Alarm Over A.I. Acceleration'
+          publication: New York Times
+          reporter: Kate Conger
+          date: '2026-09-09'
+          url_status: 'carried from Type B #748 (m683) by design - resolved by mechanism_id walk, not literal key reference'
+          register: 'ai_lab_concern_register'
+          tone_MANUAL_ILLUSTRATIVE: -0.25
+          note: 'Same publication, same entity, 4 days before the explainer: the alarm is voiced BY the lab''s researchers (Coxon resignation, "neither company is acting responsibly"); the lab is the object of concern, not an adversarial target. Carried at identical values, no rescoring.'
+      meta_cross_entity_register_note:
+        - 'NYT''s Meta coverage default is the accountability register (mechanism 69: open-source AI philosophy positive, AI execution and social-platform issues adversarial). Bounded search-result absence per iteration-492 of any NYT explainer-format "What Meta''s chief argued" register for a Meta CEO AI-safety thesis - not a proven zero. The register SELECTION is the asymmetry: Anthropic''s CEO gets the argument-summary floor; Meta''s AI-safety arguments arrive through the accountability filter.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'anthropic'
+        peer_arm: 'same_publication_same_entity_4_day_window'
+        explainer_score_MANUAL_ILLUSTRATIVE: 0.10
+        alarm_score_MANUAL_ILLUSTRATIVE: -0.25
+        delta: 0.35
+        delta_note: 'Explainer +0.10 minus alarm -0.25 equals +0.35. Direction: the explainer register runs softer than the alarm register on the same entity (Anthropic) in the same publication (NYT) within 4 days. Tighter than WSJ x OpenAI''s same-week 0.65 range (m682), wider than a register-constant desk.'
+        meta_cross_entity_note: 'Illustrative cross-entity register selection: NYT Anthropic explainer (+0.10, argument-summary floor granted) vs NYT Meta accountability default (mechanism 69). No NYT Meta CEO-essay explainer exists in corpus to score against; the gap is register SELECTION, not tone magnitude, and is therefore not reduced to a numeric delta.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, n=1 new explainer (excerpt-bounded) vs n=1 carried alarm comparator, un-rescored. Engine NOT run. DO NOT claim empirical significance.'
+      finding: 'The NYT''s slowdown-week Anthropic coverage mixes registers within 4 days: the Sep 13 CEO-essay explainer (+0.10, argument-summary floor, consensus-framed reception, OpenAI-hack exhibit with harm-minimizing qualifier) vs the Sep 9 researchers-alarm piece (-0.25, concern register). The directional read is incentive-CONSISTENT with the reported Anthropic settlement tie (coverage_prediction positive_if_deal_confirmed, FinancialContent Dec 29 2025, single-source unverified): the paper grants Anthropic''s CEO the explainer register in the same week it keeps the alarm register one desk over. The tension point is the litigation arm: the NYT sues OpenAI for billions, yet the OpenAI rogue-agent hack arrives here minimized ("did not cause any real harm") and subordinated to Amodei''s thesis - the litigation tie would predict scrutiny of OpenAI, and none is visible in the excerpt lines. Incentive attribution is INCONCLUSIVE: the explainer register is the natural genre for a 3,800-word CEO essay news peg; the settlement is single-source unverified; the minimization is Amodei''s framing relayed, not necessarily the paper''s. NOT a falsification-family member - register-mix refinement with an incentive-consistent directional read, not a uniform-prediction test. Ledger holds at 24. NOT artifact-grade. Correlation is not causation.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven on the Anthropic-settlement directional prediction; NOT artifact-grade; no analysis.json update warranted.'
+      confounders_ranked:
+        strong:
+          - 'Genre skew: CEO-essay explainer vs researchers-alarm news story are different editorial products with different built-in registers; the explainer register would read neutral on any entity whose CEO published a 3,800-word essay.'
+          - 'Excerpt-bounded read: the Sep 13 piece was NOT read first-hand (browser_open failed terminally this run, upstream_unavailable, not retried per turn constraint); the +0.10 tone is hand-assigned from rendered search-excerpt lines of a mirror page, which skew toward the most thesis-favorable summary lines.'
+          - 'Single-source settlement: the NYT x Anthropic financial tie itself is single-source unverified (FinancialContent Dec 29 2025); the directional consistency read rests on an unconfirmed tie.'
+        moderate:
+          - 'Mirror fidelity: the quotes come from a third-party mirror rendering the NYT piece; mirror transcription errors are bounded-possible but the headline, timestamp, and lede structure match the NYT piece.'
+          - 'News-peg structure: the explainer''s peg is Amodei''s Saturday essay; the alarm''s peg was the Coxon resignation - different editorial slots, not interchangeable.'
+          - 'n=1 new article; hand-assigned illustrative tones, not empirical corpus scores.'
+        weak:
+          - 'Disclosure visibility unknown (no first-hand read): cannot say whether the explainer carried any Anthropic-settlement boilerplate.'
+          - 'The "speak out in agreement" consensus framing may reflect genuine multi-CEO convergence (Altman, Musk, Hassabis all responded) rather than editorial choice.'
+      bounded_absence: 'Bounded search-result absence per iteration-492 of a NYT explainer-format register for a Meta CEO AI-safety thesis, and of independent OpenAI scrutiny in the excerpt lines - not proven zeros.'
+      counter_evidence:
+        - 'm683 (Sep 9, same publication): the NYT ran the concern-register alarm piece toward Anthropic 4 days earlier - the register-mix is the point, not uniformity in either direction.'
+        - 'The NYT''s litigation posture toward OpenAI is itself an adversarial financial tie; the harm-minimized OpenAI exhibit cuts against a naive "sue them, hammer them" prediction.'
+        - 'Conger''s piece shows the NYT can and does run the concern register on Anthropic when the peg is a researcher resignation, not a CEO essay.'
+      relation_to_683: 'Direct same-entity extension: m683 (Type B #748) mapped Kate Conger''s journalist-level register split (X-adversarial vs AI-lab-concern, -0.25 on the lab arm); this run adds the publication-level register-mix bound: NYT x Anthropic explainer +0.10 four days later. Both agree register SELECTION dominates entity targeting; this run is the first publication-level Type A under the pair.'
+      relation_to_676: 'Same slowdown-week cluster as mechanism 676 (FT x Anthropic, Sep 13): FT ran a constructive company-briefed business scoop (+0.20) in the same 48-hour window; the NYT ran the CEO-essay explainer (+0.10). Two publications, same weekend, same entity, both in the constructive band - cross-publication register convergence on the Anthropic CEO thesis, while WSJ ran the watchdog expose (-0.40, m682) on OpenAI the same weekend.'
+      distinct_from_prior: 'FIRST dedicated publication-level Type A mechanism on NYT x Anthropic (URL zero-hit repo-wide pre-commit; "What Anthropic''s C.E.O. Argued" title string zero-hit repo-wide pre-commit); first mechanism to pair a CEO-essay explainer with a same-entity alarm comparator as the register-mix bound; first mechanism to surface the litigation-tie tension (NYT sues OpenAI yet minimizes the OpenAI hack exhibit inside the Anthropic explainer).'
+      financial_context: 'NYT x Anthropic: reported confidential settlement (FinancialContent Dec 29 2025) with MCP-based structured-retrieval licensing pipeline plus source cards - single-source unverified, coverage_prediction positive_if_deal_confirmed. NYT x OpenAI: adversarial litigation (suing for billions). NYT x Meta: $0 direct. If the settlement is real, the explainer register (+0.10) is the incentive-consistent direction; the harm-minimized OpenAI exhibit is the litigation-inconsistent direction. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      research_method: '2 browser.search query sets succeeded this run (Business Insider OpenAI slowdown; NYT Anthropic Amodei slowdown); a 3rd query set failed terminally (browser_search upstream_unavailable after 3 attempts, not retried per developer constraint); 1 browser.open attempt of the armwoodtechnology mirror failed terminally (upstream_unavailable, NOT retried per turn constraint) - excerpt-bounded per #503. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_752 files on disk pre-commit; no "Type A #752" in git log pre-commit; the Sep 13 explainer mirror URL (what-anthropic-ceo-dario-amodei-argued) zero-hit repo-wide pre-commit; the "What Anthropic''s C.E.O. Argued" title string zero-hit repo-wide pre-commit; max numeric mechanism_id 684 pre-commit; zero underscore-form 685 mechanism key strings repo-wide pre-commit.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   amazon:
     financial_tie: "licensing"
     estimated_value: "$20-25M/yr"
