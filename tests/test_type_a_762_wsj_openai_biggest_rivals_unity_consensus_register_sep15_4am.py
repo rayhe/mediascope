@@ -37,7 +37,7 @@ EXPOSE_URL = "https://www.wsj.com/tech/ai/openai-anthropic-crisis-money-safety-8
 RELAY_URL = "https://www.wsj.com/tech/ai/altman-says-ais-rapid-progress-could-go-very-badly-1e840a6c"
 
 # Anchor placeholder: patched to the main commit SHA in the #565 follow-up.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "830296e79298cc93609218711bd46db72c390dab"
 
 # Distinctive unity-piece excerpt substrings (apostrophe-free, safe for raw-text match).
 UNITY_QUOTES = [
