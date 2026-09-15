@@ -72,7 +72,7 @@ ARCH_PATH = os.path.join(REPO_ROOT, "docs", "ARCHITECTURE.md")
 LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 
 # Anchor placeholder: patched to the main commit SHA in the #565 follow-up.
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "7f651b4a3e2b3be0355245d97fa7f1b567293f12"
 
 
 def _read(path):
