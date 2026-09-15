@@ -51,7 +51,7 @@ TESTS_DIR = REPO / "tests"
 M_ID = 687
 MECH_KEY = "guardian_openai_incident_register_asymmetry_meta_police_warnings_sep14"
 KEY_SPLIT_TAIL = "  meta:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "e00f8e99b45c0c7099d115d6f125eb05da28b8e9"
 
 MECH_KEY_PREFIX = "guardian_openai_incident_register_asymmetry"
 MECH_ID_MARKER = "mechanism" + "_687"
@@ -157,16 +157,21 @@ class TestRotationCycleGuard757:
     ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
 
     def _window(self):
+        # First occurrence of each distinct iteration number, newest first
+        # (robust to the #756-style followup commits that repeat the same
+        # "Type X #N:" prefix, per the #752 convention).
         mains = subprocess.run(
-            ["git", "log", "--format=%s", "--no-merges", "-n", 25, "--", "."],
+            ["git", "log", "--format=%s", "--no-merges", "-n", "40", "--", "."],
             cwd=REPO, capture_output=True, text=True,
         ).stdout.splitlines()
-        seen = [
-            re.match(r"Type ([A-E]) #(\d+):", s).groups()
-            for s in mains
-            if re.match(r"Type [A-E] #\d+:", s)
-        ]
-        return seen[:5]
+        seen_nums: set[str] = set()
+        out: list[tuple[str, str]] = []
+        for s in mains:
+            m = re.match(r"Type ([A-E]) #(\d+):", s)
+            if m and m.group(2) not in seen_nums:
+                seen_nums.add(m.group(2))
+                out.append(m.groups())
+        return out[:5]
 
     def test_window_closes_bcdea(self):
         assert self._window() == self.EXPECTED_ORDER
