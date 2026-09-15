@@ -399,9 +399,10 @@ class TestTypeDRotationGuard:
         assert self.WINDOW[-1] == "D"
 
     def test_anchor_sha_placeholder_present(self):
-        # ANCHORED_SHA: <patched-in-followup-per-#565>
-        anchor = "<patched-in-followup-per-#565>"
-        assert anchor.startswith("<patched-in-followup")
+        # ANCHORED_SHA patched in followup per #565 to the main commit:
+        # ee815e071961a8805e5d3d8c20979b2485fd08dc
+        anchor = "ee815e071961a8805e5d3d8c20979b2485fd08dc"
+        assert anchor == "ee815e071961a8805e5d3d8c20979b2485fd08dc"
 
     def test_ledger_wording(self):
         # TWENTY-SIXTH present, TWENTY-SEVENTH absent in this file
