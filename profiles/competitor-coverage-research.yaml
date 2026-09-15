@@ -25880,6 +25880,91 @@ cross_publication_findings:
     test_file: tests/test_type_b_768_kate_kozuch_toms_guide_trust_interrogation_asymmetry_sep15_10am.py
     test_count: 39
 
+  max miller engadget privacy moralization asymmetry meta facial recognition vs apple att sep15:
+    mechanism_id: 695
+    type: B
+    journalist: 'Max Miller'
+    publication: engadget
+    owner: yahoo
+    iteration: 773
+    iteration_type: B
+    rotation_type: B
+    iteration_time: '2026-09-15 15:00 PDT'
+    discovery_date: '2026-09-15'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_773_max_miller_engadget_privacy_moralization_meta_facial_recognition_vs_apple_att_sep15_3pm
+    novelty_verification: 'Zero test_type_b_773 files on disk pre-commit (glob); no "Type B #773" in git log pre-commit; "Max Miller" zero-hit repo-wide pre-commit (case-insensitive git grep on profiles/ and tests/); max numeric mechanism_id 694 pre-commit; zero underscore-form 695 mechanism key strings repo-wide pre-commit (excluding sweep-instrument carriers per #715).'
+    pattern: 'Same Engadget journalist: Meta''s smart-glasses facial-recognition code (dormant, unreleased, removed June 5 2026) is litigated in a surveillance-interrogation register - "ready to start harvesting every face", "extremely creepy and invasive", Homer Simpson "disappearing into the bushes" snark - while Apple''s own tracking regime is framed as the corrective: App Tracking Transparency is the protector framework, "Google and Meta, and other data-hungry companies" the named villains, Meta''s $10B ATT loss celebrated ("slap Mark Zuckerberg''s hand away from their digital cookie jars"). Same concern domain (identification/tracking of the user), opposite moral register: Meta interrogated, Apple vindicated.'
+    meta_arm:
+      piece: 'Engadget "Meta Quietly Removes Face-Recognition Code From Its Smart Glasses App", byline Max Miller'
+      date: '2026-06'
+      byline: 'Max Miller'
+      register: surveillance_interrogation_snark
+      tone_illustrative: -0.55
+      evidence_quotes:
+        - 'Byline attestation (search excerpts, observed 2026-09-15, twice): Engadget homepage listing shows "- Meta By Max Miller | Meta quietly removes face-recognition code from its smart glasses app" with the article URL'
+        - 'Dek (observed this run): "The ''disappearing into the bushes like Homer Simpson'' strategy is a bold choice."'
+        - 'Verbatim (observed this run): "the same app necessary for pairing Meta smart glasses to a user''s phone over Bluetooth was also ready to start harvesting every face a user passed by while wearing them"'
+        - 'Verbatim (observed this run): "an extremely creepy and invasive solution to a very common interpersonal dilemma"'
+        - 'Verbatim (observed this run): "Most people would probably rather someone simply admit to having forgotten their name than to have their likeness ingested by a face-mounted camera"'
+        - 'Context (observed this run): the code powered the unreleased NameTag feature (photos to Meta servers for face matching); removed June 5 2026, one day after Wired''s June 4 2026 discovery; never shipped'
+      source_urls:
+        - 'https://www.engadget.com/2190115/meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/'
+      source_note: 'Search-excerpt-bounded per #503 (browser.open not attempted this run - fleet egress proxy refused connections; no engadget.com URLs constructed). Date pinned to June 2026 via the "98 days ago" crawl stamp observed 2026-09-15.'
+    apple_arm:
+      piece: 'Engadget "What Actually Happens When You Let Apps Track Your Activity?", byline Max Miller'
+      date: '2026-08'
+      byline: 'Max Miller'
+      register: privacy_protector_explainer
+      tone_illustrative: 0.15
+      evidence_quotes:
+        - 'Byline attestation (search excerpt, observed 2026-09-15): result summary reads "Max Miller for Engadget"'
+        - 'Verbatim (observed this run): "how do you tell Google and Meta, and other data-hungry companies, not to make themselves at home on your devices?"'
+        - 'Verbatim (observed this run): "you''re opted in by default on Android, whereas iOS uses Apple''s App Tracking Transparency (ATT) framework under which apps must ask you before accessing that ID"'
+        - 'Verbatim (observed this run): "Meta''s admission in 2022 that it incurred a $10 billion loss after Apple implemented an ATT pop-up that gave iPhone owners the option to opt out of being tracked"'
+        - 'Verbatim (observed this run): "the vast majority of iPhone users chose to slap Mark Zuckerberg''s hand away from their digital cookie jars"'
+        - 'Register contrast (bounded, observed this run): zero adversarial vocabulary applied to Apple anywhere in the excerpts; Apple''s framework is the remedy, Meta the cautionary subject'
+      source_urls:
+        - 'https://WWW.ENGADGET.COM/2236798/what-happens-when-apps-track-activity/'
+      source_note: 'Search-excerpt-bounded per #503 (browser.open not attempted this run; URL copied verbatim including the uppercase host from the Full URLs listing). Date pinned to mid-August 2026 via the "29 days ago" crawl stamp observed 2026-09-15.'
+    asymmetry_scorer:
+      meta_surveillance_tone: -0.55
+      apple_protector_tone: 0.15
+      illustrative_privacy_moralization_delta_meta_minus_apple: -0.70
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search excerpts'
+      verdict: 'Entity-selective privacy moralization in the same writer: Miller litigates Meta''s facial-recognition dormancy in an adversarial surveillance register (-0.55: "harvesting every face", "extremely creepy and invasive", Homer Simpson snark), while his app-tracking explainer positions Apple''s ATT as the trusted corrective (+0.15: iOS "must ask you before accessing that ID") and names Meta among the "data-hungry companies", celebrating Meta''s $10B ATT loss as users slapping Zuckerberg''s hand away. The -0.70 illustrative delta is thesis-consistent: Meta gets the surveillance register, Apple the privacy-protector register, for the same concern domain (identification and tracking of the user). Thesis-consistent direction: NOT a falsification-family member (ledger holds at 26). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context_yahoo_chain:
+      owner: 'Engadget is a Yahoo property'
+      documented_deals: 'No documented AI content-licensing deal between Yahoo/Engadget and Meta, Apple, or Google in the corpus'
+      in_corpus_chain: 'financial_tie: none mapped for the Yahoo chain on the Meta/Apple axis'
+      prediction: 'NULL on the privacy-moralization axis - zero-gradient control'
+      mechanism: 'journalist-level privacy-moralization register, not finance-predicted; sibling zero-gradient control of mechanisms 688 (Axon), 690 (Ion), and 692 (Kozuch)'
+    confounders:
+      - 'STRONG: Search-excerpt-bounded evidence (no browser.open this run; fleet egress proxy refused connections); register and byline inference rests on excerpts and homepage listings, not full page reads.'
+      - 'STRONG: Genre asymmetry - the Meta piece is adversarial tech news, the tracking piece a how-to explainer; the explainer register structurally favors the corrective-frame narrative rather than adversarial scrutiny of any entity.'
+      - 'STRONG: n=1 per arm; no within-journalist replication of the privacy-moralization pattern on a second Miller piece in the same window; Miller''s beat is PC hardware/Android/audio, so the Meta piece is off-beat newsroom fill.'
+      - 'MODERATE: Miller''s Meta piece aggregates Wired''s June 4 2026 investigation ("Only a day after" the discovery); the adversarial register is partly inherited from the source reporting, not necessarily a journalist-level prior.'
+      - 'MODERATE: The surveillance modalities differ - facial biometrics on glasses vs app-level device identifiers - so the "same concern domain" claim rests on identification/tracking at the category level, not identical mechanism.'
+      - 'MODERATE: The ATT explainer names Google alongside Meta as "data-hungry", so the adversarial pole is not Meta-only; Apple is the outlier beneficiary of the protector framing.'
+      - 'WEAK: The Meta-piece byline is attested via twice-observed homepage excerpts, not a page-rendered byline line.'
+      - 'WEAK: The August 2026 date for the Apple piece is inferred from the "29 days ago" crawl stamp, not a rendered dateline.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: Miller''s Meta piece is an aggregator of Wired''s investigation; the adversarial register ("creepy", "invasive") is largely inherited framing from the source story, not evidence of a journalist-level anti-Meta prior.'
+      - 'COUNTEREVIDENCE: Crediting ATT in the explainer is descriptive of a real product framework, not a puff - though the "slap Mark Zuckerberg''s hand away" line is affirmative snark toward Meta, not neutral description.'
+      - 'COUNTEREVIDENCE: Apple ships no smart glasses and had no comparable facial-recognition-on-glasses story in the window, so Miller had no occasion to interrogate Apple on the same peg - the beneficiary position may be opportunity-driven, not entity-selective.'
+      - 'COUNTEREVIDENCE: The -0.70 illustrative delta rests on hand-assigned n=1 scores with no calibrated noise band; it sits outside any mechanism band from the 686/688 family and is hypothesis-generating only.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    test_file: tests/test_type_b_773_max_miller_engadget_privacy_moralization_meta_facial_recognition_vs_apple_att_sep15_3pm.py
+    test_count: 36
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

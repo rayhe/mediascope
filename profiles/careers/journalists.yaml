@@ -19144,3 +19144,21 @@ kate_kozuch:
   - https://www.tomsguide.com/computing/smart-glasses/oakley-meta-hstn-smart-glasses-review-what-i-love-and-whats-still-missing
   - https://www.tomsguide.com/tag/wearables/page/3
   - https://muckrack.com/kate-kozuch/articles
+
+max_miller:
+  name: Max Miller
+  current_role: Contributing writer
+  current_publication: Engadget
+  publication_owner: Yahoo
+  beats:
+  - pc_hardware
+  - android
+  - audio
+  - consumer_tech
+  - tech_and_world_affairs
+  notes: 'Engadget contributing writer (PC hardware, Android, audio, consumer tech, technology and world affairs per the author page). Type B #773 (Sep 15 2026): mechanism 695 privacy-moralization asymmetry - Meta arm Jun 2026 "Meta Quietly Removes Face-Recognition Code From Its Smart Glasses App" litigates dormant NameTag facial-recognition code in a surveillance-interrogation register ("ready to start harvesting every face", "extremely creepy and invasive", Homer Simpson snark) -0.55 MANUAL ILLUSTRATIVE; Apple-side arm Aug 2026 "What Actually Happens When You Let Apps Track Your Activity?" frames Apple''s ATT as the trusted corrective and names Meta among "data-hungry companies" (+0.15); illustrative delta -0.70 thesis-consistent. FIRST dedicated corpus mechanism on Miller - zero hits repo-wide pre-commit. NOT a falsification-family member (thesis-consistent direction), ledger holds at 26. Genre asymmetry (adversarial news vs how-to explainer) and Wired-inherited framing are the dominant confounds; excerpt-bounded per #503.'
+  mechanism_ids: [695]
+  source_urls:
+  - https://www.engadget.com/2190115/meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/
+  - https://WWW.ENGADGET.COM/2236798/what-happens-when-apps-track-activity/
+  - https://WWW.ENGADGET.COM/author/maxmiller/
