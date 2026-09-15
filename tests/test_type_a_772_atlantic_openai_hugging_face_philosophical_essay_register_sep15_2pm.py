@@ -65,7 +65,7 @@ DEAL_URL = (
 )
 
 # Anchor placeholder: patched to the main commit SHA in the #565 follow-up.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "f252d6d0b8526fe96570a41cf142f775a7b4371d"
 
 # Distinctive Epley-piece excerpt substrings (safe for raw-text match).
 EPLEY_QUOTES = [
