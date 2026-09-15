@@ -122,7 +122,7 @@ class TestRotationCycleGuard752:
     new 748-752 window, closing B->C->D->E->A.
     """
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+    ANCHORED_SHA = "5a3853474e53b188a8b054cd7c913559058a6a83"
 
     @staticmethod
     def _mains():
