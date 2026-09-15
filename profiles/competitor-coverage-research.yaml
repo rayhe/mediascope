@@ -25444,6 +25444,168 @@ cross_publication_findings:
     test_file: tests/test_type_b_753_devindra_hardawar_engadget_quest3_vs_visionpro_review_constancy_sep14_7pm.py
     test_count: 32
 
+  samuel axon ars technica meta horizon os vs apple vision pro m5 register contrast sep15:
+    mechanism_id: 688
+    type: B
+    journalist: 'Samuel Axon'
+    publication: ars technica
+    owner: conde nast (advance publications)
+    iteration: 758
+    iteration_type: B
+    rotation_type: B
+    iteration_time: '2026-09-15 00:00 PDT'
+    discovery_date: '2026-09-15'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_758_samuel_axon_ars_technica_meta_horizon_os_vs_apple_visionpro_m5_register_sep15_12am
+    pattern: 'Same Ars Technica journalist: Meta''s Horizon OS platform-opening
+      announcement framed through a neutral-positive business register vs Apple''s
+      Vision Pro M5 refresh framed through an affectionate-skeptic long-term
+      review register ("hanging on by a thread").'
+    meta_arm:
+      piece: 'Ars Technica Apr 22 2024 Meta Horizon OS announcement, byline Samuel Axon'
+      date: '2024-04-22'
+      byline: 'Samuel Axon'
+      register: platform_opening_business_news
+      tone_illustrative: 0.30
+      evidence_quotes:
+        - 'Byline attestation (technewstube relay of the Ars piece, observed this
+          run): "By Samuel Axon Apr 22, 2024, 5:19 pm" under the "Ars Technica"
+          heading'
+        - 'Headline (same relay, observed this run): "Meta debuts Horizon OS,
+          with Asus, Lenovo, and Microsoft on board"'
+        - 'Dek (same relay, observed this run): "Meta will open up the operating
+          system that runs on its Quest mixed reality headsets to other technology
+          companies"'
+      source_urls:
+        - 'https://technewstube.com/ars-technica/1633955/meta-horizon-os-asus-lenovo-microsoft-board/'
+      source_note: 'Search-excerpt-bounded per #503 (browser.open not attempted
+        this run; no arstechnica.com URLs constructed). Meta arm evidence is the
+        relay''s headline, dek, and byline line only; body text not recovered.
+        Evidence tier: headline-and-dek bounded, byline via relay attestation.'
+    apple_arm:
+      piece: 'Ars Technica circa Nov 2025 Apple Vision Pro M5 long-term review, byline Samuel Axon'
+      date: '2025-11-26'
+      byline: 'Samuel Axon'
+      register: affectionate_skeptic_longterm_review
+      tone_illustrative: 0.15
+      evidence_quotes:
+        - 'Byline attestation (macdailynews relay, observed this run):
+          "Sameuel Axon for Ars Technica" (sic, relay typo for Samuel)'
+        - 'Verbatim review text via relay (macdailynews, observed this run): "I
+          still like the Vision Pro, but I can tell it''s hanging on by a thread.
+          Content is light, developer support is tepid, and while Apple has taken
+          action to improve both, it''s not enough, and I''m concerned it might
+          be too late."'
+        - 'Verbatim review text via relay (macdailynews, observed this run):
+          "practicality beat coolness"'
+        - 'Verbatim review text via relay (macdailynews, observed this run): "I
+          believe there is room for this product in the marketplace. I still
+          think it''s amazing. It''s not going to be as big as the iPhone"'
+        - 'Headline (macdailynews relay, observed this run): "Ars Technica
+          reviews Apple''s M5 Vision Pro: ''Hope Apple keeps working on it''"'
+        - 'Corroborating relay (techcratic, observed this run): "I didn''t
+          notice any difference that significantly impacted the user experience"
+          on the M5 refresh'
+      source_urls:
+        - 'https://macdailynews.com/2025/11/26/ars-technica-reviews-apples-m5-vision-pro-hope-apple-keeps-working-on-it/'
+        - 'https://techcratic.com/index.php/2025/11/26/vision-pro-m5-review-its-time-for-apple-to-make-some-tough-choices/ars-technica/ars-technica/'
+      source_note: 'Search-excerpt-bounded per #503. Apple arm evidence is
+        verbatim quoted passages via two independent relays plus headline and
+        byline attestation; body text not recovered. Date recorded as
+        2025-11-26 from the macdailynews publication stamp (292 days before
+        2026-09-15). Evidence tier: excerpt-bounded, byline via relay
+        attestation.'
+    supporting_arm:
+      piece: 'Ars Technica Feb 12 2026 Vision Pro YouTube-app news, byline Samuel Axon'
+      note: 'Same journalist still on the Apple XR beat 15 months after the M5
+        review, in straight news register ("It took two years, but Google
+        released a YouTube app on Vision Pro"); shows the skeptical register is
+        review-specific, not a standing anti-Apple posture.'
+      source_urls:
+        - 'https://techcratic.com/index.php/2026/02/12/it-took-two-years-but-google-released-a-youtube-app-on-vision-pro/ars-technica/ars-technica/'
+      source_note: 'Byline and date ("Samuel Axon", "2026-02-12 14:53:00",
+        arstechnica.com) via the techcratic relay, observed this run;
+        search-excerpt-bounded per #503.'
+    asymmetry_scorer:
+      meta_tone: 0.30
+      apple_tone: 0.15
+      illustrative_delta_meta_minus_apple: 0.15
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run; Meta arm scored
+        on headline/dek/byline only, Apple arm on relay excerpts only'
+      verdict: 'Near-null illustrative delta (+0.15, Meta-favoring sign) across
+        a genre boundary: Axon grants Meta''s platform-opening play a
+        neutral-positive business register and Apple''s flagship refresh an
+        affectionate-skeptic long-term review register. NOT a pure asymmetry
+        pin (genre asymmetry is the dominant confound, n=1 per arm, 19-month
+        temporal spread). TWENTY-SIXTH falsification-family member (ledger
+        25->26): bounds Meta-alarm gradients (mechanism 680 Hector) as
+        journalist-specific, not outlet- or genre-general, at a Conde Nast
+        property. Correlation only, not causation. Hypothesis-generating only.
+        NOT artifact-grade.'
+    financial_context_advance_chain:
+      owner: 'Ars Technica is a Conde Nast property (Advance Publications)'
+      documented_deals: 'No documented AI content-licensing deal between
+        Advance/Conde Nast and Meta or Apple in the corpus'
+      in_corpus_chain: 'The in-corpus Advance chain points at Reddit
+        (governance/voting), not AI licensing'
+      prediction: 'NULL on the Meta/Apple axis - zero-gradient control'
+      mechanism: 'mechanism 305 Apollo-Anthropic chain as the contrast case
+        (financial gradient WITH a documented deal vs NULL here)'
+    wong_analogue_bounds:
+      mechanism: 698
+      note: 'Raymond Wong review-register constancy analogue: like mechanism 686
+        Hardawar, a near-null cross-entity register reading that bounds
+        review-register asymmetry findings (mechanisms 528 Chokkattu, 662 Chen)
+        to journalist-specific, not genre-general, gradients.'
+    confounders:
+      - 'STRONG: Search-excerpt-bounded evidence (no browser.open this run);
+        Meta arm scored on headline/dek/byline only, Apple arm on relay
+        excerpts only. Register inference is thin on both sides.'
+      - 'STRONG: Genre asymmetry - business-platform news (Meta Horizon OS)
+        vs long-term hardware refresh review (Apple Vision Pro M5). News and
+        review registers are not directly comparable; the delta may be pure
+        genre artifact.'
+      - 'STRONG: 19-month temporal spread (Apr 2024 vs Nov 2025); the XR market
+        narrative shifted substantially between the two pieces.'
+      - 'MODERATE: n=1 per arm; no within-journalist replication of either
+        register on the same entity.'
+      - 'MODERATE: The Apple arm is a second-generation refresh review, a
+        genre that skews skeptical ("what changed" framing) relative to launch
+        reviews.'
+      - 'MODERATE: Engagement asymmetry - Axon is a long-term Vision Pro user
+        (review grounded in months of use) while the Meta arm is a one-off
+        news hit; familiarity breeds the affectionate register on the Apple
+        side.'
+      - 'WEAK: Relay excerpt selection - macdailynews and techcratic may quote
+        selectively; the full Ars review text was not recovered.'
+      - 'WEAK: The Meta arm''s partner names (Asus, Lenovo, Microsoft) carry
+        their own positive valence independent of Meta.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: The +0.15 delta is nonzero and Meta-favoring - a
+        larger sample could resolve a real pro-Meta tilt (an inversion of the
+        asymmetry thesis), so the constancy reading depends on the illustrative
+        noise band.'
+      - 'COUNTEREVIDENCE: Axon''s Vision Pro skepticism targets the product
+        category''s viability ("content is light", "too late"), not
+        Apple-the-company; the same category realism could produce identical
+        skepticism toward a Meta flagship refresh, which would be constancy of
+        a different kind.'
+      - 'COUNTEREVIDENCE: The Feb 2026 YouTube-app news piece shows Axon still
+        covering Apple XR in straight news register 15 months later - the
+        skeptical register may be review-genre-specific rather than
+        entity-specific, weakening any entity-gradient reading in both
+        directions.'
+    verdict: directionally_supported_not_proven
+    test_file: tests/test_type_b_758_samuel_axon_ars_technica_meta_horizon_os_vs_apple_visionpro_m5_register_sep15_12am.py
+    test_count: 34
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

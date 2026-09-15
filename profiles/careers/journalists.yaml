@@ -18893,6 +18893,21 @@ journalists:
   - https://www.engadget.com/engadget-podcast-apple-vision-pro-review-133053827.html?src=rss
   - https://www.engadget.com/facebook-ray-ban-stories-smart-glasses-ar-160006477.html?src=rss
 
+- name: Samuel Axon
+  publication: Ars Technica
+  publication_owner: Conde Nast (Advance Publications)
+  beats:
+  - vr_ar_headsets
+  - apple
+  - product_reviews
+  notes: 'Ars Technica senior editor; bylined Meta platform news (Horizon OS open-platform announcement, Apr 2024) and Apple hardware long-term reviews (Vision Pro M5, circa Nov 2025: "hanging on by a thread", "practicality beat coolness", "I hope Apple keeps working on it"). Type B #758 (Sep 15 2026): mechanism 688 news-vs-review register contrast - Meta arm platform-opening business register (+0.30 MANUAL ILLUSTRATIVE, headline/dek-bounded) vs Apple arm affectionate-skeptic long-term review register (+0.15, excerpt-bounded); illustrative delta (Meta minus Apple) +0.15 near-null with Meta-favoring sign; genre asymmetry is the dominant confound (news vs review, 19 months apart); zero-gradient control (no documented Advance/Conde Nast AI licensing deal with Meta or Apple; in-corpus Advance chain points at Reddit governance/voting, not AI licensing); review-register analogue of mechanisms 686 (Hardawar) and 698 (Wong); TWENTY-SIXTH falsification-family member (ledger 25->26).'
+  mechanism_ids: [688]
+  source_urls:
+  - https://technewstube.com/ars-technica/1633955/meta-horizon-os-asus-lenovo-microsoft-board/
+  - https://macdailynews.com/2025/11/26/ars-technica-reviews-apples-m5-vision-pro-hope-apple-keeps-working-on-it/
+  - https://techcratic.com/index.php/2025/11/26/vision-pro-m5-review-its-time-for-apple-to-make-some-tough-choices/ars-technica/ars-technica/
+  - https://techcratic.com/index.php/2026/02/12/it-took-two-years-but-google-released-a-youtube-app-on-vision-pro/ars-technica/ars-technica/
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
