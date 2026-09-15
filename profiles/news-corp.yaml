@@ -1160,6 +1160,152 @@ competitor_relationships:
       pattern: WSJ disclosed its OpenAI financial conflict in the favorable Jul 31 article but did NOT disclose its Anthropic
         (settlement revenue via HarperCollins) or Meta (up to $50M/yr licensing) financial conflicts in the Aug 5 articles.
         Selective disclosure — transparency appears only alongside favorable framing.
+    wsj_anthropic_coxon_resignation_news_register_vs_wired_seriousness_credit_sep10:
+      mechanism_id: 691
+      iteration: 767
+      iteration_type: "A"
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'WSJ x Anthropic Coxon-Resignation News Register vs WIRED Seriousness Credit (Same-Peg Cross-Publication)'
+      date: '2026-09-10'
+      publication: Wall Street Journal
+      target_entity: anthropic
+      peer_entity: openai
+      wsj_coxon_news_arm:
+        title: 'Anthropic Researcher Quits Over ''Out-of-Control'' AI Fears'
+        publication: Wall Street Journal
+        date: '2026-09-10'
+        url: 'https://www.wsj.com/tech/ai/anthropic-researcher-quits-over-out-of-control-ai-fears-707b7628'
+        url_status: 'novel this run - URL zero-hit repo-wide pre-commit (slug 707b7628 zero-hit)'
+        date_bound: 'Search index reports "Last Updated: 5 days ago" on Sep 15 (implies Sep 10); piece says Coxon "said Tuesday" (Sep 8); dating to Sep 10 is index-bounded, not page-verified.'
+        register: straight_news_insider_resignation_attribution_framed
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        excerpts_verbatim:
+          - 'An Anthropic researcher is quitting the artificial-intelligence industry over fears that the lab and its competitors are racing to build systems they won''t be able to control, a sign of mounting safety concerns within top AI companies.'
+          - 'Jacob Coxon, a researcher who specializes in training new AI models by having them consume vast amounts of data, said Tuesday that he is leaving the company because he doesn''t want to participate in an industrywide rush to build AI systems that can improve themselves, worried such systems could spiral out of control and destroy humanity.'
+          - '"We''re on track for a lot of the most aggressive of these scenarios where by the end of next year things could be out of control already," Coxon said, adding that safety trade-offs are inevitable when companies are competing against one another and Chinese upstarts.'
+          - 'Anthropic didn''t immediately comment on the departure. Chief Executive Dario Amodei and other company leaders have repeatedly warned about the risks of rogue AI models, and urged the industry to slow development.'
+          - 'After Coxon announced his departure, a top scientist at the company, Evan Hubinger, wrote on X that he thought Coxon was correct about the risks of AI models. "We really do earnestly believe AI could kill all humans! I personally think it is >10% within the next decade," Hubinger wrote. "I believe Anthropic is trying its best, but we do not yet have a plan to solve alignment for superintelligence and are not clearly on track to."'
+        tone_observations:
+          - 'The headline''s scare quotes (''Out-of-Control'' AI Fears) attribute the claim to Coxon - standard attribution practice - but the body prints Coxon''s "destroy humanity" and Hubinger''s ">10% kill all humans" lines verbatim and unsoftened, with the standard adversarial-adjacent "didn''t immediately comment" no-comment line.'
+          - 'Anthropic''s defense is partially carried inside the piece (Amodei''s repeated slow-development warnings noted; Hubinger corroboration printed without mockery), so the register is adversarial-adjacent news, not an adversarial expose.'
+          - 'No motive-skepticism accompanies the resignation story - the gentlest possible treatment of an extinction-risk resignation peg at the news-register layer.'
+        disclosure_observation: 'No disclosure visibility claim is made: the piece was NOT read first-hand (WSJ paywalled; no browser.open attempted this run); excerpt-bounded analysis cannot rule in or out boilerplate disclosure, per the m682 bounded-absence convention.'
+      wired_coxon_seriousness_arm_carried:
+        title: 'The AI Researcher Who Just Quit Anthropic Says It''s ''Crunch Time for Humanity'''
+        publication: WIRED
+        date: '2026-09-09'
+        mechanism: 622
+        url_status: 'carried from #647 (m622) by design - no canonical WIRED URL in corpus (m622 captured mirror URLs only, per the no-canonical-URL rule)'
+        register: existential_seriousness_credit_interview
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        note: 'm622 found WIRED grants Anthropic seriousness credit: Coxon''s "At OpenAI, many have not deeply internalized the civilizational stakes. At Anthropic, the stakes are well-understood" carried, Anthropic contrasted FAVORABLY against OpenAI; Hubinger''s "no plan to solve alignment" concession printed as gravity, not negligence.'
+      articles_carried_wsj_arc_context:
+        - title: 'How the Clash Between Money and Safety Created a Monumental Crisis for AI'
+          mechanism: 682
+          publication: Wall Street Journal
+          date: '2026-09-13'
+          url: 'https://www.wsj.com/tech/ai/openai-anthropic-crisis-money-safety-847bc1d6'
+          url_status: 'carried from #747 (m682) by design'
+          register: 'watchdog_enterprise_expose_motive_skepticism'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          note: 'Mid-arc watchdog arm: dual-lab expose; Coxon "stoked fears" line aimed at Anthropic the non-payer.'
+        - title: 'Biggest AI Rivals Agree They Need to Slow It Down'
+          mechanism: 689
+          publication: Wall Street Journal
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/anthropic-boss-warns-ai-industry-must-slow-the-pace-a4267b56'
+          url_status: 'carried from #762 (m689) by design'
+          register: 'unity_consensus_statesman_framing'
+          tone_MANUAL_ILLUSTRATIVE: 0.15
+          note: 'Arc close: three-CEO consensus register, the softest treatment in the week''s Anthropic set.'
+        - title: 'Microsoft Sets Limits for AI Models as Altman Details Control Risks'
+          mechanism: 679
+          publication: Wall Street Journal
+          byline: Gareth Vipers
+          date: '2026-09-14'
+          url: 'https://www.wsj.com/tech/ai/altman-says-ais-rapid-progress-could-go-very-badly-1e840a6c'
+          url_status: 'carried from #742 (m679) by design'
+          register: 'constructive_ceo_framing_relay'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          note: 'OpenAI-payer comparator: Altman''s overnight X-post safety comments relayed constructively the same week Coxon''s resignation drew the news-register treatment.'
+      articles_corraborating_this_run:
+        - title: 'Employee at Top AI Company Quits with Public Warning the Tech Could ''Kill Us All,'' and Then Former Co-Worker Agrees'
+          publication: People
+          date: '2026-09-10'
+          url: 'https://people.com/employee-at-top-ai-company-quits-with-public-warning-the-tech-could-kill-us-all-and-then-former-co-worker-agrees-12112847'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'Independent corroboration of the Coxon resignation news event and the Hubinger >10% corroboration; bounds the resignation as a genuine news peg, not a WSJ-only framing choice.'
+        - title: 'Anthropic Researcher Quits Over ''Out-of-Control'' AI Fears'
+          publication: 'phys.org (AP syndication)'
+          date: '2026-09-10'
+          url: 'https://phys.org/news/2026-09-anthropic-resigns-dangers-ai.html?deviceType=mobile'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'Wire-service version of the same resignation peg; "racing straight to self-improving superintelligence and gambling with our lives" line; bounds the peg as industry-wide news.'
+        - title: 'Anthropic reports it blocked potential bioweapons research'
+          publication: USA Today
+          date: '2026-09-10'
+          url: 'https://www.usatoday.com/story/tech/2026/09/10/anthropic-stops-potential-bioweapons-research-report-says/91694786007/'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'Same-day Anthropic threat-intelligence report (Dec 2025 - Aug 2026 misuse disruptions); corroborates the heightened-scrutiny news environment of the Coxon week, not the WSJ piece directly.'
+        - title: 'Trump dismisses ''negative forces'' calling for AI slowdown'
+          publication: 'The Times (News Corp sibling)'
+          date: '2026-09-14'
+          url: 'https://www.thetimes.com/uk/technology-uk/article/anthropic-warns-ai-could-take-over-the-internet-in-six-months-k8w5707fh'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          note: 'News Corp sibling framing of the Amodei essay ("could take over the entire internet", "hundreds of billions of dollars in damage" in 6-12 months); shows the sibling paper ran the consensus story with the doom framing intact.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'anthropic'
+        cross_publication_arm: 'same_peg_wired_vs_wsj'
+        wired_score_MANUAL_ILLUSTRATIVE: 0.25
+        wsj_score_MANUAL_ILLUSTRATIVE: -0.10
+        delta: 0.35
+        direction: 'WIRED grants the same Coxon peg existential-seriousness credit while WSJ renders it as attribution-framed resignation news; illustrative WIRED-minus-WSJ delta +0.35'
+        wsj_week_arc: 'Sep 10 Coxon news -0.10 -> Sep 13 Moral Conflict expose -0.40 -> Sep 14 unity consensus +0.15; same-entity same-week range 0.55'
+        openai_payer_comparator: 'm679 Altman relay +0.10 vs this run Coxon news -0.10; illustrative OpenAI-minus-Anthropic delta +0.20, thesis-consistent direction'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        ci_95: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: 'NOT artifact-grade'
+        engine: 'NOT run'
+        no_analysis_json_update: true
+      incentive_attribution: 'INCONCLUSIVE and MIXED: the Coxon resignation was a genuine news event (wire-service and People corroboration), and excerpt-bounded reading cannot distinguish incentive-driven register choice from desk/genre routing (WIRED long-form interview vs WSJ straight news). The same-week WSJ arc on Anthropic alone spans -0.40 to +0.15, which bounds BOTH uniform-capture and uniform-hostility readings: the News Corp incentive structure does not purchase uniform treatment in either direction. The cross-publication delta (+0.35 WIRED-minus-WSJ) is the sharpest same-peg contrast in the corpus but is fully confounded by genre. Correlation is not causation. NOT a falsification-family member.'
+      ledger: 'Ledger holds at 26 (per the #754 convention: latest ledger member present in the profiles corpus, no later member - the block records the count only, never the next-member literal).'
+      confounders:
+        strong:
+          - 'Excerpt-bounded read: WSJ paywalled, no browser.open; register judgments rest on search-result excerpts (headline + 5 excerpt blocks). Full-text could shift tone in either direction.'
+          - 'Genre skew dominates the cross-publication delta: WIRED''s piece is a long-form Coxon interview (m622) while WSJ''s is straight resignation news; the register gap may be fully explained by genre, not incentive.'
+          - 'Event-driven peg: a resignation is inherently more adversarial raw material than the interview format''s subject-controlled framing; peg format confounds entity targeting.'
+        moderate:
+          - 'Byline unconfirmed on the WSJ piece: reporter-level comparisons are unavailable.'
+          - 'Date index-bounded: "Last Updated: 5 days ago" implies Sep 10; page-verified date unavailable under excerpt bounding.'
+          - 'm622''s WIRED URL is mirror-only (no canonical WIRED URL in corpus); the WIRED arm is carried on m622''s authority, not re-verified this run.'
+        weak:
+          - 'n=1 new news-register mechanism: single-piece evidence, no trend claim.'
+          - 'The scare-quote headline is standard attribution practice; reading adversarialism into punctuation is the weakest evidence tier.'
+          - 'Wire corroboration cuts both ways: it bounds the peg as genuine news (weakening capture readings) and weakens any claim of WSJ-specific adversarialism.'
+      bounded_absence: 'No first-hand WSJ disclosure-visibility check was possible this run (egress proxy down, browser.open not attempted); bounded search-result absence per iteration-492, not a proven zero.'
+      counter_evidence:
+        - 'm682 (Sep 13): the same paper ran its hardest OpenAI register (-0.40 watchdog expose) on the payer two days later - uniform payer-softening is falsified within the week.'
+        - 'm689 (Sep 14): the unity-consensus piece grants Amodei (non-payer CEO) the statesman register (+0.15) - the week''s softest Anthropic treatment, bounding adversarial-uniformity readings.'
+        - 'The Coxon piece itself carries Anthropic''s defense (Amodei''s repeated slow-development warnings noted; Hubinger corroboration printed without mockery) - adversarial-adjacent, not adversarial.'
+      relation_to_622: 'Cross-publication prior: m622 (#647, WIRED x Anthropic, Sep 10) found WIRED grants the same Coxon peg existential-seriousness credit (+0.25), Anthropic contrasted FAVORABLY against OpenAI. This run''s WSJ news register (-0.10) on the identical peg gives the sharpest same-peg cross-publication delta in the corpus (+0.35 WIRED-minus-WSJ), fully confounded by genre (interview vs straight news).'
+      relation_to_682: 'Direct same-week extension: m682 found the watchdog enterprise expose (-0.40) toward the dual-lab target on Sep 13; this run recovers the week''s FIRST domino (Sep 10 Coxon news, -0.10), showing the Anthropic news peg started adversarial-adjacent and hardened to -0.40 before softening to +0.15 in the consensus piece.'
+      relation_to_689: 'Arc completion: m689''s unity-consensus register (+0.15, Sep 14) is the soft endpoint of the Anthropic arc this run opens at -0.10 (Sep 10); same-entity same-week range 0.55 - no between-entity gap in the corpus exceeds the within-entity weekly range.'
+      relation_to_679: 'Cross-entity comparator: m679''s constructive Altman relay (+0.10) vs this run''s Coxon news register (-0.10) gives an illustrative OpenAI-minus-Anthropic delta of +0.20, thesis-consistent direction; attribution remains INCONCLUSIVE (genre skew is the strongest confound).'
+      relation_to_616: 'Fifth leg on the WSJ slowdown register-range pattern: m616 Tumbler Ridge -0.55 (Sep 2, OpenAI), m682 Clash -0.40 (Sep 13), m689 unity +0.15 (Sep 14), this run Coxon news -0.10 (Sep 10, Anthropic). The pattern remains: register SELECTION dominates entity targeting at WSJ.'
+      distinct_from_prior: 'FIRST dedicated mechanism on the Sep 10 2026 WSJ "Anthropic Researcher Quits Over ''Out-of-Control'' AI Fears" Coxon-resignation news piece (URL 707b7628 zero-hit repo-wide pre-commit); FIRST same-peg cross-publication register test (WSJ -0.10 vs WIRED +0.25, delta +0.35) on the Coxon resignation; completes the WSJ slowdown-week Anthropic arc (Sep 10 news -> Sep 13 expose -> Sep 14 consensus). Prior Coxon-peg coverage (#647/m622) was WIRED-only.'
+      financial_context: 'News Corp multi-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr); Meta leg Mar 2026 (up to $50M/yr, 3yr, Dow Jones news leg per #549); Anthropic leg $0 AI licensing (only the HarperCollins Bartz settlement-revenue share, a different vector - see the settlement_incentive_mechanism above, which creates a pre-IPO incentive AGAINST critical Anthropic business analysis, not for critical safety coverage). The arc''s hardest Anthropic register (-0.40) and the Coxon news register (-0.10) both run against any simple capture story; the incentive structure predicts nothing cleanly here. Correlation does not establish causation.'
+      research_method: '9 browser.search query sets this run (FT Anthropic Amodei slowdown; WIRED OpenAI Altman slowdown; site:wired.com Amodei pace-frontier; theverge.com Amodei slowdown; WIRED Amodei pace-frontier quoted; Business Insider OpenAI slowdown; Guardian Anthropic Amodei slowdown; wired.com OpenAI September; wired.com Anthropic September) + 0 browser.open attempts (egress proxy down; excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_767 files on disk pre-commit; no "Type A #767" in git log pre-commit; the Coxon WSJ piece URL slug 707b7628 zero-hit repo-wide pre-commit; the "Anthropic Researcher Quits Over" title string zero-hit repo-wide pre-commit; the wsj_anthropic_coxon block key zero-hit repo-wide pre-commit; the 4 corroborating URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 690 pre-commit; zero underscore-form 691 mechanism key strings repo-wide pre-commit (excluding sweep-instrument carriers per #715).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   perplexity:
     financial_tie: lawsuit_active
     estimated_value: $0 (litigated, not licensed)
