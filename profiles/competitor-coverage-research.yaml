@@ -25606,6 +25606,165 @@ cross_publication_findings:
     test_file: tests/test_type_b_758_samuel_axon_ars_technica_meta_horizon_os_vs_apple_visionpro_m5_register_sep15_12am.py
     test_count: 34
 
+  florence ion gizmodo meta ray ban smart glasses vs apple watch series 9 review register contrast sep15:
+    mechanism_id: 690
+    type: B
+    journalist: 'Florence Ion'
+    publication: gizmodo
+    owner: keleops ag (acquired from g/o media 2024-06-04)
+    iteration: 763
+    iteration_type: B
+    rotation_type: B
+    iteration_time: '2026-09-15 05:00 PDT'
+    discovery_date: '2026-09-15'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_763_florence_ion_gizmodo_meta_rayban_vs_apple_watch_review_register_sep15_5am
+    pattern: 'Same Gizmodo journalist: Meta''s Ray-Ban smart glasses framed through
+      a conditional-praise-with-admonition hands-on register ("More
+      Assistant-like, Just Not Yet", "it has to do more *soon*") vs Apple''s
+      Watch Series 9 framed through a crown-bestowing review register ("The
+      Best Smartwatch for iPhone Users").'
+    meta_arm:
+      piece: 'Gizmodo Oct 2024 Ray-Ban Meta glasses hands-on, byline Florence Ion'
+      date: '2024-10-03'
+      byline: 'Florence Ion'
+      register: conditional_praise_with_admonition_hands_on
+      tone_illustrative: 0.10
+      evidence_quotes:
+        - 'Byline attestation (search excerpt, observed this run): "© Florence
+          Ion / Gizmodo"'
+        - 'Headline (observed this run): "Ray-Ban Meta Glasses Hands On: More
+          Assistant-like, Just Not Yet"'
+        - 'Verbatim (observed this run): "Meta AI is helpful on the Ray-Ban
+          smart glasses, but only to a certain degree."'
+        - 'Verbatim (observed this run): "While it''s nice that it''s baked
+          into this specific set of glasses, it has to do more *soon.*"'
+        - 'Unfavorable comparator (observed this run): location-reminder
+          capability is "something that Google and Apple''s AI can already do"'
+      source_urls:
+        - 'https://gizmodo.com/ray-ban-meta-glasses-hands-on-more-assistant-like-just-not-yet-2000503014'
+      source_note: 'Search-excerpt-bounded per #503 (browser.open not attempted
+        this run; no gizmodo.com URLs constructed). Date pinned to 2024-10-03
+        via the "712 days ago" crawl stamp observed 2026-09-15.'
+    apple_arm:
+      piece: 'Gizmodo Oct 2023 Apple Watch Series 9 review, byline Florence Ion'
+      date: '2023-10-13'
+      byline: 'Florence Ion'
+      register: crown_bestowing_review
+      tone_illustrative: 0.45
+      evidence_quotes:
+        - 'Byline attestation (author-archive listing, observed this run): the
+          Oct 2023 review appears under gizmodo.com/author/florenceion; photo
+          credit "Photo: Florence Ion / Gizmodo" in the excerpt'
+        - 'Headline (observed this run): "Apple Watch Series 9 Review: The
+          Best Smartwatch for iPhone Users Gets a New Gesture"'
+        - 'Mild critique (observed this run): "battery life still needs some
+          work" (dek: "Double Tap is great and works well, but battery life
+          still needs some work.")'
+      source_urls:
+        - 'https://gizmodo.com/apple-watch-series-9-review-1850908847'
+        - 'https://gizmodo.com/author/florenceion/page/17?startIndex=560'
+      source_note: 'Search-excerpt-bounded per #503. Date pinned via the author
+        archive "October 13th 2023" listing (observed this run).'
+    supporting_arm:
+      piece: 'Gizmodo May 2025 "Google Is Gunning for Meta''s Ray-Ban Smart
+        Glasses", byline Florence Ion'
+      note: 'Same journalist frames Google as the coming disruptor of Meta''s
+        smart-glasses lead while mocking Meta AI accuracy: "Meta AI very
+        confidently told me that almost every shell I was holding was a
+        shark''s tooth or that the car I was looking at was an
+        ''In-fin-ee-tee'' instead of an Infiniti." The piece also shows
+        category-level Meta bullishness ("as bullish as I am on Meta''s
+        Ray-Ban glasses"; "the one device that you don''t *think* you need,
+        but as soon as you try a pair, you''ll likely *want* them"), bounding
+        an anti-Meta reading of the register contrast.'
+      evidence_quotes:
+        - '"Google''s smart glasses could go places that Meta has only dreamed
+          of."'
+        - '"Meta ... has the benefit of being a big fish in a relatively small
+          pond, but that arrangement is destined for a disruption"'
+      source_urls:
+        - 'https://gizmodo.com/google-is-gunning-for-metas-ray-ban-smart-glasses-2000603452'
+      source_note: 'Search-excerpt-bounded per #503. Date pinned to 2025-05-17
+        via the "486 days ago" crawl stamp observed 2026-09-15.'
+    asymmetry_scorer:
+      meta_tone: 0.10
+      apple_tone: 0.45
+      illustrative_delta_meta_minus_apple: -0.35
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run; Meta arm scored
+        on headline + relay excerpts, Apple arm on headline + relay excerpts'
+      verdict: 'Meta-cooling illustrative delta (-0.35): Ion grants Apple''s
+        Watch a categorical "Best" headline with only mild battery critique,
+        while Meta''s glasses get conditional praise plus a soon-or-else
+        admonition and an unfavorable Google/Apple AI comparison.
+        Thesis-consistent direction: NOT a falsification-family member (ledger
+        holds at 26). Genre asymmetry (smart glasses vs smartwatch) and the
+        12-month spread are the dominant confounds; the supporting Google
+        piece shows the writer is category-bullish on Meta hardware, so the
+        contrast is register-level, not hostility-level. Correlation only, not
+        causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context_keleops_chain:
+      owner: 'Gizmodo is a Keleops AG property (acquired from G/O Media
+        2024-06-04)'
+      documented_deals: 'No documented AI content-licensing deal between
+        Keleops/Gizmodo and Meta, Apple, Google, or any AI lab in the corpus'
+      in_corpus_chain: 'profiles/gizmodo.yaml maps $0 documented financial
+        ties to Anthropic, OpenAI, Meta, Google (financial_tie: none)'
+      prediction: 'NULL on the Meta/Apple axis - zero-gradient control'
+      mechanism: 'mechanism 305 Apollo-Anthropic chain as the contrast case
+        (financial gradient WITH a documented deal vs NULL here); sibling
+        zero-gradient control of mechanism 688 (Axon, Advance chain)'
+    wong_analogue_bounds:
+      mechanism: 698
+      note: 'Raymond Wong review-register constancy analogue: a review-register
+        finding that bounds review-register asymmetry mechanisms (528
+        Chokkattu, 662 Chen) to journalist-specific, not genre-general,
+        gradients.'
+    confounders:
+      - 'STRONG: Search-excerpt-bounded evidence (no browser.open this run);
+        register inference rests on headlines and relay excerpts, not full
+        page reads.'
+      - 'STRONG: 12-month temporal spread (Oct 2023 vs Oct 2024); the
+        wearables narrative shifted between the two pieces.'
+      - 'MODERATE: Product-category asymmetry - smart glasses (emerging
+        category, privacy-loaded) vs smartwatch (mature category); the
+        admonition register may track category novelty, not entity.'
+      - 'MODERATE: n=1 per arm; no within-journalist replication of either
+        register on the same entity.'
+      - 'MODERATE: The Apple arm byline is attested via the author-archive
+        listing and photo credit, not a byline line on the article page
+        excerpt.'
+      - 'WEAK: The Meta arm''s headline carries most of the register weight;
+        body-text excerpts are thin.'
+      - 'WEAK: Relay excerpt selection - search-result snippets may quote
+        selectively.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: The supporting Google piece shows Ion IS bullish on
+        Meta''s Ray-Ban hardware ("as bullish as I am on Meta''s Ray-Ban
+        glasses"; "the one device that you don''t *think* you need, but as
+        soon as you try a pair, you''ll likely *want* them") - the -0.35 delta
+        may capture admonition-register style, not entity hostility.'
+      - 'COUNTEREVIDENCE: The shark''s-tooth / "In-fin-ee-tee" anecdote is
+        humorous rather than adversarial; a joke about AI mishearing is not
+        evidence of asymmetric standards.'
+      - 'COUNTEREVIDENCE: The Apple Watch review does apply a caveat register
+        ("battery life still needs some work"), so Apple is not pure puff -
+        the contrast is one of degree (crown-bestowing headline vs conditional
+        headline), not kind.'
+      - 'COUNTEREVIDENCE: The -0.35 delta sits inside the illustrative noise
+        band used by mechanisms 686 (+0.20) and 688 (+0.15); a larger sample
+        could resolve constancy.'
+    verdict: directionally_supported_not_proven
+    test_file: tests/test_type_b_763_florence_ion_gizmodo_meta_rayban_vs_apple_watch_review_register_sep15_5am.py
+    test_count: 36
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

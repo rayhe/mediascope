@@ -18908,6 +18908,21 @@ journalists:
   - https://techcratic.com/index.php/2025/11/26/vision-pro-m5-review-its-time-for-apple-to-make-some-tough-choices/ars-technica/ars-technica/
   - https://techcratic.com/index.php/2026/02/12/it-took-two-years-but-google-released-a-youtube-app-on-vision-pro/ars-technica/ars-technica/
 
+- name: Florence Ion
+  publication: Gizmodo
+  publication_owner: Keleops AG (acquired from G/O Media 2024-06-04)
+  beats:
+  - wearables
+  - smart_glasses
+  - product_reviews
+  notes: 'Gizmodo senior consumer tech reporter (wearables/smart glasses beat). Type B #763 (Sep 15 2026): mechanism 690 review-register contrast - Meta arm Oct 2024 Ray-Ban Meta hands-on conditional-praise-with-admonition register (+0.10 MANUAL ILLUSTRATIVE: "More Assistant-like, Just Not Yet", "Meta AI is helpful ... but only to a certain degree", "it has to do more *soon*", unfavorable Google/Apple AI comparator) vs Apple arm Oct 2023 Watch Series 9 crown-bestowing review register (+0.45: "The Best Smartwatch for iPhone Users", only mild battery critique); illustrative delta (Meta minus Apple) -0.35 Meta-cooling; supporting arm May 2025 "Google Is Gunning for Meta''s Ray-Ban Smart Glasses" frames Google as the coming disruptor ("go places that Meta has only dreamed of") with the shark''s-tooth / "In-fin-ee-tee" Meta AI accuracy anecdote, but stays category-bullish on Meta hardware - bounding an anti-Meta reading; zero-gradient control (no documented Keleops/Gizmodo AI licensing deal with Meta or Apple; in-corpus Keleops chain is financial_tie: none); NOT a falsification-family member (thesis-consistent direction), ledger holds at 26; genre asymmetry (smart glasses vs smartwatch) and 12-month spread are the dominant confounds.'
+  mechanism_ids: [690]
+  source_urls:
+  - https://gizmodo.com/ray-ban-meta-glasses-hands-on-more-assistant-like-just-not-yet-2000503014
+  - https://gizmodo.com/google-is-gunning-for-metas-ray-ban-smart-glasses-2000603452
+  - https://gizmodo.com/apple-watch-series-9-review-1850908847
+  - https://gizmodo.com/author/florenceion/page/17?startIndex=560
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
