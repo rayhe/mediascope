@@ -25765,6 +25765,121 @@ cross_publication_findings:
     test_file: tests/test_type_b_763_florence_ion_gizmodo_meta_rayban_vs_apple_watch_review_register_sep15_5am.py
     test_count: 36
 
+  kate kozuch toms guide trust interrogation asymmetry within product enthusiasm constancy sep15:
+    mechanism_id: 692
+    type: B
+    journalist: 'Kate Kozuch'
+    publication: toms_guide
+    owner: future plc
+    iteration: 768
+    iteration_type: B
+    rotation_type: B
+    iteration_time: '2026-09-15 10:00 PDT'
+    discovery_date: '2026-09-15'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_768_kate_kozuch_toms_guide_trust_interrogation_asymmetry_sep15_10am
+    novelty_verification: 'Zero test_type_b_768 files on disk pre-commit (glob); no "Type B #768" in git log pre-commit; "Kate Kozuch" zero-hit repo-wide pre-commit (case-insensitive git grep on profiles/ and tests/); max numeric mechanism_id 691 pre-commit; zero underscore-form 692 mechanism key strings repo-wide pre-commit (excluding sweep-instrument carriers per #715).'
+    pattern: 'Same Tom''s Guide journalist: product-enthusiasm register is CONSTANT across Meta and Apple (4.5-star Editor''s Choice Ray-Ban Meta review, "the smart glasses market has found its victor"; Editor''s Choice Apple Watch Series 11/Ultra 3, "blew me away"), but TRUST INTERROGATION is entity-selective - Meta''s trustworthiness is explicitly litigated (company-history purchase criterion favoring Google; privacy critics preemptively quarantined), Google''s trust is assumed ("name literally used as a verb for search"), Apple''s is never raised.'
+    meta_arm:
+      piece: 'Tom''s Guide "Ray-Ban Meta Smart Glasses review: Better in every way", byline Kate Kozuch'
+      date: '2023-10'
+      byline: 'Kate Kozuch'
+      register: enthusiast_review_with_privacy_dismissal
+      tone_illustrative: 0.55
+      evidence_quotes:
+        - 'Byline attestation (search excerpt, observed this run): author-bio block "Kate Kozuch is the managing editor of social and video at Tom''s Guide" on the review page'
+        - 'Verdict (observed this run): 4.5 stars, Editor''s Choice; "the smart glasses market has found its victor"'
+        - 'Verbatim (observed this run): "the Ray-Ban Meta Smart Glasses are easy to recommend"'
+        - 'Privacy dismissal (observed this run): "I think some people will, inevitably, be creeped out by smart glasses with cameras in them. There will always be folks who avoid all things Meta as well."'
+      source_urls:
+        - 'https://www.tomsguide.com/reviews/ray-ban-meta-smart-glasses'
+      source_note: 'Search-excerpt-bounded per #503 (browser.open not attempted this run; no tomsguide.com URLs constructed). Date pinned to Oct 2023 via the "1063 days ago" crawl stamp observed 2026-09-15.'
+    meta_supporting_arms:
+      - piece: 'Tom''s Guide "I compared the iPhone 15 Pro Max vs. Ray-Ban Meta Smart Glasses for taking vacation photos", byline Kate Kozuch'
+        note: 'Meta glasses "game-changer" for Instagram Stories; byline via author-bio block.'
+        source_urls:
+          - 'https://www.tomsguide.com/features/i-compared-the-iphone-15-pro-max-vs-ray-ban-meta-smart-glasses-for-taking-vacation-photos-heres-what-happened'
+      - piece: 'Tom''s Guide "Meta AI can now ''look'' through the Ray-Ban smart glasses to pick out outfits", byline Kate Kozuch'
+        note: 'Concedes "I can see why some people might be creeped out by this new Ray-Ban Meta Smart Glasses feature", then quarantines: "smart glasses like these aren''t really for the people who are worried about AI invading their life."'
+        source_urls:
+          - 'https://www.tomsguide.com/news/i-let-the-ray-ban-meta-smart-glasses-pick-out-my-outfit-using-ai-and-im-shocked-by-the-result'
+      - piece: 'Tom''s Guide "Oakley Meta HSTN smart glasses review: What I love (and what''s still missing)", byline Kate Kozuch'
+        note: 'Positive Meta-family review ("meaningful upgrade over the Ray-Ban Meta line... for a specific kind of user"); byline via author-bio block.'
+        source_urls:
+          - 'https://www.tomsguide.com/computing/smart-glasses/oakley-meta-hstn-smart-glasses-review-what-i-love-and-whats-still-missing'
+    google_arm:
+      piece: 'Tom''s Guide "Google''s AI smart glasses are the most exciting thing I saw at I/O", byline Kate Kozuch'
+      date: '2024-05'
+      byline: 'Kate Kozuch'
+      register: trust_prior_assumed_for_google
+      tone_illustrative: 0.20
+      evidence_quotes:
+        - 'Byline attestation (search excerpt, observed this run): author-bio block "Kate Kozuch is the managing editor of social and video at Tom''s Guide"'
+        - 'Trust criterion (observed this run): "If given the option, my gut tells me smart glasses adopters would be more inclined to choose Google than Meta as the maker just based on the each company''s history with providing information."'
+        - 'Verbatim (observed this run): "Wouldn''t *you* opt for the product from the company who''s name is literally used as a verb for search?"'
+        - 'Verbatim (observed this run): "I would be nervous if I were Meta."'
+      source_urls:
+        - 'https://www.tomsguide.com/computing/smart-glasses/googles-ai-smart-glasses-are-the-most-exciting-thing-i-saw-at-io-heres-what-you-need-to-know'
+      source_note: 'Search-excerpt-bounded per #503. Same product category as the Meta arm (smart glasses), so the opposite trust prior cannot be explained by category. Date pinned to May 2024 via the "853 days ago" crawl stamp observed 2026-09-15.'
+    apple_arm:
+      piece: 'Tom''s Guide Apple Watch Series 11 / Ultra 3 / SE 3 reviews (Sep 2025), byline Kate Kozuch'
+      date: '2025-09'
+      byline: 'Kate Kozuch'
+      register: unqualified_superlative_review
+      tone_illustrative: 0.60
+      evidence_quotes:
+        - 'Byline attestation (observed this run): Tom''s Guide wearables tag page lists "By Kate Kozuch" on all three reviews'
+        - 'Series 11 (observed this run): Editor''s Choice; "I reviewed the Apple Watch Series 11 for a week and this is the feature that blew me away"; "Apple''s flagship is longer-lasting, at last"'
+        - 'Ultra 3 (observed this run): Editor''s Choice; "Apple Watch Ultra 3 review: The ultimate smartwatch just got better"; "Apple''s rugged smartwatch has the kind of upgrades that matter"'
+        - 'SE 3 (observed this run): Recommended; "I reviewed the Apple Watch SE 3 and it''s easily the best smartwatch value around right now"'
+        - 'Trust interrogation (bounded absence, observed this run): zero privacy/trust vocabulary surfaced in excerpts across all three Apple reviews'
+      source_urls:
+        - 'https://www.tomsguide.com/tag/wearables/page/3'
+        - 'https://muckrack.com/kate-kozuch/articles'
+      source_note: 'Search-excerpt-bounded per #503. Direct article URLs not in the verbatim URL listings this run, so the tag page (verbatim) carries the byline attestation; no article URLs constructed.'
+    asymmetry_scorer:
+      meta_product_tone: 0.55
+      apple_product_tone: 0.60
+      product_register_delta_meta_minus_apple: -0.05
+      trust_interrogation_meta: -0.30
+      trust_interrogation_google: 0.20
+      trust_interrogation_apple: 0.00
+      illustrative_trust_delta_meta_minus_google: -0.50
+      illustrative_trust_delta_meta_minus_apple: -0.30
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search excerpts and tag-page listings'
+      verdict: 'Product-enthusiasm constancy (-0.05 delta, inside the illustrative noise band): Kozuch loves Meta hardware (4.5 stars, "victor", "game-changer") as much as Apple hardware (Editor''s Choice x2, "blew me away"). The asymmetry is one level up: TRUST INTERROGATION is entity-selective. Meta alone gets its trustworthiness litigated as a purchase criterion (Google preferred "just based on the each company''s history with providing information"); Google gets trust assumed via search-verb status; Apple gets three 2025 reviews with zero trust vocabulary. The Google arm is same-category (smart glasses), which neutralizes the category confound. Thesis-consistent direction: NOT a falsification-family member (ledger holds at 26). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context_future_chain:
+      owner: 'Tom''s Guide is a Future plc property'
+      documented_deals: 'No documented AI content-licensing deal between Future plc/Tom''s Guide and Meta, Apple, Google, or any AI lab in the corpus'
+      in_corpus_chain: 'financial_tie: none mapped for the Future plc chain on the Meta/Apple/Google axis'
+      prediction: 'NULL on the trust-interrogation axis - zero-gradient control'
+      mechanism: 'journalist-level trust prior, not finance-predicted; sibling zero-gradient control of mechanisms 688 (Axon) and 690 (Ion)'
+    confounders:
+      - 'STRONG: Search-excerpt-bounded evidence (no browser.open this run); register and trust-vocabulary inference rests on excerpts and tag-page listings, not full page reads.'
+      - 'STRONG: Temporal spread - Meta review Oct 2023, Google I/O piece May 2024, Apple Watch reviews Sep 2025 (23 months); the trust discourse around Meta evolved across the window.'
+      - 'STRONG: Product-category asymmetry - camera glasses (privacy-loaded) vs smartwatch (no camera); MITIGATED by the Google arm, which is same-category (smart glasses) with the opposite trust prior.'
+      - 'MODERATE: Review-genre positivity bias - all entities receive recommendation-grade verdicts; the trust signal lives in framing, not verdicts.'
+      - 'MODERATE: n=1 per arm; no within-journalist replication of the trust-interrogation pattern on a second Meta piece in the same window.'
+      - 'MODERATE: Kozuch''s beat (managing editor, social/video; creator use-case) skews toward creator-enthusiasm framing for camera products.'
+      - 'WEAK: The Apple arm bylines are attested via the tag page and Muck Rack, not page-rendered byline lines.'
+      - 'WEAK: The "Meta won''t answer" adversarial training-data piece is same-publication (Tom''s Guide) but byline-unconfirmed this run - not attributed to Kozuch.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: Kozuch''s Meta enthusiasm is genuine and repeated across four bylined pieces (4.5 stars, "victor", "game-changer", Oakley HSTN praise) - caps any anti-Meta-entity reading; the trust discount coexists with product love.'
+      - 'COUNTEREVIDENCE: The Google trust preference is speculative ("If given the option... my gut tells me"), not a product verdict - a prior, not a finding.'
+      - 'COUNTEREVIDENCE: Apple Watch privacy genuinely is less salient (no camera, on-device health pitch) - the Apple arm''s trust silence may be category-appropriate, not entity-selective.'
+      - 'COUNTEREVIDENCE: The product-register delta (-0.05) sits inside the illustrative noise band; a larger sample could resolve full constancy, which would make this a pure trust-framing mechanism with no product-tone component at all.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    test_file: tests/test_type_b_768_kate_kozuch_toms_guide_trust_interrogation_asymmetry_sep15_10am.py
+    test_count: 39
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

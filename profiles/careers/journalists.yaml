@@ -19123,3 +19123,24 @@ jason_aten:
   source_urls:
   - https://www.inc.com/jason-aten/for-years-people-have-worried-their-devices-were-listening-apple-just-made-it-a-feature/91404202
   - http://www.inc.com/jason-aten/at-i-o-google-just-shipped-apples-ai-promises/91191832
+
+kate_kozuch:
+  name: Kate Kozuch
+  current_role: Managing editor, social and video
+  current_publication: Tom's Guide
+  publication_owner: Future plc
+  beats:
+  - wearables
+  - smartwatches
+  - smart_glasses
+  - product_reviews
+  notes: 'Tom''s Guide managing editor, social and video (wearables/smartwatch/smart glasses beat). Type B #768 (Sep 15 2026): mechanism 692 trust-interrogation asymmetry within product-enthusiasm constancy - Meta arm Oct 2023 Ray-Ban Meta review 4.5 stars Editor''s Choice ("the smart glasses market has found its victor", "easy to recommend") with privacy critics preemptively quarantined ("some people will, inevitably, be creeped out... folks who avoid all things Meta"); Google arm May 2024 I/O piece applies company-trust-history purchase criterion favoring Google ("more inclined to choose Google than Meta... history with providing information", "I would be nervous if I were Meta") in the SAME category; Apple arm Sep 2025 Watch Series 11/Ultra 3/SE 3 reviews all recommendation-grade (Editor''s Choice x2) with zero trust vocabulary in excerpts. MANUAL ILLUSTRATIVE: product register Meta +0.55 vs Apple +0.60 (constancy, -0.05 delta); trust interrogation Meta -0.30 vs Google +0.20 vs Apple 0.00 (illustrative deltas -0.50 / -0.30). FIRST dedicated corpus mechanism on Kozuch - zero hits repo-wide pre-commit. NOT a falsification-family member (thesis-consistent direction), ledger holds at 26. Temporal spread (Oct 2023 - Sep 2025) and excerpt-bounded evidence are the dominant confounds; the same-category Google arm neutralizes the category confound.'
+  mechanism_ids: [692]
+  source_urls:
+  - https://www.tomsguide.com/reviews/ray-ban-meta-smart-glasses
+  - https://www.tomsguide.com/computing/smart-glasses/googles-ai-smart-glasses-are-the-most-exciting-thing-i-saw-at-io-heres-what-you-need-to-know
+  - https://www.tomsguide.com/features/i-compared-the-iphone-15-pro-max-vs-ray-ban-meta-smart-glasses-for-taking-vacation-photos-heres-what-happened
+  - https://www.tomsguide.com/news/i-let-the-ray-ban-meta-smart-glasses-pick-out-my-outfit-using-ai-and-im-shocked-by-the-result
+  - https://www.tomsguide.com/computing/smart-glasses/oakley-meta-hstn-smart-glasses-review-what-i-love-and-whats-still-missing
+  - https://www.tomsguide.com/tag/wearables/page/3
+  - https://muckrack.com/kate-kozuch/articles
