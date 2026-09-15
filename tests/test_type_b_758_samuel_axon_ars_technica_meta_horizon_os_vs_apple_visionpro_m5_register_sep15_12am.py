@@ -171,7 +171,7 @@ class TestSourceEvidence758:
 class TestRotationCycleGuard758:
     """Rotation: 754-758 window closes C->D->E->A->B, #753-style."""
 
-    ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+    ANCHORED_SHA = "eb94a22bbfca3d5c344f9b722783cf3ee77fae58"
 
     @staticmethod
     def _mains():
