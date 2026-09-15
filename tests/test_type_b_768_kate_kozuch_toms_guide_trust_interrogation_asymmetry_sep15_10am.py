@@ -328,8 +328,8 @@ class TestMechanism692Content:
         assert "Kate Kozuch" in careers
 
     def test_designed_keying_no_underscore_form_in_block(self):
-        # The m692 block key carries no underscore-form "mechanism_692"
-        # substring, so #767's zero-underscore-692 sweeps stay GREEN.
+        # The m692 block key carries no underscore-form marker substring, so
+        # #767's zero-underscore-692 sweeps stay GREEN.
         assert MECH_ID_MARKER not in _block()
         assert MECH_ID_MARKER not in _read(CAREERS_PATH)
 
@@ -356,16 +356,16 @@ class TestSupersessionAndCorpusPost767:
         assert hits == [], hits
 
     def test_d767_zero_underscore_692_profiles_sweep_stays_green(self):
-        # #767 asserted zero literal "mechanism_692" in profiles/; the m692
-        # block key carries no underscore-form 692 substring by designed
-        # keying, so that sweep stays green.
+        # #767 asserted zero underscore-form 692 markers in profiles/; the
+        # m692 block key carries no such substring by designed keying, so
+        # that sweep stays green.
         hits = _repo_grep("mechanism" + "_692", roots=("profiles",))
         assert hits == [], hits
 
     def test_d767_zero_underscore_692_tests_sweep_stays_green(self):
-        # #767 asserted zero "mechanism_692" references in tests/; this file
-        # builds the marker by concatenation ("mechanism" + "_692") so no
-        # contiguous literal exists in tests/ either - the sweep stays green.
+        # #767 asserted zero underscore-form 692 markers in tests/; this file
+        # builds the marker by concatenation ("mechanism" + "_692") and
+        # carries no contiguous literal, so the sweep stays green.
         hits = _repo_grep(MECH_ID_MARKER, roots=("tests",))
         hits = [h for h in hits if not h.endswith(TEST_BASENAME)]
         assert hits == [], hits
@@ -441,7 +441,7 @@ class TestIterationLog768:
         # false-positive on #767's rotation line ("B (#768) -> ...").
         assert "#768 Type B:" in self._tail()
 
-    def test_log_mechanism_692_and_journalist(self):
+    def test_log_mechanism_number_and_journalist(self):
         assert "mechanism 692" in self._tail()
         assert "Kate Kozuch" in self._tail()
 
