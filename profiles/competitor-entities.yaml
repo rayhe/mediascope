@@ -6316,6 +6316,8 @@ entities:
           revenue to Apple product success (more Siri users = more payments). Apple
           controls ranking/selection algorithm determining which publisher content
           surfaces.'
+        last_verified: '2026-09-14'
+        verification_sweep_sep14: 'Type C #754 (Sep 14 2026, 20:00 PDT): since-filtered search (2026-09-01 onward) returns only the Aug 12-13 2026 reports (WSJ exclusive + 6 corroborations) - zero closures in 33 days. Status stays in_negotiation. Search-excerpt-bounded per #503.'
       google_showcase_sunset_coercion_jun_2026:
         report_date: '2026-06-25'
         source: The Information via PYMNTS, NYPost, Press Gazette
@@ -6540,6 +6542,8 @@ entities:
       source_urls:
       - https://www.reuters.com/business/retail-consumer/amazon-discusses-ai-content-marketplace-with-publishers-information-reports-2026-02-10/
       - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+      last_verified: '2026-09-14'
+      verification_sweep_sep14: 'Type C #754 (Sep 14 2026, 20:00 PDT): since-filtered search (2026-09-01 onward) returns only the Feb 10 2026 reports (The Information via Reuters, PYMNTS, Hindu BusinessLine, Hypebeast, PetaPixel, eWeek) - zero updates in 7+ months. Status stays building. Search-excerpt-bounded per #503.'
     mechanism_25_dual_lab_non_disclosure_triangle:
       mechanism_id: 25
       name: Amazon-Bezos $63B Dual-Lab Non-Disclosure Triangle
