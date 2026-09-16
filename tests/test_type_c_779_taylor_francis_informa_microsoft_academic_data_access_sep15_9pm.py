@@ -42,7 +42,7 @@ MECH_KEY = (
     "taylor_francis_informa_microsoft_academic_data_access_may2024_expansion_sep2026"
 )
 NEXT_SIBLING = "\n  snowflake:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "81ea16e91c85b00b1ad9383180c701303bd18fdc"
 
 
 def _read(rel):
