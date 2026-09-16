@@ -38040,7 +38040,7 @@ publications:
       observed pattern is beat-driven (Politico''s AI-policy vertical exists to
       break policy news) and lab-driven (both labs strategically leak to Politico).
       Meta comparator: bounded absence (iteration-492) - zero verbatim Politico x
-      Meta URLs in this run''s 5 query sets; zero dedicated Politico x Meta blocks
+      Meta URLs in this run''s 7 query sets; zero dedicated Politico x Meta blocks
       in the corpus; the only Politico-Meta-adjacent signal is EU competition chief
       Teresa Ribera quoted "told Politico" on US/EU antitrust consistency (CEPA,
       Politico as interview venue on the enforcement beat, not a dedicated Meta
@@ -38064,7 +38064,7 @@ publications:
       substrings repo-wide pre-commit.
 
       '
-    research_method: 'Evidence search-excerpt-bounded per #503. 5 browser.search
+    research_method: 'Evidence search-excerpt-bounded per #503. 7 browser.search
       query sets (Politico OpenAI AI slowdown Amodei Sep 2026; Politico Meta
       antitrust AI Sep 2026; site politico.com OpenAI AI safety Sep 2026; site
       politico.com Meta antitrust Sep 2026; Politico OpenAI FRONTIER Act Lehane

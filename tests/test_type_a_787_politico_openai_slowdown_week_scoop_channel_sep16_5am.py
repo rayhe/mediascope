@@ -7,7 +7,7 @@ Mechanism 703 under profiles/competitor-coverage-research.yaml -> publications.
 FIRST dedicated Politico x OpenAI mechanism. Politico's AI-policy vertical is the
 frontier labs' preferred leak/scoop channel for pro-regulation pivots, and scoop
 access is SYMMETRIC across payer status (search-excerpt-bounded per #503, 0
-browser.open attempts, 5 browser.search query sets): Arm 1 (Sep 15 2026): OpenAI
+browser.open attempts, 7 browser.search query sets): Arm 1 (Sep 15 2026): OpenAI
 endorses three bipartisan bills (Web of Biological Data Act, AI-Ready Bio-Data
 Standards Act, Scale Biology Act) plus the FRONTIER Act IVO provision; Reuters
 reports "Politico earlier reported the endorsements", PANews attributes the
@@ -26,7 +26,7 @@ financial-incentive prediction (the deal buys preferential narrative carriage fo
 OpenAI) is NOT supported on the observed arms: non-payer Anthropic received
 identical scoop treatment. The pattern is beat-driven and lab-driven. Meta
 comparator: bounded absence (iteration-492) - zero verbatim Politico x Meta URLs
-in this run's 5 query sets; zero dedicated Politico x Meta blocks in the corpus.
+in this run's 7 query sets; zero dedicated Politico x Meta blocks in the corpus.
 Extends m700's payer-status inversion and m697's register-selection dominance to
 the scoop-access margin. NOT a falsification-family member (scoop-access
 documentation, not a uniform-prediction test); ledger holds at 26; no
