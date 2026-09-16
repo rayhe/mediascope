@@ -37726,6 +37726,193 @@ publications:
       description: WIRED OpenAI Meta Ad Targeting Privacy Natural Experiment
     - mechanism_id: 100
       description: OpenAI Publisher Financial Dependencies
+  le_monde_anthropic_slowdown_week_register_set_vs_meta_tobacco_openai_neutral_sep16:
+    mechanism_id: 700
+    iteration: 782
+    iteration_type: A
+    type: competitor_coverage_deep_dive
+    date: '2026-09-16'
+    date_analyzed: '2026-09-16'
+    time_pdt: '00:00'
+    publication: Le Monde
+    entity: Anthropic
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    title: 'Le Monde x Anthropic Slowdown-Week Register Set: Accountability News vs
+      Financialized Opinion vs Constructive Relay (Sep 11-15, 2026), vs Carried Le
+      Monde x Meta Tobacco Editorial and x OpenAI Neutral Business News'
+    description: 'First dedicated Le Monde x Anthropic mechanism. Three novel Le Monde
+      arms from the Sep 2026 AI-slowdown news week, all search-excerpt-bounded per
+      #503 (2 browser.search query sets, 0 browser.open attempts; all URLs verbatim
+      from search Full-URL listings): (1) Sep 11 /pixels/ news on the Coxon resignation
+      and AI incidents, accountability register, tone -0.35 MANUAL ILLUSTRATIVE;
+      (2) Sep 15 /opinion/ ''AIpocalypse/big money'' piece, financialized-sardonic
+      register, tone -0.25; (3) Sep 15 /opinion/ ''regain control'' piece, constructive
+      Amodei-essay relay, tone -0.10. Anthropic arm avg -0.23. Carried comparators
+      from m322: Le Monde x Meta Aug 20 /idees/ institutional editorial with tobacco/alarm
+      register (''avidite'', ''cigarettiers'', ''dissimuler la nocivite'') and Le Monde
+      x OpenAI Aug 24 /economie/ neutral business-news register. Payer-status inversion:
+      Le Monde is a triple-AI-payer (OpenAI Mar 2024, Perplexity May 2025, Meta Dec
+      2025; 25% of AI licensing revenue shared with staff journalists, Press Gazette
+      Apr 2026), yet the hardest register falls on Meta (a payer, tobacco/alarm editorial),
+      a mid adversarial-accountability register falls on Anthropic (the one frontier
+      lab with NO documented Le Monde AI licensing deal), and the softest register
+      falls on OpenAI (the longest-standing payer, neutral business news). Payer status
+      does not monotonically predict register. Register is selected by commissioning
+      and genre (institutional editorial vs news vs opinion) and by the news event,
+      not by the financial tie. Extends m322''s [STRONG] confounder (''Simple financial-capture
+      model would predict favorable coverage of both partners'') and m697''s register-selection
+      dominance to a triple-payer outlet with a non-payer entity. NOT a falsification-family
+      member: register documentation, not a uniform-prediction test. Ledger holds at
+      26. NOT artifact-grade. Correlation is not causation.
+
+      '
+    novelty_verification: 'Zero test_type_a_782 files on disk pre-commit (glob); no
+      "Type A #782" in git log pre-commit; URL slugs (6757415_13, 6757529_23, 6757554_23)
+      zero-hit repo-wide pre-commit via git grep; block key zero-hit repo-wide pre-commit;
+      max numeric mechanism_id 699 pre-commit; #780 sweep-instrument carrier test
+      (test_type_d_780 asserts zero 700 keys; superseded by designed advance per the
+      #710/#720 convention).
+
+      '
+    research_method: 'Evidence search-excerpt-bounded per #503. 2 browser.search query
+      sets (Le Monde Anthropic Amodei Sep 2026; TechCrunch Coxon resignation Sep 2026),
+      0 browser.open attempts. All three anchor URLs verbatim from search Full-URL
+      listings. Excerpts quoted from search-result text. ASCII-only, no em dashes.
+
+      '
+    arms:
+      arm1_coxon_resignation_incidents_news:
+        title: 'AI: Incidents and Anthropic researcher''s resignation push ''AIpocalypse''
+          debate to new heights'
+        date: '2026-09-11'
+        section: /pixels/ (news)
+        url: https://www.lemonde.fr/en/pixels/article/2026/09/11/ai-incidents-and-anthropic-researcher-s-resignation-push-aipocalypse-debate-to-new-heights_6757415_13.html
+        url_status: verbatim_from_search_full_url_listing
+        register: accountability_incident_reporting
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        excerpts:
+        - 'Neither company is acting responsibly. They are racing straight to self-improving
+          superintelligence and gambling with our lives, (Coxon, quoted)'
+        - 'estimating the risk of that happening at "[more than] 10% within the next
+          decade." (Hubinger, quoted)'
+        - '"A 10% chance does seem not an unreasonable estimate to me." (Hinton, on
+          BBC)'
+        - '''We cannot stick our heads in the sand'''
+        entity_target: both labs named (OpenAI and Anthropic accused together)
+      arm2_aipocalypse_big_money_opinion:
+        title: 'The growing debate over the ''AIpocalypse'' is also, and above all,
+          about big money'
+        date: '2026-09-15'
+        section: /opinion/ (opinion)
+        url: https://www.lemonde.fr/en/opinion/article/2026/09/15/the-growing-debate-over-the-aipocalypse-is-also-and-above-all-about-big-money_6757529_23.html
+        url_status: verbatim_from_search_full_url_listing
+        register: financialized_sardonic_opinion
+        tone_MANUAL_ILLUSTRATIVE: -0.25
+        excerpts:
+        - 'How much is a company worth if it could potentially wipe out humanity?'
+        - 'the growing debate over the "AIpocalypse" ... is also, and above all, about
+          big money.'
+        - 'Investors are left wondering about the future of a company that is developing
+          the world''s most innovative product without ever having demonstrated how
+          it intends to turn a profit.'
+        entity_target: the valuation logic, not Anthropic specifically
+      arm3_regain_control_opinion:
+        title: 'The urgent need to regain control over global AI race'
+        date: '2026-09-15'
+        section: /opinion/ (opinion)
+        url: https://www.lemonde.fr/en/opinion/article/2026/09/15/the-urgent-need-to-regain-control-over-global-ai-race_6757554_23.html
+        url_status: verbatim_from_search_full_url_listing
+        register: constructive_safety_relay
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        excerpts:
+        - 'On Saturday, September 12, Dario Amodei, head of Anthropic ... called for
+          a voluntary slowdown in the development of its most advanced models.'
+        - 'His appeal was supported by Anthropic''s main American competitors.'
+        - 'Financial logic adds another layer of inertia. Hundreds of billions of dollars
+          have been invested in models, data centers, chips and the infrastructure
+          needed for development, based on the assumption that AI capabilities will
+          keep progressing.'
+        - 'Trump has flatly rejected calls to slow down, insisting that maintaining
+          America''s lead over China is the priority.'
+        entity_target: Amodei essay relayed constructively; softest Anthropic arm
+    anthropic_arm_scores: [-0.35, -0.25, -0.10]
+    anthropic_avg: -0.23
+    carried_comparators_from_m322:
+      meta_arm:
+        mechanism: 322
+        carry_note: 'carried from m322 by design'
+        piece: 'Aug 20 /idees/ institutional editorial ''Proces de Meta : la societe
+          contre l''avidite des plateformes'''
+        register: alarm_tobacco_editorial
+        key_vocabulary: [avidite, cigarettiers, dissimuler la nocivite, accablants]
+        qualitative: hardest register in the Le Monde set; Meta is an AI payer (Dec
+          2025)
+      openai_arm:
+        mechanism: 322
+        carry_note: 'carried from m322 by design'
+        piece: 'Aug 24 /economie/ business news ''les publicites arrivent sur ChatGPT
+          en France'''
+        register: neutral_business_news
+        qualitative: softest register in the Le Monde set; OpenAI is the longest-standing
+          AI payer (Mar 2024)
+    payer_status_ordering: 'Meta (payer, Dec 2025): hardest register (tobacco/alarm
+      editorial). Anthropic (NON-payer, no documented AI licensing deal): mid register
+      (-0.23 adversarial-accountability). OpenAI (payer, Mar 2024): softest register
+      (neutral business news). The ordering is the INVERSE of the uniform financial-incentive
+      prediction for the Meta/Anthropic pair and flat for the OpenAI/Meta pair.'
+    verdict: directionally_supported_not_proven
+    incentive_attribution: 'Register selection by commissioning and genre, not by payer
+      status. INCONCLUSIVE for any directional incentive claim: the triple-payer outlet
+      applies its hardest register to a payer (Meta) and its softest to its longest-standing
+      payer (OpenAI), with the non-payer (Anthropic) in between. Correlation is not
+      causation.'
+    confounders_ranked:
+      strong:
+      - 'Genre convention: /idees/ institutional editorials and /opinion/ pieces inherently
+        use stronger evaluative language than /pixels/ news and /economie/ business
+        reporting. BUT the commissioning decision (which entity warrants an editorial)
+        is itself an editorial register choice, per m322.'
+      - 'Event-driven: the slowdown week (Coxon resignation Sep 9, Amodei essay Sep
+        12) is a genuine three-CEO news event; Anthropic is the protagonist (Coxon
+        was Anthropic''s researcher, Amodei authored the essay), so accountability
+        framing tracks the news peg, not the entity.'
+      moderate:
+      - 'Anthropic''s safety-brand positioning makes it the natural accountability target;
+        a lab that markets safety invites safety scrutiny.'
+      - 'French editorial independence tradition (societe des redacteurs), carried from
+        m322.'
+      weak:
+      - 'English-edition (/en/) pieces may carry a different register than the French
+        originals; excerpt-bounded read cannot check the French source text.'
+    counter_evidence:
+    - 'Arm 3, the softest Anthropic arm (-0.10), is the piece most centered on Anthropic''s
+      CEO: the constructive Amodei-essay relay bounds any uniform-adversarial reading
+      of Le Monde x Anthropic.'
+    - 'Arm 2''s hardest edge targets the valuation logic (''above all, about big money''),
+      not Anthropic specifically; the sardonic register is financial, not entity-directed.'
+    - 'The Aug 30 Le Monde piece ''IA : OpenAI et Anthropic, deux freres ennemis''
+      frames OpenAI and Anthropic symmetrically as IPO rivals, bounding entity-selective
+      readings (in corpus via search; not ingested as a fourth arm).'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95
+      NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT
+      run. Verdict directionally_supported_not_proven. no_analysis_json_update: true.
+      NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: register documentation,
+      not a uniform-prediction test. Ledger holds at 26.'
+    test_file: tests/test_type_a_782_le_monde_anthropic_slowdown_week_register_sep16_12am.py
+    cross_references:
+    - mechanism_id: 322
+      description: Le Monde institutional editorial register bifurcation Meta/OpenAI
+        (carried comparators, same publication)
+    - mechanism_id: 319
+      description: Le Monde content-ad cannibalization financial architecture (same
+        publication)
+    - mechanism_id: 100
+      description: OpenAI Publisher Financial Dependencies
+    - mechanism_id: 697
+      description: MarketWatch x OpenAI slowdown-week register set (same news week,
+        register-selection dominance analogue)
   fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient:
     mechanism_id: 324
     type: podcast_sentiment_tracking
