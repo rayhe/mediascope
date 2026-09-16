@@ -103,7 +103,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "c762630bb86d8a7fd7825522a7af52a84b837940"
 
 M703_KEY = "politico_openai_slowdown_week_scoop_channel_symmetry_sep16"
 M704_KEY = (
