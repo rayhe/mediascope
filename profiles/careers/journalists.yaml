@@ -19249,3 +19249,96 @@ max_miller:
   - https://www.engadget.com/2190115/meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/
   - https://WWW.ENGADGET.COM/2236798/what-happens-when-apps-track-activity/
   - https://WWW.ENGADGET.COM/author/maxmiller/
+
+scott_younker:
+  name: Scott Younker
+  current_role: Writer
+  current_publication: Tom's Guide
+  publication_owner: Future plc
+  beats:
+  - smart_glasses
+  - vr_ar
+  - consumer_tech
+  notes: 'Tom''s Guide writer (smart glasses / VR-AR / consumer tech beat per the Tom''s Guide smart-glasses listing pages). Type B #783 (Sep 16 2026): mechanism 701 cross-entity register constancy - Meta arms May 12 2026 "Meta Connect 2026 kicks off in September - date, time and mystery new smart glasses teased" (neutral tease register, +0.05 illustrative) and May 14 2026 "Meta is knocking up to 25% off its Ray-Ban and Oakley AI glasses ahead of Memorial Day" (neutral deals register, +0.10) vs Samsung arms Apr 27 2026 "Samsung Galaxy Glasses renders just leaked - here''s what they look like" (neutral leak register, 0.00) and May 1 2026 "Samsung teases AI smart glasses but reveals memory shortage could get worse in recent earnings call" (neutral earnings-news register, 0.00); illustrative delta Meta-minus-Samsung +0.075 inside the noise band; zero privacy/surveillance interrogation of either entity (bounded-listing absence per the iteration-492 rule). FIRST dedicated corpus mechanism on Younker - zero hits repo-wide pre-commit. Second Future-plc zero-gradient mechanism after m692 (#768 Kozuch): documents writer-level variance within the same publisher (Kozuch shows trust-interrogation asymmetry; Younker shows full constancy), bounding publisher-level asymmetry readings. NOT a falsification-family member (register documentation, not a uniform-prediction test); ledger holds at 26. Search-excerpt-bounded per #503 (browser.open terminally failed this run); MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no analysis.json update; NOT artifact-grade.'
+  mechanism_ids: [701]
+  source_urls:
+  - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+  - https://www.tomsguide.com/au/computing/vr-ar/smart-glasses/page/3
+  competitor_coverage:
+    type_b_783_scott_younker_tomsguide_meta_vs_samsung_register_constancy_sep16:
+      iteration: 783
+      mechanism_id: 701
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-16 01:00 PDT'
+      block_key: 'type_b_783_scott_younker_tomsguide_meta_vs_samsung_register_constancy_sep16'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-writer register comparison, FIRST dedicated Type B on Scott Younker. Question: does the same Tom''s Guide smart-glasses writer apply an entity-selective register to Meta vs Samsung camera glasses? Five Younker bylines in an 18-day Apr 27 - May 15 2026 window: (a) Meta arms May 12 (Meta Connect 2026 tease, neutral product-news register, +0.05 illustrative) and May 14 (Memorial Day sale, neutral deals register, +0.10); (b) Samsung arms Apr 27 (Galaxy Glasses renders leak, neutral leak register, 0.00) and May 1 (earnings-call AI glasses tease, neutral earnings-news register, 0.00); plus a fifth same-writer May 15 Asus/Xreal AR pre-order piece anchoring the register as manufacturer-independent. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Meta Connect 2026 kicks off in September - date, time and mystery new smart glasses teased'
+        date: '2026-05-12'
+        author_byline: Scott Younker
+        publication: tomsguide
+        role: Writer
+        genre: product news (event tease)
+        key_quotes:
+        - 'Listing excerpt (observed this run): "Meta Connect 2026 kicks off in September with a mystery pair of smart glasses and promised AI updates."'
+        - 'Register note: mystery/tease framing is promotional-neutral; no privacy, surveillance, or trust language in title or excerpt'
+        - 'Second Meta arm: "Meta is knocking up to 25% off its Ray-Ban and Oakley AI glasses ahead of Memorial Day" (May 14 2026) - excerpt "Meta is holding a big sale for its Ray-Ban Meta and Oakley HSTN Meta glasses" - neutral deals-positive register'
+        register_notes: 'Neutral product-news register across both Meta arms. Tease framing ("mystery new smart glasses") is the same mild promotional-positive register as the Samsung leak arm; the deals arm is neutral-positive consumer news.'
+        tone_score: 0.075
+        tone_basis: 'hand-assigned this run from search-excerpt title/register reads, MANUAL ILLUSTRATIVE (Meta arms +0.05 and +0.10 averaged)'
+        evidence_tier: 'search-excerpt-bounded per #503 (browser.open terminally failed this turn); titles/bylines/dates from the verbatim Tom''s Guide listing pages in the search Full-URL listings'
+        byline_attribution_urls:
+        - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+      samsung_arm:
+        title: 'Samsung Galaxy Glasses renders just leaked - here''s what they look like'
+        date: '2026-04-27'
+        author_byline: Scott Younker
+        publication: tomsguide
+        role: Writer
+        genre: product news (leak)
+        key_quotes:
+        - 'Listing excerpt (observed this run): "A new set of leaked renders reveals Samsung ''Jinju'' smart glasses."'
+        - 'Register note: leak-reporting register is neutral; no privacy, surveillance, or trust language in title or excerpt'
+        - 'Second Samsung arm: "Samsung teases AI smart glasses but reveals memory shortage could get worse in recent earnings call" (May 1 2026) - excerpt "During a recent earnings call, Samsung teased AI smart glasses. Here''s what the company brass said." - neutral earnings-news register'
+        - 'Fifth same-writer constancy anchor: "Asus ROG Xreal R1 AR pre-orders now live for $849" (May 15 2026) - excerpt "Asus and Xreal are releasing a high-end pair of AR glasses for gaming with a 240Hz refresh rate and huge 171-inch display." - same neutral register on a third manufacturer (register context, not a scored arm)'
+        register_notes: 'Neutral product-news register across both Samsung arms. No privacy interrogation of the 12MP autofocus camera (carried from m395: higher bystander-capture capability than Meta''s fixed-focus) - the register is leak/news relay, not scrutiny.'
+        tone_score: 0.0
+        tone_basis: 'hand-assigned this run from search-excerpt title/register reads, MANUAL ILLUSTRATIVE (Samsung arms 0.00 and 0.00 averaged)'
+        evidence_tier: 'search-excerpt-bounded per #503 (browser.open terminally failed this turn); titles/bylines/dates from the verbatim Tom''s Guide listing pages in the search Full-URL listings'
+        byline_attribution_urls:
+        - https://www.tomsguide.com/au/computing/vr-ar/smart-glasses/page/3
+      asymmetry_scorer:
+        meta_tone: 0.075
+        samsung_tone: 0.0
+        delta_meta_minus_samsung: 0.075
+        delta_calc: '0.075 - 0.000 = +0.075'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Excerpt-bounded evidence: browser.open terminally failed this turn, so tones rest on title+excerpt register reads (per #503), not full-text; a full-text read could reveal register details the listings hide.'
+      - strength: 'STRONG'
+        text: 'Story-type skew: all five Younker smart-glasses pieces are announcement/tease/deals/leak pegs; the corpus carries no Younker byline on a trust-peg Meta story, so constancy across non-trust pegs does not test trust-register selectivity.'
+      - strength: 'MODERATE'
+        text: '18-day window (Apr 27 - May 15 2026) spans different news cycles; the Samsung pieces predate the May 12-15 Meta cluster.'
+      - strength: 'MODERATE'
+        text: 'Samsung Galaxy Glasses were announced-not-shipped (Jul 22 2026 Unpacked, shipping later); announcement pegs draw lighter registers - but the Meta arms are also announcement/tease pegs, neutralizing the peg asymmetry.'
+      - strength: 'WEAK'
+        text: 'n=1 per scored arm; the fifth (Asus/Xreal) piece is register context, not a scored arm.'
+      - strength: 'WEAK'
+        text: 'Writer variance within publisher: Kozuch (same publisher, same beat) shows trust-interrogation asymmetry (m692); constancy is writer-level, not publisher-level, and does not clear the publisher.'
+      verdict: 'WITHIN-WRITER REGISTER CONSTANCY, NEGATIVE CONTROL. Younker applies the same neutral product-news register to Meta and Samsung smart glasses (+0.075 vs 0.00, delta inside the noise band), with zero privacy/surveillance interrogation of either entity (bounded-listing absence). The same-publisher sibling m692 (Kozuch, #768) shows trust-interrogation asymmetry within product-enthusiasm constancy - so Younker documents writer-level variance within Future plc, bounding publisher-level asymmetry readings. Correlation is not causation per the Aug 28 rule; the STRONG excerpt-bounding and story-type confounds carry the constancy before any structural reading is invoked; no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin.'
+      financial_context: 'Tom''s Guide is a Future plc property. No documented Future plc-to-Meta or Future plc-to-Samsung AI content-licensing deal in the corpus (carried from #768). The observed constancy therefore sits under a NULL incentive gradient. Second Future-plc zero-gradient mechanism after m692; sibling zero-gradient controls: m688 (Axon), m690 (Ion), m695 (Miller), m698 (Perez). Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#768 (Type B, mechanism 692: Kate Kozuch Tom''s Guide Meta-vs-Google/Apple trust-interrogation asymmetry - SAME publisher, same zero-gradient context; m701 is the writer-level negative control)'
+      - '#395 (Type B: Simon Hill Samsung Galaxy Glasses selection-silence lineage - m701 carries the Galaxy Glasses hardware parity facts)'
+      - '#782 (Type A, mechanism 700: Le Monde register-selection dominance - m701 extends the register-selection point to a zero-gradient publisher)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer register-constancy pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'FIRST dedicated Type B mechanism on Scott Younker (zero hits repo-wide pre-commit; entry created this run). Zero test_type_b_783 files on disk (glob verified this run). No Type B commit with 783 in the title (git log --grep verified this run). All five arm titles/bylines/dates new-to-corpus this run (git-grep zero hits pre-commit for the title phrases). All tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 701 is the next free profiles mechanism id (max pre-commit 700). Rotation: 782 A -> 783 B.'
+      research_method: 'Listing-bounded discovery this run: Tom''s Guide smart-glasses listing pages (verbatim tomsguide.com URLs from the run''s search Full-URL listings) carry the five Younker bylines with titles and dates; browser.open terminally failed this turn, so all evidence is search-excerpt-bounded per #503. No per-article URLs were available verbatim; none constructed. No zero-coverage claims per iteration-492 rule (absence stated as bounded-listing absence). No em dashes.'
