@@ -15322,6 +15322,130 @@ entities:
         - 'Reach-Amazon usage-based Nova/Alexa deal (Mar 2 2026, Press Gazette) is new-to-corpus and un-mined: candidate for a future Type C Amazon-leg mechanism'
         - 'Nine x OpenAI/Anthropic absence: no Nine deal with any other AI lab on record (bounded absence); if Nine signs a second AI-lab deal it becomes a dual-payer test of the register-prediction'
 
+    taylor_francis_informa_microsoft_academic_data_access_may2024_expansion_sep2026:
+      mechanism_id: 699
+      iteration: 779
+      iteration_type: C
+      rotation: 'Type C'
+      date_analyzed: '2026-09-15'
+      discovery_date: '2026-09-15'
+      time_pdt: '21:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      mechanism_name: 'Taylor & Francis (Informa) x Microsoft $10M+ Academic Data-Access Agreement (May 2024) - FIRST Dedicated Academic-Publisher AI Data-Licensing Mechanism in the Corpus; Second Unnamed AI-Company Partnership (Jul 2024); ~$75M 2024 Data-Licensing Total; 2025 Further Agreements; License-Over-Authors Relationship Direction'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      overview: 'FIRST dedicated academic-publisher (scholarly journals and books) AI data-licensing mechanism in the corpus. Informa plc (FTSE 100, parent of Taylor & Francis, Routledge, CRC Press, F1000) disclosed in a May 2024 trading update a data-access agreement giving Microsoft nonexclusive access to "Advanced Learning Content" across nearly 3,000 academic journals: $10M+ (GBP 8M+) initial data-access fee plus recurring payments over three years. The July 24 2024 half-year results added a "second major partnership" with another (unnamed) AI company and guided AI-related revenue above $75M for 2024; the H1 2025 results (reported Jan 2026) describe "deepening relationships with AI companies" (plural), put 2024 non-recurring data-licensing at ~$75M (GBP 58M), and confirm "further non-recurring data licensing agreements" delivered in 2025. Academic authors report they were not consulted, were offered no opt-out, and receive no extra payment - a license-over-authors direction that extends the corpus relationship-direction taxonomy (sue-then-sign m624; pay-or-litigate bifurcation m636; grant-then-sue m675) with a fourth member. Extends the premium-data licensing layer (m663 Cashmere/Perplexity; m684 Getty visual display-only) into the scholarly vertical. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+      deal_parties:
+        payer: 'Microsoft (AI systems training and grounding)'
+        counterparty: 'Taylor & Francis Group - academic publisher; imprints Routledge, CRC Press, F1000; nearly 3,000 journals'
+        counterparty_parent: 'Informa plc (FTSE 100; B2B Events, B2B Digital Services, Academic Markets)'
+      announcement:
+        disclosed: 'May 2024 (Informa trading update; Informa plc market-update PDF linked from Inside Higher Ed)'
+        first_reported: 'July 2024 (The Bookseller; Inside Higher Ed Jul 29; Times Higher Education; AIhub Aug 2; TechXplore)'
+      deal_structure:
+        access: 'Nonexclusive access to "Advanced Learning Content" and data across Taylor & Francis nearly 3,000 academic journals'
+        focus_areas:
+        - 'Increasing Informa own productivity'
+        - 'Developing an automated citation tool'
+        - 'Developing AI-powered research assistant software'
+        - 'Giving Microsoft data access to "help improve relevance and performance of AI systems"'
+        safeguards_claimed: 'Agreement "protects intellectual property rights, including limits on verbatim text extracts and alignment on the importance of detailed citation references" (Informa via Inside Higher Ed); Taylor & Francis: "protecting the integrity of our authors work and limits on verbatim text reproduction, as well as authors rights to receive royalty payments in accordance with their author contracts"'
+        training_rights: 'Not stated as training in the announcement; AIhub/TechXplore read the likely use as training data for ChatGPT-like generative models; Microsoft: models "trained in a manner consistent with global copyright law"'
+      deal_terms:
+        initial_fee: '$10M+ (GBP 8M+ / AUD 15.5M) for initial data access (The Bookseller; AIhub; TechXplore)'
+        recurring: 'Recurring payments of undisclosed sum over the subsequent three years (May 2024 + 3y = through ~May 2027)'
+        exclusivity: 'Nonexclusive'
+      author_backlash:
+        consultation: 'None - authors learned via word of mouth (Dr Ruth Alison Clemens, modern English literature lecturer, via The Bookseller)'
+        opt_out: 'No clarity on any opt-out; "as they did not inform their authors about the deal in the first place, any opt-out policy is now not functional" (Clemens)'
+        extra_payment: 'None - authors "not receiving extra payment for the use of their research" (The Bookseller); Society of Authors "concerned to see publishers signing deals with tech companies without consulting authors and creators first"'
+        key_quotes:
+        - 'Lauren Barbeau (Georgia Tech, Routledge author): "I was shocked, not that it had happened, but that no one had said anything to us at all" (Inside Higher Ed)'
+        - 'Mia Gray (Cambridge): "This is disturbing and an increasingly important issue for academics" (via X, The Bookseller)'
+        - 'Thomas Lancaster (Imperial College): "Publishers should make this clearer, but in many cases, it is to be applauded that Microsoft are looking to officially license content rather than simply source free content from wherever it is available" (Times Higher Education)'
+        - 'Dr Clemens: "the biggest problem with this deal is the reduction of academic research into raw content from which data can be extracted and repackaged as knowledge" (Times Higher Education)'
+      second_ai_partnership_jul2024:
+        source: 'Informa H1 2024 results, published July 24 2024 (via Inside Higher Ed)'
+        claim: '"secured a second major partnership" with another AI company (unnamed in all bounded reporting)'
+        guidance: 'AI-related revenues expected to exceed $75 million for 2024'
+        informa_framing: 'Data-access agreements "are a source of significant new value for Taylor & Francis and additional royalties for authors" (academics skeptical per Inside Higher Ed)'
+        identity_bounded: 'Second partner identity undisclosed in all bounded sources (iteration-492: bounded absence of reporting, not a proven absence)'
+      expansion_2025:
+        source: 'Informa H1 2025 results via The Bookseller (reported ~Jan 2026)'
+        claim: 'Taylor & Francis "continues to deepen relationships with AI companies" (plural)'
+        quantum_2024: '2024 non-recurring data-licensing agreements worth ~$75M (GBP 58M)'
+        quantum_2025: '"In 2025 we have delivered further non-recurring data licensing agreements" (Informa)'
+        division_growth: 'T&F division ~12% underlying revenue growth H1 2025; targeting 3-4% underlying growth excluding non-recurring data licensing'
+      first_academic_publisher_claim: 'FIRST dedicated academic-publisher AI data-licensing mechanism in the corpus (zero "Taylor & Francis" / taylor_francis / Informa-plc hits repo-wide pre-commit; the informative/informant substring hits are unrelated). The scholarly vertical was unmapped: news publishers, visual licensors (Getty/Shutterstock), and the Cashmere premium-data roster were covered; academic journals were not.'
+      relationship_direction_taxonomy: 'FOURTH relationship direction: license-over-authors (publisher licenses author content to an AI lab without author consultation, opt-out, or extra payment). Joins (1) sue-then-sign (Indian Express, m624), (2) pay-or-litigate bifurcation (m636), (3) grant-then-sue (Seattle Times + Newsday, m675). Directionally distinct from the paid-news-licensing template: consideration flows publisher-to-lab while the content creators are uncompensated and unconsulted.'
+      premium_data_layer: 'Extends the premium-data licensing layer: m663 (Perplexity x Cashmere premium-data roster), m684 (Getty x Perplexity Oct 2025 visual display-only; Getty x OpenAI Jun 2026), m524 (HarperCollins x Microsoft Nov 2024 book backlist, $5,000/title author opt-in - the CONTRAST case: HarperCollins offered authors $2,500 and an opt-in; Taylor & Francis offered neither). The academic vertical prices between news (News Corp ~$50M/yr) and visual (Getty display-only): $10M+ initial + 3yr recurring + $75M/yr program scale.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'All deal economics are second-hand via trade press (The Bookseller, Inside Higher Ed) citing the Informa trading update; the primary market-update PDF was not read first-hand this run (search-excerpt-bounded per #503); the $10M figure is consistently reported but never in a Microsoft or Informa press-release headline'
+      - rank: 2
+        strength: strong
+        confounder: 'The second AI-company partner is unnamed in every bounded source, so the multi-payer claim rests on Informa own H1 2024 language ("second major partnership"), not an independently verified counterparty; payer COUNT beyond Microsoft is Informa-asserted'
+      - rank: 3
+        strength: strong
+        confounder: 'Training vs grounding/assistant-tooling use is ambiguous: the four focus areas mix internal productivity tooling with data access, so the share of the $10M attributable to model training (the incentive-relevant surface) is unmeasurable'
+      - rank: 4
+        strength: moderate
+        confounder: 'The ~$75M 2024 figure aggregates ALL Informa non-recurring data-licensing, not Taylor & Francis AI deals alone; attributing the full $75M to AI-company partnerships over-reads the disclosure'
+      - rank: 5
+        strength: moderate
+        confounder: 'No profiled publication (the seven tracked) is an academic-trade outlet, so no direct coverage-tone comparison exists in the corpus; the Times Higher Education backlash coverage is adversarial toward the deal but THE is not a tracked publication'
+      - rank: 6
+        strength: weak
+        confounder: 'Author-backlash quotes are selection-biased toward critics (Clemens, Barbeau, Gray); Lancaster offers the pro-licensing counter-voice and most authors are unquoted - backlash intensity is directionally evidenced, not quantified'
+      strongest_counterargument: 'The deal is arguably the pro-licensing template working as intended: Microsoft paid for content instead of scraping it (Lancaster: "to be applauded"), with verbatim limits and citation alignment, and Informa claims additional author royalties flow through contracts. The license-over-authors framing assumes authors are harmed; the counter-reading is that authors benefit from licensed (cited, royalty-bearing) use versus unlicensed scraping, and the backlash reflects process grievance (no consultation) rather than economic injury. The null (standard B2B content licensing with no editorial consequence) predicts no coverage effect, and no tracked publication covers academic publishing as a beat, so the mechanism is incentive-architecture bookkeeping, not a tone prediction.'
+      cross_references:
+      - 'Mechanism 663 (Perplexity x Cashmere premium-data licensing layer - the premium-data template this extends into the scholarly vertical)'
+      - 'Mechanism 684 (Getty x Perplexity Oct 2025 visual display-only; Getty x OpenAI Jun 2026 - the visual-licensing template; Taylor & Francis is the text-scholarly analog)'
+      - 'Mechanism 524 (HarperCollins x Microsoft Nov 2024 book backlist: $5,000/title, author opt-in, $2,500 to authors - the CONTRAST case on author agency)'
+      - 'Mechanism 675 (Seattle Times + Newsday grant-then-sue: third relationship direction; this leg adds the fourth)'
+      - 'Mechanism 624 (Indian Express sue-then-sign: first relationship direction)'
+      - 'Mechanism 636 (pay-or-litigate bifurcation: second relationship direction)'
+      - 'Mechanism 594 (News Corp five-leg AI revenue architecture: the multi-payer publisher template; Informa is the academic-publisher analog at $75M/yr program scale)'
+      novelty_verification:
+      - 'Zero test_type_c_779 files on disk pre-commit (glob verified)'
+      - 'No Type C #779 in git log pre-commit (--grep verified)'
+      - 'Zero "Taylor & Francis" / taylor_francis / Informa-plc hits repo-wide pre-commit (grep verified; informative/informant substring hits unrelated; the scholarly vertical was unmapped)'
+      - 'Zero underscore-form 699 mechanism key strings repo-wide pre-commit (sweep-instrument carriers excluded per #715)'
+      - 'Max numeric mechanism_id 698 pre-commit (#778)'
+      - 'FIRST dedicated academic-publisher AI data-licensing mechanism in the corpus'
+      statistical_discipline:
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      artifact_readiness: 'No analysis.json update warranted. Deal-level financial mapping, qualitative only, no new empirical tone finding; extends the premium-data licensing layer into the scholarly vertical.'
+      falsification_family: 'NOT a member - qualitative financial mapping only; no coverage-tone claim made; ledger holds at 26'
+      source_urls:
+      - 'https://www.insidehighered.com/news/faculty/research/2024/07/29/taylor-francis-ai-deal-sets-worrying-precedent'
+      - 'https://www.thebookseller.com/news/academic-authors-shocked-after-taylor--francis-sells-access-to-their-research-to-microsoft-ai?fbclid=IwZXh0bgNhZW0CMTEAAR1RbpECJ8hYZtB8XwI6Q6jLKwDzlFZj5O5MGEJ18wtYK3Yl6eMrUUi8A2o_aem_JECVZoJtGGVo9mQWPlvgrQ'
+      - 'https://www.issn.org/newsletter_issn/academic-authors-shocked-after-taylor-francis-sells-access-to-their-research-to-microsoft-ai/'
+      - 'https://www.stg.timeshighereducation.com/news/academic-backlash-publisher-lets-microsoft-train-ai-papers'
+      - 'https://www.thebookseller.com/news/news/taylor-francis-shows-strong-growth-in-2025-as-it-deepens-relationships-with-ai-companies'
+      - 'https://aihub.org/2024/08/02/an-academic-publisher-has-struck-an-ai-data-deal-with-microsoft-without-their-authors-knowledge/'
+      - 'https://techxplore.com/news/2024-07-academic-publisher-struck-ai-microsoft.html'
+      research_method: '2 browser.search query sets this run (Taylor & Francis Microsoft AI training data licensing deal 2024; Taylor & Francis Informa AI data licensing agreements 2025 OpenAI Google + Wiley alternate) + 0 browser.open (search-excerpt-bounded per #503; proxy OPEN this run but excerpts sufficed). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps: zero test_type_c_779 files on disk (glob); no "Type C #779" in git log (--grep); zero Taylor & Francis / taylor_francis / Informa-plc hits repo-wide (grep); zero underscore-form 699 keys repo-wide; max numeric mechanism_id 698 pre-commit. ASCII-only, no em dashes.'
+      watch_items:
+      - 'Second AI-company partner identity: if named in future Informa disclosures, it becomes a dual-payer test for the academic vertical'
+      - 'May 2027: the 3-year recurring term ends - renewal/extension/exit decision window per the #599 ACTIVE convention'
+      - 'Wiley $44M AI-licensing comparator (Jan 2025 Inside Higher Ed via openscience.ens.fr PDF): if Wiley terms surface, the academic-vertical pricing band tightens'
+      - 'Oxford University Press "working toward similar deals" (same source): OUP entry would make the academic vertical a three-publisher cohort'
+      caution: 'Structural mapping only. Documents the Taylor & Francis (Informa) x Microsoft academic data-access agreement, the second AI-company partnership, the ~$75M 2024 program scale, the 2025 expansion, and the license-over-authors relationship direction. No coverage-tone claim is made. Correlation is not causation.'
+
   snowflake:
     display_name: Snowflake
     aliases:
