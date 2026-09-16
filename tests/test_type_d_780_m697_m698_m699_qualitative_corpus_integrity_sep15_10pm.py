@@ -90,7 +90,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a2592881b970a352fcd53a131e8fa25ce75a1efe"
 
 M697_KEY = "marketwatch_openai_ipo_delay_oracle_boost_doomsday_market_register_sep15"
 M698_KEY = (
