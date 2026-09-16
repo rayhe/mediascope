@@ -45,7 +45,7 @@ MECH_ID_MARKER = "mechanism" + "_702"
 NEXT_ID_MARKER = "mechanism" + "_703"
 MECH_KEY = "google_pay_per_use_ai_licensing_pilot_publishers_sep2026"
 NEXT_SIBLING = "\n  x_twitter:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "085b7bd98cbc259f5b8128389c18335be7108aa4"
 
 
 def _read(rel):
