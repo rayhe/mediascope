@@ -13139,6 +13139,110 @@ entities:
         ascii_only: true
         goal_id: goal_54093bda4145
         job_id: mediascope-daily-iteration
+    google_pay_per_use_ai_licensing_pilot_publishers_sep2026:
+      mechanism_id: 702
+      iteration: 784
+      iteration_type: C
+      rotation: 'Type C'
+      date_analyzed: '2026-09-16'
+      discovery_date: '2026-09-16'
+      time_pdt: '02:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      mechanism_name: 'Google Pay-Per-Use AI Licensing Pilot Program for Publishers (Sep 2026) - FIRST Dedicated Google Pay-Per-Use Publisher Mechanism; Third Instance of the Variable-Pay Template (Apple Proposal Aug 2026, Microsoft PCM Feb 2026); Cooperative Turn on the Historically Adversarial Google x Publisher Vector'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      overview: 'FIRST dedicated Google pay-per-use AI licensing mechanism in the corpus. Digiday (~Sep 14 2026) reports Google has rolled out a pay-per-use AI licensing pilot program to publishers: pilot partners test direct payments and data-sharing, Google holds weekly calls with some partners, and participating publisher executives describe the approach as extremely collaborative. One pilot publisher frames the program as less a one-off deal and more an early test of a marketplace for inference data, where publishers learn what content is valuable to AI systems as well as to readers. This is the THIRD instance of the variable-pay/pay-per-use pricing template in the corpus: (1) Apple proposed variable pay-per-use publisher deals for Siri AI (Aug 12 2026, mechanism 156 - predictive, zero closures per the #606 Sep 2026 status check); (2) Microsoft Publisher Content Marketplace operates pay-per-use (Feb 2026, mechanism 443); (3) Google now pilots pay-per-use (Sep 2026, this mechanism). The pilot marks a cooperative turn on the historically adversarial Google x publisher vector: AI Overviews blamed for the publisher referral collapse (mechanism 539: 54 percent to 24 percent), the EU antitrust probe into Google publisher-AI content use (mechanism 666, Dec 2025 probe plus Sep 1 2026 opt-out questionnaire), and Cloudflare bot-blocking as publisher leverage (mechanism 64). Google moves here from take-without-paying to testing direct payments. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+      deal_parties:
+        payer: 'Google (Alphabet) - AI systems training, grounding, and inference'
+        counterparty: 'Undisclosed pilot publishers (Digiday sources are anonymous publisher executives in the pilot)'
+        counterparty_parent: 'Multiple; participant list not disclosed'
+      announcement:
+        disclosed: 'No Google announcement; reported by Digiday ~Sep 14 2026 (Last Updated 2 days before this run; crawled 2 days)'
+        first_reported: 'Digiday, ~Sep 14 2026'
+      deal_structure:
+        access: 'Pilot: publishers test direct payments and data-sharing for AI use of their content; exact content scope (training vs grounding vs inference) not disclosed'
+        pricing_model: 'Pay-per-use - publishers paid when their content is used by Google AI systems, rather than a fixed licensing fee; mirrors the Apple variable-pay proposal (mechanism 156) and Microsoft PCM (mechanism 443)'
+        program_mechanics:
+        - 'Weekly calls between Google and some program partners'
+        - 'Publishers test direct payments plus data-sharing (what data is shared, and in which direction, is undisclosed - the Digiday excerpt does not specify)'
+        - 'One pilot publisher frames it as an early test of a marketplace for inference data: publishers learn what content is valuable to AI systems as well as to readers'
+        transparency: 'Low - described as quite black box by an executive with knowledge of the matter; one pilot exec: Do I wish they were more transparent? Definitely'
+        maturity: 'Early days, not yet fully baked (pilot partner, anonymous)'
+      deal_terms:
+        rates: 'Undisclosed - no per-use, per-query, or revenue-share figures in bounded reporting'
+        participants: 'Undisclosed - anonymous pilot publishers only'
+        exclusivity: 'Unknown'
+        term: 'Pilot; no stated end date'
+      publisher_reception:
+        inside_vs_outside: 'Far better to be inside Google AI licensing tent, testing direct payments and data-sharing, than standing on the sidelines hoping the old referral economics return (pilot publisher executive, anonymous)'
+        collaboration: 'Google described as extremely collaborative, in regular contact over progress, weekly calls with some partners'
+        precedent_value: 'Hopeful that Google setting a precedent for exploring paying publishers directly for content through this is meaningful (pilot publisher executive, anonymous)'
+        caution: 'Critical that AI companies like Google are not disincentivized from collaborating but encouraged to do so (pilot publisher executive, anonymous)'
+      pay_per_use_template_third_instance: 'The variable-pay/pay-per-use pricing template now has its THIRD corpus instance: (1) Apple Siri AI variable pay-per-use proposal, Aug 12 2026 (mechanism 156; nine-figure budget discussed; predictive, zero signed closures per the mechanism 606 Sep 2026 status check); (2) Microsoft Publisher Content Marketplace pay-per-use, operational Feb 2026 (mechanism 443; usage-triggered payment; Dotdash Meredith leg mechanism 539; Hearst leg); (3) Google pay-per-use AI licensing pilot, Sep 2026 (this mechanism). Google is the last of the three to move: Apple proposed but has not closed, Microsoft operates, Google pilots. The template direction is convergent - all three labs independently landing on usage-triggered publisher compensation - but the maturity gradient runs Microsoft (operational) > Google (pilot) > Apple (proposal).'
+      cooperative_turn: 'The pilot is a cooperative turn on the historically adversarial Google x publisher financial vector. Adversarial legs in corpus: (a) AI Overviews blamed for the publisher referral collapse, 54 percent to 24 percent (mechanism 539); (b) EU antitrust probe into Google use of publisher content for AI (mechanism 666, Dec 9 2025 probe; Sep 1 2026 publisher opt-out questionnaire); (c) Cloudflare bot-blocking as publisher leverage against AI crawlers (mechanism 64); (d) Google News Showcase ($1B+, 700 publications) as the legacy paid leg, not AI-specific. The pilot is Google first AI-specific direct-payments test with publishers - distinct from the Dec 2025 Google News AI pilot (mechanism 412, which bundled AI overviews and audio briefings with attribution, not pay-per-use economics) and from the AP-Google Gemini real-time feed leg (Jan 15 2025).'
+      inference_data_marketplace_framing: 'One pilot publisher frames the program as an early test of a marketplace for inference data, where publishers learn what is valuable to AI systems as well as to readers. This is a new incentive-architecture concept in the corpus: pricing discovery as a two-sided learning process. Publishers historically optimized for reader attention (clicks, subscriptions); the inference-data marketplace would optimize for AI-system value (grounding quality, answer accuracy). The feedback loop one exec wants - a Search Console equivalent for the AI inference space, showing what content performs in AI answers - would make publisher AI-value legible and priceable. If it matures, this is the demand-discovery layer for the pay-per-use template: usage-triggered payment needs usage measurement, and the marketplace is where measurement becomes pricing.'
+      first_google_pay_per_use_claim: 'FIRST dedicated Google pay-per-use publisher mechanism in the corpus (zero Google pay-per-use mechanism keys repo-wide pre-commit; the Digiday URL zero-hit repo-wide pre-commit). Google existing AI-publisher legs: Dec 2025 News AI pilot (mechanism 412), AP-Google Gemini real-time feed (Jan 15 2025), Reddit $60M/yr licensing. None uses pay-per-use pricing. The Sep 2026 pilot is Google first usage-triggered publisher compensation test.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'Search-excerpt-bounded second-hand evidence per #503 (no first-hand Digiday read this run); every publisher voice is anonymous, so participant identity, count, and selection are unverifiable and the quotes cannot be independently confirmed'
+      - rank: 2
+        strength: strong
+        confounder: 'Pilot, not a signed deal: participants, scale, rates, terms, and duration are all undisclosed; pilots can stall, shrink, or be abandoned without reporting, so the mechanism documents a test, not a durable financial relationship'
+      - rank: 3
+        strength: strong
+        confounder: 'Google parallel adversarial posture confounds the cooperative reading: the EU antitrust probe (mechanism 666) plus the Sep 1 2026 opt-out questionnaire create a regulatory incentive for Google to run a visible publisher-payments pilot regardless of its commercial seriousness - regulatory theater is observationally equivalent to a genuine business-model shift at this evidence level'
+      - rank: 4
+        strength: moderate
+        confounder: 'Pay-per-use economics are unobserved: no rates, no volumes, no payment totals; participants themselves call the program quite black box, so the actual money at stake could be trivially small'
+      - rank: 5
+        strength: moderate
+        confounder: 'Participant selection is unknown: whether any of the seven tracked publications (or their owners) are in the pilot is undisclosed, so no publication-level incentive mapping is possible yet - this is entity-level architecture only'
+      - rank: 6
+        strength: weak
+        confounder: 'Single-outlet reporting: Digiday is the only outlet in bounded searches carrying the pilot; no Google on-record confirmation surfaced, and no second outlet corroboration was found this run'
+      strongest_counterargument: 'The pilot is best read as defensive regulatory positioning rather than a genuine revenue model. Google core incentive is to keep AI Overviews and AI Mode free of licensing costs; a small, opaque pilot buys publisher goodwill and EU-probe defense material while the main products continue monetizing publisher content without payment. The inference-data marketplace framing serves Google need for grounding-quality signals (publishers telling Google what content works in answers improves Google products) more than publisher revenue. The null - pilot as PR and regulatory hedge with no material payments, staying small and black-box - predicts exactly what is observed: anonymous participants, undisclosed rates, early-days framing. The mechanism is incentive-architecture bookkeeping, not a tone prediction, and no tracked publication is confirmed in the pilot.'
+      cross_references:
+      - 'Mechanism 156 (Apple Siri AI variable pay-per-use publisher proposal, Aug 12 2026: nine-figure budget, variable compensation; mechanism 606 Sep 2026 status check: predictive, zero closures - the unclosed proposal this Google pilot now parallels)'
+      - 'Mechanism 443 (Microsoft Publisher Content Marketplace, Feb 2026: the operational pay-per-use template; usage-triggered payment; first-wave pilot partners)'
+      - 'Mechanism 412 (Google News AI pilot, Dec 2025: Google first AI publisher deals - AI overviews and audio briefings with attribution, not pay-per-use economics; the cooperative leg this pilot extends)'
+      - 'Mechanism 666 (EU antitrust probe into Google publisher-AI content use, Dec 2025 probe plus Sep 1 2026 opt-out questionnaire: the adversarial vector this pilot partially offsets; regulatory-theater confounder)'
+      - 'Mechanism 539 (Dotdash Meredith triple-payer: Vogel pay-per-use pricing discussion, all-you-can-eat vs a la carte; the publisher-side articulation of the template)'
+      - 'Mechanism 64 (Cloudflare bot-blocking as publisher leverage against AI crawlers: the adversarial leverage that makes direct-payments pilots rational for labs)'
+      novelty_verification:
+      - 'Zero test_type_c_784 files on disk pre-commit (glob verified)'
+      - 'No Type C #784 in git log pre-commit (--grep verified)'
+      - 'The Digiday URL (digiday.com/media/google-rolls-out-pay-per-use-ai-licensing-program-to-publishers) zero-hit repo-wide pre-commit (git grep verified)'
+      - 'Zero Google pay-per-use mechanism keys repo-wide pre-commit (git grep verified; the Apple variable-pay and Microsoft PCM pay-per-use legs are separate entities)'
+      - 'Zero underscore-form 702 mechanism key strings repo-wide pre-commit (sweep-instrument carriers excluded per #715; the #783 file carries the forward 702 sweep by concatenation)'
+      - 'Max numeric mechanism_id 701 pre-commit (#783)'
+      - 'FIRST dedicated Google pay-per-use AI licensing publisher mechanism in the corpus'
+      statistical_discipline:
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      artifact_readiness: 'No analysis.json update warranted. Deal-level financial mapping, qualitative only, no new empirical tone finding; documents Google first pay-per-use publisher pilot and the third instance of the variable-pay template.'
+      falsification_family: 'NOT a member - qualitative financial mapping only; no coverage-tone claim made; ledger holds at 26'
+      source_urls:
+      - 'https://digiday.com/media/google-rolls-out-pay-per-use-ai-licensing-program-to-publishers/'
+      research_method: '4 browser.search query sets this run (Apple publisher licensing deal Siri AI September 2026 - zero closures, mechanism 606 status stands; Axel Springer OpenAI renewal December 2026 - no Sep 2026 renewal reporting, mechanism 597 watch unchanged; AI company publisher content licensing deal announced September 2026 - SELECTED the Digiday Google pay-per-use pilot plus the Gannett-Perplexity bilateral, deferred to a future Type C; Anthropic/Perplexity/Microsoft-publisher queries - no new deals). URLs copied verbatim from Full-URL listings; no canonical URLs constructed. Search-excerpt-bounded per #503 (0 browser.open first-hand reads this run). Pre-commit novelty greps: zero test_type_c_784 files on disk (glob); no Type C #784 in git log (--grep); the Digiday URL zero-hit repo-wide; zero Google pay-per-use mechanism keys; zero underscore-form 702 keys; max numeric mechanism_id 701. No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+      watch_items:
+      - 'Participant disclosure: if Google names pilot publishers, check tracked-publication membership for publication-level incentive mapping'
+      - 'Rate disclosure: any per-use, per-query, or revenue-share figures would price the inference-data marketplace and tighten the pay-per-use template economics'
+      - 'Regulatory: whether the pilot features in Google EU-probe defense or the opt-out remedy - tests the regulatory-theater confounder'
+      - 'Apple variable-pay closure: if Apple signs a publisher under mechanism 156, the template goes proposal-to-operational across all three labs'
+      - 'Gannett x Perplexity strategic bilateral (Sep 2026, silicon.co.uk press release): surfaced this run, deferred - candidate for the next Type C'
+      caution: 'Structural mapping only. Documents the Google pay-per-use AI licensing pilot program for publishers (Digiday ~Sep 14 2026), the third instance of the variable-pay template, and the cooperative turn on the Google x publisher vector. No coverage-tone claim is made. Correlation is not causation.'
   x_twitter:
     display_name: X / Twitter
     aliases:
