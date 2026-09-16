@@ -19342,3 +19342,101 @@ scott_younker:
       artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer register-constancy pin; illustrative-only scorer output; no new empirical finding at the publication level.'
       novelty: 'FIRST dedicated Type B mechanism on Scott Younker (zero hits repo-wide pre-commit; entry created this run). Zero test_type_b_783 files on disk (glob verified this run). No Type B commit with 783 in the title (git log --grep verified this run). All five arm titles/bylines/dates new-to-corpus this run (git-grep zero hits pre-commit for the title phrases). All tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 701 is the next free profiles mechanism id (max pre-commit 700). Rotation: 782 A -> 783 B.'
       research_method: 'Listing-bounded discovery this run: Tom''s Guide smart-glasses listing pages (verbatim tomsguide.com URLs from the run''s search Full-URL listings) carry the five Younker bylines with titles and dates; browser.open terminally failed this turn, so all evidence is search-excerpt-bounded per #503. No per-article URLs were available verbatim; none constructed. No zero-coverage claims per iteration-492 rule (absence stated as bounded-listing absence). No em dashes.'
+brenda_stolyar:
+  name: Brenda Stolyar
+  current_role: Senior Staff Writer
+  current_publication: Wirecutter
+  publication_owner: NYT (The New York Times Company)
+  previous_role: Staff Writer (Gear team)
+  previous_publication: WIRED
+  previous_owner: Conde Nast (Advance Publications)
+  prior_outlets:
+  - Mashable
+  - PCMag
+  - Digital Trends
+  beats:
+  - smartphones
+  - tablets
+  - wearables
+  migration:
+    date: circa May 2025
+    from: 'WIRED staff writer, Gear team (Conde Nast / Advance Publications)'
+    to: 'Wirecutter senior staff writer, smartphones / tablets / wearables (NYT)'
+    source: 'https://talkingbiznews.com/media-news/stolyar-departs-wired-for-wirecutter/amp/'
+  notes: 'Wirecutter senior staff writer (smartphones / tablets / wearables beat; Muck Rack profile: https://muckrack.com/bstoly/articles). Migrated from WIRED staff writer (Gear team) circa May 2025 (Talking Biz News; prior outlets Mashable, PCMag, Digital Trends). Type B #788 (Sep 16 2026): mechanism 704 within-journalist, within-employer register split - Meta arm "Meta''s New Smart Glasses Sounded Cool at First. But I Was Unimpressed." (Wirecutter, byline Brenda Stolyar; date not pinned in the Muck Rack listing, bounded per iteration-492; disappointed-dismissive opinion register, -0.45 illustrative) vs Apple arms Sep 10 2026 "Apple Just Unveiled a Folding iPhone, and It Looks Good" (bylines Brenda Stolyar and Caitlin McGarry; enthusiastic launch register, +0.45) and "I Tried Apple''s New Foldable iPhone Duo. Here''s How It Compares." (first-person hands-on, +0.55); Apple avg +0.50; illustrative register delta (Apple minus Meta) +0.95. Third same-writer Apple anchor "The iPhone Air Is Apple''s Most Impressive Phone in Years. But Most People Shouldn''t Buy It." bounds uniform-softness readings (buy-skeptical kicker). Both scored arms are post-migration Wirecutter pieces, so the split is WITHIN-employer: the migration is career context, not the causal mechanism. WIRED-era pieces in the observed listing are commerce/deals register (MagPod phone stand, Memorial Day tech deals 2025, Dyson PencilVac, gift guides) - no adversarial Meta coverage travels with her from WIRED. FIRST dedicated corpus mechanism on Stolyar - zero hits repo-wide pre-commit. NOT a falsification-family member (register documentation, not a uniform-prediction test); ledger holds at 26. Search-excerpt-bounded per #503 (7 browser.search query sets; 1 browser.open success on the Muck Rack listing; 1 browser.open terminally failed this turn, NOT retried); MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no analysis.json update; NOT artifact-grade.'
+  mechanism_ids: [704]
+  source_urls:
+  - https://talkingbiznews.com/media-news/stolyar-departs-wired-for-wirecutter/amp/
+  - https://muckrack.com/bstoly/articles
+  competitor_coverage:
+    type_b_788_brenda_stolyar_wired_wirecutter_meta_vs_apple_register_split_sep16:
+      iteration: 788
+      mechanism_id: 704
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-16 06:00 PDT'
+      block_key: 'type_b_788_brenda_stolyar_wired_wirecutter_meta_vs_apple_register_split_sep16'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-journalist register comparison, FIRST dedicated Type B on Brenda Stolyar. Question: does the same Wirecutter writer apply an entity-selective register to Meta smart glasses vs Apple hardware? Meta arm: Wirecutter opinion piece "Meta''s New Smart Glasses Sounded Cool at First. But I Was Unimpressed." (byline Brenda Stolyar; date not pinned in the listing, bounded per iteration-492; disappointed-dismissive register, -0.45 illustrative). Apple arms (both Sep 10 2026): "Apple Just Unveiled a Folding iPhone, and It Looks Good" (bylines Stolyar and Caitlin McGarry; enthusiastic launch register, +0.45) and "I Tried Apple''s New Foldable iPhone Duo. Here''s How It Compares." (first-person hands-on, +0.55); Apple avg +0.50; illustrative delta (Apple minus Meta) +0.95. Third same-writer Apple anchor "The iPhone Air Is Apple''s Most Impressive Phone in Years. But Most People Shouldn''t Buy It." (buy-skeptical kicker) is register context, not a scored arm. Both scored arms are post-migration Wirecutter pieces (migration WIRED/Advance to Wirecutter/NYT, circa May 2025): the split is within-employer; migration is career context, not the mechanism. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Meta''s New Smart Glasses Sounded Cool at First. But I Was Unimpressed.'
+        date: 'date_not_pinned_in_listing'
+        author_byline: Brenda Stolyar
+        publication: wirecutter
+        role: Senior Staff Writer
+        genre: opinion (product evaluation)
+        key_quotes:
+        - 'Headline (observed this run): "Meta''s New Smart Glasses Sounded Cool at First. But I Was Unimpressed." - "sounded cool at first" concedes enthusiasm; "unimpressed" is the verdict'
+        - 'Listing excerpt (observed this run): "I look at my phone entirely too much... tech companies like Meta, Google, Samsung, and others are exploring powerful smart glasses that promise to help people leave their phones behind. The latest versions of these glasses have tiny screens embedded in their lenses, which can display messages, maps, and more."'
+        register_notes: 'Disappointed-dismissive opinion register: the piece opens on screen-time guilt and frames the glasses against the phone-replacement promise; the headline verdict is negative while the entity is named first.'
+        tone_score: -0.45
+        tone_basis: 'hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'search-excerpt-bounded per #503 (7 browser.search query sets; 1 browser.open success on the Muck Rack listing; 1 browser.open terminally failed this turn, NOT retried); date not pinned in the listing (bounded absence per iteration-492, never a claimed date)'
+        byline_attribution_urls:
+        - https://muckrack.com/bstoly/articles
+      apple_arm:
+        title: 'Apple Just Unveiled a Folding iPhone, and It Looks Good'
+        date: '2026-09-10'
+        author_byline: Brenda Stolyar (with Caitlin McGarry)
+        publication: wirecutter
+        role: Senior Staff Writer
+        genre: launch coverage (hands-on)
+        key_quotes:
+        - 'Headline (observed this run): "Apple Just Unveiled a Folding iPhone, and It Looks Good" - unqualified aesthetic praise in the headline'
+        - 'Listing excerpt (observed this run): "Apple has officially launched a foldable iPhone, and to no one''s surprise, it''s the most expensive iPhone yet. Wirecutter was on the ground in Cupertino, California, to report on Apple''s annual product-launch event on September 9, where the company also announced a revamped iPhone 18 Pro, plus new Apple Watches and AirPods."'
+        - 'Second Apple arm: "I Tried Apple''s New Foldable iPhone Duo. Here''s How It Compares." (byline Brenda Stolyar) - first-person hands-on register, tone +0.55 illustrative'
+        - 'Third same-writer Apple anchor (register context, not a scored arm): "The iPhone Air Is Apple''s Most Impressive Phone in Years. But Most People Shouldn''t Buy It." - standing enthusiasm register with a buy-skeptical kicker'
+        register_notes: 'Enthusiastic launch hands-on register across both Apple arms: headline aesthetic praise and first-person trial framing. The iPhone Air anchor shows the enthusiasm is a standing register, tempered by buy-skepticism.'
+        tone_score: 0.5
+        tone_basis: 'hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE (Apple arms +0.45 and +0.55 averaged)'
+        evidence_tier: 'search-excerpt-bounded per #503; titles/bylines/date from the Muck Rack Wirecutter journalist listing returned verbatim in the search Full-URL listings'
+        byline_attribution_urls:
+        - https://muckrack.com/bstoly/articles
+      asymmetry_scorer:
+        meta_arm_score: -0.45
+        apple_arm_avg: 0.5
+        illustrative_register_delta_apple_minus_meta: 0.95
+        delta_calc: '0.500 - (-0.450) = +0.950'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads; tones are illustrative only'
+        verdict: 'Within-journalist, within-employer register SPLIT: disappointed-dismissive Meta opinion register (-0.45) vs enthusiastic Apple launch hands-on register (+0.50 avg), +0.95 illustrative gap. Migration (WIRED/Advance to Wirecutter/NYT, circa May 2025) is career context, not the mechanism. NOT a falsification-family member. Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+      confounders:
+      - 'STRONG: Excerpt-bounded evidence - browser.open terminally failed this turn, so tones rest on headline+excerpt register reads (per #503), not full-text; a full-text read could reveal register details the listings hide.'
+      - 'STRONG: Story-type skew - the Meta arm is an opinion/eval piece while the Apple arms are launch-event hands-on coverage; launch pegs draw more positive registers by genre convention, so genre rather than entity may drive the gap.'
+      - 'MODERATE: The Meta piece date is not pinned in the Muck Rack listing while the Apple arms are dated Sep 10 2026; different news cycles may separate the arms.'
+      - 'MODERATE: n=1 Meta arm vs n=2 scored Apple arms; small-n, hypothesis-generating only.'
+      - 'WEAK: The Meta piece appears to evaluate pre-release or early-impression hardware ("sounded cool at first") while the Apple arms are hands-on with announced hardware; maturity-of-product may color the register.'
+      - 'WEAK: Wirecutter is a recommendations publication - both the Meta verdict and the Apple hands-on pieces are reader-service genres, which bounds but does not erase the story-type skew.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Stolyar''s Apple coverage is not uniformly soft - "The iPhone Air Is Apple''s Most Impressive Phone in Years. But Most People Shouldn''t Buy It." carries a buy-skeptical kicker, bounding uniform Apple-enthusiasm readings.'
+      - 'COUNTEREVIDENCE: The Meta headline''s "sounded cool at first" concedes initial enthusiasm; the disappointment is product-specific, not entity-general.'
+      - 'COUNTEREVIDENCE: Her WIRED-era pieces in the observed listing are commerce/deals register, not adversarial Meta coverage - no evidence the register traveled with her from WIRED/Advance.'
+      - 'COUNTEREVIDENCE: The +0.95 illustrative delta rests on hand-assigned n=1/n=2 excerpt scores with no calibrated noise band; it is hypothesis-generating only and sits outside any calibrated mechanism band.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      test_file: tests/test_type_b_788_brenda_stolyar_wired_to_wirecutter_meta_vs_apple_register_split_sep16_6am.py
