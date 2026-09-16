@@ -16248,6 +16248,108 @@ entities:
       - https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
       - https://www.cnn.com/2026/06/01/business/florida-sues-chatgpt-openai-sam-altman
       - https://www.cnn.com/2026/08/24/tech/openai-subpoena-hugging-face-attorney-general-alabama
+    paramount_wbd_tender_exchange_extension_sep18_2026:
+      mechanism_id: 705
+      iteration: 789
+      iteration_type: C
+      rotation: 'Type C'
+      type: 'financial_incentive_mapping'
+      date_analyzed: '2026-09-16'
+      discovery_date: '2026-09-16'
+      time_pdt: '07:00'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      deal_parties:
+        payer: 'Paramount Skydance Corporation (NASDAQ: PSKY)'
+        counterparty: 'WBD debt noteholders (Discovery Global Holdings Inc., formerly WarnerMedia Holdings Inc.; Discovery Communications LLC)'
+        target: 'Warner Bros. Discovery, Inc. (acquisition target; CNN parent)'
+      announcement:
+        form: 'PRNewswire press release carried by PR wires (chestercounty.com mirror crawled 2h pre-analysis)'
+        action: 'Expiration dates of previously announced tender offers and exchange offers extended to 5:00 p.m. New York City time on September 18, 2026, unless further extended'
+        settlement_timing: 'Settlement dates to occur promptly after expiration; currently anticipated in Q3 2026; Paramount anticipates further extensions aligning settlement with the acquisition closing date'
+      extension_chain:
+        count: 'Twelfth extension (this announcement)'
+        prior_extensions:
+        - '2026-06-12'
+        - '2026-06-26'
+        - '2026-07-13'
+        - '2026-07-17'
+        - '2026-07-24'
+        - '2026-07-31'
+        - '2026-08-07'
+        - '2026-08-17'
+        - '2026-08-24'
+        - '2026-08-31'
+        reading: 'Creditor process kept alive across a slipping close; routine for large pending acquisitions, not new economic substance by itself'
+      tender_figures:
+        as_of: '2026-09-04 5:00 p.m. NYC'
+        tender_offer_notes_pct: 66.28
+        exchange_offer_notes_pct: 75.31
+        basis: 'aggregate principal amount of the Existing Tender Offer Notes / Existing Exchange Offer Notes validly tendered'
+        disclaimer: 'Paramount does not view these figures to be representative of the final results; tenders withdrawable any time prior to expiration'
+      sec_filed_provisions:
+        filing: 'SEC Edgar tm2533570d52_exa5ab.htm (crawled 14h pre-analysis); amended tender offer exhibit'
+        framing: 'Paramount enhanced offer provides definitively superior value and certainty'
+        ticking_fee: 'Incremental cash consideration to WBD shareholders of $0.25 per share, equivalent to approximately $650 million cash value each quarter, for every quarter the transaction is not closed beyond December 31, 2026'
+        termination_fee_netflix: 'Paramount will fund the payment of the $2.8 billion termination fee due to Netflix concurrent with termination of the Netflix agreement, per the revised proposed merger agreement filed with the amended tender offer'
+        debt_exchange_backstop: 'Paramount will eliminate WBD potential $1.5 billion financing cost associated with its debt exchange offer by fully backstopping an exchange offer relieving WBD of contractual bondholder obligations; Paramount will fully reimburse WBD shareholders for the $1.5 billion fee, without reduction to the separate $5.8 billion reverse termination fee, in the unlikely event the exchange is not successful and the Paramount transaction does not close'
+        bridge_loan: 'If WBD financing sources will not extend the maturity of WBD existing $15 billion bridge loan, Paramount debt financing sources are fully prepared to do so with incremental costs covered by Paramount; alternatively Paramount permits WBD to structure permanent financing redeemable at commercially reasonable cost'
+        interim_covenants: 'Paramount will provide WBD flexibility between signing and closing, including matching comparable Netflix interim operating covenants'
+      mediascope_linkage:
+        extends_mechanism_124: 'Extends mechanism 124 (WBD quad-tech financial architecture, Aug 15 2026) and its paramount_merger sub-key (status pending_litigation, $110B deal value): the tender/exchange extension plus SEC-filed enhanced provisions are the deal-protection layer determining timing and certainty of the acquisition through which the publisher-side financial map resolves'
+        advance_liquidity: 'Corpus (wired.yaml) documents Advance Publications holding ~98M WBD shares worth ~$2.94B at Paramount $30/share tender - the Conde Nast owner largest single liquidity event; the ticking fee, termination fee, exchange backstop, and bridge-loan provisions are the financial machinery setting whether and when Advance gets paid'
+        creditor_confidence: 'The 66.28%/75.31% tendered figures are a creditor-confidence measurement on the deal; the Paramount disclaimer bounds their predictive value'
+        cnn_newsroom_distance: 'Coverage incentives flow through the CNN newsroom, several removes from Paramount debt-exchange mechanics - long causal chain, mapped not proven'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'Routine deal mechanics: twelve extensions is normal for a large acquisition awaiting regulatory close; the extension itself carries no new economic substance'
+      - rank: 2
+        strength: strong
+        confounder: 'Provision vintage: the ticking-fee and termination-fee provisions trace to the February 2026 revised offer (thewrap/latestly coverage); the SEC filing may restate rather than newly create them'
+      - rank: 3
+        strength: moderate
+        confounder: 'Paramount explicitly disclaims the tender figures as representative of final results; participation is withdrawable until expiration'
+      - rank: 4
+        strength: moderate
+        confounder: 'Long causal chain from Paramount debt-exchange mechanics to CNN newsroom coverage decisions; several corporate removes'
+      - rank: 5
+        strength: weak
+        confounder: 'Ticking-fee trigger discrepancy across sources (Sep 30 in Feb 2026 press vs Dec 31 2026 in the current SEC filing) suggests provision evolution not fully pinned down excerpt-bounded'
+      statistical_discipline:
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      falsification_family: 'NOT a member - qualitative financial mapping only; no coverage-tone claim made; ledger holds at 26'
+      novelty_verification:
+      - 'Zero test_type_c_789 files on disk pre-commit (glob verified)'
+      - 'No Type C #789 in git log pre-commit (--grep verified)'
+      - 'SEC Edgar tm2533570d52_exa5ab.htm URL zero-hit repo-wide pre-commit (git grep verified)'
+      - 'PRNewswire chestercounty.com 6aa007b706b0f49a92996b51 URL zero-hit repo-wide pre-commit (git grep verified)'
+      - 'September 18 2026 tender/exchange extension zero-hit repo-wide pre-commit (git grep verified)'
+      - 'Tender figures 66.28 and 75.31 zero-hit repo-wide pre-commit (git grep verified)'
+      - 'Zero underscore-form 705 mechanism key strings repo-wide pre-commit (sweep-instrument carriers excluded per #715; the #788 file carries the forward 705 sweep by concatenation)'
+      - 'Max numeric mechanism_id 704 pre-commit (#788)'
+      - 'FIRST dedicated Paramount-WBD tender/exchange-offer extension mechanism in the corpus'
+      research_method: '5 browser.search query sets this run: (1) AI publisher licensing deal announced September 2026 - surfaced Bloomberg Law Anthropic settlement bar piece and TechCrunch Sep 6 author-publisher claims fight (corpus-saturated, competitor-entities.yaml:5683-5721) plus GSA token-based OneGov OpenAI pricing (Sep 10, government procurement not publisher financial relationship, deferred); (2) Paramount Warner Bros Discovery bidding offer extended September 2026 - thewrap Feb 2026 bid history and Feb 2026 Netflix exit (covered), barchart Aug 2026 prior-extension notice; (3) Paramount tender offer exchange offer WBD extension September 18 2026 - SELECTED the PRNewswire Sep 18 extension (crawled 2h) and SEC Edgar enhanced provisions (crawled 14h); (4) Anthropic $1.5B settlement publisher claims HarperCollins - TechCrunch Sep 6 Anthony Ha piece fully mapped in corpus, PW HarperCollins unnamed-tech $5,000/book deal covered (m594/m524 context), deferred; (5) OpenAI licensing deal publisher September 2026 - FourWeekMBA India attribution deals (covered #709/#739/#759), Bloomberg Law Dotdash Meredith/News Corp/Atlantic/Vox pieces are 2024 first-gen deals (covered #534/#504/#499/#519), no new Sep 2026 deals. Search-excerpt-bounded per #503 (0 browser.open first-hand reads this run). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps: zero test_type_c_789 files (glob); no Type C #789 in git log (--grep); SEC Edgar URL zero-hit; PRNewswire URL zero-hit; September 18 extension zero-hit; 66.28/75.31 zero-hit; zero underscore-form 705 keys; max numeric mechanism_id 704. No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+      source_urls:
+      - 'https://pr.chestercounty.com/article/Paramount-Skydance-Corporation-Announces-Extension-of-Expiration-Dates-of-Previously-Announced-Exchange-Offers-and-Tender-Offers/6aa007b706b0f49a92996b51'
+      - 'https://www.sec.gov/Archives/edgar/data/1437107/000110465926012397/tm2533570d52_exa5ab.htm'
+      watch_items:
+      - 'Closing date: whether the acquisition closes in Q3 2026 as anticipated or extends further, resetting the extension chain'
+      - 'Tender final figures: final participation vs the Sep 4 66.28%/75.31% interim figures'
+      - 'Advance WBD exit: whether Advance realizes the ~$2.94B corpus-documented position on close'
+      - 'CNN coverage: whether the ownership resolution changes the m124 financial-incentive hierarchy'
+      caution: 'Structural mapping only. Documents the Paramount-WBD tender/exchange-offer extension to September 18 2026, the Sep 4 creditor-confidence figures, and the SEC-filed enhanced deal-protection provisions. No coverage-tone claim is made. Correlation is not causation.'
   yahoo_apollo:
     display_name: Yahoo (Apollo Global Management)
     aliases:
