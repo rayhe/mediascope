@@ -66,7 +66,7 @@ NEXT_ID_MARKER = "mechanism" + "_705"
 NEXT_ID_NUMERIC = "mechanism_id: 705"
 # Patched to the real main-commit hash in the anchor followup (post-commit);
 # pre-commit this is the placeholder from the #565 convention.
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "c0e7f4d9ade61774f020b5199ba17a1ae669075c"
 
 
 def _repo_grep(needle, roots=("profiles", "tests", "docs")):
