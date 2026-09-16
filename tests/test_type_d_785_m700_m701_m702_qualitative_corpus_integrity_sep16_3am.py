@@ -93,7 +93,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "275d1148835602f83ed98aee0f6ac182b756fa3e"
 
 M700_KEY = (
     "le_monde_anthropic_slowdown_week_register_set_vs_meta_tobacco_"
