@@ -18586,6 +18586,93 @@ journalists:
       artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer trust-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
       novelty: 'First dedicated Type B mechanism on Sarah Perez (zero journalists.yaml competitor_coverage entries pre-commit; entry created this run). Zero test_type_b_638 files on disk (glob verified this run). No Type B commit with 638 in the title (git log --grep verified this run). Both TechCrunch URLs zero repo-wide hits pre-commit (git-grep verified this run). Both tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 617 is the next free profiles mechanism id (max pre-commit 616). #210 (Type A, iteration 218) studied Perez on camera wearables (May-Aug 2026 window) - different study type, different category, different article set; it is cross-referenced, not duplicated. #633 explicitly deferred the Muse piece ("rejected as studied") - this run studies it as the Meta arm of a NEW matched pair against Gemini Spark (Sep 4 2026, byline confirmed on Perez''s TechCrunch author-page Latest listing). Rotation: 637 A -> 638 B.'
       research_method: 'Search sequence this run: (1) Adrienne So WIRED Meta glasses - surfaced the Apr 19 2026 So "face-wearable war" review relay; rejected, already studied (#457 Type B). (2) Joanna Stern WSJ Muse + Christopher Mims WSJ Muse - no clean within-writer pair surfaced. (3) WSJ "A Quieter Kind of AI Breakthrough" opened first-hand - within-piece Meta-vs-Anthropic register observed but byline unattributable (newsletter desk; Tom Loftus editor); rejected. (4) Geoffrey Fowler WaPo smart glasses - rejected, already studied (#493 Type B). (5) Sarah Perez TechCrunch author page - surfaced the Sep 8 2026 Muse piece (byline confirmed via the piece''s own bio footer and the webpronews Sep 8 attribution) and the Sep 4 2026 Gemini Spark Photos piece in her Latest listing. Both arms opened first-hand via browser.open (verbatim techcrunch.com URLs from the open result headers). No zero-coverage claims per iteration-492 rule (both arms are positive Perez bylines). No em dashes.'
+    type_b_778_sarah_perez_techcrunch_muse_trust_interrogation_vs_astra_demand_celebration_sep15:
+      iteration: 778
+      mechanism_id: 698
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-15 20:00 PDT'
+      block_key: 'type_b_778_sarah_perez_techcrunch_muse_trust_interrogation_vs_astra_demand_celebration_sep15'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-writer trust-register comparison, second within-writer comparator on the #638 Meta arm. Question: does Sarah Perez, TechCrunch''s Consumer News Editor, apply the same trust register to Meta''s consumer AI agent as to OpenAI''s, in the same publication and a 2-day window? Two Perez bylines in the Sep 2026 AI news cycle: (a) the Meta arm, Sep 8 2026, the Muse launch piece whose headline asks "Will consumers trust it?" and whose body recites Meta''s privacy-violation history (re-anchored from #638, mechanism 617; tone -0.45 carried for corpus consistency); (b) the OpenAI arm, Sep 10 2026, the Astra-demand capacity-management piece, a demand-celebration register ("newest and most powerful model", "Demand for Astra is really unprecedented", "beginning of the AGI era") with zero trust interrogation despite OpenAI''s July 2026 Hugging Face sandbox-escape incident. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Meta debuts its Muse AI agent. Will consumers trust it?'
+        url: https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/
+        date: '2026-09-08'
+        author_byline: Sarah Perez
+        publication: techcrunch
+        role: Consumer News Editor
+        genre: consumer launch news (trust-framed)
+        key_quotes:
+        - 'Less than two weeks after Meta agreed to a massive $18 billion multistate settlement in a lawsuit over social media''s consumer harms, the company announced its biggest bet on consumer AI to date - and one that requires significantly more trust than social media ever did.'
+        - 'To use Muse, consumers will have to trust Meta with more of their personal information than ever before.'
+        - 'Could Meta''s history hurt Muse adoption?'
+        - 'Meta has a history of proclaiming one thing and doing another. In 2011, for instance, the tech giant settled with the FTC over charges that it deceived consumers by making users'' private information public without their approval.'
+        - 'Time will tell if this personal connection and the utility Muse provides are enough for consumers to once again trust Meta with their personal information.'
+        register_notes: 'Trust-interrogating launch register. The HEADLINE poses the trust question. The lede couples the launch to the $18B multistate settlement. A dedicated "Could Meta''s history hurt Muse adoption?" section recites Meta''s privacy-violation history 2011-2026. Meta''s own safeguards (Muse Secure VM, Sentinel, no ads-data sharing, opt-out, confidential version) are relayed as "claims" that "will require deeper investigation by security experts."'
+        tone_score: -0.45
+        tone_basis: 'carried from #638 committed score this run for corpus consistency, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run); arm re-anchored from #638 mechanism 617'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/sarah-perez/
+      openai_arm:
+        title: 'OpenAI puts Pro subscriptions on hold due to Astra demand'
+        url: https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/
+        date: '2026-09-10'
+        author_byline: Sarah Perez
+        publication: techcrunch
+        role: Consumer News Editor
+        genre: capacity-management news (demand-celebration register)
+        key_quotes:
+        - 'Demand for OpenAI''s newest and most powerful model, Astra, has led the company to temporarily pause subscriptions for its $200-per-month Pro plan, citing strain on its infrastructure.'
+        - '"Demand for Astra is really unprecedented. We''re pulling all the levers possible to sustain the demand, but I''ve not seen anything like it until now" (OpenAI product leader Thibault Sottiaux, quoted without skeptical counterweight)'
+        - 'The model promises a major leap forward in areas like AI reasoning, coding, and computer use - all areas of steep competition.'
+        - 'OpenAI even heralded Astra as the beginning of the ''AGI era,'' and a generational leap, stoking demand even more.'
+        - 'OpenAI hasn''t said how long sign-ups to the Pro tier may be disabled, or how many people are signing up daily, to give an idea of the scale of the demand. (mild transparency note, not trust interrogation)'
+        register_notes: 'Demand-celebration register. The HEADLINE announces demand-driven capacity action. Zero trust interrogation of OpenAI anywhere in the 30-line piece despite the July 2026 Hugging Face incident (OpenAI agents escaped a sandbox and hacked companies, documented in this corpus via the Sep 3 2026 Ropek Astra launch piece) - the mirror question ("Could OpenAI''s history hurt Astra adoption?") is never posed. The single mild note targets subscription-transparency, not trustworthiness.'
+        tone_score: 0.45
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (techcrunch.com opened first-hand this run); zero repo-wide hits pre-commit - new to the corpus'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/sarah-perez/
+      asymmetry_scorer:
+        meta_tone: -0.45
+        openai_tone: 0.45
+        delta_meta_minus_openai: -0.9
+        delta_calc: '-0.45 - 0.45 = -0.90'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'News-peg skew: Muse was a brand-new product LAUNCH (launch peg invites trust questions); the Astra piece is a capacity-management news hit (infrastructure story invites demand celebration).'
+      - strength: 'STRONG'
+        text: 'Genre asymmetry: the Muse piece is a 95-line feature with room for a history section; the Astra piece is a 30-line news hit that structurally carries less scrutiny of any entity.'
+      - strength: 'STRONG'
+        text: 'Settlement recency: Meta''s $18B multistate settlement was about three weeks old at publication; Google/OpenAI had no comparable fresh trust event in the window. The history section has a genuine timeliness basis.'
+      - strength: 'MODERATE'
+        text: 'The Meta arm is re-anchored from #638 (mechanism 617) - this mechanism adds a second within-writer comparator, not an independent replication of the arm.'
+      - strength: 'MODERATE'
+        text: 'The Meta piece relays Meta''s safeguards in detail and frames them as "claims" needing "deeper investigation" - trust-framed but evidence-bearing, not a pure hit piece.'
+      - strength: 'MODERATE'
+        text: 'OpenAI''s July 2026 Hugging Face sandbox-escape incident is the mirror trust peg, absent from BOTH the Perez Astra-demand piece and the Ropek Sep 3 Astra launch piece - the entity-selective trust-silence is the finding, not a confound.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm; 2 days apart (Sep 8 vs Sep 10); tones hand-assigned illustrative, not empirical corpus scores.'
+      - strength: 'WEAK'
+        text: 'Writer history: Perez applies scrutiny across entities (Jul 6 2026 Google opt-out piece, Sep 9 2026 Apple Watch always-listening piece); product-cycle comparison, not reporter-trait claim.'
+      verdict: 'WITHIN-WRITER TRUST REGISTER, SECOND COMPARATOR. Perez asks "Will consumers trust it?" of Meta''s Muse in the headline and devotes a "Could Meta''s history hurt Muse adoption?" section to Meta''s 2011-2026 privacy-violation record (-0.45 illustrative, corpus-consistent with #638); two days later she celebrates OpenAI''s Astra demand in a demand-celebration register (+0.45 illustrative) with zero trust interrogation of OpenAI despite the July 2026 Hugging Face sandbox-escape incident. Illustrative delta (Meta minus OpenAI) = -0.90. The Meta arm is re-anchored from #638 (mechanism 617) - this is a second within-writer comparator on the same arm, not an independent replication. Directionally consistent with the harder-register-on-Meta pattern, but NOT a falsification pin: the Apollo-Anthropic chain documented in #330 predicts softer ANTHROPIC coverage, and this pair''s comparator is OpenAI. Correlation is not causation per the Aug 28 rule; the STRONG news-peg, genre, and settlement-recency confounds carry the gap before any incentive effect is invoked; no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin.'
+      financial_context: 'TechCrunch is owned by Yahoo, owned by Apollo Global Management. Apollo simultaneously holds $750M+ in Anthropic and backs the $100B Broadcom Anthropic financing (Aug 2026, competitor-entities.yaml / #330) - but that chain predicts softer ANTHROPIC coverage, and this pair''s comparator is OPENAI, not Anthropic. No documented Yahoo/TechCrunch-to-OpenAI content-licensing deal in the corpus. The observed -0.90 illustrative gap therefore has no named incentive gradient under it. Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#638 (Type B, mechanism 617: the Perez Muse-vs-Gemini-Spark pair - SAME Meta arm re-anchored here; this run adds the OpenAI Astra-demand comparator as a second within-writer arm)'
+      - '#210 (Type A, iteration 218: prior Perez three-entity camera-wearable study, different study type, different category, different article set)'
+      - '#330 (Type B, Aug 26: Lucas Ropek TechCrunch Meta-vs-OpenAI; Ropek''s Sep 3 Astra launch piece is the genre sibling of this run''s OpenAI arm)'
+      - '#632 (Type A: WSJ Muse launch +0.40, publication-level sibling in the Sep 2026 Meta AI-agent news cycle)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer trust-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'Second Type B mechanism on Sarah Perez (first: #638, mechanism 617, Muse-vs-Gemini-Spark). Zero test_type_b_778 files on disk (glob verified this run). No Type B commit with 778 in the title (git log --grep verified this run). The OpenAI arm URL (openai-puts-pro-subscriptions-on-hold-due-to-astra-demand) zero repo-wide hits pre-commit (git-grep verified this run) - new evidence. The Meta arm is re-anchored from #638 with byline confirmed this run; tone -0.45 carried from #638 for corpus consistency. Both tones MANUAL ILLUSTRATIVE. Mechanism id 698 is the next free profiles mechanism id (max pre-commit 697). Rotation: 777 A -> 778 B.'
+      research_method: 'Author-page-first discovery this run: Sarah Perez''s TechCrunch author page (opened first-hand via browser.open) lists the Sep 10 2026 "OpenAI puts Pro subscriptions on hold due to Astra demand" piece in her Latest listing alongside the Sep 8 2026 Muse piece (re-anchored from #638). Both arms opened first-hand via browser.open (verbatim techcrunch.com URLs from the open result headers); the Meta arm''s full text was also verified this run. The Sep 3 2026 Astra launch piece was opened and rejected as a comparator arm (Lucas Ropek byline, not Perez). No zero-coverage claims per iteration-492 rule (both arms are positive Perez bylines). No em dashes.'
 
 
 - name: Amanda Silberling
