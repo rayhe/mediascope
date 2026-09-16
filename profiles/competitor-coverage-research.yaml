@@ -38000,6 +38000,189 @@ publications:
     - mechanism_id: 697
       description: MarketWatch x OpenAI slowdown-week register set (same news week,
         register-selection dominance analogue)
+  politico_openai_slowdown_week_scoop_channel_symmetry_sep16:
+    mechanism_id: 703
+    iteration: 787
+    iteration_type: A
+    type: competitor_coverage_deep_dive
+    date: '2026-09-16'
+    date_analyzed: '2026-09-16'
+    time_pdt: '05:00'
+    publication: Politico (Axel Springer)
+    entity: OpenAI
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    title: 'Politico x OpenAI Slowdown-Week Scoop Channel: Frontier-Lab Regulatory
+      Pivots First-Reported Symmetrically for Payer (OpenAI) and Non-Payer (Anthropic)'
+    description: 'First dedicated Politico x OpenAI mechanism. Politico''s AI-policy
+      vertical functions as the frontier labs'' preferred leak/scoop channel for
+      pro-regulation pivots, and scoop access is SYMMETRIC across payer status.
+      Arm 1 (Sep 15 2026): OpenAI endorses three bipartisan bills (Web of Biological
+      Data Act, AI-Ready Bio-Data Standards Act, Scale Biology Act) plus the FRONTIER
+      Act independent-evaluator (IVO) provision; Reuters reports "Politico earlier
+      reported the endorsements" and PANews attributes the FRONTIER Act support to
+      Politico ("According to Politico, artificial intelligence giant OpenAI supports
+      a bipartisan U.S. House proposal", Obernolte/Trahan bill, IVOs inside the
+      leading labs). Arm 2 (Aug 2026, carried via Sep 10 techtimes): "Anthropic''s
+      endorsement of the bills was first reported by Politico in August 2026" - the
+      SAME first-report treatment for the lab with NO documented Axel Springer AI
+      licensing deal. Both arms carry the labs'' chosen regulatory narratives in a
+      neutral policy-process register (MANUAL ILLUSTRATIVE +0.05 each; OpenAI arm
+      avg +0.05). The financial tie is real and near-term material: OpenAI x Axel
+      Springer, Dec 13 2023, 3-year, tens of millions EUR across the deal per
+      Bloomberg Law source-familiar, Politico content included (mechanism 597,
+      #604), renewal UNRESOLVED with ~Dec 2026 expiry; plus Microsoft x Axel
+      Springer Apr 29 2024 expanded strategic partnership (Politico integrates
+      Microsoft Advertising; four commercial channels), making Axel Springer a
+      DUAL-AI-PAYER owner. The uniform financial-incentive prediction (the deal
+      buys preferential narrative carriage for OpenAI) is NOT supported on the
+      observed arms: non-payer Anthropic received identical scoop treatment. The
+      observed pattern is beat-driven (Politico''s AI-policy vertical exists to
+      break policy news) and lab-driven (both labs strategically leak to Politico).
+      Meta comparator: bounded absence (iteration-492) - zero verbatim Politico x
+      Meta URLs in this run''s 5 query sets; zero dedicated Politico x Meta blocks
+      in the corpus; the only Politico-Meta-adjacent signal is EU competition chief
+      Teresa Ribera quoted "told Politico" on US/EU antitrust consistency (CEPA,
+      Politico as interview venue on the enforcement beat, not a dedicated Meta
+      article). Tension note: Politico is BOTH an OpenAI licensee (Dec 2023) AND a
+      plaintiff in the News/Media Alliance-organized Cohere copyright suit
+      (competitor-entities.yaml line 2701) - license-one-channel, sue-another,
+      mirroring the m663/m684 sign-one-sue-other bifurcation one level down.
+      Extends m700''s payer-status inversion and m697''s register-selection
+      dominance to the scoop-access margin. NOT a falsification-family member:
+      scoop-access documentation, not a uniform-prediction test. Ledger holds at
+      26. NOT artifact-grade. Correlation is not causation.
+
+      '
+    novelty_verification: 'Zero test_type_a_787 files on disk pre-commit (glob); no
+      "Type A #787" in git log pre-commit; zero dedicated politico_x_openai /
+      politico_openai mechanism keys repo-wide pre-commit; the Reuters Sep 15 2026
+      URL (openai-backs-bills-us-congress-ai-biological-weapon-threats-2026-09-15)
+      zero-hit repo-wide pre-commit; the techtimes URL
+      (california-signs-first-us-ai-audit-law) zero-hit repo-wide pre-commit; max
+      numeric mechanism_id 702 pre-commit; zero underscore-form 703 mechanism key
+      substrings repo-wide pre-commit.
+
+      '
+    research_method: 'Evidence search-excerpt-bounded per #503. 5 browser.search
+      query sets (Politico OpenAI AI slowdown Amodei Sep 2026; Politico Meta
+      antitrust AI Sep 2026; site politico.com OpenAI AI safety Sep 2026; site
+      politico.com Meta antitrust Sep 2026; Politico OpenAI FRONTIER Act Lehane
+      endorsements Sep 2026; Politico Axel Springer OpenAI licensing renewal Dec
+      2026; politico.com Meta EU fine DMA Zuckerberg Sep 2026), 0 browser.open
+      attempts. All anchor URLs verbatim from search Full-URL listings; no
+      canonical URLs constructed. Excerpts quoted from search-result text.
+      ASCII-only, no em dashes.
+
+      '
+    arms:
+      arm1_openai_bill_endorsements_politico_scoop:
+        title: 'OpenAI backs bills in US Congress on AI and biological weapon threats
+          (Politico earlier reported the endorsements)'
+        date: '2026-09-15'
+        outlet_role: Politico as scoop source; relay via Reuters
+        url: https://www.reuters.com/technology/openai-backs-bills-us-congress-ai-biological-weapon-threats-2026-09-15/
+        url_status: verbatim_from_search_full_url_listing
+        register: policy_process_scoop_transmission
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        corroboration_url: https://www.panews.io/articles/01a0a554-a11c-74b5-89d5-bfe8dda288d4
+        excerpts:
+        - 'The ChatGPT-maker is endorsing the Web of Biological Data Act, the
+          AI-Ready Bio-Data Standards Act and the Scale Biology Act, the
+          spokesperson said. Politico earlier reported the endorsements.'
+        - 'OpenAI is also backing a key provision of the FRONTIER Act that requires
+          leading AI companies to embed independent evaluators to assess the safety
+          of their models, the spokesperson said.'
+        - 'According to Politico, artificial intelligence giant OpenAI supports a
+          bipartisan U.S. House proposal that would require top AI companies to
+          bring in external evaluators to ensure the safety of their models. (PANews,
+          FRONTIER Act, Obernolte/Trahan)'
+        entity_target: OpenAI (the payer; Politico transmits the lab''s chosen
+          regulatory narrative)
+      arm2_anthropic_endorsement_first_reported_politico:
+        title: 'Anthropic California bill endorsement first reported by Politico
+          (Aug 2026)'
+        date: '2026-08'
+        outlet_role: Politico as first-report source; relay via techtimes
+        url: https://www.techtimes.com/articles/327159/20260910/california-signs-first-us-ai-audit-law-frontier-labs-hiring-tools-now-scope.htm
+        url_status: verbatim_from_search_full_url_listing
+        register: policy_process_scoop_transmission
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        excerpts:
+        - 'Anthropic''s endorsement of the bills was first reported by Politico in
+          August 2026.'
+        - '"Some of these bills we did not endorse in the past, and are now
+          supporting after reconsidering in light of the recent jump in capabilities
+          we have seen," OpenAI said in a statement by Chris Lehane.'
+        entity_target: Anthropic (the NON-payer; identical first-report treatment)
+    meta_comparator:
+      status: bounded_absence_iteration_492
+      note: 'Zero verbatim Politico x Meta URLs surfaced in this run''s query sets;
+        zero dedicated Politico x Meta blocks in the corpus. Only Politico-Meta-adjacent
+        signal: EU competition chief Teresa Ribera quoted "told Politico" on US/EU
+        antitrust consistency (https://cepa.org/article/us-courts-emerge-as-techs-sheriff/)
+        - Politico as interview venue on the enforcement beat (Meta is the
+        enforcement subject), not a dedicated Meta article.'
+    openai_arm_scores: [0.05, 0.05]
+    openai_arm_avg: 0.05
+    scoop_symmetry: 'Payer (OpenAI, Dec 2023 licensee): scoop-reported Sep 15 2026.
+      Non-payer (Anthropic, no documented Axel Springer AI deal): first-reported
+      Aug 2026. Identical policy-process register on both arms (+0.05 each). Scoop
+      access is NOT payer-selective on the observed arms.'
+    verdict: directionally_supported_not_proven
+    incentive_attribution: 'Scoop access selected by beat and lab strategy, not by
+      payer status. INCONCLUSIVE for any directional incentive claim: the outlet
+      whose parent is an OpenAI licensee gives the non-payer lab the identical
+      first-report treatment. Correlation is not causation.'
+    confounders_ranked:
+      strong:
+      - 'Scoop-as-beat convention: Politico''s AI-policy vertical exists to break
+        policy news; both labs leak there by strategy, and first-reporting an
+        endorsement is neutral process journalism, not endorsement.'
+      - 'Excerpt-bounded evidence (no first-hand Politico reads; Politico pieces
+        sit behind paywall/newsletter walls); the scoop claims rest on second-hand
+        attribution ("Politico earlier reported") in Reuters, PANews, techtimes.'
+      - 'Meta-arm bounded absence: no verbatim Politico x Meta URL this run, so no
+        within-outlet Meta register comparison is asserted.'
+      moderate:
+      - 'The Aug 2026 Anthropic scoop predates the slowdown week (different news
+        peg, California bills vs federal FRONTIER Act); symmetry is across
+        different legislative targets.'
+      - 'Anthropic x Axel Springer tie status is a bounded absence, not a proven
+        zero; a non-AI financial link cannot be ruled out from excerpts.'
+      weak:
+      - 'Politico US vs Politico Europe editions may carry different registers;
+        the Ribera quote is EU-facing while the scoop arms are US-policy.'
+    counter_evidence:
+    - 'The Washington Examiner''s "OpenAI throws its weight behind FRONTIER Act"
+      frames the same endorsement as lobbying pressure, bounding any
+      uniformly-constructive reading of the endorsement coverage.'
+    - 'Gizmodo''s tri-lab safety-coordination piece carries an "Antitrust Concerns
+      Mount" adversarial overlay, bounding any uniformly-soft reading of
+      slowdown-week payer coverage.'
+    - 'Politico is a plaintiff in the News/Media Alliance-organized Cohere
+      copyright suit while licensing content to OpenAI - the outlet litigates
+      against AI companies on one channel and licenses to them on another.'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95
+      NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT
+      run. Verdict directionally_supported_not_proven. no_analysis_json_update: true.
+      NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: scoop-access
+      documentation, not a uniform-prediction test. Ledger holds at 26.'
+    test_file: tests/test_type_a_787_politico_openai_slowdown_week_scoop_channel_sep16_5am.py
+    cross_references:
+    - mechanism_id: 597
+      description: OpenAI x Axel Springer 3-year licensing deal Dec 13 2023
+        (Politico content included; renewal unresolved, ~Dec 2026 expiry; #604)
+    - mechanism_id: 604
+      description: Axel Springer dual-AI-payer architecture (OpenAI + Microsoft
+        four-channel partnership Apr 29 2024; #604 Type C)
+    - mechanism_id: 700
+      description: Le Monde x Anthropic slowdown-week register set (same news
+        week; payer-status inversion analogue)
+    - mechanism_id: 697
+      description: MarketWatch x OpenAI slowdown-week register set (same news
+        week; register-selection dominance analogue)
   fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient:
     mechanism_id: 324
     type: podcast_sentiment_tracking
