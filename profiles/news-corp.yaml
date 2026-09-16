@@ -662,6 +662,123 @@ competitor_relationships:
       novelty: 'Zero test_type_a_762 files on disk pre-commit; no "Type A #762" in git log pre-commit; the unity-piece URL (a4267b56) carried from #742 (m679) by design - NOT claimed novel; the unity_consensus_statesman_framing register string zero-hit repo-wide pre-commit; the 4 corroborating URLs (Reuters doom-fears explainer, USA Today pace-frontier-regulation, Barron''s anthropic-ceo-ai-slowdown-letter, TechCrunch ill-advised-IPO) zero-hit repo-wide pre-commit; the Reuters IPO piece already in corpus (3 hits) carried by design; max numeric mechanism_id 688 pre-commit; zero underscore-form 689 mechanism key strings repo-wide pre-commit (excluding the #760 sweep-instrument carrier test names per the #715 pattern-rescope lesson).'
       no_analysis_json_update: true
       correlation_not_causation: true
+    marketwatch_openai_ipo_delay_oracle_boost_doomsday_market_register_sep15:
+      mechanism_id: 697
+      iteration: 777
+      iteration_type: "A"
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-15'
+      time_pdt: '19:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      incentive_attribution: "DIRECTIONALLY CONSISTENT but INCONCLUSIVE: MarketWatch's OpenAI slowdown-week register set averages +0.05 (MANUAL ILLUSTRATIVE) while the carried MarketWatch x Meta register (m229) sits at -0.55 adversarial, a +0.60 illustrative gap in the direction the incentive hypothesis predicts (OpenAI's News Corp licensing leg is 26+ months old, May 2024; Meta's leg is 6 months old, Mar 2026). But the genre confounds are STRONG: MarketWatch is a financial publication; the aspirational arm is an equity-market piece about Oracle (OpenAI is the catalyst, not the subject); the near-neutral arm is a CEO-quote relay; the mild-negative arm targets the FEAR as a market event, not OpenAI. The IPO piece's own Opinion sidebar ('Would you buy stock in a company whose own scientists think the product might kill you?') runs HARDER than the news arms - a within-publication register boundary against uniform-softening readings. m229's culture-lag confounder (adversarial Meta framing persisted AFTER the Mar 2026 Meta deal) bounds capture claims in the other direction. Correlation is not causation."
+      mechanism_name: 'MarketWatch x OpenAI Slowdown-Week Register Set (Sep 8-15 2026) - IPO-Delay Safety Relay, Oracle-Ecosystem Aspirational Boost, Doomsday-Fears Market-Headwind Framing vs MarketWatch x Meta Adversarial Success-Dismissal (m229)'
+      key_design_note: 'Descriptive block key carries no underscore-form 697 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the #774/#775 zero-697 profile sweep instruments green while mechanism_id advances in colon form. All three anchor URLs are novel this run (zero-hit repo-wide pre-commit); the novelty is the FIRST dedicated MarketWatch x OpenAI mechanism, not any single URL.'
+      overview: 'MarketWatch (Dow Jones/News Corp) published three OpenAI-touching pieces in the Sep 8-15 2026 slowdown window. (1) Sep 13: "Why OpenAI''s Sam Altman says an IPO isn''t in the cards this year" - a constructive CEO-framing relay of Altman''s Fortune interview ("ill-advised moment to go public", "we don''t feel pressure"), lede carries "backlash swells" context but the body relays the company''s preferred safety frame; the piece notes OpenAI "didn''t immediately respond to a MarketWatch request for further comment" (standard). MANUAL ILLUSTRATIVE -0.05, near-neutral relay. (2) Sep 8: "Oracle''s stock gets a boost as the OpenAI ecosystem comes back into favor" - aspirational/bullish: "retaking the crown", "turning things around", Astra "ahead of Fable on multiple benchmarks", "complete ability to operate a computer"; Morningstar analyst Luke Yang bullish on Oracle''s OpenAI backlog. MANUAL ILLUSTRATIVE +0.30. (3) Sep 14/15: "AI doomsday fears are arriving at the worst possible time for the stock market" - the safety slowdown framed as a MARKET PROBLEM ("worst possible time for the stock market", "troubling time for investors"); doomsday fears "are arriving" (externalized); Altman "have said they agree" relayed neutrally. MANUAL ILLUSTRATIVE -0.10, mild adversarial toward the FEAR, not the company. OpenAI avg +0.05 vs carried MarketWatch x Meta register -0.55 (m229: "No one really wants Meta glasses" vs 84% market share; "impressed investors - but 3 things stop them from going mainstream"). Illustrative gap +0.60, OpenAI softer.'
+      articles_this_run:
+        - title: 'Why OpenAI''s Sam Altman says an IPO isn''t in the cards this year'
+          publication: MarketWatch
+          date: '2026-09-13'
+          date_basis: 'search recency stamp (2 days before Sep 15 2026)'
+          url: 'https://www.marketwatch.com/story/why-openais-sam-altman-says-an-ipo-isnt-in-the-cards-this-year-229de89c'
+          url_status: 'novel this run - URL slug 229de89c zero-hit repo-wide pre-commit'
+          register: 'constructive_ceo_framing_relay'
+          tone_MANUAL_ILLUSTRATIVE: -0.05
+          tone_basis: 'Hand-assigned from 8+ rendered search-excerpt lines (excerpt-bounded per #503; the piece was NOT read first-hand - no browser.open attempted this run). The lede carries mild adversarial context ("As backlash swells against artificial-intelligence companies") but the body is a straight relay of Altman''s Fortune interview framing (safety as the reason, "ill-advised moment", "we don''t feel pressure"), ending with Altman on "meeting this moment of what is going to be required for safety and alignment".'
+          excerpts_verbatim:
+            - 'Why OpenAI''s Sam Altman says an IPO isn''t in the cards this year'
+            - 'As backlash swells against artificial-intelligence companies, the CEO of OpenAI says he won''t be testing the public markets this year.'
+            - '"Given everything happening with safety, right now would be an ill-advised moment to go public, and we don''t feel pressure on that," Sam Altman told Fortune in an interview on Friday that was published on Saturday.'
+            - 'He later expressed explicitly that he would not be targeting a 2026 initial public offering. OpenAI didn''t immediately respond to a MarketWatch request for further comment.'
+            - 'Altman noted in the Fortune interview that OpenAI would spend time "meeting this moment of what is going to be required for safety and alignment, and how the industry and governments can work together."'
+          register_boundary_note: 'The same page carries an Opinion sidebar link, "Opinion: Would you buy stock in a company whose own scientists think the product might kill you?" - a HARDER register exists on the same site (opinion desk, different genre). The news arm is softer than the site''s opinion arm: a within-publication register boundary.'
+        - title: 'Oracle''s stock gets a boost as the OpenAI ecosystem comes back into favor'
+          publication: MarketWatch
+          date: '2026-09-08'
+          date_basis: 'search recency stamp (7 days before Sep 15 2026)'
+          url: 'https://www.marketwatch.com/story/oracles-stock-gets-a-boost-as-the-openai-ecosystem-comes-back-into-favor-f53c8024'
+          url_status: 'novel this run - URL slug f53c8024 zero-hit repo-wide pre-commit (morningstar.com mirror in corpus; this marketwatch.com key is novel)'
+          register: 'aspirational_ecosystem_bullish'
+          tone_MANUAL_ILLUSTRATIVE: 0.30
+          tone_basis: 'Hand-assigned from 10+ rendered search-excerpt lines (excerpt-bounded per #503). "Retaking the crown", "turning things around", Astra "ahead of Fable on multiple benchmarks", "complete ability to operate a computer" - the ChatGPT creator is the comeback protagonist; Anthropic''s Fable is the benchmark foil. The subject is Oracle''s equity, but OpenAI is the positive catalyst throughout.'
+          excerpts_verbatim:
+            - 'Oracle''s stock gets a boost as the OpenAI ecosystem comes back into favor'
+            - 'Investors see Oracle''s fate as heavily tied to OpenAI''s, so it''s good news that the latest ChatGPT model seems to be resonating with users and technology experts.'
+            - 'OpenAI launched ChatGPT-6 Astra last week. The reception online suggests the ChatGPT creator is retaking the crown in an ever-evolving race to create the best artificial-intelligence models.'
+            - '"It looks like OpenAI is turning things around, and Astra is ahead of Fable on multiple benchmarks," Morningstar analyst Luke Yang told MarketWatch'
+            - 'While Astra is currently only available to a small group of users, if OpenAI can make a "breakthrough on the product front," that would drive up demand for computing power and push Oracle''s stock price up even further'
+            - 'OpenAI signed a contract with Oracle in September last year to buy $300 billion in computing power over five years'
+        - title: 'AI doomsday fears are arriving at the worst possible time for the stock market'
+          publication: MarketWatch
+          date: '2026-09-14'
+          date_basis: 'search recency stamp (21 hours before Sep 15 2026)'
+          url: 'https://www.marketwatch.com/story/ai-doomsday-fears-are-arriving-at-the-worst-possible-time-for-the-stock-market-75c4ad53'
+          url_status: 'novel this run - URL slug 75c4ad53 zero-hit repo-wide pre-commit'
+          register: 'safety_slowdown_as_market_headwind'
+          tone_MANUAL_ILLUSTRATIVE: -0.10
+          tone_basis: 'Hand-assigned from 8+ rendered search-excerpt lines (excerpt-bounded per #503). The safety slowdown is framed as an investor problem, not a warranted response: "worst possible time for the stock market", "troubling time for investors", "these fears are cropping up". Altman is relayed neutrally ("have said they agree"); the adversarial edge targets the FEAR as a market event.'
+          excerpts_verbatim:
+            - 'AI doomsday fears are arriving at the worst possible time for the stock market'
+            - 'The latest cracks in the artificial-intelligence trade are emerging at a particularly troubling time for investors.'
+            - 'Semiconductor stocks, industrials and other corners of the U.S. equity market closely associated with AI took a hit on Monday, after Anthropic CEO Dario Amodei warned in a blog post about the need to slow the pace of AI progress for safety reasons. Several other AI luminaries, including Tesla TSLA and SpaceX SPCX CEO Elon Musk and OpenAI CEO Sam Altman, have said they agree with Amodei''s concerns.'
+            - 'Last week, Anthropic employee Jacob Coxon said in a post on X that he had left the company because he felt that the headlong race to develop AI with the ability to improve itself could potentially threaten humanity if the proper guardrails weren''t put into place.'
+            - '"You have the 10-year [Treasury yield] at 5%, oil prices above $100 a barrel, and now these fears are cropping up," Singh told MarketWatch. "I think it''s very worrisome that this is all happening right now."'
+      articles_carried_meta_arm:
+        - title: 'Big tech is obsessed with smart glasses. Now it has to convince people to wear them'
+          mechanism: 229
+          publication: MarketWatch
+          date: '2025-09-19'
+          url: 'https://www.marketwatch.com/story/big-tech-is-obsessed-with-smart-glasses-now-it-has-to-convince-people-to-wear-them-0d5ebd43'
+          url_status: 'carried from m229 by design'
+          register: 'meta_success_dismissal_headline_template'
+          tone_MANUAL_ILLUSTRATIVE: -0.55
+          note: 'Carried at the m229 register value, no rescoring. "Impressed investors - but 3 things stop them from going mainstream" (success undermined); Jun 27 2026 followup: analyst says "No one really wants Meta glasses" DESPITE the same article acknowledging 84% market share (Counterpoint) and 7M+ units in 2025 - an INTERNAL data contradiction. Apple (Sep 20 2025, one day later) gets the inverted template: "scratches easily - but Wall Street analysts say it won''t hurt sales" (problem insulated).'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'openai'
+        peer_arm: 'marketwatch_meta_carried_m229'
+        openai_arm_scores: [-0.05, 0.30, -0.10]
+        openai_avg: 0.05
+        meta_arm_score: -0.55
+        delta: 0.60
+        delta_note: 'OpenAI avg +0.05 minus Meta arm -0.55 equals +0.60. Direction: MarketWatch runs SOFTER on OpenAI (the 26-month News Corp licensing payer, ~$50M/yr) than on Meta (the 6-month licensing payer, up to $50M/yr) by 0.60 on the illustrative scale. The gap is thesis-consistent in direction; n=3 vs n=1, hand-assigned, NOT empirical.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones (excerpt-bounded, 26+ rendered lines, 4 query sets) vs n=1 carried Meta arm at its m229 value, un-rescored. Engine NOT run. DO NOT claim empirical significance.'
+      finding: 'MarketWatch (Dow Jones/News Corp) runs a softer register on OpenAI than on Meta in the current window: the OpenAI slowdown-week set averages +0.05 (IPO-delay relay -0.05, Oracle-ecosystem boost +0.30, doomsday-as-market-headwind -0.10) while the carried MarketWatch x Meta register sits at -0.55 adversarial (m229: success dismissal, internal data contradiction). The illustrative gap is +0.60 in the direction the incentive hypothesis predicts, and it tracks deal seniority: OpenAI''s News Corp leg is 26+ months old (May 2024), Meta''s is 6 months old (Mar 2026). But the finding is bounded, not a falsification-family test: the aspirational arm is an Oracle equity story (OpenAI as catalyst), the near-neutral arm is a CEO-quote relay, and the mild-negative arm targets the fear as a market event - all structural to a financial publication. The within-publication register boundary (Opinion sidebar harder than the news arms) and m229''s culture-lag confounder (adversarial Meta framing persisted after the Meta deal) bound capture readings in both directions. NOT a falsification-family member - register documentation, not a uniform-prediction test. Ledger holds at 26. NOT artifact-grade. Correlation is not causation.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted.'
+      confounders_ranked:
+        strong:
+          - 'Excerpt-bounded read: none of the three pieces was read first-hand (no browser.open attempted this run; MarketWatch metered paywall); tones are hand-assigned from 26+ rendered search-excerpt lines, which skew toward the most quotable lines.'
+          - 'Financial-publication genre: MarketWatch covers markets; the aspirational arm is structurally an equity story (Oracle''s stock), the mild-negative arm is structurally a market-impact story. The bullish/bearish registers attach to the EQUITY thesis, not necessarily to OpenAI as an institution.'
+          - 'n=3 OpenAI arms vs n=1 carried Meta arm (m229, Jun 2026 and Sep 2025 pieces) - small, asymmetric samples; no empirical claim is licensed.'
+        moderate:
+          - 'The Oracle piece''s subject is Oracle, not OpenAI: OpenAI is the positive catalyst ("heavily tied to OpenAI''s" fate). Aspirational register may credit the ecosystem, not the lab''s conduct.'
+          - 'The doomsday piece''s adversarial edge targets the FEAR as a market event ("these fears are cropping up"), not OpenAI - the -0.10 scores the slowdown-as-headwind frame, which is arguably softer on OpenAI-the-company than a safety-accountability frame would be.'
+          - 'Byline/desk unconfirmed from excerpts for all three arms - desk routing is inferred from genre, not verified.'
+        weak:
+          - 'Temporal drift: the Meta arm is 10 weeks older (m229 Jun 2026/Jun 27) than the OpenAI arms (Sep 8-15 2026) - the gap could partly reflect news-cycle position, not entity targeting.'
+          - 'The IPO relay''s "backlash swells" lede shows MarketWatch CAN apply adversarial context to OpenAI - the softness is in the body''s relay register, not a site-wide rule.'
+          - 'The $300B/5yr OpenAI-Oracle compute contract cited in the Oracle piece is a company-disclosed fact carried in the excerpt, not an independent MarketWatch finding.'
+      bounded_absence: '4 browser.search query sets this run (Axios OpenAI slowdown interview; Axios OpenAI ChatGPT ads; axios.com OpenAI Altman interview; marketwatch.com OpenAI September 2026). The intended Axios x OpenAI pair was ABANDONED: no axios.com URL surfaced verbatim in any Full-URL listing (the Sep 12 Axios IPO piece by Berkowitz/Phifer is attested only via mirrors: biztoc "appeared on axios.com, 2026-09-12 19:18:32", finpresso, digitaltoday, runtimewire) - per the no-constructed-URL discipline the pair could not be anchored this run. No MarketWatch x Meta piece from the Sep 8-15 window surfaced in bounded searches (m229 arms carried by design; absence per iteration-492, not a proven zero). No first-hand disclosure-visibility check was possible (paywall; no browser.open attempted).'
+      counter_evidence:
+        - 'The IPO piece''s own Opinion sidebar ("Would you buy stock in a company whose own scientists think the product might kill you?") runs HARDER than the news arms - uniform softening fails at the desk level within the same publication.'
+        - 'm229 (Jun 2026): MarketWatch dismissed Meta success ("No one really wants Meta glasses" vs 84% share) AFTER News Corp signed the Meta licensing leg (Mar 2026, up to $50M/yr) - the Meta payer does not buy uniform softening either; deal seniority (26+ vs 6 months) is the distinguishing variable, not the deal''s existence.'
+        - 'm682 (Sep 14): WSJ - the same parent company''s flagship - ran the hardest OpenAI register in the corpus (-0.40 Clash expose) the SAME week; the parent can go hard on the payer when the desk/genre routes that way.'
+      relation_to_229: 'Direct Meta-arm source: m229 documented MarketWatch''s adversarial Meta register (headline-template inversion, "No one really wants Meta glasses" vs 84% share, Apple problem-insulation). This run carries m229''s Meta arm at -0.55 un-rescored and adds the missing OpenAI arm of the same publication: the +0.60 illustrative gap is the first quantified MarketWatch cross-entity delta. m229''s "editorial culture lag" hypothesis (adversarial Meta framing persists despite the Mar 2026 Meta deal) is refined, not contradicted: the lag story now needs a deal-seniority gradient (26+ months vs 6 months) to explain why the older OpenAI leg reads softer.'
+      relation_to_689: 'Same-week News Corp sibling contrast: m689''s WSJ unity-consensus piece (+0.15) relayed the SAME Altman IPO-delay-as-safety frame ("may need to delay its much-anticipated IPO to focus on safety") that MarketWatch''s IPO relay carries at -0.05 - the flagship''s consensus-statesman register reads 0.20 softer than the market desk''s CEO-quote relay on the identical news peg, consistent with desk/genre routing dominating within the parent company. The m682/m689 same-day triad (WSJ OpenAI range 0.55) already established that the licensing tie predicts neither arm at WSJ; this run extends the point to MarketWatch: three registers, one payer, one publication, no uniform softening.'
+      relation_to_682: 'Register-selection dominance, extended: m682''s Clash expose (-0.40, same week, same parent) is the corpus''s hardest OpenAI register; this run''s MarketWatch set (+0.05 avg) is 0.45 softer. The News Corp x OpenAI same-week register span now runs -0.40 (WSJ watchdog) to +0.30 (MarketWatch Oracle boost) = 0.70 - matching the WSJ-only triad span. Register SELECTION dominates entity targeting across the parent''s publications.'
+      distinct_from_prior: 'FIRST dedicated mechanism on MarketWatch x OpenAI (zero MarketWatch-OpenAI mechanisms repo-wide pre-commit; the morningstar.com mirrors in corpus are a different URL key); first MarketWatch cross-entity illustrative delta (m229 supplied only the Meta arm); first mechanism to document the abandoned-pair discipline (Axios x OpenAI dropped for lack of verbatim axios.com URLs) as bounded-absence evidence rather than a constructed-URL violation.'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing; WSJ, NY Post, Barron''s, MarketWatch, The Times, The Sun content used in ChatGPT); Meta leg Mar 2026 (up to $50M/yr, 3yr, Dow Jones news leg per #549); Anthropic leg $0 AI licensing. If the tie purchased uniform softening, MarketWatch''s Opinion sidebar would not run harder than its news arms, and m229''s Jun 2026 Meta dismissal would not post-date the Meta deal. If the tie purchased nothing, the +0.60 illustrative gap tracking 26-month vs 6-month deal seniority would need no explanation. Both uniform stories fail; the data are consistent with a deal-seniority gradient OR with pure genre routing - the design cannot separate them. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      research_method: '4 browser.search query sets this run (Axios OpenAI slowdown interview; Axios OpenAI ChatGPT ads; axios.com OpenAI Altman interview; marketwatch.com OpenAI September 2026) + 0 browser.open attempts (fleet egress proxy down; MarketWatch metered paywall) - Excerpt-bounded per #503. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_777 files on disk pre-commit; no "Type A #777" in git log pre-commit; the 3 MarketWatch URL slugs (229de89c, f53c8024, 75c4ad53) zero-hit repo-wide pre-commit; the marketwatch_openai_ipo_delay_oracle_boost_doomsday_market_register_sep15 block key zero-hit repo-wide pre-commit; max numeric mechanism_id 696 pre-commit; zero underscore-form 697 mechanism key strings repo-wide pre-commit (excluding the #774 sweep-instrument carrier test per the #715 pattern-rescope lesson).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
