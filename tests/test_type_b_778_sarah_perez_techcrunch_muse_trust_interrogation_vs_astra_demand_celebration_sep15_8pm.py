@@ -46,7 +46,7 @@ CAREERS_BLOCK_KEY = (
     "type_b_778_sarah_perez_techcrunch_muse_trust_interrogation_"
     "vs_astra_demand_celebration_sep15"
 )
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "9f999f246121e9d5ff2ef6c0bd753d14d6f54c03"
 META_URL = (
     "https://techcrunch.com/2026/09/08/"
     "meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
