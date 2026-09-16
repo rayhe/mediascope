@@ -89,7 +89,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "823b1e7bd1ed9a28b412574c59ea28bf7042e8c6"
 
 M694_KEY = (
     "atlantic_openai_hugging_face_incident_philosophical_essay_register_"
