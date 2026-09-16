@@ -125,42 +125,51 @@ class TestNovelty783:
 
 
 class TestRotationCycleGuard783:
-    """Rotation: the 780-784 window closes B-A-E-D-C (fourth leg 782 A -> 783 B)."""
+    """780-784 window fourth leg D->E->A->B. Green only after the main commit.
+
+    Deselected pre-commit per the #565 followup convention (the #783 main
+    commit does not exist yet); patched green in the anchor followup.
+    """
 
     EXPECTED_ORDER = [("B", "783"), ("A", "782"), ("E", "781"), ("D", "780"), ("C", "779")]
+    ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
 
-    def _order_from_git(self):
-        log = subprocess.run(
-            ["git", "log", "--format=%s", "--no-merges"],
+    def _window(self):
+        # First occurrence of each distinct iteration number, newest first
+        # (robust to the #781-style push-status followup commit that repeats
+        # the "Type E #781" wording with the colon, per the #752 convention).
+        mains = subprocess.run(
+            ["git", "log", "--format=%s", "--no-merges", "-n", "40"],
             cwd=REPO,
             capture_output=True,
             text=True,
             check=True,
         ).stdout.splitlines()
+        seen_nums = set()
         out = []
-        for s in log:
+        for s in mains:
             m = re.match(r"Type ([A-E]) #(\d+):", s)
-            if m:
-                out.append((m.group(1), m.group(2)))
-        return out
+            if m and m.group(2) not in seen_nums:
+                seen_nums.add(m.group(2))
+                out.append(m.groups())
+        return out[:5]
 
     def test_rotation_window_closes_b_a_e_d_c(self):
         # Deselected pre-commit per the #565 convention; green after the anchor
         # followup records the #783 main commit subject.
-        assert self._order_from_git()[:5] == self.EXPECTED_ORDER
+        assert self._window() == self.EXPECTED_ORDER
 
     def test_cycle_edges_adjacent(self):
         # Deselected pre-commit per the #565 convention.
-        order = [t for t, _ in self._order_from_git()]
-        edges = set(zip(order, order[1:]))
-        for a, b in [("C", "D"), ("D", "E"), ("E", "A"), ("A", "B")]:
-            assert (a, b) in edges, (a, b, order[:6])
+        window = self._window()
+        for (t1, n1), (t2, n2) in zip(window, window[1:]):
+            assert int(n1) == int(n2) + 1
+            assert (self.ORDER[t1] - self.ORDER[t2]) % 5 == 1, (t1, t2)
 
     def test_anchor_commit_matches_window_head(self):
         # Deselected pre-commit per the #565 convention; ties ANCHORED_SHA to
         # the head of the verified rotation window.
-        head = self._order_from_git()[0]
-        assert head == ("B", "783")
+        assert self._window()[0] == ("B", "783")
         hits = _git_log_mains("Type B #783:")
         assert len(hits) == 1 and hits[0].split(" ")[0] == ANCHORED_SHA
 
