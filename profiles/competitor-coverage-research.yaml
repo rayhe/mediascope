@@ -38280,6 +38280,232 @@ publications:
     - mechanism_id: 697
       description: MarketWatch x OpenAI slowdown-week register set (same news
         week; register-selection dominance analogue)
+  verge_apple_duo_launch_week_staff_react_register_sep16:
+    mechanism_id: 706
+    iteration: 792
+    iteration_type: A
+    type: competitor_coverage_deep_dive
+    date: '2026-09-16'
+    date_analyzed: '2026-09-16'
+    time_pdt: '10:00'
+    publication: The Verge (Vox Media)
+    entity: Apple
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    title: 'The Verge x Apple iPhone Duo Launch-Week Register: Aspirational Staff
+      Reactions (+0.45) vs Meta Glasses Adversarial Privacy Register (-0.55); Apple
+      News Distribution Tie at Parent Level'
+    description: 'First dedicated Verge x Apple Duo mechanism. Arm 1 (Sep 9 2026,
+      7:45 PM): The Verge ''Verge staffers react to the iPhone Duo: What we love
+      and don''t love'' - multi-staffer gut-reaction register, aspirational: Jay
+      Peters (senior reporter) ''I think iPhone Duo is the perfect name for
+      Apple''s foldable''; Jennifer Tuohy (senior reviewer) ''I''ve never wanted
+      a new iPhone more''; Kevin McShane (editorial director, audio and video)
+      ''The Apple Pencil support makes the Duo an iPad Mini killer and the perfect
+      on-the-go sketchbook for digital artists''; Marina Galperina (senior tech
+      editor) ''a far superior ratio! ... the thing that I''m most excited about
+      with the Duo''; Emma Roth (news writer). Tone MANUAL ILLUSTRATIVE +0.45.
+      Arm 2 (Sep 11 2026): Vergecast ''We unfolded the iPhone Duo'' - Allison
+      Johnson and Vee Song (Victoria Song) report hands-on time with Apple''s new
+      devices from California; Apple privacy discussion carried INSIDE the
+      product-positive frame (''39:23 Privacy and social concerns'', ''46:49 Apple
+      Privacy Whitepaper''). Tone MANUAL ILLUSTRATIVE +0.45. Meta comparator
+      (same publication, in-corpus m75 / m304): Victoria Song''s 4+ dedicated
+      privacy-adversarial Meta glasses pieces (''College students used Meta''s
+      smart glasses to dox people'' Oct 2024; LED tamper coverage Jul 2026;
+      bedroom Vergecast segment; kill-switch podcast) with ''creepy,
+      surveillance, dox'' vocabulary, tone -0.55; Meta spokesperson Albert Aydin
+      told The Verge about the ''pervert glasses'' LED-awareness campaign
+      (Canadian Reviews reprint). Illustrative register delta (Apple launch arms
+      avg +0.45 minus Meta comparator -0.55) = +1.00, on a DIFFERENT news peg
+      (launch week vs privacy beat), so the delta is register-documentation, not a
+      like-for-like causal claim. Financial tie: Apple x Vox Media distribution
+      partnership - Bloomberg (Mar 2019, via MacRumors): ''Apple has inked a deal
+      with Vox for Vox to become a part of its upcoming subscription service that
+      will be available in Apple News''; Adweek (2015): Apple News app debut with
+      50+ publishers ''including Hearst, Vox and Conde Nast'', publishers keep
+      100% of own-ad revenue and 70% of Apple-sold ad revenue. CAVEATS, stated
+      plainly: the 2019 News+ deal was for Vox (the site), NOT The Verge -
+      AppleInsider explicitly reports other Vox Media outlets ''including The
+      Verge, Recode, SBNation, Eater and Polygon, are not included as part of the
+      initial deal''; seven-figure Apple News revenue figures cited in the
+      press are for Time, not Vox Media. The uniform financial-incentive
+      prediction (Apple distribution tie buys softer Apple coverage at The Verge)
+      is directionally CONSISTENT with the observed register delta but the tie is
+      parent-level and Vox-site-specific, so the causal channel is thin. NOT a
+      falsification-family member: register documentation with
+      confound-bounded incentive note, not a uniform-prediction test. Ledger
+      holds at 26. NOT artifact-grade. Correlation is not causation.
+
+      '
+    novelty_verification: 'Zero test_type_a_792 files on disk pre-commit (glob); no
+      "Type A #792" in git log pre-commit; zero verge_apple_duo mechanism keys
+      repo-wide pre-commit; the scoopfeeds Verge staff-react URL
+      (e11a296f-74fb-560a-a9a0-952760468522) zero-hit repo-wide pre-commit; the
+      Vergecast BORNUd_FdLA URL zero-hit repo-wide pre-commit; the macrumors
+      vox-joins-apple-news-subscription-service URL zero-hit repo-wide
+      pre-commit; max numeric mechanism_id 705 pre-commit; zero underscore-form
+      706 mechanism key substrings repo-wide pre-commit.
+
+      '
+    research_method: 'Evidence search-excerpt-bounded per #503. 13 browser.search
+      query sets (Guardian Apple iPhone Duo foldable launch September 2026;
+      site:theguardian.com Apple iPhone Duo foldable September 2026; theguardian.com
+      iPhone Duo foldable Apple September 2026; Guardian Meta Ray-Ban smart glasses
+      privacy September 2026; Guardian "iPhone Duo" Apple foldable; Guardian Apple
+      News+ partnership Guardian Media Group Apple commercial deal; Guardian
+      technology "foldable iPhone" Duo review September 2026 Samuel Gibbs OR Alex
+      Hern; "theguardian.com/technology" Apple Duo foldable; Samuel Gibbs Guardian
+      Apple foldable iPhone event September 2026; Vox Media Apple News partnership
+      publisher agreement; theverge.com iPhone Duo hands-on foldable September 2026;
+      Verge "Verge staffers react to the iPhone Duo"; Verge Victoria Song Meta
+      glasses privacy September 2026), 0 browser.open attempts. The Guardian UK
+      authored no indexed iPhone Duo piece in any query set (only dailyguardian.ca
+      and dailyguardian.eu, different papers), so the Guardian x Apple pair was
+      abandoned for lack of arms; the Verge x Apple pair had Verge-attributed arms
+      via search excerpts. All anchor URLs verbatim from search Full-URL listings;
+      no canonical URLs constructed. Excerpts quoted from search-result text.
+      ASCII-only, no em dashes.
+
+      '
+    arms:
+      arm1_verge_staff_react_duo:
+        title: 'Verge staffers react to the iPhone Duo: What we love and don''t love'
+        date: '2026-09-09'
+        time_et: '7:45 PM'
+        outlet_role: The Verge (original publisher; surfaced via search-indexed
+          reprints carrying Verge bylines and photo credits)
+        url: https://scoopfeeds.com/article/e11a296f-74fb-560a-a9a0-952760468522
+        url_status: verbatim_from_search_full_url_listing
+        origin_attribution: 'Article preview - originally published by The Verge.
+          Full story at the source.'
+        corroboration_url: https://dailyguardian.ca/verge-staffers-react-to-the-iphone-duo-what-we-love-and-dont-love/
+        corroboration_url_status: verbatim_from_search_full_url_listing
+        register: aspirational_staff_reaction
+        tone_MANUAL_ILLUSTRATIVE: 0.45
+        excerpts:
+        - 'The Verge Sep 9, 2026, 7:45 PM'
+        - 'I think iPhone Duo is the perfect name for Apple''s foldable'
+        - 'I''ve never wanted a new iPhone more.'
+        - 'The Apple Pencil support makes the Duo an iPad Mini killer and the
+          perfect on-the-go sketchbook for digital artists.'
+        - 'a far superior ratio! ... the thing that I''m most excited about with
+          the Duo.'
+        bylines:
+        - Jay Peters, senior reporter
+        - Jennifer Tuohy, senior reviewer
+        - Kevin McShane, editorial director, audio and video
+        - Marina Galperina, senior tech editor
+        - Emma Roth, news writer
+        photo_credit: Antonio G. Di Benedetto / The Verge
+      arm2_vergecast_unfolded_duo:
+        title: 'We unfolded the iPhone Duo | The Vergecast'
+        date: '2026-09-11'
+        outlet_role: The Verge podcast
+        url: https://www.youtube.com/watch?v=BORNUd_FdLA
+        url_status: verbatim_from_search_full_url_listing
+        register: hands_on_product_positive
+        tone_MANUAL_ILLUSTRATIVE: 0.45
+        excerpts:
+        - 'On today''s Vergecast, Allison Johnson and Vee Song report back from
+          California after having more hands-on time with Apple''s new devices.'
+        - '39:23 Privacy and social concerns'
+        - '46:49 Apple Privacy Whitepaper'
+        note: 'Apple privacy discussion carried inside the product-positive frame;
+          the SAME journalist (Victoria Song / Vee Song) who writes Meta-specific
+          privacy-adversarial pieces (m75) does Apple privacy inside a
+          product-positive register here.'
+      apple_arm_scores: [0.45, 0.45]
+      apple_arm_avg: 0.45
+    meta_comparator:
+      source: in_corpus_mechanisms_75_and_304
+      description: 'Same-publication Meta register: Victoria Song 4+ dedicated
+        privacy-adversarial Meta glasses pieces with ''creepy, surveillance, dox''
+        vocabulary, tone -0.55 (m304); Meta spokesperson Albert Aydin told The
+        Verge about the ''pervert glasses'' LED-awareness campaign (Canadian
+        Reviews reprint of The Verge reporting).'
+      meta_glasses_tone_MANUAL_ILLUSTRATIVE: -0.55
+      illustrative_register_delta_apple_minus_meta: 1.00
+      delta_caveat: 'Different news pegs (Apple launch week vs Meta privacy
+        beat); the delta documents register selection, not a controlled
+        like-for-like causal claim.'
+    financial_tie:
+      parties: Apple Inc. x Vox Media (The Verge parent)
+      form: platform_distribution_partnership
+      evidence:
+      - 'Bloomberg (Mar 21 2019, via MacRumors): ''Apple has inked a deal with
+        Vox for Vox to become a part of its upcoming subscription service that
+        will be available in Apple News.'' https://www.macrumors.com/2019/03/21/vox-joins-apple-news-subscription-service/
+        (verbatim_from_search_full_url_listing)'
+      - 'Adweek (2015): Apple News app debut with more than 50 publishers,
+        ''including Hearst, Vox and Conde Nast''; ''publishers keep 100 percent
+        of the ad revenue for their own ads, and 70 percent of the ad revenue
+        for ads that Apple sells.'' https://www.adweek.com/morning-media-newsfeed/apple-adds-more-publishers-for-news-app-which-will-launch-soon/
+        (verbatim_from_search_full_url_listing)'
+      caveats:
+      - 'The 2019 News+ deal was for Vox (the site), NOT The Verge: AppleInsider
+        explicitly reports other Vox Media outlets ''including The Verge,
+        Recode, SBNation, Eater and Polygon, are not included as part of the
+        initial deal.'' http://appleinsider.com/articles/19/03/21/vox-reportedly-joins-apple-news-service-other-vox-media-properties-not-available-at-launch
+        (verbatim_from_search_full_url_listing)'
+      - 'Seven-figure Apple News revenue figures in the press are attributed to
+        Time (Semafor, via thestreet), not to Vox Media.'
+      verdict: 'directionally_supported_not_proven: the uniform incentive
+        prediction (Apple distribution tie buys softer Apple coverage) is
+        directionally consistent with the observed +1.00 register delta, but the
+        tie is parent-level and Vox-site-specific, and launch-week genre
+        convention is the stronger candidate explanation.'
+    confounders_ranked:
+      strong:
+      - 'Launch-week genre convention: every tech outlet writes aspirational
+        launch-week copy; The Verge is a gadget-enthusiast publication whose
+        staff-react format exists to celebrate hardware. The aspirational
+        register is selected by the news peg, not necessarily by the parent''s
+        Apple distribution deal.'
+      - 'Tie is parent-level and Vox-site-specific: the documented Apple deal is
+        with Vox (the site), explicitly excluding The Verge at signing; the
+        2015 Apple News app inclusion of ''Vox Media'' is distribution, not
+        licensing revenue. Thin causal channel to The Verge newsroom register.'
+      moderate:
+      - 'Product-context asymmetry: a foldable phone is an owned-screen device
+        with no bystander camera; Meta glasses are face-worn cameras in public
+        space. Privacy vocabulary follows the product''s externalities, not only
+        the company.'
+      - 'New-CEO news value: John Ternus''s first event (Tim Cook stepped down
+        Sep 1 2026) amplifies launch-week attention independent of incentives.'
+      weak:
+      - 'Apple Privacy Whitepaper as news peg: gives the Vergecast a document
+        to discuss, making Apple privacy coverage look responsive rather than
+        investigative.'
+    counter_evidence:
+    - 'The same staff-react piece carries price skepticism (Tuohy: ''It''s just
+      too expensive''; Higgins: ''a minimum of $2,000 is too much for me to take
+      a chance''), so the register is not uniformly promotional.'
+    - 'Victoria Song''s Apple Vision Pro product reviews are described as
+      balanced in m75, limiting the claim to the launch-week/privacy-register
+      margin, not her entire Apple output.'
+    - 'm304 documents PMC/Vox Media DUAL OpenAI financial relationships (Vox
+      Media content licensing + Azure OpenAI enterprise agreement), so Apple is
+      not the only payer in the parent-level incentive stack.'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only.
+      p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026
+      standing rule). Engine NOT run. verdict directionally_supported_not_proven.
+      no_analysis_json_update: true. NOT artifact-grade. Correlation is not
+      causation.'
+    cross_references:
+    - mechanism_id: 75
+      description: Victoria Song privacy vocabulary bifurcation (The Verge
+        journalist level; Meta-only privacy-adversarial activation)
+    - mechanism_id: 304
+      description: The Verge OpenAI ChatGPT Health (+0.15) vs Meta glasses
+        (-0.55) data-sensitivity inversion; PMC/Vox Media dual OpenAI financial
+        relationships documented
+    - mechanism_id: 703
+      description: Politico x OpenAI slowdown-week scoop channel symmetry
+        (payer/non-payer inversion analogue, #787 Type A)
+    falsification_family: 'NOT a member - register documentation with
+      confound-bounded incentive note; no uniform-prediction test run. Ledger
+      holds at 26.'
   fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient:
     mechanism_id: 324
     type: podcast_sentiment_tracking
