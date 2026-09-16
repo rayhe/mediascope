@@ -46,7 +46,7 @@ MECH_ID_MARKER = "mechanism" + "_705"
 NEXT_ID_MARKER = "mechanism" + "_706"
 MECH_KEY = "paramount_wbd_tender_exchange_extension_sep18_2026"
 NEXT_SIBLING = "\n  yahoo_apollo:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "cb6827330661a30af4c26cb62a40a8d6653958b1"
 
 
 def _read(rel):
