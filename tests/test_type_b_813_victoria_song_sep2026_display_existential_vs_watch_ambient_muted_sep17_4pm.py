@@ -60,7 +60,7 @@ M_ID = 719
 MECH_ID_MARKER = "mechanism" + "_719"
 NEXT_ID_MARKER = "mechanism" + "_720"
 NEXT_ID_NUMERIC = "mechanism_id: 720"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched post-commit per #565
+ANCHORED_SHA = "b74c9b9"  # main commit, patched post-commit per #565
 BLOCK_KEY = "type_b_813_victoria_song_sep2026_display_existential_vs_watch_ambient_muted_sep17"
 
 CAREERS_PROFILE = os.path.join(REPO, "profiles", "careers", "journalists.yaml")
