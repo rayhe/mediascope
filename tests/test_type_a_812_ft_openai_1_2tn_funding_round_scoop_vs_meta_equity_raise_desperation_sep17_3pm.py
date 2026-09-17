@@ -65,7 +65,7 @@ NEXT_ID_MARKER = "mechanism" + "_719"
 NEXT_ID_NUMERIC = "mechanism_id: 719"
 EXPECTED_ORDER = [("A", "812"), ("E", "811"), ("D", "810"), ("C", "809"), ("B", "808")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "0d44384c60d5ec42599d2954f8bb6ed90d5d175a"
 
 
 def _repo_root() -> Path:
