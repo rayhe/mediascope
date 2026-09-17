@@ -57,7 +57,7 @@ IOP_URL = (
     "trusted-physical-sciences-research-through-ai/"
 )
 NEXT_SIBLING = "\n    getty_perplexity_visual_licensing_oct2025_sep14:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "4d71ca0c1cdc12ffb1fd69adb60523a74018f589"
 
 
 def _read(rel):
