@@ -2134,6 +2134,95 @@ journalist_cross_entity:
     - https://gizmodo.com/live-updates-from-google-io-2026-2000757469
     test_file: tests/test_james_pero_cross_entity.py
     test_count: 41
+  ece_yildirim:
+    mechanism_id: 716
+    mechanism_name: 'Ece Yildirim (Gizmodo Privacy and Security) Apple-Adversarial vs Meta-Product-Neutral Register Inversion (Sep 9-15 2026)'
+    block_key: type_b_808_ece_yildirim_gizmodo_apple_adversarial_vs_meta_product_neutral_sep17
+    iteration: 808
+    iteration_type: 'B'
+    rotation_type: 'B'
+    date: '2026-09-17'
+    time_pdt: '11:00'
+    author: 'Kit (with Ray)'
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    journalist: 'Ece Yildirim'
+    publication: 'Gizmodo'
+    desk: 'Privacy and Security'
+    owner: 'Keleops AG'
+    author_page: 'https://gizmodo.com/author/eceyildirim'
+    summary: 'FIRST dedicated corpus mechanism on Ece Yildirim (zero hits repo-wide pre-commit). Same-journalist, same-publication, same-week register inversion: her Sep 9 2026 Apple Watch Audio Intelligence piece applies an adversarial privacy register to APPLE ("sounds like a privacy nightmare", "constantly eavesdropping", "covertly recorded, transcribed, or noted down", "Apple executives were eager to assure viewers", "wave of public outcry"), while her Sep 15 2026 Meta piece ("Meta Is Hoping You Will Pay for More AI Features on Instagram", Meta One subscription launch) runs a neutral product/pricing news register with only mild monetization edge ("coughing up monthly fees") and financial-context skepticism (free cash flow, Reality Labs losses) - zero privacy/surveillance vocabulary in the excerpted Meta text, notable for a Privacy and Security desk byline covering Meta AI expansion. MANUAL ILLUSTRATIVE tones: Apple arm -0.60, Meta arm -0.15, illustrative Apple-minus-Meta delta -0.45. The same journalist goes harder on Apple than on Meta within one week - an inversion of the corpus-typical Gizmodo gradient (cf. Barr apocalyptic Meta register, Pero Meta-hard patterns in this file). The inversion is bounded: the Apple piece itself holds Meta as the worse privacy comparator ("Apple''s privacy record is pristine compared to Meta''s"; Meta Glasses "creepy surveillance potential", "pervert glasses", "creeps"), so she does not spare Meta - the adversarial energy is Apple-directed WITHIN a Meta-anchor-adversarial frame. Verdict: directionally_supported_not_proven. NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
+    apple_arm:
+      title: 'If Meta Glasses Freak You Out, Wait Until You Hear About the New Apple Watch Features'
+      date: '2026-09-09'
+      byline: 'Ece Yildirim'
+      byline_attribution: 'full - listed on https://gizmodo.com/author/eceyildirim (verified first-hand this run); Gizmodo tag pages attribute the piece to the Privacy and Security desk'
+      url: 'https://gizmodo.com/if-meta-glasses-freak-you-out-wait-until-you-hear-about-the-new-apple-watch-features-2000809371'
+      dek: 'Live Rewind and Siri Recap just killed the dreams of always on AI wearables.'
+      register: 'adversarial_privacy_commentary'
+      tone_MANUAL_ILLUSTRATIVE: -0.60
+      evidence_grade: 'first-hand full-text read this run (gizmodo.com, 42 rendered lines)'
+      key_quotes:
+        - '"Apple just announced a lineup of new products at its fall event... equipped with an AI-infused Siri that sounds like a privacy nightmare."'
+        - '"Apple is hoping you are delighted to hear that your Apple Watch will always be listening to every conversation you have, and perhaps even recording some of them."'
+        - '"Users can choose to have the Siri Recap feature always on, aka constantly eavesdropping, or set it to turn on at specific times each day."'
+        - '"Apple executives were eager to assure viewers and prospective buyers that privacy would be top of mind for Audio Intelligence."'
+        - '"It is unnerving that anything you say out in public, perhaps without even realizing that you are in the vicinity of an Apple Watch wearer, could soon be covertly recorded, transcribed, or noted down."'
+        - '"it is impossible not to think that the Cupertino giant could be in for a wave of public outcry when these features hit the market."'
+      meta_anchor_inside_piece:
+        - '"While Apple''s privacy record is pristine compared to Meta''s" - Meta held as the worse comparator'
+        - '"Meta Glasses, another piece of consumer tech with creepy surveillance potential, have been quickly picked up by so many creeps that they have been widely dubbed ''pervert glasses'' online."'
+        - '"perverts and creeps were quick to circumvent the protection" (Meta LED light)'
+      framing: 'Assurance-skeptical: Apple''s concrete safeguards (opt-in, raw audio "completely inaccessible, even to Apple", audible chime for Live Rewind) are reported then discounted ("But those privacy guardrails only address one part of the problem"). Bystander-consent framing universalized from the Meta glasses debate and turned on Apple. The piece closes adversarial, not exonerating.'
+    meta_arm:
+      title: 'Meta Is Hoping You Will Pay for More AI Features on Instagram'
+      date: '2026-09-15'
+      byline: 'Ece Yildirim'
+      byline_attribution: 'full - listed on https://gizmodo.com/author/eceyildirim (verified first-hand this run); mirror attribution "Ece Yildirim Tue, September 15, 2026 at 10:43 PM UTC"'
+      url: 'https://gizmodo.com/meta-is-hoping-youll-pay-for-more-ai-features-on-instagram-2000812018'
+      dek: 'The tech giant is launching a paid subscription for more AI usage on Instagram, Facebook and WhatsApp.'
+      register: 'neutral_product_pricing_news'
+      tone_MANUAL_ILLUSTRATIVE: -0.15
+      evidence_grade: 'search-excerpt-bounded per #503 (no first-hand fetch this run; 1 browser.open attempt on a different page failed terminally this turn)'
+      key_quotes:
+        - '"On Tuesday, Meta officially launched a paid subscription service called Meta One, promising a range of AI-related new features on Instagram, Facebook and WhatsApp."'
+        - '"Meta is also hoping regular people will start coughing up monthly fees to infuse their social media experience with even more AI."'
+        - '"if you just can''t get enough of Meta AI and want to generate even more pictures of random people you follow on Instagram, you will have to grab a subscription."'
+        - '"We''re launching with more than 50 features on Instagram, Facebook, WhatsApp, and Meta AI, and will expand to Edits, AI glasses, and more over time."'
+        - 'Financial-context skepticism: "free cash flow for the quarter had sunk roughly $8 billion in a year due to its spending on AI"; "the Reality Labs unit lost $4.62 billion in Meta''s latest quarter, bringing its total operating loss in roughly 6 years to more than $80 billion."'
+      framing: 'Straight product/pricing news (Core $7.99, Premium $19.99, Instagram Plus $3.99; Muse Image/Video, Restyle, voice effects). The only adversarial energy is monetization-side ("coughing up monthly fees") and business-side (AI spend, Reality Labs losses). Zero privacy/surveillance vocabulary in the excerpted text - the Privacy and Security desk byline does not apply the privacy register to Meta''s AI expansion here.'
+    illustrative_register_delta_apple_minus_meta: -0.45
+    delta_calc: '(-0.60) - (-0.15) = -0.45'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. Engine NOT run on the illustrative arms per the Aug 28 2026 standing rule. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False; no significance claimed.'
+    confounders_ranked:
+      strong:
+        - 'Product-domain mismatch: always-on ambient audio capture (Apple Watch Audio Intelligence) vs paid AI feature tiers (Instagram/Facebook/WhatsApp). The privacy salience genuinely differs; a Privacy and Security desk writer going harder on the ambient-listening product is beat-consistent, not necessarily entity-selective.'
+        - 'Genre routing: the Apple piece is privacy commentary; the Meta piece is product-launch news. News-desk product pieces rarely carry the commentary register; the register split may be genre-driven, not entity-driven.'
+        - 'The Apple piece itself holds Meta as the worse privacy comparator ("pristine compared to Meta''s"; "pervert glasses"; "creeps") - she does not spare Meta. The inversion is Apple-directed adversarial WITHIN a Meta-anchor-adversarial frame, which weakens any pro-Meta reading.'
+      moderate:
+        - 'Excerpt-bounded Meta arm: no first-hand fetch this run; register nuance could differ on full read.'
+        - 'n=1/n=1, one week apart, hypothesis-generating only; Yildirim is a new Gizmodo byline (author page shows recent posts only; tenure unconfirmed).'
+      weak:
+        - 'The Meta piece''s financial skepticism (free cash flow, Reality Labs losses) is its own adversarial register in the business dimension; the -0.15 reading already prices that in.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: "Apple''s privacy record is pristine compared to Meta''s" - the Apple piece''s own comparative anchor is Meta-adversarial; the journalist is not Meta-sympathetic.'
+      - 'COUNTEREVIDENCE: The Apple piece reports Apple''s concrete safeguards accurately (opt-in, raw audio inaccessible even to Apple, audible chime) before discounting them - the adversarial register is applied to acknowledged mitigations, which is a stronger form of the claim.'
+      - 'COUNTEREVIDENCE: Meta-arm "coughing up monthly fees" and "pictures of random people you follow" carry mild adversarial edge; the Meta piece is not a puff piece.'
+      - 'COUNTEREVIDENCE: The -0.45 delta rests on hand-assigned n=1/n=1 scores (one arm first-hand, one arm excerpt-bounded); hypothesis-generating only.'
+    cross_references:
+      - mechanism_id: 653
+        note: 'Raymond Wong #698 - the other Gizmodo same-journalist cross-entity pair (review-register constancy, Apple +0.45 vs Meta +0.30). Yildirim inverts Wong''s direction: her Apple arm (-0.60) reads harder than her Meta arm (-0.15), while Wong''s Apple arm (+0.45) read softer than his Meta arm (+0.30). Two Gizmodo journalists, opposite cross-entity directions in the same window - journalist-level variance dominates any publication-level gradient claim.'
+      - mechanism_id: 715
+        note: 'Same-week window neighbor (#807, Sep 17 10:00 PDT): WSJ x OpenAI relay vs Meta adversarial. Both runs document register selection dominating entity targeting, on different publications and different entity pairs.'
+      - entry: 'journalist_cross_entity.kyle_barr (this file)'
+        note: 'Barr''s Privacy Gradient Paradox (Meta apocalyptic -0.65, Apple sympathetic privacy hero) is the corpus-typical Gizmodo direction. Yildirim - same publication, same Privacy and Security-adjacent beat, same month - runs the opposite direction on the Apple leg. The Barr-Yildirim divergence within one publication isolates journalist-level register selection as the operative variable.'
+    research_method: '5 browser.search query sets this run (Grothaus Fast Company author verification; "creepy smart glasses" Grothaus byline check; Gizmodo Apple Watch Audio Intelligence byline; Ece Yildirim Meta coverage; Meta Luna glasses byline) + 3 browser.open attempts (Fast Company Meta piece - no byline in extracted text; Gizmodo Apple Watch piece - full first-hand read, 42 lines; Gizmodo Yildirim author page - both bylines confirmed; The Register Apple piece fetch failed terminally, no retry per turn discipline). The Michael Grothaus (Fast Company) pair was ABANDONED: his Apple Audio Intelligence piece is confirmed his via the Fast Company author page, but the "Meta''s creepy smart glasses are part of a much bigger plan" piece carries no byline in the extracted page text and no author-page confirmation was obtainable - per the no-invented-byline discipline it could not be anchored. Excerpt-bounded per #503. All URLs copied verbatim from search-result Full-URL listings or the author page; no canonical URLs constructed; ASCII-only, no em dashes.'
+    novelty: 'Zero "Ece Yildirim" hits repo-wide pre-commit (case-insensitive git grep on profiles/ and tests/ and docs/ at HEAD); zero test_type_b_808 files on disk pre-commit (glob); no "Type B #808" in git log pre-commit; the #808 block key zero-hit repo-wide pre-commit; max numeric mechanism_id 715 pre-commit; zero underscore-form 716 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention).'
+    verdict: 'Verdict: directionally_supported_not_proven - the -0.45 illustrative Apple-minus-Meta delta is directionally consistent with journalist-level register inversion (same writer harder on Apple than Meta within one week), but NOT proven: confounders (product-domain mismatch, genre routing, the Meta-anchor-adversarial frame inside the Apple piece itself) are ranked strong-first, and the design (n=1/n=1, one arm excerpt-bounded) cannot separate entity selection from beat/genre routing. Correlation is not causation.'
+    falsification_family: 'NOT a member - register documentation with directionally-consistent-but-unproven verdict; ledger holds at 26.'
+    no_analysis_json_update: true
+    correlation_not_causation: true
+    test_file: tests/test_type_b_808_ece_yildirim_gizmodo_apple_adversarial_vs_meta_product_neutral_sep17_11am.py
 google_io_2026_camera_paradox:
   date_analyzed: '2026-08-09'
   reporter: Raymond Wong
