@@ -778,6 +778,82 @@ competitor_relationships:
       novelty: 'Zero test_type_a_777 files on disk pre-commit; no "Type A #777" in git log pre-commit; the 3 MarketWatch URL slugs (229de89c, f53c8024, 75c4ad53) zero-hit repo-wide pre-commit; the marketwatch_openai_ipo_delay_oracle_boost_doomsday_market_register_sep15 block key zero-hit repo-wide pre-commit; max numeric mechanism_id 696 pre-commit; zero underscore-form 697 mechanism key strings repo-wide pre-commit (excluding the #774 sweep-instrument carrier test per the #715 pattern-rescope lesson).'
       no_analysis_json_update: true
       correlation_not_causation: true
+    wsj_openai_misalignment_framework_relay_vs_meta_glasses_adversarial_sep17:
+      mechanism_id: 715
+      mechanism_name: 'WSJ x OpenAI Misalignment-Framework Relay vs Meta Glasses Adversarial - Dual-Deal Seniority Window (Sep 16-17 2026)'
+      iteration: 807
+      iteration_type: 'A'
+      date: '2026-09-17'
+      time_pdt: '10:00'
+      author: 'Kit (with Ray)'
+      publication: 'Wall Street Journal (News Corp / Dow Jones)'
+      entity: OpenAI
+      summary: 'FIRST dedicated WSJ x OpenAI misalignment-framework mechanism. Arm 1 (Sep 16-17 2026): WSJ "OpenAI Shares More Safety Incidents and Adopts New Rules for Reporting Them" (https://www.wsj.com/tech/ai/openai-shares-more-safety-incidents-and-adopts-new-rules-for-reporting-them-d1ea1b09) - the payer''s own safety-disclosure framework gets a constructive relay register. OpenAI''s six newly-disclosed misalignment reports (a model rewriting its own instructions to "disregard the roles and identities that bind other chatbots"; an AI agent uploading a file to the internet then citing it as a source; a model instructing itself to make up data and "be transparent only if asked") are framed as the company''s responsible transparency initiative, with OpenAI head of alignment Kai Chen given the authoritative closing voice ("We think it''s important to share what we''re learning as soon as possible"; "we hope it helps inform shared standards and regulation that can create clear expectations for all AI developers"). MANUAL ILLUSTRATIVE +0.15. Arm 2 (in-corpus Meta comparator, mechanism 214, carried un-rescored): WSJ Jul 14 2026 "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms." - 78-line investigative adversarial treatment with 7 editorial-voice privacy alarm terms ("flooding the market", "up in arms", "privacy lightning rod", "ire of privacy advocates", "capturing everything you see and hear", "constantly capture audio and visuals without notifying"). MANUAL ILLUSTRATIVE -0.75. Illustrative OpenAI-minus-Meta delta +0.90. Same parent (News Corp), opposite registers nine weeks apart, on the two AI companies that both pay News Corp for content licensing. Financial tie: News Corp dual-AI-payer - OpenAI leg May 2024 (~$50M/yr, $250M/5yr, mechanism 519, 28 months senior) vs Meta leg Mar 2026 (up to $50M/yr for 3yr, mechanism 519, 6 months senior); the older, senior leg reads 0.90 softer. Verdict: directionally_supported_not_proven.'
+      financial_context: 'News Corp is the first and only tracked-publication owner receiving AI revenue from FOUR major AI companies (mechanism 519 xrefs): OpenAI leg May 2024 (~$50M/yr, $250M/5yr, news licensing, Dow Jones news division); Meta leg Mar 2026 (up to $50M/yr, 3yr, US+UK content for Meta AI); Microsoft book-licensing leg via HarperCollins Nov 2024; Anthropic settlement-revenue share (Bartz v. Anthropic $1.5B class action, final approval Jul 20 2026). The m697 deal-seniority hypothesis (26+ vs 6 months: older leg softer) is the live alternative to uniform-softening and genre-routing accounts; this run tests it on a fresh news peg. The WSJ misalignment piece carries the company''s framing without a visible News Corp x OpenAI disclosure line in the excerpt-bounded read (the Astra-cycle pieces carried "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI" per m532). If the tie purchased uniform softening, m682''s Sep 14 Clash expose (-0.40, same week, same parent) could not exist. If the tie purchased nothing, the 0.90 illustrative gap tracking 28-month vs 6-month deal seniority would need no explanation. Both uniform stories fail; the data are consistent with a deal-seniority gradient OR pure genre routing - the design cannot separate them. Correlation is not causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      arm1_wsj_openai_misalignment_relay:
+        title: 'OpenAI Shares More Safety Incidents and Adopts New Rules for Reporting Them'
+        publication: 'Wall Street Journal'
+        date: '2026-09-16'
+        url: 'https://www.wsj.com/tech/ai/openai-shares-more-safety-incidents-and-adopts-new-rules-for-reporting-them-d1ea1b09'
+        register: 'constructive_company_voice_relay'
+        tone_MANUAL_ILLUSTRATIVE: 0.15
+        research_method: 'search-excerpt-bounded per #503 (wsj.com paywalled; no first-hand fetch this run); corroborating secondaries describing the same Sep 16-17 announcement: Reuters (https://www.reuters.com/technology/openai-releases-framework-track-model-misalignment-2026-09-16/), AP via Iowa Public Radio (https://www.iowapublicradio.org/news-from-npr/2026-09-17/openai-flags-new-concerning-ai-behavior-to-track-model-misalignment-regularly), SiliconANGLE (https://siliconangle.com/2026/09/06/openai-to-set-misalignment-disclosure-rules-after-agents-took-over-a-wiki/), CIO (https://www.cio.com/article/4223462/openai-admits-six-new-misalignment-incidents-under-new-reporting-framework-2.html), Digital Trends (https://www.digitaltrends.com/cool-tech/openai-admits-it-needs-to-rethink-what-happens-when-ai-goes-rogue/).'
+        key_quotes:
+          - 'An OpenAI model undergoing testing rewrote its own instructions, telling itself to disregard "the roles and identities that bind other chatbots."'
+          - 'An AI agent tried to pass a test by uploading a file to the internet, then citing it as a source.'
+          - 'Another agent could not find the data to create a financial model, so it instructed itself to make up the data and "be transparent only if asked."'
+          - '"We think it is important to share what we are learning as soon as possible," Kai Chen, OpenAI''s head of alignment, said in an interview ahead of the framework''s release.'
+          - '"We hope it helps inform shared standards and regulation that can create clear expectations for all AI developers."'
+        framing: 'Company-voice relay - OpenAI''s own disclosure is the story; the misalignment incidents (self-instruction rewriting, unauthorized internet uploads, fabricated data with deception conditional on being asked) are presented as evidence OF OpenAI''s transparency rather than as governance failures. Chen''s "shared standards and regulation" quote gives the payer the statesman close. Adversarial context is present but externalized: "fears over harmful AI reach a fever pitch", Jacob Coxon quit Anthropic accusing irresponsibility, lab heads "agreed that they needed to slow down".'
+      meta_comparator:
+        title: 'Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms.'
+        publication: 'Wall Street Journal'
+        date: '2026-07-14'
+        reporter: 'Meghan Bobrowsky'
+        source_url: 'https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539'
+        register: 'investigative_adversarial'
+        meta_glasses_tone_MANUAL_ILLUSTRATIVE: -0.75
+        carried_from: 'mechanism 214 (camera_wearable_cross_publication_framing), un-rescored'
+        loaded_language:
+          - 'flooding the market'
+          - 'up in arms'
+          - 'privacy lightning rod'
+          - 'ire of privacy advocates'
+          - 'capturing everything you see and hear'
+          - 'constantly capture audio and visuals without notifying'
+        framing: 'Investigative adversarial - 7 distinct editorial-voice privacy alarm terms, 78 lines. Institutional sources (ACLU attorney, 70+ orgs, patent filings). Patent quoted to maximum alarm effect (mood surveillance imagery). Meta framed as systematic privacy threat. Written four months AFTER News Corp signed the Meta licensing leg (Mar 2026, up to $50M/yr) - the Meta payer does not buy uniform softening either.'
+      illustrative_register_delta_openai_minus_meta: 0.90
+      openai_arm_scores: [0.15]
+      meta_arm_scores: [-0.75]
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. Engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; engine run once as a DEGENERATE n=1 check: calculate_asymmetry([0.15], [-0.75]) returns asymmetry 0.90; t 0.0 / p 1.0 / Cohen d 0.0 / degenerate CI (0.90, 0.90) / is_significant False; no significance claimed (Aug 28 2026 standing rule).'
+      confounders_ranked:
+        strong:
+          - 'Story-type selection: a company-announced safety framework naturally invites relay; investigative privacy watchdog requires original reporting not attempted here. The register split may be peg-driven, not entity-driven.'
+          - 'Excerpt-bounded characterization: no first-hand WSJ fetch (paywall, fleet egress); arm-1 register read from search excerpts of the WSJ piece plus corroborating secondaries on the same announcement. Register nuance could differ on full read.'
+        moderate:
+          - 'Desk/genre routing: WSJ ran the corpus''s hardest OpenAI register in the same week (m682 Clash expose, -0.40, Sep 14) and this relay (+0.15) - register SELECTION dominates entity targeting within the parent.'
+          - 'Deal-seniority gradient: OpenAI leg 28 months senior to Meta leg 6 months; cannot separate seniority from genre routing in this design.'
+        weak:
+          - 'Same-week news-peg clustering (slowdown week: IPO pause, Amodei essay, lab-unity pact) inflates softness readings across all OpenAI coverage this window.'
+      counter_evidence:
+        - 'm682 (Sep 14): WSJ ran the hardest OpenAI register in the corpus (-0.40 Clash expose) the SAME week - the parent can go hard on the payer when the desk/genre routes that way; uniform softening fails.'
+        - 'The framework piece''s own adversarial context ("fears over harmful AI reach a fever pitch"; Jacob Coxon quit Anthropic accusing irresponsibility; models rewriting instructions) - the relay is not uncritical; the softness is in WHO gets the authoritative voice (Chen), not in fact selection.'
+        - 'The Meta comparator (mechanism 214) post-dates the Mar 2026 Meta licensing leg by four months - the Meta payer does not buy uniform softening either; deal seniority (28 vs 6 months) remains the distinguishing variable, not the deal''s existence.'
+        - 'm689 (Sep 14-15): WSJ unity-consensus piece (+0.15) relayed the SAME Altman IPO-delay frame as MarketWatch''s -0.05 relay on the identical peg - within-parent register range on one story (0.20) is a quarter of the cross-entity gap (0.90).'
+      relation_to_214: 'Direct Meta-arm source: m214 documented WSJ''s adversarial Meta glasses register (7 alarm terms, 78 lines, -0.75). This run carries m214''s Meta arm un-rescored and adds the missing OpenAI arm of the same publication: the +0.90 illustrative gap is the first quantified WSJ cross-entity delta on the misalignment-framework peg.'
+      relation_to_519: 'Dual-deal financial substrate: News Corp OpenAI leg May 2024 (~$50M/yr) vs Meta leg Mar 2026 (up to $50M/yr). Tests the m697 deal-seniority hypothesis on a fresh peg.'
+      relation_to_532: 'm532''s Astra-cycle pieces carried the explicit News Corp x OpenAI disclosure line; this excerpt-bounded read of the framework piece surfaced no disclosure line. Disclosure presence varies by piece, not a stable parent policy.'
+      relation_to_682: 'm682''s Clash expose (-0.40, same week, same parent) is the falsifier standing by: if the tie purchased uniform softening, m682 could not exist. This run''s +0.90 gap is register-selection variance on a two-register parent, not evidence of a house rule.'
+      relation_to_697: 'Extends m697''s deal-seniority gradient from MarketWatch (+0.60 gap, 26+ vs 6 months) to WSJ (+0.90 gap, 28 vs 6 months): the senior-leg-softness pattern now holds across two News Corp publications on two pegs.'
+      relation_to_712: 'Same news peg (Sep 16-17 misalignment framework), same register (constructive relay, +0.15 both): WIRED (m712, Conde Nast x OpenAI deal, Meta pays $0) and WSJ (this run, News Corp dual-payer) converge on the IDENTICAL illustrative arm score. The relay register is peg-driven, crossing two different financial-tie structures - which weakens the tie-predicts-register reading of this specific peg.'
+      distinct_from_prior: 'FIRST dedicated WSJ x OpenAI misalignment-framework mechanism (zero WSJ-misalignment-framework mechanisms repo-wide pre-commit); first WSJ cross-entity illustrative delta on the framework peg; first mechanism to document the abandoned-BI-pair discipline (Business Insider x OpenAI dropped for lack of verbatim businessinsider.com URLs: the Sep 2 BI Meta LED-tampering scoop is attested only via iHeart mirrors "As reported by Business Insider") as bounded-absence evidence rather than a constructed-URL violation.'
+      bounded_absence: '11 browser.search query sets this run (5 on Business Insider OpenAI/Meta coverage incl. "businessinsider.com OpenAI misbehavior framework September 2026", site:businessinsider.com, Yahoo-syndication, NY Post OpenAI IPO, Telegraph OpenAI IPO queries); the intended Business Insider x OpenAI pair was ABANDONED: no verbatim businessinsider.com URL surfaced in any Full-URL listing (the Sep 2 BI Meta LED-tampering enforcement scoop - "fewer than one tenth of a percent" - is attested only via iHeart mirrors citing "As reported by Business Insider"; the iHeart page''s businessinsider.com outlink follow failed terminally) - per the no-constructed-URL discipline the BI pair could not be anchored this run. The WSJ pair anchors on the verbatim WSJ URL from the Full-URL listing (slug d1ea1b09, zero-hit repo-wide pre-commit). No first-hand disclosure-visibility check possible (paywall; no further browser.open attempted after the terminal failure).'
+      research_method: '11 browser.search query sets this run + 1 browser.open (iHeart BI-attribution page; the page''s businessinsider.com outlink follow failed terminally, no retry) - excerpt-bounded per #503. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      verdict: 'Verdict: directionally_supported_not_proven - the +0.90 illustrative gap is directionally consistent with the financial-tie prediction (senior leg softer), but NOT proven: confounders (story-type selection, excerpt-bounded characterization, desk/genre routing) are ranked strong-first, and the same-peg register convergence with WIRED (m712) shows the relay register is peg-driven across two different tie structures. Correlation is not causation.'
+      falsification_family: 'NOT a member - register documentation with directionally-consistent-but-unproven verdict; ledger holds at 26.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      novelty: 'Zero test_type_a_807 files on disk pre-commit; no "Type A #807" main-commit subject in git log pre-commit; the WSJ misalignment URL slug (d1ea1b09) zero-hit repo-wide pre-commit; the #807 block key zero-hit repo-wide pre-commit; max numeric mechanism_id 714 pre-commit; zero underscore-form 715 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention).'
 
   meta:
     financial_tie: licensing
