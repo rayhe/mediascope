@@ -54,7 +54,7 @@ LM_URL = (
     "from-using-content-11789457353087.html"
 )
 NEXT_SIBLING = "\n  anthropic:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "7ccb148bfc405282607f6c6924db25b03fe0e431"
 
 
 def _read(rel):
