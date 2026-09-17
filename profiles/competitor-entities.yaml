@@ -4632,6 +4632,82 @@ entities:
       verification:
         yaml_parse_clean: true
 
+    openai_village_media_first_canada_news_deal_sep2026:
+      mechanism_id: 714
+      iteration: 804
+      iteration_type: C
+      rotation: 'Type C'
+      date_analyzed: '2026-09-17'
+      discovery_date: '2026-09-17'
+      time_pdt: '07:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      author: 'Kit (with Ray)'
+      mechanism_name: 'OpenAI x Village Media First Canadian News Deal (Announced Sep 16 2026, Axios/Sara Fischer) - Funding + API Credits + Technical Support for the Open Door Community Navigator in Exchange for Attributed Citation in ChatGPT; the Local-News Template Crosses into Canada'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      overview: 'FIRST dedicated corpus mapping of OpenAI''s first news deal in Canada: a partnership with Village Media, one of Canada''s largest digital-only local news networks (network of almost 30 local news websites, many under the Today branding such as Cambridge Today and Stratford Today), announced Sep 16 2026 via Axios (Sara Fischer) and carried in the Press Gazette AI-deals tracker''s Sep 17 2026 update. Deal structure: OpenAI provides a mix of funding, API credits, and technical support for Village Media to launch Open Door, described as an AI-powered community health and care navigator built on comprehensive local information, launching initially in Sault Ste. Marie, Ontario (residents privately and anonymously describe needs in everyday language, such as emergency food assistance, healthcare, housing or a safe place to stay, and are directed to relevant local organisations). In return, Village Media content will be cited in ChatGPT. OpenAI VP of media and entertainment Varun Shetty: AI can help local news organisations run their operations and businesses more effectively and build useful new products like Open Door; the partnership will help make it easier for people using ChatGPT and Search to find reliable, local, fact-based local information. Village Media spokesperson (to Axios): We consider the overall balance of the agreement to be fair. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+      deal_parties:
+        payer_counterparty: 'OpenAI - AI lab; VP of media and entertainment Varun Shetty quoted'
+        publisher_counterparty: 'Village Media - one of Canada''s largest digital-only local news networks; network of almost 30 local news websites, many under the Today branding (Cambridge Today, Stratford Today)'
+        consideration_openai: 'funding (amount undisclosed), API credits (value undisclosed), technical support (scope undisclosed) for the Open Door product build'
+        consideration_village_media: 'attributed citation of Village Media content in ChatGPT'
+        product: 'Open Door - AI-powered community health and care navigator built on comprehensive local information; launching initially in Sault Ste. Marie, Ontario'
+      local_news_template: 'Extends the corpus''s OpenAI local-news template: Axios x OpenAI (Jan 2025, the US leg: OpenAI funding enabled Axios to hire reporters and absorb startup costs of new local markets, in exchange for permission to use Axios content for training and access to its feed for retrieval, per the AdWeek corpus context) into a second market, Canada, in Sep 2026. Both legs share the same mechanism skeleton: OpenAI-side funding/product support in exchange for an OpenAI-side content/attribution surface. The Village Media leg shifts the OpenAI-side consideration from newsroom hiring (Axios) to product co-build (Open Door) and the publisher-side surface from training+retrieval (Axios, Jan 2025) to attributed citation (Village Media, Sep 2026). The template is converging on the zero-fee-disclosed attribution-discovery form (mechanisms 609/660) rather than the 2023-2025 paid training-licensing form (AP, Axel Springer, News Corp).'
+      attribution_discovery_continuity: 'Extends mechanisms 609 (OpenAI India attribution deals Sep 7-8: BCCL, Indian Express Group) and 660 (the fee-template contrast layer) one week forward and one country outward: the same zero-fee-disclosed attribution-discovery template, the same Varun Shetty media-partnerships voice (Shetty quoted on BCCL Sep 7 via Storyboard18/mediabrief and on Village Media Sep 16 via Axios), the same editorial-independence untested but claimed frame. The India legs were national publishers; this is the first LOCAL-news application of the template outside the US, and the first Canadian publisher entry point in the corpus.'
+      contrast_paid_template: 'Against mechanism 519 (News Corp x OpenAI May 2024, >$250M/5yr cash plus tech credits, the largest documented OpenAI publisher payment): the Village Media leg discloses no cash licensing fee and frames consideration as product-build support (funding/API credits/technical support) plus citation, consistent with the m660 contrast class of zero-fee-disclosed attribution deals. Whether API credits and funding are economically equivalent to a licensing fee is unmeasured; no confirmation either way.'
+      bounded_absences_this_run:
+      - 'News Corp additional-arrangements watch (mechanism 630): sixth-leg watch unchanged; Sep 2026 searches surface only May 2024 deal re-indexes (TheWrap, Metro US, SiliconANGLE, Bloomberg Law, Digital Trends - all 846-847 days old), zero new arrangements reported'
+      - 'Apple Siri AI publisher deals (WSJ Aug 12 2026 nine-figure variable-pay proposal, mechanism 606 watch): zero announced closures as of Sep 17 2026; the Sep 14 MacRumors piece on Siri AI third-party model delegation is architecture coverage, not a publisher deal'
+      - 'Google pay-per-value AI licensing pilot (mechanisms 702/708): no new status beyond the Sep 14-15 Digiday/AdExchanger reporting; participants still described as dozens approached, early returns peanuts vs ad revenue'
+      - 'UMG x ElevenLabs (Sep 10-11 2026): music-vertical licensing agreement, rejected per the #729/#759/#799 publication-scope rule (music, not publishers)'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        text: 'Excerpt-bounded evidence - the Axios original was reached only via the Editor and Publisher summary and the Press Gazette tracker entry; no first-hand read of the deal announcement; all financial terms (funding amount, API credit value, technical support scope, duration) undisclosed'
+      - rank: 2
+        strength: strong
+        text: 'Attribution-discovery partnerships are structurally different from training-data licences; the Village Media leg answers the citation/distribution demand, not the training-compensation demand; the funding/API-credits consideration may or may not be economically equivalent to a licensing fee (unmeasured)'
+      - rank: 3
+        strength: moderate
+        text: 'Local-news networks are not coverage producers of national AI-beat journalism; Village Media covers Sault Ste. Marie and ~30 local markets, so any coverage-tone transmission channel to the tracked publications is indirect at best'
+      - rank: 4
+        strength: moderate
+        text: 'Single-source announcement (Axios exclusive via Sara Fischer); the balance-of-the-agreement-is-fair quote is publisher-side framing; OpenAI has not published its own release in the surfaced evidence'
+      - rank: 5
+        strength: weak
+        text: 'Open Door is a one-city pilot launch (Sault Ste. Marie initially); the deal''s realised scale is bounded until the product rolls out beyond the launch market'
+      strongest_counterargument: 'The partnership is a local-news survival play, not a coverage-capture play: OpenAI-side funding/API credits/technical support go into a community-services product (food, housing, healthcare navigation), and the publisher-side surface is attributed citation - the specific fix publishers have been asking for since the discovery/attribution disputes. Per the #609/#614 qualitative boundary no tone claim is made, and the counterfactual (a national AI-beat outlet changing register) does not arise here: Village Media''s ~30 local sites do not produce national AI coverage. If anything, the mechanism documents a new OpenAI playbook leg (product co-build as consideration) rather than an incentive-to-soften. Any incentive reading must clear this bar.'
+      statistical_discipline:
+        scorer: none
+        tone_scores: 'NOT_SCORED'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      falsification_family: 'NOT a member of the falsification family; ledger holds at 26'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C financial-incentive documentation leg; engine not run; tone scores NOT_SCORED per the Aug 28 2026 standing rule.'
+      source_urls:
+      - https://www.editorandpublisher.com/stories/openai-strikes-first-news-deal-in-canada,263557
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      research_method: '3 browser.search query sets this run: (1) AI publisher licensing deal news organization September 2026 (since=2026-09-15) - surfaced the Press Gazette tracker Sep 17 2026 update carrying the Sep 17 Village Media OpenAI entry; (2) Apple Siri AI publisher licensing talks news September 2026 - status check, zero closures surfaced (MacRumors Aug 12 WSJ original + Sep 14 model-delegation architecture piece are not publisher deals); (3) OpenAI Village Media partnership Canada local news September 2026 (since=2026-09-16) - surfaced the Axios/Sara Fischer Sep 16 2026 exclusive via Editor and Publisher (Posted Wednesday, September 16, 2026 9:00 am; Why it matters: marks OpenAI''s first news deal in Canada). Dead-end/rejected candidates this run: News Corp additional arrangements (May 2024 re-indexes only, mechanism 630 watch unchanged); Apple Siri publisher closures (zero, mechanism 606 watch unchanged); Google pay-per-value pilot (no new status beyond Sep 14-15 reporting, mechanisms 702/708); UMG x ElevenLabs Sep 10-11 (music-vertical, rejected per #729/#759/#799); Kinex Media OpenAI Partner Network Select Partner (Sep 16, digital agency, not a publisher); ALL IN 2026 conference notice (irrelevant). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Search-excerpt-bounded per #503 (0 browser.open first-hand reads this run). No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated corpus mapping of the OpenAI x Village Media partnership (announced Sep 16 2026). Zero Village Media hits repo-wide pre-commit (case-insensitive git grep on profiles/ tests/ docs/ at HEAD, verified this run); zero Open Door hits repo-wide pre-commit; both source URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 713 pre-commit; zero underscore-form 714 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); block key zero-hit repo-wide pre-commit. Distinct from mechanism 609 (OpenAI India national-publisher attribution deals, different country, different publisher class); distinct from the corpus Axios x OpenAI local-news context (US, Jan 2025, newsroom-hiring consideration, training+retrieval surface). No em dashes; ASCII-only.'
+      test_file: 'tests/test_type_c_804_openai_village_media_first_canada_news_deal_sep17_7am.py'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 804
+        type: 'C'
+        date: '2026-09-17 07:00 PDT'
+
   anthropic:
     display_name: Anthropic
     aliases:
