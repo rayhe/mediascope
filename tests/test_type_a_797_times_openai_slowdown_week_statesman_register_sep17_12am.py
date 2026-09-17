@@ -64,7 +64,7 @@ NEXT_ID_MARKER = "mechanism" + "_710"
 NEXT_ID_NUMERIC = "mechanism_id: 710"
 
 # Patched post-commit in the anchor followup per the #565 sequence.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "06673822a6e46c38eb943c8cff9d98991727bcb7"
 
 
 def _repo_grep(needle, roots=("profiles", "tests", "docs")):
