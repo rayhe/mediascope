@@ -38,7 +38,7 @@ M_ID = 713
 MECH_ID_MARKER = "mechanism" + "_713"
 NEXT_ID_MARKER = "mechanism" + "_714"
 NEXT_ID_NUMERIC = "mechanism_id: 714"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "afd8fef"
 
 RESEARCH_PROFILE = os.path.join(REPO, "profiles", "competitor-coverage-research.yaml")
 CAREERS_PROFILE = os.path.join(REPO, "profiles", "careers", "journalists.yaml")
