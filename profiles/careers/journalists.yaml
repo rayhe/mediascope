@@ -11045,6 +11045,7 @@ journalists:
   - AI_wearables
   - consumer_electronics
   name: Victoria Song
+  mechanism_ids: [593, 605, 719]
   notes: 'Key migrations: PC Magazine → Gizmodo → The Verge. 13+ years wearables/health tech expertise. Author of The Verge "Optimizer" newsletter. Most authoritative wearables reviewer in mainstream tech media. Meta Ray-Ban coverage spans product reviews and privacy/surveillance analysis. Migration from Gizmodo (declining G/O Media) to The Verge (well-resourced Vox/PMC) provides natural experiment for institutional framing effects. Not investigative  -  product reviewer with increasing editorial voice on surveillance/privacy. Korean-American cultural context visible in Samsung/Korean tech coverage. JULY 2026 KEY COVERAGE: (1) Jul 7  -  broke the Meta LED tamper-proof update story at The Verge, reporting Meta will disable the camera if the privacy LED is physically tampered with or destroyed. Story picked up by Techmeme (219 pts), Gizmodo (citing "as noticed by the Verge''s Victoria Song"), PetaPixel, RoadToVR, 9to5Google, TheStreet, and 8+ other outlets. This is the single most widely-cited
     original report on the Jul 7 Meta privacy update. (2) Her LED tamper-proof article directly created a same-day juxtaposition narrative when FT''s Hannah Murphy published the "super sensing" always-on prototype report Jul 8, producing a "defend the light / plan to bypass the light" contradiction frame that TheStreet, TechTimes, and others explicitly weaponized. (3) Interviewed Alex Himel (Meta VP Wearables) for RoadToVR''s Jul 7 piece  -  Himel told Song the privacy update was meant to follow the cheaper Meta Glasses launch. (4) Vergecast guest host covering accessibility + smart glasses (low-vision community episode with Be My Eyes CEO Mike Buckley and visually impaired reader Jason Valley). Also co-hosted Vergecast on Meta Ray-Ban Display with Mia Sato answering "do smart glasses belong in the bedroom?"  -  a framing that normalizes the surveillance debate through intimate personal scenarios. (5) TWiT appearance with Leo Laporte reviewing Meta Ray-Ban Display glasses after international
     travel field testing. NARRATIVE ROLE: Victoria Song has become the single most influential journalist in shaping the Meta wearables privacy narrative. Her Jul 7 story is the origin node for the entire "Meta defending privacy while planning to abandon it" frame that dominated the Jul 7-12 news cycle. Not adversarial-investigative  -  her framing power comes from product authority (13+ years) making privacy concerns land as credible rather than activist. SOURCE NETWORK: Quotes Alex Himel (Meta VP Wearables) directly  -  has active working relationship with Meta wearables PR.
@@ -11254,6 +11255,80 @@ journalists:
       artifact_readiness: 'No analysis.json update warranted. Register-conditioned refinement of an in-corpus journalist model (Song); illustrative-only scorer output; no new empirical finding at the publication level.'
       novelty: 'First dedicated Type B escalation audit on Victoria Song''s Jul 2026 Meta trilogy. Zero ''escalation_audit'' keys in profiles/*.yaml pre-commit (grep verified this run). Zero test_type_b_618 files on disk (glob verified this run). No Type B commit with 618 in the title (git log --grep verified this run). The trilogy tones are carried from #492/#617 at identical values (no rescoring); the Apple Jul 13 arm, Samsung Oct 2025 mirror verification, and the register-conditioned model are new this run. Distinct from mechanism #75 (bifurcation at piece level, no Jul 20/27 escalation items) and from the #599 Type C pin (financial-stack verification, no escalation audit). Mechanism id 605 is the next free profiles mechanism id (max pre-commit 604, the-verge.yaml #617). Rotation: 617 A -> 618 B.'
       research_method: '5 browser.search query sets this run: (1) Victoria Song Samsung Galaxy Glasses theverge + Snap/Apple Vision Pro alternates; (2) Victoria Song Meta Ray-Ban Jul 2026 trilogy verification; (3) quoted Victoria Song Samsung Galaxy XR hands-on + Meta Ray-Ban Display/Snap alternates; (4) Victoria Song Meta Ray-Ban Display review Sep 2026 + Google Android XR alternates; (5) quoted Leaning into pervert glasses title. theverge.com direct fetch policy-blocked per standing rule - all items excerpt/listing-bounded or carried from #492/#599/#115 lineage at identical tones, stated explicitly. URLs verbatim from Full-URL listings; none constructed. No zero-coverage claims per iteration-492 rule (bounded-listing absence stated as bounded). No em dashes.'
+    type_b_813_victoria_song_sep2026_display_existential_vs_watch_ambient_muted_sep17:
+      mechanism_id: 719
+      iteration: 813
+      date: '2026-09-17 16:00 PDT'
+      type: B
+      scheduled_job_id: 'mediascope-daily-iteration'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      design: 'Type B journalist cross-entity tracking, same-journalist same-publication product-register pair, Sep 2026. Question: does mechanism 605''s register-conditioned model (fair in product register, adversarial in privacy register) survive a same-week, same-register Meta-vs-Apple product-review pair? Meta arm: Song''s own Optimizer newsletter reflecting on her Meta Ray-Ban Display review (''my recently published Meta Ray-Ban Display review and the minor existential crisis it had sparked''; ''these glasses were a marvel of modern technology. Yet, they posed significant privacy and cultural questions, which left me torn between these concerns and the exciting possibilities the technology offered''; ''glasshole behavior I fretted about in my review''; ''I feel creepy recording video or taking photos'' commuting; read first-hand this run, 110 rendered lines, internewscast mirror of the Verge newsletter, byline Victoria Song / The Verge). Apple arm: The Verge ''Faster health tracking collides with unfinished AI'' (Sep 17 2026, Apple Watch Series 12 review; byline attributed Victoria Song via the appleinsider Sep 17 roundup; 90/100 via TechSpot aggregation, ''the best Apple Watch yet''; praised faster charging and one-handed gesture controls, heart-rate close to a Polar H10; several major health and Audio Intelligence features unavailable during review; privacy concerns on ambient listening ''may persist despite Apple''s safeguards''; excerpt-bounded per #503). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Optimizer: counting Renaissance butts in Rome with the Meta Ray-Ban Display (newsletter reflection on her Display review)'
+        date: '2026-09'
+        outlet: 'the-verge (Optimizer newsletter, via internewscast mirror; read first-hand this run)'
+        author_byline: 'Victoria Song'
+        genre: 'newsletter reflection on own product review'
+        evidence_tier: 'first_hand_read_mirror'
+        key_quotes:
+        - 'Review reflection (observed this run): ''my recently published Meta Ray-Ban Display review and the minor existential crisis it had sparked.'''
+        - 'Product verdict (observed this run): ''these glasses were a marvel of modern technology. Yet, they posed significant privacy and cultural questions, which left me torn between these concerns and the exciting possibilities the technology offered.'''
+        - 'Self-policing (observed this run): ''A part of me scolded myself for engaging in the kind of glasshole behavior I fretted about in my review.'''
+        - 'Daily-life use (observed this run): ''Commuting to The Verge office, I feel creepy recording video or taking photos.'''
+        - 'Hardware verdict (observed this run): ''smart glasses often don''t make sense to wear all day, every day. Battery life is too short. The glasses are too big, clunky, and heavy.'''
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        url: 'https://internewscast.com/tech/exploring-renaissance-art-with-meta-ray-ban-a-unique-journey-through-romes-masterpieces/'
+      apple_arm:
+        title: 'Faster health tracking collides with unfinished AI'
+        date: '2026-09-17'
+        outlet: 'the-verge'
+        author_byline: 'Victoria Song (attributed via appleinsider roundup)'
+        genre: 'embargo-week product review'
+        evidence_tier: 'excerpt_bounded_secondary'
+        key_quotes:
+        - 'Sensor verdict (appleinsider roundup): ''Victoria Song found the Apple Watch Series 12''s redesigned sensors delivered heart-rate readings close to a Polar H10 chest strap.'''
+        - 'Praise (appleinsider roundup): ''Song also praised faster charging and improved one-handed gesture controls.'''
+        - 'Privacy caveat (appleinsider roundup): ''She also noted privacy concerns may persist despite Apple''s safeguards for ambient listening features.'''
+        - 'Score (TechSpot aggregation of the Verge review): 90/100 - ''the best Apple Watch yet.'''
+        - 'Missing features (appleinsider roundup): ''Several major health and Audio Intelligence features were unavailable during Song''s review period.'''
+        tone_MANUAL_ILLUSTRATIVE: 0.30
+        url: 'https://appleinsider.com/articles/26/09/17/apple-watch-series-12-and-apple-watch-ultra-4-reviewers-praise-health-upgrades'
+      illustrative_delta_meta_minus_apple: -0.40
+      delta_calc: '(-0.10) - (0.30) = -0.40'
+      confounders_ranked:
+        strong:
+        - 'Genre asymmetry: the Meta arm is a confessional newsletter reflection (invites existential framing); the Apple arm is an embargo-week product review (constrains it). The register is product-adjacent, not identical.'
+        - 'Privacy-vector asymmetry: glasses point a camera at third parties (bystander exposure); the watch''s Audio Intelligence listens from the wearer''s own wrist (first-party ambience). Asymmetric framing may be domain-justified, not entity-driven.'
+        - 'Review-cycle asymmetry: the Meta arm reflects months of lived use plus a Rome field trip; the Apple arm is a launch-week review with major features (Siri Recap, Live Rewind) still in beta and untested.'
+        moderate:
+        - 'Score-source asymmetry: the 90/100 is TechSpot''s aggregation of the Verge review, not a Verge-published score; the Meta arm has no numeric score in the excerpted text.'
+        - 'Temporal skew within the week: the newsletter reflects on a review published weeks earlier; the Watch review is Sep 17 embargo-day.'
+        weak:
+        - 'Authorial selection: Song chose the Rome trip as the newsletter peg; travel-use positivity may inflate the Meta product verdict independent of privacy framing.'
+      counterevidence:
+      - 'Song''s Sep 2025 Display hands-on: ''best glasses I have ever tried'' (in-corpus, #618) - she is not anti-Meta in product register historically.'
+      - 'Song''s Feb 2024 verdict that the Meta approach ''may be BETTER than Apple''s'' (in-corpus, #618).'
+      - 'She DID flag Apple Audio Intelligence privacy concerns (''may persist despite Apple''s safeguards'') - the Apple arm is not privacy-silent.'
+      - '#599: Song scored Google''s first-gen watch (-0.35) harsher than Meta''s first-gen Display (-0.10) - the money gradient fails at the writer level.'
+      - '#723 (Cherlynn Low, Engadget) ran the same Apple Audio Intelligence privacy topic as a control replication - the ambient-listening concern is industry-wide, not Song-specific.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. Engine NOT run per the Aug 28 2026 standing rule; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; tone NOT_SCORED by engine; is_significant False; no significance claimed.'
+      verdict: 'EXTENDS mechanism 605 and NARROWS its product-register fairness claim. #618''s register-conditioned model (fair in product register, adversarial in privacy register) was built on a Jul 2026 privacy-editorial trilogy vs product-news arms. This Sep 2026 same-register pair shows the privacy register BLEEDING into her Meta product coverage (''minor existential crisis'', ''glasshole behavior'', ''I feel creepy'') while staying muted in her Apple product coverage of a device shipping always-on ambient-audio features (Siri Recap summarizes your conversations; Live Rewind rewinds nearby speech) - one contained caveat inside a 90/100 ''best Apple Watch yet'' review. The gradient is bounded (illustrative delta -0.40, n=1 pair, strong confounders) and does NOT overturn the model: it refines it from ''fair in product register'' to ''fair in product register except where the product itself is a face-worn camera, where the privacy register activates.'' NOT a falsification-family member (ledger holds at 26); NOT a pure asymmetry pin; no analysis.json update.'
+      falsification_family: 'NOT a falsification-family member; ledger holds at 26.'
+      no_analysis_json_update: true
+      financial_context: 'Carried from #599 (verified Sep 8 2026): Vox Media-OpenAI licensing (May 29 2024, multiyear, still active), Google programmatic ad-revenue dependence, Meta $0. Apple pays nothing in the Vox AI-revenue stack, so the money gradient predicts neutral Apple - the observed Apple softness (+0.30, 90/100) is writer/genre-driven, not deal-driven. The incentive map is verified money; its writer-level behavioral reach stays bounded.'
+      cross_refs:
+      - '#605 (Type B #618: Victoria Song Jul 2026 escalation audit - this run extends and narrows its register-conditioned model)'
+      - '#593 (Type C #599: Song writer-level Vox-deal behavioral pin - product-register constancy, falsification family)'
+      - '#75 (Victoria Song privacy vocabulary bifurcation - mechanism #75 lineage)'
+      - '#723 (Cherlynn Low, Engadget: Apple Audio Intelligence control replication - same ambient-listening topic, different journalist)'
+      - '#668 (Lily Hay Newman: Meta trust deficit vs Apple Watch listening reassurance - directly adjacent cross-entity topic)'
+      block_key: 'type_b_813_victoria_song_sep2026_display_existential_vs_watch_ambient_muted_sep17'
+      author: 'Kit (with Ray)'
+      artifact_readiness: 'No analysis.json update warranted. Same-register refinement of an in-corpus journalist model (Song, mechanism 605); illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First Type B same-register Sep 2026 pair on Victoria Song: her Meta Ray-Ban Display review reflection (Optimizer newsletter, Sep 2026, first-hand read this run) vs her Apple Watch Series 12 review (Sep 17 2026). Zero ''Faster health tracking collides with unfinished AI'' hits repo-wide pre-commit (grep verified this run). Zero test_type_b_813 files on disk (glob verified this run). No Type B commit with 813 in the title (git log --grep verified this run). Block key zero-hit repo-wide pre-commit. Max numeric mechanism_id 718 pre-commit; zero underscore-form 719 keys by designed keying (needles format-built, no literals carried per the #715 convention). Distinct from #618 (Jul 2026 trilogy, privacy-editorial register vs product-news arms) and #599 (Type C financial pin). Mechanism id 719 is the next free profiles mechanism id (max pre-commit 718, the #812 Type A m718). Rotation: 812 A -> 813 B.'
+      research_method: '9 browser.search query sets + 2 browser.open first-hand reads this run. Searches: (1) Victoria Song Verge Meta Ray-Ban Display review; (2) Victoria Song Verge Apple Watch review September 2026; (3-4) Lauren Goode WIRED Meta Connect / Apple event September 2026; (5-6) Boone Ashworth WIRED Meta Ray-Ban Display / Apple Watch Series 12; (7) WIRED Apple Watch Series 12 review byline; (8) theverge.com Apple Watch Series 12 review Victoria Song; (9) theverge.com Victoria Song Meta Ray-Ban Display review. Opens: appleinsider Sep 17 roundup (97 rendered lines, byline attribution Victoria Song on the Verge section); internewscast mirror of Song''s Optimizer newsletter (110 rendered lines, byline Victoria Song / The Verge). theverge.com direct fetch policy-blocked per standing rule - the Watch review is excerpt-bounded via the appleinsider roundup and the TechSpot 90/100 aggregation per #503. Lauren Goode ruled out (Type B #436 + beat-shift commits already cover her). Boone Ashworth ruled out (Type B #431). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. No em dashes.'
+      test_file: 'tests/test_type_b_813_victoria_song_sep2026_display_existential_vs_watch_ambient_muted_sep17_4pm.py'
 - career:
   - beat: daily news
     end: 2015
