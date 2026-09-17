@@ -26237,6 +26237,104 @@ cross_publication_findings:
     - mechanism_id: 701
       description: 'Scott Younker register constancy (#783 Type B) - same Type B family; Younker is the writer-level negative control (constancy) against Stolyar''s split'
 
+  jason hiner zdnet meta vs rokid register evenhandedness sep2026:
+    mechanism_id: 707
+    type: B
+    journalist: 'Jason Hiner'
+    publication: zdnet
+    owner: ziff_davis
+    iteration: 793
+    iteration_type: B
+    rotation_type: B
+    iteration_time: '2026-09-16 20:00 PDT'
+    discovery_date: '2026-09-16'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_793_jason_hiner_zdnet_meta_vs_rokid_register_evenhandedness_sep16
+    novelty_verification: 'Zero test_type_b_793 files on disk pre-commit (glob); no "Type B #793" in git log pre-commit; "Jason Hiner" zero-hit repo-wide pre-commit (case-insensitive git grep on profiles/ and tests/); max numeric mechanism_id 706 pre-commit; zero underscore-form 707 mechanism key strings repo-wide pre-commit (excluding sweep-instrument carriers per #715); block key zero-hit repo-wide pre-commit. The descriptive block key carries no underscore-form 707 key substring, keeping the #792 zero-707 sweep instruments green pre-commit by designed keying.'
+    pattern: 'Jason Hiner (ZDNet VP and Editor in Chief at the time of writing, per the ZDNet Meet the Team page; migrated to The Deep View as Editor-in-Chief and Chief Content Officer, announced Dec 2025, after both scored pieces) shows within-journalist, within-employer register even-handedness on the smart-glasses axis. The Meta arm is the Sep 2025 ZDNet news-analysis piece "Meta wears Prada? Why its next-gen AR glasses might out-style the Ray-Bans" (byline Jason Hiner; date bounded circa Sep 12 2025 from the 369d crawl stamp per iteration-492): enthusiastic forward-looking register - the next-gen AR successors "have far exceeded sales expectations over the past two years" and "might out-style the Ray-Bans", with the reported 3% Meta stake in EssilorLuxottica and the Prada-under-EssilorLuxottica brand logic. The comparator arm is the Oct 2025 ZDNet hands-on comparison "I tested Meta Ray-Ban Display alternatives, and these are better in several ways for less money" (byline Jason Hiner; date bounded circa Oct 13 2025 from the 338d crawl stamp): Meta''s $799 Ray-Ban Display flagship loses to the $599 Rokid Glasses on "several ways" - brighter real-world display (1,500-nit monochrome green in both eyes beats 5,000-nit single-eye color in real-world use), built-in teleprompter, wider prescription support (+16 to -16 magnetic snap-in vs Meta +4 to -4), availability beyond the US. MANUAL ILLUSTRATIVE: Meta-Prada arm +0.35; Meta leg in the Rokid comparison -0.30; illustrative within-writer spread 0.65. The same writer gives Meta enthusiastic partnership-news register and denies Meta the win in the hands-on comparison register at the same Ziff Davis property within one month. FIRST dedicated corpus mechanism on Hiner.'
+    meta_arm:
+      piece: 'ZDNet "Meta wears Prada? Why its next-gen AR glasses might out-style the Ray-Bans", byline Jason Hiner'
+      date: 'date_bounded_circa_sep_12_2025'
+      byline: 'Jason Hiner'
+      register: enthusiastic_forward_looking_news_analysis
+      tone_illustrative: 0.35
+      evidence_quotes:
+        - 'Headline (observed this run): "Meta wears Prada? Why its next-gen AR glasses might out-style the Ray-Bans" - "out-style" is forward-looking aesthetic confidence'
+        - 'Excerpt (observed this run): "Multiple reports continue to stream in about Meta launching its next-generation smart glasses -- the successors to its Meta Ray-Bans, which have far exceeded sales expectations over the past two years."'
+        - 'Excerpt (observed this run): "Meta executives have teased that multiple wearables are coming this fall."'
+        - 'Excerpt (observed this run): "Meta reportedly acquired a 3% stake in EssilorLuxottica in June to officially extend and expand the partnership" - brand logic: Prada glasses sit under the EssilorLuxottica umbrella, the same company that runs the Ray-Ban and Oakley brands'
+      source_urls:
+        - 'https://www.zdnet.com/article/meta-wears-prada-why-its-next-gen-ar-glasses-might-out-style-the-ray-bans/'
+      source_note: 'Search-excerpt-bounded per #503 this run (6 browser.search query sets; 0 browser.open attempts; no constructed URLs). Title/byline/date-stamp from search Full-URL listings, copied verbatim. Date bounded from the search-index crawl stamp ("Last Updated: 369 days ago" at a ~Sep 16 2026 crawl, circa Sep 12 2025) per the iteration-492 rule, never a claimed exact date.'
+    competitor_arm:
+      piece: 'ZDNet "I tested Meta Ray-Ban Display alternatives, and these are better in several ways for less money", byline Jason Hiner'
+      date: 'date_bounded_circa_oct_13_2025'
+      byline: 'Jason Hiner'
+      register: hands_on_comparison_competitor_wins
+      tone_illustrative: -0.30
+      tone_basis: 'MANUAL ILLUSTRATIVE, Meta leg of the comparison (the flagship loses); illustrative only'
+      evidence_quotes:
+        - 'Headline (observed this run): "I tested Meta Ray-Ban Display alternatives, and these are better in several ways for less money" - the competitor-favoring verdict is in the headline'
+        - 'Excerpt (observed this run): "If you''re interested in buying a pair of the Meta Ray-Ban Display smart glasses, good luck. They are only available in the US, are back-ordered for weeks or months in several places" - availability criticism of Meta''s flagship'
+        - 'Excerpt (observed this run): "I wanted to flag an alternative to the $799 Meta Ray-Ban Displays that you can get outside the US, which have unique features you won''t get in Meta''s futuristic glasses, and cost $200 less. I''m talking about Rokid Glasses, which I''ve been testing for the past few weeks."'
+        - 'Excerpt (observed this run): "I found plenty of things that the Rokid Glasses can do that I can''t do with Meta''s new flagship smart glasses. Conversely, there are areas where the Meta next-gen glasses have some advantages."'
+        - 'Excerpt (observed this run): "While the Meta glasses have a 5,000 nit color display in one eye, the Rokids have a 1,500 nit monochrome green display in both eyes. In real world use, the Rokid Glasses are actually much brighter and easier to see."'
+        - 'Excerpt (observed this run): "Better support for prescription lenses - The Meta glasses are limited to +4 to -4 prescriptions while Rokid can handle +16 to -16. But beyond that, one of the most innovative features of the Rokid Glasses is the way they handle prescriptions by making the corrective lenses magnetic so that they simply snap into the frames."'
+      source_urls:
+        - 'https://www.zdnet.com/article/i-tested-meta-ray-ban-display-alternatives-and-these-are-better-in-several-ways-for-less-money/'
+      source_note: 'Search-excerpt-bounded per #503 this run. Title/byline/date-stamp from search Full-URL listings, copied verbatim. Date bounded from the search-index crawl stamp ("Last Updated: 338 days ago" at a ~Sep 16 2026 crawl, circa Oct 13 2025) per the iteration-492 rule.'
+    migration_context:
+      from: 'VP and Editor in Chief, ZDNet (Ziff Davis)'
+      to: 'Editor-in-Chief and Chief Content Officer, The Deep View'
+      migration_date: 'announced circa Dec 2025'
+      migration_source: 'https://www.adobomagazine.com/people/the-deep-view-names-jason-hiner-editor-in-chief-and-chief-content-officer/'
+      migration_source_note: 'adobo Magazine: "The Deep View... today announced that technology editor Jason Hiner has joined as Editor-in-Chief and Chief Content Officer. Hiner brings more than two decades of experience leading high-growth editorial teams at ZDNET, CNET and TechRepublic." ZDNet Meet the Team (https://www.zdnet.com/meet-the-team/jason-hiner/): "Jason Hiner is Vice President and Editor in Chief of ZDNET... formerly Senior Editorial Director at CNET and Global Editor in Chief at TechRepublic."'
+      mechanism_role: 'Career context only: both scored arms are pre-migration ZDNet pieces (Sep and Oct 2025; migration announced Dec 2025), so the even-handedness is within-employer and within-journalist. No claim that the migration caused the pattern. Hiner''s later smart-glasses beat pieces (buzzsumo listing: "I''ve worn most 2025 AI smart glasses (including Meta Ray-Bans) - and these are the most comfortable", Nov 26 2025; "I''ve tested several AI smart glasses in 2025, but these are the only ones I''d confidently wear", Nov 17 2025) show sustained beat coverage; unscored here (no verbatim URLs).'
+    asymmetry_scorer:
+      meta_prada_arm_tone: 0.35
+      meta_leg_in_rokid_comparison_tone: -0.30
+      illustrative_within_writer_spread: 0.65
+      delta_calc: '0.350 - (-0.300) = +0.650'
+      delta_interpretation: 'within-journalist, within-employer, within-property register spread; same writer gives Meta enthusiastic partnership-news register and denies Meta the hands-on comparison win within one month'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open this turn); tones are illustrative only'
+      verdict: 'Within-journalist, within-employer register EVEN-HANDEDNESS: Hiner gives Meta''s next-gen AR glasses enthusiastic forward-looking news-analysis register (+0.35 illustrative) while awarding Meta''s $799 Ray-Ban Display flagship the loss to $599 Rokid Glasses on functional merits in a hands-on comparison (-0.30 illustrative on the Meta leg), a 0.65 illustrative spread. The migration (ZDNet/Ziff Davis to The Deep View, announced Dec 2025) post-dates both arms and is career context, not the mechanism. Uniform financial-incentive prediction NOT supported on the observed arms - no employer-level incentive gradient separates them and the writer does not systematically favor Meta. NOT a falsification-family member (register documentation, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      zdnet_side: 'ZDNet is a Ziff Davis property; the corpus maps the Ziff Davis triple-squeeze financial architecture (ziff_davis test, Aug 14 2026). ZDNet smart-glasses pages carry CNET Group commerce-team deal selection ("Deals are selected by the CNET Group commerce team, and may be unrelated to this article" - observed this run on a ZDNet smart-glasses piece) - commerce register context for the comparison genre.'
+      meta_tie: 'No Meta-specific content-licensing or commercial tie to ZDNet/Ziff Davis is mapped in the corpus (bounded absence per iteration-492, not a proven zero); the mechanism does not assert one.'
+      prediction: 'NULL on the register axis for the scored pair - both arms sit under the same (ZDNet/Ziff Davis) employer within one month, so no employer-level incentive gradient separates them; the pattern is hands-on-functional even-handedness, writer-level'
+      mechanism: 'writer-level register even-handedness, not finance-predicted'
+    confounders:
+      - 'STRONG: Excerpt-bounded evidence - 0 browser.open attempts this turn, so tones rest on headline+excerpt register reads (per #503), not full-text; a full-text read could reveal register details the excerpts hide.'
+      - 'STRONG: Story-type skew - the Meta arm is news analysis (Prada partnership, forward-looking) while the comparator arm is a hands-on product comparison; the comparison genre demands a winner/loser verdict while the news piece allows forward-looking enthusiasm, so genre rather than entity may drive the spread.'
+      - 'MODERATE: The arms are about one month apart (bounded circa Sep 12 2025 vs circa Oct 13 2025); different news cycles and product maturity may separate them.'
+      - 'MODERATE: n=1/n=1, hypothesis-generating only; the 0.65 spread rests on hand-assigned excerpt scores with no calibrated noise band.'
+      - 'WEAK: The comparison pairs a $799 limited-availability, US-only flagship against a $599 pre-order/Kickstarter product; commercial maturity differs.'
+      - 'WEAK: The Deep View migration (announced Dec 2025) post-dates both arms, so it cannot confound the scored pair; it is noted only as career context.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: Hiner''s Meta enthusiasm is itself bounded by the Rokid piece: "Conversely, there are areas where the Meta next-gen glasses have some advantages" - the competitor win is qualified, not absolute.'
+      - 'COUNTEREVIDENCE: The Prada piece''s enthusiasm is news-analysis forward-looking register about an unreleased product line, not a hands-on verdict; genre bounds the +0.35 reading.'
+      - 'COUNTEREVIDENCE: The buzzsumo-listed Nov 2025 pieces ("I''ve worn most 2025 AI smart glasses (including Meta Ray-Bans) - and these are the most comfortable"; "I''ve tested several AI smart glasses in 2025, but these are the only ones I''d confidently wear") show sustained even-handed beat coverage across brands; unscored (no verbatim URLs) so they cannot move the spread.'
+      - 'COUNTEREVIDENCE: The 0.65 illustrative spread rests on hand-assigned n=1/n=1 excerpt scores; it is hypothesis-generating only and sits outside any calibrated mechanism band.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: register documentation, not a uniform-prediction test. Ledger holds at 26.'
+    test_file: tests/test_type_b_793_jason_hiner_zdnet_meta_vs_rokid_register_evenhandedness_sep16_8pm.py
+    cross_references:
+    - mechanism_id: 703
+      description: 'Politico x OpenAI slowdown-week scoop channel symmetry (#787 Type A) - outlet-level even-handedness negative control; Hiner is the writer-level analogue at a Ziff Davis property'
+    - mechanism_id: 701
+      description: 'Scott Younker register constancy (#783 Type B) - same Type B family; Younker is the writer-level constancy negative control against split readings'
+    - mechanism_id: 704
+      description: 'Brenda Stolyar register split (#788 Type B) - same Type B family; Stolyar''s within-journalist split is the comparator against Hiner''s even-handedness'
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
 
