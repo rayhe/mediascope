@@ -34455,4 +34455,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Commit hashes: main commit 7ca2fb7748ff93093637180523cb98097b09e9f7; anchor followup 609136277e998bbdcc049bb1c8babe53c692cc98 (ANCHORED_SHA patched per #565); log-hash followup updates this line.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative counts (.venv pytest --collect-only this run: 41095 tests across 1128 files; delta +65/+1 = the #800 file exactly; zero collection errors).
 - Rotation guard: 800-804 window first leg D (anchor patched post-commit per #565).
-- Push status: PUSH_STATUS_PENDING (log-hash followup updates this line).
+- Push status: SUCCESS (this run, ~03:35 PDT Sep 17): 3 commits pushed 423200c..369c435 (main 7ca2fb7, anchor followup 6091362, doc-sync followup 369c435); git ls-remote origin main matches local tip 369c435. No credential dance needed this run: global insteadOf maps origin SSH to HTTPS transparently. Foreground suite verdict still pending; next Type D run checks it.
