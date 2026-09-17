@@ -19540,3 +19540,101 @@ jason_hiner:
       verdict: directionally_supported_not_proven
       no_analysis_json_update: true
       test_file: tests/test_type_b_793_jason_hiner_zdnet_meta_vs_rokid_register_evenhandedness_sep16_8pm.py
+ben_thompson:
+  name: Ben Thompson
+  current_role: Founder and author
+  current_publication: Stratechery
+  publication_owner: Stratechery (independent, subscription-funded; no advertisers)
+  previous_role: not applicable - independent throughout both scored arms
+  previous_publication: Stratechery
+  previous_owner: independent
+  prior_outlets: []
+  beats:
+  - strategy
+  - tech analysis
+  - AR/VR
+  - wearables
+  migration:
+    date: none
+    note: 'No employer migration across the scored arms; independent at Stratechery for both (Feb 2024 and Sep 2024 pieces). Career context only.'
+  notes: 'Independent analyst; Stratechery is subscription-funded (Stratechery Plus $15/month or $150/year per the stratechery.com subscription panel observed this run); no advertiser axis, so no outlet-level financial-incentive gradient separates the Meta and Apple arms. FIRST dedicated corpus mechanism on Thompson (zero "Ben Thompson" / "Stratechery" hits repo-wide pre-commit).'
+  mechanism_ids:
+  - 710
+  source_urls:
+  - http://stratechery.com/2024/an-interview-with-meta-cto-andrew-bosworth-about-orion-and-reality-labs/
+  - http://stratechery.com/2024/the-apple-vision-pro/
+  competitor_coverage:
+    type_b_798_ben_thompson_stratechery_orion_vs_vision_pro_gradient_sep17:
+      iteration: 798
+      mechanism_id: 710
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-17 01:00 PDT'
+      block_key: type_b_798_ben_thompson_stratechery_orion_vs_vision_pro_gradient_sep17
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-journalist register comparison, FIRST dedicated Type B on Ben Thompson. Question: does the same independent analyst apply an entity-selective register to Meta AR vs Apple AR? Meta arm: Stratechery "An Interview with Meta CTO Andrew Bosworth About Orion and Reality Labs" (byline Ben Thompson; hands-on trial circa Sep 26 2024 per the "yesterday''s Meta Connect 2024 keynote" internal evidence; "unadulterated praise" register, +0.45 illustrative). Comparator arm: Stratechery "The Apple Vision Pro" (byline Ben Thompson; circa Feb 2024 per the 36-hour hands-on and Feb 2 2024 US launch; productivity walkback register, -0.10 illustrative on the assessed axis); illustrative within-writer spread 0.55. Both arms are Stratechery pieces under the same subscription-funded independent model: no employer-level incentive gradient separates them. Uniform anti-Meta financial-incentive prediction NOT supported on the observed arms. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'An Interview with Meta CTO Andrew Bosworth About Orion and Reality Labs'
+        date: 'date_bounded_circa_sep_26_2024'
+        author_byline: 'Ben Thompson'
+        publication: 'stratechery'
+        role: 'Founder and author'
+        genre: 'hands-on trial + interview intro'
+        key_quotes:
+        - 'First-hand read (observed this run): "Second, Orion, Meta''s AR glasses, is spectacular."'
+        - 'First-hand read (observed this run): "What follows is unadulterated praise. Orion makes every other VR or AR device I have tried feel like a mistake -- including the Apple Vision Pro."'
+        - 'First-hand read (observed this run): "In fact -- and I don''t say this lightly -- it is good enough that, for the first time ever, I felt like I could envision a world where I don''t carry a smartphone."'
+        - 'First-hand read (observed this run): "It certainly feels like Meta is in the driver seat, but manufacturing is hard, and no one is better at it than Apple."'
+        - 'First-hand read, caveat (observed this run): "this is not a shipping product; the glasses that I tried felt like a consumer-ready product, but they reportedly cost $10,000 each, and Meta has decided to hold off on shipping a consumer version until they can bring the price down."'
+        register_notes: 'Hands-on trial register with explicit "unadulterated praise" framing: Orion beats every VR/AR device tried including the Vision Pro; optical see-through (looking at reality) categorically outranks passthrough; Meta "in the driver seat" in the Apple race; shipping caveat stated but not register-dampening.'
+        tone_score: 0.45
+        tone_basis: 'hand-assigned this run from first-hand full-page reads (2 browser.open), MANUAL ILLUSTRATIVE'
+        evidence_tier: 'first-hand read per the standing primary-source rule (2 browser.open attempts this run, both successful); URLs copied verbatim from search Full-URL listings; date bounded from internal event evidence (Meta Connect 2024 keynote Sep 25 2024, piece references "yesterday''s" keynote)'
+        byline_attribution_urls:
+        - http://stratechery.com/2024/an-interview-with-meta-cto-andrew-bosworth-about-orion-and-reality-labs/
+      competitor_arm:
+        title: 'The Apple Vision Pro'
+        date: 'date_bounded_circa_feb_2024'
+        author_byline: 'Ben Thompson'
+        publication: 'stratechery'
+        role: 'Founder and author'
+        genre: 'hands-on review'
+        key_quotes:
+        - 'First-hand read (observed this run): "The net result is that the Vision Pro, at least in its current incarnation, does not come close to being the productivity tool I was so excited about last summer, when I wrote that I suspected the Vision Pro was ''the future of the Mac''"'
+        - 'First-hand read (observed this run): "I did walk back my ''future of the Mac'' prediction in a follow-up to that Article."'
+        - 'First-hand read, entertainment positive (observed this run): "here the trade-off for higher resolution screens at the cost of a narrower field of view is well worth it."'
+        - 'First-hand read, prior (observed this run): "not only was this product being built by Apple, the undisputed best hardware maker in the world"'
+        register_notes: 'Hands-on review register: productivity disappointment on the future-of-computing axis (walked-back "future of the Mac"), while the entertainment register stays strongly positive (iPod-to-iPad framing, "why would I ever go to a movie theater again"). The scored -0.10 is the assessed-axis register, bounded by the entertainment praise.'
+        tone_score: -0.1
+        tone_basis: 'hand-assigned this run from first-hand full-page reads, MANUAL ILLUSTRATIVE (assessed axis: future-of-computing register; entertainment register strongly positive, bounds the reading)'
+        evidence_tier: 'first-hand read per the standing primary-source rule (2 browser.open attempts this run, both successful); URLs copied verbatim from search Full-URL listings; date bounded from internal evidence ("I only received it 36 hours ago" + Feb 2 2024 US launch)'
+        byline_attribution_urls:
+        - http://stratechery.com/2024/the-apple-vision-pro/
+      asymmetry_scorer:
+        meta_arm_score: 0.45
+        apple_arm_score: -0.1
+        illustrative_within_writer_spread: 0.55
+        delta_calc: '0.450 - (-0.100) = +0.550'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand reads; tones are illustrative only'
+        verdict: 'Within-journalist register GRADIENT favoring Meta: Thompson gives Meta''s unshipped Orion prototype "unadulterated praise" (+0.45) while walking back his "future of the Mac" prediction for Apple''s shipping $3,499 Vision Pro (-0.10 on the assessed axis), 0.55 illustrative spread. No employer migration: both arms are Stratechery pieces under the same subscription-funded independent model. Uniform anti-Meta financial-incentive prediction NOT supported on the observed arms: no advertiser axis exists at Stratechery and the gradient follows the writer''s stated technology thesis (optical see-through AR over passthrough), not entity favoritism. NOT a falsification-family member. Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+      confounders:
+      - 'STRONG: Shipped-vs-unshipped asymmetry - Orion is a $10,000 prototype ("this is not a shipping product", Thompson''s own caveat) judged on potential; Vision Pro is a $3,499 shipping product judged on real-world utility; different evaluative standards may drive the spread.'
+      - 'STRONG: Demo-conditions vs owned-device - the Orion trial was a Meta-hosted Connect demo; the Vision Pro review was 36 hours with his own purchased unit; access conditions differ.'
+      - 'STRONG: Thompson''s stated framework is entity-agnostic - he explicitly frames optical see-through (looking at reality) as categorically superior to passthrough ("even the highest quality presentation layer will pale in comparison to reality"); any company shipping optical AR would get the same gradient, which cuts against incentive readings in both directions.'
+      - 'MODERATE: The arms are about seven months apart (bounded circa Feb 2024 vs circa Sep 26 2024); expectations and the technology landscape shifted.'
+      - 'MODERATE: n=1/n=1, hypothesis-generating only; the 0.55 spread rests on hand-assigned first-hand scores with no calibrated noise band.'
+      - 'WEAK: Thompson''s pre-committed pro-Apple priors ("the undisputed best hardware maker in the world"; "the future of the Mac") make the Meta-favoring gradient more surprising, not less - it bounds rather than inflates the reading.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: The Vision Pro piece is strongly positive on entertainment - "here the trade-off for higher resolution screens at the cost of a narrower field of view is well worth it" and the wife quote "Why would I ever go to a movie theater again?" - the negative reading is bounded to the productivity/future-of-computing axis.'
+      - 'COUNTEREVIDENCE: The Orion praise is explicitly caveated - "this is not a shipping product... reportedly cost $10,000 each... That will be a tall order, and that challenge should be kept in mind with everything that follows."'
+      - 'COUNTEREVIDENCE: Thompson preserves Apple''s manufacturing edge even while giving Meta the product-vision lead - "no one is better at it than Apple" - the gradient is use-case-specific, not absolute.'
+      - 'COUNTEREVIDENCE: The 0.55 illustrative spread rests on hand-assigned n=1/n=1 first-hand scores; hypothesis-generating only, outside any calibrated mechanism band.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      test_file: tests/test_type_b_798_ben_thompson_stratechery_orion_vs_vision_pro_gradient_sep17_1am.py

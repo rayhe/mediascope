@@ -26334,6 +26334,103 @@ cross_publication_findings:
       description: 'Scott Younker register constancy (#783 Type B) - same Type B family; Younker is the writer-level constancy negative control against split readings'
     - mechanism_id: 704
       description: 'Brenda Stolyar register split (#788 Type B) - same Type B family; Stolyar''s within-journalist split is the comparator against Hiner''s even-handedness'
+  ben thompson stratechery orion vs vision pro gradient sep2026:
+    mechanism_id: 710
+    type: B
+    journalist: 'Ben Thompson'
+    publication: stratechery
+    owner: independent_subscription
+    iteration: 798
+    iteration_type: B
+    rotation_type: B
+    iteration_time: '2026-09-17 01:00 PDT'
+    discovery_date: '2026-09-17'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_798_ben_thompson_stratechery_orion_vs_vision_pro_gradient_sep17
+    novelty_verification: 'Zero test_type_b_798 files on disk pre-commit (glob); no "Type B #798" in git log pre-commit; "Ben Thompson" and "Stratechery" zero-hit repo-wide pre-commit (case-insensitive git grep on profiles/ and tests/ at HEAD); max numeric mechanism_id 709 pre-commit; zero underscore-form 710 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention), keeping the #797 zero-710 sweep instruments green pre-commit by designed keying; block key zero-hit repo-wide pre-commit. The descriptive block key carries no underscore-form 710 key substring.'
+    pattern: 'Ben Thompson (Stratechery founder and author; independent, subscription-funded, no advertisers) shows a within-journalist cross-entity register gradient FAVORING Meta on the AR axis. The Meta arm is the Sep 2024 Stratechery piece "An Interview with Meta CTO Andrew Bosworth About Orion and Reality Labs" (byline Ben Thompson; hands-on Orion trial, date bounded circa Sep 26 2024 from the "yesterday''s Meta Connect 2024 keynote" internal evidence): "unadulterated praise" register - "Second, Orion, Meta''s AR glasses, is spectacular"; "Orion makes every other VR or AR device I have tried feel like a mistake -- including the Apple Vision Pro"; "for the first time ever, I felt like I could envision a world where I don''t carry a smartphone"; "It certainly feels like Meta is in the driver seat". The comparator arm is the Feb 2024 Stratechery hands-on review "The Apple Vision Pro" (byline Ben Thompson; date bounded circa Feb 2024 from the "I only received it 36 hours ago" internal evidence and the Feb 2 2024 US launch): productivity-walkback register - "does not come close to being the productivity tool I was so excited about"; "I did walk back my ''future of the Mac'' prediction". MANUAL ILLUSTRATIVE: Orion arm +0.45; Vision Pro arm -0.10 on the assessed future-of-computing axis (entertainment register strongly positive, bounds the reading); illustrative within-writer spread 0.55. The same writer who called Apple "the undisputed best hardware maker in the world" gives Meta''s unshipped $10,000 prototype the higher AR register. FIRST dedicated corpus mechanism on Thompson.'
+    meta_arm:
+      piece: 'Stratechery "An Interview with Meta CTO Andrew Bosworth About Orion and Reality Labs", byline Ben Thompson'
+      date: 'date_bounded_circa_sep_26_2024'
+      byline: 'Ben Thompson'
+      register: hands_on_trial_unadulterated_praise
+      tone_illustrative: 0.45
+      tone_basis: 'MANUAL ILLUSTRATIVE, hand-assigned this run from first-hand full-page read (browser.open); illustrative only'
+      evidence_quotes:
+        - 'First-hand read (observed this run): "Second, Orion, Meta''s AR glasses, is spectacular."'
+        - 'First-hand read (observed this run): "What follows is unadulterated praise. Orion makes every other VR or AR device I have tried feel like a mistake -- including the Apple Vision Pro."'
+        - 'First-hand read (observed this run): "In fact -- and I don''t say this lightly -- it is good enough that, for the first time ever, I felt like I could envision a world where I don''t carry a smartphone."'
+        - 'First-hand read (observed this run): "It certainly feels like Meta is in the driver seat, but manufacturing is hard, and no one is better at it than Apple."'
+        - 'First-hand read, caveat (observed this run): "this is not a shipping product; the glasses that I tried felt like a consumer-ready product, but they reportedly cost $10,000 each, and Meta has decided to hold off on shipping a consumer version until they can bring the price down."'
+      source_urls:
+        - 'http://stratechery.com/2024/an-interview-with-meta-cto-andrew-bosworth-about-orion-and-reality-labs/'
+      source_note: 'First-hand read per the standing primary-source rule (2 browser.open attempts this run, both successful; 11 browser.search query sets this run, several deselected candidates). Title/byline from the page itself; URL copied verbatim from the search Full-URL listing. Date bounded from internal event evidence (the piece references "yesterday''s Meta Connect 2024 keynote"; the keynote was Sep 25 2024), never a claimed exact date.'
+    competitor_arm:
+      piece: 'Stratechery "The Apple Vision Pro", byline Ben Thompson'
+      date: 'date_bounded_circa_feb_2024'
+      byline: 'Ben Thompson'
+      register: hands_on_review_productivity_walkback
+      tone_illustrative: -0.10
+      tone_basis: 'MANUAL ILLUSTRATIVE, hand-assigned this run from first-hand full-page read (browser.open); assessed axis is the future-of-computing register; the entertainment register is strongly positive and bounds the reading; illustrative only'
+      evidence_quotes:
+        - 'First-hand read (observed this run): "The net result is that the Vision Pro, at least in its current incarnation, does not come close to being the productivity tool I was so excited about last summer, when I wrote that I suspected the Vision Pro was ''the future of the Mac''"'
+        - 'First-hand read (observed this run): "I did walk back my ''future of the Mac'' prediction in a follow-up to that Article."'
+        - 'First-hand read, entertainment positive (observed this run): "here the trade-off for higher resolution screens at the cost of a narrower field of view is well worth it."'
+        - 'First-hand read, prior (observed this run): "not only was this product being built by Apple, the undisputed best hardware maker in the world"'
+      source_urls:
+        - 'http://stratechery.com/2024/the-apple-vision-pro/'
+      source_note: 'First-hand read per the standing primary-source rule (2 browser.open attempts this run, both successful). Title/byline from the page itself; URL copied verbatim from the search Full-URL listing. Date bounded from internal evidence ("I only received it 36 hours ago" + the Feb 2 2024 US launch), never a claimed exact date.'
+    career_context:
+      status: 'Independent throughout: founder and author of Stratechery for both scored arms (circa Feb 2024 and circa Sep 2024); no employer migration'
+      funding: 'Stratechery Plus $15/month or $150/year (observed on the stratechery.com subscription panel this run); no advertisers'
+      mechanism_role: 'Career context only: both scored arms are Stratechery pieces under the same subscription-funded independent model, so no employer-level incentive gradient separates them. No claim that independence caused the pattern. Thompson''s pre-committed pro-Apple priors ("the undisputed best hardware maker in the world"; "the future of the Mac") make the Meta-favoring gradient more surprising, not less.'
+    asymmetry_scorer:
+      meta_orion_arm_tone: 0.45
+      apple_vision_pro_arm_tone: -0.10
+      illustrative_within_writer_spread: 0.55
+      delta_calc: '0.450 - (-0.100) = +0.550'
+      delta_interpretation: 'within-journalist, within-publication, within-funding-model register gradient favoring Meta on the AR axis; the same writer gives Meta''s unshipped prototype "unadulterated praise" and walks back his "future of the Mac" prediction for Apple''s shipping headset'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand full-page reads (2 browser.open); tones are illustrative only'
+      verdict: 'Within-journalist register GRADIENT favoring Meta: Thompson gives Meta''s unshipped Orion prototype "unadulterated praise" (+0.45 illustrative) while walking back his "future of the Mac" prediction for Apple''s shipping $3,499 Vision Pro (-0.10 illustrative on the assessed axis), a 0.55 illustrative spread. No employer migration: both arms are Stratechery pieces under the same subscription-funded independent model. Uniform anti-Meta financial-incentive prediction NOT supported on the observed arms - no advertiser axis exists at Stratechery and the gradient follows the writer''s stated technology thesis (optical see-through AR over passthrough), not entity favoritism. NOT a falsification-family member (register documentation, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      stratechery_side: 'Stratechery is subscription-funded (Stratechery Plus $15/month or $150/year, observed on stratechery.com this run); no advertisers, no content-licensing deals mapped in the corpus (bounded absence per iteration-492, not a proven zero).'
+      meta_tie: 'No Meta-specific commercial tie to Stratechery is mapped in the corpus (bounded absence per iteration-492, not a proven zero); the mechanism does not assert one.'
+      apple_tie: 'No Apple-specific commercial tie to Stratechery is mapped in the corpus (bounded absence per iteration-492, not a proven zero); the mechanism does not assert one.'
+      prediction: 'NULL on the register axis for the scored pair - Stratechery''s funding model has no advertiser axis, so no financial-incentive gradient separates the Meta and Apple arms; the pattern is technology-thesis register, writer-level'
+      mechanism: 'writer-level technology-thesis register, not finance-predicted'
+    confounders:
+      - 'STRONG: Shipped-vs-unshipped asymmetry - Orion is a $10,000 prototype ("this is not a shipping product", Thompson''s own caveat) judged on potential; Vision Pro is a $3,499 shipping product judged on real-world utility; different evaluative standards may drive the spread.'
+      - 'STRONG: Demo-conditions vs owned-device - the Orion trial was a Meta-hosted Connect demo; the Vision Pro review was 36 hours with his own unit; access conditions differ.'
+      - 'STRONG: Thompson''s stated framework is entity-agnostic - he explicitly frames optical see-through (looking at reality) as categorically superior to passthrough ("even the highest quality presentation layer will pale in comparison to reality"); any company shipping optical AR would get the same gradient, which cuts against incentive readings in both directions.'
+      - 'MODERATE: The arms are about seven months apart (bounded circa Feb 2024 vs circa Sep 26 2024); expectations and the technology landscape shifted.'
+      - 'MODERATE: n=1/n=1, hypothesis-generating only; the 0.55 spread rests on hand-assigned first-hand scores with no calibrated noise band.'
+      - 'WEAK: Thompson''s pre-committed pro-Apple priors ("the undisputed best hardware maker in the world"; "the future of the Mac") make the Meta-favoring gradient more surprising, not less - they bound rather than inflate the reading.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: The Vision Pro piece is strongly positive on entertainment - "here the trade-off for higher resolution screens at the cost of a narrower field of view is well worth it" and the wife quote "Why would I ever go to a movie theater again?" - the negative reading is bounded to the productivity/future-of-computing axis.'
+      - 'COUNTEREVIDENCE: The Orion praise is explicitly caveated - "this is not a shipping product... reportedly cost $10,000 each... That will be a tall order, and that challenge should be kept in mind with everything that follows."'
+      - 'COUNTEREVIDENCE: Thompson preserves Apple''s manufacturing edge even while giving Meta the product-vision lead - "no one is better at it than Apple" - the gradient is use-case-specific, not absolute.'
+      - 'COUNTEREVIDENCE: The 0.55 illustrative spread rests on hand-assigned n=1/n=1 first-hand scores; hypothesis-generating only, outside any calibrated mechanism band.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: register documentation, not a uniform-prediction test. Ledger holds at 26.'
+    test_file: tests/test_type_b_798_ben_thompson_stratechery_orion_vs_vision_pro_gradient_sep17_1am.py
+    cross_references:
+    - mechanism_id: 703
+      description: 'Politico x OpenAI slowdown-week scoop channel symmetry (#787 Type A) - outlet-level even-handedness negative control; Thompson is the writer-level analogue at an independent property'
+    - mechanism_id: 701
+      description: 'Scott Younker register constancy (#783 Type B) - same Type B family; Younker is the writer-level constancy negative control against gradient readings'
+    - mechanism_id: 704
+      description: 'Brenda Stolyar register split (#788 Type B) - same Type B family; Stolyar''s within-journalist split across employers is the comparator against Thompson''s within-funding-model gradient'
+    - mechanism_id: 707
+      description: 'Jason Hiner register even-handedness (#793 Type B) - same Type B family; Hiner''s within-employer even-handedness is the comparator against Thompson''s Meta-favoring gradient'
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
