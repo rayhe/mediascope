@@ -34650,4 +34650,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Commit hashes: main commit b74c9b9; anchor followup f2238a6 (ANCHORED_SHA patched per #565, anchor green post-followup); doc-sync followup (this commit).
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative counts (.venv pytest --collect-only this run: 41666 tests / 1141 files; delta +38/+1 = the #813 file exactly); count_stats.py --check confirms README stats current.
 - Rotation guard: 810-814 window fourth leg D->E->A->B (anchor patched post-commit per #565). Next: #814 Type C.
-- Push status: (this run, ~16:30 PDT Sep 17): PENDING (filled in after push verification).
+- Push status: (this run, ~16:40 PDT Sep 17): main b74c9b9 + anchor followup f2238a6 + doc-sync c3fdc8c pushed and ls-remote-verified in the same run; final git ls-remote origin main matches local tip (c3fdc8c). Repo and remote in sync.
