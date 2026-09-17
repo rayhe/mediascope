@@ -57,7 +57,7 @@ M_ID = 716
 MECH_ID_MARKER = "mechanism" + "_716"
 NEXT_ID_MARKER = "mechanism" + "_717"
 NEXT_ID_NUMERIC = "mechanism_id: 717"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "e90df8b9eaf3920df277f9d4267d77fdb88dd579"  # main commit this run, per #565
 BLOCK_KEY = "type_b_808_ece_yildirim_gizmodo_apple_adversarial_vs_meta_product_neutral_sep17"
 
 GIZMODO_PROFILE = os.path.join(REPO, "profiles", "gizmodo.yaml")
