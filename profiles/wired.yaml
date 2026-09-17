@@ -1638,6 +1638,13 @@ competitor_relationships:
           framing: dormant code not enabled, on-device not central DB, assistive use for blind mentioned but overshadowed - maximum alarm vocabulary
           deal_disclosed: false
         asymmetry_summary: 6 direct WIRED primary sources (3 OpenAI aspirational/neutral, 3 Meta alarm) verify capability inversion thesis with primary sources instead of secondary proxies (MacRumors/9to5Mac). OpenAI always-on camera/mic/environmental awareness → aspirational (happy/fulfilled/peaceful/coolest/amazing/better selves/new generation) - 0 alarm. Meta dormant/mitigated (LED/on-device/not central DB/thoughtful approach) → maximum alarm (pervert glasses/creepy/Sexual Predators/stalkers/abusers/federal agents/silently/stealth mode/vile/surveillance machine/destroying privacy). Same capability, opposite framing determined by manufacturer + financial relationship (Condé Nast OpenAI $1-5M/yr vs Meta $0). Panel QC passed - 6 URLs verbatim wired.com/story.
+    misalignment_framework_relay_sep17:
+      mechanism_id: 712
+      date_analyzed: '2026-09-17'
+      type: Type A #802 - Competitor Coverage Deep Dive - WIRED x OpenAI misalignment-framework relay vs Meta glasses adversarial
+      finding: 'WIRED Sep 2026 piece ''OpenAI Releases New Policy for Reporting Incidents of Model Misalignment'' gives the payer''s own safety framework and alignment chief Kai Chen the authoritative relay voice (+0.15 illustrative), while the in-corpus WIRED Ray-Ban/Oakley Meta glasses coverage runs the adversarial register (pervert glasses, surveillance machine, -0.55 illustrative). Illustrative delta +0.70. SECONDARY-ATTRIBUTION BOUNDED: direct WIRED fetch failed terminally per the #647 convention; characterization rests on two independent secondaries attributing the Chen quote to Wired. Verdict directionally_supported_not_proven - direction consistent with the Conde Nast x OpenAI paid-deal hypothesis but not proven (strong confounders: story-type selection; secondary-attribution bound; WSJ ran a harder incident-listing register the same week). Counter-evidence: WIRED is not uniformly soft on OpenAI (Jul 10 2026 Maxwell Zeff Apple-IP-suit piece; in-corpus rogue-models piece). Full mechanism in profiles/competitor-coverage-research.yaml under wired_openai_misalignment_framework_relay_sep17.'
+      article_url: https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/
+      deal_disclosed: false
     iteration_364_type_a_deep_dive_aug29:
       iteration: 364
       type: A
