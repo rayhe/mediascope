@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 40768 tests across 1121 test files (all from real articles)
+├── tests/                       # 40805 tests across 1122 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1619,3 +1619,4 @@ mediascope/
     └── tests/test_type_e_791_podcast_sentiment_81st_verification_sep16_9am.py  # Type E #791: podcast sentiment 81st verification - GF 500 newest; NEW podparadise directory surface (newest numbered 499); EHE 42-day hold; Attention Sphere 81st no-match; frontier tied Sep 9 (32nd) - Sep 16 2026 09:00 PDT - 44 tests, 10 classes
     └── tests/test_type_a_792_verge_apple_duo_launch_week_staff_react_register_sep16_10am.py  # Type A #792: Verge x Apple Duo launch-week register (m706) - two launch arms +0.45 vs Meta comparator -0.55 (+1.00 illustrative delta); Apple x Vox Media distribution tie with stated caveats; directionally_supported_not_proven; 790-794 window third leg D->E->A - Sep 16 2026 10:00 PDT - 42 tests, 8 classes
     └── tests/test_type_b_793_jason_hiner_zdnet_meta_vs_rokid_register_evenhandedness_sep16_8pm.py  # Type B #793: Jason Hiner ZDNet Meta vs Rokid register even-handedness (m707) - Meta Prada arm +0.35 vs Rokid comparison Meta leg -0.30 (0.65 illustrative spread); within-journalist, within-employer even-handedness; directionally_supported_not_proven; 790-794 window fourth leg D->E->A->B - Sep 16 2026 20:00 PDT - 38 tests, 8 classes
+    └── tests/test_type_c_794_google_publisher_licensing_talks_bloomberg_sep16_9pm.py  # Type C #794: Google publisher AI-licensing talks (m708) - Bloomberg Law ~Jul 2026: Google AI licensing talks with news orgs, pilot ~20 national outlets; Jul 2026 precursor scope for the Digiday pay-per-use pilot (m702); 5 ranked confounders + regulatory-hedge counterargument; directionally_supported_not_proven; 790-794 window fifth leg D->E->A->B->C, closing the window - Sep 16 2026 21:00 PDT - 37 tests, 8 classes
