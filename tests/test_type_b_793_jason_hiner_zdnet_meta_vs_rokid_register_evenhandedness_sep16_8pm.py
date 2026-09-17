@@ -25,7 +25,7 @@ M_ID = 707
 MECH_ID_MARKER = "mechanism" + "_707"
 NEXT_ID_MARKER = "mechanism" + "_708"
 NEXT_ID_NUMERIC = "mechanism_id: 708"
-ANCHORED_SHA = "f793f793f793f793f793f793f793f793f793f793f7"
+ANCHORED_SHA = "63a57eb05c6b490bcf33ab3bb04c07422d055114"
 
 RESEARCH_PROFILE = os.path.join(REPO, "profiles", "competitor-coverage-research.yaml")
 CAREERS_PROFILE = os.path.join(REPO, "profiles", "careers", "journalists.yaml")
