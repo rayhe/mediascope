@@ -108,7 +108,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "21938a3b882fb2e22201cf33d3b1cdfc3cd571f7"
 
 M706_KEY = "verge_apple_duo_launch_week_staff_react_register_sep16"
 M707_KEY = (
@@ -223,7 +223,6 @@ class TestNovelty795:
         )
         assert files == [TEST_BASENAME], files
 
-    @pytest.mark.skip("anchor deselected pre-commit per the #565 convention")
     def test_type_d_795_main_commit_unique_and_anchored(self):
         # Deselected pre-commit per the #565 convention; the main commit
         # does not exist yet. Patched green in the anchor followup.
@@ -264,7 +263,6 @@ class TestTypeDRotationGuard:
         assert self.WINDOW == ("D", "E", "A", "B", "C")
         assert self.WINDOW[0] == "D"
 
-    @pytest.mark.skip("anchor deselected pre-commit per the #565 convention")
     def test_anchor_sha_placeholder_patched(self):
         # ANCHORED_SHA patched in followup per #565 to the main commit:
         # deselected pre-commit, patched green in the followup.
