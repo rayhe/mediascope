@@ -13243,6 +13243,91 @@ entities:
       - 'Apple variable-pay closure: if Apple signs a publisher under mechanism 156, the template goes proposal-to-operational across all three labs'
       - 'Gannett x Perplexity strategic bilateral (Sep 2026, silicon.co.uk press release): surfaced this run, deferred - candidate for the next Type C'
       caution: 'Structural mapping only. Documents the Google pay-per-use AI licensing pilot program for publishers (Digiday ~Sep 14 2026), the third instance of the variable-pay template, and the cooperative turn on the Google x publisher vector. No coverage-tone claim is made. Correlation is not causation.'
+    google_publisher_licensing_talks_bloomberg_20_outlets_jul2026:
+      mechanism_id: 708
+      iteration: 794
+      iteration_type: C
+      rotation: 'Type C'
+      date_analyzed: '2026-09-16'
+      discovery_date: '2026-09-16'
+      time_pdt: '21:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      mechanism_name: 'Google Publisher AI-Licensing Talks (Bloomberg Law, ~Jul 2026) - FIRST Dedicated Corpus Mechanism Documenting the ~20-National-Outlet Pilot Scope; Jul 2026 Precursor of the Digiday-Reported Pay-Per-Use Pilot (mechanism 702)'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      overview: 'FIRST dedicated corpus mechanism documenting Bloomberg Law reporting (~Jul 2026, crawled 55 days before the Sep 16 2026 run) that Google was seeking to recruit news organizations for a new AI licensing project: a pilot project initially with about 20 national news outlets, per a person at a media outlet contacted in the talks. Google statement: exploring and experimenting with new types of partnerships and product experiences, but we are not sharing details about specific plans or conversations at this time. This is the Jul 2026 precursor of the Sep 14 2026 Digiday-reported pay-per-use AI licensing pilot (mechanism 702, Type C #784): the 20-outlet figure scopes the pilot that Digiday sources later described as dozens of publishers approached, more appealing to small and mid-sized publishers. Two independent outlets now corroborate the pilot program existence (Bloomberg Law Jul 2026, Digiday Sep 2026). The pilot is Google first usage-triggered publisher compensation test and the cooperative turn on the historically adversarial Google x publisher vector (m702 framing carried, not re-argued). Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+      deal_parties:
+        payer: 'Google (Alphabet) - new AI licensing project for news organizations'
+        counterparty: 'About 20 national news outlets (initial pilot scope, per a person at a media outlet contacted in the talks; participants undisclosed)'
+        counterparty_parent: 'Multiple; participant list not disclosed'
+      announcement:
+        disclosed: 'No Google announcement; reported by Bloomberg Law ~Jul 2026 (crawled 55 days before this run); source asked not to be identified discussing private talks'
+        first_reported: 'Bloomberg Law, ~Jul 2026'
+        google_statement: 'We have said that we are exploring and experimenting with new types of partnerships and product experiences, but we are not sharing details about specific plans or conversations at this time'
+        motive_framing: 'A sign the company wants to strengthen strained ties with the industry (Bloomberg Law) - relationship-repair motive documented alongside the commercial one'
+      deal_structure:
+        access: 'Pilot project for news organizations related to AI licensing; exact content scope (training vs grounding vs inference) not disclosed'
+        initial_scope: 'About 20 national news outlets (Bloomberg Law source at a contacted media outlet)'
+        scale_progression: 'Jul 2026: about 20 national news outlets (Bloomberg Law) -> Sep 2026: at least dozens of publishers approached (Digiday, mechanism 702); the scope progression corroborates one program across two outlets, widening by September'
+        pricing_model: 'Pay-per-value per the Sep 2026 Digiday piece (mechanism 702); the Jul 2026 Bloomberg piece carries no pricing detail'
+        transparency: 'No details on specific plans or conversations (Google statement)'
+      scope_figure_significance: 'The about-20-national-news-outlets figure is the only bounded pilot-scope number in the corpus for Google publisher AI licensing: Digiday (m702) gives only at least dozens of publishers approached with no confirmed total. The Jul 2026 number anchors the Sep 2026 program scale and dates the talks to mid-2026, predating the pilot reporting by ~2 months. If the participants were national news outlets in July, the September widening toward small and mid-sized publishers (Digiday) suggests deliberate scope expansion, not program confusion.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'Search-excerpt-bounded evidence per #503 (no first-hand Bloomberg Law read this run; paywalled); the 20-outlet figure rests on one anonymous source at a contacted media outlet, unverifiable and unconfirmed by Google'
+      - rank: 2
+        strength: strong
+        confounder: 'Talks, not a signed deal: participants, scale, rates, terms, and duration are all undisclosed; licensing talks can stall or be abandoned without reporting, so the mechanism documents a program being built, not a durable financial relationship'
+      - rank: 3
+        strength: moderate
+        confounder: 'Program-identity assumption: the Jul 2026 Bloomberg talks and the Sep 2026 Digiday pay-per-use pilot are treated as one program (scope progression), but they could be separate projects; the identity claim is mapper inference, disclosed as such'
+      - rank: 4
+        strength: moderate
+        confounder: 'Relationship-repair motive (strengthen strained ties) and regulatory-theater motive (EU antitrust probe, mechanism 666; Sep 1 2026 opt-out questionnaire) are observationally equivalent at this evidence level - both predict visible publisher-engagement programs regardless of commercial seriousness'
+      - rank: 5
+        strength: weak
+        confounder: 'Participant selection is unknown: whether any of the seven tracked publications (or their owners) are among the ~20 national outlets is undisclosed, so no publication-level incentive mapping is possible yet - this is entity-level architecture only'
+      strongest_counterargument: 'The talks are best read as industry-relations positioning rather than a genuine revenue model. Google core incentive is to keep AI Overviews, AI Mode, and Gemini free of licensing costs; a 20-outlet pilot builds publisher goodwill and EU-probe defense material while the main products continue monetizing publisher content without payment. The null - talks as PR and regulatory hedge with no material payments, staying invitation-only and black-box - predicts exactly what is observed: anonymous sources, undisclosed terms, an on-record statement that shares nothing. The mechanism is incentive-architecture bookkeeping, not a tone prediction, and no tracked publication is confirmed among the ~20 outlets.'
+      cross_references:
+      - 'Mechanism 702 (Google pay-per-use AI licensing pilot, Digiday ~Sep 14 2026: the Sep 2026 reporting of the same pilot program this Bloomberg Jul 2026 figure precedes; scope progression 20 outlets -> dozens of publishers)'
+      - 'Mechanism 539 (Dotdash Meredith triple-payer: AI Overviews blamed for the publisher referral collapse, 54 percent to 24 percent; the adversarial context the licensing talks seek to offset)'
+      - 'Mechanism 666 (EU antitrust probe into Google publisher-AI content use, Dec 2025 probe plus Sep 1 2026 opt-out questionnaire: the adversarial vector this pilot partially offsets; regulatory-theater confounder)'
+      - 'Mechanism 64 (Cloudflare bot-blocking as publisher leverage against AI crawlers: the adversarial leverage that makes direct-payments pilots rational for labs)'
+      - 'Mechanism 412 (Google News AI pilot, Dec 2025: the earlier cooperative leg - AI overviews and audio briefings with attribution, not pay-per-use economics; distinct from this licensing-project pilot)'
+      novelty_verification:
+      - 'Zero test_type_c_794 files on disk pre-commit (glob verified)'
+      - 'No Type C #794 in git log pre-commit (--grep verified)'
+      - 'The Bloomberg Law URL (news.bloomberglaw.com/tech-and-telecom-law/google-in-licensing-talks-with-news-groups-following-ai-rivals) zero-hit repo-wide pre-commit (git grep verified)'
+      - 'The "about 20 national news outlets" scope figure zero-hit repo-wide pre-commit (git grep verified)'
+      - 'Zero underscore-form 708 mechanism key strings repo-wide pre-commit (sweep-instrument carriers excluded per #715; the #793 file carries the forward 708 sweep by concatenation)'
+      - 'Max numeric mechanism_id 707 pre-commit (#793)'
+      - 'FIRST dedicated corpus mechanism documenting the Bloomberg Law Jul 2026 Google licensing-talks reporting'
+      statistical_discipline:
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      artifact_readiness: 'No analysis.json update warranted. Deal-level financial mapping, qualitative only, no new empirical tone finding; documents the Jul 2026 Bloomberg Law reporting of Google AI licensing talks with about 20 national news outlets, the precursor scope for the pay-per-use pilot (mechanism 702).'
+      falsification_family: 'NOT a member - qualitative financial mapping only; no coverage-tone claim made; ledger holds at 26'
+      source_urls:
+      - 'https://news.bloomberglaw.com/tech-and-telecom-law/google-in-licensing-talks-with-news-groups-following-ai-rivals'
+      research_method: '8 browser.search query sets this run: (1) Gannett Perplexity AI licensing deal + OpenAI/Amazon alternatives - the Gannett deal is Jul 30 2025 vintage (corpus-saturated, deferred); (2) publisher AI licensing deal Sep 2026 + Microsoft PCM alternatives - surfaced the Digiday Google pilot (already covered by mechanism 702 in #784) plus the UMG-ElevenLabs music deal (out of scope: music, not publishers); (3) Google pay per value pilot participants - corroborating surfaces for mechanism 702 (AdExchanger Sep 15 2026 pay-per-value framing, SER Roundtable AI contribution pilot, Search Engine Journal); (4) Gannett Perplexity Sep 2026 - 2025 vintage reprints only; (5) Getty Perplexity + Axel Springer alternatives - Getty x Perplexity Oct 2025 and Getty x OpenAI Jun 2026 legs both in corpus, Axel Springer OpenAI renewal unresolved per mechanism 604; (6) Anthropic publisher deal + Apple/Reddit alternatives - AdWeek zero-deal posture fully covered by mechanism 509, Apple variable-pay zero closures; (7) News Corp Google AI talks + OpenAI News Corp alternatives - sixth-leg watch unchanged (mechanism 630), OpenAI-News Corp $250M/5yr figures in corpus; SELECTED: (8) Bloomberg Law Google licensing talks ~Jul 2026 with the about-20-national-news-outlets scope figure, URL and figure both zero-hit repo-wide. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Search-excerpt-bounded per #503 (0 browser.open first-hand reads this run). Bounded absences per iteration-492 rule. ASCII-only, no em dashes.'
+      watch_items:
+      - 'Participant disclosure: if Google names pilot publishers, check tracked-publication membership for publication-level incentive mapping'
+      - 'Program identity: confirm whether the Jul 2026 ~20-outlet talks and the Sep 2026 pay-per-value pilot are the same program - tests the scope-progression mapper inference'
+      - 'Regulatory: whether the talks feature in Google EU-probe defense - tests the relationship-repair vs regulatory-theater confounders'
+      - 'Rate disclosure: any per-use, per-query, or revenue-share figures would price the pay-per-value model and tighten the mechanism 702 economics'
+      caution: 'Structural mapping only. Documents Bloomberg Law ~Jul 2026 reporting of Google AI licensing talks with news organizations (initial pilot about 20 national news outlets), the precursor scope for the Digiday-reported pay-per-use pilot (mechanism 702). No coverage-tone claim is made. Correlation is not causation.'
   x_twitter:
     display_name: X / Twitter
     aliases:
