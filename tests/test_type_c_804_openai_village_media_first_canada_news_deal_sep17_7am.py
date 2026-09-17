@@ -106,10 +106,13 @@ class TestNovelty804:
         assert len(files) == 1, files
         assert files[0].endswith(TEST_BASENAME), files
 
-    def test_type_c_804_main_commit_unique(self):
-        mains = _git_log_mains(r"Type C #804: ")
-        # Pre-commit there is no #804 main commit yet; at most one may exist.
-        assert len(mains) <= 1, mains
+    def test_type_c_804_main_commit_unique_and_anchored(self):
+        # Deselected pre-commit per the #565 followup convention; patched green post-commit.
+        assert ANCHORED_SHA not in (
+            "PATCH_ME_IN_FOLLOWUP", "POST_COMMIT_ANCHORED", "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565",
+        ), "anchor SHA is still the pre-commit placeholder"
+        res = _run_git("log", "--all", "--grep", "Type C #804")
+        assert ANCHORED_SHA in res.stdout, "main commit is not the expected anchored SHA"
 
     def test_novelty_verification_claim_present_in_block(self):
         # The block pins the pre-commit novelty greps (zero Village Media /
@@ -163,12 +166,18 @@ class TestRotationCycleGuard804:
             assert (self.ORDER[t1] - self.ORDER[t2]) % 5 == 1, (t1, t2)
 
     def test_anchor_sha_matches_head(self):
-        mains = _git_log_mains(r"Type C #804: ")
         assert ANCHORED_SHA not in (
             "PATCH_ME_IN_FOLLOWUP", "POST_COMMIT_ANCHORED",
             "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565",
-        ), mains
-        assert mains and mains[0].startswith(ANCHORED_SHA + " "), mains
+        )
+        # Durable post-commit: the anchored main commit is in history and its
+        # subject opens the #804 window-closing leg (HEAD drifts past it with
+        # the anchor/doc-sync/push-status followups, per the #565 convention).
+        res = _run_git("log", "--format=%H %s", "--all")
+        hits = [l for l in res.stdout.splitlines()
+                if l.startswith(ANCHORED_SHA + " ")]
+        assert len(hits) == 1, hits
+        assert "Type C #804: " in hits[0], hits
 
 
 # --- Mechanism content -------------------------------------------------------
