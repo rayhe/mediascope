@@ -34409,4 +34409,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Commit hashes: main commit 06673822a6e46c38eb943c8cff9d98991727bcb7; anchor followup 59eb4e4 (full hash pending doc-sync commit).
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative counts (.venv pytest --collect-only this run: 41 tests in the new file; count_stats --check green at 40955/1125).
 - Rotation guard: 795-799 window third leg D->E->A (anchor patched post-commit per #565). Goal guide (GOAL.md) read before finishing.
-- Push status: pending (atomic proxy-credential workflow per AGENTS.md).
+- Push status (this run): SUCCESS. Atomic proxy-credential workflow used (extracted candidates from ~/.git-credentials, first returning HTTP 200 used immediately, once-decoded literal userinfo in https_proxy); push c0b5cc9..5afaa0f accepted; remote tip 5afaa0f verified in sync via git ls-remote.
