@@ -46,7 +46,7 @@ BLOOMBERG_URL = (
     "google-in-licensing-talks-with-news-groups-following-ai-rivals"
 )
 NEXT_SIBLING = "\n  x_twitter:"
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "39ba859241ea555e7ab6592258519e69315b6616"
 
 
 def _read(rel):
