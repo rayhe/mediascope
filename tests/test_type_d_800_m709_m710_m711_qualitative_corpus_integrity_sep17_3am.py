@@ -116,7 +116,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "7ca2fb7748ff93093637180523cb98097b09e9f7"
 
 M709_KEY = "times_openai_slowdown_week_statesman_register_sep17"
 M710_JOURNALIST_KEY = (
