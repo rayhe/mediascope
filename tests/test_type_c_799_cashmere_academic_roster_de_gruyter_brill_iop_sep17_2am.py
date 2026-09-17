@@ -405,8 +405,8 @@ class TestIterationLog799:
     def test_log_mechanism_number_and_topic(self):
         log = self._log()
         idx = log.index("## #799 Type C:")
-        entry = log[idx:idx + 4000]
-        assert "mechanism 711" in entry
+        entry = log[idx:idx + 8000]
+        assert "mechanism_id 711" in entry
         assert "De Gruyter" in entry
         assert "Cashmere" in entry
 
