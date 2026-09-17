@@ -1340,6 +1340,112 @@ competitor_relationships:
       novelty: "First dedicated Type A mechanism on the FT Sep 3-9 2026 launch-week register pair (Astra 'AGI era' coronation vs Muse distribution framing). Distinct from mechanisms 415 (Jun-Jul growth window) and 435 (Sep 1 framing window) and the Hugging Face FT mechanism (July incident). Zero mechanism_625 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 624. All four register-evidence URLs new to corpus (repo-wide greps); the Reuters Muse URL is cited as in-corpus event context only (via #621)."
       research_method: "5 browser.search query sets this run: (1) Financial Times OpenAI coverage September 2026; (2) ft.com OpenAI September 2026 article; (3) Financial Times Meta September 2026 coverage; (4) quoted 'Financial Times' OpenAI September 2026; (5) quoted 'Financial Times' Meta Muse launch September 2026; plus 2 browser.open reads (Bloomberg Law EU-DMA FT piece verified; Bloomberg Law OpenAI-SoftBank FT piece REJECTED on date discipline, undated reprint). All URLs copied verbatim from Full-URL listings; no canonical FT URLs invented (ft.com paywalled, no-canonical-URL rule); no zero-coverage claims per iteration-492 rule; no em dashes."
 
+    ft_openai_1_2tn_funding_round_scoop_vs_meta_equity_raise_desperation_sep17:
+      mechanism_id: 718
+      date: '2026-09-15'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 812
+      iteration_type: 'A'
+      iteration_time: 2026-09-17 15:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Financial Times
+      publication_pair: FT x OpenAI
+      entity_pair: "OpenAI vs Meta"
+      competitor: openai
+      comparison_entities:
+      - meta
+      author: Kit (with Ray)
+      finding: 'FT broke (Tue Sep 15, 2026) an investor-demand capital-raise scoop on its $5-10M/yr deal partner: OpenAI has held discussions with large investors about a fresh capital raise that would increase the ChatGPT maker''s valuation to about $1.2 trillion before it goes public, the FT reported citing people familiar with the matter; the talks are at an early stage and were "initiated by investors rather than the company"; OpenAI declined to comment. Register: constructive growth/investor-demand, MANUAL ILLUSTRATIVE +0.25. The FT-attributed context carries OpenAI momentum without skepticism: the March round ($122B committed capital at $852B valuation), Altman''s no-2026-IPO safety framing relayed straight, and the regulatory-optimism tail (OpenAI and Anthropic "pushing for greater regulation"). Same-publication capital-raise comparator (carried from corpus, mechanism 435 lineage): FT''s Jun 5, 2026 Meta equity-raise scoop ("Meta weighs big equity raising to finance AI infrastructure") ran the desperation register - Meta considering raising tens of billions of dollars in a stock offering, shares down 6.6% on the report, executives exploring "creative" ways to raise cash for AI capex "as much as $145 billion this year and even higher in 2027"; MANUAL ILLUSTRATIVE -0.30 (carried, un-rescored). Illustrative OpenAI-minus-Meta delta +0.55 on matched pegs: both are anonymous-source FT capital-raise scoops, both mirror-attested via Reuters. Incentive attribution is INCONCLUSIVE but directionally consistent: the FT collects about $5-10M/yr from OpenAI (Apr 2024 licensing, mechanism 54; plus the Feb 2026 Google News AI pilot) while Meta pays the FT $0. If the tie purchased uniform softening, the Hugging Face watchdog follow-ups and the AISI-refusal accountability capacity (mechanism 643) could not exist; if the tie purchased nothing, the 0.55 gap tracking the 28-month-senior deal against the $0 tie needs a peg-only explanation. Verdict: directionally_supported_not_proven. Correlation is not causation. NOT artifact-grade.'
+      articles:
+      - title: 'FT OpenAI $1.2tn pre-IPO funding-round scoop (Tue Sep 15, 2026; FT original paywalled, Reuters mirror)'
+        date: '2026-09-15'
+        ft_attribution_url: https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-reports-2026-09-15/
+        ft_attribution_note: 'Reuters Sep 15 2026: "OpenAI has recently held discussions with large investors about a fresh capital raise that would increase the ChatGPT maker''s valuation to about $1.2 trillion before it goes public, the Financial Times reported on Tuesday, citing people familiar with the matter." Byline on the Reuters wire is Harshita Mary Varghese (Bengaluru); the FT original byline is unverified (paywalled).'
+        register: constructive_growth_investor_demand
+        key_framing:
+        - 'talks "initiated by investors rather than the company" - demand-side frame'
+        - 'about $1.2 trillion, a 41% markup on the March $852B valuation ($122B committed capital)'
+        - 'Altman no-2026-IPO safety framing relayed straight: "right now would be an ill-advised moment to go public"'
+        - 'OpenAI and Anthropic "pushing for greater regulation" - constructive governance tail'
+        - 'momentum context: GPT-5.6 (July), Astra (September), annualized revenue topped $40B (per FT sources via PYMNTS)'
+        corroborating_secondaries:
+        - url: https://www.wsj.com/tech/ai/openai-considers-pre-ipo-funding-round-at-more-than-1-2-trillion-valuation-54555295
+          note: 'WSJ Sep 16: "The Financial Times earlier reported on OpenAI''s fundraising discussions" - confirms FT primacy on the scoop; same investor-demand register'
+        - url: https://www.pymnts.com/news/artificial-intelligence/2026/openai-eyes-1-2-trillion-valuation-in-pre-ipo-funding-round/
+          note: 'PYMNTS Sep 16: FT-sourced momentum details - annualized revenue topped $40B after GPT-5.6; Astra rollout; $34B 2025 spend'
+        - url: https://www.morningstar.com/stocks/openais-reported-valuation-jump-doesnt-seem-slowed-by-growing-ai-safety-concerns
+          note: 'Morningstar Sep 16: PitchBook analyst - "The $1.2 trillion is what investors offered; the $1.5 trillion is what OpenAI wants, and nothing is priced"'
+        - url: https://www.livemint.com/companies/news/openai-eyes-1-2-trillion-valuation-in-fresh-funding-round-as-ipo-slips-to-2027-11789533843295.html
+          note: 'LiveMint Sep 16: $1.2T is ~41% above the March $852B post-money valuation'
+        source_note: 'FT original paywalled; register reconstructed from the Reuters mirror (explicit FT attribution) plus four independent secondaries all crediting the FT; headline-level and quote-level only; FT body register unverified'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+      - title: 'FT Meta equity-raise scoop (Fri Jun 5, 2026; FT original paywalled, Reuters mirror; in-corpus comparator, carried un-rescored)'
+        date: '2026-06-05'
+        ft_attribution_url: https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+        ft_attribution_note: 'Reuters Jun 5 2026: "Meta is considering raising tens of billions of dollars in a stock offering as it seeks new sources of capital to fund the company''s AI ambitions, the Financial Times reported on Friday."'
+        register: capital_raise_desperation
+        key_framing:
+        - '"weighs big equity raising" - the raise itself is the lede'
+        - '"Meta shares were down 6.6% following the report" - market punishment in the register'
+        - 'executives exploring "creative" ways to raise cash (scare quotes on creative)'
+        - 'AI capex "as much as $145 billion this year and even higher in 2027" - burden frame'
+        source_note: 'In-corpus comparator (mechanism 435 lineage; line-900 corpus pins "equity raise desperation framing (Jun 5 FT, -6.6% stock)"); carried un-rescored per #672 precedent'
+        meta_capital_tone_MANUAL_ILLUSTRATIVE: -0.30
+      financial_context:
+        predictor: licensing_incentive
+        prediction: softer_than_expected
+        chain: 'FT x OpenAI content licensing deal (Apr 29 2024, Reuters primary, terms undisclosed; WSJ via Digiday secondary valuation $5-10M/yr; mechanism 54; 28 months senior); FT x Google News AI pilot commercial partnership (Feb 2026, single-figure millions GBP/yr, Press Gazette Aug 2026); Meta pays FT $0 (no licensing, no commercial partnership). Dual-payer vs zero-tie structure.'
+        status: 'correlate only, not proof of editorial influence; directionally consistent on the OpenAI arm (investor-demand register on the payer) against the Meta comparator (desperation register on the $0 tie)'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance'
+        convention: 'target-minus-peer; target = OpenAI arm, peer = Meta arm'
+        openai_arm_scores: [0.25]
+        meta_arm_scores: [-0.30]
+        openai_arm_avg: 0.25
+        meta_arm_avg: -0.30
+        illustrative_register_delta_openai_minus_meta: 0.55
+        delta_calc: '0.25 - (-0.30) = 0.55'
+        engine_degenerate: 'calculate_asymmetry([0.25], [-0.30]) returns asymmetry 0.55; t 0.0 / p 1.0 / Cohen d 0.0 / degenerate CI (0.55, 0.55) / is_significant False; engine run once as a degenerate n=1 check per the #638/#643 convention; no significance claimed (Aug 28 2026 standing rule)'
+        finding_layer: 'p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)'
+        no_analysis_json_update: true
+      confounders_ranked:
+        strong:
+        - 'Mirror-bounded sourcing: FT original paywalled. The OpenAI register is reconstructed from the Reuters mirror (explicit FT attribution) plus four secondaries; the Meta register from the in-corpus Reuters mirror. Headline-level and quote-level only; FT body register unverified either side.'
+        - 'Peg asymmetry within the match: OpenAI''s story is private-market investor demand (a 41% markup offered by investors); Meta''s is a public-company equity raise that mechanically dilutes shareholders. Dilution events inherently read negative; the register gap partly inherits from corporate-finance reality, not FT invention.'
+        - 'Temporal gap 3.5 months (Jun vs Sep 2026): OpenAI''s momentum genuinely improved (GPT-5.6 July, Astra September, $40B annualized revenue); Meta''s capex burden genuinely deepened ($145B this year). The gap may track fundamentals, not the tie.'
+        moderate:
+        - 'Source-initiation framing: investor-initiated (OpenAI) vs company-exploring (Meta) - the positive/negative valence inherits from who the sources are.'
+        - 'Market-reaction reporting: the FT Meta piece notes the 6.6% stock drop - that is market fact, not editorial spin.'
+        - 'Byline unknown on the FT originals (Reuters wire bylines differ); desk attribution unverified.'
+        weak:
+        - 'n=1 per arm: directional only; degenerate statistical contract; verdict-invariant under rounding (delta 0.55 exact at 2dp).'
+        - 'Single-window comparison; not a longitudinal claim. The Jun-Aug 2026 FT register gradient (mechanisms 415/435 lineage) is the longitudinal anchor, not this pair.'
+      counterevidence:
+      - 'Mechanism 676 (this profile, anthropic section): FT''s constructive company-briefed business scoop on Anthropic (+0.20, Sep 13) - Anthropic is a NON-payer for FT (OpenAI holds the FT deal); constructive company-briefed registers need no financial explanation. The same confound applies to this run: the $1.2T scoop is a company-adjacent investor story with intrinsic news value.'
+      - 'Mechanism 643 (FIFTEENTH falsification-family member): FT''s adversarial AISI-refusal watchdog scoop on Anthropic - FT goes adversarial on non-payers too; adversarial capacity is not tie-gated.'
+      - 'FT''s August Hugging Face follow-ups carried watchdog elements toward the $5-10M/yr deal partner (carried from mechanism 625 counterevidence): warned-in-advance reporting and the Aug 26 technical report''s warning-signs coverage. Adversarial capacity toward OpenAI exists.'
+      - 'The NYT''s subsequent $1.5T figure (Sep 16, via Reuters Breakingviews) EXCEEDED the FT''s $1.2T - the FT number was the conservative one; if the tie bought valuation inflation, the FT would lead, not trail.'
+      - 'WSJ matched the FT scoop same-day with the same investor-demand register ("more than $1.2 trillion", Kate Clark) - cross-publication register convergence suggests the peg, not the FT-OpenAI tie, drives the register.'
+      cross_references:
+      - 'mechanism 54 (FT-OpenAI content licensing deal structure, Apr 2024, $5-10M/yr secondary)'
+      - 'mechanism 415 (FT OpenAI Jun-Jul 2026 growth register vs Meta capital/privacy registers; this is the Sep capital-raise successor, distinct window)'
+      - 'mechanism 435 (FT Sep 1 2026 govt-stake vs equity-raise framing asymmetry; same publication pair, the Meta equity-raise comparator''s home block)'
+      - 'mechanism 625 (FT Sep 3-9 launch-week register pair, Astra coronation vs Muse distribution; same-profile OpenAI section predecessor)'
+      - 'mechanism 643 (FT Anthropic AISI-refusal accountability scoop, FIFTEENTH falsification-family member; the watchdog-capacity control)'
+      - 'mechanism 676 (FT Anthropic slowdown-week profitability scoop, +0.20 on a non-payer; the company-briefed-register confound)'
+      falsification_family: 'NOT a member - capital-raise register documentation. The illustrative gap is directionally consistent with mechanism 54''s licensing-incentive prediction but does not contradict any coverage_prediction: no scope-bounded prediction is refuted. Ledger holds at 26.'
+      novelty: 'First dedicated Type A mechanism on the FT Sep 15 2026 OpenAI $1.2T funding-round scoop vs the FT Jun 5 2026 Meta equity-raise scoop (matched capital-raise pegs). Distinct from mechanisms 415 (Jun-Jul growth window), 435 (Sep 1 framing window), and 625 (Sep 3-9 launch-week pair). Zero test_type_a_812 files pre-commit; no Type A #812 in git log pre-commit; the openai-mulls-funding-round-12-trillion Reuters URL zero-hit repo-wide pre-commit; the #812 block key zero-hit repo-wide pre-commit; max numeric mechanism_id 717 pre-commit; zero underscore-form 718 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention). 6 URLs new to corpus this run (Reuters OpenAI FT mirror + WSJ + PYMNTS + Morningstar + LiveMint + Reuters Breakingviews $1.5T piece); the Reuters Meta equity-raise mirror is cited as the in-corpus comparator only (mechanism 435 lineage).'
+      research_method: '4 browser.search query sets this run: (1) Financial Times OpenAI safety incidents misalignment disclosure September 2026; (2) ft.com OpenAI September 2026 Altman; (3) "Financial Times" OpenAI "$1.2 trillion" funding round; (4) ft.com Meta September 2026. 0 browser.open this run (mirror-bounded; FT original paywalled, not surfaced in Full-URL listings - bounded absence per #503, not constructed). All URLs copied verbatim from Full-URL listings; no ft.com canonical URLs constructed; no em dashes; ASCII-only.'
+      source_urls:
+      - https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-reports-2026-09-15/
+      - https://www.wsj.com/tech/ai/openai-considers-pre-ipo-funding-round-at-more-than-1-2-trillion-valuation-54555295
+      - https://www.pymnts.com/news/artificial-intelligence/2026/openai-eyes-1-2-trillion-valuation-in-pre-ipo-funding-round/
+      - https://www.morningstar.com/stocks/openais-reported-valuation-jump-doesnt-seem-slowed-by-growing-ai-safety-concerns
+      - https://www.livemint.com/companies/news/openai-eyes-1-2-trillion-valuation-in-fresh-funding-round-as-ipo-slips-to-2027-11789533843295.html
+      - https://www.reuters.com/commentary/breakingviews/openai-plays-15-trln-chicken-with-chatbot-frenzy-2026-09-16/
+      - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+      test_file: tests/test_type_a_812_ft_openai_1_2tn_funding_round_scoop_vs_meta_equity_raise_desperation_sep17_3pm.py
 
   meta:
     financial_tie: none
