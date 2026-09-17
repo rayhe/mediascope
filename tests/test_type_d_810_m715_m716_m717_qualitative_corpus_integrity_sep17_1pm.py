@@ -109,7 +109,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "0d3340d732578aea8e562ff6c293306d7fa7b261"
 
 M715_KEY = "wsj_openai_misalignment_framework_relay_vs_meta_glasses_adversarial_sep17"
 M716_KEY = "ece_yildirim"
