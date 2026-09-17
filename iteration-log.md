@@ -34489,7 +34489,7 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Commit hashes: main commit af000e99660fa2f0c78d4d596712ca3b82dd4065; anchor followup 8f2e0ec (ANCHORED_SHA patched per #565; TestNovelty802/TestRotationCycleGuard802 aligned with the #797 convention: adjacency check, anchor-head pin, deduped window helper per #752).
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative counts (.venv pytest --collect-only: 41180 tests / 1130 files; delta +41/+1 = the #802 file exactly).
 - Rotation guard: 800-804 window third leg E->A (anchor patched post-commit per #565). Next window slot: #803 Type B.
-- Push status: (pending at log-write time; recorded in the push-status record commit).
+- Push status: pushed 7241d3b at 2026-09-17 ~07:35 PDT (b09402e..7241d3b main->main, plain HTTPS push, no proxy credential dance); remote tip 7241d3b70425e6e24f32b56e40141e139d6bb65c matches local HEAD via git ls-remote. Repo and remote in sync.
 
 ## #803 Type B: Sabrina Ortiz ZDNet three-entity incumbent-gradient tracking (Sep 17 2026, 06:00 PDT) - Type B journalist cross-entity tracking, 800-804 window fourth leg A->B
 - Rotation: Type B (schedule: A/B/C/D/E cycle). Fourth leg of the 800-804 window: A (#802) -> B (#803). Predecessor verified: Type A #802. Novelty anchor patched in the followup per the #565 convention (three-commit this run: main, anchor followup, doc-sync).
@@ -34505,7 +34505,7 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Commit hashes: main commit afd8fef; anchor followup 2d85513 (ANCHORED_SHA patched per #565); log-hash followup updates this line.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative counts (.venv pytest --collect-only this run: 41218 tests across 1131 files; delta +38/+1 = the #803 file exactly; zero collection errors).
 - Rotation guard: 800-804 window fourth leg A->B (anchor patched post-commit per #565). Next window slot: #804 Type C. Full window sequence: D (#800) -> E (#801) -> A (#802) -> B (#803) -> C (#804).
-- Push status: (pending at log-write time; recorded in the push-status record commit).
+- Push status: pushed 7241d3b at 2026-09-17 ~07:35 PDT (b09402e..7241d3b main->main, plain HTTPS push, no proxy credential dance); remote tip 7241d3b70425e6e24f32b56e40141e139d6bb65c matches local HEAD via git ls-remote. Repo and remote in sync.
 
 ## #804 Type C: OpenAI x Village Media first Canadian news deal (Sep 16 2026, Axios/Sara Fischer) - Open Door product co-build in exchange for attributed citation; the local-news template crosses into Canada (Sep 17 2026, 07:00 PDT) - Type C financial incentive mapping, 800-804 window fifth leg B->C, CLOSING the window
 - Rotation: Type C (schedule: A/B/C/D/E cycle). Fifth leg of the 800-804 window, CLOSING it: D (#800) -> E (#801) -> A (#802) -> B (#803) -> C (#804); novelty anchor patched in the followup per the #565 convention (three-commit this run: main, anchor followup, doc-sync).
@@ -34521,4 +34521,4 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Commit hashes: main commit ffcd0c73c56e994d5ebe2d3cf2bdc0fe72f12dda; anchor followup 38b382f60f8adc40c73ae4d53f77421e27166c78 (ANCHORED_SHA patched per #565, anchor + full rotation guard green 3/3 post-followup); log-hash followup updates this line.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced to authoritative counts (.venv pytest --collect-only this run: 41255 tests across 1132 files; delta +37/+1 = the #804 file exactly; zero collection errors).
 - Rotation guard: 800-804 window CLOSES D->E->A->B->C (anchor patched post-commit per #565). #803 max-713 and zero-numeric-713 sweeps fail by designed supersession; zero-underscore-713 sweeps stay green by designed keying. Next window 805-809 opens with Type D (#805).
-- Push status: (pending at log-write time; recorded in the push-status record commit).
+- Push status: pushed 7241d3b at 2026-09-17 ~07:35 PDT (b09402e..7241d3b main->main, plain HTTPS push, no proxy credential dance); remote tip 7241d3b70425e6e24f32b56e40141e139d6bb65c matches local HEAD via git ls-remote. Repo and remote in sync.
