@@ -4708,6 +4708,85 @@ entities:
         type: 'C'
         date: '2026-09-17 07:00 PDT'
 
+
+    ani_v_openai_division_bench_notice_sep2026:
+      mechanism_id: 717
+      iteration: 809
+      iteration_type: C
+      rotation: 'Type C'
+      date_analyzed: '2026-09-17'
+      discovery_date: '2026-09-17'
+      time_pdt: '12:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      author: 'Kit (with Ray)'
+      mechanism_name: 'ANI v. OpenAI Division Bench Issues Notice and Seeks OpenAI Reply (Sep 15 2026) - Reconstituted Jhingan/Arora Bench Lists December 08 Hearing; OpenAI Sep 2024 Voluntary No-Scrape Undertaking Lapsed With the July 24 Order'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      overview: 'FIRST dedicated corpus mapping of the Sep 15 2026 Delhi High Court Division Bench procedural movement in ANI Media Pvt. Ltd. v. OpenAI Inc & Anr: the bench issued notice on ANI''s appeal against the July 24 single-judge order (Justice Amit Bansal) that denied interim relief, sought OpenAI''s response, and listed the matter for hearing on December 08, 2026. The bench is reconstituted: Justices Avneesh Jhingan and Manmeet Pritam Singh Arora (Jhingan replaces V. Kameswar Rao, appointed Chief Justice of Patna HC per the Sep 8 LiveLaw piece already in corpus). ANI counsel Advocate Siddhant Kumar (LiveLaw spelling; Sidhant Kumar in Mint) told the court OpenAI had voluntarily undertaken, from Sep 11 2024 until the July 24 impugned order, not to scrape or download content from ANI''s website as an interim arrangement; that status lapsed with the order, so OpenAI is free to scrape ANI content during the roughly three-month window to December 08. Senior Advocates Arvind Datar and Kapil Sibal appeared for intervenors; Sibal (via video conference): the single judge heard us, we need to be heard, this has global implications. Bansal''s July 24 reasoning (recapped): balance of convenience favored OpenAI; generative AI serves significant public interest (research, education, accessibility, knowledge dissemination); Indian courts have jurisdiction (ChatGPT accessible in India, harm suffered in India); but ANI failed to show substantial reproduction of its reports or actual market harm or loss of subscriptions. OpenAI did not respond to Mint''s queries. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+      procedural_facts:
+        hearing_date: 'Tuesday, Sep 15 2026 (inferred from crawl dates; both source pieces crawled Sep 15-16)'
+        action: 'Division Bench issued notice on ANI''s appeal; sought OpenAI''s response; declined to pass an order without hearing OpenAI'
+        bench: 'Justices Avneesh Jhingan and Manmeet Pritam Singh Arora (reconstituted; replaces the Rao/Arora listing)'
+        next_hearing: 'December 08, 2026 (LiveLaw); December (Mint)'
+        ani_counsel: 'Advocate Siddhant Kumar (LiveLaw spelling) / Sidhant Kumar (Mint spelling)'
+        intervenors: 'Senior Advocates Arvind Datar and Kapil Sibal; Sibal via video conference'
+        lapsed_undertaking: 'OpenAI''s voluntary no-scrape/no-download undertaking ran Sep 11 2024 to Jul 24 2026; lapsed with the impugned order'
+      litigation_leg_repricing: 'Extends mechanism 681''s repricing frame with a dated calendar: the appeal survives to December 08, keeping the litigate track alive as the leverage source behind paid licenses, but the interim no-scrape protection has lapsed, so OpenAI gets roughly three months of unrestricted ANI scraping while the case proceeds. The $0-attribution template (mechanism 609: BCCL Sep 7, Indian Express Group Sep 8) keeps accruing precedent (traffic in lieu of cash, per mechanism 681) during the window. The two-tier global pricing structure (paid licences US/UK/EU vs $0 attribution in cost-sensitive markets, mechanism 681) now has a procedural anchor: December 08, 2026.'
+      cross_references: 'mechanism 681 (Sep 14 outcome watch, bounded absence - this block resolves that watch with first-hand-read reporting); mechanism 678 (ANI appeal watch Sep 12); mechanism 657; mechanism 609 (OpenAI India national-publisher attribution deals Sep 7-8); mechanism 663 (publisher licensing roster)'
+      bounded_absences_this_run:
+      - 'News Corp additional-arrangements watch (mechanism 630): seventh-leg watch unchanged; Sep 2026 searches surface only May 2024 deal re-indexes (TheWrap, Bloomberg Law, Digital Trends - all 846+ days old), zero new arrangements reported'
+      - 'Apple Siri AI publisher deals (mechanism 606 watch): zero announced closures as of Sep 17 2026'
+      - 'Google pay-per-value AI licensing pilot (mechanisms 702/708): no new status beyond the Sep 14-15 Digiday/AdExchanger reporting'
+      - 'Anthropic publisher deals: zero per AdWeek (Aug 2026); the LetsRun $100M April 1 2026 press release is an April Fools joke, not a real deal; financialcontent tokenring NYT/Anthropic mirrors are crypto-spam'
+      - 'OpenAI x Dotdash Meredith Bloomberg Law piece (crawled 9h, announced-Tuesday framing): the May 7 2024 IAC release; stale metadata, not a new deal'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        text: 'Procedural not merits - notice issuance is routine appellate procedure; it carries no signal of the bench''s view on the appeal''s merits; reading it as a pro-ANI development overstates the evidence'
+      - rank: 2
+        strength: strong
+        text: 'The $0-vs-$7.5M repricing inference assumes litigation outcomes drive deal terms; OpenAI''s attribution-deal template (BCCL, Indian Express Group) was set before Sep 15 and may be market-strategy-driven regardless of the appeal''s course'
+      - rank: 3
+        strength: moderate
+        text: 'Legal-press summaries, not the court order - LiveLaw and Mint agree on core facts but Tuesday dating is inferred from crawl dates; whether the undertaking''s lapse was explicit in the order is second-hand'
+      - rank: 4
+        strength: moderate
+        text: 'Intervenor positions unspecified - Datar and Sibal''s clients are unnamed; the global-implications framing is Sibal''s argument, not a finding'
+      - rank: 5
+        strength: weak
+        text: 'Practical effect of the lapsed undertaking is uncertain - OpenAI may still voluntarily refrain from scraping ANI content; one agency''s corpus is small relative to training-data scale'
+      strongest_counterargument: 'This is routine procedure dressed as substance: appellate courts issue notice as a matter of course, and the December 08 listing is a scheduling artifact of a busy docket. The financial-incentive reading over-interprets: OpenAI''s India attribution strategy was set before Sep 15, the lapsed undertaking changes nothing observable about deal economics, and the litigation leg is financially inert until a merits ruling. The notice keeps the case alive but moves no money. Per the qualitative boundary, no tone claim is made and the repricing inference stays directional only.'
+      statistical_discipline:
+        scorer: 'none'
+        tone_scores: 'NOT_SCORED'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      falsification_family: 'NOT a member of the falsification family; ledger holds at 26'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C litigation-leg mapping; resolves mechanism 681 Sep 14 outcome watch; no new tracked-publication finding.'
+      source_urls:
+      - https://www.livelaw.in/amp/high-court/delhi-high-court/notice-ani-appeal-interim-relief-copyright-case-against-chatgpt-550053
+      - https://www.livemint.com/companies/news/delhi-high-court-openai-copyright-lawsuit-ani-plea-stop-chatgpt-from-using-content-11789457353087.html
+      research_method: '5 browser.search query sets this run: (1) OpenAI publisher content licensing deal announced news partnership (since=2026-09-12) - Bloomberg Law re-indexes, FourWeekMBA India analysis, Press Gazette tracker; (2) Anthropic news publisher licensing deal partnership announced (since=2026-08-17) - AdWeek (zero Anthropic publisher deals), $1.5B settlement coverage, LetsRun April Fools and financialcontent spam rejected; (3) OpenAI strikes licensing deal publisher September 2026 ChatGPT content (since=2026-09-14) - Press Gazette Sep 17 tracker update (Seattle Times/Newsday Sep 7 suit, already mechanism 734); (4) publisher AI content licensing deal announced OpenAI Anthropic Google this week (since=2026-09-15) - Press Ranger/OtterlyAI study (already Aug 23), Google AI Contribution Pilot (in-corpus), TechCrunch Sep 6 settlement claims (already mechanism 629), LinkedIn Google-pilot corroboration (2 days old, no new mechanism); (5) ANI OpenAI copyright Delhi High Court appeal hearing September 2026 (since=2026-09-14) - surfaced the LiveLaw Sep 15 notice piece and the Mint Sep 15 reply-sought piece, both NEW (zero-hit repo-wide pre-commit). 2 browser.open first-hand reads this run (LiveLaw AMP page, 41 rendered lines; Mint page, 50 rendered lines). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated corpus mapping of the Sep 15 2026 Division Bench notice/reply order in ANI v. OpenAI. Zero Jhingan hits repo-wide pre-commit; both source URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 716 pre-commit; zero underscore-form 717 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); block key zero-hit repo-wide pre-commit. Resolves mechanism 681''s Sep 14 bounded-absence outcome watch with first-hand-read reporting. Distinct from mechanism 629 (Anthropic US author-settlement distribution fight, different case and country). No em dashes; ASCII-only.'
+      test_file: 'tests/test_type_c_809_ani_division_bench_notice_sep15_2026_sep17_12pm.py'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 809
+        type: 'C'
+        date: '2026-09-17 12:00 PDT'
+
   anthropic:
     display_name: Anthropic
     aliases:
