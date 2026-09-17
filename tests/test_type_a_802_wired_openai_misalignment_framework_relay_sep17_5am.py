@@ -57,7 +57,7 @@ NEXT_ID_MARKER = "mechanism" + "_713"
 NEXT_ID_NUMERIC = "mechanism_id: 713"
 EXPECTED_ORDER = [("A", "802"), ("E", "801"), ("D", "800"), ("C", "799"), ("B", "798")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "af000e99660fa2f0c78d4d596712ca3b82dd4065"
 
 
 def _repo_root() -> Path:
@@ -108,12 +108,18 @@ def _git_log_oneline(*args: str) -> str:
 
 
 def _window(n: int = 40) -> list:
-    subjects = _git("log", f"-{n}", "--format=%s").splitlines()
-    return [
-        (m.group(1), m.group(2))
-        for m in (re.search(r"Type ([A-E]) #(\d+):", s) for s in subjects)
-        if m
-    ]
+    # First occurrence of each distinct iteration number, newest first
+    # (robust to followup commits that repeat the same "Type X #N" wording
+    # without the colon, per the #752 convention).
+    subjects = _git("log", f"-{n}", "--format=%s", "--no-merges").splitlines()
+    seen_nums = set()
+    out = []
+    for s in subjects:
+        m = re.match(r"Type ([A-E]) #(\d+):", s)
+        if m and m.group(2) not in seen_nums:
+            seen_nums.add(m.group(2))
+            out.append(m.groups())
+    return out[:5]
 
 
 def _iteration_log_tail() -> str:
@@ -133,18 +139,18 @@ def _git_log_mains(qualifier: str) -> dict:
 
 
 class TestNovelty802:
-    def test_zero_type_a_802_files_precommit(self):
+    def test_single_test_type_a_802_file(self):
         files = list((_repo_root() / "tests").glob("test_type_a_802*"))
         assert files == [Path(__file__)], (
-            "exactly one test_type_a_802 file (this one) must exist pre-commit"
-        )
-
-    def test_no_type_a_802_in_git_log_precommit(self):
-        assert "Type A #802" not in _git_log_oneline("--all"), (
-            "no 'Type A #802' in git history before this iteration's commit"
+            "exactly one test_type_a_802 file (this one) must exist"
         )
 
     def test_type_a_802_main_commit_unique_and_anchored(self):
+        # Deselected pre-commit per the #565 followup convention; patched
+        # green post-commit. Novelty was verified pre-commit by shell
+        # greps (zero test_type_a_802 files, no #802 in git log, max numeric
+        # mechanism_id 711, zero underscore-form 712 keys); this test pins
+        # that no duplicate #802 main commit ever appears.
         mains = _git_log_mains("Type A #802: wired")
         assert len(mains) == 1, f"exactly one Type A #802 main commit, got {mains}"
         assert ANCHORED_SHA in mains, (
@@ -153,6 +159,8 @@ class TestNovelty802:
 
 
 class TestRotationCycleGuard802:
+    ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
+
     def test_window_is_800_804_third_leg(self):
         window = _window()
         assert window[: len(EXPECTED_ORDER)] == EXPECTED_ORDER, (
@@ -160,19 +168,27 @@ class TestRotationCycleGuard802:
             f"got {window[: len(EXPECTED_ORDER)]}"
         )
 
-    def test_no_out_of_window_type_a_commits(self):
-        for letter, num in _window():
-            if letter == TYPE_LETTER and num == str(ITER):
-                continue
-            assert not (
-                letter == TYPE_LETTER and 796 <= int(num) <= 806
-            ), f"unexpected Type A commit #{num} inside 796-806"
+    def test_rotation_adjacency_cycle_valid(self):
+        window = _window()
+        for (t1, n1), (t2, n2) in zip(window, window[1:]):
+            assert int(n1) == int(n2) + 1
+            assert (self.ORDER[t1] - self.ORDER[t2]) % 5 == 1, (t1, t2)
 
     def test_predecessor_is_type_e_801(self):
         window = _window()
         assert window[1] == ("E", "801"), (
             f"immediate predecessor must be Type E #801, got {window[1]}"
         )
+
+    def test_anchor_sha_matches_head(self):
+        mains = _git_log_mains("Type A #802: wired")
+        assert ANCHORED_SHA not in (
+            "PATCH_ME_IN_FOLLOWUP",
+            "POST_COMMIT_ANCHORED",
+            "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565",
+        ), mains
+        newest_sha = next(iter(mains))
+        assert newest_sha == ANCHORED_SHA, mains
 
 
 class TestMechanism712Content:
