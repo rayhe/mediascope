@@ -38604,6 +38604,254 @@ publications:
     falsification_family: 'NOT a member - register documentation with
       confound-bounded incentive note; no uniform-prediction test run. Ledger
       holds at 26.'
+  times_openai_slowdown_week_statesman_register_sep17:
+    mechanism_id: 709
+    iteration: 797
+    iteration_type: A
+    type: competitor_coverage_deep_dive
+    date: '2026-09-17'
+    date_analyzed: '2026-09-17'
+    time_pdt: '00:00'
+    publication: The Times (News Corp / News UK)
+    entity: OpenAI
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    title: 'The Times x OpenAI Slowdown-Week Register: Statesman Platform (+0.25)
+      vs Anthropic Motive-Questioning (-0.20) vs Meta Glasses Adversarial
+      (-0.55); News Corp Dual-Payer Owner (OpenAI $50M/yr + Meta up to $50M/yr)'
+    description: 'First dedicated Times x OpenAI slowdown-week mechanism. Arm 1
+      (OpenAI, crawled ~12h before this run, Sep 16-17 2026): The Times
+      ''Mathematicians fear AI curbs may come too late to save humanity'' -
+      Altman given the sober-statesman platform: ''people were justifiably
+      concerned about the risks from his technology, while adding that the
+      company was working to make AI safe''; ''It doesn''t take as much
+      imagination as it used to for [us] to imagine how this could go wrong'';
+      ''I think the world is right to be afraid of this.'' The attack vector in
+      the same piece is aimed at ANTHROPIC: Microsoft AI chief Mustafa Suleyman
+      warns Anthropic''s Claude consciousness approach could have a ''disastrous
+      impact on the wellbeing of humanity''. Tone MANUAL ILLUSTRATIVE +0.25
+      (platform-giving, not puff). Arm 2 (Anthropic, crawled 6d, Sep 11 2026):
+      The Times ''Brains are needed to manage AI risk'' - motive-questioning
+      register: ''The fallout from Anthropic''s bizarre pre-flotation strategy
+      of endorsing a vague warning from a resigning staff member that AI might
+      kill us all''; ''the furore is proving to be useful PR for Anthropic,
+      which wants AI regulation amid the pressing threat of cheaper Chinese
+      rivals''. Tone MANUAL ILLUSTRATIVE -0.20. Illustrative OpenAI-minus-Anthropic
+      delta +0.45 on the SAME slowdown-week news peg. Meta comparator
+      (same publication, in-corpus URL): The Times ''Fear and loathing on the
+      streets of London with Meta smart glasses'' (crawled 9d, ~Sep 7-8 2026) -
+      adversarial privacy register: ''pervert glasses''; ''Ban them, stamp on the
+      b*******, [it''s an] infringement of privacy''; ''freaky'', ''sneaky'',
+      ''ripe for misuse''. Tone -0.55. Illustrative OpenAI-minus-Meta delta
+      +0.80. Financial tie: News Corp x OpenAI $250M/5yr content licensing deal
+      (May 22 2024; $50M/yr; training + answer-surfacing; joint press releases;
+      treated ACTIVE per the #599 convention, m627 Sep 2026 renewal-window
+      status). CAVEATS, stated plainly: News Corp is a DUAL-payer owner -
+      Meta news licensing up to $50M/yr for at least three years (Mar 2026,
+      m519) - so the corpus''s own prior prediction (m519/m627: symmetric
+      softening incentives toward BOTH Meta and OpenAI) is CONTRADICTED on the
+      Meta leg by the observed ''pervert glasses'' adversarial register; the
+      owner-level incentive does not transmit uniformly to the newsroom on the
+      glasses beat. Anthropic sits on the adversarial side of News Corp''s
+      ledger: $1.5B Bartz v. Anthropic class-action settlement revenue share
+      (final approval Jul 20 2026). Verdict: mixed_not_proven - the
+      OpenAI-vs-Anthropic leg is directionally consistent with the
+      payer-vs-sued gradient, but the Meta leg fails the dual-payer symmetry
+      prediction, so no uniform incentive claim is supported. NOT a
+      falsification-family member: register documentation with confound-bounded
+      incentive note; the Meta-leg failed prediction is carried as
+      counter-evidence, no uniform-prediction test run. Ledger holds at 26. NOT
+      artifact-grade. Correlation is not causation.
+
+      '
+    novelty_verification: 'Zero test_type_a_797 files on disk pre-commit (glob); no
+      "Type A #797" in git log pre-commit; max numeric mechanism_id 708 pre-commit;
+      zero underscore-form 709 mechanism key substrings repo-wide pre-commit.
+      zero times_openai_slowdown_week mechanism keys repo-wide pre-commit; three
+      anchor thetimes.com URLs zero-hit repo-wide pre-commit
+      (mathematician-emergency chpmkvfs0; ai-risk rtfrdh52j; navier-stokes
+      bgmkm7rff); Meta comparator URL 0l82sx8sw already in corpus (in_corpus,
+      not novel). 795-799 window third leg D->E->A verified post-commit.'
+    research_method: 'Evidence search-excerpt-bounded per #503. 9 browser.search
+      query sets (WIRED OpenAI article September 2026; Financial Times Anthropic
+      September 2026; Financial Times OpenAI slowdown safety Altman September
+      2026; ft.com Anthropic IPO Amodei slowdown; ft.com OpenAI Altman IPO safety;
+      wired.com OpenAI misalignment safety disclosure; wired.com Anthropic Amodei
+      slowdown essay; thetimes.com OpenAI article September 2026 Altman;
+      thetimes.com Meta Ray-Ban glasses privacy September 2026), 0 browser.open attempts.
+      The ft.com and wired.com site queries surfaced no usable verbatim
+      ft.com/wired.com URLs (bounded search-result absence per the iteration-492
+      rule, not noncoverage); the run pivoted to The Times (News Corp), where
+      verbatim thetimes.com URLs surfaced for all three arms in this run''s
+      Full-URL listings. All anchor URLs verbatim from search Full-URL listings;
+      no canonical URLs constructed. Excerpts quoted from search-result text.
+      ASCII-only, no em dashes.
+
+      '
+    arms:
+      arm1_times_openai_mathematicians_emergency:
+        title: 'Mathematicians fear AI curbs may come too late to save humanity'
+        date: '2026-09-16'
+        crawl_lag: ~12h before this run
+        url: https://www.thetimes.com/uk/technology-uk/article/mathematician-emergency-ai-sam-altman-royal-society-chpmkvfs0
+        url_status: verbatim_from_search_full_url_listing
+        register: statesman_platform
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        excerpts:
+        - 'Sam Altman, the head of OpenAI, said on Tuesday that people were
+          justifiably concerned about the risks from his technology, while adding
+          that the company was working to make AI safe.'
+        - 'It doesn''t take as much imagination as it used to for [us] to
+          imagine how this could go wrong'
+        - 'I think the world is right to be afraid of this.'
+        - 'Mustafa Suleyman, Microsoft''s head of AI, has meanwhile warned that
+          Anthropic''s approach to developing Claude could have a ''disastrous
+          impact on the wellbeing of humanity''.'
+        note: 'Altman carries the sober-incumbent register; the piece''s attack
+          vector lands on Anthropic (via Suleyman), not on OpenAI.'
+      arm2_times_anthropic_ai_risk_float:
+        title: 'Brains are needed to manage AI risk'
+        date: '2026-09-11'
+        crawl_lag: 6d before this run
+        url: https://www.thetimes.com/business/economics/article/ai-risk-anthropic-float-rtfrdh52j
+        url_status: verbatim_from_search_full_url_listing
+        register: motive_questioning_skeptical
+        tone_MANUAL_ILLUSTRATIVE: -0.20
+        excerpts:
+        - 'The fallout from Anthropic''s bizarre pre-flotation strategy of
+          endorsing a vague warning from a resigning staff member that AI might
+          kill us all'
+        - 'the furore is proving to be useful PR for Anthropic, which wants AI
+          regulation amid the pressing threat of cheaper Chinese rivals'
+        note: 'Motive attribution (PR-seeking) applied to Anthropic''s slowdown
+          posture; no equivalent motive-questioning of OpenAI''s slowdown
+          posture in the arm-1 piece.'
+      openai_arm_scores: [0.25]
+      anthropic_arm_scores: [-0.20]
+      illustrative_openai_minus_anthropic_delta: 0.45
+      delta_caveat: 'Same slowdown-week news peg for both arms (Sep 11-16 2026);
+        the delta documents register selection, not a controlled like-for-like
+        causal claim.'
+    meta_comparator:
+      source: in_corpus_url_already_documented
+      title: 'Fear and loathing on the streets of London with Meta smart glasses'
+      date: '~2026-09-07'
+      crawl_lag: 9d before this run
+      url: https://www.thetimes.com/uk/technology-uk/article/meta-glasses-rayban-privacy-recording-ai-0l82sx8sw
+      url_status: in_corpus_not_novel
+      description: 'Same-publication Meta register: adversarial privacy feature -
+        ''pervert glasses''; ''Ban them, stamp on the b*******, [it''s an]
+        infringement of privacy''; ''freaky'', ''sneaky'', ''ripe for misuse''.'
+      meta_glasses_tone_MANUAL_ILLUSTRATIVE: -0.55
+      illustrative_register_delta_openai_minus_meta: 0.80
+      delta_caveat: 'Different beats (AI-safety news vs consumer-privacy
+        feature); the delta documents register selection, not a controlled
+        like-for-like causal claim. The Meta-adversarial register CONTRADICTS
+        the corpus dual-payer symmetric-softening prediction (m519) on the Meta
+        leg: Meta pays News Corp up to $50M/yr yet receives the hardest
+        register of the three arms.'
+    financial_tie:
+      parties: News Corp (The Times owner) x OpenAI; News Corp x Meta (dual-payer owner)
+      form: content_licensing_deals
+      evidence:
+      - 'News Corp x OpenAI: $250M over 5 years ($50M/yr), announced May 22
+        2024; OpenAI gains access to current and archived content from News Corp
+        publications for BOTH model training and surfacing as ChatGPT answers
+        (joint press releases); treated ACTIVE per the #599 convention (m627,
+        Sep 2026 renewal-window status: no renewal/extension/termination
+        reporting). In-corpus: competitor-entities.yaml mechanism 519 block and
+        mechanism_627_news_corp_openai_renewal_window_250m_five_year_sep2026.'
+      - 'News Corp x Meta: news licensing, up to $50M per year for at least
+        three years, Mar 2026 (mechanism 519, leg_2_meta). News Corp is the only
+        tracked-publication owner with AI content licensing deals from BOTH
+        Meta and OpenAI.'
+      - 'News Corp x Anthropic: adversarial - settlement revenue share of the
+        $1.5B Bartz v. Anthropic class action (final approval Jul 20 2026;
+        Thomson Q4 FY2026 call); News Corp sued Anthropic, it does not license
+        to it.'
+      caveats:
+      - 'The corpus''s own prior prediction (m519/m627 text: ''symmetric
+        softening incentives toward BOTH Meta and OpenAI'') FAILS on the Meta
+        leg: the Times gives Meta glasses the hardest register (-0.55,
+        ''pervert glasses'') of the three arms despite Meta''s payer status.
+        Owner-level incentive does not transmit uniformly to the newsroom.'
+      - 'Deal is owner-level (News Corp / Dow Jones), not Times-newsroom-level;
+        no evidence the Times desk knows or prices the OpenAI deal into
+        AI-safety coverage. Thin causal channel.'
+      - 'Anthropic''s harder register may reflect the adversarial litigation
+        posture (Bartz) rather than the absence of a licensing deal -
+        observational equivalence.'
+      verdict: 'mixed_not_proven: the OpenAI-vs-Anthropic leg
+        (+0.45 illustrative) is directionally consistent with the payer-vs-sued
+        gradient, but the Meta leg contradicts the dual-payer symmetry
+        prediction, so no uniform financial-incentive claim is supported.'
+    confounders_ranked:
+      strong:
+      - 'Dual-payer owner neutralizes the net OpenAI-vs-Meta directional
+        prediction: News Corp collects from BOTH OpenAI ($50M/yr, May 2024) and
+        Meta (up to $50M/yr, Mar 2026, m519). The corpus''s own symmetric-softening
+        prediction fails on the Meta leg (''pervert glasses'' -0.55 despite
+        payer status) - owner incentive does not transmit uniformly.'
+      - 'Beat and genre asymmetry: the Meta arm is consumer-privacy feature
+        writing (campaigner-sourced, UK ban politics, ''pervert glasses''
+        vocabulary); the OpenAI/Anthropic arms are AI-safety news built on CEO
+        statements and analyst quotes. Register follows beat conventions, not
+        only the company.'
+      moderate:
+      - 'Same-week adversarial OpenAI counter-example: the Times ran ''OpenAI''s
+        $1m maths breakthrough claim engulfed by plagiarism row'' (~Sep 10,
+        https://www.thetimes.com/uk/science/article/openai-maths-millennium-navier-stokes-problem-bgmkm7rff,
+        verbatim_from_search_full_url_listing) - Buckmaster plagiarism claims
+        given full airing, Altman ''unfounded accusations of plagiarism'' denial
+        quoted. Softness is register-specific to the slowdown-week peg, not
+        uniform across OpenAI coverage.'
+      - 'Anthropic litigation-posture confound: News Corp sued Anthropic (Bartz
+        $1.5B settlement); the harder Anthropic register may reflect litigation
+        posture rather than absence of a licensing deal.'
+      weak:
+      - 'n=1 per arm; search-excerpt-bounded per #503 (0 browser.open);
+        single-week window; paywall limits excerpt depth.'
+    counter_evidence:
+    - 'Times ''OpenAI''s $1m maths breakthrough claim engulfed by plagiarism
+      row'' (~Sep 10 2026): adversarial OpenAI register - Buckmaster claims
+      OpenAI ''poured huge computing resources'' into the mathematicians''
+      avenue after hearing rumours, private Codex inputs may have helped;
+      Altman denial (''unfounded accusations of plagiarism'') quoted but the
+      piece leads with the row. Bounds the softness claim to the slowdown-week
+      register.'
+    - 'Times Meta-glasses adversarial register (''pervert glasses'', ban calls)
+      despite Meta''s up-to-$50M/yr payer status (m519): direct failed
+      prediction for the corpus dual-payer symmetric-softening hypothesis.'
+    - 'Times ''SoftBank shares fall after tech bosses back call for AI
+      slowdown'' (Sep 15 2026,
+      https://www.thetimes.com/business/companies-markets/article/softbank-shares-ai-elon-musk-crvttsb0h,
+      verbatim_from_search_full_url_listing): symmetric business register -
+      Amodei warning and Altman agreement reported without register gap;
+      SoftBank $60B cumulative OpenAI exposure (~13% stake) stated plainly.'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. Engine run once
+      as a DEGENERATE n=1 check (OpenAI [0.25] vs Anthropic [-0.20]):
+      asymmetry 0.45 matches the manual delta, but t 0.0 / p 1.0 / Cohen d 0.0
+      / degenerate CI (0.45, 0.45) / is_significant false - inferential stats
+      are meaningless with one score per arm; no significance claimed (Aug 28
+      2026 standing rule). verdict mixed_not_proven. no_analysis_json_update: true.
+      NOT artifact-grade. Correlation is not causation.'
+    cross_references:
+    - mechanism_id: 519
+      description: News Corp x Meta news licensing (up to $50M/yr, Mar 2026) -
+        dual-payer owner leg whose symmetric-softening prediction this mechanism
+        contradicts on the Meta glasses beat
+    - mechanism_id: 627
+      description: News Corp (Dow Jones) x OpenAI renewal window (Sep 2026) -
+        $250M/5yr deal treated ACTIVE per #599 convention
+    - mechanism_id: 703
+      description: Politico x OpenAI slowdown-week scoop channel (Type A iteration
+        787) - slowdown-week register family analogue
+    - mechanism_id: 706
+      description: The Verge x Apple Duo launch-week register vs Meta glasses
+        (Type A #792) - same Type A register-contrast family
+    falsification_family: 'NOT a member - register documentation with
+      confound-bounded incentive note; the Meta-leg failed prediction is carried
+      as counter-evidence, no uniform-prediction test run. Ledger holds at 26.'
   fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient:
     mechanism_id: 324
     type: podcast_sentiment_tracking
