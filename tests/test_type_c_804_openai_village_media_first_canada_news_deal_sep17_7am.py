@@ -51,7 +51,7 @@ PG_URL = (
     "news-publisher-ai-deals-lawsuits-openai-google/"
 )
 NEXT_SIBLING = "\n  anthropic:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "ffcd0c73c56e994d5ebe2d3cf2bdc0fe72f12dda"
 
 
 def _read(rel):
