@@ -17305,6 +17305,83 @@ entities:
         ascii_only: true
         goal_id: goal_54093bda4145
         job_id: mediascope-daily-iteration
+    cashmere_academic_roster_expansion_de_gruyter_brill_iop_publishing_sep2026:
+      mechanism_id: 711
+      iteration: 799
+      iteration_type: C
+      rotation: 'Type C'
+      date_analyzed: '2026-09-17'
+      discovery_date: '2026-09-17'
+      time_pdt: '02:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      author: 'Kit (with Ray)'
+      mechanism_name: 'Cashmere September 2026 Academic-Publisher Roster Expansion - De Gruyter Brill (Sep 14) + IOP Publishing (Sep 9): Inference-Only, No-Training-Rights Template Extends into the Scholarly Vertical; Two Newest Cashmere Premium-Data Legs'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      overview: 'FIRST dedicated corpus mapping of the two newest September 2026 legs of Cashmere''s academic-publisher premium-data roster: De Gruyter Brill (announced Sep 14 2026, Berlin dateline) and IOP Publishing (announced Sep 9 2026, Salt Lake City dateline). Both license scholarly catalogues to AI platforms through Cashmere''s governed infrastructure STRICTLY for inference use cases, with content explicitly never used to train large language models. De Gruyter Brill (2024 merger of De Gruyter, founded 1749, and Brill, founded 1683; one of the world''s leading academic publishers in the humanities and social sciences) licenses its English-language books and journals (3,500+ books and 800 journals a year) with publisher-side control over which content is licensed, on what terms, and to whom. IOP Publishing (not-for-profit, society-owned, a wholly owned subsidiary of the Institute of Physics) brings its physical-sciences book and journal portfolio into AI applications with usage licensed, monitored, and compensated. Cashmere CEO Jonathan Munk: content is ''licensed for inference, protected from training use, and fully tracked, so every use is visible and compensated.'' The deals extend mechanism 663''s Cashmere premium-data roster (Wiley May 2025, Harvard Business Publishing, Princeton University Press Sep 2026, Rockefeller UP, Springer Publishing) with the two newest academic legs, and extend the corpus''s scholarly vertical (mechanism 699, Taylor & Francis x Microsoft) with the inference-only template. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+      deal_parties:
+        infrastructure_operator: 'Cashmere (cashmere.io) - the AI licensing infrastructure platform; operates the premium-data integration layer; air-gapped infrastructure, SOC 2, ISO 27001 and GDPR compliant'
+        publisher_leg_1: 'De Gruyter Brill - academic publisher (humanities, social sciences, expanding STEM); 2024 merger of De Gruyter (1749) and Brill (1683)'
+        publisher_leg_2: 'IOP Publishing (IOPP) - not-for-profit, society-owned scientific publisher; wholly owned subsidiary of the Institute of Physics'
+        buyer_side: 'AI companies / AI platforms / authorised AI applications (generic in both announcements; no named AI lab counterparty)'
+      de_gruyter_brill_leg:
+        announced: '2026-09-14'
+        dateline: 'Berlin, Germany (EIN Presswire)'
+        scope: 'English-language books and journals for AI inference use cases'
+        catalogue_scale: 'More than 3,500 books and 800 journals a year across the humanities, social sciences, and an expanding range of STEM disciplines'
+        provenance: 'Catalogue roots stretching back centuries; 2024 merger of De Gruyter (founded 1749) and Brill (founded 1683)'
+        training_boundary: 'Underlying content is never used to train large language models; made available to AI platforms strictly for inference'
+        publisher_control: 'De Gruyter Brill determines which content is licensed, on what terms, and to whom; maintains integrity of authors'' copyrights and citation practices'
+        infrastructure: 'Cashmere''s air-gapped infrastructure, SOC 2, ISO 27001 and GDPR compliant'
+      iop_publishing_leg:
+        announced: '2026-09-09'
+        dateline: 'Salt Lake City, UT, United States (EIN Presswire)'
+        scope: 'Proprietary portfolio of book and journal research into AI applications for inference use cases'
+        catalogue_character: 'Rigorously reviewed, trusted physical-sciences research'
+        training_boundary: 'Licensed and monitored without exposing content to the risk of unauthorised use in LLM training'
+        compensation: 'Every use is visible and compensated (Munk)'
+        ceo_quote: 'Jonathan Munk, Co-Founder and CEO of Cashmere: ''Scientific publishers like IOP Publishing have spent decades building rigorously reviewed, trusted bodies of research - exactly the kind of premium content AI platforms need for reliable inference. Our infrastructure gives IOPP a way to make that content available to AI applications on its own terms: licensed for inference, protected from training use, and fully tracked, so every use is visible and compensated.'''
+      inference_only_template: 'Both September 2026 legs instantiate the Cashmere RAG-only model already mapped at mechanism 663 (no-LLM-training; content parsed into proprietary knowledge-graph format; per-token/per-use/per-relationship licensing; token-level access control, rights management, usage tracking, revenue settlement). The new legs harden the template''s training boundary into explicit contractual language (''never used to train large language models'' / ''protected from training use'') and add publisher-side control (De Gruyter Brill) and per-use compensation visibility (IOP Publishing) as template features.'
+      premium_data_layer: 'Extends mechanism 663 (Perplexity x Cashmere premium-data roster) with the two newest academic legs; the roster now spans trade/academic (Wiley), business (Harvard Business Publishing), university presses (Princeton, Rockefeller), STM (Springer Publishing, De Gruyter Brill, IOP Publishing). Extends mechanism 699 (Taylor & Francis x Microsoft, the scholarly vertical) with the inference-only template as the CONTRAST case: T&F licensed ''Advanced Learning Content'' for AI data access (training-adjacent, license-over-authors, no author consultation); the Cashmere legs are inference-only with explicit publisher control. Extends mechanism 684 (Getty x Perplexity display-only, no training rights) into a three-way training-boundary pattern: visual display-only (Getty), scholarly inference-only (De Gruyter Brill, IOP Publishing). The training surface stays unlicensed across all three.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        text: 'Press-release evidence only - both announcements are vendor/publisher press releases (EIN Presswire distribution; degruyterbrill.com press page); no independent reporting of terms, pricing, or named AI-platform buyers; all financial terms undisclosed'
+      - rank: 2
+        strength: strong
+        text: 'Buyer side unnamed - ''AI companies'' / ''AI platforms'' / ''authorised AI applications'' are generic; no named AI lab counterparty (unlike Wiley-Perplexity, which names Perplexity); the incentive direction (which lab''s coverage would soften) cannot be pinned to any tracked competitor'
+      - rank: 3
+        strength: moderate
+        text: 'Inference-only is a claimed contractual boundary - ''never used to train'' is the parties'' stated term, not an independently audited technical guarantee; air-gapped / SOC 2 / ISO 27001 / GDPR claims are vendor assertions'
+      - rank: 4
+        strength: moderate
+        text: 'Academic publishers are not coverage producers in the corpus sense - De Gruyter Brill and IOPP publish scholarship, not news; the coverage-tone transmission channel is thinner than for news publishers (the incentive is prestige and legitimacy revenue, not editorial softening)'
+      - rank: 5
+        strength: weak
+        text: 'Temporal clustering (Sep 9 + Sep 14, five days apart) may reflect Cashmere''s PR cadence rather than organic demand - two announcements from the same platform in one week'
+      strongest_counterargument: 'The inference-only, publisher-controlled template is the opposite of a capture mechanism: De Gruyter Brill explicitly retains control over which content is licensed, on what terms, and to whom, with content contractually barred from training; IOPP''s content is licensed, monitored, and compensated per use. This is the anti-extraction template - publishers monetizing AI distribution without ceding IP - and Munk''s ''on their own terms'' framing cuts against the platform-dependency thesis. If anything, the mechanism documents publisher leverage, not publisher capture; any incentive reading must clear this bar.'
+      statistical_discipline:
+        scorer: none
+        tone_scores: 'NOT_SCORED'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      falsification_family: 'NOT a member of the falsification family; ledger holds at 26'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C financial-incentive documentation leg; engine not run; tone scores NOT_SCORED per the Aug 28 2026 standing rule.'
+      source_urls:
+      - https://www.degruyterbrill.com/publishing/about-us/news-insights/press-releases/cashmere-and-de-gruyter-brill-partner-to-bring-trusted-academic-scholarship-to-ai-platforms-safely-with-control-and-at-scale
+      - https://world.einnews.com/pr_news/941536628/cashmere-de-gruyter-brill-partner-to-bring-trusted-academic-scholarship-to-ai-platforms-safely-and-with-control
+      - https://globalbookreview.com/cashmere-and-iop-publishing-to-expand-access-to-trusted-physical-sciences-research-through-ai/
+      research_method: '3 browser.search query sets this run: (1) new AI publisher licensing deals since Sep 10 2026 (surfaced the Sep 14 Cashmere x De Gruyter Brill partnership, EIN Presswire); (2) Cashmere De Gruyter Brill AI licensing partnership September 2026 (corroborated via degruyterbrill.com primary press release); (3) Cashmere AI content licensing publisher September 2026 (surfaced the Sep 9 Cashmere x IOP Publishing partnership). Dead-end candidates this run (already mapped or rejected): Google pay-per-use pilot (mechanisms 702/708); Apple Siri publisher talks (no closures, mechanism 606 watch); Meta publisher bundle (mapped); Axel Springer OpenAI renewal (no Sep 2026 reporting); UMG-ElevenLabs (rejected per #729/#759: music, non-publication); News Corp x Symbolic.ai (rejected per #729: non-competitor counterparty). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Search-excerpt-bounded per #503 (0 browser.open first-hand reads this run). Pre-commit novelty greps: zero test_type_c_799 files on disk (glob); no Type C #799 in git log (--grep); zero ''De Gruyter'' hits repo-wide; zero ''IOP Publishing'' hits repo-wide; the three source URLs zero-hit repo-wide; zero underscore-form 711 keys; max numeric mechanism_id 710 pre-commit. No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated corpus mapping of the Cashmere x De Gruyter Brill (Sep 14 2026) and Cashmere x IOP Publishing (Sep 9 2026) partnerships. Zero ''De Gruyter'' / ''de_gruyter'' / ''degruyterbrill'' / ''941536628'' hits repo-wide pre-commit (the ''Brill'' substring hits are Brilliant Labs, the glasses company, unrelated); zero ''IOP Publishing'' / ''Institute of Physics'' hits repo-wide pre-commit. Distinct from mechanism 663 (the Cashmere roster mechanism names Wiley, HBP, PUP, RUP, Springer Publishing - neither new leg); distinct from mechanism 699 (T&F x Microsoft bilateral AI data-access, not Cashmere-mediated, not inference-only). Pre-commit novelty checks: zero test_type_c_799 files on disk (glob); no Type C #799 in git log (--grep); zero underscore-form 711 keys repo-wide; max numeric mechanism id 710 pre-commit. No em dashes; ASCII-only.'
     getty_perplexity_visual_licensing_oct2025_sep14:
       mechanism_id: 684
       iteration: 749
