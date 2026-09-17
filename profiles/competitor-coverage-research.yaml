@@ -26431,6 +26431,119 @@ cross_publication_findings:
       description: 'Brenda Stolyar register split (#788 Type B) - same Type B family; Stolyar''s within-journalist split across employers is the comparator against Thompson''s within-funding-model gradient'
     - mechanism_id: 707
       description: 'Jason Hiner register even-handedness (#793 Type B) - same Type B family; Hiner''s within-employer even-handedness is the comparator against Thompson''s Meta-favoring gradient'
+  sabrina ortiz zdnet three entity incumbent gradient sep2026:
+    mechanism_id: 713
+    type: B
+    journalist: 'Sabrina Ortiz'
+    publication: zdnet
+    owner: ziff_davis
+    iteration: 803
+    iteration_type: B
+    rotation_type: B
+    iteration_time: '2026-09-17 06:00 PDT'
+    discovery_date: '2026-09-17'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_803_sabrina_ortiz_zdnet_three_entity_incumbent_gradient_sep17
+    novelty_verification: 'Zero test_type_b_803 files on disk pre-commit (glob); no "Type B #803" in git log pre-commit; "Sabrina Ortiz" zero-hit repo-wide pre-commit (case-insensitive git grep on profiles/ and tests/ and docs/ at HEAD); max numeric mechanism_id 712 pre-commit; zero underscore-form 713 mechanism key strings repo-wide pre-commit (excluding sweep-instrument carriers per #715); block key zero-hit repo-wide pre-commit. The descriptive block key carries no underscore-form 713 key substring, keeping the #802 zero-713 sweep instruments green pre-commit by designed keying.'
+    pattern: 'Sabrina Ortiz (ZDNet Senior Editor, per the Feb 13 2026 Oakley piece byline) shows within-journalist, within-employer product-forward register constancy for CHALLENGER wearables (Meta and Samsung) with the sharpest comparative critique aimed at the INCUMBENT (Apple Vision Pro). FIRST dedicated corpus mechanism on Ortiz - zero hits repo-wide pre-commit.'
+    meta_arm:
+      piece: 'ZDNet "I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold", byline Sabrina Ortiz/ZDNET'
+      date: 'date_bounded_circa_oct_21_2025'
+      byline: 'Sabrina Ortiz'
+      register: hands_on_demo_product_forward
+      tone_illustrative: 0.45
+      evidence_quotes:
+        - 'Headline (observed this run): "I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold" - the near-purchase verdict is in the headline'
+        - 'Key takeaways (observed this run): "The Meta Ray-Ban Displays are the company''s most advanced smart glasses." / "Both the feel of the glasses and the demo left me impressed."'
+        - 'Excerpt (observed this run): "The smart glasses are so daring and promising that, since their launch at Meta Connect last month, it has become nearly impossible to book the demo required before purchasing the glasses."'
+        - 'Excerpt (observed this run): "I finally had the chance to try the pair and was impressed by its form factor, multimodal AI assistance, and a bonus unreleased feature."'
+      source_urls:
+        - 'https://www.zdnet.com/article/i-tried-the-meta-ray-ban-display-glasses-including-this-unreleased-feature-and-im-nearly-sold/'
+      source_note: 'Search-excerpt-bounded per #503 this run (8 browser.search query sets; 0 browser.open attempts on ZDNet primaries; 1 browser.open attempt on a mirror failed terminally this turn). Title/byline/date-stamp from search Full-URL listings, copied verbatim. Date bounded from the search-index crawl stamp ("Last Updated: 332 days ago" at a ~Sep 17 2026 crawl, circa Oct 21 2025) per the iteration-492 rule, never a claimed exact date.'
+    meta_arm_supporting:
+      piece: 'ZDNet Meta Ray-Ban long-term ownership piece + Meta Oakley HSTN piece, both byline Sabrina Ortiz'
+      evidence_quotes:
+        - 'Ray-Bans (observed this run, via feed mirror of the ZDNet piece): "As a glasses wearer, photo fanatic, and AI reporter, it was an absolute nobrainer for me to purchase the Meta Ray-Bans. After months of trying them, I was mostly impressed." - first-party consumer purchase, the strongest positive signal available'
+        - 'Oakley HSTN (observed this run, byline "Written by Sabrina Ortiz, Senior Editor Feb. 13, 2026"): "I spent the past weekend with the Meta Oakley HSTN Limited Edition, and they exceeded my expectations."'
+      source_urls:
+        - 'https://static.obstracts.com/feed/7759be08-34bc-5e54-b446-f6ec22310a1c/posts/a80b549f-e51e-5a44-a63f-f24f4ee1c30e/a80b549f-e51e-5a44-a63f-f24f4ee1c30e_i-replaced-my-meta-ray-bans-with.pdf'
+      source_note: 'Mirror-bounded per #503: ZDNet primary fetch not attempted this run; excerpts from the search-index mirror of the ZDNet feed. unscored; supporting only.'
+    samsung_arm:
+      piece: 'ZDNet "I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways", byline Sabrina Ortiz/ZDNET'
+      date: 'date_bounded_circa_may_21_2025'
+      byline: 'Sabrina Ortiz'
+      register: hands_on_demo_challenger_beats_incumbent
+      tone_illustrative: 0.40
+      evidence_quotes:
+        - 'Headline (observed this run): "I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways" - the challenger-over-incumbent verdict is in the headline; the possessive "my Apple Vision Pro" discloses ownership'
+        - 'Excerpt (observed this run): "only it''s much better than the Vision Pro" - of the Moohan industrial design vs Apple''s'
+        - 'Excerpt (observed this run): "it felt much lighter in my hand and around my head than I remembered the Vision Pro feeling. And if I can get a headset with better weight distribution and a potentially cheaper price tag, I won''t complain."'
+        - 'Excerpt (observed this run): "prompting for Gemini instead of Siri with a long press of the headset''s multifunctional key" - assistant advantage over the incumbent'
+      source_urls:
+        - 'https://Www.Zdnet.Com/article/i-finally-tried-samsungs-xr-headset-and-it-beats-my-apple-vision-pro-in-meaningful-ways/'
+      source_note: 'Search-excerpt-bounded per #503 this run. URL copied verbatim from the search Full-URL listing (case as returned). Date bounded from the in-page image path 2025/05/21 and the "Last Updated: 480 days ago" crawl stamp per the iteration-492 rule, never a claimed exact date.'
+    samsung_arm_supporting:
+      piece: 'ZDNet "I Tried Samsung''s Project Moohan XR Headset At I/O 2025 - And Couldn''t Help But Smile", byline Sabrina Ortiz/ZDNET (via mirror)'
+      evidence_quotes:
+        - 'Excerpt (observed this run, via mirror of the ZDNet piece): "my mind was transported back to February of 2024, when I tried on the Apple Vision Pro during launch day" - establishes her Vision Pro baseline as a launch-day trial'
+      source_urls:
+        - 'https://groyourwealth.com/technology/i-tried-samsungs-project-moohan-xr-headset-at-i-o-2025-and-couldnt-help-but-smile/'
+      source_note: 'Mirror-bounded per #503 (third-party mirror of the ZDNet piece; 1 browser.open attempt on another mirror failed terminally this turn). unscored; supporting only.'
+    apple_arm:
+      piece: 'Apple Vision Pro as the incumbent baseline in Ortiz''s own words (no standalone Ortiz Vision Pro review byline verified this run)'
+      register: incumbent_baseline_loses_comparisons
+      tone_illustrative: -0.10
+      tone_basis: 'MANUAL ILLUSTRATIVE, the Apple leg of her comparisons (the incumbent that loses); illustrative only'
+      evidence_quotes:
+        - '"beats my Apple Vision Pro in meaningful ways" - her Samsung headline concedes nothing to the device she owns'
+        - '"when I tried on the Apple Vision Pro during launch day" (Feb 2024) - her Vision Pro exposure is launch-day trial plus ownership, the baseline every challenger is measured against'
+      source_note: 'No standalone Ortiz-byline Vision Pro review was verified this run; the Apple arm is constructed from her own comparative statements. ZDNet''s institutional Vision Pro review ("Fascinating, flawed, and needs to fix 5 things", 3/5, buy-Quest-3 advice) is institutional context only and is NOT attributed to Ortiz.'
+    asymmetry_scorer:
+      meta_display_arm_tone: 0.45
+      samsung_moohan_arm_tone: 0.40
+      apple_incumbent_leg_tone: -0.10
+      illustrative_challenger_minus_incumbent: 0.525
+      delta_calc: '((0.450 + 0.400) / 2) - (-0.100) = 0.425 + 0.100 = +0.525'
+      delta_interpretation: 'within-journalist, within-employer challenger-minus-incumbent register gradient; the same writer who is "nearly sold" on Meta''s $799 Display and finds Samsung''s headset "much better than the Vision Pro" aims her sharpest comparative verdicts at the incumbent she owns'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open on ZDNet primaries this turn); tones are illustrative only'
+      verdict: 'Within-journalist, within-employer CHALLENGER-CONSTANCY with INCUMBENT-DIRECTED critique: Ortiz applies product-forward register to Meta (Display "nearly sold"; Ray-Bans a purchased "nobrainer"; Oakley "exceeded my expectations") and to Samsung (Moohan "beats my Apple Vision Pro in meaningful ways"), while the incumbent Apple device absorbs the losing end of both comparisons. Zero privacy/surveillance vocabulary appears in any excerpted arm - consistent with #793''s ZDNet pattern (Hiner), making this a within-publication replication with a different journalist and a three-entity (Meta/Samsung/Apple) design. Uniform anti-Meta or pro-incumbent financial-incentive prediction NOT supported on the observed arms - the same Ziff Davis property, same writer, challengers favored over the incumbent. NOT a falsification-family member (register documentation, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      zdnet_side: 'ZDNet is a Ziff Davis property (corpus careers entry, Hiner migration context); the corpus maps the Ziff Davis triple-squeeze financial architecture (ziff_davis test, Aug 14 2026).'
+      meta_tie: 'No Meta-specific content-licensing or commercial tie to ZDNet/Ziff Davis is mapped in the corpus (bounded absence per iteration-492, not a proven zero); the mechanism does not assert one.'
+      apple_tie: 'No Apple-specific commercial tie to ZDNet/Ziff Davis is mapped in the corpus (bounded absence per iteration-492, not a proven zero); the mechanism does not assert one.'
+      prediction: 'NULL on the register axis for the scored set - all arms sit under the same (ZDNet/Ziff Davis) employer, so no employer-level incentive gradient separates Meta, Samsung, and Apple; the pattern is writer-level incumbent gradient, not finance-predicted'
+      mechanism: 'writer-level incumbent-directed register gradient, not finance-predicted'
+    confounders:
+      - 'STRONG: Excerpt-bounded evidence - 0 browser.open attempts on ZDNet primaries this turn (1 mirror open failed terminally), so tones rest on headline+excerpt register reads (per #503), not full-text; a full-text read could reveal register details the excerpts hide, including any privacy vocabulary outside the excerpts.'
+      - 'STRONG: Story-type skew - the Meta Display and Samsung Moohan arms are controlled hands-on demos while the Ray-Ban arm is months-long ownership; demo conditions flatter challengers while ownership exposes flaws, so access conditions rather than entity may drive the gradient.'
+      - 'MODERATE: The arms span May 2025 to Feb 2026; product maturity and the XR news cycle shifted across the window.'
+      - 'MODERATE: n=1/n=1 core scored pair (Display vs Moohan), hypothesis-generating only; the 0.525 spread rests on hand-assigned excerpt scores with no calibrated noise band.'
+      - 'WEAK: Price-tier mismatch - $799 Display vs $1,799 Galaxy XR vs $3,500 Vision Pro; value-for-money framing favors cheaper challengers mechanically.'
+      - 'WEAK: No standalone Ortiz Vision Pro review verified this run; the Apple leg is reconstructed from her comparative statements, which bounds the -0.10 reading.'
+    counterevidence:
+      - 'COUNTEREVIDENCE: Ortiz''s Meta praise is specific-criticism-bounded - her Ray-Ban long-term verdict''s "biggest qualm was the battery life, which only lasted four hours"; the product-forward register coexists with concrete knocks.'
+      - 'COUNTEREVIDENCE: Her Samsung praise is qualified - Moohan passthrough "just OK... slightly blurry and in a cooler (bluish) tone" and battery "right on a par with the Vision Pro"; the challenger win is not absolute.'
+      - 'COUNTEREVIDENCE: The Display "nearly sold" is a demo verdict, not a purchase; the Ray-Bans (which she did purchase) get the more tempered "mostly impressed".'
+      - 'COUNTEREVIDENCE: The 0.525 illustrative spread rests on hand-assigned n=1/n=1 excerpt scores; hypothesis-generating only, outside any calibrated mechanism band.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: register documentation, not a uniform-prediction test. Ledger holds at 26.'
+    test_file: tests/test_type_b_803_sabrina_ortiz_zdnet_three_entity_incumbent_gradient_sep17_6am.py
+    cross_references:
+    - mechanism_id: 707
+      description: 'Jason Hiner register even-handedness (#793 Type B) - same Type B family, same ZDNet/Ziff Davis property; Ortiz is the within-publication replication with a different journalist and a three-entity (Meta/Samsung/Apple) design'
+    - mechanism_id: 710
+      description: 'Ben Thompson Orion vs Vision Pro gradient (#798 Type B) - same Type B family; Thompson''s Meta-favoring gradient is the independent-property comparator against Ortiz''s challenger-constancy at a commerce publisher'
+    - mechanism_id: 605
+      description: 'Victoria Song register-conditioned asymmetry (#618 Type B) - same Type B family; Song reserves adversarial register for Meta surveillance behavior while Ortiz applies zero privacy vocabulary to any entity - the contrast bounds both readings'
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

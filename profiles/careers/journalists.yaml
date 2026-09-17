@@ -19638,3 +19638,91 @@ ben_thompson:
       verdict: directionally_supported_not_proven
       no_analysis_json_update: true
       test_file: tests/test_type_b_798_ben_thompson_stratechery_orion_vs_vision_pro_gradient_sep17_1am.py
+sabrina_ortiz:
+  name: Sabrina Ortiz
+  current_role: Senior Editor
+  current_publication: ZDNet
+  publication_owner: Ziff Davis
+  beats:
+  - AI
+  - wearables
+  - smart glasses
+  notes: 'ZDNet Senior Editor (byline "Written by Sabrina Ortiz, Senior Editor" on the Feb 13 2026 Meta Oakley HSTN piece). Type B #803 (Sep 17 2026): mechanism 713 within-journalist, within-employer challenger-constancy with incumbent-directed critique - Meta arms: ZDNet "I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold" (byline Sabrina Ortiz/ZDNET; date bounded circa Oct 21 2025 from the 332d crawl stamp per iteration-492; "Both the feel of the glasses and the demo left me impressed", +0.45 illustrative), Meta Ray-Bans long-term ownership ("it was an absolute nobrainer for me to purchase the Meta Ray-Bans... mostly impressed", first-party purchase), Meta Oakley HSTN Limited Edition ("exceeded my expectations", Feb 13 2026); Samsung arm: ZDNet "I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways" (byline Sabrina Ortiz/ZDNET; date bounded circa May 21 2025; "only it''s much better than the Vision Pro", "felt much lighter... than I remembered the Vision Pro feeling", +0.40 illustrative); Apple arm: her own Vision Pro (launch-day trial Feb 2024 + ownership, "beats my Apple Vision Pro") is the incumbent baseline that loses both comparisons (-0.10 illustrative); illustrative challenger-minus-incumbent spread 0.525. Zero privacy/surveillance vocabulary in any excerpted arm - within-publication replication of #793''s ZDNet pattern (Hiner) with a different journalist and a three-entity design. Uniform anti-Meta or pro-incumbent financial-incentive prediction NOT supported on the observed arms. FIRST dedicated corpus mechanism on Ortiz - zero hits repo-wide pre-commit. NOT a falsification-family member (register documentation, not a uniform-prediction test); ledger holds at 26. Search-excerpt-bounded per #503 (8 browser.search query sets; 0 browser.open attempts on ZDNet primaries; 1 mirror open failed terminally); MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no analysis.json update; NOT artifact-grade.'
+  mechanism_ids: [713]
+  source_urls:
+  - https://www.zdnet.com/article/i-tried-the-meta-ray-ban-display-glasses-including-this-unreleased-feature-and-im-nearly-sold/
+  - https://Www.Zdnet.Com/article/i-finally-tried-samsungs-xr-headset-and-it-beats-my-apple-vision-pro-in-meaningful-ways/
+  competitor_coverage:
+    type_b_803_sabrina_ortiz_zdnet_three_entity_incumbent_gradient_sep17:
+      iteration: 803
+      mechanism_id: 713
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-17 06:00 PDT'
+      block_key: 'type_b_803_sabrina_ortiz_zdnet_three_entity_incumbent_gradient_sep17'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-journalist three-entity register comparison, FIRST dedicated Type B on Sabrina Ortiz. Question: does the same ZDNet writer apply an entity-selective register to Meta wearables vs Samsung XR vs Apple Vision Pro? Meta arm: ZDNet "I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold" (byline Sabrina Ortiz/ZDNET; date bounded circa Oct 21 2025 from the 332d crawl stamp per iteration-492; product-forward hands-on register, +0.45 illustrative) with supporting Meta arms (Ray-Bans purchased "nobrainer"; Oakley HSTN "exceeded my expectations" Feb 13 2026). Samsung arm: ZDNet "I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways" (byline Sabrina Ortiz/ZDNET; date bounded circa May 21 2025; challenger-beats-incumbent register, +0.40 illustrative). Apple arm: her own Vision Pro (launch-day Feb 2024 trial + ownership) is the incumbent baseline that loses (-0.10 illustrative); illustrative challenger-minus-incumbent spread 0.525. Zero privacy vocabulary in any excerpted arm. Uniform financial-incentive prediction NOT supported on the observed arms - same Ziff Davis property, challengers favored over the incumbent. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold'
+        date: 'date_bounded_circa_oct_21_2025'
+        author_byline: Sabrina Ortiz
+        publication: zdnet
+        role: Senior Editor
+        genre: hands-on demo
+        key_quotes:
+        - 'Headline (observed this run): "I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold" - the near-purchase verdict is in the headline'
+        - 'Key takeaways (observed this run): "Both the feel of the glasses and the demo left me impressed."'
+        - 'Excerpt (observed this run): "The smart glasses are so daring and promising that, since their launch at Meta Connect last month, it has become nearly impossible to book the demo required before purchasing the glasses."'
+        - 'Supporting (observed this run): "it was an absolute nobrainer for me to purchase the Meta Ray-Bans. After months of trying them, I was mostly impressed."'
+        - 'Supporting (observed this run): "I spent the past weekend with the Meta Oakley HSTN Limited Edition, and they exceeded my expectations."'
+        register_notes: 'Product-forward hands-on register across three Meta wearables; the only Meta criticism excerpted is specific (Ray-Ban battery life "only lasted four hours").'
+        tone_score: 0.45
+        tone_basis: 'hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'search-excerpt-bounded per #503 (8 browser.search query sets; 0 browser.open attempts on ZDNet primaries; 1 mirror open failed terminally); dates bounded from search-index crawl stamps per iteration-492, never claimed exact dates'
+        byline_attribution_urls:
+        - https://www.zdnet.com/article/i-tried-the-meta-ray-ban-display-glasses-including-this-unreleased-feature-and-im-nearly-sold/
+      samsung_arm:
+        title: 'I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways'
+        date: 'date_bounded_circa_may_21_2025'
+        author_byline: Sabrina Ortiz
+        publication: zdnet
+        role: Senior Editor
+        genre: hands-on demo
+        key_quotes:
+        - 'Headline (observed this run): "I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways" - the possessive discloses Vision Pro ownership'
+        - 'Excerpt (observed this run): "only it''s much better than the Vision Pro"'
+        - 'Excerpt (observed this run): "it felt much lighter in my hand and around my head than I remembered the Vision Pro feeling. And if I can get a headset with better weight distribution and a potentially cheaper price tag, I won''t complain."'
+        register_notes: 'Challenger-beats-incumbent register; qualified by "just OK" passthrough and Vision Pro-parity battery notes (counterevidence).'
+        tone_score: 0.40
+        tone_basis: 'hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'search-excerpt-bounded per #503; date bounded from the in-page image path 2025/05/21 and the "Last Updated: 480 days ago" crawl stamp per iteration-492'
+        byline_attribution_urls:
+        - https://Www.Zdnet.Com/article/i-finally-tried-samsungs-xr-headset-and-it-beats-my-apple-vision-pro-in-meaningful-ways/
+      apple_arm:
+        title: 'Apple Vision Pro as incumbent baseline (reconstructed from Ortiz''s comparative statements; no standalone Ortiz Vision Pro review byline verified this run)'
+        author_byline: Sabrina Ortiz
+        publication: zdnet
+        key_quotes:
+        - '"beats my Apple Vision Pro in meaningful ways" - her Samsung headline concedes nothing to the device she owns'
+        - '"my mind was transported back to February of 2024, when I tried on the Apple Vision Pro during launch day" - launch-day trial plus ownership'
+        register_notes: 'The incumbent absorbs the losing end of both challenger comparisons; the -0.10 reading is bounded by the reconstruction.'
+        tone_score: -0.10
+        tone_basis: 'MANUAL ILLUSTRATIVE, the Apple leg of her comparisons; illustrative only'
+      verdict: 'Within-journalist, within-employer challenger-constancy with incumbent-directed critique (+0.525 illustrative challenger-minus-incumbent spread). Zero privacy vocabulary in any excerpted arm. Uniform financial-incentive prediction NOT supported. NOT a falsification-family member; ledger holds at 26. NOT artifact-grade.'
+      confounders:
+      - 'STRONG: Excerpt-bounded evidence - 0 browser.open attempts on ZDNet primaries this turn; tones rest on headline+excerpt register reads per #503.'
+      - 'STRONG: Story-type skew - controlled hands-on demos (Display, Moohan) vs months-long ownership (Ray-Bans); access conditions may drive the gradient.'
+      - 'MODERATE: Arms span May 2025 to Feb 2026; product maturity and the XR news cycle shifted.'
+      - 'MODERATE: n=1/n=1 core scored pair, hypothesis-generating only.'
+      - 'WEAK: Price-tier mismatch ($799 vs $1,799 vs $3,500) mechanically favors cheaper challengers.'
+      - 'WEAK: No standalone Ortiz Vision Pro review verified; the Apple leg is reconstructed.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Ray-Ban "biggest qualm was the battery life, which only lasted four hours" - concrete Meta knocks coexist with the product-forward register.'
+      - 'COUNTEREVIDENCE: Moohan passthrough "just OK... slightly blurry" and battery "right on a par with the Vision Pro" - the challenger win is qualified.'
+      - 'COUNTEREVIDENCE: Display "nearly sold" is a demo verdict; purchased Ray-Bans get the tempered "mostly impressed".'
+      - 'COUNTEREVIDENCE: The 0.525 spread rests on hand-assigned n=1/n=1 excerpt scores; hypothesis-generating only.'
+      verdict2: directionally_supported_not_proven
+      no_analysis_json_update: true
+      test_file: tests/test_type_b_803_sabrina_ortiz_zdnet_three_entity_incumbent_gradient_sep17_6am.py
