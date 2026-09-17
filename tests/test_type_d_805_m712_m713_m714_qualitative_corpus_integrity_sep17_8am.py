@@ -96,7 +96,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "88652d481ad81724f741659a8f92c1060b4b047c"
 
 M712_KEY = "wired_openai_misalignment_framework_relay_sep17"
 M712_WIRED_KEY = "misalignment_framework_relay_sep17"
