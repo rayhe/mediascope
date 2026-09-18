@@ -89,7 +89,7 @@ M_ID = 725
 MECH_ID_MARKER = "mechanism" + "_725"
 NEXT_ID_MARKER = "mechanism" + "_726"
 NEXT_ID_NUMERIC = "mechanism_id: 726"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # main commit, patched post-commit per #565
+ANCHORED_SHA = "d5e0067"  # main commit, patched post-commit per #565
 BLOCK_KEY = "type_b_823_philip_berne_techradar_samsung_vs_meta_creep_factor_sep18"
 
 META_URL = "https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-camera-glasses-feel-inevitable-but-im-worried-about-the-high-creep-factor"
