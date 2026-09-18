@@ -347,9 +347,10 @@ class TestMechanism731Content:
     def test_designed_keying_no_underscore_731_in_block(self):
         # Per #715: block keys and prose must not carry the underscore-form
         # mechanism id; the colon form mechanism_id: 731 is the only allowed
-        # 731 reference.
+        # 731 reference. MECH_ID_MARKER is the concatenated form so this
+        # file itself never carries the literal marker.
         block = _block()
-        assert "mechanism_731" not in block
+        assert MECH_ID_MARKER not in block
         assert "mechanism_id: 731" in block
 
     def test_research_method_three_searches_two_opens(self):
