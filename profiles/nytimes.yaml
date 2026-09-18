@@ -3525,6 +3525,99 @@ competitor_relationships:
       - "Distinct from #420 (BI Anthropic valuation hype control case, Aug 31): that was a same-publication cross-competitor control; this is a same-publication same-competitor domain split (lawsuit vs product coverage)."
       - "Novelty verified per Aug 31 standing rule: grep of iteration-log and profiles shows no prior NYT x OpenAI Type A deep dive."
       rotation_transparency: "Previous entry #470 Type E at 12:00 PDT Sep 2 2026. Per rotation A-B-C-D-E, next after E is A. This is Type A #471 at 13:00 PDT Sep 2 2026."
+    nyt_openai_1_5tn_financing_ask_plaintiff_control_sep18:
+      mechanism_id: 724
+      date: '2026-09-18'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 822
+      iteration_type: 'A'
+      iteration_time: 2026-09-18 01:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: New York Times
+      publication_pair: NYT x OpenAI
+      entity_pair: "OpenAI vs Meta"
+      competitor: openai
+      comparison_entities:
+      - meta
+      author: 'Kit (with Ray)'
+      finding: 'PLAINTIFF-CONTROL on the FT-scooped $1.2tn peg, extending mechanism m471 (litigation-posture boundary condition) with a peg-matched quantitative anchor. On Tue Sep 15 2026 the FT broke a scoop on its $5-10M/yr deal partner: OpenAI investor talks toward a $1.2tn pre-IPO valuation (m718). The next morning (Wed Sep 16, 04:01:30), the New York Times - the plaintiff actively SUING OpenAI and Microsoft for billions (Dec 2023, discovery still adversarial in Sep 2026) - published "OpenAI Considers New Financing at a $1.5 Trillion Valuation," relaying OpenAI''s OWN ask of $1.5tn, HIGHER than the investor-offered $1.2tn the FT reported. The Times carried OpenAI''s momentum case straight: more than $40B annualized revenue in August 2026 (roughly double end-2025), Codex coding-tool traction as the basis for the higher ask, and GPT-6 Astra plus GPT-5.6 Sol shipped since July. Register: straight business-momentum relay, MANUAL ILLUSTRATIVE +0.15 (no adversarial qualifiers; no "perhaps briefly" diminutive like Gizmodo''s -0.20 m721). Illustrative NYT-minus-FT delta -0.10 on the identical peg: the paid licensee''s paper is marginally more constructive (+0.25) than the litigating plaintiff''s (+0.15), but both are non-adversarial. Against the carried NYT x Meta baseline (mechanism 69 open-source-positive strand; Jun 23 2026 voluntary-review holdout -0.65 adversarial; Jun 26 Arena scoop neutral 0.0), the OpenAI +0.15 arm sits INSIDE the Meta register range - the multi-billion-dollar plaintiff relationship does not push non-lawsuit OpenAI coverage below the Meta floor. The same week''s litigation-domain coverage remains adversarial (Sep 17 2026 unredacted filings: NYT-led plaintiffs argue the new OpenAI/Microsoft executive quotes "eviscerate" the fair-use defense), so the boundary is domain-specific, not bleed-through. Verdict: EXTENDS mechanism 471 (lawsuit-domain-only adversarialism) with a Sep 2026 peg-matched anchor; directionally_supported_not_proven. Correlation is not causation. NOT artifact-grade.'
+      articles:
+      - title: 'NYT OpenAI $1.5tn financing-ask relay (Wed Sep 16, 2026; NYT original paywalled; register reconstructed from four independent secondaries)'
+        date: '2026-09-16'
+        headline: 'OpenAI Considers New Financing at a $1.5 Trillion Valuation'
+        publication_timestamp_note: 'biztoc.com mirror records "This story appeared on nytimes.com, 2026-09-16 04:01:30"; photo caption in the mirror shows Sam Altman speaking at Salesforce Dreamforce in San Francisco on Tuesday (Sep 15).'
+        attested_register_facts:
+        - 'Headline carries OpenAI''s own ask ($1.5tn), not the investor bid ($1.2tn)'
+        - 'Investors offered $1.2tn; OpenAI is pushing for $1.5tn; no decisions made; OpenAI declined to comment (temperature2.com, reporting the Times)'
+        - '$1.5tn roughly doubles the $730B pre-money figure of the March $852B round - the comparison the Times itself used (temperature2.com)'
+        - 'More than $40B annualized revenue in August 2026, roughly double end-2025 sales, per the Times and Forbes'
+        - 'The higher ask hung on Codex coding-tool traction; GPT-6 Astra and GPT-5.6 Sol shipped since July (Forbes citing the Times)'
+        - 'Reuters Breakingviews Sep 16: "The ChatGPT developer believes it should be valued at $1.5 trillion at least, the New York Times subsequently reported on September 16, given advances in its latest AI models" - the Times "subsequently reported" confirms the relay position after the FT Sep 15 scoop'
+        register: straight_business_momentum_relay
+        tone_MANUAL_ILLUSTRATIVE: 0.15
+        source_urls:
+        - 'https://biztoc.com/x/b851a0a137639d75'
+        - 'https://temperature2.com/p/2026-09-16-openai-1-2t-round-after-ipo-delay/'
+        - 'https://www.reuters.com/commentary/breakingviews/openai-plays-15-trln-chicken-with-chatbot-frenzy-2026-09-16/'
+        - 'https://www.forbes.com/sites/siladityaray/2026/09/16/openai-is-reportedly-weighing-new-funding-round-at-15-trillion-valuation/'
+        source_note: 'NYT original paywalled and not first-hand read this run (0 browser.open on the NYT original; 2 browser.open reads on the biztoc mirror and temperature2). Register reconstructed headline-level and quote-level from the four secondaries, all explicit in their Times attribution. No NYT body text invented.'
+      - title: 'FT OpenAI $1.2tn pre-IPO funding-round scoop (Tue Sep 15, 2026; peg-matched tied comparator, carried un-rescored from m718)'
+        date: '2026-09-15'
+        ft_attribution_url: 'https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-reports-2026-09-15/'
+        register: constructive_growth_investor_demand
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        source_note: 'Carried un-rescored from m718 per the #672 precedent. FT collects about $5-10M/yr from OpenAI (Apr 2024 licensing, mechanism 54); the FT was the peg originator (WSJ relay: "The Financial Times earlier reported on OpenAI''s fundraising discussions").'
+      - title: 'NYT x Meta baseline comparators (carried un-rescored from the corpus; NOT first-hand re-read this run)'
+        arms:
+        - 'Mechanism 69: NYT Meta open-source AI philosophy positive strand (positive; instrumental to the anti-OpenAI litigation narrative)'
+        - 'NYT Jun 23 2026: Meta AI voluntary-review holdout coverage, adversarial -0.65'
+        - 'NYT Jun 26 2026: Arena prediction-markets scoop, neutral 0.0'
+        register_range: 'positive to -0.65'
+        source_note: 'Carried from the in-corpus baseline as used in the NYT x Amazon Type A block; no new Meta first-hand read this run (bounded absence per #503).'
+      financial_context:
+        predictor: adversarial_legal_posture
+        prediction: adversarial_if_blanket
+        chain: 'NYT sued OpenAI and Microsoft for copyright infringement, Dec 2023; billions in damages sought plus model destruction; discovery adversarial through Sep 2026 (sanctions motion Jul 2026; Judge Stein ruling Aug 2026; Sep 17 2026 unredacted filings with executive quotes the plaintiffs say "eviscerate" the fair-use defense). Financial relationship: adversarial plaintiff, NOT a commercial tie. coverage_prediction in the profile header: "adversarial".'
+        status: 'The adversarial posture predicts tone WITHIN the litigation domain only. The non-lawsuit capital-raise peg draws a neutral-to-constructive register (+0.15). This is the quantitative peg-matched anchor for the mechanism 471 boundary condition: naive financial determinism fails here by profile prediction.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance'
+        convention: 'target-minus-peer; target = NYT OpenAI arm, peer = FT OpenAI arm on the identical peg'
+        nyt_openai_arm_scores: [0.15]
+        ft_openai_arm_scores: [0.25]
+        nyt_openai_arm_avg: 0.15
+        ft_openai_arm_avg: 0.25
+        illustrative_register_delta_nyt_minus_ft: -0.10
+        delta_calc: '0.15 - 0.25 = -0.10'
+        engine_degenerate: 'calculate_asymmetry([0.15], [0.25]) returns asymmetry_score -0.10; t 0.0 / p 1.0 / Cohen d 0.0 / degenerate CI (-0.10, -0.10) / is_significant False; engine run once as a degenerate n=1 check per the #638/#643 convention; no significance claimed (Aug 28 2026 standing rule)'
+        meta_baseline_check: 'NYT OpenAI arm +0.15 sits inside the carried NYT x Meta register range (positive to -0.65); no entity-level inversion below the Meta floor'
+        finding_layer: 'p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)'
+        no_analysis_json_update: true
+      confounders_ranked:
+        strong:
+        - 'Paywall-bounded sourcing: NYT original not first-hand read. The register is reconstructed from four explicit secondaries (Reuters Breakingviews, temperature2, biztoc mirror headline and timestamp, Forbes). Headline-level and quote-level only; NYT body register unverified.'
+        - 'Relay convergence within the peg: the Times piece is a Sep 16 second-day relay of the FT Sep 15 scoop ("the New York Times subsequently reported", per Reuters). Second-day relays run straighter than originator scoops by genre mechanics; the -0.10 gap to the FT may be genre, not stance.'
+        - 'Company-voice carriage: the $1.5tn figure is OpenAI''s own ask, attributed as such. Carrying a subject''s stated ask straight is standard business-reporting practice, not softness evidence; the headline is neutral relay of the number.'
+        moderate:
+        - 'Ask-vs-bid asymmetry: carrying the higher number ($1.5tn ask) instead of the lower offer ($1.2tn) modestly favors the company''s framing; a neutral relay of BOTH figures (which the secondaries attest the Times did) blunts this.'
+        - 'Byline unverified: the Dreamforce photo caption suggests an SF-based reporter (possibly Mike Isaac, who co-authored the May 11 OpenAI trial piece); desk attribution unverified.'
+        weak:
+        - 'n=1 per arm: directional only; degenerate statistical contract; verdict-invariant under rounding (delta -0.10 exact at 2dp).'
+        - 'Single-week comparison; not a longitudinal claim. Mechanism 471 remains the longitudinal anchor.'
+      counterevidence:
+      - 'The Sep 17 2026 unredacted-filings coverage (NYT-led plaintiffs arguing OpenAI/Microsoft executive quotes "eviscerate" the fair-use defense) shows litigation-domain adversarialism continuing in parallel the day AFTER the $1.5tn relay - confirming the domain boundary rather than eroding it'
+      - 'm679: WSJ ran a -0.40 adversarial expose on its OWN $50M/yr licensing payer (OpenAI) the same week, so payer softness is not uniform either'
+      - 'm721: Gizmodo (no tie, $0) ran a harsher -0.20 skeptical register than the litigating NYT (+0.15) on the identical peg - the plaintiff out-neutrals the neutral non-payer, which no naive incentive model predicts'
+      - 'If Times non-lawsuit OpenAI coverage turns adversarial as the copyright trial approaches, this anchor narrows to a timing artifact'
+      statistical_discipline:
+        note: 'MANUAL ILLUSTRATIVE tones only; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; engine run once as a DEGENERATE n=1 check (calculate_asymmetry([0.15], [0.25]) returns asymmetry_score -0.10; t 0.0 / p 1.0 / Cohen d 0.0 / degenerate CI (-0.10, -0.10) / is_significant False; no significance claimed). NOT artifact-grade; NOT a falsification-family member - extends boundary condition 471; falsification ledger holds at 26 (TWENTY-SIXTH present in profiles/, the twenty-seventh slot empty); no analysis.json update.'
+      ledger_hold: 26
+      research_method: '6 browser.search query sets this run ("New York Times OpenAI $1.2 trillion funding round pre-IPO" since 2026-09-14; nytimes.com OpenAI story September 16 2026 since 2026-09-15; exact-headline query; NYT Meta equity-raise query; NYT Meta $145B capex query). 2 browser.open reads (biztoc mirror: headline + nytimes.com timestamp; temperature2: full Times-attributed register facts). 0 browser.open on the NYT original (paywalled; bounded absence per #503). 0 first-hand NYT reads; no NYT URLs constructed; all cited URLs copied verbatim from search-result Full-URL listings. Pre-commit targeted git greps: the four arm-1 URLs zero-hit repo-wide pre-commit (ingested as source_urls); the Reuters FT-mirror URL already in corpus via m718 (cited as cross-reference, not re-ingested). ASCII-only; no em dashes.'
+      distinct_from_prior:
+      - 'Distinct from #471 (NYT x OpenAI litigation-posture boundary condition, Type A, Sep 2): that was a qualitative three-article scope test across lawsuit vs product/trial coverage; this is a peg-matched SAME-WEEK capital-raise anchor that quantitatively tests the boundary on an identical news event shared with the FT-scooped peg.'
+      - 'Distinct from #712/#715/#718/#721 - m712 (WIRED relay), m715 (WSJ relay), m718 (FT scoop), m721 (Gizmodo null-tie control) - this adds the LITIGATING PLAINTIFF as a new outlet on the peg - the first plaintiff-control in the lineage, completing a payer (FT, News Corp) vs non-payer (Gizmodo) vs plaintiff (NYT) gradient.'
+      - 'Novelty verified per Aug 31 standing rule: zero test_type_a_822 files on disk; no Type A #822 in git log; max numeric mechanism_id 723 pre-commit; zero underscore-form 724 key strings repo-wide pre-commit (needles format-built, no literals carried per #715); block key zero-hit pre-commit.'
+      rotation_transparency: "820-824 window third leg: D (#820) -> E (#821) -> A (#822, this run) -> B (#823) -> C (#824); the 815-819 window verified closed (D #815, E #816, A #817, B #818, C #819 as a consecutive newest-first sequence in git history); novelty anchor patched in the followup per the #565 convention."
   meta:
     financial_tie: "none"
     estimated_value: "$0"
