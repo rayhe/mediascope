@@ -255,6 +255,86 @@ competitor_relationships:
         Rating It Critical Cyber Risk'' and Reuters agent-hack coverage are not Gizmodo
         items; Business Insider OpenAI coverage (Axel Springer deal publication) is
         a different unit'
+    gizmodo_openai_1_2tn_funding_round_null_tie_control_sep17:
+      mechanism_id: 721
+      mechanism_name: 'Gizmodo x OpenAI $1.2tn Funding-Round Register - Fourth Null-Tie Control on the FT-Scooped Peg (non-payer control)'
+      iteration: 817
+      iteration_type: 'A'
+      rotation_type: 'A'
+      iteration_time: 2026-09-17 20:00 PDT
+      date: '2026-09-17'
+      time_pdt: '20:00'
+      author: 'Kit (with Ray)'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_pair: Gizmodo x OpenAI
+      competitor: openai
+      entity_pair: "OpenAI vs Meta"
+      publication_focus: Gizmodo (Keleops AG)
+      summary: 'FOURTH null-tie control in the Gizmodo family (#512 Gizmodo x Google, #577 Gizmodo x Anthropic, #582 Gizmodo x OpenAI rogue-agent incidents). First peg-matched cross-outlet test of the licensing-incentive gradient on the Sep 15 2026 FT-scooped $1.2tn OpenAI pre-IPO funding-round peg: three tied publications (FT, $5-10M/yr, m718; WSJ/News Corp, $50M/yr, m715 relay; WIRED/Conde Nast, m712 relay) all ran constructive or straight relay registers on the identical peg; Gizmodo (financial_tie: none, $0, no AI licensing deals per this profile) ran a skeptical-deflationary horserace register. The non-payer did not soften. Direction consistent with the incentive prediction, NOT proven.'
+      financial_context: 'Gizmodo financial_tie: none; estimated_value: $0; direction: none. "No financial relationship. Gizmodo has no AI licensing deals." (this profile). coverage_prediction: adversarial. Peg-matched tied comparators carried from #812/#807/#802: FT x OpenAI licensing Apr 2024 ($5-10M/yr secondary estimate, mechanism 54, 28 months senior) plus FT x Google News AI pilot (Feb 2026) vs Meta $0; News Corp dual-AI-payer (OpenAI May 2024 ~$50M/yr + Meta Mar 2026 ~$50M/yr).'
+      arm1_gizmodo_funding_round:
+        title: 'Rumored Round of Funding Could Make OpenAI More Valuable Than Anthropic Again. Perhaps Briefly'
+        date: '2026-09-15'
+        byline: 'not surfaced in page render (bounded absence per #503; attributed via gizmodo.com URL path only; no byline invented)'
+        url: 'https://gizmodo.com/rumored-round-of-funding-could-make-openai-more-valuable-than-anthropic-again-perhaps-briefly-2000812142'
+        register: skeptical_deflationary_horserace
+        tone_MANUAL_ILLUSTRATIVE: -0.20
+        evidence_grade: 'first-hand read this run (gizmodo.com, 33 rendered lines via browser.open)'
+        key_quotes:
+          - '"Rumored Round of Funding Could Make OpenAI More Valuable Than Anthropic Again. Perhaps Briefly" - headline carries a skeptical qualifier plus a diminutive'
+          - '"Insiders are claiming that OpenAI may soon receive a funding round valuing it at $1.2 trillion" - anonymous-source skepticism verb'
+          - '"The intriguingly timed round" - timing suspicion (published in the Amodei-slowdown week)'
+          - '"OpenAI was once the clear leader in frontier AI" - decline framing'
+          - '"as opposed to scrapped projects like OpenAI''s video generator Sora" - direct dig'
+          - '"proportionally less dramatic valuation spike" - downplaying the $500B round'
+          - '"So if OpenAI''s rumored funding round succeeds, and values the company at $1.2 trillion, it might - perhaps only briefly - retake the top spot" - the piece frames OpenAI as chasing Anthropic throughout'
+          - '"According to anonymous insiders who spoke to Reuters, the IPO is expected in the middle of next month" - the peg is deflated by the Anthropic $2tn-IPO comparator'
+          - 'Altman safety quotes relayed straight ("would not go public in 2026"; alignment work "easier as a private company") - company voice carried, not distorted'
+          - '"according to the Financial Times" - FT scoop credited; the tied originator is attributed, not laundered'
+        framing: 'Horserace: the funding round is covered as a valuation race OpenAI is LOSING ("perhaps only briefly - retake the top spot"; Anthropic "surged past", "exploded past"). The $1.2tn figure is wrapped in rumor language and immediately offset by Anthropic''s larger $2tn IPO target.'
+      arm2_in_corpus_register_pattern:
+        description: 'Carried un-rescored from m582 (Type A #582, 2026-09-07): three first-hand Gizmodo x OpenAI pieces - rogue-agent swarm undisclosed (2000807447), groupthink Hugging Face hack (2000804424), Astra monitor evasion (2000807665). Adversarial accountability register on OpenAI, symmetric with the Meta arms in that control.'
+      meta_comparator_carried:
+        description: 'Carried un-rescored: m582 Meta arms (facial-recognition glasses 2000721970; photo-tool scrapped 2000784400; layoffs 2000750107) plus m716''s Meta-anchor vocabulary ("pervert glasses", "creeps", Yildirim Sep 9). Gizmodo applies adversarial registers to Meta too, so the OpenAI skeptical register at Gizmodo reflects house adversarialism on a zero-tie outlet - the incentive prediction''s bite here is cross-outlet on the same peg (tied outlets softened; the untied outlet did not), not within-outlet Meta-vs-OpenAI.'
+      peg_matched_tied_comparators:
+        - 'FT m718 (Type A #812): +0.25 constructive_growth_investor_demand ("initiated by investors rather than the company"); tie FT x OpenAI Apr 2024 $5-10M/yr (mechanism 54)'
+        - 'WSJ m715 (Type A #807): misalignment-framework relay register; tie News Corp x OpenAI May 2024 ~$50M/yr'
+        - 'WIRED m712 (Type A #802): misalignment-framework relay register; tie Conde Nast'
+      illustrative_register_delta_gizmodo_minus_ft: -0.45
+      gizmodo_arm_scores: [-0.20]
+      ft_arm_scores: [0.25]
+      delta_arithmetic: '-0.20 - 0.25 = -0.45'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones only (article level, n=1 new arm + carried arms); mean-delta arithmetic reproduced: delta -0.45, p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False; correlation_not_causation true. Engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; engine run once as a DEGENERATE n=1 check (calculate_asymmetry([-0.20], [0.25]) returns asymmetry_score -0.45; t 0.0 / p 1.0 / Cohen d 0.0 / degenerate CI (-0.45, -0.45) / is_significant False; no significance claimed). No empirical significance claimed or claimable.'
+      confounders_ranked:
+        strong:
+          - 'House adversarialism: Gizmodo applies adversarial registers to Meta too (m716 "pervert glasses"/"creeps" anchor; James Pero patterns; m582 symmetric-adversarial -0.275 both sides), so OpenAI-hardness may be house style, not tie-absence effect'
+          - 'Genre asymmetry within the peg: FT''s original scoop (constructive by genre) vs Gizmodo''s aggregation-with-commentary (adversarial commentary by genre) - the register gap may be genre, not tie'
+        moderate:
+          - 'Single peg, n=1 new arm (degenerate contract); byline unconfirmed in page render'
+          - 'First-hand read but the page render is thin (33 lines); comment-thread sentiment unmeasured'
+        weak:
+          - 'The piece''s "$2 billion valuation" for Anthropic''s IPO target (meant $2 trillion) - editorial sloppiness, not framing'
+      counterevidence:
+        - 'm676 (FT constructive company-briefed scoop on Anthropic, a NON-payer, +0.20) - constructive registers need no financial explanation'
+        - 'm582 (Gizmodo symmetric-adversarial on OpenAI AND Meta) - zero ties produce no entity gap at this outlet; the tie story bites cross-outlet, not within-outlet'
+        - 'WSJ/FT/WIRED convergence on the same FT scoop (peg-driven relay) - the register may be peg-driven, not tie-driven (cf. m679: WSJ ran a -0.40 expose on the payer the same week)'
+        - 'Altman safety quotes relayed straight in the Gizmodo piece - company voice carried, not distorted'
+      verdict: directionally_supported_not_proven
+      falsification_family: 'NOT a member - null-tie control documentation (ledger holds at 26).'
+      ledger: 'TWENTY-SIXTH present in profiles/ (ledger holds at 26; the next ordinal is absent).'
+      no_analysis_json_update: true
+      research_method: '4 browser.search query sets this run (Guardian x OpenAI $1.2tn peg - bounded absence, no Guardian piece surfaced; NYT x Anthropic IPO - no profiled-publication coverage surfaced; WIRED x Amodei slowdown essay - no profiled piece surfaced; The Verge x OpenAI $1.2tn - bounded absence) + 1 browser.open first-hand read this run (gizmodo.com, 33 rendered lines, no byline in render). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      source_urls:
+      - https://gizmodo.com/rumored-round-of-funding-could-make-openai-more-valuable-than-anthropic-again-perhaps-briefly-2000812142
+      - https://gizmodo.com/another-rogue-openai-agent-swarm-went-undisclosed-we-have-no-idea-how-many-more-are-out-there-2000807447
+      - https://gizmodo.com/how-groupthink-altruism-and-peer-pressure-led-openai-models-to-hack-hugging-face-2000804424
+      - https://gizmodo.com/openai-says-humans-need-to-be-able-to-monitor-how-ai-thinks-its-new-model-astra-makes-that-much-harder-2000807665
+      distinct_from:
+      - 'FIRST peg-matched cross-outlet test of the licensing-incentive gradient on the Sep 15 2026 $1.2tn round: FT (tie) +0.25 vs Gizmodo (no tie) -0.20 on the identical peg'
+      - 'FOURTH null-tie control in the Gizmodo family (#512 Gizmodo x Google, #577 Gizmodo x Anthropic, #582 Gizmodo x OpenAI rogue-agent): m582 used incident-class coverage (Sep 7); this control uses the capital-raise peg (Sep 15), complementary'
+      - 'Complements m718/m715/m712: the tied-publication side of the peg family now has its untied comparator'
+      - 'Novelty verified pre-commit: zero test_type_a_817 files on disk (glob); no "Type A #817" in git log pre-commit; the 2000812142 URL zero-hit repo-wide pre-commit; block key zero-hit pre-commit; max numeric mechanism_id 720 pre-commit; zero underscore-form 721 keys by designed keying per #715'
   meta:
     financial_tie: none
     estimated_value: $0
