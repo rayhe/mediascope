@@ -74,7 +74,7 @@ NEXT_ID_MARKER = "mechanism" + "_732"
 NEXT_ID_NUMERIC = "mechanism_id: 732"
 EXPECTED_ORDER = [("B", "833"), ("A", "832"), ("E", "831"), ("D", "830"), ("C", "829")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "de83300000000000000000000000000000000000"
+ANCHORED_SHA = "8fa33337851e77b4b9abb7bca4c69b5f4e5426de"
 
 EXPECTED_URLS = [
     "https://www.theverge.com/tech/996422/snap-specs-hands-on-ar-glasses",
@@ -180,7 +180,7 @@ class TestNovelty833:
         # mechanism_id 730, zero underscore-form 731 keys, block key
         # zero-hit, zero jay_peters YAML key); this test pins that no
         # duplicate #833 main commit ever appears.
-        mains = _git_log_mains("Type B #833: jay peters")
+        mains = _git_log_mains("Type B #833: Jay Peters")
         assert len(mains) == 1, f"exactly one Type B #833 main commit, got {mains}"
         assert ANCHORED_SHA in mains, (
             "patched SHA must match a real Type B #833 main commit"
@@ -210,7 +210,7 @@ class TestRotationCycleGuard833:
         )
 
     def test_anchor_sha_matches_head(self):
-        mains = _git_log_mains("Type B #833: jay peters")
+        mains = _git_log_mains("Type B #833: Jay Peters")
         assert ANCHORED_SHA not in (
             "PATCH_ME_IN_FOLLOWUP",
             "POST_COMMIT_ANCHORED",
