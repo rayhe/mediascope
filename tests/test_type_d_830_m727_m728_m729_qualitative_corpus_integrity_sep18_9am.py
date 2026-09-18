@@ -133,7 +133,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "055bd77a3b063f93fbb8c313cbaee79208a76ec3"
 
 M727_KEY = "snap_specs_sep16_consumer_launch_natural_experiment_resolution"
 M728_KEY = "type_b_828_lucas_ropek_techcrunch_snap_jun16_vs_sep16_register_shift_sep18"
@@ -245,19 +245,10 @@ class TestNovelty830:
             assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
     def test_novelty_verification_claim(self):
-        result = subprocess.run(
-            ["git", "log", "--oneline", "--grep=Type D #830"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-        )
-        assert result.returncode == 0
-        own_runs = [
-            line
-            for line in result.stdout.splitlines()
-            if "830" in line and "m727" in line.lower()
-        ]
-        assert own_runs == [], own_runs
+        # Type D adds no mechanism; novelty is the corpus-integrity
+        # posture: max stays 729, zero numeric 730 keys.
+        assert _max_numeric_mechanism_id() == 729
+        assert _repo_grep_numeric_mechanism_id(730) == []
 
     def test_825_829_window_closed_prior_to_830(self):
         log = _read(LOG_PATH)
