@@ -20494,6 +20494,76 @@ marketplace_intermediary_landscape:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline_note: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+  snap_specs_enterprise_partnership_stack_sep2026:
+    mechanism_id: 729
+    mechanism_name: 'Snap Specs Sep-16-2026 enterprise partnership stack: four new Snap financial edges (Salesforce Agentforce, Nvidia XR AI, AWS assistant, Verizon exclusive cellular) intersect pre-existing publisher financial orbits'
+    iteration: 829
+    iteration_type: 'C'
+    date_analyzed: '2026-09-18'
+    time_pdt: '08:00'
+    job_id: 'mediascope-daily-iteration'
+    overview: 'FIRST dedicated corpus mapping of the September 16 2026 Snap Specs enterprise partnership stack as a financial-incentive graph expansion. At the Los Angeles consumer launch Snap announced four enterprise edges: (1) Salesforce adds its Agentforce AI agent platform into Specs, letting workers access company data and automate tasks through the glasses; (2) Nvidia XR AI platform powers Specs AI, interpreting the visual environment and retrieving company data; (3) Amazon Web Services offers its AI assistant, enabling voice commands such as checking product availability; (4) Verizon exclusive US partnership for the Charging Case with Cellular, with SPECS sold at verizon.com, the My Verizon app, and select Verizon stores on custom data plans with flexible financing. Reuters: Snap did not disclose the financial terms of the partnerships. FourWeekMBA: the glasses have not shipped, no enterprise customer has been named, no revenue figure exists - the stack is architecture, not business yet. Incentive geometry: each new Snap edge lands inside a publisher financial orbit already mapped in the corpus - the AWS edge inside the Amazon publisher orbit (Amazon-NYT $20-25M per year May 2025; Amazon-Conde Nast Rufus Jul 2025; AWS as publisher cloud vendor), the Salesforce edge inside the Benioff-TIME owner-equity chain (mechanism 36), the Verizon edge inside the Verizon-retained-10-percent-Yahoo-stake orbit (Yahoo owns TechCrunch and Engadget), the Nvidia edge with no publisher orbit documented (null leg). Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+    partnership_facts:
+      announced: 'September 16 2026, Los Angeles consumer launch (Spiegel keynote); enterprise push framed as Specs for Enterprise'
+      salesforce_agentforce: 'Salesforce (CRM.N) adds its AI agent platform Agentforce into Specs; workers access company data and automate tasks through the glasses (Reuters Sep 16 2026)'
+      nvidia_xr_ai: 'Nvidia (NVDA.O) XR AI platform powers Specs AI; interprets the visual environment and retrieves relevant company data (Reuters Sep 16 2026)'
+      aws_assistant: 'Amazon Web Services (AMZN.O) offers its AI assistant; voice commands for tasks such as checking product availability (Reuters Sep 16 2026)'
+      verizon_exclusive: 'Exclusive US partnership: Charging Case with Cellular on Verizon 5G; SPECS at verizon.com, My Verizon app, select Verizon stores; custom data plans, flexible financing (Verizon press release, circa Sep 16 2026)'
+      terms: 'Snap did not disclose the financial terms of the partnerships (Reuters); partnerships also include Trifork and Hololight'
+      architecture_not_business: 'The glasses have not shipped. No enterprise customer has been named. No revenue figure exists. (FourWeekMBA Sep 17 2026)'
+    orbit_intersections:
+      aws_x_amazon_orbit: 'AWS edge lands inside the corpus Amazon publisher orbit: Amazon-NYT $20-25M per year (May 2025, tier_1_bilateral), Amazon-Conde Nast Rufus (Jul 2025, tier_1_bilateral), AWS as publisher cloud vendor. Second-order incentive: publications in Amazon''s licensing and ad orbit now cover a Snap launch whose enterprise tier runs on AWS rails.'
+      salesforce_x_benioff_time: 'Salesforce edge lands inside the Benioff-TIME owner-equity chain (mechanism 36): Salesforce CEO Marc Benioff owns TIME outright (2018, $190M); Salesforce is now also a Snap Specs enterprise partner. Owner-level triangle; TIME magazine launch coverage untested this run (bounded absence, not a claim).'
+      verizon_x_yahoo_stake: 'Verizon edge lands inside the Verizon-retained-10-percent-Yahoo-stake orbit (Sep 2021: $5B total, $4.25B cash plus $750M preferred interests; Verizon retained 10 percent): Yahoo owns TechCrunch and Engadget, the two outlets with the most sustained Specs coverage in the corpus.'
+      nvidia_null_leg: 'Nvidia edge has no publisher financial orbit documented in the corpus; no incentive edge asserted for this leg.'
+    coverage_observations:
+      wired_zero: 'WIRED published zero standalone Sep 16 launch pieces (m727); Conde Nast sits in the Amazon Rufus orbit (Jul 2025) - directionally consistent with softened silence, confounded by index lag at 2 days post-launch'
+      nyt_bounded_absence: 'No nytimes.com Specs launch URL surfaced in this run''s NYT-targeted query set (bounded absence per the iteration-492 rule, not a proven zero); NYT sits in the $20-25M per year Amazon orbit'
+      engadget_consistent: 'Engadget Karissa Bell hands-on positive-leaning across every generation (mechanism 113) - directionally consistent with the Verizon/Yahoo leg'
+      techcrunch_prediction_failed: 'TechCrunch Lucas Ropek Sep 16 piece adversarial at -0.45 MANUAL ILLUSTRATIVE (m728): the Verizon-leg softening prediction FAILS at the TechCrunch leg; carried as a scope bound on this mechanism'
+      times_london_not_soft: 'The Times of London (News Corp) covered the launch with activist-investor pressure framing (Irenic Capital, $3.5B invested, spin-off-or-shut demand; stock up 4.2 percent to $5.96 after-hours) - not soft coverage'
+    confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Financial terms undisclosed (Reuters): no verified dollars flow between Snap and any partner; the partnerships may be co-marketing and distribution, not payments, so the incentive edge is structural, not cash'
+      - strength: 'STRONG'
+        text: 'Launch is 2 days old; coverage still arriving (index lag per the m727 confounders); silence readings at 48 hours are provisional'
+      - strength: 'STRONG'
+        text: 'Ropek Sep 16 adversarial -0.45 directly falsifies naive Verizon-leg softening at TechCrunch; the Yahoo-stake orbit does not predict TechCrunch tone'
+      - strength: 'MODERATE'
+        text: 'Vendor and partner relationships are B2B; newsroom awareness of, and influence by, enterprise partnership stacks is unproven'
+      - strength: 'MODERATE'
+        text: 'FourWeekMBA: no enterprise customer named, no revenue figure - the stack is announced architecture, and coverage may rationally discount it as vapor'
+      - strength: 'WEAK'
+        text: 'Enterprise-workplace framing invites prove-it business skepticism regardless of incentives (Ropek IT-technician demo critique)'
+    strongest_counterargument: 'The strongest counterargument is the TechCrunch leg itself: the outlet with the clearest Verizon-orbit tie (Yahoo ownership) published the most adversarial Sep 16 piece in the corpus (-0.45), which means the partnership-stack incentive either does not reach the newsroom or is swamped by accumulated negative news pegs (stock decline, $2,195 price, Irenic pressure). The mechanism therefore documents graph structure, not tone prediction, at the TechCrunch leg.'
+    verdict: 'directionally_supported_not_proven'
+    falsification_family: 'NOT a member of the falsification family: the TechCrunch prediction failure is a scope bound inside this new mechanism, not a falsified standing corpus claim; ledger holds at 26'
+    no_analysis_json_update: true
+    artifact_grade: false
+    statistical_discipline:
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    sources:
+      - 'https://www.reuters.com/business/snap-targets-enterprises-with-salesforce-nvidia-ai-tools-augmented-reality-2026-09-16/ (Sep 16 2026: Snap announces Salesforce/Nvidia/AWS partnerships; Agentforce, XR AI platform, AWS assistant; terms not disclosed; Verizon/Orange/EE cellular charging case)'
+      - 'https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/ (Sep 16 2026 Ropek: Specs for Enterprise program; partnerships with Amazon, Salesforce, Nvidia; adversarial -0.45 arm, m728)'
+      - 'https://www.verizon.com/about/news/verizon-specs-5g-ar-glasses-bundle (Verizon press release: exclusive US partnership; Charging Case with Cellular; verizon.com, My Verizon app, select stores; custom data plans, flexible financing)'
+      - 'https://fourweekmba.com/ai-snap-specs-intelligence-enterprise-partners/ (Sep 17 2026: Specs as runtime for Salesforce/AWS/Nvidia agents; glasses not shipped; no enterprise customer named; no revenue figure)'
+      - 'https://www.thetimes.com/business/companies-markets/article/evan-spiegel-specs-augmented-reality-glasses-7bmpm6sgl (The Times: Irenic Capital activist pressure, $3.5B invested, spin-off-or-shut demand; stock up 4.2 percent to $5.96 after-hours)'
+    research_method: '3 browser.search query sets this run: (1) Snap Specs AWS enterprise partnership September 2026 launch, since 2026-09-15 (SELECTED: Reuters Sep 16 partnership piece, TechEchelon, Archynetys, FourWeekMBA, briefs.co, newsy-today); (2) Snap Specs smart glasses launch New York Times coverage September 2026, since 2026-09-15 (SELECTED: thetimes.com launch piece, USA Today Aug 26 preview, TechRepublic Specs Intelligence, Verizon press release; NYT bounded absence); (3) Snap Specs Salesforce Nvidia enterprise partners September 2026 launch, since 2026-09-15 (SELECTED: Reuters wire, Ropek TechCrunch Sep 16 as m728 arm, goldsea Reuters mirror, FourWeekMBA, kwsn Reuters mirror). 0 browser.open first-hand reads this run; all facts via search-result excerpts (second-hand per #503); all 5 source URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps: zero test_type_c_829 files on disk (glob); no Type C #829 in git log (--grep); max numeric mechanism_id 728 pre-commit; zero underscore-form 729 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention); zero Trifork / Hololight / Specs for Enterprise / Charging Case with Cellular / Amazon Quick hits repo-wide pre-commit; 3 of 5 source URLs zero-hit repo-wide pre-commit (Verizon press release, FourWeekMBA, thetimes.com; Reuters Sep 16 and TechCrunch Sep 16 already in corpus as m727/m728 context, first Type C mechanism on them per the #643 convention). No em dashes; ASCII-only.'
+    novelty: 'First dedicated competitor-entities.yaml financial-incentive mechanism formalizing the Snap Specs Sep-16-2026 enterprise partnership stack as a graph expansion: four new Snap edges (Salesforce Agentforce, Nvidia XR AI, AWS assistant, Verizon exclusive cellular) intersect four pre-existing publisher orbits (Amazon licensing/ad orbit via AWS leg; Benioff-TIME owner-equity chain via Salesforce leg; Verizon-retained-10-percent-Yahoo-stake orbit via Verizon leg; Nvidia null leg). Extends the m727 WIRED-silence natural experiment with a financial layer and scopes the m728 Ropek adversarial arm as a prediction-failed leg. test_type_c_829 novelty: zero Trifork / Hololight / Specs for Enterprise / Charging Case with Cellular / Amazon Quick hits repo-wide pre-commit; max numeric mechanism_id 728 pre-commit.'
+    verification:
+      iteration: 829
+      type: 'C'
+      date: '2026-09-18 08:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
 advance_dual_asset_monetization:
   overview: 'Advance Publications operates TWO parallel AI content monetization channels
 
