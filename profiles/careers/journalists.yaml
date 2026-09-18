@@ -19407,6 +19407,121 @@ kate_kozuch:
   - https://www.tomsguide.com/tag/wearables/page/3
   - https://muckrack.com/kate-kozuch/articles
 
+lucas_ropek:
+  name: Lucas Ropek
+  current_role: Senior Writer
+  current_publication: TechCrunch
+  publication_owner: Yahoo (Apollo Global Management majority stake)
+  beat: artificial intelligence, consumer tech, startups
+  career_history:
+  - employer: TechCrunch
+    role: Senior Writer
+    period: current
+  - employer: Gizmodo
+    role: AI and cybersecurity reporter
+    period: previous
+  smart_glasses_coverage:
+    snap_specs_jun16_debut:
+      headline: Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren't cheap
+      date: '2026-06-16'
+      tone: product_news_neutral_soft_business_skepticism
+      privacy_vocabulary_sentences: 1 (neutral, carried from Meta framing)
+      carried_mechanism_id: 269
+      carried_mechanism_home: profiles/competitor-coverage-research.yaml
+    snap_specs_sep16_relaunch:
+      headline: Snap tries to make the case again for its $2,200 smart glasses
+      date: '2026-09-16'
+      tone: adversarial
+      privacy_vocabulary_sentences: 0
+      mechanism_id: 728
+  notes: 'TechCrunch senior writer (AI, consumer tech, startups; ex-Gizmodo AI/cybersecurity). Type B #828 (Sep 18 2026): mechanism 728 within-journalist temporal register shift on Snap Specs - FIRST dedicated Type B mechanism on Ropek in journalists.yaml (mechanism 269 lives in competitor-coverage-research.yaml; zero lucas_ropek YAML key pre-commit). Jun 16 2026 arm "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren''t cheap" (read first-hand this run, 64 rendered lines; product-news neutral with soft business skepticism: "oof, they aren''t cheap", "slightly bulkier, goggle-like", "steep enough to put Specs out of reach", "still not consistently profitable", April layoffs; personal CES demo positive: "fun to play around with", "impressed by the contextual AI"; ONE neutral privacy sentence: "On privacy, Specs follows Meta''s lead with a built-in LED light"; +0.10 MANUAL ILLUSTRATIVE) vs Sep 16 2026 arm "Snap tries to make the case again for its $2,200 smart glasses" (read first-hand this run, 65 rendered lines; adversarial: "not only underwhelming but also a genuine disaster", "whopping $2,200", "vaguely reminiscent of scuba gear", "inspired jeers online and calls for the company''s CEO, Evan Spiegel, to resign", "stock subsequently nosedived", "cringe-inducing cost", "head-scratching", "who is really going to play basketball while wearing heavy goggles on their head?"; -0.45 MANUAL ILLUSTRATIVE). Illustrative Sep-minus-Jun delta -0.55. REFINES mechanism 269: the "product-enthusiastic" Ropek-on-Snap characterization was a debut-window phenomenon; by September the same journalist converges to the adversarial register his colleagues applied to Meta on price/utility/business grounds. CRITICAL SCOPE BOUND: the 269 PRIVACY-vocabulary claim SURVIVES - the Sep 16 piece applies ZERO privacy/alarm vocabulary to Snap''s 4 cameras plus contextual AI ("builds an understanding of your goals, priorities, relationships, and routines"), while Perez/Ha applied "luxury surveillance tech" and "pervert glasses" to Meta; the privacy register asymmetry persists even inside an adversarial piece. directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
+  mechanism_ids: [728]
+  competitor_coverage:
+    type_b_828_lucas_ropek_techcrunch_snap_jun16_vs_sep16_register_shift_sep18:
+      iteration: 828
+      mechanism_id: 728
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-18 07:00 PDT'
+      block_key: 'type_b_828_lucas_ropek_techcrunch_snap_jun16_vs_sep16_register_shift_sep18'
+      test_file: 'tests/test_type_b_828_lucas_ropek_techcrunch_snap_jun16_sep16_register_shift_sep18_7am.py'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-journalist temporal register comparison, FIRST dedicated Type B on Lucas Ropek in journalists.yaml (mechanism 269 lives in competitor-coverage-research.yaml; zero lucas_ropek YAML key pre-commit; the Sep 16 URL appears in corpus only as m727 counter-evidence context in profiles/wired.yaml, never as a Ropek-byline mechanism, per the #643 convention). Question: does the same TechCrunch writer who covered Snap Specs neutrally at debut apply the same register three months later at the relaunch event? Jun 16 arm: "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren''t cheap" (read first-hand this run via verbatim corpus URL, 64 rendered lines). Sep 16 arm: "Snap tries to make the case again for its $2,200 smart glasses" (read first-hand this run via verbatim search Full-URL, 65 rendered lines). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      jun16_arm:
+        title: "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren't cheap"
+        date: '2026-06-16'
+        author_byline: Lucas Ropek
+        publication: techcrunch
+        role: Senior Writer (AI, consumer tech, startups)
+        genre: debut product news
+        key_quotes:
+        - 'Headline (observed this run): "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren''t cheap" - the price verdict is in the headline, softened by "oof"'
+        - 'Excerpt (observed this run): "at $2,195, they don''t come cheap"'
+        - 'Excerpt (observed this run): "Visually, Specs looks like a fairly normal pair of glasses - albeit a slightly bulkier, goggle-like pair"'
+        - 'Excerpt (observed this run): "It''s steep enough to put Specs out of reach for most everyday consumers"'
+        - 'Excerpt (observed this run): "the company is still not consistently profitable"; "in April, it also underwent a round of layoffs"'
+        - 'Positive personal demo (observed this run): "It was fun to play around with the apps, and I was impressed by the contextual AI"'
+        - 'Positive hardware note (observed this run): "Snap has since slimmed down the hardware, making the glasses both less obtrusive and more efficient"'
+        - 'Privacy sentence, ONE and neutral (observed this run): "On privacy, Specs follows Meta''s lead with a built-in LED light that glows while the device is recording. The company says that users will also have control over what data is stored, synced, or deleted"'
+        register_notes: 'product-news neutral with soft business skepticism. Business concern ("still not consistently profitable", layoffs, "out of reach for most everyday consumers") is present but the register stays reportorial; the personal CES demo is positive; privacy gets exactly one neutral sentence.'
+        tone_MANUAL_ILLUSTRATIVE: 0.10
+        tone_basis: 'hand-assigned this run from the first-hand 64-line read; MANUAL ILLUSTRATIVE'
+        evidence_tier: 'first-hand read this run (64 rendered lines); byline confirmed via author bio footer ("Lucas is a senior writer at TechCrunch ... lucas.ropek@techcrunch.com")'
+        byline_attribution_urls:
+        - https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
+      sep16_arm:
+        title: "Snap tries to make the case again for its $2,200 smart glasses"
+        date: '2026-09-16'
+        author_byline: Lucas Ropek
+        publication: techcrunch
+        role: Senior Writer (AI, consumer tech, startups)
+        genre: relaunch event coverage
+        key_quotes:
+        - 'Lede (observed this run): "the reveal was not only underwhelming but also a genuine disaster"'
+        - 'Excerpt (observed this run): "which cost a whopping $2,200 and are vaguely reminiscent of scuba gear - inspired jeers online and calls for the company''s CEO, Evan Spiegel, to resign"'
+        - 'Excerpt (observed this run): "The company''s stock subsequently nosedived"'
+        - 'Excerpt (observed this run): "a heavy, expensive piece of hardware that most casual consumers will probably be unable to afford"'
+        - 'Excerpt (observed this run): "Snap has repeatedly justified the product''s cringe-inducing cost by characterizing the device as a computer"'
+        - 'Excerpt (observed this run): "Other announced features were slightly more head-scratching"'
+        - 'Excerpt (observed this run): "But, realistically, who is really going to play basketball while wearing heavy goggles on their head?"'
+        register_notes: 'adversarial on price, utility, and business viability. The register ("genuine disaster", "whopping", "scuba gear", "jeers", "cringe-inducing", "head-scratching") matches the adversarial register TC colleagues applied to Meta on price/utility; but ZERO privacy/alarm vocabulary appears anywhere in the 65 lines despite 4 cameras and contextual AI.'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        tone_basis: 'hand-assigned this run from the first-hand 65-line read; MANUAL ILLUSTRATIVE'
+        evidence_tier: 'first-hand read this run (65 rendered lines); byline confirmed via author bio footer; URL copied verbatim from search Full-URL listing'
+        privacy_vocabulary_count: 0
+        byline_attribution_urls:
+        - https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/
+      illustrative_delta_sep_minus_jun: -0.55
+      delta_calc: '(-0.45) - (0.10) = -0.55'
+      confounders_ranked:
+        strong:
+        - 'Accumulated negative news pegs: $2,195 retail price confirmed, stock "nosedived" with a 30 percent yearly decline, "jeers online", CEO-resignation calls, April layoffs, "still not consistently profitable" - the adversarial register tracks genuine developments; the DOMINANT confound'
+        - 'Event-genre asymmetry: Jun 16 was a debut reveal (first-impression product news, embargo window); Sep 16 was a second-chance "make the case again" relaunch event that structurally invites prove-it skepticism'
+        moderate:
+        - 'Temporal distance (3 months): beat norms and the privacy climate evolve; the Mar 2026 Meta contractor lawsuit is in the rearview'
+        - 'Subject asymmetry: the Sep piece covers the EVENT (keynote, enterprise program, NBA app) more than the product - event skepticism vs product-debut news'
+        weak:
+        - 'Fall shipping window raises the "will it sell" stakes vs the June preorder announcement'
+      counterevidence:
+      - 'COUNTEREVIDENCE: privacy vocabulary on Snap stays at ZERO in the adversarial Sep piece - Ropek never applies surveillance/alarm language to 4 cameras plus contextual AI that "builds an understanding of your goals, priorities, relationships, and routines"; the 269 privacy-vocabulary asymmetry claim SURVIVES, strengthened by its persistence inside an adversarial piece'
+      - 'COUNTEREVIDENCE: the Jun 16 piece already carried business skepticism ("oof, they aren''t cheap", "still not consistently profitable", layoffs) - the register shift is one of degree, not kind'
+      - 'COUNTEREVIDENCE: the Jun 17 TC piece "After unveiling ridiculously expensive AR glasses, Snap''s stock takes a dive" (search-surfaced this run, byline not attributed, zero hits in corpus) suggests TechCrunch''s adversarial price register on Snap appeared within 24 hours of debut - bounding debut-window neutrality to the reveal moment itself'
+      - 'COUNTEREVIDENCE: colleague Meta pieces (Perez "luxury surveillance tech", Ha "pervert glasses") remain harsher on the PRIVACY axis than Ropek''s Sep Snap piece - the cross-entity privacy asymmetry persists'
+      - 'COUNTEREVIDENCE: the Sep piece''s harshest lines target price and utility ("scuba gear", "heavy goggles", basketball), never the cameras - consistent with product-criticism register, not entity-targeted alarm'
+      verdict: 'REFINES mechanism 269 (Lucas Ropek editorial routing / vocabulary laundering): the "product-enthusiastic" Ropek-on-Snap characterization was a debut-window phenomenon, not a stable journalist property. By Sep 16 2026 the same journalist converges to the adversarial price/utility/business register his colleagues applied to Meta, while the privacy register stays asymmetric (zero Snap privacy vocabulary vs "luxury surveillance tech" and "pervert glasses" for Meta). Verdict: directionally_supported_not_proven.'
+      research_method: '2 browser.search query sets this run (TechCrunch Snap Specs launch September 2026 review skeptical, since 2026-09-15, with alternative TechCrunch Snap Specs launch Sep 16; Lucas Ropek Meta Ray-Ban TechCrunch, since 2025-01-01, with alternatives Ropek Meta AI glasses and Ropek Gizmodo glasses). 2 browser.open reads: Jun 16 debut piece via verbatim corpus URL (64 rendered lines, first-hand), Sep 16 relaunch piece via verbatim search Full-URL (65 rendered lines, first-hand). Byline confirmed on both pieces via author bio footer ("Lucas is a senior writer at TechCrunch ... lucas.ropek@techcrunch.com"). The Sep 16 URL appears in corpus only as m727 counter-evidence context in profiles/wired.yaml, never as a Ropek-byline mechanism - first dedicated Type B mechanism on it per the #643 convention. No canonical URLs constructed. Ruled-out alternative: Karissa Bell Engadget Sep 16 hands-on (covered via mechanism 113; not a Bell-byline novelty); Gizmodo Jun 16 roast (byline not pursued - Ropek offered the cleaner within-journalist temporal pair).'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; engine run once as a DEGENERATE n=1 check (calculate_asymmetry([-0.45], [0.10]) returns asymmetry_score -0.55; t 0.0; p 1.0; Cohen d 0.0; degenerate CI (-0.55, -0.55); is_significant False; no significance claimed). ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (mechanism-269 refinement with a scope bound, not a uniform-prediction contradiction); ledger holds at 26.'
+      cross_refs:
+      - '#269 (Lucas Ropek cross-entity camera glasses privacy vocabulary omission - refined here; privacy claim survives)'
+      - '#620 (Ropek Aug 2026 settlement/infrastructure vocabulary bifurcation - same-journalist family)'
+      - '#113 (Karissa Bell investigative methodology asymmetry - Snap-passive vs Meta-adversarial contrast family)'
+      - '#727 (WIRED x Snap Sep-16 launch natural experiment - the Sep 16 TC piece logged there as counter-evidence)'
+      - '#354 (WIRED inverted price criticism - adversarial price register on Meta comparator)'
+      no_analysis_json_update: true
+
 max_miller:
   name: Max Miller
   current_role: Contributing writer
