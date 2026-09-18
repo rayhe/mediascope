@@ -48,7 +48,7 @@ URL_SIAM = "https://www.siamnews.net/pr-news/linc-expands-into-japan-with-establ
 URL_B2B = "https://b2b-asianews.com/pr-newswire/35347/detail/"
 URL_AG = "https://www.aseangazette.com/newswires/pr-newswire/2026/09/14/linc-expands-into-japan-with-establishment-of-linc-k-k/124052/"
 NEXT_SIBLING = "\nadvance_dual_asset_monetization:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "1b63bc673be47e65adf25114538279c6d7e1f031"
 
 
 def _read(rel):
