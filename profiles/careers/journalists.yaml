@@ -19217,6 +19217,106 @@ philip_berne:
     samsung_tenure: until 2017
     former_apple_employee: true
     note: Former Samsung PR employee covers Meta with alarm vocabulary but mentions Samsung as future competitor with zero alarm
+  notes: 'TechRadar Senior Editor, Mobile Reviews and Buying Guides (beat: Mobile, Smart Home, TVs, Wearables, Apple, Samsung, Google). Type B #823 (Sep 18 2026): mechanism 725 career-tie register gradient - FIRST dedicated Type B mechanism on Berne (m115 lived in competitor-coverage-research.yaml only); same-writer, same-outlet pair: Meta arm "The Ray-Ban Meta camera glasses feel inevitable but I''m worried about the high creep factor" (Sep 28 2023; alarm_dominant -0.50 MANUAL ILLUSTRATIVE: "worried about predatory men recording women and girls without their knowledge or consent", "earning infamy and spreading fear", school-shooting parallel, "food for terror") vs Samsung arm "Forget the Pixel Fold and iPhone 14 Pro, the Galaxy S23 Ultra is the phone I can''t quit using" (2023; +0.55 MANUAL ILLUSTRATIVE: "the best phone you can buy, and it''s the phone I use above the rest", "never worrying about it", zero Samsung criticism, payola preempted: "Samsung doesn''t pay for this privilege"); illustrative delta -1.05; career context from his own byline bio: recruited by Samsung 2011 to pre-review unreleased devices, Samsung Mobile PR Team Lead ("leading reviews for the PR team and writing crisis communications") until 2017; also former Apple Store Mac Specialist. EXTENDS mechanism 115; directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
+  mechanism_ids: [725]
+  competitor_coverage:
+    type_b_823_philip_berne_techradar_samsung_vs_meta_creep_factor_sep18:
+      iteration: 823
+      mechanism_id: 725
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-18 02:00 PDT'
+      block_key: 'type_b_823_philip_berne_techradar_samsung_vs_meta_creep_factor_sep18'
+      test_file: 'tests/test_type_b_823_philip_berne_techradar_samsung_s23_ultra_vs_meta_creep_factor_sep18_2am.py'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-journalist same-outlet register comparison, FIRST dedicated Type B on Philip Berne. Question: does the same TechRadar writer who applies an alarm register to Meta glasses apply it to his former employer Samsung? Meta arm: TechRadar "The Ray-Ban Meta camera glasses feel inevitable but I''m worried about the high creep factor" (Sep 28 2023; read first-hand this run, 127 rendered lines; first-person voice + "Image credit: Future / Philip Berne" photo credit; carried in corpus since Aug 15 via m115 at tone -0.35, re-scored -0.50 MANUAL ILLUSTRATIVE this run from the full read; bounded-absence byline header per #503, attribution via voice + photo credits + author-page bio). Samsung arm: TechRadar "Forget the Pixel Fold and iPhone 14 Pro, the Galaxy S23 Ultra is the phone I can''t quit using" (2023; read first-hand this run, 119 rendered lines; first-person voice + six "Image credit: Future / Philip Berne" photo credits; novel URL, zero hits repo-wide pre-commit). Career context: recruited by Samsung in 2011 to pre-review top-secret unreleased devices and predict review scores; Samsung Mobile PR Team Lead writing crisis communications until 2017; former Apple Store Mac Specialist - all from his own TechRadar byline bio, verified first-hand this run (self-disclosed, not hidden). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: "The Ray-Ban Meta camera glasses feel inevitable but I'm worried about the high creep factor"
+        date: '2023-09-28'
+        author_byline: Philip Berne
+        publication: techradar
+        role: Senior Editor, Mobile Reviews and Buying Guides
+        genre: first-person opinion column
+        key_quotes:
+        - 'Headline (observed this run): "The Ray-Ban Meta camera glasses feel inevitable but I''m worried about the high creep factor" - the creep-factor verdict is in the headline'
+        - 'Excerpt (observed this run): "worried about predatory men recording women and girls without their knowledge or consent"'
+        - 'Excerpt (observed this run): "broadcast live over social networks, with the purpose of earning infamy and spreading fear"'
+        - 'Excerpt (observed this run): "teach students how to respond if somebody showed up to the school with a gun" - school-shooting parallel grounded in his teaching years'
+        - 'Excerpt (observed this run): "Training to escape a terrifying emergency"'
+        - 'Excerpt (observed this run): "attention can be food for terror"'
+        - 'Excerpt (observed this run): "that can be a scary thought"'
+        - 'Self-moderation (observed this run): "When Ford announces a new F-150 Lightning pickup truck, we don''t lament over how many accidents that truck might eventually cause... That would be obscene, and frankly depressing"'
+        - 'Self-moderation (observed this run): "people do bad things because they are bad people, or they make bad decisions, not because some good technology came along"'
+        - 'Samsung competitor mention, zero alarm (observed this run): "Samsung Galaxy Goggles sold through Sunglass Hut? Just as likely"'
+        register_notes: 'alarm_dominant. Alarm vocabulary (worried, creep factor, creepy, scary, fear, terror, predatory) concentrates on the Meta device; the piece self-moderates with a pickup-truck worst-case argument but the verdict frame stays alarm. Samsung appears as a future competitor with zero alarm vocabulary.'
+        tone_MANUAL_ILLUSTRATIVE: -0.50
+        tone_basis: 're-scored this run from the first-hand 127-line read (in-corpus m115 read -0.35 from Aug 15 carried as prior); MANUAL ILLUSTRATIVE'
+        evidence_tier: 'first-hand read this run (127 rendered lines); byline header not surfaced by fetch tool (bounded absence per #503); attribution via first-person voice + "Image credit: Future / Philip Berne" photo credit + TechRadar author-page bio match'
+        byline_attribution_urls:
+        - https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-camera-glasses-feel-inevitable-but-im-worried-about-the-high-creep-factor
+      samsung_arm:
+        title: "Forget the Pixel Fold and iPhone 14 Pro, the Galaxy S23 Ultra is the phone I can't quit using"
+        date: '2023'
+        author_byline: Philip Berne
+        publication: techradar
+        role: Senior Editor, Mobile Reviews and Buying Guides
+        genre: first-person opinion column
+        key_quotes:
+        - 'Excerpt (observed this run): "When I have my choice of everything, I still use my Galaxy S23 Ultra"'
+        - 'Excerpt (observed this run): "The Galaxy S23 Ultra is the best phone you can buy, and it''s the phone I use above the rest"'
+        - 'Excerpt (observed this run): "the joy of the Galaxy S23 Ultra is never worrying about it"'
+        - 'Excerpt (observed this run): "I don''t miss anything about the iPhone when I got back to using my Galaxy full time" (iPhone reduced to FOMi social utility)'
+        - 'Excerpt (observed this run): "Samsung doesn''t pay for this privilege. PCMag uses Galaxy S phones because Samsung phones reliably get the best service" - payola suspicion preempted'
+        - 'Excerpt (observed this run): "If my Galaxy S23 Ultra can''t get service, no phone that I own will do better"'
+        - 'Failure attribution to competitors (observed this run): Razr Plus kid photo "a blurry, blocky mess"; Pixel Fold cameras "pretty good, but not great"'
+        register_notes: 'pure first-person enthusiasm. Zero criticism of Samsung across 119 rendered lines; camera failures attributed to Motorola and Google devices; iPhone diminished to social utility; payola suspicion explicitly preempted.'
+        tone_MANUAL_ILLUSTRATIVE: 0.55
+        tone_basis: 'hand-assigned this run from the first-hand 119-line read; MANUAL ILLUSTRATIVE'
+        evidence_tier: 'first-hand read this run (119 rendered lines); novel URL, zero hits repo-wide pre-commit'
+        criticism_of_samsung_count: 0
+        byline_attribution_urls:
+        - https://www.techradar.com/phones/samsung-galaxy-phones/forget-the-pixel-fold-and-iphone-14-pro-the-galaxy-s23-ultra-is-the-phone-i-cant-quit-using
+      career_tie:
+        former_samsung_mobile: true
+        recruited_2011: true
+        pr_team_lead_until_2017: true
+        former_apple_store: true
+        disclosed_in_own_bio: true
+        bio_quotes:
+        - 'TechRadar author-page bio (read first-hand this run): "In 2011, Philip was recruited by Samsung to review top secret, upcoming devices and predict how those devices would score in reviews"'
+        - 'TechRadar author-page bio (read first-hand this run): "Phil did a stint at Samsung Mobile, leading reviews for the PR team and writing crisis communications until he left in 2017"'
+        - 'TechRadar author-page bio (read first-hand this run): "He worked at an Apple Store near Boston, MA, at the height of iPod popularity"'
+      illustrative_delta_meta_minus_samsung: -1.05
+      delta_calc: '(-0.50) - (0.55) = -1.05'
+      confounders_ranked:
+        strong:
+        - 'Product-category asymmetry: flagship smartphone daily-driver love letter vs unreleased smart-glasses launch-week opinion column - the DOMINANT confound; love-letter and worry-column genre purposes differ even within first-person opinion'
+        - 'Genre-purpose asymmetry: "the phone I can''t quit using" is an enthusiasm column; "worried about the high creep factor" is a caution column - the genre purpose pre-loads the register'
+        - 'Biographical grounding: the Meta alarm register is routed through his US teaching experience (school-shooting drills, "taught students how to respond if somebody showed up to the school with a gun") - a genuine biographical register, not obviously a financial artifact'
+        moderate:
+        - 'Category novelty: 2023 smart glasses were a novel form factor inviting caution registers vs the mature smartphone category'
+        - 'Temporal proximity (both 2023, months apart) MITIGATES the temporal confound - unlike the Oct 2025 vs Sep 2026 Bell pair'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Berne self-moderates the Meta alarm explicitly - "That would be obscene, and frankly depressing" (pickup-truck passage); "people do bad things because they are bad people... not because some good technology came along"'
+      - 'COUNTEREVIDENCE: Berne praises the Meta product - "look pretty cool", "price is shockingly good"; he owns-adjacent the idea ("I''m really into the idea of smart glasses")'
+      - 'COUNTEREVIDENCE: the Meta piece applies NO alarm to Samsung as future competitor ("Samsung Galaxy Goggles sold through Sunglass Hut? Just as likely")'
+      - 'COUNTEREVIDENCE: the career tie is self-disclosed in his own byline bio ("recruited by Samsung"; "leading reviews for the PR team") - not a hidden financial relationship'
+      - 'COUNTEREVIDENCE: Berne explicitly preempts payola - "Samsung doesn''t pay for this privilege"'
+      - 'COUNTEREVIDENCE: disclosed Apple Store history too (multi-employer history, not single-entity capture)'
+      - 'COUNTEREVIDENCE: #679-style principle - former-employer ties do not always predict tone; this is a register-gradient documentation, not a causal claim'
+      verdict: 'EXTENDS mechanism 115 (TechRadar/Future plc privacy-vocabulary bifurcation) to a journalist-level career-tie instantiation: a former Samsung PR team lead writes the corpus''s most alarm-dominant Meta glasses register while his Samsung flagship coverage is pure enthusiasm - a career-history register gradient. Verdict: directionally_supported_not_proven.'
+      research_method: '4 browser.search query sets this run (Berne smart glasses Meta; Berne Samsung XR glasses hands-on; "Philip Berne" Samsung TechRadar article; "by Philip Berne" TechRadar AI wearables 2026). 4 browser.open reads: TechRadar Apple-glasses piece (ruled out - Hamish Hector ruled out as non-Berne byline, author bio footer "Hamish is a Senior Staff Writer"), Samsung Galaxy XR hands-on (ruled out - Lance Ulanoff ruled out, bio footer "Lance Ulanoff", Berne present only in image credits), Meta "creep factor" arm (first-hand, 127 rendered lines), Samsung S23 Ultra arm (first-hand, 119 rendered lines). Ruled-out candidates: Hamish Hector ruled out (Apple arm is his), Lance Ulanoff ruled out (Galaxy XR hands-on is his), Jacob Krol ruled out (Samsung prototype arm is his - different writer). Both arms first-hand read; byline headers not surfaced by fetch tool (bounded absence per #503); byline attribution via first-person voice + "Image credit: Future / Philip Berne" photo credits + TechRadar author-page bio (https://www.techradar.com/author/philip-berne) match. no canonical URLs constructed; all URLs copied verbatim from Full-URL listings. Ruled-out candidate "Berne on Meta NYC lived piece" (through-ray-ban-meta-glasses-i-stared-into-the-city) noted as supporting same-register Meta arm, not needed for the pair.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone NOT_SCORED; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; engine run once as a DEGENERATE n=1 check (calculate_asymmetry([-0.50], [0.55]) returns asymmetry_score -1.05; t 0.0 / p 1.0 / Cohen d 0.0 / degenerate CI (-1.05, -1.05) / is_significant False; no significance claimed). ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (register documentation, not a uniform-prediction test); ledger holds at 26.'
+      cross_refs:
+      - '#115 (TechRadar/Future plc privacy-vocabulary bifurcation - Berne Meta arm lives here since Aug 15)'
+      - '#680 (Hector Snap aspirational vs Meta alarm - same-publication career-register contrast family)'
+      - '#722 (Bell same-writer register pair - design template)'
+      - '#713 (Ortiz Ziff Davis challenger-constancy - counter-pattern within TechRadar-adjacent tech press)'
+      - '#679 (WSJ payer expose - former-tie-does-not-always-predict principle)'
+      no_analysis_json_update: true
 
 
 kit_eaton:
