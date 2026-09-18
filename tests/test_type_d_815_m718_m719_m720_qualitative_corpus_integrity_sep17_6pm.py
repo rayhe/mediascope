@@ -109,7 +109,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a4e40d2061a04a1ac3c20c772026981064146294"
 
 M718_KEY = "ft_openai_1_2tn_funding_round_scoop_vs_meta_equity_raise_desperation_sep17"
 M719_KEY = "type_b_813_victoria_song_sep2026_display_existential_vs_watch_ambient_muted_sep17"
