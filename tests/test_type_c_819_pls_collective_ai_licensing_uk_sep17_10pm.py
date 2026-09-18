@@ -427,7 +427,7 @@ class TestIterationLog819:
         entry = log[idx:idx + 8000]
         assert "mechanism 723" in entry
         assert "PLS" in entry
-        assert "Publishers Licensing Services" in entry
+        assert "Publishers' Licensing Services" in entry
 
     def test_sep_17_2026_is_thursday(self):
         import datetime
