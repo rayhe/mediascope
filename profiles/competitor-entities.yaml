@@ -20231,6 +20231,95 @@ marketplace_intermediary_landscape:
     coverage from publishers entangled with Microsoft, Amazon, and OpenAI.
 
     '
+  pls_collective_ai_licensing_uk_sep2026:
+    mechanism_id: 723
+    iteration: 819
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-17'
+    time_pdt: '22:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    mechanism_name: 'Publishers Licensing Services (PLS) UK Collective AI Licensing Scheme (Launched London Book Fair Mar 2026) - First Dedicated UK Collective-Licensing Mechanism in the Corpus; 250+ Publisher Opt-Ins'
+    overview: 'First dedicated corpus mapping of the Publishers Licensing Services (PLS) collective AI licensing scheme: PLS, the UK non-profit government-regulated organisation owned and directed by the Publishers Association, the Independent Publishers Guild, the Professional Publishers Association and the Association of Learned and Professional Society Publishers, launched the first stage of its industry-led collective licensing initiative at the London Book Fair in March 2026, developed with the Copyright Licensing Agency (CLA) and the Authors Licensing and Collecting Society (ALCS). The voluntary opt-in scheme pairs a licence with an online content store so AI companies can legally access published works for training and fine-tuning in exchange for a licence fee, under clear transparent usage guidelines. The scheme operates alongside direct publisher-AI agreements as an additional route for publishers of all sizes, and is explicitly aimed at publishers that may be unable to secure direct licensing agreements with AI developers. By July 2026 over 250 publishers had opted in, including the named specialists Practical Action Publishing and 5m Books. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+    scheme_facts:
+      launched: 'First stage announced at the London Book Fair, March 2026 (EINPresswire London 12 Mar 2026; LexisNexis LNB News 10 Mar 2026)'
+      operator: 'Publishers Licensing Services (PLS) - non-profit, government-regulated organisation'
+      owners:
+      - 'Publishers Association (PA)'
+      - 'Independent Publishers Guild (IPG)'
+      - 'Professional Publishers Association (PPA)'
+      - 'Association of Learned and Professional Society Publishers (ALPSP)'
+      developed_with:
+      - 'Copyright Licensing Agency (CLA)'
+      - 'Authors Licensing and Collecting Society (ALCS)'
+      programme_name: 'Generative AI Training Licence programme'
+      vehicle: 'Voluntary opt-in; licence plus online content store; covers AI training and fine-tuning for a licence fee; clear transparent usage guidelines; operates alongside direct agreements between publishers and AI companies'
+      target: 'Publishers of all sizes, including those unable to secure direct licensing agreements with AI developers - an optional alternative route to market, backed by both publishers and authors'
+      leadership: 'Tom West, Chief Executive, PLS (launch and trade-press quotes); Saj Merali, CEO, PPA (trade-body endorsement)'
+    opt_in_count: 'Over 250 publishers opted in ahead of the PLS Conference of 2 July 2026 (pls.org.uk; self-reported by the scheme operator)'
+    publisher_roster:
+    - 'Practical Action Publishing (independent specialist; publishing arm of the international development charity Practical Action; Rosanna Denning, Marketing Manager)'
+    - '5m Books (independent specialists in animal health; Jeremy Toynbee, Managing Director)'
+    key_quotes:
+    - 'Rosanna Denning (Practical Action Publishing): "We welcome the opportunity to participate in a collective licensing solution that helps ensure publishers are recognised and rewarded when their content is used for AI training. We see the Generative AI Training Licence programme as an important step towards building a sustainable and transparent relationship between the publishing and AI sector."'
+    - 'Jeremy Toynbee (5m Books): "We are delighted to be partnering with PLS in the emerging field of AI licensing. We appreciate the expertise PLS bring in helping us to understand and navigate a new business dynamic."'
+    - 'Tom West (PLS CEO, The Bookseller): with "more than 100 ongoing legal cases against AI companies, mostly for IP infringement, and inevitably more to come", legal certainty has value; "PLS [is] uniquely placed to offer both scale and diversity of content... Instead of negotiating fragmented agreements, AI companies can access a wide repertoire efficiently and with legal certainty".'
+    - 'Saj Merali (PPA CEO): "Good journalism and specialist content don''t just happen... many simply don''t have the scale needed to influence the deal room. That''s where collective licensing makes sense. It gives publishers strength in numbers and a practical way to make sure their content is used legally, transparently and is compensated properly."'
+    tier_3_collective_reading:
+      tier_3_extension: 'Promotes the mechanism 720 passing roster mention ("UK PLS Generative AI Solution") to the corpus''s first DEDICATED UK collective-licensing mechanism, extending the tier_3_collective roster (NMA-Bria, ProRata AI, UK PLS, LINC KK) with a book-publisher-side, training-and-fine-tuning vehicle. PLS is the long-form content-store counterpart to Cashmere''s inference-only rails (mechanism 663) and ProRata''s attribution-weighted revenue share.'
+      taxonomy_relationship: 'Collective intermediation alongside LINC KK''s pool-and-license (mechanism 720, the fifth relationship direction); PLS adds the small-publisher-access rationale: the scheme explicitly targets publishers unable to secure direct AI-developer deals, a supply-side counterweight to the buyer-side asymmetry where only marquee publishers sign bilateral deals.'
+      cross_references: 'Digiday May 2026: publishers quietly cutting six-figure AI licensing deals on Snowflake (marketplace intermediary, in-corpus cross-reference); Google pay-per-value pilot (mechanisms 702/708, mapped #784, corroborated #794): a buyer-side variable-pay template versus the PLS supply-side collective template; the Sep 2 2026 DOJ Statement of Interest in NYT v. OpenAI/Microsoft (fair-use-for-OpenAI posture, per the Scholarly Kitchen relay, bounded in-mechanism per iteration-492 rule) shows the regulatory track running parallel to the licensing track.'
+    confounders_ranked:
+    - strength: 'STRONG'
+      text: 'Zero disclosed dollars, pricing, or AI-buyer sign-ups: no licence fee schedule, no named AI developer customers, no revenue figures. The mapping is structural, not sized.'
+    - strength: 'STRONG'
+      text: 'The 250 opt-in count is self-reported by the scheme operator on its own site; named uptake is two small specialists (Practical Action Publishing, 5m Books). No independent reporting on opt-in composition or renewal rates.'
+    - strength: 'MODERATE'
+      text: 'Launch-phase scheme (March 2026 first stage): durability and buyer-side adoption are unproven. Post-opt-in, PLS said it would work with the CLA to engage AI developers directly - the buyer side is still a plan, not a fact.'
+    - strength: 'MODERATE'
+      text: 'UK-jurisdiction scope: the scheme builds on the UK''s existing voluntary collective licensing tradition (CLA). Transferability to other jurisdictions is unestablished; and no coverage-tone claim is made anywhere in this leg.'
+    - strength: 'WEAK'
+      text: 'Bounded searches may miss buyer-side announcements behind paywalls or in non-English press; absence of reporting is not proof of absence of a buyer deal.'
+    counterevidence:
+    - 'The Publishers Association simultaneously lobbies the UK government to rule out a copyright exception for AI (The Bookseller) - the same industry offering a collective licence also pushes regulatory compulsion, against a naive purchased-consent reading.'
+    - 'Over 250 publisher opt-ins ahead of the scheme going live show publisher-side demand preceding buyer-side demand - the supply side moved first, which cuts against a buyer-driven price-setting reading.'
+    - 'PLS framed the scheme as operating alongside direct agreements (The Bookseller), not replacing them: marquee publishers keep bilateral leverage while small publishers gain the collective route.'
+    strongest_counterargument: 'A 250-opt-in launch with no named AI-buyer, no fee schedule, and no disclosed revenue is the weakest evidence of a functioning licensing market: opt-ins measure publisher interest in being licensed, not AI-developer willingness to pay. Until the CLA engages a paying buyer, the scheme documents intent, not commerce.'
+    verdict: 'directionally_supported_not_proven'
+    no_analysis_json_update: true
+    artifact_grade: false
+    falsification_family: 'NOT a member - qualitative Type C economics leg mapping a publisher-side collective vehicle; no coverage-tone pair, no engine, no deal-gradient prediction falsified or confirmed; ledger holds at 26 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+    statistical_discipline:
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    sources:
+    - 'https://www.lexisnexis.co.uk/legal/news/pls-launches-collective-ai-licensing-scheme-for-publishers-with-cla-alcs (PLS collective AI licensing scheme launch, CLA/ALCS collaboration, Mar 10 2026 issue)'
+    - 'https://cop.einnews.com/pr_news/898966361/pls-offers-new-collective-ai-licensing-opportunity-to-publishers (EINPresswire London Book Fair launch announcement, Mar 12 2026)'
+    - 'https://www.pls.org.uk/news-events-policy/news/over-250-publishers-opt-in-to-collective-ai-licensing-ahead-of-industry-conference-addressing-ai-copyright/ (250+ opt-ins; Practical Action Publishing and 5m Books quotes; target publishers unable to secure direct deals)'
+    - 'https://www.thebookseller.com/news/pls-launches-collective-ai-licensing-scheme-for-publishers (Tom West legal-certainty quotes; operates alongside direct agreements; PA lobbying context)'
+    - 'https://ppa.co.uk/pls-launch-collective-ai-licensing-opportunity (Saj Merali strength-in-numbers quote; CLA/ALCS development)'
+    - 'https://www.edtechinnovationhub.com/news/pls-launches-collective-licensing-scheme-for-ai-use-of-published-content (ownership by PA/IPG/PPA/ALPSP; voluntary collective licensing model extended to generative AI)'
+    research_method: '5 browser.search query sets this run: (1) AI content licensing publisher deal September 2026 (since 2026-09-10); (2) OpenAI news publisher licensing deal announcement September 2026 (since 2026-09-08); (3) collective licensing publishers AI announcement 2026; (4) Meta AI publisher content licensing deal September 2026 (since 2026-09-08); (5) PLS collective AI licensing publishers update September 2026 (since 2026-07-01). 0 browser.open first-hand reads this run; all facts via search-result excerpts, second-hand per #503; all URLs verbatim from Full-URL listings; no canonical URLs constructed. Ruled-out candidates: Google pay-per-value (AdExchanger Sep 15 2026) as a corroborating surface for mechanism 702 (folded by #784/#794); OpenAI India attribution blitz (mechanisms 609/654/657); Cashmere x De Gruyter Brill Sep 14 2026 (mechanism 663, mapped #799); OpenAI x Village Media first Canada deal (#804); ANI Division Bench notice (#809); LINC KK Japan (mechanism 720, #814); UMG x ElevenLabs music deal (rejected per #729/#759/#799 music rule); Press Gazette Sep 17 deal-map roundup (corroborating secondary, no new mechanism). Bounded absences per iteration-492 rule (no AI-buyer sign-up announcements, no fee schedule, no buyer-side uptake reporting; none claimed as proof). No em dashes; ASCII-only.'
+    novelty: 'First dedicated UK collective-licensing mechanism in the corpus. Zero "Publishers Licensing Services" hits repo-wide pre-commit (git grep); all 6 PLS source URLs zero-hit repo-wide pre-commit; the mechanism 720 block mentions "UK PLS Generative AI Solution" as a tier_3_collective roster entry only; max numeric mechanism_id 722 pre-commit (#818); zero underscore-form 723 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention). Distinct from mechanism 663 (Cashmere: Western RAG-only premium-data rails for a single lab, Perplexity), mechanisms 702/708 (Google buyer-side variable-pay pilot), the Snowflake marketplace intermediary (enterprise RAG pipe, six-figure deals), ProRata (attribution-weighted revenue share), and LINC KK APAC collective (mechanism 720). Novelty claims pinned for the test_type_c_819 file per the #752 convention.'
+    verification:
+      iteration: 819
+      type: 'C'
+      date: '2026-09-17 22:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline_note: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
   linc_kk_japan_collective_licensing_sep2026:
     mechanism_id: 720
     iteration: 814
