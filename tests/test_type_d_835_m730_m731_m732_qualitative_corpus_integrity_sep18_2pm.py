@@ -124,7 +124,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "ea8d8b2663d04ac8ae3d842cd1abd504ce179843"
 
 M730_KEY = (
     "reuters_anthropic_company_sourced_aspirational_register_vs_meta_"
