@@ -20190,6 +20190,10 @@ marketplace_intermediary_landscape:
     - 'ProRata AI: 500+ publishers, revenue-share model (2024)'
     - 'UK PLS Generative AI Solution: voluntary opt-in, collective management (Mar
       2026)'
+    - 'LINC K.K. (IntentBridges x Globalive JV, Sep 2026): first APAC collective-licensing
+      intermediary; AI-bot-traffic mapping, licensable-rights packaging, collective licensing,
+      marketplaces, direct AI buyers; publisher relationships: Mediagene (JP), ETtoday (TW),
+      Philstar (PH)'
     incentive_direction: Diffuse → minimal per-entity coverage incentive
   concentration_risk: 'The marketplace layer creates concentration risk analogous
     to Google''s
@@ -20227,6 +20231,97 @@ marketplace_intermediary_landscape:
     coverage from publishers entangled with Microsoft, Amazon, and OpenAI.
 
     '
+  linc_kk_japan_collective_licensing_sep2026:
+    mechanism_id: 720
+    iteration: 814
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-17'
+    time_pdt: '17:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    mechanism_name: 'LINC K.K. Japan Expansion (IntentBridges x Globalive Joint Venture, Announced Sep 11 2026) - First APAC Collective-Licensing Intermediary in the Corpus; Pool-and-License as the Fifth Direction in the Relationship-Direction Taxonomy'
+    overview: 'First dedicated corpus mapping of LINC, the publisher licensing network operated by Singapore-based IntentBridges Pte. Ltd., expanding into Japan on Sep 11 2026 through LINC K.K., a joint venture with Japan-based Globalive K.K. led by Representative Director Kosuke Umeno (Wei Hsueh, IntentBridges founder, also a director). LINC maps AI-bot access to publisher content, packages licensable rights, and commercializes them across collective licensing, marketplaces, and direct AI buyers, managing licensing revenue. Existing publisher relationships: Mediagene Inc. (Japan), ETtoday (Taiwan region), Philstar (Philippines). Economic context per the announcement: Cloudflare reports automated bot traffic now exceeds half of global web requests; LINC''s own review of 30 Japanese publisher domains found AI bot traffic up approximately 50% between February and August 2026. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+    joint_venture:
+      announced: '2026-09-11'
+      operator: 'LINC, the publisher licensing network operated by IntentBridges Pte. Ltd. (Singapore-based)'
+      partner: 'Globalive K.K. (Japan-based)'
+      vehicle: 'LINC K.K. (joint venture)'
+      leadership: 'Representative Director Kosuke Umeno; Wei Hsueh (Director of LINC K.K., Founder of IntentBridges Pte. Ltd.)'
+      mission: 'help Japanese publishers turn growing AI access to their content into new licensing revenue streams'
+    publisher_roster:
+      - 'Mediagene Inc. (Japan)'
+      - 'ETtoday (Taiwan region)'
+      - 'Philstar (Philippines)'
+    services:
+      - 'mapping AI access'
+      - 'packaging licensable content and rights'
+      - 'commercializing opportunities across collective licensing, marketplaces and direct AI buyers'
+      - 'managing licensing revenue'
+    economic_context:
+      bot_traffic: 'Cloudflare: automated bot traffic now accounts for more than half of web requests globally (per the Sep 11 announcement)'
+      ai_bot_growth: 'LINC review of 30 Japanese publisher domains: AI bot traffic increased by approximately 50% between February and August 2026 (LINC self-reported)'
+    intermediary_reading:
+      tier_3_extension: 'Extends the tier_3_collective roster (NMA-Bria, ProRata AI, UK PLS Generative AI Solution) with the first Asia-based entrant and the first collective-licensing vehicle built explicitly around AI-bot-traffic mapping rather than legacy print collective management. The APAC licensing infrastructure is being built publisher-side, ahead of (not in response to) any disclosed AI-buyer deal.'
+      taxonomy_fifth_direction: 'Extends the relationship-direction taxonomy with a fifth direction, pool-and-license (collective intermediation): publishers aggregate rights through a network operator that sets commercial terms with AI buyers, sitting alongside (1) sue-then-sign (m624), (2) pay-or-litigate bifurcation (m636), (3) grant-then-sue (m675), and (4) sign-then-terminate (Disney x OpenAI). Unlike bilateral legs, the pricing counterparty is the network, not the lab.'
+      repricing_frame: 'Extends mechanism 681''s repricing frame: who prices content shifts from the AI lab (bilateral deals) to the intermediary network (collective licensing). The black-box risk documented on the buyer side (Google AI Contribution Pilot, mechanisms 702/708) has a seller-side mirror: LINC promises to define licensable rights and set commercial terms, but no pricing formula, revenue splits, or buyer roster are disclosed.'
+      cross_references: 'mechanisms 681 (repricing frame), 663 (Cashmere premium-data rails - the Western intermediary analogue, RAG-only per-token model), 391 (Perplexity Comet Plus revenue share), 609/660 (zero-fee-disclosed attribution template), 702/708 (Google pay-per-value black-box pilot), 675 (grant-then-sue direction)'
+    meta_zero: 'Meta has no documented relationship with LINC, IntentBridges, or Globalive; Meta is not a marketplace operator or participant per the concentration_risk note in this section. Structural context only, not a coverage-tone claim.'
+    correlational_note: 'Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim is made.'
+    cautious_language_required: true
+    no_coverage_tone_claim: true
+    predictions_not_findings: true
+    verdict: 'directionally_supported_not_proven'
+    falsification_family: 'NOT a member - financial-relationship documentation leg (ledger holds at 26)'
+    no_analysis_json_update: true
+    artifact_grade: false
+    artifact_readiness: 'No analysis.json update warranted: documentation leg on a licensing intermediary; no new empirical tone finding.'
+    ranked_confounders:
+      - rank: 1
+        strength: 'strong'
+        text: 'Single press-release source family - all six source URLs trace to the Sep 11 2026 PRNewswire release or its wire mirrors (TNGlobal/TechNode, HK Businesswire, SiamNews, B2B AsiaNews, ASEAN Gazette); no independent reporting corroborates the JV terms, publisher roster, or traffic figures.'
+      - rank: 2
+        strength: 'strong'
+        text: 'No dollar figures, pricing formulas, revenue splits, or named AI-buyer counterparties - the commercial substance of the pool-and-license leg is entirely undisclosed, so the mechanism is architectural, not sized.'
+      - rank: 3
+        strength: 'moderate'
+        text: 'Small named publisher roster - three publishers (Mediagene, ETtoday, Philstar); the 30 Japanese publisher domains in the traffic review are not named as customers, so the Japan go-to-market footprint is unmeasured.'
+      - rank: 4
+        strength: 'moderate'
+        text: 'Self-reported traffic data - the 50% AI-bot-traffic growth figure is LINC''s own review of publisher domains, not an independent measurement; Cloudflare''s >50% bot figure is global, not Japan-publisher-specific.'
+      - rank: 5
+        strength: 'weak'
+        text: 'JV execution risk - Globalive''s local publisher relationships are asserted, not detailed; the joint venture was announced Sep 11 2026 with no disclosed capitalization or operating history.'
+    strongest_counterargument: 'A press-release announcement of a joint venture with no disclosed revenue, pricing, or buyers is the weakest possible evidence of a functioning licensing market; LINC K.K. may never intermediate a single paid AI-content transaction, in which case the pool-and-license direction is aspirational infrastructure, not an observed financial relationship.'
+    statistical_discipline:
+      scope: 'qualitative structural mapping only'
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    source_urls:
+      - 'https://www.prnewswire.com/apac/news-releases/linc-expands-into-japan-with-establishment-of-linc-kk-302877168.html'
+      - 'https://technode.global/prnasia/linc-expands-into-japan-with-establishment-of-linc-k-k/'
+      - 'https://hkbusinesswire.com/linc-expands-into-japan-with-establishment-of-linc-k-k/'
+      - 'https://www.siamnews.net/pr-news/linc-expands-into-japan-with-establishment-of-linc-k-k/'
+      - 'https://b2b-asianews.com/pr-newswire/35347/detail/'
+      - 'https://www.aseangazette.com/newswires/pr-newswire/2026/09/14/linc-expands-into-japan-with-establishment-of-linc-k-k/124052/'
+    research_method: '3 browser.search query sets this run: (1) AI company publisher content licensing deal September 2026 (since=2026-09-10) - surfaced the UMG x ElevenLabs music deal (rejected per the #729/#759/#799 publication-scope rule: music, not publishers), the Google AI Contribution Pilot Sep 15-16 reporting wave (AdExchanger black-box framing, SER Roundtable, Digiday, Medianama, SEJ - corroborating surfaces for mechanisms 702/708, already folded by Type C #784), and the LINC K.K. Japan expansion (SELECTED); (2) Google pay-per-value AI licensing pilot status (since=2026-09-10) - no new status beyond the Sep 15-16 reporting already in corpus; (3) LINC IntentBridges Japan publishers AI licensing network - 6 corroborating URLs (PRNewswire original Sep 11 + 5 wire mirrors), all zero-hit repo-wide pre-commit. Dead-end/rejected candidates this run: News Corp additional arrangements (May 2024 re-indexes only, mechanism 630 watch unchanged - eighth leg); Apple Siri publisher closures (zero, mechanism 606 watch unchanged); UMG x ElevenLabs Sep 10-11 (music-vertical, rejected per #729/#759/#799); Kinex Media OpenAI Partner Network (digital agency, not a publisher - per #799); Streaming Access and Choice Alliance (trade association, not a publisher-competitor financial relationship). 0 browser.open first-hand reads this run - search-excerpt-bounded per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+    novelty: 'First dedicated LINC/IntentBridges mechanism in the corpus; Zero IntentBridges hits repo-wide pre-commit (git grep); zero LINC K.K. hits in profiles/competitor-entities.yaml pre-commit; all 6 source URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 719 pre-commit (#813); zero underscore-form 720 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention). Distinct from mechanism 663 (Cashmere: Western RAG-only premium-data rails for a single lab, Perplexity) and from the tier_3_collective roster (NMA-Bria, ProRata, UK PLS: US/EU collectives); LINC is the first APAC intermediary and the first built around AI-bot-traffic mapping. Novelty claims pinned for the test_type_c_814 file per the #752 convention.'
+    verification:
+      iteration: 814
+      type: 'C'
+      date: '2026-09-17 17:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
 advance_dual_asset_monetization:
   overview: 'Advance Publications operates TWO parallel AI content monetization channels
 
