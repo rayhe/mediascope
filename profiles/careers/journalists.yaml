@@ -19889,3 +19889,95 @@ ece_yildirim:
       verdict2: directionally_supported_not_proven
       no_analysis_json_update: true
       test_file: tests/test_type_b_808_ece_yildirim_gizmodo_apple_adversarial_vs_meta_product_neutral_sep17_11am.py
+karissa_bell:
+  name: Karissa Bell
+  current_role: Senior Reporter
+  current_publication: Engadget
+  publication_owner: Yahoo
+  beats:
+  - wearables
+  - smart_glasses
+  - AR
+  - AI
+  author_page: https://www.engadget.com/author/karissa-bell/
+  notes: 'Engadget wearables desk (author page https://www.engadget.com/author/karissa-bell/; Bell is the Engadget writer behind the corpus''s Aug 15 mechanism 113 investigative-methodology asymmetry and the Sep 2026 Meta Ray-Ban Display 10-day review). Type B #818 (Sep 17 2026): mechanism 722 same-writer, same-outlet register pair - Meta arm: Engadget "Meta Ray-Ban Display review: Chunky frames with impressive abilities" (Oct 2025; read first-hand this run, 224 rendered lines; first-person voice + "Karissa Bell for Engadget" photo credits, explicit byline header not surfaced in render, bounded absence per #503): "still a bit conflicted"; "The frames are extremely chunky and too wide for my face"; "I did feel a bit self-conscious at times wearing these in public"; dedicated "Privacy and safety" section - "I share a lot of these concerns", "these devices will inevitably scoop up more of our data over time", live translation could "surreptitiously eavesdrop on a conversation"; -0.10 illustrative. Snap arm: Engadget "Snap Specs Hands On: Standalone AR Glasses Are Here" (launch-week Sep 2026; read first-hand this run, 105 rendered lines; byline "Karissa Bell for Engadget" confirmed): "The $2,195 glasses are Snap''s biggest AR bet yet"; "I think there''s a lot to like"; "Specs are equipped with two cameras, which enable the hand-tracking controls" (two face-worn cameras, zero privacy terms across the whole piece); "Given Specs'' capabilities, I actually think they look okay"; 132g "almost twice as heavy as Meta''s display-enabled frames, but the weight felt more evenly distributed"; +0.30 illustrative. Illustrative Meta-minus-Snap delta -0.40: the privacy register activates on Meta''s single face camera but stays silent on Snap''s two face-worn cameras; the appearance register inverts with price (69g Meta frames "hideously nerdy", 132g Snap frames "look okay"). Same writer and same outlet, so the outlet-level financial-tie gradient is held constant - the design isolates editorial register. Strong confounders ranked first: genre asymmetry (10-day lived review vs 20-minute launch-day hands-on), product-class asymmetry (standalone AR wearable computer vs phone-tethered AI glasses), temporal gap (Oct 2025 vs Sep 2026). Counter-evidence: Bell praised Meta tech strongly; Bell DID flag Snap price and audience doubts; the Meta privacy section is genuinely sourced (policy changes, contractor reviews); hands-on genre boundary (no Bell-authored Meta hands-on exists, bounded absence); #753 Hardawar constancy and #723 Engadget control show same-outlet writers can be constant. EXTENDS mechanisms 113 and 605: fair in the product register, except where the product is a Meta face-worn camera, where the privacy register activates - while Snap''s two-camera face device gets none. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT a falsification-family member; ledger holds at 26; no analysis.json update; NOT artifact-grade.'
+  mechanism_ids: [722]
+  source_urls:
+  - https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
+  - https://www.engadget.com/2260675/snap-specs-hands-on-standalone-ar-glasses-are-here/
+  - https://www.engadget.com/author/karissa-bell/
+  competitor_coverage:
+    type_b_818_karissa_bell_engadget_meta_display_vs_snap_specs_sep17:
+      block_key: 'type_b_818_karissa_bell_engadget_meta_display_vs_snap_specs_sep17'
+      mechanism_id: 722
+      iteration: 818
+      type: B
+      date: '2026-09-17 21:00 PDT'
+      test_file: 'tests/test_type_b_818_karissa_bell_engadget_meta_display_vs_snap_specs_sep17_9pm.py'
+      meta_arm:
+        title: 'Meta Ray-Ban Display review: Chunky frames with impressive abilities'
+        url: https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
+        date: '2025-10'
+        author_byline: 'Karissa Bell (first-person voice + "Karissa Bell for Engadget" photo credits; explicit byline header not surfaced in page render, bounded absence per #503)'
+        read: 'first-hand this run, 224 rendered lines'
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        privacy_register: 'Dedicated "Privacy and safety" section - Meta''s single face camera gets explicit privacy/data-history scrutiny'
+        key_quotes:
+        - 'still a bit conflicted'
+        - 'Chunky statement glasses or hideously nerdy?'
+        - 'The frames are extremely chunky and too wide for my face'
+        - 'I did feel a bit self-conscious at times wearing these in public'
+        - 'An exciting first-gen product, if you can get past the thick frames'
+        - 'I share a lot of these concerns'
+        - 'these devices will inevitably scoop up more of our data over time'
+        - 'use live translation to surreptitiously eavesdrop on a conversation'
+        - 'taking photos is a bit less obvious'
+        - 'significant milestone for smart glasses overall'
+      snap_arm:
+        title: 'Snap Specs Hands On: Standalone AR Glasses Are Here'
+        url: https://www.engadget.com/2260675/snap-specs-hands-on-standalone-ar-glasses-are-here/
+        date: '2026-09-16'
+        author_byline: 'Karissa Bell for Engadget (byline confirmed in page render, 105 lines)'
+        read: 'first-hand this run, 105 rendered lines'
+        tone_MANUAL_ILLUSTRATIVE: 0.30
+        privacy_vocabulary_count: 0
+        key_quotes:
+        - 'The $2,195 glasses are Snap''s biggest AR bet yet'
+        - 'I think there''s a lot to like'
+        - 'Specs are equipped with two cameras, which enable the hand-tracking controls'
+        - 'The hand tracking was intuitive and responsive'
+        - 'Given Specs'' capabilities, I actually think they look okay'
+        - 'far more capable than something like the Meta Ray-Ban Display glasses'
+        - 'almost twice as heavy as Meta''s display-enabled frames, but the weight felt more evenly distributed'
+        - 'fit was surprisingly snug and the glasses never slipped down my nose'
+        - 'add significant cost to an already pricey device'
+        - 'I have some doubts that the current version of Specs will be appealing to anyone but AR enthusiasts'
+      illustrative_delta_meta_minus_snap: -0.40
+      delta_calc: '(-0.10) - (0.30) = -0.40'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones only (article level, n=1/n=1); engine NOT run; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False; no empirical significance claimed or claimable.'
+      no_analysis_json_update: true
+      research_method: 'Journalist selection this run: Ece Yildirim ruled out (studied #808); Victoria Song ruled out (studied #813); Lauren Goode ruled out (studied #436); Julian Chokkattu ruled out (studied #351/#426); Devindra Hardawar ruled out (studied #753); Cherlynn Low ruled out (studied; the Engadget Apple Watch Series 12 Sep 17 2026 review arm is Low''s, not Bell''s - same-outlet but different-writer, not a Bell pair); Scott Stein ruled out (#588); Joanna Stern ruled out (Aug 7 Type B); Brenda Stolyar ruled out (13 corpus hits); Sam Rutherford ruled out (0 corpus hits but no fresh Meta/competitor pair surfaced - per iteration-492 rule no selection-silence claims); Allison Johnson ruled out (0 corpus hits, no fresh pair surfaced). Both arms read first-hand this run (224 + 105 rendered lines). All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed; excerpt-bounded where applied per #503.'
+      confounders_ranked:
+        strong:
+        - 'Genre asymmetry: 10-day lived Meta review vs 20-minute launch-day Snap hands-on. Launch hands-ons are systematically warmer and never carry privacy sections - the strongest mechanical confound.'
+        - 'Product-class asymmetry: standalone AR "wearable computer" (51-deg FOV, dual Snapdragon, two cameras, hand tracking) vs phone-tethered AI glasses (20-deg FOV, single camera). Capability praise is partly domain-justified.'
+        - 'Temporal gap: Oct 2025 vs Sep 2026 (11 months). Privacy discourse evolved in between - but the Meta arm already carried the privacy section, so evolution argues FOR a Snap-arm privacy note, not against it.'
+        moderate:
+        - 'Access asymmetry: Snap HQ guided demo with Snap rep present (company-controlled hands-on) vs independent 10-day Meta review.'
+        - 'Same-writer same-outlet design holds the financial-tie gradient constant (Engadget/Yahoo across both arms) - isolates editorial register from incentive gradient.'
+        weak:
+        - 'Price anchoring: $2,195 vs $799 - price salience could shape framing independent of entity.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Bell praised Meta tech strongly - "impressive", "significant milestone for smart glasses", neural band "more innovative than any wrist-based device I''ve tried".'
+      - 'COUNTEREVIDENCE: Bell DID flag Snap price - "add significant cost to an already pricey device"; "doubts that the current version of Specs will be appealing to anyone but AR enthusiasts".'
+      - 'COUNTEREVIDENCE: The Meta privacy section is genuinely sourced - cites Meta''s privacy-policy changes over the last year and contractor-review history (mechanism 113 territory); not gratuitous.'
+      - 'COUNTEREVIDENCE: Hands-on genre boundary - the proper control (a Bell-authored Meta Display hands-on) does not exist in corpus; bounded absence. Privacy sections are a review-genre device, so genre explains part of the gap.'
+      - 'COUNTEREVIDENCE: #753 Hardawar review constancy and #723 Engadget ambient-listening control show same-outlet writers can be constant across entities.'
+      verdict: 'EXTENDS mechanism 113 and the register-conditioned model 605: within-writer, same-outlet register gradient. The privacy register activates on Meta''s single face camera (dedicated Privacy and safety section) but stays silent on Snap''s two face-worn cameras (0 privacy terms across 105 rendered lines); the appearance register inverts with price - 69g Meta frames "extremely chunky... hideously nerdy" vs 132g (1.91x) Snap Specs "look okay... surprisingly snug". NARROWS the fairness claim further: fair in product register except where the product is a Meta face-worn camera, where the privacy register activates - while Snap''s two-camera face device gets none. Verdict: directionally_supported_not_proven.'
+      falsification_family: 'NOT a falsification-family member (register documentation, not a uniform-prediction test); ledger holds at 26.'
+      cross_refs:
+      - '#113 (karissa_bell_engadget_investigative_methodology_asymmetry - same journalist, pre-launch adversarial testing)'
+      - '#605 (register-conditioned model)'
+      - '#723 (Engadget ambient-listening control)'
+      - '#668'
+      - '#593'
