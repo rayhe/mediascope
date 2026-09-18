@@ -57,7 +57,7 @@ URL_VERIZON = "https://www.verizon.com/about/news/verizon-specs-5g-ar-glasses-bu
 URL_FOURWEEKMBA = "https://fourweekmba.com/ai-snap-specs-intelligence-enterprise-partners/"
 URL_TIMES = "https://www.thetimes.com/business/companies-markets/article/evan-spiegel-specs-augmented-reality-glasses-7bmpm6sgl"
 NEXT_SIBLING = "\nadvance_dual_asset_monetization:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "9af92f51114ed31756a95d944fa82997036552ec"
 
 
 def _read(rel):
