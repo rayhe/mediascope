@@ -51,7 +51,7 @@ NEXT_ID_MARKER = "mechanism" + "_734"
 NEXT_ID_NUMERIC = "mechanism_id: 734"
 EXPECTED_ORDER = [("A", "837"), ("E", "836"), ("D", "835"), ("C", "834"), ("B", "833")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a7313fef9eaf4494b5a822aed2cf22c1cb9d9807"
 
 EXPECTED_URLS = [
     "https://www.wsj.com/tech/ai/anthropic-shifts-planned-ipo-to-november-8874dffc",
