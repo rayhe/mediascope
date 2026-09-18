@@ -64,7 +64,7 @@ NEXT_ID_MARKER = "mechanism" + "_733"
 NEXT_ID_NUMERIC = "mechanism_id: 733"
 EXPECTED_ORDER = [("C", "834"), ("B", "833"), ("A", "832"), ("E", "831"), ("D", "830")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "5a2bad706fea659adebaabcaddda1274f98a1dd0"
 
 EXPECTED_URLS = [
     "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/",
