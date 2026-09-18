@@ -69,7 +69,7 @@ M_ID = 722
 MECH_ID_MARKER = "mechanism" + "_722"
 NEXT_ID_MARKER = "mechanism" + "_723"
 NEXT_ID_NUMERIC = "mechanism_id: 723"
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"  # patched post-commit per #565
+ANCHORED_SHA = "c0d8808"  # main commit, patched post-commit per #565
 BLOCK_KEY = "type_b_818_karissa_bell_engadget_meta_display_vs_snap_specs_sep17"
 
 META_URL = "https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html"
