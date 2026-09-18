@@ -447,5 +447,5 @@ class TestIterationLog823:
     def test_iteration_log_entry_present(self):
         assert "Type B #823" in self._tail()
 
-    def test_iteration_log_entry_carries_mechanism_725(self):
+    def test_iteration_log_entry_carries_mech_id_725(self):
         assert "725" in self._tail()
