@@ -112,7 +112,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "dd7fff5181c625da8b3eb01a77fc1e1a17099b7b"
 
 M721_KEY = "gizmodo_openai_1_2tn_funding_round_null_tie_control_sep17"
 M722_KEY = "type_b_818_karissa_bell_engadget_meta_display_vs_snap_specs_sep17"
