@@ -1499,6 +1499,142 @@ competitor_relationships:
       novelty: 'Zero test_type_a_767 files on disk pre-commit; no "Type A #767" in git log pre-commit; the Coxon WSJ piece URL slug 707b7628 zero-hit repo-wide pre-commit; the "Anthropic Researcher Quits Over" title string zero-hit repo-wide pre-commit; the wsj_anthropic_coxon block key zero-hit repo-wide pre-commit; the 4 corroborating URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 690 pre-commit; zero underscore-form 691 mechanism key strings repo-wide pre-commit (excluding sweep-instrument carriers per #715).'
       no_analysis_json_update: true
       correlation_not_causation: true
+  wsj_anthropic_ipo_shift_claude_hack_register_vs_meta_comparator_sep18_2026:
+      mechanism_id: 733
+      iteration: 837
+      iteration_type: "A"
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'WSJ x Anthropic IPO-Shift + Claude-Hack Register vs WSJ x Meta Comparator (Same-Publication Dual-Payer Inversion)'
+      date: '2026-09-18'
+      publication: Wall Street Journal
+      target_entity: anthropic
+      peer_entity: meta
+      anthropic_arms:
+        - arm: ipo_shift_november
+          title: 'Anthropic Shifts Planned IPO to November'
+          publication: Wall Street Journal
+          date: '2026-09-18'
+          byline: 'Corrie Driebusch, Anissa Gardizy, Kate Clark (sign-off emails in piece)'
+          url: 'https://www.wsj.com/tech/ai/anthropic-shifts-planned-ipo-to-november-8874dffc'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit (slug 8874dffc zero-hit; search index "Last Updated: less than 1 hour ago" at Sep 18 16:00 PDT run time)'
+          register: business_milestone_aspirational_delay_normalized
+          tone_MANUAL_ILLUSTRATIVE: 0.25
+          excerpts_verbatim:
+            - 'Anthropic plans to stage its blockbuster initial public offering in November, later than many investors expected'
+            - 'waiting until November would give the startup time to share third-quarter financials that show a strong competitive position'
+            - 'the decision to aim for a November offering was made before a public warning from a former Anthropic researcher'
+            - 'Investors have expected Anthropic to be valued at around $2 trillion and raise up to $100 billion in the offering, both figures that would top records set by SpaceX''s June debut'
+            - 'Anthropic''s advisers and current investors continue to argue that slowing the pace of development is unlikely to drastically impact its financial prospects, given the revenue that can be made from existing models'
+            - 'Current investors expect the company to reach more than $110 billion in annualized revenue by year-end'
+            - 'At a dinner Anthropic hosted at a San Francisco steakhouse Thursday night, venture capital investors'' chatter turned to Amodei''s safety warning and the news cycle it created. Many of the Silicon Valley firms that have piled into Anthropic said the timing of Amodei''s push for new, industrywide safety standards makes sense and they weren''t concerned it would dilute interest in the IPO'
+          tone_observations:
+            - 'The delay is normalized as strategy, not stumble: the Coxon warning is explicitly back-dated BEFORE the timing decision, quarantining the bad news off the peg.'
+            - 'Record-scale figures ($2T, $100B) are carried as straight investor expectations, not contested; the Amodei safety warning is reframed as investor-confidence-positive (''establishing its position on broader security risks may help protect it if something goes wrong later'').'
+            - 'Investor voices close the piece with the slowdown-is-harmless thesis; no skeptical analyst voice on the raise''s feasibility appears in the excerpt set.'
+        - arm: claude_hack_breaks_into_openai
+          title: 'Hackers Used Anthropic''s Claude to Break Into OpenAI'
+          publication: Wall Street Journal
+          date: '2026-09-18'
+          byline: 'unconfirmed in excerpt set'
+          url: 'https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit (slug b40ba883 zero-hit; search index "Last Updated: less than 1 hour ago" at Sep 18 16:00 PDT run time)'
+          register: accountability_investigative_dual_use_tool
+          tone_MANUAL_ILLUSTRATIVE: -0.25
+          tone_entity_note: 'The -0.25 is the Anthropic-entity reading (Claude as the named attack instrument); the same piece is sympathy-adjacent toward the OpenAI entity (victim register, roughly +0.05). The two entity readings are recorded separately, not averaged.'
+          excerpts_verbatim:
+            - '"We''re just three guys with Claude and Codex subscriptions."'
+            - 'Hacktron''s researchers found a bug in the way that the community-discussion forum Discourse processed certain image files... and they asked it to write code that would exploit this bug in a cyberattack'
+            - 'by the next day, Claude had found a way to exploit the bug. The attack code it produced allowed the researchers to gain access to a Discourse server hosting OpenAI''s discussion forums, where they were able to access users'' authentication tokens'
+            - 'these tokens were valid on ChatGPT, and some of them belonged to OpenAI employees. The tokens could also be used to access OpenAI''s GitHub service'
+            - 'Monorepo... a large software repository of OpenAI''s algorithmic secrets'
+            - 'An Anthropic spokesman declined to comment.'
+          tone_observations:
+            - 'The headline names Anthropic''s Claude as the weapon; the declined-to-comment closer is the standard accountability framing device.'
+            - 'The underlying event is legitimate bug-bounty research (researchers disclosed to OpenAI; OpenAI thanked them and revoked tokens), which bounds the adversarialism: the piece implicates the TOOL, not a company cover-up.'
+            - 'Framing is split-entity: Claude is the attack instrument (accountability toward Anthropic) while OpenAI is the victim (sympathy toward the OpenAI payer).'
+      meta_arms:
+        - arm: glasses_flooding_carried
+          title: 'Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms.'
+          publication: Wall Street Journal
+          date: '2026-07-14'
+          reporter: Meghan Bobrowsky
+          mechanism: 214
+          url: 'https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539'
+          url_status: 'carried from m214 by design - un-rescored, per the #807 comparator-carry pattern'
+          register: investigative_adversarial_privacy_alarm
+          tone_MANUAL_ILLUSTRATIVE: -0.75
+          note: '78-line investigative adversarial treatment; 7 editorial-voice privacy alarm terms (flooding the market, up in arms, privacy lightning rod, ire of privacy advocates, capturing everything you see and hear, constantly capture audio and visuals without notifying, mood-assessment recording); institutional sourcing (ACLU attorney, 70+ orgs, patent filings).'
+        - arm: muse_launch_market_talk
+          title: 'Meta Platforms has unveiled Muse, a personal AI agent'
+          publication: 'Wall Street Journal (Dow Jones Newswires Market Talk roundup)'
+          date: '2026-09-09'
+          url: 'https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-1307ac74'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit'
+          register: constructive_analyst_relay
+          tone_MANUAL_ILLUSTRATIVE: 0.15
+          excerpts_verbatim:
+            - 'Meta Platforms has unveiled Muse, a personal AI agent that aims to let people offload tasks such as booking appointments, filling out forms and monitoring home security camera feeds'
+            - 'Muse may mark the beginning of a substantial product cycle for Meta that isn''t currently priced into the company''s shares, Mizuho analysts say'
+            - 'The analysts found Muse''s user experience to be significantly more consumer-focused than other AI engines'
+            - 'we believe the Muse app is a significant step in that direction'
+            - 'Meta shares are up 4.5%'
+          register_note: 'Desk-product analyst relay (Mizuho note), not newsroom reportage; zero privacy or surveillance vocabulary in the relayed analyst framing.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'anthropic'
+        peer_entity: 'meta'
+        anthropic_arm_tones: [0.25, -0.25]
+        anthropic_arm_avg: 0.00
+        meta_arm_tones: [-0.75, 0.15]
+        meta_arm_avg: -0.30
+        illustrative_delta_anthropic_minus_meta: 0.30
+        direction: 'Anthropic (non-payer, $0 AI licensing) averages 0.30 softer than Meta (payer, up to $50M/yr) in same-publication registers - OPPOSITE the naive payer-softening prediction'
+        wsj_anthropic_sep_arc: 'Sep 10 Coxon news -0.10 (m691) -> Sep 13 Clash expose -0.40 (m682) -> Sep 14 unity consensus +0.15 (m689) -> Sep 18 IPO-shift +0.25 / Claude-hack -0.25 (this run); same-entity nine-day range 0.65'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        ci_95: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: 'NOT artifact-grade'
+        engine: 'NOT run'
+        no_analysis_json_update: true
+      incentive_attribution: 'THIRD inverted-gradient replication on the dual-payer/control axis: m709 (Times x OpenAI statesman +0.25 vs Meta glasses adversarial -0.55 on News Corp DUAL-payer owner) and m730 (Reuters x Anthropic aspirational avg +0.32 vs Meta enforcement avg -0.40 with the Reuters-Meta deal on the META side) both found the gradient running OPPOSITE the naive payer-softening prediction. This run is the same inversion INSIDE one publication: WSJ''s Meta arms average -0.30 while its Anthropic arms average 0.00, even though Meta pays News Corp up to $50M/yr and Anthropic pays $0 in AI licensing. Attribution remains INCONCLUSIVE: register selection dominates entity targeting at WSJ (m682''s -0.40 expose hit the OpenAI payer; m691''s arc spans 0.65 within-entity), and the comparison is temporally asymmetric (Jul 14 Meta hard arm vs Sep 18 Anthropic arms). Correlation is not causation. NOT a falsification-family member.'
+      ledger: 'Ledger holds at 26 (per the #754 convention: latest ledger member present in the profiles corpus, no later member - the block records the count only, never the next-member literal).'
+      confounders:
+        strong:
+          - 'Excerpt-bounded read: WSJ paywalled, no browser.open this run; register judgments rest on search-result excerpts (headlines + excerpt blocks) per the #503 convention. Full text could shift tones in either direction.'
+          - 'Temporal mismatch: the Meta hard arm (m214, Jul 14) is nine weeks older than the Sep-18 Anthropic arms; the comparison mixes a July investigative piece, a Sep 9 desk-product Market Talk blurb, and two Sep 18 full news pieces - three genres across two months.'
+          - 'Entity-framing split in the hack arm: Claude is the named attack instrument (accountability toward Anthropic, -0.25) while OpenAI is the victim (sympathy-adjacent); the Anthropic-entity reading is a choice, not a given, and the piece''s dual-entity structure confounds single-entity tone assignment.'
+        moderate:
+          - 'Carried arm not re-verified: m214 is carried on #807/m715''s authority, un-rescored per the comparator-carry pattern; the -0.75 is an inherited value.'
+          - 'The IPO-delay normalization move is relay-convergent: Reuters ran the same "such changes are not unusual" normalization on Sep 4 (#832/m730); the +0.25 may reflect wire-driven beat consensus, not WSJ-specific softness.'
+          - 'Byline unconfirmed on the hack piece; reporter-level comparisons are unavailable for one of two Anthropic arms.'
+        weak:
+          - 'Bounded absence: no same-week WSJ Meta original surfaced in this run''s 5 query sets (iteration-492 rule) - the Muse Market Talk relay is the freshest same-publication Meta item found, but absence is bounded, not proven.'
+          - 'n=2-per-arm small-sample; no inferential statistics per the Aug 28 2026 standing rule - MANUAL ILLUSTRATIVE only.'
+          - 'The Market Talk Muse item is Dow Jones Newswires desk product, not WSJ newsroom register; treating it as a publication-voice Meta arm is the weakest link.'
+      bounded_absence: 'No same-week (Sep 14-18) WSJ Meta original surfaced across this run''s 5 browser.search query sets; bounded absence per iteration-492, not a proven zero. The Sep 9 Muse Market Talk relay and carried m214 are the freshest same-publication Meta items available.'
+      counter_evidence:
+        - 'm682 (Sep 13): the same paper ran its hardest register of the slowdown arc (-0.40 watchdog enterprise expose) toward the OpenAI PAYER - uniform payer-softening is falsified within News Corp itself.'
+        - 'The hack arm (-0.25) is genuine accountability toward the NON-payer Anthropic on the same day the payer-friendly IPO piece ran - non-payer hardness coexists with non-payer softness in the same 24 hours.'
+        - 'The Muse arm (+0.15) shows WSJ does run constructive Meta registers - the -0.30 Meta average is not uniform hostility; the hard arm is product-peg-specific (smartglasses privacy), not entity-uniform.'
+      relation_to_682: 'Same-arc extension: m682''s Sep 13 watchdog expose (-0.40, dual-lab target) is the week''s hardest register; this run adds the Sep 18 pair (+0.25 IPO-shift, -0.25 Claude-hack), widening the documented WSJ Anthropic nine-day range to 0.65 (-0.40 to +0.25).'
+      relation_to_689: 'Arc contrast: m689''s Sep 14 unity-consensus piece (+0.15) was the week''s softest Anthropic treatment; the Sep 18 IPO-shift arm (+0.25) now holds the soft endpoint of the arc, and it is investor-voice-driven rather than CEO-statesman-driven.'
+      relation_to_691: 'Same-publication predecessor: m691''s Sep 10 Coxon news register (-0.10) is the nearest WSJ x Anthropic comparator in time; this run''s Sep 18 arms show the paper covering Anthropic at both higher (+0.25) and lower (-0.25) registers within 8 days - register selection, not entity targeting, dominates.'
+      relation_to_715: 'Peer-entity baseline: m715 (#807) found WSJ''s OpenAI safety-incident relay at +0.15 vs the same Meta m214 comparator at -0.75 (OpenAI-minus-Meta +0.90). This run''s Anthropic-minus-Meta +0.30 completes the three-AI-lab WSJ gradient against the shared m214 Meta floor.'
+      relation_to_709: 'Cross-publication replication: m709 (Times x OpenAI statesman +0.25 vs Anthropic motive-questioning -0.20 vs Meta glasses -0.55) found the dual-payer contradiction at the News Corp sibling; this run finds the same inversion INSIDE WSJ (Anthropic 0.00 vs Meta -0.30).'
+      relation_to_730: 'Cross-publication replication: m730 (#832, Reuters x Anthropic avg +0.32 vs Meta avg -0.40, Reuters-Meta deal on the Meta side) is the null-tie-wire dual-payer inversion; this run replicates the pattern at WSJ with a smaller illustrative delta (+0.30 vs +0.72) and a heavier temporal confound.'
+      relation_to_214: 'Shared comparator floor: m214 (WSJ x Meta smartglasses -0.75, Jul 14, Bobrowsky) anchors the Meta arm of BOTH m715 (#807, OpenAI) and this run (Anthropic) - the Meta comparator is held constant across the two mechanisms by design.'
+      distinct_from_prior: 'FIRST dedicated mechanism on the Sep 18 2026 WSJ "Anthropic Shifts Planned IPO to November" piece (slug 8874dffc) and the Sep 18 WSJ "Hackers Used Anthropic''s Claude to Break Into OpenAI" piece (slug b40ba883), both zero-hit repo-wide pre-commit; FIRST same-publication WSJ x Anthropic vs WSJ x Meta comparison with fresh Sep 18 arms; FIRST Meta comparator pairing of the carried m214 floor with the Sep 9 Muse Market Talk constructive relay. Prior WSJ x Anthropic mechanisms (m682, m689, m691) used same-week slowdown pegs, not business-milestone/cybersecurity pegs.'
+      financial_context: 'News Corp multi-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, mechanism 519, 28 months senior); Meta leg Mar 2026 (up to $50M/yr, 3yr, mechanism 549 per #834, 6 months senior); Anthropic leg $0 AI licensing (only the HarperCollins Bartz settlement-revenue vector, a different incentive axis - pre-IPO solvency dependence, see the settlement_incentive_mechanism above). The naive prediction (payer Meta softer than non-payer Anthropic) is inverted in the observed arms (Anthropic avg 0.00 vs Meta avg -0.30). The incentive structure predicts nothing cleanly at WSJ: the same week''s -0.40 expose targeted the OpenAI payer (m682). Correlation does not establish causation.'
+      research_method: '5 browser.search query sets this run (The Verge Anthropic this week, since 2026-09-14; The Atlantic Anthropic Amodei essay coverage, since 2026-09-10; Wall Street Journal Meta coverage this week, since 2026-09-14; WSJ French criminal probe smart glasses, since 2026-09-16; Guardian Anthropic IPO November Accenture evaluation, since 2026-09-15) + 0 browser.open attempts (WSJ paywalled; excerpt-bounded per #503). Candidate arms REJECTED: The Verge x Anthropic (no fresh Verge pieces this week - only the Jun 10 Microsoft/Fable-5 relay via Reuters); The Atlantic x Anthropic (no Atlantic-original coverage surfaced); Guardian x Anthropic (no Guardian-original this-week arms surfaced - only WSJ/Reuters relays); Reuters x Anthropic Accenture $2B piece (Sep 18, would duplicate #832''s Reuters publication channel). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_837 files on disk pre-commit; no "Type A #837" in git log pre-commit; the two WSJ URL slugs 8874dffc and b40ba883 zero-hit repo-wide pre-commit; the wsj_anthropic_ipo_shift_claude_hack block-key prefix zero-hit repo-wide pre-commit; the Muse Market Talk URL zero-hit repo-wide pre-commit; max numeric mechanism_id 732 pre-commit; zero underscore-form 733 mechanism key strings repo-wide pre-commit (needles format-built per #715).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   perplexity:
     financial_tie: lawsuit_active
     estimated_value: $0 (litigated, not licensed)
