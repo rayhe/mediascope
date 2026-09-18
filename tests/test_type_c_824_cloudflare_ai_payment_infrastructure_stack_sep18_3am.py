@@ -58,7 +58,7 @@ URL_REGISTER = "https://www.theregister.com/software/2025/07/01/cloudflare-creat
 URL_SEJ = "https://www.searchenginejournal.com/cloudflare-sparks-seo-debate-with-new-ai-crawler-payment-system/550328/"
 URL_TECHSPOT = "https://www.techspot.com/news/108521-cloudflare-tests-pay-crawl-system-charges-ai-firms.html"
 NEXT_SIBLING = "\nadvance_dual_asset_monetization:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "c4be72c9ddc401c8bc9490c98011097933fab437"
 
 
 def _read(rel):
