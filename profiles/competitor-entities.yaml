@@ -20564,6 +20564,91 @@ marketplace_intermediary_landscape:
       date: '2026-09-18 08:00 PDT'
       yaml_parse_clean: true
       ascii_only: true
+  meta_payer_leg_census_and_tracker_audit_sep2026:
+    mechanism_id: 732
+    mechanism_name: 'Meta AI payer-leg census reconciliation and publisher-deal tracker audit (Sep 2026): Press Gazette maps 3 Meta entries vs corpus-documented 13 named counterparties; correction of the stale one-leg corpus claim'
+    iteration: 834
+    iteration_type: 'C'
+    date_analyzed: '2026-09-18'
+    time_pdt: '13:00'
+    job_id: 'mediascope-daily-iteration'
+    goal_id: 'goal_54093bda4145'
+    overview: 'FIRST corpus reconciliation of Meta''s AI-content payer legs against the publisher-deal trackers, CLOSING the 830-834 window (fifth leg D->E->A->B->C). First-hand browser.open read of the Press Gazette Who is suing, who is signing tracker (Sep 18 2026, 1641 rendered lines): the signed-deals index lists exactly three Meta entries - News Corp - Meta (Mar 2026, up to $50M per year), CNN, Fox News, People Inc and more - Meta (Dec 5 2025 bundle, collapsed into one row), Reuters - Meta (Oct 25 2024). CORRECTION: the corpus claim at competitor-entities.yaml mechanism 489 meta_leg_status (Press Gazette Sep 2026 tracker maps only Reuters - Meta on the Meta column) is STALE and is superseded by this read; the tracker maps three Meta entries, not one. The reconciled census of corpus-documented Meta payer legs: (1) Reuters, Oct 25 2024 multiyear AI news licensing (mechanism 633); (2-9) Dec 5 2025 seven-publisher bundle (mechanism 331): CNN, Fox News, Fox Sports, Le Monde Group, People Inc (Dotdash Meredith), The Daily Caller, The Washington Examiner, USA Today plus the USA Today Network of regional newsbrands; (10) News Corp, Mar 2026, up to $50M per year, at least three years, US+UK content for retrieval plus archive training (mechanism 549); (11-13) Mar 2026 European bundle (European publishers mechanism): Le Figaro, Prisa, Sueddeutsche Zeitung. Total: 13 named counterparties plus the USA Today Network regional brands, all ACTIVE per the #599/#609 bounded-absence convention (no exit, renewal, or termination reporting this run). Tracker divergence: Press Gazette maps 3 entries (bundle collapsed into and more, European bundle absent) vs LLM Pulse Sep 2026 which maps 9 named Meta partners (Reuters, News Corp, Le Figaro, Prisa, Suddeutsche Zeitung, CNN, Fox News, USA Today, People Inc; omits Fox Sports, Le Monde Group, The Daily Caller, The Washington Examiner). Implication for financial-incentive mapping: any payer-softening test citing a single tracker as its deal universe undercounts Meta''s payer footprint by 4x to 13x; the reconciled census is the authoritative base. No coverage-tone claim this run; Type A follow-ups flagged.'
+    tracker_read_details:
+      page: 'Press Gazette Who is suing, who is signing (news generative AI deals tracker)'
+      read_date: '2026-09-18'
+      rendered_lines: 1641
+      meta_entries_signed_index:
+      - 'News Corp - Meta (up to $50M per year for Meta to use its content in AI products; Mar 2026)'
+      - 'CNN, Fox News, People Inc and more - Meta (Dec 5 2025 bundle; the detail section names the full list: CNN, Fox News, Fox Sports, Le Monde Group, People Inc, The Daily Caller, The Washington Examiner, USA Today and the USA Today Network of regional newsbrands)'
+      - 'Reuters - Meta (Oct 25 2024 multiyear AI news licensing)'
+      european_bundle_absent: 'The tracker has no Le Figaro, Prisa, or Sueddeutsche Zeitung - Meta entry; the Mar 2026 European bundle (corpus-documented via Meta about.fb.com, ~Mar 13 2026) is missing from the tracker'
+    stale_claim_correction:
+      stale_text: 'Press Gazette Sep 2026 tracker maps only Reuters - Meta on the Meta column'
+      stale_location: 'profiles/competitor-entities.yaml, mechanism 489 meta_leg_status'
+      corrected_text: 'Press Gazette Sep 2026 tracker maps THREE Meta entries (News Corp - Meta; CNN, Fox News, People Inc and more - Meta; Reuters - Meta) per the first-hand Sep 18 2026 read'
+      note: 'The stale claim may have been accurate at an earlier tracker state; the correction is time-stamped to the Sep 18 2026 read. Not a falsification-family event: a source-freshness correction, not a falsified standing corpus prediction.'
+    census:
+      reuters_oct_2024: 'Multiyear AI news licensing, Oct 25 2024, confidential terms, real-time Reuters news into Meta AI (mechanism 633)'
+      dec_2025_bundle: 'Dec 5 2025 seven-publisher bundle (mechanism 331): CNN, Fox News, Fox Sports, Le Monde Group, People Inc, The Daily Caller, The Washington Examiner, USA Today plus the USA Today Network of regional newsbrands; Meta''s first AI content licensing entry; terms undisclosed'
+      newscorp_mar_2026: 'Up to $50M per year, at least three years, WSJ/Barron''s/MarketWatch/NYP/Times of London/Sun US+UK content, retrieval plus archive training (mechanism 549)'
+      european_bundle_mar_2026: 'Le Figaro (France), Prisa (Spain), Sueddeutsche Zeitung (Germany); Meta about.fb.com announcement ~Mar 13 2026; terms confidential (European publishers mechanism)'
+      total_named_counterparties: 13
+      status: 'ALL ACTIVE per the #599/#609 bounded-absence convention (no exit, renewal, or termination reporting surfaced in this run''s query sets)'
+    tracker_divergence:
+      press_gazette: '3 entries; Dec 2025 bundle collapsed into one and more row; European bundle absent'
+      llm_pulse_sep_2026: '9 named Meta partners: Reuters, News Corp, Le Figaro, Prisa, Suddeutsche Zeitung, CNN, Fox News, USA Today, People Inc; omits Fox Sports, Le Monde Group, The Daily Caller, The Washington Examiner'
+      implication: 'Single-tracker universes undercount Meta''s payer footprint 4x to 13x; cite the reconciled census, not one tracker'
+    sue_ledger_additions:
+      editorial_perfil: 'Aug 26 2026: Argentine publisher Editorial Perfil (owns Perfil newspaper, Buenos Aires Times, Noticias and Caras magazines) sued OpenAI and Microsoft in Argentina alleging copyright infringement and unfair competition; believed the first Spanish-language publisher to sue either company; director of digital Agustino Fontevecchia said the suit is planned as the first of several and cited OpenAI''s Prisa (Spain, 2024) and Folha/UOL (Brazil) deals as the agreements Perfil could not obtain. NEW to corpus (zero hits pre-commit). Source: Press Gazette tracker first-hand read this run.'
+      wikihow: 'Aug 22 2026: how-to site Wikihow sued OpenAI alleging crawling and scraping of its content, directly or through intermediary datasets, to train its products; the complaint frames the case as unlicensed taking of a publisher''s written work to build a competing product. NEW to corpus (zero hits pre-commit). Source: Press Gazette tracker first-hand read this run.'
+      corroborating_entries: 'Seattle Times + Newsday v. OpenAI/Microsoft (mechanism 675, Sep 4 2026 filing; no new developments per #744); News Corp vs Brave (news-corp.yaml, Jul 22 2026 countersuit); Reddit v. Anthropic (mechanism 614); CNN vs Perplexity (recent) - all already in corpus, corroborated by the tracker read, no new mechanism'
+    confounders_ranked:
+      - strength: 'STRONG'
+        text: 'The Press Gazette page is a living tracker (this page will be updated when new deals are struck); the three-entry read is time-stamped Sep 18 2026 and may change'
+      - strength: 'STRONG'
+        text: 'Entry-count vs counterparty-count mixing: Press Gazette maps 3 entries but the and more row covers 8 named counterparties, so the entry-count undercount (3 vs 13) overstates the counterparty undercount (11 vs 13)'
+      - strength: 'MODERATE'
+        text: 'The stale one-leg claim may have been accurate at an earlier tracker state; the correction documents a tracker update, not a corpus error at write time'
+      - strength: 'MODERATE'
+        text: 'Meta payer-leg ACTIVE status rests on bounded absence of exit reporting (iteration-492 rule); confidential bilateral deals could lapse unreported'
+      - strength: 'WEAK'
+        text: 'USA Today Network regional brands are uncounted individually, so 13 named counterparties is a floor, not a ceiling'
+    strongest_counterargument: 'The strongest counterargument is that tracker completeness is a data-quality nicety, not a financial-incentive finding: even the reconciled 13-leg census carries only one disclosed quantum (News Corp up to $50M per year); without dollar figures the payer legs cannot be weighted, and the corpus already knows the headline legs (m633, m331, m549). The mechanism''s value is therefore methodological (single-tracker citations are unsafe) and corrective (the stale one-leg claim), not a new money flow.'
+    verdict: 'census_reconciled_correction_issued'
+    falsification_family: 'NOT a member of the falsification family: a tracker audit and source-freshness correction plus two sue-ledger additions; no uniform-prediction test, no coverage-tone pair, no engine; ledger holds at 26'
+    no_analysis_json_update: true
+    artifact_grade: false
+    statistical_discipline:
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    sources:
+      - 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/ (Press Gazette Who is suing, who is signing tracker; FIRST-HAND browser.open read Sep 18 2026, 1641 rendered lines; 3 Meta entries in the signed index; Editorial Perfil and Wikihow suit entries; update line: This page will be updated when new deals are struck)'
+      - 'https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244 (Mar 4 2026, Alexandra Bruell: Meta-News Corp up to $50M per year, at least three years, US+UK content, retrieval plus archive training; Meta completed deals with People Inc., USA Today, CNN and Fox News, terms undisclosed; mechanism 549 primary)'
+      - 'https://techcrunch.com/2025/12/05/meta-signs-commercial-ai-data-agreements-with-publishers-to-offer-real-time-news-on-meta-ai/ (Dec 5 2025: CNN, Fox News, Fox Sports, Le Monde Group, People Inc portfolio, The Daily Caller, The Washington Examiner, USA Today; Meta killed Facebook News tab 2024, stopped compensating publishers 2022; mechanism 331 primary)'
+      - 'https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html (Mar 3 2026, Karissa Bell: News Corp confirmed the Meta deal, terms undisclosed; Thomson woo and a sue quote; Meta previously signed multi-year agreements with USA Today, People, CNN, Fox News)'
+      - 'https://www.editorandpublisher.com/stories/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year,260471 (Mar 2026 corroboration: multiyear pact, up to $50M per year)'
+      - 'https://www.mediaweek.com.au/meta-to-pay-news-corp-up-to-us50m-a-year-for-ai-content (Mar 2026 corroboration: at least three years, US and UK content including archives)'
+      - 'https://www.medianama.com/2026/03/223-meta-ai-content-licensing-deal-news-corp/ (Mar 2026: News Corp OpenAI $250M over five years context; Meta removed Facebook news section Mar 2024 when payment mandates hit; Meta reversal framing)'
+      - 'https://mpost.io/meta-finalizes-ai-licensing-deals-with-major-publishers-to-deliver-real-time-news-in-meta-ai/ (Dec 8 2025, Alisa Davidson: Meta finalized AI licensing agreements with CNN, Fox News, Fox Sports, Le Monde Group, People Inc, The Daily Caller, The Washington Examiner, USA Today plus USA Today Network; NEW URL to corpus this run)'
+      - 'https://www.tradingview.com/news/gurufocus:fea467ea9094b:0-meta-platforms-signs-multiple-ai-content-deals-with-major-news-publishers/ (Dec 2025: Meta secured content licensing agreements with USA Today, People Inc., CNN, Fox News, Washington Examiner, The Daily Caller, Le Monde; terms undisclosed; NEW URL to corpus this run)'
+    research_method: '2 browser.search query sets this run (Meta News Corp AI licensing deal publisher payment 2026, since 2026-01-01 - SELECTED: E&P, piercom, Engadget, WSJ, Mediaweek; Meta People Inc USA Today CNN Fox News AI licensing deals completed, since 2026-01-01 - SELECTED: WSJ, Press Gazette tracker, Engadget, TechCrunch Dec 2025, MediaNama, Metaverse Post, Digiday 2025 timeline, TradingView/gurufocus). 1 browser.open first-hand read (Press Gazette tracker, Sep 18 2026, 1641 rendered lines). Pre-commit novelty greps: zero test_type_c_834 files on disk (glob); no Type C #834 in git log (--grep); max numeric mechanism_id 731 pre-commit; zero underscore-form 732 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention); block key meta_payer_leg_census_and_tracker_audit_sep2026 zero-hit pre-commit; zero Editorial Perfil hits and zero Wikihow hits repo-wide pre-commit; mpost.io/meta-finalizes and tradingview gurufocus:fea467ea9094b zero-hit repo-wide pre-commit; the Press Gazette tracker URL is cited 32 times in competitor-entities.yaml pre-commit (this run''s contribution is the first-hand read and the correction, per the #643 convention). No em dashes; ASCII-only.'
+    novelty: 'First dedicated corpus mechanism reconciling Meta''s AI-content payer legs against the publisher-deal trackers: the Press Gazette tracker maps 3 Meta entries (first-hand read Sep 18 2026) against a corpus-documented census of 13 named counterparties; corrects the stale mechanism-489 one-leg claim; documents the Press Gazette vs LLM Pulse divergence (3 collapsed entries vs 9 named partners); adds the two verified-new sue-ledger legs (Editorial Perfil Aug 26 2026, Wikihow Aug 22 2026). Extends mechanisms 633 (Reuters), 331 (Dec 2025 bundle), 549 (News Corp $50M), and the European bundle mechanism with a reconciliation layer; does not duplicate any of them (none performs a tracker audit or census reconciliation).'
+    verification:
+      iteration: 834
+      type: 'C'
+      date: '2026-09-18 13:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline_note: 'Qualitative Type C mapping - census and tracker audit, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
 advance_dual_asset_monetization:
   overview: 'Advance Publications operates TWO parallel AI content monetization channels
 
