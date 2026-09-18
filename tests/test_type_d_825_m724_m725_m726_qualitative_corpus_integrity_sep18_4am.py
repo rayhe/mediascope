@@ -122,7 +122,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "5baf3ff7d6964fe95d298e03b20667f2be0b7733"
 
 M724_KEY = "nyt_openai_1_5tn_financing_ask_plaintiff_control_sep18"
 M725_KEY = "type_b_823_philip_berne_techradar_samsung_vs_meta_creep_factor_sep18"
