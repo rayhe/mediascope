@@ -34690,6 +34690,6 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Novelty verification: zero test_type_e_816 files pre-commit (glob; this run's file is the only one); no 'Type E #816' in git log pre-commit; max numeric mechanism_id 720 (Type E adds none); ledger holds at 26.
 - Rotation guard: 815-819 window continues D (#815) -> E (#816) -> A -> B -> C (anchor patched post-commit per #565). Ledger holds at 26.
 - New Type E files: tests/test_type_e_816_podcast_sentiment_86th_verification_sep17_7pm.py - 10 classes, 43 tests (33 green pre-commit, anchor 1 + rotation 3 + doc-sync 4 + log 2 deselected pre-commit per #565 convention; patched green in followups).
-- Commit hashes: main commit 5ddcf156f62ad7ab978ca82aa6902c88ba61579b (verified via git rev-parse); anchor followup PENDING (ANCHORED_SHA patched per #565, anchor + rotation guard green post-followup); doc-sync followup PENDING (fills in this line).
+- Commit hashes: main commit 5ddcf156f62ad7ab978ca82aa6902c88ba61579b (verified via git rev-parse); anchor followup 02c616f (ANCHORED_SHA patched per #565, anchor + rotation guard green 4/4 post-patch); doc-sync followup (this commit, full file green 43/43).
 - Doc-sync: README + ARCHITECTURE rows added; Tracked Sources table row in podcast-sentiment.md 85->86; headers re-synced to authoritative counts (.venv pytest --collect-only this run: 41812 tests / 1144 files; delta +43/+1 = the #816 file exactly); count_stats.py --check gate green.
 - Push status (this run): PENDING.
