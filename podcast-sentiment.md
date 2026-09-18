@@ -9,7 +9,7 @@ Tracks how podcasts frame Meta, wearables, AI, and competitors. Complements the 
 | Source | Type | Status | Notes |
 |--------|------|--------|-------|
 | Everyone Hates Elon | **Activist group** (not a podcast) | Active | London-based guerrilla campaign group targeting Meta glasses. Coverage amplified via other podcasts. |
-| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 85 verification cycles through Sep 17 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). |
+| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 86 verification cycles through Sep 17 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). |
 | The Guilty Feminist | **Podcast** (Deborah Frances-White) | Active, 500 numbered episodes (Sep 15 2026) | UK feminist comedy podcast, TOP 0.01% global rank. Tech-relevant episodes cover algorithms, Palantir/surveillance, and gendered tech critique. Numbered-episode 500 watch RESOLVED Mon Sep 14 2026: "Five Hundredth Episode with Kate Cheka and the Palestinian Circus" (58 mins, recorded Aug 22 2026 at Gilded Balloon at the Museum; two-directory corroboration au.radio.net + goloudnow, crawled 4-5h); title/description carry zero Meta/wearables content (snippet-bounded); no tone score asserted (no first-hand read). Numbered-episode 501 not yet indexed as of Sep 17 2026 04:00 PDT (weekly cadence puts next release plausibly near Sep 21). Official-site first-party confirmation carried from #796 (guiltyfeminist.com/new-normal/, crawled 18h at #796). |
 
 ### Secondary Sources (discovered via research)
@@ -13433,3 +13433,64 @@ SIX results observed; ALL previously-logged URL keys, ALL verified in corpus pre
 ### Test file
 
 - tests/test_type_e_811_podcast_sentiment_85th_verification_sep17_2pm.py
+
+## Iteration #816 - Eighty-sixth Cycle (Sep 17 2026, 19:00 PDT)
+
+Type E #816. The eighty-sixth verification cycle is new (the eighty-fifth was #811 at 14:00 PDT Sep 17). This run is the second leg of the 815-819 window (D -> E -> A -> B -> C).
+
+### Guilty Feminist
+
+Episode 500 stands as newest thirty-two hours after #796 (23:00 PDT Sep 16). Official-site corroboration carried from #796 (guiltyfeminist.com/new-normal/, crawled 18h at #796; ~38h elapsed by this run); no fresh browser.open this run, snippet-bounded method per #796. uk-podcasts.co.uk (crawled 14h) still shows 760 episodes / "Latest episode: 2026-09-16", UNCHANGED since #806; still an UNVERIFIED single-directory signal; no episode-501 asserted and no drop is asserted per #503/iteration-492 discipline. Listen Notes re-crawled 6h ago (was 1h at #811): 760 episodes, still lags on the 421 American Election RERELEASED listing as latest episode; stale. listennotes.com/nl/ locale mirror surfaced this run (Last Crawl 224d; pre-existing corpus key): 707 episodes, latest 467 Woof (recorded 20 Jan 2026 via Riverside, released 26 Jan); another stale locale mirror, not an episode. iHeart GF directory page observed this run (crawled 297d; pre-existing key): shown slate 458 Annie Lennox in Conversation at the V&A (Nov 2025) and Emergency Episode Gaza nurse Alaa Al-ghoul (Nov 2025); stale. NEW URL key this run: the episode-500 YouTube upload "500. Five Hundredth episode with Kate Cheka and the Palestinian Circus" (recorded 22 Aug 2026 at Gilded Balloon at the Museum, released 14 Sep; crawled 16h): same episode as the in-corpus official-site listing, YouTube distribution only, zero Meta/wearables content in title/description (snippet-bounded), verified 0 hits repo-wide pre-commit. Other YouTube GF clips observed this run: 491 Dame Tracey Emin in Conversation (crawled 66d), 479 Welsh Election Special part two (crawled 148d); both pre-existing corpus keys; clips not episodes. 473 ROAD TO GILEAD (crawled 143d) bounded absence this run (in corpus; did not surface in the GF query set). No episode 501 detected anywhere this run; weekly cadence puts the next numbered release plausibly near Sep 21. The YouTube Triggernometry clip oVPri0Wr6F0 did not surface this run (bounded absence, not a claim; in corpus since #771). GF-set: 7 keys observed, 6 previously-logged + 1 NEW (the 500 YouTube upload), the 6 known verified in corpus pre-commit. All observed titles/descriptions carry ZERO Meta/wearables content (snippet-bounded).
+
+### Everyone Hates Elon (activist group, not a podcast)
+
+45-day hold continues (Aug 10 -> Sep 17). 7 re-surfaces observed, ALL previously-logged URL keys, ALL verified in corpus pre-commit: thetimes.com meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (53 days, crawled 53d); WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (63 days, crawled 3d; corpus holds lowercase URL; WWW uppercase form logged verbatim as same page per #676 convention); petapixel.com kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (57 days, crawled 1d); latestly.com 7538349.html (50 days, crawled 26d; in corpus since #383/#445/#465); http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/ (65 days, crawled 1h; same content); fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612 (lenticular piece re-surfaced, crawled 4h; in corpus via #465/#536); plus the Times of India 133146816 UK-venue-bans editorial piece re-surfaced (in corpus via #721, crawled 2d; same content as #736-#811: Tim Martin/Wetherspoons ban quote, Lorde Madrid stage attack, "pervert glasses" nickname, Bloomberg Apple-glasses-delay-to-WWDC-2027 note; same canonical key via proxy wrapper, no new key). No new primary campaign motif. Last campaign phase remains the circa Aug 10 Epstein poster. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 86 cycles.
+
+### Attention Sphere
+
+The quoted "Attention Sphere" search returned no matching podcast (eighty-sixth no-match). Results were this repository's own GitHub pages (4 commit URLs with Full-URL mappings; rejected as circular per established discipline, not ingested) and the Andrew Bosworth "Possible" iHeart episode (2025-03-26, crawled 287d; a Meta-CTO wearables-positive interview unrelated to any podcast named Attention Sphere; in corpus). Identity strand unchanged from #596. Task-spec name remains misidentified. Tracked Sources 85->86 cycles through Sep 17 2026.
+
+### Press surfaces
+
+SIX results observed; ALL previously-logged URL keys, ALL verified in corpus pre-commit: https://www.livemint.com/technology/tech-news/meta-ray-ban-smart-glasses-could-store-voice-recordings-by-default-what-it-means-for-users/amp-11746118684276.html (voice-recordings-by-default policy piece, crawled 335d; in corpus); https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/ (Mar 2026 Swedish-newspapers contractor-review lawsuit piece, crawled 2d; in corpus via profiles/wired.yaml + profiles/competitor-coverage-research.yaml); https://bbc.bm/ray-ban-meta-glasses-take-off-but-face-privacy-and-competition-test (host-mirror of the in-corpus Reuters Dec 2025 piece, crawled 282d; in corpus via #721); https://www.livemint.com/news/trends/are-mark-zuckerbergs-meta-ai-smart-glasses-watching-you-privacy-row-fuels-online-fears-puts-spotlight-on-dpdp-act-11772781893202.html (privacy-row trends piece, crawled 190d; in corpus); https://www.forbesindia.com/article/ai-tracker/why-metas-ray-ban-smart-glasses-are-causing-a-privacy-scandal/2991937/1 (privacy-scandal roundup incl. LED-visibility critique, Apr 2025 voice-storage policy, USF filming warning, Feb 2026 facial-recognition-plan report; crawled 163d; in corpus); https://www.androidpolice.com/meta-ai-glasses-privacy-concern/ (Meta AI glasses class-action privacy piece; crawled 16d; 196 days old; in corpus via test_android_police / #606 / #776, NOT new). Recency frontier: TIED at Sep 9 (thirty-seventh consecutive tie after #636 through #811); the petapixel.com Sep 9 piece remains the newest date-verified in-corpus Meta-glasses press item; no advance. GF episode 500's YouTube upload carries zero Meta/wearables content (snippet-bounded), so the frontier is unaffected.
+
+### Standing rules and research method
+
+**Standing rule (Aug 28 2026):** tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False; Type E monitoring-only, no mechanism block in profiles/. No analysis.json update warranted. No claim of empirical significance. 20 of 21 observed keys previously-logged and snippet-bounded (title/description); the 1 NEW key is a distribution URL for the in-corpus episode 500, not new episode content; no tone score asserted without a first-hand read.
+
+**Research method:** 4 browser.search query sets this run (Guilty Feminist latest episode Deborah Frances-White with since=2026-09-17; quoted "Everyone Hates Elon" Meta glasses campaign bus ads with since=2026-09-17; quoted "Attention Sphere" podcast Meta tech wearables, no since filter; Meta Ray-Ban smart glasses privacy news with since=2026-09-17). No browser.open verification attempt this run (snippet-bounded; official-site episode-500 corroboration carried from #796). Pre-commit targeted greps: 21 external URL keys observed (7 GF + 7 EHE + 1 iHeart Boz + 6 press); 20 previously-logged verified in corpus pre-commit (each >=1 hit); 1 NEW key (the episode-500 YouTube upload, verified 0 hits repo-wide pre-commit, ingested as a distribution URL for the in-corpus episode). 4 github.com own-repo URLs rejected as circular per established discipline, not ingested. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; no em dashes; ASCII-only.
+
+**Sources (verbatim from this run's Full-URL listings):**
+- GF set:
+- https://www.listennotes.com/nl/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/ (pre-existing corpus key; NL locale mirror, 707 episodes, latest 467 Woof, Last Crawl 224d; stale)
+- https://www.youtube.com/watch?v=iKXj2w2cp50 (NEW key this run; episode-500 YouTube upload, recorded 22 Aug 2026 at Gilded Balloon at the Museum, released 14 Sep; crawled 16h; same episode as the in-corpus official-site listing)
+- https://www.youtube.com/watch?v=HL3iFdYBk9M (pre-existing corpus key; 491 Dame Tracey Emin clip, crawled 66d)
+- https://uk-podcasts.co.uk/podcast/the-guilty-feminist/deborah-frances-white-on-the-news-meeting (pre-existing corpus key; 760 episodes / Latest episode: 2026-09-16, crawled 14h; UNVERIFIED single-directory signal)
+- https://www.listennotes.com/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/ (pre-existing corpus key; re-crawled 6h, still lags on 421 latest-episode listing)
+- https://www.iheart.com/podcast/263-the-guilty-feminist-27628788/?keyid%5B0%5D=The%20Guilty%20Feminist&keyid%5B1%5D=The%20Guilty%20Feminist%20Culture%20Club%20-%20The%20Hills%20of%20California&sc=podcast_widget (pre-existing corpus key; crawled 297d)
+- https://www.youtube.com/watch?v=DTtg_5J9Fqc (pre-existing corpus key; 479 Welsh Election part-two clip, crawled 148d)
+- EHE set:
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (pre-existing corpus key)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (pre-existing corpus key, lowercase form; WWW uppercase logged verbatim as same page per #676)
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (pre-existing corpus key)
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html (pre-existing corpus key)
+- http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/ (pre-existing corpus key; fresh crawl 1h, same content)
+- https://appwritefunc.yet-another-testing-domain.com/api/grab?url=https://timesofindia.indiatimes.com/technology/tech-news/metas-spy-glasses-face-resistance-in-uk-banned-by-restaurants-pubs-and-theatres-across-the-country/articleshow/133146816.cms (proxy wrapper; canonical key in corpus via #721; fresh crawl 2d, same content)
+- https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612 (pre-existing corpus key)
+- AS set:
+- https://github.com/rayhe/mediascope/commit/3d16eacfc03d35bad9ade4a15403fbcea2fb293c (circular, rejected)
+- https://github.com/rayhe/mediascope/commit/584f331bde53b2f9eafbfed1bbd138546ea8820a (circular, rejected)
+- https://www.iheart.com/podcast/269-possible-110532142/episode/andrew-bosworth-on-ai-wearables-and-271029551/ (unrelated wearables-positive Boz interview; in corpus)
+- https://github.com/rayhe/mediascope/commit/cc60b6e1e7a7d05de2502965a593a4da341e6621 (circular, rejected)
+- https://github.com/rayhe/mediascope/commit/bf45972966060b03a13ff39f5f5c2672a005713c (circular, rejected)
+- Press set:
+- https://www.livemint.com/news/trends/are-mark-zuckerbergs-meta-ai-smart-glasses-watching-you-privacy-row-fuels-online-fears-puts-spotlight-on-dpdp-act-11772781893202.html (pre-existing corpus key)
+- https://www.livemint.com/technology/tech-news/meta-ray-ban-smart-glasses-could-store-voice-recordings-by-default-what-it-means-for-users/amp-11746118684276.html (pre-existing corpus key)
+- https://bbc.bm/ray-ban-meta-glasses-take-off-but-face-privacy-and-competition-test (pre-existing corpus key)
+- https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/ (pre-existing corpus key)
+- https://www.forbesindia.com/article/ai-tracker/why-metas-ray-ban-smart-glasses-are-causing-a-privacy-scandal/2991937/1 (pre-existing corpus key)
+- https://www.androidpolice.com/meta-ai-glasses-privacy-concern/ (pre-existing corpus key; in corpus via test_android_police / #606 / #776; 196 days old, NOT new)
+
+### Test file
+
+- tests/test_type_e_816_podcast_sentiment_86th_verification_sep17_7pm.py
