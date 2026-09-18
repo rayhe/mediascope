@@ -142,7 +142,7 @@ class TestRotationCycleGuard836:
     commit does not exist yet); patched green in the anchor followup.
     """
 
-    ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP_PER_565"  # main commit this run, per #565
+    ANCHORED_SHA = "30b6b2c87a807be438a15f0b2362bf416ffb9ba4"  # main commit this run, per #565
 
     EXPECTED_ORDER = [("E", "836"), ("D", "835"), ("C", "834"), ("B", "833"), ("A", "832")]
     ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
