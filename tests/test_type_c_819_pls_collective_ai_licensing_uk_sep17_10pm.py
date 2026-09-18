@@ -54,7 +54,7 @@ URL_BOOKSELLER = "https://www.thebookseller.com/news/pls-launches-collective-ai-
 URL_PPA = "https://ppa.co.uk/pls-launch-collective-ai-licensing-opportunity"
 URL_ETIH = "https://www.edtechinnovationhub.com/news/pls-launches-collective-licensing-scheme-for-ai-use-of-published-content"
 NEXT_SIBLING = "\n  linc_kk_japan_collective_licensing_sep2026:"
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "8e3a36a1eee42a1235f39a06162e10071a82893d"
 
 
 def _read(rel):
