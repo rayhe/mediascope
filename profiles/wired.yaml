@@ -3808,6 +3808,126 @@ competitor_relationships:
         - factor: 'Meta 70 percent smart glasses market share with 7M sold 2025 naturally attracts more scrutiny'
           strength: strong
       cautious_language: 'Bounded absence per the iteration-492 rule: bounded by search-index visibility, not a corpus-proven zero. Financial correlation does not imply causation. The gap is a selection absence (no standalone WIRED article surfaced in the bounded query sets), not a framing measurement. No claim of editorial control. Illustrative tone scores are synthetic controlled arrays, not empirical corpus significance.'
+  snap:
+    financial_tie: personnel_career_migration
+    partner: Snap Inc. (via Conde Nast CRO)
+    relationship_type: personnel_revenue_link
+    estimated_value: undisclosed
+    direction: receiving_talent
+    description: 'No AI content licensing deal between Conde Nast and Snap on record (bounded absence per the iteration-492 rule). Personnel tie: Conde Nast Chief Revenue Officer Elizabeth Herbst-Brady held senior revenue roles at Snap before joining Conde Nast in Sep 2024 (profiles/wired.yaml known_conflicts cro_career_migration_snap_link, mechanism 208 family). The CRO controls advertising revenue decisions for WIRED. Meta has no equivalent personnel or financial tie to Conde Nast: the Jun 22 2026 CBO France hire (Violaine Gressier, ex-Meta Global Head of Luxury) is a Meta-to-publisher reverse flow, competitive-intelligence export, not a defection. Snap is a direct Meta wearables competitor: Snap Specs consumer launch, $2,195, Sep 16 2026 Los Angeles event.'
+    coverage_prediction: softer
+    snap_specs_sep16_consumer_launch_natural_experiment_resolution:
+      mechanism_id: 727
+      mechanism_name: WIRED x Snap Specs Sep-16 consumer-launch natural-experiment resolution
+      finding_type: publication_level_selection_margin_coverage_test
+      iteration: 827
+      iteration_type: 'A'
+      iteration_time: '2026-09-18 06:00 PT'
+      finding_summary: 'Resolution test of the corpus snap_natural_experiment prediction (profiles/wired.yaml known_conflicts): when Snap launches consumer Spectacles, does WIRED apply equivalent scrutiny as it applies to Meta glasses? The Sep 16 2026 Los Angeles consumer launch (Spiegel keynote, $2,195 standalone AR glasses, 4 cameras, SPECS Intelligence anticipatory AI service, Verizon $10/$20-mo cellular charging case, Salesforce/Nvidia/AWS enterprise partnerships) is the natural experiment, testable in the Sep 16-18 window. Result: NO standalone WIRED piece on the launch surfaced in 5 bounded browser.search query sets (zero verbatim wired.com URLs). Comparator outlets published launch-day hands-on and launch coverage: Engadget (Karissa Bell, who has tested every generation of Snap smart glasses), Toms Guide, Gizmodo (attested via the gamesreviews.com Sep 17 roundup), plus TechCrunch, Reuters, Android Authority, Barrons, 9to5Mac. The Gadget Review Sep 17 piece cites an ecosystem-depth point "per Wired" but the citation is unlinked second-hand and unresolvable to a verbatim wired.com URL in bounded searches, so it corroborates only that WIRED published SOME Specs reporting (likely June AWE-era), not a Sep 16 launch piece. The Meta comparator arm is carried from mechanism 354: WIRED Gear desk published 3+ adversarial Meta glasses articles in the Jun-Jul 2026 window (the Jul 2 2026 subscription extraction piece by Chokkattu/Ashworth with "extracting value" and "monetizing customers" hostile language, "Welcome to the New Era of Consumer Tech" dystopian framing; Meta arm avg -0.62) while publishing 0 standalone Snap Specs pieces at the Jun 16 AWE unveil. The Sep 16 consumer launch extends the selection pattern into a SECOND Snap event window: silence on the $2,195 4-camera competitor launch vs hostile extraction framing on the $799/$379 Meta product. EXTENDS mechanism 354 (inverted price criticism) and mechanism 42 (compound silence). Verdict directionally_supported_not_proven. NOT a falsification-family member: the selection-margin result is directionally consistent with the incentive prediction (softer coverage of the personnel-tied competitor), not a contradiction; ledger holds at 26.'
+      snap_arm:
+        event: Snap Specs consumer launch, Sep 16 2026, Los Angeles (livestream 4 PM PT)
+        price_usd: 2195
+        cameras: 4 (2x RGB front cameras + 2x IR computer vision cameras)
+        announcements:
+        - SPECS Intelligence anticipatory AI service (iPhone/Mac/Specs, Gmail/Calendar connections)
+        - Cellular charging case via Verizon ($10/mo Verizon customers, $20/mo non-Verizon)
+        - Salesforce Agentforce, Nvidia visual-AI, AWS voice assistant enterprise integrations
+        wired_standalone_articles_launch_window: 0 (bounded absence, Sep 16-18 2026)
+        url: NONE_SURFACED_BOUNDED_ABSENCE
+        manual_illustrative_tone: NOT_SCORED (no coverage, no tone; per the #732 statement-of-interest selection convention)
+        comparator_coverage:
+        - outlet: Engadget
+          detail: Karissa Bell hands-on; has tested every generation of Snap smart glasses since the company began the category a decade ago; came away more impressed than expected
+          url: https://gamesreviews.com/news/09/snap-specs-hands-on-2195-standalone-ar-glasses-impress-but-questions-remain/
+        - outlet: TechCrunch
+          detail: Sep 16 launch piece by Lucas Ropek, skeptical register ("tries to make the case again", "cringe-inducing cost", "who is really going to play basketball while wearing heavy goggles")
+          url: https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/
+        - outlet: Reuters
+          detail: Sep 16 enterprise partnerships piece (Salesforce, Nvidia, AWS); frames Specs as workplace device; notes Meta as the dominant Big Tech rival
+          url: https://www.reuters.com/business/snap-targets-enterprises-with-salesforce-nvidia-ai-tools-augmented-reality-2026-09-16/
+        - outlet: 9to5Mac
+          detail: Sep 16 SPECS Intelligence + cellular support piece; preorder with $200 refundable deposit; Westfield Century City LA demos from Oct 1
+          url: https://www.9to5mac.com/2026/09/16/snap-specs-intelligence-cellular-support/
+        - outlet: Barrons
+          detail: Sep 17 stock piece; notes hurdles (high price, four-hour battery life, bulky size); spokesperson acknowledges the glasses are a significant purchase
+          url: https://www.barrons.com/articles/snap-stock-specs-intelligence-ai-assistant-6c781613
+      meta_arm_carried:
+        source_mechanism: 354
+        description: WIRED Gear desk (Chokkattu + Ashworth) Meta glasses register in the Jun-Jul 2026 window
+        meta_arm_avg: -0.62
+        key_piece: 'Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech (Jul 2 2026)'
+        key_language:
+        - extracting value
+        - monetizing customers
+        - Welcome to the New Era of Consumer Tech
+        standalone_meta_articles_same_window: 3
+        standalone_snap_articles_jun16_unveil: 0
+      financial_context:
+        tie: Conde Nast CRO Elizabeth Herbst-Brady, senior revenue roles at Snap pre-Sep 2024
+        meta_tie: none equivalent (Meta-to-publisher reverse flow only, Jun 2026 CBO France)
+        coverage_prediction: softer
+        non_causal_language: Correlation does not establish causation. The personnel relationship is a structural incentive predictor, not proof of editorial control. Does not prove editorial influence.
+        editorial_independence_note: WIRED editorial standards require source verification and balance. No evidence of direct directive linking the CRO career history to coverage selection was reviewed. Financial incentives are correlational, not causal proof.
+      statistical_discipline:
+        scorer: none
+        snap_arm_tone: NOT_SCORED (no coverage, no tone; per the #732 selection convention)
+        meta_arm_tone: MANUAL ILLUSTRATIVE carried from mechanism 354 (not re-scored this run)
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        qualitative_only: true
+        verdict: directionally_supported_not_proven
+        falsification_family: NOT a member - selection-margin test directionally consistent with the incentive prediction; ledger holds at 26
+        artifact_grade: false
+        no_analysis_json_update: true
+        correlation_not_causation: true
+      confounders:
+      - strength: strong
+        factor: Search-engine index lag. The bounded window is ~38 hours post-event (Sep 16 4 PM PT to Sep 18 ~06:00 PDT). WIRED may publish a Specs piece later; a later piece would supersede this bounded absence.
+      - strength: strong
+        factor: The Gadget Review "per Wired" citation shows WIRED published SOME Specs reporting (likely June AWE-era). The bounded absence is launch-event-specific, not a zero-coverage claim about Specs overall.
+      - strength: strong
+        factor: Event access asymmetry. Hands-on launch coverage requires attending the LA event; WIRED Gear staff may not have been invited or present, while Engadget/Toms Guide/Gizmodo were.
+      - strength: moderate
+        factor: WIRED Gear favors hands-on reviews over launch-news relays. Skipping launch-day news in favor of a later review would be a genre choice, not necessarily incentive-driven selection.
+      - strength: moderate
+        factor: 'wired.com visibility in the search index is bounded (the site: operator is unsupported by this engine); a WIRED piece may exist but not surface in bounded queries.'
+      - strength: moderate
+        factor: Editorial bandwidth. The Sep 16-17 news cycle carried the OpenAI $1.5tn financing story and other launches competing for the same desk.
+      - strength: weak
+        factor: Snap embargo strategy may have granted hands-on access to a select outlet list that excluded WIRED.
+      - strength: weak
+        factor: WIRED's Jun-Jul Meta glasses coverage was pegged to Meta news events (subscription pricing announcement), not a standing beat commitment; asymmetric news pegs can produce asymmetric coverage without incentive effects.
+      - strength: weak
+        factor: Crawl timing. Searches ran ~06:00 PDT Sep 18; index crawls of wired.com may lag the event by more than 38 hours.
+      counterevidence:
+      - 'TechCrunch ran a skeptical Sep 16 launch piece ("tries to make the case again", "cringe-inducing cost"): the tech press is not uniformly soft on Snap, so a soft-WIRED read is not a press-wide constant.'
+      - 'Gizmodo roasted the Jun 16 Specs price ("already getting roasted to death", in corpus via the natural-experiment block): adversarial Snap coverage exists at peer outlets.'
+      - 'The Gadget Review "per Wired" citation means WIRED has published Specs analysis a reviewer found worth citing: not total silence on the product line.'
+      - 'Reuters Sep 16 enterprise piece is constructive (partnership framing) but Reuters is a wire service, not WIRED; not a same-publication comparator.'
+      bounded_absences:
+      - 'No verbatim wired.com URL for the Sep 16 launch in 5 bounded query sets (index-lag caveat; not a proven zero per the iteration-492 rule).'
+      - 'No byline attribution for any WIRED Sep 16 Specs piece (none surfaced).'
+      - 'No first-hand read of any WIRED Specs launch piece this run (none surfaced).'
+      - 'No evidence WIRED was invited to or attended the LA launch event.'
+      - 'No AI content licensing deal between Conde Nast and Snap on record (bounded absence, not a proven zero).'
+      research_method: '5 browser.search query sets (WIRED Snap Specs consumer launch review; wired.com Snap Specs story September 2026; WIRED Snap Specs hands-on with byline candidates; "Snap Specs" WIRED "coming soon" tiles developers Lenses; "wired.com" Snap Specs September 16) + 1 browser.open of the gadgetreview.com piece (tool-supplied URL) to resolve the "per Wired" citation (unlinked, second-hand, unresolvable to a verbatim wired.com URL). All 6 source URLs copied verbatim from the Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - https://gamesreviews.com/news/09/snap-specs-hands-on-2195-standalone-ar-glasses-impress-but-questions-remain/
+      - https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/
+      - https://www.reuters.com/business/snap-targets-enterprises-with-salesforce-nvidia-ai-tools-augmented-reality-2026-09-16/
+      - https://www.gadgetreview.com/snaps-specs-are-finally-here-and-the-2195-price-tag-is-asking-a-lot
+      - https://www.9to5mac.com/2026/09/16/snap-specs-intelligence-cellular-support/
+      - https://www.barrons.com/articles/snap-stock-specs-intelligence-ai-assistant-6c781613
+      cross_references:
+      - 354
+      - 42
+      - 208
+      - 362
+      - 732
+      test_file: test_type_a_827_wired_snap_specs_sep16_launch_natural_experiment_sep18_6am.py
 cross_entity_wearables_framing:
   date_analyzed: '2026-08-05'
   summary: 'WIRED''s wearable coverage reveals stark framing asymmetry by manufacturer identity. Camera-equipped wearables from Apple and Snap receive empathetic/playful product coverage from WIRED''s most senior consumer tech correspondent (Lauren Goode), while Meta''s camera glasses receive institutional surveillance/privacy alarm framing from other staffers (Dell Cameron, Dhruv Mehrotra). Same hardware capability (face-mounted cameras), radically different narrative treatment determined by manufacturer identity. The asymmetry is most visible in the HARDWARE COMPARISON: Apple Vision Pro has 12 outward- facing cameras, 5 sensors, and 6 microphones - technically the most surveillance-capable consumer wearable ever sold - yet receives ZERO surveillance/privacy framing from WIRED. Meta Ray-Ban has a single 12MP camera - and receives sustained investigative surveillance framing.
