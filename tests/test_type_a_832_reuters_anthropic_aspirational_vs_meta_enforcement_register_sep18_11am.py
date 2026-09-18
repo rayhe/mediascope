@@ -62,7 +62,7 @@ NEXT_ID_MARKER = "mechanism" + "_731"
 NEXT_ID_NUMERIC = "mechanism_id: 731"
 EXPECTED_ORDER = [("A", "832"), ("E", "831"), ("D", "830"), ("C", "829"), ("B", "828")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "5368a27828914325a67db9dfe9a18c7927651f6a"
 
 EXPECTED_URLS = [
     "https://www.reuters.com/business/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models-2026-09-17/",
@@ -168,7 +168,7 @@ class TestNovelty832:
         # mechanism_id 729, zero underscore-form 730 keys, block key
         # zero-hit, all 5 source URLs zero-hit); this test pins that no
         # duplicate #832 main commit ever appears.
-        mains = _git_log_mains("Type A #832: reuters x anthropic")
+        mains = _git_log_mains("Type A #832: Reuters x Anthropic")
         assert len(mains) == 1, f"exactly one Type A #832 main commit, got {mains}"
         assert ANCHORED_SHA in mains, (
             "patched SHA must match a real Type A #832 main commit"
@@ -206,7 +206,7 @@ class TestRotationCycleGuard832:
     def test_anchor_sha_matches_head(self):
         # Patched to the real main-commit SHA in the anchor followup per the
         # #565 convention; deselected pre-commit at the pytest CLI.
-        mains = _git_log_mains("Type A #832: reuters x anthropic")
+        mains = _git_log_mains("Type A #832: Reuters x Anthropic")
         assert ANCHORED_SHA not in (
             "PATCH_ME_IN_FOLLOWUP",
             "POST_COMMIT_ANCHORED",
