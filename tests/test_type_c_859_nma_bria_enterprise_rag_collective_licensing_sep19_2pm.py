@@ -137,13 +137,17 @@ def _git(*args):
 
 
 def _git_log_mains(qualifier):
-    out = _git("log", "--all", "--format=%H %s", "--grep", qualifier)
+    # --grep searches full commit messages (subject + body), so a body
+    # mention of the qualifier (e.g. the anchor followup explaining its own
+    # qualifier fix) would wrongly match. Filter subjects in Python so only
+    # the real main commit qualifies.
+    out = _git("log", "--all", "--format=%H %s", "--grep", "Type C #859")
     mains = {}
     for line in out.splitlines():
         if not line.strip():
             continue
         sha, _, subject = line.partition(" ")
-        if "Type C #859" in subject:
+        if "Type C #859" in subject and qualifier in subject:
             mains[sha] = subject
     return mains
 
