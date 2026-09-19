@@ -19638,6 +19638,120 @@ jay_peters:
       - '#620 (Ropek Aug 2026 settlement/infrastructure vocabulary bifurcation - same-journalist family)'
       no_analysis_json_update: true
 
+dominic_preston:
+  name: Dominic Preston
+  current_role: News Editor
+  current_publication: The Verge
+  publication_owner: Vox Media
+  beat: consumer tech news (wearables, AI hardware, smart glasses)
+  career_history:
+  - employer: The Verge
+    role: News Editor
+    period: 2025-02 to present
+  - employer: Android Police
+    role: Managing Reviews Editor
+    period: previous
+  smart_glasses_coverage:
+    meta_muse_spark_ai_model_jul09:
+      headline: Meta says its new AI model is ready to compete on coding
+      date: '2026-07-09'
+      tone: straight_news_desk_relay_zero_privacy_vocabulary
+      privacy_vocabulary_present: false
+      carried_mechanism_id: 503
+      carried_mechanism_home: profiles/competitor-coverage-research.yaml
+    meta_luna_camera_free_sep16:
+      headline: Meta is reportedly ready to launch less pervy smart glasses
+      dek: New camera-free frames might avoid the 'pervert glasses' nickname, The Information reports.
+      date: '2026-09-16'
+      tone: stigma_forward_headline_privacy_concession_peg
+      privacy_vocabulary_present: true
+      mechanism_id: 734
+  notes: 'The Verge news editor (Feb 2025-present; ex-Android Police managing reviews editor). Type B #838 (Sep 18 2026): mechanism 734 within-journalist temporal register shift on Meta - FIRST dedicated Type B mechanism on Preston in journalists.yaml (mechanism 503 lives in competitor-coverage-research.yaml; zero dominic_preston YAML key pre-commit, per the #643 convention). Carried Sep-3 arm (Type B #503): Preston applies privacy-PROBLEMS vocabulary to Google/Samsung camera hardware (Jul 22 2026 hands-on dek: "With a camera on every pair, Google''s and Samsung''s AI glasses face the same privacy problems as Meta''s") while his Meta arm runs as straight news-desk relay with ZERO privacy vocabulary (Jul 9 2026 Muse Spark 1.1: "Meta says its new AI model is ready to compete on coding"; mild deficit frame "reentering the AI race"; one controversy note) - an inversion of the naive financial-incentive prediction. NEW Sep-16 arm: "Meta is reportedly ready to launch less pervy smart glasses" (The Verge, Sep 16 2026; byline Dominic Preston, News Editor; canonical URL provenance-recorded; publication 2026-09-16T04:54:46-04:00; WeSearch mirror read this run, 137 rendered lines, first ~120 words of publisher body fair-use-limited; dek "New camera-free frames might avoid the ''pervert glasses'' nickname, The Information reports") - the first Preston-byline Meta piece to carry privacy-STIGMA vocabulary in the headline/dek; MANUAL ILLUSTRATIVE 0.00 (Sep 3 Meta arm) to -0.30 (Sep 16 arm), delta -0.30. REFINES mechanism 503: the inversion was a Sep-3 phenomenon, not a stable journalist property; by Sep 16 the same journalist attaches the "pervert glasses" stigma vocabulary to Meta''s own privacy-concession product. CRITICAL SCOPE BOUND: the stigma vocabulary arrives via the news peg itself (a camera-free hardware report is a privacy-concession story) and via the quoted public nickname, relayed from The Information ("The Information reports" in the dek) - Preston does not independently generate privacy scrutiny of Meta in either arm; the mechanism-503 claim (no independent Preston privacy-scrutiny of Meta) SURVIVES. The shift is headline-framing, not investigative-posture. directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
+  mechanism_ids: [734]
+  competitor_coverage:
+    type_b_838_dominic_preston_verge_meta_sep3_inversion_vs_sep16_luna_stigma_sep18:
+      iteration: 838
+      mechanism_id: 734
+      type: B
+      date: '2026-09-18 17:00 PDT'
+      design: 'FIRST dedicated Type B mechanism on Dominic Preston in journalists.yaml (mechanism 503 lives in competitor-coverage-research.yaml; zero dominic_preston YAML key pre-commit, per the #643 convention). Within-journalist temporal register shift on Meta: carried Sep-3 arms (Type B #503) vs new Sep-16 Luna arm, REFINING mechanism 503 with a temporal scope bound.'
+      journalist:
+        name: Dominic Preston
+        current_publication: The Verge
+        current_role: News Editor
+        publication_owner: Vox Media
+        beat: consumer tech news (wearables, AI hardware, smart glasses)
+      meta_arm_sep03_carried:
+        headline: 'Meta says its new AI model is ready to compete on coding'
+        date: '2026-07-09'
+        carried_from: 'Type B #503 (Sep 3 2026)'
+        author_byline: Dominic Preston
+        publication: the-verge
+        tone_MANUAL_ILLUSTRATIVE: 0.0
+        privacy_vocabulary_present: false
+        register_notes: 'Straight news-desk relay of the Meta company claim ("Meta says... a ''step-change''"); mild deficit frame ("reentering the AI race"); one controversy note (Muse Image / Instagram); ZERO privacy vocabulary - the mechanism-503 inversion arm on the Meta side.'
+        key_quotes:
+        - 'Meta says its new AI model is ready to compete on coding'
+        - 'step-change'
+        - 'reentering the AI race'
+        evidence_tier: 'Carried from Type B #503 corpus verification (search-excerpt-bounded per #503); un-rescored this run per the #807 pattern.'
+      contrast_google_samsung_arm_sep03_carried:
+        headline: 'Samsung''s smart glasses actually look like...'
+        date: '2026-07-22'
+        dek_quote: 'With a camera on every pair, Google''s and Samsung''s AI glasses face the same privacy problems as Meta''s.'
+        register_notes: 'Privacy-PROBLEMS vocabulary lands on Google/Samsung camera hardware, not on Meta - the inversion that mechanism 503 documents and that this run refines with a temporal bound.'
+        carried_from: 'Type B #503 (Sep 3 2026)'
+      meta_arm_sep16_new:
+        headline: 'Meta is reportedly ready to launch less pervy smart glasses'
+        dek: 'New camera-free frames might avoid the ''pervert glasses'' nickname, The Information reports.'
+        date: '2026-09-16'
+        author_byline: Dominic Preston
+        publication: the-verge
+        tone_MANUAL_ILLUSTRATIVE: -0.3
+        privacy_vocabulary_present: true
+        key_quotes:
+        - 'less pervy smart glasses'
+        - 'pervert glasses'
+        - 'New camera-free frames might avoid the ''pervert glasses'' nickname, The Information reports'
+        - 'six microphones for interacting with Meta AI and the Muse AI agent'
+        - 'camera-free design is a response to a privacy crisis where users have used the recording capabilities of existing Meta glasses to harass others'
+        byline_attribution_urls:
+        - 'https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect'
+        - 'https://wesearch.press/s/meta-is-reportedly-ready-to-launch-less-pervy-smart-glasses-c8d219e5'
+        byline_confirmation: 'Byline "by Dominic Preston" and role "News Editor" confirmed via the WeSearch mirror provenance record this run (137 rendered lines; retrieval 2026-09-16T08:58:41.764Z; excerpt first ~120 words of publisher body, fair-use-limited); canonical URL provenance-recorded in the mirror record, not navigated; publication time 2026-09-16T04:54:46-04:00 per the mirror record.'
+        evidence_tier: 'First-hand this run via the WeSearch mirror (fair-use-limited excerpt); theverge.com direct fetch is policy-blocked per the standing rule - NOT first-hand from the publisher; headline/dek/mirror summary are the register evidence, marked second-hand-tier on body claims.'
+        register_notes: 'Privacy-STIGMA vocabulary ("less pervy", "''pervert glasses'' nickname") in the headline/dek on a Meta product story - the first Preston-byline occurrence in the corpus; the dek attributes the underlying report to The Information.'
+      illustrative_delta_sep16_minus_sep03: -0.3
+      delta_calc: '(-0.30) - (0.00) = -0.30'
+      verdict: 'REFINES mechanism 503 (Preston inverted privacy-vocabulary application): the Sep-3 inversion - privacy language lands on Google/Samsung while Meta gets straight relay - was a September-3 phenomenon, not a stable journalist property. By Sep 16 2026 the same journalist attaches the "pervert glasses" stigma vocabulary to Meta''s own privacy-concession product in the headline/dek. CRITICAL SCOPE BOUND: the mechanism-503 claim SURVIVES - Preston generates no independent privacy investigation of Meta in either arm; the stigma vocabulary arrives via the quoted public nickname and The Information''s report, and the news-desk relay posture is constant. The register shift is headline-framing, not investigative-posture. Verdict: directionally_supported_not_proven.'
+      research_method: '10 browser.search query sets this run: 8 in the initial journalist-candidate sweep (Ingraham, Gartenberg, Wes Davis, Mat Smith, Wollman, Parker Hall, Hector, TechCrunch Luna-author) and 2 in the Preston Luna verification phase; 3 browser.open reads (the WeSearch Snap mirror and the WeSearch Luna mirror succeeded; the Gizmodo James Pero read returned empty terminally). Byline confirmed via the WeSearch mirror provenance record. No canonical URLs constructed. Novelty verified pre-commit: zero test_type_b_838 files; no "Type B #838" in git log; max numeric mechanism_id 733; zero assigned underscore-form 734 keys (only the #837 forward marker); block key zero-hit; zero dominic_preston YAML key in careers/journalists.yaml; canonical Luna URL zero-hit repo-wide.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; no significance claimed. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (a mechanism-503 refinement with a temporal scope bound, not a uniform-prediction contradiction); ledger holds at 26.'
+      cross_refs:
+      - '#503 (Dominic Preston inverted privacy vocabulary - refined here with a temporal scope bound)'
+      - '#269 (Ropek editorial routing / vocabulary laundering - parent mechanism family)'
+      - '#828 (Ropek temporal register shift - same within-journalist temporal pattern on Snap)'
+      - '#727 (WIRED x Snap Sep-16 launch natural experiment)'
+      - '#728 (Ropek Sep-16 temporal shift mechanism)'
+      - '#833 (Peters cross-entity - The Verge journalist family)'
+      confounders_ranked:
+        strong:
+        - 'DOMINANT confound: story-subject asymmetry - the Jul 9 arm is an AI-model launch with no natural privacy peg while the Sep 16 arm is a privacy-concession hardware report where the stigma vocabulary arrives with the peg itself; the register partly tracks the news event, not the journalist'
+        - 'News-desk relay posture is CONSTANT across both arms: both relay the primary claim with attribution ("Meta says", "The Information reports"); Preston generates no independent privacy investigation in either arm'
+        moderate:
+        - '"Less pervy" / "pervert glasses" is a QUOTED public nickname in the headline/dek, not Preston''s own editorial coinage - the stigma framing is citational'
+        - 'Temporal distance: two months separate the arms; the Luna leak and the Sep 23-24 Connect event supply a live peg absent in July'
+        weak:
+        - 'Excerpt bounds: the Sep 16 arm is mirror-excerpt-bounded (first ~120 words of publisher body); full-body register could differ'
+        - 'Beat-genre difference: AI-model launch news vs consumer-hardware news carry different Verge desk conventions'
+      counterevidence:
+      - 'COUNTEREVIDENCE: mechanism-503''s core claim SURVIVES - Preston still does not independently generate privacy scrutiny of Meta; the stigma vocabulary arrives via the quoted nickname and The Information''s report, so the Sep 16 arm is headline-framing, not investigative-posture'
+      - 'COUNTEREVIDENCE: the Sep 16 dek attributes the claim ("The Information reports") and the mirror summary notes the camera removal "aims to mitigate backlash" - the piece is concessive about Meta''s responsiveness, not purely adversarial'
+      - 'COUNTEREVIDENCE: #503''s Google/Samsung arm ("face the same privacy problems as Meta''s") remains the only Preston piece applying privacy-PROBLEMS vocabulary as his own editorial voice; the Sep 16 arm''s privacy language is citational, so no true voice-level inversion is documented'
+      - 'COUNTEREVIDENCE: the Sep 16 arm is mirror-excerpt-bounded this run (WeSearch, first ~120 words of publisher body; theverge.com direct fetch is policy-blocked per the standing rule) - a thinner evidence tier than first-hand reads; the register claim rests on headline/dek and mirror summary'
+      - 'COUNTEREVIDENCE: n=1 new arm; a single headline does not establish a stable register property for Preston on Meta - the finding is temporal documentation, not a journalist-level generalization'
+      no_analysis_json_update: true
+
 max_miller:
   name: Max Miller
   current_role: Contributing writer
