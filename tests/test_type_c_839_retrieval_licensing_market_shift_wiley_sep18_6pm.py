@@ -62,7 +62,7 @@ EXPECTED_ORDER = [("C", "839"), ("B", "838"), ("A", "837"), ("E", "836"), ("D", 
 GATE_TESTS = 42889
 GATE_FILES = 1167
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "68159758cf4d2eb5b5d8beb2c69ab5c2a5d25773"
 
 EXPECTED_URLS = [
     "https://www.linkedin.com/pulse/retrieval-licensing-training-ai-deal-structure-nobodys-menon-zpcoc",
