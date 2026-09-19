@@ -2221,6 +2221,104 @@ competitor_relationships:
         - "#609 (first-gen OpenAI publisher renewal cohort, untouched)"
       research_method: "2 browser.search query sets (MIT TR OpenAI Astra; MIT TR Meta Muse) + 2 quoted-domain followups; 1 browser.open first-hand read of the Sep 8 math piece (all 89 lines); all URLs verbatim from Full-URL listings; no canonical URLs constructed. Pre-commit repo greps: zero 1143747 / 1143283 / 1140195 / 1141278 hits repo-wide; zero test_type_a_672 files on disk (glob); no Type A #672 in git log (--grep); max numeric mechanism id repo-wide pre-commit 636. No em dashes; ASCII-only."
       novelty: "First dedicated MIT TR x OpenAI Type A mechanism (zero prior under competitor_relationships.openai in mit-tech-review.yaml; only financial metadata before this run). All four Download/math URLs new to corpus (1143747, 1143283, 1140195, 1141278 verified zero-hit pre-commit); the two Meta Download URLs were in corpus via #619. Distinct from #619 (Anthropic arm, different event window) and #642 (Anthropic arm; this run's EIGHTH divergence pin extends its SEVENTH). TestRotationCycleGuard672 pins the 668-672 window closing E->A (anchor patched post-commit per #565)."
+    mechanism_742_mittr_openai_biology_data_philanthropy_register_vs_meta_ironic_diminishment_sep19_2026:
+      mechanism_id: 742
+      iteration: 852
+      iteration_type: "A"
+      iteration_time: "2026-09-19 07:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "MIT Technology Review x OpenAI (vs Meta)"
+      author: "Kit (with Ray)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      finding: >
+        FIRST dedicated MIT TR x OpenAI philanthropy-peg mechanism, and the
+        first corpus mechanism on Antonio Regalado's Sep 15 2026 piece "AI
+        models need more data about biology, and OpenAI is paying to create
+        it". The register is philanthropy-positive / opportunity-positive:
+        the OpenAI Foundation "paying to create ''high-quality scientific
+        datasets''" under its new Public Data for Health effort; $40M to a
+        UNC Chapel Hill novel-cancer-vaccine data program; $500,000 for
+        Ruxandra Teslo's "biotech's lost archive" idea via 1Day Sooner;
+        support for the OpenAdmet drug-effect prediction competitions;
+        Foundation statement "We expect many remaining breakthroughs in
+        preventing and curing disease to come from pairing the intelligence
+        of new models with more observations of the world - in other words,
+        more data", and Morgan Levine "Everyone is recognizing that data is
+        the biggest bottleneck in successfully applying AI to biology". The
+        piece never juxtaposes "OpenAI pays for biology data" against
+        OpenAI's own training-data posture toward publishers (take without
+        paying), even as MIT TR's own Sep 18 Download relays publisher
+        survival anxiety ("AI means the end of internet search as we've
+        known it", attributed to MIT TR's own prior piece). MIT TR's OpenAI
+        register now spans three pegs in eleven days: philanthropy-positive
+        on biology funding (this mechanism), the accountability-skeptical
+        register on the Sep 8 math-controversy piece (mechanism 637), and the
+        relay register on the Sep 18 Download Claude-hack item (citing FT and
+        WSJ, no original register). The Meta arms carried un-rescored per the
+        #807 pattern from mechanism 619's illustrative set (-0.40, -0.35,
+        -0.55, avg -0.4333: security-failure diminishment,
+        ironic-diminishment, accountability-adversarial). Illustrative delta
+        (OpenAI minus Meta) 0.7833. REPLICATES the m637 peg-follows-register
+        pattern: the same publication assigns its harshest register by news
+        peg, not by entity. EXTENDS the MIT TR x OpenAI family to the
+        philanthropy peg.
+      openai_article:
+        title: "AI models need more data about biology, and OpenAI is paying to create it"
+        journalist: "Antonio Regalado"
+        date: "2026-09-15"
+        url: "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/"
+        register: "philanthropy_positive_opportunity"
+        key_framing: "Foundation 'paying to create high-quality scientific datasets'; $40M UNC Chapel Hill; $500k biotech lost archive; OpenAdmet; 'more observations of the world'; zero juxtaposition with OpenAI's unpaid publisher training-data posture"
+        source_note: "search-excerpt bounded per #503; technologyreview.com direct fetch not attempted this run"
+        manual_illustrative_tone: 0.35
+      meta_articles_carried_un_rescored:
+        - title: "The Meta hack shows there's more to AI security than Mythos"
+          journalist: "Grace Huckins"
+          date: "2026-06-05"
+          url: "https://www.technologyreview.com/2026/06/05/1138452/the-download-ai-hacking-mythos-chatbots-brain-impacts/"
+          register: "security_failure_diminishment"
+          source_note: "carried from mechanism 619 un-rescored per #807"
+          manual_illustrative_tone: -0.40
+        - title: "Meta has an AI for brain typing, but it's stuck in the lab"
+          date: "2025-02-07"
+          url: "https://www.technologyreview.com/2025/02/07/1111292/meta-has-an-ai-for-brain-typing-but-its-stuck-in-the-lab/"
+          register: "ironic_diminishment"
+          source_note: "carried from mechanism 619 un-rescored per #807; timing-skew confounder: 2025 piece"
+          manual_illustrative_tone: -0.35
+        - title: "Three reasons Meta will struggle with community fact-checking"
+          date: "2025-01-29"
+          url: "https://www.technologyreview.com/2025/01/29/1110630/three-reasons-meta-will-struggle-with-community-fact-checking/"
+          register: "accountability_adversarial"
+          source_note: "carried from mechanism 619 un-rescored per #807; timing-skew confounder: 2025 piece"
+          manual_illustrative_tone: -0.55
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance"
+        convention: "target-minus-peer; target = OpenAI arm, peer = Meta arms (carried from m619, un-rescored per #807)"
+        target_scores_MANUAL_ILLUSTRATIVE: [0.35]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.40, -0.35, -0.55]
+        target_avg: 0.35
+        peer_avg: -0.4333
+        delta_manual_illustrative: 0.7833
+        delta_calc: "0.35 - ((-0.40-0.35-0.55)/3) = 0.3500 - (-0.4333) = 0.7833"
+        engine_not_run: "engine NOT run per the Aug 28 2026 standing rule; degenerate n=1 target arm would produce the classic guard anyway"
+        finding_layer: "p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule: engine significance on illustrative arrays is never promoted). Verdict directionally_supported_not_proven; no_analysis_json_update: true; NOT artifact-grade. NOT a falsification-family member (ledger holds at 26). Correlation only, not causation. Hypothesis-generating only."
+      confounders_ranked:
+        strong:
+          - "beat mismatch: Regalado is the health/biology beat; MIT TR's accountability register on OpenAI comes from the O'Donnell/Heaven beats; editorial priors differ by desk, not necessarily by entity"
+          - "search-excerpt bounded evidence (0 browser.open this run per #503 convention); full-text register could differ"
+        moderate:
+          - "the reported action is genuinely positive (foundation grants), so a virtue register is event-driven, not necessarily entity-driven"
+          - "n=1 OpenAI arm, degenerate sample"
+          - "timing skew: carried Meta arms are May-Jun 2026 / Jan-Feb 2025 vs the Sep 15 2026 OpenAI arm"
+        weak:
+          - "OpenAI Foundation vs OpenAI product distinction: philanthropic grants are institutionally framed positively by design"
+      counterevidence:
+        - "MIT TR applied an accountability-skeptical register to OpenAI itself on the Sep 8 math-controversy piece (mechanism 637), so the publication is not uniformly soft on OpenAI"
+        - "the Sep 18 Download relayed the Hacktron Claude-hack against OpenAI neutrally (citing FT and WSJ), showing no register suppression on adversarial OpenAI news"
+      connects_to: [637, 619]
+      research_method: "4 browser.search query sets (The Verge OpenAI agent safety incidents - rejected as primary; WIRED Anthropic Claude hack - no WIRED arm surfaced; The Verge Meta French probe Sep 18 - rejected, no Verge comparator arm; MIT TR OpenAI biology data bid since=2026-09-13 - SELECTED: Regalado Sep 15 piece, verbatim full-URL listing). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_852 files (glob); no Type A #852 in git log; max numeric mechanism_id 741; zero underscore-form 742 keys repo-wide pre-commit (format-built needles per #715); block key zero-hit; the 1144129 URL zero-hit repo-wide. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes."
+      novelty: "First dedicated corpus mechanism on Regalado's Sep 15 2026 OpenAI biology-data piece; first MIT TR x OpenAI philanthropy-peg register mechanism; mechanism_id 742."
   meta:
     financial_tie: "none"
     estimated_value: "$0"
