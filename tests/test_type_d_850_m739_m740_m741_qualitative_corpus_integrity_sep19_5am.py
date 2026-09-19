@@ -150,7 +150,7 @@ TEST_BASENAME = (
 README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "1352e4e85b5636d97fb776b919bb3d9fafe85132"
 
 M739_KEY = "reuters_openai_breakingviews_markets_dismissal_register_vs_meta_enforcement_register_sep19_2026"
 M740_KEY = "type_b_848_sabrina_ortiz_deepview_snap_specs_junket_disclosure_vs_meta_arms_sep19_3am"
