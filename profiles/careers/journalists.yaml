@@ -10649,6 +10649,139 @@ journalists:
     research_method: 'No browser.open this run (wired.com direct fetch policy-blocked per #677). Evidence carried from corpus: both URLs, bylines, dates, and register descriptions verbatim from mechanism 640 (#677, profiles/wired.yaml) and mechanism #431. Tones carried from #677; no new hand-scoring this run. Novelty verified via shell greps pre-commit. No zero-coverage claims per iteration-492 rule. No em dashes; ASCII-only.'
     artifact_readiness: 'No analysis.json update warranted: manual-illustrative journalist-level pin with carried tones; co-byline dilution bounds attribution; no new empirical finding.'
     test_file: tests/test_type_b_678_boone_ashworth_meta_led_fix_vs_google_xr_hands_on_byline_register_sep11_11am.py
+  type_b_853_boone_ashworth_sep2026_snap_specs_launch_register_temporal_replication:
+    mechanism_id: 743
+    date: '2026-09-19'
+    type: 'B'
+    iteration: 853
+    iteration_type: 'B'
+    iteration_time: 2026-09-19 08:00 PDT
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    block_key: type_b_853_boone_ashworth_sep2026_snap_specs_launch_register_temporal_replication
+    journalist: Boone Ashworth
+    publication: WIRED (Conde Nast)
+    publication_owner: Conde Nast (Advance Publications)
+    author: Kit (with Ray)
+    finding: 'Within-journalist temporal replication on the Ashworth Snap-pricing register, plus a bounded search-gap correction to mechanism 727. WIRED Gear-desk writer Boone Ashworth published a launch-day Snap Specs piece Sep 16 2026 7:40 pm, the first dedicated corpus evidence of a standalone WIRED piece on the Sep 16 consumer launch. Title/dek register: price-skeptical (Expensive headline adjective, chunky pricey dek, Snap thinks attribution distancing), product-forward on features. This hardens his Jun 16 2026 Snap register (+0.12 aspirational availability) to -0.15, an illustrative within-journalist delta of -0.27 on Snap, narrowing the m442 pricing-inversion gap vs his Meta subscription arm (-0.48) from 0.60 to 0.33 while the surveillance-register gap (m89 Meta-substance arm, m163 finding) is untouched: zero privacy vocabulary on Snap persists. Cross-journalist replication of the Sep-16 hardening: the Ropek temporal refinement (TechCrunch, m269 family) documented the same launch-window hardening; Ashworth at WIRED now shows the parallel pattern. SCOPE CORRECTION: mechanism 727 claimed no standalone WIRED piece on the Sep 16 launch surfaced; a launch-day WIRED piece existed and was a bounded search-coverage miss. 727''s selection-silence verdict now carries an explicit search-gap caveat (bounded absence of evidence is not evidence of non-publication). The correction is scoped to the launch-day presence claim only; the zero standalone WIRED privacy investigations of Snap Specs finding (m163) stands.'
+    new_snap_arm:
+      title: "Here's What Snap's Expensive Specs Can Actually Do"
+      url: https://technewstube.com/wired/1868078/snaps-expensive-specs-can-actually-do/
+      publisher_attribution: 'WIRED (publisher attribution verbatim from the TechNewsTube WIRED feed item; WIRED canonical URL not surfaced in bounded searches this run)'
+      date: '2026-09-16'
+      time: '7:40 pm'
+      byline: Boone Ashworth (sole)
+      role: 'Staff Writer, WIRED Gear desk'
+      evidence_tier: 'EXCERPT-TIER: WIRED paywalled; full text NOT first-hand reviewed this run. Register scored on title and dek only, attested via the WIRED-sourced TechNewsTube feed item and two NewsLocker WIRED-index reprints. Title/dek-level register only; full-text register could differ (STRONG confound).'
+      title_verbatim: "Here's What Snap's Expensive Specs Can Actually Do"
+      dek_verbatim: 'Snap thinks its chunky, pricey smart glasses are the future of human computing, powered by a new AI app and features that do everything from translating languages to improving your golf swing.'
+      register_markers:
+      - 'Expensive as the headline''s lead adjective (price foregrounded as the obstacle)'
+      - 'chunky, pricey deflationary adjectives in the dek'
+      - 'Snap thinks attribution distancing on the future-of-human-computing claim'
+      - 'product-forward feature relay (translating languages, improving your golf swing)'
+      tone_illustrative: -0.15
+      tone_basis: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; new hand-score this run on title/dek evidence; anchored against the corpus Meta LED-fix reactive register (-0.15, mechanism 640/641) for calibration'
+    carried_snap_jun16_arm:
+      note: 'Carried un-rescored from mechanism 442 (Type B, profiles/wired.yaml boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_442) per the #807 pattern.'
+      title: "You Can Finally Buy Snap's New AR Specs for $2,195"
+      url: https://www.wired.com/story/you-can-finally-buy-snaps-new-ar-specs-for-2195/
+      date: '2026-06-16'
+      byline: Boone Ashworth (sole)
+      framing: neutral_product_announcement_aspirational_availability
+      tone_illustrative: 0.12
+      tone_provenance: 'carried from mechanism 442; no new hand-scoring this run'
+    carried_meta_arms:
+      note: 'Carried un-rescored per the #807 pattern.'
+      arms:
+      - title: 'Meta Is Charging a Subscription for Smart Glasses Features - Welcome to the New Era of Consumer Tech'
+        url: https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/
+        date: '2026-07-02'
+        byline: 'Julian Chokkattu + Boone Ashworth (co-byline)'
+        framing: adversarial_price_extraction_deficit
+        language_markers: 'extracting value / monetizing customers / scare quotes on expanded access / subscription for on-device features'
+        tone_illustrative: -0.48
+        tone_provenance: 'carried from mechanism 442; no new hand-scoring this run'
+      - title: "Is It Possible to Make Smart Glasses That Aren't Creepy?"
+        date: '2026-08-02'
+        byline: Boone Ashworth
+        framing: 'category-universal headline, overwhelmingly Meta-specific substance (mechanism 89, competitor-coverage-research.yaml ashworth_category_headline_meta_substance; tone_scores include the Meta arm at -0.85 with positive non-Meta arms)'
+        tone_provenance: 'carried from mechanism 89; no new hand-scoring this run'
+      - title: 'Meta Ray-Ban Display Second LED Fix'
+        url: https://www.wired.com/story/meta-ray-ban-display-second-led-fix/
+        date: '2026-08-27'
+        byline: Boone Ashworth (sole)
+        register: 'reactive closes loophole'
+        tone_illustrative: -0.15
+        tone_provenance: 'carried from mechanism 640/641; no new hand-scoring this run'
+    temporal_refinement:
+    - 'Within-journalist Snap-register hardening: Jun 16 +0.12 (aspirational availability) -> Sep 16 -0.15 (price-skeptical headline/dek). Illustrative delta -0.27. Same journalist, same publication, same product, three months apart. The Ropek m269-refinement hardening at TechCrunch documented the same Sep-16 direction, so this is a cross-journalist replication of the launch-window hardening pattern.'
+    - 'Pricing-inversion gap narrows but persists: mechanism 442 Meta subscription arm (-0.48) vs Sep-16 Snap arm (-0.15) illustrative gap 0.33, down from 0.60 in June. Meta remains the extraction-framed entity; Snap price criticism stays milder and never reaches the monetizing-customers register.'
+    - 'Surveillance-vocabulary asymmetry untouched: the Sep-16 launch piece carries zero privacy vocabulary on 4-camera standalone AR glasses, consistent with the m163 finding of zero standalone WIRED privacy investigations of Snap Specs. The hardening is price-register only, not privacy-register.'
+    m727_scope_correction:
+    - 'Mechanism 727 (profiles/wired.yaml, Type A #827) claimed no standalone WIRED piece on the Sep 16 Snap launch surfaced in 5 bounded browser.search query sets. This run attests one: WIRED published Ashworth''s launch-day piece Sep 16 2026 7:40 pm (TechNewsTube WIRED feed attestation, WIRED publisher attribution verbatim). The 727 finding was a search-coverage artifact, not a publication absence. A search_gap_correction_2026_09_19 caveat was appended to the 727 block this run: bounded absence of evidence is not evidence of non-publication.'
+    - 'Scoped correction only: it does not collapse the broader WIRED selection-silence findings (m163 zero privacy investigations; m354 Jun-Jul selection). It narrows one claim (launch-day presence) that the new evidence directly contradicts.'
+    asymmetry_scorer_result:
+      target_entity: snap
+      reference_entity: meta
+      target_tones_manual_illustrative:
+      - -0.15
+      reference_tones_manual_illustrative:
+      - -0.48
+      target_avg: -0.15
+      reference_avg: -0.48
+      illustrative_delta_snap_minus_meta: 0.33
+      delta_calc: '-0.15 - (-0.48) = 0.33'
+      within_journalist_temporal_delta_snap_jun_to_sep: -0.27
+      temporal_delta_calc: '-0.15 - 0.12 = -0.27'
+      interpretation: 'Snap remains softer than Meta in Ashworth''s register (0.33 gap), but the gap narrowed from 0.60 in June; the new finding is the within-journalist Sep-16 hardening (-0.27), not the level'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      engine: 'engine NOT run'
+      artifact_grade: 'NOT artifact-grade'
+      method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; new Snap arm hand-scored on title/dek; Meta and Jun-16 arms carried un-rescored per #807'
+      statistical_contract: degenerate_n1_per_arm
+      limitations: 'n=1 scored item per arm (degenerate statistical contract per the #638/#643 convention); new-arm evidence is excerpt-tier (title/dek only, WIRED paywall); tones carried not re-scored; no engine run'
+    financial_context: 'Correlation, not causation. Conde Nast holds paid AI licensing from OpenAI and Amazon (Reuters Aug 2024 terms undisclosed); Meta holds $0 disclosed licensing. The named financial ties predict against a Snap-soft/Meta-hard direction being payer-driven. The observed Sep-16 hardening is launch-window register behavior consistent across two journalists (Ashworth, Ropek) and two outlets (WIRED, TechCrunch), which points to event-driven register, not payer-driven uniform softening. Nothing here proves editorial influence.'
+    confounders:
+    - '[STRONG] Excerpt-tier evidence: title/dek only; the full WIRED text was not first-hand reviewed (paywall). The full-text register could differ; this is the leading bound on the new arm.'
+    - '[STRONG] Story-type difference: the Jun-16 piece was an availability announcement (aspirational by genre default); the Sep-16 piece is a launch-day features piece (price critique is genre-normal). Register may follow story type, not entity animus.'
+    - '[STRONG] Ambient market consensus: by Sep 16 the $2,195 price had drawn skepticism across the press (TechCrunch, Reuters, gadget press); the hardening may reflect ambient consensus, not a journalist-level shift.'
+    - '[MODERATE] n=1 per arm is thin for a journalist-level claim: directional, not dispositive.'
+    - '[MODERATE] Honest value journalism: $2,195 is objectively premium, so Expensive/pricey may be consumer-value critique rather than entity-driven framing.'
+    - '[WEAK] Deadline noise: the 7:40 pm launch-day piece was written under same-day deadline; register noise possible.'
+    - '[WEAK] Mirror-attribution risk: WIRED publisher attribution is feed-sourced (TechNewsTube), not first-hand verified on wired.com this run.'
+    counterevidence:
+    - 'The Sep-16 piece is product-forward at its core: feature relay (translating languages, improving your golf swing) and the future-of-human-computing ambition, even if company-attributed. It is not an adversarial piece.'
+    - 'The hardening is price-register only: zero surveillance vocabulary on 4-camera standalone AR glasses persists, keeping the privacy-register asymmetry (m163, m89 Meta-substance arm at -0.85) intact.'
+    - 'The m727 correction cuts both ways: WIRED showed up on launch day, which is more coverage than the silence the corpus had recorded - the selection claim softens at journalist level.'
+    - 'Ropek''s Sep-16 TechCrunch piece was harsher (explicit tough-sell register); Ashworth''s piece remains the milder of the two hardening arms, so the hardening is relative, not absolute.'
+    cross_references:
+    - 45
+    - 70
+    - 89
+    - 385
+    - 431
+    - 442
+    - 640
+    - 641
+    - 727
+    connects_to:
+    - 442
+    - 727
+    extends: 'TEMPORAL REFINEMENT of mechanism 442 (Ashworth pricing-register family): first within-journalist Sep-16 hardening pin on the Snap arm, plus a bounded search-gap correction to mechanism 727''s launch-day presence claim. Distinct from mechanism 727 (publication-level selection margin) and from the m269 Ropek refinement (different journalist, different outlet, same launch-window direction).'
+    verdict: 'directionally_supported_not_proven'
+    correlation_note: 'Correlation is not causation. The Sep-16 hardening replicates across two journalists and two outlets, which is consistent with event-driven register; it does not establish entity-driven editorial policy. Hypothesis-generating only.'
+    no_analysis_json_update: true
+    is_significant: false
+    falsification_family: 'NOT a falsification-family member: the finding is a temporal replication plus a scope correction on an existing claim. Falsification ledger holds at 26 (TWENTY-SIXTH present, TWENTY-SEVENTH absent in profiles/).'
+    novelty: 'FIRST corpus evidence of Ashworth''s Sep 16 2026 7:40 pm WIRED Snap Specs launch-day piece (zero repo-wide hits pre-commit on the headline string, the TechNewsTube mirror URL, and sep-16 ashworth sweeps; max numeric mechanism_id 742 pre-commit, 743 post-commit; zero underscore-form 744 keys post-commit; block key zero-hit pre-commit). Distinct from mechanism 727 (publication-level selection-margin test) and mechanism 442 (Jun-Jul pricing inversion); extends the Ashworth pricing-register family to the Sep-16 launch window.'
+    research_method: '3 browser.search query sets this run (Ashworth WIRED Sep-16 Snap byline; Goode WIRED Sep-16 Snap; Sep-16 launch natural-experiment cross-check) + 0 browser.open (excerpt-bounded per #503; WIRED paywalled). Corpus greps: zero headline/mirror-URL hits repo-wide pre-commit; max numeric mechanism_id 742 pre-commit. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+    artifact_readiness: 'No analysis.json update warranted: manual-illustrative journalist-level pin with carried comparator tones; excerpt-tier new arm; no empirical significance.'
+    test_file: tests/test_type_b_853_boone_ashworth_sep2026_snap_specs_launch_register_temporal_replication.py
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
   career:
