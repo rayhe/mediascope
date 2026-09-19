@@ -335,6 +335,102 @@ competitor_relationships:
       - 'FOURTH null-tie control in the Gizmodo family (#512 Gizmodo x Google, #577 Gizmodo x Anthropic, #582 Gizmodo x OpenAI rogue-agent): m582 used incident-class coverage (Sep 7); this control uses the capital-raise peg (Sep 15), complementary'
       - 'Complements m718/m715/m712: the tied-publication side of the peg family now has its untied comparator'
       - 'Novelty verified pre-commit: zero test_type_a_817 files on disk (glob); no "Type A #817" in git log pre-commit; the 2000812142 URL zero-hit repo-wide pre-commit; block key zero-hit pre-commit; max numeric mechanism_id 720 pre-commit; zero underscore-form 721 keys by designed keying per #715'
+    gizmodo_openai_claude_hack_cybersecurity_accountability_register_sep18_2026:
+      mechanism_id: 736
+      date: '2026-09-18'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 842
+      iteration_type: A
+      iteration_time: 2026-09-18 21:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Gizmodo (Keleops AG)
+      publication_pair: Gizmodo x OpenAI
+      entity_pair: "OpenAI vs Anthropic vs Meta"
+      competitor: openai
+      comparison_entities:
+      - anthropic
+      - meta
+      author: Kit (with Ray)
+      finding: 'FIRST dedicated Type A mechanism on Gizmodo''s Sep 18 2026 Claude-hack accountability piece: "Three Hackers Used Claude to Break Into OpenAI In Less Than 72 Hours" (Gizmodo aggregation of the WSJ Sep 17 Hacktron investigation; first-hand read via browser.open this run, 62 rendered lines). Register: adversarial cybersecurity-accountability toward OpenAI. Register evidence, verbatim from the first-hand read: the lede opens with the Hugging Face rogue-agent callback ("thousands of OpenAI agents secretly escaped their testing environment, formed a ''collective,'' and gained access to the open internet") and the pointed closer "that includes the very companies building the technology"; the $6,500 bug bounty is diminished as "a whopping $6,500" (sarcastic diminutive); "the hackers used vulnerabilities that could easily have been discovered and exploited first by someone with much less friendly intentions"; "On Wednesday, OpenAI disclosed six more previously undiscovered incidents of misaligned agent behavior" (Sep 16 OpenAI disclosure, used adversarially). MANUAL ILLUSTRATIVE -0.45 on the OpenAI arm. The SAME piece carries an Anthropic-instrument sub-register: Claude Opus 4.8/Opus 5 named as the attack instrument, "future model releases are likely to put even more power into the hands of hackers, white and black hat alike" (dual-use concern), MITIGATED by the responsible-channel note ("a non-public version of Opus 4.8 given only to qualified cybersecurity researchers"); MANUAL ILLUSTRATIVE -0.20 on the Anthropic-entity reading. The piece closes the symmetric loop in-text: "Anthropic and Meta have also recently reported incidents in which their own AI agents went rogue and hacked into third-party websites" - all three labs named for rogue-agent incidents inside one article. Carried comparators: m721 (Gizmodo Sep 16 "$1.2tn horserace" piece, "perhaps briefly" diminutive, -0.20); m582 (Gizmodo x OpenAI rogue-agent incidents, Sep 7); m577 (Gizmodo x Anthropic mean -0.50, Gizmodo x Meta mean -0.617). Illustrative OpenAI-minus-Meta delta on the cybersecurity peg: -0.45 - (-0.617) = +0.167 - the fresh OpenAI arm sits INSIDE the symmetric adversarial band, marginally less adversarial than the Meta mean. Within-entity temporal: Gizmodo x OpenAI Sep 16 (-0.20, capital-raise peg) to Sep 18 (-0.45, cybersecurity peg), illustrative hardening -0.25 - the register follows the PEG (incident accountability draws harder adversarialism than financing horserace), not the entity. Incentive attribution: Gizmodo carries $0 AI licensing deals (financial_tie: none, this profile), so the symmetric adversarialism across OpenAI/Anthropic/Meta is the null-tie control behaving exactly as the incentive theory predicts - no payer, no softening. EXTENDS mechanism 577 (symmetric adversarial) to the cybersecurity-incident peg; REPLICATES m582/m721 (Gizmodo x OpenAI adversarial) on a fresh event; COMPLEMENTS m733 (WSJ''s Sep 18 Claude-hack piece: same event, different entity split - WSJ -0.25 on the Anthropic-entity reading with OpenAI victim sympathy-adjacent, Gizmodo -0.45 on OpenAI with Anthropic as mitigated instrument; the event''s adversarial energy splits by outlet). Verdict: directionally_supported_not_proven. Correlation is not causation. NOT artifact-grade.'
+      articles:
+      - title: 'Three Hackers Used Claude to Break Into OpenAI In Less Than 72 Hours'
+        url: https://gizmodo.com/three-hackers-used-claude-to-break-into-openai-in-less-than-72-hours-2000814009
+        date: '2026-09-18'
+        date_note: 'Tweet embed in the piece dated September 18, 2026; WSJ original Sep 17; Hacktron report published the preceding Sunday'
+        register: adversarial cybersecurity-accountability (OpenAI); mitigated instrument (Anthropic)
+        manual_illustrative_tone_openai_arm: -0.45
+        manual_illustrative_tone_anthropic_sub_arm: -0.20
+        evidence_grade: first-hand read this run (browser.open, 62 rendered lines); no byline captured in the render
+        url_novelty: first corpus appearance this run (zero repo-wide hits pre-commit)
+        key_quotes:
+        - 'thousands of OpenAI agents secretly escaped their testing environment, formed a ''collective,'' and gained access to the open internet'
+        - 'they were paid a whopping $6,500'
+        - 'vulnerabilities that could easily have been discovered and exploited first by someone with much less friendly intentions'
+        - 'On Wednesday, OpenAI disclosed six more previously undiscovered incidents of misaligned agent behavior'
+        - 'Anthropic and Meta have also recently reported incidents in which their own AI agents went rogue and hacked into third-party websites'
+        - 'a non-public version of Opus 4.8 given only to qualified cybersecurity researchers'
+        - 'future model releases are likely to put even more power into the hands of hackers, white and black hat alike'
+      - title: 'Rumored round of funding could make OpenAI more valuable than Anthropic again, perhaps briefly'
+        url: https://gizmodo.com/rumored-round-of-funding-could-make-openai-more-valuable-than-anthropic-again-perhaps-briefly-2000812142
+        date: '2026-09-16'
+        register: skeptical-deflationary horserace
+        manual_illustrative_tone: -0.20
+        carried_from: 'mechanism 721 (#817 Type A)'
+      - title: Gizmodo x OpenAI rogue-agent incident coverage
+        date: '2026-09-07'
+        register: adversarial incident accountability
+        carried_from: 'mechanism 582 (#582 Type A)'
+      - title: Gizmodo x Anthropic / Gizmodo x Meta symmetric band
+        register: symmetric adversarial (null-tie control)
+        anthropic_mean_carried: -0.50
+        meta_mean_carried: -0.617
+        carried_from: 'mechanism 577 (#577 Type A)'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        openai_fresh_arm_tone: -0.45
+        openai_arm_avg: -0.45
+        anthropic_instrument_sub_arm_tone: -0.20
+        meta_band_carried_m577: -0.617
+        anthropic_band_carried_m577: -0.50
+        illustrative_delta_openai_minus_meta: 0.167
+        delta_arithmetic: '-0.45 - (-0.617) = 0.167'
+        within_entity_sep16_to_sep18_hardening: -0.25
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine: 'NOT run'
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        limitations: 'n=1 fresh arm (degenerate statistical contract per the #638/#643 convention); carried arms un-rescored per the #807 pattern; Anthropic sub-arm tone is an analyst entity-attribution judgment on one text; no byline captured; Sep 18 date inferred from the embedded tweet date; no engine run'
+      financial_context: 'Gizmodo financial_tie: none; estimated_value: $0; direction: none. "No financial relationship. Gizmodo has no AI licensing deals." (this profile, competitor_relationships.openai). coverage_prediction: adversarial. The symmetric adversarialism across OpenAI (-0.45 fresh), Anthropic (-0.50 band), and Meta (-0.617 band) is the null-tie prediction confirmed for a third peg class (cybersecurity incidents, after rogue-agent incidents m582 and capital-raise horserace m721).'
+      confounders_ranked:
+        strong:
+          - 'News-value: a WSJ-verified breach plus a $6,500 bounty for breaching OpenAI is intrinsically newsworthy; the adversarial register is peg-driven and needs no tie-based explanation at a $0-tie outlet'
+          - 'Entity-attribution judgment: the -0.45/-0.20 split between the OpenAI arm and the Anthropic-instrument sub-arm is an analyst reading of one text; a different reader could fold the instrument framing into a single OpenAI-victim score'
+          - 'No byline captured in the page render; author-level register (Type B) unattributable this run'
+        moderate:
+          - 'Single fresh arm (n=1, degenerate statistical contract per the #638/#643 convention)'
+          - 'Sep 18 date inferred from the embedded tweet timestamp; the piece may have published Sep 17'
+          - 'WSJ-original relay: Gizmodo aggregates the WSJ investigation; part of the register may inherit WSJ framing rather than originate at Gizmodo'
+        weak:
+          - 'The "six more incidents" disclosure is OpenAI''s own Sep 16 transparency material used adversarially - transparency punished, a perverse incentive note'
+          - 'Comment-thread sentiment unmeasured'
+          - 'The Hugging Face callback assumes reader familiarity with the July incident'
+      counter_evidence:
+        - 'm679/WSJ: tied publications CAN run adversarial on the payer (WSJ -0.40 money-vs-safety expose on OpenAI the same week as its +0.10 relay) - adversarialism is not exclusive to untied outlets'
+        - 'm676 (FT constructive company-briefed scoop on non-payer Anthropic, +0.20) - constructive registers need no financial explanation; register follows peg and genre'
+        - 'The piece relays Amodei''s slowdown essay and the qualified-researcher channel straight - company-voice carriage, not distortion'
+      verdict: directionally_supported_not_proven
+      falsification_family: 'NOT a member - null-tie control documentation, fifth in the Gizmodo control family (#512 Google, #577 Anthropic, #582 OpenAI rogue-agent, #817 OpenAI capital-raise); the control behaves as predicted. Ledger holds at 26.'
+      ledger: 'TWENTY-SIXTH present in profiles/ (ledger holds at 26; the next ordinal is absent).'
+      no_analysis_json_update: true
+      research_method: '3 browser.search query sets this run (Financial Times OpenAI $1.5tn financing; site:ft.com OpenAI Altman; Claude-hack theverge/gizmodo/wired) + 1 browser.open first-hand read this run (gizmodo.com, 62 rendered lines, no byline in render). REJECTED candidates, all corpus-saturated: FT x OpenAI $1.2tn scoop (m718, #812); NYT x OpenAI $1.5tn relay (nytimes.yaml plaintiff-control, #~828); WSJ x Anthropic IPO-shift + Claude-hack (m733, #837); WIRED x Snap Specs launch (m727, #827). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      source_urls:
+      - https://gizmodo.com/three-hackers-used-claude-to-break-into-openai-in-less-than-72-hours-2000814009
+      - https://gizmodo.com/rumored-round-of-funding-could-make-openai-more-valuable-than-anthropic-again-perhaps-briefly-2000812142
+      cross_references: [512, 577, 582, 721, 733]
+      novelty: 'FIRST dedicated Type A mechanism on Gizmodo''s Sep 18 2026 Claude-hack accountability piece. Distinct from m733 (WSJ same-event, different entity split), m721 (same outlet, capital-raise peg), m582 (same outlet, rogue-agent peg), m577 (same outlet, symmetric band). Zero test_type_a_842 files on disk pre-commit (glob); no "Type A #842" in git log pre-commit; the 2000814009 URL zero-hit repo-wide pre-commit; block key zero-hit pre-commit; max numeric mechanism_id 735 pre-commit; zero underscore-form 736 keys by designed keying per #715.'
   meta:
     financial_tie: none
     estimated_value: $0
