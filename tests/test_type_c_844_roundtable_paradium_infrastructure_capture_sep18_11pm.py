@@ -62,7 +62,7 @@ EXPECTED_ORDER = [("C", "844"), ("B", "843"), ("A", "842"), ("E", "841"), ("D", 
 GATE_TESTS = 43150
 GATE_FILES = 1172
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "da09c9c16ed407d3700fe444a70d9f6a61384000"
 
 EXPECTED_URLS = [
     "https://www.globenewswire.com/news-release/2026/09/17/3364180/0/en/roundtable-secures-10-year-1-billion-agreement-bringing-its-ai-defi-media-operating-system-to-global-scale-and-profitability.html",
