@@ -64,7 +64,7 @@ NEXT_ID_MARKER = "mechanism" + "_742"
 NEXT_ID_NUMERIC = "mechanism_id: " + "742"
 EXPECTED_ORDER = [("C", "849"), ("B", "848"), ("A", "847"), ("E", "846"), ("D", "845")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "6973506195ce866bf4b4430a4ae4a9b5d9a81387"
 
 DIGIDAY_URL = "https://digiday.com/media/axios-preps-new-axios-direct-feeds-for-ai-models-agents-as-revenue-tops-2026-goal/"
 
