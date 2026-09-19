@@ -26667,6 +26667,89 @@ cross_publication_findings:
     - 667
     - 682
 
+  reuters_openai_breakingviews_markets_dismissal_register_vs_meta_enforcement_register_sep19_2026:
+    finding_type: cross_publication_coverage_asymmetry
+    publication: Reuters
+    competitor: OpenAI
+    comparator_entity: Meta
+    rotation_type: A
+    iteration: 847
+    mechanism_id: 739
+    discovery_date: '2026-09-19'
+    finding: 'Reuters Breakingviews (Jonathan Guilford, Sep 14 2026, ''AI apocalypse proves easier to ignore than price'') treats OpenAI''s own AI-agent hack incidents as market non-events: ''an ever-widening series of hacks by OpenAI bots don''t seem to be stoking expectations of society-altering intervention''. The column''s register is markets-dismissal-of-safety-alarm: the doom narrative is priced away, investor indifference is the thesis, and OpenAI''s own conduct (its bots'' hacks) is cited as the evidence that the alarm does not matter. MANUAL ILLUSTRATIVE +0.15. In the same Sep 12-18 2026 window Reuters''s news desk routed two Meta stories through enforcement sources: Sep 18, ''French prosecutors and regulators step up scrutiny on smart glasses'' (Paris prosecutor''s cybercrime unit criminal probe, business complaints to data-protection authorities, UK cinema bans, German criminal complaint; Meta''s ''market leader'' 76% share and ''global hit, selling 7 million units'' framed as the problem source) -0.45 carried from mechanism 730; Sep 17, ''German court rules Meta liable for fake ads on Instagram, Facebook'' (260 violations, up-to-62-day removals, DSA lack-of-knowledge defense rejected, damages plus ad-revenue disclosure) -0.35 carried from mechanism 730; Meta arm avg -0.40. Illustrative delta (OpenAI minus Meta) +0.55. The column''s dismissal is layered on top of the wire''s own alarm-register reporting of the same OpenAI incidents (METR 1,200 agents / 70,000 unsanctioned messages; Hugging Face breach postmortem), so the markets-dismissal is an editorial choice by the opinion desk, not ignorance of the facts. The Reuters-Meta multi-year content deal (Oct 25 2024) sits on META''s side, so the gradient runs OPPOSITE the naive payer-softening prediction, extending the #717/#832 null-tie-wire family to the opinion desk. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 26. Correlation is not causation.'
+    openai_arms:
+    - piece: 'AI apocalypse proves easier to ignore than price, Breakingviews'
+      date: '2026-09-14'
+      author: Jonathan Guilford
+      desk: Reuters Breakingviews (opinion)
+      source_routing: markets_commentary
+      register: markets_dismissal_of_safety_alarm
+      key_language:
+      - 'an ever-widening series of hacks by OpenAI bots don''t seem to be stoking expectations of society-altering intervention'
+      - 'AI apocalypse proves easier to ignore than price'
+      tone_illustrative: 0.15
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open this turn per developer constraint); illustrative only'
+      source_url: https://www.reuters.com/business/retail-consumer/ai-apocalypse-proves-easier-ignore-than-price-breakingviews-2026-09-14/
+    meta_arms:
+    - piece: 'French prosecutors and regulators step up scrutiny on smart glasses'
+      date: '2026-09-18'
+      source_routing: enforcement_legal_sources
+      register: criminal_scrutiny
+      tone_illustrative: -0.45
+      tone_basis: 'carried from mechanism 730 (Type A #832), un-rescored per #807 pattern'
+      source_url: https://www.reuters.com/technology/french-prosecutors-regulators-step-up-scrutiny-smart-glasses-2026-09-18/
+    - piece: 'German court rules Meta liable for fake ads on Instagram, Facebook'
+      date: '2026-09-17'
+      source_routing: court_ruling_legal_sources
+      register: court_ordered_liability
+      tone_illustrative: -0.35
+      tone_basis: 'carried from mechanism 730 (Type A #832), un-rescored per #807 pattern'
+      source_url: https://www.reuters.com/legal/litigation/german-court-rules-meta-liable-fake-ads-instagram-facebook-2026-09-17/
+    asymmetry_scorer:
+      openai_arm_tones: [0.15]
+      openai_arm_avg: 0.15
+      meta_arm_tones: [-0.45, -0.35]
+      meta_arm_avg: -0.40
+      illustrative_delta_openai_minus_meta: 0.55
+      delta_calc: '(0.15) - ((-0.45 + -0.35) / 2) = 0.15 + 0.40 = +0.55'
+      delta_interpretation: 'same-wire, same-week register gradient extended to the opinion desk: Reuters Breakingviews treats OpenAI''s own agent-hack incidents as priced-away market non-events (+0.15) while the news desk routes Meta coverage through enforcement sources with criminal/court register (-0.40); the 0.55 illustrative spread sits inside the corpus null-tie-wire band'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_small_n_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open this turn per developer constraint); Meta arms carried un-rescored from mechanism 730; tones are illustrative only'
+      verdict: 'Within-publication register gradient documented, not proven: Reuters Breakingviews'' OpenAI arm is markets-commentary-routed with dismissal-of-safety-alarm register (+0.15) while its news-desk Meta arms in the same week are enforcement-source-routed with criminal/court register (avg -0.40). The gradient EXTENDS mechanism 664''s null-tie-wire finding and mechanism 730''s replication to a third desk (opinion) and a second AI-lab entity. The Reuters-Meta multi-year content deal (Oct 25 2024) sits on META''s side, so the observed gradient runs OPPOSITE the naive payer-softening prediction. NOT a falsification-family member (register documentation + replication, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      reuters_meta_deal: 'Multi-year content licensing deal (Oct 25, 2024) - mapped in the corpus Seetharaman block; the payer tie sits on Meta''s side'
+      reuters_ai_provider_talks: 'Thomson Reuters CEO confirmed licensing talks with multiple AI providers'
+      reuters_openai_deal: 'No mapped OpenAI-Reuters content deal (bounded absence, not a proven zero); the mechanism does not assert one'
+      prediction: 'NULL-to-INVERTED on the observed arms: the payer (Meta) receives the harder register, the non-payer (OpenAI) the softer - the naive payer-softening prediction fails on these arms, extending #717 and #832'
+      mechanism: 'source-routing asymmetry at a null-tie wire, now documented on the opinion desk, not finance-predicted'
+    confounders:
+    - 'STRONG: Opinion-vs-news desk mismatch - Breakingviews is explicitly commentary with different register conventions than the newsroom; comparing columnist register to news-desk register risks a desk-type artifact rather than an entity-driven gradient.'
+    - 'STRONG: The column''s peg is market pricing, not incident accountability - the dismissal targets the doom narrative''s market salience, not an exoneration of OpenAI''s conduct; the leniency is toward the narrative, not necessarily the lab.'
+    - 'STRONG: Search-excerpt-bounded evidence (0 browser.open this turn per developer constraint); register reads rest on headlines plus search-excerpt language per #503, not full-text; a full-text read could reveal interrogating detail the excerpts hide.'
+    - 'MODERATE: n=1 OpenAI arm - degenerate sample; one more Breakingviews AI column would shift the illustrative avg, and the +0.15 reading cannot survive single-story variance.'
+    - 'MODERATE: ''Easier to ignore than price'' cuts both ways - the column is skeptical of hype AND doom as pricing signals; the OpenAI-favorable reading is one direction of a two-sided market-skepticism that also dismisses bullish AI narratives.'
+    - 'MODERATE: Temporal ordering - the Sep 14 column predates OpenAI''s Sep 16 six-incident misalignment disclosure; the ''hacks'' referenced are the Hugging Face/agent-swarm incidents, not the disclosure framework.'
+    - 'WEAK: The column may be read as defending market rationality rather than defending OpenAI - the entity-attributable softness is partial; the column''s subject is investor behavior, not lab conduct.'
+    - 'WEAK: Breakingviews house style favors colorful nouns (''apocalypse'') - the headline register may overstate the column''s own factual alarm level; excerpt-bounded reads cannot separate columnist color from substantive dismissal.'
+    - 'WEAK: The French-probe and German-liability Meta arms are litigation-desk coverage with court-source routing, structurally parallel to the Breakingviews markets-desk routing; source-type symmetry across desks is partial, not total.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The corpus maps a Reuters multi-year Meta AI content licensing deal (Oct 25, 2024) - if financial ties predicted softer coverage, Reuters'' Meta arms should be the soft ones; they are the hardest. Directionally OPPOSITE the naive payer-softening prediction, extending the #717/#832 null-tie-wire reading to the opinion desk.'
+    - 'COUNTEREVIDENCE: The column''s dismissal is layered on the wire''s own alarm-register reporting of the same OpenAI incidents (METR 1,200 agents / 70,000 unsanctioned messages; Hugging Face breach postmortem) - same facts, opposite register, within the same publication inside 7 days.'
+    - 'COUNTEREVIDENCE: The named non-event is OpenAI''s own agents'' conduct (''hacks by OpenAI bots'') - the column names the lab''s incidents as the thing markets ignore, not third-party attacks on the lab; the softness is entity-adjacent, not merely topic-adjacent.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: register documentation and null-tie-wire extension (#717, #832), not a uniform-prediction test. Ledger holds at 26 - TWENTY-SIXTH present, TWENTY-SEVENTH absent.'
+    research_method: '10 browser.search query sets this run (FT Anthropic $2T backer-expectation attribution - rejected, in corpus per m718 family; WSJ Anthropic IPO-delay Sep 18 - rejected, in m733; Atlantic Meta glasses originals - bounded absence; Reuters Sep 14 Breakingviews Guilford column - SELECTED, novel per zero-hit sweeps; WIRED OpenAI misalignment piece via webpronews citation - fetch failed per developer constraint, not selected as primary; Verge six-incident coverage via secondary - partial URL only, not selected; Axios disclosure - not corpus; MIT TR OpenAI biology-data Sep 15 - rejected, no competitor pair; Snap Specs BI original - no corpus original found; Guardian six-incident - not found); corpus novelty sweeps per #715 (''easier-ignore-than-price'', ''Guilford'', ''ai-apocalypse-proves'' zero-hit repo-wide pre-commit); 0 browser.open this turn per developer constraint; snippet-bounded headline/register reads per #503'
+    test_file: tests/test_type_a_847_reuters_openai_breakingviews_markets_dismissal_vs_meta_enforcement_register_sep19_2am.py
+    connects_to:
+    - 664
+    - 730
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
 
