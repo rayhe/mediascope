@@ -56,7 +56,7 @@ NEXT_ID_MARKER = "mechanism" + "_737"
 NEXT_ID_NUMERIC = "mechanism_id: 737"
 EXPECTED_ORDER = [("A", "842"), ("E", "841"), ("D", "840"), ("C", "839"), ("B", "838")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "2baf1060cb2242c6a5849b4af3af2cc4ffcb0157"
 
 EXPECTED_URLS = [
     "https://gizmodo.com/three-hackers-used-claude-to-break-into-openai-in-less-than-72-hours-2000814009",
