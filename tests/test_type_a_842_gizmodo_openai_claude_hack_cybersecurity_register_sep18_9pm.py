@@ -112,13 +112,17 @@ def _git(*args: str) -> str:
 
 
 def _git_log_mains(qualifier: str) -> dict:
+    # --grep matches the full commit message, so followup commits whose
+    # BODIES reference the main subject also match; filter to subjects that
+    # start with the qualifier (main-commit shape "Type A #842: <topic> ...").
+    # Followup subjects ("Type A #842 anchor followup: ...") never do.
     out = _git("log", "--all", "--format=%H %s", "--grep", qualifier)
     mains = {}
     for line in out.splitlines():
         if not line.strip():
             continue
         sha, _, subject = line.partition(" ")
-        if "Type A #842" in subject:
+        if subject.startswith(qualifier):
             mains[sha] = subject
     return mains
 
