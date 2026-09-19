@@ -13884,7 +13884,7 @@ GF episode 500 ("Five Hundredth Episode with Kate Cheka and the Palestinian Circ
 
 ### Everyone Hates Elon
 
-48-day hold continues (Aug 10 Epstein spoof -> Sep 19; 47-day at #846, day 48 now). 5 URL keys observed, ALL previously-logged (engadget WWW-uppercase, singulism, petapixel, designtaxi, softonic Epstein-poster re-surface from #841). The quoted-search's github.com/rayhe/mediascope/podcast-sentiment.md result was rejected as circular, not ingested. NO new EHE URL keys this run. No new primary campaign motif. Last campaign phase remains the circa Aug 10 Epstein poster. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 93 cycles. EHE remains an activist campaign group, NOT a podcast.
+40-day hold continues (Aug 10 Epstein spoof -> Sep 19; corrects #846's arithmetic label, which read 47-day then 48-day - both arithmetically wrong, date(2026,9,19)-date(2026,8,10)=40 days; date anchors unchanged). 5 URL keys observed, ALL previously-logged (engadget WWW-uppercase, singulism, petapixel, designtaxi, softonic Epstein-poster re-surface from #841). The quoted-search's github.com/rayhe/mediascope/podcast-sentiment.md result was rejected as circular, not ingested. NO new EHE URL keys this run. No new primary campaign motif. Last campaign phase remains the circa Aug 10 Epstein poster. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 93 cycles. EHE remains an activist campaign group, NOT a podcast.
 
 ### Attention Sphere
 

@@ -4,7 +4,7 @@ Second leg of the 850-854 window (D #850 -> E #851 -> A -> B -> C).
 Monitoring-only: GF episode 500 stands newest (~5 days after Sep 14
 release; official-site corroboration carried from #796); getpodcast GF
 key verified pre-existing in corpus (8 git-grep hits), ZERO new GF
-URL keys; EHE 48-day hold (47-day at #846), no new EHE URL keys;
+URL keys; EHE 40-day hold (corrects #846 arithmetic label, date anchors unchanged), no new EHE URL keys;
 Attention Sphere 93rd quoted-search no-match (same 6 own-repo GitHub
 commit URLs, circular-rejected); press SEVEN results ALL
 previously-logged (verified each >=1 corpus hit pre-commit), ZERO new
@@ -237,9 +237,19 @@ class TestGF93rdCycle:
 class TestEHEHold93rdCycle:
     """Everyone Hates Elon: 48-day hold, no new URL keys this run."""
 
-    def test_ehe_48_day_hold(self):
-        ps = _read("podcast-sentiment.md")
-        assert "48-day hold" in ps
+    def test_ehe_40_day_hold(self):
+        """40-day hold; regression guard on the date subtraction.
+
+        #846 labeled the Aug 10 -> Sep 19 hold "47-day" and #851's
+        first draft advanced it to "48-day". Both are arithmetically
+        wrong: date(2026, 9, 19) - date(2026, 8, 10) == 40 days. The
+        doc must carry the corrected label and never the old one.
+        """
+        import datetime
+        assert (datetime.date(2026, 9, 19) - datetime.date(2026, 8, 10)).days == 40
+        section = _read("podcast-sentiment.md").split("## Iteration #851")[1]
+        assert "40-day hold" in section
+        assert "48-day hold" not in section
 
     def test_all_ehe_keys_in_corpus(self):
         for key in EHE_KEYS:
