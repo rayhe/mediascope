@@ -58,7 +58,7 @@ NEXT_ID_MARKER = "mechanism" + "_745"
 NEXT_ID_NUMERIC = "mechanism_id: " + "745"
 EXPECTED_ORDER = [("C", "854"), ("B", "853"), ("A", "852"), ("E", "851"), ("D", "850")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "8a5d80a455bf233b681b292e18757474333e06ba"
 
 EDGAR_8K_ITEM101 = "https://www.sec.gov/Archives/edgar/data/1419275/000118518526004171/rtb8k091826.htm"
 EDGAR_8K_ITEM701 = "https://www.sec.gov/Archives/edgar/data/1419275/000118518526004134/rtb8k0091826.htm"
