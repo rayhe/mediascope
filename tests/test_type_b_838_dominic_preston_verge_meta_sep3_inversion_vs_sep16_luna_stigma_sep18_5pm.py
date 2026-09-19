@@ -74,7 +74,7 @@ NEXT_ID_MARKER = "mechanism" + "_735"
 NEXT_ID_NUMERIC = "mechanism_id: 735"
 EXPECTED_ORDER = [("B", "838"), ("A", "837"), ("E", "836"), ("D", "835"), ("C", "834")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "e65a3341884a968fb0790b68c21c0a77b7570f4d"
 
 EXPECTED_URLS = [
     "https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect",
