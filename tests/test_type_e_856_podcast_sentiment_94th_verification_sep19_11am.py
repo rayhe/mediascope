@@ -166,7 +166,7 @@ class TestRotationCycleGuard856:
     followup per the #565 convention; these tests are deselected pre-commit.
     """
 
-    ANCHORED_SHA = "PLACEHOLDER_SHA_PATCHED_IN_ANCHOR_FOLLOWUP"
+    ANCHORED_SHA = "ab4dee6467ab5d54d6d00d11e60ac528b2a43a1b"
 
     def test_855_859_window_second_leg(self):
         log = _read("iteration-log.md")
