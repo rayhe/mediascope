@@ -83,7 +83,7 @@ NEXT_ID_MARKER = "mechanism" + "_738"
 NEXT_ID_NUMERIC = "mechanism_id: 738"
 EXPECTED_ORDER = [("B", "843"), ("A", "842"), ("E", "841"), ("D", "840"), ("C", "839")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "5dfd629f5d6975c28dffc197e48f6c30f2d4806f"
 
 EXPECTED_URLS = [
     "http://muckrack.com/jason-england/articles",
