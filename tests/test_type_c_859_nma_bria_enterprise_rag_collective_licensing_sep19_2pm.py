@@ -68,7 +68,7 @@ NEXT_ID_MARKER = "mechanism" + "_748"
 NEXT_ID_NUMERIC = "mechanism_id: " + "748"
 EXPECTED_ORDER = [("C", "859"), ("B", "858"), ("A", "857"), ("E", "856"), ("D", "855")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "c2872744d458293c13a362d97e6fc7373a1ea3b2"
 
 DIGIDAY_URL = "https://digiday.com/media/news-media-alliance-signs-ai-licensing-deal-to-unlock-recurring-rag-revenue-for-small-and-mid-sized-publishers/"
 NMA_PROGRAM_URL = "https://www.newsmediaalliance.org/news-media-alliance-ai-licensing-program/"
@@ -249,7 +249,7 @@ class TestRotationGuard859:
     def test_anchor_sha_matches_head(self):
         # Patched to the real main-commit SHA in the anchor followup per
         # the #565 convention; deselected pre-commit at the pytest CLI.
-        mains = _git_log_mains("Type C #859: NMA x Bria")
+        mains = _git_log_mains("Type C #859: News/Media Alliance x Bria")
         assert ANCHORED_SHA not in (
             "PATCH_ME_IN_FOLLOWUP",
             "POST_COMMIT_ANCHORED",
