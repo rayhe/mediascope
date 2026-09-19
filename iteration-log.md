@@ -35025,5 +35025,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - New Type E files: tests/test_type_e_841_podcast_sentiment_91st_verification_sep18_8pm.py - 10 classes, 43 tests (39 green pre-commit, including doc-sync 4 + iteration-log 2 per #719; novelty anchor 1 + rotation-guard 3 deselected per #565, patched green in anchor followup).
 - Rotation guard: 840-844 window second leg D->E (anchor patched post-commit per #565). Ledger holds at 26.
 - Doc-sync: README + ARCHITECTURE rows added; headers re-synced (authoritative .venv pytest --collect-only this run).
-- Commit hashes: main commit <SHA> (verified via git rev-parse); anchor followup <SHA> (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-followup); log-hash followup updates this line.
-- Push status (this run, ~20:0x PDT Sep 18): PENDING - to be verified post-commit via ls-remote.
+- Commit hashes: main commit d64d74b573afc93ba0aa463a9f55984a033cbd3b (verified via git rev-parse); anchor followup 788770c56896f7fbe18a8ced5c900bd2276e4a55 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 43/43 file tests green post-followup); log-hash followup updates this line (this commit).
+- Push status (this run, ~20:0x PDT Sep 18): main (d64d74b) + anchor followup (788770c) + this log-hash followup (6fc0166) pushed and ls-remote-verified in the same run (remote tip == local tip).
