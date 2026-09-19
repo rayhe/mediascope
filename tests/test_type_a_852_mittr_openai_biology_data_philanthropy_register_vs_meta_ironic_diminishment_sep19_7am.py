@@ -51,7 +51,7 @@ NEXT_ID_MARKER = "mechanism" + "_743"
 NEXT_ID_NUMERIC = "mechanism_id: " + "743"
 EXPECTED_ORDER = [("A", "852"), ("E", "851"), ("D", "850"), ("C", "849"), ("B", "848")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "70cb8358daa514a69b3b21a549ae4f73ec2bd0fd"
 
 REGALADO_URL = "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/"
 META_URLS = [
