@@ -142,7 +142,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "f00d07acf2435da0fc44b64737bbff594c11fac5"
 
 M733_KEY = (
     "wsj_anthropic_ipo_shift_claude_hack_register_vs_meta_"
