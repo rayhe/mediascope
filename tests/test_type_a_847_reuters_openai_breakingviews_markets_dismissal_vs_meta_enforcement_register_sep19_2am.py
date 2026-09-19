@@ -57,7 +57,7 @@ NEXT_ID_MARKER = "mechanism" + "_740"
 NEXT_ID_NUMERIC = "mechanism_id: " + "740"
 EXPECTED_ORDER = [("A", "847"), ("E", "846"), ("D", "845"), ("C", "844"), ("B", "843")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "63bc013098002857a73158d157c32cb8afdd6fcd"
 
 GUILFORD_URL = "https://www.reuters.com/business/retail-consumer/ai-apocalypse-proves-easier-ignore-than-price-breakingviews-2026-09-14/"
 META_URLS = [
