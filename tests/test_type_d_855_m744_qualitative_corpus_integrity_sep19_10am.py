@@ -101,7 +101,7 @@ TEST_BASENAME = (
 README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "693168b4fcc851524895d09feefb26436f63217a"
 
 # Next mechanism number after the pre-commit corpus max (744); used as
 # an int so no underscore/dash-form literal is ever carried in source.
@@ -247,14 +247,27 @@ class TestNovelty855:
         assert _repo_grep_numeric_mechanism_id(NEXT_NUM) == []
 
     def test_no_type_d_855_in_git_log_pre_commit(self):
+        # Pre-commit novelty: no Type D #855 main commit exists.
+        # Post-commit (anchor followup per #565), exactly one exists
+        # and it is the anchored main commit - the guard doubles as a
+        # duplicate-main-commit check.
         result = subprocess.run(
-            ["git", "log", "--oneline", "--grep=Type D #855"],
+            ["git", "log", "--format=%H %s", "--grep=Type D #855"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
         assert result.returncode == 0
-        assert result.stdout.strip() == "", result.stdout
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type D #855" in line and "followup" not in line.lower()
+        ]
+        if ANCHORED_SHA == "PATCH_ME_IN_FOLLOWUP":
+            assert mains == [], mains
+        else:
+            assert len(mains) == 1, mains
+            assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
     def test_850_854_window_closed_prior_to_855(self):
         log = _read(LOG_PATH)
