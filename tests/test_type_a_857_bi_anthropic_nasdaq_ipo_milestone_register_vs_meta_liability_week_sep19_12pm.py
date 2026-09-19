@@ -64,7 +64,7 @@ NEXT_ID_NUMERIC = "mechanism_id: " + "746"
 NEXT_ID_DASH = "mechanism" + "-746"
 EXPECTED_ORDER = [("A", "857"), ("E", "856"), ("D", "855"), ("C", "854"), ("B", "853")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "3f45da4bf4ebd86d4f68967dd9bf94a2c8a0d2aa"
 
 NASDAQ_ATTRS = [
     "https://gateiolink.net/news/detail/anthropic-picks-nasdaq-for-october-ipo-at-reported-2-trillion-valuation-24270427",
