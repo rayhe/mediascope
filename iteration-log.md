@@ -6,7 +6,7 @@
 - New Type E files: tests/test_type_e_846_podcast_sentiment_92nd_verification_sep19_1am.py - 11 classes, 45 tests (41 green pre-commit, including doc-sync 4 + iteration-log 2 per #719; novelty anchor 1 + rotation-guard 3 deselected per #565, patched green in anchor followup).
 - Rotation guard: 845-849 window second leg D->E (anchor patched post-commit per #565). Ledger holds at 26.
 - Doc-sync: README stats table 43220/1173 -> 43265/1174 + test-file table row; ARCHITECTURE.md tree stats + tree row; iteration-log #846 entry (this entry). Authoritative .venv pytest --collect-only this run: 43265 tests / 1174 files (delta +45/+1 = the #846 file exactly; system-python3 pytest gate undercounts due to missing deps, venv python authoritative per the #530 lesson).
-- Commit hashes: main commit TBD_ANCHORED_SHA (this commit); anchor followup TBD_ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 45/45 file tests green post-followup); log-hash followup updates this line (this commit).
+- Commit hashes: main commit 74446d6624f7a13ee3b9ef7b136bc9dc1ed46a28 (verified via git rev-parse); anchor followup df569ee7497807c7ed387b69fc33646542366c9d (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 45/45 file tests green post-followup); log-hash followup updates this line (this commit).
 - Push status: (this run, Sep 19 2026 ~01:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
 
 #749 Type C: Getty Images x Perplexity global multi-year visual licensing agreement (Oct 31 2025) - first dedicated Getty-Perplexity mapping on the perplexity entity, Perplexity-first visual-licensing template (Sep 14 2026, 15:00 PDT) - mechanism id 684
