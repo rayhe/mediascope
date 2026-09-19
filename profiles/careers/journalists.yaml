@@ -20160,18 +20160,22 @@ ben_thompson:
       test_file: tests/test_type_b_798_ben_thompson_stratechery_orion_vs_vision_pro_gradient_sep17_1am.py
 sabrina_ortiz:
   name: Sabrina Ortiz
-  current_role: Senior Editor
-  current_publication: ZDNet
-  publication_owner: Ziff Davis
+  current_role: Senior Reporter
+  current_publication: The Deep View
+  publication_owner: The Deep View (independent AI-news startup; editor-in-chief Jason Hiner, ex-ZDNet)
+  previous_role: Senior Editor
+  previous_publication: ZDNet
+  previous_owner: Ziff Davis
   beats:
   - AI
   - wearables
   - smart glasses
-  notes: 'ZDNet Senior Editor (byline "Written by Sabrina Ortiz, Senior Editor" on the Feb 13 2026 Meta Oakley HSTN piece). Type B #803 (Sep 17 2026): mechanism 713 within-journalist, within-employer challenger-constancy with incumbent-directed critique - Meta arms: ZDNet "I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold" (byline Sabrina Ortiz/ZDNET; date bounded circa Oct 21 2025 from the 332d crawl stamp per iteration-492; "Both the feel of the glasses and the demo left me impressed", +0.45 illustrative), Meta Ray-Bans long-term ownership ("it was an absolute nobrainer for me to purchase the Meta Ray-Bans... mostly impressed", first-party purchase), Meta Oakley HSTN Limited Edition ("exceeded my expectations", Feb 13 2026); Samsung arm: ZDNet "I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways" (byline Sabrina Ortiz/ZDNET; date bounded circa May 21 2025; "only it''s much better than the Vision Pro", "felt much lighter... than I remembered the Vision Pro feeling", +0.40 illustrative); Apple arm: her own Vision Pro (launch-day trial Feb 2024 + ownership, "beats my Apple Vision Pro") is the incumbent baseline that loses both comparisons (-0.10 illustrative); illustrative challenger-minus-incumbent spread 0.525. Zero privacy/surveillance vocabulary in any excerpted arm - within-publication replication of #793''s ZDNet pattern (Hiner) with a different journalist and a three-entity design. Uniform anti-Meta or pro-incumbent financial-incentive prediction NOT supported on the observed arms. FIRST dedicated corpus mechanism on Ortiz - zero hits repo-wide pre-commit. NOT a falsification-family member (register documentation, not a uniform-prediction test); ledger holds at 26. Search-excerpt-bounded per #503 (8 browser.search query sets; 0 browser.open attempts on ZDNet primaries; 1 mirror open failed terminally); MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no analysis.json update; NOT artifact-grade.'
-  mechanism_ids: [713]
+  notes: 'ZDNet Senior Editor (byline "Written by Sabrina Ortiz, Senior Editor" on the Feb 13 2026 Meta Oakley HSTN piece). Type B #803 (Sep 17 2026): mechanism 713 within-journalist, within-employer challenger-constancy with incumbent-directed critique - Meta arms: ZDNet "I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold" (byline Sabrina Ortiz/ZDNET; date bounded circa Oct 21 2025 from the 332d crawl stamp per iteration-492; "Both the feel of the glasses and the demo left me impressed", +0.45 illustrative), Meta Ray-Bans long-term ownership ("it was an absolute nobrainer for me to purchase the Meta Ray-Bans... mostly impressed", first-party purchase), Meta Oakley HSTN Limited Edition ("exceeded my expectations", Feb 13 2026); Samsung arm: ZDNet "I finally tried Samsung''s XR headset, and it beats my Apple Vision Pro in meaningful ways" (byline Sabrina Ortiz/ZDNET; date bounded circa May 21 2025; "only it''s much better than the Vision Pro", "felt much lighter... than I remembered the Vision Pro feeling", +0.40 illustrative); Apple arm: her own Vision Pro (launch-day trial Feb 2024 + ownership, "beats my Apple Vision Pro") is the incumbent baseline that loses both comparisons (-0.10 illustrative); illustrative challenger-minus-incumbent spread 0.525. Zero privacy/surveillance vocabulary in any excerpted arm - within-publication replication of #793''s ZDNet pattern (Hiner) with a different journalist and a three-entity design. Uniform anti-Meta or pro-incumbent financial-incentive prediction NOT supported on the observed arms. FIRST dedicated corpus mechanism on Ortiz - zero hits repo-wide pre-commit. NOT a falsification-family member (register documentation, not a uniform-prediction test); ledger holds at 26. Search-excerpt-bounded per #503 (8 browser.search query sets; 0 browser.open attempts on ZDNet primaries; 1 mirror open failed terminally); MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no analysis.json update; NOT artifact-grade. Type B #848 (Sep 19 2026): mechanism 740 - OUTLET MIGRATION: Ortiz is now Senior Reporter at The Deep View (hired from ZDNet per Talking Biz News; Jason Hiner EIC, ex-ZDNet). NEW Sep 16 2026 Snap arm: The Deep View "Here''s our take on the new Snap Specs with AI" (read first-hand this run, 55 rendered lines): "best on the market right now" (AR-glasses-scoped, her strongest superlative on record) with Snap-paid LA travel DISCLOSED in the piece - FIRST disclosed-junket smart-glasses hands-on in the corpus; privacy section is vendor-claim relay only (zero critical vocabulary despite computer-vision chip + cameras). Meta arms carried un-rescored from m713 per #807. Illustrative Snap-minus-Meta delta 0.00: register constancy, not a tone gap - EXTENDS m713 to a fourth entity (Snap) across the outlet migration. Confounders 3/3/3, counter-evidence 4. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; verdict directionally_supported_not_proven; NOT falsification-family; ledger holds at 26; no analysis.json update.'
+  mechanism_ids: [713, 740]
   source_urls:
   - https://www.zdnet.com/article/i-tried-the-meta-ray-ban-display-glasses-including-this-unreleased-feature-and-im-nearly-sold/
   - https://Www.Zdnet.Com/article/i-finally-tried-samsungs-xr-headset-and-it-beats-my-apple-vision-pro-in-meaningful-ways/
+  - https://www.thedeepview.com/articles/here-s-our-take-on-the-new-snap-specs-with-ai
   competitor_coverage:
     type_b_803_sabrina_ortiz_zdnet_three_entity_incumbent_gradient_sep17:
       iteration: 803
@@ -20246,6 +20250,87 @@ sabrina_ortiz:
       verdict2: directionally_supported_not_proven
       no_analysis_json_update: true
       test_file: tests/test_type_b_803_sabrina_ortiz_zdnet_three_entity_incumbent_gradient_sep17_6am.py
+    type_b_848_sabrina_ortiz_deepview_snap_specs_junket_disclosure_vs_meta_arms_sep19_3am:
+      iteration: 848
+      mechanism_id: 740
+      rotation_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-19 03:00 PDT'
+      block_key: 'type_b_848_sabrina_ortiz_deepview_snap_specs_junket_disclosure_vs_meta_arms_sep19_3am'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, FIRST dedicated Type B mechanism on Sabrina Ortiz at The Deep View (outlet-migrated from ZDNet Senior Editor between Feb and Sep 2026 per Talking Biz News; Jason Hiner editor-in-chief). Question: does the same writer''s product-forward hands-on register hold constant on Snap''s Specs when the coverage is a Snap-hosted launch event with Snap-paid travel, and what does the disclosed financial vector look like in the register? Snap arm: The Deep View "Here''s our take on the new Snap Specs with AI" (Sep 16 2026; byline Sabrina Ortiz confirmed via her Deep View author page this run; read first-hand this run, 55 rendered lines; verbatim article URL from the search Full-URL listing, no canonical URL constructed per the #643 convention). Meta arms carried un-rescored from mechanism 713 per the #807 pattern.'
+      snap_arm:
+        title: 'Here''s our take on the new Snap Specs with AI'
+        date: '2026-09-16'
+        author_byline: Sabrina Ortiz
+        publication: the_deep_view
+        role: Senior Reporter (outlet-migrated from ZDNet Senior Editor)
+        genre: launch-event hands-on (Snap Sep 16 2026 launch, Los Angeles)
+        key_quotes:
+        - 'Verdict (observed this run, first-hand): "I flew to LA to try them, and as someone who wore them when they were first unveiled as a developer kit and has also tried nearly every competitor on the market, I can confidently say that what they offer is pretty impressive."'
+        - 'Strongest superlative (observed this run): "out of all the AR glasses I have tested, the fact that these do not have any tethered cables, are pretty comfortable, and offer a seamless experience makes them, to me, the best on the market right now."'
+        - 'Price puzzlement (observed this run): "When Snap first pulled back the curtain on its Specs glasses in June, the reaction was more puzzlement than excitement. Why would people want to spend $2,195 on glasses that aren''t exactly aesthetic?"'
+        - 'Privacy section, vendor-claim relay (observed this run): "- **Privacy**: LED light glows when recording, on-device data processing prioritized, and users are prompted before accessing sensitive information" - the only privacy vocabulary in the piece, relaying Snap''s spec claims verbatim; zero critical or adversarial privacy terms despite two Snapdragon chips (one dedicated to computer vision) and cameras.'
+        - 'Comfort caveat (observed this run): "for the short time I wore them, they felt pretty comfortable, but after 4 hours (which is how long the battery is supposed to last), I can''t say I feel the same way."'
+        - 'Pressed on AI model, no answer (observed this run): "When I asked what AI model was powering the experience, Snap didn''t provide details."'
+        register_notes: 'Product-forward launch-event register; +0.45 MANUAL ILLUSTRATIVE, in-band with her ZDNet-era Meta Display arm (+0.45) and Samsung arm (+0.40) - register constancy, not a Snap-specific escalation.'
+        tone_illustrative: 0.45
+        tone_basis: 'hand-assigned this run from the first-hand read, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'first-hand browser.open read this run (55 rendered lines); byline confirmed via The Deep View author page (Senior Reporter)'
+        junket_disclosure: '***Disclaimer**: Sabrina Ortiz''s travel to the Snap Specs launch event was paid for by Snap. The Deep View''s coverage is editorially independent from the companies we cover.*'
+        byline_attribution_urls:
+        - https://www.thedeepview.com/articles/here-s-our-take-on-the-new-snap-specs-with-ai
+        - https://www.thedeepview.com/author/sabrina-ortiz
+        - https://talkingbiznews.com/media-news/the-deep-view-hires-ortiz-to-cover-ai/
+      meta_arms_carried_from_713:
+        note: 'Carried un-rescored per the #807 pattern; mechanism 713 (Type B #803, Sep 17 2026) documents the three-entity ZDNet-era arms.'
+        arms:
+        - title: 'I tried the Meta Ray-Ban Display glasses (including this unreleased feature), and I''m nearly sold'
+          tone_illustrative: 0.45
+          note: 'ZDNet, circa Oct 21 2025; "Both the feel of the glasses and the demo left me impressed."'
+        - title: 'Meta Ray-Bans long-term ownership'
+          note: '"it was an absolute nobrainer for me to purchase the Meta Ray-Bans... mostly impressed." First-party purchase.'
+        - title: 'Meta Oakley HSTN Limited Edition'
+          date: '2026-02-13'
+          note: '"exceeded my expectations."'
+      asymmetry_scorer:
+        snap_arm_tones: [0.45]
+        meta_arm_tones: [0.45]
+        snap_arm_avg: 0.45
+        meta_arm_avg: 0.45
+        illustrative_delta_snap_minus_meta: 0.00
+        note: 'The illustrative tone delta is ZERO - the finding is register constancy (Ortiz stays product-forward on Snap exactly as on Meta), not a tone gap. The new corpus element is the disclosed financial vector: Snap-paid travel coinciding with her strongest on-record superlative and zero critical privacy vocabulary.'
+      extends: 'EXTENDS mechanism 713: the challenger-constancy with incumbent-directed critique now spans a FOURTH entity (Snap) and survives an outlet migration (ZDNet/Ziff Davis to The Deep View). The disclosed-junket leg is the FIRST in the corpus for smart-glasses hands-on coverage - a disclosure-norm reference case for the financial-incentive mapping.'
+      confounders:
+      - 'STRONG: Launch-event junket genre DOMINANT - every Sep-16 hands-on in the cohort (Peters, Bell, Cadenas) is experiential-positive; Ortiz is not an outlier among launch-event attendees.'
+      - 'STRONG: Genuine product novelty - Specs is the first standalone consumer AR glasses; the "best on the market right now" verdict is explicitly scoped to AR glasses she has tested.'
+      - 'STRONG: Disclosure itself - the paid travel is disclosed in the piece; the corpus claim is about the register gradient under a disclosed junket, not undisclosed capture; the disclosure attenuates any covert-bias reading.'
+      - 'MODERATE: Voice-consistency - Ortiz''s baseline is product-forward across entities (m713: +0.45 Meta Display, +0.40 Samsung); the Snap +0.45 is in-band, not a Snap-specific escalation.'
+      - 'MODERATE: Qualified praise - she flagged the $2,195 price as puzzling, caveated the 4-hour comfort claim, and pressed Snap on the AI model (no answer given).'
+      - 'MODERATE: Genre boundary - a launch-event hands-on is not an investigative feature; no Ortiz-authored adversarial investigation of any smart-glasses maker exists in the corpus (bounded absence).'
+      - 'WEAK: "Best on the market right now" is AR-glasses-scoped, not a whole-category claim.'
+      - 'WEAK: Outlet migration (ZDNet to The Deep View) changes the financial-tie gradient (Ziff Davis to independent startup); the register held constant anyway.'
+      - 'WEAK: n=1 Snap arm.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: The paid travel is disclosed in the piece - the transparency norm is satisfied.'
+      - 'COUNTEREVIDENCE: Price puzzlement is in the lede - "Why would people want to spend $2,195 on glasses that aren''t exactly aesthetic?"'
+      - 'COUNTEREVIDENCE: She qualified comfort beyond the 4-hour battery window and pressed Snap on the AI model question.'
+      - 'COUNTEREVIDENCE: m713 shows Ortiz is Meta-positive too ("nearly sold", first-party Ray-Bans purchase, Oakley HSTN "exceeded my expectations") - this is not an anti-Meta/pro-Snap story; it is a register-constancy story.'
+      verdict: directionally_supported_not_proven
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      engine: 'engine NOT run on the arms per the Aug 28 2026 standing rule'
+      no_analysis_json_update: true
+      artifact_grade: 'NOT artifact-grade'
+      falsification_family: 'NOT a falsification-family member - a mechanism-713 refinement documenting register constancy plus a disclosed financial vector, not a uniform-prediction contradiction; falsification ledger holds at 26 (TWENTY-SIXTH present, TWENTY-SEVENTH absent)'
+      correlation_note: 'Correlation is not causation. Hypothesis-generating only.'
+      connects_to: [713]
+      research_method: '4 browser.search query sets this run (Karissa Bell Snap Specs - rejected, covered via m113/m722; Brenda Stolyar WIRED - no Sep-2026 pair; Hamish Hector TechRadar Sep-17 hands-on - byline is Cesar Cadenas, no Meta comparator arm; Sabrina Ortiz Deep View Snap Specs Sep 16 - SELECTED; Sabrina Ortiz current role The Deep View - SELECTED for outlet-migration verification) + 1 browser.open first-hand read (the Deep View Snap Specs piece, 55 rendered lines). Byline confirmed via The Deep View author page (Senior Reporter) and the piece''s own disclosure naming Sabrina Ortiz. Outlet migration verified via Talking Biz News (The Deep View hired Ortiz from ZDNet; Jason Hiner EIC). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed per #643. Novelty verified pre-commit: zero test_type_b_848 files; no "Type B #848" in git log; max numeric mechanism_id 739; zero underscore-form 740 keys; block key zero-hit; headline string zero-hit repo-wide. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_848_sabrina_ortiz_deepview_snap_specs_junket_disclosure_vs_meta_arms_sep19_3am.py
 ece_yildirim:
   name: Ece Yildirim
   current_role: Staff Writer
