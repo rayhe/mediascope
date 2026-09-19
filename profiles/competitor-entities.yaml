@@ -20806,6 +20806,104 @@ marketplace_intermediary_landscape:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline_note: 'Qualitative Type C mapping - financial-incentive documentation leg, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+  nma_bria_enterprise_rag_collective_licensing_sep2026:
+    mechanism_id: 747
+    iteration: 859
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-19'
+    time_pdt: '14:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    mechanism_name: 'News/Media Alliance x Bria Enterprise-RAG Collective Licensing (Announced Mar 23 2026) - First Dedicated US Trade-Association Collective-Licensing Mechanism; 2,200-Publisher Opt-In Umbrella, Usage-Priced, 50% Revenue Split Apportioned by Bria Attribution Engine'
+    overview: 'First dedicated corpus mapping of the News/Media Alliance (NMA) x Bria AI licensing deal: the US trade association representing about 2,200 news, magazine and digital media organizations signed an opt-in licensing agreement (announced Mar 23 2026, Digiday, Sara Guaglione) letting members license textual content into Bria''s AI System, a RAG product that uses licensed content to formulate responses to enterprise-client user queries. Bria compensates publishers 50% of all revenues for use of their content, apportioned based on Bria''s proprietary attribution technology, and the AI System is sublicensable as a white-label product to Bria''s enterprise customers (per the primary NMA AI Licensing Program page). Buyer side: enterprise AI teams, foundation model developers, copilot builders, agent orchestration platforms, and companies deploying AI in legal, financial services and healthcare (Vered Horesh, Bria chief AI strategy officer, via Digiday). Usage-side demand is enterprise RAG: RAG pipelines, enterprise copilots, agent-based research and analysis, and search and answer engines. The arrangement is non-exclusive and explicitly framed for small and mid-sized publishers lacking resources to negotiate directly with AI companies. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+    deal_facts:
+      announced: 'March 23 2026 (Digiday, Sara Guaglione); MediaPost 03/24/2026; TV News Check'
+      parties:
+        publisher_side: 'News/Media Alliance (NMA) - US trade association representing about 2,200 news, magazine and digital media organizations (TV News Check)'
+        technology_side: 'Bria - AI startup; proprietary attribution engine (MediaPost); Vered Horesh, chief AI strategy officer'
+      vehicle: 'Opt-in license: NMA publishers license textual content for use in Bria''s AI System (RAG product using licensed content to formulate responses to user queries); non-exclusive (Briefly.co summary)'
+      payment_terms: 'Usage-priced: publishers paid based on how often their content is used by Bria''s enterprise clients (Digiday); 50% of all revenues for use of their content, apportioned based on Bria''s attribution technology (primary NMA page, newsmediaalliance.org)'
+      sublicensing: 'Bria''s AI System sublicensable as a white-label product to Bria''s enterprise customers (NMA page)'
+      enterprise_client_categories:
+      - 'enterprise AI teams'
+      - 'foundation model developers'
+      - 'copilot builders'
+      - 'agent orchestration platforms'
+      - 'companies deploying AI in legal, financial services and healthcare industries (Horesh, Digiday)'
+      usage_modes:
+      - 'RAG pipelines'
+      - 'enterprise copilots'
+      - 'agent-based research and analysis'
+      - 'search and answer engines'
+      target: 'Small and mid-sized publishers without resources to directly negotiate agreements with AI companies (Briefly.co; TV News Check: these voluntary collective licensing opportunities are designed to be particularly valuable for smaller publishers)'
+      leadership:
+      - 'Danielle Coffey, NMA president and CEO'
+      - 'Vered Horesh, Bria chief AI strategy officer'
+    key_quotes:
+    - 'Danielle Coffey (NMA president-CEO, MediaPost/TV News Check): "We are excited to work with Bria to ensure our members are properly compensated for their valuable work. This agreement shows a path towards a future in which our industries grow and thrive together - with AI companies benefiting from the high-quality content that our publishers create, and publishers receiving a fair portion of the revenue that their work produces for AI companies."'
+    - 'Danielle Coffey (MediaPost): use of publisher content by AI companies without compensation has been "devastating for our industry, and we are pleased to offer a reasonable, responsible alternative. By giving AI companies the opportunity to reach multiple publishers at once, we are making it easy for them to reduce transaction costs and responsibly source their content."'
+    - 'Vered Horesh (Bria chief AI strategy officer, MediaPost): "Attribution has always been core to what Bria stands for: the idea that every AI output should be traceable and defensible. We are now extending that principle beyond images into the broader world of AI-generated content and enterprise decision-making."'
+    - 'Matt Prohaska (CEO and principal, Prohaska Consulting, Digiday): publishers cutting direct deals find it difficult to get attention from the "big five" tech companies (Microsoft, Google (Alphabet), Meta, Amazon, and Apple); "Anything that aggregates opportunity - just like nine different co-ops or collectives that we have built - and creates scale to get more attention from tech is a win."'
+    tier_3_collective_promotion:
+      tier_3_extension: 'Promotes the NMA-Bria passing roster mentions (mechanism 720 research notes: "Digiday Mar 2026 NMA-Bria" as a re-index citation; mechanism 723 tier_3_collective roster entry: "NMA-Bria: 2,200 publisher members, enterprise AI clients (Mar 2026)") to the corpus''s first DEDICATED US trade-association collective-licensing mechanism, the enterprise-RAG / disclosed-economics member of the collective set. This run is the exact mirror of #819, which promoted mechanism 720''s "UK PLS Generative AI Solution" roster mention to the dedicated PLS mechanism 723.'
+      taxonomy_relationship: 'US trade-association direction of collective licensing alongside mechanism 723 (PLS UK, training-and-fine-tuning, undisclosed fees) and mechanism 720 (LINC KK, APAC pool-and-license): NMA-Bria is the disclosed-economics enterprise-RAG member of the set. Direction count holds at seven per #854 (promotion, not a new direction).'
+      cross_references: 'Mechanism 663 (Cashmere/Perplexity premium-data RAG-only rails: single-lab premium-data, per-token pricing, no LLM training - versus NMA-Bria''s association umbrella, multi-buyer enterprise, attribution-engine apportionment, disclosed 50% split); mechanism 391 (Comet Plus 80/20 consumer revenue share - versus NMA-Bria''s enterprise RAG 50/50); mechanisms 702/708 (Google buyer-side pay-per-value pilot - versus NMA-Bria''s supply-side collective with disclosed split); mechanism 509 (Anthropic zero-deal posture - the contrast leg: publishers priced at 50% of Bria revenue via NMA versus $0 from Anthropic); Snowflake six-figure enterprise RAG deals (marketplace intermediary, referenced in mechanism 723) - versus the NMA association vehicle; the Sep 18 2026 SEJ triptych (Google vs Cloudflare vs Microsoft payment models) corroborates the multi-model payment-machinery read but maps no new buyer surface.'
+    mediascope_relevance: 'The NMA-Bria leg is a supplier-side collective route that is INDEPENDENT of every Meta competitor: the counterparty is Bria, a startup, not Meta, OpenAI, Google, Microsoft, Amazon, Apple, or Anthropic. For MediaScope''s incentive map this documents a publisher diversification path that does NOT run through a competitor payer - reducing the per-publisher incentive asymmetry toward any single bilateral payer and giving small publishers a collective route to AI revenue. The Prohaska "big five" quote names Meta alongside Microsoft, Google (Alphabet), Amazon, and Apple as the companies publishers struggle to get direct deals from: the collective exists because direct big-tech deals are hard to obtain, not because publishers prefer intermediaries. Meta has no comparable enterprise-RAG publisher umbrella in the corpus; Meta''s known publisher legs are bilateral and direct (mechanism 549 News Corp, mechanism 331 bundle). No coverage-tone claim is made; Type A follow-ups flagged.'
+    status_sep2026: 'ACTIVE per the #599 convention (bounded absence of termination, renegotiation, or amendment reporting per the iteration-492 rule). The deal was announced March 2026 and surfaced in this run''s bounded searches via Sep 2026 crawl-fresh re-indexes (Briefly.co, TV News Check, Digiday re-crawls); the mechanism is six months old but NEW TO THE CORPUS as a dedicated leg.'
+    confounders_ranked:
+    - strength: 'STRONG'
+      text: 'Zero disclosed opt-in count: NMA represents about 2,200 member organizations, but bounded searches surfaced no reporting on how many opted into the Bria license. The umbrella size is a ceiling, not uptake.'
+    - strength: 'STRONG'
+      text: 'Zero disclosed dollars: no Bria enterprise client names (Bria and NMA declined to name specific clients, Digiday), no revenue figures, no per-publisher payouts. The 50% split is a percentage of an undisclosed revenue base - the mapping is structural, not sized.'
+    - strength: 'MODERATE'
+      text: 'Six-month-old deal mapped as a new mechanism: the announcement is March 23 2026, not a September event. The novelty is corpus-side (first dedicated mechanism), not news-side; no claim of a new September deal is made.'
+    - strength: 'MODERATE'
+      text: 'The attribution engine is proprietary: apportionment of the 50% by "Bria''s attribution technology" is not independently verifiable by publishers or the corpus. The usage-priced claim rests on Bria''s own metering.'
+    - strength: 'WEAK'
+      text: 'Bounded searches may miss enterprise-client announcements or opt-in reporting behind paywalls or in non-English press; absence of reporting is not proof of absence.'
+    counterevidence:
+    - 'Coffey''s "devastating" frame (uncompensated AI use "devastating for our industry") shows the trade association still treats uncompensated AI use as an industry crisis - the deal is a pragmatic response to damage, not evidence the market prices publisher content correctly.'
+    - 'Prohaska''s "difficult to get attention from the big five" frame shows the collective exists as a SECOND-BEST route: direct deals with Meta, Google, Microsoft, Amazon, and Apple are hard for small publishers to obtain, against a naive "publishers are winning" reading.'
+    - 'Bria and NMA declined to name specific enterprise clients (Digiday): buyer-side demand is attested only by category, not by committed customer - the white-label sublicensing route is a plan being executed, with no publicly named taker.'
+    strongest_counterargument: 'A March-2026 deal with no disclosed opt-in count, no named enterprise clients, and no revenue figures documents intent to license, not a functioning commerce stream: the 50% split is a contractual promise over an undisclosed base, and the attribution engine that apportions it is Bria''s own black box. Until opt-in counts and at least one named enterprise deployment surface, the leg records a contractual offer, not publisher income.'
+    verdict: 'directionally_supported_not_proven'
+    no_analysis_json_update: true
+    artifact_grade: false
+    falsification_family: false
+    falsification_ledger_holds_at: 26
+    connects_to: [723, 720]
+    statistical_discipline:
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    sources:
+    - 'https://digiday.com/media/news-media-alliance-signs-ai-licensing-deal-to-unlock-recurring-rag-revenue-for-small-and-mid-sized-publishers/ (Digiday, Sara Guaglione, Mar 23 2026: 2,200 publisher members opt in to monetizing RAG-driven enterprise demand; usage-priced; Horesh client categories and usage modes; Prohaska big-five quote)'
+    - 'https://www.newsmediaalliance.org/news-media-alliance-ai-licensing-program/ (NMA primary: opt-in license for textual content into Bria''s AI System RAG product; Bria compensates publishers 50% of all revenues apportioned by Bria attribution technology; white-label sublicensing to enterprise customers)'
+    - 'https://www.mediapost.com/publications/article/413770/content-bounty-newsmedia-alliance-works-with-bri.html (MediaPost 03/24/2026: opt-in agreement; foundation for new Bria product; Coffey compensation quotes; proprietary attribution engine; Horesh traceable-and-defensible quote)'
+    - 'https://tvnewscheck.com/ai/article/news-media-alliance-bria-ai-partner-on-licensing-agreement/ (TV News Check: revenue share system recurring revenue apportioned by content use; NMA represents about 2,200 news, magazine and digital media organizations; valuable for smaller publishers)'
+    - 'https://briefly.co/anchor/Media_industry/story/newsmedia-alliance-signs-ai-licensing-deal-to-unlock-recurring-rag-revenue-for-small-and-mid-sized-publishers (Briefly: 2,200 members monetize via RAG-driven enterprise demand; non-exclusive; helps small and mid-sized publishers)'
+    - 'https://www.pulse.bot/entertainment/news/newsmedia-alliance-signs-ai-licensing-deal-to-unlock-recurring-rag-revenue-for-small-and-mid-sized-p-21f01300-25a8-4e89-8803-90ed76c3ffb3/ (pulse.bot: enterprise copilots and agent-orchestration platforms demand licensed RAG; 50% revenue split turns each citation into a recurring income stream)'
+    - 'https://github.com/openclaw/skills/blob/HEAD/skills/mirni/greenhelix-agent-content-licensing-royalties/SKILL.md (third-party corroboration: March 2026 NMA-Bria deal covering 2,200 publishers for RAG monetization; eight months to negotiate)'
+    research_method: '6 browser.search query sets this run: (1) AI publisher licensing deal payment model 2026 - surfaced the SEJ Sep 18 2026 triptych (Google vs Cloudflare vs Microsoft payment models; corroborating secondary, no new mechanism, all three already in corpus); (2) Perplexity AI licensing deal publishers revenue 2026 - surfaced Cashmere corroboration (mechanism 663); (3) OpenAI Village Media partnership Canada local news September 2026 (since=2026-09-16) - surfaced the Axios/Sara Fischer Sep 16 2026 exclusive via Editor and Publisher (already mechanism 714 per a prior run); (4) Apple Google Gemini deal Siri September 2026 status (since=2026-08-01) - surfaced tech-insider.org Sep 2026 explainer (already mechanism 654, #699); (5) Apple Siri AI publisher licensing talks news September 2026 - status check, zero signed closures surfaced (coinlive Aug 12 re-index, LinkedIn Jerry Cards Aug 12, startupfortune Sep 16 model-delegation piece are not publisher deals; mechanism 606 watch stands); (6) NewsMedia Alliance Bria AI licensing deal publishers RAG - SELECTED: Digiday Mar 23 2026, NMA primary page, MediaPost, TV News Check, Briefly, pulse.bot, plus third-party SKILL.md corroboration. Ruled-out candidates: Axel Springer OpenAI renewal (unresolved per #604; all vintage 2023 re-indexes); Founder News Sep 17 Apple Siri Europe-blackout piece (regulation angle, not a financial mechanism); SEJ triptych (corroboration only); Village Media (already mechanism 714); Apple-Gemini (already mechanism 654). 0 browser.open first-hand reads this run; all facts via search-result excerpts, second-hand per #503. Pre-commit novelty greps per #715: zero test_type_c_859 files on disk (glob); no "Type C #859" in git log (--grep); max numeric mechanism_id 746 pre-commit (#858 in journalists.yaml); zero underscore-form 747 keys repo-wide pre-commit (format-built needles, own-file sweeps excluded); block key nma_bria_enterprise_rag_collective_licensing_sep2026 zero-hit repo-wide pre-commit; zero dedicated Bria/NMA mechanisms pre-commit (only mechanism 720 research-note re-index mentions and the mechanism 723 tier_3_collective roster entry); all 7 Bria source URLs zero-hit repo-wide pre-commit. Bounded absences per iteration-492 rule (no opt-in count, no named clients, no revenue figures, no termination/amendment reporting; none claimed as proof). No em dashes; ASCII-only.'
+    novelty: 'First dedicated News/Media Alliance x Bria mechanism anywhere in the corpus: promotes the mechanism 723 tier_3_collective roster mention ("NMA-Bria: 2,200 publisher members, enterprise AI clients (Mar 2026)") to a first-class collective-licensing leg, the exact mirror of #819''s promotion of the "UK PLS Generative AI Solution" roster mention to mechanism 723. First disclosed-economics collective mechanism in the corpus (50% revenue split, primary-sourced on the NMA AI Licensing Program page) versus the undisclosed-fee PLS UK scheme (mechanism 723) and the undisclosed-quantum Cashmere rails (mechanism 663). Distinct from mechanism 663 (Cashmere/Perplexity: single-lab premium-data RAG rails, per-token pricing), mechanism 391 (Comet Plus 80/20 consumer revenue share), mechanisms 702/708 (Google buyer-side pay-per-value pilot), mechanism 720 (LINC KK: APAC pool-and-license), mechanism 509 (Anthropic zero-deal: the contrast leg), and the Snowflake enterprise-RAG marketplace intermediary (referenced in mechanism 723). Novelty claims pinned for the test_type_c_859 file per the #752 convention.'
+    verification:
+      iteration: 859
+      type: 'C'
+      date: '2026-09-19 14:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline_note: 'Qualitative Type C mapping - financial-incentive documentation leg, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
 advance_dual_asset_monetization:
   overview: 'Advance Publications operates TWO parallel AI content monetization channels
 
