@@ -118,7 +118,7 @@ README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "6d5222f82eadefc2c7584fcc4011d971650b8e00"
 
 M736_KEY = "gizmodo_openai_claude_hack_cybersecurity_accountability_register_sep18_2026"
 M737_KEY = "type_b_843_jason_england_sep2026_ceo_interview_platform_direction_asymmetry_sep18_10pm"
