@@ -20426,3 +20426,95 @@ karissa_bell:
       - '#723 (Engadget ambient-listening control)'
       - '#668'
       - '#593'
+jason_england:
+  name: Jason England
+  current_role: Managing Editor, Computing
+  current_publication: Tom's Guide
+  publication_owner: 'Future plc (LSE: FUTR)'
+  beats:
+  - wearables
+  - smart_glasses
+  - computing
+  notes: 'FIRST dedicated Type B mechanism on Jason England in profiles/careers/journalists.yaml (mechanism 146 lives in profiles/competitor-coverage-research.yaml; zero jason_england YAML key pre-commit; both Sep-2026 arms confirmed on England''s Muck Rack profile this run, Sep 18 2026; canonical Tom''s Guide article URLs NOT constructed per the #643 convention; excerpt evidence tier only). Tom''s Guide smart-glasses lead; mechanism 146 (Aug 17 2026) documents England''s Google/Samsung aspirational combat vocabulary (defeat/beat Ray-Ban Meta, zero privacy terms) against Meta-contextual privacy alarm (unauthorized filming). Type B #843 (Sep 18 2026, 22:00 PDT): m737, same-writer, same-month, same-genre (CEO-interview/platform) cross-entity pair. Meta arm: "Exclusive: Even Realities CEO slams Meta Ray-Bans - we don''t thrive on selling data" (Tom''s Guide, Sep 2026; byline Jason England confirmed via his Muck Rack profile this run; Muck Rack verbatim excerpt: "While Silicon Valley races to strap cameras, speakers and multimodal surveillance tools onto our faces, one smart glasses maker is picking a fight direct with Big Tech''s entire playbook. Meta, Google and Snap want you to believe that a front-facing camera is essential for the future of AI wearables. Apple''s even rumored to be jumping in on this too."); headline verb "slams" directs the surveillance vocabulary AT Meta; -0.40 MANUAL ILLUSTRATIVE. Snap arm: "Snap CEO says covert smart glasses are ''creepy'' - why Specs look bold on purpose" (Tom''s Guide, Sep 2026; Specs launched Sep 16 2026; byline Jason England confirmed via his Muck Rack profile this run; verbatim excerpt: "Most smart glasses makers treat their technology like something to apologize for (or something to covertly hide), shrinking cameras and batteries until the frames pass for standard Wayfarers. Snap is doing the exact opposite... it''s clear that the bold, thick-framed silhouette has split opinions."); the ''creepy'' privacy-stigma quote is deflected onto a generic covert category while Snap''s own camera glasses (which record video, per the Times Sep 2026 Specs launch coverage) get positive design framing ("look bold on purpose"); +0.25 MANUAL ILLUSTRATIVE. Illustrative Meta-minus-Snap delta -0.65: quote-platforming direction asymmetry - the journalist headlined one CEO''s attack vocabulary against Meta and another CEO''s stigma vocabulary away from Snap''s own cameras. REFINES mechanism 146: extends the aspiration/alarm inversion from Google/Samsung to Snap and documents the editorial mechanism (which CEO attack quotes get headline verbs vs design-halo verbs). Strong confounders ranked first: (1) interview genre DOMINANT - the privacy vocabulary is sourced (CEO quotes), not England''s own editorial coinage; the asymmetry is quote-platforming, not authorial framing; (2) Specs launch news peg vs Even Realities PR push - the register partly tracks the news event, not the journalist; (3) competitive positioning of both quoted CEOs (Even Realities sells camera-free glasses against Meta; Snap sells its cameras against Meta''s Wayfarers). Moderate: England''s own July register on Meta was adversarial in his own voice (the super-sensing piece "Meta has lost the privacy plot", first-hand mirror read this run, 70 rendered lines), so the Meta arm is voice-consistent rather than a quote-driven outlier; the Even Realities CEO also named Google and Snap, so the attack is not Meta-exclusive. Weak: affiliate; Muck Rack excerpt bounds (publisher body not read first-hand this run - excerpt-tier evidence). Counter-evidence: (1) the ''creepy'' quote IS privacy vocabulary in the Snap arm - privacy language is not absent there, so the asymmetry is directional, not categorical; (2) the Even Realities CEO named Google alongside Meta, so the slam is not a Meta-only claim; (3) both arms are citational (Snap CEO and Even Realities CEO), so the asymmetry lives in quote direction and headline verbs, not in generated investigation; (4) mechanism 146''s Google/Samsung aspirational arms are the stronger comparator - the Sep-2026 CEO pair is a within-genre replication, not a voice-level escalation; (5) n=1 pair. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; verdict directionally_supported_not_proven; NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
+  mechanism_ids: [737]
+  source_urls:
+  - http://muckrack.com/jason-england/articles
+  - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/5
+  competitor_coverage:
+    type_b_843_jason_england_sep2026_ceo_interview_platform_direction_asymmetry_sep18_10pm:
+      block_key: 'type_b_843_jason_england_sep2026_ceo_interview_platform_direction_asymmetry_sep18_10pm'
+      mechanism_id: 737
+      iteration: 843
+      type: B
+      date: '2026-09-18 22:00 PDT'
+      test_file: 'tests/test_type_b_843_jason_england_sep2026_ceo_interview_direction_asymmetry_sep18_10pm.py'
+      meta_arm:
+        headline: "Exclusive: Even Realities CEO slams Meta Ray-Bans - we don't thrive on selling data"
+        publication: tom-s-guide
+        date: '2026-09'
+        author_byline: Jason England
+        genre: CEO-interview/platform piece
+        read: 'excerpt-tier this run via Muck Rack profile (verbatim excerpt, not publisher body)'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+        privacy_vocabulary_present: true
+        privacy_vocabulary_direction: directed_at_meta
+        headline_verb: 'slams (Meta Ray-Bans)'
+        key_quotes:
+        - "we 'don't thrive on selling data'"
+        - 'slams Meta Ray-Bans'
+        - 'strap cameras, speakers and multimodal surveillance tools onto our faces'
+        - 'Meta, Google and Snap want you to believe that a front-facing camera is essential for the future of AI wearables'
+        byline_confirmation: 'Byline "Jason England" confirmed via his Muck Rack profile (http://muckrack.com/jason-england/articles) this run, Sep 18 2026; the piece sits among his newest listed articles alongside the Snap Specs piece; canonical Tom''s Guide URL not constructed per the #643 convention.'
+        register_notes: 'The headline verb "slams" and the "selling data" quote attach surveillance vocabulary to Meta; England''s editorial choice is which attack quotes get the headline slot.'
+      snap_arm:
+        headline: "Snap CEO says covert smart glasses are 'creepy' - why Specs look bold on purpose"
+        publication: tom-s-guide
+        date: '2026-09'
+        author_byline: Jason England
+        genre: CEO-interview/platform piece
+        read: 'excerpt-tier this run via Muck Rack profile (verbatim excerpt, not publisher body)'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        privacy_vocabulary_present: true
+        privacy_vocabulary_direction: deflected_from_snap_own_cameras
+        headline_verb: 'positive design framing (Specs "look bold on purpose")'
+        key_quotes:
+        - "Snap CEO says covert smart glasses are 'creepy'"
+        - 'why Specs look bold on purpose'
+        - 'treat their technology like something to apologize for (or something to covertly hide)'
+        - 'shrinking cameras and batteries until the frames pass for standard Wayfarers'
+        - 'Snap is doing the exact opposite'
+        - 'the bold, thick-framed silhouette has split opinions'
+        snap_specs_record_video: true
+        record_video_source: 'thetimes.com Sep 2026 Specs launch coverage: "The glasses deliver a display in front of the user that enables them to browse the web, play games, communicate, use AI to ask questions, translate signs and record video."'
+        byline_confirmation: 'Byline "Jason England" confirmed via his Muck Rack profile (http://muckrack.com/jason-england/articles) this run, Sep 18 2026; the piece is his newest listed article (Specs launched Sep 16 2026); canonical Tom''s Guide URL not constructed per the #643 convention.'
+        register_notes: 'The ''creepy'' privacy-stigma quote lands on a generic covert category (Wayfarer-style discreet cameras); Snap''s own camera glasses - which record video - are exempted by design rhetoric ("look bold on purpose"). Same sourced-privacy-vocabulary genre as the Meta arm, but the direction inverts.'
+      illustrative_delta_meta_minus_snap: -0.65
+      delta_calc: '(-0.40) - (0.25) = -0.65'
+      verdict: 'REFINES mechanism 146 (England competitive aspiration inversion): the Aug-17 Google/Samsung aspiration-vs-Meta-alarm pattern extends to Snap in September 2026, and the new pair documents the editorial mechanism - quote-platforming direction. England headlined Even Realities CEO Will Wang''s attack vocabulary against Meta ("slams", "selling data") while headlining Snap''s CEO stigma vocabulary away from Snap''s own cameras ("creepy" for covert glasses; "look bold on purpose" for Specs). The asymmetry is directional and editorial (headline verbs + quote selection), not categorical - privacy vocabulary exists in both arms. CRITICAL SCOPE BOUND: the vocabulary in both arms is sourced (CEO quotes), so this is NOT evidence that England''s own authorial voice is adversarial to Meta in the Snap arm''s genre; England''s own July voice on Meta WAS adversarial in his own register (the super-sensing piece: "Meta has lost the privacy plot"), so the Meta arm is voice-consistent. Verdict: directionally_supported_not_proven.'
+      research_method: 'Journalist selection this run: Sanuj Bhatia ruled out (the Jul 2026 XGIMI MemoMind One anti-Meta piece cross-links to England''s pieces; byline not confirmed as Bhatia''s - the Muck Rack profile confirmed England''s bylines on the Sep-2026 CEO-interview pair; the Rokid Jul 2026 piece is Bhatia''s but no Meta comparator arm surfaced - per iteration-492 rule no selection-silence claims); England selected because the Sep-2026 CEO-interview pair is same-writer, same-month, same-genre. 8 browser.search query sets and 4 browser.open reads this run (Jason England Muck Rack profile first-hand 293 lines; Tom''s Guide smart-glasses category pages confirming England''s Mar 2026 bylines; cloudfront Tom''s Guide mirrors for the super-sensing piece (70 lines) and the XGIMI piece (89 lines)). Byline confirmed via Muck Rack profile for both arms. No canonical URLs constructed per the #643 convention. Novelty verified pre-commit: zero test_type_b_843 files; no "Type B #843" in git log; max numeric mechanism_id 736; zero assigned underscore-form 737 keys; block key zero-hit; zero jason_england YAML key in careers/journalists.yaml pre-commit.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; no significance claimed. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (a mechanism-146 refinement with a direction-asymmetry scope bound, not a uniform-prediction contradiction); ledger holds at 26.'
+      cross_refs:
+      - '#146 (Jason England competitive aspiration inversion - REFINED here with the Sep-2026 quote-platforming direction extension to Snap)'
+      - '#818 (Karissa Bell Engadget Meta-vs-Snap Specs register pair - same-entity comparator, Sep 2026)'
+      - '#727 (WIRED x Snap Sep-16 launch natural experiment)'
+      - '#828 (Ropek temporal register shift on Snap)'
+      - '#833 (Peters cross-entity - hands-on genre comparator)'
+      confounders_ranked:
+        strong:
+        - 'DOMINANT confound: interview genre - the privacy vocabulary in both arms is sourced (CEO quotes), not England''s own editorial coinage; the asymmetry is quote-platforming (headline verbs + quote selection), not authorial framing'
+        - 'Story-subject asymmetry: Snap Specs launch peg (Sep 16 2026, $2,195 standalone AR glasses) vs Even Realities PR push (camera-free positioning against Big Tech); the register partly tracks the news event, not the journalist'
+        - 'Competitive positioning of quoted CEOs: Even Realities sells camera-free glasses against Meta; Snap sells its own cameras against Meta''s Wayfarers - both sources have commercial motives for their attack/deflection vectors'
+        moderate:
+        - 'England''s own July register on Meta was adversarial in his own voice (the super-sensing piece: "Meta has lost the privacy plot", first-hand mirror read this run, 70 rendered lines) - the Meta arm is voice-consistent, not a quote-driven outlier'
+        - 'The Even Realities CEO named Google and Snap alongside Meta ("Meta, Google and Snap want you to believe that a front-facing camera is essential"), so the slam is not a Meta-exclusive claim'
+        weak:
+        - 'Excerpt bounds: both arms are Muck Rack excerpt-tier this run; publisher bodies not read first-hand - headline/dek/excerpt register only'
+        - 'Affiliate: Meta is the only purchasable competitor for some links - runs counter to the observed pattern, weak as an explanation'
+      counterevidence:
+      - 'COUNTEREVIDENCE: the ''creepy'' quote IS privacy vocabulary in the Snap arm - privacy language is not absent there; the asymmetry is directional, not categorical'
+      - 'COUNTEREVIDENCE: the Even Realities CEO named Google alongside Meta, so the Meta arm''s attack is not a Meta-only claim - the direction claim rests on the headline verb, not the quote''s exclusivity'
+      - 'COUNTEREVIDENCE: both arms are citational (Snap CEO, Even Realities CEO) - no generated privacy investigation in either arm; the asymmetry lives in quote direction and headline verbs only'
+      - 'COUNTEREVIDENCE: mechanism 146''s Google/Samsung aspirational arms are the stronger comparator - the Sep-2026 CEO pair is a within-genre replication of the direction pattern, not a voice-level escalation'
+      - 'COUNTEREVIDENCE: n=1 pair; a single September CEO-interview pair does not establish a stable direction property for England - the finding is genre-bound documentation, not a journalist-level generalization'
+      no_analysis_json_update: true
