@@ -329,6 +329,137 @@ competitor_relationships:
         - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
         - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
         - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+    mechanism_745_bi_anthropic_nasdaq_ipo_milestone_register_vs_meta_liability_week_sep19_2026:
+      finding_type: cross_publication_coverage_asymmetry
+      publication: business-insider
+      competitor: anthropic
+      comparator_entity: meta
+      pair: "Business Insider x Anthropic (vs Meta)"
+      rotation_type: A
+      iteration: 857
+      iteration_type: "A"
+      mechanism_id: 745
+      discovery_date: '2026-09-19'
+      iteration_time: '2026-09-19 12:00 PDT'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      status: documented
+      finding: 'FIRST dedicated corpus mechanism on Business Insider''s Sep 13 2026 Anthropic Nasdaq-choice IPO scoop: BI reported (per four verbatim secondary attributions) that Anthropic "has selected Nasdaq for a potential October initial public offering (IPO) at a reported valuation of up to $2 trillion" (gateiolink, citing BI, Sep 13; "People familiar with the plans told Business Insider the Claude developer targets an October listing", webpronews; "The choice, reported by Business Insider and confirmed by CNBC", techdefused; "Business Insider reported on September 13 that Anthropic has selected Nasdaq for its anticipated IPO", startupfortune). The register is banking-milestone validation: the Nasdaq choice as maturation event, "$2 trillion" valuation talk and "up to $100 billion" raise framed as record-chasing ("would top the $86.2 billion record set by SpaceX in June", aistockwire), Nvidia in talks to anchor "as much as $10 billion" as "an early strategic backer for the outsized offering" (Reuters via aistockwire; globalbusinessoutlook), "Nasdaq would host the year''s two largest IPOs by proceeds" (aistockwire). MANUAL ILLUSTRATIVE +0.4167 avg (0.45 milestone-validation / 0.40 aspirational-hype / 0.40 prestige-comparison). In the SAME Sep 13-18 window BI''s own Meta wearables coverage (all via attested secondaries, BI paywalled, excerpt-bounded per #503) routes through liability vocabulary: (1) Katie Notopoulos'' BI report on Andrew Bosworth''s AMA - "Meta''s CTO says the glasses problem is a small number of bad actors" (newslocker via TNW, Sep 16) - executive-defense relay register +0.10; (2) BI''s Project Luna framing - Meta "navigating its Google Glass moment", "the camera has become the single biggest liability in the company''s wearables strategy" (tech-insider.org summary of BI reporting, Sep 17) - adversarial-editorial register -0.30; (3) BI''s creator-bans reporting - "Meta bans creators that film people without consent" (noypigeeks citing BI, Jul 26; archyde citing BI via TechRepublic, Sep 16) plus the software camera-disable on LED tamper - accountability-news register -0.15. Meta arm avg -0.1167. Illustrative delta (Anthropic minus Meta) +0.5333, target-minus-peer. EXTENDS mechanism 420''s BI control-case finding (Anthropic aspirational vs Meta product-neutral, +0.34) to the IPO-march peg and the liability-week Meta comparator; REPLICATES the direction (Anthropic softest despite $0 direct tie) while the payer (OpenAI, Axel Springer deal) sits at the hard end of the BI quad (m399: -0.42 profitability skepticism). The financial tie predicts the OPPOSITE ordering. NOT a falsification-family member (prediction neutral_to_aspirational met; register documentation + m420 extension, not a uniform-prediction test). Ledger holds at 26. Correlation is not causation.'
+      anthropic_arms:
+      - piece: 'BI Nasdaq-choice IPO scoop (Sep 13 2026, person familiar)'
+        date: '2026-09-13'
+        source_routing: banking_markets_scoop
+        register: milestone_validation
+        key_language:
+        - 'According to Business Insider on Sunday (September 13), Anthropic has selected Nasdaq for a potential October initial public offering (IPO) at a reported valuation of up to $2 trillion'
+        - 'People familiar with the plans told Business Insider the Claude developer targets an October listing'
+        - 'The choice, reported by Business Insider and confirmed by CNBC'
+        tone_illustrative: 0.45
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt attributions (0 browser.open this turn per #503; BI paywalled); illustrative only'
+        provenance: 'BI original paywalled; no businessinsider.com URL returned verbatim in this run''s search results. Attested by four verbatim secondaries: https://gateiolink.net/news/detail/anthropic-picks-nasdaq-for-october-ipo-at-reported-2-trillion-valuation-24270427 ; https://www.webpronews.com/anthropic-picks-nasdaq-for-blockbuster-ipo-as-it-chases-2-trillion-valuation-amid-ai-safety-warnings/ ; https://techdefused.com/a/gZymG9d/anthropic-ipo-round-up-nasdaq-mid-term-gamble-betting-and-the-dreaded-pause-button-all-you-need-to-k ; https://startupfortune.com/anthropic-is-reportedly-heading-toward-a-2-trillion-nasdaq-ipo-in-october/'
+      - piece: '$2 trillion valuation / $100 billion raise aspirational frame'
+        date: '2026-09-13'
+        source_routing: markets_commentary_relay
+        register: aspirational_hype
+        key_language:
+        - 'valuation estimates running as high as $2 trillion'
+        - 'Investors have discussed a listing that values Anthropic near $2 trillion'
+        - 'the raise under discussion, as much as $100 billion, would top the $86.2 billion record set by SpaceX in June'
+        tone_illustrative: 0.40
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt language (0 browser.open per #503); illustrative only'
+        provenance: 'Attested by https://startupfortune.com/anthropic-is-reportedly-heading-toward-a-2-trillion-nasdaq-ipo-in-october/ and https://aistockwire.com/blog/anthropic-nasdaq-ipo-listing-nvidia-investment-september-2026'
+      - piece: 'Nvidia anchor-investor prestige frame'
+        date: '2026-09-11'
+        source_routing: markets_commentary_relay
+        register: prestige_comparison
+        key_language:
+        - 'Nvidia (NVDA) is separately in talks to anchor the offering with as much as $10 billion'
+        - 'would give Anthropic an early strategic backer for the outsized offering'
+        - 'Nasdaq would host the year''s two largest IPOs by proceeds'
+        tone_illustrative: 0.40
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt language (0 browser.open per #503); illustrative only'
+        provenance: 'Attested by https://aistockwire.com/blog/anthropic-nasdaq-ipo-listing-nvidia-investment-september-2026 (Reuters sourcing) and https://globalbusinessoutlook.com/technology/anthropic-picks-nasdaq-for-ipo-eyes-nvidia-as-anchor-investor/'
+      meta_arms:
+      - piece: 'Bosworth AMA executive-defense relay (Katie Notopoulos, BI)'
+        date: '2026-09-16'
+        source_routing: executive_quote_relay
+        register: executive_defense
+        key_language:
+        - 'Meta''s CTO says the glasses problem is a small number of bad actors'
+        - 'Most people use the glasses normally'
+        tone_illustrative: 0.10
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt attribution (0 browser.open per #503); the register gives Meta''s CTO the floor to minimize; illustrative only'
+        provenance: 'BI original paywalled; attested by https://www.newslocker.com/en-us/news/social-media-news/meta-plans-camera-free-smart-glasses-this-autumn-the-information-reports/ (via The Next Web summary of Notopoulos'' BI report)'
+      - piece: 'Project Luna "Google Glass moment" liability framing (BI)'
+        date: '2026-09-17'
+        source_routing: editorial_framing
+        register: adversarial_editorial
+        key_language:
+        - 'navigating its Google Glass moment'
+        - 'the camera has become the single biggest liability in the company''s wearables strategy'
+        tone_illustrative: -0.30
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt attribution (0 browser.open per #503); BI''s own framing phrase per the summary; illustrative only'
+        provenance: 'Attested by https://tech-insider.org/meta-confirms-a-camera-free-path-with-project-luna/ ("Business Insider''s framing calls it..."); exact BI wording unverified'
+      - piece: 'Creator-bans accountability news (BI, late Jul 2026)'
+        date: '2026-07-26'
+        source_routing: accountability_news
+        register: accountability_remediation
+        key_language:
+        - 'Meta bans creators that film people without consent'
+        - 'software that turns off the camera if someone tries to block the recording light'
+        tone_illustrative: -0.15
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt attributions (0 browser.open per #503); remediation-forward accountability news; illustrative only'
+        provenance: 'Attested by https://www.noypigeeks.com/social-media/meta-bans-creators-film-consent-smart-glasses/ ("According to the report by Business Insider") and https://www.archyde.com/meta-reportedly-readies-camera-less-smart-glasses/ (BI via TechRepublic)'
+      asymmetry_scorer:
+        anthropic_arm_tones: [0.45, 0.40, 0.40]
+        anthropic_arm_avg: 0.4167
+        meta_arm_tones: [0.10, -0.30, -0.15]
+        meta_arm_avg: -0.1167
+        illustrative_delta_anthropic_minus_meta: 0.5333
+        delta_calc: '(0.45+0.40+0.40)/3 - (0.10-0.30-0.15)/3 = 0.416667 - (-0.116667) = +0.5333'
+        delta_interpretation: 'same-publication, same-week register gradient: BI routes Anthropic''s IPO march through banking-milestone vocabulary (+0.4167) while routing Meta''s wearables through liability vocabulary (-0.1167); the 0.5333 illustrative spread extends m420''s +0.34 control-case gap to a harder Meta comparator set'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        statistical_contract: degenerate_small_n_per_arm
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open this turn per #503; BI paywalled, attested-secondaries only); tones are illustrative only'
+        verdict: 'Within-publication register gradient documented, not proven: Business Insider applies an aspirational banking-milestone register to Anthropic''s Sep 13 Nasdaq-choice IPO scoop (+0.4167) while its own Meta wearables coverage in the Sep 13-18 window runs through liability registers (-0.1167). The gradient EXTENDS mechanism 420''s control-case finding to the IPO-march peg and REPLICATES its direction (Anthropic softest despite $0 direct tie; the Axel Springer payer sits at the hard end per m399). NOT a falsification-family member (neutral_to_aspirational prediction met; register documentation + m420 extension, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+      financial_context:
+        axel_springer_openai_deal: 'Axel Springer x OpenAI global licensing partnership, Dec 2023; tens of millions of euros per year (Bloomberg Law, the-decoder); mapped in the m420 block'
+        anthropic_direct_tie: '$0 direct publisher incentive - carried from the competitor_relationships.anthropic financial metadata (no Axel Springer-Anthropic licensing deal); Amazon $13B+ and Google $3B+ Anthropic stakes are investor-level, not publisher-level'
+        openai_payer_register: 'BI''s own m399 (Aug 30 2026) applied profitability skepticism to the PAYER (OpenAI avg -0.42) - the deal did not buy softness on the paid counterparty'
+        prediction: 'neutral_to_aspirational (carried from profile) - observed register matches; the tie predicts the OPPOSITE ordering (OpenAI softest), which the BI quad contradicts'
+        mechanism: 'null-tie aspirational extension at a payer-owned publication: the aspirational register lands on the $0-tie lab, not the paid counterparty'
+      confounders:
+        strong:
+        - 'Beat mismatch - the Anthropic scoop is IPO-deal/banking-beat reporting where milestone vocabulary is the genre default; the Meta arms are tech-beat liability coverage; editorial priors differ by desk, not necessarily by entity.'
+        - 'Event-driven positivity - the Nasdaq choice is a real milestone; $65B annualized revenue run rate (end-Jul, company-stated), $11.5B Q2 revenue (14x YoY), 80%+ gross margins (FT) are genuinely strong business facts; a virtue register is event-driven, not necessarily entity-driven.'
+        - 'Search-excerpt-bounded evidence (0 browser.open this turn per #503; BI paywalled; all six arms rest on attested-secondaries, not first-hand BI opens); register reads bounded to retrieved text; full-text reads could reveal interrogating detail the excerpts hide.'
+        moderate:
+        - 'Temporal skew inside the Meta set - the creator-bans arm is late Jul 2026 (7 weeks before the Sep arms); one fresh Meta remediation arm would shift the illustrative avg.'
+        - 'n=3/n=3 degenerate sample; single-story variance cannot be ruled out; one more Anthropic accountability arm or one more Meta milestone arm would shift the illustrative avgs.'
+        - 'Ordering - Amodei''s Sep 12 slowdown call predates the Sep 13 scoop by one day; the scoop''s newsroom may have been filed before the call''s coverage cycle, limiting the slowdown-tension reading.'
+        weak:
+        - 'Headline-vs-body - the "Google Glass moment" phrase is BI framing per a third-party summary; exact BI wording unverified; the editorial weight of the phrase is bounded.'
+        - 'Subordinated negatives available in the relay chain - $42B 2025 net loss (techdefused), $517B compute commitments / 14.8 GW (The Information via wealthprofessional) - the softness may reflect banking-beat norms rather than entity leniency; accepted as confounder, not rebutted.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: BI''s own m399 (Aug 30) applied profitability skepticism to the PAYER (OpenAI, -0.42 avg) - the Axel Springer licensing deal did not buy softness on the paid counterparty; the tie sits on the wrong side to explain Anthropic''s softness.'
+      - 'COUNTEREVIDENCE: The slowdown-week tension IS noted inside the relay chain (startupfortune: "The awkward part is plain: its own CEO is asking the AI industry to slow down"; webpronews: "amid AI safety warnings") - the tension is coverable, but BI''s scoop routes the peg through banking-milestone vocabulary; register follows beat, not entity.'
+      - 'COUNTEREVIDENCE: WSJ''s own Sep 18 delay-to-November report (per crypto.news: "The Wall Street Journal reported the delay") slipped the IPO timeline within 5 days of BI''s October scoop - the aspirational register held on a stale peg; register momentum outruns verification.'
+      - 'COUNTEREVIDENCE: The company-favorable fundamentals in the relay are company-stated or anonymous - $65B run rate (company-stated), adjusted operating profit 2 consecutive quarters (FT, small-investor-group briefing), Nasdaq choice unconfirmed by Anthropic or Nasdaq - the milestone register is built on unattributed sourcing, the same structure Meta''s "built privacy in from the ground up" quote carried in the French-probe coverage.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+      falsification_family: 'NOT a falsification-family member: register documentation plus m420 control-case extension (neutral_to_aspirational prediction met), not a uniform-prediction test. Ledger holds at 26 - TWENTY-SIXTH present, TWENTY-SEVENTH absent.'
+      research_method: '5 browser.search query sets this run (Business Insider Anthropic IPO delay valuation since=2026-09-15 - SELECTED: Sep 13 Nasdaq scoop via 4 verbatim secondary attributions; Business Insider Meta French prosecutors smart glasses since=2026-09-15 - French-probe arms were Reuters relays, no BI original; businessinsider.com Anthropic Nasdaq IPO $2 trillion - SELECTED: 6 verbatim secondary attestations incl. Nvidia anchor + $2T/$100B frames; Business Insider Meta fake ads Germany court - German-ruling arms were Reuters relays, no BI original; Business Insider Meta smart glasses/Meta Connect since=2026-09-10 - SELECTED: Notopoulos Bosworth AMA, Luna "Google Glass moment" framing, creator-bans reporting). 0 browser.open this turn per #503; BI paywalled; all arms attested-secondaries with explicit provenance. Pre-commit novelty sweeps per #715: max numeric mechanism_id 744; zero underscore-form 745/746 keys; block key zero-hit; all 10 secondary URLs zero-hit repo-wide; zero test_type_a_857 files; no "Type A #857" in git log.'
+      test_file: tests/test_type_a_857_bi_anthropic_nasdaq_ipo_milestone_register_vs_meta_liability_week_sep19_12pm.py
+      connects_to:
+      - 420
+      - 399
+      - 542
+      - 730
+      - 739
   meta:
     financial_tie: "none"
     estimated_value: "$0"
