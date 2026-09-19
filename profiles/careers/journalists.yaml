@@ -20736,3 +20736,143 @@ jason_england:
       - 'COUNTEREVIDENCE: mechanism 146''s Google/Samsung aspirational arms are the stronger comparator - the Sep-2026 CEO pair is a within-genre replication of the direction pattern, not a voice-level escalation'
       - 'COUNTEREVIDENCE: n=1 pair; a single September CEO-interview pair does not establish a stable direction property for England - the finding is genre-bound documentation, not a journalist-level generalization'
       no_analysis_json_update: true
+
+james_pero:
+  name: James Pero
+  current_role: Senior Reporter
+  current_publication: Gizmodo
+  publication_owner: Gizmodo (Keleops AG)
+  beats:
+  - smart glasses
+  - wearables
+  - AR/VR
+  notes: 'Gizmodo''s self-described "resident smart glasses guy" (per mechanism 211, Type B #219, Aug 21 2026, recorded in profiles/competitor-coverage-research.yaml as james_pero_three_entity_apple_reputational_credit_privacy_gradient).
+    Type B #858 (Sep 19 2026): mechanism 746 - FOURTH-ENTITY EXTENSION of the m211 three-entity gradient to Snap. NEW Sep 2026 Snap arm: Gizmodo "Snap''s Do or Die Moment in AR Has Arrived" (byline James
+    Pero via the piece''s first-person voice - "when I talked to Snap''s Head of Specs Studio" - plus the "James Pero / Gizmodo" photo credits; date bounded circa Sep 18 2026 from search-index crawl stamps
+    per iteration-492, never claimed as an exact publication date; excerpt-tier per #503, 0 browser.open this run): "I tend to agree" with Snap''s "not smart glasses... this is a computer built into a pair
+    of augmented reality glasses" CEO reframing (Ben Feuerstein quote accepted without challenge - the m113 passive-acceptance pattern, now in Pero); "In my initial testing, Snap''s Specs *do* feel like
+    the most compelling AR glasses out there"; the only Meta mention is a financial swipe ("unlike Meta and its Reality Labs division, which has racked up $80 billion in operating losses since 2020") -
+    Meta as negative foil, never as investigated subject. Zero privacy/surveillance vocabulary on a face-worn device with two full-color high-resolution cameras plus two IR computer-vision cameras. Hardware
+    parity makes the asymmetry salient: Snap Specs carry MORE face-worn cameras than Meta''s single-camera glasses yet receive zero privacy scrutiny. Illustrative Snap tone +0.35 (MANUAL ILLUSTRATIVE).
+    Meta arms carried un-rescored from m211 per #807 (RECIDIVISM LOOP: 25+ alarm terms, "anti-Meta plan" section title, "Thanks to Meta" opening, 7M+ units of success framed as escalating menace; asymmetry_score
+    1.0; meta_coverage_tone adversarial). Fresh excerpt-tier attestation this run of the register''s persistence - NOT new arms: Gizmodo "Meta''s New AI Smart Glasses Drop Ray-Ban Branding and Add Kylie
+    Jenner" ("Meta has a poor track record when it comes to privacy", circa Jun 2026) and "Meta Thinks ''Social Learning'' Can Fix Smart Glasses'' Privacy Problems" ("controversies have already been frequent
+    and often self-inflicted by Meta", circa Jun 2026). EXTENDS m211 to a fourth entity in the Sep-16 launch window; cross-journalist replication with m743 (Ashworth, WIRED) and m269 (Ropek, TechCrunch)
+    launch-window direction - three journalists, three outlets, same window, same direction (challenger optimism; Meta stays the adversarialized foil). The m211 financial-incentive leg (Apple affiliate
+    revenue > Google ad partner > Meta zero relationship) does NOT predict Snap''s soft register: no Snap financial relationship with Gizmodo/Keleops AG is on record, yet the fourth entity lands at the
+    soft end. The asymmetry is Meta-exceptionalism, not payer-driven. Confounders ranked strong-first: STRONG - excerpt-tier evidence (search-excerpt bounded per #503; full-text register could differ);
+    STRONG - story-type difference (launch-window first-impressions hands-on vs m211''s reviews/editorials); STRONG - the Snap piece itself carries price skepticism ("do or die" framing, $2,200 investment
+    framing) - the positive register is on product capability, not value. MODERATE - n=1 new arm, degenerate sample. MODERATE - honest product journalism (51-degree FOV standalone AR is a genuine technical
+    step). WEAK - temporal skew (Meta arms May 2025-Aug 2026 vs Sep 2026 Snap arm). WEAK - mirror-attribution risk (byline via first-person voice + photo credits, not a rendered byline header). Counter-evidence
+    4: the price register on Snap is adversarial-adjacent, so the optimism is capability-scoped, not uniform; the $80B Reality Labs swipe shows Pero remains adversarial toward Meta even inside a Snap piece
+    - consistency, not suppression; m716 house-adversarialism means the Meta register may be partly house style, not purely personal; Pero''s m211 Apple/Google arms were also pre-launch aspirational, so
+    the pattern may be challenger-optimism vs incumbent-skepticism rather than Meta-specific. connects_to: [211, 31, 99, 743, 269]. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED;
+    is_significant False per the Aug 28 2026 standing rule; verdict directionally_supported_not_proven; no_analysis_json_update: true; NOT artifact-grade; NOT a falsification-family member (register documentation
+    + fourth-entity extension, not a uniform-prediction test); falsification ledger holds at 26 (TWENTY-SIXTH present; TWENTY-SEVENTH absent in profiles/). Correlation only, not causation. Hypothesis-generating
+    only. ASCII-only, no em dashes.'
+  mechanism_ids:
+  - 211
+  - 746
+  source_urls:
+  - https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
+  - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+  - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+  - https://gizmodo.com/metas-new-smart-glasses-drop-ray-ban-branding-and-add-kylie-jenner-2000775546
+  - https://gizmodo.com/meta-thinks-social-learning-can-fix-smart-glasses-privacy-problems-2000776162
+  competitor_coverage:
+    type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension:
+      iteration: 858
+      mechanism_id: 746
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: 2026-09-19 13:00 PDT
+      block_key: type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension
+      author: Kit (with Ray)
+      design: 'Type B journalist cross-entity tracking, within-journalist fourth-entity register extension in a launch window. Question: does James Pero (Gizmodo) apply his m211 Meta-recidivism register
+        to Snap''s launch-window Specs, or the challenger-optimism register he applies to Apple/Google pre-launch hardware? Snap arm: Gizmodo "Snap''s Do or Die Moment in AR Has Arrived" (byline James Pero
+        via first-person voice + "James Pero / Gizmodo" photo credits; date bounded circa Sep 18 2026 from search-index crawl stamps per iteration-492; excerpt-tier per #503, 0 browser.open this run): aspirational-agreement
+        register - "I tend to agree" with the "not smart glasses... this is a computer built into a pair of augmented reality glasses" reframing; "In my initial testing, Snap''s Specs *do* feel like the
+        most compelling AR glasses out there"; +0.35 MANUAL ILLUSTRATIVE. Meta comparator: the only Meta mention is the "$80 billion in operating losses since 2020" negative-foil swipe; m211 Meta arms carried
+        un-rescored per #807. No em dashes.'
+      snap_arm:
+        title: Snap's Do or Die Moment in AR Has Arrived
+        url: https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
+        date: date_bounded_circa_sep_18_2026
+        author_byline: 'James Pero (first-person voice: "when I talked to Snap''s Head of Specs Studio" + "James Pero / Gizmodo" photo credits; explicit byline header not surfaced in search-index render,
+          bounded attribution)'
+        publication: Gizmodo (Keleops AG)
+        genre: launch-window hands-on first impressions
+        key_quotes:
+        - 'Framing acceptance (observed this run): "One of the big things with Specs that we want people to understand is that these are not smart glasses," Feuerstein told me. "This is a computer built
+          into a pair of augmented reality glasses." - accepted with "I tend to agree"'
+        - 'Agreement (observed this run): "I tend to agree. The new Specs are ambitious."'
+        - 'Product verdict (observed this run): "In my initial testing, Snap''s Specs *do* feel like the most compelling AR glasses out there."'
+        - 'Meta foil (observed this run): "unlike Meta and its Reality Labs division, which has racked up $80 billion in operating losses since 2020, Snap doesn''t appear to be too keen on pushing the AR
+          boulder up the hill entirely on its own."'
+        - 'Hardware parity (MacRumors attestation): two full-color high-resolution cameras + two infrared computer vision cameras, 51-degree FOV LCoS, 132-136g - MORE face-worn cameras than Meta''s single-camera
+          glasses'
+        register_notes: Aspirational-agreement on capability; price-realism ("do or die", $2,200 investment framing) on value; zero privacy/surveillance vocabulary on the camera hardware.
+        tone_score: 0.35
+        tone_basis: hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE
+        evidence_tier: 'search-excerpt-bounded per #503 (5 browser.search query sets; 0 browser.open this run); date bounded from search-index crawl stamps per iteration-492, never claimed as an exact publication
+          date'
+        byline_attribution_urls:
+        - https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
+      meta_arm_carried:
+        mechanism: 211
+        carried_per: '#807 (un-rescored)'
+        register: 'RECIDIVISM LOOP: 25+ alarm terms, "anti-Meta plan" section title, "Thanks to Meta" opening, 7M+ units of success framed as escalating menace; asymmetry_score 1.0; meta_coverage_tone adversarial'
+        arms:
+        - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+        - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+        - https://gizmodo.com/airpods-with-cameras-wont-let-you-be-a-total-creep-2000756194 (Apple arm, reputational-credit register)
+        fresh_attestation_this_run: 'NOT new arms (excerpt-tier only, explicitly flagged): https://gizmodo.com/metas-new-smart-glasses-drop-ray-ban-branding-and-add-kylie-jenner-2000775546 ("Meta has a
+          poor track record when it comes to privacy", circa Jun 2026); https://gizmodo.com/meta-thinks-social-learning-can-fix-smart-glasses-privacy-problems-2000776162 ("controversies have already been
+          frequent and often self-inflicted by Meta", circa Jun 2026)'
+      finding_summary: 'James Pero extends the m211 three-entity gradient to a fourth entity in the Sep-16 launch window: Snap gets the challenger-optimism register ("I tend to agree", "most compelling
+        AR glasses out there", +0.35 illustrative) while Meta appears only as the $80B-losses negative foil and keeps the m211 recidivism register (carried un-rescored per #807). Cross-journalist replication
+        with m743 (Ashworth, WIRED) and m269 (Ropek, TechCrunch): three journalists, three outlets, same window, same direction. The m211 financial-incentive leg does NOT predict Snap''s soft register (no
+        Snap-Gizmodo tie on record) - the asymmetry is Meta-exceptionalism, not payer-driven.'
+      statistical_discipline:
+        scores: MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        not_artifact_grade: true
+      falsification_family: NOT a falsification-family member (register documentation + fourth-entity extension, not a uniform-prediction test); falsification ledger holds at 26 (TWENTY-SIXTH present; TWENTY-SEVENTH
+        absent in profiles/)
+      confounders_ranked:
+        strong:
+        - 'Excerpt-tier evidence (search-excerpt bounded per #503; full-text register could differ)'
+        - Story-type difference (launch-window first-impressions hands-on vs m211 reviews/editorials; register follows story type)
+        - Price skepticism inside the Snap piece itself ("do or die", $2,200 investment framing) - the positive register is capability-scoped, not uniform
+        moderate:
+        - n=1 new arm, degenerate sample
+        - Honest product journalism (51-degree FOV standalone AR is a genuine technical step)
+        weak:
+        - Temporal skew (Meta arms May 2025-Aug 2026 vs Sep 2026 Snap arm)
+        - Mirror-attribution risk (byline via first-person voice + photo credits, not a rendered byline header)
+      counterevidence:
+      - The price register on Snap is adversarial-adjacent, so the optimism is capability-scoped, not uniform
+      - The $80B Reality Labs swipe shows Pero remains adversarial toward Meta even inside a Snap piece - consistency, not suppression
+      - m716 house-adversarialism means the Meta register may be partly house style, not purely personal
+      - Pero's m211 Apple/Google arms were also pre-launch aspirational, so the pattern may be challenger-optimism vs incumbent-skepticism rather than Meta-specific
+      connects_to:
+      - 211
+      - 31
+      - 99
+      - 743
+      - 269
+      research_method: '5 browser.search query sets this run (Snap Specs launch Sep-16 hands-on review bylines; Karissa Bell Engadget hands-on - rejected, covered via m722/#818; Scott Stein CNET Specs -
+        interview relay only, no Stein-authored piece; Cesar Cadenas TechRadar Specs - no Meta comparator arm; James Pero Gizmodo Meta - SELECTED: m211 + two Jun-2026 pieces; Mashable awkward-time piece
+        - byline unresolved, rejected; Gizmodo do-or-die piece - SELECTED: byline James Pero via first-person voice + photo credits). 0 browser.open this run per #503. Pre-commit novelty sweeps per #715:
+        max numeric mechanism_id 745 pre-commit; zero underscore-form 746 keys (format-built needles); block key zero-hit; "Do or Die Moment in AR Has Arrived" headline string zero-hit repo-wide; Gizmodo
+        URL zero-hit repo-wide; zero test_type_b_858 files on disk; no Type B #858 in git log (--grep). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em
+        dashes.'
+      test_file: tests/test_type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension_sep19_1pm.py
