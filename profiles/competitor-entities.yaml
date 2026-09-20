@@ -7485,6 +7485,78 @@ entities:
         iteration: 564
         type: C
         date: 2026-09-06 12:00 PDT
+    nyt_ai_litigation_economics_28m_price_setting_addendum_sep2026:
+      mechanism_id: 753
+      iteration: 869
+      rotation: Type C
+      date_analyzed: '2026-09-20'
+      time_pdt: '00:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'NYT AI-Litigation Economics Price-Setting Addendum (Sep 2026) - $28M+ Cumulative Spend Since 2023 Corroborated Across Four Surfaces, Q1 2026 $4.2M Promoted From Un-Corroborated, Sanctions-Bid Fee-Shifting Motion, the Lawsuit Is the Rest Negotiating'
+      type: financial_incentive_mapping
+      block_key: type_c_869_nyt_ai_litigation_economics_28m_price_setting_addendum_sep2026
+      type_c_focus: 'FIRST dedicated corpus mechanism on the NYT AI-litigation spend economics as a financial-incentive datum. PROMOTES mechanism 636''s $4.2M Q1 2026 datum (TheWrap prior reporting, flagged un-corroborated at #669) to multi-source corroborated status: stockmoguls Sep 6 2026, Fast Company/AP circa Jul 9 2026, thestreet circa Jul 9 2026 (citing Variety), ainvest Sep 5 2026. ADDS the cumulative $28M+ figure (zero pre-commit corpus hits on the string "28 million"). Financial-incentive reading: the spend is not a damages play but a price-setting play - ainvest: "the point of that spending was never a damages award, it was setting the price." The NYT litigates the labs that did NOT pay (OpenAI, Microsoft, Perplexity) while licensing the one that met its commercial conditions (Amazon, mechanism 559, $20-25M/yr). Fee-shifting leg: the sanctions-bid motion against OpenAI seeks attorney fees for "improperly withheld" evidence (Fast Company, AP byline Matt O''Brien and Jocelyn Noveck) - enforcement economics as the return on the litigation investment. Market-price anchor: Anthropic''s $1.5B authors settlement as the court-set price datum against which the NYT''s $28M+ enforcement investment is sized. EXTENDS mechanism 636; connects to 559, 675, 609, 663, 562. NOT falsification-family; ledger holds at 27.'
+      evidence:
+      - url: https://www.stockmoguls.com/2026/09/06/which-media-companies-profit-when-ai-pays-for-archives/
+        surface_date: '2026-09-06'
+        facts: 'The Times has already spent more than $28 million on litigation costs against AI companies, with $4.2 million coming in the first quarter of 2026 alone, according to the company''s filings. The Times struck a multiyear content-licensing deal with Amazon for AI-related uses; fighting and licensing at the same time "is probably the right strategic posture."'
+        corroboration: also carries the News Corp x OpenAI >$250M/5yr and News Corp x Meta up-to-$50M/yr figures (already in corpus via mechanisms 519/549)
+      - url: https://www.fastcompany.com/91571727/the-new-york-times-is-escalating-its-fight-with-openai-urging-a-judge-to-impose-sanctions
+        surface_date: '~2026-07-09'
+        facts: 'AP (Matt O''Brien, Jocelyn Noveck): the NYT and other news outlets urged a judge to impose sanctions on OpenAI, seeking attorney fees for "improperly withheld" evidence in the copyright suit. The Times has already spent more than $28 million on fighting AI companies in court, per filings with financial regulators; costs include the Perplexity suit filed last year.'
+        note: fee-shifting as the enforcement-economics leg
+      - url: https://www.thestreet.com/technology/openai-sanctions-ny-times-copyright-lawsuit
+        surface_date: '~2026-07-09'
+        facts: 'Ian Crosby (Susman Godfrey, Times lead counsel): OpenAI concealed what it knew for more than two years. "$28 million fighting AI companies in court, including $4.2 million in this year''s first quarter alone, a Variety report confirmed." OpenAI spokesperson Drew Pusateri rejected the framing. Context: OpenAI preparing for a public listing at valuations approaching $1 trillion.'
+      - url: https://www.ainvest.com/news/openai-pays-papers-fights-rest-lawsuit-rest-negotiating-2609/
+        surface_date: '2026-09-05'
+        facts: '"The New York Times, a more resourced litigant, has already spent more than $28 million since 2023 on the same fight; the point of that spending was never a damages award, it was setting the price." Framing: a newspaper''s economic interest is about who gets classified as a licensee vs a litigant; "The Seattle Times took Microsoft''s money and then sued Microsoft because the grants and the fellowship never bought it a seat in the paid class" - echoes mechanism 675''s grant-then-sue finding.'
+      cumulative_spend:
+        amount: 'more than $28 million'
+        period: 'since 2023 (ainvest) / since the Dec 2023 filing (Fast Company: costs against AI companies, includes the Perplexity suit)'
+        q1_2026: '$4.2 million (company filings; corroborated by stockmoguls, thestreet via Variety, TheWrap prior reporting at m636)'
+        corroboration_status: 'PROMOTED from un-corroborated (#669) to four-source corroborated this run'
+      sanctions_bid:
+        motion: NYT and other outlets seek sanctions against OpenAI for improperly withheld discovery evidence; attorney fees sought
+        timing: '~Jul 9 2026 (Fast Company; thestreet)'
+        fee_shifting: 'the enforcement-economics leg - fee recovery as the return on the $28M+ litigation investment'
+        outcome: UNRESOLVED (bounded absence of ruling reporting per iteration-492 rule)
+      price_setting_reading:
+        ainvest_thesis: 'the lawsuit is the rest negotiating - litigation classifies labs as licensees vs litigants'
+        doctrine_link: 'consistent with mechanism 636''s pay-or-litigate doctrine ("They have to pay us" - Meredith Kopit Levien, Status Summit Sep 9 2026)'
+        posture: 'sue the non-payers (OpenAI, Microsoft, Perplexity), license the payer (Amazon, m559) - mechanism 663''s bifurcation at the NYT level'
+        market_anchor: 'Anthropic $1.5B authors settlement = the court-set price datum against which the NYT''s $28M+ enforcement investment is sized'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'excerpt-bounded evidence (search-result excerpts per #503, 0 browser.open this run); the $28M+ figure rests on filing summaries by trade press, not first-hand SEC filings'
+      - rank: 2
+        strength: strong
+        confounder: 'stockmoguls.com is a low-authority surface (the snippet carries a stock-pitch frame); corroboration by Fast Company/AP, thestreet, and ainvest is what promotes the datum, not stockmoguls alone'
+      - rank: 3
+        strength: moderate
+        confounder: 'period ambiguity: "since 2023" (ainvest) vs post-Dec-2023-filing; slandertown cites $10.8M in 2024 alone - the cumulative figure aggregates multiple suits including Perplexity, not just NYT v OpenAI/Microsoft'
+      - rank: 4
+        strength: moderate
+        confounder: 'price-setting is ainvest''s analyst framing, not the NYT''s stated rationale; the NYT''s on-record doctrine (m636) frames the spend as rights enforcement'
+      - rank: 5
+        strength: weak
+        confounder: 'sanctions-bid outcome unresolved; fee recovery is prospective, not realized'
+      counter_evidence:
+      - 'the NYT''s own framing is enforcement, not price-setting (m636 doctrine: "We are not letting anybody off")'
+      - 'the $28M+ spend also covers the Perplexity suit - not all of it is OpenAI-directed leverage'
+      statistical_discipline: 'MANUAL / qualitative only per the Aug 28 2026 standing rule; financial-incentive documentation leg, not a tone test. tone NOT_SCORED; scorer none; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact_grade true. NOT a falsification-family member; falsification ledger holds at 27 (TWENTY-SEVENTH member-form present in the_verge.yaml #867, unchanged this run). Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+      connects_to: [636, 559, 675, 609, 663, 562]
+      research_method: '4 browser.search query sets this run: (1) Meta AI publisher content licensing deal new partner news (since=2026-09-01) - SELECTED the stockmoguls Sep-6 piece for NYT economics; the Outlook Business Sep-1 Meta "new partnerships" piece re-reports the already-formalized Mar 2026 European bundle (in corpus via the European-bundle mechanism; not a new deal); (2) Meta AI Reuters CNN publisher deal renewal extension (since=2026-08-06) - corroboration only (LLM Pulse deal map and blankspace Licensing Mirage already in corpus); no new Meta publisher deals surfaced; (3) OpenAI publisher partnership licensing deal (since=2026-09-10) - India attribution legs already in corpus (#624/#709), Village Media #804; (4) NYT OpenAI litigation costs (since=2026-09-01) - SELECTED: the 4 evidence URLs above, all zero pre-commit corpus hits. 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_c_869 files on disk (glob); no "Type C #869" in git log (--grep); max numeric mechanism_id 752 pre-commit (careers/journalists.yaml m752, #868); zero exact 753 key-form repo-wide pre-commit; zero underscore-form 754 key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); block key zero-hit pre-commit; "28 million" zero-hit in profiles/competitor-entities.yaml pre-commit; all 4 evidence URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 869
+        type: C
+        date: 2026-09-20 00:00 PDT
   apple:
     display_name: Apple
     aliases:
