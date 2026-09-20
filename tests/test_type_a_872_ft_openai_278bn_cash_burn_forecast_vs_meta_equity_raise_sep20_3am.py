@@ -75,7 +75,7 @@ MECH_KEY = "ft_openai_278bn_cash_burn_forecast_vs_meta_equity_raise_sep18"
 M_ID = 754
 ITER = 872
 TYPE_LETTER = "A"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "4ee277c2cd0ef4415b41f0a9a49c18f62eb48981"
 
 MECH_ID_MARKER = "mechanism" + "_754"
 NEXT_ID_MARKER = "mechanism" + "_755"
