@@ -17614,6 +17614,63 @@ entities:
         ascii_only: true
         goal_id: goal_54093bda4145
         job_id: mediascope-daily-iteration
+    cnn_perplexity_sign_then_sue_arc_sep2026:
+      mechanism_id: 750
+      iteration: 864
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-19'
+      time_pdt: '19:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'CNN x Perplexity Sign-Then-Sue Arc: Comet Plus Revenue-Share Launch Partner (Oct/Nov 2025) Files Copyright Suit Against the Same Lab (S.D.N.Y. 1:26-cv-04427, May 28 2026) - FIRST Dedicated Corpus Mechanism of a Publisher Suing the Same AI Lab It Signed a Revenue-Share Deal With; Inverts Mechanism 609 Sue-Then-Sign Arc, Replicates Mechanism 675 Grant-Then-Sue Finding'
+      overview: 'FIRST dedicated corpus mapping of a sign-then-sue arc on a SINGLE AI-lab counterparty. Sequence: (1) CNN signs as a Comet Plus revenue-share launch partner (Press Gazette: CNN, Conde Nast, Fortune, The Los Angeles Times, The Washington Post in the US; Le Monde and Le Figaro in France; 80 percent of Comet Plus revenue distributed amongst participating publishers, allocated by human visits, search citations and agent actions; circa Nov 2025). (2) CNN sends a cease-and-desist to Perplexity''s Head of Legal and Operations Nathan Barksdale on Dec 10 2025; Perplexity does not respond. (3) Early 2026: CNN blocks PerplexityBot from CNN.com; the complaint alleges Perplexity continued accessing CNN material through third-party hosts. (4) May 28 2026: CNN (wholly owned subsidiary of Warner Bros. Discovery) files Cable News Network, Inc. v. Perplexity AI, Inc. in the Southern District of New York, No. 1:26-cv-04427 - a 54-page complaint alleging Perplexity unlawfully copied over 17,000 CNN stories, videos, images and other works; infringement at two stages (input: crawling/scraping with PerplexityBot and Perplexity-User to build an AI-First search index; output: near-verbatim RAG-served excerpts) plus trademark dilution under 15 U.S.C. 1125 and infringement under 15 U.S.C. 1114; seeking injunctive relief, statutory damages (up to $150,000 per willful infringement; 17,000 registered works puts theoretical exposure north of $2.5B), actual damages, treble damages on trademark counts, restitution of profits and attorneys'' fees. Pre-suit context: CNN and Perplexity entered licensing negotiations in late 2024 to early 2025 and could not agree on terms, including restrictions on how Perplexity''s chatbot accesses and uses CNN content - negotiations collapsed before the Comet Plus partner announcement. Perplexity response via spokesperson Jesse Dwyer: "You can''t copyright facts." CNN said it remains open to "sensible licensing arrangements" and has existing AI partnerships including Meta (publicly reported Dec 2025). Status: LIVE as of Sep 2026; bounded absence of settlement, motion, or ruling reporting since filing (bounded absence per iteration-492; not a claim of dormancy).'
+      analytical_framing:
+        inverts: 'mechanism 609 sue-then-sign arc (Indian Express sought to join the anti-OpenAI suit Feb 2025, signed an OpenAI partnership Sep 2026) - CNN runs the sequence in reverse with the SAME counterparty'
+        replicates: 'mechanism 675 grant-then-sue finding (OpenAI/Anthropic philanthropic grants to Seattle Times/Newsday did not prevent their 2026 suits) - here a revenue-share deal did not prevent suit; money did not buy litigation immunity'
+        complements: 'mechanism 663 sign-one-sue-other bifurcation (Perplexity licenses academic publishers via Cashmere while news publishers sue) - this mechanism documents sign-AND-sue on the same news publisher, a stronger form'
+        same_counterparty_precedent: 'Dow Jones & Co. and NY Post v. Perplexity, S.D.N.Y. 1:24-cv-07984-KPF (filed Oct 21 2024; motion to dismiss denied Aug 21 2025) - News Corp litigates while Perplexity courts others; CNN is the first Comet Plus partner to sue'
+        analyst_quote: 'Jacq Lisk (Medium, Jun 2026): "Perplexity points to its publisher revenue-sharing program as evidence of good faith; the publishers suing it have called that program inadequate compensation offered after the taking."'
+      financial_incentive_reading: 'The 80/20 revenue-share was structurally insufficient consideration to resolve the copyright dispute: statutory-damage exposure (theoretical $2.5B+) dwarfs any plausible Comet Plus payout, so the publisher''s incentive to litigate survives partnership. Revenue-share buys a payment rail, not a covenant not to sue. CNN''s parallel Meta AI partnership (Dec 2025) makes it a dual-AI-payer publisher, diluting any single-lab incentive channel.'
+      correlational_note: 'This mapping documents a financial relationship (revenue-share partnership) coexisting with adversarial litigation against the same counterparty. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim is made; Type A follow-ups flagged.'
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Press Gazette evidence is excerpt-bounded (browser.open failed this run per the #503 convention; 311-day-old piece, circa Nov 2025); the CNN launch-partner claim rests on the search-result excerpt, not first-hand page text.'
+      - strength: 'STRONG'
+        text: 'No reporting of a formal Comet Plus withdrawal surfaced (bounded absence); whether CNN remained a partner at suit time is unverified. The sign-then-sue label describes the documented sequence, not proven contemporaneous dual status.'
+      - strength: 'MODERATE'
+        text: 'Comet Plus payout quantum to CNN is undisclosed; the "insufficient consideration" reading is inferred from the statutory-exposure arithmetic, not from an observed payout figure.'
+      - strength: 'MODERATE'
+        text: 'CNN-Warner Bros. Discovery context (Warner Bros. Discovery entity split/Paramount-WBD settlement talks, Sep 2026) could shift litigation incentives independently of the AI-lab vector; corporate-parent dynamics not modeled.'
+      - strength: 'WEAK'
+        text: 'Perplexity''s March 2026 motion to dismiss the Times and Tribune suits signals a broad litigation posture; CNN suit outcome cannot be read off sibling dockets.'
+      statistical_discipline:
+        p_value: not_calculated
+        cohens_d: not_calculated
+        ci_95: not_calculated
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        method: manual qualitative only; scorer NOT run; no_analysis_json_update
+        not_artifact_grade: true
+        falsification_family: false
+        falsification_ledger_holds_at: 26
+      source_urls:
+      - https://pressgazette.co.uk/newsletters/perplexitys-comet-browser-assistant-goes-free-for-all-with-publisher-pay-up/
+      - https://www.courtlistener.com/recap/gov.uscourts.nysd.664916/gov.uscourts.nysd.664916.1.0.pdf
+      - https://ppc.land/cnn-sues-perplexity-for-copying-17-000-works-in-landmark-ai-copyright-case/
+      - https://accelerateip.com/cnn-v-perplexity-ai-what-the-lawsuit-means-for-your-business-and-your-content/
+      - https://news.bgov.com/crypto/cnn-latest-news-outlet-to-sue-perplexity-ai-over-data-scraping
+      - https://www.marketing-interactive.com/cnn-reportedly-sues-perplexity-over-alleged-ai-copyright-infringement
+      - https://decisionandlaw.com/news/cnn-v-perplexity-ai-skip-links-fair-use-rag
+      - https://medium.com/@jacq.lisk82/the-answer-engine-on-trial-11e2f83129f4
+      validation:
+        schema: pending
+        unique_key_check: pending
+        mechanism_id_unique: pending
+        provenance: url_backed
   srmg_pif_pmc_dual_revenue_anti_meta_mechanism_422:
     mechanism_id: 422
     type: Type C - Financial Incentive Mapping
