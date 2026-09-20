@@ -72,7 +72,7 @@ NEXT_ID_DASH = "mechanism" + "-757"
 LEDGER_28_NEEDLE = "falsification ledger: " + "28"
 EXPECTED_ORDER = [("C", "874"), ("B", "873"), ("A", "872"), ("E", "871"), ("D", "870")]
 # Patched to the real main-commit SHA in the anchor followup per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a177b602c470fe679a5b2ba7522da7d6f02154b3"
 
 WEBPRONEWS_URL = "https://www.webpronews.com/u-s-government-backs-openai-in-landmark-nyt-copyright-fight/"
 TECHXPLORE_URL = "https://techxplore.com/news/2026-09-nyt-alleges-microsoft-openai-knew.html"
