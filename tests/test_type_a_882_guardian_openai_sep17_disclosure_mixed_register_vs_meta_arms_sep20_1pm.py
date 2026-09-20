@@ -90,7 +90,7 @@ MECH_KEY_PREFIX = "guardian_openai_sep17_misalignment_disclosure_mixed_register"
 M_ID = 760
 ITER = 882
 TYPE_LETTER = "A"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "550c3566a09b2a872601459974cbf86529a1fd27"
 
 # Format-built needles per the #715 convention: no literal underscore-form,
 # numeric, or dash-form 760/761 mechanism markers are carried in this file.
@@ -142,7 +142,7 @@ class TestNovelty882:
         proc = _git("log", "--format=%H %s", "--all")
         mains = [l for l in proc.stdout.splitlines()
                  if re.search(r"Type A #882: Guardian x OpenAI", l)]
-        assert mains == [], mains
+        assert len(mains) == 1, mains
 
     def test_novelty_verification_claim(self):
         blk = _block()
