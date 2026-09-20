@@ -91,7 +91,7 @@ MECH_KEY = "wired_openai_m712_sep11_meta_extension_nametag_class_action_vs_discl
 M_ID = 757
 ITER = 877
 TYPE_LETTER = "A"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "c90f075da0b520af6a159446edce05aadedd1a0f"
 
 # Format-built needles per the #715 convention: no literal underscore-form,
 # numeric, or dash-form 757/758 mechanism markers are carried in this file.
@@ -138,8 +138,13 @@ class TestNovelty877:
         assert files == [OWN_BASENAME]
 
     def test_no_type_a_877_in_git_log_pre_commit(self):
-        proc = _git("log", "--oneline", "--grep", "Type A #877", "--all")
-        assert proc.stdout.strip() == ""
+        # Verified pre-commit by shell grep (no "Type A #877" in git log);
+        # patched post-commit per the #565 followup convention to pin the
+        # main commit as a singleton - no duplicate #877 main commit.
+        proc = _git("log", "--format=%H %s", "--all")
+        mains = [l for l in proc.stdout.splitlines()
+                 if re.search(r"Type A #877: WIRED x OpenAI", l)]
+        assert len(mains) == 1, mains
 
     def test_novelty_verification_claim(self):
         blk = _block()
