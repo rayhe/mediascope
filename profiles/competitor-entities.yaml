@@ -4313,6 +4313,119 @@ entities:
         yaml_parse_clean: true
         ascii_only: true
 
+    publishers_sep4_partial_summary_judgment_countermove_wont_click_attribution_economics_sep2026:
+      mechanism_id: 756
+      iteration: 874
+      rotation: Type C
+      date_analyzed: '2026-09-20'
+      time_pdt: '05:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Publishers Sep-4 Partial-Summary-Judgment Counter-Move + Sep-18 "Users Won''t Click" Attribution-Economics Admission (Sep 2026) - The License-vs-Litigate Pricing Fight Escalates: Paywall-Acquisition Carve-Out Meets the Citation Consideration Priced at ~Zero by OpenAI''s Own Engineer'
+      type: financial_incentive_mapping
+      block_key: type_c_874_publishers_sep4_partial_summary_judgment_countermove_wont_click_attribution_economics_sep2026
+      type_c_focus: 'FIRST dedicated corpus mechanism on the September 2026 escalation of the license-vs-litigate pricing fight, in two legs. LEG 1 - enforcement-economics escalation: on Sep 4 2026, three days after the DOJ Statement of Interest (mechanism 672, #729), the NYT, Daily News and other publisher plaintiffs filed motions for partial summary judgment asking Judge Sidney H. Stein to decide before trial (ruling not expected until 2027) that neither OpenAI nor Microsoft can claim fair use when acquiring articles behind paywalls, training models on that material, or generating outputs that reproduce protected content (webpronews). The paywall-acquisition carve-out moves the fight from WHETHER training is fair use to HOW the training corpus was acquired - the direct procedural answer to the DOJ brief. LEG 2 - attribution-consideration repricing: the Sep 18 2026 AFP piece (techxplore) reports the NYT alleges Microsoft and OpenAI knew using news content was theft, and quotes an OpenAI engineer from a court document: "No matter how prominently we show the links, users won''t click." By OpenAI''s own admission, the attributed-citation consideration at the heart of the zero-fee attribution-discovery template (mechanisms 609 India Sep 7-8, 714 Village Media Sep 16, 660 contrast class) does not convert to traffic. Two-tier consideration structure: News Corp gets >$250M/5yr cash plus tech credits for training rights (mechanism 519) while local and national publishers get citation-only deals whose citation value OpenAI internally prices at ~zero. Financial-incentive reading: the publishers'' Sep 4 motions are the enforcement-economics escalation of mechanism 753''s $28M+ litigation spend (the spend buys a court-set price; the motions ask the court to set it now, on three carve-outs); the won''t-click admission is a NEW financial datum that revalues every citation-only deal in the corpus deal map. EXTENDS mechanism 672; connects to 753, 609, 714, 660, 519. NOT falsification-family; ledger holds at 27.'
+      evidence:
+      - url: https://www.webpronews.com/u-s-government-backs-openai-in-landmark-nyt-copyright-fight/
+        surface_date: '2026-09-04 (motions filed; the piece dates the DOJ filing Sep 2 vs mechanism 672''s Sep 1 - discrepancy logged)'
+        facts: 'On September 4 the Times, Daily News and others filed motions for partial summary judgment. They asked Judge Sidney Stein to decide key legal questions now, before trial. Among them: that neither OpenAI nor Microsoft can claim fair use when acquiring articles behind paywalls, when training models on that material, or when generating outputs that reproduce protected content.'
+      - url: https://techxplore.com/news/2026-09-nyt-alleges-microsoft-openai-knew.html
+        surface_date: '2026-09-18'
+        facts: 'AFP: NYT alleges Microsoft, OpenAI knew using news content was theft. "No matter how prominently we show the links, users won''t click," one of OpenAI''s own engineers admitted, according to the court document. The plaintiffs have requested a summary judgment in their favor. If granted by U.S. District Judge Sidney Stein, the case would not go to trial, but a ruling is not expected until 2027. In early September, the U.S. Department of Justice filed a brief in support of OpenAI and Microsoft, invoking "scientific progress," economic growth and "national security."'
+      - url: https://111things.com/national/u-s-government-backs-openai-in-new-york-times-copyright-case/
+        surface_date: '~2026-09-13 (page updated 7 days before the Sep 20 crawl)'
+        facts: 'Corroboration leg: the Justice Department filed a statement of interest Tuesday, September 1, 2026, in the Southern District of New York, urging the court to reject a broad theory that using copyrighted news articles to train large language models is generally unlawful. The department argued the creative and public benefits of AI training outweigh the competitive harm alleged by publishers, and warned that imposing broad copyright liability or licensing requirements could make it harder for smaller companies to compete in the large-language-model market.'
+      carried_corroboration:
+      - url: https://www.techtimes.com/articles/326401/20260903/doj-backs-openai-fair-use-claim-ai-copyright-fight-creators-must-try-congress.htm
+        note: 'IN CORPUS via #732 (profiles/the-verge.yaml) - carried, not a new URL. TechTimes Sep 3 2026: the brief is "effectively telling writers, journalists, and other creators that if they want compensation for their intellectual property, they will need to win it from Congress or at the licensing table, not from a judge" - the licensing-table redirect framing for the price-setting fight.'
+      sj_motion_facts:
+      - 'Filed Sep 4 2026: the NYT, Daily News and other publisher plaintiffs filed motions for partial summary judgment (webpronews) - three days after the DOJ Statement of Interest (mechanism 672, filed Sep 1)'
+      - 'Ask: Judge Sidney H. Stein to decide key legal questions before trial - ruling not expected until 2027 (techxplore), so the motions seek an early price-setting ruling, not a trial verdict'
+      - 'Carve-out 1 (acquisition): neither OpenAI nor Microsoft can claim fair use when acquiring articles behind paywalls - moves the fight from WHETHER training is fair use to HOW the corpus was acquired'
+      - 'Carve-out 2 (training): no fair-use claim when training models on that paywall-acquired material'
+      - 'Carve-out 3 (outputs): no fair-use claim when generating outputs that reproduce protected content'
+      - 'The plaintiffs have separately requested a summary judgment in their favor (techxplore) - the enforcement ask is maximalist, not incremental'
+      wont_click_economics:
+      - 'OpenAI engineer, in a court document (via AFP/techxplore Sep 18 2026): "No matter how prominently we show the links, users won''t click"'
+      - 'The attribution consideration - attributed citation plus links back to the publisher - is the publisher-side consideration in every zero-fee attribution-discovery deal in the corpus (mechanisms 609 BCCL/Indian Express Sep 7-8, 714 Village Media Sep 16, 660 contrast class)'
+      - 'By the payer''s own engineer''s admission, that consideration does not convert to traffic: the citation is displayed, the click does not happen'
+      - 'Two-tier consideration structure: News Corp receives >$250M/5yr cash plus tech credits for training rights (mechanism 519); local and national publishers receive citation-only deals whose citation value OpenAI internally prices at ~zero - consideration correlates with publisher bargaining power, not with content value'
+      - 'Village Media''s spokesperson told Axios "We consider the overall balance of the agreement to be fair" (mechanism 714) - the fairness assessment rests on a consideration the counterparty''s own engineer says does not convert'
+      financial_incentive_link: 'Two financial-incentive datums in one mechanism. (1) The Sep 4 motions are the enforcement-economics escalation of mechanism 753''s $28M+ litigation spend: the spend is the investment, the motions are the attempt to realize the return - a court-set license price, decided now, on three carve-outs, against the DOJ''s zero-price fair-use vector (mechanism 672). (2) The won''t-click admission reprices the publisher-side consideration in the corpus''s zero-fee attribution template: every citation-only deal (609/714/660) has an unpriced publisher-side consideration; OpenAI''s own engineer prices the click-through value at negligible. The deal map''s consideration column for the attribution template should read ~zero economic value until click-through evidence says otherwise. Directional contrast with the paid template (519): cash consideration is real and large; citation consideration is nominal. Correlation only, not causation: no claim that any publisher signed because of the citation promise''s traffic value.'
+      related_mechanisms: [672, 753, 609, 714, 660, 519, 471, 657, 666]
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'excerpt-bounded second-hand evidence (0 browser.open per #503): the engineer quote reaches the corpus via AFP via techxplore, not via the court document itself; the motions'' text reaches via webpronews, not the SDNY docket'
+      - rank: 2
+        strength: strong
+        confounder: 'the Sep 4 motions are an ASK, not a holding: Judge Stein may deny them, and the ruling is not expected until 2027 - the carve-outs are requested price-setting, not set prices'
+      - rank: 3
+        strength: moderate
+        confounder: '"users won''t click" is one engineer''s remark in a court document, not a measured click-through study; citation may carry brand-visibility or discovery value beyond clicks, and publishers may value the attribution norm itself'
+      - rank: 4
+        strength: moderate
+        confounder: 'the paywall-acquisition carve-out targets the acquisition method for training corpora, not the legality of attribution-discovery deals; the two legs share a pricing fight but different legal theories'
+      - rank: 5
+        strength: weak
+        confounder: 'webpronews dates the DOJ filing Sep 2 vs mechanism 672''s Sep 1 (four sources) - one-day discrepancy logged, unresolved; does not affect the motions'' Sep 4 date'
+      - rank: 6
+        strength: weak
+        confounder: 'the Daily News is not a tracked publication; the motions cover the consolidated MDL (No. 25-md-03143), of which the NYT suit is one part'
+      counter_evidence:
+      - 'the publishers are not retreating: the Sep 4 motions double down three days after the DOJ brief - the enforcement leg is active, and a court-set price remains possible'
+      - 'courts DO price training use elsewhere: Anthropic''s $1.5B authors settlement (mechanism 753 counterevidence, carried) shows the fair-use push is contested, not settled'
+      - 'citation may still have value: brand visibility, the "fair balance" assessment by Village Media''s own spokesperson, and the attribution norm publishers demanded since the discovery disputes'
+      - '111things notes the DOJ warned broad licensing requirements could burden smaller companies - the zero-price vector has a competition rationale, not just a payer rationale'
+      bounded_absences:
+      - 'No first-hand read of the Sep 4 motions or the court document containing the engineer quote (bounded per iteration-492; not asserted)'
+      - 'No ruling on the motions surfaced in bounded searches (ruling not expected until 2027 per techxplore; absence of ruling reporting is not evidence of denial)'
+      - 'No measured click-through data for ChatGPT publisher citations surfaced (the ~zero pricing is the engineer''s admission, not a study)'
+      - 'No reporting this run on whether any attribution-deal publisher has renegotiated on click-through grounds'
+      correlational_note: 'This mapping documents the Sep 4 2026 publishers'' partial-summary-judgment motions and the Sep 18 2026 "users won''t click" admission as financial-incentive datums on the OpenAI x publisher vector: the motions escalate the enforcement-economics leg (a court-set price, decided early, on three carve-outs), and the admission reprices the publisher-side consideration in citation-only deals at ~zero by the payer''s own account. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim.'
+      no_coverage_tone_claim: true
+      falsification_family: 'NOT a falsification-family member - financial-incentive documentation leg with no coverage-tone pair; the ledger holds at 27 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C financial-incentive mapping; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 672 (DOJ Statement of Interest Sep 1 2026, #729 - the brief the Sep 4 motions answer; EXTENDED this run)'
+      - 'mechanism 753 (NYT $28M+ litigation economics price-setting addendum, #869 - the spend the motions try to realize)'
+      - 'mechanism 609 (OpenAI India attribution-deal blitz Sep 7-8 - citation-only template leg 1)'
+      - 'mechanism 714 (OpenAI x Village Media first Canada deal Sep 16 - citation-only template leg 2, "fair balance" quote)'
+      - 'mechanism 660 (fee-template contrast class - zero-fee-disclosed attribution vs paid training)'
+      - 'mechanism 519 (News Corp x OpenAI >$250M/5yr - the paid-template pole of the two-tier structure)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded litigation facts)'
+      - 'iteration-492 rule (bounded absence: no ruling on the motions, no click-through study; none claimed as proof)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      novelty: 'FIRST dedicated corpus mechanism on the publishers'' Sep 4 2026 partial-summary-judgment counter-move and the Sep 18 2026 "users won''t click" attribution-economics admission. Zero "partial summary judgment" hits in profiles/tests/docs pre-commit (grep); zero "users won''t click" / "won''t click" hits pre-commit; zero underscore-form 756 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); max numeric mechanism_id 755 pre-commit (#873 journalists.yaml); block key zero-hit repo-wide pre-commit; webpronews + techxplore + 111things URLs zero-hit repo-wide pre-commit; techtimes 326401 carried (in corpus via #732). Distinct from mechanism 672 (the DOJ brief itself), mechanism 753 (the $28M spend economics), and mechanisms 609/714/660 (the attribution deals whose consideration this reprices).'
+      sources:
+      - 'WebProNews (Sep 2026): "U.S. Government Backs OpenAI in Landmark NYT Copyright Fight" - Sep 4 motions for partial summary judgment (Times, Daily News and others); three carve-outs (paywall acquisition, training, reproducing outputs); Judge Sidney Stein'
+      - 'TechXplore / AFP (Sep 18, 2026): "NYT alleges Microsoft, OpenAI knew using news content was theft" - engineer "users won''t click" admission from court document; plaintiffs requested summary judgment in their favor; ruling not expected until 2027'
+      - '111things / Interactive News (~Sep 13, 2026): "U.S. government backs OpenAI in New York Times copyright case" - DOJ statement of interest Sep 1 corroboration; creative/public benefits outweigh competitive harm; licensing-requirements burden warning'
+      - 'TechTimes (Sep 3, 2026, carried from #732): "DOJ Backs OpenAI Fair Use Claim in AI Copyright Fight; Creators Must Try Congress" - licensing-table redirect framing'
+      source_urls:
+      - https://www.webpronews.com/u-s-government-backs-openai-in-landmark-nyt-copyright-fight/
+      - https://techxplore.com/news/2026-09-nyt-alleges-microsoft-openai-knew.html
+      - https://111things.com/national/u-s-government-backs-openai-in-new-york-times-copyright-case/
+      - https://www.techtimes.com/articles/326401/20260903/doj-backs-openai-fair-use-claim-ai-copyright-fight-creators-must-try-congress.htm
+      research_method: '4 browser.search query sets this run: (1) OpenAI publisher licensing deal September 2026 (since=2026-09-01) - surfaced Village Media #804 (in corpus), Press Gazette tracker Sep 17 update (carried), India attribution legs #624/#709 (in corpus); (2) Meta publisher licensing deal September 2026 (since=2026-09-01) - stockmoguls Sep-6 re-crawl (updated 12h before run, same $28M content, no new datum), News Corp x Meta $50M/yr (in corpus); (3) AI company publisher content licensing deal announced September 2026 (since=2026-09-17) - surfaced music-vertical deals (UMG x ElevenLabs Sep 10, Suno x Warner/BMG Sep 9 - rejected per #729/#759/#799), Google pay-per-value pilot (mechanisms 702/708 corroboration only, no new status), LINC K.K. (mechanism 720, in corpus); (4) Justice Department brief NYT OpenAI Microsoft fair use (since=2026-09-10) - SELECTED webpronews (Sep 4 motions detail), techxplore Sep-18 AFP (won''t-click admission), 111things (corroboration); techtimes 326401 carried from #732. Dead-end/rejected candidates: News Corp additional arrangements (May 2024 re-indexes only); Apple Siri publisher closures (zero); Anthropic zero-deal posture (509). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_c_874 files on disk (glob); no "Type C #874" in git log (--grep); max numeric mechanism_id 755 pre-commit; zero underscore-form 756 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715); block key zero-hit repo-wide pre-commit; "partial summary judgment" zero-hit in profiles/tests/docs pre-commit; "users won''t click" zero-hit pre-commit; webpronews + techxplore + 111things URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: tests/test_type_c_874_publishers_sep4_sj_countermove_wont_click_attribution_economics_sep20_5am.py
+      statistical_discipline: 'MANUAL / qualitative only per the Aug 28 2026 standing rule; financial-incentive documentation leg, not a tone test. tone NOT_SCORED; scorer none; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; correlation_not_causation: true; no_analysis_json_update true; NOT artifact_grade true. NOT a falsification-family member; falsification ledger holds at 27. Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+      verdict: 'directionally_supported_not_proven'
+      correlation_not_causation: true
+      is_significant: false
+      no_analysis_json_update: true
+      artifact_grade: 'NOT artifact-grade'
+      connects_to: [672, 753, 609, 714, 660, 519]
+      verification:
+        iteration: 874
+        type: 'C'
+        date: '2026-09-20 05:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+
     seattle_times_newsday_grant_then_sue_openai_microsoft_sep2026:
       mechanism_id: 675
       iteration: 734
