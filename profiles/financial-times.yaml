@@ -1447,6 +1447,112 @@ competitor_relationships:
       - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
       test_file: tests/test_type_a_812_ft_openai_1_2tn_funding_round_scoop_vs_meta_equity_raise_desperation_sep17_3pm.py
 
+    ft_openai_278bn_cash_burn_forecast_vs_meta_equity_raise_sep18:
+      mechanism_id: 754
+      date: '2026-09-18'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 872
+      iteration_type: 'A'
+      iteration_time: 2026-09-20 03:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Financial Times
+      publication_pair: FT x OpenAI
+      entity_pair: "OpenAI vs Meta"
+      competitor: openai
+      comparison_entities:
+      - meta
+      author: Kit (with Ray)
+      finding: 'FT reported (Fri Sep 18, 2026) on its $5-10M/yr deal partner''s own forecast: OpenAI expects to burn through $278 billion in cash between 2026 and 2030 as it ramps up spending on computing power and infrastructure, the FT reported citing a company presentation seen by the newspaper (Reuters relay, Sep 18). Register: balance-sheet realism, MANUAL ILLUSTRATIVE -0.15. The FT-attributed numbers cut both ways: negative free cash flow of $278 billion over 2026-2030; the $122 billion March raise (at $852B valuation) "on track to exhaust that cash by 2028"; against that, revenue expected to increase tenfold from $36 billion this year to $350 billion in 2030, cumulative $840 billion revenue through the end of the decade, and $856 billion of computing/infrastructure spend as the largest expense category. Same-publication capital-spend comparator (carried from corpus, mechanism 718, un-rescored per #807): FT''s Jun 5, 2026 Meta equity-raise scoop ran the desperation register - Meta considering raising tens of billions in a stock offering, shares down 6.6% on the report, executives exploring "creative" ways to raise cash for AI capex "as much as $145 billion this year and even higher in 2027"; MANUAL ILLUSTRATIVE -0.30 (carried). Illustrative OpenAI-minus-Meta delta +0.15 on cross-peg arms: the gap NARROWS sharply vs mechanism 718''s +0.55 (matched capital-raise pegs). The FT''s most balance-sheet-adversarial OpenAI item this window - a cash-burn scoop that undercuts its own Sep 15 $1.2T investor-demand scoop - still lands gentler than the Meta capital-raise register. Incentive attribution is INCONCLUSIVE but directionally consistent: the FT collects about $5-10M/yr from OpenAI (Apr 2024 licensing, mechanism 54; plus the Feb 2026 Google News AI pilot) while Meta pays the FT $0. Verdict: directionally_supported_not_proven. Correlation is not causation. NOT artifact-grade.'
+      articles:
+      - title: 'FT OpenAI $278B cash-burn forecast scoop (Fri Sep 18, 2026; FT original paywalled, Reuters mirror)'
+        date: '2026-09-18'
+        ft_attribution_url: https://wixx.com/2026/09/18/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports/
+        ft_attribution_note: 'Reuters Sep 18 2026 (Mrinmay Dey, Mexico City): "OpenAI expects to burn through $278 billion in cash between 2026 and 2030 as it ramps up spending on computing power and infrastructure, the Financial Times reported on Friday, citing a company presentation seen by the newspaper." FT original byline unverified (paywalled).'
+        register: balance_sheet_realism_cash_burn
+        key_framing:
+        - '"expects to burn through $278 billion in cash between 2026 and 2030" - burn verb in the relay lede'
+        - 'negative free cash flow of $278 billion over the five-year period 2026-2030, "investing aggressively to secure computing capacity"'
+        - '"on track to exhaust that cash by 2028" - the $122B March raise framed as runway to the next fundraise, not to self-sufficiency'
+        - 'bullish counterweight carried inside the same piece: revenue tenfold $36B (2026) to $350B (2030); cumulative $840B revenue through decade end'
+        - '$856 billion computing/infrastructure spend by end of 2030, "its largest expense category"'
+        - 'context tail: the FT''s own Sep 15 $1.2T investor-demand scoop cited as the funding-need backdrop ("highlights OpenAI''s funding needs as it seeks fresh investment")'
+        corroborating_secondaries:
+        - url: https://www.techtimes.com/articles/327752/20260920/openai-projects-278b-cash-burn-record-round-runs-dry-before-revenue-catches.htm
+          note: 'Tech Times Sep 20: the presentation was "prepared in July for a computing deal"; FT first reported (Thursday per this secondary; Friday per Reuters) and Bloomberg confirmed the same day; "$122 billion was not runway to self-sufficiency - it was runway to the next fundraise"'
+        - url: https://www.thehindubusinessline.com/info-tech/openai-forecasts-cash-burn-near-280-billion-by-2030/article71483712.ece
+          note: 'Hindu BusinessLine Sep 19 (Reuters): full relay with all five figures - $278B burn, $36B to $350B revenue, $840B cumulative, $856B spend, cash exhausted by 2028'
+        - url: https://www.investors.com/news/technology/anthropic-ipo-delayed-openai-expects-massive-cash-burn/
+          note: 'Investors.com Sep 19: "OpenAI expects negative free cash of $278 billion from 2026 to 2030, the Financial Times reported on Saturday, citing a recent company presentation"; revenue $35B in 2026 to $350B in 2030; "$856 billion spend on AI computing power and infrastructure alone"'
+        source_note: 'FT original paywalled; register reconstructed from the Reuters mirror (explicit FT attribution) plus three independent secondaries; headline-level and quote-level only; FT body register unverified; the "burn" verb is the Reuters headline framing, FT''s own headline unknown'
+        tone_MANUAL_ILLUSTRATIVE: -0.15
+      - title: 'FT Meta equity-raise scoop (Fri Jun 5, 2026; FT original paywalled, Reuters mirror; in-corpus comparator, carried un-rescored)'
+        date: '2026-06-05'
+        ft_attribution_url: https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+        ft_attribution_note: 'Reuters Jun 5 2026: "Meta is considering raising tens of billions of dollars in a stock offering as it seeks new sources of capital to fund the company''s AI ambitions, the Financial Times reported on Friday."'
+        register: capital_raise_desperation
+        key_framing:
+        - '"weighs big equity raising" - the raise itself is the lede'
+        - '"Meta shares were down 6.6% following the report" - market punishment in the register'
+        - 'executives exploring "creative" ways to raise cash (scare quotes on creative)'
+        - 'AI capex "as much as $145 billion this year and even higher in 2027" - burden frame'
+        source_note: 'In-corpus comparator (mechanism 718; mechanism 435 lineage; line-900 corpus pins "equity raise desperation framing (Jun 5 FT, -6.6% stock)"); carried un-rescored per #807'
+        meta_capital_tone_MANUAL_ILLUSTRATIVE: -0.30
+      financial_context:
+        predictor: licensing_incentive
+        prediction: softer_than_expected
+        chain: 'FT x OpenAI content licensing deal (Apr 29 2024, Reuters primary, terms undisclosed; WSJ via Digiday secondary valuation $5-10M/yr; mechanism 54; 29 months senior); FT x Google News AI pilot commercial partnership (Feb 2026, single-figure millions GBP/yr, Press Gazette Aug 2026); Meta pays FT $0 (no licensing, no commercial partnership). Dual-payer vs zero-tie structure.'
+        status: 'correlate only, not proof of editorial influence; directionally consistent on the OpenAI arm (balance-sheet realism, still gentler than the Meta comparator) against the Meta comparator (desperation register on the $0 tie)'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance'
+        convention: 'target-minus-peer; target = OpenAI arm, peer = Meta arm'
+        openai_arm_scores: [-0.15]
+        meta_arm_scores: [-0.30]
+        openai_arm_avg: -0.15
+        meta_arm_avg: -0.30
+        illustrative_register_delta_openai_minus_meta: 0.15
+        delta_calc: '-0.15 - (-0.30) = 0.15'
+        engine_degenerate: 'calculate_asymmetry([-0.15], [-0.30]) returns asymmetry 0.15; t 0.0 / p 1.0 / Cohen d 0.0 / degenerate CI (0.15, 0.15) / is_significant False; engine run once as a degenerate n=1 check per the #638/#643 convention; no significance claimed (Aug 28 2026 standing rule)'
+        finding_layer: 'p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule)'
+        no_analysis_json_update: true
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+      confounders_ranked:
+        strong:
+        - 'Mirror-bounded sourcing: FT original paywalled. The OpenAI register is reconstructed from the Reuters mirror (explicit FT attribution) plus three secondaries; the Meta register from the in-corpus Reuters mirror. Headline-level and quote-level only; FT body register unverified either side; the "burn" verb is Reuters'' headline framing, not verified FT wording.'
+        - 'Company-forecasted numbers: every figure in the scoop comes from OpenAI''s own July presentation (per Tech Times). The register inherits from company disclosure, not FT invention; a cash-burn story built on a company projecting its own burn is inherently bounded in how adversarial it can read.'
+        - 'Cross-peg comparison: mechanism 718 paired matched capital-raise scoops (OpenAI investor-demand vs Meta equity-raise desperation). This run pairs a company-financials forecast scoop (OpenAI cash burn) with a financing-event scoop (Meta equity raise). The comparison is weaker than 718''s matched pegs; the 0.15 delta is cross-peg, not matched-peg.'
+        moderate:
+        - 'Date ambiguity: Reuters says the FT reported Friday Sep 18; Tech Times says the FT first reported Thursday Sep 17. Used Sep 18 per the Reuters relay (two relays agree on Friday); the one-day ambiguity does not move the window.'
+        - 'Temporal gap 3.5 months (Jun vs Sep 2026): Meta''s capex burden genuinely deepened while OpenAI''s revenue genuinely grew; the register gap partly tracks fundamentals, not the tie.'
+        - 'Bullish context inside the piece moderates the adversarial read: revenue tenfold to $350B, $840B cumulative revenue, $856B spend as strategic investment. The -0.15 is a judgment call on a mixed register.'
+        weak:
+        - 'n=1 per arm: directional only; degenerate statistical contract; verdict-invariant under rounding (delta 0.15 exact at 2dp).'
+        - 'Single-window comparison; not a longitudinal claim. The Jun-Aug 2026 FT register gradient (mechanisms 415/435 lineage) is the longitudinal anchor, not this pair.'
+      counterevidence:
+      - 'The cash-burn scoop is itself the FT''s most balance-sheet-adversarial OpenAI item this window, published against its $5-10M/yr deal partner three days after its own $1.2T investor-demand scoop - uniform softening would suppress exactly this kind of runway-realism reporting.'
+      - 'Mechanism 643 (FIFTEENTH falsification-family member): FT''s adversarial AISI-refusal watchdog scoop on Anthropic - FT goes adversarial on non-payers too; adversarial capacity is not tie-gated.'
+      - 'Mechanism 676 (this profile, anthropic section): FT''s constructive company-briefed profitability scoop on Anthropic (+0.20, Sep 13) - Anthropic is a NON-payer for FT; constructive company-briefed registers need no financial explanation. The same confound applies here: the cash-burn numbers have intrinsic news value as OpenAI''s own forecast.'
+      - 'The piece carries OpenAI''s bullish revenue forecast (10x to $350B, $840B cumulative) - it is not one-sided; a softer-on-the-payer outlet could have led with the revenue line instead of the burn line.'
+      - 'Bloomberg confirmed the presentation the same day (per Tech Times) - cross-publication convergence on the peg suggests the documents, not the FT-OpenAI tie, drive the coverage.'
+      cross_references:
+      - 'mechanism 54 (FT-OpenAI content licensing deal structure, Apr 2024, $5-10M/yr secondary)'
+      - 'mechanism 435 (FT Sep 1 2026 govt-stake vs equity-raise framing asymmetry; the Meta equity-raise comparator''s home block)'
+      - 'mechanism 718 (Type A #812: FT Sep 15 $1.2T funding-round scoop vs Meta equity-raise desperation, +0.55 matched-peg delta; this run is the cash-burn successor at the same outlet x pair, distinct window, cross-peg)'
+      - 'mechanism 625 (FT Sep 3-9 launch-week register pair, Astra coronation vs Muse distribution; same-profile OpenAI section predecessor)'
+      - 'mechanism 643 (FT Anthropic AISI-refusal accountability scoop, FIFTEENTH falsification-family member; the watchdog-capacity control)'
+      - 'mechanism 676 (FT Anthropic slowdown-week profitability scoop, +0.20 on a non-payer; the company-briefed-register confound)'
+      falsification_family: 'NOT a member - balance-sheet-realism register documentation. The illustrative gap (+0.15) is directionally consistent with mechanism 54''s licensing-incentive prediction but does not contradict any coverage_prediction: no scope-bounded prediction is refuted (the piece is company-forecasted financial disclosure with bullish revenue context, not adversarial coverage of the deal partner). Ledger holds at 27.'
+      novelty: 'First dedicated Type A mechanism on the FT Sep 18 2026 OpenAI $278B cash-burn forecast scoop vs the FT Jun 5 2026 Meta equity-raise scoop (cross-peg arms). Distinct from mechanism 718 (Sep 15 $1.2T investor-demand scoop, matched capital-raise pegs, +0.55 delta) and mechanisms 415/435/625. Zero test_type_a_872 files pre-commit; no Type A #872 in git log pre-commit; the wixx/techtimes/hindubusinessline/investors.com URLs zero-hit repo-wide pre-commit; the #872 block key zero-hit repo-wide pre-commit; max numeric mechanism_id 753 pre-commit; zero underscore-form 754 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention). 4 URLs new to corpus this run (wixx Reuters relay + Tech Times + Hindu BusinessLine + Investors.com); the Reuters Meta equity-raise mirror is cited as the in-corpus comparator only (mechanism 718 / 435 lineage).'
+      research_method: '5 browser.search query sets this run: (1) Bloomberg OpenAI $200B $850B valuation - STALE (mid-Aug story, no profiled-publication primary); (2) Bloomberg "OpenAI" "1.2 trillion" funding round - Sep 16 Bloomberg follow, no bloomberg.yaml profile; (3) Anthropic IPO Nasdaq October - REJECTED (Business Insider Sep 13 Nasdaq scoop already in corpus via Type A #857, mechanisms 745/746); (4) NYT OpenAI $1.5 trillion financing - REJECTED (already in corpus via Type A #822, Sep 18 1am); (5) Financial Times OpenAI negative free cash $278 billion 2026-2030 - SELECTED (Sep 18 FT scoop, zero corpus hits on 278 billion / 856 billion). 0 browser.open this run (mirror-bounded per #503; FT original paywalled, not surfaced in Full-URL listings). All URLs copied verbatim from Full-URL listings; no ft.com canonical URLs constructed; no em dashes; ASCII-only.'
+      source_urls:
+      - https://wixx.com/2026/09/18/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports/
+      - https://www.techtimes.com/articles/327752/20260920/openai-projects-278b-cash-burn-record-round-runs-dry-before-revenue-catches.htm
+      - https://www.thehindubusinessline.com/info-tech/openai-forecasts-cash-burn-near-280-billion-by-2030/article71483712.ece
+      - https://www.investors.com/news/technology/anthropic-ipo-delayed-openai-expects-massive-cash-burn/
+      - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+      test_file: tests/test_type_a_872_ft_openai_278bn_cash_burn_forecast_vs_meta_equity_raise_sep20_3am.py
+
   meta:
     financial_tie: none
     estimated_value: $0
