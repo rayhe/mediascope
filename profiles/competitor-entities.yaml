@@ -4900,6 +4900,119 @@ entities:
         type: 'C'
         date: '2026-09-17 12:00 PDT'
 
+    nadella_retrain_testimony_93pct_clickthrough_sep2026:
+      mechanism_id: 759
+      iteration: 879
+      rotation: Type C
+      date_analyzed: '2026-09-20'
+      time_pdt: '10:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Sep-17 Unsealed Summary-Judgment Filings: Nadella Retrain-Testimony + 93% Click-Through Destruction + Brockman Paywall-Hack Approval (Sep 2026) - The Buyer CEO Prices the License Alternative and the Payer''s Own Data Zeros the Attribution Consideration'
+      type: financial_incentive_mapping
+      block_key: type_c_879_nadella_retrain_testimony_93pct_clickthrough_sep2026
+      type_c_focus: 'FIRST dedicated corpus mechanism on the Sep 17 2026 unsealed summary-judgment filings'' testimonial datums in the NYT-led MDL (In re OpenAI Inc. Copyright Infringement Litigation, S.D.N.Y. No. 1:25-md-03143). THREE new financial-incentive datums from the defense''s own side: (1) LICENSE-ALTERNATIVE PRICING - Microsoft CEO Satya Nadella testified that "anything that is paywalled should be licensed by anyone who wants to use it" for AI training, and that he would have invoked Microsoft''s contractual right to require model RETRAINING had he known OpenAI trained on paywalled content; the buyer''s CEO prices the license alternative at "must license," validating the publishers'' price demand from inside the defense camp and undercutting mechanism 672''s DOJ zero-price fair-use vector. (2) ATTRIBUTION-CONSIDERATION MEASURED REPRICING - plaintiffs'' filings cite Microsoft data that Copilot reduced click-through to nytimes.com by roughly 93% versus traditional Bing search; mechanism 756''s engineer admission ("users won''t click") was qualitative and one person''s remark, this is the payer''s own measurement: the citation consideration in the corpus''s zero-fee attribution template (609 India Sep 7-8, 714 Village Media Sep 16, 660 contrast class) delivers ~7% of the referral baseline. (3) PAYWALL-ACQUISITION MENS REA - OpenAI president Greg Brockman responded "ah nice" when an OpenAI researcher told him of a hack to get around the NYT paywall when scraping; the intent evidence for mechanism 756 Leg 1''s paywall-acquisition carve-out. EXTENDS mechanism 756 (#874); undercuts mechanism 672 (#729); reprices 609/714/660; counter-poles with 519. NOT falsification-family; ledger holds at 28.'
+      evidence:
+      - url: https://www.insiderfinance.io/news/openai-microsoft-copyright-lawsuit-exposes-news-scraping
+        surface_date: '2026-09-18 (first-hand browser.open read this run, 56 rendered lines)'
+        facts: 'Unsealed Sep 17 2026 summary-judgment filings (plaintiffs'' briefs and discovery excerpts - internal emails, memos, deposition testimony - NOT judicial findings, per the piece): (1) Nadella deposition excerpts - he recognized conversational AI can replace visits to original news sites and testified he would have invoked Microsoft''s contractual right to require retraining if informed models were trained on paywalled content; (2) plaintiffs cite Microsoft data that Copilot reduced click-through to nytimes.com by roughly 93% compared with traditional Bing search; (3) OpenAI head of ChatGPT (Nick Turley, identified via WSJ/Reuters mirrors) described publisher pressure as severe and warned AI tools already substitute for journalistic work, a trend expected to increase; (4) Brockman acknowledged the models'' aptitude for news tasks and responded approvingly when told of a paywall-bypass workaround; (5) Microsoft director Brent Hecht Jan 2023 memo: large-scale news scraping as "an astonishing theft of unprecedented proportions" with a doom-loop warning (Microsoft: one employee''s view, not policy); (6) scale datums: OpenAI scraped more than 10 million articles overall (nearly one-third NYT); mid-training datasets held 91,692 copies (Times, Daily News, Center for Investigative Reporting); Common Crawl-derived subset with 2M+ nytimes.com documents; Project Mango corpus with 160,903 unique news works; Project Taxi data flows; WebText/WebText2 reliance; publisher copyright notices removed before training-set incorporation; (7) potential damages exposure in the billions per reports; (8) defense responses: Nadella testimony is "commentary on how people find information, not a legal conclusion"; fair-use defense maintained citing Kadrey v. Meta and Bartz v. Anthropic; DOJ statement of interest supports the defense; (9) Judge Sidney Stein ruling expected 2027; Magistrate Judge Ona Wang disclosed Microsoft stock divestiture in a Sep 14 filing and stays on the MDL.'
+      - url: https://www.wsj.com/tech/ai/tech-companies-staff-knew-their-ai-tools-posed-existential-threat-to-publishers-67ed8940
+        surface_date: '2026-09-19 (excerpt-bounded, paywalled per #503)'
+        facts: 'WSJ: newly unsealed filing cites internal company documents plus testimony from Microsoft CEO Satya Nadella and comments from OpenAI president Greg Brockman and ChatGPT leader Nick Turley. Verbatim: Nadella testified "anything that is paywalled should be licensed by anyone who wants to use it" for AI training purposes, and said he would have had Microsoft force OpenAI to retrain its models had he known they were scraping and training on paywalled information. Brockman responded "ah nice" after an OpenAI researcher informed him about a hack to get around the New York Times paywall when scraping content. Nadella also testified that conversing with chatbots "substituted" for websites "versus needing to go to the underlying source." The Chicago Tribune, New York Daily News and other Alden Global Capital newspapers sued both companies in April 2024; those and other cases were later consolidated.'
+      - url: https://www.wsj.com/tech/ai/sketchy-af-what-to-know-about-how-openai-staff-discussed-book-pirating-fdc788a1
+        surface_date: '2026-09-19 (excerpt-bounded, paywalled per #503; ADJACENT scope - books vertical)'
+        facts: 'Adjacent-scope corroboration only (authors'' suit over BOOKS - Grisham, Baldacci, Picoult, Franzen - out of MediaScope publication scope; carried as context, not a mechanism leg): unsealed authors'' filing details internal OpenAI messages on using LibGen-pirated books to train early ChatGPT; then-general counsel David Lansky recommended LibGen downloads; staffers called LibGen "sketchy AF"; staff discussed removing LibGen references from papers. Cited as evidence-grade precedent for the unsealed-filings wave pattern, not as a publication-market datum.'
+      license_alternative_pricing_leg:
+      - 'Nadella is the CEO of Microsoft - OpenAI''s largest investor and a named defendant - testifying under oath in the plaintiffs'' MDL. His position: paywalled content "should be licensed by anyone who wants to use it"; unlicensed paywalled training would have triggered contractual retraining. This is the strongest possible endorsement of the paid-license model from the defense camp: the payer''s CEO prices the license alternative at "must license" for the paywalled segment.'
+      - 'Directly prices mechanism 756 Leg 1''s paywall-acquisition carve-out (the Sep 4 motions ask Judge Stein to rule no fair use for paywall-acquired training corpora): the carve-out asks the court to set the rule; Nadella''s testimony concedes the rule from the defense''s own CEO. The motions'' enforcement-economics ask and the CEO''s pricing admission converge on the same price point - licensed, not free.'
+      - 'Undercuts mechanism 672''s DOJ zero-price vector (the DOJ brief warned broad licensing requirements could burden smaller companies): the payer''s CEO states the licensing norm for paywalled content as a matter of corporate practice, independent of the DOJ''s competition rationale. Two institutional voices inside the pro-AI camp now disagree on the price of paywalled training data - the DOJ at ~zero, Nadella at must-license.'
+      attribution_consideration_measured_leg:
+      - 'Mechanism 756 repriced the attribution consideration qualitatively (one engineer: "users won''t click"). The Sep 17 filings add the payer''s own measurement: Copilot cut nytimes.com click-through ~93% versus traditional Bing search. The citation consideration in the corpus''s zero-fee attribution template (609 BCCL/Indian Express Sep 7-8, 714 Village Media Sep 16, 660 contrast class) now has a measured magnitude: ~7% of the referral baseline, not ~zero by anecdote but ~7% by the payer''s data as cited in the filings.'
+      - 'Two-tier consideration structure quantified: News Corp gets >$250M/5yr cash plus tech credits for training rights (mechanism 519); citation-only publishers get a consideration the payer''s own data measures at ~7% of baseline referral. The consideration gap is now measured on both sides - large and real (519) versus small and measured (this leg).'
+      - 'Village Media''s "fair balance" assessment (mechanism 714) and the India attribution deals'' traffic-in-lieu-of-cash framing (mechanism 609) rest on referral value the payer''s own data puts at ~7% of baseline. Directional only - no claim any publisher would have priced differently.'
+      mens_rea_leg:
+      - 'Brockman''s "ah nice" on the paywall hack is the intent datum for the paywall-acquisition carve-out: the acquisition method the Sep 4 motions target was known to and approved by OpenAI''s president. Paired with Hecht''s Jan 2023 "astonishing theft of unprecedented proportions" memo (Microsoft: individual view), the filings assemble a contemporaneous-knowledge record against the fair-use defense.'
+      litigation_batna_scale:
+      - '>10M articles scraped (~1/3 NYT); 91,692 copies in mid-training datasets; 2M+ nytimes.com docs in a Common Crawl subset; Project Mango 160,903 unique news works; Project Taxi flows; CMI removal alleged; damages exposure "in the billions" per reports. These are the scale inputs to the litigation BATNA price: the license-vs-litigate market is being negotiated against a multi-billion-dollar exposure tail, with Judge Stein''s ruling not expected until 2027 (mechanism 756).'
+      - 'Magistrate Judge Ona Wang''s Sep 14 Microsoft-stock divestiture (stays on the MDL) is procedural hygiene, noted for completeness; no pricing implication.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'all filings material is plaintiffs'' briefs and discovery excerpts, NOT judicial findings (insiderfinance is explicit); the 93% figure is the plaintiffs'' citation of Microsoft data in their brief - Microsoft has not confirmed the figure publicly in this reporting, and characterizes Nadella''s testimony as "commentary on how people find information, not a legal conclusion"'
+      - rank: 2
+        strength: strong
+        confounder: 'the two WSJ pieces are paywalled; their facts reach the corpus via search-result excerpts only (excerpt-bounded, second-hand per #503); 0 browser.open on WSJ this run, 1 browser.open (insiderfinance, 56 lines) - the verbatim Nadella/Brockman quotes are excerpt-bounded'
+      - rank: 3
+        strength: moderate
+        confounder: 'Microsoft says Hecht''s memo and Nadella''s remarks reflect individual views, not company policy or legal analysis; the fair-use defense is maintained and has recent support (Kadrey v. Meta, Bartz v. Anthropic) plus the DOJ statement of interest - the pricing fight is unresolved until Judge Stein rules (expected 2027)'
+      - rank: 4
+        strength: moderate
+        confounder: 'Nadella''s "should be licensed" is scoped to PAYWALLED content specifically, not to all training data; it does not concede a license price for openly published content and does not set a dollar figure'
+      - rank: 5
+        strength: moderate
+        confounder: 'the 93% click-through reduction is specific to nytimes.com on Copilot versus traditional Bing; it may not generalize to other publishers, other AI products, or citation formats beyond the measured comparison'
+      - rank: 6
+        strength: weak
+        confounder: '"billions" in damages exposure is per reports, not a filed demand; the Stein ruling is not expected until 2027, so the BATNA price is directional until set'
+      bounded_absences:
+      - 'No first-hand read of either WSJ piece (paywalled; bounded per iteration-492, not asserted)'
+      - 'No Microsoft public confirmation or rebuttal of the 93% click-through figure in this run''s reporting'
+      - 'No dollar figure attached to Nadella''s "should be licensed" - a licensing norm, not a price'
+      - 'No ruling on the Sep 4 motions (not expected until 2027 per mechanism 756; absence of ruling is not evidence of denial)'
+      - 'No reporting this run on whether any attribution-deal publisher has renegotiated on click-through grounds'
+      statistical_discipline:
+        scope: qualitative structural pricing mapping only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mapping documents the Sep 17 2026 unsealed summary-judgment filings'' testimonial datums as financial-incentive datums on the OpenAI/Microsoft x publisher vector: Nadella''s retrain/licensing testimony prices the license alternative at "must license" for paywalled content from the buyer''s own CEO; the ~93% click-through figure measures the attribution consideration at ~7% of baseline by the payer''s own cited data; Brockman''s "ah nice" supplies the intent datum for the paywall-acquisition carve-out. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim.'
+      no_coverage_tone_claim: true
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - pricing-type leg with no coverage-tone pair; ledger holds at 28 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C pricing leg; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 756 (Sep 4 motions + "users won''t click" admission, #874 - EXTENDED this run: the qualitative admission becomes a measured ~93% figure; the paywall-acquisition carve-out gains its mens-rea datum and the buyer-CEO pricing concession)'
+      - 'mechanism 672 (DOJ Statement of Interest Sep 1 2026, #729 - the zero-price fair-use vector this leg undercuts: DOJ at ~zero, Nadella at must-license)'
+      - 'mechanism 753 (NYT $28M+ litigation economics, #869 - the spend whose return the Sep 4 motions and these filings try to realize)'
+      - 'mechanism 609 (OpenAI India attribution-deal blitz Sep 7-8 - citation-only template leg 1, repriced by the ~93% figure)'
+      - 'mechanism 714 (OpenAI x Village Media first Canada deal Sep 16 - citation-only template leg 2, "fair balance" quote, repriced by the ~93% figure)'
+      - 'mechanism 660 (fee-template contrast class - zero-fee-disclosed attribution vs paid training)'
+      - 'mechanism 519 (News Corp x OpenAI >$250M/5yr - the paid-template pole of the two-tier structure)'
+      - 'mechanism 636 (NYT pay-or-litigate doctrine - the US-market license-versus-litigate bifurcation this leg''s branch belongs to)'
+      - 'mechanism 675 (Seattle Times/Newsday grant-then-sue, #734 - same MDL family, same week as the DOJ brief)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded litigation facts; 1 first-hand browser.open this run on insiderfinance, 56 lines)'
+      - 'iteration-492 rule (bounded absence: no WSJ first-hand read, no Microsoft confirmation of the 93% figure, no ruling; none claimed as proof)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      novelty: 'FIRST dedicated corpus mechanism on the Sep 17 2026 unsealed summary-judgment filings'' testimonial datums. Zero "ah nice" hits repo-wide pre-commit (grep); "retrain" zero-hit as a testimony datum (existing hits are all "pretraining" substrings in unrelated Type B/arm contexts); zero "93%" click-through hits in profiles pre-commit; zero underscore-form 759 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); max numeric mechanism_id 758 pre-commit (757 in wired.yaml, 758 in journalists.yaml); block key zero-hit repo-wide pre-commit; all 3 source URLs zero-hit repo-wide pre-commit (insiderfinance + 2 WSJ). Distinct from mechanism 756 (Sep 4 motions + engineer "won''t click" admission - no Nadella testimony, no measured click-through figure, no Brockman quote), mechanism 672 (the DOJ brief itself), and mechanism 753 (the $28M spend economics).'
+      sources:
+      - 'InsiderFinance (Sep 18, 2026, first-hand read 56 lines): unsealed Sep 17 filings - Nadella retrain testimony + substitution recognition; Microsoft data ~93% nytimes.com click-through reduction on Copilot vs Bing; Turley substitution warning; Brockman approving paywall-workaround response; Hecht Jan 2023 "astonishing theft" memo; scale (>10M articles, 91,692 copies, 2M+ nytimes.com docs, Project Mango 160,903 works, Project Taxi); CMI removal; billions exposure; defense responses (Kadrey/Bartz, DOJ brief); Stein ruling 2027; Wang divestiture'
+      - 'WSJ (Sep 19, 2026, excerpt-bounded): Nadella verbatim "anything that is paywalled should be licensed by anyone who wants to use it" + retrain-models testimony; Brockman verbatim "ah nice" on the NYT paywall hack; Nadella chatbots "substituted" for websites; Alden papers Apr 2024 suit consolidation context'
+      - 'WSJ (Sep 19, 2026, excerpt-bounded, adjacent scope): authors'' LibGen filing - Lansky recommendation, "sketchy AF" staff messages, reference-scrubbing discussion (books vertical, out of publication scope, context only)'
+      research_method: '5 browser.search query sets this run: (1) new AI publisher content licensing deals September 2026 - surfaced Google pay-per-value pilot, OpenAI India attribution deals, LINC Japan, Village Media, Roundtable/Paradium, music-vertical deals; all substantive publisher mechanisms already mapped (702/708 India; 609/654/657; 720; 714; 738/744; music out of scope per #729/#759/#799); (2) OpenAI publisher litigation economics - surfaced the Sep 17-19 unsealed-filings wave (SELECTED); (3) ANI v. OpenAI Delhi High Court - post-hearing development already in corpus via mechanism 717 (#809); (4) Axel Springer OpenAI deal renewal September 2026 - no renewal reporting, mechanism 604 renewal-unresolved stands; (5) Condé Nast/Nine/Microsoft/Reach/Amazon publisher pairs - Nine x Microsoft is the Jul 3 2026 Copilot deal (in corpus), Condé Nast/Hearst x Amazon Rufus is Jul 2025 (in corpus), Press Gazette tracker sue-side additions (Britannica, U.S. News, DPCMO, Penske, Mumsnet) are pre-September suits newly listed on the tracker, not new events. 1 browser.open first-hand read (insiderfinance, 56 rendered lines). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps: zero test_type_c_879 files on disk (glob); no "Type C #879" in git log (--grep); max numeric mechanism_id 758 pre-commit; zero underscore-form 759 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715); block key zero-hit repo-wide pre-commit; "ah nice" zero-hit repo-wide; "93%" zero-hit in profiles; both WSJ URLs + insiderfinance URL zero-hit repo-wide. No em dashes; ASCII-only.'
+      source_urls:
+      - https://www.insiderfinance.io/news/openai-microsoft-copyright-lawsuit-exposes-news-scraping
+      - https://www.wsj.com/tech/ai/tech-companies-staff-knew-their-ai-tools-posed-existential-threat-to-publishers-67ed8940
+      - https://www.wsj.com/tech/ai/sketchy-af-what-to-know-about-how-openai-staff-discussed-book-pirating-fdc788a1
+      test_file: 'tests/test_type_c_879_nadella_retrain_testimony_93pct_clickthrough_sep20_10am.py'
+      verification:
+        iteration: 879
+        type: 'C'
+        date: '2026-09-20 10:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+
   anthropic:
     display_name: Anthropic
     aliases:
