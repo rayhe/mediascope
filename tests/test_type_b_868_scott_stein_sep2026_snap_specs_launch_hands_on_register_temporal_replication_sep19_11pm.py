@@ -58,7 +58,7 @@ NEXT_ID_MARKER = "mechanism" + "_753"
 NEXT_ID_NUMERIC = "mechanism_id: " + "753"
 EXPECTED_ORDER = [("B", "868"), ("A", "867"), ("E", "866"), ("D", "865"), ("C", "864")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP_PER_565"
+ANCHORED_SHA = "3f4a47a714a116b2c25700401754b8932168f32f"
 
 SNAP_MIRROR_URL = "https://wesearch.press/s/i-wore-snap-specs-at-last-heres-what-these-massive-glasses-can-do-b02ecb8f"
 SNAP_VIDEO_URL = "https://www.youtube.com/watch?v=lESTqJ1fACQ"
