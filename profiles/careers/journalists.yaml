@@ -21237,3 +21237,133 @@ daniel_cooper:
       falsification_family: 'NOT a falsification-family member (temporal extension of an existing mechanism, not a uniform-prediction test); ledger holds at 27.'
       research_method: '7 browser.search query sets this run ((1) Alex Heath Verge Meta Luna - REJECTED (in corpus via Type B #563; own-repo GitHub commit surfaced); (2) Alex Cranz / David Pierce Vergecast Luna-Specs - REJECTED (no clean bylined arms); (3) Tom Warren / Adi Robertson / Wes Davis - REJECTED (no Sep-2026 glasses arms); (4) theverge.com Luna author attribution - attribution intelligence only (Dominic Preston byline, in corpus via #838); (5) Mariella Moon Engadget - REJECTED as primary (Luna arm good, no Moon competitor arm; led to Cooper); (6) Daniel Cooper HTC Vive Eagle byline - SELECTED (new Meta-framing arm, URL zero-hit pre-commit); (7) Cooper Apple Watch Series 12 URL - carried-arm verification (in corpus via wired.yaml + Sep-13 Conditt block)). 0 browser.open this run per #503. Pre-commit novelty sweeps per #715: zero test_type_b_873 files on disk (glob); no Type B #873 in git log (--grep); max numeric mechanism_id 754 pre-commit; zero underscore-form 755 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero numeric 755 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; "daniel_cooper" top-level slug zero-hit pre-commit; both evidence URLs zero-hit repo-wide pre-commit except the carried Apple arm (in corpus via wired.yaml + Conditt block, carried per #807). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; no zero-coverage claims per the #492 rule. ASCII-only, no em dashes.'
       test_file: tests/test_type_b_873_daniel_cooper_engadget_vive_eagle_meta_benchmark_extension_vs_apple_watch_carried_sep20_4am.py
+cristina_criddle:
+  name: Cristina Criddle
+  current_role: AI Correspondent
+  current_publication: Financial Times
+  publication_owner: Nikkei Inc.
+  beats:
+  - AI
+  - OpenAI
+  - Meta
+  - Google
+  - TikTok
+  notes: 'Financial Times AI correspondent; beat covers Meta, Google, OpenAI and TikTok (bio per allamericanspeakers, in source_urls). Byline on two FT accountability pieces on OpenAI in 2026: the Aug-11-2026 Chloé Bakalar ethics-chief exit (with Rafe Rosner-Uddin) and the Feb-3-2026 ChatGPT-prioritization senior-departures piece (via Techmeme attribution). Type B #878 (Sep 20 2026): mechanism 758 - writer-level ethics-governance register asymmetry, ledger 27->28 (see competitor_coverage block for the member-form).'
+  mechanism_ids:
+  - 758
+  source_urls:
+  - https://www.allamericanspeakers.com/speakers/457355/Cristina-Criddle
+  - https://www.linkedin.com/posts/cristina-criddle_openais-head-of-ethics-leaves-start-up-less-activity-7492716537636651009-nvXA
+  - https://www.techmeme.com/260203/p7
+  competitor_coverage:
+    type_b_878_cristina_criddle_ft_openai_ethics_chief_exit_vs_meta_contrast:
+      iteration: 878
+      mechanism_id: 758
+      type: B
+      goal_id: goal_54093bda4145
+      block_key: type_b_878_cristina_criddle_ft_openai_ethics_chief_exit_vs_meta_contrast
+      date: '2026-09-20 09:00 PDT'
+      design: 'within-journalist cross-entity register asymmetry at the ethics-governance layer: FT AI correspondent Cristina Criddle on OpenAI (the FT x OpenAI licensing-deal partner, mechanism 54, Apr 2024) vs Meta (non-payer, $0 AI licensing). Two OpenAI accountability arms six months apart (Aug-11-2026 Bakalar ethics-chief exit, primary; Feb-3-2026 ChatGPT-prioritization senior departures, secondary headline-tier); the Meta element is the within-piece constructive credentialing contrast in the Bakalar story (Bakalar spent six years as Meta chief ethicist building its AI ethics programs). Uniform-prediction test of the mechanism-54 softer-coverage prediction.'
+      finding: 'WRITER-LEVEL FALSIFICATION at the ethics-governance layer. Criddle''s FT piece "OpenAI''s head of ethics leaves start-up less than a year after joining" (FT, ~Aug 11 2026; byline Cristina Criddle with Rafe Rosner-Uddin; FT original attested via Criddle''s LinkedIn verbatim lede and six corroborating mirrors) applies an accountability-adversarial register to the $5-10M/yr licensing-deal partner: "has left the company after less than a year in the role, as the ChatGPT maker faces increasing scrutiny over the safety of its model development"; "the latest in a series of departures in the last month, including safety researchers Johannes Heidecke and Joshua Achiam"; "OpenAI admitted its models had hacked another company, Hugging Face, during internal testing"; "she was the only dedicated ethicist at the company, and there is no replacement"; "left quietly in July. No public announcement followed." MANUAL ILLUSTRATIVE -0.40. In the SAME piece Meta (non-payer) is the constructive contrast: Bakalar "joined OpenAI in August 2025 after spending six years as chief ethicist at Meta"; "Before joining OpenAI, Bakalar spent six years as chief ethicist at Meta, where she built its AI ethics programs and integrated them into products like Instagram and Facebook"; "She came from Meta, where she had shaped AI ethics policies for Instagram and Facebook." MANUAL ILLUSTRATIVE +0.15 - the ethics infrastructure OpenAI lost is credited to Meta. Second arm (headline-tier): Criddle''s Feb-3-2026 FT piece "Sources: OpenAI is prioritizing ChatGPT over long-term research, prompting senior staff departures; Sora and DALL-E teams felt neglected and under resourced" (Techmeme river attribution) - same accountability-adversarial register on the same partner, six months earlier. MANUAL ILLUSTRATIVE -0.30. Illustrative delta (Meta minus OpenAI primary) +0.55: the non-payer outscores the deal partner by more than half the register scale inside the partner''s own correspondent''s piece. The mechanism-54 uniform-softening prediction FAILS at the ethics-governance layer: the adversarial register is reserved for the partner, the favorable frame for the non-payer. Verdict directionally_supported_not_proven on the asymmetry; falsified_softer_prediction on the uniform-softening claim at this layer. Correlation is not causation. NOT artifact-grade.'
+      openai_bakalar_arm:
+        title_verbatim: 'OpenAI''s head of ethics leaves start-up less than a year after joining'
+        date: '2026-08-11'
+        date_note: 'FT original dated by the americanbazaaronline mirror URL slug /2026/08/11/; contemporaneous mirrors (indiantelevision, webpronews, bandt, bitnewsbot) same window; FT original may be Aug 10-11 - disclosed per the #492 rule, never filled by guessing.'
+        byline: Cristina Criddle with Rafe Rosner-Uddin
+        role: FT AI correspondent
+        publication: financial-times
+        url: https://www.linkedin.com/posts/cristina-criddle_openais-head-of-ethics-leaves-start-up-less-activity-7492716537636651009-nvXA
+        url_note: 'Criddle''s own LinkedIn post carrying the verbatim FT lede (FT original paywalled; 0 browser.open per #503); corroborating mirrors in source_urls.'
+        corroboration_urls:
+        - https://indiantelevision.com/mam/openais-ai-ethics-chief-chloe-bakalar-departs-after-less-than-a-year-260812/
+        - https://www.webpronews.com/openai-loses-its-sole-ethicist-as-safety-leadership-exodus-accelerates/
+        - https://americanbazaaronline.com/2026/08/11/openai-head-of-ethics-chloe-bakalar-departs-after-brief-tenure-486215/
+        - https://www.bandt.com.au/openais-head-of-ethics-chloe-bakalar-departs-after-less-than-a-year/
+        - https://bitnewsbot.com/openais-only-dedicated-ethicist-departs-no/
+        accountability_register_markers_verbatim:
+        - 'NEW: OpenAI''s lead ethicist, Chloé Bakalar, has left the company after less than a year in the role, as the ChatGPT maker faces increasing scrutiny over the safety of its model development.'
+        - 'Hers is the latest in a series of departures in the last month, including safety researchers Johannes Heidecke and Joshua Achiam.'
+        - 'Last month was also when OpenAI admitted its models had hacked another company, Hugging Face, during internal testing.'
+        - 'They added that she was the only dedicated ethicist at the company, and there is no replacement.'
+        - 'Reports surfaced this week that Bakalar, the company''s only dedicated ethicist, left quietly in July. No public announcement followed. And no replacement has been named.'
+        - 'Her departure was reported by the Financial Times... has not been accompanied by a public announcement from OpenAI, adding to questions around how the artificial intelligence company is structuring its ethics and safety oversight.'
+        tone_illustrative: -0.4
+        tone_basis: 'MANUAL ILLUSTRATIVE: quiet-exit framing ("left quietly", "no public announcement"), structural-hollowness markers ("only dedicated ethicist", "no replacement"), series-of-departures context (Heidecke, Achiam), containment-breach adjacency (Hugging Face). Hand-assigned per article-level register reading; NOT an empirical measurement.'
+        evidence_tier: 'EXCERPT-TIER: search-excerpt bounded per #503 (0 browser.open); FT original paywalled and NOT first-hand reviewed; register inferred from Criddle''s verbatim LinkedIn lede plus six corroborating mirrors; no URL construction.'
+      openai_chatgpt_prioritization_arm:
+        title_verbatim: 'Sources: OpenAI is prioritizing ChatGPT over long-term research, prompting senior staff departures; Sora and DALL-E teams felt neglected and under resourced'
+        date: '2026-02-03'
+        date_note: 'Techmeme river date (techmeme.com/260203/p7); headline-tier only - FT text not excerpted this run.'
+        byline: Cristina Criddle
+        attribution: Cristina Criddle/Financial Times via Techmeme
+        publication: financial-times
+        url: https://www.techmeme.com/260203/p7
+        register_characterization: 'Accountability-adversarial on internal research prioritization: senior staff departures attributed to ChatGPT-first resourcing; Sora and DALL-E teams "felt neglected and under resourced". Same correspondent, same partner, six months before the Bakalar piece - a two-arm pattern, not a one-off.'
+        tone_illustrative: -0.3
+        tone_basis: 'MANUAL ILLUSTRATIVE, headline-tier: sourced accountability framing on the deal partner''s internal priorities; scored from the Techmeme river headline only, disclosed as the weakest evidence tier in this block.'
+        evidence_tier: 'HEADLINE-TIER: Techmeme river headline attribution only; FT body text not retrieved (0 browser.open per #503).'
+      meta_within_piece_contrast:
+        context: 'Meta appears INSIDE the Bakalar piece as Bakalar''s prior employer and the provenance of the ethics programs OpenAI lost - not a separately scored Meta arm but the piece''s own credentialing contrast. Arm independence is limited by construction; disclosed as STRONG confounder.'
+        meta_contrast_markers_verbatim:
+        - 'Bakalar joined OpenAI in August 2025 after spending six years as chief ethicist at Meta.'
+        - 'Before joining OpenAI, Bakalar spent six years as chief ethicist at Meta, where she built its AI ethics programs and integrated them into products like Instagram and Facebook.'
+        - 'She came from Meta, where she had shaped AI ethics policies for Instagram and Facebook.'
+        tone_illustrative: 0.15
+        tone_basis: 'MANUAL ILLUSTRATIVE: in a story about OpenAI''s ethics vacuum ("only dedicated ethicist", "no replacement"), Meta is framed as the institution where the departed ethicist DID build programs over six years - constructive credentialing by contrast. A contrast reading, not a standalone Meta piece; disclosed.'
+      asymmetry_scorer_result_illustrative:
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. Primary comparison: Meta within-piece contrast (+0.15) vs OpenAI Bakalar arm (-0.40); the Feb-3 secondary arm (-0.30, headline-tier) supports the pattern but is excluded from the delta mean. n=1 vs n=1. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        target_entity: Meta
+        reference_entity: OpenAI
+        target_scores:
+        - 0.15
+        reference_scores:
+        - -0.4
+        target_avg: 0.15
+        reference_avg: -0.4
+        illustrative_delta_meta_minus_openai: 0.55
+        delta_calc: '+0.15 - (-0.40) = +0.55'
+        delta_direction: 'positive: within-journalist, within-piece entity asymmetry - the non-payer (Meta, $0) draws the constructive frame while the $5-10M/yr licensing-deal partner (OpenAI) draws the accountability-adversarial register, in the partner''s own FT correspondent''s piece. Directionally INVERTS the financial-incentive gradient; the inversion is the falsification, not a new gradient claim.'
+        secondary_arm_sensitivity: 'Including the Feb-3 secondary arm, the OpenAI reference mean is -0.35 and the delta is +0.50 - the inversion survives; the headline delta uses the primary arm only for auditability.'
+        two_entity_band:
+        - -0.4
+        - 0.15
+        engine: 'engine NOT run (illustrative arms only; secondary arm headline-tier)'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: 'NOT artifact-grade'
+        correlation_not_causation: true
+      confounders:
+      - '[STRONG] Excerpt-tier evidence for the primary arm (0 browser.open per #503; FT original paywalled and NOT first-hand reviewed; register inferred from Criddle''s verbatim LinkedIn lede plus six corroborating mirrors; full-text register could differ).'
+      - '[STRONG] Within-piece Meta element: Meta is credentialing context inside the OpenAI piece, not a separately scored standalone Meta arm; the +0.15 is a contrast reading with limited arm independence by construction.'
+      - '[STRONG] Secondary arm (Feb-3 ChatGPT prioritization) is headline-tier only (Techmeme river headline; FT body not retrieved); the two-arm pattern claim leans on one headline.'
+      - '[MODERATE] Event-driven register: quiet personnel exits with no replacement are news by nature; the adversarial markers may reflect the peg (unannounced exit, containment breach) rather than entity targeting. The falsification test is about the DEAL''s behavioral reach, which is event-agnostic, but peg-driven register bounds the animus read.'
+      - '[MODERATE] n=1 journalist: a writer-level claim cannot generalize to FT-wide behavior; the falsification is scoped to Criddle''s ethics-governance register.'
+      - '[MODERATE] Two data points six months apart: the pattern claim is thin (n=2 arms); a third Criddle accountability arm would be needed for a series.'
+      - '[WEAK] FT original date derived from a mirror URL slug (/2026/08/11/); the original may be Aug 10-11 - disclosed, never filled by guessing.'
+      - '[WEAK] Bakalar''s Meta tenure ("six years as chief ethicist") is mirror-characterized; FT''s exact framing not first-hand verified.'
+      counterevidence:
+      - 'FT runs favorable OpenAI coverage too (mechanism 625''s Sep-10 "AGI era" coronation, +0.25 carried) - the falsification is LAYER-BOUNDED (ethics-governance), not a claim that FT is uniformly adversarial on its deal partner.'
+      - 'The Bakalar register is substantially peg-driven (quiet exit + no replacement + Hugging Face breach are objectively newsworthy negatives); the uniform-softening prediction would expect muted relay, and original accountability reporting cuts against softening without proving animus.'
+      - 'Criddle''s Feb-3 piece is source-driven ("Sources:") accountability reporting; the adversarial register reflects source-supplied news rather than necessarily correspondent priors - the claim bounds the deal''s behavioral reach rather than proving its absence.'
+      cross_references:
+      - 'mechanism 54 (FT x OpenAI licensing deal, Apr 2024 - the softened-coverage prediction under test)'
+      - 'mechanism 593 (Victoria Song writer-level falsification of the deal-gradient prediction, FIFTEENTH member - the writer-level precedent)'
+      - 'mechanism 643 (FT Anthropic AISI-refusal watchdog scoop, FIFTEENTH member - adversarial capacity is not tie-gated)'
+      - 'mechanism 625 (FT Sep-10 OpenAI "AGI era" coronation +0.25 - the favorable-partner-coverage counterevidence)'
+      connects_to:
+      - 54
+      - 593
+      - 643
+      - 625
+      verdict: 'directionally_supported_not_proven'
+      falsification_verdict: falsified_softer_prediction
+      falsification_family: 'TWENTY-EIGHTH falsification-family member (ledger 27->28): the FT x OpenAI licensing deal (mechanism 54, Apr 2024, ~$5-10M/yr per #872) predicts softer OpenAI coverage; FT AI correspondent Cristina Criddle applied an accountability-adversarial register to the deal partner TWICE in six months at the ethics-governance/safety layer (Aug-11-2026 Bakalar ethics-chief exit: quiet departure, no announcement, no replacement, only dedicated ethicist, series of safety exits, Hugging Face containment-breach context; Feb-3-2026 ChatGPT-prioritization senior departures, headline-tier), while Meta (non-payer, $0) appears in the same Bakalar piece as the constructive credentialing contrast (Bakalar''s six years building Meta''s AI ethics programs for Instagram/Facebook). The uniform-softening prediction FAILS at the ethics-governance layer: the adversarial register is reserved for the partner, the favorable frame for the non-payer. Writer-level falsification of the deal-gradient prediction (precedent: mechanism 593 Victoria Song, FIFTEENTH member). First falsification member at the ethics-governance layer; extends the family to the FT x OpenAI deal.'
+      no_analysis_json_update: true
+      ledger: 'Ledger 27->28 this run (TWENTY-SEVENTH member-form present in profiles/the-verge.yaml m751 block; TWENTY-EIGHTH member-form is this block; negative-guard convention continues at TWENTY-NINTH)'
+      is_significant: false
+      correlation_not_causation: true
+      correlation_note: 'Correlation is not causation.'
+      research_method: '6 browser.search query sets this run ((1) FT Criddle OpenAI - surfaced the Bakalar ethics-chief exit via Criddle''s LinkedIn verbatim lede - SELECTED as primary arm; (2) "OpenAI" "head of ethics" Criddle August 2026 - corroboration set: indiantelevision, webpronews, americanbazaaronline, bandt, bitnewsbot (all zero-hit pre-commit); (3) "Cristina Criddle" Meta superintelligence Llama since 2026-01-01 - REJECTED (no clean bylined Meta arms; Techmeme relay surfaced the Feb-3 ChatGPT-prioritization piece instead); (4) "Cristina Criddle" "Meta" 2026 - no fresh Meta arm; (5) techmeme.com/260203/p7 attribution verification - SELECTED as secondary arm (headline-tier); (6) Criddle bio - allamericanspeakers (beats: Meta, Google, OpenAI, TikTok)). 0 browser.open this run per #503. Pre-commit novelty sweeps per #715: zero test_type_b_878 files on disk (glob); no Type B #878 in git log (--grep); max numeric mechanism_id 757 pre-commit; zero underscore-form 758 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero numeric 758 keys in profiles/ pre-commit; "cristina_criddle" top-level slug zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit; all six evidence URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; no zero-coverage claims per the #492 rule. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_878_cristina_criddle_ft_openai_ethics_chief_exit_vs_meta_contrast_sep20_9am.py

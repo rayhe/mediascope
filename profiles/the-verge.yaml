@@ -2641,7 +2641,7 @@ competitor_relationships:
       falsification_family: 'TWENTY-SEVENTH falsification-family member (ledger 26->27): the Vox Media x OpenAI strategic partnership (May 29 2024, in-corpus) predicts softer coverage; the observed accountability-adversarial legal-filing register on the deal partner at the copyright-legal layer contradicts the uniform-softening prediction. Extends the m598/#607 Vox-deal falsification with a second family member at the same outlet x entity; completes the m673 selection-margin test (operative margin is tone, not selection).'
       falsification_verdict: falsified_softer_prediction
       no_analysis_json_update: true
-      ledger: 'Ledger 26->27 this run (TWENTY-SIXTH member-form present in profiles/competitor-coverage-research.yaml; TWENTY-SEVENTH member-form is this block; the 6 pre-existing "TWENTY-SEVENTH" strings are the #847/#848/#853/#857/#858 negative-guard strings per the #860 guard update; negative-guard convention continues at TWENTY-EIGHTH)'
+      ledger: 'Ledger 26->27 this run (TWENTY-SIXTH member-form present in profiles/competitor-coverage-research.yaml; TWENTY-SEVENTH member-form is this block; the 6 pre-existing "TWENTY-SEVENTH" strings are the #847/#848/#853/#857/#858 negative-guard strings per the #860 guard update; negative-guard convention continues at TWENTY-NINTH; TWENTY-EIGHTH member-form landed in profiles/careers/journalists.yaml via Type B #878 mechanism 758)'
       confounders_ranked:
         strong:
         - 'Excerpt-bounded evidence: 0 browser.open this run (theverge.com policy-blocked per standing rule); register inferred from verbatim mirror excerpts and digest byline attestation; full-text register could differ'
