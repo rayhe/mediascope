@@ -19567,8 +19567,14 @@ lucas_ropek:
       tone: adversarial
       privacy_vocabulary_sentences: 0
       mechanism_id: 728
-  notes: 'TechCrunch senior writer (AI, consumer tech, startups; ex-Gizmodo AI/cybersecurity). Type B #828 (Sep 18 2026): mechanism 728 within-journalist temporal register shift on Snap Specs - FIRST dedicated Type B mechanism on Ropek in journalists.yaml (mechanism 269 lives in competitor-coverage-research.yaml; zero lucas_ropek YAML key pre-commit). Jun 16 2026 arm "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren''t cheap" (read first-hand this run, 64 rendered lines; product-news neutral with soft business skepticism: "oof, they aren''t cheap", "slightly bulkier, goggle-like", "steep enough to put Specs out of reach", "still not consistently profitable", April layoffs; personal CES demo positive: "fun to play around with", "impressed by the contextual AI"; ONE neutral privacy sentence: "On privacy, Specs follows Meta''s lead with a built-in LED light"; +0.10 MANUAL ILLUSTRATIVE) vs Sep 16 2026 arm "Snap tries to make the case again for its $2,200 smart glasses" (read first-hand this run, 65 rendered lines; adversarial: "not only underwhelming but also a genuine disaster", "whopping $2,200", "vaguely reminiscent of scuba gear", "inspired jeers online and calls for the company''s CEO, Evan Spiegel, to resign", "stock subsequently nosedived", "cringe-inducing cost", "head-scratching", "who is really going to play basketball while wearing heavy goggles on their head?"; -0.45 MANUAL ILLUSTRATIVE). Illustrative Sep-minus-Jun delta -0.55. REFINES mechanism 269: the "product-enthusiastic" Ropek-on-Snap characterization was a debut-window phenomenon; by September the same journalist converges to the adversarial register his colleagues applied to Meta on price/utility/business grounds. CRITICAL SCOPE BOUND: the 269 PRIVACY-vocabulary claim SURVIVES - the Sep 16 piece applies ZERO privacy/alarm vocabulary to Snap''s 4 cameras plus contextual AI ("builds an understanding of your goals, priorities, relationships, and routines"), while Perez/Ha applied "luxury surveillance tech" and "pervert glasses" to Meta; the privacy register asymmetry persists even inside an adversarial piece. directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
-  mechanism_ids: [728]
+    meta_luna_sep16:
+      headline: "After accusations of selling 'perv glasses,' Meta prepares to sell a pair without a camera"
+      date: '2026-09-16'
+      tone: adversarial_privacy_register_own_voice
+      privacy_vocabulary_sentences: 3 (dystopian surveillance society run amok, pervert glasses, integrated spy equipment)
+      mechanism_id: 749
+  notes: 'TechCrunch senior writer (AI, consumer tech, startups; ex-Gizmodo AI/cybersecurity). Type B #828 (Sep 18 2026): mechanism 728 within-journalist temporal register shift on Snap Specs - FIRST dedicated Type B mechanism on Ropek in journalists.yaml (mechanism 269 lives in competitor-coverage-research.yaml; zero lucas_ropek YAML key pre-commit). Jun 16 2026 arm "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren''t cheap" (read first-hand this run, 64 rendered lines; product-news neutral with soft business skepticism: "oof, they aren''t cheap", "slightly bulkier, goggle-like", "steep enough to put Specs out of reach", "still not consistently profitable", April layoffs; personal CES demo positive: "fun to play around with", "impressed by the contextual AI"; ONE neutral privacy sentence: "On privacy, Specs follows Meta''s lead with a built-in LED light"; +0.10 MANUAL ILLUSTRATIVE) vs Sep 16 2026 arm "Snap tries to make the case again for its $2,200 smart glasses" (read first-hand this run, 65 rendered lines; adversarial: "not only underwhelming but also a genuine disaster", "whopping $2,200", "vaguely reminiscent of scuba gear", "inspired jeers online and calls for the company''s CEO, Evan Spiegel, to resign", "stock subsequently nosedived", "cringe-inducing cost", "head-scratching", "who is really going to play basketball while wearing heavy goggles on their head?"; -0.45 MANUAL ILLUSTRATIVE). Illustrative Sep-minus-Jun delta -0.55. REFINES mechanism 269: the "product-enthusiastic" Ropek-on-Snap characterization was a debut-window phenomenon; by September the same journalist converges to the adversarial register his colleagues applied to Meta on price/utility/business grounds. CRITICAL SCOPE BOUND: the 269 PRIVACY-vocabulary claim SURVIVES - the Sep 16 piece applies ZERO privacy/alarm vocabulary to Snap''s 4 cameras plus contextual AI ("builds an understanding of your goals, priorities, relationships, and routines"), while Perez/Ha applied "luxury surveillance tech" and "pervert glasses" to Meta; the privacy register asymmetry persists even inside an adversarial piece. directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; NOT a falsification-family member; ledger holds at 26; no analysis.json update. Type B #863 (Sep 19 2026 18:00 PDT): mechanism 749 same-day cross-entity privacy-register pair - Ropek''s Sep 16 1:12 PM PDT TechCrunch Luna "In Brief" ("After accusations of selling ''perv glasses,'' Meta prepares to sell a pair without a camera", 36 rendered lines, byline confirmed via author avatar caption) applies surveillance vocabulary ("dystopian surveillance society run amok", "pervert glasses", "integrated spy equipment") in his OWN voice to a camera-free product, while his same-morning Snap Specs piece (mechanism 728) applies zero privacy vocabulary to camera-equipped glasses; CLOSES the #828 scope bound and refines m269 with a same-day camera/no-camera inversion (directionally_supported_not_proven, MANUAL ILLUSTRATIVE -0.50 vs -0.45, ledger holds at 26).'
+  mechanism_ids: [728, 749]
   competitor_coverage:
     type_b_828_lucas_ropek_techcrunch_snap_jun16_vs_sep16_register_shift_sep18:
       iteration: 828
@@ -19653,6 +19659,75 @@ lucas_ropek:
       - '#113 (Karissa Bell investigative methodology asymmetry - Snap-passive vs Meta-adversarial contrast family)'
       - '#727 (WIRED x Snap Sep-16 launch natural experiment - the Sep 16 TC piece logged there as counter-evidence)'
       - '#354 (WIRED inverted price criticism - adversarial price register on Meta comparator)'
+      no_analysis_json_update: true
+
+    type_b_863_lucas_ropek_techcrunch_meta_luna_sep16_same_day_cross_entity_privacy_register_sep19:
+      iteration: 863
+      mechanism_id: 749
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-19 18:00 PDT'
+      block_key: 'type_b_863_lucas_ropek_techcrunch_meta_luna_sep16_same_day_cross_entity_privacy_register_sep19'
+      test_file: 'tests/test_type_b_863_lucas_ropek_techcrunch_meta_luna_sep16_same_day_cross_entity_privacy_register_sep19_6pm.py'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-journalist SAME-DAY cross-entity privacy-register comparison, 860-864 window fifth leg D->E->A->B->C. Question: does the same TechCrunch writer apply surveillance-privacy vocabulary to Meta''s CAMERA-FREE Luna glasses on the same day (Sep 16 2026) he wrote a Snap Specs piece with ZERO privacy vocabulary for camera-equipped glasses? Meta arm read first-hand this run via verbatim techcrunch.com URL (36 rendered lines). Snap arm carried from mechanism 728 (#828) unrescored. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      extends: 'REFINES mechanism 269 (Lucas Ropek editorial routing / vocabulary laundering) and CLOSES the #828 (mechanism 728) scope bound. The "Ropek never applies the surveillance vocabulary to Meta in his own voice" gap is closed: his Sep 16 1:12 PM PDT Luna "In Brief" deploys "pervert glasses", "dystopian surveillance society run amok", and "integrated spy equipment" in his own voice, attached to a story about a camera-free product. The m269 privacy-vocabulary claim not only survives but INVERTS: the entity receiving the surveillance register has zero cameras; the entity spared it has four plus contextual AI.'
+      meta_arm:
+        title: "After accusations of selling 'perv glasses,' Meta prepares to sell a pair without a camera"
+        date: '2026-09-16'
+        time: '1:12 PM PDT'
+        author_byline: Lucas Ropek
+        publication: techcrunch
+        role: Senior Writer (AI, consumer tech, startups)
+        genre: In Brief digest
+        url: https://techcrunch.com/2026/09/16/after-accusations-of-selling-perv-glasses-meta-prepares-to-sell-a-pair-without-a-camera/
+        key_quotes:
+        - 'Lede (observed this run): "Meta''s camera-equipped smart glasses have proven more successful than other entrants into the market, but they have also deeply disturbed certain consumers who see them as invasive emblems of a dystopian surveillance society run amok"'
+        - 'Nut graf (observed this run): "Now, as the company weathers complaints that it''s selling ''pervert glasses,'' it has reportedly decided to sell a pair that doesn''t come with integrated spy equipment"'
+        - 'Excerpt (observed this run): "Luna may be unveiled as soon as Meta Connect, Meta''s annual hardware/developer event happening in Menlo Park next week, the outlet notes"'
+        - 'Excerpt (observed this run): "Meta''s Reality Labs, which is responsible for developing its smart glasses line, is still losing a gargantuan amount of money, as its earnings report from April revealed"'
+        - 'Neutral Luna facts (observed this run): "the new glasses, internally known as Luna" ... "six built-in microphones" ... "a button on the side" activates the AI; "TechCrunch reached out to Meta for more information"'
+        register_notes: 'The piece frames even the camera-free remediation product through the privacy-controversy lens: lede and nut graf apply surveillance vocabulary ("dystopian surveillance society run amok", "pervert glasses", "integrated spy equipment") to Meta inside a story whose news peg is glasses WITH NO CAMERA. Ropek''s own voice - not a colleague''s - now carries the register #828 found only in Perez/Ha. The Luna device facts themselves are reported neutrally; the adversarial register attaches to Meta as entity.'
+        tone_MANUAL_ILLUSTRATIVE: -0.50
+        tone_basis: 'hand-assigned this run from the first-hand 36-line read; MANUAL ILLUSTRATIVE'
+        evidence_tier: 'first-hand read this run (36 rendered lines); byline confirmed via author avatar caption ("Lucas Ropek") on the page; URL copied verbatim from search Full-URL listing'
+      snap_arm:
+        title: "Snap tries to make the case again for its $2,200 smart glasses"
+        date: '2026-09-16'
+        author_byline: Lucas Ropek
+        carried_from: 'mechanism 728 (#828) - arm unrescored this run'
+        register_notes: 'Carried from #828: adversarial on price, utility, and business viability ("genuine disaster", "whopping $2,200", "scuba gear", "jeers", "cringe-inducing", "head-scratching"), but ZERO privacy/alarm vocabulary anywhere in the 65 lines despite 4 cameras and contextual AI that "builds an understanding of your goals, priorities, relationships, and routines".'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        tone_basis: 'carried from #828; not rescored this run'
+      illustrative_delta_meta_minus_snap: -0.05
+      delta_calc: '(-0.50) - (-0.45) = -0.05'
+      confounders_ranked:
+        strong:
+        - 'NEWS-PEG dominance: Luna is explicitly a privacy-controversy-pegged story (camera-free glasses as privacy remediation); the surveillance frame is the natural news peg. The Snap piece was a relaunch/keynote story with a business news peg. The vocabulary difference tracks the news peg, not necessarily an entity trait - the DOMINANT confound'
+        - 'Controversy-anchored register: the adversarial vocabulary ("dystopian surveillance society run amok", "integrated spy equipment") describes Meta''s camera-equipped glasses, the actual controversy subject; Luna is presented as the remedy. The register is controversy-anchored, not Luna-targeted'
+        moderate:
+        - 'Genre asymmetry: 36-line "In Brief" digest vs 65-line full product piece; less room for register variety, and In Brief ledes are punchy by format'
+        - 'Same-day but different news cycles: Snap piece published in the morning, Luna piece 1:12 PM PDT; separate editorial moments'
+        weak:
+        - 'Luna facts reported neutrally (microphones, side button, Connect timing) - the piece is not uniformly hostile, which softens a pure entity-bias read'
+      counterevidence:
+      - 'COUNTEREVIDENCE: the adversarial vocabulary describes Meta''s camera-equipped glasses, the actual controversy subject - "deeply disturbed certain consumers" refers to the old product; a controversy-anchored reading dissolves the pure-bias interpretation'
+      - 'COUNTEREVIDENCE: the Luna facts themselves are reported neutrally; the piece could be read as pro-remediation (removing the camera is the fix)'
+      - 'COUNTEREVIDENCE: the news-peg difference (privacy remediation vs relaunch keynote) is a legitimate editorial reason for different vocabulary; no editor need instruct anything'
+      - 'COUNTEREVIDENCE: Ropek''s Sep-16 Snap piece was itself adversarial (-0.45) - he is not uniformly soft on Snap; the asymmetry is vocabulary-type, not tone-direction'
+      - 'COUNTEREVIDENCE: #828''s Jun 16 arm had ONE neutral privacy sentence on Snap - Ropek does not categorically omit privacy vocabulary for Snap across all time, bounding the claim to the Sep-16 same-day pair'
+      verdict: 'REFINES mechanism 269 (Lucas Ropek editorial routing / vocabulary laundering) and CLOSES the mechanism-728 scope bound: Ropek now applies the surveillance register to Meta in his own voice ("pervert glasses", "dystopian surveillance society run amok", "integrated spy equipment") inside a story about camera-free glasses, while his same-day Snap piece applies ZERO privacy vocabulary to camera-equipped glasses. The m269 privacy-vocabulary asymmetry survives with a same-day camera/no-camera inversion: the surveilled entity has no cameras; the un-surveilled entity has four. Verdict: directionally_supported_not_proven.'
+      research_method: '3 browser.search query sets this run (PetaPixel Luna Meta camera-free piece, Tom''s Guide "pervert glasses" antidote Luna piece, Mariella Moon Engadget Luna byline) used as ruled-out alternatives; 1 browser.open first-hand read of the TechCrunch Luna "In Brief" via verbatim techcrunch.com URL (36 rendered lines). Byline confirmed via author avatar caption ("Lucas Ropek") on the page. Snap arm carried from mechanism 728 (#828, read first-hand there). Ruled-out alternatives: PetaPixel Sep 16 Luna piece (byline not visible in page render, m230 Growcoot extension not pursued); Tom''s Guide "pervert glasses antidote" piece (byline not established this run); Mariella Moon Engadget Luna piece (Sep 16, neutral news-desk register; no same-journalist competitor comparator established). No canonical URLs constructed. No zero-coverage claims per the iteration-492 rule.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; engine run once as a DEGENERATE n=1 check (calculate_asymmetry([-0.50], [-0.45]) returns asymmetry_score -0.05; t 0.0; p 1.0; Cohen d 0.0; degenerate CI (-0.05, -0.05); is_significant False; no significance claimed). ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (mechanism-269 refinement that closes a mechanism-728 scope bound, not a uniform-prediction contradiction); ledger holds at 26.'
+      cross_refs:
+      - '#269 (Lucas Ropek cross-entity camera glasses privacy vocabulary omission - refined here; privacy claim inverts with camera-free arm)'
+      - '#728 (mechanism 728 same-journalist temporal register shift - Snap Sep-16 arm carried; #828 scope bound closed here)'
+      - '#620 (Ropek Aug 2026 settlement/infrastructure vocabulary bifurcation - same-journalist family)'
+      - '#733 (Dominic Preston Verge Luna piece - same-news-event comparator at a different outlet; #838)'
+      - '#113 (Karissa Bell investigative methodology asymmetry - cross-journalist family)'
       no_analysis_json_update: true
 
 jay_peters:
