@@ -72,7 +72,7 @@ MECH_KEY = "gizmodo_snap_sep16_launch_hands_on_register_vs_meta_adversarial_band
 M_ID = 748
 ITER = 862
 TYPE_LETTER = "A"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "e520b0bff4fac5d8536934651dacfc102309d823"
 
 MECH_ID_MARKER = "mechanism" + "_748"
 NEXT_ID_MARKER = "mechanism" + "_749"
@@ -145,13 +145,15 @@ class TestNovelty862:
 
     def test_type_a_862_main_commit_unique_and_anchored(self):
         # DESELECTED pre-commit (per #565): the commit does not exist yet.
-        proc = _git("log", "--oneline", "--grep", "Type A #862: ", "--grep", "Type A #862 ", "--all")
+        # Full-hash format (per the #860 pattern): --oneline abbreviation
+        # breaks the ANCHORED_SHA containment check.
+        proc = _git("log", "--format=%H %s", "--grep", "Type A #862")
         mains = [ln for ln in proc.stdout.splitlines()
                  if re.search(r"Type A #862(?::| )", ln)
                  and "anchor followup" not in ln and "log-hash followup" not in ln]
         assert len(mains) == 1
         assert ANCHORED_SHA not in ("PATCH_ME_IN_FOLLOWUP", "POST_COMMIT_ANCHORED", "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565")
-        assert ANCHORED_SHA in mains[0]
+        assert mains[0].startswith(ANCHORED_SHA + " ")
 
     def test_novelty_verification_claim(self):
         blk = _block_yaml()
@@ -180,7 +182,8 @@ class TestRotationGuard862:
         for s in subjects:
             m = re.search(r"Type ([A-E]) #(\d+)(?::| )", s)
             if m and m.group(2) in ("858", "859", "860", "861", "862"):
-                if "anchor followup" not in s and "log-hash followup" not in s:
+                # Followups and test-fixups are not rotation legs.
+                if "anchor followup" not in s and "log-hash followup" not in s and "test fixup" not in s:
                     order.append((m.group(1), m.group(2)))
         for expected, got in zip(EXPECTED_ORDER, order):
             assert expected == got
