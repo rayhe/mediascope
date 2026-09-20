@@ -117,7 +117,7 @@ TEST_BASENAME = (
 README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "25640c20035b626fe560ab2986f885f8f640d5cf"
 
 # Next mechanism number after the pre-commit corpus max (753); used as
 # an int so no underscore/dash-form literal is ever carried in source.
