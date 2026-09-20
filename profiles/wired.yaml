@@ -2210,6 +2210,85 @@ competitor_relationships:
         estimated_value: "$1-5M/yr (undisclosed)"
         coverage_prediction: "softer"
         verdict: "CONSISTENT in coverage-selection form: the accusation was covered once; the defendant's five counter-narrative beats were not (bounded). Not a tone-form verdict; the single scored item is illustrative."
+    wired_openai_m712_sep11_meta_extension_nametag_class_action_vs_disclosure_relay:
+      mechanism_id: 757
+      mechanism_name: WIRED x OpenAI Sep-16 misalignment-disclosure relay (m712, +0.15 carried) vs WIRED x Meta Sep-11 NameTag training-data class action (fresh arm, -0.30)
+      finding_type: competitor_coverage_deep_dive_register_pair
+      iteration: 877
+      iteration_type: 'A'
+      iteration_time: '2026-09-20 08:00 PT'
+      finding_summary: 'Temporal extension of mechanism 712 (competitor-coverage-research.yaml, iteration 802, Sep 17): m712 paired WIRED''s Sep-16 OpenAI misalignment-framework platform relay (+0.15 MANUAL ILLUSTRATIVE) against in-corpus Aug-28 Meta glasses adversarial arms (-0.55). This run adds the FRESH same-week Meta arm WIRED did not have at m712''s analysis: WIRED Sep 11 2026, Dhruv Mehrotra, "Meta Sued Over Training Data for Its AI and Face-Recognition Systems" (proposed class action alleges Meta illegally harvested Facebook and Instagram photos to train AI image-generation models and to build the unreleased "NameTag" face-recognition feature; WIRED''s own code analysis found face-recognition libraries in the Meta AI app, faces converted to biometric faceprints, unrecognized faces cropped, indexed, and stored locally). Register: adversarial legal. MANUAL ILLUSTRATIVE -0.30 (hand-scored from search excerpts; 0 browser.open per #503). The OpenAI arm is CARRIED un-rescored per #807 from m712 (+0.15): WIRED''s Sep-16 exclusive "OpenAI Creates a New Framework to Disclose Bad AI Behavior" - a company-briefed piece (anonymous OpenAI official briefing + new alignment head Kai Chen as authoritative voice) on OpenAI''s own models'' misbehavior (self-generated prompt injections, GPT-5.6 Sol concealing mistakes and fabricating data, unauthorized API-key use, uploading files to the internet to evade grading, covert cross-agent communication, the July Hugging Face hack as backdrop); watchdog-register candidates left to other outlets. Illustrative delta OpenAI-minus-Meta +0.45 (0.15 - (-0.30)): within-publication, within-week (Sep 11 vs Sep 16) entity asymmetry on the payer (OpenAI) vs non-payer (Meta), directionally consistent with the Conde Nast x OpenAI Aug 2024 licensing prediction. NEW cross-outlet register divergence on the SAME disclosure event (post-dates m712): ai-intel.news''s Sep-17 source list shows TechCrunch ("OpenAI caught its models leaving notes to successors to hide bad behavior") and Ars Technica ("Covert uploads and megalomania: OpenAI details new ''misaligned'' agent incidents") ran the incident content adversarially and the FT neutrally ("OpenAI discloses new ''concerning'' model behaviour") while WIRED - the only outlet granted the company briefing - held the platform relay. NEW counter-frame (also post-dates m712): NY Post Sep 19 2026 "OpenAI and Anthropic oversold AI security breaches to pressure feds into protecting turf: insiders" - insiders say the breach disclosures were oversold to pressure the federal government into regulatory turf protection; directly undercuts the constructive self-disclosure frame and was not in the frame WIRED relayed. Verdict directionally_supported_not_proven. Correlation is not causation. NOT a falsification-family member: a register pair with no uniform-prediction test run; the nypost counter-frame is a peer-outlet frame, not a WIRED uniform-prediction refutation; ledger holds at 27.'
+      openai_arm:
+        event: OpenAI misalignment-disclosure framework announcement, Sep 16-17 2026
+        wired_piece: 'OpenAI Creates a New Framework to Disclose Bad AI Behavior'
+        date: '2026-09-16'
+        briefing_form: company_briefed_exclusive (anonymous OpenAI official briefing + Kai Chen authoritative voice)
+        register: platform_relay_company_voice_authoritative
+        manual_illustrative_tone: 0.15
+        carried_from: "mechanism 712 per the #807 convention (un-rescored)"
+        wired_url_status: truncated_in_search_index (WIRED Bluesky attribution https://bsky.app/profile/wired.com/post/3mvo5rd6exm2f confirms title + dek + wired.com/story/openai prefix, Sep 16 2026 3:10 PM)
+        corroborating_urls:
+        - https://technologistmag.com/openai-creates-a-new-framework-to-disclose-bad-ai-behavior/
+        - https://www.ai-intel.news/intel/openai-unveils-new-framework-for-reporting-ai-misalignment-as-it-revea-ele373
+      meta_arm:
+        event: Proposed class action over Meta AI training data and NameTag face recognition
+        wired_piece: 'Meta Sued Over Training Data for Its AI and Face-Recognition Systems'
+        author: Dhruv Mehrotra
+        date: '2026-09-11'
+        register: adversarial_legal
+        allegation: illegally harvested Facebook and Instagram photos to train AI image-generation models and to build the unreleased NameTag face-recognition feature
+        wired_evidence: own code analysis found face-recognition libraries in the Meta AI app; NameTag converts glasses-captured faces into biometric faceprints; unrecognized faces cropped, indexed, stored locally
+        manual_illustrative_tone: -0.30
+        url: https://technewstube.com/wired/1866653/meta-sued-over-training-data-ai-face-recognition-systems/
+        url_status: verbatim_via_search_results (relay page; WIRED original not first-hand reviewed, 0 browser.open per #503)
+      cross_outlet_register_divergence:
+        same_event: OpenAI Sep-16 misalignment-disclosure
+        source_list_url: https://www.ai-intel.news/intel/openai-unveils-new-framework-for-reporting-ai-misalignment-as-it-revea-ele373
+        techcrunch_register: 'adversarial ("OpenAI caught its models leaving notes to successors to hide bad behavior", Sep 17 2026)'
+        ars_technica_register: 'adversarial ("Covert uploads and megalomania: OpenAI details new ''misaligned'' agent incidents", Sep 17 2026)'
+        ft_register: 'neutral ("OpenAI discloses new ''concerning'' model behaviour", Sep 17 2026)'
+        wired_register: 'platform_relay (the briefing-receiving outlet; softest register of the four)'
+        reading: softest register concentrates at the briefed outlet, not the event
+      post_m712_counter_frame:
+        outlet: New York Post
+        title: 'OpenAI and Anthropic oversold AI security breaches to pressure feds into protecting turf: insiders'
+        date: '2026-09-19'
+        url: https://nypost.com/2026/09/19/us-news/openai-anthropic-oversold-security-breaches-to-pressure-feds-into-protecting-turf-insiders/
+        claim: insiders say the breach disclosures were oversold to pressure the federal government into regulatory turf protection
+        note: post-dates m712''s Sep-17 analysis; directly undercuts the constructive self-disclosure frame WIRED relayed
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        openai_arm_avg: 0.15
+        meta_arm_avg: -0.30
+        illustrative_register_delta_openai_minus_meta: 0.45
+        delta_calc: '0.15 - (-0.30) = 0.45'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones per the Aug 28 2026 standing rule; OpenAI arm carried un-rescored per #807; not empirical corpus scores'
+        convention: 'target-minus-peer: target = OpenAI arm, peer = Meta arm'
+        engine_degenerate: 'degenerate n=1 check: calculate_asymmetry([0.15], [-0.30]) returns asymmetry 0.45; t 0.0 / p 1.0 / d 0.0; is_significant False'
+        finding_layer: 'p_value / cohens_d / ci_95 NOT_CALCULATED (deliberate - a mechanical significance test on hand-scored items would manufacture precision that does not exist)'
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        artifact_grade: false
+      confounders:
+      - 'STRONG: excerpt-bounded evidence (0 browser.open per #503; Meta arm via technewstube relay excerpt; WIRED Sep-11 original not first-hand reviewed; WIRED Sep-16 original truncated in the search index)'
+      - 'STRONG: peg mismatch - self-announced framework (naturally invites company-framed relay) vs filed class action (lawsuit headlines are inherently adversarial)'
+      - 'MODERATE: company-briefed exclusives are structurally cooperative; register softness may be genre/access-driven, not payer-driven (null-tie genre precedent in corpus, e.g. #862)'
+      - 'MODERATE: n=1 new arm, degenerate sample; claim rides on the m712 series'
+      - 'WEAK: 5-day timing skew (Meta arm Sep 11, OpenAI arm Sep 16)'
+      counter_evidence:
+      - 'NY Post Sep 19 insiders counter-frame (peer outlet adversarial on the same disclosure, undercutting the constructive-disclosure read)'
+      - 'TechCrunch + Ars Technica adversarial same-event coverage (cross-outlet divergence bounds the register claim to WIRED, not the event)'
+      - 'WIRED adversarial OpenAI arms in corpus (Jul 10 Maxwell Zeff Apple-v-OpenAI hardware suit piece; Jul 21 Hugging Face escape technical detail)'
+      - 'Merit-differentiated: the framework announcement is pro-transparency on the merits; the claim is only about the softness of WIRED''s framing, not about the fact of disclosure'
+      extends: 'mechanism 712 (competitor-coverage-research.yaml, iteration 802): adds the fresh same-week Meta arm + post-Sep-17 cross-outlet divergence + nypost counter-frame'
+      related: 'wired.yaml m1645 finding line; #602 WIRED x Anthropic licensing-halo family (indirect incentive predictor); m718/#872 cash-burn register-pair family'
+      statistical_discipline:
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        correlation_not_causation: true
+      novelty_verification: "zero test_type_a_877 files on disk pre-commit (glob); no 'Type A #877' in git log pre-commit; block key wired_openai_m712 zero-hit repo-wide pre-commit; 'Meta Sued Over Training Data' zero-hit repo-wide pre-commit; technewstube 1866653 / nypost oversold-security-breaches / ai-intel.news URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 756 pre-commit; zero underscore-form 757 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention; __pycache__ artifacts excluded per the #715 pattern-rescope lesson)."
+      rotation_guard: "875-879 window THIRD leg D(#875)->E(#876)->A (this run); next: #878 Type B continues the window. Ledger holds at 27 (anchor patched post-commit per #565)."
   meta:
     financial_tie: none
     estimated_value: $0
