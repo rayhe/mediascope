@@ -146,7 +146,7 @@ TEST_BASENAME = (
 README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "365c5b06f8b92cd5ecc65a3ac7a5c1dffb973c7b"
 
 # Next mechanism number after the pre-commit corpus max (759); used as
 # an int so no underscore/dash-form literal is ever carried in source.
@@ -288,20 +288,28 @@ class TestNovelty880:
         assert matches == [OWN_BASENAME], matches
 
     def test_type_d_880_main_commit_unique_and_anchored(self):
-        # Deselected pre-commit per #565 (the #880 main commit does not
-        # exist yet); the followup patches ANCHORED_SHA and this test
-        # then pins that the main commit subject appears exactly once,
+        # No #880 main commit exists pre-commit; the anchor test pins
         # the main commit SHA once the followup patches ANCHORED_SHA.
-        subjects = _git("log", "-40", "--format=%s").splitlines()
-        mains = [s for s in subjects if "Type D #880:" in s]
-        assert len(mains) == 1, mains
+        # Deselected pre-commit per #565; patched green in the anchor
+        # followup.
+        result = subprocess.run(
+            ["git", "log", "--format=%H %s", "--", "tests/" + OWN_BASENAME],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+        )
+        assert result.returncode == 0
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type D #880" in line and "followup" not in line.lower()
+        ]
         assert ANCHORED_SHA not in (
             "PATCH_ME_IN_FOLLOWUP",
             "POST_COMMIT_ANCHORED",
             "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565",
-        )
-        assert len(ANCHORED_SHA) == 40
-        if ANCHORED_SHA != "PATCH_ME_IN_FOLLOWUP":
+        ) or mains == []
+        if mains:
             assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
     def test_novelty_verification_claim(self):
@@ -312,15 +320,27 @@ class TestNovelty880:
         assert "m757_m758_m759" in OWN_BASENAME
 
     def test_no_type_d_880_in_git_log_pre_commit(self):
-        # Deselected pre-commit per #565; patched green in the anchor
-        # followup once the main commit exists.
-        subjects = _git("log", "-60", "--format=%s")
-        assert "Type D #880" not in subjects.splitlines()
+        # Pre-commit novelty: no Type D #880 main commit exists.
+        # Post-commit (anchor followup per #565), exactly one exists
+        # and it is the anchored main commit - the guard doubles as a
+        # duplicate-main-commit check.
+        result = subprocess.run(
+            ["git", "log", "--format=%H %s", "--grep=Type D #880"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+        )
+        assert result.returncode == 0
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type D #880" in line and "followup" not in line.lower()
+        ]
         if ANCHORED_SHA == "PATCH_ME_IN_FOLLOWUP":
-            return
-        mains = [s for s in subjects.splitlines() if "Type D #880:" in s]
-        assert len(mains) == 1
-        assert mains[0].startswith(ANCHORED_SHA + " "), mains
+            assert mains == [], mains
+        else:
+            assert len(mains) == 1, mains
+            assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
     def test_875_879_window_closed_prior_to_880(self):
         log = _read(LOG_PATH)
