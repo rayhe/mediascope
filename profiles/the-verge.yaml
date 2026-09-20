@@ -2546,6 +2546,134 @@ competitor_relationships:
       - "iteration 573 (Nilay Patel Decoder interview-access falsification): different analytical layer (CEO-interview entity selection vs legal-intervention coverage selection), different article corpus"
       - "iteration 507 (ad-monetization register boundary): different news domain (ads monetization vs copyright-litigation intervention), zero article overlap; 673 extends 507's domain-bounded pattern to the selection margin as a bounded hypothesis"
       - "iteration 592 (Verge x Google adversarial-litigation boundary): different entity (Google vs OpenAI); 592's Meta comparator arms carried as the standing same-outlet baseline"
+    verge_openai_doom_loop_unsealed_nyt_filing_register_vs_meta_band_sep19_2026:
+      mechanism_id: 751
+      date: '2026-09-19'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 867
+      iteration_type: A
+      iteration_time: 2026-09-19 22:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: Kit (with Ray)
+      publication_focus: The Verge (Vox Media)
+      publication_pair: The Verge x OpenAI
+      entity_pair: "OpenAI vs Meta (Microsoft as second deal-partner in the same piece)"
+      competitor: openai
+      comparison_entities:
+      - meta
+      - microsoft
+      pair: "The Verge x OpenAI (vs Meta)"
+      finding: 'FIRST dedicated Type A mechanism on The Verge''s Sep-18 2026 accountability-legal piece: "OpenAI and Microsoft knew they were starting a ''doom loop'' for the web" (Terrence O''Brien; verbatim relay title via wesearch.press; Verge byline/date 21:07 UTC attested by savedelete digest and the mirror listing, "theverge.com - Google News"; theverge.com policy-blocked for browser.open per standing rule, so excerpt-bounded per #503, 0 browser.open this run). Register: accountability-adversarial legal-filing register. MANUAL ILLUSTRATIVE -0.55 on the OpenAI arm: lede "Recently unsealed court documents in the New York Times'' case against OpenAI and Microsoft are pretty damning"; own-docs quotes "doom loop" (damage to the web), "largest theft of labor in human history", "complete mockery of the idea of fair use"; moderated by included rebuttals (Microsoft spokesperson Alex Haurek: "These comments reflect one employee''s individual perspective, are not a legal analysis, and do not represent the company''s views"; Jordan Usdan filing characterizing Brent Hecht''s role as adversarial). Carried comparators, un-rescored per the #807 pattern: m598 (Verge x OpenAI Sep-4/5 wiki-incident adversarial delayed-disclosure register, -0.65); #592 (same-outlet same-window Meta glasses set, [-0.55, -0.6, -0.5], avg -0.55); m673 (Sep-13 DOJ SOI selection test - bounded absence of PRO-partner coverage on the same copyright beat). Illustrative delta (OpenAI minus Meta) 0.00: the deal partner is covered at exact parity with the $0-tie Meta baseline on legal/copyright coverage. The Vox Media x OpenAI strategic partnership (May 29 2024, in-corpus via venturebeat, carried from #507/#573/#598) predicts "softer" coverage at this profile - observed accountability-adversarial legal-filing coverage FALSIFIES the uniform-softening prediction at the copyright-legal layer. Microsoft (this profile''s second deal partner: financial_tie licensing usage-based undisclosed, prediction softer) draws the SAME adversarial register in the SAME piece (Hecht memo, Nadella testimony, paywall hack, 90%+ Bing referral crater) - the deal buys zero softening for either partner. COMPLETES the m673 selection test: Sep 13 bounded absence of the pro-partner intervention story vs Sep 18 adversarial legal-filing coverage of the same beat - within 5 days, the operative margin is TONE not SELECTION, and the tone available on the deal partner is adversarial. REPLICATES the m598 falsification at a new legal peg; EXTENDS #607 (the wiki-incident falsification-family member) with a second falsification-family member at the same outlet x entity. Verdict: falsified_softer_prediction at the register layer; asymmetry delta directionally_supported_not_proven. Correlation is not causation. NOT artifact-grade.'
+      openai_arms:
+      - title: 'OpenAI and Microsoft knew they were starting a ''doom loop'' for the web'
+        url: https://wesearch.press/s/openai-and-microsoft-knew-they-were-starting-a-doom-loop-for-1bc0911d
+        url_note: 'Mirror URL carried verbatim from Full-URL listings; original is theverge.com (mirror lists "theverge.com - Google News"); theverge.com policy-blocked for browser.open per standing rule; never constructed'
+        author: Terrence O'Brien
+        date: '2026-09-18'
+        date_note: 'Sep 18 2026, 9:07 PM UTC (21:07 UTC per savedelete digest = 2:07 PM PDT); 6 min read'
+        register: accountability-adversarial legal-filing register
+        manual_illustrative_tone: -0.55
+        tone_note: '"pretty damning" lede + own-docs "largest theft of labor in human history" is adversarial; Haurek rebuttal quote and Usdan filing moderate it; less severe than m598''s delayed-disclosure frame (-0.65)'
+        evidence_grade: excerpt-bounded this run (browser.search verbatim excerpts per #503; 0 browser.open per theverge.com standing block)
+        url_novelty: first corpus appearance this run (zero repo-wide hits pre-commit for the wesearch, savedelete, and temperature2 URLs)
+        key_quotes:
+        - 'Recently unsealed court documents in the New York Times'' case against OpenAI and Microsoft are pretty damning.'
+        - 'The companies'' own documentation warned that it was starting a "doom loop" that would damage the web'
+        - 'characterized its scraping of data to train its models as the "largest theft of labor in human history," and that it made a "complete mockery of the idea of fair use."'
+        - 'Many of the most eye-catching quotes from the document come from Microsoft''s Director of Applied Science, Brent Hecht.'
+        - 'Microsoft spokesperson Alex Haurek told The Verge that "These comments reflect one employee''s individual perspective, are not a legal analysis, and do not represent the company''s views."'
+        - 'In a separate court filing, Jordan Usdan, GM for Data Strategy and Ops at Microsoft AI, characterized Hecht''s role as adversarial.'
+        corroboration:
+        - digest: https://savedelete.com/news/archive/2026/09/18/
+          digest_note: 'Tech-news digest attests Verge byline: "Terrence O''Brien - The Verge 21:07 UTC - Unsealed documents show OpenAI and Microsoft knew of web ''doom loop''"'
+        - explainer: https://temperature2.com/p/2026-09-18-microsoft-openai-nyt-theft-of-labor-unsealed/
+          explainer_note: 'Corroborating explainer with the full quote set (Hecht theft-of-labor memo, Nick Turley "existential threat" to publishers, Brockman "ah, nice" paywall hack, Nadella deposition, Bing referral crater 90%+); zero repo-wide hits pre-commit'
+      meta_arms_carried:
+        source_mechanism: 592
+        carried_per: '#807 (un-rescored)'
+        arms:
+        - description: Song Jul 7 LED-tamper privacy-light piece
+          manual_illustrative_tone: -0.55
+        - description: Jul 20 "pervert glasses" editorial
+          manual_illustrative_tone: -0.60
+        - description: late-Jul "holds all the cards" opener with activist "mass surveillance predator glasses" language
+          manual_illustrative_tone: -0.50
+        meta_band_mean: -0.55
+      openai_arm_carried_m598:
+        source_mechanism: 598
+        carried_per: '#807 (un-rescored)'
+        description: 'Sep-4/5 DseWiki "wiki incident" adversarial delayed-disclosure register ("Kept ... Under Wraps for Weeks")'
+        manual_illustrative_tone: -0.65
+      microsoft_arm_in_piece:
+        financial_tie: licensing
+        estimated_value: usage-based (undisclosed)
+        coverage_prediction: softer
+        register: accountability-adversarial legal-filing register (same piece)
+        manual_illustrative_tone: -0.55
+        note: 'Hecht memo, Nadella sworn testimony, Brockman paywall hack, 90%+ Bing referral crater - the SAME piece applies the adversarial register to the second deal partner; deal buys zero softening for Microsoft either'
+      selection_temporal_m673:
+        sep13_bounded_absence: 'm673: zero theverge.com items on the PRO-partner DOJ SOI (Sep 1-6 window), bounded absence per #503'
+        sep18_adversarial_selection: 'this run: adversarial legal-filing coverage of the same copyright beat (NYT v OpenAI/Microsoft unsealed docs)'
+        reading: 'Within 5 days, the operative margin is TONE not SELECTION: the outlet selects the copyright beat when the peg is adversarial to the deal partner'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        method: manual_illustrative
+        target_entity: openai
+        peer_entities:
+        - meta
+        - microsoft
+        methodology: 'Target-minus-peer convention; MANUAL ILLUSTRATIVE tones, not empirical corpus scores'
+        openai_fresh_arm_tone: -0.55
+        meta_band_carried_592: -0.55
+        microsoft_arm_tone: -0.55
+        openai_arm_carried_m598: -0.65
+        illustrative_delta_openai_minus_meta: 0.00
+        delta_arithmetic_openai_meta: '-0.55 - (-0.55) = 0.00'
+        illustrative_delta_openai_minus_microsoft: 0.00
+        illustrative_delta_meta_minus_m598: 0.10
+        engine: NOT run
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+      falsification_family: 'TWENTY-SEVENTH falsification-family member (ledger 26->27): the Vox Media x OpenAI strategic partnership (May 29 2024, in-corpus) predicts softer coverage; the observed accountability-adversarial legal-filing register on the deal partner at the copyright-legal layer contradicts the uniform-softening prediction. Extends the m598/#607 Vox-deal falsification with a second family member at the same outlet x entity; completes the m673 selection-margin test (operative margin is tone, not selection).'
+      falsification_verdict: falsified_softer_prediction
+      no_analysis_json_update: true
+      ledger: 'Ledger 26->27 this run (TWENTY-SIXTH member-form present in profiles/competitor-coverage-research.yaml; TWENTY-SEVENTH member-form is this block; the 6 pre-existing "TWENTY-SEVENTH" strings are the #847/#848/#853/#857/#858 negative-guard strings per the #860 guard update; negative-guard convention continues at TWENTY-EIGHTH)'
+      confounders_ranked:
+        strong:
+        - 'Excerpt-bounded evidence: 0 browser.open this run (theverge.com policy-blocked per standing rule); register inferred from verbatim mirror excerpts and digest byline attestation; full-text register could differ'
+        - 'Story-type selection: unsealed NYT filings with own-docs damning quotes are inherently adversarial; any outlet covering the peg sounds adversarial, so the register may follow the documents, not editorial stance toward OpenAI'
+        - 'n=1 fresh arm; directional only; degenerate sample (no p-value, no CI, engine NOT run)'
+        moderate:
+        - 'Rebuttal inclusion moderates the adversarial read (Haurek quote + Usdan filing); the -0.55 illustrative score is a judgment call; a harsher read would deepen parity, a softer read would narrow it'
+        - 'Publisher-solidarity cross-pressure: Vox is a publisher, the NYT is a rival publisher, and the beat is publisher-vs-AI copyright; the adversarial register may favor publishers generically, independent of the OpenAI deal'
+        - 'Beat mismatch with the Meta band (#592 is a glasses-hardware set, this arm is copyright-legal); the 0.00 delta spans a genre boundary'
+        - 'Deal transfer status: PMC acquired Vox Media in 2026; the May 2024 deal''s transfer status is unclear (carried from #425/#507)'
+        weak:
+        - 'Digest/mirror attribution risk: byline and timestamp rest on wesearch/savedelete attestation, not first-hand theverge.com; mirror could misattribute'
+        - 'Microsoft is the primary document source (Hecht is Microsoft); the adversarial center of gravity may be Microsoft, with OpenAI riding along'
+        - 'm673''s Sep-13 bounded absence could be newsroom bandwidth, not entity selection; the Sep-18 selection then proves nothing about selection margins'
+      counter_evidence:
+      - 'The piece gives Microsoft/OpenAI rebuttal space (Haurek "individual perspective" + Usdan adversarial-role filing): this is accountability journalism with both sides, not a hit piece - which is exactly what a non-captured outlet does with a deal partner'
+      - 'm507 (ad-monetization domain boundary): the deal incentive is domain-bounded, not uniform - the deal could still soften other coverage layers (product, launch) while falsifying at the legal layer'
+      - '404 Media and TechCrunch covered the same unsealed documents with harsher framing at deal-absent outlets; the adversarial register may be peg-driven consensus, not an anti-deal-partner posture'
+      - 'All three adversarial Verge x OpenAI pieces (Sep 4 wiki, Sep 13 selection test, Sep 18 doom loop) are legal/incident pegs; the deal partner''s PRODUCT coverage remains untested here - uniform softening is not disproven in product genres'
+      - 'The Verge ran the DOJ SOI non-coverage (m673) days earlier; selection is inconsistent peg-to-peg, consistent with a newsroom following pegs, not an entity vendetta'
+      connects_to:
+      - 'mechanism 598: same publication x entity, different peg - 598 is the first Vox-deal falsification (wiki incident, -0.65); this block is the second, at the copyright-legal peg'
+      - 'mechanism 673: selection-margin sibling - m673 showed bounded absence of the pro-partner story; this run''s Sep-18 adversarial selection completes the temporal pair; operative margin is tone'
+      - 'mechanism 507: ad-monetization domain boundary; the deal incentive is domain-bounded, which bounds this falsification to the legal layer'
+      - '#592 Meta glasses band: the $0-tie same-outlet baseline against which parity (delta 0.00) is scored'
+      - 'iteration 573 (Nilay Patel Decoder interview-access falsification): Vox-deal falsification at a distinct layer (CEO-interview selection)'
+      novelty: 'FIRST dedicated Type A mechanism on The Verge''s Sep-18 2026 "doom loop" piece. Distinct from mechanism 598 (Sep-4 wiki incident), mechanism 673 (Sep-13 DOJ SOI selection test), #592 (Meta glasses baseline). Zero test_type_a_867 files on disk pre-commit (glob); no "Type A #867" in git log pre-commit; the doom-loop-for-1bc0911d and 2026-09-18-microsoft-openai-nyt-theft-of-labor-unsealed URLs zero-hit repo-wide pre-commit; block key zero-hit pre-commit; max numeric mechanism_id 750 pre-commit; zero underscore-form 751/752 keys by designed keying per #715 (needles format-built, no literals carried); 865-869 window THIRD leg, D->E->A (D(#865) -> E(#866) -> A(#867)).'
+      research_method: '3 browser.search query sets this run + 1 corroboration pass: (1) The Verge OpenAI since=2026-09-13 with FT Anthropic alternate - the wesearch doom-loop mirror SELECTED; (2) quoted "doom loop" OpenAI Microsoft Verge O''Brien since=2026-09-15 - SELECTED with savedelete digest + temperature2 corroboration; (3) theverge.com "doom loop" since=2026-09-17 - no theverge.com canonical URL surfaced (mirrors only), corroboration set expanded (404 Media via europesays, androidheadlines, aitoolbible). 0 browser.open (theverge.com policy-blocked per standing rule; excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_867 files; no Type A #867 in git log; max numeric mechanism_id 750; zero underscore-form 751/752 keys repo-wide (needles format-built per #715; __pycache__ artifacts excluded); block key zero-hit; all three evidence URLs zero-hit repo-wide. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - 'https://wesearch.press/s/openai-and-microsoft-knew-they-were-starting-a-doom-loop-for-1bc0911d'
+      - 'https://savedelete.com/news/archive/2026/09/18/'
+      - 'https://temperature2.com/p/2026-09-18-microsoft-openai-nyt-theft-of-labor-unsealed/'
   meta:
     financial_tie: "none"
     estimated_value: "$0"
