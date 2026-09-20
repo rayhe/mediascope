@@ -69,7 +69,7 @@ NEXT_ID_DASH = "mechanism" + "-760"
 LEDGER_29_NEEDLE = "falsification ledger: " + "29"
 EXPECTED_ORDER = [("C", "879"), ("B", "878"), ("A", "877"), ("E", "876"), ("D", "875")]
 # Patched to the real main-commit SHA in the anchor followup per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "d44678f35f2f60d0982937482d4b3e5b013fcad2"
 
 INSIDERFINANCE_URL = "https://www.insiderfinance.io/news/openai-microsoft-copyright-lawsuit-exposes-news-scraping"
 WSJ_EXISTENTIAL_URL = "https://www.wsj.com/tech/ai/tech-companies-staff-knew-their-ai-tools-posed-existential-threat-to-publishers-67ed8940"
@@ -171,7 +171,7 @@ class TestNovelty879:
     def test_type_c_879_main_commit_unique_and_anchored(self):
         # Deselected pre-commit per #565 (the #879 main commit does not
         # exist yet); patched green in the anchor followup.
-        mains = _git_log_mains("retrain-testimony")
+        mains = _git_log_mains("retrain testimony")
         assert len(mains) == 1, mains
         assert ANCHORED_SHA in mains, mains
 
@@ -234,7 +234,7 @@ class TestRotationGuard879:
     def test_anchor_sha_matches_head(self):
         # Patched to the real main-commit SHA in the anchor followup per
         # the #565 convention; deselected pre-commit at the pytest CLI.
-        mains = _git_log_mains("retrain-testimony")
+        mains = _git_log_mains("retrain testimony")
         assert ANCHORED_SHA not in (
             "PATCH_ME_IN_FOLLOWUP",
             "POST_COMMIT_ANCHORED",
