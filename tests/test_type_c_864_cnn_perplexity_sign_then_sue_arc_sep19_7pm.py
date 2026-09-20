@@ -66,9 +66,9 @@ TYPE_LETTER = "C"
 MECH_ID_MARKER = "mechanism" + "_750"
 NEXT_ID_MARKER = "mechanism" + "_751"
 NEXT_ID_NUMERIC = "mechanism_id: " + "751"
-EXPECTED_ORDER = [("D", "860"), ("E", "861"), ("A", "862"), ("B", "863"), ("C", "864")]
+EXPECTED_ORDER = [("C", "864"), ("B", "863"), ("A", "862"), ("E", "861"), ("D", "860")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "9e5c2187bb8424cb18198248acc8f30c60e9ed43"
 
 PRESSGAZETTE_URL = "https://pressgazette.co.uk/newsletters/perplexitys-comet-browser-assistant-goes-free-for-all-with-publisher-pay-up/"
 COURTLISTENER_URL = "https://www.courtlistener.com/recap/gov.uscourts.nysd.664916/gov.uscourts.nysd.664916.1.0.pdf"
