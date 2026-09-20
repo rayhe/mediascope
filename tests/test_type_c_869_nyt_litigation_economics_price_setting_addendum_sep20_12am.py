@@ -48,7 +48,7 @@ NEXT_ID_MARKER = "mechanism" + "_754"
 NEXT_ID_NUMERIC = "mechanism_id: " + "754"
 EXPECTED_ORDER = [("C", "869"), ("B", "868"), ("A", "867"), ("E", "866"), ("D", "865")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "f9c69aac4e878016f2fef7f09bbfbb7b7290117f"
 
 STOCKMOGULS_URL = "https://www.stockmoguls.com/2026/09/06/which-media-companies-profit-when-ai-pays-for-archives/"
 FASTCOMPANY_URL = "https://www.fastcompany.com/91571727/the-new-york-times-is-escalating-its-fight-with-openai-urging-a-judge-to-impose-sanctions"
