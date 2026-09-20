@@ -18115,6 +18115,176 @@ journalists:
           verdict: 'register_constancy: hands-on review register is entity-neutral for Stein
             across Meta and Samsung/Google. #106 remains valid but domain-bounded to the news/launch-keynote
             register; it does not replicate in Stein''s product hands-ons.'
+    type_b_868_scott_stein_sep2026_snap_specs_launch_hands_on_register_temporal_replication:
+      block_key: type_b_868_scott_stein_sep2026_snap_specs_launch_hands_on_register_temporal_replication
+      iteration: 868
+      iteration_type: 'B'
+      mechanism_id: 752
+      date: '2026-09-19 23:00 PDT'
+      design: 'within-journalist, hands-on-review register temporal replication: CNET senior editor
+        Scott Stein on Snap Specs launch hands-on (Sep 17 2026) vs carried Meta Ray-Ban Display
+        (Sep 18 2025, +0.65) and Samsung Galaxy XR (Oct 22 2025, +0.70) arms from mechanism 588'
+      finding: 'REGISTER CONSTANCY extends to a THIRD entity: Stein''s Sep 17 2026 Snap Specs launch
+        hands-on ("I Wore Snap Specs At Last: Here''s What These Massive Glasses Can Do", CNET)
+        runs the same enthusiastic hands-on reviewer register he applied to Meta''s Ray-Ban Display
+        and Samsung/Google''s Galaxy XR in mechanism 588. Headline adjectives are physical-descriptive
+        ("massive" in the headline, "chunky" in his own companion YouTube video title), the piece is
+        product-forward feature relay (virtual soccer, floating movies, 3D experiences, hand-tracking,
+        waveguide lenses, Snap Intelligence), moderated by honest-reviewer caveats (session-based use,
+        not all-day glasses). New illustrative Snap tone +0.45: a step down from the Meta +0.65 peak
+        but inside the same enthusiastic hands-on band, not a register change. Illustrative delta
+        (Snap minus Meta) -0.20: within hand-scoring noise. Three-entity band [0.65, 0.70, 0.45]
+        holds across a 12-month temporal span (Sep 2025 -> Sep 2026). Exec-access symmetry persists:
+        the Sep 16 Spiegel 1-on-1 (session-based framing: "Almost like a pair of reading glasses
+        you put on to get something done") mirrors mechanism 588''s Meta access stack (Zuckerberg
+        2022 demo, Himmel interview, White quotes) and Samsung/Choi-Samat chats. EXTENDS mechanism 588
+        (2-entity constancy -> 3-entity constancy); EXTENDS mechanism 106''s domain bound (the
+        enthusiasm gradient with privacy deferral is news-register only; Stein''s review register is
+        entity-neutral across Meta, Samsung/Google, AND Snap).'
+      new_snap_arm:
+        title_verbatim: "I Wore Snap Specs At Last: Here's What These Massive Glasses Can Do"
+        date: '2026-09-17'
+        byline: Scott Stein (sole)
+        role: CNET senior editor, XR/wearables
+        publication: cnet
+        url: https://wesearch.press/s/i-wore-snap-specs-at-last-heres-what-these-massive-glasses-can-do-b02ecb8f
+        video_url: https://www.youtube.com/watch?v=lESTqJ1fACQ
+        video_title: "I Finally Tried Snap's Chunky AR Glasses In The Real World"
+        video_credit: 'Host/ Scripted by Scott Stein (CNET); Producer Jesse Orrall'
+        video_chapters:
+        - 'How Snap Compares to Meta, Apple, & Google (07:28)'
+        - 'Final Verdict & Availability (08:35)'
+        ceo_interview_attestation: 'in an interview with CNET''s Scott Stein, Snap CEO Evan Spiegel
+          emphasized these glasses probably won''t be worn all day like regular glasses'
+        ceo_quote: '"I''d still think of them today as a computer, and it''s going to be more
+          session-based" - Evan Spiegel to CNET''s Scott Stein (Sep 16 2026)'
+        ceo_interview_source: https://ccstartup.com/blog/2026/09/19/snap-launches-its-2195-specs-ar-glasses-at-an-awkward-time/
+        tone_illustrative: 0.45
+        tone_basis: 'MANUAL ILLUSTRATIVE: product-forward hands-on register with honest caveats;
+          "massive"/"chunky" are physical-descriptive headline adjectives, not adversarial
+          surveillance vocabulary; feature relay dominates (soccer, floating movies, 3D experiences,
+          hand-tracking, waveguide, Snap Intelligence); moderated from the Meta +0.65 peak by
+          price-forward framing ($2,195) and session-based qualification.'
+        register_markers:
+        - '"massive" headline adjective (physical-descriptive)'
+        - '"chunky" in Stein''s own companion video title'
+        - product-forward feature relay (games, movies, 3D, hand-tracking, waveguide)
+        - CEO-interview quote-platforming (Spiegel session-based framing relayed straight)
+        - zero surveillance/privacy vocabulary on 4-camera glasses
+        evidence_tier: 'EXCERPT-TIER: title/chapter/mirror-level register only; full CNET article
+          text NOT first-hand reviewed (canonical cnet.com URL not retrievable via search; no URL
+          construction per browser rules). Attestation via the wesearch.press mirror listing (CNET
+          attribution) plus Stein''s own CNET YouTube video and the ccstartup Mashable mirror''s
+          interview citation.'
+      carried_meta_arm:
+        note: 'Carried un-rescored per #807 from mechanism 588''s meta_item.'
+        title: 'I Wore Meta''s New Ray-Ban Display Glasses and Neural Band. I Feel Augmented'
+        date: '2025-09-18'
+        byline: Scott Stein (sole)
+        tone_illustrative: 0.65
+        price: '$799'
+        privacy_treatment: 'zero privacy or surveillance mentions; display invisibility framed as a
+          PERK ("Maybe I could privately see things displayed and not weird anyone out")'
+        source_urls:
+        - https://newsatw.com/i-wore-metas-new-ray-ban-display-glasses-and-neural-band-i-feel-augmented/
+        - https://newsflash.one/2025/09/18/i-wore-metas-new-ray-ban-display-glasses-and-neural-band-i-feel-augmented/
+        - https://motozurnals.lv/tehnologija/i-wore-metas-new-ray-ban-display-glasses-and-neural-band-i-feel-augmented/407040/
+      carried_samsung_google_arm:
+        note: 'Carried un-rescored per #807 from mechanism 588''s samsung_google_item.'
+        title: 'I Tried Samsung Galaxy XR: Like Apple Vision Pro for Half the Price (and Twice the AI)'
+        date: '2025-10-22'
+        byline: Scott Stein (sole)
+        tone_illustrative: 0.7
+        price: '$1,799'
+      asymmetry_scorer_result:
+        illustrative_delta_snap_minus_meta: -0.2
+        delta_calc: '0.45 - 0.65 = -0.20'
+        delta_direction: 'near-zero: register CONSTANCY across three entities. All three arms sit in
+          the enthusiastic hands-on band (+0.4 to +0.7); the 20-point Snap gap is within
+          hand-scoring noise, not a register change.'
+        three_entity_band: [0.65, 0.7, 0.45]
+        target_entity: Snap
+        reference_entity: Meta
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per excerpt-tier register
+          reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1 fresh
+          arm vs carried n=1 arms. NOT an empirical measurement; no inference can be drawn from
+          these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on
+          hand-scored items would manufacture precision that does not exist. is_significant is
+          false. correlation_not_causation is true.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine: 'engine NOT run (illustrative arms only)'
+        artifact_grade: 'NOT artifact-grade'
+      temporal_refinement:
+      - 'EXTENDS mechanism 588''s 2-entity constancy (Meta +0.65 vs Samsung/Google +0.70, delta
+        -0.05) to a THIRD entity at a 12-month temporal gap: Snap +0.45 vs Meta +0.65, delta -0.20.'
+      - 'EXTENDS mechanism 106''s domain bound: the enthusiasm gradient with privacy deferral
+        (Google I/O news/launch-keynote register) does not replicate in Stein''s product hands-ons
+        across THREE entities now (Meta, Samsung/Google, Snap).'
+      - 'Privacy-register symmetry: zero surveillance vocabulary in BOTH the Meta arm (mechanism 588
+        documented) and the Snap arm (4 cameras + contextual AI); privacy-deferral is genre-level,
+        not entity-selective, for Stein''s hands-on register.'
+      extends: 'TEMPORAL REFINEMENT of mechanism 588 (register constancy across entities, 3rd
+        entity at 12-month span); domain-bound extension of mechanism 106.'
+      connects_to: [106, 588]
+      incentive_context: 'CNET owned by Ziff Davis since Q3 2024; Google search-traffic dependency
+        high; no documented Meta or Snap financial relationship with CNET. Mechanism 106''s
+        snap_coverage block already logs Snap AWE 2026 travel sponsorship (disclosed) for Stein;
+        no evidence this sponsorship touched the Sep 17 piece. Finding is writer-register constancy,
+        not an exoneration of publication-level incentive patterns.'
+      confounders:
+      - '[STRONG] Excerpt-tier evidence: full CNET article text NOT first-hand reviewed; register
+        inferred from mirror-attested title, Stein''s own video title/chapters, and the Spiegel
+        interview attestation. Full-text register could differ.'
+      - '[STRONG] Launch-event vs retail hands-on: the Snap arm is launch-event hands-on (Sep 17,
+        pre-ship); the Meta arm is post-launch retail hands-on (Sep 18 2025). Launch optimism
+        baselines differ.'
+      - '[STRONG] Product-class asymmetry: $2,195 standalone AR computer (4 cameras, waveguide)
+        vs $799 camera glasses vs $1,799 VR headset. Different price anchors and evaluation
+        criteria limit comparability; constancy claim is directional.'
+      - '[MODERATE] n=1 fresh Snap arm: degenerate sample, directional only.'
+      - '[MODERATE] Honest-reviewer genre: Stein includes caveats for all entities (Meta "grain of
+        salt", Samsung "still very expensive"); the Snap caveats may be genre convention, not
+        register.'
+      - '[MODERATE] Headline authorship: CNET headlines may be editor-written; "massive"/"chunky"
+        may not be Stein''s own wording.'
+      - '[WEAK] 12-month timing gap between the carried arms (Sep-Oct 2025) and the Snap arm
+        (Sep 2026).'
+      - '[WEAK] Travel sponsorship (Snap AWE 2026, disclosed per mechanism 106) predates the piece;
+        no evidence of influence on this article.'
+      counterevidence:
+      - 'Stein does cross-entity comparison himself: his Snap video chapter "How Snap Compares to
+        Meta, Apple, & Google" and mechanism 588''s Apple neutral benchmark in both carried pieces -
+        entity-neutral comparison is Stein''s own method, consistent with constancy.'
+      - 'Mechanism 588 already documented Stein is not entity-loyal (the Samsung piece ranks XR2+
+        Gen 2 "better than the Meta Quest 3" and frames Samsung/Google "a lot more integrated
+        ... than Meta''s VR and glasses approach") - favorability follows the product, not the
+        company.'
+      - 'Privacy-deferral symmetry: zero surveillance vocabulary for the 4-camera Snap glasses AND
+        zero in the Meta Display piece; a privacy-asymmetry would need differential vocabulary,
+        which is absent.'
+      correlation_note: 'Correlation is not causation. The constancy documents Stein''s writer-level
+        hands-on register across three entities; it does not prove or disprove incentive effects at
+        the publication level.'
+      verdict: directionally_supported_not_proven
+      is_significant: false
+      falsification_family: 'NOT a falsification-family member (register constancy temporal
+        extension, not a uniform-prediction test); ledger holds at 27.'
+      no_analysis_json_update: true
+      research_method: '4 browser.search query sets this run ((1) Regalado MIT TR x Meta - rejected,
+        no Regalado x Meta arm surfaced; (2) Scott Stein CNET Snap Specs hands-on - SELECTED via
+        wesearch.press mirror + Stein''s own CNET YouTube video; (3) Stein CNET Meta Ray-Ban -
+        carried from mechanism 588; (4) Stein Spiegel Sep-16 interview - corroborated via ccstartup
+        Mashable mirror). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps:
+        zero test_type_b_868 files (glob); no Type B #868 in git log; max numeric mechanism_id 751;
+        zero underscore-form 752 key strings repo-wide pre-commit (format-built needles per #715);
+        block key zero-hit; "Snap Specs At Last" headline string zero-hit repo-wide; all 3 evidence
+        URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no
+        canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'First dedicated Type B block on Scott Stein x Snap; first 3-entity hands-on register
+        constancy unit in the corpus; mechanism_id 752. Extends mechanism 588 (2 -> 3 entities at
+        12-month span); extends mechanism 106''s domain bound to Snap. Rotation: 867 A -> 868 B.'
 - name: Wesley Hilliard
   publication: appleinsider
   notes: Rumor Expert at AppleInsider and AppleInsider Podcast co-host. 10-year US Navy veteran (nuclear-trained electrician) who became captivated by Apple privacy and device security. Applies resolution-conditional privacy vocabulary inversion to camera wearable coverage.
