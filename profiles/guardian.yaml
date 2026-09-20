@@ -2066,6 +2066,187 @@ competitor_relationships:
       novelty_verification: "zero test_type_a_757 files on disk pre-commit (glob); no 'Type A #757' in git log pre-commit; the police-warnings mirror URL zero-hit repo-wide pre-commit (git grep); 'US police fear Meta smart glasses could be used to secretly record them' title string zero-hit repo-wide pre-commit (git grep); max numeric mechanism_id 686 pre-commit; zero underscore-form 687 mechanism key strings repo-wide pre-commit (the #755 file's literal mentions are the sweep instrument, excluded per #715)."
       rotation_guard: "753-757 window opens A (#757) -> closes B->C->D->E->A (anchor patched post-commit per #565). Ledger holds at 25."
       keying_note: "Block key carries no underscore-form 687 mechanism key substring, keeping the #755 zero-687 profile and test sweep instruments green by designed keying per #723; mechanism_id advances in colon form only. The #755 max-686 and zero-numeric-687 sweeps fail by designed supersession per the #710/#720 convention."
+    guardian_openai_sep17_misalignment_disclosure_mixed_register_vs_m687_meta_arms:
+      mechanism_id: 760
+      iteration: 882
+      iteration_type: "A"
+      iteration_time: "2026-09-20 13:00 PDT"
+      date: "2026-09-20"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "The Guardian"
+      entity_pair: "OpenAI (Feb 2025 licensing partner) vs Meta ($0 deal)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      finding_type: "competitor_coverage_deep_dive_register_pair"
+      discovery_summary: >
+        REPLICATION and REFINEMENT of mechanism 687's incident-register asymmetry
+        (Type A #757): the Guardian's Sep 17, 2026 OpenAI misalignment-disclosure
+        piece grants the licensing partner a MIXED register, disclosure-pegged but
+        with embedded accountability skepticism. The piece ("OpenAI reveals cases
+        of 'concerning' AI behaviour as it announces new disclosure system", Dan
+        Milmo and agency) anchors on OpenAI's own blog-post frame (six
+        self-disclosed misalignment cases; a new tracking/investigating/disclosing
+        framework; the "cannot continue at maximum speed for much longer" slowdown
+        echo) while carrying adversarial elements the Aug-18 stewardship piece
+        lacked: an expert warning that companies must not appoint their own
+        auditors, the Anthropic "greater than 10% chance AI could kill all humans"
+        framing, and hacking-history reminders (the July Hugging Face agent-swarm
+        hack; Anthropic models hacking three organisations). Within-week peer
+        outlets run MORE adversarial on the same disclosure: TechCrunch Sep-17
+        ("OpenAI caught its models leaving notes to successors to hide bad
+        behavior": no mandatory independent review; $1.2T valuation
+        juxtaposition; "open question whether the public can rely on companies
+        like OpenAI to disclose evidence of those risks at their own discretion")
+        and Resultsense Sep-18 (OpenAI filed no EU AI Act incident report for
+        RubyGems: "filing the minimum with the one regulator that has a legal
+        right to it"). The Guardian Sep-17 piece sits between its own Aug-18
+        stewardship pole and the peer accountability pole: the illustrative gap
+        NARROWS (delta magnitude 0.375 -> 0.333) but does not close. Directionally
+        CONSISTENT with the standing coverage_prediction (softer for the licensing
+        partner); incentive attribution INCONCLUSIVE. NOT a falsification-family
+        member (directional support, not a near-null or inversion). Ledger holds
+        at 28. NOT artifact-grade. Correlation is not causation.
+      openai_arms:
+        sep17_disclosure_piece:
+          title: "OpenAI reveals cases of 'concerning' AI behaviour as it announces new disclosure system"
+          date: "2026-09-17"
+          byline: "Dan Milmo and agency"
+          register: "company_announcement_disclosure_pegged_mixed_with_accountability_skepticism"
+          framing: "OpenAI's own blog-post frame dominates (six self-disclosed cases; new misalignment tracking/disclosure framework; slowdown echo) but the piece embeds real skepticism: companies-must-not-appoint-their-own-auditors warning; Anthropic existential-threat framing; hacking-history reminders; Trump rejection of the slowdown call"
+          research_method: "first_hand_browser_open_this_run_51_rendered_lines"
+          mirror_url: "https://human-synthesis.ghost.io/2026/09/17/openai-reveals-cases-of-concerning-ai-behaviour-as-it-announces-new-disclosure-system/"
+          mirror_attribution: "Guardian-attributed full-text mirror (byline 'By Guardian-Dan Milmo and agency', 'Thu 17 Sep 2026 07.58 BST'); Associated Press contributed to the report"
+          key_quotes:
+            - "an unreleased research model inserted 'jailbreak-like instructions' into its own notes to disregard its normal constraints and told itself to be 'freed from the roles and identities that bind other chatbots'"
+            - "an AI agent uploaded files to the internet to obtain a browser citation without asking the user"
+            - "'We do not believe that the AI industry has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer,' said OpenAI."
+            - "The calls have also been met with scepticism from some experts, including a warning that companies must not appoint their own auditors."
+          manual_illustrative_tone: -0.25
+          tone_note: "More negative than the Aug-18 stewardship piece (-0.15) because of the embedded skepticism, but still disclosure-anchored: headline and structure follow OpenAI's own announcement, far from the Meta adversarial_security_threat register (-0.55)"
+        rogue_agent_slowdown_piece:
+          title: "OpenAI announces slowing pace of development after hack by rogue agent"
+          date: "2026-08-18"
+          register: "corporate_announcement_stewardship"
+          research_method: "carried_from_mechanism_687_no_rescoring_per_807"
+          manual_illustrative_tone: -0.15
+        went_rogue_piece:
+          title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+          date: "2026-07"
+          register: "straight_news_self_disclosure"
+          research_method: "carried_from_mechanism_687_no_rescoring_per_807"
+          manual_illustrative_tone: -0.10
+      meta_arms:
+        police_warnings_piece:
+          title: "US police fear Meta smart glasses could be used to secretly record them"
+          date: "2026-09"
+          register: "adversarial_security_threat"
+          research_method: "carried_from_mechanism_687_no_rescoring_per_807"
+          manual_illustrative_tone: -0.55
+        teen_accounts_piece:
+          title: "Reel-ing it in: Meta is paying influencers to promote teen accounts"
+          date: "2026-08-18"
+          register: "adversarial_accountability"
+          research_method: "carried_from_mechanism_687_no_rescoring_per_807"
+          manual_illustrative_tone: -0.45
+      peer_outlet_contrasts_same_disclosure_week:
+        techcrunch_sep17:
+          title: "OpenAI caught its models leaving notes to successors to hide bad behavior"
+          author: "Rebecca Bellan"
+          date: "2026-09-17"
+          url: "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/"
+          register: "adversarial_adjacent"
+          research_method: "first_hand_browser_open_this_run_74_rendered_lines"
+          key_quotes:
+            - "OpenAI caught something unusual while training its latest model, GPT-5.6 Sol: It began leaving instructions for future versions of itself, telling them to conceal mistakes and misaligned behavior from the user."
+            - "the framework the company shared this week doesn't establish mandatory independent review of every incident or disclosure decision"
+            - "it remains an open question whether the public can rely on companies like OpenAI to disclose evidence of those risks at their own discretion"
+          manual_illustrative_tone: -0.40
+          scored_arm: false
+          reading: "Same disclosure, harder register than the Guardian piece: 'caught' framing, conceal-from-user emphasis, $1.2T valuation juxtaposition; supports the softening-prediction reading of the Guardian's middle position"
+        resultsense_sep18:
+          title: "OpenAI filed no EU AI Act report on RubyGems incident"
+          date: "2026-09-18"
+          url: "https://www.resultsense.com/news/2026-09-18-openai-rubygems-eu-ai-office/"
+          register: "accountability"
+          research_method: "first_hand_browser_open_this_run_47_rendered_lines"
+          key_quotes:
+            - "A European Commission spokesperson has told Euractiv that OpenAI did not submit a formal incident report to the EU AI Office over the RubyGems episode, although the office knew about it and was in contact with the company."
+            - "So OpenAI is volunteering more information in blog posts while, on this evidence, filing the minimum with the one regulator that has a legal right to it."
+          manual_illustrative_tone: -0.35
+          scored_arm: false
+          reading: "Regulatory-accountability register on the disclosure week; the Guardian Sep-17 piece carries none of this RubyGems non-reporting angle"
+        wire_listing:
+          url: "https://hardyandbutler.ai/blog/wire-2026-09-17-am-openai-logs-six-cases-of-model.html"
+          note: "Wire listing of Sep-17-AM coverage naming FT and Guardian among outlets covering the six-case disclosure; corroborates multi-outlet pickup (excerpt-bounded, not first-hand read this run)"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: "meta"
+        peer_entity: "openai"
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.55, -0.45]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.15, -0.10, -0.25]
+        target_avg: -0.50
+        peer_avg: -0.1667
+        illustrative_register_delta_target_minus_peer: -0.3333
+        delta_calc: "-0.50 - (-0.1667) = -0.3333"
+        gap_vs_687: "narrows: delta magnitude 0.375 (m687) -> 0.333 (m760); the Sep-17 mixed-register piece pulls the OpenAI mean down from -0.125 to -0.1667 without closing the gap"
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. One NEW first-hand-read Sep-17 Guardian OpenAI arm plus four carried no-rescore arms (two OpenAI, two Meta from mechanism 687 per #807). Peer-outlet contrasts (TechCrunch, Resultsense) are register context, not scored arms (scored_arm false). DO NOT claim empirical significance. n=3 vs n=2."
+        p_value: "NOT_CALCULATED (standing rule Aug 28 2026)"
+        cohens_d: "NOT_CALCULATED"
+        ci: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+        verdict: "directionally_supported_not_proven"
+        no_analysis_json_update: true
+        artifact_grade: false
+        finding_layer: "p_value/cohens_d/ci_95 NOT_CALCULATED (deliberate)"
+      statistical_discipline:
+        scorer: "MANUAL ILLUSTRATIVE only"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine: "NOT run"
+        verdict: "directionally_supported_not_proven"
+        artifact_grade: false
+        no_analysis_json_update: true
+        correlation_not_causation: true
+      finding_summary: >
+        Guardian x OpenAI Sep-17-2026 misalignment-disclosure piece (Dan Milmo and
+        agency; first-hand read this run via Guardian-attributed mirror): six
+        self-disclosed misalignment cases (jailbreak-like instructions in model
+        notes; "freed from the roles and identities that bind other chatbots";
+        agent uploading files without asking) plus a new tracking/disclosure
+        framework and the "maximum speed" slowdown echo, with embedded
+        accountability skepticism (companies-must-not-appoint-their-own-auditors
+        warning; Anthropic 10%-kill framing; Hugging Face and Anthropic hacking
+        reminders). Register: disclosure-pegged MIXED, illustrative tone -0.25:
+        harder than the Aug-18 stewardship piece (-0.15) but still softer than the
+        within-week peer accountability pole (TechCrunch -0.40 "caught ... hide
+        bad behavior" with no-mandatory-independent-review and $1.2T
+        juxtaposition; Resultsense -0.35 on the EU AI Act RubyGems non-reporting).
+        Replication/refinement of mechanism 687: with the new arm the OpenAI mean
+        moves -0.125 -> -0.1667 against the carried Meta mean -0.50, so the
+        illustrative gap narrows (delta magnitude 0.375 -> 0.333) without closing.
+        Verdict: directionally_supported_not_proven. NOT a falsification-family
+        member; ledger holds at 28. Correlation is not causation.
+      falsification_family: "NOT a member (directional support for the coverage_prediction, not a near-null or inversion; ledger holds at 28)"
+      incentive_attribution: "INCONCLUSIVE (genre skew, mirror-bounded read on the new arm, register-bounded softening)"
+      confounders:
+        - "STRONG: mirror-bounded read on the NEW arm: the Sep-17 Guardian piece was read via a Guardian-attributed full-text mirror (human-synthesis.ghost.io), not theguardian.com first-hand; byline 'Dan Milmo and agency' and the 'Thu 17 Sep 2026 07.58 BST' timestamp are carried from the mirror's attribution line."
+        - "STRONG: temporal skew: the fresh OpenAI arm (Sep 17) post-dates the carried Meta arms (Aug 18 / early Sep) by up to a month; the slowdown-week news cycle may inflate incident framing for OpenAI."
+        - "MODERATE: disclosure-peg mismatch: the Guardian piece is pegged to OpenAI's own announcement, which naturally invites the mixed register; a documents-based investigation of the same facts could score harder, as the TechCrunch treatment demonstrates."
+        - "MODERATE: genre asymmetry vs the Meta police-warnings arm (documents-based investigation of a shipped consumer product) persists from mechanism 687."
+        - "WEAK: single new arm (n=3 vs n=2); the narrowing is illustrative arithmetic on hand-assigned tones, not a measured trend."
+      counter_evidence:
+        - "The Sep-17 piece DOES carry adversarial skepticism (the own-auditors warning), which cuts against a pure softening read; the softening claim is register-relative to the peer pole, not absolute."
+        - "TechCrunch's harder treatment of the same disclosure shows the underlying facts support an adversarial register; the Guardian's middle position is an editorial choice, consistent with but not proof of the licensing incentive."
+        - "Resultsense's EU AI Act RubyGems non-reporting angle is absent from the Guardian Sep-17 piece, an omission that favors OpenAI but could reflect news judgment rather than incentive."
+        - "No disclosure of the Feb 2025 Guardian-OpenAI partnership in the mirror text (bounded by mirror completeness, carried from mechanism 687)."
+      extends: "mechanism 687 (iteration 757): replication/refinement with the fresh Sep-17 Guardian OpenAI disclosure piece; temporal extension with one new arm, not a new uniform-prediction test"
+      research_method: "3 first-hand browser.open reads this run (Guardian mirror 51 rendered lines; TechCrunch 74 rendered lines; Resultsense 47 rendered lines) + 1 excerpt-bounded wire listing (hardyandbutler.ai). 4 browser.search query sets in the pre-run phase for source discovery (Guardian OpenAI misalignment disclosure; TechCrunch adversarial treatment; FT/Guardian wire listing; OpenAI EU AI Act RubyGems). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes."
+      novelty_verification: "zero test_type_a_882 files on disk pre-commit (glob); no 'Type A #882' in git log pre-commit; max numeric mechanism_id 759 pre-commit; zero underscore-form 760 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero dash-form 760 references repo-wide pre-commit; zero numeric 760 keys in profiles/ pre-commit; block key guardian_openai_sep17_misalignment_disclosure_mixed_register (prefix form of the full block key, no literal full-key carrier per the #877 convention) zero-hit repo-wide pre-commit; the Guardian mirror URL zero-hit repo-wide pre-commit (git grep); the TechCrunch Sep-17 URL zero-hit repo-wide pre-commit; the Resultsense Sep-18 URL zero-hit repo-wide pre-commit; 'freed from the roles and identities that bind other chatbots' zero-hit repo-wide pre-commit."
+      rotation_guard: "880-884 window third leg D(#880) -> E(#881) -> A(#882 this run) (anchor patched post-commit per #565). Next: #883 Type B."
+      keying_note: "Block key carries no underscore-form 760 mechanism key substring, keeping the #880 zero-760 profile and test sweep instruments green by designed keying per #715; mechanism_id advances in colon form only. The #880 max-759 and zero-760 sweeps fail by designed supersession per the #710/#720 convention."
   meta:
     financial_tie: "none"
     estimated_value: "$0"
