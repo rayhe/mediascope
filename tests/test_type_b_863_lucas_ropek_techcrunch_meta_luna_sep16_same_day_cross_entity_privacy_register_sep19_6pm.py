@@ -68,7 +68,7 @@ NEXT_ID_MARKER = "mechanism" + "_750"
 NEXT_ID_NUMERIC = "mechanism_id: 750"
 EXPECTED_ORDER = [("B", "863"), ("A", "862"), ("E", "861"), ("D", "860"), ("C", "859")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "5e06d7d49afeeb356c0fab52b0659584a0a7e830"
 
 EXPECTED_URLS = [
     "https://techcrunch.com/2026/09/16/after-accusations-of-selling-perv-glasses-meta-prepares-to-sell-a-pair-without-a-camera/",
