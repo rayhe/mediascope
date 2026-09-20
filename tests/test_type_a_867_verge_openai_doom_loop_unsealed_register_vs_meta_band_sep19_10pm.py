@@ -72,7 +72,7 @@ MECH_KEY = "verge_openai_doom_loop_unsealed_nyt_filing_register_vs_meta_band_sep
 M_ID = 751
 ITER = 867
 TYPE_LETTER = "A"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "236906056fac6fd89dc7ac53e7a5394d17f8f5e7"
 
 MECH_ID_MARKER = "mechanism" + "_751"
 NEXT_ID_MARKER = "mechanism" + "_752"
@@ -181,8 +181,11 @@ class TestRotationGuard867:
         for s in subjects:
             m = re.search(r"Type ([A-E]) #(\d+)(?::| )", s)
             if m and m.group(2) in ("863", "864", "865", "866", "867"):
-                # Followups and test-fixups are not rotation legs.
-                if "anchor followup" not in s and "log-hash followup" not in s and "test fixup" not in s:
+                # Followups and test-fixups are not rotation legs. The
+                # push-status followup commit type (introduced at #864)
+                # is excluded alongside anchor/log-hash followups.
+                if ("anchor followup" not in s and "log-hash followup" not in s
+                        and "push-status followup" not in s and "test fixup" not in s):
                     order.append((m.group(1), m.group(2)))
         for expected, got in zip(EXPECTED_ORDER, order):
             assert expected == got
