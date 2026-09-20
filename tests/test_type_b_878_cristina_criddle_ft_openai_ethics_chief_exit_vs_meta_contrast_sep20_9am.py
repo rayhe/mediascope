@@ -98,7 +98,7 @@ JOURNALIST = "Cristina Criddle"
 ITERATION = 878
 ITER_TYPE = "B"
 MECH_ID = 758
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched post-commit per #565
+ANCHORED_SHA = "e6715881209494bd47e6d0c0597a01350c8142ae"  # patched post-commit per #565
 # NEXT_ID / MECH_ID needles are format-built so the file never carries a
 # literal underscore-form key string (per the #715 lesson).
 MECH_ID_MARKER = "mechanism" + "_758"
