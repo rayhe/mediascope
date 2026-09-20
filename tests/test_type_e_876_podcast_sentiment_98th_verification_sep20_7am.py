@@ -184,7 +184,7 @@ class TestRotationCycleGuard876:
     followup per the #565 convention; these tests are deselected pre-commit.
     """
 
-    ANCHORED_SHA = "3818ba8a4093743198f1b5fd36d9e5ca66222241"
+    ANCHORED_SHA = "7a00b64f7f25d01e9ef253e6efc8ac5495b2e9a9"
 
     def test_875_879_window_second_leg(self):
         log = _read("iteration-log.md")
