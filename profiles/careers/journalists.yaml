@@ -21121,3 +21121,119 @@ james_pero:
         URL zero-hit repo-wide; zero test_type_b_858 files on disk; no Type B #858 in git log (--grep). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em
         dashes.'
       test_file: tests/test_type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension_sep19_1pm.py
+daniel_cooper:
+  name: Daniel Cooper
+  current_role: Senior Editor
+  current_publication: Engadget
+  publication_owner: Engadget (Yahoo subsidiary)
+  beats:
+  - smart glasses
+  - wearables
+  - consumer tech reviews
+  notes: 'Engadget senior editor (role per the Aug-25 Type D cross-validation test file, in corpus). In-corpus prior: mechanism 295 (Aug 25 2026, profiles/competitor-coverage-research.yaml) documents his within-review cross-entity privacy benchmark inversion: in the XGIMI MemoMind One review (Jun 2026) he calls always-on ambient audio recording "self-evidently creepy" and "dystopian" yet gives 7.4/10 with zero external privacy authority citations, while Meta''s user-activated camera with LED indicator is framed as inherently objectionable ("I object to the concept of walking around with a camera attached to my face"); the close positions non-Meta as the future ("going to dominate...far more than Meta ever will"). Engadget beat-assignment structure per m295: Cooper reviews non-Meta glasses, Karissa Bell reviews Meta glasses - structural separation prevents same-reviewer cross-entity comparison. Type B #873 (Sep 20 2026): mechanism 755 - TEMPORAL EXTENSION of m295 to a THIRD review unit: the Sep 15 2026 HTC Vive Eagle review ("HTC Vive Eagle review: Pricey smart glasses that fail to impress", 7.4/10) carries the same within-review Meta privacy-benchmarking with an INTENSIFIED register: "the inherent issues (privacy and otherwise) of any Meta product" (entity-level dismissal, not product-level), self-declared "AI camera glasses skeptic", "hard to rationalize the premium on moral grounds" - while HTC earns a privacy Pro ("Welcome focus on user privacy", "at least gestures toward user privacy"). Same-week Apple comparator carried un-rescored per #807 from the Sep-13 Conditt block: Cooper''s own Apple Watch Series 12 piece (circa Sep 10 2026) runs a less adversarial register (alarm headline "will listen to your conversations" but full safeguards relay: opt-in, secure enclave, no audio storage, deleted immediately; "less dystopian" accessibility hedge). Illustrative tones: Meta -0.30 (new arm, hand-scored), Apple -0.10 (carried); illustrative delta (Apple minus Meta) +0.20 - within-journalist, within-week entity asymmetry. Verdict directionally_supported_not_proven; NOT falsification-family (ledger holds at 27).'
+  mechanism_ids:
+  - 295
+  - 755
+  source_urls:
+  - https://muckrack.com/daniel-cooper/articles
+  - https://www.engadget.com/2257186/htc-vive-eagle-review/
+  - https://www.engadget.com/2254031/apple-watch-series-12-will-listen-to-your-conversations/
+  competitor_coverage:
+    type_b_873_daniel_cooper_engadget_vive_eagle_meta_benchmark_extension_vs_apple_watch_carried:
+      iteration: 873
+      mechanism_id: 755
+      type: B
+      goal_id: goal_54093bda4145
+      block_key: type_b_873_daniel_cooper_engadget_vive_eagle_meta_benchmark_extension_vs_apple_watch_carried
+      date: '2026-09-20 04:00 PDT'
+      design: 'within-journalist, within-review entity-framing temporal extension plus same-week cross-entity comparator: Engadget senior editor Daniel Cooper on Meta (as invoked inside the HTC Vive Eagle review, Sep 15 2026) vs Apple (Apple Watch Series 12 piece, circa Sep 10 2026, carried). EXTENDS mechanism 295 (Cooper within-review Meta privacy-benchmarking) to a THIRD review unit; the Apple arm is carried un-rescored per #807 from the Sep-13 Conditt block (less-adversarial register characterization).'
+      finding: 'EXTENSION, not new mechanism class: Cooper''s Sep 15 2026 HTC Vive Eagle review ("HTC Vive Eagle review: Pricey smart glasses that fail to impress", Engadget, 7.4/10) extends m295''s within-review Meta privacy-benchmarking series to a third review unit (XGIMI MemoMind One Jun 2026 -> HTC Vive Eagle Sep 2026). The Meta-adversarial register INTENSIFIES: from "I object to the concept of walking around with a camera attached to my face" (Jun, m295) to "the inherent issues (privacy and otherwise) of any Meta product" and self-declared "AI camera glasses skeptic" (Sep). Within the same piece HTC earns a privacy Pro ("Welcome focus on user privacy", "at least gestures toward user privacy") while Meta gets "hard to rationalize the premium on moral grounds". Same-week Apple comparator (carried): Cooper''s own Apple Watch Series 12 piece runs a LESS adversarial register (alarm headline "will listen to your conversations" but full safeguards relay: opt-in, secure enclave, no audio storage, deleted immediately; "less dystopian" accessibility hedge). Illustrative tones: Meta -0.30, Apple -0.10; illustrative delta (Apple minus Meta) +0.20 - within-journalist, within-week entity asymmetry: Meta gets the adversarial register, Apple the softer one. Directionally consistent with the financial-incentive gradient; temporal extension of an existing mechanism, NOT a new uniform-prediction test.'
+      new_meta_framing_arm:
+        title_verbatim: 'HTC Vive Eagle review: Pricey smart glasses that fail to impress'
+        date: '2026-09-15'
+        byline: Daniel Cooper (sole)
+        role: Engadget senior editor
+        publication: engadget
+        url: https://www.engadget.com/2257186/htc-vive-eagle-review/
+        rating: '7.4 / 10'
+        pros: 'Useful controls / Lightweight / Welcome focus on user privacy'
+        cons: 'Inessential / Far too expensive / Imaging needs to be better'
+        meta_register_markers_verbatim:
+        - 'Obviously, there are plenty of downsides that come with the cheaper price, including the inherent issues (privacy and otherwise) of any Meta product.'
+        - 'The HTC Vive Eagle is a functional alternative to Meta''s camera-equipped smart glasses that at least gestures toward user privacy.'
+        - 'I''m sorry to say, but the HTC Vive Eagle did nothing to win over this AI camera glasses skeptic.'
+        - 'And if you''re the sort of person who would wear glasses like these, it''s hard to rationalize the premium on moral grounds.'
+        - 'Meta makes so much money that it can burn billions upon billions of dollars to go after any product category it wants. The company sought to dominate the camera-equipped smart glasses world and it''s hard to argue that it isn''t succeeding.'
+        tone_illustrative: -0.3
+        tone_basis: 'MANUAL ILLUSTRATIVE: self-declared skeptic prior ("AI camera glasses skeptic"), "inherent issues (privacy and otherwise) of any Meta product" as entity-level (not product-level) dismissal, "moral grounds" premium framing. Hand-assigned per article-level register reading; NOT an empirical measurement.'
+        evidence_tier: 'EXCERPT-TIER: search-excerpt bounded per #503 (0 browser.open); full Engadget text NOT first-hand reviewed; register inferred from verbatim excerpts; no URL construction.'
+        in_review_framing_note: 'The Meta tone is expressed INSIDE a competitor''s scored review, not a standalone Meta piece: the Meta-adversarial lines double as HTC-praise contrast framing (m295''s own design). Arm independence is limited by construction; disclosed as STRONG confounder.'
+      carried_apple_arm:
+        title_verbatim: 'Apple Watch Series 12 will listen to your conversations'
+        date: '2026-09-10'
+        date_note: 'crawl-recency derived (10 days before Sep 20 per search index; Engadget sitemap "this week" listing); exact publish date not rendered in excerpts - disclosed per the #492 rule, never filled by guessing.'
+        byline: Daniel Cooper (sole)
+        role: Engadget senior editor
+        publication: engadget
+        url: https://www.engadget.com/2254031/apple-watch-series-12-will-listen-to-your-conversations/
+        carried_characterization: 'Less adversarial register than Jessica Conditt''s same-week Apple Watch piece - carried un-rescored per #807 from the Sep-13 Conditt block (mechanism 150 refinement), where Cooper''s piece appears as counterevidence ("less adversarial register"). In-corpus URL: profiles/wired.yaml.'
+        apple_register_markers_verbatim:
+        - 'At its customary early-September event, Apple announced the Watch Series 12 with "Audio Intelligence." It''s a feature designed to listen out for and keep track of key phrases in your conversations.'
+        - '"Live Rewind" will enable users to double tap their Digital Crown to get a transcript of the previous 15 seconds of conversation.'
+        - 'Apple says the feature is entirely opt-in, will deliberately ignore private or sensitive information and does not store any audio.'
+        - 'On the less dystopian side of the fence, the system will act as a second pair of ears for people with accessibility needs.'
+        tone_illustrative: -0.1
+        tone_basis: 'MANUAL ILLUSTRATIVE, carried: alarm headline ("will listen to your conversations") tempered by full safeguards relay (opt-in, secure enclave, deleted immediately) and accessibility hedge ("less dystopian"). Carried un-rescored per #807.'
+      asymmetry_scorer_result_illustrative:
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. New Meta-framing arm scored this run (-0.30); Apple arm carried un-rescored per #807 (-0.10, Sep-13 Conditt block). n=1 vs n=1. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        target_entity: Apple
+        reference_entity: Meta
+        target_scores:
+        - -0.1
+        reference_scores:
+        - -0.3
+        target_avg: -0.1
+        reference_avg: -0.3
+        illustrative_delta_apple_minus_meta: 0.2
+        delta_calc: '-0.10 - (-0.30) = +0.20'
+        delta_direction: 'positive: within-journalist, within-week entity asymmetry - Meta gets the adversarial register, Apple the softer one. Directionally consistent with the financial-incentive gradient (Meta adversarial / deal-partner-adjacent softer), but the unit is a temporal extension of m295, not a new uniform-prediction test.'
+        two_entity_band:
+        - -0.3
+        - -0.1
+        engine: 'engine NOT run (illustrative arms only; Apple arm carried)'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: 'NOT artifact-grade'
+        correlation_not_causation: true
+      confounders:
+      - '[STRONG] Excerpt-tier evidence for the new arm (0 browser.open per #503; full Engadget text NOT first-hand reviewed; register inferred from verbatim search excerpts; full-text register could differ).'
+      - '[STRONG] In-review entity framing: Cooper''s Meta tone is expressed inside a competitor''s scored review (HTC Vive Eagle), not a standalone Meta piece; the Meta-adversarial lines double as HTC-praise contrast framing (m295''s own design). Arm independence is limited by construction.'
+      - '[STRONG] Apple arm carried, not re-scored this run (per #807): the "less adversarial" characterization is inherited from the Sep-13 Conditt block; this run''s excerpt evidence is consistent with it but the arm was not independently re-derived.'
+      - '[MODERATE] n=1 new arm; degenerate sample - one review cannot carry a writer-level register claim alone; the claim rides on the m295 series (XGIMI Jun 2026 + Vive Eagle Sep 2026).'
+      - '[MODERATE] Genre asymmetry: scored review (HTC, 7.4/10, pros/cons) vs launch news (Apple Watch); the review genre invites harsher verdicts than news relay, which can inflate the apparent entity gap.'
+      - '[MODERATE] Beat-assignment structure (m295 documented): Cooper reviews non-Meta glasses, Karissa Bell reviews Meta glasses - Engadget structurally prevents same-reviewer cross-entity comparison; within-review framing is the only available unit.'
+      - '[WEAK] Temporal skew: Sep 10 vs Sep 15 2026 - same week; minimal, noted for completeness.'
+      - '[WEAK] Headline authorship: Engadget headlines may be editor-written; "Pricey smart glasses that fail to impress" is not verifiably Cooper''s own wording (body register markers are).'
+      counterevidence:
+      - 'HTC earns a privacy Pro ("Welcome focus on user privacy", "at least gestures toward user privacy") while Meta gets "inherent issues" - merit-differentiated by product behavior (privacy-by-design), which bounds the entity-loyalty read: the inversion claim rests on the BENCHMARK framing, not a uniform anti-Meta verdict.'
+      - 'The Apple arm relays Apple''s safeguards verbatim (opt-in, secure enclave, no audio storage, deleted immediately) and hedges with accessibility benefits ("less dystopian side of the fence") - the softer register is partly peg-driven (real safeguards), not purely entity preference.'
+      - 'Cooper''s self-declared prior ("AI camera glasses skeptic") is disclosed in the piece itself - the adversarial Meta register is an announced prior, not a hidden bias; a skeptic who discloses is a different evidentiary class than a captured reviewer.'
+      cross_references:
+      - 'mechanism 295 (Daniel Cooper within-review Meta privacy-benchmarking, XGIMI MemoMind One Jun 2026 - EXTENDED this run to a third review unit)'
+      - 'mechanism 150 refinement (Jessica Conditt Engadget Apple adversarial beat-routing, Sep-13 block - carries the Apple arm''s less-adversarial characterization)'
+      - '#563 Alex Heath (register constancy falsification-family parallel)'
+      - '#588 Scott Stein (register constancy class)'
+      connects_to:
+      - 295
+      - 150
+      extends: 'TEMPORAL EXTENSION of mechanism 295 (2 review units -> 3 review units: XGIMI MemoMind One Jun 2026 -> HTC Vive Eagle Sep 2026); register intensification Jun -> Sep ("I object to the concept..." -> "inherent issues (privacy and otherwise) of any Meta product" + self-declared skeptic).'
+      verdict: 'directionally_supported_not_proven'
+      correlation_not_causation: true
+      correlation_note: 'Correlation is not causation.'
+      is_significant: false
+      no_analysis_json_update: true
+      falsification_family: 'NOT a falsification-family member (temporal extension of an existing mechanism, not a uniform-prediction test); ledger holds at 27.'
+      research_method: '7 browser.search query sets this run ((1) Alex Heath Verge Meta Luna - REJECTED (in corpus via Type B #563; own-repo GitHub commit surfaced); (2) Alex Cranz / David Pierce Vergecast Luna-Specs - REJECTED (no clean bylined arms); (3) Tom Warren / Adi Robertson / Wes Davis - REJECTED (no Sep-2026 glasses arms); (4) theverge.com Luna author attribution - attribution intelligence only (Dominic Preston byline, in corpus via #838); (5) Mariella Moon Engadget - REJECTED as primary (Luna arm good, no Moon competitor arm; led to Cooper); (6) Daniel Cooper HTC Vive Eagle byline - SELECTED (new Meta-framing arm, URL zero-hit pre-commit); (7) Cooper Apple Watch Series 12 URL - carried-arm verification (in corpus via wired.yaml + Sep-13 Conditt block)). 0 browser.open this run per #503. Pre-commit novelty sweeps per #715: zero test_type_b_873 files on disk (glob); no Type B #873 in git log (--grep); max numeric mechanism_id 754 pre-commit; zero underscore-form 755 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero numeric 755 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; "daniel_cooper" top-level slug zero-hit pre-commit; both evidence URLs zero-hit repo-wide pre-commit except the carried Apple arm (in corpus via wired.yaml + Conditt block, carried per #807). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; no zero-coverage claims per the #492 rule. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_873_daniel_cooper_engadget_vive_eagle_meta_benchmark_extension_vs_apple_watch_carried_sep20_4am.py
