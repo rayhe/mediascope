@@ -1023,6 +1023,136 @@ competitor_relationships:
     direction: none
     description: No financial relationship.
     coverage_prediction: adversarial
+  snap:
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship. Keleops AG has no connection to Snap Inc.
+    coverage_prediction: adversarial
+    gizmodo_snap_sep16_launch_hands_on_register_vs_meta_adversarial_band_sep19_2026:
+      mechanism_id: 748
+      date: '2026-09-19'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 862
+      iteration_type: A
+      iteration_time: 2026-09-19 17:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: Kit (with Ray)
+      publication_focus: Gizmodo (Keleops AG)
+      publication_pair: Gizmodo x Snap
+      entity_pair: "Snap vs Meta vs OpenAI"
+      competitor: snap
+      comparison_entities:
+      - meta
+      - openai
+      pair: "Gizmodo x Snap (vs Meta vs OpenAI)"
+      finding: 'FIRST dedicated Type A mechanism on Gizmodo''s Sep-15/16 2026 Snap Specs launch hands-on piece: "Snap''s AR Glasses Let You Take Snapchat Pics by Snapping Your Fingers" (James Pero; verbatim gizmodo.com URL; excerpt-bounded per #503). Register: first-person hands-on playful-skeptical. Register evidence, verbatim from search excerpts: "Strangely, there''s also a Shopify app for 3D shopping experiences, which was not on my bingo card. I can''t imagine wanting to shop in a pair of glasses, but to each their own, I guess."; "A Harry Potter experience tied to HBO''s upcoming TV series that looks... interesting. I''d need to see more to really get a feel for how gimmicky that is, though."; "I got to try a similar app for soccer, and that was probably the most fun I had in my personal demo with Specs, so I''m optimistic on the basketball side of things." MANUAL ILLUSTRATIVE +0.10 on the Snap arm. Carried comparators, un-rescored per the #807 pattern: m577 (Gizmodo x Meta adversarial band, mean -0.617: facial-recognition glasses -0.70, scrapped AI photo tool -0.55, layoffs headline snark -0.60); m736 (Gizmodo x OpenAI Sep-18 Claude-hack cybersecurity accountability, -0.45). Illustrative deltas: Snap-minus-Meta +0.717; Snap-minus-OpenAI +0.55. Within-journalist temporal: Pero''s Jun-16 Specs preview ("Trying to Beat Meta to the Punch", neutral_product_preview, -0.10, m74) to the Sep hands-on (+0.10): illustrative softening +0.20 after getting hardware in hand. The register follows the PEG and genre (hands-on demo access), not the entity: the in-corpus Jun-2026 "Roasted to Death" piece proves Gizmodo runs harsh_critical on Snap when the peg is design mockery, and the same-week m736 shows adversarialism toward OpenAI on incident pegs. REPLICATES the m637/m742/#847/#852 peg-follows-register pattern at the null-tie outlet; EXTENDS m74 (zero surveillance vocabulary for Snap''s 4 cameras persists in the warm hands-on register); EXTENDS m577''s symmetric-adversarial band with a third peg class (launch hands-on). Incentive attribution: Gizmodo carries $0 AI licensing deals (financial_tie: none, this profile), so the null-tie prediction is no uniform softening - confirmed; the observed gradient is genre/access-driven, not payer-driven. Verdict: directionally_supported_not_proven. Correlation is not causation. NOT artifact-grade.'
+      snap_arms:
+      - title: 'Snap''s AR Glasses Let You Take Snapchat Pics by Snapping Your Fingers'
+        url: https://gizmodo.com/snap-specs-ar-glasses-let-you-take-snapchat-pics-by-snapping-your-fingers-2000812735
+        author: James Pero
+        date: '2026-09-15'
+        date_note: 'Search-result Last-Updated 4 days before the Sep 19 crawl; hands-on pre-brief embargo ahead of the Sep 16 LA launch event per the gamesreviews Sep 17 roundup; piece text says "At a launch event this week".'
+        register: first-person hands-on playful-skeptical
+        manual_illustrative_tone: 0.10
+        tone_note: "Playful snark is warm, not hostile; genuine optimism on the basketball app; tolerance framing (''to each their own'')"
+        evidence_grade: excerpt-bounded this run (browser.search verbatim excerpts per #503; 0 browser.open per developer constraint)
+        url_novelty: first corpus appearance this run (zero repo-wide hits pre-commit)
+        key_quotes:
+        - 'Snap''s Specs AR glasses were annouced back in June, and while we got a preview of what they look like and what they do, there were quite a few glaring questions, such as... what exactly you''ll be able to do with them.'
+        - 'Strangely, there''s also a Shopify app for 3D shopping experiences, which was not on my bingo card. I can''t imagine wanting to shop in a pair of glasses, but to each their own, I guess.'
+        - 'A Harry Potter experience tied to HBO''s upcoming TV series that looks... interesting. I''d need to see more to really get a feel for how gimmicky that is, though.'
+        - 'I got to try a similar app for soccer, and that was probably the most fun I had in my personal demo with Specs, so I''m optimistic on the basketball side of things.'
+        surveillance_vocabulary_count: 0
+        surveillance_vocabulary: []
+        led_indicator_framing: "Not foregrounded in excerpts; no surveillance vocabulary for the 4-camera hardware"
+        provenance: 'Hands-on access attested by the gamesreviews.com Sep 17 roundup: "Journalists at Engadget, Tom''s Guide and Gizmodo were among the outlets given hands-on time with the glasses ahead of Snap''s September 16 launch event in Los Angeles"'
+        provenance_url: https://gamesreviews.com/news/09/snap-specs-hands-on-2195-standalone-ar-glasses-impress-but-questions-remain/
+        provenance_note: 'Provenance URL carried from wired.yaml (#827); not novel repo-wide'
+      meta_arms_carried:
+        source_mechanism: 577
+        carried_per: '#807 (un-rescored)'
+        arms:
+        - description: facial-recognition glasses
+          manual_illustrative_tone: -0.70
+        - description: scrapped AI photo tool
+          manual_illustrative_tone: -0.55
+        - description: layoffs headline snark
+          manual_illustrative_tone: -0.60
+        meta_band_mean: -0.617
+      openai_arm_carried:
+        source_mechanism: 736
+        carried_per: '#807 (un-rescored)'
+        description: 'Sep-18 Claude-hack cybersecurity accountability ("Three Hackers Used Claude to Break Into OpenAI In Less Than 72 Hours")'
+        manual_illustrative_tone: -0.45
+      within_journalist_temporal:
+        journalist: James Pero
+        jun16_preview:
+          title: "Snap''s New AR Glasses Are Trying to Beat Meta to the Punch"
+          date: '2026-06-16'
+          register: neutral_product_preview
+          manual_illustrative_tone: -0.10
+          carried_from: mechanism 74
+        sep_hands_on:
+          title: 'Snap''s AR Glasses Let You Take Snapchat Pics by Snapping Your Fingers'
+          date: '2026-09-15'
+          register: first-person hands-on playful-skeptical
+          manual_illustrative_tone: 0.10
+        illustrative_softening_jun_to_sep: 0.20
+        note: 'Same author, same product line; register warms after hands-on hardware access'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: snap
+        peer_entities: [meta, openai]
+        snap_fresh_arm_tone: 0.10
+        snap_arm_avg: 0.10
+        meta_band_carried_m577: -0.617
+        meta_arm_tones_carried: [-0.70, -0.55, -0.60]
+        openai_arm_carried_m736: -0.45
+        pero_jun16_preview_carried_m74: -0.10
+        illustrative_delta_snap_minus_meta: 0.717
+        delta_arithmetic_snap_meta: '0.10 - (-0.617) = 0.717'
+        illustrative_delta_snap_minus_openai: 0.55
+        delta_arithmetic_snap_openai: '0.10 - (-0.45) = 0.55'
+        within_journalist_softening: 0.20
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine: 'NOT run'
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. n=1 fresh Snap arm (degenerate statistical contract per the #638/#643 convention); carried arms un-rescored per the #807 pattern. Target-minus-peer convention: Snap minus Meta, Snap minus OpenAI. DO NOT claim empirical significance."
+        limitations: 'n=1 fresh arm; excerpt-bounded evidence (#503); Sep-15 date inferred; carried arms un-rescored; no engine run'
+      financial_context: 'Gizmodo financial_tie: none; estimated_value: $0; direction: none. "No financial relationship. Keleops AG has no connection to any tech company." (this profile, competitor_relationships.meta; identical none/$0 blocks for openai, anthropic, snap). coverage_prediction: adversarial. The null-tie prediction is no uniform tie-driven softening - confirmed: adversarial registers persist on incident pegs (m736 OpenAI -0.45, m577 Meta band -0.617) while the launch hands-on peg draws a warm register (+0.10). The gradient is genre/access-driven, not payer-driven.'
+      confounders_ranked:
+        strong:
+        - 'Genre/access mismatch DOMINANT: hands-on demo-access journalism is structurally warmer than accountability/incident reporting; the +0.717 delta may be entirely genre-driven, not entity-driven'
+        - 'Snap-hosted pre-brief dynamics: Gizmodo got pre-launch hands-on time (gamesreviews attestation); access journalism warms registers independent of entity sympathy'
+        - 'Excerpt-bounded evidence (#503): 0 browser.open this run per developer constraint; full-text register could differ'
+        moderate:
+        - 'Single fresh arm (n=1, degenerate statistical contract per the #638/#643 convention)'
+        - 'Byline voice: Pero''s first-person hands-on voice vs news-desk voice; the within-journalist Jun-to-Sep comparison controls for author but not story type'
+        - 'Sep-15 date inferred from search-result Last-Updated; the piece may have published Sep 16'
+        weak:
+        - 'The Jun-16 preview (-0.10) to Sep hands-on (+0.10) softening conflates story-type change with access effects'
+        - 'Comment-thread sentiment unmeasured'
+        - 'No evidence on whether Gizmodo was invited to the LA keynote itself vs the pre-brief only'
+      counter_evidence:
+      - '"Roasted to Death" (Jun 2026, harsh_critical on Snap design/form factor, in corpus via cross_entity_coverage snap examples): Gizmodo runs harsh registers on Snap when the peg is design mockery - entity-favoritism fails'
+      - 'm736: same-week adversarial register toward OpenAI (-0.45) on the Claude-hack peg - the outlet is adversarial on incident pegs regardless of entity'
+      - 'm74: the privacy-vocabulary asymmetry persists even in the warm hands-on register (zero surveillance vocabulary for Snap''s 4 cameras) - the cultural-coding finding stands alongside the register finding'
+      - 'TechCrunch''s Sep-16 skeptical launch piece ("tries to make the case again", "genuine disaster", in corpus via wired.yaml #827 comparator): the tech press is not uniformly soft on Snap'
+      verdict: directionally_supported_not_proven
+      falsification_family: 'NOT a member - null-tie control documentation, SIXTH in the Gizmodo control family (#512 Gizmodo x Google, #577 Gizmodo x Anthropic, #582 Gizmodo x OpenAI rogue-agent, #817 Gizmodo x OpenAI capital-raise, #842 Gizmodo x OpenAI Claude-hack); the control behaves as predicted. Ledger holds at 26.'
+      ledger: 'TWENTY-SIXTH present in profiles/ (ledger holds at 26; the next ordinal is absent).'
+      no_analysis_json_update: true
+      research_method: '6 browser.search query sets this run (Guardian Snap Specs launch; theguardian.com Snap Specs Spiegel; NYT Snap Specs; BI Snap Specs launch; FT Snap Specs launch; Gizmodo Snap Specs September 2026 - SELECTED: Pero Sep-15/16 hands-on piece) + 1 verification pass (Atlantic x OpenAI Sep 2026 - rejected, in corpus per #481/m404). 0 browser.open this run per developer constraint (excerpt-bounded per #503). REJECTED candidates: Guardian x Snap (no standalone Sep-16 piece surfaced, bounded absence); NYT x Snap (no standalone piece surfaced); BI x Snap (no BI-authored piece surfaced); FT x Snap (no FT piece surfaced); Verge x Snap Sep-16 (relay-attributed only, no verbatim theverge.com URL; #827/#853 cover the Verge/WIRED angles). The gamesreviews.com Sep-17 roundup URL is carried from wired.yaml (#827), not novel. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
+      source_urls:
+      - https://gizmodo.com/snap-specs-ar-glasses-let-you-take-snapchat-pics-by-snapping-your-fingers-2000812735
+      - https://gamesreviews.com/news/09/snap-specs-hands-on-2195-standalone-ar-glasses-impress-but-questions-remain/
+      cross_references: [74, 512, 577, 582, 721, 736]
+      novelty: 'FIRST dedicated Type A mechanism on Gizmodo''s Sep-15/16 2026 Snap Specs launch hands-on piece. Distinct from m74 (Jun-16 preview, privacy-vocabulary), m577 (symmetric band), m736 (OpenAI Claude-hack), #827 (WIRED selection), #848 (Ortiz journalist-level hands-on), #853 (Ashworth journalist-level). Zero test_type_a_862 files on disk pre-commit (glob); no "Type A #862" in git log pre-commit; the snapping-your-fingers-2000812735 URL zero-hit repo-wide pre-commit; block key zero-hit pre-commit; max numeric mechanism_id 747 pre-commit; zero underscore-form 748/749 keys by designed keying per #715; 860-864 window THIRD leg, D->E->A (D(#860) -> E(#861) -> A(#862)).'
 editorial_posture:
   meta_coverage: adversarial_to_balanced
   tone: conversational_critical
@@ -1430,6 +1560,16 @@ cross_entity_coverage:
       notes: Product preview of camera-equipped $2,195 Specs. Cameras described neutrally
         as enabling spatial experiences. Zero surveillance vocabulary despite identical
         camera hardware to Meta glasses.
+    - title: Snap's AR Glasses Let You Take Snapchat Pics by Snapping Your Fingers
+      tone: playful_hands_on
+      date: 2026-09-15
+      url: https://gizmodo.com/snap-specs-ar-glasses-let-you-take-snapchat-pics-by-snapping-your-fingers-2000812735
+      author: James Pero
+      notes: 'Sep-16 launch-week hands-on (pre-brief). First-person playful-skeptical register
+        (+0.10 illustrative): Shopify app "not on my bingo card", Harry Potter "how gimmicky",
+        soccer demo "most fun I had... optimistic on the basketball side". Same author as the
+        Jun-16 preview; register warms +0.20 after hardware access. Zero surveillance vocabulary
+        for 4-camera glasses (mechanism 748, Sep 19 2026).'
     snap_specs_camera_privacy_parity:
       mechanism_id: 74
       date_analyzed: '2026-08-12'
