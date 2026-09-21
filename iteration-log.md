@@ -6,7 +6,7 @@
 - Research method: pre-compaction candidate research (Mashable mirror byline unidentified; Peters/Preston/Pero/Ropek/Fried/Ulanoff/Moon ruled out as in-corpus or recent subjects) + 4 post-compaction browser.search calls (byline verification decisive).
 - NOT a falsification-family member: register documentation and genre replication of m722, no uniform-direction prediction under test. Ledger holds at 29; THIRTIETH remains the negative guard.
 - New Type B files: tests/test_type_b_888_karissa_bell_engadget_specs_keynote_liveblog_vs_meta_display_privacy_register_sep21_1am.py - 61 tests, 12 classes.
-- Commit hashes: main commit PATCH_ME_IN_FOLLOWUP (anchor patched post-commit per #565); anchor/log-hash followups update this line.
+- Commit hashes: main commit efa4dcfe72aec8df736a00f5cf39e5b97218da09 (verified via git rev-parse); anchor followup 7b32c1d12ed834f3a6599bcdaf724b1f8e22c81d (ANCHORED_SHA patched per #565); 61/61 file tests green post-anchor; log-hash followup records hashes here.
 - Doc-sync ratchet: README stats table 45428/1214 -> 45489/1215 + test-file table row; ARCHITECTURE.md tree entry + count line.
 - Rotation guard: 885-889 window fourth leg D->E->A->B (anchor patched post-commit per #565). Next: #889 Type C.
 - Push status (this run, Sep 21 2026 ~01:xx PDT): PENDING - updated in push-status followup.
