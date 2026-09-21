@@ -2835,6 +2835,149 @@ competitor_relationships:
         significant_empirical_false: true
         disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. Direct financial predictor absent for Anthropic pair: Vox Media OpenAI deal is with Anthropic rival, Verge-Anthropic tie is $0. This mechanism is a control case against financial determinism. Beat concentration and news genre and hype cycle position are the strongest confounders.'
       new_test_file: 'tests/test_type_a_557_verge_anthropic_aspirational_register_vs_meta_deficit_sep06_5am.py'
+    mechanism_766_verge_anthropic_product_launch_register_extension_vs_meta_deficit_sep21:
+      mechanism_id: 766
+      date_analyzed: '2026-09-21'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 892
+      iteration_type: A
+      iteration_time: '2026-09-21 05:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The Verge
+      competitor_pair: 'Anthropic vs Meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '05:00'
+      job_id: mediascope-daily-iteration
+      distinct_from_prior: 'Extends mechanism 557 (Type A #557, Sep 6 2026) from business-milestone, solidarity-hero, and compliance registers into the product-launch register. Mechanism 557 used three Anthropic stories (IPO filing Jun 1, Pentagon-lawsuit solidarity Mar 9, EU AI Act watermarking mid-Aug); this mechanism tests the same aspirational-vs-deficit register on two September 2026 Anthropic product stories: the Claude Fable 5.1 and Mythos 5.1 launch (Sep 1) and the "one Claude" Cowork/chat merge plus Claude Docs and Claude Slides launch (Sep 16-17). Both carry soft product vocabulary despite the $0 direct Verge-Anthropic financial tie. Meta comparator arms carried verbatim from mechanism 557 (Muse Spark "reentering the AI race" Apr 8 2026, Ray-Ban Display expansion paused Jan 6 2026). NOT a falsification-family member: no uniform-direction prediction under test; strengthens the #557 control case. Ledger holds at 29; THIRTIETH remains the negative guard.'
+      finding: 'Two September 2026 Anthropic product stories, both Verge-reported or Verge-attributed this run, carry the aspirational product-launch register. (1) The Claude Fable 5.1 and Mythos 5.1 launch (Sep 1 2026; exact theverge.com URL surfaced this run inside a secondary GitHub news-archive mirror record), framed around enterprise agentic gains: up to 45% cheaper agentic work, lower agent costs, data-retention controls, and less overzealous safeguards. (2) The "one Claude" merge of Cowork and chat plus Claude Docs and Claude Slides (announced Sep 16 2026; Verge coverage Sep 17 by Sebastian Szczeblewski, per the pulseofnations.lol secondary which states "The Verge first reported the update"), framed as friction removal, the Cowork toggle vanishing, work continuing while the laptop is closed, and direct competition with Google Workspace suite and its Gemini integration. The two Meta comparator arms, carried verbatim from mechanism 557, remain deficit registers: (1) "Meta is reentering the AI race" with a new model called Muse Spark (Apr 8 2026), where reentering implies Meta left the race; (2) "Meta pauses wider Ray-Ban Display expansion due to supply shortages" (Jan 6 2026), supply-constraint deficit. MANUAL ILLUSTRATIVE peer avg +0.175 vs target avg -0.25, delta +0.425 peer softer. The register softness persists at the non-deal rival lab in a new register type (product launch), further bounding the financial-determinism hypothesis per mechanism 557. Correlation is not causation.'
+      financial_relationship:
+        anthropic_direct: '$0 direct Verge to Anthropic licensing confirmed zero this run'
+        verge_openai_deal: 'Vox Media strategic content and product partnership with OpenAI, May 29 2024. The Verge content used in ChatGPT. Cash terms undisclosed. PMC acquired Vox Media in 2026.'
+        meta_financial: '$0'
+        deal_disclosed_in_verge_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Direct financial predictor is ABSENT for this pair: Vox Media deal is with OpenAI, Anthropic rival. This mechanism is therefore a control-case extension against financial determinism, continuing #557. Financial incentives are correlational, not causal proof.'
+        editorial_independence_note: 'The Verge editorial standards require source verification and balance. No evidence of direct directive linking any commercial relationship to Anthropic coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      articles_anthropic:
+        - title: 'Anthropic launches Claude Fable 5.1 and Mythos 5.1 (reported topic)'
+          date: '2026-09-01'
+          url: 'https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1'
+          url_source: 'verbatim theverge.com URL from browser.search this run, surfaced inside a secondary GitHub news-archive mirror record; no first-hand theverge.com read per standing rule.'
+          framing: 'product_launch_enterprise_cost_benefit'
+          tone_MANUAL_ILLUSTRATIVE: 0.20
+          language:
+            - 'up to 45% cheaper for agentic work'
+            - 'lower agent costs'
+            - 'data-retention controls'
+            - 'less overzealous safeguards'
+          notes: 'Product-launch register with enterprise-benefit vocabulary. Excerpt-bounded per #503: topic confirmed via secondary record; full Verge text not read this run. URL zero-hit repo-wide pre-commit.'
+          deal_disclosed: false
+        - title: 'Anthropic Merges Cowork Into Claude, Adds Docs and Slides (Verge-attributed via secondary)'
+          date: '2026-09-17'
+          url: 'https://pulseofnations.lol/anthropic-merges-cowork/'
+          url_source: 'secondary (pulseofnations.lol, Sep 17 2026) states "The Verge first reported the update" with Verge byline Sebastian Szczeblewski; no direct theverge.com URL surfaced verbatim this run; recorded as Verge-attributed via secondary.'
+          framing: 'product_launch_unification_competitive'
+          tone_MANUAL_ILLUSTRATIVE: 0.15
+          language:
+            - 'The Verge first reported the update'
+            - 'Anthropic calls "one Claude"'
+            - 'folding its agentic behavior into the main Claude chat'
+            - 'direct competition with Google Workspace suite and its Gemini integration'
+          notes: 'Product-launch register; secondary relays that the Verge broke the story (announcement Sep 16, Verge coverage Sep 17). Excerpt-bounded per #503. URL zero-hit repo-wide pre-commit. One negative-adjacent verb choice ("killing off Claude Cowork") bounds the uniformity of the soft register.'
+          deal_disclosed: false
+      articles_meta:
+        - title: 'Meta is reentering the AI race with a new model called Muse Spark'
+          date: '2026-04-08'
+          url: 'https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/'
+          url_source: 'corpus pointer carried verbatim from mechanism 557, verified there.'
+          framing: 'deficit_follower'
+          tone_MANUAL_ILLUSTRATIVE: -0.35
+          language:
+            - 'reentering the AI race'
+            - 'implies Meta left the race'
+          notes: 'Deficit and follower vocabulary in headline. Carried from mechanism 557; re-scored unchanged.'
+          deal_disclosed: false
+        - title: 'Meta pauses wider Ray-Ban Display expansion due to supply shortages'
+          date: '2026-01-06'
+          url: 'https://www.theverge.com/news/856216/meta-ray-ban-display-smart-glasses-international-expansion-paused'
+          url_source: 'verbatim theverge.com URL from iteration-log #425, carried from mechanism 557.'
+          framing: 'supply_constraint_deficit'
+          tone_MANUAL_ILLUSTRATIVE: -0.15
+          language:
+            - 'expansion paused'
+            - 'supply shortages'
+            - 'waitlists'
+          notes: 'Supply-constraint deficit framing. Carried from mechanism 557; re-scored unchanged.'
+          deal_disclosed: false
+      register_analysis: 'The aspirational register at The Verge extends beyond the mechanism-557 registers (business milestone, solidarity hero, compliance) into the product-launch register for the same non-deal lab. Anthropic product launches are framed with enterprise-benefit and friction-removal vocabulary ("one Claude", cheaper agentic work, data-retention controls), while Meta product-adjacent stories are framed with deficit vocabulary (reentering implies prior loss; paused expansion implies execution deficit). The $0 direct financial tie persists, so the product-register softness, like the earlier registers, cannot be attributed to a direct licensing incentive.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE not empirical n=2 vs n=2 per entity insufficient for inferential significance'
+        target_entity: 'Meta Verge deficit register'
+        peer_entity: 'Anthropic Verge product-launch register'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.35, -0.15]
+        target_avg: -0.25
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.20, 0.15]
+        peer_avg: 0.175
+        delta: 0.425
+        delta_calc: '0.175 - (-0.25) = +0.425'
+        delta_direction: 'peer softer than target by 0.425'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+        synthetic_note: 'Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary in excerpt-tier sources, not observed Verge corpus empirical scores. Meta arms carried verbatim from mechanism 557 with unchanged scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on a full Sep 2026 Verge product-launch corpus. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation. Direct financial predictor absent for Anthropic pair so delta cannot be attributed to a direct licensing tie.'
+        methodology: 'Engine NOT run; MANUAL ILLUSTRATIVE excerpt-bounded scoring only.'
+      confounders_ranked:
+        strong:
+          - 'news genre: product launches are inherently upbeat genres. Supply-constraint pauses and "reentering the race" framings are inherently deficit genres. Genre alone can produce the register gap with zero entity favoritism.'
+          - 'hype cycle position: Anthropic is the cycle darling with a pre-IPO $2T valuation target (Oct 2026, per mechanism 557), while Meta AI is positioned as incumbent follower. Market momentum gives journalists positive product pegs for one entity and negative pegs for the other.'
+          - 'beat concentration: Hayden Field Verge AI beat is functionally an OpenAI/Anthropic beat per mechanism #52, about 15+ articles on the two labs vs 2-3 on Meta AI in 14 months Jun 2025 to Aug 2026. A beat structured around the two frontier labs applies product vocabulary aspirationally independent of any licensing deal.'
+        moderate:
+          - 'temporal mismatch: Anthropic arms are Sep 2026 product launches; Meta arms are Apr 2026 and Jan 2026. Not a matched-window design; temporal mismatch weakens the same-register reading.'
+          - 'excerpt-bounded: 0 first-hand browser.open reads this run per #503. Both Anthropic arms are excerpt-tier (one exact URL via secondary record, one Verge-attributed via secondary). Tones assigned from framing vocabulary in excerpts, not full text.'
+          - 'genuine conduct: the Cowork merge and model cost cuts are genuinely product-positive events; the Meta stories are genuinely deficit events. Real facts legitimately shape register.'
+        weak:
+          - 'thin sample: n=2 vs n=2 is directional only, never dispositive for a publication-level claim.'
+          - 'byline: only the Cowork piece carries a Verge byline (Szczeblewski) in the excerpt; the Fable piece byline was not surfaced this run.'
+      counter_evidence:
+        - 'The m557 open empirical test (The Verge framing of the Aug 29 2026 Sony/Warner music lawsuit against Anthropic) remains unresolved this run: an adversarial register there would support genre and conduct explanations; a softened register would strengthen the asymmetry claim. Not asserted either way.'
+        - 'The one-Claude excerpt carries one negative-adjacent verb choice ("killing off Claude Cowork"), which bounds the uniformity of the soft register even within a product-positive piece.'
+        - 'OpenAI deal halo cannot be ruled out: the Vox Media OpenAI licensing deal (May 29 2024) may create general AI-lab goodwill at The Verge, but Anthropic is OpenAI primary rival so the direction is ambiguous per m557.'
+      open_empirical_test: 'The Verge headline framing of the Aug 29 2026 Sony Music Publishing and Warner Chappell Music lawsuit against Anthropic ("one of the largest and most blatant ongoing thefts of intellectual property in history", Reuters 2026-08-31) remains the next empirical test of the Anthropic register, carried forward from m557 and unresolved this run. Additionally, a full Sep 2026 Verge product-launch corpus with article-level observed tone scores (VADER TextBlob plus human annotation) would test whether the +0.425 illustrative delta survives empirical scoring.'
+      incentive_attribution: 'CONTROL_CASE_AGAINST_FINANCIAL_DETERMINISM. Direct financial predictor is ABSENT: Vox Media OpenAI deal is with Anthropic rival, Verge-Anthropic tie is $0. The product-launch register softness at the non-deal lab further bounds the licensing-deal predictor. This mechanism is a control-case extension of #557, not a falsification test: no uniform-direction prediction under test, so no falsification-family membership. Ledger holds at 29; THIRTIETH remains the negative guard.'
+      falsification_family: 'NOT a falsification-family member. Control-case extension of mechanism 557. Ledger holds at 29; THIRTIETH remains the negative guard.'
+      ledger: '29'
+      finding_summary: 'The Verge applies the aspirational product-launch register to two September 2026 Anthropic product stories (Fable 5.1/Mythos 5.1 launch Sep 1, excerpt-tier exact URL; "one Claude" Cowork/chat merge plus Docs and Slides Sep 16-17, Verge-attributed via secondary) with illustrative scores 0.20 and 0.15, while the two carried Meta comparator arms remain deficit registers at -0.35 and -0.15. Illustrative delta +0.425 peer softer. Distinct from #557 because the register under test is product launch rather than business milestone, solidarity hero, or compliance: the softness crosses register boundaries at the non-deal lab, further bounding any claim that the OpenAI licensing deal alone predicts The Verge coverage tone. Bounded by #507 (deal-incentive pattern is domain-bounded). Strongest confounders are news genre, hype cycle position, and beat concentration (#52 Hayden Field). Open empirical tests named: The Verge framing of the Aug 29 2026 Sony/Warner music lawsuit; full Sep 2026 Verge product-launch corpus with observed tone scores. Correlation does not imply causation.'
+      source_urls:
+        - 'https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1'
+        - 'https://pulseofnations.lol/anthropic-merges-cowork/'
+        - 'https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/'
+        - 'https://www.theverge.com/news/856216/meta-ray-ban-display-smart-glasses-international-expansion-paused'
+        - 'https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media'
+      cross_references: [52, 425, 507, 420, 552, 193, 557]
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: 'MANUAL ILLUSTRATIVE'
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: 'Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores for a full Sep 2026 Verge product-launch corpus'
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. Direct financial predictor absent for Anthropic pair: Vox Media OpenAI deal is with Anthropic rival, Verge-Anthropic tie is $0. This mechanism is a control-case extension of #557, not a falsification test. News genre, hype cycle position, and beat concentration are the strongest confounders.'
+      correlation_not_causation: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False per the Aug 28 2026 standing rule; engine NOT run; no analysis.json update warranted; NOT artifact-grade.'
+      no_analysis_json_update: true
+      research_method: '8 browser.search query sets this run (6 pre-compaction: Anthropic news September 2026 site:theverge.com OR site:nytimes.com (zero results); Anthropic Claude announcement September 2026; The Verge Anthropic Claude Cowork one Claude September; WIRED Anthropic Claude self-improvement 26% research development; wired.com Anthropic Claude September; theverge.com Anthropic Claude September; plus 2 post-compaction: The Verge Anthropic Cowork chat merged one Claude Docs Slides launch with since 2026-09-10; theverge.com Anthropic "one Claude" Cowork chat Docs Slides article). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_892 files on disk (glob); no "Type A #892" in git log (--grep); block key zero-hit repo-wide; max numeric mechanism_id 765 in-tree pre-commit (concurrent m762 block on disk, uncommitted); zero underscore-form 766 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero dash-form 766 references repo-wide pre-commit; zero numeric 766 mechanism_id keys in profiles/ pre-commit; "987830" and "pulseofnations.lol" zero-hit repo-wide pre-commit; ## #884 NOT asserted (concurrent in-flight: asserting its absence would break on its commit, asserting its presence would fail pre-commit). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'test_type_a_892 files on disk pre-commit: zero; no "Type A #892" in git log pre-commit: absent; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 765 pre-commit; zero underscore-form 766 keys repo-wide pre-commit (format-built needles); zero dash-form 766 references pre-commit; zero numeric 766 mechanism_id keys in profiles/ pre-commit; both Anthropic URLs zero-hit repo-wide pre-commit; Meta arms carried verbatim from mechanism 557 (not novel, disclosed).'
+      new_test_file: 'tests/test_type_a_892_verge_anthropic_product_launch_register_extension_vs_meta_deficit_sep21_5am.py'
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
