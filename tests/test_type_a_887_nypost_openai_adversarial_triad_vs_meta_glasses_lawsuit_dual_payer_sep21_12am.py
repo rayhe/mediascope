@@ -210,9 +210,14 @@ class TestRotationGuard887:
                  if "anchor followup" not in ln and "log-hash followup" not in ln]
         assert len(mains) >= 1
 
-    def test_anchor_sha_matches_head(self):
-        head = _git("rev-parse", "HEAD").stdout.strip()
-        assert ANCHORED_SHA == head
+    # NOTE (per the #885/#886 convention): ANCHORED_SHA pins the MAIN commit;
+    # the anchor/log-hash followups legitimately advance HEAD past it, so the
+    # old assert-ANCHORED_SHA-equals-HEAD shape is retired. The live invariant
+    # is ancestry: the anchored main commit must be an ancestor of HEAD.
+    def test_anchor_is_ancestor_of_head(self):
+        proc = _git("merge-base", "--is-ancestor", ANCHORED_SHA, "HEAD")
+        assert proc.returncode == 0, (
+            "anchored main commit must be an ancestor of HEAD")
 
 
 # ---------------------------------------------------------------------------
