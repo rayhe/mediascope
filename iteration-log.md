@@ -11,7 +11,7 @@
 - Commit hashes: main commit 8e544ee3f5be8d5d9fd0d8daf98b808a6edb18c2 (verified via git rev-parse); anchor followup 57d07ac4b042e3772d5f683a2830d6e8d3a6a76b (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 61/61 file tests green post-followup); log-hash followup updates this line (this commit).
 - Doc-sync: README stats table 45489/1215 -> 45550/1216 + test-file table row; ARCHITECTURE.md header stats + tree row; iteration-log #889 entry (this entry). Authoritative .venv pytest --collect-only this run: 45550 tests / 1216 files post-commit (delta +61/+1 = the #889 file exactly; system-python3 pytest gate undercounts due to missing deps, venv python authoritative per the #530 lesson).
 - Rotation guard: 885-889 window fifth leg D->E->A->B->C CLOSING the window (anchor patched post-commit per #565). The concurrent Type C #884 remains uncommitted in the working tree (profiles/competitor-entities.yaml); iteration numbers follow schedule, not commit order.
-- Push status (this run, Sep 21 2026 ~02:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+- Push status (this run, Sep 21 2026 ~02:0x PDT): main + anchor + log-hash pushed and ls-remote-verified together (remote tip 66d4512566972d18e5d11fac13c220615c4cb5e3); concurrent #884 change NOT pushed.
 
 ## #888 Type B: Karissa Bell (Engadget) Specs keynote live-blog genre replication of m722 (Sep 16) vs Meta Display privacy register
 - Rotation: Type B journalist cross-entity tracking (schedule: A/B/C/D/E cycle). FOURTH leg of the 885-889 window (D->E->A->B).
