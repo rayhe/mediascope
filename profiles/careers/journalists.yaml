@@ -20808,8 +20808,8 @@ karissa_bell:
   - AR
   - AI
   author_page: https://www.engadget.com/author/karissa-bell/
-  notes: 'Engadget wearables desk (author page https://www.engadget.com/author/karissa-bell/; Bell is the Engadget writer behind the corpus''s Aug 15 mechanism 113 investigative-methodology asymmetry and the Sep 2026 Meta Ray-Ban Display 10-day review). Type B #818 (Sep 17 2026): mechanism 722 same-writer, same-outlet register pair - Meta arm: Engadget "Meta Ray-Ban Display review: Chunky frames with impressive abilities" (Oct 2025; read first-hand this run, 224 rendered lines; first-person voice + "Karissa Bell for Engadget" photo credits, explicit byline header not surfaced in render, bounded absence per #503): "still a bit conflicted"; "The frames are extremely chunky and too wide for my face"; "I did feel a bit self-conscious at times wearing these in public"; dedicated "Privacy and safety" section - "I share a lot of these concerns", "these devices will inevitably scoop up more of our data over time", live translation could "surreptitiously eavesdrop on a conversation"; -0.10 illustrative. Snap arm: Engadget "Snap Specs Hands On: Standalone AR Glasses Are Here" (launch-week Sep 2026; read first-hand this run, 105 rendered lines; byline "Karissa Bell for Engadget" confirmed): "The $2,195 glasses are Snap''s biggest AR bet yet"; "I think there''s a lot to like"; "Specs are equipped with two cameras, which enable the hand-tracking controls" (two face-worn cameras, zero privacy terms across the whole piece); "Given Specs'' capabilities, I actually think they look okay"; 132g "almost twice as heavy as Meta''s display-enabled frames, but the weight felt more evenly distributed"; +0.30 illustrative. Illustrative Meta-minus-Snap delta -0.40: the privacy register activates on Meta''s single face camera but stays silent on Snap''s two face-worn cameras; the appearance register inverts with price (69g Meta frames "hideously nerdy", 132g Snap frames "look okay"). Same writer and same outlet, so the outlet-level financial-tie gradient is held constant - the design isolates editorial register. Strong confounders ranked first: genre asymmetry (10-day lived review vs 20-minute launch-day hands-on), product-class asymmetry (standalone AR wearable computer vs phone-tethered AI glasses), temporal gap (Oct 2025 vs Sep 2026). Counter-evidence: Bell praised Meta tech strongly; Bell DID flag Snap price and audience doubts; the Meta privacy section is genuinely sourced (policy changes, contractor reviews); hands-on genre boundary (no Bell-authored Meta hands-on exists, bounded absence); #753 Hardawar constancy and #723 Engadget control show same-outlet writers can be constant. EXTENDS mechanisms 113 and 605: fair in the product register, except where the product is a Meta face-worn camera, where the privacy register activates - while Snap''s two-camera face device gets none. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT a falsification-family member; ledger holds at 26; no analysis.json update; NOT artifact-grade.'
-  mechanism_ids: [722]
+  notes: 'Engadget wearables desk (author page https://www.engadget.com/author/karissa-bell/; Bell is the Engadget writer behind the corpus''s Aug 15 mechanism 113 investigative-methodology asymmetry and the Sep 2026 Meta Ray-Ban Display 10-day review). Type B #818 (Sep 17 2026): mechanism 722 same-writer, same-outlet register pair - Meta arm: Engadget "Meta Ray-Ban Display review: Chunky frames with impressive abilities" (Oct 2025; read first-hand this run, 224 rendered lines; first-person voice + "Karissa Bell for Engadget" photo credits, explicit byline header not surfaced in render, bounded absence per #503): "still a bit conflicted"; "The frames are extremely chunky and too wide for my face"; "I did feel a bit self-conscious at times wearing these in public"; dedicated "Privacy and safety" section - "I share a lot of these concerns", "these devices will inevitably scoop up more of our data over time", live translation could "surreptitiously eavesdrop on a conversation"; -0.10 illustrative. Snap arm: Engadget "Snap Specs Hands On: Standalone AR Glasses Are Here" (launch-week Sep 2026; read first-hand this run, 105 rendered lines; byline "Karissa Bell for Engadget" confirmed): "The $2,195 glasses are Snap''s biggest AR bet yet"; "I think there''s a lot to like"; "Specs are equipped with two cameras, which enable the hand-tracking controls" (two face-worn cameras, zero privacy terms across the whole piece); "Given Specs'' capabilities, I actually think they look okay"; 132g "almost twice as heavy as Meta''s display-enabled frames, but the weight felt more evenly distributed"; +0.30 illustrative. Illustrative Meta-minus-Snap delta -0.40: the privacy register activates on Meta''s single face camera but stays silent on Snap''s two face-worn cameras; the appearance register inverts with price (69g Meta frames "hideously nerdy", 132g Snap frames "look okay"). Same writer and same outlet, so the outlet-level financial-tie gradient is held constant - the design isolates editorial register. Strong confounders ranked first: genre asymmetry (10-day lived review vs 20-minute launch-day hands-on), product-class asymmetry (standalone AR wearable computer vs phone-tethered AI glasses), temporal gap (Oct 2025 vs Sep 2026). Counter-evidence: Bell praised Meta tech strongly; Bell DID flag Snap price and audience doubts; the Meta privacy section is genuinely sourced (policy changes, contractor reviews); hands-on genre boundary (no Bell-authored Meta hands-on exists, bounded absence); #753 Hardawar constancy and #723 Engadget control show same-outlet writers can be constant. EXTENDS mechanisms 113 and 605: fair in the product register, except where the product is a Meta face-worn camera, where the privacy register activates - while Snap''s two-camera face device gets none. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT a falsification-family member; ledger holds at 26; no analysis.json update; NOT artifact-grade. Type B #888 (Sep 21 2026): mechanism 764 genre replication of mechanism 722 - Bell''s Sep 16 2026 Snap Specs launch live blog (byline verified this run; Cherlynn Low "Screenshot by" credit is photo-only) carries zero privacy-alarm vocabulary for Snap''s four-camera glasses and relays Spiegel''s anti-Meta wristband-dig framing uncritically, vs the adversarial privacy register on Meta''s Display review; illustrative Meta-minus-Snap delta -0.35; directionally_supported_not_proven; NOT a falsification-family member; ledger holds at 29.'
+  mechanism_ids: [722, 764]
   source_urls:
   - https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
   - https://www.engadget.com/2260675/snap-specs-hands-on-standalone-ar-glasses-are-here/
@@ -20889,6 +20889,83 @@ karissa_bell:
       - '#723 (Engadget ambient-listening control)'
       - '#668'
       - '#593'
+    type_b_888_karissa_bell_engadget_specs_keynote_liveblog_vs_meta_display_privacy_register:
+      block_key: 'type_b_888_karissa_bell_engadget_specs_keynote_liveblog_vs_meta_display_privacy_register'
+      mechanism_id: 764
+      iteration: 888
+      type: B
+      date: '2026-09-21 01:00 PDT'
+      goal_id: 'goal_54093bda4145'
+      test_file: 'tests/test_type_b_888_karissa_bell_engadget_specs_keynote_liveblog_vs_meta_display_privacy_register_sep21_1am.py'
+      design: 'Type B #888 (rotation window 885-889, FOURTH leg D->E->A->B): Karissa Bell (Engadget senior reporter) - genre replication of mechanism 722. META ARM (reused from mechanism 722 with disclosure): Bell''s Oct 2025 Meta Ray-Ban Display review - dedicated "Privacy and safety" section, adversarial register on Meta''s single face-worn camera; MANUAL ILLUSTRATIVE -0.10. SNAP ARM (new this run): Bell''s Sep 16 2026 Snap Specs launch live blog, same day as the mechanism 722 hands-on - product-forward relay of the Spiegel keynote, zero privacy-alarm vocabulary for Snap''s four-camera glasses, uncritical transmission of Spiegel''s competitive anti-Meta framing; MANUAL ILLUSTRATIVE +0.25. Illustrative delta (Meta minus Snap) -0.35. Same writer, same outlet; the Snap-side temporal control is tighter than mechanism 722 (same day, same event, second genre).'
+      finding: 'The mechanism 722 register asymmetry replicates in the live-blog genre: Bell''s privacy/alarm register activates on Meta''s face-worn camera (dedicated section, "surreptitiously eavesdrop") but stays silent on Snap''s four-camera Specs in the launch live blog, which instead relays Spiegel''s anti-Meta competitive framing ("nothing on his wrist (another subtle dig at Meta which used a wristband controller for its display glasses)") without scrutiny. The adversarial-Meta beat reporter serves as an uncritical conduit for anti-Meta competitive framing during Snap''s launch.'
+      meta_arm:
+        title: 'Meta Ray-Ban Display review: Chunky frames with impressive abilities'
+        url: https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
+        date: '2025-10'
+        author_byline: 'Karissa Bell (reused arm from mechanism 722; first-person voice + "Karissa Bell for Engadget" photo credits)'
+        read: 'first-hand in #818 (224 rendered lines); reused this run with disclosure, not re-read'
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        privacy_register: 'Dedicated "Privacy and safety" section - "I share a lot of these concerns", "these devices will inevitably scoop up more of our data over time", live translation could "surreptitiously eavesdrop on a conversation"'
+        key_quotes:
+        - 'still a bit conflicted'
+        - 'I share a lot of these concerns'
+        - 'these devices will inevitably scoop up more of our data over time'
+        - 'use live translation to surreptitiously eavesdrop on a conversation'
+        - 'taking photos is a bit less obvious'
+        - 'significant milestone for smart glasses overall'
+      snap_arm:
+        title: 'Snap Specs launch 2026: Live updates from CEO Evan Spiegel''s keynote'
+        url: https://www.engadget.com/2260114/snap-specs-launch-live-blog-evan-spiegel-keynote/
+        date: '2026-09-16'
+        author_byline: 'Karissa Bell (byline verified this run: Engadget''s own author page lists the live blog "By Karissa Bell"; Muck Rack Karissa Bell page lists it as her article; the "Screenshot by Cherlynn Low" credit in the piece is a photo credit - Low shot photos at the event while Bell wrote)'
+        read: 'excerpt-bounded this run (multiple search-excerpt passages; 0 browser.open this run per the turn constraint, per #503)'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        privacy_vocabulary_count: 0
+        key_quotes:
+        - 'one of the most ambitious visions for standalone AR glasses to date'
+        - 'Specs are part of an intelligent system called Specs Intelligence'
+        - 'nothing on his wrist (another subtle dig at Meta which used a wristband controller for its display glasses)'
+        - 'He''s certainly *saying* all the right things...'
+        - 'I have been to a lot of product launches and keynotes, but I don''t think I''ve ever seen anything quite like that'
+        evidence_tier: 'EXCERPT-TIER: Engadget original NOT first-hand read this run (0 browser.open this run; tool failure, not retried per the turn constraint); register coded from multiple bounded search-excerpt passages per #503; no zero-coverage claims per #492'
+      asymmetry_scorer_result_illustrative:
+        target_entity: 'Meta'
+        reference_entity: 'Snap'
+        target_avg: -0.10
+        reference_avg: 0.25
+        illustrative_delta_meta_minus_snap: -0.35
+        delta_calc: '(-0.10) - (0.25) = -0.35'
+        two_entity_band: [-0.10, 0.25]
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        engine: 'engine NOT run'
+        correlation_not_causation: true
+        artifact_grade: 'NOT artifact-grade'
+      confounders:
+      - '[STRONG] Genre asymmetry: 10-day lived Meta review vs real-time CEO-keynote live blog. Live blogs are structurally relay-heavy and never carry privacy sections - the strongest mechanical confound, replicated from mechanism 722.'
+      - '[STRONG] Reused Meta arm: the Oct 2025 Display review predates the Sep 2026 live blog by 11 months; the editorial context shifted (post-backlash era, Luna news cycle).'
+      - '[STRONG] Product-class asymmetry: standalone AR wearable computer vs phone-tethered AI glasses.'
+      - '[MODERATE] n=1/n=1, hypothesis-generating only; same-writer same-outlet design holds the outlet-level financial-tie gradient constant.'
+      - '[MODERATE] Live blog excerpt-bounded this run (0 browser.open); register coding rests on multiple bounded search-excerpt passages per #503.'
+      - '[MODERATE] Bell shows mild skepticism of Spiegel ("He''s certainly *saying* all the right things...") - not pure stenography; bounds the conduit read.'
+      - '[WEAK] Newsroom division of labor (Low shooting photos at the event while Bell live-blogged) does not affect the byline.'
+      - '[WEAK] The wristband-dig relay could be read as neutral keynote color rather than competitive amplification.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Bell praised Meta tech strongly in the Display review - "significant milestone for smart glasses overall" - not a hit piece.'
+      - 'COUNTEREVIDENCE: Bell flagged Snap''s price and audience doubts in the hands-on and notes the "oversized design" in the live blog - the product register is not pure puff.'
+      - 'COUNTEREVIDENCE: The Meta privacy section is genuinely sourced (policy changes, contractor reviews) - adversarial register applied to documented facts.'
+      - 'COUNTEREVIDENCE: #753 Hardawar constancy and #723 Engadget control show same-outlet writers can be constant - the asymmetry is writer-level, not outlet-level.'
+      connects_to: [113, 722, 605, 753, 723, 150]
+      verdict: 'directionally_supported_not_proven'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      falsification_family: 'NOT a falsification-family member (register documentation and genre replication of mechanism 722, not a uniform-direction prediction under test); ledger holds at 29'
+      ledger: 'Ledger holds at 29 - no new falsification-family member this run. THIRTIETH remains the negative guard.'
+      research_method: 'Journalist selection across the run: pre-compaction research ruled out the Mashable Specs mirror (byline unidentified across repeated searches), Jay Peters (mechanism 731), Dominic Preston (mechanism 734), James Pero (mechanism 746), Lucas Ropek (mechanisms 728/749), Ina Fried (mechanism 638), Lance Ulanoff (mechanism 195), Mariella Moon (mechanism 761, #883); post-compaction 4 browser.search calls verified the Sep 16 live-blog byline as Karissa Bell (Engadget author page + Muck Rack; Cherlynn Low photo-credit only) and surfaced the ZuckOff detection-app author (Ana Maria Constantin, The Next Web - no clean cross-entity pair, ruled out). The planned Cherlynn Low mechanism-150 extension was ABANDONED on byline verification. Novelty pre-commit: zero test_type_b_888 files; no Type B #888 in git log; Live-blog URL (2260114) zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit; max numeric mechanism_id 763 pre-commit; zero underscore-form 764 keys per #715. 0 browser.open this run (tool failure early in the run; not retried per the turn constraint). All URLs copied verbatim from Full-URL search listings. No URL construction. Register excerpt-bounded per #503. No zero-coverage claims per the #492 rule.'
 jason_england:
   name: Jason England
   current_role: Managing Editor, Computing
