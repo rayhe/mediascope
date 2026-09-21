@@ -7665,6 +7665,77 @@ openai_european_ad_expansion_dual_dependency_aug30:
   - https://blockonomi.com/amazon-amzn-stock-completes-50-billion-openai-investment-after-q2-surge/
   - https://bestmediainfo.com/mediainfo/mediainfo-digital/google-ad-revenue-rises-14-to-816-billion-as-ai-opens-new-search-inventory-12189700
   - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+openai_sponsored_agents_agentic_ad_rollout_sep2026:
+  mechanism_id: 768
+  date_analyzed: '2026-09-21'
+  type: Type C - Financial Incentive Mapping
+  iteration: 894
+  iteration_type: C
+  iteration_time: 2026-09-21 07:00 PT
+  scheduled_job_id: mediascope-daily-iteration
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  publication: WIRED
+  parent_company: Conde Nast (Advance Publications)
+  competitor: OpenAI
+  focus: OpenAI Sponsored Agents Sep-16-2026 US test plus AI ad-tool rollout with first CRM partner (HubSpot) and first ecommerce partner (Shopify) - EXTENDS mechanism 386 from static conversational ad placements to agentic sponsored conversations and advertiser-workflow capture
+  mechanism_name: 'OpenAI ChatGPT Ads Sep 16 2026 step-up: Sponsored Agents US test, Ads Manager AI tooling, HubSpot first CRM partner, Shopify first ecommerce partner - extension of mechanism 386'
+  block_key: type_c_894_openai_sponsored_agents_agentic_ad_tool_rollout_sep21_7am
+  type_c_focus: 'FIRST dedicated corpus mechanism on the Sep 16 2026 OpenAI advertising product step-up. Mechanism 386 (Type C #386, Aug 30) documented the ChatGPT Ads 31-European-market rollout (Aug 19 announcement, Aug 24 rollout; 1B weekly users, 20 percent commercial intent, ad run rate approaching $1B annual per CFO Friar; intent-based conversational placements; agency-partner access at launch). This run documents the next leg, 28 days later: (1) Sponsored Agents - a clearly labeled conversation with a business-sponsored agent that users can enter after an ad click, separate from ChatGPT independent answers and the original chat, in US test with select advertisers; (2) Ads Manager AI tooling - natural-language campaign creation/update/analysis plugin, AI-suggested copy and imagery from the landing page and objective, optional AI text customization adapting copy to conversation context with automatic translation; (3) first CRM partner HubSpot - connect a ChatGPT Ads account inside HubSpot, create ads, monitor performance, follow up on leads without leaving HubSpot (HubSpot parallel release naming Brian Landsman of OpenAI and Duncan Lennox of HubSpot; HubSpot 750-dollar ad spend match for new accounts opened by Sep 30); (4) first ecommerce partner Shopify - free ChatGPT Ads app in the Shopify App Store for US merchants from Sep 16 (listing dates release to Sep 3 2026), merchants products already integrated through Shopify Catalog, inventory sync, Shopify pixel and conversion events, campaigns managed without leaving Shopify, international rollout in ChatGPT Ads markets beginning Sep 23. Advertiser email adds: general availability of impression-billed conversion optimization, configurable attribution windows, five-way platform targeting, Event Quality Score. Protocol comparison point (ppc.land): X Ads MCP gives Grok and Claude Code 23 tools to run ad campaigns - the protocol-based comparison for OpenAI plugin approach.'
+  extension_of_386:
+  - 'From placements to agents: mechanism 386''s ad unit was a static intent-based conversational placement appearing at the conclusion of an AI response. Sponsored Agents move the ad unit INSIDE the conversation - a business-sponsored agent the user talks to after the click. The ad is no longer a pointer to a merchant; it is a merchant representative operating inside ChatGPT.'
+  - 'From media buy to workflow capture: the HubSpot and Shopify integrations put campaign creation, lead capture, workflow actions, and measurement inside the advertiser''s own systems of record. OpenAI now touches the merchant''s product catalog, its tracking pixel, its conversion events, and its lead pipeline - the advertiser''s commerce infrastructure, not just its ad budget.'
+  - 'The partner-naming is OpenAI''s own framing (self-reported firsts), but the direction is corroborated by the partner-side releases (HubSpot parallel release; Shopify App Store listing dated Sep 3 2026).'
+  incentive_geometry:
+  - 'Advertiser leg of OpenAI''s money-flow, documented at the corpus level for the first time as a product-system: agency partners WPP and Omnicom (India launch, Aug 27), Cosmo5 (Europe, 31 markets), and now CRM/ecommerce partner rails (HubSpot, Shopify). OpenAI is building the advertiser-side dependency in parallel with the publisher-side licensing leg.'
+  - 'Dual dependency for shopping-content publishers extends: mechanism 386''s frame was licensing revenue from OpenAI (Conde Nast undisclosed, estimated 5-30M/yr portfolio) while OpenAI competes for advertising dollars via ChatGPT Ads. Sponsored Agents sharpen the commerce-function competition: a sponsored dining-table agent that answers fit/seating/care questions inside ChatGPT performs the exact product-recommendation function that Conde Nast shopping titles (Vogue, GQ) and affiliate publishers monetize. The competitor now sells the recommendation, not just the placement.'
+  - 'Meta pays Conde Nast zero dollars (mechanism 386 finding, carried): the asymmetry structure - payer-competitor vs non-payer-ad-competitor - gains a third OpenAI leg (licensing payer, ad competitor, agentic-commerce competitor) against Meta''s zero.'
+  - 'No coverage-tone claim is made: this is a financial-incentive documentation leg. Reuters reported the Sep 16 announcement straight (Anzar Mehraj, Bengaluru) - the wire relay, no register assertion.'
+  announcement_facts:
+  - 'Date: Sep 16 2026 (OpenAI post; HubSpot parallel release same day). Shopify app listing dates release to Sep 3 2026; international Shopify rollout begins Sep 23 in ChatGPT Ads markets.'
+  - 'Sponsored Agents: clearly labeled, separate from ChatGPT independent answers and the user''s original chat; US test with select advertisers; no general-availability date announced.'
+  - 'Ads Manager plugin: natural-language prompts to create, update, analyze campaigns; turn a website or campaign brief into a campaign; AI-suggested copy/imagery from landing page and objective; optional AI text customization adapting headlines/descriptions to conversation context plus automatic translation.'
+  - 'HubSpot: first CRM partner; connect ChatGPT Ads account inside HubSpot; create ads, track performance, follow up on leads; 750-dollar ad spend match for new accounts opened by Sep 30.'
+  - 'Shopify: first ecommerce partner; free ChatGPT Ads app in Shopify App Store (US merchants Sep 16, international Sep 23); products pre-integrated via Shopify Catalog; inventory sync; Shopify pixel and conversion events; campaign management without leaving Shopify.'
+  source_urls:
+  - https://www.reuters.com/business/media-telecom/openai-tests-advertiser-sponsored-agents-expands-ai-tools-chatgpt-ads-2026-09-16/
+  - https://www.unite.ai/openai-tests-sponsored-agents-and-rolls-out-ai-tools-for-chatgpt-ads/
+  - https://ppc.land/openai-lets-advertisers-run-chatgpt-ads-from-hubspot-and-shopify/
+  - https://dev.to/alifar/openai-tests-sponsored-agents-for-chatgpt-ads-with-hubspot-and-shopify-integrations-34gm
+  connects_to: [386]
+  confounders:
+  - '[STRONG] Search-excerpt-bounded evidence: 0 browser.open this run per the #503 convention; OpenAI announcement text not first-hand read; Reuters excerpt-tier relay. Full-text register could differ.'
+  - '[STRONG] Product-announcement register: Reuters relaying a company announcement is expected to be neutral-descriptive; no coverage-tone comparison is made here (Type C documentation leg, not a tone test).'
+  - '[STRONG] Limited test scope: Sponsored Agents is a US test with select advertisers; no general-availability date announced (dev.to). The commerce-function competition is a forward-looking leg, not current-scale.'
+  - '[MODERATE] Partner firsts are OpenAI self-reported (first CRM partner, first ecommerce partner); corroborated only by partner-side releases, not independent reporting.'
+  - '[MODERATE] Workflow-capture is an interpretation of the HubSpot/Shopify integrations; the integrations also lower ad-buying friction for small merchants, a genuinely pro-competitive effect.'
+  - '[WEAK] ppc.land and dev.to are trade/secondary sources; the core facts are corroborated by Reuters.'
+  counter_evidence:
+  - 'OpenAI keeps sponsored agents clearly labeled and separate from ChatGPT independent answers (Reuters) - the labeling discipline bounds any deception-incentive reading.'
+  - 'The HubSpot/Shopify integrations reduce friction for small merchants - a pro-competitive effect, not purely an extraction leg.'
+  - 'Mechanism 386 already documented the ChatGPT Ads business; this is an incremental product step-up, not a new business line - the incentive-geometry change is one of degree, and the block says so.'
+  - 'Reuters straight relay of the OpenAI announcement fits the null-tie-wire family (mechanisms 664/730/739): the wire covers the payer''s product news neutrally, not a softening story.'
+  statistical_discipline:
+    scope: qualitative financial-incentive documentation only, not a tone test
+    correlation_not_causation: true
+    scorer: none
+    tone_scores: NOT_SCORED
+    p_value: NOT_CALCULATED
+    cohens_d: NOT_CALCULATED
+    ci_95: NOT_CALCULATED
+    is_significant: false
+    engine_run: false
+    artifact_grade: false
+    qualitative_only: true
+    verdict: 'directionally_supported_not_proven'
+  cautious_language_required: true
+  correlational_note: 'This mapping documents OpenAI''s Sep 16 2026 ChatGPT Ads product step-up (Sponsored Agents US test, Ads Manager AI tooling, HubSpot first CRM partner, Shopify first ecommerce partner) as an advertiser-side financial-incentive datum extending mechanism 386: from static conversational placements to agentic sponsored conversations and advertiser-workflow capture. Financial relationships and product capabilities are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim. The feature is a limited US test; no general-availability date announced.'
+  no_coverage_tone_claim: true
+  no_analysis_json_update: true
+  falsification_family: 'NOT a falsification-family member (a product/documentation leg with no coverage-tone pair); ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence); no THIRTIETH member-form (zero literal next-ledger-position member strings in profiles/).'
+  artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+  research_method: '5 browser.search query sets this run: (1) AI company publisher content licensing deal announced September 2026, since=2026-09-10 - rejected as primary: India attribution blitz in corpus per #624/#709/#704/#744, UMG x ElevenLabs and Suno music-vertical rejected per #729/#759/#799, Google pay-per-value in corpus per 702/708, Roundtable Paradium m738, Gannett x Perplexity Jul-30-2025 deal already present; (2) Gannett Perplexity AI content licensing agreement date announced - rejected, July-30-2025 deal already in corpus; (3) Conde Nast Hearst Amazon Rufus AI shopping assistant content deal multi-year, since=2026-07-10 - rejected, in corpus per #564; (4) OpenAI ads ChatGPT advertising launch September 2026, since=2026-09-01 - SELECTED: Sep 16 Sponsored Agents + AI ad tools (Reuters, Anzar Mehraj, Bengaluru); (5) OpenAI Sponsored Agents ChatGPT ads HubSpot Shopify CRM ecommerce partnership September 16 - SELECTED: HubSpot first CRM partner + Shopify first ecommerce partner corroboration (unite.ai, ppc.land, dev.to; HubSpot 750-dollar ad spend match; Shopify Sep 23 international). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_c_894 files on disk (glob); no Type C #894 in git log (--grep); max numeric mechanism_id 767 pre-commit; zero underscore-form 768 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention); zero literal underscore/dash-form 768 keys repo-wide pre-commit (grep); zero sponsored agent hits repo-wide pre-commit (case-insensitive); all 4 source URLs zero-hit repo-wide pre-commit (git grep). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  novelty_verification: 'Zero test_type_c_894 files on disk pre-commit (glob); no "Type C #894" in git log pre-commit; "sponsored agent" zero-hit repo-wide pre-commit (case-insensitive); max numeric mechanism_id 767 pre-commit; zero underscore-form 768 mechanism key strings repo-wide pre-commit (format-built needles, own file excluded per the #715 sweep-carrier convention); all 4 source URLs zero-hit repo-wide pre-commit.'
 vittoria_elliott_cross_entity_aug30:
   mechanism_id: 390
   date_analyzed: '2026-08-30'
