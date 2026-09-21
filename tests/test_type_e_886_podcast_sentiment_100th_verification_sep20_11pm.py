@@ -26,6 +26,8 @@ THIS_FILE = os.path.basename(__file__)
 ITERATION = 886
 TYPE_LETTER = "E"
 RUN_PDT = "2026-09-20 23:00 PDT"
+OWN_BASENAME = os.path.basename(__file__)
+ANCHORED_SHA = "d4618aae2fd932b9547b90b328adf2e7ce2eedbd"
 
 
 def _git(args):
@@ -53,8 +55,29 @@ def _exclude(pycache=True):
 class TestNoveltyAnchorTypeE886:
     @pytest.mark.anchor
     def test_anchor_sha_patched_post_commit(self):
-        text = _read(__file__)
-        assert "ANCHORED_SHA" in text
+        # No #886 main commit exists pre-commit; the anchor test pins
+        # the main commit SHA once the followup patches ANCHORED_SHA.
+        # Deselected pre-commit per #565; patched green in the anchor
+        # followup.
+        result = subprocess.run(
+            ["git", "log", "--format=%H %s", "--", "tests/" + OWN_BASENAME],
+            cwd=REPO,
+            capture_output=True,
+            text=True,
+        )
+        assert result.returncode == 0
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type E #886" in line and "followup" not in line.lower()
+        ]
+        assert ANCHORED_SHA not in (
+            "PATCH_ME_IN_FOLLOWUP",
+            "POST_COMMIT_ANCHORED",
+            "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565",
+        ) or mains == []
+        if mains:
+            assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
     @pytest.mark.anchor
     def test_exactly_one_type_e_886_file_on_disk(self):
@@ -83,9 +106,24 @@ class TestRotationGuard885_889Window:
 
     @pytest.mark.rotation
     def test_no_concurrent_884_commit_asserted(self):
-        # The concurrent Type C #884 run's commit remains its own; assert only
-        # that we do not claim its entry.
-        assert _git(["log", "--grep", "Type C #884", "--oneline"]).stdout.strip() == ""
+        # The concurrent Type C #884 run commits after this run; its
+        # main commit is absent from git history. Match only commit
+        # SUBJECTS: other commits' bodies may mention #884 (this run's
+        # own concurrency note does). Iteration numbers follow the
+        # rotation schedule, not commit order, so the subject sequence
+        # must read 886 -> 885 -> 883 with the in-flight 884 skipped.
+        result = subprocess.run(
+            ["git", "log", "--format=%s", "-25"], cwd=REPO,
+            capture_output=True, text=True,
+        )
+        assert result.returncode == 0
+        nums = []
+        for line in result.stdout.splitlines():
+            m = re.match(r"Type [A-E] #(\d+)", line)
+            if m and (not nums or nums[-1] != m.group(1)):
+                nums.append(m.group(1))
+        assert nums[:3] == ["886", "885", "883"], nums[:3]
+        assert "884" not in nums
 
 
 # --------------------------------------------------------------------------
