@@ -123,10 +123,14 @@ class TestNovelty892:
 
     def test_type_a_892_main_commit_unique_and_anchored(self):
         # DESELECTED pre-commit (per #565): the commit does not exist yet.
+        # The push-status followup (per the #864 convention, excluded from
+        # rotation subjects by test_window_is_890_894_third_leg) is not a
+        # main commit and is excluded here too.
         proc = _git("log", "--format=%H %s", "--grep", "Type A #892")
         mains = [ln for ln in proc.stdout.splitlines()
                  if re.search(r"Type A #892(?::| )", ln)
-                 and "anchor followup" not in ln and "log-hash followup" not in ln]
+                 and "anchor followup" not in ln and "log-hash followup" not in ln
+                 and "push-status followup" not in ln]
         assert len(mains) == 1
         assert ANCHORED_SHA not in ("PATCH_ME_IN_FOLLOWUP", "POST_COMMIT_ANCHORED",
                                     "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565")
