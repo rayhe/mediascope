@@ -26749,6 +26749,108 @@ cross_publication_findings:
     connects_to:
     - 664
     - 730
+  bloomberg_anthropic_sep2026_profitability_ipo_momentum_vs_meta_layoffs_partner_clash_m334_temporal_extension_sep21_2026:
+    finding_type: cross_publication_coverage_asymmetry
+    publication: Bloomberg
+    competitor: Anthropic
+    comparator_entity: Meta
+    rotation_type: A
+    iteration: 902
+    mechanism_id: 772
+    discovery_date: '2026-09-21'
+    finding: 'Bloomberg (LP) September 2026 EXTENDS mechanism 334''s upstream-narrative-originator pattern into the pre-IPO window: two Bloomberg-reported financial scoops frame Anthropic with profitability/momentum register while Bloomberg''s Meta coverage in the corpus period is routed through layoffs and partner-conflict registers. Anthropic arms: Sep 13, 2026 - Bloomberg reported Anthropic expects a second straight quarter of positive adjusted operating income, Q2 2026 revenue exceeding $11.5B (roughly 14x the $787M of Q2 2025, more than double the $4.73B of Q1 2026), disclosed gross margins above 80% (before revenue-sharing with distribution partners including Amazon and before training costs), and an IPO target of roughly $2T valuation with up to $100B raised; Nvidia separately in talks to anchor the IPO with up to $10B. MANUAL ILLUSTRATIVE +0.45. Sep 19, 2026 - Bloomberg reported Anthropic''s annualized revenue to top $100B in 2026, run rate $65B by end of July (up from $9B end of 2025), Nasdaq debut as soon as November, while noting the firm is ''confronting heightened public anxiety about AI''s potential to cause catastrophic harms'' and that Amodei kicked off fresh slowdown calls. MANUAL ILLUSTRATIVE +0.35. Meta arms: Jan 13, 2026 - Bloomberg News reported Meta beginning to cut more than 1,000 Reality Labs jobs (roughly 10% of ~15,000) to redirect resources from VR/metaverse toward AI wearables, with Reality Labs having burned more than $60B since 2020. MANUAL ILLUSTRATIVE -0.35. Early 2026 - Bloomberg reported Meta and EssilorLuxottica ''clashed internally over pricing and go-to-market strategy'': Meta pushed aggressive price cuts and promotions (reportedly including Black Friday discounts EssilorLuxottica rejected); EssilorLuxottica''s adjusted gross margin fell 2.6pp to 60.9% in 2025 with smart-glasses electronics the primary driver. MANUAL ILLUSTRATIVE -0.30. Anthropic arm avg +0.40; Meta arm avg -0.325; illustrative delta (Anthropic minus Meta) +0.725. The financial-incentive leg is a documented NULL-tie: no Bloomberg-Anthropic content-licensing deal is mapped (bounded absence, not a proven zero); Bloomberg LP''s revenue model is Bloomberg Professional terminal subscriptions, not publisher-style programmatic ad dependency, so the payer-softening mechanism has no mapped payer here. The incentive-context leg is Bloomberg''s financial-scoop franchise: the Anthropic IPO ($2T target, up to $100B raise, Morgan Stanley/Goldman Sachs/JPMorgan/Citi as joint underwriters, Nvidia anchor talks) is a terminal-audience story the newsroom originated the scoops for (m334: Nscale $45B, credit facility >$10B, Broadcom $100B AI debt, $900B valuation, IPO timeline). The register asymmetry is desk-type-routed (financial-scoop desk vs labor/partner coverage), so no payer prediction is under test. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 29. Correlation is not causation.'
+    anthropic_arms:
+    - piece: 'Anthropic profitable again on $11.5B quarter; second straight positive adjusted operating quarter expected'
+      date: '2026-09-13'
+      source_routing: bloomberg_original_secondary_attested
+      register: profitability_momentum_ipo_runway
+      key_language:
+      - 'Expects a second straight quarter of positive adjusted operating income'
+      - 'Q2 2026 revenue exceeding $11.5 billion, roughly 14 times the $787 million in the same quarter of 2025'
+      - 'Disclosed gross margins above 80%, before revenue-sharing with distribution partners like Amazon and before training costs'
+      - 'Planned Nasdaq IPO targeting a roughly $2 trillion valuation and up to $100 billion raised'
+      tone_illustrative: 0.45
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt register reads (0 browser.open this turn per developer constraint; Bloomberg original paywalled, secondary attestation); illustrative only'
+      secondary_attribution: 'temperature2.com Sep-14 desk note (''Anthropic told its shareholders it expects a second straight quarter of positive adjusted operating income... according to internal documents the Financial Times reviewed and Bloomberg reported on September 13, 2026'')'
+      source_url: https://temperature2.com/p/2026-09-14-anthropic-second-profitable-quarter-11-5-billion/
+    - piece: 'Anthropic annualized revenue to top $100B in 2026'
+      date: '2026-09-19'
+      source_routing: bloomberg_original_mirror_attested
+      register: growth_momentum_with_caveat
+      key_language:
+      - 'Expected to generate more than $100 billion in annualised revenue this year'
+      - 'Revenue run rate hit $65 billion by the end of July, up from $9 billion at the end of 2025'
+      - 'Confronting heightened public anxiety about AI''s potential to cause catastrophic harms'
+      - 'Anthropic Chief Executive Officer Dario Amodei kicked off a fresh wave of calls from top AI firms to slow down the progress of future AI models'
+      tone_illustrative: 0.35
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt register reads (0 browser.open this turn per developer constraint; Bloomberg original paywalled, mirror attested); illustrative only'
+      secondary_attribution: 'The Hindu BusinessLine amp mirror, byline ''By Bloomberg'', updated September 19, 2026'
+      source_url: https://www.thehindubusinessline.com/info-tech/anthropics-annualised-revenue-to-top-100-billion-in-2026/article71483703.ece/amp/
+    meta_arms:
+    - piece: 'Meta Begins Job Cuts as It Shifts From Metaverse to AI Devices'
+      date: '2026-01-13'
+      source_routing: bloomberg_original_relayed
+      register: layoffs_cost_burn
+      key_language:
+      - 'Beginning to cut more than 1,000 jobs from the Reality Labs division'
+      - 'Part of a plan to redirect resources from virtual reality and metaverse products toward AI wearables'
+      - 'Reality Labs has burned more than $60 billion since 2020'
+      tone_illustrative: -0.35
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt register reads; illustrative only'
+      source_url: https://news.bloomberglaw.com/california-brief/meta-begins-job-cuts-as-it-shifts-from-metaverse-to-ai-devices
+    - piece: 'Meta and EssilorLuxottica clashed internally over pricing and go-to-market strategy'
+      date: '2026-02'
+      source_routing: bloomberg_original_secondary_attested
+      register: internal_partner_conflict
+      key_language:
+      - 'Meta and EssilorLuxottica have clashed internally over pricing and go-to-market strategy'
+      - 'Meta pushed aggressive price cuts and promotions, reportedly including Black Friday discounts EssilorLuxottica rejected'
+      - 'EssilorLuxottica adjusted gross margin fell 2.6 percentage points to 60.9% in 2025, with smart glasses electronics cited as the primary driver'
+      tone_illustrative: -0.30
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from secondary-attested excerpt reads; illustrative only'
+      secondary_attribution: 'cryptoaimeta.com Meta Smart Glasses research note (''Bloomberg reported in early 2026 that Meta and EssilorLuxottica have clashed internally over pricing and go-to-market strategy'')'
+      source_url: https://cryptoaimeta.com/meta-smart-glasses/
+    asymmetry_scorer:
+      anthropic_arm_tones: [0.45, 0.35]
+      anthropic_arm_avg: 0.40
+      meta_arm_tones: [-0.35, -0.30]
+      meta_arm_avg: -0.325
+      illustrative_delta_anthropic_minus_meta: 0.725
+      delta_calc: '((0.45 + 0.35) / 2) - ((-0.35 + -0.30) / 2) = 0.40 + 0.325 = +0.725'
+      delta_interpretation: 'same-publication register gradient: Bloomberg''s Sep 13-19 2026 Anthropic arms are profitability/IPO-momentum routed (+0.40 avg) while Bloomberg''s Meta arms are layoffs/partner-conflict routed (-0.325 avg); the 0.725 illustrative spread continues mechanism 334''s documented upstream-narrative-originator register split into the pre-IPO window'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_small_n_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open this turn per developer constraint); tones are illustrative only'
+      verdict: 'Within-publication register gradient documented, not proven: Bloomberg''s Anthropic arms are financial-scoop-desk routed with profitability/momentum register (+0.40) while its Meta arms are layoffs/partner-coverage routed (-0.325). The gradient EXTENDS mechanism 334''s Aug-26 upstream-narrative-originator finding to Sep 13-19 2026 pre-IPO coverage. The financial-incentive leg is a documented NULL-tie (no mapped Bloomberg-Anthropic content deal; Bloomberg LP''s terminal-subscription model has no payer-softening vector of the kind under test elsewhere), so this mechanism is register documentation and temporal replication, NOT a falsification-family member (no uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      bloomberg_anthropic_content_deal: 'No documented Bloomberg-Anthropic content-licensing deal (bounded absence, not a proven zero); the mechanism does not assert one'
+      bloomberg_revenue_model: 'Bloomberg LP revenue model is Bloomberg Professional terminal subscriptions, not publisher-style programmatic ad dependency - no mapped AI-lab payer tie of the payer-softening kind'
+      audience_incentive_context: 'Anthropic IPO ($2T target, up to $100B raise, Morgan Stanley/Goldman Sachs/JPMorgan/Citi joint underwriters per Bloomberg''s Sep 3 credit-line reporting, Nvidia up-to-$10B anchor talks) is a terminal-audience franchise story; documented as incentive context, NOT a causal claim'
+      m334_linkage: 'Extends mechanism 334 (Bloomberg LP upstream narrative originator, Aug 26 2026): Nscale $45B, credit facility >$10B, Broadcom $100B AI debt, $900B valuation, IPO timeline - the profitability/IPO-momentum arms continue the same register six days after m334''s arms'
+      prediction: 'NULL-tie financial-model documentation: no payer prediction is under test; the register asymmetry is desk-type-routed'
+    confounders:
+    - 'STRONG: Secondary-attested Bloomberg originals - bloomberg.com is paywalled and browser.open refused this turn; all four arms rest on secondary/mirror excerpt reads per #503, so a full-text read could reveal interrogating detail the excerpts hide.'
+    - 'STRONG: Story-type mismatch - financial scoops vs labor/partner stories; the register follows the story type (earnings/IPO beat vs layoffs beat), not necessarily the entity.'
+    - 'STRONG: Temporal skew - Meta arms are Jan/early 2026 while Anthropic arms are Sep 13-19 2026; the IPO window inflates momentum framing, and Meta''s Sep-2026 arms (French criminal probe, German court liability via Reuters) are not Bloomberg-routed, so the cross-publication comparator is avoided by design.'
+    - 'MODERATE: The Anthropic financial facts are genuinely positive (profitable quarters, $65B run rate), so a momentum register is event-driven, not necessarily entity-driven.'
+    - 'MODERATE: Relay-source fidelity - temperature2.com, thehindubusinessline amp, and cryptoaimeta.com attribution accuracy for the Bloomberg originals is unverified first-hand.'
+    - 'WEAK: Bloomberg financial-desk mandate - pre-IPO scoops are the franchise; the softness may be franchise-driven rather than entity-driven.'
+    - 'WEAK: m334 precedent - the Aug-26 finding already documents this register split; the marginal information content of each new arm is small.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The gradient EXTENDS rather than contradicts mechanism 334 - both Bloomberg-soft-on-Anthropic arms sit in the same desk family as m334''s arms, so this mechanism is replication, not new discovery; the pre-registered m334 pattern weakens the surprise value of the 0.725 spread.'
+    - 'COUNTEREVIDENCE: Bloomberg''s adversarial Meta capacity is documented in this mechanism itself - the layoffs reporting is Bloomberg''s own, so no register suppression of negative Meta news is claimed; Bloomberg runs negative on Meta when the story type calls for it.'
+    - 'COUNTEREVIDENCE: The Sep 19 Bloomberg Anthropic arm includes the catastrophic-harm anxiety caveat and the Amodei slowdown calls, so the momentum register is caveated rather than uncritical.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: temporal extension of mechanism 334 (register documentation + replication), not a uniform-prediction test. Ledger holds at 29 - TWENTY-NINTH present, THIRTIETH absent.'
+    research_method: '4 browser.search query sets this run (Guardian x OpenAI Sep 2026 - rejected, Milmo Sep-17 disclosure piece in corpus per Type A #757/m687; Bloomberg x Anthropic Sep 2026 - SELECTED, profitability/IPO arms, novel per zero-hit sweeps; Bloomberg x Meta Sep 2026 smart glasses - relay of Bloomberg $299 Adventurer/Fury + Starfire reporting rejected as comparator, product-positive register cuts against the Meta-arm selection and zero Bloomberg-direct Meta Sep-2026 original surfaced; Bloomberg x Meta layoffs/partner-clash - SELECTED, Bloomberg Law layoffs original + EssilorLuxottica clash relay); novelty: zero test_type_a_902 files on disk pre-commit (glob); no ''Type A #902'' in git log pre-commit (--grep); block key zero-hit repo-wide pre-commit; max numeric mechanism id 771 pre-commit (includes concurrent uncommitted m770/m771/m762); zero underscore-form 772 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero dash-form 772 references pre-commit; zero numeric 772 keys in profiles/ pre-commit; corpus novelty sweeps per #715 (''temperature2.com/p/2026-09-14-anthropic'', ''article71483703'', ''meta-begins-job-cuts'', ''cryptoaimeta.com/meta-smart-glasses'' zero-hit profiles/ pre-commit); 0 browser.open this turn per developer constraint; excerpt-bounded headline/register reads per #503. All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    test_file: tests/test_type_a_902_bloomberg_anthropic_profitability_ipo_momentum_vs_meta_layoffs_clash_m334_extension_sep21_3pm.py
+    connects_to:
+    - 334
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
