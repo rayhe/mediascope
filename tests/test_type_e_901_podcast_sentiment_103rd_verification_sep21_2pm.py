@@ -30,7 +30,7 @@ ITERATION = 901
 TYPE_LETTER = "E"
 RUN_PDT = "2026-09-21 14:00 PDT"
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a3a96668983ff7af1fe90309031d4a65e99cb725"
 
 
 def _git(args):
@@ -114,9 +114,10 @@ class TestRotationGuard900_904Window:
     def test_no_concurrent_inflight_commits_asserted(self):
         # In-flight at this run's checks: #884 Type C, #898 Type B, #899
         # Type C, #900 Type D - none committed yet. Match only commit
-        # SUBJECTS: other commits' bodies may mention them. The subject
-        # sequence must read 897 -> 896 -> 895 with the in-flight runs
-        # skipped.
+        # SUBJECTS: other commits' bodies may mention them. Post-commit
+        # (anchor run), this run's own #901 commit sits at the log head,
+        # so the subject sequence must read 901 -> 897 -> 896 with the
+        # in-flight runs skipped.
         result = subprocess.run(
             ["git", "log", "--format=%s", "-25"], cwd=REPO,
             capture_output=True, text=True,
@@ -127,7 +128,7 @@ class TestRotationGuard900_904Window:
             m = re.match(r"Type [A-E] #(\d+)", line)
             if m and (not nums or nums[-1] != m.group(1)):
                 nums.append(m.group(1))
-        assert nums[:3] == ["897", "896", "895"], nums[:3]
+        assert nums[:3] == ["901", "897", "896"], nums[:3]
         for skip in ("884", "898", "899", "900"):
             assert skip not in nums
 
