@@ -182,7 +182,7 @@ class TestNovelty894:
         # literal mechanism_768/mechanism-768, zero 'sponsored agent' hits,
         # all 4 source URLs zero-hit); this test pins that no duplicate
         # #894 main commit ever appears.
-        mains = _git_log_mains("Type C #894: OpenAI Sponsored Agents")
+        mains = _git_log_mains("Type C #894: OpenAI Sep-16-2026")
         assert len(mains) == 1, f"exactly one Type C #894 main commit, got {mains}"
         assert ANCHORED_SHA in mains, (
             "patched SHA must match a real Type C #894 main commit"
@@ -242,7 +242,7 @@ class TestRotationCycleGuard894:
 
     @pytest.mark.rotation
     def test_anchor_sha_matches_head(self):
-        mains = _git_log_mains("Type C #894: OpenAI Sponsored Agents")
+        mains = _git_log_mains("Type C #894: OpenAI Sep-16-2026")
         assert ANCHORED_SHA not in (
             "PATCH_ME_IN_FOLLOWUP",
             "POST_COMMIT_ANCHORED",
