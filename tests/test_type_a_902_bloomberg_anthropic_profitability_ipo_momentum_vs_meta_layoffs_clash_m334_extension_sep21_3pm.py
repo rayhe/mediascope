@@ -70,7 +70,7 @@ EXPECTED_ORDER = [("A", "902"), ("E", "901"), ("A", "897"), ("E", "896")]
 # runs are in-flight (m762/m770/m771 uncommitted in the working tree at this
 # run's checks) and commit after this run; see test_window_is_900_904_third_leg.
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "e67a54ebe95accc787183efc7d4f496b17dee972"
 
 REPO = Path(__file__).resolve().parents[1]
 
