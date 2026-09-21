@@ -43024,3 +43024,121 @@ will_knight_ai_coverage_allocation_gap_421:
   - https://www.wired.com/story/google-launches-gemini-3-ai-bubble-search/
   - https://www.wired.com/story/anthropic-claude-takes-control-robot-dog/
   - https://www.wired.com/story/openai-dev-day-sam-altman-chatgpt-apps/
+
+type_c_889_california_civic_media_fund_contingent_match_replacement_sep21_2am:
+  block_key: 'type_c_889_california_civic_media_fund_contingent_match_replacement_sep21_2am'
+  mechanism_id: 765
+  iteration: 889
+  iteration_type: C
+  type: financial_incentive_mapping
+  type_label: Financial Incentive Mapping
+  rotation: 'Type C'
+  date_analyzed: '2026-09-21'
+  time_pdt: '02:00'
+  job_id: mediascope-daily-iteration
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'California Civic Media Fund Contingent-Match Replacement - the 2024 Google-State $250M legislation-avoidance bargain devolves into a smaller GO-Biz grant program whose actual scale is set by the state budget, not the deal terms'
+  type_c_focus: 'FIRST dedicated corpus mechanism on the replacement of California''s 2024 Google-State journalism bargain with the California Civic Media Program. The corpus tracks Google''s publisher-payment architecture (mechanism 355: Showcase as regulation-staving cash, the News AI Pilot as its successor with NDA/no-sue deal structure). This leg documents the U.S. state-level counterpart: a headline 2024 deal struck while lawmakers pushed the California Journalism Preservation Act (platforms pay for linking), whose cash actually materialized only after the state cut its share, whose Google leg is explicitly a CONTINGENT MATCH on state appropriations (so Google''s payment falls in lockstep when the state cuts), and whose allocation is now intermediated by a state economic-development office and a publisher-founded nonprofit foundation. The finding is architectural: conditionality, intermediation, and appropriation-driven scale - not a coverage-tone claim.'
+  deal_arc:
+  - 'Summer 2024: California and Google announce a deal valued at $250M over five years (WebProNews first-hand read this run): Google committed $180M, the state pledged $70M, earmarked for supporting journalists and innovative projects. The agreement emerged amid threats of legislation forcing tech companies to compensate news outlets - California lawmakers were pushing the California Journalism Preservation Act, which sought to make platforms pay for linking to articles. Google opted for a voluntary deal to sidestep stricter regulations; the pact included state contributions requiring legislative approval'
+  - 'Mid-2025: Governor Newsom proposes slashing the state''s first-year share from $30M to $10M, citing budget constraints (WebProNews citing CalMatters). As of early 2026, not a single dollar had flowed to newsrooms (WebProNews). The deal''s structure, relying on annual state budgets, left it vulnerable to fiscal fluctuations'
+  - 'Newsy Today (excerpt-bounded per #503) frames the same bargain as $175M over five years: Google $55M + state $70M + continued annual grants; Google had spent a record $11M lobbying against the compensation legislation; Google''s contributions were "contingent" on state funding, mirroring its Canada arrangement; the state cut its commitment to $10M; none of the pledged $20M had reached outlets at time of writing'
+  - 'Jan 2026 (per the People/EuropeSays mirror, excerpt-bounded): Newsom backed out of the compromise, saying the state could not afford it; after lawmaker and publisher outcry, the Civic Media Fund was announced'
+  contingent_match_structure:
+  - 'The contingency is the mechanism''s core: Google''s payments are explicitly contingent on state appropriations. Erin Ivie, spokesperson for Assemblymember Buffy Wicks (who brokered the 2024 deal), said Google was clear "its contributions were contingent" on state funding, similar to its journalism funding deal in Canada (Oakland Voices, excerpt-bounded)'
+  - 'Google cut its $15M commitment for the year to $10M when the state pulled back. Google spokesperson: "We stand ready to match the state''s contribution to the Civic Media Program and are awaiting the final budget later this year" (Mercury News via pagesuite popover, excerpt-bounded)'
+  - 'Incentive reading: the contingent-match design means the platform''s effective payment is set by the legislature''s appropriation, not by the headline deal terms. When Newsom cut the state share, Google''s matched amount fell in lockstep - the legislation-avoidance bargain reprices itself downward through the state budget process'
+  replacement_program:
+  - 'July 14, 2026 (Tuesday): Governor Newsom announces the California Civic Media Program (official gov.ca.gov press release, first-hand read this run): eligible state and local news organizations can apply for up to $250,000 in one-time grants for original reporting; $20M allocated as part of the state budget for two additional years, matched by Google; the program continues existing efforts including the California Local News Fellowship'
+  - 'The People/EuropeSays mirror (excerpt-bounded) frames the July announcement as a $20M annual California Civic Media Fund: Google pays half, California pays half. Note the framing difference (annual $20M vs $20M state for two years matched by Google) - the block carries both framings rather than forcing one number'
+  - 'Administration: the program is established within the Governor''s Office of Business and Economic Development (GO-Biz). The application process is independently administered by the James B. McClatchy Foundation (founded by the former publisher of the McClatchy Company) with support from Journalism Funding Partners, guided by an Advisory Board of news industry leaders. GO-Biz announced a nine-member advisory board (statutorily designated representatives from news-ecosystem organizations; EIN Presswire via GO-Biz, excerpt-bounded)'
+  - 'Timeline: applications open through August 21, 2026 (Friday) 12 p.m. PT; grant recipients announced fall 2026. The People mirror says GO-Biz spokesman Willie Rudman expected awards in October; GO-Biz deputy director Blake Kaiser-Lack and McClatchy Foundation president Priscilla Enriquez declined interview requests'
+  - 'The James B. McClatchy Foundation as grant administrator is FIRST-TO-CORPUS. Existing "McClatchy" corpus hits are journalist-career notes (McClatchy Newspapers as former employer) and a co-plaintiffs roster (McClatchy as litigation co-plaintiff) - none document the Foundation or its administrator role'
+  scale_discipline:
+  - 'NO single cut percentage is asserted. The $250M headline (WebProNews: Google $180M + state $70M over five years) and the $175M cash framing (Newsy Today: Google $55M + state $70M + continued annual grants) are different scopes of the same bargain; the materialized fund is $10M state + $10M Google, extended July 2026 with $20M state for two more years matched by Google (gov.ca.gov) or framed as $20M annual (People mirror). Comparing the $250M multi-year headline - which bundled existing programs and an AI accelerator per the original 2024 coverage - against the $20M program as a simple 92% cut would be unsourced. The finding is architectural (conditionality + intermediation + appropriation-set scale), not a percentage'
+  - 'The replacement fund is still HALF-FUNDED BY GOOGLE - Google retained its payer role and matched the state. "Collapse" framing would overstate: the change is in scale, conditionality, and intermediation, not payer exit'
+  alternative_models_in_play:
+  - 'AB 2222 (People mirror, excerpt-bounded): would fund journalism tax credits by eliminating corporate deductions for executive compensation over $1M; opposed by the California Taxpayers Association and Chamber of Commerce; Newsom had not said whether he would sign or veto'
+  - 'Former state Senator Steve Glazer''s SB 1327: tax credits for hiring journalists, funded by a fee on platforms like Google (Newsy Today, excerpt-bounded)'
+  - 'Assemblymember Chris Ward effort: $70M in state funding for California public broadcasters (Newsy Today, excerpt-bounded). The bargain replacement is not the only funding channel in play'
+  statistical_discipline:
+    scope: qualitative structural payment-architecture mapping only
+    correlation_not_causation: true
+    scorer: none
+    tone_scores: NOT_SCORED
+    p_value: NOT_CALCULATED
+    cohens_d: NOT_CALCULATED
+    ci_95: NOT_CALCULATED
+    is_significant: false
+    engine_run: false
+    artifact_grade: false
+    qualitative_only: true
+    verdict: 'directionally_supported_not_proven'
+  cautious_language_required: true
+  correlational_note: 'This mapping documents the payment architecture of California''s Google-State journalism bargain and its Civic Media Program replacement: a contingent-match structure (Google pays only what the state appropriates), an appropriation-driven scale reduction, and grant allocation intermediated by GO-Biz, the James B. McClatchy Foundation, and an industry advisory board. Financial relationships and payment conditionality are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim. No claim that any outlet''s coverage was shaped by these payments.'
+  no_coverage_tone_claim: true
+  no_analysis_json_update: true
+  falsification_family: 'NOT a member - payment-architecture documentation leg with no coverage-tone pair and no uniform-prediction test; ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+  artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+  cross_references:
+  - 'mechanism 355 (Google News AI Pilot two-year NDA/no-sue deal structure as Showcase replacement and CMA opt-out remedy neutralization, #879-era - the global predecessor for Google''s publisher-payment architecture; this mechanism is its U.S. state-level legislative-bargain counterpart)'
+  - 'mechanism 519 (News Corp x OpenAI >$250M/5yr - the paid-template pole; same $250M headline order of magnitude, different payer structure and different deal logic)'
+  - 'mechanism 636 (NYT pay-or-litigate doctrine - the license-versus-litigate bifurcation; California''s bargain is the legislative-avoidance alternative to the litigation path)'
+  - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+  - '#503 second-hand evidence-grade precedent (excerpt-bounded secondary facts; 2 first-hand browser.open reads this run on gov.ca.gov and webpronews)'
+  - 'iteration-492 rule (bounded absence: no first-hand read of the 2024 deal terms or contingency-clause language; no reporting on whether fall 2026 awards flowed; none claimed as proof)'
+  - '#565 followup/anchor convention'
+  - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+  ranked_confounders:
+  - rank: 1
+    strength: strong
+    confounder: 'Figure-framing ambiguity is structural, not resolvable from these sources: $250M (WebProNews: $180M Google + $70M state over 5yr) vs $175M (Newsy Today: $55M Google + $70M state + continued annual grants) vs the materialized $20M ($10M state + $10M Google) vs the July 2026 extension ($20M state for two years matched by Google per gov.ca.gov, or "$20M annual" per the People mirror). These are headline-vs-cash-vs-appropriated framings of the same bargain at different vintages. Any single cut percentage (e.g. 92%) would be unsourced; the block deliberately asserts none'
+  - rank: 2
+    strength: strong
+    confounder: 'Google retained its payer role and matched the state - the replacement is still a 50/50 public-private fund. A "Google walked away" or "bargain collapsed" reading would mischaracterize the evidence: the change is scale, conditionality, and intermediation, not payer exit. The contingent-match design is doing exactly what it was designed to do'
+  - rank: 3
+    strength: moderate
+    confounder: '2 first-hand reads this run (gov.ca.gov press release, 33 rendered lines; webpronews, 109 rendered lines); the remaining sources are excerpt-bounded per #503 (Newsy Today, Oakland Voices, People/EuropeSays mirror, EIN Presswire GO-Biz release, URL Media, Mercury News via pagesuite popover). The contingency quotes (Ivie "contingent" + Canada parallel; Google spokesperson "stand ready to match") are carried from excerpts, not first-hand reads'
+  - rank: 4
+    strength: moderate
+    confounder: 'The legislation-avoidance reading (the deal sidestepped the California Journalism Preservation Act) is reported analysis, not a Google admission. Google''s stated posture is commitment contingent on state funding; strategic-intent attribution comes from reporting'
+  - rank: 5
+    strength: moderate
+    confounder: 'The McClatchy Foundation''s publisher lineage (McClatchy Company owns the Sacramento Bee and other newspapers) is a structural fact, not evidence of allocation bias. No evidence in these sources that Google influences allocation via GO-Biz, the Foundation, or the advisory board - the block claims no such channel'
+  - rank: 6
+    strength: weak
+    confounder: 'Alternative funding models are live (AB 2222, SB 1327, Ward $70M public-media effort) - the bargain replacement is not the only channel, so the mechanism''s importance should not be read as the whole California journalism-funding picture'
+  bounded_absences:
+  - 'No first-hand read of the 2024 deal terms or the contingency-clause language (bounded per iteration-492, not asserted)'
+  - 'No reporting on whether the fall 2026 awards were actually announced or disbursed - applications closed Aug 21 2026; the People mirror expected October awards; GO-Biz had received the money and expected to distribute "this year" per Willie Rudman'
+  - 'No evidence Google exercises allocation influence via GO-Biz, the McClatchy Foundation, Journalism Funding Partners, or the advisory board'
+  - 'No per-outlet allocation data - which newsrooms applied or received grants is not in these sources'
+  - 'No tone or coverage claim: nothing here measures whether any outlet''s coverage of Google, Meta, or any competitor changed with these payments'
+  novelty: 'FIRST dedicated corpus mechanism on the California Civic Media Program and the contingent-match replacement of the 2024 Google-State bargain. Zero "Civic Media" / "Civic Media Program" hits repo-wide pre-commit; "GO-Biz" zero-hit; "James B. McClatchy Foundation" zero-hit (existing "McClatchy" hits are journalist-career notes and a co-plaintiff roster, not the Foundation or its administrator role); "News Transformation Fund" zero-hit; all 8 source URLs zero-hit repo-wide pre-commit; zero test_type_c_889 files on disk (glob); no "Type C #889" in git log (--grep); max numeric mechanism_id 764 pre-commit; zero underscore-form 765 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); block key zero-hit repo-wide pre-commit. Extends mechanism 355''s Google publisher-payment architecture to the U.S. state legislative-bargain vector; distinct from 355 (UK/CMA/global showcase structure), 519 (News Corp x OpenAI cash deal), and 636 (litigation-tier doctrine).'
+  sources:
+  - 'gov.ca.gov (Jul 14 2026 official press release, first-hand browser.open read this run, 33 rendered lines): $20M allocated as part of the state budget for two additional years, matched by Google; eligible state and local news organizations can apply for up to $250,000 in one-time grants; program established within GO-Biz; application process independently administered by the James B. McClatchy Foundation with support from Journalism Funding Partners, guided by an Advisory Board of news industry leaders; applications open through August 21, 2026 12 p.m. PT; grant recipients announced fall 2026'
+  - 'WebProNews (first-hand browser.open read this run, 109 rendered lines): summer 2024 deal valued at $250M over five years - Google $180M, state $70M; emerged amid California Journalism Preservation Act threats (platforms pay for linking); Google opted for voluntary deal to sidestep stricter regulations; state contributions required legislative approval; mid-2025 Newsom proposed slashing first-year state share $30M to $10M; as of early 2026 not a single dollar had flowed; deal structure relying on annual state budgets left it vulnerable'
+  - 'Newsy Today (excerpt-bounded per #503): $175M over five years - Google $55M + state $70M + continued annual grants; Google spent record $11M lobbying against compensation legislation; Google contributions "contingent" on state funding, mirroring Canada deal; state cut to $10M; none of pledged $20M reached outlets at time of writing'
+  - 'Mercury News via pagesuite popover (excerpt-bounded): "Newsom halts Google deal" - Google cut its $15M commitment for the year to $10M; Google spokesperson "We stand ready to match the state''s contribution to the Civic Media Program and are awaiting the final budget later this year"; the $20M from state and Google to be distributed to newsrooms this year'
+  - 'Oakland Voices (excerpt-bounded): Erin Ivie (spokesperson for Assemblymember Buffy Wicks, broker of the 2024 deal) - Google was clear "its contributions were contingent" on state funding, similar to Canada deal; GO-Biz received the money, expects to distribute this year (agency spokesman Willie Rudman); CNPA president Chuck Champion criticism of Newsom''s funding cuts'
+  - 'People via EuropeSays mirror (excerpt-bounded): $20M annual California Civic Media Fund announced by Newsom in July - Google pays half, California pays half; grew out of the $250M plan; Newsom backed out of the compromise in January saying the state could not afford it; GO-Biz oversees; James B. McClatchy Foundation reviews and ranks applications; awards expected in October; AB 2222 (journalism tax credits via eliminating exec-comp deductions over $1M; Newsom undecided); GO-Biz deputy director Blake Kaiser-Lack and Foundation president Priscilla Enriquez declined interviews'
+  - 'EIN Presswire GO-Biz release (excerpt-bounded): nine-member Civic Media Program advisory board announced; $20M public-private partnership with equal initial funding from the State of California and Google'
+  - 'URL Media (excerpt-bounded): $20M Civic Media Program grant program launched by GO-Biz, funded equally by the State of California and Google'
+  research_method: '2 browser.search query sets post-compaction ((1) California Civic Media Fund Newsom July announcement GO-Biz $20 million Google - surfaced the europesays/People mirror, EIN Presswire GO-Biz advisory-board release, the gov.ca.gov press release, newsy-today, oaklandvoices, url-media, and Mercury News pagesuite items; (2) complementary queries for the $250M stalled-deal framing - surfaced webpronews) + 2 browser.open first-hand reads this run (gov.ca.gov 2026/07/14 press release, 33 lines; webpronews $250M stalled piece, 109 lines). The California Civic Media Fund was the SELECTED finding (first-to-corpus, novel payment-architecture datum: contingent match + state intermediation). Dead-end/rejected candidates: Apple/Conde Nast AI licensing (2023 negotiation reporting only, $50M+ multiyear publisher talks - no verified completed agreement); AB 2222 alone (legislative proposal, undecided - carried as context, not a mechanism). Pre-commit novelty greps: zero test_type_c_889 files on disk (glob); no "Type C #889" in git log (--grep); max numeric mechanism_id 764 pre-commit; zero underscore-form 765 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); block key zero-hit repo-wide pre-commit; "Civic Media" / "GO-Biz" / "James B. McClatchy Foundation" zero-hit repo-wide pre-commit; all 8 source URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  source_urls:
+  - https://www.gov.ca.gov/2026/07/14/governor-newsom-announces-20-million-in-grant-funding-matched-by-google-to-support-local-journalism-across-the-state/
+  - https://www.webpronews.com/california-google-250m-journalism-fund-stalled-by-2026-delays/
+  - https://www.newsy-today.com/newsom-plans-no-new-journalism-funding-despite-175-million-funding-deal-with-google/
+  - https://oaklandvoices.us/2026/01/28/despite-google-funds-governor-plans-no-funding-for-local-news/
+  - https://www.europesays.com/people/231695/
+  - https://movies.einnews.com/pr_news/891082628/california-governor-s-office-of-business-and-economic-development-announces-civic-media-program-advisory-board-bolstering-efforts-to-support-local
+  - https://url-media.com/to-strengthen-local-journalism-california-launches-20-million-civic-media-program-appoints-diverse-advisory-board/
+  - https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?guid=a3d8af89-4779-4617-b807-a1990df5ac5a&appcode=SAN252&eguid=ba87322b-2703-4432-ab09-7e525bcae318&pnum=4
+  test_file: 'tests/test_type_c_889_california_civic_media_fund_contingent_match_replacement_sep21_2am.py'
+  verification:
+    iteration: 889
+    type: 'C'
+    date: '2026-09-21 02:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
