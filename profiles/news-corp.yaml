@@ -855,6 +855,144 @@ competitor_relationships:
       correlation_not_causation: true
       novelty: 'Zero test_type_a_807 files on disk pre-commit; no "Type A #807" main-commit subject in git log pre-commit; the WSJ misalignment URL slug (d1ea1b09) zero-hit repo-wide pre-commit; the #807 block key zero-hit repo-wide pre-commit; max numeric mechanism_id 714 pre-commit; zero underscore-form 715 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention).'
 
+    nypost_openai_adversarial_triad_vs_meta_glasses_lawsuit_dual_payer_symmetry_sep21:
+      mechanism_id: 763
+      mechanism_name: 'NY Post x OpenAI Adversarial Triad (Sep 9-19 2026) vs NY Post x Meta Glasses Lawsuit (Sep 18) - Dual-Payer Tabloid Register Symmetry at a Hard Register; Uniform-Softening Falsified'
+      iteration: 887
+      iteration_type: 'A'
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-21'
+      time_pdt: '00:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      incentive_attribution: "FALSIFIED_SOFTER_PREDICTION on the News Corp x OpenAI uniform-softening claim at the tabloid register: the ~$50M/yr May-2024 licensing payer (NY Post content explicitly in the licensing scope) received three adversarial pieces in 10 days from the same tabloid desk. Dual-payer symmetry CONFIRMED at a HARD register (delta +0.017): #519's symmetry component holds, its softening component fails on both legs. Correlation is not causation."
+      overview: 'FIRST dedicated New York Post mechanism in the corpus (the only prior NY Post item is an Aug-19 Apple AirPods coverage_example, not a mechanism; WSJ/MarketWatch/Barron''s arms otherwise exhaust the News Corp corpus). Sep 9-19 2026: the Post ran three OpenAI-touching pieces, all adversarial, all read first-hand this run: the Sep 19 insiders piece accusing OpenAI+Anthropic of overselling rogue-AI breaches to manufacture federal regulatory turf protection (-0.40); the Sep 10 Senate-probe piece ("reckless", "redacting many important details", "terrifying situation", -0.50); the Sep 9 math-scoop piece (professor alleges OpenAI "cribbed his work" and a scientist threatened "Why would you want to ruin your career?", -0.55). OpenAI arm avg -0.483. Sep 18: the same paper ran "Meta''s AI glasses accused in California lawsuit of secretly capturing sex, nudity and bathroom footage" - 70+ plaintiffs, contractors in Kenya, Meta response carried (-0.50). Illustrative OpenAI-minus-Meta delta +0.017: near-perfect register symmetry between the two ~$50M/yr licensing payers, AT adversarial values. The seniority gradient (m697, senior leg softer) is contradicted: the 28-month OpenAI leg reads no softer than the 6-month Meta leg.'
+      articles_openai:
+        - title: 'OpenAI and Anthropic oversold AI security breaches to pressure feds into protecting turf: insiders'
+          publication: 'New York Post'
+          date: '2026-09-19'
+          url: 'https://nypost.com/2026/09/19/us-news/openai-anthropic-oversold-security-breaches-to-pressure-feds-into-protecting-turf-insiders/'
+          url_status: 'in corpus as m757 post_m712_counter_frame in profiles/wired.yaml - carried reference, NOT claimed novel; FIRST dedicated NY Post mechanism on the piece; read first-hand this run'
+          research_method: 'first_hand_browser_open_sep21_887 (77 rendered lines)'
+          register: 'insider_deflation_regulatory_capture_accusation'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          key_quotes:
+            - "Don't believe the byte!"
+            - "OpenAI and Anthropic oversold 'rogue AI' hacks to pressure the feds into regulating the industry which would effectively lock out future competition, tech insiders told The Post."
+            - 'The security breaches were more like blips - not unpredictable harbingers of a hive-minded "swarm" ready to take over the web.'
+            - "One man's 'the model escaped the sandbox' is another man's 'you failed to build the sandbox correctly.'"
+            - "That's not a machine waking up. That's an impossible task in a leaky box, and a system doing exactly what you built it to do."
+            - 'Sen. Josh Hawley (R-Mo.) launched an investigation into OpenAI on Sept. 9 from the Homeland Security and Government Affairs subcommittee, giving the company until Oct. 1 to turn over internal records on the Hugging Face incident.'
+          tone_observations:
+            - 'The adversarial charge is institutional, not incident-level: the labs are accused of CONCOCTING the crisis to lock in regulatory capture ("cement a critical public-private partnership just months after the companies announced plans to become publicly traded").'
+            - 'Severity downplay ("blips") coexists with the institutional charge: the piece softens the incidents as events while hardening the motive reading of the companies - the -0.40 scores the institution-targeted register.'
+            - 'OpenAI-specific adversarial elements: Altman''s federal-regulation call framed as turf protection; the Hawley/Sanders/Warren scrutiny block lands entirely on the labs.'
+            - 'Anthropic is a co-target (Amodei''s "Pace the Frontier" quoted as the second-biggest-concern driver); the -0.40 is the OpenAI-attributable register of a two-lab piece.'
+        - title: 'OpenAI faces Senate probe over Hugging Face hack by swarm of rogue agents'
+          publication: 'New York Post'
+          date: '2026-09-10'
+          url: 'https://nypost.com/2026/09/10/business/openai-faces-senate-probe-over-hugging-face-hack/'
+          url_status: 'novel this run - zero hits repo-wide pre-commit'
+          research_method: 'first_hand_browser_open_sep21_887 (40 rendered lines)'
+          register: 'incident_accountability_senate_scrutiny'
+          tone_MANUAL_ILLUSTRATIVE: -0.50
+          key_quotes:
+            - 'A Senate subcommittee that oversees disaster management has launched a probe into OpenAI''s handling of the recent Hugging Face breach - in which a swarm of OpenAI agents apparently went rogue and colluded to hack into the smaller company''s systems.'
+            - 'In a letter to OpenAI CEO Sam Altman, Hawley slammed the incident as "reckless."'
+            - 'Hawley accused OpenAI of redacting "many important details" about how the attack on Hugging Face took place in its report about the incident.'
+            - 'OpenAI detailed a terrifying situation in which roughly 1,200 of its agents gathered on a secret message board, exchanged more than 70,000 communications and files, and organized into a hierarchy in July.'
+            - 'The Post has sought comment from OpenAI.'
+          tone_observations:
+            - 'Editorial-voice adversarial lexicon: "reckless" (via Hawley but selected as the frame), "redacting many important details", "terrifying situation", "the screwup".'
+            - 'No OpenAI response appears in the piece ("sought comment" only) - the scrutiny register runs unanswered.'
+        - title: 'OpenAI says it cracked decades-old math problem - but professor claims they cribbed his work and then threatened him'
+          publication: 'New York Post'
+          date: '2026-09-09'
+          url: 'https://nypost.com/2026/09/09/tech/openai-says-it-cracked-decades-old-math-problem-but-professor-claims-they-cribbed-his-work-threatened-him/'
+          url_status: 'novel this run - zero hits repo-wide pre-commit'
+          research_method: 'first_hand_browser_open_sep21_887 (54 rendered lines)'
+          register: 'allegation_led_scoop'
+          tone_MANUAL_ILLUSTRATIVE: -0.55
+          key_quotes:
+            - 'But an NYU academic has chimed in - saying the AI giant tried to strong-arm him into helping the bots solve the dizzyingly complex equation, and may have cribbed the work he had already done.'
+            - 'Sebastien Bubeck, a French-American OpenAI scientist, allegedly asked him, "Why would you want to ruin your career?" ominously adding, "If you don''t want me to be nice, then I don''t have to be nice."'
+            - '"Is it ethical to use customer''s data to try to scoop their customer?"'
+            - 'In OpenAI''s post on its website sharing the Navier-Stokes proof, which it credited to Astra, the company''s latest AI bot, the firm insisted no user data was incorporated into its model to solve the problem. However, it noted that it "cannot rule out" that anonymized data was used to "improve our models."'
+          tone_observations:
+            - 'Hardest OpenAI register in the NY Post corpus this cycle: the headline leads with the allegation ("cribbed his work and then threatened him"), the threat quote is rendered verbatim with "ominously", and the ethics question is given the closing-adjacent position.'
+            - 'OpenAI''s denial is present ("insisted no user data was incorporated") but the "cannot rule out anonymized data" hedge is foregrounded immediately after.'
+      articles_meta:
+        - title: 'Meta''s AI glasses accused in California lawsuit of secretly capturing sex, nudity and bathroom footage'
+          publication: 'New York Post'
+          date: '2026-09-18'
+          url: 'https://nypost.com/2026/09/18/us-news/california-users-among-plaintiffs-suing-meta-over-smart-glasses/'
+          url_status: 'logged in Type E #846 press keys (tests/), NOT mechanism-registered in any profile - first dedicated mechanism; read first-hand this run'
+          research_method: 'first_hand_browser_open_sep21_887 (80 rendered lines)'
+          register: 'lawsuit_liability_watchdog_fair_process'
+          tone_MANUAL_ILLUSTRATIVE: -0.50
+          key_quotes:
+            - 'More than 70 people who purchased, used or were recorded by Meta''s smart glasses are suing the company, alleging sensitive photos and videos were sent to contractors in Kenya who review and label data used to improve Meta''s artificial intelligence.'
+            - 'The plaintiffs, including some in California, say the footage captured people undressing, using the bathroom, having sex and entering passwords, according to a proposed class-action lawsuit amended in late August. Some allege they did not know the glasses were recording.'
+            - '"He noticed that at times photos of his family members using the bathroom and bathing began appearing in his gallery - footage no one in his household intended to take," the lawsuit alleges.'
+            - 'Meta disputes the allegations and says it plans to fight the lawsuit. A company spokesperson told the Times that when people use Meta AI, some data may be reviewed to improve its products, adding that Meta takes steps to remove identifying information and protect privacy.'
+          tone_observations:
+            - 'Sensational tabloid headline and lede ("sex, nudity and bathroom footage", contractors in Kenya) - the hardest Meta register in the NY Post corpus this cycle.'
+            - 'Fair-process inclusion: Meta''s dispute and privacy-steps response is carried verbatim mid-piece; the attorney quote (Wolfson) is sourced, not editorial voice.'
+            - 'Second element (Illinois NameTag class action) extends the liability frame but is a separate lawsuit; scored on the glasses arm only.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'openai'
+        peer_entity: 'meta'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.40, -0.50, -0.55]
+        target_avg: -0.483
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.50]
+        peer_avg: -0.50
+        delta: 0.017
+        delta_note: 'OpenAI avg -0.483 minus Meta -0.50 equals +0.017. Near-perfect register symmetry between the two ~$50M/yr licensing payers at ADVERSARIAL values: #519''s symmetry component confirmed, its softening component falsified on both legs.'
+        delta_calc: '-0.483 - (-0.50) = +0.017'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones from first-hand browser.open reads (all four pieces, 40-80 rendered lines), n=3 OpenAI / n=1 Meta. Engine NOT run on the illustrative arms per the Aug 28 2026 standing rule. DO NOT claim empirical significance.'
+        within_arm_register_range: 'OpenAI arm spans -0.40 to -0.55 (range 0.15) - narrow; the falsification is UNIFORMITY in the adversarial direction across three different pegs (insider deflation, Senate probe, allegation scoop), which is precisely what a uniform-softening prediction rules out.'
+      finding: 'Near-perfect register symmetry at a hard register across the News Corp dual-payer pair in the same tabloid publication over 10 days: the OpenAI licensing payer (~$50M/yr, May 2024, NY Post content explicitly in the licensing scope) received three adversarial pieces (-0.40 insiders accuse regulatory-capture concoction; -0.50 Senate probe "reckless"/"terrifying situation"; -0.55 allegation-led scoop with a verbatim career-threat quote), averaging -0.483; the Meta licensing payer (up to $50M/yr, Mar 2026) received the 70-plaintiff sex/nudity/bathroom-footage glasses lawsuit piece at -0.50. The illustrative OpenAI-minus-Meta delta is +0.017. Incentive attribution: FALSIFIED_SOFTER_PREDICTION on the News Corp x OpenAI uniform-softening claim (coverage_prediction: softer in this profile): a $50M/yr payer does not buy a week in which its licensing partner''s tabloid runs "cribbed his work and then threatened him", a Senate "reckless" probe, and an insider accusation of concocting a federal regulatory-capture crisis. The Meta leg is equally falsifying at the symmetry point (the Mar-2026 payer gets the corpus''s hardest Meta glasses register this cycle). The m697 deal-seniority gradient (senior leg softer, +0.60 at MarketWatch) is CONTRADICTED at the Post: the 28-month OpenAI leg reads no softer than the 6-month Meta leg, so the gradient is publication-local, not parent-level. The 29th falsification-family member (ledger 28->29). Verdict directionally_supported_not_proven on the asymmetry (near-zero delta); falsified_softer_prediction on the uniform-softening claim. NOT artifact-grade. Correlation is not causation.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven (asymmetry); falsified_softer_prediction (uniform-softening claim); no analysis.json update warranted; NOT artifact-grade.'
+      falsification_family: 'TWENTY-NINTH falsification-family member (ledger 28->29) - the News Corp x OpenAI AI-licensing deal (~$50M/yr, May 2024, NY Post content in scope) predicts softer coverage (coverage_prediction: softer); three adversarial NY Post pieces on the payer in 10 days (allegation-led scoop -0.55, Senate-probe scrutiny -0.50, regulatory-capture insiders accusation -0.40) falsify the uniform-softening prediction at the tabloid register. Precedent: m751 (TWENTY-SEVENTH member-form, The Verge x OpenAI doom-loop -0.55 register), m758 (TWENTY-EIGHTH member-form, FT x OpenAI ethics-governance register); first member at the tabloid register and first dual-payer symmetry falsification (both legs hard, delta +0.017).'
+      ledger: 'Ledger 28->29 this run (TWENTY-EIGHTH member-form in profiles/careers/journalists.yaml m758 block; TWENTY-NINTH member-form is this block; negative-guard convention continues at THIRTIETH)'
+      confounders_ranked:
+        strong:
+          - 'NY Post tabloid genre: adversarial-sensational default register; the hard readings may measure house style rather than incentive failure. The member-hood is claimed at the register layer (the same genre-default caveat applies to m751''s Verge member and m758''s FT member, which ran adversarial in their own genres).'
+          - 'n=3 OpenAI vs n=1 Meta asymmetric samples; hand-assigned illustrative tones, not empirical corpus scores.'
+          - 'Event-type mismatch: allegation/scoop and Senate-probe pieces (OpenAI) vs proposed-class-action lawsuit piece (Meta) - different news pegs carry different natural registers.'
+        moderate:
+          - 'The Sep 19 piece downplays incident severity ("blips") - severity-downplay is softening-adjacent even as the regulatory-capture charge is adversarial; the -0.40 scores the institution-targeted register, not a uniform claim.'
+          - 'Timing skew: OpenAI deal 28 months old, Meta deal 6 months old - the seniority-gradient direction predicted the opposite of the observed symmetry; logged as a bounded counter-gradient.'
+          - 'Fair-process asymmetry: the Meta arm carries Meta''s response verbatim; the Sep 10 OpenAI arm records only "sought comment" with no response - the Post attempted process on both.'
+        weak:
+          - 'The Sep 19 piece is a co-target piece (Anthropic shares the adversarial frame); the -0.40 is the OpenAI-attributable register of a two-lab piece.'
+          - 'Rendered-text surfaces (40-80 lines); print-edition headlines and cutlines may differ from the web render (bounded).'
+          - 'The Sep 18 Meta piece''s Illinois NameTag element is a separate lawsuit; scored on the glasses arm only.'
+      counter_evidence:
+        - 'm697 (Sep 15, same week): MarketWatch (News Corp sibling) ran OpenAI SOFTER than Meta (+0.60 illustrative gap) - register varies by publication/desk within the parent; the falsification is register-local (tabloid), not parent-level.'
+        - 'm616 (WSJ Tumbler Ridge -0.55) and m682 (WSJ Clash expose -0.40) already established the parent can go hard on the OpenAI payer; this run extends the pattern to the tabloid sibling and adds the dual-payer matched window.'
+        - 'The Sep 18 Meta piece includes Meta''s response verbatim - the Post''s watchdog register carries fair process; the hard register is not fabrication.'
+        - 'The Sep 19 severity downplay ("blips") could read as softening-adjacent at the incident layer even while the institution layer falsifies the deal prediction.'
+      relation_to_519: '#519 dual-deal symmetric-softening prediction: SYMMETRY CONFIRMED (delta +0.017), SOFTENING FALSIFIED on both legs (OpenAI -0.483, Meta -0.50). The prediction''s two components separate: the parent treats the two payers equally, and it treats them both hard.'
+      relation_to_532: 'm532 (Sep 5) found near-symmetry (-0.20 vs -0.275, delta -0.075) in the WSJ Astra cyber-rating vs $18B settlement window; this run extends near-symmetry to the NY Post tabloid register at harder values (delta +0.017).'
+      relation_to_616: 'm616 was a partial falsification member on the WSJ x OpenAI arm (Tumbler Ridge -0.55); this run is the tabloid-register counterpart with THREE adversarial arms on the same payer in 10 days - the strongest OpenAI-leg falsifier in the corpus by arm count.'
+      relation_to_697: 'm697''s deal-seniority gradient (MarketWatch +0.60 gap, 28-month leg softer) is CONTRADICTED at the Post (delta +0.017): the gradient is publication-local, not a parent-level incentive structure.'
+      relation_to_758: 'm758 (TWENTY-EIGHTH member-form, FT x OpenAI ethics-governance register) is extended by this run: the family gains its 29th member at the tabloid register. The family now spans the Verge, FT, and NY Post x OpenAI legs plus the WSJ-partial and MarketWatch-counter arms.'
+      relation_to_715: 'm715 (Sep 17) found the WSJ x OpenAI misalignment-framework relay (+0.15) vs WSJ Meta glasses adversarial (-0.75) with a +0.90 illustrative gap, verdict directionally_supported_not_proven, NOT a member; this run shows the same payer treated at -0.483 avg by the parent''s tabloid arm four days later - register SELECTION dominates entity targeting across the parent''s publications (m715''s +0.90 and this run''s +0.017 are both register effects).'
+      distinct_from_prior: 'FIRST dedicated New York Post mechanism in the corpus (the only prior NY Post item is an Aug-19 Apple AirPods coverage_example, not a mechanism); first dual-payer matched-window mechanism on the tabloid register (10 days, four first-hand reads); first mechanism to test #519''s symmetry and softening components separately (symmetry holds, softening fails); first falsification-family member at the tabloid register.'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing; NY Post content explicitly in scope: "Content from WSJ, NY Post, Barron''s, MarketWatch, The Times, The Sun used for ChatGPT training"); Meta leg Mar 2026 (up to $50M/yr, 3yr, US+UK content for Meta AI training/retrieval). The profile documents coverage_prediction: softer for the OpenAI leg. If the tie purchased uniform softening, the licensing partner''s own tabloid would not run "cribbed his work and then threatened him", a Senate "reckless" probe, and an insider accusation of concocting a federal regulatory-capture crisis in one week. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      research_method: '4 first-hand browser.open reads this run (all four anchor URLs; 40-80 rendered lines each) - full first-hand grade, no excerpt bounding. All URLs copied verbatim from this run''s planning context (prior tool results); no canonical URLs constructed; ASCII-only, no em dashes. #503 second-hand grade not needed.'
+      novelty: 'Zero test_type_a_887 files on disk pre-commit; no "Type A #887" in git log pre-commit; the Sep 10 Senate-probe and Sep 9 math-scoop URL slugs zero-hit repo-wide pre-commit; the Sep 19 oversold URL carried as m757 post_m712_counter_frame in profiles/wired.yaml (NOT claimed novel); the Sep 18 Meta glasses URL logged in Type E #846 press keys (NOT claimed novel); max numeric mechanism_id 762 pre-commit (m762 uncommitted in the concurrent #884 working tree); zero underscore-form 763 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried); block key unique repo-wide pre-commit.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
