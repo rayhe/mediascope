@@ -62,7 +62,7 @@ NEXT_ID_MARKER = "mechanism" + "_768"
 NEXT_ID_NUMERIC = "mechanism_id: 768"
 EXPECTED_ORDER = [("B", "893"), ("A", "892"), ("E", "891"), ("D", "890"), ("C", "889")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "ee0f04e9ccaf4e617f8f8beed11dbe42b4ff24c8"
 EXPECTED_TEST_COUNT = 52
 POST_COMMIT_TESTS = 45786
 POST_COMMIT_FILES = 1220
