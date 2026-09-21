@@ -83,7 +83,7 @@ BLOCK_KEY = "type_c_889_california_civic_media_fund_contingent_match_replacement
 ITERATION = 889
 ITER_TYPE = "C"
 MECH_ID = 765
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched post-commit per #565
+ANCHORED_SHA = "8e544ee3f5be8d5d9fd0d8daf98b808a6edb18c2"  # patched post-commit per #565
 # NEXT_ID / MECH_ID needles are format-built so the file never carries a
 # literal underscore-form key string (per the #715 lesson).
 MECH_ID_MARKER = "mechanism" + "_765"
