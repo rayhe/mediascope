@@ -205,8 +205,8 @@ class TestNovelty903:
 class TestRotationGuard903:
     def test_window_is_900_904_fourth_leg(self):
         log = _read("iteration-log.md")
-        head = log.split("## #903")[0]
-        assert "## #900 Type D" in head or "## #900 Type D" in log
+        assert "## #903 Type B" in log
+        assert "#900 Type D" in log
         assert "## #901 Type E" in log
         assert "## #902 Type A" in log
 
