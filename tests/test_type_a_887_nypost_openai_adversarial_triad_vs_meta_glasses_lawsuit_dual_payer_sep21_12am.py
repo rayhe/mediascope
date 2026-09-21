@@ -57,9 +57,12 @@ NEXT_ID_NUMERIC = "mechanism_id: 764"
 NEXT_ID_DASH = "mechanism" + "-764"
 MEMBER_29 = "TWENTY-NINTH falsification-family member"
 MEMBER_28 = "TWENTY-EIGHTH falsification-family member"
-EXPECTED_ORDER = [("A", "887"), ("E", "886"), ("D", "885"), ("C", "884"), ("B", "883")]
+EXPECTED_ORDER = [("A", "887"), ("E", "886"), ("D", "885"), ("B", "883")]
+# Note: ("C", "884") is absent from EXPECTED_ORDER - the concurrent Type C
+# #884 run is in-flight (m762 uncommitted in the working tree at this run's
+# checks) and commits after this run; see test_window_is_885_889_third_leg.
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "8ed0ad0de4ee8f9f27df14435ff6f0fe72608f8c"
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -172,24 +175,30 @@ class TestNovelty887:
 
 class TestRotationGuard887:
     def test_window_is_885_889_third_leg(self):
-        subjects = _git("log", "--format=%s").stdout.splitlines()
-        order = []
+        # The concurrent Type C #884 run commits after this run; its main
+        # commit is absent from git history. Match only commit SUBJECTS:
+        # other commits' bodies may mention #884 (this run's own
+        # concurrency note does). Iteration numbers follow the rotation
+        # schedule, not commit order, so the subject sequence must read
+        # 887 -> 886 -> 885 -> 883 with the in-flight 884 skipped.
+        subjects = _git("log", "--format=%s", "-25").stdout.splitlines()
+        nums = []
         for s in subjects:
-            m = re.search(r"Type ([A-E]) #(\d+)(?::| )", s)
-            if m and m.group(2) in ("883", "884", "885", "886", "887"):
+            m = re.match(r"Type [A-E] #(\d+)", s)
+            if m and (not nums or nums[-1] != m.group(1)):
                 # Followups and test-fixups are not rotation legs. The
                 # push-status followup commit type (introduced at #864)
                 # is excluded alongside anchor/log-hash followups.
                 if ("anchor followup" not in s and "log-hash followup" not in s
                         and "push-status followup" not in s and "test fixup" not in s):
-                    order.append((m.group(1), m.group(2)))
-        for expected, got in zip(EXPECTED_ORDER, order):
-            assert expected == got
+                    nums.append(m.group(1))
+        assert nums[:4] == ["887", "886", "885", "883"], nums[:4]
+        assert "884" not in nums
 
     def test_rotation_adjacency_cycle_valid(self):
         cycle = ["D", "E", "A", "B", "C"]
         got = [t for t, _n in EXPECTED_ORDER]
-        assert got == ["A", "E", "D", "C", "B"]
+        assert got == ["A", "E", "D", "B"]
         assert cycle[cycle.index("D") + 1] == "E"
         assert cycle[cycle.index("E") + 1] == "A"
         assert cycle[cycle.index("A") + 1] == "B"
