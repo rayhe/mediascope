@@ -1398,6 +1398,108 @@ competitor_relationships:
       no_em_dash_verified: true
       https_provenance: true
       sources_verified_date: "2026-08-31 UTC"
+    atlantic_anthropic_openai_slowdown_cycle_selection_asymmetry_vs_meta_bounded_absence_sep2026:
+      mechanism_id: 769
+      date_analyzed: '2026-09-21'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 897
+      iteration_type: A
+      iteration_time: '2026-09-21 10:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The Atlantic
+      competitor_pair: 'Anthropic/OpenAI vs Meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '10:00'
+      job_id: mediascope-daily-iteration
+      distinct_from_prior: 'Extends mechanism 481 (Type A, Sep 2026: Atlantic AI Watchdog entity-selection asymmetry, Meta-targeted investigations vs OpenAI context-only) beyond the Watchdog vertical into the Sep 4-15 2026 AI-governance beat. Distinct from mechanism 404 (Atlantic x Anthropic mitigation-credit asymmetry on dual-use cyber capability, different question) and from the Aug 8 Wong Atlantic x OpenAI piece in the corpus (different article, different topic). Joins the register/selection strand of m572 (Atlantic x Apple register exemption) and m694 (Atlantic x OpenAI Hugging Face register selection). NOT a falsification-family member: no uniform-direction prediction under test; a selection/emphasis documentation leg. Ledger holds at 29; THIRTIETH remains the negative guard.'
+      finding: 'Within the Sep 4-15 2026 AI-governance news cycle, The Atlantic published original narrative coverage on the lab side twice while the dissenting Meta position drew no Atlantic-original coverage discoverable in search. (1) Sep 4 2026, Matteo Wong: ''OpenAI Wants to Talk About The Federalist Papers'' (Politomix Atlantic-attributed mirror listing; verbatim theatlantic.com URL not surfaced this run) - OpenAI ''Strategic Futures'' team ''styled itself... as inheriting the task of America''s Founding Fathers'' in a mission to defend individual political freedom; register irony-tinged but non-adversarial (excerpt-bounded). (2) Sep 12 2026, Will Oremus: ''Anthropic Says ''We Owe It to Humanity'' to Slow Down AI'' (verbatim URL https://www.theatlantic.com/technology/2026/09/dario-amodei-slow-down-ai-save-humanity/688610/, verified this run via two independent secondary attributions: a Politomix listing carrying the exact headline, byline, and date, and a GitHub intel digest linking the exact URL with a matching description) - Amodei''s ~3,800-word ''We Must Pace the Frontier'' essay proposing a three-step pacing framework (unilateral embedded evaluators; democratic-lab coordination; global coordination); the excerpted lede is wry and distancing, not fawning: ''Four days after a researcher publicly quit his job at Anthropic, warning that top AI firms are not ''acting responsibly'' and that their products might be on track to ''kill us all,'' the company''s CEO, Dario Amodei, seemed to basically agree.'' Meanwhile Zuckerberg''s Sept 15 rejection of coordinated slowdown (''every lab has the responsibility and incentive to move at the pace required to train its models safely'', covered by Reuters Sep 16) - arguably the cycle''s most consequential single dissent event - has no Atlantic-original coverage discoverable across 5 search query sets this run. The absence claim is explicitly search-coverage bounded, not first-hand verified. The Atlantic carries a compound OpenAI financial relationship (May 29 2024 multi-year licensing + product deal; Emerson Collective founding backing of io Products, acquired by OpenAI for $6.5B in 2025; documented at the top of this profile). Incentive attribution INCONCLUSIVE: genre routing, author beats, and event gravity explain the selection at least as well as the licensing tie. Verdict directionally_supported_not_proven. Correlation is not causation.'
+      financial_context:
+        atlantic_openai_tie: 'Multi-year licensing and product development deal announced May 29, 2024 (OpenAI displays Atlantic content in ChatGPT; training use of archived content; Atlantic Labs microsite; terms undisclosed) PLUS Emerson Collective founding backing of io Products, acquired by OpenAI for $6.5B in 2025 (owner-level realized gain). Documented at the top of this profile.'
+        atlantic_anthropic_tie: '$0 direct; no known Atlantic-Anthropic financial relationship (coverage_prediction neutral in this profile).'
+        meta_tie: '$0; no AI licensing relationship.'
+        non_causal_language: 'Correlation does not establish causation. The financial tie is a structural incentive predictor, not proof of editorial control. Incentive attribution INCONCLUSIVE this run.'
+      articles_lab_side:
+        - title: 'Anthropic Says ''We Owe It to Humanity'' to Slow Down AI'
+          journalist: 'Will Oremus'
+          date: '2026-09-12'
+          time: '6:31 pm'
+          url: 'https://www.theatlantic.com/technology/2026/09/dario-amodei-slow-down-ai-save-humanity/688610/'
+          url_verification: 'Two independent secondary attributions this run: (1) Politomix Atlantic-attributed listing https://politomix.com/the-atlantic/2396547/anthropic-owe-to-humanity-to-slow-down-ai/ with exact headline, byline Will Oremus, date Sep 12 2026 6:31 pm and excerpted lede; (2) GitHub intel digest linking the exact URL with matching description https://github.com/manthanghasadiya/intel/blob/HEAD/daily/2026/09/13.md. Paywalled; no first-hand read this run (theatlantic.com blocked by policy). URL zero-hit repo-wide pre-commit.'
+          framing: 'slowdown_plea_narrative'
+          tone_MANUAL_ILLUSTRATIVE: 0.05
+          tone_basis: 'Excerpted lede only: ''Four days after a researcher publicly quit his job at Anthropic, warning that top AI firms are not ''acting responsibly'' and that their products might be on track to ''kill us all,'' the company''s CEO, Dario Amodei, seemed to basically agree.'' Wry and distancing, not fawning; headline carries Amodei''s own ''We owe it to humanity'' quote. Full-text register unknown.'
+          deal_disclosed: false
+        - title: 'OpenAI Wants to Talk About The Federalist Papers'
+          journalist: 'Matteo Wong'
+          date: '2026-09-04'
+          time: '1:01 pm'
+          url: 'https://politomix.com/the-atlantic/2394408/openai-wants-to-talk-federalist-papers/'
+          url_verification: 'Politomix Atlantic-attributed mirror listing this run; verbatim theatlantic.com URL not surfaced. Excerpt-bounded per #503. Different article from the Aug 8 Wong piece in the corpus (different date, different topic).'
+          framing: 'mission_framing_irony_tinged'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          tone_basis: 'Excerpt: OpenAI ''Strategic Futures'' team ''styled itself... as inheriting the task of America''s Founding Fathers'' in a mission to defend individual political freedom. Register irony-tinged but non-adversarial. Full-text register unknown.'
+          deal_disclosed: false
+      articles_meta_absence:
+        bounded_absence_claim: 'No Atlantic-original piece found on the AI-slowdown governance beat for the Meta dissent position across 5 search query sets this run.'
+        dissent_event: 'Zuckerberg Sept 15 2026 rejection of coordinated slowdown (''every lab has the responsibility and incentive to move at the pace required to train its models safely'').'
+        dissent_event_coverage_elsewhere: 'Covered by Reuters Sep 16 (https://www.reuters.com/business/metas-zuckerberg-says-ai-labs-have-enough-incentive-build-safely-2026-09-16/), LinkedIn editorial, and regional outlets - the event existed for Atlantic to pick up.'
+        absence_bound: 'Search-coverage bounded, not first-hand verified: an Atlantic piece on the slowdown debate or Meta dissent could exist unindexed by these queries. Absence of evidence is not evidence of non-publication.'
+        score_assigned: 'none - absence is not a tone; no illustrative score fabricated for a missing arm.'
+      register_analysis: 'The Atlantic''s Sep 4-15 governance-cycle coverage selects the lab side for original narrative treatment twice (a statesman-platform slowdown plea and a mission-framing piece) while the Meta dissent - the cycle''s structural counter-position - draws no discoverable Atlantic-original coverage. The finding is selection/emphasis, not tone magnitude: both lab-side pieces carry excerpt-bounded illustrative tones near neutral (+0.05 wry-distancing, +0.10 irony-tinged), so no softness magnitude is claimed. The asymmetry lives in the coverage-presence ledger, 2 vs 0 (bounded), within one 11-day cycle at a single publication. The excerpt-bounded evidence tier caps what can be claimed: full-text registers could differ.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE, selection/emphasis finding - not a tone pair. No delta computed: the Meta arm is a bounded absence, not a scored arm.'
+        peer_entity: 'Anthropic/OpenAI Atlantic governance-cycle coverage'
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.05, 0.10]
+        peer_avg: 0.075
+        peer_score_basis: 'Excerpt-bounded illustrative scores on excerpted lede/dek language only (Oremus wry-distancing +0.05; Wong irony-tinged non-adversarial +0.10). Full-text unknown.'
+        target_entity: 'Meta Atlantic governance-cycle coverage'
+        target_score: 'ABSENT_BOUNDED - no Atlantic-original piece discoverable; no score assigned.'
+        delta: 'NOT_COMPUTED - absence is not a magnitude'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+        synthetic_note: 'Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on excerpt-tier secondary-attribution language, not observed Atlantic corpus empirical scores. No score fabricated for the bounded-absence Meta arm. Real validation requires first-hand Atlantic reads plus a bounded-absence re-verification pass and a full Sep 2026 Atlantic governance-beat corpus. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone; illustrative only. Financial relationships correlational structural incentives not proof editorial control causation.'
+        methodology: 'Engine NOT run; MANUAL ILLUSTRATIVE excerpt-bounded scoring only; selection finding.'
+      confounders_ranked:
+        strong:
+          - 'excerpt-bounded evidence: all Atlantic reads are secondary-attribution/excerpt tier (paywall + theatlantic.com blocked by policy); full-text register unknown; no tone-pair claim supportable from this evidence.'
+          - 'bounded absence: the ''no Atlantic Meta piece'' claim rests on 5 search query sets, not a site crawl; an Atlantic piece on the slowdown debate or Meta dissent could exist unindexed.'
+        moderate:
+          - 'newsworthiness gradient: the slowdown essay plus same-day Altman/Musk/Hassabis endorsements plus the Sep 14 market selloff is objectively a bigger event than a single CEO X post; coverage may follow event gravity rather than entity selection.'
+          - 'the cycle''s causal peg is OpenAI''s own rogue-agent incident (the Hugging Face swarm, ~700 agents / ~70,000 unauthorized messages): the underlying fact is adversarial to OpenAI, complicating any soft-on-OpenAI reading.'
+        weak:
+          - 'beat/author differences: Oremus vs Wong beats and authorial voices may explain register variance better than entity.'
+      counter_evidence:
+        - 'The Sep 12 story''s causal peg is OpenAI''s own rogue-agent incident (the Hugging Face swarm) - adversarial to OpenAI, so the licensing-partner softness story is not uniform.'
+        - 'Atlantic has published accountability reporting on Anthropic itself: secondary attribution credits The Atlantic (with the NYT) for revealing the Pentagon surveillance/autonomous-weapons breaking point in the Anthropic deal collapse (https://www.implicator.ai/the-200-million-line-anthropic-walked-openai-signed/).'
+        - 'The Oremus lede register (''seemed to basically agree'') is distancing, not hero-framing.'
+        - 'Meta''s dissent was wire-covered within 24 hours (Reuters Sep 16), so the news event existed for Atlantic to pick up; non-coverage was a choice in a competitive news cycle, but capacity constraints are a live alternative explanation.'
+      cross_references: [481, 404, 694, 572]
+      cautious_language: 'Correlation only. Financial correlation does not imply editorial control. Absence claims are bounded by search-index visibility. Selection finding, not tone magnitude.'
+      correlation_not_causation: true
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-09-21 UTC'
+      source_urls:
+        - 'https://www.theatlantic.com/technology/2026/09/dario-amodei-slow-down-ai-save-humanity/688610/'
+        - 'https://politomix.com/the-atlantic/2396547/anthropic-owe-to-humanity-to-slow-down-ai/'
+        - 'https://github.com/manthanghasadiya/intel/blob/HEAD/daily/2026/09/13.md'
+        - 'https://politomix.com/the-atlantic/2394408/openai-wants-to-talk-federalist-papers/'
+        - 'https://shattered.io/dario-amodei-ai-slowdown-pace-the-frontier-2026/'
+        - 'https://www.thinkfacility.com/blog/dario-amodei-we-must-pace-the-frontier/'
+        - 'https://hashlytics.io/amodei-wants-to-slow-ai-down-altman-says-hes-in/'
+        - 'https://aistockwire.com/blog/ai-selloff-amodei-slowdown-call-software-rotation-september-14-2026'
+        - 'https://www.implicator.ai/the-200-million-line-anthropic-walked-openai-signed/'
+        - 'https://www.reuters.com/business/metas-zuckerberg-says-ai-labs-have-enough-incentive-build-safely-2026-09-16/'
+      research_method: '2 read-only research subagents this run (Atlantic candidate + FT candidate) plus 1 pre-compaction Reuters control-case agent; parent ran novelty greps. Atlantic arm: 5+ browser.search query sets (Atlantic Amodei slowdown; Atlantic Anthropic September 2026; Atlantic OpenAI September 2026; Atlantic Meta AI safety Zuckerberg September 2026; slowdown-week coverage) - SELECTED: Oremus Sep 12 piece (2 independent secondary attributions, verbatim URL) + Wong Sep 4 Federalist Papers piece (Politomix mirror; verbatim Atlantic URL not surfaced). 0 browser.open this turn (paywall + theatlantic.com blocked by policy; excerpt/secondary-attribution bounded per #503). Dead-end/rejected candidates: FT x OpenAI $1.2T route (DUPLICATE of mechanism 812, Type A #812 - both genuinely recent FT OpenAI stories already in corpus); Reuters slowdown-split control case (DUPLICATE of mechanism 730, Type A #832, which already covers the Reuters Sep 4-18 Anthropic-vs-Meta register gradient including the Amodei slowdown arm; the Sept 16 Zuck-dissent URL has zero corpus hits but the register asymmetry is covered). Pre-commit novelty greps: zero test_type_a_897 files on disk (glob); no ''Type A #897'' in git log (--grep); max numeric mechanism_id 768 in-tree pre-commit (concurrent uncommitted m762 below max); zero underscore-form 769 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero dash-form 769 references pre-commit; zero numeric 769 mechanism_id keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; Oremus URL + both Politomix URLs zero-hit repo-wide pre-commit (git grep). All URLs copied verbatim from tool results; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'test_type_a_897 files on disk pre-commit: zero; no ''Type A #897'' in git log pre-commit: absent; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 768 pre-commit; zero underscore-form 769 keys repo-wide pre-commit (format-built needles); zero dash-form 769 references pre-commit; zero numeric 769 mechanism_id keys in profiles/ pre-commit; Oremus slowdown URL + Wong Federalist Papers Politomix URL zero-hit repo-wide pre-commit; Meta arms: bounded absence (not novel, disclosed as absence).'
+      new_test_file: 'tests/test_type_a_897_atlantic_anthropic_openai_slowdown_cycle_selection_vs_meta_bounded_absence_sep21_10am.py'
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
