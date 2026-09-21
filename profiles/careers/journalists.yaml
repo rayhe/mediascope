@@ -19929,8 +19929,14 @@ jay_peters:
       tone: experiential_positive
       privacy_vocabulary_count: 0
       mechanism_id: 731
+    meta_rayban_display_oct2025_hands_on:
+      headline: The smart glasses race is really on now
+      date: '2025-10-02'
+      tone: experiential_positive
+      privacy_vocabulary_present: false
+      mechanism_id: 767
   notes: 'The Verge senior reporter (technology, gaming, and more; joined The Verge 2019 after nearly two years at Techmeme; earlier WE Communications; personal site jaypeters.net). Type B #833 (Sep 18 2026): mechanism 731 within-journalist cross-entity privacy-register contrast - FIRST dedicated Type B mechanism on Jay Peters in journalists.yaml (prior corpus mentions are incidental: a photo credit in profiles/the-verge.yaml, a name-drop in profiles/competitor-coverage-research.yaml, Techmeme-attribution and iPhone-Duo quotes in two test files; zero jay_peters YAML key pre-commit). Meta arm: "Ray-Ban Meta Gen 2 review: all-day smart glasses with the same tricky questions" (listed on Peters'' own Reviews page at jaypeters.net, read this run, 96 rendered lines; the arm itself is search-excerpt-bounded per #503 because the browser.open of the review link failed terminally this run - NOT first-hand; Verge Score 7; product merits positive: battery "nearly a full day", "They''re ultimately still Meta Ray-Ban glasses ... If you''ve used the first generation before, you pretty much get the idea"; the register is privacy-scrutiny-forward: the title centers "tricky questions", the mirror dek reads "Better Battery, Same Privacy Concerns", and the subtle eye-level camera appears as BOTH a Good and a Bad; -0.10 MANUAL ILLUSTRATIVE). Snap arm: "I wore Snap''s $2,200 smart glasses" (Sep 16 2026 19:40 ET, read this run via the WeSearch mirror, 133 rendered lines, first ~120 words of publisher body, fair-use-limited; canonical URL provenance-recorded as https://www.theverge.com/tech/996422/snap-specs-hands-on-ar-glasses; experiential positive: "My favorite part of wearing the Specs, Snap''s new augmented reality glasses, was playing dominoes", "It was unlike anything I''ve tried in other VR headsets or smart glasses - the ability to sit with another person and have a shared digital experience", "Snap really believes in AR glasses", "Snap has spent half a decade working toward its first consumer pair of AR glasses"; ZERO privacy/alarm vocabulary; +0.35 MANUAL ILLUSTRATIVE). Illustrative Snap-minus-Meta delta +0.45. EXTENDS mechanism 269: the privacy-vocabulary asymmetry now holds for a SECOND journalist - a Verge senior reporter, published within roughly two hours of Ropek''s Sep-16 TechCrunch piece, adjacent to the #727/#728 Sep-16 natural-experiment window. CRITICAL SCOPE BOUND: Peters'' Oct 2025 Meta Ray-Ban Display piece was positive ("hugely impressive demo", "could pass as normal eyewear") - the register split is product/story-level, NOT a stable anti-Meta journalist bias; genre asymmetry (scored review of a shipping mass-market product vs hands-on first impression of debut AR hardware) and product maturity ($379 mass-market camera glasses vs $2,195 developer-leaning AR device) are the DOMINANT confounders. directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run on the arms; NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
-  mechanism_ids: [731]
+  mechanism_ids: [731, 767]
   competitor_coverage:
     type_b_833_jay_peters_verge_meta_gen2_tricky_questions_vs_snap_specs_experiential_sep18:
       iteration: 833
@@ -20013,6 +20019,83 @@ jay_peters:
       - '#728 (Ropek Sep-16 temporal register shift - same-day-adjacent piece, roughly two hours apart; Peters is the positive-register outlier on Sep 16)'
       - '#727 (WIRED x Snap Sep-16 launch natural experiment - third journalist family on the Sep-16 Snap window)'
       - '#113 (Karissa Bell investigative methodology asymmetry - Snap-passive vs Meta-adversarial contrast family)'
+      - '#620 (Ropek Aug 2026 settlement/infrastructure vocabulary bifurcation - same-journalist family)'
+      no_analysis_json_update: true
+    type_b_893_jay_peters_verge_hands_on_genre_matched_meta_display_oct2025_vs_snap_specs_sep2026_temporal_replication:
+      iteration: 893
+      type: 'B'
+      date: '2026-09-21 06:00 PDT'
+      mechanism_id: 767
+      journalist: 'Jay Peters'
+      publication: 'The Verge'
+      design: 'Type B within-journalist cross-entity temporal replication with a GENRE-MATCHED hands-on pair, per the #643 convention (FIRST dedicated Type B mechanism on Jay Peters was #833/m731; prior corpus mentions incidental). Directly tests the #833 scope bound: #833 compared a scored Meta review (Gen 2, -0.10 illustrative) against a Snap hands-on (+0.35) and found a +0.45 cross-entity delta, with genre asymmetry flagged as the DOMINANT confounder. This run pairs Peters'' Oct 2 2025 Meta Ray-Ban Display hands-on (warm experiential, +0.30 MANUAL ILLUSTRATIVE) against his Sep 16 2026 Snap Specs hands-on (+0.35, carried un-rescored from #833 per #807). Genre-matched illustrative delta: +0.05 (inside noise). The Gen-2 review arm is carried as the review-genre reference (-0.10 per #807): the within-entity within-journalist genre delta (Meta hands-on vs Meta review) is +0.40, EIGHT TIMES the genre-matched cross-entity delta. Reading: for this journalist, story genre predicts register better than entity does. This is a REFINEMENT of mechanism 731, not a new entity-bias accusation.'
+      meta_arm:
+        author_byline: 'Jay Peters'
+        publication: 'the-verge'
+        title: 'The smart glasses race is really on now'
+        date: '2025-10-02'
+        tone_MANUAL_ILLUSTRATIVE: 0.30
+        evidence_tier: 'search-excerpt-bounded per #503: browser.open of the mirror failed terminally this run and browser_search was hard-stopped by developer directive after the outage, so no first-hand read was possible; quotes below are excerpt-tier from multiple search-result snippets this run, NOT first-hand'
+        key_quotes:
+        - '"hugely impressive demo" (of the Meta Ray-Ban Display)'
+        - '"could totally pass for something a normal person would wear"'
+        - '"an Apple version of those glasses would be the most obvious thing in the world" (third-entity aspirational aside, noted not scored)'
+        register_notes: 'experiential-positive hands-on register; product-forward wonderment; no privacy/alarm vocabulary in the excerpted material; the piece frames Meta as credibly in the smart-glasses race'
+        privacy_vocabulary_present: false
+        byline_attribution_urls:
+        - 'https://techcratic.com/index.php/2025/10/02/the-smart-glasses-race-is-really-on-now/the-verge/the-verge/'
+        - 'https://jaypeters.net'
+        canonical_url_note: 'theverge.com canonical URL not verified this run (browser tooling hard-stopped); the techcratic.com URL is a mirror, novel to the corpus (zero pre-commit hits)'
+      snap_arm:
+        carried_from: '#833 (mechanism 731), un-rescored per #807'
+        author_byline: 'Jay Peters'
+        publication: 'the-verge'
+        title: 'I wore Snap''s $2,200 smart glasses'
+        date: '2026-09-16'
+        tone_MANUAL_ILLUSTRATIVE: 0.35
+        evidence_tier: 'carried first-hand read from #833 (133-line WeSearch mirror read, fair-use-limited) per #807; NOT re-read this run'
+        key_quotes_carried:
+        - 'playing dominoes (favorite part of wearing the Specs)'
+        - '"unlike anything I''ve tried in other VR headsets or smart glasses" (shared digital experience)'
+        - '"Snap really believes in AR glasses"'
+        privacy_vocabulary_count: 0
+        byline_attribution_urls:
+        - 'https://www.theverge.com/tech/996422/snap-specs-hands-on-ar-glasses'
+        - 'https://wesearch.press/s/i-wore-snaps-2200-smart-glasses-22a6aee7'
+      review_reference_arm:
+        carried_from: '#833 (mechanism 731), un-rescored per #807'
+        title: 'Ray-Ban Meta Gen 2 review: all-day smart glasses with the same tricky questions'
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        register_notes: 'privacy-scrutiny-forward scored-review register (title centers "tricky questions"); product merits net positive (Verge Score 7)'
+      illustrative_delta_genre_matched_snap_minus_meta: 0.05
+      delta_calc: '(0.35) - (0.30) = 0.05'
+      illustrative_delta_genre_within_entity_meta_hands_on_minus_review: 0.40
+      genre_delta_calc: '(0.30) - (-0.10) = 0.40'
+      confounders_ranked:
+        strong:
+        - 'STRONG: eleven-month temporal gap (Oct 2025 vs Sep 2026). The ambient smart-glasses privacy discourse hardened dramatically between arms: the French CNIL probe, the German data-protection complaint, and the California class action all landed in Sep 2026, AFTER the Meta arm. The Snap arm was written INTO the harsher climate yet stayed warm, which cuts against the temporal confound but does not eliminate it.'
+        - 'STRONG: product-maturity asymmetry ($799 Display dev-hardware demo vs $2,195 Specs debut consumer AR hardware). Different novelty budgets; wonderment partly tracks newness, not entity.'
+        moderate:
+        - 'MODERATE: asymmetric evidence tiers across arms. The Meta arm is excerpt-bounded (no first-hand read this run); the Snap arm is a carried first-hand read from #833 per #807. The +0.30 is thinner evidence than the +0.35.'
+        - 'MODERATE: n=1 per arm; hand-assigned illustrative tones; no scorer, no significance claimed (Aug 28 2026 discipline).'
+        weak:
+        - 'WEAK: mirror-attribution risk for the Oct-2025 arm (techcratic.com mirror, not theverge.com canonical; canonical URL provenance not verified this run).'
+        - 'WEAK: the Oct-2025 piece''s Apple-aspirational aside is a third-entity signal, noted but not scored.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: #833''s privacy-register gap still exists in the scored-review vs hands-on pair. The genre-artifact reading reattributes the +0.45 delta; it does not erase the observed review-register asymmetry.'
+      - 'COUNTEREVIDENCE: the Meta Display arm is excerpt-bounded (no first-hand read this run) while the Snap arm is carried first-hand from #833. If the excerpt missed privacy-scrutiny passages, the +0.30 overstates Meta warmth.'
+      - 'COUNTEREVIDENCE: temporal direction. The Snap arm was written in Sep 2026''s harsher privacy climate yet stayed warm. Consistent with genre-driving, but equally consistent with a Snap-specific novelty halo rather than genre per se.'
+      - 'COUNTEREVIDENCE: product price/maturity asymmetry ($799 vs $2,195) is not fully orthogonal to genre; debut-hardware wonderment and hands-on genre travel together.'
+      - 'COUNTEREVIDENCE: Peters'' Gen-2 review shows he DOES apply privacy scrutiny to Meta when the genre invites it. The journalist commands both registers, consistent with genre-driving but also with an entity-x-genre interaction.'
+      verdict: 'directionally_supported_not_proven: the genre-matched hands-on pair (+0.05 delta) fails to replicate #833''s cross-entity gap (+0.45), and the within-entity genre delta (+0.40) is eight times larger. The #833 scope bound (genre asymmetry as the DOMINANT confounder) is directly confirmed by this matched-pair replication.'
+      research_method: 'browser.search query sets this run (Jay Peters Snap Specs hands-on; Jay Peters Meta October 2025 Display piece; Jay Peters CNBC byline attempt, zero usable). browser.open hard-stopped by developer directive after the search outage: one open attempt on the techcratic mirror failed terminally, and no curl/exec substitute was used per directive. #503 excerpt-tier discipline applied to the Meta arm; #807 carry discipline applied to the Snap and review arms.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; engine NOT run on the arms per the Aug 28 2026 standing rule; no significance claimed.'
+      falsification_family: 'NOT a falsification-family member: a mechanism-731 scope-bound refinement (temporal replication with a genre-matched hands-on pair), not a uniform-prediction contradiction. Falsification ledger holds at 29.'
+      cross_refs:
+      - '#731 (mechanism 731, Type B #833: the refined mechanism)'
+      - '#833 (Type B #833: Jay Peters Meta Gen-2 review vs Snap Specs hands-on, the parent comparison)'
+      - '#269 (Ropek editorial routing / vocabulary laundering: the family #731 extends)'
+      - '#727/#728 (Sep-16 natural-experiment window: Ropek, Ashworth, Peters same-day Snap coverage)'
       - '#620 (Ropek Aug 2026 settlement/infrastructure vocabulary bifurcation - same-journalist family)'
       no_analysis_json_update: true
 
