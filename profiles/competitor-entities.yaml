@@ -20943,6 +20943,85 @@ marketplace_intermediary_landscape:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline_note: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+  cloudflare_sep15_disallow_ai_training_activation_sep2026:
+    mechanism_id: 786
+    iteration: 924
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-22'
+    time_pdt: '14:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    mechanism_name: 'Cloudflare Sep-15-2026 Disallow AI Training Default Activation: Post-Deadline Enforcement Confirmation; Training and Agent Crawlers Now Blocked by Default on Ad-Supported Pages; Mixed-Use Crawler Most-Restrictive Rule Sharpens the Googlebot Separation Test; First Corpus Activation-Verification Leg for Mechanism 726'
+    overview: 'FIRST dedicated corpus activation-verification leg for mechanism 726 (Cloudflare AI-content payment infrastructure stack): post-deadline trade-press reporting confirms the September 15, 2026 default-block went live rather than slipping. Two legs: (1) WebdesignerDepot (Alex Harper, Sep 16 2026): "On September 15, Cloudflare launched a new Disallow AI Training setting"; training-only crawlers from Amazon, Anthropic, Meta, and OpenAI can be "blocked outright" while mixed-use crawlers such as Googlebot can still crawl for search; the recommended defaults for new ad-supported sites are "let search engines in, block AI training, and block AI agents on pages where ads are detected"; Google-Extended already lets publishers restrict certain Gemini training and grounding uses without affecting Google Search ranking or inclusion. (2) Media Copilot (Sep 18 2026, correction 9/18 5:29 p.m.): from Sep 15, training and agent crawlers are blocked by default on ad-supported pages for new domains and free-tier customers, with search crawlers allowed; mixed-use crawlers are treated by their most restrictive function; Cloudflare executive Chema Alonso at Media Party Barcelona says automated traffic has overtaken human traffic on Cloudflare''s network for the first time; 52 percent of crawler requests are now tied to AI training, more than a third come from mixed-use bots; more than 20 percent of the web sits behind Cloudflare; named pay-per-use launch partners Ceramic.ai (pays for non-paywalled news surfaced in results) and You.com (pays when premium paywalled content is used in a response); Cloudflare counts more than 50 publisher-AI agreements since 2023 but acknowledges licensing is unlikely to replace all of the referral and advertising revenue publishers have lost. Incentive geometry: the activation converts the bot-blocking leverage leg of m726 from announced to operational - enforcement moves from voluntary robots.txt ("rely on bots behaving themselves") to infrastructure default; the most-restrictive-function rule forces the crawler-separation question on mixed-use operators (follow Google''s Google-Extended lead or face permit-the-whole-crawler-or-shut-it-out); the 50-plus-agreements admission bounds the licensing-as-replacement narrative inside Cloudflare''s own telling. Qualitative financial-incentive documentation leg only; no coverage-tone claim is made. Correlation is not causation.'
+    activation_facts:
+      disallow_ai_training_live: 'September 15, 2026: Cloudflare launched the Disallow AI Training setting (WebdesignerDepot, Alex Harper, Sep 16 2026).'
+      training_only_blockable: 'Training-only crawlers from Amazon, Anthropic, Meta, and OpenAI can be blocked outright (WebdesignerDepot, Sep 16 2026).'
+      recommended_defaults: 'For new ad-supported sites the recommended settings are: let search engines in, block AI training, block AI agents on pages where ads are detected (WebdesignerDepot, Sep 16 2026).'
+      default_scope: 'Starting Sep 15, training and agent crawlers are blocked by default on ad-supported pages for new domains and free-tier customers; search crawlers remain allowed (Media Copilot, Sep 18 2026).'
+      mixed_use_rule: 'Mixed-use crawlers are treated according to their most restrictive function: a bot handling both search and AI training could be blocked if training access is denied (Media Copilot, Sep 18 2026).'
+      google_extended_split: 'Since 2023 publishers can use Google-Extended, a robots.txt control, to choose whether their content trains future Gemini models; Google says it does not prevent a site from appearing in Search and is not a Search ranking signal (Media Copilot, Sep 18 2026).'
+      google_extended_limit: 'Blocking Google-Extended does NOT remove content from Google AI Overviews or AI Mode, which are considered part of Google Search (WebdesignerDepot, Sep 16 2026).'
+      media_party_barcelona: 'Chema Alonso at Media Party Barcelona: automated traffic has overtaken human traffic on Cloudflare''s network for the first time; 52 percent of crawler requests tied to AI training; more than a third from mixed-use bots; more than 20 percent of the web sits behind Cloudflare infrastructure (Media Copilot, Sep 18 2026, via The Media Stack account).'
+      pay_per_use_partners_named: 'Ceramic.ai pays for non-paywalled news surfaced in its results; You.com pays when premium paywalled content is used in a response (Media Copilot, Sep 18 2026).'
+      fifty_plus_agreements_admission: 'Cloudflare counts more than 50 publisher-AI agreements since 2023 but acknowledges licensing is unlikely to replace all of the referral and advertising revenue publishers have lost (Media Copilot, Sep 18 2026).'
+      monetization_gateway_waitlist: 'The Cloudflare Monetization Gateway (x402 stablecoin settlement) opened a waitlist July 1, 2026 with no published launch date or pricing; AWS launched a similar capability for CloudFront customers June 15, 2026 (Tech Times, Jul 2 2026 relay).'
+      visibility_layer: 'Enterprise Bot Management gains BotBase, a searchable database of every tracked bot and agent with classifications; visibility first, further controls later in 2026 (webpronews, Jul 2026 relay).'
+    incentive_geometry:
+      announced_to_operational: 'The activation converts the bot-blocking leverage leg of mechanism 726 from announced policy to operational default: enforcement no longer depends on publishers opting in or on bots behaving themselves - the network defaults to block.'
+      scarcity_mechanism_live: 'Cloudflare''s own scarcity argument (Stephanie Cohen: "reliable scarcity" leading to more licensing revenue, m726) now has an enforcement default behind it at the September 15 date; the credible threat is deployed, not promised.'
+      separation_test: 'The most-restrictive-function rule names the next test: whether other mixed-use crawlers follow Google''s Google-Extended lead and give publishers the same separation between search, AI training, and other uses; if they do not, the publisher choice is permit-the-whole-crawler or shut-it-out (Media Copilot, Sep 18 2026).'
+      admission_bounds_replacement: 'Cloudflare''s own admission that 50-plus licensing agreements will not replace lost referral and ad revenue bounds the licensing-as-replacement narrative inside the corpus - the tollbooth operator itself says tolls alone do not fill the hole.'
+      thesis_contribution: 'Verifies the m726 enforcement leg empirically (the date held; the default is live) without sizing the market - a structural confirmation leg, not a revenue measurement.'
+    connects_to: [726, 64, 412, 702, 708]
+    confounders_ranked:
+    - strength: 'STRONG'
+      text: 'Secondary sourcing: both post-deadline legs are trade-press relays (WebdesignerDepot, Media Copilot); no Cloudflare first-party post-activation announcement was verified this run (bounded absence per the iteration-492 rule; the fact the trade press treats the default as launched is documented, not Cloudflare''s own ledger).'
+    - strength: 'STRONG'
+      text: 'Launched versus deployed: the reporting documents the setting''s launch and the default rules, not adoption volume, blocked-request counts, or publisher uptake; zero disclosed figures on how many domains sit under the new default as of Sep 22.'
+    - strength: 'MODERATE'
+      text: 'Company-reported inputs: the 52-percent training share, the automated-traffic crossover, and the 20-percent-of-web scale are Cloudflare figures via Alonso and the trade press, not independently audited.'
+    - strength: 'MODERATE'
+      text: 'Googlebot treatment tension: WebdesignerDepot says mixed-use crawlers like Googlebot can still crawl for search while Media Copilot says mixed-use crawlers follow the most restrictive function; the two secondary accounts are not fully reconciled on where Googlebot lands for publishers who deny training.'
+    - strength: 'WEAK'
+      text: 'Media Copilot discloses its posts are AI-drafted and human-edited; the 9/18 correction re Google-Extended is visible, but the editorial pipeline is thinner than a newsroom''s.'
+    counterevidence:
+    - 'The buyer side of the tollbooth remains thin: the only named pay-per-use payers are Ceramic.ai and You.com; no major AI lab has announced it will pay, and the Pay Per Crawl buyer side was likewise empty through its beta year.'
+    - 'Google-Extended already gave publishers the search/training split Google-side since 2023; Cloudflare''s move does not change the AI Overviews extraction route, which draws on the search index (both secondary accounts state the Overviews caveat).'
+    - 'BotBase is visibility-first with controls "later in 2026" (webpronews); the enforcement stack is still being built out, not finished.'
+    strongest_counterargument: 'A trade-press relayed activation with no adoption figures, no disclosed blocked volume, and a buyer side limited to Ceramic.ai and You.com documents Cloudflare executing its threat layer, not publishers being paid: the default makes the block universal, but the licensing revenue it is supposed to lever remains 50-plus agreements that Cloudflare itself admits will not replace lost referral and ad revenue.'
+    verdict: 'directionally_supported_not_proven'
+    no_analysis_json_update: true
+    artifact_grade: false
+    falsification_family: 'NOT a member - qualitative Type C activation-verification leg confirming the September 15 2026 default-block date held; no coverage-tone pair, no engine, no deal-gradient prediction falsified or confirmed; the falsification ledger holds at 29 (THIRTIETH remains the negative guard).'
+    statistical_discipline:
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    sources:
+    - 'https://webdesignerdepot.com/cloudflare-just-gave-ai-training-bots-the-middle-finger/ (WebdesignerDepot, Alex Harper, Sep 16 2026, first-hand browser.open read this run: Disallow AI Training launched Sep 15; training-only crawlers from Amazon, Anthropic, Meta, OpenAI blockable outright; recommended defaults for new ad-supported sites; Google-Extended without Search penalty; Overviews/AI Mode caveat)'
+    - 'https://mediacopilot.ai/cloudflare-ai-crawler-controls/ (Media Copilot, Sep 18 2026, first-hand browser.open read this run: Sep 15 default block for new domains and free tier; mixed-use most-restrictive rule; Chema Alonso Media Party Barcelona; automated traffic crossover; 52 percent training share; Ceramic.ai and You.com partners; 50-plus agreements admission; 9/18 Google-Extended correction)'
+    - 'https://www.webpronews.com/cloudflare-hands-publishers-new-levers-against-ai-crawlers/ (Search/Agent/Training taxonomy presets; BotBase visibility database; visibility-first, controls later; via search-result excerpt, second-hand per #503)'
+    - 'https://www.techtimes.com/articles/319554/20260702/cloudflare-separates-ai-crawlers-purpose-opens-door-charging-them-directly.htm (Monetization Gateway x402 waitlist since Jul 1 2026; AWS CloudFront similar capability Jun 15 2026; via search-result excerpt, second-hand per #503)'
+    research_method: '2 browser.search query sets this run (Cloudflare Sep 15 activation reaction; Cloudflare pay-per-crawl September 15 coverage) plus 2 browser.open first-hand reads (WebdesignerDepot Sep 16 2026; Media Copilot Sep 18 2026). Pre-commit novelty greps: zero "webdesignerdepot" hits repo-wide; zero "mediacopilot.ai" hits repo-wide; zero "Chema Alonso" hits repo-wide; zero "Disallow AI Training" hits repo-wide; zero "BotBase" hits repo-wide; max numeric mechanism_id 785 pre-commit (journalists.yaml, #923); zero underscore-form 786 key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric 786-form mechanism keys repo-wide pre-commit; block key cloudflare_sep15_disallow_ai_training_activation_sep2026 zero-hit repo-wide pre-commit; no test_type_c_924 files on disk (glob); no "Type C #924" in git log (--grep). All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Bounded absences per iteration-492 rule (no adoption/blocked-volume figures; no Cloudflare first-party post-activation statement verified).'
+    novelty: 'First dedicated corpus activation-verification leg for mechanism 726: confirms the September 15 2026 Cloudflare default-block date held and went live, per post-deadline trade-press verification. Distinct from mechanism 726 (the Jan-Sep 2026 stack announcement, mapping ambition and architecture) and mechanism 64 (the crawl-block policy). In-corpus context acknowledged: m726''s stack_facts already carries the September 15 date as a scheduled milestone; this mechanism promotes that date from scheduled to executed with trade-press verification. No prior corpus mechanism documents the activation itself, the mixed-use most-restrictive rule, the Alonso Media Party Barcelona statements, or the 50-plus-agreements admission. Novelty claims pinned for the test_type_c_924 file per the #752 convention.'
+    verification:
+      iteration: 924
+      type: 'C'
+      date: '2026-09-22 14:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline_note: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
   snap_specs_enterprise_partnership_stack_sep2026:
     mechanism_id: 729
     mechanism_name: 'Snap Specs Sep-16-2026 enterprise partnership stack: four new Snap financial edges (Salesforce Agentforce, Nvidia XR AI, AWS assistant, Verizon exclusive cellular) intersect pre-existing publisher financial orbits'
