@@ -27077,6 +27077,122 @@ cross_publication_findings:
     - 712
     - 158
     - 775
+  reuters_even_realities_camera_free_solution_register_vs_meta_enforcement_register_sep22_2026:
+    finding_type: cross_publication_coverage_asymmetry
+    publication: Reuters
+    competitor: Even Realities
+    comparator_entity: Meta
+    rotation_type: A
+    iteration: 917
+    mechanism_id: 781
+    discovery_date: '2026-09-22'
+    finding: 'FIRST dedicated corpus mechanism on the Reuters Sep 22 2026 wearables category analysis as a publication x competitor pair: "From smart glasses to AI pins, privacy fears challenge tech''s next big bet" (https://www.reuters.com/business/media-telecom/smart-glasses-ai-pins-privacy-fears-challenge-techs-next-big-bet-2026-09-22/) - first-hand browser.open read this run (88 rendered lines). Within the SAME piece, Reuters routes Meta through the privacy-problem register ("The backlash against devices that can see, hear and respond to the world around them has been strongest against Meta''s Ray-Bans"; "The glasses have become a lightning rod for growing unease over AI-powered devices"; courts weighing privacy lawsuits; covert-recording fears; Wetherspoon venue restrictions; the Clarkson lawsuit alleging human annotators viewed and labeled recordings of people changing clothes, using bathrooms and handling financial information) while routing Even Realities through the camera-free solution register ("The privacy backlash has led other companies to consider glasses without cameras"; Even Realities G1 camera-free 2024 and G2 flagship Nov 2025; founder Will Wang: cameras should wait until companies can put stronger safeguards in place; $1 billion valuation in July; a few hundred thousand users expected by year-end; 90 percent consumer sales). MANUAL ILLUSTRATIVE tones: Even Realities +0.20 (solution-framed, company-sourced); Meta enforcement arms -0.45 (French prosecutors Sep 18, carried from mechanism 730) and -0.35 (German court fake-ads liability Sep 17, carried from mechanisms 730/739). Illustrative delta (Meta minus Even Realities): -0.40 - (+0.20) = -0.60. The real asymmetry scorer run once on the two illustrative arm arrays (Meta [-0.45, -0.35], Even Realities [+0.20]): asymmetry -0.60, t=0.0, p=1.0, d=-8.4853, 95 percent CI (-0.65, -0.55), engine is_significant False - corroborating observation only, NOT promoted to a finding. EXTENDS mechanisms 730/739''s Reuters Meta enforcement register with a same-category startup-solution comparator, and extends mechanism 664''s paid-deal observation (Reuters multi-year Meta AI content deal, Oct 25 2024) which does not buy softness here: Meta is still the lightning rod. p_value NOT_CALCULATED at the finding layer; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine output recorded as corroboration, verdict stays directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 29. Correlation is not causation.'
+    even_realities_arms:
+    - piece: 'From smart glasses to AI pins, privacy fears challenge tech''s next big bet - camera-free alternatives section'
+      date: '2026-09-22'
+      source_routing: reuters_original_firsthand_read
+      register: solution_framing_company_sourced
+      key_language:
+      - 'The privacy backlash has led other companies to consider glasses without cameras.'
+      - 'Even Realities, a Shenzhen-based startup founded by former Apple engineer Will Wang, introduced its camera-free G1 glasses in 2024. Its latest flagship, the G2, launched in November 2025.'
+      - 'Wang told Reuters in July that consumers increasingly associate smart glasses with covert recording and that cameras should wait until companies can put stronger safeguards in place.'
+      - 'The company, whose valuation hit $1 billion in July, expects to end the year with a few hundred thousand users.'
+      tone_illustrative: 0.2
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand browser.open read (88 rendered lines); solution-framed company-sourced register; illustrative only'
+      evidence_tier: 'firsthand_read: full article text via browser.open this run'
+      source_url: https://www.reuters.com/business/media-telecom/smart-glasses-ai-pins-privacy-fears-challenge-techs-next-big-bet-2026-09-22/
+    meta_arms:
+    - piece: French prosecutors and regulators step up scrutiny on smart glasses
+      date: '2026-09-18'
+      source_routing: corpus_documented_arm_carried
+      register: adversarial_enforcement
+      key_language:
+      - French prosecutors and regulators step up scrutiny
+      tone_illustrative: -0.45
+      tone_basis: 'MANUAL ILLUSTRATIVE carried from mechanism 730 (Reuters x Anthropic, #832); not re-read this run; illustrative only'
+      carried_from: mechanism 730; URL https://www.reuters.com/technology/french-prosecutors-regulators-step-up-scrutiny-smart-glasses-2026-09-18/
+    - piece: German court rules Meta liable for fake ads on Instagram, Facebook
+      date: '2026-09-17'
+      source_routing: corpus_documented_arm_carried
+      register: adversarial_liability
+      key_language:
+      - German court rules Meta liable for fake ads
+      tone_illustrative: -0.35
+      tone_basis: 'MANUAL ILLUSTRATIVE carried from mechanisms 730/739; not re-read this run; illustrative only'
+      carried_from: mechanisms 730/739; URL https://www.reuters.com/legal/litigation/german-court-rules-meta-liable-fake-ads-instagram-facebook-2026-09-17/
+    - piece: WITHIN-PIECE contemporaneous Meta problem-register (not a scored arm)
+      date: '2026-09-22'
+      source_routing: reuters_sep22_piece_meta_sections
+      register: adversarial_privacy_problem
+      key_language:
+      - 'The backlash against devices that can see, hear and respond to the world around them has been strongest against Meta''s Ray-Bans'
+      - 'The glasses have become a lightning rod for growing unease over AI-powered devices'
+      - 'human annotators viewed and labeled recordings of people changing clothes, using bathrooms and handling financial information'
+      tone_illustrative: null
+      tone_basis: 'register context only, NOT a scored arm; shows the outlet routes Meta through the privacy-problem register within the SAME Sep-22 piece that routes Even Realities through the solution register'
+      scored_arm: false
+    asymmetry_scorer:
+      meta_arm_tones:
+      - -0.45
+      - -0.35
+      meta_arm_avg: -0.4
+      even_realities_arm_tones:
+      - 0.2
+      even_realities_arm_avg: 0.2
+      illustrative_delta_meta_minus_even_realities: -0.6
+      delta_calc: '((-0.45 + -0.35) / 2) - (0.20) = -0.40 - 0.20 = -0.60'
+      delta_interpretation: 'same-category source-routing gradient: Reuters'' Meta enforcement arms (-0.40 avg) sit deep adversarial while the Even Realities camera-free arm (+0.20) sits solution-positive; the -0.60 spread is illustrative only and statistically silent'
+      engine_run:
+        run_by: 'mediascope.score.asymmetry.calculate_asymmetry on the two illustrative arm arrays this run (venv python)'
+        target_scores:
+        - -0.45
+        - -0.35
+        peer_scores:
+        - 0.2
+        asymmetry_score: -0.6
+        t_statistic: 0.0
+        p_value: 1.0
+        cohens_d: -8.4853
+        ci_95:
+        - -0.65
+        - -0.55
+        engine_is_significant: false
+        role: 'corroborating observation only - NOT promoted to a finding; finding-layer is_significant stays false per the Aug 28 2026 standing rule'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_small_n_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run (1 first-hand Even Realities arm; 2 carried Meta arms); tones are illustrative only'
+      verdict: 'Same-category source-routing gradient documented, not proven: within one Reuters analysis, Meta is the privacy problem (-0.40 avg enforcement register) while Even Realities is the camera-free solution (+0.20), a -0.60 illustrative spread, and the real scorer agrees on the arithmetic (p=1.0, CI (-0.65, -0.55), engine is_significant False). The gradient is product-true in part (Even Realities genuinely ships no camera) and peg-mismatched in part (enforcement news vs company-profile section), so it does not isolate an incentive effect. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      reuters_meta_content_deal: 'Reuters multi-year paid Meta AI content deal (announced Oct 25 2024; mechanism 664): the deal predicts softer Meta coverage, but this piece still makes Meta the lightning rod - extends 664''s observation without joining the falsification family'
+      reuters_even_realities_content_deal: 'No documented Reuters-Even Realities content-licensing deal (bounded absence, not a proven zero); the mechanism does not assert one'
+      prediction: 'Paid-deal pole (Reuters-Meta) vs no-tie pole (Reuters-Even Realities): the harder register lands on the PAID side, opposite to a deal-buys-softness prediction; consistent with mechanism 664'
+      m664_linkage: 'Extends mechanism 664 (#664 Type C): hard Reuters Meta accountability despite the paid AI content deal; this Sep-22 piece is another instance'
+      m730_m739_linkage: 'Extends mechanisms 730 (#832) and 739 (#847): the Reuters Meta enforcement register (-0.45/-0.35) is the stable comparator; this run adds the startup-solution comparator'
+    confounders:
+    - 'STRONG: Product-true privacy difference - Even Realities G1/G2 genuinely ship with no camera, so the solution framing tracks a real product attribute, not necessarily an editorial preference.'
+    - 'STRONG: Peg mismatch - Meta arms are enforcement/litigation news (French prosecutors, German court liability) while the Even Realities arm is a company-profile section inside a trend analysis; different news pegs legitimately produce different registers.'
+    - 'Meta market-leader status draws scrutiny: the piece notes Meta made smart glasses mainstream, so Meta-first problem framing may track newsworthiness, not bias.'
+    - 'n=1 Even Realities arm: single-section peer side; the scorer is degenerate (t=0.0, p=1.0 on n=1 peer) and recorded as corroboration only, NOT promoted.'
+    - 'The Sep-22 piece includes Meta''s defense (non-disableable indicator light, camera disabled if light tampered, denial of lawsuit allegations, industry-common data review with identifying info filtered) and notes Meta may unveil camera-free glasses at Connect - the piece is not one-sided.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The piece carries Meta''s safeguards and denials in its own voice (indicator light, tamper-disable, lawsuit denial, common-practice data review), against a claim of uniformly adversarial Meta routing.'
+    - 'COUNTEREVIDENCE: The piece notes Meta is expected to unveil camera-free smart glasses at Connect - Reuters grants Meta the same solution vector it grants Even Realities.'
+    - 'COUNTEREVIDENCE: Mechanism 664 - Reuters'' paid Meta AI deal coexists with hard Meta accountability coverage; the lightning-rod framing here is another such instance, incentive-inconsistent with deal-buys-softness.'
+    - 'COUNTEREVIDENCE: The piece also covers Samsung (partnership approach), OpenAI (Altman local-processing vision), Pocket and Plaud neutrally - it is a category survey, not a Meta-targeted piece; the Meta-hard/Even Realities-soft contrast sits inside broader neutral category coverage.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Real asymmetry scorer run once on the two illustrative arm arrays as a corroborating observation (asymmetry -0.60, t=0.0, p=1.0, d=-8.4853, 95 percent CI (-0.65, -0.55), engine is_significant False); engine output NOT promoted to a finding. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: same-category register documentation, not a uniform-prediction test. Ledger holds at 29 - TWENTY-NINTH present, THIRTIETH absent.'
+    research_method: 'Pre-run candidate selection via browser.search sets (Reuters Sep-22 wearables analysis SELECTED; FT/OpenAI cash-burn REJECTED as already represented in corpus; NYT/OpenAI labor-theft litigation REJECTED as already represented via NYT-led MDL mechanisms; WSJ/Anthropic IPO REJECTED as already represented by mechanism 733; Guardian comparator - no useful Guardian arms surfaced). 1 browser.open first-hand read this run (Reuters primary URL, 88 rendered lines). The Sep-22 Reuters URL zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit. Novelty: zero test_type_a_917 files on disk pre-commit (glob); no "Type A #917" in git log pre-commit (--grep); max numeric mechanism_id 780 pre-commit (779 committed in profiles/careers/journalists.yaml, 780 committed in profiles/competitor-entities.yaml); zero underscore-form 781 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero dash-form 781 references pre-commit; zero numeric 781 keys in profiles/ pre-commit. Even Realities entity is NOT first-to-corpus (pre-existing hits in competitor-coverage-research.yaml and cross-entity tests) - novelty is the Reuters Sep-22 piece and this publication x competitor pair. Real asymmetry scorer run once on the two illustrative arm arrays: asymmetry -0.60, t=0.0, p=1.0, d=-8.4853, 95 percent CI (-0.65, -0.55), engine is_significant False (corroborating observation only, NOT promoted to a finding). All URLs copied verbatim from prior tool output; no canonical URLs constructed. ASCII-only, no em dashes.'
+    test_file: tests/test_type_a_917_reuters_even_realities_camera_free_solution_vs_meta_enforcement_sep22_7am.py
+    connects_to:
+    - 730
+    - 739
+    - 664
+    - 717
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
 
