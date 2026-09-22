@@ -65,7 +65,7 @@ MECH_KEY_PREFIX = "reuters_even_realities_camera_free_solution_register"
 M_ID = 781
 ITER = 917
 TYPE_LETTER = "A"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a30d81f4c1075bc0c352c742299adb1d33b15fd6"
 
 # Format-built needles per the #715 convention: no literal underscore-form,
 # numeric, or dash-form 781 mechanism markers are carried in this file.
