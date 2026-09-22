@@ -21719,3 +21719,93 @@ mariella_moon:
       correlation_note: 'Correlation is not causation.'
       research_method: '11 browser.search query sets + 1 browser.open this run ((1) Meta Luna byline discovery - PetaPixel/TechCrunch result sets, Ropek byline in corpus via #863, REJECTED; (2) Emma Roth Verge Snap Specs - REJECTED (no clean bylined pair); (3) Adi Robertson Verge smart glasses - REJECTED (in corpus via mechanism 230); (4) David Pierce Verge smart glasses - REJECTED (in corpus); (5) Mariella Moon Engadget Snap Specs - no clean Moon Snap arm (Karissa Bell hands-on surfaced, in corpus via mechanism 295), REJECTED; (6) Sean Hollister Verge smart glasses - REJECTED (in corpus); (7) Tom''s Guide "pervert glasses" antidote Luna piece - byline not established, REJECTED; (8) Mariella Moon Engadget iPhone 17 - surfaced Moon''s Engadget author page (associate editor, beats) plus the Sep-12 RubyGems arm - SELECTED as the OpenAI comparator; (9) Engadget Snap Specs hands-on - Karissa Bell byline in corpus, REJECTED; (10) Mariella Moon RubyGems - SELECTED (verbatim Engadget URL + register excerpts); (11) "OpenAI agents hacked a software service before the Hugging Face incident" - verbatim URL + full-excerpt corroboration, SELECTED). Pre-compaction ruling-out this run: Lily Hay Newman (no new Sep-18 WIRED arm; mechanism 635 covers Newman Meta-vs-Apple trust framing), Lauren Goode / Julian Chokkattu (no usable Sep-16 Snap bylines), Jay Peters (Sep-16 Snap piece + positive 2025 Meta retail coverage already in mechanism 731), Dominic Preston (Sep-16 Luna piece already mechanism 734), Boone Ashworth / Daniel Cooper (recent Type B subjects, mechanisms 743/755). 1 browser.open on the WeSearch mirror for canonical-URL provenance extraction ONLY (Engadget originals not first-hand read; register excerpt-bounded per #503). Pre-commit novelty sweeps per #715: zero test_type_b_883 files on disk (glob); no Type B #883 in git log (--grep); max numeric mechanism_id 760 pre-commit; zero underscore-form 761 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero numeric 761 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; "mariella_moon" top-level slug zero-hit repo-wide pre-commit; Luna URL (2259838) zero-hit repo-wide pre-commit; RubyGems URL (2256741) DISCLOSED exception (one occurrence in profiles/guardian.yaml as unattributed peer-coverage corroboration URL, never byline-attributed or register-analyzed - first dedicated Moon-arm analysis this run). All URLs copied verbatim from Full-URL listings and the WeSearch provenance record; no canonical URLs constructed; no zero-coverage claims per the #492 rule. Rejected-candidate reversal: Type B #873 (mechanism 755) ruled Moon out as primary for lack of a same-journalist competitor arm; the Sep-12 RubyGems byline supplies it. ASCII-only, no em dashes.'
       test_file: tests/test_type_b_883_mariella_moon_engadget_luna_neutral_relay_vs_rubygems_accountability_sep20_2pm.py
+
+eric_hal_schwartz:
+  name: Eric Hal Schwartz
+  current_role: Freelance writer
+  current_publication: TechRadar
+  publication_owner: Future plc
+  beats:
+  - AI
+  - AI assistants / agents
+  - ChatGPT
+  - Google Gemini
+  - synthetic media
+  notes: 'TechRadar freelance writer (author bio: 15+ years covering the intersection of technology and the world; five years as head writer for Voicebot.ai on the generative-AI/LLM beat; expert on ChatGPT, Claude, Gemini and synthetic media tools; based in New York City). Novel to the corpus this run (zero pre-commit hits repo-wide; the one "schwartz" hit is EFF''s Adam Schwartz in the #728 test - unrelated). Byline on two Sep-2026 first-person AI-assistant inbox-access hands-on tests about three weeks apart: the ~Sep-1-2026 ChatGPT event-triggered-tasks Gmail test (utility-positive, zero privacy/access-friction vocabulary) and the mid-Sep-2026 Meta Muse hands-on (inbox-read + email-write permission; access-friction foregrounded as "the hard part"). Type B #908 (Sep 21 2026): mechanism 776 - writer-level access-friction register asymmetry, AI-assistant category extension of m773 (see competitor_coverage block). NOT a falsification-family member; ledger holds at 29.'
+  mechanism_ids:
+  - 776
+  source_urls:
+  - https://www.techradar.com/author/eric-hal-schwartz/page/3
+  - https://www.techradar.com/ai-platforms-assistants/i-closed-my-inbox-and-waited-to-see-how-the-afternoon-went-i-gave-chatgpt-permission-to-watch-my-inbox-then-stopped-checking-my-email
+  - https://winbuzzer.com/2026/09/21/metas-muse-ai-agent-tops-us-iphone-free-app-chart-a003-xcxwbn/
+  - https://www.pymnts.com/news/artificial-intelligence/2026/metas-muse-tops-chatgpt-as-ai-agents-head-for-checkout/
+  competitor_coverage:
+    type_b_908_eric_hal_schwartz_techradar_muse_vs_chatgpt_inbox_access_friction:
+      block_key: type_b_908_eric_hal_schwartz_techradar_muse_vs_chatgpt_inbox_access_friction
+      mechanism_id: 776
+      iteration: 908
+      type: B
+      date: '2026-09-21 22:00 PDT'
+      test_file: tests/test_type_b_908_eric_hal_schwartz_techradar_muse_vs_chatgpt_inbox_access_friction_sep21_10pm.py
+      design: 'Within-journalist cross-entity register comparison: same writer (Eric Hal Schwartz), same outlet (TechRadar), same genre (first-person hands-on test), same product category (consumer AI assistants granted inbox access), Meta vs OpenAI, about two to three weeks apart in Sep 2026. Tests whether the access-friction / privacy register Schwartz foregrounds on Meta''s Muse also fires on OpenAI''s ChatGPT under matched access conditions.'
+      finding: 'Access-friction register asymmetry: Schwartz foregrounds granting access as "the hard part" of his Meta Muse hands-on (inbox-read + email-write permission), while his ChatGPT hands-on - which connected his Gmail with a deliberately broad trigger - carries ZERO privacy or access-friction vocabulary across 90 first-hand-read lines. Illustrative delta (Meta minus OpenAI) -0.20. Same writer, same outlet, same genre, same AI-assistant category.'
+      meta_arm:
+        outlet: TechRadar
+        author_byline: Eric Hal Schwartz
+        title: 'Meta Muse hands-on (title not recovered; relayed via winbuzzer and PYMNTS Sep 21 2026)'
+        date: '2026-09-mid (relayed 2026-09-21)'
+        relay_winbuzzer: https://winbuzzer.com/2026/09/21/metas-muse-ai-agent-tops-us-iphone-free-app-chart-a003-xcxwbn/
+        relay_pymnts: https://www.pymnts.com/news/artificial-intelligence/2026/metas-muse-tops-chatgpt-as-ai-agents-head-for-checkout/
+        key_quotes:
+        - 'TechRadar''s Eric Hal Schwartz gave Muse access to his inbox and permission to write emails. It noticed an unread utility-company message, asked him to choose dates and prepared a reply for approval. (winbuzzer relay)'
+        - 'A TechRadar reviewer tested Muse on a low-stakes purchase of shorts. The agent asked his size and returned in a couple of minutes with options and a sale price. He then gave Muse permission to read his inbox and write on his behalf. It found an unopened notice from his power company about a solar panel inspection. He picked a visit date, and a drafted reply was waiting for his approval a minute later. Both tasks worked. Giving access was the hard part. (PYMNTS relay)'
+        evidence_tier: 'EXCERPT-TIER, dual-relay corroboration (winbuzzer + PYMNTS, consistent details: shorts purchase, power-company solar-panel inspection notice, drafted reply awaiting approval, "Giving access was the hard part"). TechRadar original not first-hand read this run (outlink resolution failed on bare-domain link targets; not retried per the turn constraint). Register reading bounded by relay fidelity per #503.'
+        tone_MANUAL_ILLUSTRATIVE: 0.1
+      openai_arm:
+        outlet: TechRadar
+        author_byline: Eric Hal Schwartz
+        title: 'I closed my inbox and waited to see how the afternoon went - I gave ChatGPT permission to watch my inbox, then stopped checking my email'
+        url: https://www.techradar.com/ai-platforms-assistants/i-closed-my-inbox-and-waited-to-see-how-the-afternoon-went-i-gave-chatgpt-permission-to-watch-my-inbox-then-stopped-checking-my-email
+        date: '2026-09-01'
+        key_quotes:
+        - 'I decided to use the feature as an aggressively selective email assistant. ChatGPT could watch everything arriving in my inbox, but it was only allowed to interrupt me when a message created an actual obligation, and it should suggest how to respond and have a draft ready to go.'
+        - 'every new email could prompt a run, but only messages meeting my criteria were supposed to produce an alert.'
+        - 'I closed my inbox and waited to see how the afternoon went.'
+        - 'The absence of constant email checks made the afternoon feel longer in a good way.'
+        - 'Nothing terrible happened because I didn''t see a promotional email at the moment of delivery.'
+        - 'It''s a feature worth trialing.'
+        - 'This one worked because it knew when to leave me alone.'
+        privacy_vocabulary_count: 0
+        access_friction_vocabulary_count: 0
+        evidence_tier: 'FIRST-HAND this run (90 rendered lines read; byline block confirms Eric Hal Schwartz, TechRadar freelance writer, AI beat). Zero privacy or access-friction vocabulary in the surfaced text.'
+        tone_MANUAL_ILLUSTRATIVE: 0.3
+      illustrative_delta_meta_minus_openai: -0.2
+      delta_calc: '(0.10) - (0.30) = -0.20'
+      two_entity_band: [0.1, 0.3]
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+      confounders:
+      - '[STRONG] Product-scope asymmetry: Muse requests broad account connections (email, banking, health, per the relays'' product context) while the ChatGPT test used a scoped Gmail trigger with informational-only output - the access-friction register may be product-justified rather than entity-driven.'
+      - '[STRONG] Write-permission asymmetry: Muse received inbox-read PLUS email-write permission; the ChatGPT test was explicitly informational-only ("the AI shouldn''t reply without my input") - the stakes of access genuinely differed.'
+      - '[MODERATE] Timing/discourse asymmetry: the ChatGPT piece ran ~Sep 1 (pre-Muse-launch); the Muse piece ran mid-Sep amid an active privacy discourse (Roth''s Verge "unnerving amount of information" hands-on, Instinct unauthorized-email reports) - ambient peg pressure differs.'
+      - '[MODERATE] Evidence-tier asymmetry: the Muse arm is excerpt-tier (dual-relay) while the ChatGPT arm is first-hand - the "hard part" foregrounding is bounded by relay fidelity and could compress UX friction into a privacy reading.'
+      - '[WEAK] Schwartz covers AI agents as a beat generalist; no documented Future-plc/OpenAI or Future-plc/Meta licensing deal predicts a uniform direction at writer level.'
+      counterevidence:
+      - 'Schwartz''s own TechRadar headline on OpenAI''s device - "OpenAI''s new device promises serenity, but its always-on surveillance will make it anything but peaceful to own" - shows he DOES fire the privacy register on OpenAI when the product warrants it (headline-tier, disclosed); the register is product-gated, not entity-gated, which supports the product-justified reading of the Muse/ChatGPT gap.'
+      - 'The Muse piece''s "Giving access was the hard part" is ambiguous between privacy distrust and UX friction (permission-flow difficulty) - the relays do not resolve which; the finding claims foregrounding, not motive.'
+      - 'm773 (Bell) found the same directional asymmetry (privacy register on Muse, silent on the competitor) with Snap as the competitor - this run replicates the direction with a new writer and OpenAI, but replication of direction is not independent confirmation of mechanism.'
+      - 'The ChatGPT piece''s broad trigger ("every new email could prompt a run") with zero privacy reflection may reflect Schwartz''s beat-generalist utility register rather than OpenAI trust - he may simply not do privacy registers for scoped tests.'
+      connects_to:
+      - 113
+      - 722
+      - 764
+      - 773
+      - 605
+      - 753
+      verdict: 'directionally_supported_not_proven'
+      falsification_family: 'NOT a falsification-family member (directional register asymmetry, not a near-null or inversion; no uniform-softening prediction under test; ledger holds at 29)'
+      no_analysis_json_update: true
+      ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+      is_significant: false
+      correlation_not_causation: true
+      correlation_note: 'Correlation is not causation.'
+      research_method: '21 browser.search query sets + 4 browser.open this run. REJECTED candidates this run: Victoria Song (m719/#813 already did the exact Song Display-vs-Watch-12 pair); Karissa Bell (m773 just did Bell Muse-vs-Specs-Intelligence); Cherlynn Low (m150 + Apple Audio Intelligence controls); Lisa Eadicicco (m123); Brenda Stolyar (m704); Jay Peters / Julian Chokkattu / Joanna Stern / Mark Gurman / Alex Heath (corpus-present); Mariella Moon (m761/#883 just did Moon Luna-vs-RubyGems); Ian Carlos Campbell (in-flight #898/m770 owns him - concurrency protocol); Allison Johnson / Dan Seifert (no corpus presence, no clean pair); Vanessa Hand Orellana (no confirmed same-writer Meta arm); Scott Stein (prior corpus treatment); Brian Heater (three-entity natural experiment mechanismized); Emma Roth (corpus-present via #792/#883, Roth Muse hands-on noted as future arm). SELECTED: Eric Hal Schwartz - (13)-(15) Meta Muse bylines surfaced him via the winbuzzer relay ("TechRadar''s Eric Hal Schwartz gave Muse access to his inbox and permission to write emails"); (17)-(18) comparator search surfaced his TechRadar ChatGPT inbox-watch piece (~Sep 1 2026); (19) PYMNTS relay confirmed the Muse-piece details (shorts purchase, power-company solar-panel inspection notice, drafted reply awaiting approval) plus "Giving access was the hard part"; (20)-(21) URL recovery attempts - outlink resolution failed on bare-domain link targets, proceeded excerpt-tier per #503 with dual-relay corroboration. browser.open: winbuzzer Muse chart piece (113 lines, Schwartz relay captured), PYMNTS Muse piece (62 lines, Schwartz relay captured), TechRadar ChatGPT inbox piece FIRST-HAND (90 lines, zero privacy vocabulary), targeted search-result page. 2 browser.open calls failed on outlink_idx (bare-domain targets); not retried per the turn constraint. All URLs copied verbatim from Full-URL listings. No URL construction. No zero-coverage claims per #492. ASCII-only, no em dashes.'
