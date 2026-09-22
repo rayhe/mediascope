@@ -76,7 +76,7 @@ MECH_KEY = "type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep10"
 M_ID = 782
 ITER = 918
 TYPE_LETTER = "B"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "b762b5ca1705c91518effcaca3324deb8d050c2d"
 
 # Format-built needles per the #715 convention: no literal underscore-form,
 # numeric, or dash-form 782 mechanism markers are carried in this file.
