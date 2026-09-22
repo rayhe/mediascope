@@ -9,8 +9,8 @@ Tracks how podcasts frame Meta, wearables, AI, and competitors. Complements the 
 | Source | Type | Status | Notes |
 |--------|------|--------|-------|
 | Everyone Hates Elon | **Activist group** (not a podcast) | Active | London-based guerrilla campaign group targeting Meta glasses. Coverage amplified via other podcasts. |
-| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 106 verification cycles through Sep 22 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). [ERRATUM: #861's cycle section recorded "Tracked Sources 94->95" but left this row at 94; advanced 94->96 this run, covering both the #861 and #866 no-match cycles.] |
-| The Guilty Feminist | **Podcast** (Deborah Frances-White) | Active, 501 numbered episodes (Sep 21 2026) | UK feminist comedy podcast, TOP 0.01% global rank. Tech-relevant episodes cover algorithms, Palantir/surveillance, and gendered tech critique. Numbered-episode 500 watch RESOLVED Mon Sep 14 2026: "Five Hundredth Episode with Kate Cheka and the Palestinian Circus" (58 mins, recorded Aug 22 2026 at Gilded Balloon at the Museum; two-directory corroboration au.radio.net + goloudnow, crawled 4-5h); title/description carry zero Meta/wearables content (snippet-bounded); no tone score asserted (no first-hand read). Numbered-episode 501 watch RESOLVED Mon Sep 21 2026 19:00 PDT (#906, 104th cycle): "The Guilty Feminist 501. Out North East" - Deborah Frances-White and Alison Spittle with Peter Darrant and Sunday Hicks; recorded 4 Sep 2026 at Live Theatre in Newcastle; Released 21 September; 01:40:58 (listennotes.com main directory, crawled 3h; uk-podcasts.co.uk "Latest episode: 2026-09-21" signal corroborated as the 501 indicator, second directory); title/description carry zero Meta/wearables content (snippet-bounded); no tone score asserted (no first-hand read). FIRST-PARTY official-site confirmation at #911 (105th cycle, Sep 22 2026): guiltyfeminist.com/new-normal/ (crawled 19h) lists \"501. Out North East with Alison Spittle, Peter Darrant and Sunday Hicks. Published: 21 September 2026\" as the latest episode, extending #906's two-directory corroboration (listennotes + uk-podcasts) to a third, first-party source (supersedes the #796 carry-forward crawl reference). Re-confirmed at #916 (106th cycle, Sep 22 2026): listennotes main (crawled 6h) still 501 at top; uk-podcasts "Latest episode: 2026-09-21" 501-signal corroboration carried; podparadise still lags at 499; podscan.fm + official-site did NOT surface this run (remain in corpus); no episode 502; zero Meta/wearables content across all 106 cycles (bounded search-result absence). |
+| Attention Sphere | **No matching podcast found** (task spec name misidentified as a podcast) | 107 verification cycles through Sep 22 2026, all no-match as a podcast | Ava Smithing's located show is Left to Their Own Devices (Toronto Star). FIRST POSITIVE IDENTITY Sep 7 2026 (#591): anti-Meta-glasses advocacy group with named executive director Kendall Schrohe, "one of the advocacy groups affiliated with the anti-Meta glasses ads in DC and New York City" (raleighnewstoday.com, new-to-corpus outlet, snippet-bounded). [ERRATUM: #861's cycle section recorded "Tracked Sources 94->95" but left this row at 94; advanced 94->96 this run, covering both the #861 and #866 no-match cycles.] |
+| The Guilty Feminist | **Podcast** (Deborah Frances-White) | Active, 501 numbered episodes (Sep 21 2026) | UK feminist comedy podcast, TOP 0.01% global rank. Tech-relevant episodes cover algorithms, Palantir/surveillance, and gendered tech critique. Numbered-episode 500 watch RESOLVED Mon Sep 14 2026: "Five Hundredth Episode with Kate Cheka and the Palestinian Circus" (58 mins, recorded Aug 22 2026 at Gilded Balloon at the Museum; two-directory corroboration au.radio.net + goloudnow, crawled 4-5h); title/description carry zero Meta/wearables content (snippet-bounded); no tone score asserted (no first-hand read). Numbered-episode 501 watch RESOLVED Mon Sep 21 2026 19:00 PDT (#906, 104th cycle): "The Guilty Feminist 501. Out North East" - Deborah Frances-White and Alison Spittle with Peter Darrant and Sunday Hicks; recorded 4 Sep 2026 at Live Theatre in Newcastle; Released 21 September; 01:40:58 (listennotes.com main directory, crawled 3h; uk-podcasts.co.uk "Latest episode: 2026-09-21" signal corroborated as the 501 indicator, second directory); title/description carry zero Meta/wearables content (snippet-bounded); no tone score asserted (no first-hand read). FIRST-PARTY official-site confirmation at #911 (105th cycle, Sep 22 2026): guiltyfeminist.com/new-normal/ (crawled 19h) lists \"501. Out North East with Alison Spittle, Peter Darrant and Sunday Hicks. Published: 21 September 2026\" as the latest episode, extending #906's two-directory corroboration (listennotes + uk-podcasts) to a third, first-party source (supersedes the #796 carry-forward crawl reference). Re-confirmed at #916 (106th cycle, Sep 22 2026): listennotes main (crawled 6h) still 501 at top; uk-podcasts "Latest episode: 2026-09-21" 501-signal corroboration carried; podparadise still lags at 499; podscan.fm + official-site did NOT surface this run (remain in corpus); no episode 502; zero Meta/wearables content across all 106 cycles (bounded search-result absence). Re-confirmed at #921 (107th cycle, Sep 22 2026): listennotes main (crawled 11h) still 501 at top; uk-podcasts/podparadise/podscan.fm/official-site did NOT surface this run (remain in corpus); no episode 502; zero Meta/wearables content across all 107 cycles (bounded search-result absence). |
 
 ### Secondary Sources (discovered via research)
 
@@ -15120,3 +15120,60 @@ Recency frontier: HOLDS at Sep 18 (the nypost Sep-18 piece remains the newest-in
 ### Test file
 
 - tests/test_type_e_916_podcast_sentiment_106th_verification_sep22_6am.py
+
+## Iteration #921 - One-hundred-seventh Cycle (Sep 22 2026, 11:00 PDT)
+
+### The Guilty Feminist
+
+**EPISODE 501 CONFIRMED AGAIN THIS RUN.** The listennotes.com main directory (crawled 11h) still lists at top: "The Guilty Feminist 501. Out North East" - Presented by Deborah Frances-White and Alison Spittle with special guests Peter Darrant and Sunday Hicks; Recorded 4 September 2026 at Live Theatre in Newcastle; Released 21 September; 01:40:58. 761 episodes. The stale PT listennotes mirror (crawled 221d) shows 469 at top. The goloudnow directory family re-surfaced as exact-URL variants (197 Too Much or Not Enough / 350 International Women's Day 2023 / 320 Live from Glasgow; crawled 11d/44d/12d): same in-corpus directory family as the goloudnow.com/podcasts/the-guilty-feminist-152 key (18 corpus files), not new URL keys. uk-podcasts.co.uk, PodParadise, podscan.fm, and the official guiltyfeminist.com/new-normal/ (FIRST-PARTY 501 confirmation at #911) did NOT surface this run; all remain in corpus, nothing de-logged. No episode 502 surfaced anywhere (weekly cadence puts the next numbered episode plausibly near Sep 26-28; six-day absence is consistent with cadence, not a signal).
+
+FIVE results this run, ALL previously-logged URL keys (each >=1 corpus hit pre-commit): ZERO new GF URL keys this run. No episode 502 surfaced anywhere.
+
+ZERO Meta/wearables content in any GF episode across all 107 cycles (bounded search-result absence, not proof of non-existence).
+
+### Everyone Hates Elon
+
+43-day hold continues (Aug 10 Epstein spoof -> Sep 22; date(2026,9,22)-date(2026,8,10)=43 days; regression guard on the #846/#851 47/48 arithmetic slips retained; do not relabel as 42-day, that number belonged to Sep 21). 7 results: 1 circular own-repo GitHub blob (rejected, not ingested) + 6 previously-logged EHE keys (each >=1 hit pre-commit). ZERO new URL keys this run.
+
+Previously-logged EHE keys observed this run:
+- https://community.designtaxi.com/topic/34124-jeffrey-epstein-appears-to-model-meta-ray-bans-smart-glasses-on-new-ads/ (Epstein-ad community thread; crawled 6h)
+- https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612 (Kylie lenticular piece; in corpus since #465; crawled 9h)
+- https://d33gy59ovltp76.cloudfront.net/news/london-bus-stop-poster-brutally-mocks-kylie-jenner-and-metas-ai-glasses-its-giving-fascism (IBTimes UK Kylie-poster mirror; crawled 2d)
+- https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Karissa Bell Jul-16 bus-stops original report; surfaced again this run, crawled 22h; in corpus, not a new key)
+- https://community.designtaxi.com/topic/33476-activist-group-hijacks-kylie-jenners-meta-smart-glasses-ads-with-sharp-privacy-warnings-across-london/ (Kylie lenticular hijack; crawled 2h)
+- https://www.techtimes.co.uk/activists-challenge-meta-ray-ban-smart-glasses-london-1808470 (amnesty-boxes campaign phase; in corpus since #886; crawled 9h)
+- The quoted-search's own-repo GitHub result was rejected as circular, not ingested.
+- The softonic.com Epstein-poster re-surface and the singulism.com bus-stop strand did NOT surface this run (remain in corpus).
+
+Last campaign phase remains the circa Aug 24 amnesty-boxes strand alongside the Aug 10 Epstein poster. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 107 cycles (bounded search-result absence).
+
+### Attention Sphere
+
+The quoted "Attention Sphere" search returned no matching podcast (one-hundred-seventh no-match). 7 results were all this repository's own GitHub URLs, rejected as circular, not ingested: the podcast-sentiment.md blob plus the same 6 commit URLs as #846 through #916 (a288c86/a2b656f/9590385/2c4e21e/25c730e/3d16eac). Task-spec name remains misidentified as a podcast. Tracked Sources advanced 106->107. Real-world identity stands per #591 (advocacy group with named executive director Kendall Schrohe).
+
+### Press surfaces
+
+SEVEN results observed, ALL previously-logged URL keys (>=1 corpus hit pre-commit): ZERO new press URL keys this run. Snippet-bounded, tone NOT_SCORED.
+
+Previously-logged press keys observed this run:
+- https://ppc.land/hamburg-regulator-finds-ray-ban-meta-glasses-expose-bystanders-without-consent/ (Hamburg HmbBfDI Sep-10 bystander-consent GDPR finding; crawled 3h)
+- https://www.livemint.com/technology/tech-news/meta-ray-ban-smart-glasses-could-store-voice-recordings-by-default-what-it-means-for-users/amp-11746118684276.html (stale 339d crawl; voice-recordings-default piece)
+- https://9to5google.com/2026/08/28/meta-ray-ban-smart-glasses-privacy-led-loophole-update/ (Aug 28 LED loophole firmware; crawled 23h)
+- https://startupfortune.com/meta-permanently-disables-cameras-on-thousands-of-tampered-smart-glasses/ (RE-SURFACED again this run; crawled 4h; in corpus via #881; NOT a new key)
+- https://www.webpronews.com/germanys-privacy-push-targets-meta-ray-ban-glasses-with-criminal-filing/ (HateAid Aug-11 criminal-complaint piece; in corpus via #866/#871; crawled 8h)
+- https://www.recordinglaw.com/news/meta-ray-ban-smart-glasses-privacy-scandal/ (recording-law FAQ: Bartone v. Meta class action + Swedish contractor investigation; in corpus; crawled 1h)
+- https://www.webpronews.com/metas-new-smart-glasses-update-shuts-down-camera-on-privacy-light-tampering/ (LED-tampering camera-disable; in corpus from #876; crawled 8h)
+
+Did not surface this run (remain in corpus): the roadtovr.com LED-camera-update relay and the nypost.com Sep-18 CA-lawsuit piece (frontier driver).
+
+Recency frontier: HOLDS at Sep 18 (the nypost Sep-18 piece remains the newest-in-corpus surface; no Sep 19, Sep 20, Sep 21, or Sep 22 surfaces; frontier ADVANCED Sep 9 -> Sep 18 at #846).
+
+### Standing rules and research method
+
+**Standing rule (Aug 28 2026):** tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run; Type E monitoring-only, no mechanisms; max numeric mechanism_id 783 in-tree; zero numeric/underscore/dash-form 784 keys pre-commit; ledger holds at 29. No analysis.json update warranted. NOT artifact-grade. Correlation is not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+
+**Research method:** 4 browser.search query sets this run (Guilty Feminist latest episode with since=2026-09-22; quoted "Everyone Hates Elon" Meta glasses campaign with since=2026-09-22; quoted "Attention Sphere" podcast Meta tech wearables, no since filter; Meta Ray-Ban smart glasses privacy news with since=2026-09-22). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_e_921 files on disk (glob); no Type E #921 in git log (--grep); max numeric mechanism_id 783 in-tree pre-commit; zero numeric 784 mechanism_id keys in profiles/ pre-commit; zero underscore-form 784 mechanism key strings in profiles/ pre-commit (per #715, __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero dash-form 784 references repo-wide pre-commit; all 18 non-circular observed URL keys verified >=1 corpus hit pre-commit (ZERO new URL keys this run); 8 GitHub URLs rejected as circular (1 EHE set + 7 AS set), not ingested. 26 result rows / 18 non-circular distinct URL keys / ZERO new URL keys this run. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test file
+
+- tests/test_type_e_921_podcast_sentiment_107th_verification_sep22_11am.py
