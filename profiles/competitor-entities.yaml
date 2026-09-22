@@ -21038,6 +21038,76 @@ marketplace_intermediary_landscape:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline_note: 'Qualitative Type C mapping - market-structure and deal-type weighting refinement, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+  type_c_909_wiley_q1_fy2027_ai_revenue_mix_shift_sep2026:
+    block_key: type_c_909_wiley_q1_fy2027_ai_revenue_mix_shift_sep2026
+    mechanism_id: 777
+    mechanism_name: 'Wiley Q1 FY2027 AI Revenue Print: Training-vs-Recurring Mix Shift ($14M Quarter, $10.5M Training + $3.5M Recurring) + DOE Genesis Mission Sole-Publisher Leg'
+    iteration: 909
+    type: 'C'
+    date: '2026-09-21 23:00 PDT'
+    discovery_date: '2026-09-21'
+    job_id: 'mediascope-daily-iteration'
+    goal_id: 'goal_54093bda4145'
+    type_label: Financial Incentive Mapping
+    verdict: directionally_supported_not_proven
+    extends: '735 (retrieval-vs-training deal-structure shift, #839)'
+    overview: 'EXTENDS mechanism 735 (m735): first dedicated corpus mechanism on the Wiley Q1 FY2027 earnings print, which is the first corpus earnings print to split AI revenue into training vs recurring. Wiley reported Q1 FY2027 AI licensing revenue of $14M (quarter ended July 31, 2026; BusinessWire release Sep 3, 2026), down from $29M in the prior-year quarter, against $49M for all of FY2026. Mix (ainvest): $10.5M model training + $3.5M recurring, with recurring growing 2-3x year over year, another $14M already contracted across the next two quarters, and management saying the quarter is ahead of the pace needed to exceed the $50M full-year AI target. intellectia adds the prestige/access leg: Wiley is now the sole scientific publisher in the U.S. Department of Energy Genesis Mission. The finding VERIFIES m735 empirically (the recurring/RAG leg is becoming the durable revenue stream) while tempering it (training is still 75% of the quarter AI mix; the $29M prior-year quarter was itself a one-off training-deal spike, so both endpoints are noisy). NOT a falsification-family member: this is a financial-incentive documentation and revenue-mix verification leg, no tone pair is scored, tone NOT_SCORED; the falsification ledger holds at 29 (THIRTIETH remains the negative guard).'
+    figures:
+      quarter_ended: 'quarter ended July 31, 2026'
+      earnings_release: 'Sep 3, 2026 (BusinessWire)'
+      total_revenue_q1_fy2027: '$386M, down 3% year over year'
+      ai_licensing_revenue_q1_fy2027: '$14M'
+      ai_licensing_revenue_q1_fy2026: '$29M'
+      ai_licensing_revenue_fy2026: '$49M'
+      training_revenue_q1_fy2027: '$10.5M'
+      recurring_revenue_q1_fy2027: '$3.5M'
+      recurring_growth_rate: '2-3x year over year (recurring share)'
+      ai_revenue_contracted_next_two_quarters: '$14M'
+      full_year_ai_target_fy2027: '$50M'
+      doe_genesis_mission: 'Wiley is the sole scientific publisher in the U.S. Department of Energy Genesis Mission (intellectia, Sep 21 2026)'
+    sources:
+      - 'https://intellectia.ai/news/stock/wiley-q1-earnings-revenue-decline-offset-by-ai-growth (intellectia: Q1 AI licensing revenue $14M; sole scientific publisher in the DOE Genesis Mission; updated 14 hours before this run)'
+      - 'https://www.ainvest.com/news/wiley-ai-revenue-fell-headline-hides-real-signal-2609/ (ainvest: $29M to $14M headline; $10.5M model training + $3.5M recurring mix; recurring growing 2-3x; $14M contracted across next two quarters; ahead of the pace for the $50M full-year target; FY2026 AI revenue $49M)'
+      - 'https://www.stocktitan.net/news/WLY/wiley-reports-first-quarter-2027-results-q1-in-line-with-9m7ilcbi2qy1.html (stocktitan BusinessWire mirror: Sep 3 2026 release; $386M revenue down 3%; AI licensing comparison $29M prior-year quarter; Emerald acquisition)'
+    research_method: '5 browser.search query sets this run (OpenAI publisher licensing Sep 2026; publisher AI licensing deal news since 2026-09-18; AI company signs content deal since 2026-09-19; Anthropic publisher deal since 2026-09-01; xAI/Apple/Mistral publisher deal since 2026-09-10; publisher earnings AI licensing revenue since 2026-09-10). SELECTED: the Wiley Q1 FY2027 print as the only earnings release this week that splits publisher AI revenue into training vs recurring. 0 browser.open this run per #503 (excerpt-bounded; all figures excerpt-tier from intellectia/ainvest/stocktitan). All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed.'
+    novelty: 'FIRST dedicated corpus mechanism on the Wiley Q1 FY2027 earnings print (released Sep 3, 2026). Zero test_type_c_909 files on disk (glob); no "Type C #909" in git log (--grep); max numeric mechanism_id 776 pre-commit (#908 m776); zero underscore-form 777 mechanism key strings in profiles/ pre-commit (the #908 file own zero-777 sweep assertions are test-instrument literals, excluded per the #715 pattern-rescope lesson); zero numeric "mechanism_id: 777" keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the three source URLs zero-hit repo-wide pre-commit; "Genesis Mission" + Wiley context zero-hit pre-commit (the mit-tech-review.yaml hit is DOE grant proposals, unrelated). The $49M FY2026 AI figure previously appeared only via Menon commentary inside m735 (#839) - unverified there; this block independently verifies it against the Q1 print coverage.'
+    confounders_ranked_strong_first:
+      - severity: 'STRONG'
+        text: 'Secondary synthesis, not the filing: intellectia and ainvest are excerpt-tier aggregators; the $10.5M/$3.5M training-vs-recurring split is ainvest reporting, not verified against Wiley 10-Q or the BusinessWire release body. Excerpt-bounded per #503.'
+      - severity: 'STRONG'
+        text: 'Single-quarter lumpiness: Q1 mixes are seasonally lumpy in publisher licensing (USA TODAY Co. lumpiness, m463); one quarter split does not prove a structural shift toward recurring retrieval economics.'
+      - severity: 'MODERATE'
+        text: 'Both endpoints are noisy: the $29M prior-year quarter was itself a one-off training-deal spike per ainvest, so the 52% headline decline and the mix claim both rest on an anomalous base.'
+      - severity: 'MODERATE'
+        text: 'DOE Genesis Mission is a prestige/access leg, not a revenue figure: Wiley disclosed the participation, not the terms, fees, or product rights granted.'
+      - severity: 'WEAK'
+        text: 'Single-source verification risk: the intellectia page carries AI-generated boilerplate ("Trade with 70% Backtested Accuracy"); corroboration is thin beyond the stocktitan release mirror for the $386M/-3% frame.'
+    strongest_counterargument: 'The "recurring won" reading is premature: training is still 75% of the quarter AI revenue ($10.5M of $14M), the headline is down 52% year over year, and the recurring $3.5M base is small. The print documents a mix shift in progress, not a retrieval-economics victory; the corpus model of durable access/retrieval revenue outlasting one-time corpus sales is directionally supported, not proven.'
+    counter_evidence:
+      - 'Menon Nov 2025 commentary (carried in m735) holds that the biggest publisher AI deals are still training-era deals; this print corroborates that - training remains the dominant quarterly component.'
+      - 'The $14M headline is a 52% year-over-year decline in AI licensing revenue; a mix shift on a shrinking total is weaker evidence of incentive durability than the recurring-growth framing suggests.'
+    connects_to: [735, 663, 711, 463]
+    falsification_family: false
+    falsification_ledger_holds_at: 29
+    tone: 'NOT_SCORED'
+    statistical_discipline:
+      approach: manual_qualitative
+      engine_run: false
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      note: 'Manual qualitative Type C mapping per the Aug 28 2026 standing rule: financial-incentive documentation leg, not a tone test; engine NOT run; effect statistics NOT_CALCULATED; is_significant false; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade.'
+    is_significant: false
+    no_analysis_json_update: true
+    artifact_grade: false
+    key_design_note: 'Designed keying per the #715 convention: the block key carries the iteration number (909), never the numeric mechanism id (777); zero underscore-form, dash-form, and numeric 778 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit.'
+    verification:
+      iteration: 909
+      type: 'C'
+      date: '2026-09-21 23:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+      novelty_sweep_precommit: true
   roundtable_paradium_infrastructure_capture_sep2026:
     mechanism_id: 738
     mechanism_name: 'Roundtable x Paradium.AI (Arena Group) 10-Year $1B AI/DeFi MediaOS Agreement (Announced Sep 17 2026) - Infrastructure-Capture as the Sixth Relationship Direction; Near-Controlling 49.5% Equity Stake Plus Perpetual Tech License'
@@ -24131,73 +24201,3 @@ vox_media_triple_ai_payer_openai_renewal_window_621:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
-  type_c_909_wiley_q1_fy2027_ai_revenue_mix_shift_sep2026:
-    block_key: type_c_909_wiley_q1_fy2027_ai_revenue_mix_shift_sep2026
-    mechanism_id: 777
-    mechanism_name: 'Wiley Q1 FY2027 AI Revenue Print: Training-vs-Recurring Mix Shift ($14M Quarter, $10.5M Training + $3.5M Recurring) + DOE Genesis Mission Sole-Publisher Leg'
-    iteration: 909
-    type: 'C'
-    date: '2026-09-21 23:00 PDT'
-    discovery_date: '2026-09-21'
-    job_id: 'mediascope-daily-iteration'
-    goal_id: 'goal_54093bda4145'
-    type_label: Financial Incentive Mapping
-    verdict: directionally_supported_not_proven
-    extends: '735 (retrieval-vs-training deal-structure shift, #839)'
-    overview: 'EXTENDS mechanism 735 (m735): first dedicated corpus mechanism on the Wiley Q1 FY2027 earnings print, which is the first corpus earnings print to split AI revenue into training vs recurring. Wiley reported Q1 FY2027 AI licensing revenue of $14M (quarter ended July 31, 2026; BusinessWire release Sep 3, 2026), down from $29M in the prior-year quarter, against $49M for all of FY2026. Mix (ainvest): $10.5M model training + $3.5M recurring, with recurring growing 2-3x year over year, another $14M already contracted across the next two quarters, and management saying the quarter is ahead of the pace needed to exceed the $50M full-year AI target. intellectia adds the prestige/access leg: Wiley is now the sole scientific publisher in the U.S. Department of Energy Genesis Mission. The finding VERIFIES m735 empirically (the recurring/RAG leg is becoming the durable revenue stream) while tempering it (training is still 75% of the quarter AI mix; the $29M prior-year quarter was itself a one-off training-deal spike, so both endpoints are noisy). NOT a falsification-family member: this is a financial-incentive documentation and revenue-mix verification leg, no tone pair is scored, tone NOT_SCORED; the falsification ledger holds at 29 (THIRTIETH remains the negative guard).'
-    figures:
-      quarter_ended: 'quarter ended July 31, 2026'
-      earnings_release: 'Sep 3, 2026 (BusinessWire)'
-      total_revenue_q1_fy2027: '$386M, down 3% year over year'
-      ai_licensing_revenue_q1_fy2027: '$14M'
-      ai_licensing_revenue_q1_fy2026: '$29M'
-      ai_licensing_revenue_fy2026: '$49M'
-      training_revenue_q1_fy2027: '$10.5M'
-      recurring_revenue_q1_fy2027: '$3.5M'
-      recurring_growth_rate: '2-3x year over year (recurring share)'
-      ai_revenue_contracted_next_two_quarters: '$14M'
-      full_year_ai_target_fy2027: '$50M'
-      doe_genesis_mission: 'Wiley is the sole scientific publisher in the U.S. Department of Energy Genesis Mission (intellectia, Sep 21 2026)'
-    sources:
-      - 'https://intellectia.ai/news/stock/wiley-q1-earnings-revenue-decline-offset-by-ai-growth (intellectia: Q1 AI licensing revenue $14M; sole scientific publisher in the DOE Genesis Mission; updated 14 hours before this run)'
-      - 'https://www.ainvest.com/news/wiley-ai-revenue-fell-headline-hides-real-signal-2609/ (ainvest: $29M to $14M headline; $10.5M model training + $3.5M recurring mix; recurring growing 2-3x; $14M contracted across next two quarters; ahead of the pace for the $50M full-year target; FY2026 AI revenue $49M)'
-      - 'https://www.stocktitan.net/news/WLY/wiley-reports-first-quarter-2027-results-q1-in-line-with-9m7ilcbi2qy1.html (stocktitan BusinessWire mirror: Sep 3 2026 release; $386M revenue down 3%; AI licensing comparison $29M prior-year quarter; Emerald acquisition)'
-    research_method: '5 browser.search query sets this run (OpenAI publisher licensing Sep 2026; publisher AI licensing deal news since 2026-09-18; AI company signs content deal since 2026-09-19; Anthropic publisher deal since 2026-09-01; xAI/Apple/Mistral publisher deal since 2026-09-10; publisher earnings AI licensing revenue since 2026-09-10). SELECTED: the Wiley Q1 FY2027 print as the only earnings release this week that splits publisher AI revenue into training vs recurring. 0 browser.open this run per #503 (excerpt-bounded; all figures excerpt-tier from intellectia/ainvest/stocktitan). All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed.'
-    novelty: 'FIRST dedicated corpus mechanism on the Wiley Q1 FY2027 earnings print (released Sep 3, 2026). Zero test_type_c_909 files on disk (glob); no "Type C #909" in git log (--grep); max numeric mechanism_id 776 pre-commit (#908 m776); zero underscore-form 777 mechanism key strings in profiles/ pre-commit (the #908 file own zero-777 sweep assertions are test-instrument literals, excluded per the #715 pattern-rescope lesson); zero numeric "mechanism_id: 777" keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the three source URLs zero-hit repo-wide pre-commit; "Genesis Mission" + Wiley context zero-hit pre-commit (the mit-tech-review.yaml hit is DOE grant proposals, unrelated). The $49M FY2026 AI figure previously appeared only via Menon commentary inside m735 (#839) - unverified there; this block independently verifies it against the Q1 print coverage.'
-    confounders_ranked_strong_first:
-      - severity: 'STRONG'
-        text: 'Secondary synthesis, not the filing: intellectia and ainvest are excerpt-tier aggregators; the $10.5M/$3.5M training-vs-recurring split is ainvest reporting, not verified against Wiley 10-Q or the BusinessWire release body. Excerpt-bounded per #503.'
-      - severity: 'STRONG'
-        text: 'Single-quarter lumpiness: Q1 mixes are seasonally lumpy in publisher licensing (USA TODAY Co. lumpiness, m463); one quarter split does not prove a structural shift toward recurring retrieval economics.'
-      - severity: 'MODERATE'
-        text: 'Both endpoints are noisy: the $29M prior-year quarter was itself a one-off training-deal spike per ainvest, so the 52% headline decline and the mix claim both rest on an anomalous base.'
-      - severity: 'MODERATE'
-        text: 'DOE Genesis Mission is a prestige/access leg, not a revenue figure: Wiley disclosed the participation, not the terms, fees, or product rights granted.'
-      - severity: 'WEAK'
-        text: 'Single-source verification risk: the intellectia page carries AI-generated boilerplate ("Trade with 70% Backtested Accuracy"); corroboration is thin beyond the stocktitan release mirror for the $386M/-3% frame.'
-    strongest_counterargument: 'The "recurring won" reading is premature: training is still 75% of the quarter AI revenue ($10.5M of $14M), the headline is down 52% year over year, and the recurring $3.5M base is small. The print documents a mix shift in progress, not a retrieval-economics victory; the corpus model of durable access/retrieval revenue outlasting one-time corpus sales is directionally supported, not proven.'
-    counter_evidence:
-      - 'Menon Nov 2025 commentary (carried in m735) holds that the biggest publisher AI deals are still training-era deals; this print corroborates that - training remains the dominant quarterly component.'
-      - 'The $14M headline is a 52% year-over-year decline in AI licensing revenue; a mix shift on a shrinking total is weaker evidence of incentive durability than the recurring-growth framing suggests.'
-    connects_to: [735, 663, 711, 463]
-    falsification_family: false
-    falsification_ledger_holds_at: 29
-    tone: 'NOT_SCORED'
-    statistical_discipline:
-      approach: manual_qualitative
-      engine_run: false
-      p_value: 'NOT_CALCULATED'
-      cohens_d: 'NOT_CALCULATED'
-      ci_95: 'NOT_CALCULATED'
-      note: 'Manual qualitative Type C mapping per the Aug 28 2026 standing rule: financial-incentive documentation leg, not a tone test; engine NOT run; effect statistics NOT_CALCULATED; is_significant false; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade.'
-    is_significant: false
-    no_analysis_json_update: true
-    artifact_grade: false
-    key_design_note: 'Designed keying per the #715 convention: the block key carries the iteration number (909), never the numeric mechanism id (777); zero underscore-form, dash-form, and numeric 778 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit.'
-    verification:
-      iteration: 909
-      type: 'C'
-      date: '2026-09-21 23:00 PDT'
-      yaml_parse_clean: true
-      ascii_only: true
-      novelty_sweep_precommit: true
