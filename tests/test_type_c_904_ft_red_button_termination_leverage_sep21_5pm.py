@@ -60,7 +60,7 @@ NEXT_ID_NUMERIC = "mechanism_id: 775"
 GATE_TESTS = 46300
 GATE_FILES = 1229
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a3689f299b02a4b61acc31d0a2c8960ba12b741a"
 
 EXPECTED_URLS = [
     "https://pressgazette.co.uk/publishers/nationals/ft-chief-jon-slade-on-how-business-brand-became-a-hit-with-gen-z/",
