@@ -18854,7 +18854,7 @@ journalists:
       novelty: 'First dedicated Type B mechanism on Samuel Gibbs (zero journalist entries pre-commit; entry created this run). Zero test_type_b_628 files on disk (glob verified this run). No Type B commit with 628 in the title (git log --grep verified this run). The Apple arm tone is carried from #622 at the identical +0.35 value (no rescoring); the Meta arm tone +0.10, the -0.25 genre-register delta and the NOT-falsification-family verdict are new this run. Mechanism id 611 is the next free profiles mechanism id (max pre-commit 610). Rotation: 627 A -> 628 B.'
       research_method: '3 browser.search query sets this run: (1) Samuel Gibbs Guardian Meta Ray-Ban glasses (surfaced the Sep 17 2025 announcement with Gibbs byline attribution); (2) Barbara Speed Guardian glasses surveillance privacy Apple (rejected: search noise, no verbatim Speed comparator pieces); (3) Jennifer Pattison Tuohy Portal Meta review plus Google Nest review (rejected: Tuohy is a smart-home reviewer with no Meta-side bylines surfacing; no zero-coverage claims per iteration-492 rule). Meta arm full text read first-hand via the richardhartley.com full-text mirror (verbatim URL from search results); theguardian.com direct fetch policy-blocked per standing rule. Byline attribution via two independent third-party listings (aspicts.substack.com, iask.ca). Apple arm carried from #622 (same mirror domain, symmetric evidence tier). URLs verbatim from Full-URL listings; none constructed. No zero-coverage claims per iteration-492 rule (both arms are positive Gibbs bylines). No em dashes.'
 - name: Anthony Ha
-  notes: 'TechCrunch weekend editor (role current as of Sep 2026; previously a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm; lives in New York City; contact anthony.ha@techcrunch.com, per his TechCrunch bio). AI-category beat with a trust-and-skepticism register. KEY for MediaScope: Ha authored BOTH same-day Aug 16 2026 AI-category pieces in the trust lane, a skeptical podcast-preview on Zuckerberg''s Meta AI manifesto (-0.45) and a straight executive-statement report on Anthropic CEO Dario Amodei''s trust-crisis framing (+0.15), enabling a clean within-writer cross-entity comparison where Anthropic''s CEO is the virtuous foil inside Ha''s own Meta piece.'
+  notes: 'TechCrunch weekend editor (role current as of Sep 2026; previously a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm; lives in New York City; contact anthony.ha@techcrunch.com, per his TechCrunch bio). AI-category beat with a trust-and-skepticism register. KEY for MediaScope: Ha authored BOTH same-day Aug 16 2026 AI-category pieces in the trust lane, a skeptical podcast-preview on Zuckerberg''s Meta AI manifesto (-0.45) and a straight executive-statement report on Anthropic CEO Dario Amodei''s trust-crisis framing (+0.15), enabling a clean within-writer cross-entity comparison where Anthropic''s CEO is the virtuous foil inside Ha''s own Meta piece. Separately, Ha authored a Jul 26 2026 TechCrunch essay on Apple smart glasses that labels Meta''s glasses pervert glasses while positioning Apple as the privacy hero (on-device processing, no facial recognition), enabling a second within-writer cross-entity privacy-register comparison (#923, mechanism 785).'
   career:
   - publication: techcrunch
     role: Weekend Editor
@@ -18868,6 +18868,7 @@ journalists:
   - https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/
   - https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/
   - https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-make-claims-on-anthropic-settlement/
+  - https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
   multi_publication: false
   competitor_coverage:
     type_b_633_anthony_ha_techcrunch_meta_vs_anthropic_trust_register:
@@ -18950,6 +18951,83 @@ journalists:
       artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer trust-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
       novelty: 'First dedicated Type B mechanism on Anthony Ha (zero journalist entries pre-commit; entry created this run). Zero test_type_b_633 files on disk (glob verified this run). No Type B commit with 633 in the title (git log --grep verified this run). Both tones hand-assigned this run (MANUAL ILLUSTRATIVE); the Sep 6 2026 Anthropic settlement byline is a separate Ha byline read in #629, not rescored. Mechanism id 614 is the next free profiles mechanism id (max pre-commit 613). Rotation: 632 A -> 633 B.'
       research_method: '3 browser.search query sets this run: (1) TechCrunch Muse launch (surfaced the Sep 8 2026 Muse article, attribution resolved to Sarah Perez per webpronews line 27, rejected as studied); (2) Max Zeff AI reporter TechCrunch WIRED (no clean Meta-vs-competitor pair: Zeff appears in the corpus only in competitor-entities, no journalists.yaml entry, insufficient exact byline URLs); (3) TechCrunch weekend editor Anthony Ha (surfaced Ha''s author page; the Aug 16 same-day AI-category Meta-vs-Anthropic pair was identified there). Both arms opened first-hand via browser.open (verbatim URLs from the open result headers); Ha''s author page opened first-hand (verbatim http URL from the run''s own fetch). Byline confirmed on the Anthropic arm''s bio footer and the author page''s Latest listing. Kurt Wagner rejected (already studied, #508 Type B). No zero-coverage claims per iteration-492 rule (both arms are positive Ha bylines). No em dashes.'
+    type_b_923_anthony_ha_techcrunch_apple_glasses_privacy_hero_vs_meta_foil:
+      mechanism_id: 785
+      iteration: 923
+      date: '2026-09-22 13:00 PDT'
+      type: B
+      scheduled_job_id: 'mediascope-daily-iteration'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      apple_arm:
+        url: https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+        title: 'Can Apple make smart glasses that are not a constant privacy threat?'
+        author_byline: 'Anthony Ha'
+        publication: techcrunch
+        date: '2026-07-26'
+        genre: 'opinion essay'
+        evidence_tier: 'first-hand full-text open this run (verbatim URL from browser.open result header)'
+        byline_attribution_urls:
+        - https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+        tone: 0.30
+        tone_calc: 'MANUAL ILLUSTRATIVE'
+        key_quotes:
+        - 'Can Apple make smart glasses that are not a constant privacy threat?'
+        - 'Meta, the company now selling the perv glasses'
+        - 'the pervert glasses'
+        - 'It could be a tool for perverts to secretly record and take photos of people without their consent'
+        - 'Meta contractors may be reviewing your footage'
+        - 'Apple, on the other hand, would do much of this processing on device'
+        - 'there are apparently no plans for Apple to include facial recognition in its smart glasses'
+        register_notes: 'Apple positioned as the privacy-conscious foil; Meta glasses labeled pervert glasses while Apple''s on-device processing and no-facial-recognition stance are praised'
+      meta_arm:
+        url: https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/
+        title: 'Why people are not buying Mark Zuckerberg''s AI future'
+        author_byline: 'Anthony Ha'
+        publication: techcrunch
+        date: '2026-08-16'
+        genre: 'podcast-preview essay'
+        evidence_tier: 'first-hand full-text open in #633 (carried, un-rescored)'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/anthony-ha/
+        tone: -0.45
+        tone_calc: 'MANUAL ILLUSTRATIVE, carried from #633 un-rescored'
+        key_quotes:
+        - 'Why people are not buying Mark Zuckerberg''s AI future'
+        - 'almost like an anti-Dario'
+        register_notes: 'Repositioning-failure narrative; harshest lines voiced by panelists (Bellan, Korosec, Brandom); carried from #633'
+      asymmetry_scorer:
+        method: 'MANUAL ILLUSTRATIVE'
+        apple_tone: 0.30
+        meta_tone: -0.45
+        delta_meta_minus_apple: -0.75
+        delta_calc: '-0.45 - 0.30 = -0.75'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Genre skew: opinion essay speculating about a nonexistent product (Apple glasses) vs podcast-preview reacting to a 6,500-word manifesto (Meta). Speculative prescriptive optimism is cheaper than confronting an actual text.'
+      - strength: 'STRONG'
+        text: 'Temporal skew: Jul 26 (Apple) vs Aug 16 (Meta), three weeks apart in different news cycles; the Meta piece is pegged to a manifesto launch that invites rebuttal.'
+      - strength: 'MODERATE'
+        text: 'Topic skew: smart-glasses privacy design (Apple) vs AI-manifesto reception (Meta). Different beats invite different evaluative stances from the same writer.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm. Directional, not dispositive; a second Ha Apple-vs-Meta pair in matched genre would be needed for a register claim above the genre boundary.'
+      counterevidence:
+      - 'The Meta arm''s harshness is panelist-voiced, not Ha''s own prose, limiting how much of the -0.75 illustrative gap is attributable to Ha''s personal register.'
+      - 'No pattern of blanket Apple protection by Ha elsewhere in the corpus; the privacy-hero framing is topic-specific.'
+      verdict: 'WITHIN-WRITER PRIVACY-HERO REGISTER, directionally consistent with the Apple privacy cascade but NOT a falsification pin. Ha''s Apple glasses essay reads constructive (+0.30 illustrative) while his Meta AI-manifesto piece reads skeptical (-0.45 illustrative, carried from #633). Apple is the privacy hero inside Ha''s own Meta-referencing Apple piece, and Meta is the pervert-glasses foil inside the same essay: the cross-entity contrast is authored by the same writer, not stitched from two outlets. Correlation is not causation per the Aug 28 rule: STRONG genre and temporal confounds fully explain the gap before any incentive effect is invoked, and no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin. Mechanism 269 in competitor-coverage-research.yaml cites this URL only as contextual citation (a quoted panelist attribution, not a mechanismized Ha register); this is the first mechanismization of Ha''s within-writer cross-entity register. Second dedicated Type B mechanism on Anthony Ha (first: #633 mechanism 614).'
+      financial_context: 'TechCrunch is owned by Yahoo, owned by Apollo Global Management. No documented TechCrunch-to-Apple or TechCrunch-to-Meta content licensing deal in the corpus. The privacy-hero framing of Apple is consistent with the publication-level Apple privacy cascade (TechCrunch manually scored +0.30 in prior publication-level work). No money gradient is asserted here; the observation is register-level only. Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#633 (Type B: Ha''s Meta vs Anthropic trust register; Meta arm -0.45 carried here un-rescored)'
+      - '#629 (Type D: Ha''s Sep 6 2026 Anthropic settlement-distribution piece read first-hand; third Ha byline in the corpus)'
+      - '#269 (competitor-coverage-research.yaml contextual citation of the Ha glasses URL; first mechanismization this run)'
+      block_key: 'type_b_923_anthony_ha_techcrunch_apple_glasses_privacy_hero_vs_meta_foil'
+      author: 'Kit (with Ray)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer privacy-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'Second dedicated Type B mechanism on Anthony Ha (first: #633 mechanism 614, Meta vs Anthropic trust register). Zero test_type_b_923 files on disk (glob verified this run). No Type B commit with 923 in the title (git log --grep verified this run). Zero numeric 785 keys repo-wide in profiles/ (grep verified this run; max 784 in financial-times.yaml via #922). Apple arm tone +0.30 hand-assigned this run (MANUAL ILLUSTRATIVE); Meta arm tone -0.45 carried from #633 un-rescored; the -0.75 delta and the NOT-falsification-family verdict are new this run. Mechanism id 785 is the next free profiles mechanism id (max pre-commit 784). Rotation: 922 A -> 923 B.'
+      research_method: '2 browser.search query sets this run: (1) Anthony Ha TechCrunch Apple smart glasses privacy (surfaced the Jul 26 2026 glasses essay; Ropek Luna piece surfaced in the same window, rejected as mechanism 749); (2) TechCrunch Apple privacy glasses (rejected duplicates). Apple arm opened first-hand via browser.open (verbatim URL from the open result header). Ha byline confirmed on the author page (http://techcrunch.com/author/anthony-ha/, #633) and the article author link. Meta arm carried from #633 (first-hand read there, un-rescored). Cherlynn Low rejected as duplicative (mechanism 150 + Type B #723 control replication). No zero-coverage claims per iteration-492 rule (both arms are positive Ha bylines). No em dashes.'
 - name: Sarah Perez
   notes: 'TechCrunch Consumer News Editor. Reporter at TechCrunch since August 2011; previously 3+ years at ReadWriteWeb; IT background across banking, retail, and software. Covers consumer tech and AI, including trust-and-privacy angles on both Meta and Google.'
   career:
