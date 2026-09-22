@@ -126,7 +126,7 @@ TEST_BASENAME = (
 README_PATH = "README.md"
 ARCH_PATH = "docs/ARCHITECTURE.md"
 LOG_PATH = "iteration-log.md"
-ANCHORED_SHA = "ddd07f1f8a1698c0fcd5ee5fed135f4e1896c1b5"  # Type D #910 main commit, patched post-commit per #565
+ANCHORED_SHA = "09191854f1b4e6ff5e382138be518d0272c44b5a"  # Type D #910 main commit (rebased onto 7922f43), patched post-commit per #565
 
 # Next mechanism number after the in-tree corpus max (777); used as an
 # int so no underscore/dash-form literal is ever carried in source.
