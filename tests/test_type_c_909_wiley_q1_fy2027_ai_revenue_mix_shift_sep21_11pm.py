@@ -104,7 +104,7 @@ NEXT_ID_NUMERIC = "mechanism_id: 778"
 GATE_TESTS = 46609
 GATE_FILES = 1234
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "baaad53c27530d323fb5e07c6c8b00c4e2576561"
 SCHEDULED_LOCAL = "Mon 2026-09-21 23:00:00 PDT"
 
 EXPECTED_URLS = [
