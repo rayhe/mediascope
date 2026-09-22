@@ -46,7 +46,7 @@ PROFILE = os.path.join(REPO, "profiles", "careers", "journalists.yaml")
 THIS_FILE = "test_type_b_923_anthony_ha_techcrunch_apple_glasses_privacy_hero_vs_meta_foil_sep22_1pm.py"
 BLOCK_KEY = "type_b_923_anthony_ha_techcrunch_apple_glasses_privacy_hero_vs_meta_foil"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "a79c606450080f3dfe40a61e65b1f8b7e0992261"  # patched green in the anchor followup per #565
 ITER = 923
 TYPE_LETTER = "B"
 
