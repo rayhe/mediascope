@@ -59,7 +59,7 @@ URL_MCP = "https://mediacopilot.ai/cloudflare-ai-crawler-controls/"
 URL_WPN = "https://www.webpronews.com/cloudflare-hands-publishers-new-levers-against-ai-crawlers/"
 URL_TET = "https://www.techtimes.com/articles/319554/20260702/cloudflare-separates-ai-crawlers-purpose-opens-door-charging-them-directly.htm"
 NEXT_SIBLING = "\n  snap_specs_enterprise_partnership_stack_sep2026:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "40e973eb711d951b7f713f9e8254a3ffa26dc4ed"
 
 
 def _read(rel):
