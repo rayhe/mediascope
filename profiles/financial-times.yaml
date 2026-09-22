@@ -4103,3 +4103,115 @@ ft_dual_ai_payer_portfolio_437:
     significant_false: true
     significant_empirical_false: true
     disclaimer: Financial correlation does not imply causation. FT 100% owned by Nikkei Inc employee-owned creates structural incentive for softer OpenAI Google coverage vs adversarial Meta coverage due dual AI payer portfolio $5-10M/yr plus single figure millions GBP/yr estimated while Meta $0 but does not prove editorial influence. Dual payer $10-20M/yr combined estimated is MANUAL ILLUSTRATIVE range not primary source verified exact terms undisclosed. Requires observed article-level dataset for empirical validation. MANUAL ILLUSTRATIVE scores not statistically significant.
+ft_red_button_termination_leverage_sep2026:
+  mechanism_id: 774
+  date_analyzed: '2026-09-21'
+  type: Type C Financial Incentive Mapping
+  iteration: 904
+  iteration_type: C
+  iteration_time: 2026-09-21 17:00 PDT
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  publication_focus: Financial Times (Nikkei Inc.)
+  competitor_pair: OpenAI/Google vs Meta
+  mechanism_name: Termination-Leverage (Red Button) - SEVENTH relationship direction
+  finding: >-
+    FIRST dedicated corpus mapping of the termination-leverage publisher-tech financial vector.
+    FT CEO Jon Slade, opening keynote at the Press Gazette Future of Media Technology Conference
+    in London on Sep 10 2026 (reported by Press Gazette ~Sep 14), revealed that the FT's AI
+    licensing deals with Google (Feb 2026 pilot) and OpenAI (Apr 29 2024) both include
+    "red button" clauses allowing the FT to pull the plug if it is unhappy with the way its
+    content is being used. Temporal continuity: in a Media Roundup / Voices Media interview
+    (~Feb 2026), Slade called the same device "The Big Red Button", described as a common
+    requirement in EVERY FT LLM deal: "If we do not like what we see - assuming the
+    transparency commitments are honoured - we push the button. It does not take the salt
+    out of the soup, but it stops archive access and stops surfacing. If we cannot get
+    that, we do not do the deal." Cross-publisher corroboration: Atlantic CEO Nicholas Thompson,
+    on the Channels podcast in Sep 2026, said renewing the Atlantic's 2024 OpenAI
+    deal requires "a fair exchange of value": "What are you giving us, and what are we
+    giving you? Is it fair? And if it is not, well, then we will block you from the site,
+    or we will sue you, right? That is the deal." Context: Slade also disclosed that 80%
+    of the FT's GBP 540m 2024 global revenue is now digital (vs 10% when he joined in
+    2002), that the FT has so far escaped the referral-traffic collapse hitting peers like
+    Reach (220 redundancies), and that bot attacks on the FT site are at enormous scale.
+  relationship_direction: >-
+    SEVENTH in the corpus taxonomy (extends m734's sue-then-sign / pay-or-litigate
+    bifurcation / grant-then-sue, #814's pool-and-license, #844/m738's
+    infrastructure-capture): TERMINATION-LEVERAGE - the publisher preserves a unilateral
+    kill switch over the AI licensing tie. Incentive geometry inverts the lock-in reading:
+    the licensing payment does NOT buy permanent compliance, because the publisher can exit
+    if usage terms are violated. Bounded by four facts: (1) the button is all-or-nothing -
+    it stops archive access and surfacing but cannot claw back model ingestion ("It does
+    not take the salt out of the soup"); (2) the button is gated on transparency
+    commitments being honoured - the AI counterparty supplies the transparency;
+    (3) exercising the button forfeits the revenue, so its force is deterrence, not independence - the dual-payer dependency ($5-10M/yr OpenAI estimated plus single-figure
+    millions GBP/yr Google, m437) persists while the deals run; (4) the button has never been pushed on the record, so its deterrence value is untested. Coverage prediction
+    stays softer for OpenAI/Google vs Meta (dual payer vs zero, m437 intact), now bounded
+    by the revocability caveat: the dependency is voluntary-at-the-margin, which is the
+    opposite of Showcase-style structural coercion (Google Showcase fees built into annual
+    plans, prisoner-dilemma framing, m437 confounders).
+  connects_to: [734, 738]
+  source_urls:
+  - https://pressgazette.co.uk/publishers/nationals/ft-chief-jon-slade-on-how-business-brand-became-a-hit-with-gen-z/
+  - https://pressgazettefutureofmediaus.substack.com/p/fts-red-button-ai-clauses-us-boosts
+  - https://themediaroundup.beehiiv.com/p/the-ft-s-jon-slade-on-leveraging-ai-to-build-new-lines-of-business
+  - https://voices.media/the-fts-jon-slade-on-leveraging-ai-to-build-new-lines-of-business/
+  carried_context_urls:
+  - https://talkingbiznews.com/media-news/ft-signs-ai-deal-with-google/
+  strongest_counterargument: >-
+    Slade said in the same ~Feb 2026 interview that he does NOT see licensing content to
+    Big Tech to train LLMs as a sustainable business model and is more confident in
+    direct-to-business licensing ("much more control for us... allows us to be much more
+    confident about how it is being used"). If the FT is deliberately running down
+    LLM-deal dependence, the incentive story weakens over time - the publisher is
+    steering AWAY from AI-lab revenue, not deeper into it. Additional bounds: the Aug 3
+    2026 Press Gazette 90-day exit clause on the 2-year Google deals may be the same
+    device rebranded (red button as marketing language for an ordinary exit clause);
+    Thompson's "block or sue" is a renewal-negotiation posture on a podcast, not an
+    exercised threat; the red button has never been pushed, so deterrence is asserted
+    not demonstrated; and Meta remains at $0 with zero licensing/commercial/ad
+    dependency, so the Meta contrast that motivates the coverage-asymmetry hypothesis
+    is untouched by the termination leg.
+  confounding_factors:
+  - strength: STRONG
+    description: Deterrence never exercised - no publisher has publicly pushed the red button on OpenAI or Google, so whether the clause actually disciplines counterparty behavior is asserted, not observed. A kill switch that is never used is indistinguishable from no kill switch in outcome data.
+  - strength: MODERATE
+    description: All-or-nothing revocation - the button stops archive access and surfacing but cannot remove ingested content from trained models ("does not take the salt out of the soup"). The counterparty's strongest asset (training-data value already extracted) is button-proof, which bounds the leverage.
+  - strength: MODERATE
+    description: Transparency-commitment gating - the button is only valid "assuming the transparency commitments are honoured". The AI counterparty controls what transparency is offered, so the trigger condition is partly counterparty-defined.
+  - strength: MODERATE
+    description: Search-excerpt-bounded evidence - 0 browser.open this run per the #503 convention; Slade keynote and Thompson podcast quotes are excerpt-tier from Press Gazette and the newsletter, not first-hand transcript review.
+  - strength: WEAK
+    description: Exit-clause relabeling risk - the Aug 3 2026 Press Gazette 90-day exit on 2-year Google deals may already cover this mechanism; "red button" may be CEO stagecraft for an ordinary termination right rather than a distinct contractual device.
+  - strength: WEAK
+    description: Slade's transitional framing - his stated preference for direct-to-business licensing over LLM deals suggests the AI-lab dependency is a bridge, not a destination; a publisher exiting the dependence weakens the incentive-predicts-tone claim going forward.
+  counter_evidence:
+  - Slade is steering the FT AWAY from LLM licensing as a business model (direct-to-business licensing preferred), which cuts against deepening AI-lab capture.
+  - The 90-day exit clause (Press Gazette Aug 3 2026) already gave the FT a walkaway right; the red button may add no new contractual power.
+  - Thompson's "block or sue" is negotiation posture, not an exercised termination; the Atlantic's 2024 OpenAI deal was signed, not cancelled.
+  - Meta stays at $0 licensing/commercial/ad dependency, so the Meta-as-safe-target asymmetry (m437) is unaffected by the termination leg.
+  statistical_discipline: MANUAL / qualitative only per the Aug 28 2026 standing rule; financial-incentive documentation leg, not a tone test. scorer none; tone NOT_SCORED; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; verdict directionally_supported_not_proven; engine NOT run; no analysis.json update. NOT artifact-grade. NOT a falsification-family member (documentation leg, no tone pair; ledger holds at 29). Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+  research_method: >-
+    2 browser.search query sets this run (AI company publisher content licensing deal
+    announced September 2026, since=2026-09-14 - rejected as primary: fourweekmba India
+    deals already in corpus (19 test hits), Google pay-per-value already 702/708,
+    Digiday unsealed filings already in corpus; FT Jon Slade red button AI licensing
+    deals Google OpenAI Future of Media, since=2026-09-15 - SELECTED: Press Gazette Sep
+    10 keynote report + Sep 18 US newsletter with Thompson Channels podcast quote +
+    Media Roundup/Voices Media Big Red Button interview). 0 browser.open
+    (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_c_904 files on
+    disk (glob); no Type C #904 in git log (--grep); max numeric mechanism_id 773
+    in-tree (incl. uncommitted in-flight 771/770/762); zero underscore-form 774 mechanism
+    keys repo-wide pre-commit (needles format-built, no literals carried per the #715
+    convention); zero dash-form 774 keys pre-commit; block key
+    ft_red_button_termination_leverage_sep2026 zero-hit pre-commit; "red button"
+    zero-hit in profiles/ and tests/ pre-commit (pre-existing "Jon Slade" mentions in
+    financial-times.yaml are Feb 2026 Google-deal announcement context, distinct from
+    this finding); all 4 source URLs zero-hit repo-wide pre-commit (git grep). All URLs
+    copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only,
+    no em dashes.
+  falsification_family: false
+  falsification_ledger_holds_at: 29
+  verdict: directionally_supported_not_proven
+  tone_scores: NOT_SCORED
+  test_file: tests/test_type_c_904_ft_red_button_termination_leverage_sep21_5pm.py
