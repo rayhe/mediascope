@@ -33,7 +33,7 @@ ITERATION = 921
 TYPE_LETTER = "E"
 RUN_PDT = "2026-09-22 11:00 PDT"
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "2ad9952ff29cf77330524744d1dd76b3716e758e"
 
 
 def _git(args):
@@ -112,17 +112,17 @@ class TestRotationGuard920_924Window:
     def test_no_concurrent_inflight_commits_asserted(self):
         # In-flight at this run's checks: #884 Type C (m762),
         # #898 Type B (m770), #899 Type C (m771), #900 Type D - none
-        # committed yet. Match only commit SUBJECTS: other commits' bodies
-        # may mention them.
+        # committed yet. Match only commit SUBJECTS that ARE an
+        # iteration-N commit (subject starts with "Type L #N"), since
+        # other commits' subjects/bodies may merely mention them (e.g.
+        # this run's own concurrency note naming #884/#899/#900).
         subjects = [
             _git(["log", "--format=%s", "-1", c]).stdout.strip()
             for c in _git(["log", "--format=%H", "-8"]).stdout.splitlines()
         ]
         for n in ("884", "898", "899", "900"):
-            assert not any(
-                ("Type " in s) and (f"#{n} " in s or s.endswith(f"#{n}"))
-                for s in subjects
-            ), (n, subjects)
+            pat = re.compile(r"^Type [ABCDE] #" + n + r"(?!\d)")
+            assert not any(pat.search(s) for s in subjects), (n, subjects)
 
 
 # --------------------------------------------------------------------------
