@@ -21889,3 +21889,89 @@ eric_hal_schwartz:
       correlation_not_causation: true
       correlation_note: 'Correlation is not causation.'
       research_method: '21 browser.search query sets + 4 browser.open this run. REJECTED candidates this run: Victoria Song (m719/#813 already did the exact Song Display-vs-Watch-12 pair); Karissa Bell (m773 just did Bell Muse-vs-Specs-Intelligence); Cherlynn Low (m150 + Apple Audio Intelligence controls); Lisa Eadicicco (m123); Brenda Stolyar (m704); Jay Peters / Julian Chokkattu / Joanna Stern / Mark Gurman / Alex Heath (corpus-present); Mariella Moon (m761/#883 just did Moon Luna-vs-RubyGems); Ian Carlos Campbell (in-flight #898/m770 owns him - concurrency protocol); Allison Johnson / Dan Seifert (no corpus presence, no clean pair); Vanessa Hand Orellana (no confirmed same-writer Meta arm); Scott Stein (prior corpus treatment); Brian Heater (three-entity natural experiment mechanismized); Emma Roth (corpus-present via #792/#883, Roth Muse hands-on noted as future arm). SELECTED: Eric Hal Schwartz - (13)-(15) Meta Muse bylines surfaced him via the winbuzzer relay ("TechRadar''s Eric Hal Schwartz gave Muse access to his inbox and permission to write emails"); (17)-(18) comparator search surfaced his TechRadar ChatGPT inbox-watch piece (~Sep 1 2026); (19) PYMNTS relay confirmed the Muse-piece details (shorts purchase, power-company solar-panel inspection notice, drafted reply awaiting approval) plus "Giving access was the hard part"; (20)-(21) URL recovery attempts - outlink resolution failed on bare-domain link targets, proceeded excerpt-tier per #503 with dual-relay corroboration. browser.open: winbuzzer Muse chart piece (113 lines, Schwartz relay captured), PYMNTS Muse piece (62 lines, Schwartz relay captured), TechRadar ChatGPT inbox piece FIRST-HAND (90 lines, zero privacy vocabulary), targeted search-result page. 2 browser.open calls failed on outlink_idx (bare-domain targets); not retried per the turn constraint. All URLs copied verbatim from Full-URL listings. No URL construction. No zero-coverage claims per #492. ASCII-only, no em dashes.'
+
+emma_roth_type_b:
+  name: Emma Roth
+  publication: the-verge
+  mechanism_ids: [782]
+  competitor_coverage:
+    type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep10:
+      block_key: type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep10
+      mechanism_id: 782
+      iteration: 918
+      type: B
+      date: '2026-09-22 08:00 PDT'
+      test_file: tests/test_type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep22_8am.py
+      design: 'Within-journalist cross-entity register comparison: same writer (Emma Roth), same outlet (The Verge), same product category (consumer AI assistants), Meta vs Google, SAME DAY (both Sep 10 2026). Tests whether the adversarial creep register Roth fires on Meta''s Muse hands-on also fires on Google''s Dreambeans, an app that pulls information from across Search, Gmail, Photos, Calendar, and Gemini.'
+      finding: 'Register asymmetry on the tightest temporal pairing in the Type B series (same-day arms). Roth''s Meta Muse hands-on runs a headline-level adversarial creep register ("Meta''s Muse AI works and creeps me out"; "the unnerving amount of information it autonomously gleaned about me largely overshadowed my experience"; "given Meta''s track record on privacy over the years"; "The Verge reached out to Meta ... but didn''t immediately hear back"; "That level of suspicion is going to be the real hurdle for Meta to overcome"). Her same-day Google Dreambeans rollout brief runs a neutral product relay ("pulls information from across Search, Gmail, Photos, Calendar, and Gemini") with the creep register attenuated to one wry clause ("somewhat unsettling storybook-style drawings of yourself"), no comment-seeking, no suspicion conclusion. Illustrative delta (Meta minus Google) -0.50: the widest same-journalist same-day AI-assistant register gap in the corpus. FIRST dedicated Type B mechanism on Emma Roth (career entry pre-exists; the Roth Muse hands-on was explicitly reserved as a future arm in #908''s rejection list).'
+      meta_arm:
+        outlet: The Verge
+        author_byline: Emma Roth
+        title: 'Meta''s Muse AI works and creeps me out'
+        url: https://www.theverge.com/tech/993391/meta-muse-ai-hands-on
+        date: '2026-09-10'
+        key_quotes:
+        - 'Headline (verbatim, FIRST-HAND via reprint mirror this run): Meta''s Muse AI works and creeps me out'
+        - 'Dek (verbatim): the unnerving amount of information it autonomously gleaned about me largely overshadowed my experience.'
+        - 'Trust-history anchor: "I didn''t feel good about permitting Muse to view all of my emails given Meta''s track record on privacy over the years."'
+        - 'Hidden-data surface: "Honestly, Instagram doesn''t show you that exact list anywhere in the app - I read it through the account''s API data, which surfaces more than the UI does" (Muse on its own data access).'
+        - 'Shipping-address inference: "The app also listed several news stories from the state where I''m currently visiting my family, which Muse admitted it pulled from the shipping address on my Amazon order."'
+        - 'Adversarial comment-seeking: "The Verge reached out to Meta about the data Muse can access inside Instagram and Facebook but didn''t immediately hear back."'
+        - 'Suspicion conclusion: "That level of suspicion is going to be the real hurdle for Meta to overcome."'
+        mirror_url: https://noticiasenvivo.cl/metas-muse-ai-works-and-creeps-me-out/
+        mirror_opened_this_run: true
+        evidence_tier: 'FIRST-HAND this run via verbatim reprint mirror (65 rendered lines; full headline, dek, and body captured; theverge.com direct fetch policy-blocked per #653). Corroborating verbatim mirrors: https://best-technologies.info/tech/metas-muse-ai-works-and-creeps-me-out/ and https://misryoum.com/metas-muse-ai-works-and-creeps-me-out. Canonical Verge URL recovered from search-indexed digest relays (piyush0053/ai-daily-digest, koltregaskes/ai-resource-hub).'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+      google_arm:
+        outlet: The Verge
+        author_byline: Emma Roth
+        title: 'Google''s Dreambeans AI app is rolling out to everyone in the US'
+        date: '2026-09-10'
+        key_quotes:
+        - 'Data-pull relay (verbatim Verge dek via topic-page mirror): "The app, which Google began testing in June, pulls information from across Search, Gmail, Photos, Calendar, and Gemini to provide AI shopping recommendations, travel suggestions, event reminders, and more."'
+        - 'Sole wry clause (verbatim, Roth''s own voice): "It pairs these suggestions with somewhat unsettling storybook-style drawings of yourself."'
+        - 'Distribution relay (verbatim): "You can download the app on Android and iOS."'
+        - 'Third-party attribution (badsignal.ai): "The Verge''s Emma Roth wrote the same day that the app began testing in June, pairs suggestions with storybook-style drawings of the user, and is downloadable on Android and iOS. Roth''s ''somewhat unsettling'' tone is The Verge''s, not Google''s wording."'
+        - 'Absences in the surfaced text: no "reached out to Google" comment-seeking; no suspicion-as-conclusion; no track-record anchor.'
+        mirror_url: https://pengen.diewe.workers.dev/onsen/caveman-https-www.theverge.com/google
+        evidence_tier: 'EXCERPT-TIER (Verge Google topic-page mirror carrying the verbatim Verge dek, author line "Emma Roth Sep 10", and screenshot credit; the Dreambeans piece itself not first-hand read; canonical theverge.com URL not recovered from search listings - no URL constructed per policy). badsignal.ai relay independently attributes the "somewhat unsettling" wording to Roth/The Verge.'
+        tone_MANUAL_ILLUSTRATIVE: 0.10
+      asymmetry_scorer:
+        meta_tone: -0.40
+        google_tone: 0.10
+        illustrative_delta_meta_minus_google: -0.50
+        delta_calc: '(-0.40) - (0.10) = -0.50'
+        two_entity_band: [-0.40, 0.10]
+        statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+        confounders:
+          strong:
+          - 'Genre asymmetry: the Meta arm is a first-person hands-on test (Roth connects her own accounts and discovers specific creepy behaviors); the Google arm is a rollout brief (launch news relay). Hands-on testing of an AI agent''s data access naturally invites the creep register; a brief conventionally relays company claims. This is the dominant alternative explanation.'
+          - 'Evidence asymmetry: Roth found specific first-hand creepy behaviors with Muse (Instagram API data surfacing more than the UI shows; shipping-address inference from an Amazon order); she never hands-on tested Dreambeans, so she had no first-hand creepy material to anchor the register on the Google side.'
+          moderate:
+          - 'Product-scope asymmetry: Muse requested broad account connections (Google account read+delete, Amazon purchase, Instagram/Facebook API); Dreambeans data connections are opt-in and adjustable per connection (per Google''s product design as relayed). The access surface genuinely differs.'
+          - 'The creep register is NOT absent on Google - "somewhat unsettling" is Roth''s own voice. The finding is attenuation, not absence; the delta measures register magnitude, not a binary.'
+          weak:
+          - 'Temporal: SAME-DAY arms (both Sep 10 2026) - the tightest temporal pairing in the Type B series; time is a NON-confound, which strengthens the pair against discourse-drift explanations.'
+        counterevidence:
+        - 'PMC (The Verge''s current parent) and Vox Media (prior parent) are BOTH suing Google for ad tech (corpus the-verge.yaml): the naive payer-predicts-softness story predicts adversarial Google coverage, yet the adversarial register fires on Meta ($0 AI licensing, no adversarial legal relationship) instead. The financial gradient does NOT predict this pair''s direction; genre and evidence confounds carry the weight.'
+        - 'Roth''s own earlier Meta piece (Jul 27 2026, "Meta''s Ray-Ban Display glasses get an AI update", corpus the-verge.yaml) was a neutral product brief: she does not always fire the adversarial register on Meta; the register tracks the hands-on data-access beat, not the entity.'
+        - 'The documented payer relationship to The Verge''s parent is Vox Media x OpenAI (content licensing, May 29 2024, ACTIVE per m425), not Google: there is no documented OpenAI comparator arm from Roth this run.'
+        - 'm776 (Schwartz) and m773 (Bell) replicate the direction (privacy register on Muse, silent on the competitor) with different writers and competitors - direction replicates, but replication of direction is not independent confirmation of mechanism.'
+        connects_to: [425, 494, 773, 776, 779, 753]
+      verdict: 'directionally_supported_not_proven'
+      falsification_family: 'NOT a falsification-family member (directional register asymmetry, not a near-null or inversion under a uniform-softening prediction; the counterevidence inverts the naive payer prediction but the genre/evidence confounds are dominant; Ledger holds at 29)'
+      no_analysis_json_update: true
+      ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+      is_significant: false
+      correlation_not_causation: true
+      correlation_note: 'Correlation is not causation.'
+      financial_context: 'Vox Media x OpenAI content licensing and product partnership (May 29 2024, ACTIVE per m425/the-verge.yaml): OpenAI is a documented payer to The Verge''s parent; Meta is $0 AI licensing (per m425); Google sits in an ADVERSARIAL legal relationship with PMC and Vox Media (both suing Google for ad tech, corpus the-verge.yaml). The naive uniform-incentive prediction (adversarial legal adversary gets adversarial coverage; $0 neutral gets neutral) is INVERTED in this pair - the creep register fires on the $0 neutral (Meta) and attenuates on the legal adversary (Google). This cuts against deal-driven softness as a uniform theory; the genre (hands-on vs brief) and evidence (first-hand creepy behaviors) confounds are the stronger explanations. Correlation, not causation.'
+      research_method: '4 browser.search query sets + 2 browser.open this run: (1) Meta Connect 2026 journalist coverage (Sep 15+) - surfaced Roth Muse hands-on via Muck Rack listing, REJECTED Apple Vision Pro candidates; (2) Apple Vision Pro journalist reviews Sep 2026 - no clean pair, REJECTED (Lauren Goode already #436); (3) "Emma Roth The Verge Muse" - SELECTED Meta arm via Muck Rack listing (canonical URL https://www.theverge.com/tech/993391/meta-muse-ai-hands-on recovered from digest relays); (4) "Joanna Stern WSJ Meta Ray-Ban" - REJECTED (corpus-present via Aug 7 commit); (5) "theverge Emma Roth Muse creeps me out" + (6) "theverge Emma Roth Dreambeans" - SELECTED Google arm (Verge dek verbatim via topic-page mirror + badsignal.ai attribution). browser.open: theverge.com canonical Muse URL FAILED (policy-blocked per #653, error terminal this run); verbatim reprint mirror noticiasenvivo.cl opened FIRST-HAND (65 lines, full text). REJECTED candidates this run: Victoria Song (m719/#813); Karissa Bell (m773); Cherlynn Low (m150); Lisa Eadicicco (m123); Brenda Stolyar (m704); Jay Peters / Julian Chokkattu / Joanna Stern / Mark Gurman / Alex Heath (corpus-present); Mariella Moon (m761/#883); Ian Carlos Campbell (in-flight #898/m770 - concurrency protocol); Maxwell Zeff (m779 just covered); Eric Hal Schwartz (m776 just covered); Dominic Preston (m734); Boone Ashworth (m743); Daniel Cooper (m755). All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed; no zero-coverage claims per #492. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B mechanism on Emma Roth; mechanism_id 782 next free pre-commit (max 781); no test_type_b_918 files and no #918 commits pre-commit; block key zero-hit repo-wide pre-commit; "meta-muse-ai-hands-on" / "dreambeans" / "993391" all zero-hit in profiles/ and tests/ pre-commit. The Roth Muse hands-on was explicitly reserved as a future arm in #908''s rejection list - this run takes it up.'
+      artifact_readiness: 'No analysis.json update warranted: illustrative register pair only, carried manual tones, no empirical significance.'
+      cross_references:
+      - '#425 Type B (The Verge integrity: Vox Media x OpenAI content licensing deal May 29 2024, ACTIVE).'
+      - '#773 Type B (Karissa Bell Muse-vs-Specs-Intelligence: privacy register on Muse, silent on Snap).'
+      - '#776 Type B (Eric Hal Schwartz Muse-vs-ChatGPT: access-friction register on Muse, silent on OpenAI).'
+      - '#779 Type B (Maxwell Zeff OpenAI framework relay +0.15 vs Meta Muse trust deficit -0.30).'
+      - '#908 (rejection list: Emma Roth corpus-present, Muse hands-on reserved as future arm).'
