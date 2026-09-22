@@ -41,7 +41,7 @@ THIS_FILE = "test_type_a_922_ft_anthropic_sep_profitability_ipo_momentum_vs_meta
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROFILE = os.path.join(REPO, "profiles", "financial-times.yaml")
 BLOCK_KEY = "iteration_922_sep22_2026_ft_anthropic_sep_profitability_ipo_momentum_vs_meta_carried"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "518cad16205edcc027405159352ac71ef0f75293"  # patched green in the anchor followup per #565
 ITER = 922
 TYPE_LETTER = "A"
 
@@ -141,8 +141,12 @@ class TestRotationGuard922:
     @pytest.mark.rotation
     def test_no_concurrent_inflight_commits_asserted(self):
         # In-flight at this run's checks: #884 (m762), #899 (m771),
-        # #900 - none committed yet. Match only commit SUBJECTS: other
-        # commits' bodies may mention them.
+        # #900 - none committed yet. Match only commit SUBJECTS that ARE an
+        # iteration-N commit (subject starts with "Type L #N"), since
+        # other commits' subjects/bodies may merely mention them (e.g.
+        # this run's own concurrency note naming #884/#899/#900); per the
+        # #921 followup subject-prefix tightening.
+        import re
         proc = subprocess.run(
             ["git", "log", "--format=%H", "-8"],
             cwd=REPO, capture_output=True, text=True,
@@ -155,10 +159,8 @@ class TestRotationGuard922:
             for c in proc.stdout.splitlines()
         ]
         for n in ("884", "899", "900"):
-            assert not any(
-                ("Type " in s) and (("#" + n + " ") in s or s.endswith("#" + n))
-                for s in subjects
-            ), (n, subjects)
+            pat = re.compile(r"^Type [ABCDE] #" + n + r"(?!\d)")
+            assert not any(pat.search(s) for s in subjects), (n, subjects)
 
 
 # ---------------------------------------------------------------------------
