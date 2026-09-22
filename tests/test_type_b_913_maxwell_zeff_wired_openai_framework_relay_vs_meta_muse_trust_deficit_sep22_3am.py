@@ -63,7 +63,7 @@ MECH_KEY = "type_b_913_maxwell_zeff_wired_openai_framework_relay_vs_meta_muse_tr
 M_ID = 779
 ITER = 913
 TYPE_LETTER = "B"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "d3a83151e766f75c8900f715dd995532e9bc2994"
 
 # Format-built needles per the #715 convention: no literal underscore-form,
 # numeric, or dash-form 779 mechanism markers are carried in this file.
