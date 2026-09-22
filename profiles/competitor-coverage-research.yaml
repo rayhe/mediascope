@@ -26851,6 +26851,122 @@ cross_publication_findings:
     test_file: tests/test_type_a_902_bloomberg_anthropic_profitability_ipo_momentum_vs_meta_layoffs_clash_m334_extension_sep21_3pm.py
     connects_to:
     - 334
+  bloomberg_openai_vs_meta_financial_product_momentum_genre_matched_null_gradient_sep21_2026:
+    finding_type: cross_publication_coverage_asymmetry
+    publication: Bloomberg
+    competitor: OpenAI
+    comparator_entity: Meta
+    rotation_type: A
+    iteration: 907
+    mechanism_id: 775
+    discovery_date: '2026-09-21'
+    finding: 'Bloomberg Sep 2026 genre-matched financial/product-momentum control: once story genres are matched, Bloomberg''s OpenAI and Meta coverage sits near parity and positive on both sides. OpenAI arms: Sep 16, 2026 - Bloomberg (via The Hindu BusinessLine amp mirror, byline ''By Bloomberg'') reported OpenAI holding early investor talks about a fresh funding round valuing the company at more than $1.2 trillion ahead of an IPO, while noting the talks were preliminary, investor-initiated, and contingent on IPO timing; the piece also notes the FT reported the talks first and frames a leapfrog over Anthropic''s May $965B raise. MANUAL ILLUSTRATIVE +0.35. Bloomberg Law - OpenAI closed a $122B round at an $852B valuation (largest round to date by far; Amazon $50B with $35B contingent on IPO/milestone, Nvidia $30B, SoftBank $30B), ''bolstering its costly push for more chips, data centers and talent''; fetched first-hand (17 lines, paywall-truncated, publication date NOT visible in fetched excerpt). MANUAL ILLUSTRATIVE +0.30. Meta arms: Bloomberg Law - ''Semiconductor stocks soared Monday as early signs of success for Meta Platforms Inc.''s new artificial intelligence agent'' (Muse): AMD +10% closing above $1T market value, Intel +12%, Arm +17%, Philadelphia Semiconductor Index +4.3% (fifth straight gains); ''Meta''s stock gained 11% in its best day since April 2025''; fetched first-hand (18 lines, paywall-truncated, ''soared Monday'' phrasing; date INFERRED as Sep 21, 2026 from the search-attested observation date - Monday). MANUAL ILLUSTRATIVE +0.45. Sep 15, 2026 - Bloomberg-routed (via TheFly, relayed by Let''s Data Science) Meta MTIA roadmap: MTIA 450 (Arke) expected first half 2027, MTIA 500 (Astrid) later in 2027, with explicit caveats that the schedule and efficiency claims ''remain plans, not delivered hardware results'' and no published benchmarks. MANUAL ILLUSTRATIVE +0.25. OpenAI arm avg +0.325; Meta arm avg +0.35; illustrative delta (OpenAI minus Meta) -0.025. The real asymmetry scorer run once on the two illustrative arm arrays (OpenAI [0.35, 0.30], Meta [0.45, 0.25]): asymmetry -0.025, t=-0.2425, p=0.8450, d=-0.2425, 95% CI (-0.15, 0.10), engine is_significant False - NULL gradient, corroborating observation only. The near-zero delta WEAKENS entity-specific readings of m772''s +0.725 Anthropic-vs-Meta spread: with story types genre-matched, the register split tracks the story type (financial scoops vs layoffs/clash coverage), supporting the desk-routing confound over a lab-specific softening claim. The financial-incentive leg is a zero-payer control: no Bloomberg-OpenAI and no Bloomberg-Meta content-licensing deal is mapped (bounded absence, not proven zero), so this mechanism is NOT evidence that financial relationships cause tone. p_value NOT_CALCULATED at the finding layer; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine output recorded above as corroboration, verdict stays directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 29. Correlation is not causation.'
+    openai_arms:
+    - piece: 'OpenAI weighing funding round at over $1.2 trillion valuation'
+      date: '2026-09-16'
+      source_routing: bloomberg_original_mirror_attested
+      register: financing_momentum_ipo_optionality
+      key_language:
+      - 'OpenAI is holding early talks with investors about a fresh funding round that would value the ChatGPT creator at more than $1.2 trillion ahead of an initial public offering'
+      - 'Any decision to move forward with the fundraise will hinge on exactly when OpenAI decides to go public'
+      - 'The talks were initiated by investors'
+      - 'A funding round of that magnitude would meanwhile allow OpenAI to leapfrog its chief rival Anthropic, which raised funds in May at a $965 billion valuation'
+      tone_illustrative: 0.35
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand amp-mirror read (110 lines); illustrative only'
+      secondary_attribution: 'The Hindu BusinessLine amp mirror, byline ''By Bloomberg'', updated September 16, 2026'
+      source_url: https://www.thehindubusinessline.com/info-tech/openai-weighing-funding-round-at-over-12-trillion-valuation/article71470879.ece/amp/
+    - piece: 'OpenAI Valued at $852 Billion After Mega $122 Billion Round'
+      date: 'date_not_visible_in_fetched_excerpt'
+      source_routing: bloomberg_law_firsthand_paywall_truncated
+      register: financing_momentum_closed_round
+      key_language:
+      - 'OpenAI has completed a deal to raise $122 billion from investors at an $852 billion valuation, marking the company''s largest funding round to date by far'
+      - 'bolstering its costly push for more chips, data centers and talent'
+      - 'Amazon.com Inc. agreed to invest $50 billion in the round, while Nvidia Corp. and SoftBank Group Corp. each put in $30 billion'
+      tone_illustrative: 0.30
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand Bloomberg Law read (17 lines, login-wall truncated; publication date NOT visible in fetched excerpt); illustrative only'
+      date_caveat: 'publication date not visible in the fetched excerpt; observed as a current-week story on 2026-09-22 UTC; bounded Sep-2026 dating only'
+      source_url: https://news.bloomberglaw.com/tech-and-telecom-law/openai-valued-at-852-billion-after-closing-122-billion-round
+    meta_arms:
+    - piece: 'AMD, Intel Soar as Meta''s Muse AI Agent Spurs Chip Stock Rally'
+      date: '2026-09-21'
+      date_basis: 'inferred: ''soared Monday'' phrasing in fetched text + story observed 2026-09-22 UTC; September 21, 2026 was a Monday; labeled inferred, not verified'
+      source_routing: bloomberg_law_firsthand_paywall_truncated
+      register: product_momentum_market_rally
+      key_language:
+      - 'Semiconductor stocks soared Monday as early signs of success for Meta Platforms Inc.''s new artificial intelligence agent'
+      - 'Shares of Advanced Micro Devices Inc. jumped 10% to close above $1 trillion in market value for the first time'
+      - 'Intel Corp. gained 12%, Arm Holdings Plc. climbed 17% and the Philadelphia Semiconductor Index rallied 4.3% to notch its fifth straight session of gains'
+      - 'Meta''s stock gained 11% in its best day since April 2025'
+      tone_illustrative: 0.45
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand Bloomberg Law read (18 lines, login-wall truncated; date inferred as noted); illustrative only'
+      source_url: https://news.bloomberglaw.com/international-trade/amd-intel-soar-as-metas-muse-ai-agent-spurs-chip-stock-rally
+    - piece: 'Meta Plans MTIA 450 and MTIA 500 Deployments Through 2027'
+      date: '2026-09-15'
+      source_routing: bloomberg_routed_secondary_relay
+      register: product_roadmap_forward_momentum
+      key_language:
+      - 'A September Bloomberg report republished by TheFly said MTIA 450, code-named Arke, was expected in the first half of 2027 and MTIA 500, Astrid, later that year'
+      - 'The schedule and efficiency claims remain plans, not delivered hardware results'
+      - 'Meta said in March it was developing four generations of custom MTIA accelerators, including the 450 and 500, for GenAI inference into 2027'
+      tone_illustrative: 0.25
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand Let''s Data Science read (69 lines, dated September 15, 2026, Bloomberg/TheFly attribution verified in text); illustrative only'
+      secondary_attribution: 'Let''s Data Science Sep-15 report relaying ''a September Bloomberg report republished by TheFly'''
+      source_url: https://letsdatascience.com/news/meta-schedules-arke-and-astrid-data-center-deployments-4bdafdec
+    asymmetry_scorer:
+      openai_arm_tones: [0.35, 0.30]
+      openai_arm_avg: 0.325
+      meta_arm_tones: [0.45, 0.25]
+      meta_arm_avg: 0.35
+      illustrative_delta_openai_minus_meta: -0.025
+      delta_calc: '((0.35 + 0.30) / 2) - ((0.45 + 0.25) / 2) = 0.325 - 0.35 = -0.025'
+      delta_interpretation: 'genre-matched NULL gradient: Bloomberg''s Sep 15-21 2026 OpenAI financial arms (+0.325 avg) and Meta product-momentum arms (+0.35 avg) sit at near parity, positive on both sides; the -0.025 spread is statistically silent'
+      engine_run:
+        run_by: 'mediascope.score.asymmetry.calculate_asymmetry on the two illustrative arm arrays this run (venv python)'
+        target_scores: [0.35, 0.30]
+        peer_scores: [0.45, 0.25]
+        asymmetry_score: -0.025
+        t_statistic: -0.2425
+        p_value: 0.845
+        cohens_d: -0.2425
+        ci_95: [-0.15, 0.10]
+        engine_is_significant: false
+        role: 'corroborating observation only - NOT promoted to a finding; finding-layer is_significant stays false per the Aug 28 2026 standing rule'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_small_n_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand excerpt reads (4 browser.open this turn: 2 first-hand mirrors/relays with verified dates, 2 Bloomberg Law paywall-truncated with date caveats); tones are illustrative only'
+      verdict: 'Genre-matched null gradient documented, not proven: Bloomberg''s OpenAI financial arms and Meta product-momentum arms are at near parity (+0.325 vs +0.35, delta -0.025), and the real scorer agrees (p=0.8450, CI crossing zero). The near-zero spread WEAKENS entity-specific readings of m772''s +0.725 Anthropic-vs-Meta register split: with genres matched, the register split tracks story type, supporting the desk-routing confound. Zero-payer control case (no mapped Bloomberg-OpenAI or Bloomberg-Meta content-licensing deal), NOT evidence financial relationships cause tone. Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      bloomberg_openai_content_deal: 'No documented Bloomberg-OpenAI content-licensing deal (bounded absence, not a proven zero); the mechanism does not assert one'
+      bloomberg_meta_content_deal: 'No documented Bloomberg-Meta content-licensing deal (bounded absence, not a proven zero); the mechanism does not assert one'
+      bloomberg_revenue_model: 'Bloomberg LP revenue model is Bloomberg Professional terminal subscriptions, not publisher-style programmatic ad dependency - no mapped AI-lab payer tie of the payer-softening kind'
+      prediction: 'Zero-payer control: neither arm pair carries a mapped publisher-payment tie, so the near-zero delta is NOT evidence that financial relationships cause tone; it is a register/genre documentation case'
+      m772_linkage: 'Complements mechanism 772 (Bloomberg x Anthropic Sep-2026 profitability/IPO-momentum vs Bloomberg x Meta layoffs/partner-clash, delta +0.725): m772''s spread is explicitly ranked as story-type-mismatched; m775 genre-matches the story types and the spread collapses to -0.025'
+      m334_linkage: 'Extends the m334 (Bloomberg LP upstream narrative originator) family with a bounded control: the upstream scoops exist for OpenAI and Meta alike when the story genre is held constant'
+    confounders:
+    - 'STRONG: Hand-assigned illustrative tones (n=2 per arm, single-run manual scores) - the parity claim rests on manual register reads, not measured sentiment.'
+    - 'STRONG: Bloomberg Law OpenAI $852B arm has no verified publication date (paywall-truncated fetch, date not visible); bounded Sep-2026 dating only.'
+    - 'STRONG: Meta Muse arm date is INFERRED (''soared Monday'' + search-attested observation), not verified in fetched text.'
+    - 'MODERATE: MTIA arm is a Bloomberg-routed secondary (TheFly relay via Let''s Data Science), not a Bloomberg original - relay fidelity is first-hand verified for the Bloomberg attribution only.'
+    - 'MODERATE: The Muse arm''s register is partly market-momentum (chip stocks soaring) rather than Meta-framing per se; the +0.45 leans on the rally attribution to Muse''s early success.'
+    - 'WEAK: Anthropic IPO-window spillover - the OpenAI $1.2T-talks arm explicitly leapfrogs Anthropic''s $965B raise, so the Sep-2026 AI-financing news cycle is the shared backdrop.'
+    - 'WEAK: m772 precedent - the Bloomberg financial-scoop register is already documented; the marginal information content of each new arm is small.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The near-zero delta (-0.025) means Bloomberg shows NO entity-specific gradient between OpenAI and Meta once story genres are matched - this weakens any entity-specific reading of m772''s +0.725 Anthropic-vs-Meta spread; the register split in m772 tracks story type (financial scoops vs layoffs/clash), not the lab.'
+    - 'COUNTEREVIDENCE: The Bloomberg Law OpenAI arm is itself a Bloomberg venue framing OpenAI positively (''largest funding round to date by far'') - against any claim that Bloomberg venues are hard on AI labs.'
+    - 'COUNTEREVIDENCE: The MTIA arm''s explicit caveats (''plans, not delivered hardware results'', no published benchmarks) show the positive Meta coverage here is hedged - the +0.25 is a ceiling reading, so true parity may be even closer or Meta-favoring.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Real asymmetry scorer run once on the two illustrative arm arrays as a corroborating observation (asymmetry -0.025, t=-0.2425, p=0.8450, d=-0.2425, 95% CI (-0.15, 0.10), engine is_significant False); engine output NOT promoted to a finding. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: genre-matched null-gradient control case, not a uniform-prediction test. Ledger holds at 29 - TWENTY-NINTH present, THIRTIETH absent.'
+    research_method: 'Pre-run candidate selection via browser.search sets (Verge/Google camera-glasses pair rejected - insufficient novelty: #492 already corrected the Verge-on-Samsung/Google privacy coverage zero claim, #592 covers Verge x Google outside litigation, #677 covers WIRED x Google enforcement framing, #657 covers Verge x Snap; teen-social-media-harm Bloomberg route rejected - 3 corpus hits); 4 browser.open first-hand reads this run (hindubusinessline amp mirror of the Bloomberg Sep-16 $1.2T funding-talks scoop, 110 lines, ''By Bloomberg'' byline verified; Bloomberg Law $852B/$122B closed-round piece, 17 lines, login-wall truncated, date not visible in fetched text; Bloomberg Law Muse chip-rally piece, 18 lines, login-wall truncated, ''soared Monday'' phrasing, date inferred Sep 21 2026 from search-attested observation; Let''s Data Science Sep-15 MTIA Arke/Astrid roadmap, 69 lines, Bloomberg/TheFly attribution verified in text); novelty: zero test_type_a_907 files on disk pre-commit (glob); no ''Type A #907'' in git log pre-commit (--grep); block key zero-hit repo-wide pre-commit; max numeric mechanism id 774 pre-commit; zero underscore-form 775 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero dash-form 775 references pre-commit; zero numeric 775 keys in profiles/ pre-commit; corpus novelty sweeps per #715 (''article71470879'', ''openai-weighing-funding-round'', ''openai-valued-at-852-billion'', ''metas-muse-ai-agent-spurs'', ''arke-and-astrid'' zero-hit profiles/ and tests/ pre-commit); real asymmetry scorer run once on the two illustrative arm arrays: asymmetry -0.025, t=-0.2425, p=0.8450, d=-0.2425, 95% CI (-0.15, 0.10), engine is_significant False (corroborating observation only, NOT promoted to a finding). All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    test_file: tests/test_type_a_907_bloomberg_openai_vs_meta_financial_product_momentum_genre_matched_null_gradient_sep21_9pm.py
+    connects_to:
+    - 772
+    - 334
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
