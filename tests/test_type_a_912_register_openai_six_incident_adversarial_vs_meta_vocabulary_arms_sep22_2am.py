@@ -71,7 +71,7 @@ MECH_KEY_PREFIX = "register_openai_sep17_six_misalignment_adversarial"
 M_ID = 778
 ITER = 912
 TYPE_LETTER = "A"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "d078178d6d16dfff1aad1172053a7706c23bd7ed"
 
 # Format-built needles per the #715 convention: no literal underscore-form,
 # numeric, or dash-form 778 mechanism markers are carried in this file.
