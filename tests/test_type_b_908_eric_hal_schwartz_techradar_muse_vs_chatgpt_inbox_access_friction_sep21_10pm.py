@@ -119,6 +119,10 @@ JOURNALISTS = os.path.join(REPO, "profiles/careers/journalists.yaml")
 
 ITERATION = 908
 MECHANISM_ID = 776
+# NOTE (per the #565 convention): ANCHORED_SHA pins the MAIN commit; the
+# anchor/log-hash followups legitimately advance HEAD past it, so the live
+# invariant is ancestry (test_anchor_is_ancestor_of_head), not equality.
+ANCHORED_SHA = "53f2335e6fc4d8d3b217f7e8fb9ee37dbbd4c622"
 BLOCK_KEY = (
     "type_b_908_eric_hal_schwartz_techradar_"
     "muse_vs_chatgpt_inbox_access_friction"
@@ -186,15 +190,28 @@ class TestNovelty908:
         assert matches == [os.path.basename(TEST_BASENAME)], matches
 
     def test_type_b_908_main_commit_unique_and_anchored(self):
+        # DESELECTED pre-commit (per #565): the commit does not exist yet.
         log = subprocess.run(
-            ["git", "log", "--oneline", "--grep=Type B #908"],
+            ["git", "log", "--format=%H %s", "--grep=Type B #908"],
             cwd=REPO,
             capture_output=True,
             text=True,
             check=True,
         ).stdout.strip()
-        assert log != "", "no Type B #908 commit found"
-        assert len(log.splitlines()) == 1, log
+        mains = [
+            ln for ln in log.splitlines()
+            if re.search(r"Type B #908(?::| )", ln)
+            and "anchor followup" not in ln
+            and "log-hash followup" not in ln
+            and "push-status followup" not in ln
+        ]
+        assert len(mains) == 1, mains
+        assert ANCHORED_SHA not in (
+            "PATCH_ME_IN_FOLLOWUP",
+            "POST_COMMIT_ANCHORED",
+            "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565",
+        )
+        assert mains[0].startswith(ANCHORED_SHA + " "), mains[0]
 
     def test_novelty_verification_claim(self):
         assert ITERATION == 908
@@ -259,10 +276,12 @@ class TestRotationGuard908:
 
     def test_anchor_is_ancestor_of_head(self):
         res = subprocess.run(
-            ["git", "merge-base", "--is-ancestor", "HEAD~1", "HEAD"],
+            ["git", "merge-base", "--is-ancestor", ANCHORED_SHA, "HEAD"],
             cwd=REPO,
         )
-        assert res.returncode == 0
+        assert res.returncode == 0, (
+            "anchored main commit must be an ancestor of HEAD"
+        )
 
 
 # ---------------------------------------------------------------------------
