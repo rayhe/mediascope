@@ -106,7 +106,7 @@ M_ID = 780
 ITER = 914
 TYPE_LETTER = "C"
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "14429f53c2802a390cbe1f4be9b5a83940674676"
 
 # Format-built needles per the #715 convention: no literal underscore-form,
 # numeric, or dash-form 780 mechanism markers are carried in this file.
