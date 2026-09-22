@@ -8107,12 +8107,92 @@ journalists:
   notes: 'Born circa late 1990s (based on career timeline). University of Massachusetts graduate (journalism). Based in San Francisco. Career arc: MSNBC (production assistant) → Connecticut Public Broadcasting (intern) → Bloomberg News (intern, SVB crisis coverage) → Gizmodo (AI/content moderation reporter) → TechCrunch (senior AI reporter) → Wired (senior writer, AI business). Entire journalism career occurred during the ChatGPT/generative AI era  -  started at Gizmodo roughly when GPT-4 launched (2023). This makes him a generational contrast with Wired colleagues Will Knight (20+ years covering AI) and Steven Levy (40+ years in tech journalism), and with Cade Metz (30+ years). KEY for MediaScope: Zeff is analytically valuable in three dimensions. (1) PIPELINE TEST: Third confirmed Gizmodo → Wired migration under Barrett (after Cameron and Mehrotra), establishing the Gizmodo → Wired talent pipeline as a systematic pattern, not an anomaly. (2) SPEED TEST: Four-outlet career in ~3 years is
     the fastest multi-outlet arc in the dataset. Each outlet has very different institutional norms: Bloomberg (wire service precision, attribution-heavy), Gizmodo (Gawker-descendant adversarial), TechCrunch (startup ecosystem booster → accountability), Wired (Condé Nast longform + Drummond-era adversarial pivot). If framing is portable and individual, his writing should show consistent patterns across all four; if institutional framing dominates, each outlet should show distinct framing fingerprints. (3) GENERATIONAL TEST: As a ChatGPT-era journalist, his baseline AI literacy differs from pre-deep-learning veterans. Tests whether journalists who grew up with LLMs frame AI differently from those who covered the AI winter through the hype cycle. His reporting scope (AI business at Wired) also enables direct comparison with Lauren Goode (consumer tech at Wired) and Leah Feiger (politics at Wired) to test whether beat assignment or institutional culture is the stronger framing determinant within
     a single publication.'
+  mechanism_ids:
+  - 779
   competitor_coverage:
     cross_entity_analysis:
       mechanism_id: 63
       pattern: source_access_institutional_alignment
       description: 'Cross-publication framing shift correlates with institutional financial incentives. At Gizmodo (G/O Media, no AI deals): adversarial coverage of ALL companies including Meta (Project Ghostbusters) and OpenAI (board crisis). At WIRED (Condé Nast, OpenAI deal Aug 2024): bifurcated coverage  -  Meta receives institutional-decay framing (layoffs, morale); OpenAI/Anthropic receive access-based business journalism (executive profiles, revenue scoops). Source access asymmetry reinforces: cultivated inside access at Anthropic (Boris Cherny, Claude Code ARR exclusive) and OpenAI (Brockman interviews, internal memos); no comparable Meta AI access. WIRED output Nov 2025-Aug 2026: 6+ OpenAI, 3+ Anthropic, 0 dedicated Meta AI business pieces. Third Gizmodo→WIRED migration under Barrett  -  adversarial instincts selectively channeled (applied to Meta, muted for OpenAI/Anthropic). CONTRAST with #60 (Hao target-shift) and #57 (Seetharaman frame-lock): Zeff shows FRAMING-shift  -  same
         companies, different treatment at different outlets.'
+    type_b_913_maxwell_zeff_wired_openai_framework_relay_vs_meta_muse_trust_deficit:
+      block_key: type_b_913_maxwell_zeff_wired_openai_framework_relay_vs_meta_muse_trust_deficit
+      mechanism_id: 779
+      iteration: 913
+      type: B
+      date: '2026-09-22 03:00 PDT'
+      test_file: tests/test_type_b_913_maxwell_zeff_wired_openai_framework_relay_vs_meta_muse_trust_deficit_sep22_3am.py
+      design: 'Within-journalist cross-entity register comparison: same writer (Maxwell Zeff), same outlet (WIRED), same product category (consumer AI agents), Meta vs OpenAI, eight days apart in Sep 2026. Tests whether the trust-deficit register Zeff co-carries on Meta''s Muse agent launch also fires on OpenAI''s agent misalignment framework under the reverse news valence (OpenAI self-disclosing its own agents'' misbehavior).'
+      finding: 'Register asymmetry: Zeff''s Sep-16 OpenAI misalignment-framework piece (SOLE byline) runs a company-briefed platform relay register (carried +0.15 from m712/#757), while his Sep-8 Meta Muse launch piece (co-byline with Lily Hay Newman, security desk) runs a launch-framed-through-trust-deficit register (carried -0.30 from m635/#668). Illustrative delta (OpenAI minus Meta) +0.45 - the widest same-journalist register gap in the WIRED Sep-2026 AI-agent pair family. Same writer, same outlet, same AI-agent category, eight days apart.'
+      openai_arm:
+        outlet: WIRED
+        author_byline: Maxwell Zeff
+        title: 'OpenAI Creates a New Framework to Disclose Bad AI Behavior'
+        url: https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/
+        date: '2026-09-16'
+        key_quotes:
+        - 'Byline and timestamp (FIRST-HAND browser.open of verbatim WIRED reprint mirror this run): By Maxwell Zeff Sep 16, 2026, 6:07 pm'
+        - 'Dek (FIRST-HAND, same mirror): The company also disclosed previously unreported incidents in which its AI models behaved in misaligned ways, including uploading files to the internet without being asked.'
+        - 'Corpus note (carried from m712/#757): OpenAI framed the disclosure as a new industry framework; Kai Chen quoted as an authoritative source; anonymous OpenAI official briefed WIRED before publication.'
+        mirror_url: https://technewstube.com/wired/1868061/openai-creates-new-framework-to-disclose-bad-ai-behavior/
+        mirror_opened_this_run: true
+        evidence_tier: 'FIRST-HAND mirror read this run (verbatim WIRED byline, date, dek, headline); corpus-documented register (platform_relay_company_voice_authoritative, carried +0.15 from m712/#757). WIRED body text NOT first-hand (wired.com direct fetch policy-blocked per #653).'
+        tone_MANUAL_ILLUSTRATIVE: 0.15
+      meta_arm:
+        outlet: WIRED
+        author_byline: 'Lily Hay Newman, Maxwell Zeff'
+        title: 'Meta Releases Muse, a Personal AI Agent With Privacy ''Built Into It'''
+        date: '2026-09-08'
+        key_quotes:
+        - 'Headline variant A (Muck Rack listing, carried from m635/#668): Muse, Meta''s New Personal AI Agent, Needs You To Trust It'
+        - 'Headline variant B (verbatim reprint mirror, carried from m635/#668): Meta Releases Muse, a Personal AI Agent With Privacy ''Built Into It'''
+        - 'Dek (verbatim reprint mirror, carried): Designed to compete with OpenClaw and Instinct, the company says Muse can do everything from sell your car to book you a plane ticket.'
+        - 'Byline and timestamp (verbatim reprint mirror, carried from m635/#668): By Lily Hay Newman, Maxwell Zeff Sep 8, 2026, 4:12 pm'
+        mirror_url: https://technewstube.com/wired/1865498/meta-releases-muse-personal-ai-agent-privacy-built-into/
+        evidence_tier: 'Corpus-documented from m635/#668 (headline and dek bounded, mirror-bounded characterization; body NOT first-hand). NOT re-read this run - carried register evidence.'
+        tone_MANUAL_ILLUSTRATIVE: -0.30
+      asymmetry_scorer:
+        openai_tone: 0.15
+        meta_tone: -0.30
+        illustrative_delta_openai_minus_meta: 0.45
+        delta_calc: '(0.15) - (-0.30) = +0.45'
+        two_entity_band: [0.15, -0.30]
+        statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment on carried register readings). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+        confounders:
+          strong:
+          - 'Co-byline dilution: the Meta arm is co-written with Lily Hay Newman (security desk, trust/surveillance framing specialist); the trust-deficit headline register may be Newman''s or a desk editor''s, not Zeff''s alone. The OpenAI arm is sole-Zeff. Attribution of the register to Zeff specifically is the weakest link in the pair.'
+          - 'News-peg asymmetry: the OpenAI arm covers a company briefing in which OpenAI self-discloses incidents (invites a relay register; refusing the brief would itself be a story); the Meta arm covers a product launch two weeks after the $18B settlement (trust-skepticism is the legitimate news question). The valence reversal cuts both ways.'
+          moderate:
+          - 'Beat-register norms: business-desk briefings run softer than security-desk launch coverage, and the Meta piece''s security-desk co-byline imports the privacy-beat adversarial norm.'
+          - 'Register carried, not fresh-scored: both tone values are carried from m712/#757 (OpenAI) and m635/#668 (Meta), so this mechanism re-uses prior readings rather than generating independent scores.'
+          weak:
+          - 'n=1 per arm: directional only, degenerate statistical contract.'
+          - 'WIRED headline A/B rotation: the trust-deficit variant may not be the only or final Meta headline.'
+        counterevidence:
+        - 'Zeff ran adversarial on OpenAI on Jul 10 2026 (WIRED Apple-lawsuit accusation-phase piece, mechanism 597, scored -0.2): same writer, same publication, adversarial on OpenAI earlier in 2026 - no systematic OpenAI softness.'
+        - 'Zeff''s Feb 10 2026 OpenAI io-hardware delay piece (#440) was neutral business-delay coverage: positive briefings are not his only OpenAI register.'
+        - 'The m757 cross-outlet finding shows the relay register is story-type dependent: WSJ quoted the same Kai Chen without the relay frame, and the in-corpus WIRED rogue-models piece covered OpenAI model misbehavior directly - the softness ordering tracks briefing structure, not payer identity alone.'
+        - 'The Sep-8 Meta piece was commissioned under Barrett''s Drummond-era adversarial pivot (per Zeff item m63 note), which is an institutional, not entity-specific, confound.'
+        connects_to: [712, 757, 635, 597, 668, 599, 663, 504]
+      verdict: 'directionally_supported_not_proven'
+      falsification_family: 'NOT a falsification-family member (directional register asymmetry, not a near-null or inversion; no uniform-softening prediction under test; Ledger holds at 29)'
+      no_analysis_json_update: true
+      ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+      is_significant: false
+      correlation_not_causation: true
+      correlation_note: 'Correlation is not causation.'
+      financial_context: 'Conde Nast x OpenAI content-licensing deal (Aug 2024, $5-10M/yr, ACTIVE per #599/#609; mechanism 504): OpenAI is WIRED''s owner''s payer; Meta is not a Conde Nast publisher-side payer on the corpus record. Gradient-consistent surface reading (payer''s self-disclosed incidents get the platform relay; $0 side''s launch gets the trust deficit), but the news-peg and co-byline confounds are at least as strong as the money story, and Zeff''s own Jul-2026 adversarial OpenAI piece (m597) cuts against deal-driven softness. Correlation, not causation.'
+      research_method: 'FIRST-HAND browser.open this run on the technewstube verbatim WIRED reprint mirror of the Sep-16 Zeff OpenAI piece (verbatim byline, date, dek, headline; WIRED body text NOT first-hand per #653). Meta arm carried from m635/#668 (mirror-verified in #668). Pre-commit novelty greps: zero test_type_b_913 files on disk (glob); no ''Type B #913'' in git log (--grep); max numeric mechanism_id 778 pre-commit; zero underscore-form 779 keys repo-wide pre-commit (format-built needles only, per #715); zero dash-form 779 refs; zero numeric 779 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the canonical wired.com OpenAI URL is already in-corpus from m712 (zero-hit claim applies to the block key and headline phrase, not the carried URL); ''OpenAI Creates a New Framework to Disclose Bad AI Behavior'' headline phrase zero-hit repo-wide pre-commit (grep verified). FIRST dedicated Type B mechanism on Maxwell Zeff (m635''s type_b usage was on Lily Hay Newman; Zeff appeared only as co-byline dilution). No em dashes; ASCII-only.'
+      novelty: 'FIRST dedicated Type B mechanism on Maxwell Zeff; mechanism_id 779 next free pre-commit (max 778); no test_type_b_913 files and no #913 commits pre-commit; headline phrase new-to-corpus (grep verified).'
+      artifact_readiness: 'No analysis.json update warranted: illustrative register pair only, carried manual tones, no empirical significance.'
+      cross_references:
+      - '#712 Type B (WIRED OpenAI misalignment-framework arm origin: company-briefed platform relay register +0.15, Maxwell Zeff byline).'
+      - '#757 Type B (WIRED pair divergence: Sep-17 disclosure peg softness ordering; OpenAI arm +0.15 carried here).'
+      - '#668 Type B (Lily Hay Newman x Apple Watch pair, mechanism 635: the Sep-8 Meta Muse co-byline arm -0.30 carried here).'
+      - '#597 Type C (Zeff Jul-10-2026 WIRED OpenAI Apple-lawsuit accusation piece, -0.2: key counterevidence).'
+      - '#599/#609 Type C (Conde Nast OpenAI licensing deal provenance, ACTIVE).'
+      - '#504 (Conde Nast x OpenAI deal mechanism).'
+      - '#663 (gradient-absent control-case family precedent).'
   multi_publication: true
 - mechanism_662_brian_x_chen_duo_value_review_vs_rayban_privacy_alarm_register_gradient_sep13:
     mechanism_id: 662
