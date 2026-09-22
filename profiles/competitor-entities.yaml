@@ -21108,6 +21108,117 @@ marketplace_intermediary_landscape:
       yaml_parse_clean: true
       ascii_only: true
       novelty_sweep_precommit: true
+  type_c_914_google_expert_intelligence_book_publisher_program_sep22_4am:
+    mechanism_id: 780
+    iteration: 914
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-22'
+    time_pdt: '04:00'
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'Google Expert Intelligence Book-Publisher Program (announced Aug 27 2026): 100,000+ Licensed E-Book Titles Inside Gemini Notebook - First Dedicated Corpus Mechanism on Google''s Licensed-Use Book Leg; Book-Domain Sign-or-Sue Bifurcation Against the Jul 2026 Litigation Tier'
+    block_key: type_c_914_google_expert_intelligence_book_publisher_program_sep22_4am
+    date: '2026-09-22 04:00 PDT'
+    type_c_focus: 'FIRST dedicated corpus mechanism on Google''s Expert Intelligence program - the licensed-use book-publisher leg of the Google incentive vector. Announced by Google Aug 27, 2026 in a Google blog post by Steven Johnson (Editorial Director, Google Labs) and Will Houghteling (product management for Expert Intelligence), and rolled out to Google Workspace on Sep 17, 2026: readers add e-books they purchased through Google Play Books into Gemini Notebook and ask questions, generate infographics, audio overviews, and quizzes grounded in the book text, with citations pointing back to the source. Launch corpus: more than 100,000 titles from six launch publishers (Bloomsbury, De Gruyter Brill, Johns Hopkins University Press, Macmillan Publishers, O''Reilly Media, Penguin Random House), plus 15+ bestselling authors (Steven Pinker, Michael Pollan, Jennifer Wallace) building Featured Notebooks with additional material around their books. Google plans to extend Expert Intelligence to the Gemini app and AI Mode in Search, and to add third-party subscriptions, business research reports, and textbooks. Authors Guild CEO Mary Rasenberger praised the program as "a positive step forward in the legitimized use of books in the AI ecosystem to the benefit of readers, publishers, and authors alike" (Publishers Weekly, Sep 2026). This is first-to-corpus documentation of the program, not a new Sep-22 event - stated explicitly so no later reader mistakes this leg for September-22 news.'
+    evidence:
+    - url: https://www.thebookseller.com/news/google-launches-expert-intelligence-with-more-than-100k-publisher-titles
+      surface_date: 'early Sep 2026 (trade-press; listed as updated 21 days prior at Sep 21-22 crawl - approx Sep 1; excerpt-bounded per #503)'
+      facts: 'Google launches Expert Intelligence: more than 100,000 books from Bloomsbury, De Gruyter Brill, Johns Hopkins University Press, Macmillan Publishers, O''Reilly Media, Penguin Random House. Users add purchased Google Play Books e-books to a Gemini Notebook; responses grounded in the book; infographics, audio overviews, quizzes. 15+ authors (Steven Pinker, Michael Pollan, Jennifer Wallace) on Featured Notebooks with additional material. Extension planned to the Gemini app and AI Mode in Search; also intends subscription content, business research reports, textbooks. Developed in consultation with authors and publishers; Johnson + Houghteling quote: "engage with your trusted sources through Google AI products".'
+    - url: https://workspaceupdates.googleblog.com/search/label/Gemini%20Notebook
+      surface_date: 'Sep 17, 2026 Google Workspace Updates entry (first-party Google; excerpt-bounded per #503)'
+      facts: '"Introducing Expert Intelligence in Gemini Notebook": a cross Google initiative that helps users engage with trusted sources through Google AI products, starting with Gemini Notebook; more than 100,000 books from major publishers. Gradual rollout started Sep 14, 2026; available to Workspace customers and personal Google accounts (outside EEA). Free starter book for US users 18+ while supplies last; recipients of a shared notebook must have purchased their own copy to interact with the e-book.'
+    - url: https://www.publishersweekly.com/pw/by-topic/industry-news/publisher-news/article/101215-publishing-s-ai-reckoning.html
+      surface_date: 'Sep 2026, Publishers Weekly "Publishing''s AI Reckoning" (excerpt-bounded per #503)'
+      facts: 'Book-domain sign-or-sue context: May 2026 suit against Meta (Cengage, Elsevier, Hachette Book Group, Macmillan, McGraw Hill, Turow); Jul 2026 suit against Google (Cengage, Elsevier, Hachette, Turow) - both alleging infringement in AI model training. While suits play out, publishers build bridges: the Google Expert Intelligence partnership with Bloomsbury, De Gruyter Brill, Johns Hopkins University Press, Macmillan, O''Reilly, Penguin Random House. Rasenberger (Authors Guild CEO) praise quote. Cross-reference price legs (already corpus via m735/m777/m663/711): HarperCollins 2024 AI training deal $5,000 per participating title split equally with authors (first Big Five); Wiley FY2026 $49M AI licensing revenue; Cengage x AWS; PUP x Cashmere.'
+    - url: https://www.thurrott.com/a-i/google-gemini-a-i/340803/google-brings-e-books-to-gemini-notebook
+      surface_date: 'late Aug 2026 (excerpt-bounded per #503)'
+      facts: 'Thurrott corroborates the launch shape: "over 100,000 books from major publishers" (Bloomsbury, De Gruyter Brill, Johns Hopkins University Press, Macmillan Publishers, O''Reilly Media, Penguin Random House); "over 15 best-selling authors" creating Featured Notebooks; expansion to third-party subscriptions, business research reports, textbooks planned.'
+    - url: https://www.iphoneincanada.ca/2026/08/28/gemini-notebook-play-books/
+      surface_date: 'Aug 28, 2026 (consumer announcement relay; excerpt-bounded per #503)'
+      facts: 'Consumer-facing announcement detail: eligible e-books must be purchased on Google Play Books; a Thursday Google blog post announced Expert Intelligence; free starter book in the US while supplies last; plans to bring the feature to the Gemini app and AI Mode in Search, plus expand beyond books to textbooks and research reports.'
+    - url: https://www.morningstar.com/news/dow-jones/20251203885/bloomsbury-publishing-to-collaborate-with-google-cloud
+      surface_date: 'Dec 3, 2025 (Dow Jones/Morningstar; cross-reference context, NOT re-ingested as a new finding; excerpt-bounded per #503)'
+      facts: 'Pre-existing Google-Bloomsbury vector: Bloomsbury Publishing strategic collaboration with Google Cloud on AI-powered learning, content discovery, and core publishing infrastructure (NotebookLM, Vertex AI, Gemini Enterprise); no financial terms disclosed; investment factored into existing capex plans. Shows Google''s book-publisher incentive vector predates Expert Intelligence.'
+    figures:
+      launch_titles: '100,000+ (more than 100,000 at launch)'
+      launch_publishers: '6 named launch publishers: Bloomsbury, De Gruyter Brill, Johns Hopkins University Press, Macmillan Publishers, O''Reilly Media, Penguin Random House'
+      featured_notebook_authors: '15+ bestselling authors (Steven Pinker, Michael Pollan, Jennifer Wallace named)'
+      consumer_announcement: 'Aug 27, 2026 (Google blog post, Steven Johnson + Will Houghteling; per trade-press excerpts)'
+      workspace_rollout: 'Sep 17, 2026 (Google Workspace Updates; gradual rollout from Sep 14, 2026)'
+      terms_disclosed: false
+      expansion_announced: 'Gemini app, AI Mode in Search, third-party subscriptions, business research reports, textbooks (planned, not live)'
+    sources:
+    - 'https://www.thebookseller.com/news/google-launches-expert-intelligence-with-more-than-100k-publisher-titles'
+    - 'https://workspaceupdates.googleblog.com/search/label/Gemini%20Notebook'
+    - 'https://www.publishersweekly.com/pw/by-topic/industry-news/publisher-news/article/101215-publishing-s-ai-reckoning.html'
+    - 'https://www.thurrott.com/a-i/google-gemini-a-i/340803/google-brings-e-books-to-gemini-notebook'
+    - 'https://www.iphoneincanada.ca/2026/08/28/gemini-notebook-play-books/'
+    - 'https://www.morningstar.com/news/dow-jones/20251203885/bloomsbury-publishing-to-collaborate-with-google-cloud (context cross-reference)'
+    book_partner_tier_leg:
+    - 'The partner tier is now named for the book domain: Bloomsbury, De Gruyter Brill, Johns Hopkins University Press, Macmillan Publishers, O''Reilly Media, Penguin Random House - six launch publishers on Expert Intelligence, plus the 15+ author Featured-Notebook layer. This is the corpus''s first named-partner census of a Google book-publisher program.'
+    - 'The purchase-gating structure is the economically legible part: only e-books purchased through Google Play Books can enter a notebook, and shared-notebook recipients must buy their own copy. Consideration is per-copy and traceable (each interacting reader is a paying customer), which is a structurally different incentive shape from the bulk lump-sum training licenses (News Corp $250M/5yr) and from the zero-disclosed-fee attribution partnerships (609-family India deals).'
+    litigation_tier_leg:
+    - 'Mechanism 636''s sign-or-sue architecture now has a book-domain instance: Hachette Book Group, Cengage Learning, Elsevier, and Scott Turow sit in the litigation tier against Google (Jul 10 2026 SDNY class action, case 1:26-cv-05870; corpus publisher_litigation_jul2026), while the six Expert Intelligence publishers sit in the partner tier - on the same counterparty, in the same month, in the same content class.'
+    - 'Macmillan breaks entity-level tier labels: it is an Expert Intelligence launch partner with Google AND a May 2026 plaintiff against Meta (with Hachette Book Group, Cengage, Elsevier, McGraw Hill, Turow). The tier is counterparty-specific, not entity-intrinsic - the same publisher sues one lab and partners with another. Incentive mapping must be a (publisher, lab) matrix, not a publisher attribute.'
+    licensed_use_vs_training_leg:
+    - 'Per mechanism 735''s deal-type dimension, Expert Intelligence is a LICENSED-USE (retrieval/grounding) structure, not a training license: it gates what Gemini Notebook may ground answers in, for books the reader already bought, with citations. It does not price Gemini''s training corpus and must not be weighted as one in payer-softening tests.'
+    - 'No financial terms are disclosed (no fee, no revenue share, no duration) - the leg is unweightable in dollar terms and counts as a LEG with title/author quanta, not a quantum. This mirrors the India attribution partnerships (609-family): title/publisher counts with $0 disclosed fee are sign-tier evidence of willingness to deal, not price evidence.'
+    - 'The training-price vector coexists separately in the book domain: HarperCollins'' 2024 $5,000-per-title training deal (50/50 author split, first Big Five) and Wiley''s $49M FY2026 AI revenue (m735/m777). Expert Intelligence does not supersede or price those; it documents the licensed-use tier adjacent to them.'
+    search_expansion_leg:
+    - 'The announced (not live) extension to AI Mode in Search is the leg that matters for the corpus''s incentive theory: AI Mode and AI Overviews are the substitutive surface (Nadella substitutive testimony, m759) where the fourth-factor fight lives. A licensed-use partner tier inside the substitutive surface is Google''s counter-program to the sign-or-sue fight - the purchase gate makes each interacting user a paying book customer, which is the price structure the litigation tier (m759''s ~93% click-through repricing) is arguing over.'
+    - 'The announced-beyond-books expansion (third-party subscriptions, business research reports, textbooks) would carry the same licensed-use structure into news-adjacent and research content - watched, not claimed; the mechanism records the plan as announced, not as live.'
+    extends: '735'
+    connects_to: [735, 777, 702, 708, 663, 711, 636, 609]
+    confounders_ranked_strong_first:
+    - severity: STRONG
+      text: 'Search-excerpt-bounded sourcing: the Aug 27 Google blog post itself was not first-hand read (0 browser.open this run per #503); all program facts carried from trade-press excerpts and the Workspace Updates label page excerpt. The official consumer post''s full terms, if any, are unverified.'
+    - severity: STRONG
+      text: 'Licensed-use vs licensed-training boundary: Expert Intelligence is a grounding/use license for books the reader bought, NOT a training-data license. It cannot be weighted as training-corpus consideration; conflating the two would overstate the Google payer leg by the full title count.'
+    - severity: MODERATE
+      text: 'No financial terms disclosed: no fee, revenue share, or duration is public, so the leg carries publisher/author/title quanta but no dollar quantum - unweightable in payer-softening tests beyond leg-counting.'
+    - severity: MODERATE
+      text: 'Single-month observation (Aug 27 announcement, Sep 17 Workspace rollout): program durability, publisher retention, and whether the announced AI Mode/Subscriptions expansion ships are all unknown. n=1 program.'
+    - severity: WEAK
+      text: 'Trade-press relay completeness: Publishers Weekly, The Bookseller, and Thurrott excerpts may omit program limitations (geography, title eligibility) that the full announcement carries.'
+    strongest_counterargument: 'Expert Intelligence discloses no money, and its incentive structure is consumer-purchase-gated: the publisher''s consideration is book sales Google would partly intermediate anyway through Play Books, not a licensing payment from Google''s AI budget. Reading a per-copy retail gate as a financial incentive from the lab to the publisher is a category stretch - the defensible claim is narrower: the program documents that six named book publishers chose the partner tier with Google in the same month four others stayed in the litigation tier, which is sign-or-sue TIER evidence, not price evidence. Without terms, it cannot calibrate any payer-softening gradient.'
+    counter_evidence:
+    - 'HarperCollins'' 2024 $5,000-per-participating-title AI training deal (split equally with authors, first Big Five to publicly reveal one) shows book publishers DO extract training-data money - Expert Intelligence is not the whole book-domain price vector, and the training leg coexists with the licensed-use leg.'
+    - 'Wiley''s $49M FY2026 AI licensing revenue (m735/m777) is the book-domain price leader and dwarfs anything attributable to Expert Intelligence, whose economics are undisclosed - the program is a tier leg, not a market-price leg.'
+    - 'Macmillan sits in the partner tier with Google while suing Meta (May 2026, with Hachette/Cengage/Elsevier/McGraw Hill/Turow): entity-level sign-or-sue labels fail; the (publisher, lab) matrix is the correct unit, and any gradient model that treats Macmillan as "Google-aligned" across all coverage would be mis-specified.'
+    overview: 'FIRST dedicated corpus mechanism on Google''s Expert Intelligence book-publisher program (consumer announcement Aug 27 2026; Google Workspace rollout Sep 17 2026): 100,000+ licensed e-book titles from six launch publishers (Bloomsbury, De Gruyter Brill, Johns Hopkins University Press, Macmillan Publishers, O''Reilly Media, Penguin Random House) plus 15+ author Featured Notebooks inside Gemini Notebook, with announced (not live) expansion to the Gemini app, AI Mode in Search, subscriptions, research reports, and textbooks. EXTENDS mechanism 735''s deal-type dimension into the book domain as the licensed-use tier: purchase-gated grounding is per-copy traceable consideration, structurally distinct from lump-sum training licenses and zero-fee attribution partnerships. The book-domain sign-or-sue bifurcation is now named on both sides: partner tier (the six) vs litigation tier (Hachette Book Group, Cengage, Elsevier, Turow - Jul 2026 SDNY suit) on the same counterparty in the same month; Macmillan breaks entity-level labels by partnering with Google while suing Meta. MANUAL QUALITATIVE only per the Aug 28 2026 standing rule: no financial terms disclosed, so the leg is unweightable in dollars (LEG with title/author quanta, not a quantum); verdict directionally_supported_not_proven; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; no_analysis_json_update true; NOT artifact-grade. NOT a falsification-family member (documentation + tier leg, no tone pair); the falsification ledger holds at 29; THIRTIETH remains the negative guard. Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+    statistical_discipline:
+      scope: qualitative financial-incentive documentation only
+      correlation_not_causation: true
+      scorer: none
+      tone_scores: NOT_SCORED
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      engine_run: false
+      artifact_grade: false
+      qualitative_only: true
+      verdict: 'directionally_supported_not_proven'
+    cautious_language_required: true
+    correlational_note: 'This mapping documents Google''s Expert Intelligence book-publisher program as a financial-incentive datum on the Google x book-publisher vector: six named launch publishers and 15+ authors in the partner tier, purchase-gated licensed-use structure, no disclosed financial terms, announced expansion to AI Mode in Search. The program sits alongside the Jul 2026 book-publisher litigation tier against Google and the separate training-price vector (HarperCollins $5,000/title, Wiley $49M). Financial relationships and partnership postures are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim. The program was announced Aug 27 2026 and rolled out Sep 17, 2026: first-to-corpus documentation, not a new event.'
+    no_coverage_tone_claim: true
+    no_analysis_json_update: true
+    falsification_family: 'NOT a member - licensed-use documentation + tier leg with no coverage-tone pair; ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+    falsification_ledger_holds_at: 29
+    tone: 'NOT_SCORED'
+    artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+    key_design_note: 'Designed keying per the #715 convention: the block key carries the iteration number (914), never the numeric mechanism id (780); zero underscore-form, dash-form, and numeric 781 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit.'
+    verification:
+      iteration: 914
+      type: 'C'
+      date: '2026-09-22 04:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+      novelty_sweep_precommit: true
   roundtable_paradium_infrastructure_capture_sep2026:
     mechanism_id: 738
     mechanism_name: 'Roundtable x Paradium.AI (Arena Group) 10-Year $1B AI/DeFi MediaOS Agreement (Announced Sep 17 2026) - Infrastructure-Capture as the Sixth Relationship Direction; Near-Controlling 49.5% Equity Stake Plus Perpetual Tech License'
