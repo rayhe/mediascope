@@ -2369,6 +2369,145 @@ competitor_relationships:
       cross_references: [441, 625, 643, 717]
       novelty: 'First dedicated Type A mechanism on FT''s Sep 13 2026 Anthropic profitability scoop (constructive company-briefed register) vs the mechanism 643 adversarial accountability scoop (same entity, 4-day window) vs the carried FT Meta AI-lens baseline. Distinct from mechanism 717 (Reuters x OpenAI slowdown-week pair), mechanism 643 (FT x Anthropic accountability lane), mechanism 441 (FT x Anthropic fundraising lane), mechanism 625 (OpenAI x Meta launch-week pair), and mechanisms 674 (Conditt/Engadget, #733) and 675 (Seattle Times/Newsday grant-then-sue, #734). Zero mechanism_676 keys repo-wide pre-commit (underscore and colon forms); max numeric mechanism_id pre-commit 675. All six novel this-run source URLs zero-hit repo-wide pre-commit. #734''s and #735''s zero-676 sweeps fail by designed supersession per the #710/#720 convention.'
       test_file: tests/test_type_a_737_ft_anthropic_slowdown_week_profitability_scoop_sep14_2am.py
+    iteration_922_sep22_2026_ft_anthropic_sep_profitability_ipo_momentum_vs_meta_carried:
+      date: '2026-09-22'
+      time_pdt: '12:00'
+      author: 'Kit (with Ray)'
+      iteration: 922
+      iteration_type: 'A'
+      rotation_type: 'A'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      publication: 'Financial Times'
+      competitor_pair: 'Anthropic vs Meta'
+      mechanism_id: 784
+      mechanism_name: 'FT x Anthropic Sep-2026 Q2-Profitability/IPO-Momentum Register vs FT x Meta Carried Arms - m54/m441 September Temporal Extension'
+      discovery_date: '2026-09-22'
+      finding_type: 'competitor_coverage_deep_dive'
+      test_file: 'tests/test_type_a_922_ft_anthropic_sep_profitability_ipo_momentum_vs_meta_carried_sep22_12pm.py'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      summary: 'THIRD leg of the 920-924 rotation window (D->E->A). Temporal extension of m54 (Aug 11) and m441 (Sep 1) into September 2026: two FRESH FT-originated Anthropic financial-momentum arms (Q2-2026 profitability scoop relayed Sep 16-21; $2-3T IPO-target scoop relayed Aug 14) vs three CARRIED FT x Meta arms from m441 (Jun 5 equity-raise desperation -0.55; Jul 8 glasses surveillance -0.62; Aug 26 smartglasses flooding -0.58), un-rescored per the #807 pattern. Anthropic illustrative avg +0.375 vs Meta carried avg -0.5833; illustrative delta (Meta minus Anthropic) -0.9583. Real asymmetry scorer run ONCE on the illustrative arm arrays as corroboration only (asymmetry -0.9583, t=-29.7724, p=5.5871e-04, d=-27.2270, 95% CI (-1.0067, -0.9100), engine is_significant True on SYNTHETIC arrays) - NOT promoted to a finding per the Aug 28 2026 standing rule. Incentive reading: FT-OpenAI content deal ($5-10M/yr, Apr 29 2024) + FT-Google News AI pilot (single-figure millions GBP/yr, Feb 2026) + Google up to $40B planned Anthropic investment vs Meta $0 publisher payments (Facebook News ended Jul 2022). Extends m54 ecosystem-alignment structural insight (FT frames the AI-lab ecosystem that pays publishers aspirationally; frames the $0-payer Meta as stressed) and replicates the #892/#766 non-deal-lab softness pattern (Verge x Anthropic) at FT. Counterevidence: m54 documents FT running negative on OpenAI, its ACTUAL payer (Apr 14 2026, investors having second thoughts), ruling out pure deal-partner protection; #887/m763 NY Post adversarial triad toward the News Corp payer falsified uniform softening at the tabloid register. Verdict directionally_supported_not_proven. NOT artifact-grade. NOT a falsification-family member. Ledger holds at 29.'
+      financial_context:
+        ft_openai_deal: 'Content licensing Apr 29 2024; $5-10M/yr secondary valuation (WSJ via Digiday); ChatGPT attribution + model development; announced by FT AI editor Madhumita Murgia'
+        ft_google_news_ai_pilot: 'Feb 2026 commercial partnership, single-figure millions GBP/yr per Press Gazette Aug 3 2026'
+        google_anthropic_investment: 'Up to $40B planned (Bloomberg Apr 24 2026: $10B immediate at $350B valuation + $30B contingent); prior $3B+ / ~14% stake per MarketWatch'
+        amazon_anthropic_investment: 'Up to $25B per Reuters Apr 24 2026 ($5B immediate + $20B contingent)'
+        meta_publisher_payments: '$0 - Facebook News payments ended Jul 2022'
+        deal_disclosed_in_ft_coverage: false
+        prediction: 'softer Anthropic financial-momentum register vs harder Meta capital/surveillance register (ecosystem-alignment channel, not direct-deal protection)'
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Does not prove editorial influence.'
+      anthropic_arms_fresh:
+      - arm: 'FT Anthropic Q2-2026 financials scoop (relayed Sep 16-21 2026)'
+        date: '2026-09-16'
+        relay_window: '2026-09-16 to 2026-09-21'
+        ft_attribution: 'Financial Times origin; FT original paywalled; attribution via three independent relays'
+        title: 'FT: Anthropic posts adjusted operating profit in Q2 2026; quarterly revenue $11.5B (14x YoY)'
+        source_urls:
+        - 'https://winbuzzer.com/2026/09/21/anthropic-pursues-ipo-while-its-ceo-urges-slower-ai-development-a003-xcxwbn/'
+        - 'https://www.thecoinrepublic.com/2026/09/19/ai-news-anthropic-ipo-advances-as-revenue-run-rate-tops-65b/?amp'
+        - 'https://www.webpronews.com/anthropics-sudden-turn-to-profit-signals-a-new-chapter-before-its-towering-ipo/'
+        register: 'constructive_financial_momentum'
+        tone_illustrative: 0.40
+        tone_basis: 'MANUAL ILLUSTRATIVE, hand-assigned this run from relay excerpts'
+        evidence_tier: 'excerpt-tier relay-attributed per #503 (FT original not opened; three-relay corroboration)'
+        key_language:
+        - 'second-quarter revenue of $11.5 billion, fourteen times the year-earlier figure'
+        - 'positive adjusted operating income ... for a second consecutive quarter'
+        - 'gross margins exceed 80 percent'
+        - 'Annualized revenue hit $65 billion by the end of July'
+        - 'investors project ... $120 billion in annualized revenue by year-end'
+        - 'If you continue to operate at these margins and growth rates, it will be so hard to compete [with Anthropic] because they have so much [computing resource] (Joey Brookhart, SemiAnalysis, via FT)'
+        framing: 'Analyst-validated growth narrative; profitability milestone framed as reassurance against AI-capex anxiety; no adversarial accountability vocabulary'
+      - arm: 'FT Anthropic IPO-target scoop (relayed Aug 14 2026)'
+        date: '2026-08-14'
+        ft_attribution: 'Financial Times origin; relayed via LinkedIn news story and ainvest'
+        title: 'Anthropic investors tell FT they will target $2-3T valuation at October IPO'
+        source_urls:
+        - 'https://www.linkedin.com/news/story/anthropic-backers-eye-2t-valuation-for-ipo-this-fall-7500084/'
+        - 'https://www.ainvest.com/news/spacex-set-biggest-ipo-record-history-anthropic-investors-told-ft-ll-shatter-6-weeks-polymarket-paying-3-8-1-2608/'
+        register: 'constructive_market_momentum'
+        tone_illustrative: 0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE, hand-assigned this run from relay excerpts'
+        evidence_tier: 'excerpt-tier relay-attributed per #503'
+        key_language:
+        - 'target a valuation of $2 trillion to $3 trillion when it goes public. In October'
+        - '$65 billion into Anthropic Series H in May at a $965 billion valuation'
+        - 'If Anthropic is growing 800 percent a year, you would think at the incredibly low end they would trade at 30 times revenue'
+        framing: 'Investor-expectation momentum; record-breaking IPO framing; no valuation-skepticism vocabulary'
+      meta_arms_carried:
+      - arm: 'FT Meta equity-raise exploration (carried from m441, un-rescored per #807)'
+        date: '2026-06-05'
+        title: 'Meta weighs big equity raising to finance AI infrastructure, FT reports'
+        source_url: 'https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/'
+        framing: 'desperation_capital_raise'
+        tone_illustrative: -0.55
+        tone_basis: 'carried from m441 (iteration_441), not re-read or re-scored this run'
+        key_language:
+        - 'exploring creative ways to raise cash'
+        - 'seeks new sources of capital'
+        - 'stock dropped 6.6 percent on report'
+      - arm: 'FT Meta glasses surveillance (carried from m441, un-rescored per #807)'
+        date: '2026-07-08'
+        title: 'Meta testing AI glasses that continuously record audio and take photos every few seconds'
+        source_url: 'https://www.techmeme.com/260708/p2'
+        framing: 'adversarial_surveillance'
+        tone_illustrative: -0.62
+        tone_basis: 'carried from m441 (iteration_441), not re-read or re-scored this run'
+        key_language:
+        - 'continuously collect audio'
+        - 'taking photos every few seconds'
+        - 'wiretapping laws'
+      - arm: 'Meta smartglasses flooding (carried from m441, un-rescored per #807)'
+        date: '2026-08-26'
+        title: 'Meta Is Flooding Market With Smartglasses Privacy Advocates Are Up in Arms'
+        source_url: 'https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539'
+        provenance_note: 'WSJ-attributed per m441 source list; FT reported some details per m441 original_ft_attribution; carried as-is'
+        framing: 'surveillance_threat_market_flooding'
+        tone_illustrative: -0.58
+        tone_basis: 'carried from m441 (iteration_441), not re-read or re-scored this run'
+        key_language:
+        - 'flooding market with smartglasses'
+        - 'privacy advocates up in arms'
+      asymmetry_scorer:
+        anthropic_arm_tones: [0.40, 0.35]
+        anthropic_arm_avg: 0.375
+        meta_arm_tones: [-0.55, -0.62, -0.58]
+        meta_arm_avg: -0.5833
+        illustrative_delta_meta_minus_anthropic: -0.9583
+        delta_calc: '((-0.55 + -0.62 + -0.58) / 3) - ((0.40 + 0.35) / 2) = -0.5833 - 0.375 = -0.9583'
+        delta_interpretation: 'Illustrative gap of -0.9583 (Meta harder than Anthropic) on the September financial-momentum window; statistically silent at the finding layer (Aug 28 2026 standing rule). Extends m441 delta -0.7666 directionally.'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        statistical_contract: 'illustrative_small_n_no_inference'
+        engine_run:
+          asymmetry_score: -0.9583
+          t_statistic: -29.7724
+          p_value: 5.5871e-04
+          cohens_d: -27.2270
+          ci_95: [-1.0067, -0.9100]
+          engine_is_significant: true
+          role: 'Corroborating observation ONLY - run once on MANUAL ILLUSTRATIVE synthetic arm arrays (n=3 vs n=2); NOT promoted to a finding per the Aug 28 2026 standing rule. Engine significance on hand-assigned tones is calibration, not evidence.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (fresh arms hand-assigned this run; Meta arms carried from m441 un-rescored per #807). p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Engine run once as corroboration only; engine significance on synthetic arrays is NOT empirical evidence. no_analysis_json_update: true. NOT artifact-grade. Verdict: directionally_supported_not_proven.'
+      confounders:
+      - 'STRONG: Temporal mismatch - Anthropic arms Sep 2026 (arm 2 Aug 14) vs Meta arms Jun 5 / Jul 8 / Aug 26 2026. Different news cycles; the Meta arms predate the Anthropic arms by 1-3 months.'
+      - 'STRONG: Beat/desk assignment - FT AI desk (Hammond/Murgia) covers Anthropic fundraising; SF Meta beat (Hannah Murphy) covers Meta with the surveillance register. Different writers and editorial standards, independent of commercial ties (m441 confounder carried).'
+      - 'STRONG: Genuine financial newsworthiness - 14x YoY revenue growth to $11.5B quarterly, a second consecutive adjusted profitable quarter, and >80% gross margins are objectively exceptional; aspirational language tracks real numbers, not necessarily payer softening.'
+      - 'MODERATE: Relay attribution - FT originals paywalled; both Anthropic arms read via relay excerpts (winbuzzer/thecoinrepublic/webpronews; linkedin/ainvest) per #503. Register reading bounded by relay fidelity.'
+      - 'MODERATE: Product-stage asymmetry - private-lab fundraising/IPO momentum vs public-company equity-raise dilution; different capital instruments draw different registers.'
+      - 'WEAK: Illustrative n=2 vs n=3 with hand-assigned tones; no inferential weight by design.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: m54 documents FT running negative on OpenAI, its ACTUAL $5-10M/yr payer (Apr 14 2026 piece: investors having second thoughts about OpenAI) - ruling out pure deal-partner protection; Anthropic softness must run through the ecosystem-alignment channel, not the direct deal.'
+      - 'COUNTEREVIDENCE: #887/m763 - NY Post adversarial triad toward OpenAI (News Corp payer, -0.483 avg) falsified the uniform softer prediction at the tabloid register; payer status does not buy uniform softening.'
+      - 'COUNTEREVIDENCE: m682 - WSJ Clash expose (-0.40, Sep 14) on OpenAI, same parent News Corp, same week as constructive payer pieces; within-outlet register spans both directions on the payer.'
+      - 'COUNTEREVIDENCE: m616 - WSJ Tumbler Ridge liability watchdog (-0.55) on OpenAI vs Meta Muse aspirational (+0.35); direction inverted at the flagship in the dual-payer boundary case.'
+      connects_to: [54, 415, 441, 557, 766, 772]
+      verdict: 'directionally_supported_not_proven'
+      falsification_family: 'NOT a falsification-family member. Ledger holds at 29 (TWENTY-NINTH present; THIRTIETH absent). No uniform softening prediction tested; directional extension of m54/m441.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      research_method: 'Pre-run browser.search candidate selection (4 query sets: FT Anthropic Sep financing/IPO SELECTED; BI OpenAI Sep REJECTED as thin relay set; WSJ OpenAI Sep REJECTED as heavily mechanism-covered - m532/m616/m682/m697/m715/m733; WSJ Meta Sep - no fresh FT-comparable arms). 0 browser.open this run (FT paywalled; excerpt/relay-bounded per #503). All 5 evidence URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty verified: zero test_type_a_922 files on disk (glob); no Type A #922 in git log (--grep); block key zero-hit repo-wide; all 5 evidence URLs zero-hit repo-wide; max numeric mechanism_id 783; zero underscore/dash/numeric 784 keys in profiles/ (format-built needles per #715). ASCII-only, no em dashes.'
   x_twitter:
     financial_tie: none
     estimated_value: $0
