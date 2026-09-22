@@ -9625,6 +9625,100 @@ entities:
         iteration: 574
         type: C
         date: 2026-09-06 23:00 PDT
+    type_c_919_blankspace_licensing_mirage_newscorp_apple_misclassification_sep22_9am:
+      mechanism_id: 783
+      iteration: 919
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-22'
+      time_pdt: '09:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Blankspace "Licensing Mirage" (independent AI-licensing publisher synthesis, mid-2026 draft) Table 1 row "News Corp / Apple / Oct 2025 / Significant (undisclosed) / Partnership (confirmed)" traced to News Corp x Apple News distribution partnership, not an AI training-data license - the confirmed relationship is platform distribution (2019 global Apple News deal, extended and expanded; material subscription and ad revenue per Feb 2022 earnings call), already in corpus as news-corp.yaml type news_distribution; corroborates mechanism 574 Apple $0-direct-publisher-AI-payer position'
+      block_key: type_c_919_blankspace_licensing_mirage_newscorp_apple_misclassification_sep22_9am
+      finding: 'The secondary table overstates what is confirmed. The row''s Oct 2025 date plus "Significant" plus "Partnership" language traces to CEO Robert Thomson''s Oct 21 2025 Times Tech Summit quote (Digiday: News Corp had "a partnership with Google and ''significant'' partnerships with OpenAI and Apple"). The underlying Apple relationship is the Apple News distribution deal documented in the corpus (news-corp.yaml partner Apple, type news_distribution, revenue sharing, VERIFIED TRUE - 2019 global deal: WSJ, Times, Sunday Times on Apple News+, Sun and NY Post on free Apple News; extended and expanded per Thomson via Press Gazette; Feb 2022 earnings call: "important source of subscriptions and of advertising revenue"; Apple News+ launched Australia Sep 2025 with News Corp but without Nine per AdNews). No primary source documents an Apple x News Corp AI training-data license. The paper''s own caveat ("Values marked ''est.'' are journalistic estimates, not company-confirmed figures") does not rescue this row because the row is marked "(confirmed)" - the confirmed thing is a distribution partnership, not an AI licensing deal. Financial-incentive reading: misclassification inflates Apple''s apparent publisher-AI spend in a table explicitly framed as AI licensing deals. The real Apple x News Corp money flow is platform distribution dependency (Apple News revenue share plus subscription/ad revenue) - a distinct incentive vector from training-data payment, and one the corpus already tracks. Distribution dependency is itself a financial relationship (Apple as gatekeeper to News Corp subscription and ad revenue), but it belongs in the distribution-dependency column, not the AI-licensing column. Conflating the two misprices both. This VERIFIES the corpus mechanism-574 position (Apple is a data-vendor AI payer via Shutterstock and Defined.ai, with zero confirmed direct publisher AI deals; the Dec 2023 $50M offers to Conde Nast, NBC News, and IAC produced no confirmed closings) and the mechanism-606 Siri-publisher watch (zero closures as of Sep 6 2026). The paper''s other materiality claims (News Corp up-to-$250M as ~2% of news-segment sales; only one-fifth of publishers expect substantial AI revenue per Reuters Institute survey; Wiley as the disclosure control) are recorded here as bounded synthesis assertions from a secondary working paper, NOT new primary corpus facts - reuse only with primary re-verification.'
+      misclassification_trace:
+        table: 'blankspace.so "The Licensing Mirage", Table 1 "Selected major publisher-AI licensing deals", row: News Corp | Apple | Oct 2025 | "Significant" (undisclosed) | Partnership (confirmed)'
+        row_date: '2025-10'
+        row_confirmation_label: '(confirmed)'
+        traces_to: 'CEO Robert Thomson Oct 21 2025 Times Tech Summit quote (Digiday): News Corp had "a partnership with Google and ''significant'' partnerships with OpenAI and Apple" - a partnership disclosure, not an AI licensing disclosure'
+        underlying_relationship: 'Apple News distribution: 2019 global deal (WSJ, Times, Sunday Times on Apple News+; Sun, NY Post on free Apple News); extended and expanded per Thomson (Press Gazette via appleworld.today); Feb 2022 earnings call: "important source of subscriptions and of advertising revenue" (applemust); Australia Apple News+ launch Sep 2025 with News Corp but without Nine (AdNews)'
+        corpus_status: 'news-corp.yaml partner Apple, type news_distribution, revenue sharing, VERIFIED TRUE - pre-existing, not an AI deal'
+        what_is_confirmed: 'a long-standing distribution partnership - confirmed'
+        what_is_not_confirmed: 'any Apple x News Corp AI training-data license - zero primary sources'
+        paper_caveat: '"Values marked ''est.'' are journalistic estimates, not company-confirmed figures" - the Apple row is not marked est. but (confirmed), so the caveat does not cover this row''s overstatement'
+      financial_incentive_reading:
+        inflated_vector: 'Apple''s apparent publisher-AI spend is inflated in the table - readers tally a confirmed AI licensing deal that does not exist'
+        real_vector: 'platform distribution dependency - Apple as gatekeeper to News Corp subscription and advertising revenue via Apple News and Apple News+'
+        distinct_columns: 'training-data payment (m574: Apple pays data vendors, $0 direct to publishers) vs distribution dependency (news-corp.yaml: Apple News revenue share) - conflating the two misprices both vectors'
+        incentive_direction: 'if anything, the real vector runs the other way: News Corp depends on Apple''s platform for subscription and ad revenue, which is a platform-dependency incentive, not an AI-lab-pays-publisher incentive'
+      verification_posture:
+        row_trace: 'VERIFIED - both the blankspace table row (first-hand read, 728 rendered lines, row at L171-174) and the Thomson Digiday quote plus Apple News deal history (corpus, news-corp.yaml) read first-hand this run'
+        incentive_reading: 'directionally_supported_not_proven - analytical inference from verified facts'
+        paper_other_claims: 'BOUNDED SYNTHESIS - the paper''s remaining materiality claims (News Corp $250M as ~2% of news-segment sales; Reuters Institute survey one-fifth expect substantial AI revenue; Wiley disclosure control) are secondary working-paper assertions recorded here only; reuse only with primary re-verification'
+        qualitative_verification_only: true
+        no_coverage_tone_claim: true
+        no_causal_claim: true
+        no_scorer_run: true
+        engine_not_run: true
+        artifact_grade: false
+        no_analysis_json_update: true
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      effect_size: NOT_SCORED
+      tone_delta: NOT_SCORED
+      verdict: directionally_supported_not_proven
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: 'ledger holds at 29 - verification/documentation leg, no coverage-tone pair, NOT a falsification-family member'
+      connects_to:
+      - 574
+      - 606
+      - 519
+      - 630
+      - 549
+      connection_notes:
+        m574: 'VERIFIES the mechanism-574 position: Apple is a data-vendor AI payer (Shutterstock $25-50M, Defined.ai) with zero confirmed direct publisher AI deals - the blankspace table implies an Apple publisher AI deal that does not exist'
+        m606: 'corroborates the mechanism-606 Siri-publisher watch: Apple''s 2026 Siri AI pay-per-use publisher negotiations had zero closures as of Sep 6 2026 - consistent with no Apple x News Corp AI license'
+        m519: 'the OpenAI x News Corp deal (May 2024) is the confirmed AI licensing relationship at News Corp; the Apple row in the table borrows its credibility from deals like this one while pointing at a non-AI partnership'
+        m630: 'News Corp x Google AI licensing talks remain unresolved as of Sep 10 2026 - the Thomson quote''s "partnership with Google" leg is likewise a distribution/cloud relationship, not a closed AI license; same misclassification pattern'
+        m549: 'News Corp x Meta (up to $50M/yr) is a publisher deal that closed - the counterpoint to the Apple row that did not'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'the blankspace paper is a secondary working paper (independent draft, figures current to mid-2026), not a primary filing - its Table 1 compiles journalistic estimates and the row may itself re-report Thomson''s quote faithfully; the misclassification judgment rests on my trace, which is first-hand but single-analyst'
+      - rank: 2
+        strength: strong
+        confounder: 'absence of evidence is bounded per the iteration-492 rule: no primary source documents an Apple x News Corp AI training-data license, which does not disprove a quiet deal, only that none is confirmed; the row could in principle describe an undisclosed arrangement, but the Thomson quote it traces to was about partnerships generally'
+      - rank: 3
+        strength: moderate
+        confounder: 'Apple News commercial terms (revenue share percentages, subscription attribution) are undisclosed - the distribution-dependency incentive is real but unquantified, so the "misprices both" reading is directional, not measured'
+      - rank: 4
+        strength: moderate
+        confounder: 'the Digiday Thomson quote was read first-hand via news-corp.yaml this run but the Digiday page itself was not re-opened; the quote text rests on the corpus record'
+      - rank: 5
+        strength: weak
+        confounder: 'the paper''s figures are current to mid-2026; a genuine Apple x News Corp AI license signed after mid-2026 would postdate the table - checked against corpus m606 (Sep 6 2026) with zero closures'
+      sources:
+      - https://blankspace.so/research/the-licensing-mirage.pdf
+      - https://digiday.com/media/news-corp-in-talks-with-google-for-ai-licensing-deal/
+      - https://appleworld.today/news-corp-expands-and-extends-its-deal-with-apple-news/
+      - https://www.applemust.com/news-corp-says-apple-news-is-important-source-of-revenue/
+      - https://www.adnews.com.au/news/apple-news-hits-australia-with-news-corp-but-without-nine
+      research_method: 'browser.open first-hand read of the blankspace.so PDF this run (728 rendered lines; row at L171-174; title, draft status, caveat at L5-L10, abstract at L12-20, disclosure-materiality argument at L219-245); Thomson Oct 21 2025 quote and Apple News deal history via news-corp.yaml corpus record (first-hand read this run: Digiday quote, 2019 deal, extension, Feb 2022 earnings call, Australia launch); corpus cross-checks m574 (Apple purchasing architecture), m606 (Siri publisher watch), m519 (News Corp x OpenAI), m630 (News Corp x Google talks), m549 (News Corp x Meta). Pre-commit novelty greps: zero test_type_c_919 files on disk (glob); no "Type C #919" in git log (--grep); max numeric mechanism_id 782 pre-commit; zero underscore-form 783 key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric "mechanism_id: 783" keys repo-wide pre-commit; block key type_c_919_blankspace zero-hit repo-wide pre-commit; "blankspace.so" zero-hit repo-wide pre-commit (the single "Licensing Mirage" mention in the corpus sits inside a #869 research_method string as corroboration, with no dedicated mechanism on the paper or on this row). All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 919
+        type: C
+        date: 2026-09-22 09:00 PDT
+
     mechanism_642_apple_news_plus_conde_nast_revenue_share_leg:
       mechanism_id: 642
       iteration: 679
