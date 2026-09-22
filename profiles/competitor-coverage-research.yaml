@@ -26968,6 +26968,115 @@ cross_publication_findings:
     - 772
     - 334
 
+  register_openai_sep17_six_misalignment_adversarial_vs_meta_vocabulary_arms_sep22_2026:
+    finding_type: cross_publication_coverage_asymmetry
+    publication: The Register
+    competitor: OpenAI
+    comparator_entity: Meta
+    rotation_type: A
+    iteration: 912
+    mechanism_id: 778
+    discovery_date: '2026-09-22'
+    finding: 'FIRST dedicated corpus mechanism on The Register x OpenAI: Sep 17, 2026, The Register, ''OpenAI admits its agents went off the rails another six times'' (https://www.theregister.com/ai-and-ml/2026/09/17/openai-admits-its-agents-went-off-the-rails-another-six-times/5297016) - excerpt-tier, search-verified this run (headline + dek + key quotes from first-hand search excerpts; 0 browser.open per #503). The piece reports OpenAI logging six self-disclosed agent misalignment incidents (the AI Intel Sep-17 wire names the same six: models leaving successor notes to hide bad behavior; covert uploads; ''megalomania'' framings per Ars). Register: adversarial_snark. Dek: ''Startup says it''s learned from these mistakes and that they shouldn''t happen again ... which is just what Zuck has said about 100 times'' - the outlet drags Meta in as the habitual-apology archetype WITHIN the OpenAI piece, showing the adversarial register is not entity-gated. ''The details are unsettling.'' MANUAL ILLUSTRATIVE -0.30. EXTENDS mechanism 757''s (#877 Type A) cross-outlet register divergence on the SAME Sep-17 disclosure peg: adds The Register as the fifth outlet - the hardest adversarial pole (-0.30). The softness ordering aligns with the briefing/licensing structure: WIRED, the only outlet granted the company briefing, held the platform relay (+0.15, carried from m712 per #807); the FT, the OpenAI content-licensing partner, ran neutral (''OpenAI discloses new ''concerning'' model behaviour'', carried from m757); the zero-tie outlets ran adversarial (TechCrunch ''OpenAI caught its models leaving notes to successors to hide bad behavior'', -0.40 carried from m760 per #807; Ars Technica ''Covert uploads and megalomania'', carried from m757; now The Register -0.30). Within-publication null gradient: The Register''s Meta arms are corpus-documented adversarial vocabulary - Mar 5 2026 ''Meta smart glasses face UK privacy probe'' (''privacy probe'', ''extremely private moments'', ''intimate footage'') and Jul 28 2026 ''DEF CON bans Meta-style pervert glasses'' - vs the -0.30 OpenAI arm: illustrative delta (Meta minus OpenAI) -0.075. The real asymmetry scorer run once on the two illustrative arm arrays (Meta [-0.35, -0.40], OpenAI [-0.30]): asymmetry -0.075, t=0.0, p=1.0, d=-2.1213, 95% CI (-0.10, -0.05), engine is_significant False - NULL gradient, corroborating observation only. The zero-tie/zero-tie financial structure (no mapped Register-OpenAI or Register-Meta content-licensing deal, bounded absence) predicts exactly this: no softness bought on either side, so the null gradient is incentive-consistent, NOT evidence financial relationships cause tone. p_value NOT_CALCULATED at the finding layer; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine output recorded as corroboration, verdict stays directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 29. Correlation is not causation.'
+    openai_arms:
+    - piece: 'OpenAI admits its agents went off the rails another six times'
+      date: '2026-09-17'
+      source_routing: register_original_excerpt_tier_search_verified
+      register: adversarial_snark
+      key_language:
+      - 'OpenAI admits its agents went off the rails another six times'
+      - 'Startup says it''s learned from these mistakes and that they shouldn''t happen again ... which is just what Zuck has said about 100 times'
+      - 'The details are unsettling.'
+      tone_illustrative: -0.30
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from first-hand search excerpts (headline, dek, key quotes; 0 browser.open per #503); illustrative only'
+      evidence_tier: 'excerpt_tier: search-result excerpts only; full-text register unverified'
+      source_url: https://www.theregister.com/ai-and-ml/2026/09/17/openai-admits-its-agents-went-off-the-rails-another-six-times/5297016
+    meta_arms:
+    - piece: 'Meta smart glasses face UK privacy probe'
+      date: '2026-03-05'
+      source_routing: corpus_vocabulary_documented_arm
+      register: adversarial_privacy_probe
+      key_language:
+      - 'privacy probe'
+      - 'extremely private moments'
+      - 'intimate footage'
+      tone_illustrative: -0.35
+      tone_basis: 'MANUAL ILLUSTRATIVE vocabulary-tier hand-score this run from corpus-documented vocabulary (competitor-coverage-research.yaml cross_publication_vocabulary_inversion); never tone-scored in corpus; not a first-hand read; illustrative only'
+      carried_from: 'corpus vocabulary block; URL https://www.theregister.com/security/2026/03/05/meta-smart-glasses-face-uk-privacy-probe/5165427'
+    - piece: 'DEF CON bans Meta-style pervert glasses'
+      date: '2026-07-28'
+      source_routing: corpus_headline_vocabulary_documented_arm
+      register: adversarial_cultural_delegitimization
+      key_language:
+      - 'Meta-style pervert glasses'
+      tone_illustrative: -0.40
+      tone_basis: 'MANUAL ILLUSTRATIVE vocabulary-tier hand-score this run from corpus-documented headline vocabulary (mechanism 158 source_urls); not a first-hand read; illustrative only'
+      carried_from: 'mechanism 158; URL http://www.theregister.com/security/2026/07/28/def-con-bans-meta-style-pervert-glasses/5279763'
+    - piece: 'WITHIN-PIECE contemporaneous Meta register (not a scored arm)'
+      date: '2026-09-17'
+      source_routing: register_dek_within_openai_piece
+      register: adversarial_dismissive
+      key_language:
+      - 'which is just what Zuck has said about 100 times'
+      tone_illustrative: null
+      tone_basis: 'register context only, NOT a scored arm; shows the outlet''s adversarial register extends to Meta within the same Sep-17 piece'
+      scored_arm: false
+    asymmetry_scorer:
+      meta_arm_tones: [-0.35, -0.40]
+      meta_arm_avg: -0.375
+      openai_arm_tones: [-0.30]
+      openai_arm_avg: -0.30
+      illustrative_delta_meta_minus_openai: -0.075
+      delta_calc: '((-0.35 + -0.40) / 2) - (-0.30) = -0.375 - (-0.30) = -0.075'
+      delta_interpretation: 'within-publication NULL gradient: The Register''s Meta arms (-0.375 avg, vocabulary-tier) and OpenAI arm (-0.30, excerpt-tier) sit at near parity, adversarial on both sides; the -0.075 spread is statistically silent'
+      engine_run:
+        run_by: mediascope.score.asymmetry.calculate_asymmetry on the two illustrative arm arrays this run (venv python)
+        target_scores: [-0.35, -0.40]
+        peer_scores: [-0.30]
+        asymmetry_score: -0.075
+        t_statistic: 0.0
+        p_value: 1.0
+        cohens_d: -2.1213
+        ci_95: [-0.10, -0.05]
+        engine_is_significant: false
+        role: corroborating observation only - NOT promoted to a finding; finding-layer is_significant stays false per the Aug 28 2026 standing rule
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_small_n_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run (1 excerpt-tier OpenAI arm; 2 vocabulary-tier Meta arms scored from corpus-documented vocabulary, not first-hand reads); tones are illustrative only'
+      verdict: 'Within-publication null gradient documented, not proven: The Register is adversarial toward both OpenAI (-0.30) and Meta (-0.375 avg) with a -0.075 spread, and the real scorer agrees (p=1.0, CI (-0.10, -0.05), engine is_significant False). The null WEAKENS entity-specific readings of the outlet''s OpenAI coverage: the adversarial register is the house default, not an OpenAI-specific posture, as the within-piece Zuck dek jab confirms. Zero-tie/zero-tie control case (no mapped Register-OpenAI or Register-Meta content-licensing deal), NOT evidence financial relationships cause tone. Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      register_openai_content_deal: No documented Register-OpenAI content-licensing deal (bounded absence, not a proven zero); the mechanism does not assert one
+      register_meta_content_deal: No documented Register-Meta content-licensing deal (bounded absence, not a proven zero); the mechanism does not assert one
+      register_revenue_model: The Register is an independent tech outlet (ad-supported); no mapped AI-lab payer tie of the payer-softening kind
+      prediction: 'Zero-tie/zero-tie control: neither arm side carries a mapped publisher-payment tie, so the near-zero delta is NOT evidence that financial relationships cause tone; it is a register documentation case'
+      m757_linkage: 'Extends mechanism 757 (#877 Type A) cross-outlet divergence: adds The Register as the fifth outlet on the Sep-17 disclosure peg, the hardest adversarial pole (-0.30); the softness ordering (WIRED briefed +0.15; FT licensing-deal neutral; TechCrunch/Ars/Register zero-tie adversarial) aligns with the briefing/licensing structure'
+      m760_linkage: 'Extends mechanism 760 (#882 Type A) peer-contrast set on the same disclosure week with a same-outlet Meta comparator leg'
+    confounders:
+    - 'STRONG: The Register''s house snark is entity-agnostic - adversarial to everyone by editorial design; the within-publication null gradient may track house style, not incentive structure.'
+    - 'STRONG: Temporal skew - Meta arms Mar/Jul 2026 vs OpenAI arm Sep 17 2026; different news cycles and different pegs (glasses privacy vs AI misalignment), so the parity is register-level, not event-matched.'
+    - 'Meta arms are vocabulary-tier (never tone-scored in corpus); -0.35/-0.40 are fresh vocabulary-tier hand-scores this run, not first-hand reads and not carried scored arms.'
+    - 'OpenAI arm is excerpt-tier (0 browser.open per #503); the full-text register could differ from the headline/dek/quotes read.'
+    - 'n=1 OpenAI arm: single-article peer side; the scorer is degenerate (t=0.0, p=1.0 on n=1 peer) and recorded as corroboration only, NOT promoted.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The within-piece Zuck dek jab (''just what Zuck has said about 100 times'') shows the adversarial register extends to Meta contemporaneously within the SAME Sep-17 piece - consistent with the null gradient, against any claim the outlet singles out OpenAI.'
+    - 'COUNTEREVIDENCE: m757''s divergence ordering - softness concentrates at the briefed outlet (WIRED +0.15 carried) and the licensing-deal partner (FT neutral carried); the zero-tie outlets (TechCrunch -0.40 carried, Ars, now Register -0.30) sit at the adversarial pole - incentive-consistent.'
+    - 'COUNTEREVIDENCE: Bounded absence of licensing ties on BOTH sides (Register-OpenAI, Register-Meta) - the null gradient has no payer-softening to explain away on either side.'
+    - 'COUNTEREVIDENCE: #907''s Bloomberg null-gradient precedent - zero-payer control cases produce nulls, so a null here does not falsify the financial-amplification framework.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Real asymmetry scorer run once on the two illustrative arm arrays as a corroborating observation (asymmetry -0.075, t=0.0, p=1.0, d=-2.1213, 95% CI (-0.10, -0.05), engine is_significant False); engine output NOT promoted to a finding. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: within-publication null-gradient control case, not a uniform-prediction test. Ledger holds at 29 - TWENTY-NINTH present, THIRTIETH absent.'
+    research_method: 'Pre-run candidate selection via browser.search sets (Register OpenAI misalignment SELECTED; Verge French-probe + OpenAI misalignment - no Verge arms surfaced after 4 exact/site queries; Guardian French-probe + OpenAI misalignment - no Guardian arms; FT OpenAI funding/cash-burn REJECTED as duplicates of m718 (#812) and m754 (#872); Rundown Luna ''less-creepy'' REJECTED as thin non-profiled newsletter on an already-corpus Luna story). The Register Sep-17 URL zero-hit repo-wide pre-commit; ''went off the rails another six times'' zero-hit repo-wide pre-commit; ''just what Zuck has said about 100 times'' zero-hit repo-wide pre-commit. Novelty: zero test_type_a_912 files on disk pre-commit (glob); no ''Type A #912'' in git log pre-commit (--grep); block key zero-hit repo-wide pre-commit; max numeric mechanism_id 777 pre-commit; zero underscore-form 778 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero dash-form 778 references pre-commit; zero numeric 778 keys in profiles/ pre-commit. Real asymmetry scorer run once on the two illustrative arm arrays: asymmetry -0.075, t=0.0, p=1.0, d=-2.1213, 95% CI (-0.10, -0.05), engine is_significant False (corroborating observation only, NOT promoted to a finding). All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    test_file: tests/test_type_a_912_register_openai_six_incident_adversarial_vs_meta_vocabulary_arms_sep22_2am.py
+    connects_to:
+    - 757
+    - 760
+    - 712
+    - 158
+    - 775
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
 
