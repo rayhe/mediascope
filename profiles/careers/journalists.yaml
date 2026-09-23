@@ -22374,3 +22374,47 @@ emma_roth_type_b:
       - '#776 Type B (Eric Hal Schwartz Muse-vs-ChatGPT: access-friction register on Muse, silent on OpenAI).'
       - '#779 Type B (Maxwell Zeff OpenAI framework relay +0.15 vs Meta Muse trust deficit -0.30).'
       - '#908 (rejection list: Emma Roth corpus-present, Muse hands-on reserved as future arm).'
+
+matt_growcoot:
+  name: Matt Growcoot
+  current_role: journalist
+  current_publication: PetaPixel
+  beat: cameras, photography, imaging tech (camera-privacy vocabulary on wearables)
+  smart_glasses_coverage:
+    meta_adversarial_jan_aug_2026:
+      headline_pattern: 10+ Meta-adversarial smart-glasses pieces (Jan-Aug 2026)
+      date: '2026-01 to 2026-08'
+      tone: adversarial camera-privacy vocabulary on Meta
+      carried_mechanism_id: 230
+      carried_mechanism_home: profiles/competitor-coverage-research.yaml
+    apple_aspirational_jan_aug_2026:
+      headline_pattern: 2 aspirational pieces on hypothetical Apple glasses (2027 launch)
+      date: '2026-01 to 2026-08'
+      tone: aspirational, privacy-neutral
+      carried_mechanism_id: 230
+      carried_mechanism_home: profiles/competitor-coverage-research.yaml
+  notes: 'PetaPixel journalist (camera/photography beat). Type B #943 (Sep 23 2026): mechanism 797 FIRST dedicated Type B mechanism on Growcoot in journalists.yaml (mechanism 230 lives in competitor-coverage-research.yaml; zero matt_growcoot YAML key pre-commit, per the #643 convention). Carried m230 Jan-Aug 2026 pattern: 10+ Meta-adversarial camera-privacy pieces vs 2 aspirational pieces on hypothetical Apple glasses (asymmetry_score 0.76, carried un-rescored per #807). NEW Sep-9-2026 arm: opinion piece "Your Apple Watch Is Always Listening, Will Anyone Ever Be Honest Again?" (PetaPixel, 2026/09/09; byline attested via the petapixel.com/author/mattgrowcoot/ author archive listing; search-excerpt-bounded per #503, no browser.open this run) applies the adversarial privacy register to Apple shipped hardware: Siri Recap / Live Rewind is "truly a Black Mirror episode", "the idea that some weirdo watch wearer is going through the notes of a conversation they had with me that I thought was private is repellent"; within the same article he explicitly ranks Meta notice design ABOVE Apple ("At least Meta''s glasses have a blinking LED light that lets others know they are recording ... How will anyone ever know that a smartwatch is recording their conversation? Apple makes no mention of any recording light, nor does it mention the other parties'' consent"). TEMPORAL INVERSION bounding m230: once Apple shipped an actual always-listening wearable, Growcoot''s adversarial register fired on Apple at equal-or-greater intensity while crediting Meta''s LED safeguard; the Meta-adversarial / Apple-aspirational gap was conditional on Apple glasses being hypothetical. The register tracks shipped ambient-sensing reality more than entity identity; NOT evidence that the Jan-Aug Meta adversarialism was entity-neutral. MANUAL ILLUSTRATIVE only: new Apple Watch arm -0.55, carried m230 Apple-aspirational anchor +0.30 illustrative (hand-scored this run from m230 vocabulary), inversion delta -0.85; p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; NOT a falsification-family member; ledger holds at 29; no analysis.json update.'
+  mechanism_ids: [230, 797]
+  source_urls:
+  - https://petapixel.com/2026/09/09/your-apple-watch-is-always-listening-will-anyone-ever-be-honest-again/
+  - https://petapixel.com/author/mattgrowcoot/
+  competitor_coverage:
+    type_b_943_matt_growcoot_petapixel_apple_watch_always_listening_inversion_sep23_9am:
+      iteration: 943
+      iteration_time: '2026-09-23 09:00 PDT'
+      mechanism_id: 797
+      mechanism_home: profiles/competitor-coverage-research.yaml
+      finding: 'Temporal inversion of m230: Growcoot aims the adversarial ambient-listening register at Apple shipped hardware while crediting Meta LED notice design; BOUNDS m230 rather than falsifying it.'
+      evidence:
+      - 'Sep 9 2026 PetaPixel opinion piece (byline via author archive; search-excerpt-bounded per #503).'
+      - '"This is truly a Black Mirror episode." / "...repellent." on Siri Recap / Live Rewind.'
+      - '"At least Meta''s glasses have a blinking LED light ... Apple makes no mention of any recording light, nor does it mention the other parties'' consent."'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update True; artifact_grade False; correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member (directional register inversion on a new Apple peg, not a near-null or inversion under a uniform-softening prediction; the Jan-Aug Meta adversarialism stands as observed; Ledger holds at 29)'
+      no_analysis_json_update: true
+      ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+      is_significant: false
+      correlation_not_causation: true
+  verdict: 'directionally_supported_not_proven'
+  no_analysis_json_update: true
+  ledger: '29'

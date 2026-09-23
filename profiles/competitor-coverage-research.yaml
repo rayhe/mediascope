@@ -30806,6 +30806,57 @@ publications:
     - https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
     test_file: tests/test_matt_growcoot_petapixel_cross_entity_camera_privacy_vocabulary_inversion_aug22.py
     type: Journalist Cross-Entity Tracking (Type B)
+  matt_growcoot_petapixel_apple_watch_always_listening_adversarial_inversion_sep26:
+    mechanism_id: 797
+    type: 'B'
+    iteration: 943
+    iteration_type: 'B'
+    iteration_time: 2026-09-23 09:00 PDT
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    date: '2026-09-23'
+    discovery_date: '2026-09-23'
+    rotation_window: '940-944'
+    window_leg: 'fourth leg D #940 -> E #941 -> A #942 -> B #943 -> C #944'
+    journalist: Matt Growcoot
+    publication: PetaPixel
+    competitor: Apple
+    reference_entity: Meta
+    finding: 'Matt Growcoot (PetaPixel) activates the adversarial privacy register he spent Jan-Aug 2026 aiming at Meta camera glasses against APPLEs shipped always-listening wearable. His Sep 9, 2026 opinion piece Your Apple Watch Is Always Listening, Will Anyone Ever Be Honest Again? (byline attested via his PetaPixel author archive listing) calls Siri Recap / Live Rewind truly a Black Mirror episode and writes that the idea that some weirdo watch wearer is going through the notes of a conversation they had with me that I thought was private is repellent. Within the same article he explicitly ranks Metas notice design ABOVE Apples: At least Metas glasses have a blinking LED light that lets others know they are recording, a feature the company has been enforcing recently. How will anyone ever know that a smartwatch is recording their conversation? Apple makes no mention of any recording light, nor does it mention the other parties consent. This is a TEMPORAL INVERSION of mechanism 230s Jan-Aug 2026 pattern (10 Meta-adversarial vs 2 Apple-aspirational smart-glasses articles): once Apple shipped an actual always-listening device, Growcoots adversarial register fired on Apple at equal-or-greater intensity while crediting Metas LED safeguard. This BOUNDS mechanism 230 rather than falsifying it: the Meta-adversarial / Apple-aspirational gap was conditional on Apples glasses being hypothetical. Growcoots register tracks shipped ambient-sensing reality more than entity identity. MANUAL ILLUSTRATIVE: new Apple Watch arm -0.55 (harsh opinion-register adversarial); carried m230 Apple-aspirational anchor +0.30 illustrative (hand-scored this run from m230s documented vocabulary: desirable, advantage, ultimately dominant, privacy one of its defining principles); illustrative Apple-temporal inversion delta -0.85. Carried m230 Meta arm un-rescored per #807 (m230 asymmetry_score 0.76 stands). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False, engine NOT run, NOT artifact-grade. Verdict: directionally_supported_not_proven. NOT a falsification-family member (ledger holds at 29). Correlation is not causation.'
+    evidence:
+    - 'NEW ARM (search-excerpt-bounded per #503; browser.open unavailable per developer constraint): PetaPixel opinion piece, URL slug your-apple-watch-is-always-listening-will-anyone-ever-be-honest-again, dated 2026/09/09 in URL, listed under Sep 10 on the author archive (timezone/publish lag). Byline Matt Growcoot attested via https://petapixel.com/author/mattgrowcoot/ archive listing.'
+    - 'Adversarial Apple register (verbatim search excerpts): This is truly a Black Mirror episode. / the idea that some weirdo watch wearer is going through the notes of a conversation they had with me that I thought was private is repellent. / Do tech companies ever stop to think about the misery they unleash on peoples lives?'
+    - 'Within-article cross-entity comparison (verbatim search excerpts): Its reminiscent of Metas maligned smart glasses that have come under intense scrutiny because of nefarious wearers who use them to record people without consent and later ridicule them on the internet, often on Meta platforms. / At least Metas glasses have a blinking LED light that lets others know they are recording, a feature the company has been enforcing recently. / How will anyone ever know that a smartwatch is recording their conversation? Apple makes no mention of any recording light, nor does it mention the other parties consent. / Apple Watches are far more common than Meta smart glasses.'
+    - 'CARRIED ARM (un-rescored per #807): mechanism 230 documents Growcoots Jan-Aug 2026 corpus: 10+ Meta-adversarial articles (disturbing, douchebag with a camera on your face, pervert glasses, predatory behavior, glassholes, creepy, surveillance conduit, massive invasion of privacy) vs 2 Apple-aspirational articles on hypothetical Apple glasses (eye-catching features, desirable, advantage, ultimately dominant, privacy one of its defining principles). asymmetry_score 0.76 carried.'
+    confounders:
+    - 'STRONG: Modality asymmetry: surreptitious ambient-audio note-taking on a wrist device vs a face-worn camera with a visible LED; audio capture of private conversations may genuinely alarm more, so the harsher Apple register may track modality rather than entity.'
+    - 'STRONG: Genre asymmetry: the new arm is an OPINION piece (PetaPixel Opinion section), which licenses stronger language than mechanism 230s news/features Meta arms.'
+    - 'STRONG: Search-excerpt-bounded evidence this run (browser.open unavailable per developer constraint); quotes come from the search index, not a first-hand page read. Byline attested second-hand via the author archive listing.'
+    - 'MODERATE: Temporal sensitization: the piece follows a summer of escalating Meta-glasses backlash (UK venue bans, German nonprofit complaint) that mechanism 230 itself documents; Growcoot may be sensitized to ambient sensing generally.'
+    - 'MODERATE: Scale asymmetry, stated by Growcoot himself: Apple Watches are far more common than Meta smart glasses, a legitimate editorial reason for harsher scrutiny of Apples feature.'
+    - 'WEAK: n=1 on the new arm; single opinion-piece variance cannot be ruled out.'
+    - 'WEAK: Date nuance: article URL carries 2026/09/09 while the author archive lists it under Sep 10 (timezone/publish lag); cited as Sep 9, 2026 with the nuance noted.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: Mechanism 230s 10:2 Jan-Aug pattern stands as documented; one September opinion piece does not erase eight months of differential.'
+    - 'COUNTEREVIDENCE: The piece still frames Metas glasses as maligned and cites nefarious wearers who use them to record people without consent; the Meta-adversarial register persists, relativized not reversed.'
+    - 'COUNTEREVIDENCE: The Apple Watch piece is pegged to a real shipped product announcement while mechanism 230s Apple arms were speculative; the register shift may track news-peg reality rather than entity standards.'
+    connects_to:
+    - 230
+    - 113
+    - 150
+    - 151
+    testable_predictions:
+    - 'If Apple ships camera glasses in 2027, Growcoots coverage will apply the adversarial register to Apple hardware directly; this mechanism predicts the register follows shipped sensing, not entity identity.'
+    - 'Growcoots future Meta glasses privacy pieces will continue the adversarial register; the mechanism 230 pattern persists for Meta.'
+    - 'If a future Growcoot piece praises an Apple ambient-sensing safeguard the way mechanism 230s Apr 13 piece praised the hypothetical ring light, this inversions bound on mechanism 230 weakens.'
+    verdict: directionally_supported_not_proven
+    source_urls:
+    - https://petapixel.com/2026/09/09/your-apple-watch-is-always-listening-will-anyone-ever-be-honest-again/
+    - https://petapixel.com/author/mattgrowcoot/
+    - https://petapixel.com/2026/07/27/apple-frets-over-smart-glasses-bad-reputation-as-2027-launch-looms/
+    - https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
+    test_count: 69
+    test_file: tests/test_type_b_943_matt_growcoot_petapixel_apple_watch_always_listening_inversion_sep23_9am.py
   mechanism_217_fashion_surveillance_kmart_price_democratization:
     asymmetry_score: 0.82
     confounding_factors:
