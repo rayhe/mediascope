@@ -62,7 +62,7 @@ MECH_KEY = "xai_apple_confidential_antitrust_settlement_sep2026"
 URL_SEP16 = "https://www.reuters.com/legal/litigation/openai-challenges-secrecy-apple-pact-with-musks-x-spacexai-2026-09-16/"
 URL_SEP18 = "https://www.reuters.com/legal/litigation/us-judge-denies-openai-bid-review-x-corps-settlement-with-apple-2026-09-18/"
 NEXT_SIBLING = "\n    nadella_retrain_testimony_93pct_clickthrough_sep2026:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "f3d39dbf8d927491aa96aa2d0b06a405fdea98fb"
 
 
 def _read(rel):
