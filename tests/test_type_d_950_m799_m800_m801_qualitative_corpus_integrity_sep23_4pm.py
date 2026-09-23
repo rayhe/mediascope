@@ -133,7 +133,7 @@ ARCH_PATH = os.path.join(REPO_ROOT, "docs", "ARCHITECTURE.md")
 LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # Type D #950 main commit, patched post-commit per #565
+ANCHORED_SHA = "420383b1e59af126ab4fe082a9f0c09b470eb257"  # Type D #950 main commit, patched post-commit per #565
 
 # Next mechanism number after the in-tree corpus max (801); used as an
 # int so no underscore/dash-form literal is ever carried in source.
