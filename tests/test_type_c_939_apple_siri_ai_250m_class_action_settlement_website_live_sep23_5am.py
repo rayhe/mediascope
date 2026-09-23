@@ -62,7 +62,7 @@ URL_SEP20 = "https://www.macrumors.com/2026/09/20/siri-ai-settlement-website-now
 URL_SEP22 = "https://www.macrumors.com/2026/09/22/apple-iphone-siri-ai-settlement-submit-claim/"
 URL_MAY05 = "https://www.macrumors.com/2026/05/05/apple-class-action-siri-lawsuit-settlement/"
 NEXT_SIBLING = "\n    q3_fy26_earnings:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "3649d3c0bcb070aae701b496e27193407ce12cd0"
 
 
 def _read(rel):
