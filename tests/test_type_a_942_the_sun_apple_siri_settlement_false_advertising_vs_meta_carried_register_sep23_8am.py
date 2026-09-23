@@ -59,7 +59,7 @@ ITERATION = 942
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-23 08:00 PDT"
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "200b7e8d37d0e07bc0c99576aad52a472ede801b"
 
 BLOCK_KEY = (
     "the_sun_apple_siri_settlement_false_advertising_"
