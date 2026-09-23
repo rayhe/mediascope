@@ -181,6 +181,130 @@ competitor_relationships:
         - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
         - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
         - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+    business_insider_openai_slowdown_rally_vs_meta_luna_glass_moment_sep22_790:
+      mechanism_id: 790
+      date_analyzed: "2026-09-22"
+      type: Type A - Competitor Coverage Deep Dive
+      publication: business-insider
+      competitor: openai
+      status: documented
+      iteration: 932
+      iteration_type: A
+      window: "930-934"
+      window_leg: "THIRD leg of the 930-934 window (D #930 -> E #931 -> A #932 -> B #933 -> C #934)"
+      finding: "Business Insider's September 2026 OpenAI-vs-Meta register INVERTS the February 2026 gradient documented in mechanism 399. Sep 12 2026: BI's Truman Dickerson covers the AI slowdown rally ('AI leaders rally around calls to slow things down') in a come-together register - OpenAI CEO Sam Altman as responsible endorser ('I agree with Dario that we need to pace the frontier'), OpenAI committing to third-party safety evaluators with employee-level access, Altman/Musk/Delangue/Karpathy rallying around Amodei's call. Statesman/responsibility register, MANUAL ILLUSTRATIVE +0.15. Sep 16-17 2026: BI's Luna summary (The Information relay) frames Meta as 'navigating its Google Glass moment' with the explicit 2013 Glasshole parallel - backlash-contextualized liability framing, MANUAL ILLUSTRATIVE -0.25. Illustrative Meta-minus-OpenAI delta -0.40: the inverse of m399's February OpenAI-minus-Meta -0.50 (BI harder on OpenAI then, harder on Meta now). TEMPORAL INVERSION, not a stable outlet property - the m399 gradient is story-type- and time-bound. The September constructive OpenAI arm is directionally consistent with the softer-payer prediction (Axel Springer parent-level OpenAI licensing deal, tens of millions euros, carried from m399), but n=1/n=1, genre-mismatched, mirror/secondary evidence tiers - NOT a financial proof. Verdict directionally_supported_not_proven on the temporal-inversion documentation. NOT a falsification-family member; ledger holds at 29. Correlation is not causation. Hypothesis-generating only."
+      business_insider_openai_arm_sep12_2026:
+        title: "AI leaders rally around calls to slow things down"
+        date: "2026-09-12"
+        authors: "Truman Dickerson"
+        publication: "Business Insider"
+        original_url_status: "paywalled - verbatim businessinsider.com URL not surfaced this run; register reconstructed from mirrors"
+        mirror_url: "http://techflie.blogspot.com/2026/09/ai-leaders-rally-around-calls-to-slow.html"
+        mirror_attribution: "IFTTT mirror marked 'from Business Insider https://ift.tt/ZTgUA0X via IFTTT'; near-verbatim reproduction of the Dickerson piece"
+        corroborating_attributions:
+          - note: "biztoc timestamp: 'This story appeared on businessinsider.com, 2026-09-12 17:21:44'"
+            url: "https://biztoc.com/x/ec0e68d86c5052a5"
+          - note: "Flipboard excerpt with byline 'Business Insider - Truman Dickerson': 'The leaders of US AI labs are having a come-together moment...'"
+            url: "https://flipBoard.com/@mattmagnuson/artificial-intelligence-machine-learning-b1md424cz"
+          - note: "Medium bibliography entry [6]: 'Dickerson, Truman, Business Insider, AI leaders rally around calls to slow things down, September 12, 2026'"
+            url: "https://medium.com/@enrico.papalini/ai-leaders-are-calling-for-a-slowdown-oversight-must-go-global-9e2937455fbb"
+          - note: "omitted.news 26-source list: 'AI leaders rally around calls to slow things down - Left Business Insider - 2026-09-12 - named: Dario Amodei, Sam Altman, Elon Musk, Clement Delangue, Andrej Karpathy, Demis Hassabis'"
+            url: "https://omitted.news/story/anthropic-researcher-warns-ai-could-kill-humans-cdeda0"
+        framing: "slowdown_rally_statesman_endorser"
+        key_phrases:
+          - "The leaders of US AI labs are having a come-together moment"
+          - "I agree with Dario that we need to pace the frontier (Altman on X)"
+          - "Dario is right (Musk on X)"
+          - "embedding third-party safety evaluators within the company with employee-level access"
+        tone_notes: "Come-together/consensus register. Altman positioned as responsible endorser committing OpenAI to third-party evaluators. No financial-viability skepticism, no cash-burn vocabulary - the inverse of m399's February register on the same payer."
+        tone_MANUAL_ILLUSTRATIVE: 0.15
+        evidence_tier: "excerpt_mirror - verbatim IFTTT mirror of BI text, not a first-hand BI read; BI original paywalled"
+      business_insider_meta_arm_sep16_17_2026:
+        title: "Business Insider Luna camera-free glasses summary (The Information relay)"
+        date: "2026-09-16/17"
+        publication: "Business Insider"
+        original_url_status: "verbatim businessinsider.com URL not surfaced this run; BI framing characterized via first-hand read of the tech-insider.org Sep 17 2026 synthesis"
+        characterization_url: "https://tech-insider.org/meta-camera-free-glasses-luna-privacy-backlash-2026/"
+        characterization_note: "tech-insider.org synthesis read first-hand this run (322 lines): 'The core news, first reported by The Information and summarized by Reuters and Business Insider'; 'Business Insider's framing calls it Meta navigating its Google Glass moment'; 'Business Insider's reporting is explicit that Meta is not throwing in the towel on camera-equipped glasses'; 'Business Insider's own framing draws the direct historical line' to the 2013 Glasshole parallel"
+        framing: "backlash_contextualized_liability"
+        key_phrases:
+          - "navigating its Google Glass moment"
+          - "not throwing in the towel on camera-equipped glasses"
+          - "codenamed Luna, fall 2026 tied to Meta Connect"
+        tone_notes: "Backlash-contextualized liability framing with the Glasshole historical parallel; hedged by the explicit non-retreat note. Mediated register - BI's own sentences not directly read."
+        tone_MANUAL_ILLUSTRATIVE: -0.25
+        evidence_tier: "secondary_characterization - register mediated by the synthesis, not BI's own sentences"
+      tone_comparison:
+        openai_avg_MANUAL_ILLUSTRATIVE: 0.15
+        meta_avg_MANUAL_ILLUSTRATIVE: -0.25
+        delta_MANUAL_ILLUSTRATIVE_meta_minus_openai: -0.40
+        delta_calc: "(-0.25) - (0.15) = -0.40"
+        m399_february_reference: "m399: OpenAI avg -0.42 (financial skepticism) vs Meta avg +0.08 (product vocabulary); September inverts the direction"
+        methodology: "MANUAL ILLUSTRATIVE synthetic tone scores based on observed register language - come-together/statesman vs Glasshole-moment/liability framing. Illustrative only. Requires observed corpus plus Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Do not claim statistical significance from synthetic arrays."
+        illustrative_warning: "MANUAL ILLUSTRATIVE - not empirical. Do not present as empirical finding."
+      statistical_discipline:
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+        tone_scoring: "MANUAL_ILLUSTRATIVE only"
+        verdict: "directionally_supported_not_proven"
+        artifact_grade: false
+        no_analysis_json_update: true
+      confounders:
+        - level: STRONG
+          factor: "story_type_mismatch"
+          description: "Slowdown-endorsement consensus relay vs backlash-product-launch relay are different news genres. The consensus peg (Amodei essay plus Altman endorsement) structurally invites statesman framing; the Luna peg (The Information scoop amid pervert-glasses backlash) structurally invites liability framing. Register difference may be peg-driven, not entity-driven."
+          adjustment: "not_calculated but material - news peg predicts register"
+        - level: STRONG
+          factor: "evidence_tier_asymmetry"
+          description: "OpenAI arm reconstructed from a near-verbatim IFTTT mirror of BI's own sentences; Meta arm reconstructed from a secondary synthesis's characterization of BI's framing. The Meta register is mediated, not direct. Asymmetric evidence quality bounds the delta reading."
+          adjustment: "not_calculated but material - mediated arm is a weaker reed"
+        - level: MODERATE
+          factor: "both_arms_company_statement_relays"
+          description: "Neither arm is independent BI investigation: the OpenAI arm relays Altman/Musk X posts; the Meta arm relays The Information's insider sourcing. Relay journalism inherits the source's register."
+          adjustment: "not_calculated but material"
+        - level: MODERATE
+          factor: "openai_arm_multi_lab"
+          description: "The Sep 12 piece is Amodei-led; Altman is one endorser among Musk, Delangue, Karpathy, Hassabis. The constructive register attaches to the slowdown consensus, not to OpenAI alone."
+          adjustment: "not_calculated but material"
+        - level: WEAK
+          factor: "temporal_proximity"
+          description: "Four-day window (Sep 12 vs Sep 16-17) actually strengthens comparability - same news week, same slowdown-cycle news environment. Weak as a confound, mild strengthener."
+          adjustment: "not_calculated"
+      counterevidence:
+        - "m399's own February finding: BI went HARD on the payer (OpenAI -0.42 financial-viability skepticism, 'cash incinerator') - the same outlet applies adversarial financial registers to the licensing partner, bounding any payer-softening claim"
+        - "BI's Meta arm carries the explicit 'not throwing in the towel' hedge - the liability framing is contextualized, not pure adversarial"
+        - "The constructive OpenAI register may attach to the pro-safety news peg (slowdown consensus) rather than to OpenAI the company - peg-driven, not payer-driven"
+        - "No verbatim businessinsider.com URL was retrievable for either September piece (paywall); both registers are mirror/secondary-mediated, so the inversion is bounded by evidence tier"
+      financial_incentive:
+        status: "carried_from_m399 - no new financial finding this run"
+        tie: "Axel Springer (Business Insider parent) licenses content to OpenAI for training and attributed use; tens of millions euros (Bloomberg Law source familiar, terms not disclosed); announced Dec 2023"
+        meta_tie: "none - no BI/Meta licensing deal mapped"
+        incentive_reading: "The September constructive OpenAI arm (+0.15) is directionally consistent with the softer-payer prediction, but n=1/n=1, genre-mismatched, mirror/secondary tiers - NOT a financial proof. m399's February harder-on-payer finding remains the stronger in-corpus bound on financial determinism at BI."
+        source_urls:
+          - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
+          - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
+      connects_to: [399, 420, 745, 542, 787, 897]
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: "thirtieth remains the negative guard - this run documents a temporal inversion, not a falsification"
+      cross_references:
+        - "#399 February BI OpenAI financial-skepticism vs Meta product-framing gradient (temporal inversion baseline)"
+        - "#420 BI Anthropic valuation-hype vs Meta product-delay control case (financial determinism fails)"
+        - "#745 BI Anthropic Nasdaq/IPO milestone register (same Sep window, mixed register precedent)"
+        - "#787 WIRED slowdown-cycle coverage-selection silence (same Sep 12 slowdown cycle)"
+        - "#897 Atlantic slowdown-cycle register (same Sep 12 slowdown cycle)"
+      cautious_language: "Temporal inversion documented on n=1/n=1 illustrative arms - directionally supported, not proven. Mirror/secondary evidence tiers for both September arms (BI originals paywalled, verbatim URLs not surfaced). Financial incentive read is carried from m399, NOT a new finding; m399's own harder-on-payer result bounds payer-softening claims. Genre mismatch, mediated Meta register, and multi-lab composition are material confounders. No causal claim. No assertion of editorial direction. Hypothesis-generating only."
+      verification_date: "2026-09-22"
+      source_urls:
+        - "http://techflie.blogspot.com/2026/09/ai-leaders-rally-around-calls-to-slow.html"
+        - "https://biztoc.com/x/ec0e68d86c5052a5"
+        - "https://flipBoard.com/@mattmagnuson/artificial-intelligence-machine-learning-b1md424cz"
+        - "https://medium.com/@enrico.papalini/ai-leaders-are-calling-for-a-slowdown-oversight-must-go-global-9e2937455fbb"
+        - "https://omitted.news/story/anthropic-researcher-warns-ai-could-kill-humans-cdeda0"
+        - "https://tech-insider.org/meta-camera-free-glasses-luna-privacy-backlash-2026/"
   anthropic:
     financial_tie: "none"
     estimated_value: "$0"
