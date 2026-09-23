@@ -4900,6 +4900,84 @@ entities:
         type: 'C'
         date: '2026-09-17 12:00 PDT'
 
+    xai_apple_confidential_antitrust_settlement_sep2026:
+      mechanism_id: 792
+      iteration: 934
+      iteration_type: C
+      rotation: 'Type C'
+      date_analyzed: '2026-09-23'
+      discovery_date: '2026-09-23'
+      time_pdt: '00:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      author: 'Kit (with Ray)'
+      mechanism_name: 'Apple x X Corp/SpaceXAI Confidential Antitrust Settlement (Sep 2026) - Apple Exits on Sealed Terms While OpenAI Defends Alone; Judge Pittman Denies OpenAI Access After In-Camera Review; Consideration Undisclosed'
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      overview: 'FIRST dedicated corpus mapping of the September 2026 confidential resolution between Apple and the Musk-linked plaintiffs (X Corp and SpaceXAI) inside the antitrust suit that continues against OpenAI. Reuters (Sep 16, first-hand read): a Texas federal judge ordered X Corp and SpaceXAI to submit to the court any agreement with Apple relating to the resolution of the plaintiffs'' antitrust claims against Apple, after co-defendant OpenAI sought access to bolster its defenses; X had resolved its lawsuit against Apple without revealing terms while continuing to pursue claims against OpenAI; the underlying suit (filed 2025) alleges Apple violated antitrust law by exclusively integrating ChatGPT into Apple Intelligence; OpenAI told the court X''s apparent Apple deal could undermine X''s effort to seek a monetary payment from OpenAI. Reuters (Sep 18, first-hand read): U.S. District Judge Mark Pittman (Fort Worth) denied OpenAI''s request after an in-camera review, concluding the settlement terms ''do not present information relevant to the issues to be decided at summary judgment or trial in this case''; the resolution stays confidential; trial set for January. Secondary docket summaries (MacObserver, NeoTeo) date the with-prejudice dismissal motion to September 14 (Apple did not oppose; granted same day) and the trial to January 11, 2027. Qualitative financial-incentive documentation leg only: the sealed resolution is an observed but unpriced financial/legal event with terms undisclosed - no payment or consideration is documented, and none is claimed. No coverage-tone claim is made. Correlation is not causation.'
+      court_facts:
+        sep14_dismissal: 'Secondary-reported (MacObserver, NeoTeo docket summaries): on September 14 2026, X Corp and SpaceXAI told the court they had resolved their claims against Apple and moved to dismiss them with prejudice; Apple did not oppose; Judge Pittman granted the dismissal the same day, removing Apple from the case'
+        sep16_disclosure_order: 'Reuters Sep 16 (first-hand read): Judge Mark Pittman ordered X Corp and SpaceXAI to file with the court by Thursday any agreement or combination of agreements with Apple relating to the resolution of the plaintiffs'' claims against Apple, after OpenAI (via Wachtell) moved to compel disclosure to help rebut Musk''s pending claims; X had resolved its lawsuit against Apple without revealing terms'
+        openai_monetary_argument: 'Reuters Sep 16 (first-hand read): OpenAI told the court that X''s apparent deal with Apple could undermine any effort by X to seek a monetary payment from OpenAI - the sealed terms asserted as relevant to the remaining damages exposure, as advocacy, not a finding'
+        sep18_denial: 'Reuters Sep 18 (first-hand read): after in-camera review, Pittman denied OpenAI''s request, concluding the settlement terms do not present information relevant to the issues to be decided at summary judgment or trial; Musk''s companies and Apple had argued the resolution must remain confidential'
+        underlying_claim: 'Reuters (both reads): the 2025 suit alleges Apple violated antitrust law by exclusively integrating OpenAI''s ChatGPT into Apple Intelligence on iPhones and other Apple devices; Apple and OpenAI deny wrongdoing; Apple says the OpenAI deal was not exclusive'
+        trial_calendar: 'Reuters Sep 18: trial set for January; MacObserver docket summary: January 11, 2027 (secondary-reported)'
+      incentive_reading: 'A confidential co-defendant settlement that ends one defendant''s exposure while the other''s continues creates an asymmetric litigation-financial posture: Apple''s exposure terminates on undisclosed terms while OpenAI''s proceeds toward summary judgment and trial. OpenAI''s own filing is the in-corpus evidence tying sealed consideration to money: it argued the Apple terms could affect X''s monetary recovery against OpenAI. The consideration itself - payment, cross-license, product term, or zero-dollar walkaway - is unobserved, so no transfer is claimed and no magnitude is estimated. The judge''s relevance denial affirmatively bounds the inference: whatever the terms, the court found them not relevant to summary judgment or trial. Directional only: sealed multi-defendant resolutions are unobservable financial variables in the remaining defendant''s exposure calculus, not documented transfers.'
+      cross_references: 'mechanism 717 (ANI v. OpenAI Sep 15 Division Bench notice - the corpus''s other litigation-leg financial mapping, procedural movement repricing deal leverage); mechanism 606 (Apple Siri AI publisher-negotiation watch - Apple as AI-payer context); mechanism 663 (publisher licensing roster - the paid-deal baseline against which unpriced resolutions contrast)'
+      connects_to: [717, 606, 663]
+      bounded_absences_this_run:
+      - 'Princeton University Press x Cashmere: already mapped (mechanism 663 family and later Cashmere legs); no new leg surfaced'
+      - 'ANI v. OpenAI Sep 15 appeal event: already mapped (mechanism 717, Type C #809, stronger LiveLaw/Mint sourcing)'
+      - 'Apple Siri publisher-pay negotiations: zero signed counterparties or closing announcements surfaced (mechanism 606 watch unchanged; the August 12 WSJ report remains the last word)'
+      - 'News Corp additional AI arrangements: zero new deals beyond the May 2024 OpenAI leg (mechanism 630 watch unchanged)'
+      - 'AWS AI Content Marketplace: in-corpus via the marketplace intermediary landscape; no new leg this run'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        text: 'Consideration unknown - the resolution may be zero-dollar, nuisance-value, a reciprocal release, litigation-cost avoidance, or non-cash consideration; no payment is documented and none is claimed'
+      - rank: 2
+        strength: strong
+        text: 'Judicial relevance denial - Pittman reviewed the actual terms in camera and found them not relevant to summary judgment or trial, which affirmatively bounds any damages-calculus or exposure inference drawn from the sealed deal'
+      - rank: 3
+        strength: moderate
+        text: 'Secondary-sourced dismissal details - the September 14 with-prejudice dismissal date and the January 11 2027 trial date come from MacObserver/NeoTeo docket summaries, not a first-hand docket read; only the Reuters Sep 16/Sep 18 reporting was read first-hand this run'
+      - rank: 4
+        strength: moderate
+        text: 'OpenAI''s monetary-recovery argument is advocacy, not a finding - its claim that the Apple terms could affect X''s damages case is a litigation position advanced in a motion it lost'
+      - rank: 5
+        strength: weak
+        text: 'Single-event n=1 - one sealed co-defendant resolution provides no baseline for how such resolutions correlate with remaining-defendant outcomes; hypothesis-generating only'
+      strongest_counterargument: 'This is procedure, not a financial transfer: a confidential dismissal ends Apple''s exposure at unknown - possibly zero - consideration, and the court affirmatively found the sealed terms irrelevant to the remaining case. Mapping it as a financial-incentive mechanism over-reads a docket event into deal economics; unlike the licensing legs in this corpus, no money is observed changing hands, and the only party asserting financial relevance (OpenAI) lost the disclosure motion. Per the qualitative boundary, the mechanism documents an unobservable variable, not a transfer, and the verdict stays directional.'
+      statistical_discipline:
+        scorer: none
+        tone_scores: 'NOT_SCORED'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        qualitative_only: true
+        correlation_not_causation: true
+        artifact_grade: false
+      falsification_family: 'NOT a member of the falsification family; ledger holds at 29 (THIRTIETH remains the negative guard)'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C litigation-leg financial mapping; sealed consideration is an unobservable variable, not a documented transfer; engine not run; tone scores NOT_SCORED per the Aug 28 2026 standing rule.'
+      source_urls:
+      - https://www.reuters.com/legal/litigation/openai-challenges-secrecy-apple-pact-with-musks-x-spacexai-2026-09-16/
+      - https://www.reuters.com/legal/litigation/us-judge-denies-openai-bid-review-x-corps-settlement-with-apple-2026-09-18/
+      research_method: '2 browser.search query sets this run: (1) Apple X Corp SpaceXAI confidential settlement dismissal September 14 2026 Judge Pittman docket filing - surfaced the MacObserver docket-timeline summary plus NeoTeo, MacDailyNews, Particle, and Arabian Post secondaries; (2) Reuters September 18 2026 judge denies OpenAI bid review X Corp settlement Apple in camera - confirmed both Reuters wire pieces. 2 browser.open first-hand reads this run (Reuters Sep 16, 34 lines; Reuters Sep 18, 33 lines; verbatim URLs from tool-returned Full-URL listings). Rejected candidates this run: Princeton UP x Cashmere (mechanism 663 family, in-corpus); ANI v. OpenAI Sep 15 appeal event (mechanism 717, stronger LiveLaw/Mint sourcing in-corpus); Apple Siri publisher-pay negotiations (zero signed counterparties, mechanism 606 watch unchanged); News Corp additional AI negotiations (zero new deals, mechanism 630 watch unchanged); AWS AI Content Marketplace (in-corpus marketplace intermediary leg). Pre-commit novelty greps: zero test_type_c_934 files on disk (glob); no "Type C #934" in git log (--grep); max numeric mechanism_id 791 pre-commit; zero underscore-form 792 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); zero numeric 792-form mechanism keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; both Reuters URLs zero-hit repo-wide pre-commit. No canonical URLs constructed. No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated corpus mapping of the September 2026 Apple x X Corp/SpaceXAI confidential antitrust settlement. Zero Pittman hits repo-wide pre-commit (case-insensitive git grep on profiles/ tests/ docs/ at HEAD, verified this run); zero SpaceXAI-settlement hits; both Reuters URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 791 pre-commit; zero underscore-form 792 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); block key zero-hit repo-wide pre-commit. Distinct from mechanism 717 (ANI v. OpenAI, different case, different country, different procedural posture). No em dashes; ASCII-only.'
+      test_file: 'tests/test_type_c_934_xai_apple_confidential_antitrust_settlement_sep23_12am.py'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 934
+        type: 'C'
+        date: '2026-09-23 00:00 PDT'
+
     nadella_retrain_testimony_93pct_clickthrough_sep2026:
       mechanism_id: 759
       iteration: 879
