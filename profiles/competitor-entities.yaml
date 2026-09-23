@@ -21953,6 +21953,73 @@ marketplace_intermediary_landscape:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline_note: 'Qualitative Type C mapping - financial-incentive documentation leg, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+  doj_google_adtech_remedies_unsealed_publisher_leverage_sep2026:
+    mechanism_id: 801
+    iteration: 949
+    type: 'C'
+    date: '2026-09-23 15:00 PDT'
+    title: 'DOJ v Google ad-tech behavioural remedies unsealed Sep 16 2026: DFP-AdX untie, Prebid interoperability, publisher data portability, AdWords non-discrimination - the first structural publisher-leverage repricing in the corpus'
+    summary: 'On Sep 16 2026 the U.S. District Court for the Eastern District of Virginia unsealed its Sep 2 2026 decision on behavioural remedies for Google digital-ad-tech monopolisation: (i) no DFP-AdX tying, no First Look/Last Look reinstatement, no Unified Pricing Rules on indirect DFP transactions; (ii) mandatory Prebid interfaces - AdX real-time bids to Prebid, DFP-Prebid connection, AdX real-time bids to rival publisher ad servers; (iii) publisher data portability - historical and configuration data from DFP plus ongoing AdX bid data, exportable to rival ad servers (open-web display); (iv) AdWords barred from bidding directly into DFP and from favouring Google-owned or affiliated tools (AdWords-to-Prebid integration permitted). The court REJECTED the plaintiffs sought structural remedy (AdX divestiture). 6-year judgment, effective 60 days after entry; monitor plus 3-member technical committee immediate. First corpus leg on the Sep 2026 remedies phase; the leverage leg for the Google publisher-money-flow family.'
+    remedy_facts:
+      decision_issued_under_seal: '2026-09-02'
+      decision_unsealed: '2026-09-16'
+      court: 'U.S. District Court for the Eastern District of Virginia'
+      structural_remedy_sought_rejected: 'AdX divestiture - the plaintiffs sought structural remedy, rejected; the court found behavioural remedies sufficient'
+      remedy_i_untie: 'Prohibited from enforcing policies or contract terms tying DFP (Google publisher ad server) to AdX; from reinstating First Look and Last Look; from applying Unified Pricing Rules in DFP to indirect transactions'
+      remedy_ii_prebid: 'Must build interfaces allowing Prebid (open-source header bidding consortium) to obtain real-time bids from AdX, connecting DFP to Prebid, and enabling AdX to submit real-time bids to rival publisher ad servers'
+      remedy_iii_data_portability: 'Must give publishers their historical and configuration data from DFP and ongoing AdX bid data and allow export to rival publisher ad servers, limited to open-web display advertising'
+      remedy_iv_adwords: 'AdWords prohibited from bidding directly into DFP and from favouring Google-owned or Google-affiliated tools when bidding; Google may integrate AdWords directly with Prebid'
+      oversight: 'Monitor and 3-member technical committee; 6-year judgment; takes effect 60 days after entry except monitor and committee (immediate)'
+    incentive_geometry:
+      channel_2_loosening: 'The google entity publisher_ai_deal_revolt dual-channel model holds that publishers cannot exit Channel 2 (ad-revenue dependency) even in a full AI-deal exodus. The remedies decision is the first corpus event that LOOSENS Channel 2 structurally: DFP-AdX untie plus publisher data portability plus AdX-to-rival-server bidding directly reduce the switching cost that makes the ad dependency non-exitable.'
+      flow_inversion_counterweight: 'Mechanism 929 documented flow inversion - publishers paying Google (paid search up 274 percent over three years) while the Google AI Contribution Pilot pays peanuts via a black box formula (mechanisms 702/708). The remedies are the first structural counter-flow in the corpus: court-ordered unbundling and data portability re-price publisher leverage against Google on the ad-tech side, independent of the AI-licensing side.'
+      leverage_scarcity_thesis_leg: 'The TV News Check scarcity-pricing thesis (mechanism 929 block: financial gradients should track leverage and scarcity - who can withhold what - not editorial alignment) gains a new lever: publishers can now credibly threaten ad-server migration with their own data, which is a withholdable asset the remedies decision made portable.'
+      tone_program_note: 'No coverage-tone claim. The incentive prediction this leg generates for the Type A/B program: publications covering the remedies decision itself are a future tone-test surface (does coverage of a Google structural loss carry the adversarial register applied to Meta losses), flagged as a Type A follow-up, not asserted.'
+    connects_to: [702, 708, 929, 463, 786, 355]
+    confounders_ranked:
+    - strength: 'STRONG'
+      text: 'Behavioural-only, no divestiture: the court rejected AdX divestiture, so Google keeps the exchange and the core inventory-routing asset. The leverage shift is bounded by design - publishers gain portability and non-discrimination, not ownership of the rails.'
+    - strength: 'STRONG'
+      text: 'Do-not-conflate with the private case: this is the GOVERNMENT ad-tech case remedies phase (E.D. Va.), not the USA TODAY Co. v Google private case whose summary-judgment ruling was expected in September 2026 per mechanism 463. The two tracks are parallel; no ruling in the private case surfaced in this run searches (bounded absence per iteration-492, not proof of non-issuance).'
+    - strength: 'MODERATE'
+      text: '60-day effectiveness delay plus implementation risk: remedies take effect 60 days after entry and depend on Google-built interfaces (Prebid/AdX/DFP integrations) under monitor supervision. Paper remedies and working interoperability are different things; the 6-year oversight window is the enforcement bet.'
+    - strength: 'MODERATE'
+      text: 'Open-web display scope only: the data-portability and export mandates are limited to open-web display advertising. The remedies do not reach search, YouTube, or the AI-licensing programs (mechanisms 355, 702/708) - the publisher-money-flow repricing is ad-tech-bounded.'
+    - strength: 'WEAK'
+      text: 'Appeal exposure: behavioural-remedy judgments in monopolisation cases are routinely appealed; a stay or narrowing on appeal would blunt the leverage repricing. No appeal reporting surfaced in this run searches.'
+    counterevidence:
+    - 'The court rejection of AdX divestiture is itself counterevidence to a maximal leverage-shift reading: the plaintiffs sought structural separation and lost that ask. Google retains the exchange, the publisher ad server, and the advertiser buying tool - the full stack, minus the ties the court cut.'
+    - 'Behavioural remedies have a weak enforcement history in ad tech: prior interoperability mandates (the EU Android choice-screen precedent) produced compliance-theatre critiques. The monitor plus technical committee is the court answer, but its effectiveness is unproven.'
+    strongest_counterargument: 'A behavioural-remedies judgment that leaves AdX, DFP, and AdWords all inside Google re-prices leverage at the margin, not structurally: publishers get data they can export and bids they can route, but the inventory, the buyers, and the exchange remain Google property. The Channel-2 loosening is real but partial - the ad-revenue dependency is dented, not exited.'
+    verdict: 'directionally_supported_not_proven'
+    no_analysis_json_update: true
+    artifact_grade: false
+    falsification_family: false
+    falsification_ledger_holds_at: 29
+    falsification_note: 'NOT a member of the falsification family; ledger holds at 29 (THIRTIETH remains the negative guard)'
+    statistical_discipline:
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    sources:
+    - 'https://dig.watch/updates/court-unsealed-decision-on-remedies-set-on-google (Digital Watch Observatory, dated 16 Sep 2026: decision issued under seal 2 Sep 2026, unsealed 16 Sep 2026, E.D. Va.; structural AdX-divestiture remedy rejected; remedies (i)-(iv): DFP-AdX untie plus no First Look/Last Look plus no Unified Pricing Rules on indirect DFP transactions; Prebid interfaces - AdX real-time bids to Prebid, DFP-Prebid connection, AdX real-time bids to rival publisher ad servers; publisher historical plus configuration DFP data and ongoing AdX bid data exportable to rival ad servers, open-web display only; AdWords barred from direct DFP bidding and from favouring Google-owned/affiliated tools, AdWords-to-Prebid integration permitted; monitor plus 3-member technical committee; 6-year judgment, 60 days after entry except monitor/committee immediate; first-hand browser.open read this run, 39 lines)'
+    - 'https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google (DOJ Office of Public Affairs release: required Prebid and competing-publisher-ad-server integrations; data-sharing - publishers access and export DFP/AdX data to ease ad-tech-provider switching; AdWords non-discriminatory bidding - no preferential AdX bidding, no direct DFP bidding; monitor plus technical committee, 6 years; via search-result excerpt, second-hand per #503)'
+    research_method: '4 browser.search query sets this run: (1) AI publisher content licensing deal September 2026 dollars (since=2026-09-16) - surfaced the Press Gazette Sep 23 tracker update (India fee estimates already mechanism 798; Village Media already mechanisms 714/804), stockmoguls Sep-6 archive piece (NYT litigation spend already mechanism 869; DOJ fair-use brief already mechanism 672), RTB Digital/Paradium 8-K (already mechanism 738; rejected per the #729/#939 Symbolic.ai non-competitor-counterparty precedent), Amazon x NYT webpronews relay (420 days old, in corpus); (2) AI company news publisher partnership deal announced this week (since=2026-09-16) - surfaced FourWeekMBA India synthesis (already mechanisms 624/709), Press Gazette tracker (carried), OpenAI x Hearst Bloomberg Law (2024 vintage); (3) publisher AI licensing revenue earnings September 2026 (since=2026-09-09) - surfaced the f9xr Sep-15 Google-pay-publishers writeup (Digiday pilot detail already mechanisms 702/708), Wiley Q1 FY2027 (already mechanism 777), own-repo #463 commit (circular, rejected); (4) USA TODAY Gannett v Google summary judgment September 2026 (since=2026-09-01) - SELECTED the dig.watch Sep-16 remedies-unsealed piece and the DOJ substantial-relief release (both zero-hit repo-wide pre-commit); carried context: beaconjournal/aberdeennews Oct 2025 liability-phase pieces (mechanism 463 family). 1 browser.open first-hand read (dig.watch, 39 rendered lines). Rejected candidates: Apple Siri publisher closures (zero new, mechanism 606 watch stands per #619); Google pay-per-value pilot (no new status beyond Sep 14-15, mechanisms 702/708); Perplexity/Google/Apple publisher-payment queries (no new events); Getty v Stability AI and Ziff Davis v OpenAI Sep-2026 developments (no results surfaced this run). Pre-commit novelty greps per #715: zero test_type_c_949 files on disk (glob); no "Type C #949" in git log (--grep); max numeric mechanism_id 800 in-tree pre-commit; zero underscore-form 801 key strings repo-wide pre-commit (format-built needles, no literals carried); zero numeric 801-form mechanism keys repo-wide pre-commit; block key doj_google_adtech_remedies_unsealed_publisher_leverage_sep2026 zero-hit repo-wide pre-commit; both evidence URLs zero-hit repo-wide pre-commit; zero prebid hits repo-wide pre-commit (pycache excluded). All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Bounded absences per iteration-492 rule (no USA TODAY private-case summary-judgment ruling surfaced; no appeal reporting; none claimed as proof).'
+    novelty: 'First corpus mechanism on the Sep 2026 remedies phase of the DOJ Google ad-tech monopolisation case: zero remedies legs in the google entity (the only corpus remedies hits are the Meta $942M child-safety remedies, a different case), zero Prebid, DFP-AdX-untie, or AdX-divestiture strings repo-wide pre-commit (pycache excluded). Distinct from mechanism 463 (USA TODAY Co. v Google PRIVATE case, Q2 2026 earnings leg - different case, different track; explicitly do-not-conflate), mechanisms 702/708 (Google buyer-side AI-licensing pilot - licensing track, untouched by the remedies), mechanism 929 (Digiday zero-PnL ledger - the flow-inversion synthesis this leg counterweights), mechanism 786 (Cloudflare tollbooth admission - supply-side structural lever; this leg is the demand-side structural lever), and mechanism 355 (Google News AI pilot deal structure - licensing track). Novelty claims pinned for the test_type_c_949 file per the #752 convention.'
+    verification:
+      iteration: 949
+      type: 'C'
+      date: '2026-09-23 15:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline_note: 'Qualitative Type C mapping - financial-incentive documentation leg, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
 advance_dual_asset_monetization:
   overview: 'Advance Publications operates TWO parallel AI content monetization channels
 
