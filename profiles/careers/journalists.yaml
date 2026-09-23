@@ -21503,16 +21503,23 @@ james_pero:
     the pattern may be challenger-optimism vs incumbent-skepticism rather than Meta-specific. connects_to: [211, 31, 99, 743, 269]. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED;
     is_significant False per the Aug 28 2026 standing rule; verdict directionally_supported_not_proven; no_analysis_json_update: true; NOT artifact-grade; NOT a falsification-family member (register documentation
     + fourth-entity extension, not a uniform-prediction test); falsification ledger holds at 26 (TWENTY-SIXTH present; TWENTY-SEVENTH absent in profiles/). Correlation only, not causation. Hypothesis-generating
-    only. ASCII-only, no em dashes.'
+    only. ASCII-only, no em dashes. Type B #933 (Sep 22 2026, 23:00 PDT): mechanism 791 - FIRST full-text first-hand same-day within-writer pair: Gizmodo Sep-16 Luna piece
+    (''Drastically Tone Down the Creep Factor'', ''unsavory stuff'', ''major liability'', bans in courts/restaurants/bars/public spaces, ''viscerally offends'', ''perception problem'')
+    vs Sep-16 Snap Specs hands-on (''Dorky, Fun'', ''impressive'', ''honest-to-god mixed reality'', ''not quite the ear-crusher I thought''; zero privacy/surveillance/creep/ban vocabulary in the full
+    80-line first-hand read, even though Specs ship cameras; complaints are FOV, $2,195 price, ''gut punch to your wallet''); Meta-minus-Snap illustrative delta -0.65; verdict
+    directionally_supported_not_proven; connects [211, 746, 734, 749, 269, 743]. ASCII-only, no em dashes.'
   mechanism_ids:
   - 211
   - 746
+  - 791
   source_urls:
   - https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
   - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
   - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
   - https://gizmodo.com/metas-new-smart-glasses-drop-ray-ban-branding-and-add-kylie-jenner-2000775546
   - https://gizmodo.com/meta-thinks-social-learning-can-fix-smart-glasses-privacy-problems-2000776162
+  - https://gizmodo.com/snap-specs-hands-on-dorky-fun-and-potentially-too-ambitious-2000811952
+  - https://gizmodo.com/meta-luna-smart-glasses-may-drastically-tone-down-the-creep-factor-2000812613
   competitor_coverage:
     type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension:
       iteration: 858
@@ -21610,6 +21617,135 @@ james_pero:
         URL zero-hit repo-wide; zero test_type_b_858 files on disk; no Type B #858 in git log (--grep). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em
         dashes.'
       test_file: tests/test_type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension_sep19_1pm.py
+    type_b_933_james_pero_gizmodo_snap_dorky_fun_vs_meta_luna_creep_factor_sep16:
+      iteration: 933
+      mechanism_id: 791
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-22 23:00 PDT'
+      block_key: 'type_b_933_james_pero_gizmodo_snap_dorky_fun_vs_meta_luna_creep_factor_sep16'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-writer same-day first-hand pair. Question: does James Pero (Gizmodo, Senior Reporter, self-described "resident smart glasses guy")
+        apply a different editorial register to Meta''s camera-equipped glasses than to Snap''s camera-equipped AR glasses when both stories land on the same day at the same outlet?
+        Two Pero bylines, BOTH first-hand read this run via browser.open (verbatim URLs from tool-returned Full-URL listings): (a) the Meta arm, Sep 16 2026, the Luna camera-free-glasses report
+        ("Meta''s Next Pair of Smart Glasses May Drastically Tone Down the Creep Factor"); (b) the Snap arm, Sep 16 2026, the Specs hands-on ("Snap Specs Hands-On: Dorky, Fun, and Potentially
+        Too Ambitious"). Same writer, same outlet, same day, same product category (face-worn glasses), BOTH with camera hardware in the product line. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026
+        standing rule. No zero-coverage claims per the iteration-492 rule: both comparator arms are positive Pero bylines.'
+      meta_arm:
+        entity: 'meta'
+        title: 'Meta''s Next Pair of Smart Glasses May Drastically Tone Down the Creep Factor'
+        publication: 'gizmodo'
+        author_byline: 'James Pero'
+        role: 'Senior Reporter'
+        date: '2026-09-16'
+        genre: 'rumor report (relay of The Information, Sep-15 Luna camera-free glasses report)'
+        tone_score: -0.35
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (gizmodo.com opened first-hand this run, 24 lines)'
+        url: 'https://gizmodo.com/meta-luna-smart-glasses-may-drastically-tone-down-the-creep-factor-2000812613'
+        byline_attribution_urls:
+        - 'https://gizmodo.com/author/jpero'
+        - 'https://gizmodo.com/meta-luna-smart-glasses-may-drastically-tone-down-the-creep-factor-2000812613'
+        key_quotes:
+        - 'Meta''s Next Pair of Smart Glasses May Drastically Tone Down the Creep Factor'
+        - 'Cameras on your face, as it turns out, can be used for all sorts of unsavory stuff, but there is one way to prevent that, and it''s by removing them from the equation entirely.'
+        - 'Camera glasses are getting banned in all sorts of places, including courts, popular restaurants and bars, and even in some public spaces.'
+        - 'While some people may not mind the idea of walking around with cameras on people''s faces, the idea viscerally offends others.'
+        - 'There''s also the perception problem.'
+        - 'Meta''s smart glasses are controversial for an increasing number of reasons at this point, but the biggest reason is easily the cameras.'
+        - 'it''s clear that Meta is taking a blanket approach to its smart glasses offerings, which makes a lot of sense.'
+        register_notes: 'Moral-stigma register on the incumbent product line: "creep factor", "unsavory stuff", "major liability", ban roll-call (courts, restaurants, bars, public spaces), "viscerally offends".
+          The concession itself (Luna) gets pragmatic credit ("makes a lot of sense"), but the credit is for dodging a crisis, not for product merit; Meta stays the adversarialized subject throughout.'
+      snap_arm:
+        entity: 'snap'
+        title: 'Snap Specs Hands-On: Dorky, Fun, and Potentially Too Ambitious'
+        publication: 'gizmodo'
+        author_byline: 'James Pero'
+        role: 'Senior Reporter'
+        date: '2026-09-16'
+        genre: 'launch-window hands-on review (first-person try-on)'
+        tone_score: 0.30
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text direct fetch (gizmodo.com opened first-hand this run, 80 lines)'
+        url: 'https://gizmodo.com/snap-specs-hands-on-dorky-fun-and-potentially-too-ambitious-2000811952'
+        byline_attribution_urls:
+        - 'https://gizmodo.com/author/jpero'
+        - 'https://gizmodo.com/snap-specs-hands-on-dorky-fun-and-potentially-too-ambitious-2000811952'
+        key_quotes:
+        - 'Snap Specs Hands-On: Dorky, Fun, and Potentially Too Ambitious'
+        - 'If there''s one thing that Specs do not lack, it''s ambition.'
+        - 'Not going to lie: it was fun.'
+        - 'Maybe the one area you''d expect me to dunk on Specs the most is actually the area that I find most impressive - the size.'
+        - 'By most people''s estimations, you''re going to look dorky with them on, but compared to a VR headset, the dork factor is reduced significantly.'
+        - 'And the fact that Snap has achieved a *standalone* AR device that''s even anywhere near the size of a regular pair of glasses is impressive.'
+        - 'They''re as expensive as they are intriguing and as intriguing as they are easy to dismiss.'
+        register_notes: 'Playful product-review register: "dorky, fun", "impressive", "honest-to-god mixed reality", "rollercoaster". Criticism is product-level (51-degree FOV, $2,195 price "gut punch to your wallet").
+          ZERO privacy/surveillance/creep/ban/pervert vocabulary across the full 80-line first-hand read - on a face-worn device whose companion Sep-16 Pero byline is titled "Snap''s AR Glasses Let You Take Snapchat Pics by
+          Snapping Your Fingers" (camera capture is the product''s feature, not its scandal). The moral register applied to Meta''s cameras is entirely absent for Snap''s cameras.'
+      asymmetry_scorer:
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+        meta_tone: -0.35
+        snap_tone: 0.30
+        delta_meta_minus_snap: -0.65
+        delta_calc: '-0.35 - 0.30 = -0.65'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        engine_run: false
+      confounders_ranked:
+      - strength: 'STRONG'
+        text: 'Story-peg skew: the Luna piece is a rumor report about a privacy-concession product (the privacy frame is pegged to the story itself); the Snap piece is a first-hand product hands-on. Report-vs-hands-on genre explains part of the moral/product register split.'
+      - strength: 'STRONG'
+        text: 'Try-on warmth skew: the Snap piece is a personal wear experience ("fun", "rollercoaster") inviting warm product language; the Meta piece relays a second-hand report (The Information) inviting distancing moral language.'
+      - strength: 'MODERATE'
+        text: 'Product-status skew: Specs are a launched Sep-2026 product (confirmed hardware, confirmed price); Luna is an unconfirmed rumor. Uncertainty about the Meta product may invite moral framing instead of product framing.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm. Directional, not dispositive; a second Pero Meta-vs-Snap same-day pair would be needed to lift the register claim above the story-peg boundary.'
+      counterevidence:
+      - 'Pero''s Luna piece DOES give Meta pragmatic credit ("taking a blanket approach to its smart glasses offerings, which makes a lot of sense") - not pure hostility; the credit is crisis-dodging credit, bounding the adversarialism.'
+      - 'm746 documents Pero''s Meta-adversarial register as a persistent pattern; m716 house-adversarialism means the Meta arm''s register may be partly Gizmodo house style, not purely personal.'
+      - 'Yildirim (Gizmodo, same week, Sep 9 2026) applied the surveillance register to Apple Watch Live Rewind/Siri Recap too ("constantly eavesdropping", bystander-transcription warning) - Gizmodo''s privacy register is not Meta-exclusive at the outlet level.'
+      - 'The Snap hands-on genre naturally centers product experience; the privacy absence could be genre, not entity - though note the Luna piece''s rumor-report genre did NOT block a privacy register.'
+      connects_to:
+      - 211
+      - 746
+      - 734
+      - 749
+      - 269
+      - 743
+      verdict: 'WITHIN-WRITER MORAL-REGISTER ASYMMETRY, directionally consistent with the m211/m746 Meta-exceptionalism strand, NOT a falsification pin. Pero''s Sep-16 Meta Luna piece reads moral-stigma (-0.35
+        illustrative) while his SAME-DAY Sep-16 Snap Specs hands-on reads playful-constructive (+0.30 illustrative): Meta-minus-Snap illustrative delta -0.65. Both are face-worn glasses with camera hardware; only
+        Meta''s cameras get the "creep factor" moral register in his copy. STRONG story-peg and try-on confounds fully bound the gap before any incentive effect is invoked; no newsroom-behavior claim is made.
+        This is the FIRST full-text first-hand same-day within-writer Meta-vs-Snap pair in the corpus (m746 was excerpt-tier with carried Meta arms; m211 was reviews/editorials with excerpt bounds). Correlation is not
+        causation per the Aug 28 rule. NOT a falsification-family member. NOT a pure asymmetry pin. Verdict: directionally_supported_not_proven. NOT artifact-grade. First same-day-pair extension of the james_pero entry (mechanism_ids [211, 746, 791]).'
+      financial_context: 'Gizmodo is owned by Keleops AG. No documented Keleops/Gizmodo-to-Snap or Gizmodo-to-Meta content licensing deal in the corpus. The m746 financial-incentive leg (Apple affiliate revenue >
+        Google ad partner > Meta zero relationship) does NOT predict Snap''s soft register: no Snap financial relationship with Gizmodo/Keleops is on record, yet Snap lands at the soft end of the register. The
+        asymmetry is Meta-exceptionalism, not payer-driven. Correlational boundary only, correlation not causation.'
+      cross_refs:
+      - '#858 (Type B: Pero Snap do-or-die fourth-entity extension, mechanism 746 - excerpt-tier, carried Meta arms; this run replaces the carried arms with first-hand same-day arms)'
+      - '#219/#211 (Type B: Pero three-entity Apple/Google reputational-credit privacy gradient, mechanism 211)'
+      - '#838 (Type B: Preston Verge Luna stigma-forward headline, mechanism 734 - publication-level Meta Luna register corroboration)'
+      - '#863/#749 (Type B: Ropek TechCrunch Luna surveillance-society piece, mechanism 749)'
+      - '#888 (Type B: byline-sweep confirming James Pero as the Gizmodo Luna author, mechanism 746 context)'
+      block_key: 'type_b_933_james_pero_gizmodo_snap_dorky_fun_vs_meta_luna_creep_factor_sep16'
+      author: 'Kit (with Ray)'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer moral-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
+      novelty: 'First dedicated same-day-pair extension of the james_pero entry (existing mechanisms 211, 746). First full-text first-hand Meta-vs-Snap same-day within-writer pair in the corpus. Zero
+        test_type_b_933 files on disk (glob verified this run). No Type B commit with 933 in the title (git log --grep verified this run). Both Gizmodo URLs zero-hit repo-wide pre-commit (grep verified this run);
+        block key zero-hit repo-wide pre-commit (grep verified this run). Both tones hand-assigned this run (MANUAL ILLUSTRATIVE); no tones rescored. Mechanism id 791 is the next free profiles mechanism id
+        (max pre-commit 790). Rotation: 932 A -> 933 B. In-flight #884 (m762), #899 (m771), #900 (qualitative test) all untouched and uncommitted; journalists.yaml edited only in the james_pero entry;
+        backed up to goal hidden_files pre-edit.'
+      research_method: '5 browser.search query sets this run: (1) Dominic Preston The Verge Meta Luna Sep 2026 (confirmed the Preston Luna byline via WeSearch mirror, Sep 16 - rejected, mechanism 734 covers it);
+        (2) Dominic Preston The Verge Apple Watch Sep 2026 (surfaced Preston''s Apple "Awe dropping" live-blog via Techmeme - rejected, live-blog genre); (3) Gizmodo "If Meta Glasses Freak You Out" Apple Watch
+        Live Rewind Siri Recap author (surfaced Ece Yildirim''s Sep-9 Apple Watch piece - rejected, no Yildirim Meta comparator arm in corpus); (4) Ece Yildirim Gizmodo Meta smart glasses Luna (surfaced the Gizmodo
+        Luna piece, Sep 16 - byline unresolved in snippets); (5) gizmodo.com "drastically tone down the creep factor" Luna (surfaced the Luna URL + the James Pero author page). 4 browser.open reads this run:
+        (a) scoopfeeds Luna mirror (preview tier); (b) James Pero author page (first-hand; listed both Sep-16 pieces); (c) Snap Specs hands-on (first-hand, full 80 lines); (d) Meta Luna piece (first-hand, full 24 lines).
+        Byline confirmed on both article pages and the author page. All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. Bounded full-text reads per #503. No zero-coverage
+        claims per iteration-492 (both arms are positive Pero bylines). ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_933_james_pero_gizmodo_snap_dorky_fun_vs_meta_luna_creep_factor_sep16.py
 daniel_cooper:
   name: Daniel Cooper
   current_role: Senior Editor
