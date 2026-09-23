@@ -2680,6 +2680,119 @@ competitor_relationships:
     direction: "none"
     description: "No AI licensing deal. SRMG/PIF $200M investment in PMC parent creates structural conflict - PIF divested all META shares."
     coverage_prediction: "adversarial"
+    verge_meta_luna_glasshole_moment_launch_register_vs_openai_deal_partner_arms_sep23_2026:
+      mechanism_id: 793
+      date: '2026-09-23'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 937
+      iteration_type: A
+      iteration_time: 2026-09-23 03:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: Kit (with Ray)
+      publication_focus: The Verge (Vox Media)
+      entity_pair: 'Meta (fresh arm, $0 tie) vs OpenAI (Vox Media strategic-partnership deal partner since May 29 2024, carried arms)'
+      finding: 'FIRST dedicated mechanism block under the the-verge.yaml meta: entity section (previously a stub header only; Verge x Meta arms existed solely as carried comparators inside m592 and m751). Fresh arm: The Verge''s Sep-23 2026 launch-day Luna piece, "Meta''s Camera-Free ''Luna'' Smart Glasses Are the Company''s Glasshole Moment" (excerpt-bounded per #503; theverge.com policy-blocked for browser.open per standing rule; URL slug 785732 zero-hit repo-wide pre-commit). Register: adversarial privacy-alarm editorial; the headline revives the 2013 Glasshole slur for a camera-free device. MANUAL ILLUSTRATIVE -0.50: accusation-forward headline moderated by carried Meta framing ("meant to put wearers at ease, Meta says") and the advocates-say attribution structure. Carried comparators, un-rescored per the #807 pattern: Verge x OpenAI m751 (Sep-18 doom-loop unsealed-NYT-filing accountability-adversarial legal-filing register, -0.55) and m598 (Sep-4/5 DseWiki wiki-incident adversarial delayed-disclosure register, -0.65), carried mean -0.60; Verge x Meta m592 July glasses band [-0.55, -0.60, -0.50] (Song LED-tamper piece, "pervert glasses" editorial, "holds all the cards" opener), carried mean -0.55. Illustrative deltas: Meta-Luna-minus-OpenAI-mean +0.10 (the $0-tie non-payer draws a SOFTER register than the Vox deal partner at the same outlet - inversion of the naive payer-softening prediction); Meta-Luna-minus-Meta-band +0.05 (launch-day camera-free framing marginally softer than the July pervert-glasses band). Cross-publication same-peg control: BI''s Sep-16/17 Luna relay (m786 via #932, The Information relay, "navigating its Google Glass moment", -0.25) vs the Verge launch-day piece (-0.50): the identical Luna peg draws a 0.25-harder register at The Verge; both outlets lack a Meta tie (BI''s tie is to OpenAI via the Axel Springer parent-level deal), so the gap reads as outlet register choice, not entity targeting. Overall reading: directionally consistent with the m598/m751 Vox-deal falsification family (the deal buys no softening at the product-privacy layer either), but NOT a new family member: genre skew is STRONG (product-launch privacy editorial vs legal-filing accountability are different natural registers), the clean same-beat falsification already exists (m751, TWENTY-SEVENTH member), and the fresh arm is n=1 excerpt-bounded. Verdict: directionally_supported_not_proven on the control-case extension. Ledger holds at 29; THIRTIETH remains the negative guard. NOT artifact-grade. No analysis.json update. Correlation is not causation.'
+      meta_fresh_arm:
+        title: 'Meta''s Camera-Free ''Luna'' Smart Glasses Are the Company''s Glasshole Moment'
+        publication: The Verge
+        date: '2026-09-23'
+        date_note: 'Sep 23 2026, 11:00 PT per search index (Meta Connect 2026 Day 1)'
+        byline: 'unconfirmed in excerpt set'
+        url: 'https://www.theverge.com/news/785732/meta-luna-camera-free-smart-glasses-glasshole-moment'
+        url_status: 'novel this run - URL zero-hit repo-wide pre-commit (slug 785732 zero-hit; title string "Glasshole Moment" zero-hit repo-wide pre-commit)'
+        register: adversarial_privacy_alarm_editorial
+        tone_MANUAL_ILLUSTRATIVE: -0.50
+        tone_note: 'Headline-grade accusation ("Glasshole Moment") is adversarial; carried Meta framing ("meant to put wearers at ease, Meta says") and advocates-say attribution moderate it to -0.50, matching the m592 "holds all the cards" opener tone'
+        excerpts_verbatim:
+          - 'Meta''s Camera-Free ''Luna'' Smart Glasses Are the Company''s Glasshole Moment'
+          - 'The camera-free design is meant to put wearers at ease, Meta says, and make it more comfortable for them to use AI features in public without drawing attention, the company said.'
+          - 'But privacy advocates have long warned that smart glasses let wearers quietly capture sensitive moments, and people around them will have no way of knowing if the wearer is recording them.'
+        evidence_grade: 'excerpt-bounded this run (browser.search verbatim excerpts per #503; 0 browser.open - theverge.com policy-blocked per standing rule)'
+      openai_arms_carried:
+        carried_per: '#807 (un-rescored)'
+        arms:
+          - mechanism: 751
+            iteration: 867
+            description: 'Sep-18 doom-loop unsealed-NYT-filing accountability-adversarial legal-filing register ("pretty damning" lede, "largest theft of labor in human history")'
+            manual_illustrative_tone: -0.55
+          - mechanism: 598
+            description: 'Sep-4/5 DseWiki wiki-incident adversarial delayed-disclosure register ("Kept ... Under Wraps for Weeks")'
+            manual_illustrative_tone: -0.65
+        openai_carried_mean: -0.60
+      meta_band_carried:
+        source_mechanism: 592
+        carried_per: '#807 (un-rescored)'
+        arms:
+          - description: 'Song Jul 7 LED-tamper privacy-light piece'
+            manual_illustrative_tone: -0.55
+          - description: 'Jul 20 "pervert glasses" editorial'
+            manual_illustrative_tone: -0.60
+          - description: 'late-Jul "holds all the cards" opener with activist "mass surveillance predator glasses" language'
+            manual_illustrative_tone: -0.50
+        meta_band_mean: -0.55
+      cross_publication_same_peg_control:
+        bi_luna_arm:
+          source: 'mechanism 786 (Type A #932, carried per #807, un-rescored)'
+          description: 'BI Sep-16/17 Luna summary (The Information relay): Meta "navigating its Google Glass moment" with the explicit 2013 Glasshole parallel, backlash-contextualized liability framing'
+          manual_illustrative_tone: -0.25
+        illustrative_verge_minus_bi: -0.25
+        reading: 'The identical Luna peg draws a 0.25-harder register at The Verge (-0.50) than at BI (-0.25). Both outlets lack a Meta tie (BI''s tie is to OpenAI via the Axel Springer parent-level deal), so the gap reads as outlet register choice, not entity targeting; bounds the "Meta is universally hammered on wearables" reading.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        method: manual_illustrative
+        target_entity: meta
+        peer_entity: openai
+        methodology: 'Target-minus-peer convention; MANUAL ILLUSTRATIVE tones, not empirical corpus scores; one NEW excerpt-bounded Sep-23 Verge x Meta arm plus carried no-rescore arms (two OpenAI from m751/m598, three Meta from m592) per #807; BI same-peg arm is register context, not a scored arm'
+        meta_fresh_arm_tone: -0.50
+        openai_carried_mean: -0.60
+        meta_band_carried_mean: -0.55
+        illustrative_delta_meta_luna_minus_openai_mean: 0.10
+        delta_arithmetic: '-0.50 - (-0.60) = +0.10'
+        illustrative_delta_meta_luna_minus_meta_band: 0.05
+        engine: NOT run
+        p_value: 'NOT_CALCULATED (standing rule Aug 28 2026)'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        no_analysis_json_update: true
+      statistical_discipline:
+        scorer: 'MANUAL ILLUSTRATIVE only'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        engine: 'NOT run'
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        no_analysis_json_update: true
+        correlation_not_causation: true
+      incentive_attribution: 'INCONCLUSIVE and MIXED: the Vox Media x OpenAI strategic partnership (May 29 2024, in-corpus via venturebeat, carried from #507/#573/#598) predicts softer OpenAI coverage; observed OpenAI arms (-0.55, -0.65) are HARDER than the fresh Meta arm (-0.50) at the same outlet, which is thesis-inconsistent for the naive prediction and directionally consistent with the m598/m751 falsification family. But genre skew is the strongest confound (product-launch privacy editorial vs legal-filing accountability), the fresh arm is n=1 excerpt-bounded, and the clean same-beat falsification already exists as m751. Correlation is not causation. NOT a falsification-family member.'
+      falsification_family: 'NOT a member: control-case extension at a new peg (product-privacy layer), not a uniform-prediction test; the clean same-beat Vox-deal falsification already exists (m751, TWENTY-SEVENTH member). Ledger holds at 29; THIRTIETH remains the negative guard.'
+      ledger: '29'
+      confounders:
+        strong:
+          - 'Genre skew dominates the Meta-vs-OpenAI delta: the fresh Meta arm is a product-launch privacy editorial while the carried OpenAI arms are legal-filing/incident accountability pieces; the register gap may be fully explained by peg genre, not incentive.'
+          - 'Excerpt-bounded fresh arm: theverge.com policy-blocked for browser.open per standing rule; register judgments rest on search-result excerpts (headline + 3 excerpt lines). Full text could shift tone in either direction; byline unconfirmed.'
+        moderate:
+          - 'Temporal skew: the fresh Meta arm (Sep 23) post-dates the carried OpenAI arms (Sep 4-18) by up to 19 days; the Meta Connect news cycle may inflate launch framing.'
+          - 'Single fresh arm (n=1 vs carried n=2/n=3); the deltas are illustrative arithmetic on hand-assigned tones, not a measured trend.'
+        weak:
+          - 'The m592 Meta band arms are July pieces; the wearables news cycle has moved on (French probe, Luna launch), which may bound their comparability.'
+      counter_evidence:
+        - 'The "Glasshole Moment" headline IS adversarial toward Meta (-0.50 is not soft); the inversion claim is relative to the harder OpenAI arms, not an absolute softness claim.'
+        - 'BI''s softer Luna treatment (-0.25) shows the same peg supports a milder register; the Verge''s harder choice is editorial, consistent with but not proof of any incentive story.'
+        - 'The Vox x OpenAI deal could still buy softening in other domains (ad-monetization per m507); this mechanism tests only the product-privacy layer.'
+      relation_to_751: 'Direct extension: m751 (TWENTY-SEVENTH falsification-family member) established the deal-buys-no-softening reading at the copyright-legal layer with a same-piece OpenAI/Microsoft adversarial register; this run tests the same outlet x entity pair at the product-privacy layer with the non-payer as the fresh arm. Same directional reading, weaker identification (genre-confounded), hence control-case extension rather than a new family member.'
+      relation_to_598: 'Second extension of the m598/#607 Vox-deal falsification (Sep-4/5 wiki-incident, -0.65): the carried -0.65 arm anchors the OpenAI hard pole of this run''s delta.'
+      relation_to_592: 'The m592 July Meta glasses band [-0.55, -0.60, -0.50] is carried as the within-entity temporal comparator: the Sep-23 Luna arm (-0.50) sits 0.05 softer than the band mean, the softest Meta-privacy register at this outlet since July.'
+      relation_to_786: 'Same-peg cross-publication control: m786 (#932) documented BI''s Sep-16/17 Luna relay at -0.25; this run''s Verge launch-day piece (-0.50) is 0.25 harder on the identical peg, bounding outlet-register variance for Meta wearables coverage.'
+      distinct_from_prior: 'FIRST block keyed under the the-verge.yaml meta: entity section (stub header only before this run); FIRST dedicated corpus mechanism on the Sep-23 2026 Verge Luna launch piece (URL slug 785732 zero-hit repo-wide pre-commit; "Glasshole Moment" title string zero-hit repo-wide pre-commit); FIRST Verge x Meta Luna-peg arm; first same-peg Verge-vs-BI Luna register contrast.'
+      research_method: '4 browser.search query sets this run (Meta Connect 2026 announcements wearables; Meta Singapore scam accounts takedown; Meta Luna camera-free smart glasses; theatlantic.com Meta September 2026 - rejected, no fresh Atlantic original; theguardian.com Meta September 2026 - rejected, no fresh Guardian original; MIT Technology Review OpenAI September 2026 - rejected, m742 already covers the Sep-15 Regalado piece) + 1 targeted corroboration query (Verge Luna Glasshole Moment). 0 browser.open (theverge.com policy-blocked per standing rule; excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Pre-commit novelty greps: zero test_type_a_937 files on disk (glob); no "Type A #937" in git log (--grep); max numeric mechanism_id 792 in-tree pre-commit; zero numeric "mechanism_id: 793" keys in profiles/ pre-commit; zero underscore-form 793 mechanism key strings repo-wide pre-commit (format-built needles per #715); block-key prefix verge_meta_luna_glasshole zero-hit repo-wide pre-commit (no literal full-key carrier per #877); URL slug 785732 zero-hit repo-wide pre-commit; "Glasshole Moment" zero-hit repo-wide pre-commit.'
+      novelty: 'Zero test_type_a_937 files on disk pre-commit (glob); no "Type A #937" in git log pre-commit (--grep); max numeric mechanism_id 792 in-tree pre-commit; zero numeric "mechanism_id: 793" keys in profiles/ pre-commit; zero underscore-form 793 mechanism key strings repo-wide pre-commit (format-built needles per #715); block-key prefix verge_meta_luna_glasshole zero-hit repo-wide pre-commit; URL slug 785732 zero-hit repo-wide pre-commit; "Glasshole Moment" title string zero-hit repo-wide pre-commit.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   anthropic:
     financial_tie: "none"
     estimated_value: "$0"
