@@ -65,7 +65,7 @@ MECH_KEY = "openai_india_attribution_deal_fee_estimates_e4m_sep2026"
 URL_E4M = "https://www.exchange4media.com/digital-news/openais-toi-ie-deals-spark-wider-interest-among-news-publishers-158488.html"
 URL_PRESS_GAZETTE = "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
 NEXT_SIBLING = "\n    mechanism_664_reuters_openai_slowdown_week_register_vs_meta_muse_accountability_sep13:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "3c1111f2347e54a10240b986f11c7e2742d3eaf2"
 
 
 def _read(rel):
