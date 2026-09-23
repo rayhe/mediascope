@@ -56,7 +56,7 @@ MECH_KEY = "digiday_publishing_summit_google_zero_publisher_pnl_ledger_sep2026"
 URL_TVN = "https://tvnewscheck.com/ai/article/content-sells-but-whos-buying/"
 URL_DIG = "https://digiday.com/media/media-briefing-overheard-at-the-digiday-publishing-summit-sept-26-google-zero-edition/"
 NEXT_SIBLING = "\n  snap_specs_enterprise_partnership_stack_sep2026:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "2fbf4f6f06ef82bb08eb858925d676c951904b08"
 
 
 def _read(rel):
