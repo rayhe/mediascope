@@ -45,7 +45,7 @@ THIS_FILE = "test_type_a_932_bi_openai_slowdown_rally_vs_meta_luna_glass_moment_
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROFILE = os.path.join(REPO, "profiles", "business-insider.yaml")
 BLOCK_KEY = "business_insider_openai_slowdown_rally_vs_meta_luna_glass_moment_sep22_790"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "28401b43659ae3a86a8dee5a5d1a047222573fdf"  # patched green in the anchor followup per #565
 ITER = 932
 TYPE_LETTER = "A"
 
