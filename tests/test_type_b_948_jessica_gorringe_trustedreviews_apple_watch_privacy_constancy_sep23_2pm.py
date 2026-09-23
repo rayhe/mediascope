@@ -71,7 +71,7 @@ NEXT_ID_MARKER = "mechanism" + "_801"
 NEXT_ID_NUMERIC = "mechanism_id: " + "801"
 EXPECTED_ORDER = [("B", "948"), ("A", "947"), ("E", "946"), ("D", "945"), ("C", "944")]
 # Patched to the real main-commit SHA in the anchor followup per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP_PER_565"
+ANCHORED_SHA = "1bde084a05c8f0858cf2de2f7fecde0150547496"
 
 BLOCK_KEY = (
     "jessica_gorringe_trustedreviews_apple_audio_intelligence_"
