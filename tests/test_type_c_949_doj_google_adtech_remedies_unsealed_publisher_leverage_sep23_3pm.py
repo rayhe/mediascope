@@ -68,7 +68,7 @@ MECH_KEY = "doj_google_adtech_remedies_unsealed_publisher_leverage_sep2026"
 URL_DIGWATCH = "https://dig.watch/updates/court-unsealed-decision-on-remedies-set-on-google"
 URL_DOJ = "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google"
 NEXT_SIBLING = "advance_dual_asset_monetization:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "2e32b4e11f68d22554f5234e1ee0615bd1fec3f3"
 
 
 def _read(rel):
