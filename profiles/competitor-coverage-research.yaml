@@ -30857,6 +30857,61 @@ publications:
     - https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
     test_count: 69
     test_file: tests/test_type_b_943_matt_growcoot_petapixel_apple_watch_always_listening_inversion_sep23_9am.py
+  jessica_gorringe_trustedreviews_apple_audio_intelligence_privacy_constancy_sep26:
+    mechanism_id: 800
+    type: 'B'
+    iteration: 948
+    iteration_type: 'B'
+    iteration_time: 2026-09-23 14:00 PDT
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    date: '2026-09-23'
+    discovery_date: '2026-09-23'
+    rotation_window: '945-949'
+    window_leg: 'fourth leg D #945 -> E #946 -> A #947 -> B #948 -> C #949'
+    journalist: Jessica Gorringe
+    publication: Trusted Reviews
+    competitor: Apple
+    reference_entity: Meta
+    finding: 'Jessica Gorringe (Trusted Reviews) fires the adversarial privacy register at BOTH Meta and Apple: an entity-neutral constancy case that serves as a CONTROL for the differential thesis. Her Jul 2026 opinion piece "Meta''s Kylie Jenner collab doesn''t make me feel any better about smart glasses" calls Meta glasses "a complete privacy nightmare" ("the serious privacy concerns, the cons surely vastly outweigh the pros"; the Kylie collab "hypocritical", attracting younger users who "grow to think it''s simply fine to film people without their knowledge"; "there undoubtedly needs to be more regulation of filming and sharing content online"). Her Sep 2026 opinion piece "Apple''s new Audio Intelligence is a privacy nightmare in the making" (byline attested via the article''s own author-bio block; first-hand read this run, exceeding the #503 excerpt floor) calls Siri Recap / Live Rewind "simply an invasion of privacy" and "frankly creepy and unnecessary", and EXPLICITLY self-cites the Meta piece: "something I discussed after Kylie Jenner unveiled her own range of Meta glasses". She applies the same yardstick to Apple: "Given the fact that some smart glasses wearers happily film strangers without their consent, I don''t feel comfortable giving Apple Watch users the ultimate say on whether they deem my conversation private or sensitive." MANUAL ILLUSTRATIVE only: Meta arm -0.55 (harsh opinion-register adversarial); Apple arm -0.60 (marginally harsher: "privacy nightmare in the making" headline plus explicit dismissal of Apple''s on-device/encryption/auto-delete safeguards); illustrative cross-entity constancy delta -0.05, inside the adversarial band. p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False, engine NOT run, NOT artifact-grade. Verdict: directionally_supported_not_proven. NOT a falsification-family member (ledger holds at 29). Correlation is not causation. Distinct from #943 (Growcoot temporal inversion off a carried 10:2 differential, mechanism 230): Gorringe shows no carried differential at all, both arms adversarial from the start. This BOUNDS the differential thesis rather than falsifying it: the privacy-adversarial register exists in entity-neutral form in the wild, so adversarial Meta coverage alone does not imply an entity-driven differential; the differential claim requires the WITHIN-journalist cross-entity gap, which Gorringe does not show.'
+    evidence:
+    - 'META ARM (first-hand read this run): Trusted Reviews opinion piece, URL slug metas-kylie-jenner-collab-doesnt-make-me-feel-any-better-about-smart-glasses, search index dates it ~81 days before Sep 23 2026 (Jul 2026, bounded). Byline Jessica Gorringe attested via the article''s own author-bio block (Trusted Reviews team since early 2024).'
+    - 'Meta adversarial register (verbatim first-hand quotes): "Meta glasses have a terrible reputation for being a complete privacy nightmare, especially when it comes to women''s and girls'' safety." / "once you factor in the high price, the limited style options and, most notably, the serious privacy concerns, the cons surely vastly outweigh the pros." / Kylie collab "not only hypocritical from someone who publicly states how much she favours privacy, but it will undoubtedly attract a new demographic of younger users who grow to think it''s simply fine to film people without their knowledge." / "there undoubtedly needs to be more regulation of filming and sharing content online." Conceded merits (live translate, real-time Meta AI answers) dismissed as AirPods/Android-phone equivalents.'
+    - 'APPLE ARM (first-hand read this run): Trusted Reviews opinion piece, URL slug apples-new-audio-intelligence-is-a-privacy-nightmare-in-the-making, Sep 2026. Same byline, same Opinion section.'
+    - 'Apple adversarial register (verbatim first-hand quotes): "For me, Live Rewind and especially Siri Recap are simply an invasion of privacy that''s being oddly marketed as a useful tool for the Apple Watch wearer." / "The inclusion of Live Rewind and Siri Recap frankly feels creepy and unnecessary." / Headline: "Apple''s new Audio Intelligence is a privacy nightmare in the making."'
+    - 'Explicit cross-entity self-citation (verbatim): "As if we didn''t have enough to worry about, with the rise of smart glasses being used to film people without their permission or even their knowledge at the best of times - something I discussed after Kylie Jenner unveiled her own range of Meta glasses - now we have to worry about our conversations being recorded." / "Given the fact that some smart glasses wearers happily film strangers without their consent, I don''t feel comfortable giving Apple Watch users the ultimate say on whether they deem my conversation private or sensitive."'
+    - 'Apple safeguards noted before dismissal (intellectual-honesty marker): audio not recorded or stored, end-to-end encryption, Siri Recaps auto-delete after seven days, audible chime plus full-display animation on Live Rewind. Gorringe''s verdict: "even with the privacy features Apple is promising, the onus is still put onto the Apple Watch wearer."'
+    confounders:
+    - 'STRONG: Modality asymmetry: face-worn camera (visual recording, postable online) vs wrist microphone (audio summaries, not shareable); genuinely different privacy stakes, so the near-equal register is what makes constancy notable rather than assumed.'
+    - 'STRONG: n=1 per arm, degenerate sample; directional constancy only, no distributional claim.'
+    - 'STRONG: Temporal sensitization: the Meta piece (Jul 2026) precedes a summer of escalating smart-glasses backlash; the Sep 2026 Apple piece may ride a hardened ambient-sensing news cycle.'
+    - 'MODERATE: Genre symmetry (both Trusted Reviews opinion pieces, same desk and format) strengthens comparability but licenses stronger language than news-register arms elsewhere in the corpus.'
+    - 'MODERATE: Apple piece concedes technical safeguards while Meta piece concedes minor utility; symmetric concession structures, but the concessions differ in kind.'
+    - 'WEAK: Single-outlet journalist (UK consumer-tech press); generalizability beyond Trusted Reviews untested.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The Meta arm''s severity stands undiminished ("complete privacy nightmare", "terrible reputation"); constancy does not soften the Meta finding.'
+    - 'COUNTEREVIDENCE: She faults BOTH notice designs: Meta''s LED "literally couldn''t be any smaller" and Apple''s wearer-discretion model; neither entity is exonerated, so the piece is not pro-Meta.'
+    - 'COUNTEREVIDENCE: Scale asymmetry (Apple Watches far more common than Meta glasses, the same argument Growcoot made at #943) is a legitimate editorial reason the Apple register could be harsher without any entity bias.'
+    - 'COUNTEREVIDENCE: The Apple piece''s harshness is pegged to a shipped feature announcement; a future Apple glasses launch could still draw a differential register, which would weaken this constancy bound.'
+    connects_to:
+    - 797
+    - 230
+    testable_predictions:
+    - 'If Apple ships camera glasses in 2027, Gorringe''s coverage will apply the adversarial privacy register to Apple hardware directly, matching her Meta glasses register; the constancy bound predicts register-follows-capability.'
+    - 'Gorringe''s future Meta glasses pieces will continue the adversarial register (no softening toward Meta implied by the Apple piece).'
+    - 'If a future Gorringe piece praises an Apple ambient-sensing safeguard while condemning the equivalent Meta safeguard, this constancy bound breaks and a differential opens.'
+    verdict: directionally_supported_not_proven
+    source_urls:
+    - https://www.trustedreviews.com/opinion/metas-kylie-jenner-collab-doesnt-make-me-feel-any-better-about-smart-glasses
+    - https://www.trustedreviews.com/opinion/apples-new-audio-intelligence-is-a-privacy-nightmare-in-the-making
+    test_count: 69
+    test_file: tests/test_type_b_948_jessica_gorringe_trustedreviews_apple_watch_privacy_constancy_sep23_2pm.py
+    statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update True; artifact_grade False; correlation is not causation.'
+    falsification_family: 'NOT a falsification-family member (entity-neutral constancy control case, not a near-null or inversion under a uniform-softening prediction; the differential thesis is bounded, not tested; Ledger holds at 29)'
+    no_analysis_json_update: true
+    ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+    is_significant: false
+    correlation_not_causation: true
   mechanism_217_fashion_surveillance_kmart_price_democratization:
     asymmetry_score: 0.82
     confounding_factors:

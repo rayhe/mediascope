@@ -22418,3 +22418,48 @@ matt_growcoot:
   verdict: 'directionally_supported_not_proven'
   no_analysis_json_update: true
   ledger: '29'
+jessica_gorringe:
+  name: Jessica Gorringe
+  current_role: journalist
+  current_publication: Trusted Reviews
+  beat: consumer tech, wearables, smart home (privacy vocabulary on wearables)
+  smart_glasses_coverage:
+    meta_adversarial_jul_2026:
+      headline_pattern: Meta Kylie Jenner Starfire collab opinion piece
+      date: '2026-07'
+      tone: adversarial camera-privacy vocabulary on Meta
+      carried_mechanism_id: 800
+      carried_mechanism_home: profiles/competitor-coverage-research.yaml
+    apple_adversarial_sep_2026:
+      headline_pattern: Apple Watch Audio Intelligence opinion piece
+      date: '2026-09'
+      tone: adversarial ambient-audio privacy vocabulary on Apple
+      carried_mechanism_id: 800
+      carried_mechanism_home: profiles/competitor-coverage-research.yaml
+  notes: 'Trusted Reviews journalist (consumer tech / wearables beat; team since early 2024, ex lifestyle/tech PR, Goldsmiths English graduate). Type B #948 (Sep 23 2026): mechanism 800 FIRST dedicated Type B mechanism on Gorringe in journalists.yaml (zero jessica_gorringe YAML key pre-commit, per the #643 convention). ENTITY-NEUTRAL CONSTANCY control case: Jul-2026 Meta arm "Meta''s Kylie Jenner collab doesn''t make me feel any better about smart glasses" (opinion; byline via article author-bio block; first-hand read) fires the adversarial privacy register at Meta camera glasses: "Meta glasses have a terrible reputation for being a complete privacy nightmare, especially when it comes to women''s and girls'' safety"; "the serious privacy concerns, the cons surely vastly outweigh the pros"; Kylie collab "hypocritical", attracting younger users who "grow to think it''s simply fine to film people without their knowledge"; "there undoubtedly needs to be more regulation of filming and sharing content online". Sep-2026 Apple arm "Apple''s new Audio Intelligence is a privacy nightmare in the making" (opinion; same byline, same section; first-hand read) fires the same register at Apple''s shipped always-listening wearable: Siri Recap / Live Rewind "simply an invasion of privacy", "frankly creepy and unnecessary"; EXPLICITLY self-cites the Meta piece ("something I discussed after Kylie Jenner unveiled her own range of Meta glasses") and applies the same yardstick ("Given the fact that some smart glasses wearers happily film strangers without their consent, I don''t feel comfortable giving Apple Watch users the ultimate say on whether they deem my conversation private or sensitive"). She records Apple''s mitigations (no audio stored, end-to-end encryption, auto-delete, chime/animation) before dismissing them. MANUAL ILLUSTRATIVE only: Meta arm -0.55, Apple arm -0.60, cross-entity constancy delta -0.05 inside the adversarial band; p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; NOT a falsification-family member; ledger holds at 29; no analysis.json update. Distinct from #943 (Growcoot temporal inversion off carried m230 10:2 differential): Gorringe shows no carried differential, both arms adversarial from the start. BOUNDS the differential thesis: the privacy-adversarial register exists in entity-neutral form in the wild, so adversarial Meta coverage alone does not imply an entity-driven differential.'
+  mechanism_ids: [800]
+  source_urls:
+  - https://www.trustedreviews.com/opinion/metas-kylie-jenner-collab-doesnt-make-me-feel-any-better-about-smart-glasses
+  - https://www.trustedreviews.com/opinion/apples-new-audio-intelligence-is-a-privacy-nightmare-in-the-making
+  competitor_coverage:
+    type_b_948_jessica_gorringe_trustedreviews_apple_watch_privacy_constancy_sep23_2pm:
+      iteration: 948
+      iteration_time: '2026-09-23 14:00 PDT'
+      mechanism_id: 800
+      mechanism_home: profiles/competitor-coverage-research.yaml
+      finding: 'Entity-neutral constancy: Gorringe fires the adversarial privacy register at BOTH Meta (camera glasses, Jul 2026) and Apple (Watch Audio Intelligence, Sep 2026), explicitly self-citing the Meta piece inside the Apple piece; illustrative delta -0.05 inside the adversarial band. CONTROL case bounding the differential thesis.'
+      evidence:
+      - 'Jul 2026 Trusted Reviews opinion piece on the Meta Kylie Jenner Starfire collab (byline via author-bio block; first-hand read).'
+      - '"Meta glasses have a terrible reputation for being a complete privacy nightmare, especially when it comes to women''s and girls'' safety." / "the cons surely vastly outweigh the pros." / "more regulation of filming and sharing content online."'
+      - 'Sep 2026 Trusted Reviews opinion piece on Apple Watch Audio Intelligence (same byline/section; first-hand read).'
+      - '"simply an invasion of privacy." / "frankly creepy and unnecessary." / "something I discussed after Kylie Jenner unveiled her own range of Meta glasses."'
+      - '"I don''t feel comfortable giving Apple Watch users the ultimate say on whether they deem my conversation private or sensitive."'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update True; artifact_grade False; correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member (entity-neutral constancy control case; the differential thesis is bounded, not tested; Ledger holds at 29)'
+      no_analysis_json_update: true
+      ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+      is_significant: false
+      correlation_not_causation: true
+  verdict: 'directionally_supported_not_proven'
+  no_analysis_json_update: true
+  ledger: '29'
