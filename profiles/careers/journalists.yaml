@@ -20389,8 +20389,11 @@ dominic_preston:
       tone: stigma_forward_headline_privacy_concession_peg
       privacy_vocabulary_present: true
       mechanism_id: 734
-  notes: 'The Verge news editor (Feb 2025-present; ex-Android Police managing reviews editor). Type B #838 (Sep 18 2026): mechanism 734 within-journalist temporal register shift on Meta - FIRST dedicated Type B mechanism on Preston in journalists.yaml (mechanism 503 lives in competitor-coverage-research.yaml; zero dominic_preston YAML key pre-commit, per the #643 convention). Carried Sep-3 arm (Type B #503): Preston applies privacy-PROBLEMS vocabulary to Google/Samsung camera hardware (Jul 22 2026 hands-on dek: "With a camera on every pair, Google''s and Samsung''s AI glasses face the same privacy problems as Meta''s") while his Meta arm runs as straight news-desk relay with ZERO privacy vocabulary (Jul 9 2026 Muse Spark 1.1: "Meta says its new AI model is ready to compete on coding"; mild deficit frame "reentering the AI race"; one controversy note) - an inversion of the naive financial-incentive prediction. NEW Sep-16 arm: "Meta is reportedly ready to launch less pervy smart glasses" (The Verge, Sep 16 2026; byline Dominic Preston, News Editor; canonical URL provenance-recorded; publication 2026-09-16T04:54:46-04:00; WeSearch mirror read this run, 137 rendered lines, first ~120 words of publisher body fair-use-limited; dek "New camera-free frames might avoid the ''pervert glasses'' nickname, The Information reports") - the first Preston-byline Meta piece to carry privacy-STIGMA vocabulary in the headline/dek; MANUAL ILLUSTRATIVE 0.00 (Sep 3 Meta arm) to -0.30 (Sep 16 arm), delta -0.30. REFINES mechanism 503: the inversion was a Sep-3 phenomenon, not a stable journalist property; by Sep 16 the same journalist attaches the "pervert glasses" stigma vocabulary to Meta''s own privacy-concession product. CRITICAL SCOPE BOUND: the stigma vocabulary arrives via the news peg itself (a camera-free hardware report is a privacy-concession story) and via the quoted public nickname, relayed from The Information ("The Information reports" in the dek) - Preston does not independently generate privacy scrutiny of Meta in either arm; the mechanism-503 claim (no independent Preston privacy-scrutiny of Meta) SURVIVES. The shift is headline-framing, not investigative-posture. directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; NOT a falsification-family member; ledger holds at 26; no analysis.json update.'
-  mechanism_ids: [734]
+  notes: 'The Verge news editor (Feb 2025-present; ex-Android Police managing reviews editor). Type B #838 (Sep 18 2026): mechanism 734 within-journalist temporal register shift on Meta - FIRST dedicated Type B mechanism on Preston in journalists.yaml (mechanism 503 lives in competitor-coverage-research.yaml; zero dominic_preston YAML key pre-commit, per the #643 convention). Carried Sep-3 arm (Type B #503): Preston applies privacy-PROBLEMS vocabulary to Google/Samsung camera hardware (Jul 22 2026 hands-on dek: "With a camera on every pair, Google''s and Samsung''s AI glasses face the same privacy problems as Meta''s") while his Meta arm runs as straight news-desk relay with ZERO privacy vocabulary (Jul 9 2026 Muse Spark 1.1: "Meta says its new AI model is ready to compete on coding"; mild deficit frame "reentering the AI race"; one controversy note) - an inversion of the naive financial-incentive prediction. NEW Sep-16 arm: "Meta is reportedly ready to launch less pervy smart glasses" (The Verge, Sep 16 2026; byline Dominic Preston, News Editor; canonical URL provenance-recorded; publication 2026-09-16T04:54:46-04:00; WeSearch mirror read this run, 137 rendered lines, first ~120 words of publisher body fair-use-limited; dek "New camera-free frames might avoid the ''pervert glasses'' nickname, The Information reports") - the first Preston-byline Meta piece to carry privacy-STIGMA vocabulary in the headline/dek; MANUAL ILLUSTRATIVE 0.00 (Sep 3 Meta arm) to -0.30 (Sep 16 arm), delta -0.30. REFINES mechanism 503: the inversion was a Sep-3 phenomenon, not a stable journalist property; by Sep 16 the same journalist attaches the "pervert glasses" stigma vocabulary to Meta''s own privacy-concession product. CRITICAL SCOPE BOUND: the stigma vocabulary arrives via the news peg itself (a camera-free hardware report is a privacy-concession story) and via the quoted public nickname, relayed from The Information ("The Information reports" in the dek) - Preston does not independently generate privacy scrutiny of Meta in either arm; the mechanism-503 claim (no independent Preston privacy-scrutiny of Meta) SURVIVES. The shift is headline-framing, not investigative-posture. directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; NOT a falsification-family member; ledger holds at 26 for the #838 record; no analysis.json update. Type B #938 (Sep 23 2026): mechanism 794 adds the FIRST same-day same-writer Preston pair - Google Pixel Watch Gemini Personalization arm (+0.05, neutral feature-update register, mirror/dek-bounded) vs carried Meta Luna stigma arm (-0.30); illustrative Meta-minus-Google delta -0.35; MANUAL ILLUSTRATIVE only; engine NOT run; NOT artifact-grade; NOT falsification-family; ledger holds at 29; no analysis.json update.'
+  mechanism_ids: [734, 794]
+  source_urls:
+  - https://hesam.pages.dev/wearables
+  - https://pengen.diewe.workers.dev/onsen/caveman-https-www.theverge.com/google
   competitor_coverage:
     type_b_838_dominic_preston_verge_meta_sep3_inversion_vs_sep16_luna_stigma_sep18:
       iteration: 838
@@ -20474,6 +20477,84 @@ dominic_preston:
       - 'COUNTEREVIDENCE: the Sep 16 arm is mirror-excerpt-bounded this run (WeSearch, first ~120 words of publisher body; theverge.com direct fetch is policy-blocked per the standing rule) - a thinner evidence tier than first-hand reads; the register claim rests on headline/dek and mirror summary'
       - 'COUNTEREVIDENCE: n=1 new arm; a single headline does not establish a stable register property for Preston on Meta - the finding is temporal documentation, not a journalist-level generalization'
       no_analysis_json_update: true
+    type_b_938_dominic_preston_verge_pixel_watch_gemini_personalization_vs_meta_luna_stigma_sep16:
+      block_key: type_b_938_dominic_preston_verge_pixel_watch_gemini_personalization_vs_meta_luna_stigma_sep16
+      iteration: 938
+      mechanism_id: 794
+      type: B
+      date: '2026-09-23 04:00 PDT'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      author: 'Kit (with Ray)'
+      test_file: tests/test_type_b_938_dominic_preston_verge_pixel_watch_gemini_personalization_vs_meta_luna_stigma_sep16.py
+      design: 'FIRST same-day same-writer Meta-vs-Google pair on Dominic Preston in the corpus: the Google Pixel Watch September-update arm is new this run and mirror/dek-bounded per #503, while the Meta Luna camera-free arm is carried from mechanism 734 / Type B #838 and un-rescored per #807.'
+      journalist:
+        name: Dominic Preston
+        current_publication: The Verge
+        current_role: News Editor
+        publication_owner: Vox Media
+      google_arm_sep16_new:
+        headline: 'Older Pixel Watches are getting Google''s September update now.'
+        dek: 'The Pixel Watch 2 and later are getting Gemini Personalization, allowing the AI assistant to learn from past conversations and connected Google apps.'
+        date: '2026-09-16'
+        author_byline: 'Dominic Preston'
+        publication: the-verge
+        mirror_urls:
+        - https://hesam.pages.dev/wearables
+        - https://pengen.diewe.workers.dev/onsen/caveman-https-www.theverge.com/google
+        canonical_url: null
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        privacy_vocabulary_present: false
+        register_notes: 'Neutral feature-update register: Gemini Personalization is framed as an enablement bullet, and the dek''s privacy-relevant capability ("allowing the AI assistant to learn from past conversations and connected Google apps") receives zero privacy interrogation. Mirror/dek-bounded per #503.'
+        evidence_tier: 'Mirror/dek-bounded per #503: two independent Verge-section mirrors showed "Dominic Preston Sep 16" with the headline and dek verbatim; theverge.com direct fetch is policy-blocked; canonical article URL NOT constructed; no canonical URLs constructed.'
+      meta_arm_sep16_carried:
+        url: 'https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect'
+        headline: 'Meta is reportedly ready to launch less pervy smart glasses'
+        dek: 'New camera-free frames might avoid the ''pervert glasses'' nickname, The Information reports.'
+        date: '2026-09-16'
+        author_byline: 'Dominic Preston'
+        publication: the-verge
+        tone_MANUAL_ILLUSTRATIVE: -0.3
+        privacy_vocabulary_present: true
+        key_quotes:
+        - 'less pervy smart glasses'
+        - 'pervert glasses'
+        - 'New camera-free frames might avoid the ''pervert glasses'' nickname, The Information reports.'
+        evidence_tier: 'Carried from Type B #838 (mechanism 734); un-rescored this run per #807; theverge.com direct fetch is policy-blocked; mirror/excerpt-bounded from the #838 record.'
+      asymmetry_scorer:
+        delta_meta_minus_google: -0.35
+        delta_calc: '(-0.30) - (0.05) = -0.35'
+        scorer: none
+      statistical_discipline:
+        tone: MANUAL_ILLUSTRATIVE
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 29
+      confounders:
+      - severity: STRONG
+        note: 'SCOPE BOUND: genre and format mismatch - the Google arm is a routine Pixel Watch software-update news item, while the Meta arm is a camera-free smart-glasses report where privacy vocabulary arrives with the news peg itself; the register partly tracks story type, not only the writer.'
+      - severity: STRONG
+        note: 'Meta-arm attribution bound: the carried mechanism-734 arm''s stigma vocabulary is headline and dek framing relayed from the news peg and attributed reporting, not independent Preston privacy scrutiny of Meta.'
+      - severity: MODERATE
+        note: 'Evidence-tier asymmetry: the Google arm is mirror/dek-bounded with no canonical article URL, while the Meta arm is carried mirror/excerpt-bounded from #838; neither arm is first-hand from theverge.com this run.'
+      - severity: MODERATE
+        note: 'Single-day n=1 pair: one same-day pair does not establish a stable journalist-level register property.'
+      - severity: WEAK
+        note: 'Dek scope: the Google dek does not discuss privacy, so the absence of privacy vocabulary is bounded by the short dek excerpt.'
+      counter_evidence:
+      - 'Mechanism 503''s inversion bound still matters: Preston previously applied privacy-PROBLEMS vocabulary to Google/Samsung camera hardware while giving Meta straight relay; the Sep-16 pair changes only the headline framing, not the underlying investigative posture.'
+      - 'The Luna stigma wording is attributed and citational ("The Information reports"; quoted public nickname), which weakens a claim of independent Preston editorial hostility toward Meta.'
+      - 'The Pixel Watch update is a low-stakes software feature story, so a neutral register may reflect story stakes rather than entity favoritism.'
+      connects_to: [734, 503, 731, 791]
+      research_method: 'Pre-compaction: two Verge-section mirrors were read this run (hesam.pages.dev/wearables and pengen.diewe.workers.dev/onsen/caveman-https-www.theverge.com/google); both showed "Dominic Preston Sep 16" with the headline and dek verbatim; theverge.com direct fetch is policy-blocked; canonical Google article URL NOT constructed. Meta arm carried from mechanism 734 / Type B #838 and un-rescored per #807. Novelty pre-commit: zero test_type_b_938 files; no "Type B #938" in git log; max numeric mechanism_id 793; block key zero-hit repo-wide. All URLs copied verbatim from Full-URL listings; no URL construction; ASCII-only, no em dashes.'
 
 max_miller:
   name: Max Miller
