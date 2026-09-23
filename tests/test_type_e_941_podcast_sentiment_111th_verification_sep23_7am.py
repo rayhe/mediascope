@@ -9,7 +9,7 @@ new-normal-weeks-1-and-2 page variant did NOT surface this run (remains in
 corpus); podscan.fm did NOT surface this run (remains in corpus); ZERO NEW
 VERBATIM GF URL KEYS this run (7/7 non-circular URL keys >=1 corpus hit
 pre-commit; second consecutive pure-re-surface cycle after #936); no episode
-502 (eleven-day absence since Sep 21, weekly cadence, not a signal); EHE
+502 (two-day absence since Sep 21, weekly cadence, not a signal); EHE
 44-day hold, 6 logged keys re-surfaced, techtimes amnesty-boxes RE-SURFACED
 this run (crawled 5h, unlike #936), softonic/singulism did NOT surface
 (remain in corpus), ZERO new URL keys; Attention Sphere 111th
