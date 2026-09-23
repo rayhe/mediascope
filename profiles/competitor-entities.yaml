@@ -8561,6 +8561,77 @@ entities:
         - https://www.archynewsy.com/apple-to-pay-news-publishers-for-siri-ai-integration/
         - https://mediacopilot.ai/apple-siri-ai-publisher-payments/
         - https://lumidanews.com/apple-is-paying-publishers-for-real-time-news-to-power-ai-siri-multiyear-content-deals-signal-a-different-strategy-than-the-scrape-first-ai-playbook/
+
+    apple_siri_ai_250m_delayed_launch_class_action_settlement_website_live_sep2026:
+      mechanism_id: 795
+      iteration: 939
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-23'
+      time_pdt: '05:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      mechanism_name: 'Apple Siri AI Delayed-Launch $250M Class-Action Settlement (May 2026 agreement; settlement website live Sep 20 2026, claims window Sep 21-Dec 21 2026): estimated $25 per eligible device, up to $95 - FIRST dedicated corpus mechanism on the OBSERVABLE Siri-AI failure-cost leg; the twin nine-figure leg to mechanisms 156/606''s publisher-content negotiation'
+      block_key: type_c_939_apple_siri_ai_250m_class_action_settlement_website_live_sep23_5am
+      key_design_note: 'Descriptive block key carries no underscore-form 795 mechanism key substring, per the #723/#738/#739/#747 designed-keying convention: keeps the zero-795 profile sweeps green while mechanism_id advances in colon form.'
+      type_c_focus: 'FIRST dedicated corpus mechanism on the Apple Siri AI $250M class-action settlement as a financial-incentive datum on the Apple x publisher vector. The corpus has tracked Apple''s Siri AI publisher-content negotiation since mechanism 156 (Aug 12 2026 WSJ origin: multiyear deals, variable pay-per-use, nine-figure budget discussed) with a silence status check at mechanism 606 (#619): zero signed closures as of Sep 8 2026, zero closures still as of Sep 17 2026. This run adds the OTHER nine-figure Siri AI leg: Apple''s May 2026 agreement to pay $250 million to settle the U.S. false-advertising class action over the delayed personalized Siri launch, with the settlement website going live Sep 20 2026 (MacRumors, first-hand read, 113 lines). The settlement prices Apple''s cost-of-failure on Siri AI; the negotiated publisher budget prices Apple''s cost-of-content for the same rebuild. Together they document Apple as the committed nine-figure PAYER on the publisher-licensing vector - the publisher-side budget is not speculative largesse, it sits inside a Siri AI rebuild Apple has already spent $250 million to de-risk. No coverage-tone claim. Correlation is not causation.'
+      settlement_facts:
+        sep20_website_live: 'MacRumors Sep 20 2026 7:24pm PDT (Joe Rossignol, first-hand read this run, 113 lines): in May 2026 Apple agreed to pay $250 million to settle a U.S. class action lawsuit over Siri AI''s delayed launch; the settlement website (www.smartphoneaisettlement.com) is now live'
+        claim_terms: 'Estimated $25 per eligible iPhone; exact amount varies with total valid claims; maximum $95 per device. Claims accepted Sep 21-Dec 21 2026. Final approval hearing scheduled Feb 24 2027; payments not expected until 2027'
+        eligibility: 'U.S. residents who purchased iPhone 15 Pro, iPhone 15 Pro Max, iPhone 16, iPhone 16e, iPhone 16 Plus, iPhone 16 Pro, or iPhone 16 Pro Max in the U.S. (non-resale) between June 10 2024 and March 29 2025. Claimants notified by email with claim ID and PIN; claim form accepts Apple Account email plus phone number when the serial number is unavailable'
+        suit_background: 'June 2024: Apple previewed personalized Siri capabilities (personal context, on-screen awareness, per-app controls; TV commercial starring Bella Ramsey). March 2025: personalized Siri delayed, class action alleging false advertising filed. Apple denies all allegations; settled to avoid the costs and risks of a trial; stated it agreed "to stay focused" on delivering products'
+        launch_context: 'Apple announced Siri AI at WWDC 2026 in June; available on iPhone 15 Pro and newer running iOS 27 (released Sep 2026); Siri AI still considered a beta feature even though iOS 27 is out of beta'
+      incentive_reading:
+        twin_nine_figure_legs: 'Apple''s Siri AI ledger now carries TWO documented nine-figure cost legs in 2026: (1) $250M class-action settlement for the delayed launch (this mechanism, observable, claims window open); (2) the nine-figure variable-pay publisher budget under negotiation since Aug 12 2026 (mechanism 156, predictive, mechanism 606 silence check). One leg pays consumers for the delay; the other would pay publishers for current-news content. Both legs price the same strategic rebuild.'
+        payer_side_documentation: 'The settlement documents Apple as the committed payer-side counterparty on the publisher-licensing vector. Mechanism 156''s nine-figure publisher budget is predictive; the $250M settlement is observed. Apple''s revealed willingness to absorb a nine-figure failure cost on Siri AI raises the prior on it following through with nine-figure content spend - or at minimum documents that the publisher negotiation sits inside a Siri AI investment envelope Apple already prices in the hundreds of millions.'
+        observable_vs_sealed_contrast: 'Mechanism 792 (#934) documents Apple''s OTHER September 2026 resolution, the X Corp/SpaceXAI antitrust co-defendant settlement, as an UNOBSERVABLE financial variable (terms sealed, judge denied OpenAI access). The Siri AI settlement is the OBSERVABLE counterpart: $250M disclosed via the claims process. Apple''s preference for sealed terms makes the Siri figure an unusual public window into Apple''s AI cost structure - and the pair documents that Apple is resolving Siri-era liabilities on both the antitrust and consumer-fraud fronts in the same month.'
+        no_transfer_claimed_between_publishers: 'No payment to any publisher is documented here and none is claimed - the publisher leg remains predictive (mechanism 156/606). This mechanism prices Apple''s Siri AI investment envelope, not a publisher transfer.'
+      connects_to: [156, 606, 792]
+      source_urls:
+        - https://www.macrumors.com/2026/09/20/siri-ai-settlement-website-now-live/
+        - https://www.macrumors.com/2026/09/22/apple-iphone-siri-ai-settlement-submit-claim/
+        - https://www.macrumors.com/2026/05/05/apple-class-action-siri-lawsuit-settlement/
+      statistical_discipline:
+        scope: qualitative financial-incentive mapping only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: 'directionally_supported_not_proven'
+      confounders_ranked:
+        - strength: strong
+          description: 'Settlement figures are administrator-facing: the $250M is the settlement fund size, not necessarily what Apple ultimately pays after unclaimed funds revert; per-device $25-$95 depends on claim volume. Reading it as a precise AI-investment figure overstates precision.'
+        - strength: strong
+          description: 'The twin-leg inference is correlational: Apple settling a consumer-fraud suit and negotiating publisher deals are separate decisions; nothing documents that the settlement outcome influenced the publisher negotiation or vice versa. Correlation is not causation.'
+        - strength: moderate
+          description: 'Evidence is a specialist-secondary first-hand read (MacRumors, 113 lines) plus two search-excerpt-bounded MacRumors pieces; no primary court filing read this run. The May 5 MacRumors original carries the preliminary-approval terms.'
+        - strength: moderate
+          description: 'Apple denies the allegations and settled "to stay focused" on products - the settlement is not an admission of false advertising, and treating it as confirmation of the Siri AI delay narrative is over-reading.'
+        - strength: weak
+          description: 'MacRumors is Apple-ecosystem specialist press with an enthusiast readership; its settlement coverage is factual service journalism (eligibility, claim process), not adversarial coverage - minimal tone risk either way.'
+      strongest_counterargument: 'The $250M is consumer-litigation noise, not AI strategy signal: companies settle meritless suits for nuisance value routinely, Apple denies wrongdoing, and the publisher-content negotiation (mechanism 156) predates the settlement announcement anyway (Aug 12 WSJ report vs May settlement). The settlement prices legal risk, not AI content spend, and pairing them creates a narrative the two decisions do not share.'
+      counter_evidence:
+        - 'Apple denies all of the allegations (MacRumors Sep 20 first-hand read)'
+        - 'The settlement was agreed "to stay focused" on delivering products - stated rationale is trial-cost avoidance, not admission'
+        - 'Mechanism 606 watch: zero signed publisher closures as of Sep 17 2026 - the publisher leg is still predictive'
+      research_method: '2 browser.search query sets this run (Apple Siri AI publisher licensing deal content negotiation September 2026 - surfaced the corpus'' own #619 GitHub commit, LinkedIn analysis, MacRumors Aug 12 WSJ original, Insider Monkey, Stocktwits, iPhoneIslam, Nieman Lab; quoted Siri AI Settlement website now live - surfaced the MacRumors Sep 20 website-live piece, Sep 22 submit-claim piece, May 5 original settlement report, all with verbatim Full URLs) + 1 browser.open first-hand read (MacRumors Sep 20 2026, 113 lines, Joe Rossignol). Rejected candidates: Princeton UP x Cashmere (mechanism 663 family, in-corpus); ANI v. OpenAI Sep 15 appeal event (mechanism 717, stronger LiveLaw/Mint sourcing in-corpus); News Corp additional AI negotiations (zero new deals, mechanism 630 watch unchanged); AWS AI Content Marketplace (in-corpus marketplace intermediary leg); Apple Siri publisher closures (zero, mechanism 606 watch unchanged). Pre-commit novelty greps: zero test_type_c_939 files on disk (glob); no "Type C #939" in git log (--grep); max numeric mechanism_id 794 in-tree pre-commit; zero underscore-form 795 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); zero numeric 795-form mechanism keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; all three macrumors settlement urls zero-hit repo-wide pre-commit. No canonical URLs constructed. No zero-coverage claims per the iteration-492 rule; bounded absence only. ASCII-only, no em dashes.'
+      correlational_note: 'This mapping documents the Apple Siri AI $250M class-action settlement (website live Sep 20 2026, claims Sep 21-Dec 21 2026) as a financial-incentive datum on the Apple x publisher vector: the observable cost-of-failure leg paired with mechanisms 156/606''s predictive cost-of-content leg, and the observable counterpart to mechanism 792''s sealed X Corp/SpaceXAI resolution. Financial relationships and settlement postures are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim.'
+      no_coverage_tone_claim: true
+      cautious_language_required: true
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - pricing-type leg with no coverage-tone pair; ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence); THIRTIETH remains the negative guard.'
+      artifact_grade: false
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
     q3_fy26_earnings:
       report_date: '2026-07-30'
       quarter_ended: '2026-06-27'
