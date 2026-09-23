@@ -305,6 +305,132 @@ competitor_relationships:
         - "https://medium.com/@enrico.papalini/ai-leaders-are-calling-for-a-slowdown-oversight-must-go-global-9e2937455fbb"
         - "https://omitted.news/story/anthropic-researcher-warns-ai-could-kill-humans-cdeda0"
         - "https://tech-insider.org/meta-camera-free-glasses-luna-privacy-backlash-2026/"
+    business_insider_openai_recovery_week_astra_agi_mitigation_credit_vs_meta_liability_sep23_947:
+      mechanism_id: 799
+      date_analyzed: "2026-09-23"
+      type: Type A - Competitor Coverage Deep Dive
+      publication: business-insider
+      competitor: openai
+      comparator_entity: meta
+      pair: "Business Insider x OpenAI (vs Meta)"
+      rotation_type: A
+      iteration: 947
+      iteration_type: "A"
+      window: "945-949"
+      window_leg: "THIRD leg of the 945-949 window (D #945 -> E #946 -> A #947 this run -> B #948 -> C #949)"
+      status: documented
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      author: "Kit (with Ray)"
+      finding: "FIRST dedicated corpus mechanism on Business Insider's Sep 15-18 2026 OpenAI 'recovery week': three fresh BI OpenAI arms (all zero-hit in the BI profile pre-commit) run an aspirational/mitigation register. (1) Sep 15: 'Nvidia's Jensen Huang Says 'AGI Has Arrived' and Congratulates OpenAI' (attested via symby.com coverage pack) - third-party-validator celebration of the Sep 3 GPT-6 Astra launch, MANUAL ILLUSTRATIVE +0.40. (2) Sep 16-17: 'OpenAI launches a new framework to track and investigate rogue AI agents' (attested via two wesearch.press records) - mitigation-credit framing of OpenAI as the safety-responsible actor two weeks after the Sep 4 Hugging Face agent-hack incident, +0.30. (3) Sep 18: 'OpenAI is offering robotics engineers up to $500,000. Here's what its new job listings reveal' (attested via wesearch.press) - talent-war/growth register, +0.25. OpenAI arm avg +0.3167 vs the carried #857 same-window Meta arms (+0.10 Bosworth AMA executive-defense relay, -0.30 Luna 'Google Glass moment' liability framing, -0.15 creator-bans accountability news, avg -0.1167, un-rescored per #807): illustrative delta (OpenAI minus Meta) +0.4333. TEMPORAL INVERSION on mechanism 399 (BI Aug 30 profitability skepticism on the PAYER, -0.42): inversion delta +0.7367 in 16 days - same publication, same entity, same parent-level licensing deal. EXTENDS mechanism 790 (Type A #932, Sep 12 slowdown-rally arm +0.15 vs Luna -0.25, n=1/n=1): the inversion is a week-long register, not a single-story artifact - four OpenAI arms across Sep 12-18 (m790's +0.15 carried) average +0.275. The Axel Springer-OpenAI licensing deal (tens of millions euros, 3-year, Bloomberg Law, carried) predicts softer coverage; the prediction is MET this week and VIOLATED at m399 (-0.42), so the tie buys no STABLE softness - the register follows the news peg (launch/milestone vs fundraising-skepticism), not the deal. NOT a falsification-family member (temporal-inversion extension of m790, which is itself not a falsification member; the softer-prediction is met in this window, so no uniform-prediction test fails). Ledger holds at 29. Statistical discipline per the Aug 28 2026 standing rule: MANUAL ILLUSTRATIVE only, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade. Correlation is not causation. Hypothesis-generating only."
+      openai_arms:
+      - piece: "Huang 'AGI Has Arrived' congratulates OpenAI (Sep 15 2026, BI)"
+        date: "2026-09-15"
+        source_routing: markets_commentary_relay
+        register: aspirational_celebration
+        key_language:
+        - "Nvidia's Jensen Huang Says 'AGI Has Arrived' and Congratulates OpenAI"
+        - "made the comment on Sunday, days after OpenAI released Astra, its newest and most powerful AI model"
+        tone_MANUAL_ILLUSTRATIVE: 0.40
+        tone_basis: "MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt language (0 browser.open per #503); third-party validator celebration of the Sep 3 GPT-6 Astra launch; illustrative only"
+        provenance: "BI original paywalled; no businessinsider.com URL returned verbatim in this run's search results. Attested by https://symby.com/news?_cid=93349426 (coverage pack of 5 articles, 'September 15, 2026, 9:38 pm')."
+      - piece: "OpenAI launches framework to track and investigate rogue AI agents (Sep 16-17 2026, BI)"
+        date: "2026-09-16"
+        source_routing: safety_beat_news
+        register: mitigation_credit
+        key_language:
+        - "OpenAI launches a new framework to track and investigate rogue AI agents"
+        tone_MANUAL_ILLUSTRATIVE: 0.30
+        tone_basis: "MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline (0 browser.open per #503); mitigation-credit framing - OpenAI as the safety-responsible actor two weeks after the Sep 4 Hugging Face agent-hack incident; illustrative only"
+        provenance: "BI original paywalled; attested by https://wesearch.press/s/openai-launches-a-new-framework-to-track-and-investigate-rog-52be87c7 (publication time Wed, 16 Sep 2026 23:43:50 GMT) and https://wesearch.press/s/openai-launches-a-new-framework-to-track-and-investigate-rog-c76d93e1 (Thu, 17 Sep 2026 02:13:00 GMT); both list Business Insider as publisher."
+      - piece: "OpenAI offering robotics engineers up to $500,000 (Sep 18 2026, BI)"
+        date: "2026-09-18"
+        source_routing: talent_beat_news
+        register: growth_talent_war
+        key_language:
+        - "OpenAI is offering robotics engineers up to $500,000. Here's what its new job listings reveal."
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        tone_basis: "MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline (0 browser.open per #503); talent-war/growth register - deep-pockets ambition framing; illustrative only"
+        provenance: "BI original paywalled; attested by https://wesearch.press/s/openai-is-offering-robotics-engineers-up-to-500000-heres-wha-1a0f1ed7 (publication time Fri, 18 Sep 2026 09:00:14 GMT); lists Business Insider as publisher."
+      meta_arms_carried:
+      - piece: "Bosworth AMA executive-defense relay (Katie Notopoulos, BI)"
+        date: "2026-09-16"
+        source: "mechanism 745 (Type A #857)"
+        tone_carried: 0.10
+        framing: "executive_defense"
+      - piece: "Project Luna 'Google Glass moment' liability framing (BI)"
+        date: "2026-09-17"
+        source: "mechanism 745 (Type A #857)"
+        tone_carried: -0.30
+        framing: "adversarial_editorial"
+      - piece: "Creator-bans accountability news (BI, late Jul 2026)"
+        date: "2026-07-26"
+        source: "mechanism 745 (Type A #857)"
+        tone_carried: -0.15
+        framing: "accountability_remediation"
+      asymmetry_scorer:
+        openai_arm_tones: [0.40, 0.30, 0.25]
+        openai_arm_avg: 0.3167
+        meta_arm_tones: [0.10, -0.30, -0.15]
+        meta_arm_avg: -0.1167
+        illustrative_delta_openai_minus_meta: 0.4333
+        delta_calc: "(0.40+0.30+0.25)/3 - (0.10-0.30-0.15)/3 = 0.316667 - (-0.116667) = +0.4333"
+        temporal_inversion_vs_m399: 0.7367
+        inversion_calc: "0.316667 - (-0.42) = +0.7367 (16 days, same publication x entity x deal)"
+        extended_window_avg_with_m790: 0.275
+        extended_calc: "(0.15+0.40+0.30+0.25)/4 = 0.275 (m790 Sep-12 slowdown-rally arm carried)"
+        delta_interpretation: "same-publication, same-window register gradient: BI routes OpenAI's Sep 15-18 launch/milestone week through aspirational/mitigation vocabulary (+0.3167) while its own Meta wearables coverage in the same window runs through liability vocabulary (-0.1167); the +0.4333 illustrative spread inverts m399's -0.42 payer-skepticism gradient from 16 days earlier"
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        statistical_contract: degenerate_small_n_per_arm
+        tone_basis: "MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open this turn per #503; BI paywalled, attested-secondaries only); Meta arms carried un-rescored per #807; tones are illustrative only"
+        verdict: "Within-publication register gradient documented, not proven: Business Insider applies an aspirational/mitigation register to OpenAI's Sep 15-18 recovery week (+0.3167) while its Meta wearables coverage in the same window runs through liability registers (-0.1167). The gradient TEMPORALLY INVERTS mechanism 399's payer-skepticism finding (-0.42, Aug 30) and EXTENDS mechanism 790's n=1/n=1 inversion to a four-arm week (+0.275). The Axel Springer-OpenAI deal predicts softer coverage; the prediction is met this week and violated at m399, so the tie buys no stable softness - the register follows the news peg, not the deal. NOT a falsification-family member. Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade."
+      financial_context:
+        axel_springer_openai_deal: "Axel Springer x OpenAI global licensing partnership, Dec 2023; tens of millions of euros over 3 years (Bloomberg Law, source familiar, terms undisclosed); carried from the competitor_relationships.openai financial metadata"
+        prediction: "softer (carried from profile) - observed register matches this week (+0.3167), VIOLATED at m399 (-0.42, Aug 30); the tie does not stabilize the register"
+        mechanism: "peg-dominant register at a payer-owned publication: the aspirational register tracks launch/milestone pegs and the skeptical register tracks fundraising-skepticism pegs; the licensing deal is present in both windows and explains neither"
+      confounders_ranked:
+        strong:
+        - "All three OpenAI arms rest on attested-secondaries (BI paywalled, 0 browser.open per #503); register reads bounded to retrieved excerpt text; full-text reads could reveal interrogating detail the excerpts hide."
+        - "n=3/n=3 degenerate sample; single-story variance cannot be ruled out; one more OpenAI accountability arm or one more Meta milestone arm would shift the illustrative avgs."
+        - "Beat mismatch: the Huang/AGI piece is markets-commentary, the rogue-agent piece is safety-beat, the robotics piece is talent-beat; the Meta arms are tech-beat liability coverage; editorial priors differ by desk, not necessarily by entity."
+        moderate:
+        - "The Sep 15 Burry adversarial arm (counterevidence) shares the window - the OpenAI register is heterogeneous; the +0.3167 avg excludes the Burry arm by genre construction (market-voice); including it at -0.15 illustrative gives +0.20 avg and a +0.3167 delta - still positive but narrower."
+        - "m790's Sep 12 slowdown-rally arm (+0.15) is carried as window context, not re-novelty-claimed; the four-arm +0.275 avg mixes carried and fresh arms."
+        weak:
+        - "The rogue-agent framework arm's +0.30 assumes the mitigation-credit reading; a safety-failure-reminder reading (the framework exists because agents went rogue) would score lower; the headline foregrounds OpenAI's fix, not the failure."
+      counterevidence:
+      - "COUNTEREVIDENCE: BI ALSO carried Michael Burry's Sep 15 criticism of the OpenAI/Anthropic slowdown calls as 'selfish' attempts to protect incumbents and an 'IPO marketing tactic' (gateiolink relay of BI, Sep 14-15, https://gateiolink.net/news/detail/michael-burry-criticizes-openai-anthropic-ceos-calls-to-slow-ai-development-24266354) - adversarial-via-market-voice register (~-0.15 illustrative) INSIDE the same recovery window. Register heterogeneity within the window: BI routes the SAME slowdown peg through statesman vocabulary (Sep 12 Dickerson rally) and market-skeptic vocabulary (Sep 15 Burry). The register follows the peg/genre and the quoted voice, not the entity."
+      - "COUNTEREVIDENCE: m399's -0.42 on the PAYER (Aug 30) bounds any deal-softening read of this run's +0.3167 - the Axel Springer licensing tie cannot explain both the hardest and the softest BI OpenAI registers within 16 days."
+      strongest_counterargument: "The aspirational register may be pure news-value: the Astra launch was a genuine milestone (generational model release), the rogue-agent framework was a genuine safety deliverable after a real incident, and $500K robotics offers are genuine talent-market facts. A milestone peg draws celebratory vocabulary at any outlet; the inversion from m399's fundraising-skepticism peg to this week's launch peg may be entirely event-driven. Accepted as confounder, not rebutted; the claim stays bounded, correlation-only, and MANUAL ILLUSTRATIVE."
+      cross_references:
+      - "#399 BI OpenAI profitability-skepticism vs Meta product-framing (temporal inversion baseline, -0.42 Aug 30)"
+      - "#420 BI Anthropic valuation-hype vs Meta product-delay control case (financial determinism fails)"
+      - "#745 BI Anthropic Nasdaq IPO milestone register vs Meta liability week (same Sep window, Meta arms carried)"
+      - "#790 BI OpenAI slowdown-rally temporal inversion (extended by this run from n=1/n=1 to a four-arm week)"
+      - "#857 BI Anthropic IPO iteration (Meta comparator set provenance)"
+      - "#932 window context (m790 committed)"
+      connects_to:
+      - 399
+      - 420
+      - 542
+      - 745
+      - 746
+      - 790
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: "THIRTIETH remains the negative guard - this run documents a temporal-inversion extension of m790, not a falsification"
+      research_method: "3 browser.search query sets this run (Business Insider OpenAI news September 2026 - SELECTED: Huang AGI/congratulates OpenAI via symby coverage pack Sep 15, rogue-agent framework via two wesearch.press records Sep 16-17, robotics $500K via wesearch.press Sep 18, Burry slowdown-criticism via gateiolink Sep 14-15 as counterevidence; MIT Technology Review OpenAI September 2026 - REJECTED as primary: the Sep-14 'doomer turn' piece is a multi-lab accountability register, not a clean publication x entity pair, and MIT TR's tie is indirect/undisclosed; consumer-health-tools scoop via Reuters/omnesmedia relay noted, not ingested as an arm). 0 browser.open this turn per #503; BI paywalled; all arms attested-secondaries with explicit provenance. Pre-commit novelty sweeps per #715: max numeric mechanism_id 798 in-tree; zero test_type_a_947 files on disk (glob); no 'Type A #947' in git log (--grep); block key zero-hit repo-wide (git grep); all 5 secondary URLs zero-hit repo-wide (git grep -F); zero underscore-form 799 mechanism key strings in profiles/ (format-built needles); zero numeric 799 mechanism_id keys in profiles/."
+      test_file: tests/test_type_a_947_bi_openai_recovery_week_astra_agi_mitigation_credit_sep23_1pm.py
+      verification_date: "2026-09-23"
+      source_urls:
+      - "https://symby.com/news?_cid=93349426"
+      - "https://wesearch.press/s/openai-launches-a-new-framework-to-track-and-investigate-rog-52be87c7"
+      - "https://wesearch.press/s/openai-launches-a-new-framework-to-track-and-investigate-rog-c76d93e1"
+      - "https://wesearch.press/s/openai-is-offering-robotics-engineers-up-to-500000-heres-wha-1a0f1ed7"
+      - "https://gateiolink.net/news/detail/michael-burry-criticizes-openai-anthropic-ceos-calls-to-slow-ai-development-24266354"
   anthropic:
     financial_tie: "none"
     estimated_value: "$0"
