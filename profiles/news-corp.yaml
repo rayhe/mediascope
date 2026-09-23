@@ -2080,6 +2080,117 @@ competitor_relationships:
         correlation_not_causation: true
         artifact_readiness: 'No analysis.json update warranted. Directional, n.s. scorer output on manual illustrative tones; no new artifact-grade tone data.'
 
+    the_sun_apple_siri_settlement_false_advertising_vs_meta_carried_register_sep2026:
+      mechanism_id: 796
+      mechanism_name: 'The Sun (News Corp) x Apple Siri Settlement "False Advertising" Accountability Register vs Carried News Corp x Meta Payer Arm - Non-Partner Control at the Tabloid Register'
+      iteration: 942
+      iteration_type: 'A'
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-23'
+      time_pdt: '08:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      publication_focus: 'The Sun (the-sun.com, The US Sun - News Corp-owned via News UK; "The Sun" content is explicitly inside the News Corp x OpenAI AI-licensing scope per mechanism 763 financial_context)'
+      incentive_attribution: "CONTROL_CASE_READING on the News Corp x OpenAI uniform-softening claim: the licensing-scope tabloid runs an accountability-adversarial register on Apple, a $0-AI-licensing non-partner ($250M false-advertising settlement, 'accused of false advertising' headline), at -0.45 illustrative, near-symmetric with the carried News Corp x Meta payer arm (-0.50, m763). If the parent's tabloid register were uniformly lenient, neither the payers (m763: OpenAI -0.483, Meta -0.50) nor the non-partner would draw adversarial registers. The deal-softening prediction is partner-specific by construction; this run documents the non-partner control. Correlation is not causation."
+      overview: 'FIRST dedicated corpus mechanism on The Sun (zero the_sun URL keys repo-wide pre-commit). Sep 18-22 2026: The Sun ran the Apple Siri AI settlement claims-opening piece with an accountability-adversarial register ("accused of ''false advertising''", "$250million payout", false-advertisement allegations relayed; Apple denial carried), MANUAL ILLUSTRATIVE -0.45 excerpt-bounded per #503; and the iPhone 18 launch-lines piece with a celebratory launch register ("Apple fever", "shoppers lined up across the globe", CEO John Ternus greeting customers), MANUAL ILLUSTRATIVE +0.35. Within-outlet illustrative delta -0.80: register selection tracks the news peg (accountability vs launch celebration), not the entity. Cross-outlet family comparator carried un-rescored per #807: the NY Post Sep 18 Meta glasses-lawsuit piece from m763 (-0.50). Illustrative Sun-Apple-settlement-minus-carried-NYPost-Meta delta +0.05: near-symmetry at the adversarial tabloid register, consistent with m763''s dual-payer symmetry (+0.017). The $250M Apple settlement is the observable failure-cost leg of the Siri AI rebuild (mechanism 795, Type C #939 - explicitly no coverage-tone claim there); this run adds the FIRST coverage-tone pair on that leg.'
+      articles_apple_fresh:
+        - title: 'iPhone 15 and 16 owners eligible to claim up to $95 in $250million payout after Apple accused of ''false advertising'''
+          publication: 'The Sun (the-sun.com)'
+          date: '2026-09-22'
+          url: 'https://www.the-sun.com/money/17044701/iphone-owners-claim-payout-apple-false-advertising-settlement/'
+          url_status: 'novel this run - the_sun zero-hit repo-wide pre-commit; URL slug 17044701 zero-hit repo-wide pre-commit'
+          research_method: 'excerpt_bounded_per_503_sep23_942 (browser.search verbatim excerpts, crawled 16h)'
+          register: 'accountability_adversarial_consumer_service'
+          tone_MANUAL_ILLUSTRATIVE: -0.45
+          key_quotes:
+            - 'iPhone 15 and 16 owners eligible to claim up to $95 in $250million payout after Apple accused of ''false advertising'''
+            - 'SOME iPhone users could get checks worth up to $95 as part of a multi-million-dollar payout, so long as they take action.'
+            - 'In May, Apple agreed to a $250million class action settlement.'
+            - 'This resolves claims detailed in a 2025 lawsuit that false advertisements were made for select iPhone 15 and 16 models.'
+            - 'Specifically, the suit alleged that the company marketed the models as having enhanced Siri capabilities via Apple Intelligence, even though they were not yet available when purchases were made.'
+            - 'While Apple denied any wrongdoing and argued that the marketing was not misleading due to it disclosing that additional capabilities would be rolled out over time, it agreed to the settlement to resolve the claims.'
+          tone_observations:
+            - 'Headline leads with the plaintiff''s allegation in scare quotes ("accused of ''false advertising''") - the allegation is the frame, the denial is the caveat.'
+            - 'The $250M figure is rendered as a consumer payout ("checks worth up to $95"), not as corporate punishment - the register is consumer-service accountability, not watchdog outrage.'
+            - 'Apple''s denial is carried verbatim mid-piece ("denied any wrongdoing", "disclosing that additional capabilities would be rolled out over time") - fair process is present, which moderates the score from -0.55 to -0.45.'
+            - 'The piece sits adjacent to the same-outlet launch-celebration arm (+0.35): the outlet''s Apple register is peg-driven, not entity-lenient.'
+        - title: 'Customers - and professional ''line sitters'' - queue up around the block to buy new $1,299 iPhone 18'
+          publication: 'The Sun (the-sun.com)'
+          date: '2026-09-18'
+          url: 'https://www.the-sun.com/money/17024113/long-lines-apple-iphone-launch/'
+          url_status: 'novel this run - URL slug 17024113 zero-hit repo-wide pre-commit'
+          research_method: 'excerpt_bounded_per_503_sep23_942 (browser.search verbatim excerpts, crawled 4d)'
+          register: 'launch_celebration_consumer_fever'
+          tone_MANUAL_ILLUSTRATIVE: 0.35
+          key_quotes:
+            - 'THE iPhone 18 Pro is finally on sale in Apple stores and shoppers lined up across the globe to try and be one of the first to get their hands on the device.'
+            - 'Apple CEO John Ternus greeted customers at the Apple Fifth Avenue flagship store on September 18'
+            - 'Long lines were spotted in major cities across the world including in Kuala Lumpur, Madrid and London.'
+            - 'Apple fever also took over in the Big Apple itself with large lines forming outside the New York City flagship store.'
+          tone_observations:
+            - 'Unambiguous celebration register: "Apple fever", "finally on sale", global-lines color. No adversarial vocabulary anywhere in the excerpts.'
+            - 'The CEO-greeting-customers tableau (Ternus at Fifth Avenue) is earned-media framing - the outlet amplifies the launch spectacle.'
+            - 'Same-outlet, same-entity, opposite register from the settlement arm: the -0.80 within-outlet delta is the cleanest peg-vs-entity control in the News Corp corpus this cycle.'
+      articles_meta_carried:
+        - title: 'Meta''s AI glasses accused in California lawsuit of secretly capturing sex, nudity and bathroom footage'
+          publication: 'New York Post'
+          date: '2026-09-18'
+          url: 'https://nypost.com/2026/09/18/us-news/california-users-among-plaintiffs-suing-meta-over-smart-glasses/'
+          url_status: 'carried from mechanism 763 (#887) - NOT claimed novel; un-rescored per #807'
+          research_method: 'carried_unrescored_per_807 (first-hand read at #887, 80 rendered lines)'
+          register: 'lawsuit_liability_watchdog_fair_process'
+          tone_MANUAL_ILLUSTRATIVE: -0.50
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'apple'
+        peer_entity: 'meta'
+        within_outlet_pair:
+          arm_settlement: -0.45
+          arm_launch: 0.35
+          delta_settlement_minus_launch: -0.80
+          delta_calc: '(-0.45) - (0.35) = -0.80'
+          delta_note: 'Same outlet, same entity, 4 days apart: the register flips from accountability-adversarial to launch-celebratory. Peg/genre selection dominates entity targeting at The Sun.'
+        cross_outlet_family_pair:
+          sun_apple_settlement: -0.45
+          carried_nypost_meta_glasses_lawsuit: -0.50
+          delta: 0.05
+          delta_calc: '(-0.45) - (-0.50) = +0.05'
+          delta_note: 'Near-symmetry at the adversarial tabloid register between the non-partner Apple settlement arm and the carried Meta-payer lawsuit arm - consistent with m763''s dual-payer symmetry (+0.017). The parent''s tabloid register runs adversarial toward payers and non-partners alike on liability pegs.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones from excerpt-bounded reads (both fresh arms, per #503; the-sun.com not policy-blocked but excerpt-bounded by run convention), n=2 fresh Apple / n=1 carried Meta; the Meta comparator arm is carried un-rescored per #807. Engine NOT run on the illustrative arms per the Aug 28 2026 standing rule. DO NOT claim empirical significance.'
+      finding: 'FIRST The Sun mechanism in the corpus. The News Corp licensing-scope tabloid runs an accountability-adversarial register on Apple''s $250M Siri false-advertising settlement (-0.45 illustrative, excerpt-bounded): the headline leads with the plaintiff''s allegation ("accused of ''false advertising''"), Apple''s denial is carried as the caveat. The same outlet ran a celebratory iPhone 18 launch-lines piece four days earlier (+0.35): within-outlet illustrative delta -0.80, the cleanest peg-vs-entity control in the News Corp corpus this cycle - register selection tracks the news peg, not the entity. Cross-outlet, the Sun Apple settlement arm (-0.45) sits near-symmetric with the carried NY Post Meta glasses-lawsuit arm (-0.50, m763): illustrative delta +0.05, consistent with m763''s dual-payer tabloid symmetry (+0.017). Reading: the parent''s tabloid register runs adversarial toward licensing payers (OpenAI -0.483, Meta -0.50 at m763) AND toward the $0-AI-licensing non-partner (Apple -0.45 here) on liability pegs - uniform leniency is absent at the tabloid register on both legs, and the deal-softening prediction remains partner-specific by construction (it was already falsified for the partner at m763). Control-case extension, NOT a falsification-family member: this run tests the non-partner control, not the OpenAI-softening prediction. Verdict directionally_supported_not_proven. NOT artifact-grade. Correlation is not causation.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; no analysis.json update warranted; NOT artifact-grade.'
+      falsification_family: 'NOT a member - control-case extension. The clean same-beat News Corp falsifications already exist (m763, TWENTY-NINTH member, NY Post x OpenAI adversarial triad). This run documents the non-partner (Apple, $0 AI licensing) control at the same tabloid register: adversarial (-0.45), symmetric with the payer arms. A member would require testing the deal-partner softening prediction; this run tests the opposite leg. Ledger holds at 29; THIRTIETH remains the negative guard.'
+      ledger: 'Ledger holds at 29 (TWENTY-NINTH member-form is the m763 block in this file; THIRTIETH remains the negative guard per the negative-guard convention)'
+      connects_to: [795, 763, 654, 549, 631, 206]
+      confounders_ranked:
+        strong:
+          - 'Tabloid genre default: The Sun''s house register is sensational-adversarial on liability stories and celebratory on launches; the -0.45/+0.35 split may measure genre defaults rather than any incentive structure. (Same caveat as m763''s member-hood at the Post.)'
+          - 'Excerpt-bounded fresh arms: both Sun arms scored from browser.search verbatim excerpts (crawled 16h / 4d), not full reads; register could shift on a full read. Byline unattested on both.'
+        moderate:
+          - 'Event-type mismatch across the family pair: a claims-service settlement piece (Sun x Apple) vs a proposed-class-action lawsuit piece (NY Post x Meta) - different liability pegs carry different natural registers.'
+          - 'n=2 fresh vs n=1 carried; hand-assigned illustrative tones, not empirical corpus scores.'
+          - 'Temporal skew: Sun arms Sep 18/22 vs carried NY Post arm Sep 18 - the settlement arm is 4 days newer than the comparator.'
+        weak:
+          - 'The US Sun (the-sun.com) vs The Sun UK (thesun.co.uk): the licensing scope names "The Sun"; the US edition shares News UK ownership and the same editorial desk family, but edition-level register differences are bounded-unmeasured.'
+          - 'The Sep 22 piece''s claims-service framing ("so long as they take action") is consumer-helpful, which may soften the adversarial read - already moderated in the -0.45 vs -0.55 scoring choice.'
+      counter_evidence:
+        - 'm697 (MarketWatch, News Corp sibling): OpenAI ran SOFTER than Meta (+0.60 illustrative gap) - register varies by publication/desk within the parent; the tabloid-register adversarial symmetry is register-local, not parent-level.'
+        - 'm631 (this file, WSJ x Apple Duo launch): the zero-deal entity drew the SOFTEST register (+0.45) on the launch peg - genre/peg dominates; this run''s -0.45 is the liability-peg mirror of the same dynamic.'
+        - 'The Sun settlement piece carries Apple''s denial verbatim - fair process is present; the hard register is not fabrication.'
+        - 'Apple has no documented News Corp AI-licensing deal (bounded absence per #659); a future Apple deal would re-test the partner-specific reading.'
+      distinct_from_prior: 'FIRST dedicated The Sun mechanism in the corpus (the_sun zero-hit repo-wide pre-commit); FIRST coverage-tone pair on the Apple Siri $250M settlement leg (mechanism 795 was explicitly no-coverage-tone); FIRST within-outlet peg-vs-entity control at a News Corp tabloid (-0.80 illustrative delta, same entity, 4 days apart); FIRST non-partner control arm for the m763 dual-payer symmetry family. Prior News Corp x Apple mechanisms (m206 WSJ selection silence, m631 WSJ Duo launch) are WSJ-desk, not tabloid.'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr; NY Post, WSJ, Barron''s, MarketWatch, The Times, The Sun content in scope - mechanism 763 financial_context); Meta leg Mar 2026 (up to $50M/yr, 3yr). Apple: $0 documented AI-licensing revenue to News Corp (bounded absence per #659). This run''s Apple arm is the $0-leg control: the licensing-scope tabloid runs it at -0.45 on a liability peg - adversarial, symmetric with the payer arms, consistent with peg-driven register selection rather than deal-driven leniency. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      research_method: '2 browser.search query sets this run (The Sun Apple iPhone news September 2026 - surfaced the Sep 22 settlement piece and Sep 18 iPhone 18 lines piece with verbatim Full URLs; The Sun Meta smart glasses Luna - returned zero the-sun.com URLs, no same-publication Meta comparator exists in the index; bounded absence per the iteration-492 rule, not a zero-coverage claim) + 1 prior-run query-set reuse (WIRED Apple Siri settlement, FT Anthropic - rejected: no verbatim primary URLs, relay-only). 0 browser.open (excerpt-bounded per #503). Rejected candidates: NY Post Sep 19 oversold-breaches piece (in corpus as m763 arm1, NOT novel); FT Sep 19 Anthropic growth-doubts piece (verbatim FT URL not surfaced, paywall; relay-only); MacRumors Sep 20/22 Siri pieces (mechanism 795 already covers the settlement datum, this run adds the tone pair). Pre-commit novelty greps: zero test_type_a_942 files on disk (glob); no "Type A #942" in git log (--grep); max numeric mechanism_id 795 in profiles/ pre-commit; the_sun zero-hit repo-wide pre-commit; URL slugs 17044701 and 17024113 zero-hit repo-wide pre-commit; zero underscore-form 796 mechanism key strings repo-wide pre-commit (format-built needles per #715; Type E iteration-number artifacts acknowledged as non-mechanism); zero dash-form 796 references repo-wide pre-commit; block key zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_942 files on disk pre-commit; no "Type A #942" in git log pre-commit; the_sun zero-hit repo-wide pre-commit; URL slugs 17044701 and 17024113 zero-hit repo-wide pre-commit; max numeric mechanism_id 795 in profiles/ pre-commit; zero underscore-form 796 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried; Type E _796 iteration artifacts acknowledged as non-mechanism per #715); zero dash-form 796 references repo-wide pre-commit; block key unique repo-wide pre-commit.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+
   google:
     financial_tie: mixed
     estimated_value: undisclosed (advertising + Google Showcase payments)
