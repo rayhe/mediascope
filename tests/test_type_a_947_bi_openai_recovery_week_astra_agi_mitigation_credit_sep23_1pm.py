@@ -87,7 +87,7 @@ MECH_KEY = (
     "vs_meta_liability_sep23_947"
 )
 NEXT_SIBLING = "\n  anthropic:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "f0bba0bef9ca32c7d887574ccd1d5f33ca3db3ef"
 ITERATION = 947
 TYPE_LETTER = "A"
 
