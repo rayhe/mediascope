@@ -2759,6 +2759,97 @@ competitor_relationships:
         - "#404 (Atlantic x Anthropic mitigation-credit asymmetry; publication-level seriousness-conferring family)"
       novelty: "First dedicated Type A mechanism on the WIRED Coxon-resignation / Muse-launch 24-hour register pair. Distinct from mechanisms 118, 154, 312, 451 (different registers and windows) and the Sep 1-8 IPO-silence mechanism (selection, not register). Zero mechanism_622 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 621."
       research_method: "3 browser.search query sets this run: (1) WIRED Anthropic September 2026; (2) WIRED Meta Muse AI assistant launch September 2026; (3) WIRED Meta Muse Secure VM trust. All URLs copied verbatim from Full-URL listings; Coxon quotes via aiweekly.co (attributed originally reported by wired.com); WIRED Coxon URL NOT invented (wired.com policy-blocked, no-canonical-URL rule); no zero-coverage claims per iteration-492 rule; no em dashes."
+    mechanism_787_wired_anthropic_slowdown_cycle_silence_extension_sep22:
+      mechanism_id: 787
+      date: '2026-09-22'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 927
+      iteration_type: A
+      iteration_time: 2026-09-22 17:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED (Conde Nast)
+      publication_pair: WIRED x Anthropic
+      competitor: anthropic
+      comparison_entities:
+      - meta
+      author: Kit (with Ray)
+      finding: 'Temporal extension of mechanism 595 (iteration 602, Sep 1-8 window) into the Sep 12-22 slowdown cycle. Four slowdown-cycle beats carry peer-outlet coverage while a bounded WIRED search-result set returns no WIRED article: (a) Amodei "We Must Pace the Frontier" essay (Sep 12, personal site, ~3,800 words, "We must slow the pace at which we improve the capabilities of AI models") - peer: coindesk Sep 12; (b) Altman agreement within hours ("I agree with Dario that we need to pace the frontier") + Musk ("Dario is right") + Hassabis endorsement + Altman confirming no 2026 OpenAI IPO in the Sep 12 Fortune interview - peer: reuters Sep 12, butterflymarketinsider; (c) UN Security Council briefing - Amodei (remote) + Altman (in person) + Bengio + Delangue - peer: webpronews (crawled 2h); (d) market fallout - SoftBank -11%, chip stocks shed 5.9% in a single session - peer: foreignpolicyjournal Sep 18. Bounded WIRED absence per the iteration-492 rule (one WIRED-targeted query set, since 2026-09-11, zero wired.com results), not a proven zero. The silence is beat-specific, not a blanket blackout: WIRED interviewed Coxon on Sep 9 (mechanism 622, existential-seriousness credit +0.55 illustrative vs Meta Muse trust register) and ran 2 adversarial Anthropic breach articles Jul 31. So WIRED was awake on Anthropic safety-personnel news and still skipped the CEO-level slowdown pact three days later. The financial predictor is INDIRECT: Conde Nast Aug 2024 OpenAI content licensing deal ($1-5M/yr estimate, wired.yaml:177) is with Anthropic chief rival, not Anthropic - the naive deal-gradient hypothesis predicts rival harshness or neutrality, not softness/silence. Observed: bounded-absence silence on the slowdown pact plus carried adversarial Meta register (m547 avg -0.7733). This is the LICENSING-HALO extension, second temporal leg after mechanism 595. Verdict directionally_supported_not_proven. NOT artifact-grade. NOT a falsification-family member; falsification ledger holds at 29.'
+      slowdown_beats:
+      - beat: amodei_pace_the_frontier_essay
+        date: '2026-09-12'
+        title: 'Amodei "We Must Pace the Frontier" essay (personal site, ~3,800 words)'
+        peer_url: https://www.coindesk.com/tech/2026/09/12/anthropic-ceo-calls-for-ai-race-to-slow-down-musk-and-openai-s-altman-agrees
+        peer: coindesk
+        key_claims: 'Amodei: capability growth outrunning test/understand/control; not a shutdown call; independent evaluators with employee-like access; 6-12 month warning of internet-scale agent takeover'
+        evidence_grade: excerpt-tier relay per #503
+      - beat: altman_musk_hassabis_endorsements_no_2026_ipo
+        date: '2026-09-12'
+        title: 'Altman agreement + Musk/Hassabis endorsements + Altman rules out 2026 IPO (Fortune interview)'
+        peer_url: https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/
+        peer: reuters
+        key_claims: 'Altman: "I agree with Dario that we need to pace the frontier"; "ill-advised moment to go public"; Musk: "Dario is right"; Hassabis: direction "correct for meeting this critical moment"'
+        evidence_grade: excerpt-tier relay per #503
+      - beat: un_security_council_briefing
+        date: '2026-09-22'
+        title: 'Amodei (remote) + Altman (in person) + Bengio + Delangue brief the UN Security Council'
+        peer_url: https://www.webpronews.com/ai-chiefs-amodei-and-altman-take-their-warnings-to-the-un-security-council/
+        peer: webpronews
+        key_claims: 'France-called session on malicious AI uses and loss of control; unusual rival-lab alignment ten days after the essay'
+        evidence_grade: excerpt-tier relay per #503
+      - beat: market_fallout
+        date: '2026-09-18'
+        title: 'Chip stocks shed 5.9% in a single session; SoftBank -11%'
+        peer_url: https://www.foreignpolicyjournal.com/2026/09/18/musk-and-altman-back-amodeis-ai-slowdown-call-as-chip-stocks-shed-5-9-in-a-single-session/
+        peer: foreignpolicyjournal
+        key_claims: 'Amodei essay moved markets in 48-72h; SoftBank -11% Tokyo, SK Hynix -5%, Micron/SanDisk/AMD/Intel -5%+ premarket'
+        market_peer_url: https://butterflymarketinsider.com/en/ai-slowdown-amodei-altman-openai-ipo-delayed-softbank-down-11-percent-chips-financing-2026/
+        evidence_grade: excerpt-tier relay per #503
+      bounded_absence:
+        method: 'One WIRED-targeted browser.search query set ("WIRED Amodei slowdown essay Altman agreement coverage", since 2026-09-11); zero wired.com results across all returned rows'
+        rule: 'iteration-492: stated as bounded search-result absence, not a proven zero'
+        scope: 'Sep 12-22 slowdown-cycle beats only; does not claim WIRED published nothing on Anthropic in the window (m622 Coxon interview Sep 9 sits just outside it)'
+      carried_arms:
+        mechanism_595_beats: 'Four Sep 1-8 beats carried un-rescored per #807: (a) $1.5B piracy settlement payout dispute (Sep 6); (b) S-1 prospectus watch, $100B raise / up-to-$2T valuation reports (Sep 3/4); (c) Claude Fable 5.1 / Mythos 5.1 GA (Sep 1); (d) AISI incident-report followup, 35-day silence window'
+        meta_register: 'm547 adversarial Meta register carried un-rescored per #807: three WIRED Meta glasses arms avg -0.7733 ("Meta Is Warned That Facial Recognition Glasses Will Arm Sexual Predators" -0.82; "The Rise of the Ray-Ban Meta Creep" -0.72; "Meta Silently Added Face-Recognition Code" -0.78)'
+        beat_specificity_note: 'm622 (iteration 647, Sep 10): WIRED "The AI Researcher Who Just Quit Anthropic Says It is Crunch Time for Humanity" (Sep 9) granted Anthropic existential-seriousness credit (+0.55 illustrative vs Meta Muse trust register). The Sep 12-22 silence is therefore beat-specific: WIRED interviewed the resigning researcher but skipped the CEO-level slowdown pact three days later.'
+      financial_context: 'Conde Nast Aug 2024 OpenAI content licensing deal ($1-5M/yr estimate, wired.yaml:177, 2271, 2668; Reuters Aug 20 2024). AI licensing is now a named strategic revenue pillar (May 2026 commercial pivot: OpenAI, Amazon Rufus, Perplexity, Microsoft Copilot, Apple Intelligence in negotiations). The deal is with Anthropic chief rival - the predictor is INDIRECT (licensing-halo), the naive deal-gradient predicts rival harshness or neutrality, not silence.'
+      confounders_ranked:
+        strong:
+        - 'News-value on the merits: an essay on a personal site plus X endorsements is a softer news peg than the Coxon resignation (76M-view thread, bipartisan congressional alarm, WSJ exclusive Sep 8). WIRED covered the sharper peg (m622) and skipped the softer one - peg sharpness, not company favoritism, may drive the selection.'
+        - 'Desk/beat assignment: the slowdown story is owned by finance/crypto/trade press in the observed peer set (coindesk, butterflymarketinsider, foreignpolicyjournal); WIRED AI desk may not own the markets-fallout angle, and the UN briefing is a geopolitics peg.'
+        - 'Bounded absence is not a proven zero (iteration-492 rule): WIRED may have covered the pact in a newsletter, podcast, or a piece not yet indexed.'
+        moderate:
+        - 'Temporal: the UN Security Council briefing is upcoming ("on Wednesday" per webpronews); WIRED coverage may land after this run window.'
+        - 'Legal radioactivity: the essay itself flags that competitor pace-coordination may need an antitrust waiver (per the LinkedIn waiver-clause analysis); editorial caution toward a potential collusion story is a non-financial explanation for thin coverage.'
+        weak:
+        - 'Excerpt-tier evidence for all four fresh beats (0 browser.open per #503); no first-hand read of any peer article.'
+      counterevidence:
+      - 'm622: WIRED interviewed Coxon Sep 9 with existential-seriousness credit - no blanket Anthropic blackout; the silence is beat-specific.'
+      - 'WIRED ran 2 adversarial Anthropic breach articles Jul 31 2026 (per #602 summary) - adversarial capacity toward Anthropic exists.'
+      - 'm54: FT ran negative on its ACTUAL payer OpenAI (Apr 14 2026 investors-having-second-thoughts) - payer-prediction inversion rules out pure deal-partner protection.'
+      - '#887/m763: NY Post adversarial triad toward the News Corp payer - falsified uniform softening at the tabloid register.'
+      - 'm682 (WSJ Clash expose, Sep 14) and m616 (WSJ Tumbler Ridge liability watchdog, -0.55) - adversarial on payer OpenAI the same week as constructive payer pieces.'
+      - 'WIRED Aug 7 Apple v. OpenAI hardware-suit piece (Maxwell Zeff) - direct WIRED adversarial-adjacent coverage of the deal partner itself.'
+      connects_to: [92, 312, 547, 595, 622, 54, 763, 682, 616, 897]
+      extends: 'mechanism 595 (iteration 602): second temporal leg of the WIRED x Anthropic licensing-halo silence strand (Sep 1-8 -> Sep 12-22)'
+      statistical_discipline:
+        method: 'MANUAL QUALITATIVE per the Aug 28 2026 standing rule; silence strand - no tone arms on the Anthropic side, no numeric delta asserted'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      falsification_ledger: 29
+      falsification_family_member: false
+      novelty_verification: "zero test_type_a_927 files on disk pre-commit (glob); no 'Type A #927' in git log pre-commit (--grep); max numeric mechanism_id 786 pre-commit; zero numeric 787 mechanism_id keys in profiles/ pre-commit; zero underscore-form 787 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention; __pycache__ excluded); zero dash-form 787 references repo-wide pre-commit; block key mechanism_787_wired_anthropic_slowdown_cycle_silence_extension_sep22 zero-hit repo-wide pre-commit; 4 novel URL keys (coindesk, webpronews, butterflymarketinsider, foreignpolicyjournal) zero-hit repo-wide pre-commit; the reuters Sep-12 URL is an in-corpus corroborating peer URL (mechanismized at #717/#762), not claimed as novel."
+      rotation_guard: "925-929 window THIRD leg D(#925)->E(#926)->A (this run); next: #928 Type B continues the window. Ledger holds at 29 (anchor patched post-commit per #565)."
+      research_method: "5 browser.search query sets this run: (1) WIRED OpenAI September 2026 - SELECTED the Sep 16 disclosure-framework relay (REJECTED as #877/#802-covered); (2) WIRED Meta smart glasses Connect 2026 - REJECTED (no WIRED-originated Sep Meta arms surfaced); (3) wired.com OpenAI IPO October story - REJECTED (surfaced the Sep 12 Altman no-2026-IPO reversal, invalidating the #922 Oct-IPO premise); (4) WIRED OpenAI Altman slowdown - SELECTED the slowdown-cycle peer set (every.to digest, techpresso, reuters, newslocker, thenewsnow); (5) WIRED Amodei slowdown essay Altman agreement coverage, since 2026-09-11 - the bounded-absence set (zero wired.com results). 0 browser.open (excerpt-bounded per #503). 5 block URLs copied verbatim from Full-URL listings (4 novel URL keys + 1 in-corpus corroborating reuters peer URL); no canonical URLs constructed. ASCII-only, no em dashes."
+      test_file: tests/test_type_a_927_wired_anthropic_slowdown_cycle_silence_extension_sep22_5pm.py
   amazon:
     financial_tie: licensing
     estimated_value: undisclosed, multi-year (2 deals)
