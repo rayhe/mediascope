@@ -35,7 +35,7 @@ THIS_FILE = "test_type_a_927_wired_anthropic_slowdown_cycle_silence_extension_se
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROFILE = os.path.join(REPO, "profiles", "wired.yaml")
 BLOCK_KEY = "mechanism_787_wired_anthropic_slowdown_cycle_silence_extension_sep22"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "eabec152103e2a21a5c3b7099f02ca90b0259bcc"  # main commit, pinned green in the anchor followup per #565
 ITER = 927
 TYPE_LETTER = "A"
 
