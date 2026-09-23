@@ -43,7 +43,7 @@ ITERATION = 937
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-23 03:00 PDT"
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "facf28cfa1ef7dd3b5e16ce3640ec541581a2fc9"
 
 BLOCK_KEY = (
     "verge_meta_luna_glasshole_moment_launch_register_"
