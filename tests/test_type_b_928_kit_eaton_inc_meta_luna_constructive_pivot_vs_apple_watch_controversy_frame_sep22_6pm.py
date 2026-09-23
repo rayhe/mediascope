@@ -51,7 +51,7 @@ PROFILE = os.path.join(REPO, "profiles", "careers", "journalists.yaml")
 THIS_FILE = "test_type_b_928_kit_eaton_inc_meta_luna_constructive_pivot_vs_apple_watch_controversy_frame_sep22_6pm.py"
 BLOCK_KEY = "type_b_928_kit_eaton_inc_meta_luna_constructive_pivot_vs_apple_watch_controversy_frame_sep16"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "d2d7aedcf95661b46e0148522ded04506d673a34"  # patched green in the anchor followup per #565
 ITER = 928
 TYPE_LETTER = "B"
 
