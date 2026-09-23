@@ -4615,6 +4615,107 @@ entities:
       verification_sweep_sep15_6am: 'Type C #764 re-sweep (Sep 15 2026, 06:00 PDT): 4 browser.search query sets, no browser.open attempts (fleet egress outage; excerpt-bounded per #503). (1) New AI news-publisher licensing deals since Sep 10 2026: ZERO new competitor-counterparty deals - the one new AI-licensing URL surfaced (Publishers Weekly: Princeton University Press x Cashmere, Sep 2026) is already mapped at mechanism 663 (the PW URL is present in m663 sources; roster corroboration only, not a new deal). (2) News Corp additional-arrangements watch (CEO Robert Thomson Morgan Stanley "you won''t have too long to wait" hint): NO new post-March-2026 News Corp x AI-company licensing deal surfaced in bounded search. The one novel News Corp x AI deal in corpus-history is Symbolic.ai (Jan 15 2026, TechCrunch): AI journalism startup (founders Devin Wenig ex-eBay CEO, Jon Stokes Ars Technica co-founder) signed for Dow Jones Newswires editorial-workflow tooling. REJECTED for mechanism mapping per the #729 precedent: non-competitor counterparty (Symbolic.ai is not a tracked competitor entity), vendor direction (News Corp is the buyer of tooling, not the licensing recipient), terms undisclosed, Jan 2026 vintage predates the tracked event windows. The TechCrunch URL (https://techcrunch.com/2026/01/15/ai-journalism-startup-symbolic-ai-signs-deal-with-rupert-murdochs-news-corp/) zero-hit repo-wide pre-commit and is recorded here, NOT added as a source on any mechanism block. (3) ANI Sep 14 2026 Division Bench hearing outcome: third consecutive bounded-absence check - still no outcome reporting surfaced; the MediaNama appeal-analysis piece (in corpus) remains the newest commentary; the Rao-appointed-Chief-Justice-of-Patna-HC datum is already in corpus (mechanism 657). India attribution deals (BCCL Sep 7, Indian Express Sep 8) stand unchanged; fee terms remain undisclosed. Last verified 2026-09-15.'
       verification:
         yaml_parse_clean: true
+
+    openai_india_attribution_deal_fee_estimates_e4m_sep2026:
+      mechanism_id: 798
+      iteration: 944
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-23'
+      time_pdt: '10:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'OpenAI x India attribution-deal fee estimates (Sep 23 2026, e4m): BCCL ~$5M/yr, Indian Express Group ~$3M/yr - FIRST corpus dollar figures on the India template; the Press Gazette tracker relays both estimates the same day'
+      block_key: type_c_944_openai_india_attribution_deal_fee_estimates_e4m_sep23_10am
+      type_c_focus: 'FIRST dedicated corpus mechanism on the first public fee estimates for OpenAI''s Sep 7-8 2026 India attribution deals. exchange4media (Kanchan Srivastava, Sep 23 2026, first-hand browser.open read this run, 86 lines) reports industry-source estimates: the BCCL (Times of India / Economic Times) partnership "could be worth around $5 million annually" and the Indian Express Group deal "is estimated at about $3 million a year." E4M reached out to BCCL, the Indian Express Group, and OpenAI - NONE of the three disclosed the commercial terms, so these are source estimates, not confirmed fees. The Press Gazette AI news-publisher deals/lawsuits tracker relays the same two figures the same day ("23 September 2026 ... E4m reports that the deal with Times of India publisher Bennett, Coleman and Co could be worth around $5m per year and the deal with The Indian Express Group could be worth $3m per year"). This reprices mechanism 660''s "zero-fee-disclosed" template: the accurate characterization is fee-undisclosed-BY-THE-PARTIES with the first public estimates landing mid-band. The $5M BCCL figure is the TOP of The Information''s 2024 reported OpenAI offer band ($1-5M/yr, via OODAloop); the $3M Indian Express figure sits mid-band. Combined ~$8M/yr for India''s two largest English newspaper groups vs News Corp''s $250M/5yr ($50M/yr reported) - the India flagship pair prices at roughly 16% of the News Corp annual rate. The e4m piece also documents the bandwagon leg: "The twin deals have prompted other Indian publishers to step up their efforts to engage with the Sam Altman-led firm. A few leading publishers have approached Sam Altman-led company to explore potential partnerships, although they are yet to receive a commercial arrangement." The sign-or-sue architecture is visible in motion: sue-then-sign defectors (Indian Express sought to join the DNPA-side suit in Feb 2025, mechanism 609) get $3M/yr estimates while ANI''s appeal remains pending (mechanism 657; e4m Sep 15: "Delhi HC seeks OpenAI response in ANI copyright appeal", bounded context only).'
+      fee_estimates:
+      - 'BCCL (Bennett, Coleman & Co Ltd - Times of India, Economic Times): "could be worth around $5 million annually" (e4m, sources familiar with the discussions, Sep 23 2026). Coverage scope: participating English and Indian-language publications'
+      - 'Indian Express Group: "estimated at about $3 million a year" (e4m, same sources, Sep 23 2026). Coverage scope: seven languages, live reporting and archives (per mechanism 609)'
+      - 'Combined ~$8M/yr for the two largest Indian English newspaper groups; BCCL at the TOP of The Information''s 2024 OpenAI offer band ($1-5M/yr, OODAloop, mechanism cross-ref); Indian Express mid-band'
+      - 'vs News Corp $250M/5yr ($50M/yr, mechanism 654): the India flagship pair prices at roughly 16% of the News Corp annual rate - flagship-market discount or smaller-archive effect, bounded (no causal claim)'
+      non_disclosure_caveat:
+      - 'E4M explicitly states it "reached out to BCCL, the Indian Express Group and OpenAI for details on the commercial terms, but none disclosed the value of the agreements" - these are industry-source estimates, not confirmed fees. The "zero-fee-disclosed" characterization of mechanism 660 is therefore refined to fee-undisclosed-by-parties with first public estimates mid-band; it was never a zero-fee finding'
+      - 'e4m adds: "The economics of the two Indian deals could provide an early reference point, although the reported figures remain unconfirmed. If the industry estimates of approximately $5 million for BCCL and $3 million for the Indian Express Group are accurate, they would put a tangible value on access to large archives, ongoing reporting and established news brands."'
+      bandwagon_leg:
+      - 'Incentive evidence in the e4m piece itself: "The twin deals have prompted other Indian publishers to step up their efforts to engage with the Sam Altman-led firm" - the published fee estimates function as a price signal pulling more publishers into the sign tier. "Several now reaching out to the AI company to explore potential commercial arrangements around their content"'
+      - 'Context the piece gives for the bandwagon: e4m "has earlier reported that digital ad revenue and other non-print ventures now account for 25-30% of the total revenue of India''s news publishers, as print advertising faces pressure from declining circulation" - potential AI licensing as "an additional revenue stream"'
+      - 'Litigation-side context in the same piece: "In India, The Digital News Publishers Association (DNPA) and ANI had sued OpenAI ... The case is still pending" and "more than a dozen publishers chose lawsuits over licenses, including The New York Times" - the sign-or-sue bifurcation, carried from mechanisms 609/657, bounded context only'
+      global_scale_leg:
+      - 'The e4m piece states: "Notably, OpenAI has signed content partnerships with over 25 news publishers covering 160+ outlets in over 20 languages, from the Associated Press in July 2023 to India''s TOI in September 2026"'
+      - 'Global roster the piece names for "similar partnerships ... between 2023 and 2025": Financial Times, News Corp, Washington Post, TIME, Le Monde, Conde Nast'
+      - 'DATA TENSION flagged, not resolved: the same e4m piece states "The largest reported deal is News Corp at over $250 million across five years. The average deal size is estimated at $25 million a year." A $25M/yr average sits 5x above the India estimates ($3-5M) and 5x above The Information''s 2024 $1-5M/yr offer band - the piece gives no methodology, and the News Corp $50M/yr outlier likely skews the mean. Recorded as an unresolved internal tension, not a corpus datum to act on'
+      - 'The piece also states: "According to an estimate, these tech giants have made a $2.92 billion commitment for news content, as of January 2025" (Microsoft, Amazon, Google, Meta, Perplexity, Mistral deals "covering the same content and uses") - global incentive-scale context, carried as an estimate with its Jan 2025 as-of date'
+      statistical_discipline:
+        scope: qualitative financial-incentive pricing mapping only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mapping documents the first public fee estimates (e4m industry-source estimates, Sep 23 2026) for OpenAI''s Sep 7-8 2026 India attribution deals: BCCL ~$5M/yr, Indian Express Group ~$3M/yr. Financial relationships and fee estimates are correlational structural incentives and do not by themselves demonstrate editorial control or causation. The figures are estimates, explicitly unconfirmed by all three parties. No causal claim. No coverage-tone claim. The sign-or-sue and bandwagon readings are incentive-architecture analysis, not findings about any outlet''s coverage.'
+      no_coverage_tone_claim: true
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - pricing-type leg with no coverage-tone pair; ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_grade: false
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 609 (OpenAI India attribution-deal blitz, #624 - the parent deal-blitz mechanism this leg extends; BCCL Sep 7, Indian Express Group Sep 8, seven-language scope, sue-then-sign arc)'
+      - 'mechanism 660 (OpenAI India attribution-deal economics layer, #709 - the "zero-fee-disclosed" template this run REFINES to fee-undisclosed-by-parties with first public estimates mid-band; Medianama fee-template contrast; internal-use exploration clause; editorial-independence clause)'
+      - 'mechanism 657 (ANI v. OpenAI India litigation leg, #704 - the contest leg; the DNPA/ANI suits remain pending per the e4m piece; Sep 15 Delhi HC appeal development is bounded context only, not a new datum of this run)'
+      - 'mechanism 654 (News Corp OpenAI $250M/5yr reported - the $50M/yr anchor on the other side of the India pricing: flagship pair at ~16% of the annual rate)'
+      - 'mechanism 714 (OpenAI x Village Media first Canadian news deal, #804 - the same-week local-news template: funding + API credits + technical support for Open Door in exchange for attributed citation)'
+      - 'OODAloop 2024 / The Information ($1-5M/yr OpenAI offer band - the BCCL $5M estimate lands at the TOP of this band; band context carried from prior corpus)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (1 first-hand browser.open this run on the e4m piece, 86 lines; Press Gazette tracker excerpt-bounded)'
+      - 'iteration-492 rule (bounded absence: fee terms undisclosed by the parties; estimates are industry-source estimates, not confirmed)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'the $5M/$3M figures are industry-source ESTIMATES that all three parties declined to confirm - e4m''s own caveat ("although the reported figures remain unconfirmed") means any pricing math built on them (the ~16% News Corp ratio, the top-of-band reading) inherits the estimate uncertainty. The figures are the best public data, not verified data'
+      - rank: 2
+        strength: strong
+        confounder: 'fee-undisclosed-by-parties is not fee-free: Medianama''s framing ("no confirmation of a licensing fee") left open whether the paid training-licensing template applied; the e4m estimates answer that narrowly for the attribution-discovery surface, but the internal-use technology-transfer option (m660) remains unpriced'
+      - rank: 3
+        strength: moderate
+        confounder: 'the $25M/yr "average deal size" in the same e4m piece is an unresolved internal tension (5x the India figures and the 2024 band, no methodology given) - the piece''s own numbers do not cohere, so selective use of its figures needs the caveat carried here'
+      - rank: 4
+        strength: moderate
+        confounder: 'archive-scope asymmetry: BCCL''s participating-publications scope and Indian Express''s seven-language live-plus-archives scope are different products; the $5M vs $3M gap may price scope, not publisher tier'
+      - rank: 5
+        strength: weak
+        confounder: 'Press Gazette relay is a second-hand carrier of the same e4m figures, not independent corroboration - one source, two carriers'
+      bounded_absences:
+      - 'No confirmation of the fee figures by BCCL, the Indian Express Group, or OpenAI (bounded per iteration-492; e4m states all three declined)'
+      - 'No contract duration, revenue-share structure, or payment schedule in the available reporting'
+      - 'No reporting on whether the $5M/$3M figures include the internal-use technology-transfer option (m660) or the attribution surface only'
+      - 'No methodology for the e4m piece''s $25M/yr average-deal-size estimate - the tension with the $3-5M figures is unresolved'
+      novelty: 'FIRST dedicated corpus mechanism on fee estimates for the OpenAI x India attribution deals. Zero "openai_india_attribution_deal_fee_estimates" mechanism key hits repo-wide pre-commit; zero test_type_c_944 files on disk (glob); no "Type C #944" in git log (--grep); max numeric mechanism_id 797 pre-commit (#943/m797, journalists.yaml); zero underscore-form 798 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); block key zero-hit repo-wide pre-commit; the e4m 158488 URL zero-hit repo-wide pre-commit (profiles/, tests/, iteration-log.md, docs/); the "$5 million annually" BCCL and "$3 million a year" Indian Express estimates zero-hit repo-wide pre-commit; Press Gazette tracker URL carried (in corpus via #874/#879) - only the Sep 23 2026 update content (the e4m relay) is new. Distinct from mechanism 609 (deal-blitz unit of analysis) and mechanism 660 (fee-template contrast on undisclosed terms - this run supplies the first estimates).'
+      sources:
+      - 'exchange4media (Sep 23 2026, Kanchan Srivastava, FIRST-HAND browser.open read this run, 86 lines): "Sources familiar with the discussions estimate that the California-based AI firm''s partnership with Bennett, Coleman & Co Ltd (BCCL), publisher of The Times of India and The Economic Times, could be worth around $5 million annually, while the Indian Express Group deal is estimated at about $3 million a year. E4M reached out to BCCL, the Indian Express Group and OpenAI for details on the commercial terms, but none disclosed the value of the agreements." / "The twin deals have prompted other Indian publishers to step up their efforts to engage with the Sam Altman-led firm." / "Notably, OpenAI has signed content partnerships with over 25 news publishers covering 160+ outlets in over 20 languages, from the Associated Press in July 2023 to India''s TOI in September 2026." / "The largest reported deal is News Corp at over $250 million across five years. The average deal size is estimated at $25 million a year." / "According to an estimate, these tech giants have made a $2.92 billion commitment for news content, as of January 2025." / "The economics of the two Indian deals could provide an early reference point, although the reported figures remain unconfirmed."'
+      - 'Press Gazette (AI news-publisher deals/lawsuits tracker, updated Sep 23 2026, excerpt-bounded per #503): "23 September 2026: OpenAI has signed partnership deals with India''s two largest newspaper groups. E4m reports that the deal with Times of India publisher Bennett, Coleman and Co could be worth around $5m per year and the deal with The Indian Express Group could be worth $3m per year."'
+      source_urls:
+      - https://www.exchange4media.com/digital-news/openais-toi-ie-deals-spark-wider-interest-among-news-publishers-158488.html
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      research_method: '3 browser.search query sets this run (AI company publisher content licensing deal announced September 2026 since=2026-09-16 - SELECTED the e4m piece + Press Gazette Sep 23 update; Amazon Anthropic investment September 2026 since=2026-09-16 - REJECTED as primary: the Apr 2026 $5B/$100B-cloud deal is in corpus via anthropic_aws legs, Sep 2026 coverage is re-reporting/rumor-tier; quoted dollar-figure corroboration query - CONFIRMED the $5M/$3M figures via the e4m piece itself and the Press Gazette relay) + 1 browser.open first-hand read (exchange4media Sep 23 2026, 86 lines, Kanchan Srivastava). Rejected candidates: Amazon x Anthropic Sep 2026 $5B re-reports (Apr 2026 event, in-corpus anthropic_aws); RTB Digital x Paradium.AI 10-year $100M/yr platform deal (Sep 14 2026, 8-K - non-competitor counterparty, vendor direction, per #729/#939 Symbolic.ai precedent); UMG x ElevenLabs Sep 10 / Suno x Warner-BMG v6 Sep 9 (music vertical, out of scope per #729/#759/#799). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Pre-commit novelty greps: zero test_type_c_944 files on disk (glob); no "Type C #944" in git log (--grep); max numeric mechanism_id 797 in-tree pre-commit; zero underscore-form 798 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); zero numeric 798-form mechanism keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; e4m 158488 URL zero-hit repo-wide pre-commit; "worth around" BCCL-fee string zero-hit repo-wide pre-commit; kanchan zero-hit repo-wide pre-commit.'
+      test_file: 'tests/test_type_c_944_openai_india_attribution_deal_fee_estimates_e4m_sep23_10am.py'
+      verification:
+        iteration: 944
+        type: 'C'
+        date: '2026-09-23 10:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
     mechanism_664_reuters_openai_slowdown_week_register_vs_meta_muse_accountability_sep13:
       mechanism_id: 664
       iteration: 717
