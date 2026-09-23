@@ -19786,6 +19786,7 @@ kit_eaton:
   current_publication: Inc.
   publication_owner: Mansueto Ventures
   beat: wearables, AI hardware, consumer tech
+  mechanism_ids: [671, 788]
   career_history:
   - employer: Inc.
     role: Contributor
@@ -19795,10 +19796,113 @@ kit_eaton:
     no page-rendered byline confirmation this run (browser.open terminally unavailable
     per developer constraint). Previously cited in-corpus for the Aug 21 2026 Apple
     camera-AirPods piece (5-step resolution-rationalization structure, iteration-log).
-    FIRST Type B subject (mechanism 671, iteration #728).'
+    FIRST Type B subject (mechanism 671, iteration #728). SECOND Type B extension
+    (mechanism 788, iteration #928): Sep-16 2026 Meta Luna column read FIRST-HAND
+    this run (63 lines via browser.open); tests m671''s own testable prediction -
+    PARTIAL SUPPORT (inversion replicates within a 6-day window on the same
+    ambient-audio privacy topic, magnitude attenuated +0.55 to +0.25).'
   source_urls:
   - https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
   - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
+  - https://www.inc.com/kit-eaton/metas-new-smart-glasses-could-have-1-big-change-it-just-might-make-them-more-socially-acceptable/91406252
+  competitor_coverage:
+    type_b_928_kit_eaton_inc_meta_luna_constructive_pivot_vs_apple_watch_controversy_frame_sep16:
+      block_key: type_b_928_kit_eaton_inc_meta_luna_constructive_pivot_vs_apple_watch_controversy_frame_sep16
+      mechanism_id: 788
+      iteration: 928
+      date: '2026-09-22 18:00 PDT'
+      type: B
+      scheduled_job_id: mediascope-daily-iteration
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      publication: Inc. (Mansueto Ventures)
+      journalist: Kit Eaton
+      competitor: Apple/Meta
+      apple_arm:
+        headline: 'The Apple Watch Got a Massive AI Upgrade - and the Controversy Could Get It Banned at the Office'
+        url: https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
+        date: '2026-09-10'
+        evidence: 'FIRST-HAND read at #728 (carried this run, un-rescored per #807)'
+        key_quotes:
+        - 'headline ''Controversy Could Get It Banned at the Office'''
+        - 'EFF Adam Schwartz: ''Our right to conversational privacy must include freedom from other people, without our clear opt-in consent'''
+        - 'wiretap-law analysis: ''a chime does not give a bystander a real way to object'''
+        - 'TechCrunch: ''normalizing the idea that technology is always listening'''
+        tone: -0.50
+        tone_method: 'MANUAL ILLUSTRATIVE (carried from #728, un-rescored per #807)'
+      meta_arm:
+        headline: 'Meta''s New Smart Glasses Could Have 1 Big Change. It Just Might Make Them More Socially Acceptable'
+        url: https://www.inc.com/kit-eaton/metas-new-smart-glasses-could-have-1-big-change-it-just-might-make-them-more-socially-acceptable/91406252
+        date: '2026-09-16'
+        date_basis: 'bounded - search index Last-Updated 7d on Sep 22; article ID 91406252 sequences after the Sep-10 pieces (91403791/91404202)'
+        evidence: FIRST-HAND read this run (63 lines via browser.open, Sep 23 2026)
+        key_quotes:
+        - '''A new report suggests that Meta may be taking privacy concerns more seriously than before.'''
+        - '''it''s just possible that Meta may have listened to some vocal critics'''
+        - '''On paper, Meta''s smart glasses endeavor looks impressive. The company''s clever partnership with Ray-Ban helped propel AI-equipped digital eyewear into the mainstream, and has reportedly led to millions of sales'''
+        - '''it seems like some of this privacy criticism has hit home with Meta''s leadership'''
+        - '''you could read this as an admirable pivot by Meta to meet its critics halfway-a lesson for any CEO of a company with a controversial product'' (rendered with a hyphen per the ASCII-only corpus convention)'
+        - '''Apple may be poised to test out similar audio-only AI features via its new Apple Watches, which have an ''always listening'' feature.'''
+        - '''It seems likely that similar audio privacy concerns will hit Meta''s rumored glasses, too.'''
+        tone: 0.25
+        tone_method: MANUAL ILLUSTRATIVE (scored this run)
+      meta_2024_arm_carried:
+        headline: 'Meta Bets on Augmented Reality Devices as the Future of Wearable Tech'
+        url: https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
+        date: '2024-09-26'
+        tone: 0.55
+        tone_method: 'MANUAL ILLUSTRATIVE (carried from #728, un-rescored per #807)'
+      asymmetry_scorer:
+        method: MANUAL ILLUSTRATIVE
+        apple_tone: -0.50
+        meta_tone: 0.25
+        delta_meta_minus_apple: 0.75
+        delta_calc: '0.25 - (-0.50) = 0.75'
+        meta_2024_tone: 0.55
+        temporal_attenuation_meta: -0.30
+        temporal_calc: '0.25 - 0.55 = -0.30'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+      finding: 'EXTENSION of mechanism 671 (#728). Six days after his Sep-10 2026 Apple Watch Audio Intelligence column (-0.50, controversy-forward: ''Controversy Could Get It Banned at the Office''), Kit Eaton applied a CONSTRUCTIVE pivot register to Meta''s rumored camera-free Luna smart glasses (Sep-16 2026, Inc., FIRST-HAND read this run, 63 lines): headline ''Meta''s New Smart Glasses Could Have 1 Big Change. It Just Might Make Them More Socially Acceptable''; ''A new report suggests that Meta may be taking privacy concerns more seriously than before''; ''it''s just possible that Meta may have listened to some vocal critics''; ''On paper, Meta''s smart glasses endeavor looks impressive. The company''s clever partnership with Ray-Ban helped propel AI-equipped digital eyewear into the mainstream''; ''it seems like some of this privacy criticism has hit home with Meta''s leadership''; ''you could read this as an admirable pivot by Meta to meet its critics halfway-a lesson for any CEO of a company with a controversial product'' (em dash rendered with a hyphen per the ASCII-only corpus convention). MANUAL ILLUSTRATIVE Luna-arm register +0.25. Meta-minus-Apple Sep-2026 delta +0.75: the m671 INVERSION REPLICATES within a 6-day window on the SAME ambient-audio always-listening privacy topic. Within-Meta temporal check: Sep-2024 arm carried at +0.55 vs Sep-2026 arm +0.25 (attenuation -0.30). m671''s own testable prediction is therefore PARTIALLY SUPPORTED: the pure-enthusiasm register did NOT fully replicate, but the controversy-frame collapse did NOT occur either - Eaton stayed net-constructive on Meta while adversarial on Apple within the same week and topic, so the temporal-drift-collapse hypothesis is REJECTED for this pair. MANUAL ILLUSTRATIVE: p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False, engine NOT run, NOT artifact-grade, no engine divergence pin. Verdict: directionally_supported_not_proven. NOT a falsification-family member (ledger holds at 29). Correlation is not causation.'
+      confounders_ranked:
+      - 'STRONG: Concession-peg - the Luna story is a privacy-CONCESSION report (camera removed in response to backlash); Eaton''s constructive credit (''admirable pivot'', ''listened to some vocal critics'') attaches to the concession act, which structurally invites a constructive register regardless of entity.'
+      - 'STRONG: Announced-vs-rumored - the Apple arm covers a SHIPPED feature with concrete privacy mechanics (15-second ambient rewind buffer, full-day listening summaries); the Meta arm covers a RUMOR of a future product. Adversarial register tracks concreteness of the privacy harm, not necessarily the entity.'
+      - 'MODERATE: Columnist-thesis genre - both pieces are Inc. analyst columns; register follows each column''s thesis rather than an entity policy.'
+      - 'MODERATE: Evidence asymmetry - the Apple arm''s adversarial register is partly sourced (EFF, wiretap-law experts, TechCrunch ''normalizing the idea that technology is always listening''); the Meta arm''s constructive register is Eaton''s own evaluative voice; within-writer sourcing choices could carry part of the gap.'
+      - 'WEAK (strengthener, not confound): the 6-day Sep-10 to Sep-16 window rules out temporal drift as an explanation of the gap.'
+      counterevidence:
+      - 'Eaton rehearses Meta''s full privacy rap sheet inside the constructive piece: ''In what is arguably a rare move for a company that seems to always lurch from one privacy fiasco to another''; the March 2026 third-party/employee footage-viewing controversy; ''And let''s never forget the Cambridge Analytica scandal from 2018''; quoted public criticism (''pervert glasses'', ''a device with questionable ethics, from a questionable company'') - no whitewash.'
+      - 'The data-harvesting hedge bounds the constructiveness: ''In the long run, cam-free glasses could simply be a play for user subscription revenues and swathes of user data for training future AI models.'''
+      - 'The in-piece Apple comparator still credits Apple''s privacy engineering OVER Meta''s: ''Apple has dodged some privacy concerns by processing audio information in a secure and anonymous way''; the symmetry clause (''It seems likely that similar audio privacy concerns will hit Meta''s rumored glasses, too'') extends the controversy frame to Meta, capping the constructive reading.'
+      testable_predictions:
+      - 'If Eaton covers the Luna launch (rumored Connect Sep 23-24 unveiling, October shipping) with a continued constructive register once the product is concrete, the concession-peg confound weakens and the entity-effect reading hardens.'
+      - 'If Eaton applies the controversy frame to a future Meta always-listening audio feature, the register is peg-driven and the Sep-16 constructiveness was concession-specific.'
+      - 'If Eaton''s next Apple privacy-story column stays adversarial while his next Meta product column stays constructive, the within-writer entity gradient replicates to a third pair.'
+      verdict: directionally_supported_not_proven
+      financial_context: 'Inc. is owned by Mansueto Ventures. Carried from mechanism 137 (Aug 16): Mansueto revenue $23.1M (ZoomInfo), 55% from advertising (Digiday 2025); Google Analytics 4 in tech stack (LeadIQ); standard Google programmatic/search dependency; Joe Mansueto founded Morningstar (tracks Alphabet stock); ZERO Meta content licensing deals, ZERO Meta advertising partnerships specific to Mansueto. Illustrative only - NOT a financial proof; columnist selection and opinion-genre confound it. The naive payer-softening prediction is not invoked at journalist level.'
+      cross_refs: ['#728 (Type B: mechanism 671, Eaton Meta-positive +0.55 vs Apple-adversarial -0.50 register inversion)', '#738 (Type B: mechanism 677, Jason Aten Google-aspirational vs Apple-adversarial gradient at Inc.)', 'mechanism 137 (outlet-level Mansueto Google-dependency finding)', '#838 (Type B: Dominic Preston Sep-16 Luna stigma-forward headline - same peg, different writer)', '#863 (Type B: Lucas Ropek TechCrunch Luna surveillance-society piece - same peg, different writer)']
+      source_urls:
+      - https://www.inc.com/kit-eaton/metas-new-smart-glasses-could-have-1-big-change-it-just-might-make-them-more-socially-acceptable/91406252
+      - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
+      - https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
+      - https://wdsm710.com/2026/09/15/meta-plans-to-launch-camera-free-smart-glasses-for-fall-the-information-reports/
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer register pin on an extension of m671; illustrative-only scorer output (MANUAL ILLUSTRATIVE, p_value/cohens_d NOT_CALCULATED, is_significant False); no new empirical finding at the publication level.'
+      novelty: 'FIRST mechanismization of Eaton''s Sep-16 2026 Meta Luna column. Zero test_type_b_928 files on disk (glob verified this run). No Type B #928 in git log. Max numeric mechanism_id 787 pre-commit; zero 788 keys (numeric/underscore/dash) pre-commit. Block key and all four source URLs zero-hit repo-wide pre-commit (the Luna Eaton URL is novel). EXTENSION of mechanism 671 (#728), not a duplicate: m671''s arms are Sep-2024 Meta (+0.55) and Sep-10-2026 Apple (-0.50); this run adds the Sep-16-2026 Meta arm (+0.25) that m671''s testable prediction explicitly called for.'
+      research_method: '1 browser.open FIRST-HAND read of the Eaton Luna piece (63 lines, Sep 23 2026) + carried first-hand reads of the two #728 arms (un-rescored per #807). 7 browser.search query sets this run. REJECTED candidates: Kif Leswing (m191/#194 already did the Meta-personalization vs Samsung/Google pair); Dominic Preston (m734/#838 already did the Sep-16 Luna stigma-forward headline); Lucas Ropek (m749/#863 already did the TechCrunch Luna surveillance-society piece); Jyoti Mann (The Information Meta-beat hire, no clean same-writer competitor arm sourced); Florence Ion (Gizmodo Snap Specs piece author unconfirmed in fetched text, URL already in-corpus); David Heaney (no corpus presence, no same-writer competitor arm); CNET writers Ion/Savvides/Eadicicco/Lanxon (no Luna bylines surfaced). All URLs copied verbatim from Full-URL listings. No URL construction. No zero-coverage claims per #492. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (directional register asymmetry extension of m671, not a near-null or inversion of the theory; no uniform-softening prediction under test; ledger holds at 29)'
+      no_analysis_json_update: true
+      ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+      is_significant: false
+      correlation_not_causation: true
+      correlation_note: 'Correlation is not causation.'
+      discovery_date: '2026-09-22'
+      test_count: 60
+      test_file: tests/test_type_b_928_kit_eaton_inc_meta_luna_constructive_pivot_vs_apple_watch_controversy_frame_sep22_6pm.py
 
 jessica_conditt:
   name: Jessica Conditt
