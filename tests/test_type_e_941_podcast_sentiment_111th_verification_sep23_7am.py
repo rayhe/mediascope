@@ -45,7 +45,7 @@ ITERATION = 941
 TYPE_LETTER = "E"
 RUN_PDT = "2026-09-23 07:00 PDT"
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "bf0cbbf1a8465afcd68daac32e220048bc2b94b0"
 
 
 def _git(args):
