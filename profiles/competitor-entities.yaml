@@ -22020,6 +22020,77 @@ marketplace_intermediary_landscape:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline_note: 'Qualitative Type C mapping - financial-incentive documentation leg, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+  noxtua_ch_beck_majority_shareholder_eur100m_series_c_publisher_owns_ai_sep2026:
+    mechanism_id: 804
+    iteration: 954
+    type: 'C'
+    date: '2026-09-23 20:00 PDT'
+    title: 'Noxtua raises circa EUR 100M Series C (Sep 23 2026): German legal publisher C.H. Beck becomes majority shareholder, Austrian legal publisher MANZ co-invests, law-firm backers CMS/Dentons exit - first PUBLISHER-AS-AI-OWNER inversion in the corpus'
+    summary: 'On Sep 23 2026 sovereign-AI legal-AI startup Noxtua raised around EUR 100M in a Series C that makes German legal publisher C.H. Beck its majority shareholder, with Austrian legal publisher MANZ also investing; early law-firm backers CMS and Dentons sold their shares (staying as anchor clients). CEO Dr. Leif-Nissen Lundbaek: Noxtua is built on exclusive content from leading legal publishers across the continent and has already built Europe''s largest legal database and Europe''s largest network of independent legal publishers; C.H. Beck exec board member Prof. Dr. Klaus Weber frames it as an investment in the future of the law. First corpus leg where the publisher is the AI company''s OWNER (majority shareholder), inverting every prior bilateral leg in which the AI company is the payer and the publisher the payee. Structural geometry leg only - no tracked general-news publication tie, no coverage-tone claim.'
+    deal_facts:
+      amount: 'circa EUR 100M Series C'
+      date: '2026-09-23'
+      majority_shareholder: 'C.H. Beck (German legal publisher)'
+      co_investor: 'MANZ (Austrian legal publisher)'
+      exiting_investors: 'CMS and Dentons (law firms; co-initiated Noxtua in 2024; sold shares, continue as anchor clients)'
+      remaining_shareholder: 'Dr. Leif-Nissen Lundbaek (CEO and founder)'
+      other_exiting: 'Global Brain Corporation, KDDI Open Innovation Fund, Dominik Schiener'
+      post_round_investor_base: 'C.H. Beck and MANZ the only investors besides the CEO/founder (per Noxtua statement to Artificial Lawyer)'
+    quotes:
+      lundbaek: 'We are developing Noxtua based on exclusive content from leading legal publishers across the continent, and have already built, among other things, Europe''s largest legal database and Europe''s largest network of independent legal publishers.'
+      weber_ch_beck: 'Combining high-quality data with innovative AI technology is the recipe for success in a rapidly changing market. As a publisher with a long-standing tradition, this commitment together with MANZ is also an investment in the future of the law. Noxtua''s vision goes hand in hand with our values as an independent family-owned company with a special responsibility for the legal system in Europe.'
+      trade_press_frame: 'Artificial Lawyer frames it as a pan-European powerhouse for legal AI and legal data underpinned by an EU-focused AI sovereignty strategy - building an AI-powered alternative to the giants in the US and UK; notes Sweden-based Legora is also widening legal research capabilities with two recent M and A deals.'
+    incentive_geometry:
+      ownership_inversion: 'Every prior corpus bilateral leg (mechanisms 504/494/499/514/519 News Corp dual-payer, 559 NYT-Amazon, 544 Vox-Microsoft, 606/660 contrast classes) positions the AI company as payer and the publisher as payee, predicting softer coverage of the payer by the payee. Noxtua is the first leg where the publisher is the majority OWNER of the AI company. The incentive prediction inverts: a publisher-owner has a pro-portfolio-company coverage tilt toward its own AI asset, and a harder adversarial posture toward rival AI companies whose licensing demands or training practices threaten the exclusive-content moat the owner paid to control.'
+      scarcity_thesis_leg: 'Extends the mechanism 929 scarcity-pricing thesis (financial gradients should track leverage and scarcity - who can withhold what): the exclusive-content moat is the withholdable asset, and C.H. Beck plus MANZ moved from licensing content to owning the AI company built on it. This is the end-state of the woo-and-sue trajectory (mechanisms 514, 519, 753) in a vertical where the publishers captured the ownership position.'
+      resolution_class: 'Against the license-versus-litigate legs (609 India attribution, 714 Village Media citation-only, 672 DOJ fair-use brief, 753 NYT 28M-plus litigation spend), Noxtua defines a third resolution class: publishers as equity owners of the AI lab. The enforcement-economics of mechanism 753 buys a court-set price; the Noxtua ownership route buys the company instead.'
+      intermediary_disclosure: 'Noxtua is not a Meta competitor and C.H. Beck/MANZ are legal publishers, not tracked general-news publications - this leg maps publisher-side AI-economics structure, not competitor money. Kept as a separate geometry leg (ProRata/PCM/Snowflake convention) precisely to avoid inflating the competitor-incentive count. No coverage-tone claim; no Type A prediction asserted.'
+    connects_to: [929, 714, 609, 753, 519, 514]
+    confounders_ranked:
+    - strength: 'STRONG'
+      text: 'No direct tracked-publication tie: C.H. Beck and MANZ are legal publishers, not publications in the tracked set. No coverage-tone prediction is generated for WIRED, FT, NYT, or any tracked outlet - this is a structural geometry leg, not a softening-incentive leg.'
+    - strength: 'STRONG'
+      text: 'Trade-press genre: Artificial Lawyer is a legal-AI trade publication covering a legal-AI company; celebratory register (sovereign-AI pioneer framing, hotness framing) is the outlet''s house color. The event facts (EUR 100M, majority shareholder, co-investor, share sales) are corroborated by the techstartups funding roundup; the sovereignty narrative is outlet-adjacent.'
+    - strength: 'MODERATE'
+      text: 'Undisclosed terms: round valuation, exact C.H. Beck share percentage, governance rights beyond the majority stake, and MANZ''s share size are undisclosed. The EUR 100M figure is the raise; the ownership inversion is directionally documented, not sized.'
+    - strength: 'MODERATE'
+      text: 'Equity-only exit by the law firms: CMS and Dentons sold shares but continue as anchor clients, so the investor-base restructuring is content-strategy alignment, not a financial divorce from the product.'
+    - strength: 'WEAK'
+      text: 'First-day reporting: all facts are same-day (Sep 23 2026) trade-press reporting; no independent confirmation of the Lundbaek/Weber quotes beyond the Artificial Lawyer first-hand read and the techstartups roundup corroboration.'
+    counterevidence:
+    - 'The publisher-ownership incentive prediction is bidirectional by design: a publisher-owner could equally apply adversarial coverage to rival AI labs (protecting the portfolio moat), so the leg predicts no uniform softness direction - it re-prices WHO the softness favors, not its sign.'
+    - 'Law-firm sellers staying as anchor clients cuts against a clean ownership-inversion reading: the demand side (CMS/Dentons) retains commercial leverage over the product even after exiting the cap table.'
+    - 'The EU sovereignty framing is PR-adjacent positioning by the parties; Europe''s largest legal database is a company claim, not an independently audited count.'
+    strongest_counterargument: 'A publisher majority stake does not guarantee coverage control: editorial independence norms, plus the fact that the tracked general-news set has zero C.H. Beck/MANZ ties, mean the Noxtua leg cannot soften any tracked publication''s Meta or competitor coverage. Its MediaScope value is purely structural: it completes the ownership class of the publisher-AI incentive matrix that the payer legs and the woo-and-sue legs left open.'
+    verdict: 'directionally_supported_not_proven'
+    no_analysis_json_update: true
+    artifact_grade: false
+    falsification_family: false
+    falsification_ledger_holds_at: 29
+    falsification_note: 'NOT a member of the falsification family; ledger holds at 29 (THIRTIETH remains the negative guard)'
+    statistical_discipline:
+      scorer: 'none'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      qualitative_only: true
+      correlation_not_causation: true
+      artifact_grade: false
+    sources:
+    - 'https://www.artificiallawyer.com/2026/09/23/noxtua-raises-e100m-c-h-beck-now-majority-shareholder/ (Artificial Lawyer, dated Sep 23 2026: circa EUR 100M Series C; C.H. Beck new majority shareholder; MANZ also invested; CMS and Dentons sold shares, stay as anchor clients; Global Brain Corporation, KDDI Open Innovation Fund, Dominik Schiener exit; Beck and Manz the only investors besides CEO/founder Dr. Leif-Nissen Lundbaek; Lundbaek quote on exclusive content from leading legal publishers and Europe''s largest legal database and network of independent legal publishers; Prof. Dr. Klaus Weber quote on combining high-quality data with AI technology and investment in the future of the law; pan-European EU sovereignty strategy frame; Legora M and A note; first-hand browser.open read this run, 71 rendered lines)'
+    - 'https://techstartups.com/2026/09/23/startup-funding-news-today-september-23-2026-tekever-f13-brahma-ai-noxtua-standardx-more/ (Tech Startups Sep 23 2026 funding roundup: C.H.BECK taking majority control of Noxtua; Noxtua tying European legal AI directly to the publishers that own the underlying information; strategic-ownership-over-investment thesis; via search-result excerpt, second-hand per #503)'
+    research_method: '2 browser.search query sets this run: (1) OpenAI licensing deal publisher content partnership announced (since=2026-09-10) - surfaced FourWeekMBA India synthesis (already mechanisms 624/709 and #944/m798 fee estimates), medianama BCCL piece (in corpus), Bloomberg Law Hearst/Dotdash Meredith (2024 vintage), own-repo #504 commit (circular, rejected), stockmoguls Sep-6 archive piece (NYT litigation spend already mechanism 869 per #949 note, DOJ fair-use brief already mechanism 672, NYT-Amazon licensing in corpus mechanism 559); (2) Perplexity publisher licensing deal revenue share announced (since=2026-09-01) - surfaced Comet Plus 42.5M 80/20 program explainers (already mechanisms 391 and Cashmere premium-data layer, zero new program), leadgen-economy Comet Plus piece (Perplexity June 2026 200M raise at 20B valuation detail, not selected: financing leg, no publisher-money-flow novelty), blankspace.so Licensing Mirage working paper (Wiley 40M FY2025, Microsoft PCM, Snowflake Cortex - all in corpus; the paper''s Apple-News Corp misclassification finding already in corpus via the verification leg); (3) AI company news publisher licensing agreement lawsuit settlement copyright (since=2026-09-14) - surfaced iHeart relays of the Anthropic 1.5B settlement (in corpus); (4) AI licensing deal publishers funding round September 2026 (since=2026-09-12) - SELECTED the Artificial Lawyer Sep 23 2026 Noxtua piece (first-hand browser.open read, 71 lines) plus the techstartups Sep 23 funding roundup (excerpt-bounded per #503); Press Gazette Sep 23 tracker re-surfaced (India fee estimates already mechanism 798; Village Media already mechanism 714). Rejected candidates: India BCCL/Indian Express deals (already #944/m798), Village Media (already m714), Wiley AI revenue (already m777), NYT litigation spend (already m753 family), DOJ fair-use brief (already m672), Getty v Stability AI and Ziff Davis v OpenAI Sep-2026 developments (no results surfaced). Pre-commit novelty greps per #715: zero test_type_c_954 files on disk (glob); no "Type C #954" in git log (--grep); max numeric mechanism_id 803 in-tree pre-commit; zero underscore-form 804 key strings repo-wide pre-commit (format-built needles, no literals carried); zero numeric 804-form mechanism keys repo-wide pre-commit; block key noxtua_ch_beck_majority_shareholder_eur100m_series_c_publisher_owns_ai_sep2026 zero-hit repo-wide pre-commit; both evidence URLs zero-hit repo-wide pre-commit; zero noxtua hits repo-wide pre-commit. All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Bounded absences per iteration-492 rule (no C.H. Beck/MANZ-tracked-publication tie surfaced; no round valuation disclosed; none claimed as proof).'
+    novelty: 'First corpus mechanism on publisher-as-AI-owner: zero noxtua, C.H. Beck, or MANZ strings repo-wide pre-commit. First ownership-class leg of the publisher-AI incentive matrix (payer legs: OpenAI/News Corp/Meta/Amazon/Microsoft/Perplexity bilateral; intermediary legs: ProRata/PCM/Snowflake/TollBit/Cashmere; litigation legs: woo-and-sue mechanisms 514/519/753). Distinct from mechanism 519 (News Corp dual-payer: publisher COLLECTS from AI companies), mechanism 753 (NYT 28M-plus litigation spend: publisher SUED the AI companies), mechanism 672 (DOJ fair-use brief), mechanism 714 (Village Media citation-only: publisher signs FOR attribution), and mechanism 609 (India attribution deals). The corpus publisher-AI incentive matrix now spans all three resolution classes: license (payer), litigate (plaintiff), own (shareholder). Novelty claims pinned for the test_type_c_954 file per the #752 convention.'
+    verification:
+      iteration: 954
+      type: 'C'
+      date: '2026-09-23 20:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
+    statistical_discipline_note: 'Qualitative Type C mapping - financial-incentive documentation leg, not a tone test; scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule. MANUAL qualitative only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
 advance_dual_asset_monetization:
   overview: 'Advance Publications operates TWO parallel AI content monetization channels
 
