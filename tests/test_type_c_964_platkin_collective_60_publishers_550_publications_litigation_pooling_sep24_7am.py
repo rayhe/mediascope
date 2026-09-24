@@ -106,7 +106,7 @@ SOURCE_URL_4 = "https://newjerseyglobe.com/media/nearly-400-local-newspapers-sue
 FILE_NAME = "test_type_c_964_platkin_collective_60_publishers_550_publications_litigation_pooling_sep24_7am.py"
 
 # Placeholder for the follow-up commit that pins the iteration to its own commit.
-ANCHORED_SHA = "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef"
+ANCHORED_SHA = "4484e24988020771601c2859dd7cbf9ac484cf99"
 
 ITERATION = 964
 TYPE_LETTER = "C"
