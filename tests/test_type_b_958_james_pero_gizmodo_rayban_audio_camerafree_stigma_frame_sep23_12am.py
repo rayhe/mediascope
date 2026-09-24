@@ -93,7 +93,7 @@ MECH_KEY = (
     "stigma_frame_persistence_sep23"
 )
 NEXT_SIBLING = "\ndaniel_cooper:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "f8b0ea6cc8025078b8d3761431483bea135052b9"
 ITERATION = 958
 TYPE_LETTER = "B"
 
