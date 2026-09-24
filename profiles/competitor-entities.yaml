@@ -5192,6 +5192,116 @@ entities:
         yaml_parse_clean: true
         ascii_only: true
 
+    platkin_collective_60_publishers_550_publications_litigation_pooling_sep2026:
+      mechanism_id: 810
+      iteration: 964
+      rotation: 'Type C'
+      date_analyzed: '2026-09-24'
+      time_pdt: '07:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Platkin LLP publisher collective v. OpenAI + Microsoft (first suit Jun 24 2026: nearly 400 local/regional newspapers; second suit Sep 16 2026: 26 new publishers, 60 publishers / 550-plus publications) - FIRST dedicated corpus mechanism on litigation-tier consolidation: one boutique firm aggregates the sue tier into a 550-publication bloc expecting consolidation with the NYT-led MDL'
+      type: financial_incentive_mapping
+      block_key: type_c_964_platkin_collective_litigation_pooling_sep24_7am
+      type_c_focus: 'FIRST dedicated corpus mechanism on the Platkin LLP publisher collective: the sue tier of the sign-or-sue architecture is consolidating from atomized suits into a 550-publication bloc under a single boutique firm. Jun 24 2026: Platkin LLP (founded earlier in 2026 by former New Jersey Attorney General Matthew J. Platkin and AG-office litigators) filed the first coordinated suit on behalf of nearly 400 local/regional newspapers against OpenAI and Microsoft - the largest coordinated legal effort by local and regional newspapers (NJ Globe). Sep 16 2026: a second suit added 26 publishers, bringing the collective to 60 publishers and 550-plus publications. Memphis Magazine expects consolidation with the In re OpenAI Copyright Infringement multi-district litigation (the NYT-led MDL) very soon. This is the enforcement-side mirror of mechanism 720''s pool-and-license: publishers aggregate CLAIMS to sue where the pool aggregates RIGHTS to sell.'
+      suit_facts:
+      - 'First suit (Jun 24 2026): Platkin LLP filed on behalf of nearly 400 local and regional newspapers against OpenAI and Microsoft (NJ Globe; Editor and Publisher; PYMNTS). Allegations: systematic copying of copyrighted reporting to train ChatGPT and Copilot without permission or compensation; knowing stripping of copyright-management information (author bylines, copyright notices, terms of use) in violation of the DMCA. The complaint cites OpenAI founder Sam Altman''s testimony before the British House of Lords that it would be ''impossible to train today''s leading AI models without using copyrighted materials.'' (NJ Globe)'
+      - 'Second suit (filed Wednesday Sep 16 2026, reported Sep 17): Platkin LLP filed a second copyright-infringement suit on behalf of regional news publishers against OpenAI Inc. and Microsoft Corp. (Law.com, Sep 17 2026). 26 new publishers joined, including Times Publishing Company (Tampa Bay Times), Austin Chronicle Corp., Alternative Newsweekly Foundation, and SwimSwam Partners (Insider NJ, relayed by Cryptopolitan). Memphis Magazine, the Memphis Flyer, and Memphis Parent joined alongside Noisy Creek colleagues (Memphis Magazine, Sep 16 2026). Collective now 60 publishers covering 550-plus publications (Insider NJ; Law.com headline: 500-plus regional news publishers).'
+      - 'Firm: Platkin LLP, a boutique firm founded earlier in 2026 by former New Jersey Attorney General Matthew J. Platkin and a team of litigators from the attorney general''s office (PYMNTS, Jun 25 2026; Law.com). Matt Platkin: ''The scale of this coalition should be a wake-up call.'' (Cryptopolitan relay of Insider NJ)'
+      - 'MDL linkage: Memphis Magazine (Sep 16 2026) expects its case ''to be consolidated with the In re OpenAI Copyright Infringement multi-district litigation very soon'' - the same NYT-led MDL (S.D.N.Y. No. 1:25-md-03143, Judge Sidney H. Stein) as mechanisms 756 (#874) and 759 (#879). The 550-publication bloc rides the MDL''s September escalation pricing momentum without the MDL plaintiffs'' $28M-plus solo litigation spend (mechanism 753).'
+      quotes:
+        wake_up_call: 'Matt Platkin (via Insider NJ, relayed by Cryptopolitan): ''The scale of this coalition should be a wake-up call.'''
+        school_board_meetings: 'Memphis Magazine (Sep 16 2026): ''AI systems do not attend school board meetings, sit through city council hearings, chase down leads, cultivate sources, or investigate corruption. Local reporters do.'''
+        platkin_linkedin: 'Matthew Platkin (Jun 24 2026, via PYMNTS relay of the firm''s LinkedIn post): ''AI systems do not critically evaluate city council and community meetings. They don''t investigate local crimes and corruption, publish obituaries, or cover the new restaurant opening downtown. Local reporters do. This lawsuit is not about stopping AI innovation, but ensuring that innovation happens fairly and within the bounds of the law.'''
+      relationship_direction_taxonomy: 'NINTH relationship direction per the m807 enumeration (sue-then-sign m624; pay-or-litigate bifurcation m636; grant-then-sue m675; license-over-authors; pool-and-license m720; infrastructure-capture m738; publisher-as-feed-operator m741; vendor-embed m807): LITIGATION-POOLING - publisher-side collective intermediation on the enforcement side. Publishers aggregate CLAIMS through a single law firm to sue, the mirror of pool-and-license (publishers aggregate RIGHTS through a network operator to sell). The money-flow geometry is cost-amortization across 550 publications plus MDL-riding, not a payer leg. (Taxonomy-count tension noted: m737''s finding enumerated termination-leverage as its seventh direction; the m807 enumeration used here does not list it. Not resolved this run.)'
+      incentive_geometry:
+        scale_economics: 'Mechanism 753 documents the NYT''s $28M-plus solo litigation spend. The Platkin collective amortizes enforcement cost across 550 publications through one boutique firm - the sue tier''s answer to the sign tier''s bilateral deal costs. Collective scale converts the pay-or-litigate bifurcation (m636) from an individual-publisher gamble into a portfolio bet.'
+        mdl_riding: 'Same procedural logic as mechanism 762''s MDL-family linkage: the bloc expects consolidation with the NYT-led MDL, inheriting the September 2026 escalation''s pricing momentum (m756 partial-summary-judgment motions; m759 unsealed testimony) without the MDL plaintiffs'' spend. The related-cases penumbra now covers a ~400-paper bloc and a 550-publication bloc alongside the rankings publisher.'
+        sign_tier_parallel: 'The sue tier consolidates while the sign tier expands in the same month: OpenAI''s India attribution blitz (Sep 7-8, m624/660/944) and the Village Media Canada leg (Sep 16, m714) signed in the same window the Platkin bloc grew to 550 publications. The sign-or-sue bifurcation is not resolving; both poles are scaling.'
+        local_news_texture: 'The bloc is local/regional (Tampa Bay Times, Austin Chronicle, Memphis titles, SwimSwam) - the same local-news surface as mechanism 714''s Village Media sign-tier leg. The local-news vertical now has a sign leg (Village Media) and a sue leg (Platkin collective) in the same month, a clean within-vertical natural experiment for future Type A/B work.'
+      connects_to: [636, 720, 675, 762, 756, 759, 753, 714]
+      ranked_confounders:
+      - rank: 1
+        strength: 'STRONG'
+        text: '0 browser.open this run - all suit facts via search-result excerpts (NJ Globe, Law.com paywalled excerpt, Memphis Magazine, Cryptopolitan/Insider NJ relays) per #503; the complaints'' full counts and prayer for relief are bounded out, not asserted'
+      - rank: 2
+        strength: 'STRONG'
+        text: 'The 60-publisher / 550-publication figures are Platkin LLP self-reported via Insider NJ - plaintiff-side numbers, not court-verified counts; the firm has an interest in projecting scale'
+      - rank: 3
+        strength: 'STRONG'
+        text: 'MDL consolidation is EXPECTED (''very soon'' per Memphis Magazine), not ordered - bounded per the iteration-492 rule; the bloc currently comprises two separate complaints, not one certified vehicle'
+      - rank: 4
+        strength: 'MODERATE'
+        text: 'n=1 law firm - the litigation-pooling pattern is Platkin-specific until a second firm replicates the collective model'
+      - rank: 5
+        strength: 'MODERATE'
+        text: 'Local/regional composition - the marquee nationals litigate separately (NYT-led MDL core), so the bloc''s settlement leverage differs from the MDL plaintiffs'''
+      - rank: 6
+        strength: 'WEAK'
+        text: 'The Jun 24 first suit predates this run by three months; only the Sep 16 expansion is a September event - the mechanism''s novelty is first-to-corpus consolidation documentation, not a wholly new September filing'
+      bounded_absences:
+      - 'No complaint text reviewed (0 browser.open; excerpt-bounded per #503) - damage theories and per-plaintiff counts not asserted'
+      - 'MDL consolidation ordered vs expected: expected only, bounded per the iteration-492 rule'
+      - 'No per-publication roster published - the 60 named publishers are partially listed (Insider NJ names four; Memphis Magazine names its own titles); the full roster is not public'
+      statistical_discipline:
+        scope: qualitative structural litigation-economics mapping only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: directionally_supported_not_proven
+      cautious_language_required: true
+      correlational_note: 'This mapping documents the Platkin LLP publisher collective (Jun 24 and Sep 16 2026 suits) as a financial-incentive datum on the litigation tier of the sign-or-sue architecture: 60 publishers / 550-plus publications aggregated under one firm, expecting MDL consolidation. Litigation posture documents the financial incentive; it does not prove editorial influence or that the sue tier will prevail. Correlation is not causation. No causal claim. No coverage-tone claim.'
+      no_coverage_tone_claim: true
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - litigation-economics leg with no coverage-tone pair; ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 636 (pay-or-litigate bifurcation, #729 - the doctrine this leg''s collective instantiates at scale)'
+      - 'mechanism 720 (pool-and-license, #814 - the licensing-side mirror: aggregate rights to sell vs aggregate claims to sue)'
+      - 'mechanism 675 (Seattle Times/Newsday grant-then-sue, #734 - same OpenAI+Microsoft defendants; individual-publisher contrast to the collective)'
+      - 'mechanism 762 (U.S. News v. OpenAI, #884 in-flight - same MDL-riding logic, rankings-publisher edge)'
+      - 'mechanism 756 (Sep 4 partial-summary-judgment motions, #874 - the MDL escalation the bloc rides)'
+      - 'mechanism 759 (Sep 17 unsealed filings, #879 - same MDL; the ~93% click-through datum prices the attribution consideration the bloc litigates over)'
+      - 'mechanism 753 (NYT $28M-plus litigation economics, #869 - the solo spend the collective amortizes)'
+      - 'mechanism 714 (Village Media, #804 - the local-news sign-tier counterpart, same month)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded litigation facts; 0 browser.open this run)'
+      - 'iteration-492 rule (bounded absence: MDL consolidation expected, not yet ordered; 60/550 figures firm-reported, not court-verified)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      counterevidence:
+      - 'A 550-publication bloc is also a 550-publication SETTLEMENT counterparty - consolidation cuts toward mass settlement as well as mass litigation; the bloc''s scale is bargaining leverage, not proof the sue tier prevails'
+      - 'The sign tier expanded in the same window (India Sep 7-8, Village Media Sep 16) - publishers are still signing, so consolidation does not show the litigation tier winning the architecture'
+      - 'OpenAI and Microsoft have settled publisher disputes before and maintain the fair-use defense (DOJ statement of interest, m672) - the bloc faces the same merits hurdle as the atomized suits, at larger scale'
+      strongest_counterargument: 'Collective scale is leverage, not victory: the 550-publication bloc aggregates bargaining power on both the litigation and settlement paths, and its consolidation says nothing about the merits. Its value to the corpus is structural - it completes the ninth relationship direction (litigation-pooling) and documents the sue tier scaling in parallel with the sign tier - not predictive of case outcomes or of any tracked publication''s coverage.'
+      novelty: 'First corpus mechanism on the Platkin LLP publisher collective: zero ''platkin'' hits repo-wide pre-commit (case-insensitive); zero ''550 publication'' / ''60 publisher'' hits; zero ''noisy creek'' hits (the one ''memphis'' hit is the Nscale Memphis data-center item, unrelated); zero underscore-form 810 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); max numeric mechanism_id 809 pre-commit; block key platkin_collective_60_publishers_550_publications_litigation_pooling_sep2026 zero-hit repo-wide pre-commit; all 4 source URLs zero-hit repo-wide pre-commit (git grep -F). NINTH relationship direction (litigation-pooling). ASCII-only, no em dashes.'
+      sources:
+      - 'Memphis Magazine (Sep 16 2026) - first-hand publisher account: joined the Platkin suit with the Memphis Flyer and Memphis Parent alongside Noisy Creek colleagues; ''On Wednesday, September 16, 26 local, regional, and specialty publishers joined the lawsuit... bringing the total to 60 publishers and 550-plus publications''; expects consolidation with the In re OpenAI Copyright Infringement MDL ''very soon''; local-reporters-vs-AI framing quote. (search excerpt, excerpt-bounded per #503, 0 browser.open)'
+      - 'Law.com / NJ Law Journal (Sep 17 2026) - former NJ AG''s firm helms copyright fight: ''filed a second copyright infringement lawsuit on behalf of regional news publishers against OpenAI Inc. and Microsoft Corp. on Wednesday''; 500-plus regional news publishers. (search excerpt, paywalled, per #503)'
+      - 'Cryptopolitan via tradingkey mirror (Sep 2026) - ''The scale of this coalition should be a wake-up call'' (Matt Platkin, via Insider NJ); 60 publishers per Platkin LLP; latest group: Times Publishing Company (Tampa Bay Times), Austin Chronicle Corp., Alternative Newsweekly Foundation, SwimSwam Partners; 550-plus outlets after 26 joined (Insider NJ). Second-hand attribution marked.'
+      - 'NJ Globe (Jun 24 2026) - first suit: nearly 400 local newspapers sue OpenAI and Microsoft over alleged copyright theft; ''largest coordinated legal effort''; systematic-copying and DMCA 1202 CMI-stripping allegations; Altman House of Lords ''impossible to train'' testimony. (search excerpt, per #503)'
+      research_method: '4 browser.search query sets this run: (1) publisher AI licensing deal September 2026 OpenAI - surfaced Village Media Sep 17 (already m714, rejected), India attribution (m624/660/944, rejected), Atlantic/Vox/Hearst/DDM vintage deals (rejected); (2) Meta Connect 2026 publisher partnership - surfaced Meta x News Corp $50M/yr (Feb 2026 vintage, in corpus) and the Dec 2025 seven-publisher bundle (m331, rejected), no new Connect-week publisher deal; (3) newspaper publisher sues AI company September 2026 - surfaced the Platkin collective Sep 16 expansion (SELECTED) plus Seattle Times/Newsday Sep 7 filing (m675 territory, rejected) and the NYT Sep 4 summary-judgment wave (m756, rejected); (4) Anthropic/xAI/Meta publisher deal September 2026 - surfaced the $1.5B Bartz settlement distribution dispute (in corpus, rejected) and a synthetic-looking financialcontent Anthropic-NYT ''settlement'' (rejected as unverifiable); follow-up quoted-Platkin query surfaced Law.com Sep 17 second-suit confirmation, the Jun 24 first-suit history (NJ Globe/E&P/PYMNTS), and the Insider NJ 60/550 figures via Cryptopolitan relay (SELECTED with second-hand attribution). 0 browser.open this run (excerpt-bounded per #503). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - https://memphismagazine.com/the-memo/memphis-magazine-joins-landmark-copyright-lawsuit-against-op/
+      - https://www.law.com/njlawjournal/2026/09/17/former-nj-ags-firm-helms-copyright-fight-against-openai-microsoft-on-behalf-of-500-plus-regional-news-publishers/
+      - https://www.tradingkey.com/news/cryptocurrencies/262172046-cryptopolitan
+      - https://newjerseyglobe.com/media/nearly-400-local-newspapers-sue-openai-microsoft-over-alleged-copyright-theft/
+      test_file: 'tests/test_type_c_964_platkin_collective_60_publishers_550_publications_litigation_pooling_sep24_7am.py'
+      verification:
+        iteration: 964
+        type: 'C'
+        date: '2026-09-24 07:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+
   anthropic:
     display_name: Anthropic
     aliases:
