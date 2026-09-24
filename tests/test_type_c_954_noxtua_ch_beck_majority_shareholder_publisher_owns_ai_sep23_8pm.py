@@ -77,7 +77,7 @@ SOURCE_URL_2 = "https://techstartups.com/2026/09/23/startup-funding-news-today-s
 FILE_NAME = "test_type_c_954_noxtua_ch_beck_majority_shareholder_publisher_owns_ai_sep23_8pm.py"
 
 # Placeholder for the follow-up commit that pins the iteration to its own commit.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "0de40f7842e22cfd0341f70d5c747c840a8a7147"
 
 ITERATION = 954
 TYPE_LETTER = "C"
