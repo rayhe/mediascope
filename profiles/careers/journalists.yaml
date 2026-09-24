@@ -19970,7 +19970,7 @@ kit_eaton:
   current_publication: Inc.
   publication_owner: Mansueto Ventures
   beat: wearables, AI hardware, consumer tech
-  mechanism_ids: [671, 788]
+  mechanism_ids: [671, 788, 815]
   career_history:
   - employer: Inc.
     role: Contributor
@@ -19984,7 +19984,12 @@ kit_eaton:
     (mechanism 788, iteration #928): Sep-16 2026 Meta Luna column read FIRST-HAND
     this run (63 lines via browser.open); tests m671''s own testable prediction -
     PARTIAL SUPPORT (inversion replicates within a 6-day window on the same
-    ambient-audio privacy topic, magnitude attenuated +0.55 to +0.25).'
+    ambient-audio privacy topic, magnitude attenuated +0.55 to +0.25). THIRD Type B
+    extension (mechanism 815, iteration #973): Sep-23/24 2026 Meta Connect launch
+    column (excerpt-tier) resolves m788''s own testable predictions - prediction 1
+    (continued constructive register on the concrete launch) FAILS (-0.45 alarm
+    register), prediction 2 (controversy frame on a Meta always-listening audio
+    feature) SUPPORTED; register follows the peg, not the entity.'
   source_urls:
   - https://www.inc.com/kit-eaton/meta-bets-on-augmented-reality-devices-as-future-of-wearable-tech.html
   - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
@@ -20087,6 +20092,115 @@ kit_eaton:
       discovery_date: '2026-09-22'
       test_count: 60
       test_file: tests/test_type_b_928_kit_eaton_inc_meta_luna_constructive_pivot_vs_apple_watch_controversy_frame_sep22_6pm.py
+    type_b_973_kit_eaton_inc_connect2026_launch_alarm_vs_luna_rumor_constructive_pivot_sep24:
+      block_key: type_b_973_kit_eaton_inc_connect2026_launch_alarm_vs_luna_rumor_constructive_pivot_sep24
+      mechanism_id: 815
+      iteration: 973
+      date: '2026-09-24 16:00 PDT'
+      type: B
+      scheduled_job_id: mediascope-daily-iteration
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      publication: Inc. (Mansueto Ventures)
+      journalist: Kit Eaton
+      competitor: Meta (within-Meta temporal test; Apple arm carried as cross-entity context)
+      design: 'within-journalist temporal natural experiment on a CONCRETE launch peg: Inc. contributor Kit Eaton on the Meta Connect 2026 keynote (Sep 23 2026, announced hardware) vs his own Sep-16-2026 Luna RUMOR column, a 7-day temporal gap inside the same Inc. column genre; resolves mechanism 788''s own testable predictions'
+      finding: 'RESOLVES mechanism 788''s testable predictions. NEW Meta arm (Sep 23/24 2026): Eaton''s Inc. Connect-2026 launch column "Meta Just Unveiled a Slew of New Smart Glasses. It''s Going to Be Tricky to Tell If Someone Is Wearing Them" carries a surveillance-alarm register (MANUAL ILLUSTRATIVE -0.45): dek "Some have cameras and some don''t - but they all raise privacy concerns"; "the company is facing an increasingly vocal backlash against camera-equipped smart glasses, with some vocal critics calling for a ban"; EFF warning of "civil liberties and privacy concerns raised by wearing the glasses in public, and by sharing personal info with Meta - thanks to the company''s tarnished reputation"; the camera-free Audio concession acknowledged then undercut ("Audio-only smart glasses sound like a smart solution to this problem. Or do they?"; "there''s still plenty of risk associated with wearing microphones on your head, with audio data flowing directly to Meta"); "For tech enthusiasts, it was a dream. For Meta critics and those worried about digital privacy, it was probably a nightmare." CARRIED Meta arm (m788, #928, un-rescored per #807): Sep-16 Luna RUMOR column, constructive pivot register (+0.25). Within-writer Meta temporal delta (concrete-launch minus rumor) -0.70 = -0.45 - 0.25. m788''s testable prediction 1 (continued constructive register on the concrete launch) FAILS: the constructive register does NOT survive contact with the concrete launch peg, so the concession-peg confound HARDENS rather than weakens - constructiveness attached to the rumor of a concession, not to Meta-the-entity. m788''s testable prediction 2 (controversy frame applied to a Meta always-listening audio feature) is SUPPORTED verbatim: the launch column applies the controversy frame to the audio-only product ("still plenty of risk associated with wearing microphones on your head"). The register therefore follows the PEG, not the entity: constructive on the concession-rumor peg, alarm on the concrete-launch peg at peak Connect-week stigma pressure. REPLICATES the m637/m852 peg-follows-register pattern (MIT TR) at journalist level. BOUNDS m788 (the Sep-16 constructiveness is concession-peg-specific; the Meta-favorability entity-gradient reading is bounded to the rumor peg). connects_to: [671, 788, 637, 852].'
+      new_meta_arm:
+        title_verbatim: 'Meta Just Unveiled a Slew of New Smart Glasses. It''s Going to Be Tricky to Tell If Someone Is Wearing Them'
+        date: '2026-09-24'
+        date_basis: 'bounded - the column references the Meta Connect 2026 keynote (Sep 23) as "yesterday"; biztoc mirror stamped 2026-09-24 16:16 (UTC); search index Last-Updated 23h on the Sep 24 2026 search'
+        byline: Kit Eaton (sole)
+        byline_basis: 'Inc. technology section page and the kit-eaton author page both list the piece under Kit Eaton''s name; URL carries the inc.com/kit-eaton/ slug (byline verified via URL paths per the entry-level convention)'
+        publication: inc
+        genre: 'launch-event column (Meta Connect 2026 keynote, Sep 23 2026)'
+        url: https://www.inc.com/kit-eaton/meta-just-unveiled-a-slew-of-new-smart-glasses-its-going-to-be-tricky-to-tell-if-someone-is-wearing-them/91410169
+        url_attestation: 'verbatim full-URL listing from the Sep 24 2026 browser.search Full-URL section; Inc. technology section page and kit-eaton author page both surface the piece; biztoc mirror (2026-09-24 16:16 UTC) confirms inc.com publication'
+        key_quotes:
+        - 'Dek: "There are now oodles of different Meta smart glasses. Some have cameras and some don''t - but they all raise privacy concerns."'
+        - '"For tech enthusiasts, it was a dream. For Meta critics and those worried about digital privacy, it was probably a nightmare."'
+        - '"The company is facing an increasingly vocal backlash against camera-equipped smart glasses, with some vocal critics calling for a ban, arguing the cams can be used to record other people without them either giving permission or even knowing it''s happening."'
+        - '"Other bodies, like the Electronic Frontier Foundation, are warning users of potential civil liberties and privacy concerns raised by wearing the glasses in public, and by sharing personal info with Meta - thanks to the company''s tarnished reputation for protecting users'' data and privacy."'
+        - '"Audio-only smart glasses sound like a smart solution to this problem. Or do they?"'
+        - '"If you think about it, there''s still plenty of risk associated with wearing microphones on your head, with audio data flowing directly to Meta. And if you wear them at work, there''s always the potential for sensitive data to leak out, either accidentally or deliberately."'
+        tone_illustrative: -0.45
+        tone_basis: 'MANUAL ILLUSTRATIVE: surveillance-alarm / controversy-forward launch register - dek frames every glasses variant (camera or not) as privacy-raising; the camera-free concession is acknowledged then undercut ("Or do they?"); the piece routes its alarm partly through sourced voices (vocal ban-critics, EFF) but Eaton''s own framing ("tricky to tell if someone is wearing them", "probably a nightmare") carries it in his own voice'
+        evidence_tier: 'EXCERPT-TIER: search-result excerpts plus the Inc. section/author page listings and the biztoc mirror; full Inc. article text NOT first-hand reviewed (0 browser.open per #503)'
+      carried_meta_arm:
+        note: 'Carried un-rescored per #807 from mechanism 788 (Type B #928).'
+        title: 'Meta''s New Smart Glasses Could Have 1 Big Change. It Just Might Make Them More Socially Acceptable'
+        date: '2026-09-16'
+        byline: Kit Eaton (sole)
+        tone_illustrative: 0.25
+        tone_basis: 'carried from mechanism 788 unrescored per #807 (constructive pivot register on the Luna concession RUMOR)'
+        source_urls:
+        - https://www.inc.com/kit-eaton/metas-new-smart-glasses-could-have-1-big-change-it-just-might-make-them-more-socially-acceptable/91406252
+      carried_apple_arm_context:
+        note: 'Carried un-rescored per #807 from mechanism 671 (Type B #728) as cross-entity context.'
+        title: 'The Apple Watch Got a Massive AI Upgrade - and the Controversy Could Get It Banned at the Office'
+        date: '2026-09-10'
+        tone_illustrative: -0.50
+        source_urls:
+        - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
+      asymmetry_scorer_result:
+        illustrative_delta_meta_concrete_minus_meta_rumor: -0.70
+        delta_calc: '-0.45 - 0.25 = -0.70'
+        delta_direction: 'negative: within 7 days, the same writer drops seven tenths on his own Meta scale between the concession-RUMOR peg and the concrete-LAUNCH peg'
+        target_entity: Meta
+        reference_entity: 'Meta (within-entity temporal); Apple (-0.50 carried) as cross-entity context'
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per excerpt-tier register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1 fresh arm vs n=1 carried Meta arm. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine: 'engine NOT run (illustrative arms only)'
+        artifact_grade: 'NOT artifact-grade'
+      testable_prediction_resolution:
+      - 'PREDICTION 1 (m788): continued constructive register on the concrete Luna launch -> FAILS. Eaton''s launch column is surveillance-alarm (-0.45), not constructive. The concession-peg confound HARDENS (not weakened): constructiveness attached to the rumor of a concession, not to Meta-the-entity.'
+      - 'PREDICTION 2 (m788): controversy frame applied to a Meta always-listening audio feature -> SUPPORTED VERBATIM. "There''s still plenty of risk associated with wearing microphones on your head, with audio data flowing directly to Meta."'
+      extends: 'RESOLUTION of mechanism 788''s testable predictions (7-day temporal leg); BOUNDS mechanism 788''s entity-effect reading to the rumor peg; REPLICATES the m637/m852 peg-follows-register pattern at journalist level'
+      connects_to: [671, 788, 637, 852]
+      incentive_context: 'Inc. owned by Mansueto Ventures; carried from mechanism 137 (Aug 16): Mansueto revenue $23.1M (ZoomInfo), 55% from advertising (Digiday 2025); Google Analytics 4 in tech stack (LeadIQ); standard Google programmatic/search dependency; Joe Mansueto founded Morningstar (tracks Alphabet stock); ZERO Meta content licensing deals, ZERO Meta advertising partnerships specific to Mansueto. Illustrative only - NOT a financial proof; columnist selection and opinion-genre confound it. The naive payer-softening prediction is not invoked at journalist level.'
+      confounders:
+      - '[STRONG] Excerpt-tier evidence: full Inc. article text NOT first-hand reviewed; register inferred from search-result excerpts plus section/author-page listings and the biztoc mirror. Full-text register could differ.'
+      - '[STRONG] Concession-rumor vs concrete-launch peg difference: Eaton credits rumored concessions ("may have listened") and scrutinizes shipped products - the register may follow concreteness of the news peg, not the entity.'
+      - '[STRONG] Connect-week peak stigma pressure: French criminal probe (Sep 18), venue bans, "pervert glasses" discourse (per #966), EFF warnings - ambient scrutiny attaches to the launch peg regardless of writer.'
+      - '[MODERATE] Sourced alarm: the launch column routes much of its alarm through sourced voices (vocal ban-critics, EFF); Eaton''s own voice frames the dek, so within-writer sourcing choice carries part of the gap.'
+      - '[MODERATE] The camera-free Audio is still framed as the privacy answer ("sound like a smart solution to this problem") before the "Or do they?" pivot - the concession is acknowledged, then undercut.'
+      - '[WEAK] 7-day timing gap (Sep-16 rumor to Sep-23/24 launch); the news cycle hardened between the arms.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: the launch column is not uniform alarm - it relays the launch facts straight (Audio specs, 12h battery, thinner/lighter); the alarm register is a coda-layer, not the whole piece.'
+      - 'COUNTEREVIDENCE: Eaton rehearsed Meta''s full privacy rap sheet in the Sep-16 constructive piece too ("pervert glasses", "a device with questionable ethics, from a questionable company") - no whitewash in either arm; writer-level continuity is the skepticism, not the valence.'
+      - 'COUNTEREVIDENCE: the carried Apple arm (-0.50) shows Eaton is controversy-forward across entities on shipped always-listening features - no Meta-specific gradient, which supports the peg-driven reading over an entity-driven one.'
+      verdict: directionally_supported_not_proven
+      is_significant: false
+      is_falsification_family_member: false
+      falsification_family: 'NOT a falsification-family member (mechanism-level testable-prediction resolution + register bound, not a uniform-prediction test of the incentive theory; ledger holds at 29).'
+      falsification_ledger: 29
+      statistical_discipline:
+        tone: MANUAL_ILLUSTRATIVE
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine: NOT_RUN
+        verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      correlation_note: 'Correlation is not causation.'
+      discovery_date: '2026-09-24'
+      test_count: 52
+      test_file: tests/test_type_b_973_kit_eaton_inc_connect2026_launch_alarm_vs_luna_rumor_constructive_pivot_sep24_4pm.py
+      novelty: 'FIRST mechanismization of Eaton''s Sep-23/24 2026 Connect-launch column. Zero test_type_b_973 files on disk (glob verified this run). No Type B #973 in git log. Max numeric mechanism_id 814 pre-commit; zero 815 keys (numeric/underscore/dash) pre-commit. Block key and the 91410169 URL zero-hit repo-wide pre-commit. RESOLUTION of mechanism 788''s own testable predictions (not a duplicate): m788''s arms are Sep-10 Apple (-0.50) and Sep-16 Meta rumor (+0.25); this run adds the Sep-23/24-2026 Meta launch arm (-0.45) that m788''s predictions explicitly called for.'
+      research_method: '4 browser.search query sets this run ((1) Meta Connect 2026 Ray-Ban glasses review journalist coverage - surfaced the Eaton Sep-23/24 Inc. column lead via the Inc. technology section page, the kit-eaton author page, and a biztoc mirror; (2) The Verge Meta Connect glasses review - REJECTED (no first-tier Verge option surfaced); (3) verge.com Meta Audio query - REJECTED (no usable lead); (4) Kit Eaton Inc "slew of new smart glasses" - SELECTED and VERIFIED the byline via the Inc. AI section page listing the piece under Kit Eaton, surfaced the dek verbatim and the EFF/ban-critic quotes). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_b_973 files (glob); no Type B #973 in git log; max numeric mechanism_id 814; zero underscore-form 815 mechanism key strings in profiles/ and tests/ pre-commit (format-built needles per #715; the NEXT_ID_NUMERIC "mechanism_id: 815" reference in the #972 test file is a designed forward-reference, not an assigned key); zero dash-form 815 references; block key zero-hit; the 91410169 URL zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer testable-prediction resolution; illustrative-only scorer output (MANUAL ILLUSTRATIVE, p_value/cohens_d NOT_CALCULATED, is_significant False); mechanism-level bound, not a publication-level finding.'
+      source_urls:
+      - https://www.inc.com/kit-eaton/meta-just-unveiled-a-slew-of-new-smart-glasses-its-going-to-be-tricky-to-tell-if-someone-is-wearing-them/91410169
+      - https://www.inc.com/kit-eaton/metas-new-smart-glasses-could-have-1-big-change-it-just-might-make-them-more-socially-acceptable/91406252
+      - https://www.inc.com/kit-eaton/the-apple-watch-got-a-massive-ai-upgrade-and-the-controversy-could-get-it-banned-at-the-office/91403791
+      - https://biztoc.com/x/f54893d7a67d6625
+      - https://www.inc.com/artificial-intelligence
+      - https://www.inc.com/author/kit-eaton
 
 jessica_conditt:
   name: Jessica Conditt
