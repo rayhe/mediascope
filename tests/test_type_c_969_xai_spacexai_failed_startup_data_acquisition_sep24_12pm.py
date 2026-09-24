@@ -54,7 +54,7 @@ DATE_STR = "2026-09-24 12:00 PDT"
 # Format-built per the #715 convention (never carried as literal strings)
 MECH_ID_MARKER = "mechanism" + "_813"
 NEXT_ID_MARKER = "mechanism" + "_814"
-NEXT_ID_DASH = "mechanism-814"
+NEXT_ID_DASH = "mechanism" + "-814"
 
 BLOCK_KEY = "distressed_startup_data_acquisition_strategy_sep2026"
 ENTITY_KEY = "xai"
@@ -316,7 +316,7 @@ class TestSupersessionAndCorpusPost968:
         """Zero 814 mechanism keys in any form (underscore, numeric, dash) repo-wide."""
         for needle in (NEXT_ID_MARKER, NEXT_ID_DASH):
             out = subprocess.run(
-                ["git", "grep", "-F", "-l", needle, "HEAD"],
+                ["git", "grep", "-F", "-l", needle],
                 cwd=REPO, capture_output=True, text=True,
             ).stdout.strip()
             assert out == "", f"unexpected 814 marker found: {needle}"
