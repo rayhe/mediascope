@@ -21588,13 +21588,18 @@ james_pero:
     (''Drastically Tone Down the Creep Factor'', ''unsavory stuff'', ''major liability'', bans in courts/restaurants/bars/public spaces, ''viscerally offends'', ''perception problem'')
     vs Sep-16 Snap Specs hands-on (''Dorky, Fun'', ''impressive'', ''honest-to-god mixed reality'', ''not quite the ear-crusher I thought''; zero privacy/surveillance/creep/ban vocabulary in the full
     80-line first-hand read, even though Specs ship cameras; complaints are FOV, $2,195 price, ''gut punch to your wallet''); Meta-minus-Snap illustrative delta -0.65; verdict
-    directionally_supported_not_proven; connects [211, 746, 734, 749, 269, 743]. ASCII-only, no em dashes.'
+    directionally_supported_not_proven; connects [211, 746, 734, 749, 269, 743]. ASCII-only, no em dashes. Type B #958 (Sep 24 2026, 00:00 PDT): mechanism 806 - TEMPORAL NATURAL EXPERIMENT on the privacy objection itself: Gizmodo Sep-23 ''Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'' (byline James Pero via the author-page and Latest listings, Sep 23) covers Meta''s FIRST camera-free glasses (Ray-Ban Audio, 43g, 12-hr battery, $349) - the camera at the center of Pero''s m791 Luna adversarial register (''creep factor'', ''unsavory stuff'', ''major liability'') is REMOVED, yet the privacy-accusation frame PERSISTS in the headline/dek (''Perv'' Problem'', ''glasshole''); the objection moves from hardware to brand. Body is product-forward first-person hands-on, so the adversarial load sits entirely in the frame. Editorial-not-company-driven: gearlive notes ''Meta didn''t say this pair exists because of privacy. Gizmodo''s headline said it for them.'' Comparator arms carried un-rescored per #807 (Snap do-or-die +0.35, m746; m791 pair delta -0.65). MANUAL ILLUSTRATIVE: Meta Audio arm -0.20 vs Snap do-or-die +0.35 = illustrative delta -0.55, same direction as m791. EXTENDS m791 temporally (Sep 16 -> Sep 23); register follows the brand, not the hardware. Verdict directionally_supported_not_proven; connects [211, 746, 791, 734, 749, 269, 743]; NOT a falsification-family member; ledger holds at 29; no analysis.json update. ASCII-only, no em dashes.'
   mechanism_ids:
   - 211
   - 746
   - 791
+  - 806
   source_urls:
   - https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
+  - https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
+  - https://api.coschedule.com/wordpress/preview/187fe651-d0f2-41f4-babe-507b256fdf61
+  - https://gizmodo.com/author/jpero
+  - https://www.gearlive.com/news/article/ray-ban-meta-audio-camera-free-glasses-349
   - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
   - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
   - https://gizmodo.com/metas-new-smart-glasses-drop-ray-ban-branding-and-add-kylie-jenner-2000775546
@@ -21827,6 +21832,102 @@ james_pero:
         Byline confirmed on both article pages and the author page. All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. Bounded full-text reads per #503. No zero-coverage
         claims per iteration-492 (both arms are positive Pero bylines). ASCII-only, no em dashes.'
       test_file: tests/test_type_b_933_james_pero_gizmodo_snap_dorky_fun_vs_meta_luna_creep_factor_sep16.py
+    type_b_958_james_pero_gizmodo_rayban_audio_camerafree_stigma_frame_persistence_sep23:
+      iteration: 958
+      iteration_time: '2026-09-24 00:00 PDT'
+      mechanism_id: 806
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      author: 'Kit (with Ray)'
+      block_key: 'type_b_958_james_pero_gizmodo_rayban_audio_camerafree_stigma_frame_persistence_sep23'
+      key_design_note: 'Descriptive block key carries no underscore-form 806 mechanism key substring, per the #715 designed-keying convention: keeps the zero-806 profile sweep instruments green while mechanism_id advances in colon form.'
+      source_urls:
+      - https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
+      - https://api.coschedule.com/wordpress/preview/187fe651-d0f2-41f4-babe-507b256fdf61
+      - https://gizmodo.com/author/jpero
+      - https://gizmodo.com/latest
+      - https://www.gearlive.com/news/article/ray-ban-meta-audio-camera-free-glasses-349
+      - https://wesearch.press/s/so-many-new-meta-glasses-muse-ai-everywhere-and-ray-bans-wit-6e09a130
+      - https://www.thesun.ie/tech/17665745/meta-ray-ban-audio-glasses-no-camera-gen-3/
+      design: 'Type B journalist cross-entity tracking: within-journalist temporal natural experiment on the privacy objection itself. Question: when Meta REMOVES the camera - the hardware feature at the center of James Pero''s m791 adversarial register on the Sep-16 Luna camera glasses (''Drastically Tone Down the Creep Factor'', ''unsavory stuff'', ''major liability'') - does his register attenuate, or does the privacy-accusation frame persist? Meta arm: Gizmodo ''Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'' (byline James Pero via the gizmodo.com/author/jpero listing and the gizmodo.com/latest ''Gadgets James Pero Sep 23'' listing; dek-tier first-hand via the embed page opened this run; body excerpt-tier via the coschedule full-text mirror per #503; 0 full-text first-hand read of the canonical page this run). Comparator arms carried un-rescored per #807: Snap ''Do or Die'' +0.35 (m746) and the m791 Sep-16 pair (Luna adversarial vs Snap Specs hands-on ''Dorky, Fun'', Meta-minus-Snap delta -0.65). No em dashes.'
+      meta_arm:
+        title: 'Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'
+        url: https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
+        canonical_note: 'Embed-page URL carried verbatim from the tool-returned Full-URL listing; the canonical page URL was not separately listed, so no URL was constructed per the verbatim rule.'
+        date: '2026-09-23'
+        author_byline: 'James Pero (gizmodo.com/author/jpero ''James Pero, Author at Gizmodo'' listing + gizmodo.com/latest ''Gadgets James Pero Sep 23'' listing; ''James Pero / Gizmodo'' photo credits on the piece)'
+        publication: Gizmodo (Keleops AG)
+        genre: launch-day news + first-person hands-on
+        key_quotes:
+        - 'Headline (observed this run): ''Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'' - the privacy-accusation frame is the headline even though the product ships with no camera.'
+        - 'Dek (first-hand via the embed page this run): ''The Ray-Ban Audio come sans camera so you don''t have to worry about anyone accusing you of being a glasshole.'' - the stigma vocabulary (''perv'', ''glasshole'') persists with the camera removed; the objection moves from hardware to brand.'
+        - 'Body lede (excerpt-tier via the mirror): ''With privacy concerns over smart glasses mounting, Meta is taking the wraps off its first pair without a camera.'' First-person hands-on follows (''I tried a pair on''): 43g, 12-hour battery (three more than Gen 3''s nine), 23 color/lens combinations, Clubmaster/Burbank styles, prescription support, $349.'
+        - 'Editorial-not-company frame (gearlive corroboration, excerpt-tier): ''Meta didn''t say this pair exists because of privacy. Gizmodo''s headline said it for them.'' Meta''s own launch framing was not a privacy concession; the ''perv'' frame is Gizmodo''s. Meta spent keynote time on the recording-light tamper fix instead.'
+        tone: 'MANUAL ILLUSTRATIVE -0.20: stigma-frame headline/dek on a camera-free product; body product-forward first-person hands-on. The adversarial load sits entirely in the frame, not the substance.'
+      comparator_arms_carried:
+      - 'Snap ''Do or Die Moment in AR Has Arrived'' (m746, carried un-rescored per #807): +0.35 illustrative - ''In my initial testing, Snap''s Specs *do* feel like the most compelling AR glasses out there''; Meta appears only as the $80B Reality Labs negative foil.'
+      - 'm791 Sep-16 pair (carried un-rescored per #807): Luna ''Drastically Tone Down the Creep Factor'' / ''unsavory stuff'' / ''major liability'' vs Snap Specs hands-on ''Dorky, Fun'' / ''impressive'' with zero privacy/surveillance vocabulary on camera-laden Specs; Meta-minus-Snap illustrative delta -0.65.'
+      illustrative_delta: 'Meta Audio arm (-0.20) minus Snap do-or-die arm (+0.35) = -0.55. Same direction as m791''s -0.65 even after the objected-to feature (the camera) is removed from the Meta product while Snap''s camera-laden Specs keep the soft register: the register follows the brand, not the hardware.'
+      connects_to: [211, 746, 791, 734, 749, 269, 743]
+      extension_claims:
+      - 'EXTENDS mechanism 791 temporally (Sep 16 -> Sep 23): the within-journalist Meta-vs-Snap privacy-register asymmetry survives the removal of the camera from the Meta product.'
+      - 'REPLICATES the m637 peg-follows-register pattern in a new form: here the register follows the brand rather than the hardware feature, documented within one journalist in a 7-day window.'
+      - 'PRESSURE on the hardware-determinist reading of the corpus''s Meta privacy coverage: if the accusation vocabulary persists with no camera to accuse, the objection''s locus is the brand, not the sensor. Documented as directional pressure only, not a falsification test.'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'Dek-tier + excerpt-tier evidence: the embed page opened this run carried only the dek first-hand; the body is excerpt-tier via the coschedule mirror; no full-text first-hand read of the canonical Gizmodo page. Full-text register could differ.'
+      - rank: 2
+        strength: strong
+        confounder: 'Headline-desk vs writer register: the ''Perv'' Problem'' / ''glasshole'' frame may be headline-desk copy rather than Pero''s own register. Gizmodo headlines are typically writer-written but this was not verified for this piece.'
+      - rank: 3
+        strength: strong
+        confounder: 'The frame cuts both ways: ''to Avoid the ''Perv'' Problem'' can be read as crediting Meta for solving the problem, not renewing the accusation. The adversarial reading is an interpretation of the frame, not its only reading.'
+      - rank: 4
+        strength: moderate
+        confounder: 'n=1 new arm, degenerate sample; directional only.'
+      - rank: 5
+        strength: moderate
+        confounder: 'Story-type difference: launch-day news/hands-on (Audio) vs m791''s Luna editorial; register follows story type as well as entity.'
+      - rank: 6
+        strength: weak
+        confounder: '''glasshole'' is community slang, not Pero''s coinage; its presence measures discourse uptake, not writer invention.'
+      counterevidence:
+      - 'The Audio body is product-forward and first-person positive on weight, battery, and styles - no adversarial substance beyond the headline/dek frame.'
+      - 'Pero''s m746 Snap price skepticism (''do or die'', $2,200 investment framing) shows he is not uniformly soft on challengers; the optimism is capability-scoped.'
+      - 'The WeSearch 5-outlet synthesis shows the broader press also found the privacy story under-addressed at Connect (''lack of significant updates addressing the growing privacy concerns'') - the frame is not Pero-idiosyncratic.'
+      - 'm716 house-adversarialism: the Meta register may be partly Gizmodo house style, not purely personal; Pero''s m211 Apple/Google arms were also pre-launch aspirational.'
+      statistical_discipline:
+        scope: qualitative journalist cross-entity register documentation only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: MANUAL_ILLUSTRATIVE
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents one journalist''s register on Meta''s first camera-free glasses against his own prior Meta and Snap arms. Register differences across entities and time are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. No causal claim. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - register documentation + temporal extension, not a uniform-prediction test; ledger holds at 29 (THIRTIETH present; THIRTIETH remains the negative guard per the #754 convention).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type B documentation leg; no new tracked-publication finding.'
+      novelty: 'FIRST dedicated corpus mechanism on Pero''s Sep-23 Ray-Ban Audio piece and on any journalist''s register toward Meta''s camera-free glasses. Zero ''perv-problem'' / ''2000815782'' / ''Ray-Ban Audio'' hits repo-wide pre-commit (grep, excluding .git/.venv/__pycache__); zero test_type_b_958 files on disk (glob); no ''Type B #958'' in git log (--grep); max numeric mechanism_id 805 in-tree pre-commit; zero underscore-form 806 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per #715); zero numeric 806 mechanism_id keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit. Distinct from m791 (Sep-16 Luna camera-glasses editorial vs Snap hands-on pair): this is a Sep-23 camera-free Meta arm, a different product and a different test (objection removed, frame persists). All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '4 browser.search query sets this run: (1) Meta Connect 2026 smart glasses journalist hands-on Sep 23 - surfaced the Gizmodo live blog (Pero on the ground in Menlo Park), Sun/Keach hands-on, mobilesyrup VR Glasses hands-on; (2) James Pero Gizmodo Snap Spectacles Specs - surfaced the ''Do or Die'' piece and ''Do Snap''s Beefy AR Glasses Actually Bend Your Ears?'' (in corpus via m746, carried); (3) Raymond Wong Gizmodo Snap Specs - REJECTED: Wong already carries m95 (Samsung same-chip) + the Aug-6 Type B cross-entity clean-control paradox; corpus-saturated; (4) Gizmodo ''Perv'' Problem Pero - SELECTED: canonical byline via gizmodo.com/author/jpero (''James Pero, Author at Gizmodo'' listing the piece) + gizmodo.com/latest (''Gadgets James Pero Sep 23''); full text via the coschedule mirror (excerpt-tier); gearlive corroboration (''Meta didn''t say this pair exists because of privacy. Gizmodo''s headline said it for them.''); WeSearch 5-outlet synthesis (Mashable/TechCrunch/Engadget/Gizmodo + 1). 1 browser.open success this run (the Gizmodo embed page, dek-tier first-hand); 0 browser.open failures. Sun/Keach and mobilesyrup arms REJECTED as primary (no within-journalist competitor pair in corpus scope). Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_958_james_pero_gizmodo_rayban_audio_camerafree_stigma_frame_sep23_12am.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 958
+        type: 'B'
+        date: '2026-09-24 00:00 PDT'
 daniel_cooper:
   name: Daniel Cooper
   current_role: Senior Editor
