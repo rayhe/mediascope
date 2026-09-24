@@ -19626,7 +19626,91 @@ hamish_hector:
   mechanism_ids:
   - 115
   - 680
-  notes: 'Hamish Hector (TechRadar, VR/AR/Wearables/Smart Glasses beat): mechanism 680 (Type B #743, Sep 14 2026) pairs his aspirational Snap Specs $2,195 column (Jun 17 2026, "truly sci-fi", zero privacy vocabulary despite dual-Snapdragon/hand-tracking/environment-meshing sensor hardware) against his in-corpus alarm_hedged Meta Ray-Ban column (m115: "exciting and frightening in equal measure", frightening/worrying/creepy/scary vocabulary) - journalist-level INSTANTIATION of mechanism 115.'
+  - 809
+  notes: 'Hamish Hector (TechRadar, VR/AR/Wearables/Smart Glasses beat): mechanism 680 (Type B #743, Sep 14 2026) pairs his aspirational Snap Specs $2,195 column (Jun 17 2026, "truly sci-fi", zero privacy vocabulary despite dual-Snapdragon/hand-tracking/environment-meshing sensor hardware) against his in-corpus alarm_hedged Meta Ray-Ban column (m115: "exciting and frightening in equal measure", frightening/worrying/creepy/scary vocabulary) - journalist-level INSTANTIATION of mechanism 115. Mechanism 809 (Type B #963, Sep 24 2026) extends m680 temporally: NEW Meta arm - Hector''s Sep 24 2026 TechRadar launch piece "The Ray-Ban Meta Audio glasses remove the cameras for better battery life" ("Perv glasses no more?"; search-excerpt-bounded per #503) keeps the privacy-criticism register on Meta''s own camera-removal concession (illustrative -0.35), carried Snap arm stays aspirational +0.55 unrescored per #807; illustrative Meta-minus-Snap delta -0.90. The launch peg does NOT soften Hector''s Meta register, which tests m680''s peg-driven-collapse prediction and hardens the entity-gradient reading.'
+  competitor_coverage:
+    type_b_963_hamish_hector_techradar_rayban_audio_privacy_criticism_vs_snap_aspirational_carried_sep24:
+      iteration: 963
+      mechanism_id: 809
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-24 06:00 PDT'
+      block_key: 'type_b_963_hamish_hector_techradar_rayban_audio_privacy_criticism_vs_snap_aspirational_carried_sep24'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, same-journalist same-publication temporal extension of mechanism 680 (Type B #743). Question: on a Meta launch peg - Meta''s own camera-removal concession at Connect 2026 - does Hamish Hector drop the alarm register that mechanism 680 documented on his Meta arm? Meta arm NEW (Sep 24 2026): TechRadar "The Ray-Ban Meta Audio glasses remove the cameras for better battery life", byline Hamish Hector via author-page attribution (techradar.com canonical URL NOT recovered; no canonical URL constructed per standing rule); search-excerpt-bounded per #503: "''Perv glasses'' no more?" (stigma-frame opening), "the author noted a lack of significant updates addressing the growing privacy concerns surrounding wearable AI devices", battery-life skepticism ("We''ll need to see how this figure holds up in our day-to-day testing"), affiliate disclosure present. Illustrative tone -0.35 MANUAL ILLUSTRATIVE (privacy-criticism coda on a concession product). Snap arm CARRIED from m680 (Type B #743, Jun 17 2026) unrescored per #807: "Snap''s AR glasses cost $2,195 - and despite the high price, I think they could be the best XR gadget of 2026 if they live up to their prototype" - "incredible, truly sci-fi", zero privacy vocabulary despite strictly MORE sensor hardware (dual Snapdragon, hand tracking, environment meshing, spatial anchoring; fifth-gen Spectacles line carried four cameras plus six-mic array); +0.55 carried. Illustrative Meta-minus-Snap delta -0.90: on a Meta launch peg the same writer applies privacy criticism to Meta''s camera-free concession while the Snap consumer-grade sensor array got zero. Tests m680''s testable prediction 2 (peg-driven collapse hypothesis): the gradient does NOT collapse on a Meta launch peg - it holds at -0.90, hardening the entity-gradient reading over the peg-driven reading. EXTENDS mechanism 680 (temporal launch-window leg). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'The Ray-Ban Meta Audio glasses remove the cameras for better battery life'
+        date: '2026-09-24'
+        author_byline: Hamish Hector
+        byline_attribution_url: 'https://www.techradar.com/author/hamish-hector'
+        evidence_url: 'https://wesearch.press/s/the-ray-ban-meta-audio-glasses-remove-the-cameras-for-better-3db0e65c'
+        publication: TechRadar
+        publication_owner: Future plc
+        genre: launch news piece
+        key_quotes:
+        - 'Stigma-frame opening (observed this run): "''Perv glasses'' no more?"'
+        - 'Privacy-criticism coda (observed this run, WeSearch digest): "the author noted a lack of significant updates addressing the growing privacy concerns surrounding wearable AI devices"'
+        - 'Battery skepticism (observed this run): "We''ll need to see how this figure holds up in our day-to-day testing, though it sounds like these glasses will be able to provide AI assistance and music playback for much longer stretches of your day than previous models."'
+        - 'Commerce register (observed this run): "When you purchase through links on our site, we may earn an affiliate commission."'
+        register_notes: 'Product-forward launch piece (lighter 43g, 12-hour battery, Dolby Atmos) with a privacy-criticism coda applied to the camera-removal concession itself.'
+        tone_score: -0.35
+        tone_basis: 'hand-assigned this run from search excerpts, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'search-excerpt-bounded per #503 (0 browser.open this run); canonical techradar.com URL not recovered, no URL constructed'
+      snap_arm:
+        title: 'Snap''s AR glasses cost $2,195 - and despite the high price, I think they could be the best XR gadget of 2026 if they live up to their prototype'
+        date: '2026-06-17'
+        author_byline: Hamish Hector
+        publication: TechRadar
+        publication_owner: Future plc
+        genre: first-person prototype hands-on column
+        key_quotes:
+        - 'Aspirational register (carried from m680): "incredible, truly sci-fi"'
+        - 'Advantage framing (carried from m680): "nothing quite like the Snap Specs on the market right now, and that''s a major advantage for Snap as it leapfrogs Meta"'
+        tone_score: 0.55
+        tone_basis: 'carried from mechanism 680 (Type B #743) unrescored per #807'
+        evidence_tier: 'carried from m680 corpus coding'
+      asymmetry_scorer:
+        delta_meta_minus_snap: -0.9
+        delta_calc: '-0.35 (Meta arm, new, illustrative) minus 0.55 (Snap arm, carried m680, illustrative)'
+        scorer: none
+        delta_sign_reading: 'Negative delta: the Meta arm carries privacy-criticism register while the Snap arm carries none; same journalist, same publication, Meta''s own camera-removal concession does not soften the register.'
+      statistical_discipline:
+        tone: MANUAL_ILLUSTRATIVE
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine: NOT_RUN
+        verdict: directionally_supported_not_proven
+        analysis_json_update: false
+        artifact_grade: false
+      is_falsification_family_member: false
+      falsification_ledger: 29
+      confounders:
+      - 'STRONG: Search-excerpt-bounded evidence on the Meta arm (0 browser.open this run; excerpt fidelity relies on the search index, not page reads).'
+      - 'STRONG: Genre routing between arms: the Audio piece is a launch news piece (spec-forward register expected) while the Snap arm is a first-person prototype hands-on column (enthusiasm expected); the register differential may be genre-driven, not entity-driven.'
+      - 'STRONG: Launch-day PR register on the Meta arm (Meta Connect keynote embargo lift; the privacy coda reads as measured skepticism, not adversarial coverage).'
+      - 'MODERATE: Three-month temporal gap between arms (Snap Jun 17 2026; Audio Sep 24 2026); columnist register can drift across a product cycle.'
+      - 'MODERATE: n=1 per arm; single-piece variance cannot be ruled out (Hector''s register varies by story, as all columnists'' do).'
+      - 'WEAK: Price-tier inversion runs against the entity reading (the $349 concession device gets privacy criticism while the $2,195 device got aspiration) - price does not explain the differential; noted as counter to a naive price-driven alternative.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: The Audio piece is overwhelmingly product-forward (lighter 43g frame, 12-hour battery, Dolby Atmos, 23 color/lens combos) - the privacy register is a coda, not the spine, so the -0.35 score is illustrative at the margin.'
+      - 'COUNTEREVIDENCE: Meta''s camera removal is itself the story''s central fact; any privacy mention is newsworthy context of the concession, not necessarily entity bias - the coverage is peg-congruent.'
+      - 'COUNTEREVIDENCE: The Snap arm is an AWE prototype hands-on, a structurally enthusiastic peg (m680''s own counter); a Snap privacy-scandal peg might have drawn Hector''s alarm register too, which would collapse the entity-gradient reading.'
+      connects_to:
+      - 680
+      - 115
+      - 806
+      - 794
+      - 791
+      extends: 'extends mechanism 680 (temporal launch-window leg; second observation of the Hector cross-entity gradient; tests m680 prediction 2)'
+      source_urls:
+      - 'https://wesearch.press/s/the-ray-ban-meta-audio-glasses-remove-the-cameras-for-better-3db0e65c'
+      - 'https://www.techradar.com/author/hamish-hector'
+      - 'https://www.techradar.com/computing/virtual-reality-augmented-reality/snaps-ar-glasses-cost-usd2-195-and-despite-the-high-price-i-think-they-could-be-the-best-xr-gadget-of-2026-if-they-live-up-to-their-prototype'
+      test_file: tests/test_type_b_963_hamish_hector_techradar_rayban_audio_privacy_criticism_vs_snap_aspirational_sep24_6am.py
 philip_berne:
   name: Philip Berne
   current_role: Editor
