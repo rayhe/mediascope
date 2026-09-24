@@ -3396,6 +3396,121 @@ competitor_relationships:
         - "608/mechanism_599 (Hart incident constancy: hard on both entities)"
       research_method: "5 browser.search query sets + 2 browser.open first-hand mirror reads (Lawler via thetechstreetnow, staffers via dailyguardian) with verbatim quotes; no theverge.com URLs constructed; Vergecast via YouTube listing metadata; Meta arm carried verbatim from mechanism_626; pre-commit repo greps: zero test_type_a_687 files, no #687 in git log, zero mechanism_646 hits, both evidence URLs zero repo-wide hits."
       artifact_readiness: "No analysis.json update warranted. Illustrative-only scorer output; boundary-condition replication, not artifact-grade."
+    verge_apple_sep2026_event_window_cadence_break_register_vs_meta_connect_audio_privacy_positive_sep24_2026:
+      mechanism_id: 811
+      iteration: 967
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      date_analyzed: '2026-09-24'
+      time_analyzed: 2026-09-24 10:00 PDT
+      publication_focus: the-verge
+      competitor: apple
+      event: "The Verge September-2026 event-window registers: Apple base-iPhone-18 cadence-break news analysis (Sep 9) vs Meta Connect Ray-Ban Meta Audio privacy-concession relay (Sep 24)"
+      source_urls:
+        - "https://technewstube.com/theverge/1865859/apple-skips-base-iphone-18-fall-launch-event/"
+        - "https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/"
+        - "https://world-today-journal.com/meta-connect-2026-meta-vr-glasses-ray-ban-meta-gen-3-and-new-ai-audio-specs-announced/"
+      apple_arm:
+        item:
+          url: "https://technewstube.com/theverge/1865859/apple-skips-base-iphone-18-fall-launch-event/"
+          title: "Apple skips the base iPhone 18 at its fall launch event"
+          byline: "Tom Warren"
+          date: "2026-09-09"
+          evidence_tier: "mirror-attested"
+          evidence_note: "technewstube Verge-feed mirror; attribution 'Tom Warren', Sep 9 2026 2:19 pm; excerpt says Apple 'took the unusual step of skipping the base iPhone 18 while unveiling iPhone 18 Pro/Pro Max and foldable iPhone Duo'; theverge.com policy-blocked for browser.open per standing rule; title/excerpt-bounded evidence"
+          register: "skeptical product-cadence news analysis"
+          tone_illustrative: -0.25
+        carried_m646_arm:
+          average: 0.38
+          items: [0.25, 0.50]
+          carried_from: "iteration 687, m646"
+      meta_arm:
+        item:
+          url: "https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/"
+          date: "2026-09-24"
+          byline_note: "Meta wearables VP Alex Himel, relayed from The Verge interview"
+          verbatim_quote: "told The Verge ... the Ray-Ban Meta Audio glasses do not record; they listen for the wake word and begin recording only after hearing it"
+          evidence_tier: "relay"
+          evidence_note: "outlet quoting The Verge's Connect-week interview; corroborated by world-today-journal relay 'According to The Verge, the Ray-Ban Meta Audio glasses prioritize privacy by removing photo and video capture functions entirely'"
+          register: "privacy-positive measured on-the-record"
+          tone_illustrative: 0.10
+        carried_m646_arm:
+          average: -0.35
+          carried_from: "iteration 687, m646"
+      asymmetry_scorer_result:
+        method: "MANUAL ILLUSTRATIVE"
+        apple_new_arm_tone: -0.25
+        apple_carried_m646_avg: 0.38
+        meta_new_arm_tone: 0.10
+        meta_carried_m646_avg: -0.35
+        event_window_delta_apple_minus_meta: -0.35
+        apple_within_entity_delta: -0.63
+        meta_within_entity_delta: 0.45
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        note: "Arithmetic: event-window delta = -0.25 - 0.10 = -0.35; Apple within-entity = -0.25 - 0.38 = -0.63; Meta within-entity = 0.10 - (-0.35) = +0.45. The asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only, directionally supported not proven."
+      finding: >
+        (1) Apple arm (n=1, MANUAL ILLUSTRATIVE): Tom Warren Sep 9 2026
+        2:19 pm mirror-attested Verge-feed piece "Apple skips the base
+        iPhone 18 at its fall launch event" - skeptical product-cadence
+        news-analysis register on Apple breaking the annual base-iPhone
+        cadence while unveiling iPhone 18 Pro/Pro Max and the foldable
+        iPhone Duo; hand-assigned tone -0.25. Carried m646 Apple Duo
+        launch-arm average +0.38 (items 0.25 / 0.50, iteration 687).
+        (2) Meta arm (n=1, MANUAL ILLUSTRATIVE): The Verge's Connect-week
+        on-the-record relay via Yanko Design Sep 24 2026 - Meta wearables
+        VP Alex Himel "told The Verge" the Ray-Ban Meta Audio glasses "do
+        not record... listen for the wake word and begin recording only
+        after hearing it"; privacy-positive measured on-the-record
+        framing, hand-assigned tone +0.10, corroborated by the
+        world-today-journal relay "According to The Verge, the Ray-Ban
+        Meta Audio glasses prioritize privacy by removing photo and video
+        capture functions entirely". Carried m646 Meta Muse launch-arm
+        -0.35. (3) Event-window illustrative delta (Apple minus Meta):
+        -0.25 - 0.10 = -0.35. Within-entity deltas: Apple new vs carried
+        -0.63; Meta new vs carried +0.45. (4) The September event-window
+        gradient REVERSES m646 (meta-minus-apple -0.73, The Verge
+        celebratory toward Apple Duo and adversarial toward Meta Muse):
+        on the event-window pegs - cadence-break criticism for Apple,
+        camera-removal privacy concession for Meta - The Verge applies
+        the harsher register to APPLE. EXTENDS m646 from launch-day
+        registers to the full September launch-event windows.
+        REPLICATES the m587 null-tie symmetric-adversarial family in a
+        THIRD publication (Gizmodo x2, now The Verge; Gizmodo September
+        event-window m808 is the closest comparison). CONTRASTS m604
+        (Verge Samsung launch coverage product-forward vs harsher Meta
+        coverage): the same publication inverts the gradient on the
+        cadence-break peg, supporting peg-driven variability over stable
+        entity softness. (5) Financial context: $0 documented financial
+        ties for both compared entities under The Verge's Apple block
+        (financial_tie "none", $0, coverage_prediction "softer"); the Vox
+        Media May 29 2024 OpenAI content-licensing partnership is scoped
+        to OpenAI coverage and untested here, so the finding cannot
+        establish payer-driven tone. (6) Limits: mirror/relay evidence
+        only, title/excerpt-bounded, n=1 per new arm, different story
+        pegs, no first-hand Verge article body reviewed. Correlation is
+        not causation. NOT artifact-grade.
+      connects_to: [646, 587, 808, 604, 628, 626, 644]
+      confounders:
+        - "STRONG: different story pegs - Apple arm is a cadence-break product-line decision (base iPhone 18 skipped), Meta arm is a privacy-concession product decision (camera removed); registers attach to the pegs as much as to the entities"
+        - "STRONG: format asymmetry - Apple arm is The Verge's own news-analysis voice (Tom Warren piece), Meta arm is an on-the-record executive interview relay; interview format structurally softens register independent of editorial stance"
+        - "STRONG: mirror/relay evidence bound - Apple arm is a syndication-feed mirror (title plus excerpt), Meta arm is two third-party relays of The Verge's reporting; no first-hand Verge article body reviewed for either arm"
+        - "MODERATE: carry-forward staleness - the m646 arm averages (+0.38 Apple / -0.35 Meta) are September 11 launch-day registers reused as the within-entity baseline; the comparison is event-window, not same-day"
+        - "MODERATE: launch-week news-cycle incentives - the cadence-break story is inherently criticism-shaped (deviation from expected lineup) while the camera-removal story is inherently concession-shaped (privacy positive); story valence correlates with register"
+        - "WEAK: degenerate contract - n=1 vs n=1 scored items, tones hand-assigned, no engine run; descriptive only, no statistical significance (by design, NOT_CALCULATED)"
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 (new Apple arm) vs n=1 (new Meta arm); carried arm averages from m646. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative deltas only (event-window -0.35; Apple within-entity -0.63; Meta within-entity +0.45); not evidence of bias or of financial influence; documents the analyst''s reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: "directionally_supported_not_proven"
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: "NOT a falsification-family member: no named deal-gradient prediction is contradicted (both arms $0 at The Verge; the Vox-OpenAI deal prediction is scoped to OpenAI coverage and is untested here). The falsification ledger holds at 29; the THIRTIETH mechanism stands as the most recent falsification-family member; mechanism 811 does not extend the ledger."
+      research_method: '2 browser.search query sets Sep 24 2026: (a) The Verge Apple September event-window coverage - surfaced the technewstube Verge-feed mirror of Tom Warren''s Sep 9 2026 2:19 pm "Apple skips the base iPhone 18 at its fall launch event" (title, byline, dateline, excerpt verbatim); (b) The Verge Meta Connect Ray-Ban Meta Audio glasses - surfaced the Yanko Design Sep 24 2026 relay quoting Meta wearables VP Alex Himel "told The Verge" plus the world-today-journal corroborating relay; no theverge.com URLs constructed (policy-blocked for browser.open per standing rule); title/excerpt-bounded evidence, no first-hand Verge body reviewed. Meta arm carried from m646 recorded iteration 687. Pre-commit repo greps: zero test_type_a_967 files on disk, no "Type A #967" in git log, max numeric mechanism_id 810 in profiles/, zero underscore-form 811 key strings in profiles/ and tests/, zero numeric 811-form mechanism keys in profiles/, zero dash-form 811 references in profiles/, block key zero-hit repo-wide, three new urls zero-hit repo-wide. Falsification ledger 29 carried.'
+      artifact_readiness: "No analysis.json update warranted. Illustrative-only scorer output; peg-driven variability extension, not artifact-grade."
   google:
     financial_tie: "adversarial_litigation"
     estimated_value: "$0 (dual lawsuits - AI Overviews + adtech)"
