@@ -68,7 +68,7 @@ MECH_KEY = (
     "audio_privacy_positive_sep24_2026"
 )
 NEXT_SIBLING = "\n  google:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "d354f482c781079599e6d2fec90068a69f79a8ea"
 ITERATION = 967
 TYPE_LETTER = "A"
 
