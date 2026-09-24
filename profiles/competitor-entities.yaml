@@ -5302,6 +5302,109 @@ entities:
         yaml_parse_clean: true
         ascii_only: true
 
+    us_news_world_report_v_openai_nov2025_trademark_dilution_suit_sep2026:
+      mechanism_id: 762
+      iteration: 884
+      iteration_type: C
+      type: financial_incentive_mapping
+      type_label: Financial Incentive Mapping
+      rotation: 'Type C'
+      date_analyzed: '2026-09-20'
+      time_pdt: '15:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'U.S. News & World Report v. OpenAI (filed Wed Nov 26, 2025, S.D.N.Y.) - FIRST dedicated corpus mechanism on the rankings-publisher suit: 16th copyright suit vs OpenAI, 63rd vs AI companies, deemed related to the NYT-led MDL (Judge Sidney H. Stein), with a trademark-dilution claim vector no other corpus suit carries'
+      block_key: type_c_884_us_news_world_report_openai_trademark_dilution_suit_sep20_3pm
+      type_c_focus: 'FIRST dedicated corpus mechanism on U.S. News & World Report v. OpenAI, filed Wed Nov 26, 2025. The corpus has tracked publisher-vs-AI litigation since #679 (Ziff Davis, mechanism 589) and maintains an adversarial-litigation family (589, Editorial Perfil block, 675 Seattle/Newsday, 756/759 MDL economics) - but the rankings publisher''s suit had NO dedicated mechanism and NO test pre-commit (zero "us_news_world_report" key hits repo-wide; zero "u_s_news" test hits; only a roster mention in #879''s research_method, explicitly rejected there as a new event, not as a corpus gap). This run fills the gap as qualitative financial-incentive documentation: the sign-or-sue pricing architecture (U.S. News sits in the non-payer/litigation tier while OpenAI pays or partners with other publishers), a trademark-dilution claim vector no other corpus suit carries, and the rankings-content texture that extends the suit family beyond breaking-news journalism. Filed 10 months before this run: the novelty is first-to-corpus documentation, NOT a new September event - stated explicitly here so no later reader mistakes this leg for September-2026 news.'
+      suit_facts:
+      - 'Plaintiff: U.S. News & World Report (rankings publisher - colleges, hospitals, products, advice); defendant: OpenAI. Filed Wed Nov 26, 2025, U.S. District Court for the Southern District of New York (Press Gazette tracker, first-hand browser.open read this run Sep 20 2026 15:00 PDT)'
+      - 'Case posture: 16th copyright lawsuit filed against OpenAI; 63rd copyright lawsuit filed against AI companies (chatgptiseatingtheworld, Dec 3 2025, excerpt-bounded per #503). Deemed related to In re OpenAI Copyright Infringement Litigation (the NYT-led MDL, S.D.N.Y. No. 1:25-md-03143) and assigned to Judge Sidney H. Stein - inside the same enforcement-economics fight as mechanisms 756 (#874) and 759 (#879)'
+      - 'Counts (chatgptiseatingtheworld): (1) copyright infringement - scraping, storing/processing/reproducing training datasets, ChatGPT outputs; (2) contributory copyright infringement; (3) DMCA copyright-management-information violation (17 U.S.C. 1202(b)(1)); (4) trademark infringement (15 U.S.C. 1114); (5) trademark counterfeiting; (6) false designation of origin and dilution (15 U.S.C. 1125); (7) dilution and injury to business reputation (N.Y. Gen. Bus. Law 360-l)'
+      - 'Complaint economics (Press Gazette, first-hand this run): OpenAI has "an insatiable need for popular, well-crafted, authoritative, factual, and up-to-date content"; U.S. News content was trained on and reproduced "uncredited and uncompensated"; the regurgitation "directly and materially harmed" the business; inaccurate information was attributed to U.S. News. TOS posture: the site allows non-commercial personal use but prohibits use "for the development of any software program, model, algorithm, or generative artificial intelligence tool"'
+      - 'Counsel: Rothwell Figg (Steven Lieberman et al.) - the firm''s 4th copyright suit against AI labs, following the New York Times, the Daily News, and the California Newspaper Partnership (chatgptiseatingtheworld). Plaintiff-bar consolidation: one firm now fronts four of the corpus''s publisher-side suits'
+      rankings_publisher_texture_leg:
+      - 'The corpus suit family is dominated by breaking-news journalism plaintiffs (NYT, Ziff Davis, Daily News, Seattle Times, Newsday, Alden papers). U.S. News is a RANKINGS publisher: colleges, hospitals, product reviews, advice. The protected asset is authoritative reference content and the trust in it - regurgitation "uncredited and uncompensated" plus inaccurate information attributed to U.S. News hits the asset at its trust core, not just its subscription perimeter'
+      - 'TOS posture is explicit: the prohibition on AI-development use is written into the terms ("for the development of any software program, model, algorithm, or generative artificial intelligence tool"), stronger than the generic no-scraping clauses in the newsroom suits. The license-price signal is therefore also explicit: the publisher priced AI training at "prohibited," not "negotiable"'
+      trademark_dilution_claim_vector_leg:
+      - 'NEW claim structure for the corpus: trademark infringement, trademark counterfeiting, false designation of origin, and dilution (federal 1125 + N.Y. 360-l) alongside copyright and DMCA CMI. No other corpus suit carries trademark claims against an AI lab - the family has been copyright-only (589, Editorial Perfil) plus CMI/robots.txt (675, 756)'
+      - 'Why it matters for financial incentives: the trademark vector prices FALSE ATTRIBUTION - the "inaccurate information attributed to U.S. News" allegation. Mechanism 759''s ~93% click-through datum measures the attribution consideration at ~7% of baseline; the trademark claims attack the attribution risk from the other side - when the model DOES attribute, attribution can be wrong, and wrong attribution to a trust-business is itself the injury. The claim structure says attribution is not just worthless consideration, it is a liability'
+      sign_or_sue_tier_leg:
+      - 'Mechanism 636''s pay-or-litigate doctrine: U.S. News sits squarely in the litigation tier - no OpenAI licensing or attribution deal in the corpus record, only the suit. The sign-or-sue pricing architecture shows the bifurcation intact at the rankings-publisher edge: News Corp >$250M/5yr cash plus tech credits (519), attribution-deal publishers get citation-only consideration (609/714/660), U.S. News gets nothing and sues'
+      - 'Litigation pressure documents the financial incentive; it does not prove editorial influence. Correlation is not causation: a publisher suing OpenAI over training economics says nothing about how that publisher covers Meta, Apple, or any competitor. No tone claim, no Type A/B implication, no coverage assertion'
+      mdl_family_linkage:
+      - 'Deemed related to the NYT-led MDL and before Judge Stein, the suit sits inside the same procedural vehicle as mechanisms 756 (Sep 4 motions) and 759 (Sep 17 unsealed filings). The rankings-publisher claims now ride the same enforcement-economics track: any price the court sets on paywall-acquired training corpora or fair-use boundaries sets it for the trademark-dilution vector too'
+      - 'The MDL''s Sep 2026 escalation (partial summary judgment motions, DOJ statement of interest 672, unsealed testimony 759) post-dates this suit by ~10 months; the suit''s presence in the related-cases penumbra means the rankings publisher benefits from the MDL''s pricing momentum without paying the MDL plaintiffs'' $28M+ litigation spend (mechanism 753)'
+      statistical_discipline:
+        scope: qualitative structural pricing mapping only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mapping documents the Nov 26 2025 U.S. News & World Report v. OpenAI suit as a financial-incentive datum on the OpenAI x publisher vector: the rankings publisher sits in the litigation tier of the sign-or-sue architecture, carries the corpus''s first trademark-dilution claim vector against an AI lab, and is procedurally linked to the NYT-led MDL before Judge Stein. Financial relationships and litigation postures are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim. No coverage-tone claim. The suit predates this run by ~10 months: first-to-corpus documentation, not a new event.'
+      no_coverage_tone_claim: true
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - pricing-type leg with no coverage-tone pair; ledger holds at 28 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 589 (Ziff Davis v. OpenAI, #679 - the first corpus publisher suit, copyright-only contrast to the trademark vector here)'
+      - 'mechanism 636 (NYT pay-or-litigate doctrine, #729 - the sign-or-sue bifurcation this leg''s plaintiff instantiates)'
+      - 'mechanism 756 (Sep 4 partial-summary-judgment counter-move, #874 - same MDL, same Judge Stein; the motions'' paywall carve-out is the procedural track this suit rides)'
+      - 'mechanism 759 (Sep 17 unsealed filings, #879 - same MDL family; the ~93% click-through datum re-prices the attribution consideration this suit''s trademark claims attack from the false-attribution side)'
+      - 'mechanism 519 (News Corp x OpenAI >$250M/5yr - the paid-template pole of the sign-or-sue bifurcation)'
+      - 'mechanisms 609/714/660 (zero-fee attribution template - the citation-only tier U.S. News declined to join)'
+      - 'mechanism 675 (Seattle Times/Newsday grant-then-sue, #734 - same MDL-family procedural penumbra, different money sequence)'
+      - 'mechanism 753 (NYT $28M+ litigation economics, #869 - the spend whose pricing momentum the related-case posture inherits)'
+      - '#609/#614 qualitative boundary (financial-incentive legs map money flows; tone claims require paired Type A/B evidence)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded litigation facts; 1 first-hand browser.open this run on the Press Gazette tracker, 1 on chatgptiseatingtheworld Dec 3 2025)'
+      - 'iteration-492 rule (bounded absence: no first-hand read of the primary complaint or docket sheet; none claimed as proof)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: '0 browser.open on the primary complaint or docket sheet this run - all suit facts via search-result excerpts (chatgptiseatingtheworld Dec 3 2025 secondary; Press Gazette tracker first-hand read but itself a third-party curation). Per #503 the facts are second-hand and excerpt-bounded; the complaint''s relief ask beyond damages is not itemized in the available excerpts and is bounded out, not asserted'
+      - rank: 2
+        strength: strong
+        confounder: 'the suit was filed Nov 26 2025, ~10 months before this run - this leg documents a corpus gap, not a September-2026 event. Any reading of this mechanism as fresh news would be a misdating; the novelty claim is first-to-corpus dedicated mechanism only (zero pre-commit hits)'
+      - rank: 3
+        strength: moderate
+        confounder: '"deemed related" to the MDL (per the secondary) is not the same as a transfer/consolidation order - no order surfaced in the bounded searches, so the MDL-pricing-momentum inheritance is procedural proximity, not a docket fact'
+      - rank: 4
+        strength: moderate
+        confounder: 'the Press Gazette tracker is a curated third-party list, not a court record - filing date Nov 26 2025 and suit-count ordinals (16th vs OpenAI, 63rd vs AI companies) are carried from the tracker and the secondary, not independently docket-verified'
+      - rank: 5
+        strength: weak
+        confounder: 'Rothwell Figg''s 4-firm-suit count is per the chatgptiseatingtheworld secondary; other publisher suits may use other counsel - "consolidation" describes that firm''s book, not the plaintiffs'' bar'
+      bounded_absences:
+      - 'No first-hand read of the complaint or docket sheet (bounded per iteration-492, not asserted)'
+      - 'No relief-ask detail beyond damages in the available excerpts - injunctive or destruction asks not confirmed for this suit'
+      - 'No reporting on whether any licensing or settlement talks preceded the suit'
+      - 'No reporting on case status post-filing (no trial date, no motion practice surfaced in the bounded searches)'
+      novelty: 'FIRST dedicated corpus mechanism on U.S. News & World Report v. OpenAI. Zero "us_news_world_report" / "u_s_news_v_openai" mechanism key hits repo-wide pre-commit; zero test_type_c_884 files on disk (glob); no "Type C #884" in git log (--grep); max numeric mechanism_id 761 pre-commit; zero underscore-form 762 mechanism key strings repo-wide pre-commit (format-built needles only, per the #715 convention); block key zero-hit repo-wide pre-commit; chatgptiseatingtheworld Dec 3 2025 URL zero-hit repo-wide pre-commit (Press Gazette tracker URL carried - in corpus via #874/#879). Distinct from mechanism 589 (Ziff Davis copyright-only suit), the Editorial Perfil block (Argentina), mechanism 675 (grant-then-sue), and mechanisms 756/759 (Sep 2026 MDL escalation - this suit predates them by ~10 months). Filed ~10 months before this run: first-to-corpus documentation, not a new event - explicit in type_c_focus and confounder rank 2.'
+      sources:
+      - 'Press Gazette (tracker, first-hand browser.open read this run Sep 20 2026 15:00 PDT): U.S. News & World Report v. OpenAI listed under November 2025, filed Nov 26 2025; "insatiable need for popular, well-crafted, authoritative, factual, and up-to-date content"; trained on and reproduced U.S. News content "uncredited and uncompensated"; regurgitation "directly and materially harmed" the business; inaccurate information attributed to U.S. News; TOS allows non-commercial personal use but prohibits use "for the development of any software program, model, algorithm, or generative artificial intelligence tool"'
+      - 'chatgptiseatingtheworld.com (Dec 3 2025, excerpt-bounded per #503): 16th copyright suit vs OpenAI, 63rd copyright suit vs AI companies; deemed related to In re OpenAI Copyright Infringement Litigation, assigned to Judge Sidney H. Stein; counts: copyright infringement, contributory infringement, DMCA 1202(b)(1) CMI, trademark infringement (15 U.S.C. 1114), trademark counterfeiting, false designation of origin and dilution (15 U.S.C. 1125), N.Y. Gen. Bus. Law 360-l dilution; Rothwell Figg 4th copyright suit (NYT, Daily News, California Newspaper Partnership)'
+      source_urls:
+      - https://chatgptiseatingtheworld.com/2025/12/03/u-s-news-sues-openai-for-use-of-u-s-news-rankings-articles-16th-copyright-suit-v-openai-63rd-copyright-suit-v-ai-companies/
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      research_method: '4 browser.search query sets this run: (1) new AI publisher content licensing deal September 2026 (since=2026-09-19) - surfaced Village Media #804 (in corpus), Roundtable/Paradium (mechanisms 738/744, in corpus), Google pay-per-value pilot (in corpus), Apple News deals (re-indexes of 2024-2025, in corpus); (2) AI company publisher content licensing deal announced September 2026 (since=2026-09-17) - music-vertical deals (UMG x ElevenLabs Sep 10, Suno x Warner/BMG Sep 9 - out of scope per #729/#759/#799), Mumsnet v OpenAI (roster-only, #879 research leg, not new event), Cashmere x Princeton University Press et al. (mechanism 663/799 family, in corpus); (3) publisher lawsuit OpenAI September 2026 (since=2026-09-14) - surfaced the Press Gazette tracker (1 browser.open first-hand read this run, ~60 lines) and the chatgptiseatingtheworld Dec 3 2025 U.S. News case summary (1 browser.open read this run); all other tracker additions (DPCMO, Mumsnet, Yomiuri, Britannica) are pre-September suits per #879. 2 browser.open first-hand reads this run (Press Gazette tracker, chatgptiseatingtheworld). SELECTED: U.S. News v. OpenAI as the only tracker-listed suit with zero dedicated corpus mechanism and zero test. Dead-end/rejected candidates: OpenAI India attribution deals (m714/609/702, in corpus); News Corp/OpenAI and News Corp/Meta (in corpus); Microsoft PCM (in corpus); CNN/Perplexity (mechanisms 614/750, in corpus); NYT/OpenAI litigation economics (mechanisms 753/756/759, in corpus). Pre-commit novelty greps: zero test_type_c_884 files on disk (glob); no "Type C #884" in git log (--grep); max numeric mechanism_id 761 pre-commit; zero underscore-form 762 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715); block key zero-hit repo-wide pre-commit; "us_news_world_report" zero-hit repo-wide pre-commit; chatgptiseatingtheworld URL zero-hit repo-wide pre-commit (Press Gazette tracker URL carried, 101 pre-commit hits via #874/#879). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: 'tests/test_type_c_884_us_news_world_report_openai_trademark_dilution_suit_sep20_3pm.py'
+      verification:
+        iteration: 884
+        type: 'C'
+        date: '2026-09-20 15:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
+
   anthropic:
     display_name: Anthropic
     aliases:
@@ -15371,6 +15474,117 @@ entities:
       x_ad_revenue_current_b: 2.9
       publisher_deals: 0
       publisher_settlement_b: 0
+    distressed_startup_data_acquisition_strategy_sep2026:
+      mechanism_id: 813
+      iteration: 969
+      rotation: 'Type C'
+      date_analyzed: '2026-09-24'
+      time_pdt: '12:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'SpaceXAI failed-startup data-acquisition deliberation (Bloomberg-via-Decrypt, Sep 17 2026): xAI''s zero-publisher-deal alternative supply leg - FIRST dedicated corpus mechanism on distressed-data sourcing'
+      type: financial_incentive_mapping
+      block_key: type_c_969_xai_spacexai_failed_startup_data_acquisition_sep24_12pm
+      type_c_focus: 'FIRST dedicated corpus mechanism on the Sep 17 2026 Bloomberg report (relayed by Decrypt; mirrors: digitaltoday, bitdefender, frontiernews, foundernews, theoutpost, bitcoinethereumnews, walletinvestor) that teams inside SpaceXAI - the AI division formed in Feb 2026 when SpaceX merged with xAI - have internally reviewed ways to buy customer information and operating data from bankrupt/failed startups and use it to train Grok. The target is digital assets of defunct startups with no party left to voice objections: customer files, operating records, internal communications, documents. SpaceX offered no comment to Bloomberg. The discussions are informal and may not lead to a transaction - an intent signal, not a shipped capability. The incentive geometry: xAI keeps its publisher ledger at $0 (corpus-documented publisher_deals_note: zero publisher content-licensing deals; publisher-invisible, neither paying nor sued) while scouting a supply channel that sidesteps the priced licensing market entirely. The precedent leg: Google won collapsed Spirit Airlines'' internal records (100M emails, 500M Teams messages, decades of employee files) for $10M at a bankruptcy auction for AI training; a flight attendants'' union objected in bankruptcy court (de-identification does not stop re-identification), and the dispute is ongoing. Musk reportedly told SpaceX employees in August that Grok would train on the company''s own information (''It''ll be trained on you'' - bitdefender/foundernews). This extends the xAI zero-payer documentation with the alternative-supply leg: distress-acquisition, where the seller cannot renegotiate and the consent chain is severed.'
+      acquisition_facts:
+      - 'Bloomberg (relayed by Decrypt, Sep 17 2026): teams inside SpaceXAI have ''internally reviewed ways to buy customer information and operating data from a bankrupt startup and use it to train Grok.'' The review is led by SpaceXAI, launched in February after SpaceX and xAI integrated. The discussions are ''still informal and may not lead to an actual transaction.'' (digitaltoday mirror of the Decrypt/Bloomberg relay)'
+      - 'Strategy logic per the relays: ''Rather than securing permission from operating companies to use their data, the organisation is focusing on digital assets from defunct startups with no party left to voice objections.'' Real corporate operating records are ''being regarded as a relatively inexpensive resource'' as the cost of obtaining real corporate data rises versus public web data. (digitaltoday)'
+      - 'Google precedent: Google ''won internal records of low-cost carrier Spirit Airlines, which shut down operations this year, for $10 million at a bankruptcy auction'' - about 100 million emails, 500 million Microsoft Teams messages and employee files spanning decades, set to enter an AI training system. A flight attendants'' union filed an objection with the bankruptcy court: de-identification by deleting names alone ''would not make it difficult to identify again who said what in a decade of internal conversations.'' The legal dispute is still ongoing. (digitaltoday; bitdefender: 100M emails + 500M Teams chats; passenger profiles and frequent-flyer info excluded; Google says a third party scrubs PII and it will not try to re-identify)'
+      - 'Musk internal-telegraphing: Musk reportedly told SpaceX employees that Grok would be trained on the company''s information, telling workers ''It''ll be trained on you'' (bitdefender; bitcoinethereumnews: Grok ''would eventually train on the sum total of all SpaceX information, staff included''). SpaceXAI''s European privacy notice claims legitimate interests as its legal basis for model improvement (foundernews); Ireland''s DPC opened an inquiry in April 2025 into Grok training on EU/EEA users'' public posts (foundernews).'
+      - 'Financial context (theoutpost): SpaceX committed $15.8B to AI development in the previous quarter; xAI ended with a $1.3B net operating loss. Frontiernews notes xAI faces friction scaling Grok on X posts alone (500-worker data-annotation cuts, hiring for the AI-tutor team stalled in June), which the distressed-data strategy would relieve.'
+      quotes:
+        no_objections: 'Decrypt-via-digitaltoday: ''Rather than securing permission from operating companies to use their data, the organisation is focusing on digital assets from defunct startups with no party left to voice objections.'''
+        cheap_fuel: 'bitcoinethereumnews: ''The goal is basically cheap fuel for Grok... A dead company''s file cabinet is apparently a bargain by comparison.'''
+        consent_question: 'bitdefender: ''Did you agree to your information being used this way when you originally handed it over? ... A privacy policy accepted years ago may not have prompted users to imagine that the company could eventually collapse and its remaining information become a valuable asset in an AI data market.'''
+      incentive_geometry:
+        zero_ledger_preserved: 'The corpus documents xAI''s publisher ledger at $0 (publisher_deals_note: ZERO publisher content licensing deals as of Aug 2026; xAI ''publisher-invisible'' - neither paying publishers nor being sued by them; litigation_mediascope_relevance: zero publisher copyright claims). The distress-acquisition strategy is the alternative-supply leg that keeps that ledger at zero: buying from dead companies creates no publisher financial relationship, so the ''publisher-invisible'' status - and the editorial-neutrality control the corpus uses xAI coverage for - is maintained even as training-data supply scales.'
+        bypass_priced_market: 'Mechanism 789''s Buttle datum (via #929) says the licensing market is priced and operating. Distress-acquisition routes around the priced market: bankruptcy-estate sellers cannot renegotiate upward, there is no collective-bargaining counterparty (cf. Platkin''s 550-publication bloc, m810), and the price is set by auction dynamics, not by publisher coalition leverage. If the sign tier''s leverage grows, the distress tier is the exit ramp.'
+        consent_severed: 'The structural risk is consent-chain severance: users gave data to a specific company under a specific privacy policy; liquidation transfers that data to an unrelated AI trainer in a ''legal gray area that varies by jurisdiction'' (walletinvestor). The Spirit Airlines union objection shows the consent question is litigable, not settled. This leg documents the financial vector, not the legal outcome.'
+        google_parallel: 'Google''s Spirit Airlines $10M win is the in-corpus parallel (new to corpus this run): another acquisition that routes around publisher licensing. The distressed-data vector is now a two-lab pattern (Google completed, SpaceXAI deliberating), which matters for the corpus''s incentive maps: labs are building a training-data supply chain that does not route through publisher licensing at all.'
+      connects_to: [68, 509, 789, 810, 786]
+      ranked_confounders:
+      - rank: 1
+        strength: 'STRONG'
+        text: '0 browser.open this run - all facts via search-result excerpts per #503; Bloomberg''s original text not first-hand reviewed; the Decrypt relay and mirrors are the evidence tier, not Bloomberg direct'
+      - rank: 2
+        strength: 'STRONG'
+        text: 'Internal deliberation, not a completed deal - Bloomberg''s sources say the talks are informal and ''may not lead to an actual transaction''; the mechanism documents an intent signal, not a shipped data-acquisition capability'
+      - rank: 3
+        strength: 'STRONG'
+        text: 'Single primary report - Bloomberg is the sole origin; the seven mirrors all relay it; no independent corroboration or SpaceX confirmation (no comment); the story could be partial or trial-ballooned'
+      - rank: 4
+        strength: 'MODERATE'
+        text: 'Spirit Airlines figures are mirror-reported (100M emails / 500M Teams messages / $10M) - the bankruptcy-auction details are second-hand; the union objection and ongoing dispute are reported, not docket-verified'
+      - rank: 5
+        strength: 'MODERATE'
+        text: 'The $15.8B quarterly AI spend and $1.3B net operating loss figures come from theoutpost (a lesser-known outlet) - the financial framing is single-source and not corroborated against SpaceX filings this run'
+      - rank: 6
+        strength: 'WEAK'
+        text: 'The distress-acquisition vector is adjacent to, not inside, the publication-competitor financial-relationship scope - its MediaScope relevance is the zero-payer-leg alternative supply, documented explicitly, not a coverage-tone claim'
+      bounded_absences:
+      - 'No Bloomberg original text reviewed (0 browser.open; excerpt-bounded per #503) - the internal-review framing and source descriptions are relay-bounded'
+      - 'No deal completed: no target startup named, no price discussed, no timeline - the acquisition is deliberation-only as reported'
+      - 'No SpaceX confirmation: the company offered no comment to Bloomberg - the deliberation is source-attributed, not company-confirmed'
+      statistical_discipline:
+        scope: qualitative financial-incentive documentation only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: NOT_SCORED
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: directionally_supported_not_proven
+      cautious_language_required: true
+      correlational_note: 'This mapping documents xAI/SpaceXAI''s reported internal deliberation on buying failed startups'' customer and operational data for Grok training as a financial-incentive datum: an alternative data-supply leg that keeps xAI''s publisher ledger at $0. It does not prove the strategy was executed, does not claim editorial influence over any tracked publication''s xAI coverage, and does not resolve the consent-chain legal question. Correlation is not causation. No causal claim. No coverage-tone claim.'
+      no_coverage_tone_claim: true
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - data-sourcing documentation leg with no coverage-tone pair; ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+      cross_references:
+      - 'mechanism 68 (xAI-X dual-entity publisher financial destruction chain, in-xai-block - the zero-payer architecture this leg''s alternative supply preserves)'
+      - 'mechanism 509 (Anthropic zero-publisher-deal leg - the parallel zero-payer lab; Anthropic settled Bartz $1.5B instead of licensing forward, #929)'
+      - 'mechanism 789 (publisher P and L under AI, #929 - the Buttle priced-market datum this strategy routes around; the TVN three-buyer-model taxonomy; Tollbit 7,000 publishers)'
+      - 'mechanism 810 (Platkin 550-publication collective, #964 - the collective-bargaining counterparty the distress tier sidesteps: no coalition to negotiate with when the seller is dead)'
+      - 'mechanism 786 (Cloudflare activation-verification tollbooth - the infrastructure side of the same publisher P and L)'
+      - '#503 second-hand evidence-grade precedent (excerpt-bounded data-strategy facts; 0 browser.open this run)'
+      - 'iteration-492 rule (bounded absence: deliberation-only, unconfirmed, mirror-reported figures not asserted as verified)'
+      - '#565 followup/anchor convention'
+      - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+      counterevidence:
+      - 'The talks ''may not lead to an actual transaction'' (Bloomberg via Decrypt) - the strategy could be abandoned, in which case this leg documents a road not taken, not a data supply'
+      - 'The Spirit Airlines precedent shows the consent objection is litigable and ongoing - distress-acquisition carries legal exposure (the union''s re-identification argument), so it is not a clean bypass of licensing economics'
+      - 'xAI''s publisher-invisibility cuts both ways: paying $0 means publishers also owe xAI nothing - the zero ledger is symmetric, and the alternative-supply strategy does not create any new leverage over tracked publications'
+      strongest_counterargument: 'This is a deliberation, not a deal: the mechanism''s value is as an early intent-signal in the corpus''s data-sourcing vector map, and it must not be read as evidence that xAI acquired any startup''s data. Its structural value is documenting the zero-payer lab''s alternative supply leg (distress-acquisition) alongside the Google parallel (Spirit Airlines $10M completed), showing two labs building training-data supply chains that bypass publisher licensing entirely - which bounds the sign-tier leverage story (m810) rather than proving any coverage effect. No coverage-tone claim is made.'
+      novelty: 'First corpus mechanism on xAI/SpaceXAI distressed-startup data acquisition: zero ''failed startup'' hits repo-wide pre-commit; zero ''spirit'' hits in profiles/competitor-entities.yaml pre-commit; max numeric mechanism_id 812 pre-commit; block key distressed_startup_data_acquisition_strategy_sep2026 zero-hit repo-wide pre-commit; all 7 source URLs zero-hit repo-wide pre-commit (git grep -F); zero underscore-form 813 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric 813-form mechanism keys repo-wide pre-commit. Extends the xAI zero-payer documentation (publisher_deals_note) with the alternative-supply leg; parallels Google''s Spirit Airlines $10M bankruptcy-auction leg (also new to corpus). ASCII-only, no em dashes.'
+      sources:
+      - 'digitaltoday.co.kr (Sep 17-18 2026, Decrypt/Bloomberg relay): ''SpaceX''s AI arm has internally reviewed ways to buy customer information and operating data from a bankrupt startup and use it to train Grok''; discussions ''still informal and may not lead to an actual transaction''; ''Rather than securing permission from operating companies to use their data, the organisation is focusing on digital assets from defunct startups with no party left to voice objections''; Google''s Spirit Airlines $10M bankruptcy-auction win (100M emails, 500M Teams messages, decades of employee files); flight attendants'' union objection; dispute ongoing. (search excerpt, excerpt-bounded per #503, 0 browser.open)'
+      - 'bitdefender (Sep 18 2026, Bloomberg relay): ''teams within SpaceXAI have considered acquiring data from companies that are struggling financially or have gone out of business''; Musk told SpaceX staff Grok would learn from the company''s own information (''It''ll be trained on you''); consent question: ''Did you agree to your information being used this way when you originally handed it over?''; Google Spirit Airlines $10M precedent (passenger profiles excluded, third-party PII scrub, no re-identification pledge); pushback noted. (search excerpt, per #503)'
+      - 'frontiernews.ai (Sep 18 2026, Bloomberg report attribution): SpaceX ''in discussions to purchase customer and operational data from failed AI startups... with the goal of using this material to train Grok models''; Grok friction: relied on X posts, $300M Telegram deal, repeated data-annotation layoffs (~500 workers cut), AI-tutor hiring stalled in June. (search excerpt, per #503)'
+      - 'foundernews.eu (Sep 20 2026, Bloomberg attribution): SpaceX ''may soon acquire the digital remains of failed startups, turning their customer files and operational logs into training fuel''; no formal agreement; SpaceX offered no comment; playbook resembles Google''s $10M Spirit Airlines bid (a rival bidder topped the offer); Musk August: Grok would train on ''the sum total of all SpaceX information''; Ireland DPC April 2025 Grok-training inquiry; SpaceXAI European privacy notice claims legitimate interests. (search excerpt, per #503)'
+      - 'theoutpost.ai (Sep 18 2026): SpaceX ''has begun internal discussions about buying customer and operational data from troubled or defunct startups''; informal, no confirmed deals; ''offering access to proprietary datasets at bargain prices compared to licensing agreements with operating companies''; SpaceX committed $15.8B to AI development previous quarter; xAI $1.3B net operating loss; Grok lags Anthropic/OpenAI/Meta across metrics; X posts train Grok unless users opt out. (search excerpt, per #503)'
+      - 'bitcoinethereumnews.com (Sep 17-18 2026): ''Not licensing data from companies that are still operating and can say no. Buying the digital estate of companies that no longer exist to say anything at all''; ''The goal is basically cheap fuel for Grok... A dead company''s file cabinet is apparently a bargain by comparison''; Google $10M Spirit Airlines echo (100M emails, 500M Teams messages); union re-identification objection; court fight ongoing. (search excerpt, per #503)'
+      - 'walletinvestor.com (Sep 19 2026): ''For an AI operation hungry for training material, a defunct firm''s database is a low-friction acquisition''; ''Dead startups can''t renegotiate their privacy terms''; ''None of this has been confirmed as a completed deal. What''s been reported is internal deliberation... not an announcement that it has bought anything''; privacy consent gray area varies by jurisdiction. (search excerpt, per #503)'
+      research_method: '2 browser.search query sets this run: (1) xAI Grok publisher content licensing deal 2026 news media - surfaced xAI''s GSA OneGov Grok contract (in corpus, rejected), the Nvidia-xAI Grok inference licensing note (rejected), the xAI half-billion-dollar litigation reserve piece (rejected), X''s Grok content-theft creator crackdown (rejected), plus the WalletInvestor Sep 19 SpaceX-failed-startup-data piece (SELECTED as lead); (2) SpaceX buying data failed startups Grok Crypto Briefing September 2026 - surfaced seven Bloomberg-origin relays (digitaltoday, frontiernews, bitdefender, technobezz, foundernews, theoutpost, bitcoinethereumnews; SELECTED six plus walletinvestor as the multi-mirror evidence set) plus the Google Spirit Airlines $10M bankruptcy-auction precedent (SELECTED as the completed parallel leg). 0 browser.open this run (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_c_969 files on disk (glob); no Type C #969 in git log (--grep); max numeric mechanism_id 812 pre-commit; zero underscore-form 813 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric 813-form mechanism keys repo-wide pre-commit; block key distressed_startup_data_acquisition_strategy_sep2026 zero-hit repo-wide pre-commit; all 7 source URLs zero-hit repo-wide pre-commit (git grep -F); zero ''spirit'' hits in profiles/competitor-entities.yaml pre-commit; zero ''failed startup'' hits repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Bounded absences per iteration-492 rule (deliberation-only, no target named, no SpaceX confirmation, mirror-reported figures not asserted as verified).'
+      source_urls:
+      - https://www.digitaltoday.co.kr/en/view/105085/spacex-considers-buying-data-from-bankrupt-startup-for-grok-training
+      - https://www.bitdefender.com/en-us/blog/hotforsecurity/spacex-data-failed-startups-ai-fodder
+      - https://www.frontiernews.ai/news/article/spacex-is-quietly-buying-data-from-failed-ai-start-2959756a
+      - https://foundernews.eu/spacex-eyes-defunct-startups-customer-records-to-feed-grok-ai-training/
+      - https://theoutpost.ai/news-story/space-xai-explores-buying-customer-data-from-troubled-startups-to-train-grok-ai-models-31004/
+      - https://bitcoinethereumnews.com/tech/your-data-could-outlive-the-startup-you-gave-it-to-elon-musk-wants-to-buy-whats-left/
+      - https://walletinvestor.com/news/ai-news/spacex-weighs-buying-data-from-failed-startups-to-train-musks-grok/
+      test_file: 'tests/test_type_c_969_xai_spacexai_failed_startup_data_acquisition_sep24_12pm.py'
+      verification:
+        iteration: 969
+        type: 'C'
+        date: '2026-09-24 12:00 PDT'
+        yaml_parse_clean: true
+        ascii_only: true
   samsung:
     display_name: Samsung
     aliases:
