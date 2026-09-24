@@ -22463,3 +22463,52 @@ jessica_gorringe:
   verdict: 'directionally_supported_not_proven'
   no_analysis_json_update: true
   ledger: '29'
+katie_notopoulos:
+  name: Katie Notopoulos
+  current_role: journalist
+  current_publication: Business Insider
+  beat: technology and culture (senior correspondent; glasses-privacy beat since 2021 BuzzFeed)
+  smart_glasses_coverage:
+    meta_ama_sep_2026:
+      headline_pattern: Meta CTO bad actors glasses AMA piece
+      date: '2026-09'
+      tone: executive-defense relay on Meta
+      carried_mechanism_id: 745
+      carried_mechanism_home: profiles/competitor-coverage-research.yaml
+    apple_watch_sep_2026:
+      headline_pattern: Apple Watch Audio Intelligence first-person unease piece
+      date: '2026-09'
+      tone: hedged personal unease on Apple, balanced concessions
+      mechanism_id: 803
+      mechanism_home: profiles/competitor-coverage-research.yaml
+    meta_bricked_cameras_sep_2026:
+      headline_pattern: Meta bricked cameras on thousands of AI glasses enforcement piece
+      date: '2026-09'
+      tone: enforcement-news accountability register on Meta
+      mechanism_id: 803
+      mechanism_home: profiles/competitor-coverage-research.yaml
+  notes: 'Business Insider senior correspondent (technology and culture). Type B #953 (Sep 23 2026): mechanism 803 FIRST dedicated Type B mechanism on Notopoulos in journalists.yaml (zero katie_notopoulos YAML key pre-commit per the #643 convention; the Katie Drummond hits repo-wide are a different person). ENTITY-NEUTRAL CONSTANCY control case in the NEUTRAL band, distinct from #948 Gorringe''s adversarial-band constancy. Sep 2026 Apple arm "The new Apple Watch can listen in on your conversations and take notes. That makes me feel weird." (byline via Muck Rack author page + Flipboard "Business Insider - By Katie Notopoulos" listing; BI original paywalled, read via the cncbnews full-text relay mirror exceeding the #503 excerpt floor): Siri Recap / Live Rewind "convenient and cool, but also a little ... weird", "very un-Appley"; concessions ("you can turn this off", "doesn''t store raw audio recordings", "end-to-end encryption"); closer "I don''t feel like an eavesdropper wearing an Apple Watch. Unstylish, maybe, but not creepy." Meta arms the same week: (1) Sep 16-18 Bosworth AMA report "Meta''s CTO doesn''t want a few ''bad actors'' to spoil your view of Meta glasses" (carried mechanism 745, un-rescored per #807, +0.10); (2) "Meta bricked the cameras on thousands of its AI glasses" (byline via same Muck Rack author page; Meta software-bricks cameras when the recording-indicator light is covered or removed) -0.15. MANUAL ILLUSTRATIVE only: Meta arm avg -0.025 vs Apple arm 0.00, illustrative cross-entity constancy delta -0.025 inside the neutral band; p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; NOT a falsification-family member; ledger holds at 29; no analysis.json update. Beat history: her 2021 BuzzFeed investigation put the Ray-Ban Stories recording-indicator LED to the test and proved it could be taped over (Meta-adversarial then); her Sep 2026 neutral Meta relay coexists with that history, so register tracks the news peg, not a stable entity gradient. BOUNDS the differential thesis: the journalist with the longest glasses-privacy beat in the corpus writes both entities in the neutral register in the same week, so neutral Meta coverage alone does not imply an entity-driven differential.'
+  mechanism_ids: [803]
+  source_urls:
+  - https://muckrack.com/katienotopoulos/articles
+  - https://cncbnews.com/article/2026/09/the-new-apple-watch-can-listen-in-on-your-conversations-and-take-notes-that-makes-me-feel-weird
+  competitor_coverage:
+    type_b_953_katie_notopoulos_bi_meta_glasses_vs_apple_watch_audio_constancy_sep23_7pm:
+      iteration: 953
+      iteration_time: '2026-09-23 19:00 PDT'
+      mechanism_id: 803
+      mechanism_home: profiles/competitor-coverage-research.yaml
+      finding: 'Entity-neutral constancy in the neutral band: Notopoulos hedges hard on Apple''s always-listening Watch (personal unease, balanced concessions, "not creepy" closer) and relays Meta''s Bosworth AMA defense (+0.10 carried) alongside Meta''s camera-bricking enforcement news (-0.15); illustrative delta -0.025 inside the neutral band. CONTROL case bounding the differential thesis, distinct from #948''s adversarial-band constancy.'
+      evidence:
+      - 'Sep 2026 BI Apple Watch Audio Intelligence first-person piece (byline via Muck Rack author page; read via relay mirror exceeding the #503 excerpt floor).'
+      - '"They''re convenient and cool, but also a little ... weird. They also strike me as very un-Appley." / "I don''t feel like an eavesdropper wearing an Apple Watch. Unstylish, maybe, but not creepy."'
+      - 'Sep 2026 BI Meta arms: Bosworth AMA "bad actors" relay (carried m745, +0.10, un-rescored per #807); "Meta bricked the cameras on thousands of its AI glasses" enforcement news (byline via same author page) -0.15.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update True; artifact_grade False; correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member (entity-neutral constancy control case; the differential thesis is bounded, not tested; Ledger holds at 29)'
+      no_analysis_json_update: true
+      ledger: 'Ledger holds at 29 this run (no new member; TWENTY-NINTH member-form in profiles/news-corp.yaml remains the terminal member; THIRTIETH remains the negative guard)'
+      is_significant: false
+      correlation_not_causation: true
+  verdict: 'directionally_supported_not_proven'
+  no_analysis_json_update: true
+  ledger: '29'
