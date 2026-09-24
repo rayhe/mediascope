@@ -56,7 +56,7 @@ MECH_KEY = (
     "symmetric_adversarial_vs_meta_connect"
 )
 NEXT_SIBLING = "\n  google:"
-ANCHORED_SHA = "PLACEHOLDER_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "3ef08c640f1fdca1291f7319c376eaa7357ea266"
 ITERATION = 962
 TYPE_LETTER = "A"
 
