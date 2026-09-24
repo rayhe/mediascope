@@ -4200,6 +4200,134 @@ competitor_relationships:
       - 732
       test_file: test_type_a_827_wired_snap_specs_sep16_launch_natural_experiment_sep18_6am.py
       search_gap_correction_2026_09_19: 'Type B #853 (mechanism 743, 2026-09-19 08:00 PDT) attests a standalone WIRED launch-day piece the Sep-18 bounded searches missed: Boone Ashworth, "Here''s What Snap''s Expensive Specs Can Actually Do", Sep 16 2026 7:40 pm (TechNewsTube WIRED feed attestation, WIRED publisher attribution verbatim; excerpt-tier, WIRED paywall). The mechanism 727 finding ("no standalone WIRED piece on the launch surfaced") was a bounded search-coverage artifact, not a publication absence. Scope of this correction: the launch-day PRESENCE claim only. It does not collapse the m163 zero-privacy-investigations finding or the m354 selection pattern. Rule reinforced: bounded absence of evidence is not evidence of non-publication.'
+    wired_snap_sep16_launch_register_vs_meta_connect_privacy_positive_alarm_coda_sep24_2026:
+      mechanism_id: 814
+      iteration: 972
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      date_analyzed: '2026-09-24'
+      time_analyzed: 2026-09-24 15:00 PDT
+      publication_focus: wired
+      competitor: snap
+      event: "WIRED September-2026 launch-window registers: Snap Specs Sep-16 launch-day coverage (Ashworth) vs Meta Connect Sep-23 privacy-positive Private Processing announcement"
+      source_urls:
+        - "https://technewstube.com/wired/1868078/snaps-expensive-specs-can-actually-do/"
+        - "https://technewsvision.co.uk/meta-pinky-promises-its-smart-glasses-will-be-private-soon/"
+        - "https://www.aob-news.com/2026/09/23/meta-pinky-promises-its-smart-glasses-will-be-private-soon/"
+        - "https://superpowerdaily.com/posts/meta-plans-private-ai-processing-for-ray-ban-glasses-with-no-release-date"
+      snap_arm:
+        item:
+          url: "https://technewstube.com/wired/1868078/snaps-expensive-specs-can-actually-do/"
+          title: "Here's What Snap's Expensive Specs Can Actually Do"
+          byline: "Boone Ashworth"
+          date: "2026-09-16"
+          evidence_tier: "mirror-attested"
+          evidence_note: "TechNewsTube WIRED feed attestation, WIRED publisher attribution verbatim, Sep 16 2026 7:40 pm; excerpt-tier, WIRED paywall; carried un-rescored from mechanism 743 (Type B #853) per the #807 convention"
+          register: "price-hardened product-forward feature relay, zero privacy vocabulary"
+          tone_illustrative: -0.15
+          privacy_vocabulary_present: false
+        carried_m743_arm:
+          tone: -0.15
+          carried_from: "iteration 853, mechanism 743"
+          jun16_baseline_tone: 0.12
+      meta_arm:
+        item:
+          title: "Meta Pinky Promises Its Smart Glasses Will Be Private Soon"
+          date: "2026-09-23"
+          evidence_tier: "mirror-attested"
+          evidence_note: "WIRED syndication mirrors (technewsvision.co.uk, aob-news.com, Sep 23 2026) carry the WIRED piece verbatim; WIRED interviewed Meta director of engineering Pritam Shah at Meta Connect; Superpower Daily Sep 23 2026 summarizes the WIRED piece with WIRED attribution"
+          verbatim_quotes:
+            - "Meta Pinky Promises Its Smart Glasses Will Be Private Soon"
+            - "WIRED notes ongoing concerns about face recognition and misuse of the glasses, issues distinct from access to cloud-processed data."
+          register: "promise-skepticism headline plus privacy-positive Private Processing relay with face-recognition and misuse alarm coda"
+          tone_illustrative: -0.20
+          privacy_vocabulary_present: true
+      asymmetry_scorer_result:
+        method: "MANUAL ILLUSTRATIVE"
+        snap_carried_m743_tone: -0.15
+        meta_new_arm_tone: -0.20
+        launch_window_delta_meta_minus_snap: -0.05
+        snap_within_entity_delta_sep16_vs_jun16: -0.27
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        note: "Arithmetic: meta-minus-snap = -0.20 - (-0.15) = -0.05 (near-null headline tone delta); Snap within-entity = -0.15 - 0.12 = -0.27. The mechanism claim is register-level presence/absence, not a tone gradient: the surveillance-alarm register fires on the Meta arm even on a privacy-positive peg and stays silent on the Snap arm despite strictly more sensors (2 RGB plus 2 IR cameras). The asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only, directionally supported not proven."
+      finding: >
+        (1) Snap arm (carried m743, Type B #853, un-rescored per #807):
+        Boone Ashworth Sep 16 2026 7:40 pm "Here's What Snap's Expensive
+        Specs Can Actually Do" (TechNewsTube WIRED feed attestation,
+        WIRED publisher attribution verbatim; excerpt-tier, WIRED
+        paywall) - price-hardened product-forward feature relay:
+        "Expensive" headline adjective plus chunky and pricey dek plus
+        "Snap thinks" distancing; MANUAL ILLUSTRATIVE -0.15 vs the Jun-16
+        unveil piece +0.12 (within-journalist delta -0.27); ZERO
+        surveillance or privacy vocabulary on 4-camera (2 RGB for photos
+        and video, 2 infrared for spatial tracking) standalone AR
+        glasses; the m163 zero-standalone-WIRED-privacy-investigations
+        finding stands. (2) Meta arm (NEW, n=1, MANUAL ILLUSTRATIVE):
+        WIRED Sep 23 2026 "Meta Pinky Promises Its Smart Glasses Will Be
+        Private Soon" - the privacy-positive peg (Private Processing
+        encryption planned for Ray-Ban glasses; WIRED interviewed Meta
+        director of engineering Pritam Shah at Meta Connect) yet the
+        register fires the alarm anyway: promise-skepticism headline
+        ("Pinky Promises" diminishment) plus the face-recognition and
+        misuse coda, attested by the WIRED-attributed Superpower Daily
+        summary: "WIRED notes ongoing concerns about face recognition
+        and misuse of the glasses, issues distinct from access to
+        cloud-processed data." Hand-assigned tone -0.20. (3) Illustrative
+        delta (Meta minus Snap): -0.20 - (-0.15) = -0.05, near-null on
+        headline tone. The mechanism claim is register-level: the
+        surveillance-alarm register fires on the Meta arm even on a
+        privacy-positive peg and stays silent on the Snap arm despite
+        strictly more sensors. (4) EXTENDS m727 (Type A #827): resolves
+        the 727 null Snap arm (its bounded-absence presence claim was
+        corrected by the #853 search-gap caveat); the selection-margin
+        test now runs on populated arms at publication level. REPLICATES
+        the WIRED lane-assignment finding (WIRED x Google I/O 2026:
+        playful register for competitor camera glasses, alarm register
+        for Meta) in the September launch window at publication level.
+        Connects [727, 743, 163, 442, 354, 208]. (5) Financial context:
+        WIRED x Snap personnel_career_migration (Conde Nast CRO
+        Elizabeth Herbst-Brady, senior revenue roles at Snap before Sep
+        2024; the CRO controls advertising revenue decisions for WIRED);
+        no AI content-licensing deal on record (bounded absence per the
+        iteration-492 rule); coverage_prediction softer. WIRED x Meta:
+        financial_tie none, $0, coverage_prediction adversarial.
+        Directionally consistent with the incentive prediction, but the
+        observed asymmetry is register-level and the peg-driven
+        variability precedent (m637, m852) bounds any entity-gradient
+        reading: the same publication assigns its harshest register by
+        news peg, not by entity. Cannot establish payer-driven tone.
+        (6) Limits: mirror and syndication evidence for the Meta arm (no
+        first-hand WIRED body reviewed), excerpt-bounded, n=1 vs carried
+        n=1, different story pegs. Correlation is not causation. NOT
+        artifact-grade.
+      connects_to: [727, 743, 163, 442, 354, 208]
+      confounders:
+        - "STRONG: excerpt and mirror-tier evidence for the NEW Meta arm - WIRED paywalled; evidence from syndicated mirrors plus a WIRED-attributed third-party summary; the full-text register could differ and the alarm coda is attested by the summary, not a first-hand read"
+        - "STRONG: story-type mismatch - the Snap arm is a launch-day features piece where privacy angles are conventionally absent from product launches, while the Meta arm is a privacy-announcement news piece where privacy context is peg-relevant; the alarm vocabulary may be peg-driven, not entity-driven"
+        - "STRONG: degenerate contract - n=1 new Meta arm vs carried n=1 Snap arm (m743, un-rescored per #807); tones hand-assigned; directional only, no statistical significance by design"
+        - "MODERATE: the alarm coda is arguably proportionate journalism - face-recognition concerns around Meta glasses are real and documented (WIRED's own NameTag reporting, 70-plus advocacy organizations demanding the feature be killed, the Dutch Consumers' Association EU-ban call of Sep 10 2026); the register may be news-driven rather than entity-driven"
+        - "MODERATE: timing skew - Sep 16 vs Sep 23, one week apart; Connect news-cycle scrutiny incentives may harden the Meta register independent of entity"
+        - "WEAK: mirror-attribution risk - syndicated copies may trim or alter WIRED framing; the Superpower Daily summary is WIRED-attributed but third-party"
+      counter_evidence:
+        - "The Meta arm is at its core a privacy-positive relay: WIRED covered a Meta privacy improvement and interviewed Meta engineering (Pritam Shah); this is not register suppression of good Meta news."
+        - "Ashworth's Sep-16 Snap piece hardened on price (within-journalist delta -0.27, #853); WIRED is not uniformly soft on Snap."
+        - "Near-null tone delta (-0.05): the asymmetry is register-presence only, a weaker claim than a tone gradient; headline-tone parity cuts against a stable entity-softness reading."
+        - "The m727 correction cuts both ways: bounded search-coverage artifacts produced the original null Snap arm, so absence claims in this family are fragile by construction."
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 (new Meta arm) vs n=1 (carried Snap arm, m743 un-rescored per #807). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative deltas only (launch-window meta-minus-snap -0.05; Snap within-entity -0.27); not evidence of bias or of financial influence; documents the analyst''s reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: "directionally_supported_not_proven"
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: "NOT a falsification-family member: temporal extension of mechanism 727 plus register documentation, not a uniform-prediction test. The falsification ledger holds at 29; the THIRTIETH mechanism stands as the most recent falsification-family member; mechanism 814 does not extend the ledger."
+      research_method: '2 browser.search query sets Sep 24 2026: (a) WIRED Meta Connect 2026 Ray-Ban glasses coverage - surfaced the Sep 23 2026 WIRED "Meta Pinky Promises Its Smart Glasses Will Be Private Soon" via syndication mirrors (technewsvision.co.uk, aob-news.com) plus the WIRED-attributed Superpower Daily summary; (b) WIRED Snap Specs launch September 2026 - the Sep-16 Ashworth launch-day piece is carried from mechanism 743 (Type B #853), not re-searched. 0 browser.open (excerpt-bounded per #503; wired.com paywalled). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. Pre-commit repo greps: zero test_type_a_972 files on disk, no "Type A #972" in git log, max numeric mechanism_id 813 in profiles/, zero underscore-form 814 key strings in profiles/ and tests/, zero numeric 814-form mechanism keys in profiles/, zero dash-form 814 references in profiles/, block key zero-hit repo-wide, three new urls zero-hit repo-wide (the snap arm url is carried from mechanism 743). Falsification ledger 29 carried. ASCII-only, no em dashes.'
+      artifact_readiness: "No analysis.json update warranted. Illustrative-only scorer output; register-level temporal extension of m727, not artifact-grade."
+
 cross_entity_wearables_framing:
   date_analyzed: '2026-08-05'
   summary: 'WIRED''s wearable coverage reveals stark framing asymmetry by manufacturer identity. Camera-equipped wearables from Apple and Snap receive empathetic/playful product coverage from WIRED''s most senior consumer tech correspondent (Lauren Goode), while Meta''s camera glasses receive institutional surveillance/privacy alarm framing from other staffers (Dell Cameron, Dhruv Mehrotra). Same hardware capability (face-mounted cameras), radically different narrative treatment determined by manufacturer identity. The asymmetry is most visible in the HARDWARE COMPARISON: Apple Vision Pro has 12 outward- facing cameras, 5 sensors, and 6 microphones - technically the most surveillance-capable consumer wearable ever sold - yet receives ZERO surveillance/privacy framing from WIRED. Meta Ray-Ban has a single 12MP camera - and receives sustained investigative surveillance framing.
