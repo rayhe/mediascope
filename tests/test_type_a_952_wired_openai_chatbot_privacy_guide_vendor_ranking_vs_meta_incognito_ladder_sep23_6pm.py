@@ -86,7 +86,7 @@ MECH_KEY = (
     "vs_meta_incognito_ladder_sep23_952"
 )
 NEXT_SIBLING = "\n  meta:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a2d8a64c20d3f00e23886f6a41710f1a9634d721"
 ITERATION = 952
 TYPE_LETTER = "A"
 
