@@ -993,6 +993,86 @@ competitor_relationships:
       no_analysis_json_update: true
       correlation_not_causation: true
 
+    wsj_openai_chatgpt_ads_revenue_vs_nypost_meta_teen_harassment_crime_register_sep2026:
+      mechanism_id: 805
+      mechanism_name: 'News Corp Outlet Divergence on Dual Payers: WSJ x OpenAI ChatGPT-Ads Revenue Register vs NY Post x Meta Teen-Harassment Crime Register (Sep 23 2026)'
+      iteration: 957
+      iteration_type: 'A'
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-23'
+      time_pdt: '23:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      publication_focus: 'News Corp parent-level (this profile): WSJ broadsheet arm vs NY Post tabloid arm on the two AI-licensing payers'
+      incentive_attribution: "DOCUMENTATION_READING consistent with the m763 falsification: News Corp collects ~$50M/yr from BOTH OpenAI (May 2024, $250M/5yr) and Meta (up to $50M/yr, 3-year, Mar 2026); the #519 Type C dual-deal symmetric-softening prediction was already falsified at the tabloid register (m763: NY Post adversarial toward both payers, illustrative delta +0.017). This run documents the outlet-divergence dimension: the broadsheet runs a constructive business register on payer OpenAI's ads-monetization story while the tabloid runs a crime/morality register on payer Meta's glasses-misuse story, same 24h window. The financial gradient (~$50M/yr each) cannot explain the gap; outlet house register plus news peg do. Correlation is not causation."
+      overview: 'FIRST dedicated corpus mechanism on the Sep 23 2026 News Corp outlet split across its two AI-licensing payers. WSJ (via PYMNTS relay, Sep 23) reported OpenAI preparing to introduce advertising into ChatGPT, with a $1B ad-revenue expectation and CFO Friisdahl defending monetization: constructive business-expansion register, MANUAL ILLUSTRATIVE +0.30 excerpt-bounded per #503 (0 browser.open this run; relay-tier evidence). NY Post (via WebProNews relay, Sep 23) detailed several incidents of teens using Meta AI glasses to harass others, amid surging misuse reports: crime/morality register, MANUAL ILLUSTRATIVE -0.55 excerpt-bounded. Illustrative delta (OpenAI minus Meta) +0.85. EXTENDS m22 (WSJ covers OpenAI ad expansion with neutral/positive business framing rather than existential-threat framing), m532 (WSJ dual-deal symmetry, Sep 5) and m763 (NY Post dual-payer symmetry, TWENTY-NINTH falsification member) to the outlet-divergence dimension; REPLICATES the m637 peg-follows-register pattern (register follows the news peg and outlet house style, not the payer). connects_to: [22, 532, 763, 155, 796]. NOT a falsification-family member (register documentation consistent with the m763 falsification, no new uniform-prediction test); falsification ledger holds at 29; THIRTIETH remains the negative guard.'
+      financial_context:
+        news_corp_openai_deal: '$50M/yr ($250M over 5 years, May 2024; this profile)'
+        news_corp_meta_deal: 'up to $50M/yr, 3-year deal (Mar 2026; this profile)'
+        dual_payer_note: 'News Corp is the only major publisher with significant AI licensing deals with BOTH OpenAI ($50M/yr) AND Meta (up to $50M/yr) (this profile)'
+        prediction_519: 'symmetric softening (Type C #519); falsified at tabloid register by m763 (TWENTY-NINTH member, dual-payer illustrative delta +0.017)'
+        coverage_prediction: 'not_applicable_both_payers - gradient cannot distinguish the arms'
+      openai_arm_wsj:
+        - title: 'OpenAI Eyes $1B ChatGPT Ad Revenue as CFO Friisdahl Defends Monetization'
+          outlet: 'Wall Street Journal (via PYMNTS relay)'
+          date: '2026-09-23'
+          url: 'https://www.pymnts.com/cfo/2026/openai-eyes-1-billion-chatgpt-ad-revenue-as-cfo-friisdahl-defends-monetization/'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit; relay-tier per #503 (0 browser.open)'
+          relay_attribution: 'PYMNTS: "The Wall Street Journal reported that OpenAI is preparing to introduce advertising into ChatGPT"'
+          corroboration: 'FT (via Techmeme) reported OpenAI expects "low billions" from ads in 2026; OpenAI Aug 31 post put ChatGPT Ads at $1B annualized run rate (mixed-news relay)'
+          register: 'constructive_business_monetization'
+          tone_MANUAL_ILLUSTRATIVE: 0.30
+          key_quotes:
+            - 'The Wall Street Journal reported that OpenAI is preparing to introduce advertising into ChatGPT'
+            - 'OpenAI Eyes $1B ChatGPT Ad Revenue as CFO Friisdahl Defends Monetization'
+      meta_arm_nypost:
+        - title: 'Meta glasses misuse reports surge as teens use AI glasses to harass'
+          outlet: 'New York Post (via WebProNews relay)'
+          date: '2026-09-23'
+          url: 'https://www.webpronews.com/meta-glasses-misuse-reports-surge-as-teens-use-ai-glasses-to-harass/'
+          url_status: 'novel this run - URL zero-hit repo-wide pre-commit; relay-tier per #503 (0 browser.open)'
+          relay_attribution: 'WebProNews: "The New York Post detailed several such incidents" of teens using Meta AI glasses to harass others'
+          register: 'crime_morality_adversarial'
+          tone_MANUAL_ILLUSTRATIVE: -0.55
+          key_quotes:
+            - 'reports of Meta glasses misuse have surged in recent weeks'
+            - 'The New York Post detailed several such incidents'
+            - 'teens use AI glasses to harass'
+          register_family_note: 'Extends the m155-noted vocabulary family (pervert glasses, spy glasses, nightmarish) for Meta hardware into the Sep 2026 incident-news cycle'
+      illustrative_delta_openai_minus_meta: 0.85
+      confounding_factors_ranked_strong_first:
+        - 'STRONG - relay-bounded evidence: 0 browser.open this run (excerpt-tier per #503); full-text register of both the WSJ scoop and the NY Post originals could differ from relay characterization.'
+        - 'STRONG - outlet mismatch within parent: WSJ broadsheet business desk vs NY Post tabloid; house registers differ by design, so the gap may be outlet culture rather than entity treatment.'
+        - 'STRONG - news-peg mismatch: product-monetization launch (OpenAI) vs crime incidents (Meta); register follows the peg per the m637 pattern, not necessarily the entity.'
+        - 'MODERATE - n=1 per arm, degenerate sample; directional only.'
+        - 'MODERATE - the Meta incidents are genuinely newsworthy crime stories; an adversarial register is event-driven, not necessarily entity-driven.'
+        - 'WEAK - WSJ piece is company-sourced (CFO voice); constructive register may reflect sourcing access rather than payer favoritism.'
+      counter_evidence:
+        - 'm763: NY Post ran adversarial registers toward BOTH payers (OpenAI triad avg -0.483, Meta -0.50), so the tabloid register is harsh regardless of payer; the Meta arm here continues that house pattern.'
+        - 'WSJ Jul 14 2026 ran an adversarial Meta register itself ("Meta Is Flooding the Market With Smartglasses", m155 note), so WSJ splits by peg too; the broadsheet is not uniformly soft on the non-OpenAI payer.'
+        - 'The $1B ads figure is OpenAI-company-guided (Aug 31 company post); WSJ relaying a company revenue expectation is standard business reporting, not necessarily softening.'
+      statistical_discipline:
+        scores: 'MANUAL ILLUSTRATIVE only'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        engine_run: false
+        verdict: 'directionally_supported_not_proven'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+        hypothesis_generating_only: true
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: 'Ledger holds at 29; THIRTIETH remains the negative guard per the #754 convention.'
+      research_method: '10 browser.search query sets this run (Gizmodo Snap-vs-Meta hands-on pair - REJECTED: in #862/#933; Verge Snap-vs-Meta - REJECTED: m628/m937; BI OpenAI-vs-Meta - REJECTED: #932/#947; TechRadar ChatGPT-ads - surfaced FT/Guardian disclosure relay; thejoai UN AI-governance - used to VERIFY-AND-REJECT the FT-Australia attribution (page carries no FT attribution; AI-generated aggregation disclaimer); MTR Opus-5.5/UNSC - no MTR URLs surfaced; Guardian Meta-Luna - no guardian.com URLs surfaced; NYT Anthropic Opus-5.5 - no nytimes.com URLs surfaced; FT OpenAI GPT-6/ads - surfaced Techmeme FT "low billions" ads item as corroboration; Guardian ChatGPT-ads - no guardian.com URLs surfaced; SELECTED: News Corp WSJ-x-OpenAI ads-revenue relay + NY Post-x-Meta teen-harassment relay, both Sep 23). 1 browser.open success (thejoai, attribution check), 2 browser.open failures (techradar, webpronews - terminal per developer constraint, excerpt-bounded per #503). Pre-commit novelty greps per #715: zero test_type_a_957 files on disk (glob); no ''Type A #957'' in git log (--grep); max numeric mechanism_id 804 in profiles/ pre-commit; zero underscore-form 805 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried); zero numeric 805 mechanism_id keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; both relay URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_957 files on disk pre-commit; no ''Type A #957'' in git log pre-commit; max numeric mechanism_id 804 in profiles/ pre-commit; zero underscore-form 805 mechanism key strings repo-wide pre-commit; zero numeric 805 mechanism_id keys in profiles/ pre-commit; block key unique repo-wide pre-commit; both relay URLs zero-hit repo-wide pre-commit.'
+
+
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
@@ -2395,6 +2475,7 @@ competitor_relationships:
       editorial judgment that market is nascent (-0.08). Below WIRED (0.82) and Joanna
       Stern (0.85) because the asymmetry is in investigative depth rather than tone,
       and reasonable editorial judgment about market maturity partly explains the gap.
+
 financials:
   q4_fy2026:
     report_date: '2026-08-05'
