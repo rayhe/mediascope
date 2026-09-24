@@ -144,7 +144,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched to the main commit in the anchor followup per #565
+ANCHORED_SHA = "30aaa7cf347eed32b5e796c17b72c22845b5d8b0"  # Type D #970 main commit, patched post-commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"
 NEXT_NUM = 814
