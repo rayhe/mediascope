@@ -69,7 +69,7 @@ NEXT_ID_MARKER = "mechanism" + "_804"
 NEXT_ID_NUMERIC = "mechanism_id: " + "804"
 EXPECTED_ORDER = [("B", "953"), ("A", "952"), ("E", "951"), ("D", "950"), ("C", "949")]
 # Patched to the real main-commit SHA in the anchor followup per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP_PER_565"
+ANCHORED_SHA = "4755fa180e9aa3e9f6edcf9a683027599589ff6a"
 
 BLOCK_KEY = (
     "katie_notopoulos_bi_apple_watch_audio_unease_"
