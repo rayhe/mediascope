@@ -857,6 +857,92 @@ competitor_relationships:
       - 'Off-publication rejections this run: WSJ ''OpenAI Hits Back at Apple Lawsuit'',
         Reuters trade-secret fight, The Apple Post Vision Pro cuts, PYMNTS/Digital Trends
         Apple layoffs are not Gizmodo items; Appleinsider visionOS review is not Gizmodo'
+    gizmodo_apple_sep2026_event_window_symmetric_adversarial_vs_meta_connect:
+      mechanism_id: 808
+      date_analyzed: '2026-09-24'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 962
+      iteration_type: A
+      iteration_time: 2026-09-24 05:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Gizmodo (Keleops AG, acquired from G/O Media 2024-06-04)
+      finding: 'September-2026 event-window temporal extension of the m587 null-tie control (FOURTH zero-tie control: Gizmodo x Google #512, x Anthropic #577, x OpenAI #582, x Apple #587). Gizmodo carries $0 documented financial ties to Apple and Meta, so the thesis predicts symmetric registers with no tie-driven softening. NEW-TO-CORPUS items: (a1) "The Real Winners of Apple''s WWDC 2026 Don''t Even Exist Yet" (Jun 2026, smart-glasses section) - adversarial snark on the Apple glasses concept: "you''re not going to walk around with a bulky, camera-laden headset to ask it questions about local architecture (at least, not without someone pelting you with tomatoes)"; "After the first time it lies to your face - literally, in the case of glasses - will you ever trust it again? For me, that''s a ''no way.''"; MANUAL ILLUSTRATIVE -0.45, excerpt-bounded per #503. (a2) "Live Updates From Apple''s ''Surprise and Shine'' iPhone Event" (Sep 9 2026) - keynote-live consumer snark: "Look at those specs", "better in basically every way imaginable", "What if I don''t actually want to know that much about myself?", "$1,200 ... That''s both $100 more than the iPhone 17 Pro and 17 Pro Max, respectively. Let''s just admit that - considering today''s memory prices - it could have been way worse"; MANUAL ILLUSTRATIVE -0.40, excerpt-bounded. (a3) CARRIED m716: Ece Yildirim Sep 9 2026 "If Meta Glasses Freak You Out, Wait Until You Hear About the New Apple Watch Features" -0.60 (harshest Apple register in the corpus). Apple mean -0.4833. Meta side: (m1-m3) CARRIED from m587: facial-recognition glasses -0.70, scrapped AI photo tool -0.55, layoffs headline snark -0.60; (m4) CARRIED m806: James Pero Sep 23 2026 Ray-Ban Audio camera-free stigma-frame -0.20 (softest Meta register in the corpus); (m5) NEW-TO-CORPUS "Live Updates From Meta Connect 2026" (Sep 23 2026) - keynote-live snark: "Alexandr Wang is talking up using agents for shopping... and I just don''t care. Shopping shouldn''t be a chore."; "Meta is leaning into accessibility with a new hearing-assist feature for people with mild to moderate hearing loss. It''ll cost you $150, though, which they didn''t mention in the keynote."; "Meta doesn''t know which features this will apply to, though, so I guess we''ll have to see just how significant it is."; MANUAL ILLUSTRATIVE -0.55, excerpt-bounded. Meta mean -0.52. Illustrative delta (Apple minus Meta) +0.0367 - within the illustrative band: the null-tie symmetric-adversarial register REPLICATES in the September event windows. The m587 product-lane reputation-carve boundary stands (m716 holds Apple''s privacy record as "pristine compared to Meta''s" while directing adversarial energy at Apple''s own always-on features). The m716-to-m806 span (-0.60 to -0.20) is now the widest within-publication cross-entity register range in the Gizmodo control set. EXTENDS m587 (event-window temporal leg); EXTENDS m716 (harshest-Apple boundary); EXTENDS m806 (softest-Meta boundary). connects_to: [587, 716, 806, 512, 577, 582]. NOT a falsification-family member (register documentation consistent with the m587 control, no uniform-prediction test); falsification ledger holds at 29 (TWENTY-NINTH present in profiles/news-corp.yaml; THIRTIETH is the negative guard; the ordinal after THIRTIETH is absent). Correlation is not causation. Hypothesis-generating only. NOT artifact-grade.'
+      articles:
+      - title: The Real Winners of Apple's WWDC 2026 Don't Even Exist Yet
+        url: https://gizmodo.com/the-real-winners-of-apples-wwdc-2026-dont-even-exist-yet-2000769658
+        date: 2026-06
+        format: news_analysis
+        tone_score_illustrative: -0.45
+        new_to_corpus: true
+      - title: Live Updates From Apple's 'Surprise and Shine' iPhone Event
+        url: https://gizmodo.com/live-updates-from-apples-surprise-and-shine-iphone-event-2000806403
+        date: 2026-09-09
+        format: live_blog
+        tone_score_illustrative: -0.40
+        new_to_corpus: true
+      - title: If Meta Glasses Freak You Out, Wait Until You Hear About the New Apple Watch Features
+        url: https://gizmodo.com/if-meta-glasses-freak-you-out-wait-until-you-hear-about-the-new-apple-watch-features-2000809371
+        date: 2026-09-09
+        format: commentary
+        tone_score_illustrative: -0.60
+        new_to_corpus: false
+        carried_from: mechanism 716
+      - title: Live Updates From Meta Connect 2026
+        url: https://gizmodo.com/live-updates-from-meta-connect-2026-2000806463
+        date: 2026-09-23
+        format: live_blog
+        tone_score_illustrative: -0.55
+        new_to_corpus: true
+        entity: meta
+      asymmetry_scorer_result:
+        target_entity: apple
+        peer_entities:
+        - meta
+        target_avg_tone: -0.4833
+        peer_avg_tone: -0.52
+        asymmetry_score: 0.0367
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE tones at article level, n=3 Apple vs n=5 Meta; mean-delta arithmetic only; standing rule Aug 28 2026: no empirical significance claimed; correlation_not_causation true'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones only (article level, n=3 Apple vs n=5 Meta); p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False per the Aug 28 2026 standing rule; engine NOT run at the finding layer; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade; correlation is not causation.'
+      confounders:
+      - 'STRONG - excerpt-bounded evidence: 0 browser.open this run per the #503 convention; live blogs are multi-bylined and multi-register, so excerpt-tier reads may miss register turns in the full text.'
+      - 'STRONG - genre routing: commentary (Yildirim) vs live blog (both event windows) vs news analysis (WWDC piece); register follows genre, not just entity; the two live blogs are genre-matched, which helps, but the m587 carried arms are news-analysis/column genre.'
+      - 'STRONG - story-type selection: event-week coverage skews toward consumer-tech snark as house register at zero-tie publications; both entities were covered in launch-event windows, so the symmetry may be window-bounded.'
+      - 'MODERATE - timing skew: Apple arms span Jun 2026 (WWDC) to Sep 9 2026; Meta arms span carried Jun-Jul vintage to Sep 23 2026; the three new items sit in the same September fortnight (Sep 9 Apple event / Sep 23 Meta Connect).'
+      - 'MODERATE - n thin: n=3 Apple arms, n=5 Meta arms; illustrative arithmetic only, no empirical claim.'
+      - 'WEAK - byline mix: the Meta Connect live blog carries Wong, Pero, Wille, and Barr bylines with different house registers; arm-level tone is a composite.'
+      - 'WEAK - the reputation-carve boundary (m587) persists in m716 ("pristine compared to Meta''s"), so the product-lane gradient is a standing confound on the symmetry claim.'
+      counter_evidence:
+      - 'The m716 Apple piece holds Meta as the worse privacy comparator ("pervert glasses", "creeps") - the adversarial energy is Apple-directed WITHIN a Meta-anchor-adversarial frame, bounding any pro-Meta reading.'
+      - 'm806''s Pero Meta arm (-0.20) is the softest Meta register in the corpus while m716''s Apple arm (-0.60) is the harshest Apple register - the within-publication range now spans 0.80, wider than the cross-entity delta, so arm selection dominates the mean.'
+      - 'The m587 Jun 2026 Apple arms (-0.50, -0.55, -0.40) are harsher than the Sep 9 iPhone-event arm (-0.40), so the event-window softening runs against the newest Apple arm, not for it.'
+      research_method: '7 browser.search query sets this run (The Verge Snap Specs Sep 2026 - surfaced the Sep 16 launch landscape, rejected: no clean bylined Verge original with a Full-URL listing; WIRED Anthropic Sep 2026 - surfaced the Sep 9 Maxwell Zeff "crunch time" piece, rejected: in corpus via m622/#647/#703/#767; Gizmodo Apple glasses AI Sep 2026 - surfaced the Yildirim Sep 9 Apple Watch piece, rejected as primary: in corpus as m716, carried as arm a3; The Verge OpenAI Sep 2026 - surfaced Rogue-AI RubyGems and Altman-IPO digest items, rejected: digest-tier URLs with no verbatim Full-URL originals; quoted "If Meta Glasses Freak You Out" byline - surfaced Flipboard "Gizmodo - Ece Yildirim" attribution corroboration + gizmodo.com first-hand excerpts; theverge.com Snap Specs "$2,195" preorder x2 - rejected: secondaries only, no clean Verge original; SELECTED: Gizmodo x Apple Sep-9 event-window pair + Gizmodo x Meta Connect 2026 live blog). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_962 files on disk (glob); no "Type A #962" in git log (--grep); max numeric mechanism_id 807 in profiles/ pre-commit; zero underscore-form 808 mechanism key strings in profiles/ and tests/ pre-commit (format-built needles per the #715 convention); zero numeric 808-form mechanism keys in profiles/ pre-commit; zero dash-form 808 references in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the three new URLs zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - https://gizmodo.com/the-real-winners-of-apples-wwdc-2026-dont-even-exist-yet-2000769658
+      - https://gizmodo.com/live-updates-from-apples-surprise-and-shine-iphone-event-2000806403
+      - https://gizmodo.com/if-meta-glasses-freak-you-out-wait-until-you-hear-about-the-new-apple-watch-features-2000809371
+      - https://gizmodo.com/live-updates-from-meta-connect-2026-2000806463
+      verdict: directionally_supported_not_proven
+      connects_to:
+      - 587
+      - 716
+      - 806
+      - 512
+      - 577
+      - 582
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: 'Ledger holds at 29; THIRTIETH remains the negative guard per the #754 convention.'
+      no_analysis_json_update: true
+      ascii_only: true
+      distinct_from:
+      - 'No prior Type A works Gizmodo x Apple September event windows (verified this run: zero event-window register mechanism keys under competitor_relationships.apple in profiles/gizmodo.yaml beyond m587; zero tests/*962* files; zero "Type A #962:" commits in git log)'
+      - 'The m716 Apple Watch piece and m806 Pero Ray-Ban Audio piece are carried as register boundaries, not re-scored; new dedicated scoring applies only to the three new-to-corpus items (a1, a2, m5)'
+      - 'The Verge Snap Sep-16 launch coverage and WIRED Anthropic Sep-9 Coxon coverage were researched and rejected this run for corpus and sourcing reasons; they are not evidence arms here'
   google:
     financial_tie: none
     estimated_value: $0
