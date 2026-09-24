@@ -18365,6 +18365,106 @@ journalists:
       novelty: 'First dedicated Type B block on Scott Stein x Snap; first 3-entity hands-on register
         constancy unit in the corpus; mechanism_id 752. Extends mechanism 588 (2 -> 3 entities at
         12-month span); extends mechanism 106''s domain bound to Snap. Rotation: 867 A -> 868 B.'
+    type_b_968_scott_stein_cnet_connect_sep2026_privacy_disappointment_vs_snap_specs_privacy_deferral:
+      block_key: type_b_968_scott_stein_cnet_connect_sep2026_privacy_disappointment_vs_snap_specs_privacy_deferral
+      iteration: 968
+      iteration_type: 'B'
+      mechanism_id: 812
+      date: '2026-09-24 11:00 PDT'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      author: 'Kit (with Ray)'
+      test_file: tests/test_type_b_968_scott_stein_cnet_connect_privacy_disappointment_vs_snap_specs_privacy_deferral_sep24_11am.py
+      design: 'within-journalist temporal natural experiment: CNET senior editor Scott Stein hands-on REVIEW register, Meta Connect 2026 (Sep 23 2026) vs his own Snap Specs launch hands-on (Sep 17 2026, mechanism 752), a 6-day temporal gap inside the same review genre'
+      finding: 'PRIVACY-REGISTER ACTIVATION inside Stein''s review register on the Meta arm: Stein''s Sep 23 2026 Meta Connect hands-on ("So Many New Meta Glasses: Muse AI Everywhere, and Ray-Bans Without a Camera", CNET, 8:21 pm ET, 9 min read) carries explicit privacy-disappointment in the reviewer''s OWN voice ("I was also disappointed at how little''s been done on the privacy front") - the FIRST privacy vocabulary in Stein''s hands-on review register in the corpus. Mechanisms 588 (Meta Display Sep 2025: zero privacy mentions; Samsung Galaxy XR Oct 2025: one exec-quoted control line) and 752 (Snap Specs Sep 17 2026: zero privacy vocabulary on 4-camera glasses) documented a privacy-deferral review register across three entities; the Meta arm breaks that deferral. New illustrative Meta tone -0.10 (product-curious: Muse agent "Henry" demo, FDA-cleared hearing enhancement mode; moderated by explicit privacy disappointment) vs carried Snap arm +0.45. Illustrative delta (Meta minus Snap) -0.55. EXTENDS mechanism 752 (6-day temporal leg); BOUNDS mechanisms 588/752 constancy (product-enthusiasm constancy holds; the privacy register activates on the Meta peg at peak Connect-2026 stigma pressure); REFINES mechanism 106 (privacy vocabulary moves from single-sentence news-register dismissal to reviewer-voice review-register disappointment). connects_to: [106, 588, 752].'
+      new_meta_arm:
+        title_verbatim: 'So Many New Meta Glasses: Muse AI Everywhere, and Ray-Bans Without a Camera'
+        date: '2026-09-23'
+        time_et: '2026-09-23 8:21 pm ET'
+        read_time: '9 min read'
+        byline: Scott Stein (sole)
+        role: CNET senior editor / editor-at-large, XR and wearables
+        publication: cnet
+        genre: launch-event hands-on (Meta Connect 2026, Menlo Park)
+        url: https://wesearch.press/s/so-many-new-meta-glasses-muse-ai-everywhere-and-ray-bans-wit-6e09a130
+        url_attestation: 'wesearch.press digest page carrying the CNET piece with Scott Stein/CNET photo credits; the URL is already in corpus as a cross-reference source in mechanism 806 (#958 James Pero block); this is the first dedicated mechanism on the piece'
+        key_quotes:
+        - 'Opening excerpt: "At Meta Connect, I tried out the AI agent, hearing enhancement and other features on all the new glasses. I was also disappointed at how little''s been done on the privacy front."'
+        - '"I tried Meta''s camera-free Ray-Ban Audio glasses at Meta Connect, one of just many new designs coming."'
+        - '"I talked to ''Henry,'' a Muse agent in my AI glasses, as I stared at a box of Kind bars."'
+        products_covered:
+        - 'Ray-Ban Meta Audio: $349, camera-free, 43g, 12h battery + 48h case, ships Oct 13'
+        - 'Ray-Ban Meta Gen 3: $449, 12MP camera, 3K video, retains camera'
+        - 'Meta VR Glasses: $1,299, spring 2027'
+        - 'Muse Charm keychain AI device, December 2026'
+        - 'FDA-cleared hearing enhancement mode, $149'
+        tone_illustrative: -0.10
+        tone_basis: 'MANUAL ILLUSTRATIVE: product-curious hands-on (Muse agent demo, hearing enhancement, multi-device trial) moderated by explicit privacy-disappointment register in the reviewer''s own voice; first privacy vocabulary in Stein''s hands-on review register in the corpus'
+        privacy_register: 'explicit privacy-disappointment in the reviewer''s own voice; FIRST occurrence of privacy vocabulary in Stein''s hands-on review register (mechanism 588 Meta arm: zero mentions; mechanism 588 Samsung arm: one exec-quoted control line; mechanism 752 Snap arm: zero on 4-camera glasses)'
+        evidence_tier: 'EXCERPT-TIER: ~120-word wesearch digest excerpt plus dek-level metadata (title, byline, dateline, read time); full CNET article text NOT first-hand reviewed (0 browser.open per #503)'
+      carried_snap_arm:
+        note: 'Carried un-rescored per #807 from mechanism 752 (Type B #868).'
+        title: 'I Wore Snap Specs At Last: Here''s What These Massive Glasses Can Do'
+        date: '2026-09-17'
+        byline: Scott Stein (sole)
+        tone_illustrative: 0.45
+        tone_basis: 'carried from mechanism 752 unrescored per #807'
+        privacy_register: 'zero surveillance/privacy vocabulary on 4-camera standalone AR glasses'
+        exec_access: 'Snap CEO Evan Spiegel 1-on-1 Sep 16 2026 ("Almost like a pair of reading glasses you put on to get something done")'
+        source_urls:
+        - https://wesearch.press/s/i-wore-snap-specs-at-last-heres-what-these-massive-glasses-can-do-b02ecb8f
+      asymmetry_scorer_result:
+        illustrative_delta_meta_minus_snap: -0.55
+        delta_calc: '-0.10 - 0.45 = -0.55'
+        delta_direction: 'negative: the Meta arm lands a full half-point below the Snap arm on the same reviewer''s hands-on scale, driven entirely by the privacy-register activation on the Meta peg'
+        target_entity: Meta
+        reference_entity: Snap
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per excerpt-tier register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1 fresh arm vs carried n=1 arm. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine: 'engine NOT run (illustrative arms only)'
+        artifact_grade: 'NOT artifact-grade'
+      temporal_refinement:
+      - 'EXTENDS mechanism 752''s 3-entity review-register constancy at a 6-day temporal gap: Stein''s review register remains product-curious on both arms, but the privacy register now ACTIVATES on the Meta peg - the first privacy vocabulary in Stein''s own review voice in the corpus.'
+      - 'BOUNDS mechanisms 588/752 constancy: register constancy holds for product enthusiasm across Meta, Samsung/Google, and Snap; it does NOT hold for the privacy register, which activates on the Meta arm at peak Connect-2026 stigma pressure (venue bans, Lorde, "pervert glasses" discourse per #966) while the 4-camera Snap arm 6 days earlier drew zero privacy vocabulary.'
+      - 'REFINES mechanism 106: mechanism 106 documented privacy as single-sentence dismissal in Stein''s NEWS register (Google I/O news/launch-keynote piece); here privacy disappointment appears in Stein''s own voice inside the REVIEW register - a genre-level register change, not a re-verification of #106.'
+      extends: 'TEMPORAL EXTENSION of mechanism 752 (mechanism 868): same journalist, 6-day temporal gap, review-register privacy-vocabulary activation on the Meta arm'
+      connects_to: [106, 588, 752]
+      incentive_context: 'CNET owned by Ziff Davis since Q3 2024; Google search-traffic dependency high; no documented Meta or Snap financial relationship with CNET. Finding is a writer-register refinement, not an exoneration of publication-level incentive patterns. Correlation is not causation.'
+      confounders:
+      - '[STRONG] Excerpt-tier evidence: full CNET article text NOT first-hand reviewed; register inferred from the ~120-word wesearch digest excerpt plus dek-level metadata. Full-text register could differ; the disappointment line could be a coda or the spine.'
+      - '[STRONG] Peg/context asymmetry: the Meta arm lands in Connect-week peak stigma pressure (venue bans, Lorde, venue-court actions, "pervert glasses" discourse per #966); the Snap arm is a launch-celebration peg 6 days earlier. The privacy activation may be context-driven, not entity-driven; a Snap piece under the same week''s pressure could carry the same register.'
+      - '[STRONG] Product-lineup asymmetry: the Meta arm covers a 7-device lineup (including camera-equipped Gen 3 and VR glasses); the Snap arm covers one device. Stein''s disappointment targets the lineup''s privacy measures, and the camera-free Audio is itself framed as Meta''s privacy answer - the register is peg-congruent.'
+      - '[MODERATE] n=1 fresh Meta arm vs n=1 carried Snap arm: degenerate sample, directional only.'
+      - '[MODERATE] 6-day timing gap: Snap arm Sep 17 (pre-Connect), Meta arm Sep 23 (Connect); the news cycle moved between the arms.'
+      - '[WEAK] Headline authorship: CNET headlines may be editor-written; "Ray-Bans Without a Camera" may not be Stein''s own wording.'
+      - '[WEAK] Review-genre optimism: the Meta piece remains product-forward (Muse agent "Henry" demo, FDA-cleared hearing enhancement); the disappointment is one register inside a curious piece, not an adversarial frame.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: the Meta piece is still product-curious overall (Muse agent demo, hearing enhancement mode, multi-device trial); the disappointment is a coda, not the spine - no adversarial surveillance vocabulary ("pervert glasses") appears in Stein''s own voice.'
+      - 'COUNTEREVIDENCE: the camera-free Audio is itself Meta''s privacy concession; Stein''s disappointment targets the rest of the lineup (camera-equipped Gen 3, VR glasses), and the register is peg-congruent - every outlet framed Connect week in privacy terms, so a Snap piece under the same pressure would likely carry the same register.'
+      - 'COUNTEREVIDENCE: Stein is not entity-loyal generally (mechanism 588: the Samsung piece ranks XR2+ Gen 2 "better than the Meta Quest 3" and frames Samsung/Google "a lot more integrated ... than Meta''s VR and glasses approach") - favorability follows the product, not the company, so the Meta-minus-Snap delta reads as register-on-the-peg as much as register-on-the-entity.'
+      verdict: directionally_supported_not_proven
+      is_significant: false
+      is_falsification_family_member: false
+      falsification_family: 'NOT a falsification-family member (register refinement temporal extension, not a uniform-prediction test); ledger holds at 29.'
+      falsification_ledger: 29
+      statistical_discipline:
+        tone: MANUAL_ILLUSTRATIVE
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine: NOT_RUN
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        analysis_json_update: false
+      no_analysis_json_update: true
+      research_method: '5 browser.search query sets this run: (1) Boone Ashworth WIRED Connect 2026 - rejected, in-corpus via mechanism 431; (2) Lauren Goode WIRED Connect 2026 - rejected, in-corpus via mechanism 436; (3) Alex Heath Verge Snap Specs - rejected, no paired Meta comparator arm; (4) Victoria Song Verge Snap Specs - rejected, no paired comparator arm; (5) Scott Stein CNET Connect 2026 - SELECTED: the Sep 23 2026 CNET Connect hands-on via the wesearch.press digest (the Meta evidence URL is already in corpus as a cross-reference source in mechanism 806, #958; first dedicated mechanism on the piece); Snap arm carried un-rescored per #807 from mechanism 752 (Type B #868). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_b_968 files on disk (glob); no Type B #968 in git log (--grep); max numeric mechanism_id 811 pre-commit; zero underscore-form 812 mechanism key strings and zero numeric/dash 812 mechanism keys repo-wide pre-commit (format-built needles per #715); block key zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'First dedicated Type B block on Scott Stein x Meta Connect 2026; first privacy-vocabulary activation in Stein''s hands-on review register in the corpus; mechanism_id 812. EXTENDS mechanism 752 (6-day temporal leg); BOUNDS mechanisms 588/752 constancy; REFINES mechanism 106. Rotation: 967 A -> 968 B.'
+      source_urls:
+      - https://wesearch.press/s/so-many-new-meta-glasses-muse-ai-everywhere-and-ray-bans-wit-6e09a130
 - name: Wesley Hilliard
   publication: appleinsider
   notes: Rumor Expert at AppleInsider and AppleInsider Podcast co-host. 10-year US Navy veteran (nuclear-trained electrician) who became captivated by Apple privacy and device security. Applies resolution-conditional privacy vocabulary inversion to camera wearable coverage.
