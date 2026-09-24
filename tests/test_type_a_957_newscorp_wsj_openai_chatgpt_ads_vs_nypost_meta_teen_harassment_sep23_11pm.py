@@ -83,7 +83,7 @@ MECH_KEY = (
     "vs_nypost_meta_teen_harassment_crime_register_sep2026"
 )
 NEXT_SIBLING = "\n  meta:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "eca5ba9ffc5323431f248ffe6094aae6c3a6967e"
 ITERATION = 957
 TYPE_LETTER = "A"
 
