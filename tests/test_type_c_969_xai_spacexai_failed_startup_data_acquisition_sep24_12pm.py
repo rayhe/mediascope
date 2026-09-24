@@ -62,7 +62,7 @@ ENTITY_KEY = "xai"
 NEXT_SIBLING = "\n  samsung:"
 EXPECTED_ITERATION = 969
 # Anchor placeholder: replaced by the real main-commit SHA in the #565 anchor followup
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "fa1906fa241d83182627406510db49085166ec4f"
 
 SOURCE_URLS = [
     "https://www.digitaltoday.co.kr/en/view/105085/spacex-considers-buying-data-from-bankrupt-startup-for-grok-training",
@@ -117,7 +117,7 @@ class TestNovelty969:
             ["git", "log", "--all", "--format=%H %s", "--grep", "Type C #969"],
             cwd=REPO, capture_output=True, text=True, check=True,
         ).stdout
-        mains = [line for line in out.splitlines() if re_match_main(line)]
+        mains = [line.split()[0] for line in out.splitlines() if re_match_main(line)]
         assert mains == [ANCHORED_SHA], f"expected single main commit {ANCHORED_SHA}"
         assert ANCHORED_SHA != "0" * 40
 
