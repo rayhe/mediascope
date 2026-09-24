@@ -68,7 +68,7 @@ MECH_KEY = (
     "alarm_coda_sep24_2026"
 )
 NEXT_SIBLING = "\ncross_entity_wearables_framing:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "6c6cdf3e7fab061b9b88b6cdb9cac0d372c90a46"
 ITERATION = 972
 TYPE_LETTER = "A"
 
