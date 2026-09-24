@@ -91,7 +91,7 @@ SOURCE_URL_2 = "https://www.poynter.org/business-work/2026/usa-today-co-unions-c
 FILE_NAME = "test_type_c_959_palantir_vendor_embed_media_data_stack_adweek_sep24_1am.py"
 
 # Placeholder for the follow-up commit that pins the iteration to its own commit.
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "3091188beba9444f7be08e70502855ea3a350f26"
 
 ITERATION = 959
 TYPE_LETTER = "C"
@@ -112,17 +112,30 @@ class TestNovelty959:
         assert len(files) == 1, f"expected exactly one Type C #959 file, got {files}"
         assert files[0].endswith(FILE_NAME)
 
-    def test_no_type_c_959_commit_before_this_iteration(self) -> None:
+    @pytest.mark.anchor
+    def test_type_c_959_main_commit_unique_and_anchored(self) -> None:
+        # Deselected pre-commit per the #565 followup convention; patched green
+        # post-commit. Asserts exactly one "Type C #959:" main commit exists in
+        # history and its SHA is the patched ANCHORED_SHA (the anchor and
+        # log-hash followups carry "Type C #959 anchor/log-hash followup"
+        # subjects, not the bare "Type C #959:" main subject). Replaces the
+        # pre-commit-only absence pin (no "Type C #959" commit yet) whose greps
+        # are recorded in the committed block's novelty field per #752; the
+        # block pins the pre-commit novelty claim, this test pins the anchor.
+        assert ANCHORED_SHA != "0" * 40, "anchor SHA is still the pre-commit placeholder"
         out = subprocess.run(
-            ["git", "-C", REPO, "log", "--oneline", "--grep=Type C #959"],
+            ["git", "-C", REPO, "log", "--all", "--format=%H %s", "--grep", "Type C #959"],
             capture_output=True,
             text=True,
         )
-        matches = [
-            line for line in out.stdout.splitlines()
-            if re.match(r"^[0-9a-f]{7,40}\s+Type C #959\b", line)
+        mains = [
+            line.split(" ", 1)[0]
+            for line in out.stdout.splitlines()
+            if re.match(r"^[0-9a-f]{40} Type C #959:", line)
         ]
-        assert matches == [], f"unexpected pre-existing Type C #959 commit: {matches}"
+        assert mains == [ANCHORED_SHA], (
+            f"expected exactly one Type C #959 main commit {ANCHORED_SHA}, got {mains}"
+        )
 
     def test_novelty_claim_is_pinned_in_block(self) -> None:
         block = _block()
@@ -170,16 +183,29 @@ class TestRotationCycleGuard959:
         for i, pair in enumerate(expected):
             assert window[i] == pair
 
-    def test_anchor_sha_matches_repo_head(self) -> None:
-        head = subprocess.run(
-            ["git", "-C", REPO, "rev-parse", "HEAD"],
+    def test_anchor_sha_is_the_committed_main_commit(self) -> None:
+        # The anchor pins the MAIN commit, not HEAD: the anchor follow-up and
+        # log-hash follow-up commits sit on top of it by design, so ANCHORED_SHA
+        # == HEAD can never hold. Assert ANCHORED_SHA is a real commit present
+        # in history carrying the "Type C #959:" main subject.
+        out = subprocess.run(
+            ["git", "-C", REPO, "log", "--all", "--format=%H %s"],
             capture_output=True,
             text=True,
-        ).stdout.strip()
-        assert ANCHORED_SHA == head, (
-            f"anchor {ANCHORED_SHA!r} does not match HEAD {head!r}; "
-            "patch ANCHORED_SHA in the anchor follow-up commit"
         )
+        shas = [line.split(" ", 1)[0] for line in out.stdout.splitlines()]
+        assert ANCHORED_SHA in shas, (
+            f"anchored SHA {ANCHORED_SHA} not found in repo history"
+        )
+        grep = subprocess.run(
+            ["git", "-C", REPO, "log", "--all", "--format=%H %s", "--grep", "Type C #959"],
+            capture_output=True,
+            text=True,
+        )
+        assert any(
+            line.startswith(ANCHORED_SHA + " Type C #959:")
+            for line in grep.stdout.splitlines()
+        ), f"anchored SHA {ANCHORED_SHA} carries no Type C #959 main subject"
 
 
 class TestMechanism807Content:
