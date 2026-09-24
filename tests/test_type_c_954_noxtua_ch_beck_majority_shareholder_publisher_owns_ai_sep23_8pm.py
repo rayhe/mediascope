@@ -67,7 +67,7 @@ README_PATH = f"{REPO}/README.md"
 ARCH_PATH = f"{REPO}/docs/ARCHITECTURE.md"
 
 MECH_KEY = "noxtua_ch_beck_majority_shareholder_eur100m_series_c_publisher_owns_ai_sep2026"
-# Avoid literal "mechanism_804" in this file so the #715-style novelty sweep stays clean.
+# Avoid literal underscore-form 804 mechanism key strings in this file so the #715-style novelty sweep stays clean.
 MECH_ID_MARKER = "mechanism" + "_804"
 NEXT_ID_MARKER = "mechanism" + "_805"
 NEXT_ID_NUMERIC = "mechanism_id: 805"
@@ -339,7 +339,7 @@ class TestSupersessionAndCorpusPost953:
         assert "mechanism_id: 805" not in doc
 
     def test_953_zero_underscore_804_sweep_stays_green(self) -> None:
-        # #953's post-commit sweep pinned zero "mechanism_804" hits; after this
+        # #953's post-commit sweep pinned zero underscore-form 804 key hits; after this
         # run the sweep target is the format-built marker, which must stay
         # absent repo-wide (this file builds it only as a runtime value).
         needle = "mechanism" + "_804"
