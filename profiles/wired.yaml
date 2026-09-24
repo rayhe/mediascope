@@ -2289,6 +2289,107 @@ competitor_relationships:
         correlation_not_causation: true
       novelty_verification: "zero test_type_a_877 files on disk pre-commit (glob); no 'Type A #877' in git log pre-commit; block key wired_openai_m712 zero-hit repo-wide pre-commit; 'Meta Sued Over Training Data' zero-hit repo-wide pre-commit; technewstube 1866653 / nypost oversold-security-breaches / ai-intel.news URLs zero-hit repo-wide pre-commit; max numeric mechanism_id 756 pre-commit; zero underscore-form 757 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention; __pycache__ artifacts excluded per the #715 pattern-rescope lesson)."
       rotation_guard: "875-879 window THIRD leg D(#875)->E(#876)->A (this run); next: #878 Type B continues the window. Ledger holds at 27 (anchor patched post-commit per #565)."
+    wired_openai_chatbot_privacy_guide_vendor_ranking_vs_meta_incognito_ladder_sep23_952:
+      mechanism_id: 802
+      mechanism_name: WIRED x OpenAI Sep 21-22 2026 chatbot-privacy guide vendor ranking (ChatGPT scold -0.30) vs WIRED x Meta Incognito-mode privacy-ladder praise (+0.25) - payer-gradient inversion
+      finding_type: competitor_coverage_deep_dive_register_pair
+      iteration: 952
+      iteration_type: 'A'
+      rotation_type: 'A'
+      iteration_time: '2026-09-23 18:00 PT'
+      publication: wired
+      competitor: openai
+      comparator_entity: meta
+      window: '950-954'
+      status: documented
+      finding_summary: 'FIRST dedicated corpus mechanism on WIRED''s "How to Use AI With Your Privacy Intact" consumer privacy guide (Sep 21-22 2026 attestation window; aiweekly.co alert crawled 2h plus 4 mirrors, zero-hit repo-wide pre-commit; wired.com original paywalled, 0 browser.open per #503). The guide runs a blunt privacy-hawkish register - users should assume "a baseline expectation of approximately zero real privacy" with ChatGPT, Claude, and Gemini from anyone with a legal path to the records (sources: Matt Green, Johns Hopkins cryptographer; Moxie Marlinspike) - and vendor-ranks INSIDE the scolding: Claude "does not train on conversations by default" (favorable); ChatGPT and Gemini require manual opt-out toggles; paying $20/month Plus/Pro does not change that; all three offer enterprise ZDR. The privacy-positive ladder names Confer ($34.99/mo), Meta AI Incognito mode in WhatsApp, Apple''s Private Cloud Compute, Proton Lumo, Duck.ai, and local models. MANUAL ILLUSTRATIVE: ChatGPT scolding -0.30 (fresh arm); Meta Incognito ladder praise +0.25 (fresh arm, same piece); illustrative delta (OpenAI minus Meta) -0.55 - INVERTED relative to the Conde Nast x OpenAI Aug 2024 licensing-deal gradient ($1-5M/yr, coverage_prediction softer): the DEAL partner draws the harsher register inside a single WIRED piece. Cross-product WIRED x Meta split: Meta-as-glasses carried arm -0.30 (mechanism 757 Sep 11 NameTag training-data class action, carried un-rescored per #807) vs Meta-as-chatbot +0.25 = +0.55. REPLICATES the m637 peg-follows-register pattern and the m442 family: WIRED''s surveillance-villain register attaches to the camera-glasses peg, not to Meta-the-entity. Temporal contrast on OpenAI within 6 days: m712 Sep-16 company-briefed platform relay +0.15 (carried) vs this guide''s -0.30 = -0.45 within-entity swing; register follows genre/peg, not the deal.'
+      finding: 'WIRED "How to Use AI With Your Privacy Intact" (Sep 21-22 2026 attestation window via aiweekly.co alert crawled 2h + mirrors nsaneforums, onlinetechguru.co.uk, technewsvision.co.uk, aob-news.com; wired.com original paywalled, not first-hand reviewed, 0 browser.open per #503): the guide''s opening frame is adversarial toward all three big chatbots - "safest to start with a baseline expectation of approximately zero real privacy from anyone who is determined to access your conversation records and has a legal path to obtaining them" (vendor, ad partners, contractors, law enforcement, civil subpoena). Matt Green: "You''re giving it this huge profile on you"; "If you want real privacy, you might have to pay for it." Marlinspike: "People are integrating AI into their personal lives. They talk with it about their deepest insecurities, their finances, their health, their relationships." The vendor ranking then differentiates: Claude''s conversations are not used for training by default (favorable, MANUAL ILLUSTRATIVE +0.15); ChatGPT requires the "Improve the model for everyone" toggle off, Gemini requires its activity setting off; paying $20/month for Plus/Pro changes nothing (ChatGPT scold, -0.30 fresh). Enterprise ZDR contracts offered by all three. The ladder''s positive tier: no-log services (Proton Lumo, Venice.ai, Duck.ai), TEE products (Marlinspike''s own Confer at $34.99/month, Meta AI Incognito mode in WhatsApp, Apple''s Private Cloud Compute), self-hosted local models (Ollama, LMStudio, LocalAI). Meta arm detail: Meta AI Incognito mode framed as a confidential-compute privacy solution - "encrypt the conversation from your phone with a meta AI endpoint running in a confidential compute environment" with auditors and security-transparency features; "the first time that''s coming to a lot of people" for the big AI players. Tone +0.25 fresh (same-piece arm). Carried Meta comparator: m757 WIRED Sep 11 2026 Dhruv Mehrotra "Meta Sued Over Training Data for Its AI and Face-Recognition Systems" (proposed class action over AI training data and the unreleased "NameTag" face-recognition feature; WIRED''s own code analysis found faceprints, unrecognized faces cropped/indexed/stored locally), adversarial legal register -0.30, carried un-rescored per #807. Illustrative math: OpenAI-minus-Meta within the guide = -0.30 - 0.25 = -0.55 (payer-gradient INVERSION vs the Conde Nast x OpenAI Aug 2024 deal, coverage_prediction softer); Meta-chatbot-minus-Meta-glasses = 0.25 - (-0.30) = +0.55 (cross-product peg split inside one publication); OpenAI Sep-16-to-Sep-21 register swing vs m712 platform relay +0.15 = -0.45 (register follows genre/peg, not the deal). EXTENDS mechanisms 757 (Meta NameTag arm carried) and 712 (OpenAI platform-relay contrast). REPLICATES m637 (peg-follows-register) and the m442 pricing-inversion family. NOT a falsification-family member: a register pair plus peg-driven replication with no uniform-prediction test; the deal gradient is violated in this window, not uniformly. Ledger holds at 29. Correlation is not causation. Hypothesis-generating only. NOT artifact-grade. engine NOT run.'
+      openai_arm:
+        event: WIRED consumer privacy guide publication, Sep 21-22 2026 attestation window
+        wired_piece: 'How to Use AI With Your Privacy Intact'
+        date: '2026-09-22'
+        register: privacy_hawkish_consumer_guide
+        register_detail: 'Blunt opening frame: assume "a baseline expectation of approximately zero real privacy" with ChatGPT, Claude, Gemini; ChatGPT requires manual opt-out ("Improve the model for everyone" toggle); $20/month Plus/Pro does not change it; sources Matt Green (Johns Hopkins) and Moxie Marlinspike'
+        tone_MANUAL_ILLUSTRATIVE: -0.30
+        provenance_count: 5
+        provenance_urls:
+        - https://aiweekly.co/alerts/wired-default-ai-chatbot-privacy-is-near-zero-guide-warns
+        - https://nsaneforums.com/topic/489405-how-to-use-ai-with-your-privacy-intact/
+        - https://onlinetechguru.co.uk/how-to-use-ai-with-your-privacy-intact/
+        - https://technewsvision.co.uk/how-to-use-ai-with-your-privacy-intact/
+        - https://www.aob-news.com/2026/09/22/how-to-use-ai-with-your-privacy-intact/
+        url_status: verbatim_via_search_results (mirror relays; WIRED original paywalled, not first-hand reviewed, 0 browser.open per #503)
+      meta_guide_arm:
+        product: 'Meta AI Incognito mode in WhatsApp'
+        register: 'privacy-positive ladder placement (same piece)'
+        register_detail: 'Listed among TEE privacy-respecting options alongside Apple Private Cloud Compute and Marlinspike''s Confer; framed as confidential-compute "first" for the big AI players'
+        ladder_neighbors: 'Confer ($34.99/mo), Apple Private Cloud Compute, Proton Lumo, Duck.ai, Venice.ai, Ollama/LMStudio/LocalAI'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+      meta_arms_carried:
+      - piece: 'Meta Sued Over Training Data for Its AI and Face-Recognition Systems'
+        author: Dhruv Mehrotra
+        date: '2026-09-11'
+        register: adversarial_legal
+        allegation: 'illegally harvested Facebook and Instagram photos to train AI image-generation models and to build the unreleased NameTag face-recognition feature'
+        tone_carried: -0.30
+        source: 'mechanism 757 per the #807 convention (un-rescored)'
+      asymmetry_scorer:
+        openai_arm_tone: -0.30
+        meta_guide_arm_tone: 0.25
+        meta_carried_glasses_tone: -0.30
+        illustrative_delta_openai_minus_meta_guide: -0.55
+        delta_calc: '-0.30 - 0.25 = -0.55 (payer-gradient INVERSION: deal partner draws the harsher register)'
+        cross_product_delta_meta_chatbot_minus_meta_glasses: 0.55
+        cross_product_calc: '0.25 - (-0.30) = 0.55 (within-publication cross-product peg split)'
+        m712_openai_platform_relay_carried: 0.15
+        within_entity_swing_sep16_to_sep21: -0.45
+        swing_calc: '-0.30 - 0.15 = -0.45 (register follows genre/peg, not the deal)'
+        within_guide_vendor_ranking:
+          claude_anthropic: 0.15
+          chatgpt_openai: -0.30
+          gemini_google: -0.30
+          claude_basis: 'no-training by default (verifiable policy difference)'
+          chatgpt_basis: 'manual opt-out dark pattern + $20/mo does not change it'
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned tones per the Aug 28 2026 standing rule; Meta glass arm carried un-rescored per #807; not empirical corpus scores'
+        convention: 'target-minus-peer: target = OpenAI arm, peer = Meta guide arm; cross-product = Meta chatbot arm minus Meta glasses arm'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        statistical_contract: degenerate_small_n_per_arm
+        finding_layer: 'p_value / cohens_d / ci_95 NOT_CALCULATED (deliberate - a mechanical significance test on hand-scored items would manufacture precision that does not exist)'
+        verdict: 'directionally supported, not proven: WIRED runs a privacy-adversarial register on ChatGPT (-0.30) inside the same consumer guide that puts Meta AI Incognito mode on its privacy-positive ladder (+0.25); payer-gradient inversion -0.55 vs the Conde Nast x OpenAI deal; cross-product Meta split +0.55 replicates the peg-follows-register pattern'
+        no_analysis_json_update: true
+        artifact_grade: false
+      confounders:
+      - 'STRONG: excerpt-bounded evidence (0 browser.open per #503; WIRED original paywalled and not first-hand reviewed; mirror relays are attested secondaries with varying attestation tiers)'
+      - 'STRONG: genre mismatch (consumer how-to guide mandates privacy advocacy; adversarial privacy register is the genre''s house color, not necessarily entity-targeted)'
+      - 'STRONG: merit-differentiated ranking (Claude''s default no-training is a verifiable policy difference; Meta Incognito''s confidential-compute design is a real privacy-positive product, so ladder inclusion is merit-plausible)'
+      - 'MODERATE: the guide''s adversarial frame covers ALL THREE big chatbots ("approximately zero real privacy"); OpenAI is not singled out for exceptional harshness, so the payer-inversion read is bounded by the all-labs frame'
+      - 'MODERATE: n=1 guide, degenerate sample; directionality only'
+      - 'WEAK: mirror-attribution risk (excerpt-tier quotes from mirrors, no wired.com byline page read)'
+      - 'WEAK: 10-day timing skew (Sep 11 Meta glasses arm vs Sep 21-22 guide)'
+      counterevidence:
+      - 'All-labs adversarial frame: the guide scolds ChatGPT, Claude, and Gemini together; the inversion is relative (vendor ranking), not absolute harshness on OpenAI'
+      - 'm712 WIRED Sep-16 company-briefed OpenAI platform relay (+0.15): the publication is not uniformly adversarial toward OpenAI'
+      - 'Conde Nast x OpenAI deal is parent-level licensing (Aug 2024, $1-5M/yr); no desk-level awareness evidence at the WIRED consumer-guide desk'
+      - 'Category separation may be principled: cameras recording bystanders'' faces (glasses peg) vs chat logs (chatbot peg); the surveillance-villain register could track bystander-privacy difference, not entity'
+      - 'WIRED adversarial OpenAI arms in corpus (Jul 10 Apple-v-OpenAI hardware suit; Jul 21 Hugging Face escape technical detail)'
+      extends: 'mechanism 757 (Meta Sep 11 NameTag training-data class action arm, carried un-rescored per #807); mechanism 712 (WIRED Sep-16 OpenAI misalignment-disclosure platform relay +0.15, temporal contrast within 6 days)'
+      related: 'm637 peg-follows-register pattern; m442 pricing-inversion family; #602 WIRED x Anthropic licensing-halo family; Conde Nast x OpenAI Aug 2024 licensing deal (wired.yaml financial_tie, coverage_prediction softer)'
+      connects_to: [757, 712, 637]
+      statistical_discipline:
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        correlation_not_causation: true
+      novelty_verification: "zero test_type_a_952 files on disk pre-commit (glob); no 'Type A #952' in git log pre-commit (--grep); max numeric mechanism_id 801 in-tree pre-commit; zero underscore-form 802 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric 802 mechanism_id keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit (git grep -F); all 5 mirror urls zero-hit repo-wide pre-commit (git grep -F); all URLs copied verbatim from Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes."
+      research_method: "3 browser.search query sets this run (WIRED OpenAI news since=2026-09-13 - the guide surfaced via the aiweekly.co alert crawled 2h, SELECTED, plus 4 attested mirrors; The Verge Snap Specs AR glasses since=2026-09-16 - REJECTED as primary: all Sep-16 arms are relays of the Jun-16 launch already in the m442/m727/m853 family, zero fresh Verge arms; WIRED 'zero real privacy' chatbot guide since=2026-09-15 - SELECTED, 5 attested mirrors, zero-hit repo-wide pre-commit). 0 browser.open per #503; WIRED paywalled; all arms attested-secondaries with explicit provenance. Pre-commit novelty greps per #715: zero test_type_a_952 files on disk (glob); no 'Type A #952' in git log (--grep); max numeric mechanism_id 801 in-tree; zero underscore-form 802 mechanism key strings in profiles/ (format-built needles); zero numeric 802 mechanism_id keys in profiles/; block key zero-hit repo-wide; all 5 mirror urls zero-hit repo-wide."
+      rotation_guard: "950-954 window THIRD leg D(#950)->E(#951)->A (this run); next: #953 Type B continues the window. Ledger holds at 29 (anchor patched post-commit per #565)."
+      falsification_family_member: false
+      falsification_ledger: 29
+      ledger_note: "ledger holds at 29 (THIRTIETH present in profiles/; no higher ledger ordinal present; no uniform-prediction test run this turn)"
   meta:
     financial_tie: none
     estimated_value: $0
