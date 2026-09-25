@@ -202,10 +202,11 @@ class TestMechanism822Content:
         assert "Northern District of California" in block
 
     def test_type_c_984_hearing_outcome_unknown(self):
-        """The hearing outcome is explicitly not claimed (run precedes the hearing)."""
+        """The hearing-outcome framing is WITHDRAWN as moot by the #989 correction (no Sep 25 2026 hearing existed)."""
         block = _block()
-        assert "outcome is unknown" in block
-        assert "not claimed" in block
+        assert "WITHDRAWN #989" in block
+        assert "framing is moot" in block
+        assert "no Sep 25 2026 hearing existed" in block
 
     def test_type_c_984_installment_schedule(self):
         """The four-installment schedule with the Sep 25 2026 $450M leg is mapped."""
@@ -233,10 +234,11 @@ class TestMechanism822Content:
         assert "theoretical statutory maximum" in block
 
     def test_type_c_984_calendar_coincidence_not_causal(self):
-        """The Sep 25 installment/hearing date coincidence is noted, not interpreted."""
+        """The Sep 25 coincidence framing is WITHDRAWN by the #989 correction (no 2026 hearing; audit text retained)."""
         block = _block()
-        assert "Calendar coincidence" in block
-        assert "no causal or contractual link claimed" in block
+        assert "WITHDRAWN #989" in block
+        assert "there was no Sep 25 2026 hearing" in block
+        assert "coincides on the calendar" in block
 
     def test_type_c_984_connects_to_verified_ids(self):
         """connects_to carries the five HEAD-verified mechanism ids."""
@@ -287,27 +289,29 @@ class TestStatisticalDiscipline984:
         assert disc["correlation_not_causation"] is True
 
     def test_type_c_984_confounders_ranked(self):
-        """Confounders are ranked strong-first with six entries."""
+        """Confounders carry the #989 correction labels (WITHDRAWN/RESOLVED/SUPERSEDED)."""
         block = _block()
-        assert "STRONG: Hearing outcome unknown" in block
+        assert "WITHDRAWN #989: Hearing outcome unknown" in block
         assert "STRONG: Excerpt-bounded" in block
-        assert "STRONG: Judge-name discrepancy" in block
-        assert "MODERATE:" in block
-        assert "WEAK:" in block
+        assert "RESOLVED #989" in block
+        assert "judicial succession" in block
+        assert "SUPERSEDED #989" in block
+        assert "WITHDRAWN #989 (was WEAK)" in block
 
     def test_type_c_984_bounded_absences(self):
-        """Bounded absences per the iteration-492 rule; no zero-coverage claims."""
+        """Bounded absences carry the #989 withdrawal note; no zero-coverage claims."""
         block = _block()
-        assert "No outcome of the Sep 25 hearing" in block
-        assert "not claimed" in block
+        assert "WITHDRAWN #989: No outcome of the Sep 25 hearing" in block
+        assert "framing withdrawn as moot" in block
 
 
 class TestSupersessionAndCorpusPost983:
     def test_type_c_984_max_numeric_id_now_822(self):
-        """Max numeric mechanism id is now 822 (colon form)."""
+        """Max numeric mechanism id was 822 at #984 commit time; 825 is the post-#989 head (822 still present)."""
         import re
         ids = [int(m) for m in re.findall(r"mechanism_id:\s*(\d+)", _profiles_text())]
-        assert max(ids) == 822
+        assert 822 in ids
+        assert max(ids) == 825
 
     def test_type_c_984_821_superseded_by_designed_822(self):
         """821 (journalists.yaml) remains the previous max; 822 is the new designed head."""
