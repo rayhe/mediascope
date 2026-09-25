@@ -1,4 +1,4 @@
-## #995 Type D: m826/m827/m828 qualitative-discipline verification + post-990-994 corpus integrity (max numeric mechanism_id 828; zero 829 keys numeric/underscore/dash; ledger holds at 30; THIRTIETH member-form present exactly once (m818, journalists.yaml); THIRTY-FIRST absent) + #990 background-suite tombstone (FORTIETH consecutive death; lineage FIFTY-EIGHTH -> FIFTY-NINTH) + fresh synthetic engine calibration (strong n=7 p=4.48e-10 engine-significant; near-null p=0.533 silent; degenerate n=1-on-m826-pair guard fires) + full suite re-launched - Type D FIRST leg of the 995-999 window D->E->A->B->C OPENING it (Sep 25 2026, 14:00 PDT; log-hash followup updates this line (this commit))
+## #995 Type D: m826/m827/m828 qualitative-discipline verification + post-990-994 corpus integrity (max numeric mechanism_id 828; zero 829 keys numeric/underscore/dash; ledger holds at 30; THIRTIETH member-form present exactly once (m818, journalists.yaml); THIRTY-FIRST absent) + #990 background-suite tombstone (FORTIETH consecutive death; lineage FIFTY-EIGHTH -> FIFTY-NINTH) + fresh synthetic engine calibration (strong n=7 p=4.48e-10 engine-significant; near-null p=0.533 silent; degenerate n=1-on-m826-pair guard fires) + full suite re-launched - Type D FIRST leg of the 995-999 window D->E->A->B->C OPENING it (Sep 25 2026, 14:00 PDT; main c30e75ba / anchor a546c553; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-25 14:00 PDT, iteration_type "D", **FIRST leg of the 995-999 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -27,8 +27,8 @@ Values hardcoded after a scratch run this run via the real engine (calculate_asy
 ### Concurrency
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
-- Commit hashes: main commit MAIN_SHA_PLACEHOLDER (verified via git rev-parse); anchor followup ANCHOR_SHA_PLACEHOLDER (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 65/65 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: pushed Sep 25 2026 14:xx PDT per #716 (main + anchor + log-hash in one fast-forward); git ls-remote origin main verifies remote tip equals local tip.
+- Commit hashes: main commit c30e75ba785a4077e16b5e345b9dbc3ce888c293 (verified via git rev-parse); anchor followup a546c553939fe39e493bcfe47847efe3c7f9a9ee (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 65/65 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Push status: PUSHED per #716 - main c30e75ba + anchor a546c553 + log-hash <LOGHASH> pushed to origin main in one fast-forward (a5a755ca..<LOGHASH>); remote tip <LOGHASH> verified equal to local via git ls-remote Sep 25 2026 14:xx PDT.
 
 
 ## #994 Type C: Meta One link-limit traffic gate with publisher carve-out (mechanism 828) - FIRST dedicated corpus mechanism on Meta monetizing outbound links while exempting news-publisher Pages; FIRST publisher-traffic-gate leg (TENTH relationship direction in the m807 enumeration). Type C FIFTH and CLOSING leg of the 990-994 window D->E->A->B->C (Sep 25 2026, 13:00 PDT; log-hash followup registers both hashes here per #721 (this commit))
