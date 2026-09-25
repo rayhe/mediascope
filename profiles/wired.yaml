@@ -3677,6 +3677,109 @@ competitor_relationships:
       strongest_counterargument: 'The inversion is an artifact of product stage and news flow. Meta''s enforcement exists because Meta''s glasses are the only shipped camera glasses at scale with documented tampering in the wild, which generates real watchdog news (the bricking, the loophole fix). Google''s safeguard is a pre-launch announcement with no tampered units and no news peg, so there is nothing for WIRED''s privacy register to bite on. The enthusiastic hands-on predates the safeguard announcement entirely. Accepted as a major confounder. Claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE.'
       novelty: 'Distinct from #547 (coverage selection: Google/Samsung silence vs Meta alarm; Google arm proxy-only), #431 (Type B journalist-level: Boone Ashworth LED-fix week), and #622 (Anthropic comparator, Muse trust register). First publication-level mechanism to put safeguard-strength against register: new direct-URL WIRED Google hands-on evidence resolving #547''s proxy-only gap, and first corpus citation of eweek''s Google tamper-detection weakness documentation.'
       test_file: tests/test_type_a_677_wired_google_enforcement_strength_register_inversion_vs_meta_sep11_10am.py
+    wired_sep23_pinky_promises_privacy_skepticism_vs_google_xr_sep_window_noncoverage_sep25_2026:
+      mechanism_id: 820
+      date: '2026-09-25'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 982
+      iteration_type: A
+      iteration_time: 2026-09-25 01:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED (Conde Nast)
+      publication_pair: WIRED x Google
+      competitor: google
+      comparison_entities:
+      - meta
+      author: Kit (with Ray)
+      finding: 'Coverage-selection plus register asymmetry, Connect week. Meta arm (carried from mechanism #814, in-corpus mirror attestation): WIRED''s Sep 23, 2026 "Meta Pinky Promises Its Smart Glasses Will Be Private Soon" (Boone Ashworth) applies the skeptical register to Meta''s privacy-positive Connect announcement. The headline frames the Private Processing pledge as a dubious "pinky promise", the body opens with "Meta knows you probably have some privacy concerns about its smart glasses", and the reported rollout carries no firm timeline (per the newsletter summary of the WIRED piece). MANUAL ILLUSTRATIVE tone -0.45 for the skepticism-on-positive-news register. WIRED published at least three Meta wearables pieces in the Sep 23-24 Connect window (the Pinky Promises piece plus the subscription piece and the cheaper-colorful piece, both in-corpus from iteration #452''s source list). Google arm (new evidence this run): WIRED published zero Google XR camera-glasses pieces in the same window despite fresh news pegs that peer outlets covered: Google''s Snapdragon Summit Sep 23, 2026 confirmation that its Gemini eyewear from Gentle Monster and Warby Parker will run on Snapdragon AR1 (the-gadgeteer.com, new URL); Samsung''s July 2026 Unpacked details for the Android XR smart glasses (camera, roughly 9-hour battery, Warby Parker and Gentle Monster frames, fall launch; thurrott.com, new URL); the Warby Parker partnership confirmation (chainstoreage.com, new URL); and I/O 2026 audio-glasses peer coverage (digitaltrends.com, new URL). Positive control (carried from mechanism #640): WIRED''s May 19, 2026 hands-on Android XR piece (Chokkattu + Ashworth) proves WIRED covers Google XR glasses with the enthusiastic register (MANUAL ILLUSTRATIVE +0.15) when it chooses to, so the Sep-window absence is a selection signal, not a beat gap. The silence documented in mechanism #547 (Sep 5) now extends 20 days to Sep 25, spanning WIRED''s heaviest Meta-wearables coverage week of the year. MANUAL ILLUSTRATIVE delta (Meta minus Google) -0.60; no engine run; degenerate statistical contract per the #638/#643 convention; is_significant false. Not a financial-gradient claim: the Advance-Google adversarial litigation (mechanism #547) predicts against Google favoritism, so the observed direction is not explained by the named financial tie. Correlation only. Two WIRED-targeted search sets this run returned zero wired.com hits; per the iteration-492 rule the absence is bounded, not a proven zero. The mirror attestation is excerpt-bounded per the #503 rule; wired.com direct fetch policy-blocked.'
+      articles:
+      - title: Meta Pinky Promises Its Smart Glasses Will Be Private Soon (WIRED, Sep 23, 2026)
+        author: Boone Ashworth
+        date: '2026-09-23'
+        mirror_urls:
+        - https://www.aob-news.com/2026/09/23/meta-pinky-promises-its-smart-glasses-will-be-private-soon/
+        - https://technewsvision.co.uk/meta-pinky-promises-its-smart-glasses-will-be-private-soon/
+        register: skeptical accountability on a privacy-positive announcement
+        manual_illustrative_tone: -0.45
+        evidence_grade: 'carried in-corpus comparator (mechanism #814); wired.com policy-blocked; excerpt-bounded per the #503 rule'
+      - title: 'Snapdragon Summit 2026: Qualcomm Puts AI Agents On Smart Glasses (The Gadgeteer, Sep 23, 2026)'
+        url: https://the-gadgeteer.com/2026/09/23/snapdragon-summit-2026-qualcomm-puts-ai-agents-on-smart-glasses/
+        date: '2026-09-23'
+        register: industry product news
+        key_claim: Google said its Gemini eyewear from Gentle Monster and Warby Parker will run on Snapdragon AR1; WIRED published no Google XR camera-glasses piece in the same window
+        evidence_grade: new URL to corpus (zero hits before this run); peer coverage, not WIRED
+        url_novelty: first corpus appearance this run
+      - title: Samsung Details Upcoming Smart Glasses Developed With Gentle Monster and Warby Parker (Thurrott, Jul 2026)
+        url: https://www.thurrott.com/hardware/339507/samsung-details-upcoming-smart-glasses-developed-with-gentle-monster-and-warby-parker
+        date: '2026-07'
+        register: industry product news
+        key_claim: Android XR smart glasses with camera, roughly 9-hour battery, Warby Parker and Gentle Monster frames, fall launch; peer coverage, no WIRED counterpart in the window
+        evidence_grade: new URL to corpus (zero hits before this run); third-party attested via search snippet
+        url_novelty: first corpus appearance this run
+      - title: Warby Parker Partners With Google, Samsung on New Smart Glasses (Chain Store Age, 2026)
+        url: https://chainstoreage.com/warby-parker-partners-google-samsung-new-smart-glasses
+        date: '2026-05'
+        register: retail industry news
+        key_claim: Warby Parker partnership confirmation for Google and Samsung smart glasses; peer coverage, no WIRED counterpart in the Sep window
+        evidence_grade: new URL to corpus (zero hits before this run); third-party attested via search snippet
+        url_novelty: first corpus appearance this run
+      - title: Google Shows Off Android Audio Glasses Designed by Gentle Monster and Warby Parker (Digital Trends, 2026)
+        url: https://www.digitaltrends.com/home-theater/google-shows-off-android-audio-glasses-designed-by-gentle-monster-and-warby-parker/
+        date: '2026-05'
+        register: product news
+        key_claim: I/O 2026 audio glasses from Google with Gentle Monster and Warby Parker; peer coverage, no WIRED counterpart in the Sep window
+        evidence_grade: new URL to corpus (zero hits before this run); third-party attested via search snippet
+        url_novelty: first corpus appearance this run
+      - title: Hands-On With All of Google's New Upcoming Android XR Smart Glasses (WIRED, May 19, 2026)
+        url: https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/
+        authors: Julian Chokkattu, Boone Ashworth
+        date: '2026-05-19'
+        register: enthusiastic/playful hands-on, zero surveillance vocabulary
+        manual_illustrative_tone: 0.15
+        evidence_grade: 'carried in-corpus positive control (mechanism #640); proves WIRED covers Google XR glasses enthusiastically when it chooses to'
+      asymmetry_scorer_result:
+        target_entity: meta
+        publication: wired
+        target_tones_manual_illustrative:
+        - -0.45
+        target_avg: -0.45
+        reference_entity: google
+        reference_tones_manual_illustrative:
+        - 0.15
+        reference_avg: 0.15
+        delta_meta_minus_google: -0.6
+        interpretation: WIRED x Meta privacy-pledge register is more skeptical than the WIRED x Google camera-glasses register by about 0.60 on the manual illustrative scale
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        limitations: 'n=1 fresh Meta-arm score vs carried Google baseline (degenerate statistical contract per the #638/#643 convention); the Google Sep-window arm is a bounded search-result absence, not a scored piece; no engine run'
+      manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE tones are finding-layer illustrative assignments only (not corpus-scored, not statistically significant, no engine run). Do not cite as engine output.'
+      financial_context: 'Same financial context as mechanism #547 (carried, not re-verified this run): Condé Nast has $0 AI licensing from Google; Advance Publications SUED Google Jan 14, 2026 (SDNY adtech antitrust, consolidated MDL); CEO Roger Lynch described Google AI Overviews as an existential "death blow" to publisher revenue. The google entity block''s "adversarial" coverage prediction FAILS for this register lane as well: the publication suing Google covered Google''s camera glasses with delight in May and published nothing on them in the Sep window while running a skepticism-register piece on Meta''s privacy pledge.'
+      confounders:
+      - 'STRONG: event gravity. Meta Connect is a first-party tentpole generating owned news; Google''s Sep-window XR items are partner-channel product news (a Snapdragon Summit mention, Unpacked details), arguably lower news value. The selection gap may track event gravity, not entity.'
+      - 'STRONG: claim-skepticism default. The Pinky Promises piece covers a promise with no timeline ("private soon"); skepticism toward unverifiable corporate claims is standard accountability journalism and need not be entity-directed.'
+      - 'STRONG: Connect-week newsroom load. WIRED''s heaviest Meta-wearables week may crowd out Google XR stories; absence in one busy week is not suppression.'
+      - 'MODERATE: positive-control bound. The May-19 hands-on proves WIRED covers Google XR glasses enthusiastically, so the claim is about selection in one window, not a publication-wide Google blind spot.'
+      - 'MODERATE: excerpt-bounded per #503. The Pinky Promises piece is attested via syndication mirrors and a newsletter summary; wired.com direct fetch policy-blocked; the register could differ in full text.'
+      - 'WEAK: the Snapdragon Summit Google mention is second-order news (a Qualcomm keynote in which Google spoke); WIRED may reasonably not assign a story to a partner''s passing mention.'
+      strongest_counterargument: 'The asymmetry is an artifact of event gravity and news pegs. Meta Connect is WIRED''s biggest wearables news week of the year; of course WIRED published multiple Meta pieces, and a privacy pledge with no timeline is a natural accountability target. Google''s Sep-window XR news is partner-channel product news with no WIRED-exclusive angle. The selection gap reflects tentpole gravity, not entity bias. Accepted as the strongest confounder. Claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE.'
+      counterevidence:
+      - 'WIRED''s May-19 Google XR hands-on (positive control: WIRED covers Google XR glasses enthusiastically when it chooses to)'
+      - 'WIRED covered Meta''s privacy pledge at all; there is no suppression of Meta news, so the claim is register plus selection, not suppression'
+      - 'Advance-Google adversarial litigation predicts against Google favoritism (mechanism #547)'
+      - 'mechanism #814 found WIRED also covered Snap''s Sep-16 launch warmly, so the skepticism register is Meta-specific, not XR-glasses-specific'
+      connects_to: [547, 640, 431, 814, 452, 612]
+      falsification_family_member: false
+      falsification_ledger: 30
+      ledger_note: 'Falsification ledger holds at 30. Mechanism 820 is a directional Type A asymmetry claim, not a falsification-family member: it reports a coverage-selection and register asymmetry, not an anti-hypothesis that would retire a register claim.'
+      research_method: 'Two WIRED-targeted browser.search sets this run (Google Android XR glasses Warby Parker camera; WIRED Warby Parker Google smart glasses September 2026) returned zero wired.com articles (bounded absence per the iteration-492 rule). The Meta arm is carried from mechanism #814 (in-corpus mirror attestation); the May-19 hands-on positive control is carried from mechanism #640. Pre-commit novelty greps: git grep for each of the 4 new URLs returned zero hits in-tree; max numeric mechanism_id 819 in profiles/ pre-insertion; zero underscore-form and numeric 820 keys in-tree; the block key is unique at indent 4 under competitor_relationships/google in profiles/wired.yaml. The GitHub commit URL surfaced in one search set is the repo''s own history and was rejected as circular.'
+      novelty: 'Distinct from #547 (coverage selection: Google/Samsung silence vs Meta alarm; Google arm proxy-only), #640 (enforcement-strength register inversion: Meta LED-fix reactive register vs Google hands-on enthusiasm), and #814 (Snap Sep-16 launch warm register vs Meta Connect privacy-alarm coda). First corpus mechanism to (1) score WIRED''s skepticism register on Meta''s privacy-POSITIVE announcement (the Sep-23 Pinky Promises piece), (2) document a same-day contrast (Sep 23: WIRED Meta-skepticism publishes while Google confirms Snapdragon AR1 for its camera glasses at Snapdragon Summit), and (3) extend the Google-XR silence window to 20 days spanning Connect week, with the May-19 hands-on as positive control. New URL first appearances: the-gadgeteer.com Snapdragon Summit piece, thurrott.com Samsung details, chainstoreage.com Warby Parker partnership piece, digitaltrends.com I/O audio-glasses piece (4 new URLs).'
+      test_file: tests/test_type_a_982_wired_pinky_promises_skepticism_vs_google_xr_sep_window_noncoverage_sep25_1am.py
+      no_analysis_json_update: true
+      verdict: directionally_supported_not_proven
   microsoft:
     financial_tie: licensing
     estimated_value: usage-based (undisclosed)
