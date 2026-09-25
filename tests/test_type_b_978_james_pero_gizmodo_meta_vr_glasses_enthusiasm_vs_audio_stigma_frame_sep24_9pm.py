@@ -73,7 +73,7 @@ mechanism-form, verified non-colliding; zero dash-form 818 mechanism
 references; block key zero-hit repo-wide; the VR-glasses URL zero-hit
 repo-wide pre-commit.
 
-Anchored at commit ANCHORED_SHA.
+Anchored at commit b8a2c00a998666bd4dfcf385907497cbc6604aae.
 
 Rotation: Type B, iteration #978, window D #975 -> E #976 -> A #977 ->
 B #978 -> C #979 (FOURTH leg per the #565 convention). Concurrency:
