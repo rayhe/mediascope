@@ -63,7 +63,7 @@ BLOCK_KEY = "type_c_994_meta_one_link_limits_publisher_carveout_sep25"
 # Tail-block convention: zero-indent standalone block at the end of the file
 EXPECTED_ITERATION = 994
 # Anchor placeholder: replaced by the real main-commit SHA in the #565 anchor followup
-ANCHORED_SHA = "0" * 40  # patched green in the anchor followup per #565
+ANCHORED_SHA = "af3cc572a36859bb9cf74827a300260efb691e3d"  # patched green in the anchor followup per #565
 
 SOURCE_URLS = [
     "https://stupiddope.com/2026/09/facebooks-new-link-limits-put-a-price-on-sending-audiences-beyond-meta/",
