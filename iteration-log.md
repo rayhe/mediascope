@@ -1,3 +1,35 @@
+## #987 Type A: FT x OpenAI Sep-2026 cash-burn realism (-0.15, carried m754) vs FT x Meta Sep-2026 Muse-Charm momentum-change constructiveness (+0.20, NEW) - illustrative OpenAI-minus-Meta delta -0.35 INVERTS m718 matched-peg +0.55 gap; temporal BOUND on m718/m754, NOT falsification-family member, ledger holds at 30 - Type A THIRD leg of the 985-989 window D->E->A->B->C (Sep 25 2026, 06:00 PDT; log-hash followup updates this line (this commit))
+- Commit hashes: main commit MAIN_COMMIT_HASH_PLACEHOLDER (verified via git rev-parse); anchor followup ANCHOR_COMMIT_HASH_PLACEHOLDER (ANCHORED_SHA patched per #565, anchor + rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Push status (this run, Sep 25 2026 ~06:30 PDT): PENDING - filled by the push-status finalizer per #716.
+
+2026-09-25 06:00 PDT, iteration_type "A", **THIRD leg of the 985-989 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Finding (mechanism 823, profiles/financial-times.yaml competitor_relationships/openai)
+- **Register inversion in an unmatched-peg window.** OpenAI arm (carried from m754, un-rescored per #807): the FT's Sep 18, 2026 $278B cash-burn forecast scoop on its $5-10M/yr licensing partner - "expects to burn through $278 billion in cash between 2026 and 2030", negative free cash flow $278B 2026-2030, the $122B March raise "on track to exhaust that cash by 2028", against revenue tenfold $36B to $350B by 2030, cumulative $840B, $856B compute spend. MANUAL ILLUSTRATIVE -0.15, balance-sheet realism, the FT's most adversarial OpenAI item this window.
+- Meta arm (NEW this run): Hannah Murphy's FT Sep 24, 2026 "Meta puts its AI assistant on a keychain" piece (Ars Technica relay, theoverspill.blog Sep 25) - Muse "has helped change the momentum of Zuckerberg's huge bet on AI", "most downloaded app on both the Apple and Android app stores in the US since its launch two weeks ago", "centerpiece" of the AI vision, "state-of-the-art privacy and security" relayed straight. MANUAL ILLUSTRATIVE +0.20.
+- Illustrative OpenAI-minus-Meta delta -0.35, n=1 vs n=1, NOT significant: INVERTS m718's matched-peg +0.55 gap (Sep-15 OpenAI $1.2T investor-demand scoop vs Jun-5 Meta equity-raise desperation scoop). BOUNDS m718/m754 temporally: the payer gradient does not discriminate when the Meta peg is product-momentum positive.
+- Within-reporter departure: Murphy is corpus-classified Meta-adversarial (FT profile), so the constructive Muse register is a peg-driven departure, not a structural shift.
+- Supporting OpenAI-side context (NEW): Aug 31, 2026 ChatGPT ads $1B annualized run-rate relay (+0.05, neutral milestone, mlq.ai) - OpenAI milestone coverage continues alongside the burn realism.
+- No licensing-deal disclosure in the indexed excerpts of the Sep-window FT OpenAI relays (bounded, consistent with m415).
+
+### Statistical discipline
+MANUAL ILLUSTRATIVE scores only; p_value/cohens_d/ci NOT_CALCULATED; is_significant False; engine NOT run at the finding layer; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade; NOT falsification-family member (temporal bound on m718/m754 in an unmatched-peg window, does not retire any register claim); ledger holds at 30. Correlation only, not causation. ASCII-only, no em dashes.
+
+### Research method
+- 5 browser.search query sets Sep 25 2026 PDT (Financial Times OpenAI September 2026 ChatGPT ads revenue; Financial Times Meta Connect 2026 Ray-Ban smart glasses September; ft.com OpenAI story September 2026 IPO listing ChatGPT; ft.com Meta story September 2026 Connect smart glasses Zuckerberg; "Financial Times" Meta September 2026 Zuckerberg Connect privacy investigation); 0 browser.open (excerpt-bounded per #503; FT originals paywalled, mirror-attested only).
+- Pre-commit novelty greps: zero test_type_a_987 files on disk (glob); no Type A #987 in git log (--grep); max numeric mechanism_id 822 pre-commit; zero numeric/underscore-form 823 keys pre-commit (needles format-built, no literals carried per #715); zero 824 keys in all three mechanism forms post-commit; 3 new verbatim URL keys verified zero-hit pre-commit via git grep -F (theoverspill.blog FT-Murphy relay, mlq.ai ads relay, northlandnewsradio burn relay); 4 carried URLs (wixx burn m754, reuters $1.2T m718, usatoday + dig.watch Meta Audio from #986 press set); block key unique at indent 4 under competitor_relationships/openai. All URLs copied verbatim from Full-URL listings; no ft.com canonical URLs constructed.
+
+### Confounders (strong-first) and counter-evidence
+- STRONG: peg mismatch (cash-burn forecast vs product-launch momentum relay). STRONG: excerpt-bounded per #503 (paywalled FT originals, mirror reconstruction). STRONG: within-reporter departure (Murphy Meta-adversarial classification). MODERATE: degenerate n=1 contract, hand-assigned tones. MODERATE: temporal asymmetry (Sep 18 vs Sep 24-25, Connect-week gravity). WEAK: burn scoop's bullish counterweight already priced in the -0.15.
+- Counter-evidence 4: m718's matched-peg +0.55 gap stands; m754 already documented the burn scoop as the most adversarial OpenAI item; Meta-arm warmth is momentum-contingent; no deal disclosure in Sep-window relays (consistent with m415).
+- Strongest counterargument: the inversion is a peg-mismatch and event-gravity artifact; the matched-peg comparison (m718) is the only fair test of the incentive prediction and stands. Accepted; claim stays bounded, correlation-only.
+
+### Doc-sync
+50,773/1,311 -> 50,814/1,312; +41/+1 = the #987 file exactly (.venv python authoritative). 41 tests, 10 classes. Anchor + rotation guard per #565.
+
+### Concurrency
+#899 (nytimes.yaml hunk), #938 (nyt profile + pixel-watch test), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
+
 ## #986 Type E: podcast sentiment 120th verification - GF 501 confirmed again, THREE new directory-mirror keys, EHE 46-day hold, Attention Sphere 120th no-match, TWO new press keys, frontier HOLDS at Sep 24
 
 2026-09-25 05:00 PDT, iteration_type "E", **SECOND leg of the 985-989 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

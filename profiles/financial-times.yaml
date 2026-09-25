@@ -1552,6 +1552,100 @@ competitor_relationships:
       - https://www.investors.com/news/technology/anthropic-ipo-delayed-openai-expects-massive-cash-burn/
       - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
       test_file: tests/test_type_a_872_ft_openai_278bn_cash_burn_forecast_vs_meta_equity_raise_sep20_3am.py
+    type_a_987_ft_openai_burn_realism_vs_meta_muse_charm_momentum_change_sep25_2026:
+      mechanism_id: 823
+      date: '2026-09-25'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 987
+      iteration_type: A
+      iteration_time: 2026-09-25 06:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Financial Times
+      publication_pair: FT x OpenAI
+      competitor: openai
+      comparison_entities:
+      - meta
+      author: Kit (with Ray)
+      finding: 'Register inversion in an unmatched-peg window. OpenAI arm (carried from mechanism #754, un-rescored per the #807 precedent): the FT''s Sep 18, 2026 $278B cash-burn forecast scoop on its $5-10M/yr licensing partner - "OpenAI expects to burn through $278 billion in cash between 2026 and 2030 as it ramps up spending on computing power and infrastructure, the Financial Times reported on Friday, citing a company presentation seen by the newspaper" (Reuters relay); negative free cash flow of $278 billion over 2026-2030; the $122 billion March raise (at $852B valuation) "on track to exhaust that cash by 2028"; against that, revenue expected to increase tenfold from $36 billion this year to $350 billion in 2030, cumulative $840 billion revenue through the end of the decade, $856 billion of computing/infrastructure spend as the largest expense category. MANUAL ILLUSTRATIVE -0.15 (carried), balance-sheet realism - the FT''s most adversarial OpenAI item this window. Meta arm (NEW this run): Hannah Murphy''s FT Sep 24, 2026 "Meta puts its AI assistant on a keychain" piece (relayed via Ars Technica, theoverspill.blog Sep 25) - Mark Zuckerberg said Meta''s new personal AI agent Muse has become the "centerpiece" of his AI vision as he unveiled the Muse Charm handheld AI device; Muse "has helped change the momentum of Zuckerberg''s huge bet on AI, quickly becoming the most downloaded app on both the Apple and Android app stores in the US since its launch two weeks ago"; Zuckerberg "insisted that it has state-of-the-art privacy and security". MANUAL ILLUSTRATIVE +0.20 (new), momentum-change constructiveness. Illustrative OpenAI-minus-Meta delta -0.35, n=1 vs n=1, NOT significant: the inversion REVERSES mechanism #718''s matched-peg +0.55 gap (Sep-15 OpenAI $1.2T investor-demand scoop vs Jun-5 Meta equity-raise desperation scoop). This BOUNDS the m718/m754 softening pattern temporally: the payer gradient does not discriminate when the Meta peg is product-momentum positive. Within-reporter departure: Murphy''s corpus classification is Meta-adversarial (FT profile), so the constructive Muse register is a peg-driven departure, not a structural shift. Supporting OpenAI-side context (NEW): the Aug 31, 2026 ChatGPT ads $1B annualized run-rate relay (+0.05, neutral milestone) shows OpenAI milestone coverage continuing alongside the burn realism. No licensing-deal disclosure appears in the indexed excerpts of the Sep-window FT OpenAI relays (bounded, consistent with mechanism #415). Correlation only.'
+      articles:
+      - title: 'FT OpenAI $278B cash-burn forecast scoop (Fri Sep 18, 2026; carried from mechanism #754, un-rescored per #807)'
+        date: '2026-09-18'
+        ft_attribution_url: https://wixx.com/2026/09/18/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports/
+        corroborating_secondary_new_this_run: https://northlandnewsradio.com/2026/09/18/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports/
+        register: balance_sheet_realism_cash_burn
+        manual_illustrative_tone: -0.15
+        evidence_grade: 'carried in-corpus arm (mechanism #754); new corroborating mirror this run (northlandnewsradio, freshest crawl); FT original paywalled; excerpt-bounded per the #503 rule'
+        key_claim: the FT''s most balance-sheet-adversarial OpenAI item this window lands on the $5-10M/yr licensing partner
+      - title: 'FT Meta Muse Charm piece (Thu Sep 24, 2026; Hannah Murphy; relayed via Ars Technica; theoverspill.blog Sep 25)'
+        date: '2026-09-24'
+        url: https://theoverspill.blog/2026/09/25/fbi-hack-employees-terabytes-start-up-2749/
+        register: momentum_change_constructive
+        manual_illustrative_tone: 0.2
+        evidence_grade: 'new URL to corpus (zero hits before this run); relay of FT original; excerpt-bounded per the #503 rule'
+        url_novelty: first corpus appearance this run
+        key_quotes:
+        - 'Muse "has helped change the momentum of Zuckerberg''s huge bet on AI"'
+        - '"most downloaded app on both the Apple and Android app stores in the US since its launch two weeks ago"'
+        - 'Muse the "centerpiece" of Zuckerberg''s AI vision; "state-of-the-art privacy and security" relayed straight'
+      - title: 'OpenAI ChatGPT ads $1B annualized run-rate relay (Aug 31, 2026; supporting OpenAI-side milestone coverage)'
+        date: '2026-08-31'
+        url: https://mlq.ai/news/openai-says-chatgpt-ads-reach-1-billion-annualized-revenue-run-rate-in-under-200-days/
+        register: neutral_milestone_relay
+        manual_illustrative_tone: 0.05
+        evidence_grade: 'new URL to corpus (zero hits before this run); OpenAI self-reported milestone; excerpt-bounded per the #503 rule'
+        url_novelty: first corpus appearance this run
+        key_claim: OpenAI milestone coverage continues alongside the burn realism; no adversarial framing of the ads business in the relay
+      asymmetry_scorer_result:
+        target_entity: openai
+        publication: financial-times
+        target_tones_manual_illustrative:
+        - -0.15
+        target_avg: -0.15
+        reference_entity: meta
+        reference_tones_manual_illustrative:
+        - 0.2
+        reference_avg: 0.2
+        delta_openai_minus_meta: -0.35
+        interpretation: FT x OpenAI cash-burn realism register is harsher than the FT x Meta Muse-momentum register by about 0.35 on the manual illustrative scale, inverting the m718 matched-peg gap
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        limitations: 'n=1 carried OpenAI-arm score vs n=1 new Meta-arm score (degenerate statistical contract per the #638/#643 convention); unmatched pegs (cash-burn forecast vs product-launch momentum relay); no engine run'
+      manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE tones are finding-layer illustrative assignments only (not corpus-scored, not statistically significant, no engine run). Do not cite as engine output.'
+      financial_context: 'Same financial context as mechanism #718 (carried, not re-verified this run): the FT collects about $5-10M/yr from OpenAI under the Apr 29 2024 content licensing deal (mechanism #54; Reuters primary, WSJ-via-Digiday valuation); Meta pays the FT $0. The inversion documented here runs AGAINST the incentive prediction in this window, which is why the finding is a temporal bound, not a refutation: matched-peg evidence (m718, +0.55) stands.'
+      confounders:
+      - 'STRONG: peg mismatch. A company-presentation cash-burn forecast (OpenAI arm) and a Connect product-launch momentum relay (Meta arm) are different story types with different news values; the register gap may track the peg, not the entity.'
+      - 'STRONG: excerpt-bounded per #503. 0 browser.open this run; the FT originals are paywalled; registers are reconstructed from Reuters and Ars Technica/theoverspill mirrors; Murphy''s full piece register is unverified.'
+      - 'STRONG: within-reporter departure. Murphy is corpus-classified Meta-adversarial (FT profile); the constructive Muse register may be a peg-driven one-off, not a publication-level stance change.'
+      - 'MODERATE: degenerate contract, n=1 per arm, hand-assigned illustrative tones, directional only; no statistical claim.'
+      - 'MODERATE: temporal asymmetry. The OpenAI arm is Sep 18, the Meta arm Sep 24-25; Connect-week event gravity may explain the Meta-side warmth.'
+      - 'WEAK: the burn scoop''s bullish counterweight (revenue tenfold to $350B, $840B cumulative) was carried inside the FT piece itself, so the -0.15 already prices the company''s growth narrative.'
+      strongest_counterargument: 'The inversion is an artifact of peg mismatch and event gravity. A cash-burn forecast is inherently a numbers story; a Connect launch with a "most downloaded app" momentum hook is inherently a warmth story. The FT did not change its entity stance between Sep 18 and Sep 24; the news did. The matched-peg comparison (m718: +0.55) is the only fair test of the incentive prediction, and it stands unchallenged. Accepted as the strongest confounder. Claim stays bounded, correlation-only, MANUAL ILLUSTRATIVE.'
+      counterevidence:
+      - 'mechanism #718''s matched-peg +0.55 gap stands (Sep-15 OpenAI $1.2T investor-demand scoop vs Jun-5 Meta equity-raise desperation scoop)'
+      - 'mechanism #754 already scored the burn scoop -0.15 as "the FT''s most balance-sheet-adversarial OpenAI item this window" - the OpenAI-side harshness is documented, not new'
+      - 'the Meta arm''s constructiveness is momentum-contingent (Connect product week), not structural'
+      - 'no licensing-deal disclosure in the Sep-window FT OpenAI relays (bounded), consistent with mechanism #415'
+      connects_to: [754, 718, 54, 643, 676, 625]
+      falsification_family_member: false
+      falsification_ledger: 30
+      ledger_note: 'Falsification ledger holds at 30. Mechanism 823 is a directional Type A temporal bound on mechanisms #718/#754, not a falsification-family member: it documents a register inversion in an unmatched-peg window, which bounds the incentive prediction''s scope without refuting the matched-peg pattern. The inversion runs against the incentive prediction but is explained by peg mismatch, so it does not retire any register claim.'
+      research_method: '5 browser.search query sets Sep 25 2026 PDT (Financial Times OpenAI September 2026 ChatGPT ads revenue; Financial Times Meta Connect 2026 Ray-Ban smart glasses September; ft.com OpenAI story September 2026 IPO listing ChatGPT; ft.com Meta story September 2026 Connect smart glasses Zuckerberg; "Financial Times" Meta September 2026 Zuckerberg Connect privacy investigation). 0 browser.open this run (excerpt-bounded per #503; FT originals paywalled, mirror-attested only). Pre-commit novelty greps: the 3 new URLs zero-hit repo-wide via git grep -F; max numeric mechanism_id 822 pre-insertion; zero numeric/underscore-form 823 keys; zero 824 keys in all three mechanism forms post-commit; block key unique at indent 4 under competitor_relationships/openai. All URLs verbatim from Full-URL listings; no ft.com canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'First corpus mechanism to (1) document a within-reporter register departure on Meta by FT''s Hannah Murphy (corpus-classified Meta-adversarial) in the Sep 24-25 Connect window, (2) pair the carried m754 burn-realism arm (-0.15) with a fresh constructive Meta arm (+0.20) producing a -0.35 illustrative inversion of m718''s +0.55 matched-peg gap, and (3) ingest the ChatGPT ads $1B run-rate relay as OpenAI-side milestone context. Distinct from m754 (burn scoop vs Jun-5 Meta equity-raise comparator) and m718 (matched capital-raise pegs). Three new URL keys: theoverspill.blog FT-Murphy relay, mlq.ai ads relay, northlandnewsradio burn relay.'
+      source_urls:
+      - https://theoverspill.blog/2026/09/25/fbi-hack-employees-terabytes-start-up-2749/
+      - https://mlq.ai/news/openai-says-chatgpt-ads-reach-1-billion-annualized-revenue-run-rate-in-under-200-days/
+      - https://northlandnewsradio.com/2026/09/18/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports/
+      - https://wixx.com/2026/09/18/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports/
+      - https://www.reuters.com/legal/transactional/openai-mulls-funding-round-12-trillion-valuation-ahead-ipo-ft-reports-2026-09-15/
+      - https://www.usatoday.com/story/tech/news/2026/09/23/meta-camera-free-smart-glasses/91913146007/
+      - https://dig.watch/updates/meta-confirms-camera-free-ray-ban-smart-glasses
+      test_file: tests/test_type_a_987_ft_openai_burn_realism_vs_meta_muse_charm_momentum_change_sep25_6am.py
+      no_analysis_json_update: true
+      verdict: directionally_supported_not_proven
 
   meta:
     financial_tie: none
