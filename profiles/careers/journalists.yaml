@@ -23206,3 +23206,114 @@ andy_boxall:
       verification:
         yaml_parse_clean: true
         ascii_only: true
+victoria_song:
+  name: Victoria Song
+  current_role: Senior Reporter / Wearables Reviewer
+  current_publication: The Verge
+  beats:
+  - wearables
+  - smart glasses
+  - fitness tech
+  - health tech
+  - AI wearables
+  notes: 'The Verge senior reporter Victoria Song (author of the "Optimizer" newsletter, regular Vergecast contributor; career arc: PC Magazine -> Gizmodo -> The Verge, documented in the career-migration list item of this file under "name: Victoria Song" with mechanism_ids [593, 605, 719]). Type B #993 (Sep 25 2026, 12:00 PDT): mechanism 827 - FIRST dedicated mechanism-id-sequence Type B mechanism on Song under a top-level journalists.yaml item (zero "victoria_song:" top-level item keys pre-commit; mechanism 75 predates the sequence numbering and lives as an excerpt-tier block in competitor-coverage-research.yaml; mechanism 593 is a Type C financial-stack behavioral pin, not a Type B cross-entity mechanism). The Aug-2026 corpus (test_victoria_song_cross_entity.py) documents her as balanced/product-reviewer rather than adversarial (Meta tone != "adversarial", "Meta might be better than Apple" comparison positive, Apple coverage positive with no surveillance framing despite 12 cameras). #993 adds a Sep-23/24-2026 temporal extension of m75 under the Connect-week shared peg: Song applies the privacy/data-harvesting register to Meta''s camera-free Audio launch and to Meta''s business model on the Vergecast, while her Snap-side register in the same segment stays product/market-skeptical ("broken illusion") with zero data-harvesting vocabulary. ASCII-only, no em dashes.'
+  mechanism_ids:
+  - 827
+  source_urls:
+  - https://technewstube.com/theverge/1870121/meta-ditches-camera-newest-smart-glasses/
+  - https://finance.biggo.com/news/d71bedffa3fb45e3
+  competitor_coverage:
+    type_b_993_victoria_song_verge_rayban_audio_stigma_vs_snap_broken_illusion_sep25:
+      mechanism_id: 827
+      iteration: 993
+      date: '2026-09-25'
+      type: B
+      goal_id: goal_54093bda4145
+      hypothesis: 'If the register-selectivity mechanism 75 documents (Song''s privacy vocabulary activates for Meta, not competitors) still holds in Connect week Sep 2026, her new Meta-side output should apply the data-harvesting/privacy register to Meta while her competitor-side output in the same reporting window stays in product/market registers. NULL: the privacy/data-harvesting register fires on Snap too, or Meta receives product-only framing in the same segment.'
+      design: 'Type B cross-entity comparison. NEW Meta arm (Sep 23 2026): Song''s Verge piece "Meta ditches the camera on its newest smart glasses" (byline Victoria Song, Sep 23 2026 7:37 pm, attested via the TechNewsTube theverge feed proxy; canonical theverge.com URL not recovered this run, not constructed) + NEW segment register (Sep 24 2026): the Vergecast segment "Smart Glasses Only Make Sense When Companies Stop Trying to Hoover Up Your Data" (relay-tier evidence via finance.biggo.com scraper relay; attribution shared with co-host per the relay text). NEW Snap arm: the same segment''s "Snap''s $2,195 bet on a broken illusion" section - product/market-skepticism register. Carried arms (m75, un-rescored per #807): Apple Vision Pro positive hands-on with zero surveillance framing despite 12 cameras; Google Android XR "close to Tony Stark" enthusiastic, no privacy alarm; Snap Specs outside Song''s primary beat. Comparison holds the journalist, the beat, and the Connect-week news peg constant; the entities differ (Meta vs Snap).'
+      meta_corpus:
+      - date: '2026-09-23'
+        outlet: the-verge (via technewstube feed proxy)
+        title: 'Meta ditches the camera on its newest smart glasses'
+        register: stigma-frame
+        notes: 'Feed-proxy excerpt: "Walking around Meta Connect 2026, everyone''s sporting smart glasses in all sorts of shapes, colors, and sizes. It''s a marked difference here, a tech bubble where ''pervert glasses'' are not a concern. Outside Connect, the public..." The piece frames the camera-free Ray-Ban Meta Audio launch through the "pervert glasses" social-stigma register - privacy vocabulary on Meta''s own product event. Evidence tier: feed-attestation excerpt (byline + date + title + partial body); full text not opened this run.'
+        source_url: https://technewstube.com/theverge/1870121/meta-ditches-camera-newest-smart-glasses/
+        tone: -0.30
+      - date: '2026-09-24'
+        outlet: the-vergecast (via finance.biggo.com relay)
+        title: 'Smart Glasses Only Make Sense When Companies Stop Trying to Hoover Up Your Data'
+        register: business-model-attribution
+        notes: 'Relayed segment thesis (Song, per relay attribution, co-host present): smart glasses "have split into two irreconcilable products: one that genuinely works for specific professional uses, and one that conflicts with the entire business model of the companies selling them." Verbatim relayed quote: "It''s kind of interesting to see this kind of third band of like smart eyewear device that''s coming out that''s not a headset, is not what they''re calling AI glasses right now... but it''s not quite AR glasses as we were sold them in the past," she noted. The data-harvesting critique attaches to the business model of the Meta archetype. Meta''s own Vergecast-side hardware notes in the relay are product-forward ("the technically interesting one" at $1,299, 100g vs Quest 3/Vision Pro). Evidence tier: scraper relay of segment; attribution shared with co-host per relay text ("Their central finding").'
+        source_url: https://finance.biggo.com/news/d71bedffa3fb45e3
+        tone: -0.35
+      competitor_corpus:
+      - date: '2026-09-24'
+        entity: snap
+        outlet: the-vergecast (via finance.biggo.com relay)
+        title: 'Snap''s $2,195 bet on a broken illusion (segment section)'
+        register: product-skepticism
+        notes: 'The same Vergecast segment''s Snap section: "$2,195 bet on a broken illusion" - product/market-skepticism on Snap''s standalone AR positioning; the relay adds "technically ambitious in a way Meta''s products are not," conceding Snap engineering ambition. The comparison table row in the relay: Snap Specs $2,195 fully standalone vs Meta VR Glasses $1,299 vs Apple Vision Pro $3,200 vs Ray-Ban Meta Gen 3 $449. ZERO data-harvesting/privacy vocabulary fires on Snap in the relayed segment despite the segment headline''s "Hoover Up Your Data" thesis - the privacy register stays on Meta, the product register on Snap. Carried m75 arm: Snap Specs outside Song''s primary beat (un-rescored per #807).'
+        source_url: https://finance.biggo.com/news/d71bedffa3fb45e3
+        tone: -0.20
+      - date: '2026-08'
+        entity: apple
+        register: positive-product
+        notes: 'Carried from mechanism 75, un-rescored per #807: Apple Vision Pro positive hands-on, zero surveillance framing despite 12 cameras.'
+        tone: carried
+      - date: '2026-08'
+        entity: google
+        register: enthusiastic-product
+        notes: 'Carried from mechanism 75, un-rescored per #807: Google Android XR "close to Tony Stark" enthusiastic, no privacy alarm.'
+        tone: carried
+      observed_evidence:
+      - 'Sep-23 Meta arm: stigma-frame register on Meta''s own Connect launch ("pervert glasses" as the opening frame for the camera-free Audio model), -0.30 MANUAL ILLUSTRATIVE.'
+      - 'Sep-24 segment Meta register: business-model-attribution ("Hoover Up Your Data"; "conflicts with the entire business model of the companies selling them"), -0.35 MANUAL ILLUSTRATIVE.'
+      - 'Sep-24 segment Snap register: product/market-skepticism ("broken illusion"; $2,195 price-verdict; engineering-ambition concession), -0.20 MANUAL ILLUSTRATIVE; zero data-harvesting vocabulary on Snap.'
+      - 'Illustrative Meta-minus-Snap delta: (-0.35) - (-0.20) = -0.15. Direction consistent with m75 (privacy vocabulary Meta-selective) but the gap NARROWS - Song applies genuine product skepticism to Snap in the same segment, so this is a temporal BOUND on m75''s bifurcation, not a replication of its magnitude.'
+      - 'The carried m75 competitor arms (Apple Vision Pro positive hands-on, Google Android XR enthusiastic) remain un-rescored per #807; they are the boundary for the temporal claim.'
+      scoring:
+        manual_illustrative: true
+        meta_arm_tone: -0.35
+        snap_arm_tone: -0.20
+        illustrative_delta_meta_minus_snap: -0.15
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval_95: NOT_CALCULATED
+        is_significant: false
+        verdict: 'directionally_supported_not_proven'
+        scoring_note: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 (new Meta arms) vs n=1 (new Snap segment section), relay-tier evidence on the segment. Asymmetry scorer engine NOT run at the finding layer; illustrative tones and delta only; documents the analyst reading for reproducibility and challenge.'
+      confounders:
+      - strength: STRONG
+        note: 'Relay-tier evidence: the Vergecast segment reached the corpus through a finance.biggo.com scraper relay, not a first-hand transcript or audio read. The "broken illusion" header and thesis paraphrase are relayed; verbatim quotes attributed to Song are relayed too. Misattribution risk is bounded but real.'
+      - strength: STRONG
+        note: 'Shared-segment attribution: the relay attributes the central thesis to Song plus the co-host ("Their central finding," with Jay Peters present in the segment per the relay). The business-model-attribution register may partly reflect the co-host''s framing, not Song alone.'
+      - strength: STRONG
+        note: 'Genre routing: the Sep-23 Meta arm is a launch-day news piece (the privacy peg IS the camera-free product); the Snap "broken illusion" is market-skepticism commentary inside a Vergecast segment. Register differences may track genre and news peg, not entity.'
+      - strength: MODERATE
+        note: 'n=1 segment, n=1 piece: degenerate contract; directional illustration only, not a corpus claim about Song''s Snap coverage.'
+      - strength: MODERATE
+        note: 'Meta Connect week genuinely centered Meta''s three-tier lineup ($349 Audio, $799 Gen 3, $1,299 VR Glasses); segment focus on Meta is peg-driven, not necessarily preference-driven.'
+      - strength: WEAK
+        note: 'The Sep-23 piece''s "pervert glasses" phrasing attributes the stigma to the public ("Outside Connect, the public..."), not necessarily Song''s own verdict.'
+      counterevidence:
+      - 'Song''s carried Meta product record per m75''s corpus notes ("best glasses I''ve ever tried", "turning point for smart glasses", Meta''s approach "may be BETTER than Apple''s" Feb 2024) and the corpus test asserting her Meta tone is NOT adversarial - the adversarial register is not her constant.'
+      - 'The same segment''s Meta VR Glasses coverage is product-forward ("the technically interesting one", 100g face-weight favorable vs Quest 3 and Vision Pro) - Meta hardware gets fair product treatment in her own register.'
+      - 'Her Jul 7 LED tamper-proof piece reported Meta''s PROACTIVE privacy response (corpus data-integrity correction: not adversarial) - product-authority framing, not attack framing.'
+      - 'The "broken illusion" verdict IS genuine product skepticism toward a competitor (Snap) - the strongest same-segment competitor criticism in the m75 family, countering uniform Meta-hostility readings.'
+      - '"Technically ambitious in a way Meta''s products are not" concedes Snap engineering ambition - not pure hostility.'
+      connects_to: [75, 722, 764, 773, 818, 824]
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 vs n=1, relay-tier evidence on the segment. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative tones (-0.35/-0.20) and illustrative delta (-0.15) only; not evidence of bias or of financial influence; documents the analyst reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents one wearables reporter''s register selectivity across a Sep-23 piece and a Sep-24 Vergecast segment during Meta Connect week: the privacy/data-harvesting register fires on Meta while the product/market register fires on Snap. Register differences are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. Relay-tier evidence and genre routing are the dominant confounds. No causal claim. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 30
+      ledger_note: 'Ledger holds at 30 this run (no new member; THIRTIETH member-form in journalists.yaml remains the sole m978 block). Temporal extension of mechanism 75 with a narrowing delta - register documentation + temporal BOUND, not a uniform-prediction test.'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type B register documentation; falsification ledger holds at 30.'
+      novelty: 'FIRST dedicated mechanism-id-sequence Type B mechanism on Victoria Song under a top-level journalists.yaml item. Zero test_type_b_993 files on disk (glob); no "Type B #993" in git log (--grep); max numeric mechanism_id 826 in-tree pre-commit; zero numeric 827-form mechanism keys in profiles/ pre-commit; zero underscore-form 827 MECHANISM key strings repo-wide pre-commit (needles format-built per #715); zero dash-form 827 mechanism references pre-commit; block key `type_b_993_victoria_song_verge_rayban_audio_stigma_vs_snap_broken_illusion_sep25` zero-hit repo-wide pre-commit; zero "victoria_song:" top-level item keys pre-commit (the "name: Victoria Song" career-migration entry with mechanism_ids [593, 605, 719] is not an item and not a Type B mechanism); mechanism 75 predates the sequence numbering (excerpt-tier block in competitor-coverage-research.yaml); mechanism 593 is Type C (financial-stack behavioral pin), not Type B; both arm URLs zero-hit repo-wide pre-commit (git grep -F): the TechNewsTube URL appears exactly twice in profiles/ post-commit (block arm + item source_urls) and the biggo URL exactly three times (two block arms + item source_urls). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '6 browser.search query sets Sep 25 2026: (1) Meta Connect 2026 Victoria Song Ray-Ban Meta Audio smart glasses - REJECTED for same-journalist Meta-only framing without competitor arm (The Verge "Meet Meta''s New Ray-Ban Audio Glasses" surfaced, no Song byline established); (2) Meta Ray-Ban Audio glasses launch journalist review September 2026 - SELECTED: surfaced Song''s Sep-23 "Meta ditches the camera on its newest smart glasses" via the TechNewsTube feed attestation (byline Victoria Song, Sep 23 2026 7:37 pm); (3) Victoria Song Verge smart glasses September 2026 - SELECTED: confirmed her wearables beat and corpus baseline (LED tamper-proof Jul-7 piece, EHE Aug-6 coverage); (4) Victoria Song Snap smart glasses coverage 2026 - REJECTED (no clean Song Snap arm, but surfaced the Sep-24 Vergecast relay with the Snap "broken illusion" section); (5) Victoria Song Vergecast Meta Snap smart glasses 2026 - SELECTED: finance.biggo.com relay of the Sep-24 Vergecast segment with attributed Song quotes and the Snap "broken illusion" header; (6) broader same-writer Sep 2026 cross-entity candidates (Nicole Nguyen WSJ, Julian Chokkattu WIRED, Kate Kozuch Tom''s Guide, Hamish Hector TechRadar, Jacob Krol TechRadar, Brenda Stolyar, Scott Stein, Sabrina Ortiz, Karissa Bell, David Heaney, Andy Boxall) - all REJECTED: prior corpus saturation (mechanisms/iterations already dedicated) or no verifiable same-writer cross-entity pair. 0 browser.open this run per #503 excerpt-bounded convention; evidence tier for the segment is scraper-relay, for the Sep-23 piece is feed-attestation excerpt. Pre-commit novelty greps per #715 as pinned in novelty. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_993_victoria_song_verge_rayban_audio_stigma_vs_snap_broken_illusion_sep25_noon.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
