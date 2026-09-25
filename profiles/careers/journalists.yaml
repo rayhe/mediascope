@@ -23098,3 +23098,111 @@ david_heaney:
         iteration: 983
         type: 'B'
         date: '2026-09-25 02:00 PDT'
+
+andy_boxall:
+  name: Andy Boxall
+  current_role: Contributing Writer / Wearables Columnist
+  current_publication: Android Police
+  beats:
+  - smartwatches
+  - smart glasses
+  - wearables
+  - mobile
+  notes: 'Android Police contributing writer Andy Boxall (author-bio "Andy is a seasoned technology journalist with more than 15 years experience in the mobile industry, writing for Digital Trends, Wired, and more" rendered on both arms this run; full-text first-hand reads via browser.open this run - a documented deviation from the #503 excerpt-bounded convention). Type B #988 (Sep 25 2026, 07:00 PDT): mechanism 824 - FIRST dedicated corpus mechanism on Boxall (zero dedicated Type B mechanisms pre-commit; the sole prior corpus mention is an incidental string in another journalist''s career notes: "associate editor Andy Boxall" in the Chokkattu Digital Trends notes field - not an item, not a mechanism). Sep-24-2026 adversarial Meta Ray-Ban Audio motive-attribution column vs Sep-10-2025 constructive Apple Watch SE 3 value column: same columnist, same publication, same opinion-column genre, inverted price registers. ASCII-only, no em dashes.'
+  mechanism_ids:
+  - 824
+  source_urls:
+  - https://www.androidpolice.com/meta-ray-ban-audio-smart-glasses-pr-stunt-to-dodge-camera-backlash/
+  - https://www.androidpolice.com/android-smartwatch-makers-should-be-ashamed-of-themselves/
+  competitor_coverage:
+    type_b_988_andy_boxall_androidpolice_meta_pr_stunt_vs_apple_watch_value_sep25:
+      iteration: 988
+      mechanism_id: 824
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: 2026-09-25 07:00 PDT
+      block_key: type_b_988_andy_boxall_androidpolice_meta_pr_stunt_vs_apple_watch_value_sep25
+      author: Kit (with Ray)
+      journalist: Andy Boxall
+      design: 'Type B journalist cross-entity tracking: Android Police wearables columnist Andy Boxall, same publication, same opinion-column genre, two post-launch-event value columns. NEW arms on both sides. Tests (a) whether the pricing/value register inverts by entity (Apple $250 praised as value, Meta $349 attacked as shocking), and (b) whether the motive-attribution register ("PR stunt," "cynical business-driven PR response") applied to Meta''s camera-free glasses has any analog in Boxall''s Apple wearables writing.'
+      new_meta_arm:
+        title: 'Meta''s new Ray-Ban smart glasses are just a PR stunt to dodge the camera backlash'
+        url: https://www.androidpolice.com/meta-ray-ban-audio-smart-glasses-pr-stunt-to-dodge-camera-backlash/
+        date: Sep 24 2026, 11:38 AM EDT
+        byline: 'Andy Boxall (author bio rendered on the piece header: "Andy is a seasoned technology journalist with more than 15 years experience in the mobile industry, writing for Digital Trends, Wired, and more"; full-text first-hand read this run)'
+        publication: Android Police
+        genre: launch-week opinion/analysis column
+        key_quotes:
+        - '"Meta''s new Ray-Ban smart glasses are just a PR stunt to dodge the camera backlash" (headline)'
+        - '"The thing is, the Ray-Ban Meta Audio aren''t made for us to buy. They''re for Meta management to point at and say, ''Here''s our business response to the growing privacy backlash against camera-equipped smart glasses.''"'
+        - '"Resurrecting this already played-out, and arguably failed, product line is a cynical, business-driven, PR response to a social issue with modern camera-equipped smart glasses"'
+        - '"The Ray-Ban Meta Audio start at $349, but you could pay more than $429 depending on your choice of frame, lens, and whether you want prescription lenses or not. This is shocking."'
+        - '"Smart glasses with audio as the main feature appear hopelessly outdated in 2026."'
+        - '"OK Meta, we''ve got it. You can''t be a pervert with these!"'
+        register_notes: 'Motive-attribution adversarial register: the product is not reviewed as a product - it is read as backlash-management theater ("PR stunt," "cynical, business-driven, PR response"). Price register weaponized against Meta ($349 "shocking" vs $99-$299 earbud anchors). Privacy-backlash vocabulary ("pervert," "perv glasses" discourse) directed AT the company; the camera-free design - the privacy-positive move - is treated as incriminating evidence of the backlash rather than a remedy.'
+        tone_score: -0.55
+        tone_basis: 'hand-assigned this run from full-text first-hand read, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text first-hand read via browser.open this run (documented deviation from the #503 excerpt-bounded convention)'
+      new_apple_arm:
+        title: 'I''m struggling to find an Android watch that competes with the Apple Watch SE 3'
+        url: https://www.androidpolice.com/android-smartwatch-makers-should-be-ashamed-of-themselves/
+        date: Sep 10 2025, 2:11 PM EDT
+        byline: 'Andy Boxall (same author bio rendered on the piece header; full-text first-hand read this run)'
+        publication: Android Police
+        genre: post-launch-event opinion/analysis column
+        key_quotes:
+        - '"Following the Apple launch event held on September 9, brands selling Android smartwatches should hang their heads in shame."'
+        - '"The newly updated Apple Watch SE 3 looks like the best value smartwatch of the year, and I''m struggling to find an Android equivalent that can truly compete."'
+        - '"Apple *could* have raised the price of the Watch SE 3, but it didn''t, and it''s yours for the same $250 entry price as the old SE 2."'
+        - '"the Apple Watch SE 3 looks like a genuinely good value"'
+        - '"This is where Apple has shown up the brands making Wear OS smartwatches"'
+        register_notes: 'Constructive value register toward Apple: $250 held price praised ("best value smartwatch of the year," "genuinely good value"); the harshness vocabulary ("hang their heads in shame") is directed at Android OEM competitors, not Apple. Zero motive-attribution register (no "PR stunt" reading of Apple''s entry-tier watch); zero privacy/sensor vocabulary on the wrist-worn always-on sensor device.'
+        tone_score: 0.35
+        tone_basis: 'hand-assigned this run from full-text first-hand read, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'full-text first-hand read via browser.open this run (documented deviation from the #503 excerpt-bounded convention)'
+      price_register_control:
+        control_basis: 'Both arms are post-event value columns anchored on price. Meta arm: $349 Ray-Ban Meta Audio attacked as "shocking" against $99-$299 earbud anchors. Apple arm: $250 Apple Watch SE 3 praised as "the best value smartwatch of the year" and "genuinely good value." Same columnist, same genre, same price-anchor structure - opposite verdicts by entity.'
+        contrast: 'The price register does not behave as an entity-neutral value rule: a $349 wearables price is "shocking" when it is Meta''s; a $250 watch is "the best value smartwatch of the year" when it is Apple''s. The comparison crosses categories (watch vs glasses), so the delta is a register observation, not a controlled price experiment.'
+      asymmetry_scorer_result:
+        method: MANUAL ILLUSTRATIVE
+        meta_arm_tone: -0.55
+        apple_arm_tone: 0.35
+        illustrative_delta_apple_minus_meta: 0.90
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        note: 'Arithmetic: apple-minus-meta = 0.35 - (-0.55) = 0.90, same journalist, same publication, same opinion-column genre. The asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only, directionally supported not proven. The salient finding is the price-register inversion (Meta $349 "shocking" vs Apple $250 "best value") plus the motive-attribution register unique to the Meta arm ("PR stunt," "cynical business-driven PR response"), not tone magnitude alone.'
+      finding: 'FIRST dedicated corpus mechanism on Andy Boxall (mechanism 824): same-journalist same-publication same-genre pair, one year apart. NEW Meta arm (Sep 24 2026): "Meta''s new Ray-Ban smart glasses are just a PR stunt to dodge the camera backlash" - motive-attribution adversarial register: the camera-free Ray-Ban Meta Audio is read as backlash-management theater ("aren''t made for us to buy," "cynical, business-driven, PR response to a social issue"), $349 attacked as "shocking," the product called "hopelessly outdated," the privacy-positive design move treated as incriminating evidence ("You can''t be a pervert with these!"). MANUAL ILLUSTRATIVE -0.55. NEW Apple arm (Sep 10 2025): "I''m struggling to find an Android watch that competes with the Apple Watch SE 3" - constructive value register: "best value smartwatch of the year," "genuinely good value," harshness directed at Android OEMs ("hang their heads in shame"), no motive-attribution register, no sensor-privacy vocabulary on an always-on wrist sensor device. MANUAL ILLUSTRATIVE +0.35. Illustrative delta (Apple minus Meta): 0.90, n=1 vs n=1, directional only. The salient asymmetry is register direction: price praise on Apple''s $250 vs price attack on Meta''s $349, plus a motive-attribution register ("PR stunt") applied to Meta''s privacy-positive hardware move with no analog in Boxall''s Apple wearables writing. connects_to: [821, 809, 818]. Correlation only, not causation. NOT artifact-grade.'
+      connects_to: [821, 809, 818]
+      confounders:
+      - 'STRONG: one-year temporal gap - Apple arm Sep 10 2025 vs Meta arm Sep 24 2026; Boxall''s register may have hardened with the 2026 camera-backlash news cycle (French criminal probe Sep 18 2026, tamper discourse), so the harshness delta may track the news environment rather than the entity'
+      - 'STRONG: category mismatch - wristwatch vs face-worn glasses; bystander-privacy salience legitimately differs, and the Meta arm''s privacy vocabulary is partly news-pegged rather than purely entity-driven'
+      - 'STRONG: the Meta arm''s adversarial target is the backlash-management narrative (a genuinely news-pegged claim in Connect week), so the register follows a real event arc, not necessarily an entity prior'
+      - 'MODERATE: degenerate contract - n=1 per arm; tones hand-assigned from full-text reads; directional only, no statistical significance by design'
+      - 'MODERATE: price-register comparison crosses categories (watch vs glasses); $250 and $349 sit in different wearables value baselines, so the inversion is a register observation, not a controlled price experiment'
+      - 'WEAK: Boxall''s house voice is curmudgeonly across entities - the Apple arm itself shames Android OEMs ("hang their heads in shame"), so column harshness may be house style rather than entity animus'
+      counter_evidence:
+      - 'Boxall directs his harshest vocabulary in the Apple arm at Android watchmakers, not Apple - equal-opportunity harshness is the column''s voice, which bounds the entity-animus reading'
+      - 'The $349-vs-$99 price comparison in the Meta arm is a legitimate value argument on its face (audio-only glasses vs earbuds), independent of entity'
+      - 'The Meta arm''s central claim (camera-free model as backlash response) is partially corroborated by Meta''s own Connect-week privacy promises (opt-outs, Private Processing relay, WIRED "Pinky Promises" piece) - the motive attribution has an evidence leg'
+      - 'The Apple SE 3 genuinely was the cheapest current smartwatch from a top-tier brand in Sep 2025, so the value praise tracks a real market fact'
+      - 'Boxall''s long Apple-watch praise lineage (Feb 2026 "the only one I don''t get tired of"; 2019 "the only smartwatch I''d recommend") shows consistency of taste, not a sudden softening'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 (new Meta arm) vs n=1 (new Apple arm). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative delta only (0.90); not evidence of bias or of financial influence; documents the analyst reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents one columnist''s price-register inversion and motive-attribution asymmetry across two wearables opinion columns one year apart. Register differences are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. The temporal gap and category mismatch are the dominant confounds. No causal claim. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 30
+      ledger_note: 'Ledger holds at 30 this run (no new member; THIRTIETH member-form in journalists.yaml remains the sole m978 block). Register documentation + price-register inversion, not a uniform-prediction test.'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type B register documentation; falsification ledger holds at 30.'
+      novelty: 'FIRST dedicated corpus mechanism on Andy Boxall (zero dedicated Type B mechanisms pre-commit; the sole prior corpus mention is an incidental string in another journalist''s career notes - "associate editor Andy Boxall" in the Chokkattu Digital Trends notes field - not an item, not a mechanism). Zero test_type_b_988 files on disk (glob); no "Type B #988" in git log (--grep); max numeric mechanism_id 823 in-tree pre-commit; zero numeric 824-form mechanism keys in profiles/ pre-commit; zero underscore-form 824 MECHANISM key strings repo-wide pre-commit (needles format-built per #715); zero dash-form 824 mechanism references pre-commit; block key `type_b_988_andy_boxall_androidpolice_meta_pr_stunt_vs_apple_watch_value_sep25` zero-hit repo-wide pre-commit; Apple-arm URL zero-hit repo-wide pre-commit (git grep -F); Meta-arm URL appears ONLY in the #976 Type E press-set (podcast-sentiment.md:15831 and test_type_e_976.py:312 as a crawl reference - not a Type B mechanism arm). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '4 browser.search query sets Sep 25 2026: (1) Meta Connect 2026 Ray-Ban Display smart glasses coverage journalist - SELECTED: surfaced Boxall''s Sep-24 Android Police piece via the androidpolice.com listing; (2) Joanna Stern WSJ Meta smart glasses review 2026 - REJECTED (Stern already holds corpus Type B coverage, Aug 7 career-migration mechanism); (3) Andy Boxall Android Police Apple Watch review September 2026 - SELECTED: surfaced the Sep-10-2025 Apple Watch SE 3 value column via the androidpolice.com listing; (4) Andy Boxall smart glasses Snapchat Apple coverage 2026 - rejected as a Snap-pair source (no Boxall Snap arm surfaced), but confirmed the corpus gap (zero dedicated Boxall mechanisms). Full-text first-hand reads of both arms via browser.open this run - a documented deviation from the #503 excerpt-bounded convention (this run''s developer context permits it). Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_988_andy_boxall_androidpolice_meta_pr_stunt_vs_apple_watch_value_sep25_7am.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
