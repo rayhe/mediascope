@@ -1,6 +1,6 @@
 ## #987 Type A: FT x OpenAI Sep-2026 cash-burn realism (-0.15, carried m754) vs FT x Meta Sep-2026 Muse-Charm momentum-change constructiveness (+0.20, NEW) - illustrative OpenAI-minus-Meta delta -0.35 INVERTS m718 matched-peg +0.55 gap; temporal BOUND on m718/m754, NOT falsification-family member, ledger holds at 30 - Type A THIRD leg of the 985-989 window D->E->A->B->C (Sep 25 2026, 06:00 PDT; log-hash followup updates this line (this commit))
 - Commit hashes: main commit 0dd16fa8613dc7b4b3cc0cc293e5c7eda4c01d80 (verified via git rev-parse); anchor followup d06df50041f932d21418e7b208b1ab1cc31b5f92 (ANCHORED_SHA patched per #565, anchor + rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status (this run, Sep 25 2026 ~06:30 PDT): PENDING - filled by the push-status finalizer per #716.
+- Push status (this run, Sep 25 2026 ~06:45 PDT): PUSHED per #716 - main 0dd16fa8 + anchor d06df500 + log-hash c6127a63 pushed to origin main in one fast-forward (9c8a40af..c6127a63); remote tip c6127a63d893319aa43de75656f11c9cdaf90fdb verified equal to local via git ls-remote. In-flight concurrency (#899 nytimes.yaml, #938 pixel-watch test, #900 untracked root-owned test) left untouched and unstaged throughout.
 
 2026-09-25 06:00 PDT, iteration_type "A", **THIRD leg of the 985-989 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
