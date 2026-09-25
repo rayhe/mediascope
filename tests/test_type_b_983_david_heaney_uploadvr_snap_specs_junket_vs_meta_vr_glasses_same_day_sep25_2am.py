@@ -51,7 +51,7 @@ Deselected pre-commit per the #565 convention: anchor 1 + rotation guard 4
 pre-commit per #719 (README/ARCH/log entry updated before the pre-commit
 test pass); the hash-placeholder iteration-log test fails pre-commit per
 the #721 convention and goes green in the log-hash followup.
-42 tests, 10 classes. ASCII only, no em dashes.
+42 tests, 10 classes (pre-commit pass: 36 green with anchor 1 + rotation 4 deselected per #565 and the hash-placeholder test failing per #721; the staged-set push-readiness test is a PRE-COMMIT gate - it asserts the index equals the exact five intended paths before the main commit and fails post-commit by design once followup commits consume the staging). ASCII only, no em dashes.
 """
 
 import re
