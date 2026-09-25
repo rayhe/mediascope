@@ -1,3 +1,47 @@
+## #986 Type E: podcast sentiment 120th verification - GF 501 confirmed again, THREE new directory-mirror keys, EHE 46-day hold, Attention Sphere 120th no-match, TWO new press keys, frontier HOLDS at Sep 24
+
+2026-09-25 05:00 PDT, iteration_type "E", **SECOND leg of the 985-989 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### The Guilty Feminist: 120th cycle
+- **EPISODE 501 CONFIRMED AGAIN THIS RUN.** listennotes.com main directory (crawled 18h, 761-episode listing) still lists at top: "The Guilty Feminist 501. Out North East" - Released 21 September. No episode 502 surfaced (four-day absence since Sep 21, consistent with weekly cadence, not a signal). Title/description carry zero Meta/wearables content (snippet-bounded); no tone score asserted.
+- Re-surfaced in-corpus: plinkhq GF directory page SURFACED AGAIN (crawled 2d, 501 at top, in-corpus family via #981); ms.podbean GF directory SURFACED AGAIN (crawled 4d, 501 at top, in-corpus via #981); za.radio.net GF directory variant (crawled 10d, 759-episode listing, top still 500, in-corpus family).
+- **THREE NEW-TO-CORPUS verbatim GF URL keys** (old-episode directory-mirror keys, zero pre-commit corpus hits via git grep -F, not new episodes or findings): ca.radio.net GF directory (crawled 1d, 761-episode listing, 501 at top) + two plinkhq episode-page variants (both crawled 13d).
+- ZERO Meta/wearables content in any GF episode across all 120 cycles (bounded search-result absence).
+
+### Everyone Hates Elon: 120th cycle
+- 46-day hold continues (Aug 10 Epstein spoof -> Sep 25; date(2026,9,25)-date(2026,8,10)=46 days; same-day as #981's 46-day hold).
+- 5 logged keys re-surfaced: techtimes amnesty-boxes (crawled 15h), linkedin privacy roundup (crawled 9d, in corpus via #976), lapost CNN relay (crawled 13h, in corpus via #981; Wetherspoons ban, fake amnesty bin sign Sep 10 2026, Meta anti-tamper shutter claims, Google Glass decade-ago callback), afrotech ethics/consent (crawled 1d), designtaxi 34124 Epstein-ad thread (crawled 13h).
+- **ZERO new-to-corpus EHE URL keys this run.** 2 own-repo GitHub URLs in the EHE result set (commit a288c86 page + podcast-sentiment.md blob; rejected as circular, not ingested).
+- Non-surfacing strands remain in corpus: ranzware, softonic, engadget, hyperallergic, petapixel, fstoppers, singulism, 33476, thebesttimes, cloudfront, latestly.
+- No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 120 cycles (bounded search-result absence).
+
+### Attention Sphere: 120th no-match
+- Quoted "Attention Sphere" search returned no matching podcast. 7 results all this repository's own GitHub URLs, rejected as circular: podcast-sentiment.md blob page SURFACED AGAIN (crawled 2d) + 6 own-repo commit URLs from the #596-era family (9590385/a288c86/a2b656f/2c4e21e/25c730e/3d16eac), each verified in the repo git log via git cat-file -t (circular as evidence).
+- Tracked Sources advanced 119->120. Task-spec name remains misidentified as a podcast; real-world identity stands per #591 (Kendall Schrohe).
+
+### Press surfaces
+- 7 results: 5 re-surfaces + **TWO NEW-TO-CORPUS URL keys** (both Connect-2026-week Audio coverage, zero pre-commit corpus hits): designtaxi topic/39120 (Last Updated 1 day ago, crawled 11h; camera absence "gives Meta an answer to one of the most persistent concerns surrounding smart eyewear"; flags mic/AI-privacy questions via Meta Private Processing; embeds Reuters video, TechCrunch Sep-23, BBC links) and captaincompliance Audio-privacy-debate piece (Last Updated 1 day ago, crawled 3h; camera omission is "an apparent attempt to preserve the convenience of wearable AI while addressing one of the biggest objections to putting computers on people's faces"; Reuters relay: audio recording has no obvious bystander signal unlike the capture LED).
+- Re-surfaces: ppc.land Hamburg GDPR finding (crawled 11h), startupfortune LED-tamper bricking (crawled 13h, via #881), usatoday camera-free launch (crawled 23h, via #956), analyticsinsight Audio detail (crawled 13h, via #961), gagadget (crawled 11h, via #981).
+- **Recency frontier HOLDS at Sep 24** (both new keys are Sep-24 or Sep-24-adjacent; no frontier advance; the #966 Sep 23 -> Sep 24 move stands).
+- Asymmetry note: Connect-week coverage frames the Audio as backlash-management while continuing product relay; no competitor camera-wearable coverage carries equivalent privacy-pressure framing. Meta-exclusive across all 120 cycles. Snippet-bounded, tone NOT_SCORED.
+
+### Research method
+- 4 browser.search query sets this run; 0 browser.open (excerpt-bounded per #503).
+- Pre-commit novelty greps: zero test_type_e_986 files on disk (glob); no Type E #986 in git log (--grep); max numeric mechanism_id **822** in-tree pre-commit (Type E adds none); zero 823 keys in all three mechanism forms (numeric, underscore, dash); 5 new verbatim URL keys verified zero-hit pre-commit via git grep -F; all other observed keys verified >=1 corpus hit; 9 GitHub URLs rejected as circular, not ingested.
+- 28 result rows / 19 non-circular distinct URL keys / FIVE new verbatim URL keys this run. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.
+
+### Standing rule (Aug 28 2026)
+tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run; Type E monitoring-only, no mechanisms; falsification ledger holds at 30; no_analysis_json_update true; NOT artifact-grade; verdict directionally_supported_not_proven. Correlation is not causation. ASCII-only, no em dashes.
+
+### Doc-sync
+50,721/1,310 -> 50,773/1,311; +52/+1 = the #986 file exactly (.venv python authoritative). 52 tests, 11 classes. Anchor + rotation guard per #565.
+
+### Concurrency
+#899 (nytimes.yaml hunk), #938 (nyt profile + pixel-watch test), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
+
+- Commit hashes: (registered in the log-hash followup per #721)
+- Push status: (finalized in the push-status finalizer per #716 pattern)
+
 ## #985 Type D: m820/m821/m822 qualitative-discipline verification + post-980-984 corpus integrity + #980 background-suite tombstone + fresh synthetic engine calibration
 
 2026-09-25 04:00 PDT, iteration_type "D", **FIRST leg of the 985-989 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
