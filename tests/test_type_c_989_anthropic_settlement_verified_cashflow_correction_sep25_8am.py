@@ -71,7 +71,7 @@ BLOCK_KEY = "type_c_989_anthropic_settlement_verified_cashflow_correction_sep25"
 # Tail-block convention: zero-indent standalone block at the end of the file
 EXPECTED_ITERATION = 989
 # Anchor placeholder: replaced by the real main-commit SHA in the #565 anchor followup
-ANCHORED_SHA = "23a818aa28a17b85023418fc1e52940ea8870c93"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "a9b9fae1fe00568822d15b3509b6439921ca4f77"  # patched green in the anchor followup per #565
 
 SOURCE_URLS = [
     "https://www.reuters.com/sustainability/boards-policy-regulation/us-judge-approves-15-billion-anthropic-copyright-settlement-with-authors-2025-09-25/?ref=spyglass.org",
