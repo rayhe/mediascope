@@ -62,7 +62,7 @@ BLOCK_KEY = "type_c_984_anthropic_settlement_distribution_sep25_hearing_450m_ins
 # Tail-block convention: zero-indent standalone block at the end of the file
 EXPECTED_ITERATION = 984
 # Anchor placeholder: replaced by the real main-commit SHA in the #565 anchor followup
-ANCHORED_SHA = "0000000000000000000000000000000000000000"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "23a818aa28a17b85023418fc1e52940ea8870c93"  # patched green in the anchor followup per #565
 
 SOURCE_URLS = [
     "https://news.bloomberglaw.com/ip-law/anthropic-ai-copyright-settlement-must-clear-logistical-hurdles",
