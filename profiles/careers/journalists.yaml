@@ -21886,12 +21886,13 @@ james_pero:
     (''Drastically Tone Down the Creep Factor'', ''unsavory stuff'', ''major liability'', bans in courts/restaurants/bars/public spaces, ''viscerally offends'', ''perception problem'')
     vs Sep-16 Snap Specs hands-on (''Dorky, Fun'', ''impressive'', ''honest-to-god mixed reality'', ''not quite the ear-crusher I thought''; zero privacy/surveillance/creep/ban vocabulary in the full
     80-line first-hand read, even though Specs ship cameras; complaints are FOV, $2,195 price, ''gut punch to your wallet''); Meta-minus-Snap illustrative delta -0.65; verdict
-    directionally_supported_not_proven; connects [211, 746, 734, 749, 269, 743]. ASCII-only, no em dashes. Type B #958 (Sep 24 2026, 00:00 PDT): mechanism 806 - TEMPORAL NATURAL EXPERIMENT on the privacy objection itself: Gizmodo Sep-23 ''Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'' (byline James Pero via the author-page and Latest listings, Sep 23) covers Meta''s FIRST camera-free glasses (Ray-Ban Audio, 43g, 12-hr battery, $349) - the camera at the center of Pero''s m791 Luna adversarial register (''creep factor'', ''unsavory stuff'', ''major liability'') is REMOVED, yet the privacy-accusation frame PERSISTS in the headline/dek (''Perv'' Problem'', ''glasshole''); the objection moves from hardware to brand. Body is product-forward first-person hands-on, so the adversarial load sits entirely in the frame. Editorial-not-company-driven: gearlive notes ''Meta didn''t say this pair exists because of privacy. Gizmodo''s headline said it for them.'' Comparator arms carried un-rescored per #807 (Snap do-or-die +0.35, m746; m791 pair delta -0.65). MANUAL ILLUSTRATIVE: Meta Audio arm -0.20 vs Snap do-or-die +0.35 = illustrative delta -0.55, same direction as m791. EXTENDS m791 temporally (Sep 16 -> Sep 23); register follows the brand, not the hardware. Verdict directionally_supported_not_proven; connects [211, 746, 791, 734, 749, 269, 743]; NOT a falsification-family member; ledger holds at 29; no analysis.json update. ASCII-only, no em dashes.'
+    directionally_supported_not_proven; connects [211, 746, 734, 749, 269, 743]. ASCII-only, no em dashes. Type B #958 (Sep 24 2026, 00:00 PDT): mechanism 806 - TEMPORAL NATURAL EXPERIMENT on the privacy objection itself: Gizmodo Sep-23 ''Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'' (byline James Pero via the author-page and Latest listings, Sep 23) covers Meta''s FIRST camera-free glasses (Ray-Ban Audio, 43g, 12-hr battery, $349) - the camera at the center of Pero''s m791 Luna adversarial register (''creep factor'', ''unsavory stuff'', ''major liability'') is REMOVED, yet the privacy-accusation frame PERSISTS in the headline/dek (''Perv'' Problem'', ''glasshole''); the objection moves from hardware to brand. Body is product-forward first-person hands-on, so the adversarial load sits entirely in the frame. Editorial-not-company-driven: gearlive notes ''Meta didn''t say this pair exists because of privacy. Gizmodo''s headline said it for them.'' Comparator arms carried un-rescored per #807 (Snap do-or-die +0.35, m746; m791 pair delta -0.65). MANUAL ILLUSTRATIVE: Meta Audio arm -0.20 vs Snap do-or-die +0.35 = illustrative delta -0.55, same direction as m791. EXTENDS m791 temporally (Sep 16 -> Sep 23); register follows the brand, not the hardware. Verdict directionally_supported_not_proven; connects [211, 746, 791, 734, 749, 269, 743]; NOT a falsification-family member; ledger holds at 29; no analysis.json update. ASCII-only, no em dashes. Type B #978 (Sep 24 2026, 21:00 PDT): mechanism 818 - within-journalist within-entity register split: Gizmodo Sep-23/24 Meta VR Glasses hands-on (enthusiastic gadget register, +0.40 illustrative, Apple Vision Pro as positive anchor) vs carried Sep-23 Ray-Ban Meta Audio stigma frame (m806, -0.20); illustrative delta +0.60. The m806 brand-directed refinement (privacy-accusation frame follows the Meta brand across hardware) FAILS on the VR arm - the register is category-bounded (social glasses vs VR face-computer), not brand-global. BOUNDS m791/m806 to the social-glasses lane. Falsification-family ledger 29->30 (THIRTIETH member, journalist-attribution class, precedent Olson TWENTY-FIRST). Verdict directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; no analysis.json update. ASCII-only, no em dashes.'
   mechanism_ids:
   - 211
   - 746
   - 791
   - 806
+  - 818
   source_urls:
   - https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
   - https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
@@ -21904,6 +21905,7 @@ james_pero:
   - https://gizmodo.com/meta-thinks-social-learning-can-fix-smart-glasses-privacy-problems-2000776162
   - https://gizmodo.com/snap-specs-hands-on-dorky-fun-and-potentially-too-ambitious-2000811952
   - https://gizmodo.com/meta-luna-smart-glasses-may-drastically-tone-down-the-creep-factor-2000812613
+  - https://gizmodo.com/metas-new-quest-is-actually-a-pair-of-vr-glasses-2000816098
   competitor_coverage:
     type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension:
       iteration: 858
@@ -22226,6 +22228,85 @@ james_pero:
         iteration: 958
         type: 'B'
         date: '2026-09-24 00:00 PDT'
+    type_b_978_james_pero_gizmodo_meta_vr_glasses_enthusiasm_vs_audio_stigma_frame_sep24:
+      iteration: 978
+      mechanism_id: 818
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: 2026-09-24 21:00 PDT
+      block_key: type_b_978_james_pero_gizmodo_meta_vr_glasses_enthusiasm_vs_audio_stigma_frame_sep24
+      author: Kit (with Ray)
+      journalist: James Pero
+      design: 'Type B journalist cross-entity tracking, within-journalist within-entity register split: Gizmodo senior reporter James Pero on Meta Connect 2026 hardware, Sep 23 vs Sep 23/24 2026. NEW arm: Meta VR Glasses hands-on (enthusiastic gadget register). CARRIED arm: Ray-Ban Meta Audio camera-free launch (stigma frame, mechanism 806, un-rescored per #807). Tests whether the m806 brand-directed refinement (Pero privacy-accusation frame follows the Meta brand across hardware) holds uniformly across Meta hardware categories.'
+      new_meta_arm:
+        title: "Meta's New Quest Is Actually a Pair of VR Glasses"
+        url: https://gizmodo.com/metas-new-quest-is-actually-a-pair-of-vr-glasses-2000816098
+        date: circa Sep 23-24 2026 (Connect week; bounded from search-index crawl stamps per iteration-492)
+        byline: 'James Pero (bounded attribution: "James Pero / Gizmodo" photo credit on the piece + first-person hands-on voice ("Having tried it myself") + deadstack cluster listing attributing the piece to James Pero; explicit rendered byline header not surfaced in search-index render, bounded per iteration-492)'
+        publication: Gizmodo (Keleops AG)
+        genre: launch-event hands-on first impressions
+        key_quotes:
+        - '"If you had a new Quest headset on your Meta Connect bingo card, I have bad news and good news. The bad news is there is no Quest, but the good news is VR is not forgotten; in fact, it was kind of the highlight of this year''s hardware releases."'
+        - '"Meta finally unveiled its $1,299 Meta VR Glasses, a long-rumored pair of XR glasses tethered to a compute puck."'
+        - '"This display inside Meta VR Glasses is premium-like, Vision Pro premium. Meta says the Meta VR Glasses have a micro OLED display with a 5K resolution and 37 pixels per degree. Having tried it myself, it looks very crisp."'
+        - '"To control the Meta VR Glasses, you don''t need additional hardware-you can use your fingers to pinch to select and control the cursor using just your eyes. Like in Apple''s visionOS, you just look and pinch, and boom, you''re navigating a UI."'
+        - '"There''s gaming, of course; Meta says there will be 75 games at launch that you can play with just hand gestures... I tried that experience out by playing Forza for a bit, and it was pretty crisp."'
+        register_notes: 'Enthusiastic hands-on gadget register: launch-event delight ("highlight of this year''s hardware releases"), first-person crispness verdicts, Apple Vision Pro as the POSITIVE comparison anchor. Zero privacy/surveillance vocabulary in the excerpted text (bounded-listing absence per the iteration-492 rule, not a proven zero).'
+        tone_score: 0.40
+        tone_basis: 'hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'search-excerpt-bounded per #503 (4 browser.search query sets this run; 1 browser.open attempt terminally failed this turn, not retried; 0 successful opens)'
+      carried_meta_arm:
+        mechanism: 806
+        carried_per: '#807 (un-rescored)'
+        title: "Meta Introduces Audio-Only Smart Glasses to Avoid the 'Perv' Problem"
+        url: https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
+        date: Sep 23 2026
+        register: 'stigma frame persists after the camera is removed: "Perv'' Problem" headline, "glasshole"; the objection moves from hardware to brand; body product-forward first-person hands-on (adversarial load in the frame)'
+        tone_score: -0.20
+      asymmetry_scorer_result:
+        method: MANUAL ILLUSTRATIVE
+        vr_glasses_arm_tone: 0.40
+        audio_arm_tone: -0.20
+        illustrative_delta_vr_minus_audio: 0.60
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        note: 'Arithmetic: vr-minus-audio = 0.40 - (-0.20) = 0.60, same journalist, same outlet, same Connect week, Meta hardware on both arms. The asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only, directionally supported not proven.'
+      finding: 'NEW Meta VR-glasses arm (n=1, MANUAL ILLUSTRATIVE): Gizmodo Sep 23/24 2026 "Meta''s New Quest Is Actually a Pair of VR Glasses" (James Pero, bounded attribution) - enthusiastic hands-on gadget register on Meta hardware: "highlight of this year''s hardware releases", "Vision Pro premium" display verdict, "Having tried it myself, it looks very crisp", Apple visionOS as the positive interaction anchor. MANUAL ILLUSTRATIVE +0.40. Zero privacy/surveillance vocabulary in excerpts (bounded-listing absence per iteration-492). CARRIED Meta Audio arm (m806, Type B #958, un-rescored per #807): Sep 23 2026 "Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem" - stigma frame on Meta FIRST camera-free glasses, -0.20. Illustrative within-journalist within-entity delta (VR minus Audio): +0.60. The m806 brand-directed refinement FAILS on the VR arm: the privacy-accusation frame does NOT follow the Meta brand across hardware categories. The register is CATEGORY-bounded: social glasses (bystander-recording salient) get the stigma register; VR face-computers (no bystander-recording objection) get gadget enthusiasm. BOUNDS m791 (entity-directed delta -0.65) and m806 (brand-directed) to the social-glasses lane. REPLICATES the journalist-attribution scope-bound pattern of the Olson TWENTY-FIRST falsification-family member: the "Pero adversarial on Meta" attribution is register-bounded, not journalist-global. Apple-anchor constancy: Vision Pro as the positive comparison anchor inside the Meta VR piece replicates m211 Apple reputational-credit register (cross-entity constancy). Connects [211, 746, 791, 806, 743, 269, 734, 749]. Correlation is not causation. NOT artifact-grade.'
+      connects_to: [211, 746, 791, 806, 743, 269, 734, 749]
+      confounders:
+      - 'STRONG: product-category difference - VR glasses carry no bystander-recording privacy objection, so the stigma register absence is arguably proportionate journalism, not entity-driven; this is the dominant alternative explanation and the reason the finding is framed as a scope bound, not a bias proof'
+      - 'STRONG: excerpt-bounded per #503 (browser.open terminally failed this turn; 0 successful opens); full-text register could differ; zero-privacy-vocabulary is bounded-listing absence per the iteration-492 rule, not a proven zero'
+      - 'MODERATE: the Audio arm adversarial load sits in the headline/dek frame while its body is product-forward hands-on - the +0.60 illustrative delta overstates the body-register gap; headline-vs-headline ("Perv'' Problem" vs "highlight of this year''s hardware releases") is the cleaner comparison'
+      - 'MODERATE: degenerate contract - n=1 new arm; tones hand-assigned; directional only, no statistical significance by design'
+      - 'WEAK: byline attribution bounded (photo credit + first-person voice + listing attribution; no rendered byline header surfaced in search-index render)'
+      - 'WEAK: 24-hour temporal gap - Connect news-cycle dynamics could shift registers independent of category'
+      counter_evidence:
+      - 'Pero social-glasses register is stable across two Connect-week pieces (m791 Luna Sep 16, m806 Audio Sep 23) - the VR arm is the category outlier, supporting the category-bound reading over random noise'
+      - 'The VR piece centers Meta as the story subject (not a foil) - no suppression of Meta news; Pero covers Meta hardware enthusiastically when the category fits'
+      - 'Apple-as-positive-anchor inside the VR piece is cross-entity constancy with m211 Apple reputational-credit register, not a Meta-specific anomaly'
+      - 'The m211 financial-incentive leg (Apple affiliate revenue > Google ad partner > Meta zero relationship) does not predict within-Meta register splits - the split is orthogonal to the payer gradient'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 (new VR arm) vs n=1 (carried Audio arm, m806 un-rescored per #807). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative delta only (+0.60); not evidence of bias or of financial influence; documents the analyst reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents one journalist register split across two Meta hardware categories in the same Connect week. Register differences are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. No causal claim. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      falsification_family: 'THIRTIETH falsification-family member (ledger 29->30): the uniform brand-directed prediction from m806 (Pero privacy-accusation frame follows the Meta brand across hardware) FAILS on the VR-glasses arm - same journalist, same outlet, same Connect week, Meta hardware, enthusiastic register, zero privacy vocabulary. Journalist-attribution class (precedent: Olson TWENTY-FIRST member): the "Pero adversarial on Meta" attribution is category-bounded to the social-glasses lane, not journalist-global. The m806 refinement is bounded, not broken at its home lane: the Audio-arm brand-directed reading stands on its own arm.'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type B uniform-prediction test; falsification ledger 29->30.'
+      novelty: 'FIRST dedicated corpus mechanism on Pero Sep-23/24 Meta VR Glasses piece and on any journalist within-entity cross-category register split. Zero test_type_b_978 files on disk (glob); no "Type B #978" in git log (--grep); max numeric mechanism_id 817 in-tree pre-commit; zero numeric 818-form mechanism keys in profiles/ pre-commit; zero underscore-form 818 MECHANISM key strings repo-wide pre-commit (needles format-built per #715; the type_b_818_karissa_bell ITERATION-form block key and test file from the Sep-17 iteration cycle are iteration-form, not mechanism-form, verified non-colliding); zero dash-form 818 mechanism references pre-commit; block key `type_b_978_james_pero_gizmodo_meta_vr_glasses_enthusiasm_vs_audio_stigma_frame_sep24` zero-hit repo-wide pre-commit; the VR-glasses URL zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '4 browser.search query sets Sep 24 2026: (1) quoted "Meta Pinky Promises Its Smart Glasses Will Be Private Soon" WIRED author - surfaced mirrors, byline unattested, REJECTED as a Type B target; (2) WIRED Meta Connect 2026 Ray-Ban smart glasses September 2026 - surfaced Connect-week press (dig.watch Luna relay, HiConsumption Ryan Calder Audio piece, mobilesyrup, usatoday, analyticsinsight); (3) Ryan Calder HiConsumption Snap Spectacles OR Apple Vision Pro - no Calder competitor arm surfaced, REJECTED; (4) WIRED Boone Ashworth "Meta''s New Quest Is Actually a Pair of VR Glasses" September 2026 - SELECTED: surfaced the Gizmodo piece with "James Pero / Gizmodo" photo credit (correcting the deadstack listing misattribution) plus the coschedule excerpt mirrors. Victoria Song queries REJECTED (already extensively tracked: m75, m605). 1 browser.open attempt terminally failed this turn (realhacker.news), not retried; 0 browser.open successes (excerpt-bounded per #503). Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_978_james_pero_gizmodo_meta_vr_glasses_enthusiasm_vs_audio_stigma_frame_sep24_9pm.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 978
+        type: 'B'
+        date: '2026-09-24 21:00 PDT'
 daniel_cooper:
   name: Daniel Cooper
   current_role: Senior Editor
