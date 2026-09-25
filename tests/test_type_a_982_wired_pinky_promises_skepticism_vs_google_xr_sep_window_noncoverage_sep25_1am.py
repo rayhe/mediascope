@@ -52,7 +52,7 @@ ARCH = REPO / "docs" / "ARCHITECTURE.md"
 LOG = REPO / "iteration-log.md"
 THIS_FILE = Path(__file__).name
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "123b54a88a90b924157e203c9d0fb768dedeecaa"
 
 ITERATION = 982
 MECHANISM = 820
@@ -142,7 +142,7 @@ class TestRotationCycleGuard982:
 
     @pytest.mark.rotation
     def test_no_successor_983_type_b_commit_yet(self):
-        r = run_git("log", "--oneline", "--grep=#983")
+        r = run_git("log", "--oneline", "--grep", "Type B #983")
         assert r.stdout.strip() == ""
         assert "## #983" not in LOG.read_text()
 
