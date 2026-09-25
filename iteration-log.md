@@ -24,7 +24,7 @@ MANUAL MONITORING ONLY per the Aug 28 2026 standing rule. Tone NOT_SCORED; p_val
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit adf61e3c (verified via git rev-parse); anchor followup 1ad8eacc (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 51/51 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PENDING per #716 - to be filled by the push-status finalizer after the push; remote tip to be verified via git ls-remote Sep 25 2026 15:xx PDT.
+- Push status: PUSHED per #716 - main adf61e3c + anchor 1ad8eacc + log-hash 8828a3fc3e964d84302814b2f545b90fc7667ef0 pushed to origin main in one fast-forward (3e059e15..8828a3fc3e964d84302814b2f545b90fc7667ef0); remote tip 8828a3fc3e964d84302814b2f545b90fc7667ef0 verified equal to local via git ls-remote Sep 25 2026 15:2x PDT.
 
 ## #995 Type D: m826/m827/m828 qualitative-discipline verification + post-990-994 corpus integrity (max numeric mechanism_id 828; zero 829 keys numeric/underscore/dash; ledger holds at 30; THIRTIETH member-form present exactly once (m818, journalists.yaml); THIRTY-FIRST absent) + #990 background-suite tombstone (FORTIETH consecutive death; lineage FIFTY-EIGHTH -> FIFTY-NINTH) + fresh synthetic engine calibration (strong n=7 p=4.48e-10 engine-significant; near-null p=0.533 silent; degenerate n=1-on-m826-pair guard fires) + full suite re-launched - Type D FIRST leg of the 995-999 window D->E->A->B->C OPENING it (Sep 25 2026, 14:00 PDT; main c30e75ba / anchor a546c553; log-hash followup registers both hashes here per #721 (this commit))
 
