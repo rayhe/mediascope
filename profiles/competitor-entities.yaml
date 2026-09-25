@@ -25364,3 +25364,116 @@ vox_media_triple_ai_payer_openai_renewal_window_621:
       ascii_only: true
     tone_scores: 'NOT_SCORED'
     statistical_discipline: 'Qualitative Type C mapping - scorer consistency does not apply (per #540/#544 boundary). p_value, cohens_d, ci_95 NOT_CALCULATED. Bounded absences per iteration-492 rule; no zero-coverage claims beyond the searches actually run. MANUAL ILLUSTRATIVE context only; no new tone arrays scored this run (standing rule Aug 28 2026). Correlational language only; no causal claim; no coverage-tone claim.'
+newsguard_ai_europe_50_50_cited_publisher_revenue_share_816:
+    mechanism_id: 816
+    iteration: 974
+    rotation: 'Type C'
+    date_analyzed: '2026-09-24'
+    time_pdt: '17:00'
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'NewsGuard AI European expansion (Sep 21 2026): the 50/50 cited-publisher revenue-share model announced at the June US launch is extended to France, Italy, Germany, Austria, and the UK with local-language versions and a European publisher coalition - FIRST dedicated corpus mechanism on NewsGuard AI publisher economics'
+    type: financial_incentive_mapping
+    block_key: newsguard_ai_europe_50_50_cited_publisher_revenue_share_sep24_5pm
+    type_c_focus: 'The Sep 21 2026 NewsGuard press release (Paris/Rome/Berlin dateline) announces NewsGuard AI in France, Italy, Germany, Austria, and the UK, in French, German, and Italian in addition to English. Responses are drawn exclusively from 12,000 publishers vetted for reliability by NewsGuard journalists, and NewsGuard ''will share revenues 50-50 with all news publishers whose journalism is cited'' - extending the citation revenue-share model announced at the June 23 2026 US launch to the European market. A coalition of reliable European news publishers (Ouest-France, 5min.at, Linkiesta named, more to come per NewsGuard) is forming to introduce NewsGuard AI to readers, and co-marketing partners can earn subscription revenue on top of citation revenue. The release frames the product as ''an alternative to big tech''s toxic business model'' - i.e., against AI systems ''trained on publisher content without attribution or compensation.'' This is the FIRST corpus mechanism to map NewsGuard AI''s publisher-revenue geometry as a distinct economics leg: a transparent, citation-linked 50/50 split, in contrast to the opaque fixed-fee/attribution licensing deals the corpus documents for OpenAI, Meta, Microsoft, and Google. It EXTENDS the corpus''s June 2026 NewsGuard record (the Atlantic co-marketing partnership, atlantic.yaml: co-marketing_partnership, cut of subscriptions sold through Atlantic) from a single-publisher co-marketing note to a platform-level revenue model with a named European publisher coalition.'
+    launch_facts:
+    - 'NewsGuard press release, Sep 21 2026 (Paris, Rome, Berlin dateline): NewsGuard AI launches in France, Italy, Germany, Austria, and the UK; local-language versions in French, German, and Italian in addition to English. Responses drawn ''exclusively from 12,000 news and information sources rigorously vetted by NewsGuard''s journalists for reliability.'' (search excerpt of the official release, excerpt-bounded per #503, 0 browser.open)'
+    - 'Compensation model (official release): ''unlike other AI systems trained on publisher content without attribution or compensation, NewsGuard AI prominently cites publishers in its responses and will share revenues 50-50 with all news publishers whose journalism is cited.'' Release dek: ''NewsGuard AI draws responses exclusively from 12,000 publishers vetted for reliability by NewsGuard journalists - and compensates all publishers for their cited work.'''
+    - 'The 50/50 citation-share is NOT new to September: the same 50-50 language appears in the June 23 2026 US-launch materials (Editor and Publisher relay of the NewsGuard release; Mediagazer/CNN: $6/month chatbot promising publishers a 50-50 revenue share). The September datum is the GEOGRAPHIC and COALITION extension - the model now ships in five European markets with a named European publisher coalition, not a new compensation formula.'
+    - 'European publisher coalition: ''A coalition of reliable news publishers is forming across Europe to help introduce NewsGuard AI to their readers'' - named members Ouest-France, 5min.at, Linkiesta, ''with more to come'' (NewsGuard LinkedIn company post, Sep 2026). Co-marketing partners can additionally ''generate new subscription revenue'' by introducing NewsGuard AI to readers (June release, carried forward) - a SECOND revenue channel on top of citation revenue.'
+    - 'Reuters Institute (LinkedIn, Sep 24 2026) relay: rollout across Europe; ''prominently links to the sources whose content it uses and shares revenues with cited publishers equally''; 41 editorial safeguards; the 12,000 sources include ''traditional news publishers, single-author news outlets including Substacks, government websites, think tanks and research universities.'' Chine Labbe (NewsGuard SVP Partnerships, Managing Editor Europe): ''Think of how the existing AI chatbots operate, and in every respect, NewsGuard AI does the opposite. We only access reliable sources. We cite them prominently and link to them. We compensate them.'''
+    - 'Framing: the release positions NewsGuard AI as ''an alternative to big tech''s toxic business model'' - the corpus''s first publisher-side product to name the uncompensated-training grievance as its market positioning.'
+    quotes:
+      toxic_model: 'dek: ''present an alternative to big tech''s toxic business model'''
+      opposite: 'Chine Labbe: ''Think of how the existing AI chatbots operate, and in every respect, NewsGuard AI does the opposite. We only access reliable sources. We cite them prominently and link to them. We compensate them.'''
+      fifty_fifty: '''will share revenues 50-50 with all news publishers whose journalism is cited'''
+      shoplifting: 'carried June context - NewsGuard describes LLMs as ''shoplifting journalism'' (atlantic.yaml, June 2026); the same grievance is now productized as the European launch positioning'
+    incentive_geometry:
+      transparent_split_vs_opaque_fixed_fee: 'The corpus documents publisher AI revenue as predominantly opaque fixed-fee deals: OpenAI''s nine-figure multi-year licenses, Meta''s up-to-$50M/yr News Corp deal (m549), Microsoft''s HarperCollins book leg ($5K/title, m524). Terms, attribution formulas, and per-publisher allocation are undisclosed in every case. NewsGuard''s model is the structural inverse on transparency: a PUBLIC 50/50 citation-linked split. The transparency is the datum, not a virtue claim - a public formula can still be ungenerous in absolute dollars, and gross-vs-net is unspecified.'
+      citation_linked_not_flat: 'Payment is citation-contingent: only publishers whose journalism is cited share revenue. This creates a per-response tournament among the 12,000 vetted sources - being IN the pool pays nothing; being CITED pays. Contrast the flat-fee licenses (OpenAI, Meta) where payment is deal-contingent, not usage-contingent. The incentive geometry rewards citability (newsworthiness, answerability) rather than catalog size.'
+      co_marketing_second_channel: 'Co-marketing partners earn subscription revenue for introducing NewsGuard AI to readers (the Atlantic June 2026 model: cut of subscriptions sold through the publisher). The European coalition (Ouest-France, 5min.at, Linkiesta) extends this channel to Europe. Two-channel publisher economics: citation revenue (usage-linked) + subscription referral revenue (distribution-linked).'
+      coalition_as_distribution: 'The publisher coalition is distribution, not just endorsement: publishers introduce the product to their readers, solving the cold-start problem that sank prior ethical-AI consumer plays. The coalition members are also the compensated cited pool - the same publishers are suppliers, distributors, and beneficiaries.'
+      priced_market_signal: 'Mechanism 789''s Buttle datum says the licensing market is priced and operating. NewsGuard''s public 50/50 sets a visible price anchor in that market: any publisher negotiating a bilateral AI deal can point to a published 50% citation-share benchmark. Whether the anchor is high or low in absolute dollars is unknowable without the gross-vs-net basis - the anchor''s existence, not its level, is the structural datum.'
+    connects_to: [621, 789, 810, 786, 549]
+    ranked_confounders:
+    - rank: 1
+      strength: 'STRONG'
+      text: 'Official press-release source only for the European launch facts - NewsGuard is the sole origin; the LinkedIn company post and Reuters Institute relay corroborate but do not independently verify; no independent reporting on launch uptake, subscriber counts, or publisher receipts as of this run'
+    - rank: 2
+      strength: 'STRONG'
+      text: 'Gross-vs-net revenue basis unspecified - ''share revenues 50-50'' does not state whether the split is on gross subscription revenue, net of payment processing, or net of NewsGuard''s operating costs; the absolute dollar value to publishers is unknowable from the release'
+    - rank: 3
+      strength: 'STRONG'
+      text: 'Attribution/allocation formula unspecified - how ''cited'' is measured (per-citation, weighted by prominence, capped per publisher) is undisclosed; the tournament mechanics among the 12,000 sources cannot be evaluated'
+    - rank: 4
+      strength: 'MODERATE'
+      text: '12,000 vetted sources does not equal 12,000 revenue-sharing partners - the pool is the vetted corpus; only cited publishers are paid; the release does not state how many publishers have signed citation-revenue terms vs being merely eligible'
+    - rank: 5
+      strength: 'MODERATE'
+      text: 'No publisher receipts disclosed - the US product launched June 23 2026 and no publisher has publicly reported receiving citation revenue; the model is announced, not yet demonstrated to pay'
+    - rank: 6
+      strength: 'WEAK'
+      text: 'NewsGuard is itself a commercial ratings vendor with its own incentive geometry (selling reliability scores to platforms and brands) - the ''toxic business model'' framing is competitor positioning by a vendor that monetizes the trust layer; documented, not adjudicated'
+    bounded_absences:
+    - 'No independent verification of the Sep 21 launch facts beyond NewsGuard-originated materials (0 browser.open; excerpt-bounded per #503) - uptake, subscriber counts, and the coalition''s signed membership are company-claimed'
+    - 'No revenue-basis disclosure: gross vs net, cost deductions, and the citation-allocation formula are all unspecified in the release'
+    - 'No publisher-side confirmation: no cited publisher has publicly confirmed signing citation-revenue terms or receiving payment under the US or European launch'
+    - 'No coverage-tone evidence: this mechanism makes no claim about any tracked publication''s coverage of NewsGuard or of AI labs; it maps the revenue model only'
+    statistical_discipline:
+      scope: qualitative financial-incentive documentation only
+      correlation_not_causation: true
+      scorer: none
+      tone_scores: NOT_SCORED
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      engine_run: false
+      artifact_grade: false
+      qualitative_only: true
+      verdict: directionally_supported_not_proven
+    cautious_language_required: true
+    correlational_note: 'This mapping documents NewsGuard AI''s September 21 2026 European expansion and its 50/50 cited-publisher revenue-share model as a financial-incentive datum: a transparent, citation-linked publisher compensation geometry extended to five European markets with a named publisher coalition. It does not claim the model pays publishers meaningful sums, does not claim any coverage-tone effect at any tracked publication, and does not adjudicate whether the 50/50 split is generous - the gross-vs-net basis is undisclosed. Correlation is not causation. No causal claim. No coverage-tone claim.'
+    no_coverage_tone_claim: true
+    no_analysis_json_update: true
+    falsification_family: 'NOT a member - publisher-revenue-model documentation leg with no coverage-tone pair; ledger holds at 29 (per #609/#614 qualitative boundary: financial-incentive legs map money flows; tone claims require paired Type A/B evidence).'
+    artifact_readiness: 'No analysis.json update warranted. Qualitative Type C documentation leg; no new tracked-publication finding.'
+    cross_references:
+    - 'mechanism 621 (Vox triple-payer, #644 - the ProRata leg: ProRata pays publishers 50% of AI-licensing revenue, Digiday; the direct structural sibling - an intermediary with a public 50% publisher payout; NewsGuard''s 50/50 citation share is the second public-split intermediary in the corpus)'
+    - 'mechanism 789 (publisher P and L under AI, #929 - the Buttle priced-market datum and TVN three-buyer-model taxonomy; the market the 50/50 model sets a public price anchor in)'
+    - 'mechanism 810 (Platkin 550-publication collective, #964 - the collective-bargaining alternative: publishers pooling litigation/licensing leverage vs NewsGuard''s per-citation individual-compensation model)'
+    - 'mechanism 786 (Cloudflare activation-verification tollbooth - the infrastructure side of publisher AI monetization; NewsGuard is the product/revenue-share side)'
+    - 'mechanism 549 (Meta-News Corp AI content-licensing deal, up to $50M/yr - the opaque fixed-fee deal architecture the transparent 50/50 split contrasts with)'
+    - 'atlantic.yaml NewsGuard co-marketing partnership (June 2026 - cut of subscriptions sold through Atlantic; the June record this mechanism extends to platform-level European economics)'
+    - '#503 second-hand evidence-grade precedent (excerpt-bounded launch facts; 0 browser.open this run)'
+    - 'iteration-492 rule (bounded absence: unconfirmed uptake, unspecified revenue basis, no publisher receipts - none claimed as verified)'
+    - '#565 followup/anchor convention'
+    - 'Aug 28 2026 standing rule (finding-layer is_significant False; Type C qualitative)'
+    counterevidence:
+    - 'Felix Simon (Reuters Institute post-doctoral research fellow in AI) ''shared reservations around NewsGuard AI''s value proposition for both news audiences and publishers following the US launch'' (Reuters Institute, Sep 24 2026) - third-party expert skepticism documented, not dismissed'
+    - 'No publisher has publicly reported receiving citation revenue since the June US launch - three months post-launch, the compensation leg is still announcement-grade'
+    - 'The Guardian''s ProRata 50/50 revenue share (guardian.yaml) shows the public-split intermediary model predates NewsGuard AI - the 50/50 structure is not a NewsGuard invention'
+    - 'NewsGuard''s ''toxic business model'' framing is self-interested positioning: NewsGuard sells reliability ratings to the same big-tech platforms it criticizes - the moral framing coexists with a vendor relationship'
+    strongest_counterargument: 'The 50/50 split is a press-release formula, not a demonstrated payment: gross-vs-net is unspecified, the citation-allocation formula is undisclosed, and no publisher has reported receiving money three months after the US launch. The mechanism''s value is structural, not monetary - it documents the FIRST public, citation-linked publisher compensation formula extended across a five-country European launch with a named publisher coalition, setting a visible price anchor in the AI-licensing market (cf. m789) and a transparent counterpoint to opaque fixed-fee deals (m549). It must not be read as evidence that publishers are being paid, paid fairly, or paid at all. No coverage-tone claim is made.'
+    novelty: 'First corpus mechanism on NewsGuard AI publisher economics: zero ''NewsGuard'' hits in profiles/competitor-entities.yaml pre-commit (the June Atlantic partnership lives in atlantic.yaml only); zero ''50-50 with all news publishers whose journalism is cited'' hits repo-wide pre-commit; zero ''Ouest-France'' / ''5min.at'' / ''Linkiesta'' hits repo-wide pre-commit; max numeric mechanism_id 815 pre-commit; the Sep 21 2026 official Europe press-release URL zero-hit repo-wide pre-commit (git grep -F); zero underscore-form 816 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric 816-form mechanism keys repo-wide pre-commit. Extends the June 2026 Atlantic co-marketing record to platform-level European revenue geometry. ASCII-only, no em dashes.'
+    sources:
+    - 'NewsGuard press release, Sep 21 2026 (official): ''NewsGuard AI draws responses exclusively from 12,000 publishers vetted for reliability by NewsGuard journalists - and compensates all publishers for their cited work.'' ''Paris, Rome, Berlin - September 21, 2026 - NewsGuard ... today announced the launch of NewsGuard AI in France, Italy, Germany, Austria and the U.K.'' ''unlike other AI systems trained on publisher content without attribution or compensation, NewsGuard AI prominently cites publishers in its responses and will share revenues 50-50 with all news publishers whose journalism is cited.'' Dek: ''A coalition of reliable news publishers is forming across Europe to help introduce NewsGuard AI to their readers and present an alternative to big tech''s toxic business model.'' (search excerpt, per #503, 0 browser.open)'
+    - 'NewsGuard LinkedIn company post (Sep 2026): ''Today, we''re bringing NewsGuard AI to France, Italy, Germany, Austria, and the U.K. - bringing reliable AI-powered news to European readers in French, German, and Italian, in addition to English.'' Coalition members named: ''Ouest-France, 5min.at, and Linkiesta - with more to come.'' (search excerpt, per #503)'
+    - 'Reuters Institute LinkedIn (Sep 24 2026): ''An AI-powered subscription news service ... has been rolled out across Europe this week. NewsGuard AI is available in the UK, Italy, Germany, France and Austria.'' ''It prominently links to the sources whose content it uses and shares revenues with cited publishers equally.'' 41 editorial safeguards; 12,000 sources include ''traditional news publishers, single-author news outlets including Substacks, government websites, think tanks and research universities.'' Chine Labbe quote verbatim. Felix Simon reservations noted. (search excerpt, per #503)'
+    - 'Editor and Publisher (June 23 2026 relay of NewsGuard US-launch release): ''will share revenues 50-50 with all news publishers whose journalism is cited'' - establishes the 50/50 formula dates to the June US launch, not September. ''In addition to publishers earning revenue from citations, they have the opportunity to generate new subscription revenue as Co-Marketing Partners by introducing NewsGuard AI to their readers.'' (search excerpt, per #503)'
+    - 'Mediagazer (June 2026, Brian Stelter/CNN): ''NewsGuard launches NewsGuard AI, a $6/month chatbot that accesses information from news sources it rates as reliable, promising publishers a 50-50 revenue share'' - second June attestation of the 50/50 formula. (search excerpt, per #503)'
+    research_method: '2 browser.search query sets this run: (1) NewsGuard launches NewsGuard AI in Europe September 2026 revenue share publishers 50/50 - surfaced the official Sep 21 2026 press release (SELECTED as lead; all launch facts verbatim from its search-result excerpt), the Reuters Institute Sep 24 2026 relay (SELECTED as third-party corroboration), the E&P June relay, the June NewsGuard release, the NewsGuard LinkedIn company post, and the Mediagazer/CNN June item; (2) NewsGuard AI Europe launch France Italy Germany Austria French German Italian 12,000 vetted publishers - corroborated the five-country list, the three languages, and the 12,000 figure, and surfaced the coalition member names via the LinkedIn post. 0 browser.open this run (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_c_974 files on disk (glob); no Type C #974 in git log (--grep); max numeric mechanism_id 815 pre-commit; zero underscore-form 816 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric 816-form mechanism keys repo-wide pre-commit; zero ''NewsGuard'' hits in profiles/competitor-entities.yaml pre-commit; zero ''Ouest-France'' / ''5min.at'' / ''Linkiesta'' hits repo-wide pre-commit; the Sep 21 official URL zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Bounded absences per iteration-492 rule.'
+    source_urls:
+    - https://www.newsguardtech.com/press/newsguard-launches-newsguard-ai-in-europe-bringing-reliable-ai-powered-news-to-european-readers-in-french-german-and-italian-in-addition-to-english/
+    - https://www.linkedin.com/pulse/european-news-bot-using-only-reliable-sources-reutersinstitute-y4t9e
+    - https://www.editorandpublisher.com/stories/newsguard-launches-first-ai-chatbot-built-to-deliver-trusted-journalism-only-from-reliable-news,262252
+    - https://mediagazer.com/260622/p19
+    test_file: 'tests/test_type_c_974_newsguard_ai_europe_50_50_cited_publisher_revenue_share_sep24_5pm.py'
+    verification:
+      iteration: 974
+      type: 'C'
+      date: '2026-09-24 17:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
