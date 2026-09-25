@@ -1,3 +1,30 @@
+## #985 Type D: m820/m821/m822 qualitative-discipline verification + post-980-984 corpus integrity + #980 background-suite tombstone + fresh synthetic engine calibration
+
+2026-09-25 04:00 PDT, iteration_type "D", **FIRST leg of the 985-989 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Verification targets
+- **m820** (Type A #982): WIRED Sep-23 Pinky-Promises privacy-skepticism versus Google XR September-window non-coverage. Manual-illustrative target tones [-0.45] vs reference [+0.15], delta_meta_minus_google -0.60; p/d/CI NOT_CALCULATED; is_significant false; verdict directionally_supported_not_proven; no_analysis_json_update true; artifact_grade false (statistical-discipline field); falsification_family_member false; ledger holds at 30; connects_to [547, 640, 431, 814, 452, 612].
+- **m821** (Type B #983): David Heaney / UploadVR Snap Specs junket-disclosed hands-on versus same-day Meta VR Glasses announcement. Snap -0.10, Meta 0.00, delta -0.10; MANUAL ILLUSTRATIVE ONLY; is_significant false; verdict directional only; no analysis.json update; falsification_family_member false; ledger holds at 30; connects [629, 743, 746, 269, 734, 791].
+- **m822** (Type C #984): Anthropic $1.5B settlement distribution-phase status: Sep 25 2026 hearing / $450M installment. Tone NOT_SCORED; p/d/CI NOT_CALCULATED; is_significant false; verdict directionally_supported_not_proven; analysis_json_updated false; artifact_grade false; falsification_family false; ledger "30 positive claims hold (not a falsification-family member); no new member"; connects [612, 594, 509, 753, 589]. Tail block is the LAST top-level key in profiles/competitor-entities.yaml.
+
+### Corpus integrity
+- Max numeric mechanism_id **822**; zero 823 keys in all three mechanism forms (numeric mechanism_id, mechanism_823, mechanism-823).
+- Falsification ledger: THIRTIETH member-form present exactly once (m818, journalists.yaml); TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST absent corpus-wide; pre-#978 negative-guard wording pinned (superseded).
+- m771 sole occurrence is the in-flight #899 nytimes.yaml working-tree hunk (zero in HEAD); m770 absent (known data loss at #918, to be redone by a future run); m762 committed by the #884 chain (present in HEAD).
+- Zero 820/821/822 keys guards from #980 superseded by design (m820/m821/m822 now legitimately on disk).
+
+### Background suite: #980 tombstoned
+type_d_980_full_suite.log is 0 bytes, never started (zero pytest processes alive at this run's checks): **THIRTY-EIGHTH consecutive background-suite death**, lineage **FIFTY-SIXTH -> FIFTY-SEVENTH** per the #795 convention. This run re-launched the suite writing to goal hidden_files `type_d_985_full_suite.log`; the next Type D run checks it.
+
+### Fresh synthetic engine calibration
+Values hardcoded after a scratch run this run. Strong-signal n=7: asymmetry -1.0371428571428571, t -44.37511335119615, p 1.513527135769462e-13, d -23.719495808490578, significant, CI upper -0.9942857142857143. Near-null n=7: asymmetry 0.0, p 0.945304703010495, silent, CI [-0.03571428571428571, 0.038571428571428576] straddling zero. Degenerate n=1 on the m820 illustrative pair [-0.45]/[+0.15]: t 0.0, p 1.0, d 0.0, |asymmetry| 0.60, arm-swap negates exactly. Engine significance is never promoted to a finding; the finding layer stays MANUAL QUALITATIVE per the Aug 28 2026 standing rule.
+
+### Doc-sync
+50,659/1,309 -> 50,721/1,310; +62/+1 = the #985 file exactly (.venv python authoritative). 62 tests, 12 classes. Anchor + rotation guard per #565.
+
+### Concurrency
+#899 (nytimes.yaml hunk), #938 (nyt profile + pixel-watch test), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
+
 ## #984 Type C: Anthropic $1.5B settlement distribution-phase Sep 2026 status - Alsup postpones final distribution approval on Sep 8 with 34 specific questions, sets Sep 25 ND Cal hearing; $450M installment due Sep 25, 2026; extends mechanism 612 (mechanism 822) - Type C FIFTH and CLOSING leg of the 980-984 window D->E->A->B->C (Sep 25 2026, 03:00 PDT; log-hash followup updates this line (this commit))
 - Rotation: Type C financial incentive mapping (schedule: A/B/C/D/E cycle). FIFTH and CLOSING leg of the 980-984 window: D (#980) -> E (#981) -> A (#982) -> B (#983) -> C (this run); predecessor Type B #983 at 02:00 PDT Sep 25; novelty anchor patched post-commit per #565. The window is CLOSED.
 - Mechanism state: new mechanism_id 822 in profiles/competitor-entities.yaml as a new zero-indent top-level tail block (block key type_c_984_anthropic_settlement_distribution_sep25_hearing_450m_installment_sep25; colon form only; zero underscore-form 822 keys by designed keying per #715); max numeric mechanism_id 821 pre-commit (m821 in profiles/careers/journalists.yaml), 822 post-commit; zero numeric/underscore 823 keys post-commit; falsification ledger holds at 30 (not a falsification-family member); no analysis.json update.
@@ -36730,3 +36757,5 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Doc-sync: README stats table 43564/1180 -> 43613/1181 + test-file table row; ARCHITECTURE.md header stats + tree row; iteration-log #853 entry (this entry). Authoritative .venv pytest --collect-only this run: 43613 tests / 1181 files post-commit (delta +49/+1 = the #853 file exactly; system-python3 pytest gate undercounts due to missing deps, venv python authoritative per the #530 lesson).
 - Rotation guard: 850-854 window fourth leg D->E->A->B (anchor patched post-commit per #565). Next: #854 Type C completes the window.
 - Push status (this run, Sep 19 2026 ~08:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+
+
