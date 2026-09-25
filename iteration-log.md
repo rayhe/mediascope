@@ -28,7 +28,7 @@ Values hardcoded after a scratch run this run via the real engine (calculate_asy
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit c30e75ba785a4077e16b5e345b9dbc3ce888c293 (verified via git rev-parse); anchor followup a546c553939fe39e493bcfe47847efe3c7f9a9ee (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 65/65 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PUSHED per #716 - main c30e75ba + anchor a546c553 + log-hash <LOGHASH> pushed to origin main in one fast-forward (a5a755ca..<LOGHASH>); remote tip <LOGHASH> verified equal to local via git ls-remote Sep 25 2026 14:xx PDT.
+- Push status: PUSHED per #716 - main c30e75ba + anchor a546c553 + log-hash 23e99f7b4ff4c3fad45e173ede724f976a24b7cf pushed to origin main in one fast-forward (a5a755ca..23e99f7b4ff4c3fad45e173ede724f976a24b7cf); remote tip 23e99f7b4ff4c3fad45e173ede724f976a24b7cf verified equal to local via git ls-remote Sep 25 2026 14:5x PDT.
 
 
 ## #994 Type C: Meta One link-limit traffic gate with publisher carve-out (mechanism 828) - FIRST dedicated corpus mechanism on Meta monetizing outbound links while exempting news-publisher Pages; FIRST publisher-traffic-gate leg (TENTH relationship direction in the m807 enumeration). Type C FIFTH and CLOSING leg of the 990-994 window D->E->A->B->C (Sep 25 2026, 13:00 PDT; log-hash followup registers both hashes here per #721 (this commit))
