@@ -22992,3 +22992,109 @@ katie_notopoulos:
   verdict: 'directionally_supported_not_proven'
   no_analysis_json_update: true
   ledger: '29'
+
+david_heaney:
+  name: David Heaney
+  current_role: Staff Writer
+  current_publication: UploadVR
+  beats:
+  - XR headsets
+  - smart glasses
+  - AR/VR hardware
+  notes: 'UploadVR staff writer David Heaney (search-index byline attribution "UploadVR David Heaney" on both arms this run). Type B #983 (Sep 25 2026, 02:00 PDT): mechanism 821 - FIRST dedicated corpus mechanism on Heaney. Rejected as a Type B candidate at #928 ("no corpus presence, no same-writer competitor arm"); the Sep 23 2026 UploadVR Snap Specs hands-on + same-day Meta VR Glasses announcement supply the missing pair, resolving the #928 rejection. ASCII-only, no em dashes.'
+  mechanism_ids:
+  - 821
+  source_urls:
+  - https://www.uploadvr.com/snap-specs-hands-on-minimum-viable-consumer-true-ar-glasses/
+  - https://www.uploadvr.com/meta-vr-glasses-officially-announced-connect-2026/
+  competitor_coverage:
+    type_b_983_david_heaney_uploadvr_snap_specs_junket_vs_meta_vr_glasses_same_day_sep25:
+      iteration: 983
+      mechanism_id: 821
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: 2026-09-25 02:00 PDT
+      block_key: type_b_983_david_heaney_uploadvr_snap_specs_junket_vs_meta_vr_glasses_same_day_sep25
+      author: Kit (with Ray)
+      journalist: David Heaney
+      design: 'Type B journalist cross-entity tracking: UploadVR staff writer David Heaney, same publication, same day (Sep 23 2026), same hardware category (XR glasses). NEW arms on both sides. Tests (a) whether a disclosed travel junket (Snap paid for the reviewer''s flights + accommodation to its "launch" event) predicts register softening on the funded arm vs the same-day unfunded Meta arm, and (b) whether Heaney''s habitual Meta privacy vocabulary transfers to a 4-camera competitor product.'
+      new_snap_arm:
+        title: 'Snap Specs Hands-On: Minimum Viable Consumer True AR Glasses'
+        url: https://www.uploadvr.com/snap-specs-hands-on-minimum-viable-consumer-true-ar-glasses/
+        date: Sep 23 2026
+        byline: 'David Heaney (search-index byline attribution: "UploadVR David Heaney" rendered on the piece header in search-index render; writer-page https://www.uploadvr.com/writer/dheaney/ lists the piece under his name; bounded per iteration-492)'
+        publication: UploadVR
+        genre: launch-event hands-on first impressions
+        key_quotes:
+        - '"For disclosure, Snap paid for my flights and accommodation for its \"launch\" event, which I put in scare quotes because it didn''t actually launch the glasses."'
+        - '"As soon as you put on Specs, you''ll notice a number of optical artifacts. There is a rainbow pattern over the display area, which has poor color uniformity in general, as well as blue streaks from reflections of real-world light."'
+        - '"The $2195 Specs are set to be the first fully standalone true AR glasses outside China, and the most advanced on the planet that you can actually buy, beating companies like Meta and Apple to market."'
+        - 'Tracking verdict via the playtechdeep Sep-24 brief relay: glasses "just about pass" the minimum bar for first-generation true AR glasses.'
+        register_notes: 'Junket-disclosed, optically critical hands-on register: the harshest product judgment in the same-day pair (rainbow artifacts, poor color uniformity, blue streaks) coexists with ambition-positive market framing ("beating companies like Meta and Apple to market") and the Nvidia agentic-AI partnership relay. Zero camera/privacy/surveillance vocabulary in the indexed excerpt on a 4-camera face-worn glasses product (bounded-listing absence per the iteration-492 rule, not a proven zero).'
+        tone_score: -0.10
+        tone_basis: 'hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'search-excerpt-bounded per #503 (5 browser.search query sets this run; 0 browser.open)'
+      new_meta_arm:
+        title: 'Meta VR Glasses Officially Announced, Shipping Spring 2027 For $1300'
+        url: https://www.uploadvr.com/meta-vr-glasses-officially-announced-connect-2026/
+        date: Sep 23 2026
+        byline: 'David Heaney (search-index byline attribution: "UploadVR David Heaney" rendered on the piece header in search-index render; writer-page https://www.uploadvr.com/writer/dheaney/ lists the piece under his name; bounded per iteration-492)'
+        publication: UploadVR
+        genre: launch announcement spec relay
+        key_quotes:
+        - '"Meta VR Glasses were just officially announced. Priced at $1300, they have 2.4K micro-OLED displays, weigh 100 grams, and are powered by a tethered puck with Qualcomm''s Snapdragon Reality Elite chipset."'
+        - '"The stark difference between Meta VR Glasses and any Quest, however, is the split architecture, and the dramatic reduction in weight and bulk this enables."'
+        register_notes: 'Neutral spec-relay register on the announcement: headline price-flag ("For $1300") neutral, body is specification listing (2.4K micro-OLED, 100g frame, tethered compute puck, Snapdragon Reality Elite, 12GB RAM / 128GB storage, microSD). Zero enthusiasm or skepticism vocabulary in the indexed excerpt.'
+        tone_score: 0.00
+        tone_basis: 'hand-assigned this run from search-excerpt headline/register reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'search-excerpt-bounded per #503 (5 browser.search query sets this run; 0 browser.open)'
+      privacy_register_control:
+        control_basis: 'Heaney''s Meta glasses coverage habitually carries privacy vocabulary, attested via UploadVR category-listing search-index renders (not full URLs; no URLs ingested per the verbatim-URL rule): "Meta To Launch Smart Glasses Without Camera As Privacy Backlash Grows" (Sep 13 2026), "Meta Still Internally Debating Privacy Of Always-On AI Glasses" (Jul 8 2026), "Meta Is Improving Its Smart Glasses Privacy LED Tampering Detection" (Jul 7 2026).'
+        contrast: 'The junket-funded Sep-23 Snap hands-on (4-camera face-worn glasses) carries zero camera/privacy/surveillance vocabulary in its indexed excerpt, while Heaney applied privacy vocabulary even to Meta''s camera-FREE glasses announcement ("Privacy Backlash" headline, Sep 13).'
+      asymmetry_scorer_result:
+        method: MANUAL ILLUSTRATIVE
+        snap_arm_tone: -0.10
+        meta_arm_tone: 0.00
+        illustrative_delta_snap_minus_meta: -0.10
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        note: 'Arithmetic: snap-minus-meta = -0.10 - 0.00 = -0.10, same journalist, same publication, same day, same hardware category. The asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only, directionally supported not proven. The salient finding is privacy-vocabulary direction (absent on the 4-camera Snap arm, habitual on Meta arms), not tone magnitude.'
+      finding: 'FIRST dedicated corpus mechanism on David Heaney (mechanism 821): same-day (Sep 23 2026) same-journalist same-publication same-category pair. NEW Snap arm: "Snap Specs Hands-On: Minimum Viable Consumer True AR Glasses" - opens with the junket disclosure ("For disclosure, Snap paid for my flights and accommodation for its \"launch\" event"), runs the harshest product register in the same-day pair ("optically rough," rainbow pattern, poor color uniformity, blue streaks; tracking only "just about pass" the minimum bar) while carrying ambition-positive market framing ("beating companies like Meta and Apple to market") and the Nvidia agentic-AI partnership relay; zero camera/privacy/surveillance vocabulary in the indexed excerpt on a 4-camera face-worn glasses product (bounded-listing absence per the iteration-492 rule). MANUAL ILLUSTRATIVE -0.10. NEW Meta arm: "Meta VR Glasses Officially Announced, Shipping Spring 2027 For $1300" - neutral spec relay (2.4K micro-OLED, 100g, tethered puck, Snapdragon Reality Elite), headline price-flag neutral. MANUAL ILLUSTRATIVE 0.00. Illustrative delta (Snap minus Meta): -0.10, n=1 vs n=1, directional only. The salient asymmetry is privacy-vocabulary direction, not tone: Heaney''s Meta glasses coverage habitually carries privacy vocabulary ("Privacy Backlash" headline on Meta''s camera-FREE glasses, Sep 13; "Internally Debating Privacy Of Always-On AI Glasses," Jul 8; "Privacy LED Tampering Detection," Jul 7), while the junket-funded Snap hands-on on 4-camera glasses carries none in the indexed excerpt. The junket did NOT buy product softness: the Snap arm''s optical criticism is the harshest product judgment in the pair, so disclosure-coexists-with-criticism bounds the naive incentive-softening prediction. REPLICATES the Sep-16 launch-window challenger-optimism direction at journalist level alongside m743 (Ashworth, WIRED), m749 (Ropek, TechCrunch), m746 (Pero, Gizmodo) - a FOURTH journalist, same direction; EXTENDS the m629 same-day same-journalist precedent class (Reece Rogers, WIRED, Jul 7 2026) with a disclosed travel-junket leg. connects_to: [629, 743, 746, 269, 734, 791]. Correlation only, not causation. NOT artifact-grade.'
+      connects_to: [629, 743, 746, 269, 734, 791]
+      confounders:
+      - 'STRONG: excerpt-bounded per #503 (0 browser.open this run; full-text register could carry camera/privacy discussion; the surveillance-silence claim is bounded-listing absence per the iteration-492 rule, not a proven zero)'
+      - 'STRONG: story-type mismatch - hands-on first-impressions review (optics naturally center-stage) vs launch-announcement spec relay; registers follow story type, and the Snap arm''s optical criticism is arguably proportionate product journalism on first-gen true-AR optics'
+      - 'STRONG: the Snap arm is product-critical on the core product claim ("optically rough," rainbow artifacts, blue streaks) - the paid trip did not buy product softness, which cuts against the naive junket-softening prediction and bounds the incentive leg to vocabulary-direction only'
+      - 'MODERATE: degenerate contract - n=1 per arm; tones hand-assigned; directional only, no statistical significance by design'
+      - 'MODERATE: category difference - first-generation standalone true-AR glasses vs VR glasses announcement; bystander-privacy salience differs across categories'
+      - 'WEAK: Heaney''s Meta privacy-vocabulary arms are news-peg privacy stories (the privacy register IS the news), so the comparison crosses piece types rather than performing a pure entity swap'
+      counter_evidence:
+      - 'The junket is disclosed on the record in the piece''s second paragraph ("Snap paid for my flights and accommodation") - no concealment; disclosure practice is stronger than concealment'
+      - 'Heaney applied privacy vocabulary even to Meta''s privacy-POSITIVE hardware move (camera-free glasses, "Privacy Backlash" headline, Sep 13) - the Meta-arm reading is partly news-driven, not purely adversarial'
+      - 'The Sep-23 Meta VR piece gets a neutral headline price-flag ("For $1300") with no puff framing - Meta arms are not uniformly positive either'
+      - 'The Sep-16 three-journalist challenger-optimism pattern (m743, m749, m746) shows launch-window optimism on challengers is market-wide, not Heaney-specific - the junket is an additional confound, not a unique cause'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 (new Snap arm) vs n=1 (new Meta arm). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative delta only (-0.10); not evidence of bias or of financial influence; documents the analyst reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents one journalist''s same-day register pair across two XR glasses launches, one with a disclosed travel junket. Register differences are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. The junket is disclosed, and the funded arm carries the harshest product criticism in the pair. No causal claim. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 30
+      ledger_note: 'Ledger holds at 30 this run (no new member; THIRTIETH member-form in journalists.yaml remains the sole m978 block). Register documentation + junket-disclosure leg, not a uniform-prediction test.'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type B register documentation; falsification ledger holds at 30.'
+      novelty: 'FIRST dedicated corpus mechanism on David Heaney (zero dedicated Type B mechanisms pre-commit; the only prior corpus mentions are #928''s rejected-candidate note in journalists.yaml research_method and iteration-log - "no corpus presence, no same-writer competitor arm" - which this run RESOLVES by sourcing the pair). Zero test_type_b_983 files on disk (glob); no "Type B #983" in git log (--grep); max numeric mechanism_id 820 in-tree pre-commit; zero numeric 821-form mechanism keys in profiles/ pre-commit; zero underscore-form 821 MECHANISM key strings repo-wide pre-commit (needles format-built per #715); zero dash-form 821 mechanism references pre-commit; block key `type_b_983_david_heaney_uploadvr_snap_specs_junket_vs_meta_vr_glasses_same_day_sep25` zero-hit repo-wide pre-commit; both UploadVR URLs zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '5 browser.search query sets Sep 25 2026: (1) Meta Connect 2026 Ray-Ban smart glasses hands-on review The Verge byline - surfaced mobilesyrup Meta VR glasses hands-on (byline unattested) and thesun.ie/thescottishsun.co.uk Sean Keach Ray-Ban Audio piece, REJECTED as Type B targets; (2) Snap Specs launch September 2026 journalist hands-on Meta Ray-Ban comparison - surfaced aggregator briefs (camerajabber, playtechdeep, startupfortune, shortlist, kotaku, theshortcut), REJECTED (no clean same-writer pair); (3) "Sean Keach" Snap Specs smart glasses - Keach has no Snap arm surfaced, REJECTED; (4) UploadVR Snap Specs hands-on September 2026 author - SELECTED: surfaced Heaney''s Sep-23 hands-on with junket disclosure plus writer-page listing his same-day Meta VR Glasses announcement piece; (5) UploadVR "Meta VR Glasses Officially Announced, Shipping Spring 2027 For $1300" David Heaney - SELECTED: verbatim Meta-arm URL plus spec-relay excerpt. 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_983_david_heaney_uploadvr_snap_specs_junket_vs_meta_vr_glasses_same_day_sep25_2am.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 983
+        type: 'B'
+        date: '2026-09-25 02:00 PDT'
