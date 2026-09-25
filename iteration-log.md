@@ -1,4 +1,4 @@
-## #997 Type A: Atlantic x OpenAI/Anthropic Sep-25 doomsday-scenarios philosophical safety-discourse essay (mirror_excerpt_bounded) extends the m694 philosophical-register strand to a two-item Sep-2026 sequence vs carried Meta AI Watchdog accountability arms; bounded absence of theatlantic.com Meta Connect 2026 coverage; illustrative target-minus-peer delta +0.675 (MANUAL, NOT statistical) - Type A THIRD leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 16:00 PDT; main commit MAIN_SHA / anchor ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit))
+## #997 Type A: Atlantic x OpenAI/Anthropic Sep-25 doomsday-scenarios philosophical safety-discourse essay (mirror_excerpt_bounded) extends the m694 philosophical-register strand to a two-item Sep-2026 sequence vs carried Meta AI Watchdog accountability arms; bounded absence of theatlantic.com Meta Connect 2026 coverage; illustrative target-minus-peer delta +0.675 (MANUAL, NOT statistical) - Type A THIRD leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 16:00 PDT; main commit a288bc51a43f75662443eac6cb2b4bc0c776b697 / anchor 571697da3abcded64f45ce17a0606b8173ae80c4; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-25 16:00 PDT, iteration_type "A", **THIRD leg of the 995-999 window, continuing it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -24,7 +24,7 @@ MANUAL ILLUSTRATIVE tones ONLY per the Aug 28 2026 standing rule. p_value/cohens
 ### Concurrency
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
-- Commit hashes: main commit MAIN_SHA (verified via git rev-parse); anchor followup ANCHOR_SHA (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 38/38 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Commit hashes: main commit a288bc51a43f75662443eac6cb2b4bc0c776b697 (verified via git rev-parse); anchor followup 571697da3abcded64f45ce17a0606b8173ae80c4 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 38/38 file tests green post-followup); log-hash followup registers both hashes here per #721.
 - Push status: PENDING (filled post-push per #716).
 
 ## #996 Type E: podcast sentiment 122nd verification - GF 501 confirmed again (no 502; second consecutive pure-re-surface GF cycle, ZERO new GF keys), EHE 46-day hold with ONE new verbatim URL key (cnn.com/2026/09/22, the CNN original of the #981 lapost relay; zero pre-commit corpus hits), Attention Sphere 122nd no-match (blob page SURFACED AGAIN, 6 commit URLs git-log-verified circular, Tracked Sources 121->122), press 7/7 in-corpus re-surfaces, frontier HOLDS at Sep 24 - Type E SECOND leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 15:00 PDT; main commit adf61e3c / anchor 1ad8eacc; log-hash followup registers both hashes here per #721 (this commit))
