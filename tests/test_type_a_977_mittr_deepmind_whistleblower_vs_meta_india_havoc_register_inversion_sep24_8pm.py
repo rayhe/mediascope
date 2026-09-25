@@ -65,7 +65,7 @@ MECH_KEY = (
     "vs_sep23_meta_india_havoc_sep24_2026"
 )
 NEXT_SIBLING = "\n  x_twitter:"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "b3b4de30a71fe7a19b58406903a29b5f9e2e3fdd"
 ITERATION = 977
 TYPE_LETTER = "A"
 
