@@ -40,7 +40,7 @@ tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine N
 #899 (nytimes.yaml hunk), #938 (nyt profile + pixel-watch test), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit dec561406353b2ab576086386b90dedaa37a94fd (verified via git rev-parse); anchor followup 3c29296d6de46168b706cfd2f8987b70a07fed72 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 52/52 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: (finalized in the push-status finalizer per #716 pattern)
+- Push status (this run, Sep 25 2026 ~05:30 PDT): pushed main dec56140 + anchor followup 3c29296d + log-hash followup dad4fde1 (a39316e8..dad4fde1 main -> main, fast-forward, plain git push via credential-helper store, never in argv); remote tip verified equals local tip (dad4fde12f8942e541bb659bb91bdb185c7570ad) via git ls-remote post-push; zero pre-push-ahead deltas; push-status finalizer is the fourth and final commit per #716 pattern; concurrency: #899/#938/#900 in-flight untouched.
 
 ## #985 Type D: m820/m821/m822 qualitative-discipline verification + post-980-984 corpus integrity + #980 background-suite tombstone + fresh synthetic engine calibration
 
