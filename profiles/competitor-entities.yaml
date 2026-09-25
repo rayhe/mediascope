@@ -25581,3 +25581,85 @@ type_c_979_ziff_davis_q2_2026_earnings_call_ai_licensing_holdout_posture_sep24:
       yaml_parse_clean: true
       ascii_only: true
     tone_scores: 'NOT_SCORED'
+
+type_c_984_anthropic_settlement_distribution_sep25_hearing_450m_installment_sep25:
+    mechanism_id: 822
+    iteration: 984
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-25'
+    time_pdt: '03:00'
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'Anthropic $1.5B settlement distribution-phase Sep 2026 status: Alsup postpones final distribution approval on Sep 8 with 34 specific questions, sets Sep 25 hearing; $450M installment due Sep 25, 2026; extends mechanism 612 (FIRST dedicated distribution-phase mechanism)'
+    block_key: type_c_984_anthropic_settlement_distribution_sep25_hearing_450m_installment_sep25
+    key_design_note: 'Iteration-form block key carries no underscore-form 822 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-822 profile sweep instruments green while mechanism_id advances in colon form.'
+    type_c_focus: 'FIRST dedicated corpus mechanism on the distribution-phase judicial-oversight and cash-flow status of the largest AI-copyright settlement. Extends mechanism 612 (the Sep 9 2026 distribution-phase payout-fight mechanism built on the TechCrunch Sep 6 publisher over-claim reporting) from the author-vs-publisher claim fight to the court and the calendar: (1) Judge William Alsup postponed approval on Sep 8, set 34 specific questions and scenarios across two filings for the attorneys to answer, and set the next hearing for Sep 25 in the US District Court for the Northern District of California (Bloomberg Law); (2) a $450M installment is due Sep 25, 2026, the same calendar date as the hearing (entrelligence, single secondary source); (3) the stakes of failed approval are a December jury trial with theoretical statutory exposure up to $1 trillion (Bloomberg Law). The $1.5B is the corpus''s largest AI-copyright payout; its distribution mechanics determine how much flows to publishers (including HarperCollins/News Corp, per m594''s Anthropic leg and m612''s April Henry example) versus authors. No coverage-tone claim is made; this is qualitative financial-incentive mapping per the Aug 28 2026 standing rule. Type A follow-ups flagged.'
+    hearing_status:
+    - 'Postponement: Bloomberg Law reports Judge William Alsup postponed his approval of the deal on Sep 8, and set 34 specific questions and scenarios across two filings for the attorneys to answer before their next hearing on Sep 25 in the US District Court for the Northern District of California. The 34-question docket is judicial friction on the distribution: approval is not automatic, and the court is interrogating the split mechanics.'
+    - 'Hearing date: Sep 25, 2026. This run executes at 03:00 PDT Sep 25, before the hearing; the outcome is unknown and is not claimed. The mechanism maps the scheduled gate, not its result.'
+    - 'Trial fallback: if the parties fail to secure Alsup''s approval, the case goes to a jury trial in December, where Anthropic could face up to $1 trillion in damages (Bloomberg Law). The trillion figure is a theoretical statutory maximum (per-work damages times works), not an expected trial value; carried as the reported stakes, not a forecast.'
+    - 'Judge-name discrepancy, not adjudicated: m612 cites Judge Araceli Martinez-Olguin for the July final approval (corpus author_settlement_detail: Jul 20 2026); Bloomberg Law cites Judge William Alsup for the Sep 8 postponement. Both carried as sourced; no adjudication this run. Possible readings include a reassignment, a division of labor between approval and distribution phases, or a corpus error in m612. Bounded; flagged for a Type C verification follow-up with court-filing reads.'
+    installment_schedule:
+    - 'Four installments (entrelligence, single secondary source): $300M due by Oct 2, 2025; $300M within a week of final approval; $450M due Sep 25, 2026; $450M due by Sep 25, 2027. The schedule is not independently corroborated this run; carried as single-source.'
+    - 'The Sep 25, 2026 $450M installment coincides on the calendar with the Sep 25 distribution-approval hearing. No causal or contractual link is claimed between the payment date and the hearing date; the coincidence is noted, not interpreted.'
+    distribution_mechanics_carried:
+    - 'Per-work amount: roughly $3,000 per book across some 465,000 books Anthropic downloaded from pirate libraries while acquiring content to train Claude (Bloomberg Law; corpus author_settlement_detail in m612: 482,460 works on list, 92.77 percent claims filed, claim deadline 2026-03-30, payments starting circa Aug 10 2026 in up to 3 installments).'
+    - 'Split mechanics (TechCrunch Sep 6 via m612; newsgab corroboration): 50-50 between author and publisher if the book is still in print with a traditional publisher; 100 percent to the author if self-published or if the publisher reverted the rights by allowing the book to go out of print. Author claim mechanics: for a 100 percent author claim, the rights reversion must predate the August 10, 2022 download date (Courtney Milan / Authors Guild via TechCrunch).'
+    - 'Claim-fight context (m612, carried not re-proven): publisher over-claims on reverted rights (April Henry vs HarperCollins, rights reverted at least 17 years ago), full-100-percent claims where only 50 percent is owed (Writers Beware / Victoria Strauss), literary-agent claims on non-rightsholder works (Courtney Milan). Strauss calls the pattern systemic rather than routine glitches; Authors Guild CEO Mary Rasenberger attributes it to bad recordkeeping and a confusing settlement process, not a publisher grab.'
+    financial_incentive_geometry:
+    - 'Capture incentive: the publisher over-claim pattern (m612) is the distribution-phase expression of the capture incentive - publishers assert claims beyond their entitlements because the marginal cost of an over-claim is low (recordkeeping ambiguity, Strauss) while the marginal gain is up to $1,500 per work. The 34-question postponement is the judicial cost imposed on that incentive: the court is pricing the ambiguity before the money moves.'
+    - 'Intertemporal incentive: the four-installment schedule spreads Anthropic''s $1.5B cash outflow across 2025-2027. The $450M Sep 25, 2026 installment is the largest single payment in the schedule; it is the cash-flow event that makes the distribution phase real rather than notional.'
+    - 'Contrast with the priced market: m789 maps a functioning licensing market with posted prices ($6-20+ CPM, OpenAI $15M+/yr). This mechanism is the adversarial/punitive counterpart: money moves because a court ordered it, not because a market priced it. The two together bound the corpus''s financial-incentive spectrum from voluntary transaction to judicial compulsion.'
+    - 'News Corp exposure (m594 carried): HarperCollins is a News Corp property; the April Henry over-claim example puts a News Corp publisher inside the distribution-phase capture pattern. No new News Corp claim is made beyond m612''s.'
+    confounders_ranked:
+    - 'STRONG: Hearing outcome unknown. This run executes at 03:00 PDT Sep 25, 2026, before the scheduled hearing. No outcome, ruling, or distribution decision is claimed. The mechanism maps the scheduled gate only.'
+    - 'STRONG: Excerpt-bounded per #503. Zero browser.open this run. The Bloomberg Law excerpt, the entrelligence piece, and the newsgab corroboration are the evidence tier; no first-hand court filings, dockets, or settlement agreements were read. The 34 questions themselves are reported as a count and a procedural fact, not quoted.'
+    - 'STRONG: Judge-name discrepancy (see hearing_status). m612''s Martinez-Olguin vs Bloomberg Law''s Alsup. Not adjudicated; both carried as sourced.'
+    - 'MODERATE: The $450M installment schedule is single-source (entrelligence). Not independently corroborated; the payment cadence could differ from the reported schedule.'
+    - 'MODERATE: The "up to $1 trillion" jury-trial exposure is a theoretical statutory maximum, not an expected value or a settlement anchor. Carried as reported stakes only.'
+    - 'WEAK: The Sep 25 installment due date coincides with the Sep 25 hearing date. Calendar coincidence; no causal or contractual link claimed.'
+    counterevidence:
+    - 'The July final approval (m612) already resolved the liability phase; this is distribution mechanics and judicial oversight, not a new liability finding against Anthropic.'
+    - 'Authors Guild CEO Mary Rasenberger (m612) attributes the publisher over-claims to bad recordkeeping and a confusing settlement process, not a publisher grab - bounds the capture-incentive reading of the distribution fight.'
+    - 'Some publishers told Victoria Strauss the over-claims were mistakes they asked Anthropic to fix - bounds the systemic-capture claim; the error rate may reflect claims-administration noise rather than strategy.'
+    connects_to: [612, 594, 509, 753, 589]
+    connects_to_verified: 'All five mechanism keys verified present in HEAD via grep pre-commit: 612 (distribution-phase parent), 594 (News Corp five-leg, Anthropic leg), 509 (Anthropic zero-news-deal posture), 753 (NYT litigation spend leg), 589 (Ziff Davis adversarial-incentive litigation leg).'
+    source_urls:
+    - 'https://news.bloomberglaw.com/ip-law/anthropic-ai-copyright-settlement-must-clear-logistical-hurdles'
+    - 'https://entrelligence.com/federal-judge-approves-anthropic-paying-1-5b-to-settle-lawsuit-with-book-authors/'
+    - 'https://newsgab.com/authors-push-back-publishers-agents-seek-anthropic-settlement/'
+    - 'https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/'
+    source_url_evidence_tier: 'Bloomberg Law: Sep 8 postponement, 34 specific questions across two filings, Sep 25 ND Cal hearing, ~465,000 books, ~$3,000 per book, December jury-trial fallback, up to $1T theoretical exposure. Entrelligence: four-installment schedule ($300M Oct 2 2025, $300M within a week of final approval, $450M Sep 25 2026, $450M Sep 25 2027; single secondary source, not independently corroborated). Newsgab: distribution mechanics (50-50 in-print split, 100 percent author on reverted/self-published, Aug 10 2022 download date; corroborates m612). TechCrunch Sep 6: already in m612; carried as the claim-fight corroboration (April Henry/HarperCollins, Strauss, Rasenberger, Milan). All excerpt-bounded per #503; 0 browser.open this run.'
+    research_method: '4 browser.search query sets this run: (1) Reddit Google AI licensing renewal Sep 2026 - Jul 22 WSJ non-renewal report context + RBC early-2027 timing leg (covered in corpus via the Jul 22 leg; not selected); (2) Anthropic publisher licensing Sep 2026 - zero-deal posture re-confirmed via the llmpulse tracker updated Sep 7 2026 (covered in #719''s sweep; not selected); (3) Apple publisher Siri AI deals Sep 2026 - variable pay-per-use nine-figure structure (heavily covered: mechanisms 136/156/534/574/606/619; not selected); (4) Meta Newsmax AI licensing deal - Newsmax x Meta bundle already dedicated mechanism 669 (not selected). Selected: Anthropic $1.5B settlement Sep 2026 distribution-phase status (Sep 8 Alsup postponement + 34 questions + Sep 25 hearing + $450M installment due Sep 25) - FIRST dedicated corpus mechanism on the distribution-phase judicial-oversight and cash-flow status; extends mechanism 612. Excerpt-bounded, second-hand evidence per #503 (0 browser.open first-hand reads this run). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps: zero test_type_c_984 files on disk (glob); no Type C #984 in git log (--grep); zero underscore-822 strings in profiles/ pre-commit (grep; the block uses the colon form per the #723 designed-keying lesson, so #983''s zero-sweep stays green); max numeric mechanism id pre-commit 821; 4 of 4 source URLs zero-hit repo-wide pre-commit; no dedicated Sep-25-hearing or installment-schedule mechanism repo-wide pre-commit (only m612''s distribution-phase claim fight). No zero-coverage claims per iteration-492 rule; bounded absence only. No em dashes; ASCII-only.'
+    bounded_absences:
+    - 'No outcome of the Sep 25 hearing; explicitly unknown (run precedes the hearing).'
+    - 'No author-level tone scores; not scored per the Aug 28 2026 standing rule.'
+    - 'No Anthropic 10-K/10-Q disclosure of the installment cash outflow surfaced this run; not claimed.'
+    - 'No new publisher over-claim cases beyond m612''s TechCrunch Sep 6 set; not claimed.'
+    - 'No first-hand court filings, dockets, or settlement agreements read; excerpt-bounded per #503.'
+    statistical_discipline:
+      approach: 'Qualitative financial-incentive mapping per the Aug 28 2026 standing rule: no scoreable article arms exist (this is a court-calendar and cash-flow status, not a coverage-tone comparison). No tone scores, no p_value, no cohens_d, no confidence intervals; the engine was not run.'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      engine_run: false
+      verdict: 'directionally_supported_not_proven'
+      correlation_not_causation: true
+      no_causal_claim: true
+      analysis_json_updated: false
+      ledger: '30 positive claims hold (not a falsification-family member); no new member'
+      artifact_grade: false
+      falsification_family: false
+    verification:
+      iteration: 984
+      type: 'C'
+      date: '2026-09-25 03:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
