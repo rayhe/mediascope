@@ -25776,3 +25776,81 @@ type_c_989_anthropic_settlement_verified_cashflow_correction_sep25:
       yaml_parse_clean: true
       ascii_only: true
     tone_scores: 'NOT_SCORED'
+
+type_c_994_meta_one_link_limits_publisher_carveout_sep25:
+  mechanism_id: 828
+  iteration: 994
+  rotation: Type C
+  date_analyzed: '2026-09-25'
+  time_pdt: '13:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'Meta One link-limit traffic gate with publisher carve-out (Sep 15 2026 launch) - FIRST dedicated corpus mechanism on Meta monetizing outbound links while exempting news-publisher Pages; FIRST publisher-traffic-gate leg in the publisher-money-flow family'
+  type: financial_incentive_mapping
+  type_c_focus: 'FIRST dedicated corpus mechanism on the September 2026 Meta One outbound-link monetization and its publisher carve-out. On September 15, 2026 Meta formally launched Meta One for Business subscription packages (Essential $14.99/mo, Advanced $49.99/mo, Expert $149.99/mo, Max $499.99/mo; blotato help-article table; Mari Smith Sep 2026; almcorp). Non-subscribing Facebook business Pages and professional-mode profiles are limited to TWO organic posts or comments containing external links per month for free (Essential $14.99 keeps the 2/mo cap); Advanced $49.99 unlocks 8 link posts or comments per month; Expert $149.99 unlocks 20; Max $499.99 unlocks unlimited Facebook links. Instagram link allowances are smaller (Advanced up to 4/mo posts+reels, Expert up to 8/mo, Max up to 12/mo). Links to Meta own apps, catalog product links, and ads do not count against the allowance (blotato). This is the scale-up of the December 2025 limited test TechCrunch first reported (two-link cap, Meta confirmed it evaluated whether paid subscribers get more link value); the September 2026 Meta One launch expanded it across more Pages (techjuice; stupiddope; almcorp). The decisive incentive fact: Publisher Pages are EXEMPT from the test (techjuice: "Publisher Pages remain exempt from the test, allowing news organizations to continue unrestricted external linking"; almcorp: "Pages from the Publisher are supposed to be shunned from the test... news and media pages can flow into the app freely"). The corpus reads this as a dual-registry platform-publisher settlement: licensed news partners (Meta AI licensing network m331: USA Today, People Inc, CNN, Fox News, Daily Caller, Washington Examiner, Le Monde; News Corp $50M/yr x 3yr from March 2026, m594; Newsmax m669) keep free unlimited outbound reach, while every other commercial page pays per-link-month for the same doorway. No coverage-tone claim is made; this is qualitative financial-incentive mapping per the Aug 28 2026 standing rule. FIRST publisher-traffic-gate leg (tenth relationship direction in the m807 enumeration).'
+  announcement_date: '2026-09-15'
+  pricing_tiers:
+    - 'Essential: $14.99/mo (2 Facebook link posts/comments per month; Instagram link allowance not listed)'
+    - 'Advanced: $49.99/mo (8 per month Facebook; up to 4 per month Instagram posts + up to 4 reels)'
+    - 'Expert: $149.99/mo (20 per month Facebook; up to 8 per month Instagram posts + reels)'
+    - 'Max: $499.99/mo (unlimited Facebook; up to 12 per month Instagram posts + reels)'
+    - 'Free / no subscription: 2 Facebook link posts or comments per month'
+    - 'Pricing varies by region per Meta; Advanced/Expert/Max listed as "starting at"'
+  link_allowance_detail: 'Monthly allowance, resets on the 1st for free users and on the subscription renewal date for paying users; unused links do not roll over; comments containing links can count toward the allowance (closing the first-comment URL workaround); post links already included make follow-up comment links on the same post not count again (Mari Smith, via facebook.com/help/1929252614431792).'
+  publisher_carveout: 'News/publisher Pages are exempt from the link-limit test while business and creator Pages are subject to it (techjuice; almcorp). The corpus interprets the exemption as the platform-side counterpart to Meta paid publisher licensing: licensees (m331 bundle, m594 News Corp, m669 Newsmax) keep free unlimited outbound reach; non-licensed commercial pages pay.'
+  dec2025_test_lineage: 'TechCrunch reported the limited December 2025 test (two-link cap on some Pages and professional-mode profiles); Meta confirmed it was evaluating whether paying users value more links. September 2026 is the scale/structure expansion keyed to the Meta One launch, not a new idea (stupiddope: "This did not begin overnight"; techjuice: September launch "triggered broader expansion").'
+  traffic_context: 'Meta Q1 2026 Widely Viewed Content report: only 1.3% of widely viewed US posts included external links, down from 9.8% in 2022 when Meta started tracking the metric (techjuice; almcorp). The link-limit monetizes a doorway Meta own algorithm already shrank; the exemption preserves the licensed-publisher referral flow.'
+  incentive_geometry: 'Structural contrast with m801 (Sep 2026 DOJ Google ad-tech remedies: court FORCES Google to loosen publisher-leverage tools - DFP-AdX untie, mandatory Prebid interfaces, publisher data portability). The same week, Meta tightens its OWN publisher-leverage tool (the outbound-link gate) while carving out licensed news publishers. One platform is court-ordered to open; the other opens only for paying licensees and closes further for everyone else. The corpus publisher-money-flow family now has both the compulsory-opening leg (Google, m801) and the voluntary-gate leg (Meta, this mechanism).'
+  confounders_ranked:
+    - 'STRONG: Gradual rollout (stupiddope; Mari Smith) - "Facebook allows" vs actual per-account limits vary by region and rollout wave; the test is not uniform. The mechanism claims the published structure and the publisher exemption, not uniform enforcement.'
+    - 'STRONG: Excerpt-bounded per #503 (0 browser.open this run; Meta help article facebook.com/help/1929252614431792 quoted only via Mari Smith relay; no first-hand Meta pricing-page read).'
+    - 'STRONG: The publisher exemption rests on two secondary reports (techjuice; almcorp), not a Meta on-the-record statement; bounded, second-source tier.'
+    - 'MODERATE: savingcountrymusic frames Verified $14.99 as also limited (Essential keeps 2/mo); the tier table comes from blotato help-article reconstruction, not a Meta screenshot.'
+    - 'MODERATE: 1.3% link-share fact is Meta self-reported (Widely Viewed Content report, Q1 2026); algorithmic link depreciation (Dec 2025 test article noted) predates and exceeds the subscription gate.'
+    - 'WEAK: Comment-counting could be a rollout artifact rather than policy; the direction (closing workarounds) is consistent across three independent reports.'
+    - 'WEAK: Instagram link allowances reconstructed from the same help-article table; Instagram was already a paid-link environment, so the Facebook expansion is the novel leg.'
+  counterevidence:
+    - 'Meta stated purpose is value-testing for paying users ("whether the ability to publish an increased volume of posts with links adds additional value", techjuice) - a monetization test, not a publisher-coercion instrument; the mechanism makes no coercion claim.'
+    - 'almcorp FAQ notes the performance impact "may be limited" because link posts already get minimal organic reach - the gate monetizes a doorway the algorithm deprioritized, bounding the leverage reading.'
+    - 'Publisher exemption is plausibly operational (avoid breaking news distribution during election cycles) rather than a quid-pro-quo for licensing deals; the corpus carries it as an incentive fact, not a proven trade.'
+    - 'Essential $14.99 buys analytics/identity tools, not links - the paywall is calibrated to link VOLUME, and small creators can still post 2/mo free.'
+  connects_to: [801, 331, 669, 594]
+  connects_to_verified: 'All four mechanism keys verified present in HEAD via git grep pre-commit: 801 (DOJ Google ad-tech behavioral remedies, Sep 2026, this run structural contrast), 331 (Meta Dec 2025 AI publisher licensing bundle, licensee network), 669 (Meta Newsmax AI licensing deal), 594 (News Corp five-leg, Meta $50M/yr x 3yr leg from March 2026).'
+  source_urls:
+    - 'https://stupiddope.com/2026/09/facebooks-new-link-limits-put-a-price-on-sending-audiences-beyond-meta/'
+    - 'https://savingcountrymusic.com/facebooks-new-link-charge-is-catastrophic-for-independent-music/'
+    - 'https://www.blotato.com/blog/meta-one-link-limits'
+    - 'https://www.techjuice.pk/meta-facebook-pages-limited-link-posts-two-month-meta-one-subscription/'
+    - 'https://www.linkedin.com/pulse/facebook-changing-rules-businesses-again-andrea-lindal-peshc'
+    - 'https://www.facebook.com/marismith/posts/facebooks-new-2-link-limit-whats-the-real-truth-/1713399930153763/'
+    - 'https://almcorp.com/news/facebook-starts-limiting-link-posts-non-paying-pages/'
+  source_url_evidence_tier: 'Seven sources, zero pre-commit corpus hits (git grep -F): stupiddope (2d, structural analysis, TechCrunch Dec 2025 + Social Media Today Sep 2026 lineage); savingcountrymusic (Sep 21 2026, independent-music vertical, tier ladder $49/$149/$499 + 2/8/20/unlimited); blotato (2d, help-article-derived tier table with Instagram allowances); techjuice.pk (7d, publisher-exemption report + Meta value-testing quote + 1.3% WVC stat); LinkedIn/Andrea Lindal (Sep 24 2026, practitioner FAQ); Mari Smith facebook.com relay (1d, Meta help article 1929252614431792 relay with exemption/counting rules); almcorp (3d, FAQ with publisher-exemption + 9.8%-to-1.3% stat). 4 browser.search query sets this run (Meta AI publisher licensing Sep 2026; publisher AI licensing deal week-of-Sep-21; Meta One link limits corroboration). 0 browser.open (excerpt-bounded per #503).'
+  novelty: 'zero test_type_c_994 files on disk pre-commit (glob); no Type C #994 in git log (--grep) pre-commit; max numeric mechanism id pre-commit 827 (journalists.yaml, #993/m827); zero underscore-form 828 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); block key type_c_994_meta_one_link_limits_publisher_carveout_sep25 zero-hit pre-commit; 7 of 7 source URLs zero-hit repo-wide pre-commit (git grep -F); zero "stupiddope" and zero "link limits" strings repo-wide pre-commit; zero "meta one" keys in profiles/competitor-entities.yaml pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  research_method: '4 browser.search query sets Sep 25 2026 13:00 PDT: (1) Meta AI news publisher licensing deal September 2026 - REJECTED: Outlook Business Sep-1-2026 Meta AI publisher expansion (Le Figaro/Prisa/SZ) in corpus; (2) publisher AI licensing deal announced week of Sep 21 2026 - REJECTED: Press Gazette India fees (m798), Village Media (m804/714), stockmoguls archive (m869/m672 covered); (3) Meta One subscription Facebook Pages limit external links per month publishers September 2026 - SELECTED: seven-source corroborated link-limit mechanism; (4) fourweekmba exchange4media NYT litigation context - REJECTED as covered (#949 sweep). 0 browser.open (excerpt-bounded per #503).'
+  bounded_absences:
+    - 'No first-hand Meta help-article read; the tier table is help-article reconstruction via blotato and Mari Smith.'
+    - 'No Meta on-the-record statement on the publisher exemption; carried as second-source (techjuice; almcorp).'
+    - 'No coverage-tone claim; not scored per the Aug 28 2026 standing rule.'
+    - 'No claim about which specific publishers hold exempt Page status beyond the licensing network (m331/m594/m669).'
+  statistical_discipline:
+    approach: 'Qualitative financial-incentive mapping per the Aug 28 2026 standing rule: no scoreable article arms exist (this is a platform publisher-traffic-gate structure, not a coverage-tone comparison). No tone scores, no p_value, no cohens_d, no confidence intervals; the engine was not run.'
+    tone_scores: 'NOT_SCORED'
+    p_value: 'NOT_CALCULATED'
+    cohens_d: 'NOT_CALCULATED'
+    ci_95: 'NOT_CALCULATED'
+    is_significant: false
+    engine_run: false
+    verdict: 'directionally_supported_not_proven'
+    correlation_not_causation: true
+    no_causal_claim: true
+    analysis_json_updated: false
+    ledger: '30 positive claims hold (not a falsification-family member); no new member'
+    artifact_grade: false
+    falsification_family: false
+  verification:
+    iteration: 994
+    type: 'C'
+    date: '2026-09-25 13:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
+  tone_scores: 'NOT_SCORED'
