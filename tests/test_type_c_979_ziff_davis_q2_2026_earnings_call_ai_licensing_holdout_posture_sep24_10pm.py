@@ -61,7 +61,7 @@ BLOCK_KEY = "type_c_979_ziff_davis_q2_2026_earnings_call_ai_licensing_holdout_po
 # Tail-block convention: zero-indent standalone block at the end of the file
 EXPECTED_ITERATION = 979
 # Anchor placeholder: replaced by the real main-commit SHA in the #565 anchor followup
-ANCHORED_SHA = "0000000000000000000000000000000000000000"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "850c27df5ec39f3a30ef2c82118ef8139b0fae7b"  # patched green in the anchor followup per #565
 
 SOURCE_URLS = [
     "https://www.MarketBeat.com/earnings/reports/2026-8-6-j2-global-inc-stock/",
