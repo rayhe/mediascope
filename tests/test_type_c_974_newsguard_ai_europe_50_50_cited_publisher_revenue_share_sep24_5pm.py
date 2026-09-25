@@ -70,7 +70,7 @@ BLOCK_KEY = "newsguard_ai_europe_50_50_cited_publisher_revenue_share_816"
 # Zero-indent standalone block at the end of the file (tail-block convention)
 EXPECTED_ITERATION = 974
 # Anchor placeholder: replaced by the real main-commit SHA in the #565 anchor followup
-ANCHORED_SHA = "b7c9d2e4f6081a3b5d7e9f021436587a9c8b4d6e2"
+ANCHORED_SHA = "127fb413e8bff342086042051466e6f8d078f424"  # patched green in the anchor followup per #565
 
 SOURCE_URLS = [
     "https://www.newsguardtech.com/press/newsguard-launches-newsguard-ai-in-europe-bringing-reliable-ai-powered-news-to-european-readers-in-french-german-and-italian-in-addition-to-english/",
