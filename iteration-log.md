@@ -25,6 +25,9 @@ Values hardcoded after a scratch run this run. Strong-signal n=7: asymmetry -1.0
 ### Concurrency
 #899 (nytimes.yaml hunk), #938 (nyt profile + pixel-watch test), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
+- Commit hashes: main commit 813df4e50095e021767231b6a65ab48e4410601d (verified via git rev-parse); anchor followup a5f3f597e5c35668bda1cd15086c3d3bf81871ed (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 62/62 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Push status (this run): PENDING - pushed in the push-status finalizer per #716 (log-hash followup updates this line).
+
 ## #984 Type C: Anthropic $1.5B settlement distribution-phase Sep 2026 status - Alsup postpones final distribution approval on Sep 8 with 34 specific questions, sets Sep 25 ND Cal hearing; $450M installment due Sep 25, 2026; extends mechanism 612 (mechanism 822) - Type C FIFTH and CLOSING leg of the 980-984 window D->E->A->B->C (Sep 25 2026, 03:00 PDT; log-hash followup updates this line (this commit))
 - Rotation: Type C financial incentive mapping (schedule: A/B/C/D/E cycle). FIFTH and CLOSING leg of the 980-984 window: D (#980) -> E (#981) -> A (#982) -> B (#983) -> C (this run); predecessor Type B #983 at 02:00 PDT Sep 25; novelty anchor patched post-commit per #565. The window is CLOSED.
 - Mechanism state: new mechanism_id 822 in profiles/competitor-entities.yaml as a new zero-indent top-level tail block (block key type_c_984_anthropic_settlement_distribution_sep25_hearing_450m_installment_sep25; colon form only; zero underscore-form 822 keys by designed keying per #715); max numeric mechanism_id 821 pre-commit (m821 in profiles/careers/journalists.yaml), 822 post-commit; zero numeric/underscore 823 keys post-commit; falsification ledger holds at 30 (not a falsification-family member); no analysis.json update.
