@@ -25,7 +25,7 @@ MANUAL ILLUSTRATIVE tones ONLY per the Aug 28 2026 standing rule. p_value/cohens
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit a288bc51a43f75662443eac6cb2b4bc0c776b697 (verified via git rev-parse); anchor followup 571697da3abcded64f45ce17a0606b8173ae80c4 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 38/38 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PENDING (filled post-push per #716).
+- Push status: PUSHED per #716 - main a288bc51 + anchor 571697da + log-hash ac6071276daff2e4106504c13c9f6f1faa8b50d2 pushed to origin main in one fast-forward (313fceed..ac6071276daff2e4106504c13c9f6f1faa8b50d2); remote tip ac6071276daff2e4106504c13c9f6f1faa8b50d2 verified equal to local via git ls-remote Sep 25 2026 16:xx PDT.
 
 ## #996 Type E: podcast sentiment 122nd verification - GF 501 confirmed again (no 502; second consecutive pure-re-surface GF cycle, ZERO new GF keys), EHE 46-day hold with ONE new verbatim URL key (cnn.com/2026/09/22, the CNN original of the #981 lapost relay; zero pre-commit corpus hits), Attention Sphere 122nd no-match (blob page SURFACED AGAIN, 6 commit URLs git-log-verified circular, Tracked Sources 121->122), press 7/7 in-corpus re-surfaces, frontier HOLDS at Sep 24 - Type E SECOND leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 15:00 PDT; main commit adf61e3c / anchor 1ad8eacc; log-hash followup registers both hashes here per #721 (this commit))
 
