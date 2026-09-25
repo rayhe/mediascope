@@ -47,7 +47,7 @@ ARCH = REPO / "docs" / "ARCHITECTURE.md"
 LOG = REPO / "iteration-log.md"
 THIS_FILE = Path(__file__).name
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "6db06a33"  # patched green in the anchor followup per #565
 
 ITERATION = 992
 MECHANISM = 826
@@ -138,8 +138,11 @@ class TestRotationCycleGuard992:
 
     @pytest.mark.rotation
     def test_no_concurrent_in_flight_type_a_992_by_commit_time(self):
-        r = run_git("log", "--oneline", "--grep=Type A #992")
-        assert r.stdout.strip() == ""
+        r = run_git("log", "--format=%H %s", "--grep=Type A #992")
+        matches = [l for l in r.stdout.splitlines() if l.strip()]
+        own = run_git("log", "--format=%H", "--", "tests/test_type_a_992_verge_apple_ambient_listening_week_vs_meta_luna_stigma_sep25_11am.py").stdout.splitlines()
+        competing = [l for l in matches if l.split()[0] not in own]
+        assert competing == [], f"concurrent Type A #992 commits: {competing}"
 
 
 class TestMechanism826Content:
