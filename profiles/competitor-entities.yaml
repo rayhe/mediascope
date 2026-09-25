@@ -25477,3 +25477,107 @@ newsguard_ai_europe_50_50_cited_publisher_revenue_share_816:
       yaml_parse_clean: true
       ascii_only: true
     tone_scores: 'NOT_SCORED'
+
+type_c_979_ziff_davis_q2_2026_earnings_call_ai_licensing_holdout_posture_sep24:
+    mechanism_id: 819
+    iteration: 979
+    iteration_type: C
+    type: financial_incentive_mapping
+    type_label: Financial Incentive Mapping
+    rotation: 'Type C'
+    date_analyzed: '2026-09-24'
+    time_pdt: '22:00'
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    mechanism_name: 'Ziff Davis Q2 2026 earnings call (Aug 6 2026): CEO Vivek Shah states the AI-licensing holdout posture on the record - no RAG-focused deal that compromises foundational-training compensation rights; ''establish the right financial precedent'' over ''a quick dollar''; ''rather be patient than early'''
+    block_key: type_c_979_ziff_davis_q2_2026_earnings_call_ai_licensing_holdout_posture_sep24
+    key_design_note: 'Iteration-form block key carries no underscore-form 819 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-819 profile sweep instruments green while mechanism_id advances in colon form.'
+    type_c_focus: 'FIRST dedicated corpus mechanism on a publisher CEO stating the AI-licensing holdout posture on an earnings call. Extends mechanism 589 (Ziff Davis v. OpenAI adversarial-incentive litigation leg, filed Apr 24 2025, MDL 1:25-md-03143) from the docket to the income statement: the adversarial incentive is now management-stated financial strategy, not just inferred from filings. Shah draws a two-tier licensing theory on the record: retrieval-augmented-generation deals are negotiable in principle, but no deal may compromise the foundational-training compensation claim. The posture is explicitly intertemporal: forgo near-term licensing cash (''a quick dollar'') to maximize the legal-precedent value (''the right financial precedent''). Twenty-nine days later the awaited ''legal clarity'' vehicle arrives as the Sep 4 2026 MDL cross-motions for summary judgment, with Ziff Davis among the five publisher movants seeking liability judgment. No coverage-tone claim is made; Type A follow-ups flagged.'
+    earnings_call_facts:
+    - 'Venue: Ziff Davis (NASDAQ: ZD) Q2 2026 earnings call, Aug 6 2026. Prompt: Susquehanna analyst asks ''just how should we think about'' AI content licensing and which portfolio assets are most attractive to monetize. Respondent: CEO Vivek Shah (transcript via MarketBeat, excerpt-bounded per #503; URL slug carries the legacy J2 Global name, the pre-2021 corporate identity).'
+    - 'Two-tier licensing theory, verbatim: ''we are just not inclined to sign a RAG-focused agreement that compromises our right to fair compensation for foundational training. This is the important position that we have taken.'' RAG (retrieval-augmented generation) licensing is the acceptable tier; foundational-training compensation is the non-negotiable right being preserved.'
+    - 'Intertemporal framing, verbatim: ''We want to establish the right financial precedent more than anything else than booking kind of a quick dollar.'' The lawsuit is framed as precedent-setting balance-sheet strategy, not only legal defense.'
+    - 'Litigation status, verbatim: ''The litigation that we have with OpenAI is proceeding. We continue to believe that as greater clarity on sort of the underlying legal questions come to bear, that it will lead to a rational licensing market for us and frankly, for everyone. I would rather be patient than early and lock in a little bit of cash. That is kind of where we are there.'''
+    - 'Corroboration (dailypolitical.com, Aug 9 2026 earnings-call highlights): ''Shah said Ziff Davis is not inclined to enter agreements focused on retrieval-augmented generation that could compromise its ability to seek compensation for foundational model training. He said the company''s litigation with OpenAI is continuing and that management is waiting for greater legal clarity before pursuing what it views as a rational licensing market.'''
+    - 'Reiteration marker: Shah opens with ''reiterate what I said last quarter'' - the posture predates Q2 2026. The Q1 2026 predecessor statement is NOT separately verified this run (bounded, not claimed).'
+    - 'Same-day legal backdrop: the Aug 6 2026 Judge Stein orders trimmed Ziff Davis''s contributory-copyright and trademark-dilution claims (carried as context from the #734 run, not a mechanism) - the holdout posture was reaffirmed on the same day the court narrowed the claims.'
+    quotes:
+      two_tier: '''we''re just not inclined to sign a RAG-focused agreement that compromises our right to fair compensation for foundational training. This is the important position that we have taken.'''
+      precedent_over_cash: '''We want to establish the right financial precedent more than anything else than booking kind of a quick dollar.'''
+      patient_not_early: '''I''d rather be patient than early and lock in a little bit of cash.'''
+      litigation_proceeding: '''The litigation that we have with OpenAI is proceeding.'''
+      rational_market: '''as greater clarity on sort of the underlying legal questions come to bear, that it''ll lead to a rational licensing market for us and frankly, for everyone.'''
+    september_clarity_vehicle:
+    - 'Sep 4 2026: cross-motions for summary judgment filed in MDL 1:25-md-03143 (S.D.N.Y., Judge Sidney H. Stein, Magistrate Judge Ona T. Wang) - twenty-nine days after the earnings call. This is the ''greater legal clarity'' vehicle Shah said the company was waiting for.'
+    - 'Movants (ppc.land): OpenAI and Microsoft move for judgment (OpenAI seeks a ruling that pretraining and the Browse function are fair use, that Browse copies made before publishers updated robots.txt were impliedly licensed, and that the DMCA claim fails as a matter of law; Microsoft moves for judgment on all claims against it). The five publisher plaintiffs - The New York Times Company, the Daily News Plaintiffs, Ziff Davis, the Center for Investigative Reporting, and The Intercept - seek judgment on liability for copying at five stages, rejection of the fair use defence, partial judgment on three elements of the DMCA claim, and a ruling that statutory damages run per article rather than per issue.'
+    - 'Competing accounts (ppc.land''s characterization of the motions, excerpt-bounded, not asserted as fact): ''OpenAI''s record shows verbatim reproduction at 0.00012 percent of sampled conversations and publisher revenues rising. The publishers'' record shows 10.8 million articles copied, click-through rates falling inside Copilot relative to Bing search, and a licensing market that other artificial intelligence developers have already entered.'''
+    - 'Corroboration (mixed-news.com, Sep 2026): the five publishers ask for infringement findings at five points - acquiring the articles, training models on them, using Microsoft''s Bing index to ground live answers, reproducing text in Copilot outputs, and ''horse trading'' (the partnership passing copies between the companies). The brief''s Turley ''largely substitutive, period'' and Nadella ''substituted'' quotations are already in corpus via mechanism 759 - cited here as corroboration only, not new.'
+    - 'Per-article vs per-issue statutory damages is the damages-quantum hinge: with 10.8 million asserted articles, the counting rule is the difference between a nuisance settlement and a balance-sheet event.'
+    incentive_geometry:
+    - 'Holdout as stated strategy: the corpus''s adversarial-incentive publisher (m589: money at stake in the lab LOSING) now has a CEO on-the-record refusing the deal table. ''Rather be patient than early'' is the holdout leg of the sign-or-sue architecture (m636) stated as management guidance.'
+    - 'Precedent as the asset: ''establish the right financial precedent'' prices the lawsuit itself as the investment and near-term licensing cash as the opportunity cost. This inverts the usual deal-announcement incentive geometry (cash now, terms undisclosed) into litigation-option value (cash later, terms set by judgment).'
+    - 'Two-tier theory bounds the RAG market: Shah concedes RAG-focused agreements are signable in principle - the refusal is scoped to foundational-training rights. A publisher can simultaneously be a willing RAG licensor and an unwilling training-data licensor; the corpus''s deal taxonomy should keep those tiers separate.'
+    - 'Contrast with the priced market: mechanism 789''s Buttle priced-market datum (seven AI companies signing publisher deals) is the market Ziff Davis refuses to transact in at current prices - the holdout bets litigation reprices the market upward. Mechanism 816''s NewsGuard 50/50 public anchor is the visible price; Ziff Davis is waiting for a court to set a higher one.'
+    - 'Second adversarial-leg confirmation of the pay-or-sue pattern: m603 (Reddit v. Anthropic: Google $60M/yr paid, OpenAI ~$70M/yr paid, Anthropic $0 sued) is the platform-side pay-or-sue; this mechanism is the publisher-side stated-strategy version - ''pay us at the litigated price, or take a hike.'''
+    - 'DOJ zero-price vector undercut from the plaintiff side: m672 documents the DOJ statement-of-interest fair-use vector (~zero price for training data); a public-company CEO now tells shareholders the company will not transact at any price that concedes the training-data right - the market participant and the government brief disagree on price, on the record.'
+    connects_to: [589, 672, 603, 789, 816, 636]
+    ranked_confounders:
+    - rank: 1
+      strength: 'STRONG'
+      text: 'Earnings-call rhetoric: CEOs routinely project litigation confidence for shareholders and the plaintiffs'' bar; ''patient not early'' may be posturing rather than a binding commitment, and the company could sign a deal next quarter without violating any stated rule.'
+    - rank: 2
+      strength: 'STRONG'
+      text: 'Same-day legal headwinds: the Aug 6 2026 Stein orders trimmed Ziff Davis''s contributory and dilution claims the same day Shah reaffirmed the posture - conviction under narrowing claims, or bluff to preserve negotiating leverage; the transcript alone cannot distinguish.'
+    - rank: 3
+      strength: 'MODERATE'
+      text: 'The RAG-vs-training distinction may be negotiating positioning to extract better RAG terms rather than a genuine two-tier licensing theory; no RAG deal has been announced to test which tier the company actually transacts in.'
+    - rank: 4
+      strength: 'MODERATE'
+      text: 'Excerpt-bounded evidence tier (0 browser.open this run per #503): the MarketBeat transcript excerpt and dailypolitical summary are second-hand renders; full-call audio or an SEC-filed transcript could carry qualifying context.'
+    - rank: 5
+      strength: 'WEAK'
+      text: 'The posture is a reiteration (''last quarter''), so the Aug 6 call is a restatement rather than a new decision; the marginal news value is the on-the-record restatement against the same-day Stein trims, not a strategy change.'
+    - rank: 6
+      strength: 'WEAK'
+      text: 'Ziff Davis simultaneously reports AI-written code as central to product development (dailypolitical: majority of new code AI-authored) - using AI tooling while suing over training data is a product-vs-training distinction the mechanism does not collapse, but the optics invite the counter-read.'
+    counterevidence:
+    - 'Posture matched by action: the Sep 4 2026 cross-motions show Ziff Davis affirmatively moving for liability judgment alongside the four other publisher plaintiffs - twenty-nine days after the call, the ''patient'' stance converted into the ''clarity'' motion Shah described.'
+    - 'Surviving claims: the Dec 15 2025 partial dismissal left direct infringement, contributory, and CMI-removal claims alive (m589 arc) - the trimmed claims were the peripheral ones; the core training-data claims proceed.'
+    - 'Quantified upside: m589''s ''at least hundreds of millions of dollars'' damages floor (NYT via eWeek, two anonymous sources) gives the ''patient'' stance a stated expected value against the ''quick dollar'' foregone.'
+    - 'The ''rational licensing market for us and frankly, for everyone'' line universalizes the holdout: Shah frames the precedent as a public good for publishers, which is also the coalition-building language of the SPUR/News-Media-Alliance bloc (in-flight m771 context, not duplicated).'
+    bounded_absences:
+    - 'No Q1 2026 predecessor statement verified: Shah''s ''reiterate what I said last quarter'' points to an earlier call not separately sourced this run - the reiteration is bounded, not evidenced.'
+    - 'No deal terms to refuse: no specific RAG offer is named, so the refusal''s bite (which dollars were walked away from) is unquantified.'
+    - 'No coverage-tone evidence: this mechanism makes no claim about Ziff Davis-owned outlets'' (PCMag, CNET, IGN, Mashable, ZDNET, Lifehacker) coverage of OpenAI or competitors; it maps the stated financial strategy only.'
+    - 'No court ruling yet: the Sep 4 cross-motions are briefing, not judgment; the ''clarity'' Shah awaits has not arrived as of Sep 24 2026.'
+    statistical_discipline:
+      scope: qualitative financial-incentive documentation only
+      correlation_not_causation: true
+      scorer: none
+      tone_scores: NOT_SCORED
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      engine_not_run: true
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      artifact_grade: false
+      falsification_family_member: false
+      ledger_note: 'Ledger holds at 30 (THIRTIETH member-form in journalists.yaml from #978); this mechanism is financial-incentive documentation, not a uniform-prediction test.'
+    novelty: 'FIRST dedicated corpus mechanism on the Ziff Davis Q2 2026 earnings-call AI-licensing holdout posture. Zero ''rather be patient than early'' / ''right financial precedent'' hits repo-wide pre-commit; zero ''RAG-focused agreement'' hits in profiles/ pre-commit; the four source URLs (MarketBeat transcript, dailypolitical Aug-9 highlights, ppc.land Sep-4 motions, mixed-news Sep-2026 corroboration) each zero-hit repo-wide pre-commit (git grep -F). Distinct from mechanism 589 (the litigation leg: filing, claims, damages, docket arc), mechanism 672 (DOJ zero-price vector), mechanism 603 (Reddit pay-or-sue), and the #734-run Stein-orders context carry (orders documented as context, not as a mechanism). The Sep 4 2026 cross-motions arc is new to the corpus (zero ''summary judgment'' MDL-3143 hits pre-commit).'
+    research_method: '3 browser.search query sets this run: (1) IAC Q2 2026 earnings People Inc Dotdash Meredith licensing revenue OpenAI - surfaced stale 2024 IAC call re-indexes and finnhub ticker noise, REJECTED (no fresh Q2 2026 licensing datum); (2) Ziff Davis Q2 2026 earnings call AI licensing lawsuit OpenAI August 2026 - SELECTED: MarketBeat Aug-6-2026 transcript excerpt with Shah''s verbatim holdout quotes plus the Aug-6-2026 Stein memorandum order (justia, carried as the same-day legal backdrop, already context in #734); (3) Ziff Davis OpenAI lawsuit September 2026 development AI licensing - surfaced the Sep 4 2026 MDL cross-motions for summary judgment (ppc.land SELECTED, mixed-news.com corroboration) plus the corpus''s own #589 commit page (github.com, rejected as circular, not ingested). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_c_979 files on disk (glob); no ''Type C #979'' in git log (--grep); max numeric mechanism_id 818 in profiles/ pre-commit; zero numeric 819-form mechanism keys in profiles/ pre-commit; zero underscore-form 819 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention); zero dash-form 819 references repo-wide pre-commit; block key zero-hit repo-wide pre-commit; four source URLs zero-hit repo-wide pre-commit (git grep -F); both distinctive Shah quote strings zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    source_urls:
+    - https://www.MarketBeat.com/earnings/reports/2026-8-6-j2-global-inc-stock/
+    - https://www.dailypolitical.com/2026/08/09/ziff-davis-q2-earnings-call-highlights.html
+    - https://ppc.land/openai-and-microsoft-ask-judge-to-end-10-8-million-article-copyright-case/
+    - https://mixed-news.com/en/news-publishers-summary-judgment-openai-microsoft-fair-use/
+    test_file: 'tests/test_type_c_979_ziff_davis_q2_2026_earnings_call_ai_licensing_holdout_posture_sep24_10pm.py'
+    verification:
+      iteration: 979
+      type: 'C'
+      date: '2026-09-24 22:00 PDT'
+      yaml_parse_clean: true
+      ascii_only: true
+    tone_scores: 'NOT_SCORED'
