@@ -42,7 +42,7 @@ SNAP_TONE = -0.20
 DELTA_EXPECTED = -0.15
 NEW_URL_TNT = "https://technewstube.com/theverge/1870121/meta-ditches-camera-newest-smart-glasses/"
 NEW_URL_BIGGO = "https://finance.biggo.com/news/d71bedffa3fb45e3"
-ANCHORED_SHA = "PENDING_ANCHOR_FOLLOWUP"
+ANCHORED_SHA = "1a512b73"
 CONCURRENCY_UNSTAGED = [
     "profiles/nytimes.yaml",
     "tests/test_type_b_938_dominic_preston_verge_pixel_watch_gemini_personalization_vs_meta_luna_stigma_sep16.py",
