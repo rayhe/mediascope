@@ -24,7 +24,7 @@ Values hardcoded after a scratch run this run via the real engine (calculate_asy
 ### Concurrency
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
-- Commit hashes: main commit PATCHED_POST_COMMIT (verified via git rev-parse); anchor followup PATCHED_POST_COMMIT (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 62/62 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Commit hashes: main commit 221d28a2bc0067a8bde4b7be16aa9638e0e62842 (verified via git rev-parse); anchor followup 45ae4974048919cc176718242bbfcece1ffe36b7 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 62/62 file tests green post-followup); log-hash followup registers both hashes here per #721.
 - Push status (this run, Sep 25 2026 ~09:45 PDT): pushed main + anchor followup + log-hash followup per #716 (remote tip verified equals local tip via git ls-remote post-push); concurrency: #899/#938/#900 in-flight untouched.
 
 ## #989 Type C: Anthropic $1.5B settlement VERIFIED distribution-phase cash-flow map ($1.07B in escrow per Docket 688 Sep 2 2026; $450M Scheduled Payment 1 PAID Aug 19 2026 not due Sep 25 2026; final $450M due Sep 25 2027 or on IPO trigger; first author payments $2,203.56/work by Nov 15 2026) + m822 year-shift CORRECTION (mechanism 825, FIRST dedicated corpus verification/correction mechanism, NOT falsification-family member, ledger holds at 30) - Type C SIXTH and CLOSING leg of the 985-989 window D->E->A->B->C (Sep 25 2026, 08:00 PDT; log-hash followup updates this line (this commit))
