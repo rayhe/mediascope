@@ -3511,6 +3511,108 @@ competitor_relationships:
       ledger_note: "NOT a falsification-family member: no named deal-gradient prediction is contradicted (both arms $0 at The Verge; the Vox-OpenAI deal prediction is scoped to OpenAI coverage and is untested here). The falsification ledger holds at 29; the THIRTIETH mechanism stands as the most recent falsification-family member; mechanism 811 does not extend the ledger."
       research_method: '2 browser.search query sets Sep 24 2026: (a) The Verge Apple September event-window coverage - surfaced the technewstube Verge-feed mirror of Tom Warren''s Sep 9 2026 2:19 pm "Apple skips the base iPhone 18 at its fall launch event" (title, byline, dateline, excerpt verbatim); (b) The Verge Meta Connect Ray-Ban Meta Audio glasses - surfaced the Yanko Design Sep 24 2026 relay quoting Meta wearables VP Alex Himel "told The Verge" plus the world-today-journal corroborating relay; no theverge.com URLs constructed (policy-blocked for browser.open per standing rule); title/excerpt-bounded evidence, no first-hand Verge body reviewed. Meta arm carried from m646 recorded iteration 687. Pre-commit repo greps: zero test_type_a_967 files on disk, no "Type A #967" in git log, max numeric mechanism_id 810 in profiles/, zero underscore-form 811 key strings in profiles/ and tests/, zero numeric 811-form mechanism keys in profiles/, zero dash-form 811 references in profiles/, block key zero-hit repo-wide, three new urls zero-hit repo-wide. Falsification ledger 29 carried.'
       artifact_readiness: "No analysis.json update warranted. Illustrative-only scorer output; peg-driven variability extension, not artifact-grade."
+    type_a_992_verge_apple_ambient_listening_week_vs_meta_luna_stigma_sep25_2026:
+      mechanism_id: 826
+      date: '2026-09-25'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 992
+      iteration_type: A
+      iteration_time: 2026-09-25 11:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: The Verge
+      publication_pair: Verge x Apple
+      competitor: apple
+      comparison_entities:
+      - meta
+      author: Kit (with Ray)
+      finding: 'The Verge assigns the two poles of the ambient-listening register to Apple in the SAME Sep 9-24 2026 week, while Meta''s camera-free arm carries uniform stigma vocabulary. Apple arm (NEW this run, n=2): (1) the Sep 9 2026 "Read the Apple document explaining how new listening features still protect your privacy" piece (https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy, relayed via Sep-10 digest) - a company-briefed privacy-defense register relaying Apple''s own technical document on Siri Recap / Live Rewind / Audio Intelligence ambient listening (raw audio in the S11 Secure Exclave, no audio recordings stored, summaries not transcripts), MANUAL ILLUSTRATIVE +0.10; (2) the Sep 24 2026 "Everything is spying on you and there''s no opting out" piece (Janus Rose, The Verge, via WeSearch attribution) - a privacy-skeptical register carrying the "creepy" blowback, wiretap-law exposure, and the limited-comfort verdict on Apple''s chime/indicator safeguards when "the default behavior is constant capture," MANUAL ILLUSTRATIVE -0.30. Meta arm (carried from mechanism 794 / Type B #938, un-rescored per the #807 precedent): Dominic Preston''s Sep 16 2026 "Meta is reportedly ready to launch less pervy smart glasses" (https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect) - "pervert glasses" stigma vocabulary on the camera-free Luna frames, MANUAL ILLUSTRATIVE -0.30, privacy vocabulary present. Apple arm average (0.10 + (-0.30)) / 2 = -0.10. Illustrative delta (Apple minus Meta) +0.20. The direction is CONSISTENT with mechanism 646''s launch-window Verge Apple-minus-Meta gap (+0.73) but the ambient-listening peg window NARROWS it - a temporal BOUND on the m646 finding: when the surveillance peg is shared, the gap shrinks from +0.73 to +0.20. The Sep-24 Apple-skeptical arm is material COUNTER-EVIDENCE against uniform Verge softness on Apple: the outlet''s watchdog capacity is not Apple-gated, paralleling mechanism 643''s FT adversarial-on-non-payer control. But the softest item in the Apple window is the company-briefed Sep-9 privacy-document relay - the access/briefing genre, not the entity, carries the soft register. EXTENDS m646 (launch-register boundary condition) and m811 (Meta Connect privacy-concession pair at the same outlet); REPLICATES the m594/#683 genre-control pattern (register follows format). connects_to: [646, 794, 811, 643, 628]. Correlation only.'
+      verdict: "directionally_supported_not_proven"
+      no_analysis_json_update: true
+      articles:
+      - title: 'Verge Apple arm 1 (NEW): "Read the Apple document explaining how new listening features still protect your privacy" (Sep 9, 2026)'
+        date: '2026-09-09'
+        url: https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy
+        relay: https://github.com/piyush0053/ai-daily-digest/blob/HEAD/digests/2026-09-10.md
+        register: company_briefed_privacy_defense_relay
+        manual_illustrative_tone: 0.1
+        evidence_grade: 'new URL to corpus (zero hits before this run); relay of The Verge original via Sep-10 digest (headline + dek verbatim); theverge.com policy-blocked for browser.open per standing rule; excerpt-bounded per the #503 rule'
+        url_novelty: first corpus appearance this run
+        key_quotes:
+        - '"Read the Apple document explaining how new listening features still protect your privacy"'
+        - 'Apple "released a document laying out how it plans to balance AI ambient listening and users'' privacy"'
+        - 'Siri Recap, Live Rewind, Sound Recognition, and Music Recognition announced at the iPhone Duo launch event'
+      - title: 'Verge Apple arm 2 (NEW): "Everything is spying on you and there''s no opting out" (Sep 24, 2026)'
+        date: '2026-09-24'
+        url: https://wesearch.press/s/everything-is-spying-on-you-and-there-s-no-opting-out-657c98f3
+        byline: Janus Rose
+        register: privacy_skeptical_blowback
+        manual_illustrative_tone: -0.3
+        evidence_grade: 'new URL to corpus (zero hits before this run); WeSearch third-party attribution "The Verge files mainly under tech" (1,039 Verge stories carried); corroborated by webpronews synthesis quoting The Verge''s Sep-24 reporting that the safeguards "offer limited comfort when the default behavior is constant capture"; title/attribution-bounded, no first-hand theverge.com canonical URL recovered in search listings'
+        url_novelty: first corpus appearance this run
+        key_quotes:
+        - '"Everything is spying on you and there''s no opting out"'
+        - '"these measures offer limited comfort when the default behavior is constant capture" (via webpronews synthesis)'
+        - '"Many others called the tech "creepy." ... eavesdropping laws require both parties to consent" (blowback frame)'
+      - title: 'Verge Meta arm (CARRIED from mechanism 794 / Type B #938, un-rescored per #807): "Meta is reportedly ready to launch less pervy smart glasses" (Sep 16, 2026)'
+        date: '2026-09-16'
+        url: https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect
+        byline: Dominic Preston
+        register: stigma_vocabulary_surveillance
+        manual_illustrative_tone: -0.3
+        evidence_grade: 'carried in-corpus arm (mechanism 794); theverge.com policy-blocked; excerpt-bounded from the #938 record'
+        key_quotes:
+        - '"less pervy smart glasses"'
+        - '"pervert glasses"'
+      asymmetry_scorer_result:
+        target_entity: apple
+        reference_entity: meta
+        publication: the-verge
+        method: MANUAL ILLUSTRATIVE
+        apple_avg: -0.1
+        meta_avg: -0.3
+        delta_apple_minus_meta: 0.2
+        delta_calc: '(-0.10) - (-0.30) = +0.20'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        note: 'Apple arm average is the mean of the two scored new items (0.10, -0.30) = -0.10; delta = -0.10 - (-0.30) = +0.20. n=2 vs n=1 degenerate statistical contract; engine NOT run; no divergence pin per Aug 28 2026 standing rule. NOT significant.'
+        interpretation: 'Directional only: The Verge''s Apple ambient-listening register averages milder than its Meta camera-free register in the Sep 9-24 window, consistent with but narrower than the m646 launch-window gap; the shared-surveillance peg bounds the entity gap.'
+        limitations: 'MANUAL ILLUSTRATIVE only; n=2 vs n=1; title/excerpt-bounded evidence; genre mismatch (briefing relay vs blowback analysis vs stigma headline); one item attributed via third-party WeSearch.'
+      manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE tones are the analyst''s hand-assigned registers for reproducibility; not scored by the asymmetry engine; NOT artifact-grade.'
+      financial_context: 'Correlation only, not causation. The Verge apple block carries financial_tie "none", $0, coverage_prediction "softer": this finding is CONSISTENT with the block prediction, not a contradiction of it. Vox Media''s May 29 2024 OpenAI content-licensing partnership is scoped to OpenAI coverage and untested here (OpenAI is not in this pair), so the deal gradient cannot explain the Apple-minus-Meta gap; both arms are $0-deal entities at The Verge, so the residual +0.20 is entity-specific editorial prior plus genre, not money.'
+      confounders:
+      - 'STRONG: genre mismatch drives the register - the softest Apple arm (+0.10) is a company-privacy-document briefing relay, a format that structurally softens any entity; the Meta arm (-0.30) is a rumor-report carrying an earned stigma nickname; the Sep-24 Apple blowback arm (-0.30) matches the Meta arm''s score, so the gap is entirely the briefing-relay item.'
+      - 'STRONG: title/excerpt-bounded evidence - no first-hand Verge article body reviewed for either new Apple item this run (0 browser.open per the #503 convention); the Sep-24 item rests on WeSearch third-party attribution plus a webpronews synthesis quote, not a first-hand theverge.com read.'
+      - 'STRONG: functional mismatch - Apple''s Audio Intelligence continuously listens and transcribes ambient speech (surveillance function is the product), while Meta''s Luna removes the camera (the surveillance function was the product''s removal); the "spying" frame attaches more naturally to the actual listening product.'
+      - 'MODERATE: timing skew - the Meta arm is carried from Sep 16 (pre-Connect, un-rescored per #807) while the Apple arms are Sep 9 and Sep 24; the comparison is event-window, not same-day.'
+      - 'MODERATE: degenerate contract - n=2 vs n=1 scored items, tones hand-assigned, no engine run; descriptive only, no statistical significance (by design, NOT_CALCULATED).'
+      - 'WEAK: the Sep-24 Apple item''s WeSearch attribution could be mis-attribution; Janus Rose''s piece may not be a canonical theverge.com original.'
+      counterevidence:
+      - 'The Verge''s Sep-24 Apple privacy-skeptical arm (-0.30) equals the Meta Luna stigma arm (-0.30) - the outlet applies a surveillance-skeptical register to Apple too; watchdog capacity is not Apple-gated, paralleling mechanism 643''s FT adversarial-on-non-payer control.'
+      - 'Mechanism 811 found The Verge privacy-positive on Meta (+0.10 Ray-Ban Meta Audio measured relay, Sep 24) - the outlet''s Meta register is not uniformly negative; the Meta-side gap is peg-dependent.'
+      - 'The soft Apple item is a company-briefed privacy-document relay (access/briefing genre); the genre-control pattern from m594/#683 predicts softness on briefing-format items for any entity.'
+      - 'Webpronews''s synthesis of the Sep-24 Verge piece - "The people have had enough" - runs against Apple''s "privacy company" brand equity harder than any nickname runs against Meta''s already-stigmatized brand.'
+      strongest_counterargument: 'If the Sep-9 Apple privacy-document relay were published about Meta - a Meta "explaining how its listening features protect your privacy" document relayed at the same friendly register - the entity gap would need to be re-measured with genre held constant. As written, the +0.20 delta may be entirely an access-format artifact: Apple published a privacy document in the launch window and Meta did not, so the briefing-relay genre was available for Apple and not for Meta. The m646 finding partially controls this (both launch-day registers), but this window does not.'
+      falsification_family_member: false
+      falsification_note: 'NOT a falsification-family member: no named deal-gradient prediction is contradicted (both arms $0 at The Verge; the Vox-OpenAI deal prediction is scoped to OpenAI coverage and is untested here). The falsification ledger holds at 30; the THIRTIETH mechanism stands as the most recent falsification-family member; mechanism 826 does not extend the ledger.'
+      falsification_ledger: 30
+      connects_to: [646, 794, 811, 643, 628]
+      cross_references:
+      - 'mechanism 646 (Type A #687: Verge Apple iPhone Duo launch +0.38 vs Meta Muse -0.35, illustrative Apple-minus-Meta delta +0.73; the launch-window bound this run narrows to +0.20 under the shared ambient-listening peg)'
+      - 'mechanism 794 (Type B #938: Dominic Preston Sep-16 Meta Luna "less pervy smart glasses" -0.30 vs Pixel Watch Gemini personalization +0.05; the Meta arm carried here un-rescored per #807)'
+      - 'mechanism 811 (Type A #967: Verge Apple cadence-break -0.25 vs Meta Connect Audio privacy-positive +0.10; same-outlet same-week Meta Audio register control)'
+      - 'mechanism 643 (FT Anthropic AISI-refusal accountability scoop, FIFTEENTH falsification-family member; the watchdog-capacity control for non-payer adversarial coverage)'
+      - 'mechanism 628 (Verge Snap Specs shipping-phase vs Meta LED-tamper surveillance register; the Verge surveillance-register precedent)'
+      novelty: 'First dedicated corpus mechanism on The Verge''s Sep 9-24 2026 ambient-listening register pair: the Sep-9 Apple privacy-document relay (theverge.com/tech/992919) and the Sep-24 Apple privacy-skeptical piece ("Everything is spying on you and there''s no opting out", Janus Rose, via WeSearch) vs the carried Preston Sep-16 Meta Luna stigma arm. Two new URL keys, both first corpus appearance this run. Distinct from mechanism 646 (launch-register pegs, iPhone Duo vs Muse), mechanism 811 (cadence-break vs Meta Audio concession), and mechanism 794 (the carried Meta arm itself). Zero test_type_a_992 files pre-commit; no Type A #992 in git log pre-commit; max numeric mechanism_id 825 pre-insertion; zero underscore-form 826 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715 convention); block key zero-hit repo-wide pre-commit.'
+      research_method: '4 browser.search query sets Sep 25 2026 PDT: (1) The Verge Meta Ray-Ban Luna September 2026 - surfaced Connect-week relays incl. the Yanko Design Himel interview relay; (2) The Verge Anthropic September 2026 settlement - REJECTED as primary (Anthropic arm already in corpus via #989/m825); (3) theverge.com Apple Watch Series 12 Siri Recap Live Rewind always-listening September 2026 - SELECTED the Sep-9 Apple privacy-document piece via the ai-daily-digest Sep-10 digest listing (headline + dek verbatim, full theverge.com URL recovered); (4) The Verge Apple Sep-24 "limited comfort" piece - SELECTED the Janus Rose "Everything is spying on you" piece via WeSearch third-party Verge attribution, corroborated by the webpronews Sep-25 synthesis. 0 browser.open this run (excerpt-bounded per #503; theverge.com policy-blocked). Pre-commit repo greps: the 992919 URL, the wesearch.press URL, and the block key all zero-hit repo-wide via git grep -F; the 996138 URL in-corpus via m794. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy
+      - https://wesearch.press/s/everything-is-spying-on-you-and-there-s-no-opting-out-657c98f3
+      - https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect
+      test_file: tests/test_type_a_992_verge_apple_ambient_listening_week_vs_meta_luna_stigma_sep25_11am.py
   google:
     financial_tie: "adversarial_litigation"
     estimated_value: "$0 (dual lawsuits - AI Overviews + adtech)"
