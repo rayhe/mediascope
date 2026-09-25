@@ -51,7 +51,7 @@ ARCH = REPO / "docs" / "ARCHITECTURE.md"
 LOG = REPO / "iteration-log.md"
 THIS_FILE = Path(__file__).name
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "0dd16fa8613dc7b4b3cc0cc293e5c7eda4c01d80"
 
 ITERATION = 987
 MECHANISM = 823
@@ -170,12 +170,12 @@ class TestMechanism823Content:
         assert block["competitor"] == "openai"
 
     def test_three_new_urls_first_appearance(self):
-        block = load_block()
-        text = yaml.safe_dump(block)
         for url in NEW_URLS:
-            assert url in text, url
-        r = run_git("log", "--oneline", "--grep=Type A #987")
-        assert r.stdout.strip() == ""
+            assert url in yaml.safe_dump(load_block()), url
+            r = run_git("grep", "-l", "-F", url, "--", "profiles/")
+            assert [f for f in r.stdout.splitlines() if f] == [
+                "profiles/financial-times.yaml"
+            ], url
 
     def test_carried_urls_present_in_block(self):
         block = load_block()
