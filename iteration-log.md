@@ -39,7 +39,7 @@ tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine N
 ### Concurrency
 #899 (nytimes.yaml hunk), #938 (nyt profile + pixel-watch test), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
-- Commit hashes: (registered in the log-hash followup per #721)
+- Commit hashes: main commit dec561406353b2ab576086386b90dedaa37a94fd (verified via git rev-parse); anchor followup 3c29296d6de46168b706cfd2f8987b70a07fed72 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 52/52 file tests green post-followup); log-hash followup registers both hashes here per #721.
 - Push status: (finalized in the push-status finalizer per #716 pattern)
 
 ## #985 Type D: m820/m821/m822 qualitative-discipline verification + post-980-984 corpus integrity + #980 background-suite tombstone + fresh synthetic engine calibration
