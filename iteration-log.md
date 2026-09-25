@@ -1,3 +1,32 @@
+## #997 Type A: Atlantic x OpenAI/Anthropic Sep-25 doomsday-scenarios philosophical safety-discourse essay (mirror_excerpt_bounded) extends the m694 philosophical-register strand to a two-item Sep-2026 sequence vs carried Meta AI Watchdog accountability arms; bounded absence of theatlantic.com Meta Connect 2026 coverage; illustrative target-minus-peer delta +0.675 (MANUAL, NOT statistical) - Type A THIRD leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 16:00 PDT; main commit MAIN_SHA / anchor ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-25 16:00 PDT, iteration_type "A", **THIRD leg of the 995-999 window, continuing it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+Previous main commit #996 Type E at 15:00 PDT Sep 25 2026 (main adf61e3c, followups 1ad8eacc/8828a3fc, all verified present via git log before this run's commit). This run is #997 Type A at 16:00 PDT Sep 25 2026. Rotation A,B,C,D,E; 995-999 window D->E->A->B->C; next #998 will be Type B.
+
+### Findings
+- **NEW target arm (m829):** The Atlantic Sep 25, 2026 "Let's get specific about these doomsday scenarios" (Ideas/Essay register per the LinkedIn relay; excerpt-attested title, date, essay label, opening paragraphs) - sympathetic-exploratory safety-discourse register: the writer interviews AI-safety experts, takes the labs' doomsday beliefs as a premise worth specifying ("I don't think we can rule it out just yet"), applies zero conduct scrutiny to OpenAI or Anthropic, and pushes back only on builders' hand-waving ("I find that kind of answer unbelievably frustrating"). MANUAL ILLUSTRATIVE +0.00.
+- **CARRIED target arm (m694 / Type A #772, un-rescored per #807):** Epley Sep 6 "AI Is Already Changing What It Means to Be Human" +0.05, philosophical-anthropology register for OpenAI's Hugging Face rogue-agent episode (SZ licensed-reprint mirror).
+- **CARRIED peer arms (m481, un-rescored per #807):** Meta Jul-24-2026 Watchdog "Why Would Meta Download So Much Porn?" -0.75 (Meta in headline; Strike-3 court-document accountability) and Meta Mar-20-2025 "The Unbelievable Scale of AI's Pirated-Books Problem" -0.55.
+- **Bounded absence:** no theatlantic.com Meta Connect 2026 coverage surfaced in the Sep-25 bounded query sets (USA Today, TechXplore, Hypebeast, Gizmodo carried it instead); search-index-bounded only, theatlantic.com policy-blocked - stated as silence, not proof.
+- **Illustrative delta:** target [+0.00, +0.05] avg +0.025 vs peer [-0.75, -0.55] avg -0.65; target-minus-peer +0.675 (MANUAL ILLUSTRATIVE, descriptive not statistical). Register SELECTION claim, not tone magnitude: frontier-lab safety conduct gets the Ideas wonder register; Meta conduct gets the Watchdog accountability register (or bounded silence). Temporal EXTENSION of the m694 strand (Sep 6 -> Sep 25 two-item sequence), direction CONSISTENT with m481/m694. NOT falsification-family member; ledger holds at 30.
+
+### Statistical discipline
+MANUAL ILLUSTRATIVE tones ONLY per the Aug 28 2026 standing rule. p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run. Mechanism 829 under profiles/atlantic.yaml competitor_relationships/openai (Anthropic co-subject noted). Falsification ledger holds at 30. no_analysis_json_update true. NOT artifact-grade. Verdict directionally_supported_not_proven. Correlation is not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+
+### Research method
+6 browser.search query sets this run (The Atlantic OpenAI September 2026 essay; theatlantic.com Meta September 2026; theatlantic.com Meta September 2026 Bogost/Zuckerberg/glasses; OpenAI Pachocki "mandated safety bars" Sep 6 venue check; Atlantic doomsday-scenarios OpenAI Anthropic builders; Atlantic Meta Connect 2026 wearables). 0 browser.open (excerpt-bounded per #503; theatlantic.com policy-blocked). Pre-commit novelty greps per #715: zero test_type_a_997 files on disk (glob); no Type A #997 in git log (--grep); max numeric mechanism_id 828 in-tree pre-commit; zero numeric 829-form mechanism keys in profiles/ pre-commit; zero underscore-form 829 mechanism key strings in profiles/ and tests/ pre-commit (needles format-built, no literals carried); zero dash-form 829 references in profiles/ pre-commit; "Let's get specific about these doomsday scenarios" title zero-hit repo-wide pre-commit; linkedin pu7yc relay URL zero-hit repo-wide pre-commit; ONE new URL key this run (the LinkedIn relay, first corpus appearance). All URLs copied verbatim from Full-URL listings; the original theatlantic.com URL was NOT recovered verbatim and NOT constructed. ASCII-only, no em dashes.
+
+### Doc-sync
+51264/1321 -> 51302/1322; +38/+1 = the #997 file exactly (.venv python authoritative). 38 tests, 10 classes. Anchor + rotation guard per #565.
+
+### Concurrency
+#899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
+
+- Commit hashes: main commit MAIN_SHA (verified via git rev-parse); anchor followup ANCHOR_SHA (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 38/38 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Push status: PENDING (filled post-push per #716).
+
 ## #996 Type E: podcast sentiment 122nd verification - GF 501 confirmed again (no 502; second consecutive pure-re-surface GF cycle, ZERO new GF keys), EHE 46-day hold with ONE new verbatim URL key (cnn.com/2026/09/22, the CNN original of the #981 lapost relay; zero pre-commit corpus hits), Attention Sphere 122nd no-match (blob page SURFACED AGAIN, 6 commit URLs git-log-verified circular, Tracked Sources 121->122), press 7/7 in-corpus re-surfaces, frontier HOLDS at Sep 24 - Type E SECOND leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 15:00 PDT; main commit adf61e3c / anchor 1ad8eacc; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-25 15:00 PDT, iteration_type "E", **SECOND leg of the 995-999 window, continuing it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

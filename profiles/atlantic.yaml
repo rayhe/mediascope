@@ -1327,6 +1327,120 @@ competitor_relationships:
         - "https://www.sueddeutsche.de/projekte/artikel/gesellschaft/ai-is-already-changing-what-it-means-to-be-human-e286988/?utm_campaign=sz_meta"
         - "https://news.chicagobooth.edu/chicago-booth/home/media-relations-and-communications/in-the-news"
         - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+    type_a_997_atlantic_frontier_labs_doomsday_scenarios_philosophical_safety_register_vs_meta_watchdog_sep25_2026:
+      mechanism_id: 829
+      iteration: 997
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      iteration_title: "Atlantic x OpenAI/Anthropic Sep-25 doomsday-scenarios philosophical safety register vs Meta Watchdog (m694 strand extension)"
+      iteration_time: "2026-09-25 16:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      author: "Kit (with Ray)"
+      publication_pair: "Atlantic x OpenAI/Anthropic"
+      pair: "The Atlantic x OpenAI/Anthropic (vs Meta)"
+      competitor: "openai"
+      co_subject: "anthropic"
+      co_subject_note: "The Sep-25 essay names the builders generically ('the people who are building AI systems') in the visible relay excerpt; OpenAI/Anthropic entity targeting is inferred from the Sep-2026 doomsday discourse context (Altman's Sep 3 endorsement, Amodei's Sep 12 essay, Coxon's Sep 8 Anthropic resignation, Hubinger's exit). Filed under openai as the May-2024 licensing payer and m481/m694 strand owner; cross-referenced to m404 (Atlantic x Anthropic mitigation credit)."
+      comparison_entities: [meta]
+      articles:
+        - title: "Let's get specific about these doomsday scenarios"
+          publication: "The Atlantic"
+          date: "2026-09-25"
+          status: "NEW this run"
+          arm: "target"
+          entity: "OpenAI/Anthropic (frontier labs)"
+          register: "philosophical_safety_discourse_essay"
+          relay_url: "https://www.linkedin.com/pulse/lets-get-specific-ai-doomsday-scenarios-the-atlantic-pu7yc"
+          original_url_status: "theatlantic.com original URL not recovered verbatim from search results; not constructed per convention"
+          evidence_tier: "mirror_excerpt_bounded"
+          evidence_note: "LinkedIn relay of the Atlantic original; title, publication date, essay section label, and opening paragraphs attested verbatim; body beyond the excerpt unread (theatlantic.com policy-blocked for direct fetch)"
+          manual_illustrative_tone: 0.0
+          tone_note: "MANUAL ILLUSTRATIVE hand-assigned tone, not an empirical corpus score; sympathetic-exploratory premise (builders' doomsday beliefs treated as worth specifying, not dismissed; 'I don't think we can rule it out just yet'), zero conduct scrutiny of any lab; mild builder-skepticism note ('I find that kind of answer unbelievably frustrating')"
+        - title: "AI Is Already Changing What It Means to Be Human"
+          publication: "The Atlantic"
+          date: "2026-09-06"
+          author: "Nicholas Epley"
+          status: "CARRIED from mechanism 694 (Type A #772), un-rescored per the #807 convention"
+          arm: "target"
+          entity: "OpenAI"
+          register: "philosophical_anthropology_essay"
+          url: "https://www.sueddeutsche.de/projekte/artikel/gesellschaft/ai-is-already-changing-what-it-means-to-be-human-e286988/?utm_campaign=sz_meta"
+          manual_illustrative_tone: 0.05
+        - title: "Why Would Meta Download So Much Porn?"
+          publication: "The Atlantic"
+          date: "2026-07-24"
+          status: "CARRIED from mechanism 481, un-rescored per the #807 convention"
+          arm: "peer"
+          entity: "Meta"
+          register: "ai_watchdog_accountability_investigation"
+          url: "https://web.archive.org/web/20260724235323/https://www.theatlantic.com/technology/2026/07/meta-strike-3-porn-lawsuit/688023/"
+          manual_illustrative_tone: -0.75
+        - title: "The Unbelievable Scale of AI's Pirated-Books Problem"
+          publication: "The Atlantic"
+          date: "2025-03-20"
+          status: "CARRIED from mechanism 481 (no URL in m481 record; cited by title/date), un-rescored per the #807 convention"
+          arm: "peer"
+          entity: "Meta"
+          register: "ai_watchdog_accountability_investigation"
+          manual_illustrative_tone: -0.55
+      bounded_absence:
+        claim: "No theatlantic.com Meta Connect 2026 coverage surfaced in the Sep-25 bounded query sets (queries: 'site-restricted theatlantic.com Meta September 2026', 'The Atlantic Meta Connect 2026 wearables'); result sets carried USA Today, TechXplore, Hypebeast, Gizmodo, and other outlets instead."
+        scope: "Bounded search-index absence only; theatlantic.com is policy-blocked for direct fetch, so the claim cannot be promoted to a publication-level absence. Stated as silence, not proof of silence."
+      asymmetry_scorer_result:
+        target_entity: "openai"
+        reference_entity: "meta"
+        publication: "the-atlantic"
+        mechanism: 829
+        iteration: 997
+        target_tones: [0.0, 0.05]
+        target_avg: 0.025
+        meta_tones: [-0.75, -0.55]
+        meta_avg: -0.65
+        delta_target_minus_meta: 0.675
+        delta_calc: "(+0.025) - (-0.65) = +0.675"
+        artifact_grade: false
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+        interpretation: "Illustrative target-minus-peer delta +0.675 is directionally consistent with the m481/m694 strand (register selection favoring the licensing payer's ecosystem): frontier-lab safety conduct is routed to the philosophical Ideas register (two Sep-2026 essays), while Meta conduct is routed to the AI Watchdog accountability register (two investigations) or bounded silence. MANUAL ILLUSTRATIVE tones only; the delta is descriptive, not statistical."
+        limitations: "n=1 new arm + 1 carried vs 2 carried; tones hand-assigned; new arm attested at mirror-excerpt level; entity targeting of the Sep-25 essay inferred from discourse context, not verified in-body; bounded absence is search-index-bounded."
+      manual_illustrative_tones_note: "MANUAL ILLUSTRATIVE hand-assigned tones for the asymmetry scorer input only, not empirical corpus scores; DO NOT claim empirical significance; n=2 vs n=2"
+      statistical_discipline: "p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False per the Aug 28 2026 standing rule; engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; correlation not causation"
+      verdict: "directionally_supported_not_proven"
+      no_analysis_json_update: true
+      finding: "The Atlantic published a second frontier-lab philosophical-safety essay inside the Sep 6-25 window: 'Let's get specific about these doomsday scenarios' (Sep 25, 2026, Ideas/Essay register per the relay) takes the AI labs' doomsday beliefs as a premise worth specifying rather than dismissing - the writer interviews AI-safety experts, treats the builders' concerns as serious ('I don't think we can rule it out just yet'), and applies zero conduct scrutiny to OpenAI or Anthropic. This EXTENDS m694 (Epley's Sep 6 'AI Is Already Changing What It Means to Be Human', +0.05, philosophical-anthropology register for OpenAI's Hugging Face rogue-agent episode): the philosophical register for frontier-lab safety conduct is now a two-item Sep-2026 sequence, not a one-off. Meta's Sep-2026 conduct - the Connect-week wearable launch that every other major outlet covered - drew NO theatlantic.com coverage in the bounded Sep-25 query sets (bounded absence, stated as silence not proof), while Meta's carried corpus arms sit in the AI Watchdog accountability register (m481: Jul-24 'Why Would Meta Download So Much Porn?' -0.75; Mar-2025 'The Unbelievable Scale of AI's Pirated-Books Problem' -0.55). Illustrative target-minus-peer delta +0.675 (target [+0.00, +0.05] avg +0.025 vs peer [-0.75, -0.55] avg -0.65). The claim is register SELECTION, not tone magnitude: frontier-lab safety conduct gets the Ideas wonder register; Meta conduct gets the Watchdog accountability register (or bounded silence). Direction CONSISTENT with m481 (watchdog entity selection) and m694 (philosophical-essay register); a temporal EXTENSION of the m694 strand, not a replication. NOT a falsification-family member. Ledger holds at 30. Correlation only, not causation. Hypothesis-generating only."
+      discovery_summary: "Type A #997 (2026-09-25 16:00 PDT), third leg of the 995-999 window (D #995 -> E #996 -> A #997): The Atlantic's Sep-25 doomsday-scenarios essay (relay-excerpt attested) extends the m694 philosophical-register strand to a two-item Sep-2026 sequence for frontier labs, while Meta's Connect-week conduct holds a bounded theatlantic.com silence and Meta's carried arms remain Watchdog accountability investigations; illustrative delta +0.675 (MANUAL, NOT statistical); direction consistent with m481/m694, NOT falsification-family; ledger holds at 30; no analysis.json update."
+      confounders:
+        - "STRONG: Vertical/genre routing - the doomsday essay is an Ideas essay examining a cultural-philosophical question; the Watchdog vertical investigates training-data provenance. The register may route on vertical mission, not entity favoritism (m481's own STRONG confounder: Watchdog covers provenance, not safety discourse)."
+        - "STRONG: News-peg skew - the Sep 8-25 window was saturated with frontier-lab safety pegs (Amodei's Sep 12 'We Must Pace the Frontier' essay, Coxon's Sep 8 Anthropic resignation, Pachocki's Sep 6 'An Alien Mind', the UN Security Council AI session); Meta's Connect was a product launch - different news genres carry different registers by default."
+        - "STRONG: Excerpt-bounded evidence - theatlantic.com is policy-blocked for direct fetch; the Sep-25 essay is attested via a LinkedIn relay excerpt (title + opening paragraphs only); the body beyond the excerpt may contain adversarial passages; the essay names the builders generically in the visible excerpt, so OpenAI/Anthropic entity targeting is inferred from the discourse context, not verified in-body."
+        - "MODERATE: Degenerate statistical contract - n=1 new arm + 1 carried vs 2 carried; tones hand-assigned; no engine run; descriptive only."
+        - "MODERATE: Document affordance - Meta's Watchdog pieces were built on court documents (Strike-3 filings, unsealed LibGen comms); frontier-lab safety discourse offers statements, not documents; accountability registers need documents to exist."
+        - "WEAK: The relay did not surface the essay's byline; author voice (staff vs contributor) may explain the register independently of entity."
+      counterevidence:
+        - "The essay is not hagiography: 'I find that kind of answer unbelievably frustrating' pushes back on builders' hand-waving, so the register carries critical notes, paralleling m694's 'creeped out' note - the register is not payer-flattering."
+        - "The Atlantic's Ideas vertical publishes philosophical essays on any lab's conduct; the register assignment may be vertical-driven, suggesting genre routing over entity selection."
+        - "Meta's bounded Connect silence may be magazine cadence, not selection: the monthly long-form bar may simply not clear a same-week product launch for any entity - the bounded-absence claim stays provisional."
+        - "The May-2024 tie is licensing (undisclosed terms), not equity; the incentive is attention-market, and incentive attribution stays INCONCLUSIVE per m694."
+      strongest_counterargument: "The Atlantic is a monthly long-form magazine: its Ideas vertical assigns philosophical essays to cultural questions and its Watchdog vertical assigns accountability investigations to document-rich stories. The Sep-25 doomsday essay and the Epley piece are both Ideas essays because AI safety discourse is a cultural-philosophical topic, while Meta's training-data conduct produced court documents that fit an accountability investigation. Register selection tracks story affordance and vertical mission, and the licensing tie is epiphenomenal. The bounded Connect silence is consistent with the magazine's cadence bar, not entity selection."
+      connects_to: [481, 694, 404, 572, 718, 825]
+      falsification_family_member: false
+      falsification_note: "NOT a falsification-family member; thesis-consistent direction (register selection favoring the licensing payer's ecosystem). Ledger holds at 30 this run (no new member; THIRTIETH member-form in profiles/careers/journalists.yaml remains the terminal member; THIRTY-FIRST remains the negative guard)."
+      falsification_ledger: 30
+      novelty: "Zero test_type_a_997 files on disk pre-commit (glob); no 'Type A #997' in git log pre-commit; 'Let's get specific about these doomsday scenarios' title zero-hit repo-wide pre-commit; linkedin pu7yc relay URL zero-hit repo-wide pre-commit; max numeric mechanism_id 828 pre-commit; zero underscore-form 829 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per #715). FIRST corpus mechanism on the Atlantic Sep-25 doomsday-scenarios essay; temporal EXTENSION of the m694 philosophical-register strand (Sep 6 Epley -> Sep 25 doomsday); distinct from m481 (watchdog entity selection, different register), m404 (Anthropic mitigation credit), m572 (Apple register exemption)."
+      research_method: "6 browser.search query sets this run (The Atlantic OpenAI September 2026 essay; theatlantic.com Meta September 2026; theatlantic.com Meta September 2026 Bogost/Zuckerberg/glasses; OpenAI Pachocki 'mandated safety bars' Sep 6 venue check; Atlantic doomsday-scenarios OpenAI Anthropic builders; Atlantic Meta Connect 2026 wearables). 0 browser.open (excerpt-bounded per #503; theatlantic.com policy-blocked). New arm attested via the LinkedIn relay of the Atlantic original (verbatim excerpt + Full-URL listing); the original theatlantic.com URL was not recovered verbatim and was NOT constructed. All URLs copied verbatim from search-result Full-URL listings. ASCII-only, no em dashes."
+      test_file: "tests/test_type_a_997_atlantic_frontier_labs_doomsday_scenarios_philosophical_safety_register_vs_meta_watchdog_sep25_4pm.py"
+      source_urls:
+        - "https://www.linkedin.com/pulse/lets-get-specific-ai-doomsday-scenarios-the-atlantic-pu7yc"
+        - "https://www.sueddeutsche.de/projekte/artikel/gesellschaft/ai-is-already-changing-what-it-means-to-be-human-e286988/?utm_campaign=sz_meta"
+        - "https://web.archive.org/web/20260724235323/https://www.theatlantic.com/technology/2026/07/meta-strike-3-porn-lawsuit/688023/"
+        - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+      sources_verified_date: "2026-09-25 UTC"
+      no_em_dash_verified: true
+      https_provenance: true
   meta:
     financial_tie: "none"
     estimated_value: "$0"
