@@ -60,7 +60,7 @@ README = REPO / "README.md"
 ARCH = REPO / "docs" / "ARCHITECTURE.md"
 LOG = REPO / "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "c8f9fc97"
 
 NEW_URLS = [
     "https://www.reuters.com/legal/litigation/australia-passes-law-levy-tech-giants-that-fail-pay-local-news-2026-08-20/",
