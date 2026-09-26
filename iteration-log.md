@@ -28,7 +28,7 @@ Values hardcoded after a scratch run this run via the real engine (calculate_asy
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit bffb3f7d4a3e528812ea9edb77ff444c9b203c49 (verified via git rev-parse); anchor followup 2bcb9955cbc8c689c29e9adb8d44af5a04f7e3c8 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 68/68 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PUSHED per #716 - main bffb3f7d4a3e528812ea9edb77ff444c9b203c49 + anchor 2bcb9955cbc8c689c29e9adb8d44af5a04f7e3c8 + log-hash LOGHASH_SHA_PENDING pushed to origin main in one fast-forward; remote tip verified equal to local via git ls-remote Sep 25 2026 19:xx PDT.
+- Push status: PUSHED per #716 - main bffb3f7d4a3e528812ea9edb77ff444c9b203c49 + anchor 2bcb9955cbc8c689c29e9adb8d44af5a04f7e3c8 + log-hash cf1cdc7b3caf1329de38b58083817f1a6d9e24a6 pushed to origin main in one fast-forward (2e980256..cf1cdc7b); remote tip cf1cdc7b3caf1329de38b58083817f1a6d9e24a6 verified equal to local via git ls-remote Sep 25 2026 19:2x PDT.
 
 ## #999 Type C: OpenAI x Yelp content-to-commerce licensing (mechanism 831) - FIRST dedicated corpus mechanism on a commerce-conversion licensing leg; ELEVENTH relationship direction in the m807 enumeration - FIFTH and CLOSING leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 18:00 PDT; main commit 608f41be0ce4a5b9f7da5afbe9e2e68e67dc91ed / anchor fee55a6b5757bb2b5b077d9eb88d8f44b0cc403c; log-hash followup registers both hashes here per #721 (this commit))
 
