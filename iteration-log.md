@@ -1,3 +1,30 @@
+## #1001 Type E: podcast sentiment 123rd verification (GF 501 confirmed again, no 502, ZERO new GF keys third consecutive pure-re-surface; EHE 46-day hold, ONE new EHE URL key kayvan-mirza linkedin op-ed; Attention Sphere 123rd no-match, Tracked Sources 122->123; press 5/7 re-surfaces + TWO new LED-fix family URL keys, frontier HOLDS at Sep 24) - Type E SECOND leg of the 1000-1004 window D->E->A->B->C (Sep 25 2026, 20:00 PDT; main commit [PATCH] / anchor [PATCH]; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-25 20:00 PDT, iteration_type "E", **SECOND leg of the 1000-1004 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+Previous main commit #1000 Type D at 19:00 PDT Sep 25 2026 (main bffb3f7d / anchor 2bcb9955, all verified present via git log before this run's commit). This run is #1001 Type E at 20:00 PDT Sep 25 2026. Rotation A,B,C,D,E; 1000-1004 window D->E->A->B->C; next #1002 will be Type A.
+
+### Verification targets
+- **Guilty Feminist**: episode 501 "Out North East" (Sep 21 2026) confirmed again via listennotes (crawled 1d) + goloudnow main (crawled 12h); youtube 500 page variant + 3 goloudnow old-episode variants (331960, 608555, 531534) re-surfaced; ZERO new GF keys - third consecutive pure-re-surface cycle (#991, #996, #1001); no episode 502 (four-day absence consistent with weekly cadence); zero Meta/wearables content across all 123 cycles.
+- **Everyone Hates Elon**: activist campaign (not a podcast); Aug 10 2026 Epstein spoof -> Sep 25 = 46-day hold; 4 logged keys re-surfaced (techtimes, linkedin privacy-roundup, lapost cnn relay, afrotech); ONE new verbatim EHE URL key: linkedin kayvan-mirza-zwaze op-ed (zero pre-commit corpus hits), campaign-coverage not a new campaign motif; 2 own-repo GitHub URLs rejected circular; no competitor-equivalent campaign in any of 123 cycles.
+- **Attention Sphere**: 123rd no-match as a podcast; 7 results all own-repo GitHub URLs, blob SURFACED AGAIN + 6 commit URLs 9590385/a288c86/a2b656f/25c730e/6da2928/fe4528b (identical to the #996 set, git-log-verified circular); Tracked Sources 122->123; task-spec name remains misidentified; real-world identity stands per #591 Kendall Schrohe.
+- **Meta smart-glasses press**: 7 results - 5/7 in-corpus re-surfaces (ppc.land, startupfortune, usatoday, designtaxi 39120) + TWO new verbatim press URL keys (gizbot LED-fix Sep 2, m1k.tech LED-fix EU-consent Sep 5) - same #881 LED-tamper news-event family, new outlets/keys; frontier HOLDS at Sep 24; Meta-exclusive privacy-pressure framing across all 123 cycles; snippet-bounded, tone NOT_SCORED.
+
+### Statistical discipline
+Manual MONITORING-ONLY per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run; Type E monitoring-only, no mechanisms; max numeric mechanism_id 831 pre-commit and post-commit; zero numeric/underscore/dash-form 832 mechanism keys pre-commit and post-commit; falsification ledger holds at 30; no_analysis_json_update true; NOT artifact-grade; verdict directionally_supported_not_proven. Correlation is not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+
+### Research method
+4 browser.search query sets, 0 browser.open (excerpt-bounded per #503). 27 result rows / 17 non-circular distinct URL keys / THREE new verbatim URL keys. Test file: tests/test_type_e_1001_podcast_sentiment_123rd_verification_sep25_8pm.py - 51 tests, 11 classes.
+
+### Doc-sync
+51458/1325 -> 51509/1326; +51/+1 = the #1001 file exactly (.venv python authoritative). 51 tests, 11 classes. Anchor + rotation guard per #565.
+
+### Concurrency
+#899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
+
+- Commit hashes: main commit [PATCH] (verified via git rev-parse); anchor followup [PATCH] (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 51/51 file tests green post-followup); log-hash followup registers both hashes here per #721.
+
 ## #1000 Type D: m829/m830/m831 qualitative-discipline verification + post-995-999 corpus integrity (max numeric mechanism_id 831; zero 832 keys numeric/underscore/dash; ledger holds at 30; THIRTIETH member-form present exactly once (m818, journalists.yaml); THIRTY-FIRST member-form negative guard) + #995 background-suite tombstone (FORTY-FIRST consecutive death; lineage FIFTY-NINTH -> SIXTIETH) + fresh synthetic engine calibration (strong n=8 p=4.39e-11 engine-significant; near-null p=0.797 silent; degenerate n=1-on-m830-pair guard fires) + full suite re-launched - Type D FIRST leg of the 1000-1004 window D->E->A->B->C OPENING it (Sep 25 2026, 19:00 PDT; main commit bffb3f7d4a3e528812ea9edb77ff444c9b203c49 / anchor 2bcb9955cbc8c689c29e9adb8d44af5a04f7e3c8; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-25 19:00 PDT, iteration_type "D", **FIRST leg of the 1000-1004 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
