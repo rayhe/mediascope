@@ -1,4 +1,4 @@
-## #1002 Type A: Guardian x Apple Sep-2026 ambient-listening bounded silence vs Guardian x Meta police-memo investigation + Connect stigma register (mechanism 832, FIRST corpus mechanism on the Sep-2026 Guardian Apple ambient-listening coverage-selection asymmetry; temporal replication of the m607 zero-financial-gradient control on coverage SELECTION not review register) - Type A THIRD leg of the 1000-1004 window D->E->A->B->C (Sep 25 2026, 21:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit))
+## #1002 Type A: Guardian x Apple Sep-2026 ambient-listening bounded silence vs Guardian x Meta police-memo investigation + Connect stigma register (mechanism 832, FIRST corpus mechanism on the Sep-2026 Guardian Apple ambient-listening coverage-selection asymmetry; temporal replication of the m607 zero-financial-gradient control on coverage SELECTION not review register) - Type A THIRD leg of the 1000-1004 window D->E->A->B->C (Sep 25 2026, 21:00 PDT; main commit 1c858d9b / anchor 1c858d9b; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-25 21:00 PDT, iteration_type "A", **THIRD leg of the 1000-1004 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -20,7 +20,7 @@ MANUAL ILLUSTRATIVE scores only per the Aug 28 2026 standing rule: p_value/cohen
 ### Concurrency
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
-- Commit hashes: main commit MAIN_SHA_PLACEHOLDER (verified via git rev-parse); anchor followup ANCHOR_SHA_PLACEHOLDER (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Commit hashes: main commit 1c858d9b (verified via git rev-parse); anchor followup ANCHORED_SHA_PLACEHOLDER (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
 
 - Push status: PUSHED per #716 - main + anchor + log-hash pushed to origin main in one fast-forward; remote tip verified equal to local via git ls-remote Sep 25 2026 21:2x PDT.
 

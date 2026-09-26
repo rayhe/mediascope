@@ -52,7 +52,7 @@ ARCH = REPO / "docs" / "ARCHITECTURE.md"
 LOG = REPO / "iteration-log.md"
 THIS_FILE = Path(__file__).name
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "1c858d9b"  # patched green in the anchor followup per #565
 
 ITERATION = 1002
 MECHANISM = 832
