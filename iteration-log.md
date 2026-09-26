@@ -29,7 +29,7 @@ Manual ILLUSTRATIVE-ONLY per the Aug 28 2026 standing rule: tone scores MANUAL I
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked test) all in-flight and untouched - targeted staging of the #1012 set only.
 
 - Commit hashes: main commit 788bc9a8d2099253160b7303ff09a70a0a10be74 (verified via git rev-parse); anchor followup 06287964114e13ff7de97742060d2409ecb7458d (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 46/46 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PUSH_PENDING at entry time; updated in the push-status finalizer per #716.
+- Push status: PUSHED per #716 - main 788bc9a8 + anchor 06287964 + log-hash 6126457c pushed to origin main (rayhe/mediascope-asymmetry) in one fast-forward (b6b7f0ed..6126457c); remote tip 6126457c70a3dd88f0c47fa146636d4b9f1a72f9 verified equal to local via git ls-remote Sep 26 2026 07:0x PDT. Note: remote's pre-push tip was b6b7f0ed (#1010 log-hash), so this push also delivered the #1011 main/anchor/log-hash/finalizer commits in the same fast-forward. Concurrency: #899/#938/#900 in-flight untouched.
 
 ## #1011 Type E: podcast sentiment 125th verification (GF 501 confirmed again, no 502, ZERO new GF keys fifth consecutive pure-re-surface; EHE 47-day hold, ZERO new URL keys; Attention Sphere 125th no-match, Tracked Sources 124->125; press FOUR new-to-corpus keys + THREE re-surfaces, frontier ADVANCES Sep 24 -> Sep 25 first since #966) - Type E SECOND leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 06:00 PDT; main commit d9288ceb07ce1e4d6943193535a52dfe4ebe11bf / anchor 5542710e8d98af1dca44951ef861651f16abd806; log-hash followup registers both hashes here per #721 (this commit))
 
