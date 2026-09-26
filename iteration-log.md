@@ -22,7 +22,7 @@ MANUAL ILLUSTRATIVE scores only per the Aug 28 2026 standing rule: p_value/cohen
 
 - Commit hashes: main commit 1c858d9bd0e031a4e1863b6d424f4bbe8aa86b70 (verified via git rev-parse); anchor followup 01fcba572a342378ac080e8c6046cbec76470b22 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
 
-- Push status: PUSHED per #716 - main + anchor + log-hash pushed to origin main in one fast-forward; remote tip verified equal to local via git ls-remote Sep 25 2026 21:2x PDT.
+- Push status: PUSHED per #716 - main 1c858d9b + anchor 01fcba57 + log-hash b17f5762 pushed to origin main in one fast-forward (79ada92a..b17f5762); remote tip b17f57627b279a78ddd28c405f08cd5fb44e81c0 verified equal to local via git ls-remote Sep 25 2026 21:2x PDT.
 
 ## #1001 Type E: podcast sentiment 123rd verification (GF 501 confirmed again, no 502, ZERO new GF keys third consecutive pure-re-surface; EHE 46-day hold, ONE new EHE URL key kayvan-mirza linkedin op-ed; Attention Sphere 123rd no-match, Tracked Sources 122->123; press 5/7 re-surfaces + TWO new LED-fix family URL keys, frontier HOLDS at Sep 24) - Type E SECOND leg of the 1000-1004 window D->E->A->B->C (Sep 25 2026, 20:00 PDT; main commit 9d76efcf153304a3d2d34f9059e796da806181b0 / anchor 9d76efcf153304a3d2d34f9059e796da806181b0; log-hash followup registers both hashes here per #721 (this commit))
 
