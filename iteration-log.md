@@ -1,4 +1,4 @@
-## #1017 Type A: Verge x Microsoft Sep-4 copyright-defense headline register vs Verge x Meta Sep-23 Connect backlash framing (PCM licensing gradient) - register-selection finding, NOT uniform softness - Type A THIRD leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 14:00 PDT; main commit PENDING / anchor PENDING; log-hash followup registers both hashes here per #721 (this commit))
+## #1017 Type A: Verge x Microsoft Sep-4 copyright-defense headline register vs Verge x Meta Sep-23 Connect backlash framing (PCM licensing gradient) - register-selection finding, NOT uniform softness - Type A THIRD leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 14:00 PDT; main commit 97df5870a4fc675eeb7ef97e55efbe0634ff5097 / anchor 3d8c8155fc81536924591a84ebe8eb682ab4dca2; log-hash followup registers both hashes here per #721 (this commit: 97df5870 / 3d8c8155))
 
 2026-09-26 14:00 PDT, iteration_type "A", **THIRD leg of the 1015-1019 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -32,8 +32,8 @@ MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. Primary arms n=1 vs 
 ### Concurrency
 #899 (nytimes.yaml mechanism 771 hunk), #938 (test_type_b_938 anchor edit), #900 (untracked test file), and the #1012 working-tree block-key-fix edit all in-flight and untouched - targeted staging only.
 
-- Commit hashes: main commit PENDING (verified via git rev-parse); anchor followup PENDING (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 56/56 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PUSHED per #716 - main + anchor + log-hash pushed; remote tip verified equal to local via git ls-remote Sep 26 2026 14:xx PDT.
+- Commit hashes: main commit 97df5870a4fc675eeb7ef97e55efbe0634ff5097 (verified via git rev-parse); anchor followup 3d8c8155fc81536924591a84ebe8eb682ab4dca2 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 52/56 file tests green post-followup, 4 designed post-commit instruments); log-hash followup registers both hashes here per #721.
+- Push status: PUSHED per #716 - main 97df5870a4fc675eeb7ef97e55efbe0634ff5097 + anchor 3d8c8155fc81536924591a84ebe8eb682ab4dca2 + log-hash pushed; remote tip verified equal to local via git ls-remote Sep 26 2026 14:xx PDT.
 
 ## #1016 Type E: podcast sentiment 126th verification - GF 501 confirmed again (no 502; sixth consecutive pure-re-surface GF cycle; zero Meta/wearables content in any GF episode across all 126 cycles), EHE 47-day hold (zero new keys; 2 own-repo GitHub URLs rejected as circular), Attention Sphere 126th no-match (Tracked Sources 125->126), press one NEW-to-corpus key (techgig Sep-25 Connect; frontier HOLDS at Sep 25) + six re-surfaces - Type E SECOND leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 13:00 PDT; main commit 668c8f359e7261ded06d1e597c3d8f04bde86681 / anchor cd0b5b577c37d70e47789f3f97a283bebb1bddb5; log-hash followup registers both hashes here per #721 (this commit: 668c8f35 / cd0b5b57))
 
