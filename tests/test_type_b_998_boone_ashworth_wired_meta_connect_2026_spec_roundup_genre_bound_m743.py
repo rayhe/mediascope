@@ -362,7 +362,7 @@ class TestIterationLog998:
         ]
         assert headings[0].startswith("## #998")
 
-    def test_entry_mentions_mechanism_830_and_ashworth(self):
+    def test_entry_mentions_new_mechanism_id_and_ashworth(self):
         entry = self._entry().lower()
         assert "mechanism 830" in entry
         assert "boone ashworth" in entry
