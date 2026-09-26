@@ -1,3 +1,30 @@
+## #1009 Type C: Akamai x Anthropic $11.6B seven-year cloud deal + 5% equity warrant (announced Sep 24 2026) - DEMAND-FOR-EQUITY (warrant-for-demand), THIRTEENTH relationship direction (mechanism 837) - Type C CLOSING leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 04:00 PDT; main commit PATCH_ME_MAIN / anchor PATCH_ME_ANCHOR; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-26 04:00 PDT, iteration_type "C", **CLOSING leg of the 1005-1009 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+Previous main commit #1008 Type B at 03:00 PDT Sep 26 2026 (main e9ffd2ec4cb8435aa29413f8dc65082d9cea8edc, anchor fc799a0d74a4f771f34dd4fe61008ceace2e0708, log-hash e6207eea, push-status af3becee, all verified present via git log before this run's commit). This run is #1009 Type C at 04:00 PDT Sep 26 2026. Rotation A,B,C,D,E; 1005-1009 window D->E->A->B->C; next #1010 will be Type D, opening the 1010-1014 window.
+
+### Verification targets
+- **The deal** (excerpt-tier per #503): On Sep 24 2026 Akamai announced Anthropic's ~$11.6B seven-year cloud-capacity commitment for CPU workloads (Project Plans 2 and 3 under the Master Services Agreement), stapled to a warrant giving Anthropic up to 5% of Akamai: 7.7M non-voting convertible Series B preferred shares at $111.33/share, ~2% vesting on the $11.6B commitment and ~1% per additional $3B up to $9B optional (~$20B ceiling). The supplier pays the customer in equity for committed demand: the published exchange rate is ~1% of supplier equity per $3B of demand (FourWeekMBA).
+- **Corpus context**: the corpus's earlier Akamai x Anthropic $1.8B computing deal (Aug 2026) had no warrant leg; the m334 Nscale $45B commitment has no disclosed warrant either. Equity-for-demand is not uniform across the lab's stack. The warrant is for Akamai equity, so its value depends on Akamai's share price vs the $111.33 exercise price and vesting/commitment conditions; Anthropic's own IPO status is irrelevant to the warrant's direct economics.
+- **Finding**: DEMAND-FOR-EQUITY (warrant-for-demand) - the AI lab extracts equity upside in its infrastructure supplier as consideration for committed demand, inverting the usual vendor/customer equity flow. Extends infrastructure-capture (m738): where m738 was the lab capturing a publisher's tech stack (Roundtable x Paradium), m837 is the lab capturing equity in its compute supplier. The lab's committed demand is the scarce asset; suppliers bid with shares. THIRTEENTH relationship direction per the m807 enumeration (13 demand-for-equity m837), extending m807 (vendor-embed), m810, m828, m831, m834. Correlation, not causation.
+
+### Statistical discipline
+Qualitative financial-incentive mapping: tone NOT_SCORED, no tone statistics, engine NOT run at the finding layer; verdict directionally_supported_not_proven; no analysis.json update; NOT artifact-grade; NOT falsification-family member; ledger holds at 30 (THIRTIETH member-form once, m818 journalists.yaml; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST negative guard wordings pinned per #1000); max numeric mechanism_id 836 pre-commit -> 837 post-commit; zero numeric/underscore/dash-form 838 keys pre-commit and post-commit; 6/6 source URLs zero-hit repo-wide pre-commit; cautious language required. Correlation is not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+
+### Research method
+6 browser.search query sets, 0 browser.open (excerpt-bounded per #503): (1) Akamai Anthropic $11.6B - selected GlobeNewswire release + WNCY/LA Post Reuters reprints; (2) Akamai Anthropic warrant 7.7 million shares - selected FourWeekMBA structure analysis; (3) Akamai Anthropic $11.6B warrant SEC filing - selected TradingView deal-summary and AIStockWire FAQ; (4) 2026 AI cloud deals warrant equity - context only; (5) Akamai Anthropic Project Plans MSA - corroborated structure; (6) Akamai Lenovo Jabil $1.7B - separated adjacent announcement (TradingView). URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps per #715: zero test_type_c_1009 files (glob); no "Type C #1009" in git log (--grep); max numeric mechanism_id 836; zero underscore/dash-form 837 keys repo-wide; block key zero-hit; all 6 source URLs zero-hit repo-wide. Test file: tests/test_type_c_1009_akamai_anthropic_116b_warrant_demand_for_equity_sep26_4am.py - 52 tests, 11 classes.
+
+### Doc-sync
+51830/1333 -> 51882/1334; +52/+1 = the #1009 file exactly (.venv python authoritative). 52 tests, 11 classes. Anchor + rotation guard per #565. Also repairs the README header-stats staleness left by #1005-#1008 (header still read 51642/1329 from #1004 while rows carried the running totals).
+
+### Concurrency
+#899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor patch), #900 (untracked test) all in-flight and untouched - targeted staging of the m837 hunk only.
+
+- Commit hashes: main commit PATCH_ME_MAIN (verified via git rev-parse); anchor followup PATCH_ME_ANCHOR (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch); log-hash followup registers both hashes here per #721.
+- Push status: PENDING per #716 - to be pushed to origin main (rayhe/mediascope-asymmetry, from git remote get-url origin, never a constructed URL) after followups; remote tip to be verified equal to local via git ls-remote. Concurrency: #899/#938/#900 in-flight untouched.
+
 ## #1008 Type B: Lily Hay Newman (WIRED) Sep-23 Meta Connect "Pinky Promises" co-byline vs Sep-9 Apple Watch Audio Intelligence - PEG-MATCHED replication of mechanism 635 (mechanism 836) - Type B FOURTH leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 03:00 PDT; main commit e9ffd2ec4cb8435aa29413f8dc65082d9cea8edc / anchor fc799a0d74a4f771f34dd4fe61008ceace2e0708; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-26 03:00 PDT, iteration_type "B", **FOURTH leg of the 1005-1009 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

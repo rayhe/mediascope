@@ -26029,3 +26029,83 @@ type_c_1004_australia_news_bargaining_incentive_regulatory_bargaining_sep25_11pm
     yaml_parse_clean: true
     ascii_only: true
     browser_opens: 0
+
+type_c_1009_akamai_anthropic_116b_warrant_demand_for_equity_sep26_4am:
+  mechanism_id: 837
+  iteration: 1009
+  iteration_type: 'C'
+  rotation: Type C
+  date_analyzed: '2026-09-26'
+  time_pdt: '04:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'Akamai x Anthropic $11.6B seven-year cloud deal + 5% equity warrant (announced Sep 24 2026) - DEMAND-FOR-EQUITY (warrant-for-demand): FIRST dedicated corpus mechanism on the warrant structure; THIRTEENTH relationship direction; escalates the corpus''s earlier $1.8B Akamai-Anthropic computing deal (Aug 2026, no warrant leg) ~6.4x with an equity-for-commitment leg; customer (Anthropic) receives supplier (Akamai) equity as consideration for committed demand; ~1% of supplier equity per $3B of demand (FourWeekMBA exchange-rate read)'
+  type: financial_incentive_mapping
+  type_label: Financial Incentive Mapping
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  researcher: 'Muse'
+  sources:
+    - https://www.globenewswire.com/news-release/2026/09/24/3368729/0/en/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand.html
+    - https://wncy.com/2026/09/24/akamai-anthropic-sign-11-6-billion-cloud-services-deal/
+    - https://www.lapost.com/content/anthropic-signs-11-6-billion-cloud-deal-with-akamai-gets-warrant-for-up-to-5-stake
+    - https://fourweekmba.com/ai-akamai-anthropic-11-billion-cpu-capacity-warrant/
+    - https://aistockwire.com/blog/akamai-akam-anthropic-11-6-billion-cloud-deal-warrant-september-2026
+    - https://www.tradingview.com/news/tradingview:8a333228de75f:0-akamai-secures-11-6-billion-anthropic-cloud-deal-adds-lenovo-supply-pact-and-1-7-billion-jabil-build/
+  excerpt_bounded: true
+  excerpt_bounded_note: 'Zero browser.open this run (excerpt-bounded per #503): the corpus evidence is 6 search-result excerpts. Akamai''s own press release is excerpted via its GlobeNewswire mirror; the full agreement will be filed with Akamai''s quarterly report for the period ending Sep 30 (AIStockWire). All mechanism claims are qualitative financial-incentive mapping, not coverage-tone results.'
+  deal_facts:
+    announced: '2026-09-24 (Akamai press release via GlobeNewswire, Cambridge MA)'
+    commitment: 'Approximately $11.6B of Akamai cloud capacity over seven years (Project Plans 2 and 3 under the Master Services Agreement)'
+    workload: 'CPU-based capacity (not GPU), for Anthropic''s accelerating CPU workload demands on Akamai Cloud distributed AI infrastructure (Akamai release; FourWeekMBA notes the CPU/GPU distinction)'
+    warrant_size: 'Non-voting convertible Series B Preferred Stock representing 7.7M shares on an as-converted basis, up to approximately 5% of Akamai common stock outstanding, at $111.33 per share (7,741,020 shares per AIStockWire)'
+    vesting: 'Approximately 2% vests in connection with the $11.6B commitment; the remaining approximately 3% vests as the commitment expands up to an additional $9B within the seven-year warrant term; each additional $3B of cloud-services purchases vests approximately 1% of Akamai common outstanding (Akamai release verbatim)'
+    expansion_ceiling: 'Approximately $20B potential total (an option, not an agreed commitment)'
+    akamai_capex: 'Approximately $5.5B of capital expenditure related to the initial commitment; 2026 capex guidance raised approximately $1.7B for supply-chain components and memory; Jabil authorized to procure approximately $1.7B of memory components; multi-year hardware/services supply pact with Lenovo (MPSA 3yr, SOW 7yr, Sep 23 2026)'
+    revenue_guidance: 'Akamai anticipates no impact to 2026 revenue guidance (commitment is back-loaded)'
+    market_reaction: 'AKAM shares surged approximately 22% in extended trading (Reuters)'
+    filing: 'Full agreement to be filed with Akamai quarterly report for the period ending Sep 30, 2026'
+  relationship_escalation:
+    earlier_deal: 'The corpus carries an earlier Anthropic-Akamai computing deal at $1.8B (2026), covered in test_anthropic_meta_cloud_deal_coverage_selection_aug11.py and test_bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo_framing_aug26.py (Bloomberg Tax: ''Anthropic Inks $1.8 Billion Computing Deal With Akamai''). No warrant leg was disclosed on the earlier deal.'
+    escalation_multiple: 'The Sep 24 2026 commitment is approximately 6.4x the earlier $1.8B deal and adds the equity leg: the relationship escalates in both scale and structure, not just size.'
+    sibling_commitment: 'Reuters (Aug 2026, in corpus via m334): Anthropic agreed to spend $45B to rent AI cloud computing power from Nscale''s West Virginia data center campus. No warrant leg disclosed on the Nscale deal: equity-for-demand is not uniform across Anthropic''s infrastructure stack.'
+  incentive_geometry:
+    money_flow_inversion: 'The standard vendor/customer flow is customer-pays-cash-for-capacity. Here the supplier ALSO pays the customer in equity for the commitment: Anthropic''s demand is the scarce asset, and Akamai bids for it with shares. FourWeekMBA: ''The customer committed. The supplier built, and then paid the customer in its own shares.'''
+    published_exchange_rate: 'The deal publishes the demand/equity exchange rate: roughly 1% of the supplier''s equity for every additional $3B of demand commitment. FourWeekMBA: ''Committed demand has become a balance-sheet asset, and this deal publishes the exchange rate.'''
+    warrant_economics_not_governance: 'The warrant is for NON-VOTING preferred stock: Anthropic receives economics (upside in Akamai shares) without governance. The equity leg is a financial claim, not a control claim.'
+    supplier_capex_burden: 'Akamai commits approximately $5.5B of capex against the $11.6B commitment (roughly 47 cents of build for every dollar of contracted demand), plus the equity dilution: the supplier funds both the capacity and the customer''s upside.'
+  relationship_direction_taxonomy: 'THIRTEENTH relationship direction per the m807 enumeration (1 sue-then-sign m624; 2 pay-or-litigate bifurcation m636; 3 grant-then-sue m675; 4 license-over-authors m699; 5 pool-and-license m720; 6 infrastructure-capture m738; 7 publisher-as-feed-operator m741; 8 vendor-embed m807; 9 litigation-pooling m810; 10 publisher-traffic-gate m828; 11 commerce-conversion licensing m831; 12 regulatory-bargaining m834): DEMAND-FOR-EQUITY (warrant-for-demand) - the AI lab extracts equity upside in its infrastructure supplier as consideration for committed demand, inverting the usual vendor/customer equity flow. Extends infrastructure-capture (m738): where m738 was the lab capturing a publisher''s tech stack (Roundtable x Paradium), m837 is the lab capturing equity in its compute supplier. The lab''s committed demand is the scarce asset; suppliers bid with shares. (Taxonomy-count tension carried: m737''s finding enumerated termination-leverage as its seventh direction; the m807 enumeration used here does not list it. Not resolved this run.)'
+  coverage_note:
+    reuters_carried: 'Reuters carried the announcement (Harshita Mary Varghese, Bengaluru byline; WNCY and LA Post reprints). No coverage-tone claim is made: this is qualitative financial-incentive mapping per the Aug 28 2026 standing rule.'
+    anthropic_silence: 'No Anthropic statement on the deal was established in the excerpt set (FourWeekMBA: ''no statement from Anthropic has been established''): the announcement is supplier-side.'
+  novelty: 'FIRST dedicated corpus mechanism on the Akamai x Anthropic $11.6B + 5% warrant structure (announced Sep 24 2026): zero pre-commit corpus hits for all 6 source URLs; zero underscore-form 837 mechanism key strings (format-built needles only); zero dash-form 837 keys; block key appears exactly once at zero indent. The corpus''s earlier Akamai mentions (the $1.8B deal, m334 Nscale $45B) carry no warrant leg. THIRTEENTH relationship direction (demand-for-equity) per the m807 enumeration. NOTE: this run is excerpt-bounded (0 browser.open per #503); the mechanism is qualitative financial-incentive mapping only.'
+  finding: 'On Sep 24 2026 Akamai announced a $11.6B seven-year Anthropic cloud-capacity commitment (CPU workloads) stapled to a warrant giving Anthropic up to 5% of Akamai (7.7M shares at $111.33; ~2% vests on the $11.6B commitment, ~1% per additional $3B up to ~$20B total). The mechanism is the THIRTEENTH relationship direction (demand-for-equity): the supplier pays the customer in equity for committed demand, publishing the exchange rate at ~1% of supplier equity per $3B of demand. It escalates the corpus''s earlier $1.8B Akamai-Anthropic deal ~6.4x and adds the equity leg; Anthropic''s larger $45B Nscale commitment (m334) carries no disclosed warrant, so equity-for-demand is not uniform across the lab''s stack. Correlation only: this is a mechanism mapping, not a causal claim about Anthropic''s infrastructure costs or Akamai''s share price; the full agreement is not yet filed.'
+  connects_to: [334, 738, 807]
+  confounders:
+    - '[STRONG] Excerpt-bounded (per #503): 0 browser.open this run; all facts via search-result excerpts. The full agreement is not yet filed (due with Akamai''s Q3 quarterly report).'
+    - '[STRONG] CPU-not-GPU distinction: the committed capacity is CPU-based per Akamai''s release; the AI-training (GPU) narrative does not directly attach. The stated target is accelerating CPU workload demands (inference/edge), not model training.'
+    - '[STRONG] Anthropic is IPO-bound (pre-IPO per Reuters): the warrant''s value realization depends on Anthropic''s IPO trajectory and Akamai''s share price; equity-for-demand has different economics pre-IPO than post.'
+    - '[MODERATE] The ~$20B figure is an option ceiling, not a commitment; only $11.6B is contractually committed. Headline totals that blend the two overstate the deal.'
+    - '[MODERATE] The warrant is non-voting preferred: Anthropic gets economics, not governance. No control claim attaches.'
+    - '[MODERATE] Secondary-source date tension: TradingView lists Sep 18 2026 as the signed/effective date for the agreement and warrant; Akamai announced Sep 24. The mechanism claims the announcement date (Sep 24, primary source via GlobeNewswire).'
+    - '[WEAK] n=1 deal: a single-supplier snapshot; the ''published exchange rate'' read (FourWeekMBA) describes this deal''s terms, not a market price.'
+    - '[WEAK] The AKAM ~22% after-hours move is a market reaction, not evidence about the deal''s quality or the warrant''s fair value.'
+  counterevidence:
+    - 'The corpus''s earlier $1.8B Akamai-Anthropic deal carried no disclosed warrant leg: the equity structure is new to the relationship, not a standing pattern.'
+    - 'Anthropic''s $45B Nscale commitment (m334, larger than the Akamai deal) carries no disclosed warrant: equity-for-demand is not uniform across Anthropic''s infrastructure stack.'
+    - 'The warrant dilutes Akamai shareholders up to ~5%: the supplier pays for the demand commitment, which cuts against a pure ''supplier leverage'' reading of the deal.'
+    - 'Akamai stated it anticipates no impact to 2026 revenue guidance: the commitment is back-loaded, bounding any near-term P&L reading.'
+  strongest_counterargument: 'The warrant may be better read as a financing device than a demand-pricing device: Akamai must spend approximately $5.5B of capex to serve the commitment, and the warrant compensates Anthropic for take-or-pay-style commitment risk on CPU capacity whose AI-workload utilization is unproven at this scale. In that reading the equity is a risk premium for a speculative capacity bet, not a published price of demand, and the FourWeekMBA ''one percent per $3B'' exchange rate is descriptive of this deal''s negotiated terms rather than a market-wide price of committed AI demand.'
+  falsification_ledger: 30
+  falsification_family_member: false
+  falsification_note: 'NOT a falsification-family member; ledger holds at 30.'
+  tone_scores: 'NOT_SCORED'
+  engine_run: false
+  verification:
+    iteration: 1009
+    type: 'C'
+    date: '2026-09-26 04:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
+    browser_opens: 0
