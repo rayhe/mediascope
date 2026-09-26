@@ -22,6 +22,9 @@ Tone NOT_SCORED (qualitative financial-incentive mapping); no tone statistics; e
 ### Doc-sync
 (51590/1327 -> 51642/1329; +52/+1, venv python); 1000-1004 window CLOSING leg D->E->A->B->C (anchor + rotation guard per #565); concurrency: #899/#938/#900 in-flight untouched - Sep 25 2026 23:00 PDT - 52 tests, 11 classes
 
+- Commit hashes: main commit c8f9fc97d219de1e6bcc084171c49e823c73ede4 (verified via git rev-parse); anchor followup 52f96550cf3b5d3b75793bb84712fa06d9c303b8 (ANCHORED_SHA patched per #565; one amend corrected a docstring-vs-constant mis-target; anchor + hash-placeholder verified green via targeted re-run post-patch; full-file 50/52 with the only 2 remaining failures (no-successor, staged-set) being pre-commit gates that fail post-commit by design); log-hash followup 34dec78a registers both hashes here per #721.
+- Push status: PUSHED per #716 - main c8f9fc97 + anchor 52f96550 + log-hash 34dec78a62107d1d638c5854c4598577080a4640 pushed to origin main in one fast-forward (0c422a4e..34dec78a); remote tip 34dec78a62107d1d638c5854c4598577080a4640 verified equal to local via git ls-remote Sep 25 2026 23:xx PDT. Concurrency: #899/#938/#900 in-flight untouched.
+
 
 ## #1003 Type B: James Pero (Gizmodo) Sep-2026 Snap Specs ear-bending comedy vs carried Sep-23 Meta Ray-Ban Audio "perv" stigma frame - STIGMA-REGISTER ROUTING extension of m806/m791 (mechanism 833; FIRST dedicated corpus mechanism on the ear-bending piece; headline previously only a comparator mention in the m806 research notes) - Type B FOURTH leg of the 1000-1004 window D->E->A->B->C (Sep 25 2026, 22:00 PDT; main commit f17bc65df5ff28cb265311ae126d296a50e936c9 / anchor 7bbc45e9739c2f2b357c7e1b937d442b79562e7c; log-hash followup registers both hashes here per #721 (this commit))
 
