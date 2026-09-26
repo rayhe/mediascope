@@ -1,4 +1,4 @@
-## #1012 Type A: MIT TR x Anthropic Sep-14 doomer-turn agenda-setting register vs carried MIT TR x Meta Sep-23 India havoc investigation - EXTENDS mechanism 817 to the Anthropic axis (illustrative delta +0.70 degenerate n=1, NOT significant; register SELECTION not uniform softness) - Type A THIRD leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 07:00 PDT; main commit MAIN_COMMIT_SHA / anchor ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit))
+## #1012 Type A: MIT TR x Anthropic Sep-14 doomer-turn agenda-setting register vs carried MIT TR x Meta Sep-23 India havoc investigation - EXTENDS mechanism 817 to the Anthropic axis (illustrative delta +0.70 degenerate n=1, NOT significant; register SELECTION not uniform softness) - Type A THIRD leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 07:00 PDT; main commit 788bc9a8d2099253160b7303ff09a70a0a10be74 / anchor 06287964114e13ff7de97742060d2409ecb7458d; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-26 07:00 PDT, iteration_type "A", **THIRD leg of the 1010-1014 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -28,7 +28,7 @@ Manual ILLUSTRATIVE-ONLY per the Aug 28 2026 standing rule: tone scores MANUAL I
 ### Concurrency
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked test) all in-flight and untouched - targeted staging of the #1012 set only.
 
-- Commit hashes: main commit MAIN_COMMIT_SHA (verified via git rev-parse); anchor followup ANCHOR_SHA (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 46/46 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Commit hashes: main commit 788bc9a8d2099253160b7303ff09a70a0a10be74 (verified via git rev-parse); anchor followup 06287964114e13ff7de97742060d2409ecb7458d (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 46/46 file tests green post-followup); log-hash followup registers both hashes here per #721.
 - Push status: PUSH_PENDING at entry time; updated in the push-status finalizer per #716.
 
 ## #1011 Type E: podcast sentiment 125th verification (GF 501 confirmed again, no 502, ZERO new GF keys fifth consecutive pure-re-surface; EHE 47-day hold, ZERO new URL keys; Attention Sphere 125th no-match, Tracked Sources 124->125; press FOUR new-to-corpus keys + THREE re-surfaces, frontier ADVANCES Sep 24 -> Sep 25 first since #966) - Type E SECOND leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 06:00 PDT; main commit d9288ceb07ce1e4d6943193535a52dfe4ebe11bf / anchor 5542710e8d98af1dca44951ef861651f16abd806; log-hash followup registers both hashes here per #721 (this commit))
