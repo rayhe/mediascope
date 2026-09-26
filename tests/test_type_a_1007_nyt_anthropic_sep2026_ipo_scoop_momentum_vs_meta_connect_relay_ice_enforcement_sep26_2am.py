@@ -47,7 +47,7 @@ ARCH = os.path.join(REPO, "docs", "ARCHITECTURE.md")
 LOG = os.path.join(REPO, "iteration-log.md")
 THIS_FILE = os.path.basename(__file__)
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched green in the anchor followup per #565
+ANCHORED_SHA = "a0d351d30e8d3ad359c79fd4c0187cb67bfc11b7"  # patched in the anchor followup per #565
 
 ITERATION = 1007
 MECHANISM = 835
