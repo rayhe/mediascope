@@ -2617,6 +2617,115 @@ competitor_relationships:
         - "mechanism 476 MIT TR x Google coverage tone vs Meta"
       novelty: "First dedicated Type A mechanism on MIT TR x Anthropic legal/regulatory register. Distinct from mechanism 15 (product/research register, Jun-Jul) and #552 (FT, different publication and event window). Zero mechanism_619 keys in profiles/ pre-commit; max numeric mechanism_id pre-commit 618."
       research_method: "5 browser.search query sets this run: site:technologyreview.com Anthropic (since Aug 1 2026); technologyreview.com Anthropic Pentagon lawsuit or Mythos or IPO September (since Aug 15); site:technologyreview.com Anthropic Pentagon court; MIT Technology Review Meta AI 2026 coverage (since Jul 1); MIT Technology Review Meta settlement or superintelligence (since Jul 15). All URLs copied verbatim from Full-URL listings; story facts snippet-bounded per the no-canonical-URL rule; no zero-coverage claims per iteration-492 rule (silence claims, where made, are bounded search-result absences); technologyreview.com direct fetch not attempted this run (single-attempt terminal-failure convention not triggered; snippets sufficed)."
+    type_a_1012_mittr_anthropic_sep2026_doomer_turn_agenda_setting_register_vs_carried_meta_india_havoc_m817_pairing_sep26_7am:
+      mechanism_id: 838
+      iteration: 1012
+      iteration_type: "A"
+      iteration_time: "2026-09-26 07:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      window: "1010-1014"
+      window_leg: "THIRD leg of the 1010-1014 window (D #1010 -> E #1011 -> A #1012 this run -> B #1013 -> C #1014)"
+      rotation_transparency: "1010-1014 window third leg: D (#1010) -> E (#1011) -> A (#1012, this run) -> B (#1013) -> C (#1014); the 1005-1009 window verified closed as a consecutive newest-first sequence in git history (D #1005, E #1006, A #1007, B #1008, C #1009); novelty anchor patched in the followup per the #565 convention."
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-26'
+      time_pdt: '07:00'
+      publication: "MIT Technology Review"
+      publication_pair: "MIT TR x Anthropic"
+      competitor: anthropic
+      comparator_entity: meta
+      key_design_note: "Descriptive block key per the #723/#738 convention: carries no underscore- or dash-form mechanism number, so the zero-next-number profile sweeps stay green. The mechanism number appears only as 'mechanism_id: 838' in colon form and as spaced prose in strings (never as a contiguous mechanism-form literal)."
+      title: "MIT TR x Anthropic Sep-14 Doomer-Turn Agenda-Setting Register vs Carried MIT TR x Meta Sep-23 India Havoc Investigation"
+      finding: >
+        NEW Type A mechanism (mechanism 838) EXTENDING mechanism 817's MIT TR
+        register-inversion strand to the Anthropic axis: in the Sep 14-23 2026 window, MIT Technology
+        Review gave the Anthropic-led AI-slowdown consensus event the analytic agenda-setting
+        register while its Meta coverage stayed in the accountability register. Anthropic arm (NEW
+        this run): Will Douglas Heaven's Sep 14 2026 piece "The AI industry has taken a doomer turn.
+        What now?" (technologyreview.com/2026/09/14/1144048, excerpt-attested this run, 0
+        browser.open per #503): Dario Amodei's slowdown essay is the catalyst peg; the lab
+        convergence (Amodei, Altman, Hassabis, Musk) is framed as the industry's meaningful event of
+        the week - the doomer turn is granted agenda-setting legitimacy even as Heaven embeds his
+        IPO-optics demystification thesis; MANUAL ILLUSTRATIVE +0.10. Meta arm (CARRIED from
+        mechanism 817, un-rescored per #807): the Sep 23 2026 "Smart glasses are already causing
+        havoc in India" investigation (technologyreview.com/2026/09/23/1144953, full-text browser.open
+        verified at #977), victim testimony and expert condemnation, havoc/accountability register;
+        MANUAL ILLUSTRATIVE -0.60. Illustrative delta (Anthropic minus Meta) +0.70 on a degenerate n=1
+        vs n=1 pair, NOT significant. This is a register-selection finding, NOT a uniform-softness
+        finding: the Sep-14 piece is NOT a puff - its demystification line ("OpenAI has stopped
+        training this new model and locked it down... In fact, OpenAI has shelved a faulty product")
+        turns the skeptical optic on OpenAI as well.
+      anthropic_arm:
+        title: "The AI industry has taken a doomer turn. What now?"
+        author: "Will Douglas Heaven"
+        publication: "MIT Technology Review"
+        date: "2026-09-14"
+        url: "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/"
+        attestation: "excerpt-bounded this run (0 browser.open per the #503 convention): sciencesprings verbatim excerpt (Amodei essay as catalyst; Altman/Hassabis/Musk convergence), intelligibberish excerpt (IPO-optics thesis), aipster and newsmon roundup relays (same publication, same event). technologyreview.com direct fetch NOT attempted this run (single-attempt terminal-failure convention not triggered; excerpts sufficed)."
+        tone_manual_illustrative: 0.10
+        register: "analytic agenda-setting: the Anthropic-led doomer turn is treated as the industry's meaningful event of the week; demystification runs inside the piece (IPO-optics thesis, OpenAI faulty-product line), not against the peg"
+        novelty_in_corpus: "first appearance; URL zero-hit repo-wide pre-commit"
+      meta_arm:
+        title: "Smart glasses are already causing havoc in India"
+        publication: "MIT Technology Review"
+        date: "2026-09-23"
+        url: "https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/"
+        attestation: "carried from mechanism 817; full-text browser.open verified at #977; NOT re-fetched or re-scored this run per #807"
+        tone_manual_illustrative: -0.60
+        register: "havoc/accountability: victim testimony, expert condemnation"
+        carried_from: 817
+      illustrative_delta: 0.70
+      delta_direction: "Anthropic minus Meta"
+      finding_layer: "MANUAL ILLUSTRATIVE"
+      statistical_discipline: >
+        MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. NEW arm n=1 vs CARRIED arm
+        n=1; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED;
+        is_significant False; engine NOT run at the finding layer; documents the analyst's reading
+        for reproducibility and challenge. Verdict directionally_supported_not_proven. Correlation is
+        not causation. Hypothesis-generating only. No analysis.json update warranted (NOT
+        artifact-grade).
+      verdict: "directionally_supported_not_proven"
+      no_analysis_json_update: true
+      financial_context:
+        anthropic_tie: "indirect_endowment (carried from mechanism 15: MIT $27.4B endowment exposure via Google/Amazon Anthropic stakes; Anthropic IPO targeting Oct 2026 at ~$1T; no direct MIT TR-Anthropic financial relationship documented)"
+        meta_tie: "Meta FAIR funding (carried from mechanism 817)"
+        nexus_shape: "two-sided: MIT TR holds funding nexus to BOTH the competitor axis (indirect endowment, Anthropic) and the comparator (Meta FAIR), bounding any direct financial-causation claim (cooperative-conflict bound)"
+        prediction_status: "carried coverage_prediction 'softer_than_expected' is MET this window only in the register-selection sense (agenda-setting for the Anthropic-led event vs accountability for Meta), NOT as uniform softness; the piece's internal demystification cuts against a capture narrative"
+      confounders:
+        strong:
+          - "excerpt-bounded evidence: 0 browser.open this run per the #503 convention; the doomer-turn register is reconstructed from relay excerpts (sciencesprings, intelligibberish, aipster, newsmon), not from a first-hand read of the MIT TR original this run"
+          - "genre/peg mismatch: an industry-policy essay (naturally analytic) vs a product-harm investigation (naturally accountability); register follows the peg per the m637 pattern family, so the register gap may be fully peg-driven"
+          - "the Sep-14 piece embeds its own demystification (IPO-optics thesis for the trillion-dollar pipeline; OpenAI 'shelved a faulty product' line), so it is NOT a uniform-softness exhibit - the Anthropic-ward softness is agenda-setting legitimacy, not praise"
+        moderate:
+          - "degenerate sample (n=1 NEW arm vs n=1 CARRIED arm); the claim rides the mechanism 817 lineage, not a standalone Anthropic-Meta arm set"
+          - "MIT TR's analytic house register applies to policy topics regardless of entity; Anthropic happened to lead this week's policy news (Amodei essay), and Meta had no competing policy peg in the window"
+          - "9-day timing skew between the arms (Sep 14 vs Sep 23), same magnitude as mechanism 817's pair; news cycles differ"
+        weak:
+          - "mechanism 817's Meta-side illustrative score (-0.60) is carried un-rescored per #807; a fresh read could move it"
+          - "writer-level rather than institutional register cannot be fully ruled out; mechanism 817 pairs the same author across arms, this mechanism does not"
+      counterevidence:
+        - "the piece's own IPO-optics thesis is skeptical of lab motives: the naive softer-Anthropic prediction is only partially met"
+        - "within the same Sep-14 MIT TR article package, the companion whistleblower piece frames OpenAI's Hugging Face agent breakout as 'systemic' (mechanism 817, in-corpus) while DeepMind gets the hero arc - MIT TR applies the demystifying register across labs, not selectively against Meta"
+        - "mechanism 619: MIT TR x Anthropic Pentagon-refusal legal/regulatory register is adversarial; MIT TR runs hard on Anthropic in other registers"
+        - "two-sided funding nexus (MIT-Google Program + Meta FAIR per mechanism 817) bounds the financial attribution for both arms"
+      falsification_family_member: false
+      falsification_ledger: 30
+      ledger_note: "register-selection documentation; not a falsification-family member; ledger holds at 30"
+      extends:
+        mechanism_817: "register-inversion strand: m817 paired MIT TR x DeepMind (+0.30 fascination) vs MIT TR x Meta (-0.60 havoc accountability); this mechanism extends the strand to the Anthropic axis (doomer-turn agenda-setting +0.10 vs carried Meta havoc -0.60), same publication, same 10-day window, distinct articles and events"
+      connects_to: [817, 15, 619, 685, 790]
+      source_urls:
+        - "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/"
+        - "https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/"
+        - "https://sciencesprings.wordpress.com/2026/09/15/the-ai-industry-has-taken-a-doomer-turn-what-now/"
+        - "https://intelligibberish.com/the-ai-industry-has-taken-a-doomer-turn-what-now/"
+        - "https://aipster.net/technologyreview-com-2026-09-14-1144048-the-ai-industry-has-taken-a-doomer-turn-what-now/"
+      research_method: "8 browser.search query sets this run, 0 browser.open (excerpt-bounded per the #503 convention): WIRED OpenAI GPT-6 Astra self-jailbreak (rejected: same Sep-16 disclosure batch as mechanisms 712/757/820/836, non-novel); WIRED Meta Connect Sep-23 smart glasses (rejected: already in-corpus via mechanisms 712/757/820/836); MIT TR Anthropic IPO (no MIT TR-authored IPO arm surfaced); MIT TR Meta Connect smart glasses (Download newsletter only, no MIT TR original); technologyreview.com Meta Anthropic September 2026 (surfaced the doomer-turn piece technologyreview.com/2026/09/14/1144048 and confirmed the URL zero-hit repo-wide pre-commit); MIT TR doomer-turn corroboration (sciencesprings, intelligibberish, aipster, newsmon relays, all same publication, same event). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; story facts are snippet-bounded. No zero-coverage claims per the iteration-492 rule (silence claims are bounded search-result absences)."
+      distinct_from_prior: "First Type A mechanism extending the MIT TR register-inversion strand (mechanism 817) to the Anthropic axis. Distinct from mechanism 619 (Anthropic legal/regulatory register), mechanism 15 (Anthropic pre-IPO product/research register), and mechanism 817 (DeepMind axis, distinct event set). Zero test_type_a_1012 files on disk pre-commit; no Type A #1012 in git log; doomer-turn URL zero-hit repo-wide pre-commit; max numeric mechanism_id 837 pre-commit; zero underscore/dash-form 838 keys repo-wide pre-commit (needles format-built per #715, no literals carried); block key zero-hit repo-wide pre-commit."
+      status: "committed"
   amazon:
     financial_tie: "indirect"
     estimated_value: "undisclosed"
