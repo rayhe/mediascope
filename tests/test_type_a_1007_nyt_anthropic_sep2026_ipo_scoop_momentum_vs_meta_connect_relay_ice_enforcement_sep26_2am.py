@@ -119,7 +119,7 @@ class TestNovelty1007:
         assert "Type A #1007" in r2.stdout
 
     def test_no_type_a_1007_in_git_log_precommit(self):
-        r = run_git("log", "--oneline", "--grep", "Type A #1007")
+        r = run_git("log", "--format=%H %s", "--grep", "Type A #1007")
         own = run_git("log", "--format=%H", "--", "tests/" + THIS_FILE).stdout
         hits = [
             line for line in r.stdout.splitlines()
