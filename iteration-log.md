@@ -27,7 +27,7 @@ Rejected candidates this run: James Pero (mechanisms 211/746/791/806/818 saturat
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit fc591eedd54fd7c1f41ca0dcda415b0d732821bc (verified via git rev-parse); anchor followup 9acc0f0cd71574a2fe602a8283be4b36e171b18c (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 39/39 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PENDING per #716 (to be verified post-push).
+- Push status: PUSHED per #716 - main fc591eed + anchor 9acc0f0c + log-hash cc3039d3498cf5b180f437e12b59c397461fdbed pushed to origin main in one fast-forward (dca50ef0..cc3039d3); remote tip cc3039d3498cf5b180f437e12b59c397461fdbed verified equal to local via git ls-remote Sep 25 2026 17:xx PDT.
 
 ## #997 Type A: Atlantic x OpenAI/Anthropic Sep-25 doomsday-scenarios philosophical safety-discourse essay (mirror_excerpt_bounded) extends the m694 philosophical-register strand to a two-item Sep-2026 sequence vs carried Meta AI Watchdog accountability arms; bounded absence of theatlantic.com Meta Connect 2026 coverage; illustrative target-minus-peer delta +0.675 (MANUAL, NOT statistical) - Type A THIRD leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 16:00 PDT; main commit a288bc51a43f75662443eac6cb2b4bc0c776b697 / anchor 571697da3abcded64f45ce17a0606b8173ae80c4; log-hash followup registers both hashes here per #721 (this commit))
 
