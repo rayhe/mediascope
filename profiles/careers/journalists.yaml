@@ -19302,6 +19302,192 @@ journalists:
       test_file: tests/test_type_b_1013_samuel_gibbs_guardian_meta_register_temporal_shift_vs_apple_vision_pro_aspirational_sep26_8am.py
       artifact_readiness: 'No analysis.json update warranted: within-writer temporal-shift register documentation, all tones carried, no empirical significance.'
 
+- name: Sean Keach
+  notes: 'Head of Science & Technology at The Sun (News Corp), UK; tech editor; has penned thousands of articles on Apple, Meta, Google, Amazon over more than a decade; weekly The Sun Tech newsletter. Interviewed Tim Cook on Vision Pro (Jul 2024) and Andrew Bosworth at Meta Connect (Sep 2026). Meta VR Glasses hands-on (Sep 2026) and Apple Vision Pro daily-wear review (2024) are both enthusiastic first-person reviews; TalkTV broadcast segment on Meta glasses (Jul 2026, "They Can SEE EVERYTHING!") is alarm-register per the #182 Type E News Corp financial-paradox entry in podcast-sentiment.md.'
+  career:
+  - publication: the-sun
+    role: Head of Science & Technology
+    beat: gadgets, consumer tech, wearables
+    start: '2015'
+    end: present
+    source_url: https://www.thesun.ie/tech/16815054/apple-smart-glasses-iphone-face-release-headset-meta-features/
+    date_note: 'role title per Keach''s own newsletter bio (The Sun Tech, Sep 2026); "tech editor" used interchangeably in Sun bylines; start year approximate from "more than a decade", not documented this run'
+  source_urls:
+  - https://www.thesun.co.uk/tech/40467585/meta-vr-glasses-virtual-reality-specs-features-price-review/
+  - https://www.thescottishsun.co.uk/tech/16866229/meta-vr-glasses-boz-andrew-bosworth-ray-ban-audio/
+  - https://newstextarea.com/deutsch/apple-vision-pro-review-ive-been-wearing-hi-tech-headset-every-day-there-are-three-places-im-obsessed-with-using-it
+  - https://9to5mac.com/2024/07/11/tim-cook-explains-what-he-thinks-vision-pro-is-good-for/
+  - https://thesuntech.substack.com/p/my-big-surprise-wearing-the-apple
+  - https://www.thesun.co.uk/tech/38801942/apple-smart-glasses-iphone-face-release-headset-meta-features/
+  - https://www.youtube.com/watch?v=LspLdcz9uqQ
+  multi_publication: false
+  competitor_coverage:
+    type_b_1018_sean_keach_sun_cross_medium_register_meta_print_enthusiasm_vs_broadcast_alarm_apple_print_null_delta:
+      mechanism_id: 842
+      type: B
+      journalist: 'Sean Keach'
+      publication: 'The Sun (News Corp)'
+      iteration: 1018
+      iteration_type: B
+      iteration_time: '2026-09-26 15:00 PDT'
+      discovery_date: '2026-09-26'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      author: 'Kit (with Ray)'
+      date_analyzed: '2026-09-26'
+      time_pdt: '15:00'
+      block_key: type_b_1018_sean_keach_sun_cross_medium_register_meta_print_enthusiasm_vs_broadcast_alarm_apple_print_null_delta
+      key_design_note: 'Colon-form key only; by designed keying per #715 the block key carries no numeric mechanism-id substring in any form (sweep needles are format-built, no literals carried).'
+      pattern: 'Same tabloid tech editor, two media, two entities: Sean Keach writes an enthusiastic first-person hands-on review register for BOTH Meta (Sep-2026 VR Glasses) and Apple (2024 Vision Pro) in The Sun print/online edition (NULL cross-entity delta), while the same writer''s broadcast register on TalkTV (Jul 2026, "They Can SEE EVERYTHING!") is maximum-alarm on Meta glasses despite News Corp''s Meta content partnership revenue. CROSS-MEDIUM register control: the register tracks medium/genre, not entity and not the financial gradient.'
+      rotation_transparency: '2026-09-26 15:00 PDT, iteration_type B, FOURTH leg of the 1015-1019 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard). Predecessor #1017 Type A committed (main 97df5870a4fc675eeb7ef97e55efbe0634ff5097, anchor 3d8c8155fc81536924591a84ebe8eb682ab4dca2, log-hash 306853614780b784dd83403a636864fd9971e1c2, all verified present via git log before this run''s commit). This run is #1018 Type B at 15:00 PDT Sep 26 2026. Next #1019 will be Type C, closing the window.'
+      finding: 'CROSS-MEDIUM NULL-DELTA CONTROL on Sean Keach (The Sun / News Corp), resolving the #978/#983 rejections (Keach rejected in both runs for "no within-journalist competitor pair in corpus scope"): this run surfaces Keach''s 2024 Apple Vision Pro daily-wear review and his Jul-2024 Tim Cook Vision Pro interview as the competitor arms. PRIMARY PAIR (genre-matched hands-on reviews): Keach''s Sep-2026 Meta VR Glasses hands-on ("I COULDN''T believe my eyes. How has Meta managed this?", "it''s thrilling to see the kind of breakthrough gadget like the Meta VR Glasses that genuinely shock me", "serve up better quality than most goggles I''ve ever donned") scores MANUAL ILLUSTRATIVE +0.40 against his 2024 Apple Vision Pro review ("I''ve been wearing hi-tech headset every day - there are three places I''m obsessed with using it"; in-mirror credit "The headset is easy to put on and very comfortable Credit: Sean Keach / The Sun") at MANUAL ILLUSTRATIVE +0.35. Illustrative delta (Meta minus Apple) +0.05, NOT significant: the same writer applies the same enthusiastic review register to both entities, genre held constant. SUPPORTING PAIR (exec interviews, genre-matched): Keach''s Sep-2026 Boz interview (Meta Connect, byline attested "The Sun''s Sean Keach talked to Boz about Meta''s latest gadgets") vs his Jul-2024 Tim Cook Vision Pro interview (9to5mac relay, "Sean Keach writes:"), both symmetric company-leader messaging relays. WITHIN-WRITER MEDIUM SPLIT (carried arm): the same Keach''s TalkTV broadcast segment on Meta glasses (~Jul 9 2026, "They Can SEE EVERYTHING!", sentiment -7/10 in the #182 Type E entry, carried at -0.70) is alarm-register on the SAME entity his print register treats enthusiastically: illustrative medium split (broadcast minus print) -1.10, isolating MEDIUM/GENRE as the register driver. The #182 News Corp financial paradox is carried forward: News Corp receives Meta content partnership revenue (Active; News Corp is both litigation partner AND content partner per the #182 entry) yet Keach alarms on Meta on broadcast TV, and News Corp takes OpenAI $250M/5yr licensing while OpenAI''s companion device gets neutral coverage - money predicts neither the print enthusiasm (Apple $0, equally soft) nor the broadcast alarm (Meta revenue-positive, still alarmed). Verdict directionally_supported_not_proven. Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+      meta_arm_print:
+        piece: 'The Sun Sep 24 2026 "I tried Zuckerberg''s new Meta VR Glasses that look like specs and I was stunned by graphics - but genius perk blew me away", byline Sean Keach'
+        date: '2026-09-24'
+        byline: 'Sean Keach'
+        byline_attestation: 'Byline "The Sun''s tech editor Sean Keach tried on the new Meta VR Glasses Credit: Sean Keach" in-piece; also dateline-carried via the thesun.ie variant (Last Updated 2 days ago, crawled Sep 26).'
+        register: enthusiastic_first_person_hands_on_review
+        tone_illustrative: 0.40
+        tone_status: 'NEW this run, hand-assigned MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule.'
+        corpus_status: 'FIRST corpus mechanism-ization of this piece (zero-hit pre-commit per #715); the piece itself was surfaced as a REJECTED primary candidate in #978/#983 (no competitor pair then); the #983 run REJECTED the Sun/Keach arms as Type B targets.'
+        evidence_quotes:
+          - 'Headline (verbatim): I tried Zuckerberg''s new Meta VR Glasses that look like specs and I was stunned by graphics - but genius perk blew me away'
+          - 'Register (excerpt verbatim): I COULDN''T believe my eyes. How has Meta managed this?'
+          - 'Register (excerpt verbatim): So it''s thrilling to see the kind of breakthrough gadget like the Meta VR Glasses that genuinely shock me.'
+          - 'Register (excerpt verbatim): strikingly smaller than the virtual reality headsets of yore, and serve up better quality that most goggles I''ve ever donned.'
+        source_urls:
+          - 'https://www.thesun.co.uk/tech/40467585/meta-vr-glasses-virtual-reality-specs-features-price-review/'
+        source_note: 'URL verbatim from this run''s browser.search Full-URL listing (zero-hit repo-wide pre-commit per #715; not constructed). Evidence tier: excerpt-bounded per #503; 0 browser.open this run. Variant URL surfaced in the same result set: https://www.thesun.ie/tech/17665772/meta-vr-glasses-virtual-reality-specs-features-price-review/ (not ingested; thesun.co.uk canonical taken as primary).'
+      meta_arm_supporting:
+        piece: 'The Sun Sep 2026 "Meta''s VR boss reveals how his new specs could replace your TV and laptop and why camera vanished on new Ray Ban glasses", Boz interview by Sean Keach'
+        date: '2026-09-25'
+        byline: 'Sean Keach'
+        byline_attestation: 'In-piece credit "The Sun''s Sean Keach talked to Boz about Meta''s latest gadgets Credit: The Sun" and "Sean tried on the specs at Meta Connect Credit: Sean Keach".'
+        register: exec_interview_messaging_relay
+        tone_illustrative: 0.20
+        tone_status: 'NEW this run, hand-assigned MANUAL ILLUSTRATIVE; supporting arm, not in the primary pair.'
+        evidence_quotes:
+          - 'Privacy balance (excerpt verbatim): Of course, the privacy-minded will be looking at these specs with a feeling of vindication.'
+          - 'Stigma relay (excerpt verbatim): Meta''s camera-toting glasses have plenty of fans, but also no shortage of critics who fear being secretly filmed by sinister strangers.'
+          - 'Exec messaging relay (excerpt verbatim): Because it''s not just about do you feel like you look good in the glasses and that you like the functionality. But it''s about the people around you. Do they feel comfortable with it? We''ve known that from the beginning.'
+        source_urls:
+          - 'https://www.thescottishsun.co.uk/tech/16866229/meta-vr-glasses-boz-andrew-bosworth-ray-ban-audio/'
+        source_note: 'URL verbatim from this run''s browser.search Full-URL listing (zero-hit repo-wide pre-commit per #715). The thesun.co.uk variant https://www.thesun.co.uk/tech/40496059/meta-vr-glasses-boz-andrew-bosworth-ray-ban-audio/ is already in-corpus (surfaced in earlier sweeps); the thescottishsun.co.uk verbatim URL is the novel key this run.'
+      meta_arm_broadcast:
+        piece: 'TalkTV ~Jul 9 2026 broadcast segment "They Can SEE EVERYTHING!" featuring Sean Keach, Head of Science & Technology, The Sun'
+        date: '2026-07-09'
+        byline: 'Sean Keach'
+        register: broadcast_alarm
+        tone_illustrative: -0.70
+        tone_status: 'CARRIED un-rescored from the #182 Type E entry (podcast-sentiment.md, sentiment -7/10 mapped to -0.70) per the #807 pattern; the segment is already corpus-scored.'
+        corpus_status: 'Segment already corpus-recorded in podcast-sentiment.md (Iteration #182 Type E, "Mass-market vocabulary propagation cycle complete"); NEW this run: the JOURNALIST-ANGLE mechanism-ization pairing it against Keach''s own print arms.'
+        evidence_quotes:
+          - 'Segment title (corpus verbatim): They Can SEE EVERYTHING!'
+          - 'Hashtags: #Meta #TechNews #Privacy #SmartGlasses'
+          - 'Corpus finding (verbatim): Despite News Corp receiving financial benefit from BOTH Meta and OpenAI, its tech editor uses maximum-alarm vocabulary for Meta glasses on broadcast TV.'
+        source_urls:
+          - 'https://www.youtube.com/watch?v=LspLdcz9uqQ'
+        source_note: 'In-corpus via podcast-sentiment.md (Iteration #182 Type E); the novelty is the journalist-angle block, not the URL. Evidence tier: corpus-carried entry; 0 browser.open this run.'
+      apple_arm_print:
+        piece: 'The Sun 2024 "Apple Vision Pro review: I''ve been wearing hi-tech headset every day - there are three places I''m obsessed with using it", byline Sean Keach'
+        date: '2024-02'
+        byline: 'Sean Keach'
+        byline_attestation: 'In-mirror credit "The headset is easy to put on and very comfortable Credit: Sean Keach / The Sun" (newstextarea.com mirror of the Sun review).'
+        register: enthusiastic_daily_wear_review
+        tone_illustrative: 0.35
+        tone_status: 'NEW this run, hand-assigned MANUAL ILLUSTRATIVE; competitor arm, genre-matched to the Meta print arm (hands-on review).'
+        corpus_status: 'FIRST corpus mechanism-ization of this piece (zero-hit pre-commit per #715); resolves the #978/#983 "no within-journalist competitor pair" rejections of Keach.'
+        evidence_quotes:
+          - 'Headline (verbatim): Apple Vision Pro review: I''ve been wearing hi-tech headset every day - there are three places I''m obsessed with using it'
+          - 'Byline credit (mirror verbatim): Credit: Sean Keach / The Sun'
+        source_urls:
+          - 'https://newstextarea.com/deutsch/apple-vision-pro-review-ive-been-wearing-hi-tech-headset-every-day-there-are-three-places-im-obsessed-with-using-it'
+        source_note: 'URL verbatim from this run''s browser.search Full-URL listing (zero-hit repo-wide pre-commit per #715). Third-party full-text mirror of the Sun review; the original thesun.co.uk URL was not recovered verbatim in this run''s result sets. Evidence tier: mirror-attested excerpt per #503.'
+      apple_arm_supporting:
+        piece: 'The Sun Jul 2024 Tim Cook Vision Pro interview, relayed by 9to5mac: "Tim Cook explains what he thinks Vision Pro is good for"'
+        date: '2024-07-11'
+        byline: 'Sean Keach'
+        byline_attestation: '9to5mac relay: "In a new interview with The Sun, he explains what he thinks the device is good for" and "Sean Keach writes:" with verbatim Keach prose.'
+        register: exec_interview_messaging_relay
+        tone_illustrative: 0.25
+        tone_status: 'NEW this run, hand-assigned MANUAL ILLUSTRATIVE; supporting arm, genre-matched to the Boz interview (exec interview).'
+        evidence_quotes:
+          - 'Relay (verbatim): So what is Tim - a tech genius worth billions of dollars, who runs a company valued at trillions of dollars - doing with his Vision Pro?'
+          - 'Relay (verbatim): A lot, it turns out, because he tells me he''s donning the headset every single day.'
+        source_urls:
+          - 'https://9to5mac.com/2024/07/11/tim-cook-explains-what-he-thinks-vision-pro-is-good-for/'
+        source_note: 'URL verbatim from this run''s browser.search Full-URL listing (zero-hit repo-wide pre-commit per #715). 9to5mac relay of the Sun interview; original thesun.co.uk interview URL not recovered verbatim. Evidence tier: relay-attested excerpt per #503.'
+      illustrative_means:
+        meta_print_mean: 0.40
+        apple_print_mean: 0.35
+        meta_broadcast_mean: -0.70
+        delta: 0.05
+        delta_calc: '(Meta print minus Apple print): (0.40) - (0.35) = +0.05 (NULL cross-entity delta, genre-matched hands-on reviews)'
+        medium_split: -1.10
+        medium_split_calc: '(Meta broadcast minus Meta print, same writer): (-0.70) - (0.40) = -1.10 (register tracks MEDIUM/GENRE, not entity)'
+      manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. Four of five arm tones are NEW this run (hand-assigned, no rescoring possible); the broadcast arm tone is CARRIED un-rescored from the #182 Type E entry (sentiment -7/10 mapped to -0.70) per the #807 pattern.'
+      asymmetry_scorer_result:
+        target_entity: meta
+        reference_entity: apple
+        publication: the-sun
+        journalist: 'Sean Keach'
+        new_meta_print_tone_manual_illustrative: 0.40
+        new_apple_print_tone_manual_illustrative: 0.35
+        carried_meta_broadcast_tone_manual_illustrative: -0.70
+        illustrative_delta_meta_minus_apple: 0.05
+        delta_calc: '(0.40) - (0.35) = +0.05'
+        illustrative_medium_split_broadcast_minus_print: -1.10
+        medium_split_calc: '(-0.70) - (0.40) = -1.10'
+        interpretation: 'Cross-entity NULL delta on the genre-matched primary pair: Keach applies the same enthusiastic first-person hands-on review register to Meta (+0.40) and Apple (+0.35). The within-writer medium split (-1.10) isolates medium/genre as the register driver: the same writer alarms on Meta on broadcast TV while enthusing about Meta in print reviews. Neither the entity nor the financial gradient explains the pattern (Apple $0 gets the same print softness as revenue-linked Meta; revenue-linked Meta still gets broadcast alarm).'
+        limitations: 'n=1 per arm (degenerate); tabloid house style inflates print enthusiasm universally; broadcast segment title may be producer/titlecraft rather than Keach''s vocabulary; excerpt/mirror-bounded evidence (0 browser.open); Apple arms 2+ years older than Meta arms.'
+        statistical_contract: degenerate_n1_per_arm
+        artifact_grade: false
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+      statistical_discipline:
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        scorer: none
+        tone_scores: MANUAL_ILLUSTRATIVE_NEW
+        verdict: directionally_supported_not_proven
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 30
+      falsification_note: 'Falsification ledger holds at 30 (THIRTIETH member-form present once, m818 journalists.yaml; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST negative guard wordings pinned per #1000). This mechanism is a cross-medium null-delta control: the entity effect fails within-writer on the genre-matched pair, and the medium effect documents register routing without testing a uniform prediction, so it is NOT a falsification-family member.'
+      cautious_language_required: true
+      correlational_note: 'Correlation only, not causation. The +0.05 null delta documents that one tabloid tech editor''s hands-on review register does not discriminate between Meta and Apple; the -1.10 medium split documents that the same writer''s register differs across medium for the same entity. Neither pattern proves intent, motive, or causation; tabloid house style, access-junket warmth, and broadcast packaging are the leading non-entity explanations. Hypothesis-generating only.'
+      confounders:
+        - '[STRONG] Tabloid house style: The Sun inflates superlatives universally ("I COULDN''T believe my eyes", "genuinely shock me"); enthusiasm is the house review register, so the null delta may measure house style rather than writer-level entity neutrality.'
+        - '[STRONG] Broadcast packaging: the TalkTV segment title "They Can SEE EVERYTHING!" and alarm framing may be producer/titlecraft, not Keach''s own vocabulary choice on air; the -1.10 medium split may measure segment packaging rather than a writer register.'
+        - '[STRONG] Access-junket warmth: the Meta arms were produced at Meta Connect / Meta HQ (Boz interview, HQ demo) and the Apple arms at Apple Park-era access; company-hosted access predicts warmth on both sides independent of entity.'
+        - '[MODERATE] Timing skew: Apple arms are 2024 launch-era (Vision Pro novelty window) vs Meta arms Sep 2026 (VR Glasses novelty window) - novelty-era reviews skew warm on both sides, which aids the null reading but caps cross-year comparability; the broadcast arm (~Jul 9 2026) predates the Aug-Sep 2026 scandal cycle (ICE memo, contractor lawsuit) that the print arm postdates.'
+        - '[MODERATE] Excerpt/mirror-bounded evidence: 0 browser.open this run per #503; the Apple print arm is a third-party mirror (newstextarea.com), the Cook interview is a 9to5mac relay, and the broadcast arm is carried from the #182 corpus entry.'
+        - '[WEAK] n=1 per arm: degenerate statistical contract, directional only.'
+      counterevidence:
+        - 'The corpus #182 Type E entry documents Keach ALARMING on Meta glasses ("They Can SEE EVERYTHING!") on broadcast TV: Keach is not uniformly soft on Meta, which is precisely the medium-split finding, not a refutation of it.'
+        - 'Keach''s Apr-2026 Sun piece "Apple ''secretly testing FOUR pairs of smart glasses''" positions Meta Ray-Bans as the market benchmark ("The Meta Ray-Bans are the most well-known smart glasses on the market") - neutral-to-positive Meta framing inside an Apple-anticipatory piece, consistent with the null-delta reading.'
+        - 'Keach''s Oct-2025 Sun Tech newsletter recounts a "surprisingly emotional experience inside the new Apple Vision Pro headset" - a second Apple-side enthusiasm data point reinforcing the symmetric warmth.'
+        - 'The Boz interview''s own stigma paragraph ("critics who fear being secretly filmed by sinister strangers") is balanced in-piece by Boz''s tamper-detection messaging and Keach''s "feeling of vindication" framing: the print Meta register is enthusiasm-with-context, not puffery.'
+      strongest_counterargument: 'The -1.10 medium split may be fully explained by genre economics rather than a writer-level medium register: broadcast TV segments are packaged for outrage-retention ("They Can SEE EVERYTHING!") while print hands-on reviews are packaged for gadget-enthusiast readers, and the two were produced ~2.5 months apart straddling a worsening Meta news cycle. On this reading Keach has no stable "register" at all - he writes to the slot. The null cross-entity delta (+0.05) survives this objection better than the medium split does: both print reviews are launch-era hands-ons by the same writer in the same publication, so the entity-invariance claim is the stronger half of the mechanism, while the broadcast-vs-print comparison remains packaging-bounded.'
+      financial_context: 'News Corp-OpenAI: $250M/5yr content licensing (May 2024). News Corp-Meta: content partnership ACTIVE (News Corp is both litigation partner AND content partner per the #182 Type E entry; no dollar figure documented in corpus). The Sun (News UK)-Apple: $0, no deal documented. The money gradient predicts PROTECTIVE Meta coverage at the publisher level and nothing for Apple: the observed pattern falsifies the simple capture story on both legs (Apple at $0 receives the same print enthusiasm as revenue-linked Meta; revenue-linked Meta receives broadcast alarm from the same writer). Consistent with the #182 "cultural consensus overrides financial incentive" verdict. Correlation, not causation.'
+      cross_references:
+        - '#182 Type E (podcast-sentiment.md: "Mass-market vocabulary propagation cycle complete"; the Keach TalkTV "They Can SEE EVERYTHING!" segment and the News Corp financial paradox - this run''s carried broadcast arm).'
+        - '#978 Type B (mechanism 818, James Pero Gizmodo): the research_method REJECTED Sun/Keach as a Type B target for "no within-journalist competitor pair in corpus scope"; this run resolves that rejection with the newly surfaced Keach Apple arms.'
+        - '#983 Type B (David Heaney UploadVR): also REJECTED the Sun/Keach arms as Type B targets ("Keach has no Snap arm surfaced"); the Apple-pair route supersedes the Snap route.'
+        - '#1013 Type B (mechanism 839, Samuel Gibbs Guardian): most recent Type B precedent; same cross-entity within-writer control family, but genre-UNMATCHED (review vs news, -0.55 delta) where this run is genre-MATCHED (review vs review, +0.05 null).'
+      connects_to: [181, 818, 839]
+      research_method: '4 browser.search query sets this run, 0 browser.open (excerpt-bounded per #503). (1) Meta Connect September 2026 Ray-Ban smart glasses reporter byline Verge journalist - SELECTED: surfaced Keach''s Sun Boz interview (thescottishsun.co.uk 16866229, thesun.co.uk 40496059, thesun.ie 17676556) and Keach''s Meta VR Glasses hands-on (thesun.co.uk 40467585 / thesun.ie 17665772) with in-piece byline credits. (2) "Sean Keach" Sun tech editor Apple glasses Vision Pro 2026 - SELECTED: surfaced the 2024 Keach Apple Vision Pro daily-wear review mirror (newstextarea.com, "Credit: Sean Keach / The Sun"), the Jul-2024 Tim Cook Vision Pro interview (9to5mac relay, "Sean Keach writes:"), the Oct-2025 Vision Pro newsletter experience (thesuntech.substack.com), and the Apr-2026 Apple smart-glasses rumor piece (thesun.co.uk 38801942, Meta Ray-Bans as market benchmark). (3) Meta Connect 2026 review journalist "Meta VR glasses" hands-on Engadget byline - SELECTED as bounded-candidate screen: surfaced Engadget''s Meta Connect cluster (Karissa Bell, Devindra Hardawar, Ian Carlos Campbell) and mobilesyrup hands-on, REJECTED for primary (Bell carries m722/764/773 corpus saturation per #978; no clean same-writer cross-entity pair). (4) "Sean Keach" Snap Spectacles smart glasses 2026 - bounded-absence check: zero Keach Snap bylines in results (consistent with #983); one circular own-repo GitHub URL re-surfaced (rayhe/mediascope commit bb16912, Iteration #182 Type E), rejected as circular, not ingested. No zero-coverage claims per the iteration-492 rule (absence claims are bounded search-result absences). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps per #715: zero test_type_b_1018 files on disk (glob); no "Type B #1018" in git log (--grep); max numeric mechanism_id 841 pre-commit; zero underscore/dash-form 842 keys repo-wide pre-commit (needles format-built); block key zero-hit repo-wide pre-commit; all 6 arm URLs zero-hit repo-wide pre-commit (git grep -F). ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B mechanism on Sean Keach (zero journalist entries pre-commit; entry created this run). Resolves the #978/#983 Keach rejections ("no within-journalist competitor pair") via the newly surfaced Keach Apple arms (2024 Vision Pro review + Jul-2024 Cook interview). FIRST genre-matched null-delta Type B pair in the corpus family (review vs review, +0.05) paired with a carried cross-medium arm (broadcast -0.70 vs print +0.40, -1.10 split). Zero test_type_b_1018 files on disk pre-commit (glob); no "Type B #1018" in git log (--grep); max numeric mechanism_id 841 pre-commit; zero underscore/dash-form 842 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; all 6 new arm URLs zero-hit repo-wide pre-commit.'
+      test_file: tests/test_type_b_1018_sean_keach_sun_meta_print_enthusiasm_vs_broadcast_alarm_apple_print_null_delta_sep26_3pm.py
+      artifact_readiness: 'No analysis.json update warranted: within-writer cross-medium register documentation, illustrative-only scorer output, no empirical significance.'
+
 - name: Anthony Ha
   notes: 'TechCrunch weekend editor (role current as of Sep 2026; previously a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm; lives in New York City; contact anthony.ha@techcrunch.com, per his TechCrunch bio). AI-category beat with a trust-and-skepticism register. KEY for MediaScope: Ha authored BOTH same-day Aug 16 2026 AI-category pieces in the trust lane, a skeptical podcast-preview on Zuckerberg''s Meta AI manifesto (-0.45) and a straight executive-statement report on Anthropic CEO Dario Amodei''s trust-crisis framing (+0.15), enabling a clean within-writer cross-entity comparison where Anthropic''s CEO is the virtuous foil inside Ha''s own Meta piece. Separately, Ha authored a Jul 26 2026 TechCrunch essay on Apple smart glasses that labels Meta''s glasses pervert glasses while positioning Apple as the privacy hero (on-device processing, no facial recognition), enabling a second within-writer cross-entity privacy-register comparison (#923, mechanism 785).'
   career:
