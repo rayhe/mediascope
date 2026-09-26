@@ -73,7 +73,7 @@ README = REPO / "README.md"
 ARCH = REPO / "docs" / "ARCHITECTURE.md"
 LOG = REPO / "iteration-log.md"
 
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "2b5c07b5c7f4fb4de47f5265a5681c456fd4f4e8"
 
 NEW_URLS = [
     "https://www.globenewswire.com/news-release/2026/09/24/3368729/0/en/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand.html",
