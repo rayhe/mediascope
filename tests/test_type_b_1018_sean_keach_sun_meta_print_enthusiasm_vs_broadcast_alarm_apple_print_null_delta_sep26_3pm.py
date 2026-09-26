@@ -161,6 +161,7 @@ class TestNovelty1018:
         hits = [
             line for line in r.stdout.splitlines()
             if line.split()[0] not in own.split()
+            and "push-status finalizer" not in line  # per #716 this run's own finalizer, not a pre-commit leak
         ]
         assert hits == []
 
@@ -207,7 +208,12 @@ class TestRotationGuard1018:
         own = run_git(
             "log", "--format=%H", "--", "tests/" + THIS_FILE
         ).stdout.split()
-        competing = [line for line in matches if line.split()[0] not in own]
+        competing = [
+            line
+            for line in matches
+            if line.split()[0] not in own
+            and "push-status finalizer" not in line  # per #716 this run's own finalizer, not a racing iteration
+        ]
         assert competing == []
 
 

@@ -19308,7 +19308,7 @@ journalists:
   - publication: the-sun
     role: Head of Science & Technology
     beat: gadgets, consumer tech, wearables
-    start: '2015'
+    start: 'unknown'
     end: present
     source_url: https://www.thesun.ie/tech/16815054/apple-smart-glasses-iphone-face-release-headset-meta-features/
     date_note: 'role title per Keach''s own newsletter bio (The Sun Tech, Sep 2026); "tech editor" used interchangeably in Sun bylines; start year approximate from "more than a decade", not documented this run'
@@ -19361,7 +19361,8 @@ journalists:
         source_note: 'URL verbatim from this run''s browser.search Full-URL listing (zero-hit repo-wide pre-commit per #715; not constructed). Evidence tier: excerpt-bounded per #503; 0 browser.open this run. Variant URL surfaced in the same result set: https://www.thesun.ie/tech/17665772/meta-vr-glasses-virtual-reality-specs-features-price-review/ (not ingested; thesun.co.uk canonical taken as primary).'
       meta_arm_supporting:
         piece: 'The Sun Sep 2026 "Meta''s VR boss reveals how his new specs could replace your TV and laptop and why camera vanished on new Ray Ban glasses", Boz interview by Sean Keach'
-        date: '2026-09-25'
+        date: '2026-09'
+        date_precision: 'month-only: exact day not excerpt-verifiable this run (0 browser.open per #503); published in the Meta Connect 2026 window, Sep 2026.'
         byline: 'Sean Keach'
         byline_attestation: 'In-piece credit "The Sun''s Sean Keach talked to Boz about Meta''s latest gadgets Credit: The Sun" and "Sean tried on the specs at Meta Connect Credit: Sean Keach".'
         register: exec_interview_messaging_relay
@@ -19391,7 +19392,8 @@ journalists:
         source_note: 'In-corpus via podcast-sentiment.md (Iteration #182 Type E); the novelty is the journalist-angle block, not the URL. Evidence tier: corpus-carried entry; 0 browser.open this run.'
       apple_arm_print:
         piece: 'The Sun 2024 "Apple Vision Pro review: I''ve been wearing hi-tech headset every day - there are three places I''m obsessed with using it", byline Sean Keach'
-        date: '2024-02'
+        date: '2024'
+        date_precision: 'year-only: exact month not excerpt-verifiable this run (0 browser.open per #503); newstextarea mirror carries no dateline in the excerpt; Vision Pro review-peg window.'
         byline: 'Sean Keach'
         byline_attestation: 'In-mirror credit "The headset is easy to put on and very comfortable Credit: Sean Keach / The Sun" (newstextarea.com mirror of the Sun review).'
         register: enthusiastic_daily_wear_review
