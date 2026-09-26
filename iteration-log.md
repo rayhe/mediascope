@@ -25,6 +25,8 @@ Manual MONITORING-ONLY per the Aug 28 2026 standing rule: tone NOT_SCORED, p_val
 
 - Commit hashes: main commit 9d76efcf153304a3d2d34f9059e796da806181b0 (verified via git rev-parse); anchor followup 9d1c886d601fcd0ac93d6f850cda8d22877440e8 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 51/51 file tests green post-followup); log-hash followup registers both hashes here per #721.
 
+- Push status: PUSHED per #716 - main 9d76efcf + anchor 9d1c886d + log-hash 79ada92a pushed to origin main in one fast-forward (2cfcdac6..79ada92a); remote tip 79ada92a8c0bfe5b232e8bd05cbf884c9bdf497a verified equal to local via git ls-remote Sep 25 2026 20:2x PDT.
+
 ## #1000 Type D: m829/m830/m831 qualitative-discipline verification + post-995-999 corpus integrity (max numeric mechanism_id 831; zero 832 keys numeric/underscore/dash; ledger holds at 30; THIRTIETH member-form present exactly once (m818, journalists.yaml); THIRTY-FIRST member-form negative guard) + #995 background-suite tombstone (FORTY-FIRST consecutive death; lineage FIFTY-NINTH -> SIXTIETH) + fresh synthetic engine calibration (strong n=8 p=4.39e-11 engine-significant; near-null p=0.797 silent; degenerate n=1-on-m830-pair guard fires) + full suite re-launched - Type D FIRST leg of the 1000-1004 window D->E->A->B->C OPENING it (Sep 25 2026, 19:00 PDT; main commit bffb3f7d4a3e528812ea9edb77ff444c9b203c49 / anchor 2bcb9955cbc8c689c29e9adb8d44af5a04f7e3c8; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-25 19:00 PDT, iteration_type "D", **FIRST leg of the 1000-1004 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
