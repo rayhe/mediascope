@@ -51,7 +51,7 @@ ITERATION = 1017
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-26 14:00 PDT"
 RUN_PDT_SHORT = "Sep 26 2026 14:00 PDT"
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched by the anchor followup per #565
+ANCHORED_SHA = "97df5870a4fc675eeb7ef97e55efbe0634ff5097"  # patched by the anchor followup per #565
 
 THIS_FILE = (
     "test_type_a_1017_verge_microsoft_sep2026_copyright_defense_headline_"
