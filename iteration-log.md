@@ -1,4 +1,4 @@
-## #999 Type C: OpenAI x Yelp content-to-commerce licensing (mechanism 831) - FIRST dedicated corpus mechanism on a commerce-conversion licensing leg; ELEVENTH relationship direction in the m807 enumeration - FIFTH and CLOSING leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 18:00 PDT; main commit PENDING_MAIN_SHA / anchor PENDING_ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit))
+## #999 Type C: OpenAI x Yelp content-to-commerce licensing (mechanism 831) - FIRST dedicated corpus mechanism on a commerce-conversion licensing leg; ELEVENTH relationship direction in the m807 enumeration - FIFTH and CLOSING leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 18:00 PDT; main commit 608f41be0ce4a5b9f7da5afbe9e2e68e67dc91ed / anchor fee55a6b5757bb2b5b077d9eb88d8f44b0cc403c; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-25 18:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 995-999 window, closing it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
