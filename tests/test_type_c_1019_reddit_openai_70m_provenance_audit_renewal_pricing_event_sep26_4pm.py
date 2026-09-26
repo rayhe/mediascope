@@ -54,7 +54,7 @@ NEXT_NUM = 844
 ITERATION = 1019
 ITERATION_TYPE = "C"
 EXPECTED_TESTS = 52
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "7f8e944d"  # patched in the anchor followup per #565
 PREDECESSOR_SHAS = {
     "55e3067be6dadab3f2b11e37fb3053d50e60c1f6",
     "4fcea1834c62bebcb8fca795a5d1aae7486ac493",
@@ -117,10 +117,15 @@ class TestNovelty1019:
         assert len(matches) == 1
         assert matches[0].name == THIS_FILE
 
-    def test_anchor_unpatched_pre_commit(self):
-        # Fails post-commit by design (anchor followup patches it per #1017/#1018
-        # convention): the committed test must carry the real mechanism SHA.
-        assert ANCHORED_SHA == "PATCH_ME_IN_FOLLOWUP"
+    @pytest.mark.anchor
+    def test_anchor_sha_patched_post_commit(self):
+        # Fails pre-anchor by design; passes after the anchor followup per
+        # #565: the committed test must carry the real main-commit SHA.
+        assert ANCHORED_SHA != "PATCH_ME_IN_FOLLOWUP"
+        r = run_git("cat-file", "-t", ANCHORED_SHA)
+        assert r.stdout.strip() == "commit"
+        r2 = run_git("log", "--format=%s", "-1", ANCHORED_SHA)
+        assert "Type C #1019" in r2.stdout
 
     def test_novelty_first_claim_present(self):
         block, _ = _block()
