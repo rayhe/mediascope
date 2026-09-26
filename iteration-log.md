@@ -26,7 +26,7 @@ MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: p_value/cohens_d/ci 
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor patch), #900 (root-owned untracked test) all in-flight and untouched - targeted staging of the m835 hunk only.
 
 - Commit hashes: main commit a0d351d30e8d3ad359c79fd4c0187cb67bfc11b7 (verified via git rev-parse); anchor followup 2cf05d9633f3707f7b88bf70cfe4a76ea01c7063 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: pending at log-hash time - pushed per #716 after this followup lands; concurrency: #899/#938/#900 in-flight untouched.
+- Push status: PUSHED per #716 - main a0d351d3 + anchor 2cf05d96 + log-hash 958ad60d pushed to origin main in one fast-forward (d2635ce4..958ad60d); remote tip 958ad60d2126995a0177f565a2bf2a84286d7703 verified equal to local via git ls-remote Sep 26 2026 02:0x PDT. Concurrency: #899/#938/#900 in-flight untouched.
 
 ## #1006 Type E: podcast sentiment 124th verification (GF 501 confirmed again, no 502, ZERO new GF keys fourth consecutive pure-re-surface; EHE 47-day hold, ZERO new URL keys; Attention Sphere 124th no-match, Tracked Sources 123->124; press 7/7 pure re-surface, ZERO new press keys, frontier HOLDS at Sep 24) - Type E SECOND leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 01:00 PDT; main commit 9e82a6279f43b2244591f0a211261f18d48c0696 / anchor 1cae3521ed7881a2f0a642ca259d3eca2e524f0b; log-hash followup registers both hashes here per #721 (this commit))
 
