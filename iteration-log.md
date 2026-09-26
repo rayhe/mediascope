@@ -1,3 +1,33 @@
+## #1007 Type A: NYT x Anthropic Sep-2026 IPO-scoop momentum register vs NYT x Meta Connect-relay + Aug ICE-ban enforcement register (mechanism 835) - Type A THIRD leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 02:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-26 02:00 PDT, iteration_type "A", **THIRD leg of the 1005-1009 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+Previous main commit #1006 Type E at 01:00 PDT Sep 26 2026 (main 9e82a6279f43b2244591f0a211261f18d48c0696, anchor 1cae3521ed7881a2f0a642ca259d3eca2e524f0b, log-hash d0c3cddf, push-status c81b1b06, all verified present via git log before this run's commit). This run is #1007 Type A at 02:00 PDT Sep 26 2026. Rotation A,B,C,D,E; 1005-1009 window D->E->A->B->C; next #1008 will be Type B.
+
+### Verification targets
+- **Anthropic arm 1** (Sep 12): "Anthropic C.E.O. Dario Amodei Calls for A.I. Slowdown" - NYT news piece, attested via 15minutenews (NYT-attributed in the search-result title); reception consensus-framed with Musk "Dario is right" and Altman "I agree with Dario"; MANUAL ILLUSTRATIVE +0.10.
+- **Anthropic arm 2** (Sep 18): NYT IPO scoop - "The IPO Buzz: Anthropic IPO May Come in November - The NYT Reports" (IPOScoop dedicated attestation quoting the NYT original verbatim: "most likely in November, according to a story posted online by The New York Times late this afternoon (Friday, Sept. 18, 2026)"; "expected to generate more than $100 billion in annualized revenue this year, according to four people familiar with the matter"; $2T valuation, raise up to $100B; MANUAL ILLUSTRATIVE +0.25). Corroborated by temperature2 (NYT reported Sep 18, $100B revenue run rate) and winbuzzer (NYT reported Sep 18, people familiar with the plans); the winbuzzer relay URL is already in-corpus as an FT-scoop relay in m784 (Type A #922) and was rejected as the arm URL, not reused.
+- **Meta arm 1** (Sep 23): "Meta Unveils 3 Smart Glasses With Built-In A.I." - NYT Connect straight relay, attested via killbait (title assessed not-clickbait/factual; NYT focus on Zuckerberg's "AI can empower people" messaging; MANUAL ILLUSTRATIVE +0.10).
+- **Meta arm 2** (Aug 18): NYT memo-sourced ICE-ban investigative piece - original NYT URL (https://www.nytimes.com/2026/08/18/technology/ice-meta-smart-glasses.html) recovered verbatim via the glassesbegone repo's cited sourceUrl field; "according to a memo the New York Times obtained", acting director David Venturella: "the use of Meta Glasses or similar devices could unintentionally capture, record or transmit sensitive information"; corroborated by TechRepublic, The Register, PhoneArena, iTechPost, Gizmodo, and hcamag all attributing the memo scoop to the NYT; enforcement register; MANUAL ILLUSTRATIVE -0.30. FIRST corpus mechanism-ization of this piece.
+- **Scores**: Anthropic mean +0.175, Meta mean -0.10, illustrative delta (Anthropic minus Meta) +0.275. Register SELECTION is the asymmetry: momentum and CEO-thesis registers for the reported-settlement counterparty, enforcement-register investigation for Meta's wearables, inside the same paper inside six weeks.
+- **Incentive read**: directionally consistent with the reported (single-source unverified, FinancialContent Dec 29 2025) NYT-Anthropic confidential settlement/licensing tie, but attribution is INCONCLUSIVE: the tie is unverified, desks differ (business vs investigative), and the IPO event is genuinely positive news. Temporal extension of the m685 slowdown family into the IPO peg (mirroring the #922 FT x Anthropic Q2/IPO temporal-extension pattern); connects_to [685, 822, 832, 790].
+
+### Statistical discipline
+MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: p_value/cohens_d/ci NOT_CALCULATED, is_significant False, engine NOT run at the finding layer; verdict directionally_supported_not_proven; no analysis.json update; NOT artifact-grade; NOT falsification-family member; ledger holds at 30 (THIRTIETH member-form once, m818 journalists.yaml; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST negative guard wordings pinned per #1000); max numeric mechanism_id 834 pre-commit -> 835 post-commit; zero numeric/underscore/dash-form 836 keys pre-commit and post-commit; 4/4 arm URLs zero-hit repo-wide pre-commit; cautious language required. Correlation is not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+
+### Research method
+4 browser.search query sets, 0 browser.open (excerpt-bounded per #503). URLs copied verbatim from search-result Full-URL listings or verbatim-cited source fields; no canonical URLs constructed. The Atlantic query produced no usable Atlantic arms (all relays rejected). Test file: tests/test_type_a_1007_nyt_anthropic_sep2026_ipo_scoop_momentum_vs_meta_connect_relay_ice_enforcement_sep26_2am.py - 41 tests, 10 classes.
+
+### Doc-sync
+51748/1331 -> 51789/1332; +41/+1 = the #1007 file exactly (.venv python authoritative). 41 tests, 10 classes. Anchor + rotation guard per #565.
+
+### Concurrency
+#899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor patch), #900 (root-owned untracked test) all in-flight and untouched - targeted staging of the m835 hunk only.
+
+- Commit hashes: main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Push status: pending - pushed per #716 after the main/anchor/log-hash sequence lands; concurrency: #899/#938/#900 in-flight untouched.
+
 ## #1006 Type E: podcast sentiment 124th verification (GF 501 confirmed again, no 502, ZERO new GF keys fourth consecutive pure-re-surface; EHE 47-day hold, ZERO new URL keys; Attention Sphere 124th no-match, Tracked Sources 123->124; press 7/7 pure re-surface, ZERO new press keys, frontier HOLDS at Sep 24) - Type E SECOND leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 01:00 PDT; main commit 9e82a6279f43b2244591f0a211261f18d48c0696 / anchor 1cae3521ed7881a2f0a642ca259d3eca2e524f0b; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-26 01:00 PDT, iteration_type "E", **SECOND leg of the 1005-1009 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

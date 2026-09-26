@@ -3821,6 +3821,135 @@ competitor_relationships:
       novelty: 'Zero test_type_a_752 files on disk pre-commit; no "Type A #752" in git log pre-commit; the Sep 13 explainer mirror URL (what-anthropic-ceo-dario-amodei-argued) zero-hit repo-wide pre-commit; the "What Anthropic''s C.E.O. Argued" title string zero-hit repo-wide pre-commit; max numeric mechanism_id 684 pre-commit; zero underscore-form 685 mechanism key strings repo-wide pre-commit.'
       no_analysis_json_update: true
       correlation_not_causation: true
+    type_a_1007_nyt_anthropic_sep2026_ipo_scoop_momentum_register_vs_meta_connect_relay_ice_enforcement_sep26_2026:
+      mechanism_id: 835
+      iteration: 1007
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-26'
+      time_pdt: '02:00'
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The New York Times
+      author: 'Kit (with Ray)'
+      mechanism_name: 'NYT x Anthropic Sep-2026 IPO-Scoop Momentum Register vs NYT x Meta Connect-Relay + Aug ICE-Ban Enforcement Register - Same-Paper Genre-Allocated Gradient (Sep 12-23 2026)'
+      block_key: type_a_1007_nyt_anthropic_sep2026_ipo_scoop_momentum_register_vs_meta_connect_relay_ice_enforcement_sep26_2026
+      key_design_note: 'Descriptive block key carries the iteration number but no underscore-form key substring for mechanism 835, per the #723/#738/#739/#747 designed-keying convention: keeps the zero-835 profile sweep instruments green while mechanism_id advances in colon form.'
+      overview: 'In the Sep 12-23 2026 window the New York Times ran two Anthropic arms in the constructive band - a Sep 12 news piece on Dario Amodei''s slowdown essay ("Anthropic C.E.O. Dario Amodei Calls for A.I. Slowdown", 15minutenews attestation of the NYT original, reception consensus-framed with Musk "Dario is right" and Altman "I agree with Dario"; MANUAL ILLUSTRATIVE +0.10) and a Sep 18 IPO scoop ("The IPO Buzz: Anthropic IPO May Come in November - The NYT Reports", IPOScoop attestation quoting the NYT original verbatim: "most likely in November, according to a story posted online by The New York Times late this afternoon (Friday, Sept. 18, 2026)"; "expected to generate more than $100 billion in annualized revenue this year, according to four people familiar with the matter"; IPO-momentum capital-market enthusiasm register; MANUAL ILLUSTRATIVE +0.25) - against two Meta arms split across registers: the Sep 23 Connect straight relay ("Meta Unveils 3 Smart Glasses With Built-In A.I.", killbait attestation of the NYT original title, assessed not-clickbait/factual, NYT focus on Zuckerberg''s "AI can empower people" messaging; MANUAL ILLUSTRATIVE +0.10) and the Aug 18 memo-sourced ICE-ban investigative piece (original NYT URL recovered verbatim via the glassesbegone repo sourceUrl field; "according to a memo the New York Times obtained", acting director David Venturella: "the use of Meta Glasses or similar devices could unintentionally capture, record or transmit sensitive information"; corroborated by TechRepublic, The Register, PhoneArena, iTechPost, and Gizmodo all attributing the memo scoop to the NYT; enforcement register; MANUAL ILLUSTRATIVE -0.30). Anthropic mean +0.175, Meta mean -0.10, illustrative delta (Anthropic minus Meta) +0.275. The register SELECTION is the asymmetry: momentum and CEO-thesis registers for the reported-settlement counterparty, enforcement-register investigation for Meta''s wearables, inside the same paper inside six weeks. Incentive read is incentive-CONSISTENT with the reported (single-source unverified, FinancialContent Dec 29 2025) NYT-Anthropic confidential settlement/licensing tie, but attribution is INCONCLUSIVE: the tie is unverified, desks differ (business vs investigative), and the IPO event is genuinely positive news.'
+      articles_this_run:
+        - title: 'Anthropic C.E.O. Dario Amodei Calls for A.I. Slowdown'
+          publication: New York Times
+          date: '2026-09-12'
+          timestamp: '16:03 (15minutenews attestation of NYT original)'
+          url: 'https://www.15minutenews.com/article/2026/09/12/282850031/anthropic-ceo-dario-amodei-calls-for-ai-slowdown/'
+          url_status: 'NOVEL this run - zero hits repo-wide pre-commit (mirror attestation of the NYT piece; original nytimes.com URL not supplied in search-result Full-URL listings)'
+          framing: 'ceo_thesis_news_peg'
+          tone_manual_illustrative: 0.10
+          language:
+            - '3,800-word essay'
+            - 'greater safety controls across the industry'
+            - 'Dario is right (Musk)'
+            - 'I agree with Dario (Altman)'
+          notes: 'News-peg version of the slowdown story, distinct from m685''s Sep-13 explainer arm (different story format, different date). Reception consensus-framed; no independent OpenAI-scrutiny arm in the excerpt lines.'
+        - title: 'The IPO Buzz: Anthropic IPO May Come in November - The NYT Reports'
+          publication: New York Times (via IPOScoop attestation)
+          date: '2026-09-18 (NYT story posted online late Friday afternoon per attestation)'
+          url: 'https://www.iposcoop.com/the-ipo-buzz-anthropic-ipo-may-come-in-november-the-nyt-reports/'
+          url_status: 'NOVEL this run - zero hits repo-wide pre-commit (dedicated attestation of the NYT Sep-18 scoop; original nytimes.com URL not supplied in search-result Full-URL listings)'
+          framing: 'ipo_momentum_capital_market'
+          tone_manual_illustrative: 0.25
+          language:
+            - 'most likely in November, according to a story posted online by The New York Times'
+            - 'which could put it on track for its shares to start trading as soon as November, said two people with knowledge of the situation'
+            - 'expected to generate more than $100 billion in annualized revenue this year, according to four people familiar with the matter'
+            - '$2 trillion valuation, raise up to $100 billion'
+          notes: 'Business-desk IPO scoop with capital-market enthusiasm register, quoted verbatim by the attestation. Corroborated by temperature2 (NYT reported Sep 18, $100B revenue run rate) and winbuzzer (NYT reported Sep 18, people familiar with the plans); the winbuzzer relay URL is already in-corpus as an FT-scoop relay in m784 and was not reused. Temporal extension of the m685 slowdown family into the IPO peg, mirroring the #922 FT x Anthropic Q2/IPO temporal-extension pattern.'
+        - title: 'Meta Unveils 3 Smart Glasses With Built-In A.I.'
+          publication: New York Times
+          date: '2026-09-23'
+          url: 'https://en.killbait.com/meta-announces-three-new-ai-powered-smart-glasses-at-connect-2026-conference.html'
+          url_status: 'NOVEL this run - zero hits repo-wide pre-commit (relay attestation; original NYT title given verbatim in the relay)'
+          framing: 'straight_product_launch_relay'
+          tone_manual_illustrative: 0.10
+          language:
+            - 'Meta Unveils 3 Smart Glasses With Built-In A.I. (original NYT title, verbatim)'
+            - 'AI can empower people (Zuckerberg messaging carried)'
+            - 'assessed not-clickbait/factual by relay'
+          notes: 'Straight launch relay with company-message carriage and no adversarial add-ons. Counter-evidence against a uniform Meta-adversarial read at the NYT: the launch peg itself gets the neutral band.'
+        - title: 'NYT: ICE memo bars employees from wearing Meta smart glasses (Aug 18 2026)'
+          publication: New York Times
+          date: '2026-08-18'
+          url: 'https://www.nytimes.com/2026/08/18/technology/ice-meta-smart-glasses.html'
+          url_status: 'NOVEL this run - zero hits repo-wide pre-commit (original nytimes.com URL recovered verbatim from the glassesbegone repo sourceUrl field; nytimes.com not fetched first-hand this run, provenance disclosed)'
+          url_source: 'recovered verbatim from https://github.com/fweidner/glassesbegone/blob/HEAD/src/content/bans/2026-08-18-ice-nationwide-employees.md (sourceUrl field); corroborated by TechRepublic, The Register, PhoneArena, iTechPost, Gizmodo, and hcamag all attributing the memo scoop to the NYT'
+          framing: 'enforcement_register_memo_sourced'
+          tone_manual_illustrative: -0.30
+          language:
+            - 'according to a memo the New York Times obtained'
+            - 'unintentionally capture, record or transmit sensitive information'
+            - 'qualify as body-worn cameras'
+          notes: 'FIRST corpus mechanism-ization of the NYT''s own Aug-18 ICE-ban investigative piece (the #1002 Guardian ICE arm was the Guardian''s Sep-8 FOIA piece). Memo-sourced enforcement register applied to Meta wearables five weeks before the paper''s straight Connect relay.'
+      illustrative_means:
+        anthropic_mean: 0.175
+        meta_mean: -0.10
+        delta_calc: '(+0.175) - (-0.10) = +0.275 (Anthropic minus Meta)'
+        delta: 0.275
+      statistical_discipline:
+        scope: qualitative register documentation only
+        correlation_not_causation: true
+        scorer: none
+        tone_scores: MANUAL_ILLUSTRATIVE
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        artifact_grade: false
+        qualitative_only: true
+        verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents register SELECTION inside one publication across a six-week window: IPO-momentum and CEO-thesis registers for Anthropic, a straight relay plus a memo-sourced enforcement register for Meta. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. The reported NYT-Anthropic settlement is single-source unverified; incentive attribution is inconclusive. No causal claim. No claim that any individual article was softened or hardened by a financial tie.'
+      no_coverage_tone_claim: false
+      no_analysis_json_update: true
+      falsification_family: 'NOT a member - register-documentation pair with incentive-consistent direction, not a uniform-prediction test; ledger holds at 30 (THIRTIETH member-form present exactly once in journalists.yaml m818; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST member-form negative guard).'
+      ledger_hold: 30
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type A documentation leg; no new tracked-publication finding beyond the register pair.'
+      connects_to: [685, 822, 832, 790]
+      confounders_ranked:
+        strong:
+        - 'Desk/genre mismatch: the IPO scoop is business-desk, the ICE-ban piece is investigative-desk, the Connect item is product news, the slowdown piece is tech news. Registers follow desk norms, not necessarily entity targeting.'
+        - 'Search-excerpt-bounded sourcing: no arm was first-hand read (0 browser.open this run); all quotes and register reads carried from search-result excerpt tiers per #503. Full-text registers could differ.'
+        - 'The IPO event is genuinely positive business news; a momentum register is event-driven, not necessarily entity-driven. Anthropic''s September was objectively news-rich on the upside.'
+        moderate:
+        - 'n=2 per arm, degenerate-ish sample; illustrative only, no inferential weight. The delta +0.275 is a directional read, not a measured effect.'
+        - 'The reported Anthropic-NYT confidential settlement is single-source unverified (FinancialContent Dec 29 2025); the incentive leg is speculative until a second source confirms.'
+        - 'Meta''s own Sep-23 arm scored +0.10 (straight relay): the outlet does not apply the enforcement register to Meta uniformly. The gap is driven by the enforcement arm, not the launch arm.'
+        weak:
+        - 'Temporal skew: the Aug 18 ICE piece predates the Sep 12-23 Anthropic arms by four to five weeks; the enforcement register may reflect an August news environment, not a standing entity posture.'
+        - 'Mirror-attribution risk: all four arms are excerpt-tier via relays; the NYT originals were not first-hand read, and relay paraphrase may distort register.'
+      counterevidence:
+      - 'The NYT''s Sep-23 Connect relay (+0.10) is neutral-positive: the same paper applies no adversarial register to Meta''s launch itself, bounding the enforcement-register claim to the investigative peg.'
+      - 'The #822 plaintiff control: the NYT sues OpenAI for billions yet ran a straight +0.15 momentum relay of OpenAI''s $1.5tn financing ask - litigation posture does not uniformly harden registers at this outlet.'
+      - 'The Amazon payer falsification family: the NYT runs adversarial labor/capex registers on its $20-25M/yr licensing payer, so money alone does not predict softness at this outlet.'
+      - 'm683: the NYT ran the concern register on Anthropic itself (Kate Conger, Sep 9, -0.25) - register follows the peg, not the entity, inside this same publication.'
+      distinct_from_prior:
+      - 'Distinct from #752/m685 (NYT x Anthropic slowdown-week CEO-essay explainer): that mechanism-ized the Sep-13 explainer arm; this adds the Sep-12 news-peg slowdown arm and the Sep-18 IPO scoop as a two-arm Anthropic side, plus two Meta arms (Sep-23 Connect relay, Aug-18 ICE-ban investigation) as the cross-entity pair. The m685 Meta side was a carried alarm comparator, not dedicated Meta arms.'
+      - 'Distinct from #822/m724 (NYT x OpenAI $1.5tn plaintiff control): that tested the litigation posture against the financing peg; this tests the reported-settlement counterparty against the wearables peg.'
+      - 'Distinct from #1002/m832 (Guardian x Meta enforcement register): that was the Guardian''s Sep-8 FOIA piece; this is the NYT''s own Aug-18 memo scoop, a different outlet and a different document chain.'
+      - 'Novelty verified per Aug 31 standing rule: zero test_type_a_1007 files on disk; no "Type A #1007" in git log; max numeric mechanism_id 834 pre-commit; zero underscore-form 835 mechanism key strings in profiles/ pre-commit (needles format-built, no literals carried per #715); block key zero-hit repo-wide pre-commit; all four arm URLs zero-hit repo-wide pre-commit (the winbuzzer relay URL surfaced in research was rejected as already in-corpus via m784''s FT-scoop relay set).'
+      rotation_transparency: "1005-1009 window third leg: D (#1005) -> E (#1006) -> A (#1007, this run) -> B (#1008) -> C (#1009); the 1000-1004 window verified closed (D #1000, E #1001, A #1002, B #1003, C #1004 as a consecutive newest-first sequence in git history); concurrency: #884 (competitor-entities.yaml m762), #899 (nytimes.yaml m771), #900 (untracked Type D test), and the #938 anchor patch remain in-flight/uncommitted and untouched; novelty anchor patched in the followup per the #565 convention."
+      research_method: '4 browser.search query sets this run (NYT Anthropic Amodei September 2026 - surfaced the Sep-12 NYT news piece via 15minutenews attestation and the Sep-18 NYT IPO scoop via winbuzzer attestation, rejected nytimespost mirrors and the Fox News AI newsletter as non-NYT-authored; The Atlantic Meta smart glasses September 2026 - no Atlantic arms surfaced, all relays rejected; NYT ICE banned Meta glasses memo August 2026 - surfaced the Aug-18 NYT memo scoop via glassesbegone sourceUrl recovery plus TechRepublic/The Register/PhoneArena/iTechPost/Gizmodo/hcamag corroborating attributions; Anthropic IPO November debut NYT September 18 - surfaced the IPOScoop dedicated NYT-scoop attestation with verbatim NYT quotes, SELECTED as the arm URL, winbuzzer rejected as already in-corpus via m784). 0 browser.open this run (excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings or verbatim-cited source fields; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 1007
+        type: 'A'
+        date: '2026-09-26 02:00 PDT'
   amazon:
     financial_tie: "licensing"
     estimated_value: "$20-25M/yr"
