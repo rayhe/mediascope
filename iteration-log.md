@@ -1,4 +1,4 @@
-## #1008 Type B: Lily Hay Newman (WIRED) Sep-23 Meta Connect "Pinky Promises" co-byline vs Sep-9 Apple Watch Audio Intelligence - PEG-MATCHED replication of mechanism 635 (mechanism 836) - Type B FOURTH leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 03:00 PDT; main commit <MAIN_SHA> / anchor <ANCHOR_SHA>; log-hash followup registers both hashes here per #721 (this commit))
+## #1008 Type B: Lily Hay Newman (WIRED) Sep-23 Meta Connect "Pinky Promises" co-byline vs Sep-9 Apple Watch Audio Intelligence - PEG-MATCHED replication of mechanism 635 (mechanism 836) - Type B FOURTH leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 03:00 PDT; main commit e9ffd2ec4cb8435aa29413f8dc65082d9cea8edc / anchor fc799a0d74a4f771f34dd4fe61008ceace2e0708; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-26 03:00 PDT, iteration_type "B", **FOURTH leg of the 1005-1009 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -23,7 +23,7 @@ MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: both arm tones CARRI
 ### Concurrency
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor patch), #900 (untracked test), #884 (competitor-entities.yaml m762) all in-flight and untouched - targeted staging of the m836 hunk only.
 
-- Commit hashes: main commit <MAIN_SHA> (verified via git rev-parse); anchor followup <ANCHOR_SHA> (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 41/41 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Commit hashes: main commit e9ffd2ec4cb8435aa29413f8dc65082d9cea8edc (verified via git rev-parse); anchor followup fc799a0d74a4f771f34dd4fe61008ceace2e0708 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 39/41 file tests green, hash-placeholder + staged-set failing until this followup / by design); log-hash followup registers both hashes here per #721.
 - Push status: PENDING - to be filled by the push-status finalizer per #716.
 
 ## #1007 Type A: NYT x Anthropic Sep-2026 IPO-scoop momentum register vs NYT x Meta Connect-relay + Aug ICE-ban enforcement register (mechanism 835) - Type A THIRD leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 02:00 PDT; main commit a0d351d30e8d3ad359c79fd4c0187cb67bfc11b7 / anchor 2cf05d9633f3707f7b88bf70cfe4a76ea01c7063; log-hash followup registers both hashes here per #721 (this commit))
