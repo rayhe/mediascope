@@ -100,7 +100,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
 
-ANCHORED_SHA = "0000000000000000000000000000000000000000"  # patched post-commit per #565
+ANCHORED_SHA = "91c0e6fda8da49e39a9d41069554716e2c0b3c29"  # patched post-commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"
 NEXT_NUM = 835
@@ -306,10 +306,27 @@ class TestNovelty1005:
         ], "only this file may match the test_type_d_1005 glob"
 
     def test_no_type_d_1005_in_git_log(self):
-        subjects = _git("log", "--format=%s").splitlines()
-        assert not any(
-            re.match(r"Type D #1005:", s) for s in subjects
-        ), "no Type D #1005 commit may precede this run"
+        # Pre-commit novelty: no Type D #1005 main commit exists.
+        # Post-commit (anchor followup per #565), exactly one exists
+        # and it is the anchored main commit - the guard doubles as a
+        # duplicate-main-commit check.
+        result = subprocess.run(
+            ["git", "log", "--format=%H %s", "--grep=Type D #1005"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+        )
+        assert result.returncode == 0
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type D #1005" in line and "followup" not in line.lower()
+        ]
+        if ANCHORED_SHA == "0" * 40:
+            assert mains == [], mains
+        else:
+            assert len(mains) == 1, mains
+            assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
     def test_max_id_is_834_pre_commit(self):
         assert _max_numeric_mechanism_id() == 834
