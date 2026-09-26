@@ -71,7 +71,7 @@ EXPECTED_TESTS = 49
 README_TESTS_BEFORE, README_TESTS_AFTER = 51341, 51390
 README_FILES_BEFORE, README_FILES_AFTER = 1323, 1324
 # Anchor placeholder: replaced by the real main-commit SHA in the #565 anchor followup
-ANCHORED_SHA = "0" * 40  # patched green in the anchor followup per #565
+ANCHORED_SHA = "608f41be0ce4a5b9f7da5afbe9e2e68e67dc91ed"  # patched green in the anchor followup per #565
 
 SOURCE_URLS = [
     "https://benfromaiso.substack.com/p/chatgpt-and-yelp-what-the-deal-actually",
@@ -159,7 +159,7 @@ class TestRotationCycleGuard999:
         assert "## #998" in text and "Type B" in text
         block = _block_yaml()
         assert block["iteration"] == EXPECTED_ITERATION
-        assert block["rotation"] == "C"
+        assert block["rotation"] == "Type C"
 
     @pytest.mark.rotation
     def test_predecessor_998_type_b_committed(self):
