@@ -25854,3 +25854,87 @@ type_c_994_meta_one_link_limits_publisher_carveout_sep25:
     yaml_parse_clean: true
     ascii_only: true
   tone_scores: 'NOT_SCORED'
+
+type_c_999_yelp_openai_commerce_conversion_request_a_quote_sep25:
+  mechanism_id: 831
+  iteration: 999
+  rotation: Type C
+  date_analyzed: '2026-09-25'
+  time_pdt: '18:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'OpenAI x Yelp content-to-commerce licensing with in-answer Request a Quote (Axios Jul 23 2026) - FIRST dedicated corpus mechanism on a commerce-conversion licensing leg; ELEVENTH relationship direction in the m807 enumeration'
+  type_c_focus: 'FIRST dedicated corpus mechanism on an AI data-licensing deal whose money-flow geometry runs THROUGH the product surface rather than AROUND it. OpenAI licensed Yelp reviews, ratings, photos and business information (Axios disclosed Jul 23 2026; Yelp disclosed the agreement in 2026 earnings). The deal carries a planned in-answer Request a Quote feature inside ChatGPT: a quote request inside ChatGPT counts as a billable Yelp lead (ainvest), so the consideration path extends from content and retrieval licensing into a transaction layer gated by a feature inside the AI answer. Financial terms are undisclosed; the deal is non-exclusive. Yelp is a data/review platform, not one of the seven tracked publications; this block is carried as a structural deal-mechanism comparator in the publisher-money-flow family, not as direct evidence about publication tone.'
+  deal_facts:
+    - 'Axios reported the OpenAI-Yelp arrangement on July 23, 2026; Yelp disclosed the agreement in its 2026 earnings (webfx).'
+    - 'Licensed corpus: approximately 330 million cumulative reviews, 8 million-plus business listings, ratings, photos and business information (benfromaiso; ainvest).'
+    - 'Yelp branding and links appear in ChatGPT answers; OpenAI decides how the data is presented (benfromaiso, citing Search Engine Land).'
+    - 'Non-exclusive: Yelp can license to other AI companies; Yelp already licenses data to Apple Maps and Alexa, and OpenAI joins as an additional payer (ainvest; benfromaiso).'
+    - 'Financial terms undisclosed; Yelp management attached no specific revenue figure to the partnership (ainvest).'
+    - 'Yelp shares rose approximately 8% on the day the deal was disclosed (benfromaiso; ainvest).'
+    - 'Stoppelman framing (via Axios): "if you want to answer local queries, you really need Yelp".'
+  commerce_conversion_leg:
+    - 'Request a Quote is planned inside ChatGPT: users can message a local business without leaving the chat (benfromaiso); announced but not yet live at the webfx read.'
+    - 'A quote request inside ChatGPT counts as a billable Yelp lead; the per-lead price is unpublished, and the leads reportedly carry no source tag, limiting attribution (ainvest).'
+    - 'Kelly (Media Copilot 99-deal episode, mediacopilot): the Yelp arrangement is "content to commerce" - the deal includes a request-a-quote button inside the answer, and the open question is whether the economics are a revenue share or a placement consideration.'
+    - 'Notbohm (LinkedIn, 2026 Local Visibility Index): "the AI answer is becoming the whole funnel: discovery, evaluation, and contact in one conversation."'
+    - 'Kelly predicts OpenAI will settle with the Times before its IPO on commerce-conversion terms (subscriptions, games, recipes at the point of the AI answer) - carried as industry commentary, not as evidence about the deal.'
+  demand_side_context:
+    - 'BrightLocal study of roughly 2 million AI citations across 116,000 domains (ivet360): Yelp is the most cited domain in ChatGPT local answers - 99,281 citations, cited in 80% of local answers; TripAdvisor trails at roughly one tenth; Google Business Profile is absent from the top ten.'
+    - '2026 Local Visibility Index (Notbohm, LinkedIn): ChatGPT recommended 1.2% of locations, versus 11% for Gemini, 7.4% for Perplexity, and 35.9% for the Google local 3-pack - the narrow ChatGPT local surface is the placement-scarcity fact that makes the Yelp seat valuable.'
+    - 'Kelly''s 99-deal census (mediacopilot, Sep 2026): 99 publicly announced or reported AI licensing deals; training emphasis in roughly 40-50% (down from the vast majority in 2024); inference and retrieval deals catching up. The Yelp deal is a retrieval-plus-commerce structure, past the training era.'
+  incentive_geometry: 'The ELEVENTH relationship direction in the m807 enumeration: commerce-conversion licensing. Where flat-fee deals (m594 News Corp, m331 Meta bundle) and retrieval gates (m735) monetize access to the archive or the answer surface, the Yelp structure monetizes the TRANSACTION the answer produces. The AI answer becomes the whole funnel (Notbohm) and the licensor''s cut rides the lead, not the license. This is the transaction-layer direction: consideration gated by an in-answer feature (Request a Quote) with per-lead billing, source-tag-free attribution, and OpenAI-controlled presentation. Structural contrast with the Anthropic zero-deal posture (m509): one lab pays nothing and takes nothing; the other pays in a deal whose value flows through commerce, not content.'
+  confounders_ranked:
+    - 'STRONG: Excerpt-bounded per #503 (0 browser.open this run; all six sources read from search excerpts). The "billable lead" reading rests on the ainvest excerpt; no first-hand Yelp or OpenAI statement on lead billing was read.'
+    - 'STRONG: Request a Quote is announced but not yet live (webfx); the transaction layer is a planned feature, so per-lead economics are prospective, not realized revenue.'
+    - 'STRONG: Kelly''s "content to commerce" framing and Times-settlement prediction are industry commentary on a podcast episode, not primary evidence; carried as analysis, not as a fact about the deal.'
+    - 'MODERATE: Yelp is a review/data platform, not a news publisher; the incentive mapping is structural (a deal-mechanism comparator), not a publication-tone finding, and the publisher-money-flow carry is explicit interpretation.'
+    - 'MODERATE: The 8% share move is a one-day disclosure reaction reported by two secondary sources; no causal attribution to the deal is established.'
+    - 'WEAK: The BrightLocal citation counts and Local Visibility Index figures are third-party studies with undisclosed methodology; the corpus uses them as demand-side context, not as measured outcomes of the deal.'
+    - 'WEAK: Kelly''s 99-deal count is one analyst''s census; the training-vs-retrieval mix is his coding, carried as context.'
+  counterevidence:
+    - 'Yelp management attached no specific revenue figure to the partnership and the per-lead price is unpublished (ainvest) - the transaction layer may be immaterial; the mechanism claims the structure, not the dollar size.'
+    - 'The deal is non-exclusive and OpenAI controls answer presentation (benfromaiso) - Yelp''s leverage is bounded by substitutability and by the licensee''s UI decisions.'
+    - 'ChatGPT recommends only 1.2% of locations in the 2026 Local Visibility Index (Notbohm) - the narrow surface could mean the Request a Quote feature reaches few businesses, bounding the commerce-conversion upside.'
+    - 'Request a Quote is announced but not yet live (webfx) - the counterfactual in which the feature never ships would reduce this to a standard retrieval license with attribution.'
+  connects_to: [735, 753, 509, 594]
+  connects_to_verified: 'All four mechanism keys verified present in HEAD via git grep pre-commit: 735 (retrieval-not-training deal-structure shift, Sep 2026 #839 - this run extends that enumeration with the commerce-conversion leg); 753 (NYT litigation economics price-setting addendum #869 - Kelly predicts a Times settlement on commerce-conversion terms); 509 (Anthropic institutionalized zero-deal posture #509 - the zero-leg contrast to the 99-deal census); 594 (News Corp five-leg, Meta $50M/yr x 3yr from March 2026 - the flat-fee comparator to per-lead geometry).'
+  source_urls:
+    - 'https://benfromaiso.substack.com/p/chatgpt-and-yelp-what-the-deal-actually'
+    - 'https://www.ainvest.com/news/yelp-sold-openai-review-moat-money-claim-2609/'
+    - 'https://www.ivet360.com/yelp-necessary-evil-local-marketing-chatgpt-visibility/'
+    - 'https://www.webfx.com/blog/ai/yelp-chatgpt/'
+    - 'https://www.linkedin.com/posts/michael-notbohm-ecxie_chatgpt-and-yelp-what-the-deal-actually-activity-7354981695543844865-ZpYc'
+    - 'https://mediacopilot.substack.com/p/what-99-ai-licensing-deals-reveal'
+  source_url_evidence_tier: 'Six sources, zero pre-commit corpus hits (git grep -F): benfromaiso (Axios Jul 23 2026 disclosure relay; 330M reviews / 8M listings; Yelp branding and links in answers; OpenAI controls presentation; non-exclusive; terms undisclosed; shares +8%; Request a Quote planned; 99-deal census with 40-50% training emphasis; Stoppelman quote; uses Yelp FY2025 10-K and direct robots.txt check); ainvest (billable-lead reading; per-lead price unpublished; no source tag on leads; no revenue figure from management; Apple Maps and Alexa prior licensing; shares +8%); ivet360 (BrightLocal study: 2M AI citations across 116K domains; Yelp #1 in ChatGPT local answers - 99,281 citations, 80% of local answers; TripAdvisor ~1/10; GBP absent from top ten); webfx (Yelp disclosed in 2026 earnings; Axios Jul 23 details; Request a Quote announced not yet live); LinkedIn Michael Notbohm (2026 Local Visibility Index: ChatGPT 1.2% vs Gemini 11% vs Perplexity 7.4% vs Google 3-pack 35.9%; "AI answer is becoming the whole funnel"); mediacopilot (Rob Kelly 99-deal episode: Yelp deal as "content to commerce" with request-a-quote button inside the answer; revenue-share vs placement open question; Times-settlement-before-IPO prediction). browser.search query sets Sep 25 2026 around 18:00 PDT across four angles: AI licensing deal announced September 2026; Yelp OpenAI licensing Request a Quote; 99 AI licensing deals Rob Kelly tracker; ChatGPT Yelp Request a Quote billable lead source tag. 0 browser.open (excerpt-bounded per #503).'
+  novelty: 'zero test_type_c_999 files on disk pre-commit (glob); no Type C #999 in git log (--grep) pre-commit; max numeric mechanism id pre-commit 830 (journalists.yaml, #998/m830); zero underscore-form 831 mechanism key strings in profiles/ and tests/ pre-commit (format-built needles, no literals carried per the #715 convention); zero dash-form 831 references in profiles/ pre-commit; block key type_c_999_yelp_openai_commerce_conversion_request_a_quote_sep25 zero-hit pre-commit; 6 of 6 source URLs zero-hit repo-wide pre-commit (git grep -F); zero "yelp" strings repo-wide pre-commit (profiles/, tests/*.py, docs/, README.md, iteration-log.md); 4 connects_to ids (735, 753, 509, 594) verified present in HEAD pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  research_method: 'browser.search query sets Sep 25 2026 around 18:00 PDT: (1) AI licensing deal announced September 2026 - sweep for a fresher primary candidate; (2) Yelp OpenAI licensing deal Request a Quote - SELECTED: six-source corroboration of the commerce-conversion structure; (3) 99 AI licensing deals tracker Rob Kelly - SELECTED: the 99-deal census and "content to commerce" framing; (4) ChatGPT Yelp Request a Quote billable lead source tag - SELECTED: the per-lead economics and attribution-gap facts. Rejected: OpenAI India BCCL/Indian Express fees (Type C #944, estimated $5M+$3M, covered); Village Media (mechanism 714, covered); Anthropic zero-deal posture (mechanism 509, covered); Amazon x NYT (mechanism 559, covered); Blankspace licensing analysis (mechanism 783 family, covered). 0 browser.open (excerpt-bounded per #503).'
+  bounded_absences:
+    - 'No first-hand Yelp earnings release, SEC filing, or investor presentation read; the 2026-earnings disclosure is carried via webfx and benfromaiso.'
+    - 'No first-hand Axios report read; the July 23 2026 date and deal facts are carried via the benfromaiso relay and webfx.'
+    - 'No Yelp or OpenAI on-the-record statement on billable-lead economics; the transaction layer rests on the ainvest excerpt (second-source).'
+    - 'No coverage-tone claim; not scored per the Aug 28 2026 standing rule.'
+    - 'No claim about which specific publishers or verticals would follow the commerce-conversion structure beyond Kelly''s Times-settlement prediction (carried as commentary).'
+    - 'Deliberate exclusion: a separate Sep 2026 Yelp x Hatch voice-AI-for-restaurants announcement (Morningstar/Business Wire) concerns Yelp''s own communications product and is not part of the OpenAI licensing deal; not cited as evidence here.'
+  statistical_discipline:
+    approach: 'Qualitative financial-incentive mapping per the Aug 28 2026 standing rule: no scoreable article arms exist (this is a licensing deal-structure mechanism, not a coverage-tone comparison). No tone scores, no p_value, no cohens_d, no confidence intervals; the engine was not run.'
+    tone_scores: 'NOT_SCORED'
+    p_value: 'NOT_CALCULATED'
+    cohens_d: 'NOT_CALCULATED'
+    ci_95: 'NOT_CALCULATED'
+    is_significant: false
+    engine_run: false
+    verdict: 'directionally_supported_not_proven'
+    correlation_not_causation: true
+    no_causal_claim: true
+    analysis_json_updated: false
+    ledger: '30 positive claims hold (not a falsification-family member); no new member'
+    artifact_grade: false
+    falsification_family: false
+  verification:
+    iteration: 999
+    type: 'C'
+    date: '2026-09-25 18:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
+  tone_scores: 'NOT_SCORED'
