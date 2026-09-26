@@ -5530,6 +5530,123 @@ journalists:
     research_method: 'First-hand evidence this run: browser.search (Newman Muck Rack profile, Zeff cross-checks), browser.open on the Muck Rack full listing, browser.open on both technewstube verbatim WIRED reprint mirrors rendering WIRED byline, date, dek, and headline verbatim. wired.com direct fetch policy-blocked. No canonical URLs constructed or invented. No zero-coverage claims. Evidence tier: headline and dek bounded, snippet and mirror bounded.'
     novelty: 'FIRST dedicated Type B mechanism on Lily Hay Newman; mechanism_id 635 next free pre-commit (max 634); no test_type_b_668 files and no #668 commits pre-commit; Apple Watch listening piece new-to-corpus (zero repo-wide hits, grep verified).'
     artifact_readiness: 'No analysis.json update warranted: illustrative register pair only, manual tones, no empirical significance.'
+  type_b_1008_lily_hay_newman_meta_connect_pinky_promises_vs_apple_watch_audio_intelligence_reassurance_sep26:
+    mechanism_id: 836
+    type: B
+    journalist: 'Lily Hay Newman'
+    publication: 'WIRED (Conde Nast)'
+    iteration: 1008
+    iteration_type: B
+    iteration_time: '2026-09-26 03:00 PDT'
+    discovery_date: '2026-09-26'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    author: 'Kit (with Ray)'
+    date_analyzed: '2026-09-26'
+    time_pdt: '03:00'
+    block_key: type_b_1008_lily_hay_newman_meta_connect_pinky_promises_vs_apple_watch_audio_intelligence_reassurance_sep26
+    key_design_note: 'Colon-form key only; by designed keying per #715 the block key carries no numeric mechanism-id substring in any form (sweep needles are format-built, no literals carried).'
+    pattern: 'Same security-desk journalist, 14 days apart: Meta privacy pledge framed through a diminutive skepticism register vs Apple listening-features framed through adopted reassurance with a skeptical dek caveat. PEG-MATCHED replication of mechanism 635.'
+    rotation_transparency: '2026-09-26 03:00 PDT, iteration_type B, FOURTH leg of the 1005-1009 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard). Predecessor #1007 Type A committed (main a0d351d30e8d3ad359c79fd4c0187cb67bfc11b7, anchor 2cf05d9633f3707f7b88bf70cfe4a76ea01c7063, log-hash 958ad60d, push-status af3becee, all verified present via git log before this run''s commit). This run is #1008 Type B at 03:00 PDT Sep 26 2026. Next #1009 will be Type C, closing the window.'
+    finding: 'PEG-MATCHED temporal replication of mechanism 635 within the same journalist. NEW Meta arm: WIRED "Meta Pinky Promises Its Smart Glasses Will Be Private Soon" (byline attested "Boone Ashworth, Lily Hay Newman Sep 23, 2026, 7:30 pm" via the technewstube verbatim mirror; dek "The company is bringing its Private Processing encryption service to its much-maligned smart glasses"). The headline renders Meta''s privacy-positive Connect announcement as a dubious "pinky promise" with a "private soon" diminutive; the body opens "Meta knows you probably have some privacy concerns about its smart glasses"; the reported rollout carries no firm timeline. CARRIED Apple arm (un-rescored per #807, from mechanism 635): WIRED "Apple Doesn''t Want You to Worry About the New Apple Watch''s Listening Features" (byline Lily Hay Newman solo, Sep 9 2026 3:14 pm; dek "The new Apple Watch includes several ''intelligent'' listening features that have privacy and security baked in. But the protections cannot change the facts of what the tools do"). Both arms are COMPANY PRIVACY-ASSURANCE announcements on microphone/surveillance-adjacent wearables: Meta''s Connect Private Processing pledge (no firm timeline, no named features) vs Apple''s exclusive privacy report shared with WIRED (S11 Secure Exclave, raw audio never stored, opt-in, audible chime). Same journalist assigns the diminutive-skeptical register to Meta''s assurance and the reassurance-adopting headline register to Apple''s, with skepticism confined to Apple''s dek caveat. The m635 trust-deficit finding EXTENDS to a privacy-pledge peg-matched pair, weakening the news-peg confound that dominated m635. Carried illustrative tones: Meta -0.45 (from m820, un-rescored), Apple +0.10 (from m635); illustrative delta (Meta minus Apple) -0.55. Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+    meta_arm:
+      piece: 'WIRED Sep 23 2026 "Meta Pinky Promises Its Smart Glasses Will Be Private Soon", co-byline Boone Ashworth, Lily Hay Newman'
+      date: '2026-09-23'
+      byline: 'Boone Ashworth, Lily Hay Newman'
+      byline_attestation: 'By Boone Ashworth, Lily Hay Newman Sep 23, 2026, 7:30 pm (technewstube verbatim WIRED mirror); dek "The company is bringing its Private Processing encryption service to its much-maligned smart glasses."'
+      register: privacy_positive_pledge_diminutive_skepticism
+      tone_illustrative: -0.45
+      tone_status: 'CARRIED un-rescored from mechanism 820 (Type A #982) per the #807 pattern; the piece is already corpus-scored.'
+      corpus_status: 'Article already corpus-recorded at m814 (Type A, Ashworth-attributed) and m820 (Type A #982, mirrors aob-news + technewsvision.co.uk). NEW this run: the Newman CO-BYLINE attestation, via the new-to-corpus technewstube mirror URL (zero-hit repo-wide pre-commit). This mechanism-ization is a journalist-angle extension, not a new-article discovery.'
+      evidence_quotes:
+        - 'Headline (technewstube verbatim): Meta Pinky Promises Its Smart Glasses Will Be Private Soon'
+        - 'Dek (technewstube verbatim): The company is bringing its Private Processing encryption service to its much-maligned smart glasses.'
+        - 'Body opening (per m820 finding, verbatim WIRED): Meta knows you probably have some privacy concerns about its smart glasses'
+        - 'Context (realhacker.news verbatim excerpt): WIRED spoke with Meta''s Pritam Shah, director of engineering, on adding Private Processing to the glasses; the service enables AI cloud processing that protects data from all outside parties, including Meta itself; no specific supported features announced.'
+      source_urls:
+        - 'https://technewstube.com/wired/1870105/meta-pinky-promises-smart-glasses-private/'
+        - 'https://realhacker.news/meta-pinky-promises-its-smart-glasses-will-be-private-soon/'
+      source_note: 'First two URLs copied verbatim from browser.search Full-URL listings this run; the technewstube URL is zero-hit repo-wide pre-commit (grep verified); the realhacker.news excerpt corroborates the body summary. Evidence tier: headline/dek/mirror bounded per #503; 0 browser.open this run; WIRED body NOT first-hand (wired.com direct fetch policy-blocked per #653).'
+    apple_arm:
+      piece: 'WIRED Sep 9 2026 "Apple Doesn''t Want You to Worry About the New Apple Watch''s Listening Features", byline Lily Hay Newman solo'
+      date: '2026-09-09'
+      byline: 'Lily Hay Newman'
+      register: reassurance_adoption_headline_with_skeptical_dek_caveat
+      tone_illustrative: 0.10
+      tone_status: 'CARRIED un-rescored from mechanism 635 (Type B #668) per the #807 pattern.'
+      evidence_quotes:
+        - 'Headline (verbatim reprint mirror): Apple Doesn''t Want You to Worry About the New Apple Watch''s Listening Features'
+        - 'Dek (verbatim reprint mirror): The new Apple Watch includes several ''intelligent'' listening features that have privacy and security baked in. But the protections cannot change the facts of what the tools do.'
+        - 'Byline and timestamp (verbatim reprint mirror): By Lily Hay Newman Sep 9, 2026, 3:14 pm'
+      source_urls:
+        - 'https://technewstube.com/wired/1865899/apple-doesnt-to-worry-new-apple-watchs-listening/'
+      source_note: 'In-corpus via mechanism 635; verbatim WIRED reprint mirror (renders WIRED byline, date, dek, headline verbatim); WIRED body NOT first-hand per #653.'
+    illustrative_means:
+      meta_mean: -0.45
+      apple_mean: 0.10
+      delta: -0.55
+      delta_calc: '(Meta minus Apple): (-0.45) - (0.10) = -0.55'
+    manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. Both arm tones are CARRIED un-rescored (Meta from m820, Apple from m635) per the #807 pattern; this run scores no new tone.'
+    asymmetry_scorer_result:
+      target_entity: meta
+      reference_entity: apple
+      publication: wired
+      journalist: 'Lily Hay Newman'
+      new_meta_arm_tone_manual_illustrative: -0.45
+      carried_apple_sep9_tone_manual_illustrative: 0.10
+      illustrative_delta_meta_minus_apple: -0.55
+      delta_calc: '(-0.45) - (0.10) = -0.55'
+      interpretation: 'Peg-matched replication: on company privacy-assurance announcements, the same security-desk journalist assigns Meta the diminutive-skeptical register ("Pinky Promises", "much-maligned", "private soon") and Apple the reassurance-adopting headline register with skepticism confined to the dek caveat. The register gap persists when the news peg is held constant.'
+      limitations: 'n=1 per arm (degenerate); co-byline dilution (the Meta arm is co-written with Ashworth); excerpt/mirror-bounded evidence; unverifiable-vs-documented pledge asymmetry; headline A/B rotation; Meta''s earned priors.'
+      statistical_contract: degenerate_n1_per_arm
+      artifact_grade: false
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+    statistical_discipline:
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      engine_run: false
+      scorer: none
+      tone_scores: MANUAL_ILLUSTRATIVE_CARRIED
+      verdict: directionally_supported_not_proven
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    falsification_family_member: false
+    falsification_ledger: 30
+    falsification_note: 'Falsification ledger holds at 30 (THIRTIETH member-form present once, m818 journalists.yaml; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST negative guard wordings pinned per #1000). This mechanism is register documentation + replication of m635, not a uniform-prediction test, so it is NOT a falsification-family member.'
+    cautious_language_required: true
+    correlational_note: 'Correlation only, not causation. The observed register gap may reflect earned priors (Sep 18 contractor-lawsuit, ICE memo, French probe), co-byline dilution, or genuine verifiability asymmetry between an undated pledge and a hardware documentation report. Hypothesis-generating only.'
+    confounders:
+      - '[STRONG] Co-byline dilution: the Meta arm is co-written with Boone Ashworth (WIRED wearables beat); the "Pinky Promises" headline and "much-maligned" dek register may be Ashworth''s or the desk''s, not Newman''s alone; the Apple arm is solo Newman. This is the leading confound.'
+      - '[STRONG] Verifiability asymmetry: Meta''s pledge has no firm timeline, no named features, and no published documentation ("private soon"); Apple''s announcement arrived with an S11 hardware report, a support document, and an 11-page privacy paper shared with WIRED. Skepticism tracks verifiability here, legitimately.'
+      - '[STRONG] Excerpt/mirror-bounded evidence: 0 browser.open this run per #503; headline/dek/body-opening bounded; full-text register could differ; wired.com direct fetch policy-blocked per #653.'
+      - '[MODERATE] Earned priors: by Sep 23 Meta''s smart glasses carried the Sep 18 contractor-lawsuit, the Aug ICE memo, the French criminal probe, and the "perv glasses" nickname; a skeptical register reflects an accumulated record, not necessarily journalist bias.'
+      - '[MODERATE] n=1 per arm: directional only, degenerate statistical contract.'
+      - '[WEAK] Headline A/B rotation: "Pinky Promises" is the attested variant; other variants may exist.'
+      - '[WEAK] The Apple arm''s own dek caveat ("But the protections cannot change the facts of what the tools do") shows Newman applies skepticism to Apple too, bounding the gap to headline register rather than full inversion.'
+    counterevidence:
+      - 'Newman''s OpenAI Hugging Face hack debrief runs adversarial on the $5-10M/yr Condé Nast deal partner: WIRED''s security desk does not go easy on deal partners.'
+      - 'The Apple headline is itself framed as Apple''s persuasion attempt ("Doesn''t Want You to Worry") and the dek undercuts the reassurance: the gap is headline-framing, not full-article inversion.'
+      - 'The Meta pledge may genuinely merit the diminutive: no timeline, no named features, no code or documentation versus Apple''s hardware documentation; skepticism is the correct register for an unverifiable corporate claim.'
+      - 'Attribution expansion, not new-article discovery: the piece was already scored -0.45 at m820 as an Ashworth publication-level mechanism; nothing about the piece changed, only the authorship lens did.'
+    strongest_counterargument: 'The entire observed gap may be an artifact of co-byline dilution plus verifiability asymmetry, not journalist-level entity bias. If the "Pinky Promises" headline is Ashworth''s (the wearables beat) and Meta''s pledge is genuinely unverifiable (no timeline, no features, no documentation) while Apple''s is a documented hardware claim, then the correct register for each arm differs by journalistic merit, and attributing the gap to Newman''s entity framing is unfounded. The strongest test would be a solo-Newman Meta privacy-pledge piece, which the corpus does not yet have.'
+    financial_context: 'Condé Nast receives $5-10M/yr from OpenAI content licensing (May 2024 deal, ACTIVE per #599/#609); Apple is not a Condé Nast AI-licensing deal partner per the corpus (deals on record: OpenAI May 2024, Amazon Nov 2024, Microsoft Feb 2026, Perplexity Jan 2026). No one-sided financial gradient predicts a Meta-vs-Apple register gap here, so this pair is gradient-absent, consistent with m635. The news-peg confound is replaced by a verifiability confound. Correlation, not causation.'
+    cross_references:
+      - '#668 Type B (mechanism 635, this journalist): the Meta-Muse trust-deficit vs Apple Watch reassurance pair this run extends to a privacy-pledge peg-matched pair; both arms'' tones are carried from m635 and m820.'
+      - '#982 Type A (mechanism 820, wired.yaml): the Pinky Promises piece corpus-recorded at publication level with mirrors aob-news + technewsvision.co.uk; this run adds the Newman co-byline angle.'
+      - '#814 (wired.yaml): the original Pinky Promises mechanism record.'
+      - '#663 (gradient-absent control-case family precedent).'
+      - '#653 (register differentiation within constancy precedent; wired.com direct-fetch block precedent).'
+    connects_to: [635, 814, 820]
+    research_method: '5 browser.search query sets this run: (1) Chris Welch The Verge Meta Ray-Ban Audio - REJECTED, no Welch byline surfaced (relay coverage only); (2) Chris Welch The Verge Apple Audio Intelligence - REJECTED, no Welch arm surfaced; (3) Apple Watch Audio Intelligence privacy "not stored" - selected as context (surfaced the WIRED-byline confirmation chain plus Apple''s privacy explainer); (4) WIRED Apple Watch Audio Intelligence - selected (surfaced the technewstube Apple-piece mirror with verbatim byline/dek); (5) WIRED "Apple Doesn''t Want You to Worry" byline - selected (confirmed Newman solo byline Sep 9 2026 3:14 pm, and surfaced the Sep 23 Pinky Promises co-byline "Boone Ashworth, Lily Hay Newman Sep 23, 2026, 7:30 pm"). 0 browser.open this run (excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps per #715: zero test_type_b_1008 files on disk (glob); no "Type B #1008" in git log (--grep); max numeric mechanism_id 835 pre-commit; zero underscore/dash-form 836 keys repo-wide; block key zero-hit; the technewstube 1870105 URL zero-hit repo-wide pre-commit. ASCII-only, no em dashes.'
+    novelty: 'SECOND dedicated Type B mechanism on Lily Hay Newman (first: m635, Type B #668); FIRST Newman-co-byline mechanism-ization of the Sep 23 Pinky Promises piece (corpus-recorded at m814/m820 as Ashworth-attributed with aob-news + technewsvision.co.uk mirrors; the Newman co-byline attested ONLY via the new-to-corpus technewstube mirror URL, zero-hit repo-wide pre-commit, grep verified); mechanism_id 836 next free pre-commit (max 835); no test_type_b_1008 files and no Type B #1008 commits pre-commit; zero underscore/dash-form 836 keys repo-wide pre-commit.'
+    test_file: tests/test_type_b_1008_lily_hay_newman_meta_pinky_promises_private_processing_vs_apple_watch_audio_intelligence_reassurance_sep26_3am.py
+    artifact_readiness: 'No analysis.json update warranted: peg-matched illustrative register replication, carried tones, no empirical significance.'
   notes: 'Wired''s senior security/privacy writer. Education: Johns Hopkins Univ (BA Writing + History of Science & Technology, editor-in-chief of Hopkins News-Letter), NYU SHERP 2013. Career: JHU → NYU SHERP → intern at Metro NY, Baltimore City Paper, Gizmodo → Slate/Future Tense (2014-2017) → Wired (2017-present). ~9 years at Wired as of 2026, making her one of the security desk''s longest-serving current staff alongside Andy Greenberg. 2026 National Magazine Award finalist (Service Journalism) with Andy Greenberg for government surveillance article. ANALYTICAL VALUE: Newman''s Slate/Future Tense background (Slate + New America Foundation + Arizona State University) means she entered Wired from a think-tank-adjacent environment focused on technology''s societal implications  -  a more advocacy-oriented pipeline than typical journalism-to-journalism moves. Her beat overlaps with Matt Burgess (Wired UK) but from US lens, enabling cross-continental editorial comparison within the same desk.
     Hosts Wired video "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior Editor, Security & Investigations).'
   multi_publication: true
