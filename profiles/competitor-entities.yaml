@@ -25938,3 +25938,94 @@ type_c_999_yelp_openai_commerce_conversion_request_a_quote_sep25:
     yaml_parse_clean: true
     ascii_only: true
   tone_scores: 'NOT_SCORED'
+
+type_c_1004_australia_news_bargaining_incentive_regulatory_bargaining_sep25_11pm:
+  mechanism_id: 834
+  iteration: 1004
+  iteration_type: 'C'
+  rotation: Type C
+  date_analyzed: '2026-09-25'
+  time_pdt: '23:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'Australia News Bargaining Incentive (Enacted Aug 20 2026) - State-Compelled Deal-or-Levy Regulatory Bargaining: FIRST dedicated corpus mechanism on the enacted Australian News Media Bargaining Bill 2026 + News Journalism Payments Bill 2026; 2.5%-reported (Reuters) / 2.75%-reported (mi-3) charge on Australian digital advertising revenue for platforms over A$250M; Meta, Google, TikTok, LinkedIn in scope; offset by commercial deals with at least 8 publisher groups (150% large-publisher / 200% small-medium offsets, 25% per-deal cap, 5% of funds to AAP); AI firms consciously EXCLUDED; Meta 2024 walk-away loophole closed; TWELFTH relationship direction (regulatory-bargaining); supersedes the draft-stage corpus record without overwriting it'
+  type: financial_incentive_mapping
+  type_label: Financial Incentive Mapping
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  researcher: 'Muse'
+  sources:
+    - https://www.reuters.com/legal/litigation/australia-passes-law-levy-tech-giants-that-fail-pay-local-news-2026-08-20/
+    - https://www.reuters.com/business/australia-make-tech-companies-pay-more-outlets-content-under-reworked-media-law-2026-08-12/
+    - https://about.fb.com/news/2026/06/metas-response-to-australias-proposed-news-bargaining-incentive/
+    - https://www.ibtimes.sg/australia-targets-big-tech-new-levy-news-payments-google-meta-tiktok-could-pay-millions-92549
+    - https://www.wcbe.org/2026-08-21/big-tech-companies-will-have-to-pay-to-publish-australian-news-content-under-new-laws
+    - http://www.mi-3.com.au/21-08-2026/news-media-bargaining-incentive-clears-parliament-275-charge-be-levvied-big-tech
+    - https://www.cbaa.org.au/news/cbaa-comms/2026/08/21/news-bargaining-incentive-marks-a-new-chapter-for-
+    - https://wdsm710.com/2026/04/27/australia-to-charge-big-tech-companies-2-levy-unless-they-strike-local-news-deals/
+  excerpt_bounded: true
+  excerpt_bounded_note: 'Zero browser.open this run (excerpt-bounded per #503): the corpus evidence is 8 search-result excerpts. The enacted-legislation text was not read first-hand; the final charge rate is bounded but unresolved between secondary sources (see rate_uncertainty). All mechanism claims are qualitative financial-incentive mapping, not coverage-tone results.'
+  passage_facts:
+    passed: '2026-08-20'
+    chamber: 'Australian Senate (passed; Albanese Labor government)'
+    bills: 'News Media Bargaining Bill 2026 + News Journalism Payments Bill 2026'
+    expected_revenue: 'A$200M-250M annually (Albanese government expectation)'
+    charge_base: 'Australian digital advertising revenue'
+    threshold: 'A$250M relevant Australian advertising revenue (platform-level significant social media or search service)'
+    in_scope: 'Meta, Google, TikTok, LinkedIn (Microsoft)'
+    offset_path: 'Commercial deals with at least 8 publisher groups; 150% offset for large-publisher spend; 200% offset for small/medium-publisher spend; single deal capped at 25% of liability; deals must be finalized before the end of the platform financial reporting period'
+    levy_path: 'Charge applies where deals are not struck; collected funds distributed to Australian news outlets (5% of funds committed to Australian Associated Press, the non-profit newswire)'
+    ai_exclusion: 'AI platforms consciously separated from the NBI by the government (Mulino: ''consciously separated''); LLM-only services excluded; separate AI-specific policy process promised but not legislated'
+    draft_stage: 'Apr 28 2026 draft unveiled at 2.25% on local revenue; Aug 3 2026 finalized terms narrowed the base to digital ad revenue at 2.5% (reported); Aug 12 2026 amendments raised the deal minimum from 6 to 8, reinstated the 25% per-publisher cap, committed 5% to AAP'
+  rate_uncertainty:
+    reuters_reports: '2.5% (Reuters, Aug 20 2026 passage reporting)'
+    mi3_reports: '2.75% (mi-3, Aug 21 2026 Senate-passage reporting)'
+    claim_boundary: 'The mechanism claims the DEAL-OR-LEVY STRUCTURE (threshold, offsets, caps, exclusion), not the exact final rate. A single percentage figure is not stated as settled anywhere in this block.'
+  draft_record_supersession:
+    note: 'The corpus''s earlier NBI record described the April 2026 draft at 2.25% with LLM services excluded. The draft description is retained as history; this mechanism adds the FINAL-LAW record and explicitly supersedes the draft-stage terms. The LLM exclusion was CARRIED into the final law (Mulino ''consciously separated''); the 2.25% draft rate was superseded by the final terms.'
+  meta_position:
+    source: 'about.fb.com, June 2026 (Meta corporate response)'
+    quotes:
+      tax_on_innovation: 'a tax on innovation dressed up as media policy'
+      discriminatory: 'discriminatory, economically incoherent'
+      opposed: 'vehemently opposed'
+    fta_objection: 'Meta argues the levy violates the US-Australia free-trade agreement; White House position (via NPR Aug 21 2026): ''foreign extortion'''
+    npr_post_passage: 'Meta did not provide fresh comment to NPR after passage; its prior ''indefensible and grossly unfair'' position stands on record'
+  loophole_closure:
+    meta_2024_walkaway: 'In 2024 Meta refused to renew 2021 News Media Bargaining Code commercial deals and blocked news on its Australian services'
+    closure: 'The enacted NBI applies the levy regardless of whether news appears on the platform: the ibtimes framing - ''Meta once found a clean way out of paying Australian publishers for news: stop carrying the news. No news, no obligation. On Thursday, Australia''s Parliament closed that loophole.'''
+  incentive_geometry:
+    deal_or_levy: 'The state sets the BATNA: strike at least 8 commercial deals (with supercharged 150/200% offsets) OR pay the levy, whose proceeds fund Australian newsrooms. The negotiation is compelled; the platform cannot walk away (the 2024 walk-away is legislated shut).'
+    trilateral: 'Unlike the voluntary bilateral legs (flat-fee m594, retrieval-not-training m735, commerce-conversion m831), this leg is trilateral: the state is the enforcer AND the fallback payee, setting the distribution rule (journalist-headcount distribution per Wells) that the deals offset.'
+    money_flow: 'Platform-to-publisher (deals) OR platform-to-state-to-publisher (levy). The per-deal 25% cap plus the 8-deal minimum forces diversification, capping any single publisher''s (e.g. News Corp Australia''s) capture of the platform''s spend.'
+  relationship_direction_taxonomy: 'TWELFTH relationship direction per the m807 enumeration (1 sue-then-sign m624; 2 pay-or-litigate bifurcation m636; 3 grant-then-sue m675; 4 license-over-authors m699; 5 pool-and-license m720; 6 infrastructure-capture m738; 7 publisher-as-feed-operator m741; 8 vendor-embed m807; 9 litigation-pooling m810; 10 publisher-traffic-gate m828; 11 commerce-conversion licensing m831): REGULATORY-BARGAINING - state-compelled deal-making where the state sets the negotiation BATNA as a levy. The state does not sue (litigation-pooling) or pool rights (pool-and-license); it legislates the payer''s menu. The structural asymmetry: LLM-only AI services are exempt from the NBI while Meta/Google social/search pay - even though AI Overviews are the primary traffic destroyer per the French APIG finding family (corpus m355). The law taxes distribution platforms but not (yet) the AI labs; the ''separate process'' is promised, not legislated. (Taxonomy-count tension carried: m737''s finding enumerated termination-leverage as its seventh direction; the m807 enumeration used here does not list it. Not resolved this run.)'
+  novelty: 'FIRST dedicated corpus mechanism on the ENACTED Australian News Media Bargaining Bill 2026 + News Journalism Payments Bill 2026 (Senate passage Aug 20 2026): zero pre-commit corpus hits for all 8 source URLs; zero underscore-form 834 mechanism key strings (format-built needles only); zero dash-form 834 keys; block key appears exactly once at zero indent. The corpus''s earlier NBI mention (draft-stage 2.25% description) is superseded, not overwritten. TWELFTH relationship direction (regulatory-bargaining) per the m807 enumeration. NOTE: this run is excerpt-bounded (0 browser.open per #503); the mechanism is qualitative financial-incentive mapping only.'
+  finding: 'Australia''s enacted News Bargaining Incentive legislates a state-compelled deal-or-levy BATNA for Meta, Google, TikTok and LinkedIn: strike at least 8 publisher deals (150/200% supercharged offsets, 25% per-deal cap) or pay a 2.5%-reported/2.75%-reported charge on Australian digital advertising revenue, with 5% of funds to AAP. The mechanism is the TWELFTH relationship direction (regulatory-bargaining) in the corpus taxonomy. Meta''s 2024 walk-away (block news, dodge the 2021 code) is legislated shut; the structural asymmetry is that LLM-only AI firms are consciously excluded while Meta/Google social/search pay. Correlation only: this is a mechanism mapping, not a causal claim about publisher revenue outcomes; the compliance response (deals vs levy) is prospective. '
+  connects_to: [594, 331, 549, 735, 355, 807]
+  confounders:
+    - '[STRONG] Excerpt-bounded (per #503): 0 browser.open this run; all facts via search-result excerpts. The enacted-legislation text was not read first-hand.'
+    - '[STRONG] Rate unresolved between secondary sources: Reuters reports 2.5% (Aug 20), mi-3 reports 2.75% (Aug 21). The block claims structure, not the exact rate.'
+    - '[STRONG] Australia-specific: no claim this generalizes to other jurisdictions (Canada Online News Act, EU proceedings). Bounded to the Australian scheme.'
+    - '[MODERATE] Compliance response unobserved: Meta/Google/TikTok/LinkedIn have not announced deal-or-levy strategies; deal counts and payouts are prospective.'
+    - '[MODERATE] The AI ''separate process'' could close the exemption gap; the exclusion is a legislative snapshot (Aug 2026), not a permanent carve-out.'
+    - '[WEAK] News Corp Australia benefit inferred from the beneficiary class (major publishers); no disclosed News Corp Australia deal under the NBI yet.'
+    - '[WEAK] The digital-ad-revenue base vs total-revenue distinction rests on secondary summaries, not the enacted text.'
+  counterevidence:
+    - 'The NBI explicitly excludes AI platforms: the state is NOT (yet) compelling AI labs to pay, which bounds any ''AI must pay for news'' reading of this mechanism.'
+    - 'Meta''s 2024 news-blocking precedent shows platforms can absorb the political cost of non-cooperation; the levy is designed to remove that option, but the behavioral response is untested.'
+    - 'Google''s 2021-code compliance (deals struck, not blocked) suggests the deal path is the likely outcome: a compelled bilateral market rather than a pure tax.'
+    - 'The 25% per-deal cap + 8-deal minimum force diversification, limiting any single publisher''s capture (e.g. News Corp Australia) - the state, not the platform, sets the distribution.'
+  strongest_counterargument: 'The deal-or-levy BATNA may be the strongest possible design for publishers and still produce minimal net change: if all four platforms choose the deal path (as Google did under the 2021 code), the NBI becomes a compelled bilateral market with prices set under the state''s offset arithmetic rather than genuine bargaining, and the LLM exemption leaves the largest traffic destroyer (AI Overviews) outside the scheme entirely. In that reading the ''twelfth direction'' is a regulatory price-setting regime with a tax fallback, not a bargaining relationship at all.'
+  falsification_ledger: 30
+  falsification_family_member: false
+  falsification_note: 'NOT a falsification-family member; ledger holds at 30.'
+  tone_scores: 'NOT_SCORED'
+  engine_run: false
+  verification:
+    iteration: 1004
+    type: 'C'
+    date: '2026-09-25 23:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
+    browser_opens: 0
