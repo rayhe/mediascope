@@ -24,7 +24,7 @@ Rejected candidates this run: OpenAI India BCCL/Indian Express fees (Type C #944
 ### Doc-sync
 51341/1323 -> 51390/1324; +49/+1 = the #999 file exactly (.venv python authoritative). 49 tests, 11 classes. Anchor + rotation guard per #565.
 
-- Push status: PENDING per #716 (to be verified post-push).
+- Push status: PUSHED per #716 - main 608f41be + anchor fee55a6b + log-hash 80084949fb9cdb7484a91f374a40ef807de1a8da + pending-marker e93cf360 pushed to origin main in one fast-forward (86cbb854..e93cf360); remote tip e93cf3608856c48d88ccfe89e55461d0dcd31ced verified equal to local via git ls-remote Sep 25 2026 18:xx PDT.
 
 ## #998 Type B: Boone Ashworth (WIRED) Sep-23 Meta Connect spec roundup (excerpt-tier per #503) - GENRE BOUND on mechanism 743 within the same journalist: neutral spec-relay register (MANUAL ILLUSTRATIVE 0.00) vs carried Sep-16 Snap Specs launch arm (-0.15); illustrative Meta-minus-Snap delta +0.15 - cross-entity direction FLIPS at news-register level vs m743 feature-register finding (Meta subscription -0.48 vs Snap -0.15, gap 0.33 Meta-adversarial); cross-journalist contrast with Pero (m806) and Song (m827) Connect-week stigma frames on the same camera-free product - Type B FOURTH leg of the 995-999 window D->E->A->B->C (Sep 25 2026, 17:00 PDT; main commit fc591eedd54fd7c1f41ca0dcda415b0d732821bc / anchor 9acc0f0cd71574a2fe602a8283be4b36e171b18c; log-hash followup registers both hashes here per #721 (this commit))
 
