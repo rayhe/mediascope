@@ -19171,6 +19171,137 @@ journalists:
       artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer genre-register pin; illustrative-only scorer output; no new empirical finding at the publication level.'
       novelty: 'First dedicated Type B mechanism on Samuel Gibbs (zero journalist entries pre-commit; entry created this run). Zero test_type_b_628 files on disk (glob verified this run). No Type B commit with 628 in the title (git log --grep verified this run). The Apple arm tone is carried from #622 at the identical +0.35 value (no rescoring); the Meta arm tone +0.10, the -0.25 genre-register delta and the NOT-falsification-family verdict are new this run. Mechanism id 611 is the next free profiles mechanism id (max pre-commit 610). Rotation: 627 A -> 628 B.'
       research_method: '3 browser.search query sets this run: (1) Samuel Gibbs Guardian Meta Ray-Ban glasses (surfaced the Sep 17 2025 announcement with Gibbs byline attribution); (2) Barbara Speed Guardian glasses surveillance privacy Apple (rejected: search noise, no verbatim Speed comparator pieces); (3) Jennifer Pattison Tuohy Portal Meta review plus Google Nest review (rejected: Tuohy is a smart-home reviewer with no Meta-side bylines surfacing; no zero-coverage claims per iteration-492 rule). Meta arm full text read first-hand via the richardhartley.com full-text mirror (verbatim URL from search results); theguardian.com direct fetch policy-blocked per standing rule. Byline attribution via two independent third-party listings (aspicts.substack.com, iask.ca). Apple arm carried from #622 (same mirror domain, symmetric evidence tier). URLs verbatim from Full-URL listings; none constructed. No zero-coverage claims per iteration-492 rule (both arms are positive Gibbs bylines). No em dashes.'
+    type_b_1013_samuel_gibbs_guardian_meta_register_temporal_shift_sep2026_stigma_vs_apple_vision_pro_aspirational:
+      mechanism_id: 839
+      type: B
+      journalist: 'Samuel Gibbs'
+      publication: 'Guardian News and Media'
+      iteration: 1013
+      iteration_type: B
+      iteration_time: '2026-09-26 08:00 PDT'
+      discovery_date: '2026-09-26'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      author: 'Kit (with Ray)'
+      date_analyzed: '2026-09-26'
+      time_pdt: '08:00'
+      block_key: type_b_1013_samuel_gibbs_guardian_meta_register_temporal_shift_sep2026_stigma_vs_apple_vision_pro_aspirational
+      key_design_note: 'Colon-form key only; by designed keying per #715 the block key carries no numeric mechanism-id substring in any form (sweep needles are format-built, no literals carried).'
+      pattern: 'Same consumer-technology editor, same publication, 12 months apart, both NEWS genre: Gibbs''s Meta register shifts from neutral-positive launch announcement to perv-glasses stigma relay on a camera-free product, while his Apple register is carried aspirational from the hands-on review. TEMPORAL-SHIFT extension of mechanism 611''s within-writer genre register, isolating the PEG from genre on the Meta side.'
+      rotation_transparency: '2026-09-26 08:00 PDT, iteration_type B, FOURTH leg of the 1010-1014 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard). Predecessor #1012 Type A committed (main 788bc9a8d2099253160b7303ff09a70a0a10be74, anchor 06287964114e13ff7de97742060d2409ecb7458d, log-hash 6126457c, push-status 00810455, all verified present via git log before this run''s commit). This run is #1013 Type B at 08:00 PDT Sep 26 2026. Next #1014 will be Type C, closing the window.'
+      finding: 'JOURNALIST-ANGLE TEMPORAL-SHIFT extension of mechanism 611 (Type B #628, Gibbs within-writer genre register) and mechanism 832 (Type A #1002, Guardian zero-financial-gradient control). NEW Meta stigma arm (carried un-rescored from m832 per #807): Guardian "Meta debuts no-camera smart glasses and virtual reality spectacles" (byline attested "Samuel Gibbs Consumer technology editor", dateline "Thu 24 Sep 2026 01.00 BST" via the globalcommunityweekly.substack.com relay of the Guardian piece); the Connect 2026 product relay carries the stigma paragraph "frequently being dubbed perv glasses or spy glasses" onto the camera-free Ray-Ban Meta Audio. MANUAL ILLUSTRATIVE -0.20, carried. Carried Meta baseline arm (from m611, un-rescored per #807): Gibbs''s Sep 17 2025 Guardian announcement of the Meta Ray-Ban Display, neutral-positive announcement register, +0.10. Carried Apple arm (from m611/#622, un-rescored per #807): Gibbs''s Aug 16 2024 Guardian hands-on Vision Pro review, aspirational register, +0.35. The within-writer Meta register deteriorates 0.30 across 12 months (+0.10 to -0.20) with genre held at NEWS on both Meta arms, so the Meta-side shift isolates the PEG (scandal-heavy Connect 2026 news environment: ICE memo, contractor lawsuit, French probe, Sep-8 police memos) from the genre confound that dominated m611. The entity gap with the new stigma arm is Meta-minus-Apple -0.55 ((-0.20) - (0.35)), widened from m611''s -0.25, but the Apple side stays review-genre so the STRONG genre confound persists on the cross-entity comparison. Zero-financial-gradient control extended to the journalist level: Guardian has no deal with Apple ($0) or Meta ($0), so money predicts nothing here. Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+      meta_arm_stigma:
+        piece: 'Guardian Sep 24 2026 "Meta debuts no-camera smart glasses and virtual reality spectacles", byline Samuel Gibbs'
+        date: '2026-09-24'
+        byline: 'Samuel Gibbs'
+        byline_attestation: 'Byline "Samuel Gibbs Consumer technology editor" and dateline "Thu 24 Sep 2026 01.00 BST" carried in the globalcommunityweekly.substack.com relay of the Guardian piece (theguardian.com direct fetch policy-blocked; original URL not recovered verbatim).'
+        register: product_relay_with_privacy_stigma_context
+        tone_illustrative: -0.20
+        tone_status: 'CARRIED un-rescored from mechanism 832 (Type A #1002) per the #807 pattern; the piece is already corpus-scored as the m832 Meta arm.'
+        corpus_status: 'Article already corpus-recorded at m832 (Type A, Guardian x Meta police-memo investigation + Connect stigma register). NEW this run: the JOURNALIST-ANGLE mechanism-ization under Gibbs''s competitor_coverage, pairing it against his own Sep-2025 Meta announcement baseline and his carried Apple review.'
+        evidence_quotes:
+          - 'Stigma paragraph (relay verbatim): frequently being dubbed "perv glasses" or "spy glasses"'
+          - 'Context (relay verbatim): The new wearables come at a time of uncertainty for the smart glasses category, which is broadly facing a backlash from sceptics and privacy campaigners around their ability to record video'
+          - 'Camera-free note (relay verbatim): including an audio-only version without a camera; The Ray-Ban Meta Audio AI glasses seem tailored for the time. Lacking a camera, they may help avert some privacy worries'
+        source_urls:
+          - 'https://globalcommunityweekly.substack.com/p/meta-debuts-no-camera-smart-glasses'
+        source_note: 'URL verbatim from this run''s browser.search Full-URL listing (re-surface of the in-corpus m832 arm URL; zero-hit pre-commit would be false since m832 already carries it - the novelty is the journalist-angle block, not the URL). Evidence tier: relay-attested excerpt per #503; 0 browser.open this run; theguardian.com original NOT recovered verbatim (policy-blocked per standing rule).'
+      meta_arm_baseline:
+        piece: 'Guardian Sep 17 2025 "Meta announces first Ray-Ban smart glasses with in-built augmented reality display", byline Samuel Gibbs'
+        date: '2025-09-17'
+        byline: 'Samuel Gibbs'
+        register: neutral_positive_launch_announcement
+        tone_illustrative: 0.10
+        tone_status: 'CARRIED un-rescored from mechanism 611 (Type B #628) per the #807 pattern.'
+        evidence_quotes:
+          - 'Evaluative jab lands on Google Glass ("ill-fated"), not Meta'
+          - 'Zero privacy-alarm vocabulary (contrast Barbara Speed pervert-glasses opinion -0.60 in the same publication)'
+        source_urls:
+          - 'https://www.richardhartley.com/2025/09/meta-announces-first-ray-ban-smart-glasses-with-in-built-augmented-reality-display/'
+        source_note: 'In-corpus via mechanism 611; full-text mirror (richardhartley.com), theguardian.com direct fetch policy-blocked per standing rule.'
+      apple_arm:
+        piece: 'Guardian Aug 16 2024 "Vision Pro review: Apple''s cutting-edge headset lives up to the hype", byline Samuel Gibbs'
+        date: '2024-08-16'
+        byline: 'Samuel Gibbs'
+        register: aspirational_hands_on_review
+        tone_illustrative: 0.35
+        tone_status: 'CARRIED un-rescored from mechanism 611 (Type B #628) / #622 per the #807 pattern.'
+        evidence_quotes:
+          - 'Headline (verbatim): Vision Pro review: Apple''s cutting-edge headset lives up to the hype'
+        source_urls:
+          - 'http://richardhartley.com/2024/08/vision-pro-review-apples-cutting-edge-headset-lives-up-to-the-hype/'
+        source_note: 'In-corpus via mechanism 611 (carried from #622); full-text mirror on the same mirror domain as the Meta baseline arm, so the evidence tier is symmetric across arms.'
+      illustrative_means:
+        meta_stigma_mean: -0.20
+        meta_baseline_mean: 0.10
+        apple_mean: 0.35
+        temporal_shift_meta: -0.30
+        temporal_shift_calc: '(-0.20) - (0.10) = -0.30 (same journalist, same publication, both NEWS genre, 12 months apart)'
+        delta: -0.55
+        delta_calc: '(Meta minus Apple, new stigma arm): (-0.20) - (0.35) = -0.55 (widened from m611''s -0.25)'
+      manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. All three arm tones are CARRIED un-rescored (Meta stigma from m832, Meta baseline and Apple from m611/#622) per the #807 pattern; this run scores no new tone.'
+      asymmetry_scorer_result:
+        target_entity: meta
+        reference_entity: apple
+        publication: guardian
+        journalist: 'Samuel Gibbs'
+        carried_meta_stigma_tone_manual_illustrative: -0.20
+        carried_meta_baseline_tone_manual_illustrative: 0.10
+        carried_apple_tone_manual_illustrative: 0.35
+        illustrative_temporal_shift_meta: -0.30
+        illustrative_delta_meta_minus_apple: -0.55
+        delta_calc: '(-0.20) - (0.35) = -0.55'
+        interpretation: 'Within-writer temporal shift: Gibbs''s own Meta register deteriorates 0.30 over 12 months while genre is held constant (NEWS on both Meta arms), isolating the news-environment peg from the genre confound that dominated m611. The cross-entity gap widens to -0.55 against the carried aspirational Apple review, but the review-vs-news genre skew keeps that comparison peg-and-genre-bounded, not a clean entity effect.'
+        limitations: 'n=1 per arm (degenerate); the stigma paragraph is one context paragraph, not the piece''s governing register; excerpt/relay-bounded evidence (theguardian.com original not recovered); the Apple arm is 2 years older than the stigma arm; desk editorial-line may carry the stigma vocabulary.'
+        statistical_contract: degenerate_n1_per_arm
+        artifact_grade: false
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+      statistical_discipline:
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        scorer: none
+        tone_scores: MANUAL_ILLUSTRATIVE_CARRIED
+        verdict: directionally_supported_not_proven
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 30
+      falsification_note: 'Falsification ledger holds at 30 (THIRTIETH member-form present once, m818 journalists.yaml; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST negative guard wordings pinned per #1000). This mechanism is within-writer register documentation + temporal extension of m611/m832, not a uniform-prediction test, so it is NOT a falsification-family member.'
+      cautious_language_required: true
+      correlational_note: 'Correlation only, not causation. The observed Meta-register shift may reflect the scandal-heavy Connect 2026 news environment (earned priors: ICE memo, contractor lawsuit, French probe, police memos), desk editorial-line, or genuine newsworthiness, not journalist-level entity bias. Hypothesis-generating only.'
+      confounders:
+        - '[STRONG] News-environment peg on the Meta side: Connect 2026 was scandal-saturated (Aug-18 NYT ICE-ban memo scoop, Sep-18 contractor lawsuit, French criminal probe, Sep-8 FOIA police memos); the stigma paragraph tracks the accumulated news record, not necessarily the writer''s entity preference. This is the leading confound for the temporal shift.'
+        - '[STRONG] Genre skew persists on the cross-entity comparison: the Apple arm is a hands-on review (inherently evaluative, "lives up to the hype") while both Meta arms are news. The -0.55 entity gap is genre-bounded, same as m611''s -0.25.'
+        - '[MODERATE] The stigma paragraph is one context paragraph in an otherwise product-relay piece (VR glasses, Gen 3, Audio specs per m832); it is not the piece''s governing register, which caps the -0.20 reading.'
+        - '[MODERATE] Timing skew: Meta arms 12 months apart, Apple arm 25 months older than the stigma arm; the wearables discourse changed (post-ICE-memo, post-lawsuit) between them.'
+        - '[MODERATE] Excerpt/relay-bounded evidence: theguardian.com original not recovered verbatim; the substack relay attests byline and dateline but the full register could differ.'
+        - '[WEAK] Desk editorial-line: the consumer-technology editor may be applying house stigma vocabulary ("perv glasses") rather than a personal register choice.'
+        - '[WEAK] n=1 per arm: directional only, degenerate statistical contract.'
+      counterevidence:
+        - 'Gibbs''s OWN Sep-2025 Meta announcement (+0.10) shows he writes neutral-positive Meta in the launch peg: the same writer, same publication, same desk, 12 months earlier. A fixed anti-Meta writer register is ruled out by his own byline.'
+        - 'm832''s strongest counterargument (carried): the Guardian''s Meta-vs-Apple SELECTION gap is fully explained by news value without entity bias (FOIA memos are an investigative dream scoop; a company-briefed privacy paper is a thin adversarial peg). The same news-value logic extends to Gibbs''s stigma paragraph.'
+        - 'The stigma noun follows a product with no camera: the paragraph''s own logic ("Lacking a camera, they may help avert some privacy worries") partially undercuts the stigma, keeping the piece''s governing register a product relay, not an attack.'
+        - 'Guardian-OpenAI licensing deal (#537) gets stewardship register while unpaid Meta gets surveillance registers: if money bought softness, the paid entity would be softest; the zero-gradient geometry (Apple $0, Meta $0) predicts nothing for this pair, consistent with m607/m832.'
+      strongest_counterargument: 'The entire temporal shift is explained by the news environment, not the writer: in Sep 2025 Gibbs covered a first-of-its-kind AR-display launch (a genuine product peg with demo hiccups he reported neutrally), while in Sep 2026 he covered Connect inside a scandal-saturated news cycle (ICE ban memo, contractor lawsuit alleging workers "see everything", French probe, police memos) where relaying the category''s "perv glasses" stigma as context is beat-consistent journalism. The same writer, same desk, same neutral toolkit would produce exactly this shift if the register tracks the peg rather than the entity. m611''s own Meta arm (+0.10) is the proof: Gibbs''s Meta register is peg-driven, not entity-driven, and the Apple review arm (+0.35) remains genre-explained. The mechanism documents the shift honestly but cannot attribute it to the journalist.'
+      financial_context: 'Guardian-Apple: $0, no deal documented. Guardian-Meta: $0, no deal documented. Guardian-OpenAI: content licensing deal documented (#537, stewardship register). The money gradient predicts nothing for the Apple-vs-Meta pair, so this mechanism is a zero-financial-gradient control extended to the journalist level, consistent with m607 (Sep 9) and m832 (Sep 25). Correlation, not causation.'
+      cross_references:
+        - '#628 Type B (mechanism 611, this journalist): the within-writer Gibbs genre-register pair this run extends temporally; the Meta baseline (+0.10) and Apple (+0.35) arms are carried from m611.'
+        - '#1002 Type A (mechanism 832, guardian.yaml): the Sep-24 Gibbs stigma piece corpus-recorded as the m832 Meta arm (-0.20); this run adds the journalist-angle mechanism-ization.'
+        - '#622 Type A (mechanism 607, guardian.yaml): the Gibbs Vision Pro aspirational review as the Apple arm (+0.35); Barbara Speed pervert-glasses -0.60 as the same-publication contrast.'
+        - '#537 (Guardian-OpenAI licensing deal context).'
+      connects_to: [611, 832, 622]
+      research_method: '4 browser.search query sets this run, 0 browser.open (excerpt-bounded per #503). (1) Dan Levy USA Today Apple Vision Pro OR Snap Spectacles - REJECTED, no Levy competitor byline surfaced (candidate deselected). (2) Samuel Gibbs Guardian Apple Vision Pro smart glasses review - REJECTED as arm discovery: no Gibbs-authored Apple piece surfaced (bounded absence; hardwarezone/techradar/t3 pieces are not Guardian, dailyguardian.ae is not Guardian UK). (3) Samuel Gibbs Guardian Meta Connect September 2026 "perv glasses" - SELECTED: re-surfaced the in-corpus m832 Gibbs stigma arm via the globalcommunityweekly.substack.com relay with verbatim stigma paragraph ("frequently being dubbed perv glasses or spy glasses"), Gibbs byline and Sep-24 dateline attested. (4) Samuel Gibbs Guardian Apple wearables 2026 Vision Pro review - SELECTED as bounded-absence check: zero Guardian-authored Gibbs 2026 Apple pieces, so the carried Aug-2024 review arm stands unreplicated. No zero-coverage claims per the iteration-492 rule (absence claims are bounded search-result absences). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps per #715: zero test_type_b_1013 files on disk (glob); no "Type B #1013" in git log (--grep); max numeric mechanism_id 838 pre-commit; zero underscore/dash-form 839 keys repo-wide pre-commit (needles format-built); block key zero-hit repo-wide pre-commit. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated journalist-angle mechanism on Gibbs''s Meta-register TEMPORAL SHIFT (Sep-2025 neutral-positive announcement vs Sep-2026 stigma relay): m611 paired the 2025 announcement against the Apple review; m832 used the 2026 stigma piece as a publication-level Type A arm. Neither mechanism-ized the within-writer Meta-side deterioration (+0.10 to -0.20 across 12 months, genre held at NEWS). Zero test_type_b_1013 files on disk pre-commit (glob); no "Type B #1013" in git log (--grep); max numeric mechanism_id 838 pre-commit; zero underscore/dash-form 839 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit.'
+      test_file: tests/test_type_b_1013_samuel_gibbs_guardian_meta_register_temporal_shift_vs_apple_vision_pro_aspirational_sep26_8am.py
+      artifact_readiness: 'No analysis.json update warranted: within-writer temporal-shift register documentation, all tones carried, no empirical significance.'
+
 - name: Anthony Ha
   notes: 'TechCrunch weekend editor (role current as of Sep 2026; previously a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm; lives in New York City; contact anthony.ha@techcrunch.com, per his TechCrunch bio). AI-category beat with a trust-and-skepticism register. KEY for MediaScope: Ha authored BOTH same-day Aug 16 2026 AI-category pieces in the trust lane, a skeptical podcast-preview on Zuckerberg''s Meta AI manifesto (-0.45) and a straight executive-statement report on Anthropic CEO Dario Amodei''s trust-crisis framing (+0.15), enabling a clean within-writer cross-entity comparison where Anthropic''s CEO is the virtuous foil inside Ha''s own Meta piece. Separately, Ha authored a Jul 26 2026 TechCrunch essay on Apple smart glasses that labels Meta''s glasses pervert glasses while positioning Apple as the privacy hero (on-device processing, no facial recognition), enabling a second within-writer cross-entity privacy-register comparison (#923, mechanism 785).'
   career:
