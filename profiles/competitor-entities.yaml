@@ -26232,3 +26232,110 @@ type_c_1014_stackoverflow_dual_ai_payer_google_openai_overflowapi_sep26_9am:
   yaml_parse_clean: true
   ascii_only: true
   browser_opens: 0
+type_c_1019_reddit_openai_70m_provenance_audit_renewal_pricing_event_sep26_4pm:
+  block_key: 'type_c_1019_reddit_openai_70m_provenance_audit_renewal_pricing_event_sep26_4pm'
+  mechanism_id: 843
+  mechanism_name: 'Reddit AI-licensing quantum provenance audit (Sep 2026): the $70M/yr OpenAI figure is press arithmetic reconstructed by subtraction, not a filing number - CORRECTION of the corpus advance_dual_asset_monetization as-fact treatment; filed-number inventory and the July 2026 Google renewal as the live pricing event'
+  iteration: 1019
+  iteration_type: 'C'
+  date_analyzed: '2026-09-26'
+  time_pdt: '16:00'
+  type: 'financial_incentive_mapping'
+  type_label: 'Financial Incentive Mapping'
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  finding: 'Provenance audit of the most-cited cash figure in the corpus API-style licensing family. (1) THE RECONSTRUCTION CHAIN: Adweek (Feb 2025, via COO Jen Wong at the Q4 2024 earnings): AI licensing is "about 10% of its revenue" - "I''ll call it 10%"; FY2024 revenue $1.3B, so the press carried "roughly $130 million" (Search Engine Land relaying Adweek). Google''s leg was reported at $60M/yr (Reuters, Feb 2024). Subtraction: $130M minus $60M leaves $70M - "That leaves OpenAI paying $70 million to Reddit for its licensing deal" (readwrite, Feb 2025). The September 2026 independent audit (thestochasticparrot) certifies the finding: "The $70 million OpenAI figure ... is an invoice reconstructed by subtraction from a percentage. Only figures with a filing number attached can be certified." The same audit notes the FY2024 10-K puts the entire Other line at $114.7 million for that year - the press''s $130M exceeds the filed line, so the reconstruction does not reconcile with the filing. CORRECTION: the corpus''s own advance_dual_asset_monetization block states "OpenAI ~$70M/yr" and "combined ~$130M/yr" as fact; both figures are now downgraded to press arithmetic (uncertified). The Google $60M/yr leg is multiply-reported and undisputed and is NOT downgraded. (2) FILED-NUMBER INVENTORY (certified): S-1 (Feb 2024): aggregate data-licensing contract value $203 million, terms 2-3 years. FY2025 10-K concentration risk: "to date, substantially all of the contract value associated with our licensing revenue is derived from two of our partners, and these arrangements may not be renewed, or they may be renewed based on less favorable terms, such as using fewer services at lower pricing"; "The transaction price in content licensing arrangements is generally a fixed fee or usage-based fee." Q2 2026 (Jul 30 2026): Other revenue $43.3 million (+24% YoY), of which data licensing is the majority; licensing shrank from 7.0% of revenue a year ago to 5.4%; "management has said renewal timing with partners like Google and OpenAI remains unresolved"; contracted-but-unrecognized revenue $62.0 million for the rest of 2026 and $30.1 million for 2027. Q1 2026 earnings call: data licensing reached $36 million in a single quarter. (3) THE LIVE PRICING EVENT: WSJ via CNBC, Jul 22 2026 - the $60M/yr Google deal (signed Feb 2024) "is ending soon," renewal talks underway, Reddit "discussed shutting off Google''s access to its content for artificial intelligence use"; stock fell 9.18% to $170.10; Wells Fargo warned Reddit could lose $500 million in AI licensing revenue if it walks away. Huffman: Fast Company May 2026 event - "commercial use of our data requires commercial terms," LLMs "would not exist as we know them" without Reddit content; CNBC Jul 30 interview - Google''s old "10 blue links" model created major value for the web ecosystem, AI Overviews have "yet to make similar positive impact"; Reddit pushing dynamic pricing tied to usage in AI outputs (Bloomberg). The publisher-revolt narrative is carried in mechanism 253 (Reddit, USA Today Co., Reuters, Politico, CNN, BI traffic declines; USA Today Co. CEO Mike Reed: "It''s time to take a stand and say enough is enough"); this run adds the certification boundary, not the revolt. (4) META/ANTHROPIC $0: Meta has no Reddit data-licensing leg (bounded absence; m614''s pay-or-sue frame); Anthropic $0 and litigated (mechanism 614, Reddit v. Anthropic, live as of Sep 2026). Implication for m735''s weighting problem: the API-style licensing family''s only press-cited quantum is uncertified; the renewal outcome - not the historical figure - will price Reddit''s data; and licensing is 5.4% of Reddit revenue and shrinking, so the incentive weight inside Reddit''s own P&L is small and falling. Correlation, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+  novelty: 'FIRST corpus provenance audit of a press-circulated AI-licensing cash figure: the $70M/yr OpenAI-to-Reddit number is traced to its Feb 2025 press-arithmetic origin ($130M "about 10%" minus $60M Google) and certified uncertified by the Sep 2026 thestochasticparrot audit (zero pre-commit corpus hits for the audit, the reconstruction chain, and the $114.7M 10-K Other-line comparator). FIRST documentation in the corpus of the FY2025 10-K licensing concentration-risk language, the Q2 2026 contracted-but-unrecognized figures ($62.0M/$30.1M), the Wells Fargo $500M downside warning, and the Q1 2026 $36M/quarter call disclosure. CORRECTS the corpus''s own advance_dual_asset_monetization block (which states "OpenAI ~$70M/yr" as fact). Extends mechanisms 614 (Reddit v. Anthropic pay-or-sue), 735 (deal-structure weighting problem), 840 (Stack Overflow API-style licensing), and 732 (Meta-vs-rival census); duplicates none - no earlier mechanism audits a licensing figure''s provenance or draws the filing-vs-press certification boundary.'
+  google_leg:
+    partner: 'Google'
+    reported_annual: '$60M/yr'
+    announced: '2024-02-22'
+    status: 'Multiply-reported (Reuters first, Feb 2024) and undisclosed in filings; NOT downgraded by this audit.'
+    renewal: 'WSJ via CNBC Jul 22 2026: deal "is ending soon," renewal talks underway; Reddit "discussed shutting off Google''s access to its content for artificial intelligence use"; stock -9.18% to $170.10; Wells Fargo $500M downside warning.'
+    financial_terms: 'REPORTED (not filed)'
+  openai_leg:
+    partner: 'OpenAI'
+    press_cited_annual: '$70M/yr'
+    announced: '2024-05-16'
+    provenance: 'Press arithmetic: $130M (Adweek "about 10% of revenue," FY2024 $1.3B) minus $60M (Google) = $70M remainder (readwrite, Feb 2025). Certified uncertified by the Sep 2026 audit: "an invoice reconstructed by subtraction from a percentage."'
+    financial_terms: 'UNCERTIFIED - press arithmetic, no filing number attached'
+  meta_leg: 'Meta $0 (bounded absence): no Meta Reddit data-licensing leg surfaced; m614''s pay-or-sue frame (Reddit sued Anthropic Jun 2025 rather than license at $0) bounds the zero-leg reading. Bounded absence, not verified absence.'
+  incentive_geometry:
+    family: 'API-style licensing quantum family: this audit sits beside mechanism 840 (Stack Overflow dual-payer, both legs undisclosed-fee, unweightable per m735) as the family''s certification-boundary member - the one press-cited quantum in the family is now marked uncertified.'
+    certification_boundary: 'Filed numbers (S-1 $203M aggregate; 10-K concentration risk; Q2 2026 $43.3M Other; $62.0M/$30.1M contracted-unrecognized) are certified. Press-derived remainders ($70M OpenAI) are not. Payer-softening tests must weight only certified quanta.'
+    renewal_as_pricing_event: 'The Jul 2026 Google renewal negotiation - not the Feb 2025 press arithmetic - will set the certified price of Reddit''s data. Wells Fargo frames the two-sided book: $500M downside if Reddit walks, $550M/yr combined upside at renewal (corpus advance block).'
+    fee_status: 'Google $60M/yr: REPORTED, undisputed, not filed. OpenAI $70M/yr: UNCERTIFIED press arithmetic - NO cash-payment claim is made for the OpenAI leg beyond the press reconstruction. Unweightable in dollar terms per m735 until certified.'
+  sources:
+    - outlet: 'thestochasticparrot (independent audit, ~Sep 14 2026)'
+      url: 'https://thestochasticparrot.com/audits/reddit-gas-metered'
+      role: 'Core provenance finding: $70M "invoice reconstructed by subtraction"; $114.7M FY2024 10-K Other line; FY2025 10-K concentration-risk quotes; Jul 2026 CNBC/WSJ renewal relay.'
+    - outlet: 'Slashdot (Feb 2025, relaying Adweek)'
+      url: 'https://tech.slashdot.org/story/25/02/14/0019213/ai-licensing-deals-with-google-and-openai-make-up-10-of-reddits-revenue?sdsrc=prevbtmprev'
+      role: 'Adweek/Jen Wong "about 10% of revenue" ($130M of $1.3B FY2024); Google $60M; OpenAI remainder $70M reconstruction chain.'
+    - outlet: 'readwrite (Feb 2025)'
+      url: 'https://readwrite.com/openai-paid-70m-reddit-content-ai-licensing/'
+      role: 'The $70M figure''s press origin: "That leaves OpenAI paying $70 million to Reddit for its licensing deal."'
+    - outlet: 'earningsanatomy (Aug 2026)'
+      url: 'https://earningsanatomy.com/blogs/reddit-rddt-q2-2026-earnings-revenue-up-61-percent-stock-drop'
+      role: 'Q2 2026: Other $43.3M (+24%); licensing 7.0% to 5.4% of revenue; renewal timing unresolved; contracted-but-unrecognized $62.0M/$30.1M.'
+    - outlet: 'MLQ.ai (Jul 23 2026)'
+      url: 'https://mlq.ai/news/reddit-stock-drops-9-on-report-it-may-not-renew-60m-google-ai-data-deal-1/'
+      role: 'WSJ Jul 22 renewal report; -9.18% to $170.10; Wells Fargo $500M warning; S-1 $203M aggregate disclosed 2024.'
+    - outlet: 'startupfortune (Aug 2026)'
+      url: 'https://startupfortune.com/reddit-may-cut-off-googles-ai-access-when-their-60-million-deal-expires/'
+      role: 'Huffman quotes (Fast Company May 2026; CNBC Jul 30 "10 blue links"); dynamic-pricing push; Feb 2024 deal terms.'
+    - outlet: 'TechSpot (Jul 2026, relaying WSJ)'
+      url: 'https://www.techspot.com/community/topics/reddit-and-major-publishers-consider-blocking-google-as-ai-search-continues-destroying-web-traffic.298203/'
+      role: 'Publisher contagion: USA Today, Politico, CNN, BI traffic declines; USA Today Co. blocking consideration.'
+    - outlet: 'ppc.land (Jul 2026)'
+      url: 'http://ppc.land/reddit-and-usa-today-face-google-exit-as-search-traffic-drops-28/'
+      role: 'Q1 2026 call: data licensing $36M in a single quarter; WSJ renewal details; Google exclusivity on recent-content indexing.'
+  excerpt_bounded_note: '0 browser.open this run (excerpt-bounded per #503); the thestochasticparrot audit, the 10-K quotes, and all earnings figures are carried from search excerpts and secondary relays, NOT first-hand filing reads. The $114.7M FY2024 10-K Other-line comparator is the audit''s claim, carried as attributed.'
+  research_method: '2 browser.search query sets this run (Reddit Q2 2026 earnings data licensing revenue - SELECTED: earningsanatomy, pulse2, resourcera, gurufocus, stocktitan 8-K; Reddit OpenAI partnership deal value $70M - SELECTED: thestochasticparrot audit, ainvest, slashdot/Adweek, webpronews, readwrite; rejected: finnhub price data, not needed). 1 followup query set (Reddit Google $60M deal ending soon renewal - SELECTED: tradersunion, startupfortune, sweettntmagazine, ppc.land, mlq.ai, fool.com, techspot). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps per #715: zero test_type_c_1019 files on disk (glob); no "Type C #1019" in git log (--grep); max numeric mechanism_id 842 pre-commit; zero underscore/dash-form 843 keys repo-wide pre-commit (needles format-built); block key zero-hit repo-wide pre-commit; 7 of 8 source URLs zero-hit repo-wide pre-commit (fool.com Jul-28 piece already in-corpus at mechanism 253 source_urls, REPLACED with the ppc.land URL, re-verified zero-hit); thestochasticparrot zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  confounders:
+    - strength: strong
+      confounder: 'Excerpt-bounded sourcing: 0 browser.open this run; the audit, the 10-K quotes, and the earnings figures are all carried from search excerpts and secondary relays, not first-hand filing reads.'
+    - strength: strong
+      confounder: 'Single-audit dependence: the provenance finding rests on one independent audit (thestochasticparrot, Sep 2026); no corroborating audit of the $70M figure''s origin was surfaced this run.'
+    - strength: strong
+      confounder: 'The $114.7M FY2024 10-K Other-line comparator is the audit''s claim, not independently verified against the filing this run; "Other revenue" bundles Premium and commercial products, so no filing line isolates licensing.'
+    - strength: medium
+      confounder: 'Renewal outcome unknown: the live pricing event (Google renewal) is unresolved as of Sep 26 2026; the certified quantum will be set by negotiation, not by this audit.'
+    - strength: medium
+      confounder: 'Timing skew: the press-arithmetic origin (Feb 2025) predates the audit (Sep 2026) by 19 months; the corpus''s as-fact treatment was reasonable on the information then available.'
+    - strength: medium
+      confounder: 'Wells Fargo $500M downside vs the corpus''s $550M renewal-upside projection come from different-dated notes and may not be directly comparable.'
+    - strength: weak
+      confounder: 'Single-day stock-move attribution: the Jul 22 -9.18% move has multiple drivers (Q2 earnings due Jul 30); the renewal report is the attributed trigger, not the proven sole cause.'
+    - strength: weak
+      confounder: 'n=1 figure audited: the certification boundary is demonstrated on one figure; other corpus licensing quanta (News Corp $250M/5yr, DDM $16M/yr) are not audited here.'
+  counterevidence:
+    - 'Reddit''s S-1 disclosed $203M aggregate data-licensing contract value - a filed number certifying the licensing book''s materiality independent of the $70M figure.'
+    - 'Q2 2026 contracted-but-unrecognized $62.0M (rest of 2026) + $30.1M (2027) are filed forward quanta.'
+    - 'The Google $60M/yr leg is multiply-reported (Reuters first, Feb 2024) and undisputed; only the OpenAI remainder is reconstructed.'
+    - 'Huffman acts as if the quantum is real: "commercial use of our data requires commercial terms," the dynamic-pricing push, and the shutoff threat are priced as leverage.'
+    - 'The corpus''s Wells Fargo $550M/yr renewal projection implies the market prices the renewal above current levels, not below.'
+  strongest_counterargument: 'The audit cuts both ways for the incentive theory: if the $70M is uncertified press arithmetic and licensing is only 5.4% of Reddit revenue and shrinking, then the API-style licensing family''s flagship quantum evaporates and Reddit''s own P&L says data licensing is a side business - the "data layer" narrative outruns the filed numbers. The shutoff threat reads as leverage theater: Reddit depends on Google for discovery and traffic, and cutting off Google risks the advertising business that is about 95% of revenue. On this reading the July 2026 event reprices nothing except Reddit''s negotiating posture, and the corpus should weight the Reddit legs at the filed $43.3M/quarter run-rate, not at press multiples. Correlation, not causation.'
+  tone_scores: 'NOT_SCORED'
+  engine_run: false
+  no_analysis_json_update: true
+  artifact_grade: false
+  verdict: 'directionally_supported_not_proven'
+  falsification_family_member: false
+  falsification_ledger: 30
+  falsification_note: 'Not a falsification-family member. Ledger holds at 30 (THIRTIETH member-form once, m818 journalists.yaml; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST member-form negative guard wordings pinned per #1000).'
+  connects_to: [614, 735, 840, 732]
+  rotation_transparency: '2026-09-26 16:00 PDT, iteration_type C, FIFTH leg of the 1015-1019 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard). Previous main commit #1018 Type B at 15:00 PDT Sep 26 2026 (main 55e3067be6dadab3f2b11e37fb3053d50e60c1f6, anchor 4fcea1834c62bebcb8fca795a5d1aae7486ac493, log-hash b802e7b417f64231d85d5c2dcd2c70f37c53e2d8, push-status finalizer 4d01e77a, date-precision followup 1e72fda5, all verified present via git log before this run''s commit). This run is #1019 Type C at 16:00 PDT Sep 26 2026, CLOSING the 1015-1019 window; next window 1020-1024 opens at #1020 Type D.'
+  verification:
+    ascii_only: true
+    yaml_parse_clean: true
+    browser_opens: 0
+    browser_search_sets: 3
+    max_numeric_mechanism_id_pre_commit: 842
+    zero_843_keys_pre_commit: true
+    zero_block_key_hits_pre_commit: true
+    all_source_urls_zero_hit_pre_commit: true
+    connects_to_all_exist: true
+  yaml_parse_clean: true
+  ascii_only: true
+  browser_opens: 0
