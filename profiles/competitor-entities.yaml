@@ -26109,3 +26109,126 @@ type_c_1009_akamai_anthropic_116b_warrant_demand_for_equity_sep26_4am:
     yaml_parse_clean: true
     ascii_only: true
     browser_opens: 0
+
+type_c_1014_stackoverflow_dual_ai_payer_google_openai_overflowapi_sep26_9am:
+  mechanism_id: 840
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1014
+  iteration_type: C
+  rotation: 'Type C'
+  date_analyzed: '2026-09-26'
+  time_pdt: '09:00'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  job_id: mediascope-daily-iteration
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'Stack Overflow Dual-AI-Payer Architecture: OverflowAPI Legs with Google Cloud (Feb 29 2024) and OpenAI (May 6 2024); FIRST Developer-Knowledge Dual-Payer Publisher in the Corpus; Both Legs Undisclosed-Fee (Unweightable per m735); Meta $0 Bounded Absence'
+  block_key: type_c_1014_stackoverflow_dual_ai_payer_google_openai_overflowapi_sep26_9am
+  key_design_note: 'Colon-form key only; by designed keying per #715 the block key carries no numeric mechanism-id substring in any form (sweep needles are format-built, no literals carried).'
+  finding: 'Within ten weeks in early 2024, Stack Overflow licensed its community-contributed technical knowledge base to two competing AI labs through the same OverflowAPI product surface: Google Cloud (strategic partnership announced Feb 29 2024, Google as OverflowAPI launch partner, Stack Overflow knowledge integrated into Gemini for Google Cloud, Google AI features into Stack Overflow) and OpenAI (deal announced May 6 2024, OpenAI gets OverflowAPI access, validated Stack Overflow knowledge surfaced in ChatGPT with attribution, Stack Overflow uses OpenAI models for OverflowAI). Both legs are explicitly RECIPROCAL (models and product integrations flow back to the publisher) and BOTH legs have UNDISCLOSED financial terms (no cash amounts reported in any source), so per m735 this mechanism is qualitative census/direction only and cannot be dollar-weighted. Meta has no OverflowAPI leg (bounded absence; m732''s Meta-vs-rival retrieval licensing census does not include Stack Overflow), giving a $0 anchor on the Meta side. The mechanism EXTENDS the dual/triple-payer publisher family (News Corp m594 five-leg, Vox Media m621, Hearst m696 triple-AI-payer) with the FIRST developer-knowledge (non-news) publisher and the FIRST publisher where BOTH legs are undisclosed-fee, tightening the corpus''s coverage of API-style licensing as a distinct deal architecture from the disclosed-fee news publisher deals. Correlation, not causation. Hypothesis-generating only. ASCII-only, no em dashes.'
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scores: NOT_SCORED
+  engine_run: false
+  falsification_ledger: 30
+  falsification_family_member: false
+  falsification_note: 'Not a falsification-family member. Ledger holds at 30 (THIRTIETH member-form once, m818 journalists.yaml; TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST negative guard wordings pinned per #1000).'
+  excerpt_bounded: true
+  excerpt_bounded_note: '0 browser.open this run; all evidence from search-result excerpts per #503. The primary Stack Overflow press release (stackoverflow.co, Feb 29 2024) was NOT opened this run; its announcement text, deal dates, and executive quotes below are carried from search excerpts and corroborating coverage, so quote-level attribution to the primary source is marked excerpt-bounded. Source-access gap recorded honestly: no primary OpenAI-company announcement URL was recovered this run either.'
+  sources:
+    - url: 'https://stackoverflow.co/company/press/archive/google-cloud-strategic-gen-ai-partnership/'
+      note: 'PRIMARY (press release, not opened this run): Stack Overflow x Google Cloud strategic partnership announced Feb 29 2024; OverflowAPI launch partner; Gemini for Google Cloud integration; Kurian and Chandrasekar quotes carried from search excerpts.'
+    - url: 'https://www.devopsdigest.com/stack-overflow-partners-with-google-cloud?destination=node/12261'
+      note: 'Corroboration of the Google Cloud leg: Feb 29 2024 announcement, OverflowAPI, Gemini for Google Cloud and Stack Overflow integration.'
+    - url: 'https://vuink.com/post/grpupehapu-d-dpbz/2024/02/29/google-brings-stack-overflows-knowledge-base-to-gemini'
+      note: 'Google leg detail: OverflowAPI launch partner Google, NON-EXCLUSIVE arrangement, financial terms undisclosed.'
+    - url: 'https://techstartups.com/2024/05/06/openai-partners-with-stack-overflow-to-supercharge-developer-experience/'
+      note: 'OpenAI leg detail (announced May 6 2024): OverflowAPI access for model improvement, reciprocal partnership, Stack Overflow uses OpenAI models for OverflowAI; financial terms not disclosed.'
+    - url: 'https://readwrite.com/openai-and-stack-overflow-sign-deal-to-boost-chatgpt/'
+      note: 'OpenAI leg detail: attributed Stack Overflow knowledge surfaced in ChatGPT; Stack Overflow leverages OpenAI models for OverflowAI; terms not disclosed.'
+    - url: 'https://www.theregister.com/software/2024/05/07/stack-overflow-and-openai-agree-to-use-each-other/1141862?td=amp-keepreading'
+      note: 'OpenAI leg detail: OverflowAPI access, attributed knowledge in ChatGPT, OpenAI models for OverflowAI.'
+    - url: 'https://www.engadget.com/ai/stack-overflow-and-openai-partner-up-to-bring-more-technical-knowledge-into-chatgpt-184524095.html'
+      note: 'OpenAI leg reciprocal structure (Stack Overflow improves paid models with ChatGPT data; OpenAI improves models with Stack Overflow content) plus community revolt reporting (post deletions, moderator purges).'
+    - url: 'https://aitoolradar.io/blog/how-ai-broke-stack-overflow'
+      note: 'Platform distress context: traffic peaked near 110M early 2023, down to 55M by year end; questions down 76% since ChatGPT launch; 2023 layoffs 10% (May) + 28% (Oct); OverflowAI launched July 2023; Prosus $1.8B acquisition June 2021.'
+  google_leg:
+    announced: '2024-02-29'
+    partner: 'Google Cloud'
+    product_surface: 'OverflowAPI (Google as launch partner; NON-EXCLUSIVE per vuink)'
+    publisher_gets: 'Google AI features integrated into Stack Overflow'
+    lab_gets: 'Stack Overflow knowledge integrated into Gemini for Google Cloud'
+    financial_terms: 'UNDISCLOSED (no cash amount reported; no payer claim made)'
+    kurian_quote: 'Google Cloud is a critical platform partner for organizations across all industries to build great AI experiences, providing access to powerful developer tools as well as infrastructure. (carried from search excerpt; excerpt-bounded)'
+    chandrasekar_quote: 'This partnership brings our enterprise platform to millions of Google Cloud customers to support their developers. It enables developers to more effectively use AI for their platform within their preferred development environment, and combines the vast knowledge from the Stack Overflow community and new AI capabilities, powered by Vertex AI and Google Cloud''s trusted, secure infrastructure. (carried from search excerpt; excerpt-bounded)'
+  openai_leg:
+    announced: '2024-05-06'
+    partner: 'OpenAI'
+    product_surface: 'OverflowAPI (reciprocal partnership)'
+    publisher_gets: 'OpenAI models for OverflowAI (enterprise generative AI platform); described in one report as an initial investment in OpenAI''s Partner API Program'
+    lab_gets: 'OverflowAPI access to improve OpenAI models; validated technical knowledge from Stack Overflow surfaced directly in ChatGPT, giving users the ability to easily access trusted, attributed, accurate, and highly technical knowledge'
+    financial_terms: 'UNDISCLOSED (no cash amount reported; no payer claim made)'
+    community_response: 'Open revolt: users report Stack Overflow deleting posts when they attempt to remove them in protest; moderators actively purging content (engadget)'
+    prior_scraping_note: 'Reporting notes the deal officially incorporates information many believe OpenAI had previously scraped without a license (technologymag), making retroactive indemnification a plausible fee component'
+  platform_context:
+    traffic_peak: 'Nearly 110 million visits in early 2023, down to 55 million by end of 2023 (aitoolradar)'
+    question_volume: 'Down 76% since the November 2022 ChatGPT launch'
+    layoffs_2023: '10% (May 2023) + 28% (October 2023) = 38% of workforce'
+    overflowai_launched: 'July 2023'
+    prosus_acquisition: '$1.8B, June 2021'
+    sequencing: 'Distress (2023) predates both licensing legs (2024); the decline trajectory traces to the Nov 2022 ChatGPT launch, independent of the deals'
+  incentive_geometry:
+    architecture: 'Dual-payer: same publisher (Stack Overflow) licenses community-contributed technical knowledge to two competing AI labs (Google Cloud, OpenAI) within ~10 weeks via the same OverflowAPI product surface'
+    reciprocity: 'Both legs reciprocal: publisher receives models and product integrations in return (Google AI features; OpenAI models for OverflowAI)'
+    fee_status: 'BOTH legs undisclosed-fee; NO cash-payment claim is made for either leg. Unweightable in dollar terms per m735: qualitative census/direction leg only.'
+    meta_leg: 'Meta $0 (bounded absence): no Meta OverflowAPI leg surfaced; m732''s Meta-vs-rival retrieval licensing census does not include Stack Overflow. Bounded absence, not verified absence.'
+    family: 'Fourth member of the corpus dual/triple-payer publisher family after News Corp (m594 five-leg), Vox Media (m621), and Hearst (m696 triple-AI-payer); FIRST developer-knowledge (non-news) publisher; FIRST member where BOTH legs are undisclosed-fee'
+  relationship_direction_taxonomy:
+    - 'Publisher grants access to community-contributed technical knowledge via API (both labs)'
+    - 'Labs return models and product integrations to the publisher (reciprocal legs)'
+    - 'No disclosed cash flow in either direction; attribution (in ChatGPT) may substitute for cash in ways the mechanism cannot price'
+    - 'Meta is absent from the geometry ($0 bounded absence)'
+  coverage_note: 'Mechanism-level: how a dual-reciprocal-undisclosed-fee licensing geometry differs from disclosed-fee news-publisher deals. Not an editorial-framing claim. No Meta coverage comparison is made here; the Meta $0 leg is a bounded-absence financial-incentive anchor, not a register observation.'
+  novelty: 'FIRST Stack Overflow mechanism in the corpus (git grep shows zero Stack Overflow coverage in profiles/ before this run) and FIRST developer-knowledge dual-AI-payer publisher architecture; extends the dual/triple-payer publisher family (m594, m621, m696) into a new publisher category with a new fee architecture (both-legs-undisclosed). No pre-existing mechanism covered either leg.'
+  connects_to: [594, 621, 696, 735]
+  confounders:
+    - strength: strong
+      confounder: 'Excerpt-bounded sourcing: 0 browser.open this run; full agreement terms inaccessible; undisclosed fees could be nominal, cash-plus-equity, or API-credit swaps, so the payer geometry cannot be weighted in dollars (per m735).'
+    - strength: strong
+      confounder: 'Distress-driven timing: Stack Overflow lost roughly half its traffic and cut 38% of staff in 2023 before either leg was signed; the partnerships may be rescue-monetization, so the direction of influence is ambiguous (distress drove the deals).'
+    - strength: strong
+      confounder: 'Training-data ambiguity: reporting notes the deals officially incorporate information many believe the labs had previously scraped without a license, so fees may price retroactive indemnification rather than forward content value.'
+    - strength: medium
+      confounder: 'Non-exclusive API product: OverflowAPI is a standard product offered to multiple buyers; the non-exclusive design dilutes any exclusive-loyalty reading of the payer geometry.'
+    - strength: medium
+      confounder: 'Attribution substitution: the OpenAI leg includes attribution in ChatGPT, so visibility may substitute for cash in ways the mechanism cannot price.'
+    - strength: medium
+      confounder: 'Cost-cut confound: the 38% 2023 layoffs mean any observed editorial or product posture change could be cost-driven rather than incentive-driven.'
+    - strength: weak
+      confounder: 'Anthropic bounded absence: no Anthropic OverflowAPI leg surfaced; cannot test whether a third lab would have been refused or accepted.'
+    - strength: weak
+      confounder: 'Cross-publisher magnitude comparison unsupported: Reddit''s disclosed dual-payer legs ($60M Google + $50-60M OpenAI) tempt a size ranking, but undisclosed Stack Overflow fees make the comparison unsupported by data.'
+  counterevidence:
+    - 'OverflowAPI is non-exclusive by design; the payer framing overstates exclusivity.'
+    - 'Community revolt against the OpenAI leg (post deletions, moderator purges) makes the platform''s incentive environment look adversarial, not captured.'
+    - 'The decline trajectory (traffic, questions, layoffs) predates both deals and traces to the Nov 2022 ChatGPT launch, independent of the licensing relationships.'
+    - 'Meta $0 is bounded absence from corpus search, not verified absence; Meta could license via intermediaries or future legs.'
+    - 'Both legs undisclosed-fee, so the mechanism cannot be dollar-weighted (per m735); it is qualitative census/direction only.'
+  strongest_counterargument: 'The dual-payer geometry is better explained as distress monetization than as incentive capture. Stack Overflow lost roughly half its traffic and cut 38% of its workforce in 2023, before either leg was signed; selling OverflowAPI access to two competing labs is revenue diversification against an existential threat (the ChatGPT-driven collapse of its question volume, down 76%), not a lever for coverage capture. The undisclosed, non-exclusive, reciprocal structure (models and integrations flowing back to the publisher) further weakens any capture reading, and the community''s open revolt against the OpenAI leg suggests the platform''s incentive environment is adversarial rather than bought. The geometry is real and novel to the corpus, but the direction of influence is unresolved. Correlation, not causation.'
+  rotation_transparency: '2026-09-26 09:00 PDT, iteration_type C, FIFTH leg of the 1010-1014 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard), CLOSING the window. Predecessor #1013 Type B committed (main a11199707577599ea5410e26f3a788d58dbc01e4, anchor 2fc529f6596ff6d8344f0a62755715db6329226e, log-hash 991f2c7d, all verified present via git log before this run''s commit). This run is #1014 Type C at 09:00 PDT Sep 26 2026. Next window opens at #1015 Type D.'
+  verification:
+    ascii_only: true
+    yaml_parse_clean: true
+    browser_opens: 0
+    browser_search_sets: 8
+    max_numeric_mechanism_id_pre_commit: 839
+    zero_840_keys_pre_commit: true
+    zero_block_key_hits_pre_commit: true
+    all_source_urls_zero_hit_pre_commit: true
+    connects_to_all_exist: true
+  yaml_parse_clean: true
+  ascii_only: true
+  browser_opens: 0
