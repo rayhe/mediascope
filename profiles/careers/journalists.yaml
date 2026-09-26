@@ -21994,9 +21994,11 @@ james_pero:
   - 791
   - 806
   - 818
+  - 833
   source_urls:
   - https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
   - https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
+  - https://gizmodo.com/do-snaps-beefy-ar-glasses-actually-bend-your-ears-2000812837
   - https://api.coschedule.com/wordpress/preview/187fe651-d0f2-41f4-babe-507b256fdf61
   - https://gizmodo.com/author/jpero
   - https://www.gearlive.com/news/article/ray-ban-meta-audio-camera-free-glasses-349
@@ -22408,6 +22410,104 @@ james_pero:
         iteration: 978
         type: 'B'
         date: '2026-09-24 21:00 PDT'
+    type_b_1003_james_pero_gizmodo_snap_specs_earbending_comedy_vs_meta_audio_stigma_sep25:
+      iteration: 1003
+      mechanism_id: 833
+      type: B
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: 2026-09-25 22:00 PDT
+      block_key: type_b_1003_james_pero_gizmodo_snap_specs_earbending_comedy_vs_meta_audio_stigma_sep25
+      author: Kit (with Ray)
+      journalist: James Pero
+      publication: Gizmodo (Keleops AG)
+      design: 'Type B journalist cross-entity tracking, within-journalist stigma-register routing extension: James Pero (Gizmodo) on Snap''s Sep-2026 Specs (anatomy-humor feature, ''Do Snap''s Beefy AR Glasses Actually Bend Your Ears?'') vs carried Sep-23 Meta Ray-Ban Audio stigma frame (mechanism 806, un-rescored per #807). Tests whether Pero''s entity-selective framing on the social-acceptability attribute extends from m791''s ''creep factor'' editorial register to a new sub-register: Snap''s physical conspicuousness routed into playful anatomy comedy while Meta''s camera-free product kept the sexualized public-stigma headline. Bounded by m818 (category-bound within Meta): the claim is lane-scoped to face-worn social hardware, not journalist-global.'
+      new_snap_arm:
+        title: Do Snap's Beefy AR Glasses Actually Bend Your Ears?
+        url: https://gizmodo.com/do-snaps-beefy-ar-glasses-actually-bend-your-ears-2000812837
+        date: September 2026 (bounded from /2026/09/ asset paths and Snap launch-event attendance; exact publication date not attested)
+        byline: 'James Pero (bounded attribution: "James Pero / Gizmodo" photo credit on the piece + first-person hands-on voice + author-page listing; explicit rendered byline header not surfaced in tool render, bounded per iteration-492)'
+        publication: Gizmodo (Keleops AG)
+        genre: first-person anatomy-humor hands-on feature
+        key_quotes:
+        - 'Headline (observed this run): "Do Snap''s Beefy AR Glasses Actually Bend Your Ears?"'
+        - 'Dek (observed this run): "do they really bend the sh*t out of your ears?"'
+        - 'Size register (observed this run): "big, chunky, comically large"'
+        - 'Verdict (observed this run): "weighty but not ear-bendy"'
+        - 'Self-deprecation (observed this run): "a little bit of journalism that nobody asked for"; "J*ear*nalism"'
+        - 'Field canvass (observed this run): asked roughly 10 event attendees about their ears; "everybody said that it was a no"'
+        - 'Engineering sympathy (observed this run): "Snap has built a standalone face computer"; "miniaturization is hard"; the ear meme is "a silly representation of a real problem"'
+        - 'Access (observed this run): one-on-one time with Snap Specs staff; quotes Snap''s Head of Specs Studio, Ben Feuerstein'
+        register_notes: 'Open criticism of bulk and appearance converted into anatomy comedy, self-deprecating field reporting, and engineering sympathy; the verdict gently clears the product.'
+        tone_score: 0.10
+        tone_basis: hand-assigned this run from the full first-hand read of the canonical article, MANUAL ILLUSTRATIVE
+        evidence_tier: 'full-text first-hand this run (1 browser.open of the canonical article; body text read end to end)'
+        byline_attribution_urls:
+        - https://gizmodo.com/do-snaps-beefy-ar-glasses-actually-bend-your-ears-2000812837
+      carried_meta_arm:
+        mechanism: 806
+        carried_per: '#807 (un-rescored)'
+        title: 'Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'
+        url: https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
+        date: 2026-09-23
+        tone_score: -0.20
+        tone_basis: 'MANUAL ILLUSTRATIVE from #958: camera-free product, yet the privacy-accusation frame persists in the headline and dek (''Perv'' Problem, ''glasshole''); the objection moves from hardware to brand.'
+      finding: 'Pero routes the two brands through different registers on the same attribute (face-hardware social acceptability): Snap''s conspicuous bulk gets anatomy comedy (+0.10 illustrative: ''big, chunky, comically large'' converted to ''J*ear*nalism'' field reporting, a gentle ''weighty but not ear-bendy'' verdict, and engineering sympathy for the standalone face computer); Meta''s camera-free Audio gets the sexualized public-stigma headline (-0.20 illustrative carried, m806: ''Avoid the ''Perv'' Problem'', ''glasshole''). Illustrative Snap-minus-Meta delta +0.30 (0.10 - (-0.20)), same direction as m791 (-0.65) and the m806 Snap comparison (-0.55). This EXTENDS m806/m791 temporally and on register: the entity-selective framing holds on the stigma attribute even when the new arm is Snap-physical and the carried arm is Meta-camera-free. The claim is bounded by m818 (category-bound within Meta; no journalist-global hostility claim) and by m746/m933 (the playful-Snap register itself replicates). Correlation only, not causation. Verdict directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; no analysis.json update.'
+      asymmetry_scorer_result:
+        new_snap_arm_tone_manual_illustrative: 0.10
+        carried_meta_audio_tone_manual_illustrative: -0.20
+        illustrative_delta_snap_minus_meta: 0.30
+        delta_calc: '0.10 - (-0.20) = 0.30'
+        artifact_grade: false
+        target_entity: snap
+        reference_entity: meta
+        publication: gizmodo
+        interpretation: 'Directionally consistent with m791 (Meta-minus-Snap illustrative -0.65) and m806 (Meta Audio -0.20 vs Snap do-or-die +0.35, illustrative -0.55): Pero''s stigma register is entity-selective on the social-acceptability attribute. New lens: the selectivity survives when the Snap arm is a physical-bulk comedy and the Meta arm is camera-free, so the register tracks the entity, not the hardware.'
+        limitations: 'n=1 per arm (degenerate); genre difference (comedy feature vs launch news) is the strongest confounder; access differential (Snap launch event vs Connect newsroom); full verdict in statistical_discipline.'
+        statistical_contract: degenerate_n1_per_arm
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+      manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE: Snap ear-bending arm +0.10 hand-assigned this run from the full first-hand read (bulk criticism balanced by anatomy comedy, self-deprecating reporting, and engineering sympathy); Meta Audio arm -0.20 carried un-rescored from m806 per #807. Not empirical measurements; documented for reproducibility and challenge.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 (new Snap arm) vs n=1 (carried Meta Audio arm, m806 un-rescored per #807). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative delta only (+0.30); not evidence of bias or of financial influence; documents the analyst reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents one journalist''s register routing across two Sep-2026 pieces on the face-hardware social-acceptability attribute. Register differences are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. No causal claim. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      not_artifact_grade: true
+      falsification_family_member: false
+      falsification_ledger: 30
+      falsification_note: 'NOT a falsification-family member (stigma-register extension of the m806/m791 family, not a uniform-prediction test); falsification ledger holds at 30 (THIRTIETH present, THIRTY-FIRST absent in profiles/).'
+      confounders:
+      - '[STRONG] Genre and assignment difference: the Snap piece is a self-initiated comedy feature ("a little bit of journalism that nobody asked for"); the Audio piece is launch-week product news. The register may follow the assignment, not the entity.'
+      - '[STRONG] Access differential: the ear piece was written from Snap''s launch event with one-on-one Specs staff time and the Head of Specs Studio on record; the Audio piece was Connect-week news coverage. Access buys register warmth.'
+      - '[STRONG] Honest-observation difference: Specs'' 132-136g standalone AR bulk is objectively anatomy-relevant (the ears carry the load); Ray-Ban Audio is a conventional 43g frame. The comedy register tracks a hardware fact.'
+      - '[MODERATE] n=1 per arm, degenerate sample; the illustrative delta is directional, not dispositive.'
+      - '[MODERATE] The ear piece openly criticizes the product ("big, chunky, comically large"; the meme as "a silly representation of a real problem") - humor is the delivery vehicle, not uniform praise.'
+      - '[WEAK] Temporal and order skew: both pieces are Sep-2026, but the Audio piece post-dates the Sep-16 Luna editorial that established the register; bounded.'
+      - '[WEAK] Single outlet (Gizmodo) on both arms limits house-style separation; the cross-journalist replications (m211/m743/m269) are carried, not re-tested here.'
+      counterevidence:
+      - 'The ear piece does not suppress criticism: it concedes the bulk meme up front, centers bulk as a real engineering constraint ("miniaturization is hard", "a silly representation of a real problem").'
+      - 'm818 (mechanism 818) already shows Pero gives Meta +0.40 on VR glasses - the entity-selective reading is lane-bounded to social face-worn hardware; no global Meta-hostility claim is made here.'
+      - 'The playful-Snap register replicates (m746 +0.35, m791 Snap arm, #933): the direction is established, so this mechanism contributes the stigma-register lens (anatomy-humor vs "perv" vocabulary), not a new direction.'
+      - 'Real privacy-risk asymmetry: Meta''s camera glasses carry a documented bystander-recording stigma record (m791 Luna editorial cites bans in courts, restaurants, bars, and public spaces); the Audio headline''s "perv problem" frame may track the brand''s accumulated record, not pure editorial selectivity.'
+      - 'House-style alternative (m716): Gizmodo''s house register may be partly adversarial toward Meta; the split may be outlet-flavored, not purely byline-driven.'
+      strongest_counterargument: 'The register difference is fully explained by genre, access, and hardware facts, not entity selectivity: Pero was at Snap''s launch event writing a self-assigned comedy feature about an objectively bulky 132-136g standalone AR computer whose weight literally rests on the ears, while the Audio piece was straight Connect-week launch news about a conventional 43g Meta frame from a brand with a documented bystander-recording stigma record. Anatomy humor is what the Snap peg demands; a stigma headline is what the Meta news peg carried. The +0.30 illustrative delta compares two different assignments, not a controlled entity contrast. m818 further shows Pero rewards Meta hardware (+0.40 on VR glasses) when the category fits. The mechanism documents an intriguing register routing, but the cleanest reading remains genre-and-access-first, not entity-first.'
+      connects_to: [806, 791, 746, 818, 211, 269, 743]
+      novelty: 'FIRST dedicated corpus mechanism on Pero''s Sep-2026 Snap Specs ear-bending comedy piece and on any journalist''s stigma-register routing (anatomy-humor vs "perv" vocabulary). Zero test_type_b_1003 files on disk (glob); no "Type B #1003" in git log (--grep); max numeric mechanism_id 832 in-tree pre-commit; zero numeric 833 mechanism_id keys in profiles/ pre-commit; zero underscore-form 833 mechanism key strings repo-wide pre-commit (needles format-built per #715); block key `type_b_1003_james_pero_gizmodo_snap_specs_earbending_comedy_vs_meta_audio_stigma_sep25` zero-hit repo-wide pre-commit; the 2000812837 URL zero-hit repo-wide pre-commit (grep). NARROWED claim: the article''s headline appeared twice in the m806 research notes (profiles/careers/journalists.yaml and the #958 test file docstring) as a comparator mention ("in corpus via m746, carried") - a reference to the m746 Snap arm (a different article), not a mechanism, test, or score on this piece. All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Candidate selection across this run: pre-compaction sweep ruled out Song Sep-23/24 (covered, m827), Bell Meta/Snap comparisons (m722/764/773), Hector Meta Audio vs Snap (m809), Low (m150), Pero "Dorky Fun" (m746, #933), Pero "Do or Die" (m746, #858), Pero Luna (m791, #933), Pero "Perv" Problem (m806, #958), Pero VR enthusiasm (m818, #978), Ashworth (m830, #998), plus Keach and Engadget alternatives (no clean within-journalist pair); post-compaction re-verification of the Pero VR bound (m818) and the Ashworth genre bound (m830). SELECTED: Pero''s Sep-2026 Snap Specs ear-bending comedy piece, surfaced via search-index listings. 1 browser.open success this run (the canonical Gizmodo article, full first-hand read); 0 browser.open failures. Byline bounded per iteration-492 ("James Pero / Gizmodo" photo credit + first-person voice + author-page listing). Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: tests/test_type_b_1003_james_pero_gizmodo_snap_earbending_comedy_vs_meta_audio_stigma_sep25_10pm.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 1003
+        type: 'B'
+        date: '2026-09-25 22:00 PDT'
 daniel_cooper:
   name: Daniel Cooper
   current_role: Senior Editor
