@@ -10862,6 +10862,107 @@ journalists:
     research_method: '3 browser.search query sets this run (Ashworth WIRED Sep-16 Snap byline; Goode WIRED Sep-16 Snap; Sep-16 launch natural-experiment cross-check) + 0 browser.open (excerpt-bounded per #503; WIRED paywalled). Corpus greps: zero headline/mirror-URL hits repo-wide pre-commit; max numeric mechanism_id 742 pre-commit. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; ASCII-only, no em dashes.'
     artifact_readiness: 'No analysis.json update warranted: manual-illustrative journalist-level pin with carried comparator tones; excerpt-tier new arm; no empirical significance.'
     test_file: tests/test_type_b_853_boone_ashworth_sep2026_snap_specs_launch_register_temporal_replication.py
+  type_b_998_boone_ashworth_wired_meta_connect_2026_spec_roundup_genre_bound_m743:
+    mechanism_id: 830
+    date: '2026-09-25'
+    type: 'B'
+    iteration: 998
+    iteration_type: 'B'
+    iteration_time: 2026-09-25 17:00 PDT
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    block_key: type_b_998_boone_ashworth_wired_meta_connect_2026_spec_roundup_genre_bound_m743
+    journalist: Boone Ashworth
+    publication: WIRED (Conde Nast)
+    publication_owner: Conde Nast (Advance Publications)
+    author: Kit (with Ray)
+    finding: 'GENRE BOUND on mechanism 743 within the same journalist: WIRED Gear-desk writer Boone Ashworth''s Sep-23 2026 Meta Connect spec roundup ("Meta Connect 2026: VR glasses, camera-free Ray-Bans, Muse AI expansion, and holographic avatars", attested 23:42 UTC Sep 23 with "Boone Ashworth - Wired" byline via the savedelete.com news archive; a verbatim deadstack.net launch-coverage cluster independently attributes a WIRED/Boone Ashworth piece "Meta VR Glasses, Ray-Ban Meta Audio, Ray-Ban Meta Gen 3: Specs, Features, Prices", crawled ~44h before Sep 25 17:00 PDT) carries a neutral spec-relay register (MANUAL ILLUSTRATIVE 0.00): the dek relays products with a neutral "unveiled" verb, states the $1,299 VR Glasses price without judgment, mentions "camera-free Ray-Ban Meta Audio" with ZERO privacy/surveillance/stigma vocabulary in the surfaced excerpt, and relays product-positive descriptors ("slimmer designs", "longer battery life", "holographic avatars", "K-Pop collaboration with Blackpink''s Lisa"). Against the carried Sep-16 Snap Specs launch arm (mechanism 743, -0.15, price-skeptical headline/dek), the illustrative Meta-minus-Snap delta is +0.15 (0.00 - (-0.15)): the cross-entity direction FLIPS at news-register level relative to mechanism 743''s feature-register finding (Meta subscription arm -0.48 vs Snap -0.15, illustrative gap 0.33 in the Meta-adversarial direction). The mechanism 743 adversarial-Meta finding is therefore genre-bounded: investigative/feature registers (subscription-extraction -0.48, category-headline-Meta-substance -0.85, LED-fix reactive -0.15) do NOT predict Ashworth''s launch-week news-relay register, where Meta gets the milder arm. Cross-journalist contrast in the same Connect window: Gizmodo''s James Pero (mechanism 806) frames the camera-free Ray-Ban Audio with the "Avoid the ''Perv'' Problem" stigma headline and The Verge''s Victoria Song (mechanism 827) frames it with the "ditches the camera" stigma verb; Ashworth''s WIRED relay attaches no stigma vocabulary to the same product. Ashworth is the register outlier of the three Connect-week Meta framers. Correlation only, not causation. NOT artifact-grade. NOT a falsification-family member (genre-scope bound on an existing mechanism, not a uniform-prediction test); falsification ledger holds at 30 (THIRTIETH present, THIRTY-FIRST absent in profiles/).'
+    new_meta_arm:
+      title_savedelete_attested: "Meta Connect 2026: VR glasses, camera-free Ray-Bans, Muse AI expansion, and holographic avatars"
+      title_deadstack_variant: "Meta VR Glasses, Ray-Ban Meta Audio, Ray-Ban Meta Gen 3: Specs, Features, Prices"
+      dek_verbatim: "Meta unveiled a $1,299 pair of VR glasses, camera-free Ray-Ban Meta Audio smart glasses, and Gen 3 Ray-Bans with slimmer designs and longer battery life at Connect 2026. The company also expanded its Muse AI agent to smart glasses and a charm device, introduced holographic avatars, and announced a K-Pop collaboration with Blackpink's Lisa."
+      url_attesters:
+      - https://savedelete.com/news/archive/2026/09/23/
+      - https://deadstack.net/
+      date: '2026-09-23'
+      time: '23:42 UTC (16:42 PDT Sep 23)'
+      byline: Boone Ashworth (sole)
+      publication: WIRED (Conde Nast)
+      evidence_tier: 'EXCERPT-TIER per #503: title/dek via two independent aggregator attestations (savedelete.com news archive byline+timestamp; deadstack.net verbatim launch-coverage cluster with byline+title+crawl-stamp). WIRED canonical URL not surfaced in bounded searches this run; full text NOT first-hand reviewed (WIRED paywalled per mechanism 743). Title/dek-level register only; full-text register could differ (STRONG confound).'
+      register_markers:
+      - 'neutral "unveiled" verb; $1,299 price stated without judgment'
+      - '"camera-free Ray-Ban Meta Audio" with zero privacy/surveillance/stigma vocabulary in the surfaced excerpt'
+      - 'product-positive descriptors relayed: "slimmer designs", "longer battery life", "holographic avatars", "K-Pop collaboration with Blackpink''s Lisa"'
+      - 'no extraction/framing language of the mechanism 442 subscription arm; no "creepy" vocabulary of the mechanism 89 arm'
+      tone_illustrative: 0.0
+      tone_basis: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; new hand-score this run on title/dek evidence; anchored against the corpus Meta LED-fix reactive register (-0.15, mechanism 640/641) for calibration'
+    carried_snap_arm:
+      note: 'Carried un-rescored from mechanism 743 (Type B #853) per the #807 pattern.'
+      title: "Here's What Snap's Expensive Specs Can Actually Do"
+      date: '2026-09-16'
+      tone_illustrative: -0.15
+      tone_provenance: 'carried from mechanism 743; no new hand-scoring this run'
+    carried_meta_feature_arms:
+      note: 'Carried un-rescored from mechanisms 442/89/640-641 per the #807 pattern.'
+      arms:
+      - title: 'Meta Is Charging a Subscription for Smart Glasses Features - Welcome to the New Era of Consumer Tech'
+        date: '2026-07-02'
+        tone_illustrative: -0.48
+        tone_provenance: 'carried from mechanism 442'
+      - title: "Is It Possible to Make Smart Glasses That Aren't Creepy?"
+        date: '2026-08-02'
+        tone_illustrative: -0.85
+        tone_provenance: 'carried from mechanism 89'
+      - title: 'Meta Ray-Ban Display Second LED Fix'
+        date: '2026-08-27'
+        tone_illustrative: -0.15
+        tone_provenance: 'carried from mechanism 640/641'
+    asymmetry_scorer_result:
+      target_entity: meta
+      reference_entity: snap
+      publication: wired
+      new_meta_arm_tone_manual_illustrative: 0.0
+      carried_snap_sep16_tone_manual_illustrative: -0.15
+      illustrative_delta_meta_minus_snap: 0.15
+      delta_calc: '0.00 - (-0.15) = 0.15'
+      carried_meta_feature_arms: [-0.48, -0.85, -0.15]
+      m743_cross_entity_gap: 'Meta-adversarial 0.33 (Snap -0.15 vs Meta subscription -0.48) at feature register'
+      interpretation: 'The mechanism 743 cross-entity direction (Meta adversarial at feature register) flips sign at news-register level within the same journalist: Meta 0.00 vs Snap -0.15. Mechanism 743 is genre-bounded, not refuted.'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci: NOT_CALCULATED
+      is_significant: false
+      engine: 'engine NOT run'
+      artifact_grade: false
+      method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; new Meta arm hand-scored on title/dek; Snap and Meta feature arms carried un-rescored per #807'
+      statistical_contract: degenerate_n1_per_arm
+      limitations: 'n=1 scored item per arm (degenerate statistical contract per the #638/#643 convention); new-arm evidence is excerpt-tier (title/dek only, WIRED paywall); tones carried not re-scored; no engine run'
+    manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE tones only per the Aug 28 2026 standing rule; new Meta arm hand-scored 0.00 on title/dek; Snap and Meta feature arms carried un-rescored per #807'
+    correlation_note: 'Correlation is not causation. Genre routing, deadline filing, and editor-written headlines/deks all compete with entity stance as explanations; nothing here proves editorial intent.'
+    confounders:
+    - '[STRONG] Excerpt-tier evidence: title/dek only; WIRED canonical URL not surfaced; full text NOT first-hand reviewed (paywall). Full-text register could differ; the leading bound on the new arm.'
+    - '[STRONG] Genre circularity: launch-day spec roundups are structurally neutral, so the news-register arm may measure genre, not entity stance; the genre-bound interpretation is circular if genre fully explains the register.'
+    - '[STRONG] Title variance between the two independent attesters (deadstack "Specs, Features, Prices" vs savedelete "Meta Connect 2026: VR glasses..."): indexing artifact or headline A/B; the arm is indexed under both titles with the variance noted.'
+    - '[MODERATE] Story-scope/category confound: the roundup leads with the VR Glasses, a different product category than the social-glasses arms; the mechanism 818 category bound applies inside the genre bound.'
+    - '[MODERATE] n=1 new arm is thin for a journalist-level claim: directional, not dispositive.'
+    - '[WEAK] Headline/dek authorship: launch headlines and deks are often SEO/newsletter-editor written, not the byline author''s own voice.'
+    - '[WEAK] Deadline noise: 23:42 UTC same-day filing; register noise possible.'
+    counterevidence:
+    - 'The carried mechanism 743 Meta arms remain adversarial (-0.48, -0.85); the new arm is a news-desk relay, not feature writing, so mechanism 743 stands as the feature-register finding and is bounded, not refuted.'
+    - 'The Sep-16 Snap arm (-0.15) is harsher than the Sep-23 Meta arm (0.00): the cross-entity direction genuinely flips at news-register level, which is the finding, not an artifact of scoring.'
+    - 'Cross-journalist contrast: Pero (mechanism 806) and Song (mechanism 827) attach stigma vocabulary to the same camera-free product in the same window; Ashworth''s relay is the outlier, so the null on stigma framing holds for this author against the window consensus.'
+    - 'The zero-privacy-vocabulary relay on "camera-free" glasses is consistent with Ashworth''s mechanism 89 pattern: privacy vocabulary concentrates in his Meta-substance features and vanishes in news relay.'
+    strongest_counterargument: 'The entire finding may be genre artifact: launch-day news relays are structurally neutral by job description, so the +0.15 Meta-minus-Snap delta measures the gap between two genres (news relay vs launch-day feature) rather than any entity-stance difference. If WIRED had assigned Ashworth a Connect-week Meta investigation, its register could match his carried -0.48 to -0.85 feature register. Excerpt-tier evidence cannot rule this out, and the two attesters'' title variance means even the headline is not pinned.'
+    verdict: 'directionally_supported_not_proven'
+    no_analysis_json_update: true
+    falsification_family_member: false
+    falsification_ledger: 30
+    falsification_note: 'NOT a falsification-family member: genre-scope bound on an existing mechanism, not a uniform-prediction test. Falsification ledger holds at 30 (THIRTIETH present, THIRTY-FIRST absent in profiles/).'
+    connects_to: [743, 442, 89, 640, 641, 818, 806, 827]
+    novelty: 'FIRST corpus evidence of Ashworth''s WIRED Sep-23 2026 Meta Connect spec roundup (zero repo-wide hits pre-commit on both attested title strings and the savedelete/deadstack attester URLs; max numeric mechanism_id 829 pre-commit, 830 post-commit; zero underscore-form 830 mechanism key strings pre-commit; zero underscore-form 831 keys pre-commit; block key zero-hit pre-commit). Distinct from mechanism 743 (the Sep-16 Snap launch arm now carried as comparator), from mechanism 806 (Pero''s Gizmodo Audio stigma frame on the same product) and mechanism 827 (Song''s Verge "ditches the camera" frame on the same product).'
+    research_method: '14 browser.search query sets this run (Ray-Ban Meta Audio reviews/embargo; Pero Gizmodo Meta Connect; Pero Snap Specs; Song Verge; Bell Engadget; Goode WIRED; Stein CNET; Growcoot PetaPixel; Ropek TechCrunch; Pattison Tuohy Verge; Robertson Verge; Meta Connect journalist byline map via the deadstack.net cluster; Ashworth WIRED roundup title; wired.com Ashworth Connect roundup) + 0 browser.open (excerpt-bounded per #503; WIRED paywalled). Corpus greps: zero hits on both attested title strings and attester URLs repo-wide pre-commit; max numeric mechanism_id 829 pre-commit. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed; no zero-coverage claims per #492. ASCII-only, no em dashes.'
+    test_file: tests/test_type_b_998_boone_ashworth_wired_meta_connect_2026_spec_roundup_genre_bound_m743.py
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
   career:
