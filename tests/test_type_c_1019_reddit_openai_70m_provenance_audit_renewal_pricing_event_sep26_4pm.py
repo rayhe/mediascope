@@ -135,11 +135,16 @@ class TestNovelty1019:
         assert "Reddit" in novelty
 
     def test_zero_underscore_or_dash_843_keys_pre_commit(self):
-        r = run_git("grep", "-E", "mechanism_843|mechanism-843", "--",
+        # Needle built by concatenation so this file's own source never
+        # contains the literal (else git grep self-matches post-commit).
+        # Underscore/dash 843 key forms must never exist; the numeric
+        # mechanism_id: 843 is legitimately claimed by this run's block.
+        needle = "mechanism" + "_843|mechanism" + "-843"
+        r = run_git("grep", "-E", needle, "--",
                     "profiles/", "tests/", "docs/", "iteration-log.md")
-        assert r.returncode != 0
-        assert "mechanism_843" not in r.stdout
-        assert "mechanism-843" not in r.stdout
+        hits = [line for line in r.stdout.splitlines()
+                if "test_zero_underscore_or_dash_843_keys_pre_commit" not in line]
+        assert hits == []
 
     def test_thestochasticparrot_zero_hit_repo_wide_pre_commit(self):
         # The core audit source must be novel; post-append it appears exactly
@@ -181,8 +186,18 @@ class TestRotationGuard1019:
 
     @pytest.mark.rotation
     def test_no_concurrent_type_c_1019_by_commit_time(self):
-        r = run_git("log", "--oneline", "--grep", "Type C #1019")
-        assert "Type C #1019" not in r.stdout
+        # Own commits (touching this test file) are excluded per the #1018
+        # convention: the guard is about a racing iteration, not this run.
+        r = run_git("log", "--format=%H %s", "--grep", "Type C #1019")
+        matches = [line for line in r.stdout.splitlines() if line.strip()]
+        own = run_git(
+            "log", "--format=%H", "--", "tests/" + THIS_FILE
+        ).stdout.split()
+        competing = [
+            line for line in matches
+            if line.split()[0] not in own
+        ]
+        assert competing == []
 
 
 # ---------------------------------------------------------------------------
