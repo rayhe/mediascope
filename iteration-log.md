@@ -32,7 +32,7 @@ Manual ILLUSTRATIVE-ONLY per the Aug 28 2026 standing rule: tone scores MANUAL I
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked test file), and the #1012 working-tree block-key-fix edit all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit 55e3067be6dadab3f2b11e37fb3053d50e60c1f6 (verified via git rev-parse); anchor followup 4fcea1834c62bebcb8fca795a5d1aae7486ac493 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch); log-hash followup registers both hashes here per #721.
-- Push status: pending.
+- Push status: PUSHED per #716 (a7cf2604..b802e7b4); pushed main 55e3067be6dadab3f2b11e37fb3053d50e60c1f6 + anchor 4fcea1834c62bebcb8fca795a5d1aae7486ac493 + log-hash b802e7b417f64231d85d5c2dcd2c70f37c53e2d8; remote tip b802e7b417f64231d85d5c2dcd2c70f37c53e2d8 verified equal to local via git ls-remote Sep 26 2026 15:20 PDT.
 
 ## #1017 Type A: Verge x Microsoft Sep-4 copyright-defense headline register vs Verge x Meta Sep-23 Connect backlash framing (PCM licensing gradient) - register-selection finding, NOT uniform softness - Type A THIRD leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 14:00 PDT; main commit 97df5870a4fc675eeb7ef97e55efbe0634ff5097 / anchor 3d8c8155fc81536924591a84ebe8eb682ab4dca2; log-hash followup registers both hashes here per #721 (this commit: 97df5870 / 3d8c8155))
 
