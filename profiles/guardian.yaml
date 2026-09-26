@@ -2568,6 +2568,117 @@ competitor_relationships:
       research_method: "search_result_attribution_bounded_sep09: five search passes (domain-style, exact-title, journalist profile, mirror), all URLs copied verbatim from surfaced results; zero-coverage claims per iteration-492 avoided; theguardian.com direct fetch policy-blocked (attributed mirrors used). MANUAL ILLUSTRATIVE tones only (Aug 28 standing rule)."
       finding: "FIRST dedicated Type A under guardian.yaml competitor_relationships.apple. Zero-financial-gradient CONTROL: Guardian Meta arm adversarial (-0.60) vs Apple arm aspirational (+0.225 avg), illustrative delta -0.825 meta-minus-apple, NOT significant. Strong confounders (incident news value, genre, form factor, timing) fully account for the gap; no financial attribution. NOT a falsification-family member (no deal on either side, so the incentive theory predicts nothing); the mechanism separates incident-driven news value from financial incentive as explanations."
       coverage_prediction_stands: "neutral"
+    type_a_1002_guardian_apple_ambient_listening_sep2026_bounded_silence_vs_meta_police_memo_connect_stigma_register_sep25_2026:
+      mechanism_id: 832
+      mechanism_name: "Guardian x Apple Sep-2026 ambient-listening bounded silence vs Meta police-memo investigation + Connect stigma register - zero-financial-gradient control replication"
+      iteration: 1002
+      iteration_type: "A"
+      iteration_time: "2026-09-25 21:00 PDT"
+      date: "2026-09-25"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "The Guardian"
+      publication_pair: "Guardian x Apple"
+      competitor: "apple"
+      financial_channel: "$0 both sides"
+      type: "Type A - Competitor Coverage Deep Dive"
+      summary: "FIRST corpus mechanism documenting the Sep-2026 Guardian coverage-SELECTION asymmetry in the wearables event window. Meta side: (1) a Sep-8 FOIA-driven investigative piece, 'internal documents reviewed by The Guardian,' framing Ray-Ban Meta glasses as a covert-recording security threat (NYPD counterterrorism memo, DHS/fusion-center memos, ICE ban), and (2) a Sep-24 Connect piece by its own consumer-technology editor Samuel Gibbs keeping the 'perv glasses'/'spy glasses' stigma register on the camera-free Ray-Ban Meta Audio. Apple side: bounded silence - zero Guardian UK authored pieces on Apple's Sep-9 always-listening Audio Intelligence (Siri Recap all-day ambient conversation summaries; Live Rewind 15-second conversation buffer) across 6 search query sets. Temporal replication of the m607 zero-financial-gradient control, now on coverage SELECTION rather than review register."
+      articles_meta:
+      - title: "Police Across US Sound Alarm Over Meta Smart Glasses as Covert Recording Threat"
+        date: "2026-09-08"
+        register: "adversarial_surveillance_investigation"
+        framing: "FOIA-driven investigation: a dozen previously unreported law-enforcement memos (NYPD counterterrorism January memo, DHS joint counterterrorism assessment, fusion centers in NY/VA/TN/San Diego, ICE August ban) reclassify Meta's camera glasses as a security and counterintelligence threat; South Carolina detention-center TikTok video as the case study; 'small blinking light' safeguard framed as trivially missable. Zero product upside granted."
+        manual_illustrative_tone: -0.75
+        tone_note: "Investigative register; the state apparatus reclassifying a consumer product as a surveillance device pointed back at it."
+        url: "https://enmnews.com/2026/09/08/police-across-us-sound-alarm-over-meta-smart-glasses-covert-recording-threat"
+        evidence_tier: "mirror_attribution_bounded"
+        attribution_note: "Relay of the Guardian original; attribution carried on the relay text ('internal documents reviewed by The Guardian') and corroborated by ainvest ('published by the Guardian on September 8'), genztech ('The Guardian publishes the FOIA'd memos'), petapixel ('The Guardian reports'), brieftea ('Reported by Guardian'). theguardian.com direct fetch policy-blocked this run; the original theguardian.com URL was NOT recovered verbatim and NOT constructed."
+      - title: "Meta debuts no-camera smart glasses and virtual reality spectacles"
+        author: "Samuel Gibbs"
+        date: "2026-09-24"
+        register: "product_relay_with_privacy_stigma_context"
+        framing: "Connect 2026 product relay (Ray-Ban Meta Audio camera-free, Gen 3, VR glasses) carrying the stigma paragraph: 'The new wearables come at a time of uncertainty for the smart glasses category, which is broadly facing a backlash from sceptics and privacy campaigners around their ability to record video, frequently being dubbed perv glasses or spy glasses.' The stigma noun follows the camera-free product into the copy."
+        manual_illustrative_tone: -0.20
+        tone_note: "Relay register, but the stigma frame ('perv glasses'/'spy glasses') is applied to a product with no camera."
+        url: "https://globalcommunityweekly.substack.com/p/meta-debuts-no-camera-smart-glasses"
+        evidence_tier: "mirror_attribution_bounded"
+        attribution_note: "Substack relay of the Guardian piece; byline 'Samuel Gibbs Consumer technology editor' and dateline 'Thu 24 Sep 2026 01.00 BST' carried in the relay. theguardian.com direct fetch policy-blocked; original URL not recovered verbatim."
+      - title: "US Police Warn Meta Smart Glasses Could Be a Security Threat"
+        date: "2026-09-09"
+        register: "in_corpus_corroboration"
+        framing: "In-corpus corroboration of the Sep-8 Guardian investigation (7 pre-commit corpus hits); carried as context, not a new arm."
+        manual_illustrative_tone: -0.75
+        tone_note: "Carried context only."
+        url: "https://petapixel.com/2026/09/09/us-police-warn-meta-smart-glasses-could-be-a-security-threat/"
+        evidence_tier: "in_corpus"
+      apple_side_bounded_absence:
+        claim: "ZERO Guardian UK authored pieces on Apple's Sep-9-24 always-listening Audio Intelligence wearables surfaced across 5 Apple-angled search query sets (Sep 25 2026; 3 further Meta-angled sets corroborated the Meta arms)."
+        query_sets:
+        - "Guardian Apple ambient listening privacy wearables September 2026 (7 results: jweasytech, industryodisha, careeraheadonline, techspot, medianama, aiweekly, iphoneincanada - zero Guardian)"
+        - "The Guardian Apple Watch Series 12 review Samuel Gibbs September 2026 (6 results: me.sh profile, newslocker relay, yuyaching pdf, prosyscom, memeorandum, muckrack - zero Guardian-authored review)"
+        - "Guardian Apple Watch ambient listening Audio Intelligence privacy September 2026 Gibbs (7 results: techspot, aiweekly, gotechtor, tidbits, ibtimes, newsgab, ladbible - zero Guardian)"
+        - "Apple Watch Series 12 review Readiness Score Guardian September 2026 (8 results: memeburn, neoteo, canadian-reviews, techiemag, onlinetechguru, 9to5mac, technewsvision, appleshop - zero Guardian)"
+        - "theguardian.com Apple Watch Audio Intelligence ambient listening privacy (6 results: gotechtor, gadgethacks x2, aiweekly, ibtimes, andreafortuna - zero Guardian)"
+        meta_angled_corroboration_sets:
+        - "theguardian.com Meta Connect 2026 Ray-Ban smart glasses September (7 results: dig.watch, analyticsinsight, usatoday, letsdatascience, techgig, hiconsumption, arvrtips - zero Guardian)"
+        - "Guardian Meta smart glasses Ray-Ban September 2026 privacy (7 results incl. Guardian-attributed Meta pieces, zero Guardian Apple pieces)"
+        - "Guardian police Meta smart glasses covert recording September 8 2026 NYPD memo (corroborated the Sep-8 investigation relay)"
+        event_context: "Apple's Sep-9-2026 Audio Intelligence: Siri Recap listens ambiently all day and generates summaries of conversations (bystander speech included, opt-in by the wearer only); Live Rewind holds a rolling 15-second audio buffer transcribable on demand; Apple briefed WIRED with an 11-page privacy paper (Secure Exclave, no stored recordings). The bystander-consent affordance parallels the Meta glasses controversy, but drew no Guardian privacy-pressure coverage in the bounded sets."
+        absence_bound: "Search-index-bounded only, excerpt-bounded per #503 with 0 browser.open; stated as bounded silence, not proof of non-publication. Mirrors the iPhone Duo no-Guardian-arms finding carried in the corpus."
+      manual_illustrative_tones_meta: [-0.75, -0.20]
+      manual_illustrative_tones_note: "MANUAL ILLUSTRATIVE tones only per the Aug 28 2026 standing rule. Apple side carries no scorable arm (bounded absence); no Apple tone is assigned or imputed."
+      asymmetry_scorer_result:
+        target_entity: "apple"
+        reference_entity: "meta"
+        publication: "the-guardian"
+        target_avg: "NOT_SCORED_BOUNDED_ABSENCE"
+        meta_avg: -0.475
+        delta_target_minus_meta: "NOT_COMPUTED_SELECTION_ASYMMETRY"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci: "NOT_CALCULATED"
+        is_significant: false
+        artifact_grade: false
+        interpretation: "The finding is a coverage-SELECTION asymmetry, not a tone-magnitude delta: 2 Guardian Meta arms (avg -0.475 illustrative) vs 0 Guardian Apple arms on the same bystander-consent affordance in the Sep-2026 window. No magnitude delta is computed because the Apple arm is absent by bounded observation; imputing a tone would manufacture data."
+        limitations: "Excerpt-bounded (0 browser.open per #503); theguardian.com policy-blocked so all Meta arms are mirror-attributed; absence is search-index-bounded; Meta arms differ in genre (investigation vs product relay); no causal claim."
+      p_value: "NOT_CALCULATED"
+      cohens_d: "NOT_CALCULATED"
+      is_significant: false
+      financial_context: "Guardian has no known direct financial relationship with Apple (financial_tie none, $0) and no direct Meta deal. The selection gap therefore runs WITHOUT a financial gradient; money cannot explain it. Same zero-gradient geometry as m607, now replicated on coverage selection. Contrast sharpened by the Guardian OpenAI licensing deal (Feb 2025, m537): the paid entity gets incident-register coverage while the two unpaid entities split between surveillance-investigation (Meta) and bounded silence (Apple)."
+      confounders:
+      - "STRONG: Incident-driven news value - a dozen FOIA'd federal/local law-enforcement memos reclassifying a consumer product as a surveillance device is a document-backed investigative scoop; Apple's privacy paper is a company-briefed technical disclosure with no incident peg."
+      - "STRONG: Product-form skew - discreet everyday glasses with outward cameras vs wrist-worn watch; the covert-recording affordance of glasses is materially more newsworthy than a watch microphone."
+      - "STRONG: News-peg asymmetry - Apple's Audio Intelligence launched Sep 9 with privacy architecture as part of the pitch (white paper, WIRED briefing); Meta's Connect landed Sep 23-24 with the stigma already established; different newsroom decision points."
+      - "MODERATE: Desk split - the Sep-8 police-memo piece is US-law-enforcement news; Apple event coverage may sit with the UK consumer desk on a different cycle."
+      - "MODERATE: Excerpt-bounded per #503 with 0 browser.open; the absence claim is search-index-bounded, not proof of non-publication."
+      - "WEAK: Timing - the Gibbs Connect piece is 1 day old at run time; a Guardian Apple Audio Intelligence privacy piece could still be in the pipeline."
+      counterevidence:
+      - "Apple's privacy architecture is genuinely stronger on paper (Secure Exclave, no stored recordings, opt-in, bystander chime for Live Rewind); a good-faith privacy desk could reasonably find less to investigate."
+      - "The Sep-8 Guardian piece is event-driven, not entity-driven: Meta is the subject of the FOIA'd documents, which is a legitimate investigative peg independent of editorial posture toward Meta."
+      - "Gibbs's Sep-24 piece is predominantly a product relay (VR glasses, Gen 3, Audio specs); the stigma framing is one context paragraph, not the piece's governing register."
+      - "The Guardian holds no Apple commercial deal either, so the incentive theory predicts nothing on the Apple side; the silence is consistent with the neutral prediction, not a violation of it."
+      strongest_counterargument: "The selection gap is fully explained by news value and product affordance without any entity-level bias: FOIA'd federal memos reclassifying a consumer product as a surveillance device are an investigative desk's dream scoop, while a company-briefed privacy white paper with a hardware enclave is a thin peg for adversarial coverage. Gibbs relaying Meta's product news with stigma context is beat-consistent, and a symmetric test requires a Guardian-authored Apple privacy investigation that the search index simply may not have surfaced yet (excerpt-bounded, 0 browser.open). The Guardian's zero-deal posture toward both Apple and Meta means the incentive theory is silent here; this mechanism is a control replication, and controls that replicate add confidence to the m607 geometry rather than new evidence of bias. Correlation only."
+      research_method: "8 browser.search query sets Sep 25 2026 PDT (5 Apple-angled: Guardian Apple ambient listening; Guardian Apple Watch Series 12 Gibbs review; Guardian Apple Watch Audio Intelligence Gibbs; Apple Watch Series 12 Readiness Score Guardian; theguardian.com Apple Watch Audio Intelligence. 3 Meta-angled corroboration: theguardian.com Meta Connect Ray-Ban; Guardian Meta smart glasses privacy; Guardian police Meta smart glasses NYPD memo). 0 browser.open this run (excerpt-bounded per #503; theguardian.com policy-blocked, mirror-attributed only). Pre-commit novelty greps: the 4 new URLs zero-hit repo-wide via git grep -F; max numeric mechanism_id 831 pre-insertion; zero numeric 832 keys; zero 833 keys in all three mechanism forms post-commit; block key unique at indent 4 under competitor_relationships/apple; no mechanism_832 or mechanism-832 literals anywhere (needles format-built). All URLs verbatim from Full-URL listings; no theguardian.com canonical URLs constructed. ASCII-only, no em dashes."
+      novelty: "FIRST corpus mechanism on the Sep-2026 Guardian Apple ambient-listening coverage-selection asymmetry: bounded Apple silence vs Meta police-memo investigation + Connect stigma register. Temporal replication of the m607 zero-financial-gradient control (Sep-9 review-register gap) in the Sep-2026 event window, now on coverage SELECTION rather than review register. Distinct from m607 (2024 Vision Pro reviews vs Aug-2026 pervert-glasses opinion), from m826 (Verge Apple ambient-listening arms, different publication), and from the carried m537/m687/m760 Guardian-OpenAI licensing strand. Four new URL keys: enmnews Sep-8 relay, ainvest exhibit, genztech timeline, globalcommunityweekly Gibbs relay."
+      source_urls:
+      - https://enmnews.com/2026/09/08/police-across-us-sound-alarm-over-meta-smart-glasses-covert-recording-threat
+      - https://www.ainvest.com/news/exhibit-memos-renamed-meta-glasses-surveillance-device-2609/
+      - https://genztech.blog/p/nypd-dhs-memos-meta-ray-ban-glasses-security-threat/
+      - https://globalcommunityweekly.substack.com/p/meta-debuts-no-camera-smart-glasses
+      carried_source_urls:
+      - https://petapixel.com/2026/09/09/us-police-warn-meta-smart-glasses-could-be-a-security-threat/
+      - http://richardhartley.com/2024/08/vision-pro-review-apples-cutting-edge-headset-lives-up-to-the-hype/
+      - https://www.theguardian.com/technology/2024/jan/30/apple-vision-pro-reviews-roundup-stunning-potential-with-big-trade-offs
+      - https://www.youtube.com/shorts/Cb8gV-uNBnM
+      finding: "REPLICATES m607 in the Sep-2026 event window on a new axis. m607 (Sep 9) found a review-register gap: Guardian Apple arms aspirational (+0.225 avg) vs Meta arm adversarial (-0.60), delta -0.825 meta-minus-apple, zero financial gradient. This mechanism finds a coverage-SELECTION gap in the same pair with the same zero gradient: Meta draws a FOIA-driven surveillance investigation (Sep 8, -0.75 illustrative) plus its own consumer-tech editor keeping the perv-glasses stigma on the camera-free Audio (Sep 24, -0.20 illustrative), while Apple's always-listening Audio Intelligence (Siri Recap all-day conversation summaries of bystander speech; Live Rewind 15-second buffer) draws bounded Guardian silence across 6 query sets. The selection asymmetry is the finding; no magnitude delta is computed (Apple arm NOT_SCORED, delta NOT_COMPUTED). Register SELECTION claim, not tone magnitude: Meta's wearables get the surveillance register; Apple's equivalent bystander-consent affordance gets no Guardian privacy-pressure coverage. NOT a falsification-family member (zero deals both sides; the incentive theory predicts nothing). Correlation only; hypothesis-generating."
+      verdict: "directionally_supported_not_proven"
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 30
+      falsification_note: "Not a falsification-family member; ledger holds at 30. Zero-financial-gradient control replication: no deal on either side, so the incentive theory makes no prediction here."
+      connects_to: [607, 537, 826, 830, 827]
+      coverage_prediction_stands: "neutral"
   google:
     financial_tie: "mixed"
     estimated_value: "undisclosed"
