@@ -1,4 +1,4 @@
-## #1019 Type C: Reddit $70M OpenAI-figure provenance audit - press arithmetic reconstructed by subtraction (uncertified), filed-number inventory, Jul-2026 Google renewal as the live pricing event - Type C FIFTH and CLOSING leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 16:00 PDT; main commit TBD_MAIN_SHA_1019 / anchor TBD_ANCHOR_SHA_1019; log-hash followup registers both hashes here per #721 (this commit: TBD_SHORT_MAIN / TBD_SHORT_ANCHOR))
+## #1019 Type C: Reddit $70M OpenAI-figure provenance audit - press arithmetic reconstructed by subtraction (uncertified), filed-number inventory, Jul-2026 Google renewal as the live pricing event - Type C FIFTH and CLOSING leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 16:00 PDT; main commit 7f8e944d41885d045f20a26c09b7f4af681cc5f0 / anchor 06010ae13c95342997f68c38877823be5983c823; log-hash followup registers both hashes here per #721 (this commit: 7f8e944d / 06010ae1))
 
 2026-09-26 16:00 PDT, iteration_type "C", **FIFTH leg of the 1015-1019 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard), **CLOSING the window**; next window 1020-1024 opens at #1020 Type D.
 
@@ -29,7 +29,7 @@ Qualitative financial mapping per the Aug 28 2026 standing rule: tone_scores NOT
 ### Concurrency
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked test file), and the #1012 working-tree block-key-fix edit all in-flight and untouched by this run's staging and commits (verified via git status --porcelain pre-commit and post-push).
 
-- Commit hashes: main commit TBD_MAIN_SHA_1019 (verified via git rev-parse); anchor followup TBD_ANCHOR_SHA_1019 (ANCHOR_SHA patched in test file); log-hash followup TBD_LOG_SHA_1019
+- Commit hashes: main commit 7f8e944d41885d045f20a26c09b7f4af681cc5f0 (verified via git rev-parse); anchor followup 06010ae13c95342997f68c38877823be5983c823 (ANCHORED_SHA patched per #565, anchor + rotation guard green post-patch)
 - Push status: PENDING per #716 (to be filled post-push)
 ## #1018 Type B: Sean Keach (The Sun) cross-medium register control - Meta Sep-2026 VR Glasses print hands-on enthusiasm (+0.40) vs Apple 2024 Vision Pro print review (+0.35), illustrative delta +0.05 NULL genre-matched; within-writer medium split vs carried TalkTV broadcast alarm on Meta (-0.70, -1.10 split); resolves #978/#983 Keach rejections; #182 News Corp financial paradox carried (mechanism 842) - Type B FOURTH leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 15:00 PDT; main commit 55e3067be6dadab3f2b11e37fb3053d50e60c1f6 / anchor 4fcea1834c62bebcb8fca795a5d1aae7486ac493; log-hash followup registers both hashes here per #721 (this commit: 55e3067b / 4fcea183))
 
