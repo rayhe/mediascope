@@ -1,4 +1,4 @@
-## #1014 Type C: Stack Overflow dual-AI-payer architecture - OverflowAPI legs with Google Cloud (Feb 29 2024) and OpenAI (May 6 2024) (mechanism 840; FIRST developer-knowledge dual-payer publisher in the corpus; both legs undisclosed-fee, unweightable per m735; Meta $0 bounded absence; connects_to [594, 621, 696, 735]; verdict directionally_supported_not_proven) - Type C FIFTH and CLOSING leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 09:00 PDT; main commit <filled-by-log-hash-followup> / anchor <filled-by-log-hash-followup>; log-hash followup registers both hashes here per #721 (this commit))
+## #1014 Type C: Stack Overflow dual-AI-payer architecture - OverflowAPI legs with Google Cloud (Feb 29 2024) and OpenAI (May 6 2024) (mechanism 840; FIRST developer-knowledge dual-payer publisher in the corpus; both legs undisclosed-fee, unweightable per m735; Meta $0 bounded absence; connects_to [594, 621, 696, 735]; verdict directionally_supported_not_proven) - Type C FIFTH and CLOSING leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 09:00 PDT; main commit 2362c57410284fde6698e2a9f6abd33d227c28b0 / anchor 217dc00cdacdd6a4a5ecae07ea3a2de1a4a2a18; log-hash followup registers both hashes here per #721 (this commit: 2362c574 / 217dc00c))
 
 2026-09-26 09:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1010-1014 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -24,6 +24,9 @@ Qualitative-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/coh
 
 ### Concurrency
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked test) all in-flight and untouched - targeted staging of the #1014 set only.
+
+- Commit hashes: main commit 2362c57410284fde6698e2a9f6abd33d227c28b0 (verified via git rev-parse); anchor followup 217dc00cdacdd6a4a5ecae07ea3a2de1a4a2a18 (ANCHORED_SHA patched per #565, anchor + rotation guard 4/4 green post-patch; 45/52 green pre-commit with 2 designed post-commit gates: anchor-unpatched pre-commit assertion, staged-set pre-commit gate; post-followup 49/52 green, the third failure being the no_concurrent grep matching this iteration's own log-hash followup commit, the same standing artifact confirmed in #1013's file, zero real concurrency); log-hash followup registers both hashes here per #721.
+- Push status: PENDING push per #716 (log-hash followup commit; push follows).
 
 ## #1013 Type B: Samuel Gibbs (Guardian) Meta-register temporal shift - Sep-24 2026 Connect stigma relay vs Sep-17 2025 launch-announcement baseline vs carried Apple Vision Pro aspirational review (mechanism 839; within-writer Meta register deteriorates 0.30 over 12 months with NEWS genre held constant, isolating the scandal-saturated Connect-2026 peg from the m611 genre confound; illustrative Meta-minus-Apple delta -0.55, NOT significant; zero-financial-gradient control at the journalist level) - Type B FOURTH leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 08:00 PDT; main commit a11199707577599ea5410e26f3a788d58dbc01e4 / anchor 2fc529f6596ff6d8344f0a62755715db6329226e; log-hash followup registers both hashes here per #721 (this commit))
 
