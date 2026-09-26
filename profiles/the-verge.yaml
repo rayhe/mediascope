@@ -4104,6 +4104,101 @@ competitor_relationships:
         - "No prior Type A pairs The Verge with Microsoft; nearest are mechanism #6 (Patel delegation, EIC level) and the Decoder/Suleyman Jun 2026 example"
         - "Mechanism #149 covers Google-Warby Parker equity, not Microsoft PCM; mechanism #224 covers Snap dual-AI partners, not Verge beat structure"
         - "Novel elements: Aug 2026 Copilot retrenchment event, 'earn the right to exist' memo, data-wipe severity marker, Warren dedicated-beat access structure as amplifier distinct from PCM deal"
+    type_a_1017_verge_microsoft_sep2026_copyright_defense_headline_register_vs_meta_connect_backlash_framing_pcm_licensing_gradient:
+      mechanism_id: 841
+      iteration: 1017
+      iteration_type: "A"
+      iteration_time: "2026-09-26 14:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      window: "1015-1019"
+      window_leg: "THIRD leg of the 1015-1019 window (D #1015 -> E #1016 -> A #1017 this run -> B #1018 -> C #1019)"
+      rotation_transparency: "1015-1019 window third leg: D (#1015) -> E (#1016) -> A (#1017, this run) -> B (#1018) -> C (#1019); the 1010-1014 window verified closed as a consecutive newest-first sequence in git history (D #1010, E #1011, A #1012, B #1013, C #1014); novelty anchor patched in the followup per the #565 convention."
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-09-26'
+      time_pdt: '14:00'
+      publication: "The Verge"
+      publication_pair: "Verge x Microsoft"
+      competitor: microsoft
+      comparator_entity: meta
+      key_design_note: "Descriptive block key per the #723/#738 convention: carries no underscore- or dash-form mechanism number, so the zero-next-number profile sweeps stay green. The mechanism number appears only as 'mechanism_id: 841' in colon form and as spaced prose in strings (never as a contiguous mechanism-form literal)."
+      title: "Verge x Microsoft Sep-4 Copyright-Defense Headline Register vs Verge x Meta Sep-23 Connect Backlash Framing (PCM Licensing Gradient)"
+      finding: >
+        NEW Type A mechanism (mechanism 841): in the Sep 4-25 2026 window The Verge's Microsoft coverage carried a defense-forward register while its Meta Connect coverage (Sep 23-24) was framed against a broader public backlash over wearable surveillance devices. Microsoft arm PRIMARY (NEW this run): Sep 4 2026 "Microsoft says virtually nobody was grabbing NYT articles through its chatbot" (theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit, verbatim URL, novel to corpus): the headline relays Microsoft's court-filing exculpatory claim ("virtually nobody was grabbing") in the NYT/authors copyright suit - the plaintiffs include The New York Times, a fellow publisher - while Microsoft is The Verge's parent's PCM licensing partner; MANUAL ILLUSTRATIVE +0.25. Microsoft arm SUPPORTING (NEW, secondary-attested): Tom Warren's Sep 25 2026 Copilot "super app" launch piece (no verbatim theverge.com URL in results; 6 independent attributions: biztoc techmeme archive Sep-25 12:24 UTC, digitaltoday.co.kr, alextech.ai, dailyaiblog.com, directionsonmicrosoft.com, particle.news), product-launch register; MANUAL ILLUSTRATIVE +0.20. Meta arm PRIMARY (NEW this run): The Verge's Sep 23-24 Connect coverage - the Muse Charm piece (theverge.com/tech/999750/muse-charm-meta-ai-hardware, verbatim URL, novel) plus secondary attestation that The Verge "framed the launch against a broader public backlash over wearable surveillance devices" (letsdatascience.com); MANUAL ILLUSTRATIVE -0.30. Illustrative delta (Microsoft minus Meta) +0.55 on a degenerate n=1 vs n=1 primary pair, NOT significant. This is a register-selection finding, NOT a uniform-softness finding: the Sep-4 headline's "Microsoft says" attribution is standard journalistic practice, and the piece covers a filing whose claim IS the news.
+      microsoft_arm_primary:
+        title: "Microsoft says virtually nobody was grabbing NYT articles through its chatbot"
+        publication: "The Verge"
+        date: "2026-09-04"
+        url: "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit"
+        attestation: "excerpt-bounded this run (0 browser.open per the #503 convention): search-result excerpt carries the lede ('Microsoft's Copilot rarely reproduces even full sentences from news articles and books, let alone substantive chunks that could substitute for the original, the company says in new legal filings as it fights copyright claims from publishers including The New York Times and book authors') and the headline verbatim."
+        tone_manual_illustrative: 0.25
+        register: "defense-forward headline: Microsoft's court-filing exculpatory claim ('virtually nobody was grabbing') leads the headline in the NYT/authors copyright suit"
+        novelty_in_corpus: "first appearance; URL zero-hit repo-wide pre-commit"
+      microsoft_arm_supporting:
+        title: "Microsoft launches its Copilot 'super app', bundling chat, coding, and agents into a single interface, and rebrands its AI assistant Scout as Autopilot"
+        author: "Tom Warren"
+        publication: "The Verge"
+        date: "2026-09-25"
+        url: "secondary-attested only; no verbatim theverge.com URL in this run's result sets"
+        attestation: "6 independent secondary attributions this run (biztoc.com techmeme archive Sep-25 12:24 UTC; digitaltoday.co.kr 'A report by The Verge on Sept. 25 said...'; alextech.ai 'as reported by Tom's Hardware and The Verge'; dailyaiblog.com 'Sources: ... The Verge - Microsoft's Copilot super app'; directionsonmicrosoft.com; particle.news). Supporting arm only; not URL-novelty-counted."
+        tone_manual_illustrative: 0.20
+        register: "product-launch news: Home/Code/Autopilot pillars, usage-based pricing, Frontier rollout"
+      meta_arm_primary:
+        title: "The Verge Meta Connect 2026 coverage (Muse Charm piece + launch framing)"
+        publication: "The Verge"
+        date: "2026-09-23"
+        url: "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware"
+        attestation: "verbatim Verge URL novel to corpus (Muse Charm piece); Connect launch framing secondary-attested via letsdatascience.com ('The Verge reports that Ray-Ban Meta Audio has no camera... The publication framed the launch against a broader public backlash over wearable surveillance devices') and itechpost.com ('According to The Verge, the new glasses also bring longer battery life and updated frame designs'). 0 browser.open per #503."
+        tone_manual_illustrative: -0.30
+        register: "backlash-framed product news: camera-free Audio launch contextualized against wearable-surveillance backlash"
+        novelty_in_corpus: "first appearance; Verge URL zero-hit repo-wide pre-commit"
+      illustrative_delta: 0.55
+      delta_direction: "Microsoft minus Meta"
+      finding_layer: "MANUAL ILLUSTRATIVE"
+      statistical_discipline: >
+        MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. Primary arms n=1 vs n=1; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False; engine NOT run at the finding layer; documents the analyst's reading for reproducibility and challenge. Verdict directionally_supported_not_proven. Correlation is not causation. Hypothesis-generating only. No analysis.json update warranted (NOT artifact-grade).
+      verdict: "directionally_supported_not_proven"
+      no_analysis_json_update: true
+      financial_context:
+        microsoft_tie: "PCM licensing (carried from the-verge.yaml microsoft section): Vox Media (The Verge's parent, now PMC) is a co-design partner and pilot publisher in Microsoft's Publisher Content Marketplace, launched Feb 2026; PCM licenses editorial content for grounding AI summaries in Microsoft Copilot; direction receiving, usage-based, terms undisclosed; coverage_prediction 'softer'"
+        meta_tie: "Meta $0; NOT a PCM participant (carried from the-verge.yaml microsoft section)"
+        customer_dependency_note: "PMC enterprise agreement with Microsoft Azure for OpenAI services; revenue flows PMC TO Microsoft (carried from mechanism 461's triangulation)"
+        nexus_shape: "one-sided licensing gradient on the publisher-receiving side (Microsoft PCM vs Meta $0), with a reverse customer-dependency leg (PMC pays Microsoft for Azure) bounding any simple capture narrative"
+        prediction_status: "carried coverage_prediction 'softer' is MET this window only in the register-selection sense (defense-forward Microsoft register vs backlash-framed Meta register), NOT as uniform softness; the Sep-4 headline attribution is standard practice and the Sep-7 suit coverage (counterevidence) shows the shield is not uniform"
+      confounders:
+        strong:
+          - "genre/peg mismatch: copyright-defense legal coverage (the filing's claim IS the news) vs product-launch coverage; register follows the peg per the m637 pattern family, so the gap may be fully peg-driven"
+          - "attribution-headline standard practice: 'Microsoft says' headlines are routine journalistic attribution; the defense-forward reading may over-read a neutral attribution headline"
+          - "excerpt/attestation-bounded evidence: 0 browser.open this run per the #503 convention; the Meta-arm backlash framing is secondary-attested (letsdatascience), not read in the Verge original; the Sep-25 super-app arm has no verbatim Verge URL"
+        moderate:
+          - "the Sep-4 exculpatory claim is the news event (Microsoft's legal filing); relaying it in the headline is beat-consistent, not necessarily gradient-driven"
+          - "19-20 day timing skew between primary arms (Sep 4 vs Sep 23-24); news cycles differ"
+          - "degenerate sample (n=1 NEW primary arm per side); the claim does not ride a prior Verge x Microsoft lineage the way m838 rode m817"
+        weak:
+          - "writer-level rather than institutional register cannot be isolated; Sep-4 byline unattributed in the excerpt"
+          - "Meta-side illustrative score (-0.30) is analyst-assigned this run on secondary attestation; a first-hand read could move it"
+      counterevidence:
+        - "Sep 7 2026 Verge piece 'Seattle Times and Newsday sue OpenAI and Microsoft' (theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft, verbatim URL, novel): The Verge covers publisher copyright suits naming its PCM licensing partner Microsoft as defendant - the shield is not uniform"
+        - "mechanism 502 (WIRED x Microsoft PCM adversarial boundary condition): PCM licensing ties do not uniformly soften coverage across publications"
+        - "mechanism 598 (Verge x OpenAI wiki-incident adversarial register under the Vox/OpenAI deal): The Verge has run adversarial on a licensing deal partner"
+        - "mechanism 461's cross-publication contrast (TechCrunch ran 'Microsoft kills off unsuccessful AI features' on the same Copilot retrenchment peg): Verge softness may be beat-access-driven (Warren's dedicated beat since 2012) rather than PCM-driven"
+      falsification_family_member: false
+      falsification_ledger: 30
+      ledger_note: "register-selection documentation; not a falsification-family member; ledger holds at 30"
+      connects_to: [502, 507, 598]
+      source_urls:
+        - "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit"
+        - "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft"
+        - "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware"
+        - "https://biztoc.com/x/74ab2ae831f1ffe5"
+        - "https://letsdatascience.com/news/meta-introduces-camera-free-ray-ban-meta-audio-glasses-6c7a0c5b"
+        - "https://www.itechpost.com/articles/237412/20260924/meta-connect-2026-all-new-smart-glasses-ai-glasses-announced.htm"
+      research_method: "5 browser.search query sets Sep 26 2026 PDT (The Verge Microsoft September 2026 Copilot OpenAI; WIRED Amazon September 2026 Alexa Rufus - REJECTED as pair, no fresh WIRED Amazon arms surfaced; theverge.com Microsoft Copilot super app Tom Warren Sep 25 - secondary-attested, no verbatim Verge URL; The Verge Meta Connect September 2026 Ray-Ban; Verge Meta Connect hands-on Victoria Song Jay Peters). 0 browser.open this run (excerpt-bounded per #503). Pre-commit novelty greps per #715: zero test_type_a_1017 files on disk (glob); no 'Type A #1017' in git log (--grep); max numeric mechanism_id 840 pre-commit; zero underscore/dash-form 841 keys repo-wide pre-commit (needles format-built, no literals carried); block key zero-hit repo-wide pre-commit; all 6 source URLs zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no theverge.com canonical URLs constructed. ASCII-only, no em dashes."
+      distinct_from_prior: "First Type A mechanism pairing The Verge's Microsoft copyright-defense register against its Meta Connect backlash framing on the PCM licensing gradient. Distinct from mechanism 461 (Aug 2026 Copilot retrenchment product-news register; its block key uses the pre-#723 naming convention and is referenced in prose, not in connects_to); mechanism 502 (WIRED x Microsoft, different publication); mechanism 507 (Verge x OpenAI ad-monetization boundary); mechanism 598 (Verge x OpenAI wiki-incident adversarial). Zero test_type_a_1017 files on disk pre-commit; no Type A #1017 in git log; block key zero-hit repo-wide pre-commit; max numeric mechanism_id 840 pre-commit."
+      status: "committed"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

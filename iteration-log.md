@@ -1,3 +1,40 @@
+## #1017 Type A: Verge x Microsoft Sep-4 copyright-defense headline register vs Verge x Meta Sep-23 Connect backlash framing (PCM licensing gradient) - register-selection finding, NOT uniform softness - Type A THIRD leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 14:00 PDT; main commit PENDING / anchor PENDING; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-26 14:00 PDT, iteration_type "A", **THIRD leg of the 1015-1019 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+Previous main commit #1016 Type E at 13:00 PDT Sep 26 2026 (main 668c8f359e7261ded06d1e597c3d8f04bde86681, anchor cd0b5b577c37d70e47789f3f97a283bebb1bddb5, log-hash 21ba78cb08e83a4b2ca4acff94ed7c44fc56f99f, push-status finalizer 81c1ef64, all verified present via git log before this run's commit). This run is #1017 Type A at 14:00 PDT Sep 26 2026. Rotation A,B,C,D,E; 1015-1019 window legs run D #1015 -> E #1016 -> A #1017 (this run) -> B #1018 -> C #1019; next #1018 will be Type B.
+
+### Finding summary
+- NEW Type A mechanism (mechanism 841) in profiles/the-verge.yaml under competitor_relationships -> microsoft, descriptive block key per the #723/#738 convention (carries no underscore- or dash-form mechanism number).
+- Register-selection finding (NOT a uniform-softness finding): in the Sep 4-25 2026 window The Verge's Microsoft coverage carried a defense-forward register while its Meta Connect coverage (Sep 23-24) was framed against a broader public backlash over wearable surveillance devices.
+- Microsoft arm PRIMARY (NEW): Sep 4 2026 "Microsoft says virtually nobody was grabbing NYT articles through its chatbot" (verbatim Verge URL, novel to corpus) - the headline relays Microsoft's court-filing exculpatory claim in the NYT/authors copyright suit, while Microsoft is The Verge's parent's PCM licensing partner; MANUAL ILLUSTRATIVE +0.25.
+- Microsoft arm SUPPORTING (NEW, secondary-attested): Tom Warren's Sep 25 2026 Copilot "super app" launch piece (no verbatim theverge.com URL in this run's result sets; 6 independent attributions: biztoc techmeme archive, digitaltoday.co.kr, alextech.ai, dailyaiblog.com, directionsonmicrosoft.com, particle.news); MANUAL ILLUSTRATIVE +0.20.
+- Meta arm PRIMARY (NEW): The Verge's Sep 23-24 Connect coverage - the Muse Charm piece (verbatim Verge URL, novel) plus secondary attestation that The Verge "framed the launch against a broader public backlash over wearable surveillance devices" (letsdatascience.com); MANUAL ILLUSTRATIVE -0.30.
+- Illustrative delta (Microsoft minus Meta) +0.55 on a degenerate n=1 vs n=1 primary pair, NOT significant.
+- Financial gradient: one-sided licensing on the publisher-receiving side (Vox Media/PMC is a Microsoft PCM co-design partner and pilot publisher, Feb 2026; Meta $0, NOT a PCM participant), with a reverse customer-dependency leg (PMC pays Microsoft for Azure) bounding any simple capture narrative. Carried prediction "softer" is MET only in the register-selection sense, NOT as uniform softness.
+
+### Research method
+5 browser.search query sets (The Verge Microsoft September 2026 Copilot OpenAI; WIRED Amazon September 2026 Alexa Rufus - REJECTED as pair, no fresh WIRED Amazon arms surfaced; theverge.com Microsoft Copilot super app Tom Warren Sep 25 - secondary-attested, no verbatim Verge URL; The Verge Meta Connect September 2026 Ray-Ban; Verge Meta Connect hands-on Victoria Song Jay Peters). 0 browser.open this run (excerpt-bounded per #503). Pre-commit novelty greps per #715: zero test_type_a_1017 files on disk (glob); no "Type A #1017" in git log (--grep); max numeric mechanism_id 840 pre-commit; zero underscore/dash-form 841 keys repo-wide pre-commit (needles format-built, no literals carried); block key zero-hit repo-wide pre-commit; all 6 source URLs zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no theverge.com canonical URLs constructed. ASCII-only, no em dashes.
+
+### Statistical discipline
+MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. Primary arms n=1 vs n=1; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False; engine NOT run at the finding layer. Verdict directionally_supported_not_proven. Correlation is not causation. Hypothesis-generating only. No analysis.json update warranted (NOT artifact-grade). NOT a falsification-family member; ledger holds at 30. connects_to [502, 507, 598].
+
+### Confounders (strong-first) and counterevidence
+- STRONG: genre/peg mismatch (copyright-defense legal coverage vs product-launch coverage; register follows the peg per the m637 pattern family); attribution-headline standard practice ("Microsoft says" is routine journalistic attribution); excerpt/attestation-bounded evidence (0 browser.open per #503; Meta-arm backlash framing secondary-attested; Sep-25 super-app arm has no verbatim Verge URL).
+- MODERATE: the Sep-4 exculpatory claim IS the news event (beat-consistent relay); 19-20 day timing skew; degenerate sample (n=1 per side, no prior Verge x Microsoft lineage the way m838 rode m817).
+- WEAK: writer-level register not isolated; Meta-side score analyst-assigned on secondary attestation.
+- COUNTEREVIDENCE (4): Sep 7 Verge piece "Seattle Times and Newsday sue OpenAI and Microsoft" (verbatim URL, novel - The Verge covers suits naming its PCM partner as defendant); mechanism 502 (WIRED x Microsoft PCM adversarial boundary condition); mechanism 598 (Verge x OpenAI wiki-incident adversarial under the Vox/OpenAI deal); mechanism 461's cross-publication contrast (TechCrunch ran "Microsoft kills off unsuccessful AI features" on the same Copilot retrenchment peg - Verge softness may be beat-access-driven, Warren's dedicated beat since 2012, rather than PCM-driven).
+
+### Doc-sync
+(52222/1341 -> 52278/1342; +56/+1 = the #1017 file exactly (.venv python --pytest authoritative). 56 tests, 11 classes. Anchor + rotation guard per #565.
+
+### Concurrency
+#899 (nytimes.yaml mechanism 771 hunk), #938 (test_type_b_938 anchor edit), #900 (untracked test file), and the #1012 working-tree block-key-fix edit all in-flight and untouched - targeted staging only.
+
+- Commit hashes: main commit PENDING (verified via git rev-parse); anchor followup PENDING (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 56/56 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Push status: PUSHED per #716 - main + anchor + log-hash pushed; remote tip verified equal to local via git ls-remote Sep 26 2026 14:xx PDT.
+
 ## #1016 Type E: podcast sentiment 126th verification - GF 501 confirmed again (no 502; sixth consecutive pure-re-surface GF cycle; zero Meta/wearables content in any GF episode across all 126 cycles), EHE 47-day hold (zero new keys; 2 own-repo GitHub URLs rejected as circular), Attention Sphere 126th no-match (Tracked Sources 125->126), press one NEW-to-corpus key (techgig Sep-25 Connect; frontier HOLDS at Sep 25) + six re-surfaces - Type E SECOND leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 13:00 PDT; main commit 668c8f359e7261ded06d1e597c3d8f04bde86681 / anchor cd0b5b577c37d70e47789f3f97a283bebb1bddb5; log-hash followup registers both hashes here per #721 (this commit: 668c8f35 / cd0b5b57))
 
 2026-09-26 13:00 PDT, iteration_type "E", **SECOND leg of the 1015-1019 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
