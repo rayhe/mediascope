@@ -1,4 +1,4 @@
-## #1009 Type C: Akamai x Anthropic $11.6B seven-year cloud deal + 5% equity warrant (announced Sep 24 2026) - DEMAND-FOR-EQUITY (warrant-for-demand), THIRTEENTH relationship direction (mechanism 837) - Type C CLOSING leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 04:00 PDT; main commit PATCH_ME_MAIN / anchor PATCH_ME_ANCHOR; log-hash followup registers both hashes here per #721 (this commit))
+## #1009 Type C: Akamai x Anthropic $11.6B seven-year cloud deal + 5% equity warrant (announced Sep 24 2026) - DEMAND-FOR-EQUITY (warrant-for-demand), THIRTEENTH relationship direction (mechanism 837) - Type C CLOSING leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 04:00 PDT; main commit 2b5c07b5c7f4fb4de47f5265a5681c456fd4f4e8 / anchor dd0d12dcc0c28566db1f76f93edf3d47243a9e94; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-26 04:00 PDT, iteration_type "C", **CLOSING leg of the 1005-1009 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -22,8 +22,8 @@ Qualitative financial-incentive mapping: tone NOT_SCORED, no tone statistics, en
 ### Concurrency
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor patch), #900 (untracked test) all in-flight and untouched - targeted staging of the m837 hunk only.
 
-- Commit hashes: main commit PATCH_ME_MAIN (verified via git rev-parse); anchor followup PATCH_ME_ANCHOR (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch); log-hash followup registers both hashes here per #721.
-- Push status: PENDING per #716 - to be pushed to origin main (rayhe/mediascope-asymmetry, from git remote get-url origin, never a constructed URL) after followups; remote tip to be verified equal to local via git ls-remote. Concurrency: #899/#938/#900 in-flight untouched.
+- Commit hashes: main commit 2b5c07b5c7f4fb4de47f5265a5681c456fd4f4e8 (verified via git rev-parse); anchor followup dd0d12dcc0c28566db1f76f93edf3d47243a9e94 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch); log-hash followup registers both hashes here per #721.
+- Push status: PUSHED per #716 - see push-status finalizer below. Concurrency: #899/#938/#900 in-flight untouched.
 
 ## #1008 Type B: Lily Hay Newman (WIRED) Sep-23 Meta Connect "Pinky Promises" co-byline vs Sep-9 Apple Watch Audio Intelligence - PEG-MATCHED replication of mechanism 635 (mechanism 836) - Type B FOURTH leg of the 1005-1009 window D->E->A->B->C (Sep 26 2026, 03:00 PDT; main commit e9ffd2ec4cb8435aa29413f8dc65082d9cea8edc / anchor fc799a0d74a4f771f34dd4fe61008ceace2e0708; log-hash followup registers both hashes here per #721 (this commit))
 
