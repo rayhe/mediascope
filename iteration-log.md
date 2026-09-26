@@ -30,7 +30,7 @@ Manual ILLUSTRATIVE-ONLY per the Aug 28 2026 standing rule: tone scores MANUAL I
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked test) all in-flight and untouched - targeted staging of the #1013 set only.
 
 - Commit hashes: main commit a11199707577599ea5410e26f3a788d58dbc01e4 (verified via git rev-parse); anchor followup 2fc529f6596ff6d8344f0a62755715db6329226e (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 39/41 file tests green post-anchor, 2 designed post-commit gates: hash-placeholder filled by this log-hash followup, staged-set is a pre-commit gate); log-hash followup registers both hashes here per #721.
-- Push status: PENDING push per #716 (log-hash followup commit; push follows).
+- Push status: PUSHED per #716 - main a1119970 + anchor 2fc529f6 + log-hash 991f2c7d pushed to origin main (rayhe/mediascope-asymmetry) in one fast-forward (00810455..991f2c7d); remote tip 991f2c7d3355f463286f740e78642d2abec18e5e verified equal to local via git ls-remote Sep 26 2026 08:0x PDT. Concurrency: #899/#938/#900 in-flight untouched.
 
 ## #1012 Type A: MIT TR x Anthropic Sep-14 doomer-turn agenda-setting register vs carried MIT TR x Meta Sep-23 India havoc investigation - EXTENDS mechanism 817 to the Anthropic axis (illustrative delta +0.70 degenerate n=1, NOT significant; register SELECTION not uniform softness) - Type A THIRD leg of the 1010-1014 window D->E->A->B->C (Sep 26 2026, 07:00 PDT; main commit 788bc9a8d2099253160b7303ff09a70a0a10be74 / anchor 06287964114e13ff7de97742060d2409ecb7458d; log-hash followup registers both hashes here per #721 (this commit))
 
