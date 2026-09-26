@@ -44,7 +44,7 @@ NEXT_NUM = 841
 EXPECTED_TESTS = 52
 
 # Patched by the anchor followup (#565): full 40-hex of the main commit.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "2362c57410284fde6698e2a9f6abd33d227c28b0"
 
 NEW_URLS = [
     "https://stackoverflow.co/company/press/archive/google-cloud-strategic-gen-ai-partnership/",
