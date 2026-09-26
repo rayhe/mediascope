@@ -26,7 +26,7 @@ Rejected candidates this run: Victoria Song (m827, just covered #993); Karissa B
 #899 (nytimes.yaml hunk), #938 (Type B test file), #900 (root-owned untracked test) all in-flight and untouched - targeted staging only.
 
 - Commit hashes: main commit f17bc65df5ff28cb265311ae126d296a50e936c9 (verified via git rev-parse); anchor followup 7bbc45e9739c2f2b357c7e1b937d442b79562e7c (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 40/40 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PENDING per #716 (to be verified post-push).
+- Push status: PUSHED per #716 - main f17bc65d + anchor 7bbc45e9 + log-hash 8f6d52b4cdc7b7efa7e7696a6b17ccefe1919fb2 pushed to origin main in one fast-forward (1dcccd0a..8f6d52b4); remote tip 8f6d52b4cdc7b7efa7e7696a6b17ccefe1919fb2 verified equal to local via git ls-remote Sep 25 2026 22:xx PDT.
 
 ## #1002 Type A: Guardian x Apple Sep-2026 ambient-listening bounded silence vs Guardian x Meta police-memo investigation + Connect stigma register (mechanism 832, FIRST corpus mechanism on the Sep-2026 Guardian Apple ambient-listening coverage-selection asymmetry; temporal replication of the m607 zero-financial-gradient control on coverage SELECTION not review register) - Type A THIRD leg of the 1000-1004 window D->E->A->B->C (Sep 25 2026, 21:00 PDT; main commit 1c858d9bd0e031a4e1863b6d424f4bbe8aa86b70 / anchor 01fcba572a342378ac080e8c6046cbec76470b22; log-hash followup registers both hashes here per #721 (this commit))
 
