@@ -65,7 +65,7 @@ NEXT_DASH = "mechanism" + "-851"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism: " + "851"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1032"), ("E", "1031"), ("D", "1030"), ("C", "1029"), ("B", "1028")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "7c2a289897fdf02df1bfcd6ed5a20b5a003bfef1"
 
 ANTHROPIC_URL = "https://www.reuters.com/technology/akamai-anthropic-sign-116-billion-cloud-services-deal-2026-09-24/"
 META_URL = "https://www.reuters.com/business/meta-expected-unveil-smart-glasses-without-camera-privacy-concerns-grow-2026-09-23/"
@@ -205,25 +205,23 @@ class TestNoveltyAnchorTypeA1032:
 # 2. Rotation guard: 1030-1034 window, third leg D->E->A
 # ---------------------------------------------------------------------------
 class TestRotationGuard1030_1034Window:
-    @pytest.mark.skip(reason="deselected pre-commit per #565; green post-commit")
+    ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
+
     def test_window_is_1030_1034_third_leg(self):
         assert _window() == EXPECTED_ORDER
 
-    @pytest.mark.skip(reason="deselected pre-commit per #565; green post-commit")
     def test_rotation_adjacency_cycle_valid(self):
-        order = _window()
-        cycle = {"A": "B", "B": "C", "C": "D", "D": "E", "E": "A"}
-        for (t1, _), (t2, _) in zip(order, order[1:]):
-            assert cycle[t1] == t2, f"rotation breaks between {t1} and {t2}"
+        window = _window()
+        for (t1, n1), (t2, n2) in zip(window, window[1:]):
+            assert int(n1) == int(n2) + 1
+            assert (self.ORDER[t1] - self.ORDER[t2]) % 5 == 1, (t1, t2)
 
-    @pytest.mark.skip(reason="deselected pre-commit per #565; green post-commit")
     def test_predecessor_is_type_e_1031(self):
         order = _window()
         assert order[1] == ("E", "1031")
         r = run_git("log", "--grep", "Type E #1031:", "--format=%H", "--no-merges")
         assert r.stdout.strip(), "no Type E #1031 main commit found"
 
-    @pytest.mark.skip(reason="deselected pre-commit per #565; green post-commit")
     def test_no_concurrent_inflight_commits_asserted(self):
         r = run_git("log", "--grep", "Type A #1032:", "--format=%H", "--no-merges")
         assert len(r.stdout.split()) == 1, "expected exactly one Type A #1032 main commit"
@@ -431,24 +429,20 @@ class TestCorpusNoveltyPostCommit:
 # 9. Doc-sync ratchet per #719 (green post-doc-sync)
 # ---------------------------------------------------------------------------
 class TestDocSyncRatchet:
-    @pytest.mark.skip(reason="deselected pre-commit; green post-doc-sync per #719")
     def test_readme_header_stats_bumped(self):
         text = _read("README.md")
         assert str(README_TESTS_AFTER) in text
         assert str(README_FILES_AFTER) in text
 
-    @pytest.mark.skip(reason="deselected pre-commit; green post-doc-sync per #719")
     def test_readme_row_1032(self):
         text = _read("README.md")
         assert f"`tests/{OWN_BASENAME}`" in text
         assert "Type A #1032" in text
 
-    @pytest.mark.skip(reason="deselected pre-commit; green post-doc-sync per #719")
     def test_architecture_row(self):
         text = _read("docs/ARCHITECTURE.md")
         assert OWN_BASENAME in text
 
-    @pytest.mark.skip(reason="deselected pre-commit; green post-doc-sync per #719")
     def test_iteration_log_entry(self):
         text = _read("iteration-log.md")
         assert "## #1032 Type A:" in text
