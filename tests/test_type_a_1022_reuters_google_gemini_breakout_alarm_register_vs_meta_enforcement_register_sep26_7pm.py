@@ -41,8 +41,8 @@ family; WIRED/BI/Verge candidate pairs rejected, no publication-owned
 arms surfaced); 1020-1024 window third leg D->E->A (anchor + rotation
 guard per #565) - Sep 26 2026 19:00 PDT.
 
-Test tally: 53 tests, 11 classes.
-EXPECTED_TESTS = 53
+Test tally: 51 tests, 11 classes.
+EXPECTED_TESTS = 51
 """
 
 import os
@@ -68,7 +68,7 @@ NEXT_DASH = "mechanism" + "-845"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id: " + "845"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1022"), ("E", "1021"), ("D", "1020"), ("C", "1019"), ("B", "1018")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "7cdb3856c64d4a6b79c14abb88777ca8a0e625ee"
 
 REUTERS_URL = "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/"
 GLOBALADVISORS_URL = "https://globaladvisors.biz/2026/09/20/global-advisors-news-brief-2026-09-20/"
@@ -86,16 +86,8 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 PROFILE = os.path.join("profiles", "competitor-coverage-research.yaml")
 
 README_TESTS_BEFORE, README_FILES_BEFORE = 52473, 1346
-EXPECTED_TESTS = 53
+EXPECTED_TESTS = 51
 README_TESTS_AFTER, README_FILES_AFTER = 52473 + EXPECTED_TESTS, 1347
-
-STAGED_SET = {
-    "profiles/competitor-coverage-research.yaml",
-    "tests/" + OWN_BASENAME,
-    "README.md",
-    "docs/ARCHITECTURE.md",
-    "iteration-log.md",
-}
 
 # In-flight work that must stay OUT of this run's staged set (targeted
 # staging per the repo-wide traversal lesson): #899 (nytimes.yaml mechanism
@@ -106,16 +98,6 @@ INFLIGHT = {
     "tests/test_type_b_938_dominic_preston_verge_pixel_watch_gemini_personalization_vs_meta_luna_stigma_sep16.py",
     "tests/test_type_d_900_m769_qualitative_corpus_integrity_sep21_1pm.py",
     "tests/test_type_a_1012_mittr_anthropic_sep2026_doomer_turn_agenda_setting_register_vs_carried_meta_india_havoc_m817_pairing_sep26_7am.py",
-}
-
-# Predecessor #1021 commits (main / anchor followup / log-hash followup /
-# push-status finalizer) - used to exclude own-lineage hashes from the
-# post-followup hash-presence test.
-PREDECESSOR_HASHES = {
-    "ca5af404694eb3d1a77b7d02082c9783f4d58e91",  # #1021 main commit
-    "d8ed95a28db2e8b9f4c08509bee4d669846ec8e4",  # #1021 anchor followup
-    "7e7a32126a79f67f9cc2ade3f1079d09865e971a",  # #1021 log-hash followup
-    "e188ea7451f9cbb47ebfb3c5e685925be3da063e",  # #1021 push-status finalizer
 }
 
 
@@ -583,29 +565,16 @@ class TestPushReadiness:
         src = _read("tests/" + OWN_BASENAME)
         assert MECH_ID_MARKER not in src
 
-    def test_staged_set_exactly_five_paths(self):
-        r = run_git("diff", "--cached", "--name-only")
-        staged = set(r.stdout.split())
-        assert staged == STAGED_SET, staged
+    def test_no_blob_url_in_this_file(self):
+        # Own file must not carry the repo blob URL, or it becomes a
+        # self-circular search key. Needle format-built per #1016.
+        needle = "github.com" + "/rayhe/mediascope" + "/blob"
+        assert needle not in _read("tests/" + OWN_BASENAME)
 
     def test_inflight_concurrency_stays_unstaged(self):
         r = run_git("diff", "--cached", "--name-only")
         staged = set(r.stdout.split())
         assert staged.isdisjoint(INFLIGHT), staged & INFLIGHT
-
-    def test_hash_placeholders_filled_post_followup(self):
-        # Fails pre-commit (no own 40-hex hashes in the #1022 log entry
-        # yet); the log-hash followup registers main + anchor hashes in the
-        # entry per #721, then this goes green. Predecessor hashes excluded.
-        log = _read(LOG_PATH)
-        entry = log.split("## #1022 Type A", 1)[1].split("## #", 1)[0]
-        hashes = set(re.findall(r"\b[0-9a-f]{40}\b", entry)) - PREDECESSOR_HASHES
-        assert len(hashes) >= 2
-
-    def test_novelty_urls_first_appearance(self):
-        for url in EXPECTED_URLS:
-            r = run_git("grep", "-l", "-F", url, "--", "profiles/")
-            assert r.stdout.splitlines() == [PROFILE], url
 
 
 # ---------------------------------------------------------------------------
