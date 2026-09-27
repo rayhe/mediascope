@@ -1,4 +1,4 @@
-## #1033 Type B: Aditya Soni (Reuters) within-writer register asymmetry - Meta Connect privacy preview vs Apple Cook-to-Ternus celebration - Type B FOURTH leg of the 1030-1034 window (Sep 27 2026, 06:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit))
+## #1033 Type B: Aditya Soni (Reuters) within-writer register asymmetry - Meta Connect privacy preview vs Apple Cook-to-Ternus celebration - Type B FOURTH leg of the 1030-1034 window (Sep 27 2026, 06:00 PDT; main commit 8b58e3c438caf4ce43fef3a58f4258984909d4ff / anchor f1bdcdd327fcfa34684ecd557ebe060257cb74a2; log-hash followup registers both hashes here per #721 (this commit))
 
 ### Rotation transparency
 - 1030-1034 window FOURTH leg (D #1030 -> E #1031 -> A #1032 -> B #1033 -> C #1034, rotation per #565).
