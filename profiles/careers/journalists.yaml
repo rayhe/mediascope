@@ -22250,12 +22250,14 @@ karissa_bell:
   - AI
   author_page: https://www.engadget.com/author/karissa-bell/
   notes: 'Engadget wearables desk (author page https://www.engadget.com/author/karissa-bell/; Bell is the Engadget writer behind the corpus''s Aug 15 mechanism 113 investigative-methodology asymmetry and the Sep 2026 Meta Ray-Ban Display 10-day review). Type B #818 (Sep 17 2026): mechanism 722 same-writer, same-outlet register pair - Meta arm: Engadget "Meta Ray-Ban Display review: Chunky frames with impressive abilities" (Oct 2025; read first-hand this run, 224 rendered lines; first-person voice + "Karissa Bell for Engadget" photo credits, explicit byline header not surfaced in render, bounded absence per #503): "still a bit conflicted"; "The frames are extremely chunky and too wide for my face"; "I did feel a bit self-conscious at times wearing these in public"; dedicated "Privacy and safety" section - "I share a lot of these concerns", "these devices will inevitably scoop up more of our data over time", live translation could "surreptitiously eavesdrop on a conversation"; -0.10 illustrative. Snap arm: Engadget "Snap Specs Hands On: Standalone AR Glasses Are Here" (launch-week Sep 2026; read first-hand this run, 105 rendered lines; byline "Karissa Bell for Engadget" confirmed): "The $2,195 glasses are Snap''s biggest AR bet yet"; "I think there''s a lot to like"; "Specs are equipped with two cameras, which enable the hand-tracking controls" (two face-worn cameras, zero privacy terms across the whole piece); "Given Specs'' capabilities, I actually think they look okay"; 132g "almost twice as heavy as Meta''s display-enabled frames, but the weight felt more evenly distributed"; +0.30 illustrative. Illustrative Meta-minus-Snap delta -0.40: the privacy register activates on Meta''s single face camera but stays silent on Snap''s two face-worn cameras; the appearance register inverts with price (69g Meta frames "hideously nerdy", 132g Snap frames "look okay"). Same writer and same outlet, so the outlet-level financial-tie gradient is held constant - the design isolates editorial register. Strong confounders ranked first: genre asymmetry (10-day lived review vs 20-minute launch-day hands-on), product-class asymmetry (standalone AR wearable computer vs phone-tethered AI glasses), temporal gap (Oct 2025 vs Sep 2026). Counter-evidence: Bell praised Meta tech strongly; Bell DID flag Snap price and audience doubts; the Meta privacy section is genuinely sourced (policy changes, contractor reviews); hands-on genre boundary (no Bell-authored Meta hands-on exists, bounded absence); #753 Hardawar constancy and #723 Engadget control show same-outlet writers can be constant. EXTENDS mechanisms 113 and 605: fair in the product register, except where the product is a Meta face-worn camera, where the privacy register activates - while Snap''s two-camera face device gets none. MANUAL ILLUSTRATIVE only; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT a falsification-family member; ledger holds at 26; no analysis.json update; NOT artifact-grade. Type B #888 (Sep 21 2026): mechanism 764 genre replication of mechanism 722 - Bell''s Sep 16 2026 Snap Specs launch live blog (byline verified this run; Cherlynn Low "Screenshot by" credit is photo-only) carries zero privacy-alarm vocabulary for Snap''s four-camera glasses and relays Spiegel''s anti-Meta wristband-dig framing uncritically, vs the adversarial privacy register on Meta''s Display review; illustrative Meta-minus-Snap delta -0.35; directionally_supported_not_proven; NOT a falsification-family member; ledger holds at 29. Type B #903 (Sep 21 2026): mechanism 773 AI-assistant category extension of mechanisms 113/722/764 - Bell''s Sep 12 2026 Engadget Meta Muse AI-agent guide (excerpt-tier; https://www.engadget.com/2256577/how-to-get-started-with-meta-s-new-ai-agent-muse/) carries the privacy register from the first recommended step (''Opting out of data sharing is a good first step''; opting out of training-data sharing; ''always ask'' permissions; ''low risk'' trust caveat; +0.05 illustrative) vs Bell''s Sep 16 2026 Engadget Snap Specs Intelligence AI-assistant news piece (dek-tier; byline confirmed on Engadget''s author page) with zero privacy vocabulary for the ''anticipatory AI service'' that ingests goals, priorities, relationships, routines, and connected accounts (+0.15 illustrative); illustrative Meta-minus-Snap delta -0.10; same writer, same outlet, same product category (consumer AI assistants), four days apart; directionally_supported_not_proven; NOT a falsification-family member; ledger holds at 29.'
-  mechanism_ids: [722, 764, 773]
+  mechanism_ids: [722, 764, 773, 857]
   source_urls:
   - https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
   - https://www.engadget.com/2260675/snap-specs-hands-on-standalone-ar-glasses-are-here/
   - https://www.engadget.com/2256577/how-to-get-started-with-meta-s-new-ai-agent-muse/
   - https://www.engadget.com/author/karissa-bell/
+  - https://www.engadget.com/2267227/meta-will-stop-training-its-ai-on-visual-data-from-its-smart-glasses-if-you-opt-out/
+  - https://www.listennotes.com/podcasts/the-engadget-podcast-engadget-pN2nIxROaoS/
   competitor_coverage:
     type_b_818_karissa_bell_engadget_meta_display_vs_snap_specs_sep17:
       block_key: 'type_b_818_karissa_bell_engadget_meta_display_vs_snap_specs_sep17'
@@ -22474,6 +22476,89 @@ karissa_bell:
       falsification_family: 'NOT a falsification-family member (register documentation and category extension of mechanisms 113/722/764, not a uniform-direction prediction under test); ledger holds at 29'
       ledger: 'Ledger holds at 29 - no new falsification-family member this run. THIRTIETH remains the negative guard.'
       research_method: 'Journalist selection this run: Will Knight ruled out (extensively covered incl. the two-Meta-articles correction); Kylie Robison ruled out (Type B talent-war mechanism exists); James O''Donnell ruled out (Meta AI hack + Anduril/Meta warfare-glasses pieces already mechanismized); Andrew Williams / Andrew Lanxon / Michael Acton ruled out (little/no corpus presence, no clean same-journalist Meta-vs-competitor pair surfaced); Scott Stein ruled out (prior corpus treatment); the Bell Meta-Display-vs-Snap-hands-on pair ruled out (mechanisms 722 AND 764, both arms taken); the Bell keynote-live-blog pair ruled out (mechanism 764). REJECTED candidates documented. 10 browser.search query sets this run: (1)-(2) Meta AI hack / Anduril warfare-glasses journalists; (3) Muse trademark-handle controversy; (4) Meta AI-hack author confirmation; (5)-(6) Bell author-page research (full Sep 2026 Bell timeline captured); (7) Meta One subscription tiers; (8)-(9) Meta Muse hands-on excerpts (privacy-register evidence); (10) Specs Intelligence piece confirmation (author page byline + dek). Novelty pre-commit: zero test_type_b_903 files; no Type B #903 in git log; Meta Muse URL (2256577) zero-hit repo-wide; block key zero-hit repo-wide; max numeric mechanism_id 772 committed (771 uncommitted concurrent); zero underscore-form 773 keys per #715 (the one 773 hit is #902''s NEXT_ID_NUMERIC declaration); zero numeric 773 keys in profiles/; Bell''s Sep 17 Oversight Board deepfake piece ("fundamentally inadequate") verified ABSENT from the corpus - noted as a future arm. 0 browser.open this run (tool failure early in the run; not retried per the turn constraint). All URLs copied verbatim from Full-URL search listings. No URL construction. Register excerpt/dek-bounded per #503. No zero-coverage claims per the #492 rule.'
+    type_b_1043_karissa_bell_engadget_meta_visual_data_optout_vs_apple_audio_intelligence_event_register_sep27:
+      iteration: 1043
+      mechanism_id: 857
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-27 16:00 PDT'
+      block_key: type_b_1043_karissa_bell_engadget_meta_visual_data_optout_vs_apple_audio_intelligence_event_register_sep27
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1043 is the iteration number, not the mechanism id).'
+      author: 'Kit (with Ray)'
+      journalist: 'Karissa Bell'
+      publication: Engadget
+      primary_entity: Meta
+      comparator_entity: Apple
+      finding_type: journalist_cross_entity_register_asymmetry
+      design: 'Type B journalist cross-entity tracking: Karissa Bell''s Meta privacy-investigation register (her assigned beat, m150) vs her own Apple event-coverage register on ambient-listening wearables within the same September 2026 launch window. Question: does Engadget''s Meta-privacy beat holder apply the same investigative register to Apple''s always-listening Audio Intelligence that she applies to Meta''s voice and visual-data retention? FOURTH mechanism in Bell''s journalist item (after 722/764/773) and the FIRST Bell-vs-Apple cross-entity pair - her four prior mechanisms pair Meta against Snap or document methodology. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Meta Will Stop Training Its AI On ''Visual Data'' From Its Smart Glasses - If You Opt Out'
+        date: '2026-09-24'
+        outlet: engadget
+        author_byline: 'Karissa Bell'
+        genre: 'privacy investigation (beat-assigned)'
+        evidence_tier: 'search_excerpt_bounded_mirror'
+        key_quotes:
+        - 'Dek: ''Meta is making another concession to privacy critics as it tries to get ahead of the ongoing privacy backlash against its AI glasses.'''
+        - 'Lede: ''Somewhere, a contractor just breathed a sigh of relief.'''
+        - 'Accountability: ''Meta has also done a pretty poor job of explaining this to people.'''
+        - 'Intensifier: ''Even worse, those recordings are sometimes sent to third-party contractors in other countries who ''review'' and label the images for AI training.'''
+        - 'Consistency arm (Aug 27 2026, same byline, in-corpus via #380): ''Meta closing loophole that allowed people to record with smart glasses light covered'' - ''yet another change'', ''try to prevent people from covertly recording'', ''second time in less than two months'', ''growing backlash''.'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+        url: 'https://www.engadget.com/2267227/meta-will-stop-training-its-ai-on-visual-data-from-its-smart-glasses-if-you-opt-out/'
+      apple_arm:
+        title: 'Diving into the iPhone Duo, iPhone 18 Pro and Apple''s new hardware (Engadget Podcast)'
+        date: '2026-09-09'
+        outlet: 'engadget (podcast)'
+        author_byline: 'Karissa Bell (co-host, Senior Reporter)'
+        genre: 'launch-event recap podcast'
+        evidence_tier: 'podcast_listing_bounded_no_transcript'
+        key_quotes:
+        - 'Episode description: ''We''re back with a recap of Apple''s iPhone Duo launch event! In this episode, Devindra and Engadget Senior Reporter Karissa Bell break down their thoughts on Apple''s first foldable... Apple Watch Series 12 and Ultra 4 get some minor updates.'''
+        - 'The outlet''s privacy treatment of Apple''s ambient-listening Audio Intelligence (Live Rewind rolling 15-second ambient-audio buffer, Siri Recap conversation summaries) was assigned elsewhere: Cherlynn Low''s Sep 10 podcast ''Apple on foldables and privacy -- ahead and behind at the same time?'' and her hands-on ''intrigued by things like Siri Recap and Live Rewind'' (in-corpus via m668/m723).'
+        - 'Zero Meta-style privacy-investigation register from Bell on the Apple ambient-listening features within the listing-bounded evidence.'
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        url: 'https://www.listennotes.com/podcasts/the-engadget-podcast-engadget-pN2nIxROaoS/'
+      illustrative_delta_meta_minus_apple: -0.45
+      delta_calc: '(-0.55) - (-0.10) = -0.45'
+      finding: 'Engadget''s Meta-privacy beat holder (m150: assigned 3 Meta-only privacy investigations) runs an adversarial investigative register on Meta''s Sep 24 2026 visual-data opt-out concession - lede ''Somewhere, a contractor just breathed a sigh of relief,'' ''Meta has also done a pretty poor job of explaining this to people,'' ''Even worse, those recordings are sometimes sent to third-party contractors in other countries'' - while her own Sep 9 2026 co-hosted Apple launch-event recap covers the functionally similar ambient-listening Audio Intelligence story (Live Rewind rolling 15-second ambient-audio buffer, Siri Recap conversation summaries) with zero privacy-investigation register (listing-bounded). The Apple ambient-listening privacy discussion was routed to a different Engadget writer (Cherlynn Low, Sep 10 podcast), replicating m150''s beat-assignment structure at the within-writer level. This is thesis-consistent with m150''s editorial-routing theory: Bell runs the alarm register where assigned (Meta), and the outlet routes Apple ambient-listening privacy to the zero-alarm desk (Low). It is NOT a falsification of the beat-assignment theory - it is its fourth in-corpus replication. Her prior Meta-vs-Snap pairs (m722 Meta Display review vs Snap Specs hands-on; m773 Meta Muse guide vs Snap Specs Intelligence) already showed the privacy register activating on Meta face-worn cameras; this run extends the register test to a NEW comparator (Apple) and a NEW product class (ambient-listening wearables). MANUAL ILLUSTRATIVE: p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False, engine NOT run, NOT artifact-grade, no engine divergence pin. Verdict: directionally_supported_not_proven. NOT a falsification-family member (ledger holds at 34). Correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member; ledger holds at 34.'
+      financial_context: 'Engadget/Yahoo (Apollo Global Management). No Meta content licensing deal in corpus; no Apple content deal in corpus. Standard advertising relationships both sides. The incentive map predicts no money-driven differential here; the observed differential routes through editorial beat assignment (m150), not a payer register.'
+      no_analysis_json_update: true
+      confounders_ranked:
+      - 'STRONG: Genre asymmetry (a beat-assigned privacy investigation vs a podcast event recap; the adversarial register is the Meta-privacy beat''s job description, not necessarily individual-standards differential).'
+      - 'STRONG: Evidence-tier asymmetry (Meta arm search-excerpt-bounded; Apple arm listing-bounded with no transcript; Bell''s Apple privacy register could exist off-listing).'
+      - 'STRONG: Beat-assignment routing itself is the alternative explanation (m150/m668): Engadget routes Meta privacy investigations to Bell and Apple privacy to Low''s zero-alarm desk; the writer-level delta may be editorial routing rather than individual bias.'
+      - 'MODERATE: Concession-peg asymmetry (Meta made an actual policy concession - opt-out - which invites the ''concession'' frame; Apple''s Audio Intelligence was a pre-release feature with no concession peg).'
+      - 'MODERATE: Temporal ordering (Apple event Sep 9 preceded the Meta concession story Sep 24; the privacy frames had different news contexts).'
+      - 'WEAK: n=1 pair, single-outlet design; no cross-outlet replication of the writer-level differential.'
+      counterevidence:
+      - 'm723''s null differential for Cherlynn Low (zero privacy alarm on BOTH Meta Jun-23 glasses and Apple Sep-10 Audio Intelligence) shows Engadget writers CAN run alarm-free on Meta - so Bell''s adversarial register is not outlet-mandated.'
+      - '#279 (mechanism 293): Daniel Cooper''s within-review cross-entity inversion at the same outlet shows Engadget producing harsher privacy verdicts on non-Meta ambient-audio glasses (7.4/10, ''self-evidently creepy'') - the outlet''s asymmetry is not one-directional.'
+      - 'Bell''s own m722 Meta Display review (in-corpus, -0.10 illustrative, ''still a bit conflicted'') shows she is fair on Meta hardware: price/utility critique alongside privacy context, not alarm-only.'
+      - 'The Apple arm register gap may be podcast-format constraint (50-minute recap covering six products) rather than writer choice.'
+      connects_to: [150, 293, 380, 668, 723, 279, 722, 764, 773]
+      cross_refs:
+      - '#150 (Cherlynn Low cross-entity beat assignment - the Meta-only privacy investigations are Bell''s assigned beat)'
+      - '#293 (Daniel Cooper within-review cross-entity privacy benchmark inversion, Engadget)'
+      - '#380 (Bell''s Aug 27 2026 Meta second LED-cover loophole piece - consistency arm)'
+      - '#668/#723 (Low Apple Audio Intelligence control replication - the Apple privacy desk Bell does not occupy)'
+      - '#722 (Bell''s flagship same-writer Meta-vs-Snap pair - same register, different comparator)'
+      - '#773 (Bell''s Meta Muse vs Snap Specs Intelligence AI-assistant extension - same register, AI-assistant class)'
+      rotation_transparency: '1040-1044 window FOURTH leg (D #1040 -> E #1041 -> A #1042 -> B #1043 -> C expected #1044). #1042 was Type A (WSJ OpenAI safety crisis vs Anthropic business-growth coverage, falsification family 33->34). This run advances the window''s Type B slot; the previous Type B in-window slot is not applicable (the 1035-1039 window''s B leg was #1038 with Terrence O''Brien). No rotation violation.'
+      research_method: '12 browser.search query sets this run: Victoria Song Verge Meta Ray-Ban review Sep 2026; WIRED Meta smart glasses surveillance Sep 2026; Lauren Goode WIRED Meta NameTag Jun 2026; Verge Sep-24 Apple Watch always-listening byline; WIRED Apple Watch Siri Recap review Sep 2026; Kashmir Hill NYT Meta face recognition Alvarez class action Sep 2026; Jay Peters Verge Meta Connect Ray-Ban Gen 3 Sep 2026; Cherlynn Low Engadget Meta Luna glasses privacy Sep 2026; Cherlynn Low Engadget Apple Watch Audio Intelligence privacy; Kashmir Hill NYT Sep 2026 privacy; Karissa Bell Engadget Meta glasses voice recordings privacy Luna; Karissa Bell Engadget iPhone Duo Apple event privacy. 0 browser.open per #503. URLs verbatim from Full-URL listings; none constructed. Victoria Song dropped (duplicate of m993: her Sep 24 Meta/Snap ''smart glasses only make sense'' piece); Cherlynn Low dropped (m723 already holds her Meta-vs-Apple null differential); Joanna Stern dropped (Apple arms 2023-24 vintage); Kashmir Hill dropped (no fresh Sep comparator). Karissa Bell selected: FIRST Bell-vs-Apple cross-entity pair (her four prior mechanisms 113/722/764/773 pair Meta against Snap or document methodology); Sep-2026 same-window Meta-vs-Apple ambient-listening register pair. No em dashes.'
+      novelty: 'FOURTH mechanism in Bell''s journalist item (after 722/764/773); FIRST Bell-vs-Apple cross-entity pair; FIRST ambient-listening-wearables register pair for Bell. Zero test_type_b_1043 files on disk (glob verified this run). No "Type B #1043" in git log (--grep verified this run). Max numeric mechanism_id 856 pre-commit (profiles/ targeted sweeps this run). Zero numeric/underscore/dash 858 keys in profiles/ (targeted per-file sweeps; repo-wide traversal hangs on this filesystem per standing lesson) and zero in tests/*.py. Block key zero-hit pre-commit. The Meta-arm Engadget visual-data URL zero-hit repo-wide pre-commit. The ListenNotes podcast URL zero-hit pre-commit. The Aug-27 LED-loophole Engadget URL and Low''s Sep-10 hands-on URL already in corpus (#380, m668) - carried, not novel. ASCII-only, no em dashes.'
+      author: 'Kit (with Ray)'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. Engine NOT run per the Aug 28 2026 standing rule; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; tone NOT_SCORED by engine; is_significant False; no significance claimed.'
+      artifact_readiness: 'No analysis.json update warranted. Fourth mechanism in Bell''s item; extends her Meta-vs-Snap register findings (m722/m773) to a new comparator (Apple) and a new product class (ambient-listening wearables); illustrative-only; NOT falsification-family; no publication-level finding.'
+      test_file: 'tests/test_type_b_1043_karissa_bell_engadget_meta_visual_data_vs_apple_event_register_sep27_4pm.py'
+      source_urls:
+      - https://www.engadget.com/2267227/meta-will-stop-training-its-ai-on-visual-data-from-its-smart-glasses-if-you-opt-out/
+      - https://www.engadget.com/2245776/meta-closing-loophole-that-allowed-people-to-record-with-smart-glasses-light-covered/
+      - https://www.listennotes.com/podcasts/the-engadget-podcast-engadget-pN2nIxROaoS/
+      - https://www.engadget.com/2254467/apple-watch-series-12-hands-on-siri-recap-transcribe-live-rewind-health-sensing/
 jason_england:
   name: Jason England
   current_role: Managing Editor, Computing
@@ -24362,3 +24447,4 @@ terrence_obrien:
   - https://wesearch.press/s/meta-makes-the-muse-filesystem-even-more-accessible-ded5f300
   - https://technewstube.com/theverge/1870832/openai-pauses-training-capable-models/
   - https://www.ai-intel.news/intel/openai-pauses-training-of-its-most-capable-models-1f2rrkn
+
