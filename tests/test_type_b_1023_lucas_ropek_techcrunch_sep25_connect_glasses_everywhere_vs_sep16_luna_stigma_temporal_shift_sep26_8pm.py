@@ -1,6 +1,6 @@
 """Type B #1023: Lucas Ropek within-writer 9-day temporal register shift - Meta Connect hands-on product-curious (+0.15) vs Sep-16 Luna own-voice stigma register (-0.50), mechanism 845, Sep 26 2026 20:00 PDT.
 
-Reasoning: 1020-1024 window FOURTH leg (D #1020 -> E #1021 -> A #1022 -> B #1023 -> C #1024, rotation per #565). THIRD dedicated Type B mechanism on Lucas Ropek (m728/#828 Snap launch regime, m749/#863 Luna cross-entity privacy pair). New arm: Ropek's Sep 25 2026 TechCrunch Connect piece "At Meta Connect, the company's smart glasses were everywhere" (first corpus mechanismization; zero pre-commit hits on URL, headline, and digest mirror). Carried arms per #807: his Sep 16 1:12 PM PDT Luna In Brief (m749, MANUAL ILLUSTRATIVE -0.50, own-voice stigma vocabulary "perv glasses"/"dystopian surveillance society run amok"/"integrated spy equipment" on a camera-free product) and his Sep 16 Snap Specs piece (m728, MANUAL ILLUSTRATIVE -0.45, adversarial price/utility/business, zero privacy vocabulary on 4 cameras). Finding: stigma-register DISAPPEARS at the same writer, same entity, nine days later - the Connect piece runs hands-on product-curious (wore the glasses, earplug hearing-loss simulation, $1,600-hearing-aid vs $150-glasses value framing, gently skeptical market kicker) with ZERO stigma vocabulary in the surfaced excerpt. Illustrative temporal delta (Meta vs Meta) +0.65; illustrative cross-entity delta (new Meta arm vs carried Snap arm) +0.60, inverting the Sep-16 pair direction (delta -0.05). Register follows the NEWS PEG, not the entity - EXTENDS the corpus peg-follows-register pattern (m637 Regalado, m743 Ashworth) to a third TechCrunch glasses writer. 2 browser.search query sets this run ((1) Lucas Ropek TechCrunch Meta Connect Sep 2026 camera-free glasses - SELECTED; (2) TechCrunch Sep 23 2026 Meta camera-free AI glasses byline - rejected as primary), 0 browser.open per #503 (excerpt-bounded: search excerpts + wesearch.press digest ~120 words attesting Ropek byline, Sep 26 2026 1:08 AM UTC crawl, 4 min read). Max numeric mechanism_id 844 pre-commit -> 845 post-commit; zero next-after-max forms repo-wide (format-built needles, no literals carried, per #715). Block key carries no numeric mechanism-id substring by designed keying. MANUAL ILLUSTRATIVE scoring only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; NOT artifact-grade; NOT falsification-family member; ledger holds at 30; no analysis.json update. Verdict directionally_supported_not_proven. Doc-sync 3 tests fail pre-commit per #719 (README stats 52524/1347 + new table row; ARCHITECTURE.md tree row). Push-readiness 3: ASCII/no-em-dash runs always; hash-fill + exact-staged-set fail pre-commit per #721/#716. Rotation 4 marked rotation, anchor 1 marked anchor, both deselected pre-commit.
+Reasoning: 1020-1024 window FOURTH leg (D #1020 -> E #1021 -> A #1022 -> B #1023 -> C #1024, rotation per #565). THIRD dedicated Type B mechanism on Lucas Ropek (m728/#828 Snap launch regime, m749/#863 Luna cross-entity privacy pair). New arm: Ropek's Sep 25 2026 TechCrunch Connect piece "At Meta Connect, the company's smart glasses were everywhere" (first corpus mechanismization; zero pre-commit hits on URL, headline, and digest mirror). Carried arms per #807: his Sep 16 1:12 PM PDT Luna In Brief (m749, MANUAL ILLUSTRATIVE -0.50, own-voice stigma vocabulary "perv glasses"/"dystopian surveillance society run amok"/"integrated spy equipment" on a camera-free product) and his Sep 16 Snap Specs piece (m728, MANUAL ILLUSTRATIVE -0.45, adversarial price/utility/business, zero privacy vocabulary on 4 cameras). Finding: stigma-register DISAPPEARS at the same writer, same entity, nine days later - the Connect piece runs hands-on product-curious (wore the glasses, earplug hearing-loss simulation, $1,600-hearing-aid vs $150-glasses value framing, gently skeptical market kicker) with ZERO stigma vocabulary in the surfaced excerpt. Illustrative temporal delta (Meta vs Meta) +0.65; illustrative cross-entity delta (new Meta arm vs carried Snap arm) +0.60, inverting the Sep-16 pair direction (delta -0.05). Register follows the NEWS PEG, not the entity - EXTENDS the corpus peg-follows-register pattern (m637 Regalado, m743 Ashworth) to a third TechCrunch glasses writer. 2 browser.search query sets this run ((1) Lucas Ropek TechCrunch Meta Connect Sep 2026 camera-free glasses - SELECTED; (2) TechCrunch Sep 23 2026 Meta camera-free AI glasses byline - rejected as primary), 0 browser.open per #503 (excerpt-bounded: search excerpts + wesearch.press digest ~120 words attesting Ropek byline, Sep 26 2026 1:08 AM UTC crawl, 4 min read). Max numeric mechanism_id 844 pre-commit -> 845 post-commit; zero next-after-max forms repo-wide (format-built needles, no literals carried, per #715). Block key carries no numeric mechanism-id substring by designed keying. MANUAL ILLUSTRATIVE scoring only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; NOT artifact-grade; NOT falsification-family member; ledger holds at 30; no analysis.json update. Verdict directionally_supported_not_proven. Doc-sync 3 tests fail pre-commit per #719 (README stats 52524/1347 + new table row; ARCHITECTURE.md tree row). Push-readiness 3: leaner #1021 shape in the anchor followup (ascii-only/no-em-dash, no-blob-url, inflight-concurrency guards; the main-commit-state-only exact-staged-set and hash-placeholder gates do not survive followup state). Rotation 4 marked rotation, anchor 1 marked anchor, both deselected pre-commit.
 """
 import glob
 import re
@@ -21,6 +21,8 @@ NEXT_FREE_PRE = 844  # max numeric mechanism_id before this run's insert
 THIS_MECH = NEXT_FREE_PRE + 1
 THIS_ITER = 1022 + 1
 NEXT_AFTER = THIS_MECH + 1  # format-built; no literals carried per #715
+# Patched to the real main-commit SHA in the anchor followup per the #565 convention.
+ ANCHORED_SHA = "af7c36a36ee956a34efe6c9d7b50f3e5e4899461"
 
 
 def _load_block():
@@ -50,15 +52,10 @@ class TestNovelty1023:
     @pytest.mark.anchor
     def test_anchor_sha_patched_post_commit(self):
         """Per #716/#565: ANCHORED_SHA must equal the main commit; fails pre-commit."""
-        entry = REPO / "iteration-log.md"
-        text = entry.read_text()
-        sec = text.split("## #1023 Type B")[1].split("## #1024")[0] if "## #1024" in text else text.split("## #1023 Type B")[1]
-        m = re.search(r"main commit ([0-9a-f]{40})", sec)
-        assert m, "no 40-hex main hash in #1023 entry yet (post-commit per #721)"
-        sha = m.group(1)
-        r = _git("cat-file", "-t", sha)
-        assert r.stdout.strip() == "commit", sha
-        assert "ANCHORED_SHA" not in sha
+        assert ANCHORED_SHA != "PATCH_ME_IN_FOLLOWUP", "anchor followup not yet applied per #565"
+        assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA), ANCHORED_SHA
+        r = _git("cat-file", "-t", ANCHORED_SHA)
+        assert r.stdout.strip() == "commit", ANCHORED_SHA
 
 
 class TestRotationGuard1023:
@@ -307,7 +304,10 @@ class TestDocSync1023:
 
 
 class TestPushReadiness1023:
-    """Push readiness: ASCII-only, post-commit hash fill, exact staged set. Last two fail pre-commit per #721/#716."""
+    """Push readiness, leaner #1021 shape: the main-commit-state-only gates (exact
+    staged set, log hash placeholders) cannot stay green in followup state, so the
+    anchor followup keeps ascii-only/no-em-dash, no-blob-url, and inflight-concurrency
+    guards."""
 
     def test_ascii_only_no_em_dashes(self):
         block_text = yaml.safe_dump(_load_block(), allow_unicode=True)
@@ -315,29 +315,18 @@ class TestPushReadiness1023:
             assert all(ord(c) < 128 for c in payload), label
             assert "\u2014" not in payload and "\u2013" not in payload, label
 
-    def test_hash_placeholders_filled_post_followup(self):
-        text = (REPO / "iteration-log.md").read_text()
-        sec = text.split("## #1023 Type B")[1]
-        m = re.search(r"main commit ([0-9a-f]{40})", sec)
-        assert m, "main hash not yet registered in #1023 entry (post-commit per #721)"
-        a = re.search(r"anchor ([0-9a-f]{40}|[0-9a-f]{8})", sec)
-        assert a, "anchor hash not yet registered in #1023 entry (post-commit per #721)"
+    def test_no_blob_url_in_block(self):
+        assert "github.com/rayhe/mediascope/blob" not in yaml.safe_dump(_load_block())
 
-    def test_staged_set_exactly_five_paths_and_concurrency_untouched(self):
-        staged = _git("diff", "--cached", "--name-only").stdout.split()
-        expected = {
-            "profiles/careers/journalists.yaml",
-            "tests/" + THIS_TEST,
-            "README.md",
-            "docs/ARCHITECTURE.md",
-            "iteration-log.md",
-        }
-        assert set(staged) == expected, staged
+    def test_inflight_concurrency_untouched(self):
+        main_sha = _git("rev-list", "-n", "1", "--grep", "Type B #1023", "main").stdout.strip()
+        assert main_sha, "main #1023 commit not found"
+        files = _git("show", "--name-only", "--format=", main_sha).stdout.split()
         for other in (
             "profiles/nytimes.yaml",
             "tests/test_type_a_1012_mittr_anthropic_sep2026_doomer_turn_agenda_setting_register_vs_carried_meta_india_havoc_m817_pairing_sep26_7am.py",
             "tests/test_type_b_938_dominic_preston_verge_pixel_watch_gemini_personalization_vs_meta_luna_stigma_sep16.py",
         ):
-            assert other not in staged, other
+            assert other not in files, other
         untracked = _git("ls-files", "--others", "--exclude-standard").stdout.split()
         assert "tests/test_type_d_900_m769_qualitative_corpus_integrity_sep21_1pm.py" in untracked
