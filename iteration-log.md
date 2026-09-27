@@ -37,7 +37,7 @@ tests/test_type_d_1040_m853_m854_m855_qualitative_corpus_integrity_sep27_1pm.py 
 - 1040-1044 window FIRST leg D->E->A->B->C, OPENING it (anchor patched post-commit per #565). Next: #1041 Type E continues the window.
 
 ### Push status
-- Push status: (filled by push-status followup per the #1038/#1039 precedent)
+- Push status: pushed 2026-09-27 ~13:30 PDT; local 6cb96497 == remote 6cb96497 (git ls-remote verified); chain main 98cd66f0 -> anchor 99d6e624 -> log-hash 6cb96497 all on origin/main
 
 ### Concurrency
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
