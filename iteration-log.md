@@ -36,7 +36,7 @@ Log-hash followup: (this commit) - registers both hashes in the header line per 
 - 1035-1039 window SECOND leg D->E->A->B->C, continuing it (anchor patched post-commit per #565). Next: #1037 Type A continues the window.
 
 ### Push status
-- Push status (this run, Sep 27 2026 ~09:xx PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+- Push status (this run, Sep 27 2026 ~09:15 PDT): pushed main 50274df4 + anchor followup aa837a35 + log-hash followup 7cc25a83 (d79648c0..7cc25a83 main -> main, fast-forward, atomic proxy-credential extract/test/use workflow, inline x-access-token push URL, credential never left the single push shell); remote tip verified equals local tip (7cc25a8353092813df838820f10d930ca65d2761) via git ls-remote post-push; zero pre-push-ahead deltas; concurrency: #899/#938/#900/#1012-wt in-flight untouched.
 
 ### Concurrency
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
