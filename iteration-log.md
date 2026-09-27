@@ -60,7 +60,7 @@
 - Window newest-first post-commit: C #1034, B #1033, A #1032, E #1031, D #1030; adjacency cycle D->E->A->B->C per #565 (rotation guard 4/4 green post-anchor).
 
 ### Push status
-- PUSH_STATUS_PLACEHOLDER
+- Pushed Sep 27 2026 ~07:4x PDT: main 5df0bd19 + anchor 527983e6 + log-hash 56716ec5 pushed (56716ec5..HEAD verified equal to origin/main via ls-remote); remote head 56716ec5 matches local.
 
 ### Concurrency
 - #899 (profiles/nytimes.yaml), #938 (test_type_b_938), #900 (test_type_d_900), #1012-wt (test_type_a_1012) all in-flight, untouched by this run's index and diff.
