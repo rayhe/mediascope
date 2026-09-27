@@ -1,4 +1,4 @@
-## #1043 Type B: Karissa Bell (Engadget) Meta visual-data opt-out privacy investigation (-0.55) vs Apple Audio Intelligence event recap (-0.10) - FIRST Bell-vs-Apple pair (FOURTH mechanism in her item); NOT falsification-family (ledger holds at 34) - Type B FOURTH leg of the 1040-1044 window (Sep 27 2026, 16:00 PDT; main commit <main-sha> / anchor <anchor-sha>; log-hash followup registers both hashes here per #721 (this commit))
+## #1043 Type B: Karissa Bell (Engadget) Meta visual-data opt-out privacy investigation (-0.55) vs Apple Audio Intelligence event recap (-0.10) - FIRST Bell-vs-Apple pair (FOURTH mechanism in her item); NOT falsification-family (ledger holds at 34) - Type B FOURTH leg of the 1040-1044 window (Sep 27 2026, 16:00 PDT; main commit c2c5222c / anchor dc82a82d; log-hash followup registers both hashes here per #721 (dc82a82d))
 
 2026-09-27 16:00 PDT, iteration_type "B", **FOURTH leg of the 1040-1044 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
