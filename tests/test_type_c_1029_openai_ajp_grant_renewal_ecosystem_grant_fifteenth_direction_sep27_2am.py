@@ -79,7 +79,7 @@ MECHANISM = 849
 ITERATION = 1029
 ITERATION_TYPE = "C"
 EXPECTED_TESTS = 55
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched in the anchor followup per #565
+ANCHORED_SHA = "a9080e9bba16fe5a3fc79e5753733b60cf9bb255"  # patched in the anchor followup per #565
 PREDECESSOR_SHAS = {
     "8f3263e8e077cce9849705a3dbfa61fba8168142",  # #1028 main
     "aad728cade1887f36bff6253ac60395bec11e38e",  # #1028 anchor
