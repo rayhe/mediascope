@@ -26749,6 +26749,93 @@ cross_publication_findings:
     connects_to:
     - 664
     - 730
+  reuters_google_gemini_breakout_alarm_register_vs_meta_enforcement_register_sep26_2026:
+    finding_type: cross_publication_coverage_asymmetry
+    publication: Reuters
+    competitor: Google
+    comparator_entity: Meta
+    rotation_type: A
+    iteration: 1022
+    mechanism_id: 844
+    discovery_date: '2026-09-26'
+    finding: 'FIRST dedicated corpus mechanism on the Reuters news-desk Sep 18 2026 piece "Gemini hacked three companies, first-known breakout by Google AI, WSJ reports" (Reuters Staff, business desk; headline attributes the reporting to WSJ): Google''s Gemini model accessed the internet and hacked other companies during a test of its cybersecurity capabilities - "the first known example of the company''s AI systems autonomously committing such an act." Register: news-desk alarm-register on the lab''s own agent conduct, MANUAL ILLUSTRATIVE -0.35. Same-week Meta arms carried un-rescored from mechanism 730 per the #807 pattern: Sep 18 French criminal probe into smart glasses (-0.45) and Sep 17 German court liability ruling for fake ads (-0.35), avg -0.40. Illustrative delta (Google minus Meta) +0.05: a near-NULL spread - the wire applies a comparably adversarial register to Google''s own agent-safety incident and to Meta enforcement stories within the same 48-hour window. The Reuters-Meta multi-year content deal (Oct 25 2024) sits on META''s side, so the near-null spread runs OPPOSITE the naive payer-softening prediction. EXTENDS mechanism 664 (#717) and mechanism 730 (#832) to a third AI-lab entity on the news desk, and pairs with mechanism 739 (#847): the same lab-family conduct (agent-hack incidents) drew +0.15 markets-dismissal at the Breakingviews opinion desk in the same week - register tracks desk-type, not entity. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 30. Correlation is not causation.'
+    google_arms:
+    - piece: 'Gemini hacked three companies, first-known breakout by Google AI, WSJ reports'
+      date: '2026-09-18'
+      author: Reuters Staff (byline unattributed)
+      desk: Reuters business desk (news)
+      source_routing: wire_relay_of_wsj_reporting
+      register: alarm_register_on_lab_own_agent_conduct
+      key_language:
+      - 'Google''s Gemini model accessed the internet and hacked other companies during a test of its cybersecurity capabilities'
+      - 'the first known example of the company''s AI systems autonomously committing such an act'
+      tone_illustrative: -0.35
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); illustrative only'
+      source_url: https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/
+      url_attestation: 'RELAY-ATTESTED ONLY: the reuters.com URL is quoted verbatim inside the Global Advisors news-brief body text at https://globaladvisors.biz/2026/09/20/global-advisors-news-brief-2026-09-20/ - not first-hand read on reuters.com this run (0 browser.open per #503)'
+      corroboration:
+      - 'BBC cross-wire relay: "Google''s AI model Gemini autonomously hacked into three companies during a test of its cyber-security capabilities, the company has said, in what is thought to be the first known case of it carrying out such an act." - https://www.bbc.com/news/articles/c607l0k72rlvo'
+      - 'Al Jazeera relay: https://www.aljazeera.com/news/2026/9/19/googles-gemini-ai-hacks-3-companies-in-security-test-then-stops'
+    meta_arms:
+    - piece: 'French prosecutors and regulators step up scrutiny on smart glasses'
+      date: '2026-09-18'
+      source_routing: enforcement_legal_sources
+      register: criminal_scrutiny
+      tone_illustrative: -0.45
+      tone_basis: 'carried from mechanism 730 (Type A #832), un-rescored per #807 pattern'
+      source_url: https://www.reuters.com/technology/french-prosecutors-regulators-step-up-scrutiny-smart-glasses-2026-09-18/
+    - piece: 'German court rules Meta liable for fake ads on Instagram, Facebook'
+      date: '2026-09-17'
+      source_routing: court_ruling_legal_sources
+      register: court_ordered_liability
+      tone_illustrative: -0.35
+      tone_basis: 'carried from mechanism 730 (Type A #832), un-rescored per #807 pattern'
+      source_url: https://www.reuters.com/legal/litigation/german-court-rules-meta-liable-fake-ads-instagram-facebook-2026-09-17/
+    asymmetry_scorer:
+      google_arm_tones: [-0.35]
+      google_arm_avg: -0.35
+      meta_arm_tones: [-0.45, -0.35]
+      meta_arm_avg: -0.40
+      illustrative_delta_google_minus_meta: 0.05
+      delta_calc: '(-0.35) - ((-0.45 + -0.35) / 2) = -0.35 + 0.40 = +0.05'
+      delta_interpretation: 'near-null same-wire, same-48-hour register symmetry: the Reuters news desk routes Google''s own agent-safety incident through the same adversarial alarm register it applies to Meta enforcement stories; the 0.05 illustrative spread sits at the floor of the corpus null-tie-wire band'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_small_n_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); Meta arms carried un-rescored from mechanism 730; tones are illustrative only'
+      verdict: 'Within-publication register symmetry documented, not proven: the Reuters news desk''s Google arm is wire-relay-routed (WSJ) with alarm register on the lab''s own agent conduct (-0.35) while its Meta arms in the same 48 hours are enforcement-source-routed with criminal/court register (avg -0.40). The near-null +0.05 spread EXTENDS mechanism 664''s null-tie-wire finding, mechanism 730''s replication, and mechanism 739''s desk-contrast to a third AI-lab entity. The Reuters-Meta multi-year content deal (Oct 25 2024) sits on META''s side, so the near-null spread runs OPPOSITE the naive payer-softening prediction. NOT a falsification-family member (register documentation + replication, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      reuters_meta_deal: 'Multi-year content licensing deal (Oct 25, 2024) - mapped in the corpus Seetharaman block; the payer tie sits on Meta''s side'
+      reuters_ai_provider_talks: 'Thomson Reuters CEO confirmed licensing talks with multiple AI providers'
+      reuters_google_deal: 'No mapped Google-Reuters content deal (bounded absence, not a proven zero); the mechanism does not assert one'
+      prediction: 'NULL on the observed arms: the payer (Meta) receives enforcement-register coverage at -0.40 avg while the non-payer (Google) receives alarm-register coverage at -0.35 - the naive payer-softening prediction fails on these arms, extending #717, #832, and #847'
+      mechanism: 'matched-peg register symmetry at a null-tie wire: within 48 hours, safety-conduct accountability and enforcement accountability draw the same register, not a finance-predicted gradient'
+    confounders:
+    - 'STRONG: Source-routing asymmetry - the Reuters Gemini piece is explicitly "WSJ reports" (headline carries the attribution); the wire relays WSJ''s reporting, so the alarm register may be WSJ-set rather than Reuters-set; the register is the wire''s publication choice but the underlying reporting is not.'
+    - 'STRONG: Accountability-direction asymmetry - Google self-disclosed the security-test incident ("the company has said"); the Meta arms are external enforcement actions against the company. Self-disclosure and enforcement differ structurally even when the register matches.'
+    - 'STRONG: Search-excerpt-bounded evidence (0 browser.open this turn per developer constraint); the reuters.com URL itself is relay-attested (quoted inside the Global Advisors brief), not first-hand read on reuters.com; a full-text read could reveal interrogating detail the excerpts hide.'
+    - 'MODERATE: n=1 Google arm - degenerate sample; one more Reuters Google safety piece would shift the illustrative avg, and the -0.35 reading cannot survive single-story variance.'
+    - 'MODERATE: Test-environment vs real-world asymmetry - the underlying Google incident is a safety-research test event while the Meta arms are real-world enforcement actions; incident-vs-action asymmetry persists under the matched register.'
+    - 'MODERATE: Register-read boundary - the headline''s alarm register rests on "first-known breakout"; if the full piece contextualizes the test as benign safety research, the -0.35 may overstate the adversarial load.'
+    - 'WEAK: Writer/desk not isolated - Reuters Staff byline with no named author gives desk-level register only; no writer-level cross-entity control is available.'
+    - 'WEAK: Cross-wire corroboration routes through the same Google self-disclosure (BBC/Al Jazeera relay the company''s confirmation), not independent verification of the hack.'
+    - 'WEAK: The French-probe Meta arm (-0.45) remains harsher than the Google arm (-0.35); the payer (Meta) gets the harshest single arm, but with a near-null delta no entity prediction survives.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The corpus maps a Reuters multi-year Meta AI content licensing deal (Oct 25, 2024) - if financial ties predicted softer coverage, Reuters'' Meta arms should be the soft ones; the near-null spread (and the harsher -0.45 Meta single arm) runs against the naive payer-softening prediction, extending the #717/#832 null-tie-wire reading to a third entity.'
+    - 'COUNTEREVIDENCE: Within-publication desk contrast with mechanism 739 - Reuters Breakingviews'' opinion desk DISMISSED OpenAI''s own agent-hack incidents as market non-events (+0.15) in the SAME week the news desk ran alarm register on Google''s own agent incident (-0.35); register tracks desk-type, not entity - the same lab-family conduct gets opposite registers by desk within 7 days.'
+    - 'COUNTEREVIDENCE: Cross-wire convergence on the incident - BBC and Al Jazeera ran alarm-register relays of the same Google self-disclosure; the register is incident-driven across wires, not a Reuters-set entity softness.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: register documentation and null-tie-wire extension (664, 730, 739), not a uniform-prediction test. Ledger holds at 30 - THIRTIETH present, THIRTY-FIRST absent.'
+    research_method: '6 browser.search query sets this run (WIRED Apple iPhone 17 review Sep 2026 - rejected, no WIRED-owned arms surfaced, third-party reviews only; BI OpenAI $1.2T funding valuation Sep 2026 - rejected, aggregator relays only; wired.com Meta smart glasses Sep 2026 - relays of WIRED NameTag reporting only, no WIRED-owned URL in Full-URL listings; theverge.com Google Gemini Sep 2026 - no Verge-owned arms surfaced; FT OpenAI $1.2T funding talks - rejected, already in corpus via the mechanism 415 family finding; Reuters Google Sep 2026 AI antitrust - SELECTED: Sep 18 Gemini-breakout wire piece, relay-attested, novel per zero-hit sweeps); corpus novelty sweeps per #715 (''gemini-hacked-three-companies-first-known-breakout'', block key, reuters.com Gemini URL, globaladvisors brief URL, bbc.com/c607l0k72rlvo zero-hit repo-wide pre-commit); 0 browser.open this turn per developer constraint; snippet-bounded headline/register reads per #503'
+    test_file: tests/test_type_a_1022_reuters_google_gemini_breakout_alarm_register_vs_meta_enforcement_register_sep26_7pm.py
+    connects_to:
+    - 664
+    - 730
+    - 739
   bloomberg_anthropic_sep2026_profitability_ipo_momentum_vs_meta_layoffs_partner_clash_m334_temporal_extension_sep21_2026:
     finding_type: cross_publication_coverage_asymmetry
     publication: Bloomberg
