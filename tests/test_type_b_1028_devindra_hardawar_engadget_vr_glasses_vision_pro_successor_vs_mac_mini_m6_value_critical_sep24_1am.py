@@ -22,7 +22,7 @@ THIS_MECH = NEXT_FREE_PRE + 1
 THIS_ITER = 1027 + 1
 NEXT_AFTER = THIS_MECH + 1  # format-built; no literals carried per #715
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "8f3263e8e077cce9849705a3dbfa61fba8168142"
 
 
 def _load_block():
