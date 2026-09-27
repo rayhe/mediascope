@@ -41,7 +41,7 @@ README stats table 52372/1344 -> 52424/1345 + test-file table row; ARCHITECTURE.
 1020-1024 window first leg D (anchor patched post-commit per #565). Next: #1021 Type E continues the window.
 
 ### Push status
-(this run, Sep 26 2026 ~17:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+PUSHED per #716 (ab95340e..482eb3af); pushed main 88534735276b1bd0f034cb57625687edb122a5cf + anchor 129c533f64c8f7ddb872425f9ad69e394125bc8e + log-hash 482eb3afe1618c12097c5afb109c07e0f8094270; remote tip 482eb3afe1618c12097c5afb109c07e0f8094270 verified equal to local via git ls-remote Sep 26 2026 17:12 PDT.
 
 ### Concurrency
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file edit), #900 (untracked Type D test), #1012-wt (Type A #1012 test file working-tree edit) all UNCOMMITTED at this run's checks and untouched by this run's index.
