@@ -45,7 +45,7 @@ NOVELTY_CLAIMS = (
     "block key zero-hit, novel Engadget visual-data\nURL zero-hit"
 )
 # Anchored to the main-commit SHA of this run; patched once known (NULL until then).
-NOVELTY_ANCHOR = None
+NOVELTY_ANCHOR = "c2c5222c33a545ddc2974fedd962be15ffb6cac6"
 
 EXPECTED_URLS = [
     "https://www.engadget.com/2267227/meta-will-stop-training-its-ai-on-visual-data-from-its-smart-glasses-if-you-opt-out/",
