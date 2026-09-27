@@ -41,7 +41,7 @@ NEXT_US = "mechanism" + "_852"          # own-form forward marker; never literal
 NEXT_DASH = "mechanism" + "-852"
 MECH_ID_MARKER = "mechanism" + "_851"   # own-form marker; never literal in block
 MECH_KEY = "type_b_1033_aditya_soni_reuters_meta_privacy_preview_vs_apple_ternus_celebration_sep27"
-ANCHORED_SHA = "0" * 40  # deselected pre-commit; patched to the real main commit SHA per #565
+ANCHORED_SHA = "8b58e3c438caf4ce43fef3a58f4258984909d4ff"  # patched post-commit per #565
 
 EXPECTED_ORDER = [("B", "1033"), ("A", "1032"), ("E", "1031"), ("D", "1030"), ("C", "1029")]
 
