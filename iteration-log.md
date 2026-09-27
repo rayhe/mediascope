@@ -20,6 +20,9 @@ In-flight items #899 (profiles/nytimes.yaml mechanism 771 hunk), #938 (test_type
 ### Doc-sync
 README stats 53215/1361 -> 53259/1362 (+44/+1); README table row appended; docs/ARCHITECTURE.md tree row appended; this log entry prepended newest-first.
 
+- Push status (this run, Sep 27 2026 ~10:20 PDT): pushed main 49b1c65a + anchor followup fa3b29f7 + log-hash followup 33056d0c (5c358b2c..33056d0c main -> main, fast-forward, atomic proxy-credential extract/test/use workflow, inline x-access-token push URL, credential never left the single push shell); remote tip verified equals local tip (33056d0c4c60adb19c54f3bb7d7bd14ba150b622) via git ls-remote post-push; zero pre-push-ahead deltas; concurrency: #899/#938/#900/#1012-wt in-flight untouched.
+- Push status (this run, Sep 27 2026 ~10:xx PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+
 ## #1036 Type E: podcast sentiment 130th verification - GF 501 confirmed again (no 502; six-day absence since Sep 21), ZERO new verbatim GF URL keys (tenth consecutive pure-re-surface episode-key cycle; all-key pure-re-surface streak BREAKS at ONE on the maglazana press key), EHE 48-day hold (FIVE logged keys re-surfaced, designtaxi 34124 RETURNS after #1031 absence; ZERO new EHE keys), Attention Sphere 130th no-match as a podcast (blob SURFACED AGAIN + 6 commit URLs circular; Tracked Sources 129->130), press SIX in-corpus re-surfaces + ONE new verbatim key (maglazana Sep-26; recency frontier ADVANCES Sep 25 -> Sep 26, first advance since #1011); Meta-exclusive privacy-pressure framing across all 130 cycles - Type E SECOND leg of the 1035-1039 window (Sep 27 2026, 09:00 PDT; main commit 50274df4 / anchor aa837a35; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 09:00 PDT, iteration_type "E", **SECOND leg of the 1035-1039 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
