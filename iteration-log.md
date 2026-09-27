@@ -1,4 +1,4 @@
-## #1022 Type A: Reuters x Google Sep-18 Gemini-breakout alarm register vs Reuters x Meta enforcement register (mechanism 844; illustrative delta +0.05 near-NULL; EXTENDS m664/m730 to a third AI-lab entity; pairs m739 desk contrast) - Type A THIRD leg of the 1020-1024 window (D #1020 -> E #1021 -> A #1022) (Sep 26 2026, 19:00 PDT; main commit MAINCOMMIT / anchor ANCHORC; log-hash followup registers both hashes here per #721 (this commit: MAINCOMMIT / ANCHORC))
+## #1022 Type A: Reuters x Google Sep-18 Gemini-breakout alarm register vs Reuters x Meta enforcement register (mechanism 844; illustrative delta +0.05 near-NULL; EXTENDS m664/m730 to a third AI-lab entity; pairs m739 desk contrast) - Type A THIRD leg of the 1020-1024 window (D #1020 -> E #1021 -> A #1022) (Sep 26 2026, 19:00 PDT; main commit 7cdb3856 / anchor 30af39aa; log-hash followup registers both hashes here per #721 (this commit: 7cdb3856 / 30af39aa))
 
 2026-09-26 19:00 PDT, iteration_type "A", **THIRD leg of the 1020-1024 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -16,12 +16,12 @@ Previous main commit #1021 Type E at 18:00 PDT Sep 26 2026 (main ca5af404694eb3d
 6 browser.search query sets this run (WIRED Apple iPhone 17 review Sep 2026 - rejected, no WIRED-owned arms surfaced, third-party reviews only; BI OpenAI $1.2T funding valuation Sep 2026 - rejected, aggregator relays only; wired.com Meta smart glasses Sep 2026 - relays of WIRED NameTag reporting only, no WIRED-owned URL in Full-URL listings; theverge.com Google Gemini Sep 2026 - no Verge-owned arms surfaced; FT OpenAI $1.2T funding talks - rejected, already in corpus via the mechanism 415 family finding; Reuters Google Sep 2026 AI antitrust - SELECTED: Sep 18 Gemini-breakout wire piece, relay-attested, novel per zero-hit sweeps). Corpus novelty sweeps per #715 (block key, reuters.com Gemini URL, globaladvisors brief URL, bbc.com/c607l0k72rlvo zero-hit repo-wide pre-commit). 0 browser.open this turn per #503 excerpt-bounded; snippet-bounded headline/register reads. All URLs copied verbatim from Full-URL listings or relay-attested quotes; no canonical URLs constructed. ASCII-only, no em dashes.
 
 ### Doc-sync
-(52473/1346 -> 52526/1347; +53/+1 = the #1022 file exactly (.venv python --pytest authoritative). 53 tests, 11 classes. Anchor + rotation guard per #565.
+(52473/1346 -> 52524/1347; +51/+1 = the #1022 file exactly (.venv python --pytest authoritative). 51 tests, 11 classes. Anchor + rotation guard per #565.
 
 ### Concurrency
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file), #900 (untracked Type D test), #1012-wt (Type A #1012 test file working-tree edit) all UNCOMMITTED at this run's checks and untouched by this run's index.
 
-- Commit hashes: main commit MAINCOMMIT (verified via git rev-parse); anchor followup ANCHORC (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 53/53 file tests green post-followup); log-hash followup registers both hashes here per #721.
+- Commit hashes: main commit 7cdb3856 (verified via git rev-parse); anchor followup 30af39aa (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 51/51 file tests green post-followup); log-hash followup registers both hashes here per #721.
 - Push status: (filled by the push-status finalizer after push per #716)
 
 
