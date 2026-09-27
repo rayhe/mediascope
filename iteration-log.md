@@ -1,4 +1,4 @@
-## #1037 Type A: The Verge Sep-26 Terrence O'Brien OpenAI training-pause adversarial safety-crisis register vs Meta Connect Ray-Ban Meta Audio privacy-concession measured relay - the Vox-deal "softer" prediction fails on the pair (illustrative delta -0.65); THIRTY-SECOND falsification-family member - Type A THIRD leg of the 1035-1039 window (Sep 27 2026, 10:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit))
+## #1037 Type A: The Verge Sep-26 Terrence O'Brien OpenAI training-pause adversarial safety-crisis register vs Meta Connect Ray-Ban Meta Audio privacy-concession measured relay - the Vox-deal "softer" prediction fails on the pair (illustrative delta -0.65); THIRTY-SECOND falsification-family member - Type A THIRD leg of the 1035-1039 window (Sep 27 2026, 10:00 PDT; main commit 49b1c65a / anchor fa3b29f7; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 10:00 PDT, iteration_type "A", **THIRD leg of the 1035-1039 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
