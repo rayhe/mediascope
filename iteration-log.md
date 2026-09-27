@@ -1,4 +1,4 @@
-## #1027 Type A: FT x OpenAI Sep-25 agent-spam self-disclosure vs FT-first-reported Meta Sep-20 OSA litigation - mechanism 847 accountability symmetry (Sep 27 2026, 00:00 PDT; main commit MAIN_SHA_40 / anchor ANCHOR_SHA_40; log-hash followup registers both hashes here per #721 (this commit: MAIN_SHA_7 / ANCHOR_SHA_7))
+## #1027 Type A: FT x OpenAI Sep-25 agent-spam self-disclosure vs FT-first-reported Meta Sep-20 OSA litigation - mechanism 847 accountability symmetry (Sep 27 2026, 00:00 PDT; main commit e60a320b34bba86c2be87a68d66b9e5f4eab69ad / anchor 14219940dc0a978ba5a5972e6ec498aa16e43b7d; log-hash followup registers both hashes here per #721 (this commit: e60a320b / 1421994))
 
 2026-09-27 00:00 PDT, iteration_type "A", **THIRD leg of the 1025-1029 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
