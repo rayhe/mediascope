@@ -15,7 +15,8 @@ Research method: 5 browser.search query sets + 0 browser.open per #503 (excerpt-
 ### Doc-sync
 - profiles/competitor-entities.yaml: mechanism 849 top-level block (zero indent, colon-form key per #715), connects_to [609, 675, 714]
 - tests/test_type_c_1029_openai_ajp_grant_renewal_ecosystem_grant_fifteenth_direction_sep27_2am.py: 55 tests, 11 classes
-- README.md: stats 52807/1353 -> 52862/1354 (+55/+1); test-table row added
+- README.md: stats 52807/1353 -> 52866/1354 (+55 new, +4 baseline drift vs #1028 recorded count, venv authoritative); test-table row added
+- Baseline drift note: authoritative venv collect returned 52,866 (stable across two runs), 4 above the arithmetic 52,807+55=52,862. No test files changed between #1028's count and this run except this run's own new file; the +4 predates this run (likely #1028's recorded count was 4 short). README set to the venv-authoritative figure per project convention.
 - docs/ARCHITECTURE.md: tree row appended
 - iteration-log.md: this entry prepended (newest-first)
 - Falsification ledger: holds at 31 (NOT a falsification-family member)

@@ -54,7 +54,7 @@ mechanism_id: 849 repo-wide pre-commit; block key zero-hit; 4 of 6 source
 URLs zero-hit repo-wide (insidephilanthropy, theajp.org announcement,
 gpa.net, blockchain.news; newscaststudio + openai.com 2023 carried).
 
-Doc-sync post-run: 52807/1353 -> 52862/1354 (+55/+1, venv python).
+Doc-sync post-run: 52807/1353 -> 52866/1354 (+55 new, +4 baseline drift vs #1028 recorded count, venv authoritative).
 Concurrency: #899 (nytimes.yaml m771 hunk), #938 (Type B test file anchor
 edit), #900 (untracked test), #1012 working-tree block-key fix all stay out
 of this run's index and diff.
@@ -494,7 +494,7 @@ class TestConfoundersCounterevidence:
 class TestDocSync1029:
     def test_readme_stats_updated(self):
         text = _read(README)
-        assert "52862" in text
+        assert "52866" in text
         assert "1354" in text
 
     def test_readme_test_table_row(self):
