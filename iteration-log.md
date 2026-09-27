@@ -1,3 +1,52 @@
+## #1020 Type D: m841/m842/m843 qualitative-discipline verification + post-1015-1019 corpus integrity (max numeric mechanism_id 843; zero 844 keys numeric/underscore/dash; ledger holds at 30; THIRTIETH member-form present exactly once (m818, journalists.yaml); TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST member-form negative guard) + #1015 background-suite tombstone (FORTY-FIFTH consecutive death; lineage SIXTY-THIRD -> SIXTY-FOURTH) + fresh synthetic engine meaningfulness - Type D FIRST leg of the 1020-1024 window D->E->A->B->C OPENING it (Sep 26 2026, 17:00 PDT; main commit TBD_MAIN_SHA_1020 / anchor TBD_ANCHOR_SHA_1020; log-hash followup registers both hashes here per #721 (this commit: TBD_SHORT_MAIN / TBD_SHORT_ANCHOR))
+
+2026-09-26 17:00 PDT, iteration_type "D", **FIRST leg of the 1020-1024 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard), **OPENING the window**; next #1021 will be Type E.
+
+### Rotation transparency
+Previous main commit #1019 Type C at 16:00 PDT Sep 26 2026 (main 7f8e944d41885d045f20a26c09b7f4af681cc5f0, anchor 06010ae13c95342997f68c38877823be5983c823, log-hash 27c47341, push-status finalizer ab95340e, all verified present via git log before this run's commit). The 1015-1019 window verified closed as a consecutive newest-first sequence in git history (D #1015, E #1016, A #1017, B #1018, C #1019). This run is #1020 Type D at 17:00 PDT Sep 26 2026. No "Type D #1020" in git log pre-commit (--grep); no "Type E #1021" commits; no concurrent Type D 1020 runs by commit time.
+
+### m841/m842/m843 qualitative-discipline verification
+- **m841** (Type A #1017, the-verge.yaml, competitor_relationships/microsoft, 4-space indent, descriptive block key per #723/#738): arm tones +0.25 (Microsoft primary Sep-4 copyright-defense headline) / +0.20 (Microsoft supporting Sep-25 Copilot super-app) / -0.30 (Meta primary Sep-23 Connect backlash framing); illustrative_delta 0.55 (Microsoft minus Meta), degenerate n=1 vs n=1, NOT significant; statistical_discipline MANUAL ILLUSTRATIVE ONLY, p_value NOT_CALCULATED, is_significant False, engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update true; falsification_family_member False; ledger 30; connects_to [502, 507, 598]; iteration 1017, window 1015-1019.
+- **m842** (Type B #1018, journalists.yaml, sean_keach item, competitor_coverage, 4-space indent): arm tones +0.40 (Meta print) / +0.35 (Apple print) / -0.70 (broadcast carried from #182 per #807); asymmetry_scorer_result illustrative_delta_meta_minus_apple 0.05 NULL, illustrative_medium_split_broadcast_minus_print -1.10 (register tracks medium/genre, not entity); statistical_discipline tone_scores MANUAL_ILLUSTRATIVE_NEW, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine_run False, verdict directionally_supported_not_proven; no_analysis_json_update true; falsification_family_member False; ledger 30; connects_to [181, 818, 839]; iteration 1018.
+- **m843** (Type C #1019, competitor-entities.yaml, top-level block, zero indent): finding carries the press-arithmetic reconstruction chain, the thestochasticparrot certification, the CORRECTION of advance_dual_asset_monetization, the filed-number inventory (S-1 $203M, Q2 2026 Other $43.3M, licensing 7.0% to 5.4%), the Jul-2026 Google renewal live pricing event ("is ending soon", "fell 9.18%"), Google leg NOT downgraded (REPORTED not filed), connects_to [614, 735, 840, 732]; tone_scores NOT_SCORED, engine_run False, no_analysis_json_update true, artifact_grade False, verdict directionally_supported_not_proven, falsification_family_member False, ledger 30, iteration 1019.
+
+### Corpus integrity post-1015-1019
+Max numeric mechanism_id 843 (pre-commit and post-commit; this run adds no mechanisms). Zero numeric/underscore/dash 844 keys repo-wide (sweeps exclude this file per #715 and __pycache__ per the #715 pattern-rescope lesson; the #1019 pyc carries no contiguous 844-form literal - its needles are runtime-built per its test-fix followup). m770 still absent (known data loss, documented for a future run). m771 sole occurrence remains the uncommitted #899 hunk in profiles/nytimes.yaml (zero in HEAD). m762 committed via the #884 chain (present in HEAD). m841 sits under the microsoft item of competitor_relationships in the-verge.yaml at 4-space indent. m842 sits at 4-space indent in journalists.yaml (sean_keach item-level block). m843 sits at zero indent in competitor-entities.yaml (top-level block, colon form only, block key carries no numeric mechanism-id substring per #715).
+
+### Falsification ledger
+Holds at 30: THIRTIETH member-form present exactly once (m818, journalists.yaml); TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST remains the negative guard (no positive thirty-first member-form claim anywhere in profiles/ or test sources). None of m841/m842/m843 is a falsification-family member (register documentation / cross-medium control / provenance audit, not uniform-prediction tests).
+
+### Background suite: #1015 tombstoned
+type_d_1015_full_suite.log is 644 bytes (dots, stalled at ~1% since Sep 26 12:19 PDT; mtime stale by 5 hours at this run's 17:00 PDT check; zero summary tokens anywhere): **FORTY-FIFTH consecutive background-suite death**, lineage **SIXTY-THIRD -> SIXTY-FOURTH** per the #795 convention. This run re-launched the suite writing to goal hidden_files `type_d_1020_full_suite.log`; the next Type D run checks it.
+
+### Fresh synthetic engine meaningfulness
+Engine calibration on FRESH synthetic corpora (new values this run, not #1015's): strong-signal n=6-per-arm pair returns asymmetry -0.845 exact, t=-17.081264005415452, p=1.002900244227332e-08, d=-9.861872371625678, is_significant True at the ENGINE layer with CI (-0.9316666666666668, -0.7516249999999999) entirely below zero; the fresh near-null pair (asymmetry -0.01, t=-0.520657600875468, p=0.613937538522124, d=-0.300601806021076, CI (-0.045, 0.025) crossing zero) stays silent; a fresh degenerate n=1-per-arm contract on the m841 illustrative pair ([0.25], [-0.30]) reproduces the classic guard (t=0.0, p=1.0, d=0.0, is_significant False, |asymmetry| == 0.55 exact, arm-swap negates). Engine significance is never promoted to a finding: all three mechanisms verified this run carry finding-layer is_significant false / NOT_CALCULATED per the Aug 28 2026 standing rule.
+
+### Statistical discipline
+MANUAL ILLUSTRATIVE / NOT_SCORED only per the Aug 28 2026 standing rule. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. Engine NOT run at the finding layer. Verdict directionally_supported_not_proven for all three mechanisms. no_analysis_json_update: true. NOT artifact-grade. Correlation only, not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+
+### Research method
+0 browser.search query sets, 0 browser.open this run (Type D verification-layer run; all arms and blocks already in corpus via #1017-#1019). Pre-commit novelty greps: zero test_type_d_1020 files on disk (glob); no Type D #1020 in git log (--grep); max numeric mechanism_id 843 pre-commit; zero underscore/dash-form 844 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per the #715/#770 conventions); block keys zero-hit pre-commit (now single-hit in home YAMLs). ASCII-only, no em dashes.
+
+### New Type D files
+tests/test_type_d_1020_m841_m842_m843_qualitative_corpus_integrity_sep26_5pm.py - 12 classes, 52 tests (44 green pre-commit excluding doc-sync 3 + iteration-log 3 per #719 which go green post-doc-sync; novelty anchor 1 + rotation-guard 2 deselected pre-commit per #565, patched green in anchor followup).
+
+### Commit hashes
+Main commit TBD_MAIN_SHA_1020 (verified via git rev-parse); anchor followup TBD_ANCHOR_SHA_1020 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 52/52 file tests green post-followup); log-hash followup updates this line (this commit: TBD_SHORT_MAIN / TBD_SHORT_ANCHOR).
+
+### Doc-sync
+README stats table 52372/1344 -> 52424/1345 + test-file table row; ARCHITECTURE.md header stats + tree row; iteration-log #1020 entry (this entry). Authoritative .venv pytest --collect-only this run: 52424 tests / 1345 files post-commit (delta +52/+1 = the #1020 file exactly; system-python3 pytest gate undercounts due to missing deps, venv python authoritative per the #530 lesson).
+
+### Rotation guard
+1020-1024 window first leg D (anchor patched post-commit per #565). Next: #1021 Type E continues the window.
+
+### Push status
+(this run, Sep 26 2026 ~17:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+
+### Concurrency
+#899 (nytimes.yaml m771 hunk), #938 (Type B test file edit), #900 (untracked Type D test), #1012-wt (Type A #1012 test file working-tree edit) all UNCOMMITTED at this run's checks and untouched by this run's index.
+
+
 ## #1019 Type C: Reddit $70M OpenAI-figure provenance audit - press arithmetic reconstructed by subtraction (uncertified), filed-number inventory, Jul-2026 Google renewal as the live pricing event - Type C FIFTH and CLOSING leg of the 1015-1019 window D->E->A->B->C (Sep 26 2026, 16:00 PDT; main commit 7f8e944d41885d045f20a26c09b7f4af681cc5f0 / anchor 06010ae13c95342997f68c38877823be5983c823; log-hash followup registers both hashes here per #721 (this commit: 7f8e944d / 06010ae1))
 
 2026-09-26 16:00 PDT, iteration_type "C", **FIFTH leg of the 1015-1019 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard), **CLOSING the window**; next window 1020-1024 opens at #1020 Type D.
