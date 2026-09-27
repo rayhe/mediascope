@@ -26575,3 +26575,140 @@ type_c_1029_openai_ajp_grant_renewal_ecosystem_grant_fifteenth_direction_sep27_2
   yaml_parse_clean: true
   ascii_only: true
   browser_opens: 0
+
+type_c_1034_amazon_meta_muse_agentic_commerce_denial_shopify_shop_pay_commerce_conversion_sixteenth_direction_sep27_7am:
+  mechanism_id: 852
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1034
+  iteration_type: C
+  date_analyzed: '2026-09-27'
+  time_pdt: '07:00'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  job_id: mediascope-meta-wearables-press-analysis
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'FIRST dedicated corpus mechanism on the September 2026 agentic-commerce licensing split: Amazon''s unilateral block of Meta''s Muse agent (Sep 20) vs Meta x Shopify agentic-checkout deal (Sep 21/22) - SIXTEENTH relationship direction (COMMERCE-GATEKEEPING, access-denial as licensing leverage)'
+  block_key: type_c_1034_amazon_meta_muse_agentic_commerce_denial_shopify_shop_pay_commerce_conversion_sixteenth_direction_sep27_7am
+  key_design_note: 'colon-form top-level key, no numeric mechanism-id substring (no 852 string per #715)'
+  finding: 'FIRST dedicated corpus mechanism on the September 2026 agentic-commerce licensing split. THE DENIAL LEG: on Sep 20 2026 Amazon began unilaterally blocking Meta''s Muse personal AI agent (launched in the US Sep 8 2026 alongside the Muse Spark model; within a week #1 in US app stores, outpacing ChatGPT''s early mobile growth, 2.5M+ downloads per The Times) from shopping on Amazon.com. Muse users attempting Amazon checkouts receive a popup: "continued access by an unauthorized AI agent violates Amazon''s Conditions of Use" (The Times; AndroidHeadlines; Developments Today). Amazon''s stated objections: Meta never requested permission for Muse to access the store; the agent does not identify itself while browsing; it appears to capture and store customer credentials, creating an "undisclosed third-party" presence inside customer accounts (Motley Fool; The Times). Amazon asked Meta to exclude Amazon from Muse''s shopping features; Meta declined (TechSpot). Amazon spokesperson: "We think it''s fairly straightforward that third-party applications that offer to make purchases on behalf of customers from other businesses should operate openly and respect service provider decisions about whether or not to participate" (GeekWire relay via Developments Today; Forbes relay via TechSpot). Amazon''s updated Agent Terms require third-party applications to identify themselves in browser traffic rather than disguising as human shoppers (AndroidHeadlines). TechSpot reports Amazon plans to block Google and OpenAI''s shopping agents too - the denial generalizes beyond Meta. THE DEAL LEG: one day later Shopify went the other way - CEO Tobi Lutke: "partnering deeply with Muse to enable agentic checkout with Shop Pay on all Shopify stores" (Motley Fool); Shopify shares rose 7% Monday and another 7% Tuesday, closing $147.74, up about 15% in two days. Motley Fool headline framing: Shopify "Gets Paid on Every Checkout" - a paid per-checkout commerce-conversion deal. MUSE''S COMMERCE STACK (Azoma via GlobeNewswire Sep 24 2026): Stripe Link (300M+ saved payment methods, 1M+ businesses), Shopify Shop Pay (all Shopify stores), PayPal (global via Mastercard Agent Pay), Expedia (travel), Instacart (grocery); Muse is the first AI agent covered by Stripe Link''s purchase protections (damaged/lost items, price-drop adjustments, fee-free returns). MUSE BUSINESS MODEL: Zuckerberg at Connect - "free for a huge number of tokens, with the expectation that over time we will profit by taking a small fee from transactions" (ChatMaxima); paid tiers $20/$100 a month plus a merchant fee on Muse-completed transactions (memeburn). THE GEOMETRY: the commerce-conversion licensing direction (m831, Yelp x OpenAI, ELEVENTH) now has (a) a second-lab replication - Meta x Shopify agentic checkout, where the lab that PAYS publishers (m331 Meta AI licensing network; m594 News Corp up to $50M/yr) builds its own transaction-layer network and takes the merchant fee itself; and (b) the enforcement mirror - Amazon''s unilateral denial converts the ABSENCE of a deal into an enforceable access exclusion against a rival lab''s agent. NEW RELATIONSHIP DIRECTION: SIXTEENTH per the m807 enumeration - COMMERCE-GATEKEEPING (access-denial as licensing leverage): the commerce platform owner refuses a rival lab''s agent access to its surface, asserting gatekeeper rights over agentic transactions (Amazon extends the policy to Google and OpenAI agents per TechSpot), while the same agent class is welcomed on paid terms by the rival platform (Shopify/Shop Pay per-checkout). Amazon''s three-role corpus geometry completes: it PAYS publishers for AI content (NYT $20-25M/yr, Conde Nast, Hearst Rufus/Alexa deals - m559 portfolio), it BACKS labs that pay publishers nothing (Anthropic $13B+, up to $33B with milestones, Apr 20 2026; OpenAI $50B), and it now DENIES a rival lab''s agent access to its commerce surface. Ben Thompson/Stratechery (via The Times) on the denial: "predictable" - "Amazon has no desire to give up its position as the primary user interface for e-commerce ... it gets a huge amount of data about users and what they want, gets the opportunity to recommend things to users, increasing cart size and gains power over suppliers." Correlation, not causation. Hypothesis-generating only.'
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scores: NOT_SCORED
+  engine_run: false
+  falsification_ledger: 31
+  falsification_family_member: false
+  falsification_note: 'THIRTY-FIRST corpus mechanism logged under the #1000-established falsification framework (m818 family anchor); this mechanism is NOT a falsification-family member (it is qualitative financial mapping of an agentic-commerce access split, not a falsifiable editorial-tonal claim); the falsification ledger holds at 31.'
+  excerpt_bounded: true
+  excerpt_bounded_note: '0 browser.open this run per #503; all facts carried from search excerpts (Motley Fool, The Times, TechSpot, Developments Today, AndroidHeadlines, GlobeNewswire/Azoma, ChatMaxima, memeburn) and secondary relays (GeekWire via Developments Today, Forbes via TechSpot, Stratechery via The Times), NOT first-hand page reads. The credential-capture claim is Amazon''s characterization, disputed by Meta.'
+  sources:
+  - url: https://WWW.FOOL.COM/investing/2026/09/23/amazon-blocked-meta-s-ai-shopping-agent-shopify-welcomed-it-and-gets-paid-on-every-checkout/
+    what: 'Motley Fool (Sep 23 2026): Amazon began blocking Muse Sunday night; popup "unauthorized AI agent violates conditions of use"; Amazon objections (no permission, no self-identification, credential capture/storage); spokesperson "operate openly and respect service provider decisions about whether or not to participate"; Shopify CEO Tobi Lutke Monday: "partnering deeply with Muse to enable agentic checkout with Shop Pay on all Shopify stores"; Shopify +7% Monday +7% Tuesday, ~15% in two days, closing $147.74'
+    accessed: '2026-09-27'
+  - url: https://www.thetimes.com/us/news-today/article/muse-ai-app-meta-shopping-amazon-7xlckg53b
+    what: 'The Times: "Amazon bans Meta''s AI agent from shopping on its site"; Muse launched US-only Sep 8 ("number one in the US app stores, outpacing ChatGPT''s early mobile growth, exceeding 2.5 million downloads"; Meta +20% share, +$200B market value); Amazon blocked the bot (no permission requested, no self-identification, credential capture creating "undisclosed third-party" presence); Meta negotiated deals with Stripe (payments) and Shopify; Ben Thompson/Stratechery: block "predictable" - Amazon protects its primary e-commerce UI position (data, recommendations, cart size, supplier power)'
+    accessed: '2026-09-27'
+  - url: https://www.techspot.com/news/113981-amazon-blocked-meta-muse-agentic-ai-shopping-service.html
+    what: 'TechSpot: Amazon blocking Meta''s shopping AI agent AND "plans to block Google and OpenAI''s too"; Amazon asked Meta to exclude its service from Muse, Meta declined; Muse "started to access its store, capture users'' credentials, and perform its shopping tasks without disclosing its agentic nature"; Amazon spokesman to Forbes: third-party apps "should operate openly and respect service provider decisions about whether or not to participate"'
+    accessed: '2026-09-27'
+  - url: https://developmentstoday.com/news/amazon-blocks-meta-muse-ai-agent-shopping
+    what: 'Developments Today: block "not the product of a negotiation that broke down. It is a unilateral shutdown imposed by Amazon after the fact"; popup "continued access by an unauthorized AI agent violates Amazon''s Conditions of Use"; Amazon objections (no prior coordination/agreement; no self-identification; credential capture); spokesperson to GeekWire: "third-party applications that offer to make purchases on behalf of customers from other businesses should operate openly and respect service provider decisions about whether or not to participate"'
+    accessed: '2026-09-27'
+  - url: https://www.androidheadlines.com/2026/09/amazon-blocks-meta-muse-ai-agent-shopping.html
+    what: 'AndroidHeadlines: "First reported by GeekWire, the block stops Meta''s flagship AI assistant from completing purchases"; Amazon claims Meta never asked for authorization, agent does not identify itself, "operates like an undisclosed third party moving through private user accounts, capturing customer credentials and scraping order histories"; Meta: assistant operates within secure virtual machines, passwords/payment data in encrypted storage; Amazon updated Agent Terms require third-party apps to identify themselves in browser traffic'
+    accessed: '2026-09-27'
+  - url: https://www.globenewswire.com/news-release/2026/09/24/3368168/0/en/what-tools-help-brands-optimize-for-meta-muse-azoma-sets-out-how-brands-get-recommended-by-meta-s-ai-shopping-agent.html
+    what: 'Azoma via GlobeNewswire (Sep 24 2026): Meta Muse launched September 8, 2026; commerce stack - Stripe Link (300M+ saved payment methods, 1M+ businesses), Shopify Shop Pay (all Shopify stores), PayPal (global via Mastercard Agent Pay), Expedia (travel), Instacart (grocery); "Amazon blocked Muse: on September 20, Amazon started blocking Muse from browsing and purchasing on Amazon.com"; Muse first AI agent covered by Stripe Link purchase protections'
+    accessed: '2026-09-27'
+  - url: https://chatmaxima.com/blog/meta-muse-ai-agent-businesses-whatsapp-messenger/
+    what: 'ChatMaxima: Zuckerberg at Connect on Muse business model - "free for a huge number of tokens, with the expectation that over time we will profit by taking a small fee from transactions"; Sep 20 Amazon block popup "Continued access by an unauthorized AI agent violates Amazon''s Conditions of Use"; Amazon blocked after asking Meta to leave Amazon out of Muse shopping; "Should an agent have to say it is an agent? Amazon thinks yes. Can a business decline to serve agents? Amazon did."'
+    accessed: '2026-09-27'
+  - url: https://memeburn.com/meta-connect-2026-recap-every-new-device-is-a-door-into-muse/
+    what: 'memeburn Connect 2026 FAQ: "Why did Amazon block Muse? Amazon says Muse used its store without permission, does not identify itself while browsing and appears to store customer credentials. Meta disputes the credentials claim."; Muse paid tiers $20 and $100 a month; Meta plans merchant fee on Muse-completed transactions'
+    accessed: '2026-09-27'
+  denial_leg:
+    event: 'Amazon unilateral block of Meta''s Muse AI agent from Amazon.com shopping'
+    date: 'Sep 20 2026 (Motley Fool: "Sunday night"; Azoma: "on September 20, Amazon started blocking")'
+    popup_text: '"continued access by an unauthorized AI agent violates Amazon''s Conditions of Use" (The Times; AndroidHeadlines; Developments Today)'
+    objections:
+    - 'Meta never requested permission for Muse to access the store'
+    - 'Muse does not identify itself while browsing (Amazon Agent Terms require self-identification in browser traffic)'
+    - 'Appears to capture and store customer credentials; "undisclosed third-party" presence inside customer accounts'
+    meta_decline: 'Amazon asked Meta to exclude Amazon from Muse shopping features; Meta declined (TechSpot)'
+    generalization: 'Amazon plans to block Google and OpenAI shopping agents too (TechSpot) - denial generalizes beyond Meta to all rival labs'
+    characterization: 'Developments Today: "not the product of a negotiation that broke down. It is a unilateral shutdown imposed by Amazon after the fact"'
+    credential_dispute: 'Meta disputes the credential claim: assistant operates within secure virtual machines; passwords/payment data in encrypted storage Muse uses without viewing (AndroidHeadlines); memeburn: "Meta disputes the credentials claim"'
+  deal_leg:
+    event: 'Meta x Shopify agentic-checkout partnership'
+    date: 'Sep 21/22 2026 (Motley Fool: "One day later", CEO statement Monday)'
+    lutke_quote: '"partnering deeply with Muse to enable agentic checkout with Shop Pay on all Shopify stores" (Shopify CEO Tobi Lutke, via Motley Fool)'
+    market_reaction: 'Shopify shares rose 7% Monday and another 7% Tuesday, closing $147.74 - up about 15% in two days (Motley Fool)'
+    consideration: 'Paid per checkout via Shop Pay - Motley Fool headline framing: Shopify "Gets Paid on Every Checkout"'
+    geometry: 'Second-lab replication of the m831 commerce-conversion direction: the lab that PAYS publishers (m331, m594) builds its own transaction-layer network and takes the merchant fee itself'
+  muse_commerce_stack:
+    launch: 'Sep 8 2026, US only, alongside Muse Spark model (The Times; AndroidHeadlines)'
+    launch_scale: 'within a week #1 in US app stores, outpacing ChatGPT''s early mobile growth, 2.5M+ downloads; Meta share +20%, +$200B market value (The Times)'
+    stack:
+    - 'Stripe Link (300M+ saved payment methods, 1M+ businesses)'
+    - 'Shopify Shop Pay (all Shopify stores)'
+    - 'PayPal (global via Mastercard Agent Pay)'
+    - 'Expedia (travel)'
+    - 'Instacart (grocery)'
+    source: 'Azoma via GlobeNewswire Sep 24 2026'
+    stripe_protections: 'Muse is the first AI agent covered by Stripe Link''s purchase protections (damaged/lost items, price-drop adjustments, fee-free returns)'
+    business_model: 'Zuckerberg at Connect: "free for a huge number of tokens, with the expectation that over time we will profit by taking a small fee from transactions" (ChatMaxima); paid tiers $20/$100 a month plus merchant fee on Muse-completed transactions (memeburn)'
+    meta_deals: 'Meta negotiated deals with Stripe (payments provider) and Shopify to allow Muse purchases (The Times)'
+  amazon_three_role_geometry:
+    role_1_payer: 'PAYS publishers for AI content: NYT ($20-25M/yr benchmark), Conde Nast, Hearst Rufus/Alexa deals (m559 portfolio)'
+    role_2_backer: 'BACKS labs that pay publishers nothing: Anthropic $13B+ ($8B initial + $5B Apr 2026, up to $33B with milestones, announced Apr 20 2026); OpenAI $50B investment'
+    role_3_gatekeeper: 'DENIES a rival lab''s agent access to its commerce surface (this mechanism): Amazon profits from licensing publisher content for its own AI, from backing zero-deal labs, and from denying Meta''s agent the storefront'
+    structural_reading: 'Ben Thompson/Stratechery (via The Times): the block is "predictable" - "Amazon has no desire to give up its position as the primary user interface for e-commerce ... it gets a huge amount of data about users and what they want, gets the opportunity to recommend things to users, increasing cart size and gains power over suppliers"'
+  relationship_direction_taxonomy:
+    direction_number: 'SIXTEENTH per the m807 enumeration'
+    direction_name: 'COMMERCE-GATEKEEPING (access-denial as licensing leverage)'
+    definition: 'the commerce platform owner refuses a rival lab''s AI agent access to its surface, asserting gatekeeper rights over agentic transactions; the absence of a deal becomes an enforceable exclusion. The same agent class is simultaneously welcomed on paid terms by the rival platform (Shopify/Shop Pay per-checkout). The denial leg generalizes: Amazon plans to block Google and OpenAI agents too (TechSpot). The Shopify leg is the second-lab replication of the 11th direction (commerce-conversion), not a new direction itself.'
+    prior_directions: '1 sue-then-sign (m624), 2 pay-or-litigate bifurcation (m636), 3 grant-then-sue (m675), 4 license-over-authors (m699), 5 pool-and-license (m720), 6 infrastructure-capture (m738), 7 publisher-as-feed-operator (m741), 8 vendor-embed (m807), 9 litigation-pooling (m810), 10 publisher-traffic-gate (m828), 11 commerce-conversion (m831), 12 regulatory-bargaining (m834), 13 demand-for-equity (m837), 14 exclusionary-diversion (m846), 15 ecosystem-grant (m849)'
+    taxonomy_tension: 'm737''s finding enumerated termination-leverage as its seventh direction, which the m807 enumeration does not list; unresolved, carried from #1014'
+  certification_boundaries: 'Excerpt-bounded per #503: 0 browser.open this run; all facts from search excerpts and secondary relays (GeekWire via Developments Today; Forbes via TechSpot; Stratechery via The Times). The "plans to block Google and OpenAI''s too" leg is TechSpot-headline-sourced, single-source; corroboration pending. Muse launch-scale claims (2.5M downloads, +$200B market value) are launch-week reporting, possibly inflated. The "per-checkout" Shopify consideration is Motley Fool headline framing, not a filed fee schedule. No SEC cross-check exists (all parties private or reporting via press). The access-denial-as-licensing-leverage reading is the corpus''s incentive-geometry interpretation, not Amazon''s stated rationale (Amazon''s stated rationale is agent transparency and credential security).'
+  coverage_note: 'No editorial-tone claim about any publication''s coverage of the Amazon-Muse split is made this run; tone NOT_SCORED. The mechanism maps the incentive geometry (denial leg + deal leg), not coverage outcomes. Whether publications with Amazon or Meta ties frame the split differently is untested and unclaimed.'
+  novelty: 'FIRST dedicated corpus mechanism on the September 2026 agentic-commerce licensing split (Amazon x Meta Muse denial + Meta x Shopify agentic-checkout deal) and FIRST dedicated corpus mechanism on the commerce-gatekeeping geometry itself. Pre-existing corpus state: m831 maps commerce-conversion (Yelp x OpenAI, ELEVENTH direction) as the deal-side geometry; no corpus mechanism maps a platform denying a lab''s agent access as the enforcement side. Pre-commit greps per #715: zero test_type_c_1034 files on disk (glob), no "Type C #1034" in git log (--grep), max numeric mechanism_id 851 pre-commit, zero numeric mechanism key 852 in profiles/ pre-commit, block key zero-hit repo-wide pre-commit, all 8 source URLs zero-hit repo-wide pre-commit (fool.com Sep 23, thetimes.com article, techspot.com news/113981, developmentstoday.com, androidheadlines.com, globenewswire.com Azoma, chatmaxima.com, memeburn.com).'
+  connects_to: [831, 849, 559, 594, 509]
+  confounders:
+  - strength: strong
+    text: 'Excerpt-bounded sourcing per #503: 0 browser.open this run; all facts carried from search excerpts and secondary relays; the Amazon announcement itself and the Agent Terms were not read first-hand.'
+  - strength: strong
+    text: 'Platform-economics reading (Ben Thompson/Stratechery): Amazon protecting its position as the primary e-commerce user interface (data, recommendations, cart size, supplier power) is a legitimate business rationale independent of AI-lab incentives; the block may be pure platform self-interest, not publisher-lab incentive geometry.'
+  - strength: strong
+    text: 'Symmetric denial (TechSpot: Amazon plans to block Google and OpenAI agents too) cuts both ways: the block is not Meta-targeted, but it confirms a general gatekeeper policy over agentic commerce rather than a one-off dispute.'
+  - strength: medium
+    text: 'Meta''s non-cooperation: Amazon asked Meta to exclude Amazon from Muse; Meta declined (TechSpot). The denial followed Meta''s refusal, so negotiation could still resolve the split; the exclusion may be temporary.'
+  - strength: medium
+    text: 'Credential-capture claims are Amazon''s characterization, disputed by Meta (secure virtual machines, encrypted storage Muse uses without viewing - AndroidHeadlines). The security rationale may be pretextual or substantive; not adjudicated here.'
+  - strength: medium
+    text: 'Shopify''s welcome is a real paid commercial deal (Shop Pay per-checkout; +15% stock move), not mere vibes; the deal leg is independently priced by the market.'
+  - strength: weak
+    text: 'n=1 event, one week old (Sep 20); durability unknown; could be resolved by negotiation within days.'
+  - strength: weak
+    text: 'Muse launch-scale claims (2.5M downloads, #1 app store, +$200B market value) are launch-week reporting and possibly inflated.'
+  counterevidence:
+  - 'The denial is arguably symmetric platform policy, not Meta-specific: Amazon''s spokesperson frames it as neutral agent-transparency rules ("should operate openly and respect service provider decisions"), and the Google/OpenAI extension supports the neutral reading.'
+  - 'Ben Thompson''s structural reading: Amazon''s motive is preserving its e-commerce UI/data position - platform economics, not publisher-lab incentives. The corpus''s gatekeeping-as-licensing-leverage reading is an interpretation layered on top of that.'
+  - 'Shopify''s +15% two-day move shows the market prices the deal leg as real commerce-conversion value, independent of the corpus''s direction taxonomy.'
+  - 'Meta is building the same tollbooth Amazon is defending: Meta plans merchant transaction fees on Muse-completed purchases. The dispute is over WHO collects the agent-commerce toll, not whether tolls exist - both sides accept the commerce-conversion geometry.'
+  strongest_counterargument: 'The commerce-gatekeeping direction may be a one-week platform spat mislabeled as an incentive geometry. Amazon''s stated rationale is agent transparency and credential security; its spokesperson''s framing is neutral platform policy; TechSpot''s Google/OpenAI extension shows it is not Meta-targeted; Ben Thompson gives a complete platform-economics explanation (UI position, data, cart size, supplier power) that needs no lab-incentive theory. Meta declined Amazon''s exclusion request, so the denial is the predictable consequence of Meta''s non-cooperation, not a structural licensing-leverage play. If Amazon and Meta sign a deal next week, the "direction" collapses into a negotiation tactic. The corpus should record the split as a dated event with a platform-economics null, not as a durable sixteenth direction - the direction claim earns its keep only if the denial persists or replicates. Correlation, not causation.'
+  rotation_transparency: 'Iteration #1034 Type C is the FIFTH and CLOSING leg of the 1030-1034 window (D->E->A->B->C per #565 anchor + rotation guard). #1033 was the fourth leg (Type B, Aditya Soni Reuters Meta-vs-Apple register asymmetry, mechanism 851, main 8b58e3c4 / anchor f1bdcdd3 / log-hash aa98f70f). Rotation A/B/C/D/E advances: next run is #1035 Type D, opening the 1035-1039 window.'
+  concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative-corpus-integrity test), #1012 working-tree block-key fix all stay out of this run''s index and diff.'
+  verification:
+    yaml_parse_clean: true
+    ascii_only: true
+    browser_opens: 0
+    max_numeric_mechanism_id_pre_commit: 851
+    mechanism_id_claimed: 852
+    source_urls_first_appearance: 8
+    search_sets: 2
+    falsification_ledger_holds_at: 31
+  yaml_parse_clean: true
+  ascii_only: true
+  browser_opens: 0

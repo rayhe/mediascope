@@ -1,3 +1,69 @@
+## #1034 Type C: Amazon x Meta Muse agentic-commerce denial + Meta x Shopify agentic-checkout deal - SIXTEENTH relationship direction (COMMERCE-GATEKEEPING) - main MAIN_SHA_PLACEHOLDER, anchor ANCHOR_SHA_PLACEHOLDER, log-hash followup registers both hashes here per #721 (this commit)
+
+### Rotation transparency
+- 1030-1034 window FIFTH and CLOSING leg (D #1030 -> E #1031 -> A #1032 -> B #1033 -> C #1034, rotation per #565 anchor + rotation guard)
+- Predecessor #1033 Type B: main 8b58e3c438caf4ce43fef3a58f4258984909d4ff, anchor f1bdcdd327fcfa34684ecd557ebe060257cb74a2, log-hash aa98f70f9a15c6f3a3687e8eaf258873c30fa2e4
+- Pre-commit novelty greps: zero test_type_c_1034 files (glob); no "Type C #1034" in git log (--grep); max numeric mechanism_id 851 pre-commit; zero numeric mechanism_id: 852 in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; all 8 source URLs zero-hit repo-wide pre-commit (fool.com Sep 23, thetimes.com article, techspot.com news/113981, developmentstoday.com, androidheadlines.com, globenewswire.com Azoma, chatmaxima.com, memeburn.com)
+- Next run #1035 Type D opens the 1035-1039 window.
+
+### Finding
+- Type C financial-incentive mapping: FIRST dedicated corpus mechanism on the September 2026 agentic-commerce licensing split.
+- Denial leg (Sep 20 2026): Amazon unilaterally blocked Meta's Muse personal AI agent (launched US Sep 8 2026 alongside Muse Spark model; #1 US app stores within a week, 2.5M+ downloads) from shopping on Amazon.com. Popup: "continued access by an unauthorized AI agent violates Amazon's Conditions of Use". Amazon's objections: Meta never requested permission; Muse does not identify itself while browsing; appears to capture/store customer credentials (Amazon characterization, disputed by Meta). Amazon asked Meta to exclude Amazon from Muse; Meta declined (TechSpot). Amazon's updated Agent Terms require third-party apps to identify themselves in browser traffic (AndroidHeadlines). TechSpot: Amazon plans to block Google and OpenAI agents too - the denial generalizes.
+- Deal leg (Sep 21/22): Shopify CEO Tobi Lutke: "partnering deeply with Muse to enable agentic checkout with Shop Pay on all Shopify stores" (Motley Fool). Shopify +7% Monday +7% Tuesday, closing $147.74, up ~15% in two days. Paid per checkout via Shop Pay.
+- Muse commerce stack (Azoma/GlobeNewswire Sep 24): Stripe Link (300M+ saved payment methods, 1M+ businesses), Shopify Shop Pay (all Shopify stores), PayPal (global via Mastercard Agent Pay), Expedia (travel), Instacart (grocery); Muse is the first AI agent covered by Stripe Link's purchase protections.
+- Muse business model: Zuckerberg at Connect - "free for a huge number of tokens, with the expectation that over time we will profit by taking a small fee from transactions" (ChatMaxima); $20/$100 a month paid tiers + merchant fee on Muse-completed transactions (memeburn).
+- Geometry: m831's commerce-conversion direction (11th, Yelp x OpenAI) gains (a) a second-lab replication - Meta x Shopify, where the lab that PAYS publishers (m331, m594) builds its own transaction-layer network and takes the merchant fee itself; and (b) the enforcement mirror - Amazon's unilateral denial converts the ABSENCE of a deal into an enforceable access exclusion.
+- NEW RELATIONSHIP DIRECTION: SIXTEENTH per the m807 enumeration - COMMERCE-GATEKEEPING (access-denial as licensing leverage).
+- Amazon's three-role corpus geometry completes: PAYS publishers (NYT $20-25M/yr, Conde Nast, Hearst Rufus/Alexa - m559 portfolio); BACKS zero-deal labs (Anthropic $13B+ up to $33B, OpenAI $50B); DENIES a rival lab's agent access to its commerce surface (this mechanism). Ben Thompson/Stratechery (via The Times): the block is "predictable" - Amazon protects its primary e-commerce UI position (data, recommendations, cart size, supplier power).
+- connects_to [831, 849, 559, 594, 509]; mechanism 852 in profiles/competitor-entities.yaml (top-level block).
+
+### Confounders (strong-first)
+- STRONG: excerpt-bounded sourcing per #503 (0 browser.open this run; all facts from search excerpts and secondary relays; Amazon announcement and Agent Terms not read first-hand).
+- STRONG: platform-economics reading (Ben Thompson/Stratechery) - Amazon protecting its primary e-commerce UI position is a legitimate business rationale independent of AI-lab incentives; the block may be pure platform self-interest.
+- STRONG: symmetric denial (TechSpot: Amazon plans to block Google and OpenAI agents too) cuts both ways - not Meta-targeted, but confirms a general gatekeeper policy over agentic commerce.
+- MEDIUM: Meta's non-cooperation (Amazon asked Meta to exclude Amazon; Meta declined - TechSpot); the exclusion may be temporary and negotiation could resolve it.
+- MEDIUM: credential-capture claims are Amazon's characterization, disputed by Meta (secure VMs, encrypted storage).
+- MEDIUM: Shopify's welcome is a real paid commercial deal (+15% stock move), independently priced by the market.
+- WEAK: n=1 event, one week old; durability unknown.
+- WEAK: Muse launch-scale claims (2.5M downloads, +$200B market value) are launch-week reporting, possibly inflated.
+
+### Counterevidence
+- The denial is arguably symmetric platform policy, not Meta-specific (neutral agent-transparency framing; Google/OpenAI extension supports it).
+- Thompson's structural reading gives a complete platform-economics explanation needing no lab-incentive theory.
+- Shopify's +15% move shows the market prices the deal leg as real commerce-conversion value independent of the taxonomy.
+- Meta is building the same tollbooth Amazon is defending (merchant transaction fees) - the dispute is over WHO collects the agent-commerce toll, not whether tolls exist.
+
+### Statistical discipline
+- Qualitative financial-incentive mapping only per the Aug 28 2026 standing rule; tone NOT_SCORED; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; no_analysis_json_update: true; verdict directionally_supported_not_proven; NOT a falsification-family member (ledger holds at 31); NOT artifact-grade.
+- Correlation is not causation. Hypothesis-generating only.
+
+### Research method
+- 2 browser.search query sets this run, 0 browser.open per #503 (excerpt-bounded).
+- REJECTED: Meta Connect hardware (Muse Charm, camera-free glasses - not financial-incentive); Disney IMAX Enhanced VR (content bundle for hardware, not publisher-lab); Meta x News Corp $150M deal (in corpus via m594); NYT $28M litigation costs (stockmoguls Sep 6 - enriches m636, no dedicated mechanism); Anthropic settlement claims dispute (TechCrunch Sep 6 - publisher-vs-author, not lab-publisher).
+- SELECTED: Amazon x Meta Muse agentic-commerce denial + Meta x Shopify commerce-conversion counterpart - dedicated-mechanism gap, 8 zero-hit source URLs, sixteenth-direction geometry.
+
+### New Type C files
+- profiles/competitor-entities.yaml: m852 top-level block (colon-form key, no numeric mechanism-id substring per #715)
+- tests/test_type_c_1034_amazon_meta_muse_agentic_commerce_denial_shopify_shop_pay_commerce_conversion_sixteenth_direction_sep27_7am.py (58 tests, 11 classes)
+
+### Commit hashes
+- Main improvement: MAIN_SHA_PLACEHOLDER (Type C #1034: ...)
+- Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type C #1034 anchor: ...)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
+
+### Doc-sync ratchet
+- README.md header stats 53056/1358 -> 53114/1359; new table row for the #1034 test file.
+- docs/ARCHITECTURE.md test-tree row appended.
+- This iteration-log.md entry (prepended).
+
+### Rotation guard
+- Window newest-first post-commit: C #1034, B #1033, A #1032, E #1031, D #1030; adjacency cycle D->E->A->B->C per #565 (rotation guard 4/4 green post-anchor).
+
+### Push status
+- PUSH_STATUS_PLACEHOLDER
+
+### Concurrency
+- #899 (profiles/nytimes.yaml), #938 (test_type_b_938), #900 (test_type_d_900), #1012-wt (test_type_a_1012) all in-flight, untouched by this run's index and diff.
 ## #1033 Type B: Aditya Soni (Reuters) within-writer register asymmetry - Meta Connect privacy preview vs Apple Cook-to-Ternus celebration - Type B FOURTH leg of the 1030-1034 window (Sep 27 2026, 06:00 PDT; main commit 8b58e3c438caf4ce43fef3a58f4258984909d4ff / anchor f1bdcdd327fcfa34684ecd557ebe060257cb74a2; log-hash followup registers both hashes here per #721 (this commit))
 
 ### Rotation transparency
