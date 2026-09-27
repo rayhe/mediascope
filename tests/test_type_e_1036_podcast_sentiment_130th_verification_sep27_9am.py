@@ -35,7 +35,7 @@ ITERATION = 1036
 TYPE_LETTER = "E"
 RUN_PDT = "2026-09-27 09:00 PDT"
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "50274df48b1b8d8adf0db80fe70f456bef691ea4"
 
 
 def _git(args):
@@ -201,7 +201,8 @@ class TestEveryoneHatesElonHundredThirtiethCycle:
 
     def test_designtaxi_34124_returns_after_1031_absence(self):
         md = _md_1036()
-        assert "designtaxi 34124 Epstein-ad thread" in md
+        assert "community.designtaxi.com/topic/34124" in md
+        assert "(Epstein-ad thread: EHE lenticular bus-stop spoof" in md
         assert "RETURNS after NOT surfacing at #1031" in md
 
     def test_zero_new_ehe_keys_this_run(self):
