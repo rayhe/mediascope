@@ -20140,13 +20140,101 @@ journalists:
   - vr_ar_headsets
   - wearables
   - product_reviews
-  notes: 'Engadget senior editor and Engadget Podcast host; bylined first-hand reviews of Meta hardware (Quest 3, Oct 2023; Ray-Ban Stories, Sep 2021) and Apple hardware (Vision Pro, Feb 2024). Type B #753 (Sep 14 2026): mechanism 686 review-register constancy - Quest 3 enthusiastic (+0.55 MANUAL ILLUSTRATIVE: "simply blew me away", "best standalone VR headset we have ever seen") vs Vision Pro product-curious (+0.35: "far from a slam dunk, but ... one of the most fascinating devices we have ever seen"); illustrative delta (Meta minus Apple) +0.20 near-null with Meta-favoring sign; same genre, same category, four months apart; zero-gradient control (no documented Yahoo/Engadget/Apollo AI licensing deal with Meta or Apple; in-corpus Apollo chain points at Anthropic, mechanism 305); review-register analogue of mechanism 698 (Wong); TWENTY-FIFTH falsification-family member (ledger 24->25).'
-  mechanism_ids: [686]
+  notes: 'Engadget senior editor and Engadget Podcast host; bylined first-hand reviews of Meta hardware (Quest 3, Oct 2023; Ray-Ban Stories, Sep 2021) and Apple hardware (Vision Pro, Feb 2024). Type B #753 (Sep 14 2026): mechanism 686 review-register constancy - Quest 3 enthusiastic (+0.55 MANUAL ILLUSTRATIVE: "simply blew me away", "best standalone VR headset we have ever seen") vs Vision Pro product-curious (+0.35: "far from a slam dunk, but ... one of the most fascinating devices we have ever seen"); illustrative delta (Meta minus Apple) +0.20 near-null with Meta-favoring sign; same genre, same category, four months apart; zero-gradient control (no documented Yahoo/Engadget/Apollo AI licensing deal with Meta or Apple; in-corpus Apollo chain points at Anthropic, mechanism 305); review-register analogue of mechanism 698 (Wong); TWENTY-FIFTH falsification-family member (ledger 24->25). Type B #1028 (Sep 27 2026): mechanism 848 temporal-plus-genre extension of mechanism 686 - NEW same-week Sep 2026 pair, both Engadget, both Hardawar byline: Meta arm Sep 24 2026 opinion piece "Meta''s $1,300 VR Glasses Look Like The Vision Pro Sequel Apple Should Be Making" (pro-Meta XR frame: "a true successor to the Vision Pro", "lighter, cheaper and more consumer-friendly", with honest trust caveats; illustrative +0.55) vs Apple arm Sep 21 2026 Mac Mini M6 review "The best compact desktop is no longer a great deal" (value-critical: "loses the fun factor", "a lot less fun", 8.7/10; illustrative +0.10); illustrative Meta-minus-Apple delta +0.45 Meta-favoring, direction-consistent with m686''s +0.20. Hardawar''s pro-Meta XR register holds 2.5 years later and extends from review into opinion/editorial genre. THIRTY-FIRST falsification-family member (ledger 30->31).'
+  mechanism_ids: [686, 848]
+  competitor_coverage:
+    type_b_1028_devindra_hardawar_engadget_vr_glasses_vision_pro_successor_vs_mac_mini_m6_value_critical_sep24:
+      iteration: 1028
+      mechanism_id: 848
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-27 01:00 PDT'
+      block_key: type_b_1028_devindra_hardawar_engadget_vr_glasses_vision_pro_successor_vs_mac_mini_m6_value_critical_sep24
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying.'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, same-writer same-publication temporal-plus-genre extension of mechanism 686 (Type B #753). Question: does Devindra Hardawar''s pro-Meta XR register, documented in m686''s Oct-2023/Feb-2024 review pair (Quest 3 +0.55 vs Vision Pro +0.35, delta +0.20 Meta-favoring), hold 2.5 years later on new hardware and in a new genre (opinion/editorial)? Two NEW Hardawar bylines, both Engadget, three days apart in Sep 2026: (a) Meta arm Sep 24 2026 opinion piece on the Meta VR Glasses Connect launch; (b) Apple arm Sep 21 2026 Mac Mini M6 review. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      new_meta_arm_sep24:
+        title: 'Meta''s $1,300 VR Glasses Look Like The Vision Pro Sequel Apple Should Be Making'
+        dek: 'Finally, someone made lightweight VR specs.'
+        date: '2026-09-24'
+        byline: 'Devindra Hardawar (sole)'
+        publication: engadget
+        publication_owner: 'Yahoo Inc.'
+        genre: opinion_editorial_connect_launch_analysis
+        url: 'https://www.engadget.com/2267218/meta-vr-glasses-price-specs-apple-vision-pro-comparison/'
+        url_attestation: 'First-hand browser.open this run (64 lines); canonical Engadget URL recovered via author-page outlink.'
+        evidence_quotes:
+        - 'they look exactly like how I''d imagine a true successor to the Vision Pro - a pair of unobtrusive and lightweight VR glasses at a more palatable price'
+        - 'builds on the Vision Pro''s innovations to deliver something that''s lighter, cheaper and more consumer-friendly'
+        - 'Zuckerberg has never shied away from blatantly copying competitors'
+        - 'the company has significantly poisoned the idea of wearing anything in public with cameras'
+        - 'You won''t look like a huge weirdo slipping them on while flying'
+        tone_illustrative: 0.55
+        tone_note: 'MANUAL ILLUSTRATIVE: pro-Meta XR frame (true-successor language, lighter/cheaper/consumer-friendly verdict) with honest trust caveats (copying, camera-trust poisoning). Not a puff piece; the caveats bound a pure-puff reading.'
+      new_apple_arm_sep21:
+        title: 'Apple Mac mini (M6) review: The best compact desktop is no longer a great deal'
+        dek: 'At $899, the new Mac mini loses the fun factor of the previous models.'
+        date: '2026-09-21'
+        byline: 'Devindra Hardawar (sole)'
+        publication: engadget
+        publication_owner: 'Yahoo Inc.'
+        genre: product_review
+        url: 'https://www.engadget.com/2263471/apple-mac-mini-m6-review/'
+        url_attestation: 'Verbatim from browser.search Full-URL listing this run; register excerpts from search-result text.'
+        evidence_quotes:
+        - 'At $899, the new Mac mini loses the fun factor of the previous models'
+        - 'no longer the shockingly great deal that it used to be'
+        - 'Now the Mac mini just seems a lot less fun'
+        - 'RATING: 8.7 / 10; Cons: Much more expensive than previous gens, Pricey memory and storage upgrades'
+        tone_illustrative: 0.10
+        tone_note: 'MANUAL ILLUSTRATIVE: value-critical review register; positive on hardware (powerful M6 chip) but the verdict frame is price/value disappointment.'
+      asymmetry_scorer_result:
+        illustrative_meta_arm_tone: 0.55
+        illustrative_apple_arm_tone: 0.10
+        illustrative_cross_entity_delta_meta_minus_apple: 0.45
+        meta_minus_apple_calc: '+0.55 minus +0.10 = +0.45 Meta-favoring'
+        cross_entity_delta_direction: 'Meta-favoring, direction-consistent with m686''s +0.20 review-pair delta'
+        engine: 'NOT run'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        artifact_grade: 'NOT artifact-grade'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones from first-hand (Meta arm) and excerpt-bounded (Apple arm) register reads; NOT an empirical measurement; no inference can be drawn; correlation_not_causation.'
+      extends_mechanism_686:
+        prior: 'Type B #753 (Sep 14 2026): Quest 3 review (+0.55, Oct 2023) vs Vision Pro review (+0.35, Feb 2024); delta +0.20 Meta-favoring; review-register constancy; TWENTY-FIFTH falsification-family member.'
+        this_run: 'Temporal extension 2.5 years (2024 -> Sep 2026) plus genre extension (review -> opinion/editorial). Same writer, same publication, same-week pair (Sep 21 vs Sep 24). Delta +0.45 Meta-favoring: direction holds, magnitude larger in opinion genre.'
+        prediction_test: 'm686''s register-constancy prediction HOLDS: Hardawar applies a pro-Meta XR frame to new Meta hardware in a new genre while applying a value-critical frame to same-week Apple hardware.'
+      is_significant: false
+      verdict: 'directionally_supported_not_proven'
+      falsification_family_member: true
+      falsification_family_ordinal: 'THIRTY-FIRST'
+      falsification_ledger: 31
+      no_analysis_json_update: true
+      incentive_context: 'Zero-gradient control carried from m686: no documented Yahoo/Engadget/Apollo AI licensing deal with Meta or Apple; in-corpus Apollo chain points at Anthropic (mechanism 305). Bounded absence, not a proven zero. correlation not causation.'
+      confounders_ranked:
+      - 'STRONG: genre asymmetry (opinion/editorial vs product review) - this is the extension test itself, not merely a confound; magnitude comparisons across genres are illustrative only'
+      - 'STRONG: product-category mismatch (VR glasses vs desktop computer); the pair tests writer-level register, not product-level parity'
+      - 'MODERATE: Meta arm contains honest Meta criticism (trust poisoning, copying) - bounds a pure-puff reading and is consistent with Hardawar''s balanced register'
+      - 'MODERATE: price-gap framing ($1,300 vs $3,700 Vision Pro) is factual reporting, not necessarily writer bias'
+      - 'WEAK: n=1 per arm degeneracy'
+      - 'WEAK: Apple arm excerpt-bounded (search excerpts only); Meta arm first-hand read'
+      counterevidence:
+      - 'm686''s +0.20 review-pair delta vs this run''s +0.45 opinion-vs-review delta: direction consistent, magnitude differs by genre - genre, not entity, may drive the gap'
+      - 'Hardawar''s Sep 14 2026 Valve Steam Frame review ("too little, too late", $1,000+ criticism) shows he applies critical register to non-Meta VR hardware too - bounds a Meta-only-favoritism reading'
+      - 'The Mac Mini review is 8.7/10 (positive score) with value-criticism framing - the critical register is about price, not product quality'
+      connects_to: [686, 698, 688, 690, 305]
+      rotation_transparency: '1025-1029 window FOURTH leg (D #1025 -> E #1026 -> A #1027 -> B #1028 -> C #1029, rotation per #565). Predecessor #1027 Type A (main e60a320b, anchor 14219940). No "Type B #1028" in git log pre-commit; no test_type_b_1028 files pre-commit; max numeric mechanism_id 847 pre-commit (financial-times.yaml mechanism: 847). Next run #1029 Type C closes the window.'
+      research_method: '13 browser.search query sets + 2 browser.open this run. REJECTED candidates: Adrienne So (m102/m380/#457 saturated); Karissa Bell (m722/m764/m773 saturated); Scott Stein (m106/m588); Cherlynn Low (m150); Billy Steele (m246); Ian Carlos Campbell (in-flight #898/m770 owns him - concurrency protocol); Hamish Hector (m809/#963 already did the exact Sep-24 Meta Audio vs Snap pair - saturation caught pre-commit); Sarah Perez (m617/#638); Amanda Silberling (m620/#643); Emma Roth (m792/#918); Vanessa Hand Orellana (no confirmed same-writer Meta arm); Filipe Esposito (attribution risk on Engadget byline). SELECTED: Devindra Hardawar - Sep-24 Meta VR Glasses opinion piece surfaced via Engadget wearables listing; same-week Mac Mini M6 review surfaced via buzzsumo journalist profile; both URLs verbatim (Meta arm via author-page outlink + first-hand browser.open 64 lines; Apple arm via search Full-URL listing). Pre-commit novelty sweeps per #715: zero test_type_b_1028 files on disk (glob); no Type B #1028 in git log (--grep); max numeric mechanism_id 847 pre-commit; zero underscore-form 848 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; both Engadget URLs zero-hit repo-wide pre-commit. ASCII-only, no em dashes.'
+      test_file: 'tests/test_type_b_1028_devindra_hardawar_engadget_vr_glasses_vision_pro_successor_vs_mac_mini_m6_value_critical_sep24_1am.py'
   source_urls:
   - https://www.engadget.com/meta-quest-3-review-mixed-reality-vr-150009788.html?src=rss/
   - https://www.engadget.com/engadget-podcast-meta-quest-3-pixel-8-reviews-123048988.html?src=rss
   - https://www.engadget.com/engadget-podcast-apple-vision-pro-review-133053827.html?src=rss
   - https://www.engadget.com/facebook-ray-ban-stories-smart-glasses-ar-160006477.html?src=rss
+  - https://www.engadget.com/2267218/meta-vr-glasses-price-specs-apple-vision-pro-comparison/
+  - https://www.engadget.com/2263471/apple-mac-mini-m6-review/
 
 - name: Samuel Axon
   publication: Ars Technica
