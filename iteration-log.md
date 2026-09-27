@@ -51,7 +51,7 @@
 - Window newest-first post-commit: B #1033, A #1032, E #1031, D #1030, C #1029; adjacency cycle A->B->C->D->E->A valid per the ORDER check.
 
 ### Push status
-- (filled post-push this run)
+- Pushed Sep 27 2026 ~06:4x PDT: main 8b58e3c4 + anchor f1bdcdd3 + log-hash aa98f70f pushed (0456f811..aa98f70f main -> main) and ls-remote-verified (remote tip aa98f70f9a15c6f3a3687e8eaf258873c30fa2e4 == local tip); in-flight #899/#938/#900/#1012-wt untouched.
 
 ### Concurrency
 - #899 (profiles/nytimes.yaml), #938 (test_type_b_938), #900 (test_type_d_900), #1012-wt (test_type_a_1012) remain in-flight and untouched; targeted staging only (git add of the 5 #1033 files).
