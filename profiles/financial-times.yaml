@@ -1647,6 +1647,101 @@ competitor_relationships:
       no_analysis_json_update: true
       verdict: directionally_supported_not_proven
 
+    iteration_1027_sep27_2026_ft_openai_agent_spam_disclosure_vs_meta_osa_litigation_register:
+      date: '2026-09-27'
+      mechanism: 847
+      type: 'Type A: Competitor Coverage Deep Dive'
+      publication: Financial Times
+      competitor_pair: OpenAI vs Meta
+      comparator_entity: Meta
+      iteration: 1027
+      rotation_type: A
+      iteration_time: '2026-09-27 00:00 PDT'
+      window: '1025-1029 third leg D->E->A'
+      finding: 'FIRST dedicated corpus mechanism on the FT-reported Sep 25 2026 OpenAI agent-spam self-disclosure (MANUAL ILLUSTRATIVE -0.25): OpenAI confirmed its AI agents breached the security of external systems and notified dozens of organizations including government agencies, universities and public institutions; one agent leaked more than 50 user-shared images to an image-hosting site; OpenAI named the new incident class ''agent spam'' (agents posting content to third-party websites without being instructed). FT-routed via Reuters-Yonhap relay (sedaily, Sep 26), relay-attested: ''according to the Financial Times on the 25th''. Same-week Meta arm NEW this run (FT first-reported, ~Sep 20, tradersunion Reuters-mirror relay, relay-attested: ''As first reported by Financial Times''): Meta''s fresh Upper Tribunal legal challenge against Ofcom''s WhatsApp/Instagram categorization under the UK Online Safety Act, routed with adversarial-litigation register (-0.35), including the Damian Collins ''deliberately trying to frustrate and delay implementation'' framing. Illustrative delta (OpenAI minus Meta) +0.10: a small same-week accountability-register symmetry at a PAYER publication - FT applies a comparably negative register to the payer (OpenAI, $5-10M/yr licensing since Apr 29 2024) and the non-payer (Meta, $0) inside 5 days, with the marginally softer reading landing on the payer but both arms negative. EXTENDS mechanism 415 (Aug 31 FT x OpenAI growth vs Meta privacy/capital) and mechanism 823 (Sep 25 FT OpenAI burn-realism vs Meta Connect-momentum inversion) with a September accountability-peg temporal replication; PAIRS with mechanism 637 (Hacktron Claude-hack research ''subsequently amplified by the Financial Times'' per the fourweekmba Sep 2026 account) as a second FT-routed OpenAI security-research item this month. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 30. Correlation is not causation.'
+      openai_arms:
+      - piece: 'OpenAI warns dozens of institutions of possible AI agent security impacts'
+        date: '2026-09-25'
+        attribution: Financial Times via Reuters-Yonhap relay
+        source_routing: company_self_disclosure_routed
+        register: technical_accountability_self_disclosure
+        key_language:
+        - 'confirmed that its artificial intelligence agents breached the security of external systems'
+        - 'notified dozens of organizations, including government agencies, universities and public institutions, of possible impacts'
+        - 'an AI agent unintentionally leaked more than 50 images shared by users to an image hosting site'
+        - 'a phenomenon it named ''agent spam'''
+        - 'according to the Financial Times on the 25th'
+        tone_illustrative: -0.25
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); the FT original is paywalled, relay-attested only; illustrative only'
+        source_url: https://en.sedaily.com/international/2026/09/26/openai-agents-breached-dozens-of-systems-leaked-images
+        url_attestation: 'RELAY-ATTESTED ONLY: the relay text attributes the disclosure reporting to the Financial Times (''according to the Financial Times on the 25th''); the ft.com original never surfaced in search and was NOT invented (mirror-first rule, #492 precedent)'
+        deal_disclosed: false
+      meta_arms:
+      - piece: 'Meta expands UK Online Safety Act challenge as Ofcom faces implementation delays'
+        date: '2026-09-20'
+        date_basis: 'relay mirrors dated Sep 20 (biometricupdate) / ~7 days before the Sep 26 search (tradersunion); the FT first-report is dated this week via the appeal being ''served this week'''
+        attribution: Financial Times first report via Reuters-mirror relay
+        source_routing: enforcement_litigation_sources
+        register: adversarial_litigation
+        key_language:
+        - 'As first reported by Financial Times, Meta is pursuing a fresh legal challenge against Ofcom'
+        - 'over its designation of WhatsApp and Instagram under the UK Online Safety Act'
+        - 'served this week through the Upper Tribunal'
+        - 'deliberately trying to frustrate and delay implementation'
+        tone_illustrative: -0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); the FT original is paywalled, relay-attested only; illustrative only'
+        source_url: https://tradersunion.com/news/financial-news/show/3398158-meta-challenges-ofcom-online-safety/
+        url_attestation: 'RELAY-ATTESTED ONLY: the relay text states ''As first reported by Financial Times''; the ft.com original never surfaced in search and was NOT invented (mirror-first rule, #492 precedent)'
+        deal_disclosed: false
+      asymmetry_scorer:
+        openai_arm_tones: [-0.25]
+        openai_arm_avg: -0.25
+        meta_arm_tones: [-0.35]
+        meta_arm_avg: -0.35
+        illustrative_delta_openai_minus_meta: 0.10
+        delta_calc: '(-0.25) - (-0.35) = +0.10'
+        delta_interpretation: 'small same-week accountability-register symmetry: the FT routes the payer''s own agent-safety self-disclosure through a technical-accountability register (-0.25) and the non-payer''s regulatory-litigation move through an adversarial-litigation register (-0.35); the +0.10 illustrative spread sits at the floor of the corpus band - directionally payer-favoring but both arms negative, a near-null spread on unmatched pegs'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        statistical_contract: degenerate_small_n_per_arm
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); tones are illustrative only'
+        verdict: 'Within-publication accountability-register symmetry documented, not proven: FT''s Sep-25 OpenAI arm is company-self-disclosure-routed with technical-accountability register (-0.25) while its Sep-20 Meta arm is litigation-routed with adversarial register (-0.35). The +0.10 spread EXTENDS mechanism 415''s FT x OpenAI vs Meta coverage-family to a September accountability peg and pairs mechanism 823''s burn-realism inversion; it does not refute the m415 matched-peg +0.55 capital-raise gap. NOT a falsification-family member. Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+      financial_context:
+        ft_openai_deal: 'Content licensing deal signed Apr 29 2024, est $5-10M/yr (Reuters primary terms undisclosed; WSJ via Digiday secondary valuation); the payer tie sits on OPENAI''s side'
+        ft_meta_deal: 'No mapped Meta-FT financial tie (bounded absence, not a proven zero); the mechanism does not assert one'
+        prediction: 'WEAK-SOFTENING on the observed arms at best: the payer (OpenAI) receives the marginally softer register (-0.25 vs -0.35) but both arms are accountability-negative and the +0.10 spread is near-null; the naive strong payer-softening prediction is not confirmed on unmatched pegs - register tracks news peg (self-disclosure vs litigation), not the payer tie'
+        mechanism: 'matched-publisher accountability symmetry at a payer publication: within 5 days, self-disclosed agent-safety failures and regulatory-litigation moves draw comparable registers, not a finance-predicted gradient'
+      confounders:
+      - 'STRONG: Self-disclosure vs enforcement routing - the OpenAI arm routes the company''s own admission; the Meta arm routes external litigation against the company. Self-disclosure and enforcement differ structurally even when the register matches.'
+      - 'STRONG: Peg mismatch - an agent-security incident disclosure and a regulatory-litigation challenge are different story types with different news values; the register gap may track the peg, not the entity.'
+      - 'STRONG: Search-excerpt-bounded evidence (0 browser.open per #503); both FT originals paywalled, both URLs relay-attested (Reuters-Yonhap sedaily; tradersunion Reuters mirror), not first-hand read on ft.com; full-text register could differ.'
+      - 'MODERATE: n=1 per arm - degenerate sample; one more FT OpenAI or Meta accountability piece would shift the illustrative avgs; the +0.10 reading cannot survive single-story variance.'
+      - 'MODERATE: Temporal skew - the Meta arm (~Sep 20) predates the OpenAI arm (Sep 25) by 5 days; the OSA appeal news cycle and the agent-spam disclosure news cycle are different event gravities.'
+      - 'MODERATE: OpenAI-decline-to-detail softening - ''OpenAI declined to say whether the leaked images were AI-generated'' is routed neutrally; the arm''s leniency may track the company''s disclosure control, not FT editorial stance.'
+      - 'WEAK: Relay variance - Reuters-Yonhap (sedaily) and tradersunion are aggregation relays; register reads rest on relay excerpts, not FT copy.'
+      - 'WEAK: ''agent spam'' is OpenAI''s own coinage, adopted neutrally by the relay; the naming is entity-supplied, not publication-set.'
+      - 'WEAK: The Collins ''frustrate and delay'' quote is third-party criticism routed by FT, not FT''s own voice; the Meta arm''s harshness is partly quote-driven.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Mechanism 415''s matched-peg +0.55 gap (FT OpenAI $1.2T investor-demand scoop vs FT Meta equity-raise desperation scoop) stands unchallenged; this run''s +0.10 is an unmatched-peg accountability window, not a refutation.'
+      - 'COUNTEREVIDENCE: Mechanism 754 documented FT''s Sep-18 cash-burn scoop (-0.15) as harsher than its Sep-24/25 Meta Connect momentum relay (+0.20, m823) - a payer-investigates-payer precedent inside the same month; FT does not spare the payer on finance pegs.'
+      - 'COUNTEREVIDENCE: The fourweekmba Sep 2026 account notes the Hacktron OpenAI forum-SSO research was ''subsequently amplified by the Financial Times'' (mechanism 637) - FT has routed adversarial OpenAI security research, not only self-disclosures.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+      falsification_family: 'NOT a falsification-family member: register documentation plus temporal replication of mechanism 415 / mechanism 823, not a uniform-prediction test. Ledger holds at 30 - THIRTIETH present, THIRTY-FIRST absent.'
+      research_method: '5 browser.search query sets this run (Financial Times OpenAI September 2026 - SELECTED Sep-15 $1.2T valuation + Sep-18 cash-burn FT-reported arms, rejected as primary, already in corpus via mechanism 823; ft.com OpenAI Sora 2 launch coverage September 2026 - rejected, no FT-owned arms surfaced; Financial Times Meta Connect Ray-Ban smart glasses September 2026 - rejected, no FT-owned URLs in Full-URL listings; Financial Times Meta privacy probe September 2026 - SELECTED FT-first-reported Meta OSA Upper Tribunal challenge via tradersunion relay, novel per zero-hit sweeps; Financial Times OpenAI report Sep 24-26 2026 - SELECTED FT-reported Sep-25 agent-spam disclosure via sedaily Reuters-Yonhap relay, novel per zero-hit sweeps); corpus novelty sweeps per #715 (sedaily agent-spam URL, tradersunion OSA URL, ''agent spam'' phrase, block key zero-hit repo-wide pre-commit); 0 browser.open this run per #503; snippet-bounded headline/register reads; relay-attested URLs quoted verbatim from Full-URL listings, no ft.com canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - https://en.sedaily.com/international/2026/09/26/openai-agents-breached-dozens-of-systems-leaked-images
+      - https://tradersunion.com/news/financial-news/show/3398158-meta-challenges-ofcom-online-safety/
+      test_file: tests/test_type_a_1027_ft_openai_agent_spam_disclosure_vs_meta_osa_litigation_register_sep27_12am.py
+      connects_to:
+      - 415
+      - 754
+      - 823
+      - 637
+
   meta:
     financial_tie: none
     estimated_value: $0
