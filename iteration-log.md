@@ -20,7 +20,7 @@ In-flight items #899 (profiles/nytimes.yaml mechanism 771 hunk), #938 (test_type
 ### Doc-sync
 README stats 53303/1363 -> 53347/1364 (+45/+1); README table row appended; docs/ARCHITECTURE.md tree row appended; this log entry prepended newest-first.
 
-- Push status (this run, Sep 27 2026 ~12:2x PDT): PLACEHOLDER - filled post-push per the #1038 7031b832 precedent.
+- Push status (this run, Sep 27 2026 ~12:25 PDT): pushed main 7f2302d9 + anchor followup 0b4263e8 + log-hash followup afe7b837 (7031b832..afe7b837 main -> main, fast-forward, atomic proxy-credential extract/test/use workflow, inline x-access-token push URL, credential never left the single push shell); remote tip verified equals local tip (afe7b8375e8223f1ef3d8b5b60cff698084a54bb) via git ls-remote post-push (one transient Recv-failure retry, second attempt clean); zero pre-push-ahead deltas; concurrency: #899/#938/#900/#1012-wt in-flight untouched.
 
 ## #1038 Type B: Terrence O'Brien (The Verge) within-writer register parity - Sep-26 OpenAI training-pause adversarial safety-crisis register (-0.55 carried from m853) vs Sep-24 Meta Muse filesystem-vulnerability adversarial register (-0.50) - the Vox-deal "softer" prediction fails at the WRITER level (illustrative delta -0.05, near-NULL); THIRTY-THIRD falsification-family member - Type B FOURTH leg of the 1035-1039 window (Sep 27 2026, 11:00 PDT; main commit 89737dcc / anchor 03e3d4d6; log-hash followup registers both hashes here per #721 (this commit))
 
