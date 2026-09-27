@@ -56,7 +56,7 @@ NEXT_DASH = "mechanism" + "-857"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id: " + "857"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1042"), ("E", "1041"), ("D", "1040"), ("C", "1039"), ("B", "1038")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "21deb9d81337706d7853fd53577f9aa682bc94ce"
 
 WSJ_UN_URL = "https://www.wsj.com/tech/ai/openai-agents-used-aggressive-techniques-to-access-u-n-website-522c70ff"
 WSJ_AKAMAI_URL = "https://www.wsj.com/tech/anthropic-to-pay-akamai-technologies-11-6-billion-over-seven-years-for-cloud-services-7a55360b"
