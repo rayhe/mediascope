@@ -1,4 +1,4 @@
-## #1029 Type C: OpenAI x American Journalism Project July 2026 grant renewal ($5M + $3M credits, two-year extension) - mechanism 849 FIRST ecosystem-grant geometry, FIFTEENTH relationship direction (Sep 27 2026, 02:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit: MAIN_SHORT / ANCHOR_SHORT))
+## #1029 Type C: OpenAI x American Journalism Project July 2026 grant renewal ($5M + $3M credits, two-year extension) - mechanism 849 FIRST ecosystem-grant geometry, FIFTEENTH relationship direction (Sep 27 2026, 02:00 PDT; main commit a9080e9bba16fe5a3fc79e5753733b60cf9bb255 / anchor 5a0cb370721570fc0017f50e86611e3e864b6e2e; log-hash followup registers both hashes here per #721 (this commit: a9080e9b / 5a0cb370))
 
 2026-09-27 02:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1025-1029 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -21,8 +21,8 @@ Research method: 5 browser.search query sets + 0 browser.open per #503 (excerpt-
 - Falsification ledger: holds at 31 (NOT a falsification-family member)
 
 ### Commits
-- Main: MAIN_SHA_PLACEHOLDER (mechanism + test + docs)
-- Anchor followup: ANCHOR_SHA_PLACEHOLDER (ANCHORED_SHA patch in test file)
+- Main: a9080e9bba16fe5a3fc79e5753733b60cf9bb255 (mechanism + test + docs)
+- Anchor followup: 5a0cb370721570fc0017f50e86611e3e864b6e2e (ANCHORED_SHA patch in test file)
 - Log-hash followup: updates this header per #721
 
 ### Concurrency
