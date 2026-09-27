@@ -1,4 +1,4 @@
-## #1028 Type B: Hardawar (Engadget) Sep-2026 Meta VR Glasses pro-Meta opinion vs Mac Mini M6 value-critical review - mechanism 848 temporal+genre extension of m686 (Sep 27 2026, 01:00 PDT; main commit PATCH_MAIN / anchor PATCH_ANCHOR; log-hash followup registers both hashes here per #721 (this commit: PATCH_MAIN_SHORT / PATCH_ANCHOR_SHORT))
+## #1028 Type B: Hardawar (Engadget) Sep-2026 Meta VR Glasses pro-Meta opinion vs Mac Mini M6 value-critical review - mechanism 848 temporal+genre extension of m686 (Sep 27 2026, 01:00 PDT; main commit 8f3263e8e077cce9849705a3dbfa61fba8168142 / anchor aad728cade1887f36bff6253ac60395bec11e38e; log-hash followup registers both hashes here per #721 (this commit: 8f3263e8 / aad728ca))
 
 2026-09-27 01:00 PDT, iteration_type "B", **FOURTH leg of the 1025-1029 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
