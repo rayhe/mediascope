@@ -1,4 +1,4 @@
-## #1030 Type D: m847/m848/m849 qualitative-discipline verification + post-1025-1029 corpus integrity (max numeric mechanism_id 849; zero 850 keys numeric/underscore/dash; ledger holds at 31) + #1025 background-suite tombstone (FORTY-SEVENTH consecutive death; lineage SIXTY-FIFTH -> SIXTY-SIXTH) + fresh synthetic engine calibration - Type D FIRST leg of the 1030-1034 window, OPENING it (Sep 27 2026, 03:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit))
+## #1030 Type D: m847/m848/m849 qualitative-discipline verification + post-1025-1029 corpus integrity (max numeric mechanism_id 849; zero 850 keys numeric/underscore/dash; ledger holds at 31) + #1025 background-suite tombstone (FORTY-SEVENTH consecutive death; lineage SIXTY-FIFTH -> SIXTY-SIXTH) + fresh synthetic engine calibration - Type D FIRST leg of the 1030-1034 window, OPENING it (Sep 27 2026, 03:00 PDT; main commit b7c86ef4f364a63ed00256504ce3e341a7730916 / anchor be70afaf08989bc0e2d3961d41aaff184239b679; log-hash followup registers both hashes here per #721 (this commit: b7c86ef4 / be70afaf))
 
 2026-09-27 03:00 PDT, iteration_type "D", **FIRST leg of the 1030-1034 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -21,7 +21,7 @@ Qualitative-discipline verification of the three committed mechanisms from the 1
 tests/test_type_d_1030_m847_m848_m849_qualitative_corpus_integrity_sep27_3am.py - 12 classes, 51 tests (42 green pre-commit excluding doc-sync 3 + iteration-log 3 per #719 which go green post-doc-sync; novelty anchor 1 + rotation-guard 2 deselected pre-commit per #565, patched green in anchor followup).
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse post-commit); anchor followup TBD (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 51/51 file tests green post-followup); log-hash followup updates this line (this commit).
+Main commit b7c86ef4f364a63ed00256504ce3e341a7730916 (verified via git rev-parse); anchor followup be70afaf08989bc0e2d3961d41aaff184239b679 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 51/51 file tests green post-followup); log-hash followup updates this line (this commit).
 
 ### Doc-sync ratchet
 README stats table 52866/1354 -> 52917/1355 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1030 entry (this entry). Authoritative .venv pytest --collect-only this run: collected count to be verified post-commit (estimated delta +51/+1 = the #1030 file; system-python3 pytest gate undercounts due to missing deps, venv python authoritative per the #530 lesson); count_stats.py --check under system python3 emits the known false-stale verdict for the same reason.
