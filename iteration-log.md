@@ -1,4 +1,4 @@
-## #1034 Type C: Amazon x Meta Muse agentic-commerce denial + Meta x Shopify agentic-checkout deal - SIXTEENTH relationship direction (COMMERCE-GATEKEEPING) - main MAIN_SHA_PLACEHOLDER, anchor ANCHOR_SHA_PLACEHOLDER, log-hash followup registers both hashes here per #721 (this commit)
+## #1034 Type C: Amazon x Meta Muse agentic-commerce denial + Meta x Shopify agentic-checkout deal - SIXTEENTH relationship direction (COMMERCE-GATEKEEPING) - main 5df0bd19b01927b375d7e014d6536f9677d379b6, anchor 527983e6df213b2971023ba9cb40b8a2a2397fed, log-hash followup registers both hashes here per #721 (this commit)
 
 ### Rotation transparency
 - 1030-1034 window FIFTH and CLOSING leg (D #1030 -> E #1031 -> A #1032 -> B #1033 -> C #1034, rotation per #565 anchor + rotation guard)
