@@ -26463,3 +26463,115 @@ type_c_1024_benioff_sources_podcast_microsoft_openai_exclusion_salesforce_anthro
   yaml_parse_clean: true
   ascii_only: true
   browser_opens: 0
+
+type_c_1029_openai_ajp_grant_renewal_ecosystem_grant_fifteenth_direction_sep27_2am:
+  mechanism_id: 849
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1029
+  iteration_type: C
+  date_analyzed: '2026-09-27'
+  time_pdt: '02:00'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  job_id: mediascope-meta-wearables-press-analysis
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'FIRST dedicated corpus mechanism on OpenAI''s July 2026 American Journalism Project grant renewal ($5M cash + $3M API credits, two-year extension): the ecosystem-grant geometry, FIFTEENTH relationship direction'
+  block_key: type_c_1029_openai_ajp_grant_renewal_ecosystem_grant_fifteenth_direction_sep27_2am
+  key_design_note: 'colon-form top-level key, no numeric mechanism-id substring (no 849 string per #715)'
+  finding: 'FIRST dedicated corpus mechanism on OpenAI''s July 2026 American Journalism Project (AJP) grant renewal, and the FIRST dedicated mechanism on the ecosystem-grant geometry itself. ANNOUNCED late July 2026: AJP said OpenAI was renewing its investment by contributing an additional $5 million over the next two years (Inside Philanthropy, AJP CEO Sarabeth Berman interview, ~Sep 15 2026); reported Jul 22 2026 via Axios (newscaststudio relay): $5 million in additional funding plus $3 million in technology credits as a two-year extension of the organizations'' partnership. TERMS: $5M cash + $3M tech credits (credits lower than the 2023 round''s $5M in credits). PHASE-1 BASELINE (Jul 2023, in-corpus): $5M funding + $5M credits; established the AJP Product & AI Studio; 31 organizations received direct grants across 38 states; portfolio of 50+ nonprofit newsrooms (newscaststudio); AJP has raised $139M from local and national funders and backed 41 nonprofit local news organizations (theajp.org announcement). PHASE-2 SHIFT: from experimentation to field-building (Berman): the renewal moves beyond newsroom-specific experiments toward shared products and infrastructure for nonprofit local news; participating newsrooms in phase 1 built tools for fundraising, donor communications, data analysis, translation, and civic-information delivery (newscaststudio). STATED RATIONALE: Tom Rubin, OpenAI chief of intellectual property and content: "These partnerships are consistent with our mission and have demonstrated great success. We are committed to them because they demonstrate that the technology can benefit society." Berman on the talent layer: newsrooms need "outstanding talent across the country to build these new models for how we deliver news to the community" and AI-adopting newsrooms benefit from an "experienced and engaged human in the lead"; AJP expects "additional investments in this space" (Inside Philanthropy). GRANT STACK (blockchain.news, single-source): WAN-IFRA''s Newsroom AI Catalyst (165+ newsrooms worldwide), the Lenfest Institute AI fellowship program, and CUNY/Medill journalism-school partnerships - OpenAI''s grant layer extends beyond AJP into global newsroom-AI adoption programs. GEOMETRY: cash + API credits flow from the lab to a venture philanthropy, which re-grants to nonprofit newsrooms; NO content license, NO citation requirement, NO equity, NO revenue share - the consideration is reputational and regulatory goodwill plus newsroom AI-adoption, not content rights. NEW RELATIONSHIP DIRECTION: FIFTEENTH per the m807 enumeration - ECOSYSTEM-GRANT (grant-without-consideration): philanthropic subsidy to journalism infrastructure with no content-rights consideration, distinct from all fourteen prior directions. (Taxonomy-count tension: m737''s finding enumerated termination-leverage as its seventh direction, which the m807 enumeration does not list; unresolved, carried from #1014.) CONTRASTS: (a) vs mechanism 714 (OpenAI x Village Media, Sep 2026): funding + credits + support FOR a product (Open Door) with citation-in-ChatGPT as consideration - AJP has no content consideration, pure ecosystem subsidy; (b) vs mechanism 675 (grant-then-sue): Seattle Times/Newsday took Oct 2024 $10M fellowship grants then sued the grant-makers Sep 2026 - AJP grantees have not sued (current-state observation, not a compliance prediction); (c) vs mechanism 609: #609 cited this renewal as a positive control (in-corpus competitor-entities.yaml:837/881) for first-gen licensing renewals - this run promotes the control into a dedicated mechanism. Correlation, not causation. Hypothesis-generating only.'
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scores: NOT_SCORED
+  engine_run: false
+  falsification_ledger: 31
+  falsification_family_member: false
+  falsification_note: 'THIRTY-FIRST corpus mechanism logged under the #1000-established falsification framework (m818 family anchor); this mechanism is NOT a falsification-family member (it is qualitative financial mapping of a grant geometry, not a falsifiable editorial-tonal claim); the falsification ledger holds at 31.'
+  excerpt_bounded: true
+  excerpt_bounded_note: '0 browser.open this run per #503; renewal terms, grantee counts, and quotes carried from search excerpts and secondary relays (Axios via newscaststudio; Inside Philanthropy Berman interview; theajp.org announcement excerpt), NOT first-hand review of the AJP announcement or the grant agreement.'
+  sources:
+  - url: https://www.insidephilanthropy.com/home/the-most-compelling-case-isnt-journalism-in-crisis-ajp-on-keeping-local-news-sustainable
+    what: 'AJP CEO Sarabeth Berman interview (~Sep 15 2026): "In late July, AJP announced that OpenAI was renewing its investment by contributing an additional $5 million over the next two years to help it move from experimentation to field-building"; talent/AI emphasis; "We expect to make additional investments in this space"'
+    accessed: '2026-09-27'
+  - url: https://theajp.org/american-journalism-project-announces-new-partnership-with-openai-to-support-local-news/
+    what: 'AJP''s own renewal announcement: $5M in funding plus up to $5M in API credits to AJP and portfolio organizations; AJP has raised $139M from local and national funders and backed 41 nonprofit local news organizations'
+    accessed: '2026-09-27'
+  - url: https://gpa.net/blogs/americas/us-5-million-openai-local-news-deal
+    what: 'Axios relay of the two-year deal: $5M in funding for local news initiatives through AJP plus $5M in credits; part of OpenAI''s broader journalism-company news and tech-sharing agreements'
+    accessed: '2026-09-27'
+  - url: https://blockchain.news/news/openai-expands-ai-journalism-initiatives
+    what: 'Grant-stack context (single-source): OpenAI renewed a $5M commitment to local journalism in July 2026; WAN-IFRA Newsroom AI Catalyst reached 165+ newsrooms worldwide; Lenfest Institute AI fellowship; CUNY/Medill journalism-school partnerships'
+    accessed: '2026-09-27'
+  - url: https://www.newscaststudio.com/2026/07/22/openai-renews-local-news-partnership-with-5-million-investment/
+    what: 'CARRIED (in-corpus competitor-entities.yaml:837/881, #609 positive control): Axios Jul 22 2026 - $5M additional funding + $3M technology credits, two-year extension; phase-1 baseline ($5M + $5M, Product and AI Studio, 31 grantees across 38 states); Tom Rubin quote; phase-2 shared products and infrastructure'
+    accessed: '2026-09-27'
+  - url: https://openai.com/index/partnership-with-american-journalism-project-to-support-local-news/
+    what: 'CARRIED (in-corpus, 2023 original): OpenAI''s July 2023 AJP partnership announcement, $5M commitment baseline'
+    accessed: '2026-09-27'
+  renewal_terms:
+    announced: 'late July 2026 (Inside Philanthropy: "In late July, AJP announced"; newscaststudio/Axios: Jul 22 2026)'
+    cash: '$5M additional funding (newscaststudio/Axios; Inside Philanthropy: "an additional $5 million over the next two years")'
+    credits: '$3M in technology credits (newscaststudio/Axios); theajp.org announcement cites up to $5M in API credits - figure discrepancy bounded, not resolved'
+    duration: 'two-year extension (newscaststudio/Axios)'
+    phase1_baseline: 'Jul 2023: $5M funding + $5M credits; AJP Product & AI Studio established; 31 organizations direct grants across 38 states; 50+ nonprofit newsrooms portfolio (newscaststudio)'
+  phase2_shift:
+    direction: 'from experimentation to field-building (Berman, Inside Philanthropy)'
+    output: 'shared products and infrastructure for nonprofit local news organizations, beyond newsroom-specific experiments (newscaststudio)'
+    phase1_outputs: 'fundraising tools, donor communications, data analysis, translation, civic-information delivery (newscaststudio)'
+    talent_layer: 'Berman: newsrooms need "outstanding talent" for new delivery models; AI-adopting newsrooms benefit from an "experienced and engaged human in the lead" (Inside Philanthropy)'
+  grant_stack:
+    wan_ifra: 'Newsroom AI Catalyst, 165+ newsrooms worldwide (blockchain.news, single-source)'
+    lenfest: 'Lenfest Institute AI fellowship program (blockchain.news, single-source)'
+    journalism_schools: 'CUNY/Medill partnerships (blockchain.news, single-source)'
+    ajp_scale: 'AJP: $139M raised, 41 nonprofit local news organizations backed (theajp.org)'
+    certification: 'stack items beyond AJP are single-source (blockchain.news); corroboration pending'
+  relationship_direction_taxonomy:
+    direction_number: 'FIFTEENTH per the m807 enumeration'
+    direction_name: 'ECOSYSTEM-GRANT (grant-without-consideration)'
+    definition: 'philanthropic subsidy to journalism infrastructure with no content-rights consideration: cash plus API credits flow lab-to-philanthropy-to-newsrooms; no license, no citation requirement, no equity, no revenue share; consideration is reputational/regulatory goodwill plus newsroom AI-adoption'
+    prior_directions: '1 sue-then-sign, 2 pay-or-litigate, 3 grant-then-sue, 4 license-over-authors, 5 pool-and-license, 6 infrastructure-capture, 7 publisher-as-feed-operator, 8 vendor-embed, 9 litigation-pooling, 10 publisher-traffic-gate (m828), 11 commerce-conversion (m831), 12 state-compelled deal-or-levy (m834), 13 demand-for-equity (m837), 14 exclusionary-diversion (m846)'
+    taxonomy_tension: 'm737''s finding enumerated termination-leverage as its seventh direction, which the m807 enumeration does not list; unresolved, carried from #1014'
+  certification_boundaries: 'Excerpt-bounded per #503: 0 browser.open this run; terms from Axios-via-newscaststudio relay and the Inside Philanthropy Berman interview; theajp.org announcement not read first-hand. The $5M + $3M figures are press-reported, not filed numbers (OpenAI private; AJP nonprofit; no SEC cross-check exists). The theajp.org excerpt cites up to $5M in API credits vs newscaststudio''s $3M - figure discrepancy bounded, not resolved. The "no content consideration" reading is bounded to the reported terms; the full grant agreement is not public. The WAN-IFRA/Lenfest/CUNY/Medill stack is single-source (blockchain.news); corroboration pending. "Demonstrated great success" is self-reported by the two institutions splitting the check.'
+  coverage_note: 'No editorial-tone claim about AJP grantee coverage of OpenAI is made this run; tone NOT_SCORED. The mechanism maps the grant geometry, not coverage outcomes. Whether grantees cover OpenAI differently is untested and unclaimed.'
+  novelty: 'FIRST dedicated corpus mechanism on the ecosystem-grant geometry and on OpenAI''s July 2026 AJP renewal specifically. Pre-existing corpus state: the 2023 AJP original is in-corpus (openai.com, venturebeat, reuters 2023 URLs); #609 cited the July 2026 renewal as a positive control (competitor-entities.yaml:837/881) without a dedicated mechanism; mechanism 675 maps grant-then-sue (a lawsuit sequence, not a grant structure); mechanism 714 maps funding-with-citation-consideration (Village Media), the structural opposite. Pre-commit greps per #715: zero test_type_c_1029 files on disk (glob), no "Type C #1029" in git log (--grep), max numeric mechanism_id 848 pre-commit, zero numeric-849 mechanism-id keys repo-wide pre-commit, block key zero-hit repo-wide pre-commit, 4 of 6 source URLs zero-hit repo-wide pre-commit (insidephilanthropy, theajp.org announcement, gpa.net, blockchain.news; newscaststudio and openai.com 2023 carried as in-corpus corroboration).'
+  connects_to: [609, 675, 714]
+  confounders:
+  - strength: strong
+    text: 'Excerpt-bounded sourcing per #503: 0 browser.open this run; the AJP announcement and grant agreement were not read first-hand; terms, grantee counts, and quotes carried from secondary relays.'
+  - strength: strong
+    text: 'Interested-stakeholder sourcing: OpenAI''s Tom Rubin and AJP''s Sarabeth Berman both have institutional incentives to frame the grant as successful; "demonstrated great success" is self-reported by the two institutions splitting the check.'
+  - strength: strong
+    text: 'Single-source grant-stack items: the WAN-IFRA Catalyst 165-newsroom figure, Lenfest fellowship, and CUNY/Medill partnerships come from blockchain.news alone; corroboration pending.'
+  - strength: medium
+    text: 'No-content-consideration is a bounded reading of reported terms, not a review of the grant agreement (not public); API credits are themselves a product-adoption lever, so the grant is not consideration-free in every dimension.'
+  - strength: medium
+    text: 'Goodwill-as-consideration is unfalsifiable: reputational and regulatory benefit cannot be priced from outside; the "technology can benefit society" framing is corporate communications.'
+  - strength: medium
+    text: 'Grant-then-sue precedent (m675): Seattle Times/Newsday took fellowship grants then sued the grant-makers 23 months later; AJP grantees not suing is a current-state observation, not a durable prediction of compliance.'
+  - strength: weak
+    text: 'Private-company opacity: no SEC filing cross-check exists for the $5M/$3M figures; press-reported numbers stand alone.'
+  - strength: weak
+    text: 'No tone claim: this run makes no editorial-tone claim about grantee coverage of OpenAI, so no coverage-causation test is attempted.'
+  counterevidence:
+  - 'The grant is real money ($5M + credits) reaching real newsrooms: 31 direct grantees in phase 1 across 38 states, with reported tool-building outputs (fundraising, donor comms, data analysis, translation).'
+  - 'Phase-2 "field-building" (shared products and infrastructure) is a genuinely different output from phase-1 experiments; the renewal is not a repeat check.'
+  - 'The AJP relationship has a three-year track record (Product and AI Studio since 2023, reported takeaways via Inside Philanthropy), not just announcements.'
+  - 'm675''s grant-then-sue cuts both ways: labs kept funding journalism even after being sued by grantees, which undercuts a pure-cynicism reading of the grant layer.'
+  - 'The credit-figure discrepancy (theajp.org "up to $5M in API credits" vs newscaststudio "$3M in technology credits") shows the reporting is not a single coordinated press release; bounded, not resolved.'
+  strongest_counterargument: 'The ecosystem-grant geometry is the cheapest reputation insurance a lab can buy: $5M is a rounding error against OpenAI''s burn (m823''s burn-realism leg), the absence of content consideration is exactly what makes it safe (no strings means no leverage and no risk), and the "demonstrated great success" verdict comes from the two institutions splitting the check. The m675 precedent proves grants buy neither compliance nor silence - Seattle Times and Newsday took fellowship money and sued 23 months later - so if the grant secures no content rights and prevents no lawsuits, its only verifiable function is public relations. The corpus should record the renewal as a disclosed grant with a three-year track record, not as evidence of stable incentive alignment. Correlation, not causation.'
+  rotation_transparency: 'Iteration #1029 Type C is the FIFTH and CLOSING leg of the 1025-1029 window (D->E->A->B->C per #565 anchor + rotation guard). #1028 was the fourth leg (Type B, Hardawar Engadget Meta VR Glasses opinion vs Mac Mini M6 review, mechanism 848, main 8f3263e8 / anchor aad728ca / log-hash c3110010). Rotation A/B/C/D/E advances: next run is #1030 Type D.'
+  concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative-corpus-integrity test), #1012 working-tree block-key fix all stay out of this run''s index and diff.'
+  verification:
+    yaml_parse_clean: true
+    ascii_only: true
+    browser_opens: 0
+    max_numeric_mechanism_id_pre_commit: 848
+    mechanism_id_claimed: 849
+    source_urls_first_appearance: 4
+    search_sets: 5
+    falsification_ledger_holds_at: 31
+  yaml_parse_clean: true
+  ascii_only: true
+  browser_opens: 0

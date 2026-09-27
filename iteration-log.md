@@ -1,3 +1,35 @@
+## #1029 Type C: OpenAI x American Journalism Project July 2026 grant renewal ($5M + $3M credits, two-year extension) - mechanism 849 FIRST ecosystem-grant geometry, FIFTEENTH relationship direction (Sep 27 2026, 02:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit: MAIN_SHORT / ANCHOR_SHORT))
+
+2026-09-27 02:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1025-1029 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+Previous main commit #1028 Type B at 01:00 PDT Sep 27 2026 (main 8f3263e8e077cce9849705a3dbfa61fba8168142, anchor aad728cade1887f36bff6253ac60395bec11e38e, log-hash c31100105596e0bb96e379167c9e65ff5b358784, all verified present via git log before this run's commit). The 1025-1029 window: D #1025 (opened), E #1026 (second leg), A #1027 (third leg), B #1028 (fourth leg). This run is #1029 Type C at 02:00 PDT Sep 27 2026, closing the window: D #1025 -> E #1026 -> A #1027 -> B #1028 -> C #1029. No "Type C #1029" in git log pre-commit (--grep); no test_type_c_1029 files pre-commit; no concurrent Type C 1029 runs by commit time. Next run is #1030 Type D, opening the 1030-1034 window.
+
+### Finding summary
+Type C #1029 - FIRST dedicated corpus mechanism on OpenAI's July 2026 American Journalism Project grant renewal: mechanism 849. Announced late July 2026 (Inside Philanthropy: AJP CEO Sarabeth Berman; newscaststudio/Axios Jul 22 2026): $5M additional funding + $3M technology credits, two-year extension (theajp.org excerpt cites up to $5M in API credits - figure discrepancy bounded, not resolved). Phase-1 baseline (Jul 2023, in-corpus): $5M + $5M credits; AJP Product & AI Studio; 31 organizations direct grants across 38 states; 50+ nonprofit newsrooms; AJP has raised $139M and backed 41 nonprofit local news orgs. Phase-2 shift: from experimentation to field-building (Berman) - shared products and infrastructure for nonprofit local news. Tom Rubin (OpenAI chief of IP and content): "demonstrate that the technology can benefit society." Grant stack (single-source blockchain.news): WAN-IFRA Newsroom AI Catalyst (165+ newsrooms), Lenfest Institute AI fellowship, CUNY/Medill partnerships. GEOMETRY: cash + API credits lab-to-philanthropy-to-newsrooms; NO content license, NO citation requirement, NO equity, NO revenue share. NEW RELATIONSHIP DIRECTION: FIFTEENTH per the m807 enumeration - ECOSYSTEM-GRANT (grant-without-consideration). Contrasts: m714 (Village Media funding-with-citation-consideration, structural opposite), m675 (grant-then-sue: AJP grantees have not sued - current-state, not prediction), #609 (renewal was a positive control there, promoted to dedicated mechanism here). Connects_to [609, 675, 714].
+
+Statistical discipline: qualitative financial-incentive mapping; tone NOT_SCORED; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update: true; NOT artifact-grade; NOT falsification-family member (ledger holds at 31). Correlation is not causation. Confounders: STRONG excerpt-bounded (0 browser.open per #503) + STRONG interested-stakeholder sourcing (Rubin, Berman) + STRONG single-source grant stack; MEDIUM bounded no-consideration reading + MEDIUM unfalsifiable goodwill + MEDIUM m675 precedent; WEAK private-company opacity + WEAK no tone claim. Counterevidence: real money to real newsrooms (31 grantees, reported tool outputs); phase-2 field-building is a genuinely different output; three-year track record; m675 cuts both ways (labs kept funding after being sued); credit-figure discrepancy shows non-coordinated reporting.
+
+Research method: 5 browser.search query sets + 0 browser.open per #503 (excerpt-bounded). REJECTED: Axel Springer OpenAI renewal (unresolved, no closure surfaced); Ziff Davis x OpenAI v2 Sep-17 SJ motion (fully in corpus via m759/#879); Village Media/Open Door (m714); OpenAI India publisher deals and fee estimates (m624/m709/m798); NMA x Bria collective licensing (in corpus); Perplexity Comet Plus 80/20 (in corpus); Microsoft Publisher Content Marketplace (in corpus); Amazon NYT licensing (in corpus); OpenAI/Anthropic zero-deal posture (in corpus); elmo third-party analysis (rejected per #929 precedent); Digiday unsealed filings (in corpus via m759 corroboration). SELECTED: OpenAI x AJP July 2026 grant renewal - dedicated-mechanism gap (only a #609 positive control), four zero-hit source URLs, fifteenth-direction geometry. Pre-commit novelty sweeps per #715: zero test_type_c_1029 files (glob); no Type C #1029 in git log; max numeric mechanism_id 848 pre-commit; zero mechanism_id: 849 repo-wide pre-commit; block key zero-hit; 4 of 6 source URLs zero-hit repo-wide (insidephilanthropy, theajp.org announcement, gpa.net, blockchain.news; newscaststudio + openai.com 2023 carried). ASCII-only, no em dashes. 55 tests, 11 classes.
+
+### Doc-sync
+- profiles/competitor-entities.yaml: mechanism 849 top-level block (zero indent, colon-form key per #715), connects_to [609, 675, 714]
+- tests/test_type_c_1029_openai_ajp_grant_renewal_ecosystem_grant_fifteenth_direction_sep27_2am.py: 55 tests, 11 classes
+- README.md: stats 52807/1353 -> 52862/1354 (+55/+1); test-table row added
+- docs/ARCHITECTURE.md: tree row appended
+- iteration-log.md: this entry prepended (newest-first)
+- Falsification ledger: holds at 31 (NOT a falsification-family member)
+
+### Commits
+- Main: MAIN_SHA_PLACEHOLDER (mechanism + test + docs)
+- Anchor followup: ANCHOR_SHA_PLACEHOLDER (ANCHORED_SHA patch in test file)
+- Log-hash followup: updates this header per #721
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative-corpus-integrity test), #1012 working-tree block-key fix all stay out of this run's index and diff. Targeted staging only.
+
+---
+
 ## #1028 Type B: Hardawar (Engadget) Sep-2026 Meta VR Glasses pro-Meta opinion vs Mac Mini M6 value-critical review - mechanism 848 temporal+genre extension of m686 (Sep 27 2026, 01:00 PDT; main commit 8f3263e8e077cce9849705a3dbfa61fba8168142 / anchor aad728cade1887f36bff6253ac60395bec11e38e; log-hash followup registers both hashes here per #721 (this commit: 8f3263e8 / aad728ca))
 
 2026-09-27 01:00 PDT, iteration_type "B", **FOURTH leg of the 1025-1029 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
