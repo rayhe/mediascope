@@ -1,4 +1,4 @@
-## #1036 Type E: podcast sentiment 130th verification - GF 501 confirmed again (no 502; six-day absence since Sep 21), ZERO new verbatim GF URL keys (tenth consecutive pure-re-surface episode-key cycle; all-key pure-re-surface streak BREAKS at ONE on the maglazana press key), EHE 48-day hold (FIVE logged keys re-surfaced, designtaxi 34124 RETURNS after #1031 absence; ZERO new EHE keys), Attention Sphere 130th no-match as a podcast (blob SURFACED AGAIN + 6 commit URLs circular; Tracked Sources 129->130), press SIX in-corpus re-surfaces + ONE new verbatim key (maglazana Sep-26; recency frontier ADVANCES Sep 25 -> Sep 26, first advance since #1011); Meta-exclusive privacy-pressure framing across all 130 cycles - Type E SECOND leg of the 1035-1039 window (Sep 27 2026, 09:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit))
+## #1036 Type E: podcast sentiment 130th verification - GF 501 confirmed again (no 502; six-day absence since Sep 21), ZERO new verbatim GF URL keys (tenth consecutive pure-re-surface episode-key cycle; all-key pure-re-surface streak BREAKS at ONE on the maglazana press key), EHE 48-day hold (FIVE logged keys re-surfaced, designtaxi 34124 RETURNS after #1031 absence; ZERO new EHE keys), Attention Sphere 130th no-match as a podcast (blob SURFACED AGAIN + 6 commit URLs circular; Tracked Sources 129->130), press SIX in-corpus re-surfaces + ONE new verbatim key (maglazana Sep-26; recency frontier ADVANCES Sep 25 -> Sep 26, first advance since #1011); Meta-exclusive privacy-pressure framing across all 130 cycles - Type E SECOND leg of the 1035-1039 window (Sep 27 2026, 09:00 PDT; main commit 50274df4 / anchor aa837a35; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 09:00 PDT, iteration_type "E", **SECOND leg of the 1035-1039 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -23,8 +23,8 @@ Type E #1036 - 130th podcast sentiment verification cycle, monitoring-only per t
 tests/test_type_e_1036_podcast_sentiment_130th_verification_sep27_9am.py - 11 classes, 51 tests (37 green pre-commit after 2 cosmetic md-assertion fixes, excluding doc-sync 3 + iteration-log 3 which fail pre-commit by design per #719 and go green post-doc-sync, and excluding the staged-gated concurrency 2; novelty anchor 2 + rotation-guard 4 deselected pre-commit per #565, patched green in anchor followup).
 
 ### Commit hashes
-Main commit MAIN_SHA_PLACEHOLDER (Type E #1036: podcast sentiment 130th verification cycle - GF 501 hold, EHE 48-day hold, AS 130th no-match, press frontier Sep 25 -> Sep 26)
-Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type E #1036 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+Main commit 50274df4 (Type E #1036: podcast sentiment 130th verification cycle - GF 501 hold, EHE 48-day hold, AS 130th no-match, press frontier Sep 25 -> Sep 26)
+Anchor followup: aa837a35 (Type E #1036 anchor: patch ANCHORED_SHA to the main commit hash per #565)
 Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Doc-sync ratchet
