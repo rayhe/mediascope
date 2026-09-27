@@ -64,7 +64,7 @@ NEXT_DASH = "mechanism" + "-854"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism: " + "854"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1037"), ("E", "1036"), ("D", "1035"), ("C", "1034"), ("B", "1033")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "49b1c65a7f3f8a10722c8fe89954638fafe984a8"
 
 TECHNEWSTUBE_URL = "https://technewstube.com/theverge/1870832/openai-pauses-training-capable-models/"
 AI_INTEL_URL = "https://www.ai-intel.news/intel/openai-pauses-training-of-its-most-capable-models-1f2rrkn"
