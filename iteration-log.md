@@ -36,7 +36,7 @@ tests/test_type_e_1041_podcast_sentiment_131st_verification_sep27_2pm.py - 12 cl
 - 1040-1044 window SECOND leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1042 Type A continues the window.
 
 ### Push status
-- Push status: PENDING (filled post-push per the #1036 aa837a35 / #1039 631f72cc precedent)
+- Push status: pushed 2026-09-27 ~14:35 PDT; local e857987f == remote e857987f (git ls-remote verified); chain main c29fde79 -> anchor 69f6704e -> log-hash e857987f all on origin/main
 
 ### Concurrency
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
