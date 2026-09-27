@@ -1,3 +1,61 @@
+## #1033 Type B: Aditya Soni (Reuters) within-writer register asymmetry - Meta Connect privacy preview vs Apple Cook-to-Ternus celebration - Type B FOURTH leg of the 1030-1034 window (Sep 27 2026, 06:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit))
+
+### Rotation transparency
+- 1030-1034 window FOURTH leg (D #1030 -> E #1031 -> A #1032 -> B #1033 -> C #1034, rotation per #565).
+- Predecessor #1032 Type A: main 7c2a289897fdf02df1bfcd6ed5a20b5a003bfef1, anchor ae54c7b941c5a5d9d4c7e095d081f80e191d5828, log-hash finalizer 0456f811e5632f92f65b5e4156a50516253f4129 - all three verified present via git log pre-commit this run.
+- Pre-commit novelty greps: zero test_type_b_1033 files (glob); no "Type B #1033" in git log (--grep); max numeric mechanism_id 850 (so 851 is next); zero underscore-form 851 mechanism key strings repo-wide pre-commit (format-built needles, own file excluded per #715); zero dash-form 851 references pre-commit; block key zero-hit pre-commit; all three relay URLs zero-hit repo-wide pre-commit (froggyweb Meta corroboration relay, getty.pp.ua Apple relay, northlandnewsradio foldable relay); the reuters.com Meta canonical is carried from #1032, not novel.
+- New aditya_soni journalist item in profiles/careers/journalists.yaml (32nd top-level item); mechanism 851 under competitor_coverage.
+- Next run #1034 Type C closes the window.
+
+### Finding
+- Type B journalist cross-entity tracking: FIRST dedicated journalist-profile mechanism on Aditya Soni (Reuters, Bengaluru). Same writer, same wire, Sep 2026.
+- Meta arm (Sep 23 2026): "Meta expected to unveil smart glasses without camera as privacy concerns grow" - pre-event Connect preview routed through privacy-hardened register (California class action "viewed and labeled footage of people's private moments, including changing clothes"; "covertly record people"); tone -0.45 carried from m850 per #807, corroborated this run by the froggyweb wire relay with fuller body text.
+- Apple arm (Sep 1 2026): "Cook hands Apple to Ternus: bigger and richer, but catching up in AI race" - CEO-succession retrospective routed through legacy-celebration register ("one of the most consequential CEO tenures ever"; "$350 billion company to a more than $4.5 trillion behemoth"); tone +0.30 manual illustrative from relay excerpts; the headline's own "but catching up in AI race" clause is a genuine forward-looking competitive critique and bounds a pure-puff read.
+- Illustrative delta (Apple minus Meta) +0.75 = +0.30 minus (-0.45).
+- EXTENDS m850 within-writer: m850's 24-hour same-desk pair (Anthropic-Akamai deal neutral -0.05 vs Meta preview -0.45, delta +0.40) flagged a MODERATE writer-vs-desk confounder (Meta arm Soni-bylined, Anthropic arm unattributed); holding Soni constant, the Meta-vs-competitor spread reproduces and widens to +0.75 - writer-realized, not a desk-composition artifact.
+- Consistency check (unscored, not a third arm): Soni's Sep 9 2026 Apple foldable piece ("As Apple prepares to make a splash, a brief history of foldable phones") - "Apple, known for grabbing the second-mover advantage by learning from rivals' mistakes" (strategy compliment); category trade-offs (inferior cameras, shorter battery, crease) applied to foldables generically, never to Apple specifically.
+
+### Confounders (strong-first)
+- STRONG: story-type asymmetry (pre-event preview vs CEO-succession retrospective; register follows the news peg as much as the entity).
+- STRONG: event-driven register (Meta's privacy controversy was genuinely breaking news on Sep 23; Cook's 15-year tenure genuinely invites retrospective superlatives; both registers event-merited, not necessarily entity-set).
+- STRONG: excerpt/relay-bounded evidence (0 browser.open per #503; Apple arm via scraper relay, Meta arm via search listing plus relay).
+- MODERATE: n=1 per arm; MODERATE: the Apple arm's own AI-race critique bounds the puff read; MODERATE: beat/lane difference (leadership news vs product-launch news).
+- WEAK: 22-day timing skew; WEAK: relay-attribution risk.
+
+### Counterevidence
+- Reuters-Meta Oct 25 2024 content deal on Meta's side while Meta gets the harsher register - payer gets the privacy-pressure frame, inverting the naive incentive prediction (pairs m664's falsification pin); Soni himself wrote Reuters' self-report of the deal (m633).
+- Soni's Sep 15 2026 AI-labs explainer ("From hallucinating AI chatbots to wiping out humanity") frames Anthropic/OpenAI/xAI CEOs as responsible warners calling to slow development - leadership-deference across entities, not entity-favoritism; predicts the Cook-tenure celebration too.
+- m850's Anthropic arm (-0.05) vs this run's Apple arm (+0.30): the wire's competitor registers vary by peg (deal-reportage neutral vs succession celebration) - register follows peg, not payer.
+
+### Statistical discipline
+- MANUAL ILLUSTRATIVE scores only per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update (manual n-small qualitative evidence); verdict directionally_supported_not_proven; falsification ledger holds at 31 (NOT a falsification-family member - register documentation plus within-writer extension of m850, not a uniform-prediction test).
+
+### Research method
+- 6 browser.search query sets this run. REJECTED as saturated: Devindra Hardawar (m686/m848 own the Sep-24 VR Glasses piece; #1028 saturation protocol), Victoria Song (m827 owns the Sep-24 "Hoover Up Your Data" Vergecast segment plus Sep-23 "ditches the camera" piece), James Pero (mechanisms 211/746/791/806/818/833 own the Sep-16/Sep-23/24 Meta-vs-Snap pairs; both candidate URLs already in corpus source_urls), Boone Ashworth (m431/m442/m641/m727/m743/m853 plus genre bound own the WIRED lane). SELECTED: Aditya Soni - Sep-1 Apple CEO-transition piece via quoted-name search (relay with intact byline/dateline, verbatim Full-URL listing); Sep-9 Apple foldable piece as consistency check; Sep-23 Meta Connect preview already in corpus via #1032, corroborated this run by the froggyweb relay. 0 browser.open (excerpt/relay-bounded per #503). ASCII-only, no em dashes.
+
+### New Type B files
+- profiles/careers/journalists.yaml: aditya_soni item + mechanism 851 block (colon-form key, designed keying per #715).
+- tests/test_type_b_1033_aditya_soni_reuters_meta_privacy_preview_vs_apple_ternus_celebration_sep27_6am.py: 44 tests, 11 classes.
+
+### Commit hashes
+- Main improvement: MAIN_SHA_PLACEHOLDER (Type B #1033: ...)
+- Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type B #1033 anchor: ...)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
+
+### Doc-sync ratchet
+- README.md header stats 53012/1357 -> 53056/1358; new table row for the #1033 test file.
+- docs/ARCHITECTURE.md test-tree row appended.
+- This iteration-log.md entry (prepended).
+
+### Rotation guard
+- Window newest-first post-commit: B #1033, A #1032, E #1031, D #1030, C #1029; adjacency cycle A->B->C->D->E->A valid per the ORDER check.
+
+### Push status
+- (filled post-push this run)
+
+### Concurrency
+- #899 (profiles/nytimes.yaml), #938 (test_type_b_938), #900 (test_type_d_900), #1012-wt (test_type_a_1012) remain in-flight and untouched; targeted staging only (git add of the 5 #1033 files).
+
 ## #1032 Type A: Reuters x Anthropic Sep-24 Akamai-deal neutral register vs Reuters x Meta Sep-23 Connect privacy-hardened preview - mechanism 850 FIRST dedicated corpus mechanism on the 24-hour same-desk pair (Anthropic $11.6B seven-year Akamai commitment neutral deal-reportage vs Meta Connect launch privacy-pressure framing); illustrative delta (Anthropic minus Meta) +0.40, widest Reuters-desk wire-arm spread, widening m844's +0.05 near-null; Reuters-Meta Oct 25 2024 deal on Meta's side so the spread runs OPPOSITE the naive payer-softening prediction - Type A THIRD leg of the 1030-1034 window (Sep 27 2026, 05:00 PDT; main commit 7c2a289897fdf02df1bfcd6ed5a20b5a003bfef1 / anchor ae54c7b941c5a5d9d4c7e095d081f80e191d5828; log-hash followup registers both hashes here per #721 (this commit: 7c2a2898 / ae54c7b9))
 
 2026-09-27 05:00 PDT, iteration_type "A", **THIRD leg of the 1030-1034 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

@@ -24134,3 +24134,116 @@ victoria_song:
       verification:
         yaml_parse_clean: true
         ascii_only: true
+
+aditya_soni:
+  name: Aditya Soni
+  current_role: Technology correspondent
+  current_publication: Reuters
+  publication_owner: Thomson Reuters
+  beats:
+  - technology
+  - artificial_intelligence
+  - consumer_electronics
+  notes: 'Reuters technology correspondent based in Bengaluru; bylined Reuters AI-industry deal coverage (Anthropic-AMD Jul 2026, Microsoft/Nvidia-Anthropic Nov 2025, Copilot Cowork Mar 2026) and the Sep 15 2026 AI-labs RSI explainer ("From hallucinating AI chatbots to wiping out humanity"). Wrote Reuters'' self-report of the Oct 25 2024 Meta x Reuters multiyear AI news licensing deal (mechanism 633). Type B #1033 (Sep 27 2026): FIRST dedicated journalist-profile mechanism on Soni - mechanism 851 within-writer pair: Sep-23 Meta Connect privacy-hardened preview (-0.45 carried from m850 per #807) vs Sep-1 Apple Cook-to-Ternus legacy-celebration piece (+0.30 manual illustrative); illustrative delta (Apple minus Meta) +0.75; the Reuters-Meta payer deal sits on Meta''s side so the spread runs OPPOSITE the naive payer-softening prediction; NOT a falsification-family member (register documentation plus within-writer extension of m850, not a uniform-prediction test); ledger holds at 31.'
+  mechanism_ids:
+  - 851
+  competitor_coverage:
+    type_b_1033_aditya_soni_reuters_meta_privacy_preview_vs_apple_ternus_celebration_sep27:
+      iteration: 1033
+      mechanism_id: 851
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-27 06:00 PDT'
+      block_key: type_b_1033_aditya_soni_reuters_meta_privacy_preview_vs_apple_ternus_celebration_sep27
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1033 is the iteration number, not the mechanism id).'
+      author: 'Kit (with Ray)'
+      journalist: 'Aditya Soni'
+      publication: 'Reuters'
+      primary_entity: 'Meta'
+      comparator_entity: 'Apple'
+      finding_type: 'journalist_cross_entity_register_asymmetry'
+      design: 'Type B journalist cross-entity tracking, FIRST dedicated journalist-profile mechanism on Aditya Soni (Reuters, Bengaluru). Question: does the same Reuters wire writer who routed Meta''s Sep-23 Connect launch through a privacy-hardened register (m850 Meta arm, -0.45) apply the same register to Apple leadership news 22 days earlier? Two Soni-bylined Reuters pieces, same wire, Sep 2026: (a) Meta arm Sep 23 2026 Connect preview; (b) Apple arm Sep 1 2026 Cook-to-Ternus CEO transition piece. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. 0 browser.open this run (excerpt/relay-bounded per #503). ASCII-only, no em dashes.'
+      meta_arm:
+        title: 'Meta expected to unveil smart glasses without camera as privacy concerns grow'
+        dek: 'Not recovered this run (excerpt-tier); register carried in headline and lede per m850.'
+        date: '2026-09-23'
+        byline: 'Aditya Soni (sole)'
+        publication: 'reuters'
+        publication_owner: 'Thomson Reuters'
+        genre: 'pre_event_preview_connect_launch'
+        source_url: 'https://www.reuters.com/business/meta-expected-unveil-smart-glasses-without-camera-privacy-concerns-grow-2026-09-23/'
+        url_attestation: 'Canonical reuters.com URL from #1032 (first-hand search listing); corroborated this run by the froggyweb.com wire relay carrying fuller body text.'
+        relay_url: 'https://froggyweb.com/2026/09/23/meta-expected-to-unveil-smart-glasses-without-camera-as-privacy-concerns-grow/'
+        register: 'privacy_hardened_product_preview'
+        evidence_quotes:
+        - 'amid growing privacy concerns about AI devices that can be used to record people without their consent'
+        - 'the devices'' growing popularity has sparked concern globally about their ability to covertly record people'
+        - 'a proposed class action in California alleging Meta misled users about privacy protections and that human annotators training its AI viewed and labeled footage of people''s private moments, including changing clothes'
+        tone_illustrative: -0.45
+        tone_note: 'MANUAL ILLUSTRATIVE, carried un-rescored from m850 per #807; the froggyweb relay text this run corroborates the privacy-hardened register (lawsuit detail, covert-recording framing).'
+      apple_arm:
+        title: 'Cook hands Apple to Ternus: bigger and richer, but catching up in AI race'
+        dek: 'Not recovered this run (relay excerpt starts at body); register read from headline and body excerpts.'
+        date: '2026-09-01'
+        byline: 'Aditya Soni (sole)'
+        publication: 'reuters'
+        publication_owner: 'Thomson Reuters'
+        genre: 'corporate_leadership_transition_news'
+        source_url: 'https://latest.getty.pp.ua/blog/cook-hands-apple-to-ternus-bigger-and-richer-but-c-cook-hands-apple-ternus-bigger-101359000/'
+        url_attestation: 'Verbatim from browser.search Full-URL listing this run; scraper-relay mirror of the Reuters wire with byline and dateline intact; reuters.com canonical not recovered this run, not constructed.'
+        register: 'legacy_celebration_leadership_transition'
+        evidence_quotes:
+        - 'Cook hands Apple to Ternus: bigger and richer, but catching up in AI race'
+        - 'having taken the iPhone maker from a $350 billion company to a more than $4.5 trillion behemoth'
+        - 'The transition caps one of the most consequential CEO tenures ever.'
+        - 'turning the 2.5 billion installed iPhone user base into a recurring revenue machine'
+        - 'Apple''s annual sales rose from $108 billion at the start of Cook''s tenure to $416 billion in the last fiscal year, while profit grew more than fourfold to $112 billion.'
+        - 'Its wearables business, home to Cook-era iPhone accessories such as the Apple Watch and AirPods, brought in $35 billion in sales in fiscal 2025.'
+        tone_illustrative: 0.30
+        tone_note: 'MANUAL ILLUSTRATIVE: legacy-celebration register (tenure superlatives, behemoth and revenue-machine framing); the headline''s own "but catching up in AI race" clause is a genuine forward-looking competitive critique and bounds a pure-puff reading.'
+      asymmetry_scorer_result:
+        illustrative_meta_arm_tone: -0.45
+        illustrative_apple_arm_tone: 0.30
+        illustrative_cross_entity_delta_apple_minus_meta: 0.75
+        delta_calc: '+0.30 minus (-0.45) = +0.75 Apple-favoring'
+        cross_entity_delta_direction: 'Apple-favoring; Meta gets the privacy-pressure register, Apple the legacy-celebration register, same writer, same wire, 22 days apart'
+        engine: 'NOT run'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        artifact_grade: 'NOT artifact-grade'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones (Meta arm carried from m850; Apple arm from relay excerpts); NOT an empirical measurement; no inference can be drawn; correlation_not_causation.'
+      extends_mechanism_850: 'EXTENDS mechanism 850 (Type A #1032, Sep 27 2026): m850 ran the 24-hour same-desk pair - Anthropic-Akamai deal neutral register (-0.05) vs Meta Connect privacy preview (-0.45, Soni byline); delta (Anthropic minus Meta) +0.40; MODERATE confounder flagged: writer-vs-desk isolation (Meta arm named Soni byline, Anthropic arm unattributed; within-desk, not within-writer). This run resolves it within-writer: holding Soni constant, the Meta-vs-competitor spread reproduces at +0.75 (Apple minus Meta), wider than m850''s +0.40 desk-level spread. The spread is writer-realized, not a desk-composition artifact. Consistency check (unscored, not a third arm): Soni''s Sep 9 2026 Apple foldable piece ("As Apple prepares to make a splash, a brief history of foldable phones") carries the same writer-level Apple register - "Apple, known for grabbing the second-mover advantage by learning from rivals'' mistakes" (strategy compliment); category trade-offs (inferior cameras, shorter battery, crease) applied to foldables generically, never to Apple specifically. Relay: https://northlandnewsradio.com/2026/09/09/as-apple-prepares-to-make-a-splash-a-brief-history-of-foldable-phones/'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only per the Aug 28 2026 standing rule; Engine NOT run; is_significant: false; NOT artifact-grade; Correlation is not causation; no_analysis_json_update true (manual n-small qualitative evidence; JSON reserved for computed statistics).'
+      is_significant: false
+      verdict: 'directionally_supported_not_proven'
+      falsification_note: 'NOT a falsification-family member: this is register documentation plus a within-writer extension of m850, not a uniform-prediction test. Ledger holds at 31.'
+      falsification_family_member: false
+      falsification_ledger: 31
+      no_analysis_json_update: true
+      incentive_context: 'The Reuters-Meta Oct 25 2024 multiyear AI news licensing deal (Reuters compensated; Soni himself wrote Reuters'' self-report of the deal, mechanism 633; ACTIVE per the #599/#609 convention) sits on META''s side, so the +0.75 spread runs OPPOSITE the naive payer-softening prediction. No Apple-Reuters AI licensing or content deal on record (bounded absence this run). Correlation is not causation.'
+      confounders_ranked:
+      - 'STRONG: Story-type asymmetry (Meta piece is a pre-event preview pegged to a live privacy controversy; Apple piece is a CEO-succession retrospective; register follows the news peg as much as the entity)'
+      - 'STRONG: Event-driven register (Meta''s privacy controversy was genuinely breaking news on Sep 23; Cook''s 15-year tenure genuinely invites retrospective superlatives; both registers are event-merited, not necessarily entity-set)'
+      - 'STRONG: Excerpt/relay-bounded evidence (0 browser.open per #503; Apple arm via scraper relay, Meta arm via search listing plus relay; full-text reads could reveal interrogating detail the excerpts hide)'
+      - 'MODERATE: n=1 per arm, degenerate samples; single-story variance would erase the +0.75 spread'
+      - 'MODERATE: The Apple arm''s own "catching up in AI race" clause is a genuine competitive critique - the celebration is tenure-retrospective, the critique forward-looking; not pure puff'
+      - 'MODERATE: Beat/lane difference (corporate-leadership news vs product-launch news); the pair tests writer-level register across lanes, not lane-matched parity'
+      - 'WEAK: 22-day timing skew (Sep 1 vs Sep 23)'
+      - 'WEAK: Relay-attribution risk (both relays carry intact bylines/datelines, but neither is the reuters.com canonical page)'
+      counterevidence:
+      - 'The Oct 25 2024 Reuters-Meta content deal is on Meta''s side while Meta gets the harsher register - the payer gets the privacy-pressure frame, inverting the naive incentive prediction (pairs m664''s falsification pin)'
+      - 'The Apple arm''s own headline carries "but catching up in AI race": Soni does apply critical framing to Apple, in the forward-looking AI-competition lane rather than the privacy lane'
+      - 'Soni''s Sep 15 2026 AI-labs explainer ("From hallucinating AI chatbots to wiping out humanity") frames Anthropic/OpenAI/xAI CEOs as responsible warners calling to slow development - consistent with a writer who treats leadership statements at face value across entities (leadership-deference, not entity-favoritism), which predicts the Cook-tenure celebration too'
+      - 'm850''s Anthropic arm (-0.05) vs this run''s Apple arm (+0.30): the Reuters wire''s competitor registers vary by peg (deal-reportage neutral vs succession celebration), not uniformly soft - register follows peg, not payer'
+      connects_to: [850, 844, 739, 664, 633]
+      rotation_transparency: '1030-1034 window FOURTH leg (D #1030 -> E #1031 -> A #1032 -> B #1033 -> C #1034, rotation per #565). Predecessor #1032 Type A (main 7c2a289897fdf02df1bfcd6ed5a20b5a003bfef1, anchor ae54c7b941c5a5d9d4c7e095d081f80e191d5828, log-hash finalizer 0456f811e5632f92f65b5e4156a50516253f4129, verified present via git log before this run''s commit). No "Type B #1033" in git log pre-commit (--grep); no test_type_b_1033 files pre-commit (glob); max numeric mechanism_id 850 pre-commit; zero underscore-form 851 mechanism key strings repo-wide pre-commit (format-built needles, own file excluded per #715); zero dash-form 851 references pre-commit; zero numeric 851 keys in profiles/ pre-commit; block key zero-hit pre-commit; all three relay URLs zero-hit repo-wide pre-commit. Next run #1034 Type C closes the window.'
+      research_method: '6 browser.search query sets this run. REJECTED as saturated: Devindra Hardawar (m686/m848 own the Sep-24 VR Glasses piece; #1028 saturation protocol), Victoria Song (m827 owns the Sep-24 "Hoover Up Your Data" Vergecast segment plus Sep-23 "ditches the camera" piece), James Pero (mechanisms 211/746/791/806/818/833 own the Sep-16/Sep-23/24 Meta-vs-Snap pairs; both candidate URLs already in corpus source_urls), Boone Ashworth (m431/m442/m641/m727/m743/m853 plus genre bound own the WIRED lane). SELECTED: Aditya Soni - Sep-1 Apple CEO-transition piece surfaced via quoted-name search (relay with intact byline/dateline, verbatim Full-URL listing); Sep-9 Apple foldable piece surfaced as consistency check; Sep-23 Meta Connect preview already in corpus via #1032, corroborated this run by the froggyweb relay with fuller body text. 0 browser.open (excerpt/relay-bounded per #503). ASCII-only, no em dashes.'
+      test_file: 'tests/test_type_b_1033_aditya_soni_reuters_meta_privacy_preview_vs_apple_ternus_celebration_sep27_6am.py'
+  source_urls:
+  - https://www.reuters.com/business/meta-expected-unveil-smart-glasses-without-camera-privacy-concerns-grow-2026-09-23/
+  - https://froggyweb.com/2026/09/23/meta-expected-to-unveil-smart-glasses-without-camera-as-privacy-concerns-grow/
+  - https://latest.getty.pp.ua/blog/cook-hands-apple-to-ternus-bigger-and-richer-but-c-cook-hands-apple-ternus-bigger-101359000/
+  - https://northlandnewsradio.com/2026/09/09/as-apple-prepares-to-make-a-splash-a-brief-history-of-foldable-phones/
