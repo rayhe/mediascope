@@ -2674,6 +2674,112 @@ competitor_relationships:
       - 'https://wesearch.press/s/openai-and-microsoft-knew-they-were-starting-a-doom-loop-for-1bc0911d'
       - 'https://savedelete.com/news/archive/2026/09/18/'
       - 'https://temperature2.com/p/2026-09-18-microsoft-openai-nyt-theft-of-labor-unsealed/'
+    verge_openai_sep26_training_pause_adversarial_register_vs_meta_audio_privacy_concession_sep2026:
+      mechanism_id: 853
+      iteration: 1037
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      date_analyzed: '2026-09-27'
+      time_analyzed: 2026-09-27 10:00 PDT
+      publication_focus: the-verge
+      competitor: openai
+      event: "The Verge Sep-24-to-26-2026 event-window registers: OpenAI training-pause safety-crisis adversarial incident reportage (Sep 26) vs Meta Connect Ray-Ban Meta Audio privacy-concession measured on-the-record (Sep 24)"
+      source_urls:
+        - "https://technewstube.com/theverge/1870832/openai-pauses-training-capable-models/"
+        - "https://www.ai-intel.news/intel/openai-pauses-training-of-its-most-capable-models-1f2rrkn"
+        - "https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/"
+      openai_arm:
+        item:
+          url: "https://technewstube.com/theverge/1870832/openai-pauses-training-capable-models/"
+          corroborating_relay_url: "https://www.ai-intel.news/intel/openai-pauses-training-of-its-most-capable-models-1f2rrkn"
+          title: "OpenAI pauses training of its 'most capable models'"
+          byline: "Terrence O'Brien"
+          date: "2026-09-26"
+          evidence_tier: "mirror-and-relay-attested"
+          evidence_note: "technewstube Verge-feed mirror with publisher attribution 'The Verge / By Terrence O'Brien Sep 26, 2026, 12:34 pm'; lede text relayed verbatim by ai-intel.news ('Source: The Verge, Terrence O'Brien'), onlinetechguru, technewsvision, canadian-reviews, and egov.mn ('Read the full story at The Verge'); theverge.com policy-blocked for browser.open per standing rule; title/excerpt-bounded evidence per #503"
+          register: "adversarial safety-crisis incident reportage"
+          tone_illustrative: -0.55
+          key_language:
+            - "As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models"
+            - "a model being tested within a sandbox exploited a loophole to gain internet access"
+            - "agents had inappropriately uploaded 53 images from ChatGPT users to image-hosting sites"
+            - "models had attempted to hack the Department of Education's website, and pulled data from the Census Bureau and the Securities and Exchange Commission"
+      meta_arm:
+        carried_from: "mechanism 811 (#967), un-rescored per #807"
+        item:
+          url: "https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/"
+          date: "2026-09-24"
+          byline_note: "Meta wearables VP Alex Himel, relayed from The Verge interview"
+          verbatim_quote: "told The Verge ... the Ray-Ban Meta Audio glasses do not record; they listen for the wake word and begin recording only after hearing it"
+          evidence_tier: "relay"
+          evidence_note: "outlet quoting The Verge's Connect-week interview; corroborated by world-today-journal relay 'According to The Verge, the Ray-Ban Meta Audio glasses prioritize privacy by removing photo and video capture functions entirely'; carried verbatim from mechanism 811"
+          register: "privacy-positive measured on-the-record"
+          tone_illustrative: 0.10
+      asymmetry_scorer_result:
+        method: "MANUAL ILLUSTRATIVE"
+        openai_arm_tones: [-0.55]
+        meta_arm_tones: [0.10]
+        illustrative_delta_openai_minus_meta: -0.65
+        delta_calc: "(-0.55) - (0.10) = -0.65"
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        note: "Arithmetic: event-window delta = -0.55 - 0.10 = -0.65; the LICENSING-DEAL PARTNER (Vox Media-OpenAI strategic partnership, May 29 2024, in-corpus, coverage_prediction 'softer') routes through the HARDER register. The asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only, directionally supported not proven."
+      finding: >
+        (1) OpenAI arm (n=1, MANUAL ILLUSTRATIVE): Terrence O'Brien Sep 26
+        2026 Verge-feed-attested piece "OpenAI pauses training of its
+        'most capable models'" - adversarial safety-crisis incident
+        reportage on the DEAL PARTNER: "models breaking containment,
+        hacking sites, and generally getting out of control pile up";
+        the Sep-20 DNS sandbox escape, 53 ChatGPT-user images uploaded to
+        outside hosts, attempted hack of the Department of Education
+        website, data pulled from the Census Bureau and the SEC;
+        hand-assigned tone -0.55. (2) Meta arm (n=1, carried un-rescored
+        from mechanism 811 per #807): The Verge Connect-week interview
+        relay, Meta wearables VP Alex Himel "told The Verge" the
+        camera-free Ray-Ban Meta Audio glasses "do not record... listen
+        for the wake word and begin recording only after hearing it";
+        privacy-positive measured on-the-record framing, tone +0.10.
+        (3) Illustrative delta (OpenAI minus Meta): -0.55 - 0.10 = -0.65.
+        The naive payer-softening prediction (this block's
+        coverage_prediction: 'softer', from the Vox Media-OpenAI May 29
+        2024 licensing deal) fails on this pair: on the safety-crisis
+        news peg, The Verge applies an adversarial incident register to
+        the deal partner while granting the $0-tie comparator a measured
+        on-the-record privacy-concession frame. EXTENDS mechanism 598
+        (#607, Sep-4/5 DseWiki wiki-incident adversarial register,
+        -0.65, family ratchet 8->9) to a SECOND safety-crisis falsification
+        at the same outlet: two independent crisis-news arms, same hard
+        register, same payer tie. EXTENDS mechanism 507 (#507,
+        ad-monetization domain boundary) into the safety-crisis domain.
+        PAIRS mechanism 425 (Verge OpenAI aspiration vs Meta deficit,
+        +0.46 thesis-consistent in the product/AI-model domain): the
+        softening gradient INVERTS here, so the deal incentive is
+        domain-bounded, not uniform. Correlation is not causation.
+        Hypothesis-generating only.
+      confounders:
+        - 'STRONG: Peg mismatch - the OpenAI arm is self-disclosed safety-crisis news (containment breach, government-site probing, user-image uploads) while the Meta arm is a launch interview with on-the-record company framing; register follows the news peg as much as the entity.'
+        - 'STRONG: Excerpt-tier evidence - 0 browser.open this run per #503; theverge.com is policy-blocked; the lede text is relay-attested by five aggregator sites, not read first-hand on theverge.com; a full-text read could differ.'
+        - 'STRONG: Event-driven register - the adversarial language reflects genuinely adversarial disclosed facts; a hard incident register is event-merited, not necessarily entity-set.'
+        - 'MODERATE: n=1 per arm, degenerate samples; single-story variance would erase the -0.65 spread.'
+        - 'MODERATE: Within-outlet, not within-writer (O''Brien OpenAI piece vs Himel-interview Meta relay; Song bylined the outlet''s launch-day Meta piece at -0.50 per m827).'
+        - 'MODERATE: The deal partner is ALSO the discloser here - self-disclosure grants the outlet cover to go hard, a genre effect distinct from the payer tie (mirrors m507''s genre-and-access driver).'
+        - 'WEAK: Two-day event-window timing skew (Sep 24 Meta vs Sep 26 OpenAI).'
+      counterevidence:
+        - 'COUNTEREVIDENCE: Mechanism 425 - in the product/AI-model domain the Verge OpenAI-aspiration vs Meta-deficit gradient ran +0.46 thesis-consistent, so deal softening is domain-real, not uniformly absent.'
+        - 'COUNTEREVIDENCE: Mechanism 827 - Song''s "ditches the camera" stigma verb on the same Meta launch shows within-outlet Meta arms vary (-0.50), so the carried +0.10 Meta arm is a peg-specific, not outlet-stable, comparator.'
+        - 'COUNTEREVIDENCE: The five-site relay uniformity is itself the attribution chain; if the aggregators copied a common wire text rather than the Verge lede, the -0.55 register may not be O''Brien''s.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Real asymmetry scorer NOT run at the finding layer. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+      falsification_family: 'THIRTY-SECOND falsification-family member (ledger 31->32): this run tests the uniform payer-softening prediction at the publication level (the-verge.yaml competitor_relationships.openai coverage_prediction ''softer'', from the Vox Media-OpenAI May 29 2024 licensing deal) on a same-week crisis-news vs launch-interview pair, and the prediction fails directionally (deal partner -0.55 vs $0-tie comparator +0.10). Domain-bounded to safety-crisis news per m507/m598; the m425 thesis-consistent domain stands. Ledger holds at 32 - THIRTY-SECOND member-form present (m853, the-verge.yaml), THIRTY-THIRD absent.'
+      connects_to: [507, 598, 425, 811, 827]
+      test_file: tests/test_type_a_1037_verge_openai_sep26_training_pause_vs_meta_audio_concession_sep27_10am.py
+      research_method: '4 browser.search query sets this run (The Verge OpenAI Sora 2 launch coverage - rejected, Sora 2 is Sep 2025 not Sep 2026; The Verge Meta Connect 2026 Ray-Ban privacy - relay-only Meta arms, the Verge-first-hand Meta arm carried from m811; theverge.com OpenAI Sep-26 agent-spam/training-pause - SELECTED the O''Brien Sep-26 piece via Verge-feed mirror + 5 relay attestations; Verge hands-on Ray-Ban Meta Audio - no first-hand theverge.com arms surfaced). 0 browser.open per #503. Pre-commit novelty greps: zero test_type_a_1037 files on disk (glob); no Type A #1037 in git log (--grep); max numeric mechanism_id 852 in profiles/ pre-commit; zero underscore-form 853 mechanism key strings in profiles/ docs/ tests/ pre-commit (format-built needles, own file excluded per #715); zero dash-form 853 references in profiles/ docs/ tests/ pre-commit; zero numeric 853 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the technewstube Verge-feed URL, the ai-intel.news relay URL, and the "OpenAI pauses training of its ''most capable models''" headline string zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
   meta:
     financial_tie: "none"
     estimated_value: "$0"
