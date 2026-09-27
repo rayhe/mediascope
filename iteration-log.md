@@ -37860,7 +37860,7 @@ Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains m
 - Push status (this run, Sep 19 2026 ~08:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
 
 
-## #1025 Type D: m844/m845/m846 qualitative-discipline verification + post-1020-1024 corpus integrity (max numeric mechanism_id 846; zero 847 keys numeric/underscore/dash; ledger holds at 30) + #1020 background-suite tombstone (FORTY-SIXTH consecutive death; lineage SIXTY-FOURTH -> SIXTY-FIFTH) + fresh synthetic engine calibration (new values, not #1020's) - Type D FIRST leg of the 1025-1029 window, OPENING it (Sep 26 2026, 22:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit))
+## #1025 Type D: m844/m845/m846 qualitative-discipline verification + post-1020-1024 corpus integrity (max numeric mechanism_id 846; zero 847 keys numeric/underscore/dash; ledger holds at 30) + #1020 background-suite tombstone (FORTY-SIXTH consecutive death; lineage SIXTY-FOURTH -> SIXTY-FIFTH) + fresh synthetic engine calibration (new values, not #1020's) - Type D FIRST leg of the 1025-1029 window, OPENING it (Sep 26 2026, 22:00 PDT; main commit c5991326079a31d7b79dc99b2953a432383c2abb / anchor 1e2e575d5afe9984e5220639e761d96c1f763afb; log-hash followup registers both hashes here per #721 (this commit: c5991326 / 1e2e575d))
 
 2026-09-26 22:00 PDT, iteration_type "D", **FIRST leg of the 1025-1029 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -37883,13 +37883,13 @@ Qualitative-discipline verification of the three committed mechanisms from the 1
 tests/test_type_d_1025_m844_m845_m846_qualitative_corpus_integrity_sep26_10pm.py - 12 classes, 52 tests (43 green pre-commit excluding doc-sync 3 + iteration-log 3 per #719 which go green post-doc-sync; novelty anchor 1 + rotation-guard 2 deselected pre-commit per #565, patched green in anchor followup).
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 52/52 file tests green post-followup); log-hash followup updates this line (this commit).
+Main commit c5991326079a31d7b79dc99b2953a432383c2abb (verified via git rev-parse); anchor followup 1e2e575d5afe9984e5220639e761d96c1f763afb (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 52/52 file tests green post-followup); log-hash followup updates this line (this commit).
 
 ### Doc-sync ratchet
 README stats table 52619/1349 -> 52671/1350 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1025 entry (this entry). Authoritative .venv pytest --collect-only this run: 52671 tests / 1350 files post-commit (delta +52/+1 = the #1025 file exactly; system-python3 pytest gate undercounts due to missing deps, venv python authoritative per the #530 lesson); count_stats.py --check under system python3 emits the known false-stale verdict for the same reason.
 
 ### Push status
-TBD (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup + this log-hash followup pushed and ls-remote-verified in the same run (remote tip == local tip).
+Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
 
 ### Rotation guard
 1025-1029 window FIRST leg D->E->A->B->C, OPENING it (anchor patched post-commit per #565). Next: #1026 Type E continues the window.
