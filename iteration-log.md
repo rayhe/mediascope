@@ -21,7 +21,7 @@ Previous main commit #1020 Type D at 17:00 PDT Sep 26 2026 (main 88534735276b1bd
 #899 (nytimes.yaml m771 hunk), #938 (Type B test file), #900 (untracked Type D test), #1012-wt (Type A #1012 test file working-tree edit) all UNCOMMITTED at this run's checks and untouched by this run's index.
 
 - Commit hashes: main commit ca5af404694eb3d1a77b7d02082c9783f4d58e91 (verified via git rev-parse); anchor followup d8ed95a28db2e8b9f4c08509bee4d669846ec8e4 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 49/49 file tests green post-followup); log-hash followup registers both hashes here per #721.
-- Push status: PUSHED per #716 - main + anchor + log-hash pushed; remote tip verified equal to local via git ls-remote Sep 26 2026 18:xx PDT.
+- Push status: PUSHED per #716 - main ca5af404 + anchor d8ed95a2 + log-hash 7e7a3212 pushed (a36e094d..7e7a3212); remote tip verified equal to local via git ls-remote Sep 26 2026 18:07 PDT.
 
 
 ## #1020 Type D: m841/m842/m843 qualitative-discipline verification + post-1015-1019 corpus integrity (max numeric mechanism_id 843; zero 844 keys numeric/underscore/dash; ledger holds at 30; THIRTIETH member-form present exactly once (m818, journalists.yaml); TWENTY-NINTH in news-corp.yaml; THIRTY-FIRST member-form negative guard) + #1015 background-suite tombstone (FORTY-FIFTH consecutive death; lineage SIXTY-THIRD -> SIXTY-FOURTH) + fresh synthetic engine meaningfulness - Type D FIRST leg of the 1020-1024 window D->E->A->B->C OPENING it (Sep 26 2026, 17:00 PDT; main commit 88534735276b1bd0f034cb57625687edb122a5cf / anchor 129c533f64c8f7ddb872425f9ad69e394125bc8e; log-hash followup registers both hashes here per #721 (this commit: 88534735 / 129c533f))
