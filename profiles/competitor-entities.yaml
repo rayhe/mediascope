@@ -26339,3 +26339,127 @@ type_c_1019_reddit_openai_70m_provenance_audit_renewal_pricing_event_sep26_4pm:
   yaml_parse_clean: true
   ascii_only: true
   browser_opens: 0
+
+type_c_1024_benioff_sources_podcast_microsoft_openai_exclusion_salesforce_anthropic_diversion_sep26_9pm:
+  mechanism_id: 846
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1024
+  iteration_type: C
+  date_analyzed: '2026-09-26'
+  time_pdt: '21:00'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  job_id: mediascope-meta-wearables-press-analysis
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'FIRST exclusionary-diversion geometry: Benioff''s Sources Podcast disclosure that Microsoft''s OpenAI position blocked Salesforce''s OpenAI investment, diverting ~$50M into Anthropic (now reported ~$5B), plus a $300M/yr token-demand leg and the Claudeforce Slack-distribution leg'
+  block_key: type_c_1024_benioff_sources_podcast_microsoft_openai_exclusion_salesforce_anthropic_diversion_sep26_9pm
+  key_design_note: 'colon-form top-level key, no numeric mechanism-id substring (no 846 string per #715)'
+  finding: 'FIRST dedicated corpus mechanism on Marc Benioff''s Sources Podcast disclosure (Alex Heath interview, published the week of Sep 22 2026; Heath''s own writeup at sources.news): Salesforce CEO Marc Benioff said Microsoft''s commercial relationship with OpenAI blocked Salesforce from investing in OpenAI years ago: "I was like, ''Hey, I''d really like to be investing now in the company.'' And he''s like, unfortunately, because of the Microsoft relationship, we were not allowed to invest in OpenAI" (BigGo Finance verbatim excerpt). The claimed blocking asset is Microsoft''s OpenAI position, mapped in the corpus microsoft_openai_stake block: roughly 27% equity (~$135B at the $500B Oct-2025-restructuring valuation), 20% of OpenAI revenue through 2030, $250B incremental Azure purchases, IP rights through 2032. DIVERSION: shut out of OpenAI, Salesforce instead invested roughly $50M in Anthropic in 2023 (Series C at a reported $4.1B pre-money valuation, per the TradingView/Stocktwits relay) and has since invested $300M+ across multiple rounds (Particle News); the position is reported at roughly $5B (Livemint, BigGo Finance, FinSiddhi), and Benioff says it could earn Salesforce "tens of billions" at an Anthropic IPO (FinSiddhi, TradingView/Stocktwits, khelja). OPERATIONALIZATION: the equity leg is now a product leg - the expanded Claudeforce partnership makes Claude the default model in Slack, powering Slackbot, with Salesforce sales workflows accessible directly through Claude (Particle News, khelja, TradingView/Stocktwits). DEMAND-SIDE LEG: Salesforce expects to spend about $300M on Anthropic tokens in 2026, almost entirely for coding (Benioff, All-In podcast, May 2026, via Techloy and Technology Magazine); corroborated Sep 8 2026 when deputy CFO and finance head Mike Spencer told the Deutsche Bank Technology Conference that roughly six months of unleashed Claude consumption across R&D was "part of the reason we didn''t raise margin guidance on the year" (BigGo Finance via The Register). OWNER-EQUITY CHAIN: Benioff owns TIME outright ($190M, 2018, mechanism 36 salesforce_benioff_time); TIME named Anthropic the World''s Most Disruptive Company in Aug 2026; WEEX directly noted the conflict; the corpus already records the disclosure asymmetry (WSJ discloses the News Corp-OpenAI deal; TIME does not disclose Benioff''s Salesforce-Anthropic equity position). This run adds the primary-source CEO disclosure that the equity position itself was CAUSED BY the Microsoft exclusion - the first corpus evidence of an exclusionary geometry, not just an ownership geometry. NEW RELATIONSHIP DIRECTION: FOURTEENTH per the m807 enumeration - EXCLUSIONARY-DIVERSION (moat-diversion): an incumbent''s financial position in a lab functions as a deal-blocking asset, diverting rival capital into a competing lab whose beneficiary sits inside a publisher owner-equity chain. No other corpus mechanism maps exclusion as an incentive vector. (Taxonomy-count tension: m737''s finding enumerated termination-leverage as its seventh direction, which the m807 enumeration does not list; unresolved, carried from #1014.) EXTENDS mechanism 36 (the Benioff-TIME chain gains its origin story) and the microsoft_openai_stake block (the 27% stake gains an exclusion function beyond revenue share and Azure). Correlation, not causation. Hypothesis-generating only.'
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scores: NOT_SCORED
+  engine_run: false
+  falsification_ledger: 30
+  falsification_family_member: false
+  falsification_note: 'THIRTIETH corpus mechanism logged under the #1000-established falsification framework (m818 family anchor); this mechanism is NOT a falsification-family member (it is qualitative financial mapping of a claimed exclusion geometry, not a falsifiable editorial-tonal claim); the falsification ledger holds at 30.'
+  excerpt_bounded: true
+  excerpt_bounded_note: '0 browser.open this run per #503; the podcast quotes, investment figures, and token-spend corroboration are carried from search excerpts and secondary relays, NOT first-hand audio review or filing reads.'
+  sources:
+  - url: https://sources.news/p/marc-benioff-ai-boom-saaspocalypse
+    what: 'Alex Heath''s own Sources writeup of the Benioff interview (published ~Sep 21 2026): initial ~$50M Anthropic investment in 2023, "tens of billions" possible at IPO, Microsoft relationship blocked the OpenAI investment, Claudeforce makes Claude default in Slack connecting Salesforce workflows'
+    accessed: '2026-09-26'
+  - url: https://www.livemint.com/companies/news/salesforce-missed-openai-its-50-million-anthropic-bet-is-now-worth-5-billion-11790164533797.html
+    what: 'Relay of the exclusion disclosure: Benioff asked Altman about investing in OpenAI; the ~$50M Anthropic bet is now reportedly worth ~$5B; Salesforce first invested in Anthropic in 2023'
+    accessed: '2026-09-26'
+  - url: https://finance.biggo.com/news/4a8b410c-400f-4d05-bcbf-bc75422fc757
+    what: 'Verbatim Benioff quote: "unfortunately, because of the Microsoft relationship, we were not allowed to invest in OpenAI"; notes the position "could be worth tens of billions of dollars" at IPO'
+    accessed: '2026-09-26'
+  - url: https://particle.news/story/benioff-says-microsoft-ties-blocked-salesforce-from-openai-and-sent-it-to-anthropic
+    what: 'Salesforce invested $300M+ in Anthropic across multiple rounds after the OpenAI exclusion; expanded Claudeforce partnership makes Claude the default model in Slack, powering Slackbot'
+    accessed: '2026-09-26'
+  - url: https://www.tradingview.com/news/stocktwits:675c68c07094b:0-marc-benioff-says-microsoft-shut-salesforce-out-of-openai-so-he-bet-on-anthropic-instead-and-it-could-pay-tens-of-billions/
+    what: 'Relay: ~$50M 2023 Anthropic investment at a $4.1B pre-money valuation; potential "tens of billions" at IPO; Claudeforce as Claude default in Slack'
+    accessed: '2026-09-26'
+  - url: https://www.techloy.com/marc-benioff-says-salesforce-will-spend-300-million-on-anthropic-tokens-this-year/
+    what: 'Benioff (All-In podcast, May 2026): Salesforce expects to use roughly $300M of Anthropic tokens in 2026, almost entirely for coding; the company could see "tens of billions" from an Anthropic IPO'
+    accessed: '2026-09-26'
+  - url: https://finance.biggo.com/news/e474ac2f-4a1d-49c9-bda8-68b3d79f807d
+    what: 'Sep 8 2026 relay of The Register: deputy CFO Mike Spencer at the Deutsche Bank Technology Conference said Claude token spending affected full-year margin guidance after Salesforce opened Claude broadly across R&D about six months earlier'
+    accessed: '2026-09-26'
+  - url: https://technologymagazine.com/news/salesforce-plans-to-spend-us-300m-on-anthropic-ai-tokens
+    what: 'Relay of the $300M 2026 Anthropic token-spend projection; notes the Salesforce Ventures Anthropic position and the Claudeforce Slack default-model expansion'
+    accessed: '2026-09-26'
+  exclusion_event:
+    venue: "Alex Heath's Sources podcast, published the week of Sep 22 2026"
+    speaker: 'Marc Benioff, Salesforce CEO and TIME owner'
+    claim: 'Microsoft''s commercial relationship with OpenAI prevented Salesforce from investing in OpenAI'
+    verbatim: "I was like, 'Hey, I'd really like to be investing now in the company.' And he's like, unfortunately, because of the Microsoft relationship, we were not allowed to invest in OpenAI"
+    blocking_asset: 'Microsoft''s OpenAI position: ~27% equity, 20% revenue share through 2030, $250B Azure commitment (corpus microsoft_openai_stake block)'
+    certification: 'Benioff-attributed; no OpenAI or Microsoft corroboration surfaced this run'
+  diversion_investment:
+    initial: 'roughly $50M in Anthropic in 2023 (Series C at a reported $4.1B pre-money valuation, per TradingView/Stocktwits relay)'
+    cumulative: '$300M+ invested across multiple rounds (Particle News)'
+    reported_current_value: 'roughly $5B (Livemint, BigGo Finance, FinSiddhi; reported-value, not realized gain)'
+    ipo_projection: '"tens of billions" at an Anthropic IPO - Benioff''s own claim (FinSiddhi, TradingView/Stocktwits, khelja)'
+    operationalization: 'Claudeforce: Claude default model in Slack (Slackbot), Salesforce sales workflows accessible through Claude (Particle News, khelja, TradingView/Stocktwits)'
+  demand_side_leg:
+    projection_2026: 'about $300M in Anthropic token spend, almost entirely for coding (Benioff, All-In podcast, May 2026, via Techloy and Technology Magazine)'
+    cfo_corroboration: 'deputy CFO Mike Spencer, Deutsche Bank Technology Conference, late Aug 2026 (reported Sep 8 2026, BigGo Finance via The Register): Claude token spending was "part of the reason we didn''t raise margin guidance on the year" after roughly six months of broad R&D rollout'
+    geometry: 'equity leg (investment) + product leg (Claudeforce default) + recurring-revenue leg ($300M/yr token spend) - a three-part owner-company stack behind the Benioff-TIME chain'
+  owner_equity_chain:
+    chain: 'TIME -> owner Marc Benioff -> Salesforce -> Anthropic equity + token spend + Slack distribution'
+    base: 'mechanism 36 salesforce_benioff_time (Benioff owns TIME, $190M, 2018)'
+    editorial_event: 'TIME named Anthropic the World''s Most Disruptive Company, Aug 2026; WEEX directly noted the conflict'
+    disclosure_asymmetry: 'WSJ discloses the News Corp-OpenAI deal; TIME does not disclose Benioff''s Salesforce-Anthropic equity position (corpus, mechanism 36 block)'
+    new_from_this_run: 'the equity position was CAUSED BY the Microsoft exclusion, per Benioff''s own disclosure - origin story, not just ownership geometry'
+  relationship_direction_taxonomy:
+    direction_number: 'FOURTEENTH per the m807 enumeration'
+    direction_name: 'EXCLUSIONARY-DIVERSION (moat-diversion)'
+    definition: 'an incumbent''s financial position in a lab functions as a deal-blocking asset, diverting rival capital into a competing lab whose beneficiary sits inside a publisher owner-equity chain'
+    prior_directions: '1 sue-then-sign, 2 pay-or-litigate, 3 grant-then-sue, 4 license-over-authors, 5 pool-and-license, 6 infrastructure-capture, 7 publisher-as-feed-operator, 8 vendor-embed, 9 litigation-pooling, 10 publisher-traffic-gate (m828), 11 commerce-conversion (m831), 12 state-compelled deal-or-levy (m834), 13 demand-for-equity (m837)'
+    taxonomy_tension: 'm737''s finding enumerated termination-leverage as its seventh direction, which the m807 enumeration does not list; unresolved, carried from #1014'
+  certification_boundaries: 'Benioff''s "not allowed to invest" is his own retrospective characterization of a private conversation with Altman; no OpenAI or Microsoft corroboration surfaced this run, and the actual OpenAI-Microsoft agreement terms on third-party investment are not public. The "$5 billion" figure is reported-value, not a realized gain (Livemint explicitly: "reflects the value of its holdings rather than a realised cash gain"); the "tens of billions" IPO projection is Benioff''s own claim from an interested stakeholder. The "$1.3 trillion in private markets" Anthropic valuation (BigGo Finance) is single-source and sits against Bloomberg-attested corpus figures (May 2026 $965B raise; ~$2T IPO target); the corpus does not adopt it. The $300M token-spend figure is a CEO projection, partially corroborated by the CFO''s margin-guidance remark, not a filed number.'
+  coverage_note: 'No editorial-tone claim about TIME coverage of Anthropic, OpenAI, or Salesforce is made this run; tone NOT_SCORED. The mechanism maps the incentive geometry behind the Benioff-TIME chain, not coverage outcomes.'
+  novelty: 'FIRST corpus mechanism on the exclusionary-diversion geometry: Marc Benioff''s own Sources Podcast disclosure that a competitor''s lab stake functioned as a deal-blocking asset, diverting capital into a rival lab behind an owner-equity chain''s own disclosure that a competitor''s lab stake functioned as a deal-blocking asset, diverting capital into a rival lab behind an owner-equity chain. Extends mechanism 36 (the salesforce_benioff_time chain gains its origin story: Microsoft exclusion -> Anthropic diversion) and the microsoft_openai_stake block (gains an exclusion function beyond revenue share and Azure). Pre-commit greps per #715: zero test_type_c_1024 files on disk (glob), no "Type C #1024" in git log (--grep), max numeric mechanism_id 845 pre-commit, zero underscore/dash-form 846 keys repo-wide pre-commit (needles format-built), block key zero-hit repo-wide pre-commit, 8 of 8 source URLs zero-hit repo-wide pre-commit.'
+  connects_to: [36, 729, 735, 837]
+  confounders:
+  - strength: strong
+    text: 'Self-serving stakeholder: Benioff is talking up a position he needs to appreciate; the $50M-to-$5B-to-"tens of billions" arc serves Salesforce''s investor story during SaaSpocalypse anxiety (CRM fell ~10% over six sessions even as Salesforce reported record Q2 $11.3B revenue, per bitnewsbot), and the exclusion narrative reads better than a routine portfolio hedge.'
+  - strength: strong
+    text: 'Uncorroborated exclusion claim: "not allowed to invest" is Benioff''s characterization of a private Altman conversation; no OpenAI or Microsoft statement surfaced this run, and no filing records who was "allowed" to invest; the claim is unfalsifiable from outside.'
+  - strength: strong
+    text: 'Excerpt-bounded sourcing per #503: 0 browser.open this run; the podcast audio was not reviewed first-hand; quotes carried from secondary relays of Heath''s writeup.'
+  - strength: medium
+    text: 'Valuation discrepancy: the $5B figure is reported-value across relays, not a realized gain (Livemint explicit); BigGo Finance''s single-source "$1.3 trillion in private markets" Anthropic valuation sits against Bloomberg-attested corpus figures (May 2026 $965B raise, ~$2T IPO target); the corpus does not adopt the $1.3T figure.'
+  - strength: medium
+    text: 'Retrospective causality: the exclusion narrative explains Salesforce''s Anthropic position in hindsight, but does not establish that Microsoft''s stake CAUSED the investment; Salesforce could have chosen Anthropic independently.'
+  - strength: medium
+    text: 'Token-spend projection: the $300M 2026 figure is a CEO projection, partially corroborated by the CFO''s margin-guidance remark, not a filed number.'
+  - strength: weak
+    text: 'Competitor framing: Benioff frames Microsoft as a direct Salesforce competitor, which serves his own narrative; the actual OpenAI-Microsoft agreement terms on third-party investment are not public.'
+  - strength: weak
+    text: 'No tone claim: this run makes no editorial-tone claim about TIME coverage of Anthropic, OpenAI, or Salesforce, so no coverage-causation test is attempted.'
+  counterevidence:
+  - 'The $5B Anthropic position is a genuine 100x return on the $50M check regardless of the exclusion narrative; the underlying business facts are independently positive.'
+  - 'Salesforce''s Claudeforce expansion is ordinary enterprise strategy - the default-model deal benefits Salesforce''s own customers; it is not evidence that TIME editors changed coverage.'
+  - 'Microsoft''s OpenAI stake terms (27%, revenue share, Azure) are filed and public; a "blocking" function is Benioff''s inference, not a filed clause.'
+  - 'TIME editorial independence is a major confounder: an owner-equity chain documents incentive geometry, not editorial behavior; no coverage-tone evidence is attached to this mechanism.'
+  - 'Anthropic''s valuation is genuinely rising across multiple reported figures ($965B May raise per Bloomberg; ~$2T IPO target); the $5B reported position value does not depend on Benioff''s framing.'
+  strongest_counterargument: 'The exclusion narrative is Benioff''s retrospective framing, delivered while promoting a position he needs to appreciate. The $50M-to-$5B-to-"tens of billions" arc serves Salesforce''s investor story at a moment of SaaSpocalypse anxiety (CRM down ~10% over six sessions even as the company reported record Q2 $11.3B revenue, per bitnewsbot). The Microsoft-block claim is unfalsifiable from outside: OpenAI and Microsoft have not corroborated it, no filing records who was "allowed" to invest, and the actual agreement terms on third-party investment are not public. Benioff has every reason to inflate the Anthropic position''s origin story (a $50M check that "Microsoft forced on him" reads better than a portfolio hedge) and every reason to talk up the $1.3T valuation figure. The corpus should treat the $5B as reported-value and the exclusion as Benioff-attributed, not filed fact. Correlation, not causation.'
+  rotation_transparency: 'Iteration #1024 Type C is the FIFTH and CLOSING leg of the 1020-1024 rotation window (D->E->A->B->C per #565 anchor + rotation guard). #1023 was the fourth leg (Type B, Lucas Ropek temporal register shift, mechanism 845, main af7c36a3 / anchor b4a2f7af / log-hash correction 58060cec). Rotation A/B/C/D/E advances: next run is #1025 Type D.'
+  concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative-corpus-integrity test), #1012 working-tree block-key fix all stay out of this run''s index and diff.'
+  verification:
+    yaml_parse_clean: true
+    ascii_only: true
+    browser_opens: 0
+    max_numeric_mechanism_id_pre_commit: 845
+    mechanism_id_claimed: 846
+    source_urls_first_appearance: 8
+    search_sets: 6
+    falsification_ledger_holds_at: 30
+  yaml_parse_clean: true
+  ascii_only: true
+  browser_opens: 0
