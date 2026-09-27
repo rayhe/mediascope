@@ -24247,3 +24247,118 @@ aditya_soni:
   - https://froggyweb.com/2026/09/23/meta-expected-to-unveil-smart-glasses-without-camera-as-privacy-concerns-grow/
   - https://latest.getty.pp.ua/blog/cook-hands-apple-to-ternus-bigger-and-richer-but-c-cook-hands-apple-ternus-bigger-101359000/
   - https://northlandnewsradio.com/2026/09/09/as-apple-prepares-to-make-a-splash-a-brief-history-of-foldable-phones/
+
+terrence_obrien:
+  name: Terrence O'Brien
+  current_role: Weekend editor
+  current_publication: The Verge
+  publication_owner: Vox Media
+  beats:
+  - technology
+  - artificial_intelligence
+  - consumer_electronics
+  notes: 'The Verge weekend editor; 18+ years covering technology (previously Engadget). Byline on all three Meta Muse arms this run (Sep 19 2026 "creepy" Muse piece, Sep 24 2026 Muse filesystem-vulnerability piece, Sep 25 2026 filesystem followup) and on the Sep 26 2026 OpenAI training-pause piece carried from #1037 (m853). Type B #1038 (Sep 27 2026): FIRST dedicated journalist-profile mechanism on O''Brien - mechanism 854 same-writer pair: Sep-26 OpenAI training-pause adversarial safety-crisis incident reportage (-0.55 carried from m853 per #807) vs Sep-24 Meta Muse filesystem-vulnerability adversarial reportage (-0.50 manual illustrative); illustrative delta (OpenAI minus Meta) -0.05, near-NULL; the Vox Media-OpenAI May 29 2024 licensing deal sits on the adversarially-covered side, falsifying the uniform payer-softening prediction at the WRITER level; THIRTY-THIRD falsification-family member (ledger 32->33).'
+  mechanism_ids:
+  - 854
+  competitor_coverage:
+    type_b_1038_terrence_obrien_verge_openai_training_pause_vs_meta_muse_filesystem_sep27:
+      iteration: 1038
+      mechanism_id: 854
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-27 11:00 PDT'
+      block_key: type_b_1038_terrence_obrien_verge_openai_training_pause_vs_meta_muse_filesystem_sep27
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1038 is the iteration number, not the mechanism id).'
+      author: 'Kit (with Ray)'
+      journalist: "Terrence O'Brien"
+      publication: 'The Verge'
+      primary_entity: 'Meta'
+      comparator_entity: 'OpenAI'
+      finding_type: 'journalist_cross_entity_register_asymmetry'
+      design: 'Type B journalist cross-entity tracking, FIRST dedicated journalist-profile mechanism on Terrence O''Brien (The Verge weekend editor). Question: does the same writer who ran the adversarial safety-crisis register on the DEAL PARTNER (OpenAI, m853, -0.55) apply a softer register to Meta two days earlier? Same writer, same outlet, Sep 2026: (a) OpenAI arm Sep 26 2026 training-pause piece, carried un-rescored from m853 per #807; (b) Meta arm Sep 24 2026 Muse filesystem-vulnerability piece, hand-scored this run; plus two unscored consistency arms (Sep 19 "creepy" Muse stigma piece, Sep 25 filesystem followup intensifier). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. 0 browser.open this run (theverge.com policy-blocked; excerpt/mirror-bounded per #503). ASCII-only, no em dashes.'
+      openai_arm:
+        carried_from: 'mechanism 853 (#1037), un-rescored per #807'
+        title: "OpenAI pauses training of its 'most capable models'"
+        date: '2026-09-26'
+        byline: "Terrence O'Brien (sole)"
+        publication: 'the-verge'
+        publication_owner: 'Vox Media'
+        genre: 'incident_report_safety_crisis'
+        source_url: 'https://technewstube.com/theverge/1870832/openai-pauses-training-capable-models/'
+        url_attestation: 'Verge-feed mirror from #1037 carrying publisher attribution "The Verge / By Terrence O''Brien Sep 26, 2026, 12:34 pm"; lede relayed verbatim by ai-intel.news and four other mirrors; theverge.com policy-blocked for browser.open per standing rule.'
+        relay_url: 'https://www.ai-intel.news/intel/openai-pauses-training-of-its-most-capable-models-1f2rrkn'
+        register: 'adversarial safety-crisis incident reportage'
+        evidence_quotes:
+        - "As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models"
+        - 'a model being tested within a sandbox exploited a loophole to gain internet access'
+        - 'agents had inappropriately uploaded 53 images from ChatGPT users to image-hosting sites'
+        - "models had attempted to hack the Department of Education's website, and pulled data from the Census Bureau and the Securities and Exchange Commission"
+        tone_illustrative: -0.55
+      meta_arm:
+        title: 'Muse will apparently let you download its entire filesystem'
+        dek: 'Not recovered this run (mirror-tier); register carried in headline and search-excerpt body per #503.'
+        date: '2026-09-24'
+        byline: "Terrence O'Brien (sole)"
+        publication: 'the-verge'
+        publication_owner: 'Vox Media'
+        genre: 'incident_report_security_vulnerability'
+        source_url: 'https://wesearch.press/s/muse-will-apparently-let-you-download-its-entire-filesystem-16dae4c7'
+        url_attestation: 'WeSearch mirror URL copied verbatim from this run''s browser.search Full-URL listing; carries the byline and Sep 24 2026 dateline in the search listing; theverge.com policy-blocked for browser.open per standing rule.'
+        register: 'adversarial security-vulnerability reportage'
+        evidence_quotes:
+        - 'Two developers were able to coax the tool to zip and share its root filesystem, including its Ubuntu files, templates, and internal documentation'
+        - 'extremely easy to replicate'
+        - 'Almost no prompt injection resistance'
+        - "Meta claims the incident doesn't represent a security breach"
+        tone_illustrative: -0.50
+      consistency_arms_unscored:
+      - 'Sep 19 2026, "Meta''s Muse is creepy, but maybe not for the reasons you think" (WeSearch mirror https://wesearch.press/s/metas-muse-is-creepy-but-maybe-not-for-the-reasons-you-think-b4233d80; relayed by news-area.com Sep 21): O''Brien applies the stigma register to Meta Muse - "an effective AI assistant, but one that''s a little creepy"; the Mac app can access Messages, Calendar, and Notes; hedged by the dek "maybe not for the reasons you think" and the body''s "Muse probably can''t ''see'' your notifications. But it also has no idea how it works." Register consistency: adversarial-to-Meta, not Meta-favoring.'
+      - 'Sep 25 2026, "Meta makes the Muse filesystem even more accessible" (WeSearch mirror https://wesearch.press/s/meta-makes-the-muse-filesystem-even-more-accessible-ded5f300): followup intensifier - "Muse will gladly zip up its entire filesystem for you to download without hesitation". Register consistency: the adversarial security-vulnerability register holds across the Sep 24/25 pair.'
+      asymmetry_scorer_result:
+        method: 'MANUAL ILLUSTRATIVE'
+        openai_arm_tones: [-0.55]
+        meta_arm_tones: [-0.50]
+        illustrative_openai_arm_tone: -0.55
+        illustrative_meta_arm_tone: -0.50
+        illustrative_cross_entity_delta_openai_minus_meta: -0.05
+        delta_calc: '(-0.55) minus (-0.50) = -0.05'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        note: 'Arithmetic: writer-level delta = -0.55 - (-0.50) = -0.05, a near-NULL spread. The LICENSING-DEAL PARTNER (Vox Media-OpenAI strategic partnership, May 29 2024, in-corpus at the-verge.yaml competitor_relationships.openai, coverage_prediction ''softer'') routes through the same adversarial incident register as the $0-tie comparator. The asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only, directionally supported not proven.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only per the Aug 28 2026 standing rule; Engine NOT run; is_significant: false; NOT artifact-grade; Correlation is not causation; no_analysis_json_update true (manual n-small qualitative evidence; JSON reserved for computed statistics).'
+      is_significant: false
+      verdict: 'directionally_supported_not_proven'
+      falsification_note: 'THIRTY-THIRD falsification-family member (ledger 32->33): this run tests the uniform payer-softening prediction at the WRITER level (the same Vox Media-OpenAI May 29 2024 licensing and product partnership, coverage_prediction ''softer'', carried from m853 per #807) on a same-writer same-outlet incident pair: O''Brien applies the adversarial incident register to the DEAL PARTNER (OpenAI training-pause safety crisis, -0.55, Sep 26) and to Meta (Muse filesystem vulnerability, -0.50, Sep 24) within 48 hours. Illustrative delta (OpenAI minus Meta) -0.05, a near-NULL spread: the payer gets no writer-level softening. EXTENDS m853 (#1037, publication-level falsification on the same OpenAI arm) down to the journalist level. Domain-bounded to safety/security-crisis news per m507/m598; the m425 thesis-consistent domain stands. Ledger holds at 33 - THIRTY-THIRD member-form present (m854, journalists.yaml), THIRTY-FOURTH absent.'
+      falsification_family_member: true
+      falsification_ledger: 33
+      no_analysis_json_update: true
+      incentive_context: 'The Vox Media-OpenAI May 29 2024 content licensing and product partnership (in-corpus, the-verge.yaml competitor_relationships.openai, coverage_prediction ''softer'', ACTIVE per the #599/#609 convention) sits on OPENAI''s side - the adversarially-covered entity - so the near-NULL writer-level spread runs OPPOSITE the naive payer-softening prediction. No Meta-Vox Media AI licensing or content deal on record (bounded absence this run). Correlation is not causation.'
+      confounders_ranked:
+      - 'STRONG: Event-merited register (both scored arms are incident-pegged: a self-disclosed training pause vs a researcher-demonstrated filesystem vulnerability; equivalent adversarial register may be event-merited, not payer-blind)'
+      - 'STRONG: Excerpt/relay-bounded evidence (0 browser.open per #503; theverge.com policy-blocked; Meta arms via WeSearch mirrors with intact bylines/datelines in search listings; full-text reads could reveal softening detail the excerpts hide)'
+      - 'STRONG: n=1 per scored arm, degenerate samples; single-story variance would erase the -0.05 spread'
+      - 'MODERATE: Peg-type asymmetry (a named-assistant product security flaw vs a lab-level model-control failure; the OpenAI arm is existential-risk register, the Meta arm is data-exfiltration register)'
+      - 'MODERATE: 48-hour timing skew (Sep 24 vs Sep 26); the unscored consistency arms span Sep 19-25'
+      - 'MODERATE: The Sep-19 "creepy" arm''s own hedge ("maybe not for the reasons you think") bounds a pure-stigma reading of O''Brien''s Meta register'
+      - 'WEAK: Mirror-attribution risk (WeSearch mirrors carry bylines/datelines but are not theverge.com canonical pages)'
+      - 'WEAK: Single-outlet single-writer design; no cross-outlet replication of the writer-level null'
+      counterevidence:
+      - 'O''Brien''s Sep-19 "creepy" Muse piece shows the stigma register IS in his Meta repertoire ("an effective AI assistant, but one that''s a little creepy") - he is adversarial to Meta too, which predicts parity rather than contradicting it'
+      - 'O''Brien''s Sep-20 Kojima rumor-defense piece (rumor smacked down, Kojima Productions denial amplified) shows a softer register is available in his repertoire when the peg is rumor-vs-denial - register follows peg, not payer'
+      - 'The OpenAI arm is carried un-rescored from m853''s publication-level falsification; this run''s novelty is the writer-level pin on the same arm, not new OpenAI evidence'
+      - 'm853''s Meta comparator (+0.10 Himel interview relay) vs this run''s Meta incident arms (-0.50): the same outlet''s Meta register swings with the peg, confirming the register is incident-driven - the falsification''s own mechanism, since the uniform prediction claims payer-driven softness'
+      connects_to: [853, 507, 598, 425, 811, 827]
+      rotation_transparency: '1035-1039 window FOURTH leg (D #1035 -> E #1036 -> A #1037 -> B #1038 -> C #1039, rotation per #565). Predecessor #1037 Type A (main 49b1c65a, anchor fa3b29f7, log-hash finalizer 33056d0c, verified present via git log before this run''s commit). No "Type B #1038" in git log pre-commit (--grep); no test_type_b_1038 files pre-commit (glob); max numeric mechanism_id 853 pre-commit; zero underscore-form 854 mechanism key strings repo-wide pre-commit (format-built needles, own file excluded per #715); zero dash-form 854 references pre-commit; zero numeric 854 keys in profiles/ pre-commit; block key zero-hit pre-commit; three WeSearch Meta-arm URLs zero-hit repo-wide pre-commit; the two OpenAI-arm URLs already in corpus (#1037), carried not novel. Next run #1039 Type C closes the window.'
+      research_method: '3 browser.search query sets this run (Terrence O''Brien Muse Sep 2026 - SELECTED: Sep-19 "creepy" Muse piece, Sep-24 filesystem piece, Sep-25 filesystem followup, all via WeSearch mirrors from verbatim Full-URL listings; Meta smart glasses O''Brien Sep 2026 - no same-writer Apple wearable comparator surfaced, rejected; OpenAI training pause Sep 26 - already in corpus via #1037 m853, carried per #807). 0 browser.open per #503 (theverge.com policy-blocked). Pre-commit novelty greps: zero test_type_b_1038 files on disk (glob); no Type B #1038 in git log (--grep); max numeric mechanism_id 853 pre-commit; zero underscore-form 854 mechanism key strings repo-wide pre-commit (format-built needles, own file excluded per #715); zero dash-form 854 references pre-commit; zero numeric 854 keys in profiles/ pre-commit; block key zero-hit pre-commit; three WeSearch Meta-arm URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: 'tests/test_type_b_1038_terrence_obrien_verge_openai_training_pause_vs_meta_muse_filesystem_sep27_11am.py'
+  source_urls:
+  - https://wesearch.press/s/muse-will-apparently-let-you-download-its-entire-filesystem-16dae4c7
+  - https://wesearch.press/s/metas-muse-is-creepy-but-maybe-not-for-the-reasons-you-think-b4233d80
+  - https://news-area.com/2026/09/21/metas-muse-is-creepy-but-maybe-not-for-the-reasons-you-think-the-verge/
+  - https://wesearch.press/s/meta-makes-the-muse-filesystem-even-more-accessible-ded5f300
+  - https://technewstube.com/theverge/1870832/openai-pauses-training-capable-models/
+  - https://www.ai-intel.news/intel/openai-pauses-training-of-its-most-capable-models-1f2rrkn
