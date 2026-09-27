@@ -26712,3 +26712,116 @@ type_c_1034_amazon_meta_muse_agentic_commerce_denial_shopify_shop_pay_commerce_c
   yaml_parse_clean: true
   ascii_only: true
   browser_opens: 0
+
+type_c_1039_amazon_claude_selling_partner_plugin_selective_gatekeeping_vs_meta_muse_denial_sep27_12pm:
+  mechanism_id: 855
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1039
+  iteration_type: C
+  date_analyzed: '2026-09-27'
+  time_pdt: '12:00'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  job_id: mediascope-meta-wearables-press-analysis
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'FIRST dedicated corpus mechanism on the Amazon x Anthropic Claude Selling Partner plugin (Sep 23 2026): the selective-gatekeeping leg of the SIXTEENTH relationship direction (COMMERCE-GATEKEEPING) - Amazon opens the sell-side gate to the backed lab''s agent three days after denying the buy-side gate to the publisher-paying lab''s agent'
+  block_key: type_c_1039_amazon_claude_selling_partner_plugin_selective_gatekeeping_vs_meta_muse_denial_sep27_12pm
+  key_design_note: 'colon-form top-level key, no numeric mechanism-id substring (no 855 string per #715)'
+  finding: 'FIRST dedicated corpus mechanism on Amazon''s Sep 23 2026 decision to OPEN its sell-side to Anthropic''s Claude, three days after it DENIED the buy-side to Meta''s Muse (mechanism 852, Sep 20 2026). THE GRANT LEG: at Accelerate, Amazon''s annual seller conference in Seattle, Amazon announced a Selling Partner plugin that opens Seller Central to outside AI agents (GeekWire, Todd Bishop, Sep 23 2026, 7:10 am). The first third-party agent connected is Anthropic''s Claude (US beta), alongside Amazon''s own Quick assistant; \"more integrations to follow\" (AppVolt). WHAT THE PLUGIN DOES: from inside Claude, eligible US sellers can check inventory levels, adjust prices, update listings, and pull sales analytics and performance metrics (GeekWire); the plugin \"can act on it, the same way Seller Assistant does inside Seller Central\" (AppVolt) - it is a write-capable agent surface, not read-only. CONTROLS: ~60-second connection, no coding; sellers choose which data types the plugin reaches, approve each action before it runs, and get a complete audit trail (GeekWire; AppVolt; techjournal). Amazon''s VP of Worldwide Selling Partner Experience Mary Beth Westmoreland: \"Our vision was that they would never have to log into Seller Central. We would just bring it to them where they work.\" Amazon says ~90% of selling partners already use third-party AI tools (Ideabosque; GeekWire). Independent sellers account for more than 60% of units sold on Amazon worldwide; seller fees brought in $46.8B in Q2, more than AWS (GeekWire) - the sell-side agent surface sits atop Amazon''s largest revenue base, and it is the revenue base the FTC case (trial set March 2027, Seattle) scrutinizes. THE TIMING: three days earlier, Amazon had unilaterally blocked Meta''s Muse shopping agent from Amazon.com (mechanism 852). Ideabosque''s takeaway list states the pairing outright: Amazon \"blocked Meta''s Muse shopping agent from its store days before the announcement.\" THE SELECTIVITY: Amazon \"chose the plugin path, not an open protocol\" (Ideabosque) - UCP, ACP, AP2, x402 remain buy-side standards; \"Amazon decides which assistants connect.\" The gate has a key and it turns first for the lab Amazon BACKS ($13B+ Anthropic, up to $33B with milestones, m852) - the lab that pays publishers NOTHING (mechanism 509, zero-deal posture) - while it stays locked against the lab that PAYS publishers (m331 Meta AI licensing network; m594 News Corp up to $50M/yr). THE STATED-RATIONALE SPLIT: the two access decisions sit on different trust surfaces. Amazon''s objection to Muse was the credential-holding consumer agent (no permission, no self-identification, credential capture - m852). The Claude plugin is the authorized API lane: Login with Amazon OAuth, scoped roles, revocation, no password ever shared (sellerforge). Amazon''s own terms logic, stated via the sellerforge litigation history: Amazon sued Perplexity in Nov 2025 over its Comet browser agent shopping consumer accounts while \"concealing itself\"; a federal judge blocked the agent in March 2026; an appeals court later vacated the injunction, leaving the credential-agent question legally unsettled - the gray zone Amazon''s API lane was built to escape. Correlation, not causation. Hypothesis-generating only.'
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scores: NOT_SCORED
+  engine_run: false
+  falsification_ledger: 33
+  falsification_family_member: false
+  falsification_note: 'Ledger holds at 33 after Type B #1038''s THIRTY-THIRD member (mechanism 854, Terrence O''Brien same-writer pair). This mechanism is NOT a falsification-family member: it is qualitative financial-incentive mapping of a selective-access event, not a falsifiable editorial-tonal claim.'
+  excerpt_bounded: true
+  excerpt_bounded_note: '0 browser.open this run per #503; all facts carried from search excerpts (GeekWire, Ideabosque, AppVolt, techjournal, LinkedIn/Ollie Rodriguez, sellerforge, nexscope). The Amazon Accelerate announcement itself (aboutamazon.com/seller-assistant-plugin) was not read first-hand; the official announcement URL is carried via the nexscope relay, not a direct fetch.'
+  sources:
+  - url: https://www.geekwire.com/2026/amazon-opens-its-seller-tools-to-outside-ai-agents-starting-with-anthropics-claude/
+    what: 'GeekWire (Todd Bishop, Sep 23 2026, 7:10 am): Amazon announced at Accelerate (annual seller conference, Seattle) a plugin letting sellers run Amazon businesses from Anthropic''s Claude or Amazon''s own Quick assistant; check inventory, adjust prices, update listings without opening Seller Central; ~90% of sellers already use some form of outside AI; Mary Beth Westmoreland (VP Worldwide Selling Partner Experience): \"Our vision was that they would never have to log into Seller Central. We would just bring it to them where they work.\"; independent sellers >60% of units sold worldwide; seller fees $46.8B in Q2, more than AWS; FTC case trial set March 2027 Seattle'
+    accessed: '2026-09-27'
+  - url: https://www.ideabosque.com/library/amazon-seller-central-sell-side-agent-plugin/
+    what: 'Ideabosque: Amazon opened its Seller Central sell-side API surface to outside AI agents on September 23 2026 - US beta Selling Partner plugin for Amazon Quick and Anthropic''s Claude (inventory, prices, listings, sales analytics); 90% of selling partners already use third-party AI tools and accept Seller Assistant recommendations >90% of the time; \"Amazon chose the plugin path, not an open protocol\" (UCP, ACP, AP2, x402 remain buy-side standards; Amazon decides which assistants connect); \"it blocked Meta''s Muse shopping agent from its store days before the announcement\"; scoped data types, per-action human approval, complete audit trails'
+    accessed: '2026-09-27'
+  - url: https://www.appvolt.ai/news/amazon-seller-assistant-workflows-plugin-claude-quick
+    what: 'AppVolt (Sep 25 2026): plugin \"launching in Quick and in beta with Claude, with more integrations to follow\"; the plugin does more than read data: \"it can act on it, the same way Seller Assistant does inside Seller Central\"; connection \"roughly 60 seconds, no coding required\"; beta for Amazon''s US stores, international expansion to follow; Seller Assistant workflows run continuously, monitor conditions, respond dynamically even when seller logged out; \"sellers stay in control, reviewing and approving them before they''re carried out\"; complete audit trail; free 12-month Amazon Quick Plus subscription through Dec 31 2026'
+    accessed: '2026-09-27'
+  - url: https://techjournal.org/amazon-seller-assistant-claude-plugin
+    what: 'techjournal: Amazon''s Seller Assistant plugin lets eligible US sellers connect selected AI agents, including Claude in beta, to Amazon business data and approved actions; plugin introduced Sep 23 2026; beta can connect listing data, performance metrics, inventory levels, sales analytics; sellers can require approval before a workflow acts and review a complete audit trail'
+    accessed: '2026-09-27'
+  - url: https://www.sellerforge.ai/blog/amazon-seller-central-mcp-guide
+    what: 'sellerforge (updated for Accelerate 2026): Amazon now offers an official route - the Selling Partner plugin launched September 23 2026, putting Seller Assistant inside Amazon Quick and (in beta) Claude with scoped access and human approval; context: Amazon sued Perplexity in November 2025 after its Comet browser agent shopped consumer accounts while \"concealing itself\"; a federal judge blocked the agent in March 2026; an appeals court later vacated the injunction, leaving the credential-agent question legally unsettled; frame: \"authorized API access versus credential-holding agents\"'
+    accessed: '2026-09-27'
+  - url: https://www.linkedin.com/pulse/amazon-opened-seller-central-ai-claude-got-first-key-ollie-rodriguez-hegse
+    what: 'LinkedIn/Ollie Rodriguez (published Sep 25 2026): \"Amazon Opened Seller Central to AI. Claude Got the First Key.\" - Amazon announced Sep 23 at Accelerate that it is opening Seller Central to outside AI agents; first plugin connects straight into Anthropic''s Claude plus Amazon''s own Quick assistant; beta for US stores, more countries to follow; \"Your Amazon store can now be run from a Claude chat window. No Seller Central, no dashboards, sixty seconds to connect.\"'
+    accessed: '2026-09-27'
+  grant_leg:
+    event: 'Amazon opens Seller Central sell-side API surface to outside AI agents'
+    date: 'Sep 23 2026 (announced at Accelerate, annual seller conference, Seattle - GeekWire, Todd Bishop, 7:10 am)'
+    first_third_party_agent: 'Anthropic''s Claude (US beta), alongside Amazon''s own Quick assistant; \"more integrations to follow\" (AppVolt)'
+    capabilities: 'check inventory, adjust prices, update listings, pull sales analytics/performance metrics (GeekWire); the plugin can act on it, the same way Seller Assistant does inside Seller Central (AppVolt)'
+    controls: '~60-second connection, no coding; sellers choose which data types the plugin reaches; per-action human approval; complete audit trail (GeekWire; AppVolt; techjournal)'
+    westmoreland_quote: '\"Our vision was that they would never have to log into Seller Central. We would just bring it to them where they work.\" (Mary Beth Westmoreland, VP Worldwide Selling Partner Experience)'
+    adoption_baseline: '~90% of selling partners already use third-party AI tools; sellers accept Seller Assistant recommendations >90% of the time (Ideabosque; GeekWire)'
+    revenue_base: 'independent sellers >60% of units sold worldwide; seller fees $46.8B in Q2, more than AWS (GeekWire); FTC antitrust case (overcharging sellers, punishing lower prices elsewhere) set for trial March 2027, Seattle'
+    protocol_choice: 'Amazon \"chose the plugin path, not an open protocol\" - UCP, ACP, AP2, x402 remain buy-side standards; \"Amazon decides which assistants connect\" (Ideabosque)'
+  denial_leg_carried:
+    event: 'Amazon''s Sep 20 2026 unilateral block of Meta''s Muse shopping agent (mechanism 852, carried un-rescored per #807)'
+    timing_pair: 'Ideabosque takeaway: Amazon \"blocked Meta''s Muse shopping agent from its store days before the announcement\"'
+    trust_surface_contrast: 'Muse objection: credential-holding consumer agent (no permission, no self-identification, credential capture - m852). Claude plugin: authorized API lane (Login with Amazon OAuth, scoped roles, revocation, no password shared - sellerforge). Amazon''s stated rationale separates the two without any lab-favoritism hypothesis.'
+    litigation_gray_zone: 'Amazon sued Perplexity Nov 2025 over Comet browser agent; federal judge blocked it March 2026; appeals court vacated - credential-agent question legally unsettled (sellerforge). The API lane is Amazon''s built escape from that gray zone.'
+  selective_gatekeeping_geometry:
+    backed_lab_granted: 'Anthropic''s Claude is the FIRST third-party agent through the gate; Amazon BACKS Anthropic ($13B+, up to $33B with milestones, Apr 20 2026 - m852); Anthropic pays publishers NOTHING (mechanism 509, zero-deal posture)'
+    publisher_payer_denied: 'Meta''s Muse is the agent DENIED the buy-side gate (mechanism 852, Sep 20); Meta PAYS publishers (m331 Meta AI licensing network: USA Today, People Inc, CNN, Fox News, Daily Caller, Washington Examiner, Le Monde; m594 News Corp up to $50M/yr from March 2026)'
+    amazon_role_update: 'Amazon''s three-role corpus geometry (m852) gains a fourth posture: PAYS publishers (m559), BACKS zero-deal labs (Anthropic $13B+; OpenAI $50B), DENIES the publisher-paying lab''s buy-side agent (m852), and now GRANTS the backed lab''s agent privileged sell-side access (this mechanism). The gatekeeper role bifurcates into gate-closed (Muse) and gate-open (Claude).'
+    open_question: 'Whether the plugin path expands to rival labs'' agents (\"more integrations to follow\" - AppVolt) or stays Claude-exclusive will determine whether the selectivity is product sequencing or incentive geometry.'
+  relationship_direction_taxonomy:
+    direction_number: 'SIXTEENTH per the m807 enumeration - SECOND LEG, not a new direction'
+    direction_name: 'COMMERCE-GATEKEEPING (access-denial as licensing leverage) - selective-gatekeeping leg'
+    definition: 'The commerce platform owner''s gate has a key that turns selectively: the same week it denies one lab''s agent access to the buy-side surface (Meta Muse, Sep 20), it opens the sell-side surface to a rival lab''s agent (Anthropic Claude, Sep 23). Where m852 mapped the denial leg (access-denial as licensing leverage), this mechanism maps the grant leg: the platform chooses WHICH assistants connect (Ideabosque: \"Amazon decides which assistants connect\"), granting privileged sell-side access to the lab it backs financially while keeping the buy-side gate closed to the lab that pays publishers. The direction count holds at sixteen.'
+    prior_directions: '1 sue-then-sign (m624), 2 pay-or-litigate bifurcation (m636), 3 grant-then-sue (m675), 4 license-over-authors (m699), 5 pool-and-license (m720), 6 infrastructure-capture (m738), 7 publisher-as-feed-operator (m741), 8 vendor-embed (m807), 9 litigation-pooling (m810), 10 publisher-traffic-gate (m828), 11 commerce-conversion (m831), 12 regulatory-bargaining (m834), 13 demand-for-equity (m837), 14 exclusionary-diversion (m846), 15 ecosystem-grant (m849)'
+    taxonomy_tension: 'm737''s finding enumerated termination-leverage as its seventh direction, which the m807 enumeration does not list; unresolved, carried from #1014'
+  certification_boundaries: 'Excerpt-bounded per #503: 0 browser.open this run; all facts from search excerpts and secondary relays (LinkedIn, sellerforge, nexscope, Ideabosque analysis). The official aboutamazon.com announcement was not read first-hand. The three-day pairing is stated by Ideabosque, not by Amazon. The \"first key for Claude\" framing is Ollie Rodriguez''s headline; Amazon says \"more integrations to follow\" (AppVolt), so the grant may be product sequencing, not lab-favoritism. The $13B+/up-to-$33B Anthropic backing and the OpenAI $50B figures are carried from mechanism 852, not re-verified this run. The FTC-trial and $46.8B Q2 seller-fee figures are GeekWire-reported, single-outlet. No SEC cross-check exists (Amazon is public but the plugin terms are press-reported).'
+  coverage_note: 'No editorial-tone claim about any publication''s coverage of the Amazon-Claude plugin or the Muse block is made this run; tone NOT_SCORED. The mechanism maps the incentive geometry (grant leg + carried denial leg), not coverage outcomes. Whether publications with Amazon, Meta, or Anthropic ties frame the selectivity differently is untested and unclaimed.'
+  novelty: 'FIRST dedicated corpus mechanism on the Amazon x Anthropic Claude Selling Partner plugin (Sep 23 2026) and FIRST dedicated corpus mechanism on the selective-gatekeeping leg of the commerce-gatekeeping direction. Pre-commit greps per #715: zero test_type_c_1039 files on disk (glob), no \"Type C #1039\" in git log (--grep), max numeric mechanism_id 854 pre-commit (Type B #1038, mechanism 854 in profiles/careers/journalists.yaml), zero numeric mechanism key 855 in profiles/ pre-commit, block key zero-hit repo-wide pre-commit, all 6 source URLs zero-hit repo-wide pre-commit (geekwire.com/2026/amazon-opens-its-seller-tools, ideabosque.com library amazon-seller-central, appvolt.ai news amazon-seller-assistant, techjournal.org amazon-seller-assistant-claude-plugin, sellerforge.ai blog amazon-seller-central-mcp-guide, linkedin.com pulse amazon-opened-seller-central).'
+  connects_to: [852, 831, 559, 509, 594]
+  confounders:
+  - strength: strong
+    text: 'Excerpt-bounded sourcing per #503: 0 browser.open this run; all facts carried from search excerpts and secondary relays; the official Amazon announcement was not read first-hand.'
+  - strength: strong
+    text: 'Roadmap-timing coincidence: Accelerate is Amazon''s annual pre-scheduled seller conference, so the plugin announcement was roadmapped months ahead and cannot be a reactive reward to Anthropic; the three-day pairing with the Muse block is a calendar coincidence on the record.'
+  - strength: strong
+    text: 'Different trust surfaces: Amazon''s stated agent-transparency rationale fully separates the two decisions without any lab-favoritism hypothesis - the Muse objection was the credential-holding consumer agent; the Claude plugin is the authorized OAuth API lane with per-action human approval. The sellerforge litigation history (Perplexity Comet suit, March 2026 injunction, vacated on appeal) shows the gray zone the API lane was built to escape.'
+  - strength: medium
+    text: 'Beta/pilot stage: Claude is the first third-party agent in a US-only beta; Amazon says \"more integrations to follow\" (AppVolt). The selectivity may be product sequencing, not policy.'
+  - strength: medium
+    text: 'Symmetric denial (TechSpot via m852: Amazon plans to block Google and OpenAI agents too) shows the Muse denial is not Meta-targeted; by the same token the Claude grant may be a product announcement rather than lab-favoritism.'
+  - strength: weak
+    text: 'n=1 event, four days old (Sep 23); durability unknown; the plugin could open to rival agents within weeks, collapsing the selectivity reading.'
+  - strength: weak
+    text: 'Seller-fee and FTC-trial framing (GeekWire) is single-outlet; the $46.8B Q2 figure and March 2027 trial date are press-reported, not filing-verified this run.'
+  counterevidence:
+  - 'The three-day pairing is a calendar coincidence: Accelerate is a pre-scheduled annual conference, so the plugin announcement was roadmapped months ahead and cannot be a reactive reward.'
+  - 'The trust surfaces differ completely: credential-holding consumer agent (Muse, denied) vs authorized OAuth API with per-action approval (Claude plugin, granted). Amazon''s stated rationale separates the two decisions without any lab-favoritism hypothesis.'
+  - 'Amazon denies Google and OpenAI agents too (TechSpot via m852): the denial leg is lab-neutral, which cuts against reading the grant leg as lab-favoritism.'
+  - 'Amazon says \"more integrations to follow\" (AppVolt): if the plugin opens to rival labs'' agents within weeks, the selectivity reading collapses into product sequencing.'
+  - 'Anthropic''s zero-deal posture (m509) means Amazon''s backed lab pays publishers nothing - but Amazon itself PAYS publishers (m559), so the platform''s publisher payments and its lab backing coexist without contradiction; the grant need not be publisher-extractive.'
+  strongest_counterargument: 'The three-day pairing is a calendar coincidence dressed as incentive geometry. Accelerate is Amazon''s annual pre-scheduled seller conference: the plugin announcement was roadmapped months ahead, and the first third-party agent at launch (Claude) is the partner whose Anthropic relationship Amazon already funds at $13B+ - a procurement choice, not a reactive reward. The two access decisions sit on different trust surfaces (credential-holding consumer agent vs OAuth API with per-action human approval), so Amazon''s stated agent-transparency rationale fully separates them; the sellerforge litigation history (Perplexity Comet suit, March 2026 injunction, vacated on appeal) shows the gray zone the API lane was built to escape. Amazon denies Google and OpenAI agents too (TechSpot), so the denial leg is lab-neutral, and Amazon says \"more integrations to follow,\" so the grant leg may be product sequencing. If rival agents get plugins within weeks, the \"selective gatekeeping\" label collapses - the leg earns its keep only if the gate stays Claude-exclusive or opens to everyone except Meta''s agent. Correlation, not causation.'
+  rotation_transparency: 'Iteration #1039 Type C is the FIFTH and CLOSING leg of the 1035-1039 window (D->E->A->B->C per #565 anchor + rotation guard). #1038 was the fourth leg (Type B, Terrence O''Brien same-writer register parity, mechanism 854, main 89737dcc / anchor 03e3d4d6 / log-hash 7031b832). Rotation A/B/C/D/E advances: next run is #1040 Type D, opening the 1040-1044 window.'
+  concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative-corpus-integrity test), #1012 working-tree block-key fix all stay out of this run''s index and diff.'
+  verification:
+    yaml_parse_clean: true
+    ascii_only: true
+    browser_opens: 0
+    max_numeric_mechanism_id_pre_commit: 854
+    mechanism_id_claimed: 855
+    source_urls_first_appearance: 6
+    search_sets: 3
+    falsification_ledger_holds_at: 33
+  yaml_parse_clean: true
+  ascii_only: true
+  browser_opens: 0
