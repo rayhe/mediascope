@@ -42,7 +42,7 @@ NEXT_US = "mechanism" + "_855"          # own-form forward marker; never literal
 NEXT_DASH = "mechanism" + "-855"
 MECH_ID_MARKER = "mechanism" + "_854"   # own-form marker; never literal in block
 MECH_KEY = "type_b_1038_terrence_obrien_verge_openai_training_pause_vs_meta_muse_filesystem_sep27"
-ANCHORED_SHA = "0" * 40  # patched post-commit per #565
+ANCHORED_SHA = "89737dccb6b561b73861d96306e9a470519afcbf"  # patched post-commit per #565
 
 EXPECTED_ORDER = [("B", "1038"), ("A", "1037"), ("E", "1036"), ("D", "1035"), ("C", "1034")]
 
