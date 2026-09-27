@@ -1,4 +1,4 @@
-## #1042 Type A: WSJ x OpenAI Sep-27 U.N. rogue-agents adversarial safety-crisis register (-0.45) vs WSJ x Anthropic Sep-24 Akamai $11.6B business-growth register (+0.10) - THIRD safety-crisis falsification (FIRST at WSJ/News Corp); THIRTY-FOURTH falsification-family member (ledger 33->34), mechanism 856 - Type A THIRD leg of the 1040-1044 window (Sep 27 2026, 15:00 PDT; main commit PENDING1042MAIN / anchor PENDING1042ANCHOR; log-hash followup registers both hashes here per #721 (this commit))
+## #1042 Type A: WSJ x OpenAI Sep-27 U.N. rogue-agents adversarial safety-crisis register (-0.45) vs WSJ x Anthropic Sep-24 Akamai $11.6B business-growth register (+0.10) - THIRD safety-crisis falsification (FIRST at WSJ/News Corp); THIRTY-FOURTH falsification-family member (ledger 33->34), mechanism 856 - Type A THIRD leg of the 1040-1044 window (Sep 27 2026, 15:00 PDT; main commit 21deb9d8 / anchor 5ae36d1a; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 15:00 PDT, iteration_type "A", **THIRD leg of the 1040-1044 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
