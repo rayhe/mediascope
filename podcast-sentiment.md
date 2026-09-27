@@ -16408,6 +16408,81 @@ Asymmetry note: Meta-exclusive privacy-pressure framing continues across all 126
 
 ---
 
+## Iteration #1026 - One-hundred-twenty-eighth Cycle (Sep 26 2026, 23:00 PDT)
+
+### The Guilty Feminist
+
+**EPISODE 501 CONFIRMED AGAIN THIS RUN.** The listennotes.com main directory (crawled 3h, 761-episode listing; Last Updated: 6 days ago) still lists at top: "The Guilty Feminist 501. Out North East" - Presented by Deborah Frances-White and Alison Spittle with special guests Peter Darrant and Sunday Hicks. Recorded 4 September 2026 at Live Theatre in Newcastle. Released 21 September. 01:40:58. Title/description carry zero Meta/wearables content (snippet-bounded); no tone score asserted (no first-hand read).
+
+No episode 502 surfaced anywhere (six-day absence since Sep 21, consistent with weekly cadence, not a signal).
+
+Re-surfaced in-corpus this run: the listennotes TH locale variant (stale 724-episode listing; in-corpus family variant), the YouTube GF 500 episode page (crawled 9d; 500 "Five Hundredth episode with Kate Cheka and the Palestinian Circus" released Sep 14; in corpus via #1001), the uk-podcasts "Deborah Frances-White on The News Meeting" page (crawled 4h; guest appearance on The News Meeting dated 2025-04-02; carries the 761-episode count and "Latest episode: 2026-09-21" 501-signal corroboration; in corpus via #841), the goloudnow "Deborah Frances-White on The News Meeting-519585" page (crawled 4h; 501 "Out North East" at top of the series listing; in corpus via #726), the podscan.fm episode-499 page (crawled 20h; 499 "Where You End and I Begin with Lindsey Mendick"; transcript excerpt about art, zero Meta/wearables content; in corpus via #1016). All re-surfaced keys carried >=1 pre-commit corpus hit, verified via git grep -F.
+
+NEW TO CORPUS this run (1):
+- https://guiltyfeminist.com/live-shows/ (zero pre-commit corpus hits, verified via git grep -F; crawled 1d; the official GF live-shows page; page timestamp 2026-09-10T15:18:50+01:00; lists the Sep 25 Vision Festival appearance (already past at run time), the Oct 10 Shedinburgh stripped-back show, and the Nov 24 "Road to Gilead" Union Chapel night with Zack Polanski on the far right, whose agenda asks "And what role does big tech and AI play in all of this?". Housekeeping/identity key, NOT an episode key; carries zero Meta-glasses content.)
+
+ZERO new-to-corpus verbatim GF EPISODE URL keys this run (eighth consecutive pure-re-surface episode-key cycle after #991, #996, #1001, #1006, #1011, #1016, and #1021); the all-key pure-re-surface streak ends at seven on the new auxiliary housekeeping key (official live-shows page), not an episode.
+
+ZERO Meta/wearables content in any GF episode across all 128 cycles (bounded search-result absence, not proof of non-existence).
+
+### Everyone Hates Elon
+
+47-day hold continues (Aug 10 Epstein spoof -> Sep 26; date(2026,9,26)-date(2026,8,10)=47 days; same-day hold, #1021 was also 47).
+
+Previously-logged EHE keys observed this run:
+- https://afrotech.com/smart-glasses-ethics-and-consent (ethics/consent piece: EHE posters at Meta London HQ, "Meta and Ray-Ban's new AI glasses can be used to secretly record women and young people for sexual reasons", two-party consent-law analysis; crawled 20h; in corpus)
+- https://www.linkedin.com/pulse/whats-up-privacy-meta-ray-ban-glasses-updates-viky-hurai-jaklovska-ssqwf (privacy roundup: Sama Kenya contractors, Wired pickup-artist filming, Brazil gynaecologist case, EHE bus-stop Epstein ad and TfL notices, 70+ individual lawsuit, 72% American concern stat; crawled 11d; in corpus via #976)
+- https://www.linkedin.com/pulse/dear-ai-glasses-industry-situation-critical-red-kayvan-mirza-zwaze (Kayvan Mirza op-ed: Epstein-spoof follow-up ad "Glasses for people who don't do consent" quoted, Trust-O-Meter-red industry verdict; crawled 19d; in corpus via #1001)
+- https://www.techtimes.co.uk/activists-challenge-meta-ray-ban-smart-glasses-london-1808470 (amnesty-boxes strand: "Give Up Your Pervert Glasses" boxes outside London Ray-Ban stores; crawled 4h; in corpus)
+- https://www.huckmag.com/article/activists-slam-pervert-glasses-in-new-guerrilla-campaign (Isaac Muk, Huck digital editor: London Underground stickers as continuation of the EHE campaign; parents-and-children class action over Facebook/Instagram photo harvesting for generative AI training and the unreleased NameTag facial-recognition system; EHE spokesperson: "These glasses are already being used to abuse women. In Brazil, a gynaecologist was arrested for using them while examining a patient"; "pervert glasses" framing; crawled 4h; in corpus via #1021)
+
+5 logged keys re-surfaced this run (all five carry >=1 pre-commit corpus hit, verified via git grep -F).
+
+ZERO new-to-corpus verbatim EHE URL keys this run.
+
+2 own-repo GitHub URLs in the EHE result set (the podcast-sentiment.md blob page + the f64948b commit page; each verified present in the repo git log via git cat-file -t, still circular as evidence), rejected as circular, not ingested.
+
+The designtaxi 34124 Epstein-ad thread, ranzware Kylie-lenticular mirror (#976), softonic Epstein-poster, engadget bus-stops original, hyperallergic Epstein ad, petapixel lenticular piece, fstoppers lenticular piece, singulism bus-stop strand, designtaxi 33476 Kylie-lenticular thread, thebesttimes consent email-drive, cloudfront Kylie-poster mirror, latestly fact-check pair, and lapost CNN relay did NOT surface this run (remain in corpus).
+
+No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 128 cycles (bounded search-result absence).
+
+### Attention Sphere
+
+The quoted "Attention Sphere" search returned no matching podcast (one-hundred-twenty-eighth no-match). 7 results were all this repository's own GitHub URLs, rejected as circular, not ingested: the podcast-sentiment.md blob page, which SURFACED AGAIN this run, plus 6 own-repo commit URLs from the own-repo family (9590385, a288c86, a2b656f, 25c730e, 6da2928, fe4528b - the same set as the #1001, #1016, and #1021 cycles; each verified present in the repo git log via git cat-file -t, still circular as evidence).
+
+Task-spec name remains misidentified as a podcast. Real-world identity stands per #591 (advocacy group with named executive director Kendall Schrohe). Tracked Sources advanced 127->128.
+
+### Press surfaces
+
+SEVEN results observed, ALL previously-logged keys (>=1 pre-commit corpus hit each, verified via git grep -F); ZERO new verbatim URL keys this run.
+
+Previously-logged press keys observed this run:
+- https://www.usatoday.com/story/tech/news/2026/09/23/meta-camera-free-smart-glasses/91913146007/ (Sep-23 camera-free launch framing: Audio $349 ship Oct 13, Gen 3 from $449, Muse agent, Charm device; crawled 2d; in corpus via #956)
+- https://techgig.com/news/tech-drops/meta-unveils-ai-powered-muse-charm-camera-free-ray-ban-glasses-at-connect-event/134472411 (Sep 25 Connect report: Muse Charm, Ray-Ban Audio camera-free $349, Gen 3, slim-design VR glasses; notes the "perv glasses" nickname and that audio-only recording gives bystanders no visual signal; crawled 15h; in corpus via #1016)
+- https://community.designtaxi.com/topic/39120-meta-releases-ray-ban-smart-glasses-without-the-cameras-amid-privacy-stalking-concerns/ (crawled 3h; camera-free design still raises microphone/AI-processing questions; in corpus via #986)
+- https://americanow.com/FreeNewsReader/tech-firms-address-smart-glasses-privacy-concerns-amidst-public-backlash/ (tech-firms privacy-backlash summary: 7M units 2025 sales figure, "pervert glasses" nickname, 70+ individual lawsuit, Sep-23 camera-free response; crawled <1h; in corpus via #1011/#1016; this run's replacement for the non-surfacing ppc.land Hamburg key)
+- https://dig.watch/updates/meta-confirms-camera-free-ray-ban-smart-glasses (camera-free Audio detail: Sep-15 Luna codename report callback, six microphones, Connect Sep 23 announcement; crawled <1h; in corpus)
+- https://www.analyticsinsight.net/news/meta-ray-ban-audio-launches-at-usd-349-with-camera-free-ai (Audio launch detail: EssilorLuxottica co-build, Clubmaster/Burbank styles, Vishal Shah recording-indicator quote; crawled 1h; in corpus via #961)
+- https://www.linkedin.com/pulse/whats-up-privacy-meta-ray-ban-glasses-updates-viky-hurai-jaklovska-ssqwf (privacy roundup: class action Mar 4 2026 Northern California, HateAid Aug 12 2026 Frankfurt criminal complaint, Hamburg HmbBfDI Sep-10 53-page GDPR finding; crawled 11d; in corpus via #976)
+
+The ppc.land Hamburg finding, gizbot LED-fix update, m1k.tech EU-consent analysis, startupfortune LED-tamper bricking piece, thesun Boz interview (#1011), medianama 223-meta-ray-ban-audio piece (#1011), and usatoday Sep-25 Dan Levy piece (#1011) did NOT surface this run (remain in corpus).
+
+Recency frontier: HOLDS at Sep 25 (no advance; the newest surfaces re-observed this run are the Sep-25 techgig piece and Sep-23 items).
+
+Meta-exclusive privacy-pressure framing continues across all 128 cycles (no competitor camera-wearable coverage carries equivalent privacy-pressure framing).
+
+Snippet-bounded, tone NOT_SCORED per the standing rule.
+
+### Statistical discipline
+
+monitoring-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, falsification ledger holds at 30, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation. Hypothesis-generating only.
+
+**Research method:** 4 browser.search query sets this run (The Guilty Feminist Deborah Frances-White latest episode September 2026; quoted "Everyone Hates Elon" Meta Ray-Ban glasses campaign; quoted "Attention Sphere" podcast Meta tech wearables; Meta Ray-Ban smart glasses privacy news September 2026). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_e_1026 files on disk (glob); no Type E #1026 in git log (--grep); max numeric mechanism_id 846 in-tree pre-commit; zero numeric 847-form mechanism keys in profiles/ pre-commit; zero underscore-form 847 mechanism key strings in profiles/ and tests/ pre-commit (per #715, the #1025 test-file next-number guard, __pycache__ artifacts, and own file excluded); zero dash-form 847 references in profiles/ pre-commit; ONE new verbatim URL key this run (guiltyfeminist.com/live-shows/; zero pre-commit corpus hits, verified via git grep -F); 17/17 non-circular distinct URL keys >=1 corpus hit pre-commit, verified via git grep -F (excluding the 1 new key): listennotes main + listennotes TH variant + youtube 500 page + uk-podcasts news-meeting + goloudnow news-meeting + podscan 499 page; afrotech + linkedin privacy roundup + kayvan-mirza op-ed + techtimes amnesty-boxes + huckmag pervert-glasses; usatoday Sep-23 + techgig Sep-25 + designtaxi 39120 + americanow + dig.watch camera-free + analyticsinsight (linkedin privacy roundup counted in the EHE set); 8 distinct own-repo GitHub URLs rejected as circular (2 EHE set + 7 AS set, blob shared), not ingested. 28 result rows / 18 non-circular distinct URL keys / 1 new verbatim URL key this run. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test file
+
+- tests/test_type_e_1026_podcast_sentiment_128th_verification_sep26_11pm.py
+
 ## Iteration #1021 - One-hundred-twenty-seventh Cycle (Sep 26 2026, 18:00 PDT)
 
 ### The Guilty Feminist
