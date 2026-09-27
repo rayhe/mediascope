@@ -27280,6 +27280,89 @@ cross_publication_findings:
     - 739
     - 664
     - 717
+  reuters_anthropic_akamai_neutral_deal_register_vs_meta_connect_privacy_hardened_register_sep2026:
+    finding_type: cross_publication_coverage_asymmetry
+    publication: Reuters
+    competitor: Anthropic
+    comparator_entity: Meta
+    rotation_type: A
+    iteration: 1032
+    mechanism_id: 850
+    discovery_date: '2026-09-27'
+    finding: 'FIRST dedicated corpus mechanism on the Reuters Sep 24 2026 Anthropic-Akamai $11.6B cloud deal piece ("Akamai, Anthropic sign $11.6 billion cloud services deal") vs the Reuters Sep 23 2026 Meta Connect preview ("Meta expected to unveil smart glasses without camera as privacy concerns grow", Aditya Soni) - a 24-hour same-desk natural experiment. The Anthropic arm routes an $11.6B seven-year capital commitment (expandable to $20B, warrant for up to 5 percent of Akamai) through neutral deal-reportage: share-jump framing ("Akamai shares jumped 15 percent in extended trading on Thursday"), capacity-demand framing ("as the AI lab seeks additional computing capacity to support its growing workloads"), MANUAL ILLUSTRATIVE -0.05. The Meta arm routes a product launch through a privacy-hardened preview register: the headline foregrounds privacy concerns; "amid growing privacy concerns about AI devices that can be used to record people without their consent"; "the devices'' growing popularity has sparked concern globally about their ability to covertly record people"; the California class action alleging annotators "viewed and labeled footage of people''s private moments, including changing clothes"; MANUAL ILLUSTRATIVE -0.45. Illustrative delta (Anthropic minus Meta) +0.40: within 24 hours on the same wire desk, the competitor arm gets straight deal news with no burn-realism register while Meta gets privacy-pressure framing inside a launch peg. The Reuters-Meta multi-year content deal (Oct 25 2024) sits on META''s side, so the +0.40 spread runs OPPOSITE the naive payer-softening prediction. EXTENDS mechanism 844 (#1022, Reuters news-desk null-tie-wire, 48-hour design) to a FOURTH entity on the desk (Anthropic, after OpenAI m739 Breakingviews and Google m844) with a tighter 24-hour window; PAIRS mechanism 823 (#1028, FT interrogated OpenAI cash burn vs Meta Connect-momentum inversion) as the capital-register contrast: the Reuters news desk skipped the burn-realism register on Anthropic''s $11.6B commit while the FT opinion desk applied it to OpenAI the same Connect week. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 31. Correlation is not causation.'
+    anthropic_arms:
+    - piece: 'Akamai, Anthropic sign $11.6 billion cloud services deal'
+      date: '2026-09-24'
+      author: Reuters Staff (byline unattributed)
+      desk: Reuters technology desk (news)
+      source_routing: company_filing_and_announcement
+      register: neutral_deal_reportage
+      key_language:
+      - 'Anthropic has signed an $11.6 billion cloud services agreement with Akamai Technologies (AKAM.O), as the AI lab seeks additional computing capacity to support its growing workloads'
+      - 'The seven-year contract could expand by an additional $9 billion, bringing the potential total commitment to about $20 billion'
+      - 'Akamai shares jumped 15 percent in extended trading on Thursday'
+      tone_illustrative: -0.05
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); illustrative only'
+      source_url: https://www.reuters.com/technology/akamai-anthropic-sign-116-billion-cloud-services-deal-2026-09-24/
+      url_attestation: 'First-hand search-result listing: reuters.com publisher attribution verbatim in the Full-URL listing; excerpt-tier read only, not first-hand opened on reuters.com (0 browser.open per #503)'
+    meta_arms:
+    - piece: 'Meta expected to unveil smart glasses without camera as privacy concerns grow'
+      date: '2026-09-23'
+      author: Aditya Soni (byline relay-attested via KWSN radio mirror of the Reuters wire)
+      desk: Reuters business desk (news)
+      source_routing: pre_event_preview_with_enforcement_callback
+      register: privacy_hardened_product_preview
+      key_language:
+      - 'Meta Platforms is expected to unveil new smart glasses at its annual Connect conference on Wednesday, including a pair without cameras, amid growing privacy concerns about AI devices that can be used to record people without their consent'
+      - 'The social media giant is the early leader in the race to put AI devices in the hands of customers, with sales of the smart glasses it co-developed with EssilorLuxottica (ESLX.PA) surging last year to more than 7 million'
+      - 'But the devices'' growing popularity has sparked concern globally about their ability to covertly record people'
+      - 'a proposed class action in California alleging Meta misled users about privacy protections and that human annotators training its AI viewed and labeled footage of people''s private moments, including changing clothes, after the recordings were uploaded to its servers'
+      tone_illustrative: -0.45
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); illustrative only; NEW arm this run, not carried'
+      source_url: https://www.reuters.com/business/meta-expected-unveil-smart-glasses-without-camera-privacy-concerns-grow-2026-09-23/
+      url_attestation: 'First-hand search-result listing: reuters.com publisher attribution verbatim in the Full-URL listing; excerpt-tier read only (0 browser.open per #503)'
+    asymmetry_scorer:
+      anthropic_arm_tones: [-0.05]
+      anthropic_arm_avg: -0.05
+      meta_arm_tones: [-0.45]
+      meta_arm_avg: -0.45
+      illustrative_delta_anthropic_minus_meta: 0.40
+      delta_calc: '(-0.05) - (-0.45) = +0.40'
+      delta_interpretation: '24-hour same-desk spread: the Reuters news desk applies neutral deal-reportage to Anthropic''s $11.6B capital commitment and privacy-hardened preview register to Meta''s Connect launch; the payer (Meta, Oct 25 2024 Reuters-Meta content deal) receives the harsher register - the widest Reuters-desk illustrative spread in the corpus wire-arm family, widening m844''s +0.05 near-null pair'
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_small_n_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open per #503); tones are illustrative only'
+      verdict: 'Within-desk register asymmetry documented, not proven: the Reuters news desk routes Anthropic''s capital-announcement arm through neutral deal news (-0.05) and Meta''s launch arm through privacy-hardened preview (-0.45) inside 24 hours, inverting the naive payer-softening prediction and widening mechanism 844''s near-null spread. NOT a falsification-family member (register documentation + m844 temporal replication, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+    financial_context:
+      reuters_meta_deal: 'Multi-year content licensing deal (Oct 25, 2024) - mapped in the corpus Seetharaman block; the payer tie sits on Meta''s side'
+      reuters_anthropic_tie: 'No mapped Anthropic-Reuters content deal (bounded absence, not a proven zero); Thomson Reuters CEO confirmed licensing talks with multiple AI providers - the mechanism does not assert a tie'
+      prediction: 'NULL-to-INVERTED on the observed arms: the payer (Meta) receives the privacy-hardened register (-0.45) while the competitor (Anthropic) receives neutral deal-reportage (-0.05) inside 24 hours - the naive payer-softening prediction fails, extending m844''s counterdirectional reading to a fourth Reuters-desk entity'
+      mechanism: '24-hour same-desk peg asymmetry: capital-announcement arms draw neutral deal news while Meta launch arms draw privacy-pressure framing, independent of the payer tie''s predicted gradient'
+    confounders:
+    - 'STRONG: Story-type asymmetry - the Meta piece is a pre-event preview pegged to a live privacy controversy (Connect, class action, UK venue restrictions); the Anthropic piece is a post-announcement deal writeup; register follows the news peg as much as the entity.'
+    - 'STRONG: Event-driven register - Meta''s privacy controversy was genuinely breaking news on Sep 23 2026; a privacy register is event-merited, not necessarily entity-set.'
+    - 'STRONG: Search-excerpt-bounded evidence (0 browser.open this turn per #503); both reuters.com URLs are first-hand search listings, not first-hand reads; a full-text read could reveal interrogating detail the excerpts hide.'
+    - 'MODERATE: n=1 per arm - degenerate samples; one additional arm on either side would shift the illustrative averages, and the +0.40 spread cannot survive single-story variance.'
+    - 'MODERATE: Burn-realism register gap - Anthropic''s $11.6B commit (with a third-party $517B cumulative compute tally) drew no capital-sustainability interrogation on the Reuters news desk even as the FT opinion desk interrogated OpenAI burn the same Connect week (m823); whether the gap is desk-driven or entity-driven cannot be isolated at n=1.'
+    - 'MODERATE: Writer vs desk isolation - the Meta arm carries a named wire byline (Aditya Soni) while the Anthropic arm is unattributed; this is a within-desk, not within-writer, control.'
+    - 'WEAK: One-day timing skew - the Sep 23 preview vs Sep 24 announcement writeup may carry different news-cycle energy independent of entity.'
+    counterevidence:
+    - 'COUNTEREVIDENCE: The corpus maps a Reuters multi-year Meta AI content licensing deal (Oct 25, 2024) - if financial ties predicted softer coverage, Reuters'' Meta arm should be the soft one; the +0.40 spread with the harsher register on the payer runs against the naive payer-softening prediction, extending m844''s counterdirectional reading to a fourth desk entity.'
+    - 'COUNTEREVIDENCE: m844''s Sep-18 news-desk pair ran near-null (+0.05, 48 hours) while this pair runs +0.40 (24 hours) - the same desk''s spread is peg-sensitive, not uniform; entity-level predictions do not survive the window.'
+    - 'COUNTEREVIDENCE: Desk contrast with mechanism 823 - the FT opinion desk interrogated OpenAI''s cash burn the same Connect week the Reuters news desk skipped burn register on Anthropic''s $11.6B commitment; register tracks desk-type and peg-type, not the capital-commitment entity.'
+    verdict: directionally_supported_not_proven
+    no_analysis_json_update: true
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+    falsification_family: 'NOT a falsification-family member: register documentation and m844 temporal replication (tighter 24-hour window), not a uniform-prediction test. Ledger holds at 31 - THIRTY-FIRST present (m848 journalists.yaml notes), THIRTY-SECOND absent.'
+    research_method: '3 browser.search query sets this run (Anthropic news September 2026 announcement - SELECTED: Sep 24 Reuters Akamai deal via first-hand search listing; Meta Connect 2026 Ray-Ban Gen 3 NYT coverage - NYT-owned arms absent, relay coverage only, rejected as primary; Reuters Meta Connect Sep 23 2026 smart glasses privacy - SELECTED: Sep 23 Reuters Meta Connect preview via first-hand search listing). 0 browser.open per #503. Pre-commit novelty greps: zero test_type_a_1032 files on disk (glob); no Type A #1032 in git log (--grep); max numeric mechanism_id 849 pre-commit; zero underscore-form 850 mechanism key strings repo-wide pre-commit (format-built needles, own file excluded per #715); zero dash-form 850 references pre-commit; zero numeric 850 keys in profiles/ pre-commit; block key zero-hit pre-commit; both reuters.com URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    test_file: tests/test_type_a_1032_reuters_anthropic_akamai_deal_register_vs_meta_connect_privacy_sep27_5am.py
+    connects_to:
+    - 844
+    - 823
+    - 739
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
 
