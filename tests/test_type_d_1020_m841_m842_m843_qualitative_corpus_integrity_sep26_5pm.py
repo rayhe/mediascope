@@ -103,7 +103,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
 
-ANCHORED_SHA = "0" * 40  # patched post-commit per #565
+ANCHORED_SHA = "88534735276b1bd0f034cb57625687edb122a5cf"  # patched post-commit per #565
 
 # Built by concatenation so this source file carries no contiguous
 # underscore-form mechanism literal (per the #770 lesson).
