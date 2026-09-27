@@ -44,8 +44,8 @@ candidates rejected - no FT-owned URLs in Full-URL listings);
 1025-1029 window third leg D->E->A (anchor + rotation guard per #565) -
 Sep 27 2026 00:00 PDT.
 
-Test tally: 50 tests, 11 classes.
-EXPECTED_TESTS = 50
+Test tally: 48 tests, 11 classes.
+EXPECTED_TESTS = 48
 """
 
 import os
@@ -71,7 +71,7 @@ NEXT_DASH = "mechanism" + "-848"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism: " + "848"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1027"), ("E", "1026"), ("D", "1025"), ("C", "1024"), ("B", "1023")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "e60a320b34bba86c2be87a68d66b9e5f4eab69ad"
 
 SEDaily_URL = "https://en.sedaily.com/international/2026/09/26/openai-agents-breached-dozens-of-systems-leaked-images"
 TRADERS_URL = "https://tradersunion.com/news/financial-news/show/3398158-meta-challenges-ofcom-online-safety/"
@@ -83,7 +83,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 PROFILE = os.path.join("profiles", "financial-times.yaml")
 
 README_TESTS_BEFORE, README_FILES_BEFORE = 52721, 1351
-EXPECTED_TESTS = 50
+EXPECTED_TESTS = 48
 README_TESTS_AFTER, README_FILES_AFTER = 52721 + EXPECTED_TESTS, 1352
 
 # In-flight work that must stay OUT of this run's staged set (targeted
