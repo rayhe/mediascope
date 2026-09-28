@@ -95,7 +95,7 @@ ITERATION = 1049
 TYPE_LETTER = "C"
 EXPECTED_TESTS = 46
 # Patched to the real main-commit SHA in the anchor followup per #565.
-NOVELTY_ANCHOR = "PATCH_ME_IN_FOLLOWUP"
+NOVELTY_ANCHOR = "a9f39a022533ecbdc9f424f7a4b0f378bb071d17"
 NOVELTY_CLAIMS = (
     "zero\ntest_type_c_1049 files, max numeric\nmechanism_id 860 pre-commit, "
     "block key zero-hit, 4 novel\nURLs zero-hit, 4 carried"
