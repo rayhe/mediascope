@@ -10,6 +10,9 @@
 ### Rotation transparency
 1050-1054 window FOURTH leg (D #1050 -> E #1051 -> A #1052 -> B #1053 -> C #1054, rotation per #565). Predecessor #1052 Type A (main 98624388, anchor c7941cbd, log-hash finalizer 4a05bdae, verified present via git log before this run's commit). Next run #1054 Type C closes the window. Concurrency: #899 (profiles/nytimes.yaml), #938 (test_type_b_938_...py), #900 (untracked test_type_d_900_...py), #1012-wt (test_type_a_1012_...py) in-flight in the worktree and untouched by this run (targeted staging only; TestInflightIsolation pins all four).
 
+### Push status
+Push status (this run, Sep 28 2026 ~02:3x PDT): main + anchor followup + log-hash followup + test-fix followup pushed and ls-remote-verified (local ecb81ab8 == remote on origin/main, chain 64aaaab5 -> cf9fa8ea -> 6a77300b -> ecb81ab8) per #721.
+
 ### Tests
 53 tests, 12 classes. Pre-commit: 40 passed, 13 deselected (anchor x3 per #565, rotation x4 per #565, doc-sync x3 per #719, iteration-log x3 per #719/#721). Post-doc-sync full run: 50 passed, 3 failed (expected: anchor x3, patched green in the anchor followup per #565). Doc-sync: README 53984/1377 -> 54037/1378 (+53/+1); ARCHITECTURE.md tree row added.
 
