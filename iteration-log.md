@@ -1,4 +1,4 @@
-## #1049 Type C: Google x FT Feb-2026 second-payer leg term audit - BUNDLED-LEVERAGE (Showcase-mutation) as the SEVENTEENTH relationship direction; AI Contribution Pilot disambiguation; dual-leg restraint-template replication; mechanism 861 - Type C FIFTH and CLOSING leg of the 1045-1049 window (Sep 27 2026, 22:00 PDT; main commit MAIN_SHA / anchor ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit))
+## #1049 Type C: Google x FT Feb-2026 second-payer leg term audit - BUNDLED-LEVERAGE (Showcase-mutation) as the SEVENTEENTH relationship direction; AI Contribution Pilot disambiguation; dual-leg restraint-template replication; mechanism 861 - Type C FIFTH and CLOSING leg of the 1045-1049 window (Sep 27 2026, 22:00 PDT; main commit a9f39a02 / anchor 508c15d6; log-hash followup registers both hashes here per #721 (this commit: a9f39a02 / 508c15d6))
 
 2026-09-27 22:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -23,8 +23,8 @@ Type C #1049 - Google x FT February 2026 AI licensing deal as the second-payer l
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
 
 ### Commit hashes
-- Main improvement: MAIN_SHA_PLACEHOLDER (Type C #1049: Google x FT second-payer leg term audit - bundled-leverage seventeenth direction, mechanism 861, closes the 1045-1049 window)
-- Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type C #1049 anchor: patch NOVELTY_ANCHOR to the main commit hash per #565)
+- Main improvement: a9f39a022533ecbdc9f424f7a4b0f378bb071d17 (Type C #1049: Google x FT second-payer leg term audit - bundled-leverage seventeenth direction, mechanism 861, closes the 1045-1049 window)
+- Anchor followup: 508c15d62a59242e4f25e90a0c3a1d1bdeca37cd (Type C #1049 anchor: patch NOVELTY_ANCHOR to the main commit hash per #565)
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
