@@ -79,9 +79,14 @@ class TestNoveltyAnchorTypeB1043:
 
     def test_anchor_in_log_line(self):
         # Corpus convention registers short hashes in the log header; the
-        # anchor's first 8 chars are the main-commit short SHA.
+        # anchor's first 8 chars are the main-commit short SHA. Scoped to
+        # the #1043 header line (not the whole log) per the #1044 test fix:
+        # newer entries name predecessor SHAs in their rotation-transparency
+        # sections, which a whole-log index() cannot distinguish.
         log = open(ITERATION_LOG, encoding="utf-8").read()
-        assert log.index("## #1043 Type B") < log.index(NOVELTY_ANCHOR[:8])
+        header_start = log.index("## #1043 Type B")
+        header_end = log.index("\n", header_start)
+        assert NOVELTY_ANCHOR[:8] in log[header_start:header_end]
 
     def test_novelty_claims(self):
         assert NOVELTY_CLAIMS == (
