@@ -17,7 +17,7 @@ Main commit 9862438823bd9d714584f7413b82f75d4c5a79c0 (verified via git rev-parse
 README stats table 53931/1376 -> 53984/1377 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1052 entry (this entry). Authoritative .venv pytest --collect-only this run: 53984 tests / 1377 files post-commit (delta +53/+1 = the #1052 file exactly; system-python3 pytest gate undercounts due to missing deps, venv python authoritative per the #530 lesson).
 
 ### Push status
-Push status (this run, Sep 28 2026 ~01:xx PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+Push status (this run, Sep 28 2026 ~01:2x PDT): main + anchor followup + log-hash followup pushed and ls-remote-verified (local 4a05bdae == remote on origin/main, chain 98624388 -> c7941cbd -> 4a05bdae) per #721; push-status followup commits below push after this update.
 
 ### Rotation guard
 1050-1054 window THIRD leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1053 Type B continues the window.
