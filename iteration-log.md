@@ -1,4 +1,4 @@
-## #1054 Type C: Nvidia Sep-2026 talks to anchor Anthropic's IPO with up to $10B - demand-recycling as the EIGHTEENTH relationship direction (mechanism 864) - Type C FIFTH and CLOSING leg of the 1050-1054 window (Sep 28 2026, 03:00 PDT; main commit LOGHASH_MAIN / anchor LOGHASH_ANCHOR; log-hash followup registers both hashes here per #721 (this commit: LOGHASH_MAIN / LOGHASH_ANCHOR))
+## #1054 Type C: Nvidia Sep-2026 talks to anchor Anthropic's IPO with up to $10B - demand-recycling as the EIGHTEENTH relationship direction (mechanism 864) - Type C FIFTH and CLOSING leg of the 1050-1054 window (Sep 28 2026, 03:00 PDT; main commit 60d81145 / anchor c2ccdc30; log-hash followup registers both hashes here per #721 (this commit: 60d81145 / c2ccdc30))
 
 2026-09-28 03:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1050-1054 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
