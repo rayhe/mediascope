@@ -1,3 +1,36 @@
+## #1046 Type E: podcast sentiment 132nd verification - GF 501 hold, EHE 48-day hold, AS 132nd no-match, press frontier Sep 26 HOLDS (second hold) - Type E SECOND leg of the 1045-1049 window (Sep 27 2026, 19:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-27 19:00 PDT, iteration_type "E", **SECOND leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1045-1049 window SECOND leg (D #1045 -> E #1046 -> A -> B -> C, rotation per #565 anchor + rotation guard)
+- Predecessor #1045 Type D: main 7ee03275, anchor deaa5ca7, log-hash finalizer db37dae0 (all verified present via git log before this run's commit); #1045 OPENED the 1045-1049 window
+- Pre-commit novelty greps: zero test_type_e_1046 files on disk (glob); no "Type E #1046" in git log (--grep); max numeric mechanism_id 858 in-tree pre-commit (git grep profiles/); zero numeric/underscore/dash 859 keys in profiles/ pre-commit; zero underscore-form 859 mechanism key strings in profiles/ and tests/ pre-commit (per #715, the #1045 sweep-carrier, __pycache__ artifacts, and own file excluded); zero dash-form 859 references pre-commit; ZERO new verbatim URL keys this run (19/19 non-circular distinct URL keys >=1 corpus hit pre-commit, verified via git grep -F); 9 distinct own-repo GitHub URLs rejected as circular (each git-cat-file-verified present, still circular as evidence)
+- Next run #1047 Type A continues the 1045-1049 window.
+
+### Finding summary
+Type E #1046 - 132nd podcast sentiment verification cycle, monitoring-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, falsification ledger holds at 34, NOT artifact-grade, verdict directionally_supported_not_proven. No new empirical findings beyond corpus bookkeeping.
+- GF: 501 "Out North East" CONFIRMED AGAIN (listennotes main dir, crawled 1h, 761-episode listing, released Sep 21); no episode 502 (six-day absence since Sep 21, consistent with weekly cadence, not a signal); ZERO new verbatim GF URL keys (twelfth consecutive pure-re-surface episode-key cycle); the all-key pure-re-surface streak advances to TWO (ZERO new verbatim URL keys across all four strands, after restarting at ONE on #1041); ZERO Meta/wearables content in any GF episode across all 132 cycles.
+- EHE: 48-day hold continues (Aug 10 Epstein spoof -> Sep 27, same-day as #1041); 5 logged keys re-surfaced (designtaxi 34124 Epstein-ad thread, softonic Epstein-poster, techtimes amnesty-boxes, afrotech ethics/consent, thebesttimes consent email-drive); ZERO new EHE keys; 2 own-repo GitHub URLs rejected as circular; no competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 132 cycles.
+- AS: 132nd quoted-search no-match; 7 own-repo GitHub URLs rejected as circular (podcast-sentiment.md blob SURFACED AGAIN + the same 6 commit URLs as #1001/#1016/#1021/#1026/#1031/#1036/#1041, each git-cat-file-verified present); task-spec name remains misidentified as a podcast; real-world identity stands per #591 (advocacy group, named ED Kendall Schrohe); Tracked Sources advanced 131->132.
+- Press: SEVEN previously-logged keys re-surfaced (usatoday, techgig, designtaxi 39120, americanow, dig.watch, analyticsinsight, linkedin privacy roundup) + ZERO new verbatim URL keys; the #1036 maglazana Sep-26 key did NOT surface (remains in corpus); recency frontier HOLDS at Sep 26 (second hold after the #1036 advance); Meta-exclusive privacy-pressure framing continues across all 132 cycles.
+- 4 browser.search query sets this run (The Guilty Feminist Deborah Frances-White latest episode September 2026; quoted "Everyone Hates Elon" Meta Ray-Ban glasses campaign; quoted "Attention Sphere" podcast Meta tech wearables; Meta Ray-Ban smart glasses privacy news September 2026). 0 browser.open per #503 (excerpt-bounded). 28 result rows / 19 non-circular distinct URL keys / ZERO new verbatim URL keys. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test report
+52 tests, 12 classes in tests/test_type_e_1046_podcast_sentiment_132nd_verification_sep27_7pm.py. Pre-commit run: expected failures on anchor SHA PATCH_ME pre-commit (x2 per #565), rotation-guard log check (x1), doc-sync ratchet (x3 per #719), iteration-log tests (x3 per #719/#721), concurrent-scope staged-files check (x1, pre-staging). Post-doc-sync + anchor re-run pending.
+
+### Concurrency
+- #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
+### Commit hashes
+- Main improvement: MAIN_SHA_PLACEHOLDER (Type E #1046: podcast sentiment 132nd verification cycle - GF 501 hold, EHE 48-day hold, AS 132nd no-match, press frontier Sep 26 HOLDS, ledger holds at 34)
+- Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type E #1046 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
+
+### Doc-sync ratchet
+- README.md header stats 53637/1370 -> 53688/1371 (+51/+1 = the #1046 file exactly, venv python authoritative); new table row for the #1046 test file.
+- docs/ARCHITECTURE.md tree gains the #1046 test file row.
+
 ## #1045 Type D: m856/m857/m858 qualitative-discipline verification + post-1040-1044 corpus integrity (max numeric mechanism_id 858; zero 859 keys numeric/underscore/dash; ledger holds at 34) + #1040 background-suite tombstone (FIFTIETH consecutive death; lineage SIXTY-EIGHTH -> SIXTY-NINTH; re-launched to type_d_1045_full_suite.log) - Type D FIRST leg of the 1045-1049 window, OPENING it (Sep 27 2026, 18:00 PDT; main commit 7ee03275 / anchor deaa5ca7; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 18:00 PDT, iteration_type "D", **FIRST leg of the 1045-1049 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
