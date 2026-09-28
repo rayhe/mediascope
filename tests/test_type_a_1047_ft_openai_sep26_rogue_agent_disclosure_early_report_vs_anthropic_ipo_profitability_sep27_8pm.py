@@ -68,7 +68,7 @@ NEXT_NUMERIC = "mechanism_id: " + "860"  # next-number numeric sweep
 # separately in test_1043_main_commit_exists_despite_subject_deviation.
 EXPECTED_ORDER = [("A", "1047"), ("E", "1046"), ("D", "1045"), ("C", "1044"), ("A", "1042")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "2097e861cbd34c816b4db413923e9b87e4c243f4"
 
 DIVERGENCE_URL = "https://divergence.news/event/18128"
 STOCKTWITS_URL = "https://stocktwits.com/news-articles/markets/equity/anthropic-ipo-claude-maker-reportedly-targets-second-straight-quarter-of-adjusted-profit-as-ceo-s-ai-slowdown-call-sparks-debate/cZtlHqgRBRa"
