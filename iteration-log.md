@@ -1,4 +1,4 @@
-## #1048 Type B: Emma Roth (The Verge) Sep-24 same-day Meta-vs-Google AI-assistant pair - temporal replication of m782 (Sep-10), mechanism 860 - Type B FOURTH leg of the 1045-1049 window (Sep 27 2026, 21:00 PDT; main commit (this commit) / anchor (this commit); log-hash followup registers both hashes here per #721 (this commit))
+## #1048 Type B: Emma Roth (The Verge) Sep-24 same-day Meta-vs-Google AI-assistant pair - temporal replication of m782 (Sep-10), mechanism 860 - Type B FOURTH leg of the 1045-1049 window (Sep 27 2026, 21:00 PDT; main commit 852fc450 / anchor 6a6c4239; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 21:00 PDT, iteration_type "B", **FOURTH leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -24,8 +24,8 @@ Type B #1048 - SECOND dedicated Type B mechanism on Emma Roth (The Verge), SECON
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
 
 ### Commit hashes
-- Main improvement: (this commit) (Type B #1048: Emma Roth Sep-24 same-day Meta-vs-Google pair, temporal replication of m782, mechanism 860)
-- Anchor followup: (this commit) (Type B #1048 anchor: patch NOVELTY_ANCHOR to the main commit hash per #565)
+- Main improvement: 852fc450 (Type B #1048: Emma Roth Sep-24 same-day Meta-vs-Google pair, temporal replication of m782, mechanism 860)
+- Anchor followup: 6a6c4239 (Type B #1048 anchor: patch NOVELTY_ANCHOR to the main commit hash per #565)
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
