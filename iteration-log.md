@@ -30,7 +30,7 @@ Type A #1047 - FT x OpenAI Sep-26/27 rogue-agent disclosure early-report registe
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
-- Push status: pending (fill post-push per the #1041 3b390841 precedent)
+- Push status: pushed 2026-09-27 ~20:13 PDT; local f19eab75 == remote f19eab75 (git ls-remote verified); chain main 2097e861 -> anchor acdb2e6a -> log-hash f19eab75 all on origin/main
 
 ### Doc-sync ratchet
 - README.md header stats 53688/1371 -> 53734/1372 (+46/+1 = the #1047 file exactly, venv python authoritative); new table row for the #1047 test file.
