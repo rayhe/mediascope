@@ -55,7 +55,7 @@ NEXT_DASH = "mechanism" + "-863"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id: " + "863"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1052"), ("E", "1051"), ("D", "1050"), ("C", "1049"), ("B", "1048")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "9862438823bd9d714584f7413b82f75d4c5a79c0"
 
 WESEARCH_URL = "https://wesearch.press/s/openai-halts-training-of-latest-models-as-reports-mount-of-a-a9516e1c"
 EXPECTED_URLS = [WESEARCH_URL]
