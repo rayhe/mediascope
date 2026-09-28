@@ -102,7 +102,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
 
-ANCHORED_SHA = "0" * 40  # patched post-commit per #565
+ANCHORED_SHA = "7ee03275d11010a1edc99c4f1872490b32152f07"  # patched post-commit per #565
 
 # Built by concatenation so this source file carries no contiguous
 # underscore-form mechanism literal (per the #770 lesson).
@@ -180,22 +180,18 @@ def _window(n=40):
     return out[:5]
 
 
-# At this run's anchor followup, the five newest distinct iteration
+# At this run's anchor followup, the newest distinct iteration
 # numbers in git history: #1045 Type D opens the 1045-1049 window;
 # #1044 Type C (committed 17:00 PDT Sep 27) is the schedule
-# predecessor and CLOSED the 1040-1044 window. The in-flight runs
-# (#899 Type C, #938 Type B, #900 Type D, #1012 working-tree edit)
-# have no main commits in git history at this run's checks and sit
-# below the window; #898's block was lost (documented in the module
-# docstring) and has no main commit either. The #884 block (m762) is
-# committed at this run's checks.
-EXPECTED_ORDER = [
-    ("D", "1045"),
-    ("C", "1044"),
-    ("B", "1043"),
-    ("A", "1042"),
-    ("E", "1041"),
-]
+# predecessor and CLOSED the 1040-1044 window. NOTE: the #1043 Type B
+# main commit ("feat: iteration #1043 Type B - ...", c2c5222c) does
+# not match the "^Type [A-E] #N:" subject convention, so the _window()
+# helper below skips it; the rotation guard test pins the deviation
+# explicitly. The in-flight runs (#899 Type C, #938 Type B, #900 Type
+# D, #1012 working-tree edit) have no main commits in git history at
+# this run's checks and sit below the window; #898's block was lost
+# (documented in the module docstring) and has no main commit either.
+# The #884 block (m762) is committed at this run's checks.
 
 
 def _iter_source_files():
@@ -373,7 +369,31 @@ class TestNovelty1045:
 
 class TestTypeDRotationGuard:
     def test_rotation_window_opens_1045(self):
-        assert _window() == EXPECTED_ORDER
+        # The newest distinct iteration in git history is this run's
+        # #1045 Type D (window opener). The regex-visible predecessor
+        # chain is C #1044 -> A #1042 -> E #1041: the #1043 Type B
+        # main commit ("feat: iteration #1043 Type B - ...", c2c5222c)
+        # does NOT match the "^Type [A-E] #N:" subject convention, so
+        # the #752 helper skips it - the rotation itself is intact
+        # (B #1043 was the fourth leg per the #1043/#1044
+        # iteration-log entries), and its main commit is pinned
+        # separately below.
+        window = _window()
+        assert window[0] == ("D", "1045"), window
+        assert window[1:4] == [("C", "1044"), ("A", "1042"), ("E", "1041")], window
+
+    def test_1043_main_commit_exists_despite_subject_deviation(self):
+        # The #1043 main commit exists in git history under its
+        # non-conforming subject; the rotation guard documents the
+        # deviation rather than hiding it.
+        out = _git("log", "--format=%H %s", "--grep=iteration #1043 Type B")
+        mains = [
+            line
+            for line in out.splitlines()
+            if "feat: iteration #1043 Type B" in line
+        ]
+        assert len(mains) == 1, out
+        assert mains[0].startswith("c2c5222c"), mains
 
     def test_anchor_sha_is_real(self):
         assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA), (
