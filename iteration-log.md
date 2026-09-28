@@ -32,7 +32,7 @@ Qualitative-discipline verification of the three committed mechanisms from the 1
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
-- Push status: (pending; all three commits pushed and ls-remote-verified)
+- Push status: pushed 2026-09-27 ~23:2x PDT; local a732beef == remote a732beef (git ls-remote verified); chain main e579fd72 -> anchor 8b578249 -> log-hash a732beef all on origin/main (94d4d443..a732beef).
 
 ### Doc-sync ratchet
 - README.md header stats 53826/1374 -> 53878/1375 (+52/+1 = the #1050 file exactly, venv python authoritative); new table row for the #1050 test file.
