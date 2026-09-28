@@ -1,3 +1,41 @@
+## #1048 Type B: Emma Roth (The Verge) Sep-24 same-day Meta-vs-Google AI-assistant pair - temporal replication of m782 (Sep-10), mechanism 860 - Type B FOURTH leg of the 1045-1049 window (Sep 27 2026, 21:00 PDT; main commit (this commit) / anchor (this commit); log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-27 21:00 PDT, iteration_type "B", **FOURTH leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1045-1049 window FOURTH leg (D #1045 -> E #1046 -> A #1047 -> B #1048 -> C expected #1049, rotation per #565 anchor + rotation guard)
+- Predecessor #1047 Type A: main 2097e861, anchor acdb2e6a, log-hash finalizer f19eab75 (all verified present via git log before this run's commit); #1047 was the window THIRD leg
+- Rotation-guard deviation documented in-test: the #1043 Type B main commit subject is "feat: iteration #1043 Type B - ..." (c2c5222c), not the "^Type [A-E] #N:" convention, so the guard asserts the regex-visible chain B1048 -> A1047 -> E1046 -> D1045 -> C1044 and pins the #1043 main commit separately (per #1045's guard)
+- Pre-commit novelty greps: zero test_type_b_1048 files on disk (glob); no "Type B #1048" in git log (--grep); max numeric mechanism_id 859 pre-commit (profiles/ YAML sweep); zero numeric/underscore/dash 860 keys repo-wide pre-commit; zero underscore-form 860 mechanism key strings pre-commit (format-built needles, no literals carried per #715); block key zero-hit repo-wide pre-commit; both new URLs zero-hit repo-wide pre-commit
+- Next run #1049 Type C closes the 1045-1049 window.
+
+### Finding summary
+Type B #1048 - SECOND dedicated Type B mechanism on Emma Roth (The Verge), SECOND same-day same-writer same-outlet Meta-vs-Google AI-assistant pair in the corpus, 14 days after m782 (mechanism 860, profiles/careers/journalists.yaml emma_roth_type_b competitor_coverage, 4-space indent, descriptive block key).
+- Meta arm: her Sep 24 2026 9:31am piece "Meta's Muse AI Charms can interact with each other" (TechNewsTube theverge feed attestation): Bloomberg-relayed hardware report - Charms recognize and interact with nearby Charms, built-in 5G modem, two-inch OLED touchscreen, fingerprint sensor, cameras designed for taking photos. The full Sep-10 adversarial toolkit (creep headline, track-record anchor, comment-seeking, suspicion conclusion) stays idle despite the proximity-recognition peg; MANUAL ILLUSTRATIVE -0.10 (neutral relay, creep-register idle).
+- Google arm: her Sep 24 2026 7:59pm UTC piece "Gemini 3.8 Live with Live Avatar gives Google's AI a face" (WeSearch cluster record + Mediagazer river attribution): company-announcement relay - animated AI persona, lip-sync, Enterprise-only; MANUAL ILLUSTRATIVE +0.05.
+- Illustrative delta (Meta minus Google) -0.15, near-null, vs m782's -0.50 on Sep 10 (her "Meta's Muse AI works and creeps me out" hands-on -0.40 vs Google Dreambeans rollout brief +0.10). The Sep-10 gap was peg-driven: first-person discovery of creepy behaviors (Instagram API data surfacing, Amazon shipping-address inference) against a rollout brief. When the next same-day pair runs symmetric relay pegs, no differential survives. This is the temporal-replication leg m782 needed: register follows the news peg, not the entity, pairing m845 (Ropek: register follows the peg) at the second writer. Thesis refinement for the Type B series: Roth demonstrably possesses the adversarial register (m782, Sep 10) and fires it when her own testing surfaces creepy behaviors; 14 days later, on relay pegs, she is register-symmetric. The financial gradient cuts against incentive-driven softness (PMC and Vox Media both suing Google for ad tech, corpus the-verge.yaml, per m782).
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False at the finding layer; engine NOT run; verdict directionally_supported_not_proven; no analysis.json update; NOT artifact-grade. Strongest confounders: peg asymmetry (both arms company-news relays; the Sep-10 differential needed first-hand creepy discoveries); evidence-tier asymmetry (both arms mirror/feed/attribution-bounded, 0 browser.open per #503); relay-direction asymmetry (Bloomberg-relayed Meta arm vs Google-announcement-relayed Google arm). Correlation does not establish causation.
+- 4 browser.search query sets this run (Emma Roth Verge Meta glasses Sep 2026 - REJECTED old Aria Gen 2 attestation + Connect roundup as arms; Emma Roth Verge Google AI Sep 2026 - SELECTED via Muck Rack profile: Muse Charms Meta arm + Gemini 3.8 Live Avatar Google arm, both Sep 24; Emma Roth theverge.com Muse AI Charms - SELECTED TechNewsTube attestation + thetechstreetnow excerpt; Emma Roth theverge.com Gemini 3.8 Live Avatar - SELECTED WeSearch/Mediagazer attribution + thetechstreetnow excerpt). 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test report
+46 tests, 11 classes in tests/test_type_b_1048_emma_roth_verge_meta_muse_charms_vs_google_gemini_live_avatar_sep27_9pm.py. Pre-commit run: 38 passed, 8 failed (expected: anchor SHA shape x1 per #565; anchor-in-log x1; rotation-guard window x1 + no-duplicate x1; doc-sync ratchet x4 per #719). Post-anchor-patch + doc-sync: full suite pending.
+
+### Concurrency
+- #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
+### Commit hashes
+- Main improvement: (this commit) (Type B #1048: Emma Roth Sep-24 same-day Meta-vs-Google pair, temporal replication of m782, mechanism 860)
+- Anchor followup: (this commit) (Type B #1048 anchor: patch NOVELTY_ANCHOR to the main commit hash per #565)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
+
+### Push status
+- Push status: pending this run (see followup).
+
+### Doc-sync ratchet
+- README.md header stats 53734/1372 -> 53780/1373 (+46/+1 = the #1048 file exactly, venv python authoritative); new table row for the #1048 test file.
+- docs/ARCHITECTURE.md tree gains the #1048 test file row.
+
+
 ## #1047 Type A: FT x OpenAI Sep-26/27 rogue-agent disclosure early-report register vs FT x Anthropic Sep-14 IPO-profitability register - mechanism 859, THIRTY-FIFTH falsification-family member (ledger 34->35), FOURTH safety-crisis falsification FIRST at FT - Type A THIRD leg of the 1045-1049 window (Sep 27 2026, 20:00 PDT; main commit 2097e861 / anchor acdb2e6a; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 20:00 PDT, iteration_type "A", **THIRD leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

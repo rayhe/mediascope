@@ -23674,7 +23674,7 @@ eric_hal_schwartz:
 emma_roth_type_b:
   name: Emma Roth
   publication: the-verge
-  mechanism_ids: [782]
+  mechanism_ids: [782, 860]
   competitor_coverage:
     type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep10:
       block_key: type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep10
@@ -23756,6 +23756,86 @@ emma_roth_type_b:
       - '#776 Type B (Eric Hal Schwartz Muse-vs-ChatGPT: access-friction register on Muse, silent on OpenAI).'
       - '#779 Type B (Maxwell Zeff OpenAI framework relay +0.15 vs Meta Muse trust deficit -0.30).'
       - '#908 (rejection list: Emma Roth corpus-present, Muse hands-on reserved as future arm).'
+
+    type_b_1048_emma_roth_verge_meta_muse_charms_interact_vs_google_gemini_live_avatar_sep27:
+      iteration: 1048
+      mechanism_id: 860
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-27 21:00 PDT'
+      block_key: type_b_1048_emma_roth_verge_meta_muse_charms_interact_vs_google_gemini_live_avatar_sep27
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1048 is the iteration number, not the mechanism id).'
+      author: 'Kit (with Ray)'
+      journalist: 'Emma Roth'
+      publication: the-verge
+      primary_entity: Meta
+      comparator_entity: Google
+      finding_type: journalist_cross_entity_register_asymmetry
+      design: 'Type B journalist cross-entity tracking: SECOND same-day same-writer same-outlet Meta-vs-Google AI-assistant pair from Emma Roth (The Verge), 14 days after m782''s Sep-10 pair. Question: does the -0.50 illustrative register gap from Sep 10 (adversarial creep hands-on vs neutral rollout relay) persist on the Sep-24 pair, or was it peg-driven? Both arms this run are company-news relays; neither is a first-person hands-on. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        title: 'Meta''s Muse AI Charms can interact with each other'
+        date: '2026-09-24'
+        outlet: the-verge
+        author_byline: 'Emma Roth'
+        genre: 'hardware news relay (Bloomberg-sourced)'
+        evidence_tier: 'mirror_and_feed_bounded_no_first_hand'
+        key_quotes:
+        - 'Dek: ''Meta''s handheld AI gadget, called the Muse Charm, will be able to recognize and interact with other nearby Charms when it launches later this year. That''s according to a report from Bloomberg, which includes more details about the device that the company teased during its Meta Connect keynote on Wednesday.'''
+        - 'Always-on modem: ''The Muse Charm houses the company''s buzzy Muse AI agent and comes with a built-in 5G modem, meaning you won''t need to connect to Wi-Fi to interact with the AI agent, according to Bloomberg.'''
+        - 'Biometric hardware: ''It will come with a two-inch OLED touchscreen, a new operating system, and a fingerprint sensor you can use to start interacting with Muse AI.'''
+        - 'Camera hardware: ''The Charm will also feature cameras designed for taking photos...'''
+        - 'Absences in the surfaced text: no creep-register activation, no track-record anchor, no comment-seeking, no suspicion conclusion - the full Sep-10 adversarial toolkit is idle despite the proximity-recognition peg.'
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        url: 'https://technewstube.com/theverge/1870270/metas-muse-ai-charms-can-interact-each-other/'
+      google_arm:
+        title: 'Gemini 3.8 Live with Live Avatar gives Google''s AI a face'
+        date: '2026-09-24'
+        outlet: the-verge
+        author_byline: 'Emma Roth'
+        genre: 'company-announcement relay'
+        evidence_tier: 'attribution_bounded_no_excerpt_body'
+        key_quotes:
+        - 'Dek: ''Google''s new Gemini 3.8 Live update lets users have conversations with the model while watching an animated AI persona respond in real time. The Live Avatar will lip-sync and show different facial expressions during conversations, but it''s currently only available to Gemini Enterprise customers.'''
+        - 'Attribution chain: Techmeme (''Google updates Gemini 3.8 Live with Live Avatar, an animated AI persona that lip-syncs and shows different facial expressions, for Gemini Enterprise customers (Emma Roth/The Verge)'') via the Mediagazer river; WeSearch cluster record (Emma Roth, Sep 24 2026 7:59 PM UTC).'
+        - 'Absences in the surfaced text: no privacy-interrogation register on an always-listening animated AI persona, no comment-seeking.'
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        url: 'https://thetechstreetnow.com/gemini-3-8-live-with-live-avatar-gives-googles-ai-a-face/'
+      illustrative_delta_meta_minus_google: -0.15
+      delta_calc: '(-0.10) - (0.05) = -0.15'
+      finding: 'Same-day same-writer same-outlet Meta-vs-Google AI-assistant pair, 14 days after m782. Roth''s Sep-24 Meta relay (Muse Charms interact with each other, 9:31am) runs a neutral hardware-news register: Bloomberg-sourced proximity-recognition report, 5G modem, two-inch OLED, fingerprint sensor, cameras for taking photos - and the entire Sep-10 adversarial toolkit (creep headline, track-record anchor, comment-seeking, suspicion conclusion) stays idle even though the proximity-recognition peg is creep-adjacent. Her Sep-24 Google relay (Gemini 3.8 Live Avatar, 7:59pm UTC) runs the symmetric company-announcement register: animated AI persona, lip-sync, Enterprise-only. Illustrative delta (Meta minus Google) -0.15, near-null, vs m782''s -0.50 on Sep 10. The Sep-10 gap was peg-driven: first-person discovery of creepy behaviors (Instagram API data surfacing, Amazon shipping-address inference) against a rollout brief. When the next same-day pair runs symmetric relay pegs, no differential survives. This is the temporal-replication leg m782 needed: register follows the news peg, not the entity, pairing m845 (Ropek: register follows the peg) at the second writer. Thesis refinement for the Type B series: Roth demonstrably possesses the adversarial register (m782, Sep 10) and fires it when her own testing surfaces creepy behaviors; 14 days later, on relay pegs, she is register-symmetric. MANUAL ILLUSTRATIVE: p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False, engine NOT run, NOT artifact-grade. Verdict: directionally_supported_not_proven. NOT a falsification-family member (ledger holds at 35). Correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member; ledger holds at 35.'
+      financial_context: 'PMC (The Verge''s current parent) and Vox Media (prior parent) are BOTH suing Google for ad tech (corpus the-verge.yaml, per m782): the naive incentive gradient predicts adversarial Google coverage, yet the Sep-10 adversarial register fired on Meta ($0 AI licensing, no adversarial legal relationship). The gradient does NOT predict this series'' direction; genre and peg confounds carry the weight. No new financial relationship this run.'
+      no_analysis_json_update: true
+      confounders_ranked:
+      - 'STRONG: Peg asymmetry (both arms are company-news relays; the Sep-10 differential required first-hand creepy discoveries that do not exist here - the delta measures peg symmetry, not a writer effect).'
+      - 'STRONG: Evidence-tier asymmetry (both arms mirror/feed/attribution-bounded, zero first-hand reads; the Meta arm''s restraint could mask register the excerpt does not show - bounded absence, not proven absence).'
+      - 'STRONG: Relay-direction asymmetry (Meta arm is Bloomberg-report-relayed; Google arm is Google-announcement-relayed; source-voice distance differs).'
+      - 'MODERATE: Temporal ordering (Meta arm 9:31am PT, Google arm 7:59pm UTC / 12:59pm PT; same calendar day but the news cycle moved ~3.5 hours; the m782 comparison spans 14 days of post-Connect discourse drift).'
+      - 'MODERATE: n=1 per arm, single-day design; no cross-day replication yet.'
+      - 'WEAK: Peg-theme mismatch (proximity recognition is creep-adjacent, animated persona is anthropomorphism-adjacent; the themes differ even if the genres match).'
+      counterevidence:
+      - 'm782: Roth fired the full adversarial register on Meta Muse on Sep 10 when her own testing surfaced creepy behaviors - she is not register-blind on Meta; the capability exists and is entity-targeted there.'
+      - 'The Charm peg is creep-adjacent (proximity recognition of nearby Charms, cameras for photos, fingerprint sensor) and she chose not to fire the register; the restraint is the datum, though deadline-cycle constraint (post-Connect news flood) is an alternative.'
+      - 'Janus Rose''s same-day Sep 24 Verge piece ''Everything is spying on you and there''s no opting out'' fires the creep register on Sep-24 Meta-adjacent news - the outlet''s AI desk CAN fire it that day; the register was routed to a different writer, replicating m150''s beat-assignment routing.'
+      - 'm776/m773 replicate the Meta-privacy-register direction with different writers; direction replicates but replication of direction is not independent confirmation of mechanism.'
+      connects_to: [782, 845, 425, 773, 776, 779]
+      cross_refs:
+      - '#782 (m782: Emma Roth Sep-10 same-day Meta-vs-Google AI-assistant pair, the design this run temporally replicates)'
+      - '#845 (Lucas Ropek peg-follows-register temporal shift, TechCrunch)'
+      - '#425 (Vox Media x OpenAI licensing; PMC/Vox vs Google ad-tech litigation - financial context)'
+      - '#773/#776 (Bell/Schwartz Meta-privacy-register direction replication)'
+      rotation_transparency: '1045-1049 window FOURTH leg (D #1045 -> E #1046 -> A #1047 -> B #1048 -> C expected #1049). Predecessor #1047 Type A: main 2097e861, anchor acdb2e6a, log-hash f19eab75 (verified via git log before this run''s commit). Rotation-guard deviation documented in-test: the #1043 Type B main commit subject is ''feat: iteration #1043 Type B - ...'' (c2c5222c), not the ''^Type [A-E] #N:'' convention, so the guard asserts the regex-visible chain B1048 -> A1047 -> E1046 -> D1045 -> C1044 and pins the #1043 main commit separately (per #1045''s guard). No rotation violation. Next run #1049 Type C closes the window.'
+      research_method: '4 browser.search query sets this run: (1) Emma Roth The Verge Meta glasses September 2026 - surfaced old Techmeme Aria Gen 2 attestation + Meta Connect coverage roundup, REJECTED as arms; (2) Emma Roth The Verge Google AI September 2026 - SELECTED via Muck Rack profile listing: the Muse Charms Meta arm AND the Gemini 3.8 Live Avatar Google arm, both Sep 24; (3) Emma Roth theverge.com Muse AI Charms - SELECTED TechNewsTube feed attestation (Sep 24 9:31am byline) + thetechstreetnow excerpt; (4) Emma Roth theverge.com Gemini 3.8 Live Avatar - SELECTED WeSearch/Mediagazer attribution (Sep 24 7:59pm UTC) + thetechstreetnow excerpt. 0 browser.open per #503. URLs verbatim from Full-URL listings; none constructed. No em dashes.'
+      novelty: 'SECOND dedicated Type B mechanism on Emma Roth (after 782); SECOND same-day same-writer same-outlet Meta-vs-Google AI-assistant pair in the corpus, 14 days after m782. Zero test_type_b_1048 files on disk (glob verified this run). No "Type B #1048" in git log (--grep verified this run). Max numeric mechanism_id 859 pre-commit (profiles/ targeted sweeps this run). Zero numeric/underscore/dash 860 keys repo-wide pre-commit. Block key zero-hit pre-commit. Both new URLs (technewstube 1870270; thetechstreetnow gemini-3-8-live) zero-hit repo-wide pre-commit. ASCII-only, no em dashes.'
+      author: 'Kit (with Ray)'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. Engine NOT run per the Aug 28 2026 standing rule; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; tone NOT_SCORED by engine; is_significant False; no significance claimed.'
+      artifact_readiness: 'No analysis.json update warranted. Temporal replication of m782 with symmetric relay pegs; illustrative-only; NOT falsification-family; no publication-level finding.'
+      test_file: 'tests/test_type_b_1048_emma_roth_verge_meta_muse_charms_vs_google_gemini_live_avatar_sep27_9pm.py'
+      source_urls:
+      - https://technewstube.com/theverge/1870270/metas-muse-ai-charms-can-interact-each-other/
+      - https://thetechstreetnow.com/gemini-3-8-live-with-live-avatar-gives-googles-ai-a-face/
 
 matt_growcoot:
   name: Matt Growcoot
