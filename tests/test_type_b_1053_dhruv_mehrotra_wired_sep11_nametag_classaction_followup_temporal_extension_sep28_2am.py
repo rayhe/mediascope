@@ -368,11 +368,15 @@ class TestCorpusNoveltyPostCommit:
         assert hits == []
 
     def test_underscore_form_zero_repo_wide(self):
+        # Own file excluded per #715 (the test method name itself carries
+        # the literal underscore form).
         hits = _git(["grep", "-l", MECH_ID_MARKER, "--", "."]).stdout.splitlines()
+        hits = [h for h in hits if h != "tests/" + OWN_BASENAME]
         assert hits == []
 
     def test_dash_form_zero_repo_wide(self):
         hits = _git(["grep", "-l", MECH_ID_DASH, "--", "."]).stdout.splitlines()
+        hits = [h for h in hits if h != "tests/" + OWN_BASENAME]
         assert hits == []
 
     def test_block_key_confined_to_home_yaml(self):
