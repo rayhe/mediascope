@@ -1,4 +1,4 @@
-## #1050 Type D: m859/m860/m861 qualitative-discipline verification + post-1045-1049 corpus integrity (max numeric mechanism_id 861; zero 862 keys: numeric pure-zero, underscore/dash carrier pinned to the #1049 Type C test file's own guard literals; ledger holds at 35) + #1045 background-suite tombstone (FIFTY-FIRST consecutive death; lineage SIXTY-NINTH -> SEVENTIETH) + fresh synthetic engine calibration (new values, not #1045's) - Type D FIRST leg of the 1050-1054 window, OPENING it (Sep 27 2026, 23:00 PDT; main commit PENDING / anchor PENDING; log-hash followup registers both hashes here per #721)
+## #1050 Type D: m859/m860/m861 qualitative-discipline verification + post-1045-1049 corpus integrity (max numeric mechanism_id 861; zero 862 keys: numeric pure-zero, underscore/dash carrier pinned to the #1049 Type C test file's own guard literals; ledger holds at 35) + #1045 background-suite tombstone (FIFTY-FIRST consecutive death; lineage SIXTY-NINTH -> SEVENTIETH) + fresh synthetic engine calibration (new values, not #1045's) - Type D FIRST leg of the 1050-1054 window, OPENING it (Sep 27 2026, 23:00 PDT; main commit e579fd72 / anchor 8b578249; log-hash followup registers both hashes here per #721 (this commit: e579fd72 / 8b578249)
 
 2026-09-27 23:00 PDT, iteration_type "D", **FIRST leg of the 1050-1054 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -27,9 +27,9 @@ Qualitative-discipline verification of the three committed mechanisms from the 1
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
 
 ### Commit hashes
-- Main improvement: (pending) (Type D #1050: m859/m860/m861 qualitative-discipline verification + post-1045-1049 corpus integrity, ledger holds at 35, #1045 suite tombstone FIFTY-FIRST death SIXTY-NINTH -> SEVENTIETH, fresh synthetic engine calibration, opens the 1050-1054 window)
-- Anchor followup: (pending) (Type D #1050 anchor: patch ANCHORED_SHA to the main commit hash per #565)
-- Log-hash followup: (pending) - registers both hashes in the header line per #721.
+- Main improvement: e579fd72cd772399381f9596d3a76468d67b0127 (Type D #1050: m859/m860/m861 qualitative-discipline verification + post-1045-1049 corpus integrity, ledger holds at 35, #1045 suite tombstone FIFTY-FIRST death SIXTY-NINTH -> SEVENTIETH, fresh synthetic engine calibration, opens the 1050-1054 window) (Type D #1050: m859/m860/m861 qualitative-discipline verification + post-1045-1049 corpus integrity, ledger holds at 35, #1045 suite tombstone FIFTY-FIRST death SIXTY-NINTH -> SEVENTIETH, fresh synthetic engine calibration, opens the 1050-1054 window)
+- Anchor followup: 8b578249605a50a547226f24def479d50e02777d (Type D #1050 anchor: patch ANCHORED_SHA to the main commit hash per #565) (Type D #1050 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
 - Push status: (pending; all three commits pushed and ls-remote-verified)
