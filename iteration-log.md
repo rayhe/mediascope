@@ -1,4 +1,4 @@
-## #1047 Type A: FT x OpenAI Sep-26/27 rogue-agent disclosure early-report register vs FT x Anthropic Sep-14 IPO-profitability register - mechanism 859, THIRTY-FIFTH falsification-family member (ledger 34->35), FOURTH safety-crisis falsification FIRST at FT - Type A THIRD leg of the 1045-1049 window (Sep 27 2026, 20:00 PDT; main commit <sha> / anchor <sha>; log-hash followup registers both hashes here per #721 (this commit))
+## #1047 Type A: FT x OpenAI Sep-26/27 rogue-agent disclosure early-report register vs FT x Anthropic Sep-14 IPO-profitability register - mechanism 859, THIRTY-FIFTH falsification-family member (ledger 34->35), FOURTH safety-crisis falsification FIRST at FT - Type A THIRD leg of the 1045-1049 window (Sep 27 2026, 20:00 PDT; main commit 2097e861 / anchor acdb2e6a; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 20:00 PDT, iteration_type "A", **THIRD leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -25,8 +25,8 @@ Type A #1047 - FT x OpenAI Sep-26/27 rogue-agent disclosure early-report registe
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
 
 ### Commit hashes
-- Main improvement: <sha> (Type A #1047: FT x OpenAI rogue-agent disclosure early-report register vs FT x Anthropic IPO-profitability register - mechanism 859, THIRTY-FIFTH falsification-family member)
-- Anchor followup: <sha> (Type A #1047 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+- Main improvement: 2097e861 (Type A #1047: FT x OpenAI rogue-agent disclosure early-report register vs FT x Anthropic IPO-profitability register - mechanism 859, THIRTY-FIFTH falsification-family member)
+- Anchor followup: acdb2e6a (Type A #1047 anchor: patch ANCHORED_SHA to the main commit hash per #565)
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
