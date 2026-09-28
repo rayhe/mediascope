@@ -47,7 +47,7 @@ NOVELTY_CLAIMS = (
     "block key zero-hit, both new\nURLs zero-hit"
 )
 # Anchored to the main-commit SHA of this run; patched once known (NULL until then).
-NOVELTY_ANCHOR = "NULL-until-patched"
+NOVELTY_ANCHOR = "852fc450d3bb0bffbc8b307f95817ff4b34d2001"
 
 EXPECTED_URLS = [
     "https://technewstube.com/theverge/1870270/metas-muse-ai-charms-can-interact-each-other/",
