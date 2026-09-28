@@ -24528,3 +24528,115 @@ terrence_obrien:
   - https://technewstube.com/theverge/1870832/openai-pauses-training-capable-models/
   - https://www.ai-intel.news/intel/openai-pauses-training-of-its-most-capable-models-1f2rrkn
 
+
+dhruv_mehrotra_type_b:
+  name: Dhruv Mehrotra
+  publication: wired
+  mechanism_ids: [863]
+  competitor_coverage:
+    type_b_1053_dhruv_mehrotra_wired_sep11_nametag_classaction_temporal_extension:
+      block_key: type_b_1053_dhruv_mehrotra_wired_sep11_nametag_classaction_temporal_extension
+      mechanism_id: 863
+      discovery_date: '2026-09-28'
+      iteration: 1053
+      iteration_type: B
+      iteration_time: 2026-09-28 02:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED
+      journalist: Dhruv Mehrotra (WIRED investigative data reporter; co-lead with Dell Cameron on the Jun-2026 NameTag investigation)
+      type: B - Journalist Cross-Entity Tracking - NameTag series temporal extension (Sep-11 class-action follow-up)
+      design: 'Within-journalist temporal register extension: same WIRED investigative reporter (Dhruv Mehrotra), same entity (Meta), same story lineage (NameTag facial-recognition series) - Jun 4 2026 expose vs Sep 11 2026 class-action follow-up, 99 days apart. Tests whether the adversarial accountability register of WIRED''s investigative desk persists on Meta across the code-removal event (Jun 5) into litigation escalation, and whether any equivalent competitor investigative arm surfaces in the same window.'
+      finding: 'REGISTER PERSISTENCE on the NameTag lineage, 99 days post-expose. Mehrotra''s Sep 11 2026 solo follow-up (WIRED Security desk, "Meta Sued Over Training Data for Its AI and Face-Recognition Systems") extends the Jun 4 Cameron+Mehrotra dormant-code expose (carried m66 arm, MANUAL ILLUSTRATIVE -0.75) into the litigation phase: the Alvarez et al. v. Meta class action (filed Sep 4 2026, N.D. Illinois, 66-page complaint) alleges Meta illegally used Facebook and Instagram photos to develop NameTag and to train Emu and Muse Image models, violating Illinois BIPA and California privacy statutes. WIRED''s register stays in the accountability-investigative band (new arm MANUAL ILLUSTRATIVE -0.70): allegations reported as allegations with Meta''s denial included ("this lawsuit is without merit and misrepresents our work"; "not building a universal face database"; "nothing has shipped to consumers"). Illustrative temporal delta (Sep-11 minus Jun-4) +0.05, near-null - the register PERSISTS rather than escalating. THIRD NameTag-series investigative arm on Meta in the corpus (Jun 4 expose, Jun 5-8 removal/EFF follow-ups, Sep 11 lawsuit). Bounded-search absence: zero equivalent WIRED investigative follow-up on Apple, Google, Samsung, or Snap camera-wearable privacy posture surfaces in the same window - m66''s 12-month verification-window prediction gains a positive temporal leg (investigative attention on Meta persists, does not rotate to competitors). Series context: Meta CTO Bosworth called WIRED''s Jun reporting "absolutely dishonest" then days later described NameTag as a "great feature"; the stigma vocabulary diffuses beyond WIRED (avclub.com: the glasses are "colloquially known in some circles as ''pervert glasses''"). NOT a falsification-family member: directionally CONSISTENT with the standing Meta-targeting prediction; the m366 falsification (Cameron adversarial on OpenAI despite the Conde Nast OpenAI deal, -0.60) is untouched - the same desk CAN be adversarial to a deal partner, so the Meta-targeting is lane/series-driven, not payer-driven. Ledger holds at 35. CORRELATION NOT CAUSATION.'
+      new_arm:
+        title: Meta Sued Over Training Data for Its AI and Face-Recognition Systems
+        publication: wired
+        desk: Security
+        author_byline: Dhruv Mehrotra
+        date: '2026-09-11'
+        time: 2:59 PM
+        evidence_tier: excerpt
+        verification: 'Byline, desk, and dateline attested via wesearch.press mirror (crawled digest, ~120 words, 0 browser.open this run per #503). WIRED canonical page not fetched; excerpt-tier.'
+        opening_excerpt: 'A set of parents and their children in Illinois and California filed a lawsuit last week in federal court in Chicago alleging that Meta illegally used their Facebook and Instagram photos to build NameTag, an unreleased face-recognition system for its smart glasses, and to train generative AI models including Emu and Muse Image.'
+        lawsuit: 'Alvarez et al. v. Meta Platforms, Inc. - filed Sep 4 2026, U.S. District Court for the Northern District of Illinois; 66-page complaint; plaintiffs Illinois resident Francisco Alvarez and his son + California resident Jeremy Wahl and his daughter; claims under Illinois Biometric Information Privacy Act (BIPA) and California privacy statutes; filed by Wexler Boley and Elgersma; alleges faceprints derived from Facebook/Instagram photos without notice or consent; complaint-stage, allegations unproven.'
+        meta_response:
+        - 'this lawsuit is without merit and misrepresents our work (PetaPixel)'
+        - 'not building a universal face database (PetaPixel)'
+        - 'nothing has shipped to consumers; no final decision has been made (Biometric Update, via Meta spokesperson Ryan Daniels)'
+        - 'transparent about how we use people''s information to build and improve AI products (PetaPixel)'
+        tone_MANUAL_ILLUSTRATIVE: -0.70
+        register: accountability_investigative
+        surveillance_vocabulary: present
+        source_url: https://wesearch.press/s/meta-sued-over-training-data-for-its-ai-and-face-recognition-9bb99171
+      carried_meta_arm:
+        mechanism: 66
+        title: Meta Smart Glasses Had Hidden Facial Recognition Code (NameTag)
+        alt_title: Meta Silently Added Face-Recognition Code for Its Smart Glasses to Millions of Phones
+        publication: wired
+        authors:
+        - Dell Cameron
+        - Dhruv Mehrotra
+        date: '2026-06-04'
+        tone_MANUAL_ILLUSTRATIVE: -0.75
+        rescore: carried_unrescored_per_807
+        source_url: https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+      carried_openai_arm:
+        mechanism: 366
+        note: 'Cameron Jul-28 OpenAI rogue-agent arm (MANUAL ILLUSTRATIVE -0.60, adversarial despite Conde Nast OpenAI deal) stands as the falsification-family member; m863 does not touch it.'
+        source_url: https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
+      temporal_delta_illustrative: 0.05
+      temporal_delta_note: 'Sep-11 arm (-0.70) minus Jun-4 arm (-0.75) = +0.05, near-null. Register persistence, not escalation. MANUAL ILLUSTRATIVE only.'
+      series_lineage:
+      - 'Jun 4 2026: Cameron + Mehrotra NameTag dormant-code expose (m66)'
+      - 'Jun 5 2026: Meta ships app update removing all NameTag code (within 48h of publication)'
+      - 'Jun 8 2026: EFF "VICTORY" post; INCYBER NEWS reports NameTag renamed "Connections"'
+      - 'Sep 4 2026: Alvarez et al. v. Meta class action filed (N.D. Illinois)'
+      - 'Sep 11 2026: Mehrotra solo WIRED follow-up on the lawsuit (m863, this mechanism)'
+      stigma_diffusion:
+      - 'avclub.com (Sep 11 2026 relay): the glasses are "colloquially known in some circles as ''pervert glasses''" - stigma vocabulary persists outside WIRED''s frame'
+      - 'world-freedom.co.uk: Meta CTO Bosworth called WIRED''s Jun reporting "absolutely dishonest", then days later described NameTag as a "great feature"'
+      competitor_investigative_absence:
+        finding: 'Zero equivalent WIRED investigative follow-up on Apple (Vision Pro), Google (Android XR), Samsung (Galaxy Glasses), or Snap (Spectacles) camera-wearable privacy posture surfaces in the same Jun-Sep 2026 window (bounded search absence across 5 query sets this run).'
+        m66_prediction_leg: 'Positive temporal leg for m66''s 12-month verification window: investigative attention on Meta persists 99 days post-expose without rotating to competitors.'
+      confounders_ranked_strong_first:
+      - 'STRONG: lawsuit peg drives the register (news-peg, not entity; the peg-follows-register pattern m637/m743/m845/m860 predicts a lawsuit peg draws accountability register regardless of entity)'
+      - 'STRONG: Meta''s biometric-privacy history (BIPA exposure, $1.4B Texas facial-recognition settlement precedent, DeepFace/Cambridge Analytica legacy) makes Meta a natural accountability target independent of manufacturer-identity bias'
+      - 'STRONG: series-inertia (investigative teams follow their own scoops; the Jun-4 expose created a standing NameTag beat for the Cameron/Mehrotra desk)'
+      - 'MODERATE: excerpt-tier evidence (search excerpts + wesearch.press ~120-word digest; 0 browser.open per #503; full-text register could differ)'
+      - 'MODERATE: n=1 new arm, directional only'
+      - 'WEAK: byline-attribution risk (WIRED canonical page not fetched; Mehrotra byline from mirror attribution)'
+      - 'WEAK: complaint-stage lawsuit (allegations unproven; WIRED reports them as allegations with Meta denial, which is itself the register)'
+      counterevidence:
+      - 'm366: Cameron adversarial on OpenAI (-0.60) despite the Conde Nast OpenAI deal - the same investigative desk CAN be adversarial to a deal partner; Meta-targeting is lane/series-driven, not payer-driven'
+      - 'Medium (Len Noe, Sep 2026): the Jun-4 NameTag code "wasn''t running or sending biometric data" at discovery, and the NYT had already reported the internal name in February - the expose''s novelty was bounded'
+      - 'PetaPixel''s neutral straight relay of the lawsuit (Sep 14 2026) shows the story travels without WIRED''s register outside WIRED''s frame'
+      - 'The lawsuit''s central claim (Facebook/Instagram photos converted to faceprints) is unproven; only Meta knows the data lineage, per the complaint''s own framing'
+      statistical_discipline:
+        tone: MANUAL_ILLUSTRATIVE_ONLY
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        artifact_grade: false
+        falsification_family_member: false
+        falsification_ledger: 35
+        note: 'Per the Aug 28 2026 standing rule: finding-layer significance never asserted; engine significance never promoted to a finding.'
+      connects_to: [66, 366, 847, 853, 856, 859]
+      rotation_transparency: '1050-1054 window FOURTH leg (D #1050 -> E #1051 -> A #1052 -> B #1053 -> C #1054, rotation per #565). Predecessor #1052 Type A (main 98624388, anchor c7941cbd, log-hash finalizer 4a05bdae, verified present via git log before this run''s commit). No "Type B #1053" in git log pre-commit (--grep); no test_type_b_1053 files pre-commit (glob); max numeric mechanism_id 862 pre-commit; zero underscore-form 863 mechanism key strings repo-wide pre-commit (format-built needles, own file excluded per #715); zero dash-form 863 references pre-commit; zero numeric 863 keys in profiles/ pre-commit; block key zero-hit pre-commit; nine new source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); the two carried WIRED URLs already in corpus (m66/m366). Next run #1054 Type C closes the window.'
+      research_method: '5 browser.search query sets this run (Lauren Goode WIRED Meta glasses Sep 2026 - rejected: own-repo circular hits only, no new Goode arm, consistent with the m436 coverage-gap; Lauren Goode WIRED Apple wearables 2026 - rejected: own-repo circular + stale 2024 arms; Dell Cameron WIRED Meta glasses privacy Sep 2026 - SELECTED: PYMNTS/Pulse2/TechTimes relays of the Sep-14 WIRED NameTag lawsuit piece; "Dell Cameron" WIRED Snap/Samsung/Apple - rejected: own-repo circular (m66 commit) + unrelated; WIRED Sep-14 NameTag class action - SELECTED: wesearch.press mirror attesting the Mehrotra Sep-11 2:59 PM byline + six relay outlets with verbatim Full URLs). 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: 'tests/test_type_b_1053_dhruv_mehrotra_wired_sep11_nametag_classaction_followup_temporal_extension_sep28_2am.py'
+  source_urls:
+  - https://wesearch.press/s/meta-sued-over-training-data-for-its-ai-and-face-recognition-9bb99171
+  - https://www.pymnts.com/news/wearables/2026/meta-faces-lawsuit-over-smart-glasses-facial-recognition/
+  - https://pulse2.com/meta-faces-proposed-class-action-over-ai-training-and-smart-glasses-facial-recognition/
+  - https://petapixel.com/2026/09/14/meta-hit-with-class-action-lawsuit-for-allegedly-using-instagram-photos-to-build-name-tag/
+  - https://www.techtimes.co.uk/meta-sued-over-nametag-biometric-data-1808684
+  - https://medium.com/@len213noe/i-have-thirteen-chips-in-my-body-none-of-them-read-your-face-623a51eba374
+  - https://www.avclub.com/meta-faceprint-lawsuit-mark-zuckerberg
+  - https://www.biometricupdate.com/202609/meta-sued-over-alleged-facial-recognition-training-for-smart-glasses
+  - https://world-freedom.co.uk/2026/09/21/meta-accused-of-harvesting-facebook-instagram-photos-for-smart-pervert-glasses-facial-recognition/
+  - https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+  - https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
