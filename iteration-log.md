@@ -1,3 +1,31 @@
+## #1044 Type C: FT Group FY2025 record revenue (GBP566m, +5%) - the financial-outcome leg of the dual-AI-payer portfolio (OpenAI Apr 2024 + Google Feb 2026, Meta $0); FIRST denominator audit narrows the corpus's "material commercial value" wording to contract/relationship materiality (illustrative ~1.3-2.6% revenue share); NOT falsification-family (ledger holds at 34) - Type C FIFTH and CLOSING leg of the 1040-1044 window (Sep 27 2026, 17:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-27 17:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1040-1044 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1040-1044 window FIFTH leg CLOSING it (D #1040 -> E #1041 -> A #1042 -> B #1043 -> C #1044, rotation per #565 anchor + rotation guard)
+- Predecessor #1043 Type B: main c2c5222c, anchor dc82a82d, log-hash finalizer 98b4213c, test fix 21d11bea (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_c_1044 files on disk (glob); no "Type C #1044" in git log (--grep); max numeric mechanism_id 857 pre-commit (git grep profiles/); zero numeric/underscore/dash 858 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; all 6 source URLs zero-hit repo-wide pre-commit (git grep); Sep-10 Slade Gen-Z interview URL already in corpus via #904/m774 - carried, not novel
+- Next run #1045 Type D opens the 1045-1049 window.
+
+### Finding summary
+Type C #1044 - FT Group FY2025 record revenue as the financial-outcome leg of the dual-AI-payer portfolio (mechanism 437). Press Gazette (Sep 24 2026): group revenue GBP566m (+5%), operating profit GBP51.8m (+23%); consolidated UNAUDITED internal figures seen by Press Gazette; revenue growth every year since 2017 except 2020; tenth anniversary of Nikkei ownership (publishes no global figures); ~3.5M global paying audience (subscribers + 17 specialist brands + FT Live). FT Ltd UK filed accounts (Companies House): revenue GBP477.3m (+5%), operating profit GBP18.3m (+151%); 1.62M paying readers (1.47M digital), both +9%; now 1.9M. A Media Operator (independent relay): paying digital AND paying print each +9%; double-digit digital advertising and events growth. DENOMINATOR AUDIT (Type C correction): the corpus's "material commercial value" FT wording (financial-times.yaml:4373, $10-20M/yr combined secondary estimate, terms undisclosed) is NARROWED - MANUAL ILLUSTRATIVE $10-20M/yr at ~$1.35/GBP is roughly 1.3-2.6% of the GBP566m base, so the materiality sits in the CONTRACT and RELATIONSHIP (NDA, no-sue clause, 90-day exit; red-button termination m774), not the revenue share. TEMPORAL PRECISION: FY2025 contains the OpenAI deal throughout but ZERO months of the Google deal (signed Feb 2026) - a single-payer outcome year; the dual overlap begins FY2026. GEOMETRY: prosperous-captive (restraints bind hardest where the publisher is least pressured; the Google leg was added on top of record scale, not rescue) + opacity triad (owner/deal/accounts - the public cannot weigh the AI-licensing incentive against the revenue base from any primary document). Strongest confounders: unaudited relayed provenance; subscription/ads/events-driven record; temporal mismatch. Strongest counterargument: the outcome leg is a Rorschach - ~2% of revenue, zero Google months in FY2025, and the corpus's own adversarial-coverage tests show the money does not buy silence; what endures is the opacity finding. MANUAL ILLUSTRATIVE only; engine NOT run; tone NOT_SCORED; no_analysis_json_update; NOT artifact-grade; NOT falsification-family (ledger holds at 34); verdict directionally_supported_not_proven. 5 browser.search query sets, 0 browser.open per #503. 46 tests, 11 classes.
+
+### Test report
+46 tests, 11 classes in tests/test_type_c_1044_ft_group_fy2025_record_revenue_dual_payer_outcome_leg_sep27_5pm.py. Pre-commit run: 40 passed, 6 failed (expected: anchor SHA PATCH_ME pre-commit x1, rotation-guard log check x1, doc-sync ratchet x4 per #565/#715/#719/#721). Post-doc-sync re-run pending; anchor patched in the follow-up commit.
+
+### Concurrency
+- #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
+### Commit hashes
+- Main improvement: MAIN_SHA_PLACEHOLDER (Type C #1044: FT Group FY2025 record revenue denominator audit - mechanism 858, outcome leg of the dual-AI-payer portfolio, ledger holds at 34)
+- Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type C #1044 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
+
+### Doc-sync ratchet
+- README.md header stats 53539/1368 -> 53585/1369 (+46/+1 = the #1044 file exactly, venv python authoritative); new table row for the #1044 test file.
+- docs/ARCHITECTURE.md tree gains the #1044 test file row.
+
 ## #1043 Type B: Karissa Bell (Engadget) Meta visual-data opt-out privacy investigation (-0.55) vs Apple Audio Intelligence event recap (-0.10) - FIRST Bell-vs-Apple pair (FOURTH mechanism in her item); NOT falsification-family (ledger holds at 34) - Type B FOURTH leg of the 1040-1044 window (Sep 27 2026, 16:00 PDT; main commit c2c5222c / anchor dc82a82d; log-hash followup registers both hashes here per #721 (dc82a82d))
 
 2026-09-27 16:00 PDT, iteration_type "B", **FOURTH leg of the 1040-1044 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

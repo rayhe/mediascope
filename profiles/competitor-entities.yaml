@@ -26825,3 +26825,104 @@ type_c_1039_amazon_claude_selling_partner_plugin_selective_gatekeeping_vs_meta_m
   yaml_parse_clean: true
   ascii_only: true
   browser_opens: 0
+
+type_c_1044_ft_group_fy2025_record_revenue_dual_payer_outcome_leg_sep27_5pm:
+  mechanism_id: 858
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1044
+  iteration_type: C
+  date_analyzed: '2026-09-27'
+  time_pdt: '17:00'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  job_id: mediascope-meta-wearables-press-analysis
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'FIRST dedicated corpus mechanism on the FT Group FY2025 record-revenue outcome: the financial-outcome leg of the dual-AI-payer portfolio (OpenAI Apr 2024, Google Feb 2026) - GBP566m group revenue and GBP51.8m operating profit (unaudited internal figures seen by Press Gazette), GBP477.3m filed UK revenue, a denominator audit narrowing the corpus''s ''material commercial value'' wording, and the three-layer opacity that keeps AI-licensing materiality unquantified'
+  block_key: type_c_1044_ft_group_fy2025_record_revenue_dual_payer_outcome_leg_sep27_5pm
+  key_design_note: 'colon-form top-level key, no numeric mechanism-id substring (no 858 string per #715)'
+  finding: 'FIRST dedicated corpus mechanism on the FINANCIAL-OUTCOME leg of the FT dual-AI-payer portfolio (mechanism 437). THE RECORD YEAR: FT Group 2025 revenue GBP566m (+5%), operating profit GBP51.8m (+23%), revenue growth every year since 2017 except 2020 (Press Gazette, Sep 24 2026). The global figures are consolidated and UNAUDITED, shared internally, seen by Press Gazette. Tenth anniversary of wholly-owned Nikkei ownership (Dec 2015); Nikkei publishes no global FT figures, so the internal leak is ''the best indicator'' of financial health. Global paying audience ~3.5M (content + events); the 3M-by-2028 target already passed; includes FT subscribers, 17 specialist brands, FT Live attendees. THE FILED ACCOUNTS: Financial Times Ltd UK accounts (Companies House): revenue GBP477.3m (+5%), operating profit GBP18.3m (+151%). Main FT newsbrand 1.62M paying readers (1.47M digital), both +9%; FT says now grown to 1.9M. Slade (internal report): FT.com ''more than 700,000 habitual users'', >1M recognised users. A Media Operator (Sep 24 2026, independent relay): paying digital AND paying print each +9% YoY; double-digit rises to digital advertising and events revenue. Growth path corroboration (Slade, Sep 10 2026, in-corpus #904): 2024 group revenue GBP540m, 80% digital (vs 10% in 2002); GBP540m -> GBP566m = +4.8%. THE DENOMINATOR AUDIT (Type C correction): the corpus''s ''material commercial value'' wording (financial-times.yaml:4373, secondary estimate $10-20M/yr combined, exact terms undisclosed) is NARROWED this run. MANUAL ILLUSTRATIVE math only: $10-20M/yr at ~$1.35/GBP = GBP7.4-14.8M, roughly 1.3-2.6% of the GBP566m group base - a small revenue share. The ''materiality'' of the dual-payer portfolio sits in the CONTRACT and the RELATIONSHIP (NDA, no-sue clause, 90-day exit per Press Gazette Aug 3 2026; red-button termination per mechanism 774), not in the revenue share. TEMPORAL PRECISION: the FY2025 record year contains the OpenAI deal throughout (Apr 2024 onward) but ZERO months of the Google deal (signed Feb 2026) - this is a single-payer outcome year, not a dual-payer one; the dual overlap only begins FY2026. The record year is therefore the financial backdrop against which the dual-payer portfolio matured: the Google leg was added on top of record scale, not rescue. Correlation, not causation. Hypothesis-generating only.'
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scores: NOT_SCORED
+  engine_run: false
+  falsification_ledger: 34
+  falsification_family_member: false
+  falsification_note: 'Ledger holds at 34 after Type A #1042''s THIRTY-FOURTH member (mechanism 856, WSJ safety-crisis falsification). This mechanism is NOT a falsification-family member: it is a financial-outcome and denominator audit, not a falsifiable editorial-tonal claim. It NARROWS a corpus wording (''material commercial value'' -> contract/relationship materiality, ~2% revenue share) rather than testing a thesis prediction.'
+  excerpt_bounded: true
+  excerpt_bounded_note: '0 browser.open this run per #503; all facts carried from search excerpts (Press Gazette Sep 24 2026 + Sep 14 newsletter relay; A Media Operator Sep 24 2026; DCN Slade profile; mypresstoday tracker relay; Press Gazette 2019 accounts piece). The Companies House filing was not read first-hand; the GBP566m/GBP51.8m group figures are unaudited internal figures relayed by trade press, not audited accounts. The Sep 10 2026 Slade interview is carried from corpus #904, not re-fetched.'
+  sources:
+  - url: https://pressgazette.co.uk/media_business/financial-times-revenue-2025/
+    what: 'Press Gazette (Sep 24 2026): FT Group 2025 revenue GBP566m (+5%), operating profit GBP51.8m (+23%); growth every year since 2017 except 2020; consolidated unaudited figures shared internally, seen by Press Gazette; tenth anniversary of Nikkei ownership (publishes no global figures); ~3.5M global paying audience (subscribers + 17 specialist brands + FT Live); UK accounts GBP477.3m revenue (+5%), GBP18.3m operating profit (+151%); 1.62M paying readers (1.47M digital, both +9%), now 1.9M; Slade: >700K habitual users, >1M recognised users on FT.com'
+    accessed: '2026-09-27'
+  - url: https://www.amediaoperator.com/news/financial-times-2025-accounts-print-growth/
+    what: 'A Media Operator (Sep 24 2026, independent relay): FT Ltd accounts show paying digital subscribers AND paying print subscribers each up 9% YoY; double-digit rises to digital advertising and events revenue; the filing shows the FT ''is growing across the board'' per the outlet''s framing'
+    accessed: '2026-09-27'
+  - url: https://pressgazette.substack.com/p/future-of-media-awards-2026-winners
+    what: 'Press Gazette Substack newsletter (Sep 14 2026): Slade revealed FT Group revenue ''up again in 2025 (after a record GBP540m the previous year)'' and that ''so far AI disruption has not disrupted the publisher''s progress''; ''happy with the mix of revenue and control that the FT''s existing licensing deals with OpenAI and Google provide''; ''scary insight into the enormous scale of attempted thefts of FT content by bots posing as real subscribers'''
+    accessed: '2026-09-27'
+  - url: https://www.digitalcontentnext.org/blog/executive-officer/jon-slade/
+    what: 'Digital Content Next executive-officer profile: Jon Slade, FT Group CEO since July 2025 (formerly chief commercial officer); the industry-body profile situates the revenue disclosure in Slade''s commercial leadership era'
+    accessed: '2026-09-27'
+  - url: https://pressgazette.co.uk/ft-financial-times-two-thirds-profit-growth-digital-subscription-success/
+    what: 'Press Gazette (2019, 2018-results era): documents the recurring pattern that the FT''s UK Companies House accounts do not show consolidated global earnings - the owner-level opacity (then Pearson, now Nikkei) that forces the market to rely on relayed internal figures for the group picture; carried as the opacity-recurrence leg'
+    accessed: '2026-09-27'
+  - url: http://mypresstoday.com/gb/en/post/3181/354402999/who-s-suing-ai-and-who-s-signing-latest-village-media-works-with-openai-but-seattle-times-newsday-but-editorial-perfil-sue.html
+    what: 'mypresstoday relay of the Press Gazette ''who''s suing AI and who''s signing'' tracker (updated Sep 25 2026): lists ''Financial Times grows business to record revenue of GBP566m for 2025, September 25, 2026 at 8:49 am'' alongside the Village Media x OpenAI deal and the Editorial Perfil / Seattle Times / Newsday suits - shows the tracker as the live ledger placing FT''s record year in the same frame as the deal/suit frontier'
+    accessed: '2026-09-27'
+  outcome_leg:
+    group_2025: 'Revenue GBP566m (+5%); operating profit GBP51.8m (+23%) - consolidated, unaudited internal figures seen by Press Gazette (Sep 24 2026)'
+    filed_uk_2025: 'FT Ltd (Companies House): revenue GBP477.3m (+5%); operating profit GBP18.3m (+151%)'
+    readers: '1.62M paying readers (1.47M digital), both +9% YoY; FT says now 1.9M (Press Gazette); paying digital AND print each +9% (A Media Operator)'
+    global_audience: '~3.5M paying for content/events globally (FT subscribers + 17 specialist brands + FT Live); 3M-by-2028 target already passed'
+    digital_footprint: 'FT.com >700K habitual users, >1M recognised users (Slade, internal report)'
+    growth_path: 'GBP540m (2024, Slade Sep 10) -> GBP566m (2025) = +4.8%; revenue growth every year since 2017 except 2020'
+    owner: 'Nikkei, wholly owned since Dec 2015 (tenth anniversary 2025); publishes no global FT figures'
+  payer_legs_carried:
+    openai: 'FT x OpenAI content licensing (Apr 29 2024, Reuters primary, terms undisclosed; WSJ-via-Digiday secondary $5-10M/yr; mechanism 54; active throughout FY2025)'
+    google: 'FT x Google News AI pilot commercial partnership (Feb 2026, single-figure millions GBP/yr per Press Gazette Aug 3 2026, 2-year, NDA, no-sue clause, 90-day exit; red-button termination per mechanism 774; ZERO months inside FY2025)'
+    meta: 'Meta pays FT $0 (no licensing, no commercial partnership - mechanism 437)'
+    combined_estimate: 'Corpus MANUAL ILLUSTRATIVE range $10-20M/yr combined (financial-times.yaml:4373); exact terms undisclosed by all parties'
+  geometry: 'THE PROSPEROUS-CAPTIVE GEOMETRY: the payers'' money flows into a THRIVING publisher, not a distressed one. The contractual restraints (no-sue clause, 90-day exit; red-button termination) bind hardest exactly where the publisher is least financially pressured to accept them - which suggests the deals'' value to FT is strategic (relationship, access, optionality) rather than survival. The record year is the financial backdrop against which the dual-payer portfolio matured: the Google leg was added (Feb 2026) on top of record scale. THE OPACITY TRIAD: (1) owner-level - Nikkei publishes no global figures, so the record year entered the public record via an internal leak to trade press; (2) deal-level - FT discloses neither the OpenAI terms nor the Google terms, only secondary estimates exist; (3) accounts-level - the UK Companies House accounts exclude 17 specialist brands and FT Live and break out no licensing revenue (and the 2019 Press Gazette piece shows the UK-accounts-vs-global-figures gap is a recurring pattern). The public cannot weigh the AI-licensing incentive against the revenue base from any primary document. THE DENOMINATOR CORRECTION: ~1.3-2.6% illustrative revenue share narrows ''material commercial value'' to contract/relationship materiality - the incentive theory (financial-times.yaml:4373) already locates the effect in the contract, and the outcome leg confirms the revenue-share channel cannot carry it.'
+  confounders:
+  - strength: strong
+    text: 'Excerpt-bounded per #503: 0 browser.open; the GBP566m/GBP51.8m group figures are unaudited internal figures relayed by trade press, not audited accounts; the Companies House filing was not read first-hand and no primary cross-check of the group figure exists.'
+  - strength: strong
+    text: 'The record year is subscription/events/advertising-driven (AMO: +9% paying digital AND print readers, double-digit digital advertising and events growth; trajectory running since 2017). The MANUAL ILLUSTRATIVE ~2% AI-licensing share cannot explain the outcome - the outcome leg is fully consistent with the deals being financially immaterial to FT.'
+  - strength: strong
+    text: 'Temporal mismatch: the FY2025 record year contains the OpenAI deal throughout but ZERO months of the Google deal (signed Feb 2026). This is a single-payer outcome year, not a dual-payer one; the dual overlap only begins FY2026. Any ''dual-payer outcome'' framing must be the backdrop/maturation reading, not a dual-causation reading.'
+  - strength: medium
+    text: 'Currency-conversion fragility: the ~1.3-2.6% ratio mixes USD-denominated secondary estimates with GBP figures at an illustrative ~$1.35/GBP rate; the underlying deal estimates are themselves undisclosed secondary numbers. The ratio is directional, not precise.'
+  - strength: medium
+    text: 'Company-claimed figures (3.5M global paying audience, ''now 1.9M'' readers, ''more than 700,000 habitual users'') are FT''s own statements relayed by press, not independently verified; the unaudited-internal provenance applies to the whole group-figures tier.'
+  - strength: weak
+    text: 'n=1 outcome year; durability unknown. FY2026 is the first year with both payer legs active simultaneously, and its figures are not yet public.'
+  - strength: weak
+    text: 'The 2019 Press Gazette opacity-recurrence leg is seven years old (Pearson era); the UK-accounts-vs-global-figures gap pattern may have narrowed under Nikkei, though the 2025 internal-leak provenance suggests it has not.'
+  counterevidence:
+  - 'The corpus''s own FT tests document adversarial FT coverage of OpenAI (rogue-agents safety-crisis coverage, e.g. carried adversarial registers): a thriving dual-payer publisher can still cover its payers adversarially - the outcome leg proves nothing about editorial tone.'
+  - 'The no-sue clause carries a 90-day exit and the Google deal has red-button termination (mechanism 774): the contractual restraint is terminable, which weakens the captivity reading.'
+  - 'Record profitability predates both AI deals (revenue growth every year since 2017): the financial trajectory is independent of the payer legs.'
+  - 'Slade is on the record (Sep 10 2026, in-corpus #904) that the FT is ''not hit'' by AI/referral disruption and is ''happy with the mix of revenue and control'' the deals provide: the publisher frames them as strategic optionality, not dependency.'
+  - 'The UK filed accounts (GBP477.3m revenue, GBP18.3m operating profit) show a healthy standalone business without the group add-ons; licensing revenue is un-broken-out, but nothing in the filings shows the business needs it.'
+  strongest_counterargument: 'The outcome leg is a Rorschach, not a mechanism test. The GBP566m record year contains zero months of the Google deal and the OpenAI deal at an illustrative ~2% of revenue: the financials are fully explained by subscriptions (+9% paying digital AND print readers), double-digit digital advertising, and events growth - a trajectory running since 2017, independent of the payer legs. The corpus''s own tests show FT covering OpenAI adversarially (rogue-agents safety-crisis registers), so the money demonstrably does not buy silence. The no-sue clause has a 90-day exit; the red-button clause lets FT terminate. Slade himself frames the deals as a strategic revenue-and-control mix, not dependency. The ''prosperous captive'' is a story imposed on numbers that show only prosperity - the captive half is unobserved, the editorial half is contradicted by the corpus''s own adversarial-coverage tests, and the denominator half is a ~2% revenue share that cannot carry a dependency claim. What the outcome leg DOES establish - the three-layer opacity that keeps AI-licensing materiality unquantified from any primary document - is the durable contribution. Correlation, not causation.'
+  certification_boundaries: 'Excerpt-bounded per #503: 5 browser.search query sets, 0 browser.open. The GBP566m/GBP51.8m group figures are unaudited internal figures relayed by Press Gazette, not audited accounts; the Companies House filing was not read first-hand. The combined $10-20M/yr AI-licensing estimate is the corpus''s own MANUAL ILLUSTRATIVE range (financial-times.yaml:4373), not a filed number; neither FT, OpenAI, nor Google has disclosed deal terms. The ~1.3-2.6% ratio is illustrative currency conversion (~$1.35/GBP), directional not precise. No claim is made about what share of 2025 growth came from AI licensing. The FY2025 record year contains zero months of the Google deal (signed Feb 2026) - the dual-payer overlap begins FY2026.'
+  coverage_note: 'No editorial-tone claim about the FT''s coverage of OpenAI or Google is made this run; tone NOT_SCORED. The mechanism maps the financial-outcome leg and the denominator audit, not coverage outcomes. Whether FT coverage of its AI licensors differs from its coverage of Meta is untested and unclaimed here.'
+  novelty: 'FIRST dedicated corpus mechanism on the FT Group FY2025 record-revenue outcome as the financial-outcome leg of the dual-AI-payer portfolio; FIRST denominator audit of the corpus''s ''material commercial value'' FT wording (narrowed to contract/relationship materiality at an illustrative ~1.3-2.6% revenue share); FIRST corpus capture of the three-layer opacity (owner/deal/accounts) that keeps AI-licensing materiality unquantified. Pre-commit greps per #715: zero test_type_c_1044 files on disk (glob), no "Type C #1044" in git log (--grep), max numeric mechanism_id 857 pre-commit (Type B #1043, mechanism 857 in journalists.yaml), zero numeric/underscore/dash 858 keys in profiles/ pre-commit, block key zero-hit repo-wide pre-commit, all 6 source URLs zero-hit repo-wide pre-commit (pressgazette.co.uk/media_business/financial-times-revenue-2025, amediaoperator.com news financial-times-2025-accounts-print-growth, pressgazette.substack.com future-of-media-awards-2026-winners, digitalcontentnext.org blog executive-officer jon-slade, pressgazette.co.uk ft-financial-times-two-thirds-profit-growth, mypresstoday.com tracker relay 3181/354402999).'
+  connects_to: [437, 774, 54, 487]
+  rotation_transparency: 'Iteration #1044 Type C is the FIFTH and CLOSING leg of the 1040-1044 window (D->E->A->B->C per #565 anchor + rotation guard). #1043 was the fourth leg (Type B, Karissa Bell Engadget-vs-Apple ambient-listening register pair, mechanism 857, main c2c5222c / anchor dc82a82d / log-hash 21d11bea). Rotation A/B/C/D/E advances: next run is #1045 Type D, opening the 1045-1049 window.'
+  concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative-corpus-integrity test), #1012 working-tree edit on the committed Type A test file all stay out of this run''s index and diff.'
+  verification:
+    yaml_parse_clean: true
+    ascii_only: true
+    browser_opens: 0
+    max_numeric_mechanism_id_pre_commit: 857
+    mechanism_id_claimed: 858
+    source_urls_first_appearance: 6
+    search_sets: 5
+    falsification_ledger_holds_at: 34
+  yaml_parse_clean: true
+  ascii_only: true
+  browser_opens: 0
