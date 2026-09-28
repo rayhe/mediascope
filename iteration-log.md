@@ -29,7 +29,7 @@ Type B #1048 - SECOND dedicated Type B mechanism on Emma Roth (The Verge), SECON
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
-- Push status: pending this run (see followup).
+- Push status: pushed 2026-09-27 ~21:35 PDT; local 2ae32605 == remote 2ae32605 (git ls-remote verified); chain main 852fc450 -> anchor 6a6c4239 -> log-hash 2ae32605 all on origin/main.
 
 ### Doc-sync ratchet
 - README.md header stats 53734/1372 -> 53780/1373 (+46/+1 = the #1048 file exactly, venv python authoritative); new table row for the #1048 test file.
