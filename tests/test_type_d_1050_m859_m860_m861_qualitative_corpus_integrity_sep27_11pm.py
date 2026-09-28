@@ -325,7 +325,9 @@ class TestNovelty1050:
         mains = [
             line
             for line in result.stdout.splitlines()
-            if "Type D #1050" in line and "followup" not in line.lower()
+            if "Type D #1050" in line
+            and "followup" not in line.lower()
+            and "push-status" not in line.lower()
         ]
         if ANCHORED_SHA == "0" * 40:
             assert mains == [], mains
