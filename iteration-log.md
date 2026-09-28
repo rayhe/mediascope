@@ -34,7 +34,7 @@ Qualitative-discipline verification of the three committed mechanisms from the 1
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
-- Push status: pushed 2026-09-28 ~04:3x PDT; local <final> == remote <final> (git ls-remote verified); chain main 968a59fd -> anchor 422c8600 -> log-hash <final> all on origin/main (rayhe/mediascope-asymmetry).
+- Push status: pushed 2026-09-28 ~04:3x PDT; local 37429fb6 == remote 37429fb6 (git ls-remote verified); chain main 968a59fd -> anchor 422c8600 -> log-hash 37429fb6 all on origin/main (rayhe/mediascope-asymmetry). Proxy note: the first probe round failed because the ~/.git-credentials proxy URLs carry the port URL-encoded (hatch-egress-proxy%3a3128); URL-decoding the candidate before curl probing returns HTTP 200 on the hatch-runtime credential.
 
 ### Doc-sync ratchet
 - README.md header stats 54093/1379 -> 54140/1380 (+47/+1 = the #1055 file exactly, venv python authoritative); new table row for the #1055 test file.
