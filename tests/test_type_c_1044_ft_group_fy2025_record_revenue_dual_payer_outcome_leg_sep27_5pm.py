@@ -82,7 +82,7 @@ ITERATION = 1044
 ITERATION_TYPE = "C"
 EXPECTED_TESTS = 46
 # Patched to the real main-commit SHA in the anchor followup per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "c3dbef9e49ce5c5fee82a98ccf510cb2140dde9c"
 PREDECESSOR_SHAS = {
     "c2c5222c33a545ddc2974fedd962be15ffb6cac6",  # #1043 main
     "dc82a82dfe52e90f5a71b1e24f748f06773fc248",  # #1043 anchor
