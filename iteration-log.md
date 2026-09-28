@@ -1,4 +1,4 @@
-## #1055 Type D: m862/m863/m864 qualitative-discipline verification + post-1050-1054 corpus integrity (max numeric mechanism_id 864; #1053 zero-864 guards fail by design, pinned; ledger holds at 35 with claim-vs-prose pinning) + #1050 background-suite tombstone (FIFTY-SECOND consecutive death; lineage SEVENTIETH -> SEVENTY-FIRST) + fresh synthetic engine calibration (new values, not #1050's) - Type D FIRST leg of the 1055-1059 window, OPENING it (Sep 28 2026, 04:00 PDT; main commit <pending> / anchor <pending>; log-hash followup registers both hashes here per #721 (this commit))
+## #1055 Type D: m862/m863/m864 qualitative-discipline verification + post-1050-1054 corpus integrity (max numeric mechanism_id 864; #1053 zero-864 guards fail by design, pinned; ledger holds at 35 with claim-vs-prose pinning) + #1050 background-suite tombstone (FIFTY-SECOND consecutive death; lineage SEVENTIETH -> SEVENTY-FIRST) + fresh synthetic engine calibration (new values, not #1050's) - Type D FIRST leg of the 1055-1059 window, OPENING it (Sep 28 2026, 04:00 PDT; main commit 968a59fd / anchor 422c8600; log-hash followup registers both hashes here per #721 (this commit: 968a59fd / 422c8600))
 
 2026-09-28 04:00 PDT, iteration_type "D", **FIRST leg of the 1055-1059 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -29,12 +29,12 @@ Qualitative-discipline verification of the three committed mechanisms from the 1
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
 
 ### Commit hashes
-- Main improvement: <pending> (Type D #1055: m862/m863/m864 qualitative-discipline verification + post-1050-1054 corpus integrity, ledger holds at 35, #1050 suite tombstone FIFTY-SECOND death SEVENTIETH -> SEVENTY-FIRST, fresh synthetic engine calibration, opens the 1055-1059 window)
-- Anchor followup: <pending> (Type D #1055 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+- Main improvement: 968a59fdb8172600cfb940462654012618fb473c (Type D #1055: m862/m863/m864 qualitative-discipline verification + post-1050-1054 corpus integrity, ledger holds at 35, #1050 suite tombstone FIFTY-SECOND death SEVENTIETH -> SEVENTY-FIRST, fresh synthetic engine calibration, opens the 1055-1059 window)
+- Anchor followup: 422c8600cf58ddcecc2fc672ac28f2b3c62c136e (Type D #1055 anchor: patch ANCHORED_SHA to the main commit hash per #565)
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
-- <pending this run>
+- Push status: pushed 2026-09-28 ~04:3x PDT; local <final> == remote <final> (git ls-remote verified); chain main 968a59fd -> anchor 422c8600 -> log-hash <final> all on origin/main (rayhe/mediascope-asymmetry).
 
 ### Doc-sync ratchet
 - README.md header stats 54093/1379 -> 54140/1380 (+47/+1 = the #1055 file exactly, venv python authoritative); new table row for the #1055 test file.
