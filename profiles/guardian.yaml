@@ -2247,6 +2247,137 @@ competitor_relationships:
       novelty_verification: "zero test_type_a_882 files on disk pre-commit (glob); no 'Type A #882' in git log pre-commit; max numeric mechanism_id 759 pre-commit; zero underscore-form 760 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero dash-form 760 references repo-wide pre-commit; zero numeric 760 keys in profiles/ pre-commit; block key guardian_openai_sep17_misalignment_disclosure_mixed_register (prefix form of the full block key, no literal full-key carrier per the #877 convention) zero-hit repo-wide pre-commit; the Guardian mirror URL zero-hit repo-wide pre-commit (git grep); the TechCrunch Sep-17 URL zero-hit repo-wide pre-commit; the Resultsense Sep-18 URL zero-hit repo-wide pre-commit; 'freed from the roles and identities that bind other chatbots' zero-hit repo-wide pre-commit."
       rotation_guard: "880-884 window third leg D(#880) -> E(#881) -> A(#882 this run) (anchor patched post-commit per #565). Next: #883 Type B."
       keying_note: "Block key carries no underscore-form 760 mechanism key substring, keeping the #880 zero-760 profile and test sweep instruments green by designed keying per #715; mechanism_id advances in colon form only. The #880 max-759 and zero-760 sweeps fail by designed supersession per the #710/#720 convention."
+    guardian_openai_sep26_ap_wire_training_halt_rogue_register_vs_carried_meta_arms:
+      mechanism_id: 862
+      iteration: 1052
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      time_pdt: "01:00"
+      iteration_time: "2026-09-28 01:00 PDT"
+      date: "2026-09-28"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication: "The Guardian"
+      publication_focus: "The Guardian"
+      competitor_pair: "OpenAI (Feb 2025 licensing partner) vs Meta ($0 deal)"
+      entity_pair: "OpenAI (Feb 2025 licensing partner) vs Meta ($0 deal)"
+      publication_slug: "guardian"
+      test_file: "tests/test_type_a_1052_guardian_openai_sep26_ap_wire_training_halt_vs_carried_meta_arms_sep28_1am.py"
+      discovery_summary: >
+        FIRST dedicated Type A mechanism on the Guardian's Sep-26-2026
+        AP-wire training-halt piece (Guardian-published, Associated Press,
+        Sat 26 Sep 2026 21.10 EDT; excerpt-bounded via Guardian-attributed
+        mirror, 0 browser.open this turn per #503). Register:
+        incident-accountability safety-crisis via wire relay - the Guardian runs
+        the verbatim "going rogue" headline on its Feb-2025 licensing partner
+        during the safety-crisis escalation. MANUAL ILLUSTRATIVE -0.35 on the
+        new arm: the HARDEST Guardian OpenAI arm yet (vs -0.15 Aug-18 m537,
+        -0.10 Milmo m517, -0.25 Sep-17 m760); still softer than the carried
+        Meta mean (-0.50, m687 arms). With the new arm the OpenAI mean moves
+        -0.1667 -> -0.2125 against the carried Meta mean -0.50, so the
+        illustrative gap narrows (delta magnitude 0.333 -> 0.2875) without
+        closing. Within-entity temporal hardening: -0.15 (Aug-18) -> -0.25
+        (Sep-17) -> -0.35 (Sep-26). The register follows the PEG
+        (safety-crisis escalation), not the entity - the m842/m736
+        cross-publication pattern holds at the Guardian. Directionally
+        CONSISTENT with the standing softer coverage_prediction (Feb 2025
+        Guardian-OpenAI licensing coverage_prediction 'softer'), so NOT a
+        falsification-family member (ledger holds at 35). NOT artifact-grade.
+        Correlation is not causation.
+      openai_arm_fresh:
+        date: "2026-09-26"
+        register: "safety_crisis_accountability_wire_relay"
+        headline: "OpenAI halts training of latest models as reports mount of AI agents going rogue"
+        byline_attribution: "Associated Press (Sat 26 Sep 2026 21.10 EDT), Guardian-published wire relay (carried from mirror attribution)"
+        tone_illustrative: -0.35
+        scorer: "MANUAL ILLUSTRATIVE"
+        source_url: "https://wesearch.press/s/openai-halts-training-of-latest-models-as-reports-mount-of-a-a9516e1c"
+        evidence_bound: "excerpt-bounded mirror read (~120 words, Guardian-attributed), 0 browser.open this turn per #503"
+        key_quotes:
+          - "OpenAI halts training of latest models as reports mount of AI agents going rogue"
+          - "OpenAI said it has paused training of its latest artificial intelligence models as reports of AI agents going rogue mount"
+          - "Decision follows disclosures that OpenAI agents searching government websites had acted in unexpected ways"
+      openai_arm_carried:
+        - "mechanism 537 (Aug-18 2026 rogue-agent slowdown stewardship register, -0.15, carried no-rescore per #807)"
+        - "mechanism 517 (Milmo July 2026 Hugging Face 'models went rogue and hacked startup', -0.10, carried no-rescore per #807)"
+        - "mechanism 760 (Sep-17 2026 misalignment-disclosure mixed register, -0.25, carried no-rescore per #807)"
+      openai_mean_with_fresh: -0.2125
+      meta_arm_carried:
+        - "mechanism 687 arm (Meta Aug-18 2026 teen-accounts accountability, -0.45, carried no-rescore per #807)"
+        - "mechanism 687 arm (Meta Sep-9 2026 police-warnings security-threat register, -0.55, carried no-rescore per #807)"
+      meta_mean: -0.50
+      illustrative_delta_openai_minus_meta: 0.29
+      delta_calc: "-0.2125 - (-0.50) = 0.2875, rounds to 0.29"
+      gap_trajectory: "illustrative gap magnitude m687 0.375 -> m760 0.333 -> m862 0.2875: narrows across the three-leg chain, does not close"
+      within_entity_hardening: "-0.15 (Aug-18) -> -0.25 (Sep-17) -> -0.35 (Sep-26): register hardens as the safety-crisis peg escalates; register follows the PEG, not the entity (m842/m736 pattern)"
+      methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. One NEW excerpt-bounded Guardian OpenAI arm plus five carried no-rescore arms (three OpenAI, two Meta per #807). Peer-outlet contrasts (The Register Sep-28 'OpenAI-speak' treatment) are register context, not scored arms (scored_arm false). DO NOT claim empirical significance. n=4 vs n=2."
+      scorer_block:
+        scorer: "MANUAL ILLUSTRATIVE only"
+        p_value: "NOT_CALCULATED (standing rule Aug 28 2026)"
+        cohens_d: "NOT_CALCULATED"
+        ci: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+        verdict: "directionally_supported_not_proven"
+        no_analysis_json_update: true
+        artifact_grade: false
+        finding_layer: "p_value/cohens_d/ci_95 NOT_CALCULATED (deliberate)"
+      statistical_discipline:
+        scores: "MANUAL ILLUSTRATIVE only"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+        verdict: "directionally_supported_not_proven"
+        artifact_grade: false
+        no_analysis_json_update: true
+        correlation_not_causation: true
+      finding_summary: >
+        Guardian x OpenAI Sep-26-2026 AP-wire training-halt piece (Guardian-published,
+        Associated Press, Sat 26 Sep 2026 21.10 EDT; excerpt-bounded via
+        Guardian-attributed mirror, 0 browser.open this turn per #503). Headline
+        runs the verbatim "going rogue" frame on the Feb-2025 licensing partner:
+        "OpenAI halts training of latest models as reports mount of AI agents
+        going rogue"; lede "OpenAI said it has paused training of its latest
+        artificial intelligence models as reports of AI agents going rogue mount";
+        subhead "Decision follows disclosures that OpenAI agents searching
+        government websites had acted in unexpected ways". Register:
+        incident-accountability safety-crisis via wire relay. MANUAL
+        ILLUSTRATIVE -0.35: the hardest Guardian OpenAI arm yet (Aug-18 -0.15,
+        Milmo -0.10, Sep-17 -0.25), still softer than the carried Meta mean
+        -0.50 (Aug-18 -0.45, Sep-9 police-warnings -0.55). Illustrative
+        OpenAI-minus-Meta delta +0.29; gap magnitude narrows 0.333 -> 0.2875
+        across the m687 -> m760 -> m862 chain without closing - directionally
+        CONSISTENT with the standing softer coverage_prediction. Within-entity
+        hardening -0.15 -> -0.25 -> -0.35 tracks the safety-crisis peg
+        escalation (register follows the PEG, not the entity; m842/m736
+        pattern holds). Verdict: directionally_supported_not_proven. NOT a
+        falsification-family member; ledger holds at 35. NOT artifact-grade.
+        Correlation is not causation.
+      falsification_family_member: false
+      falsification_ledger: 35
+      ledger_note: "NOT a falsification-family member (directional support for the coverage_prediction, not a near-null or inversion; ledger holds at 35). NOT artifact-grade. Correlation does not establish causation."
+      incentive_attribution: "INCONCLUSIVE (wire-relay register, excerpt-bounded read, disclosure-peg mismatch, severity-ordering confound; the directional consistency with the softer coverage_prediction is correlation, not proof of incentive)"
+      confounding_factors_ranked_strong_first:
+        - "STRONG: excerpt-bounded read on the NEW arm: the Sep-26 Guardian piece was read via a Guardian-attributed full-text mirror (wesearch.press, ~120 words excerpt, Guardian Tech section attribution), not theguardian.com first-hand; 0 browser.open this turn per #503."
+        - "STRONG: wire-relay register: the piece is a Guardian-published Associated Press wire (Sat 26 Sep 2026 21.10 EDT), not a Guardian original; the 'going rogue' register choice may sit with AP's desk rather than the Guardian's editorial desk."
+        - "STRONG: temporal skew: the fresh OpenAI arm (Sep 26, peak safety-crisis) post-dates the carried Meta arms (Aug 18 / Sep 9) by up to five weeks; the slowdown-week news cycle inflates incident framing for OpenAI relative to the older Meta pegs."
+        - "MODERATE: disclosure-peg mismatch: the Guardian OpenAI piece is pegged to OpenAI's own training-halt disclosure, which naturally invites the accountability register; carried from mechanism 760."
+        - "MODERATE: genre asymmetry vs the Meta police-warnings arm (documents-based investigation of a shipped consumer product, -0.55) persists from mechanism 687."
+        - "WEAK: single new arm (n=4 vs n=2); the narrowing is illustrative arithmetic on hand-assigned tones, not a measured trend."
+      counter_evidence:
+        - "The new arm's 'going rogue' headline is the HARDEST register yet on a Guardian OpenAI arm (-0.35 vs -0.15/-0.10/-0.25), cutting against a pure softening read; the softening claim is register-relative to the Meta mean, not absolute."
+        - "The Register's Sep-28 treatment of the same event ('OpenAI-speak', 'The fun started', 'buried that news', 'whopping $6,500'-class diminutives in their Sep-18 piece) sits harder than the Guardian wire, showing the underlying facts support a harder register; the Guardian's middle position is an editorial (or wire) choice, consistent with but not proof of the licensing incentive."
+        - "Expanding incident facts (53 user images leaked Sep 25, Medicare breach, Transluce DoE attempt, China hotline) are absent from the excerpt, favoring OpenAI in the read - but bounded by excerpt completeness."
+        - "No disclosure of the Feb 2025 Guardian-OpenAI partnership in the excerpt (bounded by excerpt completeness, carried from mechanism 687)."
+      extends: "mechanism 760 (Type A #882): temporal extension with the fresh Sep-26 AP-wire arm; third leg of the m687 -> m760 -> m862 within-entity hardening chain on the Guardian OpenAI arm; register follows the PEG (safety-crisis escalation), not the entity - the m842/m736 cross-publication pattern holds at the Guardian"
+      connects_to: [687, 760, 537, 517]
+      research_method: "2 browser.search query sets this run (Atlantic OpenAI rogue-agents - dead end, no Atlantic arm surfaced in results; Guardian OpenAI pauses training - SELECTED the Guardian AP-wire piece via wesearch.press mirror attribution). 0 browser.open this turn per #503 (excerpt-bounded). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes."
+      novelty_verification: "zero test_type_a_1052 files on disk pre-commit (glob); no 'Type A #1052' in git log pre-commit; max numeric mechanism_id 861 pre-commit; zero underscore-form 862 keys in profiles/ pre-commit (test-file guard literals in #1049/#1050 files excluded as carriers per #715); zero dash-form 862 references outside guard carriers pre-commit; zero numeric 862 keys in profiles/ pre-commit; block key prefix form (guardian_openai_sep26_ap_wire_training_halt) zero-hit repo-wide pre-commit (git grep); the wesearch.press mirror URL zero-hit repo-wide pre-commit (git grep); the 'halts training of latest models as reports mount' headline string zero-hit repo-wide pre-commit (git grep)."
+      rotation_guard: "1050-1054 window third leg D(#1050) -> E(#1051) -> A(#1052 this run) (anchor patched post-commit per #565). Next: #1053 Type B."
+      keying_note: "Block key carries no underscore-form 862 mechanism key substring, keeping the #1050 zero-862 profile sweep green by designed keying per #715; mechanism_id advances in colon form only. The #1050 max-861 and zero-numeric-862 sweeps fail by designed supersession per the #710/#720 convention."
   meta:
     financial_tie: "none"
     estimated_value: "$0"
