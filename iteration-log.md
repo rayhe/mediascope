@@ -29,7 +29,7 @@ Type E #1051 - 133rd podcast sentiment verification cycle, monitoring-only per t
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
-- Push status: PENDING (to be verified post-push via git ls-remote).
+- Push status: pushed 2026-09-28 ~00:3x PDT; local f3e2c11f == remote f3e2c11f (git ls-remote verified); chain main b3927d7d -> anchor bb845594 -> log-hash f3e2c11f all on origin/main (rayhe/mediascope-asymmetry).
 
 ### Doc-sync ratchet
 - README.md header stats 53878/1375 -> 53931/1376 (+53/+1 = the #1051 file exactly, venv python authoritative); new table row for the #1051 test file.
