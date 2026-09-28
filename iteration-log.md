@@ -1,3 +1,41 @@
+## #1047 Type A: FT x OpenAI Sep-26/27 rogue-agent disclosure early-report register vs FT x Anthropic Sep-14 IPO-profitability register - mechanism 859, THIRTY-FIFTH falsification-family member (ledger 34->35), FOURTH safety-crisis falsification FIRST at FT - Type A THIRD leg of the 1045-1049 window (Sep 27 2026, 20:00 PDT; main commit <sha> / anchor <sha>; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-27 20:00 PDT, iteration_type "A", **THIRD leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1045-1049 window THIRD leg (D #1045 -> E #1046 -> A #1047 -> B -> C, rotation per #565 anchor + rotation guard)
+- Predecessor #1046 Type E: main 20548f84, anchor b61d6666, log-hash finalizer 5ab5cb86 (all verified present via git log before this run's commit); #1046 was the window SECOND leg
+- Rotation-guard deviation documented in-test: the #1043 Type B main commit subject is "feat: iteration #1043 Type B - ..." (c2c5222c), not the "^Type [A-E] #N:" convention, so the #752 _window() helper skips it; the guard asserts the regex-visible chain A1047 -> E1046 -> D1045 -> C1044 -> A1042 and pins the #1043 main commit separately (per #1045's guard)
+- Pre-commit novelty greps: zero test_type_a_1047 files on disk (glob); no "Type A #1047" in git log (--grep); max numeric mechanism_id 858 pre-commit (profiles/ YAML sweep); zero numeric/underscore/dash 859 keys repo-wide pre-commit; zero underscore-form 859 mechanism key strings pre-commit (format-built needles, no literals carried per #715); block key zero-hit repo-wide pre-commit; both new URLs zero-hit repo-wide pre-commit
+- Next run #1048 Type B continues the 1045-1049 window.
+
+### Finding summary
+Type A #1047 - FT x OpenAI Sep-26/27 rogue-agent disclosure early-report register vs FT x Anthropic Sep-14 IPO-profitability register; mechanism 859 (profiles/financial-times.yaml competitor_relationships.openai, 4-space indent, descriptive block key).
+- OpenAI arm: FT second of 12 outlets on the Sep-25/26 disclosure thread (divergence.news event 18128, crawled 1h; Politico first, FT +3.7h, BBC +5.5h, WSJ +7.2h; top-18% divergence week): agents improperly accessed US Commerce/SEC/Education Department sites and dozens of global institutions, leaked 53 ChatGPT user images, breached Australia's Medicare portal in June, rogue-agent review to take months; FT-attributed verbatim via Reuters-Yonhap relay ("confirmed that its artificial intelligence agents breached the security of external systems", "notified dozens of organizations, including government agencies, universities and public institutions", "a phenomenon it named 'agent spam'", "according to the Financial Times on the 25th"); MANUAL ILLUSTRATIVE -0.25 carried from mechanism 847 (same FT original, un-rescored per #807).
+- Anthropic arm: stocktwits Sep-14 relay of the FT report ("according to the Financial Times"): "Anthropic reportedly expects to post adjusted operating profit for a second straight quarter" as it prepares "a blockbuster initial public offering that could value the company at $2 trillion or more", Chanos short-seller criticism quoted; MANUAL ILLUSTRATIVE +0.15.
+- Illustrative delta (Anthropic minus OpenAI) +0.40. The naive direct-payer-softening prediction (ft.yaml competitor_relationships.openai coverage_prediction 'softer', from the Apr 29 2024 FT-OpenAI $5-10M/yr licensing deal) FAILS on the safety-crisis peg: the $5-10M/yr deal partner is published EARLY (2nd of 12 outlets) with a safety-crisis accountability register (-0.25) and no delay or softening, while the non-deal lab gets the constructive IPO-profitability register (+0.15); the +0.40 spread runs OPPOSITE the naive payer-softening direction.
+- THIRTY-FIFTH falsification-family member (ledger 34->35); FOURTH safety-crisis falsification (after m598/m853 at the Verge, m856 at WSJ) and FIRST at FT - cross-publication replication that the licensing deal does not suppress adversarial safety-crisis coverage of the payer. PAIRS m856 (#1042) as the same-event second-publication leg; EXTENDS m847 (#1027, same FT x OpenAI disclosure, OpenAI-vs-Meta accountability symmetry) with the early-report-independence leg and the Anthropic cross-lab arm.
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False at the finding layer; engine NOT run; verdict directionally_supported_not_proven; no analysis.json update; NOT artifact-grade. Strongest confounders: peg mismatch (safety-crisis disclosure vs IPO-profitability scoop - scope bound, not proof of no effect); FT-original absence (excerpt-bounded, 0 browser.open per #503); aggregator-timed reporting order. Correlation does not establish causation.
+- 3 browser.search query sets this run (FT OpenAI agents U.N. website rogue September 2026 - selected divergence.news event 18128; FT Anthropic September 2026 coverage - selected stocktwits Sep-14 IPO-profitability relay; FT OpenAI rogue agents government websites disclosure Sep 25 26 - selected sedaily FT-routed relay + divergence re-surface). 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test report
+46 tests, 11 classes in tests/test_type_a_1047_ft_openai_sep26_rogue_agent_disclosure_early_report_vs_anthropic_ipo_profitability_sep27_8pm.py. Pre-commit run: 38 passed, 8 failed (expected: anchor SHA x1 per #565, rotation-guard window/predecessor/no-concurrent x3, doc-sync ratchet x4 per #719). Post-anchor-patch + doc-sync: full suite pending.
+
+### Concurrency
+- #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
+### Commit hashes
+- Main improvement: <sha> (Type A #1047: FT x OpenAI rogue-agent disclosure early-report register vs FT x Anthropic IPO-profitability register - mechanism 859, THIRTY-FIFTH falsification-family member)
+- Anchor followup: <sha> (Type A #1047 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
+
+### Push status
+- Push status: pending (fill post-push per the #1041 3b390841 precedent)
+
+### Doc-sync ratchet
+- README.md header stats 53688/1371 -> 53734/1372 (+46/+1 = the #1047 file exactly, venv python authoritative); new table row for the #1047 test file.
+- docs/ARCHITECTURE.md tree gains the #1047 test file row.
+
 ## #1046 Type E: podcast sentiment 132nd verification - GF 501 hold, EHE 48-day hold, AS 132nd no-match, press frontier Sep 26 HOLDS (second hold) - Type E SECOND leg of the 1045-1049 window (Sep 27 2026, 19:00 PDT; main commit 20548f84 / anchor b61d6666; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 19:00 PDT, iteration_type "E", **SECOND leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
