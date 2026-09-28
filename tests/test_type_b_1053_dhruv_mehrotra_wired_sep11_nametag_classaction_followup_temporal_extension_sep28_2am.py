@@ -54,7 +54,7 @@ MECH_ID_MARKER = "mechanism" + "_" + str(MECHANISM_ID)  # format-built per #715
 MECH_ID_DASH = "mechanism" + "-" + str(MECHANISM_ID)
 MECH_ID_NUMERIC = "mechanism_id" + ": " + str(MECHANISM_ID)
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched in the anchor followup commit
+ANCHORED_SHA = "64aaaab5e5b1c532ae67676a502c1ec36bb5d8e3"  # patched in the anchor followup commit
 NOVELTY_CLAIMS = (
     "zero\ntest_type_b_1053 files, max numeric\nmechanism_id 862 pre-commit, "
     "block key zero-hit, nine new\nURLs zero-hit"
