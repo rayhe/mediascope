@@ -1,3 +1,43 @@
+## #1049 Type C: Google x FT Feb-2026 second-payer leg term audit - BUNDLED-LEVERAGE (Showcase-mutation) as the SEVENTEENTH relationship direction; AI Contribution Pilot disambiguation; dual-leg restraint-template replication; mechanism 861 - Type C FIFTH and CLOSING leg of the 1045-1049 window (Sep 27 2026, 22:00 PDT; main commit MAIN_SHA / anchor ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit))
+
+2026-09-27 22:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1045-1049 window FIFTH leg CLOSING it (D #1045 -> E #1046 -> A #1047 -> B #1048 -> C #1049, rotation per #565 anchor + rotation guard)
+- Predecessor #1048 Type B: main 852fc450, anchor 6a6c4239, log-hash finalizer 2ae32605 (all verified present via git log before this run's commit); #1048 was the window FOURTH leg
+- Pre-commit novelty greps: zero test_type_c_1049 files on disk (glob); no "Type C #1049" in git log (--grep); max numeric mechanism_id 860 pre-commit (profiles/ YAML sweep); zero numeric/underscore/dash 861 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; 4 novel source URLs zero-hit repo-wide pre-commit (format-built needles, no literals carried per #715); 4 carried URLs already in corpus via m437/#904
+- Next run #1050 Type D opens the 1050-1054 window.
+
+### Finding summary
+Type C #1049 - Google x FT February 2026 AI licensing deal as the second-payer leg term audit of the FT dual-AI-payer portfolio (mechanism 437: OpenAI Apr 2024 + Google Feb 2026, Meta $0); mechanism 861 (profiles/competitor-entities.yaml, colon-form top-level key, no numeric-id substring).
+- BUNDLED-LEVERAGE (SEVENTEENTH relationship direction): Google re-platformed pre-existing News Showcase revenue lines (hundreds of thousands to millions of pounds per year per publisher, built into annual plans) into AI licensing deals; declining the new terms risks the legacy Showcase check at the framework's sunset (androidheadlines Jul 2026, carried) - the publisher BATNA is the scheduled loss of an existing revenue check, not litigation cost. Publishers sign away AI opt-out rights plus agree not to sue Google or talk publicly except via jointly agreed release (Press Gazette newsletter, Aug 4 2026, NOVEL); the CMA opt-out ruling is mooted by the mutation. The restraint layer (NDA, no-sue, no-public-talk) seals the bundle from scrutiny: the bundle creates the incentive, the NDA hides it (pairs the #1044 opacity triad).
+- AI CONTRIBUTION PILOT DISAMBIGUATION (corpus precision correction): the usage-based, no-upfront-fee, invitation-only pilot (Search Console widget payouts; "peanuts" and "quite black box" per participants - Remote Work Europe Sep 2026 + LinkedIn analysis, both NOVEL) is a SEPARATE track from the FT/Guardian/WaPo focused cash deals. The second-payer leg is the focused deal, not the pilot.
+- DUAL-LEG RESTRAINT-TEMPLATE REPLICATION: OpenAI leg ($5-10M/yr secondary estimate, Apr 2024) and Google leg (single-figure millions/yr, Feb 2026) carry the SAME template: NDA + no-sue + 90-day exit + publisher kill-switch; combined $10-20M/yr MANUAL ILLUSTRATIVE, consistent with #1044's denominator narrowing (~1.3-2.6% of GBP566m FY2025 base). Slade Sep-17 2026 extends the red-button leverage to the dual-payer era (both deals; carried via #904/m774).
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False at the finding layer; engine NOT run; verdict directionally_supported_not_proven; no analysis.json update; NOT artifact-grade. NOT falsification-family (ledger holds at 35). Strongest confounders: single-outlet Press Gazette dependence; excerpt-bounded provenance. Strongest counterargument: ordinary bundle economics - publishers signed voluntarily for cash with a 90-day walk-away; the "leverage" may just be a vendor bundle. Correlation does not establish causation.
+- 4 browser.search query sets this run (Google-FT Feb 2026 deal; Anthropic IPO underwriters - REJECTED as off-portfolio; Jon Slade cash-payment terms; Showcase-bundle NDA/no-sue/90-day-exit). 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test report
+46 tests, 12 classes in tests/test_type_c_1049_google_ft_feb2026_second_payer_leg_bundled_leverage_seventeenth_direction_sep27_10pm.py. Pre-commit run: 37 passed, 9 failed (expected: anchor SHA shape x1 + anchor-in-log x1 per #565; rotation-guard no-duplicate x1 pre-doc-sync; doc-sync ratchet x4 per #719; content-string fixes x2 for pilot/openai-leg/google-leg assertions caught and corrected pre-commit). Post-doc-sync re-run: only the 2 anchor tests fail (patched in the followup).
+
+### Concurrency
+- #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
+### Commit hashes
+- Main improvement: MAIN_SHA_PLACEHOLDER (Type C #1049: Google x FT second-payer leg term audit - bundled-leverage seventeenth direction, mechanism 861, closes the 1045-1049 window)
+- Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type C #1049 anchor: patch NOVELTY_ANCHOR to the main commit hash per #565)
+- Log-hash followup: (this commit) - registers both hashes in the header line per #721.
+
+### Push status
+- Push status: (filled post-push this run)
+
+### Doc-sync ratchet
+- README.md header stats 53780/1373 -> 53826/1374 (+46/+1 = the #1049 file exactly, venv python authoritative); new table row for the #1049 test file.
+- docs/ARCHITECTURE.md tree gains the #1049 test file row.
+
+### Rotation guard
+1045-1049 window CLOSED (D #1045 -> E #1046 -> A #1047 -> B #1048 -> C #1049). Next: #1050 Type D opens the 1050-1054 window.
+
+---
 ## #1048 Type B: Emma Roth (The Verge) Sep-24 same-day Meta-vs-Google AI-assistant pair - temporal replication of m782 (Sep-10), mechanism 860 - Type B FOURTH leg of the 1045-1049 window (Sep 27 2026, 21:00 PDT; main commit 852fc450 / anchor 6a6c4239; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-27 21:00 PDT, iteration_type "B", **FOURTH leg of the 1045-1049 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
