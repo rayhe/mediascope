@@ -1,4 +1,4 @@
-## #1051 Type E: podcast sentiment 133rd verification - GF 501 hold (no 502; seven-day absence since Sep 21; thirteenth consecutive pure-re-surface episode-key cycle; all-key streak advances to THREE), EHE 49-day hold (FIVE logged keys re-surfaced, ZERO new keys), Attention Sphere 133rd no-match (Tracked Sources 132->133), press SEVEN in-corpus re-surfaces incl. maglazana Sep-26 SURFACED after missing #1046 (linkedin privacy roundup absent, remains in corpus; recency frontier HOLDS at Sep 26, third hold); Meta-exclusive privacy-pressure framing across all 133 cycles; ledger holds at 35 - Type E SECOND leg of the 1050-1054 window (Sep 28 2026, 00:00 PDT; main commit MAIN_SHA_PLACEHOLDER / anchor ANCHOR_SHA_PLACEHOLDER; log-hash followup registers both hashes here per #721 (this commit))
+## #1051 Type E: podcast sentiment 133rd verification - GF 501 hold (no 502; seven-day absence since Sep 21; thirteenth consecutive pure-re-surface episode-key cycle; all-key streak advances to THREE), EHE 49-day hold (FIVE logged keys re-surfaced, ZERO new keys), Attention Sphere 133rd no-match (Tracked Sources 132->133), press SEVEN in-corpus re-surfaces incl. maglazana Sep-26 SURFACED after missing #1046 (linkedin privacy roundup absent, remains in corpus; recency frontier HOLDS at Sep 26, third hold); Meta-exclusive privacy-pressure framing across all 133 cycles; ledger holds at 35 - Type E SECOND leg of the 1050-1054 window (Sep 28 2026, 00:00 PDT; main commit b3927d7d / anchor bb845594; log-hash followup registers both hashes here per #721 (this commit: b3927d7d / bb845594)
 
 2026-09-28 00:00 PDT, iteration_type "E", **SECOND leg of the 1050-1054 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -24,8 +24,8 @@ Type E #1051 - 133rd podcast sentiment verification cycle, monitoring-only per t
 - #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
 
 ### Commit hashes
-- Main improvement: MAIN_SHA_PLACEHOLDER (Type E #1051: podcast sentiment 133rd verification cycle - GF 501 hold, EHE 49-day hold, AS 133rd no-match, press frontier Sep 26 HOLDS, ledger holds at 35)
-- Anchor followup: ANCHOR_SHA_PLACEHOLDER (Type E #1051 anchor: patch ANCHORED_SHA to the main commit hash per #565)
+- Main improvement: b3927d7d (Type E #1051: podcast sentiment 133rd verification cycle - GF 501 hold, EHE 49-day hold, AS 133rd no-match, press frontier Sep 26 HOLDS, ledger holds at 35)
+- Anchor followup: bb845594 (Type E #1051 anchor: patch ANCHORED_SHA to the main commit hash per #565)
 - Log-hash followup: (this commit) - registers both hashes in the header line per #721.
 
 ### Push status
