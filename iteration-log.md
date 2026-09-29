@@ -1,3 +1,52 @@
+## #1073 Type B: Ben Schoon (9to5Google) Sep-20 Weekender within-piece blame-attribution asymmetry at the Connect-2026 stigma peak (mechanism 875) - FIRST dedicated Type B on Schoon in journalists.yaml; Meta A1 first-hand -0.45 vs Samsung/Google same-piece +0.10 vs Meta A2 news-register +0.05; illustrative delta +0.55 entity-directed blame; BOUNDS m131 / EXTENDS m171; NOT a falsification-family member, ledger holds at 35
+
+Sep 29 2026, 10:00 PDT, iteration_type "B", **FOURTH leg of the 1070-1074 window, CONTINUING it** (rotation rule D #1070 -> E #1071 -> A #1072 -> B #1073 -> C, anchor patched post-commit per #565).
+
+### Rotation transparency
+- 1070-1074 window FOURTH leg CONTINUING it (D #1070 -> E #1071 -> A #1072 -> B #1073 -> C, rotation per #565 anchor + rotation guard).
+- Predecessor #1072 Type A: main a16c216e, anchor 0df19bbe, log-hash dc5a4b3f (all verified present via git log per the #565 anchor + rotation guard).
+- Pre-commit novelty greps: zero test_type_b_1073 files on disk (glob); no "Type B #1073" in git log (--grep); max numeric mechanism_id 874 in profiles (guardian.yaml); zero numeric 875 profile keys; zero underscore/dash-joined 875 key carriers repo-wide; zero top-level ben_schoon key in profiles/careers/journalists.yaml; zero corpus hits for the Sep-20 9to5Google evidence URL and the Sep-24 WeSearch relay URL.
+- Next run #1074 Type C (fifth and closing leg) should expect max mechanism ID 875 and the #1073 landing guards awaiting the #1075 Type D lifecycle pin.
+
+### Finding summary
+Type B #1073 - the FIRST dedicated Type B mechanism on Ben Schoon (9to5Google senior editor) in journalists.yaml. Prior corpus treatment is m131/m171 in profiles/competitor-coverage-research.yaml: the Aug-16 control calibration (Schoon applies privacy vocabulary to both Meta and Samsung/Google at ~1.7:1, proportional and market-share consistent) and Bader's Inbox #4 explicit trust differential ("I trust Google with far more than Meta"). Zero ben_schoon YAML key pre-commit, per the #643 convention. Question: at the Connect-2026 stigma peak, does the control journalist's register stay proportional, or does blame become entity-directed?
+- META ARM A1 (Sep 20 2026, FIRST-HAND read this run via browser.open, 135 rendered lines): his Weekender "The camera is my favorite part of smart glasses; it feels wrong now" fires explicit blame at Meta - "the camera on smart glasses has become a massive problem, and it's basically ruined existing smart glasses for me personally"; "Meta's Ray-Ban glasses are the catalyst in all of this"; "the simple fact that Meta was at the helm. The company's long history of handling private data, rightfully, did not mix well with *a camera on your face*"; "leaks of human moderators viewing uncensored private recordings... simply evaporated any goodwill or trust that might have been left"; "it took until *July of this year* for Meta to implement a fix"; kicker "thanks Meta, you've ruined this for everyone else." MANUAL ILLUSTRATIVE -0.45. URL: https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/
+- SAMSUNG/GOOGLE ARM (same piece, same day, first-hand): victim framing with credited remediation - "And now we're approaching the debut of the first Android XR glasses from Samsung and Google - with every style having a camera. They're facing a massive uphill battle as the 'perv glasses' stigma is widely known and loud"; "Samsung has said that it has protections immediately in place around camera tampering, but not everyone is going to know that." The stigma noun travels to the category ("perv glasses" widely known), but the BLAME stays on Meta; Samsung/Google are positioned as collateral victims of Meta's debacle, with their tamper protections credited as already in place. MANUAL ILLUSTRATIVE +0.10.
+- META ARM A2 (Sep 24 2026, excerpt-tier via the wesearch.press relay, byline Ben Schoon confirmed on the relay record): neutral market-leader news register - "Despite public backlash in recent months, smart glasses continue to explode in popularity and, as it stands, Meta is by far the biggest player in the game." MANUAL ILLUSTRATIVE +0.05, carried as a register-variance control: the blame lives in the opinion/newsletter genre, not in Schoon's news register. URL: https://wesearch.press/s/meta-launches-audio-only-glasses-and-gen-3-ray-ban-with-slim-ce2a5429
+- Illustrative delta (Samsung/Google minus Meta A1): 0.10 - (-0.45) = +0.55. Within-piece, same-writer, same-day blame asymmetry: Meta carries explicit blame attribution (trust deficit, slow-remediation charge) while Samsung/Google receive victim framing with credited tamper protections. The A1-vs-A2 within-writer register variance (+0.50) shows the blame is genre-bound rather than a stable anti-Meta journalist bias.
+- BOUNDS m131 (the proportional-vocabulary calibration does not extend to the blame register) and EXTENDS m171 (Bader's stated trust differential now has a Schoon-voice counterpart: Meta's data history "rightfully, did not mix well with a camera on your face" vs Samsung's "protections immediately in place").
+- Confounders ranked: STRONG genre (Weekender is first-person opinion/editorial; blame attribution is genre-congruent; the A2 news-register control bounds it) + STRONG evidence-based trust differential (the blame cites documented facts: privacy-LED tampering took until July 2026 to fix, moderator-viewing leaks; per m171 the outlet states its trust differential openly); MODERATE market-share asymmetry (Meta held 69.2% of smart glasses in Q1 2026 per IDC via CNBC/eweek relay; the "catalyst" framing follows the market leader) + MODERATE temporal (primary contrast within-piece eliminates the temporal gap; A2 four days later under the same Connect-2026 stigma peg); WEAK n=1 piece for the primary contrast, MANUAL ILLUSTRATIVE only, A2 excerpt-tier.
+- Counterevidence: Schoon's Sep-24 news register on Meta is neutral-to-positive ("by far the biggest player in the game") - against a stable anti-Meta journalist-bias reading; the "perv glasses" stigma noun travels to the category including Samsung/Google's upcoming glasses - only the blame attribution is entity-directed, not the stigma vocabulary; m131's proportional-vocabulary calibration still stands for the news register; Schoon owns the product he blames ("That's what sold me on it, and my pair has captured some really fun memories") - disappointed-owner register, not institutional hostility.
+- Rejected candidates this run: Kate Kozuch (Tom's Guide) Meta Connect 2026 - no Kozuch byline surfaced (pieces by Scott Younker/Ryan LeClair); Kozuch Apple Watch Series 12 - same; Tom's Guide Meta Connect 2026 hands-on - competitor arm unattainable fresh. Ben Schoon 9to5Google searches SELECTED (surfaced the Sep-20 Weekender and Sep-24 Connect piece with verbatim URLs; Samsung Android XR search corroborated the control-calibration context, no new arm needed). The Jul-23 Samsung/Google arm from m131 was NOT re-scored (already used in prior work, per the design constraint).
+
+### Statistical discipline
+MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone hand-assigned on the finding layer; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; scorer none; engine NOT run on the illustrative arms; no significance claimed; NOT artifact-grade; verdict directionally_supported_not_proven; no analysis.json update; correlation is not causation.
+
+### Test report
+61 tests, 16 classes in tests/test_type_b_1073_ben_schoon_9to5google_weekender_camera_stigma_blame_attribution_sep29_10am.py. Pre-commit: 58 green; 3 fail BY DESIGN (2 anchor-marked, deselected pre-commit per #565: ANCHORED_SHA_PENDING, no main commit yet; 1 iteration-log hash test per #721: needs the lowercase hash line the log-hash followup adds). Post-main-commit: the 2 anchor tests go green in the anchor followup; the iteration-log hash test goes green in the log-hash followup.
+
+### Commit hashes
+Main commit TBD; anchor followup TBD; log-hash followup TBD (all patched post-commit per #565/#721, verified via git rev-parse HEAD and git ls-remote).
+
+### Doc-sync ratchet
+README stats table 55049/1397 -> 55110/1398 (+61/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log.md #1073 entry prepended (this entry).
+
+### Push status
+TBD - pushed via the atomic proxy workflow; remote HEAD verified == local via git ls-remote.
+
+### Rotation guard
+1070-1074 window FOURTH leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1074 Type C (fifth and closing leg).
+
+### Guard lifecycle
+- Mechanism 875 LANDED this run (mechanism_id: 875 in profiles/careers/journalists.yaml under the new ben_schoon top-level key): the #1070/#1071/#1072 zero-875 numeric sweeps fail BY DESIGN (superseded per #710/#720, pinned by the #1075 Type D run).
+- Own-file guards: TestGuardLifecycle875Lands documents the landing (profiles max now 875; the numeric 875 sweep now finds profiles/careers/journalists.yaml; mechanism-key needles format-built per #715 with no new carriers; prior zero-875 expectations superseded by this landing; #1075 Type D pins/rolls the lifecycle; prior window files #1070/#1071/#1072 still pre-roll).
+- No prior test files edited; no mechanism-key needle carriers added.
+
+### Concurrency
+#899 (profiles/nytimes.yaml, modified in worktree), #938 (test file, modified in worktree), #900 (untracked test_type_d_900_m769 file), #1012 (test file, modified in worktree) all in-flight and untouched - targeted staging only (profiles/careers/journalists.yaml, the new tests/test_type_b_1073 file, README.md, docs/ARCHITECTURE.md, iteration-log.md).
+
+---
+
 ## #1072 Type A: Guardian x OpenAI Sep-28 Astra-cancellation safety-crisis register vs carried Guardian x Meta arms (mechanism 874) - FIRST dedicated Type A on the Guardian own Sep-28 Astra-cancellation coverage of the Feb-2025 licensing deal partner (relay-attested per #503; theguardian.com 2026-09-28 23:02:28 via biztoc); illustrative delta +0.15 (both arms hard, payer 0.15 softer); NOT a falsification-family member, ledger holds at 35; safety-crisis exemption EXTENSION: TEMPORAL REPLICATION of m871 + EXTENSION of m862; register follows the PEG not the entity
 
 Sep 29 2026, 09:00 PDT, iteration_type "A", **THIRD leg of the 1070-1074 window, CONTINUING it** (rotation rule D #1070 -> E #1071 -> A #1072 -> B -> C, anchor patched post-commit per #565).
