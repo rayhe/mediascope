@@ -337,22 +337,22 @@ class TestCorpusNoveltyPreCommitGreps:
         files = glob.glob(os.path.join(REPO, "tests", "*type_e_1056*"))
         assert len(files) == 1
 
-    def test_max_numeric_mechanism_id_864(self):
+    def test_max_numeric_mechanism_id_865(self):
         n7 = "mechanism" + "_id" + ":"
         maxid = 0
         for f in glob.glob(os.path.join(REPO, "profiles", "**", "*.yaml"), recursive=True):
             for m in re.finditer(n7 + r"\s*(\d+)", open(f, errors="ignore").read()):
                 maxid = max(maxid, int(m.group(1)))
-        # 864 in-tree: m862 committed at #1052 Type A, m863 at #1053
-        # Type B, m864 at #1054 Type C, all verified at #1055 Type D.
-        # Type E adds no mechanisms. (The in-flight #899 m771 hunk
-        # does not change the max.)
-        assert maxid == 864
+        # 865 in-tree: m862 committed at #1052 Type A, m863 at #1053
+        # Type B, m864 at #1054 Type C, all verified at #1055 Type D,
+        # m865 at #1057 Type A. Type E adds no mechanisms. (The
+        # in-flight #899 m771 hunk does not change the max.)
+        assert maxid == 865
 
     def test_zero_numeric_next_keys_in_profiles(self):
         # Next-number numeric form absent from profiles/ (format-built
         # needle per #715: no literal next-number key string carried).
-        d1 = "86" + "5"
+        d1 = "86" + "6"
         out = _git(["grep", "-nE", f"mechanism_id:[[:space:]]*{d1}([^0-9]|$)", "--", "profiles/"]).stdout
         assert out.strip() == ""
 

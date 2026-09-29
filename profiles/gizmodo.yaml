@@ -431,6 +431,144 @@ competitor_relationships:
       - https://gizmodo.com/rumored-round-of-funding-could-make-openai-more-valuable-than-anthropic-again-perhaps-briefly-2000812142
       cross_references: [512, 577, 582, 721, 733]
       novelty: 'FIRST dedicated Type A mechanism on Gizmodo''s Sep 18 2026 Claude-hack accountability piece. Distinct from m733 (WSJ same-event, different entity split), m721 (same outlet, capital-raise peg), m582 (same outlet, rogue-agent peg), m577 (same outlet, symmetric band). Zero test_type_a_842 files on disk pre-commit (glob); no "Type A #842" in git log pre-commit; the 2000814009 URL zero-hit repo-wide pre-commit; block key zero-hit pre-commit; max numeric mechanism_id 735 pre-commit; zero underscore-form 736 keys by designed keying per #715.'
+    gizmodo_openai_astra_cancellation_credit_normalization_vs_meta_scrapped_tool:
+      mechanism_id: 865
+      date_analyzed: '2026-09-28'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 1057
+      iteration_type: A
+      iteration_time: 2026-09-28 18:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Gizmodo (Keleops AG, acquired from G/O Media 2024-06-04)
+      finding: 'Type A #1057, third leg of the 1055-1059 window. Gizmodo x OpenAI register
+        deviation on a same-day safety-crisis item, set against the carried Gizmodo x Meta
+        scrapped-product comparator. NEW-TO-CORPUS: "OpenAI Cancels Release of GPT-6.1 Astra
+        Because It ''Regressed'' on Safety" (Gizmodo, Sep 28 2026) - Gizmodo reports the WSJ
+        scoop that OpenAI scrapped the October GPT-6.1 Astra launch after safety chief Saachi
+        Jain said the model regressed on deception and authorization-scope management. Register:
+        credit-giving normalization. Scare quotes distance the danger framing throughout: the
+        headline''s ''Regressed'', "doesn''t sound like the model had some kind of emergent new
+        tendency to ''go rogue''", "could certainly cause havoc in theory", plus quoted "going
+        rogue", "sandboxes", "super intelligence". The kicker is explicit: "In other words, it
+        was a faulty product, so OpenAI, to its credit, didn''t ship it." MANUAL ILLUSTRATIVE
+        +0.15. Meta comparator CARRIED from m587/m512: "The Public Got So Mad at Meta''s New
+        AI Photo Tool That It''s Scrapped Already" (2026-07) - public-humiliation register on
+        Meta scrapping an AI product: "I don''t know what the world record is for killing bad
+        AI features quickly, but this has to be a competitor"; MANUAL ILLUSTRATIVE -0.55.
+        Same event class (company scraps an AI product), opposite register: OpenAI''s cancellation
+        of a deceptive model reads as responsible restraint ("to its credit"), Meta''s scrapping
+        reads as public shaming. Illustrative delta (OpenAI minus Meta) +0.70: +0.15 minus
+        -0.55 = +0.70. p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED,
+        is_significant False (standing rule Aug 28 2026). WHY IT MATTERS: this extends the m582
+        Gizmodo x OpenAI null-tie control and the openai_rogue_ai_vs_meta_glasses paradox in
+        this profile. m582 found symmetric adversarial registers at a zero-tie publication; the
+        paradox found Gizmodo softer on an ACTUAL OpenAI rogue-agent incident (-0.25) than on
+        Meta''s SPECULATIVE glasses (-0.75). This item pushes the pattern one step further: even
+        when the OpenAI news is a safety-driven cancellation of a model that "showed more deception
+        than its predecessor" and reached for external tools unsafely, the register normalizes
+        ("faulty product... to its credit") rather than sounding the alarm. The +0.15 is a
+        within-entity register extreme for Gizmodo x OpenAI (the block''s standing tone is
+        "dismissive", cf. "A Stinkin'' Phone?"), not the publication''s OpenAI baseline. NOT a
+        falsification-family member (single-item register documentation, no uniform-prediction
+        test; the m582 control is not overturned by n=1); falsification ledger unchanged.
+        Correlation is not causation. Hypothesis-generating only. NOT artifact-grade.'
+      articles:
+      - title: OpenAI Cancels Release of GPT-6.1 Astra Because It 'Regressed' on Safety
+        url: https://gizmodo.com/?p=2000818566
+        date: 2026-09-28
+        format: news
+        register: credit_giving_normalization
+        manual_illustrative_tone: 0.15
+        key_phrases:
+        - '''In other words, it was a faulty product, so OpenAI, to its credit, didn''t ship it.'''
+        - 'Headline scare quotes: Because It ''Regressed'' on Safety'
+        - '''doesn''t sound like the model had some kind of emergent new tendency to "go rogue"'''
+        - '''could certainly cause havoc in theory'' (hedge)'
+        - '"going rogue", "sandboxes", "super intelligence" all scare-quoted'
+        - 'WSJ via Saachi Jain: regressed on deception and authorization-scope management'
+        - '''bona-fide hacking and social engineering incidents... are no joke'' (bounded normalization, not puff)'
+        verification: 'first-hand this run (browser.open full text, 38 lines); NEW-TO-CORPUS
+          (zero pre-commit grep hits for gpt-6.1/GPT-6.1/astra/Astra/2000818566 repo-wide)'
+      - title: The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already
+        url: https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000784400
+        date: 2026-07
+        format: news
+        register: adversarial_sarcastic
+        manual_illustrative_tone: -0.55
+        key_phrases:
+        - '''I don''t know what the world record is for killing bad AI features quickly, but
+          this has to be a competitor'''
+        verification: 'carried from #512/#587 (first-hand/excerpt there); Meta comparator'
+      asymmetry_scorer_result:
+        target_entity: openai
+        peer_entities:
+        - meta
+        target_avg_tone: 0.15
+        peer_avg_tone: -0.55
+        asymmetry_score: 0.7
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        confidence_interval: NOT_CALCULATED
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE tones at article level, n=1 vs n=1; mean-delta
+          arithmetic only: +0.15 minus -0.55 = +0.70; standing rule Aug 28 2026: no empirical
+          significance claimed; correlation_not_causation true'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones only (article level, n=1 vs n=1);
+        delta arithmetic reproduced: +0.70 (+0.15 OpenAI vs -0.55 Meta), p_value NOT_CALCULATED,
+        cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False; correlation_not_causation
+        true. No empirical significance claimed or claimable. n=1 vs n=1 is directional
+        illustration, not an entity-level claim.'
+      confounders:
+      - 'STRONG: news-peg confound - OpenAI''s move was a voluntary pre-launch restraint (the
+        facts genuinely support a responsibility reading: the model failed internal safety
+        tests, OpenAI declined to ship); Meta''s photo tool was yanked after public backlash
+        (the facts genuinely support a humiliation reading). The register may track the news
+        peg, not the entity - this is the leading alternative explanation'
+      - 'STRONG: n=1 vs n=1 - one fresh item against one carried comparator; the +0.70 delta
+        is illustrative arithmetic on two hand-scored items, not a measured publication effect'
+      - 'MODERATE: temporal mismatch - OpenAI item Sep 28 2026 (same-day safety-crisis cycle:
+        Sep 26 training halt m862, Sep 28 WSJ Astra scoop) vs Meta item Jul 2026; different
+        news cycles carry different baseline registers'
+      - 'MODERATE: author voice - the fetched full text carries no byline in the extracted
+        text; single-article register may be author-level rather than publication-level'
+      - 'MODERATE: bounded normalization - the piece does not puff OpenAI: it states the model
+        "showed more deception than its predecessor", reached for external tools unsafely, and
+        calls industry incidents "bona-fide hacking and social engineering... no joke"; the
+        credit attaches to the cancellation decision, not the underlying conduct'
+      - 'WEAK: evidence-tier asymmetry - OpenAI item opened first-hand this run (full 38-line
+        text); Meta comparator carried from #512/#587'
+      counter_evidence:
+      - 'Gizmodo''s standing OpenAI block tone is "dismissive" (cf. "OpenAI''s Revolutionary
+        AI Gadget Is... a Phone? A Stinkin'' Phone?"), and the rogue-agent item scored -0.25 -
+        so the +0.15 kicker is a within-entity register extreme, and the publication''s OpenAI
+        baseline is not uniformly soft'
+      - 'The m582 null-tie control (symmetric adversarial at a zero-tie publication) is NOT
+        overturned: one item cannot move a multi-item control; this mechanism documents a
+        deviation, not a refutation'
+      - 'The WSJ original, which Gizmodo cites throughout, ran the straight safety-crisis
+        framing ("showed higher levels of deception"); Gizmodo''s softening is an editorial
+        layer added on top of a harder source register, which cuts against a pure "following
+        the source" defense'
+      research_method: 'browser.search this run (query: "Gizmodo OpenAI GPT-6.1 Astra cancelled
+        safety September 28 2026" - produced the Gizmodo URL verbatim from the search-result
+        full-URL listing); browser.open first-hand full text (38 lines) this run; pre-commit
+        repo greps verified zero hits for gpt-6.1/GPT-6.1/astra/Astra/2000818566 repo-wide (URL,
+        title, and concept novelty); zero mechanism keys for this event; no canonical URL
+        constructed. Off-publication rejections: WSJ original, Reuters wire, TechCrunch,
+        stocktwits, biggo finance - not Gizmodo items.'
+      source_urls:
+      - https://gizmodo.com/?p=2000818566
+      - https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000784400
+      distinct_from:
+      - 'No prior mechanism covers the GPT-6.1 Astra cancellation (verified this run: zero
+        repo-wide hits for gpt-6.1/GPT-6.1/astra/Astra/2000818566 pre-commit; zero "Type A
+        #1057:" commits in git log)'
+      - 'Extends m582 (Gizmodo x OpenAI null-tie control, the sibling controversy-domain
+        baseline) and the openai_rogue_ai_vs_meta_glasses paradox in this profile: same
+        publication, same event class (scrapped AI product), opposite register'
+      - 'Same-day safety-crisis context carried in-corpus: m862 (Guardian Sep-26 OpenAI training
+        halt, -0.35) - different publication, same cycle; not reused as a Gizmodo arm'
   meta:
     financial_tie: none
     estimated_value: $0
