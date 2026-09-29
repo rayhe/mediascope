@@ -1,4 +1,4 @@
-## #1077 Type A: WIRED x OpenAI Sep-29 Astra-cancellation accountability register (Isabella Ward, -0.35 fresh) vs carried WIRED x Meta arms (m820 -0.45, m757 -0.30) - mechanism 877; illustrative deltas +0.10 / -0.05 near-null parity; safety-crisis exemption extended to the deal partner's own outlet; TEMPORAL EXTENSION of m712 (+0.15 to -0.35, swing -0.50) - Type A THIRD leg of the 1075-1079 window, CONTINUING it (Sep 29 2026, 14:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1077 Type A: WIRED x OpenAI Sep-29 Astra-cancellation accountability register (Isabella Ward, -0.35 fresh) vs carried WIRED x Meta arms (m820 -0.45, m757 -0.30) - mechanism 877; illustrative deltas +0.10 / -0.05 near-null parity; safety-crisis exemption extended to the deal partner's own outlet; TEMPORAL EXTENSION of m712 (+0.15 to -0.35, swing -0.50) - Type A THIRD leg of the 1075-1079 window, CONTINUING it (Sep 29 2026, 14:00 PDT; main commit 077d8d5e / anchor 97e5e5a4; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
 2026-09-29 14:00 PDT, iteration_type "A", **THIRD leg of the 1075-1079 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -24,7 +24,7 @@ Type A #1077 (mechanism 877) - WIRED x OpenAI Sep-29 Astra-cancellation accounta
 64 tests, 15 classes in tests/test_type_a_1077_wired_openai_sep29_astra_cancellation_accountability_register_vs_carried_meta_arms_sep29_2pm.py. Pre-commit: 54 green excluding the by-design set (4 doc-sync + 3 itlog), with 3 deselected (novelty-anchor 3 per #565, patched green in the anchor followup). Post-doc-sync re-run: 61 green + 3 deselected; anchor tests patched green in the anchor followup; itlog tests green in the log-hash followup.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit 077d8d5e (verified via git rev-parse); anchor followup 97e5e5a4 (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
 
 ### Doc-sync ratchet
 README stats table 55270/1401 -> 55334/1402 (+64/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1077 entry (this entry).
