@@ -18,7 +18,7 @@ MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone hand-assigned o
 62 tests, 15 classes in tests/test_type_a_1072_guardian_openai_sep28_astra_cancellation_safety_crisis_register_vs_carried_meta_arms_sep29_9am.py. Pre-commit: 52 green, 7 doc-sync/itlog by-design failures (README test-file row, README stats table, ARCHITECTURE.md tree row x2, iteration-log entry x3), 3 anchor deselected (ANCHORED_SHA_PENDING). Post doc-sync: full 62/62 green expected after anchor followup patches ANCHORED_SHA and runs -m "" (anchor marks included).
 
 ### Commit hashes
-Main commit TBD; anchor followup TBD; log-hash followup TBD (all patched post-commit per #565/#721, verified via git rev-parse).
+Main commit a16c216e (a16c216e97eac6beb5e6d2572e7d115cced6c825, verified via git rev-parse); anchor followup 0df19bbe (0df19bbe402dbe129d9cb96345dabe9a698ea520, verified via git rev-parse); log-hash followup LOGHASH_TBD (patched post-commit per #565/#721).
 
 ### Doc-sync ratchet
 README stats table 54987/1396 -> 55049/1397 (+62/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log.md #1072 entry prepended.
