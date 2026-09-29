@@ -1,3 +1,48 @@
+## #1077 Type A: WIRED x OpenAI Sep-29 Astra-cancellation accountability register (Isabella Ward, -0.35 fresh) vs carried WIRED x Meta arms (m820 -0.45, m757 -0.30) - mechanism 877; illustrative deltas +0.10 / -0.05 near-null parity; safety-crisis exemption extended to the deal partner's own outlet; TEMPORAL EXTENSION of m712 (+0.15 to -0.35, swing -0.50) - Type A THIRD leg of the 1075-1079 window, CONTINUING it (Sep 29 2026, 14:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+
+2026-09-29 14:00 PDT, iteration_type "A", **THIRD leg of the 1075-1079 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1075-1079 window THIRD leg CONTINUING it (D #1075 -> E #1076 -> A #1077 -> B -> C, rotation per #565 anchor + rotation guard)
+- Predecessor #1076 Type E: main d216984d, anchor 3c79533d, log-hash 47f0f446 (all verified present via git cat-file before this run's commit); #1075 OPENED the 1075-1079 window
+- Pre-commit novelty greps: zero test_type_a_1077 files on disk (glob); no "Type A #1077" in git log (--grep); max numeric mechanism_id 876 in-tree pre-commit (m874/m875/m876 committed at #1072/#1073/#1074 Type A/B/C, verified at #1075 Type D; Type E adds no mechanisms); zero numeric 877 mechanism_id keys in profiles/ (mechanism_id regex sweep); zero underscore-form and dash-form 877 mechanism key strings repo-wide pre-commit (needles format-built per #715); THIRTY-SIXTH member-form absent in profiles/ pre-commit. Isabella Ward in-corpus (journalists.yaml, Bloomberg-to-WIRED June 2026 migration) - byline corroboration, not novelty. ASCII-only, no em dashes.
+- Next run #1078 Type B continues the window.
+
+### Finding summary
+Type A #1077 (mechanism 877) - WIRED x OpenAI Sep-29 Astra-cancellation accountability register vs carried WIRED x Meta arms.
+- NEW OpenAI arm (excerpt-tier, relay-attested per #503): WIRED original by Isabella Ward, Business section, Sep 29 2026 6:36 AM - 'OpenAI Delays Release of Latest Model Over Safety Concerns'. Excerpt register: accountability on the licensing deal partner - Astra 6.1 'failed to meet safety standards', 'worse at sticking to human users values and goals than previous systems, OpenAI told WIRED'; apology for the Australian government website hack handling; DevDay-eve timing. MANUAL ILLUSTRATIVE -0.35 (peg-consistent with m874 Guardian -0.35 and m871 BI -0.35 on the same Astra peg). Mirror: https://wesearch.press/s/openai-delays-release-of-latest-model-over-safety-concerns-11bacbdf (WIRED attribution, 'Photo-Illustration: Wired Staff'); relay: https://www.aob-news.com/2026/09/29/openai-delays-release-of-latest-model-over-safety-concerns/. WSJ first broke the cancellation Sep 28 (scoop-origin context); Reuters neutral wire.
+- Meta arms carried un-rescored per #807: m820 WIRED Sep-23 Ashworth 'Meta Pinky Promises Its Smart Glasses Will Be Private Soon' (-0.45, skepticism-on-positive-news); m757 WIRED Sep-11 Mehrotra 'Meta Sued Over Training Data for Its AI and Face-Recognition Systems' (-0.30, adversarial legal).
+- Illustrative deltas (OpenAI minus Meta): +0.10 primary / -0.05 secondary - near-null parity. WIRED applies the accountability register to the deal partner's safety failure at the same hardness it applies to Meta's privacy and legal news.
+- TEMPORAL EXTENSION of m712: WIRED's Sep-16 company-briefed platform relay (+0.15) swings to -0.35 in 13 days (within-entity -0.50); register follows the PEG (self-disclosure framework vs safety failure), not the entity and not the deal. Cross-outlet temporal replication of the m871/m874/m862 safety-crisis lineage at the deal partner's own outlet.
+- Byline note: Isabella Ward (Bloomberg to WIRED June 2026, Business desk, physics MSci) - business-journalism institutional DNA; the accountability register here comes from the business-desk newcomer, not the watchdog desk.
+- Cross-outlet register divergence on the Astra peg: WSJ hardest (scoop-originator), Reuters neutral wire, WIRED/Guardian/BI middle-hard band (-0.35 each). WIRED not the softest; the m712 briefing-access softness does not carry to un-briefed news coverage.
+- Confounders ranked strong-first: STRONG excerpt-tier (title/dek/120-word mirror excerpt only; WIRED paywalled); STRONG disclosure-peg mismatch (OpenAI's own safety disclosure vs Meta privacy-pledge/class-action pegs); STRONG briefing-access confound (m712 was a briefed exclusive; the -0.50 swing may be briefing-access, not peg-type); MODERATE temporal skew; MODERATE n=1 degenerate sample; MODERATE byline-desk confound; WEAK mirror-attribution risk. Counter-evidence 4: m712 briefed relay shows the exemption is conditional; the piece leads with OpenAI's own framing (partially company-voice); m802's privacy-guide inversion direction not stable across lanes; -0.35 still softer than WIRED's hardest Meta glasses arms (-0.55).
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade. NOT a falsification-family member (register pair + temporal replication, no uniform-prediction test); ledger holds at 35. Correlation is not causation. Hypothesis-generating only. ASCII-only, no em dashes.
+- Research method: 2 browser.search query sets this run (WIRED OpenAI Astra cancellation - SELECTED the Ward Sep-29 WIRED original via the wesearch.press mirror; WIRED GPT-6.1 Astra scrapped - corroborating WSJ scoop-origin, Reuters wire, aob-news relay). 0 browser.open per #503. Pre-commit novelty greps per #715 (see rotation transparency). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.
+
+### Test report
+64 tests, 15 classes in tests/test_type_a_1077_wired_openai_sep29_astra_cancellation_accountability_register_vs_carried_meta_arms_sep29_2pm.py. Pre-commit: 54 green excluding the by-design set (4 doc-sync + 3 itlog), with 3 deselected (novelty-anchor 3 per #565, patched green in the anchor followup). Post-doc-sync re-run: 61 green + 3 deselected; anchor tests patched green in the anchor followup; itlog tests green in the log-hash followup.
+
+### Commit hashes
+Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+
+### Doc-sync ratchet
+README stats table 55270/1401 -> 55334/1402 (+64/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1077 entry (this entry).
+
+### Push status
+Push status (this run, Sep 29 2026 ~14:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+
+### Rotation guard
+1075-1079 window THIRD leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1078 Type B continues the window.
+
+### Guard lifecycle
+- Mechanism 877 lands THIS run (profiles/wired.yaml, max numeric mechanism_id 876 -> 877). The #1075/#1076 zero-877 forward-looking guards fail BY DESIGN from this commit; supersession documented per #710/#720. The next Type D run (#1080) pins the zero-878 guards.
+- Own-file guards: TestGuardLifecycle877Lands documents the landing (mechanism_id: 877 in profiles/wired.yaml; max == 877; window files still pin 876 pre-roll; zero-877 numeric sweep superseded by design).
+- No prior test files edited; no mechanism-key needle carriers added.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
 ## #1076 Type E: podcast sentiment 138th verification - GF EPISODE 502 HOLDS as latest (fifth Type E verification since the Sep 28 11:00am release, ~50 hours after publication; NO 503 surfaced), EHE 51-day hold (FIVE logged keys re-surfaced, ZERO new EHE keys), Attention Sphere 138th no-match as a podcast (blob SURFACED AGAIN + the same 6 commit URLs as the #1001-#1071 cycles, git-cat-file-verified circular; Tracked Sources 137->138), press SIX in-corpus re-surfaces (thesun.ie Boz piece new at #1071 now re-surfacing) + ZERO new-to-corpus URL keys (the all-key pure-re-surface streak RESTARTS at one); Recency frontier: HOLDS at Sep 29; guard-lifecycle: the #1075 Type D run pins MAX_ID 876 / NEXT_NUM 877, zero-877 guards PASS this run (fail BY DESIGN when mechanism 877 lands at a future A/B/C leg) - Type E SECOND leg of the 1075-1079 window, CONTINUING it (Sep 29 2026, 13:00 PDT; main commit d216984d / anchor 3c79533d; log-hash followup registers both hashes here per #721 (this commit: 47f0f446966856a1e35361bed32366248b13db91))
 
 2026-09-29 13:00 PDT, iteration_type "E", **SECOND leg of the 1075-1079 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

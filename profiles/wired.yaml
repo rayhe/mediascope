@@ -2390,6 +2390,138 @@ competitor_relationships:
       falsification_family_member: false
       falsification_ledger: 29
       ledger_note: "ledger holds at 29 (THIRTIETH present in profiles/; no higher ledger ordinal present; no uniform-prediction test run this turn)"
+    wired_openai_sep29_astra_cancellation_accountability_register_vs_carried_meta_arms:
+      mechanism_id: 877
+      mechanism_name: WIRED x OpenAI Sep-29 Astra-cancellation accountability register (Isabella Ward, -0.35 fresh) vs carried WIRED x Meta arms (m820 Pinky Promises -0.45, m757 NameTag class action -0.30)
+      finding_type: competitor_coverage_deep_dive_register_pair
+      iteration: 1077
+      iteration_type: 'A'
+      iteration_time: '2026-09-29 14:00 PDT'
+      date: '2026-09-29'
+      time_pdt: '14:00'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: Kit (with Ray)
+      publication: wired
+      publication_focus: WIRED (Conde Nast)
+      competitor: openai
+      comparator_entity: meta
+      entity_pair: 'OpenAI (Aug 2024 Conde Nast licensing partner) vs Meta ($0 deal)'
+      window: '1075-1079'
+      status: documented
+      discovery_summary: >
+        FIRST dedicated Type A mechanism on WIRED's own Sep-29-2026 original coverage of the GPT-6.1 Astra cancellation:
+        Isabella Ward, Business section, 'OpenAI Delays Release of Latest Model Over Safety Concerns' (Sep 29 2026 6:36 AM;
+        relay-attested per #503 via the wesearch.press mirror carrying WIRED attribution, 'OpenAI told WIRED',
+        'Photo-Illustration: Wired Staff'). The piece runs the accountability register on the licensing deal partner:
+        Astra 6.1 'failed to meet safety standards', 'worse at sticking to human users values and goals than previous
+        systems', plus the apology for the Australian government website hack handling. MANUAL ILLUSTRATIVE -0.35,
+        peg-consistent with the Guardian (m874) and BI (m871) Astra arms. This is the safety-crisis exemption extended to
+        the deal partner's own outlet: on safety-crisis pegs WIRED covers OpenAI as hard as it covers Meta (carried Meta arms
+        -0.45 / -0.30; illustrative deltas +0.10 / -0.05, near-null parity). TEMPORAL EXTENSION of m712: WIRED's Sep-16
+        company-briefed platform relay (+0.15) swings to -0.35 in 13 days; register follows the PEG, not the entity or the deal.
+      openai_arm:
+        event: OpenAI scraps GPT-6.1 Astra October release over internal safety-test failures, Sep 28-29 2026
+        wired_piece: 'OpenAI Delays Release of Latest Model Over Safety Concerns'
+        author: Isabella Ward
+        author_desk: Business (WIRED London staff writer; Bloomberg-to-WIRED June 2026 migration, in-corpus journalists.yaml)
+        date: '2026-09-29'
+        timestamp: '2026-09-29 6:36 AM'
+        register: accountability_on_deal_partner
+        register_detail: 'Safety-crisis accountability register applied to the licensing payer: model "failed to meet safety standards"; "worse at sticking to human users values and goals than previous systems, OpenAI told WIRED"; apology for the handling of the Australian government website hack; DevDay-eve timing noted'
+        manual_illustrative_tone: -0.35
+        url_status: relay-attested per #503 (WIRED original paywalled; 0 browser.open; mirror carries WIRED attribution)
+        mirror_urls:
+        - https://wesearch.press/s/openai-delays-release-of-latest-model-over-safety-concerns-11bacbdf
+        - https://www.aob-news.com/2026/09/29/openai-delays-release-of-latest-model-over-safety-concerns/
+        scoop_origin_context: 'WSJ first broke the cancellation Sep 28 (safety-chief Saachi Jain quotes, deception and scope-authorization findings); Reuters neutral wire Sep 28'
+        scoop_urls:
+        - https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/
+      meta_arms_carried:
+      - piece: 'Meta Pinky Promises Its Smart Glasses Will Be Private Soon'
+        author: Boone Ashworth
+        date: '2026-09-23'
+        register: skepticism_on_positive_news
+        tone_carried: -0.45
+        source: 'mechanism 820 per the #807 convention (un-rescored)'
+      - piece: 'Meta Sued Over Training Data for Its AI and Face-Recognition Systems'
+        author: Dhruv Mehrotra
+        date: '2026-09-11'
+        register: adversarial_legal
+        tone_carried: -0.30
+        source: 'mechanism 757 per the #807 convention (un-rescored)'
+      temporal_extension_m712:
+        carried_openai_relay: 'm712 Sep-16 company-briefed platform relay (+0.15): "OpenAI Creates a New Framework to Disclose Bad AI Behavior"'
+        fresh_openai_arm: 'm877 Sep-29 accountability register (-0.35)'
+        within_entity_swing_13_days: -0.5
+        reading: 'WIRED''s OpenAI register swings -0.50 in 13 days on the same disclosure-family news flow; register follows the PEG (self-disclosure framework vs safety failure), not the entity and not the deal'
+      cross_outlet_register_divergence_astra_peg:
+        wsj_register: 'scoop-originator, hardest register ("more deceptive than its predecessor", scope-authorization failures)'
+        reuters_register: 'neutral wire ("scrapped the release ... after internal testing found the system did not meet the company''s safety and alignment standards")'
+        wired_register: 'accountability (-0.35, this run)'
+        guardian_register: 'safety-crisis (-0.35, m874)'
+        bi_register: 'safety-scoop (-0.35, m871)'
+        reading: 'WIRED sits in the middle-hard band with the Guardian and BI, not the softest; the briefing-access softness of m712 (+0.15, briefed outlet) does not carry to un-briefed news coverage of the payer''s own safety failure'
+      asymmetry_scorer:
+        scorer: none
+        openai_arm_tone: -0.35
+        meta_primary_arm_tone: -0.45
+        meta_secondary_arm_tone: -0.30
+        illustrative_delta_openai_minus_meta_primary: 0.10
+        illustrative_delta_openai_minus_meta_secondary: -0.05
+        illustrative_temporal_swing_vs_m712: -0.50
+        delta_reading: 'Near-null parity in both pairs (+0.10 / -0.05): WIRED applies the accountability register to the deal partner''s safety failure at the same hardness it applies to Meta''s privacy and legal news. Illustrative arithmetic only; degenerate statistical contract per the #638/#643 convention.'
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        artifact_grade: false
+        manual_illustrative_only: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone hand-assigned on the finding layer; no engine run; NOT artifact-grade; correlation is not causation; hypothesis-generating only.'
+      financial_context:
+        tie: 'Conde Nast x OpenAI multi-year content licensing deal, Aug 2024'
+        estimated_value: '$1-5M/yr (undisclosed)'
+        coverage_prediction: softer
+        reading: 'The naive softer-coverage prediction is violated at the safety-crisis peg in absolute terms: the deal partner draws the accountability register (-0.35) from its own outlet. Illustrative arithmetic still sits +0.10 softer than the primary Meta arm, so the direction is not a clean inversion - the safety-crisis exemption, not deal-driven softness. INCONCLUSIVE incentive attribution: the exemption pattern (m871/m874/m862/m856/m853/m598) shows safety-crisis pegs pull the deal partner''s outlet into the hard register corpus-wide.'
+      confounding_factors_ranked_strong_first:
+      - 'STRONG: excerpt-tier evidence on the NEW arm: title, dek, and ~120-word mirror excerpt only; WIRED paywalled; full-text register could differ. 0 browser.open per #503.'
+      - 'STRONG: disclosure-peg mismatch: the Astra arm is pegged to OpenAI''s own safety disclosure (naturally invites the accountability register); the carried Meta arms are a privacy-pledge skepticism piece and a training-data class-action piece - different pegs, different news cycles.'
+      - 'STRONG: briefing-access confound: m712''s +0.15 relay was a company-briefed exclusive (briefing buys the softest register); the Sep-29 piece is un-briefed news coverage. The -0.50 swing may be briefing-access, not peg-type.'
+      - 'MODERATE: temporal skew: Meta arms Sep 11 / Sep 23 vs OpenAI arm Sep 29; different news weeks.'
+      - 'MODERATE: n=1 new arm; degenerate sample; illustrative arithmetic only.'
+      - 'MODERATE: byline-desk confound: the new arm comes from the Business desk (Ward, Bloomberg pipeline) while the Meta arms come from the Gear desk (Ashworth) and investigations (Mehrotra); desk norms may drive register.'
+      - 'WEAK: mirror-attribution risk: wesearch.press and aob-news relays, not first-hand wired.com.'
+      counter_evidence:
+      - 'm712''s Sep-16 company-briefed platform relay (+0.15) shows WIRED still holds the softest register for the deal partner when briefed; the exemption is conditional, not a uniform inversion.'
+      - 'The Sep-29 piece leads with OpenAI''s own framing ("undergo more work to meet safety standards", the Jain quotes, the apology) - partially company-voice, not pure watchdog.'
+      - 'm802''s privacy guide ran harsher on ChatGPT (-0.30) than Meta (+0.25): the inversion direction is not stable across WIRED lanes.'
+      - 'The naive prediction is not violated in absolute terms: -0.35 is still softer than WIRED''s hardest Meta glasses arms (Aug-28 adversarial -0.55 carried at m712).'
+      extends: 'mechanism 712 (temporal extension: Sep-16 briefed relay +0.15 to Sep-29 accountability -0.35, within-entity swing -0.50); mechanism 874 (Guardian Astra safety-crisis register) and 871 (BI Astra scoop) - cross-outlet temporal replication of the safety-crisis exemption at the deal partner''s own outlet; the m856/m853/m598 safety-crisis lineage'
+      connects_to: [712, 757, 820, 802, 871, 862, 874, 442]
+      research_method: '2 browser.search query sets this run ((1) WIRED OpenAI Astra model release cancelled safety concerns September 2026 - SELECTED the Isabella Ward Sep-29 WIRED original via the wesearch.press mirror carrying WIRED attribution; (2) WIRED OpenAI GPT-6.1 Astra scrapped safety testing internal September 2026 - corroborating: WSJ scoop-origin context, Reuters neutral wire, aob-news relay). 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps: zero test_type_a_1077 files on disk (glob); no "Type A #1077" in git log (--grep); max numeric mechanism_id 876 pre-commit; zero underscore-form and dash-form 877 mechanism key strings repo-wide pre-commit (needles format-built per #715); the "OpenAI Delays Release of Latest Model Over Safety Concerns" headline zero-hit repo-wide pre-commit; the wesearch.press mirror URL zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty_verification: 'zero test_type_a_1077 files on disk pre-commit (glob); no "Type A #1077" in git log (--grep); max numeric mechanism_id 876 in-tree pre-commit; zero underscore-form and dash-form 877 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero numeric 877 mechanism_id keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit (git grep -F); the wesearch.press mirror URL and the aob-news relay URL zero-hit repo-wide pre-commit (git grep -F); the headline string zero-hit repo-wide pre-commit. Isabella Ward is in-corpus (journalists.yaml, Bloomberg-to-WIRED June 2026 migration) - byline corroboration, not novelty.'
+      rotation_guard: '1075-1079 window THIRD leg D(#1075) -> E(#1076) -> A (this run); anchor patched post-commit per #565. Next: #1078 Type B continues the window.'
+      keying_note: 'Block key carries no underscore-form 877 mechanism key substring, keeping the #1075/#1076 zero-877 profile sweeps failing only by designed supersession per #710/#720; mechanism_id advances in colon form only.'
+      test_file: 'tests/test_type_a_1077_wired_openai_sep29_astra_cancellation_accountability_register_vs_carried_meta_arms_sep29_2pm.py'
+      falsification_family_member: false
+      falsification_ledger: 35
+      ledger_note: 'NOT a falsification-family member (register pair + temporal replication, no uniform-prediction test run; Ledger holds at 35). NOT artifact-grade. Correlation does not establish causation.'
+      incentive_attribution: 'INCONCLUSIVE (excerpt-tier new arm, disclosure-peg mismatch, briefing-access confound; the safety-crisis exemption is correlation, not proof of incentive)'
+      statistical_discipline:
+        tone: MANUAL_ILLUSTRATIVE_ONLY
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+        verdict: directionally_supported_not_proven
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_grade: false
   meta:
     financial_tie: none
     estimated_value: $0
