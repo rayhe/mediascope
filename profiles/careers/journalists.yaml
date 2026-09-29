@@ -22793,6 +22793,7 @@ james_pero:
   - 806
   - 818
   - 833
+  - 869
   source_urls:
   - https://gizmodo.com/snaps-do-or-die-moment-in-ar-has-arrived-2000813560
   - https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
@@ -22807,6 +22808,8 @@ james_pero:
   - https://gizmodo.com/snap-specs-hands-on-dorky-fun-and-potentially-too-ambitious-2000811952
   - https://gizmodo.com/meta-luna-smart-glasses-may-drastically-tone-down-the-creep-factor-2000812613
   - https://gizmodo.com/metas-new-quest-is-actually-a-pair-of-vr-glasses-2000816098
+  - https://gizmodo.com/vr-headsets-are-so-cooked-2000817445
+  - https://gizmodo.com/meta-smart-glasses-public-perception-2000818140
   competitor_coverage:
     type_b_858_james_pero_gizmodo_snap_do_or_die_launch_window_fourth_entity_extension:
       iteration: 858
@@ -23249,7 +23252,7 @@ james_pero:
         carried_per: '#807 (un-rescored)'
         title: 'Meta Introduces Audio-Only Smart Glasses to Avoid the ''Perv'' Problem'
         url: https://gizmodo.com/meta-introduces-audio-only-smart-glasses-to-avoid-the-perv-problem-2000815782/embed
-        date: 2026-09-23
+        date: '2026-09-23'
         tone_score: -0.20
         tone_basis: 'MANUAL ILLUSTRATIVE from #958: camera-free product, yet the privacy-accusation frame persists in the headline and dek (''Perv'' Problem, ''glasshole''); the objection moves from hardware to brand.'
       finding: 'Pero routes the two brands through different registers on the same attribute (face-hardware social acceptability): Snap''s conspicuous bulk gets anatomy comedy (+0.10 illustrative: ''big, chunky, comically large'' converted to ''J*ear*nalism'' field reporting, a gentle ''weighty but not ear-bendy'' verdict, and engineering sympathy for the standalone face computer); Meta''s camera-free Audio gets the sexualized public-stigma headline (-0.20 illustrative carried, m806: ''Avoid the ''Perv'' Problem'', ''glasshole''). Illustrative Snap-minus-Meta delta +0.30 (0.10 - (-0.20)), same direction as m791 (-0.65) and the m806 Snap comparison (-0.55). This EXTENDS m806/m791 temporally and on register: the entity-selective framing holds on the stigma attribute even when the new arm is Snap-physical and the carried arm is Meta-camera-free. The claim is bounded by m818 (category-bound within Meta; no journalist-global hostility claim) and by m746/m933 (the playful-Snap register itself replicates). Correlation only, not causation. Verdict directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; no analysis.json update.'
@@ -23306,6 +23309,113 @@ james_pero:
         iteration: 1003
         type: 'B'
         date: '2026-09-25 22:00 PDT'
+    type_b_1063_james_pero_gizmodo_vr_headsets_cooked_enthusiasm_vs_pr_cleanup_adversarial_sep29:
+      iteration: 1063
+      mechanism_id: 869
+      type: B
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: 2026-09-29 00:00 PDT
+      block_key: type_b_1063_james_pero_gizmodo_vr_headsets_cooked_enthusiasm_vs_pr_cleanup_adversarial_sep29
+      author: Kit (with Ray)
+      journalist: James Pero
+      publication: Gizmodo (Keleops AG)
+      design: 'Type B journalist cross-entity tracking, within-journalist WITHIN-ENTITY register split: James Pero (Gizmodo) on Meta''s Sep-2026 hardware across two product categories: the Sep-25 VR glasses hands-on (enthusiastic gadget register) versus the Sep-28 smart-glasses PR/privacy analysis (adversarial remediation register). TEMPORAL REPLICATION of mechanism 818 with fresh arms. Tests whether Pero''s register follows the product category and news peg rather than a uniform anti-Meta stance. Three-day, same-writer, same-outlet, same Meta Connect window. Useful counterevidence against broad entity-level bias claims.'
+      new_vr_arm:
+        title: VR Headsets Are So Cooked
+        url: https://gizmodo.com/vr-headsets-are-so-cooked-2000817445
+        date: '2026-09-25'
+        byline: 'James Pero (bounded attribution: author-page listing at gizmodo.com/author/jpero carrying both pieces, plus a WeSearch record naming James Pero, Sep 25 2026 18:45 UTC, with the canonical Gizmodo URL; explicit rendered byline header not surfaced in tool render, bounded per iteration-492)'
+        publication: Gizmodo (Keleops AG)
+        genre: first-person hands-on demo feature (Meta Connect)
+        key_quotes:
+        - 'the promise feels real'
+        - 'good news for the future of VR'
+        - 'Meta VR Glasses do things "better"'
+        - 'really sharp, really clear'
+        - 'no noticeable lag'
+        - 'both hand and eye tracking were very snappy'
+        - 'VR glasses are the thing I want'
+        register_notes: 'Unreserved enthusiasm for the Meta VR glasses demo; genuine hardware caveats noted (70-degree field of view versus the Quest 3''s 110 degrees, possible light bleed, price); acknowledges Meta''s VR pullback and layoffs without letting it sour the demo verdict.'
+        tone_score: 0.50
+        tone_basis: hand-assigned this run from the full first-hand read of the canonical article, MANUAL ILLUSTRATIVE
+        evidence_tier: 'full-text first-hand this run (1 browser.open of the canonical article; body text read end to end)'
+        byline_attribution_urls:
+        - https://gizmodo.com/author/jpero
+        - https://wesearch.press/s/vr-headsets-are-so-cooked-1f81c927
+      smart_glasses_arm:
+        mechanism_note: 'read first-hand this run (not carried); both arms are Sep-2026 first-hand reads'
+        title: 'Meta''s Smart Glasses PR Cleanup Campaign Is in Full Swing'
+        url: https://gizmodo.com/meta-smart-glasses-public-perception-2000818140
+        date: '2026-09-28'
+        byline: 'James Pero (bounded attribution: author-page listing at gizmodo.com/author/jpero; explicit rendered byline header not surfaced in tool render, bounded per iteration-492)'
+        publication: Gizmodo (Keleops AG)
+        genre: privacy/PR analysis (desk analysis, not hands-on)
+        key_quotes:
+        - 'Meta is finally feeling the heat'
+        - 'conspicuous'
+        - 'palpable'
+        register_notes: 'Adversarial PR-campaign framing: the camera-free glasses and Private Processing are read as privacy-remediation theater; celebrity ambassadors are read as perception management aimed at the pervert perception; Connect is read as a persuasion effort. The piece credits the privacy measures as real, which bounds the negativity.'
+        tone_score: -0.30
+        tone_basis: hand-assigned this run from the full first-hand read of the canonical article, MANUAL ILLUSTRATIVE
+        evidence_tier: 'full-text first-hand this run (1 browser.open of the canonical article; body text read end to end)'
+        byline_attribution_urls:
+        - https://gizmodo.com/author/jpero
+      finding: 'Three-day, same-writer, same-outlet, same Meta Connect window: Pero is enthusiastic about Meta''s VR glasses (+0.50 illustrative) and adversarial about Meta''s smart-glasses PR handling (-0.30 illustrative). Illustrative delta +0.80 (0.50 - (-0.30)), same direction as m818 (+0.60). This REPLICATES m818''s category-bound register split with fresh Sep-25/28 arms: the register follows product category and news peg (hands-on demo vs privacy analysis), not a uniform anti-Meta stance. Useful counterevidence against broad entity-level bias claims. Verdict directionally_supported_not_proven; MANUAL ILLUSTRATIVE only; engine NOT run; no analysis.json update. Correlation only, not causation.'
+      asymmetry_scorer_result:
+        new_vr_arm_tone_manual_illustrative: 0.50
+        smart_glasses_arm_tone_manual_illustrative: -0.30
+        illustrative_delta_vr_minus_smart_glasses: 0.80
+        delta_calc: '0.50 - (-0.30) = 0.80'
+        artifact_grade: false
+        target_entity: meta
+        reference_entity: meta
+        publication: gizmodo
+        interpretation: 'Directionally consistent with m818 (VR enthusiasm +0.40 vs Audio stigma -0.20, illustrative +0.60): Pero''s within-Meta register is category-bounded (VR face-computer vs social glasses), not brand-global. The refinement over m818: the VR-side enthusiasm is higher on a full demo (+0.50 vs +0.40) and the smart-glasses-side adversarialism now targets PR handling rather than the product itself - the adversarial load moved from hardware to brand management.'
+        limitations: 'n=1 per arm (degenerate); genre difference (hands-on demo feature vs privacy/PR analysis) is the strongest confounder; product-category confound (VR vs social glasses, different bystander-risk profiles); full verdict in statistical_discipline.'
+        statistical_contract: degenerate_n1_per_arm
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci: NOT_CALCULATED
+        is_significant: false
+      manual_illustrative_tones_note: 'MANUAL ILLUSTRATIVE: VR arm +0.50 and smart-glasses PR arm -0.30 hand-assigned this run from full first-hand reads of both canonical articles. Not empirical measurements; documented for reproducibility and challenge.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per standing rule Aug 28 2026. n=1 per arm (degenerate). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; confidence interval NOT_CALCULATED; is_significant False. The asymmetry scorer engine NOT run at the finding layer; illustrative delta only (+0.80); not evidence of bias or of financial influence; documents the analyst reading for reproducibility and challenge. verdict directionally_supported_not_proven. Correlation is not causation; n=1 vs n=1 is directional, not dispositive.'
+      verdict: 'directionally_supported_not_proven'
+      cautious_language_required: true
+      correlational_note: 'This mechanism documents one journalist''s register split across two Sep-2026 Meta pieces in different product categories. Register differences are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. No causal claim. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      not_artifact_grade: true
+      falsification_family_member: false
+      falsification_ledger: 35
+      falsification_note: 'NOT a falsification-family member (m818 already tested and falsified the uniform brand-directed prediction; this is a temporal replication, not a new uniform-prediction test); falsification ledger holds at 35 (THIRTY-FIFTH present, THIRTY-SIXTH absent in profiles/).'
+      confounders:
+      - '[STRONG] Product-category confound: VR face-computers and social smart glasses are different product classes with genuinely different bystander-risk profiles; the register difference may track the category, not the writer.'
+      - '[STRONG] Genre confound: hands-on demo feature (access, enthusiasm by assignment) vs privacy/PR analysis (adversarial by assignment); genre may fully explain the delta.'
+      - '[STRONG] Hands-on access differential: demo access naturally elevates enthusiasm; the PR piece is desk analysis with no product in hand.'
+      - '[MODERATE] n=1 per arm, degenerate sample; the claim rides on the m818 replication, not this pair alone.'
+      - '[MODERATE] Temporal order: the enthusiastic piece (Sep 25) precedes the critical piece (Sep 28); Connect-week news-cycle dynamics may drive tone.'
+      - '[WEAK] Byline bounded per iteration-492: no rendered byline header surfaced in tool extraction; attribution via author-page listing plus WeSearch record.'
+      counterevidence:
+      - 'The VR piece still discusses Meta''s VR pullback and layoffs plus genuine hardware limits (70-degree FOV, possible light bleed, price) - the enthusiasm is product-scoped, not uniform.'
+      - 'The PR Cleanup piece credits the privacy measures as real (camera-free glasses, Private Processing) - the adversarialism is frame-scoped, not fact-denying.'
+      - 'The same journalist demonstrably praises and criticizes Meta within three days - evidence against a fixed anti-Meta stance.'
+      strongest_counterargument: 'The register difference is fully explained by genre, category, and access, not by any writer-level stance: a hands-on demo of genuinely impressive hardware gets enthusiasm from any competent tech writer, and a privacy analysis of a PR remediation campaign gets adversarialism from the same writer. The +0.80 illustrative delta compares two different assignments (demo feature vs PR analysis) in two different product categories (VR vs social glasses), not a controlled contrast. The cleanest reading remains genre-and-category-first; the m818 replication only shows the pattern is stable, not that it is writer-driven.'
+      connects_to: [818, 806, 791, 746, 211, 269, 743]
+      extends: 'TEMPORAL REPLICATION of mechanism 818 (Sep-24 VR enthusiasm +0.40 vs Audio stigma -0.20, illustrative delta +0.60) with fresh Sep-25/28 arms and a wider illustrative delta (+0.80): the category-bound register split replicates. Refines 818: the VR-side enthusiasm is higher on a full demo (+0.50 vs +0.40) and the smart-glasses-side adversarialism now targets PR handling rather than the product itself - the adversarial load moved from hardware to brand management.'
+      novelty: 'FIRST dedicated corpus mechanism on Pero''s Sep-25-2026 "VR Headsets Are So Cooked" VR-glasses demo piece and Sep-28-2026 "Meta''s Smart Glasses PR Cleanup Campaign Is in Full Swing" privacy/PR analysis. Zero test_type_b_1063 files on disk (glob); no "Type B #1063" in git log (--grep); max numeric mechanism_id 868 in-tree pre-commit; zero numeric 869 mechanism_id keys in profiles/ pre-commit; zero underscore-form 869 mechanism key strings repo-wide pre-commit (needles format-built per #715); block key `type_b_1063_james_pero_gizmodo_vr_headsets_cooked_enthusiasm_vs_pr_cleanup_adversarial_sep29` zero-hit repo-wide pre-commit; both evidence URLs zero-hit repo-wide pre-commit (grep). All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Candidate selection: within-journalist within-entity contrast on Pero, replicating m818 with fresh arms. 2 browser.open successes this run (both canonical Gizmodo articles, full first-hand reads); 0 browser.open failures. Byline bounded per iteration-492 (author-page listing at gizmodo.com/author/jpero plus a WeSearch record for the VR piece naming James Pero, Sep 25 2026 18:45 UTC). All URLs copied verbatim from tool-returned Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps per #715 as pinned in novelty: max numeric mechanism_id 868 pre-commit; block key zero-hit pre-commit; both evidence URLs zero-hit repo-wide pre-commit. ASCII-only, no em dashes.'
+      rotation_transparency: 'FOURTH leg of the 1060-1064 window: D #1060 (main 365b08fe / anchor 16e1287e / log-hash f2b8cac0) -> E #1061 (main 450d86a7 / anchor c0c5fb1f / log-hash 2cd5c2e6) -> #1062 Type A (main 7ff7f866 / anchor 7c5d8f9c / log-hash 8e3ed7fd) -> B #1063 -> C #1064, rotation per #565. Predecessor chain verified pre-commit.'
+      test_file: tests/test_type_b_1063_james_pero_gizmodo_vr_headsets_cooked_enthusiasm_vs_pr_cleanup_adversarial_sep29_12am.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 1063
+        type: 'B'
+        date: '2026-09-29 00:00 PDT'
 daniel_cooper:
   name: Daniel Cooper
   current_role: Senior Editor

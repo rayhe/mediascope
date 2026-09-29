@@ -1,41 +1,52 @@
-"""Type B #1058: Lucas Ropek (TechCrunch) Sep-28 OpenAI Astra In Brief -
-same-writer same-genre cross-entity remediation-peg contrast vs carried
-Sep-16 Meta Luna In Brief.
+"""Type B #1063: James Pero (Gizmodo) Sep-25 Meta VR glasses hands-on enthusiasm
+vs Sep-28 Meta smart-glasses PR Cleanup adversarial analysis - within-journalist
+WITHIN-ENTITY register split (mechanism 869).
 
-New arm (this mechanism, mechanism 866): TechCrunch In Brief, byline Lucas
-Ropek, Sep 28 2026 4:39 PM PDT - "OpenAI reportedly ditches model over
-safety concerns" (read first-hand this run via the verbatim techcrunch.com
-canonical URL, 39 rendered lines; byline confirmed via the in-piece author
-avatar caption "Lucas Ropek"). WSJ relay: Astra 6.1 nixed over deception
-and alignment findings; the Hugging Face agent-breakout incident relayed
-factually; the only skepticism is attributed (mild own-voice irony on the
-policy deluge plus a critic-attributed entrenchment reading). ZERO own-voice
-stigma vocabulary. MANUAL ILLUSTRATIVE -0.05.
+New arm (this mechanism, mechanism 869): Gizmodo "VR Headsets Are So Cooked",
+byline James Pero (bounded attribution: author-page listing at
+gizmodo.com/author/jpero carrying both pieces, plus a WeSearch record naming
+James Pero, Sep 25 2026 18:45 UTC, with the canonical Gizmodo URL; bounded per
+iteration-492), Sep 25 2026 - read first-hand this run via the verbatim
+gizmodo.com canonical URL, full end-to-end read. Unreserved enthusiasm for the
+Meta VR glasses demo ("the promise feels real", "good news for the future of
+VR", Meta VR Glasses do things "better", "really sharp, really clear", "no
+noticeable lag", "both hand and eye tracking were very snappy", "VR glasses
+are the thing I want"); genuine hardware caveats noted (70-degree FOV versus
+Quest 3's 110 degrees, possible light bleed, price); acknowledges Meta's VR
+pullback and layoffs without souring the demo verdict. MANUAL ILLUSTRATIVE
++0.50.
 
-Carried arm (per #807, NOT re-researched): mechanism 749 (Type B #863) -
-Ropek's Sep 16 2026 Luna In Brief, "After accusations of selling 'perv
-glasses,' Meta prepares to sell a pair without a camera" (-0.50), own-voice
-stigma vocabulary on a camera-free product ("dystopian surveillance society
-run amok", "pervert glasses", "integrated spy equipment"). Same writer, same
-outlet, same In Brief genre, twelve days apart, same peg class (company
-product-remediation move).
+Counter arm (this mechanism, also read first-hand this run, not carried):
+Gizmodo "Meta's Smart Glasses PR Cleanup Campaign Is in Full Swing", byline
+James Pero (bounded attribution: author-page listing; bounded per
+iteration-492), Sep 28 2026 - read first-hand this run via the verbatim
+gizmodo.com canonical URL, full end-to-end read. Adversarial PR-campaign
+framing ("Meta is finally feeling the heat", the audio-only launch
+"conspicuous", backlash "palpable"; camera-free glasses and Private Processing
+read as privacy-remediation theater; celebrity ambassadors read as perception
+management aimed at the pervert perception; Connect read as a persuasion
+effort); credits the privacy measures as real, which bounds the negativity.
+MANUAL ILLUSTRATIVE -0.30.
 
-Illustrative cross-entity delta (OpenAI minus Meta) +0.45: (-0.05) - (-0.50).
-The finding is register-level only: within the remediation peg class, Ropek
-applies own-voice stigma to Meta's remediation and neutral-wire relay to
-OpenAI's. REFINES the corpus peg-follows-register thesis (m637, m743, m842,
-m845): the thesis holds ACROSS peg classes, not WITHIN the remediation
-class. Cross-publication corroboration: Gizmodo's Sep-28 Astra piece
-(mechanism 865, +0.15) proves the event sustains a favorable register, so
-Ropek's -0.05 is mid-register, not the only available one. NOT a
-falsification-family member; ledger holds at 35. MANUAL ILLUSTRATIVE;
-engine NOT run; no analysis.json; NOT artifact-grade; verdict
+Illustrative delta (VR minus smart-glasses) +0.80: 0.50 - (-0.30). Three-day,
+same-writer, same-outlet, same Meta Connect window. This is a TEMPORAL
+REPLICATION of mechanism 818 (Sep-24 VR enthusiasm +0.40 vs Audio stigma
+-0.20, illustrative +0.60) with fresh Sep-25/28 arms: the register follows
+product category and news peg (hands-on demo vs privacy analysis), not a
+uniform anti-Meta stance. Useful counterevidence against broad entity-level
+bias claims. NOT a falsification-family member (m818 already tested and
+falsified the uniform brand-directed prediction); ledger holds at 35. MANUAL
+ILLUSTRATIVE; engine NOT run; no analysis.json; NOT artifact-grade; verdict
 directionally_supported_not_proven; correlation not causation.
 
-FOURTH leg of the 1055-1059 window: D (#1055) -> E (#1056) -> A (#1057) ->
-B (#1058) -> C (#1059), rotation per #565. Concurrency: #899 (nytimes.yaml),
+FOURTH leg of the 1060-1064 window: D (#1060) -> E (#1061) -> A (#1062) ->
+B (#1063) -> C (#1064), rotation per #565. Concurrency: #899 (nytimes.yaml),
 #938 (test file), #900 (untracked test file), #1012-wt (test file) in-flight
 and untouched; targeted staging only.
+
+Anchor-marked tests deselected pre-commit per #565; rotation/itlog/doc-sync
+tests fail pre-doc-sync by design per #719; in-flight tests fail pre-staging
+by design.
 """
 
 import glob
@@ -52,36 +63,34 @@ README = os.path.join(REPO, "README.md")
 ARCH = os.path.join(REPO, "docs", "ARCHITECTURE.md")
 
 TYPE_LETTER = "B"
-ITERATION = 1058
+ITERATION = 1063
 M_ID = 869
-JOURNALIST_SLUG = "lucas_ropek"
+JOURNALIST_SLUG = "james_pero"
 MECH_KEY = (
-    "type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_"
-    "vs_sep16_meta_luna_inbrief_own_voice_stigma_contrast"
+    "type_b_1063_james_pero_gizmodo_vr_headsets_cooked_enthusiasm_"
+    "vs_pr_cleanup_adversarial_sep29"
 )
-MECH_ID_MARKER = "mechanism" + "_" + "86" + "7"  # own-form underscore sweep marker
-MECH_ID_DASH = "mechanism" + "-" + "86" + "7"
-MECH_ID_NUMERIC = "mechanism_id" + ": " + "86" + "7"
+MECH_ID_MARKER = "mechanism" + "_" + "86" + "9"  # own-form underscore sweep marker
+MECH_ID_DASH = "mechanism" + "-" + "86" + "9"
+MECH_ID_NUMERIC = "mechanism_id" + ": " + "86" + "9"
 NEXT_US = "mechanism" + "_" + "87" + "0"  # next-number underscore sweep
 NEXT_DASH = "mechanism" + "-" + "87" + "0"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id" + ": " + "87" + "0"  # next-number numeric sweep
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "103c871d4328d994943385fd74c89a80d5fc194c"  # patched in the anchor followup commit
+ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched in the anchor followup commit
 NOVELTY_CLAIMS = (
-    "zero\ntest_type_b_1058 files, max numeric\nmechanism_id 865 pre-commit, "
-    "block key zero-hit, one new\nURL zero-hit"
+    "zero\ntest_type_b_1063 files, max numeric\nmechanism_id 868 pre-commit, "
+    "block key zero-hit, two new\nURLs zero-hit"
 )
 EXPECTED_NEW_URLS = [
-    "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/",
+    "https://gizmodo.com/vr-headsets-are-so-cooked-2000817445",
+    "https://gizmodo.com/meta-smart-glasses-public-perception-2000818140",
 ]
-CARRIED_URLS = [
-    "https://techcrunch.com/2026/09/16/after-accusations-of-selling-perv-glasses-meta-prepares-to-sell-a-pair-without-a-camera/",
-]
-EXPECTED_ORDER = [("B", "1058"), ("A", "1057"), ("E", "1056"), ("D", "1055"), ("C", "1054")]
-README_TESTS_BEFORE = 54241
-README_FILES_BEFORE = 1382
-README_TESTS_AFTER = 54290
-README_FILES_AFTER = 1383
+EXPECTED_ORDER = [("B", "1063"), ("A", "1062"), ("E", "1061"), ("D", "1060"), ("C", "1059")]
+README_TESTS_BEFORE = 54505
+README_FILES_BEFORE = 1387
+README_TESTS_AFTER = 54553
+README_FILES_AFTER = 1388
 INFLIGHT_FILES = [
     "profiles/nytimes.yaml",  # #899 Type C, modified in worktree
     "tests/test_type_b_938_dominic_preston_verge_pixel_watch_gemini_personalization_vs_meta_luna_stigma_sep16.py",  # #938, modified
@@ -91,9 +100,10 @@ INFLIGHT_FILES = [
 STAGED_EXPECTED_BASENAMES = {
     "journalists.yaml",
     OWN_BASENAME,
-    "test_type_d_1055_m862_m863_m864_qualitative_corpus_integrity_sep28_4am.py",
-    "test_type_e_1056_podcast_sentiment_134th_verification_sep28_5pm.py",
     "test_type_a_1057_gizmodo_openai_sep28_astra_cancellation_credit_vs_meta_scrapped_tool_sep28_6pm.py",
+    "test_type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_vs_sep16_meta_luna_inbrief_stigma_contrast_sep28_7pm.py",
+    "test_type_c_1059_sb_energy_openai_55b_warrant_tenant_nvidia_105b_backstop_recycling_nineteenth_direction_sep28_8pm.py",
+    "test_type_d_1060_m865_m866_m867_qualitative_corpus_integrity_sep28_9pm.py",
     "README.md",
     "ARCHITECTURE.md",
     "iteration-log.md",
@@ -147,7 +157,7 @@ def _staged_paths():
 # ---------------------------------------------------------------------------
 # 1. Novelty anchor (anchor-marked tests deselected pre-commit per #565)
 # ---------------------------------------------------------------------------
-class TestNoveltyAnchorTypeB1058:
+class TestNoveltyAnchorTypeB1063:
     @pytest.mark.anchor
     def test_anchor_exists(self):
         assert ANCHORED_SHA not in (None, "PATCH_ME_IN_FOLLOWUP"), (
@@ -162,51 +172,52 @@ class TestNoveltyAnchorTypeB1058:
     def test_anchor_in_log_header(self):
         # Corpus convention registers short hashes in the log header; the
         # anchor's first 8 chars are the main-commit short SHA. Scoped to
-        # the #1058 header line (not the whole log) per the #1044 test fix:
+        # the #1063 header line (not the whole log) per the #1044 test fix:
         # newer entries name predecessor SHAs in their rotation-transparency
         # sections, which a whole-log index() cannot distinguish.
         log = _read(ITERATION_LOG)
-        header_start = log.index("## #1058 Type B")
+        header_start = log.index("## #1063 Type B")
         header_end = log.index("\n", header_start)
         assert ANCHORED_SHA[:8] in log[header_start:header_end]
 
     def test_novelty_claims(self):
         assert NOVELTY_CLAIMS == (
-            "zero\ntest_type_b_1058 files, max numeric\nmechanism_id 865 pre-commit, "
-            "block key zero-hit, one new\nURL zero-hit"
+            "zero\ntest_type_b_1063 files, max numeric\nmechanism_id 868 pre-commit, "
+            "block key zero-hit, two new\nURLs zero-hit"
         )
 
 
 # ---------------------------------------------------------------------------
-# 2. Rotation guard (1055-1059 window: D -> E -> A -> B -> C), per #565.
+# 2. Rotation guard (1060-1064 window: D -> E -> A -> B -> C), per #565.
 #    All rotation tests are deselected pre-commit (log entry prepended at
 #    doc-sync) and re-run after doc-sync.
 # ---------------------------------------------------------------------------
 @pytest.mark.rotation
-class TestRotationGuard1055_1059Window:
+class TestRotationGuard1060_1064Window:
     def test_window_legs_in_log(self):
         log = _read(ITERATION_LOG)
-        for number, letter in (("1055", "D"), ("1056", "E"), ("1057", "A")):
+        for number, letter in (("1060", "D"), ("1061", "E"), ("1062", "A")):
             assert "## #%s Type %s" % (number, letter) in log
 
     def test_this_run_fourth_leg_b(self):
         log = _read(ITERATION_LOG)
-        assert log.count("## #1058 Type B") == 1
+        assert log.count("## #1063 Type B") == 1
         rt = get_block()["rotation_transparency"]
-        assert "1055-1059" in rt and "B #1058" in rt and "C #1059" in rt
+        assert "1060-1064" in rt and "B #1063" in rt and "C #1064" in rt
 
-    def test_predecessor_1057_pinned(self):
+    def test_predecessor_1062_pinned(self):
         rt = get_block()["rotation_transparency"]
-        assert "#1057 Type A" in rt
-        assert "c38cb8b7" in rt and "03e171f5" in rt and "28e88e64" in rt
+        assert "#1062 Type A" in rt
+        assert "7ff7f866" in rt and "7c5d8f9c" in rt and "8e3ed7fd" in rt
 
     def test_iteration_type_b(self):
         assert get_block()["iteration_type"] == TYPE_LETTER
 
+
 # ---------------------------------------------------------------------------
 # 3. Mechanism structure
 # ---------------------------------------------------------------------------
-class TestMechanism866Structure:
+class TestMechanism869Structure:
     def test_ids(self):
         b = get_block()
         assert b["mechanism_id"] == M_ID
@@ -217,10 +228,10 @@ class TestMechanism866Structure:
         b = get_block()
         assert b["block_key"] == MECH_KEY
         # Colon-form key carries no numeric mechanism id in any form.
-        assert "866" not in MECH_KEY
+        assert "869" not in MECH_KEY
         assert MECH_ID_MARKER not in MECH_KEY
         assert MECH_ID_DASH not in MECH_KEY
-        assert "keying" in b["key_design_note"]
+        assert "m818" in b["design"] or "mechanism 818" in b["design"]
 
     def test_goal_job_author_fields(self):
         b = get_block()
@@ -234,85 +245,98 @@ class TestMechanism866Structure:
 
     def test_date_field(self):
         b = get_block()
-        assert b["date"] == "2026-09-28 19:00 PDT"
+        assert b["date"] == "2026-09-29 00:00 PDT"
+
+    def test_rotation_transparency_present(self):
+        rt = get_block()["rotation_transparency"]
+        assert "1060-1064" in rt
+        assert "#1060" in rt and "#1061" in rt and "#1062" in rt
 
 
 # ---------------------------------------------------------------------------
-# 4. Mechanism arms (new OpenAI In Brief + carried Meta/Snap arms)
+# 4. Mechanism arms: two first-hand Sep-2026 reads
 # ---------------------------------------------------------------------------
-class TestMechanism866Arms:
-    def test_new_arm_source(self):
-        arm = get_block()["new_openai_arm_sep28"]
-        assert arm["title_verbatim"] == "OpenAI reportedly ditches model over safety concerns"
+class TestMechanism869Arms:
+    def test_vr_arm_source(self):
+        arm = get_block()["new_vr_arm"]
+        assert arm["title"] == "VR Headsets Are So Cooked"
         assert arm["url"] == EXPECTED_NEW_URLS[0]
-        assert arm["byline"] == "Lucas Ropek (sole)"
-        assert arm["date"] == "2026-09-28"
-        assert arm["posted_time"] == "4:39 PM PDT"
-        assert arm["genre"] == "In Brief news digest (WSJ report relay, 39 rendered lines, first-hand this run)"
+        assert arm["date"] == "2026-09-25"
+        assert arm["publication"] == "Gizmodo (Keleops AG)"
+        assert "James Pero" in arm["byline"]
+        assert "iteration-492" in arm["byline"]
 
-    def test_new_arm_evidence_tier_first_hand(self):
-        arm = get_block()["new_openai_arm_sep28"]
-        assert arm["evidence_tier"].startswith("FIRST-HAND")
-        assert "39 rendered lines" in arm["evidence_tier"]
-        assert "avatar caption" in arm["byline_attestation"]
-        assert "verbatim" in arm["url_attestation"]
+    def test_vr_arm_first_hand(self):
+        arm = get_block()["new_vr_arm"]
+        assert arm["evidence_tier"].startswith("full-text first-hand this run")
+        assert "1 browser.open" in arm["evidence_tier"]
+        assert "hands-on demo" in arm["genre"]
 
-    def test_new_arm_evidence_quotes(self):
-        quotes = get_block()["new_openai_arm_sep28"]["evidence_quotes"]
-        assert len(quotes) == 6
+    def test_vr_arm_quotes(self):
+        quotes = get_block()["new_vr_arm"]["key_quotes"]
+        assert len(quotes) == 7
         blob = "\n".join(quotes)
-        assert "yet another AI model" in blob
-        assert "showed higher levels of deception" in blob
-        assert "broke free of its sandboxed environment" in blob
-        assert "entrench the industry position" in blob
-        assert "ironically" in blob
+        assert "the promise feels real" in blob
+        assert "good news for the future of VR" in blob
+        assert "really sharp, really clear" in blob
+        assert "no noticeable lag" in blob
+        assert "very snappy" in blob
+        assert "VR glasses are the thing I want" in blob
 
-    def test_new_arm_stigma_vocabulary_absent(self):
-        arm = get_block()["new_openai_arm_sep28"]
-        assert arm["stigma_vocabulary_in_text"].startswith("none:")
-        assert "perv glasses" in arm["stigma_vocabulary_in_text"]
-        assert arm["tone_illustrative"] == -0.05
-        assert arm["register"] == "neutral_wire_relay_with_attributed_skepticism"
+    def test_vr_arm_tone(self):
+        arm = get_block()["new_vr_arm"]
+        assert arm["tone_score"] == 0.50
+        assert "MANUAL ILLUSTRATIVE" in arm["tone_basis"]
+        assert "70-degree" in arm["register_notes"]
 
-    def test_carried_meta_arm(self):
-        arm = get_block()["carried_meta_arm_sep16"]
-        assert "#807" in arm["note"]
-        assert "mechanism 749" in arm["note"]
-        assert "re-opened first-hand this run" in arm["note"]
-        assert arm["url"] == CARRIED_URLS[0]
-        assert arm["posted_time"] == "1:12 PM PDT"
-        assert arm["tone_illustrative"] == -0.50
-        assert arm["register"] == "adversarial_privacy_register_own_voice"
-        assert "pervert glasses" in arm["stigma_vocabulary"]
-        assert "integrated spy equipment" in arm["stigma_vocabulary"]
-        assert "own-voice" in arm["stigma_vocabulary_verified"]
+    def test_sg_arm_source(self):
+        arm = get_block()["smart_glasses_arm"]
+        assert arm["title"] == "Meta's Smart Glasses PR Cleanup Campaign Is in Full Swing"
+        assert arm["url"] == EXPECTED_NEW_URLS[1]
+        assert arm["date"] == "2026-09-28"
+        assert "James Pero" in arm["byline"]
+        assert "read first-hand this run" in arm["mechanism_note"]
+
+    def test_sg_arm_first_hand(self):
+        arm = get_block()["smart_glasses_arm"]
+        assert arm["evidence_tier"].startswith("full-text first-hand this run")
+        assert "1 browser.open" in arm["evidence_tier"]
+        assert "privacy/PR analysis" in arm["genre"]
+
+    def test_sg_arm_tone(self):
+        arm = get_block()["smart_glasses_arm"]
+        assert arm["tone_score"] == -0.30
+        assert "MANUAL ILLUSTRATIVE" in arm["tone_basis"]
+        quotes = arm["key_quotes"]
+        assert len(quotes) == 3
+        assert "Meta is finally feeling the heat" in quotes
 
 
 # ---------------------------------------------------------------------------
 # 5. Asymmetry scorer: illustrative delta math and statistical discipline
 # ---------------------------------------------------------------------------
-class TestMechanism866Scorer:
+class TestMechanism869Scorer:
     def test_tones(self):
-        assert get_block()["new_openai_arm_sep28"]["tone_illustrative"] == -0.05
-        assert get_block()["carried_meta_arm_sep16"]["tone_illustrative"] == -0.50
+        assert get_block()["new_vr_arm"]["tone_score"] == 0.50
+        assert get_block()["smart_glasses_arm"]["tone_score"] == -0.30
 
-    def test_delta_plus_0_45(self):
+    def test_delta_plus_0_80(self):
         s = get_block()["asymmetry_scorer_result"]
-        assert s["illustrative_cross_entity_delta_openai_minus_meta"] == 0.45
-        assert round(-0.05 - (-0.50), 2) == s["illustrative_cross_entity_delta_openai_minus_meta"]
+        assert s["illustrative_delta_vr_minus_smart_glasses"] == 0.80
+        assert round(0.50 - (-0.30), 2) == s["illustrative_delta_vr_minus_smart_glasses"]
 
     def test_calc_string(self):
         s = get_block()["asymmetry_scorer_result"]
-        assert s["cross_entity_delta_calc"] == "(-0.05) - (-0.50) = +0.45"
-        assert "own-voice stigma" in s["cross_entity_delta_direction"]
+        assert s["delta_calc"] == "0.50 - (-0.30) = 0.80"
+        assert "m818" in s["interpretation"]
 
     def test_statistical_discipline(self):
         s = get_block()["asymmetry_scorer_result"]
         assert s["p_value"] == "NOT_CALCULATED"
         assert s["cohens_d"] == "NOT_CALCULATED"
-        assert s["ci_95"] == "NOT_CALCULATED"
-        assert "engine NOT run" in s["engine"]
-        assert s["artifact_grade"] == "NOT artifact-grade"
+        assert s["ci"] == "NOT_CALCULATED"
+        assert s["is_significant"] is False
+        assert get_block()["not_artifact_grade"] is True
         assert "not_proven" in get_block()["verdict"]
 
     def test_falsification_ledger_35(self):
@@ -322,52 +346,56 @@ class TestMechanism866Scorer:
         assert "ledger holds at 35" in b["falsification_note"]
         assert b["no_analysis_json_update"] is True
 
+    def test_engine_not_run(self):
+        sd = get_block()["statistical_discipline"]
+        assert "engine NOT run" in sd
+        assert "Aug 28 2026" in sd
+
 
 # ---------------------------------------------------------------------------
-# 6. Confounders, counterevidence, incentive context, temporal refinement
+# 6. Confounders, counterevidence, strongest counterargument
 # ---------------------------------------------------------------------------
-class TestMechanism866Confounders:
+class TestMechanism869Confounders:
     def test_confounders_present(self):
         cfs = get_block()["confounders"]
         assert len(cfs) == 6
         assert cfs[0].startswith("[STRONG]")
         assert cfs[1].startswith("[STRONG]")
+        assert cfs[2].startswith("[STRONG]")
         assert cfs[5].startswith("[WEAK]")
         blob = "\n".join(cfs)
-        assert "n=1 fresh arm" in blob
+        assert "n=1 per arm" in blob
+        assert "Genre confound" in blob
+        assert "Product-category confound" in blob
 
     def test_counterevidence_present(self):
         ce = get_block()["counterevidence"]
-        assert len(ce) == 4
+        assert len(ce) == 3
         blob = "\n".join(ce)
-        assert "Snap arm" in blob
-        assert "Gizmodo" in blob
-        assert "m845" in blob
+        assert "VR pullback" in blob
+        assert "Private Processing" in blob
+        assert "three days" in blob
 
-    def test_incentive_context(self):
-        ic = get_block()["incentive_context"]
-        assert "Yahoo" in ic and "Apollo" in ic
-        assert "No money gradient is asserted" in ic
-        assert "correlation not causation" in ic
+    def test_strongest_counterargument(self):
+        sca = get_block()["strongest_counterargument"]
+        assert "genre-and-category-first" in sca
+        assert "+0.80" in sca
+        assert "not a controlled contrast" in sca
 
-    def test_temporal_refinement(self):
-        tr = get_block()["temporal_refinement"]
-        assert len(tr) == 3
-        blob = "\n".join(tr)
-        assert "749" in blob and "m845" in blob
-        assert "REFINES" in blob
-        assert get_block()["connects_to"] == [269, 620, 728, 749, 845, 865]
+    def test_connects_to(self):
+        assert get_block()["connects_to"] == [818, 806, 791, 746, 211, 269, 743]
+        assert "TEMPORAL REPLICATION" in get_block()["extends"]
 
 
 # ---------------------------------------------------------------------------
-# 7. Research method: bounded search, first-hand read, novelty greps
+# 7. Research method: two first-hand opens, bounded byline, novelty greps
 # ---------------------------------------------------------------------------
-class TestResearchMethodTypeB1058:
-    def test_search_sets_and_open(self):
+class TestResearchMethodTypeB1063:
+    def test_opens_and_method(self):
         rm = get_block()["research_method"]
-        assert "3 browser.search query sets" in rm
-        assert "2 browser.open this run" in rm
-        assert "per #503" in rm
+        assert "2 browser.open successes this run" in rm
+        assert "0 browser.open failures" in rm
+        assert "iteration-492" in rm
 
     def test_url_attestation(self):
         rm = get_block()["research_method"]
@@ -376,14 +404,10 @@ class TestResearchMethodTypeB1058:
 
     def test_novelty_greps_documented(self):
         rm = get_block()["research_method"]
-        assert "max numeric mechanism_id 865 pre-commit" in rm
+        assert "max numeric mechanism_id 868 pre-commit" in rm
         assert "block key zero-hit pre-commit" in rm
         assert "zero-hit repo-wide pre-commit" in rm
 
-    def test_first_hand_read_documented(self):
-        rm = get_block()["research_method"]
-        assert "39 rendered lines" in rm
-        assert "author avatar caption" in rm
 
 # ---------------------------------------------------------------------------
 # 8. Corpus novelty post-commit
@@ -430,19 +454,19 @@ class TestDocSyncRatchet:
         assert str(README_TESTS_AFTER) in line
         assert str(README_FILES_AFTER) in line
 
-    def test_readme_row_1058(self):
+    def test_readme_row_1063(self):
         text = _read(README)
         assert OWN_BASENAME in text
-        assert "Type B #1058" in text
-        assert "mechanism 866" in text
+        assert "Type B #1063" in text
+        assert "mechanism 869" in text
 
-    def test_arch_row_1058(self):
+    def test_arch_row_1063(self):
         text = _read(ARCH)
         assert OWN_BASENAME in text
-        assert "Type B #1058" in text
+        assert "Type B #1063" in text
 
     def test_expected_order_in_docstring(self):
-        assert EXPECTED_ORDER == [("B", "1058"), ("A", "1057"), ("E", "1056"), ("D", "1055"), ("C", "1054")]
+        assert EXPECTED_ORDER == [("B", "1063"), ("A", "1062"), ("E", "1061"), ("D", "1060"), ("C", "1059")]
 
 
 # ---------------------------------------------------------------------------
@@ -452,23 +476,23 @@ class TestDocSyncRatchet:
 class TestIterationLogEntry:
     def _section(self):
         log = _read(ITERATION_LOG)
-        start = log.index("## #1058 Type B")
-        end = log.index("## #1057 Type A")
+        start = log.index("## #1063 Type B")
+        end = log.index("## #1062 Type A")
         return log[start:end]
 
     def test_log_header_present(self):
         log = _read(ITERATION_LOG)
-        assert log.count("## #1058 Type B") == 1
+        assert log.count("## #1063 Type B") == 1
 
     def test_log_contains_mechanism(self):
         section = self._section()
-        assert "mechanism 866" in section
-        assert "Lucas Ropek" in section
+        assert "mechanism 869" in section
+        assert "James Pero" in section
 
     def test_log_rotation(self):
         section = self._section()
-        assert "1055-1059" in section
-        assert "B #1058" in section
+        assert "1060-1064" in section
+        assert "B #1063" in section
 
 
 # ---------------------------------------------------------------------------
@@ -507,7 +531,7 @@ class TestBlockHygiene:
         blob.encode("ascii")  # raises on any other non-ASCII
 
     def test_urls_verbatim(self):
-        for url in EXPECTED_NEW_URLS + CARRIED_URLS:
+        for url in EXPECTED_NEW_URLS:
             assert url.startswith("https://") and " " not in url
 
     def test_test_file_ascii(self):
@@ -518,6 +542,5 @@ class TestBlockHygiene:
     def test_source_references_recorded(self):
         # Per the standing "keep references" rule: both arms carry their
         # verbatim first-hand source URLs.
-        arm = get_block()["new_openai_arm_sep28"]
-        assert arm["url"] == EXPECTED_NEW_URLS[0]
-        assert get_block()["carried_meta_arm_sep16"]["url"] == CARRIED_URLS[0]
+        assert get_block()["new_vr_arm"]["url"] == EXPECTED_NEW_URLS[0]
+        assert get_block()["smart_glasses_arm"]["url"] == EXPECTED_NEW_URLS[1]

@@ -127,8 +127,8 @@ TEST_BASENAME = OWN_BASENAME
 
 ANCHORED_SHA = "365b08fe1881040abbe2150b1ec8fb6f810a081e"  # main commit #1060 per #565
 
-MAX_ID = 868
-NEXT_NUM = 869
+MAX_ID = 869
+NEXT_NUM = 870
 
 M865_KEY = (
     "gizmodo_openai_astra_cancellation_credit_normalization_"
@@ -364,10 +364,10 @@ class TestNovelty1060:
             assert len(mains) == 1, mains
             assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
-    def test_max_id_is_868(self):
+    def test_max_id_is_869(self):
         assert _max_numeric_mechanism_id() == MAX_ID
 
-    def test_zero_869_numeric_forms_in_profiles(self):
+    def test_zero_870_numeric_forms_in_profiles(self):
         assert _repo_grep_numeric_mechanism_id(NEXT_NUM) == []
 
     def test_block_keys_unique_in_home_yamls(self):
@@ -502,15 +502,15 @@ class TestTypeDRotationGuard1060:
 # 3. Corpus integrity
 # ---------------------------------------------------------------------------
 class TestTypeDCorpusIntegrity1060:
-    def test_underscore_869_zero_repo_wide(self):
-        # Underscore-form 869 needles are pure zero repo-wide: the
-        # #1057/#1058/#1059 files build their zero-869 needles at
-        # runtime ("mechanism" + "_" + "86" + "9" per #715), so no
+    def test_underscore_870_zero_repo_wide(self):
+        # Underscore-form 870 needles are pure zero repo-wide: the
+        # #1057/#1058/#1059 files build their zero-870 needles at
+        # runtime ("mechanism" + "_" + "87" + "0" per #715), so no
         # contiguous literal exists anywhere - no guard-literal
         # carrier file is pinned this run.
         assert _repo_grep_underscore_mechanism(NEXT_NUM) == []
 
-    def test_dash_869_zero_repo_wide(self):
+    def test_dash_870_zero_repo_wide(self):
         assert _repo_grep_dash_mechanism(NEXT_NUM) == []
 
     def test_thirty_sixth_absent_in_profiles(self):
@@ -787,30 +787,30 @@ class TestTypeDForwardLookingStaleness1060:
         "nvidia_105b_backstop_recycling_nineteenth_direction_sep28_8pm.py",
     ]
 
-    def test_window_files_carry_m_id_868(self):
+    def test_window_files_carry_m_id_869(self):
         # The #1057/#1058/#1059 files were pinned forward to M_ID =
-        # 868 by the #1062 main commit (their max-id guards already
-        # account for m868).
+        # 869 by the #1063 main commit (their max-id guards already
+        # account for m869).
         for rel in self.WINDOW_FILES:
             text = _read(os.path.join(REPO_ROOT, rel))
-            assert "M_ID = 868" in text, rel
+            assert "M_ID = 869" in text, rel
 
-    def test_zero_869_guards_pass_this_run(self):
-        # The window files' forward-looking zero-869 guards PASS
-        # the #1062 run (869 is zero; the #1062 Type A main commit
-        # added mechanism 868 and re-pinned these guards) - verified
+    def test_zero_870_guards_pass_this_run(self):
+        # The window files' forward-looking zero-870 guards PASS
+        # the #1063 run (870 is zero; the #1063 Type B main commit
+        # added mechanism 869 and re-pinned these guards) - verified
         # via subprocess, NOT touched by this run.
         targets = []
         for rel in self.WINDOW_FILES:
             targets.append(
                 rel
                 + "::TestCorpusNoveltyPostCommit::"
-                + "test_zero_next_numeric_869_in_profiles"
+                + "test_zero_next_numeric_870_in_profiles"
             )
             targets.append(
                 rel
                 + "::TestCorpusNoveltyPostCommit::"
-                + "test_zero_next_underscore_dash_869_repo_wide"
+                + "test_zero_next_underscore_dash_870_repo_wide"
             )
         result = subprocess.run(
             [
@@ -826,14 +826,13 @@ class TestTypeDForwardLookingStaleness1060:
         )
         assert result.returncode == 0, result.stdout[-2000:]
 
-    def test_zero_869_guards_staleness_calendar(self):
-        # Calendar pin, re-pinned by the #1062 main commit: the 868
-        # landing happened at #1062 (Type A), superseding this pin's
-        # pre-#1062 prediction of #1064. The zero-869 guards fail BY
-        # DESIGN when mechanism 869 lands - expected at the #1063
-        # Type B leg (rotation D->E->A->B->C: B legs add mechanisms).
+    def test_zero_870_guards_staleness_calendar(self):
+        # Calendar pin, re-pinned by the #1063 main commit: the 869
+        # landing happened at #1063 (Type B). The zero-870 guards fail
+        # BY DESIGN when mechanism 870 lands - expected at the #1064
+        # Type C leg (rotation D->E->A->B->C: C legs add mechanisms).
         # Re-pinned by the #1065 Type D run.
-        assert 1062 + 1 == 1063
+        assert 1063 + 1 == 1064
         for rel in self.WINDOW_FILES:
             assert os.path.exists(os.path.join(REPO_ROOT, rel))
 
