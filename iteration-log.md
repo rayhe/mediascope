@@ -18,6 +18,7 @@ Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anch
 
 Main commit a04bf111 (verified via git rev-parse); anchor followup 5b102a31 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 54/54 file tests green post-doc-sync); log-hash followup TBD updates this line (this commit).
 README stats table 54468/1403 -> 54522/1404 (+54/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1079 entry (this entry).
+Push: e13dde32..f2a2d95f main -> main landed via the atomic proxy-credential workflow (temp GIT_CONFIG_GLOBAL auth, PAT never via argv); remote HEAD verified MATCH via git ls-remote (f2a2d95f). Note: the ~/.git-credentials hatch-egress-proxy candidates all probed 000 this run; the push carried on the environment proxy path instead.
 
 ## #1078 Type B: Isabella Ward (WIRED) x OpenAI vs x Anthropic accountability-register constancy - THIRTY-SIXTH falsification-family member (mechanism 878; ledger 35->36); illustrative delta -0.05 near-null; uniform payer-softening prediction fails at the writer level - Type B FOURTH leg of the 1075-1079 window, CONTINUING it (Sep 29 2026, 15:00 PDT; main commit bb6631ba / anchor db5cf513; log-hash followup registers both hashes here per #721 (this commit: e5260a66e4c5ee1b5627418a1ba19aa643834b17))
 
