@@ -96,7 +96,7 @@ EXPECTED_ORDER = [
 ]
 
 # #565 anchor: all-zeros placeholder until the anchor followup patches it.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "bb6631ba5c737a12a06aa49008fd6fdb59347e46"
 
 # Runtime-built key needles per #715 / #770 (no contiguous literal in source).
 MECH_ID_MARKER = "mechanism" + "_"
