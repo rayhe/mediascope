@@ -5,7 +5,7 @@ Sep 29 2026, 10:00 PDT, iteration_type "B", **FOURTH leg of the 1070-1074 window
 ### Rotation transparency
 - 1070-1074 window FOURTH leg CONTINUING it (D #1070 -> E #1071 -> A #1072 -> B #1073 -> C, rotation per #565 anchor + rotation guard).
 - Predecessor #1072 Type A: main a16c216e, anchor 0df19bbe, log-hash dc5a4b3f (all verified present via git log per the #565 anchor + rotation guard).
-- #1073 Type B (Sep 29 2026, 10:00 PDT; main commit 44293ed2 / anchor c3de2c69; log-hash followup TBD) - mechanism 875.
+- #1073 Type B (Sep 29 2026, 10:00 PDT; main commit 44293ed2 / anchor c3de2c69; log-hash followup 0e5c5f98) - mechanism 875.
 - Pre-commit novelty greps: zero test_type_b_1073 files on disk (glob); no "Type B #1073" in git log (--grep); max numeric mechanism_id 874 in profiles (guardian.yaml); zero numeric 875 profile keys; zero underscore/dash-joined 875 key carriers repo-wide; zero top-level ben_schoon key in profiles/careers/journalists.yaml; zero corpus hits for the Sep-20 9to5Google evidence URL and the Sep-24 WeSearch relay URL.
 - Next run #1074 Type C (fifth and closing leg) should expect max mechanism ID 875 and the #1073 landing guards awaiting the #1075 Type D lifecycle pin.
 
@@ -27,9 +27,9 @@ MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone hand-assigned o
 61 tests, 16 classes in tests/test_type_b_1073_ben_schoon_9to5google_weekender_camera_stigma_blame_attribution_sep29_10am.py. Pre-commit: 58 green; 3 fail BY DESIGN (2 anchor-marked, deselected pre-commit per #565: ANCHORED_SHA_PENDING, no main commit yet; 1 iteration-log hash test per #721: needs the lowercase hash line the log-hash followup adds). Post-main-commit: the 2 anchor tests go green in the anchor followup; the iteration-log hash test goes green in the log-hash followup.
 
 ### Commit hashes
-Main commit 44293ed2; anchor followup c3de2c69; log-hash followup TBD (patched post-commit per #565/#721, verified via git rev-parse HEAD and git ls-remote).
+Main commit 44293ed2 (44293ed2050af862b0b24891782d76934176a895, verified via git rev-parse); anchor followup c3de2c69 (c3de2c69fa7304ed48e5cc31d6de084fc92849dd, verified via git rev-parse); log-hash followup 0e5c5f98 (0e5c5f987be203cc11d0271619c0c8017cb42333, verified via git rev-parse).
 
-#1073 Type B (Sep 29 2026, 10:00 PDT; main commit 44293ed2 / anchor c3de2c69; log-hash followup TBD) - mechanism 875 blame-attribution asymmetry entry.
+#1073 Type B (Sep 29 2026, 10:00 PDT; main commit 44293ed2 / anchor c3de2c69; log-hash followup 0e5c5f98) - mechanism 875 blame-attribution asymmetry entry.
 
 ### Doc-sync ratchet
 README stats table 55049/1397 -> 55110/1398 (+61/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log.md #1073 entry prepended (this entry).
