@@ -22,7 +22,7 @@ Main commit 0eb434c8 (verified via git rev-parse); anchor followup 6bb0261f (ANC
 README stats table 54505/1387 -> 54553/1388 (+48/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1063 entry (this entry).
 
 ### Push status
-Pushed 2026-09-29 00:xx PDT via egress proxy (HTTP/1.1, Basic x-access-token PAT via http.extraHeader, PAT never in argv; proxy candidate returned 200 on api.github.com/zen). Origin is SSH (git@github.com:rayhe/mediascope-asymmetry.git), so the push needed -c url."https://github.com/".insteadOf="git@github.com:" to route through the HTTPS proxy. Chain this run: main TBD -> anchor TBD -> log-hash TBD -> push-status (this commit), verified via git ls-remote with auth.
+Pushed 2026-09-29 00:xx PDT via egress proxy (HTTP/1.1, Basic x-access-token PAT via http.extraHeader, PAT never in argv; first proxy candidate returned 200 on api.github.com/zen). Origin is SSH (git@github.com:rayhe/mediascope-asymmetry.git), so the push needed -c url."https://github.com/".insteadOf="git@github.com:" to route through the HTTPS proxy. Chain this run: main 0eb434c8 -> anchor 6bb0261f -> log-hash 5376281b -> push-status (this commit), verified via git ls-remote with auth (remote 5376281b == local HEAD). Note: this push also delivered the #1062 log-hash followup 8e3ed7fd (c8403be0..5376281b), which had not been pushed by the prior run.
 
 ### Rotation guard
 1060-1064 window FOURTH leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1064 Type C continues the window.
