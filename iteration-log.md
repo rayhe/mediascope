@@ -1,4 +1,4 @@
-## #1058 Type B: Lucas Ropek (TechCrunch) Sep-28 OpenAI Astra In Brief vs carried Sep-16 Meta Luna In Brief - same-writer same-genre cross-entity remediation-peg contrast, own-voice stigma absent on OpenAI (mechanism 866) - Type B FOURTH leg of the 1055-1059 window (Sep 28 2026, 19:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1058 Type B: Lucas Ropek (TechCrunch) Sep-28 OpenAI Astra In Brief vs carried Sep-16 Meta Luna In Brief - same-writer same-genre cross-entity remediation-peg contrast, own-voice stigma absent on OpenAI (mechanism 866) - Type B FOURTH leg of the 1055-1059 window (Sep 28 2026, 19:00 PDT; main commit 103c871d / anchor 57e08a7b; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
 2026-09-28 19:00 PDT, iteration_type "B", **FOURTH leg of the 1055-1059 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -15,7 +15,7 @@ Type B #1058 - mechanism 866 (profiles/careers/journalists.yaml, lucas_ropek.com
 49 tests, 12 classes in tests/test_type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_vs_sep16_meta_luna_inbrief_stigma_contrast_sep28_7pm.py. Pre-commit: 33 green excluding doc-sync 4 per #719 (fail by design pre-doc-sync, go green post), anchor 3 + rotation 4 + itlog 3 deselected pre-commit per #565/#721 (go green in anchor followup), inflight 2 fail by design pre-staging (green post-staging); novelty + structure + arms + scorer + confounders + discipline + research-method + corpus-novelty + hygiene green. Guard roll-forwards this run (designed lifecycle per #1055's pin comments, which anticipated the 866 landing): #1055 MAX_ID 865->866, NEXT_NUM 866->867, test_max_id_is_865->866, test_zero_866->867_numeric_forms_in_profiles; #1056 test_max_numeric_mechanism_id_865->866 (+comment), d1 866->867, next-carrier needles 865->866, pinned carriers -> empty set (no committed file carries an 866 literal); #1057 M_ID 865->866, NEXT_US/NEXT_DASH/NEXT_NUMERIC 866->867, test names rolled. Concurrency: #899 (profiles/nytimes.yaml), #938 (test file), #900 (untracked test file), #1012-wt (test file) untouched; targeted staging verified by test_targeted_staging_only.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565; 49/49 green post-patch); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit 103c871d (verified via git rev-parse); anchor followup 57e08a7b (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
 
 ### Doc-sync ratchet
 README stats table 54241/1382 -> 54290/1383 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1058 entry (this entry).
