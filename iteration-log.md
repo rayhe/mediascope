@@ -1,4 +1,4 @@
-## #1079 Type C: OpenAI India publisher pipeline expansion - INBOUND-PULL as the TWENTY-THIRD relationship direction (mechanism 879; ledger holds at 36); NOT a falsification-family member - Type C FIFTH and CLOSING leg of the 1075-1079 window (Sep 29 2026, 16:00 PDT; main commit a04bf111 / anchor 5b102a31; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1079 Type C: OpenAI India publisher pipeline expansion - INBOUND-PULL as the TWENTY-THIRD relationship direction (mechanism 879; ledger holds at 36); NOT a falsification-family member - Type C FIFTH and CLOSING leg of the 1075-1079 window (Sep 29 2026, 16:00 PDT; main commit a04bf111 / anchor 5b102a31; log-hash followup registers both hashes here per #721 (this commit: 463e36eae0826a69aff33c4a54cf672554da3295))
 
 2026-09-29 16:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1075-1079 window** (Type C #1079; rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
