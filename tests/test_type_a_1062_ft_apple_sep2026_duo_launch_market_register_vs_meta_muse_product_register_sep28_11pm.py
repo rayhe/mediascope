@@ -41,14 +41,15 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OWN_BASENAME = os.path.basename(__file__)
 PROFILE = "profiles/financial-times.yaml"
 MECH_KEY = "ft_apple_sep2026_duo_launch_market_register_vs_meta_muse_product_register"
-M_ID = 868
+M_ID = 870
+OWN_M_ID = 868  # own mechanism for this file's structure tests; M_ID tracks the corpus max
 ITER = 1062
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-28 23:00 PDT"
 MECH_ID_MARKER = "mechanism" + "_868"  # own-mechanism marker (underscore form)
-NEXT_US = "mechanism" + "_869"  # next-number underscore sweep
-NEXT_DASH = "mechanism" + "-869"  # next-number dash sweep
-NEXT_NUMERIC = "mechanism_id: " + "869"  # next-number numeric sweep
+NEXT_US = "mechanism" + "_871"  # next-number underscore sweep
+NEXT_DASH = "mechanism" + "-871"  # next-number dash sweep
+NEXT_NUMERIC = "mechanism_id: " + "871"  # next-number numeric sweep
 OWN_STAGED_SET = {
     "profiles/financial-times.yaml",
     "tests/test_type_a_1062_ft_apple_sep2026_duo_launch_market_register_vs_meta_muse_product_register_sep28_11pm.py",
@@ -278,7 +279,7 @@ class TestMechanism868Structure:
 
     def test_iteration_fields_1062_a(self):
         m = _mech()
-        assert m["mechanism_id"] == M_ID
+        assert m["mechanism_id"] == OWN_M_ID
         assert m["iteration"] == ITER
         assert m["iteration_type"] == TYPE_LETTER
         assert m["iteration_time"] == RUN_PDT

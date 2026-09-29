@@ -47,15 +47,16 @@ import yaml
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 OWN_BASENAME = os.path.basename(__file__)
 MECH_KEY = "gizmodo_openai_astra_cancellation_credit_normalization_vs_meta_scrapped_tool"
-M_ID = 869
+M_ID = 870
+OWN_M_ID = 865  # own mechanism for this file's structure tests; M_ID tracks the corpus max
 ITER = 1057
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-28 18:00 PDT"
 # Concatenated per #715 so this file never carries the contiguous literals.
 MECH_ID_MARKER = "mechanism" + "_865"  # own-form underscore sweep marker
-NEXT_US = "mechanism" + "_870"  # next-number underscore sweep
-NEXT_DASH = "mechanism" + "-870"  # next-number dash sweep
-NEXT_NUMERIC = "mechanism_id: " + "870"  # next-number numeric sweep
+NEXT_US = "mechanism" + "_871"  # next-number underscore sweep
+NEXT_DASH = "mechanism" + "-871"  # next-number dash sweep
+NEXT_NUMERIC = "mechanism_id: " + "871"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1057"), ("E", "1056"), ("D", "1055"), ("C", "1054"), ("B", "1053")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
 ANCHORED_SHA = "c38cb8b7cdeb9df2ce748218fc6809f1fc02d6d3"
@@ -253,7 +254,7 @@ class TestMechanism865Structure:
 
     def test_iteration_type_time(self):
         m = _mech()
-        assert m["mechanism_id"] == M_ID
+        assert m["mechanism_id"] == OWN_M_ID
         assert m["iteration"] == ITER
         assert m["iteration_type"] == TYPE_LETTER
         assert m["type"] == "Type A - Competitor Coverage Deep Dive"

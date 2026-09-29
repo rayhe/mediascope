@@ -53,7 +53,8 @@ ARCH = os.path.join(REPO, "docs", "ARCHITECTURE.md")
 
 TYPE_LETTER = "B"
 ITERATION = 1058
-M_ID = 869
+M_ID = 870
+OWN_M_ID = 866  # own mechanism for this file's structure tests; M_ID tracks the corpus max
 JOURNALIST_SLUG = "lucas_ropek"
 MECH_KEY = (
     "type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_"
@@ -62,9 +63,9 @@ MECH_KEY = (
 MECH_ID_MARKER = "mechanism" + "_" + "86" + "7"  # own-form underscore sweep marker
 MECH_ID_DASH = "mechanism" + "-" + "86" + "7"
 MECH_ID_NUMERIC = "mechanism_id" + ": " + "86" + "7"
-NEXT_US = "mechanism" + "_" + "87" + "0"  # next-number underscore sweep
-NEXT_DASH = "mechanism" + "-" + "87" + "0"  # next-number dash sweep
-NEXT_NUMERIC = "mechanism_id" + ": " + "87" + "0"  # next-number numeric sweep
+NEXT_US = "mechanism" + "_" + "87" + "1"  # next-number underscore sweep
+NEXT_DASH = "mechanism" + "-" + "87" + "1"  # next-number dash sweep
+NEXT_NUMERIC = "mechanism_id" + ": " + "87" + "1"  # next-number numeric sweep
 OWN_BASENAME = os.path.basename(__file__)
 ANCHORED_SHA = "103c871d4328d994943385fd74c89a80d5fc194c"  # patched in the anchor followup commit
 NOVELTY_CLAIMS = (
@@ -209,7 +210,7 @@ class TestRotationGuard1055_1059Window:
 class TestMechanism866Structure:
     def test_ids(self):
         b = get_block()
-        assert b["mechanism_id"] == M_ID
+        assert b["mechanism_id"] == OWN_M_ID
         assert b["iteration"] == ITERATION
         assert b["iteration_type"] == "B"
 
