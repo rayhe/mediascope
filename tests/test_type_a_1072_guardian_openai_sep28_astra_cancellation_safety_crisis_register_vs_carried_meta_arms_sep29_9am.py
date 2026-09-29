@@ -44,7 +44,7 @@ ITERATION = 1072
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-29 09:00 PDT"
 BLOCK_KEY = "guardian_openai_sep28_astra_cancellation_safety_crisis_register_vs_carried_meta_arms"
-ANCHORED_SHA = "ANCHORED_SHA_PENDING"
+ANCHORED_SHA = "a16c216e97eac6beb5e6d2572e7d115cced6c825"
 
 README_TESTS_AFTER = 55049
 README_FILES_AFTER = 1397
@@ -138,7 +138,7 @@ class TestCorpusNoveltyGreps:
     def test_no_underscore_dash_874_key_strings(self):
         # Keying discipline per #715: the block key carries no numeric
         # 874 mechanism-id substring. The only repo-wide literal carrier
-        # of the contiguous mechanism_874 / mechanism-874 needle forms is
+        # of the contiguous fragment-built 874 key needle forms (u-score and dash) is
         # the #1071 file's guard-needle comment (documented, pre-existing);
         # no new carrier may appear this run.
         n1 = "mech" + "anism_" + "8" + "74"
@@ -356,7 +356,7 @@ class TestResearchMethodPer503:
 # 12. Guard lifecycle: mechanism 874 lands this run
 # --------------------------------------------------------------------------
 class TestGuardLifecycle874Lands:
-    def test_mechanism_874_lands_in_profiles(self):
+    def test_m874_lands_in_profiles(self):
         out = _git(
             ["grep", "-n", "mechanism_id: 874", "--", "profiles/"]
         ).stdout
