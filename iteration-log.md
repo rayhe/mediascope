@@ -15,7 +15,7 @@ Type D #1060 - qualitative-discipline verification of mechanisms 865/866/867 (th
 60 tests, 13 classes in tests/test_type_d_1060_m865_m866_m867_qualitative_corpus_integrity_sep28_9pm.py. Pre-commit: 56 green (novelty 9 incl. the four designed-keying block-key assertions and the newest-first log-ordering check; rotation 2; corpus-integrity 3 incl. the reverted pure-zero #770 format-built underscore-868 sweep; m865 7; m866 7; m867 6; ledger 9 incl. the member/prose-form distinction pins and the per-file THIRTY-THIRD totals; staleness 3 incl. the forward-guard subprocess pin and the #1064-by-design calendar pin; tombstone 2; synthetic calibration 3 with fresh #1060 values; suite-relaunch 1; doc-sync 3; itlog 1 newest-first), window_opens + anchor_sha + itlog 2 fail by design pre-commit per #565/#721 (go green in the anchor followup). Guard roll-forwards this run: none required (#1057/#1058/#1059 already carry M_ID = 867 pins from the #1059 followups; their forward-looking zero-868 guards PASS this run and are pinned as forward-looking staleness: they fail BY DESIGN at the #1064 Type C run, to be pinned by the #1065 Type D run). Concurrency: #899 (profiles/nytimes.yaml), #938 (test file), #900 (untracked test file), #1012-wt (test file) untouched; targeted staging only.
 
 ### Commit hashes
-Main commit 365b08fe (verified via git rev-parse); anchor followup 16e1287e (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit 365b08fe (verified via git rev-parse); anchor followup 16e1287e (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: f2b8cac0).
 
 ### Doc-sync ratchet
 README stats table 54345/1384 -> 54405/1385 (+60/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1060 entry (this entry).
@@ -24,7 +24,7 @@ README stats table 54345/1384 -> 54405/1385 (+60/+1) + test-file table row; ARCH
 The #1055 re-launched full suite (type_d_1055_full_suite.log) stalled at ~2% (1450 bytes) since Sep 28 04:26 PDT with zero summary tokens and no live pytest process at this run's check: FIFTY-THIRD consecutive background-suite death; tombstone lineage advances SEVENTY-FIRST -> SEVENTY-SECOND. Full suite re-launched as a background process to type_d_1060_full_suite.log (next Type D run checks its verdict per #795).
 
 ### Push status
-TBD.
+Pushed 2026-09-28 21:xx PDT via egress proxy (HTTP/1.1, Basic x-access-token PAT via http.extraHeader, PAT never in argv; proxy candidate returned 200 on api.github.com/zen). NOTE: the repo .git/config origin is SSH (git@github.com:rayhe/mediascope-asymmetry.git), so the push needed `-c url."https://github.com/".insteadOf="git@github.com:"` to route through the HTTPS proxy (without it git tries SSH and fails "Could not read from remote repository"). Chain this run: main 365b08fe -> anchor 16e1287e -> log-hash f2b8cac0, verified via git ls-remote with auth (remote f2b8cac0 == local HEAD).
 
 ## #1059 Type C: SB Energy x OpenAI x Nvidia three-party financial architecture - BACKSTOP-RECYCLING NINETEENTH relationship direction (mechanism 867) - Type C FIFTH and CLOSING leg of the 1055-1059 window (Sep 28 2026, 20:00 PDT; main commit b7261ef5 / anchor ff53d9ef; log-hash followup registers both hashes here per #721 (this commit: c5199890))
 
