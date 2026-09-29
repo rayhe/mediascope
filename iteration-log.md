@@ -1,4 +1,4 @@
-## #1074 Type C: Nvidia x insurer risk-transfer architecture (Aug-10-2026 Wall Street MOUs; ~$12.9B insurance coverage Sep 2026) - RISK-TRANSFER as the TWENTY-SECOND relationship direction, mechanism 876 - FIRST dedicated corpus mechanism on the supplier-guarantee-to-insurer second hop: the supplier lays off its own backstop exposure to third-party insurers and routes buildout capital through SPVs into insurance/retirement balance sheets; depreciation risk exits the AI supply chain relabeled as investment-grade fixed income; NOT a falsification-family member, ledger holds at 35 - Type C FIFTH and CLOSING leg of the 1070-1074 window (Sep 29 2026, 11:00 PDT; main commit TBD / anchor fbfacb6d; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1074 Type C: Nvidia x insurer risk-transfer architecture (Aug-10-2026 Wall Street MOUs; ~$12.9B insurance coverage Sep 2026) - RISK-TRANSFER as the TWENTY-SECOND relationship direction, mechanism 876 - FIRST dedicated corpus mechanism on the supplier-guarantee-to-insurer second hop: the supplier lays off its own backstop exposure to third-party insurers and routes buildout capital through SPVs into insurance/retirement balance sheets; depreciation risk exits the AI supply chain relabeled as investment-grade fixed income; NOT a falsification-family member, ledger holds at 35 - Type C FIFTH and CLOSING leg of the 1070-1074 window (Sep 29 2026, 11:00 PDT; main commit fbfacb6d / anchor fbfacb6d; log-hash followup registers both hashes here per #721 (this commit))
 
 2026-09-29 11:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1070-1074 window, CLOSING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -20,7 +20,7 @@ MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: no tone arms scored;
 53 tests, 12 classes in tests/test_type_c_1074_nvidia_insurer_risk_transfer_twentysecond_direction_sep29_11am.py. Pre-commit: 32 green; 9 fail BY DESIGN (2 staging + 3 doc-ratchet + 2 research-method + 2 corpus-novelty, all green post-doc-sync/staging); 11 deselected (3 anchor + 4 rotation + 4 itlog per #565/#719/#721, patched/pinned green in the anchor/log-hash followups). Post-doc-sync re-run: 42 green + 11 deselected; anchor tests patched green in the anchor followup; itlog tests green in the log-hash followup.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit fbfacb6d7f721817758fa08cb243f467dbded093 (verified via git rev-parse); anchor followup 2bc1b586 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 53/53 file tests green post-doc-sync); log-hash followup updates this line (this commit).
 
 ### Doc-sync ratchet
 README stats table 55110/1398 -> 55163/1399 (+53/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1074 entry (this entry).
