@@ -1,4 +1,4 @@
-## #1059 Type C: SB Energy x OpenAI x Nvidia three-party financial architecture - BACKSTOP-RECYCLING NINETEENTH relationship direction (mechanism 867) - Type C FIFTH and CLOSING leg of the 1055-1059 window (Sep 28 2026, 20:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1059 Type C: SB Energy x OpenAI x Nvidia three-party financial architecture - BACKSTOP-RECYCLING NINETEENTH relationship direction (mechanism 867) - Type C FIFTH and CLOSING leg of the 1055-1059 window (Sep 28 2026, 20:00 PDT; main commit b7261ef5 / anchor ff53d9ef; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
 2026-09-28 20:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1055-1059 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -15,7 +15,7 @@ Type C #1059 - mechanism 867 (profiles/competitor-entities.yaml, top-level block
 55 tests, 12 classes in tests/test_type_c_1059_sb_energy_openai_55b_warrant_tenant_nvidia_105b_backstop_recycling_nineteenth_direction_sep28_8pm.py. Pre-commit: 38 green excluding doc-sync 4 per #719 (fail by design pre-doc-sync, go green post), anchor 3 + rotation 4 + itlog 3 deselected pre-commit per #565/#721 (go green in anchor followup), inflight 2 fail by design pre-staging (green post-staging); novelty + structure + finding + taxonomy + confounders + research-method + corpus-novelty + hygiene green. Guard roll-forwards this run (designed lifecycle per #1055's pin comments, which anticipated the 867 landing): #1055 MAX_ID 866->867, NEXT_NUM 867->868, test_max_id_is_866->867, test_zero_867->868_numeric_forms_in_profiles; #1056 test_max_numeric_mechanism_id_866->867 (+comment noting m867 at #1059 Type C), d1 867->868, next-carrier needles 866->867, pinned carriers -> empty set (no committed file carries an 867 literal); #1057 M_ID 866->867, NEXT_US/NEXT_DASH/NEXT_NUMERIC 867->868 (literal-string pins), test names rolled; #1058 M_ID 866->867, MECH_ID_* format-built 866->867, NEXT_* format-built 867->868, test names rolled. Concurrency: #899 (profiles/nytimes.yaml), #938 (test file), #900 (untracked test file), #1012-wt (test file) untouched; targeted staging verified by test_targeted_staging_only.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit b7261ef5 (verified via git rev-parse); anchor followup ff53d9ef (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
 
 ### Doc-sync ratchet
 README stats table 54290/1383 -> 54345/1384 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1059 entry (this entry).
