@@ -2806,6 +2806,82 @@ competitor_relationships:
     direction: none
     description: No known direct financial relationship. Major App Store distribution partner, high-value advertiser ecosystem. No AI licensing deal disclosed.
     coverage_prediction: neutral
+    ft_apple_sep2026_duo_launch_market_register_vs_meta_muse_product_register:
+      mechanism_id: 868
+      date_analyzed: '2026-09-28'
+      type: 'Type A - Competitor Coverage Deep Dive'
+      iteration: 1062
+      iteration_type: 'A'
+      iteration_time: '2026-09-28 23:00 PDT'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      publication_focus: 'Financial Times'
+      finding: 'First dedicated Type A mechanism under competitor_relationships.apple in financial-times.yaml, which previously held only the financial stub (financial_tie none, estimated $0, coverage_prediction neutral; no AI licensing deal disclosed). The Financial Times applies a price-forward market-analysis register to Apple''s Sep-10-2026 iPhone Duo foldable launch, inside the product-launch register band it applies to Meta''s Sep-8/9 Muse launch. Two NEW-TO-CORPUS Apple arms (excerpt-tier, FT paywalled, relay-attested per #503): (A1) FT Technology FirstFT "Apple''s foldable iPhone Duo will cost $1,999" plus "Foldable iPhone Duo will cost $1,999 as Apple raises smartphone prices" (Sep 10, 2026): the livemint relay carries the FT register verbatim - "The Financial Times has described the launch as an attempt to revive interest in a stagnant smartphone market, with Apple hoping its foldable can make the format more appealing to mainstream buyers." MANUAL ILLUSTRATIVE +0.10 (market-context product register: neither punitive nor coronating). (A2) FT on the Sep-28-2026 $5.7B patent-infringement verdict against Apple (iPhone/Apple Watch haptics), via archynetys: "The Financial Times added that litigation-finance firm Burford Capital is positioned to receive up to $1.4 billion from the judgment." Register: financial-market liability framing (investor-angle on Apple''s legal exposure, not a conduct investigation). MANUAL ILLUSTRATIVE -0.20. Carried Meta comparator (m625, un-rescored per #807): FT "Meta unveils AI personal assistant linked to WhatsApp and Instagram" (Sep 8-9, product-distribution factual, +0.05). Illustrative delta (Apple launch arm minus Meta arm) +0.05 near-null: on matched launch pegs, the $0-tie entity and the $0-tie comparator sit in the same register band, consistent with the standing neutral prediction. Cross-entity licensing-gradient observation (hypothesis-generating only): the same Sep launch-week window ranks OpenAI +0.25 (m625, $5-10M/yr deal partner, epochal-coronation) above Apple +0.10 (null tie) above Meta +0.05 (null tie) - the ordering tracks the licensing deal, but the peg confound is STRONG (AGI-era proclamation vs hardware pricing vs distribution surface) and n=1 per arm, so this cannot bear an incentive claim. The A2-vs-m10 contrast is register selection, not tone: FT aims a conduct-testing investigation register at Meta''s models (m10 Alice, May 25) while Apple''s legal liability is framed in financial-market register. NOT a falsification-family member (register documentation on a null-tie control, no uniform-prediction test); falsification ledger holds at 35. NOT artifact-grade. Correlation is not causation.'
+      articles:
+        - title: 'Apple''s foldable iPhone Duo will cost $1,999 (FT Technology FirstFT) / Foldable iPhone Duo will cost $1,999 as Apple raises smartphone prices'
+          date: '2026-09-10'
+          url: 'https://llmgram.app/news/2026/09/apple-unveils-first-foldable-iphone-duo-starting-at-1-999-3344dc31.html'
+          url_source: 'verbatim Full-URL listing this run; llmgram secondary attribution "Financial Times Technology"'
+          relay_url: 'https://www.livemint.com/companies/from-smartphone-to-luxury-tech-iphone-duo-iphone-18-pro-why-apple-may-be-pushing-the-iphone-further-upmarket-11789221620065.html'
+          relay_note: 'livemint carries the FT register verbatim: "The Financial Times has described the launch as an attempt to revive interest in a stagnant smartphone market, with Apple hoping its foldable can make the format more appealing to mainstream buyers."'
+          register: 'price_forward_market_analysis'
+          manual_illustrative_tone: 0.10
+          key_phrases:
+            - 'will cost $1,999'
+            - 'an attempt to revive interest in a stagnant smartphone market'
+            - 'make the format more appealing to mainstream buyers'
+            - 'Apple raises smartphone prices'
+          verification: 'NEW-TO-CORPUS; excerpt-tier relay attribution per #503; FT paywalled, body register unverified'
+        - title: 'Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch (FT liability-angle leg)'
+          date: '2026-09-28'
+          url: 'https://www.archynetys.com/trend/2026-09-26/apple-faces-5-7-billion-patent-infringement-verdict-over-iphone-and-apple-watch'
+          url_source: 'verbatim Full-URL listing this run; archynetys relay: "The Financial Times added that litigation-finance firm Burford Capital is positioned to receive up to $1.4 billion from the judgment."'
+          register: 'financial_market_liability_framing'
+          manual_illustrative_tone: -0.20
+          key_phrases:
+            - '$5.7 billion patent infringement verdict'
+            - 'Burford Capital is positioned to receive up to $1.4 billion'
+            - 'haptic feedback patents'
+          verification: 'NEW-TO-CORPUS; excerpt-tier relay attribution per #503; FT paywalled, body register unverified'
+        - title: 'Meta unveils AI personal assistant linked to WhatsApp and Instagram'
+          date: '2026-09-08/09'
+          url: 'https://www.archynetys.com/trend/2026-09-08/meta-unveils-ai-personal-assistant-linked-to-whatsapp-and-instagram'
+          url_source: 'in-corpus mechanism 625 pointer; archynetys trend page lists Financial Times among 5 covering outlets'
+          register: 'product_distribution_factual'
+          manual_illustrative_tone: 0.05
+          verification: 'carried from m625, un-rescored per #807'
+      asymmetry_scorer_result:
+        target_entity: 'apple'
+        peer_entities: ['meta']
+        target_avg_tone: 0.10
+        peer_avg_tone: 0.05
+        asymmetry_score: 0.05
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        confidence_interval: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance; n=1 vs n=1 launch-peg pair (Apple Duo launch arm vs carried Meta Muse launch arm); the -0.20 liability arm is documented as a second fresh arm, not scored into the delta; correlation_not_causation'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run on the arms; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update; hypothesis-generating only'
+      confounders:
+        - 'STRONG news-peg confound: the launch-week register inherits from the news-maker (AGI-era proclamation vs $1,999 pricing vs distribution surface); the register gap may track what each product IS, not who makes it (same confounder structure as m625).'
+        - 'STRONG excerpt-tier evidence: FT is paywalled; both fresh arms are relay-attested (llmgram/livemint/archynetys); FT body register unverified either side; no canonical ft.com URL constructed.'
+        - 'MODERATE temporal mismatch: Sep 10 Apple launch vs Sep 8-9 Meta launch is tight, but the Sep 28 liability arm vs the May 25 m10 Alice arm is a wide window; the A2-vs-m10 register contrast is not same-window.'
+        - 'MODERATE n=1 vs n=1 on the scored pair (A2 unscored): directional only; degenerate statistical contract (p=1.0, d=0.0 per the #638/#643 convention).'
+        - 'WEAK relay-attribution risk: llmgram and archynetys are AI-synthesized aggregators; the FT attribution is second-hand, not first-hand on ft.com.'
+      counter_evidence:
+        - 'm10 (FT x Alice joint investigation, May 25): FT aims a conduct-testing investigation register at Meta''s Llama - adversarial capacity toward Meta exists, so the null-tie symmetry on the launch peg is not uniform softness.'
+        - 'Hugging Face FT follow-ups (m625 counterevidence): FT carried watchdog elements toward the $5-10M/yr deal partner (warned-in-advance reporting), so adversarial capacity toward OpenAI exists too; the licensing-gradient observation is bounded.'
+        - 'FT''s Sep 10 EU-DMA piece (via Bloomberg Law, m625 counterevidence) was favorable to Meta (minimal fines to avoid Trump tensions): symmetric softness on the regulatory beat cuts against a uniform anti-Meta read.'
+      research_method: '5 browser.search query sets this run: (1) Financial Times Apple iPhone foldable duo launch September 2026; (2) Financial Times Apple iPhone 17 review September 2026; (3) ft.com Apple iPhone Duo foldable September 2026 Ternus; (4) quoted "Financial Times" Meta Connect September 2026 Ray-Ban glasses; (5) "Financial Times" Apple iPhone Duo review analysis "first foldable" September 2026 Bradshaw. 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical ft.com URLs constructed (paywalled); no zero-coverage claims per the iteration-492 rule. ASCII-only, no em dashes.'
+      source_urls:
+        - 'https://llmgram.app/news/2026/09/apple-unveils-first-foldable-iphone-duo-starting-at-1-999-3344dc31.html'
+        - 'https://www.livemint.com/companies/from-smartphone-to-luxury-tech-iphone-duo-iphone-18-pro-why-apple-may-be-pushing-the-iphone-further-upmarket-11789221620065.html'
+        - 'https://www.archynetys.com/trend/2026-09-26/apple-faces-5-7-billion-patent-infringement-verdict-over-iphone-and-apple-watch'
+        - 'https://www.archynetys.com/trend/2026-09-08/meta-unveils-ai-personal-assistant-linked-to-whatsapp-and-instagram'
+      distinct_from:
+        - 'No prior mechanism under competitor_relationships.apple in financial-times.yaml: the apple section held only the financial stub (financial_tie none, $0, prediction neutral) before this run.'
+        - 'Distinct from mechanism 625 (FT x OpenAI Astra coronation vs Meta Muse distribution, Sep 3-9 launch week): different entity pair (FT x Apple vs Meta), different register question (null-tie control), though m625 supplies the carried Meta arm and the OpenAI gradient pole.'
+        - 'Distinct from mechanism 10 (FT x Alice guardrails investigation, Meta-side conduct-testing): different entity side and different peg class (liability verdict vs conduct investigation); m10 is counterevidence, not a predecessor.'
 cross_entity_coverage_analysis:
   guardrails_investigation_partner_validation:
     mechanism_number: 10
