@@ -29,7 +29,7 @@ Main commit bb6631ba (verified via git rev-parse); anchor followup db5cf513 (ANC
 README stats stale-corrected per count_stats.py --check: claimed 55334/1402/272 vs authoritative 54392/1402/273; corrected to authoritative base, own +76/+1 -> 54468/1403/273 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1078 entry (this entry).
 
 ### Push status
-Pushed TBD via the atomic proxy workflow (extraHeader Basic auth, HTTP/1.1, egress-proxy probe); remote HEAD verified == local TBD via git ls-remote.
+Pushed c9a725e8 (4-commit chain bb6631ba/db5cf513/e5260a66/c9a725e8) via the atomic proxy workflow (extraHeader Basic auth in temp GIT_CONFIG_GLOBAL per the 2026-09-29 addendum, HTTP/1.1, egress-proxy probe, PAT from file not argv); remote HEAD verified == local c9a725e8ead0e94f917dc6da41bf2ceede53a057 via git ls-remote. No fetch-first rejection; remote had not moved (pre-push 10082a66).
 
 ### Rotation guard
 1075-1079 window FOURTH leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1079 Type C closes the window.
