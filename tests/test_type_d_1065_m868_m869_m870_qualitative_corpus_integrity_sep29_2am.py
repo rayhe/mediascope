@@ -109,8 +109,8 @@ TEST_BASENAME = OWN_BASENAME
 
 ANCHORED_SHA = "63149c0da803e6ca712038f26d637eea5a03de2c"  # main commit, patched by the anchor followup per #565
 
-MAX_ID = 870
-NEXT_NUM = 871
+MAX_ID = 873  # pinned by #1070 Type D: m873 landed at #1069 Type C
+NEXT_NUM = 874  # pinned by #1070 Type D: m873 landed at #1069 Type C
 
 M868_KEY = (
     "ft_apple_sep2026_duo_launch_market_register_"
@@ -405,30 +405,40 @@ class TestNovelty1065:
         # competitor-entities.yaml.
         assert _read(os.path.join(REPO_ROOT, M870_HOME)).count(M870_KEY) == 2
 
-    def test_1065_entry_newest_first_in_log(self):
-        # The "## #1065 Type D:" entry leads the log (newest-first
-        # ordering); hashes are TBD until the anchor followup patches
-        # them per #565.
-        assert _read(LOG_PATH).startswith("## #1065 Type D:")
+    def test_1065_entry_present_in_log(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1070 run): the "## #1065 Type
+        # D:" entry no longer leads the log (the 1065-1069 window has
+        # closed; #1066/#1067/#1068/#1069/#1070 entries sit above it).
+        # The entry must still be present in the log, newest-first
+        # ordering intact.
+        assert "## #1065 Type D:" in _read(LOG_PATH)
 
 
 # ---------------------------------------------------------------------------
 # 2. Rotation guard per #565
 # ---------------------------------------------------------------------------
 class TestTypeDRotationGuard1065:
-    def test_rotation_window_opens_1065(self):
-        # The newest distinct iteration in git history is this run's
-        # #1065 Type D (window opener). The full 1060-1064 window is
-        # regex-visible (no subject deviations in this window): D
-        # #1065 -> C #1064 -> B #1063 -> A #1062 -> E #1061.
-        window = _window()
-        assert window[0] == ("D", "1065"), window
-        assert window[1:5] == [
-            ("C", "1064"),
-            ("B", "1063"),
-            ("A", "1062"),
-            ("E", "1061"),
-        ], window
+    def test_1065_window_closed_complete(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1070 run): the 1065-1069
+        # window is CLOSED and complete. All five legs landed with
+        # clean "Type X #N:" main-commit subjects in the correct
+        # relative order: D #1065 -> E #1066 -> A #1067 -> B #1068 ->
+        # C #1069 (newest-first: C #1069, B #1068, A #1067, E #1066,
+        # D #1065). This assertion is stable across the #1070 main
+        # commit (which sits above the window) because it filters to
+        # the 1065-1069 subsequence rather than absolute positions.
+        chain = [
+            entry
+            for entry in _window(n=80)
+            if entry[1] in ("1065", "1066", "1067", "1068", "1069")
+        ]
+        assert chain == [
+            ("C", "1069"),
+            ("B", "1068"),
+            ("A", "1067"),
+            ("E", "1066"),
+            ("D", "1065"),
+        ], chain
 
     def test_predecessor_1064_chain_present(self):
         # The full #1064 Type C commit chain must be in git history
@@ -450,16 +460,24 @@ class TestTypeDRotationGuard1065:
                 == 0
             ), sha
 
-    def test_no_type_e_1066_in_git_log(self):
-        # The next leg (Type E #1066) must not exist yet: this run
-        # opens the window, #1066 continues it.
+    def test_type_e_1066_landed(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1070 run): Type E #1066 has
+        # LANDED (main commit 8c144fe8, Sep 29 03:00 PDT) - the
+        # forward-looking "must not exist yet" guard from the #1065
+        # run is inverted now that the 1065-1069 window closed.
         result = subprocess.run(
-            ["git", "log", "--format=%s", "--grep=Type E #1066"],
+            ["git", "log", "--format=%H %s", "--grep=Type E #1066"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        assert result.stdout.strip() == "", result.stdout
+        assert result.returncode == 0
+        mains = [
+            line.split()[0]
+            for line in result.stdout.splitlines()
+            if line.split(None, 1)[1].startswith("Type E #1066:")
+        ]
+        assert mains == ["8c144fe8680a58e85a1b081841f7a0706dab0d52"], mains
 
     def test_anchor_sha_is_real(self):
         assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA), (

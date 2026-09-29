@@ -39,15 +39,15 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OWN_BASENAME = os.path.basename(__file__)
 PROFILE = "profiles/business-insider.yaml"
 MECH_KEY = "bi_openai_sep2026_astra_cancellation_scoop_vs_meta_product_execution_register"
-M_ID = 871
+M_ID = 873  # rolled by #1070 Type D: m873 landed at #1069 Type C; OWN_M_ID 871 preserved below
 OWN_M_ID = 871  # own mechanism for this file's structure tests; M_ID tracks the corpus max
 ITER = 1067
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-29 04:00 PDT"
 MECH_ID_MARKER = "mechanism" + "_871"  # own-mechanism marker (underscore form)
-NEXT_US = "mechanism" + "_872"  # next-number underscore sweep
-NEXT_DASH = "mechanism" + "-872"  # next-number dash sweep
-NEXT_NUMERIC = "mechanism_id: " + "872"  # next-number numeric sweep
+NEXT_US = "mechanism" + "_874"  # next-number underscore sweep
+NEXT_DASH = "mechanism" + "-874"  # next-number dash sweep
+NEXT_NUMERIC = "mechanism_id: " + "874"  # next-number numeric sweep
 OWN_STAGED_SET = {
     "profiles/business-insider.yaml",
     "tests/test_type_a_1067_bi_openai_sep2026_astra_cancellation_scoop_vs_meta_product_execution_register_sep29_4am.py",
@@ -395,14 +395,14 @@ class TestMechanism871Discipline:
 
 
 # ---------------------------------------------------------------------------
-# 8. Post-commit corpus novelty: 871 is max, 872 is zero
+# 8. Post-commit corpus novelty: 873 is max, 874 is zero (rolled by #1070 Type D)
 # ---------------------------------------------------------------------------
 class TestCorpusNoveltyPostCommit:
-    def test_max_numeric_mechanism_id_is_871(self):
+    def test_max_numeric_mechanism_id_is_873(self):
         ids = _corpus_ids()
         assert max(ids) == M_ID
 
-    def test_zero_next_numeric_872_in_profiles(self):
+    def test_zero_next_numeric_874_in_profiles(self):
         base = os.path.join(REPO_ROOT, "profiles")
         for root, _, files in os.walk(base):
             for fn in files:
@@ -410,7 +410,7 @@ class TestCorpusNoveltyPostCommit:
                     text = _read(os.path.join(root, fn))
                     assert NEXT_NUMERIC not in text
 
-    def test_zero_next_underscore_dash_872_repo_wide(self):
+    def test_zero_next_underscore_dash_874_repo_wide(self):
         assert _repo_grep(NEXT_US) == []
         assert _repo_grep(NEXT_DASH) == []
 
