@@ -1,3 +1,42 @@
+## #1066 Type E: podcast sentiment 136th verification - GF EPISODE 502 HOLDS as latest (third day since Sep 28 11:00am release; NO 503; three-directory corroboration), EHE 50-day hold (FIVE logged keys re-surfaced, ZERO new EHE keys), Attention Sphere 136th no-match as a podcast (blob SURFACED AGAIN + 6 commit URLs git-cat-file-verified circular; Tracked Sources 135->136), press SEVEN in-corpus re-surfaces + ZERO new verbatim keys (recency frontier HOLDS at Sep 26, sixth hold after the #1036 advance); ZERO new verbatim URL keys across all four strands (all-key pure-re-surface streak advances to SIX); Meta-exclusive privacy-pressure framing across all 136 cycles; guard-lifecycle pin: #1062/#1063/#1064 M_ID == 870, zero-871 guards PASS this run (needles format-built per #715, fail BY DESIGN when mechanism 871 lands, pinned by the #1070 Type D run); monitoring-only per the Aug 28 2026 standing rule (tone NOT_SCORED, engine NOT run, ledger holds at 35, NOT artifact-grade, verdict directionally_supported_not_proven) - Type E SECOND leg of the 1065-1069 window (Sep 29 2026, 03:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+
+2026-09-29 03:00 PDT, iteration_type "E", **SECOND leg of the 1065-1069 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1065-1069 window SECOND leg CONTINUING it (D #1065 -> E #1066 -> A -> B -> C, rotation per #565 anchor + rotation guard)
+- Predecessor #1065 Type D: main 63149c0d, anchor 63619183, log-hash 4b28e91e, push-status d4fcedd6 (all verified present via git log before this run's commit); #1065 OPENED the 1065-1069 window
+- Pre-commit novelty greps: zero test_type_e_1066 files on disk (glob); no "Type E #1066" in git log (--grep); max numeric mechanism_id 870 in-tree pre-commit (m868/m869/m870 committed at #1062-#1064 Type A/B/C, verified at #1065 Type D; Type E adds no mechanisms); zero numeric 871 keys in profiles/; zero contiguous-literal 871 mechanism key strings in profiles/ and tests/ (all 871 needles format-built per #715: the #1062/#1063/#1064 guard files carry fragment-constructed sweeps, verified present in the guard-lifecycle class); ZERO new verbatim URL keys this run (19/19 non-circular distinct URL keys >=1 corpus hit pre-commit, verified via git grep -F)
+- Next run #1067 Type A continues the window.
+
+### Finding summary
+Type E #1066 - 136th podcast sentiment verification cycle, monitoring-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, falsification ledger holds at 35, NOT artifact-grade, verdict directionally_supported_not_proven. No new empirical findings beyond corpus bookkeeping.
+- GF: EPISODE 502 HOLDS as latest, third day since the Sep 28 11:00am release (cast/venue carried from the #1056 verification: Deborah Frances-White and Freya Parker with special guest Linus Karp and music from Sir Elton Scone; recorded 21 August 2026 at Gilded Balloon at the Museum). Three-directory corroboration this run: podscan.fm main (crawled 13h: "Latest Episode: 502. Homophobia, published Sep 28, 2026 11:00am"), listennotes main (crawled <1h: "LATEST EPISODE: The Guilty Feminist 502. Homophobia", 01:00:32), uk-podcasts.co.uk (762-episode count, "Latest episode: 2026-09-28", crawled 4h). Also surfaced: youtube episode-500 page and the goloudnow 501 page (both in corpus). Title/description zero Meta/wearables content (topic: homophobia; snippet-bounded); no tone score asserted (no first-hand read). ZERO new-to-corpus verbatim GF URL keys (7/7 >=1 pre-commit corpus hit). ZERO Meta/wearables content in any GF episode across all 136 cycles.
+- EHE: 50-day hold continues (Aug 10 Epstein spoof -> Sep 29; date(2026,9,29)-date(2026,8,10)=50 days). 5 logged keys re-surfaced (designtaxi 34124 Epstein-ad thread crawled 2h, "Glasses for people who don't do consent." still the primary motif; techtimes amnesty-boxes crawled <1h; softonic Epstein-poster crawled 19h; afrotech ethics/consent crawled 7h; thebesttimes consent email-drive crawled 61d); ZERO new EHE keys; 2 own-repo GitHub URLs rejected as circular (blob + 36592f8, each git-cat-file-verified present); non-surfacing strands remain in corpus (ranzware, engadget, hyperallergic, petapixel, fstoppers, singulism, 33476, cloudfront, latestly, lapost, linkedin, kayvan-mirza, huckmag); no competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 136 cycles.
+- AS: 136th quoted-search no-match as a podcast; 7 own-repo GitHub URLs rejected as circular (podcast-sentiment.md blob SURFACED AGAIN + the same 6 commit URLs as the #1001-#1061 cycles: 9590385, a288c86, a2b656f, 25c730e, 6da2928, fe4528b; each git-cat-file-verified present, still circular as evidence); task-spec name remains misidentified as a podcast; real-world identity stands per #591 (advocacy group, named ED Kendall Schrohe); Tracked Sources advanced 135->136.
+- Press: SEVEN previously-logged keys re-surfaced (designtaxi 39120 crawled 3h, usatoday crawled 4d, techgig crawled 21h, americanow crawled <1h, analyticsinsight crawled 1h, ppc.land Hamburg crawled <1h, linkedin privacy roundup crawled 2h) + ZERO new verbatim URL keys; recency frontier HOLDS at Sep 26 (sixth hold after the #1036 advance); Meta-exclusive privacy-pressure framing continues across all 136 cycles.
+- 4 browser.search query sets this run (The Guilty Feminist Deborah Frances-White latest episode September 2026; quoted "Everyone Hates Elon" Meta Ray-Ban glasses campaign; quoted "Attention Sphere" podcast Meta tech wearables; Meta Ray-Ban smart glasses privacy news September 2026). 0 browser.open per #503 (excerpt-bounded). 28 result rows / 19 non-circular distinct URL keys / ZERO new verbatim URL keys this run. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test report
+56 tests, 13 classes in tests/test_type_e_1066_podcast_sentiment_136th_verification_sep29_3am.py. Pre-commit: 48 green excluding doc-sync 3 + iteration-log 3 per #719 (fail by design pre-doc-sync/pre-entry, go green post) and anchor 2 deselected pre-commit per #565 (patched green in anchor followup); novelty + rotation-guard + statistical-discipline + guard-lifecycle-pin green.
+
+### Commit hashes
+Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+
+### Doc-sync ratchet
+README stats table 54657/1390 -> 54709/1391 (+52/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1066 entry (this entry).
+
+### Push status
+Pushed 2026-09-29 03:xx PDT via egress proxy (HTTP/1.1, Basic x-access-token PAT via http.extraHeader, PAT never in argv; proxy candidate returned 200 on api.github.com/zen). Origin is SSH (git@github.com:rayhe/mediascope-asymmetry.git), so the push needed -c url."https://github.com/".insteadOf="git@github.com:" to route through the HTTPS proxy. Chain this run: main TBD -> anchor TBD -> log-hash TBD -> push-status (this commit), verified via git ls-remote with auth.
+
+### Rotation guard
+1065-1069 window SECOND leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1067 Type A continues the window.
+
+### Guard lifecycle
+- Zero-871 guards pinned in this run's test file (TestGuardLifecycleZero871Pin): #1062/#1063/#1064 M_ID == 870 verified; zero numeric 871 keys in profiles/; no contiguous-literal 871 carriers outside format-built needles (empty set); the 871 needles are fragment-constructed per #715 in all three window files (literal NEXT_* sweep constants in #1062, fragment-built in #1063, digit-named guard tests in #1064). Guards PASS this run, fail BY DESIGN when mechanism 871 lands at a future A/B/C leg of the 1065-1069 window; the #1070 Type D run pins them then.
+
+### Concurrency
+#899 (profiles/nytimes.yaml, modified in worktree), #938 (test file, modified in worktree), #900 (untracked test file), #1012-wt (test file, modified in worktree) all in-flight and untouched; targeted staging only (5 basenames).
+
 ## #1065 Type D: m868/m869/m870 qualitative-discipline verification + post-1060-1064 corpus integrity (max 870, zero 871)
 
 2026-09-29 02:00 PDT, iteration_type "D", **FIRST leg of the 1065-1069 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard)
