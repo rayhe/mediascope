@@ -27,7 +27,7 @@ Main commit b78e35ae (verified via git rev-parse); anchor followup 6b31fc67 (ANC
 README stats table 55163/1399 -> 55213/1400 (+50/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1075 entry (this entry).
 
 ### Push status
-TBD - pushed via the atomic proxy workflow; remote HEAD verified == local via git ls-remote.
+Pushed via the atomic proxy workflow (temp GIT_CONFIG_GLOBAL auth header, unbuffered full-suite already relaunched); remote HEAD verified == local (1e839f30890325fb3bb6382501b7de1c3ba83e94) via git ls-remote.
 
 ### Rotation guard
 1075-1079 window FIRST leg D->E->A->B->C, OPENING it (anchor patched post-commit per #565). Next: #1076 Type E continues the window.
