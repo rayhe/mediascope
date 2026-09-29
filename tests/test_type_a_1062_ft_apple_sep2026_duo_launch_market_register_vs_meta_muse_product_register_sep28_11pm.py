@@ -66,7 +66,7 @@ INFLIGHT = {
     "tests/test_type_d_900_m769_qualitative_corpus_integrity_sep21_1pm.py",  # #900
     "tests/test_type_a_1012_mittr_anthropic_sep2026_doomer_turn_agenda_setting_register_vs_carried_meta_india_havoc_m817_pairing_sep26_7am.py",  # #1012-wt
 }
-ANCHORED_SHA = "0" * 40  # patched by anchor followup per #565
+ANCHORED_SHA = "7ff7f8661887c32d04c3689d691c5219fe3ceae2"  # main commit #1062 per #565
 
 EXPECTED_ORDER = [("A", "1062"), ("E", "1061"), ("D", "1060"), ("C", "1059"), ("A", "1057")]
 EXPECTED_TESTS = 48
