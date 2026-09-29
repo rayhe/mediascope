@@ -30,7 +30,7 @@ Main commit 077d8d5e (verified via git rev-parse); anchor followup 97e5e5a4 (ANC
 README stats table 55270/1401 -> 55334/1402 (+64/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1077 entry (this entry).
 
 ### Push status
-Push status (this run, Sep 29 2026 ~14:0x PDT): main + anchor followup pushed and ls-remote-verified; log-hash followup pushed after this update (see followup).
+Pushed 736129a9..eae48b31 via the atomic proxy workflow (extraHeader Basic auth, HTTP/1.1, egress-proxy probe); remote HEAD verified == local (eae48b31e572898b1e4efb8ed1256a761abbe52b) via git ls-remote.
 
 ### Rotation guard
 1075-1079 window THIRD leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1078 Type B continues the window.
