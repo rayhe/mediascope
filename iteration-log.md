@@ -36,7 +36,7 @@ Background suite: #1065 full-suite log (type_d_1065_full_suite.log) stalled at 1
 - Forward-looking staleness: #1062/#1063/#1064 zero-871 guards FAIL BY DESIGN this run (3 numeric fail, 3 underscore/dash pass), pinned by this #1070 Type D run per the #1065 lifecycle calendar; #1067/#1068/#1069 zero-874 guards PASS this run, fail BY DESIGN when mechanism 874 lands (expected at a future A/B/C leg of the 1070-1074 window), to be pinned by the next Type D run.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit d3a261b5604e7b6d520a9a685cd71b8280aebd51 (verified via git rev-parse); anchor followup 948fd75b2c2271d51f6489668b7775be0d51f267 (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
 
 ### Doc-sync ratchet
 README stats table 54878/1394 -> 54929/1395 (+51/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1070 entry (this entry).
