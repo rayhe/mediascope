@@ -1,3 +1,41 @@
+## #1075 Type D: m874/m875/m876 qualitative-discipline verification + post-1070-1074 corpus integrity (max numeric mechanism_id 876; zero next-number 877 keys in numeric/underscore/dash mechanism forms; THIRTY-SIXTH member-form absent in profiles/, ledger holds at 35; #1070 Type D file historical repin MAX_ID 873->876 / NEXT_NUM 874->877 with the 1070-1074 window-closed-complete rotation guard; #1071/#1072/#1073 window files pinned as fail-by-design via subprocess, NOT edited; #1070 background-suite tombstone - FIFTY-SIXTH consecutive death, lineage SEVENTY-FOURTH -> SEVENTY-FIFTH; fresh synthetic engine calibration; full suite re-launched to type_d_1075_full_suite.log) - Type D FIRST leg of the 1075-1079 window, OPENING it (Sep 29 2026, 12:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+
+2026-09-29 12:00 PDT, iteration_type "D", **FIRST leg of the 1075-1079 window, OPENING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1075-1079 window FIRST leg OPENING it (D #1075 -> E #1076 -> A #1077 -> B #1078 -> C #1079, rotation per #565 anchor + rotation guard)
+- Predecessor #1074 Type C: main fbfacb6d, anchor 2bc1b586, log-hash 2a3630a5, log-hash tweak 59fc4bda (all verified present via git cat-file before this run's commit); #1073 Type B: main 44293ed2, anchor c3de2c69, log-hash 0e5c5f98; #1072 Type A: main a16c216e, anchor 0df19bbe; #1071 Type E: main 4e19c3b9, anchor df9afb8c; #1070 Type D: main d3a261b5, anchor 948fd75b; #1074 CLOSED the 1070-1074 window
+- Pre-commit novelty greps: zero test_type_d_1075 files on disk (glob); no "Type D #1075" in git log (--grep); max numeric mechanism_id 876 pre-commit; zero numeric 877 keys in profiles/; zero underscore-form and dash-form 877 mechanism key strings repo-wide pre-commit (needles format-built per #715); block keys m874/m875/m876 at designed occurrence counts pre-commit (x2/x2/x2); THIRTY-SIXTH member-form absent in profiles/ pre-commit. ASCII-only, no em dashes.
+- Next run #1076 Type E continues the 1075-1079 window; it should expect max mechanism ID 876 and the #1075 landing guards (zero-877 sweeps) passing.
+
+### Verification summary (no new corpus mechanisms this run - Type D discipline check)
+- m874 (Type A #1072, guardian.yaml 4-space block): Guardian Sep-28 Astra-cancellation safety-crisis register on the deal partner (OpenAI, Feb 2025 licensing partner) - MANUAL ILLUSTRATIVE -0.35 (relay-attested per #503) vs carried Meta arms from mechanism 687 (not re-scored per #807); illustrative_delta_openai_minus_meta +0.15 - the payer sits at the HARDER end, deal-partner-hardness replication at the safety-crisis peg; statistical_discipline nested (scorer none, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant false, engine_run false, verdict directionally_supported_not_proven, no_analysis_json_update true); falsification_family "NOT a member - payer directionally softer in illustrative arithmetic (+0.15); ledger holds at 35".
+- m875 (Type B #1073, journalists.yaml ben_schoon competitor_coverage 4-space block): FIRST dedicated Type B on Ben Schoon (9to5Google) - within-piece blame-attribution asymmetry at the Connect-2026 stigma peak: Meta A1 Weekender blame -0.45 vs Samsung/Google victim framing +0.10 vs Meta A2 news-register control +0.05; illustrative delta +0.55; BOUNDS m131 (proportional-vocabulary calibration does not extend to the blame register), EXTENDS m171 (Bader's trust differential now has a Schoon-voice counterpart); statistical_discipline prose-only (MANUAL/qualitative, NOT_CALCULATED, is_significant false, engine NOT run, NOT artifact-grade); falsification_family NOT a member, ledger holds at 35.
+- m876 (Type C #1074, competitor-entities.yaml zero-indent block): FIRST dedicated corpus mechanism on the Nvidia x insurer risk-transfer architecture (Aug 10 2026 Wall Street MOUs; ~$12.9B insurance coverage Sep 2026) - RISK-TRANSFER as the TWENTY-SECOND relationship direction per the m807 enumeration (MOU/INSURANCE/CDS/MISMATCH legs, coverage nexus tone NOT_SCORED); tone_scored/engine_run/is_significant False, verdict directionally_supported_not_proven, no_analysis_json_update true, artifact_grade false; falsification_family_member False - NOT a falsification-family member (financial-architecture mapping per #609/#614), ledger holds at 35.
+- Research method this run: 0 browser.search / 0 browser.open - pure corpus-integrity verification; all mechanism facts re-read from the home YAMLs first-hand via the test file's block parsers. No new URLs.
+
+### Statistical discipline
+MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule across m874/m875/m876: no tone arms scored by this run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False / not asserted at the finding layer; scorer none; engine NOT run on any finding; no significance claimed; NOT artifact-grade; verdict directionally_supported_not_proven; no analysis.json update; correlation is not causation. The synthetic engine calibration in the test file is engine-layer contract verification only (fresh synthetic corpora, never promoted to a finding).
+
+### Test report
+50 tests, 13 classes in tests/test_type_d_1075_m874_m875_m876_qualitative_corpus_integrity_sep29_12pm.py. Pre-commit: 41 green excluding the by-design set (2 staging + 4 doc-sync-dependent: 3 doc-ratchet + 1 suite-relaunch; the 3 itlog tests pass once the entry is prepended), with 3 deselected (novelty-anchor 1 + rotation-guard 2 per #565, patched/pinned green in the anchor followup). Post-doc-sync re-run: 45 green + 3 deselected; anchor/rotation tests patched green in the anchor followup; itlog tests green in the log-hash followup.
+
+### Commit hashes
+Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 50/50 file tests green post-doc-sync); log-hash followup TBD updates this line (this commit).
+
+### Doc-sync ratchet
+README stats table 55163/1399 -> 55213/1400 (+50/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1075 entry (this entry).
+
+### Push status
+TBD - pushed via the atomic proxy workflow; remote HEAD verified == local via git ls-remote.
+
+### Rotation guard
+1075-1079 window FIRST leg D->E->A->B->C, OPENING it (anchor patched post-commit per #565). Next: #1076 Type E continues the window.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
+
 ## #1074 Type C: Nvidia x insurer risk-transfer architecture (Aug-10-2026 Wall Street MOUs; ~$12.9B insurance coverage Sep 2026) - RISK-TRANSFER as the TWENTY-SECOND relationship direction, mechanism 876 - FIRST dedicated corpus mechanism on the supplier-guarantee-to-insurer second hop: the supplier lays off its own backstop exposure to third-party insurers and routes buildout capital through SPVs into insurance/retirement balance sheets; depreciation risk exits the AI supply chain relabeled as investment-grade fixed income; NOT a falsification-family member, ledger holds at 35 - Type C FIFTH and CLOSING leg of the 1070-1074 window (Sep 29 2026, 11:00 PDT; main commit fbfacb6d / anchor fbfacb6d; log-hash followup registers both hashes here per #721 (this commit: 2a3630a5b111404b3f156a74f3221e8b84666944))
 
 2026-09-29 11:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1070-1074 window, CLOSING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
