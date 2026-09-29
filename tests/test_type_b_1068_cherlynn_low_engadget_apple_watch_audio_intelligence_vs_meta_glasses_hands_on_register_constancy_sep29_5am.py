@@ -53,15 +53,15 @@ OWN_BASENAME = os.path.basename(__file__)
 PROFILE = "profiles/careers/journalists.yaml"
 JOURNALIST_KEY = "cherlynn_low"
 MECH_KEY = "type_b_1068_cherlynn_low_engadget_apple_watch_audio_intelligence_vs_meta_glasses_hands_on_register_constancy_sep29"
-M_ID = 872
+M_ID = 873
 OWN_M_ID = 872  # own mechanism for this file's structure tests; M_ID tracks the corpus max
 ITER = 1068
 TYPE_LETTER = "B"
 RUN_PDT = "2026-09-29 05:00 PDT"
 MECH_ID_MARKER = "mechanism" + "_872"  # own-mechanism marker (underscore form)
-NEXT_US = "mechanism" + "_873"  # next-number underscore sweep
-NEXT_DASH = "mechanism" + "-873"  # next-number dash sweep
-NEXT_NUMERIC = "mechanism_id: " + "873"  # next-number numeric sweep
+NEXT_US = "mechanism" + "_874"  # next-number underscore sweep
+NEXT_DASH = "mechanism" + "-874"  # next-number dash sweep
+NEXT_NUMERIC = "mechanism_id: " + "874"  # next-number numeric sweep
 OWN_STAGED_SET = {
     "profiles/careers/journalists.yaml",
     "tests/test_type_b_1068_cherlynn_low_engadget_apple_watch_audio_intelligence_vs_meta_glasses_hands_on_register_constancy_sep29_5am.py",
@@ -388,14 +388,14 @@ class TestMechanism872Discipline:
 
 
 # ---------------------------------------------------------------------------
-# 8. Post-commit corpus novelty: 872 is max, 873 is zero
+# 8. Post-commit corpus novelty: 873 is max, 874 is zero
 # ---------------------------------------------------------------------------
 class TestCorpusNoveltyPostCommit:
-    def test_max_numeric_mechanism_id_is_872(self):
+    def test_max_numeric_mechanism_id_is_873(self):
         ids = _corpus_ids()
         assert max(ids) == M_ID
 
-    def test_zero_next_numeric_873_in_profiles(self):
+    def test_zero_next_numeric_874_in_profiles(self):
         base = os.path.join(REPO_ROOT, "profiles")
         for root, _, files in os.walk(base):
             for fn in files:
@@ -403,7 +403,7 @@ class TestCorpusNoveltyPostCommit:
                     text = _read(os.path.join(root, fn))
                     assert NEXT_NUMERIC not in text
 
-    def test_zero_next_underscore_dash_873_repo_wide(self):
+    def test_zero_next_underscore_dash_874_repo_wide(self):
         assert _repo_grep(NEXT_US) == []
         assert _repo_grep(NEXT_DASH) == []
 
