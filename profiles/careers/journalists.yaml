@@ -8461,6 +8461,89 @@ journalists:
   notes: 'Key migration: Bloomberg → Wired. UK-based reporter with MSci Physics from Imperial College London and 2025 John Schofield Trust Fellow. Covered multiple desks at Bloomberg (tech, economy, government, markets, equities) before joining Wired as staff writer in London (June 2026). Notable for quantum computing coverage (Google Willow chip, Nu Quantum, JPMorgan) and transition to science/biotech beat at Wired (longevity, cellular rejuvenation). Part of Wired''s post-print- cancellation London editorial rebuild alongside deputy editor Rosie Swash (Guardian veteran). Unusual pipeline into Wired  -  Bloomberg financial/markets background rather than the Gizmodo/Vice/Guardian adversarial-journalism pipeline that characterizes most Drummond-era hires. Her hard-science training (physics MSci) gives her technical depth comparable to Will Knight (anthropology) and Will Douglas Heaven (PhD computer science) at MIT Tech Review. KEY FOR MEDIASCOPE: (1) Bloomberg → Wired migration offers a clean
     institutional comparison  -  business journalism norms vs Condé Nast editorial culture. (2) Her physics background and quantum coverage create a testable specialization signal  -  does science expertise produce different framing than generalist tech reporting? (3) London rebuild context  -  she and Swash are the two editorial hires rebuilding Wired''s UK presence after the print edition cancellation and mass departures.'
   multi_publication: true
+  mechanism_ids: [878]
+  competitor_coverage:
+    type_b_1078_isabella_ward_wired_openai_vs_anthropic_accountability_register_constancy_sep29:
+      iteration: 1078
+      mechanism_id: 878
+      iteration_type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-09-29 15:00 PDT'
+      block_key: type_b_1078_isabella_ward_wired_openai_vs_anthropic_accountability_register_constancy_sep29
+      test_file: tests/test_type_b_1078_isabella_ward_wired_openai_vs_anthropic_accountability_register_constancy_sep29_3pm.py
+      author: Kit (with Ray)
+      journalist: Isabella Ward
+      publication: WIRED
+      primary_entity: OpenAI
+      comparator_entity: Anthropic
+      finding_type: journalist_cross_entity_register_constancy
+      window: '1075-1079'
+      design: 'Writer-level deal-gradient test: does Isabella Ward (WIRED Business desk, Bloomberg migration June 2026) soften the accountability register on the licensing deal partner (OpenAI, Conde Nast Aug 2024 multi-year deal, m877 financial_context) relative to a non-deal competitor (Anthropic)? Carries the OpenAI arm un-rescored per #807 (m877, -0.35) and adds a fresh excerpt-tier Anthropic arm from the same writer 41 days earlier (-0.40). Uniform payer-softening prediction: OpenAI softer by >=0.15. Observed illustrative delta (Anthropic minus OpenAI): -0.05, near-null. The prediction fails substantively: the deal partner is covered at essentially the same hardness as the non-deal competitor. EXTENDS #877 from publication-level to a writer-level falsification pair. Scope note: no Isabella Ward Meta byline surfaced (4 search sets this run); the pair is cross-competitor by necessity, and the deal prediction is entity-general, so the falsification test is valid for the family.'
+      openai_arm:
+        piece: 'OpenAI Delays Release of Latest Model Over Safety Concerns'
+        author: Isabella Ward
+        publication: WIRED
+        date: '2026-09-29'
+        register: accountability
+        illustrative_tone: -0.35
+        tone_basis: 'Carried from m877 per #807 (excerpt-tier, relay-attested per #503): Astra 6.1 failed to meet safety standards, worse at sticking to human values and goals than previous systems per OpenAI to WIRED; apology for the Australian government website hack handling; DevDay-eve timing; safety-cancellation accountability register on the licensing deal partner.'
+        urls:
+          - url: https://wesearch.press/s/openai-delays-release-of-latest-model-over-safety-concerns-11bacbdf
+            what: 'Mirror of the Ward WIRED original (WIRED attribution, Photo-Illustration: Wired Staff); carried from m877'
+            carried: true
+          - url: https://www.aob-news.com/2026/09/29/openai-delays-release-of-latest-model-over-safety-concerns/
+            what: 'Relay of the Ward WIRED original; carried from m877'
+            carried: true
+      anthropic_arm:
+        piece: 'Coders Say They Already Found Workarounds to Claude''s Invisible Watermarks'
+        author: Isabella Ward
+        publication: WIRED
+        date: '2026-08-19'
+        register: accountability_plus_harm_consequence
+        illustrative_tone: -0.40
+        tone_basis: 'Excerpt-tier (secondary digest, not relay-attested): Anthropic confirmed Claude models embed invisible machine-readable watermarks (Google SynthID, in use since 2023) for EU AI Act transparency-code compliance (effective Aug 2 2026, fines up to 3% of turnover, 190 orgs signed); within four hours Guillaume Meyer published an override running watermarked text through a non-watermarking LLM with synonym swaps and reorganization, destroying the word-choice pattern (20,000+ X bookmarks, 100+ contributors, folded into Haimaker); Meyer not against transparency and all for content attribution but calls watermarking a really bad solution (false positives; cannot distinguish light from heavy AI use); native French speaker using Claude plus Grammarly fears employers rejecting candidates on a probability-only signal; AI specialist: the issue is practically history just one day later; chrismeah corroboration: a working override appeared within four hours and the detector that would verify any of it has not shipped. Register: accountability plus harm-consequence; the compliance instrument is dead on arrival and foregrounds concrete false-positive harm.'
+        urls:
+          - url: https://github.com/shermesagent/ai-agency-knowledgebase/blob/HEAD/00-Daily-Digests/2026-08-23.md
+            what: 'Secondary digest excerpt (~450 words) of the Ward WIRED piece: watermark workaround, four-hour override, Meyer quotes, EU fine context; novel this run'
+            novel: true
+          - url: https://chrismeah.substack.com/p/is-work-working-for-juniors
+            what: 'Corroborating excerpt: four-hour override, unshipped detector; novel this run'
+            novel: true
+          - url: https://en.wikipedia.org/wiki/Artificial_intelligence_content_watermarking
+            what: 'Byline and date corroboration: Ward, Isabella (19 August 2026), Coders Say They Already Found Workarounds to Claude''s Invisible Watermarks, Wired; novel this run'
+            novel: true
+      illustrative_delta_anthropic_minus_openai: -0.05
+      delta_calc: '-0.40 - (-0.35) = -0.05, near-null. Uniform deal-gradient prediction (>=0.15 softening toward the payer) fails substantively; the +0.05 direction toward the payer is negligible.'
+      confounders_ranked:
+        - 'STRONG excerpt-tier (Anthropic arm from a secondary digest excerpt, no first-hand read, not relay-attested)'
+        - 'STRONG temporal gap (41 days: Aug 19 vs Sep 29; news cycles differ)'
+        - 'STRONG peg mismatch (trust-mechanism failure vs safety-model cancellation; comparability rests on the shared accountability register)'
+        - 'MODERATE desk confound (Business desk vs tech-reporting desk; Ward''s institutional DNA is business-journalism)'
+        - 'MODERATE n=1 degenerate sample'
+        - 'MODERATE carried-arm fidelity (OpenAI arm carried per #807, not re-read)'
+        - 'WEAK byline-attribution risk (byline corroborated by the Wikipedia citation, not WIRED itself)'
+      counterevidence:
+        - 'The direction IS payer-softer by 0.05 (consistent with the naive prediction''s direction; only the magnitude fails)'
+        - 'm712: WIRED''s briefed relay (+0.15) shows the accountability register''s exemption is conditional on briefing access, not the deal'
+        - 'The Anthropic piece''s adversarial edge targets the watermarks'' effectiveness (a policy instrument), not Anthropic''s motives - register-adjacent rather than identical'
+        - 'The OpenAI arm led with OpenAI''s own framing and apology - partially company-voice, pulling -0.35 up from harder'
+        - 'The primary excerpt carrier is a third-party digest - selection risk on which quotes Ward chose'
+      verdict: falsified_softer_prediction
+      verdict_note: 'The uniform payer-softening prediction (>=0.15) fails at the writer level for the safety/trust-mechanism accountability peg. THIRTY-SIXTH falsification-family member (ledger 35->36). Second writer-level deal-gradient falsification in the Sep-28/29 Astra window after #1038 (O''Brien, 33rd member). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule.'
+      research_method: '4 browser.search query sets this run (Isabella Ward wired openai safety astra; Isabella Ward wired anthropic watermark - full-text digest found; Isabella Ward wired anthropic - byline corroboration via Wikipedia; Isabella Ward wired meta - zero bylines found, scope held at cross-competitor writer-level pair). 0 browser.open per #503. Pre-commit novelty greps per #715. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. Engine NOT run. verdict directionally_supported_not_proven. no_analysis_json_update true. NOT artifact-grade. n=1 writer-level pair; hypothesis-generating only. Correlation is not causation.'
+      falsification_family: 'THIRTY-SIXTH falsification-family member (ledger 35->36). The Conde Nast x OpenAI Aug 2024 multi-year licensing deal (coverage_prediction softer, m877 financial_context) sits on the adversarially-covered side at the writer level: Isabella Ward runs the accountability register at -0.35 on the deal partner (OpenAI, m877 carried) and -0.40 on the non-deal competitor (Anthropic, fresh excerpt-tier), illustrative delta -0.05 near-null; the uniform payer-softening prediction (>=0.15) fails substantively (the +0.05 direction is negligible). Second writer-level deal-gradient falsification in the Sep-28/29 Astra window after #1038 (O''Brien, 33rd member). Confined to the safety/trust-mechanism accountability peg; m712''s briefed-relay softness bounds the register to un-briefed news. MANUAL ILLUSTRATIVE ONLY.'
+      falsification_ledger: 36
+      cross_refs:
+        - '#877: EXTENDS from publication-level m877 to a writer-level falsification pair (same OpenAI piece as the carried arm)'
+        - '#1038: the other writer-level deal-gradient falsification (O''Brien, 33rd member)'
+        - '#1068: register constancy pair (Cherlynn Low, non-falsification)'
+        - '#1058: Ropek OpenAI-vs-Meta In Brief contrast (deal-gradient family)'
+        - '#528: Chokkattu Apple-vs-Meta gradient (found a gradient; different journalist)'
+        - 'm712: briefed-relay softness bound'
+      no_analysis_json_update: true
 - career:
   - beat: English language teaching
     end: 2007-07
