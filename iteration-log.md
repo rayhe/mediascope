@@ -36,7 +36,7 @@ Background suite: #1060 full-suite log (type_d_1060_full_suite.log) stalled at 2
 - Forward-looking staleness: #1062/#1063/#1064 zero-871 guards PASS this run, fail BY DESIGN when mechanism 871 lands (expected at a future A/B/C leg of the 1065-1069 window), pinned by the #1070 Type D run.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse post-commit); anchor followup patches ANCHORED_SHA per #565; log-hash followup per #721 if required.
+Main commit 63149c0d (63149c0da803e6ca712038f26d637eea5a03de2c, verified via git rev-parse); anchor followup 63619183 (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721.
 
 ### Doc-sync ratchet
 README stats table 54608/1389 -> 54657/1390 (+49/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1065 entry (this entry).
