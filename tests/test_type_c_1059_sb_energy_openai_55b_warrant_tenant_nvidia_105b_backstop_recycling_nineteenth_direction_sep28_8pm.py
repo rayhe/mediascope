@@ -43,7 +43,7 @@ NEXT_US = "mechanism" + "_" + "86" + "8"  # next-number underscore sweep
 NEXT_DASH = "mechanism" + "-" + "86" + "8"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id" + ": " + "86" + "8"  # next-number numeric sweep
 OWN_BASENAME = os.path.basename(__file__)
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # patched in the anchor followup commit
+ANCHORED_SHA = "b7261ef57336f19c97da693e7deddf397bec87a3"  # patched in the anchor followup commit
 NOVELTY_CLAIMS = (
     "zero\ntest_type_c_1059 files, max numeric\nmechanism_id 866 pre-commit, "
     "block key zero-hit, 7 novel\nURLs zero-hit, SB Energy absent"
