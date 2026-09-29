@@ -58,7 +58,7 @@ NEXT_DASH = "mechanism" + "-866"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id: " + "866"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1057"), ("E", "1056"), ("D", "1055"), ("C", "1054"), ("B", "1053")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "c38cb8b7cdeb9df2ce748218fc6809f1fc02d6d3"
 
 GIZMODO_URL = "https://gizmodo.com/?p=2000818566"
 META_URL = "https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000784400"
