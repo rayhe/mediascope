@@ -1,4 +1,4 @@
-## #1078 Type B: Isabella Ward (WIRED) x OpenAI vs x Anthropic accountability-register constancy - THIRTY-SIXTH falsification-family member (mechanism 878; ledger 35->36); illustrative delta -0.05 near-null; uniform payer-softening prediction fails at the writer level - Type B FOURTH leg of the 1075-1079 window, CONTINUING it (Sep 29 2026, 15:00 PDT; main commit bb6631ba / anchor db5cf513; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1078 Type B: Isabella Ward (WIRED) x OpenAI vs x Anthropic accountability-register constancy - THIRTY-SIXTH falsification-family member (mechanism 878; ledger 35->36); illustrative delta -0.05 near-null; uniform payer-softening prediction fails at the writer level - Type B FOURTH leg of the 1075-1079 window, CONTINUING it (Sep 29 2026, 15:00 PDT; main commit bb6631ba / anchor db5cf513; log-hash followup registers both hashes here per #721 (this commit: e5260a66e4c5ee1b5627418a1ba19aa643834b17))
 
 2026-09-29 15:00 PDT, iteration_type "B", **FOURTH leg of the 1075-1079 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -23,7 +23,7 @@ Type B #1078 (mechanism 878) - Isabella Ward (WIRED) x OpenAI vs x Anthropic acc
 76 tests, 17 classes in tests/test_type_b_1078_isabella_ward_wired_openai_vs_anthropic_accountability_register_constancy_sep29_3pm.py. Pre-commit: 64 green with 12 deselected (novelty-anchor 1 per #565 + rotation-guard 3 + doc-sync 4 per #719 + itlog 4 per #721; the anchor test patched green in the anchor followup). Post-doc-sync re-run: 74 green + 2 pre-commit-only deselected (no-Type-B-#1078-in-git-log, anchor-placeholder - fail BY DESIGN post-commit); itlog tests green in the log-hash followup.
 
 ### Commit hashes
-Main commit bb6631ba (verified via git rev-parse); anchor followup db5cf513 (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit bb6631ba (verified via git rev-parse); anchor followup db5cf513 (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: e5260a66e4c5ee1b5627418a1ba19aa643834b17).
 
 ### Doc-sync ratchet
 README stats stale-corrected per count_stats.py --check: claimed 55334/1402/272 vs authoritative 54392/1402/273; corrected to authoritative base, own +76/+1 -> 54468/1403/273 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1078 entry (this entry).
