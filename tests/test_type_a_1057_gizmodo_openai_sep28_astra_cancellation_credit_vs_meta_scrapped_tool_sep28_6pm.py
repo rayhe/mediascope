@@ -47,15 +47,15 @@ import yaml
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 OWN_BASENAME = os.path.basename(__file__)
 MECH_KEY = "gizmodo_openai_astra_cancellation_credit_normalization_vs_meta_scrapped_tool"
-M_ID = 865
+M_ID = 866
 ITER = 1057
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-28 18:00 PDT"
 # Concatenated per #715 so this file never carries the contiguous literals.
 MECH_ID_MARKER = "mechanism" + "_865"  # own-form underscore sweep marker
-NEXT_US = "mechanism" + "_866"  # next-number underscore sweep
-NEXT_DASH = "mechanism" + "-866"  # next-number dash sweep
-NEXT_NUMERIC = "mechanism_id: " + "866"  # next-number numeric sweep
+NEXT_US = "mechanism" + "_867"  # next-number underscore sweep
+NEXT_DASH = "mechanism" + "-867"  # next-number dash sweep
+NEXT_NUMERIC = "mechanism_id: " + "867"  # next-number numeric sweep
 EXPECTED_ORDER = [("A", "1057"), ("E", "1056"), ("D", "1055"), ("C", "1054"), ("B", "1053")]
 # Patched to the real main-commit SHA in the anchor followup per the #565 convention.
 ANCHORED_SHA = "c38cb8b7cdeb9df2ce748218fc6809f1fc02d6d3"
@@ -423,11 +423,11 @@ class TestMechanism865Discipline:
 # 8. Corpus novelty post-commit
 # ---------------------------------------------------------------------------
 class TestCorpusNoveltyPostCommit:
-    def test_max_numeric_mechanism_id_is_865(self):
+    def test_max_numeric_mechanism_id_is_866(self):
         ids = _corpus_ids()
         assert max(ids) == M_ID
 
-    def test_zero_next_numeric_866_in_profiles(self):
+    def test_zero_next_numeric_867_in_profiles(self):
         text = "\n".join(
             _read(os.path.join(root, fn))
             for root, _, files in os.walk(os.path.join(REPO_ROOT, "profiles"))
@@ -436,7 +436,7 @@ class TestCorpusNoveltyPostCommit:
         )
         assert NEXT_NUMERIC not in text
 
-    def test_zero_next_underscore_dash_866_repo_wide(self):
+    def test_zero_next_underscore_dash_867_repo_wide(self):
         assert _repo_grep(NEXT_US) == []
         assert _repo_grep(NEXT_DASH) == []
 

@@ -337,31 +337,32 @@ class TestCorpusNoveltyPreCommitGreps:
         files = glob.glob(os.path.join(REPO, "tests", "*type_e_1056*"))
         assert len(files) == 1
 
-    def test_max_numeric_mechanism_id_865(self):
+    def test_max_numeric_mechanism_id_866(self):
         n7 = "mechanism" + "_id" + ":"
         maxid = 0
         for f in glob.glob(os.path.join(REPO, "profiles", "**", "*.yaml"), recursive=True):
             for m in re.finditer(n7 + r"\s*(\d+)", open(f, errors="ignore").read()):
                 maxid = max(maxid, int(m.group(1)))
-        # 865 in-tree: m862 committed at #1052 Type A, m863 at #1053
+        # 866 in-tree: m862 committed at #1052 Type A, m863 at #1053
         # Type B, m864 at #1054 Type C, all verified at #1055 Type D,
-        # m865 at #1057 Type A. Type E adds no mechanisms. (The
-        # in-flight #899 m771 hunk does not change the max.)
-        assert maxid == 865
+        # m865 at #1057 Type A, m866 at #1058 Type B. Type E adds no
+        # mechanisms. (The in-flight #899 m771 hunk does not change
+        # the max.)
+        assert maxid == 866
 
     def test_zero_numeric_next_keys_in_profiles(self):
         # Next-number numeric form absent from profiles/ (format-built
         # needle per #715: no literal next-number key string carried).
-        d1 = "86" + "6"
+        d1 = "86" + "7"
         out = _git(["grep", "-nE", f"mechanism_id:[[:space:]]*{d1}([^0-9]|$)", "--", "profiles/"]).stdout
         assert out.strip() == ""
 
     def test_zero_format_built_next_carriers_in_profiles(self):
         # Format-built needles per #715: no literal next-number key
         # strings carried. profiles/ is designed colon-form; no
-        # 865 carriers exist in profiles/ at all.
-        n1 = "m" + "ech" + "an" + "is" + "m" + "_" + "86" + "5"
-        n2 = "mech" + "anism" + "-" + "86" + "5"
+        # 866 carriers exist in profiles/ at all.
+        n1 = "m" + "ech" + "an" + "is" + "m" + "_" + "86" + "6"
+        n2 = "mech" + "anism" + "-" + "86" + "6"
         hits = []
         for p in glob.glob(os.path.join(REPO, "profiles", "**", "*.yaml"), recursive=True):
             t = open(p, errors="ignore").read()
@@ -370,18 +371,15 @@ class TestCorpusNoveltyPreCommitGreps:
         assert hits == []
 
     def test_next_carriers_in_tests_pinned_to_guard_files(self):
-        # Underscore/dash 865 needles in tests/ must appear ONLY in the
-        # pinned guard carriers: the committed #1054 Type C test file
-        # (forward-looking guard literals in test_zero_next_id_865)
-        # and the committed #1055 Type D test file (carrier-pin
-        # documentation). Own file carries no 865 literal (excluded);
-        # no new carrier may appear this run.
-        n1 = "m" + "ech" + "an" + "is" + "m" + "_" + "86" + "5"
-        n2 = "mech" + "anism" + "-" + "86" + "5"
-        pinned = {
-            "test_type_c_1054_nvidia_anthropic_ipo_anchor_stake_demand_recycling_eighteenth_direction_sep28_3am.py",
-            "test_type_d_1055_m862_m863_m864_qualitative_corpus_integrity_sep28_4am.py",
-        }
+        # Underscore/dash 866 needles in tests/ must appear ONLY in the
+        # pinned guard carriers (empty set this run: #1054's
+        # forward-looking literals covered 865; no committed test file
+        # carries an 866 literal - all 866 needles are format-built per
+        # #715). Own file carries no 866 literal (excluded); no new
+        # carrier may appear this run.
+        n1 = "m" + "ech" + "an" + "is" + "m" + "_" + "86" + "6"
+        n2 = "mech" + "anism" + "-" + "86" + "6"
+        pinned = set()
         hits = set()
         for p in glob.glob(os.path.join(REPO, "tests", "test_*.py")):
             if os.path.basename(p) == THIS_FILE:

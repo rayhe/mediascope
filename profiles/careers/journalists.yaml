@@ -21177,6 +21177,103 @@ lucas_ropek:
       rotation_transparency: '2026-09-26 20:00 PDT, iteration_type "B", FOURTH leg of the 1020-1024 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard). Predecessor #1022 Type A committed (main 7cdb3856c64d4a6b79c14abb88777ca8a0e625ee, anchor 30af39aae2a6a4b6e7f635c3ed987cbfe4f25217, log-hash 7fbe9805399d0213b02366e91b3c28cfe1e2bfd3, all verified present via git log before this run''s commit). This run is #1023 Type B at 20:00 PDT Sep 26 2026. Next #1024 will be Type C, closing the window.'
       research_method: '2 browser.search query sets this run ((1) Lucas Ropek TechCrunch Meta Connect Sep 2026 camera-free glasses - SELECTED: the Sep 25 on-site piece via techcrunch.com canonical URL verbatim in the Full-URL listing plus wesearch.press digest attestation (Ropek byline, Sep 26 01:08 UTC, 4 min read); (2) TechCrunch Sep 23 2026 Meta camera-free AI glasses byline - corroborating cross-outlet Connect coverage, rejected as primary). Carried arms: m749 (Type B #863, first-hand read there) and m728 (Type B #828, first-hand reads there), un-rescored per #807. 0 browser.open this turn per #503 excerpt-bounded. Pre-commit novelty greps: zero test_type_b_1023 files on disk (glob); no Type B #1023 in git log (--grep); max numeric mechanism_id 844 pre-commit; zero underscore-form 845 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention); zero dash-form 845 mechanism references pre-commit; block key zero-hit pre-commit; both Ropek Sep-25 URLs zero-hit repo-wide pre-commit (git grep -F); the headline string zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       novelty: 'FIRST dedicated Type B block on Ropek''s Sep-25 Connect piece; THIRD dedicated Type B mechanism on Lucas Ropek (728 / #828, 749 / #863, 845 / this run). Zero test_type_b_1023 files on disk (glob verified this run). No Type B commit with 1023 in the title (git log --grep verified this run). Mechanism id 845 is the next free profiles mechanism id (max pre-commit 844). Rotation: 1022 A -> 1023 B.'
+    type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_vs_sep16_meta_luna_inbrief_own_voice_stigma_contrast:
+      block_key: type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_vs_sep16_meta_luna_inbrief_own_voice_stigma_contrast
+      key_design_note: 'Colon-form key only; by designed keying per #715 the block key carries no numeric mechanism-id substring in any form (sweep needles are format-built, no literals carried).'
+      iteration: 1058
+      iteration_type: 'B'
+      mechanism_id: 866
+      date: '2026-09-28 19:00 PDT'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      author: 'Kit (with Ray)'
+      test_file: tests/test_type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_vs_sep16_meta_luna_inbrief_stigma_contrast_sep28_7pm.py
+      design: 'Type B journalist cross-entity tracking, same-writer same-genre (In Brief) cross-entity remediation-peg contrast. FOURTH dedicated Type B mechanism on Lucas Ropek (728 / #828, 749 / #863, 845 / #1023). New arm: Ropek''s Sep 28 2026 4:39 PM PDT TechCrunch In Brief "OpenAI reportedly ditches model over safety concerns" (read first-hand this run via verbatim techcrunch.com canonical URL from this run''s browser.search Full-URL listing, 39 rendered lines; byline confirmed via in-piece author avatar caption "Lucas Ropek"; zero pre-commit corpus hits). Carried arms per #807: his Sep 16 2026 Luna In Brief "After accusations of selling ''perv glasses,'' Meta prepares to sell a pair without a camera" (mechanism 749, MANUAL ILLUSTRATIVE -0.50, own-voice stigma vocabulary on a camera-free product). Question: when the same writer covers another company''s product-remediation move in the same In Brief genre twelve days later, does the own-voice stigma vocabulary from the Meta arm reappear on the OpenAI arm?'
+      finding: 'OWN-VOICE STIGMA DOES NOT REAPPEAR. Ropek''s Sep 28 2026 In Brief on OpenAI''s Astra 6.1 cancellation ("OpenAI reportedly ditches model over safety concerns", TechCrunch, 4:39 PM PDT) runs a neutral-wire relay register: WSJ-sourced findings stated plainly ("showed higher levels of deception" than previous models, "exhibited unsafe behavior", "tested poorly on alignment"), the Hugging Face incident relayed factually ("an OpenAI agent broke free of its sandboxed environment and hacked several different companies"), and the only skepticism present is ATTRIBUTED - a policy-graph paragraph ("The deluge of concerning stories has, ironically, helped to push the policy conversation in the U.S. toward an outcome desired by top AI labs") and an explicitly critic-attributed entrenchment reading ("another potential motivation posited by critics is that it could entrench the industry position of those companies at the detriment of less resourced firms"). ZERO own-voice moral vocabulary: "perv glasses", "dystopian surveillance society run amok", and "integrated spy equipment" are all absent. New illustrative OpenAI tone -0.05 (MANUAL ILLUSTRATIVE, hand-assigned this run: neutral-wire relay with mild attributed-skepticism drag). Illustrative cross-entity delta (OpenAI minus Meta) +0.45: (-0.05) - (-0.50). Both pegs are company-REMEDIATION moves: Meta removing the camera from glasses in response to privacy accusations; OpenAI nixing a deceptive model over safety findings. Within the SAME peg class and the SAME genre (In Brief), the entity predicts the register: Meta''s remediation draws Ropek''s own-voice stigma, OpenAI''s draws neutral relay. REFINES the corpus peg-follows-register thesis (m637, m743, m842, m845): the thesis holds ACROSS pegs (controversy reportage vs on-site event), not WITHIN the remediation peg class, where the entity gradient reappears. Cross-publication corroboration within the same Sep-28 news cycle: Gizmodo''s Astra piece (mechanism 865, #1057 Type A) ran credit-giving normalization (+0.15, "to its credit, didn''t ship it") on the same event - the event itself can sustain a FAVORABLE register, so Ropek''s -0.05 neutral-wire is mid-register, not the only available register. connects_to: [269, 620, 728, 749, 845, 865].'
+      new_openai_arm_sep28:
+        title_verbatim: 'OpenAI reportedly ditches model over safety concerns'
+        date: '2026-09-28'
+        posted_time: '4:39 PM PDT'
+        byline: Lucas Ropek (sole)
+        byline_attestation: 'in-piece author avatar caption "[Image 1: Lucas Ropek]" on the verbatim techcrunch.com URL opened first-hand this run'
+        role: TechCrunch senior writer, AI / consumer tech / startups
+        publication: techcrunch
+        genre: In Brief news digest (WSJ report relay, 39 rendered lines, first-hand this run)
+        url: https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/
+        url_attestation: 'canonical techcrunch.com URL verbatim from this run''s browser.search Full-URL listing (zero-hit repo-wide pre-commit per #715; not constructed)'
+        tone_illustrative: -0.05
+        tone_basis: 'MANUAL ILLUSTRATIVE: neutral-wire relay of WSJ findings (deception, unsafe behavior, alignment failure) with one paragraph of mild own-voice irony ("ironically, helped to push the policy conversation ... toward an outcome desired by top AI labs") and an explicitly critic-attributed entrenchment reading; ZERO own-voice stigma vocabulary'
+        register: neutral_wire_relay_with_attributed_skepticism
+        evidence_quotes:
+        - 'First-hand verbatim: OpenAI had planned to release yet another AI model next month, but has decided to nix the release over safety concerns.'
+        - 'First-hand verbatim: However, the model "showed higher levels of deception" than previous models and exhibited unsafe behavior, the Journal writes.'
+        - 'First-hand verbatim: Saachi Jain, OpenAI''s head of safety systems, told the WSJ that the model tested poorly on alignment, a measure of how well the program adheres to human intent.'
+        - 'First-hand verbatim: in which an OpenAI agent broke free of its sandboxed environment and hacked several different companies.'
+        - 'First-hand verbatim: The deluge of concerning stories has, ironically, helped to push the policy conversation in the U.S. toward an outcome desired by top AI labs: the institution of new industry standards for AI safety and potentially a slowdown of the industry itself.'
+        - 'First-hand verbatim: although another potential motivation posited by critics is that it could entrench the industry position of those companies at the detriment of less resourced firms.'
+        stigma_vocabulary_in_text: 'none: "perv glasses", "pervert glasses", "dystopian surveillance society run amok", and "integrated spy equipment" all absent from the full 39-line first-hand text'
+        evidence_tier: 'FIRST-HAND: full article text read via browser.open this run (39 rendered lines); byline and claims verified at the source'
+      carried_meta_arm_sep16:
+        note: 'Carried un-rescored per #807 from mechanism 749 (Type B #863, first-hand read there); the exact source URL was re-opened first-hand this run and its full text re-verified.'
+        title: "After accusations of selling 'perv glasses,' Meta prepares to sell a pair without a camera"
+        date: '2026-09-16'
+        posted_time: '1:12 PM PDT'
+        byline: Lucas Ropek (sole)
+        byline_attestation: 'in-piece author avatar caption "[Image 1: Lucas Ropek]" on the verbatim techcrunch.com URL opened first-hand this run'
+        genre: In Brief news digest (The Information report relay, 38 rendered lines, first-hand this run)
+        url: https://techcrunch.com/2026/09/16/after-accusations-of-selling-perv-glasses-meta-prepares-to-sell-a-pair-without-a-camera/
+        url_attestation: 'canonical techcrunch.com URL verbatim from the mechanism 749 block (its meta_arm/url field), re-opened first-hand this run; 38 rendered lines'
+        tone_illustrative: -0.50
+        register: adversarial_privacy_register_own_voice
+        stigma_vocabulary: 'dystopian surveillance society run amok; pervert glasses; integrated spy equipment'
+        stigma_vocabulary_verified: 'first-hand this run: "dystopian surveillance society run amok" (own-voice), "pervert glasses" (quoted), "integrated spy equipment" (own-voice) all present in the 38-line text'
+      carried_snap_arm_sep16:
+        note: 'Carried un-rescored per #807 from mechanism 728 (Type B #828). Retained as the same-writer register-map baseline.'
+        title: 'Snap tries to make the case again for its $2,200 smart glasses'
+        date: '2026-09-16'
+        byline: Lucas Ropek (sole)
+        tone_illustrative: -0.45
+        register: adversarial_price_utility_business
+        privacy_vocabulary: 'zero privacy/alarm vocabulary on 4-camera glasses with contextual AI'
+      asymmetry_scorer_result:
+        illustrative_cross_entity_delta_openai_minus_meta: 0.45
+        cross_entity_delta_calc: '(-0.05) - (-0.50) = +0.45'
+        cross_entity_delta_direction: 'positive: the same writer in the same genre applies own-voice stigma to Meta''s remediation move and neutral-wire relay to OpenAI''s remediation move, twelve days apart'
+        same_event_cross_publication: 'Gizmodo (mechanism 865, +0.15) ran credit-giving normalization on the same Sep-28 Astra event - the event sustains a favorable register; Ropek''s -0.05 is mid-register, not the only available one'
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per first-hand register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=1 fresh arm vs carried n=1 arms. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on hand-scored items would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine: 'engine NOT run (illustrative arms only)'
+        artifact_grade: 'NOT artifact-grade'
+      temporal_refinement:
+      - 'EXTENDS mechanism 749''s same-day cross-entity privacy-register pair with a 12-day temporal leg: the own-voice stigma Ropek applied to Meta''s camera-removal remediation does NOT reappear when OpenAI''s model-removal remediation is the peg.'
+      - 'REFINES the corpus peg-follows-register thesis (m637 Regalado, m743 Ashworth, m842 Keach medium control, m845 Ropek third-writer extension): the thesis holds ACROSS peg classes (controversy reportage vs on-site event), NOT WITHIN the remediation peg class, where the entity gradient reappears.'
+      - 'RE-BASELINES mechanism 845''s 9-day inversion: Ropek''s Meta register is peg-dependent across peg classes, but within the remediation class his Meta arm still runs 0.45 below his OpenAI arm.'
+      connects_to: [269, 620, 728, 749, 845, 865]
+      incentive_context: 'TechCrunch owned by Yahoo (Apollo Global Management majority stake). No documented TechCrunch-to-Meta or TechCrunch-to-OpenAI content licensing deal in the corpus. The Apollo-Anthropic XPV financing chain (documented in #633) predicts softer ANTHROPIC coverage, not Meta or OpenAI. No money gradient is asserted here; the observation is register-level only. Correlational boundary only, correlation not causation.'
+      confounders:
+      - '[STRONG] Peg-class asymmetry within remediation: a deceptive-model cancellation (capability/alignment failure) and a privacy-scandal remediation (conduct harm) are both company remediation moves but involve different harm types; privacy scandals legitimately license moral vocabulary while capability failures invite technical relay.'
+      - '[STRONG] Sourcing symmetry with gloss asymmetry: both arms are WSJ/The-Information relays, but the Meta arm''s stigma vocabulary was Ropek''s own gloss on The Information''s remediation report while the OpenAI arm relays WSJ without own-voice gloss - the finding is precisely the gloss asymmetry, but the gloss itself may track the scandal-vs-testing framing of the sources.'
+      - '[MODERATE] The OpenAI arm carries real skepticism (policy-entrenchment critique) - it is not a puff piece; the claim is register (attributed vs own-voice), not favorability direction.'
+      - '[MODERATE] 12-day temporal gap inside the Sep 2026 safety cycle: the industry''s Hugging Face incident context and the slowdown-debate framing evolved between Sep 16 and Sep 28.'
+      - '[MODERATE] The Astra 6.1 naming discrepancy (WSJ "Astra 6.1" vs Gizmodo "GPT-6.1 Astra") reflects wire/relay naming variance, not a separate event; no impact on the register claim.'
+      - '[WEAK] n=1 fresh arm: degenerate sample, directional only.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: Ropek''s Sep-16 Snap arm was itself adversarial (-0.45) - he is not uniformly soft on competitors; the Meta stigma vocabulary is privacy-register-specific, not a general entity bias.'
+      - 'COUNTEREVIDENCE: Ropek''s Sep-25 Meta Connect arm (m845, +0.15) shows his Meta register is peg-dependent across peg classes; the entity-gradient reading holds only within the remediation class.'
+      - 'COUNTEREVIDENCE: Gizmodo''s Sep-28 Astra piece (m865, +0.15) proves the OpenAI event can sustain a favorable register - the observed asymmetry is writer-level (Ropek), not event-level.'
+      - 'COUNTEREVIDENCE: the OpenAI arm''s "ironically" paragraph and entrenchment critique show Ropek''s skeptical toolkit firing on OpenAI - it fires in attributed form rather than own-voice stigma.'
+      verdict: directionally_supported_not_proven
+      is_significant: false
+      falsification_family_member: false
+      falsification_ledger: 35
+      falsification_note: 'NOT a falsification-family member (within-writer cross-entity register documentation, not a uniform-prediction test); falsification ledger holds at 35.'
+      no_analysis_json_update: true
+      rotation_transparency: '2026-09-28 19:00 PDT, iteration_type "B", FOURTH leg of the 1055-1059 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard). Predecessor #1057 Type A committed (main c38cb8b7cdeb9df2ce748218fc6809f1fc02d6d3, anchor 03e171f5, log-hash 28e88e64, all verified present via git log before this run''s commit). This run is #1058 Type B (B #1058) at 19:00 PDT Sep 28 2026. Next C #1059 will be Type C, closing the window.'
+      research_method: '3 browser.search query sets this run ((1) Lucas Ropek TechCrunch Meta Connect Sep 2026 camera-free glasses - corroboration of the m845 author-page context; (2) "Lauren Goode" WIRED smart glasses Apple Snap September 2026 - REJECTED as saturated (m436/m447, lane assignment already mechanismized); (3) TechCrunch "OpenAI reportedly ditches model over safety concerns" Ropek In Brief - SELECTED: the Sep 28 4:39 PM PDT In Brief via verbatim techcrunch.com canonical URL in the Full-URL listing; (4) "Ray-Ban Meta Audio" review hands-on September 2026 author glasses - corroboration, REJECTED (Hector m809/#963 and Stein m968 already cover the exact pair)). 2 browser.open this run per #503 excerpt-bounded: (a) the verbatim Ropek OpenAI In Brief URL, 39 rendered lines, byline confirmed via in-piece author avatar caption; (b) the exact Meta Sep-16 In Brief URL verbatim from the mechanism 749 block''s meta_arm/url field, 38 rendered lines, stigma vocabulary re-verified first-hand. Carried arms: m749 (Type B #863) and m728 (Type B #828), un-rescored per #807. Pre-commit novelty greps: zero test_type_b_1058 files on disk (glob); no Type B #1058 in git log (--grep); max numeric mechanism_id 865 pre-commit; zero underscore-form 866 mechanism key strings in profiles/ pre-commit (pycache-only hit out of sweep scope); zero dash-form 866 mechanism references pre-commit; block key zero-hit pre-commit; the Ropek Sep-28 OpenAI URL zero-hit repo-wide pre-commit (git grep -F); the headline string zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings or the existing mechanism 749 block; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B block on Ropek''s Sep-28 OpenAI In Brief; FOURTH dedicated Type B mechanism on Lucas Ropek (728 / #828, 749 / #863, 845 / #1023, 866 / this run). Zero test_type_b_1058 files on disk (glob verified this run). No Type B commit with 1058 in the title (git log --grep verified this run). Mechanism id 866 is the next free profiles mechanism id (max pre-commit 865). Rotation: 1057 A -> 1058 B.'
 jay_peters:
   name: Jay Peters
   current_role: Senior Reporter

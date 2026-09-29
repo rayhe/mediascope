@@ -132,8 +132,8 @@ TEST_BASENAME = OWN_BASENAME
 
 ANCHORED_SHA = "968a59fdb8172600cfb940462654012618fb473c"  # patched post-commit per #565
 
-MAX_ID = 865
-NEXT_NUM = 866
+MAX_ID = 866
+NEXT_NUM = 867
 
 M862_KEY = (
     "guardian_openai_sep26_ap_wire_training_halt"
@@ -385,10 +385,10 @@ class TestNovelty1055:
             assert len(mains) == 1, mains
             assert mains[0].startswith(ANCHORED_SHA + " "), mains
 
-    def test_max_id_is_865(self):
+    def test_max_id_is_866(self):
         assert _max_numeric_mechanism_id() == MAX_ID
 
-    def test_zero_866_numeric_forms_in_profiles(self):
+    def test_zero_867_numeric_forms_in_profiles(self):
         # Numeric form is profiles-only and must be pure zero. The
         # underscore/dash forms are pinned (with their known #1054
         # Type C guard-literal carrier) in TestTypeDCorpusIntegrity1055
