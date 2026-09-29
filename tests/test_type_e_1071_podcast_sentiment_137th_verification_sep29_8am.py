@@ -1,6 +1,6 @@
 """Type E #1071: podcast sentiment 137th verification cycle - GF EPISODE 502
-HOLDS as latest (fourth day since the Sep 28 11:00am release; NO 503
-surfaced; three-directory corroboration), EHE 51-day hold (Aug 10 Epstein
+HOLDS as latest (fourth Type E verification since the Sep 28 11:00am release (~21 hours after publication); NO 503
+surfaced; three-directory corroboration), EHE 50-day hold (Aug 10 Epstein
 spoof -> Sep 29) with FIVE logged keys re-surfaced and ZERO new EHE keys,
 Attention Sphere 137th no-match as a podcast (blob SURFACED AGAIN + 6
 commit URLs git-cat-file-verified circular; Tracked Sources 136->137),
@@ -166,7 +166,7 @@ class TestGuiltyFeministHundredThirtySeventhCycle:
     def test_episode_502_holds_as_latest_no_503(self):
         md = _md_1071()
         assert "EPISODE 502 HOLDS as latest" in md
-        assert "fourth day since the Sep 28 11:00am release" in md
+        assert "fourth Type E verification since the Sep 28 11:00am release (~21 hours after publication)" in md
         assert "NO 503 surfaced" in md
         assert "The Guilty Feminist 502. Homophobia" in md
 
@@ -201,7 +201,7 @@ class TestGuiltyFeministHundredThirtySeventhCycle:
 
 
 # --------------------------------------------------------------------------
-# 5. Everyone Hates Elon: 51-day hold, FIVE logged keys re-surfaced
+# 5. Everyone Hates Elon: 50-day hold, FIVE logged keys re-surfaced
 # --------------------------------------------------------------------------
 class TestEveryoneHatesElonHundredThirtySeventhCycle:
     EHE_RESURFACED_KEYS = [
@@ -214,8 +214,8 @@ class TestEveryoneHatesElonHundredThirtySeventhCycle:
 
     def test_51_day_hold(self):
         md = _md_1071()
-        assert "51-day hold continues" in md
-        assert "date(2026,9,29)-date(2026,8,10)=51 days" in md
+        assert "50-day hold continues" in md
+        assert "date(2026,9,29)-date(2026,8,10)=50 days" in md
 
     def test_five_logged_keys_resurfaced(self):
         md = _md_1071()
