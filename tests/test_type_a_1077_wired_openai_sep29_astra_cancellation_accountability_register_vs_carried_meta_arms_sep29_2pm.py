@@ -48,7 +48,7 @@ ITERATION = 1077
 TYPE_LETTER = "A"
 RUN_PDT = "2026-09-29 14:00 PDT"
 BLOCK_KEY = "wired_openai_sep29_astra_cancellation_accountability_register_vs_carried_meta_arms"
-ANCHORED_SHA = "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef"
+ANCHORED_SHA = "077d8d5eff909d6531995e66d010c3b52be9e258"
 
 README_TESTS_AFTER = 55334
 README_FILES_AFTER = 1402
