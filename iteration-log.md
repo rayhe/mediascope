@@ -5,6 +5,7 @@ Sep 29 2026, 09:00 PDT, iteration_type "A", **THIRD leg of the 1070-1074 window,
 ### Rotation transparency
 - 1070-1074 window THIRD leg CONTINUING it (D #1070 -> E #1071 -> A #1072 -> B -> C, rotation per #565 anchor + rotation guard)
 - Predecessor #1071 Type E: main 4e19c3b9, anchor df9afb8c, log-hash 00417db9 (all verified present via git log per the #1071 entry)
+- This run #1072 Type A (Sep 29 2026, 09:00 PDT; main commit a16c216e / anchor 0df19bbe; log-hash followup 60942559 registered per #721)
 - Pre-commit novelty greps: zero test_type_a_1072 files on disk (glob); no "Type A #1072" in git log (--grep); max numeric mechanism_id 873 in profiles/; zero numeric 874 mechanism_id keys in profiles/; zero contiguous-literal 874 mechanism key strings in profiles/ and tests/ (all 874 needles format-built per #715); block key zero-hit repo-wide (git grep); the 5 evidence URLs zero-hit repo-wide pre-commit (git grep -F); zero prior Guardian Sep-28 Astra-cancellation mechanism (only the Sep-26 AP-wire m862 and adjacent carriers)
 - Next run #1073 Type B continues the window.
 
