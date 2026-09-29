@@ -128,7 +128,7 @@ TEST_BASENAME = OWN_BASENAME
 ANCHORED_SHA = "365b08fe1881040abbe2150b1ec8fb6f810a081e"  # main commit #1060 per #565
 
 MAX_ID = 870
-NEXT_NUM = 870
+NEXT_NUM = 871  # pinned by #1065 Type D: m870 landed at #1064 Type C
 
 M865_KEY = (
     "gizmodo_openai_astra_cancellation_credit_normalization_"
@@ -417,44 +417,41 @@ class TestNovelty1060:
         # competitor-entities.yaml.
         assert _read(os.path.join(REPO_ROOT, M867_HOME)).count(M867_KEY) == 2
 
-    def test_1060_entry_newest_first_in_log(self):
-        # The "## #1060 Type D:" entry leads the log (newest-first
-        # ordering); hashes are TBD until the anchor followup patches
-        # them per #565.
-        assert _read(LOG_PATH).startswith("## #1060 Type D:")
+    def test_1060_entry_present_in_log(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1065 run): the "## #1060 Type
+        # D:" entry no longer leads the log (the 1060-1064 window has
+        # closed; #1064/#1065 entries sit above it). The entry must
+        # still be present in the log, newest-first ordering intact.
+        assert "## #1060 Type D:" in _read(LOG_PATH)
 
 
 # ---------------------------------------------------------------------------
 # 2. Rotation guard per #565
 # ---------------------------------------------------------------------------
 class TestTypeDRotationGuard1060:
-    def test_rotation_window_opens_1060(self):
-        # The newest distinct iteration in git history is this run's
-        # #1060 Type D (window opener). SUBJECT DEVIATION pinned: the
-        # #1058 Type B main commit (103c871d) uses the subject
-        # "MediaScope #1058 Type B: ..." instead of the "^Type [A-E]
-        # #N:" convention, so it is NOT regex-visible to the #752
-        # helper; the regex-visible chain is D #1060 -> C #1059 ->
-        # A #1057 -> E #1056 -> D #1055. The #1058 main commit is
-        # asserted separately below by its deviated subject.
-        window = _window()
-        assert window[0] == ("D", "1060"), window
-        assert window[1:5] == [
-            ("C", "1059"),
-            ("A", "1057"),
-            ("E", "1056"),
-            ("D", "1055"),
-        ], window
-        result = subprocess.run(
-            ["git", "log", "--format=%H %s", "--grep=MediaScope #1058 Type B:"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-        )
-        assert result.returncode == 0
-        assert result.stdout.splitlines()[0].startswith(
-            "103c871d"
-        ), result.stdout
+    def test_1060_window_closed_complete(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1065 run): the 1060-1064
+        # window is CLOSED and complete. All five legs landed with
+        # clean "Type X #N:" main-commit subjects in the correct
+        # relative order: D #1060 -> E #1061 -> A #1062 -> B #1063 ->
+        # C #1064 (newest-first: C #1064, B #1063, A #1062, E #1061,
+        # D #1060). This assertion is stable across the #1065 main
+        # commit (which sits above the window) because it filters to
+        # the 1060-1064 subsequence rather than absolute positions.
+        # The old #1058 "MediaScope #1058 Type B:" subject-deviation
+        # pin is retired: the 1060-1064 window has no deviations.
+        chain = [
+            entry
+            for entry in _window(n=80)
+            if entry[1] in ("1060", "1061", "1062", "1063", "1064")
+        ]
+        assert chain == [
+            ("C", "1064"),
+            ("B", "1063"),
+            ("A", "1062"),
+            ("E", "1061"),
+            ("D", "1060"),
+        ], chain
 
     def test_predecessor_1059_chain_present(self):
         # The full #1059 Type C commit chain must be in git history
@@ -476,16 +473,28 @@ class TestTypeDRotationGuard1060:
                 == 0
             ), sha
 
-    def test_no_type_e_1061_in_git_log(self):
-        # The next leg (Type E #1061) must not exist yet: this run
-        # opens the window, #1061 continues it.
+    def test_type_e_1061_landed(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1065 run): Type E #1061 has
+        # LANDED (main commit 450d86a7, Sep 28 22:00 PDT) - the
+        # forward-looking "must not exist yet" guard from the #1060
+        # run is inverted now that the 1060-1064 window closed.
         result = subprocess.run(
-            ["git", "log", "--format=%s", "--grep=Type E #1061"],
+            ["git", "log", "--format=%H %s", "--grep=Type E #1061"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        assert result.stdout.strip() == "", result.stdout
+        assert result.returncode == 0
+        # --grep matches the full message body (the #1062 main
+        # commit's body names "predecessor Type E #1061"), so filter
+        # to the subject line that OPENS with "Type E #1061:".
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if line.split(" ", 1)[1].startswith("Type E #1061:")
+        ]
+        assert len(mains) == 1, result.stdout
+        assert mains[0].startswith("450d86a7"), mains
 
     def test_anchor_sha_is_real(self):
         assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA), (
@@ -787,19 +796,21 @@ class TestTypeDForwardLookingStaleness1060:
         "nvidia_105b_backstop_recycling_nineteenth_direction_sep28_8pm.py",
     ]
 
-    def test_window_files_carry_m_id_869(self):
+    def test_window_files_carry_m_id_870(self):
         # The #1057/#1058/#1059 files were pinned forward to M_ID =
-        # 869 by the #1063 main commit (their max-id guards already
-        # account for m869).
+        # 870 by the #1064 main commit (their max-id guards already
+        # account for m870); pinned by the #1065 Type D run.
         for rel in self.WINDOW_FILES:
             text = _read(os.path.join(REPO_ROOT, rel))
-            assert "M_ID = 869" in text, rel
+            assert "M_ID = 870" in text, rel
 
     def test_zero_870_guards_pass_this_run(self):
-        # The window files' forward-looking zero-870 guards PASS
-        # the #1063 run (870 is zero; the #1063 Type B main commit
-        # added mechanism 869 and re-pinned these guards) - verified
-        # via subprocess, NOT touched by this run.
+        # The window files' forward-looking next-number guards PASS
+        # this run (needles rolled to 871 by the #1064 main commit;
+        # the test names in the window files still say 870 but the
+        # NEXT_US / NEXT_DASH / NEXT_NUMERIC needles they assert are
+        # 871-form) - verified via subprocess, NOT touched by this
+        # run.
         targets = []
         for rel in self.WINDOW_FILES:
             targets.append(
@@ -827,12 +838,11 @@ class TestTypeDForwardLookingStaleness1060:
         assert result.returncode == 0, result.stdout[-2000:]
 
     def test_zero_870_guards_staleness_calendar(self):
-        # Calendar pin, re-pinned by the #1063 main commit: the 869
-        # landing happened at #1063 (Type B). The zero-870 guards fail
-        # BY DESIGN when mechanism 870 lands - expected at the #1064
-        # Type C leg (rotation D->E->A->B->C: C legs add mechanisms).
-        # Re-pinned by the #1065 Type D run.
-        assert 1063 + 1 == 1064
+        # Calendar pin, re-pinned by the #1064 main commit: the 870
+        # landing happened at #1064 (Type C). The zero-871 guards fail
+        # BY DESIGN when mechanism 871 lands - expected at a future
+        # A/B/C leg. Pinned by the #1065 Type D run.
+        assert 1064 + 1 == 1065
         for rel in self.WINDOW_FILES:
             assert os.path.exists(os.path.join(REPO_ROOT, rel))
 
