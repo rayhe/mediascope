@@ -1,4 +1,4 @@
-## #1057 Type A: Gizmodo x OpenAI Sep-28 GPT-6.1 Astra cancellation credit-normalization vs carried Meta scrapped-AI-photo-tool comparator (mechanism 865) - Type A THIRD leg of the 1055-1059 window (Sep 28 2026, 18:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1057 Type A: Gizmodo x OpenAI Sep-28 GPT-6.1 Astra cancellation credit-normalization vs carried Meta scrapped-AI-photo-tool comparator (mechanism 865) - Type A THIRD leg of the 1055-1059 window (Sep 28 2026, 18:00 PDT; main commit c38cb8b7 / anchor 03e171f5; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
 2026-09-28 18:00 PDT, iteration_type "A", **THIRD leg of the 1055-1059 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -15,7 +15,7 @@ Type A #1057 - mechanism 865 (profiles/gizmodo.yaml, competitor_relationships.op
 48 tests, 12 classes in tests/test_type_a_1057_gizmodo_openai_sep28_astra_cancellation_credit_vs_meta_scrapped_tool_sep28_6pm.py. Pre-commit: 40 green excluding doc-sync 4 per #719 (fail by design pre-doc-sync, go green post) and anchor 1 + window-commit 3 deselected pre-commit per #565 (go green in anchor followup); novelty + structure + arms + scorer + confounders + discipline + corpus-novelty + inflight + hygiene + guard-pins green. Guard roll-forwards this run (designed lifecycle per #1055's pin comments, which anticipated the 865 landing): #1055 MAX_ID 864->865, NEXT_NUM 865->866, test_max_id_is_864->865, test_zero_865->866_numeric_forms_in_profiles; #1056 test_max_numeric_mechanism_id_864->865 (+comment), test_zero_numeric_next_keys_in_profiles d1 865->866. #1055's underscore/dash-865 pin tests and #1056's format-built carrier tests stay green untouched (this run's key carries no 865 literal per #715; this run's test file uses concatenated needles). Two pre-existing #1055 failures confirmed failing on the pristine tree via git stash (test_no_type_d_1055_in_git_log, test_rotation_window_opens_1055 - stale post-followup), unrelated to this run, untouched.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565; 48/48 green post-patch); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit c38cb8b7 (verified via git rev-parse); anchor followup 03e171f5 (ANCHORED_SHA patched per #565; 48/48 green post-patch); log-hash followup registers both hashes here per #721 (this commit: TBD).
 
 ### Doc-sync ratchet
 README stats table 54193/1381 -> 54241/1382 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1057 entry (this entry).
