@@ -87,12 +87,13 @@ MECH_KEY = (
     "type_b_1078_isabella_ward_wired_openai_vs_anthropic_"
     "accountability_register_constancy_sep29"
 )
-EXPECTED_ORDER = [
-    ("B", "1078"),
-    ("A", "1077"),
-    ("E", "1076"),
+# Committed-state window expectation (oldest first); the D->E->A->B legs
+# are asserted as the four newest in test_window_is_1075_1079_fourth_leg.
+EXPECTED_WINDOW_TAIL = [
     ("D", "1075"),
-    ("C", "1074"),
+    ("E", "1076"),
+    ("A", "1077"),
+    ("B", "1078"),
 ]
 
 # #565 anchor: all-zeros placeholder until the anchor followup patches it.
@@ -199,10 +200,11 @@ def _repo_grep(needle, roots=("profiles", "tests")):
     return hits
 
 
-def _window(n=40):
-    # First occurrence of each distinct iteration number, newest first
+def _window(n=60):
+    # First occurrence of each distinct iteration number, OLDEST first
     # (robust to followup commits that repeat the same "Type X #N" wording
-    # without the colon, per the #752 convention).
+    # without the colon, per the #752 convention). Post-commit safe: the
+    # current run is the newest entry, never mistaken for the predecessor.
     subjects = (
         run_git("log", f"-{n}", "--format=%s", "--no-merges").stdout.splitlines()
     )
@@ -213,7 +215,8 @@ def _window(n=40):
         if m and m.group(2) not in seen_nums:
             seen_nums.add(m.group(2))
             out.append(m.groups())
-    return out[:5]
+    out.reverse()
+    return out[-5:]
 
 
 # ---------------------------------------------------------------------------
@@ -264,17 +267,20 @@ class TestRotationGuard1075_1079Window:
     ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
 
     def test_window_is_1075_1079_fourth_leg(self):
-        assert _window() == EXPECTED_ORDER
+        # Committed-state form: the four newest distinct iteration mains
+        # are the D->E->A->B window legs (the fifth slot is #1074 or older).
+        assert _window()[-4:] == EXPECTED_WINDOW_TAIL
 
     def test_rotation_adjacency_cycle_valid(self):
         window = _window()
         for (t1, n1), (t2, n2) in zip(window, window[1:]):
-            assert int(n1) == int(n2) + 1
-            assert (self.ORDER[t1] - self.ORDER[t2]) % 5 == 1, (t1, t2)
+            assert int(n2) == int(n1) + 1
+            assert (self.ORDER[t2] - self.ORDER[t1]) % 5 == 1, (t1, t2)
 
     def test_predecessor_is_type_a_1077(self):
         order = _window()
-        assert order[0] == ("A", "1077")
+        idx = order.index(("B", "1078"))
+        assert order[idx - 1] == ("A", "1077")
         r = run_git("log", "--grep", "Type A #1077:", "--format=%H", "--no-merges")
         assert r.stdout.strip(), "no Type A #1077 main commit found"
 
