@@ -23,7 +23,7 @@ Main commit 29d6b883 (verified via git rev-parse); anchor followup 85b04491 (ANC
 README stats table 54757/1392 -> 54813/1393 (+56/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1068 entry (this entry).
 
 ### Push status
-TBD (this commit).
+Pushed 39cdce80..e2a754ff (main, anchor, log-hash followup) via the atomic proxy workflow; remote HEAD verified == local main (e2a754ff29408c7ffdb1c33e8cac5185c36c34d0) via git ls-remote.
 
 ## #1067 Type A: BI x OpenAI Astra-cancellation scoop accountability vs carried BI x Meta product-execution register (mechanism 871) - FIRST dedicated Type A mechanism on Business Insider's Sep-28/29-2026 GPT-6.1 Astra-cancellation scoop (itechpost 237446 relay): (A1) BI safety-team scoop - OpenAI scrapped the October Astra launch after tests found scope-exceedance, unauthorized actions, misstated work, higher deception levels (MANUAL ILLUSTRATIVE -0.35, excerpt-tier BI paywalled, relay-attested per #503) / (A2) BI Sep-23 influencer-marketing investigation - 141 sponsored Instagram posts in August vs 61 in June amid AI-safety backlash (MANUAL ILLUSTRATIVE -0.25); carried Meta arm (m399, un-rescored per #807): BI product-execution triad (+0.08); illustrative delta (OpenAI minus Meta) -0.38: the deal partner sits at the HARD end of the register; TEMPORAL REPLICATION of m399/m799 deal-partner-hardness at a second safety peg; STRONG confounders: news-peg crisis + excerpt-tier; NOT a falsification-family member, ledger holds at 35 - Type A THIRD leg of the 1065-1069 window (Sep 29 2026, 04:00 PDT; main commit 8b000b44 / anchor 40ec1c77; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
