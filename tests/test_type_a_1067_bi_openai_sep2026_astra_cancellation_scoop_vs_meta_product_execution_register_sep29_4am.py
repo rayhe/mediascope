@@ -190,9 +190,27 @@ class TestRotationGuard1065_1069Window:
     ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
 
     def test_window_is_1065_1069_third_leg(self):
-        # Deselected pre-commit per #565: this run's own main commit does not
-        # exist yet; goes green post-commit.
-        assert _window() == EXPECTED_ORDER
+        # HISTORICAL REPIN (Sep 29 2026, #1070 run): absolute newest-first
+        # positions go stale as later windows land; assert the stable fact
+        # that the 1065-1069 window's five legs appear in git history in
+        # the correct relative order (A #1067 third).
+        # _window() slices to [:5]; bypass the slice for the full chain.
+        subjects = run_git("log", "-200", "--format=%s", "--no-merges").stdout.splitlines()
+        seen = set()
+        full = []
+        for s in subjects:
+            m = re.match(r"Type ([A-E]) #(\d+):", s)
+            if m and m.group(2) not in seen:
+                seen.add(m.group(2))
+                full.append(m.groups())
+        chain = [e for e in full if e[1] in ("1065", "1066", "1067", "1068", "1069")]
+        assert chain == [
+            ("C", "1069"),
+            ("B", "1068"),
+            ("A", "1067"),
+            ("E", "1066"),
+            ("D", "1065"),
+        ], chain
 
     def test_rotation_adjacency_cycle_valid(self):
         window = [p for p in _window() if int(p[1]) >= 1063]
@@ -201,10 +219,10 @@ class TestRotationGuard1065_1069Window:
             assert int(n1) == int(n2) + 1
             assert (self.ORDER[t1] - self.ORDER[t2]) % 5 == 1, (t1, t2)
 
-    def test_predecessor_is_type_e_1066(self):
-        # Deselected pre-commit per #565 alongside the window-order test.
-        order = _window()
-        assert order[1] == ("E", "1066")
+    def test_type_e_1066_in_history(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1070 run): absolute newest-first
+        # positions go stale as later windows land; assert the stable fact
+        # that the Type E #1066 main commit exists in history.
         r = run_git("log", "--grep", "Type E #1066:", "--format=%H", "--no-merges")
         assert r.stdout.strip(), "no Type E #1066 main commit found"
 
@@ -423,9 +441,16 @@ class TestCorpusNoveltyPostCommit:
 # 9. Doc-sync ratchet per #719 (README stats, row, ARCH row, log entry)
 # ---------------------------------------------------------------------------
 class TestDocSyncRatchet1067:
-    def test_readme_stats_bumped(self):
+    def test_readme_stats_ratchet(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1070 run): exact stats go stale
+        # as later runs bump them; assert the monotonic ratchet (stats
+        # never regress below the #1067 run's 54757/1392).
+        import re
         text = _read("README.md")
-        assert "| Tests | 54757 | Across 1392 test files |" in text
+        m = re.search(r"\| Tests \| (\d+) \| Across (\d+) test files \|", text)
+        assert m, "README stats table row not found"
+        assert int(m.group(1)) >= 54757, m.group(0)
+        assert int(m.group(2)) >= 1392, m.group(0)
 
     def test_readme_new_row(self):
         text = _read("README.md")
@@ -444,18 +469,19 @@ class TestDocSyncRatchet1067:
 # 10. Targeted staging + in-flight isolation
 # ---------------------------------------------------------------------------
 class TestTargetedStaging1067:
-    def test_staged_set_equals_own(self):
-        # Fails pre-staging by design: only passes once the exact five
-        # basenames are staged and nothing else.
-        r = run_git("diff", "--cached", "--name-only")
-        staged = {os.path.basename(p) for p in r.stdout.split()}
-        assert staged == {
+    def test_1067_commit_file_set(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1070 run): the working-tree
+        # staged set moves on; assert the stable fact that the #1067
+        # main commit (8b000b44) carried exactly the five intended files.
+        r = run_git("show", "--name-only", "--format=", "8b000b44")
+        committed = {os.path.basename(p) for p in r.stdout.split()}
+        assert committed == {
             "business-insider.yaml",
             "test_type_a_1067_bi_openai_sep2026_astra_cancellation_scoop_vs_meta_product_execution_register_sep29_4am.py",
             "README.md",
             "ARCHITECTURE.md",
             "iteration-log.md",
-        }, staged
+        }, committed
 
     def test_inflight_files_untouched(self):
         r = run_git("diff", "--cached", "--name-only")
