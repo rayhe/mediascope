@@ -1,4 +1,4 @@
-## #1059 Type C: SB Energy x OpenAI x Nvidia three-party financial architecture - BACKSTOP-RECYCLING NINETEENTH relationship direction (mechanism 867) - Type C FIFTH and CLOSING leg of the 1055-1059 window (Sep 28 2026, 20:00 PDT; main commit b7261ef5 / anchor ff53d9ef; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1059 Type C: SB Energy x OpenAI x Nvidia three-party financial architecture - BACKSTOP-RECYCLING NINETEENTH relationship direction (mechanism 867) - Type C FIFTH and CLOSING leg of the 1055-1059 window (Sep 28 2026, 20:00 PDT; main commit b7261ef5 / anchor ff53d9ef; log-hash followup registers both hashes here per #721 (this commit: c5199890))
 
 2026-09-28 20:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1055-1059 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -21,7 +21,7 @@ Main commit b7261ef5 (verified via git rev-parse); anchor followup ff53d9ef (ANC
 README stats table 54290/1383 -> 54345/1384 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1059 entry (this entry).
 
 ### Push status
-TBD.
+Pushed 2026-09-28 20:xx PDT via egress proxy (HTTP/1.1, Basic x-access-token PAT via temp GIT_CONFIG_GLOBAL, PAT never in argv; proxy candidate returned 200 on api.github.com/zen). NOTE: the repo .git/config origin is SSH (git@github.com:rayhe/mediascope-asymmetry.git), so the push needed `-c url."https://github.com/".insteadOf="git@github.com:"` to route through the HTTPS proxy (without it git tries SSH and fails "Could not read from remote repository"). Chain this run: main b7261ef5 -> anchor ff53d9ef -> log-hash c5199890, verified via git ls-remote with auth (remote c5199890 == local HEAD).
 
 ## #1058 Type B: Lucas Ropek (TechCrunch) Sep-28 OpenAI Astra In Brief vs carried Sep-16 Meta Luna In Brief - same-writer same-genre cross-entity remediation-peg contrast, own-voice stigma absent on OpenAI (mechanism 866) - Type B FOURTH leg of the 1055-1059 window (Sep 28 2026, 19:00 PDT; main commit 103c871d / anchor 57e08a7b; log-hash followup registers both hashes here per #721 (this commit: e7ce1490))
 
