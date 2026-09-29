@@ -40,7 +40,7 @@ NEXT_DASH = "mechanism" + "-877"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id: " + "877"  # next-number numeric sweep
 
 # Anchor SHA for the #1074 main commit; patched post-commit per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "fbfacb6d7f721817758fa08cb243f467dbded093"  # patched in the anchor followup per #565
 
 # Doc-sync ratchet targets (55110/1398 pre-commit + 52/+1 this file).
 README_TESTS_AFTER = 55163
