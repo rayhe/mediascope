@@ -17005,6 +17005,36 @@ monitoring-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohe
 
 - tests/test_type_e_1066_podcast_sentiment_136th_verification_sep29_3am.py
 
+## Iteration #1076 - One-hundred-thirty-eighth Cycle (Sep 29 2026, 13:00 PDT)
+
+### The Guilty Feminist
+
+EPISODE 502 HOLDS as latest - fifth Type E verification since the Sep 28 11:00am release (~50 hours after publication); NO 503 surfaced. Cast/venue carried from the #1056 verification: presented by Deborah Frances-White and Freya Parker with special guest Linus Karp and music from Sir Elton Scone; recorded 21 August 2026 at Gilded Balloon at the Museum; released 28 September 2026. Three-directory corroboration this run: listennotes main dir (crawled 5h: "LATEST EPISODE: The Guilty Feminist 502. Homophobia", 01:00:32), podscan.fm main page (crawled 1h: "Latest Episode: 502. Homophobia with Freya Parker and Linus Karp", published Sep 28, 2026 11:00am), uk-podcasts.co.uk (762-episode count, "Latest episode: 2026-09-28", crawled 5h). Also surfaced: podscan.fm analytics page (crawled 6h, same 502 summary), the youtube episode-500 page, the goloudnow 501 page, and the podscan.fm episode-499 page (all in corpus). Title/description carry zero Meta/wearables content (topic: homophobia; snippet-bounded); no tone score asserted (no first-hand read).
+
+ZERO new-to-corpus verbatim GF URL keys this run (all 7 surfaced GF keys >=1 pre-commit corpus hit). ZERO Meta/wearables content in any GF episode across all 138 cycles (bounded search-result absence).
+
+### Everyone Hates Elon
+
+51-day hold continues (Aug 10 Epstein spoof -> Sep 29; date(2026,9,29)-date(2026,8,10)=51 days). 5 logged keys re-surfaced this run: designtaxi 34124 Epstein-ad thread (crawled 2h; "Glasses for people who don't do consent." still the primary motif), softonic Epstein-poster (crawled 1d), techtimes amnesty-boxes (crawled 4h), afrotech ethics/consent (crawled 4h), thebesttimes consent email-drive (crawled 62d). ZERO new-to-corpus verbatim EHE URL keys this run. 2 own-repo GitHub URLs in the EHE result set (podcast-sentiment.md blob + commit 36592f8, each git-cat-file-verified present) rejected as circular, not ingested. Non-surfacing strands remain in corpus: ranzware Kylie-lenticular mirror, engadget bus-stops original, hyperallergic Epstein ad, petapixel Kylie-lenticular, fstoppers lenticular piece, singulism bus-stop strand, designtaxi 33476 Kylie-lenticular thread, cloudfront Kylie-poster mirror, latestly fact-check pair, lapost CNN relay, linkedin privacy roundup, kayvan-mirza op-ed, huckmag pervert-glasses. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 138 cycles (bounded search-result absence).
+
+### Attention Sphere
+
+One-hundred-thirty-eighth quoted-search no-match as a podcast: the quoted query returned no matching podcast; all 7 result rows were this repository's own GitHub pages (the podcast-sentiment.md blob page SURFACED AGAIN this run + the same 6 commit URLs as the #1001-#1071 cycles: 9590385, a288c86, a2b656f, 25c730e, 6da2928, fe4528b; each git-cat-file-verified present, still circular as evidence), rejected as circular, not ingested. Task-spec name remains misidentified as a podcast. Real-world identity stands per #591 (advocacy group, named ED Kendall Schrohe). Tracked Sources advanced 137->138.
+
+### Press surfaces
+
+SIX previously-logged keys re-surfaced this run, all in corpus: designtaxi 39120 Meta camera-free piece (crawled 2h), usatoday Sep-23 camera-free piece (crawled 5d), techgig Sep-25 Muse Charm piece (crawled 1d), americanow smart-glasses backlash piece (crawled 2h), analyticsinsight Ray-Ban Audio piece (crawled 3h), thesun.ie Boz VR-glasses/Connect interview piece (crawled 11h, listed updated 12h; new-to-corpus at #1071, re-surfaced in corpus this run). The letsdatascience Ray-Ban Audio piece (in corpus via #956), the ppc.land Hamburg regulator piece, and the linkedin privacy roundup (logged via #976) did NOT surface this run (remain in corpus). ZERO new-to-corpus press URL keys this run. Recency frontier: HOLDS at Sep 29 (the #1071 thesun.ie Boz piece remains the newest-in-corpus surface; first hold since the #1071 advance). Meta-exclusive privacy-pressure framing continues across all 138 cycles; no competitor camera-wearable coverage carries equivalent privacy-pressure framing. Snippet-bounded, tone NOT_SCORED per the standing rule.
+
+### Statistical discipline
+
+monitoring-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, falsification ledger holds at 35, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation. Hypothesis-generating only.
+
+**Research method:** 4 browser.search query sets this run (The Guilty Feminist Deborah Frances-White latest episode September 2026; quoted "Everyone Hates Elon" Meta Ray-Ban glasses campaign; quoted "Attention Sphere" podcast Meta tech wearables; Meta Ray-Ban smart glasses privacy news September 2026). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_e_1076 files on disk (glob); no Type E #1076 in git log (--grep); max numeric mechanism_id 876 in-tree pre-commit (m874/m875/m876 committed at #1072/#1073/#1074 Type A/B/C, verified at #1075 Type D; Type E adds no mechanisms); zero numeric 877 mechanism_id keys in profiles/ (mechanism_id regex sweep); zero underscore/dash 877 mechanism key strings repo-wide (needles format-built per #715); ZERO new verbatim URL keys this run (the all-key pure-re-surface streak RESTARTS at one after the #1071 break); 18/18 non-circular distinct URL keys >=1 corpus hit pre-commit, verified via git grep -F (7 GF keys, 5 EHE keys, 6 press keys incl. thesun.ie via #1071); 9 distinct own-repo GitHub URLs rejected as circular (2 EHE set: blob + 36592f8; 7 AS set: blob + 9590385, a288c86, a2b656f, 25c730e, 6da2928, fe4528b; each git-cat-file-verified present, still circular as evidence). 27 result rows / 18 non-circular distinct URL keys / ZERO new verbatim URL keys this run. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Test file
+
+- tests/test_type_e_1076_podcast_sentiment_138th_verification_sep29_1pm.py
+
 ## Iteration #1071 - One-hundred-thirty-seventh Cycle (Sep 29 2026, 08:00 PDT)
 
 ### The Guilty Feminist
