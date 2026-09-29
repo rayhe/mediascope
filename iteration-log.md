@@ -24,7 +24,7 @@ Type C #1064 - OpenAI x Oracle committed-demand financing architecture, mechanis
 - #1057/#1058/#1059/#1062/#1063 own-id structure tests green again post-split; max-novelty tests rolled to 870.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit ca831b0b (verified via git rev-parse); anchor followup 1eb83096 (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
 
 ### Doc-sync ratchet
 README stats table 54553/1388 -> 54608/1389 (+55/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1064 entry (this entry).
