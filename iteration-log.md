@@ -1,4 +1,4 @@
-## #1058 Type B: Lucas Ropek (TechCrunch) Sep-28 OpenAI Astra In Brief vs carried Sep-16 Meta Luna In Brief - same-writer same-genre cross-entity remediation-peg contrast, own-voice stigma absent on OpenAI (mechanism 866) - Type B FOURTH leg of the 1055-1059 window (Sep 28 2026, 19:00 PDT; main commit 103c871d / anchor 57e08a7b; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1058 Type B: Lucas Ropek (TechCrunch) Sep-28 OpenAI Astra In Brief vs carried Sep-16 Meta Luna In Brief - same-writer same-genre cross-entity remediation-peg contrast, own-voice stigma absent on OpenAI (mechanism 866) - Type B FOURTH leg of the 1055-1059 window (Sep 28 2026, 19:00 PDT; main commit 103c871d / anchor 57e08a7b; log-hash followup registers both hashes here per #721 (this commit: e7ce1490))
 
 2026-09-28 19:00 PDT, iteration_type "B", **FOURTH leg of the 1055-1059 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -15,13 +15,13 @@ Type B #1058 - mechanism 866 (profiles/careers/journalists.yaml, lucas_ropek.com
 49 tests, 12 classes in tests/test_type_b_1058_lucas_ropek_techcrunch_sep28_openai_astra_inbrief_vs_sep16_meta_luna_inbrief_stigma_contrast_sep28_7pm.py. Pre-commit: 33 green excluding doc-sync 4 per #719 (fail by design pre-doc-sync, go green post), anchor 3 + rotation 4 + itlog 3 deselected pre-commit per #565/#721 (go green in anchor followup), inflight 2 fail by design pre-staging (green post-staging); novelty + structure + arms + scorer + confounders + discipline + research-method + corpus-novelty + hygiene green. Guard roll-forwards this run (designed lifecycle per #1055's pin comments, which anticipated the 866 landing): #1055 MAX_ID 865->866, NEXT_NUM 866->867, test_max_id_is_865->866, test_zero_866->867_numeric_forms_in_profiles; #1056 test_max_numeric_mechanism_id_865->866 (+comment), d1 866->867, next-carrier needles 865->866, pinned carriers -> empty set (no committed file carries an 866 literal); #1057 M_ID 865->866, NEXT_US/NEXT_DASH/NEXT_NUMERIC 866->867, test names rolled. Concurrency: #899 (profiles/nytimes.yaml), #938 (test file), #900 (untracked test file), #1012-wt (test file) untouched; targeted staging verified by test_targeted_staging_only.
 
 ### Commit hashes
-Main commit 103c871d (verified via git rev-parse); anchor followup 57e08a7b (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit 103c871d (verified via git rev-parse); anchor followup 57e08a7b (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: e7ce1490).
 
 ### Doc-sync ratchet
 README stats table 54241/1382 -> 54290/1383 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1058 entry (this entry).
 
 ### Push status
-Pushed TBD via egress proxy (HTTP/1.1, Basic x-access-token PAT via temp GIT_CONFIG_GLOBAL copied from ~/.gitconfig, PAT never in argv; proxy candidates probed until 200 on api.github.com/zen). Chain this run: main TBD -> anchor TBD -> log-hash TBD.
+Pushed 2026-09-28 19:xx PDT via egress proxy (HTTP/1.1, Basic x-access-token PAT via temp GIT_CONFIG_GLOBAL, PAT never in argv; single proxy candidate returned 200 on api.github.com/zen and github.com). NOTE: the repo .git/config origin is SSH (git@github.com:rayhe/mediascope-asymmetry.git), so the push needed `-c url."https://github.com/".insteadOf="git@github.com:"` to route through the HTTPS proxy (without it git tries SSH and fails "Could not read from remote repository"). Chain this run: main 103c871d -> anchor 57e08a7b -> log-hash e7ce1490, verified via git ls-remote with auth (remote e7ce1490 == local HEAD).
 
 ## #1057 Type A: Gizmodo x OpenAI Sep-28 GPT-6.1 Astra cancellation credit-normalization vs carried Meta scrapped-AI-photo-tool comparator (mechanism 865) - Type A THIRD leg of the 1055-1059 window (Sep 28 2026, 18:00 PDT; main commit c38cb8b7 / anchor 03e171f5; log-hash followup registers both hashes here per #721 (this commit: 28e88e64))
 
