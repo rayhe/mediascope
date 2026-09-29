@@ -208,7 +208,7 @@ class TestRotationGuard1060_1064Window:
     def test_predecessor_1062_pinned(self):
         rt = get_block()["rotation_transparency"]
         assert "#1062 Type A" in rt
-        assert "7ff7f866" in rt and "7c5d8f9c" in rt and "8e3ed7fd" in rt
+        assert "7ff7f866" in rt and "0ff5eded" in rt and "8e3ed7fd" in rt
 
     def test_iteration_type_b(self):
         assert get_block()["iteration_type"] == TYPE_LETTER
