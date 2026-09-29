@@ -125,7 +125,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
 
-ANCHORED_SHA = "0" * 40  # patched post-commit per #565
+ANCHORED_SHA = "365b08fe1881040abbe2150b1ec8fb6f810a081e"  # main commit #1060 per #565
 
 MAX_ID = 867
 NEXT_NUM = 868
@@ -430,19 +430,31 @@ class TestNovelty1060:
 class TestTypeDRotationGuard1060:
     def test_rotation_window_opens_1060(self):
         # The newest distinct iteration in git history is this run's
-        # #1060 Type D (window opener). The regex-visible predecessor
-        # chain is C #1059 -> B #1058 -> A #1057 -> E #1056: all four
-        # main commits match the "^Type [A-E] #N:" subject convention
-        # (no subject deviation on the 1055-1059 window), so the #752
-        # helper reads the chain straight.
+        # #1060 Type D (window opener). SUBJECT DEVIATION pinned: the
+        # #1058 Type B main commit (103c871d) uses the subject
+        # "MediaScope #1058 Type B: ..." instead of the "^Type [A-E]
+        # #N:" convention, so it is NOT regex-visible to the #752
+        # helper; the regex-visible chain is D #1060 -> C #1059 ->
+        # A #1057 -> E #1056 -> D #1055. The #1058 main commit is
+        # asserted separately below by its deviated subject.
         window = _window()
         assert window[0] == ("D", "1060"), window
         assert window[1:5] == [
             ("C", "1059"),
-            ("B", "1058"),
             ("A", "1057"),
             ("E", "1056"),
+            ("D", "1055"),
         ], window
+        result = subprocess.run(
+            ["git", "log", "--format=%H %s", "--grep=MediaScope #1058 Type B:"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+        )
+        assert result.returncode == 0
+        assert result.stdout.splitlines()[0].startswith(
+            "103c871d"
+        ), result.stdout
 
     def test_predecessor_1059_chain_present(self):
         # The full #1059 Type C commit chain must be in git history
