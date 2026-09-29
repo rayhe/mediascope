@@ -1,4 +1,4 @@
-## #1057 Type A: Gizmodo x OpenAI Sep-28 GPT-6.1 Astra cancellation credit-normalization vs carried Meta scrapped-AI-photo-tool comparator (mechanism 865) - Type A THIRD leg of the 1055-1059 window (Sep 28 2026, 18:00 PDT; main commit c38cb8b7 / anchor 03e171f5; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1057 Type A: Gizmodo x OpenAI Sep-28 GPT-6.1 Astra cancellation credit-normalization vs carried Meta scrapped-AI-photo-tool comparator (mechanism 865) - Type A THIRD leg of the 1055-1059 window (Sep 28 2026, 18:00 PDT; main commit c38cb8b7 / anchor 03e171f5; log-hash followup registers both hashes here per #721 (this commit: 28e88e64))
 
 2026-09-28 18:00 PDT, iteration_type "A", **THIRD leg of the 1055-1059 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -21,7 +21,7 @@ Main commit c38cb8b7 (verified via git rev-parse); anchor followup 03e171f5 (ANC
 README stats table 54193/1381 -> 54241/1382 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1057 entry (this entry).
 
 ### Push status
-TBD - pushed via egress proxy (HTTP/1.1, Basic x-access-token PAT via env-config, PAT never in argv), verified via git ls-remote (remote HEAD == local HEAD).
+Pushed 2026-09-28 18:xx PDT via egress proxy (HTTP/1.1, Basic x-access-token PAT via temp GIT_CONFIG_GLOBAL copied from ~/.gitconfig, PAT never in argv; all 17 proxy candidates returned 200 on api.github.com/zen): ef6cf84f..28e88e64 main -> main, verified via git ls-remote with auth (remote 28e88e64 == local HEAD). Chain this run: main c38cb8b7 -> anchor 03e171f5 -> log-hash 28e88e64.
 
 ## #1056 Type E: podcast sentiment 134th verification - GF EPISODE 502 RELEASED TODAY (breaks the seven-day no-502 hold; thirteenth-cycle pure-re-surface episode-key streak ENDS), EHE 49-day hold (FIVE logged keys re-surfaced, ZERO new keys), Attention Sphere 134th no-match (Tracked Sources 133->134), press SEVEN in-corpus re-surfaces incl. linkedin privacy roundup SURFACED after missing #1051 (ppc.land Hamburg in-corpus re-surface; recency frontier HOLDS at Sep 26, fourth hold); ZERO new verbatim URL keys across all four strands (all-key streak advances to FOUR); Meta-exclusive privacy-pressure framing across all 134 cycles; ledger holds at 35 - Type E SECOND leg of the 1055-1059 window (Sep 28 2026, 17:00 PDT; main commit 1c2028f9 / anchor 7884c92d; log-hash followup registers both hashes here per #721 (this commit: 0e60602e))
 
