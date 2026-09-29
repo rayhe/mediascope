@@ -97,7 +97,7 @@ NEXT_DASH = "mechanism" + "-880"  # next-number dash sweep
 NEXT_NUMERIC = "mechanism_id: " + "880"  # next-number numeric sweep
 
 # Anchor SHA for the #1079 main commit; patched post-commit per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "a04bf111825da7bf3d78f9c36a44ebd8cf70801f"  # patched in the anchor followup per #565
 
 # Doc-sync ratchet targets (54468/1403 authoritative per count_stats.py
 # --check at doc-sync time + 54/+1 this file).
