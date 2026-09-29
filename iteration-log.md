@@ -1,4 +1,4 @@
-## #1060 Type D: m865/m866/m867 qualitative-discipline verification + post-1055-1059 corpus integrity + #1055 background-suite tombstone - Type D FIRST and OPENING leg of the 1060-1064 window (Sep 28 2026, 21:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1060 Type D: m865/m866/m867 qualitative-discipline verification + post-1055-1059 corpus integrity + #1055 background-suite tombstone - Type D FIRST and OPENING leg of the 1060-1064 window (Sep 28 2026, 21:00 PDT; main commit 365b08fe / anchor 16e1287e; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
 2026-09-28 21:00 PDT, iteration_type "D", **FIRST leg OPENING the 1060-1064 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -15,7 +15,7 @@ Type D #1060 - qualitative-discipline verification of mechanisms 865/866/867 (th
 60 tests, 13 classes in tests/test_type_d_1060_m865_m866_m867_qualitative_corpus_integrity_sep28_9pm.py. Pre-commit: 56 green (novelty 9 incl. the four designed-keying block-key assertions and the newest-first log-ordering check; rotation 2; corpus-integrity 3 incl. the reverted pure-zero #770 format-built underscore-868 sweep; m865 7; m866 7; m867 6; ledger 9 incl. the member/prose-form distinction pins and the per-file THIRTY-THIRD totals; staleness 3 incl. the forward-guard subprocess pin and the #1064-by-design calendar pin; tombstone 2; synthetic calibration 3 with fresh #1060 values; suite-relaunch 1; doc-sync 3; itlog 1 newest-first), window_opens + anchor_sha + itlog 2 fail by design pre-commit per #565/#721 (go green in the anchor followup). Guard roll-forwards this run: none required (#1057/#1058/#1059 already carry M_ID = 867 pins from the #1059 followups; their forward-looking zero-868 guards PASS this run and are pinned as forward-looking staleness: they fail BY DESIGN at the #1064 Type C run, to be pinned by the #1065 Type D run). Concurrency: #899 (profiles/nytimes.yaml), #938 (test file), #900 (untracked test file), #1012-wt (test file) untouched; targeted staging only.
 
 ### Commit hashes
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+Main commit 365b08fe (verified via git rev-parse); anchor followup 16e1287e (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
 
 ### Doc-sync ratchet
 README stats table 54345/1384 -> 54405/1385 (+60/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1060 entry (this entry).
