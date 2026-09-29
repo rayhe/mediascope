@@ -63,7 +63,7 @@ ITERATION = 1073
 TYPE_LETTER = "B"
 RUN_PDT = "2026-09-29 10:00 PDT"
 BLOCK_KEY = "type_b_1073_ben_schoon_9to5google_weekender_camera_stigma_meta_blame_vs_samsung_google_victim_framing_sep29"
-ANCHORED_SHA = "ANCHORED_SHA_PENDING"
+ANCHORED_SHA = "44293ed2050af862b0b24891782d76934176a895"
 
 README_TESTS_AFTER = 55110
 README_FILES_AFTER = 1398
