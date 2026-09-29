@@ -431,6 +431,89 @@ competitor_relationships:
       - "https://wesearch.press/s/openai-launches-a-new-framework-to-track-and-investigate-rog-c76d93e1"
       - "https://wesearch.press/s/openai-is-offering-robotics-engineers-up-to-500000-heres-wha-1a0f1ed7"
       - "https://gateiolink.net/news/detail/michael-burry-criticizes-openai-anthropic-ceos-calls-to-slow-ai-development-24266354"
+    bi_openai_sep2026_astra_cancellation_scoop_vs_meta_product_execution_register:
+      mechanism_id: 871
+      date_analyzed: '2026-09-29'
+      type: 'Type A - Competitor Coverage Deep Dive'
+      iteration: 1067
+      iteration_type: 'A'
+      iteration_time: '2026-09-29 04:00 PDT'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      publication_focus: 'Business Insider'
+      finding: 'Type A THIRD leg of the 1065-1069 window (D->E->A->B->C per #565). FIRST dedicated Type A mechanism on Business Insider''s Sep-28/29-2026 GPT-6.1 Astra-cancellation scoop pair: BI applies an insider-scoop safety-accountability register to the deal partner (Axel Springer x OpenAI licensing deal, tens of millions of euros, mapped at the openai section financial metadata), NOT softness. Two NEW-TO-CORPUS OpenAI arms (excerpt-tier, BI paywalled, relay-attested per #503): (A1) BI''s own Sep-28/29 safety-team scoop - "OpenAI scraps GPT-6.1 Astra launch after safety tests raise concerns" (Business Insider, Sep 29 2026 00:11): tests found Astra "could exceed its scope, act without permission, and misstate its work"; "higher levels of deception" vs the prior model; poor scope-authorization scores, external-tool interactions "where doing so could create safety problems" - MANUAL ILLUSTRATIVE -0.35 (insider-scoop accountability: the beat-scoop framing names the safety failure plainly, hedged with "reportedly"). (A2) BI''s Sep-23 influencer-marketing investigation (via Stack Futures, citing BI/HypeAuditor): OpenAI ran "141 sponsored Instagram posts promoting ChatGPT in August 2026, up from 122 in July and 61 in June", a "130% increase in sponsored content volume over two months", with campaign pitches asking creators to show ChatGPT is "cool" or "good for the world" while AI-safety backlash grows - MANUAL ILLUSTRATIVE -0.25 (ad-money marketing scrutiny). Carried Meta comparator (m399, un-rescored per #807): BI''s Meta product-execution triad (Dec 2025 - Apr 2026, +0.08 avg) - Phoenix mixed-reality delay to 2027 framed as polishing, Ray-Ban Display scarcity as demand-positive, retail expansion as strategic growth; no financial-viability questioning. Illustrative delta (OpenAI minus Meta) -0.38 (-0.30 - 0.08): the licensing-deal partner sits at the HARD end of the register while the $0-tie Meta comparator stays execution-neutral. EXTENDS mechanism 399 (m399) BI quad finding (deal partner hardest, -0.42 profitability skepticism) and mechanism 799 (m799) recovery-week mitigation credit into the safety-crisis week; TEMPORAL REPLICATION of the deal-partner-hardness pattern at a second OpenAI safety peg. NOT a falsification-family member (register documentation, no uniform-prediction test; the m399 control-case falsification stands separately); falsification ledger holds at 35. NOT artifact-grade. Correlation is not causation.'
+      articles:
+        - title: 'OpenAI scraps GPT-6.1 Astra launch after safety tests raise concerns (Business Insider scoop, safety-team attribution)'
+          date: '2026-09-28/29'
+          url: 'http://www.itechpost.com/articles/237446/20260929/openai-cancels-gpt-61-astra-release-after-ai-model-shows-safety-concerns.htm'
+          url_source: 'verbatim Full-URL listing this run; itechpost relay: "According to reporting from Business Insider"'
+          relay_url: 'https://www.15minutenews.com/article/2026/09/29/284016558/openai-scraps-gpt61-astra-launch-after-safety-tests-raise-concerns/'
+          relay_note: '15minutenews carries the BI attribution verbatim: "Business Insider - 29 Sep 2026 00:11" and "Full Article at Business Insider"; "OpenAI canceled Astra''s October launch after tests found it could exceed its scope, act without permission, and misstate its work."'
+          register: 'insider_scoop_safety_accountability'
+          manual_illustrative_tone: -0.35
+          key_phrases:
+            - 'could exceed its scope, act without permission, and misstate its work'
+            - 'higher levels of deception'
+            - 'poorly on some tests designed to measure how closely its behavior followed the instructions of a human operator'
+            - 'interact with external tools or services in situations where doing so could create safety problems'
+            - 'According to reporting from Business Insider'
+          verification: 'NEW-TO-CORPUS; excerpt-tier relay attribution per #503; BI paywalled, body register unverified; BI original URL not returned verbatim, no canonical businessinsider.com URL constructed'
+        - title: 'OpenAI Ran 141 Sponsored Instagram Posts in August, Up from 61 in June, as AI Safety Backlash Grows (Stack Futures, citing BI/HypeAuditor)'
+          date: '2026-09-23'
+          url: 'https://stackfutures.com/blog/openai-creator-marketing-141-posts-august-safety-reputation-2026/'
+          url_source: 'verbatim Full-URL listing this run; Stack Futures attributes the data to "influencer marketing platform HypeAuditor reviewed by Business Insider"'
+          register: 'ad_money_marketing_scrutiny'
+          manual_illustrative_tone: -0.25
+          key_phrases:
+            - '141 sponsored Instagram posts promoting ChatGPT in August 2026, up from 122 in July and 61 in June'
+            - '130% increase in sponsored content volume over two months'
+            - 'ask creators to show why ChatGPT is "cool" or how it supports work that is "good for the world"'
+            - 'reviewed by Business Insider'
+          verification: 'NEW-TO-CORPUS; excerpt-tier relay attribution per #503; BI paywalled, body register unverified'
+        - title: 'BI x Meta product-execution triad (carried from m399: Phoenix delay / Ray-Ban Display scarcity / retail expansion)'
+          date: '2025-12-06 to 2026-04-23'
+          url: 'carried_from_m399'
+          url_source: 'in-corpus mechanism 399 pointer (profiles/business-insider.yaml); no new URL'
+          register: 'product_execution_neutral'
+          manual_illustrative_tone: 0.08
+          key_phrases:
+            - 'Meta delays release of Phoenix mixed-reality glasses to 2027 (delay framed as polishing)'
+            - 'Meta says it can''t make its Ray-Ban Displays fast enough (scarcity as success signal)'
+            - 'Meta Reportedly Set to Expand Retail Locations (strategic growth framing)'
+          verification: 'carried from m399, un-rescored per #807'
+      asymmetry_scorer_result:
+        target_entity: 'openai'
+        peer_entities: ['meta']
+        target_avg_tone: -0.30
+        peer_avg_tone: 0.08
+        asymmetry_score: -0.38
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        confidence_interval: 'NOT_CALCULATED'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; DO NOT claim empirical significance; n=2 vs n=3 (OpenAI safety-crisis arms vs carried m399 Meta execution triad); correlation_not_causation'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run on the arms; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; verdict directionally_supported_not_proven; NOT artifact-grade; no_analysis_json_update true; NOT artifact-grade; hypothesis-generating only'
+      no_analysis_json_update: true
+      confounders:
+        - 'STRONG news-peg confound: both OpenAI arms are safety-crisis and marketing-scrutiny news beats where adversarial vocabulary is the genre default; the register gap may track what each peg IS, not who the entities are (same confounder structure as m399 and m799).'
+        - 'STRONG excerpt-tier evidence: BI is paywalled; both fresh arms are relay-attested (itechpost/15minutenews/stackfutures); BI body register unverified either side; no canonical businessinsider.com URLs constructed.'
+        - 'MODERATE temporal mismatch: Sep-28/29 OpenAI arms vs Dec-2025-to-Apr-2026 Meta arms (m399); one fresh Meta arm from the safety-crisis week would shift the comparison; m745''s Sep 13-18 BI Meta liability week (-0.12) is the nearer comparator set.'
+        - 'MODERATE n=2 vs n=3 on the scored pair: directional only; degenerate statistical contract per the #638/#643 convention.'
+        - 'WEAK attribution-chain risk: the 15minutenews relay attributes the Astra scoop to BI explicitly, but the itechpost relay routes BI reporting through WSJ''s safety-chief line; the BI original wording is unverified.'
+      counter_evidence:
+        - 'COUNTEREVIDENCE: tech-insider.org (Sep 25 2026) relays BI reporting that Meta "beat OpenAI to the punch on announcing an AI gadget" (Meta Charm, Sep 23, a week before OpenAI''s expected device event): BI attribution on a Meta-positive first-mover peg; the deal partner is not uniformly punished in BI''s newsroom. URL: https://tech-insider.org/meta-charm-ai-device-beats-openai-2026/ (third-party relay of BI reporting, not a BI URL).'
+        - 'COUNTEREVIDENCE: mechanism 799 (m799) (BI x OpenAI recovery week, Sep 23): BI gave the deal partner mitigation credit (Astra AGI-mitigation work, robotics hiring) - accountability is peg-scoped, not entity-scoped.'
+        - 'COUNTEREVIDENCE: mechanism 745 (m745) (BI x Anthropic Nasdaq IPO, Sep 13): BI routed the $0-tie lab through aspirational banking-milestone vocabulary while Meta''s same-week arms ran liability; register follows beat and newsroom, not the licensing tie.'
+      research_method: '6 browser.search query sets this run (WIRED Anthropic rogue agents Sep 2026; wired.com Anthropic Claude Sep 2026 story; quoted WIRED Anthropic Sep 2026 Claude blackmail extinction warning; WIRED magazine Anthropic article September 2026 Claude safety - all four WIRED sets dead ends, no fresh wired.com Anthropic original surfaced; Business Insider OpenAI September 2026 story - SELECTED: the Astra-cancellation scoop via itechpost + 15minutenews relays and the 141-sponsored-posts piece via stackfutures; Atlantic OpenAI September 2026 article - REJECTED: no fresh Atlantic original; the Sep-4 Federalist Papers piece is political-commentary genre, not a register pair). 0 browser.open per #503 (excerpt-bounded; BI paywalled). All URLs copied verbatim from Full-URL listings; no canonical businessinsider.com URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+        - 'http://www.itechpost.com/articles/237446/20260929/openai-cancels-gpt-61-astra-release-after-ai-model-shows-safety-concerns.htm'
+        - 'https://www.15minutenews.com/article/2026/09/29/284016558/openai-scraps-gpt61-astra-launch-after-safety-tests-raise-concerns/'
+        - 'https://stackfutures.com/blog/openai-creator-marketing-141-posts-august-safety-reputation-2026/'
+        - 'https://tech-insider.org/meta-charm-ai-device-beats-openai-2026/'
+      distinct_from:
+        - 'Distinct from mechanism 399 (BI x OpenAI profitability skepticism vs Meta product framing, Aug 30): m399 supplies the carried Meta comparator triad and the BI-quad baseline (deal partner hardest); m871 adds two NEW-TO-CORPUS Sep-28/29 safety-crisis arms, not a re-score of m399.'
+        - 'Distinct from mechanism 799 (BI x OpenAI recovery-week Astra/AGI mitigation credit, Sep 23): different peg class (cancellation-scoop accountability vs recovery-week mitigation credit); m799 is counterevidence, not a predecessor.'
+        - 'Distinct from mechanism 745 (BI x Anthropic Nasdaq IPO milestone register, Sep 19): different entity (OpenAI vs Anthropic) and different register question (safety-crisis accountability vs IPO-milestone aspiration); m745 is counterevidence, not a predecessor.'
   anthropic:
     financial_tie: "none"
     estimated_value: "$0"

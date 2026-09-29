@@ -1,3 +1,29 @@
+## #1067 Type A: BI x OpenAI Astra-cancellation scoop accountability vs carried BI x Meta product-execution register (mechanism 871) - FIRST dedicated Type A mechanism on Business Insider's Sep-28/29-2026 GPT-6.1 Astra-cancellation scoop (itechpost 237446 relay): (A1) BI safety-team scoop - OpenAI scrapped the October Astra launch after tests found scope-exceedance, unauthorized actions, misstated work, higher deception levels (MANUAL ILLUSTRATIVE -0.35, excerpt-tier BI paywalled, relay-attested per #503) / (A2) BI Sep-23 influencer-marketing investigation - 141 sponsored Instagram posts in August vs 61 in June amid AI-safety backlash (MANUAL ILLUSTRATIVE -0.25); carried Meta arm (m399, un-rescored per #807): BI product-execution triad (+0.08); illustrative delta (OpenAI minus Meta) -0.38: the deal partner sits at the HARD end of the register; TEMPORAL REPLICATION of m399/m799 deal-partner-hardness at a second safety peg; STRONG confounders: news-peg crisis + excerpt-tier; NOT a falsification-family member, ledger holds at 35 - Type A THIRD leg of the 1065-1069 window (Sep 29 2026, 04:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+
+2026-09-29 04:00 PDT, iteration_type "A", **THIRD leg of the 1065-1069 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1065-1069 window THIRD leg CONTINUING it (D #1065 -> E #1066 -> A #1067 -> B -> C, rotation per #565 anchor + rotation guard)
+- Predecessor #1066 Type E: main 8c144fe8, anchor 65118316, log-hash ec446954, push-status d1e36e46 (all verified present via git log before this run's commit); #1065 OPENED the 1065-1069 window
+- Pre-commit novelty greps: zero test_type_a_1067 files on disk (glob); no "Type A #1067" in git log (--grep); max numeric mechanism_id 870 in-tree pre-commit; zero numeric 871 keys in profiles/; zero contiguous-literal 871 mechanism key strings in profiles/ and tests/ (all 871 needles format-built per #715); ZERO new verbatim URL keys this run (the four evidence URLs zero-hit repo-wide pre-commit: 237446 itechpost, 15minutenews 284016558, stackfutures creator-marketing-141, tech-insider meta-charm)
+- Next run #1068 Type B continues the window.
+
+### Finding summary
+Type A #1067 (mechanism 871): Business Insider applies an insider-scoop safety-accountability register to the Axel Springer licensing-deal partner OpenAI, not softness - extending m399 (deal partner hardest) and m799 (recovery-week mitigation credit) into the safety-crisis week. Two NEW-TO-CORPUS OpenAI arms: A1 (Sep-28/29-2026, BI safety-team scoop) MANUAL ILLUSTRATIVE -0.35; A2 (Sep-23, influencer-marketing investigation) MANUAL ILLUSTRATIVE -0.25; carried Meta arm (m399, un-rescored per #807) +0.08; illustrative delta (OpenAI minus Meta) -0.38: the deal partner keeps sitting at the HARD end of the register. TEMPORAL REPLICATION of the deal-partner-hardness pattern at a second OpenAI safety peg. Strong confounders: news-peg crisis (an actual safety failure genuinely reads critical) and excerpt-tier evidence (BI paywalled, relay-attested). MANUAL ILLUSTRATIVE ONLY, engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, NOT artifact-grade, no analysis.json update, verdict directionally_supported_not_proven. Correlation is not causation. NOT a falsification-family member, ledger holds at 35.
+- 6 browser.search query sets this run (WIRED x Anthropic safety-cancellation (dead end x4), Business Insider x OpenAI (selected), Atlantic x OpenAI (rejected - Atlantic not in corpus)). 0 browser.open per #503 (excerpt-bounded). ASCII-only, no em dashes.
+
+### Test report
+48 tests, 12 classes in tests/test_type_a_1067_bi_openai_sep2026_astra_cancellation_scoop_vs_meta_product_execution_register_sep29_4am.py. Pre-commit: 41 green excluding doc-sync ratchet 5 (fail by design pre-doc-sync/pre-entry, go green post) and staging 1 (goes green post-targeted-staging), with 7 deselected (novelty-anchor 3 + rotation-guard 4 per #565, patched/pinned green in the anchor followup).
+
+### Commit hashes
+Main commit TBD (this commit); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+
+### Doc-sync ratchet
+README stats table 54709/1391 -> 54757/1392 (+48/+1) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1067 entry (this entry).
+
+### Push status
+TBD.
+
 ## #1066 Type E: podcast sentiment 136th verification - GF EPISODE 502 HOLDS as latest (third day since Sep 28 11:00am release; NO 503; three-directory corroboration), EHE 50-day hold (FIVE logged keys re-surfaced, ZERO new EHE keys), Attention Sphere 136th no-match as a podcast (blob SURFACED AGAIN + 6 commit URLs git-cat-file-verified circular; Tracked Sources 135->136), press SEVEN in-corpus re-surfaces + ZERO new verbatim keys (recency frontier HOLDS at Sep 26, sixth hold after the #1036 advance); ZERO new verbatim URL keys across all four strands (all-key pure-re-surface streak advances to SIX); Meta-exclusive privacy-pressure framing across all 136 cycles; guard-lifecycle pin: #1062/#1063/#1064 M_ID == 870, zero-871 guards PASS this run (needles format-built per #715, fail BY DESIGN when mechanism 871 lands, pinned by the #1070 Type D run); monitoring-only per the Aug 28 2026 standing rule (tone NOT_SCORED, engine NOT run, ledger holds at 35, NOT artifact-grade, verdict directionally_supported_not_proven) - Type E SECOND leg of the 1065-1069 window (Sep 29 2026, 03:00 PDT; main commit 8c144fe8 / anchor 65118316; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
 2026-09-29 03:00 PDT, iteration_type "E", **SECOND leg of the 1065-1069 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
