@@ -120,7 +120,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
 
-ANCHORED_SHA = "0" * 40  # patched by the anchor followup commit per #565
+ANCHORED_SHA = "b78e35ae67e3ef43c2df6fd6514d409d278a4eb7"  # patched by the anchor followup commit per #565
 
 MAX_ID = 876
 NEXT_NUM = 877
@@ -202,14 +202,17 @@ def _git(*args):
 
 
 def _window(n=40):
-    # First occurrence of each distinct iteration number, newest first
-    # (robust to followup commits that repeat the same "Type X #N"
-    # wording without the colon, per the #752 convention).
+    # First occurrence of each distinct iteration number, newest first.
+    # The regex anchors on "^Type X #N" without requiring the colon
+    # suffix: the #1072 main commit deviated from the #752 colon
+    # convention ("Type A #1072 (09:00 PDT): ..."), so the colon-form
+    # would silently drop it. Followup subjects never start with
+    # "Type", so the anchor keeps them out.
     subjects = _git("log", f"-{n}", "--format=%s", "--no-merges").splitlines()
     seen_nums = set()
     out = []
     for s in subjects:
-        m = re.match(r"Type ([A-E]) #(\d+):", s)
+        m = re.match(r"^Type ([A-E]) #(\d+)", s)
         if m and m.group(2) not in seen_nums:
             seen_nums.add(m.group(2))
             out.append(m.groups())
