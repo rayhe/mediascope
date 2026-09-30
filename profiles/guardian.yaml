@@ -2740,6 +2740,167 @@ competitor_relationships:
       no_em_dash_verified: true
       https_provenance: true
       sources_verified_date: "2026-09-04"
+    mechanism_886_guardian_anthropic_safety_cycle_register_vs_openai_deal_partner_sep30:
+      mechanism_id: 886
+      date_analyzed: '2026-09-30'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1092
+      iteration_type: A
+      iteration_time: '2026-09-30 05:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The Guardian
+      competitor_pair: 'Anthropic vs Meta (OpenAI deal-partner third pole)'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '05:00'
+      job_id: mediascope-daily-iteration
+      distinct_from_prior: 'Extends mechanism 517 (Type A #517, Sep 4 2026) from the book-piracy register into the Sep 10-29 2026 AI-safety disclosure register at the same non-deal lab. Mechanism 517 found the Guardian applies its piracy adversarial frame in the opinion-editorial register against Anthropic while the same frame for OpenAI, its Feb 14 2025 strategic partner, stays confined to news register. This mechanism tests whether the same register-depth gradient (non-partner harder than deal partner) holds on safety-disclosure pegs: Amodei slowdown essay (Sep 12), Anthropic threat report (Sep 10-11), IPO-prospectus existential-risk register (Sep 29). Companion to m880 (Type A #1082, Verge x OpenAI deal-partner register continuity). Meta and OpenAI comparator arms carried per the m880 register-continuity pattern (no re-search this run): the m537 Guardian Meta pair (mean -0.425) and the m537 Guardian OpenAI deal-partner pair (mean -0.125), scores unchanged per #807. NOT a falsification-family member: no uniform-direction prediction under test; register documentation plus m517-family extension. Ledger holds at 37; THIRTY-EIGHTH remains the negative guard.'
+      finding: 'Three Guardian safety-cycle arms at Anthropic, Sep 10-29 2026, all excerpt-bounded per #503 (0 browser.open; theguardian.com blocked by policy). (1) Sep 12: the Guardian relays the Dario Amodei slowdown essay under the company-words headline "We must slow the pace", with the daily-desk record framing it against the Jacob Coxon resignation and the Evan Hubinger >10% decade-extinction take (second-hand characterization; -0.20). (2) Sep 29 10:17 GMT: the Guardian publishes "Anthropic warns of existential AI risks to humanity in IPO document", a severity-emphasizing headline on the company own prospectus language (roughly 80 of 261 pages on AI risks vs 48 on business per FT; Reuters and The Guardian emphasized the severity per Archynetys; -0.30). (3) Sep 10-11: the Guardian covers the Anthropic threat report (secondary attribution only: "According to The Guardian, Anthropic wrote: Biological misuse is one of the most severe risks of frontier AI models"; verbatim Guardian URL not surfaced; -0.25). MANUAL ILLUSTRATIVE Anthropic Sep mean -0.25 vs carried Guardian Meta mean -0.425 (delta +0.175: Meta draws the harder register) and vs carried Guardian OpenAI deal-partner mean -0.125 (delta -0.125: the non-partner lab draws the harder register than the deal partner). Severity ordering across the three poles: Meta (-0.425) hardest, Anthropic (-0.25) middle, OpenAI (-0.125) softest. The deal partner remains the softest pole, directionally consistent with the m517 register-depth gradient, now extended from piracy into safety-disclosure. The Guardian prints the alarm language on all three poles, so this is REGISTER asymmetry, not suppression. Correlation is not causation.'
+      financial_relationship:
+        guardian_openai_deal: 'Guardian strategic partnership with OpenAI, Feb 14 2025 (mechanism 514): Guardian reporting and archive in ChatGPT with attribution; Guardian rolls out ChatGPT Enterprise; terms undisclosed.'
+        guardian_anthropic: '$0 direct Guardian to Anthropic licensing confirmed zero this run'
+        guardian_meta: '$0, no licensing relationship'
+        deal_disclosed_in_guardian_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. This mechanism documents a register gradient and extends the m517 family; it does not test a uniform prediction. Financial incentives are correlational, not causal proof.'
+        editorial_independence_note: 'The Guardian editorial standards require source verification and balance. No evidence of direct directive linking any commercial relationship to Anthropic coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      articles_anthropic:
+        - title: "'We must slow the pace': CEO of Anthropic calls for an AI slowdown"
+          date: '2026-09-12'
+          url: 'https://www.theguardian.com/technology/2026/sep/12/we-must-slow-the-pace-ceo-of-anthropic-calls-for-an-ai-slowdown'
+          url_source: 'verbatim Guardian URL confirmed by two GitHub digest mirrors this run (mohdfareed/ai-news-daily-digest 2026-09-12 11:50 UTC; ananthakumarmv/Ai-News 2026-09-12 19:24 UTC); excerpt-bounded per #503; 0 browser.open (theguardian.com blocked by policy); no first-hand register read.'
+          framing: 'pacing_policy_relay_alarm_context'
+          tone_MANUAL_ILLUSTRATIVE: -0.20
+          language:
+            - 'We must slow the pace'
+            - 'Dario Amodei proposed a plan including third-party evaluations of AI systems'
+            - 'Guardian framing recorded against the Jacob Coxon resignation and the Evan Hubinger >10% decade-extinction take (daily-desk briefing, second-hand)'
+          notes: 'Company-words relay headline; alarm context is second-hand characterization. Excerpt-bounded per #503. URL zero-hit repo-wide pre-commit.'
+          deal_disclosed: false
+        - title: "Anthropic 'warns of existential AI risks to humanity' in IPO document"
+          date: '2026-09-29'
+          url: 'https://www.theguardian.com/technology/2026/sep/29/anthropic-warns-existential-ai-risks-humanity-ipo-document-claude'
+          url_source: 'verbatim Guardian URL confirmed by the WeSearch relay record this run (relay snippet cites the exact canonical URL; piece timestamped Sep 29 2026 10:17 GMT); excerpt-bounded per #503; 0 browser.open (theguardian.com blocked by policy).'
+          framing: 'ipo_prospectus_severity_emphasis'
+          tone_MANUAL_ILLUSTRATIVE: -0.30
+          language:
+            - "warns of existential AI risks to humanity"
+            - 'roughly 80 of 261 prospectus pages on AI risks vs 48 on business (FT corroboration)'
+            - 'Reuters and The Guardian have emphasized the severity of the warning (Archynetys Sep 29 synthesis)'
+          notes: 'Severity-emphasizing headline; scare quotes attribute the alarm to the company document. Excerpt-bounded per #503. URL zero-hit repo-wide pre-commit.'
+          deal_disclosed: false
+        - title: 'Anthropic AI safety threat report (Guardian coverage, secondary attribution)'
+          date: '2026-09-11'
+          url: 'secondary-attribution; verbatim Guardian URL not surfaced this run'
+          url_source: 'secondary-attribution bounded per #503: winzheng.com quotes "According to The Guardian, Anthropic wrote in the report: Biological misuse is one of the most severe risks of frontier AI models"; techrepublic.com Sep 11 confirms "The Guardian reported that researchers in several cases circumvented safeguards for users in unsupported regions". Verbatim Guardian URL not in this run excerpts; 0 browser.open.'
+          framing: 'threat_report_severity_relay'
+          tone_MANUAL_ILLUSTRATIVE: -0.25
+          language:
+            - 'Biological misuse is one of the most severe risks of frontier AI models'
+            - 'researchers in several cases circumvented safeguards for users in unsupported regions'
+          notes: 'Secondary-attribution bounded; verbatim Guardian URL unresolved this run. Recorded per #503 rather than dropped.'
+          deal_disclosed: false
+      articles_meta:
+        - title: 'Reel-ing it in: Meta is paying influencers to promote teen accounts'
+          date: '2026-08-18'
+          url: 'carried from mechanism 537 (no verbatim Guardian URL in m537 block)'
+          url_source: 'carried per the m880 register-continuity pattern (no re-search this run): m537 same-day natural experiment Aug 18 2026, adversarial accountability register, un-rescored per #807.'
+          framing: 'influencer_marketing_accountability'
+          tone_MANUAL_ILLUSTRATIVE: -0.45
+          language:
+            - 'paying influencers to promote teen accounts'
+          notes: 'Carried from m537; re-scored unchanged. Carried, not novel.'
+          deal_disclosed: false
+        - title: 'Meta misses earnings forecasts after Zuckerberg media push to promote AI'
+          date: '2026-07-29'
+          url: 'carried from mechanism 537 (no verbatim Guardian URL in m537 block)'
+          url_source: 'carried per the m880 register-continuity pattern (no re-search this run): m537 second Meta piece, diminishment register, un-rescored per #807.'
+          framing: 'earnings_diminishment'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          language:
+            - 'media push to promote AI'
+          notes: 'Carried from m537; re-scored unchanged. Carried, not novel.'
+          deal_disclosed: false
+      articles_openai_deal_partner:
+        - title: 'OpenAI announces slowing pace of development after hack by rogue agent'
+          date: '2026-08-18'
+          url: 'carried from mechanism 537 (verbatim Guardian URL in m537 mirror)'
+          url_source: 'carried per the m880 register-continuity pattern (no re-search this run): m537 same-day natural experiment Aug 18 2026, corporate-announcement stewardship register, un-rescored per #807.'
+          framing: 'corporate_announcement_stewardship'
+          tone_MANUAL_ILLUSTRATIVE: -0.15
+          language:
+            - 'we now require stronger evidence of aligned behavior'
+          notes: 'Carried from m537; re-scored unchanged. Carried, not novel.'
+          deal_disclosed: false
+        - title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+          date: '2026-07'
+          url: 'carried from mechanism 537 (via mechanism 517)'
+          url_source: 'carried per the m880 register-continuity pattern (no re-search this run): m537 second OpenAI piece via mechanism 517, straight-news self-disclosure register, un-rescored per #807.'
+          framing: 'straight_news_self_disclosure'
+          tone_MANUAL_ILLUSTRATIVE: -0.10
+          language:
+            - 'unprecedented incident'
+          notes: 'Carried from m537 via m517; re-scored unchanged. Carried, not novel.'
+          deal_disclosed: false
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'Meta Guardian carried register (m537)'
+        peer_entity: 'Anthropic Guardian Sep-2026 safety-cycle register'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.45, -0.40]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.20, -0.30, -0.25]
+        target_avg: -0.425
+        peer_avg: -0.25
+        delta: 0.175
+        delta_calc: '-0.25 - (-0.425) = +0.175'
+        delta_direction: 'Meta draws the harder register; the non-partner lab sits between Meta and the deal partner. Register severity ordering: Meta > Anthropic > OpenAI.'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. Three Sep 10-29 2026 Anthropic arms (excerpt-bounded) vs two carried Jul-Aug 2026 Meta arms (m537, un-rescored). DO NOT claim empirical significance. n=3 vs n=2.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+      asymmetry_scorer_openai_pole_MANUAL_ILLUSTRATIVE:
+        target_entity: 'OpenAI Guardian deal-partner register (m537 carried)'
+        peer_entity: 'Anthropic Guardian Sep-2026 safety-cycle register'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.15, -0.10]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.20, -0.30, -0.25]
+        target_avg: -0.125
+        peer_avg: -0.25
+        delta: -0.125
+        delta_calc: '-0.25 - (-0.125) = -0.125'
+        delta_direction: 'thesis_consistent_directionally_not_proven: the non-partner lab draws the harder register than the deal partner on the Sep-2026 safety cycle. Extends the m517 register-depth gradient (editorial for the non-partner, news for the partner) from piracy into safety-disclosure.'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. Same three Anthropic arms vs two carried Jul-Aug 2026 OpenAI arms (m537, un-rescored). DO NOT claim empirical significance. n=3 vs n=2.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+        strong:
+          - 'Excerpt-bounded evidence (per #503): 0 browser.open; theguardian.com blocked by policy; all three Anthropic arms read through search excerpts and secondary mirrors; no first-hand register read. Register judgments are excerpt-tier.'
+          - 'Story-type asymmetry: all three Anthropic arms are pegged to Anthropic OWN risk disclosures (essay, threat report, prospectus); the company supplied the alarm language. The OpenAI arms are incident news where the company minimized. The register difference may track who authored the alarm, not the outlet stance.'
+          - 'IPO-prospectus news value: the Sep 29 prospectus story was broken by Reuters and corroborated by FT; the Guardian is relaying a financial-disclosure event with inherent news value, not investigating. Severity emphasis may track the document, not the company.'
+        moderate:
+          - 'Timing skew: the carried Meta/OpenAI arms are Jul-Aug 2026 (m537); the Anthropic arms are Sep 10-29 2026. Different news cycles; register differences may be cycle-driven.'
+          - 'The Sep 12 slowdown piece headline is a straight company-words relay; the alarm context (Coxon resignation, Hubinger extinction take) is second-hand characterization from a daily-desk briefing, not a first-hand read.'
+          - 'n=3 vs n=2 vs n=2: degenerate small samples; directional illustration only.'
+        weak:
+          - 'Scare quotes in the Sep 29 headline distance the Guardian from the claim; the alarm is attributed to the company document, which cuts against a pure adversarial reading.'
+          - 'The Guardian DID publish adversarial OpenAI safety news (m517 sanctions motion, Milmo rogue-agent followup), so the deal-partner softening is bounded to register, not a blanket firewall.'
+      counter_evidence:
+        - 'm517: Guardian adversarial toward OpenAI in news register (sanctions motion hiding and destroying evidence, -0.25), proving no blanket firewall around the deal partner.'
+        - 'The Sep 29 prospectus story was originated by Reuters/FT; the Guardian severity emphasis is a relay choice, but the underlying news judgment is shared across outlets.'
+        - 'The Sep 12 headline quotes Amodei directly: a neutral-relay choice that undercuts the alarm-register reading for that arm.'
+        - 'Unresolved: the verbatim Guardian URL for the Sep 10-11 threat-report piece did not surface; arm 3 rests on secondary attribution (According to The Guardian).'
+      open_empirical_test: 'First-hand open of the two verbatim Guardian URLs (Sep 12 slowdown, Sep 29 prospectus) when theguardian.com is reachable; locate the verbatim Guardian threat-report URL; re-score all three arms against observed register; test whether the Meta > Anthropic > OpenAI severity ordering survives first-hand reads.'
+      research_method: 'browser.search excerpt-tier evidence only (0 browser.open; theguardian.com blocked by policy this run; excerpt-bounded per #503). Guardian x Anthropic arms: verbatim Guardian URLs for the Sep 12 slowdown and Sep 29 prospectus pieces confirmed via GitHub digest mirrors and the WeSearch relay record; the Sep 10-11 threat-report piece is secondary-attribution bounded (verbatim Guardian URL not surfaced). Guardian x Meta and Guardian x OpenAI arms carried from m537, un-rescored per #807. All URLs copied verbatim from tool Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_1092 files on disk pre-commit (glob); no "Type A #1092" in git log pre-commit; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 885 pre-commit (mechanism_id regex sweep); zero underscore-form 886 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded; __pycache__ excluded per #715); zero dash-form 886 references pre-commit; zero numeric 886 mechanism_id keys in profiles/ pre-commit; the two novel Guardian URLs (theguardian.com/technology/2026/sep/12/we-must-slow-the-pace-ceo-of-anthropic-calls-for-an-ai-slowdown, theguardian.com/technology/2026/sep/29/anthropic-warns-existential-ai-risks-humanity-ipo-document-claude) zero-hit repo-wide pre-commit (git grep -F); Meta and OpenAI arms carried from m537 (not novel, disclosed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (register documentation plus m517-family extension; no uniform-direction prediction under test). Ledger holds at 37 - THIRTY-SEVENTH member-form present (m880, profiles/the-verge.yaml); THIRTY-EIGHTH member-claim form absent repo-wide.'
+      ledger: '37'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; no analysis.json update; NOT artifact-grade; correlation is not causation.'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-09-30'
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
