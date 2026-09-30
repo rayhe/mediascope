@@ -27,7 +27,7 @@ Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anch
 
 Main commit 5cc29eb2 (verified via git rev-parse); anchor followup f9450174 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 59/59 file tests green post-doc-sync); log-hash followup registers both hashes here per #721 (this commit: c6f543c383830edaee093fb7bc11e058b7eae6fc).
 README stats table 55518/1405 -> 55577/1406 (+59/+1 this file) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1081 entry (this entry).
-Push: TBD via the atomic proxy-credential workflow (temp GIT_CONFIG_GLOBAL auth, PAT never via argv); remote HEAD verified MATCH via git ls-remote.
+Push: 8855ec49..b2958584 main -> main landed in four legs (5cc29eb2 main, f9450174 anchor, c6f543c3 log-hash, b2958584 log-hash tweak) via the atomic proxy-credential workflow (line-3 x-access-token PAT as proxy password, HTTP/1.1 egress-proxy probe 200; GitHub auth via http.extraHeader Authorization: Basic base64(x-access-token:PAT) per the Sep-29 push recipe, PAT never via argv; proxy + header passed via env/argv-of-git only); remote HEAD verified MATCH via git ls-remote (b2958584).
 
 ## #1080 Type D: Test and Verify - qualitative corpus integrity for the completed 1075-1079 window (m877/m878/m879); no new empirical finding, analysis.json untouched; max mechanism 879, zero-880 guards pinned; falsification ledger holds at 36; #1075 suite tombstone SEVENTY-FIFTH -> SEVENTY-SIXTH - Type D OPENS the 1080-1084 window (Sep 29 2026, 17:00 PDT; main commit 6f0c0049 / anchor d99c8292; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
