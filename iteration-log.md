@@ -20,7 +20,7 @@ Type A #1102 - mechanism 892: FT applies the safety-crisis accountability regist
 
 ### Push status per #864
 - Test-fix: none expected - all pre-commit-green tests green post-doc-sync; the #1099/#1100/#1101 zero-892 guard supersessions are BY DESIGN and pinned as designed staleness.
-- Push-status: #1102 local commit chain MAIN_SHA (main) / ANCHOR_SHA (anchor) / LOGHASH_SHA (log-hash) registered per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
+- Push-status: #1102 local commit chain ac41d979 (main) / 2e3fe060 (anchor) / 741a16f1 (log-hash) / 3965785a (log-hash followup) registered ahead of push per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
 
 ### Rotation guard
 - Order D->E->A->B->C enforced: predecessor chain SHAs (49b1d581/95860871/04f5fb9e) asserted present in history; "Type A #1102" absent from log pre-commit (novelty guard, superseded by design post-commit)
