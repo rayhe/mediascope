@@ -122,8 +122,8 @@ TEST_BASENAME = OWN_BASENAME
 
 ANCHORED_SHA = "b78e35ae67e3ef43c2df6fd6514d409d278a4eb7"  # patched by the anchor followup commit per #565
 
-MAX_ID = 876
-NEXT_NUM = 877
+MAX_ID = 879  # pinned by #1080 Type D: m879 landed at #1079 Type C
+NEXT_NUM = 880  # pinned by #1080 Type D: m879 landed at #1079 Type C
 
 M874_KEY = (
     "guardian_openai_sep28_astra_cancellation_safety_crisis_"
@@ -419,30 +419,38 @@ class TestNovelty1075:
         assert text.count("block_key: " + M876_KEY) == 1
         assert text.count(M876_KEY) == 2
 
-    def test_1075_entry_newest_first_in_log(self):
-        # The "## #1075 Type D:" entry leads the log (newest-first
-        # ordering); hashes are TBD until the anchor followup patches
-        # them per #565.
-        assert _read(LOG_PATH).startswith("## #1075 Type D:")
+    def test_1075_entry_present_in_log(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1080 run): the #1075 entry
+        # is present in the log (newest-first position belonged to
+        # the #1080 entry after this run).
+        assert "## #1075 Type D:" in _read(LOG_PATH)
 
 
 # ---------------------------------------------------------------------------
 # 2. Rotation guard per #565
 # ---------------------------------------------------------------------------
 class TestTypeDRotationGuard1075:
-    def test_rotation_window_opens_1075(self):
-        # The newest distinct iteration in git history is this run's
-        # #1075 Type D (window opener). The full 1070-1074 window is
-        # regex-visible (no subject deviations in this window): D
-        # #1075 -> C #1074 -> B #1073 -> A #1072 -> E #1071.
-        window = _window()
-        assert window[0] == ("D", "1075"), window
-        assert window[1:5] == [
-            ("C", "1074"),
-            ("B", "1073"),
-            ("A", "1072"),
-            ("E", "1071"),
-        ], window
+    def test_1075_window_closed_complete(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1080 run): the 1075-1079
+        # window is CLOSED and complete. All five legs landed with
+        # clean "Type X #N:" main-commit subjects in the correct
+        # relative order: D #1075 -> E #1076 -> A #1077 -> B #1078 ->
+        # C #1079 (newest-first: C #1079, B #1078, A #1077, E #1076,
+        # D #1075). This assertion is stable across the #1080 main
+        # commit (which sits above the window) because it filters to
+        # the 1075-1079 subsequence rather than absolute positions.
+        chain = [
+            entry
+            for entry in _window(n=80)
+            if entry[1] in ("1075", "1076", "1077", "1078", "1079")
+        ]
+        assert chain == [
+            ("C", "1079"),
+            ("B", "1078"),
+            ("A", "1077"),
+            ("E", "1076"),
+            ("D", "1075"),
+        ], chain
 
     def test_predecessor_1074_chain_present(self):
         # The full #1074 Type C commit chain must be in git history
@@ -464,16 +472,24 @@ class TestTypeDRotationGuard1075:
                 == 0
             ), sha
 
-    def test_no_type_e_1076_in_git_log(self):
-        # The next leg (Type E #1076) must not exist yet: this run
-        # opens the window, #1076 continues it.
+    def test_type_e_1076_landed(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1080 run): Type E #1076 has
+        # LANDED (main commit d216984d, Sep 29 13:00 PDT) - the
+        # forward-looking "must not exist yet" guard from the #1075
+        # run is inverted now that the 1075-1079 window closed.
         result = subprocess.run(
-            ["git", "log", "--format=%s", "--grep=Type E #1076"],
+            ["git", "log", "--format=%H %s", "--grep=Type E #1076"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        assert result.stdout.strip() == "", result.stdout
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type E #1076" in line and "followup" not in line.lower()
+        ]
+        assert len(mains) == 1, result.stdout
+        assert mains[0].startswith("d216984d"), mains
 
     def test_anchor_sha_is_real(self):
         assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA), (
@@ -502,10 +518,16 @@ class TestTypeDCorpusIntegrity1075:
         assert _repo_grep_dash_mechanism(NEXT_NUM) == []
 
     def test_thirty_sixth_absent_in_profiles(self):
-        # THIRTY-SIXTH member-form is absent across profiles/ (ledger
-        # holds at 35); the test-file guard-literal carriers are
-        # pinned in the falsification-ledger class.
-        assert _profiles_with("THIRTY-SIXTH") == []
+        # HISTORICAL REPIN (Sep 29 2026, #1080 run): the THIRTY-SIXTH
+        # member-claim form is now PRESENT - mechanism 878 landed at
+        # Type B #1078 (journalists.yaml, verdict_note +
+        # falsification_family, 2 occurrences). The forward-looking
+        # absence guard is inverted now that the 1075-1079 window
+        # closed with the ledger at 36.
+        text = _read(
+            os.path.join(PROFILES_DIR, "careers", "journalists.yaml")
+        )
+        assert text.count("THIRTY-SIXTH falsification-family member") == 2
 
 # ---------------------------------------------------------------------------
 # 4. m874 qualitative discipline (Type A #1072, guardian.yaml)
@@ -652,11 +674,19 @@ class TestTypeDM876QualitativeDiscipline:
 # 7. Falsification ledger
 # ---------------------------------------------------------------------------
 class TestTypeDFalsificationLedger1075:
-    def test_ledger_holds_at_35(self):
-        # THIRTY-SIXTH member-form absent in profiles/ (pinned in the
-        # corpus-integrity class); THIRTY-FIFTH member-claim form
-        # present in financial-times.yaml and competitor-entities.yaml.
-        assert _profiles_with("THIRTY-SIXTH") == []
+    def test_ledger_holds_at_36(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1080 run): ledger holds at
+        # 36 after Type B #1078 (mechanism 878, THIRTY-SIXTH member).
+        # The THIRTY-SIXTH member-claim form is present in
+        # journalists.yaml m878 (2 occurrences); THIRTY-FIFTH
+        # member-claim forms remain in financial-times.yaml and
+        # competitor-entities.yaml; no THIRTY-SEVENTH member-form in
+        # profiles/.
+        jtext = _read(
+            os.path.join(PROFILES_DIR, "careers", "journalists.yaml")
+        )
+        assert jtext.count("THIRTY-SIXTH falsification-family member") == 2
+        assert _profiles_with("THIRTY-SEVENTH") == []
         carriers = _profiles_with("THIRTY-FIFTH")
         assert "profiles/financial-times.yaml" in [
             os.path.relpath(p, REPO_ROOT) for p in carriers

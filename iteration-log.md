@@ -1,3 +1,43 @@
+## #1080 Type D: Test and Verify - qualitative corpus integrity for the completed 1075-1079 window (m877/m878/m879); no new empirical finding, analysis.json untouched; max mechanism 879, zero-880 guards pinned; falsification ledger holds at 36; #1075 suite tombstone SEVENTY-FIFTH -> SEVENTY-SIXTH - Type D OPENS the 1080-1084 window (Sep 29 2026, 17:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+
+2026-09-29 17:00 PDT, iteration_type "D", **OPENS the 1080-1084 window** (Type D #1080; rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1080-1084 window OPENS with this Type D (per #565: D #1080 -> E #1081 -> A #1082 -> B #1083 -> C #1084)
+- Predecessor #1079 Type C: main a04bf111, anchor 5b102a31, log-hash 463e36ea (all verified present via git cat-file before this run's commit); #1075 OPENED the now-closed 1075-1079 window
+- Pre-commit novelty greps: zero test_type_d_1080 files on disk (glob); no "Type D #1080" in git log (--grep); max numeric mechanism_id 879 in-tree pre-commit; zero numeric 880 mechanism_id keys in profiles/ (mechanism_id regex sweep); zero underscore-form and dash-form 880 mechanism key strings repo-wide pre-commit (needles format-built per #715); block key zero-hit; no qualitative corpus additions in the 1075-1079 window post-#1079; THIRTY-SEVENTH member-form absent in profiles/ pre-commit. ASCII-only, no em dashes.
+
+### Verification scope (verification-layer run, no new empirical finding)
+- m877 (mechanism 877, profiles/wired.yaml, block key at indent 4): OpenAI arm carries manual_illustrative_tone -0.35 (Isabella Ward, relay-attested per #503 - the #503 suffix is a YAML comment in the source), url first-hand relay_attested per #503; carried Meta arms -0.45 (m820) / -0.30 (m757); illustrative deltas +0.10 / -0.05 near-null parity; statistical_discipline nested block asserts MANUAL ILLUSTRATIVE ONLY with p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, verdict directionally_supported_not_proven, no_analysis_json_update, NOT artifact-grade; NOT a falsification-family member (falsification_family_member False, ledger_note pinned).
+- m878 (mechanism 878, profiles/careers/journalists.yaml, block key at indent 4): THIRTY-SIXTH falsification-family member claim forms present exactly twice (verdict_note + falsification_family dict member claim "THIRTY-SIXTH falsification-family member"); openai_arm carried un-rescored from m877 (-0.35) with carried_from_m877 True; anthropic_arm fresh -0.40; illustrative delta (anthropic minus openai) -0.05 near-null; statistical_discipline nested block asserts the Aug-28 manual-illustrative rule.
+- m879 (mechanism 879, profiles/competitor-entities.yaml, block key at indent 4): six top-level qualitative fields present (five_legs, relationship_direction, tone_scored, confounders, counterargument, connects_to); five legs PIPELINE/INBOUND/PRICING/INVENTORY/TRAFFIC-TENSION all populated; relationship_direction INBOUND-PULL as the TWENTY-THIRD direction; tone NOT_SCORED; research method block present (2 search sets + 1 first-hand open, relay legs excerpt-bounded per #503).
+- Block-key uniqueness: each of the three block keys appears exactly twice in its home YAML (block-key line + test_file field substring), once at indent 4.
+- Guard lifecycle: max numeric mechanism_id 879 in-tree; zero 880 needles (mechanism_880 / mechanism-880 / "880" block-key needles) repo-wide in source; own files carry no contiguous 880 mechanism-key literals (format-built needles per #715). #1075 file historical repin: MAX_ID 879 / NEXT_NUM 880 (pinned by #1080 Type D); rotation guard now asserts the CLOSED 1075-1079 window (newest-first C #1079, B #1078, A #1077, E #1076, D #1075, all with clean "Type X #N:" main subjects); Type E #1076 verified landed (main commit d216984d); #1075 entry present in log. The #1076/#1077/#1078 forward-looking zero-877/zero-36th guards fail BY DESIGN (5 failed, 1 passed in the pinned subprocess run) - superseded per #710/#720.
+- Falsification ledger holds at 36: the THIRTY-SIXTH member-claim form appears in journalists.yaml m878 exactly twice; competitor-entities.yaml carries a ledger cross-reference note ("THIRTY-SIXTH member (") that is NOT the member-claim form; no THIRTY-SEVENTH member-form in profiles/.
+
+### Full-suite status
+- The #1075-run full suite died at 2,518 bytes / ~4% (log mtime 2026-09-29 12:59 PDT, no pass/fail summary, no live pytest process) - recorded as the 57th consecutive background-suite death; suite-tombstone lineage advances SEVENTY-FIFTH -> SEVENTY-SIXTH.
+- Full suite relaunched this run in the background to goal hidden_files/type_d_1080_full_suite.log; log verified live (progress tokens, >100 bytes) pre-commit. Completion may remain pending for the next Type D run under the established convention.
+
+### Synthetic calibration (fresh values, committed in-file)
+- Strong pair: asymmetry -0.6357142857142857, t = -42.429085221428828, p = 9.248947518416920e-14, d = -22.679300018974320, CI 95% (-0.6643214285714286, -0.6085714285714287).
+- Near-null pair: asymmetry 0.0057142857142857, t = 0.335672543318676, p = 0.7429148654947594, d = 0.179424521606503, CI 95% (-0.0257142857142857, 0.03575).
+- Degenerate one-per-arm pair: t = 0, p = 1, d = 0 (m878-style single-observation-per-arm guard).
+- Values differ from the #1075 seeds and are cross-asserted in-file.
+
+### No browser research this run
+- Verification-layer run: no new primary sources, no browser.search / browser.open; no analysis.json update (untouched); no new corpus mechanism.
+
+55 tests, 14 classes in tests/test_type_d_1080_m877_m878_m879_qualitative_corpus_integrity_sep29_5pm.py. Pre-commit: 45 green; 10 deselected by design (anchor + rotation per #565, itlog newest-first per #721, 4 doc-sync + 3 itlog ratchet per #719); 0 unexpected failures. Bugs fixed pre-commit: m877 block-key indent 4 (not 6), THIRTY-SIXTH cross-reference in competitor-entities.yaml ledger note vs member-claim form, needle self-match in the own-file sweep, YAML #503 comment in url_status, bare ordinal cross-reference scope. Post-doc-sync re-run: 53 green + 2 fail by design (rotation opens + anchor, green post-commit/post-patch); anchor tests patched green in the anchor followup; itlog tests green in the log-hash followup; 55/55 green post-anchor-patch.
+
+Guard lifecycle: this file carries zero-880 forward needles (pass this run; fail BY DESIGN when mechanism 880 lands at a future A/B/C leg); the #1081 Type E run pins the zero-880 guards.
+
+Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative test file), #1012-wt (Type A test file) remain in-flight, untouched and unstaged - verified via git status before staging; targeted staging only (own test file, #1075 repin, README.md, docs/ARCHITECTURE.md, iteration-log.md).
+
+Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 54/54 file tests green post-doc-sync); log-hash followup TBD updates this line (this commit).
+README stats table 54522/1404 -> 55518/1405 (+55/+1 this file; +942 baseline reconciliation via authoritative .venv --collect-only, per the #1078 count_stats.py lesson) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1080 entry (this entry).
+Push: TBD main -> main landed via the atomic proxy-credential workflow (temp GIT_CONFIG_GLOBAL auth, PAT never via argv); remote HEAD verified MATCH via git ls-remote (TBD).
+
 ## #1079 Type C: OpenAI India publisher pipeline expansion - INBOUND-PULL as the TWENTY-THIRD relationship direction (mechanism 879; ledger holds at 36); NOT a falsification-family member - Type C FIFTH and CLOSING leg of the 1075-1079 window (Sep 29 2026, 16:00 PDT; main commit a04bf111 / anchor 5b102a31; log-hash followup registers both hashes here per #721 (this commit: 463e36eae0826a69aff33c4a54cf672554da3295))
 
 2026-09-29 16:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1075-1079 window** (Type C #1079; rotation rule D->E->A->B->C per #565 anchor + rotation guard).
