@@ -25277,3 +25277,121 @@ ben_schoon:
       - '#150 (Cherlynn Low beat-assignment control case - the control-case lineage this extends)'
       - '#827 (Victoria Song "perv glasses" stigma frame - the stigma noun Schoon''s piece also uses)'
       no_analysis_json_update: true
+
+reece_rogers:
+  name: Reece Rogers
+  current_role: Staff writer
+  current_publication: WIRED
+  publication_owner: Conde Nast
+  beat: AI, consumer tech, product reviews
+  mechanism_ids: [890]
+  career_history:
+  - employer: WIRED
+    role: Staff writer
+    period: present
+    source_url: https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/
+  notes: 'Byline verified via WIRED URL slugs; 952+ articles per the author page (service/generalist beat: AI, apps, social media). Previously cited in-corpus for the Jul-7-2026 same-day Meta/Anthropic register split (m629, Type B #658): the Meta Muse Image opt-out alarm (-0.45, consent-violation framing, vindicated within 3 days when Meta scrapped the feature) vs Anthropic Claude Cowork playful product enthusiasm (+0.10, zero alarm vocabulary despite the agent pulling data from email threads, Slack channels, and meeting transcripts). FIRST dedicated mechanism-id-sequence Type B mechanism on Rogers in journalists.yaml: mechanism 890 (Type B #1098, Sep 30 2026) extends the m629 pair into the Muse-agent peg 75 days later - a Sep-20-2026 Muse weeklong-test data-collection alarm (-0.50 MANUAL ILLUSTRATIVE) vs the carried Jul-7-2026 Claude Cowork playful register (+0.10). Illustrative delta +0.60 (Anthropic minus Meta), thesis-consistent; m629''s +0.55 gradient holds on the new peg.'
+  source_urls:
+  - https://techbriefly.com/2026/09/21/meta-muse-ai-data-collection-scrutiny/?ref=hackernoon.com
+  - https://dataconomy.com/2026/09/21/muse-reportedly-read-private-notifications-without-permission/
+  - https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/
+
+  competitor_coverage:
+    type_b_1098_reece_rogers_wired_muse_weeklong_data_collection_alarm_vs_carried_claude_cowork_playful_m629_temporal_extension_sep30:
+      mechanism_id: 890
+      discovery_date: '2026-09-30'
+      iteration: 1098
+      iteration_type: B
+      iteration_time: '2026-09-30 11:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: wired
+      journalist: 'Reece Rogers (WIRED staff writer; 952+ articles; m629 subject)'
+      block_key: type_b_1098_reece_rogers_wired_muse_weeklong_data_collection_alarm_vs_carried_claude_cowork_playful_m629_temporal_extension_sep30
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1098 is the iteration number, not the mechanism id).'
+      test_file: tests/test_type_b_1098_reece_rogers_wired_muse_weeklong_data_alarm_vs_claude_cowork_m629_temporal_extension_sep30_11am.py
+      type: 'B - Journalist Cross-Entity Tracking - Temporal Extension of the m629 Same-Writer Register Pair into the Muse-Agent Peg (Meta Muse weeklong-test data-collection alarm vs carried Claude Cowork playful register)'
+      pattern: 'Same-writer, same-outlet, same product-category family (personal AI agents). Reece Rogers (WIRED) weeklong-tested Meta''s Muse agent (Sep 20 2026 review): after several days of use it "prioritizes data collection about me over actually accomplishing tasks" - repeatedly nudged to connect email inboxes and banking information, floated monitoring incoming messages and photographing meals to estimate calories; one prompt read "Tell me when your passport and license expire"; the default avatar (a beige figure blending Ewok and Labubu features) struck him "as an apt visual for data collection" (MANUAL ILLUSTRATIVE -0.50). Same writer''s Jul-7-2026 Claude Cowork piece (carried from m629 per #807, +0.10): "Shut Those Laptops!" playful product enthusiasm with zero alarm vocabulary despite the agent pulling data from email threads, Slack channels, and meeting transcripts. Same ingestion surface, opposite registers - the alarm vocabulary tracks the entity and the consent posture, not the data surface.'
+      meta_arm:
+        piece: 'Reece Rogers (WIRED) weeklong-test review of Meta''s Muse agent, published Sunday Sep 20 2026'
+        date: '2026-09-20'
+        date_basis: 'Sep-21 TechBriefly and Dataconomy relays, both with explicit WIRED attribution ("published a review... on Sunday"); Rogers weeklong-test framing corroborated by the ppb1701 relay ("weeklong test"). Excerpt-tier per #503.'
+        publication: wired
+        attribution: 'Reece Rogers, first-hand (used Muse for several days)'
+        evidence_tier: 'excerpt-tier (WIRED paywalled; attested via the Sep-21 TechBriefly and Dataconomy relays with explicit WIRED attribution, plus webpronews/leodex/ppb1701/hackernoon/overturned corroboration; 0 browser.open per #503)'
+        evidence_quotes:
+        - 'After several days of use, Muse "prioritizes data collection about me over actually accomplishing tasks."'
+        - 'The agent repeatedly suggested Rogers connect his email inboxes and banking information.'
+        - 'It floated monitoring his incoming messages and photographing meals to estimate calories.'
+        - 'One prompt read: "Tell me when your passport and license expire."'
+        - 'The default avatar (a beige figure blending Ewok and Labubu features with arms outstretched) struck him "as an apt visual for data collection."'
+        - 'Meta spokesperson Emil Vazquez: "Any suggestion we didn''t build with that in mind from the beginning is ludicrous."'
+        framing_notes: 'Sustained data-collection-alarm register across the whole weeklong test: every relayed quote frames Muse as surveillance-first. The Rogers line "every time he asked the bot to do something, it instead attempted to collect more data" (Dataconomy) makes the collection the story, not the assistance. Contrast with the carried Claude Cowork arm''s zero-alarm register on an identical ingestion surface.'
+        source_urls:
+        - https://techbriefly.com/2026/09/21/meta-muse-ai-data-collection-scrutiny/?ref=hackernoon.com
+        - https://dataconomy.com/2026/09/21/muse-reportedly-read-private-notifications-without-permission/
+        - https://www.webpronews.com/metas-muse-knows-you-too-well-the-ai-agent-that-watches-acts-and-unsettles/
+        - https://news.leodex.io/news/meta-s-muse-ai-agent-read-private-messages-without-permission
+        - https://blog.ppb1701.com/muse-already-lied-about-what-it-reads-guess-why-amazon-doesnt-trust-it-either
+        - https://hackernoon.com/what-100-tech-people-think-metas-muse-is
+        - https://overturned.substack.com/p/september-2026-the-latest-in-tech
+        tone_MANUAL_ILLUSTRATIVE: -0.50
+      anthropic_arm:
+        carried_per_807: true
+        carried_from: 'm629 (type_b_658, Sep 10 2026); scores unchanged, no re-scoring this run'
+        piece: 'Reece Rogers (WIRED): "Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone"'
+        date: '2026-07-07'
+        publication: wired
+        attribution: 'Reece Rogers, product-preview register'
+        evidence_tier: 'excerpt-tier per #658 (search-excerpt-bounded); characterization carried per #807'
+        evidence_quotes:
+        - 'Headline: "Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone"'
+        - 'The agent can "pull together data from email threads, Slack channels, meeting transcripts, and recent online chatter."'
+        framing_notes: 'Zero alarm vocabulary despite the same ingestion surface the Meta arm treats as surveillance: email, Slack, meeting transcripts, online chatter are framed as product capability, not collection risk. Playful, enthusiastic register throughout.'
+        source_urls:
+        - https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/
+        tone_MANUAL_ILLUSTRATIVE: 0.10
+      temporal_extension: 'Temporal extension of m629 (#658, Sep 10 2026): same writer (Reece Rogers), same outlet (WIRED), same product-category family (personal AI agents). The m629 same-day +0.55 register gradient (Meta Muse Image opt-out alarm -0.45 vs Anthropic Claude Cowork playful +0.10) is re-pegged 75 days later on the Muse agent (Jul 7 -> Sep 20): Meta -0.50 (fresh, weeklong test) vs Anthropic +0.10 (carried per #807). Illustrative delta +0.60, thesis-consistent direction (Meta draws the harder register). The register gradient is peg-extensible, not a one-day artifact.'
+      illustrative_delta: 0.60
+      delta_note: 'Anthropic minus Meta: +0.10 - (-0.50) = +0.60. thesis-consistent direction: Meta draws the harder register within the same writer, same outlet, two-peg temporal extension. The m629 same-day gradient was +0.55 (Anthropic minus Meta); it holds on the new Muse-agent peg 75 days later. MANUAL ILLUSTRATIVE ONLY.'
+      novelty: 'FIRST dedicated mechanism-id-sequence Type B mechanism on Reece Rogers in journalists.yaml (m629 lives in the legacy competitor-coverage-research.yaml list item). Zero test_type_b_1098 files on disk (glob); no "Type B #1098" in git log (--grep); max numeric mechanism_id 889 in profiles/ pre-commit; zero numeric 890 mechanism_id keys in profiles/ pre-commit; zero underscore-form and dash-form 890 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; zero reece_rogers column-0 type_b_1098 competitor_coverage block pre-commit; the seven novel relay URLs zero-hit repo-wide pre-commit (git grep -F); the carried Claude Cowork URL in-corpus per m629; THIRTY-EIGHTH member-claim form absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '4 browser.search query sets, 0 browser.open per #503 (excerpt-bounded): Reece Rogers WIRED Meta Muse messages privacy test September 2026 (SELECTED: surfaced the verbatim TechBriefly + Dataconomy Sep-21 relay URLs with explicit WIRED attribution, the ppb1701 weeklong corroboration, the webpronews passport-expiry/avatar detail, the hackernoon trust-problem sequence; own-repo #658 commit pages 954011b0d/c068b30f rejected as circular); Lauren Goode WIRED Meta smart glasses September 2026 (REJECTED as the run''s pair: surfaced only own-repo #436/#452 commit pages plus the Reuters camera-free piece; Goode saturated at #436/#447); quoted "Reece Rogers" WIRED Muse review "prioritizes data collection" (SELECTED: re-confirmed the Rogers quote and weeklong-test framing across the relays; WIRED ebook mirrors rejected as irrelevant); Reece Rogers WIRED Anthropic Claude September 2026 (REJECTED for a fresh arm: surfaced own-repo #658/#97 commits as circular, the Mullin/Rogers CRISPR piece by Anna Rogers not Reece - rejected on byline, the techmeme Scrapling pick - story-type mismatch). 0 browser.open. Pre-commit novelty greps per #715 (see novelty). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. Engine NOT run. verdict directionally_supported_not_proven. no_analysis_json_update true. NOT artifact-grade. n=1 fresh arm + one carried arm; hypothesis-generating only. Correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member: temporal extension of a same-writer register pair plus register documentation; no uniform payer-softening prediction is under test at this pair (the WIRED/Conde Nast OpenAI-licensing deal stack is outlet context, and Anthropic is a deal-partner-side entity). Falsification ledger holds at 37 (THIRTY-SEVENTH present in profiles/the-verge.yaml, THIRTY-EIGHTH member-claim form absent repo-wide).'
+      falsification_ledger: 37
+      confounders:
+      - level: STRONG
+        classification: 'evidence-tier'
+        note: 'Excerpt-tier Meta arm: 0 browser.open per #503; the review is WIRED-paywalled and attested only via the Sep-21 relays with explicit WIRED attribution; the verbatim quotes are relay-carried lines, not a page read.'
+      - level: STRONG
+        classification: 'peg'
+        note: 'peg asymmetry: a weeklong hands-on test diary vs an announced-product preview; the weeklong-use peg structurally invites an accumulation of data-collection grievances.'
+      - level: STRONG
+        classification: 'consent-posture'
+        note: 'consent-posture asymmetry: Muse proactively solicits email, banking, message-monitoring, and document-expiry data, while the carried Claude Cowork arm discloses the same ingestion surface as a feature; the alarm vocabulary tracks the consent posture, not just the entity.'
+      - level: MODERATE
+        classification: 'temporal'
+        note: 'Temporal gap: 75 days between the carried Jul-7 Anthropic arm and the fresh Sep-20 Meta arm; the register gradient is peg-extensible per the finding, but the gap bounds it.'
+      - level: MODERATE
+        classification: 'coding'
+        note: 'Carried-arm coding: Anthropic +0.10 inherits #658''s excerpt-bounded characterization per #807; no re-scoring this run.'
+      - level: WEAK
+        classification: 'sample'
+        note: 'n=1 fresh arm; single-weeklong-test variance.'
+      - level: WEAK
+        classification: 'outlet-context'
+        note: 'WIRED/Conde Nast OpenAI-licensing deal stack is outlet context (m889 documents the WIRED x OpenAI grant), not a tested prediction here.'
+      counterevidence:
+      - 'Meta spokesperson Emil Vazquez''s "ludicrous" pushback is on the record - the alarm register is contested, not conceded.'
+      - 'Rogers'' prior Meta arms were also adversarial (m629''s Muse Image opt-out piece) - within-writer register consistency across Meta pieces is as compatible with a writer-level Meta-skepticism as with entity-directed gradient; the Anthropic playful pole is what bounds that reading.'
+      - 'The Muse-agent alarm register is outlet-diffuse (Inc. Aten''s Sep-19 message-sync expose, 9to5Mac''s independent Muse test) - not Rogers-idiosyncratic.'
+      - 'The carried Claude Cowork arm itself discloses the identical ingestion surface - the register difference is framing-level, and a reader could attribute it to product positioning rather than payer pressure; kept as hypothesis-generating only.'
+      cross_references:
+      - '#658 (m629) - the pair this run temporally extends: Rogers'' Jul-7-2026 same-day Meta/Anthropic register split (+0.55), re-pegged here onto the Muse agent 75 days later.'
+      - '#97 (Rogers privacy topic-routing finding: privacy stories routed to Meta, capability stories to Anthropic; McDonald''s capability control - the routing precedent this gradient extends to the agent peg).'
+      - '#1093 (m887, Aten) - same-week adjacent Type B on the Muse ambient-data family: Aten''s Sep-19 message-sync expose (-0.70) is the peg-mate of Rogers'' Sep-20 weeklong test (-0.50).'
+      - '#1097 (m889, WIRED x OpenAI Zeff) - same-outlet adjacent: the WIRED deal arm (-0.35) sits between Rogers'' Anthropic (+0.10) and Meta (-0.50) arms on the register ladder.'
+      - 'm677-family temporal extension lineage - the carried-arm, peg-extensible finding pattern this run instantiates.'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
