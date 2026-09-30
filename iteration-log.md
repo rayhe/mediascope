@@ -1,6 +1,6 @@
 ## #1088 Type B: Victoria Song (The Verge) x Apple Watch always-listening vs x Meta camera-free Audio - ambient-audio register-inversion pair (mechanism 884; second temporal extension of mechanism 75 register-selectivity + extension of mechanism 827 into the audio modality)
 
-2026-09-30 01:00 PDT, iteration_type "B", **FOURTH leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard; main commit e9b32ea2 / anchor c439f44f; log-hash followup registers both hashes here per #721 (this commit: TBD-LOGHASH)).
+2026-09-30 01:00 PDT, iteration_type "B", **FOURTH leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard; main commit e9b32ea2 / anchor c439f44f; log-hash followup registers both hashes here per #721 (this commit: 1863d076)).
 
 ### Rotation transparency
 - 1085-1089 window FOURTH leg (per #565: D #1085 -> E #1086 -> A #1087 -> B #1088 -> C #1089)
@@ -29,7 +29,7 @@
 
 Guard lifecycle: mechanism 884 lands at this Type B leg; the #1085/#1086/#1087 zero-884 guards are superseded BY DESIGN (this run's zero-885 guards PASS; they fail BY DESIGN when mechanism 885 lands at a future leg - the #1090 Type D run pins zero-885 guards).
 
-Push status per #864: main e9b32ea2 + anchor c439f44f + log-hash TBD-LOGHASH (+ log-hash tweak if needed) pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+Push status per #864: main e9b32ea2 + anchor c439f44f + log-hash 1863d076 (+ log-hash tweak if needed) pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1087 Type A: Verge x Anthropic Sep-2026 pacing-policy + IPO-prospectus register extension (mechanism 883; m557/m766 extension, m880 companion)
 
