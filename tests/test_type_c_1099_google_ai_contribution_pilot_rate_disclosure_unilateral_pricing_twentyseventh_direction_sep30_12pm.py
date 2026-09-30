@@ -67,7 +67,7 @@ DASH_892 = "mechanism-" + NEXT_NUM
 TW27 = "TWENTY-" + "SEVENTH relationship direction"
 TW28 = "TWENTY-" + "EIGHTH relationship direction"
 
-ANCHORED_SHA = "0" * 40  # patched to the main-commit SHA by the anchor followup per #565
+ANCHORED_SHA = "def43924dfdca7ead8105dca4029446803720714"  # Type C #1099 main commit, patched by the anchor followup per #565
 ITERATION = 1099
 
 PREDECESSORS = [
