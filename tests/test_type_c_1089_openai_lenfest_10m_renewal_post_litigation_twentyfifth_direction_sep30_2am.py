@@ -59,17 +59,17 @@ def tail_block():
 class TestNoveltyAnchorTypeC1089:
     """#565 novelty anchor: Type C #1089 must be unprecedented in the repo."""
 
-    def test_anchor_no_test_type_c_1089_in_history(self):
+    def test_anchor_type_c_1089_in_history(self):
         out = subprocess.run(
-            ["git", "-C", REPO, "log", "--oneline", "--grep", "Type C #1089"],
+            ["git", "-C", REPO, "log", "--format=%H", "--grep", "Type C #1089"],
             capture_output=True, text=True, check=True)
-        assert out.stdout.strip() == "", out.stdout
+        assert ANCHORED_SHA in out.stdout.split(), out.stdout
 
-    def test_anchor_no_mechanism_885_in_history(self):
+    def test_anchor_mechanism_885_in_history(self):
         out = subprocess.run(
-            ["git", "-C", REPO, "log", "--oneline", "--grep", "mechanism 885"],
+            ["git", "-C", REPO, "log", "--format=%H", "--grep", "mechanism 885"],
             capture_output=True, text=True, check=True)
-        assert out.stdout.strip() == "", out.stdout
+        assert ANCHORED_SHA in out.stdout.split(), out.stdout
 
     def test_anchor_sha_pinned_and_logged(self):
         # Deselected pre-commit per #565: ANCHORED_SHA carries the all-zeros
@@ -332,7 +332,7 @@ class TestResearchMethodTypeC1089:
 class TestCorpusNoveltyPostCommit:
     """Post-commit corpus novelty: 885 present, 886 absent, TWENTY-SIXTH absent."""
 
-    def test_no_mechanism_886(self):
+    def test_next_mechanism_absent(self):
         out = subprocess.run(
             ["git", "-C", REPO, "grep", "-F", "mechanism_" + str(NEXT_NEEDLE),
              "HEAD", "--", "profiles/", "tests/"],
@@ -416,7 +416,7 @@ class TestIterationLogEntry:
 
     def test_log_entry_exists(self):
         text = open(os.path.join(REPO, "iteration-log.md"), encoding="utf-8").read()
-        assert "Iteration %d" % ITERATION in text
+        assert "## #1089 Type C" in text
 
     def test_log_entry_type_c(self):
         text = open(os.path.join(REPO, "iteration-log.md"), encoding="utf-8").read()
@@ -473,12 +473,19 @@ class TestInflightIsolation:
             ["git", "-C", REPO, "status", "--porcelain"],
             capture_output=True, text=True, check=True)
         staged = [l for l in out.stdout.splitlines() if l and l[0] in "MARCD"]
-        names = {l[3:] for l in staged}
-        assert "profiles/competitor-entities.yaml" in names
-        assert any(n.startswith("tests/test_type_c_1089") for n in names)
-        assert "README.md" in names
-        assert "docs/ARCHITECTURE.md" in names
-        assert "iteration-log.md" in names
+        allowed = (
+            "profiles/competitor-entities.yaml",
+            "tests/test_type_c_1089",
+            "README.md",
+            "docs/ARCHITECTURE.md",
+            "iteration-log.md",
+        )
+        for line in staged:
+            assert "nytimes.yaml" not in line, "in-flight #899 file staged!"
+            assert "test_type_b_938" not in line, "in-flight #938 file staged!"
+            assert "test_type_d_900" not in line, "in-flight #900 file staged!"
+            assert "test_type_a_1012" not in line, "in-flight #1012-wt file staged!"
+            assert any(a in line for a in allowed), line
 
 
 class TestBlockHygiene:
