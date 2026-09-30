@@ -20,7 +20,7 @@ Type B #1098 - temporal extension of m629 (Type B #658, Sep 10 2026): same write
 
 ### Push status per #864
 - Test-fix: none expected - all pre-commit-green tests green post-doc-sync; the #1095 zero-889 guard supersessions are BY DESIGN and documented.
-- Push-status: #1098 local commit chain e454a736 (main) / 2cf9467a (anchor) / 52716790 (log-hash) / <push> (push-status) registered per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
+- Push-status: #1098 local commit chain e454a736 (main) / 2cf9467a (anchor) / 52716790 (log-hash) / b2e708d7 (push-status) registered per #864. Push 0cace503..b2e708d7 verified: local HEAD == remote HEAD (ls-remote). Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
 
 ## #1097 Type A: WIRED x OpenAI Sep-2026 slowdown-legality register extension (m889, m877-family) - Zeff Sep-10 coordination-ask exclusive at near-null parity with Meta on the leak-driven accountability peg (-0.35 vs -0.375 = +0.025); Dots Sep-29 product relay bounds the soft end (0.00); pooled delta +0.20 MANUAL ILLUSTRATIVE - Type A THIRD leg of the 1095-1099 window (Sep 30 2026, 10:00 PDT; main commit 13f857c0 / anchor 423f92a9; log-hash followup registers both hashes here per #721 (this commit: 1cd17264); doc-sync 55661/1421 -> 55739/1422 (+78/+1); ledger holds at 37, THIRTY-EIGHTH absent)).
 
