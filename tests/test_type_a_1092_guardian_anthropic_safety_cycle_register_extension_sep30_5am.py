@@ -77,7 +77,7 @@ EXPECTED_ORDER = [("D", "1090"), ("E", "1091"), ("A", "1092"),
                   ("B", "1093"), ("C", "1094")]
 # Patched to the real main-commit SHA in the anchor followup per the #565
 # convention.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "7c551fcca16c16f34db7f262a0e385c2ee6b27b2"
 
 REPO = Path(__file__).resolve().parents[1]
 
