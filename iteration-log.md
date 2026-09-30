@@ -19,7 +19,8 @@ Type E #1096 - monitoring-only verification cycle, no new empirical mechanisms. 
 - Doc-sync: README stats table 55599/1420 -> 55661/1421 (+62/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log #1096 entry (this entry).
 
 ### Push status per #864
-(filled post-push below)
+- Test-fix followup 5f5db0c8: corrected the doc-sync ratchet to the post-doc-sync count (README_TESTS_AFTER 55660->55661, +61->+62, 61->62 tests) per the #1093 precedent; 62/62 file tests green post-fix.
+- Push-status: #1096 local commit chain f94f88a2 (main) / 547bbfc7 (anchor) / a87ddccc (log-hash) / 34389f70 (log-hash followup, amended) / 5f5db0c8 (test-fix) registered ahead of push per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
 
 ## #1095 Type D: m886/m887/m888 qualitative-discipline verification + post-1090-1094 corpus integrity (max numeric mechanism_id 888; zero-889 forward guards format-built per #715; #1090 file historical repin MAX_ID 885->888 NEXT_NUM 886->889 rotation-guard window-closed-complete; ledger holds at 37, THIRTY-EIGHTH absent; #1090 background suite DIED at 2804 bytes, tombstone SEVENTY-SEVENTH->SEVENTY-EIGHTH) - Type D FIRST and OPENING leg of the 1095-1099 window (Sep 30 2026, 08:00 PDT; main commit ed8c9cf2 / anchor 188b15f6; log-hash followup registers both hashes here per #721 (this commit: 75243d3f); doc-sync 55526/1419 -> 55599/1420 (+73/+1)).
 
