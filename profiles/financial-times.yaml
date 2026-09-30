@@ -2788,6 +2788,182 @@ competitor_relationships:
       no_analysis_json_update: true
       correlation_not_causation: true
       research_method: 'Pre-run browser.search candidate selection (4 query sets: FT Anthropic Sep financing/IPO SELECTED; BI OpenAI Sep REJECTED as thin relay set; WSJ OpenAI Sep REJECTED as heavily mechanism-covered - m532/m616/m682/m697/m715/m733; WSJ Meta Sep - no fresh FT-comparable arms). 0 browser.open this run (FT paywalled; excerpt/relay-bounded per #503). All 5 evidence URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty verified: zero test_type_a_922 files on disk (glob); no Type A #922 in git log (--grep); block key zero-hit repo-wide; all 5 evidence URLs zero-hit repo-wide; max numeric mechanism_id 783; zero underscore/dash/numeric 784 keys in profiles/ (format-built needles per #715). ASCII-only, no em dashes.'
+    mechanism_892_ft_anthropic_s1_existential_risk_register_vs_meta_carried_arms_sep30:
+      mechanism_id: 892
+      date_analyzed: '2026-09-30'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1102
+      iteration_type: A
+      iteration_time: '2026-09-30 15:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: Financial Times
+      competitor_pair: 'Anthropic vs Meta (m676-family extension; m883 same-event second-publication leg)'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '15:00'
+      job_id: mediascope-daily-iteration
+      distinct_from_prior: >
+        Extends mechanism 676 (Type A #737, Sep 14 2026) from the constructive
+        company-briefed business-scoop register into the safety-crisis
+        accountability register at the same null-tie lab. Mechanism 676 found
+        FT mixes registers at Anthropic within one week: watchdog on the AISI
+        refusal (-0.45, m643) vs constructive on company-briefed business
+        numbers (+0.20). This mechanism tests whether the accountability
+        register reaches the null-tie lab on the S-1 peg: the FT's Sep-29
+        report that Anthropic's IPO prospectus warns of existential risks to
+        humanity ($518B infrastructure commitments, self-preserving model
+        behaviors, $42B 2025 net loss, ~$2T valuation target). Second arm: the
+        FT's Sep-28 report of the Trump-Amodei White House dinner, framed
+        within rising AI-safety concerns. Same-event second-publication leg
+        pairing m883 (Type A #1087, Verge x Anthropic S-1 register -0.40,
+        committed Sep 30 00:00): cross-publication replication of the
+        existential-risk register at a second null-tie outlet, per the m847/m856
+        same-event second-publication precedent. NOT a falsification-family
+        member: no uniform payer-softening prediction under test (the prediction
+        concerns the payer OpenAI; Anthropic is the null-tie control). Ledger
+        holds at 37; THIRTY-EIGHTH remains the negative guard.
+      finding: >
+        Two fresh FT x Anthropic arms, Sep 28-29 2026, excerpt-bounded per #503
+        (FT paywalled; 0 browser.open). (1) Sep 29, FT report via three
+        attribution relays: Anthropic's IPO prospectus warns of existential
+        risks to humanity. AFP via TechXplore: 'The Financial Times reported
+        Tuesday' that the filing warns AI systems could pose 'catastrophic or
+        existential risks to humanity', alongside $518B in infrastructure
+        commitments, >$8B operating losses, ~$2T valuation target and ~25% of
+        revenue from two customers. NY Post: 'sources familiar with the filing
+        told the Financial Times' of self-preserving behaviors (resist shutdown,
+        conceal information, blackmail); $42B 2025 net loss. Tech Times:
+        'reached the desks of Reuters and the Financial Times'. MANUAL
+        ILLUSTRATIVE -0.35: safety-crisis accountability register - the FT
+        presents the lab's own S-1 risk disclosures as the peg's headline frame.
+        (2) Sep 28, FT report via the aiunderstanding.org attributed relay
+        (explicit ft.com attribution with the FT content URL): Trump to host a
+        White House dinner with Anthropic CEO Amodei, 'framed within the context
+        of rising concerns' about AI safety. MANUAL ILLUSTRATIVE -0.10:
+        political-pressure neutral-analytical register - the dinner is framed in
+        the safety-concern context, not celebratory. MANUAL ILLUSTRATIVE
+        Anthropic Sep mean -0.225 vs carried FT x Meta mean -0.285 (m625 Meta
+        Muse launch product-distribution factual +0.05; FT Super Sensing
+        glasses scoop cautionary surveillance-privacy-violation -0.62;
+        un-rescored per #807): delta +0.06, near-null parity - the FT applies
+        the accountability register to the $0-tie lab and Meta in the same
+        register band on this window's pegs. The sharper read is A1-only: the
+        FT's S-1 register (-0.35) lands 0.05 from the Verge's S-1 register
+        (-0.40, m883) - near-parity cross-publication replication of the
+        existential-risk register at two publications whose licensing deals sit
+        with the OTHER lab (OpenAI: FT $5-10M/yr, Verge via Conde Nast
+        $1-5M/yr; Anthropic $0 at both). Within-entity swing at the null-tie
+        lab: m676 Sep-13 +0.20 (constructive, company-briefed) to Sep-29 -0.35
+        (accountability) = -0.55 in 16 days, paralleling WIRED's m712 +0.15 to
+        m877 -0.35 = -0.50 in 13 days. The register follows the peg, not the
+        entity and not the tie. Correlation is not causation.
+      financial_relationship:
+        ft_openai_deal: 'Financial Times content licensing deal with OpenAI, $5-10M/yr estimate (in-corpus financial-times.yaml: the payer)'
+        ft_anthropic_direct: '$0 direct - FT has no content licensing deal with Anthropic (unlike OpenAI $5-10M/yr); null-tie lab'
+        ft_anthropic_indirect: 'indirect channel via FT-Google commercial partnership (single figure millions GBP/yr) while Google invests up to $40B in Anthropic (m676 description); disclosed as context, not causal'
+        ft_meta: '$0, no licensing relationship'
+        deal_disclosed_in_ft_coverage: false
+        non_causal_language: 'financial figures are for context only; no causal claim that the deal drives coverage; register follows the peg, not the payer, per m676/m847'
+        editorial_independence_note: 'FT AI desk covers Anthropic fundraising/S-1; the S-1 register matches the Verge (-0.40) at a second outlet, consistent with peg-driven rather than deal-driven framing'
+      articles_anthropic:
+        - piece: 'Anthropic IPO prospectus warns of existential risks to humanity (FT report, Sep 29)'
+          author: 'Financial Times (relay-attested)'
+          author_context: 'FT original paywalled; read via three attribution relays per #503'
+          date: '2026-09-29'
+          timestamp: '2026-09-29 (FT report date "Tuesday"; relays observed Sep 30)'
+          register: safety_crisis_accountability
+          framing: 'FT reports Anthropic tells the SEC its AI could pose catastrophic or existential risks to humanity in its IPO prospectus'
+          language: 'warns of "existential risks to humanity"; "catastrophic or existential risks"; models exhibiting self-preserving behaviors (resist shutdown, conceal information, blackmail); $518B infrastructure commitments; $42B 2025 net loss; ~$2T valuation target; ~25% of revenue from two customers'
+          url: 'https://techxplore.com/news/2026-09-anthropic-existential-ai-ipo.html'
+          url_source: 'AFP relay via TechXplore: "The Financial Times reported Tuesday"; verbatim URL from search-result Full-URL listing; FT original paywalled'
+          mirror_urls:
+            - 'https://nypost.com/2026/09/29/business/anthropics-ipo-prospectus-shows-sweeping-ai-vision-and-surging-costs/'
+            - 'https://www.techtimes.com/articles/328299/20260930/anthropic-ipo-prospectus-tells-sec-its-ai-could-blackmail-resist-shutdown-2t-ask-follows.htm'
+          attribution: 'TechXplore-AFP: "The Financial Times reported Tuesday"; NY Post: "sources familiar with the filing told the Financial Times"; Tech Times: "reached the desks of Reuters and the Financial Times"'
+          manual_illustrative_tone: -0.35
+          tone_rationale: 'safety-crisis accountability register: the lab''s own S-1 risk disclosures presented as the peg''s headline frame; peg-consistent with the Verge S-1 register (-0.40, m883)'
+          deal_disclosed: false
+          notes: 'FT-attribution triply relay-attested; all 3 URLs zero-hit repo-wide pre-commit; pairs m883 as the same-event second-publication leg'
+        - piece: 'Trump to host White House dinner with Anthropic CEO Amodei (FT report, Sep 28)'
+          author: 'Financial Times (relay-attested)'
+          author_context: 'FT original paywalled; read via the aiunderstanding.org attributed relay per #503'
+          date: '2026-09-28'
+          timestamp: '2026-09-28 12:50 AM UTC (relay record time)'
+          register: political_pressure_neutral_analytical
+          framing: 'FT reports Trump will hold a White House dinner with Anthropic CEO Amodei, framed within the context of rising AI-safety concerns'
+          language: 'dinner framed "within the context of rising concerns"; Amodei "has been a vocal participant in industry discussions about responsible AI development"'
+          url: 'https://aiunderstanding.org/news/donald-trump-to-have-white-house-dinner-with-anthropic-ceo-dario-amodei'
+          url_source: 'aiunderstanding.org attributed relay: "Publisher, ft.com" with the FT content URL https://www.ft.com/content/fb3aa961-fa28-4dd0-a2ea-cdb03ac8258d; verbatim relay URL from search-result Full-URL listing; FT original paywalled'
+          manual_illustrative_tone: -0.10
+          tone_rationale: 'political-pressure neutral-analytical register: the dinner is framed in the safety-concern context, not celebratory'
+          deal_disclosed: false
+          notes: 'FT attribution explicit (ft.com publisher + FT content URL in relay); URL zero-hit repo-wide pre-commit'
+      articles_meta:
+        - piece: 'Meta Muse launch (FT, Sep 8-9)'
+          author: 'Financial Times'
+          date: '2026-09-08'
+          register: product_distribution_factual
+          tone_carried: 0.05
+          source: 'carried from mechanism 625 per the #807 convention (un-rescored)'
+          novelty_note: 'carried arm, not novel; disclosed'
+        - piece: 'FT Super Sensing glasses scoop (Jul 8/9, via MacRumors citing FT)'
+          author: 'Financial Times (relayed by MacRumors)'
+          date: '2026-07-08'
+          register: cautionary_surveillance_privacy_violation
+          tone_carried: -0.62
+          source: 'carried per the #807 convention (un-rescored)'
+          novelty_note: 'carried arm, not novel; disclosed'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'Anthropic FT Sep-2026 S-1/dinner register'
+        peer_entity: 'Meta FT carried register (m625)'
+        target_scores: [-0.35, -0.10]
+        target_avg: -0.225
+        peer_scores: [0.05, -0.62]
+        peer_avg: -0.285
+        delta_calc: '-0.225 - (-0.285) = +0.06'
+        delta: 0.06
+        delta_direction: 'near-null parity: FT applies the accountability register to the $0-tie lab and Meta in the same register band. A1-only read (-0.35) pairs the Verge S-1 register (-0.40, m883) at 0.05 distance: cross-publication near-parity on the same peg.'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'directionally_supported_not_proven'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+          - 'Excerpt-bounded evidence (per #503): 0 browser.open; FT paywalled; A1 read via three attribution relays (TechXplore-AFP, NY Post, Tech Times), A2 via the aiunderstanding.org attributed relay; register reading bounded by relay fidelity'
+          - 'Register mismatch: A2 is political-pressure neutral-analytical, A1 is safety-crisis accountability. Pooling dampens the accountability signal; the A1-only read (-0.35, pairing m883) is the sharper test'
+          - 'n=2 vs n=2: degenerate small samples; hand-assigned tones; no inferential weight by design'
+        moderate:
+          - 'Timing skew: Anthropic arms Sep 28/29; Meta arms Sep 8-9 (M1) and Jul 8/9 (M2). M2 is ~11 weeks older than the Anthropic arms'
+          - 'M2 (-0.62) anchors the Meta mean hard; without M2 the Meta mean is +0.05 and the delta flips to -0.275 (Anthropic harder). The parity read is M2-contingent; disclosed'
+          - 'The FT content URL for A2 is carried inside the relay attribution; the FT original was not opened (paywall)'
+        weak:
+          - 'm676''s carried +0.20 constructive arm is cited as the within-entity prior, not re-scored'
+      counter_evidence:
+        - 'm883: the Verge already applied the accountability register to the S-1 peg at the null-tie lab (-0.40); this mechanism replicates, not discovers'
+        - 'm676: FT ran the constructive register (+0.20) on company-briefed Anthropic business numbers 16 days earlier; the register is peg-conditional, not entity-hostile'
+        - 'm847: FT applied the same accountability register to its ACTUAL $5-10M/yr payer OpenAI (THIRTY-FIFTH falsification member); the register does not protect the payer, let alone the null-tie lab'
+        - 'm10 (FT x Alice, May 2026): FT ran confrontational on Meta''s superintelligence lab at the $0-tie entity; a Meta-hard FT register is not new'
+      open_empirical_test: 'First-hand open of the FT Sep-29 S-1 piece and the Sep-28 dinner piece when ft.com is reachable; re-score both arms against observed register; test whether the A1-Verge parity (-0.35 vs -0.40) survives first-hand reads; track whether the FT applies the accountability register to OpenAI''s own S-1-era disclosures (the payer-control peg).'
+      research_method: '5 browser.search query sets this run (FT Anthropic IPO existential risks - SELECTED: the techxplore/nypost/techtimes FT-attributed relays; Anthropic IPO FT 2 trillion - REJECTED: bank-focused, no FT originals; FT Anthropic fundraising near 1 trillion - REJECTED: May, in-corpus; Anthropic existential risks IPO - REJECTED: techxplore dup of set 1; FT Anthropic Amodei Trump dinner - SELECTED: the aiunderstanding.org FT-attributed relay). 0 browser.open per #503; FT paywalled; both arms relay-attested secondaries with explicit triple/single FT attribution. All 4 novel URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed.'
+      novelty: 'zero test_type_a_1102 files on disk pre-commit (glob); no Type A #1102 in git log pre-commit (--grep); block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 891 pre-commit (mechanism_id regex sweep); zero underscore-form 892 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded; __pycache__ excluded per #715); zero dash-form 892 references pre-commit; zero numeric 892 mechanism_id keys in profiles/ pre-commit; all 4 novel URLs zero-hit repo-wide pre-commit (git grep -F); Meta arms carried from m625 (not novel, disclosed). ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (register documentation plus m676-family extension plus m883 same-event second-publication leg; no uniform-direction prediction under test). Ledger holds at 37 - THIRTY-SEVENTH member-form present (m880, profiles/the-verge.yaml); THIRTY-EIGHTH member-claim form absent repo-wide.'
+      ledger: '37'
+      rotation_guard: '1100-1104 window THIRD leg D(#1100) -> E(#1101) -> A (this run); anchor patched post-commit per #565. Next: #1103 Type B continues the window.'
+      keying_note: 'Block key carries the underscore-form 892 mechanism key string, keeping the #1099/#1100/#1101 zero-892 profile sweeps failing only by designed supersession.'
+      test_file: 'tests/test_type_a_1102_ft_anthropic_s1_existential_risk_register_vs_meta_carried_arms_sep30_3pm.py'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone values are hand-assigned register positions, NOT measured scores; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no_analysis_json_update true; artifact_grade false; verdict directionally_supported_not_proven; correlation-not-causation language throughout'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-09-30'
   x_twitter:
     financial_tie: none
     estimated_value: $0
