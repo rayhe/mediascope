@@ -1,3 +1,39 @@
+## #1090 Type D: m883/m884/m885 qualitative-discipline verification + post-1085-1089 corpus integrity (max 885; #1085 file historical repin; #1085 suite death verdict) - Type D FIRST and OPENING leg of the 1090-1094 window (Sep 30 2026, 03:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD)).
+
+### Rotation transparency
+- 1090-1094 window FIRST and OPENING leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
+- Predecessors: #1085 Type D main 199a0ef4/anchor d99c8292/log-hash 923e7bdf; #1086 Type E main a2570fe7/anchor 4dedcc91/log-hash 15fe0d57; #1087 Type A main db6b141d/anchor 31d58d63/log-hash baa05be1; #1088 Type B main c439f44f/anchor TBD/log-hash 1863d076; #1089 Type C main a98d10d8/anchor 497d90cd/log-hash 3bc0a638/log-hash-tweak 064c828a (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_d_1090 files on disk (glob); no "Type D #1090" in git log (--grep); max numeric mechanism_id 885 pre-commit (Type C #1089, mechanism 885 in profiles/competitor-entities.yaml); zero numeric/underscore/dash 886 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded; local tests/__pycache__ .pyc artifacts carry concatenated needle strings from their own guards - untracked build artifacts, excluded per the #715 pattern-rescope lesson); block keys for m883/m884/m885 already landed at their runs (this run verifies, does not land). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Guard lifecycle: #1085's zero-882 needles, #1086's zero-883/max-882 needles, and #1087's zero-884 numeric needle fail BY DESIGN at this run (pinned as forward-looking staleness via subprocess; 7 numeric pins); #1089's zero-886 needles PASS this run (current forward guards); this run pins zero-886 guards (runtime-built per #715) for the 1090-1094 window.
+- Next run #1091 Type E continues the 1090-1094 window.
+
+### Background suite verdict per #795
+- The #1085-launched background full-suite run DIED: log stalled at 1604 bytes (~2% of a healthy run, pytest session header only) with last write Sep 29 22:42 PDT, zero summary tokens (no failed/passed/error lines), no live pytest process. Per the #795 convention this is a DEATH.
+- The 57-run clean streak ENDED at #1085 when the #1080 suite completed (1 failed / 3686 passed / 11 xfailed in 1:06:25). This is death #1 of a new streak.
+- Tombstone lineage advances SEVENTY-SIXTH -> SEVENTY-SEVENTH (the #1085 Type D run carried the SEVENTY-SIXTH tombstone in its docstring).
+- The #1090 run re-launches the full suite as a background process writing to goal hidden_files type_d_1090_full_suite.log WITHOUT -x (full inventory, calendar by-design failures included, needed for the #1095 triage). The #1095 Type D run checks this suite's verdict per #795.
+
+### #1085 file historical repin
+- MAX_ID 882->885, NEXT_NUM 883->886 ("pinned by #1090 Type D" comments); docstring records the repin.
+- Rotation guard rewritten to the 1085-1089 window-closed-complete subsequence form: test_1085_window_closed_complete (filters to the 1085-1089 subsequence, stable across this run's main commit), test_type_c_1089_landed (inverts the no-Type-E-1086 forward guard; asserts the a98d10d8 main commit), test_1085_entry_present_in_log (presence, not newest-first position). The window-opener forms (test_rotation_window_opens_1085, test_no_type_e_1086_in_git_log, test_1085_entry_newest_first_in_log) are REMOVED.
+- Anchor mechanics untouched (ANCHORED_SHA 199a0ef40b308dafbe3a6bd02d28a038c1822ec9 stays).
+
+### Statistical discipline (all three mechanisms)
+- Monitoring-only per the Aug 28 2026 standing rule: MANUAL ILLUSTRATIVE ONLY, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run at the finding layer, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade. Correlation is not causation. Hypothesis-generating only.
+- m883 (Type A #1087, the-verge.yaml): Verge x Anthropic Sep-2026 pacing-policy register (Sep 12, analytical policy-explainer 0.0) + IPO-prospectus register (Sep 29 relay, financial-skeptical -0.40; ~80 of 261 prospectus pages on AI risks, $42B 2025 net loss); Anthropic Sep mean -0.20 vs carried Meta mean -0.225, illustrative delta +0.025 register PARITY; CONTROL_CASE_AGAINST_FINANCIAL_DETERMINISM at Vox Media (companion to m880, extends m557/m766); NOT a falsification-family member (ledger holds at 37).
+- m884 (Type B #1088, journalists.yaml): Victoria Song writer-level pair - Apple Watch always-listening arm (-0.05: transcription-accuracy doubts, zero privacy/stigma vocabulary) vs Meta camera-free Audio arm (band mean -0.325: stigma-frame -0.30 + business-model indictment -0.35); illustrative delta (Apple minus Meta) +0.275; SECOND temporal extension of mechanism 75 + extension of m827 into the audio modality; NOT a falsification-family member (no Vox Media-Apple licensing deal in corpus; ledger holds at 37).
+- m885 (Type C #1089, competitor-entities.yaml): OpenAI x Lenfest $10M renewal as the TWENTY-FIFTH relationship direction per the m807 enumeration ($5M cash + up to $5M software credits/engineering; second cohort opens local TV + statewide public-service eligibility; at most half of 11 re-accepted; one-payer renewal, Microsoft silent); tone NOT_SCORED per the #609/#614 qualitative boundary; NOT a falsification-family member (ledger holds at 37).
+- Falsification ledger holds at 37: THIRTY-SEVENTH member-claim form present once (the-verge.yaml m880); THIRTY-EIGHTH member-claim form absent in profiles/ (the two THIRTY-EIGHTH hits are negative-guard notes, designed); TWENTY-SIXTH relationship direction absent.
+
+### Test file and doc-sync
+- tests/test_type_d_1090_m883_m884_m885_qualitative_corpus_integrity_sep30_3am.py: 65 tests, 15 classes. Pre-commit: anchor + rotation + novelty-itlog + doc-sync + repin + relaunch tests deselected per #565/#719/#721 (11 deselected); 54 green.
+- Doc-sync: README stats table 55174/1414 -> 55239/1415 (+65/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log entry prepended (reverse-chronological).
+
+Guard lifecycle: mechanisms 883/884/885 landed at #1087/#1088/#1089; the #1085 zero-882, #1086 zero-883/max-882, and #1087 zero-884 numeric needles are superseded BY DESIGN (this run's zero-886 needles PASS; they fail BY DESIGN when mechanism 886 lands at a future leg).
+
+Push status per #864: TBD.
+
 ## #1089 Type C: OpenAI x Lenfest Institute AI fellowship $10M renewal (Sep 28 2026) - POST-LITIGATION-GRANT-RENEWAL as the TWENTY-FIFTH relationship direction; mechanism 885; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH member-claim form absent) - Type C FIFTH and CLOSING leg of the 1085-1089 window (Sep 30 2026, 02:00 PDT; main commit a98d10d8 / anchor 497d90cd; log-hash followup registers both hashes here per #721 (this commit: 3bc0a638)).
 
 ### Rotation transparency

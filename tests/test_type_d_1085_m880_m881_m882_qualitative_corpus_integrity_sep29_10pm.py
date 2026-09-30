@@ -1,6 +1,11 @@
 """Type D -- Iteration #1085 (Tue 2026-09-29 22:00 PDT): m880/m881/m882
 qualitative-discipline verification + post-1080-1084 corpus integrity
-(max numeric mechanism_id 882; zero next-number 883 keys in
+(HISTORICAL REPIN by #1090 Type D, Sep 30 2026: MAX_ID 882->885,
+NEXT_NUM 883->886, rotation guard rewritten to the 1085-1089
+window-closed-complete subsequence form, no-Type-E-1086 inverted to
+Type-C-1089-landed a98d10d8, entry newest-first -> entry-present,
+anchor mechanics untouched)
+(max numeric mechanism_id 885; zero next-number 886 keys in
 numeric/underscore/dash mechanism forms; underscore/dash 883 needles
 are format-built per #715 so no guard-literal carrier file exists -
 the repo-wide 883 sweep is pure zero on source files (the local
@@ -124,8 +129,8 @@ TEST_BASENAME = OWN_BASENAME
 
 ANCHORED_SHA = "199a0ef40b308dafbe3a6bd02d28a038c1822ec9"  # patched by the anchor followup commit per #565
 
-MAX_ID = 882
-NEXT_NUM = 883
+MAX_ID = 885  # pinned by #1090 Type D: m885 landed at #1089 Type C
+NEXT_NUM = 886  # pinned by #1090 Type D: m885 landed at #1089 Type C
 
 M880_KEY = (
     "verge_openai_aug_sep2026_astra_safety_arc_adversarial_"
@@ -411,31 +416,38 @@ class TestNovelty1085:
         assert text.count("block_key: " + M882_KEY) == 1
         assert text.count(M882_KEY) == 2
 
-    def test_1085_entry_newest_first_in_log(self):
-        # The "## #1085 Type D:" entry leads the log (newest-first
-        # ordering); hashes are TBD until the anchor followup patches
-        # them per #565. Deselected pre-commit per #721.
-        assert _read(LOG_PATH).startswith("## #1085 Type D:")
+    def test_1085_entry_present_in_log(self):
+        # HISTORICAL REPIN (Sep 30 2026, #1090 run): the #1085 entry
+        # is present in the log (newest-first position belonged to
+        # the #1090 entry after this run).
+        assert "## #1085 Type D:" in _read(LOG_PATH)
 
 
 # ---------------------------------------------------------------------------
 # 2. Rotation guard per #565
 # ---------------------------------------------------------------------------
 class TestTypeDRotationGuard1085:
-    def test_rotation_window_opens_1085(self):
-        # The newest distinct iteration in git history is this run's
-        # #1085 Type D (window opener). The full 1080-1084 window is
-        # regex-visible (no subject deviations in this window): D
-        # #1085 -> C #1084 -> B #1083 -> A #1082 -> E #1081.
-        # Deselected pre-commit per #565 (passes post-commit).
-        window = _window()
-        assert window[0] == ("D", "1085"), window
-        assert window[1:5] == [
-            ("C", "1084"),
-            ("B", "1083"),
-            ("A", "1082"),
-            ("E", "1081"),
-        ], window
+    def test_1085_window_closed_complete(self):
+        # HISTORICAL REPIN (Sep 30 2026, #1090 run): the 1085-1089
+        # window is CLOSED and complete. All five legs landed with
+        # clean "Type X #N:" main-commit subjects in the correct
+        # relative order: D #1085 -> E #1086 -> A #1087 -> B #1088 ->
+        # C #1089 (newest-first: C #1089, B #1088, A #1087, E #1086,
+        # D #1085). This assertion is stable across the #1090 main
+        # commit (which sits above the window) because it filters to
+        # the 1085-1089 subsequence rather than absolute positions.
+        chain = [
+            entry
+            for entry in _window(n=80)
+            if entry[1] in ("1085", "1086", "1087", "1088", "1089")
+        ]
+        assert chain == [
+            ("C", "1089"),
+            ("B", "1088"),
+            ("A", "1087"),
+            ("E", "1086"),
+            ("D", "1085"),
+        ], chain
 
     def test_predecessor_1084_chain_present(self):
         # The full #1084 Type C commit chain must be in git history
@@ -457,16 +469,24 @@ class TestTypeDRotationGuard1085:
                 == 0
             ), sha
 
-    def test_no_type_e_1086_in_git_log(self):
-        # The next leg (Type E #1086) must not exist yet: this run
-        # opens the window, #1086 continues it.
+    def test_type_c_1089_landed(self):
+        # HISTORICAL REPIN (Sep 30 2026, #1090 run): Type C #1089 has
+        # LANDED (main commit a98d10d8, Sep 30 02:00 PDT) - the
+        # forward-looking "must not exist yet" guard from the #1085
+        # run is inverted now that the 1085-1089 window closed.
         result = subprocess.run(
-            ["git", "log", "--format=%s", "--grep=Type E #1086"],
+            ["git", "log", "--format=%H %s", "--grep=Type C #1089"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        assert result.stdout.strip() == "", result.stdout
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type C #1089" in line and "followup" not in line.lower()
+        ]
+        assert len(mains) == 1, result.stdout
+        assert mains[0].startswith("a98d10d8"), mains
 
     def test_anchor_sha_is_real(self):
         # Deselected pre-commit per #565: the anchor followup patches
