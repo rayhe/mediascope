@@ -114,7 +114,7 @@ EIGHTH_MEMBER = "THIRTY-" + "EIGHTH falsification-family member"
 TWENTY_FIFTH = "TWENTY-" + "FIFTH relationship direction"
 
 # Anchor SHA for the #1084 main commit; patched post-commit per #565.
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "3582c34205e550266f58d1e77ceddd73f0244d2d"  # patched in the anchor followup per #565
 
 # Doc-sync ratchet targets (54783/1408 authoritative post-#1083 + 60/+1
 # this file).
