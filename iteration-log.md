@@ -1,4 +1,4 @@
-## #1099 Type C: Google AI-contribution pilot rate disclosure (The Information Sep 29 2026, relayed Sep 30) - first disclosed payment rates (around 100 publishers; under $1,000 over months to over $1M/yr; under 0.1% of ad revenue for small-to-midsize); UNILATERAL PRICING as the TWENTY-SEVENTH relationship direction (m891): payer-set micro-compensation decoupled from consent (opt-out of payment does not opt out of use) - Type C FIFTH leg of the 1095-1099 window, CLOSING it (Sep 30 2026, 12:00 PDT; main commit <main> / anchor <anchor>; log-hash followup registers both hashes here per #721 (this commit: <loghash>); doc-sync 55831/1423 -> 55895/1424 (+64/+1); ledger holds at 37, THIRTY-EIGHTH absent).
+## #1099 Type C: Google AI-contribution pilot rate disclosure (The Information Sep 29 2026, relayed Sep 30) - first disclosed payment rates (around 100 publishers; under $1,000 over months to over $1M/yr; under 0.1% of ad revenue for small-to-midsize); UNILATERAL PRICING as the TWENTY-SEVENTH relationship direction (m891): payer-set micro-compensation decoupled from consent (opt-out of payment does not opt out of use) - Type C FIFTH leg of the 1095-1099 window, CLOSING it (Sep 30 2026, 12:00 PDT; main commit def43924 / anchor 4eff5d5b; log-hash followup registers both hashes here per #721 (this commit: <loghash>); doc-sync 55831/1423 -> 55895/1424 (+64/+1); ledger holds at 37, THIRTY-EIGHTH absent).
 
 ### Rotation transparency
 - 1095-1099 window FIFTH leg (per #565: D #1095 -> E #1096 -> A #1097 -> B #1098 -> C #1099; order D->E->A->B->C), CLOSING the window
@@ -27,8 +27,9 @@
 - Mechanism 891 block appended to profiles/competitor-entities.yaml (finding + rate_disclosure_leg + unilateral_pricing_leg + decoupling_leg + corpus_lineage + taxonomy + incentive_geometry + connects_to [702, 708, 539, 666] + 6 confounders STRONG x3 / MEDIUM x2 / WEAK x1 + counterargument + coverage_nexus + 5 sources)
 
 ### Commit hashes
-- Main: <main> (Type C #1099: mechanism 891 - Google AI-contribution pilot rate disclosure; FIFTH leg of the 1095-1099 window, CLOSING it)
-- Anchor followup: <anchor> (patch ANCHORED_SHA per #565)
+- Main: def43924 (Type C #1099: mechanism 891 - Google AI-contribution pilot rate disclosure; FIFTH leg of the 1095-1099 window, CLOSING it)
+- Anchor followup: 4eff5d5b (patch ANCHORED_SHA per #565)
+- Test-fix: 28802355 (rename test_next_mechanism_number_absent_repo_wide - method name contained the contiguous needle; test_891_present_in_committed_tree asserts the numeric-key hit directly)
 - Log-hash followup: <loghash> (register main + anchor in the entry per #721)
 - ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
 
@@ -39,7 +40,7 @@
 
 ### Push status per #864
 - Test-fix: none expected - all pre-commit-green tests green post-doc-sync; the #1095 twenty-seventh-absence and #1098 max-890/zero-numeric-891 guard supersessions are BY DESIGN and pinned as forward-looking staleness
-- Push-status: #1099 local commit chain <main> (main) / <anchor> (anchor) / <loghash> (log-hash) / <loghashfollowup> (log-hash followup) registered ahead of push per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
+- Push-status: #1099 local commit chain def43924 (main) / 4eff5d5b (anchor) / <loghash> (log-hash) / <loghashfollowup> (log-hash followup) registered ahead of push per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
 
 ### Rotation guard
 - Order D->E->A->B->C enforced: predecessor chain SHAs (ed8c9cf2/188b15f6/75243d3f, f94f88a2/547bbfc7/a87ddccc, 13f857c0/423f92a9/1cd17264, e454a736/2cf9467a/52716790) asserted present in history; "Type C #1099" absent from log pre-commit (novelty guard, superseded by design post-commit)
