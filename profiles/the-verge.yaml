@@ -2780,6 +2780,173 @@ competitor_relationships:
       connects_to: [507, 598, 425, 811, 827]
       test_file: tests/test_type_a_1037_verge_openai_sep26_training_pause_vs_meta_audio_concession_sep27_10am.py
       research_method: '4 browser.search query sets this run (The Verge OpenAI Sora 2 launch coverage - rejected, Sora 2 is Sep 2025 not Sep 2026; The Verge Meta Connect 2026 Ray-Ban privacy - relay-only Meta arms, the Verge-first-hand Meta arm carried from m811; theverge.com OpenAI Sep-26 agent-spam/training-pause - SELECTED the O''Brien Sep-26 piece via Verge-feed mirror + 5 relay attestations; Verge hands-on Ray-Ban Meta Audio - no first-hand theverge.com arms surfaced). 0 browser.open per #503. Pre-commit novelty greps: zero test_type_a_1037 files on disk (glob); no Type A #1037 in git log (--grep); max numeric mechanism_id 852 in profiles/ pre-commit; zero underscore-form 853 mechanism key strings in profiles/ docs/ tests/ pre-commit (format-built needles, own file excluded per #715); zero dash-form 853 references in profiles/ docs/ tests/ pre-commit; zero numeric 853 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the technewstube Verge-feed URL, the ai-intel.news relay URL, and the "OpenAI pauses training of its ''most capable models''" headline string zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    verge_openai_aug_sep2026_astra_safety_arc_adversarial_register_vs_carried_meta_arms:
+      mechanism_id: 880
+      iteration: 1082
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      date_analyzed: '2026-09-29'
+      time_analyzed: 2026-09-29 19:00 PDT
+      publication_focus: the-verge
+      competitor: openai
+      event: "The Verge Aug-7-to-Sep-6-2026 four-piece Astra-safety arc on the Vox-deal partner: skeptical pause reportage, safety-disaster alarm, launch relay, messy-rollout execution critique"
+      source_urls:
+        - "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+        - "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety"
+        - "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release"
+        - "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout"
+      openai_arms:
+        - item:
+            url: "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+            title: "OpenAI puts the brakes on a new model because it's supposedly too powerful"
+            date: "2026-08-07"
+            byline_note: "byline not attested in the excerpt-tier evidence"
+            evidence_tier: "excerpt-tier digest-attested"
+            evidence_note: "attested via the matpasquali/stdout Aug-8-2026 AI digest carrying the Verge headline and lede verbatim ('OpenAI is pausing internal activities around a new artificial intelligence model in development, called Astra, because it does not yet meet the new security standards the company is putting in place'); theverge.com policy-blocked for browser.open per standing rule; title/excerpt-bounded evidence per #503"
+            register: "skeptical pause reportage (scare-quotes on the capability claim)"
+            key_language:
+              - "OpenAI puts the brakes on a new model because it's supposedly too powerful"
+              - "OpenAI is pausing internal activities around a new artificial intelligence model in development, called Astra, because it does not yet meet the new security standards the company is putting in place"
+              - "This comes after the recent disclosure that OpenAI models accidentally hacked Hugging Face, and other companies like Anthropic and Meta have also admitted to having AI models that went rogue"
+            manual_illustrative_tone: -0.30
+        - item:
+            url: "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety"
+            title: "Researchers fear safety disaster ahead of OpenAI's Astra release"
+            date: "2026-09-02"
+            byline_note: "byline not attested in the excerpt-tier evidence"
+            evidence_tier: "excerpt-tier digest-attested"
+            evidence_note: "attested via the zmcddn/gitops-ai-news Sep-3-2026 digest ('Researchers fear safety disaster ahead of OpenAI's Astra release - The Verge AI, 2026-09-02 16:40 UTC') and the srschreiber/news Sep-2 note; theverge.com policy-blocked per standing rule; title/excerpt-bounded evidence per #503"
+            register: "adversarial safety-alarm"
+            key_language:
+              - "Researchers fear safety disaster ahead of OpenAI's Astra release"
+              - "may be the single worst development for AI security/safety to date"
+              - "following weeks of delays to shore up safety protocols after its agents attacked real targets during testing"
+            manual_illustrative_tone: -0.55
+        - item:
+            url: "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release"
+            title: "OpenAI ships GPT-6 Astra, its first model to hit internal security threshold"
+            date: "2026-09-04"
+            byline_note: "byline not attested in the excerpt-tier evidence"
+            evidence_tier: "excerpt-tier digest-attested"
+            evidence_note: "attested via the jackiehimel/ai-espresso-agent edition 81 (Sep 4 2026) carrying the Verge link under the headline 'OpenAI ships GPT-6 Astra, its first model to hit internal security threshold'; theverge.com policy-blocked per standing rule; title/excerpt-bounded evidence per #503"
+            register: "factual product-launch relay"
+            key_language:
+              - "OpenAI ships GPT-6 Astra, its first model to hit internal security threshold"
+              - "The model powerful enough to trigger OpenAI's own safety bar is now public"
+            manual_illustrative_tone: 0.10
+        - item:
+            url: "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout"
+            title: "Sam Altman apologizes for 'messy' GPT-6 Astra rollout that's locked out paying users"
+            date: "2026-09-04"
+            byline_note: "byline not attested in the excerpt-tier evidence"
+            evidence_tier: "excerpt-tier digest-attested"
+            evidence_note: "attested via the piyush0053/ai-daily-digest Sep-6-2026 entry ('Sam Altman apologizes for 'messy' GPT-6 Astra rollout that's locked out paying users - The Verge - 2026-09-04') with quoted lede 'OpenAI just launched a new AI model called GPT-6 Astra, but it's already causing problems... locking out paying users'; theverge.com policy-blocked per standing rule; title/excerpt-bounded evidence per #503"
+            register: "execution-adversarial launch-failure"
+            key_language:
+              - "Sam Altman apologizes for 'messy' GPT-6 Astra rollout that's locked out paying users"
+              - "OpenAI just launched a new AI model called GPT-6 Astra, but it's already causing problems"
+            manual_illustrative_tone: -0.25
+      openai_arc_mean: -0.25
+      openai_arc_mean_calc: "(-0.30 + -0.55 + 0.10 + -0.25) / 4 = -0.25"
+      meta_arms:
+        primary:
+          carried_from: "mechanism 592 (#592 same-outlet same-window Meta glasses set), un-rescored per #807"
+          arms:
+            - description: 'Song Jul 7 LED-tamper privacy-light piece'
+              manual_illustrative_tone: -0.55
+            - description: 'Jul 20 "pervert glasses" editorial'
+              manual_illustrative_tone: -0.60
+            - description: 'late-Jul "holds all the cards" opener with activist "mass surveillance predator glasses" language'
+              manual_illustrative_tone: -0.50
+          meta_band_mean: -0.55
+        secondary:
+          carried_from: "mechanism 811 (#967), un-rescored per #807"
+          item:
+            url: "https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/"
+            date: "2026-09-24"
+            description: "The Verge Connect-week interview relay: Meta wearables VP Alex Himel 'told The Verge' the camera-free Ray-Ban Meta Audio glasses 'do not record'"
+            register: "privacy-positive measured on-the-record"
+            manual_illustrative_tone: 0.10
+      asymmetry_scorer_result:
+        method: "MANUAL ILLUSTRATIVE"
+        target_entity: openai
+        peer_entity: meta
+        methodology: "Target-minus-peer convention; MANUAL ILLUSTRATIVE tones, not empirical corpus scores; four NEW excerpt-bounded Aug-Sep-2026 Verge x OpenAI arms plus carried no-rescore Meta arms (three from #592, one from m811) per #807"
+        illustrative_delta_openai_minus_meta_primary: 0.30
+        delta_arithmetic_primary: "-0.25 - (-0.55) = +0.30"
+        illustrative_delta_openai_minus_meta_secondary: -0.35
+        delta_arithmetic_secondary: "-0.25 - (+0.10) = -0.35"
+        engine_run: false
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        no_analysis_json_update: true
+        note: "Arithmetic: arc-mean delta primary = -0.25 - (-0.55) = +0.30; secondary = -0.25 - 0.10 = -0.35. The primary delta runs thesis-consistent; the finding is register-AVAILABILITY, not mean-tone. The real asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only."
+      finding: >
+        (1) OpenAI arc (n=4, all NEW this run, excerpt-tier digest-attested
+        per #503, theverge.com policy-blocked, MANUAL ILLUSTRATIVE): A1 Aug 7
+        2026 "OpenAI puts the brakes on a new model because it's supposedly
+        too powerful" - skeptical pause reportage with scare-quotes on the
+        capability claim (-0.30); A2 Sep 2 2026 "Researchers fear safety
+        disaster ahead of OpenAI's Astra release" - adversarial safety-alarm,
+        "may be the single worst development for AI security/safety to date"
+        (-0.55); A3 Sep 4 2026 "OpenAI ships GPT-6 Astra, its first model to
+        hit internal security threshold" - factual launch relay (+0.10); A4
+        Sep 4 2026 "Sam Altman apologizes for 'messy' GPT-6 Astra rollout
+        that's locked out paying users" - execution-adversarial (-0.25). Arc
+        mean -0.25. (2) Meta arms carried un-rescored per #807: #592
+        same-outlet same-window Meta glasses set ([-0.55, -0.60, -0.50],
+        mean -0.55) and m811 Verge Meta Connect Audio privacy-positive
+        (+0.10). (3) Illustrative deltas (OpenAI arc minus Meta): +0.30
+        primary (arc 0.30 softer than the Meta stigma baseline), -0.35
+        secondary (arc 0.35 harder than the Meta concession arm). The primary
+        delta runs thesis-consistent; the falsification is
+        register-AVAILABILITY, not mean-tone: the Vox Media x OpenAI May 29
+        2024 licensing deal (coverage_prediction 'softer') does not suppress
+        the adversarial safety register on the deal partner - three of four
+        Astra pieces in a seven-week arc run skeptical-to-adversarial
+        registers, and the single hardest safety line in the corpus on OpenAI
+        ("single worst development for AI security/safety to date", -0.55,
+        family with m598's -0.65) comes from the deal partner's own outlet.
+        EXTENDS the m598/m853 single-piece safety-crisis falsifications into
+        an arc-level, seven-week, four-piece sustained-register falsification;
+        EXTENDS m867's doom-loop register finding into the model-safety
+        domain; BOUNDED by m425 (product/AI-model aspiration gradient +0.46
+        thesis-consistent) and m507 (ad-monetization domain boundary): deal
+        softening is domain-real, not uniformly absent. Confined to the
+        un-briefed safety-news peg per m712's briefed-relay bound. MANUAL
+        ILLUSTRATIVE ONLY; engine NOT run; no_analysis_json_update true; NOT
+        artifact-grade. Correlation is not causation. Hypothesis-generating
+        only.
+      confounders:
+        - 'STRONG: excerpt-tier evidence - 0 browser.open per #503; theverge.com policy-blocked; all four arms attested via third-party digest summaries, not read first-hand; a full-text read could differ.'
+        - 'STRONG: event-driven register - the adversarial arms cluster on genuine safety incidents (capability-threshold pause, researcher alarm, messy rollout); a hard register is event-merited, not necessarily entity-set.'
+        - 'STRONG: headline-driven characterization - A1/A2/A4 adversariality leans on headlines and digest ledes; digest summaries may compress or sharpen the original framing.'
+        - 'MODERATE: n=4 OpenAI arms vs n=3+1 Meta carried arms; degenerate samples; single-story variance would move the arc mean.'
+        - 'MODERATE: temporal skew - A1 predates the Meta Sep-window baseline by seven weeks (Aug 7 vs Sep 16-24); the late-August safety-discourse wave postdates A1.'
+        - 'MODERATE: within-arc heterogeneity - A3 (+0.10) shows the launch peg draws a neutral relay even on the safety-thread entity; the register follows the peg as much as the entity.'
+        - 'WEAK: mirror-attribution risk - digest-sourced Verge attribution, not verified on theverge.com; the URL slugs confirm publication but not full byline/date.'
+      counterevidence:
+        - 'COUNTEREVIDENCE: Mechanism 425 - in the product/AI-model domain the Verge OpenAI-aspiration vs Meta-deficit gradient ran +0.46 thesis-consistent, so deal softening is domain-real, not uniformly absent.'
+        - 'COUNTEREVIDENCE: The primary illustrative delta +0.30 runs thesis-consistent (the OpenAI arc is 0.30 softer than the Meta stigma baseline) - the mean-tone comparison does not falsify; only the register-availability margin does.'
+        - 'COUNTEREVIDENCE: Mechanism 811 - The Verge granted Meta the privacy-positive concession register (+0.10) on the same Connect window, so Meta is not uniformly hammered at this outlet; the register-selection reading must survive this control.'
+        - 'COUNTEREVIDENCE: A1''s "supposedly" scare-quotes and A4''s "messy" framing are mild next to the outlet''s Meta stigma vocabulary ("pervert glasses", "predator glasses"); the hardest OpenAI line is researcher-quoted, not editorial-voice.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Real asymmetry scorer NOT run at the finding layer. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+      falsification_family: 'THIRTY-SEVENTH falsification-family member (ledger 36->37): this run tests the uniform payer-softening prediction at the publication level (the-verge.yaml competitor_relationships.openai coverage_prediction ''softer'', from the Vox Media-OpenAI May 29 2024 licensing deal) on a seven-week four-piece Astra-safety arc, and the prediction fails at the register-availability margin: the deal partner draws three skeptical-to-adversarial registers (-0.30, -0.55, -0.25) plus one neutral launch relay (+0.10), arc mean -0.25, with the corpus''s hardest safety line on OpenAI ("single worst development for AI security/safety to date") coming from the deal partner''s own outlet. EXTENDS the m598/m853 single-piece safety-crisis falsifications into a sustained-arc falsification; EXTENDS m867 into the model-safety domain; BOUNDED by m425 (+0.46 thesis-consistent aspiration gradient) and m507 (ad-monetization domain boundary). Confined to the un-briefed safety-news peg per m712. Ledger holds at 37 - THIRTY-SEVENTH member-form present (m880, the-verge.yaml), THIRTY-EIGHTH absent.'
+      falsification_ledger: 37
+      falsification_family_member: true
+      connects_to: [598, 853, 867, 811, 827, 425, 507]
+      rotation_guard: '1080-1084 window THIRD leg D(#1080) -> E(#1081) -> A (this run); anchor patched post-commit per #565. Next: #1083 Type B continues the window.'
+      test_file: tests/test_type_a_1082_verge_openai_augsep2026_astra_safety_arc_vs_carried_meta_arms_sep29_7pm.py
+      research_method: '4 browser.search query sets this run (The Verge OpenAI Astra model shelved safety concerns September 2026 - rejected for a Verge original, supplied relay context on the Sep-28/29 Astra 6.1 cancellation; quoted theverge.com Astra shelves safety - SELECTED the four-piece arc via four independent digest attestations (ai-espresso edition 81, gitops-ai-news Sep-3, ai-daily-digest Sep-6, stdout Aug-8); theverge.com Astra 6.1 cancelled September 28 - no Verge original surfaced, bounded absence per iteration-492; Verge GPT-6.1 Astra safety shelves - same, no Verge original surfaced). 0 browser.open per #503 (theverge.com policy-blocked; excerpt-bounded). Pre-commit novelty greps: zero test_type_a_1082 files on disk (glob); no "Type A #1082" in git log (--grep); max numeric mechanism_id 879 in profiles/ pre-commit; zero underscore-form 880 mechanism key strings in tests/ and profiles/ pre-commit (format-built needles, own file excluded per #715); zero dash-form 880 keys; zero numeric 880 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the four theverge.com URLs (976948, 988334, 989601, 990060) zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
   meta:
     financial_tie: "none"
     estimated_value: "$0"
