@@ -1,3 +1,55 @@
+## #1100 Type D: m889/m890/m891 qualitative-discipline verification + post-1095-1099 corpus integrity (max numeric mechanism_id 891; zero-892 forward guards runtime-built per #715; #1095 file historical repin MAX_ID 888->891 NEXT_NUM 889->892 rotation-guard window-closed-complete; m889 WIRED x OpenAI slowdown-legality register extension delta +0.20 MANUAL ILLUSTRATIVE / Zeff-only +0.025 near-null parity; m890 Reece Rogers Muse weeklong-test data-collection alarm vs carried Claude Cowork playful +0.60 illustrative, m629 temporal extension 75 days; m891 Google AI-contribution pilot rate disclosure, UNILATERAL PRICING as TWENTY-SEVENTH relationship direction, tone NOT_SCORED; none a falsification-family member, ledger holds at 37, THIRTY-EIGHTH absent) + #1095 background-suite verdict (DIED at 3237 bytes / ~5% dots, last write Sep 30 08:59:54 PDT, zero summary tokens, no live pytest process - THIRD consecutive death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed; tombstone lineage SEVENTY-EIGHTH -> SEVENTY-NINTH) + fresh synthetic engine calibration (real signature: strong asym -0.58125 p=2.94e-10 sig True; null silent p~1.0; degenerate n=1 t=0.0 p=1.0) + suite re-launched without -x to type_d_1100_full_suite.log - Type D FIRST leg of the 1100-1104 window, OPENING it (Sep 30 2026, 01:00 PDT; main commit <main> / anchor <anchor>; log-hash followup registers both hashes here per #721 (this commit: <loghash>); doc-sync 55895/1424 -> 55971/1425 (+76/+1); in-flight #899/#938/#900/#1012-wt untouched).
+
+### Rotation transparency
+- 1100-1104 window FIRST leg (per #565: D #1100 -> E #1101 -> A #1102 -> B #1103 -> C #1104; order D->E->A->B->C), OPENING the window
+- #1099 Type C main def43924 / anchor 4eff5d5b / log-hash 81e9ff60 + log-hash followup e674c7a1 (m891, CLOSED the 1095-1099 window)
+- #1098 Type B main e454a736 / anchor 2cf9467a / log-hash 52716790 (m890)
+- #1097 Type A main 13f857c0 / anchor 423f92a9 / log-hash 1cd17264 (m889)
+- #1096 Type E main f94f88a2 / anchor 547bbfc7 / log-hash a87ddccc
+- #1095 Type D main ed8c9cf2 / anchor 188b15f6 / log-hash 75243d3f (m886/m887/m888; file repinned by this run)
+- All five predecessor chains verified present via git log before this run's commit
+
+### Finding summary
+- Type D #1100 - qualitative-discipline verification of the three landed window mechanisms; NO new mechanism landed this run (Type D runs verify, they do not land)
+- m889 (Type A #1097, wired.yaml): WIRED x OpenAI Sep-2026 slowdown-legality register extension, m877-family (safety-crisis register -> coordination/antitrust register). MANUAL ILLUSTRATIVE OpenAI mean -0.175 vs carried WIRED x Meta mean -0.375, delta +0.20 (Meta draws the harder register; thesis-consistent directionally but small). Zeff-only read: -0.35 vs -0.375 = +0.025, near-null parity on the leak-driven accountability peg, extending the m877 peg-not-entity finding. NOT a falsification-family member.
+- m890 (Type B #1098, journalists.yaml): Reece Rogers (WIRED) Sep-2026 Muse weeklong-test data-collection-alarm register (-0.50 MANUAL ILLUSTRATIVE, excerpt-tier) vs carried Jul-7-2026 Claude Cowork playful register (+0.10 per #807). Illustrative delta (Anthropic minus Meta) +0.60, thesis-consistent (m629 same-day +0.55 holds on the new peg: the register gradient is peg-extensible, not a one-day artifact). TEMPORAL EXTENSION of m629 (Type B #658) into the Muse-agent peg 75 days later. NOT a falsification-family member.
+- m891 (Type C #1099, competitor-entities.yaml): Google AI-contribution pilot rate disclosure (The Information Sep 29 2026, relayed Sep 30) - first disclosed payment rates (around 100 publishers; under $1,000 over months to over $1M/yr; under 0.1% of ad revenue for small-to-midsize); UNILATERAL PRICING as the TWENTY-SEVENTH relationship direction: payer-set micro-compensation decoupled from consent. Tone NOT_SCORED. NOT a falsification-family member.
+- Corpus integrity: max numeric mechanism_id 891; zero 892 keys in numeric/underscore/dash forms (needles runtime-built per #715); ledger holds at 37 (THIRTY-SEVENTH member-form once in the-verge.yaml m880; THIRTY-EIGHTH member-claim absent repo-wide); TWENTY-SIXTH direction (m888 DUAL-ROLE RECYCLING) and TWENTY-SEVENTH direction (m891 UNILATERAL PRICING) present in competitor-entities.yaml
+- #1095 file historical repin (committed with this run): MAX_ID 888->891, NEXT_NUM 889->892, rotation guard rewritten to 1095-1099 window-closed-complete (test_1095_window_closed_complete, test_type_c_1099_landed asserting def43924), entry newest-first -> entry-present, anchor mechanics untouched; the repinned zero-889 / twenty-seventh-absence guards now fail BY DESIGN (pinned as staleness markers)
+
+### Background suite verdict per #795
+- The #1095-launched background full suite DIED: 3237 bytes (~5% dots, 2906/55895), last write Sep 30 2026 08:59:54 PDT, zero summary tokens (no passed/failed/collected), no live pytest process
+- THIRD consecutive background-suite death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed
+- Tombstone lineage advances SEVENTY-EIGHTH -> SEVENTY-NINTH
+- Suite re-launched by this run as a background process writing to goal hidden_files type_d_1100_full_suite.log WITHOUT -x (full inventory for the #1105 triage; the next Type D run checks its verdict per #795)
+
+### Synthetic engine calibration (fresh values, real signature)
+- calculate_asymmetry(target_scores, peer_scores, target_entity, peer_entities, publication_slug, period_start, period_end) -> AsymmetryScore
+- STRONG (Meta vs [Anthropic, OpenAI], n=8/arm): asymmetry -0.58125, t -16.7808, p 2.94e-10, d -8.3904, significant True, CI (-0.65, -0.51875); arm-swap negates exactly
+- NULL: asymmetry ~0.0, t ~0.0, p ~1.0, d ~0.0, significant False, CI (-0.03625, 0.0375) crossing zero
+- DEGEN ([-0.50] vs [-0.40]): asymmetry -0.10, t 0.0, p 1.0, d 0.0, not significant
+- Standing rule: finding layer is MANUAL ILLUSTRATIVE ONLY; engine never promoted to findings; no analysis.json update
+
+### New Type D files
+- tests/test_type_d_1100_m889_m890_m891_qualitative_corpus_integrity_sep30_1pm.py (76 tests, 16 classes: novelty, rotation guard, corpus integrity, m889/m890/m891 qualitative discipline, falsification ledger, forward-looking staleness, guard lifecycle, background-suite verdict, synthetic calibration, suite relaunch, #1095 repin assertions, doc-sync, iteration-log, in-flight isolation)
+- Staleness pins (subprocess, fail-by-design): #1095 zero-889 guards FAIL, #1095 twenty-seventh-absence guard FAILS, #1098 max-890/zero-numeric-891 guards FAIL (underscore-891/dash-891 still pass), #1099 zero-892 guards still PASS
+
+### Commit hashes
+- Main: <main> (Type D #1100: m889/m890/m891 verification; FIRST leg of the 1100-1104 window, OPENING it)
+- Anchor followup: <anchor> (patch ANCHORED_SHA per #565)
+- Log-hash followup: <loghash> (register main + anchor in the entry per #721)
+- ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
+
+### Doc-sync ratchet
+- README.md: stats line 55895/1424 -> 55971/1425 (+76/+1); test-table row added
+- docs/ARCHITECTURE.md: tree row added
+- Pre-commit green gate: 76-test suite run with venv python, deselecting only the commit-dependent anchor/rotation/doc-sync/itlog/tombstone classes per #565/#719/#721 (their failures are by design pre-commit); all others green including the 5 staleness subprocess pins
+
+### Concurrency
+- In-flight at this run's checks: #899 Type C block (m771, uncommitted hunk in profiles/nytimes.yaml), #938 Type B test file (uncommitted working-tree edit), #900 Type D test file (untracked), #1012 working-tree edit of the committed Type A #1012 test file - all UNCOMMITTED, owned by their runs, untouched by this run (targeted staging only)
+- Do NOT touch #1024's m846 (FOURTEENTH, exclusionary-diversion): self-flagged sourcing-constraint violation; Ray's revert/leave/rebuild-from-primary decision still pending
+
+
 ## #1099 Type C: Google AI-contribution pilot rate disclosure (The Information Sep 29 2026, relayed Sep 30) - first disclosed payment rates (around 100 publishers; under $1,000 over months to over $1M/yr; under 0.1% of ad revenue for small-to-midsize); UNILATERAL PRICING as the TWENTY-SEVENTH relationship direction (m891): payer-set micro-compensation decoupled from consent (opt-out of payment does not opt out of use) - Type C FIFTH leg of the 1095-1099 window, CLOSING it (Sep 30 2026, 12:00 PDT; main commit def43924 / anchor 4eff5d5b; log-hash followup registers both hashes here per #721 (this commit: 81e9ff60); doc-sync 55831/1423 -> 55895/1424 (+64/+1); ledger holds at 37, THIRTY-EIGHTH absent).
 
 ### Rotation transparency
