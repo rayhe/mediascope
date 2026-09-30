@@ -1,4 +1,4 @@
-## #1089 Type C: OpenAI x Lenfest Institute AI fellowship $10M renewal (Sep 28 2026) - POST-LITIGATION-GRANT-RENEWAL as the TWENTY-FIFTH relationship direction; mechanism 885; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH member-claim form absent) - Type C FIFTH and CLOSING leg of the 1085-1089 window (Sep 30 2026, 02:00 PDT; main commit PENDING / anchor PENDING; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
+## #1089 Type C: OpenAI x Lenfest Institute AI fellowship $10M renewal (Sep 28 2026) - POST-LITIGATION-GRANT-RENEWAL as the TWENTY-FIFTH relationship direction; mechanism 885; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH member-claim form absent) - Type C FIFTH and CLOSING leg of the 1085-1089 window (Sep 30 2026, 02:00 PDT; main commit a98d10d8 / anchor 497d90cd; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
 
 ### Rotation transparency
 - 1085-1089 window FIFTH and CLOSING leg (per #565: D #1085 -> E #1086 -> A #1087 -> B #1088 -> C #1089)
