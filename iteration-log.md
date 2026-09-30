@@ -1,3 +1,39 @@
+## #1094 Type C: Anthropic leaked draft S-1 $518B commitment ledger - DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction (mechanism 888); partial S-1 realization of m864's demand-recycling proof test; ledger holds at 37, THIRTY-EIGHTH absent - Type C FIFTH and CLOSING leg of the 1090-1094 window (Sep 30 2026, 07:00 PDT; main commit PENDING / anchor PENDING; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
+
+### Rotation transparency
+- 1090-1094 window FIFTH and CLOSING leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
+- Predecessors: #1090 Type D main 4881bd45/anchor 418a8b52/log-hash 3c5c48ce; #1091 Type E main 711d3169/anchor bc2249d9/log-hash bcc047b0; #1092 Type A main 7c551fcc/anchor 2a234a33/log-hash 59af8b51; #1093 Type B main 7fbc7f46/anchor 2796e83b/log-hash f59a8361 (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_c_1094 files on disk (glob); no "Type C #1094" in git log (--grep); max numeric mechanism_id 887 pre-commit (Type B #1093, mechanism 887 in profiles/careers/journalists.yaml); zero numeric/underscore/dash 888 mechanism key strings repo-wide pre-commit (needles format-built per #715); block key zero-hit repo-wide pre-commit; 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); zero "518 billion" hits in profiles/; zero "TWENTY-SIXTH relationship direction" hits outside the pinned forward needles (#1090 Type D file + iteration-log guard note, both failing BY DESIGN at this run). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Guard lifecycle: #1090's TWENTY-SIXTH-absence needle and #1093's zero-888 needles fail BY DESIGN at this run (pinned as forward-looking staleness; the #1095 Type D run pins the zero-889 guards); this run's zero-889 needles PASS and will fail BY DESIGN when mechanism 889 lands at a future A/B/C leg.
+- Next run #1095 Type D OPENS the 1095-1099 window.
+
+### Research: 3 search sets, 0 browser.open (excerpt-bounded per #503)
+- Anthropic IPO prospectus investors revenue burn September 2026 - SELECTED: surfaced the Reuters-reviewed leaked draft S-1 figures via three mirrors: unbiasedheadlines (Sep 29: $42B 2025 net loss on $4.6B revenue; $518B future cloud/compute commitments; ~$34B accounting charge; $8.06B operating loss per Fortune; $7.33B compute spend, 58% of $12.65B opex per ZeroHedge; ~12x revenue growth), decodethefuture FAQ (Q2 2026 revenue $11.5B; confidential draft S-1 submitted June 2026; no public S-1 on EDGAR as of Sep 29; Series H May 28 2026: $65B at $965B post-money), gattyworks (80 of 261 pages risk factors vs 55 business; second straight quarter of adjusted operating profit; seven co-founders 50.1% voting via Founder LLC).
+- OpenAI news publisher licensing deal September 2026 - REJECTED for the mechanism (no new leg): Press Gazette Sep 29 update re-surfaces in-corpus deals (Village Media m714, BCCL/Indian Express m609/m660 with the ~$5m/~$3m E4m estimates, NYT x Amazon m559, News Corp >$250M/5yr); the exchange4media aggregate ($2.92B tech-giant news-content commitment as of Jan 2025, 25+ publishers/160+ outlets/20+ languages) is carried at corpus line 4650; the 99-deal census at m735. No new deal leg to map.
+- OpenAI Village Media partnership Canada Open Door - REJECTED: surfaced own-repo #804/m714 (already in corpus, cited again at corpus line 4351-4394), circular.
+
+### Findings (MANUAL/QUALITATIVE ONLY)
+- The leaked draft S-1 (Reuters review, Sep 28-29 2026) is the first primary-class document that quantifies Anthropic's demand leg: $518B in future cloud/compute/infrastructure commitments - the largest disclosed AI-infrastructure demand figure in the corpus (vs OpenAI x Oracle $300B/5yr, m870).
+- The dual-role geometry: Amazon (AWS) and Google (cloud/TPU) are simultaneously Anthropic's largest investors and its largest compute suppliers; Google is also payment guarantor on Anthropic's $35B per the corpus's off-balance-sheet mention. Equity out as investment, revenue back in as committed compute spend - a closed loop, not m870's open buyer-to-supplier arrow.
+- Loss structure: $42B 2025 net loss, of which ~$34B is a non-cash revaluation charge on financing instruments (valuation-driven paper loss); cash economics are $8.06B operating loss on $4.6B revenue, with $7.33B (58% of opex) on compute.
+- Revenue leg: ~12x 2025 growth (1,088% per Fortune); $11.5B Q2 2026 revenue; second straight quarter of adjusted operating profit - the public-investor pitch funding the $518B gap.
+- Partial realization of m864's own proof test: the m864 counterargument demanded the S-1 disclose "a compute-purchase commitment contractually tied to the anchor investment" - the leaked draft discloses the $518B commitment ledger, but the excerpts show no contractual tie to Nvidia's up-to-$10B anchor talks. Held as partially realized, not closed; the public S-1 is the closing instrument.
+- NOT a falsification-family member: financial-architecture mapping of money flows per the #609/#614 qualitative boundary; no coverage-tone pair, so no uniform prediction is tested or falsified. Falsification ledger holds at 37 (THIRTY-SEVENTH member-form in profiles/the-verge.yaml m880; THIRTY-EIGHTH member-claim form absent).
+- 6 confounders (3 STRONG: leaked-draft tier, commitment-counterparty opacity, the $34B accounting charge; 2 MEDIUM: single reporting chain, Series H capital-recycling ambiguity; 1 WEAK: m870-collapse risk), counterargument with the 26th slot surviving only on the dual-role identity + disclosure quantum, cross-refs m864/m870/m885.
+
+### Statistical discipline
+- Monitoring-only per the Aug 28 2026 standing rule: MANUAL/QUALITATIVE ONLY, p_value/cohens_d/ci_95 NOT_CALCULATED, tone NOT_SCORED, is_significant False, engine NOT run, no_analysis_json_update true, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation.
+- n=1 disclosure event; hypothesis-generating only.
+
+### Test file and doc-sync
+- tests/test_type_c_1094_anthropic_prospectus_518b_commitment_ledger_dual_role_recycling_twentysixth_direction_sep30_7am.py: 59 tests, 12 classes. Pre-commit: anchor + doc-sync + iteration-log tests deselected per #565/#719/#721 (14 deselected); 45 green.
+- Doc-sync: README stats table 55467/1418 -> 55526/1419 (+59/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log entry prepended (reverse-chronological).
+
+Guard lifecycle: mechanism 888 lands at this Type C leg; the #1093 zero-888 needles and #1090 TWENTY-SIXTH-absence needle are superseded BY DESIGN (this run's zero-889 needles PASS; they fail BY DESIGN when mechanism 889 lands at a future leg - the #1095 Type D run pins zero-889 guards).
+
+Push status per #864: main PENDING + anchor PENDING + log-hash PENDING to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+
 ## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit 7fbc7f46 / anchor 2796e83b; log-hash followup registers both hashes here per #721 (this commit: f59a8361)).
 
 ### Rotation transparency
