@@ -1,4 +1,4 @@
-## #1090 Type D: m883/m884/m885 qualitative-discipline verification + post-1085-1089 corpus integrity (max 885; #1085 file historical repin; #1085 suite death verdict) - Type D FIRST and OPENING leg of the 1090-1094 window (Sep 30 2026, 03:00 PDT; main commit 4881bd45 / anchor 418a8b52; log-hash followup registers both hashes here per #721 (this commit: TBD)).
+## #1090 Type D: m883/m884/m885 qualitative-discipline verification + post-1085-1089 corpus integrity (max 885; #1085 file historical repin; #1085 suite death verdict) - Type D FIRST and OPENING leg of the 1090-1094 window (Sep 30 2026, 03:00 PDT; main commit 4881bd45 / anchor 418a8b52; log-hash followup registers both hashes here per #721 (this commit: 3c5c48ce)).
 
 ### Rotation transparency
 - 1090-1094 window FIRST and OPENING leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
