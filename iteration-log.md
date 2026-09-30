@@ -1,3 +1,54 @@
+## #1099 Type C: Google AI-contribution pilot rate disclosure (The Information Sep 29 2026, relayed Sep 30) - first disclosed payment rates (around 100 publishers; under $1,000 over months to over $1M/yr; under 0.1% of ad revenue for small-to-midsize); UNILATERAL PRICING as the TWENTY-SEVENTH relationship direction (m891): payer-set micro-compensation decoupled from consent (opt-out of payment does not opt out of use) - Type C FIFTH leg of the 1095-1099 window, CLOSING it (Sep 30 2026, 12:00 PDT; main commit <main> / anchor <anchor>; log-hash followup registers both hashes here per #721 (this commit: <loghash>); doc-sync 55831/1423 -> 55895/1424 (+64/+1); ledger holds at 37, THIRTY-EIGHTH absent).
+
+### Rotation transparency
+- 1095-1099 window FIFTH leg (per #565: D #1095 -> E #1096 -> A #1097 -> B #1098 -> C #1099; order D->E->A->B->C), CLOSING the window
+- #1095 Type D main ed8c9cf2 / anchor 188b15f6 / log-hash 75243d3f (m886/m887/m888, 16-dir guard pin owner)
+- #1096 Type E main f94f88a2 / anchor 547bbfc7 / log-hash a87ddccc
+- #1097 Type A main 13f857c0 / anchor 423f92a9 / log-hash 1cd17264 (m889)
+- #1098 Type B main e454a736 / anchor 2cf9467a / log-hash 52716790 (m890)
+- All four predecessor chains verified present via git log before this run's commit
+
+### Finding summary
+- Type C #1099 - financial incentive mapping on the Sep 29-30 2026 rate disclosure for Google's AI-answer publisher compensation pilot: Google is PAYING around 100 publishers for content driving AI Overviews / AI Mode / Gemini answers - the first disclosed payment rate for the pilot m702 (Digiday ~Sep 14) and m708 (Bloomberg Law Jul 2026) documented without rates
+- Rates: under $1,000 over several months (small sites) -> $50,000-$60,000 over a few months (one outlet) -> over $1M/yr (one early entrant); many small-to-midsize participants get under 0.1% of ad revenue (The Information via PYMNTS)
+- Unilateral pricing: Google "determines for itself what that content is worth" (participating publisher executive via The Information/PYMNTS) - no disclosed formula, no negotiation; "AI earnings" Search Console widget shows monthly payout only; large publishers holding out to pressure for more
+- The decoupling catch: opting out of the payment does NOT stop Google using the content - the two controls are independent (AI Weekly)
+- Claim: TWENTY-SEVENTH relationship direction = UNILATERAL PRICING (payer-priced micro-compensation with payment decoupled from consent) - distinct from #2 pay-or-litigate (no sue-or-sign menu; use non-contingent), #12 regulatory-bargaining (platform not state sets price), #15 ecosystem-grant (mirror image: payer pays without RECEIVING consideration), and the pay-per-use template m156/m443/m702 (form is pay-per-use; the new work is WHO prices + consent-decoupling)
+- Falsifiable via: large publishers joining at current rates / Google disclosing or negotiating the formula / opt-out-of-payment ever gating use; carries the m737 taxonomy-count tension note
+- NOT a falsification-family member; ledger holds at 37, THIRTY-EIGHTH member-claim form absent repo-wide
+
+### Method
+- 3 search sets (The Information publisher-payment story; AI earnings Search Console widget; rate-quantum corroboration), 1 browser.open (PYMNTS Sep 30 relay opened first-hand, 46 lines) per #503
+- 5 relay URLs (pymnts google-begins-paying-publishers-for-ai-overview-answers; anythingengineoptimization SERT wire; aiweekly googles-ai-overviews-pilot-pays-100-publishers-one-over-1m; thedesk google-paying-news-publishers-ai-search-results; techstartups top-tech-news-today-september-30-2026), all zero-hit repo-wide pre-commit via git grep -F on verbatim Full-URL listings
+- Statistical discipline per the Aug 28 2026 standing rule: tone NOT_SCORED, engine NOT run, p_value/cohens_d NOT_CALCULATED, is_significant False, verdict directionally_supported_not_proven, no_analysis_json_update True, NOT artifact-grade
+
+### New Type C files
+- tests/test_type_c_1099_google_ai_contribution_pilot_rate_disclosure_unilateral_pricing_twentyseventh_direction_sep30_12pm.py (64 tests, 13 classes: anchor, rotation guard for 1095-1099 window, block structure, legs, taxonomy, confounders, research method, post-commit corpus novelty, staleness pins, doc-sync ratchet, iteration-log entry, in-flight isolation, block hygiene)
+- Mechanism 891 block appended to profiles/competitor-entities.yaml (finding + rate_disclosure_leg + unilateral_pricing_leg + decoupling_leg + corpus_lineage + taxonomy + incentive_geometry + connects_to [702, 708, 539, 666] + 6 confounders STRONG x3 / MEDIUM x2 / WEAK x1 + counterargument + coverage_nexus + 5 sources)
+
+### Commit hashes
+- Main: <main> (Type C #1099: mechanism 891 - Google AI-contribution pilot rate disclosure; FIFTH leg of the 1095-1099 window, CLOSING it)
+- Anchor followup: <anchor> (patch ANCHORED_SHA per #565)
+- Log-hash followup: <loghash> (register main + anchor in the entry per #721)
+- ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
+
+### Doc-sync ratchet
+- README.md: stats line 55831/1423 -> 55895/1424 (+64/+1); test-table row added
+- docs/ARCHITECTURE.md: tree row added
+- Pre-commit green gate: 64-test suite run with venv python, deselecting only the commit-dependent anchor/post-commit/anchor-logged tests per #565 (their failures are by design pre-commit); all others green
+
+### Push status per #864
+- Test-fix: none expected - all pre-commit-green tests green post-doc-sync; the #1095 twenty-seventh-absence and #1098 max-890/zero-numeric-891 guard supersessions are BY DESIGN and pinned as forward-looking staleness
+- Push-status: #1099 local commit chain <main> (main) / <anchor> (anchor) / <loghash> (log-hash) / <loghashfollowup> (log-hash followup) registered ahead of push per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
+
+### Rotation guard
+- Order D->E->A->B->C enforced: predecessor chain SHAs (ed8c9cf2/188b15f6/75243d3f, f94f88a2/547bbfc7/a87ddccc, 13f857c0/423f92a9/1cd17264, e454a736/2cf9467a/52716790) asserted present in history; "Type C #1099" absent from log pre-commit (novelty guard, superseded by design post-commit)
+- Guard lifecycle per #715: all 891 needles fragment-built in the #1099 test file; the #1095 file's twenty-seventh-absence needle and the #1098 file's max-890 + zero-numeric-891 needles fail BY DESIGN at this run (pinned via subprocess); the #1098 underscore-891 and dash-891 zero tests keep passing (no contiguous literals added); the #1100 Type D run pins the zero-892 guards
+
+### Concurrency
+- In-flight #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - verified untouched and unstaged before staging; staged set is exactly this run's 5 files
+- Do NOT touch #1024's m846 (FOURTEENTH, exclusionary-diversion): self-flagged sourcing-constraint violation; Ray's revert/leave/rebuild-from-primary decision still pending
+
 ## #1098 Type B: Reece Rogers (WIRED) Sep-2026 Muse weeklong-test data-collection-alarm register (-0.50 MANUAL ILLUSTRATIVE) vs carried Jul-7-2026 Claude Cowork playful register (+0.10 per #807) - TEMPORAL EXTENSION of m629 (Type B #658) into the Muse-agent peg 75 days later; illustrative delta (Anthropic minus Meta) +0.60, thesis-consistent (m629 same-day +0.55 holds on the new peg: the register gradient is peg-extensible, not a one-day artifact); mechanism 890 lands in profiles/careers/journalists.yaml (first dedicated Type B mechanism on Rogers in this file) - Type B FOURTH leg of the 1095-1099 window (Sep 30 2026, 11:00 PDT; main commit e454a736 / anchor 2cf9467a; log-hash followup registers both hashes here per #721 (this commit: 52716790); doc-sync 55739/1422 -> 55831/1423 (+92/+1); ledger holds at 37, THIRTY-EIGHTH absent).
 
 ### Rotation transparency
