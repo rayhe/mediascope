@@ -107,7 +107,7 @@ TYPE_LETTER = "A"
 WINDOW = "1100-1104"
 
 # Patched by the anchor followup commit per #565 (post-main-commit).
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"
+ANCHORED_SHA = "ac41d979de9dd5ca0bb788566d539f288ec798a1"
 
 # Format-built per the #715 convention: this source file carries no
 # contiguous underscore-form mechanism key literal for MECH_NUM/NEXT_NUM.
