@@ -41,7 +41,7 @@ PREDECESSORS = [
 
 # #565 anchor: all-zeros placeholder until the anchor followup patches it to
 # the real main commit SHA.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "0a68923d0b52674b2bb1a901e41752ef844b22d6"
 
 
 def load_all_docs(path):
