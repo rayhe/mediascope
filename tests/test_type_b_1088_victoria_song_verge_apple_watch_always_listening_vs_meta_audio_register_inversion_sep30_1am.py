@@ -134,7 +134,7 @@ EXPECTED_WINDOW_TAIL = [
 ]
 
 # #565 anchor: all-zeros placeholder until the anchor followup patches it.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "e9b32ea2c1aa041183adbb3bf127e7997d19ebce"
 
 # Runtime-built key needles per #715 / #770 (no contiguous literal in source).
 MECH_ID_MARKER = "mechanism" + "_"
