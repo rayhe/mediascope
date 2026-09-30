@@ -753,9 +753,9 @@ class TestDocSyncRatchet:
     def test_readme_stats_before_values_superseded(self):
         # The stats table line itself carries the new values; the old
         # values legitimately appear in this run's table-row doc-sync
-        # prose (55378/1417 -> 55462/1418), so assert on the table line.
+        # prose (55378/1417 -> 55467/1418), so assert on the table line.
         stats = [l for l in _read(README).splitlines() if l.startswith("| Tests |")]
-        assert stats == ["| Tests | 55462 | Across 1418 test files |"]
+        assert stats == ["| Tests | 55467 | Across 1418 test files |"]
 
     def test_readme_has_test_file_table_row(self):
         assert OWN_BASENAME in _read(README)
