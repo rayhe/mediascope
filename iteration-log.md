@@ -1,4 +1,4 @@
-## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD)).
+## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit 7fbc7f46 / anchor 2796e83b; log-hash followup registers both hashes here per #721 (this commit: TBD)).
 
 ### Rotation transparency
 - 1090-1094 window FOURTH leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
@@ -33,7 +33,7 @@
 
 Guard lifecycle: mechanism 887 lands at this run (#1093 Type B, fourth leg of 1090-1094); the #1090/#1091/#1092 zero-887 forward guards are superseded BY DESIGN (fail-by-design now that the 887 block exists); zero-888 needles pinned for the next run.
 
-Push status per #864: main TBD + anchor TBD + log-hash TBD to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+Push status per #864: main 7fbc7f46 + anchor 2796e83b + log-hash TBD to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1092 Type A: Guardian x Anthropic Sep 10-29 2026 safety-cycle register (m886) vs carried Guardian x Meta arms, m517-family extension with OpenAI deal-partner third pole; ledger holds at 37, THIRTY-EIGHTH absent - Type A THIRD leg of the 1090-1094 window (Sep 30 2026, 05:00 PDT; main commit 7c551fcc / anchor 2a234a33; log-hash followup registers both hashes here per #721 (this commit: 59af8b51)).
 
