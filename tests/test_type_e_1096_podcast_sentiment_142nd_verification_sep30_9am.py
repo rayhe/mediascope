@@ -40,7 +40,7 @@ RUN_PDT = "2026-09-30 09:00 PDT"
 OWN_BASENAME = os.path.basename(__file__)
 ANCHORED_SHA = "f94f88a2c5551be3ab3cfcae50f1962d1591d8fc"
 
-README_TESTS_AFTER = 55660
+README_TESTS_AFTER = 55661
 README_FILES_AFTER = 1421
 
 # The #1095 Type D file pins this window's zero-889 forward-looking
@@ -513,9 +513,9 @@ class TestDocSyncRatchet:
 
     def test_readme_stats_advanced(self):
         # Fails pre-commit by design; green once doc-sync ratchets
-        # the stats table: 55599/1420 -> 55660/1421 (+61/+1 this file).
+        # the stats table: 55599/1420 -> 55661/1421 (+62/+1 this file).
         text = _read(README)
-        assert "| Tests | 55660 | Across 1421 test files |" in text
+        assert "| Tests | 55661 | Across 1421 test files |" in text
 
     def test_architecture_tests_tree_updated(self):
         # Fails pre-commit by design; green once doc-sync adds it.
