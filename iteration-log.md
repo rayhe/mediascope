@@ -49,6 +49,8 @@
 - In-flight at this run's checks: #899 Type C block (m771, uncommitted hunk in profiles/nytimes.yaml), #938 Type B test file (uncommitted working-tree edit), #900 Type D test file (untracked), #1012 working-tree edit of the committed Type A #1012 test file - all UNCOMMITTED, owned by their runs, untouched by this run (targeted staging only)
 - Do NOT touch #1024's m846 (FOURTEENTH, exclusionary-diversion): self-flagged sourcing-constraint violation; Ray's revert/leave/rebuild-from-primary decision still pending
 
+### Push status per #864
+- Push-status: #1100 local commit chain 6678ba05 (main) / eb9cc385 (anchor) / 07c91cf1 (log-hash) / 07cd9002 (log-hash followup) registered ahead of push per #864. Push 814fee1b..07cd9002 verified: local HEAD == remote HEAD (ls-remote). Push-status commit added by main-agent recovery after the #1100 worker died on a runtime restart drain before writing this section. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
 
 ## #1099 Type C: Google AI-contribution pilot rate disclosure (The Information Sep 29 2026, relayed Sep 30) - first disclosed payment rates (around 100 publishers; under $1,000 over months to over $1M/yr; under 0.1% of ad revenue for small-to-midsize); UNILATERAL PRICING as the TWENTY-SEVENTH relationship direction (m891): payer-set micro-compensation decoupled from consent (opt-out of payment does not opt out of use) - Type C FIFTH leg of the 1095-1099 window, CLOSING it (Sep 30 2026, 12:00 PDT; main commit def43924 / anchor 4eff5d5b; log-hash followup registers both hashes here per #721 (this commit: 81e9ff60); doc-sync 55831/1423 -> 55895/1424 (+64/+1); ledger holds at 37, THIRTY-EIGHTH absent).
 
