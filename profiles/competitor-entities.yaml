@@ -27415,3 +27415,76 @@ type_c_1079_openai_india_pipeline_expansion_inbound_pull_twentythird_direction_s
   concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative test file), #1012-wt (Type A test file) remain in-flight, untouched and unstaged - verified via git status before staging.'
   yaml_parse_clean: true
   ascii_only: true
+
+type_c_1084_meta_spv_debt_shedding_beignet_sopaipilla_twentyfourth_direction_sep29_9pm:
+  mechanism_id: 882
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1084
+  iteration_type: C
+  iteration_time: '2026-09-29 21:00 PDT'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  block_key: type_c_1084_meta_spv_debt_shedding_beignet_sopaipilla_twentyfourth_direction_sep29_9pm
+  mechanism_name: 'Meta x project-vehicle off-balance-sheet data center debt (Beignet $27B Hyperion, Sopaipilla $12.55B El Paso, CleanSpark $2.28B Anviran) - SPV-DEBT-SHEDDING as the TWENTY-FOURTH relationship direction'
+  finding: 'On Sep 29 2026 three Meta-tied data center financings repriced AI credit risk in public within 24 hours, all built on project vehicles that keep the debt off Meta''s consolidated balance sheet while contractually securing the compute. The corpus reads this as a demand-side risk-shedding architecture: the hyperscaler sells construction and credit risk to bondholders at yields that price the risk it declines to carry directly.'
+  beignet_leg: 'Beignet Investor LLC, the project vehicle for Hyperion (Meta''s largest data center project, Richland Parish Louisiana, 5GW, >$50B investment), issued $27B of 6.581% senior secured notes due 2049 - the largest private debt offering ever sold, priced at par in Oct 2025. Meta holds a minority 20% stake so the liabilities sit off its balance sheet; PIMCO anchored ~$18B and BlackRock funds bought $3B+. S&P rated the notes A+ at issuance but warned ''substantial credit risk'' could pass to Meta during construction and operations. On Sep 29 2026 the notes traded at 91 cents on the dollar (record low; 94.4 cents a week earlier), yield ~7.55%, ~230bps over Treasuries vs 185bps at launch (record-wide 255bps in July); PIMCO''s own GIS funds mark them at 94.5, a paper loss of ~$1B on the $18B par position. Meta CDS sits near 100bps, a record.'
+  sopaipilla_leg: 'Sopaipilla Investor LLC (El Paso Texas, up to 1GW, online 2028, 300+ jobs) priced a $12.55B investment-grade bond on Sep 29 2026, led by JPMorgan and Morgan Stanley, at 7.534% yield - junk-adjacent pricing on an investment-grade label that nonetheless attracted investors. 80% owned by BlackRock subsidiaries (GIP, HPS), 20% by Meta; secured by Meta''s 20-year rental income starting 2028; the same Hyperion template (minority Meta stake, rent-backed, off balance sheet).'
+  cleanspark_leg: 'CleanSpark Inc. (Sandersville Georgia) priced a $2.28B debut five-year junk bond on Sep 19 2026 at 98.5 to yield 8.25% (~175bps over the BB average), drawing ~$10B of orders (4x oversubscribed), led by Morgan Stanley. The facility is fully leased to Anviran LLC (a Meta subsidiary) under a $6.6B 20-year contract; Meta guarantees rent and operating expenses; operations begin Q4 2027. Third-party-issuer variant of the same geometry: the tenant''s credit (Meta) prices the paper, the issuer''s balance sheet carries it.'
+  market_context_leg: 'Morgan Stanley estimates ~$3T of off-balance-sheet financing and leasing structures across the AI buildout (Nvidia, Broadcom, hyperscalers incl. Amazon and Alphabet). Alphabet and Meta issued ~$220B in bonds over the past 12 months (ainvest Sep 14 2026), distorting credit spreads; institutional positioning is diverging (Alphabet gaining support, Meta seeing reductions). Reuters Open Interest (Sep 29) asks whether the AI-credit cracks are a warning or a buy signal, naming Hyperion/Beignet as potential symbols ''of the excesses of the borrowing and spending binge driving the record-breaking US artificial intelligence build-out.'''
+  relationship_direction_taxonomy: 'TWENTY-FOURTH relationship direction per the m807 enumeration (1 sue-then-sign m624; 2 pay-or-litigate bifurcation m636; 3 grant-then-sue m675; 4 license-over-authors m699; 5 pool-and-license m720; 6 infrastructure-capture m738; 7 publisher-as-feed-operator m741; 8 vendor-embed m807; 9 litigation-pooling m810; 10 publisher-traffic-gate m828; 11 commerce-conversion licensing m831; 12 regulatory-bargaining m1004; 13 demand-for-equity m1009; 14 exclusionary-diversion m1024; 15 ecosystem-grant m1029; 16 commerce-gatekeeping m1039; 17 bundled-leverage m1049; 18 demand-recycling m864; 19 backstop-recycling m867; 20 demand-underwriting m870; 21 metered-recycling m873; 22 risk-transfer m876; 23 inbound-pull m879): SPV-DEBT-SHEDDING - the demand-side hyperscaler funds its compute buildout through project vehicles in which it holds only a minority equity stake (20%), so the project debt stays off its consolidated balance sheet while the compute capacity is contractually secured. The construction and credit risk is sold to bondholders at yields that price the risk the sponsor declines to carry directly (91c / 7.55% on Beignet; 7.534% junk-adjacent on investment-grade Sopaipilla). Distinct from #22 risk-transfer (the SUPPLY side insures its own guarantee exposure via third-party insurers; here the DEMAND side sheds its financing risk onto debt markets) and the inverse of the Google-guarantor geometry (Google GUARANTEES Anthropic''s $35B off-balance-sheet exposure - the guarantor keeps the risk; Meta''s SPVs are built to NOT keep it). The twenty-fourth slot is earned only if the 20%-minority-stake vehicle does risk-allocation work a plain Meta corporate bond could not do: keeping $27B+ of project debt off the consolidated balance sheet while securing 5GW of compute. (Taxonomy-count tension carried: m737''s finding enumerated termination-leverage as its seventh direction; the m807 enumeration used here does not list it. Not resolved this run.)'
+  incentive_geometry: 'The money-flow geometry is sponsor-minority project finance: Meta contributes 20% equity and a long-dated rent stream, bondholders (PIMCO ~$18B, BlackRock $3B+ on Beignet; GIP/HPS 80% equity on Sopaipilla) contribute the debt capital, and the vehicle owns the asset. Meta''s incentive is balance-sheet optics plus committed compute without consolidated leverage; the bondholders'' incentive is yield (7.5%+ on 20-25 year paper) for construction and single-tenant concentration risk; the underwriters'' incentive is fees on $27B+ $12.55B $2.28B prints. The coverage incentive for the corpus: the same structure that flatters the sponsor''s leverage ratios concentrates AI-credit risk in fixed-income portfolios, which is exactly what repriced on Sep 29.'
+  connects_to: [864, 867, 870, 873, 876]
+  confounders:
+    - strength: 'STRONG'
+      what: 'Ordinary project finance: SPVs with minority sponsor stakes are standard infrastructure practice (power plants, toll roads, fiber builds); nothing AI-specific about the vehicle form. The direction claim rests on the risk-allocation function, not the legal form.'
+    - strength: 'STRONG'
+      what: 'Rate-and-duration repricing: 91c / 7.55% on 2049 paper reflects the long maturity and Treasury moves as much as AI-credit distress; spreads were wider in July (255bps) and have narrowed since; no default, restructuring, or covenant event has occurred on any of the three vehicles.'
+    - strength: 'STRONG'
+      what: 'Meta retains economic exposure: 20% equity plus 20-year rent streams (Sopaipilla rental income from 2028; CleanSpark/Anviran rent-and-opex guarantee); S&P''s own A+ came with the warning that substantial credit risk can pass back to Meta during construction and operations. The risk is relabeled, not removed.'
+    - strength: 'MEDIUM'
+      what: 'Structural heterogeneity: CleanSpark is a third-party junk issuer with Meta as tenant-guarantor (Anviran), not a Meta-minority JV like Beignet/Sopaipilla; two different geometries are folded into one direction, and the CleanSpark leg could equally read as ordinary tenant-credit leasing.'
+    - strength: 'MEDIUM'
+      what: 'Excerpt-bounded evidence (0 browser.open per #503): the 20% stakes, pricing levels, and guarantee terms are press-reported, relay-tier for Sopaipilla (Zhitong via webull) and CleanSpark (CleanSpark presentation via Bloomberg); not filing-verified this run.'
+    - strength: 'WEAK'
+      what: 'Single-day snapshot: the stress reading leans on Sep 29 pricing plus one Reuters Open Interest commentary column; a one-day print is not a trend, and the commentary explicitly frames the buy-signal side too.'
+  counterargument: 'The 24th slot survives only on the risk-allocation leg: if Meta could have funded Hyperion on-balance-sheet at similar all-in cost and chose the SPV purely for optics, this collapses into ordinary treasury diversification, not a new direction. The observable test the corpus proposes: whether rating agencies and equity analysts treat the SPV debt as Meta credit anyway (S&P''s pass-through warning and the ~100bps CDS print suggest they partly do), which would falsify the shedding claim.'
+  coverage_nexus: 'The Sep 29 2026 AI-credit repricing (Beignet 91c record low, Sopaipilla 7.534% print, Meta CDS ~100bps) is the financial-event peg for hyperscaler-AI-economics coverage: Reuters Open Interest frames Hyperion/Beignet as potential symbols of the borrowing binge behind the record US AI build-out. Documented without tone claims: tone NOT_SCORED.'
+  sources:
+    - url: https://www.reuters.com/commentary/reuters-open-interest/are-ai-credit-cracks-warning-or-buy-signal-2026-09-29/
+      what: 'Reuters Open Interest (Sep 29 2026, excerpt-bounded): Beignet $27B 6.581% 2049 notes at 91c (record low), yield 7.55%, ~230bps over Treasuries (185bps at launch, 255bps July record-wide); Meta minority 20% stake, off balance sheet; S&P A+ with substantial-credit-risk pass-through warning; Meta CDS near 100bps record; Morgan Stanley ~$3T off-balance-sheet estimate across AI buildout (Nvidia, Broadcom, Amazon, Alphabet)'
+      accessed: '2026-09-29'
+      novel: true
+    - url: https://finimize.com/content/metas-beignet-bonds-are-testing-ais-off-balance-sheet-boom
+      what: 'Finimize (Sep 29 2026, excerpt-bounded): Beignet as real-time stress test for AI project finance; $27B senior secured notes via Beignet Investor JV (Meta minority stake); 2049 notes ~91c; S&P construction/operations risk warning; yield ~7.55%'
+      accessed: '2026-09-29'
+      novel: true
+    - url: https://cryptonews.net/news/finance/33483323/
+      what: 'cryptonews relaying Protos (Sep 2026, excerpt-bounded): Beignet record-low 94.4c print (week-ago); largest private debt offering ever sold; PIMCO anchored ~$18B, BlackRock funds $3B+; priced at par Oct 2025; PIMCO GIS marks 94.5 (~$1B paper loss on $18B par); vehicle is Beignet Investor LLC; Hyperion Richland Parish Louisiana 5GW'
+      accessed: '2026-09-29'
+      novel: true
+    - url: https://www.webull.com/news/15301968728318976
+      what: 'webull/Zhitong (Sep 29 2026, excerpt-bounded): Sopaipilla Investor LLC $12.55B El Paso bond priced at 7.534% (junk-adjacent on investment-grade); led by JPMorgan + Morgan Stanley; 80% BlackRock subsidiaries (GIP, HPS), 20% Meta; secured by Meta 20-year rental income from 2028; up to 1GW, online 2028, 300+ jobs; Hyperion template'
+      accessed: '2026-09-29'
+      novel: true
+    - url: https://www.thehindubusinessline.com/info-tech/meta-tied-data-centre-draws-blowout-demand-for-debut-junk-bond/article71483673.ece/amp/
+      what: 'HinduBusinessLine/Bloomberg (Sep 19 2026, excerpt-bounded): CleanSpark $2.28B debut five-year junk notes at 98.5 / 8.25% (~175bps over BB average); ~$10B orders (4x oversubscribed); led by Morgan Stanley; Sandersville Georgia; fully leased to Anviran LLC (Meta subsidiary) under $6.6B 20-year contract; Meta guarantees rent and opex; operations Q4 2027'
+      accessed: '2026-09-29'
+      novel: true
+    - url: https://www.ainvest.com/news/big-tech-record-bond-issuance-warps-credit-market-2609/
+      what: 'ainvest (Sep 14 2026, excerpt-bounded): Alphabet + Meta ~$220B bonds over 12 months for data center / AI expansion; credit-market spread distortion; institutional positioning diverging (Alphabet gaining support, Meta seeing reductions)'
+      accessed: '2026-09-29'
+      novel: true
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  falsification_family_member: false
+  falsification_family: 'NOT a member (ledger holds at 37 per the #754 convention; financial-architecture mapping of money flows per the #609/#614 qualitative boundary; no coverage-tone pair, so no uniform prediction is tested or falsified)'
+  novelty: 'FIRST dedicated corpus mechanism on Meta''s minority-stake SPV data center debt architecture: zero ''Beignet'' hits, zero ''Sopaipilla'' hits, zero ''Hyperion'' hits, zero ''CleanSpark''/''Anviran'' hits in profiles/ pre-commit; the pre-existing off-balance-sheet mention (Google as payment guarantor on Anthropic''s $35B) is the inverse guarantor geometry, not debt-shedding. SPV-DEBT-SHEDDING as the TWENTY-FOURTH relationship direction (demand-side minority-stake vehicle; distinct from #22 supplier-side risk-transfer m876 and the Google-guarantor geometry). Pre-commit greps per #715: zero test_type_c_1084 files on disk (glob); no ''Type C #1084'' in git log (--grep); max numeric mechanism_id 881 pre-commit (Type B #1083, mechanism 881 in profiles/careers/journalists.yaml); zero numeric 882 keys in profiles/; zero underscore-form and dash-form 882 mechanism key strings repo-wide (needles format-built per #715); block key zero-hit repo-wide pre-commit; 6 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings).'
+  rotation_transparency: 'Iteration #1084 Type C is the FIFTH and CLOSING leg of the 1080-1084 window (D->E->A->B->C per #565 anchor + rotation guard; #1080 Type D, #1081 Type E, #1082 Type A, #1083 Type B verified from iteration-log.md and git history). Pre-commit novelty greps: zero test_type_c_1084 files on disk (glob); no ''Type C #1084'' in git log (--grep); max numeric mechanism_id 881 pre-commit; zero numeric/underscore/dash 882 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit. The #1080 file''s zero-880 forward guards were superseded BY DESIGN when mechanism 880 landed at #1082 (pinned as forward-looking staleness per #1060); the #1085 Type D run pins the zero-882 guards. Next run is #1085 Type D, opening the 1085-1089 window.'
+  concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) remain in-flight, untouched and unstaged - verified via git status before staging.'
+  yaml_parse_clean: true
+  ascii_only: true

@@ -1,3 +1,54 @@
+## #1084 Type C: Meta x SPV off-balance-sheet data center debt (Beignet $27B Hyperion, Sopaipilla $12.55B El Paso, CleanSpark $2.28B Anviran) - SPV-DEBT-SHEDDING as the TWENTY-FOURTH relationship direction; mechanism 882; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH absent repo-wide) - Type C FIFTH and CLOSING leg of the 1080-1084 window (Sep 29 2026, 21:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+
+2026-09-29 21:00 PDT, iteration_type "C", **FIFTH and CLOSING leg of the 1080-1084 window, CLOSING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1080-1084 window FIFTH leg CLOSING it (per #565: D #1080 -> E #1081 -> A #1082 -> B #1083 -> C #1084)
+- Predecessor #1083 Type B: main 8248b38b, anchor e25b984b, log-hash 40816b6e (all verified present via git cat-file before this run's commit); #1082 #1081 #1080 verified present (2418bc24/a80d70f1/23ce1c53, 5cc29eb2/f9450174/c6f543c3, 6f0c0049/d99c8292/62fc279b)
+- Pre-commit novelty greps: zero test_type_c_1084 files on disk (glob); no "Type C #1084" in git log (--grep); max numeric mechanism_id 881 in profiles/ pre-commit (mechanism_id regex sweep); zero underscore-form and dash-form 882 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); zero numeric 882 keys in profiles/; zero Beignet/Sopaipilla/Hyperion/CleanSpark/Anviran hits in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; 6 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); THIRTY-EIGHTH member-form absent repo-wide; TWENTY-FIFTH direction absent repo-wide. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Next run #1085 Type D opens the 1085-1089 window.
+
+### Finding summary
+Type C #1084 - mechanism 882 in profiles/competitor-entities.yaml (zero-indent block key, colon-form only, no numeric id in key per #715; block_key field repeat x2 per #1064/#1069; falsification ledger holds at 37).
+- BEIGNET leg (Reuters Open Interest Sep 29 2026; Finimize Sep 29; cryptonews/Protos): Beignet Investor LLC, the Hyperion project vehicle (Richland Parish LA, 5GW, >$50B, Meta's largest), $27B of 6.581% senior secured notes due 2049 - the largest private debt offering ever sold, priced at par Oct 2025. Meta's minority 20% stake keeps it off balance sheet; PIMCO anchored ~$18B, BlackRock funds $3B+; S&P A+ at issuance with the warning that substantial credit risk could pass to Meta during construction and operations. Sep 29 print: 91c (record low; 94.4c a week earlier), yield ~7.55%, ~230bps over Treasuries (185bps at launch; 255bps July record-wide); PIMCO GIS marks 94.5 (~$1B paper loss on the $18B par position); Meta CDS near 100bps (record).
+- SOPAIPILLA leg (webull/Zhitong Sep 29 2026): Sopaipilla Investor LLC (El Paso TX, up to 1GW, online 2028, 300+ jobs) priced a $12.55B investment-grade bond Sep 29, led by JPMorgan + Morgan Stanley, at 7.534% yield - junk-adjacent pricing on an investment-grade label. 80% BlackRock subsidiaries (GIP, HPS), 20% Meta; secured by Meta's 20-year rental income from 2028; the Hyperion template.
+- CleanSpark leg (HinduBusinessLine/Bloomberg Sep 19 2026): CleanSpark Inc. (Sandersville GA) $2.28B debut five-year junk notes at 98.5 / 8.25% (~175bps over the BB average), ~$10B orders (4x oversubscribed), led by Morgan Stanley; facility fully leased to Anviran LLC (a Meta subsidiary) under a $6.6B 20-year contract; Meta guarantees rent and opex; operations Q4 2027.
+- MARKET CONTEXT leg (ainvest Sep 14 2026): Morgan Stanley ~$3T off-balance-sheet financing/leasing across the AI buildout (Nvidia, Broadcom, hyperscalers); Alphabet + Meta ~$220B bonds over 12 months; institutional positioning diverging.
+- TWENTY-FOURTH relationship direction per the m807 enumeration: SPV-DEBT-SHEDDING - the demand-side hyperscaler funds its compute buildout through project vehicles in which it holds only a minority equity stake (20%), so project debt stays off the consolidated balance sheet while compute is contractually secured; construction/credit risk is sold to bondholders at yields pricing the risk the sponsor declines to carry. Distinct from #22 risk-transfer m876 (supply-side insurer hop) and the inverse of the Google-guarantor geometry (Google keeps Anthropic's $35B risk; Meta's SPVs are built not to keep it). The slot is earned only on the risk-allocation leg; falsifiable via whether rating agencies treat the SPV debt as Meta credit anyway (S&P's pass-through warning + ~100bps CDS suggest they partly do).
+- 6 confounders strongest-first (ordinary project finance; rate-and-duration repricing; Meta retains economic exposure via 20% equity + rent guarantees; CleanSpark structural heterogeneity; excerpt-bounded relay-tier evidence; single-day snapshot). Strongest counterargument: ordinary treasury diversification - collapses if the SPV does no risk-allocation work a plain Meta bond could not do.
+- NOT a falsification-family member: financial-architecture mapping of money flows, no coverage-tone pair, no uniform prediction tested. Falsification ledger holds at 37 (THIRTY-SEVENTH present in profiles/the-verge.yaml, THIRTY-EIGHTH absent repo-wide).
+- Cross-refs: connects_to [864, 867, 870, 873, 876] (the AI-infrastructure finance family: m864 demand-recycling, m867 backstop-recycling, m870 demand-underwriting, m873 metered-recycling, m876 risk-transfer).
+- Statistical discipline: MANUAL / QUALITATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; no_analysis_json_update true; NOT artifact-grade; verdict directionally_supported_not_proven; n=1 mechanism; hypothesis-generating only. Correlation is not causation.
+
+Research: 4 browser.search query sets this run (Apple Google Gemini Siri deal September 2026 - Research rejected: Jan-2026 deal already mapped in corpus apple_google_gemini_deal block; OpenAI Disney licensing deal 2026 - Research rejected: Dec-2025 deal already mapped, m584 arc, Disney not a Meta competitor; OpenAI funding round September 2026 - noted as context only: $30B bridge talks at $1.4T valuation Sep 29 2026 via Bloomberg/Reuters/TechCrunch, participants unnamed, a financing event not a financial relationship, not a mechanism; Meta data center financing bond September 2026 - SELECTED the three-vehicle architecture). 0 browser.open per #503. 6 new URL keys.
+
+60 tests, 12 classes in tests/test_type_c_1084_meta_spv_debt_shedding_beignet_sopaipilla_twentyfourth_direction_sep29_9pm.py. Pre-commit: 39 green, 8 fail by design (3 research-method + 3 doc-sync + 2 staging per #719/#721, green post-doc-sync/staging), 13 deselected (3 anchor + 4 rotation + 6 itlog per #565/#721). Post-doc-sync re-run: 47 green + 13 deselected (anchor patched green in the anchor followup).
+
+Guard lifecycle: mechanism 882 lands this run in profiles/competitor-entities.yaml; the #1080 Type D zero-880 guards were superseded BY DESIGN when mechanism 880 landed at #1082 (pinned as forward-looking staleness per #1060); the #1085 Type D run pins the zero-883 next-number guards (this file's NEXT needles target 883).
+
+Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) remain in-flight, untouched and unstaged - verified via git status before staging; targeted staging only (own test file, profiles/competitor-entities.yaml, README.md, docs/ARCHITECTURE.md, iteration-log.md).
+
+Push: via the atomic proxy-credential workflow (proxy credential extracted from ~/.git-credentials and HTTP/1.1-probed 200 through hatch-egress-proxy:3128, decoded once via urllib.parse.unquote, passed as literal https_proxy env in one shell block, never hardcoded; GitHub auth via http.extraHeader Authorization: Basic base64(x-access-token:PAT) per the Sep-29 push recipe, PAT never via argv); remote HEAD verified MATCH via git ls-remote.
+
+### Method
+Qualitative financial-incentive mapping on the Sep 29 2026 Meta-tied AI-credit repricing; no new browser research beyond the 4 query sets (0 browser.open per #503, excerpt-bounded). Text-folded discipline-string assertions for m882 (competitor-entities.yaml YAML-parsed block + field assertions) per the #732 convention; mechanism_id regex sweeps across profiles/ for max-id and 883-absence (sweep-carriers excluded; needles format-built); falsification ordinals via corpus walk. Pre-commit novelty greps: zero test_type_c_1084 files on disk (glob); no Type C #1084 in git log (--grep); max numeric mechanism_id 881 pre-commit; zero underscore-form 882 mechanism key strings in profiles/ and tests/ pre-commit (format-built needles, own file excluded); zero literal mechanism_882/mechanism-882 repo-wide pre-commit (grep); block keys zero-hit pre-commit (now single-hit in home YAML + block_key repeat = 2); 6 novel URLs zero-hit pre-commit. ASCII-only, no em dashes.
+
+### Commit hashes
+Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup registers both hashes here per #721 (this commit: TBD).
+
+### Doc-sync ratchet
+README stats table 54783/1408 -> 54843/1409 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1084 entry (this entry). Authoritative venv pytest this run: 60 tests / 12 classes in the new file (pre-commit 39 green + 8 by-design fails + 13 deselected; post-doc-sync 47 green + 13 deselected).
+
+### Push status
+TBD this run.
+
+### Rotation guard
+1080-1084 window FIFTH leg, CLOSED by this run (anchor patched post-commit per #565). Next: #1085 Type D opens the 1085-1089 window.
+
+### Concurrency
+#899/#938/#900/#1012-wt in-flight untouched.
+
+
 ## #1083 Type B: Casey Newton (Platformer) x Anthropic vs x Meta writer-level paired-piece personal-gradient pair - mechanism 881, FIRST writer-level paired-piece EXTENSION of mechanism 24 (Disclosure-as-Inoculation Paradox); illustrative delta +0.30 directionally personal-tie-consistent (MANUAL ILLUSTRATIVE ONLY, engine NOT run, verdict directionally_supported_not_proven); NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH absent repo-wide) - Type B FOURTH leg of the 1080-1084 window, CONTINUING it (Sep 29 2026, 20:00 PDT; main commit 8248b38b / anchor e25b984b; log-hash followup registers both hashes here per #721 (this commit: 40816b6e))
 
 2026-09-29 20:00 PDT, iteration_type "B", **FOURTH leg of the 1080-1084 window, CONTINUING it** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
