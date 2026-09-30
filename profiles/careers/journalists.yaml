@@ -1568,6 +1568,71 @@ journalists:
     - Fiancé's engineering role is outside Newton's product/policy coverage focus
     - Newton produces critical coverage of Substack, TikTok, X, Google  -  not uniformly soft
     - Anthropic's Pentagon stand was genuinely newsworthy (federal judge ruled retaliation 'likely unlawful')
+    type_b_1083_casey_newton_platformer_anthropic_vs_meta_personal_gradient_pair_m24_extension_sep29:
+      mechanism_id: 881
+      discovery_date: '2026-09-29'
+      iteration: 1083
+      iteration_type: B
+      iteration_time: '2026-09-29 20:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: platformer
+      journalist: 'Casey Newton (Platformer founder, independent since Oct 2020; fiance is a software engineer at Anthropic, started Jan 2025, engaged Feb 2026, in-corpus via mechanism 24)'
+      block_key: type_b_1083_casey_newton_platformer_anthropic_vs_meta_personal_gradient_pair_m24_extension_sep29
+      test_file: tests/test_type_b_1083_casey_newton_platformer_anthropic_vs_meta_personal_gradient_pair_m24_extension_sep29_8pm.py
+      type: 'B - Journalist Cross-Entity Tracking - Personal-Gradient Paired-Piece Pair (Anthropic vs Meta), first writer-level paired-piece extension of mechanism 24'
+      pattern: 'Same-writer, same-outlet, same-solo-format pair on an independent outlet (Platformer has no licensing deals with any lab, a CONTROL for the payer-softening framework). Newton covers the fiance''s employer (Anthropic) in the victim/crossroads register and Meta in the prosecution/trial register. The personal tie predicts the direction (Anthropic softer); the direction holds.'
+      anthropic_arm:
+        title: Where does Anthropic go from here?
+        date: '2026-03'
+        publication: platformer
+        author: Casey Newton
+        dek: 'Shunned by the government, and newly appealing to consumers, the company is at a crossroads'
+        framing_notes: 'Victim-of-government register ("Shunned by the government") plus principled-defender register, consistent with m24''s documented "Following: Anthropic vs. The Pentagon" (Feb 2026) framing. Accountability substance is present (critics question ARR calculations; employees and outsiders debate Amodei''s hawkish remarks; allegations that Claude is being used in conflict zones; "the company must now manage credibility, regulatory pressure and public outrage while proving its growth is real and ethical") but it is framed through the sympathetic crossroads register rather than the prosecution register. Pentagon context: DoD blacklisted Anthropic as a "supply chain risk" (designation historically reserved for foreign adversaries), ordered removal from federal agencies, after Anthropic refused to allow Claude use conflicting with its safety principles; a federal judge called the retaliation "likely unlawful" (m24 legitimate-factors).'
+        source_url: https://deadstack.net/cluster/anthropic-confronts-scrutiny-over-growth-claims
+        evidence_tier: 'excerpt-tier (digest-attested per #503, NOT relay-attested)'
+        tone_MANUAL_ILLUSTRATIVE: -0.15
+      meta_arm:
+        title: The infinite scroll goes on trial
+        date: '2026-09'
+        publication: platformer
+        author: Casey Newton
+        dek: 'Testifying before a jury in LA, Mark Zuckerberg makes the case that platform design is about free expression. But the walls are closing in on Section 230.'
+        framing_notes: 'Prosecution/trial register: Zuckerberg is placed in the defendant frame ("Testifying before a jury"); the dek concedes his free-expression defense only to close with the adversarial verdict ("the walls are closing in on Section 230"). No sympathy is granted to the subject. Consistent with m24''s documented Meta accountability framing (scams, child safety, content moderation PTSD, "20-year mistake"). Attested via the Platformer page-6 listing (Meta tag), crawled within 10 days.'
+        source_url: https://www.platformer.news/page/6/
+        evidence_tier: 'excerpt-tier (listing-attested per #503, NOT relay-attested)'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+      illustrative_delta: 0.30
+      delta_note: 'Anthropic minus Meta: -0.15 - (-0.45) = +0.30. Direction predicted by the PERSONAL tie (fiance at Anthropic -> softer), not by any institutional deal. MANUAL ILLUSTRATIVE ONLY.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. Engine NOT run. verdict directionally_supported_not_proven. no_analysis_json_update true. NOT artifact-grade. n=1 writer-level pair; hypothesis-generating only. Correlation is not causation.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction; on an independent outlet with no licensing deals the payer prediction is moot, so there is nothing to falsify. This is the first writer-level paired-piece extension of the personal-gradient family (mechanism 24 lineage). Falsification ledger holds at 37 (THIRTY-SEVENTH present in profiles/the-verge.yaml, THIRTY-EIGHTH absent repo-wide).'
+      falsification_ledger: 37
+      confounders:
+        - 'STRONG excerpt-tier (both arms from digest/listing excerpts, no first-hand read, NOT relay-attested)'
+        - 'STRONG peg mismatch (Pentagon blacklist Mar 2026 vs Section 230 jury trial Sep 2026; different news events with different inherent registers - comparability rests on the shared accountability register)'
+        - 'STRONG temporal gap (about 6 months between the two pieces; news cycles differ)'
+        - 'MODERATE legitimate-factors from m24 (Meta accountability journalism predates the Anthropic relationship by 6 years; disclosure quality is best-in-class independent; fiance''s engineering role is outside Newton''s product/policy coverage focus)'
+        - 'MODERATE register-not-absence softness (the Anthropic arm carries real accountability substance: ARR doubts, conflict-zone use; the softness is in register, not omission)'
+        - 'WEAK disclosure status UNKNOWN in the specific Anthropic piece (not verified this run; Platformer ethics page documents per-column disclosure norms but the piece-level disclosure was not excerpted)'
+      counterevidence:
+        - 'Newton wrote "The authoritarian AI crisis has arrived" on the Pentagon-Anthropic fight (government framed as the surveillance threat; Anthropic as the resister - still entity-favorable to Anthropic)'
+        - 'Newton is adversarial toward AI companies generally ("Grammarly turned me into an AI editor against my will and I hate it") - not uniformly soft across the sector'
+        - 'The direction IS personal-tie-consistent at +0.30, which supports rather than falsifies the personal-gradient family; a null delta would have been the falsifying outcome for this pair'
+        - 'm24 documents that Anthropic''s Pentagon stand was genuinely newsworthy (federal judge ruled retaliation likely unlawful) - the victim register has event-level justification independent of the tie'
+      cross_refs:
+        - '#24: EXTENDS mechanism 24 (Disclosure-as-Inoculation Paradox) from documented personal-conflict disclosure into a writer-level paired-piece register test'
+        - '#1078: personal-gradient MIRROR of the writer-level deal-gradient falsification (Ward, 36th member) - same paired-piece design, different gradient dimension'
+        - '#1073: BOUNDS the finding - Schoon''s within-piece entity split at 9to5Google (also deal-free) shows entity-directed register splits exist without any deal'
+        - 'm712: briefed-relay bound does not apply (both arms un-briefed news/commentary)'
+      research_method: '4 browser.search query sets this run (James Vincent Guardian OpenAI Astra - institution-migration confound, pivoted; Casey Newton Platformer Anthropic coverage - Clio piece plus the "Where does Anthropic go from here?" Mar 2026 piece surfaced via deadstack cluster; Casey Newton Platformer Meta September 2026 Connect glasses - the "infinite scroll goes on trial" Meta piece surfaced via platformer.news/page/6 listing; Karen Hao Atlantic Meta AI 2026 - backup candidate, no Meta-specific adversarial piece surfaced, dropped). 0 browser.open per #503. Pre-commit novelty greps per #715 (see rotation transparency): the three novel URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.'
+      source_urls:
+        - https://deadstack.net/cluster/anthropic-confronts-scrutiny-over-growth-claims
+        - https://www.platformer.news/page/6/
+        - https://medium.com/@ava.chun.855/why-anthropic-should-build-the-education-system-of-the-future-not-weapons-6798a2a33722
+        - https://www.platformer.news/ethics/
+        - https://en.wikipedia.org/wiki/Casey_Newton
   education:
   - degree: BS
     field: Journalism
