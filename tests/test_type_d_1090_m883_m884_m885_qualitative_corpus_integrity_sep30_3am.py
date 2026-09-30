@@ -135,7 +135,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = os.path.basename(__file__)
 TEST_BASENAME = OWN_BASENAME
 
-ANCHORED_SHA = "0" * 40  # patched by the anchor followup commit per #565
+ANCHORED_SHA = "4881bd45e38bf97a8bade8d75a72b44ebb3608be"  # patched by the anchor followup commit per #565
 
 MAX_ID = 885
 NEXT_NUM = 886
