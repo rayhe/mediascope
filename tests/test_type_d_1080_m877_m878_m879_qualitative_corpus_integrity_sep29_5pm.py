@@ -119,8 +119,8 @@ TEST_BASENAME = OWN_BASENAME
 
 ANCHORED_SHA = "6f0c0049e5b9ac11c4bfae27de5f8ba8f00826e5"  # patched by the anchor followup commit per #565
 
-MAX_ID = 879
-NEXT_NUM = 880
+MAX_ID = 882  # pinned by #1085 Type D: m882 landed at #1084 Type C
+NEXT_NUM = 883  # pinned by #1085 Type D: m882 landed at #1084 Type C
 
 M877_KEY = (
     "wired_openai_sep29_astra_cancellation_accountability_"
@@ -411,31 +411,38 @@ class TestNovelty1080:
         assert text.count("block_key: " + M879_KEY) == 1
         assert text.count(M879_KEY) == 2
 
-    def test_1080_entry_newest_first_in_log(self):
-        # The "## #1080 Type D:" entry leads the log (newest-first
-        # ordering); hashes are TBD until the anchor followup patches
-        # them per #565. Deselected pre-commit per #721.
-        assert _read(LOG_PATH).startswith("## #1080 Type D:")
+    def test_1080_entry_present_in_log(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1085 run): the #1080 entry
+        # is present in the log (newest-first position belonged to
+        # the #1085 entry after this run).
+        assert "## #1080 Type D:" in _read(LOG_PATH)
 
 
 # ---------------------------------------------------------------------------
 # 2. Rotation guard per #565
 # ---------------------------------------------------------------------------
 class TestTypeDRotationGuard1080:
-    def test_rotation_window_opens_1080(self):
-        # The newest distinct iteration in git history is this run's
-        # #1080 Type D (window opener). The full 1075-1079 window is
-        # regex-visible (no subject deviations in this window): D
-        # #1080 -> C #1079 -> B #1078 -> A #1077 -> E #1076.
-        # Deselected pre-commit per #565 (passes post-commit).
-        window = _window()
-        assert window[0] == ("D", "1080"), window
-        assert window[1:5] == [
-            ("C", "1079"),
-            ("B", "1078"),
-            ("A", "1077"),
-            ("E", "1076"),
-        ], window
+    def test_1080_window_closed_complete(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1085 run): the 1080-1084
+        # window is CLOSED and complete. All five legs landed with
+        # clean "Type X #N:" main-commit subjects in the correct
+        # relative order: D #1080 -> E #1081 -> A #1082 -> B #1083 ->
+        # C #1084 (newest-first: C #1084, B #1083, A #1082, E #1081,
+        # D #1080). This assertion is stable across the #1085 main
+        # commit (which sits above the window) because it filters to
+        # the 1080-1084 subsequence rather than absolute positions.
+        chain = [
+            entry
+            for entry in _window(n=80)
+            if entry[1] in ("1080", "1081", "1082", "1083", "1084")
+        ]
+        assert chain == [
+            ("C", "1084"),
+            ("B", "1083"),
+            ("A", "1082"),
+            ("E", "1081"),
+            ("D", "1080"),
+        ], chain
 
     def test_predecessor_1079_chain_present(self):
         # The full #1079 Type C commit chain must be in git history
@@ -457,16 +464,24 @@ class TestTypeDRotationGuard1080:
                 == 0
             ), sha
 
-    def test_no_type_e_1081_in_git_log(self):
-        # The next leg (Type E #1081) must not exist yet: this run
-        # opens the window, #1081 continues it.
+    def test_type_c_1084_landed(self):
+        # HISTORICAL REPIN (Sep 29 2026, #1085 run): Type C #1084 has
+        # LANDED (main commit 3582c342, Sep 29 21:00 PDT) - the
+        # forward-looking "must not exist yet" guard from the #1080
+        # run is inverted now that the 1080-1084 window closed.
         result = subprocess.run(
-            ["git", "log", "--format=%s", "--grep=Type E #1081"],
+            ["git", "log", "--format=%H %s", "--grep=Type C #1084"],
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
         )
-        assert result.stdout.strip() == "", result.stdout
+        mains = [
+            line
+            for line in result.stdout.splitlines()
+            if "Type C #1084" in line and "followup" not in line.lower()
+        ]
+        assert len(mains) == 1, result.stdout
+        assert mains[0].startswith("3582c342"), mains
 
     def test_anchor_sha_is_real(self):
         # Deselected pre-commit per #565: the anchor followup patches

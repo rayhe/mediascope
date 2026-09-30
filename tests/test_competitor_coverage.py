@@ -167,6 +167,7 @@ class TestPublicationRelationships:
             "coercive", "commercial_partnership", "none",
             "none_direct_indirect_via_google",  # added Sep 2026 FT Anthropic, Type A #441
             "lawsuit_active",  # added Sep 2026 news-corp Perplexity, Type A #522
+            "personnel_career_migration",  # added Sep 2026 WIRED x Snap, Type A #827, m727 (Conde Nast CRO Elizabeth Herbst-Brady career migration from Snap)
         }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]
