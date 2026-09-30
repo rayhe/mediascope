@@ -25,6 +25,8 @@
 
 Guard lifecycle: mechanism 883 landed at this Type A leg; the #1086 zero-883 guards are superseded BY DESIGN (this run's zero-884 guards PASS; they fail BY DESIGN when mechanism 884 lands at a future B/C leg of the 1085-1089 window).
 
+Push status per #864: main db6b141d + anchor 31d58d63 + log-hash baa05be1 + log-hash tweak 3da14783 + test fixup c3d4868b all pushed to origin main and ls-remote-verified (c3d4868b); concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+
 ## #1086 Type E: podcast sentiment 140th verification - GF EPISODE 502 HOLDS as latest (seventh Type E verification since the Sep 28 11:00am release, ~36 hours after publication; NO 503 surfaced; three-directory corroboration), EHE 50-day hold continues (SIX logged keys re-surfaced, ZERO new EHE keys), Attention Sphere 140th no-match as a podcast (blob SURFACED AGAIN + the same 6 commit URLs as the #1001-#1076 cycles, git-cat-file-verified circular; Tracked Sources 139->140), press SEVEN in-corpus re-surfaces (thesun.ie Boz piece re-surfaces after the #1081 non-surface; gagadget re-surfaces via #981/#986) + ZERO new-to-corpus URL keys (the all-key pure-re-surface streak CONTINUES at three after the #1076 restart); Recency frontier: HOLDS at Sep 29 - Type E SECOND leg of the 1085-1089 window, CONTINUING it (Sep 29 2026, 23:00 PDT; main commit a2570fe7 / anchor 4dedcc91; log-hash followup registers both hashes here per #721 (this commit: 15fe0d57))
 
 2026-09-29 23:00 PDT, iteration_type "E", **SECOND leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
