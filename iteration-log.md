@@ -1,4 +1,4 @@
-## #1094 Type C: Anthropic leaked draft S-1 $518B commitment ledger - DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction (mechanism 888); partial S-1 realization of m864's demand-recycling proof test; ledger holds at 37, THIRTY-EIGHTH absent - Type C FIFTH and CLOSING leg of the 1090-1094 window (Sep 30 2026, 07:00 PDT; main commit PENDING / anchor PENDING; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
+## #1094 Type C: Anthropic leaked draft S-1 $518B commitment ledger - DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction (mechanism 888); partial S-1 realization of m864's demand-recycling proof test; ledger holds at 37, THIRTY-EIGHTH absent - Type C FIFTH and CLOSING leg of the 1090-1094 window (Sep 30 2026, 07:00 PDT; main commit 0a68923d / anchor 86a6e27c; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
 
 ### Rotation transparency
 - 1090-1094 window FIFTH and CLOSING leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
@@ -32,7 +32,7 @@
 
 Guard lifecycle: mechanism 888 lands at this Type C leg; the #1093 zero-888 needles and #1090 TWENTY-SIXTH-absence needle are superseded BY DESIGN (this run's zero-889 needles PASS; they fail BY DESIGN when mechanism 889 lands at a future leg - the #1095 Type D run pins zero-889 guards).
 
-Push status per #864: main PENDING + anchor PENDING + log-hash PENDING to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+Push status per #864: main 0a68923d + anchor 86a6e27c + log-hash PENDING to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit 7fbc7f46 / anchor 2796e83b; log-hash followup registers both hashes here per #721 (this commit: f59a8361)).
 
