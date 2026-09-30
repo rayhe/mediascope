@@ -1,4 +1,4 @@
-## #1089 Type C: OpenAI x Lenfest Institute AI fellowship $10M renewal (Sep 28 2026) - POST-LITIGATION-GRANT-RENEWAL as the TWENTY-FIFTH relationship direction; mechanism 885; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH member-claim form absent) - Type C FIFTH and CLOSING leg of the 1085-1089 window (Sep 30 2026, 02:00 PDT; main commit a98d10d8 / anchor 497d90cd; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
+## #1089 Type C: OpenAI x Lenfest Institute AI fellowship $10M renewal (Sep 28 2026) - POST-LITIGATION-GRANT-RENEWAL as the TWENTY-FIFTH relationship direction; mechanism 885; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH member-claim form absent) - Type C FIFTH and CLOSING leg of the 1085-1089 window (Sep 30 2026, 02:00 PDT; main commit a98d10d8 / anchor 497d90cd; log-hash followup registers both hashes here per #721 (this commit: 3bc0a638)).
 
 ### Rotation transparency
 - 1085-1089 window FIFTH and CLOSING leg (per #565: D #1085 -> E #1086 -> A #1087 -> B #1088 -> C #1089)
@@ -26,7 +26,7 @@
 
 Guard lifecycle: mechanism 885 lands at this Type C leg; the #1088 zero-885 needles and #1084 TWENTY-FIFTH-absence needle are superseded BY DESIGN (this run's zero-886 needles PASS; they fail BY DESIGN when mechanism 886 lands at a future leg - the #1090 Type D run pins zero-886 guards).
 
-Push status per #864: main PENDING + anchor PENDING + log-hash PENDING pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+Push status per #864: main a98d10d8 + anchor 497d90cd + log-hash 3bc0a638 pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1088 Type B: Victoria Song (The Verge) x Apple Watch always-listening vs x Meta camera-free Audio - ambient-audio register-inversion pair (mechanism 884; second temporal extension of mechanism 75 register-selectivity + extension of mechanism 827 into the audio modality)
 
