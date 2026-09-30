@@ -40,7 +40,7 @@
 
 ### Push status per #864
 - Test-fix: none expected - all pre-commit-green tests green post-doc-sync; the #1095 twenty-seventh-absence and #1098 max-890/zero-numeric-891 guard supersessions are BY DESIGN and pinned as forward-looking staleness
-- Push-status: #1099 local commit chain def43924 (main) / 4eff5d5b (anchor) / <loghash> (log-hash) / <loghashfollowup> (log-hash followup) registered ahead of push per #864. Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
+- Push-status: #1099 local commit chain def43924 (main) / 4eff5d5b (anchor) / 28802355 (test-fix) / 81e9ff60 (log-hash) / e674c7a1 (log-hash followup) registered ahead of push per #864. Push f5dde0cb..e674c7a1 verified: local HEAD == remote HEAD (ls-remote). Push via atomic proxy-credential workflow (extract + test + use in one block); ls-remote-verify local HEAD == remote HEAD post-push.
 
 ### Rotation guard
 - Order D->E->A->B->C enforced: predecessor chain SHAs (ed8c9cf2/188b15f6/75243d3f, f94f88a2/547bbfc7/a87ddccc, 13f857c0/423f92a9/1cd17264, e454a736/2cf9467a/52716790) asserted present in history; "Type C #1099" absent from log pre-commit (novelty guard, superseded by design post-commit)
