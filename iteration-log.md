@@ -32,7 +32,7 @@
 
 Guard lifecycle: mechanism 888 lands at this Type C leg; the #1093 zero-888 needles and #1090 TWENTY-SIXTH-absence needle are superseded BY DESIGN (this run's zero-889 needles PASS; they fail BY DESIGN when mechanism 889 lands at a future leg - the #1095 Type D run pins zero-889 guards).
 
-Push status per #864: main 0a68923d + anchor 86a6e27c + log-hash abc34c68 + log-hash followup PENDING to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+Push status per #864: main 0a68923d + anchor 86a6e27c + log-hash abc34c68 + log-hash followup 6777ec89 + test-fix bddcbb74 to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit 7fbc7f46 / anchor 2796e83b; log-hash followup registers both hashes here per #721 (this commit: f59a8361)).
 
