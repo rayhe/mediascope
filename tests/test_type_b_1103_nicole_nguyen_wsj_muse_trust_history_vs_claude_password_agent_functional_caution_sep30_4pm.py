@@ -255,7 +255,7 @@ class TestNovelty1103:
         mains = [
             line
             for line in result.stdout.splitlines()
-            if "Type B #1103" in line and "followup" not in line.lower()
+            if line.split(" ", 1)[1].startswith("Type B #1103:")
         ]
         assert len(mains) == 1, mains
 
