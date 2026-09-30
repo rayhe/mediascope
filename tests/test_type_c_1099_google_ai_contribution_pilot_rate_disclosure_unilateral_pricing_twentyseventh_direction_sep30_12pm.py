@@ -467,8 +467,9 @@ class TestCorpusNoveltyPostCommit:
     def _git_grep_head(self, needle, *roots):
         return run_git("grep", "-F", needle, "HEAD", "--", *roots)
 
-    def test_next_mechanism_892_absent_repo_wide(self):
+    def test_next_mechanism_number_absent_repo_wide(self):
         # The next mechanism (892) must not exist anywhere in the tree.
+        # (Method name avoids the contiguous needle per #715.)
         assert self._git_grep_head(US_892, "tests/", "profiles/").returncode != 0
 
     def test_no_numeric_892_keys_in_profiles(self):
@@ -486,8 +487,10 @@ class TestCorpusNoveltyPostCommit:
 
     def test_891_present_in_committed_tree(self):
         # Commit-dependent: passes only after this run's main commit lands.
+        # git grep prints the matching lines, so assert the numeric key hit
+        # directly (the block-key check lives in the next test).
         r = self._git_grep_head(MID_891, "profiles/")
-        assert r.returncode == 0 and MECH_KEY in r.stdout
+        assert r.returncode == 0 and MID_891 in r.stdout
 
     def test_block_key_in_committed_profiles(self):
         r = run_git("grep", "-F", MECH_KEY, "HEAD", "--", "profiles/")
