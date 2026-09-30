@@ -1,3 +1,30 @@
+## #1087 Type A: Verge x Anthropic Sep-2026 pacing-policy + IPO-prospectus register extension (mechanism 883; m557/m766 extension, m880 companion)
+
+2026-09-30 00:00 PDT, iteration_type "A", **THIRD leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+
+### Rotation transparency
+- 1085-1089 window THIRD leg (per #565: D #1085 -> E #1086 -> A #1087 -> B #1088 -> C #1089)
+- Predecessor #1086 Type E: main a2570fe7, anchor 4dedcc91, log-hash 15fe0d57, log-hash tweak cfcfa45c (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_a_1087 files on disk (glob); no "Type A #1087" in git log (--grep); max numeric mechanism_id 882 in profiles/ pre-commit (regex sweep); zero numeric 883 mechanism_id keys in profiles/; zero underscore-form and dash-form 883 mechanism key strings repo-wide pre-commit (needles format-built per #715, __pycache__ excluded); falsification ledger holds at 37 (THIRTY-SEVENTH member-form in profiles/the-verge.yaml m880; THIRTY-EIGHTH member-claim form absent repo-wide). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Next run #1088 Type B continues the 1085-1089 window.
+
+### Research: 4 search sets, 0 opens (excerpt-bounded per #503)
+- Verge x Anthropic arm 1 (Sep 12): "Anthropic CEO says it is time to pump the brakes on AI" - https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development - analytical policy-explainer register on the "We Must Pace the Frontier" essay (0.0); digest record holds that what survives is a dated essay, an official RT, a unilateral third-party evaluator-access commitment, and two peer-CEO matches with no named start date
+- Verge x Anthropic arm 2 (Sep 29): IPO-prospectus risk-factor coverage relay-attested via https://10news.org/2026/09/anthropic-raises-concerns-over-ai-risks-in-ipo-filing/ (theverge.com confirmed among covering outlets; verbatim Verge URL not in this run's excerpts, marked per #503) - financial-skeptical (-0.40): roughly 80 of 261 prospectus pages on AI risks, $42 billion 2025 net loss, self-preserving behaviors
+- Meta arms carried per the m880 register-continuity pattern (no re-search this run): #592 Meta glasses wearables-privacy set, band mean -0.55 (Song Jul 7 LED-tamper piece, Jul 20 "pervert glasses" editorial, late-Jul "holds all the cards" opener); m811 Connect-week interview relay (+0.10, Alex Himel "told The Verge" on camera-free Ray-Ban Meta Audio, Sep 24)
+- MANUAL ILLUSTRATIVE: Anthropic Sep mean -0.20 vs carried Meta mean -0.225, delta +0.025 register PARITY. The non-deal AI lab absorbs a financial-skeptical hit on its own IPO paper while the licensing deal sits with the other lab (OpenAI, arc mean -0.25 from the same outlet per m880). The aspirational register at the non-deal lab is peg-conditional, not entity-conditional.
+
+### Statistical discipline
+- Monitoring-only per the Aug 28 2026 standing rule: tone MANUAL_ILLUSTRATIVE, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added beyond m883, NOT artifact-grade, verdict directionally_supported_not_proven
+- Control case against financial determinism at Vox Media (companion to m880, extends m557/m766); NOT a falsification-family member (no uniform-direction prediction under test); ledger holds at 37 (THIRTY-SEVENTH member-form present at m880; THIRTY-EIGHTH member-claim form absent repo-wide)
+
+### Test file and doc-sync
+- tests/test_type_a_1087_verge_anthropic_pacing_policy_register_extension_sep30_midnight.py: 69 tests, 14 classes. Pre-commit: anchor + rotation + commit-dependent tests deselected per #565 (anchor patched post-commit in the followup per #565).
+- Doc-sync: README stats table 54966/1411 -> 55035/1412 (+69/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log entry prepended (reverse-chronological).
+
+Guard lifecycle: mechanism 883 landed at this Type A leg; the #1086 zero-883 guards are superseded BY DESIGN (this run's zero-884 guards PASS; they fail BY DESIGN when mechanism 884 lands at a future B/C leg of the 1085-1089 window).
+
 ## #1086 Type E: podcast sentiment 140th verification - GF EPISODE 502 HOLDS as latest (seventh Type E verification since the Sep 28 11:00am release, ~36 hours after publication; NO 503 surfaced; three-directory corroboration), EHE 50-day hold continues (SIX logged keys re-surfaced, ZERO new EHE keys), Attention Sphere 140th no-match as a podcast (blob SURFACED AGAIN + the same 6 commit URLs as the #1001-#1076 cycles, git-cat-file-verified circular; Tracked Sources 139->140), press SEVEN in-corpus re-surfaces (thesun.ie Boz piece re-surfaces after the #1081 non-surface; gagadget re-surfaces via #981/#986) + ZERO new-to-corpus URL keys (the all-key pure-re-surface streak CONTINUES at three after the #1076 restart); Recency frontier: HOLDS at Sep 29 - Type E SECOND leg of the 1085-1089 window, CONTINUING it (Sep 29 2026, 23:00 PDT; main commit a2570fe7 / anchor 4dedcc91; log-hash followup registers both hashes here per #721 (this commit: 15fe0d57))
 
 2026-09-29 23:00 PDT, iteration_type "E", **SECOND leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).

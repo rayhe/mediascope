@@ -3364,6 +3364,137 @@ competitor_relationships:
       research_method: '8 browser.search query sets this run (6 pre-compaction: Anthropic news September 2026 site:theverge.com OR site:nytimes.com (zero results); Anthropic Claude announcement September 2026; The Verge Anthropic Claude Cowork one Claude September; WIRED Anthropic Claude self-improvement 26% research development; wired.com Anthropic Claude September; theverge.com Anthropic Claude September; plus 2 post-compaction: The Verge Anthropic Cowork chat merged one Claude Docs Slides launch with since 2026-09-10; theverge.com Anthropic "one Claude" Cowork chat Docs Slides article). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_892 files on disk (glob); no "Type A #892" in git log (--grep); block key zero-hit repo-wide; max numeric mechanism_id 765 in-tree pre-commit (concurrent m762 block on disk, uncommitted); zero underscore-form 766 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per the #715 convention; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero dash-form 766 references repo-wide pre-commit; zero numeric 766 mechanism_id keys in profiles/ pre-commit; "987830" and "pulseofnations.lol" zero-hit repo-wide pre-commit; ## #884 NOT asserted (concurrent in-flight: asserting its absence would break on its commit, asserting its presence would fail pre-commit). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       novelty: 'test_type_a_892 files on disk pre-commit: zero; no "Type A #892" in git log pre-commit: absent; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 765 pre-commit; zero underscore-form 766 keys repo-wide pre-commit (format-built needles); zero dash-form 766 references pre-commit; zero numeric 766 mechanism_id keys in profiles/ pre-commit; both Anthropic URLs zero-hit repo-wide pre-commit; Meta arms carried verbatim from mechanism 557 (not novel, disclosed).'
       new_test_file: 'tests/test_type_a_892_verge_anthropic_product_launch_register_extension_vs_meta_deficit_sep21_5am.py'
+    mechanism_883_verge_anthropic_pacing_policy_register_extension_sep30:
+      mechanism_id: 883
+      date_analyzed: '2026-09-30'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1087
+      iteration_type: A
+      iteration_time: '2026-09-30 00:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The Verge
+      competitor_pair: 'Anthropic vs Meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '00:00'
+      job_id: mediascope-daily-iteration
+      distinct_from_prior: 'Extends mechanism 557 (Type A #557, Sep 6 2026) and mechanism 766 (Type A #892, Sep 21 2026) from business-milestone, solidarity-hero, compliance, and product-launch registers into two new September 2026 registers at the non-deal AI lab: the pacing-policy register (Amodei slowdown essay, analytical) and the IPO-prospectus register (risk-factor financial-skeptical). Mechanism 557 used three 2026 stories (IPO filing Jun 1, Pentagon-lawsuit solidarity Mar 9, EU AI Act watermarking mid-Aug); mechanism 766 used two Sep 2026 product stories (Fable/Mythos 5.1 Sep 1, one-Claude merge Sep 16-17). This mechanism tests whether the aspirational register at the non-deal lab survives financial-skeptical and policy-skeptical pegs. Companion to m880 (Type A #1082, Verge x OpenAI deal-partner register continuity). Meta comparator arms carried per the m880 register-continuity pattern (no re-search this run): the #592 Meta glasses set (mean -0.55) and the m811 Meta Connect Audio piece (+0.10), scores unchanged. NOT a falsification-family member: no uniform-direction prediction under test; strengthens the #557/#766 control case. Ledger holds at 37; THIRTY-EIGHTH remains the negative guard.'
+      finding: 'Two September 2026 Anthropic stories, both Verge-reported or Verge-attributed this run, draw peg-driven registers that reach parity with the carried Meta set. (1) The Verge Sep 12 coverage of Dario Amodei calling for slowing down AI development ("We Must Pace the Frontier" essay), registered analytically at 0.0: the digest record holds that what survives is a dated essay, an official RT, a unilateral third-party evaluator-access commitment, and two peer-CEO matches with no named start date. (2) The Verge IPO-prospectus risk-factor coverage (relay-attested via 10news.org, which confirms theverge.com among the outlets covering it; verbatim Verge URL not in this run excerpts, marked per #503), roughly 80 of 261 prospectus pages on AI risks, a $42 billion 2025 net loss, and self-preserving behaviors, registered adversarially at -0.40. The two carried Meta arms: the #592 Meta glasses wearables-privacy adversarial set (-0.55) and the m811 Meta Connect Audio privacy-positive piece (+0.10). MANUAL ILLUSTRATIVE Anthropic Sep mean -0.20 vs carried Meta mean -0.225, delta +0.025 register PARITY. The non-deal AI lab absorbs a financial-skeptical hit on its own IPO paper while the licensing deal sits with the other lab (OpenAI, arc mean -0.25 from the same outlet per m880). The aspirational register at the non-deal lab is register- and peg-dependent, not a stable softness: milestone, solidarity, compliance, and product pegs read soft; IPO-loss and pacing pegs read analytical to adversarial. Direct financial predictor remains ABSENT for this pair, so the register cannot be attributed to a direct licensing incentive. Correlation is not causation.'
+      financial_relationship:
+        anthropic_direct: '$0 direct Verge to Anthropic licensing confirmed zero this run'
+        verge_openai_deal: 'Vox Media strategic content and product partnership with OpenAI, May 29 2024. The Verge content used in ChatGPT. Cash terms undisclosed. PMC acquired Vox Media in 2026.'
+        meta_financial: '$0'
+        deal_disclosed_in_verge_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Direct financial predictor is ABSENT for this pair: Vox Media deal is with OpenAI, Anthropic rival. This mechanism is therefore a control-case extension against financial determinism, continuing #557, #766, and the m880 companion. Financial incentives are correlational, not causal proof.'
+        editorial_independence_note: 'The Verge editorial standards require source verification and balance. No evidence of direct directive linking any commercial relationship to Anthropic coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      articles_anthropic:
+        - title: 'Anthropic CEO says it is time to pump the brakes on AI'
+          date: '2026-09-12'
+          url: 'https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development'
+          url_source: 'verbatim theverge.com URL from browser.search Full-URL listings this run (attested in the piyush0053/ai-daily-digest 2026-09-15 digest and the guzus/ai-research-arm 2026-09-12-ai-news digest); excerpt-bounded, no first-hand browser.open per #503.'
+          framing: 'policy_essay_analytical_explainer'
+          tone_MANUAL_ILLUSTRATIVE: 0.0
+          language:
+            - 'We Must Pace the Frontier'
+            - 'Anthropic CEO Dario Amodei calls for slowing down AI development'
+            - 'what survives is a dated essay, an official RT, a unilateral third-party evaluator-access commitment'
+          notes: 'Analytical policy-explainer register: the pacing call is reported for its substance, not framed adversarially or aspirationally. Excerpt-bounded per #503. URL zero-hit repo-wide pre-commit.'
+          deal_disclosed: false
+        - title: 'Anthropic Raises Concerns Over AI Risks in IPO Filing'
+          date: '2026-09-29'
+          url: 'https://10news.org/2026/09/anthropic-raises-concerns-over-ai-risks-in-ipo-filing/'
+          url_source: 'relay-attested Verge coverage: 10news.org explicitly confirms theverge.com (with theguardian.com and cnbc.com) as covering the Anthropic IPO-prospectus risk factors; verbatim theverge.com URL not in this run excerpts (marked per #503); excerpt-bounded, no first-hand browser.open per #503.'
+          framing: 'ipo_prospectus_financial_skeptical'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          language:
+            - 'its AI models could pose catastrophic or existential risks to humanity'
+            - 'staggering net loss of $42 billion'
+            - '80 pages of the 261-page prospectus are dedicated to risks'
+          notes: 'Financial-skeptical adversarial register on the non-deal lab own IPO paper: existential-risk language, loss figure, and risk-page count foregrounded. Relay-attested per #503; URL zero-hit repo-wide pre-commit.'
+          deal_disclosed: false
+      articles_meta:
+        - title: 'Meta glasses wearables-privacy set (carried from #592 via m880, band mean -0.55)'
+          date: '2026-07-07'
+          url: 'https://www.theverge.com/news/856216/meta-ray-ban-display-smart-glasses-international-expansion-paused'
+          url_source: 'carried per the m880 register-continuity pattern (no re-search this run): m880 primary band mean -0.55 from #592 (Song Jul 7 LED-tamper privacy-light piece -0.55, Jul 20 "pervert glasses" editorial -0.60, late-Jul "holds all the cards" opener -0.50), un-rescored per #807.'
+          framing: 'wearables_privacy_adversarial'
+          tone_MANUAL_ILLUSTRATIVE: -0.55
+          language:
+            - 'Meta glasses set band mean -0.55 carried unchanged'
+          notes: 'Carried from m880 #592 primary band; re-scored unchanged. Carried, not novel.'
+          deal_disclosed: false
+        - title: 'Meta Connect Audio privacy-positive piece (carried from m811 via m880, +0.10)'
+          date: '2026-09-24'
+          url: 'https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/'
+          url_source: 'carried per the m880 register-continuity pattern (no re-search this run): m880 secondary from m811 (#967), the Verge Connect-week interview relay where Meta wearables VP Alex Himel "told The Verge" about the camera-free Ray-Ban Meta Audio; un-rescored per #807.'
+          framing: 'privacy_positive_product'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          language:
+            - 'Meta Connect Audio privacy-positive +0.10 carried unchanged'
+          notes: 'Carried from m880 m811 arm; re-scored unchanged. Carried, not novel.'
+          deal_disclosed: false
+      register_analysis: 'The aspirational register at The Verge is peg-conditional, not entity-conditional. At the non-deal lab the register flips from soft (milestone, solidarity, compliance, product-launch per m557/m766) to analytical (pacing-policy, 0.0) and adversarial (IPO-prospectus financial-skeptical, -0.40) as the pegs change. The Sep-2026 Anthropic mean (-0.20) reaches parity with the carried Meta set (-0.225) at delta +0.025. Money-sympathy direction is ABSENT for both the payer side (OpenAI deal lab draws -0.25 arc mean per m880, adversarial) and the non-deal lab (Anthropic draws parity with Meta). Registers track the peg, not the payer. Bounded by #507 (deal-incentive pattern is domain-bounded); strongest confounders are news genre, hype cycle position, and beat concentration (#52).'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE not empirical n=2 vs n=2 per entity insufficient for inferential significance'
+        target_entity: 'Meta Verge carried register'
+        peer_entity: 'Anthropic Verge Sep-2026 pacing/prospectus register'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.55, 0.10]
+        target_avg: -0.225
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.0, -0.40]
+        peer_avg: -0.20
+        delta: 0.025
+        delta_calc: '-0.20 - (-0.225) = +0.025'
+        delta_direction: 'peer softer than target by 0.025 - register parity'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+        synthetic_note: 'Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary in excerpt-tier sources, not observed Verge corpus empirical scores. Meta arms carried per the m880 register-continuity pattern with unchanged scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on a full Sep 2026 Verge Anthropic corpus. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation. Direct financial predictor absent for Anthropic pair so delta cannot be attributed to a direct licensing tie.'
+        methodology: 'Engine NOT run; MANUAL ILLUSTRATIVE excerpt-bounded scoring only.'
+      confounders_ranked:
+        strong:
+          - 'news genre: IPO-prospectus risk-factor stories are inherently financial-skeptical genres. Pacing-essay policy pieces are inherently analytical. Genre alone can produce the register gap with zero entity favoritism.'
+          - 'hype cycle position: Anthropic is the cycle darling with a pre-IPO $2T valuation target, while the prospectus itself foregrounds $42B losses. Market momentum gives journalists both positive product pegs and negative financial pegs for the same entity.'
+          - 'beat concentration: Hayden Field Verge AI beat is functionally an OpenAI/Anthropic beat per mechanism #52, about 15+ articles on the two labs vs 2-3 on Meta AI in 14 months Jun 2025 to Aug 2026. A beat structured around the two frontier labs applies analytical vocabulary independent of any licensing deal.'
+        moderate:
+          - 'relay attenuation: the prospectus arm is relay-attested (10news.org confirms theverge.com coverage) without a verbatim Verge URL this run. Tone is assigned to the Verge register via the relay, bounded by relay fidelity per #503.'
+          - 'temporal mismatch: Anthropic arms are Sep 12 and Sep 29 2026; Meta arms are carried from Sep 2026 sets (#592, m811). Roughly matched window, but not a paired-day design.'
+          - 'genuine conduct: the $42B prospectus loss and the pacing essay are genuinely newsworthy financial and policy events. Real facts legitimately shape register.'
+        weak:
+          - 'thin sample: n=2 vs n=2 is directional only, never dispositive for a publication-level claim.'
+          - 'byline: neither Anthropic arm carries a Verge byline in the excerpt-tier sources this run.'
+      counter_evidence:
+        - 'The relay-attested prospectus arm is unresolved at the verbatim-URL level this run: a first-hand Verge read could shift the tone assignment. Open empirical test: verbatim Verge prospectus URL plus observed tone scores on a full Sep 2026 Verge Anthropic corpus.'
+        - 'The m557/m766 aspirational register at the non-deal lab is not overturned: it holds for milestone, solidarity, compliance, and product pegs. This mechanism bounds it, showing register dependence on peg type.'
+        - 'OpenAI deal halo cannot be ruled out: the Vox Media OpenAI licensing deal (May 29 2024) may create general AI-lab goodwill at The Verge, but the m880 arc mean (-0.25 on the deal lab) and this parity finding both run against a halo reading.'
+      open_empirical_test: 'Verbatim Verge prospectus URL (risk-factor coverage, Sep 26-29 2026) plus observed tone scores via VADER TextBlob plus human annotation on a full Sep 2026 Verge Anthropic corpus, paired against a matched-window Verge Meta corpus.'
+      incentive_attribution: 'CONTROL_CASE_AGAINST_FINANCIAL_DETERMINISM - not a falsification test: no uniform-direction prediction under test; extends the #557/#766 control case with pacing-policy and IPO-prospectus registers at parity with Meta.'
+      falsification_family: 'NOT a falsification-family member (register-parity extension; no uniform-direction prediction under test; control-case extension). Ledger holds at 37 - THIRTY-SEVENTH member-form present (m880, profiles/the-verge.yaml); THIRTY-EIGHTH member-claim form absent repo-wide.'
+      ledger: '37'
+      cross_references: [52, 425, 507, 552, 193, 557, 766, 880]
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: 'MANUAL ILLUSTRATIVE'
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: 'Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores for a full Sep 2026 Verge Anthropic corpus'
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. Direct financial predictor absent for Anthropic pair: Vox Media OpenAI deal is with Anthropic rival, Verge-Anthropic tie is $0. This mechanism is a control-case extension of #557 and #766 plus companion to m880, not a falsification test. News genre, hype cycle position, and beat concentration are the strongest confounders.'
+      correlation_not_causation: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False per the Aug 28 2026 standing rule; engine NOT run; no analysis.json update warranted; NOT artifact-grade.'
+      no_analysis_json_update: true
+      research_method: '4 browser.search query sets this run (theverge.com Anthropic September 2026 IPO Claude; The Verge Anthropic slowdown Amodei September 2026; The Verge Claude Cowork launch Anthropic agent September 2026; theverge.com Anthropic IPO $2 trillion September 2026). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_1087 files on disk (glob); no "Type A #1087" in git log (--grep); block key zero-hit repo-wide pre-commit; max numeric mechanism_id 882 pre-commit; zero underscore-form and dash-form 883 mechanism key strings repo-wide pre-commit (format-built needles per #715, __pycache__ excluded); zero numeric 883 mechanism_id keys in profiles/ pre-commit; both Anthropic URLs zero-hit repo-wide pre-commit; Meta arms carried per the m880 register-continuity pattern (not novel, disclosed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'test_type_a_1087 files on disk pre-commit: zero; no "Type A #1087" in git log pre-commit: absent; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 882 pre-commit; zero underscore-form 883 keys repo-wide pre-commit (format-built needles); zero dash-form 883 references pre-commit; zero numeric 883 mechanism_id keys in profiles/ pre-commit; both Anthropic URLs zero-hit repo-wide pre-commit; Meta arms carried per the m880 register-continuity pattern (not novel, disclosed).'
+      new_test_file: 'tests/test_type_a_1087_verge_anthropic_pacing_policy_register_extension_sep30_midnight.py'
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
