@@ -1,4 +1,4 @@
-## #1092 Type A: Guardian x Anthropic Sep 10-29 2026 safety-cycle register (m886) vs carried Guardian x Meta arms, m517-family extension with OpenAI deal-partner third pole; ledger holds at 37, THIRTY-EIGHTH absent - Type A THIRD leg of the 1090-1094 window (Sep 30 2026, 05:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD)).
+## #1092 Type A: Guardian x Anthropic Sep 10-29 2026 safety-cycle register (m886) vs carried Guardian x Meta arms, m517-family extension with OpenAI deal-partner third pole; ledger holds at 37, THIRTY-EIGHTH absent - Type A THIRD leg of the 1090-1094 window (Sep 30 2026, 05:00 PDT; main commit 7c551fcc / anchor 2a234a33; log-hash followup registers both hashes here per #721 (this commit: TBD)).
 
 ### Rotation transparency
 - 1090-1094 window THIRD leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
