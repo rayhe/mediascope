@@ -131,7 +131,7 @@ class TestNovelty1087:
         proc = _git("log", "--format=%H %s", "--grep", "Type A #1087")
         mains = [ln for ln in proc.stdout.splitlines()
                  if re.search(r"Type A #1087(?::| )", ln)
-                 and "anchor followup" not in ln and "log-hash followup" not in ln
+                 and "anchor" not in ln and "log-hash" not in ln
                  and "push-status followup" not in ln]
         assert len(mains) == 1
         assert ANCHORED_SHA not in ("PATCH_ME_IN_FOLLOWUP", "POST_COMMIT_ANCHORED",
