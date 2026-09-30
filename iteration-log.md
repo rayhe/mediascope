@@ -1,3 +1,32 @@
+## #1095 Type D: m886/m887/m888 qualitative-discipline verification + post-1090-1094 corpus integrity (max numeric mechanism_id 888; zero-889 forward guards format-built per #715; #1090 file historical repin MAX_ID 885->888 NEXT_NUM 886->889 rotation-guard window-closed-complete; ledger holds at 37, THIRTY-EIGHTH absent; #1090 background suite DIED at 2804 bytes, tombstone SEVENTY-SEVENTH->SEVENTY-EIGHTH) - Type D FIRST and OPENING leg of the 1095-1099 window (Sep 30 2026, 08:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD); doc-sync 55526/1419 -> 55599/1420 (+73/+1)).
+
+### Rotation transparency
+- 1095-1099 window FIRST and OPENING leg (per #565: D #1095 -> E #1096 -> A #1097 -> B #1098 -> C #1099; order D->E->A->B->C)
+- Predecessor #1094 Type C CLOSED the 1090-1094 window: main 0a68923d / anchor 86a6e27c / log-hash abc34c68 / log-hash followup 6777ec89 / test-fix bddcbb74 / push-status 11a5a2a8 (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_d_1095 files on disk (glob); no "Type D #1095" in git log (--grep); max numeric mechanism_id 888 pre-commit; zero numeric/underscore/dash 889 mechanism key strings repo-wide pre-commit (needles format-built per #715; own file excluded per the pattern-rescope lesson for tests/__pycache__ .pyc artifacts); zero "TWENTY-SEVENTH relationship direction" hits in profiles/ (bare TWENTY-SEVENTH hits in journalists.yaml are old falsification-ledger-26 notes, unrelated); no #1095 row in README/ARCHITECTURE test tables pre-commit. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Guard lifecycle: #1090's zero-886 needles, #1091's zero-886/max-885 needles, #1092's zero-887 needles, #1093's zero-888 needles fail BY DESIGN at this run (pinned as forward-looking staleness in subprocess); the #1094 zero-889 needles still PASS. This run pins the zero-889 forward guards (they fail BY DESIGN when mechanism 889 lands at a future A/B/C leg of the 1095-1099 window).
+- Next run #1096 Type E continues the 1095-1099 window.
+
+### Background suite verdict per #795
+- The #1090-launched background full-suite run DIED: 2804 bytes, dots only to ~4%, zero summary tokens (no failed/passed/error lines, no ===== summary), last write Sep 30 03:59:55 PDT, no live pytest process for the log. SECOND consecutive background-suite death of the new streak (death #1 was the #1085-launched run at #1085; the 57-run clean streak ENDED at #1085 when the #1080 suite completed). Tombstone lineage advances SEVENTY-SEVENTH -> SEVENTY-EIGHTH.
+- The full suite was re-launched as a background process writing to goal hidden_files type_d_1095_full_suite.log WITHOUT -x (the full inventory, calendar by-design failures included, is needed for the #1100 triage); the #1100 Type D run checks this suite's verdict per #795.
+
+### Window mechanisms verified (all three landed in the 1090-1094 window; qualitative discipline per the Aug 28 2026 standing rule)
+- m886 (Type A #1092, profiles/guardian.yaml 4-space block key): Guardian x Anthropic Sep-2026 safety-cycle register vs carried Guardian x Meta arms (m537), OpenAI deal-partner third pole. Peer arms Sep 10-29: -0.2, -0.3, -0.25 (mean -0.25) vs Meta band mean -0.425; MANUAL ILLUSTRATIVE delta +0.175 (Meta draws the harder register). m517-family extension from piracy into safety-disclosure. NOT a falsification-family member.
+- m887 (Type B #1093, profiles/careers/journalists.yaml 4-space block key under jason_aten competitor_coverage): Jason Aten (Inc.) Meta Muse message-sync expose (-0.70) vs carried Apple Audio Intelligence adversarial arm (-0.55) with the Google aspirational pole; illustrative delta +0.15; REALIZES m677's testable prediction #1. NOT a falsification-family member.
+- m888 (Type C #1094, profiles/competitor-entities.yaml zero-indent block key): Anthropic leaked draft S-1 $518B future cloud/compute/infrastructure commitment ledger; investor-supplier dual role (Amazon/Google on both sides); DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction per the m807 enumeration; tone NOT_SCORED. NOT a falsification-family member.
+- Falsification ledger holds at 37 (THIRTY-SEVENTH member-claim form once in profiles/the-verge.yaml m880; THIRTY-EIGHTH member-claim form absent; the two THIRTY-EIGHTH hits are negative-guard notes, designed). All three mechanisms: MANUAL/QUALITATIVE ONLY, engine NOT run, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation; hypothesis-generating only.
+
+### Test file and doc-sync
+- tests/test_type_d_1095_m886_m887_m888_qualitative_corpus_integrity_sep30_8am.py: 73 tests, 16 classes. Pre-commit: anchor + rotation + doc-sync + iteration-log tests deselected per #565/#719/#721 (14 deselected); 59 green.
+- #1090 file historical repin (committed with this run): MAX_ID 885->888, NEXT_NUM 886->889, rotation guard rewritten to the 1090-1094 window-closed-complete subsequence form (test_1090_window_closed_complete filters the 1090-1094 subsequence; test_type_c_1094_landed asserts 0a68923d; test_1090_entry_present_in_log; the window-opener forms removed).
+- Doc-sync: README stats table 55526/1419 -> 55599/1420 (+73/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log entry prepended (reverse-chronological).
+
+Guard lifecycle: mechanism 889 has not landed; this run's zero-889 needles PASS (they fail BY DESIGN when mechanism 889 lands at a future leg - the #1100 Type D run pins the next guards).
+
+Push status per #864: main TBD + anchor TBD + log-hash TBD + log-hash followup TBD + push-status TBD - patched by the followup commits.
+
 ## #1094 Type C: Anthropic leaked draft S-1 $518B commitment ledger - DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction (mechanism 888); partial S-1 realization of m864's demand-recycling proof test; ledger holds at 37, THIRTY-EIGHTH absent - Type C FIFTH and CLOSING leg of the 1090-1094 window (Sep 30 2026, 07:00 PDT; main commit 0a68923d / anchor 86a6e27c; log-hash followup registers both hashes here per #721 (this commit: abc34c68); doc-sync 55467/1418 -> 55526/1419 (+59/+1)).
 
 ### Rotation transparency

@@ -11,6 +11,10 @@ historical repin (MAX_ID 882->885, NEXT_NUM 883->886, rotation guard
 rewritten to the 1085-1089 window-closed-complete subsequence form,
 no-Type-E-1086 inverted to Type-C-1089-landed a98d10d8, entry
 newest-first -> entry-present, anchor mechanics untouched); the
+REPIN by #1095 Type D: MAX_ID 885->888, NEXT_NUM 886->889, rotation
+guard rewritten to the 1090-1094 window-closed-complete subsequence
+form, no-Type-E-1091 inverted to Type-C-1094-landed 0a68923d, entry
+newest-first -> entry-present, anchor mechanics untouched; the
 #1086/#1087/#1088 window files are NOT edited by this run -
 their now-stale forward-looking numeric guards are pinned as
 fail-by-design via subprocess in the staleness class (7 numeric:
@@ -137,8 +141,8 @@ TEST_BASENAME = OWN_BASENAME
 
 ANCHORED_SHA = "4881bd45e38bf97a8bade8d75a72b44ebb3608be"  # patched by the anchor followup commit per #565
 
-MAX_ID = 885
-NEXT_NUM = 886
+MAX_ID = 888  # pinned by #1095 Type D: m888 landed at #1094 Type C
+NEXT_NUM = 889  # pinned by #1095 Type D: m888 landed at #1094 Type C
 
 M883_KEY = (
     "mechanism_883_verge_anthropic_pacing_policy_register_extension_"
@@ -434,31 +438,41 @@ class TestNovelty1090:
         assert text.count("block_key: " + M885_KEY) == 1
         assert text.count(M885_KEY) == 2
 
-    def test_1090_entry_newest_first_in_log(self):
-        # The "## #1090 Type D:" entry leads the log (newest-first
-        # ordering); hashes are TBD until the anchor followup patches
-        # them per #565. Deselected pre-commit per #721.
-        assert _read(LOG_PATH).startswith("## #1090 Type D:")
-
-
 # ---------------------------------------------------------------------------
 # 2. Rotation guard per #565
 # ---------------------------------------------------------------------------
 class TestTypeDRotationGuard1090:
-    def test_rotation_window_opens_1090(self):
-        # The newest distinct iteration in git history is this run's
-        # #1090 Type D (window opener). The full 1085-1089 window is
-        # regex-visible (no subject deviations in this window): D
-        # #1090 -> C #1089 -> B #1088 -> A #1087 -> E #1086.
-        # Deselected pre-commit per #565 (passes post-commit).
-        window = _window()
-        assert window[0] == ("D", "1090"), window
-        assert window[1:5] == [
-            ("C", "1089"),
-            ("B", "1088"),
-            ("A", "1087"),
-            ("E", "1086"),
-        ], window
+    def test_1090_window_closed_complete(self):
+        # The full 1090-1094 window closed in D->E->A->B->C order:
+        # Type D #1090 opened, Type E #1091, Type A #1092 (m886),
+        # Type B #1093 (m887), Type C #1094 (m888) closed it.
+        window = _window(n=60)
+        sub = [w for w in window if w[1] in ("1090", "1091", "1092", "1093", "1094")]
+        assert sub == [
+            ("C", "1094"),
+            ("B", "1093"),
+            ("A", "1092"),
+            ("E", "1091"),
+            ("D", "1090"),
+        ], sub
+
+    def test_type_c_1094_landed(self):
+        # The window's closing leg (Type C #1094) main commit is in
+        # git history: 0a68923d.
+        assert (
+            subprocess.run(
+                ["git", "cat-file", "-e", "0a68923d"],
+                cwd=REPO_ROOT,
+                capture_output=True,
+            ).returncode
+            == 0
+        )
+
+    def test_1090_entry_present_in_log(self):
+        # The "## #1090 Type D:" entry is present in iteration-log.md
+        # (it is no longer the newest entry - the 1090-1094 window
+        # has since closed).
+        assert "## #1090 Type D:" in _read(LOG_PATH)
 
     def test_predecessor_1089_chain_present(self):
         # The full #1089 Type C commit chain must be in git history
@@ -479,17 +493,6 @@ class TestTypeDRotationGuard1090:
                 ).returncode
                 == 0
             ), sha
-
-    def test_no_type_e_1091_in_git_log(self):
-        # The next leg (Type E #1091) must not exist yet: this run
-        # opens the window, #1091 continues it.
-        result = subprocess.run(
-            ["git", "log", "--format=%s", "--grep=Type E #1091"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-        )
-        assert result.stdout.strip() == "", result.stdout
 
     def test_anchor_sha_is_real(self):
         # Deselected pre-commit per #565: the anchor followup patches
@@ -974,12 +977,12 @@ class TestGuardLifecycle1090:
         assert data_884["iteration"] == 1088
         assert data_885["iteration"] == 1089
 
-    def test_1090_file_pins_max_id_885_and_next_886(self):
-        # This file is the new window-opener pinning zero-886
+    def test_1090_file_pins_max_id_888_and_next_889(self):
+        # Repinned by #1095 Type D: this file now pins the zero-889
         # forward guards (per the fail-forward cadence: each window's
         # opener supersedes the prior file's NEXT_NUM pin).
-        assert MAX_ID == 885
-        assert NEXT_NUM == 886
+        assert MAX_ID == 888
+        assert NEXT_NUM == 889
         assert _max_numeric_mechanism_id() == MAX_ID
 
     def test_zero_next_numeric_886_in_profiles(self):
