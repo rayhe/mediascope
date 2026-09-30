@@ -1,3 +1,36 @@
+## #1088 Type B: Victoria Song (The Verge) x Apple Watch always-listening vs x Meta camera-free Audio - ambient-audio register-inversion pair (mechanism 884; second temporal extension of mechanism 75 register-selectivity + extension of mechanism 827 into the audio modality)
+
+2026-09-30 01:00 PDT, iteration_type "B", **FOURTH leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard; main commit TBD-MAIN / anchor TBD-ANCHOR; log-hash followup registers both hashes here per #721 (this commit: TBD-LOGHASH)).
+
+### Rotation transparency
+- 1085-1089 window FOURTH leg (per #565: D #1085 -> E #1086 -> A #1087 -> B #1088 -> C #1089)
+- Predecessor #1087 Type A: main db6b141d, anchor 31d58d63, log-hash baa05be1, log-hash tweak 3da14783, test fixup c3d4868b (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_b_1088 files on disk (glob); no "Type B #1088" in git log (--grep); max numeric mechanism_id 883 in profiles/ pre-commit (regex sweep); zero numeric 884 mechanism_id keys in profiles/; zero underscore-form and dash-form 884 mechanism key strings repo-wide pre-commit (needles format-built per #715); block key zero-hit; two novel URLs zero-hit repo-wide pre-commit; THIRTY-EIGHTH member-claim form absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Next run #1089 Type C CLOSES the 1085-1089 window.
+
+### Research: 6 search sets, 0 opens (excerpt-bounded per #503)
+- Lauren Goode WIRED Meta glasses Sep 2026 - REJECTED: Goode saturated in corpus (m436/m447, asymmetry 0.87). Lauren Goode WIRED OpenAI 2026 - REJECTED: same saturation (surfaced own-repo commits, circular).
+- Adi Robertson Verge Meta glasses Sep 2026 - REJECTED: no clean same-writer Sep-2026 pair (surfaced webpronews creep-factor relay context + WeSearch Luna provenance). Adi Robertson Verge OpenAI/Apple 2026 - REJECTED: surfaced the pre-sequence-era f7d1876 Type B (already in corpus).
+- theverge.com Apple Watch always-listening Sep 24 2026 Victoria Song - SELECTED: surfaced the WeSearch relay of the Verge Sep-24 Apple-watch piece and the finance.biggo.com Vergecast relay carrying Song's verbatim Apple Watch always-listening quotes. Verge Apple Watch always listening author - SELECTED: confirmed the quotes ("cow in Poughkeepsie", subpoena "yikes").
+- Apple arm FRESH, relay-tier: Vergecast segment "The Apple Watch Becomes an Always-On Listener" (Series 12 / Ultra 4 continuous ambient audio, 15-second rewind via double-press digital crown, daily conversation recaps) - Song measured technical skepticism: transcription-accuracy doubts from first-hand Bee testing + legal-technical subpoena question; zero privacy/stigma vocabulary, zero business-model attribution. MANUAL ILLUSTRATIVE -0.05.
+- Meta arm carried per #807 from m827 (no re-scoring): Sep-23 "Meta ditches the camera" stigma-frame (-0.30, "pervert glasses" carried forward); Sep-24 Vergecast "Smart Glasses Only Make Sense When Companies Stop Trying to Hoover Up Your Data" business-model indictment (-0.35). Band mean -0.325.
+- MANUAL ILLUSTRATIVE delta (Apple minus Meta): +0.275. The inversion: the always-listening device gets transcription-accuracy doubts; the camera-free device keeps the stigma register + the data-harvesting indictment.
+
+### Statistical discipline
+- Monitoring-only per the Aug 28 2026 standing rule: tone MANUAL_ILLUSTRATIVE, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, no_analysis_json_update true, NOT artifact-grade, verdict directionally_supported_not_proven, n=1 writer-level pair, hypothesis-generating only. Correlation is not causation.
+- NOT a falsification-family member: no Vox Media-Apple licensing deal exists in corpus, so the payer-softening prediction is moot; direction thesis-consistent. Falsification ledger holds at 37 (THIRTY-SEVENTH member-form in profiles/the-verge.yaml m880; THIRTY-EIGHTH member-claim form absent repo-wide).
+- Confounders strong-first: STRONG relay-tier both arms; STRONG genre/medium mismatch (conversational Vergecast vs reported piece); STRONG peg mismatch (Watch launch vs Connect launch); MODERATE role asymmetry (reviewer-mode vs news-mode); MODERATE newsworthiness gradient (Apple on-device/encryption claims, Meta "pervert glasses" momentum); WEAK date granularity. Counterevidence: Song's subpoena question (privacy-adjacent but legal-technical); Janus Rose's adversarial Apple register at the same outlet Sep-24 (bounds the finding - the adversarial register IS available at the outlet); Bee anecdote grounds the measured register experientially; Apple's technical claims give legitimate basis; direction thesis-consistent.
+- Cross-refs: EXTENDS #75 (first audio-modality extension); EXTENDS #827 (second temporal extension, Sep 2026); MIRROR-CONTRAST #1068 (m872 Low register constancy +0.05); BOUNDED by the Sep-24 Verge Janus Rose piece (different writer, adversarial register on Apple's always-listening watch); BOUNDED by #1082 m880 (register-availability falsification); #1078 writer-level pair design precedent; m712 briefed-relay bound does not apply.
+
+### Test file and doc-sync
+- tests/test_type_b_1088_victoria_song_verge_apple_watch_always_listening_vs_meta_audio_register_inversion_sep30_1am.py: 79 tests, 17 classes. Pre-commit: anchor + rotation main-commit tests + doc-sync ratchet + iteration-log tests deselected per #565/#719/#721 (11 deselected, 68 green); post-commit re-runs deselect the two pre-commit-only tests per #710/#720.
+- Doc-sync: README stats table 55035/1412 -> 55114/1413 (+79/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log entry prepended (reverse-chronological).
+
+Guard lifecycle: mechanism 884 lands at this Type B leg; the #1085/#1086/#1087 zero-884 guards are superseded BY DESIGN (this run's zero-885 guards PASS; they fail BY DESIGN when mechanism 885 lands at a future leg - the #1090 Type D run pins zero-885 guards).
+
+Push status per #864: main TBD-MAIN + anchor TBD-ANCHOR + log-hash TBD-LOGHASH (+ log-hash tweak if needed) pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+
 ## #1087 Type A: Verge x Anthropic Sep-2026 pacing-policy + IPO-prospectus register extension (mechanism 883; m557/m766 extension, m880 companion)
 
 2026-09-30 00:00 PDT, iteration_type "A", **THIRD leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard; main commit db6b141d / anchor 31d58d63; log-hash followup registers both hashes here per #721 (this commit: baa05be1)).

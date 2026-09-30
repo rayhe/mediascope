@@ -24556,9 +24556,12 @@ victoria_song:
   notes: 'The Verge senior reporter Victoria Song (author of the "Optimizer" newsletter, regular Vergecast contributor; career arc: PC Magazine -> Gizmodo -> The Verge, documented in the career-migration list item of this file under "name: Victoria Song" with mechanism_ids [593, 605, 719]). Type B #993 (Sep 25 2026, 12:00 PDT): mechanism 827 - FIRST dedicated mechanism-id-sequence Type B mechanism on Song under a top-level journalists.yaml item (zero "victoria_song:" top-level item keys pre-commit; mechanism 75 predates the sequence numbering and lives as an excerpt-tier block in competitor-coverage-research.yaml; mechanism 593 is a Type C financial-stack behavioral pin, not a Type B cross-entity mechanism). The Aug-2026 corpus (test_victoria_song_cross_entity.py) documents her as balanced/product-reviewer rather than adversarial (Meta tone != "adversarial", "Meta might be better than Apple" comparison positive, Apple coverage positive with no surveillance framing despite 12 cameras). #993 adds a Sep-23/24-2026 temporal extension of m75 under the Connect-week shared peg: Song applies the privacy/data-harvesting register to Meta''s camera-free Audio launch and to Meta''s business model on the Vergecast, while her Snap-side register in the same segment stays product/market-skeptical ("broken illusion") with zero data-harvesting vocabulary. ASCII-only, no em dashes.'
   mechanism_ids:
   - 827
+  - 884
   source_urls:
   - https://technewstube.com/theverge/1870121/meta-ditches-camera-newest-smart-glasses/
   - https://finance.biggo.com/news/d71bedffa3fb45e3
+  - https://finance.biggo.com/news/966fb7a3fe0edf86
+  - https://wesearch.press/s/everything-is-spying-on-you-and-theres-no-opting-out-657c98f3
   competitor_coverage:
     type_b_993_victoria_song_verge_rayban_audio_stigma_vs_snap_broken_illusion_sep25:
       mechanism_id: 827
@@ -24651,6 +24654,88 @@ victoria_song:
       novelty: 'FIRST dedicated mechanism-id-sequence Type B mechanism on Victoria Song under a top-level journalists.yaml item. Zero test_type_b_993 files on disk (glob); no "Type B #993" in git log (--grep); max numeric mechanism_id 826 in-tree pre-commit; zero numeric 827-form mechanism keys in profiles/ pre-commit; zero underscore-form 827 MECHANISM key strings repo-wide pre-commit (needles format-built per #715); zero dash-form 827 mechanism references pre-commit; block key `type_b_993_victoria_song_verge_rayban_audio_stigma_vs_snap_broken_illusion_sep25` zero-hit repo-wide pre-commit; zero "victoria_song:" top-level item keys pre-commit (the "name: Victoria Song" career-migration entry with mechanism_ids [593, 605, 719] is not an item and not a Type B mechanism); mechanism 75 predates the sequence numbering (excerpt-tier block in competitor-coverage-research.yaml); mechanism 593 is Type C (financial-stack behavioral pin), not Type B; both arm URLs zero-hit repo-wide pre-commit (git grep -F): the TechNewsTube URL appears exactly twice in profiles/ post-commit (block arm + item source_urls) and the biggo URL exactly three times (two block arms + item source_urls). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       research_method: '6 browser.search query sets Sep 25 2026: (1) Meta Connect 2026 Victoria Song Ray-Ban Meta Audio smart glasses - REJECTED for same-journalist Meta-only framing without competitor arm (The Verge "Meet Meta''s New Ray-Ban Audio Glasses" surfaced, no Song byline established); (2) Meta Ray-Ban Audio glasses launch journalist review September 2026 - SELECTED: surfaced Song''s Sep-23 "Meta ditches the camera on its newest smart glasses" via the TechNewsTube feed attestation (byline Victoria Song, Sep 23 2026 7:37 pm); (3) Victoria Song Verge smart glasses September 2026 - SELECTED: confirmed her wearables beat and corpus baseline (LED tamper-proof Jul-7 piece, EHE Aug-6 coverage); (4) Victoria Song Snap smart glasses coverage 2026 - REJECTED (no clean Song Snap arm, but surfaced the Sep-24 Vergecast relay with the Snap "broken illusion" section); (5) Victoria Song Vergecast Meta Snap smart glasses 2026 - SELECTED: finance.biggo.com relay of the Sep-24 Vergecast segment with attributed Song quotes and the Snap "broken illusion" header; (6) broader same-writer Sep 2026 cross-entity candidates (Nicole Nguyen WSJ, Julian Chokkattu WIRED, Kate Kozuch Tom''s Guide, Hamish Hector TechRadar, Jacob Krol TechRadar, Brenda Stolyar, Scott Stein, Sabrina Ortiz, Karissa Bell, David Heaney, Andy Boxall) - all REJECTED: prior corpus saturation (mechanisms/iterations already dedicated) or no verifiable same-writer cross-entity pair. 0 browser.open this run per #503 excerpt-bounded convention; evidence tier for the segment is scraper-relay, for the Sep-23 piece is feed-attestation excerpt. Pre-commit novelty greps per #715 as pinned in novelty. ASCII-only, no em dashes.'
       test_file: tests/test_type_b_993_victoria_song_verge_rayban_audio_stigma_vs_snap_broken_illusion_sep25_noon.py
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+    type_b_1088_victoria_song_verge_apple_watch_always_listening_vs_meta_audio_register_inversion_sep30:
+      mechanism_id: 884
+      discovery_date: '2026-09-30'
+      iteration: 1088
+      iteration_type: B
+      iteration_time: '2026-09-30 01:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: the-verge
+      journalist: 'Victoria Song (The Verge senior reporter / wearables reviewer; author of the Optimizer newsletter; regular Vergecast contributor; m75/m827 register-selectivity subject)'
+      block_key: type_b_1088_victoria_song_verge_apple_watch_always_listening_vs_meta_audio_register_inversion_sep30
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1088 is the iteration number, not the mechanism id).'
+      test_file: tests/test_type_b_1088_victoria_song_verge_apple_watch_always_listening_vs_meta_audio_register_inversion_sep30_1am.py
+      type: 'B - Journalist Cross-Entity Tracking - Ambient-Audio Register-Inversion Paired-Piece Pair (Apple Watch always-listening vs Meta camera-free Audio), second temporal extension of mechanism 75 and extension of mechanism 827 into the audio modality'
+      pattern: 'Same-writer, same-outlet-class, same-month pair. Song discusses Apple''s always-listening Watch (Series 12 / Ultra 4: continuous ambient audio capture, 15-second rewind, daily conversation recaps) in a measured technical/product-skepticism register (transcription accuracy doubts, subpoena legality question; zero privacy/stigma vocabulary, zero business-model attribution) while her carried Sep-2026 Meta arms route Meta''s camera-free Audio glasses through the stigma frame (''pervert glasses'' carried forward) and the business-model indictment (''Hoover Up Your Data''). The inversion: under m75''s documented logic the privacy register should fire hardest on the continuous-capture device; it does not fire, and the register that should stand down on the de-camera''d device does not stand down.'
+      apple_arm:
+        title: 'Vergecast episode relay: segment "The Apple Watch Becomes an Always-On Listener" (within the Nilay Patel iPhone Duo episode)'
+        date: '2026-09'
+        publication: the-verge (via finance.biggo.com scraper relay)
+        attribution: 'Victoria Song, quoted verbatim within the relay; Nilay Patel co-present'
+        framing_notes: 'Apple Watch Series 12 and Ultra 4: always-on audio intelligence system that continuously listens to the wearer''s environment; double-press of the digital crown provides a 15-second rewind of recent audio; framed by Apple as a life-summarization tool producing daily recaps of conversations and meetings. Song register: measured technical skepticism. Verbatim relayed quotes: "I''ve tried various AI wearables that are listening to what you do all the time, and one thing I will say is that transcription - a lot of these devices struggle to differentiate your voice between broadcasts," she said. "I wore the Bee. It didn''t store the audio, and I read the transcripts, and I was like, there is no way anyone in this office was talking about a cow in Poughkeepsie." Song also flagged unresolved legal questions about whether always-on transcripts could be subpoenaed (Patel answered with an audible "yikes" off-mic). The skepticism is product-efficacy grounded (transcription accuracy from first-hand Bee testing) plus a legal-technical question; no privacy/stigma vocabulary (no "creepy", no "pervert", no "surveillance", no "hoover up your data"), no business-model attribution.'
+        source_url: https://finance.biggo.com/news/966fb7a3fe0edf86
+        evidence_tier: 'relay-tier (scraper relay of Vergecast episode; Song quotes verbatim within relay; mid-Sep 2026 window per relay update metadata and the Apple Sep-event Watch launch content)'
+        tone_MANUAL_ILLUSTRATIVE: -0.05
+      meta_arm:
+        carried_per_807: true
+        carried_from: 'm827 (type_b_993, Sep 25 2026); scores unchanged, no re-scoring this run'
+        sub_arm_1:
+          title: 'Meta ditches the camera on its newest smart glasses'
+          date: '2026-09-23'
+          register: stigma-frame
+          notes: 'Feed-proxy excerpt: "Walking around Meta Connect 2026, everyone''s sporting smart glasses in all sorts of shapes, colors, and sizes. It''s a marked difference here, a tech bubble where ''pervert glasses'' are not a concern. Outside Connect, the public..." The camera-free Ray-Ban Meta Audio launch is framed through the "pervert glasses" social-stigma register.'
+          source_url: https://technewstube.com/theverge/1870121/meta-ditches-camera-newest-smart-glasses/
+          evidence_tier: 'excerpt-tier (feed-attestation excerpt per #503)'
+          tone_MANUAL_ILLUSTRATIVE: -0.30
+        sub_arm_2:
+          title: 'Smart Glasses Only Make Sense When Companies Stop Trying to Hoover Up Your Data'
+          date: '2026-09-24'
+          register: business-model-attribution
+          notes: 'Vergecast segment thesis (Song, per relay attribution, co-host present): smart glasses "have split into two irreconcilable products: one that genuinely works for specific professional uses, and one that conflicts with the entire business model of the companies selling them." The data-harvesting critique attaches to the business model of the Meta archetype.'
+          source_url: https://finance.biggo.com/news/d71bedffa3fb45e3
+          evidence_tier: 'relay-tier (scraper relay of Vergecast segment per #503)'
+          tone_MANUAL_ILLUSTRATIVE: -0.35
+        band_mean: -0.325
+      illustrative_delta: 0.275
+      delta_note: 'Apple minus Meta: -0.05 - (-0.325) = +0.275. Thesis-consistent direction (Apple softer). MANUAL ILLUSTRATIVE ONLY.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. Engine NOT run. verdict directionally_supported_not_proven. no_analysis_json_update true. NOT artifact-grade. n=1 writer-level pair; hypothesis-generating only. Correlation is not causation.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction; no Vox Media-Apple licensing deal exists in corpus, so the payer prediction is moot for this pair and there is nothing to falsify. The direction is thesis-consistent (Apple softer than Meta) at the writer level. Falsification ledger holds at 37 (THIRTY-SEVENTH present in profiles/the-verge.yaml, THIRTY-EIGHTH member-claim form absent repo-wide).'
+      falsification_ledger: 37
+      confounders:
+        - 'STRONG relay-tier evidence on the Apple arm (Song quotes verbatim within a scraper relay; no first-hand episode listen) and carried relay/feed tiers on the Meta arms (m827)'
+        - 'STRONG genre/medium mismatch (conversational Vergecast segment vs reported news piece; conversational register is naturally milder than reported prose)'
+        - 'STRONG peg mismatch (Apple Watch Sep-event launch news vs Meta Connect launch news; different events with different inherent registers)'
+        - 'MODERATE role asymmetry (Song in reviewer-mode product critique on the Apple arm vs news-mode on the Meta arms; reviewer role may drive the technical register)'
+        - 'MODERATE legitimate newsworthiness gradient (Apple''s on-device/encryption claims - audio never recorded or stored, encrypted so even Apple cannot read it - give the privacy register less to bite on; Meta carries the "pervert glasses" discourse momentum from months of backlash)'
+        - 'WEAK date granularity (Apple arm dated to the Sep-2026 relay window, not an exact byline date; ordering within September is relay-inferred)'
+      counterevidence:
+        - 'Song DID raise a privacy-adjacent concern on the Apple arm (the subpoena question) - the register is not entirely absent, but it is framed as legal-technical, not stigma'
+        - 'The Sep-24 Verge piece "Everything is spying on you and there is no opting out" (Janus Rose byline per the WeSearch relay) applies an adversarial privacy register to Apple''s always-listening watch at the same outlet ("privacy blowback was immediate and inevitable", "creepy", legal-risk warnings) - the outlet is not uniformly soft on Apple'
+        - 'Song''s Bee anecdote grounds her Apple-arm skepticism in first-hand always-listening device testing - the measured register has an experiential basis independent of entity'
+        - 'Apple''s technical claims (15-second rolling buffer, high-level summaries without speaker identification, audible chime, encryption) give a legitimate technical basis for milder treatment'
+        - 'The direction IS thesis-consistent at +0.275, which supports rather than falsifies the register-selectivity family; a null delta would have been the falsifying outcome for this pair'
+      cross_refs:
+        - '#75: EXTENDS mechanism 75 (Song''s privacy vocabulary activates for Meta, not competitors) into the audio modality - the first always-listening-device test of the register-selectivity finding'
+        - '#827: second temporal extension of the type_b_993 Connect-week pair (Sep 23/24 2026); same journalist, same outlet, same month'
+        - '#1068: MIRROR-CONTRAST of m872 (Cherlynn Low applies an equally permissive register to Apple''s always-listening watch +0.35 and Meta''s camera glasses +0.30, delta +0.05 register constancy) - Song shows the asymmetric counterpart on the same device-pair class'
+        - 'Janus Rose Verge Sep-24 "Everything is spying on you and there''s no opting out" (relay https://wesearch.press/s/everything-is-spying-on-you-and-theres-no-opting-out-657c98f3): BOUNDS the finding - the adversarial privacy register IS available at the outlet for Apple''s always-listening watch, so Song''s measured register is a writer-level choice, not an outlet-level constraint'
+        - '#1082 m880: the register-availability falsification on the Vox-deal partner (OpenAI) is the outlet-level companion - adversarial registers are available at Vox Media for deal partners AND for Apple; writer-level variance (Song) sits inside outlet-level availability'
+        - '#1078: writer-level paired-piece design precedent (Ward deal-gradient falsification)'
+        - 'm712: briefed-relay bound does not apply (both arms un-briefed commentary)'
+      research_method: '6 browser.search query sets this run (Lauren Goode WIRED Meta glasses Sep 2026 - REJECTED: Goode saturated in corpus (m436/m447, asymmetry 0.87); Lauren Goode WIRED OpenAI 2026 - REJECTED: same saturation, surfaced own-repo commits (circular); Adi Robertson Verge Meta glasses Sep 2026 - REJECTED: no clean same-writer Sep-2026 pair, surfaced the webpronews creep-factor relay context and the WeSearch Luna provenance with canonical Verge URL; Adi Robertson Verge OpenAI/Apple 2026 - REJECTED: surfaced the pre-sequence-era f7d1876 Type B (already in corpus); theverge.com Apple Watch always-listening Sep 24 2026 Victoria Song - SELECTED: surfaced the WeSearch relay of the Verge Sep-24 Apple-watch piece and the finance.biggo.com Vergecast relay carrying Song''s verbatim Apple Watch always-listening quotes; Verge Apple Watch always listening author - SELECTED: confirmed Song''s verbatim quotes in the biggo relay ("cow in Poughkeepsie", subpoena "yikes"). 0 browser.open per #503. Pre-commit novelty greps per #715 (see novelty): the two novel URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.'
+      source_urls:
+        - https://finance.biggo.com/news/966fb7a3fe0edf86
+        - https://wesearch.press/s/everything-is-spying-on-you-and-theres-no-opting-out-657c98f3
+        - https://technewstube.com/theverge/1870121/meta-ditches-camera-newest-smart-glasses/
+        - https://finance.biggo.com/news/d71bedffa3fb45e3
+      novelty: 'SECOND dedicated mechanism-id-sequence Type B mechanism on Victoria Song (first: m827 type_b_993). Zero test_type_b_1088 files on disk (glob); no "Type B #1088" in git log (--grep); max numeric mechanism_id 883 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric 884 mechanism_id keys in profiles/ pre-commit; zero underscore-form and dash-form 884 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); block key `type_b_1088_victoria_song_verge_apple_watch_always_listening_vs_meta_audio_register_inversion_sep30` zero-hit repo-wide pre-commit; zero victoria_song type_b_1088 competitor_coverage block pre-commit; the two novel URLs (finance.biggo.com/news/966fb7a3fe0edf86 Vergecast relay, wesearch.press/s/everything-is-spying-on-you-and-theres-no-opting-out-657c98f3 Verge Sep-24 relay) zero-hit repo-wide pre-commit (git grep -F); in-corpus carried URLs (technewstube Meta-ditches-camera, finance.biggo.com/news/d71bedffa3fb45e3 Vergecast relay) from m827; THIRTY-EIGHTH member-claim form absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       verification:
         yaml_parse_clean: true
         ascii_only: true
