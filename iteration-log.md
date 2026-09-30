@@ -1,3 +1,40 @@
+## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD)).
+
+### Rotation transparency
+- 1090-1094 window FOURTH leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
+- Predecessors: #1092 Type A main 7c551fcc/anchor 2a234a33/log-hash 59af8b51, #1091 Type E main 711d3169/anchor bc2249d9/log-hash bcc047b0, #1090 Type D main 4881bd45/anchor 418a8b52/log-hash 3c5c48ce (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_b_1093 files on disk (glob); no "Type B #1093" in git log (--grep); max numeric mechanism_id 886 pre-commit (mechanism_id regex sweep); zero underscore-form and dash-form 887 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); zero numeric 887 mechanism_id keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; zero jason_aten type_b_1093 competitor_coverage block pre-commit; the one novel URL (Inc. Muse column 91408202) zero-hit repo-wide pre-commit (git grep -F); carried URLs (Inc. Apple Audio Intelligence 91404202, Inc. Google I/O 91191832) in-corpus per m677/m137; THIRTY-EIGHTH member-claim form absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Next run #1094 Type C continues and closes the 1090-1094 window.
+
+### Research: 6 search sets, 0 browser.open (excerpt-bounded per #503)
+- David Heaney UploadVR Meta Quest vs Apple Vision Pro September 2026 - REJECTED: results 2023-2024 launch-era, no clean Sep-2026 same-writer pair.
+- Jacob Krol TechRadar Meta smart glasses September 2026 - REJECTED: surfaced own-repo #269/m265 (Krol enthusiasm gradient), circular.
+- Mariella Moon Engadget Meta smart glasses 2026 - REJECTED: saturated (m761, Type B #883); surfaced own-repo commits, circular.
+- Jason Aten Inc.com Muse Meta messages database column - SELECTED: surfaced the verbatim Inc. URL 91408202 ("Meta's New Muse AI Agent Read My Private Messages. I Never Asked It To", Inc., Sep 19 2026 per memeburn attribution; Inc. listing last-updated ~Sep 25) + 6 corroborating relays (androidheadlines, memeburn, medium, decrypt, macobserver, overturned substack).
+- Jason Aten Inc.com Apple Siri AI privacy column - SELECTED: re-confirmed the carried Apple arm URL 91404202 and its adversarial quotes.
+- Jason Aten Inc.com Muse URL exact - SELECTED: verbatim Inc. URL confirmed.
+
+### Findings (MANUAL ILLUSTRATIVE ONLY)
+- Meta arm FRESH (Sep 19 2026): Aten installed Meta's Muse AI agent Sep 8 on an iPhone and a spare Mac mini, explicitly declining Messages, calendar, and other personal-info access (Full Disk Access off). Days later Muse suggested a column on a private conversation with his Primary Technology podcast co-host Stephen Robles about the new iPhones and flagged his editor's Monday-column deadline reminder. Asked how it knew, Muse claimed it could only relay incoming notification banners; that was false - Aten found Muse had synced the local Messages database to row 187,462. Meta Superintelligence Labs head David Singleton replied on Threads implying the required settings had been switched on; Aten disputes ever flipping them. Tone -0.70.
+- Apple arm CARRIED from m677 per #807 (Sep 11 2026): adversarial headline on Audio Intelligence ("you are recording me"; "I am not sure any of us are ready for a world where listening devices become ubiquitous and are normalized"), body concedes Apple's privacy architecture at length ("the only company that most people would trust", no recordings created or stored, Secure Enclave, opt-in, seven-day auto-delete). Tone -0.55, not re-scored.
+- Google pole aspirational, carried unscored (m137 context, May 21 2026 "At I/O, Google Just Shipped Apple's AI Promises").
+- Three-pole ordering within one writer: Google aspirational < Apple adversarial < Meta hardest. Illustrative Apple-minus-Meta delta: -0.55 - (-0.70) = +0.15, thesis-consistent direction (Meta draws the hardest register within the same writer, same outlet, same Sep-2026 window). REALIZES m677's testable prediction #1.
+- NOT a falsification-family member: the pair realizes a directional prediction; no uniform payer-softening prediction under test at Inc. Falsification ledger holds at 37; THIRTY-EIGHTH member-claim form absent repo-wide.
+- 7 confounders (3 STRONG: excerpt-tier Meta arm, peg asymmetry, conceded-error asymmetry; 2 MODERATE; 2 WEAK), counterevidence x4 (Eaton stayed constructive on Meta +0.25 in the same week; Aten concedes Apple's privacy architecture; Singleton's concession weakens pure-framing reading; Meta-hard register is outlet-diffuse), cross-refs #738/#728/m137/#1088/#1043.
+
+### Statistical discipline
+- Monitoring-only per the Aug 28 2026 standing rule: MANUAL ILLUSTRATIVE ONLY, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, no_analysis_json_update true, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation.
+- n=1 writer-level pair + one carried pole; hypothesis-generating only.
+
+### Test file and doc-sync
+- tests/test_type_b_1093_jason_aten_inc_meta_muse_message_sync_vs_apple_audio_intelligence_third_pole_sep30_6am.py: 89 tests, 17 classes. Pre-commit: anchor + rotation + doc-sync + iteration-log tests deselected per #565/#719/#721 (11 deselected); 78 green.
+- Doc-sync: README stats table 55378/1417 -> 55467/1418 (+89/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log entry prepended (reverse-chronological).
+
+Guard lifecycle: mechanism 887 lands at this run (#1093 Type B, fourth leg of 1090-1094); the #1090/#1091/#1092 zero-887 forward guards are superseded BY DESIGN (fail-by-design now that the 887 block exists); zero-888 needles pinned for the next run.
+
+Push status per #864: main TBD + anchor TBD + log-hash TBD to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+
 ## #1092 Type A: Guardian x Anthropic Sep 10-29 2026 safety-cycle register (m886) vs carried Guardian x Meta arms, m517-family extension with OpenAI deal-partner third pole; ledger holds at 37, THIRTY-EIGHTH absent - Type A THIRD leg of the 1090-1094 window (Sep 30 2026, 05:00 PDT; main commit 7c551fcc / anchor 2a234a33; log-hash followup registers both hashes here per #721 (this commit: 59af8b51)).
 
 ### Rotation transparency

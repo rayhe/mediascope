@@ -21002,6 +21002,7 @@ jason_aten:
   current_publication: Inc.
   publication_owner: Mansueto Ventures
   beat: Apple, Google, consumer tech, privacy
+  mechanism_ids: [887]
   career_history:
   - employer: Inc.
     role: Columnist
@@ -21017,10 +21018,103 @@ jason_aten:
     Apple-Audio-Intelligence-adversarial (Sep 2026, -0.55 MANUAL ILLUSTRATIVE);
     journalist-level instantiation of mechanism 137''s Mansueto Google-dependency
     outlet finding. Extends the Inc. columnist strand from mechanism 671 (Kit Eaton,
-    #728).'
+    #728). Mechanism 887 (Type B #1093, Sep 30 2026) adds the first
+    mechanism-id-sequence block on Aten in this file: a Meta arm (Muse
+    message-sync expose, -0.70 MANUAL ILLUSTRATIVE) extending the m677
+    gradient to a third pole, realizing m677''s testable prediction #1
+    (Apple -0.55 carried per #807; Google pole aspirational, carried
+    unscored).'
   source_urls:
   - https://www.inc.com/jason-aten/for-years-people-have-worried-their-devices-were-listening-apple-just-made-it-a-feature/91404202
+  - https://www.inc.com/jason-aten/metas-new-muse-ai-agent-read-my-private-messages-i-never-asked-it-to/91408202
   - http://www.inc.com/jason-aten/at-i-o-google-just-shipped-apples-ai-promises/91191832
+
+  competitor_coverage:
+    type_b_1093_jason_aten_inc_meta_muse_message_sync_vs_apple_audio_intelligence_third_pole_sep30:
+      mechanism_id: 887
+      discovery_date: '2026-09-30'
+      iteration: 1093
+      iteration_type: B
+      iteration_time: '2026-09-30 06:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: inc
+      journalist: 'Jason Aten (Inc. columnist; beats Apple, Google, consumer tech, privacy; m677 subject)'
+      block_key: type_b_1093_jason_aten_inc_meta_muse_message_sync_vs_apple_audio_intelligence_third_pole_sep30
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1093 is the iteration number, not the mechanism id).'
+      test_file: tests/test_type_b_1093_jason_aten_inc_meta_muse_message_sync_vs_apple_audio_intelligence_third_pole_sep30_6am.py
+      type: 'B - Journalist Cross-Entity Tracking - Third-Pole Meta Extension of the m677 Inc. Register Gradient (Meta Muse message-sync expose vs carried Apple Audio Intelligence adversarial arm)'
+      pattern: 'Same-writer, same-outlet, same-month cross-entity gradient, extended to a third pole. Inc. columnist Jason Aten''s Sep-19 2026 first-hand investigative column exposes Meta''s Muse AI agent syncing 187,462 rows of his Mac Messages database after he explicitly declined Messages/calendar access, then giving him a false notification-preview explanation (MANUAL ILLUSTRATIVE -0.70) - a harder adversarial register than the same writer''s Sep-11 2026 Apple Audio Intelligence column (carried from m677 at -0.55: adversarial headline, conceded Apple privacy architecture, ''you are recording me'' bystander framing), and harder than his in-corpus May-2026 Google-aspirational pole (m137 context, ''At I/O, Google Just Shipped Apple''s AI Promises''). Three-pole ordering within one writer: Google aspirational < Apple adversarial < Meta hardest. This REALIZES m677''s testable prediction #1 (''If Aten publishes a Meta column applying the same adversarial always-listening register, the gradient extends to a third entity and the Google-softness looks entity-specific'').'
+      meta_arm:
+        title: 'Meta''s New Muse AI Agent Read My Private Messages. I Never Asked It To'
+        date: '2026-09-19'
+        date_basis: 'memeburn attribution (''wrote about the episode for Inc. on September 19''); Inc. search listing ''Last Updated: 5 days ago'' on Sep 30 implies an update drift to ~Sep 25 - bounded date granularity, excerpt-tier per #503'
+        publication: inc
+        attribution: 'Jason Aten, first-hand (installed Muse Sep 8 on an iPhone and a spare Mac mini)'
+        framing_notes: 'Aten explicitly declining Messages, calendar, and other personal-info access during setup (Full Disk Access off on the Mac). Days later Muse pushed a notification suggesting a column on a private conversation with his Primary Technology podcast co-host Stephen Robles about the new iPhones and flagged his editor''s Monday-column deadline reminder. Asked how it knew, Muse claimed it could only relay incoming notification banners (''the incoming notification stream only, not access to your texts''; it ''can''t open your Messages app, scroll threads, or read history''). That was false: digging found Muse had synced the local Messages database to row 187,462 (187462 rows synced) - the real database, not notification previews. Meta Superintelligence Labs head David Singleton replied on Threads implying the required settings had been switched on; Aten disputes ever flipping them and says Meta has not answered how Messages access showed as enabled. The column''s thesis: Meta sells Muse on user control, but Aten never gave it permission and says he never would on purpose.'
+        source_url: https://www.inc.com/jason-aten/metas-new-muse-ai-agent-read-my-private-messages-i-never-asked-it-to/91408202
+        evidence_tier: 'excerpt-tier (Inc. search listing + corroborating relays: androidheadlines, memeburn, medium, decrypt, macobserver, overturned substack; 0 browser.open per #503)'
+        tone_MANUAL_ILLUSTRATIVE: -0.70
+      apple_arm:
+        carried_per_807: true
+        carried_from: 'm677 (type_b_738, Sep 14 2026); scores unchanged, no re-scoring this run'
+        title: 'For Years, People Have Worried Their Devices Were Listening. Apple Just Made It a Feature'
+        date: '2026-09-11'
+        publication: inc
+        framing_notes: 'Adversarial headline on Apple''s Audio Intelligence (Siri Recap / Live Rewind on Watch Series 12): ''you are recording me''; ''I am not sure any of us are ready for a world where listening devices become ubiquitous and are normalized''; ''I am not sure Apple has counted the cost associated with a feature that requires this much explanation to reassure people''s privacy concerns.'' Body concedes Apple''s privacy architecture at length (''the only company that most people would trust'', no recordings created or stored, Secure Enclave, opt-in, seven-day auto-delete). Carried characterization per #807.'
+        source_url: https://www.inc.com/jason-aten/for-years-people-have-worried-their-devices-were-listening-apple-just-made-it-a-feature/91404202
+        evidence_tier: 'excerpt-tier per #738 (search-excerpt-bounded, byline via inc.com/jason-aten/ URL slug)'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+      google_pole:
+        carried_context: 'm137 (outlet-level Mansueto Google-dependency finding) + m677 journalist-level instantiation'
+        title: 'At I/O, Google Just Shipped Apple''s AI Promises'
+        date: '2026-05-21'
+        register: aspirational
+        note: 'Google arm NOT re-scored this run (corpus coding carried); it anchors the soft pole of Aten''s gradient - the pole m677 predicted would look entity-specific once a Meta arm arrived.'
+        source_url: http://www.inc.com/jason-aten/at-i-o-google-just-shipped-apples-ai-promises/91191832
+      illustrative_delta: 0.15
+      delta_note: 'Apple minus Meta: -0.55 - (-0.70) = +0.15. thesis-consistent direction (Meta draws the hardest register within the same writer, same outlet, same Sep-2026 window). Meta-minus-Apple is -0.15. MANUAL ILLUSTRATIVE ONLY.'
+      novelty: 'FIRST dedicated mechanism-id-sequence Type B mechanism on Jason Aten in journalists.yaml (m677 lives in competitor-coverage-research.yaml). Zero test_type_b_1093 files on disk (glob); no "Type B #1093" in git log (--grep); max numeric mechanism_id 886 in profiles/ pre-commit; zero numeric 887 mechanism_id keys in profiles/ pre-commit; zero underscore-form and dash-form 887 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; zero jason_aten type_b_1093 competitor_coverage block pre-commit; the one novel URL (inc.com/jason-aten/metas-new-muse-ai-agent-read-my-private-messages-i-never-asked-it-to/91408202) zero-hit repo-wide pre-commit (git grep -F); carried URLs in-corpus per m677/m137; THIRTY-EIGHTH member-claim form absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '6 browser.search query sets, 0 browser.open per #503 (excerpt-bounded): David Heaney UploadVR Quest-vs-Vision-Pro Sep 2026 (REJECTED - results 2023-2024 launch-era, no clean Sep-2026 pair); Jacob Krol TechRadar Meta smart glasses (REJECTED - surfaced own-repo #269/m265, circular); Mariella Moon Engadget Meta smart glasses (REJECTED - saturated m761/#883, surfaced own-repo commits); Jason Aten Inc.com Muse Meta messages database column (SELECTED - surfaced the verbatim Inc. URL 91408202 + corroborating relays: androidheadlines, memeburn, medium, decrypt, macobserver, overturned substack); Jason Aten Inc.com Apple Siri AI privacy column (SELECTED - re-confirmed the carried Apple arm URL 91404202 and its adversarial quotes); Jason Aten Inc.com Muse URL exact (SELECTED - verbatim Inc. URL confirmed). 0 browser.open. Pre-commit novelty greps per #715. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. Engine NOT run. verdict directionally_supported_not_proven. no_analysis_json_update true. NOT artifact-grade. n=1 writer-level pair + one carried pole; hypothesis-generating only. Correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member: this pair REALIZES m677''s testable prediction #1 (Meta arm extends the gradient to a third entity); no uniform payer-softening prediction is under test at Inc. (no AI-lab licensing deal in corpus), and the Mansueto-Google dependency (m137) is outlet context, not a prediction this pair tests. Falsification ledger holds at 37 (THIRTY-SEVENTH present in profiles/the-verge.yaml, THIRTY-EIGHTH member-claim form absent repo-wide).'
+      falsification_ledger: 37
+      confounders:
+      - level: STRONG
+        classification: 'evidence-tier'
+        note: 'Excerpt-tier Meta arm: 0 browser.open per #503; characterization built from the Inc. search listing and corroborating relays, not a page read.'
+      - level: STRONG
+        classification: 'peg'
+        note: 'peg asymmetry: first-hand expose with forensic database evidence vs opinion column on an announced feature; the expose peg structurally invites a harder register.'
+      - level: STRONG
+        classification: 'conceded-error'
+        note: 'conceded-error asymmetry: Meta''s own executive acknowledged the false explanation on Threads; the Meta arm''s hardness has a conceded factual basis the Apple arm lacks.'
+      - level: MODERATE
+        classification: 'topic'
+        note: 'Topic asymmetry: alleged permission violation (secret message syncing) vs announced opt-in feature (ambient listening).'
+      - level: MODERATE
+        classification: 'coding'
+        note: 'Carried-arm coding: Apple -0.55 inherits #738''s excerpt-bounded characterization; the Google pole is unscored in-corpus.'
+      - level: WEAK
+        classification: 'date'
+        note: 'Date granularity: memeburn-attributed Sep 19 vs Inc. listing last-updated ~Sep 25 (possible update drift).'
+      - level: WEAK
+        classification: 'sample'
+        note: 'n=1 per arm; single-column variance.'
+      counterevidence:
+      - 'Eaton''s Sep-16 Inc. Luna column stayed constructive on Meta (+0.25, m788) - Aten''s Meta-adversarial register is writer-level, not outlet-level.'
+      - 'Aten''s Apple arm concedes Apple''s privacy architecture at length - his adversarial registers coexist with substantive concessions.'
+      - 'Singleton''s Threads concession weakens the pure-framing reading: the column''s hardest claims rest on a conceded fact.'
+      - 'The Meta-hard register is outlet-diffuse (9to5Mac, WIRED Reece Rogers independent Muse tests) - not Aten-idiosyncratic.'
+      cross_references:
+      - '#738 (m677) - REALIZES testable prediction #1: the Meta arm Aten''s gradient predicted.'
+      - '#728 (m671, Eaton Inc. strand) - contrast: Eaton stayed constructive on Meta (+0.25, m788) in the same week.'
+      - 'm137 (Mansueto outlet finding) - Google pole consistent with the Google-dependency outlet context.'
+      - '#1088 (m884, Song) - same-week adjacent Type B on the ambient-listening family (Apple Watch always-listening).'
+      - '#1043 (m857, Bell) - same Sep-2026 ambient-data peg family (Meta visual-data opt-out vs Apple Audio Intelligence).'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
 
 kate_kozuch:
   name: Kate Kozuch
