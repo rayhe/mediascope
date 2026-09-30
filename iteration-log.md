@@ -32,7 +32,7 @@
 
 Guard lifecycle: mechanisms 883/884/885 landed at #1087/#1088/#1089; the #1085 zero-882, #1086 zero-883/max-882, and #1087 zero-884 numeric needles are superseded BY DESIGN (this run's zero-886 needles PASS; they fail BY DESIGN when mechanism 886 lands at a future leg).
 
-Push status per #864: TBD.
+Push status per #864: main 4881bd45 + anchor 418a8b52 + log-hash 3c5c48ce + log-hash tweak b74c588a all pushed to origin main and ls-remote-verified (local HEAD b74c588a == remote HEAD b74c588a); concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1089 Type C: OpenAI x Lenfest Institute AI fellowship $10M renewal (Sep 28 2026) - POST-LITIGATION-GRANT-RENEWAL as the TWENTY-FIFTH relationship direction; mechanism 885; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH member-claim form absent) - Type C FIFTH and CLOSING leg of the 1085-1089 window (Sep 30 2026, 02:00 PDT; main commit a98d10d8 / anchor 497d90cd; log-hash followup registers both hashes here per #721 (this commit: 3bc0a638)).
 
