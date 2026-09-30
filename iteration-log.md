@@ -1,4 +1,4 @@
-## #1094 Type C: Anthropic leaked draft S-1 $518B commitment ledger - DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction (mechanism 888); partial S-1 realization of m864's demand-recycling proof test; ledger holds at 37, THIRTY-EIGHTH absent - Type C FIFTH and CLOSING leg of the 1090-1094 window (Sep 30 2026, 07:00 PDT; main commit 0a68923d / anchor 86a6e27c; log-hash followup registers both hashes here per #721 (this commit: abc34c68)).
+## #1094 Type C: Anthropic leaked draft S-1 $518B commitment ledger - DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction (mechanism 888); partial S-1 realization of m864's demand-recycling proof test; ledger holds at 37, THIRTY-EIGHTH absent - Type C FIFTH and CLOSING leg of the 1090-1094 window (Sep 30 2026, 07:00 PDT; main commit 0a68923d / anchor 86a6e27c; log-hash followup registers both hashes here per #721 (this commit: abc34c68); doc-sync 55467/1418 -> 55526/1419 (+59/+1)).
 
 ### Rotation transparency
 - 1090-1094 window FIFTH and CLOSING leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
