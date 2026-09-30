@@ -18018,6 +18018,65 @@ journalists:
           targets: Ring (Amazon), Nest (Google)
           meta_glasses_targeted: false
           framing: privacy_adversarial_toward_amazon_google
+    type_b_1103_nicole_nguyen_wsj_muse_trust_history_vs_claude_password_agent_functional_caution_sep30:
+      mechanism_id: 893
+      date_analyzed: '2026-09-30'
+      type: 'Type B: Journalist Cross-Entity Tracking'
+      iteration: 1103
+      block_key: type_b_1103_nicole_nguyen_wsj_muse_trust_history_vs_claude_password_agent_functional_caution_sep30
+      journalist: Nicole Nguyen
+      publication: wall-street-journal
+      temporal_extension: 'Meta arm Sep 29 2026; Anthropic arm Jul 16 2026; 75 days apart. Both arms inside Nguyen''s WSJ personal-tech column beat; same byline, same publication, AI-agent hands-on review genre on both sides.'
+      novelty: 'FIRST mechanism on Nguyen''s Meta x Anthropic AI-agent pair. The Meta Muse arm (Sep 29 2026) is FRESH and NOVEL to the corpus (zero repo-wide hits pre-commit). The Anthropic Claude arm (Jul 16 2026) is IN-CORPUS per #522 as the Perplexity-facing security-threat register (-0.4); this run documents the Claude-facing register split within that same piece for the first time. Distinct from #693/m650 (NINETEENTH; Apple Duo vs Meta WhatsApp register constancy) - same journalist, new entity pair, new falsification member.'
+      meta_arm:
+        title: 'I Tried Meta''s Muse AI Agent. It''s Helpful and Scary at the Same Time.'
+        date: '2026-09-29'
+        url: https://www.wsj.com/tech/personal-tech/meta-muse-ai-agent-review-ab956101
+        byline: Nicole Nguyen
+        entity: Meta
+        peg: Meta Muse AI agent hands-on review (standalone app beta, iOS/Android, voice-first)
+        register_summary: 'Mixed-positive product enthusiasm gated by entity-rooted trust framing. Product register: "first app I''ve experienced for normal people"; "successfully hid the complexity of agentic AI"; "I''m reassured... Meta can make money without using my data or dumping ads" (subscription/transaction path). Trust register: "trust issues with Meta, the ad-powered company... history of privacy scandals and data-use controversies"; closing line "I''m going to be cautious and reset Muse for now." The caution is anchored in Meta''s documented corporate record, not in the agent''s observed behavior (the agent "did everything I asked").'
+        manual_illustrative_tone: 0.10
+        novelty: 'FRESH arm. Zero repo-wide hits pre-commit (URL, title, ab956101). Novel to the corpus.'
+        verification: 'Excerpt-bounded per #503 (WSJ paywalled; 0 browser.open this run). Byline via advisorstream mirror sign-off "Write to Nicole Nguyen at nicole.nguyen@wsj.com". Date Sep 29 2026 via tradingview DJN wire 2026-09-29. Quotes from relay excerpts (advisorstream, tradingview, webpronews context via #1098). All URLs copied verbatim from search Full-URL listings; no canonical URLs constructed.'
+      anthropic_arm:
+        title: 'I Gave an AI Agent Access to My Passwords. Here''s What Happened.'
+        date: '2026-07-16'
+        url: https://www.wsj.com/tech/ai/1password-for-claude-ai-agents-password-manager-111a7a8a
+        byline: Nicole Nguyen
+        entity: Anthropic (Claude-facing register)
+        peg: 1Password MCP integration for Claude (and ChatGPT) - AI agent with password-vault access, tested July 2026
+        carried_per_807: 'The in-corpus characterization (profiles/news-corp.yaml, #522) scores the Perplexity-facing register of this piece at -0.4 (security-threat register, Perplexity-facing). That Perplexity-facing -0.4 is CARRIED un-rescored. This block documents ONLY the Claude-facing register split within the same piece, which was never separately scored.'
+        register_summary: 'Functional caution with an explicit clean bill for the Claude-facing register. Claude "perused my retirement investment mix" (found 0.67% expenses, high by advisor standards); the piece''s Claude verdict: "I was glad to know about the expenses, and Claude didn''t do anything nefarious, but I don''t think I''ll give it the reins to my retirement account again. Some chores are better left to humans." The caution is functional (agent competence limits) not entity-rooted (no Anthropic trust-history framing appears in the Claude-facing passages).'
+        manual_illustrative_tone: 0.20
+        novelty: 'IN-CORPUS arm (URL present in profiles/news-corp.yaml + tests/test_type_a_522 per #522). The Claude-facing register split is NEWLY documented here; the Perplexity-facing -0.4 is carried.'
+        verification: 'Excerpt-bounded per #503. In-corpus citation: profiles/news-corp.yaml line 1976 (Perplexity coverage_examples, tone -0.4, security-threat register Perplexity-facing, from #522). Claude-facing quotes from search excerpt.'
+      illustrative_delta: 'Anthropic minus Meta: +0.20 - (+0.10) = +0.10. The paid cooperative counterparty (Meta, $50M/yr News Corp licensing) draws the HARDER trust register than the zero-cooperative-deal entity (Anthropic).'
+      financial_context: 'Correlation, not causation. News Corp balanced financial ties: $50M/yr Meta + $50M/yr OpenAI AI licensing deals (in-corpus per #337; Meta deal m549 per #834; OpenAI deal m519). Anthropic has $0 cooperative News Corp licensing (only the involuntary $1.5B Bartz settlement revenue vector). The deal-softness prediction (paid counterparty draws softer coverage) FAILS on ordering: the paid counterparty''s arm carries the harder entity-rooted trust register (+0.10) while the zero-deal entity''s Claude-facing arm carries the softer functional-caution register (+0.20). The register ordering tracks corporate record (Meta''s documented privacy-scandal history vs Anthropic''s none), not the payment.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven. p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant false. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'THIRTY-EIGHTH falsification-family member. Same-journalist, same-publication byline-isolated pair: Nguyen applies a harder entity-rooted trust register to the paid cooperative counterparty (Meta, +0.10) than to the zero-cooperative-deal entity (Anthropic, +0.20). The journalist-level deal-softness prediction (News Corp $50M/yr Meta deal -> softer Meta coverage) fails on her byline - the register ordering is the inverse of what the payment predicts. This extends #693''s NINETEENTH (Nguyen register constancy: Apple iPhone Duo +0.40 vs Meta WhatsApp +0.15, genre-bound) into the AI-agent review genre and the Meta x Anthropic entity pair. Correlation, not causation. No analysis.json update warranted.'
+      falsification_ledger: '38'
+      confounders:
+      - '[STRONG] Factual-substrate confounder: Meta''s trust-issues framing is anchored in documented corporate history (privacy scandals, data-use controversies, FTC record, $18B children-addiction settlement Aug 2026); Anthropic has no comparable trust-history record in corpus. The register difference tracks the factual substrate, not necessarily the payment - the deal-softness prediction fails, but the alternative explanation (record-rooted register) is fully available.'
+      - '[STRONG] Within-piece entity split: the July piece''s in-corpus -0.4 is Perplexity-facing (security-threat register); the +0.20 documented here is Claude-facing (functional caution + clean bill). The pair compares Nguyen''s Meta-facing register against her Claude-facing register, not against the piece''s headline Perplexity register. The entity-split read is excerpt-bounded and must not be presented as the piece''s overall tone.'
+      - '[MODERATE] Temporal gap: 75 days (Jul 16 vs Sep 29 2026). Register drift across the gap cannot be ruled out, though both arms sit inside the personal-tech AI-agent review beat.'
+      - '[MODERATE] Excerpt-tier on both arms: WSJ paywalled; 0 browser.open per #503. Meta arm bounded by relay excerpts (advisorstream mirror with byline sign-off, tradingview DJN wire, webpronews context). Anthropic Claude-facing register bounded by search excerpt + in-corpus #522 bounded excerpt. Full-text reads could shift either score.'
+      - '[WEAK] Degenerate n=1 per arm per #638/#643. Single pair; no distributional claim.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: #693/m650 - Nguyen''s Meta WhatsApp arm WAS positive (+0.15, Meta-positive competitive vs Apple); her Meta register is not uniformly hard. The trust-history register here is peg-specific (Muse data-collection agent), not a blanket Meta-hardening.'
+      - 'COUNTEREVIDENCE: mechanism_67 - Nguyen''s surveillance register targets Amazon/Google (Ring, Nest) while sparing Meta glasses; the trust register documented here is entity-record-specific, not blanket cross-entity softness or hardness.'
+      - 'COUNTEREVIDENCE: The +0.10 delta is small; both arms sit in the positive-mixed band. The falsification is on the DEAL prediction''s ordering (paid counterparty harder), not on a large register gap.'
+      cross_references:
+      - '#693/m650 (NINETEENTH falsification-family member; Nguyen register constancy Apple Duo +0.40 vs Meta WhatsApp +0.15; this run extends the lineage to Meta x Anthropic AI-agent pair)'
+      - '#522 (in-corpus Perplexity-facing -0.4 for the Jul 16 piece; Perplexity register carried un-rescored)'
+      - '#807 (carry convention for in-corpus arms)'
+      - 'm519/m549/#337/#834 (News Corp balanced-deal baseline: $50M/yr Meta + $50M/yr OpenAI; Anthropic $0 cooperative)'
+      - '#503 (excerpt-bounded research rule; 0 browser.open)'
+      - '#638/#643 (degenerate n=1 convention)'
+      research_method: 'Pre-run browser.search candidate selection (4 query sets: WSJ Meta Muse Sep 2026 SELECTED as fresh Meta arm; WSJ Anthropic Jul 2026 1Password-Claude SELECTED as in-corpus Anthropic arm via #522; WSJ Meta Muse weeklong REJECTED as thin relay; general Meta Muse context via #1098 webpronews). 0 browser.open this run (WSJ paywalled; excerpt/relay-bounded per #503). Novel Meta-arm URL (ab956101) zero-hit repo-wide pre-commit; Anthropic-arm URL (111a7a8a) documented in-corpus. Pre-commit novelty verified: zero test_type_b_1103 files on disk (glob); no Type B #1103 in git log (--grep); max numeric mechanism_id 892; zero underscore/dash/numeric 893 keys in profiles/ (format-built needles per #715); no #1103 row in README/ARCHITECTURE test tables (the 1103 hits are the Sep-15 file-count 39996/1103 in the #775 entry). ASCII-only, no em dashes.'
+      verification: 'All facts carry source URLs or citations. URLs copied verbatim from search Full-URL listings, never constructed. Meta arm: https://www.wsj.com/tech/personal-tech/meta-muse-ai-agent-review-ab956101 (byline via advisorstream mirror sign-off; date via tradingview DJN 2026-09-29 wire). Anthropic arm: https://www.wsj.com/tech/ai/1password-for-claude-ai-agents-password-manager-111a7a8a (in-corpus per #522, profiles/news-corp.yaml line 1976). Financial: m519/m549/#337/#834 in-corpus.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
 - name: Gerrit De Vynck
   current_publication: washington-post
   role: AI and algorithms reporter
