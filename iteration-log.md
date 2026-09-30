@@ -1,6 +1,6 @@
 ## #1087 Type A: Verge x Anthropic Sep-2026 pacing-policy + IPO-prospectus register extension (mechanism 883; m557/m766 extension, m880 companion)
 
-2026-09-30 00:00 PDT, iteration_type "A", **THIRD leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard).
+2026-09-30 00:00 PDT, iteration_type "A", **THIRD leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard; main commit db6b141d / anchor 31d58d63; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
 
 ### Rotation transparency
 - 1085-1089 window THIRD leg (per #565: D #1085 -> E #1086 -> A #1087 -> B #1088 -> C #1089)
