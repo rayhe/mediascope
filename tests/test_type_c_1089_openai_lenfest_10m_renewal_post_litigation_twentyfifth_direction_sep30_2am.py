@@ -38,6 +38,10 @@ PREDECESSORS = [
     ("#1088 Type B", "e9b32ea2", "c439f44f", "1863d076"),
 ]
 
+# #565 anchor: all-zeros placeholder until the anchor followup patches it to
+# the real main commit SHA.
+ANCHORED_SHA = "a98d10d8c1be707fa70fc503a220338f4afe475a"
+
 
 def load_all_docs(path):
     with open(path, "r", encoding="utf-8") as fh:
@@ -67,11 +71,20 @@ class TestNoveltyAnchorTypeC1089:
             capture_output=True, text=True, check=True)
         assert out.stdout.strip() == "", out.stdout
 
-    def test_anchor_block_key_unique(self):
+    def test_anchor_sha_pinned_and_logged(self):
+        # Deselected pre-commit per #565: ANCHORED_SHA carries the all-zeros
+        # placeholder until the anchor followup patches it to the real main
+        # commit SHA; the log-hash followup registers it in the log header.
+        assert ANCHORED_SHA != "0" * 40
+        assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA)
         out = subprocess.run(
-            ["git", "-C", REPO, "grep", "-F", MECH_KEY, "HEAD"],
+            ["git", "-C", REPO, "rev-parse", ANCHORED_SHA],
             capture_output=True, text=True)
-        assert out.returncode != 0, "block key already present in HEAD"
+        assert out.returncode == 0 and out.stdout.strip() == ANCHORED_SHA
+        log = open(os.path.join(REPO, "iteration-log.md"), encoding="utf-8").read()
+        header_start = log.index("## #1089 Type C")
+        header_end = log.index("\n", header_start)
+        assert ANCHORED_SHA[:8] in log[header_start:header_end]
 
     def test_novelty_claims_documented(self):
         block = tail_block()
