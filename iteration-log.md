@@ -1,4 +1,4 @@
-## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit 7fbc7f46 / anchor 2796e83b; log-hash followup registers both hashes here per #721 (this commit: TBD)).
+## #1093 Type B: Jason Aten (Inc.) x Meta Muse message-sync expose (m887, MANUAL ILLUSTRATIVE -0.70) vs carried x Apple Audio Intelligence adversarial arm (-0.55) - third-pole extension of the m677 Inc. register gradient, REALIZES m677's testable prediction #1; ledger holds at 37, THIRTY-EIGHTH absent - Type B FOURTH leg of the 1090-1094 window (Sep 30 2026, 06:00 PDT; main commit 7fbc7f46 / anchor 2796e83b; log-hash followup registers both hashes here per #721 (this commit: f59a8361)).
 
 ### Rotation transparency
 - 1090-1094 window FOURTH leg (per #565: D #1090 -> E #1091 -> A #1092 -> B #1093 -> C #1094; order D->E->A->B->C)
