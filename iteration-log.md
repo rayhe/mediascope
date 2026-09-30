@@ -1,4 +1,4 @@
-## #1100 Type D: m889/m890/m891 qualitative-discipline verification + post-1095-1099 corpus integrity (max numeric mechanism_id 891; zero-892 forward guards runtime-built per #715; #1095 file historical repin MAX_ID 888->891 NEXT_NUM 889->892 rotation-guard window-closed-complete; m889 WIRED x OpenAI slowdown-legality register extension delta +0.20 MANUAL ILLUSTRATIVE / Zeff-only +0.025 near-null parity; m890 Reece Rogers Muse weeklong-test data-collection alarm vs carried Claude Cowork playful +0.60 illustrative, m629 temporal extension 75 days; m891 Google AI-contribution pilot rate disclosure, UNILATERAL PRICING as TWENTY-SEVENTH relationship direction, tone NOT_SCORED; none a falsification-family member, ledger holds at 37, THIRTY-EIGHTH absent) + #1095 background-suite verdict (DIED at 3237 bytes / ~5% dots, last write Sep 30 08:59:54 PDT, zero summary tokens, no live pytest process - THIRD consecutive death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed; tombstone lineage SEVENTY-EIGHTH -> SEVENTY-NINTH) + fresh synthetic engine calibration (real signature: strong asym -0.58125 p=2.94e-10 sig True; null silent p~1.0; degenerate n=1 t=0.0 p=1.0) + suite re-launched without -x to type_d_1100_full_suite.log - Type D FIRST leg of the 1100-1104 window, OPENING it (Sep 30 2026, 01:00 PDT; main commit 6678ba05 / anchor eb9cc385; log-hash followup registers both hashes here per #721 (this commit: <loghash>); doc-sync 55895/1424 -> 55971/1425 (+76/+1); in-flight #899/#938/#900/#1012-wt untouched).
+## #1100 Type D: m889/m890/m891 qualitative-discipline verification + post-1095-1099 corpus integrity (max numeric mechanism_id 891; zero-892 forward guards runtime-built per #715; #1095 file historical repin MAX_ID 888->891 NEXT_NUM 889->892 rotation-guard window-closed-complete; m889 WIRED x OpenAI slowdown-legality register extension delta +0.20 MANUAL ILLUSTRATIVE / Zeff-only +0.025 near-null parity; m890 Reece Rogers Muse weeklong-test data-collection alarm vs carried Claude Cowork playful +0.60 illustrative, m629 temporal extension 75 days; m891 Google AI-contribution pilot rate disclosure, UNILATERAL PRICING as TWENTY-SEVENTH relationship direction, tone NOT_SCORED; none a falsification-family member, ledger holds at 37, THIRTY-EIGHTH absent) + #1095 background-suite verdict (DIED at 3237 bytes / ~5% dots, last write Sep 30 08:59:54 PDT, zero summary tokens, no live pytest process - THIRD consecutive death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed; tombstone lineage SEVENTY-EIGHTH -> SEVENTY-NINTH) + fresh synthetic engine calibration (real signature: strong asym -0.58125 p=2.94e-10 sig True; null silent p~1.0; degenerate n=1 t=0.0 p=1.0) + suite re-launched without -x to type_d_1100_full_suite.log - Type D FIRST leg of the 1100-1104 window, OPENING it (Sep 30 2026, 01:00 PDT; main commit 6678ba05 / anchor eb9cc385; log-hash followup registers both hashes here per #721 (this commit: 07c91cf1); doc-sync 55895/1424 -> 55971/1425 (+76/+1); in-flight #899/#938/#900/#1012-wt untouched).
 
 ### Rotation transparency
 - 1100-1104 window FIRST leg (per #565: D #1100 -> E #1101 -> A #1102 -> B #1103 -> C #1104; order D->E->A->B->C), OPENING the window
@@ -37,7 +37,7 @@
 ### Commit hashes
 - Main: 6678ba05 (Type D #1100: m889/m890/m891 verification; FIRST leg of the 1100-1104 window, OPENING it)
 - Anchor followup: eb9cc385 (patch ANCHORED_SHA per #565)
-- Log-hash followup: <loghash> (register main + anchor in the entry per #721)
+- Log-hash followup: 07c91cf1 (register main + anchor in the entry per #721)
 - ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
 
 ### Doc-sync ratchet
@@ -82,7 +82,7 @@
 - Main: def43924 (Type C #1099: mechanism 891 - Google AI-contribution pilot rate disclosure; FIFTH leg of the 1095-1099 window, CLOSING it)
 - Anchor followup: 4eff5d5b (patch ANCHORED_SHA per #565)
 - Test-fix: 28802355 (rename test_next_mechanism_number_absent_repo_wide - method name contained the contiguous needle; test_891_present_in_committed_tree asserts the numeric-key hit directly)
-- Log-hash followup: <loghash> (register main + anchor in the entry per #721)
+- Log-hash followup: 07c91cf1 (register main + anchor in the entry per #721)
 - ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
 
 ### Doc-sync ratchet
