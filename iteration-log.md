@@ -25,7 +25,7 @@
 
 Guard lifecycle: mechanism 889 has not landed; this run's zero-889 needles PASS (they fail BY DESIGN when mechanism 889 lands at a future leg - the #1100 Type D run pins the next guards).
 
-Push status per #864: main TBD + anchor TBD + log-hash TBD + log-hash followup TBD + push-status TBD - patched by the followup commits.
+Push status per #864: main ed8c9cf2 + anchor 188b15f6 + log-hash 75243d3f + log-hash followup cf5bda5e + test-fix 7981074f to be pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1094 Type C: Anthropic leaked draft S-1 $518B commitment ledger - DUAL-ROLE RECYCLING as the TWENTY-SIXTH relationship direction (mechanism 888); partial S-1 realization of m864's demand-recycling proof test; ledger holds at 37, THIRTY-EIGHTH absent - Type C FIFTH and CLOSING leg of the 1090-1094 window (Sep 30 2026, 07:00 PDT; main commit 0a68923d / anchor 86a6e27c; log-hash followup registers both hashes here per #721 (this commit: abc34c68); doc-sync 55467/1418 -> 55526/1419 (+59/+1)).
 
