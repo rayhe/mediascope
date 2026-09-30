@@ -1,3 +1,33 @@
+## #1089 Type C: OpenAI x Lenfest Institute AI fellowship $10M renewal (Sep 28 2026) - POST-LITIGATION-GRANT-RENEWAL as the TWENTY-FIFTH relationship direction; mechanism 885; NOT a falsification-family member (ledger holds at 37, THIRTY-EIGHTH member-claim form absent) - Type C FIFTH and CLOSING leg of the 1085-1089 window (Sep 30 2026, 02:00 PDT; main commit PENDING / anchor PENDING; log-hash followup registers both hashes here per #721 (this commit: PENDING)).
+
+### Rotation transparency
+- 1085-1089 window FIFTH and CLOSING leg (per #565: D #1085 -> E #1086 -> A #1087 -> B #1088 -> C #1089)
+- Predecessors: #1085 Type D main 199a0ef4/anchor d99c8292/log-hash 923e7bdf; #1086 Type E main a2570fe7/anchor 4dedcc91/log-hash 15fe0d57; #1087 Type A main db6b141d/anchor 31d58d63/log-hash baa05be1; #1088 Type B main e9b32ea2/anchor c439f44f/log-hash 1863d076 (all verified present via git log before this run's commit)
+- Pre-commit novelty greps: zero test_type_c_1089 files on disk (glob); no "Type C #1089" in git log (--grep); max numeric mechanism_id 884 pre-commit (Type B #1088, mechanism 884 in profiles/careers/journalists.yaml); zero numeric/underscore/dash 885 mechanism key strings repo-wide pre-commit (needles format-built per #715); block key zero-hit repo-wide pre-commit; 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); zero "second cohort" hits; zero "autonainews" hits. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Guard lifecycle: #1084's TWENTY-FIFTH-absence needle and #1088's zero-885 needles fail BY DESIGN at this run (pinned as forward-looking staleness); this run's zero-886 needles PASS and will fail BY DESIGN when mechanism 886 lands at a future A/B/C leg (the #1090 Type D run pins them).
+- Next run #1090 Type D OPENS the 1090-1094 window.
+
+### Research: 3 search sets, 0 browser.open (excerpt-bounded per #503)
+- OpenAI Lenfest AI Collaborative fellowship renewal Sep 2026 - SELECTED: surfaced the Nieman Lab (Andrew Deck) chain via Editor and Publisher (Sep 29): "committing another $10 million", $5M cash + $5M tech credits, eligibility expanding to local TV + statewide public-service outlets, at most half of 11 re-accepted, no funding for replacing human reporting.
+- OpenAI Lenfest $10M fellowship cohort - SELECTED: surfaced autonainews (Sep 30): pledged Sep 28 2026, $10M split cash + software credits, second cohort opens 2026, open-source tool conversion for hundreds of newsrooms, Tom Rubin lasting-capabilities quote.
+- OpenAI Lenfest fellowship Microsoft renewal Sep 2026 - SELECTED: surfaced citybiz (Sep 28): $5M new funding + up to $5M credits/engineering, "doubles OpenAI's previous support", 2024 baseline $10M total (each $2.5M direct + $2.5M credits), "OpenAI is now making the new commitment on its own; Microsoft has not announced a comparable renewal", Dewey archive-search + 15-hour/week-to-daily-digest tools.
+- One browser.open attempt (autonainews) hit RECV_TIMEOUT; evidence remains excerpt-bounded per #503. All URLs copied verbatim from Full-URL search listings; no canonical URLs constructed.
+
+### Statistical discipline
+- Monitoring-only per the Aug 28 2026 standing rule: MANUAL/QUALITATIVE ONLY, p_value/cohens_d/ci_95 NOT_CALCULATED, tone NOT_SCORED, is_significant False, engine NOT run, no_analysis_json_update true, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation.
+- NOT a falsification-family member: financial-architecture mapping of money flows per the #609/#614 qualitative boundary; no coverage-tone pair, so no uniform prediction is tested or falsified. Falsification ledger holds at 37 (THIRTY-SEVENTH member-form in profiles/the-verge.yaml m880; THIRTY-EIGHTH member-claim form absent).
+- Confounders strong-first: STRONG programmatic timing (two-year pilot reached term; renewal calendar-driven, likely negotiated before the Sep 2026 lawsuit); STRONG half-in-kind ($5M credits = marginal-cost API spend deepening platform dependency); STRONG cohort-2 selection unknown (litigants may not return - "grant despite suit" could collapse into rotation); MEDIUM Microsoft absence bounded (iteration-492 rule); MEDIUM single sourcing chain (Nieman Lab via three mirrors); WEAK program-growth motive. Counterargument: the 25th slot survives only on the post-litigation + unilateral geometry; cohort-2 admissions, renewal terms, and Microsoft are the three falsification tests.
+- Cross-refs: m675 grant-then-sue (grantee-side - the grantor-side sequel); m734; m1029 ecosystem-grant (grant-without-consideration, distinct); EXTENDS the m807 enumeration to 25.
+
+### Test file and doc-sync
+- tests/test_type_c_1089_openai_lenfest_10m_renewal_post_litigation_twentyfifth_direction_sep30_2am.py: 60 tests, 12 classes. Pre-commit: anchor + rotation + iteration-log tests deselected per #565/#721 (14 deselected); 9 by-design failures pre-commit (doc-sync ratchet x4 + research-method x2 + staging x1 + post-commit corpus-novelty x2); post-doc-sync re-run deselects anchor/rotation/itlog (14 deselected, 46 green).
+- Doc-sync: README stats table 55114/1413 -> 55174/1414 (+60/+1); README test-file table row added; ARCHITECTURE.md tests-tree row added; iteration-log entry prepended (reverse-chronological).
+
+Guard lifecycle: mechanism 885 lands at this Type C leg; the #1088 zero-885 needles and #1084 TWENTY-FIFTH-absence needle are superseded BY DESIGN (this run's zero-886 needles PASS; they fail BY DESIGN when mechanism 886 lands at a future leg - the #1090 Type D run pins zero-886 guards).
+
+Push status per #864: main PENDING + anchor PENDING + log-hash PENDING pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+
 ## #1088 Type B: Victoria Song (The Verge) x Apple Watch always-listening vs x Meta camera-free Audio - ambient-audio register-inversion pair (mechanism 884; second temporal extension of mechanism 75 register-selectivity + extension of mechanism 827 into the audio modality)
 
 2026-09-30 01:00 PDT, iteration_type "B", **FOURTH leg of the 1085-1089 window** (rotation rule D->E->A->B->C per #565 anchor + rotation guard; main commit e9b32ea2 / anchor c439f44f; log-hash followup registers both hashes here per #721 (this commit: 1863d076)).
