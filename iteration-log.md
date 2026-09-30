@@ -1,4 +1,4 @@
-## #1080 Type D: Test and Verify - qualitative corpus integrity for the completed 1075-1079 window (m877/m878/m879); no new empirical finding, analysis.json untouched; max mechanism 879, zero-880 guards pinned; falsification ledger holds at 36; #1075 suite tombstone SEVENTY-FIFTH -> SEVENTY-SIXTH - Type D OPENS the 1080-1084 window (Sep 29 2026, 17:00 PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD))
+## #1080 Type D: Test and Verify - qualitative corpus integrity for the completed 1075-1079 window (m877/m878/m879); no new empirical finding, analysis.json untouched; max mechanism 879, zero-880 guards pinned; falsification ledger holds at 36; #1075 suite tombstone SEVENTY-FIFTH -> SEVENTY-SIXTH - Type D OPENS the 1080-1084 window (Sep 29 2026, 17:00 PDT; main commit 6f0c0049 / anchor d99c8292; log-hash followup registers both hashes here per #721 (this commit: TBD))
 
 2026-09-29 17:00 PDT, iteration_type "D", **OPENS the 1080-1084 window** (Type D #1080; rotation rule D->E->A->B->C per #565 anchor + rotation guard).
 
@@ -34,7 +34,7 @@ Guard lifecycle: this file carries zero-880 forward needles (pass this run; fail
 
 Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked qualitative test file), #1012-wt (Type A test file) remain in-flight, untouched and unstaged - verified via git status before staging; targeted staging only (own test file, #1075 repin, README.md, docs/ARCHITECTURE.md, iteration-log.md).
 
-Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 54/54 file tests green post-doc-sync); log-hash followup TBD updates this line (this commit).
+Main commit 6f0c0049 (verified via git rev-parse); anchor followup d99c8292 (ANCHORED_SHA patched per #565, anchor + full rotation guard green post-patch; 55/55 file tests green post-doc-sync); log-hash followup TBD updates this line (this commit).
 README stats table 54522/1404 -> 55518/1405 (+55/+1 this file; +942 baseline reconciliation via authoritative .venv --collect-only, per the #1078 count_stats.py lesson) + test-file table row; ARCHITECTURE.md tree row; iteration-log #1080 entry (this entry).
 Push: TBD main -> main landed via the atomic proxy-credential workflow (temp GIT_CONFIG_GLOBAL auth, PAT never via argv); remote HEAD verified MATCH via git ls-remote (TBD).
 
