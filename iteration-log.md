@@ -26,7 +26,7 @@
 
 Guard lifecycle: mechanism 885 lands at this Type C leg; the #1088 zero-885 needles and #1084 TWENTY-FIFTH-absence needle are superseded BY DESIGN (this run's zero-886 needles PASS; they fail BY DESIGN when mechanism 886 lands at a future leg - the #1090 Type D run pins zero-886 guards).
 
-Push status per #864: main a98d10d8 + anchor 497d90cd + log-hash 3bc0a638 pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+Push status per #864: main a98d10d8 + anchor 497d90cd + log-hash 3bc0a638 + log-hash tweak 064c828a + test fixup e9b82628 all pushed to origin main and ls-remote-verified (local HEAD e9b82628 == remote HEAD e9b82628); concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1088 Type B: Victoria Song (The Verge) x Apple Watch always-listening vs x Meta camera-free Audio - ambient-audio register-inversion pair (mechanism 884; second temporal extension of mechanism 75 register-selectivity + extension of mechanism 827 into the audio modality)
 
