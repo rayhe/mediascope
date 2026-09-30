@@ -29,7 +29,7 @@
 
 Guard lifecycle: mechanism 884 lands at this Type B leg; the #1085/#1086/#1087 zero-884 guards are superseded BY DESIGN (this run's zero-885 guards PASS; they fail BY DESIGN when mechanism 885 lands at a future leg - the #1090 Type D run pins zero-885 guards).
 
-Push status per #864: main e9b32ea2 + anchor c439f44f + log-hash 1863d076 + log-hash tweak 1350428f all pushed to origin main and ls-remote-verified (05ee6b56); concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
+Push status per #864: main e9b32ea2 + anchor c439f44f + log-hash 1863d076 + log-hash tweak 1350428f (+ push-status notes) all pushed to origin main and ls-remote-verified; concurrent in-flight changes NOT pushed (nytimes.yaml m771 hunk for #899, test_type_b_938 anchor edit, untracked test_type_d_900, test_type_a_1012 working-tree edit).
 
 ## #1087 Type A: Verge x Anthropic Sep-2026 pacing-policy + IPO-prospectus register extension (mechanism 883; m557/m766 extension, m880 companion)
 
