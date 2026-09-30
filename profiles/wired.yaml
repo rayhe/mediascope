@@ -2522,6 +2522,154 @@ competitor_relationships:
         correlation_not_causation: true
       no_analysis_json_update: true
       artifact_grade: false
+    mechanism_889_wired_openai_slowdown_legality_register_vs_meta_carried_arms_sep30:
+      mechanism_id: 889
+      date_analyzed: '2026-09-30'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1097
+      iteration_type: A
+      iteration_time: '2026-09-30 10:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: WIRED
+      competitor_pair: 'OpenAI vs Meta (m877-family extension)'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '10:00'
+      job_id: mediascope-daily-iteration
+      distinct_from_prior: >
+        Extends mechanism 877 (Type A #1077, Sep 29 2026) from the safety-crisis register into the
+        coordination/antitrust register at the same deal partner. Mechanism 877 found WIRED applies the
+        accountability register to OpenAI on the Astra safety-cancellation peg at near-null parity with carried
+        Meta arms (-0.35 vs -0.45/-0.30), with the peg-not-entity reading (m712 +0.15 briefed relay swung to -0.35
+        in 13 days). This mechanism tests whether the same parity holds on a LEAK-DRIVEN peg: the WIRED exclusive
+        (Maxwell Zeff, Sep 10) that OpenAI asked members of Congress whether an industry-wide frontier slowdown
+        would be legal under antitrust law, carrying the John Schulman 'fake' cover quote and an
+        OpenAI-declined-to-comment frame. Second arm: the Sep 29 Dots product-expansion relay (Reece Rogers via
+        Techmeme-filed wesearch mirror), neutral register, bounding the soft end of WIRED x OpenAI register in the
+        same window. Companion to m591 (Type A #597, coverage-selection). NOT a falsification-family member: no
+        uniform-direction prediction under test; register documentation plus m877-family extension. Ledger holds at
+        37; THIRTY-EIGHTH remains the negative guard.
+      finding: >
+        Two fresh WIRED x OpenAI arms, Sep 10-29 2026, excerpt-bounded per #503 (0 browser.open; WIRED paywalled).
+        (1) Sep 10, Maxwell Zeff exclusive: 'OpenAI wants to know if an AI industry slowdown would even be legal'
+        - people close to the company say OpenAI asked members of Congress whether orchestrating an industry-wide
+        frontier slowdown would be legal under the Sherman Act; OpenAI did not comment; John Schulman quoted saying
+        citing Sherman can be 'fake' cover for refusing to write a joint pacing plan; Altman told staff OpenAI could
+        slow its pace, possibly with other labs, while Pachocki called for a coordinated pause until shared safety
+        standards exist (-0.35, inquisitive accountability on a leak-driven peg). (2) Sep 29, Reece Rogers
+        (Techmeme-filed, wesearch relay): OpenAI says users can message Dots through ChatGPT, Slack, and Microsoft
+        Teams and join a waitlist to text via iMessage or RCS on Android (0.00, neutral product-announcement relay;
+        verbatim WIRED URL not surfaced). MANUAL ILLUSTRATIVE OpenAI Sep mean -0.175 vs carried WIRED x Meta mean
+        -0.375 (m877 arms: Pinky Promises skepticism -0.45, NameTag class action -0.30, un-rescored per #807):
+        delta +0.20, Meta draws the harder register, thesis-consistent directionally but small. The Zeff-only read
+        is the sharper test: -0.35 vs -0.375 = +0.025, near-null parity, extending the m877 peg-not-entity finding
+        from the safety-crisis register into the coordination/antitrust register. On leak-driven pegs WIRED holds the
+        deal partner at parity with Meta; the softness sits in the product-relay register (Dots 0.00), not in
+        accountability coverage. Correlation is not causation.
+      financial_relationship:
+        conde_nast_openai_deal: 'Conde Nast (WIRED parent) multi-year content licensing deal with OpenAI, Aug 2024 (mechanism 504): $1-5M/yr estimate, terms undisclosed; in-corpus wired.yaml:177, 2271, 2668.'
+        conde_nast_meta: '$0, no licensing relationship'
+        deal_disclosed_in_wired_coverage: false
+        non_causal_language: 'financial figures are for context only; no causal claim that the deal drives coverage; register follows the peg, not the payer, per m877'
+        editorial_independence_note: 'deal is parent-level licensing; no desk-level awareness evidence at the WIRED business/tech desks'
+      articles_openai:
+        - piece: 'OpenAI wants to know if an AI industry slowdown would even be legal'
+          author: Maxwell Zeff
+          author_context: 'WIRED reporter; in-corpus via the Jul 10 Apple-v-OpenAI hardware-suit piece (m591)'
+          date: '2026-09-10'
+          timestamp: '2026-09-10 7:28 PM ET (attested)'
+          register: inquisitive_accountability_on_deal_partner
+          framing: 'WIRED exclusive: OpenAI asked members of Congress whether an industry-wide frontier slowdown would be legal under the Sherman Act; OpenAI did not comment'
+          language: 'people close to the company say OpenAI asked members of Congress whether an industry-wide frontier slowdown would be legal under the Sherman Act; Altman told staff OpenAI could slow its pace, possibly with other labs; Pachocki called for a coordinated pause until shared safety standards exist'
+          critic_quote: 'John Schulman: citing Sherman can be fake cover for refusing to write a joint pacing plan'
+          url: 'https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/'
+          url_source: 'verbatim WIRED URL surfaced in the guzus/ai-research-arm digest snippet this run (excerpt-bounded per #503; 0 browser.open; WIRED paywalled)'
+          mirror_urls:
+            - 'https://guzus.com/guzus/article/1/openai-asked-congress-if-an-ai-industry-slowdown-would-be-legal-1'
+            - 'https://www.the-decoder.com/wired-openai-asked-congress-about-antitrust-risks-of-an-ai-development-slowdown/'
+            - 'https://www.manton.org/2026/09/11/openai-asked-congress.html'
+          manual_illustrative_tone: -0.35
+          tone_rationale: 'inquisitive accountability on a leak-driven peg: exclusive framing, critic adversarial quote, company-declined-to-comment; peg-consistent with the Ward Astra arm (-0.35, m877)'
+          deal_disclosed: false
+          notes: 'scoop-originator framing (people close to the company); corroborated by the Decoder recap and Manton Reece relay; no prior corpus coverage (zero-hit repo-wide pre-commit)'
+        - piece: 'OpenAI says users can message Dots through ChatGPT, Slack, and Microsoft Teams'
+          author: Reece Rogers
+          date: '2026-09-29'
+          timestamp: '2026-09-29 5:35 PM UTC (attested via Techmeme filing)'
+          register: neutral_product_announcement_relay
+          framing: 'OpenAI expands its AI assistant Dots to messaging surfaces: ChatGPT, Slack, Microsoft Teams, plus an iMessage/RCS waitlist'
+          language: 'OpenAI says users can message Dots through ChatGPT, Slack, and Microsoft Teams and join a waitlist to text via iMessage or RCS messaging on Android'
+          url: 'https://wesearch.press/s/openai-says-users-can-message-dots-through-chatgpt-slack-and-38222204'
+          url_source: 'Techmeme-filed mirror carrying WIRED attribution (excerpt-bounded per #503; verbatim WIRED URL not surfaced this run; 0 browser.open)'
+          manual_illustrative_tone: 0.00
+          tone_rationale: 'neutral product relay register; bounds the soft end of WIRED x OpenAI register in the same window'
+          deal_disclosed: false
+          notes: 'register mismatch with the Meta arms (product relay vs skepticism/adversarial-legal); pooled delta inflated, disclosed as a STRONG confounder; Zeff-only parity read is the cleaner comparison'
+      articles_meta:
+        - piece: 'Meta Pinky Promises Its Smart Glasses Will Be Private Soon'
+          author: Boone Ashworth
+          date: '2026-09-23'
+          register: skepticism_on_positive_news
+          tone_carried: -0.45
+          source: 'carried from mechanism 877 per the #807 convention (un-rescored)'
+          novelty_note: 'carried arm, not novel; disclosed'
+        - piece: 'Meta Sued Over Training Data for Its AI and Face-Recognition Systems'
+          author: Dhruv Mehrotra
+          date: '2026-09-11'
+          register: adversarial_legal
+          tone_carried: -0.30
+          source: 'carried from mechanism 877 per the #807 convention (un-rescored)'
+          novelty_note: 'carried arm, not novel; disclosed'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'OpenAI WIRED Sep-2026 slowdown-cycle register'
+        peer_entity: 'Meta WIRED carried register (m877)'
+        target_scores: [-0.35, 0.00]
+        target_avg: -0.175
+        peer_scores: [-0.45, -0.30]
+        peer_avg: -0.375
+        delta_calc: '-0.175 - (-0.375) = +0.20'
+        delta: 0.20
+        delta_direction: 'Meta draws the harder register; thesis-consistent directionally but small. Zeff-only read: -0.35 vs -0.375 = +0.025, near-null parity on the leak-driven accountability peg, extending m877.'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'directionally_supported_not_proven'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+          - 'Excerpt-bounded evidence (per #503): 0 browser.open; WIRED paywalled; Zeff piece read through the guzus digest mirror and Decoder recap; Dots piece through the wesearch relay; no first-hand register read'
+          - 'Register mismatch: the Dots arm is a product-announcement relay (neutral register is the genre default); the Meta arms are skepticism/adversarial-legal. Pooling inflates the delta; the Zeff-only parity read (+0.025) is the cleaner comparison'
+          - 'Leak-vs-disclosure asymmetry: the Zeff piece rides a leak (people close to the company); the inquisitive register may track source type, not entity'
+        moderate:
+          - 'Timing skew: Meta arms Sep 11/23 (m877); OpenAI arms Sep 10/29. Same month, adjacent weeks; mild'
+          - 'n=2 vs n=2: degenerate small samples; directional illustration only'
+          - 'The Schulman fake-cover quote is a single critic voice; the piece also relays Altman/Pachocki slowdown positions without rebuttal'
+        weak:
+          - 'Verbatim WIRED URL for the Dots piece not surfaced; arm rests on the Techmeme-filed wesearch relay'
+          - 'Manton Reece Sep 11 relay of the Zeff piece corroborates the exclusive but adds no new register information'
+      counter_evidence:
+        - 'm877: WIRED ran the accountability register on the deal partner Astra safety cancellation (-0.35), near-null parity with Meta; no blanket firewall'
+        - 'The Zeff exclusive itself: WIRED published an adversarial-tilted exclusive on the deal partner (Schulman fake-cover quote), the strongest in-corpus evidence against payer-driven suppression at WIRED'
+        - 'm952 (mechanism 802): WIRED scolded ChatGPT on privacy (-0.30) inside the same guide that praised Meta AI Incognito (+0.25); payer-gradient inversion'
+        - 'FTC probe (Sep 30, CNBC/Reuters/NY Post): bounded absence - no WIRED original surfaced this run; whether WIRED applies the accountability register to FTC enforcement against the payer is the open test'
+        - 'm591 Meta arms: WIRED alarm register on Meta glasses (-0.82/-0.72/-0.78); Meta draws harder coverage across registers, thesis-consistent directionally'
+      open_empirical_test: 'First-hand open of the Zeff piece when wired.com is reachable; WIRED coverage (or bounded absence) of the Sep 30 FTC probe into OpenAI/Anthropic and the LASST California lawsuit over the Hugging Face breach; re-score both arms against observed register; test whether the Zeff-only parity (+0.025) survives first-hand reads.'
+      research_method: '6 browser.search query sets this run (FT Anthropic IPO prospectus - REJECTED: no ft.com originals surfaced, paywall-bounded; ft.com Anthropic IPO - REJECTED: same; WIRED OpenAI September 2026 - SELECTED: the Zeff exclusive surfaced via the guzus digest with verbatim WIRED URL plus the Dots relay via wesearch; WIRED Isabella Ward Astra - REJECTED: in-corpus via m877/#1077/#1078, would duplicate; The Verge FTC probe - bounded absence, no Verge original surfaced; WIRED FTC investigation - bounded absence, no WIRED original surfaced). 0 browser.open per #503; WIRED paywalled; all arms excerpt-tier attested secondaries with explicit provenance.'
+      novelty: 'zero test_type_a_1097 files on disk pre-commit (glob); no Type A #1097 in git log pre-commit (--grep); block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 888 pre-commit (mechanism_id regex sweep); zero underscore-form 889 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded; __pycache__ excluded per #715); zero dash-form 889 references pre-commit; zero numeric 889 mechanism_id keys in profiles/ pre-commit; the two novel URLs (wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal, wesearch.press/s/openai-says-users-can-message-dots-through-chatgpt-slack-and-38222204) zero-hit repo-wide pre-commit (git grep -F); Meta arms carried from m877 (not novel, disclosed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (register documentation plus m877-family extension; no uniform-direction prediction under test). Ledger holds at 37 - THIRTY-SEVENTH member-form present (m880, profiles/the-verge.yaml); THIRTY-EIGHTH member-claim form absent repo-wide.'
+      ledger: '37'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone values are hand-assigned register positions, NOT measured scores; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no_analysis_json_update true; artifact_grade false; verdict directionally_supported_not_proven; correlation-not-causation language throughout'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-09-30'
   meta:
     financial_tie: none
     estimated_value: $0
