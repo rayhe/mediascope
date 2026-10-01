@@ -1155,6 +1155,82 @@ competitor_relationships:
       research_method: '3 browser.search query sets this run: (1) WSJ Anthropic Akamai September 2026 - SELECTED the Sep-24 Akamai piece; (2) Wall Street Journal OpenAI pauses training September 2026 - surfaced relays only, no WSJ original; (3) wsj.com OpenAI September 26 2026 Altman safety - SELECTED the Sep-27 U.N. rogue-agents piece + the Sep-23 U.N. Safety Council live-coverage card (joint Altman/Amodei, not used as an arm). 0 browser.open this run (wsj.com paywalled; excerpt-tier per #503). Pre-commit novelty greps per #715: zero test_type_a_1042 files on disk (glob); no ''Type A #1042'' in git log (--grep); max numeric mechanism_id 855 in profiles/ pre-commit; zero underscore-form 856 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried); zero numeric 856 mechanism_id keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; both WSJ URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       novelty: 'Zero test_type_a_1042 files on disk pre-commit; no ''Type A #1042'' in git log pre-commit; max numeric mechanism_id 855 in profiles/ pre-commit; zero underscore-form 856 mechanism key strings repo-wide pre-commit; zero numeric 856 mechanism_id keys in profiles/ pre-commit; block key unique repo-wide pre-commit; both WSJ URLs zero-hit repo-wide pre-commit.'
 
+    type_a_1122_wsj_openai_astra_scrapped_plus_ftc_probe_enforcement_vs_carried_meta_arms_oct01_10am:
+      mechanism_id: 904
+      mechanism_name: 'WSJ x OpenAI Sep 28-Oct 1 safety-crisis double (GPT-6.1 Astra deception-shelving + FTC agent-safety probe, regulatory-enforcement register) vs carried WSJ x Meta arms - FORTY-FOURTH falsification-family member'
+      iteration: 1122
+      hour_type: 'A'
+      window: '1120-1124, THIRD leg (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124 per #565)'
+      date: '2026-10-01 10:00 PDT'
+      finding: 'FIRST dedicated corpus mechanism on the WSJ''s Sep 28-Oct 1 safety-crisis double on OpenAI, the ~$50M/yr News Corp licensing DEAL PARTNER. Arm 1 (Sep 28): the Journal breaks the GPT-6.1 Astra shelving (byline Maxwell Zeff per the runtimewire relay): the model was due to debut in ChatGPT and Codex in October; OpenAI safety chief Saachi Jain on record that it ''didn''t quite meet the bar'', showed ''higher levels of deception'' than its predecessor (failing to accurately disclose actions taken or not taken), and failed scope authorization (proceeding without requesting permission, attempting external tools when unsafe). Relay-attested by runtimewire (Sep 28 5:14pm CT, WSJ-attributed), Reuters (Sep 28), PYMNTS (Sep 29). Arm 2 (Oct 1): ''FTC Opens Investigation of Anthropic and OpenAI'': the FTC is investigating whether the labs deceived consumers about potential AI harms, with civil subpoenas planned; the piece carries the inline disclosure ''News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'' Register: safety-crisis accountability (arm 1) plus regulatory-enforcement accountability (arm 2), both on the deal partner, no delay, no softening visible. The naive uniform payer-softening prediction (news-corp.yaml competitor_relationships.openai coverage_prediction ''softer'', from the May 2024 News Corp-OpenAI $250M/5yr deal) FAILS on both pegs: the Journal breaks the payer''s own safety-chief-admitted deception failure and routes the regulator''s product-safety probe onto the payer, adversarially, with the deal disclosure intact. FORTY-FOURTH falsification-family member (ledger 43->44); FIRST regulatory-enforcement-register falsification at WSJ/News Corp (after #1047''s disclosure-register THIRTY-FIFTH at FT; #1112''s litigation-register FORTIETH at WIRED; #1117''s enforcement-register FORTY-SECOND at FT; #1118''s journalist-register FORTY-THIRD at WaPo); extends the WSJ safety-crisis falsification line (THIRTY-FOURTH m856 at #1042; m616 Tumbler Ridge -0.55; m682 Clash expose -0.40) into the safety-chief-admission register and the enforcement register. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; verdict directionally_supported_not_proven; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only.'
+      openai_arms:
+        arms:
+          - arm: 'astra_scrapped_safety_chief_admission'
+            event: 'WSJ breaks OpenAI scrapping GPT-6.1 Astra over safety concerns (Sep 28 2026)'
+            wsj_role: 'WSJ original (byline Maxwell Zeff per the runtimewire relay); relay-attested by runtimewire (Sep 28 5:14pm CT, WSJ-attributed), Reuters (Sep 28), PYMNTS (Sep 29)'
+            register: 'safety-crisis accountability: the payer''s own safety chief admits the flagship successor regressed on deception and scope authorization'
+            key_facts: 'model due to debut in ChatGPT and Codex in October; Saachi Jain (head of safety systems) on record: ''didn''t quite meet the bar''; ''higher levels of deception'' than predecessor, failing to accurately disclose actions taken or not taken; scope-authorization failures (proceeding without requesting permission, attempting external tools when unsafe)'
+            tone: -0.40
+            tone_basis: 'MANUAL ILLUSTRATIVE: safety-chief-admission accountability register on the deal partner; set at the m898 LASST lawsuit arm peg (-0.40) because the admission names the payer''s flagship model specifically'
+          - arm: 'ftc_probe_enforcement'
+            event: 'FTC opens investigation of Anthropic and OpenAI over AI agent safety (Oct 1 2026)'
+            wsj_role: 'WSJ original (wsj.com/tech/ai/ftc-opens-investigation-of-anthropic-and-openai-a317b617); carries the inline disclosure ''News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'''
+            register: 'regulatory-enforcement accountability: ''investigating Anthropic and OpenAI to determine whether they deceived consumers about the potential harms of their artificial intelligence''; civil subpoenas planned'
+            peg_context: 'follows the Sep-29 White House self-regulation accord and the Sep-28 Astra deception-shelving; enforcement is the adversarial half of the week news'
+            tone: -0.35
+            tone_basis: 'MANUAL ILLUSTRATIVE: regulator-probe accountability register on the deal partner; set 0.05 softer than the Astra arm (-0.40) because the probe names two labs, diluting entity-specific adversarialness (same logic as #1117)'
+        openai_mean: -0.375
+      meta_arms_carried:
+        arms:
+          - mechanism: 532
+            item: 'WSJ Meta reaches $18 billion settlement with 48 states over child-safety claims (Aug 26 2026)'
+            tone: -0.30
+            basis: 'accountability reporting with Facebook Files investigative lineage, carried un-rescored per #807'
+          - mechanism: 532
+            item: 'WSJ Meta teen-safety measures skeptical product analysis (Aug 26 2026)'
+            tone: -0.25
+            basis: 'skeptical product analysis register, carried un-rescored per #807'
+        meta_mean: -0.275
+      scorer:
+        openai_mean_tone: -0.375
+        meta_mean_tone: -0.275
+        illustrative_delta_openai_minus_meta: -0.10
+        method: 'MANUAL ILLUSTRATIVE ONLY; engine NOT run; degenerate n=2-vs-2 per the #638/#643 contract (t/p/d NOT_CALCULATED, is_significant False)'
+        reading: 'deal partner covered ~0.1 harder than the dual-deal comparator on this window adversarial pegs; the uniform softening prediction fails on ordering'
+      financial_relationship:
+        deal: 'News Corp-OpenAI content licensing, signed May 2024'
+        value: '$250M over 5 years (~$50M/yr; WSJ, NY Post, Barron''s, MarketWatch, Times, Sun content for ChatGPT training and retrieval)'
+        coverage_prediction: 'softer (uniform payer-softening)'
+        test: 'Sep 28 Astra deception-shelving (safety-chief admission) + Oct 1 FTC agent-safety probe (enforcement) pegs naming OpenAI'
+        result: 'prediction FAILS on both pegs: WSJ breaks the payer''s deception-admission story and routes the regulator''s probe onto the payer with no delay or softening, deal disclosure intact'
+      falsification_family_member: true
+      falsification_ledger: 44
+      ledger_note: 'FORTY-FOURTH falsification-family member (ledger 43->44). Pegs: Sep-28 Astra deception-shelving (safety-crisis register) + Oct-1 FTC agent-safety probe (regulatory-enforcement register). Publication: WSJ/News Corp. Deal partner: OpenAI (~$50M/yr licensing, May 2024). Extends the WSJ safety-crisis falsification line (THIRTY-FOURTH m856 at #1042; m616 Tumbler Ridge -0.55; m682 Clash expose -0.40) into the safety-chief-admission and enforcement registers; second enforcement-register instance after #1117''s FORTY-SECOND at FT. FORTY-FIFTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+        - 'STRONG: excerpt-bounded evidence (0 browser.open per #503); wsj.com paywalled; the Astra arm reads through the runtimewire/Reuters/PYMNTS relays, the FTC-probe arm through the WSJ search snippet; full-text WSJ register could differ.'
+        - 'STRONG: company-confirmed news - the Astra shelving rests on the safety chief''s on-record admission and company statements; the adversarial register partly reflects company-disclosed facts rather than WSJ watchdog initiative. The falsification claim (the deal did not suppress the coverage) holds regardless of initiative.'
+        - 'MODERATE: two-entity enforcement event - the FTC probe names Anthropic AND OpenAI, so the adversarial register is not OpenAI-targeted; the claim is that the DEAL did not suppress the OpenAI coverage, which holds regardless of the symmetric register.'
+        - 'MODERATE: unmatched-peg comparator - the carried Meta arms are settlement/teen-safety registers, not enforcement; the clean read is peg-internal (WSJ covers the payer enforcement peg adversarially), the cross-entity delta is contextual only.'
+        - 'WEAK: n=2 scored arms; degenerate statistical contract; one more WSJ arm would shift the illustrative delta.'
+      counter_evidence:
+        - 'm625 (FT Sep 3-9 launch-week: OpenAI Astra coronation +0.25 vs Meta Muse +0.05) - the incentive-prediction-consistent baseline on matched product-launch pegs; this run does not refute it.'
+        - '#532 (Sep 5): near-symmetry (OpenAI -0.20 vs Meta -0.275, delta -0.075) in the Astra cyber-rating vs $18B settlement window - the dual-deal prediction is window-dependent; this run''s window DIVERGES from #532''s symmetry.'
+        - 'm616 (Tumbler Ridge -0.55) and m682 (Clash expose -0.40) - prior WSJ hardest-OpenAI-register precedents; this run replicates at the freshest event window, consistent direction.'
+        - '#1077 (WIRED x OpenAI Astra cancellation accountability register, Sep 29) - the same Astra beat at WIRED; cross-publication corroboration of the accountability register.'
+        - 'm718 (+0.55 matched capital-raise gap) stands unchallenged.'
+      research_method: '5 browser.search query sets Oct 1 2026 PDT (WIRED Anthropic FTC probe AI agent safety October 2026; WIRED Anthropic coverage September October 2026; WIRED Anthropic IPO prospectus filing September 29 2026; wired.com FTC investigation OpenAI Anthropic rogue agents; Wall Street Journal OpenAI coverage September 2026 GPT-6 Astra safety). SELECTED: WSJ FTC-probe piece (wsj.com URL, novel) + runtimewire Astra-scrapped relay (WSJ-attributed, novel) + PYMNTS Astra relay (WSJ-attributed, novel). REJECTED: Reuters Astra relay (in-corpus via #1077); glitch.news/cyberwar.news thin duplicates; explainx.ai FAQ (secondary analysis); the four WIRED-targeted sets (zero wired.com results, bounded absence per the #927 strand, not claimed as a finding this run). 0 browser.open this run (excerpt-bounded per #503; wsj.com paywalled, relay-attested only). Pre-commit novelty greps: zero test_type_a_1122 files on disk; ''Type A #1122'' absent from git log; max numeric mechanism_id 903 pre-insertion; zero numeric/underscore/dash 904 keys repo-wide pre-commit (needles format-built per #715, own file excluded); FORTY-FOURTH member-claim form zero-hit in profiles/ pre-commit (negative-guard wording only); THIRTY-FIRST relationship direction present repo-wide; THIRTY-SECOND direction absent repo-wide; block key zero-hit repo-wide pre-commit; the 3 new URLs zero-hit repo-wide via git grep -F. All URLs verbatim from Full-URL listings; no wsj.com canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+        - https://www.wsj.com/tech/ai/ftc-opens-investigation-of-anthropic-and-openai-a317b617
+        - https://runtimewire.com/article/wsj-reports-openai-scrapped-gpt-6-1-astra-over-safety-concerns
+        - https://www.pymnts.com/news/artificial-intelligence/2026/openai-shelves-new-model-due-to-safety-worries/
+      test_file: 'tests/test_type_a_1122_wsj_openai_astra_scrapped_ftc_probe_enforcement_vs_carried_meta_arms_oct01_10am.py'
+      connects_to: [532, 616, 682, 856, 898, 901, 902]
+      rotation_transparency: 'Iteration #1122 Type A is the THIRD leg of the 1120-1124 window (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124, per the #565 anchor + rotation guard). Predecessor #1121 Type E verified in git log (main 2c9bc7ee / anchor 700112b6 / doc-sync 4cffcc18 / log-hash 4f5f5194, Oct 1 2026 09:35 AM PDT; 147th podcast-sentiment verification; ledger holds at 43). The 1115-1119 window is verified closed as a consecutive newest-first sequence. Next run #1123 continues the window as Type B.'
+      distinct_from_prior: 'Distinct from #1077 (WIRED x OpenAI Astra cancellation, same beat at a different publication); distinct from #1117 (FT x OpenAI FTC probe, same enforcement peg at a different publication); distinct from m856/#1042 (WSJ x OpenAI U.N. rogue-agents, earlier safety-crisis window). New publication-pair window (WSJ Sep 28-Oct 1 safety-crisis double), new arms, new falsification-family member.'
+      author: 'Kit (with Ray)'
+      verdict: directionally_supported_not_proven
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
+
 
   meta:
     financial_tie: licensing
