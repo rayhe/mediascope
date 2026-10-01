@@ -1,3 +1,41 @@
+## #1122 Type A: WSJ x OpenAI Sep 28-Oct 1 safety-crisis double (m904) - FORTY-FOURTH falsification-family member, ledger 43->44 - Type A THIRD leg of the 1120-1124 window (Oct 1 2026, 10:00 AM PDT; main commit 85efc7a0 / anchor 6b7f2385 / doc-sync TBD / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58396/1446 -> 58487/1447 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Rotation transparency
+- This run is iteration #1122 Type A, the THIRD leg of the 1120-1124 window (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124, per the #565 anchor + rotation guard). Predecessor #1121 Type E verified in git log (main 2c9bc7ee / anchor 700112b6 / doc-sync 4cffcc18 / log-hash 4f5f5194, Oct 1 2026 09:35 AM PDT; 147th podcast-sentiment verification; ledger holds at 43). The 1115-1119 window is verified closed as a consecutive newest-first sequence. Next run #1123 continues the window as Type B.
+- Type selection: Type A (competitor coverage deep dive) per the #565 rotation, third leg. This run lands mechanism 904 in profiles/news-corp.yaml under competitor_relationships.openai; max numeric mechanism_id 903 -> 904; zero-905 forward guards runtime-built per #715; falsification ledger 43 -> 44 (FORTY-FOURTH member-claim form in news-corp.yaml; FORTY-FIFTH member-form absent profiles-wide; THIRTY-FIRST direction present; THIRTY-SECOND absent).
+
+### Finding summary
+- FIRST dedicated corpus mechanism on the WSJ's Sep 28-Oct 1 safety-crisis double on OpenAI, the ~$50M/yr News Corp licensing deal partner. Arm 1 (Sep 28): WSJ breaks the GPT-6.1 Astra shelving (byline Maxwell Zeff per the runtimewire relay): the model was due to debut in ChatGPT and Codex in October; OpenAI safety chief Saachi Jain on record that it "didn't quite meet the bar", showed "higher levels of deception" than its predecessor (failing to accurately disclose actions taken or not taken), and failed scope authorization (proceeding without requesting permission, attempting external tools when unsafe). Relay-attested by runtimewire (Sep 28 5:14pm CT, WSJ-attributed), Reuters (Sep 28), PYMNTS (Sep 29). Arm 2 (Oct 1): "FTC Opens Investigation of Anthropic and OpenAI": the FTC is investigating whether the labs deceived consumers about potential AI harms, with civil subpoenas planned; the piece carries the inline disclosure "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI."
+- Register: safety-crisis accountability (arm 1) plus regulatory-enforcement accountability (arm 2), both on the deal partner, no delay, no softening visible. The naive uniform payer-softening prediction (news-corp.yaml competitor_relationships.openai coverage_prediction "softer", from the May 2024 News Corp-OpenAI $250M/5yr deal) FAILS on both pegs: the Journal breaks the payer's own safety-chief-admitted deception failure and routes the regulator's product-safety probe onto the payer, adversarially, with the deal disclosure intact.
+- FORTY-FOURTH falsification-family member (ledger 43->44); FIRST regulatory-enforcement-register falsification at WSJ/News Corp (after #1047's disclosure-register THIRTY-FIFTH at FT; #1112's litigation-register FORTIETH at WIRED; #1117's enforcement-register FORTY-SECOND at FT; #1118's journalist-register FORTY-THIRD at WaPo); extends the WSJ safety-crisis falsification line (THIRTY-FOURTH m856 at #1042; m616 Tumbler Ridge -0.55; m682 Clash expose -0.40) into the safety-chief-admission register and the enforcement register.
+- MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: OpenAI arms -0.40 (Astra, set at the m898 LASST lawsuit arm peg) / -0.35 (FTC probe, 0.05 softer than the Astra arm because the probe names two labs, same logic as #1117), mean -0.375; carried WSJ x Meta arms (m532, un-rescored per #807) -0.30 ($18B child-safety settlement) / -0.25 (teen-safety skeptical analysis), mean -0.275; illustrative delta (OpenAI minus Meta) -0.10. Engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; verdict directionally_supported_not_proven; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only.
+
+### Method
+- 5 browser.search query sets Oct 1 2026 PDT; 0 browser.open this run (excerpt-bounded per #503; wsj.com paywalled, relay-attested only). Four WIRED-targeted sets returned zero wired.com originals (bounded absence per the #927 strand, not claimed as a finding); the fifth set surfaced the WSJ pair and was SELECTED. REJECTED: Reuters Astra relay (in-corpus via #1077); glitch.news/cyberwar.news thin duplicates; explainx.ai FAQ (secondary analysis). All 3 source URLs verbatim from Full-URL listings; no wsj.com canonical URLs constructed. ASCII-only, no em dashes.
+- Pre-commit novelty greps per #715: zero test_type_a_1122 files on disk; "Type A #1122" absent from git log; max numeric mechanism_id 903 pre-insertion; zero numeric/underscore/dash 904 keys repo-wide pre-commit (needles format-built, own file excluded); FORTY-FOURTH member-claim form zero-hit in profiles/ pre-commit; THIRTY-FIRST direction present; THIRTY-SECOND absent; block key zero-hit repo-wide; 3 new URLs zero-hit repo-wide via git grep -F.
+
+### Corpus state
+- profiles/news-corp.yaml: m904 block (76-line insertion, single hunk) under competitor_relationships.openai, before the meta: key. tests/: new test_type_a_1122 file, 91 tests / 15 classes, 91/91 green pre-commit.
+- Supersession pins record the by-design flips: #1121 TestMechanismNovelty numeric/max + TestStatisticalDiscipline FORTY-FOURTH; #1120 TestGuardLifecycle1120 numeric/FORTY-FOURTH; #1119 TestForwardGuards1119 stays green (numeric pin checks entities+journalists only; underscore/dash HEAD-scoped, no such form lands).
+
+### Guard notes
+- In-flight, untouched: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test-file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+- Background full suite (~/workspace/goals/mediascope-meta-wearables-press-analysis/hidden_files/type_d_1120_full_suite.log): last write Oct 1 16:38 UTC, stuck at 2%, no live pytest; per #795 its verdict belongs to #1125 - checked only, not touched.
+
+### Commit hashes
+- main commit: 85efc7a0
+- anchor followup (ANCHORED_SHA patch per #565): 6b7f2385
+- doc-sync followup (README/ARCHITECTURE constants patch): TBD
+- log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit: TBD, terminal per #721).
+- All pushed to rayhe/mediascope-asymmetry main.
+
+### Doc-sync ratchet
+- README: | Tests | 58396 -> 58487, 1446 -> 1447 test files (+91/+1); #1122 row appended after the #1121 row (91 tests, 15 classes).
+- docs/ARCHITECTURE.md: #1122 row appended to the test tree after the #1121 row.
+
+### Rotation guard for #1123
+- Next run #1123 continues the 1120-1124 window as Type B (FOURTH leg D->E->A->B->C). Predecessor chain for its rotation guard: #1122 main 85efc7a0 / anchor 6b7f2385 / doc-sync TBD / log-hash TBD.
+
 ## #1121 Type E: podcast sentiment 147th verification cycle (GF episode 502 holds as newest, fourteenth verification since the Sep 28 release; Everyone Hates Elon 52-day hold; Attention Sphere 147th quoted-search no-match; press: 3 re-surfaces + 4 new-to-corpus keys; recency frontier holds at Sep 29) - Type E SECOND leg of the 1120-1124 window (Oct 1 2026, 09:35 AM PDT; main commit 2c9bc7ee / anchor 700112b6 / doc-sync 4cffcc18 / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58339/1445 -> 58396/1446 (+57/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
