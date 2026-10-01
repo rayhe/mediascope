@@ -17274,3 +17274,37 @@ monitoring-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohe
 ### Test file
 
 - tests/test_type_e_1111_podcast_sentiment_145th_verification_oct01_12am.py
+
+## Iteration #1116 - One-hundred-forty-sixth Cycle (Oct 1 2026, 05:00 AM PDT)
+
+### The Guilty Feminist
+
+EPISODE 502 HOLDS as latest - thirteenth Type E verification since the Sep 28 11:00am release (~66 hours after publication); NO 503 surfaced. Two-directory corroboration this run: listennotes main dir (crawled 3 hours: "LATEST EPISODE: The Guilty Feminist 502. Homophobia", 01:00:32; 762 episodes), podscan.fm main page (crawled 4 hours: "Latest Episode: 502. Homophobia with Freya Parker and Linus Karp", published Sep 28, 2026 11:00am); plus the listennotes TH locale variant (stale, in-corpus family). 4 own-repo GitHub commit URLs surfaced in the GF set this run (#911 commit 57934866, #756 commit 95903853, #916 commit 2f72a838, 2f9a4a27; each git-cat-file-verified present, still circular as evidence), rejected as circular, not ingested. Title/description carry zero Meta/wearables content (topic: homophobia; snippet-bounded); no tone score asserted (no first-hand read).
+
+ZERO new-to-corpus verbatim GF URL keys this run (all 3 surfaced non-circular GF keys >=1 pre-commit corpus hit). The all-key pure-re-surface streak extends to FIVE (restarted at one at #1096, two at #1101, three at #1106, four at #1111). ZERO Meta/wearables content in any GF episode across all 146 cycles (bounded search-result absence).
+
+### Everyone Hates Elon
+
+52-day hold continues (Aug 10 Epstein spoof -> Oct 1; date(2026,10,1)-date(2026,8,10)=52 days; the 53-day figure in my pre-commit draft was an arithmetic slip, caught by the hold-arithmetic test). 6 logged keys re-surfaced this run: afrotech ethics/consent (crawled 1d; "Glasses for people who don't do consent." still the primary motif), huckmag pervert-glasses piece (crawled <1h; in corpus via #1021, re-surfaced), linkedin whats-up-privacy roundup (crawled <1h; in corpus via #1001/#1006), feminist.org author archive (crawled 4h; in corpus via #1091, re-surfaced), linkedin kayvan-mirza op-ed (crawled 2d; in corpus via #1001/#1006), techtimes amnesty-boxes (crawled 4h; in corpus via #886). ZERO new-to-corpus verbatim EHE URL keys this run (pure re-surface cycle; all 6 EHE keys >=1 pre-commit corpus hit). 1 own-repo GitHub URL in the EHE result set (podcast-sentiment.md blob, present in the committed tree at HEAD) rejected as circular, not ingested. Non-surfacing strands remain in corpus: designtaxi 34124 Epstein-ad thread, softonic Epstein-poster, thebesttimes consent email-drive, cloudfront Kylie-poster mirror, ranzware Kylie-lenticular mirror, engadget bus-stops original, hyperallergic Epstein ad, petapixel Kylie-lenticular, fstoppers lenticular piece, singulism bus-stop strand, designtaxi 33476 Kylie-lenticular thread, latestly fact-check pair, lapost CNN relay. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 146 cycles (bounded search-result absence).
+
+### Attention Sphere
+
+One-hundred-forty-sixth quoted-search no-match as a podcast: the quoted query returned no matching podcast; all 6 result rows were this repository's own GitHub commit pages (40d6e7b0, 5e238e78, d4618aae, 0d9132c6, bf0cbbf1, dec56140; the podcast-sentiment.md blob did NOT surface this run; 16611229 absent this run; same set as the #1106/#1111 cycles; each git-cat-file-verified present, still circular as evidence), rejected as circular, not ingested. Task-spec name remains misidentified as a podcast. Real-world identity stands per #591 (advocacy group, named ED Kendall Schrohe). Tracked Sources advanced 145->146.
+
+### Press surfaces
+
+SEVEN previously-logged keys re-surfaced this run, all in corpus: usatoday Sep-23 camera-free piece (crawled 6d), designtaxi 39120 Meta camera-free piece (crawled <1h; in corpus via #986), americanow FreeNewsReader backlash piece (crawled 1h; in corpus via #1011), ppc.land Hamburg regulator piece (crawled <1h; in corpus via #1001-era), linkedin whats-up-privacy roundup (crawled <1h; in corpus via #1001/#1006), analyticsinsight Ray-Ban Audio piece (crawled 3h; in corpus via #1016), dig.watch camera-free Luna piece (crawled 2h; in corpus via #1001-era). ZERO new-to-corpus press URL keys this run. Recency frontier: HOLDS at Sep 29 (the #1071 thesun.ie Boz piece remains the newest-in-corpus surface; ninth hold since the #1071 advance; thesun.ie and gagadget did NOT surface this run but remain in corpus). Meta-exclusive privacy-pressure framing continues across all 146 cycles; no competitor camera-wearable coverage carries equivalent privacy-pressure framing. Snippet-bounded, tone NOT_SCORED per the standing rule.
+
+### Statistical discipline
+
+monitoring-only per the Aug 28 2026 standing rule: tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, falsification ledger holds at 41, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation. Hypothesis-generating only.
+
+**Research method:** 4 browser.search query sets this run (The Guilty Feminist Deborah Frances-White latest episode; quoted "Everyone Hates Elon" Meta Ray-Ban glasses campaign; quoted "Attention Sphere" podcast Meta tech wearables; Meta Ray-Ban smart glasses privacy news September 2026). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_e_1116 files on disk (glob); no Type E #1116 in git log (--grep); max numeric mechanism_id 900 in-tree pre-commit (m898/m899/m900 committed at #1112/#1113/#1114, verified at #1115 Type D; Type E adds no mechanisms); zero numeric/underscore/dash 901 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); all 15 surfaced distinct verbatim URL keys >=1 pre-commit corpus hit via git grep -F (3 GF keys, 6 EHE keys, 7 press keys with linkedin whats-up-privacy in both sets); 11 distinct own-repo GitHub URLs rejected as circular (4 GF commits, 1 EHE podcast-sentiment.md HEAD blob, 6 AS commits; each git-cat-file-verified present or in the committed tree, still circular as evidence). 27 result rows / 15 non-circular distinct URL keys / ZERO new verbatim URL keys this run. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Guard note
+
+The #1115 entry's forward-looking staleness claim ("#1114's TestForwardGuards1114 stays GREEN") went false after #1115's own doc-sync: its iteration-log prose quoted the contiguous underscore-901 key form in backticks, and #1114's sweep walks the whole repo tree including iteration-log.md, so the guard started failing at #1115's main commit. Fixed this run by rephrasing that line to the hyphenated form (zero repo-wide hits now); the guard is green again and the staleness claim is restored. The tripwire was prose, not a landed mechanism.
+
+### Test file
+
+- tests/test_type_e_1116_podcast_sentiment_146th_verification_oct01_5am.py
