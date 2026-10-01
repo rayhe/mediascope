@@ -1,3 +1,39 @@
+## #1110 Type D: m895/m896/m897 qualitative-discipline verification + post-1105-1109 corpus integrity (max numeric mechanism_id 897; zero-898 forward guards; #1105 background suite DIED at 10625 bytes, tombstone EIGHTIETH->EIGHTY-FIRST) - Type D FIRST leg of the 1110-1114 window, OPENING it (Sep 30 2026, 11:00 PM PDT; main commit TBD_MAIN / anchor TBD_PATCHED_BY_ANCHOR_FOLLOWUP_PER_565; log-hash followup registers both hashes here per #721; doc-sync 56592/1434 -> 56678/1435 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Rotation transparency
+- 1110-1114 window FIRST leg (per #565: D #1110 -> E #1111 -> A #1112 -> B #1113 -> C #1114; order D->E->A->B->C), OPENING the window
+- #1109 Type C main 1819ae4c / anchor 1bf29ace / log-hash bfec2b24 (Google AI-contribution pilot origination frame vs payout reveal; FRAME-THEN-PRICE as the TWENTY-NINTH relationship direction; FIFTH leg, CLOSED the 1105-1109 window)
+- #1108 Type B main 9cd97d0a / anchor cdac3f8d / log-hash 06622c5f (Nicole Nguyen WSJ x Meta Muse trust-history register vs FRESH Apple Siri hands-on; THIRTY-NINTH falsification-family member; ledger 38->39; FOURTH leg)
+- #1107 Type A main de889266 / anchor 7cac6995 / log-hash 6dd6eec5 (NYT x Anthropic Sep-2026 S-1 canary-register arm; THIRD leg)
+
+### Window mechanism verification
+- m895 (Type A #1107, profiles/nytimes.yaml): NYT x Anthropic Sep-29 Sorkin DealBook S-1 arm -0.35 MANUAL ILLUSTRATIVE market-systemic accountability register vs carried NYT x Meta arms (+0.10, -0.30; mean -0.10) un-rescored per #807; illustrative delta -0.25 (accountability lands HARDER on the reported-settlement counterparty than on Meta; naive deal-softening read inverts); within-entity swing -0.60 in 11 days; same-event third-publication leg (m883 Verge -0.40, m892 FT -0.35; max pairwise 0.05); NOT a falsification-family member; ledger holds at 38
+- m896 (Type B #1108, profiles/careers/journalists.yaml): Nicole Nguyen WSJ Meta Muse arm +0.10 (carried via m893, un-rescored per #807) vs FRESH Apple Siri hands-on review arm +0.40 (mid-Sep 2026, newslocker relay-attested, excerpt-bounded per #503); illustrative delta +0.30; the paid counterparty (Meta $50M/yr News Corp licensing) draws the HARDER entity-rooted trust register than zero-deal Apple; deal-softness prediction FAILS on ordering a SECOND time at the journalist level; THIRTY-NINTH falsification-family member; ledger 38->39; replicates #1103's THIRTY-EIGHTH (Meta x Anthropic) in the Meta x Apple pair; extends #693/m650 NINETEENTH (Nguyen Apple +0.40 constancy); 7 search sets, 1 relay-tier browser.open
+- m897 (Type C #1109, profiles/competitor-entities.yaml): Google AI-contribution pilot June-18-2026 origination frame vs payout reveal; FRAME-THEN-PRICE as the TWENTY-NINTH relationship direction (announced-cooperation framing as enrollment infrastructure before widget-metered price discovery; distinct from #27 UNILATERAL PRICING m891 and #28 DIVIDE-AND-CONQUER m894); tone NOT_SCORED per the Aug-28-2026 financial-architecture standing rule; falsifiable (three leg signatures); NOT a falsification-family member; ledger holds at 39; FORTIETH member-claim absent; THIRTIETH direction absent
+
+### Background suite verdict per #795
+- The #1105-launched background full suite DIED: 10625 bytes / 2470 dots (~4.4% of the corpus), last write Sep 30 18:59:49 PDT, zero summary tokens (no "passed"/"failed"/" collected "/"no tests ran"), zero F/E chars, no live pytest process
+- FIFTH consecutive background-suite death of the new streak (the 57-run streak ENDED at #1085 when the #1080 suite completed); tombstone lineage advances EIGHTIETH -> EIGHTY-FIRST
+- Re-launched the full suite WITHOUT -x to hidden_files/type_d_1110_full_suite.log (calendar by-design failures included; the verdict belongs to the NEXT Type D run, #1115)
+
+### Fresh synthetic engine calibration (new values, not #1105's; engine never promoted to findings)
+- Strong effect: asym -0.66625, t -28.03, p 1.22e-13, d -14.02, sig True; arm-swap negates exactly
+- Null effect: asym -0.005, t -0.27, p 0.79, sig False, CI crosses zero
+- Degenerate n=1 on the m895 illustrative pair ([-0.35], [-0.10]): asym -0.25, t 0.0, p 1.0, d 0.0, sig False (the #638/#643 degenerate contract)
+
+### Staleness pins (fail-by-design, recorded not repaired)
+- #1107 TestNovelty1107 (max 895) / TestLedgerHoldsAt38 / TestSupersessionPins1107::test_max_numeric_is_895_not_894: STALE by design (corpus max now 897; ledger now 39)
+- #1108 TestForwardGuards1108 (zero-897 numeric/underscore/dash): STALE by design (m897 landed at #1109)
+- #1109 TestCorpusNoveltyPostCommit / TestStalenessPins1109: STILL GREEN at #1110 (898 unlanded; this file carries no contiguous 898-form literal per #715)
+
+### Guard lifecycle
+- MAX_ID 897, NEXT_NUM 898; zero-898 forward guards pinned by this file (fail-forward cadence: the window-opener supersedes the prior file's NEXT_NUM pin)
+- THIRTIETH direction claim absent; FORTIETH member-claim absent (needles format-built per #715)
+
+### Concurrency
+- In-flight #899 (nytimes.yaml m771 hunk), #938 (test_type_b_938_ edit), #900 (untracked test_type_d_900_ file), #1012-wt: untouched; this run stages only its own test file + README + ARCHITECTURE + this log entry
+- Do NOT touch #1024's m846 (FOURTEENTH exclusionary-diversion; Ray's revert/leave/rebuild decision pending)
+
 ## #1109 Type C: Google AI-contribution pilot origination frame vs payout reveal (mechanism 897; FRAME-THEN-PRICE as the TWENTY-NINTH relationship direction, ledger holds at 39, FORTIETH member-claim absent) - Type C FIFTH leg of the 1105-1109 window, CLOSING it (Sep 30 2026, 10:00 PM PDT; main commit 1819ae4c / anchor 1bf29ace; log-hash followup registers both hashes here per #721 (this commit: bfec2b24, fill registers this hash in the entry); doc-sync 56511/1433 -> 56592/1434 (+81/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
