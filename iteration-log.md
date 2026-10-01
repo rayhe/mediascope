@@ -1,4 +1,4 @@
-## #1121 Type E: podcast sentiment 147th verification cycle (GF episode 502 holds as newest, fourteenth verification since the Sep 28 release; Everyone Hates Elon 52-day hold; Attention Sphere 147th quoted-search no-match; press: 3 re-surfaces + 4 new-to-corpus keys; recency frontier holds at Sep 29) - Type E SECOND leg of the 1120-1124 window (Oct 1 2026, 09:35 AM PDT; main commit 2c9bc7ee / anchor 700112b6 / doc-sync TBD / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58339/1445 -> 58396/1446 (+57/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1121 Type E: podcast sentiment 147th verification cycle (GF episode 502 holds as newest, fourteenth verification since the Sep 28 release; Everyone Hates Elon 52-day hold; Attention Sphere 147th quoted-search no-match; press: 3 re-surfaces + 4 new-to-corpus keys; recency frontier holds at Sep 29) - Type E SECOND leg of the 1120-1124 window (Oct 1 2026, 09:35 AM PDT; main commit 2c9bc7ee / anchor 700112b6 / doc-sync 4cffcc18 / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58339/1445 -> 58396/1446 (+57/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
 - This run is iteration #1121 Type E, the SECOND leg of the 1120-1124 window (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124, per the #565 anchor + rotation guard). Predecessor #1120 Type D verified in git log (main 69728626 / anchor 4605e386 / doc-sync 1254a00c / log-hash fill 85d1902e, Oct 1 2026 09:00 AM PDT; m901/m902/m903 qualitative-discipline verification + post-1115-1119 corpus integrity; max numeric mechanism_id 903; zero-904 forward guards; ledger holds at 43). Next run #1122 continues the window as Type A.
@@ -24,7 +24,7 @@
 ### Commit hashes
 - main commit: 2c9bc7ee
 - anchor followup (ANCHORED_SHA patch per #565): 700112b6
-- doc-sync followup (README/ARCHITECTURE + podcast-sentiment.md constants patch): TBD
+- doc-sync followup (README/ARCHITECTURE + podcast-sentiment.md constants patch): 4cffcc18
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit: TBD, terminal per #721).
 - All pushed to rayhe/mediascope-asymmetry main.
 
