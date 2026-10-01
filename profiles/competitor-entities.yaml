@@ -27953,3 +27953,75 @@ type_c_1119_microsoft_nine_entertainment_first_apac_news_deal_geographic_portfol
   concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) remain in-flight, untouched and unstaged - verified via git status before staging. Do NOT touch #1024''s m846 (FOURTEENTH, exclusionary-diversion): self-flagged sourcing-constraint violation; Ray''s revert/leave/rebuild-from-primary decision still pending.'
   yaml_parse_clean: true
   ascii_only: true
+
+type_c_1124_perplexity_hp_crusoe_sep15_dual_spend_under_suit_load_pay_for_reach_litigate_for_content_thirty_second_direction_oct01_12pm:
+  block_key: type_c_1124_perplexity_hp_crusoe_sep15_dual_spend_under_suit_load_pay_for_reach_litigate_for_content_thirty_second_direction_oct01_12pm
+  mechanism_id: 906
+  mechanism_name: 'Perplexity Sep-15-2026 dual spend (HP taskbar pre-install + Crusoe multi-year model-lifecycle on GB300 clusters) under seven-publisher suit load - PAY-FOR-REACH-LITIGATE-FOR-CONTENT as the THIRTY-SECOND relationship direction'
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1124
+  iteration_type: 'C'
+  iteration_time: '2026-10-01 12:00 PDT'
+  connects_to:
+  - 391
+  - 663
+  - 807
+  relationship_direction_taxonomy: 'THIRTY-SECOND relationship direction per the m807 enumeration (1 sue-then-sign m624; 2 pay-or-litigate bifurcation m636; 3 grant-then-sue m675; 4 license-over-authors m699; 5 pool-and-license m720; 6 infrastructure-capture m738; 7 publisher-as-feed-operator m741; 8 vendor-embed m807; 9 litigation-pooling m810; 10 publisher-traffic-gate m828; 11 commerce-conversion licensing m831; 12 regulatory-bargaining m834; 13 demand-for-equity m837; 14 exclusionary-diversion m846; 15 ecosystem-grant m852; 16 commerce-gatekeeping m858; 17 bundled-leverage m861; 18 demand-recycling m864; 19 backstop-recycling m867; 20 demand-underwriting m870; 21 metered-recycling m873; 22 risk-transfer m876; 23 inbound-pull m879; 24 spv-debt-shedding m882; 25 post-litigation-grant-renewal m885; 26 dual-role recycling m888; 27 unilateral pricing m891; 28 divide-and-conquer m894; 29 frame-then-price m897; 30 track-separated pricing m900; 31 geographic-portfolio-expansion m903): PAY-FOR-REACH-LITIGATE-FOR-CONTENT - the lab buys distribution (OEM taskbar placement) and compute (multi-year model-lifecycle on dedicated GB300 clusters) on undisclosed terms while the content-input cost for the same product is priced adversarially by courts across three continents. Reach and compute are cash-settled; content is litigated. Distinct from #2 pay-or-litigate bifurcation m636 (counterparty split on one input: pay some publishers, sue others) and from #18/#20/#21 (supplier-side capital recycling into the lab): here the split is by INPUT TYPE, simultaneous, on the same product stack, on the same news day (Sep 15 2026). Falsifiable: (1) if the HP/Crusoe deals carry no cash consideration the spend leg collapses; (2) if Perplexity settles the publisher suits on Comet-Plus-style terms the litigate leg collapses; (3) if a disclosed fee schedule emerges the direction must be re-scored against #27 unilateral pricing m891. Taxonomy-count tension carried: #14 exclusionary-diversion m846 is the direction slot most adjacent (diversion of capital around a blocked counterparty); the tension is documented, not resolved.'
+  finding: 'On Sep 15 2026 Perplexity announced two same-day deals while carrying seven live publisher copyright suits. (1) HP x Perplexity: HP preloads the Perplexity Windows app into the taskbar of new PCs, starting with the ZBook Ultra G3a mobile workstation (AMD Ryzen AI Max PRO 400-series / Max+ PRO 495, up to 192GB unified memory; Perplexity Computer agent integrated across M365 and 400+ apps); more HP devices to follow. Terms undisclosed. Announced Sep 15 2026 (unite.ai; HP GlobeNewswire press release, Palo Alto dateline, Jim Nottingham SVP quote). (2) Crusoe x Perplexity: multi-year partnership to run Perplexity''s entire model lifecycle - training frontier models on dedicated Nvidia GB300 NVL72 clusters (72 Blackwell Ultra GPUs + 36 Grace CPUs per rack) and serving via Crusoe Managed Inference; Crusoe also deploys Perplexity Enterprise Pro and Max to its 1,800 employees. Crusoe is Nvidia-backed. Terms undisclosed. Reported Sep 30 2026 (Startup Fortune, first-hand read, 56 lines). Startup Fortune''s frame: "Perplexity just bought its way onto the same taskbar" as Microsoft''s Copilot. The suit load: Dow Jones + NY Post (SDNY, Oct 21 2024, 1:24-cv-07984); NYT + Chicago Tribune (near-identical claims); Reddit, Encyclopaedia Britannica, Merriam-Webster (fall 2025); CNN (May 28 2026, 17,000 stories/videos/images); Nikkei + Asahi Shimbun (Tokyo District Court, filed Aug 2026, 2.2B yen / ~$14.7M each, ~$29M combined, injunction + deletion, unauthorized use alleged since June 2024, technical measures bypassed). SDNY: Judge Engelmayer denied Perplexity''s MTD in the Reddit case Jul 31 2026 (in corpus). Mid-Sep 2026: Perplexity swapped counsel Keker Van Nest for Proskauer Rose; the court weighs a conflict (Proskauer previously represented Reddit). Capital context (Sacra via Startup Fortune): ~$750M annualized revenue Aug 2026, up from $232M end-2025, driven by Computer (Feb 2026) plus usage-based pricing; Comet at 10M users; Nvidia in talks late Aug at a >$30B valuation (unclosed); prior $20B round last September.'
+  money_flow: 'Perplexity (payer) -> HP (payee): undisclosed consideration for taskbar pre-install placement on new PCs, ZBook Ultra G3a first. Perplexity (payer) -> Crusoe (payee): undisclosed multi-year consideration for full model-lifecycle compute (dedicated GB300 NVL72 clusters) + managed inference; Crusoe (1,800 employees) also becomes a Perplexity Enterprise customer. Courts (pricing authority) -> Perplexity (exposure): Tokyo 4.4B yen combined asserted (~$29M); SDNY Reddit claims kept alive post-MTD-denial; CNN 17,000-work claim; Dow Jones/NYPost 2024 claims. Investors -> Perplexity: Nvidia >$30B valuation talks (unclosed); $750M annualized revenue funds the spend. Content owners -> Perplexity: zero-fee Comet Plus rev-share (m391, voluntary) vs court-priced extraction claims. The asymmetry: cash settles reach and compute; content cost is adversarial.'
+  confounders:
+  - strength: STRONG
+    text: 'Undisclosed terms on both Sep-15 deals: neither HP nor Crusoe disclosed dollar figures, and the Startup Fortune "bought its way" frame is editorial characterization, not a confirmed cash payment. Either deal could be primarily marketing co-promotion with minimal cash transfer.'
+  - strength: STRONG
+    text: 'Single-source pairing: the same-day dual-deal narrative and the Sacra revenue figures ($750M annualized, Comet 10M) come from one thin trade outlet (Startup Fortune, Sep 30 2026); the revenue and valuation claims are relayed second-hand, not from Perplexity filings.'
+  - strength: MODERATE
+    text: 'Comet Plus exists (m391): Perplexity''s $42.5M 80/20 revenue-share program is a voluntary content-payment leg that partially offsets the "litigate-for-content" frame; the seven litigants chose the courtroom, but other publishers chose the program.'
+  - strength: MODERATE
+    text: 'Suit-count mixing: the seven-suit tally mixes filed complaints with relayed claims; the NYT/Chicago Tribune filing dates and the Britannica/Merriam-Webster details are thinly sourced in the read.'
+  - strength: WEAK
+    text: 'Enterprise-first distribution: the HP rollout starts on the ZBook Ultra G3a workstation, not consumer PCs; taskbar reach is prospective, not yet installed-base scale.'
+    counterargument: 'Ordinary startup sequencing: buy distribution and compute now, settle content later. The direction survives only if the asymmetry is structural - paywalled journalism is the product''s core input, and the lab cash-settles the inputs around it while pricing the core input in court. If the suits settle on Comet-Plus-style terms, the geometry collapses to ordinary licensing.'
+  coverage_nexus: 'Nikkei owns the Financial Times (tracked publication, profiles/financial-times.yaml): the FT''s owner is asserting 2.2B yen against Perplexity in Tokyo while Perplexity buys OEM distribution - the sharpest owner-litigant coverage nexus in the corpus. Conde Nast (WIRED''s parent) is the mirror image: it sent Perplexity a cease-and-desist (mitrade) while joining Comet Plus as a launch partner (m391). The corpus publication with a direct financial tie to Perplexity''s content leg is WIRED''s parent; the corpus publication whose owner is suing Perplexity is the FT.'
+  sources:
+  - url: https://startupfortune.com/hp-is-putting-perplexity-on-new-pcs-while-seven-publishers-sue-it/
+    what: 'Startup Fortune (Sep 30 2026), first-hand read 56 lines: Sep-15 same-day HP taskbar pre-install + Crusoe multi-year model-lifecycle (GB300 NVL72) announcements; seven publisher suits inventoried; "bought its way onto the same taskbar"; Sacra $750M annualized revenue, Comet 10M users, Nvidia >$30B talks unclosed; mid-Sep counsel swap Keker to Proskauer.'
+    accessed: '2026-10-01'
+    novel: true
+  - url: https://www.unite.ai/hp-to-pre-load-perplexitys-windows-app-starting-with-zbook-ultra-g3a/
+    what: 'Unite.AI (Sep 15 2026): Perplexity announced HP will pre-load the Windows app on HP devices starting with ZBook Ultra G3a, app placed directly in the Windows taskbar; Ryzen AI Max PRO 400-series; Perplexity Computer across M365, 400+ apps, 15+ models.'
+    accessed: '2026-10-01'
+    novel: true
+  - url: https://lifestyle.briefmobile.com/story/860663/hp-redefines-the-mobile-workstation-for-the-era-of-agentic-ai/
+    what: 'HP GlobeNewswire press release (Sep 15 2026, Palo Alto): HP ZBook Ultra G3a announced with Perplexity Computer preloaded; Jim Nottingham (SVP, Advanced Compute and Solutions) quote; AMD Ryzen AI Max+ PRO 495, up to 192GB unified memory; Autodesk Revit integration.'
+    accessed: '2026-10-01'
+    novel: true
+  - url: https://www.mexc.com/si-LK/news/74852
+    what: 'MEXC News relay: Nikkei + Asahi Shimbun joint Tokyo District Court suit; 2.2B yen (~$14.7M) each, ~$29M combined; unauthorized copying/storage since June 2024, technical measures bypassed; injunction + deletion demanded; $42.5M Comet Plus rev-share noted as launched amid legal pressure.'
+    accessed: '2026-10-01'
+    novel: true
+  - url: https://news.bloomberglaw.com/tech-and-telecom-law/top-japan-news-outlets-sue-perplexity-for-copyright-violations
+    what: 'Bloomberg Law: Nikkei Inc. and Asahi Shimbun Co. sued Perplexity for copyright infringement at the Tokyo District Court; injunction + 2.2B yen ($15M) each; Nikkei owns Japan''s biggest financial newspaper.'
+    accessed: '2026-10-01'
+    novel: true
+  - url: https://opentools.ai/news/asahi-shimbun-and-nikkei-take-perplexity-ai-to-court-over-copyright-infringement
+    what: 'OpenTools: 4.4B yen total demand; "free riding" characterization; fair-use vs licensing test-case framing.'
+    accessed: '2026-10-01'
+    novel: true
+  - url: https://www.mitrade.com/insights/news/live-news/article-3-1213717-20251023
+    what: 'Mitrade: suit filed in August 2026; Yomiuri similar case in Japan; BBC cease-and-desist earlier 2026; Conde Nast cease-and-desist letter to Perplexity; Dow Jones/NYPost diversion-of-customers allegation.'
+    accessed: '2026-10-01'
+    novel: true
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  falsification_family_member: false
+  falsification_family: 'NOT a member (ledger holds at 45 per the #754 convention; financial-architecture mapping of money flows per the #609/#614 qualitative boundary; no coverage-tone pair, so no uniform-prediction test; the seven publisher suits are litigation exposure, not coverage-tone evidence).'
+  novelty: 'FIRST dedicated corpus mechanism on the Perplexity Sep-15-2026 dual spend (HP taskbar pre-install + Crusoe multi-year model-lifecycle on GB300 clusters) under the seven-publisher suit load. Pre-commit novelty verified: zero test_type_c_1124 files on disk (glob); no "Type C #1124" in git log (--grep); max numeric mechanism_id 905 pre-commit; zero numeric/underscore/dash 906 key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; the seven novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); affirmative THIRTY-SECOND direction claim absent repo-wide pre-commit (absence-documentation only); THIRTY-FIRST direction present (m903). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: 'Iteration #1124 Type C is the FIFTH and CLOSING leg of the 1120-1124 window (D->E->A->B->C per #565 anchor + rotation guard; #1120 Type D main 69728626/anchor 4605e386/log-hash 85d1902e, #1121 Type E main 2c9bc7ee/anchor 700112b6/log-hash 4f5f5194, #1122 Type A main 85efc7a0/anchor 6b7f2385/log-hash 814cea1c, #1123 Type B main 3a59a038/anchor 724d4560/log-hash 818cba81; each verified in git log pre-commit). The 1115-1119 window verified closed. Next window 1125-1129 opens with Type D.'
+  concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+  yaml_parse_clean: true
+  ascii_only: true
