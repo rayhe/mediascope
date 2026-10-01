@@ -1,3 +1,24 @@
+## #1127 Type A: m907 The Verge x OpenAI Sep-29/30 safety-crisis double (Astra shelving homepage piece -0.40 + FTC probe brief -0.35, pair mean -0.375) vs carried Meta arms - FORTY-SIXTH falsification-family member, ledger 45->46 - Type A THIRD leg of the 1125-1129 window (Oct 1 2026, 03:00 PM PDT; main commit 80d3738e / anchor ef613b1e / doc-sync 459184c8 / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58819/1451 -> 58892/1452 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Rotation transparency
+- Window 1125-1129 THIRD leg: D #1125 (1:00 PM) -> E #1126 (2:00 PM) -> A #1127 (3:00 PM, this run). Next: #1128 Type B.
+- Predecessor #1126 Type E chain verified pre-commit: main 89349e3c / anchor d0478668 / doc-sync dcfc5eaf / log-hash ea551b23.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit.
+
+### Mechanism m907 (the-verge.yaml, competitor_relationships.openai)
+- Block key `type_a_1127_verge_openai_sep29_30_safety_crisis_double_astra_homepage_ftc_probe_brief` (4-space, designed keying, no mechanism-number substring per #715).
+- A1 Sep 29 2026, Jay Peters, "OpenAI won't release GPT-6.1 Astra due to worries about safety" - homepage placement, safety-crisis register, -0.40 MANUAL ILLUSTRATIVE. Excerpt-tier: buzzsumo journalist profile + explainx.ai timeline attestation; 0 browser.open per #503 (theverge.com policy-blocked).
+- A2 Sep 30 2026, Emma Roth, "The FTC has reportedly opened an investigation into OpenAI and Anthropic" - regulatory-enforcement register, -0.35 MANUAL ILLUSTRATIVE (0.05 softer, two-lab probe, same logic as m904). Verbatim Verge URL from source listing.
+- Carried Meta arms un-rescored per #807: #592 set (mean -0.55) + m811 (+0.10). Illustrative deltas: +0.175 primary / -0.475 secondary. Finding is register-AVAILABILITY, not mean-tone.
+- FORTY-SIXTH falsification-family member; ledger 45->46. FIRST enforcement-register falsification at The Verge; extends m901/m904 line to a third deal-partner publication; extends m880 Astra arc into the Sep-28-Oct-1 window; bounded by m425/m507; un-briefed safety-news peg per m712.
+- MANUAL ILLUSTRATIVE ONLY; engine NOT run; no analysis.json; NOT artifact-grade; verdict directionally_supported_not_proven.
+
+### Guards
+- Forward guards for #1128: zero-908 (numeric/underscore/dash), no-forty-seventh member, no-thirty-third direction (needles format-built per #715).
+- #1125's guard-lifecycle pins flip by design (max-906, zero-907 numeric/underscore, no-forty-sixth); #1124's zero-907 + forty-sixth-absent pins flip by design; #1122/#1123 supersession re-recorded (thirty-second pins stay red by design since #1124).
+- #1125 background suite checked only: alive ~3% at this run's checks; verdict belongs to #1130 per #795. NOT touched.
+- Pre-commit novelty: max 906, zero 907 key forms, no FORTY-SIXTH member, no THIRTY-THIRD direction, no test_type_a_1127 files, no "Type A #1127" in git log. Test gate: 63 passed / 10 deselected pre-commit.
+
 ## #1126 Type E: podcast sentiment 148th verification cycle (GF 502 holds as newest, fifteenth verification, ~75h; EHE 52-day hold; Attention Sphere 148th no-match; ZERO new URL keys - first all-sets-pure cycle since #1116; frontier HOLDS at Sep 29, eleventh hold) - Type E SECOND leg of the 1125-1129 window (Oct 1 2026, 02:00 PM PDT; main commit 89349e3c / anchor d0478668 / doc-sync dcfc5eaf / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58762/1450 -> 58819/1451 (+57/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
