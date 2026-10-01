@@ -55,7 +55,8 @@
 - Do NOT touch #1024's m846 (FOURTEENTH, exclusionary-diversion): self-flagged sourcing-constraint violation; Ray's revert/leave/rebuild-from-primary decision still pending
 
 ### Push status per #864
-- TBD
+- Pushed 2026-09-30 ~18:25 PDT: 0a1baee3..5c5bfa50 main -> main via ambient proxy env + temp GIT_CONFIG_GLOBAL Basic header (per the 2026-09-30 AGENTS.md rule); temp config carried the url.insteadof rewrites since the repo remote is SSH-form (without them the push falls back to SSH and dies); PAT extracted clean of the mangled proxy suffixes in ~/.git-credentials
+- ls-remote verify: local HEAD 5c5bfa50 == remote HEAD 5c5bfa50
 
 ---
 
