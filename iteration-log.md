@@ -31,7 +31,7 @@
 ### Commit hashes
 - main commit: ccac64fb
 - anchor followup (ANCHORED_SHA patch per #565): 092d0549
-- log-hash followup registers main + anchor hashes in this entry per #721 (this commit: TBD).
+- log-hash followup registers main + anchor hashes in this entry per #721 (this commit: ef5bf9c5).
 - All three to be pushed to rayhe/mediascope main.
 
 ## #1114 Type C: Google News AI pilot three-instrument TRACK-SEPARATED PRICING - commercial partnerships (Dec 2025 deals, take-it-or-leave-it, NDAs, no-sue clauses, Guardian + FT at single-figure GBP millions/yr, FT joined Feb 2026) vs AI Contribution Pilot widget-metered micro-pricing (m891/m894/m897) vs News Showcase legacy licensing conversion - THIRTIETH relationship direction, mechanism 900, ledger holds at 41 (NOT a falsification-family member) - Type C FIFTH leg of the 1110-1114 window, CLOSING it (Oct 1 2026, 03:00 AM PDT; main commit 9ef55c47 / anchor 26bb3d3a; log-hash followup registers both hashes here per #721 (this commit pending log-hash fill); doc-sync 56860/1438 -> 56930/1439 (+70/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
