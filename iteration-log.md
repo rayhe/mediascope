@@ -1,3 +1,64 @@
+## #1105 Type D: m892/m893/m894 qualitative-discipline verification + post-1100-1104 corpus integrity (max numeric mechanism_id 894; zero-895 forward guards runtime-built per #715; ledger holds at 38 with THIRTY-EIGHTH member-claim once and THIRTY-NINTH member-claim absent; TWENTY-EIGHTH direction present, TWENTY-NINTH direction absent) + #1100 background-suite verdict (DIED at 1745 bytes / 1577 dots ~2.8%, last write Sep 30 13:41:29 PDT, zero summary tokens, no live pytest - FOURTH consecutive death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed; tombstone lineage SEVENTY-NINTH -> EIGHTIETH) + fresh synthetic engine calibration (real signature: strong asym -0.58 p=3.40e-10 sig True; null silent p~0.90; degenerate n=1 t=0.0 p=1.0) + suite re-launched without -x to type_d_1105_full_suite.log - Type D FIRST leg of the 1105-1109 window, OPENING it (Sep 30 2026, 06:00 PM PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD); doc-sync 56255/1429 -> 56327/1430 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched).
+
+### Rotation transparency
+- 1105-1109 window FIRST leg (per #565: D #1105 -> E #1106 -> A #1107 -> B #1108 -> C #1109; order D->E->A->B->C), OPENING the window
+- #1104 Type C main 9bb80079 / anchor 041b62f1 / log-hash 35ea0fcc + log-hash fill 925fe7d1 + test-fix 0a1baee3 (m894, CLOSED the 1100-1104 window)
+- #1103 Type B main bfe7f31a / anchor 40654528 / log-hash 13ab9340 + push-status a82053ba + test-fix 32cff129 (m893, THIRTY-EIGHTH falsification-family member, ledger 37->38)
+- #1102 Type A main ac41d979 / anchor 2e3fe060 / log-hash 741a16f1 + push-status f849ab5a (m892)
+- #1101 Type E main 49b1d581 / anchor 95860871 / log-hash 04f5fb9e (podcast sentiment 143rd verification cycle, monitoring-only, ledger holds at 37)
+- #1100 Type D main 6678ba05 / anchor eb9cc385 / log-hash 07c91cf1 + log-hash followup 07cd9002 + push-status 66562a9b (m889/m890/m891 verification)
+- All five predecessor chains verified present via git log before this run's commit; the 1100-1104 window verified closed as a consecutive newest-first sequence in git history (D #1100, E #1101, A #1102, B #1103, C #1104)
+- Pre-commit novelty greps: zero test_type_d_1105 files on disk (glob) other than this file; no "Type D #1105" in git log (--grep); max numeric mechanism_id 894 pre-commit; zero numeric/underscore/dash 895 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded; __pycache__ excluded per #715); block keys zero-hit repo-wide pre-commit in committed tree; no #1105 row in README/ARCHITECTURE test tables pre-commit. ASCII-only, no em dashes.
+- Working-tree concurrency untouched this run: #899 Type C (profiles/nytimes.yaml m771 hunk), #938 Type B (open anchor edit in its test file), #900 Type D (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file)
+- Guard lifecycle: the #1102 Type A run pinned max-892 guards (TestNovelty1102::test_max_numeric_mechanism_id_is_892, TestSupersessionPins1102::test_max_numeric_is_892_not_891); the #1103 Type B run pinned max-893 (TestNovelty1103::test_max_numeric_mechanism_id_is_893); the #1104 Type C run pinned the zero-895 forward guards. This run LANDS no new mechanism (Type D verifies): the #1102/#1103 max guards fail BY DESIGN (pinned via subprocess in TestTypeDForwardLookingStaleness1105); the #1104 zero-895 guards still pass. This run pins the zero-895 forward guards (numeric/underscore/dash, all zero) and the no-twenty-ninth-direction guard.
+- Next run #1106 Type E continues the 1105-1109 window.
+
+### Finding summary
+- Type D #1105 - qualitative-discipline verification of the three landed window mechanisms; NO new mechanism landed this run (Type D runs verify, they do not land)
+- m892 (Type A #1102, financial-times.yaml): FT x Anthropic Sep-2026 S-1 existential-risk register vs carried FT x Meta arms from m625 (un-rescored per #807). MANUAL ILLUSTRATIVE Anthropic Sep mean -0.225 vs Meta carried mean -0.285, delta +0.06 near-null parity; A1-only read -0.35 vs the Verge S-1 register -0.40 (m883) = 0.05 cross-publication near-parity at two null-tie outlets; within-entity swing m676 +0.20 to -0.35 = -0.55 in 16 days, register follows the peg not the tie. m883 same-event second-publication leg pairing per the m847/m856 precedent. NOT a falsification-family member (ledger holds at 37 -> carried forward to 38 this window via m893).
+- m893 (Type B #1103, journalists.yaml): Nicole Nguyen (WSJ) Sep-2026 Meta Muse trust-history register (+0.10 MANUAL ILLUSTRATIVE, excerpt-tier) vs Jul-16-2026 Anthropic Claude password-agent functional-caution register (+0.20, Claude-facing split documented for the first time; Perplexity-facing register -0.4 carried per #522). Illustrative delta (Anthropic minus Meta) +0.10: the paid cooperative counterparty (Meta, $50M/yr News Corp licensing) draws the HARDER trust register than the zero-cooperative-deal entity (Anthropic); the deal-softness prediction FAILS on ordering at the journalist level. THIRTY-EIGHTH falsification-family member; ledger 37->38. Extends the #693/m650 NINETEENTH constancy lineage to the AI-agent review genre.
+- m894 (Type C #1104, competitor-entities.yaml): Google AI-answer payment pilot divide-and-conquer (The Decoder Sep 30 2026, first-hand) - DIVIDE-AND-CONQUER (fragmented-counterparty pricing) as the TWENTY-EIGHTH relationship direction: the payer defeats counterparty pricing power not by setting a low price (that is #27 UNILATERAL PRICING, m891) but by structuring every economic transfer as bilateral and individual, so publishers negotiate separately rather than collectively and no market price can form; substitutability ("other sources fill the gap") makes any individual holdout worthless. Tone NOT_SCORED (tone_scored false). NOT a falsification-family member; carries the m737 taxonomy-count tension note.
+- Corpus integrity: max numeric mechanism_id 894; zero 895 keys in numeric/underscore/dash forms (needles runtime-built per #715); ledger holds at 38 (THIRTY-EIGHTH member-form once in journalists.yaml m893; THIRTY-NINTH member-claim form absent in profiles/); TWENTY-SEVENTH direction (m891 UNILATERAL PRICING) and TWENTY-EIGHTH direction (m894 DIVIDE-AND-CONQUER) present in competitor-entities.yaml; TWENTY-NINTH direction claim form absent repo-wide
+- Statistical discipline across all three: tone MANUAL ILLUSTRATIVE ONLY (m892/m893) or NOT_SCORED (m894), p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant false / not asserted at the finding layer, engine NOT run, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade; no analysis.json update; only m893 is a falsification-family member (ledger holds at 38)
+
+### Background suite verdict per #795
+- The #1100-launched background full suite DIED: 1745 bytes (1577 dots, ~2.8% of the 56255 corpus), last write Sep 30 2026 13:41:29 PDT, zero summary tokens (no passed/failed/collected), no live pytest process
+- FOURTH consecutive background-suite death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed
+- Tombstone lineage advances SEVENTY-NINTH -> EIGHTIETH
+- Suite re-launched by this run as a background process writing to goal hidden_files type_d_1105_full_suite.log WITHOUT -x (full inventory for the #1110 triage; the next Type D run checks its verdict per #795)
+
+### Synthetic engine calibration (fresh values, real signature)
+- calculate_asymmetry(target_scores, peer_scores, target_entity, peer_entities, publication_slug, period_start, period_end) -> AsymmetryScore
+- STRONG (Meta vs [Anthropic, OpenAI], n=8/arm): asymmetry -0.58, t -21.3058, p 3.40e-10, d -10.6529, significant True; arm-swap negates exactly
+- NULL: asymmetry -0.0025, t -0.1274, p 0.9004, d -0.0637, significant False, CI (-0.0375, 0.031281) crossing zero
+- DEGEN ([-0.55] vs [-0.35]): asymmetry -0.20, t 0.0, p 1.0, d 0.0, not significant
+- Standing rule: finding layer is MANUAL ILLUSTRATIVE ONLY; engine never promoted to findings; no analysis.json update
+
+### New Type D files
+- tests/test_type_d_1105_m892_m893_m894_qualitative_corpus_integrity_sep30_6pm.py (72 tests, 15 classes: novelty, rotation guard, corpus integrity, m892/m893/m894 qualitative discipline, falsification ledger, forward-looking staleness, guard lifecycle, background-suite verdict, synthetic calibration, suite relaunch, doc-sync, iteration-log, in-flight isolation)
+- Staleness pins (subprocess, fail-by-design): #1102 max-892 guards FAIL (numeric, supersession), #1103 max-893 guard FAILS; #1104 zero-895 guards still PASS
+
+### Commit hashes
+- Main: TBD (Type D #1105: m892/m893/m894 verification; FIRST leg of the 1105-1109 window, OPENING it)
+- Anchor followup: TBD (patch ANCHORED_SHA per #565)
+- Log-hash followup: TBD (register main + anchor in the entry per #721)
+- ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
+
+### Doc-sync ratchet
+- README.md: stats line 56255/1429 -> 56327/1430 (+72/+1); test-table row added
+- docs/ARCHITECTURE.md: tree row added
+- Pre-commit green gate: 72-test suite run with venv python, deselecting only the commit-dependent anchor/rotation/doc-sync/itlog/tombstone classes per #565/#719/#721 (their failures are by design pre-commit); all others green including the staleness subprocess pins
+- Authoritative .venv pytest --collect-only: 72 tests collected this file
+
+### Concurrency
+- In-flight at this run's checks: #899 Type C block (m771, uncommitted hunk in profiles/nytimes.yaml), #938 Type B test file (uncommitted working-tree edit), #900 Type D test file (untracked), #1012 working-tree edit of the committed Type A #1012 test file - all UNCOMMITTED, owned by their runs, untouched by this run (targeted staging only)
+- Do NOT touch #1024's m846 (FOURTEENTH, exclusionary-diversion): self-flagged sourcing-constraint violation; Ray's revert/leave/rebuild-from-primary decision still pending
+
+### Push status per #864
+- TBD
+
+---
+
 ## #1104 Type C: Publisher divide-and-conquer against the AI-answer payment pilot (The Decoder Sep 30 2026, first-hand) - DIVIDE-AND-CONQUER (fragmented-counterparty pricing) as the TWENTY-EIGHTH relationship direction (m894; distinct from #27 UNILATERAL PRICING m891 and the June 2026 training-deals divide-and-rule; substitutability makes individual holdout worthless) - Type C FIFTH leg of the 1100-1104 window, CLOSING it (Sep 30 2026, 05:00 PM PDT; main commit 9bb80079 / anchor 041b62f1; log-hash followup registers both hashes here per #721 (this commit: 35ea0fcc); doc-sync 56172/1428 -> 56255/1429 (+83/+1)).
 
 ### Rotation transparency
