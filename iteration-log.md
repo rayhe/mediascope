@@ -25,7 +25,7 @@
 
 ### New Type D files
 - Tests: `tests/test_type_d_1115_m898_m899_m900_qualitative_corpus_integrity_oct01_4am.py` (88 tests, 15 classes; 76 green pre-commit; 12 deselected pre-commit per #565/#719/#721 - TestNovelty1115 git-log pin, 3 rotation-guard/anchor pins, tombstone pin, 4 doc-sync pins, 3 iteration-log pins - all patched green post-doc-sync).
-- Literal discipline per #715: NO contiguous `mechanism_901`, `"FORTY-SECOND falsification-family member"`, or `"THIRTY-FIRST relationship direction"` literals anywhere in the new file (all format-built: `_T42`, `_TW31`); landed-claim literals `_T41`/`_TW30` permitted; prose uses hyphenated forms.
+- Literal discipline per #715: NO contiguous underscore-901 key form, `"FORTY-SECOND falsification-family member"`, or `"THIRTY-FIRST relationship direction"` literals anywhere in the new file (all format-built: `_T42`, `_TW31`); landed-claim literals `_T41`/`_TW30` permitted; prose uses hyphenated forms.
 - Supersession notes: this run inherits #1114's zero-901 guards and no-thirty-first-direction guard; the #1120 Type D run will pin zero-902 and no-thirty-second-direction.
 
 ### Commit hashes
