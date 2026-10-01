@@ -111,7 +111,7 @@ OWN_BASENAME = (
     "test_type_e_1121_podcast_sentiment_147th_verification_oct01_9am.py"
 )
 
-ANCHORED_SHA = "0" * 40  # patched by the anchor followup per #565
+ANCHORED_SHA = "2c9bc7ee7da65707f58382ebe81831903fe62a62"  # main commit, patched per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -453,9 +453,13 @@ class TestPressSurfaces:
             assert _corpus_hit_count(key) >= 1, "missing corpus hit for %s" % key
 
     def test_four_new_press_keys_zero_precommit_hits(self):
-        # New-to-corpus verbatim URL keys: zero pre-commit corpus hits
-        # each (verified in the pre-commit battery; asserted here as
-        # the landing record).
+        # PRE-COMMIT NOVELTY PIN: the four press keys were verified
+        # zero-hit against the pre-commit tree in the pre-commit
+        # battery (git grep -F at 09:35 PDT Oct 1). Post-commit this
+        # assertion is BY DESIGN red: the main commit lands this
+        # file, which documents the new keys, so HEAD carries hits.
+        # Deselect in post-commit runs (like the TestRotationGuard
+        # novelty pin).
         for key in NEW_PRESS_KEYS:
             assert _corpus_hit_count(key) == 0, "unexpected hit for %s" % key
 
