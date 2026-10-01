@@ -1833,6 +1833,68 @@ competitor_relationships:
       - 823
       - 637
 
+    type_a_1117_ft_openai_ftc_agent_safety_probe_vs_carried_meta_arms_oct01_6am:
+      mechanism_id: 901
+      mechanism_name: 'FT x OpenAI Sep-30 FTC agent-safety probe coverage (regulatory-enforcement register) vs carried FT x Meta arms - FORTY-SECOND falsification-family member'
+      iteration: 1117
+      hour_type: A
+      window: '1115-1119, THIRD leg (D #1115 -> E #1116 -> A #1117 -> B #1118 -> C #1119 per #565)'
+      date: '2026-10-01 06:00 PDT'
+      finding: 'FIRST dedicated corpus mechanism on the FT''s coverage of the FTC''s Sep-30 widened probe into Anthropic AND OpenAI over AI agent safety. The Financial Times is relay-attested as an original on the story by two independent relays: runtimewire (crawled <1h): the Sep-29 White House accord ''according to the FT'' and METR ''also under examination, according to the FT''; archynetys (Oct 1 05:37 UTC): ''Coverage from Reuters, Bloomberg and the Financial Times notes that the investigation centers on product-safety concerns and potential consumer harms linked to the companies'' advanced AI models.'' Register: regulatory-enforcement accountability on the $5-10M/yr licensing DEAL PARTNER, no delay, no softening visible. The naive uniform payer-softening prediction (ft.yaml competitor_relationships.openai coverage_prediction ''softer'', from the Apr 29 2024 FT-OpenAI licensing deal) FAILS on the enforcement peg: the FT routes the regulator''s product-safety probe onto OpenAI in the same register it applies to the non-deal lab. FORTY-SECOND falsification-family member (ledger 41->42); FIRST regulatory-enforcement-register falsification at FT (after #1047''s disclosure-register THIRTY-FIFTH at FT; #1112''s litigation-register FORTIETH at WIRED; #1113''s journalist-register FORTY-FIRST). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; verdict directionally_supported_not_proven; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only.'
+      openai_arm:
+        event: 'FTC widens probe into Anthropic and OpenAI over AI agent safety (announced Sep 30 2026)'
+        ft_role: 'FT relay-attested as an original: runtimewire (''according to the FT'' x2) + archynetys (FT among Reuters/Bloomberg/FT product-safety-framing coverage)'
+        register: "regulatory-enforcement accountability: 'product-safety concerns and potential consumer harms linked to the companies' advanced AI models' (archynetys relay of the FT framing)"
+        peg_context: 'follows the Sep-29 White House self-regulation accord (Trump-hosted AI executives; Anthropic, OpenAI + four labs signed) and the Sep-28 GPT-6.1 Astra deception-shelving; enforcement is the adversarial half of the week news'
+        tone: -0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE: regulator-probe accountability register on the deal partner; set 0.05 softer than the LASST lawsuit arm (-0.40, m898) because the probe names two labs, diluting entity-specific adversarialness'
+      meta_arms_carried:
+        arms:
+          - mechanism: 625
+            item: 'FT Meta unveils AI personal assistant linked to WhatsApp and Instagram (Sep 8-9 2026)'
+            tone: 0.05
+            basis: 'product-distribution factual register, carried un-rescored per #807'
+          - mechanism: 823
+            item: 'FT Meta Connect momentum relay (Sep 24-25 2026)'
+            tone: 0.20
+            basis: 'constructive momentum register, carried un-rescored per #807'
+        meta_mean: 0.125
+      scorer:
+        openai_tone: -0.35
+        meta_mean_tone: 0.125
+        illustrative_delta_openai_minus_meta: -0.475
+        method: 'MANUAL ILLUSTRATIVE ONLY; engine NOT run; degenerate n=1 per arm per the #638/#643 contract (t 0.0, p 1.0, d 0.0, is_significant False)'
+        reading: 'deal partner covered ~0.5 harder than the null-tie comparator on this window adversarial peg; the uniform softening prediction fails on ordering'
+      financial_relationship:
+        deal: 'FT-OpenAI content licensing, signed Apr 29 2024'
+        value: '$5-10M/yr (WSJ via Digiday 2024-in-review timeline; Reuters Apr 29 2024: terms not disclosed)'
+        coverage_prediction: 'softer (uniform payer-softening)'
+        test: 'Sep-30 FTC agent-safety probe peg naming OpenAI'
+        result: 'prediction FAILS: FT covers the enforcement peg on the payer with no delay or softening (relay-attested)'
+      falsification_family_member: true
+      falsification_ledger: 42
+      ledger_note: 'FORTY-SECOND falsification-family member (ledger 41->42). Peg: Sep-30 FTC agent-safety probe (regulatory-enforcement register). Publication: FT. Deal partner: OpenAI ($5-10M/yr licensing, Apr 29 2024). Extends the safety-crisis falsification line (#1047 disclosure register at FT, THIRTY-FIFTH) into the regulatory-enforcement register; extends the enforcement-litigation line (#1112 LASST at WIRED, FORTIETH) to the FT. FORTY-THIRD member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+        - 'STRONG: FT-original absence - excerpt-bounded evidence (0 browser.open per #503); FT originals paywalled; the OpenAI arm reads through the runtimewire relay (according to the FT) plus archynetys aggregation; full-text FT register could differ.'
+        - 'STRONG: two-entity enforcement event - the FTC probe names Anthropic AND OpenAI, so the adversarial register is not OpenAI-targeted; the falsification claim is that the DEAL did not suppress the OpenAI coverage, which holds regardless of the symmetric register.'
+        - 'MODERATE: relay fidelity - runtimewire crawled <1h (small outlet); archynetys is a trend aggregator; both agree on the FT product-safety framing but neither carries verbatim FT text.'
+        - 'MODERATE: unmatched-peg comparator - the carried Meta arms are product-launch/momentum registers, not enforcement; the clean read is peg-internal (the FT covers the payer enforcement peg adversarially), the cross-entity delta is contextual only.'
+        - 'WEAK: n=1 scored arm; degenerate statistical contract; one more FT arm would shift the illustrative delta.'
+      counter_evidence:
+        - 'm625 (FT Sep 3-9 launch-week: OpenAI Astra AGI-era coronation +0.25 vs Meta Muse distribution +0.05) - the incentive-prediction-consistent baseline on matched product-launch pegs; this run does not refute it.'
+        - 'm718 (+0.55 matched capital-raise gap, Sep-15 OpenAI investor-demand scoop vs Jun-5 Meta equity-raise desperation) stands unchallenged.'
+        - 'm441 (FT Sep-1 Anthropic constructive fundraising +0.22 vs Meta equity-raise desperation -0.40) - thesis-consistent baseline; the enforcement peg does not refute it.'
+        - 'm754 (FT Sep-18 OpenAI cash-burn scoop -0.15) - payer-investigates-payer precedent, consistent direction with this run.'
+        - 'm847/#1027 + #1042/m856 (FT/WSJ rogue-agent disclosure coverage) - same-week safety-crisis coverage line this run extends.'
+      research_method: '5 browser.search query sets Oct 1 2026 PDT (Financial Times OpenAI sued lawsuit September 2026; ft.com OpenAI story September 30 2026 ChatGPT; Financial Times OpenAI Astra cancelled shelved deception model September 2026; according to the Financial Times OpenAI Astra deception safety September 2026; Financial Times LASST OpenAI Hugging Face lawsuit CDAFA September 29 2026). SELECTED: runtimewire FTC-probe piece (FT-attributed x2, novel URL) + archynetys FTC-probe trend page (FT product-safety framing, novel URL). REJECTED: WSJ-broke Astra story (in-corpus via #1112 relay family); LASST relays without FT attribution; TechCrunch/usecarly newsletter aggregation. 0 browser.open this run (excerpt-bounded per #503; FT originals paywalled, relay-attested only). Pre-commit novelty greps: zero test_type_a_1117 files on disk; the 2 new URLs zero-hit repo-wide via git grep -F; max numeric mechanism_id 900 pre-insertion; zero numeric/underscore/dash 901 keys repo-wide pre-commit (needles format-built per #715, own file excluded); FORTY-SECOND member-claim form zero-hit in profiles/ pre-commit (negative-guard wording only); THIRTIETH relationship direction present repo-wide; THIRTY-FIRST direction absent repo-wide; block key zero-hit repo-wide pre-commit. All URLs verbatim from Full-URL listings; no ft.com canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+        - https://runtimewire.com/article/ftc-anthropic-openai-ai-agent-safety-probe
+        - https://www.archynetys.com/trend/2026-09-30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai
+      test_file: 'tests/test_type_a_1117_ft_openai_ftc_agent_safety_probe_vs_carried_meta_arms_oct01_6am.py'
+      connects_to: [625, 823, 754, 718, 441, 847, 898]
+      rotation_transparency: 'Iteration #1117 Type A is the THIRD leg of the 1115-1119 window (D #1115 -> E #1116 -> A #1117 -> B #1118 -> C #1119, per the #565 anchor + rotation guard). Predecessor #1116 Type E verified in git log (main 3e117938 / anchor a06f69be / log-hash 8fa48141 / log-hash fill 68c61667, Oct 1 2026 05:00 AM PDT; 146th podcast-sentiment verification; ledger holds at 41). The 1110-1114 window is verified closed as a consecutive newest-first sequence. Next run #1118 continues the window as Type B.'
+      verdict: directionally_supported_not_proven
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
   meta:
     financial_tie: none
     estimated_value: $0
