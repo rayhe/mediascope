@@ -64,7 +64,7 @@ TYPE_LETTER = "A"
 WINDOW = "1105-1109"
 MECH_NUM = 895
 NEXT_NUM = 896
-ANCHORED_SHA = "0" * 40  # patched to the main-commit SHA in the anchor followup
+ANCHORED_SHA = "de8892667a41634c02f456b22aec703def0c8984"  # main commit, patched in the anchor followup per #565
 OWN_BASENAME = (
     "test_type_a_1107_nyt_anthropic_s1_canary_register_"
     "vs_meta_carried_arms_sep30_8pm.py"
