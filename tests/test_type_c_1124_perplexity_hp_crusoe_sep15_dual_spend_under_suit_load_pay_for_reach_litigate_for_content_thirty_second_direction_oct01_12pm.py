@@ -61,8 +61,8 @@ MITRADE_URL = ("https://www.mitrade.com/insights/news/live-news/"
                "article-3-1213717-20251023")
 
 # Patched post-commit once README/ARCHITECTURE doc-sync lands.
-README_TEST_COUNT = 58589  # pre-doc-sync total
-README_FILE_COUNT = 1448  # pre-doc-sync total
+README_TEST_COUNT = 58673  # post-doc-sync total
+README_FILE_COUNT = 1449  # post-doc-sync total
 TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
