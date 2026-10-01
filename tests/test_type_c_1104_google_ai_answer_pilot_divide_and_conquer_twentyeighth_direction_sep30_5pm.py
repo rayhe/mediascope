@@ -665,16 +665,20 @@ class TestStalenessPins1104:
         )
         assert res.returncode == 0, res.stdout[-500:]
 
-    def test_1099_no_twenty_eighth_guard_still_green_against_head(self):
-        """#1099's no-twenty-eighth guard greps HEAD, which lags this run's
-        uncommitted files: it stays green pre-commit and goes stale BY
-        DESIGN at the main commit. The next pin documents the working-tree
-        premise violation."""
+    def test_1099_no_twenty_eighth_guard_stale_by_design_post_commit(self):
+        """#1099's no-twenty-eighth guard greps HEAD. Pre-commit it stayed
+        green (HEAD lagged this run's uncommitted files); at the main
+        commit HEAD caught up and the guard fails BY DESIGN - the corpus
+        now deliberately contains the TWENTY-EIGHTH relationship
+        direction. This is the guard's designed end-state; the #1105
+        Type D run inherits the no-twenty-ninth guard pinned in
+        TestCorpusNoveltyPostCommit."""
         res = _class_run(
             F1099,
             "TestCorpusNoveltyPostCommit::test_no_twenty_eighth_direction",
         )
-        assert res.returncode == 0, res.stdout[-500:]
+        assert res.returncode != 0, res.stdout[-500:]
+        assert "test_no_twenty_eighth_direction" in res.stdout
 
     def test_twenty_eighth_needle_present_in_working_tree(self):
         """The needle #1099's guard protects is now deliberately present in
