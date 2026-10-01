@@ -68,7 +68,7 @@ TYPE_LETTER = "B"
 WINDOW = "1105-1109"
 MECH_NUM = 896
 NEXT_NUM = 897
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # main commit, patched in the anchor followup per #565
+ANCHORED_SHA = "9cd97d0a"  # main commit, patched in the anchor followup per #565
 OWN_BASENAME = (
     "test_type_b_1108_nicole_nguyen_wsj_siri_grows_up_"
     "vs_muse_trust_register_sep30_9pm.py"
