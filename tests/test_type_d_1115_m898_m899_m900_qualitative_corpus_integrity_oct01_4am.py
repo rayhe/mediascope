@@ -128,7 +128,7 @@ MAX_ID = 900
 NEXT_NUM = 901
 
 # Patched by the anchor followup commit per #565 (post-main-commit).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "ccac64fb"
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
