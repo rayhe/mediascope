@@ -110,8 +110,8 @@ ANCHORED_SHA = "80d3738e6f5a148bf83d82be32c01658e6abfbe4"
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
-README_TEST_COUNT = 0
-README_FILE_COUNT = 0
+README_TEST_COUNT = 58892
+README_FILE_COUNT = 1452
 
 # The m907 block key carries no mechanism-number substring (designed
 # keying), so it is a plain literal per #715.
