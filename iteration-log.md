@@ -29,8 +29,8 @@
 - Supersession notes: this run inherits #1114's zero-901 guards and no-thirty-first-direction guard; the #1120 Type D run will pin zero-902 and no-thirty-second-direction.
 
 ### Commit hashes
-- main commit: TBD
-- anchor followup (ANCHORED_SHA patch per #565): TBD
+- main commit: ccac64fb
+- anchor followup (ANCHORED_SHA patch per #565): 092d0549
 - log-hash followup registers main + anchor hashes in this entry per #721 (this commit: TBD).
 - All three to be pushed to rayhe/mediascope main.
 
