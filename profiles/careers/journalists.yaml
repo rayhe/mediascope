@@ -24803,12 +24803,16 @@ david_heaney:
   - XR headsets
   - smart glasses
   - AR/VR hardware
-  notes: 'UploadVR staff writer David Heaney (search-index byline attribution "UploadVR David Heaney" on both arms this run). Type B #983 (Sep 25 2026, 02:00 PDT): mechanism 821 - FIRST dedicated corpus mechanism on Heaney. Rejected as a Type B candidate at #928 ("no corpus presence, no same-writer competitor arm"); the Sep 23 2026 UploadVR Snap Specs hands-on + same-day Meta VR Glasses announcement supply the missing pair, resolving the #928 rejection. ASCII-only, no em dashes.'
+  notes: 'UploadVR staff writer David Heaney (search-index byline attribution "UploadVR David Heaney" on both arms this run). Type B #983 (Sep 25 2026, 02:00 PDT): mechanism 821 - FIRST dedicated corpus mechanism on Heaney. Rejected as a Type B candidate at #928 ("no corpus presence, no same-writer competitor arm"); the Sep 23 2026 UploadVR Snap Specs hands-on + same-day Meta VR Glasses announcement supply the missing pair, resolving the #928 rejection. Type B #1128 (Oct 1 2026, 16:00 PDT): mechanism 908 - SECOND dedicated corpus mechanism on Heaney, adding the Meta-vs-Apple leg (Sep-13 Threads-on-Quest neutral relay vs Sep-14 Vision Pro layoffs "But Don''t Panic" headline softening vs Sep-17 visionOS 27 product-positive); NOT a falsification-family member (no UploadVR-Meta/Apple financial gradient found), ledger holds at 46. ASCII-only, no em dashes.'
   mechanism_ids:
   - 821
+  - 908
   source_urls:
   - https://www.uploadvr.com/snap-specs-hands-on-minimum-viable-consumer-true-ar-glasses/
   - https://www.uploadvr.com/meta-vr-glasses-officially-announced-connect-2026/
+  - https://www.uploadvr.com/threads-apps-arrived-on-quest-meta-ray-ban-display/
+  - https://www.uploadvr.com/apple-vision-pro-layoffs-2026-gaming-immersive-video/
+  - https://www.uploadvr.com/visionos-27-launched-for-apple-vision-pro-headsets/
   competitor_coverage:
     type_b_983_david_heaney_uploadvr_snap_specs_junket_vs_meta_vr_glasses_same_day_sep25:
       iteration: 983
@@ -24901,6 +24905,99 @@ david_heaney:
         type: 'B'
         date: '2026-09-25 02:00 PDT'
 
+    type_b_1128_david_heaney_uploadvr_meta_threads_vs_apple_vision_pro_layoffs_visionos_sep2026:
+      iteration: 1128
+      mechanism_id: 908
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-01 16:00 PDT'
+      block_key: type_b_1128_david_heaney_uploadvr_meta_threads_vs_apple_vision_pro_layoffs_visionos_sep2026
+      author: Kit (with Ray)
+      journalist: David Heaney
+      publication: uploadvr
+      window: '1125-1129 window FOURTH leg (D #1125 -> E #1126 -> A #1127 -> B #1128 -> C #1129)'
+      test_file: tests/test_type_b_1128_david_heaney_uploadvr_meta_threads_vs_apple_vision_pro_layoffs_visionos_sep2026_4pm.py
+      mechanism_name: 'David Heaney (UploadVR) Sep-13/14/17 Meta-vs-Apple headline-softening register contrast - Threads force-download relay vs Vision Pro layoff "But Don''t Panic" vs visionOS 27 product-positive - NOT a falsification-family member, ledger holds at 46'
+      novelty: 'FIRST dedicated Type B mechanism on Heaney''s Apple coverage (m821/Type B #983 covered Snap-vs-Meta; this run adds the Meta-vs-Apple leg). Zero test_type_b_1128 files on disk (glob); no "Type B #1128" in git log (--grep); max numeric mechanism_id 907 in profiles/ pre-commit (the-verge.yaml m907); zero numeric/underscore/dash 908 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F); the three novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); affirmative FORTY-SEVENTH member-claim form absent repo-wide pre-commit (negative-guard wordings only); thirty-third direction slot unclaimed repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      design: 'Type B journalist cross-entity tracking: UploadVR staff writer David Heaney, same publication, same week (Sep 13-17 2026), same hardware category (XR headsets / wearables). NEW arms on both sides; m821''s Snap-vs-Meta arms (Sep 23) deliberately NOT reused. Tests whether the headline-level editorial softening Heaney applies to Apple bad news (the "But Don''t Panic" kicker on ~100 layoffs and a largely-shuttered gaming team) has any analog in his Meta coverage, and whether his habitual Meta privacy vocabulary transfers to competitor arms. Bounded by m821 (Heaney''s register follows the news peg, not a uniform entity stance - the Snap junket piece was harsher on the funded arm).'
+      new_meta_arm:
+        title: 'Threads Apps Arrived On Quest & Meta Ray-Ban Display'
+        url: https://www.uploadvr.com/threads-apps-arrived-on-quest-meta-ray-ban-display/
+        date: 'Sep 13 2026'
+        byline: 'David Heaney (UploadVR category-page attribution, ", & David Heaney" render)'
+        publication: UploadVR
+        key_quotes:
+        - '"set it as a preinstalled app, force-downloading it to most Quest headsets"'
+        - '"many Quest owners were unhappy to see it forcibly downloaded onto their headset, including while they were in the middle of playing VR games"'
+        register_notes: 'Neutral-factual app-launch relay with a mild user-friction detail (the force-download complaint is reported, not editorialized into an accusation). Zero privacy/surveillance vocabulary in the indexed excerpt. Zero adversarial framing of Meta as an actor.'
+        tone_score: 0.0
+        tone_basis: 'MANUAL ILLUSTRATIVE, excerpt-tier this run (0 browser.open per #503)'
+      new_apple_arms:
+      - arm: 'Vision Pro layoffs'
+        title: 'Apple Laid Off Around 100 Staff Working On Vision Pro, But Don''t Panic'
+        url: https://www.uploadvr.com/apple-vision-pro-layoffs-2026-gaming-immersive-video/
+        date: 'Sep 14 2026'
+        byline: 'David Heaney (UploadVR category-page attribution; Muck Rack profile listing)'
+        publication: UploadVR
+        key_quotes:
+        - '"But Don''t Panic" (headline kicker)'
+        - '"However, this does not mean that Apple is exiting the VR/MR space"'
+        - '"Apple executives told staff that Vision Pro headsets and the visionOS operating system are not going away"'
+        - '"Apple laid off around 100 staff working on Vision Pro, including ''largely shutting down'' the spatial gaming team and downsizing the immersive video team, Bloomberg''s Mark Gurman reported"'
+        register_notes: 'Reassuring register applied to negative Apple news at the HEADLINE level - the softening is the strongest within-writer signal in the pair. Body relays Gurman''s reporting factually (layoff count, gaming-team shutdown, immersive-video downsizing all stated plainly); the editorial work is the kicker and the executive-reassurance framing. Zero privacy vocabulary (n/a to the peg).'
+        tone_score: 0.2
+        tone_basis: 'MANUAL ILLUSTRATIVE, excerpt-tier this run (0 browser.open per #503); the +0.20 sits in the headline/framing, not the body facts'
+      - arm: 'visionOS 27 launch'
+        title: 'visionOS 27 Launched For Apple Vision Pro Headsets, Bringing Siri AI & More'
+        url: https://www.uploadvr.com/visionos-27-launched-for-apple-vision-pro-headsets/
+        date: 'Sep 17 2026'
+        byline: 'David Heaney (attested via "UploadVR David Heaney" render in the linked Flow Chaser piece and Muck Rack profile listing; bounded per iteration-492)'
+        publication: UploadVR
+        key_quotes:
+        - '"visionOS 27 is actually one of the biggest upgrades yet"'
+        - 'Siri AI relayed as a "profoundly more capable and conversational assistant" than traditional Siri (Apple marketing language carried without a skepticism marker)'
+        - '"In terms of capabilities, it seems to sit somewhere between Meta AI on Quest 3''s Horizon OS and Gemini on Samsung Galaxy XR''s Android XR" (Meta as benchmark, neutral)'
+        - 'Incentive-relevant fact DISCLOSED inside the piece: Apple Foundation Models "co-developed with Google and based on its Gemini models (reportedly via a $1 billion/year deal)"'
+        register_notes: 'Product-positive update-news framing; Apple marketing language carried flat. The $1B/yr Google co-development disclosure inside the piece is counterevidence against a concealment reading of Heaney''s Apple coverage.'
+        tone_score: 0.3
+        tone_basis: 'MANUAL ILLUSTRATIVE, excerpt-tier this run (0 browser.open per #503)'
+      register_contrast:
+        meta_arm_tone: 0.0
+        apple_arm_tones: 'layoffs +0.20 / visionOS +0.30 (mean +0.25)'
+        illustrative_delta_apple_minus_meta: 0.25
+        delta_calc: '(0.20 + 0.30) / 2 - 0.0 = +0.25'
+        temporal_window: '1 day (Sep 13 Meta vs Sep 14 Apple) for the primary pair; 4 days for the secondary arm'
+        reading: 'Within-writer, within-week, same-outlet register contrast at the headline/framing level: Apple bad news draws editorial reassurance while Meta product news draws neutral relay plus a user-complaint detail. n=1 vs n=2 degenerate contract - NOT significant, MANUAL ILLUSTRATIVE ONLY. Extends m821''s Heaney register finding (register follows the news peg) to a third entity (Apple) with the peg direction inverted: here the SOFTENING lands on the competitor''s bad news, which m821''s junket-harsher pattern does not predict.'
+      financial_relationship:
+        uploadvr_meta: 'No UploadVR x Meta financial relationship surfaced in bounded searches (7 query sets this run).'
+        uploadvr_apple: 'No UploadVR x Apple financial relationship surfaced in bounded searches; no AI content-licensing deal found for UploadVR with any lab.'
+        luckey_caution: 'A 2018 TechCrunch story (Palmer Luckey funding running out at VR startup Upload Inc.) concerns the defunct Upload startup/coworking company, NOT UploadVR the publication, and Luckey left Facebook/Meta in 2017 - logged as a false-positive caution, not a financial gradient.'
+        revenue_model: 'Standard ad/affiliate (FTC affiliate disclosures on relay pages) per bounded search.'
+        test: 'No payer-softening prediction is testable at this publication: no financial gradient found on either side.'
+        result: 'NOT a falsification-family member. The observed contrast is a within-writer register finding with no deal geometry attached.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY. engine NOT run. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. NOT artifact-grade. no_analysis_json_update true.'
+        verdict: 'directionally_supported_not_proven (scoped: Heaney applies headline-level editorial softening to Apple bad news within a 1-day window of neutral-factual Meta relay; strong peg-mismatch and house-register confounders; no financial gradient tested)'
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'NOT a falsification-family member: no uniform payer-softening prediction is tested (bounded searches found no UploadVR-Meta or UploadVR-Apple financial relationship; the 2018 Luckey/Upload-Inc story is a false positive, logged not as a gradient). Ledger holds at 46. FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+      - 'STRONG: news-peg mismatch - layoff industry-news (Apple) vs app-launch news (Meta). The reassuring register may be house-style for industry-future news, not entity-directed.'
+      - 'Heaney''s VR-enthusiast product-forward house register bounds any animus reading (m821: harsher on the Snap junket arm).'
+      - 'Excerpt-tier evidence (0 browser.open per #503); full-text reads could shift the register notes.'
+      - 'Counterevidence: the visionOS piece discloses Apple''s $1B/yr Google deal rather than burying it; the Meta arm''s force-download detail is mild owner-complaint relay, not editorial attack.'
+      - 'n=1 vs n=2 degenerate contract; no engine run; is_significant False.'
+      research_method: 'Research delegated to a child agent (7 browser.search query sets Oct 1 2026 PDT: David Heaney / Ina Fried / Samuel Gibbs / Harry McCracken / Andy Boxall candidate sweeps; Ina Fried, Samuel Gibbs, Harry McCracken, Andy Boxall REJECTED on corpus saturation or no clean pair; Heaney SELECTED with 3 novel arms). 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps: zero test_type_b_1128 files on disk (glob); no "Type B #1128" in git log (--grep); max numeric mechanism_id 907 in profiles/ pre-commit; zero numeric/underscore/dash 908 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F); the 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); affirmative FORTY-SEVENTH member-claim form absent repo-wide pre-commit; thirty-third direction slot unclaimed repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 1128
+        type: 'B'
+        date: '2026-10-01 16:00 PDT'
 andy_boxall:
   name: Andy Boxall
   current_role: Contributing Writer / Wearables Columnist
