@@ -1,4 +1,4 @@
-## #1106 Type E: podcast sentiment 144th verification cycle - GF episode 502 holds as newest (eleventh Type E verification since the Sep 28 11:00am release, ~56h after publication; NO 503 surfaced; three-directory corroboration: podscan.fm main + analytics, listennotes 762 episodes, uk-podcasts "Latest episode: 2026-09-28"), EHE 51-day hold (six logged keys re-surfaced; ZERO new verbatim URL keys; 1 own-repo blob rejected circular), Attention Sphere 144th no-match as a podcast (6 own-repo GitHub commit URLs only, blob did NOT surface, 16611229 absent; Tracked Sources 143->144), press SEVEN in-corpus re-surfaces (ppc.land Hamburg-regulator and m1k.tech LED-fix re-surfaced from the #1001-era; ZERO new press keys; recency frontier HOLDS at Sep 29, seventh hold since the #1071 advance; thesun.ie/gagadget non-surface noted) - Type E SECOND leg of the 1105-1109 window (Sep 30 2026, 07:00 PM PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD, fill registers this hash in the entry); doc-sync 56327/1430 -> 56381/1431 (+54/+1); in-flight #899/#938/#900/#1012-wt untouched).
+## #1106 Type E: podcast sentiment 144th verification cycle - GF episode 502 holds as newest (eleventh Type E verification since the Sep 28 11:00am release, ~56h after publication; NO 503 surfaced; three-directory corroboration: podscan.fm main + analytics, listennotes 762 episodes, uk-podcasts "Latest episode: 2026-09-28"), EHE 51-day hold (six logged keys re-surfaced; ZERO new verbatim URL keys; 1 own-repo blob rejected circular), Attention Sphere 144th no-match as a podcast (6 own-repo GitHub commit URLs only, blob did NOT surface, 16611229 absent; Tracked Sources 143->144), press SEVEN in-corpus re-surfaces (ppc.land Hamburg-regulator and m1k.tech LED-fix re-surfaced from the #1001-era; ZERO new press keys; recency frontier HOLDS at Sep 29, seventh hold since the #1071 advance; thesun.ie/gagadget non-surface noted) - Type E SECOND leg of the 1105-1109 window (Sep 30 2026, 07:00 PM PDT; main commit efc381a0 / anchor 0a3b1066; log-hash followup registers both hashes here per #721 (this commit: TBD, fill registers this hash in the entry); doc-sync 56327/1430 -> 56381/1431 (+54/+1); in-flight #899/#938/#900/#1012-wt untouched).
 
 ### Rotation transparency
 - 1105-1109 window SECOND leg (per #565: D #1105 -> E #1106 -> A #1107 -> B #1108 -> C #1109; order D->E->A->B->C), CONTINUING the window
@@ -27,8 +27,8 @@
 - Staleness pins (subprocess): #1104 zero-895 forward guards (TestCorpusNoveltyPostCommit) still PASS; #1105 zero-895 forward guards (test_1105_zero_895_needles_pass_here) still PASS; both fail BY DESIGN when mechanism 895 lands
 
 ### Commit hashes
-- Main: TBD (Type E #1106: podcast sentiment 144th verification; SECOND leg of the 1105-1109 window, CONTINUING it)
-- Anchor followup: TBD (patch ANCHORED_SHA per #565)
+- Main: efc381a0 (Type E #1106: podcast sentiment 144th verification; SECOND leg of the 1105-1109 window, CONTINUING it)
+- Anchor followup: 0a3b1066 (patch ANCHORED_SHA per #565)
 - Log-hash followup: TBD (register main + anchor in the entry per #721)
 - ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
 
