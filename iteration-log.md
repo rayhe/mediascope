@@ -1,3 +1,44 @@
+## #1113 Type B: Joanna Stern (New Things/NBC, independent phase) Sep-24 Zuckerberg Meta Connect accountability interview (-0.50 MANUAL ILLUSTRATIVE) vs FRESH Sep-10 iPhone Duo enthusiast hands-on (+0.35 MANUAL ILLUSTRATIVE); illustrative delta +0.85 - same journalist, same month, both zero-deal (independent phase), 14 days apart - Apple draws the enthusiast register, Meta draws the accountability register - FORTY-FIRST falsification-family member, ledger holds at 41 - Type B FOURTH leg of the 1110-1114 window (Oct 1 2026, 02:00 AM PDT; main commit MAIN_SHA / anchor ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit); doc-sync 56807/1437 -> 56860/1438 (+53/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Rotation transparency
+- This run is iteration #1113 Type B, the FOURTH leg of the 1110-1114 window (D #1110 -> E #1111 -> A #1112 -> B #1113 -> C #1114, per the #565 anchor + rotation guard). Predecessor #1112 Type A verified in git log (main ddeb01c4, Oct 1 2026 01:00 AM PDT; WIRED x OpenAI LASST lawsuit, mechanism 898, FORTIETH falsification member, ledger 39->40). The 1105-1109 window is verified closed as a consecutive newest-first sequence (D #1105, E #1106, A #1107, B #1108, C #1109). Next run #1114 Type C continues this window.
+- Journalist selection: Joanna Stern, FIRST dedicated Type B mechanism on her (m105 is the unnumbered natural experiment; Aug-7/Aug-14 commits are not numbered pairs). Nguyen rejected (saturated: #1103, #1108); Ashworth rejected (4 Type B mechanisms); Stein rejected (4 mechanisms); a Stern/Live-Rewind arm search surfaced no Stern byline.
+
+### Finding summary
+- Arms (both FRESH, zero repo-wide pre-commit hits confirmed Oct 1 2026): Meta arm Sep-24 2026 - Stern's New Things/NBC sit-down interview of Zuckerberg at Meta Connect 2026, accountability register ("Is AI going to kill us?" opener, "pervert glasses" pressed, phones-don't-have-lights defense countered). Apple arm Sep-10 2026 - Stern iPhone Duo hands-on at Apple Park, enthusiast first-impressions with a visible hardware caveat ("I see no crease whatsoever", matte inner display the favorite feature, missing telephoto "the biggest hardware disappointment"). Relay-attested both arms; excerpt-bounded per #503, 0 browser.open on originals.
+- Illustrative delta (Apple minus Meta): +0.85. Finding: the naive independence-hardening prediction (zero deals -> harder coverage everywhere) FAILS on ordering at the journalist level - both arms zero-deal (independent phase), yet Apple +0.35 vs Meta -0.50.
+- m105 reframing: m105's 1.00 Meta swing (WSJ +0.50 -> New Things -0.50) tracks the hardening factual substrate (Jun-2026 secret-recording investigation, the LED-tamper beat, the Kenya-subcontractor class action), not merely the disappearance of News Corp deal money. The Apple register's +0.55 cross-phase shift (WSJ Vision Pro -0.20 -> independent Duo +0.35) is the money-story's unexplained residue.
+- m105's carried arms are carried un-rescored per #807; this run lands only FRESH arms (m899) - contrast with #1108 (Nguyen), which paired one FRESH arm with carried trust arms.
+
+### Method
+- Statistical discipline per the Aug 28 2026 standing rule: MANUAL ILLUSTRATIVE ONLY, engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant false, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade. Correlation is not causation; hypothesis-generating only.
+- Confounders (disclosed): STRONG - factual-substrate difference (LED-tamper investigation vs foldable hardware demo); CROSS-GENRE pair (CEO accountability interview vs hardware hands-on - unlike #1108's same-genre pair, genre conditioning does heavy lifting here, weakening journalist-level attribution); product-form confound on the cross-phase Apple comparison (Vision Pro headset vs foldable phone). MODERATE - 14-day temporal gap; both arms relay-tier; stale "WSJ's Joanna Stern" boilerplate in the Duo relay (phase certain: Stern left WSJ Apr 2026). WEAK - degenerate n=1 per arm; two-entity sample.
+
+### New Type B files
+- Block: `profiles/careers/journalists.yaml` under Joanna Stern `competitor_coverage`, key `type_b_1113_joanna_stern_meta_zuckerberg_interview_vs_apple_iphone_duo_register_sep2026` (mechanism 899; 4-space colon-form key nesting per #715 - underscore/dash-form 899 stays zero repo-wide).
+- Tests: `tests/test_type_b_1113_joanna_stern_meta_zuckerberg_interview_vs_apple_iphone_duo_register_sep2026_2am.py` (53 tests, 11 classes; 42 green pre-commit; anchor 3 + docsync 4 + log 4 deselected pre-commit per #565/#719/#721, all patched green post-doc-sync).
+- Supersession notes (recorded, not repaired): #1112's TestLedgerHoldsAt40 no-41st-member guard + ledger-40 class fail BY DESIGN (this run lands FORTY-FIRST). #1112's TestNovelty1112 zero-899 forward sweeps STAY GREEN - their numeric sweep covers only top-level profiles/*.yaml (glob, not recursive), while this run's block lands in profiles/careers/ (scope note). #1112's TestSupersessionPins1112: 6/8 pass; test_underscore_898_hits_exactly_wired and test_novel_relay_url_zero_hit_elsewhere were already stale at #1112's own doc-sync (#1112's iteration-log entry carries underscore-form mechanism_898 and the relay URL - self-inflicted, not caused by this run).
+
+### Commit hashes
+- main commit: MAIN_SHA
+- anchor followup (ANCHORED_SHA patch per #565): ANCHOR_SHA
+- log-hash followup registers main + anchor hashes in this entry per #721 (this commit: LOGHASH_SHA).
+- All three pushed to rayhe/mediascope main.
+
+### Doc-sync ratchet
+- README `| Tests |` line: 56807 -> 56860; test-file table: 1437 -> 1438 rows; #1113 row appended after the #1112 row.
+- ARCHITECTURE.md counts synced; #1113 row appended to the test tree after the #1112 row.
+- doc-sync 56807/1437 -> 56860/1438 (+53/+1).
+
+### Push status
+- Pushed to GitHub (rayhe/mediascope) via the documented atomic proxy-credential workflow.
+
+### Rotation guard
+- Rotation: this run is iteration #1113 Type B, the FOURTH leg of the 1110-1114 window (D #1110 -> E #1111 -> A #1112 -> B #1113 -> C #1114, per the #565 anchor + rotation guard). Next run #1114 Type C continues this window.
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test-file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit) - all untouched; targeted staging only. Do NOT touch #1024 m846.
+
 ## #1112 Type A: WIRED x OpenAI Sep-29 LASST Hugging Face lawsuit accountability register (-0.40 MANUAL ILLUSTRATIVE) vs carried WIRED x Meta arms (-0.375; Pinky Promises skepticism -0.45, NameTag class action -0.30, un-rescored per #807) - mechanism 898 answers m889's open empirical test: WIRED coverage of the Sep-29 LASST California lawsuit over the Hugging Face breach EXISTS and is adversarial, not softened or suppressed; pooled delta -0.025 near-null parity (deal partner marginally HARDER); clean adversarial-legal-peg read -0.40 vs -0.30 = -0.10 - FORTIETH falsification-family member, ledger 39->40 - Type A THIRD leg of the 1110-1114 window (Oct 1 2026, 01:00 AM PDT; main commit ddeb01c41941b0db4563c2d19556bf3c3cbf8fac / anchor b948f343f6ce87d5a2492f071a4fd5a39bed7b2e; log-hash followup registers both hashes here per #721 (this commit: 503fd10e7e44028b8d62d7561b873f22a1fd2adb); doc-sync 56734/1436 -> 56807/1437 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
