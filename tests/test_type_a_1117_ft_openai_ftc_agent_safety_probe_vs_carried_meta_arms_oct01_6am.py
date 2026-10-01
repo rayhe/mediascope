@@ -582,15 +582,16 @@ class TestSupersessionPins1117:
         res = _node_run(FILE_1116, "TestStalenessPins")
         assert res.returncode != 0, res.stdout[-1500:]
 
-    def test_1116_forty_second_head_scoped_green_pre_commit(self):
-        # HEAD-scoped: passes pre-commit (block uncommitted), flips to
-        # failing BY DESIGN once the main commit lands; the #1118 run
-        # re-pins it as failed.
+    def test_1116_forty_second_head_scoped_flipped_by_design(self):
+        # HEAD-scoped: was green pre-commit (block uncommitted); flipped to
+        # failing BY DESIGN when this run's main commit (091eb818) landed
+        # the affirmative FORTY-SECOND claim into HEAD. The #1118 run
+        # inherits this pin.
         res = _node_run(
             FILE_1116,
             "TestStatisticalDiscipline::test_forty_second_member_claim_absent",
         )
-        assert res.returncode == 0, res.stdout[-1500:]
+        assert res.returncode != 0, res.stdout[-1500:]
 
     def test_1115_guard_lifecycle_numeric_fails_by_design(self):
         res = _node_run(
