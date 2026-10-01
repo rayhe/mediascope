@@ -98,7 +98,7 @@ OWN_BASENAME = (
     "test_type_e_1106_podcast_sentiment_144th_verification_sep30_7pm.py"
 )
 
-ANCHORED_SHA = "0" * 40  # patched by the anchor followup per #565
+ANCHORED_SHA = "efc381a0dcf19eb179d2baafd0d857354861ffb0"  # patched by the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -266,7 +266,10 @@ class TestRotationGuard:
 
     def test_type_e_1106_novelty(self):
         # "Type E #1106" absent from git log pre-commit; own file not
-        # yet committed. Superseded by design post-commit.
+        # yet committed. SUPERSEDED BY DESIGN once this run's main
+        # commit ("Type E #1106:") lands; post-commit, the anchor
+        # asserts the patched ANCHORED_SHA is present in git log.
+        # Deselect this test in post-commit full runs.
         log = _git("log", "--oneline", "--grep=Type E #1106").stdout
         assert log.strip() == ""
 
