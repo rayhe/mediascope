@@ -361,6 +361,10 @@ class TestNovelty1110:
         assert files == [os.path.join(TESTS_DIR, OWN_BASENAME)], files
 
     def test_no_type_d_1110_in_git_log(self):
+        # Pre-commit novelty guard: no commit may already claim this slot.
+        # SUPERSEDED BY DESIGN once this run's main commit ("Type D #1110:")
+        # lands; post-commit, TestTypeDRotationGuard1110 asserts the anchor
+        # and window instead. Deselect this test in post-commit full runs.
         log = _git("log", "--format=%s", "--grep=Type D #1110")
         assert "Type D #1110" not in log
 
