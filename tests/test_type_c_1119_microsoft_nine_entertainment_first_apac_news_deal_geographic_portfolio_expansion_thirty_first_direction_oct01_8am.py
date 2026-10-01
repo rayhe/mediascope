@@ -87,8 +87,8 @@ ADNEWS_URL = (
 )
 
 # Patched post-commit once README/ARCHITECTURE doc-sync lands.
-README_TEST_COUNT = 0  # patched post-doc-sync
-README_FILE_COUNT = 0  # patched post-doc-sync
+README_TEST_COUNT = 58257  # post-doc-sync total
+README_FILE_COUNT = 1444  # post-doc-sync total
 TEST_BASENAME = OWN_BASENAME
 
 # Fragment-built direction needles per #715 (never contiguous here).
