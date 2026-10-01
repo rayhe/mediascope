@@ -68,7 +68,7 @@ TYPE_LETTER = "A"
 WINDOW = "1110-1114"
 MECH_NUM = 898
 NEXT_NUM = 899
-ANCHORED_SHA = "0" * 40  # main commit, patched in the anchor followup per #565
+ANCHORED_SHA = "ddeb01c41941b0db4563c2d19556bf3c3cbf8fac"  # main commit, patched in the anchor followup per #565
 OWN_BASENAME = (
     "test_type_a_1112_wired_openai_lasst_huggingface_lawsuit_register_"
     "vs_meta_carried_arms_oct01_1am.py"
