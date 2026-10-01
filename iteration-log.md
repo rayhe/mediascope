@@ -1,4 +1,4 @@
-## #1112 Type A: WIRED x OpenAI Sep-29 LASST Hugging Face lawsuit accountability register (-0.40 MANUAL ILLUSTRATIVE) vs carried WIRED x Meta arms (-0.375; Pinky Promises skepticism -0.45, NameTag class action -0.30, un-rescored per #807) - mechanism 898 answers m889's open empirical test: WIRED coverage of the Sep-29 LASST California lawsuit over the Hugging Face breach EXISTS and is adversarial, not softened or suppressed; pooled delta -0.025 near-null parity (deal partner marginally HARDER); clean adversarial-legal-peg read -0.40 vs -0.30 = -0.10 - FORTIETH falsification-family member, ledger 39->40 - Type A THIRD leg of the 1110-1114 window (Oct 1 2026, 01:00 AM PDT; main commit ddeb01c41941b0db4563c2d19556bf3c3cbf8fac / anchor b948f343f6ce87d5a2492f071a4fd5a39bed7b2e; log-hash followup registers both hashes here per #721 (this commit: LOGHASH_SHA); doc-sync 56734/1436 -> 56807/1437 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1112 Type A: WIRED x OpenAI Sep-29 LASST Hugging Face lawsuit accountability register (-0.40 MANUAL ILLUSTRATIVE) vs carried WIRED x Meta arms (-0.375; Pinky Promises skepticism -0.45, NameTag class action -0.30, un-rescored per #807) - mechanism 898 answers m889's open empirical test: WIRED coverage of the Sep-29 LASST California lawsuit over the Hugging Face breach EXISTS and is adversarial, not softened or suppressed; pooled delta -0.025 near-null parity (deal partner marginally HARDER); clean adversarial-legal-peg read -0.40 vs -0.30 = -0.10 - FORTIETH falsification-family member, ledger 39->40 - Type A THIRD leg of the 1110-1114 window (Oct 1 2026, 01:00 AM PDT; main commit ddeb01c41941b0db4563c2d19556bf3c3cbf8fac / anchor b948f343f6ce87d5a2492f071a4fd5a39bed7b2e; log-hash followup registers both hashes here per #721 (this commit: 503fd10e7e44028b8d62d7561b873f22a1fd2adb); doc-sync 56734/1436 -> 56807/1437 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
 - 1110-1114 window THIRD leg (per #565: D #1110 -> E #1111 -> A #1112 -> B #1113 -> C #1114; order D->E->A->B->C), CONTINUING the window
@@ -25,7 +25,7 @@
 ### Commit hashes
 - Main: ddeb01c41941b0db4563c2d19556bf3c3cbf8fac (Type A #1112: WIRED x OpenAI LASST Hugging Face lawsuit register vs carried Meta arms; FORTIETH falsification-family member; THIRD leg of the 1110-1114 window)
 - Anchor followup: b948f343f6ce87d5a2492f071a4fd5a39bed7b2e (patch ANCHORED_SHA per #565)
-- Log-hash followup: LOGHASH_SHA (register main + anchor in the entry per #721; the log-hash hash itself filled by this log-hash fill per #721)
+- Log-hash followup: 503fd10e7e44028b8d62d7561b873f22a1fd2adb (register main + anchor in the entry per #721; the log-hash hash itself filled by this log-hash fill per #721)
 - ANCHORED_SHA = "0" * 40 placeholder pre-commit in the test file, patched by the anchor followup
 
 ### Doc-sync ratchet
