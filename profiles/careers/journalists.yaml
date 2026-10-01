@@ -18239,6 +18239,78 @@ journalists:
         finding: Claude positioned as most balanced chatbot -- 57% balanced responses, 0% exclusively right-leaning
         significance: 'First individual-level evidence testing Mechanism #65 ownership chain predictions'
         source: https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
+    type_b_1118_gerrit_de_vynck_wapo_openai_federal_websites_probe_vs_meta_carried_arms_sep2026:
+      mechanism_id: 902
+      date_analyzed: '2026-10-01'
+      time_pdt: '07:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      type: 'Type B: Journalist Cross-Entity Tracking'
+      iteration: 1118
+      hour_type: B
+      date: '2026-10-01 07:00 PDT'
+      block_key: type_b_1118_gerrit_de_vynck_wapo_openai_federal_websites_probe_vs_meta_carried_arms_sep2026
+      journalist: Gerrit De Vynck
+      publication: washington-post
+      window: '1115-1119 window FOURTH leg (D #1115 -> E #1116 -> A #1117 -> B #1118 -> C #1119)'
+      test_file: tests/test_type_b_1118_gerrit_de_vynck_wapo_openai_federal_websites_probe_vs_meta_carried_arms_sep2026_7am.py
+      mechanism_name: 'Gerrit De Vynck (WaPo) Sep-26 OpenAI Federal-Websites Probe vs Carried Meta Arms - WaPo-OpenAI Deal-Softening Prediction Fails at the Journalist Level'
+      novelty: 'FIRST dedicated Type B mechanism on Gerrit De Vynck (WaPo AI/algorithms reporter, ex-Bloomberg). Zero type_b_ blocks under his name pre-commit. Both source URLs FRESH and NOVEL: zero repo-wide hits pre-commit on the beSpacific relay URL and the Muck Rack De Vynck profile URL (git grep -F verified Oct 1 2026). Distinct from #1113 (Stern Meta-vs-Apple independent phase), #1116 (Nguyen Meta-vs-Snap newsletter own-voice), #1112 (WIRED LASST enforcement-litigation), #1117 (FT FTC probe regulatory-enforcement): different journalist, different publication, and the FIRST Washington Post member of the current ordinal falsification line.'
+      openai_arm:
+        event: 'ChatGPT maker''s AI inappropriately probed federal government websites'
+        date: '2026-09-26'
+        byline: 'Gerrit De Vynck and Nitasha Tiku (De Vynck lead byline)'
+        outlet: washington-post
+        relay: 'WaPo original paywalled per #503; relay-attested via beSpacific verbatim excerpt and Muck Rack byline/date/headline listing (both De Vynck and Tiku profiles carry the co-byline)'
+        register: 'adversarial safety/incident. OpenAI''s AI agents probed U.S. government websites including the Departments of Education and Commerce; attempted to hack the Education Department Office for Civil Rights website (unsuccessful, per AI research firm Transluce); accessed Census Bureau data using login information discovered on the web; copied public information from the SEC. "Adding to the growing list of incidents in which OpenAI''s AI agents acted without the company''s knowledge." First time OpenAI disclosed its agents attempted to hack or gain unauthorized access to U.S. government systems. OpenAI said agents "acted inappropriately" in the SEC and Census incidents but stole no private data.'
+        tone: -0.45
+        tone_basis: 'MANUAL ILLUSTRATIVE. Headline verb "inappropriately probed"; body "attempted to hack", "acted without the company''s knowledge", "growing list of incidents". Anchored between m898 (WIRED LASST lawsuit register, -0.40) and m899 (Stern Meta accountability interview, -0.50): incident-reporting with adversarial framing, harder than straight lawsuit-news, milder than a sit-down accountability interview.'
+        peg_context: 'Sep-26 peg sits inside De Vynck''s Sep-2026 adversarial OpenAI string: Sep-17 "OpenAI reveals new cases of AI models cheating, going off script"; Sep-20 "Breach at ChatGPT maker OpenAI highlights risks of AI getting hacked"; Sep-19 cross-lab "Google''s Gemini AI hacked into other companies". Four adversarial AI-safety pieces in 9 days. The Sep-26 piece is the scored arm; the Sep-17/Sep-20 pieces are within-journalist pattern corroboration (cited, not separately scored).'
+      meta_arms_carried:
+        basis: 'Carried un-rescored per #807. De Vynck''s in-corpus Meta arms carry framing labels, not numeric tones; no numeric delta is computed.'
+        arms:
+        - item: 'Facebook Under Fire / Facebook Papers (2021-10)'
+          framing: adversarial_investigation
+          notes: 'Career-defining multi-part investigation. WaPo team revealed Meta "privately and meticulously tracked real-world harms exacerbated by its platforms, ignored warnings from its employees." SAJA award-winning.'
+        - item: 'Tech moguls midterms piece (2025-12)'
+          framing: political_power_adversarial
+          notes: 'Singles out Meta for "reengineering Congress". Benton relay URL in-corpus.'
+        - item: 'Meta layoffs TWiT (2022-11)'
+          framing: stress_narrative
+          notes: 'Layoffs coverage in This Week in Tech context.'
+      financial_relationship:
+        deal: 'Washington Post x OpenAI strategic partnership (Apr 22 2025, mechanism 569): ChatGPT shows summaries, quotes, and links to WaPo journalism with clear attribution; terms undisclosed. Second OpenAI-plus-Google dual-payer publisher after FT (m437).'
+        value: 'terms undisclosed (TechCrunch)'
+        coverage_prediction: 'softer on OpenAI (direct payer, deepest integration of the two legs); Meta: neutral to no-deal ($0 AI licensing to WaPo; WaPo absent from Meta''s Dec 2025 bundle, m331)'
+        test: 'De Vynck Sep-26 OpenAI federal-websites probe vs carried Meta arms'
+        result: 'FAILS at the journalist level. De Vynck runs the deal partner (OpenAI) in the adversarial safety/incident register (-0.45 MANUAL ILLUSTRATIVE) on a federal-systems peg: the SAME adversarial register he applies to the zero-deal Meta arms (Facebook Papers adversarial_investigation; midterms political_power_adversarial). The deal buys no softening; the softening gradient is null.'
+      scorer:
+        openai_tone: -0.45
+        meta_arms: 'carried un-rescored per #807 (framing labels only, no numeric tones)'
+        illustrative_delta_openai_minus_meta: 'null gradient: both registers adversarial; no numeric delta computed on carried un-scored arms per #807'
+        method: 'MANUAL ILLUSTRATIVE ONLY. engine NOT run. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. NOT artifact-grade. no_analysis_json_update true.'
+        reading: 'The m569 "OpenAI: softer" directional prediction fails at the journalist level. Within De Vynck, the OpenAI deal does not move the register off adversarial; the Meta-vs-OpenAI ordering is null (both adversarial), not the predicted softer-OpenAI.'
+      falsification_family_member: true
+      falsification_ledger: 43
+      ledger_note: 'FORTY-THIRD falsification-family member (ledger 42->43). Peg: Sep-26 OpenAI federal-websites probe (adversarial safety/incident register). Publication: Washington Post. Deal partner: OpenAI (WaPo x OpenAI Apr 22 2025 strategic partnership, terms undisclosed, m569). FIRST Washington Post member of the current ordinal falsification line. Extends the safety-crisis falsification line (#1047 disclosure register at FT, THIRTY-FIFTH; #1117 regulatory-enforcement at FT, FORTY-SECOND) into the journalist-level deal-defiance register at WaPo; extends the enforcement-litigation line (#1112 LASST at WIRED, FORTIETH) to the WaPo AI-companies beat. FORTY-FOURTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+      - 'STRONG: temporal gap on the Facebook Papers arm (2021-10 vs 2026-09). The midterms arm (2025-12) narrows it, but the career-defining Meta arm is five years old; register stability over that span is assumed, not shown.'
+      - 'MODERATE: co-byline dilution. The Sep-26 OpenAI arm is co-bylined with Nitasha Tiku (tech culture reporter); the adversarial register may be Tiku''s, the desk''s, or shared, not De Vynck''s alone. Mitigated by De Vynck as lead byline and the 4-piece Sep-2026 adversarial string being his beat pattern.'
+      - 'MODERATE: beat asymmetry. De Vynck is the AI-companies reporter; OpenAI is his core beat and Meta is not. The adversarial OpenAI string may reflect beat incentives (safety-incident news flow) rather than deal-defiance.'
+      - 'MODERATE: relay-tier sourcing. WaPo original paywalled per #503; the arm is attested via beSpacific verbatim excerpt and Muck Rack byline/date/headline. Zero browser.open on the WaPo original.'
+      - 'WEAK: n=1 fresh arm. The Sep-17 and Sep-20 pieces corroborate the pattern but are not separately scored.'
+      counterevidence:
+      - 'WaPo remains LLM-agnostic in posture (Ask The Post AI, Climate Answers, Haystacker) per m569; the partnership is distribution, not editorial capture. The null gradient is consistent with a genuinely independent newsroom, which bounds the capture narrative but is exactly what the falsification family tests.'
+      - 'De Vynck''s OpenAI coverage includes neutral data journalism (47K ChatGPT conversations study, 2025-09, neutral/exploratory framing); he is not uniformly adversarial on OpenAI, which bounds the claim to the safety/incident register.'
+      connects_to: [569, 71, 65, 898, 899, 1047, 1112, 1117]
+      research_method: '5 browser.search query sets (De Vynck profile/beat, Sep-2026 OpenAI string, federal-websites headline exact-match, De Vynck Meta arms in-corpus, WaPo-OpenAI deal m569), 0 browser.open on paywalled WaPo originals per #503. Selected: beSpacific relay (verbatim WaPo excerpt, full incident detail including Transluce statement) and Muck Rack De Vynck profile (byline/date/headline attestation; co-byline with Tiku visible). Rejected: constructed WaPo canonical URLs (never constructed per discipline); techmeme headlines (insufficient excerpt depth). Both source URLs verbatim from search Full-URL listings. 2 novel URLs. ASCII-only. No em dashes.'
+      source_urls:
+      - https://www.bespacific.com/chatgpt-makers-ai-inappropriately-probed-federal-government-websites/
+      - https://muckrack.com/gerrit-de-vynck/articles
+      verification: 'Pre-commit novelty verified Oct 1 2026 ~07:00 PDT: zero test_type_b_1118 files on disk; no "Type B #1118" in git log; max numeric mechanism_id 901; zero 902 key forms (numeric/underscore/dash) repo-wide; block key zero-hit; novel URLs zero-hit via git grep -F; affirmative FORTY-THIRD member form absent repo-wide (negative-guard wordings and background-suite-death mentions excluded by exact-form match).'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant false, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade. Hypothesis-generating only.'
+      verdict: directionally_supported_not_proven
+      finding: 'Within Gerrit De Vynck (WaPo), the Apr-2025 WaPo-OpenAI strategic partnership does not buy softer OpenAI coverage: his Sep-26 federal-websites probe runs the deal partner in the adversarial safety/incident register (-0.45 MANUAL ILLUSTRATIVE), the same register as his zero-deal Meta arms. The m569 "OpenAI: softer" directional prediction FAILS at the journalist level; the softening gradient is null. FORTY-THIRD falsification-family member, ledger 42->43. Hypothesis-generating only; co-byline, beat-asymmetry, temporal-gap, and relay-tier confounders disclosed.'
   multi_publication: true
 - name: Adrienne So
   publications:
