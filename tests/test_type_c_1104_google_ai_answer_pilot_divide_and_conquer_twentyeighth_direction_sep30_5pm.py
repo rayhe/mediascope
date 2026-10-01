@@ -61,7 +61,7 @@ TW28 = "TWENTY-" + "EIGHTH relationship direction"
 TW29 = "TWENTY-" + "NINTH relationship direction"
 T39 = "THIRTY-" + "NINTH falsification-family member"
 
-ANCHORED_SHA = "0" * 40  # patched to the main-commit SHA post-commit per #565
+ANCHORED_SHA = "9bb80079b6eaed6f039016100e7f6c17e62f3bbd"  # main-commit SHA, patched post-commit per #565
 ITERATION = 1104
 TYPE_LETTER = "C"
 WINDOW = "1100-1104"
