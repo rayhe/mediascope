@@ -57,7 +57,7 @@ TYPE_LETTER = "C"
 WINDOW = "1110-1114"
 MECH_NUM = 900
 NEXT_NUM = 901
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # main commit, patched in the anchor followup per #565
+ANCHORED_SHA = "9ef55c47"  # main commit, patched in the anchor followup per #565
 OWN_BASENAME = (
     "test_type_c_1114_google_news_ai_pilot_three_track_segmentation_"
     "trackseparatedpricing_thirtieth_direction_oct01_3am.py"
