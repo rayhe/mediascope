@@ -118,7 +118,7 @@ OWN_BASENAME = (
 )
 NC_FILE = os.path.join(PROFILES_DIR, "news-corp.yaml")
 
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "85efc7a0c2fcbf305b3b91377c2a958d08665069"
 
 MECH_NUM = 904
 NEXT_NUM = 905
