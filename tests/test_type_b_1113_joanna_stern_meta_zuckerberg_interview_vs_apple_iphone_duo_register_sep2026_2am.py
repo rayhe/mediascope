@@ -74,7 +74,7 @@ TYPE_LETTER = "B"
 WINDOW = "1110-1114"
 MECH_NUM = 899
 NEXT_NUM = 900
-ANCHORED_SHA = "PATCH_ME_IN_FOLLOWUP"  # main commit, patched in the anchor followup per #565
+ANCHORED_SHA = "d95faffb"  # main commit, patched in the anchor followup per #565
 OWN_BASENAME = (
     "test_type_b_1113_joanna_stern_meta_zuckerberg_interview_"
     "vs_apple_iphone_duo_register_sep2026_2am.py"
