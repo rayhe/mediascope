@@ -1,4 +1,10 @@
-## #1128 Type B: David Heaney (UploadVR) Sep-13/14/17 Meta-vs-Apple headline-softening register contrast (m908) - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1125-1129 window (Oct 1 2026, 04:00 PM PDT; main commit TBD / anchor TBD / doc-sync TBD / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58892/1452 -> 58974/1453 (+82/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1128 Type B: David Heaney (UploadVR) Sep-13/14/17 Meta-vs-Apple headline-softening register contrast (m908) - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1125-1129 window (Oct 1 2026, 04:00 PM PDT; main 0cf31151 / anchor d168b1fb / doc-sync a8e9bfb1 / log-hash: this commit, registered per #721; doc-sync 58892/1452 -> 58974/1453 (+82/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `0cf31151` (0cf311515ed7bbfa6a9a7bde0d7fcc63f7d632ff) - verified via git rev-parse
+- Anchor followup `d168b1fb` (ANCHORED_SHA patched per #565)
+- Doc-sync `a8e9bfb1` (README/ARCHITECTURE/iteration-log per #719)
+- Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
 - Window 1125-1129 FOURTH leg: D #1125 (1:00 PM) -> E #1126 (2:00 PM) -> A #1127 (3:00 PM) -> B #1128 (4:00 PM, this run). Next: #1129 Type C.
