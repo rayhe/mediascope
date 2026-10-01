@@ -67,7 +67,7 @@ OWN_BASENAME = (
 
 # Pre-commit placeholder per #565; the anchor followup patches this to the
 # main-commit hash.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "0cf311515ed7bbfa6a9a7bde0d7fcc63f7d632ff"  # Type B #1128 main commit (Type B runs self-anchor per #565)
 
 MECH_NUM = 908
 NEXT_NUM = 909
