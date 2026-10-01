@@ -733,7 +733,7 @@ class TestIterationLog1107:
         head = open(os.path.join(REPO_ROOT, "iteration-log.md"),
                     encoding="utf-8").read()[:5000]
         assert "## #1107 Type A:" in head
-        assert "20:00 PDT" in head
+        assert "08:00 PM PDT" in head
         assert "m895" in head
 
     @pytest.mark.log
