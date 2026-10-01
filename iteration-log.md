@@ -22,7 +22,7 @@
 ### Commit hashes
 - main commit: d95faffb
 - anchor followup (ANCHORED_SHA patch per #565): 4004fae7
-- log-hash followup registers main + anchor hashes in this entry per #721 (this commit: pending log-hash fill).
+- log-hash followup registers main + anchor hashes in this entry per #721 (this commit: 156abf91).
 - All three pushed to rayhe/mediascope main.
 
 ### Doc-sync ratchet
