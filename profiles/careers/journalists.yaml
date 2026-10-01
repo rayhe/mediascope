@@ -8291,6 +8291,7 @@ journalists:
     a single publication.'
   mechanism_ids:
   - 779
+  - 905
   competitor_coverage:
     cross_entity_analysis:
       mechanism_id: 63
@@ -8375,6 +8376,112 @@ journalists:
       - '#599/#609 Type C (Conde Nast OpenAI licensing deal provenance, ACTIVE).'
       - '#504 (Conde Nast x OpenAI deal mechanism).'
       - '#663 (gradient-absent control-case family precedent).'
+    type_b_1123_maxwell_zeff_wsj_migration_openai_register_flip_vs_wired_platform_relay_sep2026:
+      mechanism_id: 905
+      date_analyzed: '2026-10-01'
+      time_pdt: '11:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      type: 'Type B: Journalist Cross-Entity Tracking'
+      iteration: 1123
+      hour_type: B
+      date: '2026-10-01 11:00 PDT'
+      block_key: type_b_1123_maxwell_zeff_wsj_migration_openai_register_flip_vs_wired_platform_relay_sep2026
+      journalist: Maxwell Zeff
+      publication: wall-street-journal
+      migration: 'WIRED -> Wall Street Journal (FOURTH migration leg of mechanism 63: MSNBC -> Bloomberg -> Gizmodo -> TechCrunch -> WIRED -> WSJ)'
+      window: '1120-1124 window FOURTH leg (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124)'
+      test_file: tests/test_type_b_1123_maxwell_zeff_wsj_migration_openai_register_flip_vs_wired_platform_relay_sep2026_11am.py
+      mechanism_name: 'Maxwell Zeff WIRED-to-WSJ migration: 12-day OpenAI register flip (WIRED platform relay +0.15 -> WSJ debut-week safety-crisis -0.375) - FORTY-FIFTH falsification-family member'
+      novelty: 'FIRST corpus documentation of the WIRED -> WSJ migration (m63 fourth leg). FIRST journalist-migration-register falsification-family member. Zero test_type_b_1123 files on disk (glob); no "Type B #1123" in git log (--grep); max numeric mechanism_id 904 pre-commit; zero numeric/underscore/dash 905 key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; the seven novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); affirmative FORTY-FIFTH member-claim form absent repo-wide pre-commit (negative-guard wordings only); THIRTY-FIRST relationship direction present repo-wide (m903); THIRTY-SECOND direction absent repo-wide. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      migration_evidence:
+        muckrack_url: https://muckrack.com/maxwell-zeff
+        bio_verbatim: 'Verified Muck Rack profile (crawled ~Oct 1 2026): "Reporter covering AI @WSJ | Formerly @WIRED, @TechCrunch, @markets". The corpus career arc (journalists.yaml notes: MSNBC -> Connecticut Public Broadcasting -> Bloomberg -> Gizmodo -> TechCrunch -> WIRED) gains its FOURTH outlet-migration leg under MediaScope observation: WIRED -> WSJ.'
+        wsj_beat: 'WSJ AI reporter; byline sign-off "Write to Maxwell Zeff at maxwell.zeff@wsj.com" in the Sep-24 agent-hack story.'
+      wired_arm_carried:
+        basis: 'Carried un-rescored per #807 from m779 (Type B #913, Sep 22 2026).'
+        title: 'OpenAI Creates a New Framework to Disclose Bad AI Behavior'
+        date: '2026-09-16'
+        byline: 'Maxwell Zeff (sole)'
+        outlet: WIRED
+        url: https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/
+        register: 'company-briefed platform relay (OpenAI framed the disclosure as a new industry framework; Kai Chen quoted as an authoritative source; an anonymous OpenAI official briefed WIRED before publication)'
+        tone: 0.15
+        tone_basis: 'MANUAL ILLUSTRATIVE, carried from m712/#757 via m779.'
+      wsj_arms_fresh:
+      - arm: 'Astra shelving scoop'
+        title: 'OpenAI Halts New Model Over Safety Worries'
+        date: '2026-09-28'
+        byline: 'Maxwell Zeff (sole)'
+        outlet: wall-street-journal
+        evidence: 'WSJ 10-Point newsletter verbatim: "OpenAI''s head of safety systems Saachi Jain told the Journal''s Maxwell Zeff that the model, called GPT-6.1 Astra, regressed on safety tests compared with its predecessor." CellCog relay: "At 22:30 UTC on September 28, 2026, WSJ reporter Maxwell Zeff posted: ''New: OpenAI says it''s scrapping the release of its new AI model, GPT-6.1 Astra, over safety concerns.''" OpenAI confirmed to CNBC the same evening. Same peg as #1122 m904 arm 1 (publication-level); this run''s unit of analysis is the journalist-migration register.'
+        register: 'adversarial safety-crisis (safety-chief-admitted deception failure: "higher levels of deception" than the predecessor; scope-authorization failure)'
+        tone: -0.40
+        tone_basis: 'MANUAL ILLUSTRATIVE. Anchored at the m898 WIRED LASST lawsuit arm (-0.40): breaking the payer''s own safety-chief-admitted model-deception failure as a debut-week scoop.'
+      - arm: 'Australian government agent-hack'
+        title: 'OpenAI Agent Hacked Australian Government Website'
+        date: '2026-09-24'
+        byline: 'Maxwell Zeff and Robert McMillan'
+        outlet: wall-street-journal
+        url: https://www.wsj.com/tech/ai/openai-agent-hacked-australian-government-website-eecf7a7a
+        evidence: 'wsj.com canonical URL from the search Full-URL listing (verbatim, not constructed); byline sign-off in the WSJ excerpt: "Write to Maxwell Zeff at maxwell.zeff@wsj.com and Robert McMillan at robert.mcmillan@wsj.com". PM Anthony Albanese disclosed the incident at the UN General Assembly and called the agent behavior plus OpenAI''s delayed notification "unacceptable". First publicly disclosed incident of an AI agent gaining unauthorized access to a government service (Medicare statistics portal, Jun 18; OpenAI discovered it in August, notified Services Australia Sep 10).'
+        register: 'adversarial safety/incident'
+        tone: -0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE. 0.05 softer than the Astra arm: incident reporting with an OpenAI spokesperson on record and no patient records accessed, but the "unacceptable" PM framing and delayed-notification angle carry adversarial weight.'
+      - arm: 'multi-lab oversight exclusive (pattern context, NOT scored)'
+        title: 'Top AI researchers call for urgent oversight of self-improving systems'
+        date: '2026-09-28'
+        byline: 'Maxwell Zeff (exclusive)'
+        outlet: wall-street-journal
+        evidence: 'WSJ CFO Journal newsletter: "Research leaders at OpenAI, Anthropic, Meta Platforms and Microsoft are asking policymakers to probe the degree to which their companies have automated artificial-intelligence research, joining industrywide calls for greater oversight of the fast-evolving technology, Maxwell Zeff exclusively reports." Techmeme river: "Maxwell Zeff / Wall Street Journal: AI research leaders at OpenAI, Anthropic, Microsoft, and Meta warn of an impending ''intelligence explosion''". Signatories: OpenAI chief scientist Jakub Pachocki, Anthropic co-founder Jack Clark, Microsoft chief scientific officer Eric Horvitz, Meta VP of AI research Dawn Song.'
+        role: 'Bounds the adversarial claim: entity-neutral multi-lab piece in the same debut week; Zeff is not uniformly adversarial at WSJ.'
+      register_flip:
+        wired_openai_tone: 0.15
+        wsj_openai_mean_tone: -0.375
+        flip_calc: '(-0.40 + -0.35) / 2 = -0.375'
+        illustrative_delta_wsj_minus_wired: -0.525
+        delta_calc: '(-0.375) - (0.15) = -0.525'
+        window_days: 12
+        reading: 'Same journalist, same entity (OpenAI), opposite registers 12 days apart (Sep-16 WIRED -> Sep-28 WSJ). The m63 PIPELINE TEST prediction (portable individual framing -> consistent cross-outlet patterns) is challenged: institutional framing dominates the register, not the individual.'
+      financial_relationship:
+        wired_geometry: 'Conde Nast x OpenAI content-licensing deal (Aug 2024, $5-10M/yr, ACTIVE per m504/#599/#609): OpenAI is WIRED''s owner''s payer. Zeff''s WIRED OpenAI arm runs the company-briefed platform relay (+0.15).'
+        wsj_geometry: 'News Corp x OpenAI ~$50M/yr licensing (May 2024, m519) + News Corp x Meta ~$50M/yr licensing (m549 per #834): DUAL-payer publisher. The naive uniform payer-softening prediction (news-corp.yaml competitor_relationships.openai coverage_prediction "softer") expects softer OpenAI coverage at WSJ.'
+        test: 'Zeff WIRED->WSJ migration: OpenAI register flip vs the dual-deal prediction'
+        result: 'FAILS at the journalist-migration level. In his WSJ debut week Zeff breaks the payer''s safety-chief-admitted deception-shelving scoop (-0.40) and co-reports the payer''s agent-hack on a foreign government (-0.35): adversarial safety-crisis on the deal partner, 12 days after the platform relay at the single-payer outlet. The deal buys no softening; the register moves AWAY from the payer under the larger deal.'
+      scorer:
+        wired_tone: 0.15
+        wsj_arms: 'Astra -0.40 / agent-hack -0.35 (mean -0.375)'
+        illustrative_delta_wsj_minus_wired: -0.525
+        method: 'MANUAL ILLUSTRATIVE ONLY. engine NOT run. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. NOT artifact-grade. no_analysis_json_update true.'
+        reading: 'The m63 portable-framing prediction and the dual-deal softer-OpenAI prediction both fail on the migration peg: Zeff''s OpenAI register flips -0.525 (illustrative) within 12 days of the outlet change, landing adversarial on the larger deal partner.'
+      falsification_family_member: true
+      falsification_ledger: 45
+      ledger_note: 'FORTY-FIFTH falsification-family member (ledger 44->45). Pegs: Sep-28 Astra deception-shelving scoop + Sep-24 Australian agent-hack (adversarial safety-crisis/incident registers) vs Sep-16 WIRED platform relay. Journalist: Maxwell Zeff (WIRED -> WSJ migration, m63 fourth leg). Deal partner: OpenAI (~$50M/yr News Corp licensing, May 2024; dual-payer publisher with Meta). FIRST journalist-migration-register member of the current ordinal line. Extends the safety-crisis falsification line from the publication level (#1122 m904 FORTY-FOURTH at WSJ, same Astra peg) into the journalist-migration register; extends the enforcement-litigation line (#1112 LASST FORTIETH at WIRED; #1117 FORTY-SECOND at FT; #1118 FORTY-THIRD at WaPo) to the WSJ AI-reporter beat. FORTY-SIXTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+      - 'STRONG: news-peg asymmetry. The WSJ arms are genuine scoops/safety incidents (Astra shelving, agent hack); the WIRED arm was a company briefing that structurally invites the relay register. The flip may track peg type, not outlet.'
+      - 'STRONG: desk-role asymmetry. WSJ staff AI reporter breaking news vs WIRED AI-business writer relaying a briefing; different desk norms apply.'
+      - 'MODERATE: co-byline dilution. The agent-hack arm is co-bylined with Robert McMillan; the adversarial register may be shared or McMillan''s.'
+      - 'MODERATE: excerpt-tier sourcing. wsj.com paywalled; 0 browser.open per #503. Bylines attested via WSJ newsletters (10-Point, CFO Journal), the techmeme river, the Muck Rack verified profile, and the cellcog relay.'
+      - 'MODERATE: debut-week selection. First-week output may be unrepresentative of steady-state WSJ register (scoop-hunting vs beat maintenance).'
+      - 'WEAK: n=2 fresh scored arms.'
+      counterevidence:
+      - 'The Sep-28 multi-lab oversight exclusive is entity-neutral (OpenAI/Anthropic/Meta/Microsoft all signatories to the ask): Zeff is not uniformly adversarial at WSJ, which bounds the flip claim to the safety-crisis register.'
+      - 'Zeff ran adversarial on OpenAI at WIRED on Jul-10-2026 (m597 Apple-lawsuit accusation piece, -0.2): he is capable of adversarial OpenAI coverage at the single-payer outlet, so the flip is register-specific, not a uniform softness story.'
+      - '#1122''s m904 already covers the Astra peg at the publication level (FORTY-FOURTH); this run''s contribution is the migration/register-flip dimension, not the peg itself.'
+      connects_to: [63, 597, 779, 898, 904, 504, 519, 549, 913, 1117, 1118, 1122]
+      research_method: '6 browser.search query sets Oct 1 2026 PDT (FTC probe journalist coverage; WIRED Meta glasses Apple Vision Pro October 2026; TechCrunch Zeff OpenAI Meta October 2026; NY Post FTC probe byline; "Maxwell Zeff" "Wall Street Journal" joined; Zeff McMillan WSJ agent-hack + Zeff WSJ debut intelligence-explosion). SELECTED: Muck Rack Zeff profile (verified @WSJ bio); wsj.com agent-hack canonical URL with byline sign-off; wsj.com 10-Point newsletter (Jain-told-Zeff verbatim); cellcog Astra relay (Zeff 22:30 UTC post); tipranks/biztoc/techmeme multi-lab exclusive attributions; wsj.com CFO Journal newsletter ("Maxwell Zeff exclusively reports"). REJECTED: own-repo #63 commit page (circular); nextunicorn.ventures "Zeff joins OpenAI" page (AI-generated, contradicted by the verified Muck Rack @WSJ profile); waterstechnology secondary; #1122''s runtimewire/PYMNTS Astra relays (in-corpus via m904, not re-ingested). 0 browser.open this run (excerpt-bounded per #503; wsj.com paywalled, relay-attested only). All URLs verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - https://muckrack.com/maxwell-zeff
+      - https://www.wsj.com/tech/ai/openai-agent-hacked-australian-government-website-eecf7a7a
+      - https://www.wsj.com/world/openai-halts-new-model-over-safety-worries-e0b12abb
+      - https://cellcog.ai/blog/gpt-6-1-astra/
+      - https://www.tipranks.com/news/the-fly/researchers-call-for-oversight-of-automated-ai-systems-wsj-reports-thefly-news
+      - https://biztoc.com/x/b6edc2f473d29dfa
+      - https://www.wsj.com/cfo-journal/etsy-aims-to-get-more-personal-and-boost-business-with-ai-59cf27e9
+      verification: 'Pre-commit novelty verified Oct 1 2026 ~11:00 PDT: zero test_type_b_1123 files on disk; no "Type B #1123" in git log; max numeric mechanism_id 904; zero 905 key forms (numeric/underscore/dash) repo-wide; block key zero-hit; the seven source URLs zero-hit via git grep -F; affirmative FORTY-FIFTH member-claim form absent repo-wide (negative-guard wordings only); THIRTY-FIRST relationship direction present repo-wide; THIRTY-SECOND direction absent repo-wide.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant false, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade. Hypothesis-generating only.'
+      verdict: directionally_supported_not_proven
+      finding: 'Maxwell Zeff''s WIRED -> WSJ migration (m63 fourth leg, verified via Muck Rack: "Reporter covering AI @WSJ | Formerly @WIRED, @TechCrunch, @markets") flips his OpenAI register within 12 days: the Sep-16 WIRED company-briefed platform relay (+0.15, carried per #807) becomes the Sep-24/28 WSJ debut-week adversarial safety-crisis double (Astra deception-shelving scoop -0.40; Australian agent-hack -0.35; mean -0.375; illustrative delta -0.525). The dual-deal softer-OpenAI prediction FAILS at the journalist-migration level: the larger-deal publisher''s debut-week output breaks the payer''s safety-chief-admitted deception story. FORTY-FIFTH falsification-family member, ledger 44->45. Hypothesis-generating only; news-peg, desk-role, co-byline, excerpt-tier, and debut-week confounders disclosed.'
   multi_publication: true
 - mechanism_662_brian_x_chen_duo_value_review_vs_rayban_privacy_alarm_register_gradient_sep13:
     mechanism_id: 662
