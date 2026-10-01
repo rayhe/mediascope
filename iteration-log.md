@@ -1,4 +1,4 @@
-## #1113 Type B: Joanna Stern (New Things/NBC, independent phase) Sep-24 Zuckerberg Meta Connect accountability interview (-0.50 MANUAL ILLUSTRATIVE) vs FRESH Sep-10 iPhone Duo enthusiast hands-on (+0.35 MANUAL ILLUSTRATIVE); illustrative delta +0.85 - same journalist, same month, both zero-deal (independent phase), 14 days apart - Apple draws the enthusiast register, Meta draws the accountability register - FORTY-FIRST falsification-family member, ledger holds at 41 - Type B FOURTH leg of the 1110-1114 window (Oct 1 2026, 02:00 AM PDT; main commit MAIN_SHA / anchor ANCHOR_SHA; log-hash followup registers both hashes here per #721 (this commit); doc-sync 56807/1437 -> 56860/1438 (+53/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1113 Type B: Joanna Stern (New Things/NBC, independent phase) Sep-24 Zuckerberg Meta Connect accountability interview (-0.50 MANUAL ILLUSTRATIVE) vs FRESH Sep-10 iPhone Duo enthusiast hands-on (+0.35 MANUAL ILLUSTRATIVE); illustrative delta +0.85 - same journalist, same month, both zero-deal (independent phase), 14 days apart - Apple draws the enthusiast register, Meta draws the accountability register - FORTY-FIRST falsification-family member, ledger holds at 41 - Type B FOURTH leg of the 1110-1114 window (Oct 1 2026, 02:00 AM PDT; main commit d95faffb / anchor 4004fae7; log-hash followup registers both hashes here per #721 (this commit pending log-hash fill); doc-sync 56807/1437 -> 56860/1438 (+53/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
 - This run is iteration #1113 Type B, the FOURTH leg of the 1110-1114 window (D #1110 -> E #1111 -> A #1112 -> B #1113 -> C #1114, per the #565 anchor + rotation guard). Predecessor #1112 Type A verified in git log (main ddeb01c4, Oct 1 2026 01:00 AM PDT; WIRED x OpenAI LASST lawsuit, mechanism 898, FORTIETH falsification member, ledger 39->40). The 1105-1109 window is verified closed as a consecutive newest-first sequence (D #1105, E #1106, A #1107, B #1108, C #1109). Next run #1114 Type C continues this window.
@@ -20,9 +20,9 @@
 - Supersession notes (recorded, not repaired): #1112's TestLedgerHoldsAt40 no-41st-member guard + ledger-40 class fail BY DESIGN (this run lands FORTY-FIRST). #1112's TestNovelty1112 zero-899 forward sweeps STAY GREEN - their numeric sweep covers only top-level profiles/*.yaml (glob, not recursive), while this run's block lands in profiles/careers/ (scope note). #1112's TestSupersessionPins1112: 6/8 pass; test_underscore_898_hits_exactly_wired and test_novel_relay_url_zero_hit_elsewhere were already stale at #1112's own doc-sync (#1112's iteration-log entry carries underscore-form mechanism_898 and the relay URL - self-inflicted, not caused by this run).
 
 ### Commit hashes
-- main commit: MAIN_SHA
-- anchor followup (ANCHORED_SHA patch per #565): ANCHOR_SHA
-- log-hash followup registers main + anchor hashes in this entry per #721 (this commit: LOGHASH_SHA).
+- main commit: d95faffb
+- anchor followup (ANCHORED_SHA patch per #565): 4004fae7
+- log-hash followup registers main + anchor hashes in this entry per #721 (this commit: pending log-hash fill).
 - All three pushed to rayhe/mediascope main.
 
 ### Doc-sync ratchet
