@@ -52,7 +52,7 @@ TYPE_LETTER = "C"
 WINDOW = "1115-1119"
 MECH_NUM = 903
 NEXT_NUM = 904
-ANCHORED_SHA = "TBD"  # main commit, patched in the anchor followup per #565
+ANCHORED_SHA = "5ca5ef2b"  # main commit, patched in the anchor followup per #565
 OWN_BASENAME = (
     "test_type_c_1119_microsoft_nine_entertainment_first_apac_news_deal_"
     "geographic_portfolio_expansion_thirty_first_direction_oct01_8am.py"
