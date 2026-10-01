@@ -68,7 +68,7 @@ TW29 = "TWENTY-" + "NINTH relationship direction"
 TW30 = "THIRTI" + "ETH relationship direction"
 T40 = "FORTI-" + "ETH falsification-family member"
 
-ANCHORED_SHA = "PLACEHOLDER_40_HEX_PATCHED_POST_COMMIT_PER_565"
+ANCHORED_SHA = "1819ae4c4935ef15cac98e4bf7bbd34decc6670c"
 ITERATION = 1109
 TYPE_LETTER = "C"
 WINDOW = "1105-1109"
