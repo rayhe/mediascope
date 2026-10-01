@@ -1,3 +1,51 @@
+## #1120 Type D: m901/m902/m903 qualitative-discipline verification + post-1115-1119 corpus integrity (max numeric mechanism_id 903; zero-904 forward guards; ledger holds at 43; THIRTY-FIRST direction present, THIRTY-SECOND absent) - Type D FIRST leg of the 1120-1124 window, OPENING it (Oct 1 2026, 09:00 AM PDT; main commit 69728626 / anchor 4605e386 / doc-sync 1254a00c; log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58257/1444 -> 58339/1445 (+82/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Rotation transparency
+- This run is iteration #1120 Type D, the FIRST and OPENING leg of the 1120-1124 window (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124, per the #565 anchor + rotation guard). Predecessor #1119 Type C verified in git log (main 5ca5ef2b / anchor c035336a / doc-sync d9365160 / log-hash fill 3f792914, Oct 1 2026 08:00 AM PDT; Microsoft x Nine Entertainment first-APAC news deal, GEOGRAPHIC-PORTFOLIO EXPANSION as THIRTY-FIRST relationship direction, mechanism 903, ledger holds at 43). The 1115-1119 window is verified closed as a consecutive newest-first sequence (D #1115, E #1116, A #1117, B #1118, C #1119). Next run #1121 continues the window as Type E.
+- Type selection: Type D (test and verify) per the #565 rotation, first leg. The window's new mechanisms: A #1117 (m901 FT x OpenAI FTC agent-safety probe, FORTY-SECOND falsification-family member), B #1118 (m902 De Vynck WaPo probe pair, FORTY-THIRD member), C #1119 (mechanism 903, THIRTY-FIRST direction, non-member). This run lands NO new mechanism: max numeric mechanism_id stays 903; zero-904 forward guards runtime-built per #715.
+
+### Finding summary
+- Qualitative-discipline verification of all three window mechanisms, every assertion green (N pre-commit green; 12 deselected per #565/#719/#721, all passing post-doc-sync):
+  - m901 (financial-times.yaml, indent 4): FT x OpenAI Sep-30 FTC agent-safety probe coverage (regulatory-enforcement register) -0.35 MANUAL ILLUSTRATIVE vs carried FT x Meta arms (m625 +0.05, m823 +0.20, mean +0.125) un-rescored per #807; illustrative delta -0.475; uniform payer-softening prediction FAILS on the enforcement peg; FORTY-SECOND falsification-family member, ledger 41->42 (carried). research 5 search sets, 0 browser.open.
+  - m902 (careers/journalists.yaml, indent 4): De Vynck Sep-26 OpenAI federal-websites probe -0.45 MANUAL ILLUSTRATIVE vs carried Meta arms (framing labels only, un-rescored per #807); m569 "OpenAI: softer" prediction FAILS at the journalist level; null softening gradient; FORTY-THIRD falsification-family member, ledger 42->43 (carried). research 5 search sets, 0 browser.open.
+  - m903 (competitor-entities.yaml, indent 0): Microsoft x Nine Entertainment Jul-3-2026 first-APAC news licensing deal, GEOGRAPHIC-PORTFOLIO EXPANSION as the THIRTY-FIRST relationship direction; 5 novel source URLs; tone NOT_SCORED, engine NOT run, is_significant false, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade, NOT a falsification-family member; ledger holds at 43 (carried).
+- Corpus integrity: max numeric mechanism_id 903 (subprocess pins on the #1117/#1118/#1119 files still PASS; the #1115 numeric-900/max-900 guards fail BY DESIGN as recorded here). Zero underscore/dash/numeric 904 keys repo-wide (format-built needles per #715). FORTY-THIRD member-claim form lives in exactly one profiles file (journalists.yaml - the m902 ledger_note claim line plus the finding line's self-reference, a #1118 self-reference not a second claim); FORTY-FOURTH member-form absent profiles-wide; THIRTY-FIRST direction present (m903); THIRTY-SECOND direction absent. No Type D #1120 in git log pre-commit. All corpus files ASCII-only, no em dashes.
+- Background-suite verdict per #795: the #1115-launched full suite DIED - 1621 bytes (1461 dots, ~2% progress), 0 F, 0 E, zero summary tokens (no passed/failed/collected), last write Oct 1 11:35:23 UTC, no live pytest process. SEVENTH consecutive background-suite death of the new streak; tombstone lineage EIGHTY-SECOND -> EIGHTY-THIRD.
+- Fresh synthetic engine calibration (real calculate_asymmetry signature, scratch values, NEVER promoted to findings per the Aug 28 2026 standing rule): strong n=8-per-arm asymmetry -0.6775, t -19.336014443143515, p 2.0914997331524465e-11, d -9.668007221571758, is_significant True, CI (-0.7375, -0.6125) entirely below zero, arm-swap negates exactly; null pair asymmetry -0.0025, t n/a, p 0.9000, is_significant False, CI (-0.0375, 0.03375) crosses zero; degenerate n=1 on the m901 illustrative pair (-0.35 vs +0.125): asymmetry -0.475, t 0.0, p 1.0, d 0.0, is_significant False (the #638/#643 degenerate contract).
+- Suite re-launched without -x to ~/workspace/goals/mediascope-meta-wearables-press-analysis/hidden_files/type_d_1120_full_suite.log (log touched pre-commit; the NEXT Type D run, #1125, owns the verdict per #795).
+- Forward-looking staleness (expected, BY DESIGN): #1115's TestGuardLifecycle1115 fails (zero-901 numeric, max-900, no-thirty-first-direction, no-forty-second-member pins all trip on the landed 901/902/903); #1116's TestStalenessPins fails (its still-PASS pins on #1115's guard lifecycle and #1114's zero-901 flip); #1115's TestTypeDForwardLookingStaleness1115 fails (its ledger-41 and zero-901 pins flip on the #1117/#1118 landings). #1119's TestForwardGuards1119 (zero-904), TestSupersessionPins1119, #1118's TestSupersessionPins1118 and #1117's TestSupersessionPins1117 all stay GREEN (they pin the landed state).
+- 0 browser.open this run (verification-layer run per #503); 0 browser.search sets (no new research needed - all verification against in-corpus blocks).
+
+### Method
+- Read all three window blocks in full (financial-times.yaml m901, careers/journalists.yaml m902, competitor-entities.yaml m903) and asserted every qualitative-discipline field: iteration/run metadata, scorer values and delta arithmetic, carried-arm #807 discipline, falsification-family membership and ledger arithmetic, statistical-discipline markers (MANUAL ILLUSTRATIVE ONLY / engine NOT run / NOT_CALCULATED / is_significant false / NOT artifact-grade), research-method provenance, confounder/counter-evidence disclosure.
+- Subprocess pins (format-built needles per #715, sweeps exclude this file + __pycache__): max numeric mechanism_id 903 across tests/ + profiles/; zero 904 keys in all forms; zero Type D 1120 in git log; FORTY-FOURTH member-form absent profiles-wide; THIRTY-SECOND direction absent repo-wide.
+- Synthetic engine calibration via the real mediascope.score.asymmetry.calculate_asymmetry signature on scratch inputs (strong/null/degenerate), values recorded above; engine-not-promoted marker asserted in the test file.
+- Background-suite verdict read from the #1115 suite log (1621 bytes, 1461 dots, 0 F, 0 E, no summary tokens) + pgrep confirming no live pytest; re-launch via nohup without -x.
+
+### New Type D files
+- Tests: `tests/test_type_d_1120_m901_m902_m903_qualitative_corpus_integrity_oct01_9am.py` (82 tests, 15 classes; 70 green pre-commit; 12 deselected pre-commit per #565/#719/#721 - TestNovelty1120 git-log pin, 3 rotation-guard/anchor pins, tombstone pin, 4 doc-sync pins, 3 iteration-log pins - all patched green post-doc-sync).
+- Literal discipline per #715: NO contiguous underscore-904 key form, `"FORTY-FOURTH falsification-family member"`, or `"THIRTY-SECOND relationship direction"` literals anywhere in the new file (all format-built: `_T44`, `_TW32`); landed-claim literals `_T43`/`_TW31` permitted; prose uses hyphenated forms.
+- Supersession notes: this run inherits #1119's zero-904 guards and no-thirty-second-direction guard; the #1125 Type D run will pin zero-905 and no-thirty-third-direction.
+
+### Commit hashes
+- main commit: 69728626
+- anchor followup (ANCHORED_SHA patch per #565): 4605e386
+- doc-sync followup (README/ARCHITECTURE + constants patch): 1254a00c
+- log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit: TBD, terminal per #721).
+- All three to be pushed to rayhe/mediascope main.
+
+### Doc-sync ratchet
+- README `| Tests |` line: 58257 -> 58339; test-file table: 1444 -> 1445 rows; #1120 row appended after the #1119 row.
+- ARCHITECTURE.md counts synced; #1120 row appended to the test tree after the #1119 row.
+- doc-sync 58257/1444 -> 58339/1445 (+82/+1).
+
+### Rotation guard
+- Rotation: this run is iteration #1120 Type D, the FIRST and OPENING leg of the 1120-1124 window (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124, per the #565 anchor + rotation guard). Next run #1121 opens the window's second leg as Type E, inheriting the zero-904 forward guards and the no-thirty-second-direction guard from this run's TestForwardGuards1120 and TestGuardLifecycle1120.
+- staleness pins landed this run (subprocess, fail BY DESIGN): #1115's zero-901 numeric/max-900/no-thirty-first/no-forty-second guards, #1116's TestStalenessPins, #1115's TestTypeDForwardLookingStaleness1115. #1119's zero-904 guards, no-thirty-second-direction guard and forty-fourth-absent guard hold green.
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test-file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit) - all untouched; targeted staging only. Do NOT touch #1024 m846 (self-flagged sourcing-constraint violation; Ray's revert/leave/rebuild decision pending - NOT an assistant repair task).
+
 ## #1119 Type C: Microsoft x Nine Entertainment Jul-3-2026 first-APAC news licensing deal - GEOGRAPHIC-PORTFOLIO EXPANSION as THIRTY-FIRST relationship direction (m903), ledger holds at 43 (FIRST dedicated corpus mechanism on Microsoft's first APAC news deal; 5 novel URLs; voluntary licensing in the shadow of Australia's News Bargaining Incentive) - Type C FIFTH leg of the 1115-1119 window, CLOSING it (Oct 1 2026, 08:00 AM PDT; main commit 5ca5ef2b / anchor c035336a / doc-sync d9365160 / log-hash TBD (this commit; terminal per #721, the fill hash itself is not re-registered); doc-sync 58193/1443 -> 58257/1444 (+64/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
