@@ -1,3 +1,47 @@
+## #1128 Type B: David Heaney (UploadVR) Sep-13/14/17 Meta-vs-Apple headline-softening register contrast (m908) - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1125-1129 window (Oct 1 2026, 04:00 PM PDT; main commit TBD / anchor TBD / doc-sync TBD / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58892/1452 -> 58974/1453 (+82/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Rotation transparency
+- Window 1125-1129 FOURTH leg: D #1125 (1:00 PM) -> E #1126 (2:00 PM) -> A #1127 (3:00 PM) -> B #1128 (4:00 PM, this run). Next: #1129 Type C.
+- Predecessor #1127 Type A chain verified pre-commit: main 80d3738e / anchor ef613b1e / doc-sync 459184c8 / log-hash 36756bb0.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit.
+
+### Mechanism m908 (journalists.yaml david_heaney competitor_coverage)
+- Block key `type_b_1128_david_heaney_uploadvr_meta_threads_vs_apple_vision_pro_layoffs_visionos_sep2026` (4-space, designed keying, no mechanism-number substring per #715). SECOND dedicated corpus mechanism on Heaney (m821/Type B #983 covered Snap-vs-Meta; m821 arms deliberately NOT reused).
+- Meta arm Sep 13 2026: "Threads Apps Arrived On Quest & Meta Ray-Ban Display" - neutral-factual relay (0.0 MANUAL ILLUSTRATIVE) with a mild owner-friction detail (force-downloaded Threads interrupting games); zero privacy vocabulary; zero adversarial Meta framing.
+- Apple arm 1 Sep 14 2026: "Apple Laid Off Around 100 Staff Working On Vision Pro, But Don't Panic" - reassuring register at the HEADLINE level (+0.20 MANUAL ILLUSTRATIVE): the kicker + "does not mean Apple is exiting the VR/MR space" + executive-reassurance framing, while the body relays Gurman's layoff/gaming-team-shutdown facts plainly. Strongest within-writer signal in the pair.
+- Apple arm 2 Sep 17 2026: "visionOS 27 Launched For Apple Vision Pro Headsets, Bringing Siri AI & More" - product-positive (+0.30); discloses Apple's $1B/yr Google co-development deal inside the piece (counterevidence against concealment).
+- Illustrative delta (Apple mean +0.25 minus Meta 0.0) = +0.25, n=1 vs n=2 degenerate contract, NOT significant. 1-day primary temporal window (Sep 13 vs Sep 14).
+- NOT a falsification-family member: bounded searches found NO UploadVR x Meta or UploadVR x Apple financial relationship (no payer-softening prediction testable); the 2018 Luckey/Upload-Inc TechCrunch story is a false positive (defunct startup, not the publication; Luckey left Meta in 2017). Ledger holds at 46; FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing); THIRTY-THIRD direction absent.
+- MANUAL ILLUSTRATIVE ONLY; engine NOT run; no analysis.json; NOT artifact-grade; verdict directionally_supported_not_proven (scoped to the headline-softening observation; strong peg-mismatch + house-register confounders).
+- Extends m821's Heaney register finding (register follows the news peg) to a third entity (Apple), with the softening landing on the competitor's bad news.
+
+### Guards
+- Forward guards for #1129: zero-909 (numeric/underscore/dash), no-forty-seventh member, no-thirty-third direction (needles format-built per #715).
+- #1127's guard-lifecycle pins flip by design (max-907, zero-908 numeric, no-Type-B-#1128-in-git-log); #1127's no-forty-seventh + no-thirty-third guards stay green (verified via supersession pins).
+- Pre-commit novelty: max 907, zero 908 key forms, no FORTY-SEVENTH member, no THIRTY-THIRD direction, no test_type_b_1128 files, no "Type B #1128" in git log. Test gate: 79 passed / 3 pending-doc-sync pre-commit (the 7 initial failures were: block-scoped ASCII check too broad (file carries pre-existing Conde-Nast note), the two THIRTY-THIRD contiguous needle forms in my own YAML prose, the wrong-premise thirty-second-absent test - landed at m906 - all fixed; doc-sync trio green after this entry). Full-file re-run post-doc-sync: 82/82 green.
+
+### Method
+Research delegated to a child agent (7 browser.search query sets Oct 1 2026 PDT: Heaney/Fried/Gibbs/McCracken/Boxall candidate sweeps; Fried, Gibbs, McCracken, Boxall rejected on saturation or no clean pair; Heaney selected). 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps: zero test_type_b_1128 files on disk (glob); no "Type B #1128" in git log (--grep); max numeric mechanism_id 907 in profiles/ pre-commit; zero numeric/underscore/dash 908 key forms repo-wide pre-commit (format-built needles, own file excluded per #715); block key zero-hit repo-wide pre-commit (git grep -F); the 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); affirmative FORTY-SEVENTH member-claim form absent repo-wide pre-commit; THIRTY-THIRD direction absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### New Type B files
+tests/test_type_b_1128_david_heaney_uploadvr_meta_threads_vs_apple_vision_pro_layoffs_visionos_sep2026_4pm.py - 14 classes, 82 tests.
+
+### Commit hashes
+Main commit TBD (verified via git rev-parse); anchor followup TBD (ANCHORED_SHA patched per #565); log-hash followup updates this line (this commit).
+
+### Doc-sync ratchet
+README stats table 58892/1452 -> TBD/TBD + test-file table row; ARCHITECTURE.md tree row; iteration-log #1128 entry (this entry).
+
+### Push status
+Push status (this run, Oct 1 2026 ~4:xx PM PDT): pending at doc-sync time; see followup.
+
+### Rotation guard
+1125-1129 window FOURTH leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1129 Type C closes the window.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
+
+
 ## #1127 Type A: m907 The Verge x OpenAI Sep-29/30 safety-crisis double (Astra shelving homepage piece -0.40 + FTC probe brief -0.35, pair mean -0.375) vs carried Meta arms - FORTY-SIXTH falsification-family member, ledger 45->46 - Type A THIRD leg of the 1125-1129 window (Oct 1 2026, 03:00 PM PDT; main commit 80d3738e / anchor ef613b1e / doc-sync 459184c8 / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58819/1451 -> 58892/1452 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
