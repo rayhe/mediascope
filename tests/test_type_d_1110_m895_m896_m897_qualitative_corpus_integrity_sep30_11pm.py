@@ -126,7 +126,7 @@ MAX_ID = 897
 NEXT_NUM = 898
 
 # Patched by the anchor followup commit per #565 (post-main-commit).
-ANCHORED_SHA = "TBD_PATCHED_BY_ANCHOR_FOLLOWUP_PER_565"
+ANCHORED_SHA = "f4f5c8446b87b3c41d313ae661d9f4073b716f1e"
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
