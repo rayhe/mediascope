@@ -3950,6 +3950,167 @@ competitor_relationships:
         iteration: 1007
         type: 'A'
         date: '2026-09-26 02:00 PDT'
+    mechanism_895_nyt_anthropic_sep2026_ipo_register_swing_vs_meta_carried_arms:
+      mechanism_id: 895
+      date_analyzed: '2026-09-30'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1107
+      iteration_type: A
+      iteration_time: '2026-09-30 20:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The New York Times
+      competitor_pair: 'Anthropic vs Meta (m835 temporal extension; m883/m892 same-event third-publication leg)'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '20:00'
+      job_id: mediascope-daily-iteration
+      test_file: 'tests/test_type_a_1107_nyt_anthropic_s1_canary_register_vs_meta_carried_arms_sep30_8pm.py'
+      rotation_guard: "1105-1109 window THIRD leg: D (#1105) -> E (#1106) -> A (#1107, this run) -> B (#1108) -> C (#1109) per the #565 anchor + rotation guard; the 1100-1104 window verified closed (D #1100, E #1101, A #1102, B #1103, C #1104 as a consecutive newest-first sequence in git history); concurrency: #899 (nytimes.yaml m771), #938 (test file edit), #900 (untracked test file), #1012-wt (working-tree edit) in-flight/uncommitted and untouched; novelty anchor patched in the followup per the #565 convention; do NOT touch #1024 m846."
+      mechanism_name: 'NYT x Anthropic Sep-2026 S-1 Canary Register vs Carried Meta Arms - Same-Event Third-Publication Leg (m883/m892) with 11-Day Register Swing'
+      distinct_from_prior: >
+        Extends m835 (Type A #1007, Sep 26 2026) temporally: m835 paired the
+        Sep-12 Amodei-slowdown news arm (+0.10) and the Sep-18 IPO-scoop momentum
+        arm (+0.25, IPOScoop attestation) against the Sep-23 Meta Connect relay
+        (+0.10) and the Aug-18 ICE-ban memo enforcement arm (-0.30); this
+        mechanism carries all four m835 arms un-rescored per #807 and adds the
+        FIRST dedicated S-1-peg NYT x Anthropic arm (Sep-29 Sorkin DealBook,
+        -0.35). FIRST dedicated Type A S-1-register mechanism under
+        competitor_relationships.anthropic in nytimes.yaml. Same-event
+        third-publication leg per the m847/m856 precedent, extending the m883
+        (Verge, Sep 30) / m892 (FT, Sep 29) S-1 series to the NYT. The
+        within-entity swing (-0.60 in 11 days) is the third publication-level
+        replication of the peg-follows-register pattern after m676 (FT, -0.55 in
+        16 days) and m712 to m877 (WIRED, -0.50 in 13 days). NOT a
+        falsification-family member; ledger holds at 38; THIRTY-NINTH remains
+        the negative guard.
+      finding: >
+        One fresh NYT x Anthropic arm, Sep 29 2026, excerpt-bounded per #503
+        (NYT paywalled; 0 browser.open). DealBook / Andrew Ross Sorkin:
+        'Anthropic's IPO filing'
+        (https://www.nytimes.com/2026/09/29/business/dealbook/anthropic-ipo-filing-s1.html),
+        relay-attested via the implicator.ai attributed relay carrying the
+        explicit nytimes.com URL: Sorkin calls Anthropic 'the tech economy's
+        canary in the coal mine'; Amazon and Google hold large Anthropic stakes
+        carried on balance sheets at high valuations; a delayed or discounted
+        debut 'sets off a cascading mark-to-market event'; 'If this I.P.O.
+        window closes, it threatens to expose those 'circular financing' fears
+        we've been warning about here for months.' MANUAL ILLUSTRATIVE -0.35:
+        market-systemic accountability register - the IPO is framed as a
+        contagion vector for the whole AI-capital edifice, not a company
+        milestone. Same-event third-publication leg of the S-1 register series
+        per the m847/m856 precedent: m883 (Verge, Sep 30, -0.40
+        existential-risk) and m892 (FT, Sep 29, -0.35 existential-risk) - the
+        NYT's -0.35 lands within 0.05 of both, near-parity cross-publication
+        replication of the accountability register on the S-1 peg at a third
+        outlet whose Anthropic tie is reported-not-confirmed. Within-entity
+        swing at NYT x Anthropic: m835's carried Sep-18 IPO-scoop momentum arm
+        (+0.25, un-rescored per #807) to the fresh Sep-29 Sorkin accountability
+        arm (-0.35) = -0.60 in 11 days - the THIRD publication-level replication
+        of the peg-follows-register swing (m676 FT: +0.20 to -0.35 = -0.55 in 16
+        days; m712 to m877 WIRED: +0.15 to -0.35 = -0.50 in 13 days). Against
+        the carried NYT x Meta arms from m835 (Sep-23 Connect straight relay
+        +0.10; Aug-18 ICE-ban memo enforcement -0.30; carried mean -0.10,
+        un-rescored per #807): fresh Anthropic -0.35 vs Meta mean -0.10,
+        illustrative delta -0.25 - the accountability register lands HARDER on
+        the reported-settlement counterparty than on Meta on this window's
+        pegs, inverting the naive deal-softening read. MANUAL ILLUSTRATIVE
+        ONLY, engine NOT run, no analysis.json update, NOT artifact-grade,
+        verdict directionally_supported_not_proven. NOT a falsification-family
+        member: no uniform payer-softening prediction under test (the
+        NYT-Anthropic settlement is reported-not-confirmed; the Amazon-deal
+        payer-softening prediction was already falsified at m567). Ledger holds
+        at 38; THIRTY-NINTH absent. Correlation is not causation;
+        hypothesis-generating only.
+      financial_relationship:
+        nyt_anthropic_reported_settlement: 'FinancialContent Dec 29 2025 reported a landmark confidential settlement ending NYT-Anthropic copyright disputes (MCP-based structured-retrieval licensing pipeline, source cards for Claude citations, data-hygiene protocol) - single-source UNVERIFIED, coverage_prediction positive_if_deal_confirmed; the profile names it the single most important variable for predicting NYT Anthropic tone'
+        nyt_amazon_deal: 'Verified $20-25M/yr AI content licensing (announced May 29 2025, #559); Amazon is a major Anthropic investor (up to $8B+ per corpus) - indirect channel: the NYT licensing payer is the S-1 subject''s largest strategic backer'
+        nyt_openai_litigation: 'Active multi-billion-dollar copyright suit filed Dec 2023; adversarial tie; lawsuit-domain-only adversarialism per m471'
+        nyt_meta: '$0, no licensing relationship'
+        deal_disclosed_in_nyt_coverage: false
+        incentive_read: 'The reported-but-unverified settlement predicts softer Anthropic coverage IF confirmed; the observed -0.60 swing into the accountability register on the S-1 peg cuts against a static deal-softening read - the register follows the peg, not the reported tie. The Amazon indirect channel (payer = Anthropic backer) likewise fails to soften the Sorkin arm.'
+        non_causal_language: 'Correlation does not establish causation. Financial relationships are structural incentive predictors, not proof of editorial control. No causal claim that any tie drives coverage.'
+      articles_anthropic:
+      - title: "Anthropic's IPO filing"
+        publication: The New York Times
+        desk: DealBook
+        byline: Andrew Ross Sorkin
+        date: '2026-09-29'
+        url: 'https://www.nytimes.com/2026/09/29/business/dealbook/anthropic-ipo-filing-s1.html'
+        url_status: 'NOVEL this run - zero hits repo-wide pre-commit (NYT original paywalled; relay-attested via the implicator.ai attributed relay carrying the explicit nytimes.com URL)'
+        attestation_url: 'https://www.implicator.ai/anthropic-ipo-prospectus-518-billion-compute-commitments.md'
+        attestation_status: 'NOVEL this run - zero hits repo-wide pre-commit'
+        register: market_systemic_accountability
+        manual_illustrative_tone: -0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE, hand-assigned this run from relay excerpts'
+        evidence_tier: 'excerpt-tier relay-attributed per #503 (NYT original not opened; 0 browser.open)'
+        key_language:
+        - "the tech economy's canary in the coal mine"
+        - 'sets off a cascading mark-to-market event'
+        - "threatens to expose those 'circular financing' fears we've been warning about here for months"
+        - 'Amazon and Google hold large stakes in Anthropic carried on their balance sheets at high valuations'
+        framing: 'IPO as contagion vector for the AI-capital edifice; circular-financing fears; mark-to-market cascade'
+      articles_meta_carried:
+      - arm: 'NYT Sep-23 Meta Connect straight relay (carried from m835, un-rescored per #807)'
+        title: 'Meta Unveils 3 Smart Glasses With Built-In A.I.'
+        date: '2026-09-23'
+        register: straight_product_launch_relay
+        tone_carried: 0.10
+        source: 'm835 (#1007); un-rescored per #807'
+        novelty_note: 'not novel this run - carried arm'
+      - arm: 'NYT Aug-18 ICE-ban memo enforcement (carried from m835, un-rescored per #807)'
+        title: 'NYT ICE memo: Meta Glasses could capture sensitive information'
+        date: '2026-08-18'
+        register: enforcement_register_investigative
+        tone_carried: -0.30
+        source: 'm835 (#1007); un-rescored per #807'
+        novelty_note: 'not novel this run - carried arm'
+      carried_anthropic_temporal_anchor:
+      - arm: 'NYT Sep-18 IPO-scoop momentum (carried from m835, un-rescored per #807)'
+        title: 'The IPO Buzz: Anthropic IPO May Come in November - The NYT Reports'
+        date: '2026-09-18'
+        register: ipo_momentum_capital_market
+        tone_carried: 0.25
+        source: 'm835 (#1007); un-rescored per #807; IPOScoop attestation URL already in-corpus (3 hits pre-commit), not re-ingested as novel'
+        novelty_note: 'not novel this run - carried temporal anchor for the within-entity swing'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        scorer: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run'
+        target: 'NYT x Anthropic fresh S-1 arm'
+        target_scores: [-0.35]
+        target_avg: -0.35
+        peer: 'NYT x Meta carried arms (m835, un-rescored per #807)'
+        peer_scores: [0.10, -0.30]
+        peer_avg: -0.10
+        delta: -0.25
+        delta_calc: '-0.35 - (-0.10) = -0.25'
+        delta_direction: 'accountability register harder on Anthropic than Meta on the S-1 peg window; illustrative only'
+        temporal_swing: 'm835 Sep-18 +0.25 (carried) to Sep-29 -0.35 (fresh) = -0.60 in 11 days; third publication-level peg-follows-register replication'
+        cross_publication_s1_triple: 'Verge m883 -0.40, FT m892 -0.35, NYT m895 -0.35: max pairwise distance 0.05, near-parity triple replication'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'directionally_supported_not_proven'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False / not asserted at the finding layer, no_analysis_json_update true, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'NOT a falsification-family member: no uniform payer-softening prediction under test (the NYT-Anthropic settlement is reported-not-confirmed; the Amazon-deal payer-softening prediction was already falsified at m567). Ledger holds at 38; THIRTY-NINTH absent.'
+      ledger: '38'
+      novelty: 'Pre-commit greps per #715: zero test_type_a_1107 files on disk (glob); no "Type A #1107" in git log (--grep); max numeric mechanism_id 894 pre-commit; zero numeric/underscore/dash 895 mechanism key strings repo-wide pre-commit (needles format-built; own file excluded); block key zero-hit repo-wide pre-commit; 2 novel URLs zero-hit repo-wide pre-commit (nytimes.com/2026/09/29/business/dealbook/anthropic-ipo-filing-s1, implicator.ai/anthropic-ipo-prospectus-518-billion); the Sep-18 IPOScoop relay URL already in-corpus via m835 (3 hits) and the winbuzzer relay via m784 (1 hit) - not re-ingested as novel.'
+      rotation_transparency: "Iteration #1107 Type A is the THIRD leg of the 1105-1109 window (D->E->A->B->C per #565 anchor + rotation guard; #1105 Type D main 2161fb38/anchor 21adbaed/log-hash ce757f92, #1106 Type E main efc381a0/anchor 0a3b1066/log-hash 3369fce5 - all verified present via git log before this run's commit). Pre-commit novelty greps: zero test_type_a_1107 files on disk (glob); no 'Type A #1107' in git log (--grep); max numeric mechanism_id 894 pre-commit; zero numeric/underscore/dash 895 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 2 novel URLs zero-hit repo-wide pre-commit. Guard lifecycle: #1104's zero-895 forward guards (TestCorpusNoveltyPostCommit) and #1105's zero-895 forward guards fail BY DESIGN at this run (pinned as forward-looking staleness in the #1107 test file; the #1110 Type D run pins the zero-896 guards); this file's NEXT needles target 896. This run lands mechanism 895. Next run is #1108 Type B, continuing the 1105-1109 window."
+      research_method: '2 browser.search query sets this run (NYT Anthropic S-1 existential risk September 2026 - surfaced the Sorkin DealBook piece via the implicator.ai attributed relay carrying the explicit nytimes.com URL; NYT Anthropic IPO November listing September 18 - confirmed the Sep-18 scoop already in-corpus via m835, IPOScoop URL 3 hits repo-wide, winbuzzer relay 1 hit; rejected non-NYT-authored relays). 0 browser.open this run (excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 1107
+        type: 'A'
+        date: '2026-09-30 20:00 PDT'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   amazon:
     financial_tie: "licensing"
     estimated_value: "$20-25M/yr"
