@@ -1,4 +1,4 @@
-## #1122 Type A: WSJ x OpenAI Sep 28-Oct 1 safety-crisis double (m904) - FORTY-FOURTH falsification-family member, ledger 43->44 - Type A THIRD leg of the 1120-1124 window (Oct 1 2026, 10:00 AM PDT; main commit 85efc7a0 / anchor 6b7f2385 / doc-sync TBD / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58396/1446 -> 58487/1447 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1122 Type A: WSJ x OpenAI Sep 28-Oct 1 safety-crisis double (m904) - FORTY-FOURTH falsification-family member, ledger 43->44 - Type A THIRD leg of the 1120-1124 window (Oct 1 2026, 10:00 AM PDT; main commit 85efc7a0 / anchor 6b7f2385 / doc-sync 801d26b8 / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58396/1446 -> 58487/1447 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
 - This run is iteration #1122 Type A, the THIRD leg of the 1120-1124 window (D #1120 -> E #1121 -> A #1122 -> B #1123 -> C #1124, per the #565 anchor + rotation guard). Predecessor #1121 Type E verified in git log (main 2c9bc7ee / anchor 700112b6 / doc-sync 4cffcc18 / log-hash 4f5f5194, Oct 1 2026 09:35 AM PDT; 147th podcast-sentiment verification; ledger holds at 43). The 1115-1119 window is verified closed as a consecutive newest-first sequence. Next run #1123 continues the window as Type B.
@@ -25,7 +25,7 @@
 ### Commit hashes
 - main commit: 85efc7a0
 - anchor followup (ANCHORED_SHA patch per #565): 6b7f2385
-- doc-sync followup (README/ARCHITECTURE constants patch): TBD
+- doc-sync followup (README/ARCHITECTURE constants patch): 801d26b8
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit: TBD, terminal per #721).
 - All pushed to rayhe/mediascope-asymmetry main.
 
@@ -34,7 +34,7 @@
 - docs/ARCHITECTURE.md: #1122 row appended to the test tree after the #1121 row.
 
 ### Rotation guard for #1123
-- Next run #1123 continues the 1120-1124 window as Type B (FOURTH leg D->E->A->B->C). Predecessor chain for its rotation guard: #1122 main 85efc7a0 / anchor 6b7f2385 / doc-sync TBD / log-hash TBD.
+- Next run #1123 continues the 1120-1124 window as Type B (FOURTH leg D->E->A->B->C). Predecessor chain for its rotation guard: #1122 main 85efc7a0 / anchor 6b7f2385 / doc-sync 801d26b8 / log-hash TBD.
 
 ## #1121 Type E: podcast sentiment 147th verification cycle (GF episode 502 holds as newest, fourteenth verification since the Sep 28 release; Everyone Hates Elon 52-day hold; Attention Sphere 147th quoted-search no-match; press: 3 re-surfaces + 4 new-to-corpus keys; recency frontier holds at Sep 29) - Type E SECOND leg of the 1120-1124 window (Oct 1 2026, 09:35 AM PDT; main commit 2c9bc7ee / anchor 700112b6 / doc-sync 4cffcc18 / log-hash followup registers all three hashes here per #721 (this commit: TBD, terminal per #721); doc-sync 58339/1445 -> 58396/1446 (+57/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
