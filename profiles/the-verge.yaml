@@ -2947,6 +2947,148 @@ competitor_relationships:
       rotation_guard: '1080-1084 window THIRD leg D(#1080) -> E(#1081) -> A (this run); anchor patched post-commit per #565. Next: #1083 Type B continues the window.'
       test_file: tests/test_type_a_1082_verge_openai_augsep2026_astra_safety_arc_vs_carried_meta_arms_sep29_7pm.py
       research_method: '4 browser.search query sets this run (The Verge OpenAI Astra model shelved safety concerns September 2026 - rejected for a Verge original, supplied relay context on the Sep-28/29 Astra 6.1 cancellation; quoted theverge.com Astra shelves safety - SELECTED the four-piece arc via four independent digest attestations (ai-espresso edition 81, gitops-ai-news Sep-3, ai-daily-digest Sep-6, stdout Aug-8); theverge.com Astra 6.1 cancelled September 28 - no Verge original surfaced, bounded absence per iteration-492; Verge GPT-6.1 Astra safety shelves - same, no Verge original surfaced). 0 browser.open per #503 (theverge.com policy-blocked; excerpt-bounded). Pre-commit novelty greps: zero test_type_a_1082 files on disk (glob); no "Type A #1082" in git log (--grep); max numeric mechanism_id 879 in profiles/ pre-commit; zero underscore-form 880 mechanism key strings in tests/ and profiles/ pre-commit (format-built needles, own file excluded per #715); zero dash-form 880 keys; zero numeric 880 keys in profiles/ pre-commit; block key zero-hit repo-wide pre-commit; the four theverge.com URLs (976948, 988334, 989601, 990060) zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    type_a_1127_verge_openai_sep29_30_safety_crisis_double_astra_homepage_ftc_probe_brief:
+      mechanism_id: 907
+      iteration: 1127
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      date_analyzed: '2026-10-01'
+      time_analyzed: 2026-10-01 15:00 PDT
+      publication_focus: the-verge
+      competitor: openai
+      event: "The Verge Sep-29-to-Sep-30-2026 safety-crisis double on the Vox-deal partner: Astra shelving homepage piece + FTC probe brief (regulatory-enforcement register)"
+      source_urls:
+        - "https://www.theverge.com/ai-artificial-intelligence/1002695/the-ftc-has-reportedly-opened-an-investigation-into-openai-and-anthropic"
+        - "https://buzzsumo.com/journalist/jay-peters-12165111/"
+        - "https://explainx.ai/blog/openai-gpt-6-1-astra-october-release-cancelled-safety-2026"
+        - "https://medium.com/@maverickwestinghouse/openai-paused-frontier-training-oversight-still-trails-d91ad7d7c086"
+        - "https://www.reuters.com/legal/litigation/california-attorney-general-issues-investigative-subpoena-openai-2026-10-01/"
+      openai_arms:
+        - item:
+            url: "https://buzzsumo.com/journalist/jay-peters-12165111/"
+            title: "OpenAI won''t release GPT-6.1 Astra due to worries about safety"
+            date: "2026-09-29"
+            byline: "Jay Peters"
+            evidence_tier: "excerpt-tier third-party-attested"
+            evidence_note: "attested via the buzzsumo journalist profile for Jay Peters (theverge.com, Sep 29 2026, exact headline) and the explainx.ai Sep-28/29 Astra timeline ('The Verge put the story on its homepage as ''OpenAI won''t release GPT-6.1 Astra due to worries about safety,'' citing the Journal'); verbatim theverge.com URL not in this run''s excerpts, marked per #503; theverge.com policy-blocked for browser.open"
+            register: "safety-crisis homepage news"
+            key_language:
+              - "OpenAI won''t release GPT-6.1 Astra due to worries about safety"
+              - "The Verge put the story on its homepage"
+              - "citing the Journal"
+            manual_illustrative_tone: -0.40
+        - item:
+            url: "https://www.theverge.com/ai-artificial-intelligence/1002695/the-ftc-has-reportedly-opened-an-investigation-into-openai-and-anthropic"
+            title: "The FTC has reportedly opened an investigation into OpenAI and Anthropic"
+            date: "2026-09-30"
+            byline: "Emma Roth"
+            evidence_tier: "excerpt-tier source-listed"
+            evidence_note: "verbatim theverge.com URL from the medium.com source listing (Emma Roth, The Verge, Sep 30 2026, FTC brief); 0 browser.open per #503; the probe context relay-attested via Reuters (FTC industry-wide probe, civil investigative demands planned, first official US enforcement action on rogue AI agents) and Bloomberg Law (formal demands for information to OpenAI, Anthropic PBC and other AI firms)"
+            register: "regulatory-enforcement news brief"
+            key_language:
+              - "The FTC has reportedly opened an investigation into OpenAI and Anthropic"
+              - "the first official U.S. enforcement action that delves into rogue AI agents"
+              - "whether the companies engaged in unfair or deceptive practices"
+            manual_illustrative_tone: -0.35
+      openai_pair_mean: -0.375
+      openai_pair_mean_calc: "(-0.40 + -0.35) / 2 = -0.375"
+      meta_arms:
+        primary:
+          carried_from: "mechanism 592 (#592 same-outlet same-window Meta glasses set), un-rescored per #807"
+          arms:
+            - description: 'Song Jul 7 LED-tamper privacy-light piece'
+              manual_illustrative_tone: -0.55
+            - description: 'Jul 20 "pervert glasses" editorial'
+              manual_illustrative_tone: -0.60
+            - description: 'late-Jul "holds all the cards" opener with activist "mass surveillance predator glasses" language'
+              manual_illustrative_tone: -0.50
+          meta_band_mean: -0.55
+        secondary:
+          carried_from: "mechanism 811 (#967), un-rescored per #807"
+          item:
+            url: "https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/"
+            date: "2026-09-24"
+            description: "The Verge Connect-week interview relay: Meta wearables VP Alex Himel ''told The Verge'' the camera-free Ray-Ban Meta Audio glasses ''do not record''"
+            register: "privacy-positive measured on-the-record"
+            manual_illustrative_tone: 0.10
+      asymmetry_scorer_result:
+        method: "MANUAL ILLUSTRATIVE"
+        target_entity: openai
+        peer_entity: meta
+        methodology: "Target-minus-peer convention; MANUAL ILLUSTRATIVE tones, not empirical corpus scores; two NEW excerpt-bounded Sep-29/30-2026 Verge x OpenAI arms plus carried no-rescore Meta arms (three from #592, one from m811) per #807"
+        illustrative_delta_openai_minus_meta_primary: 0.175
+        delta_arithmetic_primary: "-0.375 - (-0.55) = +0.175"
+        illustrative_delta_openai_minus_meta_secondary: -0.475
+        delta_arithmetic_secondary: "-0.375 - (+0.10) = -0.475"
+        engine_run: false
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        no_analysis_json_update: true
+        note: "Arithmetic: pair-mean delta primary = -0.375 - (-0.55) = +0.175; secondary = -0.375 - 0.10 = -0.475. The primary delta runs thesis-consistent; the finding is register-AVAILABILITY, not mean-tone. The real asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only."
+      finding: >
+        (1) OpenAI double (n=2, both NEW this run, excerpt-tier per #503,
+        theverge.com policy-blocked, MANUAL ILLUSTRATIVE): A1 Sep 29 2026
+        Jay Peters "OpenAI won''t release GPT-6.1 Astra due to worries
+        about safety" - safety-crisis news given HOMEPAGE placement on the
+        deal partner''s outlet, citing the Journal (-0.40); A2 Sep 30 2026
+        Emma Roth "The FTC has reportedly opened an investigation into
+        OpenAI and Anthropic" - regulatory-enforcement news brief, the
+        first official US enforcement action on rogue AI agents, civil
+        investigative demands planned (-0.35, 0.05 softer than A1 because
+        the probe names two labs, same logic as m904). Pair mean -0.375.
+        (2) Meta arms carried un-rescored per #807: #592 same-outlet
+        same-window Meta glasses set ([-0.55, -0.60, -0.50], mean -0.55)
+        and m811 Verge Meta Connect Audio privacy-positive (+0.10).
+        (3) Illustrative deltas (OpenAI pair minus Meta): +0.175 primary
+        (pair 0.175 softer than the Meta stigma baseline), -0.475
+        secondary (pair 0.475 harder than the Meta concession arm). The
+        primary delta runs thesis-consistent; the falsification is
+        register-AVAILABILITY, not mean-tone: the Vox Media x OpenAI May
+        29 2024 licensing deal (coverage_prediction ''softer'') does not
+        suppress the adversarial safety register OR the enforcement
+        register on the deal partner - the outlet homepages the payer''s
+        safety-chief-admitted deception shelving and routes the
+        regulator''s product-safety probe onto the payer within 48 hours.
+        FORTY-SIXTH falsification-family member; ledger 45->46. FIRST
+        regulatory-enforcement-register falsification at The Verge;
+        EXTENDS the m901 (FT)/m904 (WSJ) enforcement-register
+        falsification line to a third deal-partner publication; EXTENDS
+        the m880 Verge Astra-safety arc into the Sep-28-Oct-1 crisis
+        window (register continuity, ninth day); BOUNDED by m425
+        (+0.46 thesis-consistent aspiration gradient) and m507
+        (ad-monetization domain boundary): deal softening is domain-real,
+        not uniformly absent. Confined to the un-briefed safety-news peg
+        per m712''s briefed-relay bound. MANUAL ILLUSTRATIVE ONLY; engine
+        NOT run; no_analysis_json_update true; NOT artifact-grade.
+        Correlation is not causation. Hypothesis-generating only.
+      confounders:
+        - 'STRONG: excerpt-tier evidence - 0 browser.open per #503; theverge.com policy-blocked; A1 attested via buzzsumo journalist profile + explainx.ai timeline; A2 via the medium.com source listing with the verbatim Verge URL; no full-text reads this run.'
+        - 'STRONG: event-driven register - both arms cluster on genuine safety/enforcement events (Astra deception shelving, FTC rogue-agent probe); a hard register is event-merited, not necessarily entity-set.'
+        - 'MODERATE: newsworthiness confounder - the FTC probe is major national news (NY Post first, Reuters, WSJ, Bloomberg, USA Today all covered Sep 30); non-coverage would be the anomaly. The falsification is at the register-availability margin, not the coverage decision.'
+        - 'MODERATE: brief/relay genre - A2 is explicitly a news brief and A1 a homepage relay of the Journal scoop; lower editorial investment than investigation, so the register may understate the outlet''s capacity for harder treatment.'
+        - 'WEAK: n=2 OpenAI arms vs n=3+1 Meta carried arms; degenerate samples; single-story variance would move the pair mean.'
+      counterevidence:
+        - 'COUNTEREVIDENCE: Mechanism 425 - in the product/AI-model domain the Verge OpenAI-aspiration vs Meta-deficit gradient ran +0.46 thesis-consistent, so deal softening is domain-real, not uniformly absent.'
+        - 'COUNTEREVIDENCE: The primary illustrative delta +0.175 runs thesis-consistent (the OpenAI pair is 0.175 softer than the Meta stigma baseline) - the mean-tone comparison does not falsify; only the register-availability margin does.'
+        - 'COUNTEREVIDENCE: Mechanism 811 - The Verge granted Meta the privacy-positive concession register (+0.10) on the same Connect window, so Meta is not uniformly hammered at this outlet; the register-selection reading must survive this control.'
+        - 'COUNTEREVIDENCE: A1''s "worries about safety" and A2''s "reportedly opened an investigation" are milder than the outlet''s Meta stigma vocabulary ("pervert glasses", "predator glasses"); the hardest OpenAI lines are relayed, not editorial-voice.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Real asymmetry scorer NOT run at the finding layer. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+      falsification_family: 'FORTY-SIXTH falsification-family member (ledger 45->46): this run tests the uniform payer-softening prediction at the publication level (the-verge.yaml competitor_relationships.openai coverage_prediction ''softer'', from the Vox Media-OpenAI May 29 2024 licensing deal) on a Sep-28/29-Oct-1 safety-crisis double, and the prediction fails at the register-availability margin: the deal partner''s own outlet homepages the Astra deception-shelving (-0.40) and routes the FTC''s rogue-agent product-safety probe onto the payer (-0.35), within 48 hours. FIRST regulatory-enforcement-register falsification at The Verge; EXTENDS the m901 (FT)/m904 (WSJ) enforcement-register falsification line to a third deal-partner publication; EXTENDS the m880 Verge Astra-safety arc into the Sep-28-Oct-1 crisis window. BOUNDED by m425 (+0.46 thesis-consistent aspiration gradient) and m507 (ad-monetization domain boundary). Confined to the un-briefed safety-news peg per m712. Ledger holds at 46 - FORTY-SIXTH member-form present (m907, the-verge.yaml), FORTY-SEVENTH absent.'
+      falsification_ledger: 46
+      falsification_family_member: true
+      connects_to: [598, 853, 880, 901, 904, 425, 507]
+      rotation_guard: '1125-1129 window THIRD leg D(#1125) -> E(#1126) -> A (this run); anchor patched post-commit per #565. Next: #1128 Type B continues the window.'
+      test_file: tests/test_type_a_1127_verge_openai_sep29_30_safety_crisis_double_oct01_3pm.py
+      research_method: '5 browser.search query sets Oct 1 2026 PDT (FTC investigation Anthropic OpenAI October 2026 - SELECTED the probe peg via Reuters/NY Post/USA Today/Bloomberg; WIRED Anthropic October 2026 - rejected, surfaced only own-repo commits; theverge.com FTC OpenAI Anthropic probe article - SELECTED the Emma Roth Sep-30 brief with verbatim Verge URL via the medium.com source listing; theverge.com OpenAI Astra shelved safety September 2026 - relay context; Verge Astra Jay Peters September 2026 - SELECTED the Sep-29 homepage piece via buzzsumo journalist profile + explainx.ai timeline attestation). 0 browser.open per #503 (theverge.com policy-blocked; excerpt-bounded). Pre-commit novelty greps: zero test_type_a_1127 files on disk (glob); no "Type A #1127" in git log (--grep); max numeric mechanism_id 906 in profiles/ pre-commit; zero numeric 907 keys in profiles/ pre-commit; zero underscore-form 907 mechanism key strings in tests/ and profiles/ pre-commit (format-built needles, own file excluded per #715); zero dash-form 907 keys; block key zero-hit repo-wide pre-commit; the 5 source URLs zero-hit repo-wide pre-commit via git grep -F on verbatim Full-URL listings. FORTY-SIXTH member-claim form absent profiles-wide pre-commit (needle format-built per #715); the thirty-third direction slot unclaimed repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
   meta:
     financial_tie: "none"
     estimated_value: "$0"
