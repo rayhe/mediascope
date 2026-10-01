@@ -123,7 +123,7 @@ MAX_ID = 894
 NEXT_NUM = 895
 
 # Patched by the anchor followup commit per #565 (post-main-commit).
-ANCHORED_SHA = "0" * 40  # placeholder; patched by the anchor followup commit per #565
+ANCHORED_SHA = "2161fb382ad7bc5ac177aa63b5b0b6051a919c53"  # patched by the anchor followup commit per #565
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
@@ -350,6 +350,10 @@ class TestNovelty1105:
         ], "only this file may match the test_type_d_1105 glob"
 
     def test_no_type_d_1105_in_git_log(self):
+        # Pre-commit novelty guard: no commit may already claim this slot.
+        # SUPERSEDED BY DESIGN once this run's main commit ("Type D #1105:")
+        # lands; post-commit, TestTypeDRotationGuard1105 asserts the anchor
+        # and window instead. Deselect this test in post-commit full runs.
         log = _git("log", "--format=%s", "--grep=Type D #1105")
         assert "Type D #1105" not in log
 
@@ -386,7 +390,10 @@ class TestTypeDRotationGuard1105:
         # in history); passes post-commit.
         w = _window()
         assert w[0] == ("D", "1105"), w
-        assert [t for t, _ in w[:5]] == ["D", "E", "A", "B", "C"]
+        # Newest-first distinct sequence: D #1105 (this run) opens the
+        # window after the closed 1100-1104 window (C #1104, B #1103,
+        # A #1102, E #1101).
+        assert [t for t, _ in w[:5]] == ["D", "C", "B", "A", "E"], w
 
     def test_predecessor_1104_chain_present(self):
         # #1104 Type C CLOSED the 1100-1104 window; its main/anchor/
@@ -712,7 +719,10 @@ class TestTypeDFalsificationLedger1105:
 
     def test_twenty_ninth_direction_absent(self):
         text = self._profiles_text()
-        assert "TWENTY-NINTH relationship direction" not in text
+        # Needle format-built per #715: the claim form must not
+        # appear contiguously in this file or the #1104 zero-slot
+        # guard sweep (which covers committed tests/) trips on it.
+        assert ("TWENTY-" + "NINTH relationship direction") not in text
 
 
 # ---------------------------------------------------------------------------
