@@ -1,4 +1,4 @@
-## #1114 Type C: Google News AI pilot three-instrument TRACK-SEPARATED PRICING - commercial partnerships (Dec 2025 deals, take-it-or-leave-it, NDAs, no-sue clauses, Guardian + FT at single-figure GBP millions/yr, FT joined Feb 2026) vs AI Contribution Pilot widget-metered micro-pricing (m891/m894/m897) vs News Showcase legacy licensing conversion - THIRTIETH relationship direction, mechanism 900, ledger holds at 41 (NOT a falsification-family member) - Type C FIFTH leg of the 1110-1114 window, CLOSING it (Oct 1 2026, 03:00 AM PDT; main commit MAIN_SHA / anchor ANCHORED_SHA; log-hash followup registers both hashes here per #721 (this commit pending log-hash fill); doc-sync 56860/1438 -> 56930/1439 (+70/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1114 Type C: Google News AI pilot three-instrument TRACK-SEPARATED PRICING - commercial partnerships (Dec 2025 deals, take-it-or-leave-it, NDAs, no-sue clauses, Guardian + FT at single-figure GBP millions/yr, FT joined Feb 2026) vs AI Contribution Pilot widget-metered micro-pricing (m891/m894/m897) vs News Showcase legacy licensing conversion - THIRTIETH relationship direction, mechanism 900, ledger holds at 41 (NOT a falsification-family member) - Type C FIFTH leg of the 1110-1114 window, CLOSING it (Oct 1 2026, 03:00 AM PDT; main commit 9ef55c47 / anchor 26bb3d3a; log-hash followup registers both hashes here per #721 (this commit pending log-hash fill); doc-sync 56860/1438 -> 56930/1439 (+70/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Rotation transparency
 - This run is iteration #1114 Type C, the FIFTH and CLOSING leg of the 1110-1114 window (D #1110 -> E #1111 -> A #1112 -> B #1113 -> C #1114, per the #565 anchor + rotation guard). Predecessor #1113 Type B verified in git log (main d95faffb / anchor 4004fae7 / log-hash fill 156abf91, Oct 1 2026 02:00 AM PDT; Joanna Stern Zuckerberg interview vs iPhone Duo hands-on, FORTY-FIRST falsification-family member, ledger 40->41). The 1105-1109 window is verified closed as a consecutive newest-first sequence (D #1105, E #1106, A #1107, B #1108, C #1109). Next run #1115 opens a new window as Type D (per #565 rotation: window order is D-E-A-B-C, so the next window's first leg is D).
@@ -24,8 +24,8 @@
 - Literal discipline per #715: test file carries NO contiguous underscore/dash/numeric 900/901 mechanism literals; all needles format-built at runtime.
 
 ### Commit hashes
-- main commit: MAIN_SHA
-- anchor followup (ANCHORED_SHA patch per #565): ANCHORED_SHA
+- main commit: 9ef55c47
+- anchor followup (ANCHORED_SHA patch per #565): 26bb3d3a
 - log-hash followup registers main + anchor hashes in this entry per #721 (this commit: pending log-hash fill).
 - All three pushed to rayhe/mediascope main.
 
