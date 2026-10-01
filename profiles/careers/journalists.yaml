@@ -18077,6 +18077,71 @@ journalists:
       verification: 'All facts carry source URLs or citations. URLs copied verbatim from search Full-URL listings, never constructed. Meta arm: https://www.wsj.com/tech/personal-tech/meta-muse-ai-agent-review-ab956101 (byline via advisorstream mirror sign-off; date via tradingview DJN 2026-09-29 wire). Anthropic arm: https://www.wsj.com/tech/ai/1password-for-claude-ai-agents-password-manager-111a7a8a (in-corpus per #522, profiles/news-corp.yaml line 1976). Financial: m519/m549/#337/#834 in-corpus.'
       no_analysis_json_update: true
       correlation_not_causation: true
+    type_b_1108_nicole_nguyen_wsj_siri_grows_up_vs_muse_trust_register_sep30:
+      mechanism_id: 896
+      date_analyzed: '2026-09-30'
+      type: 'Type B: Journalist Cross-Entity Tracking'
+      iteration: 1108
+      block_key: type_b_1108_nicole_nguyen_wsj_siri_grows_up_vs_muse_trust_register_sep30
+      journalist: Nicole Nguyen
+      publication: wall-street-journal
+      temporal_extension: 'Apple arm Sep 16/17 2026; Meta arm Sep 29 2026; 12 days apart. Both arms inside Nguyen''s WSJ personal-tech column beat; same byline, same publication, AI-assistant hands-on review genre on both sides (OS-integrated assistant vs standalone agent app).'
+      novelty: 'FIRST mechanism on Nguyen''s Meta x Apple AI-assistant pair. The Apple Siri arm (mid-Sep 2026) is FRESH and NOVEL to the corpus (zero repo-wide hits pre-commit on the relay URL and title string). The Meta Muse arm (Sep 29 2026) is IN-CORPUS via m893 (#1103), CARRIED un-rescored per #807. Distinct from #693/m650 (NINETEENTH; Apple Duo hardware vs Meta WhatsApp) and #1103/m893 (THIRTY-EIGHTH; Meta Muse vs Anthropic Claude) - same journalist, new entity pair, new falsification member.'
+      meta_arm:
+        title: 'I Tried Meta''s Muse AI Agent. It''s Helpful and Scary at the Same Time.'
+        date: '2026-09-29'
+        url: https://www.wsj.com/tech/personal-tech/meta-muse-ai-agent-review-ab956101
+        byline: Nicole Nguyen
+        entity: Meta
+        peg: Meta Muse AI agent hands-on review (standalone app beta, iOS/Android, voice-first)
+        carried_per_807: 'IN-CORPUS via m893 (#1103, journalists.yaml). Register and score carried un-rescored: mixed-positive product enthusiasm (''first app I''ve experienced for normal people''; ''I''m reassured... Meta can make money without using my data or dumping ads'') gated by entity-rooted trust framing (''trust issues with Meta, the ad-powered company... history of privacy scandals and data-use controversies''; closing ''I''m going to be cautious and reset Muse for now'').'
+        manual_illustrative_tone: 0.10
+        novelty: 'IN-CORPUS arm (m893). Carried, not re-scored.'
+      apple_arm:
+        title: 'Siri finally grows up: Apple''s new assistant can see your screen, search your photos, and get real work done'
+        date: '2026-09-17'
+        date_bound: 'Newslocker relay asset dated 2026/09/17; the newslocker Apple-news listing page carries it under 2026-09-16. Bounded Sep 16/17 2026; 12 days before the Sep-29 Muse arm.'
+        url: https://www.newslocker.com/en-us/news/apple/wsj-siri-finally-grows-up-apples-new-assistant-can-see-your-screen-search-your-photos-and-get-real-work-done/
+        url_source: 'Relay URL copied verbatim from browser.search Full-URL listings this run; WSJ canonical URL not verbatim in listings (same pattern as #693). WSJ original paywalled; 0 browser.open on the original per #503. Newslocker relay page opened this run for excerpt recovery (relay-tier, not the paywalled original).'
+        byline: Nicole Nguyen
+        entity: Apple
+        peg: iOS 27 Siri / Apple Intelligence hands-on review (overhauled assistant, screen awareness, photo search, agentic task completion)
+        register_summary: 'Enthusiast hands-on register with accepted privacy assurance. Headline verbs: ''finally grows up''; ''can see your screen, search your photos, and get real work done'' framed as capabilities delivered, not risks incurred. Relay excerpt: ''Apple''s next generation of Apple Intelligence and Siri are truly helpful AI that''s centered around you and your needs. Integrated into your apps, grounded in your context, and private at every step.'' Nguyen''s verdict per relay: the overhauled assistant is ''no longer just a polite search redirect.'' The same capability class that made Muse ''scary'' (seeing your screen, accessing your data, acting on your behalf) is presented here as helpful features with the privacy claim (''private at every step'') relayed affirmatively - zero trust-history framing, zero ''scary'', zero ''cautious and reset'' closer in the surfaced excerpt.'
+        manual_illustrative_tone: 0.40
+        tone_basis: 'Matches m650''s +0.40 for Nguyen''s iPhone Duo enthusiast first-impressions piece (#693): enthusiast hands-on with reviewer caveats expected but not visible in the truncated excerpt; scored at the Duo-arm level, excerpt-bounded.'
+        novelty: 'FRESH arm. Zero repo-wide hits pre-commit (relay URL, title string). Novel to the corpus.'
+        verification: 'Excerpt-bounded per #503. Byline ''The Wall Street Journal''s Nicole Nguyen'' verbatim in the newslocker relay lede (''In a hands-on review, The Wall Street Journal''s Nicole Nguyen says...''). Date bounded via relay asset path 2026/09/17. Relay excerpt truncates mid-sentence (''It can see what''s on your screen, look at the''), so the unread portion may contain caveats - scored as excerpt-tier, not full-text.'
+      illustrative_delta: 'Apple minus Meta: +0.40 - (+0.10) = +0.30. The zero-deal entity (Apple, $0 News Corp licensing) draws the SOFTER trust register than the paid cooperative counterparty (Meta, $50M/yr News Corp licensing).'
+      financial_context: 'Correlation, not causation. News Corp balanced financial ties: $50M/yr Meta + $50M/yr OpenAI AI licensing deals (in-corpus per #337; Meta deal m549 per #834; OpenAI deal m519). Apple has $0 cooperative News Corp licensing. The deal-softness prediction (paid counterparty draws softer coverage) FAILS on ordering: the paid counterparty''s arm carries the harder entity-rooted trust register (+0.10, ''scary''/''trust issues''/''cautious and reset'') while the zero-deal entity''s arm carries the softer enthusiast register (+0.40, ''private at every step'' accepted). The register ordering tracks corporate record (Meta''s documented privacy-scandal history vs Apple''s privacy-architecture marketing), not the payment - the same STRONG confounder as #1103.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven. p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant false. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'THIRTY-NINTH falsification-family member. Same-journalist, same-publication byline-isolated pair: Nguyen applies a harder entity-rooted trust register to the paid cooperative counterparty (Meta, +0.10) than to the zero-cooperative-deal entity (Apple, +0.40). The journalist-level deal-softness prediction (News Corp $50M/yr Meta deal -> softer Meta coverage) fails on her byline a SECOND time - the register ordering is the inverse of what the payment predicts. This replicates #1103''s THIRTY-EIGHTH (Meta x Anthropic, AI-agent genre) in the Meta x Apple pair, same AI-assistant hands-on genre, 12-day window. Extends #693''s NINETEENTH lineage (Nguyen Apple +0.40 constancy: the Duo hardware arm +0.40 and the Siri assistant arm +0.40 now agree across two Apple pegs). Correlation, not causation. No analysis.json update warranted.'
+      falsification_ledger: '39'
+      discourse_corroboration: '9to5Mac Security Bite (Sep 2026, ''Yeah, don''t give Meta''s Muse app access to your Mac''), excerpt as relayed on the newslocker Apple-news page opened this run: ''The ability of AI systems to act as agents... is the headline capability Siri AI introduces to Apple devices, and I''m inclined to trust the privacy and safety safeguards Apple has put into place. But Siri AI isn''t the only agent you can give full access to your Apple devices, with Meta''s Muse app the latest example - and one tech writer''s experience really underlines why you [shouldn''t].'' The trust asymmetry (Apple safeguards trusted, Meta agent distrusted) is discourse-wide, not Nguyen-idiosyncratic - cited as context, NOT a scored arm. Cuts both ways: strengthens the pattern claim, weakens journalist-level attribution.'
+      confounders:
+      - '[STRONG] Factual-substrate confounder: Meta''s trust-issues framing is anchored in documented corporate history (privacy scandals, data-use controversies, FTC record, $18B children-addiction settlement Aug 2026); Apple''s privacy posture is on-device processing plus privacy marketing with no comparable scandal record in corpus. The register difference tracks the factual substrate, not necessarily the payment - the deal-softness prediction fails, but the alternative explanation (record-rooted register) is fully available, same as #1103.'
+      - '[STRONG] Excerpt-tier on the Apple arm: the newslocker relay truncates mid-sentence; WSJ paywalled; 0 browser.open on the original per #503. The ''private at every step'' relay may sit beside caveats in the unread portion. Full-text read could shift the +0.40.'
+      - '[MODERATE] Temporal gap: 12 days (Sep 16/17 vs Sep 29 2026). Register drift across the gap cannot be ruled out, though both arms sit inside the personal-tech AI-assistant review beat.'
+      - '[MODERATE] Product-form difference: Siri is an OS-integrated assistant on Apple hardware; Muse is a standalone agent app. Both are AI assistants with screen/data access and agentic task completion, but the integration surface differs - the trust register may track product form, not entity.'
+      - '[WEAK] Degenerate n=1 per arm per #638/#643. Single pair; no distributional claim.'
+      counterevidence:
+      - 'COUNTEREVIDENCE: the Siri relay excerpt truncates mid-sentence (''It can see what''s on your screen, look at the''); unread portions may carry the same trust scrutiny Nguyen applied to Muse. The +0.40 is excerpt-tier and must not be presented as a full-text verdict.'
+      - 'COUNTEREVIDENCE: #1103''s Meta arm is itself mixed-positive (''first app I''ve experienced for normal people''); the falsification is on the DEAL prediction''s ordering (paid counterparty harder), not on a large register gap. The +0.30 delta is illustrative, both arms in the positive-mixed band.'
+      - 'COUNTEREVIDENCE: #693/m650 - Nguyen''s Meta WhatsApp arm WAS positive (+0.15, Meta-positive competitive vs Apple); her Meta register is peg-specific (Muse data-collection agent), not a blanket Meta-hardening.'
+      - 'COUNTEREVIDENCE: the 9to5Mac discourse corroboration cuts against journalist-level attribution - if the trust asymmetry is discourse-wide, Nguyen''s pair may reflect ambient consensus, not her byline''s independence from the payment.'
+      cross_references:
+      - '#1103/m893 (THIRTY-EIGHTH falsification-family member; Nguyen Meta Muse +0.10 vs Anthropic Claude +0.20; Meta arm carried un-rescored per #807)'
+      - '#693/m650 (NINETEENTH falsification-family member; Nguyen Apple Duo +0.40 vs Meta WhatsApp +0.15; Apple +0.40 constancy lineage)'
+      - '#522 (in-corpus Claude-facing register context)'
+      - '#807 (carry convention for in-corpus arms)'
+      - 'm519/m549/#337/#834 (News Corp balanced-deal baseline: $50M/yr Meta + $50M/yr OpenAI; Apple $0 cooperative)'
+      - '#503 (excerpt-bounded research rule; 0 browser.open on paywalled originals; relay-tier opens allowed)'
+      - '#638/#643 (degenerate n=1 convention)'
+      - '#565 (rotation anchor; novelty anchor patched in followup)'
+      - '#715 (format-built needles; designed keying: colon-form block key only)'
+      research_method: '7 browser.search query sets this run (Andrew Ross Sorkin DealBook Meta - REJECTED: surfaced Aaron Sorkin film noise, no usable Andrew Ross Sorkin Meta arm; Reece Rogers WIRED Snap Specs Sep 2026 - REJECTED: own-repo commits only, journalist saturated; Reece Rogers WIRED Meta Connect - REJECTED: same; Nicole Nguyen WSJ September 2026 Apple/Google - SELECTED: the newslocker Siri hands-on relay with verbatim WSJ/Nicole Nguyen byline attribution; Meta Muse AI agent review hands-on Sep 2026 - corroboration set, surfaced the CNN/TechRadar/404 Media hands-on cluster as discourse context; Eric Hal Schwartz TechRadar Claude/ChatGPT agent - REJECTED: competitor arm too loose for the pair). 1 browser.open this run: the newslocker Siri relay page (relay-tier excerpt recovery; 0 browser.open on the WSJ paywalled original per #503). Pre-commit novelty verified: zero test_type_b_1108 files on disk (glob); no Type B #1108 in git log (--grep); max numeric mechanism_id 895; zero underscore/dash/numeric 896 keys in profiles/ pre-commit (format-built needles per #715); Siri relay URL zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit. All URLs copied verbatim from search Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verification: 'All facts carry source URLs or citations. Apple arm relay URL verbatim from search Full-URL listings: https://www.newslocker.com/en-us/news/apple/wsj-siri-finally-grows-up-apples-new-assistant-can-see-your-screen-search-your-photos-and-get-real-work-done/ (byline ''The Wall Street Journal''s Nicole Nguyen'' verbatim in relay lede; date bounded via relay asset path 2026/09/17). Meta arm in-corpus via m893. Financial: m519/m549/#337/#834 in-corpus. Discourse corroboration: 9to5Mac Security Bite excerpt from the newslocker Apple-news page opened this run (relay-tier).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
 - name: Gerrit De Vynck
   current_publication: washington-post
   role: AI and algorithms reporter
