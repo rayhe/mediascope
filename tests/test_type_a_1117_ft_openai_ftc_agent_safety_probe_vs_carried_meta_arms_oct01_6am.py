@@ -103,7 +103,7 @@ OWN_BASENAME = (
 )
 FT_FILE = os.path.join(PROFILES_DIR, "financial-times.yaml")
 
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "091eb818d7986763e76cec240ee921cb33983053"
 
 MECH_NUM = 901
 NEXT_NUM = 902
