@@ -1,4 +1,4 @@
-## #1105 Type D: m892/m893/m894 qualitative-discipline verification + post-1100-1104 corpus integrity (max numeric mechanism_id 894; zero-895 forward guards runtime-built per #715; ledger holds at 38 with THIRTY-EIGHTH member-claim once and THIRTY-NINTH member-claim absent; TWENTY-EIGHTH direction present, TWENTY-NINTH direction absent) + #1100 background-suite verdict (DIED at 1745 bytes / 1577 dots ~2.8%, last write Sep 30 13:41:29 PDT, zero summary tokens, no live pytest - FOURTH consecutive death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed; tombstone lineage SEVENTY-NINTH -> EIGHTIETH) + fresh synthetic engine calibration (real signature: strong asym -0.58 p=3.40e-10 sig True; null silent p~0.90; degenerate n=1 t=0.0 p=1.0) + suite re-launched without -x to type_d_1105_full_suite.log - Type D FIRST leg of the 1105-1109 window, OPENING it (Sep 30 2026, 06:00 PM PDT; main commit TBD / anchor TBD; log-hash followup registers both hashes here per #721 (this commit: TBD); doc-sync 56255/1429 -> 56327/1430 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched).
+## #1105 Type D: m892/m893/m894 qualitative-discipline verification + post-1100-1104 corpus integrity (max numeric mechanism_id 894; zero-895 forward guards runtime-built per #715; ledger holds at 38 with THIRTY-EIGHTH member-claim once and THIRTY-NINTH member-claim absent; TWENTY-EIGHTH direction present, TWENTY-NINTH direction absent) + #1100 background-suite verdict (DIED at 1745 bytes / 1577 dots ~2.8%, last write Sep 30 13:41:29 PDT, zero summary tokens, no live pytest - FOURTH consecutive death of the new streak; the 57-run streak ENDED at #1085 when the #1080 suite completed; tombstone lineage SEVENTY-NINTH -> EIGHTIETH) + fresh synthetic engine calibration (real signature: strong asym -0.58 p=3.40e-10 sig True; null silent p~0.90; degenerate n=1 t=0.0 p=1.0) + suite re-launched without -x to type_d_1105_full_suite.log - Type D FIRST leg of the 1105-1109 window, OPENING it (Sep 30 2026, 06:00 PM PDT; main commit 2161fb38 / anchor 21adbaed; log-hash followup registers both hashes here per #721 (this commit: TBD); doc-sync 56255/1429 -> 56327/1430 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched).
 
 ### Rotation transparency
 - 1105-1109 window FIRST leg (per #565: D #1105 -> E #1106 -> A #1107 -> B #1108 -> C #1109; order D->E->A->B->C), OPENING the window
@@ -39,8 +39,8 @@
 - Staleness pins (subprocess, fail-by-design): #1102 max-892 guards FAIL (numeric, supersession), #1103 max-893 guard FAILS; #1104 zero-895 guards still PASS
 
 ### Commit hashes
-- Main: TBD (Type D #1105: m892/m893/m894 verification; FIRST leg of the 1105-1109 window, OPENING it)
-- Anchor followup: TBD (patch ANCHORED_SHA per #565)
+- Main: 2161fb38 (Type D #1105: m892/m893/m894 verification; FIRST leg of the 1105-1109 window, OPENING it)
+- Anchor followup: 21adbaed (patch ANCHORED_SHA per #565 + format-built TWENTY-NINTH needle per #715)
 - Log-hash followup: TBD (register main + anchor in the entry per #721)
 - ANCHORED_SHA = "0"*40 placeholder pre-commit in the test file, patched by the anchor followup
 
