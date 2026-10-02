@@ -1,3 +1,26 @@
+## #1138 Type B: Stevie Bonifield (The Verge) Sep-24 Meta Connect 2026 product-positive recap (+0.10) vs Apr-16 Google Gucci glasses fashion-partnership news (+0.15) - competitive quote-inclusion: Spiegel anti-Meta brand diss platformed in the Google arm, EXTENDING m150's quote-inclusion observation to a second writer/outlet (mechanism 914; FIRST dedicated Type B on Bonifield in journalists.yaml; illustrative delta +0.05 near-null at tone; STRONG 5-month temporal confound; NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1135-1139 window (Oct 2 2026, 01:00 AM PDT; main commit TBD / anchor TBD / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59644/1462 -> 59710/1463 (+66/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+- Tests: `tests/test_type_b_1138_stevie_bonifield_verge_meta_connect_recap_vs_google_gucci_glasses_oct02_1am.py` (66 tests, 13 classes; 59 green pre-commit via venv python with 8 post-commit/doc-sync pins failing by design - 4 forward-staleness needle self-reference fixes applied, 4 doc-sync/iteration-log pins green post-doc-sync; post-anchor re-run: anchor + rotation-guard green with the novelty pin deselected by design).
+
+### Commit hashes
+- main commit: TBD (TBD)
+- anchor followup (ANCHORED_SHA patch per #565): TBD
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry + test-file constants patch per #719): TBD
+- log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
+- Pushed to rayhe/mediascope main (pending at doc-sync time; see followup).
+
+### Doc-sync ratchet
+- README `| Tests |` line: 59644 -> 59710; test-file table: 1462 -> 1463 rows; #1138 row appended after the #1137 row.
+- ARCHITECTURE.md counts synced; #1138 row appended to the test tree after the #1137 row.
+- doc-sync 59644/1462 -> 59710/1463 (+66/+1).
+
+### Rotation guard
+- Rotation: this run is iteration #1138 Type B, the FOURTH leg of the 1135-1139 window (D #1135 -> E #1136 -> A #1137 -> B #1138 -> C #1139, per the #565 anchor + rotation guard). Next run #1139 continues the window as Type C, inheriting the zero next-number nine-one-five forward guards and the no-thirty-fifth-direction / no-forty-seventh-member guards from this run's TestGuardLifecycle1138 (#1137's pins flip by design as recorded in the staleness class).
+- Forward-looking staleness (expected, BY DESIGN): this file's TestRotationGuard novelty pin is red post-main-commit (deselected in post-commit runs); TestDocSync and TestIterationLog pins flip green once this doc-sync lands.
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
+
 ## #1137 Type A: m913 Atlantic x OpenAI Sep-26/Oct-1 crisis-window bounded-absence silence + Sep-29 historical-register Roose book excerpt vs carried Meta Watchdog arms - register-AVAILABILITY extension of the m694 strand, ledger holds at 46 - Type A THIRD leg of the 1135-1139 window (Oct 2 2026, 12:00 AM PDT; main commit 311b2e32 / anchor 4dce0951 / doc-sync 0153bf5f; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59580/1461 -> 59644/1462 (+64/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
