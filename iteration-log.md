@@ -42527,17 +42527,17 @@ Push status (this run, Oct 2 2026 ~03:2x PDT): main + anchor followup pushed and
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 ---
 ---
-## #1155 Type D: m922/m923/m924 qualitative-discipline verification + post-1150-1154 corpus integrity (max numeric mechanism_id 924; zero next-number nine-two-five keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1150 background-suite verdict (NINETEENTH consecutive death; tombstone EIGHTY-NINTH -> NINETIETH) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1155-1159 window (Oct 2 2026, 04:00 PM PDT; main commit 72a638f1 / anchor f4ad78e9 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60877/1479 -> 60979/1480 (+102/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1155 Type D: m922/m923/m924 qualitative-discipline verification + post-1150-1154 corpus integrity (max numeric mechanism_id 924; zero next-number nine-two-five keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1150 background-suite verdict (NINETEENTH consecutive death; tombstone EIGHTY-NINTH -> NINETIETH) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1155-1159 window (Oct 2 2026, 04:00 PM PDT; main commit 72a638f1 / anchor f4ad78e9 / doc-sync 4a33a092; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60877/1479 -> 60979/1480 (+102/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `72a638f1` (72a638f13e1113303b4da2e28d6754e1e3c30b39) - verified via git rev-parse
 - Anchor followup `f4ad78e9` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60877/1479 -> 60979/1480; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `4a33a092` (README 60877/1479 -> 60979/1480; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
 - This run is iteration #1155 Type D, the FIRST and OPENING leg of the 1155-1159 window (D #1155 -> E #1156 -> A #1157 -> B #1158 -> C #1159 per the #565 anchor + rotation guard).
-- Committed predecessor #1154 Type C (03:00 PM PDT Oct 2) CLOSED the 1150-1154 window (D #1150, E #1151, A #1152, B #1153, C #1154) - chain verified pre-commit: main 72a638f1 / anchor f4ad78e9 / doc-sync TBD / log-hash this commit.
+- Committed predecessor #1154 Type C (03:00 PM PDT Oct 2) CLOSED the 1150-1154 window (D #1150, E #1151, A #1152, B #1153, C #1154) - chain verified pre-commit: main 72a638f1 / anchor f4ad78e9 / doc-sync 4a33a092 / log-hash this commit.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1156 Type E continues the window.
 
 ### Finding summary
