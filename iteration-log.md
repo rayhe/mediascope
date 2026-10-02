@@ -1,3 +1,49 @@
+## #1139 Type C: m915 SPUR releases content telemetry standard (Oct 2 2026) and invites OpenAI, Anthropic, Google, Meta, Microsoft onto an invitation-only AI Licensing Advisory Board - METER-THEN-INVITE as the THIRTY-FIFTH relationship direction (mechanism 915; connects_to 514/891/912; $0 flows, metering channel OPEN pre-monetization, governance channel OPEN as invitation; 6 novel URLs; NOT a falsification-family member, ledger holds at 46) - Type C FIFTH and CLOSING leg of the 1135-1139 window (Oct 2 2026, 02:00 AM PDT; main commit 03622895 / anchor 1ae8073e / doc-sync c9b9c3e6; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59710/1463 -> 59796/1464 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `03622895` (03622895810e03276d5c4be038ba3e24373b5381) - verified via git rev-parse
+- Anchor followup `1ae8073e` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `c9b9c3e6` (README 59710/1463 -> 59796/1464; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patch per #719)
+- Log-hash followup: this commit (terminal per #721)
+
+### Rotation transparency
+- Window 1135-1139 FIFTH leg: D #1135 (10:00 PM Oct 1) -> E #1136 (11:00 PM) -> A #1137 (12:00 AM Oct 2) -> B #1138 (1:00 AM) -> C #1139 (2:00 AM, this run, CLOSING the window).
+- Predecessor #1138 Type B chain verified pre-commit: main 9db35c1c / anchor 75276dbc / doc-sync ed5674de / log-hash cee4760e.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit.
+- Next window 1140-1144 opens with Type D.
+
+### Mechanism m915 (competitor-entities.yaml, last top-level key)
+- Block key: the type_c_1139 spur-telemetry-standard ai-licensing-advisory-board meter-then-invite key (zero-indent top-level, designed keying, no mechanism-number substring per #715).
+- Finding: On Oct 2 2026, Digiday (Sara Guaglione) reported SPUR - the Standards for Publisher Usage Rights coalition co-founded Feb/Mar 2026 by the Guardian, FT, BBC, Sky News, and Telegraph Media Group (corpus m514 spur_tension) - released its content telemetry standard and invited OpenAI, Anthropic, Google, Meta, and Microsoft to help shape implementation via a new invitation-only AI Licensing Advisory Board (~20 members, first meeting October 2026; technical lead Alex Springer). The standard tracks retrieved/grounded/cited/presented/engaged and reports usage back to publishers as a starting point in licensing discussions. Google gave a non-answer; the other four did not respond. Context: the draft signal format went out for public comment Jun 12 2026 (Press Gazette; corpus guardian.yaml); SPUR is now 30+ members with AP as first U.S. founding member; FT CEO Jon Slade calls it "NATO for news" (The Media Leader); SPUR stresses it is not a collective licensing body and will not set fixed prices (Storyboard18).
+- Direction: METER-THEN-INVITE - the THIRTY-FIFTH relationship direction per the m807 enumeration; the publishers collectively build the usage-measurement infrastructure and then invite the measured labs into its governance (the meter-designer seats the metered at the rule-making table). Distinct from #27 unilateral pricing m891 (lab-designed meter; opposite designer and invitation arrow), #21 metered-recycling m873 (deployment-gated bilateral equity vs usage-pricing plus invited co-governance), #15 ecosystem-grant m852 (no-consideration gift vs consideration-is-the-point), #34 negotiate-while-covering m912 (bilateral window vs 30+ publisher coalition infrastructure), #23 inbound-pull m879 (lab rations deal access vs publishers ration governance seats). Falsifiable on declined invitations, zero licensed adoptions, or a dated bilateral deal that ignores the standard. Taxonomy-count tension carried vs #27 m891 (both price usage; opposite designer) and #21 m873 (shared meter vocabulary, different metered object); documented, not resolved.
+- Money flow: metering channel OPEN pre-monetization at $0 (no fees/terms disclosed); governance channel OPEN as invitation (~20 seats, none confirmed). Scale template: Google's unilateral AI contribution pilot (m891/m894 family: under $1,000 to over $1M/yr per publisher, The Information via AdExchanger Oct 1).
+- Coverage nexus: Digiday's Sara Guaglione covers the media beat; two of the seven tracked publications (Guardian, FT) are SPUR founding members; FT CEO Jon Slade is the coalition's public champion; the Guardian holds both a bilateral OpenAI license (Feb 2025, m514) and a SPUR founder seat - the meter-designer is also a licensee, extending m514's license-while-demanding-standards tension into the meter's governance. No tracked-publication coverage of the Oct 2 release found in this run's searches (bounded absence per the iteration-492 rule, not a finding).
+- NOT a falsification-family member: financial-architecture mapping of the meter-then-invite geometry per the #609/#614 qualitative boundary; no coverage-tone pair scored (no Meta-vs-competitor tone comparison at the finding layer; the Oct 2 release has no tracked-publication coverage pair), so no uniform-prediction test; the invitation is a reported governance event, not a money flow; MANUAL ILLUSTRATIVE ONLY per Aug 28 rule; engine NOT run; no analysis.json; NOT artifact-grade; verdict directionally_supported_not_proven. Ledger holds at 46; no-forty-seventh-member guard holds (designed negative-guard wording for the next landing); THIRTY-SIXTH direction absent.
+- 6 sources, all novel pre-commit: Digiday SPUR release + advisory-board invitation (Oct 2, Guaglione, primary); biztoc relay (Oct 2); Press Gazette June draft five-stages piece; Digiday WTF-is-SPUR explainer (publisher-run, AP joined, 30 members); The Media Leader Springer interview (Slade "NATO for news"); Storyboard18 launch piece (not-a-pricing-cartel disclaimer, pay-per-crawl vs pay-per-inference).
+
+### Guards
+- Forward guards for #1140: zero-916 (numeric/underscore/dash), no-forty-seventh member, no-thirty-sixth direction (needles format-built per #715).
+- #1138's guard-lifecycle pins flip by design (max-914, zero-915 numeric); #1138's zero-915 underscore/dash, no-forty-seventh-member, forty-sixth-intact, thirty-fourth-intact stay green (verified via supersession pins in the #1139 test file).
+- Pre-commit novelty: max 914, zero 915 key forms, no FORTY-SEVENTH member, no THIRTY-FIFTH direction, no test_type_c_1139 files, no "Type C #1139" in git log. Test gate: 86/86 green pre-commit (venv python), zero initial defects.
+
+### Method
+- Research in 2 rounds, both direct browser.search (0 browser.open per #503, excerpt-bounded). Round 1: Google AI contribution pilot payout-spread reporting (The Information via AdExchanger/SEO Weekly, Oct 1-2) - REJECTED as an m891/m894-family extension (payout color, not a new geometry); OpenAI India publisher pipeline (BCCL/Indian Express signed, two more talks) - REJECTED as the m944/#739 duplicate; Google pay-per-value explainer - REJECTED as the m891 duplicate. Corpus-grep verification before drafting is mandatory per the #1129 lesson. Round 2: SPUR Oct-2 release + AI Licensing Advisory Board invitation - SELECTED, verified novel (zero "AI Licensing Advisory Board" hits in committed tree and git log, 6 URLs zero-hit, max mechanism 914 pre-commit). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### New Type C files
+tests/test_type_c_1139_spur_telemetry_standard_advisory_board_meter_then_invite_oct02_2am.py - 15 classes, 86 tests.
+
+### Doc-sync ratchet
+README stats table 59710/1463 -> 59796/1464 (+86/+1); test-file table row appended after #1138; ARCHITECTURE.md tree row appended after #1138.
+
+### Push status
+Push status (this run, Oct 2 2026 ~2:xx AM PDT): pending at log-hash time; see followup.
+
+### Rotation guard
+1135-1139 window CLOSED (D->E->A->B->C). Next window 1140-1144 opens with Type D #1140.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.
+
 ## #1138 Type B: Stevie Bonifield (The Verge) Sep-24 Meta Connect 2026 product-positive recap (+0.10) vs Apr-16 Google Gucci glasses fashion-partnership news (+0.15) - competitive quote-inclusion: Spiegel anti-Meta brand diss platformed in the Google arm, EXTENDING m150's quote-inclusion observation to a second writer/outlet (mechanism 914; FIRST dedicated Type B on Bonifield in journalists.yaml; illustrative delta +0.05 near-null at tone; STRONG 5-month temporal confound; NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1135-1139 window (Oct 2 2026, 01:00 AM PDT; main commit 9db35c1c / anchor 75276dbc / doc-sync ed5674de; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59644/1462 -> 59710/1463 (+66/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 - Tests: `tests/test_type_b_1138_stevie_bonifield_verge_meta_connect_recap_vs_google_gucci_glasses_oct02_1am.py` (66 tests, 13 classes; 59 green pre-commit via venv python with 8 post-commit/doc-sync pins failing by design - 4 forward-staleness needle self-reference fixes applied, 4 doc-sync/iteration-log pins green post-doc-sync; post-anchor re-run: anchor + rotation-guard green with the novelty pin deselected by design).
