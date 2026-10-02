@@ -28217,3 +28217,79 @@ type_c_1139_spur_telemetry_standard_ai_licensing_advisory_board_meter_then_invit
   concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
   yaml_parse_clean: true
   ascii_only: true
+type_c_1144_apple_siri_ai_publisher_negotiation_watch_day_fifty_one_zero_closures_persistently_underperforming_filing_oct02_7am:
+  block_key: type_c_1144_apple_siri_ai_publisher_negotiation_watch_day_fifty_one_zero_closures_persistently_underperforming_filing_oct02_7am
+  mechanism_id: 918
+  mechanism_name: 'Apple Siri AI Publisher-Negotiation Watch: Oct-2-2026 Status Check (51 Days Post-WSJ) - Zero Signed-Deal Closures; OpenAI ''Persistently Underperforming'' Court Filing Documents the Commercial Failure of the Predecessor Apple-OpenAI Siri Deal; the Variable-Pay Proposal Extends #27 Unilateral Pricing (m891)'
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1144
+  iteration_type: 'C'
+  iteration_time: '2026-10-02 07:00 PDT'
+  connects_to:
+  - 156
+  - 606
+  - 654
+  - 891
+  relationship_direction_taxonomy: 'No new direction: Apple''s nine-figure variable-pay proposal is a second instance of #27 unilateral pricing (m891, Google''s pay-per-value pilot) - the LAB unilaterally designs the pay-per-use meter, sizes the pot, and runs the counter (businessmodelanalyst, Sep 2026: "a pot Apple sizes, divided by a counter Apple runs"), shifting volume risk to publishers. The Apple News+ 2019 per-view split is the in-house precedent ("publishers hated the arithmetic"). Distinct from #35 meter-then-invite m915 (there the PUBLISHERS design the meter collectively and invite the metered labs into governance; here the PAYER designs the meter unilaterally and audits it - opposite designer, opposite invitation arrow, same meter vocabulary). The thirty-sixth direction stays absent by design (negative guard); the thirty-fifth (m915, METER-THEN-INVITE) stands as the latest landed direction per the m807 enumeration.'
+  finding: 'As of Oct 2 2026, 51 days after the Aug-12-2026 WSJ report (mechanism 156), zero signed Apple Siri AI publisher-deal announcements have surfaced across five bounded search sets this run, and no counterparty publisher has been named in any reporting. Mechanisms 156/606 stay PREDICTIVE. The novel evidentiary core is OpenAI''s September 2026 court filing in the Musk xAI antitrust case (FT-original reporting; MacRumors Sep 23 2026 relay by Juli Clover), in which OpenAI characterizes its ChatGPT-in-Siri integration as "persistently underperforming": by January 2025, under two months after the December 2024 launch, OpenAI had cut its forecast for incremental logged-in weekly active users; the feature shipped off by default behind a multi-step opt-in; OpenAI asked Apple for a two-year exclusivity window and Apple refused; the signed contract explicitly preserved Apple''s right to "integrate products or services that provide the same or similar functionality as [ChatGPT]" - the clause Apple later exercised with the Google Gemini deal; a March 2026 Apple-OpenAI conversation is redacted in the unsealed filing. Musk''s companies dropped the Apple half of the suit on Sep 14 2026 (dismissal with prejudice; claims against OpenAI continue; MacRumors). The parallel adversarial leg escalated through September: in Apple v. OpenAI (trade-secrets, filed July 2026), Apple filed a reply brief with five new expert declarations totaling 126 pages plus 13 exhibits, expanding allegations to roughly 13 former Apple employees; OpenAI accuses Apple of improperly using the reply to introduce new evidence (9to5Mac Sep 25 2026); preliminary-injunction hearings set for Oct 1 and Oct 14 before Judge Edward J. Davila with no ruling reported. The live model-supply leg is the Apple-Google Gemini deal (mechanism 654: ~$1B/yr, up to ~$5B multi-year per Introl/Munster analyst estimates via tech-insider), which shipped inside iOS 27 on Sep 14 2026 with Gemini-powered Siri; publishers are paid $0 directly under that leg. The publisher-pay negotiation therefore sits between a commercially-failed OpenAI leg (filing-documented), a live Google leg that bypasses publishers, and an active trade-secrets war with the former partner.'
+  money_flow: 'Negotiation channel (PREDICTIVE, $0 observed): Apple -> publishers via variable per-use payments for Siri AI current-news retrieval: nine-figure budget discussed (WSJ Aug 12), zero signed counterparties at day 51. Live model leg (OBSERVED): Apple -> Google ~$1B/yr for the custom Gemini model powering Siri AI (mechanism 654, Jan 12 2026 deal; iOS 27 shipped Sep 14 2026); publishers paid $0 directly. Dead distribution leg (DOCUMENTED): Apple x OpenAI ChatGPT-in-Siri (Dec 2024); commercial failure attested in OpenAI''s own Sep 2026 court filing ("persistently underperforming," exclusivity refused). Litigation channel (ACTIVE): Apple v. OpenAI trade-secrets (July 2026; preliminary-injunction motion, no damages figure; Oct 1 / Oct 14 hearings). The asymmetry: Apple pays Google ~$1B/yr for the model while the publisher-pay leg that would compensate the content Siri retrieves remains at $0 with the meter unbuilt - and the party that would build the meter (Apple) is the same party that sizes the pot and runs the counter.'
+  confounders:
+  - strength: STRONG
+    text: 'Bounded absence is not proof: signed-but-NDA deals are routine in content licensing, and 51 days is still inside normal 6-18 month enterprise deal time (carried from m606).'
+  - strength: STRONG
+    text: 'Excerpt-tier evidence (0 browser.open per #503): the "persistently underperforming" filing''s contents reach this mechanism via FT-original reporting relayed by MacRumors and aiweekly excerpts; the March 2026 Apple-OpenAI conversation is redacted even in the unsealed filing.'
+  - strength: MODERATE
+    text: 'The "persistently underperforming" characterization is OpenAI''s litigation posture in the xAI antitrust defense - it serves OpenAI to argue there was no exclusive deal and no antitrust harm from a failed integration. The commercial-failure reading is adversarial-sourced.'
+  - strength: MODERATE
+    text: 'Secondary-stack weight: businessmodelanalyst, ainvest, tech-insider, and the LinkedIn synthesis carry low institutional weight; only WSJ, FT-original, MacRumors, and 9to5Mac carry primary weight. The ~$5B multi-year Gemini figure is analyst estimates (Introl, Munster), not Apple/Google disclosure.'
+  - strength: WEAK
+    text: 'Musk dropping the Apple half of the xAI suit (Sep 14) moots one antitrust pressure vector on the Apple-OpenAI leg, but claims against OpenAI continue and the trade-secrets war escalated independently.'
+    counterargument: 'The dismissal with prejudice could signal a private Apple-Musk understanding rather than merits weakness; either way the OpenAI leg''s commercial failure is documented in OpenAI''s own filing, independent of the xAI case''s fate.'
+  coverage_nexus: 'MacRumors (Juli Clover) Sep 23 2026 relay of FT-original court-filing reporting is the coverage event for the novel core; 9to5Mac Sep 25 2026 covers the trade-secrets escalation; MacRumors Sep 14 2026 covers the Musk dismissal. No tracked-publication (WIRED, The Verge, NYT, FT, Guardian, Business Insider, Gizmodo) editorial on the Apple publisher-negotiation''s day-51 status surfaced in this run''s bounded sets (bounded absence per the iteration-492 rule, not a finding). Nominal tension carried: FT originated the "persistently underperforming" reporting while holding an OpenAI content-licensing deal (mechanism 54, ~$5-10M/yr per #872) - the outlet breaking the partner''s commercial failure is the partner''s licensee; capture direction ambiguous, not a finding.'
+  sources:
+  - url: https://www.macrumors.com/2026/09/23/openai-siri-chatgpt-underperforming/
+    what: 'MacRumors (Sep 23 2026, Juli Clover): OpenAI court filing in the Musk xAI antitrust case calls the ChatGPT-in-Siri integration "persistently underperforming"; by Jan 2025 OpenAI had cut its forecast for incremental logged-in weekly active users; the feature shipped off by default with multi-step opt-in; OpenAI asked Apple for a two-year exclusivity window and Apple refused; the signed contract explicitly preserved Apple''s right to "integrate products or services that provide the same or similar functionality as [ChatGPT]"; a March 2026 Apple-OpenAI conversation is redacted; originally reported by FT. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://aiweekly.co/alerts/openai-apples-chatgpt-in-siri-deal-persistently-underperforming
+    what: 'AI Weekly alert (Sep 2026): corroborates the "persistently underperforming" filing language; the exclusivity-refusal and the Google Gemini succession as Siri''s model supplier. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.webpronews.com/openais-bitter-lesson-from-siri-why-apples-chatgpt-bet-fell-flat/
+    what: 'WebProNews (Sep 2026): Bloomberg May 2026 detail - OpenAI sought a two-year exclusivity window, Apple refused; OpenAI explored legal options (including potential breach claims) in early 2026; Apple countered with its July 2026 trade-secrets suit against OpenAI, two former employees, and the Jony Ive hardware venture. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://businessmodelanalyst.com/apple-publisher-payments-siri-pool/
+    what: 'Business Model Analyst (Sep 2026): "The nine-figure Siri budget is a pool, not a price" - Apple sizes the pot and runs the counter; the Apple News+ 2019 per-view-split precedent ("publishers hated the arithmetic"); variable pay-per-use shifts volume risk to publishers and decides who audits the meter; "Nothing here is signed." URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.macrumors.com/2026/09/14/spacexai-drops-apple-lawsuit/
+    what: 'MacRumors (Sep 14 2026, Juli Clover): Musk''s X Corp and SpaceXAI asked the court to dismiss with prejudice their claims against Apple in the 2025 AI antitrust suit (Reuters); no settlement mentioned; claims against OpenAI continue. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://9to5mac.com/2026/09/25/openai-accuses-apple-of-improperly-adding-new-evidence-to-trade-secrets-case/
+    what: '9to5Mac (Sep 25 2026): Apple filed a reply brief in the trade-secrets case with five new expert declarations totaling 126 pages plus 13 exhibits; OpenAI accuses Apple of improperly using the reply to introduce new evidence; allegations expanded to roughly 13 former Apple employees. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.macobserver.com/news/apple-plans-to-pay-news-publishers-for-content-used-by-siri-ai/
+    what: 'Mac Observer (Aug 2026): Apple building direct publisher relationships before the Siri AI fall launch; payment tied to actual content usage; accurate news information framed as the fix for the earlier AI notification-summary hallucinations. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.linkedin.com/posts/jerrycards_apple-siri-appleintelligence-activity-7493520225796050944-ffcZ
+    what: 'Jerry Cards LinkedIn synthesis (Aug 2026): Apple 2023 $50M+ archive-training approaches to Conde Nast, NBC News, IAC (citing NYT) vs the 2026 variable pay-per-use proposal ("the 2023 conversation was about the past - rights to an archive, paid once; the 2026 conversation is about the present"); "No publisher has been named, no deal has been reported as signed." URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  falsification_family_member: false
+  falsification_family: 'NOT a member (ledger holds at 46 per the #754 convention; financial-incentive mapping of the Apple Siri AI publisher-negotiation watch per the #609/#614 qualitative boundary; no coverage-tone pair scored (no Meta-vs-competitor tone comparison at the finding layer; the day-51 status check has no tracked-publication coverage pair), so no uniform-prediction test; the negotiation is a reported proposal, not a money flow; FORTY-SEVENTH member-claim form absent repo-wide).'
+  novelty: 'FIRST dedicated corpus mechanism documenting OpenAI''s Sep-2026 "persistently underperforming" court filing on the Apple ChatGPT-Siri deal (zero "persistently underperforming" hits repo-wide pre-commit) and FIRST Oct-2-2026 (day-51) status check on the mechanism-606 watch (prior check: Sep 8, day 27, m606). Pre-commit novelty verified: zero test_type_c_1144 files on disk (glob); no "Type C #1144" in git log (--grep); max numeric mechanism_id 917 pre-commit (m917 Type B #1143, profiles/careers/journalists.yaml); zero numeric/underscore/dash 918 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; affirmative THIRTY-SIXTH direction claim absent repo-wide pre-commit (absence-documentation only); THIRTY-FIFTH direction present (m915). The eight source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: 'Iteration #1144 Type C is the FIFTH and CLOSING leg of the 1140-1144 window (D->E->A->B->C per #565 anchor + rotation guard; #1140 Type D main 48062ab5/anchor f88c9c36/doc-sync 42b17057/log-hash ab796e8b, #1141 Type E main 7d6a4a7a/anchor 9f96f7d1/doc-sync c1f3e366/log-hash 63cbcade, #1142 Type A main 224f054e/anchor 3094ab16/doc-sync a716c109/log-hash 7d36f101, #1143 Type B main fb2d19f0/anchor 68d3c43f/doc-sync a6cfa971/log-hash cf1c6290; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_c_1144 files on disk (glob); no "Type C #1144" in git log (--grep); max numeric mechanism_id 917 pre-commit; zero numeric/underscore/dash 918 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 8 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). Guard lifecycle: #1143''s max-917 + zero-918-numeric guards fail BY DESIGN at this run (pinned as forward-looking staleness in the #1144 test file); #1143''s zero-918 underscore/dash, no-forty-seventh-member, forty-sixth-intact, thirty-fifth-intact guards stay green (verified via supersession pins in the #1144 test file). This run lands mechanism 918; no new relationship direction (thirty-sixth absent by design). Next window 1145-1149 opens with Type D #1145; the #1140 background-suite tombstone verdict belongs to #1145 per #795.'
+  concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+  yaml_parse_clean: true
+  ascii_only: true
