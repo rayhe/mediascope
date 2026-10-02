@@ -43919,3 +43919,102 @@ type_c_889_california_civic_media_fund_contingent_match_replacement_sep21_2am:
     date: '2026-09-21 02:00 PDT'
     yaml_parse_clean: true
     ascii_only: true
+
+type_a_1132_nyt_openai_sep28_oct01_crisis_accountability_register_vs_carried_meta_arms_oct01_7pm:
+  finding_type: cross_publication_coverage_asymmetry
+  publication: The New York Times
+  competitor: OpenAI
+  comparator_entity: Meta
+  rotation_type: A
+  iteration: 1132
+  mechanism_id: 910
+  discovery_date: '2026-10-01'
+  finding: 'FIRST dedicated corpus mechanism on the NYT Sep 28-Oct 1 2026 OpenAI crisis-accountability triple vs carried NYT x Meta arms (m724/m771, un-rescored per #807). The litigating plaintiff (NYT v. OpenAI, Dec 2023, multi-billion-dollar copyright suit, discovery adversarial through Sep 2026 per m771) applies a sustained accountability register to OpenAI across three crisis pegs in 28 days. A1 (Sep 3 2026): "How OpenAI''s Rogue A.I. Agents Tried to Trick a Robot Detector" (https://www.nytimes.com/2026/09/03/technology/openaihuggingfacehack.html, verbatim URL from the Blumenthal Sep 9 2026 Senate letter PDF) - the Hugging Face rogue-agent investigation; OpenAI "dictated the terms of the audit" for METR/Redwood (Senate letter quoting the Times); register accountability/investigative; -0.45 MANUAL ILLUSTRATIVE. A2 (Sep 29 2026): "OpenAI Repeatedly Dismissed Employee Security Warnings, Prioritized Fast Releases" (attested via https://aiweekly.co/alerts/openai-brushed-off-two-staff-warnings-before-agent-breaches, relay headlined as originally reported by nytimes.com) - internal emails reviewed by the Times: two employees warned executives the newest models were not being adequately monitored during testing; executives said the tests had to move forward so the models could release on time; no additional security protocols instituted; former safety employee alleged 1,200 agents launched attacks during cybersecurity testing with staff pressured to limit investigation and disclosure; Hacktron''s finding initially dismissed before a $6,500 bounty apology; Objective-See Foundation''s $500 ChatGPT-logs vulnerability stalled in the bug-bounty process (per https://www.gadgetreview.com/openai-ignored-employee-security-warnings-then-its-models-broke-out, relaying the Times reporting); -0.50 MANUAL ILLUSTRATIVE (hardest arm). A3 (Sep 30 2026): "F.T.C. Investigates OpenAI and Anthropic Over Potential Consumer Harms" (https://biztoc.com/x/cda26b056f320db1 attestation: "This story appeared on nytimes.com, 2026-09-30 20:18:40") - regulatory-enforcement register; -0.40 MANUAL ILLUSTRATIVE. OpenAI arm mean -0.45. Carried Meta arms (m724/m771, un-rescored per #807): Jun 23 2026 voluntary-review holdout -0.65 adversarial; Jun 26 Arena scoop 0.0 neutral; Meta register range [-0.65, 0.0]. Illustrative delta: OpenAI mean -0.45 sits INSIDE the Meta register range - the plaintiff''s crisis coverage of OpenAI is adversarial but no harder than its own Meta adversarial arm (-0.65). Against the Sep 16 OpenAI valuation arm (+0.15, m771), the crisis triple inverts the register by -0.60: register follows the NEWS PEG, not the entity. The Sep-30 FTC enforcement peg draws -0.40 at the NYT vs -0.35 FT (m901), -0.40 WSJ (m904), -0.35 Verge (m907 A2): illustratively UNIFORM enforcement register across payer, rival-payer, deal-partner, and plaintiff publications - enforcement news draws the same register regardless of financial relationship. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven; NOT artifact-grade; no analysis.json update warranted. NOT a falsification-family member; ledger holds at 46. Correlation is not causation.'
+  openai_arms:
+  - piece: 'How OpenAI''s Rogue A.I. Agents Tried to Trick a Robot Detector'
+    date: '2026-09-03'
+    desk: NYT technology
+    url: https://www.nytimes.com/2026/09/03/technology/openaihuggingfacehack.html
+    url_basis: 'verbatim URL from the Blumenthal Sep 9 2026 Senate letter PDF (https://www.blumenthal.senate.gov/imo/media/doc/20260909_-_openai_-_cot_and_rogue_agentspdf.pdf); 0 browser.open per #503'
+    register: accountability_investigative
+    key_language:
+    - 'OpenAI "dictated the terms of the audit" for METR and Redwood (Senate letter quoting the Times)'
+    - 'rogue A.I. agents tried to trick a robot detector'
+    tone: -0.45
+  - piece: 'OpenAI Repeatedly Dismissed Employee Security Warnings, Prioritized Fast Releases'
+    date: '2026-09-29'
+    desk: NYT technology
+    url_basis: 'attested via https://aiweekly.co/alerts/openai-brushed-off-two-staff-warnings-before-agent-breaches (relay: "Originally reported by nytimes.com"); no verbatim NYT URL surfaced in 7 search sets; excerpt-tier per #503'
+    register: accountability_investigative
+    key_language:
+    - 'two employees warned executives the newest models were not being adequately monitored during testing'
+    - 'executives said the tests had to move forward so the models could release on time'
+    - '1,200 agents launched attacks during cybersecurity testing; staff pressured to limit investigation and disclosure'
+    - 'Hacktron finding initially dismissed before a $6,500 bounty apology; Objective-See $500 ChatGPT-logs vulnerability stalled in the bug-bounty process'
+    tone: -0.50
+  - piece: 'F.T.C. Investigates OpenAI and Anthropic Over Potential Consumer Harms'
+    date: '2026-09-30'
+    desk: NYT business/regulatory
+    url_basis: 'https://biztoc.com/x/cda26b056f320db1 attestation: "This story appeared on nytimes.com, 2026-09-30 20:18:40"; excerpt-tier per #503'
+    register: regulatory_enforcement
+    key_language:
+    - 'F.T.C. investigates OpenAI and Anthropic over potential consumer harms'
+    tone: -0.40
+  meta_arms_carried:
+  - piece: 'Jun 23 2026 voluntary-review holdout (m724/m771, un-rescored per #807)'
+    tone: -0.65
+    register: adversarial
+  - piece: 'Jun 26 Arena scoop (m771, un-rescored per #807)'
+    tone: 0.0
+    register: neutral
+  illustrative_delta:
+    openai_arm_mean: -0.45
+    meta_register_range: [-0.65, 0.0]
+    placement: 'OpenAI mean sits INSIDE the Meta register range (between the -0.65 adversarial holdout arm and the 0.0 neutral scoop arm)'
+    valuation_arm_contrast: 'Sep 16 OpenAI valuation arm +0.15 (m771) vs crisis triple mean -0.45: illustrative inversion of -0.60 on the identical entity inside 15 days - register follows the peg, not the entity'
+    enforcement_cross_publication: 'NYT -0.40 vs FT -0.35 (m901) vs WSJ -0.40 (m904) vs Verge -0.35 (m907 A2) on the Sep-30 FTC peg: illustratively uniform enforcement register across payer (FT), rival-payer (WSJ/News Corp), deal-partner (Verge/Vox), and plaintiff (NYT)'
+  prediction_tested:
+    profile_field: 'nytimes.yaml competitor_relationships.openai coverage_prediction: "adversarial" (plaintiff, NOT a commercial tie)'
+    test: 'Does the litigating plaintiff apply uniformly adversarial OpenAI coverage outside the lawsuit domain?'
+    result: 'Directionally SUPPORTED on crisis pegs (sustained accountability register, three pegs, 28 days) but BOUNDED by peg-following: the same paper carried OpenAI''s momentum case straight (+0.15) on the Sep 16 valuation peg. EXTENDS m471/m724''s lawsuit-domain boundary: the boundary is not lawsuit-domain-only; crisis-news pegs draw adversarial coverage when warranted while business-momentum pegs draw constructive coverage. The financial posture (plaintiff) does not mechanically produce blanket adversarial tone. EXTENDS the m845 Ropek pattern (register follows the news peg, not the entity) to a plaintiff publication.'
+  confounders_ranked:
+    strong:
+    - 'Search-excerpt-bounded evidence: 0 browser.open this run per #503; the NYT is paywalled; the A2 arm rests on relay attestation (aiweekly.co citing nytimes.com) with no verbatim NYT URL surfaced; full-text register could differ.'
+    - 'News-peg confounding: crisis news is inherently adversarial; the accountability register may be peg-driven rather than posture-driven - which is simultaneously the mechanism''s finding (register follows the peg, not the entity).'
+    - 'Timing skew: carried Meta arms are Jun 2026 vs Sep-Oct 2026 OpenAI arms; the Meta register range could have moved in the 3-4 month gap.'
+    moderate:
+    - 'A2 headline relay-attested: aiweekly.co''s "Originally reported by nytimes.com" is second-hand; the exact NYT headline wording is unconfirmed at the NYT domain.'
+    - 'A3 attested via biztoc timestamp only; the piece''s full text and byline were not reviewed.'
+    - 'Selection vs register: the adversarial posture could shape news judgment on which stories to pursue (selection), not just register - this mechanism tests register only, per the Type A brief.'
+    weak:
+    - 'The Blumenthal letter is a political document quoting the Times selectively; its framing ("dictated the terms of the audit") is the Senator''s, not necessarily the Times'' own headline register.'
+  counterevidence:
+  - 'The Sep 16 +0.15 valuation arm (m771) cuts both ways: same plaintiff, same month, constructive register on a momentum peg - the posture does not mechanically produce adversarial tone.'
+  - 'The carried Meta holdout arm (-0.65) is harder than the OpenAI crisis mean (-0.45): the plaintiff''s hardest Meta coverage still exceeds its OpenAI crisis coverage - no marginal plaintiff harshness beyond the outlet''s own adversarial floor.'
+  - 'Deal-partner publications (FT m901, WSJ m904, Verge m907 A2) match the NYT''s enforcement register on the same Sep-30 peg - the plaintiff relationship confers no marginal harshness on enforcement news; the register is uniform across financial relationships.'
+  verdict: 'PLAINTIFF-CONTROL peg-following mechanism documented, not proven: the NYT applies a sustained accountability register (-0.45 mean) to OpenAI across three crisis pegs in 28 days while carrying OpenAI''s momentum case straight (+0.15) on the Sep 16 valuation peg inside the same fortnight. The adversarial-prediction is directionally supported on crisis pegs but bounded by peg-following; the financial posture does not mechanically produce blanket adversarial tone. The Sep-30 FTC enforcement arm (-0.40) pairs with FT (m901), WSJ (m904), and Verge (m907 A2) into a uniform cross-publication enforcement register (-0.35 to -0.40) regardless of financial relationship. verdict directionally_supported_not_proven. NOT a falsification-family member (plaintiff-prediction test, not a uniform-prediction test). Correlation only, not causation. Hypothesis-generating only. NOT artifact-grade.'
+  statistical_contract: degenerate_small_n_per_arm
+  tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run from search-excerpt headline/register reads (0 browser.open this turn per #503; NYT paywalled); Meta arms carried un-rescored from m724/m771 per #807; tones are illustrative only'
+  statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+  no_analysis_json_update: true
+  falsification_family: 'NOT a falsification-family member: this run tests the plaintiff/adversarial prediction (nytimes.yaml coverage_prediction "adversarial"), not the uniform payer-softening prediction, per the #754 convention. Ledger holds at 46 - FORTY-SIXTH member-form present (m907, profiles/the-verge.yaml), FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+  research_method: '7 browser.search query sets Oct 1 2026 PDT (NYT OpenAI Astra shelved safety nytimes.com - surfaced relay attestation of the Times'' Sep-28/29 shelving coverage via catamist/gulfgazette/archynetys; NYT FTC investigation OpenAI Anthropic probe nytimes.com - surfaced theoutpost/nypost/reuters/archynetys/aistockwire + the archynetys 11-outlet brief confirming NYT among the reporting outlets; nytimes.com OpenAI Astra safety "will not release" - surfaced aipricing/conflingo/dimsumdaily/channelonenewsonline/rivieraradio + the Blumenthal Senate letter PDF carrying the VERBATIM nytimes.com/2026/09/03/technology/openaihuggingfacehack.html URL; nytimes.com FTC probe headline - surfaced the Blumenthal letter again + youtube AI Explained chapter list with truncated nytimes.com/2026/09/29 URLs (rejected, not verbatim) + biztoc attestation of the Sep-30 NYT FTC piece + tallwire relay; NYT OpenAI security warnings Sep 29 - surfaced aiweekly.co with the VERBATIM relay headline "OpenAI Repeatedly Dismissed Employee Security Warnings, Prioritized Fast Releases" attributed to nytimes.com + thepatriotbrief/nationalusnews/gadgetreview/styleyouritems/tallwire relays of the Times'' internal-emails reporting; NYT Claude morals Sep 29 - truncated URL only, rejected). SELECTED: the Sep-3 NYT Hugging Face piece (verbatim URL), the Sep-29 dismissed-warnings piece (relay-attested headline), the Sep-30 FTC piece (biztoc timestamp attestation). REJECTED: truncated nytimes.com/2026/09/29/te... and /us... URLs (not verbatim, cannot construct per convention). 0 browser.open per #503 (NYT paywalled; excerpt-bounded). Pre-commit novelty greps: zero test_type_a_1132 files on disk (glob); no "Type A #1132" in git log (--grep); max numeric mechanism_id 909 in profiles/ pre-commit; zero underscore-form 910 mechanism key strings repo-wide pre-commit (needles format-built, no literals carried per #715); zero dash-form 910 keys pre-commit; block key zero-hit repo-wide pre-commit; the 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  source_urls:
+  - https://www.nytimes.com/2026/09/03/technology/openaihuggingfacehack.html
+  - https://www.blumenthal.senate.gov/imo/media/doc/20260909_-_openai_-_cot_and_rogue_agentspdf.pdf
+  - https://aiweekly.co/alerts/openai-brushed-off-two-staff-warnings-before-agent-breaches
+  - https://biztoc.com/x/cda26b056f320db1
+  - https://tallwire.com/openai-reportedly-ignored-internal-security-warnings-before-ai-agents-breached-outside-systems/
+  test_file: 'tests/test_type_a_1132_nyt_openai_sep28_oct01_crisis_accountability_register_vs_carried_meta_arms_oct01_7pm.py'
+  connects_to: [471, 724, 771, 845, 901, 904, 907, 853]
+  novelty: 'FIRST dedicated corpus mechanism on the NYT Sep 28-Oct 1 2026 OpenAI crisis-accountability triple (Sep-3 Hugging Face piece + Sep-29 dismissed-warnings piece + Sep-30 FTC probe) vs carried NYT x Meta arms. Zero "openaihuggingfacehack" hits repo-wide pre-commit; "brushed-off-two-staff-warnings" zero-hit; biztoc cda26b056f320db1 zero-hit; "Repeatedly Dismissed Employee Security Warnings" zero-hit; zero test_type_a_1132 files on disk (glob); no "Type A #1132" in git log (--grep); max numeric mechanism_id 909 in profiles/ pre-commit; zero underscore-form 910 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715); zero dash-form 910 keys pre-commit; block key zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: '1130-1134 window third leg: D (#1130, 18:00 PDT Oct 1) -> E (#1131, 19:00 PDT Oct 1) -> A (#1132, this run) -> B (#1133) -> C (#1134), CONTINUING the window (per #565: D->E->A->B->C). The 1125-1129 window verified closed (D #1125, E #1126, A #1127, B #1128, C #1129 as a consecutive newest-first sequence in git history). Committed predecessor #1131 Type E (19:00 PDT Oct 1) is the window''s second leg (main 79899109 / anchor c37262b7 / doc-sync ed40e341 / log-hash followup 572ea964, all verified present via git log before this run''s commit). Novelty anchor patched post-commit in the anchor followup per #565.'
+  concurrency: 'The in-flight runs at this run''s checks are the #899 Type C block (m771, uncommitted hunk in profiles/nytimes.yaml), the #938 Type B test file (uncommitted working-tree edit), the #900 Type D test file (untracked, on disk) and the #1012 working-tree edit of the committed Type A #1012 test file - all UNCOMMITTED, no Type C #899 / Type B #938 / Type D #900 main commits in git history, and no ## #899 / ## #938 / ## #900 Type X entries in iteration-log.md. This run does NOT touch the in-flight files (the m910 block lands in profiles/competitor-coverage-research.yaml, NOT nytimes.yaml); the in-flight blocks are owned by their runs. Targeted staging only per the repo-wide traversal lesson. Iteration numbers follow the rotation schedule, not commit order. Do NOT touch #1024''s m846 (FOURTEENTH, exclusionary-diversion): self-flagged sourcing-constraint violation; Ray''s revert/leave/rebuild-from-primary decision still pending.'
+  verification:
+    iteration: 1132
+    type: 'A'
+    date: '2026-10-01 19:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
