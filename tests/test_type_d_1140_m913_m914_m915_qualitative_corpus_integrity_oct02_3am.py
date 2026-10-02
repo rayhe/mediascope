@@ -177,7 +177,7 @@ TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
 # anchor followup. Deselect the placeholder test in post-commit full runs.
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "48062ab54603fdfb7b5b1561007ca52891199cc8"
 
 MECH_NUM = 915
 NEXT_NUM = 916
