@@ -1,3 +1,50 @@
+## #1133 Type B: m911 Cherlynn Low (Engadget) Sep-18/19 Apple Watch Series 12 scored review (+0.30) vs Sep-23 Meta Connect 2026 liveblog (0.0) - genre-bound register contrast EXTENDING m872's constancy finding - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1130-1134 window (Oct 1 2026, 08:00 PM PDT; main commit 9cb9ec5f / anchor 3e7e02e3 / doc-sync TBD / log-hash followup registers all hashes here per #721 (this commit); doc-sync 59265/1457 -> 59351/1458 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `9cb9ec5f` (9cb9ec5f54ae1d969c22e235bddbfca821a1e25f) - verified via git rev-parse
+- Anchor followup `3e7e02e3` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README/ARCHITECTURE/iteration-log per #719)
+- Log-hash followup: this commit (terminal per #721)
+
+### Rotation transparency
+- Window 1130-1134 FOURTH leg: D #1130 (6:00 PM) -> E #1131 (7:00 PM) -> A #1132 (7:00 PM) -> B #1133 (8:00 PM, this run). Next: #1134 Type C closes the window.
+- Predecessor #1132 Type A chain verified pre-commit: main 374ce8cd / anchor 21d8a967 / doc-sync 8bb6dded / log-hash fbeb43c0 / count-correction 19926813.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit.
+
+### Mechanism m911 (journalists.yaml cherlynn_low competitor_coverage)
+- Block key `type_b_1133_cherlynn_low_engadget_meta_connect_liveblog_vs_apple_watch_series_12_review_sep2026` (4-space, designed keying, no mechanism-number substring per #715). SECOND dedicated Type B mechanism on Low (m872/Type B #1068 covered the same-genre hands-on vs hands-on pair: Apple Sep-9/10 +0.35 vs Meta Jun-23 +0.30, illustrative delta +0.05 null; m911 uses NEW arms on both sides).
+- Meta arm Sep 23 2026: "Meta Connect 2026 live: Updates from Mark Zuckerberg's keynote on AI glasses, VR and more" - neutral-wry event relay; the single privacy-vector line ("that sound you hear is hackers salivating at the opportunity to capture real-time video and audio from whoever they want") is played as a throwaway joke; zero privacy-architecture walkthrough; the camera-free Ray-Ban Meta Audio glasses relayed as product fact. 0.0 MANUAL ILLUSTRATIVE, excerpt-tier.
+- Apple arm Sep 18-19 2026: "Apple Watch Series 12 review: Catching up and catching heat" - scored 9.1/10 (revamped health sensing, gesture support, battery); the Audio Intelligence always-on ambient-listening controversy (Siri Recaps, Live Rewind - passive capture of nearby conversation) gets a contained caveat plus an uncritical relay of Apple's privacy messaging ("In its typical privacy-minded way, Apple took pains to explain how the Series 12's S11 chip and dedicated Secure Enclave made those features more private"); sympathy directed at Apple for the controversy eclipsing the hardware. +0.30 MANUAL ILLUSTRATIVE. URL kept with VERBATIM "WWW.Engadget.com" capitalization from the listing, flagged in the block.
+- Illustrative delta (Apple minus Meta) +0.30, n=1 vs n=1 degenerate contract, NOT significant. 5-day temporal window (Sep 18-19 vs Sep 23) - tighter than m872's 11-week gap.
+- Finding: EXTENDS m872's constancy finding with a GENRE leg - under genre control (hands-on vs hands-on) the pair reads null (+0.05); when the review genre applies to Apple and the liveblog genre applies to Meta, the same writer's register diverges +0.30. The genre confound is STRONG, so this is a genre-effect extension, not a journalist-bias claim. Analytical hook: the Apple arm is arguably the stronger surveillance story (passive capture of NEARBY conversation, third parties unaware) yet receives the gentler register.
+- NOT a falsification-family member: bounded searches found no Engadget x Meta or Engadget x Apple financial relationship (no AI content-licensing deal for Engadget with any lab); the Feb-2026 Yahoo-to-Static Media sale (signed early Feb, closed March 2026, per mediagazer/David Pierce/The Verge) is logged as a journalists.yaml profile-header ownership staleness flag (header still reads publication_owner: Yahoo), NOT a gradient. Ledger holds at 46; FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing); THIRTY-FOURTH direction absent.
+- MANUAL ILLUSTRATIVE ONLY; engine NOT run; no analysis.json; NOT artifact-grade; verdict directionally_supported_not_proven.
+- Extends m150's beat-assignment control lineage (Cherlynn Low uniform privacy-alarm-free register, Jun 2026) and #813 (Victoria Song same Apple product, different journalist) and #888 (Karissa Bell genre-confound convention).
+
+### Guards
+- Forward guards for #1134: zero-912 (numeric/underscore/dash), no-thirty-fourth direction, no-forty-seventh member (needles format-built per #715).
+- #1132's guard-lifecycle pins flip by design (max-910, zero-911 numeric, all-ids<=910, no-Type-B-#1133-in-git-log); #1132's no-forty-seventh + no-thirty-fourth stay green (verified via supersession pins); the underscore/dash 911 pins stay green BY DESIGN (field-form keying, format-built needles - the numeric pin is the one that flips).
+- #1130 background suite DEAD at this run's check (log last wrote ~1h before check, past the 900s freshness bound); checked only, NOT touched per #795 - tombstoning belongs to the next Type D run (#1135).
+- Pre-commit novelty: max 910, zero 911 key forms, no FORTY-SEVENTH member, no THIRTY-FOURTH direction, no test_type_b_1133 files, no "Type B #1133" in git log. Test gate: 81 passed / 5 deselected pre-commit (doc-sync + iteration-log trio), 86/86 green post-doc-sync. Initial 6 in-gate defects found and fixed: (1) novelty zero-phrase case (Zero->zero to match assertion); (2) constancy phrase case; (3) "uncritically"->"uncritical" in register_notes; (4/5) underscore/dash 911 pins re-asserted stay-green by design; (6) suite-freshness test replaced with an honest death-observation per #795.
+
+### Method
+Research delegated to a child agent (11 browser.search query sets: Goode WIRED sweeps x2 - rejected; Heath Verge - rejected, no fresh pair; Bell Engadget Meta Connect - rejected, multi-covered m722/#818/#888; Song Verge Meta Ray-Ban - rejected, multi-covered #813/m719; Low Engadget Meta glasses + Kylie Jenner - rejected, m150 control case / out of window; Low Apple Watch Series 12 review - SELECTED; Lardinois TechCrunch - rejected, no byline/no competitor arm; engadget.com Meta Connect 2026 live - SELECTED; engadget.com Apple Watch Series 12 review - SELECTED). 0 browser.open per #503 (excerpt-bounded, delegated). Parent: 1 browser.search set on Yahoo/Engadget x Meta/Apple financial relationships (no gradient found; surfaced the Feb-2026 Static Media acquisition). Pre-commit novelty greps: zero test_type_b_1133 files on disk (glob); no "Type B #1133" in git log (--grep); max numeric mechanism_id 910 in profiles/ pre-commit; zero numeric/underscore/dash 911 mechanism key forms repo-wide pre-commit (format-built needles, own file excluded per #715); block key zero-hit repo-wide pre-commit (git grep -F); the two novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### New Type B files
+tests/test_type_b_1133_cherlynn_low_engadget_meta_connect_liveblog_vs_apple_watch_series_12_review_sep2026_8pm.py - 15 classes, 86 tests.
+
+### Doc-sync ratchet
+README stats table 59265/1457 -> 59351/1458 + test-file table row; ARCHITECTURE.md tree row; iteration-log #1133 entry (this entry). Authoritative .venv pytest --collect-only: 86 tests this file (full-file 86/86 green post-doc-sync).
+
+### Push status
+Push status (this run, Oct 1 2026 ~8:xx PM PDT): pending at doc-sync time; see followup.
+
+### Rotation guard
+1130-1134 window FOURTH leg D->E->A->B->C, CONTINUING it (anchor patched post-commit per #565). Next: #1134 Type C closes the window.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test-file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.
+
 ## #1132 Type A: m910 NYT x OpenAI Sep-28/Oct-1 crisis-accountability triple (Sep-3 Hugging Face piece -0.45 + Sep-29 dismissed-warnings piece -0.50 + Sep-30 FTC probe -0.40, arm mean -0.45) vs carried NYT x Meta arms - PLAINTIFF-CONTROL peg-following mechanism: register follows the NEWS PEG not the entity (Type A THIRD leg of the 1130-1134 window, Oct 1 2026, 07:00 PM PDT; main commit 374ce8cd / anchor 21d8a967 / doc-sync 8bb6dded / log-hash b799755f / count-correction 19926813 (this commit); doc-sync 59202/1456 -> 59265/1457 (+63/+1); correction followup 19926813 (true count 63: staleness-class split added one post-collect); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
