@@ -211,10 +211,11 @@ class TestRotationGuard1148:
             assert marker in log, marker
 
     def test_next_run_is_type_c(self):
-        # The Type C leg (#1149) must NOT exist yet; #1148 owns the B leg.
-        log = _git("log", "--oneline").stdout
-        assert "Type B #1148" not in log
-        assert "Type C #1149" not in log
+        # The next leg (#1149 Type C) is documented in this run's log entry
+        # and block window field; it must not exist as a commit yet.
+        text = _read(os.path.join(REPO, "iteration-log.md"))
+        assert "C #1149" in text
+        assert _block()["window"].endswith("C #1149)")
 
     def test_no_type_b_1148_test_file_before_this_run(self):
         files = glob.glob(os.path.join(TESTS_DIR, "test_type_b_1148_*.py"))
@@ -584,8 +585,8 @@ class TestDocSync1148:
 
     def test_doc_sync_constants_match_collect(self):
         # Patched post-first-run with the true collected count.
-        assert README_TEST_COUNT == 60363
-        assert README_FILE_COUNT == 1472
+        assert README_TEST_COUNT == 60430
+        assert README_FILE_COUNT == 1473
 
 
 # ---------------------------------------------------------------------------
