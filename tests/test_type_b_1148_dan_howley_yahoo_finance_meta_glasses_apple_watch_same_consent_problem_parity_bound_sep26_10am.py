@@ -47,8 +47,8 @@ BLOCK_KEY = (
 # Pre-commit values. ANCHORED_SHA is patched to the main-commit hash in the
 # anchor followup (git rev-parse HEAD after the main commit), per #565.
 ANCHORED_SHA = "6dd1f44bb9f620972a61af30968127d0b7c66394"
-README_TEST_COUNT = 60363
-README_FILE_COUNT = 1472
+README_TEST_COUNT = 60430
+README_FILE_COUNT = 1473
 
 # Forward guards for the next landing. MECH_NUM=920 is THIS run's landed
 # mechanism; NEXT_NUM=921 stays forward.
