@@ -21352,6 +21352,7 @@ jessica_conditt:
   current_publication: Engadget
   publication_owner: Yahoo/Apollo
   beat: consumer tech, gaming, wearables
+  mechanism_ids: [923]
   career_history:
   - employer: Engadget
     role: Senior Reporter
@@ -21366,6 +21367,87 @@ jessica_conditt:
   source_urls:
   - https://Www.engadget.com/2254194/apple-watch-new-audio-intelligence-enables-a-real-life-conversation-rewind/
   - https://www.engadget.com/gaming/playstation/engadget-podcast-ps5-pro-hands-on-and-metas-wild-orion-ar-glasses-133029580.html?src=rss&rand=43
+
+  competitor_coverage:
+    type_b_1153_jessica_conditt_engadget_meta_wearables_bounded_absence_temporal_extension_m674_oct02_2pm:
+      mechanism_id: 923
+      discovery_date: '2026-10-02'
+      iteration: 1153
+      iteration_type: B
+      iteration_time: '2026-10-02 02:00 PM PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: engadget
+      journalist: 'Jessica Conditt (Engadget senior reporter; beats consumer tech, gaming, wearables; m674 subject)'
+      block_key: type_b_1153_jessica_conditt_engadget_meta_wearables_bounded_absence_temporal_extension_m674_oct02_2pm
+      key_design_note: 'Colon-form key only per #715; carries no numeric mechanism-id substring by designed keying (1153 is the iteration number, not the mechanism id; m674 is the carried prior mechanism).'
+      test_file: tests/test_type_b_1153_jessica_conditt_engadget_meta_wearables_bounded_absence_temporal_extension_m674_oct02_2pm.py
+      window: '1150-1154 window FOURTH leg (D #1150 -> E #1151 -> A #1152 -> B #1153 -> C #1154)'
+      type: 'B - Journalist Cross-Entity Tracking - Bounded-Absence Temporal Extension of the m674 Composition-Effect Refinement (Conditt Meta wearables absence re-checked two weeks after the Apple Audio Intelligence adversarial arm)'
+      pattern: 'Same-writer, same-outlet temporal extension of a bounded-absence arm. Two weeks after m674 (Type B #733) landed Conditt''s adversarial always-listening register on Apple Audio Intelligence (-0.55 MANUAL ILLUSTRATIVE: ''fabulous piece of spy equipment''; homepage dek ''spyware feature'' variant), the Meta arm REMAINS a bounded absence: zero written Meta wearables coverage by Conditt surfaced across her Muck Rack article list, her Engadget author page, and Engadget''s smart-glasses tag page during the Sep-23/24 Meta Connect 2026 launch window, the year''s biggest Meta wearables news peg. Connect-week smart-glasses bylines at Engadget went to Karissa Bell, Cherlynn Low, Mariella Moon, Kris Holt and others - beat assignment in action, exactly the composition effect m674 theorized. The absence is therefore assignment-consistent, not entity-animus evidence: Conditt''s register is reporter-portable (adversarial on Apple) and she applies snark to Meta-owned properties too (Instagram logo ''corporate ragebait'' piece), so the missing Meta arm reads as who-covers-what, not who-goes-easy-on-whom.'
+      apple_arm:
+        carried_per_807: true
+        carried_from: 'm674 (type_b_733, Sep 14 2026); scores unchanged, no re-scoring this run'
+        title: 'Apple Watch''s New Audio Intelligence Enables A Real-Life Conversation Rewind'
+        date: '2026-09-09'
+        publication: engadget
+        framing_notes: 'Adversarial always-listening register on Apple''s Audio Intelligence (Siri Recap / Live Rewind on Watch Series 12): ''Apple Watch, as it turns out, is a fabulous piece of spy equipment''; homepage dek variant ''Apple says its taking privacy concerns seriously with its new spyware feature for Watch Series 12'' vs ''transcription feature'' on the article page. Byline ''By Jessica Conditt'' confirmed via Engadget homepage listings. Carried characterization per #807.'
+        source_url: https://Www.engadget.com/2254194/apple-watch-new-audio-intelligence-enables-a-real-life-conversation-rewind/
+        evidence_tier: 'excerpt-tier per #733 (search-excerpt-bounded; byline via Engadget homepage listings; Muck Rack verbatim re-confirmation this run)'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+      meta_arm:
+        register: 'bounded absence (temporal extension of the m674 iteration-492 bounded absence)'
+        recheck_date: '2026-10-02'
+        finding: 'Zero written Meta wearables coverage by Jessica Conditt surfaced in bounded re-checks: (1) her Muck Rack article list (gaming beats: Playdate Season 3, Turtle Beach reviews, GTA 6 extended look, Steam Frame, Valve; the Sep-9 Apple Audio Intelligence piece; Pixel 11 Pro Fold; Instagram logo roast - no Meta glasses items); (2) her Engadget author page (same beat mix, no Meta wearables); (3) Engadget''s smart-glasses tag page for the Sep-23-Oct-2 window (bylines: Yoni Yardeni, Gabriela Vatu, Matt Tate, Lawrence Bonk, Karissa Bell, Steve Dent, Devindra Hardawar, Mariella Moon, Ian Carlos Campbell, Alec Hively, Max Miller, Billy Steele, Kris Holt, Daniel Cooper, Anna Washenko, Ben Stegner, Sam Rutherford, James Trew, Deven McClure, Nathan Ingraham - zero Conditt bylines on any smart-glasses item). The Connect-week Ray-Ban Meta Audio piece (''A $349 alternative to "pervert glasses"'' dek) rendered with NO byline in the text fetch - byline unconfirmable, NOT attributed to Conditt.'
+        connect_week_routing: 'Engadget''s Sep-23/24 Meta Connect smart-glasses coverage was routed to Bell (investigative/adversarial register), Low (hands-on zero-alarm register, m668), Moon (news), Holt (policy: ''Newsom vetoes smart glasses privacy bill'') - the composition effect m674 theorized, observed live during the year''s biggest Meta wearables peg.'
+        source_urls:
+        - https://muckrack.com/jessica-conditt/articles
+        - https://www.engadget.com/tag/smart%20glasses/page/2/
+        - https://www.engadget.com/2267212/meta-announces-ray-ban-meta-audio-its-first-smart-glasses-without-a-camera/
+        evidence_tier: 'bounded search-result absence per #503 (Muck Rack full-list read + author page + tag page; 0 page-view-verified zeros claimed); the Audio-piece byline gap is a text-fetch limitation, not a coverage claim'
+        tone_MANUAL_ILLUSTRATIVE: null
+        tone_note: 'Absence is not scored. No illustrative score is assigned to a bounded absence; the Apple arm score is carried unchanged.'
+      instagram_snark_arm:
+        note: 'Conditt''s Meta-tagged bylines are NOT wearables coverage: the Instagram logo roast (''Use this space to roast the new Instagram logo''; ''we''ve concluded that it might possibly be corporate ragebait'') applies playful-adversarial snark to a Meta-owned property. No verbatim article URL surfaced in this run''s Full-URL listings, so no URL is cited (no invented URLs per the verbatim rule). The datum matters because it rules out the entity-softness reading of the bounded absence: Conditt is not soft on Meta properties per se; she is simply not assigned Meta wearables.'
+        register: 'playful-adversarial snark (logo/design register, not privacy register)'
+        tone_MANUAL_ILLUSTRATIVE: null
+      novelty: 'FIRST dedicated mechanism-id-sequence Type B mechanism on Jessica Conditt in journalists.yaml (m674 lives in competitor-coverage-research.yaml). Zero test_type_b_1153 files on disk (glob); no "Type B #1153" in git log (--grep); max numeric mechanism_id 922 in profiles/ pre-commit; zero numeric 923 mechanism_id keys in profiles/ pre-commit; zero underscore-form and dash-form 923 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; zero jessica_conditt type_b_1153 competitor_coverage block pre-commit; the three novel URLs (muckrack.com/jessica-conditt/articles; engadget.com/tag/smart glasses/page/2/; engadget.com/2267212/meta-announces-ray-ban-meta-audio-its-first-smart-glasses-without-a-camera/) zero-hit repo-wide pre-commit (git grep -F); carried Apple URL in-corpus per m674; FORTY-SEVENTH member-claim form absent repo-wide pre-commit; THIRTY-SIXTH and THIRTY-SEVENTH direction forms absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '4 browser.search query sets + 3 browser.open, excerpt/byline-bounded per #503: (1) Conditt + Meta Ray-Ban Meta Audio Sep 2026 (SELECTED - surfaced the engadget.com/2267212 Audio piece + #733 commit context); (2) Conditt + Apple Audio Intelligence always-listening Sep 2026 (SELECTED - Muck Rack verbatim re-confirmation of the carried Apple arm quotes); (3) engadget Audio-piece author hunt (REJECTED - no byline surfaced in excerpts); (4) Conditt + Meta Connect 2026 Sep 24 (SELECTED - NYT Cooking relay + misryoum preview + biztoc liveblog relay); browser.open on the Audio piece (byline NOT rendered - unconfirmable, honestly recorded), Muck Rack articles list (full beat mix read, zero Meta wearables), smart-glasses tag page (full byline roster read, zero Conditt). Pre-commit novelty greps per #715. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. The new arm is a bounded absence and is NOT scored (absence is not a register). Carried Apple arm -0.55 unchanged per #807. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. Engine NOT run. verdict directionally_supported_not_proven (for the composition-effect refinement, sustained not proven). no_analysis_json_update true. NOT artifact-grade. n=1 writer, one carried adversarial arm + one bounded-absence arm; hypothesis-sustaining only. Correlation is not causation.'
+      falsification_family: 'NOT a falsification-family member: a bounded-absence temporal extension tests no uniform payer-softening prediction (no AI-lab licensing deal in corpus at Engadget/Yahoo), and the composition-effect refinement it sustains is a REFINEMENT of mechanism #150, not a prediction under test. Falsification ledger holds at 46 (FORTY-SIXTH present in profiles/the-verge.yaml m907 x2; forty-seventh member-claim form absent repo-wide; thirty-sixth/thirty-seventh direction forms absent repo-wide; THIRTY-FIFTH present m915).'
+      falsification_ledger: 46
+      confounders:
+      - level: STRONG
+        classification: 'bounded-absence'
+        note: 'Bounded absence is not a proven zero: assignment-vs-choice is unobservable from bylines; Conditt may have pitched Meta wearables pieces that were assigned elsewhere.'
+      - level: STRONG
+        classification: 'byline-gap'
+        note: 'The Connect-week Ray-Ban Meta Audio piece rendered with no byline in the text fetch; if Conditt wrote it, the bounded-absence claim fails. Byline unconfirmable, honestly recorded as a limitation, not resolved by assumption.'
+      - level: STRONG
+        classification: 'beat'
+        note: 'Conditt is gaming-primary (Playdate, Turtle Beach, GTA 6, Steam Frame); her Apple Audio Intelligence piece was event-day news, not beat work - the Meta absence may be beat-distance, not entity-distance.'
+      - level: MODERATE
+        classification: 'carried-arm'
+        note: 'Apple -0.55 inherits #733''s excerpt-bounded characterization; Muck Rack re-confirmed the verbatim quotes this run but no page read was performed.'
+      - level: MODERATE
+        classification: 'temporal'
+        note: 'Two-week re-check window (Sep 9 Apple piece to Oct 2 re-check); the Connect peg (Sep 23/24) is the strongest test and it postdates the Apple arm by two weeks.'
+      - level: WEAK
+        classification: 'sample'
+        note: 'n=1 writer; single-writer variance.'
+      - level: WEAK
+        classification: 'outlet'
+        note: 'Yahoo/Apollo ownership of Engadget is outlet context, not a tested incentive at the writer level.'
+      counterevidence:
+      - 'Conditt''s Instagram-logo ''corporate ragebait'' snark shows she is not soft on Meta-owned properties - the bounded absence cannot be read as entity favoritism.'
+      - 'Karissa Bell applies an adversarial register to Meta at the same outlet (Connect-week Muse gadgets piece) - outlet-level Meta coverage is not uniformly soft.'
+      - 'Cherlynn Low''s zero-alarm register is reporter-portable across Meta, Snap and Apple (m668) - registers vary by reporter, consistent with the composition reading.'
+      - 'The Audio piece''s ''pervert glasses'' dek shows Engadget attaching stigma vocabulary to a Meta product - if Conditt wrote it, the absence claim fails; either way the outlet is not softening Meta.'
+      cross_references:
+      - 'm674 (competitor-coverage-research.yaml): the carried Apple adversarial arm and the original bounded-absence Meta arm (iteration-492)'
+      - 'mechanism #150: the beat-assignment routing claim m674 refines'
+      - 'm668 (Type B #723): Low''s zero-alarm cross-entity control at the same outlet'
+      - 'm677/m887 (jason_aten): the Inc. three-pole gradient - same always-listening discourse, different outlet'
 
 jason_aten:
   name: Jason Aten
