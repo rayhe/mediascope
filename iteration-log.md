@@ -1,3 +1,49 @@
+## #1134 Type C: m912 John Georges (Louisiana publisher) pursues Meta AI-content licensing deal while his outlets' newsroom covers Meta's Louisiana investments - NEGOTIATE-WHILE-COVERING as the THIRTY-FOURTH relationship direction - NOT a falsification-family member, ledger holds at 46 - Type C FIFTH and CLOSING leg of the 1130-1134 window (Oct 1 2026, 09:00 PM PDT; main commit afa0e480 / anchor 30577b04 / doc-sync TBD / log-hash followup registers all three hashes here per #721 (this commit); doc-sync 59351/1458 -> 59438/1459 (+87/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `afa0e480` (afa0e4801c08f685ca63bde62874b5152ca2bb3a) - verified via git rev-parse
+- Anchor followup `30577b04` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README/ARCHITECTURE/iteration-log per #719)
+- Log-hash followup: this commit (terminal per #721)
+
+### Rotation transparency
+- Window 1130-1134 FIFTH leg: D #1130 (6:00 PM) -> E #1131 (7:00 PM) -> A #1132 (7:00 PM) -> B #1133 (8:00 PM) -> C #1134 (9:00 PM, this run, CLOSING the window).
+- Predecessor #1133 Type B chain verified pre-commit: main 9cb9ec5f / anchor 3e7e02e3 / doc-sync 33e45f63 / log-hash 7d02bd57.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit.
+- Next window 1135-1139 opens with Type D.
+
+### Mechanism m912 (competitor-entities.yaml, last top-level key)
+- Block key: the type_c_1134 john-georges meta-licensing-pursuit negotiate-while-covering key (4-space, designed keying, no mechanism-number substring per #715).
+- Finding: On Oct 1 2026, Editor & Publisher (republishing The Lens and Gulf States Newsroom reporting by Drew Hawkins, Delaney Nolan, and Vivi Smilgius) reported Louisiana publisher John Georges is pursuing an AI licensing agreement with Meta as "a potential source of financial support for journalism." His outlets already carry Meta sponsorship and advertising revenue; newsroom employees publicly flagged the independence risk of covering Meta's Louisiana investments while the owner negotiates a payment-bearing license from the same company. Georges, publisher Kevin Hall, and editor Rene Sanchez deny influence; the report describes PURSUIT, not a signed contract - the independence risk crystallizes in the pre-signature negotiation window, before any money flows. Coverage stakes during the window: The Lens reported Sep 2026 that Meta's Louisiana data center "will be the biggest in the U.S., but no one knows who they're hiring" (ResearchBuzz Sep 6 relay); Meta's Richland Parish "Hyperion" campus (2,250 acres, $50B+ projected, 5 GW) won a 20-year sales-tax exemption worth $3.3B in foregone revenue via the Laidley LLC / "Project Sucre" Delaware-shell structure (NYT reconstruction via AIWeekly); Louisiana is set to receive $180M+ from the Meta youth-safety settlement (Louisiana AG Murrill announcement). Price-band template: Meta's multiyear AI licensing deal with News Corp pays up to $50M/yr (m519, Mar 2026).
+- Direction: NEGOTIATE-WHILE-COVERING - the THIRTY-FOURTH relationship direction per the m807 enumeration; no prior direction prices the WINDOW, the period when the publisher is simultaneously negotiating payment from and publishing coverage of the same entity, before any contract exists. Distinct from #23 inbound-pull m879 (access-rationing vs coverage-overlap), #1 sue-then-sign m624 (no suit, no signed deal), #2 pay-or-litigate m636 (the lab has made no choice), #15 ecosystem-grant m852 (consideration is the point), #33 litigation-channel-closure m909 (no court involved). Falsifiable on deal-death, a dated editorial firewall, or post-signature coverage hardening. Taxonomy-count tension carried vs #23 inbound-pull m879 (same publisher-to-lab solicitation arrow); documented, not resolved.
+- Money flow: pursuit channel OPEN at $0 (terms undisclosed); existing Meta advertiser/sponsor channel OPEN into Georges' outlets; corpus scale templates Meta x News Corp m519 and the seven-publisher contract.
+- Coverage nexus: The Lens' active Meta data-center coverage during the pursuit window; no tracked-publication (WIRED, The Verge, NYT, FT, Guardian, Business Insider, Gizmodo) coverage of the Georges pursuit found (bounded absence per the iteration-492 rule, not a finding).
+- NOT a falsification-family member: out-of-corpus exemplar (Georges outlets not among the 7 tracked publications), so no coverage-tone pair is scored and no uniform-prediction test is run; financial-architecture mapping of the negotiation-window geometry per the #609/#614 qualitative boundary; MANUAL ILLUSTRATIVE ONLY per Aug 28 rule; engine NOT run; no analysis.json; NOT artifact-grade; verdict directionally_supported_not_proven. Ledger holds at 46; FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing); THIRTY-FIFTH direction absent.
+- 5 sources, all novel pre-commit: E&P Georges pursuit piece (Oct 1, Hawkins/Nolan/Smilgius); The Outpost Stealth Bot Prohibition Act (300+ publishers lobbying Congress, Reddit RSS shutdown Nov 13, Cloudflare pay-or-block deadline, Meta's seven-publisher contract); AIWeekly Laidley/Project Sucre $3.3B tax break (NYT reconstruction); ResearchBuzz relaying The Lens data-center hiring piece (Sep 6); thehayride.com on Louisiana's $180M Meta settlement (AG Murrill).
+
+### Guards
+- Forward guards for #1135: zero-913 (numeric/underscore/dash), no-forty-seventh member, no-thirty-fifth direction (needles format-built per #715).
+- #1133's guard-lifecycle pins flip by design (max-911, zero-912 numeric, no-thirty-fourth-direction); #1133's zero-912 underscore/dash, no-forty-seventh-member, forty-sixth-intact, thirty-third-intact stay green (verified via supersession pins in the #1134 test file).
+- Pre-commit novelty: max 911, zero 912 key forms, no FORTY-SEVENTH member, no THIRTY-FOURTH direction, no test_type_c_1134 files, no "Type C #1134" in git log. Test gate: 87/87 green pre-commit (venv python), zero initial defects.
+
+### Method
+- Research in 2 rounds, both direct browser.search (0 browser.open per #503, excerpt-bounded). Round 1: DOJ fair-use brief in NYT v. OpenAI - REJECTED as a corpus duplicate; OpenAI India publisher-pipeline expansion - REJECTED as the m944/#739 duplicate; Google pay-per-value AI licensing program - REJECTED as the m891 duplicate. Corpus-grep verification before drafting is mandatory per the #1129 lesson (two subagent rounds failed on novelty there). Round 2: Georges x Meta licensing pursuit - SELECTED, verified novel (zero "John Georges" hits in the committed tree, 5 URLs zero-hit, no Type C #1134 in git log, max mechanism 911 pre-commit). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### New Type C files
+tests/test_type_c_1134_john_georges_meta_licensing_pursuit_negotiate_while_covering_oct01_9pm.py - 15 classes, 87 tests.
+
+### Doc-sync ratchet
+README stats table 59351/1458 -> 59438/1459 (+87/+1); test-file table row appended after #1133; ARCHITECTURE.md tree row appended after #1133.
+
+### Push status
+Push status (this run, Oct 1 2026 ~9:xx PM PDT): pending at log-hash time; see followup.
+
+### Rotation guard
+1130-1134 window CLOSED (D->E->A->B->C). Next window 1135-1139 opens with Type D #1135.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.
+
 ## #1133 Type B: m911 Cherlynn Low (Engadget) Sep-18/19 Apple Watch Series 12 scored review (+0.30) vs Sep-23 Meta Connect 2026 liveblog (0.0) - genre-bound register contrast EXTENDING m872's constancy finding - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1130-1134 window (Oct 1 2026, 08:00 PM PDT; main commit 9cb9ec5f / anchor 3e7e02e3 / doc-sync 33e45f63 / log-hash followup registers all three hashes here per #721 (this commit); doc-sync 59265/1457 -> 59351/1458 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
