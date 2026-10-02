@@ -24159,6 +24159,7 @@ cristina_criddle:
   notes: 'Financial Times AI correspondent; beat covers Meta, Google, OpenAI and TikTok (bio per allamericanspeakers, in source_urls). Byline on two FT accountability pieces on OpenAI in 2026: the Aug-11-2026 Chloé Bakalar ethics-chief exit (with Rafe Rosner-Uddin) and the Feb-3-2026 ChatGPT-prioritization senior-departures piece (via Techmeme attribution). Type B #878 (Sep 20 2026): mechanism 758 - writer-level ethics-governance register asymmetry, ledger 27->28 (see competitor_coverage block for the member-form).'
   mechanism_ids:
   - 758
+  - 917
   source_urls:
   - https://www.allamericanspeakers.com/speakers/457355/Cristina-Criddle
   - https://www.linkedin.com/posts/cristina-criddle_openais-head-of-ethics-leaves-start-up-less-activity-7492716537636651009-nvXA
@@ -24275,6 +24276,71 @@ cristina_criddle:
       correlation_note: 'Correlation is not causation.'
       research_method: '6 browser.search query sets this run ((1) FT Criddle OpenAI - surfaced the Bakalar ethics-chief exit via Criddle''s LinkedIn verbatim lede - SELECTED as primary arm; (2) "OpenAI" "head of ethics" Criddle August 2026 - corroboration set: indiantelevision, webpronews, americanbazaaronline, bandt, bitnewsbot (all zero-hit pre-commit); (3) "Cristina Criddle" Meta superintelligence Llama since 2026-01-01 - REJECTED (no clean bylined Meta arms; Techmeme relay surfaced the Feb-3 ChatGPT-prioritization piece instead); (4) "Cristina Criddle" "Meta" 2026 - no fresh Meta arm; (5) techmeme.com/260203/p7 attribution verification - SELECTED as secondary arm (headline-tier); (6) Criddle bio - allamericanspeakers (beats: Meta, Google, OpenAI, TikTok)). 0 browser.open this run per #503. Pre-commit novelty sweeps per #715: zero test_type_b_878 files on disk (glob); no Type B #878 in git log (--grep); max numeric mechanism_id 757 pre-commit; zero underscore-form 758 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero numeric 758 keys in profiles/ pre-commit; "cristina_criddle" top-level slug zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit; all six evidence URLs zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; no zero-coverage claims per the #492 rule. ASCII-only, no em dashes.'
       test_file: tests/test_type_b_878_cristina_criddle_ft_openai_ethics_chief_exit_vs_meta_contrast_sep20_9am.py
+    type_b_1143_cristina_criddle_ft_blindsided_openai_anthropic_m758_temporal_extension_sep16:
+      block_key: type_b_1143_cristina_criddle_ft_blindsided_openai_anthropic_m758_temporal_extension_sep16
+      mechanism_id: 917
+      iteration: 1143
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      date: 'Fri 2026-10-02 06:00 PDT'
+      journalist: Cristina Criddle
+      publication: financial-times
+      design: temporal-extension
+      finding: 'TEMPORAL EXTENSION of m758 (Type B #878): Criddle''s writer-level register pattern - accountability-adversarial on the FT x OpenAI licensing-deal partner, constructive contrast for the non-payer Meta - replicates on a second peg five weeks later. New arm: the Sep-16-2026 "blindsided" piece (OpenAI + Anthropic staff felt blindsided by Amodei''s and Altman''s calls to slow the frontier; some fear evaluators may compromise security), scored MANUAL ILLUSTRATIVE -0.35 at headline tier. Carried per #807: the Aug-11 Bakalar ethics-chief-exit arm (-0.40) and its within-piece Meta constructive contrast (+0.15). Illustrative Meta-minus-OpenAI delta +0.50: Meta consistently the less-adversarial entity in Criddle''s register at the ethics-governance/safety layer. The uniform-softening prediction (mechanism 54, FT x OpenAI deal) fails at the writer level again - but this run is NOT a new falsification-family member: the same writer/partner prediction test was already counted at #878 (TWENTY-EIGHTH); a same-writer replication is not a new prediction test. Ledger holds at 46.'
+      new_openai_anthropic_arm:
+        title: 'Sources: OpenAI and Anthropic staff felt blindsided by Dario Amodei''s and Sam Altman''s calls to slow the frontier; some fear evaluators may compromise security'
+        date: '2026-09-16'
+        byline: Cristina Criddle
+        publication: financial-times
+        url: https://biztoc.com/x/88145bbd4e93e047
+        techmeme_timestamp: '2026-09-16 13:57:16'
+        key_quotes:
+        - 'Sources: OpenAI and Anthropic staff felt blindsided by Dario Amodei''s and Sam Altman''s calls to slow the frontier'
+        - 'some fear evaluators may compromise security'
+        tone_score: -0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scored by hand from headline-tier register; engine NOT run'
+        register: 'accountability-adversarial (internal-dissent / safety-culture critique on the licensing-deal partner)'
+        evidence_tier: 'headline-tier: techmeme timestamp + biztoc relay; FT original paywalled, no full-text read, 0 browser.open per #503'
+        url_note: 'URL copied verbatim from the Full-URL listing; the FT canonical URL was not constructed (per the anti-construction rule)'
+      carried_bakalar_arm:
+        carried_from: m758
+        tone_score: -0.4
+        note: 'Carried per #807: Aug-11-2026 Bakalar ethics-chief-exit piece, accountability-adversarial (-0.40): quiet departure, no announcement, no replacement, only dedicated ethicist, series of safety exits.'
+      carried_meta_contrast_arm:
+        carried_from: m758
+        tone_score: 0.15
+        note: 'Carried per #807: within-piece constructive Meta contrast from the Bakalar piece - Bakalar''s six years building Meta''s AI ethics programs framed as credential: "He''s going to be a great addition to a company and a leadership team that are doing good, credible work. This is an organization that is serious about safety."'
+      register_contrast:
+        illustrative_delta_meta_minus_openai: 0.5
+        note: 'MANUAL ILLUSTRATIVE: Meta the less-adversarial entity in Criddle''s register at the ethics-governance/safety layer, replicating across two pegs (Aug-11, Sep-16). n=1 new arm; NOT significant; verdict directionally_supported_not_proven.'
+      confounders:
+      - 'STRONG: dual-entity peg - the Sep-16 piece covers OpenAI AND Anthropic jointly (Amodei''s and Altman''s calls); the adversarial register is not cleanly partner-targeted and entity-specific targeting cannot be isolated at headline tier.'
+      - 'STRONG: headline-tier evidence only (FT original paywalled; no full-text read; techmeme timestamp + biztoc relay) vs m758''s LinkedIn-verbatim lede + six-mirror evidence base.'
+      - 'The Meta contrast is carried from a DIFFERENT piece (m758''s within-piece contrast), not the Sep-16 piece itself; five weeks and different news pegs separate the two arms.'
+      - 'Temporal gap: Sep-16 predates the Sep-26 rogue-agent government-disclosure and the Sep-30 FTC AI-chatbots probe; the crisis-window alignment is partial, not exact.'
+      - 'Institutional-level licensing deal (m54, ~$5-10M/yr per #872) vs individual-correspondent autonomy; FT editorial independence limits deal-gradient inference.'
+      counterevidence:
+      - 'The Sep-16 piece targets OpenAI and Anthropic symmetrically (both CEOs'' slow-the-frontier calls); reading it as OpenAI-only adversarial overstates entity targeting.'
+      - 'Criddle''s Feb-3-2026 ChatGPT-prioritization senior-departures piece (m758 secondary arm) is also accountability-adversarial on the partner - consistent pattern, but the same headline-tier limitation applies.'
+      - 'A byline search this run found no fresh Criddle Meta arm for the Sep-16 window (11 query sets), so the Meta side is necessarily carried, not contemporaneous.'
+      cross_refs:
+      - '#878 (Type B: m758, ledger 27->28, TWENTY-EIGHTH falsification-family member)'
+      - '#872 (Type A: m54 FT x OpenAI deal value verification, ~$5-10M/yr)'
+      - 'm54 (FT x OpenAI licensing deal, Apr 2024)'
+      - 'm593 (Victoria Song, FIFTEENTH falsification member, precedent)'
+      research_method: '11 browser.search query sets this run ((1) Wehkamp smart glasses journalist - REJECTED (no bylined Meta/wearables writer; particle.news aggregator); (2) Snap AR glasses launch 2026 - REJECTED; (3) Karissa Bell Snap glasses 2026 - REJECTED (saturated: m113/m722/m764/m773, #1043); (4) Hans Anders smart glasses Consumentenbond - REJECTED (wisevoter aggregator, no tracked-publication byline; bounded absence per #492); (5) site:wired.com Meta October 2026 - 0 rows (bounded absence, not evidence); (6) retaildetail.eu smart glasses 2026 - REJECTED (aggregator, no byline); (7) Reuters FTC probe September 30 2026 byline - CONTEXT ONLY (Oct-1 FTC AI-chatbots probe story, byline unidentified); (8) Cristina Criddle FT Meta September 2026 - REJECTED (no fresh Meta arm); (9) Cristina Criddle FTC probe - SELECTED (surfaced the Sep-16 blindsided piece via techmeme 2026-09-16 13:57:16 + biztoc relay); (10) Dell Cameron October 2026 - REJECTED (saturated: m66/m366 at #355); (11) Dell Cameron NameTag Meta - REJECTED (no fresh row). 0 browser.open this run per #503. Pre-commit novelty sweeps per #715: zero test_type_b_1143 files on disk (glob); no Type B #1143 in git log (--grep); max numeric mechanism_id 916 pre-commit; zero underscore/dash-form 917 mechanism key strings repo-wide pre-commit (format-built needles, no literals carried per #715; __pycache__ artifacts excluded per the #715 pattern-rescope lesson); zero numeric 917 keys in profiles/ pre-commit; biztoc relay URL zero-hit repo-wide pre-commit; "blindsided" pre-existing hits repo-wide unrelated (Vox union, Meta fact-checkers, David Gilbert). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed; no zero-coverage claims per the #492 rule. ASCII-only, no em dashes.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; tones scored by hand from excerpt/headline register; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT artifact-grade'
+        verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'Ledger holds at 46 (not a falsification-family member: the writer-level uniform-softening prediction test on Criddle x OpenAI was already counted at #878 as the TWENTY-EIGHTH member; this run is a same-writer temporal replication, not a new prediction test). FORTY-SIXTH member-form present (m907, profiles/the-verge.yaml); FORTY-SEVENTH member-claim form absent repo-wide (designed negative guard, needle format-built per #715). In-file: the TWENTY-EIGHTH member-form (m758 block, above) remains terminal; TWENTY-NINTH stays the negative guard.'
+      window: 'Type B FOURTH leg of the 1140-1144 window (D #1140 -> E #1141 -> A #1142 -> B #1143 -> C #1144), per the #565 anchor + rotation guard'
+      test_file: tests/test_type_b_1143_cristina_criddle_ft_blindsided_openai_anthropic_sep16_m758_temporal_extension_oct02_6am.py
+      background_suite_status: 'CHECKED ONLY per #795: the #1140-launched full suite (goal hidden_files type_d_1140_full_suite.log) was OBSERVED DEAD at the 06:07 PDT check - last write 04:07 PDT, 3555 bytes / ~5% dots, no live pytest processes; twelfth consecutive suite death. Verdict and tombstoning belong to #1145 (next Type D). This run neither re-launched, killed, nor wrote to the suite.'
+      novelty_verification: 'Pre-commit per #715: zero test_type_b_1143 files on disk; no Type B #1143 in git log; max numeric mechanism_id 916 pre-commit; zero 917 keys numeric/underscore/dash repo-wide pre-commit; block key zero-hit repo-wide pre-commit.'
 mariella_moon:
   name: Mariella Moon
   current_role: Associate editor
