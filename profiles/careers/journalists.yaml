@@ -25951,3 +25951,99 @@ reece_rogers:
       verification:
         yaml_parse_clean: true
         ascii_only: true
+
+stevie_bonifield:
+  name: Stevie Bonifield
+  current_role: News writer
+  current_publication: The Verge
+  publication_owner: Vox Media
+  beat: [smart glasses, wearables, AI hardware, consumer tech]
+  career_history: 'Stevie Bonifield writes news and reviews on hardware, gaming, and AI (per the WeSearch bio excerpt, read this run); earlier bylines include Meta Ray-Ban Display EMG/teleprompter and pedestrian-navigation news (Jan 2026).'
+  smart_glasses_coverage: 'Meta Connect 2026: The 7 biggest announcements (Sep 24 2026, The Verge, WeSearch digest excerpt-tier, mechanism 914 Meta arm); Gucci-branded Google smart glasses partnership news (Apr 16 2026, The Verge, byline confirmed, mechanism 914 Google arm); Samsung Galaxy Glasses leak (Apr 2026, relay-attested).'
+  notes: 'Type B #1138 (Oct 2 2026): mechanism 914 within-journalist cross-entity register comparison - FIRST dedicated Type B mechanism on Stevie Bonifield in journalists.yaml (zero stevie_bonifield YAML key pre-commit, per the #643 convention). Question: does the same Verge news writer who recaps Meta''s camera/audio glasses announcements product-positively apply a different register to Google''s luxury-fashion glasses play, and how is Meta framed inside the competitor piece? META ARM (Sep 24 2026, new, first corpus appearance): "Meta Connect 2026: The 7 biggest announcements" - product-positive event recap (VR Glasses "the star of the event", "five times lighter than Meta Quest 3", tethered puck); zero privacy vocabulary in the digest excerpt despite camera/audio glasses on the announcements list; MANUAL ILLUSTRATIVE +0.10. GOOGLE ARM (Apr 16 2026, new, first corpus appearance): "Gucci-branded Google smart glasses are coming next year" - fashion-partnership news framing Google as the stylish contender ("stylish enough people might actually want to wear them", "might help Google compete with the Meta Ray-Ban line-up"); relays Spiegel''s brand diss "the Meta brand, I think, is not something people want anywhere near their face" as editorial color; MANUAL ILLUSTRATIVE +0.15. Illustrative delta (Google minus Meta) +0.05: near-null at the TONE level - the finding sits at the QUOTE-INCLUSION level, not tone: Bonifield platforms a rival CEO''s anti-Meta brand quote inside the Google piece, EXTENDING m150''s Spiegel-quote-inclusion observation (Cherlynn Low, Engadget, amplifying Spiegel''s "copycats up north" dig) to a second writer and a second outlet (The Verge). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule.'
+  mechanism_ids: [914]
+  competitor_coverage:
+    type_b_1138_stevie_bonifield_verge_meta_connect_recap_vs_google_gucci_glasses_sep2026:
+      iteration: 1138
+      mechanism_id: 914
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-02 01:00 PDT'
+      block_key: type_b_1138_stevie_bonifield_verge_meta_connect_recap_vs_google_gucci_glasses_sep2026
+      test_file: tests/test_type_b_1138_stevie_bonifield_verge_meta_connect_recap_vs_google_gucci_glasses_oct02_1am.py
+      author: Kit (with Ray)
+      journalist: Stevie Bonifield
+      publication: theverge
+      window: '1135-1139 window FOURTH leg (D #1135 -> E #1136 -> A #1137 -> B #1138 -> C #1139)'
+      mechanism_name: 'Stevie Bonifield (The Verge) Sep-24 Meta Connect 2026 product-positive recap (+0.10) vs Apr-16 Google Gucci glasses fashion-partnership news (+0.15) - competitive quote-inclusion: Spiegel anti-Meta brand diss platformed in the Google arm, EXTENDING m150 to a second writer/outlet - NOT a falsification-family member, ledger holds at 46'
+      novelty: 'FIRST dedicated Type B mechanism on Stevie Bonifield in journalists.yaml (zero stevie_bonifield YAML key pre-commit, per the #643 convention). zero test_type_b_1138 files on disk (glob); no "Type B #1138" in git log (--grep); max numeric mechanism_id 913 in profiles/ pre-commit (atlantic.yaml m913); zero numeric/underscore/dash 914 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded; iteration-form type_c_914_ block keys in competitor-entities.yaml are NOT mechanism-form needles); block key zero-hit repo-wide pre-commit (git grep -F); the two novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim search-result Full-URL listings; canonical theverge.com URLs not recovered verbatim - digest/mirror URLs used with disclosure, excerpt-tier per #503). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      design: 'Type B journalist cross-entity tracking: The Verge news writer Stevie Bonifield, same writer, same outlet, both smart glasses, cross-entity Meta vs Google. The pair tests whether the writer''s Meta register (product-positive event recap, zero privacy interrogation) differs from his Google register (fashion-partnership news positioning Google as the stylish contender to the Meta Ray-Ban line-up), and - the analytical hook - how Meta is FRAMED inside the competitor piece: the Google arm platforms Snap CEO Evan Spiegel''s anti-Meta brand diss ("the Meta brand, I think, is not something people want anywhere near their face") as editorial color. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      new_meta_arm:
+        title: 'Meta Connect 2026: The 7 biggest announcements'
+        url: https://wesearch.press/s/meta-connect-2026-the-7-biggest-announcements-93c0ec36
+        url_note: 'WeSearch digest of the canonical theverge.com piece; byline "Stevie Bonifield, Sep 24, 2026" confirmed in the listing; canonical URL not recovered verbatim this run - digest URL used with disclosure, excerpt-tier per #503'
+        date: 'Sep 24 2026'
+        byline: 'Stevie Bonifield (byline confirmed in the WeSearch listing: "Stevie Bonifield, Sep 24, 2026")'
+        publication: The Verge
+        key_quotes:
+        - '"The star of the event was the new Meta VR Glasses, which pack virtual reality tech into a lightweight smart glasses-style frame with a tethered puck"'
+        - '"five times lighter than Meta Quest 3"'
+        - '"Stevie started out at Laptop Mag writing news and reviews on hardware, gaming, and AI" (listing bio)'
+        register_notes: 'Product-positive event recap: the VR Glasses lead as "the star of the event" with weight-form-factor praise; camera/audio glasses announcements relayed as product facts. Zero privacy/surveillance vocabulary in the digest excerpt despite camera-equipped and always-listening audio glasses on the announcements list.'
+        tone_score: 0.1
+        tone_basis: 'MANUAL ILLUSTRATIVE, excerpt-tier this run (0 browser.open per #503); delegated + parent research, excerpt-bounded'
+      new_google_arm:
+        title: 'Gucci-branded Google smart glasses are coming next year'
+        url: https://technewstube.com/theverge/1824006/gucci-branded-google-smart-glasses-next-year/
+        url_note: 'Tech News Tube mirror of the canonical theverge.com piece; byline "By Stevie Bonifield Apr 16, 2026" confirmed in the listing; canonical URL not recovered verbatim this run - mirror URL used with disclosure, relay_excerpt_bounded per #503'
+        date: 'Apr 16 2026'
+        byline: 'Stevie Bonifield (byline confirmed in the listing: "By Stevie Bonifield Apr 16, 2026")'
+        publication: The Verge
+        key_quotes:
+        - '"stylish enough people might actually want to wear them"'
+        - '"might help Google compete with the Meta Ray-Ban line-up"'
+        - '"the Meta brand, I think, is not something people want anywhere near their face" (Snap CEO Evan Spiegel, quoted in the Google piece)'
+        - '"Project Aura" ... Google''s first pair of Android XR glasses, "expected to launch this year"'
+        register_notes: 'Fashion-partnership news register: Google''s glasses play is framed through luxury desirability (Gucci/Kering, Warby Parker and Gentle Monster precedents named), positioned as the stylish answer to the Meta Ray-Ban line-up. Meta appears inside the Google piece ONLY as (a) the competitor to beat and (b) Spiegel''s brand diss, platformed as editorial color - an inclusion choice, not a reporting requirement.'
+        tone_score: 0.15
+        tone_basis: 'MANUAL ILLUSTRATIVE, excerpt-tier this run (0 browser.open per #503); delegated + parent research, excerpt-bounded'
+      register_contrast:
+        meta_arm_tone: 0.1
+        google_arm_tone: 0.15
+        illustrative_delta_google_minus_meta: 0.05
+        delta_calc: '0.15 - 0.10 = +0.05'
+        temporal_window: '~5 months (Google arm Apr 16 vs Meta arm Sep 24 2026)'
+        reading: 'Near-null at the tone level: the same writer applies a product-positive register to Meta''s Connect announcements and a fashion-positive register to Google''s glasses partnership. The finding sits at the QUOTE-INCLUSION level: Bonifield chose to carry Spiegel''s "Meta brand ... not something people want anywhere near their face" inside a Google glasses story - Meta''s brand is the thing to avoid while Google''s is the thing to desire. n=1 vs n=1 degenerate contract - NOT significant, MANUAL ILLUSTRATIVE ONLY. EXTENDS m150''s Spiegel-quote-inclusion observation (Low, Engadget, "copycats up north") to a second writer and a second outlet (The Verge).'
+      financial_relationship:
+        verge_google: 'No Vox Media x Google financial relationship surfaced in bounded searches this run (5 parent query sets + child sweep). The known Vox-OpenAI May 29 2024 content-licensing deal is a different entity and does not attach a gradient to Google coverage.'
+        verge_meta: 'No Vox Media x Meta financial relationship surfaced in bounded searches.'
+        test: 'No payer-softening prediction is testable at this publication pair: no financial gradient found on either side.'
+        result: 'NOT a falsification-family member. The observed contrast is a within-writer quote-inclusion finding with no deal geometry attached.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY. engine NOT run. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. NOT artifact-grade. no_analysis_json_update true.'
+        verdict: 'directionally_supported_not_proven (scoped: Bonifield''s Meta Connect recap reads product-positive +0.10 with zero privacy interrogation, while his Google glasses piece platforms a rival CEO''s anti-Meta brand diss inside a fashion-positive +0.15 Google register; illustrative delta +0.05 near-null; STRONG temporal confound - the Google piece predates the summer backlash wave by ~5 months; no financial gradient tested; m150''s quote-inclusion observation EXTENDED to a second writer/outlet)'
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'NOT a falsification-family member: no uniform payer-softening prediction is tested (bounded searches found no Vox-Google or Vox-Meta financial relationship; the Vox-OpenAI deal is a different entity). Ledger holds at 46. FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+      - 'STRONG: temporal gap - Google arm Apr 16 vs Meta arm Sep 24 2026 (~5 months). The Google piece predates the entire summer camera-glasses backlash wave (NameTag code Aug, perv-glasses discourse, Paris prosecutors Sep); his register could have shifted across the window. Direction of bias unknown but the gap is the prime mover candidate.'
+      - 'MODERATE: genre asymmetry - partnership-rumor news (Google, Reuters-sourced) vs event announcements recap (Meta, Connect keynote). Both are news-register pieces, but the pegs differ (fashion partnership vs hardware keynote).'
+      - 'MODERATE: the Spiegel quote has a genuine news peg (rival CEO commenting on fashion partnerships, reported by Reuters) - inclusion is defensible editorially, not prima facie hostile. m150''s "copycats up north" inclusion was liveblog color; this is reported-quote inclusion.'
+      - 'WEAK: n=1 per arm; MANUAL ILLUSTRATIVE only; excerpt-tier evidence (0 browser.open per #503); delegated + parent research means no first-hand read of either piece this run.'
+      counterevidence:
+      - 'The Meta arm is itself product-positive (+0.10): Bonifield leads with the VR Glasses as "the star of the event" - against a reading that he is Meta-hostile. The asymmetry, such as it is, is inclusion-level, not register-level.'
+      - 'The Google arm''s Meta mentions are competitive-framing, but the piece''s thesis (luxury fashion as the glasses adoption unlock) genuinely needs the Meta Ray-Ban comparison - the framing is peg-relevant.'
+      - 'His earlier Samsung Galaxy Glasses leak coverage (Apr 2026, relay-attested) shows he covers all three hardware players on the same rumor peg - against outlet-level entity favoritism.'
+      verdict: 'directionally_supported_not_proven: within-writer competitive quote-inclusion. Bonifield''s Google glasses piece (+0.15, fashion-positive) platforms Spiegel''s anti-Meta brand diss while his Meta Connect recap (+0.10, product-positive, zero privacy interrogation) reads neutrally warm. Illustrative delta +0.05 near-null. The finding EXTENDS m150''s Spiegel-quote-inclusion observation to a second writer and The Verge; it is an inclusion choice, not a register divergence. No financial gradient tested; NOT a falsification-family member; ledger holds at 46.'
+      research_method: 'Research delegated to a child agent (~10 browser.search query sets: CNET/Tom''s Guide/TechRadar/Verge/WIRED/ZDNet sweeps; Stein/Younker/Hector/Ortiz/Pero rejected as already-in-corpus; Sarah Perez Meta-x-Snap pair REJECTED when the Sep-16 Snap arm''s byline resolved to banned Lucas Ropek, already in corpus as m728/#828; Marcus Mendes 9to5Mac and Michael Kan PCMag rejected on unverified competitor bylines; Stevie Bonifield SELECTED with both arms) + 5 parent browser.search verification sets (Snap byline check - Ropek confirmed, Perez pair killed; Perez Snap Specs - no Perez-bylined Snap arm found, m142/m269 saturation confirmed; Mendes Apple Watch Series 12 - byline unverified, rejected; Bonifield Snap/Apple - Meta Connect arm + Google Gucci arm SELECTED; Tom''s Guide Ray-Ban Meta Audio byline - unattributable, rejected). 0 browser.open per #503 (excerpt-bounded, delegated + parent research). Both source URLs novel repo-wide (git grep -F zero-hit pre-commit); canonical theverge.com URLs not recovered verbatim - digest/mirror URLs used with disclosure. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; no significance claimed. NOT artifact-grade. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (a within-writer competitive quote-inclusion finding extending m150, not a uniform-prediction contradiction); ledger holds at 46.'
+      cross_refs:
+      - '#150 (Cherlynn Low beat-assignment control case: AWE liveblog amplifying Spiegel''s anti-Meta "copycats up north" dig with editorial validation - the quote-inclusion precedent this run extends to a second writer/outlet)'
+      - '#872/#911 (Cherlynn Low within-writer register constancy/genre-shift line - the within-writer comparison convention)'
+      - '#142 (Sarah Perez same-journalist cross-entity privacy-vocabulary inversion: Google +0.75 vs Meta -0.80 - the Google-comparison precedent; Perez NOT re-covered here, saturated)'
+      - '#269 (TechCrunch editorial division of labor: Ropek-on-Snap vs Perez/Ha-on-Meta vocabulary routing - the Sep-16 Snap arm is Ropek''s byline, banned and in corpus as m728)'
+      - '#1008 (Lily Hay Newman WIRED: Meta private-processing pinky-promise vs Apple Watch audio intelligence - same peg-matched cross-entity convention)'
+      no_analysis_json_update: true
