@@ -1,3 +1,50 @@
+## #1129 Type C: Judge Mehta Dismisses Chegg + Penske Media AI-Overviews Antitrust Suits (Sep 30 2026, Reported Oct 1) (m909) - THIRTY-THIRD Direction LITIGATION-CHANNEL-CLOSURE (compulsory-payment channel closed, "an expectation is not an agreement"; voluntary pilot m891 stays open) - NOT a Falsification-Family Member, Ledger Holds at 46 - Type C FIFTH and CLOSING Leg of the 1125-1129 Window (Oct 1 2026, 05:00 PM PDT; main 0807dc71 / anchor c8d1a5de / doc-sync c50db676 / log-hash: this commit, registered per #721; doc-sync 58974/1453 -> 59061/1454 (+87/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `0807dc71` (0807dc71e06a6e2082e57b452c6214a81a5d1834) - verified via git rev-parse
+- Anchor followup `c8d1a5de` (ANCHORED_SHA patched per #565)
+- Doc-sync `c50db676` (README/ARCHITECTURE/iteration-log per #719)
+- Log-hash followup: this commit (terminal per #721)
+
+### Rotation transparency
+- Window 1125-1129 FIFTH leg: D #1125 (1:00 PM) -> E #1126 (2:00 PM) -> A #1127 (3:00 PM) -> B #1128 (4:00 PM) -> C #1129 (5:00 PM, this run, CLOSING the window).
+- Predecessor #1128 Type B chain verified pre-commit: main 0cf31151 / anchor d168b1fb / doc-sync a8e9bfb1 / log-hash 3178ff74.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit.
+- Next window 1130-1134 opens with Type D.
+
+### Mechanism m909 (competitor-entities.yaml, last top-level key)
+- Finding: U.S. District Judge Amit Mehta (D.D.C.) dismissed Chegg Inc v. Google (25-cv-543) and Penske Media Corp v. Google (25-cv-3192) on Sep 30 2026 (reported Oct 1). Antitrust claims "fail to get out of the starting gate"; publishers hold only an "expectation" of search traffic, "an expectation is not an agreement." Tying claim rejected (AI Overviews not a separate product); unjust-enrichment claims undecided; Penske dismissed without prejudice, order final/appealable. Mehta "not unsympathetic" to publishers whose "content Google takes and repurposes without compensation" but routes the grievance to lawmakers. Same judge who found Google a search monopolist (2024); rejected similar claims by another publisher in March 2026.
+- Direction: LITIGATION-CHANNEL-CLOSURE - publisher sues to compel AI-content payment via antitrust; court rules no payment obligation; compulsory channel closes while the voluntary channel (Google AI-contribution pilot, m891) stays open on unilateral terms. Distinct from #2 pay-or-litigate m636 (lab's choice) and #1 sue-then-sign m624 (suit into deal). Falsifiable on appeal/refile, legislation, or distinguishing precedent. Tension carried vs #12 regulatory-bargaining m834.
+- Money flow: compulsory channel CLOSED ($0, plaintiffs bear costs); voluntary channel OPEN (m891: <$1K to >$1M/yr, black-box, opt-out); asymmetry is court-closed compulsion vs Google-priced voluntarism.
+- Coverage nexus: Penske owns PMX/Vox Media (Jun 2026) so The Verge (tracked) is a subsidiary of the dismissed plaintiff; pairs with mechanism 112 (PMC litigation paradox) and m891.
+- NOT a falsification-family member: financial-architecture mapping per #609/#614; no tone pair scored; MANUAL ILLUSTRATIVE ONLY per Aug 28 rule; engine NOT run; no analysis.json; NOT artifact-grade; verdict directionally_supported_not_proven. Ledger holds at 46; FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing); THIRTY-FOURTH direction absent.
+- 4 sources, all novel pre-commit: Reuters Oct 1 (dismissal, "fail to get out of the starting gate", case numbers), Tapestry News Oct 1 (without prejudice, appealable, 2024 monopolist context), AI Stock Wire Oct 1 (tying rejection, Sep 30 dating), Yahoo/Winston Cho Oct 1 (lawmaker routing).
+
+### Guards
+- Forward guards for #1130: zero-910 (numeric/underscore/dash), no-forty-seventh member, no-thirty-fourth direction (needles format-built per #715).
+- #1128's guard-lifecycle pins flip by design (max-908, zero-909 numeric, no-Type-B-#1129... no-thirty-third-direction); #1128's zero-909 underscore/dash, no-forty-seventh, forty-sixth-intact, thirty-second-intact stay green (supersession pins). #1124's no-thirty-third pins flip by design.
+- Pre-commit novelty: max 908, zero 909 key forms, no FORTY-SEVENTH member, no THIRTY-THIRD direction, no test_type_c_1129 files, no "Type C #1129" in git log. Test gate: 87/87 green pre-commit (4 initial failures, all own-bugs: mechanism_name case, docstring guarded-form, Mehta-log premise; fixed, full re-run green).
+
+### Method
+- Research in 3 rounds: round 1 (child agent, 6 query sets) selected the Google AI-contribution pilot - REJECTED as the m891/#1099 duplicate (verified via corpus grep before drafting); round 2 (child agent, 5 query sets) selected the OpenAI Lenfest $10M renewal - REJECTED as the m885/#1089 duplicate (verified via corpus grep); round 3 (direct browser.search, 6 query sets) selected the Mehta dismissal - verified novel (4 URLs zero-hit, "25-cv-543"/"25-cv-3192" zero-hit, no prior Chegg in git log). 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Lesson logged: two subagent rounds failed on novelty because the exclusion list didn't cover #1089/#1099; corpus-grep verification before drafting is mandatory, not optional.
+
+### New Type C files
+tests/test_type_c_1129_mehta_dismisses_chegg_penske_suits_litigation_channel_closure_oct01_5pm.py - 15 classes, 87 tests.
+
+### Doc-sync ratchet
+README stats table 58974/1453 -> 59061/1454 (+87/+1); test-file table row appended after #1128; ARCHITECTURE.md tree row appended after #1128.
+
+### Push status
+Push status (this run, Oct 1 2026 ~5:xx PM PDT): pending at log-hash time; see followup.
+
+### Rotation guard
+1125-1129 window CLOSED (D->E->A->B->C). Next window 1130-1134 opens with Type D #1130.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.
+
+
 ## #1128 Type B: David Heaney (UploadVR) Sep-13/14/17 Meta-vs-Apple headline-softening register contrast (m908) - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1125-1129 window (Oct 1 2026, 04:00 PM PDT; main 0cf31151 / anchor d168b1fb / doc-sync a8e9bfb1 / log-hash: this commit, registered per #721; doc-sync 58892/1452 -> 58974/1453 (+82/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
