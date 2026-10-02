@@ -42360,12 +42360,12 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 
-## #1151 Type E: podcast sentiment 153rd verification cycle (GF 502 holds as newest, twentieth Type E verification, ~97h; NO 503; GF pure-re-surface streak ADVANCES to four; ZERO Meta/wearables content across all 153 cycles; EHE 53-day hold; Attention Sphere one-hundred-fifty-third quoted-search no-match; press 7 rows = 5 re-surfaces + 2 new keys (reuters Hans Anders Oct-2 original + northlandnewsradio relay); recency frontier HOLDS at Oct 2; Meta-exclusive privacy-pressure framing; tone NOT_SCORED; ledger holds at 46) - Type E SECOND leg of the 1150-1154 window (Oct 2 2026, 12:35 PM PDT; main commit 3571d5f1 / anchor afa6d5e2 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60600/1475 -> 60663/1476 (+63/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1151 Type E: podcast sentiment 153rd verification cycle (GF 502 holds as newest, twentieth Type E verification, ~97h; NO 503; GF pure-re-surface streak ADVANCES to four; ZERO Meta/wearables content across all 153 cycles; EHE 53-day hold; Attention Sphere one-hundred-fifty-third quoted-search no-match; press 7 rows = 5 re-surfaces + 2 new keys (reuters Hans Anders Oct-2 original + northlandnewsradio relay); recency frontier HOLDS at Oct 2; Meta-exclusive privacy-pressure framing; tone NOT_SCORED; ledger holds at 46) - Type E SECOND leg of the 1150-1154 window (Oct 2 2026, 12:35 PM PDT; main commit 3571d5f1 / anchor afa6d5e2 / doc-sync e7e32de6; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60600/1475 -> 60663/1476 (+63/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `3571d5f1` (3571d5f1a042b2ab5a50d5ae7a7066a93da421df) - verified via git rev-parse
 - Anchor followup `afa6d5e2` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD (README 60600/1475 -> 60663/1476; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 153rd-cycle section + Tracked Sources 152->153; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `e7e32de6` (README 60600/1475 -> 60663/1476; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 153rd-cycle section + Tracked Sources 152->153; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -42387,7 +42387,7 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 - Literal discipline per #715: the forward-guard needles (next-number nine-two-two forms, the forty-seventh member-claim form, the thirty-sixth and thirty-seventh direction forms) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose. The landed-claim literals (FORTY-SIXTH member, THIRTY-THIRD direction, THIRTY-FOURTH direction, THIRTY-FIFTH direction) are permitted; prose uses hyphenated/lowercase forms for the forward guards.
 
 ### New Type E files
-- Tests: `tests/test_type_e_1151_podcast_sentiment_153rd_verification_oct02_12pm.py` (63 tests, 13 classes; 63 green pre-commit via venv python with PYTEST_DISABLE_PLUGIN_AUTOLOAD=1; zero in-gate defects; post-doc-sync re-run: 56 green with the novelty pin + anchor-placeholder pin + pre-commit new-keys pin + doc-sync 3 + iteration-log 1 deselected by design per the #1141/#1146 precedent).
+- Tests: `tests/test_type_e_1151_podcast_sentiment_153rd_verification_oct02_12pm.py` (63 tests, 13 classes; 63 green pre-commit via venv python with PYTEST_DISABLE_PLUGIN_AUTOLOAD=1; zero in-gate defects; post-doc-sync re-run: 57 green with the novelty pin + anchor-placeholder pin + pre-commit new-keys pin + doc-sync 2 + iteration-log 1 deselected by design per the #1141/#1146 precedent; the patched test_readme_stats_current stays green post-doc-sync).
 
 ### Doc-sync ratchet
 - README `| Tests |` line: 60600 -> 60663; test-file table: 1475 -> 1476 rows; #1151 row appended after the #1150 row.
