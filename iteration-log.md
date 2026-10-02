@@ -42448,7 +42448,7 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 ### Commit hashes
 - Main commit `4b8b93a6` (4b8b93a689bbea79ff9ea1079de47379b0998279) - verified via git rev-parse
 - Anchor followup `647589ad` (647589adbefa0d2a9361ae3d88c1f87da619c001; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `PENDING` (README 60721/1477 -> 60785/1478; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `5404444d` (5404444dd7cf2f0b95acded09a5b0b65358ca04d; README 60721/1477 -> 60785/1478; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
