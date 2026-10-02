@@ -255,7 +255,11 @@ def _m922_data():
 
 
 def _window():
-    """Newest-first distinct (type, number) sequence from the log."""
+    """File-order distinct (type, number) sequence from the log.
+
+    The log is chronological (oldest first, newest appended), so
+    file order is oldest-first, not newest-first.
+    """
     pat = re.compile(r"^## #(\d+) Type ([A-E]):", re.M)
     seen = []
     for num, typ in pat.findall(_read(LOG_PATH)):
@@ -331,9 +335,10 @@ class TestTypeARotationGuard1152:
         assert ("A", "1152") in window
         assert ("E", "1151") in window
         assert ("D", "1150") in window
-        # Newest-first ordering: A1152 newer than E1151 newer than D1150.
-        assert window.index(("A", "1152")) < window.index(("E", "1151"))
-        assert window.index(("E", "1151")) < window.index(("D", "1150"))
+        # File order is chronological (oldest first): D1150 older than
+        # E1151 older than A1152.
+        assert window.index(("D", "1150")) < window.index(("E", "1151"))
+        assert window.index(("E", "1151")) < window.index(("A", "1152"))
 
     def test_rotation_phrase_in_log_entry(self):
         text = _read(LOG_PATH)
