@@ -25651,7 +25651,7 @@ cherlynn_low:
   career_history: 'Engadget reviews editor since 2016, now executive editor; Columbia Journalism School masters; earlier Laptop Magazine; noted for the widely-cited Apr 2024 Humane AI Pin review (per her Engadget author page, read this run).'
   smart_glasses_coverage: 'Meta Glasses hands-on (Jun 23 2026, "Ray-Ban is out, Kylie Jenner is in", re-read first-hand this run); AWE 2026 Snap Specs launch liveblog (Jun 17 2026, mechanism 150 arm); Meta Connect 2026 liveblog (Sep 23/24 2026); Apple Watch Series 12 hands-on (Sep 9/10 2026) and review (Sep 17 2026).'
   notes: 'Type B #1068 (Sep 29 2026): mechanism 872 within-journalist cross-entity register constancy - FIRST dedicated Type B mechanism on Cherlynn Low in journalists.yaml (prior corpus treatment is m150 in profiles/competitor-coverage-research.yaml, which used her Meta and Snap arms as a beat-assignment control case; zero cherlynn_low YAML key pre-commit, per the #643 convention). Question: does the same Engadget executive editor who wrote a warm, privacy-vocabulary-free hands-on of Meta''s camera glasses apply a different register to Apple''s always-listening watch? APPLE ARM (carried from m1008/m1043''s source set, re-read first-hand this run): her Sep 9/10 2026 Apple Watch Series 12 hands-on - explicit permissive principle "I''m also not against AI wearables that listen to your surroundings and conversations, as long as done responsibly and with accountability", "intrigued by things like Siri Recap and Live Rewind", accepts Apple''s denial "(Short answer: No.)", careful secure-exclave privacy-architecture relay; MANUAL ILLUSTRATIVE +0.35. META ARM (carried from m150 with disclosure, re-read first-hand this run): her Jun 23 2026 Meta Glasses hands-on - warm playful fashion-forward hands-on ("slightly obsessed with the Starfire style", "I left the event mostly pleased"), ZERO privacy/surveillance vocabulary across the full text despite 3K video cameras and multi-array mics, bounded caveats (battery 96 to 66 percent in an hour, "most of the features here aren''t novel", AI misrecognition); MANUAL ILLUSTRATIVE +0.30. Illustrative delta (Apple minus Meta) +0.05: register constancy, null asymmetry - TEMPORAL EXTENSION of m150''s control-case finding to a third entity (Apple) and a new sensor modality (always-listening audio). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule.'
-  mechanism_ids: [872]
+  mechanism_ids: [872, 911]
   competitor_coverage:
     type_b_1068_cherlynn_low_engadget_apple_watch_audio_intelligence_vs_meta_glasses_hands_on_register_constancy_sep29:
       iteration: 1068
@@ -25690,6 +25690,94 @@ cherlynn_low:
       - '#1008 (Lily Hay Newman WIRED: Meta private-processing pinky-promise vs Apple Watch audio intelligence - same Apple arm source, different journalist)'
       - '#1043 (Karissa Bell: Meta visual-data opt-out vs Apple audio intelligence event register - same Apple arm source, different journalist)'
       - '#888 (Karissa Bell genre replication with carried Meta arm and disclosure - same carried-arm convention)'
+      no_analysis_json_update: true
+    type_b_1133_cherlynn_low_engadget_meta_connect_liveblog_vs_apple_watch_series_12_review_sep2026:
+      iteration: 1133
+      mechanism_id: 911
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-01 20:00 PDT'
+      block_key: type_b_1133_cherlynn_low_engadget_meta_connect_liveblog_vs_apple_watch_series_12_review_sep2026
+      author: Kit (with Ray)
+      journalist: Cherlynn Low
+      publication: engadget
+      window: '1130-1134 window FOURTH leg (D #1130 -> E #1131 -> A #1132 -> B #1133 -> C #1134)'
+      test_file: tests/test_type_b_1133_cherlynn_low_engadget_meta_connect_liveblog_vs_apple_watch_series_12_review_sep2026_8pm.py
+      mechanism_name: 'Cherlynn Low (Engadget) Sep-18/19 Apple Watch Series 12 scored review (+0.30, 9.1/10, always-on ambient listening) vs Sep-23 Meta Connect 2026 liveblog (0.0, neutral-wry, surveillance joke) - genre-bound register contrast EXTENDING m872''s constancy finding - NOT a falsification-family member, ledger holds at 46'
+      novelty: 'SECOND dedicated Type B mechanism on Cherlynn Low in journalists.yaml (m872/Type B #1068 covered the same-genre hands-on vs hands-on pair: Apple Sep-9/10 hands-on +0.35 vs Meta Jun-23 hands-on +0.30, illustrative delta +0.05 null). NEW arms on both sides: the Meta arm is her Sep-23-2026 Meta Connect liveblog (fresh, first corpus appearance) and the Apple arm is her Sep-17/18-launch-week scored REVIEW (headline/subhead only was anticipated in m872''s counterevidence; this run SCORES it +0.30). zero test_type_b_1133 files on disk (glob); no "Type B #1133" in git log (--grep); max numeric mechanism_id 910 in profiles/ pre-commit (the-verge.yaml m910); zero numeric/underscore/dash 911 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F); the two novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). The Apple URL carries odd capitalization ("WWW.Engadget.com") VERBATIM from the search listing - quoted exactly, not normalized, flagged here. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      design: 'Type B journalist cross-entity tracking: Engadget executive editor Cherlynn Low, same writer, same outlet, same ~5-day window (Apple arm Sep 18-19 vs Meta arm Sep 23 2026), both wearables, both privacy-relevant sensors (always-on ambient audio vs face-worn camera). The pair EXTENDS m872''s register-constancy finding by changing the GENRE leg: m872''s same-genre hands-on vs hands-on pair read +0.05 null; this run''s scored-review vs liveblog pair reads +0.30. Question: does the constancy finding survive a genre change, or does her register diverge when the review genre applies to Apple and the liveblog genre applies to Meta? The analytical hook: the Apple arm''s always-on ambient-listening surveillance capability is arguably the stronger privacy story, yet receives the gentler register. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      new_meta_arm:
+        title: 'Meta Connect 2026 live: Updates from Mark Zuckerberg''s keynote on AI glasses, VR and more'
+        url: https://www.engadget.com/2266105/meta-connect-2026-live-blog-ai-vr/
+        date: 'Sep 23 2026'
+        byline: 'Cherlynn Low (Engadget author-page crawl timestamps confirm "5 days ago" relative to Sep 28-30 crawls; deadstack logs it "25 hrs" before Sep 24 reporting)'
+        publication: Engadget
+        key_quotes:
+        - '"the $1,299 Meta VR Glasses (much lighter than Vision Pro)"'
+        - '"camera-free Ray-Ban Meta Audio glasses"'
+        - '"that sound you hear is hackers salivating at the opportunity to capture real-time video and audio from whoever they want" (single privacy-vector line, played as a throwaway joke)'
+        - '"Ray-Ban Meta Gen 3" + "Lisa-frame collab" + "Muse AI agent" (full hardware-pitch coverage)'
+        register_notes: 'Neutral event relay with wry asides. The single surveillance-framing line is played for comedy (hackers salivating), not developed into scrutiny: zero follow-up interrogation of Meta''s camera/audio claims, zero privacy-architecture walkthrough. The camera-free Ray-Ban Meta Audio glasses are relayed as a product fact, not interrogated as an audio-capture device. Register reads neutral-to-wry, matching her house liveblog voice.'
+        tone_score: 0.0
+        tone_basis: 'MANUAL ILLUSTRATIVE, excerpt-tier this run (0 browser.open per #503); delegated research, excerpt-bounded'
+      new_apple_arms:
+      - arm: 'Apple Watch Series 12 scored review'
+        title: 'Apple Watch Series 12 review: Catching up and catching heat'
+        url: https://WWW.Engadget.com/2260989/apple-watch-series-12-review-hrv-new-health-sensing-gesture/
+        date: 'Sep 18-19 2026'
+        byline: 'Cherlynn Low (Engadget author-page "12 days ago" relative to Sep 28-Oct 1 crawls; review roundups list it at launch-week)'
+        publication: Engadget
+        key_quotes:
+        - '"Catching up and catching heat" (headline; m872 carried the subhead "The new wearable''s controversial audio features aren''t available yet" in its counterevidence, excerpt-tier)'
+        - 'Scored 9.1/10: revamped health sensing array, expanded gesture support, battery life all praised'
+        - '"In its typical privacy-minded way, Apple took pains to explain how the Series 12''s S11 chip and dedicated Secure Enclave made those features more private" (Apple''s privacy messaging relayed uncritically)'
+        - 'Audio Intelligence suite (Siri Recaps, Live Rewind): always-on ambient microphone features that listen to sounds and speech around the wearer and deliver notifications, transcripts, or summaries of nearby conversation - the controversy gets a contained caveat, sympathy directed at Apple for the controversy eclipsing the hardware'
+        register_notes: 'Product-positive scored review with the privacy controversy CONTAINED rather than interrogated. The always-on ambient-listening capability (a stronger surveillance story than a camera: passive capture of nearby conversation) receives a contained caveat plus an uncritical relay of Apple''s privacy architecture; sympathy is directed at Apple for controversy eclipsing the hardware. Contrast with her own Sep-9/10 hands-on permissive principle ("not against AI wearables that listen to your surroundings and conversations") - the review carries that permissiveness through. Zero adversarial interrogation of Apple as an actor.'
+        tone_score: 0.3
+        tone_basis: 'MANUAL ILLUSTRATIVE, excerpt-tier this run (0 browser.open per #503); delegated research, excerpt-bounded; the +0.30 sits in the review framing and the contained-caveat treatment of the ambient-listening controversy'
+      register_contrast:
+        meta_arm_tone: 0.0
+        apple_arm_tones: 'review +0.30 (n=1)'
+        illustrative_delta_apple_minus_meta: 0.3
+        delta_calc: '0.30 - 0.0 = +0.30'
+        temporal_window: '5 days (Apple arm Sep 18-19 vs Meta arm Sep 23 2026); tighter than m872''s 11-week gap'
+        reading: 'Within-writer, same-outlet, ~5-day-window register contrast: the scored review of Apple''s always-on-listening watch reads +0.30 product-positive with the privacy controversy contained, while the liveblog of Meta''s camera-glasses keynote reads 0.0 neutral-wry with the one surveillance line played as a joke. n=1 vs n=1 degenerate contract - NOT significant, MANUAL ILLUSTRATIVE ONLY. EXTENDS m872''s constancy finding (same-genre hands-on vs hands-on, delta +0.05 null) with a GENRE-BOUND shift: when the review genre applies to Apple and the liveblog genre applies to Meta, the same writer''s register diverges +0.30. The divergence is NOT entity-animus evidence: the genre confound is STRONG (liveblog vs scored review is a maximal register difference), and her hands-on pair showed null divergence.'
+      financial_relationship:
+        engadget_meta: 'No Engadget x Meta financial relationship surfaced in bounded searches (11 delegated query sets + 1 parent query set this run). Engadget reports industry AI deals (OpenAI-Guardian, OpenAI-Hearst, Amazon-Hearst/Conde Nast) as news, not as a counterparty.'
+        engadget_apple: 'No Engadget x Apple financial relationship surfaced in bounded searches; no AI content-licensing deal found for Engadget with any lab. The 2013 Apple-Yahoo mobile-services talks (nasdaq/techzone360 re-surfaces) predate Engadget''s current ownership and are not Engadget-counterparty relationships.'
+        ownership_change: 'Yahoo sold Engadget to Static Media (deal signed early Feb 2026, closed March 2026, per mediagazer/David Pierce/The Verge). The journalists.yaml profile header still lists publication_owner: Yahoo - stale; flagged here, header edit left to a dedicated ownership-update pass, not this mechanism run.'
+        revenue_model: 'Standard ad/affiliate review-commerce model (scored reviews with affiliate linkage) per bounded search.'
+        test: 'No payer-softening prediction is testable at this publication: no financial gradient found on either side.'
+        result: 'NOT a falsification-family member. The observed contrast is a within-writer genre-bound register finding with no deal geometry attached.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY. engine NOT run. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. NOT artifact-grade. no_analysis_json_update true.'
+        verdict: 'directionally_supported_not_proven (scoped: Low''s scored-review register on Apple''s always-on-listening watch runs +0.30 gentler than her liveblog register on Meta''s camera-glasses keynote within a 5-day window; strong genre and form-factor confounders; no financial gradient tested; m872''s same-genre null reading stands alongside, not replaced)'
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'NOT a falsification-family member: no uniform payer-softening prediction is tested (bounded searches found no Engadget-Meta or Engadget-Apple financial relationship; the Static Media ownership change is a profile-header staleness flag, not a gradient). Ledger holds at 46. FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+      - 'STRONG: genre asymmetry - liveblog (Meta, rapid event relay) vs scored review (Apple, 9.1/10). Review genre rewards product-positivity and punishes adversarial register; this alone can generate the +0.30. m872''s same-genre pair read +0.05 null, so the genre leg is the prime mover candidate.'
+      - 'STRONG: form-factor asymmetry - glasses with face-worn camera (Meta) vs wrist device with always-on ambient mic (Apple). The privacy narratives differ in kind (recording-by-wearer vs passive-conversation-capture); a register comparison across sensors is category-mismatched.'
+      - 'MODERATE: the Apple arm is the stronger surveillance story (passive capture of NEARBY conversation, third parties unaware) yet receives the gentler register - the analytical hook, not a resolved asymmetry.'
+      - 'MODERATE: timing - the Apple review postdates the Aug backlash wave; the Meta liveblog is a keynote-day relay. Her register could have shifted across the 5 days, though the window is narrow.'
+      - 'WEAK: n=1 per arm; MANUAL ILLUSTRATIVE only; excerpt-tier evidence (0 browser.open per #503); delegated research means no first-hand read of either piece this run.'
+      counterevidence:
+      - 'm872''s same-genre hands-on vs hands-on pair (Apple Sep-9/10 +0.35 vs Meta Jun-23 +0.30, delta +0.05) shows register constancy under genre control - the +0.30 here is the genre effect, not a journalist-level stance shift. This mechanism EXTENDS m872 rather than contradicting it.'
+      - 'Her Meta liveblog''s single privacy-vector line exists at all: she did not write a privacy-free keynote relay (unlike her Jun hands-on), though she played it as a joke.'
+      - 'The Apple review''s "controversial audio features aren''t available yet" subhead (carried in m872''s counterevidence) shows her marking the controversy in the display copy - the containment is in the body register, not total omission.'
+      - 'Her own Apple hands-on interrogated the listening claims seriously (secure exclave, rolling buffer) - against a reading that she never scrutinizes Apple''s audio claims.'
+      verdict: 'directionally_supported_not_proven: genre-bound within-writer register contrast. Low''s Apple scored review (+0.30, always-on listening controversy contained) reads gentler than her Meta Connect liveblog (0.0, surveillance joke) within 5 days. The +0.30 sits ON TOP OF m872''s +0.05 null under genre control, so the finding is a genre-effect extension, not a journalist-bias claim. No financial gradient tested; NOT a falsification-family member; ledger holds at 46.'
+      research_method: 'Research delegated to a child agent (11 browser.search query sets this run: Goode WIRED sweeps x2 - rejected; Heath Verge - rejected, no fresh pair; Bell Engadget Meta Connect - rejected, multi-covered m722/#818/#888; Song Verge Meta Ray-Ban - rejected, multi-covered #813/m719; Low Engadget Meta glasses + Kylie Jenner - rejected, m150 control case / out of window; Low Apple Watch Series 12 review - SELECTED; Lardinois TechCrunch - rejected, no byline/no competitor arm; engadget.com Meta Connect 2026 live - SELECTED; engadget.com Apple Watch Series 12 review - SELECTED). 0 browser.open per #503 (excerpt-bounded, delegated research). Parent: 1 browser.search set (Yahoo/Engadget x Meta/Apple financial relationships - no gradient found; surfaced the Feb-2026 Static Media acquisition, logged as ownership staleness). Both source URLs novel repo-wide (git grep -F zero-hit pre-commit); Apple URL kept with verbatim "WWW.Engadget.com" capitalization from the listing. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; no significance claimed. NOT artifact-grade. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (a genre-bound register contrast extending m872''s constancy finding, not a uniform-prediction contradiction); ledger holds at 46.'
+      cross_refs:
+      - '#872 (Cherlynn Low Engadget register constancy: Apple Sep-9/10 hands-on +0.35 vs Meta Jun-23 hands-on +0.30, delta +0.05 null, same-genre - this run EXTENDS with the genre leg changed: scored review +0.30 vs liveblog 0.0, delta +0.30)'
+      - '#1068 (Type B run that landed m872 - same journalist, FIRST dedicated mechanism; m911 is the SECOND)'
+      - '#150 (Cherlynn Low beat-assignment control case: uniform zero privacy-alarm vocabulary across Meta/Snap/Samsung glasses, Jun 2026 - the control-case lineage m872 extended and m911 extends again)'
+      - '#813 (Victoria Song same-register pair, mechanism 719: her Meta Ray-Ban Display review + Apple Watch Series 12 review - same Apple product, different journalist)'
+      - '#888 (Karissa Bell genre replication with carried Meta arm - same genre-confound convention)'
       no_analysis_json_update: true
 ben_schoon:
   name: Ben Schoon
