@@ -1,9 +1,9 @@
-## #1133 Type B: m911 Cherlynn Low (Engadget) Sep-18/19 Apple Watch Series 12 scored review (+0.30) vs Sep-23 Meta Connect 2026 liveblog (0.0) - genre-bound register contrast EXTENDING m872's constancy finding - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1130-1134 window (Oct 1 2026, 08:00 PM PDT; main commit 9cb9ec5f / anchor 3e7e02e3 / doc-sync TBD / log-hash followup registers all hashes here per #721 (this commit); doc-sync 59265/1457 -> 59351/1458 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1133 Type B: m911 Cherlynn Low (Engadget) Sep-18/19 Apple Watch Series 12 scored review (+0.30) vs Sep-23 Meta Connect 2026 liveblog (0.0) - genre-bound register contrast EXTENDING m872's constancy finding - NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1130-1134 window (Oct 1 2026, 08:00 PM PDT; main commit 9cb9ec5f / anchor 3e7e02e3 / doc-sync 33e45f63 / log-hash followup registers all three hashes here per #721 (this commit); doc-sync 59265/1457 -> 59351/1458 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `9cb9ec5f` (9cb9ec5f54ae1d969c22e235bddbfca821a1e25f) - verified via git rev-parse
 - Anchor followup `3e7e02e3` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README/ARCHITECTURE/iteration-log per #719)
+- Doc-sync `33e45f63` (README/ARCHITECTURE/iteration-log per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
