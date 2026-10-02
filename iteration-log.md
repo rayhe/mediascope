@@ -1,9 +1,9 @@
-## #1143 Type B: m917 Cristina Criddle (FT) Sep-16-2026 "blindsided" accountability-adversarial on the OpenAI licensing-deal partner (-0.35, headline-tier: techmeme 2026-09-16 13:57:16 + biztoc relay) - TEMPORAL EXTENSION of m758's writer-level falsification pattern (Type B #878: Aug-11 Bakalar ethics-chief-exit -0.40, Meta within-piece constructive contrast +0.15, both carried per #807) to a second crisis-window peg five weeks later - Type B FOURTH leg of the 1140-1144 window (Oct 2 2026, 06:00 AM PDT; main commit fb2d19f0 / anchor 68d3c43f / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60002/1467 -> 60070/1468 (+68/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1143 Type B: m917 Cristina Criddle (FT) Sep-16-2026 "blindsided" accountability-adversarial on the OpenAI licensing-deal partner (-0.35, headline-tier: techmeme 2026-09-16 13:57:16 + biztoc relay) - TEMPORAL EXTENSION of m758's writer-level falsification pattern (Type B #878: Aug-11 Bakalar ethics-chief-exit -0.40, Meta within-piece constructive contrast +0.15, both carried per #807) to a second crisis-window peg five weeks later - Type B FOURTH leg of the 1140-1144 window (Oct 2 2026, 06:00 AM PDT; main commit fb2d19f0 / anchor 68d3c43f / doc-sync a6cfa971; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60002/1467 -> 60070/1468 (+68/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `fb2d19f0` (fb2d19f0b9294d05e199f341c0a9707e4295aac5) - verified via git rev-parse
 - Anchor followup `68d3c43f` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60002/1467 -> 60070/1468; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60070/1468)
+- Doc-sync `a6cfa971` (README 60002/1467 -> 60070/1468; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60070/1468)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -28,7 +28,7 @@
 ### Commit hashes
 - main commit: fb2d19f0 (fb2d19f0b9294d05e199f341c0a9707e4295aac5)
 - anchor followup (ANCHORED_SHA patch per #565): 68d3c43f
-- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): TBD
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): a6cfa971
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
 
 ### Doc-sync ratchet
