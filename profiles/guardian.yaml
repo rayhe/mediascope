@@ -3097,6 +3097,146 @@ competitor_relationships:
     direction: "receiving"
     description: "Google Digital News Initiative funding recipient. Google AI pilot program participant. Relationship is pragmatic — Guardian takes Google money but covers Google critically."
     coverage_prediction: "neutral"
+    type_a_1152_guardian_google_sep26_oct02_datacenter_adversarial_register_vs_carried_meta_arms:
+      mechanism_id: 922
+      iteration: 1152
+      iteration_type: "A"
+      iteration_time: "2026-10-02 13:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "The Guardian"
+      entity_pair: "Google (DNI funding + News AI pilot recipient) vs Meta ($0-deal comparator)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        FIRST dedicated Type A mechanism on the Guardian's Sep-26/Oct-2
+        adversarial datacenter register toward Google, a mixed-tie entity
+        (DNI funding recipient, News AI pilot participant; standing
+        coverage_prediction "neutral" - the block theorizes pragmatic
+        coverage: takes Google money, covers critically). Arm 1: the Sep-26
+        Guardian original "Broken promises, confiscated land: the hyperscale
+        AI datacentre being built in a tiny Indian village" (Hannah
+        Ellis-Petersen + Aakash Hassan, Sep 26 2026 11:00 UTC, 8 min read)
+        names Google's hyperscale AI datacentre in Tarluvada, Andhra
+        Pradesh in an investigative environmental-exploitation register;
+        village head BRB Naidu quoted: "We have learned that America does
+        not want the problems of datacentres and so now Google is bringing
+        them here." Arm 2: the Oct-2 Guardian Weekly cover story (Eduardo
+        Porter) "NOT IN MY BACKYARD - The growing global rebellion against
+        datacenters" elevates the same adversarial frame to cover status,
+        featuring the Google datacentre case alongside Great Torrington.
+        Bounded-absence arm: the Oct-1 SDNY ruling (Judge P. Kevin Castel)
+        clearing USA Today, DMGT and ~5,000 publishers to seek $3.2B+ in
+        AdX-monopoly damages from Google - the week's biggest
+        publisher-vs-Google story, maximally self-relevant to the Guardian
+        as a publisher - surfaced zero Guardian originals in two targeted
+        query sets (bounded search-result absence per #503, not
+        page-view-verified). This is REGISTER data, not suppression: the
+        Guardian prints adversarial Google facts at investigative length,
+        consistent with the block's "neutral/pragmatic" standing prediction.
+      google_articles_this_run:
+        - title: "Broken promises, confiscated land: the hyperscale AI datacentre being built in a tiny Indian village"
+          byline: "Hannah Ellis-Petersen + Aakash Hassan"
+          date: "2026-09-26"
+          publication_time: "11:00 UTC"
+          length: "8 min read"
+          register: "investigative_environmental_exploitation"
+          framing: "Google's hyperscale datacentre named as the agent of broken promises and confiscated land; villager voice carries the adversarial charge"
+          key_quote: "We have learned that America does not want the problems of datacentres and so now Google is bringing them here. - village head BRB Naidu"
+          relay_attestation:
+            - "https://wesearch.press/s/broken-promises-confiscated-land-the-hyperscale-ai-datacentr-d1a11325"
+            - "https://grandgoldman.com/blogs/business/googles-15bn-ai-datacentre-in-india-sparks-land-disputes"
+          research_method: "relay_attested_excerpt_bounded_sep26_oct02"
+          manual_illustrative_tone: -0.45
+          tone_note: "Investigative register names Google as the exploiting agent; adversarial by attribution, not hedged"
+        - title: "NOT IN MY BACKYARD - The growing global rebellion against datacenters (Guardian Weekly cover, Oct 2 2026)"
+          byline: "Eduardo Porter (cover analysis)"
+          date: "2026-10-02"
+          register: "cover_story_environmental_rebellion"
+          framing: "Cover-story elevation of the datacenter-backlash frame; the Google Andhra Pradesh case featured as the lead exemplar of broken 'golden age' promises"
+          relay_attestation:
+            - "https://intellicurious.com/2026/09/30/the-guardian-weekly-october-2-2026/"
+          research_method: "relay_attested_excerpt_bounded_oct02"
+          manual_illustrative_tone: -0.40
+          tone_note: "Cover placement is the strongest register signal a weekly can send; adversarial toward the named hyperscale operator"
+        - title: "BOUNDED ABSENCE: Guardian original on the Oct-1 SDNY $3.2B AdX-monopoly damages ruling (Castel)"
+          date: "2026-10-01"
+          register: "coverage_selection_bounded_absence"
+          framing: "Two targeted query sets surfaced zero theguardian.com originals on the Castel ruling; the ruling is carried in-corpus via the newdigitalage Ad World roundup (Bloomberg original, Leah Nylen and David Voreacos, Oct 1)"
+          ruling_citation: "https://newdigitalage.co/general/ad-world-todays-news-from-around-the-web-94/"
+          research_method: "search_result_attribution_bounded_oct02"
+          manual_illustrative_tone: null
+          tone_note: "Absence is bounded to search results per #503, not page-view-verified; time-sensitive (ruling landed Oct 1)"
+      meta_arms_carried:
+        - title: "Meta misses earnings forecasts after Zuckerberg media push to promote AI"
+          date: "2026-07-29"
+          register: "deficit_distancing"
+          manual_illustrative_tone: -0.45
+          carried_from: "m487 target_scores"
+        - title: "Reel-ing it in: Meta is paying influencers to promote teen accounts"
+          date: "2026-08-18"
+          register: "adversarial_accountability"
+          manual_illustrative_tone: -0.50
+          carried_from: "m487 target_scores + m537"
+      scorer:
+        google_new_arms: [-0.45, -0.40]
+        google_new_mean: -0.425
+        meta_carried_arms: [-0.45, -0.50]
+        meta_carried_mean: -0.475
+        asymmetry_delta: 0.05
+        delta_direction: "Google minus Meta; near-null, directionally the tied entity covered 0.05 LESS adversarial"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        note: "MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. Hand-assigned tones, n=2 per side, headline/dek/body-excerpt level; Google arms relay-attested (theguardian.com not first-hand read per #503); the bounded-absence arm carries no tone. No engine run."
+      financial_context: >
+        Guardian financial tie to Google: "mixed" (DNI funding recipient,
+        Google AI pilot program participant), direction receiving, value
+        undisclosed, standing coverage_prediction "neutral". The two
+        adversarial arms land against the receiving side of the tie; the
+        bounded-absence arm is the week's biggest publisher-vs-Google story
+        with zero Guardian originals surfaced. No uniform-softening
+        prediction is tested by this block, so the adversarial arms are NOT
+        falsification-family material; they are consistent-with-pragmatic
+        data.
+      confounders:
+        - strength: "STRONG"
+          confounder: "Institutional adversarial independence is real and pre-theorized"
+          detail: "The block description itself records 'covers Google critically'; m487 and m83 corroborate. The adversarial arms may reflect genuine editorial independence, not tie-immunity."
+        - strength: "STRONG"
+          confounder: "Desk-register mismatch"
+          detail: "The datacenter pieces are environment/world reporting (Ellis-Petersen, Hassan, Porter), not the tech beat; different register norms apply than to tech-desk coverage."
+        - strength: "MODERATE"
+          confounder: "Relay-carried arms"
+          detail: "Wording reads through wesearch.press and grandgoldman relays, not first-hand page views (theguardian.com not opened per #503)."
+        - strength: "MODERATE"
+          confounder: "Ad-tech absence is time-sensitive"
+          detail: "The Castel ruling landed Oct 1; the Guardian US tech desk may still be drafting. Bounded-absence is a search-result claim, not a page-view claim."
+        - strength: "WEAK"
+          confounder: "Project figure relay-attested"
+          detail: "The $15bn project figure is relay-attested (grandgoldman), not Guardian-attributed in the surfaced excerpts."
+      counter_evidence: >
+        m487 (Sep-03) documented the OPPOSITE geometry in this same block:
+        Google DeepMind leadership transition got renewal/canonization
+        register (Google arms -0.15, -0.05) vs Meta deficit register (-0.45,
+        -0.50) in Aug 2026 - the softening prediction HAS support here.
+        m922 extends the block's range: register SELECTION
+        (leadership-transition vs environmental-investigation) dominates
+        the arc, not entity targeting. Consistent with the standing
+        "neutral/pragmatic" prediction: the tie buys no uniform register.
+      relation_to_487: "EXTENDS the guardian x google register-range documentation; widens the documented Google-side register from m487's renewal (-0.15 to -0.05) to adversarial-investigative (-0.45 to -0.40) over Sep-26/Oct-2."
+      relation_to_83: "BOUNDS the mechanism #83 News AI pilot alignment claim: the tie does not buy uniform silence - adversarial Google datacenter arms run at investigative length while the m83 glasses-privacy silence holds."
+      relation_to_537: "Carried Meta arms (-0.45, -0.50) reuse m487's target_scores and the m537 Sep-05 register-asymmetry finding; un-rescored per #807."
+      distinct_from_prior: "No prior Type A mechanism in the guardian x google block on the datacenter register; m487 covered leadership-transition; m83 covered wearables coverage-selection."
+      research_method: "4 browser.search query sets (Business Insider OpenAI Oct 2026; Guardian Google Oct 2026; Guardian datacenter Tarluvada Porter; Guardian Google $3.2B ad-tech damages), 0 browser.open per #503; all URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes."
+      novelty: "3 new-to-corpus verbatim URL keys (zero-hit repo-wide pre-commit): the wesearch.press Sep-26 relay, the grandgoldman relay, the intellicurious Weekly-cover relay. The newdigitalage Ad World roundup URL is a ruling-citation only."
+      ledger: "NOT a falsification-family member: this block's standing coverage_prediction is 'neutral', so no uniform-softening prediction is tested. Ledger holds at 46."
+      key_design_note: "Block key carries the iteration number (1152), not the mechanism number (922); designed keying per #715."
+      statistical_discipline: "MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone NOT_SCORED by engine, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade)."
+      artifact_grade: false
+      no_analysis_json_update: true
+      correlation_not_causation: "Correlation is not causation; hypothesis-generating only."
     mechanism_487_guardian_google_deepmind_leadership_renewal_vs_meta_deficit_framing:
       mechanism_id: 487
       iteration: 487
