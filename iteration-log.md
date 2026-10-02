@@ -42272,12 +42272,12 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 
 
 
-## #1149 Type C: m921 Reach plc H1 2026 earnings disclosure quantifies unlicensed AI usage ("many millions of times a day") + AI licensing named near-term strategic priority - publisher-side P&L leg extending m468; publisher-side mirror of #27 unilateral pricing (m891/m918) - Type C FIFTH and CLOSING leg of the 1145-1149 window (Oct 2 2026, 11:00 AM PDT; main commit 04645a0b / anchor 52af28a6 / doc-sync PENDING; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60430/1473 -> 60512/1474 (+82/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1149 Type C: m921 Reach plc H1 2026 earnings disclosure quantifies unlicensed AI usage ("many millions of times a day") + AI licensing named near-term strategic priority - publisher-side P&L leg extending m468; publisher-side mirror of #27 unilateral pricing (m891/m918) - Type C FIFTH and CLOSING leg of the 1145-1149 window (Oct 2 2026, 11:00 AM PDT; main commit 04645a0b / anchor 52af28a6 / doc-sync 9b87f43a; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60430/1473 -> 60512/1474 (+82/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `04645a0b` (04645a0ba11546e6f7e063786f0485e905d8a3b7) - verified via git rev-parse
 - Anchor followup `52af28a6` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `PENDING` (README 60430/1473 -> 60512/1474; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60512/1474)
+- Doc-sync `9b87f43a` (README 60430/1473 -> 60512/1474; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60512/1474)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -42304,7 +42304,7 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 ### Commit hashes
 - main commit: 04645a0b (04645a0ba11546e6f7e063786f0485e905d8a3b7)
 - anchor followup (ANCHORED_SHA patch per #565): 52af28a6
-- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): PENDING
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): 9b87f43a
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
 
 ### Doc-sync ratchet
