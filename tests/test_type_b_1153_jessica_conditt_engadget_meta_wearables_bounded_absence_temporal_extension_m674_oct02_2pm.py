@@ -49,7 +49,7 @@ BLOCK_KEY = (
 # Pre-commit values. ANCHORED_SHA is patched to the main-commit hash in the
 # anchor followup (git rev-parse HEAD after the main commit), per #565.
 ANCHORED_SHA = "4b8b93a689bbea79ff9ea1079de47379b0998279"
-README_TEST_COUNT = 60721
+README_TEST_COUNT = 60785
 README_FILE_COUNT = 1478
 
 # Forward guards for the next landing. MECH_NUM=923 is THIS run's landed
@@ -546,7 +546,7 @@ class TestDocSync1153:
 
     def test_doc_sync_constants_match_collect(self):
         # Patched post-first-run with the true collected count.
-        assert README_TEST_COUNT == 60721
+        assert README_TEST_COUNT == 60785
         assert README_FILE_COUNT == 1478
 
 
