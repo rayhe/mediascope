@@ -90,7 +90,7 @@ ANCHORED_SHA = "374ce8cd4010acba0f3f7dfb4b56403bd4fcb3e5"
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
-README_TEST_COUNT = 59264
+README_TEST_COUNT = 59265
 README_FILE_COUNT = 1457
 
 # The m910 block key carries no mechanism-number substring (1132 is
