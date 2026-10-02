@@ -1,13 +1,13 @@
-## #1138 Type B: Stevie Bonifield (The Verge) Sep-24 Meta Connect 2026 product-positive recap (+0.10) vs Apr-16 Google Gucci glasses fashion-partnership news (+0.15) - competitive quote-inclusion: Spiegel anti-Meta brand diss platformed in the Google arm, EXTENDING m150's quote-inclusion observation to a second writer/outlet (mechanism 914; FIRST dedicated Type B on Bonifield in journalists.yaml; illustrative delta +0.05 near-null at tone; STRONG 5-month temporal confound; NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1135-1139 window (Oct 2 2026, 01:00 AM PDT; main commit TBD / anchor TBD / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59644/1462 -> 59710/1463 (+66/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1138 Type B: Stevie Bonifield (The Verge) Sep-24 Meta Connect 2026 product-positive recap (+0.10) vs Apr-16 Google Gucci glasses fashion-partnership news (+0.15) - competitive quote-inclusion: Spiegel anti-Meta brand diss platformed in the Google arm, EXTENDING m150's quote-inclusion observation to a second writer/outlet (mechanism 914; FIRST dedicated Type B on Bonifield in journalists.yaml; illustrative delta +0.05 near-null at tone; STRONG 5-month temporal confound; NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1135-1139 window (Oct 2 2026, 01:00 AM PDT; main commit 9db35c1c / anchor 75276dbc / doc-sync ed5674de; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59644/1462 -> 59710/1463 (+66/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 - Tests: `tests/test_type_b_1138_stevie_bonifield_verge_meta_connect_recap_vs_google_gucci_glasses_oct02_1am.py` (66 tests, 13 classes; 59 green pre-commit via venv python with 8 post-commit/doc-sync pins failing by design - 4 forward-staleness needle self-reference fixes applied, 4 doc-sync/iteration-log pins green post-doc-sync; post-anchor re-run: anchor + rotation-guard green with the novelty pin deselected by design).
 
 ### Commit hashes
-- main commit: TBD (TBD)
-- anchor followup (ANCHORED_SHA patch per #565): TBD
-- doc-sync followup (README/ARCHITECTURE + iteration-log entry + test-file constants patch per #719): TBD
+- main commit: 9db35c1c (9db35c1c1684a62b815256347b0d947e06573664)
+- anchor followup (ANCHORED_SHA patch per #565): 75276dbc
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): ed5674de
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
-- Pushed to rayhe/mediascope main (pending at doc-sync time; see followup).
+- Pushed to rayhe/mediascope-asymmetry main (pending at doc-sync time; see followup).
 
 ### Doc-sync ratchet
 - README `| Tests |` line: 59644 -> 59710; test-file table: 1462 -> 1463 rows; #1138 row appended after the #1137 row.
