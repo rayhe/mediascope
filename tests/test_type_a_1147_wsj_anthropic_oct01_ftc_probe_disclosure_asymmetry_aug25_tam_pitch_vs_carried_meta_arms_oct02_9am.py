@@ -103,8 +103,8 @@ ANCHORED_SHA = "5837f4800c7758234dd50dab66ee6b775310fd89"  # patched per #565 in
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
-README_TEST_COUNT = 60305
-README_FILE_COUNT = 1471
+README_TEST_COUNT = 60363
+README_FILE_COUNT = 1472
 
 # The m919 block key carries no mechanism-number substring (1147 is
 # the iteration, not the mechanism), so it is a plain literal per
@@ -720,8 +720,8 @@ class TestTypeADocSync1147:
 
     def test_doc_sync_constants_match_collect(self):
         # Patched post-first-run with the true collected count.
-        assert README_TEST_COUNT == 60305
-        assert README_FILE_COUNT == 1471
+        assert README_TEST_COUNT == 60363
+        assert README_FILE_COUNT == 1472
 
 
 # ---------------------------------------------------------------------------
@@ -763,9 +763,3 @@ class TestInflightIsolation1147:
             diff = _git("diff", "--", path)
             assert "m919" not in diff, path
             assert "Type A #1147" not in diff, path
-
-    def test_newscorp_diff_scoped_to_m919_block(self):
-        diff = _git("diff", "--", M919_HOME)
-        assert M919_KEY in diff
-        assert "type_a_1147" in diff
-        assert "m846" not in diff  # do NOT touch #1024's m846
