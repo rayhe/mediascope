@@ -166,8 +166,8 @@ SUITE_LOG = os.path.join(
 )
 
 # Patched post-commit once README/ARCHITECTURE doc-sync lands (per #719).
-README_TEST_COUNT = 60877  # post-doc-sync total (60877 + N; patched)
-README_FILE_COUNT = 1479  # post-doc-sync total (patched)
+README_TEST_COUNT = 60979  # post-doc-sync total (60877 + 102)
+README_FILE_COUNT = 1480  # post-doc-sync total
 TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
