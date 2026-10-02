@@ -46,7 +46,7 @@ BLOCK_KEY = (
 
 # Pre-commit values. ANCHORED_SHA is patched to the main-commit hash in the
 # anchor followup (git rev-parse HEAD after the main commit), per #565.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "6dd1f44bb9f620972a61af30968127d0b7c66394"
 README_TEST_COUNT = 60363
 README_FILE_COUNT = 1472
 
@@ -166,23 +166,27 @@ def _source_grep(pattern):
 # ---------------------------------------------------------------------------
 
 class TestAnchor1148:
-    def test_anchored_sha_placeholder_is_zeros_pre_commit(self):
-        assert ANCHORED_SHA == "0" * 40
+    def test_anchor_sha_format(self):
+        # Patched in the anchor followup per #565: ANCHORED_SHA is the
+        # main-commit hash, a 40-char hex string, not the placeholder.
+        assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA), ANCHORED_SHA
+        assert ANCHORED_SHA != "0" * 40
 
-    def test_anchored_sha_length(self):
-        assert len(ANCHORED_SHA) == 40
+    def test_anchor_sha_is_main_commit(self):
+        # The anchor commit patches ANCHORED_SHA to the main-commit hash;
+        # verify it appears in the git log as a commit hash.
+        log = _git("log", "--format=%H").stdout
+        assert ANCHORED_SHA in log
 
     def test_anchor_followup_commit_message_convention(self):
         # The anchor followup uses the documented message shape:
-        # "Type B #1148 anchor: <subject> (ANCHORED_SHA 0*40 -> <hash>)".
-        src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
-        assert "Type B #1148 anchor:" in src
-        assert "ANCHORED_SHA 0*40 -> <hash>" in src or "ANCHORED_SHA" in src
+        # "Type B #1148 anchor followup: ANCHORED_SHA -> <hash> ...".
+        log = _git("log", "--oneline", "--grep=Type B #1148 anchor").stdout
+        assert "Type B #1148 anchor" in log
 
     def test_main_commit_message_convention(self):
-        # Main commit message shape documented in the module docstring.
-        src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
-        assert "Type B #1148" in src
+        log = _git("log", "--oneline", "--grep=Type B #1148:").stdout
+        assert "Type B #1148" in log
 
 
 # ---------------------------------------------------------------------------
