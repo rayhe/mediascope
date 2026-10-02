@@ -1,9 +1,9 @@
-## #1136 Type E: podcast sentiment 150th verification cycle (GF 502 holds as newest, seventeenth verification, ~84h; EHE 52-day hold; Attention Sphere 150th no-match; ONE new press URL key - usnewsbreak bathrooms-class-action piece; frontier ADVANCES Sep 29 -> Sep 30, twelfth hold ends; GF streak restarts at one) - Type E SECOND leg of the 1135-1139 window (Oct 1 2026, 11:00 PM PDT; main commit 1970ab00 / anchor 524d612d / doc-sync <pending>; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59520/1460 -> 59580/1461 (+60/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1136 Type E: podcast sentiment 150th verification cycle (GF 502 holds as newest, seventeenth verification, ~84h; EHE 52-day hold; Attention Sphere 150th no-match; ONE new press URL key - usnewsbreak bathrooms-class-action piece; frontier ADVANCES Sep 29 -> Sep 30, twelfth hold ends; GF streak restarts at one) - Type E SECOND leg of the 1135-1139 window (Oct 1 2026, 11:00 PM PDT; main commit 1970ab00 / anchor 524d612d / doc-sync 12641fd9; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59520/1460 -> 59580/1461 (+60/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `1970ab00` (1970ab0044df27f4a39aea82cd4fbd0adac641cf) - verified via git rev-parse
 - Anchor followup `524d612d` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `<pending>` (README 59520/1460 -> 59580/1461; test-table row; ARCHITECTURE tree row; podcast-sentiment.md entry + Tracked Sources 149->150; test-file constants patch per #719)
+- Doc-sync `12641fd9` (README 59520/1460 -> 59580/1461; test-table row; ARCHITECTURE tree row; podcast-sentiment.md entry + Tracked Sources 149->150; test-file constants patch per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -30,7 +30,7 @@
 ### Commit hashes
 - main commit: 1970ab00 (1970ab0044df27f4a39aea82cd4fbd0adac641cf)
 - anchor followup (ANCHORED_SHA patch per #565): 524d612d
-- doc-sync followup (README/ARCHITECTURE + podcast-sentiment.md entry + Tracked Sources 149->150 + iteration-log entry + test-file constants patch per #719): <pending>
+- doc-sync followup (README/ARCHITECTURE + podcast-sentiment.md entry + Tracked Sources 149->150 + iteration-log entry + test-file constants patch per #719): 12641fd9
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit).
 - Pushed to rayhe/mediascope main (pending at doc-sync time; see followup).
 
