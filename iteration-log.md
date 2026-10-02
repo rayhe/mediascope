@@ -1,3 +1,48 @@
+## #1137 Type A: m913 Atlantic x OpenAI Sep-26/Oct-1 crisis-window bounded-absence silence + Sep-29 historical-register Roose book excerpt vs carried Meta Watchdog arms - register-AVAILABILITY extension of the m694 strand, ledger holds at 46 - Type A THIRD leg of the 1135-1139 window (Oct 2 2026, 12:00 AM PDT; main commit 311b2e32 / anchor 4dce0951 / doc-sync PENDING; doc-sync 59580/1461 -> 59644/1462 (+64/+1); log-hash followup registers all hashes here per #721 (pending); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `311b2e32` (311b2e328c16aa564405fc6bbe8803167ef8f170) - verified via git rev-parse
+- Anchor followup `4dce0951` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync PENDING (README 59580/1461 -> 59644/1462; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patch per #719)
+- Log-hash followup: pending per #721 (this commit)
+
+### Rotation transparency
+- This run is iteration #1137 Type A, the THIRD leg of the 1135-1139 window (D #1135 -> E #1136 -> A #1137 -> B #1138 -> C #1139 per the #565 anchor + rotation guard).
+- Committed predecessor #1136 Type E (11:00 PM PDT Oct 1) is the window's SECOND leg - chain verified pre-commit: main 1970ab00 / anchor 524d612d / doc-sync 12641fd9 / log-hash aef45405.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1138 Type B continues the window.
+
+### Finding summary
+- m913 (profiles/atlantic.yaml competitor_relationships/openai, 4-space indent, `mechanism_id: 913` field form): FIRST dedicated corpus mechanism on The Atlantic's coverage posture toward OpenAI's Sep-26/Oct-1 2026 crisis window - bounded absence. Four news pegs that drew accountability/enforcement registers across six peer publications returned zero Atlantic originals in three bounded search sets: (1) the Sep-26 rogue-agent disclosure (uniform cross-publication accountability register -0.35 to -0.50 at NYT m910, FT m901, WSJ m904, Verge m907 A2); (2) the Sep-29 LASST Hugging Face lawsuit (NYT m910 -0.50 arm); (3) the Sep-28 Astra cancellation (Guardian m1072, WIRED m1077, Verge m1082); (4) the Sep-30 FTC agent-safety probe (FT m1117, WSJ m1122, NYT m910, Verge m907 A2). The Atlantic-targeted set (site:theatlantic.com OpenAI September 2026) returned zero results; the two crisis-keyword sets returned zero theatlantic.com URLs across 14 rows. The only Sep-29-week Atlantic OpenAI surface is the Sep-29 Kevin Roose book excerpt on 2017 AGI auction plans (newslocker relay, crawled <1h; historical register, relay_excerpt_bounded), not accountability coverage of the Sep 2026 crises. EXTENDS the m694 register-selection strand (Sep 6 Epley Ideas essay): the licensing partner's conduct episodes are routed to non-accountability registers (philosophical wonder, historical book excerpt) or to bounded-absence silence, while Meta's conduct goes to the AI Watchdog accountability register (m481 arms -0.75/-0.55, carried un-rescored per #807). The finding is register-AVAILABILITY, not mean-tone (per the #1127 precedent). Thesis-consistent with the standing "softer" coverage prediction (May 2024 Atlantic-OpenAI licensing deal). NOT a falsification-family member; ledger holds at 46; no new relationship direction (thirty-fifth absent).
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (target tone NOT_SCORED for absence, engine NOT run, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven). 4 browser.search query sets, 0 browser.open (excerpt-bounded per #503). 28 result rows / 1 new verbatim URL key (the newslocker Roose-excerpt relay; the #772 github.com commit URL in set 4 rejected as circular). 1 own-repo GitHub URL rejected as circular (git history, not ingested).
+- Background-suite status per #795: the #1135-launched full suite (writing to the goal hidden_files type_d_1135_full_suite.log) is LIKELY DEAD at this run's check - no live pytest process (pgrep self-match excluded via /proc cmdline re-check), log mtime 23:02 PDT (stale beyond the 900s bound), ~2% progress, zero summary tokens. Checked only, NOT touched; the tombstone verdict belongs to #1140 per #795. This run does not touch it.
+
+### Method
+- 4 browser.search query sets (The Atlantic OpenAI rogue agents security breach September 2026; The Atlantic OpenAI FTC probe agent safety investigation September October 2026; site:theatlantic.com OpenAI September 2026; The Atlantic magazine OpenAI coverage October 2026), 0 browser.open (excerpt-bounded per #503). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Pre-commit novelty greps per #715: zero test_type_a_1137 files on disk (glob); no Type A #1137 in git log (--grep); max numeric mechanism_id 912 in-tree pre-commit (m910/m911/m912 committed at #1132/#1133/#1134 Type A/B/C, verified at #1135 Type D, pinned still-green at #1136 Type E); zero numeric/underscore/dash next-number nine-one-four mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); the newslocker Roose-excerpt URL zero-hit repo-wide pre-commit (git grep -F); block key zero-hit repo-wide pre-commit; no #1137 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 59580/1461 pre-commit.
+- Literal discipline per #715: the forward-guard needles (next-number nine-one-four forms, the forty-seventh member-claim form, the thirty-fifth direction form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose. The landed-claim literals (FORTY-SIXTH member, THIRTY-FOURTH direction) are permitted; prose uses hyphenated/lowercase forms for the forward guards.
+
+### New Type A files
+- Tests: `tests/test_type_a_1137_atlantic_openai_sep26_oct01_crisis_window_silence_historical_register_vs_meta_watchdog_oct02_12am.py` (64 tests, 13 classes; 52 green pre-commit via venv python with 12 post-commit classes deselected by design; post-anchor re-run: anchor + rotation-guard green with the novelty pin deselected by design).
+
+### Commit hashes
+- main commit: 311b2e32 (311b2e328c16aa564405fc6bbe8803167ef8f170)
+- anchor followup (ANCHORED_SHA patch per #565): 4dce0951
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry + test-file constants patch per #719): PENDING
+- log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (pending).
+- Pushed to rayhe/mediascope main (pending at doc-sync time; see followup).
+
+### Doc-sync ratchet
+- README `| Tests |` line: 59580 -> 59644; test-file table: 1461 -> 1462 rows; #1137 row appended after the #1136 row.
+- ARCHITECTURE.md counts synced; #1137 row appended to the test tree after the #1136 row.
+- doc-sync 59580/1461 -> 59644/1462 (+64/+1).
+
+### Rotation guard
+- Rotation: this run is iteration #1137 Type A, the THIRD leg of the 1135-1139 window (D #1135 -> E #1136 -> A #1137 -> B #1138 -> C #1139, per the #565 anchor + rotation guard). Next run #1138 continues the window as Type B, inheriting the zero next-number nine-one-four forward guards and the no-thirty-fifth-direction / no-forty-seventh-member guards from #1137's TestGuardLifecycle1137 (pinned still-green at #1136-style checks; #1135's own pins flip by design as recorded in the staleness class).
+- Forward-looking staleness (expected, BY DESIGN): this file's TestRotationGuard novelty pin is red post-main-commit (deselected in post-commit runs); TestDocSync and TestIterationLog pins flip green once this doc-sync lands (they assert the pre-doc-sync state).
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
+
 ## #1136 Type E: podcast sentiment 150th verification cycle (GF 502 holds as newest, seventeenth verification, ~84h; EHE 52-day hold; Attention Sphere 150th no-match; ONE new press URL key - usnewsbreak bathrooms-class-action piece; frontier ADVANCES Sep 29 -> Sep 30, twelfth hold ends; GF streak restarts at one) - Type E SECOND leg of the 1135-1139 window (Oct 1 2026, 11:00 PM PDT; main commit 1970ab00 / anchor 524d612d / doc-sync 12641fd9; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59520/1460 -> 59580/1461 (+60/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes

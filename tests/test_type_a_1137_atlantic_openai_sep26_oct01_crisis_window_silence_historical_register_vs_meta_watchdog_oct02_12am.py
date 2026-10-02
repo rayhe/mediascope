@@ -844,12 +844,20 @@ class TestInflightIsolation1137:
 
     def test_this_run_adds_exactly_two_files(self):
         # This run's authored content: the m913 YAML block and this
-        # test file. Verified by marker presence in the working
-        # tree via git status --porcelain (git diff --name-only
-        # omits untracked files), not by whole-tree diff (which
-        # carries the in-flight runs' changes).
+        # test file. Post-main-commit the markers live in git
+        # history, not the working tree: the main commit must touch
+        # exactly these two files (the anchor followup touches only
+        # this test file). Pre-commit the working-tree markers were
+        # verified instead.
         assert "mechanism_id: 913" in _read(os.path.join(REPO_ROOT, M913_HOME))
         assert M913_KEY in _read(os.path.join(REPO_ROOT, M913_HOME))
-        porcelain = _git("status", "--porcelain")
-        assert "profiles/atlantic.yaml" in porcelain
-        assert OWN_BASENAME in porcelain
+        files = _git(
+            "show", "--name-only", "--format=", ANCHORED_SHA
+        ).split()
+        assert sorted(files) == sorted(
+            ["profiles/atlantic.yaml", "tests/" + OWN_BASENAME]
+        ), files
+        anchor_files = _git(
+            "show", "--name-only", "--format=", "4dce0951"
+        ).split()
+        assert anchor_files == ["tests/" + OWN_BASENAME], anchor_files
