@@ -1,9 +1,9 @@
-## #1148 Type B: m920 Dan Howley (Yahoo Finance) Sep-26 Meta-glasses/Apple-Watch same-consent-problem parity bound (thesis-level parity 0.0; fact-intensity residual Meta-harder ~0.10; journalist-level parity BOUND on the m75 privacy-vocabulary-bifurcation family + Type E Meta-exclusive-privacy-pressure standing observation (152 cycles); NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1145-1149 window (Oct 2 2026, 10:00 AM PDT; main commit 6dd1f44b / anchor 483ecbcc / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60363/1472 -> 60430/1473 (+67/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1148 Type B: m920 Dan Howley (Yahoo Finance) Sep-26 Meta-glasses/Apple-Watch same-consent-problem parity bound (thesis-level parity 0.0; fact-intensity residual Meta-harder ~0.10; journalist-level parity BOUND on the m75 privacy-vocabulary-bifurcation family + Type E Meta-exclusive-privacy-pressure standing observation (152 cycles); NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1145-1149 window (Oct 2 2026, 10:00 AM PDT; main commit 6dd1f44b / anchor 483ecbcc / doc-sync 29b487b5; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60363/1472 -> 60430/1473 (+67/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `6dd1f44b` (6dd1f44bb9f620972a61af30968127d0b7c66394) - verified via git rev-parse
 - Anchor followup `483ecbcc` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60363/1472 -> 60430/1473; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `29b487b5` (README 60363/1472 -> 60430/1473; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
