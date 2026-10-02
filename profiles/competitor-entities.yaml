@@ -28293,3 +28293,77 @@ type_c_1144_apple_siri_ai_publisher_negotiation_watch_day_fifty_one_zero_closure
   concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
   yaml_parse_clean: true
   ascii_only: true
+
+
+type_c_1149_reach_plc_h1_2026_earnings_ai_usage_disclosure_many_millions_oct02_11am:
+  block_key: type_c_1149_reach_plc_h1_2026_earnings_ai_usage_disclosure_many_millions_oct02_11am
+  mechanism_id: 921
+  mechanism_name: 'Reach plc H1 2026 Earnings Disclosure Quantifies Unlicensed AI Usage (Many Millions of Times a Day) and Names AI Licensing Deals a Near-Term Strategic Priority - Publisher-Side P&L Leg Extending m468; the Publisher-Side Mirror of #27 Unilateral Pricing (m891/m918)'
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1149
+  iteration_type: 'C'
+  iteration_time: '2026-10-02 11:00 PDT'
+  connects_to:
+  - 468
+  - 735
+  - 777
+  - 891
+  - 918
+  relationship_direction_taxonomy: 'No new direction: this run documents the publisher side of the meter. North''s usage-based preference (m468: the Amazon deal ''gives us more control over how our content is used, what we get in return, and crucially, more visibility'') is the publisher-side mirror of #27 unilateral pricing (m891, extended at m918): in both geometries the meter is usage-based, but CONTROL of the meter is contested - the publisher wants the meter for visibility into its own content''s use, while the lab-side variable-pay proposal (m918: ''a pot Apple sizes, divided by a counter Apple runs'') keeps the meter inside the payer. Same meter vocabulary, opposite control arrow. This mechanism EXTENDS m468 (the deal leg now has its P&L-side disclosure), m735/m777 (the publisher AI-revenue disclosure family: Wiley''s training-vs-recurring mix), and the #27 family; it does not earn a new direction. The thirty-sixth direction stays absent by design (negative guard); the thirty-fifth (m915, METER-THEN-INVITE) stands as the latest landed direction per the m807 enumeration.'
+  finding: 'Reach plc''s H1 2026 half-year report (RNS regulatory announcement, published ~Jul 22 2026; CEO Piers North''s review) contains the first regulated-earnings quantification of unlicensed AI usage in the MediaScope corpus: ''we know AI firms are using our content in their products many millions of times a day.'' The same review names ''AI licensing deals'' one of three near-term strategic priorities (alongside digital subscriptions and quality video): ''our near-term focus is on digital subscriptions, quality video and AI licensing deals.'' North frames the shift as structural: ''This represents a fundamental shift in how people access our content, but through our strategy we are able to take advantage of the opportunities within this shift.'' H1 2026 financials: GBP 233m revenue, 18.5% operating margin (+1pp YoY), GBP 43m adjusted operating profit, 113% cash conversion; 35m adults engaging with Reach content monthly, social video views +55%, social followers +15%. The deal-pipeline leg comes from North''s FY2025 results transcript: ''we''re in conversation with a number of major platforms, and these potential deals represent an ongoing stream of revenue'' - with the usage-based preference restated: the Amazon deal is ''not just a flat feed, but it''s also based on usage. It gives us more control and crucially more visibility.'' The Digiday interview adds the revenue-mix expectation: ''AI licensing in some form will show up in Reach''s revenue mix, especially with how the market is moving toward pay-per-use licensing'' (North: ''AI engines will differentiate themselves by the quality of their output''). Context leg (India, same unlicensed-use theme): the DNPA''s position in Sep-15-2026 ANI v. OpenAI appeal coverage (particle.news) that publishers lose licence fees and attribution when models reproduce their articles - the publisher-side cost of the ''many millions of times a day'' usage North quantifies.'
+  money_flow: 'Unlicensed-use channel (OBSERVED, $0): AI firms use Reach content ''many millions of times a day'' in their products (North, H1 2026 RNS) - no payment disclosed for this volume. Licensed channel (OBSERVED, m468): Reach x Amazon usage-based deal (Mar 2 2026, Nova plus Alexa) - value undisclosed by design of the usage-based structure. Pipeline channel (PREDICTIVE): ''in conversation with a number of major platforms'' - no counterparties named, no terms. Strategic-priority channel (DOCUMENTED): AI licensing deals named a near-term priority alongside digital subscriptions and quality video in a regulated earnings disclosure. The asymmetry: the observed unlicensed volume (many millions of daily uses) is quantified while the licensed revenue that would price it is still a pipeline - the meter exists in the Amazon deal (usage-based, publisher-visible) but the volume it meters is undisclosed.'
+  confounders:
+  - strength: STRONG
+    text: '''many millions of times a day'' is an unattributed quantification inside a CEO narrative section - no methodology, no definition of ''use'' (licensed plus unlicensed plus incidental retrieval all plausibly counted), and no split between the Amazon-licensed volume and the rest.'
+  - strength: STRONG
+    text: 'Excerpt-tier evidence (0 browser.open per #503): the RNS text reaches this mechanism via search-result excerpts and regulatory mirrors (investegate, LSE, Sharecast, quartr); the figures are corroborated across four mirrors but none is a first-hand page read.'
+  - strength: MODERATE
+    text: 'Strategic signaling: naming AI licensing a near-term priority in an earnings disclosure is addressed to the market (growth narrative) and to AI labs (negotiating posture: ''in conversation with a number of major platforms'') - the pipeline claim is unverifiable and self-serving.'
+  - strength: MODERATE
+    text: 'Reach is a UK national/regional publisher, not a MediaScope tracked publication; no coverage-tone follow-up is possible in this corpus. Ecosystem-deal mapping only.'
+  - strength: WEAK
+    text: 'The ''in conversation'' pipeline line comes from the FY2025 transcript (early 2026), predating the H1 report by ~5 months; the pipeline''s current state is unknown and the H1 review does not repeat the ''number of major platforms'' phrasing.'
+  coverage_nexus: 'The H1 2026 RNS is the coverage event (regulatory disclosure, Jul 22 2026); Digiday''s North interview is the trade-press framing (pay-per-use entering the revenue mix); particle.news''s Sep-15-2026 ANI-appeal piece carries the DNPA context leg. No tracked-publication (WIRED, The Verge, NYT, FT, Guardian, Business Insider, Gizmodo) editorial on Reach''s AI-licensing posture surfaced in this run''s bounded sets (bounded absence per the iteration-492 rule, not a finding).'
+  sources:
+  - url: http://www.investegate.co.uk/announcement/rns/reach--rch/reach-plc-half-year-report/9680684
+    what: 'Investegate RNS mirror (Jul 22 2026): Reach plc half-year report; North review - ''we know AI firms are using our content in their products many millions of times a day''; near-term focus ''on digital subscriptions, quality video and AI licensing deals''; GBP 233m revenue, 18.5% operating margin, GBP 43m adjusted operating profit, 113% cash conversion. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.reachplc.com/content/dam/reach/corporate/documents/results-and-reports/2026/hy-26-results.pdf.downloadasset.pdf
+    what: 'Reach plc official H1 2026 results PDF (reachplc.com): primary-source regulatory document carrying the North review text verbatim. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.lse.co.uk/rns/RCH/reach-plc-half-year-report-k5e3wuj0wc7irxi.html
+    what: 'London Stock Exchange RNS mirror: corroborates the H1 2026 North review text and financials. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.sharecast.com/news/Results-and-Trading-Reports/Reach-plc-Half-year-Report--dl36087056.html
+    what: 'Sharecast regulatory mirror: corroborates the H1 2026 North review text and financials. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://www.reachplc.com/content/dam/reach/corporate/documents/results-and-reports/2025/fy-25-transcript.pdf.downloadasset.pdf
+    what: 'Reach plc FY2025 results transcript (North): ''we''re in conversation with a number of major platforms, and these potential deals represent an ongoing stream of revenue''; the Amazon deal ''not just a flat feed, but it''s also based on usage. It gives us more control and crucially more visibility''; ''Without our information, analysis, archive, and indeed breaking news, AI models quickly lose their value.'' URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://digiday.com/media/the-big-bang-has-happened-reach-gets-proactive-on-ai-era-referrals-starting-with-subscriptions/
+    what: 'Digiday (North interview): ''AI licensing in some form will show up in Reach''s revenue mix, especially with how the market is moving toward pay-per-use licensing''; ''AI engines will differentiate themselves by the quality of their output''; Reach cut 321 roles Sep 2025 while planning 135 video-focused roles. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  - url: https://particle.news/story/delhi-high-court-refuses-immediate-restraint-on-openai-in-ani-copyright-appeal
+    what: 'Particle (Sep 15 2026): Division Bench declined ex-parte restraint on OpenAI in ANI''s appeal, issued notice, listed Dec 5 hearing; DNPA position that publishers lose licence fees and attribution when models reproduce articles - context leg for the unlicensed-use cost theme. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-02'
+    novel: true
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  falsification_family_member: false
+  falsification_family: 'NOT a member (ledger holds at 46 per the #754 convention; financial-incentive mapping of the Reach H1 2026 AI-usage disclosure per the #609/#614 qualitative boundary; no coverage-tone pair scored, so no uniform-prediction test; the pipeline is a stated intention, not a money flow; FORTY-SEVENTH member-claim form absent repo-wide).'
+  novelty: 'FIRST dedicated corpus mechanism on Reach plc''s H1 2026 earnings disclosure quantifying unlicensed AI usage (zero ''many millions of times a day'' hits repo-wide pre-commit) and FIRST publisher-side P&L leg for m468''s usage-based geometry. Pre-commit novelty verified: zero test_type_c_1149 files on disk (glob); no "Type C #1149" in git log (--grep); max numeric mechanism_id 920 pre-commit (m920 Type B #1148, profiles/careers/journalists.yaml); zero numeric/underscore/dash 921 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; affirmative THIRTY-SIXTH direction claim absent repo-wide pre-commit (absence-documentation only); THIRTY-FIFTH direction present (m915). The seven source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: 'Iteration #1149 Type C is the FIFTH and CLOSING leg of the 1145-1149 window (D->E->A->B->C per #565 anchor + rotation guard; #1145 Type D main 8f4266d2/anchor ea8fa07d/doc-sync b03e4f59/log-hash 575429ce, #1146 Type E main a2da1a45/anchor f8b2664d/doc-sync cb1e1757/log-hash 1c4591c2, #1147 Type A main 5837f480/anchor 91b57932/doc-sync 995bb8f4/log-hash b12dd6e2, #1148 Type B main 6dd1f44b/anchor 483ecbcc/doc-sync 29b487b5/log-hash 9bb4ae8c; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_c_1149 files on disk (glob); no "Type C #1149" in git log (--grep); max numeric mechanism_id 920 pre-commit; zero numeric/underscore/dash 921 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 7 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). Guard lifecycle: #1148''s max-920 + zero-921-numeric guards fail BY DESIGN at this run (pinned as forward-looking staleness in the #1149 test file); #1148''s zero-921 underscore/dash, no-forty-seventh-member, forty-sixth-intact, thirty-fifth-intact guards stay green (verified via supersession pins in the #1149 test file). This run lands mechanism 921; no new relationship direction (thirty-sixth absent by design). Next window 1150-1154 opens with Type D #1150; the #1145 background-suite verdict belongs to #1150 per #795.'
+  concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+  yaml_parse_clean: true
+  ascii_only: true
