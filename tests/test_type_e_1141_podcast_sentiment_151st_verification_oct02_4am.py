@@ -145,7 +145,7 @@ OWN_BASENAME = (
     "test_type_e_1141_podcast_sentiment_151st_verification_oct02_4am.py"
 )
 
-ANCHORED_SHA = "0" * 40  # patched per #565 in the anchor followup
+ANCHORED_SHA = "7d6a4a7a0ed1b4a75653cf575e7a180b7dc6d3bb"  # patched per #565 in the anchor followup
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
