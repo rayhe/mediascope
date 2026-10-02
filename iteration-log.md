@@ -1,9 +1,9 @@
-## #1147 Type A: m919 WSJ x Anthropic Oct-1 FTC-probe disclosure asymmetry + Aug-25 WSJ-attributed $30T TAM-pitch arm vs carried WSJ x Meta arms (illustrative delta +0.15 near-null, NOT significant; NOT a falsification-family member, ledger holds at 46; EXTENDS the news-corp.yaml anthropic disclosure_asymmetry strand) - Type A THIRD leg of the 1145-1149 window (Oct 2 2026, 09:00 AM PDT; main commit 5837f480 / anchor 91b57932 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60305/1471 -> 60363/1472 (+58/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1147 Type A: m919 WSJ x Anthropic Oct-1 FTC-probe disclosure asymmetry + Aug-25 WSJ-attributed $30T TAM-pitch arm vs carried WSJ x Meta arms (illustrative delta +0.15 near-null, NOT significant; NOT a falsification-family member, ledger holds at 46; EXTENDS the news-corp.yaml anthropic disclosure_asymmetry strand) - Type A THIRD leg of the 1145-1149 window (Oct 2 2026, 09:00 AM PDT; main commit 5837f480 / anchor 91b57932 / doc-sync 995bb8f4; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60305/1471 -> 60363/1472 (+58/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `5837f480` (5837f4800c7758234dd50dab66ee6b775310fd89) - verified via git rev-parse
 - Anchor followup `91b57932` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60305/1471 -> 60363/1472; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `995bb8f4` (README 60305/1471 -> 60363/1472; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
