@@ -1,9 +1,9 @@
-## #1134 Type C: m912 John Georges (Louisiana publisher) pursues Meta AI-content licensing deal while his outlets' newsroom covers Meta's Louisiana investments - NEGOTIATE-WHILE-COVERING as the THIRTY-FOURTH relationship direction - NOT a falsification-family member, ledger holds at 46 - Type C FIFTH and CLOSING leg of the 1130-1134 window (Oct 1 2026, 09:00 PM PDT; main commit afa0e480 / anchor 30577b04 / doc-sync TBD / log-hash followup registers all three hashes here per #721 (this commit); doc-sync 59351/1458 -> 59438/1459 (+87/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1134 Type C: m912 John Georges (Louisiana publisher) pursues Meta AI-content licensing deal while his outlets' newsroom covers Meta's Louisiana investments - NEGOTIATE-WHILE-COVERING as the THIRTY-FOURTH relationship direction - NOT a falsification-family member, ledger holds at 46 - Type C FIFTH and CLOSING leg of the 1130-1134 window (Oct 1 2026, 09:00 PM PDT; main commit afa0e480 / anchor 30577b04 / doc-sync 0390c85e / log-hash followup registers all three hashes here per #721 (this commit); doc-sync 59351/1458 -> 59438/1459 (+87/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `afa0e480` (afa0e4801c08f685ca63bde62874b5152ca2bb3a) - verified via git rev-parse
 - Anchor followup `30577b04` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README/ARCHITECTURE/iteration-log per #719)
+- Doc-sync `0390c85e` (README/ARCHITECTURE/iteration-log per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
