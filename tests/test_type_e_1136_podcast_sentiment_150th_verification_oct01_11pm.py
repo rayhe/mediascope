@@ -673,8 +673,8 @@ class TestDocSync:
 
     def test_readme_stats_current(self):
         readme = _read(README_PATH)
-        assert "| 59520 |" in readme
-        assert "1460" in readme
+        assert "| 59580 |" in readme
+        assert "1461" in readme
 
 
 class TestIterationLog:
