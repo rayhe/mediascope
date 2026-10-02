@@ -3,7 +3,7 @@
 ### Commit hashes
 - Main commit `a2da1a45` (a2da1a453b3bdebce79a2453c86ddf2ec0cc6d25) - verified via git rev-parse
 - Anchor followup `f8b2664d` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60242/1470 -> 60305/1471; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 152nd-cycle section + Tracked Sources 151->152; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `cb1e1757` (README 60242/1470 -> 60305/1471; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 152nd-cycle section + Tracked Sources 151->152; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
