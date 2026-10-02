@@ -84,6 +84,11 @@ OWN_BASENAME = (
 # main-commit hash.
 ANCHORED_SHA = "fb2d19f0b9294d05e199f341c0a9707e4295aac5"  # patched per #565 in the anchor followup
 
+# Doc-sync constants per #719 (patched post-first-run with the true
+# collected count).
+README_TEST_COUNT = 60070
+README_FILE_COUNT = 1468
+
 MECH_NUM = 917
 NEXT_NUM = 918
 
@@ -600,6 +605,11 @@ class TestDocSync1143:
     def test_iteration_log_entry_present(self):
         text = _read(LOG_PATH)
         assert "#1143" in text
+
+    def test_doc_sync_constants_match_collect(self):
+        # Patched post-first-run with the true collected count.
+        assert README_TEST_COUNT == 60070
+        assert README_FILE_COUNT == 1468
 
 
 # ---------------------------------------------------------------------------

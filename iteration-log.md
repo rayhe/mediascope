@@ -1,3 +1,47 @@
+## #1143 Type B: m917 Cristina Criddle (FT) Sep-16-2026 "blindsided" accountability-adversarial on the OpenAI licensing-deal partner (-0.35, headline-tier: techmeme 2026-09-16 13:57:16 + biztoc relay) - TEMPORAL EXTENSION of m758's writer-level falsification pattern (Type B #878: Aug-11 Bakalar ethics-chief-exit -0.40, Meta within-piece constructive contrast +0.15, both carried per #807) to a second crisis-window peg five weeks later - Type B FOURTH leg of the 1140-1144 window (Oct 2 2026, 06:00 AM PDT; main commit fb2d19f0 / anchor 68d3c43f / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60002/1467 -> 60070/1468 (+68/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `fb2d19f0` (fb2d19f0b9294d05e199f341c0a9707e4295aac5) - verified via git rev-parse
+- Anchor followup `68d3c43f` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 60002/1467 -> 60070/1468; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60070/1468)
+- Log-hash followup: this commit (terminal per #721)
+
+### Rotation transparency
+- This run is iteration #1143 Type B, the FOURTH leg of the 1140-1144 window (D #1140 -> E #1141 -> A #1142 -> B #1143 -> C #1144 per the #565 anchor + rotation guard).
+- Committed predecessor #1142 Type A (5:00 AM PDT Oct 2) is the window's THIRD leg - chain verified pre-commit: main 224f054e / anchor 3094ab16 / doc-sync a716c109 / log-hash 7d36f101.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1144 Type C closes the window.
+
+### Finding summary
+- m917 (profiles/careers/journalists.yaml cristina_criddle/competitor_coverage, 4-space indent, `mechanism_id: 917` field form; block key `type_b_1143_cristina_criddle_ft_blindsided_openai_anthropic_m758_temporal_extension_sep16`; mechanism_ids [758, 917]): TEMPORAL EXTENSION of m758 (Type B #878, Sep 20) to a second crisis-window peg five weeks later. New arm: Cristina Criddle's Sep-16-2026 FT piece "Sources: OpenAI and Anthropic staff felt blindsided by Dario Amodei's and Sam Altman's calls to slow the frontier; some fear evaluators may compromise security" - accountability-adversarial on the FT x OpenAI licensing-deal partner (mechanism 54, Apr 2024, ~$5-10M/yr per #872), MANUAL ILLUSTRATIVE -0.35 at headline tier (techmeme timestamp 2026-09-16 13:57:16 + biztoc relay `https://biztoc.com/x/88145bbd4e93e047`; FT original paywalled, no full-text read, 0 browser.open per #503). Carried per #807: the Aug-11 Bakalar ethics-chief-exit arm (-0.40) and its within-piece Meta constructive contrast (+0.15, Bakalar's six years building Meta's AI ethics programs framed as credential). The writer-level pattern from #878 - adversarial on the partner, favorable frame for the non-payer Meta - replicates on the second peg: illustrative Meta-minus-OpenAI delta +0.50 (n=1 new arm, NOT significant). The uniform-softening prediction fails at the writer level again - but this run is NOT a new falsification-family member: the same writer/partner prediction test was already counted at #878 as the TWENTY-EIGHTH member; a same-writer temporal replication is not a new prediction test. Ledger holds at 46 (FORTY-SIXTH member-form in profiles/the-verge.yaml m907; FORTY-SEVENTH member-claim form absent repo-wide as designed negative guard; in-file TWENTY-EIGHTH terminal, TWENTY-NINTH negative guard). No new relationship direction (THIRTY-FIFTH landed at #1139; thirty-sixth absent as designed negative guard).
+- Confounders (strong-first): (1) STRONG: dual-entity peg - the piece covers OpenAI AND Anthropic jointly, so the adversarial register is not cleanly partner-targeted; (2) STRONG: headline-tier evidence only vs m758's LinkedIn-verbatim lede + six mirrors; (3) the Meta contrast is carried from a DIFFERENT piece (m758's within-piece contrast), not the Sep-16 piece itself; (4) temporal gap: Sep-16 predates the Sep-26 rogue-agent disclosure and Sep-30 FTC probe; (5) institutional-level deal vs individual-correspondent autonomy.
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven). 11 browser.search query sets, 0 browser.open (excerpt-bounded per #503).
+- Background-suite status per #795: the #1140-launched full suite (goal hidden_files type_d_1140_full_suite.log) was OBSERVED DEAD at the 06:07 PDT check - last write 04:07 PDT, 3555 bytes / ~5% dots, no live pytest processes; twelfth consecutive suite death. Verdict and tombstoning belong to #1145 per #795. This run checked only; does not touch it.
+
+### Method
+- 11 browser.search query sets ((1) Wehkamp smart glasses journalist - REJECTED; (2) Snap AR glasses launch 2026 - REJECTED; (3) Karissa Bell Snap glasses 2026 - REJECTED (saturated m113/m722/m764/m773, #1043); (4) Hans Anders smart glasses Consumentenbond - REJECTED (bounded absence per #492); (5) site:wired.com Meta October 2026 - 0 rows (bounded absence); (6) retaildetail.eu smart glasses 2026 - REJECTED; (7) Reuters FTC probe September 30 2026 byline - CONTEXT ONLY; (8) Cristina Criddle FT Meta September 2026 - REJECTED; (9) Cristina Criddle FTC probe - SELECTED (Sep-16 blindsided piece); (10) Dell Cameron October 2026 - REJECTED (saturated m66/m366); (11) Dell Cameron NameTag Meta - REJECTED), 0 browser.open (excerpt-bounded per #503). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Pre-commit novelty greps per #715: zero test_type_b_1143 files on disk (glob); no Type B #1143 in git log (--grep); max numeric mechanism_id 916 in-tree pre-commit (m913/m914/m915 committed at #1137/#1138/#1139, m916 at #1142, verified pre-commit); zero numeric/underscore/dash next-number nine-one-seven mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit; biztoc relay URL zero-hit repo-wide pre-commit; "blindsided" pre-existing hits repo-wide unrelated (Vox union, Meta fact-checkers, David Gilbert); no #1143 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 60002/1467 pre-commit.
+- Literal discipline per #715: the forward-guard needles (next-number nine-one-eight forms, the forty-seventh member-claim form, the thirty-sixth direction form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose. The landed-claim literals (FORTY-SIXTH member, THIRTY-FIFTH direction) are permitted; prose uses hyphenated/lowercase forms for the forward guards.
+
+### New Type B files
+- Tests: `tests/test_type_b_1143_cristina_criddle_ft_blindsided_openai_anthropic_sep16_m758_temporal_extension_oct02_6am.py` (68 tests, 13 classes; 60 green pre-commit via venv python with TestDocSync/TestIterationLog deselected by design; two in-gate defects fixed: research-method assert wording, NOT-artifact-grade string).
+
+### Commit hashes
+- main commit: fb2d19f0 (fb2d19f0b9294d05e199f341c0a9707e4295aac5)
+- anchor followup (ANCHORED_SHA patch per #565): 68d3c43f
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): TBD
+- log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
+
+### Doc-sync ratchet
+- README `| Tests |` line: 60002 -> 60070; test-file table: 1467 -> 1468 rows; #1143 row appended after the #1142 row.
+- ARCHITECTURE.md counts synced; #1143 row appended to the test tree after the #1142 row.
+- doc-sync 60002/1467 -> 60070/1468 (+68/+1).
+
+### Rotation guard
+- Rotation: this run is iteration #1143 Type B, the FOURTH leg of the 1140-1144 window (D #1140 -> E #1141 -> A #1142 -> B #1143 -> C #1144, per the #565 anchor + rotation guard). Next run #1144 closes the window as Type C, inheriting the zero next-number nine-one-eight forward guards and the no-thirty-sixth-direction / no-forty-seventh-member guards from this run's TestGuardLifecycle1143 (#1142's pins flip by design as recorded in the staleness class).
+- Forward-looking staleness (expected, BY DESIGN): this file's TestRotationGuard novelty pin is red post-main-commit (deselected in post-commit runs); TestDocSync and TestIterationLog pins flip green once this doc-sync lands (they assert the pre-doc-sync state).
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 ## #1142 Type A: m916 WIRED x OpenAI Sep-26 rogue-agent government-disclosure bounded-absence silence vs Dell Cameron Jul-28 adversarial register (-0.60) and carried WIRED x Meta arms - THIRD crisis peg tested at WIRED (register-AVAILABILITY extension of the m694 strand and the WIRED x OpenAI crisis-window strand) - Type A THIRD leg of the 1140-1144 window (Oct 2 2026, 05:00 AM PDT; main commit 224f054e / anchor 3094ab16 / doc-sync a716c109; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59941/1466 -> 60002/1467 (+61/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
