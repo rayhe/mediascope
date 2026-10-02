@@ -90,8 +90,8 @@ NOVEL_URLS = (
 )
 
 # Patched post-commit once README/ARCHITECTURE doc-sync lands (per #719).
-README_TEST_COUNT = 60785  # pre-doc-sync value; patched post-first-run
-README_FILE_COUNT = 1478  # pre-doc-sync value; patched post-first-run
+README_TEST_COUNT = 60877  # post-doc-sync total (60785 + 92)
+README_FILE_COUNT = 1479  # post-doc-sync total
 TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
@@ -704,14 +704,23 @@ class TestResearchMethod1154:
 # ---------------------------------------------------------------------------
 
 class TestDocSync1154:
-    def test_readme_counts_patched(self):
-        # Patched after doc-sync ratchet lands.
-        assert README_TEST_COUNT >= 0
-        assert README_FILE_COUNT >= 0
+    def test_readme_stats_ratchet(self):
+        text = _read(os.path.join(REPO_ROOT, "README.md"))
+        assert str(README_TEST_COUNT) in text
+        assert str(README_FILE_COUNT) in text
 
-    def test_own_basename_in_readme(self):
-        # Post-doc-sync: README references the test file.
-        assert TEST_BASENAME == OWN_BASENAME
+    def test_readme_test_table_row(self):
+        text = _read(os.path.join(REPO_ROOT, "README.md"))
+        assert "test_type_c_1154_google_pay_per_value" in text
+
+    def test_architecture_tree_row(self):
+        text = _read(os.path.join(REPO_ROOT, "docs", "ARCHITECTURE.md"))
+        assert "test_type_c_1154_google_pay_per_value" in text
+
+    def test_doc_sync_constants_match_collect(self):
+        # Patched post-first-run with the true collected count.
+        assert README_TEST_COUNT == 60877
+        assert README_FILE_COUNT == 1479
 
 
 # ---------------------------------------------------------------------------
@@ -719,17 +728,17 @@ class TestDocSync1154:
 # ---------------------------------------------------------------------------
 
 class TestIterationLog1154:
-    def test_iteration_log_exists(self):
-        assert os.path.exists(LOG_FILE)
+    def test_log_entry_header(self):
+        text = _read(os.path.join(REPO_ROOT, "iteration-log.md"))
+        assert "## #1154 Type C" in text
 
-    def test_log_mentions_1154(self):
-        # Post-commit: iteration-log.md gains the #1154 entry.
-        # Pre-commit this test is a placeholder.
-        assert True
-
-    def test_no_duplicate_1154_entry_yet(self):
-        text = _read(LOG_FILE)
+    def test_no_duplicate_1154_entries(self):
+        text = _read(os.path.join(REPO_ROOT, "iteration-log.md"))
         assert text.count("## #1154 Type C") <= 1
+
+    def test_window_fifth_closing_leg_noted(self):
+        text = _read(os.path.join(REPO_ROOT, "iteration-log.md"))
+        assert "1150-1154 window" in text and "FIFTH" in text
 
 
 # ---------------------------------------------------------------------------
