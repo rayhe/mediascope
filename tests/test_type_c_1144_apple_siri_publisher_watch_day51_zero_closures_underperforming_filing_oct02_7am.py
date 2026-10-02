@@ -111,8 +111,8 @@ NOVEL_URLS = (
 )
 
 # Patched post-commit once README/ARCHITECTURE doc-sync lands (per #719).
-README_TEST_COUNT = 0  # placeholder per #719 (patched in doc-sync followup)
-README_FILE_COUNT = 0  # placeholder per #719 (patched in doc-sync followup)
+README_TEST_COUNT = 60151  # post-doc-sync total (60070 + 81)
+README_FILE_COUNT = 1469  # post-doc-sync total
 TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
