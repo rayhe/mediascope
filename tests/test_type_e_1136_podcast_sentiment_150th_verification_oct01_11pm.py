@@ -135,7 +135,7 @@ OWN_BASENAME = (
     "test_type_e_1136_podcast_sentiment_150th_verification_oct01_11pm.py"
 )
 
-ANCHORED_SHA = "0" * 40  # placeholder pre-commit; patched per #565 in the anchor followup
+ANCHORED_SHA = "1970ab0044df27f4a39aea82cd4fbd0adac641cf"  # patched per #565 in the anchor followup
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
