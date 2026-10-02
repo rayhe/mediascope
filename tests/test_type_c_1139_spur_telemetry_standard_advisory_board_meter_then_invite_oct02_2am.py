@@ -82,8 +82,8 @@ STORYBOARD_SPUR_URL = (
 )
 
 # Patched post-commit once README/ARCHITECTURE doc-sync lands.
-README_TEST_COUNT = 0  # placeholder per #719 (patched in doc-sync followup)
-README_FILE_COUNT = 0  # placeholder per #719 (patched in doc-sync followup)
+README_TEST_COUNT = 59796  # post-doc-sync total (59710 + 86)
+README_FILE_COUNT = 1464  # post-doc-sync total
 TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
