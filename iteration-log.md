@@ -1,9 +1,9 @@
-## #1141 Type E: podcast sentiment 151st verification cycle (GF 502 holds as newest, eighteenth verification, ~89h; EHE 53-day hold; Attention Sphere 151st no-match; THREE new press URL keys - particle Dutch retail pull, techcentral SA launch, wisevoter Hans Anders Oct-2; frontier ADVANCES Sep 30 -> Oct 2; GF streak advances to two) - Type E SECOND leg of the 1140-1144 window (Oct 2 2026, 04:00 AM PDT; main commit 7d6a4a7a / anchor 9f96f7d1 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59880/1465 -> 59941/1466 (+61/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1141 Type E: podcast sentiment 151st verification cycle (GF 502 holds as newest, eighteenth verification, ~89h; EHE 53-day hold; Attention Sphere 151st no-match; THREE new press URL keys - particle Dutch retail pull, techcentral SA launch, wisevoter Hans Anders Oct-2; frontier ADVANCES Sep 30 -> Oct 2; GF streak advances to two) - Type E SECOND leg of the 1140-1144 window (Oct 2 2026, 04:00 AM PDT; main commit 7d6a4a7a / anchor 9f96f7d1 / doc-sync c1f3e366; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59880/1465 -> 59941/1466 (+61/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `7d6a4a7a` (7d6a4a7a0ed1b4a75653cf575e7a180b7dc6d3bb) - verified via git rev-parse
 - Anchor followup `9f96f7d1` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 59880/1465 -> 59941/1466; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 151st-cycle section + Tracked Sources 150->151; iteration-log entry; test-file constants patch per #719)
+- Doc-sync `c1f3e366` (README 59880/1465 -> 59941/1466; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 151st-cycle section + Tracked Sources 150->151; iteration-log entry; test-file constants patch per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
