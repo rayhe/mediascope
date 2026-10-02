@@ -26113,3 +26113,104 @@ stevie_bonifield:
       - '#269 (TechCrunch editorial division of labor: Ropek-on-Snap vs Perez/Ha-on-Meta vocabulary routing - the Sep-16 Snap arm is Ropek''s byline, banned and in corpus as m728)'
       - '#1008 (Lily Hay Newman WIRED: Meta private-processing pinky-promise vs Apple Watch audio intelligence - same peg-matched cross-entity convention)'
       no_analysis_json_update: true
+
+dan_howley:
+  name: Dan Howley
+  current_role: Technology Editor
+  current_publication: Yahoo Finance
+  publication_owner: Yahoo Inc.
+  beat: [consumer tech, AI hardware, wearables, tech policy]
+  career_history: 'Dan Howley is Yahoo Finance''s Technology Editor, covering consumer tech, AI hardware, and tech policy on Yahoo Finance video segments (Market Domination, Opening Bid, Morning Brief). Recent wearables coverage includes the Sep-2026 Apple Watch Audio Intelligence segment and the Jun-2026 Meta cheaper AI glasses segment, both relay-attested this run.'
+  notes: 'Type B #1148 (Oct 2 2026): mechanism 920 within-piece cross-entity register parity - FIRST dedicated Type B mechanism on Dan Howley in journalists.yaml (zero dan_howley YAML key pre-commit, per the #643 convention). Question: does a Yahoo Finance tech editor apply privacy-pressure framing exclusively to Meta''s camera glasses, or does the consent-problem register extend to a non-Meta ambient-listening wearable in the same segment? SEGMENT (Sep 26 2026, new, first corpus appearance): "Why Meta''s glasses and Apple''s watch raise the same consent problem" (Yahoo Finance video; YouTube https://www.youtube.com/watch?v=p80DDeG9otQ; written mirror https://www.foreignpolicyjournal.com/2026/09/26/ai-wearables-from-meta-nasdaq-meta-and-apple-nasdaq-aapl-raise-fresh-privacy-and-consent-concerns/; Last Updated 6 days ago; excerpt-tier, 0 browser.open per #503). APPLE ARM: Live Rewind - "allows the device to listen continuously and produce a transcript of the last 15 seconds of any conversation"; Siri Recap - "summarizes a user''s entire day in a broad, bulleted overview"; Howley: "while Apple has been clear it does not have access to the underlying audio data, the features still raise uncomfortable questions about ambient recording in everyday public situations"; personal cab-gossip example (two people, attribution straightforward); MANUAL ILLUSTRATIVE -0.25. META ARM: "Meta (NASDAQ: META) has faced similar scrutiny over its Smart Glasses, which feature built-in cameras and an LED indicator light intended to signal when recording is active"; "Tech journalist Joanna Stern previously uncovered individuals selling services on Facebook Marketplace to disable that indicator light, allowing users to record others without their knowledge"; MANUAL ILLUSTRATIVE -0.35. THESIS PARITY: the segment''s thesis is explicitly symmetric - the SAME consent problem across both entities. Fact-intensity residual: the Meta arm carries the harder concrete fact (modder drill-outs); the Apple arm carries an anecdote plus Apple''s no-audio-access claim relayed verbatim, softening it. Thesis-level delta 0.0; evidence-intensity edge Meta-harder by ~0.10. The finding is a journalist-level PARITY BOUND on the m75 privacy-vocabulary-bifurcation family (Victoria Song) and the Type E Meta-exclusive-privacy-pressure standing observation (152 cycles): a new journalist applies the consent-problem register symmetrically to Apple''s always-on ambient-audio watch and Meta''s camera glasses. It bounds the pattern''s journalist-level universality; it does not overturn the aggregate 152-cycle pattern. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule.'
+  mechanism_ids: [920]
+  source_urls:
+  - https://www.youtube.com/watch?v=p80DDeG9otQ
+  - https://www.foreignpolicyjournal.com/2026/09/26/ai-wearables-from-meta-nasdaq-meta-and-apple-nasdaq-aapl-raise-fresh-privacy-and-consent-concerns/
+  competitor_coverage:
+    type_b_1148_dan_howley_yahoo_finance_meta_glasses_apple_watch_same_consent_problem_parity_bound_sep26:
+      iteration: 1148
+      mechanism_id: 920
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-02 10:00 PDT'
+      block_key: type_b_1148_dan_howley_yahoo_finance_meta_glasses_apple_watch_same_consent_problem_parity_bound_sep26
+      test_file: tests/test_type_b_1148_dan_howley_yahoo_finance_meta_glasses_apple_watch_same_consent_problem_parity_bound_sep26_10am.py
+      author: Kit (with Ray)
+      journalist: Dan Howley
+      publication: yahoo-finance
+      window: '1145-1149 window FOURTH leg (D #1145 -> E #1146 -> A #1147 -> B #1148 -> C #1149)'
+      segment:
+        title: 'Why Meta''s glasses and Apple''s watch raise the same consent problem'
+        date: '2026-09-26'
+        outlet: Yahoo Finance video (Market Domination with Brooke DiPalma)
+        participants: 'Dan Howley (Technology Editor, Yahoo Finance), Brooke DiPalma (host), Center for Democracy and Technology, Electronic Frontier Foundation'
+        timestamps: '0:00 All these devices are listening to us; 0:13 Apple''s Live Rewind and the last 15 seconds; 3:03 What to expect from OpenAI''s developer day; 3:24 A handheld device, Jony Ive, and the Apple lawsuit; 5:55 Close'
+        url_youtube: https://www.youtube.com/watch?v=p80DDeG9otQ
+        url_mirror: https://www.foreignpolicyjournal.com/2026/09/26/ai-wearables-from-meta-nasdaq-meta-and-apple-nasdaq-aapl-raise-fresh-privacy-and-consent-concerns/
+        evidence_tier: 'excerpt-tier (YouTube description + scraper-mirror article; 0 browser.open per #503; the segment''s spoken register beyond the description is unattested)'
+        last_updated: '6 days ago (both sources, Oct 2 2026 checks)'
+      apple_arm:
+        entity: apple
+        product: 'Apple Watch Series 12 / Ultra 4 Audio Intelligence: Live Rewind + Siri Recap'
+        key_quotes:
+        - 'Live Rewind "allows the device to listen continuously and produce a transcript of the last 15 seconds of any conversation."'
+        - 'Siri Recap "summarizes a user''s entire day in a broad, bulleted overview, again without attributing any statements to individual speakers."'
+        - 'Howley: "while Apple has been clear it does not have access to the underlying audio data, the features still raise uncomfortable questions about ambient recording in everyday public situations."'
+        - 'Personal example: he and his wife joked "about what would happen if they were gossiping in the back of a cab, where only two people are present and attribution becomes straightforward."'
+        framing_notes: 'Consent-question register applied to a non-Meta entity: "uncomfortable questions about ambient recording in everyday public situations." The Apple mitigation claims (no audio access, no attribution, no server storage) are relayed verbatim, softening the arm; the adversarial content is a personal anecdote, not a discovered fact.'
+        tone_MANUAL_ILLUSTRATIVE: -0.25
+      meta_arm:
+        entity: meta
+        product: 'Ray-Ban Meta Smart Glasses'
+        key_quotes:
+        - '"Meta (NASDAQ: META) has faced similar scrutiny over its Smart Glasses, which feature built-in cameras and an LED indicator light intended to signal when recording is active."'
+        - '"Tech journalist Joanna Stern previously uncovered individuals selling services on Facebook Marketplace to disable that indicator light, allowing users to record others without their knowledge."'
+        framing_notes: 'Consent-question register on Meta with the harder concrete fact: the Stern modder-drill-out discovery (a secondhand adversarial fact, not Howley''s own investigation). "similar scrutiny" is the parity hinge - the sentence explicitly equates the Meta scrutiny with the Apple scrutiny just established.'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+      register_parity:
+        thesis: 'The segment thesis is explicitly symmetric: Meta''s glasses and Apple''s watch raise THE SAME consent problem.'
+        thesis_level_delta: 0.0
+        fact_intensity_residual: 'Meta arm carries the harder concrete fact (modder drill-outs, Stern-sourced); Apple arm carries an anecdote (cab gossip) plus Apple''s no-audio-access claim relayed verbatim. Evidence-intensity edge Meta-harder by ~0.10, MANUAL ILLUSTRATIVE.'
+        reading: 'Within one segment, one journalist applies the consent-problem register to BOTH entities: the privacy-pressure vocabulary is not reserved for Meta. This is a journalist-level parity BOUND on the m75 privacy-vocabulary-bifurcation family (Victoria Song: privacy vocabulary on Meta, muted on Apple Watch ambient-listening in the same window) and on the Type E Meta-exclusive-privacy-pressure standing observation (152 cycles): a new journalist, new outlet, same Sep-2026 window, symmetric consent framing. It bounds the pattern''s journalist-level universality; it does NOT overturn the aggregate 152-cycle pattern and it is NOT a falsification-family member (no payer-softening prediction testable - see financial_relationship).'
+      financial_relationship:
+        yahoo_meta: 'No Yahoo Finance x Meta financial relationship surfaced in bounded searches this run.'
+        yahoo_apple: 'No Yahoo Finance x Apple financial relationship surfaced in bounded searches this run.'
+        microsoft_operator_note: 'The #431 corpus note (Yahoo as "first external" of Microsoft''s operator co-design, Meta excluded) is an operator-product distribution note, not a content-licensing deal; it attaches no coverage-tone prediction to Meta or Apple arms.'
+        test: 'No payer-softening prediction is testable at this publication pair: no financial gradient found on either side.'
+        result: 'NOT a falsification-family member. The observed contrast is a within-piece cross-entity parity finding with no deal geometry attached.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY. engine NOT run. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. NOT artifact-grade. no_analysis_json_update true. Per the Aug 28 2026 standing rule.'
+        verdict: 'directionally_supported_not_proven (scoped: Howley applies the consent-question register symmetrically to Apple''s always-on ambient-audio watch (-0.25) and Meta''s camera glasses (-0.35) inside one Sep-26 segment; thesis-level parity 0.0 delta; fact-intensity residual Meta-harder ~0.10; no financial gradient tested; NOT a falsification-family member; ledger holds at 46)'
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'NOT a falsification-family member: no uniform payer-softening prediction is tested (bounded searches found no Yahoo-Meta or Yahoo-Apple financial relationship; the Microsoft-operator co-design note is not a content-licensing deal). Ledger holds at 46. FORTY-SIXTH member-form present (m907, profiles/the-verge.yaml). FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+      - 'STRONG: single-segment within-piece parity - the arms are co-produced in one Yahoo Finance video segment, not two independent bylined pieces; arm independence is minimal by design, so the parity is a segment-design artifact as much as a register choice.'
+      - 'STRONG: modality asymmetry - third-party camera exposure (Meta glasses film others) vs first-party wrist ambient-audio processing (Apple Watch); the privacy vectors genuinely differ, so cross-modality register parity is itself the finding''s substance and the domains justify different evidence.'
+      - 'STRONG: excerpt-tier evidence - YouTube description plus scraper-mirror article; 0 browser.open per #503; the segment''s actual spoken register beyond the description is unattested.'
+      - 'MODERATE: Apple mitigation relay - Howley relays Apple''s no-audio-access / no-attribution / no-server-storage claims verbatim ("Apple has been clear it does not have access to the underlying audio data"), softening the Apple arm relative to the Meta arm''s modder fact.'
+      - 'MODERATE: the Meta arm''s hardest fact is Stern''s discovery, not Howley''s own investigation - secondhand adversarial intensity on Meta.'
+      - 'WEAK: the segment also touches OpenAI Dev Day and the Jony Ive handheld (not in scope); the two-party-consent legal color is context, not a register claim.'
+      counterevidence:
+      - 'The thesis is explicitly parity, not Meta-exclusion: "raise the same consent problem" - a journalist placing Apple and Meta in one consent frame cuts against any claim that privacy-pressure framing is reserved for Meta.'
+      - 'CDT and EFF voices in the segment suggest policy-level evenhandedness, not entity targeting.'
+      - 'Howley''s earlier Meta hardware coverage (the Jun-2026 $299 cheaper AI glasses video: "if you''re in the market for smart glasses, these are a good value") reads product-positive - against a reading that Howley is Meta-hostile.'
+      - 'The Apple arm is NOT spared: the same news cycle carries Bloomberg-attested legal exposure (wiretap/eavesdropping statutes in ~11 all-party-consent states; the wearer, not Apple, is exposed) and "surveillance just got more mainstream" discourse - the ambient-listening register is genuinely adversarial on Apple.'
+      - 'The parity bound is journalist-level; the corpus aggregate Type E pattern (152 cycles of Meta-exclusive privacy-pressure framing in press monitoring) is not overturned by one segment.'
+      verdict: 'directionally_supported_not_proven: within-piece cross-entity consent-register parity. Howley''s Sep-26 Yahoo Finance segment (-0.25 Apple / -0.35 Meta, MANUAL ILLUSTRATIVE) applies the consent-problem register symmetrically to Apple''s always-on ambient-audio watch and Meta''s camera glasses under an explicit "same consent problem" thesis; fact-intensity residual Meta-harder ~0.10. The finding is a journalist-level parity BOUND on the m75 family and the Type E Meta-exclusive-privacy-pressure standing observation, not a refutation of the aggregate pattern. No financial gradient tested; NOT a falsification-family member; ledger holds at 46.'
+      research_method: '10 browser.search query sets, 0 browser.open per #503 (excerpt-bounded): Victoria Song Meta Connect 2026 - REJECTED (saturated: m719/#813, m827/#993); Snap Specs Sep-2026 launch journalist review - REJECTED (Peters/Ashworth saturated: m731/m767, m743/m830); Jay Peters Meta Connect Muse - REJECTED (saturated m731/m767); Dutch retailers pull Ray-Ban Meta - CONTEXT ONLY (fresh Oct-1/2 Reuters wire, no named journalist pair); Boone Ashworth WIRED Oct 2026 - REJECTED (saturated: m442/m641/m743/m830); Verge/WIRED journalist Snap-vs-Meta privacy - REJECTED (own-repo saturation); Joanna Stern Sep 2026 - REJECTED (saturated: m899/#1113); Dan Howley Yahoo Finance Apple Watch Meta glasses - SELECTED (surfaced the Sep-26 consent-problem segment); "Dan Howley" Meta Connect 2026 - CONTEXT (Yahoo Finance tech-editor role attestation); Howley Live Rewind consent - SELECTED (re-confirmed the segment via the YouTube description + foreignpolicyjournal mirror, both novel). Pre-commit novelty greps per #715 (see novelty). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; no significance claimed. NOT artifact-grade. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (a within-piece cross-entity parity bound extending the m75 family''s journalist-level scope, not a uniform-prediction contradiction); ledger holds at 46.'
+      cross_refs:
+      - '#75 (Victoria Song privacy-vocabulary bifurcation: privacy vocabulary on Meta, muted on Apple/Google/Snap - the family this run bounds at journalist level)'
+      - '#813 (Song Sep-2026 Meta-vs-Apple product pair, m719 - same-entity pair precedent, saturated)'
+      - '#993 (Song Sep-23/24 Vergecast parity bound, m827 - the temporal-bound precedent: "a temporal BOUND on m75, not a replication of its magnitude")'
+      - '#1008 (Lily Hay Newman WIRED: Meta private-processing vs Apple Watch audio intelligence - same peg-matched cross-entity convention)'
+      - '#1113 (Joanna Stern independence-phase pair, m899 - the newest-journalist-pair precedent; Stern saturated)'
+      - 'Type E #1146 standing observation (152 cycles Meta-exclusive privacy-pressure framing in press monitoring - the aggregate pattern this run bounds, not overturns)'
+      no_analysis_json_update: true
+      novelty: 'FIRST dedicated Type B mechanism on Dan Howley in journalists.yaml (zero dan_howley YAML key pre-commit, per the #643 convention). zero test_type_b_1148 files on disk (glob); no "Type B #1148" in git log (--grep); max numeric mechanism_id 919 in profiles/ pre-commit; zero numeric 920 mechanism_id keys in profiles/ pre-commit; zero underscore-form and dash-form 920 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); zero underscore-form and dash-form 921 forward-guard needles repo-wide pre-commit (needles format-built per #715); block key zero-hit repo-wide pre-commit (git grep -F); the two novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); dan_howley YAML key zero-hit pre-commit; FORTY-SEVENTH member-claim form absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1145-launched full suite (goal hidden_files type_d_1145_full_suite.log) is OBSERVED DEAD at this run''s check (log stalled at 385 bytes since Oct 2 08:14:13 PDT; no pytest alive at this run''s ps scan; sixteenth consecutive background death); its verdict belongs to #1150 per #795. This run checked only (no Type B #1148 / m920 markers in the suite log); does not touch it.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.'
