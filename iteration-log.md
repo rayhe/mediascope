@@ -1,9 +1,9 @@
-## #1145 Type D: m916/m917/m918 qualitative-discipline verification + post-1140-1144 corpus integrity (max numeric mechanism_id 918; zero next-number 919 keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1140 background-suite verdict (FOURTEENTH consecutive death; tombstone EIGHTY-SEVENTH -> EIGHTY-EIGHTH) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1145-1149 window (Oct 2 2026, 08:00 AM PDT; main commit 8f4266d2 / anchor ea8fa07d / doc-sync DOCSYNC_SHA; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60151/1469 -> 60242/1470 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1145 Type D: m916/m917/m918 qualitative-discipline verification + post-1140-1144 corpus integrity (max numeric mechanism_id 918; zero next-number 919 keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1140 background-suite verdict (FOURTEENTH consecutive death; tombstone EIGHTY-SEVENTH -> EIGHTY-EIGHTH) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1145-1149 window (Oct 2 2026, 08:00 AM PDT; main commit 8f4266d2 / anchor ea8fa07d / doc-sync b03e4f59; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60151/1469 -> 60242/1470 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `8f4266d2` (8f4266d240e31603fad5cf1f7b2d6f4015efe1c5) - verified via git rev-parse
 - Anchor followup `ea8fa07d` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `DOCSYNC_SHA` (README 60151/1469 -> 60242/1470; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60242/1470)
+- Doc-sync `b03e4f59` (README 60151/1469 -> 60242/1470; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60242/1470)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
