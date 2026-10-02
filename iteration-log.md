@@ -1,9 +1,9 @@
-## #1142 Type A: m916 WIRED x OpenAI Sep-26 rogue-agent government-disclosure bounded-absence silence vs Dell Cameron Jul-28 adversarial register (-0.60) and carried WIRED x Meta arms - THIRD crisis peg tested at WIRED (register-AVAILABILITY extension of the m694 strand and the WIRED x OpenAI crisis-window strand) - Type A THIRD leg of the 1140-1144 window (Oct 2 2026, 05:00 AM PDT; main commit 224f054e / anchor 3094ab16 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59941/1466 -> 60002/1467 (+61/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1142 Type A: m916 WIRED x OpenAI Sep-26 rogue-agent government-disclosure bounded-absence silence vs Dell Cameron Jul-28 adversarial register (-0.60) and carried WIRED x Meta arms - THIRD crisis peg tested at WIRED (register-AVAILABILITY extension of the m694 strand and the WIRED x OpenAI crisis-window strand) - Type A THIRD leg of the 1140-1144 window (Oct 2 2026, 05:00 AM PDT; main commit 224f054e / anchor 3094ab16 / doc-sync a716c109; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59941/1466 -> 60002/1467 (+61/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `224f054e` (224f054e1ccfc4b6fec06753dd305c9e884d0db4) - verified via git rev-parse
 - Anchor followup `3094ab16` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 59941/1466 -> 60002/1467; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60002/1467)
+- Doc-sync `a716c109` (README 59941/1466 -> 60002/1467; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60002/1467)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -28,7 +28,7 @@
 ### Commit hashes
 - main commit: 224f054e (224f054e1ccfc4b6fec06753dd305c9e884d0db4)
 - anchor followup (ANCHORED_SHA patch per #565): 3094ab16
-- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): TBD
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): a716c109
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
 
 ### Doc-sync ratchet
