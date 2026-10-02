@@ -42319,12 +42319,12 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 
-## #1150 Type D: m919/m920/m921 qualitative-discipline verification + post-1145-1149 corpus integrity (max numeric mechanism_id 921; zero next-number 922 keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1145 background-suite verdict (EIGHTEENTH consecutive death; tombstone EIGHTY-EIGHTH -> EIGHTY-NINTH) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1150-1154 window (Oct 2 2026, 12:00 PM PDT; main commit a032e49d / anchor c7a3fadc / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60512/1474 -> 60600/1475 (+88/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1150 Type D: m919/m920/m921 qualitative-discipline verification + post-1145-1149 corpus integrity (max numeric mechanism_id 921; zero next-number 922 keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1145 background-suite verdict (EIGHTEENTH consecutive death; tombstone EIGHTY-EIGHTH -> EIGHTY-NINTH) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1150-1154 window (Oct 2 2026, 12:00 PM PDT; main commit a032e49d / anchor c7a3fadc / doc-sync da22db62; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60512/1474 -> 60600/1475 (+88/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `a032e49d` (a032e49dbfde2fd88320280cef29e1a010af3154) - verified via git rev-parse
 - Anchor followup `c7a3fadc` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60512/1474 -> 60600/1475; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patch per #719)
+- Doc-sync `da22db62` (README 60512/1474 -> 60600/1475; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patch per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
