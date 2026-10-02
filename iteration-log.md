@@ -3,7 +3,7 @@
 ### Commit hashes
 - Main commit `51eebb63` (51eebb63eb250cf7cfa8fe03d6441c26586df594) - verified via git rev-parse
 - Anchor followup `eb642dce` (ANCHORED_SHA patched per #565)
-- Doc-sync: this commit (README 59438/1459 -> 59520/1460; ARCHITECTURE tree row; constants patched per #719)
+- Doc-sync `56f96719` (README 59438/1459 -> 59520/1460; ARCHITECTURE tree row; constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
