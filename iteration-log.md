@@ -42402,12 +42402,12 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 
-## #1152 Type A: m922 Guardian x Google Sep-26/Oct-2 adversarial datacenter investigative register vs carried Guardian x Meta arms (illustrative delta +0.05 near-null, NOT significant; NOT a falsification-family member, ledger holds at 46; EXTENDS the guardian.yaml google block register range as mechanism_487 sibling) - Type A THIRD leg of the 1150-1154 window (Oct 2 2026, 01:00 PM PDT; main commit TBD / anchor TBD / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60663/1476 -> 60721/1477 (+58/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1152 Type A: m922 Guardian x Google Sep-26/Oct-2 adversarial datacenter investigative register vs carried Guardian x Meta arms (illustrative delta +0.05 near-null, NOT significant; NOT a falsification-family member, ledger holds at 46; EXTENDS the guardian.yaml google block register range as mechanism_487 sibling) - Type A THIRD leg of the 1150-1154 window (Oct 2 2026, 01:00 PM PDT; main commit 31bbe553 / anchor a74da6f5 / doc-sync 9525d13d; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60663/1476 -> 60721/1477 (+58/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
-- Main commit `TBD` - verified via git rev-parse
-- Anchor followup `TBD` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60663/1476 -> 60721/1477; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Main commit `31bbe553` (31bbe553666333f4fedd2ac6695b9a0e87b185f0) - verified via git rev-parse
+- Anchor followup `a74da6f5` (a74da6f51977d415ee8159a0722fdd4be9831217; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `9525d13d` (9525d13d83243ef1bc3e14d9e646630add6f8f21; README 60663/1476 -> 60721/1477; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; post-anchor window-ordering correction)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
