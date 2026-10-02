@@ -103,7 +103,7 @@ NOVEL_URLS = (
 )
 
 # Patched post-commit once README/ARCHITECTURE doc-sync lands (per #719).
-README_TEST_COUNT = 0  # patched to 60430 + collected in doc-sync followup
+README_TEST_COUNT = 60512  # post-doc-sync total (60430 + 82)
 README_FILE_COUNT = 1474  # post-doc-sync total
 TEST_BASENAME = OWN_BASENAME
 
