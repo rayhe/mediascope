@@ -42487,12 +42487,12 @@ Push status (this run, Sep 26 2026 ~22:1x PDT): main + anchor followup pushed an
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 - Background suite: the #1150-launched full suite was IN FLIGHT at this run's check (goal hidden_files type_d_1150_full_suite.log, ~11% at last read); its verdict belongs to #1155 per #795. This run checked only (no Type B #1153 markers in the suite log); does not touch it.
 ---
-## #1154 Type C: m924 Google pay-per-value pilot post-rate-disclosure reception (Oct 1-2 2026): publisher walk-away framing + Spur founder David Buttle's "more hedge than true market" characterization; FIRST control-of-the-meter contest documentation (Google black-box widget vs SPUR open standard); temporal extension of m891, no new direction (thirty-sixth absent by design), NOT a falsification-family member, ledger holds at 46 - Type C FIFTH and CLOSING leg of the 1150-1154 window (Oct 2 2026, 03:00 PM PDT; main commit 38d74753 / anchor 0305c581 / doc-sync PENDING; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60785/1478 -> 60877/1479 (+92/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1154 Type C: m924 Google pay-per-value pilot post-rate-disclosure reception (Oct 1-2 2026): publisher walk-away framing + Spur founder David Buttle's "more hedge than true market" characterization; FIRST control-of-the-meter contest documentation (Google black-box widget vs SPUR open standard); temporal extension of m891, no new direction (thirty-sixth absent by design), NOT a falsification-family member, ledger holds at 46 - Type C FIFTH and CLOSING leg of the 1150-1154 window (Oct 2 2026, 03:00 PM PDT; main commit 38d74753 / anchor 0305c581 / doc-sync 4594aee1; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60785/1478 -> 60877/1479 (+92/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `38d74753` (38d74753f54a6a53c4d7ac04c74faffa5b6a5b98) - verified via git rev-parse
 - Anchor followup `0305c581` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `PENDING` (README 60785/1478 -> 60877/1479; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `4594aee1` (README 60785/1478 -> 60877/1479; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
