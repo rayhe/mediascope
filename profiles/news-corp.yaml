@@ -2012,6 +2012,149 @@ competitor_relationships:
       novelty: 'Zero test_type_a_837 files on disk pre-commit; no "Type A #837" in git log pre-commit; the two WSJ URL slugs 8874dffc and b40ba883 zero-hit repo-wide pre-commit; the wsj_anthropic_ipo_shift_claude_hack block-key prefix zero-hit repo-wide pre-commit; the Muse Market Talk URL zero-hit repo-wide pre-commit; max numeric mechanism_id 732 pre-commit; zero underscore-form 733 mechanism key strings repo-wide pre-commit (needles format-built per #715).'
       no_analysis_json_update: true
       correlation_not_causation: true
+  type_a_1147_wsj_anthropic_oct01_ftc_probe_disclosure_asymmetry_plus_aug25_tam_pitch_vs_carried_meta_arms_oct02_9am:
+    mechanism_id: 919
+    iteration: 1147
+    iteration_type: "A"
+    iteration_time: "2026-10-02 09:00 PDT"
+    scheduled_job_id: "mediascope-daily-iteration"
+    goal_id: "goal_54093bda4145"
+    author: "Kit (with Ray)"
+    publication_focus: "Wall Street Journal (News Corp)"
+    entity_pair: "Anthropic (settlement-revenue receiving) vs Meta (dual-deal comparator)"
+    type: "Type A - Competitor Coverage Deep Dive"
+    discovery_summary: >
+      FIRST dedicated Type A mechanism on the disclosure geometry of the
+      WSJ's Oct-1-2026 FTC agent-safety-probe original
+      (wsj.com/tech/ai/ftc-opens-investigation-of-anthropic-and-openai-a317b617,
+      carried from #1122/m904 un-rescored per #807): the piece names Anthropic
+      ALONGSIDE OpenAI in the regulatory-enforcement register
+      ('investigating Anthropic and OpenAI to determine whether they deceived
+      consumers about the potential harms of their artificial intelligence';
+      civil subpoenas planned), yet its inline disclosure names ONLY the
+      OpenAI licensing partnership ('News Corp, owner of The Wall Street
+      Journal, has a content-licensing partnership with OpenAI.') and NOT the
+      HarperCollins/Bartz v. Anthropic $1.5B settlement-revenue vector
+      (expected 'in coming months' per Thomson's Aug 5 Q4 FY2026 call,
+      in-corpus in this block's financial metadata). Two receiving financial
+      relationships, one disclosed, in a single piece naming both entities.
+      EXTENDS the disclosure_asymmetry section above (line 1726), which
+      documented the Aug-5 pattern (OpenAI disclosed, Anthropic/Meta not):
+      the selectivity repeats on a NEW peg five weeks later. The register
+      applied to the settlement-payer is adversarial (enforcement, -0.35
+      carried), so this is disclosure-geometry, not tone softness. Pair
+      completed with a NEW WSJ-attributed Anthropic arm: the Aug-25 WSJ
+      exclusive 'Anthropic Expected to Tell Investors It Sees Over $30
+      Trillion in Potential Revenue' (relay-attested via six independent
+      secondaries), business-milestone register (+0.10 MANUAL ILLUSTRATIVE),
+      extending the WSJ x Anthropic temporal arc to milestone (Aug 25) ->
+      delay/hack (Sep 18, m733) -> enforcement (Oct 1, m904).
+    finding: >
+      (1) The Oct-1 FTC piece applies the regulatory-enforcement register to
+      Anthropic, an entity News Corp RECEIVES money from (the HarperCollins
+      share of the $1.5B Bartz settlement, expected 'in coming months'),
+      with no disclosure of that receiving tie. (2) The piece DOES disclose
+      the OpenAI licensing tie in the same sentence position, so the
+      omission is selective within the piece, not a policy of no
+      disclosures. (3) The Aug-25 TAM-pitch exclusive shows the Journal runs
+      a constructive business-milestone register on Anthropic (+0.10) five
+      weeks before the enforcement register (-0.35) - register selection,
+      not entity targeting, dominates the arc. (4) Scorer (MANUAL
+      ILLUSTRATIVE ONLY): Anthropic arms [-0.35 carried FTC, +0.10 TAM]
+      mean -0.125 vs carried Meta arms [-0.30, -0.25] mean -0.275;
+      illustrative delta (Anthropic minus Meta) +0.15 - near-null,
+      directionally softer for the receiving entity, NOT significant.
+      NOT a falsification-family member: this block's standing
+      coverage_prediction is 'neutral' (settlement_revenue), so no
+      uniform-softening prediction is tested; the claim is asymmetric
+      disclosure geometry, not suppressed tone. Ledger holds at 46.
+    financial_context: >
+      News Corp receiving from Anthropic via HarperCollins' named-publisher
+      share of the $1.5B Bartz v. Anthropic class-action settlement (approved
+      Jun/Jul 2026; Thomson on the Aug 5 Q4 FY2026 call expects the share 'in
+      coming months'). The naive disclosure theory says every material
+      financial relationship gets disclosed; the Oct-1 piece discloses the
+      OpenAI licensing tie ($50M/yr, May 2024) but not the Anthropic
+      settlement-revenue tie. Standing coverage_prediction 'neutral'
+      (settlement_revenue) is untouched by this mechanism.
+    anthropic_articles_this_run:
+      - title: 'FTC Opens Investigation of Anthropic and OpenAI'
+        publication: Wall Street Journal
+        date: '2026-10-01'
+        url: 'https://www.wsj.com/tech/ai/ftc-opens-investigation-of-anthropic-and-openai-a317b617'
+        url_status: 'carried from #1122 (m904) by design, un-rescored per #807'
+        register: 'regulatory_enforcement_accountability'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE carried: regulator-probe accountability register on the dual-lab peg; set 0.05 softer than the Astra arm (-0.40) because the probe names two labs, diluting entity-specific adversarialness'
+        disclosure_observation: 'Inline disclosure names ONLY the OpenAI licensing partnership; the HarperCollins/Bartz settlement-revenue vector with Anthropic is NOT disclosed in the carried record.'
+        corroborating_relays:
+          - 'https://www.barrons.com/articles/ftc-openai-anthropic-ai-safety-investigation-8eb4be96 (News Corp sibling: ''Anthropic could need to disclose the investigation in its S-1 prospectus''; IPO-overhang framing)'
+          - 'https://www.fastcompany.com/91616194/the-ftc-has-a-plan-for-regulating-ai-without-writing-ai-rules (''according to The Wall Street Journal''; METR also under examination)'
+          - 'https://www.techrepublic.com/article/news-ftc-openai-anthropic-ai-consumer-harms/ (FTC Chairman Ferguson product-liability framing, per the WSJ)'
+      - title: 'Exclusive | Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue'
+        publication: Wall Street Journal
+        date: '2026-08-25'
+        url_status: 'WSJ original, relay-attested (0 browser.open per #503; wsj.com paywalled); six independent secondaries converge on the WSJ attribution'
+        relay_urls:
+          - 'https://fourweekmba.com/ai-anthropic-30-trillion-tam-ipo-frontier-ai-thesis/ (''As reported by The Wall Street Journal (via Investing.com)'')'
+          - 'https://temperature2.com/p/2026-08-26-anthropic-30-trillion-ipo-pitch/ (''The Journal reports Anthropic is basing the figure on the full scope of work that could be completed using AI models'')'
+          - 'https://www.gadgetreview.com/larger-than-the-us-economy-anthropic-pitches-a-30-trillion-market-ahead-of-its-ipo (''according to the Wall Street Journal'')'
+          - 'https://tech-insider.org/anthropic-30-trillion-market-ai-lab-robots-2026/ (''The Wall Street Journal reported Anthropic is telling investors its addressable market tops $30 trillion'')'
+          - 'https://pasqualepillitteri.it/en/news/12753/anthropic-30-trillion-revenue-tam (''On August 25, 2026, the Wall Street Journal reported'')'
+        register: 'business_milestone_ipo_pitch'
+        tone_MANUAL_ILLUSTRATIVE: 0.10
+        tone_basis: 'MANUAL ILLUSTRATIVE: constructive milestone register (record-scale IPO pitch); set below a pure coronation because the relays carry Damodaran skepticism (''reaching the end of what is plausible and pushing beyond'') and full hedge language (''reported targets and intentions, not confirmed terms'')'
+        key_facts:
+          - '$30T+ TAM pitch to prospective IPO investors, topping SpaceX''s $28.5T pre-listing figure'
+          - 'targets ~$2T valuation, up to $100B raise, per the Journal''s Aug-25 report'
+          - 'Morgan Stanley and Goldman Sachs on the deal (relay-carried)'
+          - 'Damodaran ''reaching the end of what is plausible'' quote carried as balance'
+    meta_arms_carried:
+      arms:
+        - mechanism: 532
+          item: 'WSJ Meta reaches $18 billion settlement with 48 states over child-safety claims (Aug 26 2026)'
+          tone: -0.30
+          basis: 'accountability reporting with Facebook Files investigative lineage, carried un-rescored per #807'
+        - mechanism: 532
+          item: 'WSJ Meta teen-safety measures skeptical product analysis (Aug 26 2026)'
+          tone: -0.25
+          basis: 'skeptical product analysis register, carried un-rescored per #807'
+      meta_mean: -0.275
+    scorer:
+      anthropic_arm_tones: [-0.35, 0.10]
+      anthropic_mean_tone: -0.125
+      meta_arm_tones: [-0.30, -0.25]
+      meta_mean_tone: -0.275
+      illustrative_delta_anthropic_minus_meta: 0.15
+      method: 'MANUAL ILLUSTRATIVE ONLY; engine NOT run; degenerate n=2-vs-2 per the #638/#643 contract (t/p/d NOT_CALCULATED, is_significant False)'
+      reading: 'near-null parity, directionally softer for the settlement-receiving entity; NOT significant; the disclosure-asymmetry claim is geometry, not tone'
+    confounders:
+      strong:
+        - 'Disclosure-policy confound: News Corp disclosure boilerplate may cover only direct content-licensing deals, not litigation-derived revenue; the asymmetry may be policy-literal rather than selective.'
+        - 'Carried-arm dependency: the FTC arm''s disclosure wording reads through the #1122 in-corpus record, not a first-hand page view (WSJ paywalled; 0 browser.open per #503); boilerplate could differ in the full page.'
+        - 'Genre/temporal mismatch: the TAM arm (Aug 25, milestone news) and the FTC arm (Oct 1, enforcement) are five weeks apart in different registers; the +0.15 delta mixes genres, and the TAM arm pre-dates the corpus''s Sep-18 WSJ x Anthropic arms (m733).'
+      moderate:
+        - 'Relay-attested arm: the Aug-25 TAM exclusive is not page-verified; six independent secondaries converge on the WSJ attribution, but excerpt-bounded attribution is weaker than first-hand (per the #503 convention).'
+        - 'Two-entity enforcement event: the FTC probe names Anthropic AND OpenAI, so the adversarial register is not Anthropic-targeted; the claim is that the Journal routes enforcement onto the settlement-payer without disclosing the tie, which holds regardless of symmetry.'
+      weak:
+        - 'n=2-per-arm small-sample; no inferential statistics per the Aug 28 2026 standing rule.'
+        - 'Damodaran-skepticism read: the +0.10 TAM tone credits relay-carried skepticism as WSJ-originated balance; the relays may import balance the original lacked.'
+    counter_evidence:
+      - 'The Oct-1 piece DOES disclose the OpenAI tie: transparency exists where the larger recurring deal sits ($50M/yr); the settlement share is one-time, so materiality ordering could explain the asymmetry without selectivity.'
+      - 'The enforcement register hits Anthropic (-0.35) in the same piece that omits the tie: if the goal were protecting the payer, the register would soften, not hold adversarial.'
+      - 'm682 (Sep 13): the same paper ran its hardest register of the slowdown arc (-0.40 watchdog expose) toward the OpenAI PAYER - uniform payer protection is falsified within News Corp itself.'
+    relation_to_disclosure_asymmetry: 'Direct temporal extension of the disclosure_asymmetry section (line 1726): it documented selective disclosure on the Aug-5 rogue-AI articles (OpenAI disclosed; Anthropic/Meta not). This run repeats the observation on the Oct-1 FTC peg (OpenAI disclosed; Anthropic settlement-revenue not). Two pegs, five weeks apart, same asymmetry geometry.'
+    relation_to_904: 'The Oct-1 FTC arm is carried from #1122 (m904) by design, un-rescored per #807; m904 tested the OpenAI uniform-softening prediction (FORTY-FOURTH falsification member). This run reads the SAME piece from the Anthropic axis, where the prediction under test is neutral, so no falsification-family membership attaches.'
+    relation_to_733: 'Temporal-arc predecessor: #837 (m733) covered the Sep-18 WSJ x Anthropic pair (IPO-shift +0.25, Claude-hack -0.25). This run adds the Aug-25 milestone endpoint (+0.10) and the Oct-1 enforcement endpoint (-0.35), widening the documented WSJ x Anthropic register range to 0.60 (-0.35 to +0.25) over 37 days.'
+    distinct_from_prior: 'FIRST dedicated mechanism on the disclosure geometry of the Oct-1 FTC piece (Anthropic axis); FIRST dedicated mechanism on the Aug-25 WSJ TAM-pitch exclusive (all six relay URLs zero-hit repo-wide pre-commit); distinct from #1122 (m904, OpenAI axis of the same FTC piece), #837 (m733, Sep-18 Anthropic arms), and #767 (m691, Sep-10 Coxon resignation).'
+    research_method: '4 browser.search query sets this run: (1) Wall Street Journal Anthropic FTC investigation October 2026 AI agent safety - SELECTED the sedaily/barron''s/fastcompany/techrepublic corroborating relays of the WSJ Oct-1 original; (2) Wall Street Journal Anthropic September 2026 IPO S-1 filing - SELECTED the WSJ Sep-18 November-listing scoop relays; (3) WSJ Anthropic IPO investors roadshow $30 trillion October 2026 - SELECTED six independent WSJ-attributed relays of the Aug-25 TAM-pitch exclusive; (4) novelty/corpus checks. 0 browser.open this run (excerpt-bounded per #503; WSJ paywalled). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    novelty: 'Zero test_type_a_1147 files on disk pre-commit; no "Type A #1147" in git log pre-commit; max numeric mechanism_id 918 pre-commit; zero underscore/dash-form 919 mechanism key strings repo-wide pre-commit (needles format-built per #715, sweep-carrier excluded); block key zero-hit repo-wide pre-commit (designed keying, iteration number 1147 in key, no 919 substring); all six TAM relay URLs zero-hit repo-wide pre-commit; the Oct-1 FTC URL slug a317b617 already in-corpus via #1122 (carried, not novel).'
+    ledger: 'Ledger holds at 46 (per the #754 convention: latest ledger member present in the profiles corpus, no later member - the block records the count only, never the next-member literal).'
+    key_design_note: 'Descriptive block key carries the iteration number 1147 but no underscore-form key substring for mechanism 919, per the #723/#738/#739/#747 designed-keying convention: keeps the zero-919 profile sweep instruments green while mechanism_id advances in colon form.'
+    statistical_discipline: 'MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone NOT_SCORED by engine; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven).'
+    artifact_grade: 'NOT artifact-grade'
+    no_analysis_json_update: true
+    correlation_not_causation: true
   perplexity:
     financial_tie: lawsuit_active
     estimated_value: $0 (litigated, not licensed)
