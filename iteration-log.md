@@ -1,9 +1,9 @@
-## #1144 Type C: m918 Apple Siri AI publisher-negotiation watch Oct-2-2026 status check (51 days post-WSJ, zero signed-deal closures) + OpenAI "persistently underperforming" court filing documents the commercial failure of the predecessor Apple-OpenAI Siri deal - variable-pay proposal EXTENDS #27 unilateral pricing (m891), no new direction (thirty-sixth absent by design) - Type C FIFTH and CLOSING leg of the 1140-1144 window (Oct 2 2026, 07:00 AM PDT; main commit 02b20835 / anchor e9b37c8e / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60070/1468 -> 60151/1469 (+81/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1144 Type C: m918 Apple Siri AI publisher-negotiation watch Oct-2-2026 status check (51 days post-WSJ, zero signed-deal closures) + OpenAI "persistently underperforming" court filing documents the commercial failure of the predecessor Apple-OpenAI Siri deal - variable-pay proposal EXTENDS #27 unilateral pricing (m891), no new direction (thirty-sixth absent by design) - Type C FIFTH and CLOSING leg of the 1140-1144 window (Oct 2 2026, 07:00 AM PDT; main commit 02b20835 / anchor e9b37c8e / doc-sync f2d3867f; log-hash followup registers all hashes here per #721 (this commit); doc-sync 60070/1468 -> 60151/1469 (+81/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `02b20835` (02b20835d56a48c150e8cc5bf0f98af569647ce7) - verified via git rev-parse
 - Anchor followup `e9b37c8e` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 60070/1468 -> 60151/1469; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60151/1469)
+- Doc-sync `f2d3867f` (README 60070/1468 -> 60151/1469; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants per #719 already 60151/1469)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -28,7 +28,7 @@
 ### Commit hashes
 - main commit: 02b20835 (02b20835d56a48c150e8cc5bf0f98af569647ce7)
 - anchor followup (ANCHORED_SHA patch per #565): e9b37c8e
-- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): TBD
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry per #719): f2d3867f
 - log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
 
 ### Doc-sync ratchet
