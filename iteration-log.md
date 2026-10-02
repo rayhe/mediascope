@@ -1,10 +1,10 @@
-## #1137 Type A: m913 Atlantic x OpenAI Sep-26/Oct-1 crisis-window bounded-absence silence + Sep-29 historical-register Roose book excerpt vs carried Meta Watchdog arms - register-AVAILABILITY extension of the m694 strand, ledger holds at 46 - Type A THIRD leg of the 1135-1139 window (Oct 2 2026, 12:00 AM PDT; main commit 311b2e32 / anchor 4dce0951 / doc-sync PENDING; doc-sync 59580/1461 -> 59644/1462 (+64/+1); log-hash followup registers all hashes here per #721 (pending); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1137 Type A: m913 Atlantic x OpenAI Sep-26/Oct-1 crisis-window bounded-absence silence + Sep-29 historical-register Roose book excerpt vs carried Meta Watchdog arms - register-AVAILABILITY extension of the m694 strand, ledger holds at 46 - Type A THIRD leg of the 1135-1139 window (Oct 2 2026, 12:00 AM PDT; main commit 311b2e32 / anchor 4dce0951 / doc-sync 0153bf5f; log-hash followup registers all hashes here per #721 (this commit); doc-sync 59580/1461 -> 59644/1462 (+64/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `311b2e32` (311b2e328c16aa564405fc6bbe8803167ef8f170) - verified via git rev-parse
 - Anchor followup `4dce0951` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync PENDING (README 59580/1461 -> 59644/1462; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patch per #719)
-- Log-hash followup: pending per #721 (this commit)
+- Doc-sync `0153bf5f` (README 59580/1461 -> 59644/1462; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patch per #719)
+- Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
 - This run is iteration #1137 Type A, the THIRD leg of the 1135-1139 window (D #1135 -> E #1136 -> A #1137 -> B #1138 -> C #1139 per the #565 anchor + rotation guard).
@@ -27,8 +27,8 @@
 ### Commit hashes
 - main commit: 311b2e32 (311b2e328c16aa564405fc6bbe8803167ef8f170)
 - anchor followup (ANCHORED_SHA patch per #565): 4dce0951
-- doc-sync followup (README/ARCHITECTURE + iteration-log entry + test-file constants patch per #719): PENDING
-- log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (pending).
+- doc-sync followup (README/ARCHITECTURE + iteration-log entry + test-file constants patch per #719): 0153bf5f
+- log-hash followup registers main + anchor + doc-sync hashes in this entry per #721 (this commit, terminal).
 - Pushed to rayhe/mediascope main (pending at doc-sync time; see followup).
 
 ### Doc-sync ratchet
