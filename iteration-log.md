@@ -42792,7 +42792,7 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `9e9d70be` (9e9d70beb310ef307b7f9a1224197972d4902c2e) - verified via git rev-parse
 - Anchor followup `a75fea4c` (a75fea4c64d09e60563b992b467856fa1abb69b2; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 61355/1485 -> 61421/1486; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 155th-cycle section + Tracked Sources 154->155 in main commit; iteration-log #1161 entry; test-file constants patched per #719)
+- Doc-sync `0ce1314a` (0ce1314a8f60dbb7d644099dfe282b1e04464acf; README 61355/1485 -> 61421/1486; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 155th-cycle section + Tracked Sources 154->155 in main commit; iteration-log #1161 entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -42829,3 +42829,9 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
+
+### Log-hash followup (per #721, terminal)
+- main: 9e9d70beb310ef307b7f9a1224197972d4902c2e
+- anchor: a75fea4c64d09e60563b992b467856fa1abb69b2 (self-anchor per #565)
+- doc-sync: 0ce1314a8f60dbb7d644099dfe282b1e04464acf
+- log-hash: this commit (terminal per #721)
