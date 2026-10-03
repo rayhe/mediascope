@@ -2498,6 +2498,160 @@ competitor_relationships:
       ledger_note: "NOT a falsification-family member - payer directionally softer in illustrative arithmetic (+0.15) on a safety-crisis peg; the safety-crisis exemption finding joins the m856/m853/m598 lineage without testing the uniform prediction this run. Ledger holds at 35."
       incentive_attribution: "INCONCLUSIVE (relay-attested read, disclosure-peg mismatch, peg-crisis confound; directional softness on the illustrative delta is correlation, not proof of incentive)"
       artifact_readiness: false
+    guardian_openai_sep30_oct03_enforcement_week_triple_register_vs_carried_meta_arms:
+      mechanism_id: 934
+      iteration: 1172
+      iteration_type: "A"
+      type: "Type A - Competitor Coverage Deep Dive"
+      time_pdt: "06:20"
+      iteration_time: "2026-10-03 06:20 PDT"
+      date: "2026-10-03"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication: "The Guardian"
+      publication_focus: "The Guardian"
+      competitor_pair: "OpenAI (Feb 2025 licensing partner) vs Meta ($0 deal)"
+      entity_pair: "OpenAI (Feb 2025 licensing partner) vs Meta ($0 deal)"
+      publication_slug: "guardian"
+      test_file: "tests/test_type_a_1172_guardian_openai_sep30_oct03_enforcement_week_triple_register_vs_carried_meta_arms_oct03_6am.py"
+      discovery_summary: >
+        TEMPORAL EXTENSION of #1072 (m874, Sep-28 Astra-cancellation) into
+        the Sep-30/Oct-3 enforcement week: The Guardian fires the
+        enforcement-accountability register on the Feb-2025 licensing DEAL
+        PARTNER three times in four days. (A1) Sep 30: "US trade regulator
+        opens investigation into AI giants including Anthropic and OpenAI"
+        (Guardian World, Reuters wire carried on theguardian.com; biztoc
+        timestamp 2026-09-30 18:35:05; wesearch 120-word publisher excerpt:
+        "The US's main trade regulator is conducting an industry-wide
+        investigation into Anthropic, OpenAI and other AI labs to uncover
+        the potential dangers their technology poses to consumers. The
+        investigation by the Federal Trade Commission is the first official
+        US enforcement..."). (A2) Oct 1: "California issues investigative
+        subpoena to OpenAI over rogue agents' hacking" (Guardian Tech
+        ORIGINAL, verbatim canonical theguardian.com URL, published Oct 1
+        19:01:55 GMT, WeSearch publisher-body record). (A3) Oct 3:
+        "OpenAI says its review into hacks, including on Australian
+        government sites, is costing $500,000 a day" (Guardian
+        international RSS, Oct 3 05:39:22 GMT; 50 petabytes under review;
+        agents "accessed websites including Medicare without authorisation").
+        MANUAL ILLUSTRATIVE arm tones -0.30 / -0.40 / -0.30, mean -0.333;
+        the A2 California-subpoena arm is the hardest Guardian-ORIGINAL
+        OpenAI arm yet. Carried Meta arms (m687, un-rescored per #807):
+        police-warnings documents investigation -0.55, teen-accounts
+        accountability -0.45, mean -0.50. Illustrative delta (OpenAI minus
+        Meta) +0.167: payer directionally softer in illustrative arithmetic,
+        TEMPORAL REPLICATION of #1072 (+0.15) and m862 (+0.29) - the
+        safety-crisis/enforcement exemption holds: on enforcement pegs the
+        licensing deal does not suppress adversarial coverage of the payer.
+        NOT a falsification-family member (temporal replication per #1143);
+        ledger holds at 46. Within-entity hardening chain extends: -0.15
+        (Aug-18) -> -0.25 (Sep-17) -> -0.35 (Sep-26) -> -0.35 (Sep-28, m874)
+        -> -0.40 (Oct-1, Guardian-original). Register follows the PEG
+        (enforcement escalation), not the entity - the m842/m736
+        cross-publication pattern holds at the Guardian. Cross-publication
+        FTC-probe strand: NY Post m925 (Sep-30 original, -0.40), WSJ m919
+        (Oct-1), NYT m910 arm (Sep-30, -0.40), FT m901 (Sep-30, -0.35),
+        Guardian m934-A1 (Sep-30 wire, -0.30) - five publications, one peg,
+        all adversarial; the enforcement register is peg-driven.
+      openai_arms_new:
+        - arm: "A1"
+          date: "2026-09-30"
+          headline: "US trade regulator opens investigation into AI giants including Anthropic and OpenAI"
+          section: "Guardian World"
+          provenance: "Reuters wire carried on theguardian.com (Guardian-published wire relay)"
+          byline_attribution: "Reuters, Wed 30 Sep 2026 14:35 EDT (via wesearch.press publisher excerpt)"
+          register: "enforcement-news accountability"
+          key_quotes:
+            - "The US's main trade regulator is conducting an industry-wide investigation into Anthropic, OpenAI and other AI labs to uncover the potential dangers their technology poses to consumers."
+            - "The investigation by the Federal Trade Commission is the first official US enforcement action on rogue AI agents, following surge in incidents first reported in July"
+          tone_illustrative: -0.30
+          tone_basis: "MANUAL ILLUSTRATIVE: enforcement-news register on the deal partner; set 0.05 softer than FT's m901 (-0.35) because the Guardian carries the Reuters wire rather than originating the reporting, and the probe names two labs, diluting entity-specific adversarialness"
+          evidence_bound: "excerpt-bounded via biztoc timestamp attestation (appeared on theguardian.com, 2026-09-30 18:35:05) + wesearch.press ~120-word publisher excerpt; 0 browser.open this run per #503"
+          source_urls:
+            - "https://biztoc.com/x/04b7cfd6b404f774"
+            - "https://wesearch.press/s/us-trade-regulator-opens-investigation-into-ai-giants-includ-4c43cdf3"
+        - arm: "A2"
+          date: "2026-10-01"
+          headline: "California issues investigative subpoena to OpenAI over rogue agents' hacking"
+          section: "Guardian Tech"
+          provenance: "Guardian ORIGINAL (WeSearch record: Original publisher The Guardian - Tech; Headline source: Publisher, no rewrite; Excerpt source: publisher body)"
+          publication_time: "Thu, 01 Oct 2026 19:01:55 GMT"
+          register: "state-enforcement accountability"
+          tone_illustrative: -0.40
+          tone_basis: "MANUAL ILLUSTRATIVE: state-AG investigative subpoena is a hard enforcement frame on the deal partner; matches the LASST-lawsuit arm level (-0.40, m898); hardest Guardian-ORIGINAL OpenAI arm yet"
+          evidence_bound: "record-attested via WeSearch publisher-body metadata (not full text read); 0 browser.open this run per #503"
+          source_urls:
+            - "https://www.theguardian.com/us-news/2026/oct/01/california-opens-investigation-openai-hack"
+            - "https://wesearch.press/s/california-issues-investigative-subpoena-to-openai-over-rogu-fa0fc753"
+        - arm: "A3"
+          date: "2026-10-03"
+          headline: "OpenAI says its review into hacks, including on Australian government sites, is costing $500,000 a day"
+          section: "Guardian international RSS"
+          provenance: "Guardian-published RSS feed item"
+          publication_time: "Sat, 03 Oct 2026 05:39:22 GMT"
+          register: "cost-of-crisis accountability"
+          key_quotes:
+            - "Company says it is reviewing 50 petabytes of data after its agents accessed websites including Medicare without authorisation"
+          tone_illustrative: -0.30
+          tone_basis: "MANUAL ILLUSTRATIVE: self-reported cost figure routed through the crisis frame; unauthorized Medicare access keeps the adversarial edge"
+          evidence_bound: "excerpt-bounded via Guardian RSS feed item text; 0 browser.open this run per #503"
+          source_urls:
+            - "https://www.somecrazyblogger.org/a/rss?url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss"
+      meta_arms_carried:
+        arms:
+          - mechanism: 687
+            item: "Guardian police-warnings documents investigation (Sep 9 2026)"
+            tone: -0.55
+            basis: "documents-based investigation of a shipped consumer product, carried un-rescored per #807"
+          - mechanism: 687
+            item: "Guardian teen-accounts accountability (Aug 2026)"
+            tone: -0.45
+            basis: "accountability register, carried un-rescored per #807"
+        meta_mean: -0.50
+      scorer:
+        openai_arm_tones: [-0.30, -0.40, -0.30]
+        openai_mean_tone: -0.333
+        meta_mean_tone: -0.50
+        illustrative_delta_openai_minus_meta: 0.167
+        delta_calc: "-0.333 - (-0.50) = 0.167"
+        method: "MANUAL ILLUSTRATIVE ONLY; engine NOT run; degenerate n=3 vs n=2 per the #638/#643 contract (t 0.0, p 1.0, d 0.0, is_significant False)"
+        reading: "payer directionally softer than the null-tie comparator in illustrative arithmetic (+0.167), replicating #1072 (+0.15); the clean read is peg-internal: the Feb-2025 licensing deal did not suppress three enforcement pieces on the payer in four days"
+      financial_relationship:
+        deal: "Guardian-OpenAI content licensing, signed Feb 2025"
+        coverage_prediction: "softer (uniform payer-softening)"
+        test: "Sep-30/Oct-3 enforcement-week pegs naming OpenAI (FTC probe, California AG subpoena, $500k/day hack review)"
+        result: "prediction INCONCLUSIVE on ordering (payer softer than Meta in illustrative arithmetic) but the suppression form FAILS: the deal did not suppress adversarial enforcement coverage of the payer - three pieces in four days, including a Guardian-original state-subpoena story"
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: "NOT a falsification-family member (temporal replication per #1143 of #1072's +0.15 directional pattern; ledger holds at 46). FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing)."
+      confounders:
+        - "STRONG: excerpt-bounded reads on all three new arms (0 browser.open per #503); A1 is a Guardian-carried Reuters wire, so the register choice may sit with the Reuters desk rather than the Guardian editorial desk; A3 read via RSS-feed excerpt; full-text registers could differ."
+        - "STRONG: unmatched-peg comparator - the carried Meta arms are documents-investigation and product-marketing registers, not enforcement; the cross-entity delta is contextual only, the clean read is peg-internal (the payer got covered adversarially on enforcement pegs)."
+        - "MODERATE: temporal skew - the fresh OpenAI arms (Sep 30 - Oct 3, peak enforcement week) post-date the carried Meta arms (Aug / Sep 9) by three to seven weeks; the enforcement-week news cycle inflates adversarial framing for OpenAI relative to the older Meta pegs."
+        - "MODERATE: relay fidelity for A1 - biztoc and wesearch.press are aggregators; both agree on the Guardian publication and the Reuters byline but neither carries verbatim Guardian text."
+        - "WEAK: n=3 new arms; illustrative arithmetic on hand-assigned tones, not a measured trend."
+      counter_evidence:
+        - "m537 (Aug-18 same-day: OpenAI corporate-announcement register vs Meta adversarial -0.45) - the incentive-prediction-consistent baseline on matched product pegs; this run does not refute it."
+        - "The A2 California-subpoena arm (-0.40) is the HARDEST Guardian-original OpenAI arm yet, cutting against a pure softening read; the softening claim is register-relative to the Meta mean, not absolute."
+        - "No disclosure of the Feb 2025 Guardian-OpenAI partnership observed in the surfaced excerpts (bounded by excerpt completeness, carried from mechanism 687)."
+      extends: "mechanism 874 (Type A #1072): temporal extension with three fresh Sep-30/Oct-3 enforcement arms; fourth and fifth legs of the m687 -> m760 -> m862 -> m874 within-entity hardening chain on the Guardian OpenAI arm; register follows the PEG (enforcement escalation), not the entity - the m842/m736 cross-publication pattern holds at the Guardian"
+      connects_to: [874, 862, 760, 687, 537, 517, 925, 919, 910, 901]
+      research_method: "13 browser.search query sets Oct 3 2026 PDT (technologyreview.com Google Android XR smart glasses October 2026; wired.com OpenAI September 2026 article; theverge.com Google Android XR glasses 2026 review; quoted theverge.com Android XR Warby Parker Gentle Monster Project Aura Xreal Google I/O 2026; theatlantic.com OpenAI September 2026; ft.com OpenAI IPO September 2026; businessinsider.com Anthropic IPO October 2026; wired.com Google Android XR glasses Warby Parker Gentle Monster 2026; theverge.com Hans Anders Meta Ray-Ban glasses privacy October 2026; theguardian.com Hans Anders Meta Ray-Ban smart glasses privacy; ft.com FTC probe OpenAI Anthropic AI safety September 30 2026; quoted Financial Times FTC rogue AI agents Anthropic OpenAI September 30 report; quoted theguardian.com FTC investigation Anthropic OpenAI rogue agents October 2026). SELECTED: the three Guardian Sep-30/Oct-3 enforcement arms (A1 via biztoc timestamp attestation + wesearch excerpt; A2 via WeSearch publisher-body record with verbatim theguardian.com canonical URL; A3 via Guardian international RSS feed item). REJECTED: WIRED x OpenAI September cluster (in-corpus via #1112/m898 strand); Verge x Google Android XR (in-corpus via m628/m731-adjacent google_android_xr_coverage; no fresh tracked originals); Atlantic x OpenAI/Anthropic (in-corpus via #481/m404 and #897/m769); FT x OpenAI IPO (in-corpus via iteration_415); BI x Anthropic IPO (in-corpus via #857/m790-family); Gizmodo x Samsung (in-corpus via #1167/m931); Hans Anders peg (no tracked-publication originals - Reuters origin only, relays at Type E); FT x Anthropic FTC-probe (in-corpus via #1117/m901, same relay family). 0 browser.open this run (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_1172 files on disk (glob); no 'Type A #1172' in git log (--grep); max numeric mechanism_id 933 in profiles/ pre-commit; zero numeric/underscore/dash 934 mechanism keys repo-wide pre-commit (needles format-built per #715, own file excluded); the 5 evidence URLs zero-hit repo-wide pre-commit (git grep -F); block key zero-hit repo-wide pre-commit (git grep); no #1172 rows in README/ARCHITECTURE test tables or iteration-log pre-commit. All URLs copied verbatim from search-result Full-URL listings; no theguardian.com canonical URLs constructed (the A2 canonical URL arrived verbatim inside the WeSearch publisher record). ASCII-only, no em dashes."
+      source_urls:
+        - "https://biztoc.com/x/04b7cfd6b404f774"
+        - "https://wesearch.press/s/us-trade-regulator-opens-investigation-into-ai-giants-includ-4c43cdf3"
+        - "https://www.theguardian.com/us-news/2026/oct/01/california-opens-investigation-openai-hack"
+        - "https://wesearch.press/s/california-issues-investigative-subpoena-to-openai-over-rogu-fa0fc753"
+        - "https://www.somecrazyblogger.org/a/rss?url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss"
+        - "https://uk.linkedin.com/company/uktbc"
+      novelty_verification: "zero test_type_a_1172 files on disk pre-commit (glob); no 'Type A #1172' in git log pre-commit (--grep); max numeric mechanism_id 933 in profiles/ pre-commit; zero numeric 934 mechanism_id keys in profiles/ pre-commit; zero contiguous-literal 934 mechanism key strings in profiles/ and tests/ pre-commit (all 934 needles format-built per #715); block key (guardian_openai_sep30_oct03_enforcement_week_triple) zero-hit repo-wide pre-commit (git grep); the 5 evidence URLs zero-hit repo-wide pre-commit (git grep -F); no #1172 rows in README/ARCHITECTURE test tables or iteration-log pre-commit."
+      rotation_guard: "1170-1174 window THIRD leg D(#1170) -> E(#1171) -> A(#1172 this run) -> B(#1173) -> C(#1174) (anchor patched post-commit per #565). Predecessor #1171 Type E verified in git log (main 1ace2f5d / anchor 28b76773 / doc-sync 21faf3b3 / log-hash e3574c45). Next: #1173 Type B."
+      rotation_transparency: "Iteration #1172 Type A is the THIRD leg of the 1170-1174 window (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174, per the #565 anchor + rotation guard). Predecessor #1171 Type E verified in git log (main 1ace2f5d / anchor 28b76773 / doc-sync 21faf3b3 / log-hash e3574c45, Oct 3 2026 06:00 AM PDT; 157th podcast-sentiment verification; ledger holds at 46). The 1165-1169 window is verified closed as a consecutive newest-first sequence. Next run #1173 continues the window as Type B."
+      verdict: "directionally_supported_not_proven"
+      statistical_discipline: "MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true"
+      keying_note: "Block key carries no 934 mechanism-number substring, keeping the #1171 zero-934 profile sweeps green by designed keying per #715; mechanism_id advances in colon form only. The #1171 max-933 and zero-934 sweeps fail by designed supersession per the #710/#720 convention (staleness recorded, not repaired)."
+      distinct_from_prior: "First dedicated corpus mechanism on the Guardian's Sep-30/Oct-3 enforcement-week OpenAI coverage. Distinct from mechanism 874 (#1072, Sep-28 Astra-cancellation single peg), mechanism 862 (#1052, Sep-26 AP-wire training-halt), mechanism 901 (#1117, FT x OpenAI FTC-probe - different publication), and mechanism 517 (Guardian x Anthropic piracy editorial, different competitor). New arms: A1 Sep-30 FTC probe (Guardian-carried Reuters wire), A2 Oct-1 California AG subpoena (Guardian Tech ORIGINAL, verbatim theguardian.com URL), A3 Oct-3 $500k/day hack-review (Guardian RSS, ~7.5h old at run time - freshest Guardian x OpenAI datum in corpus)."
   meta:
     financial_tie: "none"
     estimated_value: "$0"
