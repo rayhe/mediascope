@@ -43212,13 +43212,13 @@ Push status (this run, Oct 3 2026 ~03:1x PDT): main + anchor followup pushed and
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.
 
-## #1169 Type C: m933 SB 1130 veto (Sep 30 2026) regulatory-preemption money channel - Newsom kills the recording-indicator mandate as Meta posts record Sacramento lobbying spend and TechNet (Meta/Google/Amazon dues-funded) runs the opposition channel; REGULATORY-PREEMPTION as the THIRTY-SIXTH relationship direction (thesis: financial-incentive mapping of the first US state-level smart-glasses hardware-mandate defeat; the money legs are verified in the money press and absent from tech-outlet veto coverage; NOT a falsification-family member, ledger holds at 46) - Type C FIFTH and CLOSING leg of the 1165-1169 window (Oct 3 2026, 04:00 AM PDT; main commit b1d93423 / anchor ddf9eb68 / doc-sync TBD / log-hash followup registers all hashes here per #721 (this commit); doc-sync 61937/1493 -> 62004/1494 (+67/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1169 Type C: m933 SB 1130 veto (Sep 30 2026) regulatory-preemption money channel - Newsom kills the recording-indicator mandate as Meta posts record Sacramento lobbying spend and TechNet (Meta/Google/Amazon dues-funded) runs the opposition channel; REGULATORY-PREEMPTION as the THIRTY-SIXTH relationship direction (thesis: financial-incentive mapping of the first US state-level smart-glasses hardware-mandate defeat; the money legs are verified in the money press and absent from tech-outlet veto coverage; NOT a falsification-family member, ledger holds at 46) - Type C FIFTH and CLOSING leg of the 1165-1169 window (Oct 3 2026, 04:00 AM PDT; main commit b1d93423 / anchor ddf9eb68 / doc-sync b429bb40 / log-hash followup registers all hashes here per #721 (this commit); doc-sync 61937/1493 -> 62004/1494 (+67/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `b1d93423` (b1d93423ad5a3027d569caabccb7c76758186b6c) - verified via git rev-parse
 - Anchor followup `ddf9eb68` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 61937/1493 -> 62004/1494; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
-- Log-hash followup: this commit (terminal per #721) - registers main b1d93423 / anchor ddf9eb68 / doc-sync TBD hashes in the #1169 log entry
+- Doc-sync `b429bb40` (README 61937/1493 -> 62004/1494; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main b1d93423 / anchor ddf9eb68 / doc-sync b429bb40 hashes in the #1169 log entry
 
 ### Rotation transparency
 - This run is iteration #1169 Type C, the FIFTH and CLOSING leg of the 1165-1169 window (D #1165 -> E #1166 -> A #1167 -> B #1168 -> C #1169 per the #565 anchor + rotation guard).
@@ -43245,7 +43245,7 @@ tests/test_type_c_1169_sb1130_veto_regulatory_preemption_technet_meta_sacramento
 README stats table 61937/1493 -> 62004/1494 (+67/+1); README test-table row; ARCHITECTURE.md tree row; iteration-log #1169 entry (this entry); test-file constants patched per #719 (post-first-run 67-collect correction).
 
 ### Push status
-Push status (this run, Oct 3 2026 ~04:xx PDT): TBD via the atomic proxy-credential workflow; ls-remote-verified post-push (see followup).
+Push status (this run, Oct 3 2026 ~04:xx PDT): main + anchor followup + doc-sync pushed via the atomic proxy-credential workflow and ls-remote-verified; log-hash followup pushed after this update (see followup).
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision still pending).
