@@ -105,7 +105,7 @@ TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
 # anchor followup. Deselect the placeholder test in post-commit full runs.
-ANCHORED_SHA = "0" * 40  # placeholder; patched in anchor followup per #565
+ANCHORED_SHA = "21d1a13c8e80be3be27260a139683aad61dddabd"  # main commit, patched in anchor followup per #565
 
 MECH_NUM = 927
 NEXT_NUM = 928
@@ -506,7 +506,7 @@ class TestBackgroundSuiteCheck1159:
 class TestDocSync1159:
     def test_readme_stats_will_ratchet(self):
         # Patched post-commit per #719; deselect pre-commit.
-        assert README_TEST_COUNT == 61249
+        assert README_TEST_COUNT == 61254
         assert README_FILE_COUNT == 1484
 
     def test_test_basename_matches(self):
