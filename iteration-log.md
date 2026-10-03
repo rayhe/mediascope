@@ -43752,7 +43752,7 @@ Push status (this run, Oct 3 2026 ~15:xx PDT): main + anchor followup pushed and
 - Committed predecessors verified pre-commit: #1181 Type E (main 7db1d62b / anchor be097edd / doc-sync 0e2192fa / log-hash 4e0cd3dc), #1180 Type D (main f8d8356e / anchor a3503d51 / doc-sync f18343d0 / log-hash f3d16b13), #1179 Type C (main d64a7761 / anchor 3fc644b8 / doc-sync eb3ca403 / log-hash 6692e1ad), all present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1183 Type B continues the window.
 
-## #1183 Type B: m941 Vlad Savov (Bloomberg) Sep-29 OpenAI Australia-breach accountability arm (-0.35 MANUAL ILLUSTRATIVE) vs Aug-10 Meta Glimmer product-neutral arm (+0.05) - BOUNDARY/NULL pin at the corpus standing no-deal outlet (illustrative delta -0.40, peg-driven; joins m593/#538 reporter-level boundary family); NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1180-1184 window (Oct 3 2026, 04:00 PM PDT; main commit faa3b001 / anchor 38d15b62 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 62991/1507 -> 63065/1508 (+74/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1183 Type B: m941 Vlad Savov (Bloomberg) Sep-29 OpenAI Australia-breach accountability arm (-0.35 MANUAL ILLUSTRATIVE) vs Aug-10 Meta Glimmer product-neutral arm (+0.05) - BOUNDARY/NULL pin at the corpus standing no-deal outlet (illustrative delta -0.40, peg-driven; joins m593/#538 reporter-level boundary family); NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1180-1184 window (Oct 3 2026, 04:00 PM PDT; main commit faa3b001 / anchor 38d15b62 / doc-sync 09496c47; log-hash followup registers all hashes here per #721 (this commit); doc-sync 62991/1507 -> 63065/1508 (+74/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
 - m941 (profiles/careers/journalists.yaml, NEW top-level `vlad_savov` key per the #643 convention, `competitor_coverage` sub-key, `mechanism_id: 941` field form): FIRST dedicated Type B mechanism on Vlad Savov (Bloomberg News tech editor/newsletter writer). Question: at Bloomberg - Terminal-subscription revenue, zero documented AI content-licensing deals with Meta, Apple, or OpenAI (in-corpus #85, Chris Welch career-migration block; carried in m593's financial_context) - does a named tech journalist's accountability register land on the AI lab, or does the no-deal outlet mute it?
@@ -43786,8 +43786,8 @@ Push status (this run, Oct 3 2026 ~16:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `faa3b001` (faa3b0013eb1729de1c3c6d01ce4b6693b00705c) - verified via git rev-parse
 - Anchor followup `38d15b62` (38d15b627a64b10177a3216f39cb4fd0125f3fe6; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 62991/1507 -> 63065/1508; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
-- Log-hash followup: this commit (terminal per #721) - registers main faa3b001 / anchor 38d15b62 / doc-sync TBD hashes in the #1183 log entry
+- Doc-sync `09496c47` (09496c476124ce5a2f4f97ed7eae512edf22c1b8; README 62991/1507 -> 63065/1508; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main faa3b001 / anchor 38d15b62 / doc-sync 09496c47 hashes in the #1183 log entry
 
 ### Rotation transparency
 - This run is iteration #1183 Type B, the FOURTH leg of the 1180-1184 window (D #1180 -> E #1181 -> A #1182 -> B #1183 -> C #1184 per the #565 anchor + rotation guard).
