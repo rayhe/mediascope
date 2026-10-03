@@ -25339,12 +25339,14 @@ andy_boxall:
   - smart glasses
   - wearables
   - mobile
-  notes: 'Android Police contributing writer Andy Boxall (author-bio "Andy is a seasoned technology journalist with more than 15 years experience in the mobile industry, writing for Digital Trends, Wired, and more" rendered on both arms this run; full-text first-hand reads via browser.open this run - a documented deviation from the #503 excerpt-bounded convention). Type B #988 (Sep 25 2026, 07:00 PDT): mechanism 824 - FIRST dedicated corpus mechanism on Boxall (zero dedicated Type B mechanisms pre-commit; the sole prior corpus mention is an incidental string in another journalist''s career notes: "associate editor Andy Boxall" in the Chokkattu Digital Trends notes field - not an item, not a mechanism). Sep-24-2026 adversarial Meta Ray-Ban Audio motive-attribution column vs Sep-10-2025 constructive Apple Watch SE 3 value column: same columnist, same publication, same opinion-column genre, inverted price registers. ASCII-only, no em dashes.'
+  notes: 'Android Police contributing writer Andy Boxall (author-bio "Andy is a seasoned technology journalist with more than 15 years experience in the mobile industry, writing for Digital Trends, Wired, and more" rendered on both arms this run; full-text first-hand reads via browser.open this run - a documented deviation from the #503 excerpt-bounded convention). Type B #988 (Sep 25 2026, 07:00 PDT): mechanism 824 - FIRST dedicated corpus mechanism on Boxall (zero dedicated Type B mechanisms pre-commit; the sole prior corpus mention is an incidental string in another journalist''s career notes: "associate editor Andy Boxall" in the Chokkattu Digital Trends notes field - not an item, not a mechanism). Sep-24-2026 adversarial Meta Ray-Ban Audio motive-attribution column vs Sep-10-2025 constructive Apple Watch SE 3 value column: same columnist, same publication, same opinion-column genre, inverted price registers. Type B #1173 (Oct 3 2026, 07:00 PDT): mechanism 935 - temporal extension of mechanism 132 (Aug-16 Boxall privacy-vocabulary inversion) to the Connect-2026 stigma peak: carried Jun-17-2026 Snap Specs arm (+0.90, zero privacy vocabulary, 4 cameras) vs the carried Sep-24-2026 Meta ''PR stunt'' column (-0.55, motive-attribution register); illustrative delta +1.45 (narrowed from m132''s +1.75); inversion direction holds, register form changes (alarm -> motive-attribution). ASCII-only, no em dashes.'
   mechanism_ids:
   - 824
+  - 935
   source_urls:
   - https://www.androidpolice.com/meta-ray-ban-audio-smart-glasses-pr-stunt-to-dodge-camera-backlash/
   - https://www.androidpolice.com/android-smartwatch-makers-should-be-ashamed-of-themselves/
+  - https://www.androidpolice.com/snap-specs-are-the-augmented-reality-dream-weve-been-waiting-for/
   competitor_coverage:
     type_b_988_andy_boxall_androidpolice_meta_pr_stunt_vs_apple_watch_value_sep25:
       iteration: 988
@@ -25437,6 +25439,82 @@ andy_boxall:
       verification:
         yaml_parse_clean: true
         ascii_only: true
+    type_b_1173_andy_boxall_androidpolice_m132_snap_ar_dream_vs_sep24_meta_pr_stunt_temporal_extension:
+      iteration: 1173
+      mechanism_id: 935
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-03 07:00 PDT'
+      block_key: type_b_1173_andy_boxall_androidpolice_m132_snap_ar_dream_vs_sep24_meta_pr_stunt_temporal_extension
+      test_file: tests/test_type_b_1173_andy_boxall_androidpolice_m132_snap_ar_dream_vs_sep24_meta_pr_stunt_temporal_extension_oct03_7am.py
+      author: Kit (with Ray)
+      journalist: Andy Boxall
+      publication: androidpolice
+      window: '1170-1174 window FOURTH leg (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174)'
+      design: 'Type B journalist cross-entity tracking, temporal extension of mechanism 132 (Aug-16 Boxall three-entity privacy-vocabulary inversion) to the Connect-2026 stigma-peak peg. SAME journalist, SAME publication, SAME opinion-column genre. Carried Snap arm (m132, Jun-17-2026): 4-camera Specs, zero privacy vocabulary, +0.90 illustrative. New Meta arm (carried from this item''s #988/m824 block, unrescored per #807): Sep-24-2026 camera-free Ray-Ban Audio ''PR stunt'' column, motive-attribution register, -0.55 illustrative (first-hand read at #988). Question: does m132''s inversion (privacy-alarm intensity inversely proportional to camera count) survive Meta removing the camera entirely? MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      meta_arm:
+        entity: meta
+        product: 'Ray-Ban Meta Audio (camera-free audio glasses, $349)'
+        title: 'Meta''s new Ray-Ban smart glasses are just a PR stunt to dodge the camera backlash'
+        date: '2026-09-24'
+        outlet: Android Police
+        provenance: 'Carried from this item''s type_b_988 block (mechanism 824, Type B #988, Sep 25 2026), unrescored per #807. Canonical URL lives in the #988 block arm field and the item source_urls; not repeated here per the #988 URL-count pin.'
+        byline_attribution: 'Andy Boxall (author bio rendered on the piece header; full-text first-hand read at #988 - a documented deviation from the #503 excerpt-bounded convention)'
+        key_quotes:
+        - '"Meta''s new Ray-Ban smart glasses are just a PR stunt to dodge the camera backlash" (headline)'
+        - '"The thing is, the Ray-Ban Meta Audio aren''t made for us to buy. They''re for Meta management to point at and say, ''Here''s our business response to the growing privacy backlash against camera-equipped smart glasses.''"'
+        - '"Resurrecting this already played-out, and arguably failed, product line is a cynical, business-driven, PR response to a social issue with modern camera-equipped smart glasses"'
+        - '"OK Meta, we''ve got it. You can''t be a pervert with these!"'
+        framing_notes: 'Motive-attribution adversarial register: the camera-free design - the privacy-positive move - is read as backlash-management theater, not a remedy. Zero privacy-alarm vocabulary (no cameras to alarm about); the adversarial register changed FORM (alarm -> motive-attribution) while keeping its entity-selective direction.'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+      snap_arm:
+        entity: snap
+        product: 'Snap Specs (standalone AR glasses, 4 cameras: 2 visible + 2 IR, dual Snapdragon, $2,195)'
+        title: 'Snap''s $2,195 Specs aren''t smartglasses, they''re the augmented reality dream we''ve been waiting for'
+        date: '2026-06-17'
+        outlet: Android Police
+        provenance: 'Carried from mechanism 132 (test_andy_boxall_cross_entity_privacy_vocabulary_inversion_aug16.py + profiles/competitor-coverage-research.yaml), unrescored per #807. In-corpus since Aug 16 2026; byline re-attested this run via the Android Police wearables listing and the article-page author bio.'
+        byline_attribution: 'Andy Boxall (per the m132 corpus record: journalist field ''Andy Boxall'', Android Police)'
+        key_quotes:
+        - '"Snap''s Specs are *not* smartglasses. They are the augmented reality future many of us have imagined, but wondered if it would ever actually happen."'
+        - '"Wrong. I don''t want you to dismiss them because of how we''re being conditioned to think about smart glasses."'
+        - '"Forget the Ray-Ban Meta, these are not the same" (sub-dek; Meta used as the negative anchor)'
+        - 'Positive-term inventory per m132: augmented reality dream, technically astonishing, spectacular, genre-creating, very excited, most wearable, most interesting, most technically exciting.'
+        framing_notes: 'Aspirational register on a 4-camera device: cameras not discussed at all per m132 (camera_mentioned false), ZERO privacy/surveillance/consent vocabulary, LED indicator not mentioned. Meta used as the negative anchor (''will have the Ray-Ban Meta laughing in the streets, right?'' posed as the wrong take).'
+        tone_MANUAL_ILLUSTRATIVE: 0.90
+      register_gap:
+        illustrative_delta_snap_minus_meta: '+1.45'
+        delta_calc: '0.90 - (-0.55) = 1.45, same journalist, same publication, same opinion-column genre. m132''s own snap-minus-meta delta was +1.75 (0.90 - (-0.85)); the gap NARROWED by 0.30 as Meta''s arm softened from -0.85 (Jul-9 ''nightmarish'' super-sensing piece) to -0.55 (Sep-24 camera-free ''PR stunt'' column) - the adversarial register tracks the product change directionally.'
+        family_placement: 'EXTENDS mechanism 132 (Boxall privacy-vocabulary inversion, Aug-16): the inversion''s DIRECTION survives the Connect-2026 stigma peak; its FORM changes (privacy-alarm -> motive-attribution) when the cameras are removed. BOUNDS m132: inversion magnitude is peg/product-sensitive (1.75 -> 1.45), direction is not. Cross-outlet corroboration of the journalist-level pattern with m680 (Hector Snap-aspirational vs Meta-alarm). Contrast case against #1148 (Howley parity bound).'
+      financial_relationship: 'Android Police is Valnet Inc. (per m132): depends on Google ad revenue and Samsung advertising spend; Meta has no financial relationship with Valnet. Google pays Samsung billions for Gemini preinstallation and Play Store defaults; Samsung and Google jointly develop smart glasses via Android XR. Directional context only, correlation not causation.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned (Snap +0.90 carried from m132, Meta -0.55 carried from #988/m824); p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; engine NOT run at the finding layer; no_analysis_json_update true; NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'Ledger holds at 46 (no new member; FORTY-SIXTH member-form present at m907 in profiles/the-verge.yaml). NOT a falsification-family member: thesis-consistent temporal extension of m132 (the direction predicted by m132 holds on the new peg; only the register FORM changes). FORTY-SEVENTH member-claim form absent repo-wide (forward guard).'
+      confounders:
+      - 'STRONG: temporal - Snap arm Jun-17-2026 (AWE reveal peg), Meta arm Sep-24-2026 (Connect launch-week peg); 3 months apart, different news pegs.'
+      - 'STRONG: product-category - $2,195 full-AR standalone vs $349 audio-only; aspiration can be category-novelty-driven independent of entity.'
+      - 'MODERATE: evidence tier - both arms carried (Snap from m132 Aug-16 scoring, Meta from #988 Sep-25 first-hand read); 0 browser.open this run per #503.'
+      - 'WEAK: n=1 vs n=1; MANUAL ILLUSTRATIVE only.'
+      counter_evidence:
+      - 'The Meta arm SOFTENED (-0.85 -> -0.55) as the cameras were removed - the register tracks the product change directionally, against a pure entity-hostility reading.'
+      - 'The Sep-24 piece concedes the backlash was real (''dodge the camera backlash'' implies a genuine backlash) - not a denial piece.'
+      - 'm132''s Samsung arm (+0.30, ''similar protections to the Ray-Ban Meta'') shows Boxall writes neutral-positive on a camera competitor with normalization language - the register is not uniformly anti-camera.'
+      - 'The Jun-17 Snap piece opens with appearance skepticism (''oversized, dorky-looking smartglasses'') before the ''Wrong.'' pivot - Boxall applies honest-reviewer caveats to Snap too.'
+      - 'The m132 delta (+1.75) exceeds the m935 delta (+1.45): the gap narrows on the new peg, bounding the inversion''s magnitude.'
+      verdict: 'directionally_supported_not_proven: m132''s privacy-vocabulary inversion extends to the Connect-2026 stigma peak. Boxall applies a motive-attribution adversarial register (-0.55) to Meta''s camera-free concession while his carried Snap arm (+0.90) keeps zero privacy vocabulary on a 4-camera device; illustrative delta +1.45, narrowed from m132''s +1.75. The inversion''s direction survives the camera removal; its form changes (alarm -> motive-attribution).'
+      research_method: '24 browser.search query sets Oct 3 2026 PDT (Scott Stein CNET Meta Ray-Ban Display - rejected: saturated #588/#868; Lauren Goode WIRED - rejected: saturated #436; Wes Davis Verge Snap Specs - rejected: no clean pair surfaced; Caroline Haskins Gizmodo - rejected: no byline surfaced; Julian Chokkattu WIRED - rejected: saturated; Andrew Lanxon CNET - rejected: no byline surfaced; Lisa Eadicicco CNN - rejected: m123; Hamish Hector TechRadar - rejected: saturated #743/#963; Devindra Hardawar Engadget - rejected: no byline surfaced; Engadget Snap Specs hands-on byline - rejected: Karissa Bell, saturated #818/#888/#903; Mashable Alex Perry - rejected: no byline surfaced; Sam Rutherford Engadget - rejected: m151; Digital Trends Meta Connect - rejected: no clean same-writer pair; Michael Kan PCMag - rejected: no pair surfaced; Mack DeGeurin - rejected: no glasses coverage surfaced; CNET Snap Specs author - rejected: Scott Stein, saturated; Tom''s Guide Snap Specs byline - rejected: unattributed; Sean Keach Sun - rejected: Meta-only, no competitor arm; Digital Trends Snap Specs - rejected: no clean pair; Wes Davis Verge Connect - rejected: no clean pair; Android Authority Connect - rejected: no clean pair; Reece Rogers WIRED - rejected: saturated #1098; Android Police Snap Specs author - SELECTED: surfaced the in-corpus m132 Boxall Snap arm and closed the #988-blocked Snap-pair direction; Dan Howley Yahoo - rejected: no Connect-week arm surfaced). 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps per #715: zero test_type_b_1173 files on disk (glob); no "Type B #1173" in git log (--grep); max numeric mechanism_id 934 in profiles/ pre-commit; zero numeric/underscore/dash 935 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; BOTH arm URLs in-corpus pre-commit (novelty is the temporal-extension pairing: FIRST m132 extension to the Connect-2026 stigma peak; the #988 research explicitly rejected the Snap-pair direction as unattainable). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE (Snap +0.90 carried from m132, Meta -0.55 carried from #988/m824); p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run at the finding layer per the Aug 28 2026 standing rule; no significance claimed; no_analysis_json_update true; NOT artifact-grade. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (thesis-consistent temporal extension of m132: the inversion direction predicted by m132 holds on the Connect-2026 peg; only the register FORM changes); ledger holds at 46.'
+      connects_to: [132, 824, 680, 75, 722, 806, 827, 988]
+      no_analysis_json_update: true
+      background_suite_status: 'CHECKED ONLY per #795: the #1170-launched full suite (goal hidden_files type_d_1170_full_suite.log) observed at the 07:00 PDT check - 2551 bytes, dots at 3% with one F, last write Oct 3 05:59 PDT, no live pytest process; DEAD/AMBIGUOUS. NOT touched (no re-launch, no kill, no writes). Its verdict belongs to #1175 (next Type D) per #795.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) untouched; targeted staging only. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      novelty: 'FIRST m132 temporal extension to the Connect-2026 stigma peak; FIRST dedicated Type B mechanism pairing Boxall''s Snap arm with his Sep-24 Meta ''PR stunt'' column. Zero test_type_b_1173 files on disk pre-commit (glob); no "Type B #1173" in git log pre-commit (--grep); max numeric mechanism_id 934 in profiles/ pre-commit; zero numeric/underscore/dash 935 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; both arm URLs in-corpus pre-commit (Snap arm: 3 hits - competitor-coverage-research.yaml + the Aug-16 m132 test; Meta arm: #988 block + #976 Type E press-set). ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted. Qualitative Type B temporal extension; falsification ledger holds at 46; NOT artifact-grade.'
 victoria_song:
   name: Victoria Song
   current_role: Senior Reporter / Wearables Reviewer
