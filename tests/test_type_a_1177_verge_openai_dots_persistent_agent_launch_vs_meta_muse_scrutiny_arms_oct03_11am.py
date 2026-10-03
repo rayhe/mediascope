@@ -80,7 +80,7 @@ OWN_BASENAME = os.path.basename(__file__)
 
 # Anchor: zero placeholder pre-commit; patched to the main-commit SHA in
 # the anchor followup per #565.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "442f45b09c747939ab1200e9c26997f0018d487d"  # patched per #565 in the anchor followup
 
 # Rotation: predecessor #1176 Type E commits (verified in git log).
 P1176_MAIN = "1c4ef7d7"
