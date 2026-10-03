@@ -13219,6 +13219,112 @@ journalists:
     artifact_readiness: 'No analysis.json update warranted. Manual-illustrative journalist-level pin; descriptive only, not artifact-grade.'
     test_file: tests/test_type_b_683_hayden_field_meta_muse_spark_reentry_deficit_vs_openai_gpt56_regulatory_launch_byline_register_sep11_5pm.py
     notes: 'Both arms carry full byline attribution (sole bylines), which isolates better than #678''s co-byline Google arm. Near-null delta (+0.05) is itself the honest read: Field is not softer on OpenAI despite the Vox deal. The analytical payload is register differentiation (deficit vs regulatory friction) plus the three-entity beat-lens check.'
+  type_b_1178_hayden_field_verge_openai_agents_catch_up_vs_carried_m644_meta_deficit_temporal_extension_sep28:
+    iteration: 1178
+    mechanism_id: 938
+    type: B
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    scheduled_job_id: mediascope-daily-iteration
+    date: '2026-10-03 12:00 PDT'
+    block_key: type_b_1178_hayden_field_verge_openai_agents_catch_up_vs_carried_m644_meta_deficit_temporal_extension_sep28
+    test_file: tests/test_type_b_1178_hayden_field_verge_openai_agents_catch_up_vs_carried_m644_meta_deficit_temporal_extension_sep28_oct03_12pm.py
+    author: Kit (with Ray)
+    journalist: Hayden Field
+    publication: The Verge (Vox Media)
+    window: '1175-1179 window FOURTH leg (D #1175 -> E #1176 -> A #1177 -> B #1178 -> C #1179)'
+    design: 'Type B journalist cross-entity tracking, temporal extension of mechanism 644 (Type B #683, Sep-11: Field sole-byline Meta Muse Spark re-entry-deficit -0.15 vs OpenAI GPT-5.6 regulatory-friction -0.10, reporter-level constancy pin). SAME journalist, SAME publication, SAME AI beat. NEW OpenAI arm (Sep-28-2026): Field applies the deficit/follower register to the Vox Media licensing-deal partner itself - ''OpenAI''''s AI agents need to catch up'' (''fallen behind in one of the industry''''s hottest categories: continuously running, consumer-facing AI agents''), framing Meta''''s Muse as the category leader (''its answer to Meta''''s Muse''; relay-attested 600,000 US daily actives). Carried Meta + OpenAI arms un-rescored per #807. Question: does the m644 constancy pin (deficit register is beat-lens, not entity-driven) survive the deal partner trailing on the agent peg itself, one day before DevDay? MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. ASCII-only, no em dashes.'
+    new_openai_arm:
+      entity: openai
+      title: 'OpenAI''s AI agents need to catch up'
+      url: https://technewstube.com/theverge/1871272/openais-ai-agents-need-to-catch-up/
+      canonical_verge_url_attested: https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent
+      publication: The Verge
+      date: '2026-09-28'
+      byline: 'Hayden Field (sole; byline attested via the technewstube mirror''s verbatim Verge metadata ''By Hayden Field Sep 28, 2026, 2:45 pm'', wilsonsmmedia author listing, and flipboard ''The Verge - Hayden Field''; theverge.com policy-blocked per #492)'
+      genre: pre-event rumor-preview analysis
+      register: deficit/follower preview
+      key_quotes:
+      - '"OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it''s fallen behind in one of the industry''s hottest categories: continuously running, consumer-facing AI agents."'
+      - '"On Tuesday, it will likely try to capture the lead in that race."'
+      - '"Rumors abound that OpenAI will release its own AI agent, dubbed Aeon - its answer to Meta''s Muse, SpaceX''s Grok Bot, OpenClaw, and many more."'
+      - '"Aeon could have a shot at success, but to beat the competition, it would need to pull together the best features of several different agent platforms."'
+      - 'Relay (thejoai.com): "The company has fallen behind competitors like Meta''s Muse, which gained 600,000 daily active users in the US."'
+      - 'Relay (aionpulse.com): "OpenAI, once a pioneer in generative AI, is trailing competitors in the race to launch continuous consumer-facing AI agents ahead of its DevDay event."'
+      register_notes: 'Deficit/follower register applied to the deal partner: headline-grade ''need to catch up'' + ''fallen behind'' lede; Meta''s Muse positioned as the category leader the partner must answer (''its answer to Meta''s Muse''); the ideal-system bar is set by third parties (OpenClaw), not by OpenAI''s own roadmap. Harder than her Jun-26 regulatory-friction register on the same entity.'
+      tone_MANUAL_ILLUSTRATIVE: -0.30
+      tone_basis: 'hand-assigned this run from excerpt/relay reads, MANUAL ILLUSTRATIVE'
+      evidence_tier: 'excerpt/relay-bounded per #503 (0 browser.open; theverge.com policy-blocked)'
+      source_urls:
+      - https://technewstube.com/theverge/1871272/openais-ai-agents-need-to-catch-up/
+      - https://www.wilsonsmedia.com/openais-ai-agents-need-to-catch-up/
+      - https://flipboard.com/@theverge/the-verge-on-artificial-intelligence-rkbtf55qz
+      - https://aifuture.org/news/openai-s-ai-agents-need-to-catch-up-14494
+      - https://scoopfeeds.com/article/62d97f45-aa2d-5d3a-9301-9032336364bb
+      - https://thejoai.com/ai-news/ai-overuse-may-harm-cognition-ai-detectors-reveal-content-fakes/
+      - https://aionpulse.com/news/2/
+    carried_meta_arm:
+      entity: meta
+      title: Meta is reentering the AI race with a new model called Muse Spark
+      url: https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/
+      publication: The Verge
+      date: '2026-04-08'
+      byline: Hayden Field (sole)
+      register: competitive-deficit re-entry
+      tone_MANUAL_ILLUSTRATIVE: -0.15
+      provenance: 'carried from mechanism 644 (Type B #683), un-rescored per #807'
+    carried_openai_arm:
+      entity: openai
+      title: OpenAI unveils GPT-5.6 amid US AI regulatory drama
+      url: https://technewstube.com/theverge/1844887/openai-unveils-gpt-5-6-us-ai-regulatory-drama/
+      publication: The Verge
+      date: '2026-06-26'
+      byline: Hayden Field (sole)
+      register: product-unveiling under regulatory friction
+      tone_MANUAL_ILLUSTRATIVE: -0.10
+      provenance: 'carried from mechanism 644 (Type B #683), un-rescored per #807'
+    scorer:
+      method: 'MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule); engine NOT run at the finding layer; NOT artifact-grade'
+      new_openai_arm_tone: -0.30
+      carried_meta_arm_tone: -0.15
+      carried_openai_arm_tone: -0.10
+      illustrative_delta_new_openai_minus_carried_meta: -0.15
+      illustrative_delta_new_openai_minus_carried_openai: -0.20
+      delta_calc: '-0.30 - (-0.15) = -0.15; -0.30 - (-0.10) = -0.20'
+      engine_run: false
+      is_significant: false
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      note: 'At this journalist the deal partner draws a HARDER register than the non-payer (delta -0.15) - an inversion of the naive payer-softening prediction at the byline level. Within-entity hardening: the Sep-28 deficit register (-0.30) runs -0.20 harder than her Jun-26 regulatory-friction register (-0.10) on the same entity. n=1 new arm vs carried arms; directional only.'
+    financial_context: 'Vox Media strategic content and product partnership with OpenAI, May 29 2024 (The Verge archive trains ChatGPT; cash terms undisclosed; PMC acquired Vox Media 2026; carried from m425/m907). $0 Meta relationship. The money direction predicts softer OpenAI framing at The Verge; Field''s Sep-28 arm runs the deficit register on the deal partner itself - the opposite direction at this byline.'
+    finding: 'TEMPORAL EXTENSION of the m644 (Type B #683) reporter-level constancy pin to the Sep-28-2026 DevDay-eve peg. The Verge senior AI reporter Hayden Field - the same sole byline that deficit-framed Meta''s Muse Spark launch (''reentering the AI race,'' -0.15, Apr 8) - applies the deficit/follower register to the Vox Media licensing-deal partner itself: ''OpenAI''s AI agents need to catch up'' (''fallen behind in one of the industry''s hottest categories''), -0.30 MANUAL ILLUSTRATIVE, with Meta''s Muse framed as the category leader (''its answer to Meta''s Muse''). Illustrative new-OpenAI-minus-carried-Meta delta -0.15: at this journalist the deal partner draws a HARDER register than the non-payer - an inversion of the naive payer-softening prediction at the byline level, paralleling the m920 Howley parity bound (Type B #1148). Within-entity hardening: Sep-28 deficit (-0.30) runs -0.20 harder than her Jun-26 regulatory-friction register (-0.10) on the same entity. BOUNDS the #1177 Type A publication-level finding (Verge Dots +0.125 vs Muse -0.375, +0.50 thesis-consistent): the outlet''s AI-beat lead deficit-framed the deal partner on the agent peg itself, one day before DevDay. NOT a falsification-family member: temporal extension of an existing reporter-level constancy pin (m644), not a new prediction test; ledger holds at 46. Correlation is not causation.'
+    confounders:
+    - 'STRONG: genre/peg mismatch - the Sep-28 arm is a pre-event rumor-preview peg (''rumors abound,'' ''will likely try''), intrinsically speculative-deficit; the m937 Dots arms are briefed-launch pegs, intrinsically constructive. Register tracks genre, not entity alone.'
+    - 'STRONG: excerpt-tier evidence - 0 browser.open per #503; theverge.com policy-blocked; byline and lead attested via the technewstube mirror''s verbatim Verge metadata (''By Hayden Field Sep 28, 2026, 2:45 pm'') plus six independent relays; no full-text read.'
+    - 'MODERATE: temporal gap - Sep 28 vs Apr 8 (Meta arm, ~5.5 months) and Jun 26 (OpenAI arm, ~3 months); different news cycles.'
+    - 'MODERATE: the ''Aeon'' name rumor misfired (the product shipped Sep 29 as Dots) - the deficit framing was pegged to a rumor whose name detail was wrong, though the always-on-agent category claim proved directionally right.'
+    - 'WEAK: n=1 new arm; tones hand-assigned; directional only, no statistical significance by design.'
+    counter_evidence:
+    - 'COUNTEREVIDENCE: m937''s O1/O2 arms - the same outlet ran constructive Dots launch coverage (+0.15/+0.10) the next day; Field''s preview deficit and the launch-day constructive register coexist at The Verge, so the journalist-level bound does not overturn the publication-level finding.'
+    - 'COUNTEREVIDENCE: Field''s piece still centers OpenAI as the agent-race protagonist (''capture the lead in that race'') - category centrality granted even while deficit-framed; softer than accountability-adversarial.'
+    - 'COUNTEREVIDENCE: peer outlets ran harder on the Dots launch itself (The Register ''disarming AI angst with cute graphics,'' Sep 29) than Field''s preview.'
+    - 'COUNTEREVIDENCE: m644''s three-entity beat-lens check (Google Decoder ''losing the AI race,'' Apple ''punts on Siri'') already established the deficit register as beat-lens - this run extends, not discovers, that pattern.'
+    - 'COUNTEREVIDENCE: the piece''s core news claim (always-on consumer agent at DevDay) was accurate - Dots shipped Sep 29 - so the ''fallen behind'' frame had a genuine competitive peg.'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule. n=1 new arm vs carried arms (un-rescored per #807). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false. The asymmetry scorer engine NOT run at the finding layer; illustrative deltas only (-0.15, -0.20); verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade.'
+    verdict: 'directionally_supported_not_proven'
+    cautious_language_required: true
+    correlational_note: 'This mechanism documents one reporter''s deficit-register application to the licensing-deal partner on the DevDay-eve agent peg, against her carried Meta-deficit and OpenAI-regulatory-friction arms. Register differences are correlational observations about editorial framing; they do not demonstrate intent, bias as motive, or causation. The genre/peg mismatch and temporal gaps are the dominant confounds. No causal claim. Hypothesis-generating only.'
+    no_analysis_json_update: true
+    falsification_family_member: false
+    falsification_ledger: 46
+    ledger_note: 'Ledger holds at 46 this run (no new member; FORTY-SIXTH member-form present in profiles/the-verge.yaml m907; FORTY-SEVENTH member-claim form absent repo-wide). Temporal extension of the m644 reporter-level constancy pin, not a new prediction test.'
+    connects_to: [644, 425, 56, 907, 937, 920]
+    novelty: 'TEMPORAL EXTENSION of mechanism 644 (Type B #683); zero mechanism blocks on this pairing pre-commit beyond m644. Zero test_type_b_1178 files on disk (glob); no ''Type B #1178'' in git log (--grep); max numeric mechanism_id 937 in profiles/ pre-commit; zero numeric/underscore/dash 938 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1178 in key, no 938 substring); the 7 source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    research_method: '5 browser.search query sets Oct 3 2026 PDT: (1) Jess Weatherbed The Verge OpenAI Dots persistent agents - REJECTED as the pair source (Weatherbed holds prior Type B mechanisms #56/#462; surfaced own-repo commit URLs, rejected as circular per the Type E convention); (2) theverge.com OpenAI Dots always-on agents author byline - SELECTED as launch context (The Register ''disarming AI angst,'' memeburn, thehindubusinessline); (3) quoted Jess Weatherbed Verge Meta Muse Facebook Marketplace address - SELECTED as carried-M2-arm byline corroboration (explainx.ai, wesearch.press verbatim Verge metadata, merriam-webster citation); (4) Jess Weatherbed The Verge OpenAI article 2026 - REJECTED as the pair source (same reason as (1); yielded the muckrack profile); (5) Hayden Field Verge ''AI agents need to catch up'' OpenAI DevDay - SELECTED: sole byline confirmed (technewstube verbatim Verge metadata ''By Hayden Field Sep 28, 2026, 2:45 pm''; wilsonsmmedia author listing; flipboard ''The Verge - Hayden Field'') plus four relays (aifuture.org, scoopfeeds.com, thejoai.com, aionpulse.com). 0 browser.open per #503 (theverge.com policy-blocked; excerpt/relay-bounded). Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    artifact_readiness: 'No analysis.json update warranted. Qualitative Type B temporal-extension pin; descriptive only, not artifact-grade. Falsification ledger holds at 46.'
+    background_suite_status: 'CHECKED ONLY per #795: the #1175-launched full suite (goal hidden_files/type_d_1175_full_suite.log) observed stalled at this run''s check (10635 bytes, last write Oct 3 16:59 UTC, no live pytest process); NOT touched; verdict belongs to #1180.'
+    in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.'
 - career:
   - beat: journalism, political science
     end: '2017'
