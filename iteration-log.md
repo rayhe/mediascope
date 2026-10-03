@@ -42617,7 +42617,7 @@ doc-sync 60979/1480 -> 61042/1481 (+63/+1).
 ### Commit hashes
 - Main commit `aee49f8c` (aee49f8cfbcdaa099ad67952385684f3fb9f4df5) - verified via git rev-parse
 - Anchor followup `ca915a8b` (ca915a8b987f1b184fd77c5b4b7b3295d33a72e4; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 61042/1481 -> 61097/1482; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `d28e5350` (README 61042/1481 -> 61097/1482; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
