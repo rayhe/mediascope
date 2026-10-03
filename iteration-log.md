@@ -43063,7 +43063,7 @@ Push status (this run, Oct 3 2026 ~01:30 AM PDT): main + anchor followup pushed 
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1167 Type A continues the window.
 
 ### Log-hash followup (per #721, terminal)
-- main: TBD
-- anchor: TBD
-- doc-sync: TBD
+- main: 45ad40af7cac0d22e33d7378fb5a67d379e67245
+- anchor: c628650187dc0ed98c4733a813d086059dfa7dfa
+- doc-sync: 8f5edca28802ad3c9b7e9adc8e94f0c24a3aecc0
 - log-hash: this commit (terminal per #721)
