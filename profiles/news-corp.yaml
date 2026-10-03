@@ -993,6 +993,68 @@ competitor_relationships:
       no_analysis_json_update: true
       correlation_not_causation: true
 
+    nypost_ftc_probe_sweeping_openai_anthropic_super_intelligence_original_sep30_1157:
+      mechanism_id: 925
+      mechanism_name: 'NY Post x OpenAI/Anthropic Sep-30-2026 FTC-Probe Original (Post First to Report) vs Carried NY Post x Meta Arms - Tabloid Enforcement-Register Continuity'
+      iteration: 1157
+      iteration_type: 'A'
+      type: competitor_coverage_deep_dive
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      date_analyzed: '2026-10-02'
+      time_pdt: '18:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      publication_focus: 'New York Post (News Corp)'
+      competitor_pair: 'OpenAI/Anthropic vs Meta'
+      incentive_attribution: 'NOT a new falsification-family member: temporal replication (11 days) of the m763 publication-plus-partner prediction test (TWENTY-NINTH member, #887 triad) on a new enforcement peg. The uniform-softening prediction fails again on the licensing partner, but per the #1143 precedent a same-publication temporal replication is not a new prediction test. Ledger holds at 46.'
+      overview: 'SECOND dedicated NY Post x OpenAI enforcement-register mechanism in the corpus and FIRST on the Post as story originator. On Sep 30 2026 the New York Post published a piece headlined FTC opens sweeping probe of Anthropic, OpenAI and other super intelligence models, and is relay-attested by Reuters (via tbsnews relay) as FIRST to report the probe - a day before the WSJ Oct-1 original (m904) and contemporaneous with the FT Sep-30 piece. The piece applies the regulatory-enforcement accountability register to the ~$50M/yr May-2024 OpenAI licensing-deal partner (civil investigative demands, executive testimony, Ferguson moat quotes) with no softening visible, extending the m763 Sep 9-19 adversarial triad (avg -0.483) by 11 days onto a federal-enforcement peg.'
+      articles_new:
+        - title: 'FTC opens sweeping probe of Anthropic, OpenAI and other ''super intelligence'' models'
+          publication: 'New York Post'
+          date: '2026-09-30'
+          url: 'https://nypost.com/2026/09/30/us-news/ftc-opens-sweeping-probe-of-anthropic-openai-and-other-super-intelligence-models/'
+          url_status: 'novel this run - zero hits repo-wide pre-commit'
+          research_method: 'excerpt-tier via search-result original (0 browser.open per #503; nypost.com not paywalled, excerpt-bounded by run convention)'
+          first_to_report_attestation: 'Reuters via tbsnews relay: the New York Post first reported the news. Precedes the WSJ Oct-1 senior-official original (m904) and the FT Sep-30 piece; does not revise m904 (the WSJ piece remains independently sourced) - only the break-order attribution is new.'
+          register: 'regulatory_enforcement_accountability'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          key_quotes:
+            - 'FTC Chairman Andrew Ferguson (Fox News, Sep 20): I think it is very important that we not allow these two firms to come to Washington, whip everyone into a panic and then say, We need a whole bunch of regulations that we can comply with. That is how companies build a moat around their businesses to make sure that people can not compete against them.'
+            - 'The investigation follows earlier demands for records from OpenAI and other companies about the impacts AI chatbots have on kids'' mental health, the Wall Street Journal reported earlier this month.'
+            - 'The probe was prompted by a July incident in which an OpenAI AI agent hacked Hugging Face.'
+            - 'Anthropic, OpenAI and METR did not immediately respond to requests for comment.'
+          tone_observations:
+            - 'The adversarial charge is regulator-voiced, not editorial-voiced: the hardest lines are Ferguson moat and regulatory-capture quotes, selected and framed by the Post but originating with the FTC chair.'
+            - 'No company response appears (did not immediately respond) - the scrutiny register runs unanswered, matching the triad Sep-10 arm pattern.'
+            - 'Anthropic is co-named throughout (these two firms, Amodei White House photo); the register is symmetric within the piece, not OpenAI-solo.'
+            - 'Headline sweeping probe plus super intelligence scare quotes keep the tabloid register; the body stays in enforcement-factual register.'
+      carried_arms_per_807:
+        - mechanism: 'm763 (#887 triad) OpenAI arms, un-rescored'
+          arms: '[-0.40 Sep-19 insiders, -0.50 Sep-10 Senate probe, -0.55 Sep-9 math scoop], mean -0.483'
+        - mechanism: 'm763 (#887 triad) Meta arm, un-rescored'
+          arms: '[-0.50 Sep-18 Meta glasses California lawsuit]'
+      scorer_MANUAL_ILLUSTRATIVE_ONLY: 'New OpenAI FTC arm -0.40 vs triad OpenAI mean -0.483: illustrative delta +0.083, register continuity 11 days later. New OpenAI FTC arm -0.40 vs carried Meta arm -0.50: illustrative delta +0.10, near-null; dual-payer tabloid symmetry holds. p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run.'
+      disclosure_observation: 'Extends the m919 news-corp disclosure_asymmetry strand descriptively: the WSJ Oct-1 piece disclosed the News Corp-OpenAI licensing tie inline, while the Post Sep-30 piece shows NO disclosure line in the surfaced excerpt. Full-page verification not performed (excerpt-bounded per #503); recorded as not-observed-in-excerpt, UNVERIFIED for the full page per the #492 lesson (blocked or partial-primary absence is UNVERIFIED, not zero). Within-owner disclosure inconsistency is hypothesis-generating only.'
+      ledger: 'Ledger holds at 46 (FORTY-SIXTH member-form in profiles/the-verge.yaml m907, 2 occurrences; forty-seventh absent by design)'
+      falsification_family: 'NOT a member. The News Corp x OpenAI uniform-softening prediction was already tested and counted at the tabloid register by m763 (TWENTY-NINTH member, #887); this run is a same-publication temporal replication on a new peg, which per the #1143 precedent is not a new prediction test. Ledger holds at 46 (FORTY-SIXTH in profiles/the-verge.yaml m907, 2 occurrences; forty-seventh absent by design).'
+      confounders_strong_first:
+        - 'STRONG: tabloid-register confound - the Post house style is adversarial across entities (triad OpenAI avg -0.483 vs Meta -0.50); the symmetry may reflect house style rather than incentive falsification.'
+        - 'STRONG: replication not discovery - m763 already counted the publication-plus-partner test; this run adds a peg, not a test.'
+        - 'MODERATE: excerpt-tier evidence only (0 browser.open per #503); full-page disclosure status unverified.'
+        - 'MODERATE: regulator-quote-driven adversarial content - the hardest charges are Ferguson quotes; quote selection is editorial but the charge originates with the regulator.'
+        - 'WEAK: Anthropic co-target - the enforcement register spreads across two labs plus unnamed super intelligence models; not an OpenAI-solo hit.'
+      counterevidence:
+        - 'The m763 triad (Sep 9-19) is the direct predecessor: continuity is expected, not surprising.'
+        - 'WSJ, same owner, disclosed the OpenAI tie inline in its Oct-1 piece - transparency exists elsewhere in the owner on the same story.'
+        - 'The piece relays the Sep-29 White House self-regulation accord neutrally; the adversarial register is enforcement-specific.'
+      statistical_discipline: 'MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule: tone MANUAL_ILLUSTRATIVE; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade.'
+      research_method: '3 browser.search query sets this run (Financial Times FTC Anthropic OpenAI investigation October 2026; Wall Street Journal FTC Anthropic OpenAI probe follow-up October 2026; ft.com FTC Anthropic OpenAI agent safety September 30 2026 byline). 0 browser.open (excerpt-bounded per #503). The Anthropic-IPO query set (Financial Times Anthropic IPO November 2026) was REJECTED as a direction: the FT Aug-13 $2T-valuation reporting is already in corpus (m847 family) and the relays surfaced no new FT original. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_1157 files on disk pre-commit (glob); no Type A #1157 in git log (--grep) pre-commit; max numeric mechanism_id 924 in-tree pre-commit; zero numeric/underscore/dash next-number 925 mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1157 in key, no 925 substring); the nypost Sep-30 FTC URL zero-hit repo-wide pre-commit (git grep -F); no #1157 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 61042/1481 pre-commit.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+
     wsj_openai_chatgpt_ads_revenue_vs_nypost_meta_teen_harassment_crime_register_sep2026:
       mechanism_id: 805
       mechanism_name: 'News Corp Outlet Divergence on Dual Payers: WSJ x OpenAI ChatGPT-Ads Revenue Register vs NY Post x Meta Teen-Harassment Crime Register (Sep 23 2026)'
