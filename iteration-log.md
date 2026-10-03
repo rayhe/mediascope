@@ -42731,3 +42731,9 @@ Push status (this run, Oct 2 2026 ~08:xx PDT): main + anchor followup pushed and
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 - Background suite: the #1155-launched full suite was DEAD at this run's check (goal hidden_files type_d_1155_full_suite.log, 1804 bytes, last write Oct 2 16:51:36 PDT, ~3.5h stale; no pytest alive at this run's ps scan; TWENTY-SECOND consecutive background death by count); its verdict belongs to #1160 per #795. This run checked only (no Type C #1159 markers in the suite log); does not touch it.
+
+### Log-hash followup (per #721, terminal)
+- main: 21d1a13c8e80be3be27260a139683aad61dddabd
+- anchor: 21d1a13c8e80be3be27260a139683aad61dddabd (self-anchor per #565)
+- doc-sync: 83d09762abe439602d34917a229814053b6a1274
+- log-hash: this commit (terminal per #721)
