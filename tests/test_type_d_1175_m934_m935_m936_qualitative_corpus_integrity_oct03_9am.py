@@ -197,7 +197,7 @@ TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
 # anchor followup. Deselect the placeholder test in post-commit full runs.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "17fa835cb2b045000f374f1d4643cc4fc420d5ec"
 
 MECH_NUM = 936
 NEXT_NUM = 937
@@ -1173,9 +1173,10 @@ class TestInflightIsolation1175:
 
     def test_m846_untouched(self):
         # #1024's m846: Ray's revert/leave/rebuild decision pending;
-        # not an assistant repair task.
+        # not an assistant repair task. Show-hash form against the
+        # main commit's own diff (working tree clean post-commit).
         out = subprocess.run(
-            ["git", "status", "--short"],
+            ["git", "show", ANCHORED_SHA, "--stat", "--format="],
             cwd=REPO_ROOT, capture_output=True, text=True, timeout=60,
         )
         assert "m846" not in out.stdout
