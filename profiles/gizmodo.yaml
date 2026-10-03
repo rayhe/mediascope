@@ -2234,6 +2234,77 @@ cross_entity_coverage:
         - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207
         - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803
         - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    gizmodo_samsung_unpacked_build_quality_meta_favoring_comparator_register_1167_jul22:
+      mechanism_id: 931
+      mechanism_name: 'Gizmodo x Samsung Jul-22-2026 Unpacked build-quality register with Meta-favoring comparator vs May-19 I/O register'
+      finding_type: 'publication_level_register_analysis'
+      iteration: 1167
+      iteration_type: 'A'
+      rotation: 'Type A'
+      iteration_time: '2026-10-03 02:00 PT'
+      date_analyzed: '2026-10-03'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      author: 'Kit (with Ray)'
+      publication_focus: 'Gizmodo'
+      pair: 'Gizmodo x Samsung vs Meta'
+      finding_summary: 'Dedicated register mechanism on a Gizmodo x Samsung piece that was previously only a supporting citation (m80, m95): the Jul-22-2026 Galaxy Unpacked hands-on "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them" carries a build-quality-skeptical Samsung register (MANUAL ILLUSTRATIVE -0.10) whose standout datum is an explicit META-FAVORING comparator inside the competitor piece: "a cheap feeling is not what I expect from premium eyewear brands. Ray-Ban Meta AI glasses and Meta''s own brand of AI glasses feel more high-end." The May-19-2026 I/O piece ("Here''s Samsung and Google''s Rival to Ray-Ban Meta Smart Glasses", Raymond Wong) carries the opposite register: constructive Samsung/Google ecosystem framing ("One clear advantage that both Samsung and Google have over Meta here is that they actually own the ecosystem of mobile devices", MANUAL ILLUSTRATIVE +0.15). Within-outlet temporal shift May-to-July: +0.15 to -0.10 (-0.25). Within-piece July delta (Meta-comparator minus Samsung): +0.20 - (-0.10) = +0.30, counter-directional vs the outlet''s carried Meta band (m577 -0.617). Gizmodo is the null-financial-control outlet (Keleops AG, zero ties to any entity per m80), so this is a DESCRIPTIVE register datum, NOT a falsification-family member; ledger holds at 46. Pre-November-launch baseline: Samsung Intelligent Eyewear launches November 2026 (Korea Herald via The Investor, Oct 1 2026); this mechanism fixes Gizmodo''s pre-launch Samsung register for the forward test.'
+      july_arm:
+        title: 'Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them'
+        date: '2026-07-22'
+        publication: 'Gizmodo'
+        author: 'unattested (excerpt-bounded per #492)'
+        url: 'https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835'
+        evidence_tier: 'excerpt_bounded'
+        evidence_note: 'Quotes carried verbatim from the aiweekly.co relay excerpt (this run query set 7), which quotes the Gizmodo piece directly; full Gizmodo page UNVERIFIED per the #492 lesson. URL in-corpus pre-commit (supporting citation in m80/m95); this mechanism is its first dedicated register analysis.'
+        register: 'build_quality_skeptical_hands_on'
+        manual_illustrative_tone: -0.10
+        key_quotes:
+        - 'the materials for both the Warby Parker and Gentle Monster frames felt cheap'
+        - 'The plastics scratched easily and picked up tons of fingerprints'
+        - 'a cheap feeling is not what I expect from premium eyewear brands. Ray-Ban Meta AI glasses and Meta''s own brand of AI glasses feel more high-end.'
+        - 'These demo units may not properly represent the build quality of the final production models'
+        - '"We put tremendous levels of engineering into intelligent eyewear, but what customers should feel is simply just a normal pair of glasses." (James Choi, Samsung XR R and D EVP, constructive lightness-engineering note)'
+        meta_comparator_internal:
+          quote: 'Ray-Ban Meta AI glasses and Meta''s own brand of AI glasses feel more high-end.'
+          manual_illustrative_tone: 0.20
+          note: 'Explicit Meta favorability INSIDE a Samsung competitor piece, on build quality specifically. Counter-directional vs the outlet''s carried Meta band.'
+      may_arm:
+        title: 'Here''s Samsung and Google''s Rival to Ray-Ban Meta Smart Glasses'
+        date: '2026-05-19'
+        publication: 'Gizmodo'
+        author: 'Raymond Wong'
+        url: 'https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595'
+        evidence_tier: 'excerpt_bounded'
+        evidence_note: 'Quotes carried verbatim from this run''s query-set-7 search excerpts; full page UNVERIFIED per #492. URL in-corpus pre-commit (cited in the google block google_io_articles).'
+        register: 'constructive_ecosystem_framing'
+        manual_illustrative_tone: 0.15
+        key_quotes:
+        - 'One clear advantage that both Samsung and Google have over Meta here is that they actually own the ecosystem of mobile devices'
+        - 'I would expect pretty seamless interaction between both pieces of hardware'
+      carried_arms_per_807:
+      - mechanism: 'm577 (Gizmodo x Meta band)'
+        arms: 'Meta band mean -0.617, un-rescored per #807'
+      scorer_MANUAL_ILLUSTRATIVE_ONLY:
+        method: 'MANUAL ILLUSTRATIVE ONLY'
+        july_samsung_arm: -0.10
+        july_meta_comparator: 0.20
+        may_samsung_google_arm: 0.15
+        carried_meta_band_m577: -0.617
+        july_samsung_minus_carried_meta: 0.517
+        july_within_piece_meta_minus_samsung: 0.30
+        may_to_july_temporal_shift: -0.25
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+        engine: 'NOT run'
+        analysis_json_update: 'none'
+        artifact_grade: 'NOT artifact-grade'
+        verdict: 'directionally_supported_not_proven'
+        note: 'The +0.30 within-piece Meta-minus-Samsung delta is the mechanism''s core datum: a Meta-favoring comparator embedded in competitor coverage at the null-financial-control outlet. Correlation is not causation; hypothesis-generating only.'
+      research_method: 'Fifteen browser.search query sets this run (WIRED x Snap Specs review; theverge.com Snap Specs hands-on; "I wore Snap''s $2,200 smart glasses" Jay Peters; businessinsider.com Snap Specs; "theverge.com" Samsung Intelligent Eyewear November; gizmodo.com Google Android XR Warby Parker; ft.com Snap Specs enterprise; technologyreview.com Snap Specs; wired.com Snap Specs hands-on; wired.com Meta Connect Sep 2026; theverge.com Xreal Aura; ft.com Anthropic; gizmodo.com Apple glasses delay; theverge.com Apple N50 delay; +1 selection) - SELECTED: the two in-corpus Gizmodo x Samsung/Google URLs for dedicated register analysis. Zero browser.open (excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps: zero test_type_a_1167 files on disk; no "Type A #1167" in git log; max numeric mechanism_id 930 in profiles/ pre-insertion; zero next-number 931 keys in numeric/underscore/dash forms repo-wide pre-insertion; no #1167 rows in README/ARCHITECTURE/iteration-log pre-commit.'
+      ledger: 'Ledger holds at 46 (FORTY-SIXTH in profiles/the-verge.yaml m907 x2; forty-seventh absent by design). NOT a falsification-family member: null-financial-control outlet, descriptive register datum, no financial gradient under test.'
+      forward_baseline: 'Samsung Intelligent Eyewear November 2026 launch (Korea Herald via The Investor Oct 1 2026, https://www.theinvestor.co.kr/article/10890910) is the forward test: this mechanism fixes Gizmodo''s pre-launch Samsung register (-0.10 skeptical with Meta-favoring comparator) against which launch-window coverage can be scored.'
   pero_google_redemption_temporal_narrative:
     mechanism_id: 99
     finding: "Google Temporal Redemption Narrative vs Meta Recidivism Loop"
