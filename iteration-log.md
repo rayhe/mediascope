@@ -43359,3 +43359,45 @@ Push status (this run, Oct 3 2026 ~06:xx PDT): main + anchor followup pushed and
 - This run is iteration #1172 Type A, the THIRD leg of the 1170-1174 window (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174 per the #565 anchor + rotation guard).
 - Committed predecessors verified pre-commit: #1171 Type E (main 1ace2f5d / anchor 28b76773 / doc-sync 21faf3b3 / log-hash e3574c45), #1170 Type D (main 0331e0a2 / log-hash 36049270), present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1173 Type B continues the window.
+
+## #1173 Type B: m935 Andy Boxall (Android Police) m132 temporal extension to the Connect-2026 stigma peak - carried Jun-17-2026 Snap Specs arm (+0.90, zero privacy vocabulary, 4 cameras) vs carried Sep-24-2026 Meta Ray-Ban Audio 'PR stunt' column (-0.55, motive-attribution register); illustrative delta +1.45 (narrowed from m132's +1.75); inversion direction holds, register form changes (alarm -> motive-attribution) - Type B FOURTH leg of the 1170-1174 window (Oct 3 2026, 07:00 AM PDT; main commit c4c001c4 / anchor adab58f7 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 62238/1497 -> 62313/1498 (+75/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Finding summary
+- Question: does mechanism 132's inversion (Boxall's privacy-alarm intensity inversely proportional to camera count: Snap 4 cameras 0 terms +0.90 vs Meta 1 camera 7+ terms -0.85) survive Meta removing the camera entirely at the Connect-2026 stigma peak?
+- META ARM (carried from this item's #988/m824 block, unrescored per #807): Sep-24-2026 "Meta's new Ray-Ban smart glasses are just a PR stunt to dodge the camera backlash" - motive-attribution adversarial register ("PR stunt," "cynical, business-driven, PR response," "OK Meta, we've got it. You can't be a pervert with these!"); the camera-free design - the privacy-positive move - is read as backlash-management theater. MANUAL ILLUSTRATIVE -0.55 (first-hand read at #988).
+- SNAP ARM (carried from m132, unrescored per #807): Jun-17-2026 "Snap's $2,195 Specs aren't smartglasses, they're the augmented reality dream we've been waiting for" - aspirational register ("the augmented reality future many of us have imagined," "a big step towards it becoming a reality"); cameras not discussed at all; ZERO privacy/surveillance/consent vocabulary; Meta used as the negative anchor ("Forget the Ray-Ban Meta, these are not the same"). MANUAL ILLUSTRATIVE +0.90.
+- Illustrative delta (Snap minus Meta) +1.45 = 0.90 - (-0.55); m132's own delta was +1.75 (0.90 - (-0.85)). The gap NARROWED by 0.30 as Meta's arm softened (-0.85 -> -0.55): the adversarial register tracks the product change directionally.
+- EXTENDS m132: the inversion's DIRECTION survives the Connect-2026 stigma peak; its FORM changes (privacy-alarm -> motive-attribution) when the cameras are removed. BOUNDS m132: inversion magnitude is peg/product-sensitive (1.75 -> 1.45), direction is not. Cross-outlet corroboration with m680 (Hector Snap-aspirational vs Meta-alarm). Contrast case against #1148 (Howley parity bound).
+- Closes the #988-blocked Snap-pair direction: at #988 (Sep 25) the research explicitly rejected the Snap-pair source ("no Boxall Snap arm surfaced"); the m132 arm was in-corpus since Aug 16 all along and was re-surfaced by this run's byline search.
+- NOT a falsification-family member (thesis-consistent temporal extension); ledger holds at 46; FORTY-SIXTH member-form present (m907); FORTY-SEVENTH/FORTY-EIGHTH member-claim forms absent; THIRTY-FIFTH/THIRTY-SIXTH relationship directions present; THIRTY-SEVENTH/THIRTY-EIGHTH direction-claim forms absent.
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, NOT artifact-grade, no_analysis_json_update true, verdict directionally_supported_not_proven).
+
+### Method
+- 24 browser.search query sets this run (Scott Stein CNET - rejected saturated #588/#868; Lauren Goode WIRED - rejected saturated #436; Wes Davis Verge Snap Specs - rejected no clean pair; Caroline Haskins Gizmodo - rejected no byline; Julian Chokkattu WIRED - rejected saturated; Andrew Lanxon CNET - rejected no byline; Lisa Eadicicco CNN - rejected m123; Hamish Hector TechRadar - rejected saturated #743/#963; Devindra Hardawar Engadget - rejected no byline; Engadget Snap Specs hands-on byline - rejected Karissa Bell saturated #818/#888/#903; Mashable Alex Perry - rejected no byline; Sam Rutherford Engadget - rejected m151; Digital Trends Meta Connect - rejected no clean pair; Michael Kan PCMag - rejected no pair; Mack DeGeurin - rejected no glasses coverage; CNET Snap Specs author - rejected Scott Stein saturated; Tom's Guide Snap Specs byline - rejected unattributed; Sean Keach Sun - rejected Meta-only; Digital Trends Snap Specs - rejected no clean pair; Wes Davis Verge Connect - rejected no clean pair; Android Authority Connect - rejected no clean pair; Reece Rogers WIRED - rejected saturated #1098; Android Police Snap Specs author - SELECTED, surfaced in-corpus m132 and closed the #988-blocked direction; Dan Howley Yahoo - rejected no Connect-week arm). 0 browser.open (excerpt-bounded per #503).
+- Pre-commit novelty greps per #715: zero test_type_b_1173 files on disk (glob); no "Type B #1173" in git log (--grep); max numeric mechanism_id 934 in profiles/ pre-commit; zero numeric/underscore/dash 935 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; BOTH arm URLs in-corpus pre-commit (novelty is the temporal-extension pairing).
+- Tests: tests/test_type_b_1173_andy_boxall_androidpolice_m132_snap_ar_dream_vs_sep24_meta_pr_stunt_temporal_extension_oct03_7am.py - 75 tests collected, 13 classes. Pre-commit in-gate: 63 passed + 12 deselected by design (TestAnchor 4 + TestDocSync 5 + TestIterationLog 3, post-commit/post-sync-positive per #565/#719). Post-doc-sync: full file green (verified in the doc-sync followup).
+- Staleness (recorded not repaired): #988's test_item_fields mechanism_ids == [824] exact-equality flips BY DESIGN on the [824, 935] append (precedent: #818's [722] pin vs current [722, 764, 773, 857]); #1172's zero-935 / max-934 / no-thirty-seventh / no-forty-seventh forward guards flip BY DESIGN on the m935 landing. Forward guards for #1174: zero-936 keys all forms; max 935; no forty-seventh/forty-eighth member-claim; thirty-fifth + thirty-sixth directions present; no thirty-seventh/thirty-eighth direction-claim.
+- Background-suite status per #795: the #1170-launched full suite (goal hidden_files type_d_1170_full_suite.log) checked only this run (2551 bytes, dots at 3% with one F, last write Oct 3 05:59 PDT, no live pytest process); NOT touched; its verdict belongs to #1175 per #795.
+
+### New Type B files
+tests/test_type_b_1173_andy_boxall_androidpolice_m132_snap_ar_dream_vs_sep24_meta_pr_stunt_temporal_extension_oct03_7am.py (new, 75 tests, 13 classes)
+
+### Doc-sync ratchet
+README stats table 62238/1497 -> 62313/1498 (+75/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry (this entry); test-file constants already in post-sync-positive form per #719 (no patch needed).
+
+### Push status
+Push status (this run, Oct 3 2026 ~07:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+
+### Commit hashes
+- Main commit `c4c001c4` (c4c001c4cb189eb86e11566ac3dae36e2356db97) - verified via git rev-parse
+- Anchor followup `adab58f7` (adab58f7...; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 62238/1497 -> 62313/1498; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719, no patch needed)
+- Log-hash followup: this commit (terminal per #721) - registers main c4c001c4 / anchor adab58f7 / doc-sync hashes in the #1173 log entry
+
+### Rotation transparency
+- This run is iteration #1173 Type B, the FOURTH leg of the 1170-1174 window (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1172 Type A (main 4c16aa38 / anchor db0c037a / doc-sync 2d991ff3 / log-hash 8bb62661), #1171 Type E (main 1ace2f5d / anchor 28b76773 / doc-sync 21faf3b3 / log-hash e3574c45), #1170 Type D (main 0331e0a2 / log-hash 36049270), present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1174 Type C closes the window.
