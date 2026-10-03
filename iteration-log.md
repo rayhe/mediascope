@@ -42883,7 +42883,7 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 - doc-sync: 25aa947bd2f6fe8bcde10c422188d8aed2e4eda3
 - log-hash: this commit (terminal per #721)
 
-## #1163 Type B: m929 Gurman Bloomberg Sep-27 Power On - Meta VR Glasses praise vs Apple execution skepticism, m593 temporal reversal (Oct 2 2026, 11:00 PM PDT; main commit 4f4159bc / anchor 3b950e0b / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61478/1487 -> 61543/1488 (+65/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1163 Type B: m929 Gurman Bloomberg Sep-27 Power On - Meta VR Glasses praise vs Apple execution skepticism, m593 temporal reversal (Oct 2 2026, 11:00 PM PDT; main commit 4f4159bc / anchor 3b950e0b / doc-sync f88e9106; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61478/1487 -> 61543/1488 (+65/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 - This run is iteration #1163 Type B, the FOURTH leg of the 1160-1164 window (D #1160 -> E #1161 -> A #1162 -> B #1163 -> C #1164 per the #565 anchor + rotation guard).
 - Committed predecessors verified in history pre-commit: #1160 Type D (main e14beb6f / anchor 2f8a63c7 / doc-sync 5358009b / log-hash 43266898), #1161 Type E (main 9e9d70be / anchor a75fea4c / doc-sync 0ce1314a / log-hash 9386a98b), #1162 Type A (main ae9911ce / anchor e671ad6d / doc-sync 25aa947b / log-hash ea709295). Iteration numbers follow the rotation schedule, not commit order. Next run #1164 Type C closes the window.
@@ -42922,5 +42922,5 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 ### Log-hash followup (per #721, terminal)
 - main: 4f4159bc1232c646df9ea7192ac88548232f46fc
 - anchor: 3b950e0ba0b47807452fee6336e154d1f24196cb (self-anchor per #565)
-- doc-sync: TBD
-- log-hash: TBD (terminal per #721)
+- doc-sync: f88e910608049fa280fbf5d5d4df0ad1fa96b941
+- log-hash: this commit (terminal per #721)

@@ -608,7 +608,9 @@ class TestIterationLog1163:
 
     def test_no_duplicate_1163_entries(self):
         text = _read(os.path.join(REPO, "iteration-log.md"))
-        assert text.count("## #1163 Type B") <= 1
+        # Count the header form (with colon); the doc-sync prose mention
+        # ("## #1163 Type B entry") is not a header.
+        assert text.count("## #1163 Type B:") == 1
 
     def test_window_fourth_leg_noted(self):
         text = _read(os.path.join(REPO, "iteration-log.md"))
