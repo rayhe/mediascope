@@ -43360,7 +43360,7 @@ Push status (this run, Oct 3 2026 ~06:xx PDT): main + anchor followup pushed and
 - Committed predecessors verified pre-commit: #1171 Type E (main 1ace2f5d / anchor 28b76773 / doc-sync 21faf3b3 / log-hash e3574c45), #1170 Type D (main 0331e0a2 / log-hash 36049270), present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1173 Type B continues the window.
 
-## #1173 Type B: m935 Andy Boxall (Android Police) m132 temporal extension to the Connect-2026 stigma peak - carried Jun-17-2026 Snap Specs arm (+0.90, zero privacy vocabulary, 4 cameras) vs carried Sep-24-2026 Meta Ray-Ban Audio 'PR stunt' column (-0.55, motive-attribution register); illustrative delta +1.45 (narrowed from m132's +1.75); inversion direction holds, register form changes (alarm -> motive-attribution) - Type B FOURTH leg of the 1170-1174 window (Oct 3 2026, 07:00 AM PDT; main commit c4c001c4 / anchor adab58f7 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 62238/1497 -> 62313/1498 (+75/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1173 Type B: m935 Andy Boxall (Android Police) m132 temporal extension to the Connect-2026 stigma peak - carried Jun-17-2026 Snap Specs arm (+0.90, zero privacy vocabulary, 4 cameras) vs carried Sep-24-2026 Meta Ray-Ban Audio 'PR stunt' column (-0.55, motive-attribution register); illustrative delta +1.45 (narrowed from m132's +1.75); inversion direction holds, register form changes (alarm -> motive-attribution) - Type B FOURTH leg of the 1170-1174 window (Oct 3 2026, 07:00 AM PDT; main commit c4c001c4 / anchor adab58f7 / doc-sync 45fc07b2; log-hash followup registers all hashes here per #721 (this commit); doc-sync 62238/1497 -> 62313/1498 (+75/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
 - Question: does mechanism 132's inversion (Boxall's privacy-alarm intensity inversely proportional to camera count: Snap 4 cameras 0 terms +0.90 vs Meta 1 camera 7+ terms -0.85) survive Meta removing the camera entirely at the Connect-2026 stigma peak?
@@ -43394,8 +43394,8 @@ Push status (this run, Oct 3 2026 ~07:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `c4c001c4` (c4c001c4cb189eb86e11566ac3dae36e2356db97) - verified via git rev-parse
 - Anchor followup `adab58f7` (adab58f7...; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 62238/1497 -> 62313/1498; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719, no patch needed)
-- Log-hash followup: this commit (terminal per #721) - registers main c4c001c4 / anchor adab58f7 / doc-sync hashes in the #1173 log entry
+- Doc-sync `45fc07b2` (45fc07b2a774fa85accf5fa353c6273581c6b1dc; README 62238/1497 -> 62313/1498; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719, no patch needed)
+- Log-hash followup `eed4b5bc`: this commit (terminal per #721) - registers main c4c001c4 / anchor adab58f7 / doc-sync 45fc07b2
 
 ### Rotation transparency
 - This run is iteration #1173 Type B, the FOURTH leg of the 1170-1174 window (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174 per the #565 anchor + rotation guard).
