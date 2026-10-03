@@ -19510,6 +19510,105 @@ journalists:
       novelty: 'First dedicated Type B block on Mark Gurman. Zero test_type_b_593 files on disk (glob verified this run). No Type B commit with 593 in the title (git log --grep verified this run). No existing competitor_coverage block on his careers entry (he had no careers entry at all before this run). Prior repo mentions of Gurman are source-attribution only (Power On relays cited by other mechanisms) - never a within-writer cross-entity unit. Distinct from #85 (Chris Welch career migration: establishes the Bloomberg Terminal-revenue zero-deal financial-null used as this unit''s NULL baseline), #538 (Cade Metz: same reporter-level falsification family, verdict-class sibling), #471 (NYT publication-level litigation boundary: publication-level vs writer-level), #588 (Stein: same standing genre-boundary convention, opposite verdict - constancy vs boundary), #421 (Will Knight: same-lane journalist asymmetry, opposite sign direction). Mechanism id 593 is first-assigned to this journalist (max pre-existing mechanism_id was 590 per #592). Rotation: 592 A -> 593 B.'
       research_method: '2 browser.search query sets this run (Mark Gurman Bloomberg Meta Ray-Ban Display review neural band October 2025; Mark Gurman Bloomberg Apple smart glasses like Meta Ray-Bans July 2026). All four source URLs verbatim from Full-URL listings. Meta characterization Techmeme-relay-bounded; Apple characterizations MacRumors/Slashdot/Road-to-VR-relay-bounded (Bloomberg originals paywalled/newsletter). No zero-coverage claims per iteration-492 rule. No canonical URLs constructed.'
       verdict: 'BOUNDARY/NULL pin for the financial theory: within one access-dependent journalist, the camera-glasses lane runs spec-critical for Meta (reviewable product, no access to preserve) and insider-aspirational for Apple (employee-sourced scoops, access to preserve). The deal gradient predicts nothing here (Bloomberg has no deals with either entity); the gap is access-explained. Joins the reporter-level falsification/alternative-driver family with #538 (Metz) and the genre-boundary family with #588 (Stein). Illustrative only, significant False.'
+    mechanism_1163_mark_gurman_bloomberg_power_on_meta_vr_glasses_vs_apple_execution_skepticism_m593_reversal_sep27:
+      mechanism_id: 929
+      type: B
+      journalist: 'Mark Gurman'
+      publication: bloomberg
+      iteration: 1163
+      iteration_type: B
+      iteration_time: '2026-10-02 23:00 PDT'
+      discovery_date: '2026-10-02'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      block_key: type_b_1163_mark_gurman_bloomberg_power_on_meta_vr_glasses_praise_vs_apple_vision_pro_execution_skepticism_m593_reversal_sep27_oct02_11pm
+      window: '1160-1164 window FOURTH leg (D #1160 -> E #1161 -> A #1162 -> B #1163 -> C #1164)'
+      pattern: 'Temporal reversal bound on m593: the same access-dependent Apple-beat reporter whose Oct-2025 to Jul-2026 camera-glasses lane ran spec-critical on Meta (-0.15 illustrative) and insider-aspirational on Apple (+0.40 avg illustrative) now, in the Sep-27-2026 Power On, applies the warmer register to META''s VR Glasses and the execution-skeptical register to APPLE''s roadmap inside one newsletter. The m593 access-predicted direction does not replicate; the within-piece direction flips to Meta-favoring.'
+      new_meta_vr_arm:
+        piece: 'Bloomberg Power On, Sep 27 2026, byline Mark Gurman: Meta VR Glasses ($1,299, spring 2027) hands-on'
+        date: '2026-09-27'
+        date_attestation: 'appleinsider.com Sep 27 2026 10:49 AM EDT: "In Sunday''s ''Power On'' newsletter for Bloomberg, Mark Gurman discusses the new Meta VR Glasses and Apple''s adjacent work on smart glasses, including Apple Glass." macdailynews.com Sep 28 2026: "Bloomberg News'' Mark Gurman writes in his latest Power On newsletter."'
+        byline: 'Mark Gurman'
+        register: product_praise_hands_on
+        tone_illustrative: 0.35
+        evidence_quotes:
+          - 'Headline (macdailynews.com relay, verbatim this run): "Gurman: Meta''s $1,299 VR Glasses are exactly what Apple Vision Pro should have been"'
+          - 'Body (same): "Meta''s new VR Glasses - a $1,299 glasses-style headset that ships in spring 2027 - are the Vision Pro Apple should have shipped"'
+          - 'Hands-on (same): "Gurman, who tried the hardware for nearly an hour, described the lighter form as far more comfortable than Vision Pro for watching sports, navigating a redesigned interface, and working on a virtual desktop"'
+          - 'Price (same): "At $1,299, Meta undercuts Apple''s current $3,699 Vision Pro by about two-thirds while promising three hours of battery life and a 5K micro-OLED display"'
+          - 'Closing (same): "Meta''s bet is that most people will choose something they can actually wear"'
+        source_urls:
+          - 'https://macdailynews.com/2026/09/28/gurman-metas-1299-vr-glasses-are-exactly-what-apple-vision-pro-should-have-been/'
+          - 'https://macdailynews.substack.com/p/gurman-metas-1299-vr-glasses-are-exactly-what-apple-vision-pro-should-have-been'
+        source_note: 'Bloomberg Power On is paywalled; both arms relay-attested this run (0 browser.open per #503). Meta-arm body via the macdailynews.com article and its substack mirror, verbatim search-result text this run.'
+      new_apple_arm:
+        piece: 'Bloomberg Power On, Sep 27 2026, byline Mark Gurman: Apple Vision Pro / N224 / Apple Glass (N50) roadmap'
+        date: '2026-09-27'
+        register: execution_skepticism_roadmap
+        tone_illustrative: 0.10
+        evidence_quotes:
+          - 'Negative anchor (macdailynews.com, same piece): "Apple previously explored lighter, more tethered Vision designs and later scaled back its headset roadmap. Meta''s approach - glasses on the face, computer in the pocket - is the tradeoff Cupertino declined to make at launch"'
+          - 'Conceded strengths (same): "Vision Pro still leads on field of view, light sealing, and some software polish"'
+          - 'N224 status (gagadget.com relay, verbatim this run): Gurman "reports the project is currently ''on life support'' while leadership weighs whether to keep funding it"; "may never ship"; late 2028 or 2029 at earliest'
+          - 'Apple Glass delay (appleinsider.com relay, verbatim this run): "For the smart glasses, Gurman warns that Apple has a goal of releasing it in some form by the end of 2027"; first version "similar to Meta''s Ray-Ban partnership" with audio, camera, smart capabilities but no display'
+          - 'Sympathetic delay framing (tweaktown.com relay, verbatim this run): "Apple is clearly taking its time to ensure it enters the space with a product worth buying rather than rushing a half-finished wearable to market"'
+        source_urls:
+          - 'https://appleinsider.com/articles/26/09/27/apples-smart-glasses-predicted-for-2027-upgraded-apple-vision-pro-2028'
+          - 'https://www.tweaktown.com/news/111935/apple-is-taking-time-with-its-smart-glasses-and-a-late-2027-launch-is-now-the-target/index.html'
+          - 'https://gagadget.com/en/727693-apples-vision-pro-successor-is-on-life-support-and-may-never-ship/'
+          - 'https://mixed-news.com/en/apple-smart-glasses-end-of-2027-no-display-n224-headset-report/'
+        source_note: 'Same newsletter, same relay tier as the Meta arm; Apple-arm details via four verbatim relays (appleinsider, tweaktown, gagadget, mixed-news), search-result text this run.'
+      carried_m593_arms:
+        piece: 'm593 (Type B #593, Sep 7 2026) camera-glasses lane: Meta Ray-Ban Display review arm -0.15 (spec-critical) vs Apple N50 scoop arms +0.40 avg (insider-aspirational); illustrative delta -0.55'
+        note: 'Carried from m593; NOT re-scored this run per the #807 standing rule. The m593 access-predicted direction (Apple aspirational, Meta spec-critical) is the baseline this run tests for replication.'
+      asymmetry_scorer:
+        new_meta_tone: 0.35
+        new_apple_tone: 0.10
+        illustrative_delta_meta_minus_apple: 0.25
+        m593_carried_delta: -0.55
+        direction_reversal_vs_m593: true
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        statistical_contract: degenerate_n1_per_arm
+        tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run; both arms scored on verbatim relay excerpts of the same Sep-27 Power On; m593 arms carried un-rescored per #807'
+        verdict: 'Temporal reversal bound on m593 within one newsletter: Gurman''s Sep-27 Power On gives Meta''s VR Glasses the warmer product register (+0.35: "the Vision Pro Apple should have shipped", "far more comfortable than Vision Pro", ~1-hour hands-on) and Apple the execution-skeptical roadmap register (+0.10: Vision Pro as negative anchor, "the tradeoff Cupertino declined to make", N224 "on life support", Apple Glass delayed to late 2027, with conceded Vision Pro strengths and sympathetic delay framing). Illustrative Meta-minus-Apple delta +0.25, sign-reversed vs m593''s -0.55. NOT a falsification-family member (no financial gradient under test; Bloomberg financial-null per #85/m593 makes the deal-softness prediction NULL, not failed). The reversal binds the ACCESS driver class: access dependence did not produce the Apple-favoring register here. Correlation only, not causation. Hypothesis-generating only.'
+        no_analysis_json_update: true
+        artifact_grade: false
+      confounders_ranked:
+        strong:
+          - 'Product merit: Meta''s VR Glasses ARE 100g and $1,299 against Vision Pro''s ~600g+ and $3,499/$3,699; the praise tracks reviewable hardware facts from a ~1-hour hands-on. The register gap may be product-justified, not entity-driven.'
+          - 'Sub-genre asymmetry within the piece: the Meta arm is a hands-on product evaluation (praise genre-conventional for strong hardware); the Apple arm is roadmap/scoop reporting (delay and execution-skepticism genre-conventional for troubled programs). Same newsletter, different sub-registers.'
+        moderate:
+          - 'Gurman-brand Apple criticism: long-standing Vision Pro skepticism is part of Gurman''s franchise and his access survives Apple criticism; the "should have shipped" frame continues that standing posture rather than marking a new pro-Meta turn.'
+          - 'Evidence tier: Power On is paywalled; both arms relay-attested (macdailynews, appleinsider, gagadget, tweaktown, mixed-news); 0 browser.open per #503; relay wording may compress Gurman''s own phrasing.'
+        weak:
+          - 'Degenerate n=1 newsletter per #638/#643; hand-scoring noise alone could compress the +0.25 illustrative delta.'
+          - 'Single-newsletter window (Sep 27-28 relays); no within-journalist replication of the reversal yet.'
+      counterevidence:
+        - 'Gurman concedes real Apple strengths in the same piece: Vision Pro "still leads on field of view, light sealing, and some software polish" - the Apple arm is not a hit piece.'
+        - 'The Apple delay reporting carries sympathetic framing in relays ("taking its time to ensure it enters the space with a product worth buying rather than rushing a half-finished wearable to market") - patience-as-virtue, not just failure.'
+        - 'Gurman''s Meta praise is product-specific (VR Glasses hardware), not brand-global: m593''s spec-critical Meta register (Oct 2025 Ray-Ban Display review) stands unreversed for the camera-glasses lane.'
+        - 'The illustrative delta (+0.25) is hand-scored on relay excerpts; scoring noise could compress or flip the sign. Directional, not dispositive.'
+      financial_context: 'Bloomberg LP: Terminal-subscription revenue; zero documented AI content-licensing deals with Meta, Apple, or OpenAI (in-corpus #85, carried via m593). The financial-deal gradient predicts a NULL gap for Gurman - and NULL is what the deal theory gets here: the observed +0.25 illustrative Meta-favoring gap is not deal-predicted in either direction. The driver class under test is ACCESS (m593): Apple scoops via anonymous employees vs Meta hardware as reviewable product. This run bounds that driver: access dependence did not produce the Apple-favoring register in the Sep-27 Power On.'
+      falsification_ledger: 46
+      ledger_note: 'NOT a falsification-family member: no financial gradient is under test (Bloomberg financial-null per #85/m593 makes the deal-softness prediction NULL, not failed). The finding is a temporal reversal BOUND on m593''s access-journalism prediction. Ledger holds at 46. FORTY-SIXTH member-form present (m907, profiles/the-verge.yaml). FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      falsification_family: 'NOT a falsification-family member (a temporal reversal bound on the m593 access-prediction, not a uniform financial-prediction contradiction); ledger holds at 46; forty-seventh member-claim form absent repo-wide; thirty-sixth/thirty-seventh direction forms absent repo-wide.'
+      cross_references:
+        - '#593 (Mark Gurman: the extended baseline - access-journalism register asymmetry, Meta spec-critical vs Apple insider-aspirational, Oct 2025 to Jul 2026)'
+        - '#85 (Chris Welch career migration: Bloomberg Terminal-revenue zero-deal financial-null)'
+        - '#538 (Cade Metz: reporter-level falsification/alternative-driver family)'
+        - '#588 (Scott Stein: hands-on genre-boundary convention)'
+        - '#958/m806 (James Pero Gizmodo: Connect-week Meta Audio stigma frame - the Meta-framing contrast set)'
+        - '#978/m818 (James Pero Gizmodo: within-journalist within-entity register split - category-bounded registers)'
+        - '#993/m827 (Victoria Song The Verge: Connect-week Meta stigma frame)'
+        - '#998/m830 (Boone Ashworth WIRED: Connect-week Meta neutral relay - the register outlier)'
+      research_method: '22 browser.search query sets this run across two phases: 20 in the journalist-candidate sweep (Goode, WIRED-Snap, Bell, Low, So x2, Heater x2, Axon, Eadicicco, Cranz, Wong, Davis, Ion, Verge-Audio, Song x2, Lanxon, Barr) and 2 in the Gurman verification phase (Power On Sep 27 Meta VR Glasses; Apple smart glasses late 2027 N50/N224). REJECTED candidates: Goode (#436), Bell (m113/m722/m764/m773), Low (m150), So (#380), Heater (m602; left TechCrunch early 2025), Axon (m688), Eadicicco (m123), R. Wong (m653), Ion (m690), Pero (m746/m791/m806/m818), Song (m112/m827), Keach (#1018), Fried (m638/m926), Conditt (m923), Howley (m920), Nguyen (m893/m896), Criddle (#1143); Gurman FIRST rejected because m593 exists (extension, not repeat). SELECTED: Gurman Sep-27 Power On via six verbatim relay URLs (macdailynews article + substack mirror, appleinsider, tweaktown, gagadget, mixed-news). 0 browser.open per #503 (Power On paywalled; relay-attested). Pre-commit novelty greps: zero test_type_b_1163 files on disk (glob); no "Type B #1163" in git log (--grep); max numeric mechanism_id 928 in profiles/ pre-commit; zero numeric/underscore/dash 929 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F); six novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); "the Vision Pro Apple should have shipped" zero-hit repo-wide pre-commit; FORTY-SEVENTH member-claim form absent repo-wide pre-commit; THIRTY-SIXTH/THIRTY-SEVENTH direction forms absent repo-wide pre-commit; no #1163 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 61478/1487 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'SECOND dedicated Type B mechanism on Mark Gurman in journalists.yaml (the type_b_593 block is the first; this block is its temporal-extension sibling, per the #1153/#1158 extension precedent). zero test_type_b_1163 files on disk (glob verified this run); no "Type B #1163" in git log (--grep verified this run); max numeric mechanism_id 928 pre-commit (m928, profiles/gizmodo.yaml, Type A #1162); zero numeric/underscore/dash 929 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; the six novel source URLs zero-hit repo-wide pre-commit; no #1163 row in README/ARCHITECTURE test tables or iteration-log pre-commit. Distinct from m593 (the extended baseline: Oct-2025 to Jul-2026 camera-glasses lane, Meta spec-critical vs Apple insider-aspirational) - this mechanism tests that prediction for replication in the Sep-27-2026 Power On and finds a sign reversal. Mechanism id 929 is the next free profiles mechanism id. Rotation: 1162 A -> 1163 B.'
+      artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; temporal reversal bound feeding the m593 access-driver thread, not the numbered falsification family.'
+      author: 'Kit (with Ray)'
 
 - career:
   - end: '2025-02'
