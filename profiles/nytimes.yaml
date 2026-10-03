@@ -4111,6 +4111,185 @@ competitor_relationships:
         date: '2026-09-30 20:00 PDT'
       no_analysis_json_update: true
       correlation_not_causation: true
+
+    type_a_1182_nyt_anthropic_vatican_consciousness_dias_accountability_vs_meta_carried_arms_oct03_3pm:
+      mechanism_id: 940
+      date_analyzed: '2026-10-03'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1182
+      iteration_type: A
+      iteration_time: '2026-10-03 15:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The New York Times
+      competitor_pair: 'Anthropic vs Meta (m835/m895 temporal extension; same-day second accountability arm)'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '15:00'
+      job_id: mediascope-daily-iteration
+      test_file: 'tests/test_type_a_1182_nyt_anthropic_vatican_consciousness_dias_accountability_vs_meta_carried_arms_oct03_3pm.py'
+      rotation_guard: "1180-1184 window THIRD leg: D (#1180) -> E (#1181) -> A (#1182, this run) -> B (#1183) -> C (#1184) per the #565 anchor + rotation guard; the 1175-1179 window verified closed (D #1175, E #1176, A #1177, B #1178, C #1179 as a consecutive newest-first sequence in git history; main/anchor/doc-sync/log-hash hashes verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1182 files on disk (glob); no 'Type A #1182' in git log (--grep); max numeric mechanism_id 939 pre-commit; zero numeric/underscore/dash 940 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded; test_type_d_940 iteration-940 file references documented as non-mechanism collisions); block key zero-hit repo-wide pre-commit; 5 novel URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); no #1182 row in README/ARCHITECTURE test tables pre-commit (sole iteration-log.md hit is #1181's 'Next: #1182 Type A continues the window' prose, documented); README stats 62932/1506 pre-commit; forty-seventh member-claim form absent repo-wide pre-commit; thirty-seventh/thirty-eighth direction forms absent repo-wide pre-commit; thirty-fifth + thirty-sixth directions present. Guard lifecycle: #1181's max-939 + zero-940-numeric + no-Type-A-#1182-in-git-log pins fail BY DESIGN at this run (pinned as forward-looking staleness in the #1182 test file); #1181's zero-940 underscore/dash, no-thirty-seventh/thirty-eighth, no-forty-seventh/forty-eighth, and thirty-fifth/thirty-sixth-intact guards stay green (verified via supersession pins in the #1182 test file). This run lands mechanism 940; no new relationship direction (thirty-seventh absent by design). Next run is #1183 Type B, continuing the 1180-1184 window; do NOT touch #1024 m846."
+      mechanism_name: 'NYT x Anthropic Sep-29 Dias Vatican-Consciousness Accountability Arm vs Carried NYT x Meta Arms - Same-Day Second Accountability Leg of m895 with Peg-Follows-Register Replication'
+      distinct_from_prior: >
+        Extends m895 (Type A #1107, Sep 30 2026) temporally with a SECOND
+        same-day arm: m895 paired the Sep-29 Sorkin DealBook S-1 canary
+        register arm (-0.35) against the carried m835 NYT x Meta arms
+        (Sep-23 Connect straight relay +0.10; Aug-18 ICE-ban memo
+        enforcement -0.30; carried mean -0.10, un-rescored per #807) and
+        the carried Sep-18 IPO-scoop momentum anchor (+0.25). This mechanism
+        adds the FIRST dedicated corpus mechanism on the OTHER Sep-29 NYT x
+        Anthropic arm: the Elizabeth Dias religion-desk piece on the year-long
+        theology courtship and the Vatican lobbying episode (-0.25). FIRST
+        dedicated Type A mechanism on a religion-desk accountability register
+        under competitor_relationships.anthropic in nytimes.yaml. NOT a
+        falsification-family member: no uniform payer-softening prediction
+        under test (the NYT-Anthropic settlement is reported-not-confirmed;
+        the Amazon-deal payer-softening prediction was already falsified at
+        m567); ledger holds at 46; FORTY-SEVENTH absent. The finding is a
+        same-day two-arm CONVERGENCE leg of m895's peg-follows-register
+        read, not a new prediction test.
+      finding: >
+        One fresh NYT x Anthropic arm, Sep 29 2026, excerpt-bounded per #503
+        (NYT paywalled; 0 browser.open). Religion desk / Elizabeth Dias
+        (national religion correspondent): the Times piece on Anthropic's
+        year-long theology campaign - co-founder Chris Olah spent roughly a
+        year (from fall 2025) convening religious and philosophical thinkers
+        about Claude's moral status and possible consciousness, many meetings
+        under nondisclosure agreements (lifted summer 2026), 20 participants
+        interviewed across Catholic, Jewish, Sikh, evangelical and other
+        traditions; days before Pope Leo XIV's May 25 2026 AI encyclical
+        Magnifica Humanitas, Olah reviewed an advance copy, proposed pulling
+        Anthropic out of the launch over its rejection of machine
+        consciousness (paragraph 99: AI systems "do not undergo experiences,
+        do not possess a body, do not feel joy or pain" and "do not have a
+        moral conscience"), then attended and privately lobbied the pope's
+        advisers to take machine consciousness seriously (two participants);
+        hospitality details (April 2026 San Francisco tasting-menu dinner,
+        handwritten thank-you notes, coffee mugs, orange-bound Claude
+        constitution copies). MANUAL ILLUSTRATIVE -0.25: institutional-pressure
+        accountability register with bemusement accents - the lab is framed as
+        lobbying doctrine, softer than the Sorkin contagion arm because Dias
+        carries Olah's hedging voice ("I don't know. I'm genuinely
+        uncertain") and the piece is desk-normed religion reporting. Same-day
+        two-arm convergence: Sep 29 the NYT ran the Sorkin DealBook S-1
+        accountability arm (-0.35, carried) AND the Dias accountability arm
+        (-0.25) on the same entity, two desks converging on the accountability
+        register against the reported-settlement counterparty. Pooled Sep-29
+        NYT x Anthropic mean -0.30 vs carried NYT x Meta mean -0.10
+        (un-rescored per #807), illustrative delta -0.20 - the accountability
+        register lands harder on the reported-settlement counterparty than on
+        Meta on this window's pegs, inverting the naive deal-softening read.
+        Within-entity swing: m835's carried Sep-18 IPO-scoop momentum anchor
+        (+0.25) to the Sep-29 pooled accountability mean (-0.30) = -0.55 in 11
+        days, extending m895's -0.60 swing leg with a second same-day arm.
+        MANUAL ILLUSTRATIVE ONLY, engine NOT run, no analysis.json update,
+        NOT artifact-grade, verdict directionally_supported_not_proven. NOT a
+        falsification-family member: same-day convergence leg of m895's
+        peg-follows-register read, no uniform prediction under test; ledger
+        holds at 46; FORTY-SEVENTH absent. Correlation is not causation;
+        hypothesis-generating only.
+      financial_relationship:
+        nyt_anthropic_reported_settlement: 'FinancialContent Dec 29 2025 reported a landmark confidential settlement ending NYT-Anthropic copyright disputes (MCP-based structured-retrieval licensing pipeline, source cards for Claude citations, data-hygiene protocol) - single-source UNVERIFIED, coverage_prediction positive_if_deal_confirmed; the profile names it the single most important variable for predicting NYT Anthropic tone'
+        nyt_amazon_deal: 'Verified $20-25M/yr AI content licensing (announced May 29 2025, #559); Amazon is a major Anthropic investor (up to $8B+ per corpus) - indirect channel: the NYT licensing payer is the S-1 subject''s largest strategic backer'
+        nyt_openai_litigation: 'Active multi-billion-dollar copyright suit filed Dec 2023; adversarial tie; lawsuit-domain-only adversarialism per m471'
+        nyt_meta: '$0, no licensing relationship'
+        deal_disclosed_in_nyt_coverage: false
+        incentive_read: 'The reported-but-unverified settlement predicts softer Anthropic coverage IF confirmed; the observed same-day two-arm accountability convergence (-0.30 pooled) cuts against a static deal-softening read - the register follows the peg, not the reported tie. The Amazon indirect channel (payer = Anthropic backer) likewise fails to soften the Dias arm.'
+        non_causal_language: 'Correlation does not establish causation. Financial relationships are structural incentive predictors, not proof of editorial control. No causal claim that any tie drives coverage.'
+      articles_anthropic:
+      - title: 'Anthropic, Religious Leaders and the Pope (NYT Elizabeth Dias feature, Sep 29 2026)'
+        publication: The New York Times
+        desk: religion / national correspondent
+        byline: Elizabeth Dias
+        date: '2026-09-29'
+        url_status: 'NYT original URL not supplied in search-result Full-URL listings (cellcog.ai attests the piece dated Sep 29 2026 on nytimes.com); relay-attested per #503, 0 browser.open'
+        attestation_urls:
+        - 'https://cellcog.ai/blog/anthropic-religious-leaders/'
+        - 'https://fourweekmba.com/ai-anthropic-nda-religious-scholars-claude-constitution/'
+        - 'https://the-decoder.com/anthropic-co-founder-reportedly-told-religious-leaders-he-fears-having-created-something-that-suffers-perpetually/'
+        - 'https://aitoolbible.com/post.php?slug=what-anthropic-told-religious-leaders-about-claude-and-what-its-own-research-says'
+        - 'https://www.manton.org/2026/10/01/a-great-but-unnerving-article.html'
+        attestation_status: 'all NOVEL this run - zero hits repo-wide pre-commit (git grep -F on verbatim Full-URL listings)'
+        register: institutional_pressure_accountability_bemusement
+        manual_illustrative_tone: -0.25
+        tone_basis: 'MANUAL ILLUSTRATIVE, hand-assigned this run from relay excerpts'
+        evidence_tier: 'excerpt-tier relay-attributed per #503 (NYT original not opened; 0 browser.open)'
+        key_language:
+        - 'lobbied the pope''s advisers to take the possibility of machine consciousness seriously'
+        - 'proposed pulling Anthropic out of the event'
+        - 'flown dozens of religious scholars to its offices under NDA'
+        - 'handwritten thank-you note, a coffee mug and an orange-bound copy of Claude''s constitution'
+        - 'I don''t know. I''m genuinely uncertain'
+        framing: 'Tech lab lobbying church doctrine; secretive theology courtship; hospitality-as-influence'
+      articles_meta_carried:
+      - arm: 'NYT Sep-23 Meta Connect straight relay (carried from m835, un-rescored per #807)'
+        title: 'Meta Unveils 3 Smart Glasses With Built-In A.I.'
+        date: '2026-09-23'
+        register: straight_product_launch_relay
+        tone_carried: 0.10
+        source: 'm835 (#1007); un-rescored per #807'
+        novelty_note: 'not novel this run - carried arm'
+      - arm: 'NYT Aug-18 ICE-ban memo enforcement (carried from m835, un-rescored per #807)'
+        title: 'NYT ICE memo: Meta Glasses could capture sensitive information'
+        date: '2026-08-18'
+        register: enforcement_register_investigative
+        tone_carried: -0.30
+        source: 'm835 (#1007); un-rescored per #807'
+        novelty_note: 'not novel this run - carried arm'
+      carried_anthropic_temporal_anchors:
+      - arm: 'NYT Sep-29 Sorkin DealBook S-1 canary (carried from m895, un-rescored per #807)'
+        title: "Anthropic's IPO filing"
+        date: '2026-09-29'
+        register: market_systemic_accountability
+        tone_carried: -0.35
+        source: 'm895 (#1107); un-rescored per #807'
+        novelty_note: 'not novel this run - carried same-day second accountability arm'
+      - arm: 'NYT Sep-18 IPO-scoop momentum (carried from m835, un-rescored per #807)'
+        title: 'The IPO Buzz: Anthropic IPO May Come in November - The NYT Reports'
+        date: '2026-09-18'
+        register: ipo_momentum_capital_market
+        tone_carried: 0.25
+        source: 'm835 (#1007); un-rescored per #807; the IPOScoop attestation URL already in-corpus (3 hits pre-commit), not re-ingested as novel'
+        novelty_note: 'not novel this run - carried temporal anchor for the within-entity swing'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        scorer: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run'
+        target: 'NYT x Anthropic fresh Dias Vatican arm'
+        target_scores: [-0.25]
+        target_avg: -0.25
+        peer: 'NYT x Meta carried arms (m835, un-rescored per #807)'
+        peer_scores: [0.10, -0.30]
+        peer_avg: -0.10
+        delta: -0.15
+        delta_calc: '-0.25 - (-0.10) = -0.15'
+        delta_direction: 'accountability register harder on the reported-settlement counterparty than on Meta on this window''s pegs; illustrative only'
+        pooled_same_day: 'Sep-29 NYT x Anthropic pooled (Dias -0.25 fresh + Sorkin -0.35 carried) mean -0.30; vs carried Meta mean -0.10, illustrative delta -0.20'
+        temporal_swing: 'm835 Sep-18 +0.25 (carried) to Sep-29 pooled -0.30 = -0.55 in 11 days; second same-day leg of m895''s -0.60 swing'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'directionally_supported_not_proven'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY, engine NOT run, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False / not asserted at the finding layer, no_analysis_json_update true, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'NOT a falsification-family member: no uniform payer-softening prediction under test (the NYT-Anthropic settlement is reported-not-confirmed; the Amazon-deal payer-softening prediction was already falsified at m567). This run is a same-day convergence leg of m895''s peg-follows-register read. Ledger holds at 46; forty-seventh member-claim form absent repo-wide; thirty-fifth + thirty-sixth directions present; thirty-seventh/thirty-eighth direction forms absent repo-wide.'
+      ledger: '46'
+      falsification_family_member: false
+      connects_to: [835, 895, 683, 567, 471, 883, 892]
+      novelty: 'Pre-commit greps per #715: zero test_type_a_1182 files on disk (glob); no "Type A #1182" in git log (--grep); max numeric mechanism_id 939 pre-commit; zero numeric/underscore/dash 940 mechanism key forms repo-wide pre-commit (needles format-built, own file excluded; test_type_d_940 iteration-940 file references documented as non-mechanism collisions); block key zero-hit repo-wide pre-commit; 5 novel URLs zero-hit repo-wide pre-commit (cellcog.ai/blog/anthropic-religious-leaders/, fourweekmba.com/ai-anthropic-nda-religious-scholars-claude-constitution/, the-decoder.com/anthropic-co-founder-reportedly-told-religious-leaders-he-fears-having-created-something-that-suffers-perpetually/, aitoolbible.com/post.php?slug=what-anthropic-told-religious-leaders-about-claude-and-what-its-own-research-says, manton.org/2026/10/01/a-great-but-unnerving-article.html); no #1182 rows in README/ARCHITECTURE test tables pre-commit; README stats 62932/1506 pre-commit; forty-seventh member-claim form absent repo-wide pre-commit; thirty-seventh/thirty-eighth direction forms absent repo-wide pre-commit.'
+      research_method: '6 browser.search query sets Oct 3 2026 PDT (WIRED Anthropic S-1 IPO - no WIRED originals, Forkast/Reuters/TIBLOGICS/medium context only, rejected; WIRED Anthropic FTC probe - rejected, no WIRED originals; wired.com Anthropic October 2026 - rejected, surfaced only the reason.com Pope relay + aistockwire/indulgexpress/claude-code-mods/bitcoinversus/neoteo relays, none WIRED-authored; quoted WIRED Amodei interview - rejected, surfaced techxplore/stan-choe + the June-2 WIRED Zitron e-book mirror (not Anthropic-attributed); NYT Anthropic Olah Vatican Pope consciousness - SELECTED the Sep-29 Dias piece via cellcog/aiweekly/dealroom/lettersfromleo relays; Elizabeth Dias NDA constitution - SELECTED, added fourweekmba/the-decoder/aitoolbible/manton/independnews relays as corroborating attestation). 0 browser.open this run (excerpt-bounded per #503; NYT paywalled). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verification:
+        yaml_parse_clean: true
+        ascii_only: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 1182
+        type: 'A'
+        date: '2026-10-03 15:00 PDT'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   amazon:
     financial_tie: "licensing"
     estimated_value: "$20-25M/yr"
