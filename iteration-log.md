@@ -42738,12 +42738,12 @@ Push status (this run, Oct 2 2026 ~08:xx PDT): main + anchor followup pushed and
 - doc-sync: 83d09762abe439602d34917a229814053b6a1274
 - log-hash: this commit (terminal per #721)
 
-## #1160 Type D: m925/m926/m927 qualitative-discipline verification + post-1155-1159 corpus integrity (max numeric mechanism_id 927; zero next-number nine-two-eight keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1155 background-suite verdict (TWENTY-THIRD consecutive death; tombstone NINETIETH -> NINETY-FIRST) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1160-1164 window (Oct 2 2026, 09:00 PM PDT; main commit e14beb6f / anchor 2f8a63c7 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61254/1484 -> 61355/1485 (+101/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1160 Type D: m925/m926/m927 qualitative-discipline verification + post-1155-1159 corpus integrity (max numeric mechanism_id 927; zero next-number nine-two-eight keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1155 background-suite verdict (TWENTY-THIRD consecutive death; tombstone NINETIETH -> NINETY-FIRST) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1160-1164 window (Oct 2 2026, 09:00 PM PDT; main commit e14beb6f / anchor 2f8a63c7 / doc-sync 5358009b; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61254/1484 -> 61355/1485 (+101/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `e14beb6f` (e14beb6f1d9514de7200dda2d0abbc60a0c48237) - verified via git rev-parse
 - Anchor followup `2f8a63c7` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 61254/1484 -> 61355/1485; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `5358009b` (README 61254/1484 -> 61355/1485; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -42781,3 +42781,9 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 - Background suite: the #1160 full suite re-launched this run (goal hidden_files type_d_1160_full_suite.log, WITHOUT -x, alive with 595+ dots at doc-sync); its verdict belongs to #1165 per #795. This run checked only (no Type D #1160 markers in the #1155 suite log); does not touch the #1155 log.
+
+### Log-hash followup (per #721, terminal)
+- main: e14beb6f1d9514de7200dda2d0abbc60a0c48237
+- anchor: 2f8a63c7cdf75b3ff3f600b94b49ac7db144b2d5 (self-anchor per #565)
+- doc-sync: 5358009b6947523d813a6250800792a38eafab0b
+- log-hash: this commit (terminal per #721)
