@@ -43172,13 +43172,13 @@ Commits (pushed to rayhe/mediascope-asymmetry, each ls-remote-verified):
 - doc-sync: 007587e3 - README + ARCHITECTURE + iteration-log + constants per #719
 - log-hash: this commit (terminal per #721)
 
-## #1168 Type B: m932 Tyler Lee (Phandroid) Sep-16 Meta Luna 'pervert glasses' privacy register vs Sep-17 Snap Specs launch (zero privacy vocabulary) - within-journalist within-week cross-entity privacy-register gap, m75 family extension, Howley-parity contrast (thesis: journalist-level asymmetry datum; illustrative Meta-minus-Snap delta -0.35; NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1165-1169 window (Oct 3 2026, 03:00 AM PDT; main commit c363243f / anchor 1d31f1f8 / doc-sync TBD / log-hash followup registers all hashes here per #721 (this commit); doc-sync 61869/1492 -> 61937/1493 (+68/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1168 Type B: m932 Tyler Lee (Phandroid) Sep-16 Meta Luna 'pervert glasses' privacy register vs Sep-17 Snap Specs launch (zero privacy vocabulary) - within-journalist within-week cross-entity privacy-register gap, m75 family extension, Howley-parity contrast (thesis: journalist-level asymmetry datum; illustrative Meta-minus-Snap delta -0.35; NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1165-1169 window (Oct 3 2026, 03:00 AM PDT; main commit c363243f / anchor 1d31f1f8 / doc-sync 85cccf83 / log-hash followup registers all hashes here per #721 (this commit); doc-sync 61869/1492 -> 61937/1493 (+68/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `c363243f` (c363243f4b38e749aa3fce4f9e2f14f2b1b73770) - verified via git rev-parse
 - Anchor followup `1d31f1f8` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 61869/1492 -> 61937/1493; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
-- Log-hash followup: this commit (terminal per #721)
+- Doc-sync `85cccf83` (README 61869/1492 -> 61937/1493; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main c363243f / anchor 1d31f1f8 / doc-sync 85cccf83 hashes in the #1168 log entry
 
 ### Rotation transparency
 - This run is iteration #1168 Type B, the FOURTH leg of the 1165-1169 window (D #1165 -> E #1166 -> A #1167 -> B #1168 -> C #1169 per the #565 anchor + rotation guard).
