@@ -43171,3 +43171,43 @@ Commits (pushed to rayhe/mediascope-asymmetry, each ls-remote-verified):
 - anchor: c10765bf - ANCHORED_SHA pinned to 65428346 per #565
 - doc-sync: 007587e3 - README + ARCHITECTURE + iteration-log + constants per #719
 - log-hash: this commit (terminal per #721)
+
+## #1168 Type B: m932 Tyler Lee (Phandroid) Sep-16 Meta Luna 'pervert glasses' privacy register vs Sep-17 Snap Specs launch (zero privacy vocabulary) - within-journalist within-week cross-entity privacy-register gap, m75 family extension, Howley-parity contrast (thesis: journalist-level asymmetry datum; illustrative Meta-minus-Snap delta -0.35; NOT a falsification-family member, ledger holds at 46) - Type B FOURTH leg of the 1165-1169 window (Oct 3 2026, 03:00 AM PDT; main commit c363243f / anchor 1d31f1f8 / doc-sync TBD / log-hash followup registers all hashes here per #721 (this commit); doc-sync 61869/1492 -> 61937/1493 (+68/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `c363243f` (c363243f4b38e749aa3fce4f9e2f14f2b1b73770) - verified via git rev-parse
+- Anchor followup `1d31f1f8` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 61869/1492 -> 61937/1493; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Log-hash followup: this commit (terminal per #721)
+
+### Rotation transparency
+- This run is iteration #1168 Type B, the FOURTH leg of the 1165-1169 window (D #1165 -> E #1166 -> A #1167 -> B #1168 -> C #1169 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1165 Type D (main ba8beaaa / anchor 260fa321 / doc-sync 9450c3a0 / log-hash fe171c69), #1166 Type E (main 45ad40af / anchor c6286501 / doc-sync 8f5edca2 / log-hash 364f4502), #1167 Type A (main 65428346 / anchor c10765bf / doc-sync 007587e3 / log-hash 0cfda2bb), all present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1169 Type C closes the window.
+
+### Finding summary
+- m932 (profiles/careers/journalists.yaml, NEW top-level `tyler_lee` key per the #643 convention, 4-space `competitor_coverage` block, `mechanism_id: 932` field form): FIRST dedicated Type B mechanism on Tyler Lee (Phandroid staff writer). Pair: Sep-16-2026 Phandroid "Meta's Fix for 'Pervert Glasses' Backlash: No More Camera" (Luna rumor; byline "Tyler Lee" per the Phandroid smart-glasses and Meta archive pages, bounded attribution per #492; author-page handle "sengyip" flagged) vs Sep-17-2026 Phandroid "Snap's New $2,195 Smart Glasses Wants To Replace Your Phone" (Specs launch; same byline). Same journalist, same outlet, one day apart, same product category.
+- META ARM: privacy-stigma register on Meta (-0.30 MANUAL ILLUSTRATIVE): "Meta's smart glasses picked up an ugly nickname over the past year"; "That way, people can tell if someone near them might be secretly recording"; Luna (codename, Clubmaster/Burbank, six microphones, no camera) framed as the backlash fix.
+- SNAP ARM: launch register on Snap's four-camera Specs (+0.05 MANUAL ILLUSTRATIVE): "Snap Has Tried This Before, and Failed" (2016 Spectacles history); "built to track your hands and layer digital images over whatever you're looking at"; price/production-run skepticism; ZERO privacy/surveillance/consent vocabulary in the retrieved excerpt.
+- FINDING: illustrative Meta-minus-Snap delta -0.35 - the consent-register is applied to Meta's camera glasses but absent on Snap's four-camera Specs one day later, from the same journalist at the same outlet. Journalist-level ASYMMETRY datum extending the m75 privacy-vocabulary-bifurcation family (Victoria Song) to a new journalist and a new entity pair (Meta vs Snap). CONTRAST case against the #1148 Howley parity bound (Howley: symmetric consent framing across Apple Watch + Meta glasses in one segment). The gap is register-specific, not tone-general: Lee hits Snap adversarially on product merits (failure history, $2,195 price).
+- Confounders (strong-first): (1) peg-driven register - the Sep-16 piece's peg IS the privacy backlash; the Sep-17 piece's peg is a hardware launch; (2) excerpt-tier evidence - 0 browser.open per #503, full Snap text may carry privacy below the excerpt; (3) register-specific not tone-general - Lee is adversarial on Snap's business history/price; (4) different news triggers one day apart; (5) product-class asymmetry ($2,195 enterprise-leaning Specs vs mass-market Meta glasses).
+- Counterevidence: Lee's Sep-24 Meta followup repeats the privacy register (consistent Meta-side framing); Lee covers Meta hardware on product merits too (not Meta-hostile in general); Whittaker's Oct-1 TechCrunch SB 1130 veto piece names "Meta and Snap" symmetrically; the Sep-24 webpronews "Creep Factor" piece applies the creep register to both Meta glasses and Apple Watches; the Snap piece is NOT a puff piece; the #1148 Howley parity bound shows cross-entity register symmetry exists in the same window.
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone MANUAL_ILLUSTRATIVE, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade). 11 browser.search query sets, 0 browser.open (excerpt-bounded per #503). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1168 files on disk (glob); no "Type B #1168" in git log (--grep); max numeric mechanism_id 931 in profiles/ pre-commit (m931 Type A #1167, profiles/gizmodo.yaml); zero numeric/underscore/dash 932 mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); zero underscore/dash 933 forward-guard needles repo-wide pre-commit (needles format-built); block key zero-hit repo-wide pre-commit (git grep -F; designed keying: iteration 1168 in key, no 932 substring); the two novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); the three byline-archive URLs zero-hit repo-wide pre-commit; tyler_lee YAML key zero-hit pre-commit; FORTY-SEVENTH member-claim form absent repo-wide pre-commit; THIRTY-SIXTH/THIRTY-SEVENTH direction forms absent repo-wide pre-commit; THIRTY-FIFTH direction present (m915).
+- YAML-parsed discipline assertions (68 tests, 13 classes): anchor (post-commit per #565), rotation guard, mechanism novelty, block structure, m932 content discipline, statistical discipline, falsification ledger, forward-looking staleness, guard lifecycle, background-suite check, doc-sync, iteration-log, in-flight isolation.
+- In-gate defects fixed: test_urls_copied_verbatim read source_urls from the wrong nesting level (moved to the tyler_lee top-level key); test_meta_arm_privacy_register_quotes missed the title-carried "Pervert Glasses" phrase (check widened to title + key_quotes); test_snap_arm_launch_register_quotes missed the price (added the verbatim "$2,195" key_quote to the YAML snap_arm). Docstring carried no contiguous needles (verified: zero mechanism_933 / mechanism-933 / FORTY-SEVENTH member / thirty-sixth / thirty-seventh direction forms).
+- Background-suite status per #795: the #1165-launched full suite (goal hidden_files type_d_1165_full_suite.log) is DEAD/AMBIGUOUS at this run's check (log 1134 bytes, last write Oct 3 01:22 PDT, one pytest process at ps scan, no m932 markers). Checked only, NOT touched; verdict belongs to #1170 per #795.
+
+### New Type B files
+tests/test_type_b_1168_tyler_lee_phandroid_meta_luna_pervert_glasses_vs_snap_specs_launch_privacy_register_gap_sep16_17_oct03_3am.py - 13 classes, 68 tests (anchor tests assert post-anchor patched state per #565; doc-sync + iteration-log tests go green in the doc-sync followup per #719; in-gate defects fixed as above).
+
+### Doc-sync ratchet
+README stats table 61869/1492 -> 61937/1493 (+68/+1); README test-table row; ARCHITECTURE.md tree row; iteration-log #1168 entry (this entry); test-file constants patched per #719 (post-first-run 68-collect correction).
+
+### Push status
+Push status (this run, Oct 3 2026 ~03:1x PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.
