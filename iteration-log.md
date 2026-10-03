@@ -43401,3 +43401,35 @@ Push status (this run, Oct 3 2026 ~07:xx PDT): main + anchor followup pushed and
 - This run is iteration #1173 Type B, the FOURTH leg of the 1170-1174 window (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174 per the #565 anchor + rotation guard).
 - Committed predecessors verified pre-commit: #1172 Type A (main 4c16aa38 / anchor db0c037a / doc-sync 2d991ff3 / log-hash 8bb62661), #1171 Type E (main 1ace2f5d / anchor 28b76773 / doc-sync 21faf3b3 / log-hash e3574c45), #1170 Type D (main 0331e0a2 / log-hash 36049270), present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1174 Type C closes the window.
+
+## #1174 Type C: FTC rogue-agent probe enforcement channel (m936) - CLOSES the 1170-1174 window - Oct 3 2026 08:00 AM PDT
+
+### Method
+- 6 browser.search query sets this run (Anthropic publisher partnership Sep 2026 - rejected, surfaced in-corpus #509/#969; xAI publisher licensing 2026 - rejected, in-corpus #68/#969; publisher copyright lawsuit filed Sep 2026 - rejected, surfaced Seattle Times/Newsday m675 in-corpus + UMG/DistroKid music rejected per #729; Google/Amazon/Apple Q3 2026 earnings - rejected, surfaced in-corpus #352/m363; Reddit Anthropic Oct 1 discovery hearing - surfaced runtimewire delay-into-October + Inner City Press SerpApi/Perplexity SDNY Oct 1 conference (different case) - rejected as thin; ANI OpenAI Delhi HC Sep 15 appeal - rejected, no Type C money geometry; FTC investigation OpenAI Anthropic consumer protection Oct 2026 - SELECTED, corroborated across Reuters-via-tbsnews, broadbandbreakfast, tech-insider.org, openclassactions.com, insideai.news, renascence.io). 0 browser.open (excerpt-bounded per #503).
+- Pre-commit novelty greps per #715: zero test_type_c_1174 files on disk (glob); no "Type C #1174" in git log (--grep); max numeric mechanism_id 935 in profiles/ pre-commit; zero numeric/underscore/dash 936 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit (designed keying: iteration 1174 in key, no 936 substring); the six source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); zero "civil investigative demand" / word-"METR" / "rogue-agent probe" hits in competitor-entities.yaml pre-commit; no #1174 row in README/ARCHITECTURE test tables pre-commit (sole iteration-log.md hit is #1173's "Next: #1174 Type C closes the window" prose, documented); README stats 62313/1498 pre-commit; forty-seventh/forty-eighth member-claim forms absent repo-wide pre-commit; thirty-seventh/thirty-eighth direction forms absent repo-wide pre-commit; thirty-fifth + thirty-sixth directions present.
+- Tests: tests/test_type_c_1174_ftc_rogue_agent_probe_openai_anthropic_enforcement_channel_oct03_8am.py - 70 tests collected, 13 classes. Pre-commit in-gate: 58 passed + 12 deselected by design (TestAnchor 4 + TestDocSync 5 + TestIterationLog 3, post-commit/post-sync-positive per #565/#719); 1 in-gate defect fixed (incident-predicate needle "most serious unexpected behavior" -> "most serious example of unexpected behavior" to match the landed YAML). Post-anchor: 61 passed + 8 deselected (anchor message test then green post-commit). Post-doc-sync: full file green (verified in the doc-sync followup).
+- Staleness (recorded not repaired): #1173's max-935 + zero-936-numeric + no-Type-C-#1174-in-git-log pins flip BY DESIGN on the m936 landing (precedent: #1172's [824] pin vs current [824, 935] append pattern); #1174's zero-937 / max-936 / no-thirty-seventh/thirty-eighth / no-forty-seventh/forty-eighth forward guards documented in the test file. Forward guards for #1175: zero-937 keys all forms; max 936; no forty-seventh/forty-eighth member-claim; thirty-fifth + thirty-sixth directions present; no thirty-seventh/thirty-eighth direction-claim.
+- Background-suite status per #795: the #1170-launched full suite (goal hidden_files type_d_1170_full_suite.log) checked only this run (2551 bytes, dots at 3% with one F, last write Oct 3 05:59 PDT, no live pytest process; byte-identical to #1173's check); NOT touched; its verdict belongs to #1175 per #795.
+
+### New Type C files
+tests/test_type_c_1174_ftc_rogue_agent_probe_openai_anthropic_enforcement_channel_oct03_8am.py (new, 70 tests, 13 classes)
+
+### Doc-sync ratchet
+README stats table 62313/1498 -> 62383/1499 (+70/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry (this entry); test-file constants already in post-sync-positive form per #719 (no patch needed).
+
+### Push status
+Push status (this run, Oct 3 2026 ~08:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+
+### Commit hashes
+- Main commit `904ccee7` (904ccee713991844eeba05eaa3932c2c58d6c4bb) - verified via git rev-parse
+- Anchor followup `a8618194` (a861819421a7387189ee53e84094e04881280da5; ANCHORED_SHA patched per #565, self-anchor; test_m846_untouched rewritten to show-hash form)
+- Doc-sync `TBD` (README 62313/1498 -> 62383/1499; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719, no patch needed)
+- Log-hash followup `TBD`: this commit (terminal per #721) - registers main 904ccee7 / anchor a8618194 / doc-sync TBD
+
+### Rotation transparency
+- This run is iteration #1174 Type C, the FIFTH and CLOSING leg of the 1170-1174 window (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1173 Type B (main c4c001c4 / anchor adab58f7 / doc-sync 45fc07b2 / log-hash 15b307ed + 289dd504 self-reference correction), #1172 Type A (main 4c16aa38 / anchor db0c037a / doc-sync 2d991ff3 / log-hash 8bb62661), #1171 Type E (main 1ace2f5d / anchor 28b76773 / doc-sync 21faf3b3 / log-hash e3574c45), #1170 Type D (main 0331e0a2 / anchor fdd49b09 / doc-sync 07a8730e / log-hash 36049270), present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1175 Type D opens the 1175-1179 window.
