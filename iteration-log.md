@@ -43623,8 +43623,8 @@ Push status (this run, Oct 3 2026 ~13:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `d64a7761` (d64a7761a040c4e36c40132fea25bdc4282b7e65) - verified via git rev-parse
 - Anchor followup `3fc644b8` (3fc644b8ad883819cb87daf10262bec28b1d24da; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync: PENDING (filled in the log-hash followup)
-- Log-hash followup: this commit (terminal per #721)
+- Doc-sync `eb3ca403` (eb3ca403a7f0ba8041596742bcfebb35b8f51205; README 62689/1503 -> 62759/1504; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719, no patch needed)
+- Log-hash followup: this commit (terminal per #721) - registers main d64a7761 / anchor 3fc644b8 / doc-sync eb3ca403 hashes in the #1179 log entry
 
 ### Rotation transparency
 - This run is iteration #1179 Type C, the FIFTH and CLOSING leg of the 1175-1179 window (D #1175 -> E #1176 -> A #1177 -> B #1178 -> C #1179 per the #565 anchor + rotation guard).
