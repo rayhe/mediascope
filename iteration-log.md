@@ -42835,3 +42835,50 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 - anchor: a75fea4c64d09e60563b992b467856fa1abb69b2 (self-anchor per #565)
 - doc-sync: 0ce1314a8f60dbb7d644099dfe282b1e04464acf
 - log-hash: this commit (terminal per #721)
+
+## #1162 Type A: m928 Gizmodo x Snap-vs-Xreal Sep-23-2026 comparison hands-on (Kyle Barr, Snapdragon Summit) vs carried Gizmodo x Meta arms - comparative sobriety register; Xreal arm +0.10 vs m577 Meta band -0.617 -> +0.717 illustrative (same magnitude as m748's Snap-minus-Meta +0.717); Xreal arm +0.10 vs m748 Snap +0.10 -> 0.00 near-null (symmetric non-Meta wearable band); explicit Qualcomm vendor-paid-travel disclosure extends m919 descriptively on the PRESENT-disclosure side; NOT a falsification-family member (temporal replication per #1143); ledger holds at 46 - Type A THIRD leg of the 1160-1164 window (Oct 2 2026, 10:00 PM PDT; main commit ae9911ce / anchor e671ad6d / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61421/1486 -> 61478/1487 (+55/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- main: ae9911cef7da1b39aa3352b3a86442efc73fae71
+- anchor: e671ad6d67438443185685c52563ff1f1d7c245c (self-anchor per #565)
+- doc-sync: TBD
+- log-hash: TBD (terminal per #721)
+
+### Rotation transparency
+- Iteration #1162 Type A is the THIRD leg of the 1160-1164 window (D #1160 -> E #1161 -> A #1162 -> B #1163 -> C #1164) per the #565 anchor + rotation guard. Committed predecessors verified in history pre-commit: #1160 Type D (main e14beb6f / anchor 2f8a63c7 / doc-sync 5358009b / log-hash 43266898), #1161 Type E (main 9e9d70be / anchor a75fea4c / doc-sync 0ce1314a / log-hash 9386a98b). Iteration numbers follow the rotation schedule, not commit order. Next run #1163 Type B continues the window.
+
+### Finding summary
+- m928 (profiles/gizmodo.yaml competitor_relationships > snap, 4-space-indent sibling of the m748 block per the gizmodo.yaml convention; block key gizmodo_snap_xreal_aura_sobriety_comparison_register_1162_sep23 - designed: carries no mechanism-number substring, 1162 is the iteration, plain literal per #715): FIRST dedicated corpus mechanism on Gizmodo's Sep-23-2026 Snap-Specs-vs-Xreal-Aura comparison piece by Kyle Barr ("In the Race for the Dorkiest AR Glasses, Only One Seems Built for Today"), https://gizmodo.com/snapchat-specs-vs-xreal-aura-2000816976 - the URL is new-to-corpus this run (zero-hit repo-wide pre-commit), hands-on at Qualcomm's Snapdragon Summit.
+- Register: comparative sobriety. Specs arm judged not-built-for-today (132g standalone face computer, $2,195, 51-degree FOV, "comical 'glasshole'"); Aura arm gets the relative edge (70-degree FOV, under $1,500, "the entire Android ecosystem behind it"); the closing judgment levels both arms ("you will probably only wear any of these XR glasses at home or as in-flight entertainment").
+- Disclosure datum: the piece carries an explicit vendor-paid-travel disclosure line ("Full disclosure: travel and lodging were paid by Qualcomm, and Gizmodo did not guarantee any coverage as a condition of accepting the trip") - the transparency datum that extends the m919 disclosure_asymmetry strand descriptively on the PRESENT-disclosure side (observed-in-excerpt; full-page UNVERIFIED per the #492 lesson).
+- Scorer (MANUAL ILLUSTRATIVE ONLY, engine NOT run, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven): Xreal comparison arm +0.10 vs carried m577 Meta band mean -0.617 gives an illustrative Xreal-minus-Meta delta of +0.717 - the same magnitude as m748's Snap-minus-Meta +0.717, so the null-tie outlet's hands-on peg keeps the same warm band for non-Meta wearables; Xreal arm +0.10 vs carried m748 Snap arm +0.10 gives 0.00 near-null - the hands-on register treats the two non-Meta wearables symmetrically. Carried arms un-rescored per #807.
+- NOT a falsification-family member: same-publication temporal replication of the #862 m748 Gizmodo x Snap family on a new peg (new entity Xreal), which per the #1143 precedent is not a new prediction test. Ledger holds at 46 (FORTY-SIXTH in profiles/the-verge.yaml m907 x2; forty-seventh absent by design). THIRTY-FIFTH relationship direction present (m915); thirty-sixth/thirty-seventh absent.
+
+### Method
+- 9 browser.search query sets this run (Snap Spectacles news October 2026 The Verge; Google Android XR smart glasses news October 2026; theverge.com Samsung Intelligent Eyewear Android XR November launch; wired.com Samsung Intelligent Eyewear Android XR glasses review privacy Meta; Business Insider Samsung Intelligent Eyewear November smart glasses; Gizmodo Samsung Intelligent Eyewear FCC November glasses; The Verge Snap Specs launch September 2026 review price; Financial Times Samsung smart glasses November Intelligent Eyewear; Gizmodo Snap Specs review September 2026 - SELECTED: the Kyle Barr Xreal Aura comparison). 0 browser.open (excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed.
+- REJECTED candidates (documented in the YAML research_method): Verge x Samsung November peg (no tracked-pub original surfaced); WIRED x Samsung November peg (no original surfaced); BI/Gizmodo x Samsung November peg (no tracked originals surfaced); FT x Samsung (no FT piece surfaced); The Verge x Snap Sep-17 (relay-attributed only, no verbatim theverge.com URL; #492 already did Verge x Samsung); #862-era Gizmodo x Snap (already in corpus via m748).
+- In-gate: 55 tests collected; 43 green pre-commit with 11 deselected/by-design (+1 skipped anchor placeholder). One real defect caught and fixed in-gate: the disclosure-observation assertion required the #492 lesson citation the YAML text lacked (added before commit). Tests: tests/test_type_a_1162_gizmodo_snap_xreal_aura_sep23_comparison_vs_carried_meta_arms_oct02_10pm.py (55 tests, 13 classes).
+
+### New Type A files
+- Tests: tests/test_type_a_1162_gizmodo_snap_xreal_aura_sep23_comparison_vs_carried_meta_arms_oct02_10pm.py (55 tests, 13 classes; 43 green pre-commit via venv python; post-anchor re-run: full suite green with only the by-design deselects; novelty pin + anchor-placeholder pin deselected by design).
+
+### Doc-sync ratchet
+- README `| Tests |` line: 61421 -> 61478; test-file table: 1486 -> 1487 rows; #1162 row appended after the #1161 row.
+- ARCHITECTURE.md counts synced; #1162 row appended to the test tree after the #1161 row.
+- iteration-log.md: this ## #1162 Type A entry appended at the tail (post-#1149 convention).
+- doc-sync 61421/1486 -> 61478/1487 (+55/+1).
+- Test-file constants patched per #719 with the true collected count (README_TEST_COUNT 61478, README_FILE_COUNT 1487).
+
+### Rotation guard
+- Rotation: this run is iteration #1162 Type A, the THIRD leg of the 1160-1164 window (D #1160 -> E #1161 -> A #1162 -> B #1163 -> C #1164, per the #565 anchor + rotation guard). Next run #1163 continues the window as Type B, inheriting the zero next-number nine-two-nine forward guards and the no-thirty-sixth/seventh-direction / no-forty-seventh-member guards from this run's TestGuardLifecycle1162 pins (via this run's test file staleness class, still green this run).
+- Guard lifecycle (BY DESIGN): #1161's zero-928 numeric pin flips at this run (the landed mechanism_id: 928 field trips it; recorded via subprocess in TestTypeAForwardLookingStaleness1162); #1161's underscore/dash 928 pins STAY GREEN (no contiguous underscore/dash-form 928 literal exists repo-wide - designed keying per #715); #1161's no-thirty-sixth-direction and no-forty-seventh-member pins stay green (asserted in this run's TestGuardLifecycle1162).
+- Forward-looking staleness (expected, BY DESIGN): this file's TestNovelty1162 git-log pins are red pre-commit (deselected in pre-commit runs); TestTypeANoveltyAnchor1162 is skip-marked pre-anchor (green post-anchor); TestTypeADocSync1162 and TestTypeAIterationLog1162 assert the pre-doc-sync state (patched per #719 / flipped green once this doc-sync lands).
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only (git diff on the in-flight files carries no m928 / Type A #1162 marker; asserted in TestInflightIsolation1162). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
+
+### Log-hash followup (per #721, terminal)
+- main: ae9911cef7da1b39aa3352b3a86442efc73fae71
+- anchor: e671ad6d67438443185685c52563ff1f1d7c245c (self-anchor per #565)
+- doc-sync: TBD
+- log-hash: this commit (terminal per #721)

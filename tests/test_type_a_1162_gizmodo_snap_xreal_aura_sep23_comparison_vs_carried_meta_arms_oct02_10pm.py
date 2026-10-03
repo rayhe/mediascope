@@ -119,8 +119,8 @@ ANCHORED_SHA = "ae9911cef7da1b39aa3352b3a86442efc73fae71"  # patched per #565 in
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
-README_TEST_COUNT = 61421
-README_FILE_COUNT = 1486
+README_TEST_COUNT = 61478
+README_FILE_COUNT = 1487
 
 # The m928 block key carries no mechanism-number substring (1162 is
 # the iteration, not the mechanism), so it is a plain literal per
@@ -719,8 +719,8 @@ class TestTypeADocSync1162:
 
     def test_doc_sync_constants_match_collect(self):
         # Patched post-first-run with the true collected count.
-        assert README_TEST_COUNT == 61421
-        assert README_FILE_COUNT == 1486
+        assert README_TEST_COUNT == 61478
+        assert README_FILE_COUNT == 1487
 
 
 # ---------------------------------------------------------------------------
