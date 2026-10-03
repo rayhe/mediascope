@@ -43674,13 +43674,13 @@ Push status (this run, Oct 3 2026 ~14:xx PDT): main + anchor followup pushed and
 - Committed predecessors verified pre-commit: #1179 Type C (main d64a7761 / anchor 3fc644b8 / doc-sync eb3ca403 / log-hash 6692e1ad), #1178 Type B (main 8e948b12 / anchor 87f47d7a / doc-sync a8716a34 / log-hash 4a36a7e0), #1177 Type A (main 442f45b0 / anchor b2868548 / doc-sync 62c05884 / log-hash 0e7f1d0b), #1176 Type E (main 1c4ef7d7 / anchor a5084b69 / doc-sync db3af5b9 / log-hash 9f96d6a5), #1175 Type D (main 17fa835c / anchor f30db07f / doc-sync 38a02eab / log-hash 259a93cb), all present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1181 Type E.
 
-## #1181 Type E: podcast sentiment 159th verification cycle - GF 502 holds newest (no 503, twenty-sixth verification ~124h after release), EHE 54-day hold, Attention Sphere 159th no-match (dec56140 eighth consecutive absence; Tracked Sources 158->159), press 7/7 pure re-surface (ZERO new keys; recency frontier holds Oct 2) - Type E SECOND leg of the 1180-1184 window (Oct 3 2026, 02:34 PM PDT; main commit 7db1d62b / anchor be097edd / doc-sync <pending - filled by the log-hash followup per #721> / log-hash followup registers all hashes here per #721 (this commit); doc-sync 62867/1505 -> 62932/1506 (+65/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1181 Type E: podcast sentiment 159th verification cycle - GF 502 holds newest (no 503, twenty-sixth verification ~124h after release), EHE 54-day hold, Attention Sphere 159th no-match (dec56140 eighth consecutive absence; Tracked Sources 158->159), press 7/7 pure re-surface (ZERO new keys; recency frontier holds Oct 2) - Type E SECOND leg of the 1180-1184 window (Oct 3 2026, 02:34 PM PDT; main commit 7db1d62b / anchor be097edd / doc-sync 0e2192fa / log-hash followup registers all hashes here per #721 (this commit); doc-sync 62867/1505 -> 62932/1506 (+65/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `7db1d62b` (7db1d62b0970d1583722abd2014ef1bfccfdd6e4) - verified via git rev-parse
 - Anchor followup `be097edd` (be097edd808eea9b10b5a2c68342dc8d44edcf70; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `<pending>` (filled by the log-hash followup per #721)
-- Log-hash followup: this commit (terminal per #721) - registers main 7db1d62b / anchor be097edd / doc-sync <hash> in the #1181 log entry
+- Doc-sync `0e2192fa` (0e2192fab80ac9acccff903ad1ccd115953e077b; README 62867/1505 -> 62932/1506; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main 7db1d62b / anchor be097edd / doc-sync 0e2192fa hashes in the #1181 log entry
 
 ### Rotation transparency
 - This run is iteration #1181 Type E, the SECOND leg of the 1180-1184 window (D #1180 -> E #1181 -> A #1182 -> B #1183 -> C #1184 per the #565 anchor + rotation guard).
