@@ -42568,12 +42568,12 @@ Push status (this run, Oct 2 2026 ~03:2x PDT): main + anchor followup pushed and
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 ---
-## #1156 Type E: podcast sentiment 154th verification cycle - GF episode 502 holds newest (21st verification, ~102h; no 503); GF pure-re-surface streak ENDS at four (ONE new GF URL key: goloudnow 362-pivot old-episode directory key, NOT a new episode); EHE 53-day hold (same-day hold as #1151); Attention Sphere 154th no-match (f904d7e9 present, dec56140 absent 3rd consecutive); press 7 rows ALL re-surfaces, frontier HOLDS at Oct 2; ledger holds at 46 - Type E SECOND leg of the 1155-1159 window (Oct 2 2026, 05:00 PM PDT; main commit e7180bb3 / anchor 98d22959 / doc-sync DOCSYNC_SHA / log-hash followup registers all hashes here per #721 (this commit); doc-sync 60979/1480 -> 61042/1481 (+63/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1156 Type E: podcast sentiment 154th verification cycle - GF episode 502 holds newest (21st verification, ~102h; no 503); GF pure-re-surface streak ENDS at four (ONE new GF URL key: goloudnow 362-pivot old-episode directory key, NOT a new episode); EHE 53-day hold (same-day hold as #1151); Attention Sphere 154th no-match (f904d7e9 present, dec56140 absent 3rd consecutive); press 7 rows ALL re-surfaces, frontier HOLDS at Oct 2; ledger holds at 46 - Type E SECOND leg of the 1155-1159 window (Oct 2 2026, 05:00 PM PDT; main commit e7180bb3 / anchor 98d22959 / doc-sync 027b5a08 / log-hash followup registers all hashes here per #721 (this commit); doc-sync 60979/1480 -> 61042/1481 (+63/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `e7180bb3` (e7180bb354f20ddfb19e803270ef4ef4069b7b36) - verified via git rev-parse
 - Anchor followup `98d22959` (98d229591d4dba8d6794ef514d56469ab65da7ea; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `DOCSYNC_SHA` (README 60979/1480 -> 61042/1481; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 154th-cycle section + Tracked Sources 153->154 in main commit; iteration-log #1156 entry; test-file constants patched per #719)
+- Doc-sync `027b5a08` (README 60979/1480 -> 61042/1481; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 154th-cycle section + Tracked Sources 153->154 in main commit; iteration-log #1156 entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
