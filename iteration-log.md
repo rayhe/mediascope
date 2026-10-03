@@ -43249,3 +43249,33 @@ Push status (this run, Oct 3 2026 ~04:xx PDT): main + anchor followup + doc-sync
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision still pending).
+
+## #1170 Type D: verify m931/m932/m933 qualitative-discipline landings, CLOSED the 1165-1169 window and open the 1170-1174 window - Type D verifies only (no corpus edits, no analysis.json updates, engine never promoted to findings); m931 (Type A #1167 gizmodo.yaml Samsung Unpacked build-quality Meta-favoring comparator, arms -0.10/+0.20/+0.15/carried m577 -0.617, scorer MANUAL ILLUSTRATIVE ONLY is_significant False engine NOT run, research method Fifteen browser.search query sets / Zero browser.open), m932 (Type B #1168 journalists.yaml tyler_lee Verge Meta Ray-Ban Display privacy-stigma vs Snap Spectacles Sep 16/17, meta arm Sep 16 tone -0.30 title carries pervert-glasses vocabulary / snap arm Sep 17 tone +0.05, block_key colon counts 1/1/1, falsification_family_member false), m933 (Type C #1169 competitor-entities.yaml SB 1130 veto regulatory-preemption TechNet/Meta Sacramento money, discipline flags tone_scored/engine_run/artifact_grade false + no_analysis_json_update true + verdict directionally_supported_not_proven + browser_opens 0 + falsification_family_member false, 9 sources, FORTY-SEVENTH member-claim form absent repo-wide negative-guard wording, connects_to [834,636,359,33]); synthetic engine calibration fresh via real calculate_asymmetry (strong pair -0.8828571428571428 / t -21.425295079199472 / p 1.07e-9 / d -11.452301942414012 / CI [-0.9543571428571429, -0.8071428571428573]; near-null 0.005714285714285717 p 0.8457 not significant; degenerate n=1 0.25/0.0/1.0/0.0/False); ledger holds at 46, NOT falsification-family members - Type D FIRST and OPENING leg of the 1170-1174 window (Oct 3 2026, 05:00 AM PDT; main commit 0331e0a2 / anchor fdd49b09 / doc-sync TBD / log-hash followup registers all hashes here per #721 (this commit); doc-sync 62004/1494 -> 62111/1495 (+107/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `0331e0a2` (0331e0a25780a67effd42c1bf4217e4b98d10e5a) - verified via git rev-parse
+- Anchor followup `fdd49b09` (fdd49b094528dce6e4b8ed272a9a3c41ffcfd683) (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync TBD (README 62004/1494 -> 62111/1495; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main 0331e0a2 / anchor fdd49b09 / doc-sync hashes in the #1170 log entry
+
+### Rotation transparency
+- This run is iteration #1170 Type D, the FIRST and OPENING leg of the 1170-1174 window (D #1170 -> E #1171 -> A #1172 -> B #1173 -> C #1174 per the rotation).
+- Committed predecessors verified pre-commit: #1165 Type D (main ba8beaaa / anchor 260fa321 / doc-sync 9450c3a0 / log-hash fe171c69), #1166 Type E (main 155th file), #1167 Type A (m931), #1168 Type B (m932), #1169 Type C (main b1d93423 / anchor ddf9eb68 / doc-sync b429bb40 / log-hash 40395669).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1171 Type E.
+
+### Background-suite verdict per #795
+- The #1165-launched suite (goal hidden_files/type_d_1165_full_suite.log) is DEAD: 1134 bytes / 1022 dots / 0 F marks, last write Oct 3 01:22 PDT, zero summary tokens, no live pytest, no type_d_1170 markers. Checked only per #795.
+- Twenty-sixth consecutive background-suite death of the new streak (the 57-run streak ended at #1085). Tombstone lineage advances NINETY-SECOND -> NINETY-THIRD.
+- Suite re-launched to goal hidden_files/type_d_1170_full_suite.log WITHOUT -x in a background process (alive, accumulating dots); its verdict belongs to the next Type D run (#1175) per #795.
+
+### New Type D files
+tests/test_type_d_1170_m931_m932_m933_qualitative_corpus_integrity_oct03_5am.py (new)
+
+### Doc-sync ratchet
+README stats table 62004/1494 -> 62111/1495 (+107/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry; test-file constants per #719.
+
+### Push status
+Push status (this run, Oct 3 2026 ~05:xx PDT): main + anchor followup + doc-sync pushed via the atomic proxy-credential workflow; verified via git ls-remote.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (Type A test file edit) in-flight items untouched. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
