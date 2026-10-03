@@ -43469,8 +43469,8 @@ Push status (this run, Oct 3 2026 ~09:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `17fa835c` (17fa835cb2b045000f374f1d4643cc4fc420d5ec) - verified via git rev-parse
 - Anchor followup `f30db07f` (f30db07f07b96752f71b596fc293e2c58d313e51; ANCHORED_SHA patched per #565, self-anchor; test_m846_untouched rewritten to show-hash form)
-- Doc-sync `TBD` (README 62383/1499 -> 62491/1500; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719 (no patch needed))
-- Log-hash followup: this commit (terminal per #721) - registers main 17fa835c / anchor f30db07f / doc-sync TBD hashes in the #1175 log entry
+- Doc-sync `38a02eab` (38a02eabb3cd8d56feb8e35509cbec1465de2fac; README 62383/1499 -> 62491/1500; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719 (no patch needed))
+- Log-hash followup: this commit (terminal per #721) - registers main 17fa835c / anchor f30db07f / doc-sync 38a02eab hashes in the #1175 log entry
 
 ### Rotation transparency
 - This run is iteration #1175 Type D, the FIRST and OPENING leg of the 1175-1179 window (D #1175 -> E #1176 -> A #1177 -> B #1178 -> C #1179 per the #565 anchor + rotation guard).
