@@ -42976,7 +42976,7 @@ Push status (this run, Oct 3 2026 ~12:xx AM PDT): main + anchor followup pushed 
 - doc-sync: 6b6919dca9710d84bde88198a3f65edb60d7a270
 - log-hash: this commit (terminal per #721)
 
-## #1165 Type D: m928/m929/m930 qualitative-discipline verification + post-1160-1164 corpus integrity (max numeric mechanism_id 930; zero next-number nine-three-one keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1160 background-suite verdict (TWENTY-FIFTH consecutive death; tombstone NINETY-FIRST -> NINETY-SECOND) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1165-1169 window (Oct 3 2026, 01:00 AM PDT; main commit ba8beaaa / anchor 260fa321 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61638/1489 -> 61740/1490 (+102/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1165 Type D: m928/m929/m930 qualitative-discipline verification + post-1160-1164 corpus integrity (max numeric mechanism_id 930; zero next-number nine-three-one keys all forms; ledger holds at 46; thirty-sixth + thirty-seventh directions absent) + #1160 background-suite verdict (TWENTY-FIFTH consecutive death; tombstone NINETY-FIRST -> NINETY-SECOND) + fresh synthetic engine calibration + suite re-launched - Type D FIRST/OPENING leg of the 1165-1169 window (Oct 3 2026, 01:00 AM PDT; main commit ba8beaaa / anchor 260fa321 / doc-sync 9450c3a0; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61638/1489 -> 61740/1490 (+102/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `ba8beaaa` (ba8beaaa308c439f459807a2a888aff71ca6b427) - verified via git rev-parse
@@ -42986,7 +42986,7 @@ Push status (this run, Oct 3 2026 ~12:xx AM PDT): main + anchor followup pushed 
 
 ### Rotation transparency
 - This run is iteration #1165 Type D, the FIRST and OPENING leg of the 1165-1169 window (D #1165 -> E #1166 -> A #1167 -> B #1168 -> C #1169 per the #565 anchor + rotation guard).
-- Committed predecessor #1164 Type C (12:00 AM PDT Oct 3) CLOSED the 1160-1164 window (D #1160, E #1161, A #1162, B #1163, C #1164) - chain verified pre-commit: main ba8beaaa / anchor 260fa321 / doc-sync TBD / log-hash TBD.
+- Committed predecessor #1164 Type C (12:00 AM PDT Oct 3) CLOSED the 1160-1164 window (D #1160, E #1161, A #1162, B #1163, C #1164) - chain verified pre-commit: main ba8beaaa / anchor 260fa321 / doc-sync 9450c3a0 / log-hash TBD.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1166 Type E continues the window.
 - Log convention note: entries have been appended at the tail since #1149 (the file carries a reverse-chronological head zone #1148-and-older plus a chronological tail zone #1149-onward); this entry follows the tail convention.
 
@@ -43023,5 +43023,5 @@ Push status (this run, Oct 3 2026 ~01:xx AM PDT): main + anchor followup pushed 
 ### Log-hash followup (per #721, terminal)
 - main: ba8beaaa308c439f459807a2a888aff71ca6b427
 - anchor: 260fa321 (self-anchor per #565)
-- doc-sync: this commit (terminal per #721)
+- doc-sync: 9450c3a0c2bbc7a4b041aa8a02f40f4aa5af20de
 - log-hash: this commit (terminal per #721)
