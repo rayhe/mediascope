@@ -711,24 +711,24 @@ class TestStalenessPins:
 
 
 class TestDocSync:
-    def test_readme_test_file_table_has_no_1166_row_pre_commit(self):
+    def test_readme_test_file_table_has_1166_row_post_sync(self):
         readme = _read(README_PATH)
-        assert "test_type_e_1166" not in readme
+        assert "test_type_e_1166" in readme
 
-    def test_architecture_has_no_1166_row_pre_commit(self):
+    def test_architecture_has_1166_row_post_sync(self):
         arch = _read(ARCH_PATH)
-        assert "test_type_e_1166" not in arch
+        assert "test_type_e_1166" in arch
 
-    def test_readme_stats_current(self):
+    def test_readme_stats_ratcheted(self):
         readme = _read(README_PATH)
-        assert "| 61740 |" in readme
-        assert "1490" in readme
+        assert "| 61806 |" in readme
+        assert "1491" in readme
 
 
 class TestIterationLog:
-    def test_no_1166_entry_pre_commit(self):
+    def test_1166_entry_present_post_sync(self):
         log = _read(LOG_PATH)
-        assert "## #1166 Type E" not in log
+        assert "## #1166 Type E" in log
 
     def test_1165_entry_present(self):
         log = _read(LOG_PATH)
