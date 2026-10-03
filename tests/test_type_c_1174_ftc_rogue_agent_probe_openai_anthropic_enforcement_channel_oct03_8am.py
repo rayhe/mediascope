@@ -62,7 +62,7 @@ BLOCK_KEY = (
 
 # Pre-commit values. ANCHORED_SHA is patched to the main-commit hash in the
 # anchor followup (git rev-parse HEAD after the main commit), per #565.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "904ccee713991844eeba05eaa3932c2c58d6c4bb"
 # Post-first-run values per #719: 70 tests collected; README ratchets
 # 62313/1498 -> 62383/1499 in the doc-sync followup.
 README_TEST_COUNT = 62383
@@ -700,9 +700,11 @@ class TestInflightIsolation1174:
     def test_m846_untouched(self):
         # #1024's m846 block lives in profiles/competitor-entities.yaml;
         # this run appends the m936 block at the end of that file but must
-        # not alter the m846 block region. Pre-commit the working-tree
-        # diff is the check; the anchor followup rewrites this test to
-        # the show-hash form against the main commit's own diff.
-        diff = _git("diff", "--", "profiles/competitor-entities.yaml").stdout
+        # not alter the m846 block region. Post-commit the working-tree
+        # diff is empty, so the check runs against the main commit's own
+        # diff for the file.
+        diff = _git(
+            "show", "904ccee7", "--", "profiles/competitor-entities.yaml"
+        ).stdout
         assert M846_BLOCK_NEEDLE not in diff
         assert "mechanism_id: 936" in diff
