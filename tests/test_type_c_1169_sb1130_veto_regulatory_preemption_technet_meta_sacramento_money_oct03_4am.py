@@ -649,8 +649,8 @@ class TestDocSync1169:
 
     def test_doc_sync_constants_match_collect(self):
         # Patched post-first-run with the true collected count.
-        assert README_TEST_COUNT == 61937
-        assert README_FILE_COUNT == 1493
+        assert README_TEST_COUNT == 62004
+        assert README_FILE_COUNT == 1494
 
 
 # ---------------------------------------------------------------------------
@@ -701,7 +701,11 @@ class TestInflightIsolation1169:
     def test_m846_untouched(self):
         # #1024's m846 block lives in profiles/competitor-entities.yaml;
         # this run appends the m933 block at the end of that file but must
-        # not alter the m846 block region.
-        diff = _git("diff", "--", "profiles/competitor-entities.yaml").stdout
+        # not alter the m846 block region. Post-commit the working-tree
+        # diff is empty, so the check runs against the main commit's own
+        # diff for the file.
+        diff = _git(
+            "show", "b1d93423", "--", "profiles/competitor-entities.yaml"
+        ).stdout
         assert M846_BLOCK_NEEDLE not in diff
         assert "mechanism_id: 933" in diff
