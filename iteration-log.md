@@ -42925,12 +42925,12 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 - doc-sync: f88e910608049fa280fbf5d5d4df0ad1fa96b941
 - log-hash: this commit (terminal per #721)
 
-## #1164 Type C: m930 Reddit v. Anthropic demurrer denial (Sep 17-19 2026, Judge Harold Kahn) - three of five claims proceed on an implied-in-fact User Agreement contract, validating the pay-or-sue bifurcation's enforcement leg; temporal extension of m614 fought INSIDE #2 pay-or-litigate (no new direction; thirty-sixth absent by design); NOT a falsification-family member, ledger holds at 46 - Type C FIFTH and CLOSING leg of the 1160-1164 window (Oct 3 2026, 12:00 AM PDT; main commit ff67d154 / anchor 76631e0a / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61543/1488 -> 61638/1489 (+95/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1164 Type C: m930 Reddit v. Anthropic demurrer denial (Sep 17-19 2026, Judge Harold Kahn) - three of five claims proceed on an implied-in-fact User Agreement contract, validating the pay-or-sue bifurcation's enforcement leg; temporal extension of m614 fought INSIDE #2 pay-or-litigate (no new direction; thirty-sixth absent by design); NOT a falsification-family member, ledger holds at 46 - Type C FIFTH and CLOSING leg of the 1160-1164 window (Oct 3 2026, 12:00 AM PDT; main commit ff67d154 / anchor 76631e0a / doc-sync 6b6919dc; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61543/1488 -> 61638/1489 (+95/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `ff67d154` (ff67d1540286af95fc42b6503f2e543344c4f131) - verified via git rev-parse
 - Anchor followup `76631e0a` (76631e0a8d0ecb24c16c1f410976aeb354c55571; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 61543/1488 -> 61638/1489; test-table row; ARCHITECTURE.md tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `6b6919dc` (6b6919dca9710d84bde88198a3f65edb60d7a270; README 61543/1488 -> 61638/1489; test-table row; ARCHITECTURE.md tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
@@ -42971,7 +42971,7 @@ Push status (this run, Oct 3 2026 ~12:xx AM PDT): main + anchor followup pushed 
 - Background suite: the #1160-launched full suite was DEAD at this run's check (goal hidden_files type_d_1160_full_suite.log, 3863 bytes, last write Oct 2 22:03 PDT, ~2h stale; no pytest alive at this run's ps scan; TWENTY-FOURTH consecutive background death by count); its verdict belongs to #1165 per #795. This run checked only (no Type C #1164 markers in the suite log); does not touch it.
 
 ### Log-hash followup (per #721, terminal)
-- main: TBD
-- anchor: TBD (self-anchor per #565)
-- doc-sync: TBD
+- main: ff67d1540286af95fc42b6503f2e543344c4f131
+- anchor: 76631e0a8d0ecb24c16c1f410976aeb354c55571 (self-anchor per #565)
+- doc-sync: 6b6919dca9710d84bde88198a3f65edb60d7a270
 - log-hash: this commit (terminal per #721)
