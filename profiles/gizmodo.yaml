@@ -1377,6 +1377,79 @@ competitor_relationships:
       - https://gamesreviews.com/news/09/snap-specs-hands-on-2195-standalone-ar-glasses-impress-but-questions-remain/
       cross_references: [74, 512, 577, 582, 721, 736]
       novelty: 'FIRST dedicated Type A mechanism on Gizmodo''s Sep-15/16 2026 Snap Specs launch hands-on piece. Distinct from m74 (Jun-16 preview, privacy-vocabulary), m577 (symmetric band), m736 (OpenAI Claude-hack), #827 (WIRED selection), #848 (Ortiz journalist-level hands-on), #853 (Ashworth journalist-level). Zero test_type_a_862 files on disk pre-commit (glob); no "Type A #862" in git log pre-commit; the snapping-your-fingers-2000812735 URL zero-hit repo-wide pre-commit; block key zero-hit pre-commit; max numeric mechanism_id 747 pre-commit; zero underscore-form 748/749 keys by designed keying per #715; 860-864 window THIRD leg, D->E->A (D(#860) -> E(#861) -> A(#862)).'
+    gizmodo_snap_xreal_aura_sobriety_comparison_register_1162_sep23:
+      mechanism_id: 928
+      mechanism_name: 'Gizmodo x Snap-vs-Xreal Sep-23-2026 Comparison Hands-On (Snapdragon Summit) - Comparative Sobriety Register vs Carried Gizmodo x Meta Arms'
+      iteration: 1162
+      iteration_type: 'A'
+      type: competitor_coverage_deep_dive
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      date_analyzed: '2026-10-02'
+      time_pdt: '22:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      publication_focus: 'Gizmodo (Keleops AG)'
+      competitor_pair: 'Snap/Xreal vs Meta'
+      incentive_attribution: 'NOT a new falsification-family member: temporal extension of the #862 m748 Gizmodo x Snap family (same-publication, new competitor entity Xreal, new peg) per the #1143 precedent - a same-publication temporal replication on a new peg is not a new prediction test. Gizmodo carries $0 AI licensing deals, so the null-tie prediction is no uniform softening; the observed comparative sobriety is vendor-event-scoped, not payer-driven. Ledger holds at 46.'
+      overview: 'FIRST dedicated corpus mechanism on Gizmodo''s Sep-23-2026 Snap-Specs-vs-Xreal-Aura comparison piece by Kyle Barr ("In the Race for the Dorkiest AR Glasses, Only One Seems Built for Today"), hands-on at Qualcomm''s Snapdragon Summit. Register: comparative sobriety - the dork-factor frame, the Specs arm judged not-built-for-today (132g standalone, $2,195, 51-degree FOV), the Aura arm preferred on FOV (70 degrees), price (under $1,500) and Android-ecosystem depth, and the closing leveling judgment that either pair will be worn "at home or as in-flight entertainment." Disclosure datum: the piece carries an explicit vendor-paid-travel line ("Full disclosure: travel and lodging were paid by Qualcomm, and Gizmodo did not guarantee any coverage as a condition of accepting the trip") - the transparency observation this run contrasts with the m919 strand''s Post-side absence.'
+      articles_new:
+      - publication: Gizmodo
+        author: Kyle Barr
+        date: '2026-09-23'
+        title: 'In the Race for the Dorkiest AR Glasses, Only One Seems Built for Today'
+        url: https://gizmodo.com/snapchat-specs-vs-xreal-aura-2000816976
+        venue: "Qualcomm Snapdragon Summit hands-on"
+        register: comparative_sobriety_hands_on
+        tone_MANUAL_ILLUSTRATIVE: 0.10
+        tone_note: 'Relative Xreal preference inside a sober frame: Aura 70-degree FOV vs Specs 51, Aura under $1,500 vs Specs $2,195, Aura "the entire Android ecosystem behind it" and "built for today"; Specs "comical glasshole"; the closing judgment levels both arms. Warmth is comparison-relative, not absolute.'
+        evidence_grade: excerpt-bounded this run (browser.search verbatim excerpts per #503; 0 browser.open)
+        url_novelty: first corpus appearance this run (zero repo-wide hits pre-commit)
+        key_quotes:
+        - 'In the Race for the Dorkiest AR Glasses, Only One Seems Built for Today'
+        - 'one thing Aura has that Snap does not is the entire Android ecosystem behind it, with the promise of using all your typical phone apps in AR'
+        - 'you will probably only wear any of these XR glasses at home or as in-flight entertainment'
+        - 'Full disclosure: travel and lodging were paid by Qualcomm, and Gizmodo did not guarantee any coverage as a condition of accepting the trip.'
+        tone_observations:
+        - 'Comparative sobriety register: both devices judged on dork-factor and present-tense utility, not aspiration'
+        - 'Xreal arm gets the relative edge on FOV, price, and ecosystem depth'
+        - 'The closing leveling judgment applies to both arms equally - no entity is coronated'
+        - 'Explicit vendor-paid-travel disclosure line present in the piece (transparency datum for the m919 strand)'
+      carried_arms_per_807:
+      - mechanism: m577 (Gizmodo x Meta adversarial band)
+        arms: '-0.617 mean (facial-recognition glasses -0.70, scrapped AI photo tool -0.55, layoffs headline snark -0.60)'
+      - mechanism: m748 (Gizmodo x Snap Sep-15/16 launch hands-on, #862)
+        arms: '+0.10 playful-skeptical'
+      - mechanism: m74 (Gizmodo x Snap Jun-16 preview)
+        arms: '-0.10 neutral product preview'
+      scorer_MANUAL_ILLUSTRATIVE_ONLY: 'Xreal comparison arm +0.10 vs carried m577 Meta band mean -0.617: illustrative Xreal-minus-Meta delta +0.717, same magnitude as m748''s Snap-minus-Meta +0.717 - the null-tie outlet''s hands-on peg keeps the same warm band for non-Meta wearables. Xreal arm +0.10 vs carried m748 Snap arm +0.10: delta 0.00 near-null - Gizmodo''s hands-on register treats the two non-Meta wearables symmetrically. p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade.'
+      disclosure_observation: 'Extends the m919 disclosure_asymmetry strand descriptively on the PRESENT-disclosure side: the Sep-23 piece carries an explicit Qualcomm vendor-paid-travel disclosure line in full ("Full disclosure: travel and lodging were paid by Qualcomm, and Gizmodo did not guarantee any coverage as a condition of accepting the trip"), disclosed on a piece about Snapdragon-powered glasses tested at Qualcomm''s own Summit. This is the transparency datum the Post-side excerpt of m919 lacked - disclosure practice varies within the same incentive landscape, and presence here is documented, not normatively scored. Full-page verification not performed (excerpt-bounded per #503); recorded as observed-in-excerpt per the #492 lesson.'
+      ledger: 'Ledger holds at 46 (FORTY-SIXTH member-form in profiles/the-verge.yaml m907, 2 occurrences; forty-seventh absent by design)'
+      falsification_family: 'NOT a member. This run is a same-publication temporal replication of the #862 m748 Gizmodo x Snap family on a new peg (Snapdragon Summit comparison, new entity Xreal), which per the #1143 precedent is not a new prediction test. Ledger holds at 46 (FORTY-SIXTH in profiles/the-verge.yaml m907, 2 occurrences; forty-seventh absent by design).'
+      confounders_strong_first:
+      - 'STRONG: access confound - Qualcomm-paid travel and lodging disclosed; the hands-on happened at the vendor''s own Summit; the comparative register follows the showcase genre'
+      - 'STRONG: peg/genre confound - hands-on comparison piece; sobriety is comparative and product-level, not entity-targeted; the same outlet runs adversarial on Meta controversy pegs (m577) and critical on Snap hardware-value pegs (this piece on Specs)'
+      - 'MODERATE: excerpt-tier evidence only (0 browser.open per #503); full-page register below the excerpt unverified'
+      - 'MODERATE: maturity asymmetry - Specs and Aura are pre/mass-market devices; Meta ships at 2M+ units with 94% of the display-less segment, so scrutiny scales differ by market position'
+      - 'WEAK: n=1 new arm; degenerate contract'
+      counterevidence:
+      - 'The piece IS skeptical of Specs ($2,195, "not built for today", "comical glasshole") - Gizmodo runs critical registers on Snap when the peg is hardware value, so entity-favoritism fails'
+      - 'The sobriety is uniform across both comparison arms - the closing judgment ("at home or as in-flight entertainment") applies to Xreal too; no coronation'
+      - 'm577: the same outlet is adversarial on Meta controversy pegs (-0.617) - register follows peg, not outlet loyalty'
+      - 'TechCrunch''s Sep-16 skeptical Specs piece (in corpus via wired.yaml #827 comparator): the tech press is not uniformly soft on Snap'
+      statistical_discipline: 'MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule: tone MANUAL_ILLUSTRATIVE; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade.'
+      research_method: '9 browser.search query sets this run (Snap Spectacles news October 2026 The Verge; Google Android XR smart glasses news October 2026; theverge.com Samsung Intelligent Eyewear Android XR November launch; wired.com Samsung Intelligent Eyewear Android XR glasses review privacy Meta; Business Insider Samsung Intelligent Eyewear November smart glasses; Gizmodo Samsung Intelligent Eyewear FCC November glasses; The Verge Snap Specs launch September 2026 review price; Financial Times Samsung smart glasses November Intelligent Eyewear; Gizmodo Snap Specs review September 2026 - SELECTED: the Kyle Barr Xreal Aura comparison). 0 browser.open (excerpt-bounded per #503). REJECTED candidates: Verge x Samsung November peg (no tracked-pub original surfaced); WIRED x Samsung November peg (no original surfaced); BI/Gizmodo x Samsung November peg (no tracked originals surfaced); FT x Samsung (no FT piece surfaced); The Verge x Snap Sep-17 (relay-attributed only, no verbatim theverge.com URL; #492 already did Verge x Samsung); #862-era Gizmodo x Snap (already in corpus via m748). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - https://gizmodo.com/snapchat-specs-vs-xreal-aura-2000816976
+      cross_references: [74, 512, 577, 582, 721, 736, 748]
+      novelty: 'FIRST dedicated corpus mechanism on Gizmodo''s Sep-23-2026 Snap-Specs-vs-Xreal-Aura comparison piece (Kyle Barr, Snapdragon Summit). Distinct from m748 (Sep-15/16 Snap launch hands-on, Pero), m74 (Jun-16 Snap preview), m577 (Meta adversarial band), m736 (OpenAI Claude-hack). Zero test_type_a_1162 files on disk pre-commit (glob); no "Type A #1162" in git log pre-commit; max numeric mechanism_id 927 in-tree pre-commit; zero numeric/underscore/dash next-number 928 mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1162 in key, no 928 substring); the snapchat-specs-vs-xreal-aura-2000816976 URL zero-hit repo-wide pre-commit (git grep -F); no #1162 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 61421/1486 pre-commit. 1160-1164 window THIRD leg, D->E->A (D(#1160) -> E(#1161) -> A(#1162)).'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      rotation_transparency: 'Iteration #1162 Type A is the THIRD leg of the 1160-1164 window (D->E->A->B->C per #565 anchor + rotation guard; #1160 Type D main e14beb6f/anchor 2f8a63c7/doc-sync 5358009b/log-hash 43266898, #1161 Type E main 9e9d70be/anchor a75fea4c/doc-sync 0ce1314a/log-hash 9386a98b; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1162 files on disk (glob); no "Type A #1162" in git log (--grep); max numeric mechanism_id 927 pre-commit; zero numeric/underscore/dash 928 keys repo-wide pre-commit; block key zero-hit repo-wide pre-commit; the Xreal Aura URL zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listing). Guard lifecycle: #1161''s max-927 + zero-928-numeric guards fail BY DESIGN at this run (pinned as forward-looking staleness in the #1162 test file); #1161''s zero-928 underscore/dash, no-forty-seventh-member, no-thirty-sixth/seventh-direction guards stay green (verified via supersession pins in the #1162 test file). This run lands mechanism 928; no new relationship direction (thirty-sixth absent by design). Next: #1163 Type B continues the window.'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      yaml_parse_clean: true
+      ascii_only: true
 editorial_posture:
   meta_coverage: adversarial_to_balanced
   tone: conversational_critical
