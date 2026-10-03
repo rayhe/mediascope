@@ -43067,3 +43067,107 @@ Push status (this run, Oct 3 2026 ~01:30 AM PDT): main + anchor followup pushed 
 - anchor: c628650187dc0ed98c4733a813d086059dfa7dfa
 - doc-sync: 8f5edca28802ad3c9b7e9adc8e94f0c24a3aecc0
 - log-hash: this commit (terminal per #721)
+
+## #1167 Type A (Sat 2026-10-03 02:00 PDT)
+
+m931: Gizmodo x Samsung Jul-22-2026 Galaxy Unpacked build-quality register
+with Meta-favoring comparator vs May-19-2026 I/O ecosystem register.
+
+Finding: the Jul-22-2026 Unpacked hands-on ("Samsung Let Me Touch Its Warby
+Parker x Gentle Monster Smart Glasses, but Not Wear Them",
+https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835)
+carries a build-quality-skeptical Samsung register (MANUAL ILLUSTRATIVE -0.10)
+whose standout datum is an explicit META-FAVORING comparator embedded inside
+the competitor piece: "the materials for both the Warby Parker and Gentle
+Monster frames felt cheap", "The plastics scratched easily and picked up tons
+of fingerprints", "a cheap feeling is not what I expect from premium eyewear
+brands. Ray-Ban Meta AI glasses and Meta's own brand of AI glasses feel more
+high-end." (internal Meta comparator +0.20 MANUAL ILLUSTRATIVE; within-piece
+Meta-minus-Samsung delta +0.30). The May-19-2026 I/O piece ("Here's Samsung
+and Google's Rival to Ray-Ban Meta Smart Glasses", Raymond Wong,
+https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595)
+carries the opposite register: constructive Samsung/Google ecosystem framing
+(+0.15 MANUAL ILLUSTRATIVE; "One clear advantage that both Samsung and Google
+have over Meta here is that they actually own the ecosystem of mobile
+devices"). Within-outlet temporal shift May -> July: +0.15 to -0.10 (-0.25).
+
+Scorer (MANUAL ILLUSTRATIVE ONLY): July Samsung arm -0.10 vs carried m577 Meta
+band mean -0.617 (un-rescored per #807) gives an illustrative
+Samsung-minus-Meta delta of +0.517 - the standard softness direction for the
+null-tie outlet's non-Meta wearables coverage. The +0.30 within-piece
+Meta-minus-Samsung comparator delta is counter-directional: Meta favored
+INSIDE the competitor piece, running against the outlet's own Meta band.
+MANUAL/QUALITATIVE ONLY, engine NOT run, no analysis.json update, NOT
+artifact-grade, verdict directionally_supported_not_proven.
+
+NOT a falsification-family member: Gizmodo is the null-financial-control
+outlet (Keleops AG, zero ties to any entity per m80); descriptive register
+datum, not a prediction test. Ledger holds at 46. Framed as the
+pre-November-launch register baseline: Samsung Intelligent Eyewear launches
+November 2026 (Korea Herald via The Investor, Oct 1 2026,
+https://www.theinvestor.co.kr/article/10890910).
+
+Method: fifteen browser.search query sets this run (WIRED x Snap Specs review;
+theverge.com Snap Specs hands-on; "I wore Snap's $2,200 smart glasses" Jay
+Peters; businessinsider.com Snap Specs; "theverge.com" Samsung Intelligent
+Eyewear November; gizmodo.com Google Android XR Warby Parker; ft.com Snap
+Specs enterprise; technologyreview.com Snap Specs; wired.com Snap Specs
+hands-on; wired.com Meta Connect Sep 2026; theverge.com Xreal Aura; ft.com
+Anthropic; gizmodo.com Apple glasses delay; theverge.com Apple N50 delay;
+selection sweep). Obvious fresh pairs all either already in-corpus
+(Verge x Snap m628/m731; WIRED x Snap m727/m814; Gizmodo x Google May I/O +
+July Unpacked; Verge x Apple m826) or lacking tracked-publication originals
+(Samsung November-launch peg, Apple N50 delay, FT/BI/MIT-TR x Snap,
+Verge x Xreal). SELECTED: the two in-corpus Gizmodo x Samsung/Google URLs for
+dedicated register analysis. Zero browser.open (excerpt-bounded per #503);
+quotes carried verbatim from the aiweekly.co relay excerpt of the Gizmodo
+piece; full pages UNVERIFIED per the #492 lesson. All URLs copied verbatim
+from search-result Full-URL listings.
+
+Corpus: profiles/gizmodo.yaml cross_entity_coverage > samsung, new block key
+gizmodo_samsung_unpacked_build_quality_meta_favoring_comparator_register_1167_jul22
+(4-space indent sibling of the m80 and m95 blocks; key carries no
+mechanism-number substring per #715; 1167 is the iteration). Max numeric
+mechanism_id 930 -> 931; zero next-number 932 keys all forms. ASCII-only,
+YAML-validated.
+
+Tests: tests/test_type_a_1167_gizmodo_samsung_unpacked_build_quality_meta_favoring_comparator_oct03_2am.py
+- 63 tests collected, 13 classes. Pre-commit: 50 passed + 1 skipped
+  (12 by-design deselects per #565/#719: git-log pins, doc-sync pins,
+  iteration-log pins). Post-doc-sync: full file green.
+- Staleness (via subprocess, recorded not repaired): #1166's zero-931 numeric
+  guard and adds-no-mechanisms pin flip BY DESIGN on the landed 931;
+  #1166's underscore/dash 931 guards STAY GREEN (no contiguous
+  underscore/dash-form 931 literal exists); #1166's statistical pins
+  (no-forty-seventh/forty-eighth, thirty-fifth present, no-thirty-sixth
+  through no-thirty-eighth) STAY GREEN.
+- Forward guards for #1168: zero-932 keys all forms; max 931; no
+  forty-seventh member-claim; thirty-fifth direction intact;
+  thirty-sixth/seventh/eighth absent.
+- Background suite (#1165-launched): dead/ambiguous at check - log 1134
+  bytes, last write 01:22 PDT, no live pytest at the ps scan. Checked only,
+  NOT touched; verdict belongs to #1170 per #795.
+
+Doc-sync ratchet: README | Tests | 61806/1491 -> 61869/1492 (+63/+1, the #1167
+file exactly, venv python); test-table row appended; docs/ARCHITECTURE.md
+tree row appended; test constants patched per #719.
+
+Rotation: Type A THIRD leg of the 1165-1169 window, CONTINUING it
+(D #1165 -> E #1166 -> A #1167 -> B #1168 -> C #1169). Committed predecessors
+verified in history pre-commit:
+- #1165 Type D: main ba8beaaa / anchor 260fa321 / doc-sync 9450c3a0 / log-hash fe171c69
+- #1166 Type E: main 45ad40af / anchor c6286501 / doc-sync 8f5edca2 / log-hash 364f4502
+
+Concurrency: in-flight runs at this run's checks are the #899 Type C block
+(m771, uncommitted hunk in profiles/nytimes.yaml), the #938 Type B test file
+(uncommitted working-tree edit), the #900 Type D test file (untracked, on
+disk) and the #1012 working-tree edit of the committed Type A #1012 test file
+- all UNCOMMITTED, untouched by this run. Targeted staging only (this run's
+two files). Do NOT touch #1024's m846 (Ray's revert/leave/rebuild decision
+still pending).
+
+Commits (pushed to rayhe/mediascope-asymmetry, each ls-remote-verified):
+- main: 65428346 - Type A #1167: m931 (test file + profiles/gizmodo.yaml)
+- anchor: c10765bf - ANCHORED_SHA pinned to 65428346 per #565
+- doc-sync: this commit (README + ARCHITECTURE + iteration-log + constants per #719)
+- log-hash: terminal followup per #721 (space-form title)

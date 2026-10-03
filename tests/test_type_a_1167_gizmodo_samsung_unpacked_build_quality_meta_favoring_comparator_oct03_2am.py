@@ -136,8 +136,8 @@ ANCHORED_SHA = "654283460ec567d92867e4925d939bd24afd332c"  # patched per #565 in
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
-README_TEST_COUNT = 61806
-README_FILE_COUNT = 1491
+README_TEST_COUNT = 61869
+README_FILE_COUNT = 1492
 
 # The m931 block key carries no mechanism-number substring (1167 is
 # the iteration, not the mechanism), so it is a plain literal per
@@ -777,9 +777,9 @@ class TestTypeADocSync1167:
         assert "#1167" in self._readme()
 
     def test_architecture_tree_row(self):
-        # The ARCHITECTURE.md test-tree row lands in the doc-sync
-        # commit. Red pre-commit by design.
-        arch = _read(os.path.join(REPO_ROOT, "ARCHITECTURE.md"))
+        # The docs/ARCHITECTURE.md test-tree row lands in the
+        # doc-sync commit. Red pre-commit by design.
+        arch = _read(os.path.join(REPO_ROOT, "docs", "ARCHITECTURE.md"))
         assert "1167" in arch
 
     def test_constants_patched(self):
@@ -837,17 +837,25 @@ class TestInflightIsolation1167:
         for rel in INFLIGHT_FILES:
             assert rel in status, rel
 
-    def test_own_diff_limited_to_two_files(self):
-        # Targeted staging: this run's diff touches only the test
-        # file and profiles/gizmodo.yaml. (No .strip() before
-        # splitlines: it would eat the first line's leading status
-        # column and shift the path slice.)
+    def test_own_diff_limited_to_own_files(self):
+        # Targeted staging: this run's working-tree diff touches
+        # only its own files (test file, gizmodo.yaml pre-main-commit;
+        # plus the doc-sync files post-doc-sync). In-flight files
+        # must never appear with this run's markers. (No .strip()
+        # before splitlines: it would eat the first line's leading
+        # status column and shift the path slice.)
         status = _git("status", "--short")
         changed = []
         for line in status.splitlines():
             if not line.strip() or line.startswith("??"):
                 continue
             changed.append(line[3:].strip())
-        own = {OWN_BASENAME, "profiles/gizmodo.yaml"}
+        own = {
+            os.path.join("tests", OWN_BASENAME),
+            "profiles/gizmodo.yaml",
+            "README.md",
+            os.path.join("docs", "ARCHITECTURE.md"),
+            "iteration-log.md",
+        }
         for c in changed:
             assert c in own or c in INFLIGHT_FILES, c
