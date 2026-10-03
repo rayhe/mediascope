@@ -43556,12 +43556,12 @@ Push status (this run, Oct 3 2026 ~11:xx PDT): main + anchor followup pushed and
 - Committed predecessors verified pre-commit: #1176 Type E (main 1c4ef7d7 / anchor a5084b69 / doc-sync db3af5b9 / log-hash 9f96d6a5), #1175 Type D (main 17fa835c / anchor f30db07f / doc-sync 38a02eab / log-hash 259a93cb), present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1178 Type B continues the window.
 
-## #1178 Type B: m938 Hayden Field (The Verge) Sep-28 'OpenAI's AI agents need to catch up' deficit register on the deal partner vs carried m644 Meta-deficit arms - TEMPORAL EXTENSION of m644 constancy pin (illustrative new-OpenAI-minus-carried-Meta delta -0.15, deal partner HARDER than non-payer at this journalist; m920-Howley-parity parallel); journalist-level bound on the m937 publication-level finding; NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1175-1179 window (Oct 3 2026, 12:00 PM PDT; main commit 8e948b12 / anchor 87f47d7a / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 62617/1502 -> 62689/1503 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1178 Type B: m938 Hayden Field (The Verge) Sep-28 'OpenAI's AI agents need to catch up' deficit register on the deal partner vs carried m644 Meta-deficit arms - TEMPORAL EXTENSION of m644 constancy pin (illustrative new-OpenAI-minus-carried-Meta delta -0.15, deal partner HARDER than non-payer at this journalist; m920-Howley-parity parallel); journalist-level bound on the m937 publication-level finding; NOT a falsification-family member, ledger holds at 46 - Type B FOURTH leg of the 1175-1179 window (Oct 3 2026, 12:00 PM PDT; main commit 8e948b12 / anchor 87f47d7a / doc-sync a8716a34; log-hash followup registers all hashes here per #721 (this commit); doc-sync 62617/1502 -> 62689/1503 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `8e948b12` (8e948b123773120670f942b26ceb58e5946b50dc) - verified via git rev-parse
 - Anchor followup `87f47d7a` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 62617/1502 -> 62689/1503; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `a8716a34` (README 62617/1502 -> 62689/1503; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
