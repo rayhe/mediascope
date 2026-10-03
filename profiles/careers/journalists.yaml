@@ -26480,3 +26480,109 @@ dan_howley:
       novelty: 'FIRST dedicated Type B mechanism on Dan Howley in journalists.yaml (zero dan_howley YAML key pre-commit, per the #643 convention). zero test_type_b_1148 files on disk (glob); no "Type B #1148" in git log (--grep); max numeric mechanism_id 919 in profiles/ pre-commit; zero numeric 920 mechanism_id keys in profiles/ pre-commit; zero underscore-form and dash-form 920 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); zero underscore-form and dash-form 921 forward-guard needles repo-wide pre-commit (needles format-built per #715); block key zero-hit repo-wide pre-commit (git grep -F); the two novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); dan_howley YAML key zero-hit pre-commit; FORTY-SEVENTH member-claim form absent repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       background_suite_status: 'CHECKED ONLY per #795 - the #1145-launched full suite (goal hidden_files type_d_1145_full_suite.log) is OBSERVED DEAD at this run''s check (log stalled at 385 bytes since Oct 2 08:14:13 PDT; no pytest alive at this run''s ps scan; sixteenth consecutive background death); its verdict belongs to #1150 per #795. This run checked only (no Type B #1148 / m920 markers in the suite log); does not touch it.'
       in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.'
+
+tyler_lee:
+  name: Tyler Lee
+  current_role: Staff Writer
+  current_publication: Phandroid
+  publication_owner: Phandroid (independent Android/tech consumer blog)
+  beat: [consumer tech, smart glasses, wearables, mobile devices]
+  career_history: 'Tyler Lee is a Phandroid staff writer covering consumer tech, smart glasses, and mobile devices. Phandroid author-page byline renders ''Tyler Lee'' (author handle ''sengyip'' per the archive page URL); bounded attribution per #492. Recent wearables coverage includes the Sep-2026 Meta Luna camera-free glasses rumor piece, the Sep-17-2026 Snap Specs launch piece, the Sep-24 Meta ''ditching the camera'' followup, the Sep-24 Meta VR Glasses piece, and the Sep-25 Meta hearing-aid piece, all relay-attested via the Phandroid archive pages this run.'
+  notes: 'Type B #1168 (Oct 3 2026): mechanism 932 within-journalist within-week cross-entity privacy-register gap - FIRST dedicated Type B mechanism on Tyler Lee in journalists.yaml (zero tyler_lee YAML key pre-commit, per the #643 convention). Question: does the same Phandroid writer who applies the ''pervert glasses''/secret-recording privacy register to Meta''s camera glasses (Sep 16) apply any privacy/surveillance/consent vocabulary to Snap''s four-camera Specs launch piece (Sep 17)? META ARM: Sep-16-2026 ''Meta''s Fix for ''Pervert Glasses'' Backlash: No More Camera'' (phandroid.com/2026/09/16/metas-fix-for-pervert-glasses-backlash-no-more-camera/; byline ''Tyler Lee'' per the Phandroid smart-glasses and Meta archive pages; excerpt-tier, 0 browser.open per #503) - privacy-stigma register on Meta: ''Meta''s smart glasses picked up an ugly nickname over the past year''; Luna rumor framed as the backlash fix (six microphones, no camera); ''That way, people can tell if someone near them might be secretly recording.'' MANUAL ILLUSTRATIVE -0.30. SNAP ARM: Sep-17-2026 ''Snap''s New $2,195 Smart Glasses Wants To Replace Your Phone'' (phandroid.com/2026/09/17/snaps-new-2195-smart-glasses-wants-to-replace-your-phone/; byline ''Tyler Lee'' per the archive pages; excerpt-tier) - launch register on Snap''s four-camera Specs: ''Snap Has Tried This Before, and Failed'' (2016 Spectacles history); ''built to track your hands and layer digital images over whatever you''re looking at''; price/production-run skepticism; ZERO privacy/surveillance/consent vocabulary in the retrieved excerpt. MANUAL ILLUSTRATIVE +0.05 (mild product skepticism, not privacy). FINDING: illustrative Meta-minus-Snap delta -0.35 - the consent-register is applied to Meta''s camera glasses but absent on Snap''s four-camera Specs one day later, from the same journalist at the same outlet. This is a journalist-level ASYMMETRY datum extending the m75 privacy-vocabulary-bifurcation family (Victoria Song) to a new journalist and a new entity pair (Meta vs Snap); it is a CONTRAST case against the #1148 Howley parity bound (one journalist, symmetric consent framing). The gap is register-specific, not tone-general: Lee hits Snap adversarially on product merits (failure history, price). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule.'
+  mechanism_ids: [932]
+  source_urls:
+  - https://phandroid.com/2026/09/16/metas-fix-for-pervert-glasses-backlash-no-more-camera/
+  - https://phandroid.com/2026/09/17/snaps-new-2195-smart-glasses-wants-to-replace-your-phone/
+  - https://phandroid.com/guide/meta/
+  - https://phandroid.com/guide/smart-glasses/
+  - https://phandroid.com/author/sengyip/page/4/
+  competitor_coverage:
+    type_b_1168_tyler_lee_phandroid_meta_luna_pervert_glasses_vs_snap_specs_launch_privacy_register_gap_sep16_17:
+      iteration: 1168
+      mechanism_id: 932
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-03 03:00 PDT'
+      block_key: type_b_1168_tyler_lee_phandroid_meta_luna_pervert_glasses_vs_snap_specs_launch_privacy_register_gap_sep16_17
+      test_file: tests/test_type_b_1168_tyler_lee_phandroid_meta_luna_pervert_glasses_vs_snap_specs_launch_privacy_register_gap_sep16_17_oct03_3am.py
+      author: Kit (with Ray)
+      journalist: Tyler Lee
+      publication: phandroid
+      window: '1165-1169 window FOURTH leg (D #1165 -> E #1166 -> A #1167 -> B #1168 -> C #1169)'
+      meta_arm:
+        entity: meta
+        product: 'Meta camera-free glasses rumor (''Luna'') + camera-glasses backlash context'
+        title: 'Meta''s Fix for ''Pervert Glasses'' Backlash: No More Camera'
+        date: '2026-09-16'
+        outlet: Phandroid
+        url: https://phandroid.com/2026/09/16/metas-fix-for-pervert-glasses-backlash-no-more-camera/
+        byline_attribution: 'By Tyler Lee September 16 (Phandroid smart-glasses and Meta archive pages; bounded attribution per #492; author-page handle ''sengyip'' noted)'
+        key_quotes:
+        - 'Meta''s smart glasses picked up an ugly nickname over the past year.'
+        - 'That way, people can tell if someone near them might be secretly recording.'
+        - 'Meta is reportedly building a pair of smart glasses with no camera at all. The company is expected to unveil them next week.'
+        - 'The new glasses reportedly carry the codename Luna internally. They''ll come in two styles, called Clubmaster and Burbank. Instead of a camera, Luna will pack six microphones and speakers aimed at your ears.'
+        framing_notes: 'Privacy-stigma register applied to Meta: the ''pervert glasses'' nickname vocabulary carries the piece; the Luna rumor is framed as the backlash fix; the secret-recording problem statement is the peg.'
+        tone_MANUAL_ILLUSTRATIVE: -0.30
+      snap_arm:
+        entity: snap
+        product: 'Snap Specs (2026 consumer launch, four cameras, AR display, $2,195)'
+        title: 'Snap''s New $2,195 Smart Glasses Wants To Replace Your Phone'
+        date: '2026-09-17'
+        outlet: Phandroid
+        url: https://phandroid.com/2026/09/17/snaps-new-2195-smart-glasses-wants-to-replace-your-phone/
+        byline_attribution: 'By Tyler Lee September 17 (Phandroid smart-glasses archive page and author page; bounded attribution per #492)'
+        key_quotes:
+        - 'The company behind Snapchat held its biggest hardware event in years this week where it has officially launched Specs.'
+        - 'This is a pair of augmented reality glasses priced at $2,195 that the company thinks could have the potential to replace your phone and computer.'
+        - 'Snap Has Tried This Before, and Failed. Back in 2016, the company sold camera-only Spectacles out of vending machines nicknamed Snapbots. It ended up sitting on hundreds of thousands of unsold pairs.'
+        - 'It''s a standalone computer that needs no phone and no separate battery pack. It''s built to track your hands and layer digital images over whatever you''re looking at.'
+        - 'The company capped this first production run at roughly 100,000 units. Also, if you want the glasses to work without your phone nearby, you''ll need a cellular plan tied to Verizon in the US.'
+        framing_notes: 'Launch register on Snap: business-history adversarial framing (''Failed'') and price/availability skepticism; the four-camera Specs are described as ''layering digital images over whatever you''re looking at'' with ZERO privacy/surveillance/consent vocabulary in the retrieved excerpt - the consent register is absent.'
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+      register_gap:
+        reading: 'Same journalist, same outlet, one day apart, same product category (camera smart glasses): the privacy/''pervert glasses''/secret-recording register Lee applies to Meta''s camera glasses on Sep 16 does not appear in his Sep-17 Snap Specs launch piece - even though Specs carries four cameras and an always-on world-scanning AR posture (''layer digital images over whatever you''re looking at'').'
+        illustrative_delta_meta_minus_snap: 'Meta -0.30 vs Snap +0.05 = -0.35 (Meta-harder on the privacy register; MANUAL ILLUSTRATIVE ONLY).'
+        family_placement: 'Journalist-level ASYMMETRY datum extending the m75 privacy-vocabulary-bifurcation family (Victoria Song: privacy vocabulary on Meta, muted on Apple/Google/Snap) to a new journalist (Tyler Lee, Phandroid) and a new entity pair (Meta vs Snap). CONTRAST case against the #1148 Howley parity bound (Howley: symmetric consent framing across Apple Watch + Meta glasses in one segment) - the asymmetry persists at journalist level for a different journalist and entity pair.'
+        register_scope: 'The gap is register-specific, not tone-general: Lee applies adversarial framing to Snap on product merits (''Snap Has Tried This Before, and Failed''; $2,195 price skepticism). The missing register is specifically the privacy/surveillance/consent vocabulary.'
+      financial_relationship:
+        phandroid_meta: 'No Phandroid x Meta content-licensing deal, advertising dependency, or other financial relationship surfaced in bounded searches this run.'
+        phandroid_snap: 'No Phandroid x Snap content-licensing deal, advertising dependency, or other financial relationship surfaced in bounded searches this run.'
+        test: 'No payer-softening prediction is testable at this publication pair: no financial gradient found on either side.'
+        result: 'NOT a falsification-family member. The observed contrast is a within-journalist cross-entity privacy-register gap with no deal geometry attached.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY. engine NOT run. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant False. NOT artifact-grade. no_analysis_json_update true. Per the Aug 28 2026 standing rule.'
+        verdict: 'directionally_supported_not_proven (scoped: Lee applies the ''pervert glasses''/secret-recording privacy register to Meta''s camera glasses (Sep 16, -0.30) but no privacy/surveillance/consent vocabulary to Snap''s four-camera Specs (Sep 17, +0.05) one day later; illustrative Meta-minus-Snap delta -0.35; register-specific gap, not tone-general; no financial gradient tested; NOT a falsification-family member; ledger holds at 46)'
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'NOT a falsification-family member: no uniform payer-softening prediction is tested (bounded searches found no Phandroid-Meta or Phandroid-Snap financial relationship). Ledger holds at 46. FORTY-SIXTH member-form present (m907, profiles/the-verge.yaml). FORTY-SEVENTH member-claim form absent repo-wide (designed negative-guard wording for the next landing).'
+      confounders:
+      - 'STRONG: peg-driven register - the Sep-16 Meta piece''s peg IS the privacy backlash (Luna exists as the backlash fix); the Sep-17 Snap piece''s peg is a hardware launch. The privacy register may be peg-appropriate rather than entity-selected; a launch peg does not demand privacy vocabulary.'
+      - 'STRONG: excerpt-tier evidence - archive-page excerpts plus search-result excerpt; 0 browser.open per #503; the Snap piece''s full text may carry privacy discussion below the retrieved excerpt, which would collapse the gap.'
+      - 'STRONG: the gap is register-specific, not tone-general - Lee hits Snap adversarially on business history (''Snap Has Tried This Before, and Failed'') and price; the missing register is specifically the privacy/surveillance/consent vocabulary, so the finding cannot be read as Lee being soft on Snap overall.'
+      - 'MODERATE: temporal/proximity - one day apart with different news triggers (pre-Connect Luna rumor vs Snap launch event); the pieces were written to different newsroom prompts.'
+      - 'MODERATE: product-class asymmetry - Snap Specs are $2,195 developer-priced, enterprise-leaning hardware; Meta''s camera glasses are mass-market consumer; bystander-exposure profiles genuinely differ, which may justify different privacy salience.'
+      - 'WEAK: byline handle mismatch - the Phandroid author page URL carries the handle ''sengyip'' while the rendered byline reads ''Tyler Lee''; bounded attribution per #492 treats the rendered byline as authoritative, flagged here.'
+      counterevidence:
+      - 'Lee''s Sep-24 Meta followup (''Meta Is Ditching the Camera to Shake Its ''Pervert Glasses'' Label'') repeats the privacy register on Meta - consistent Meta-side framing, not a one-off, which strengthens the Meta-arm stability of the pair.'
+      - 'Lee covers Meta hardware on product merits too (Jul-28 subscription-pause piece; Sep-25 hearing-aid piece; Sep-24 VR Glasses piece) - against a reading that Lee is Meta-hostile in general; the privacy register is topic-bound.'
+      - 'The Oct-1 TechCrunch SB 1130 veto piece (Zack Whittaker) names ''internet-connected glasses made by Meta and Snap'' symmetrically in the same regulatory peg - entity-neutral coverage exists in the same news cycle.'
+      - 'The Sep-24 webpronews ''Creep Factor'' piece applies the creep/privacy register to BOTH Meta glasses and Apple Watches - cross-entity privacy framing exists at outlet level in the corpus window.'
+      - 'The Snap piece is NOT a puff piece: ''Snap Has Tried This Before, and Failed'' plus $2,195 price/production-run skepticism is adversarial register on Snap - the gap is privacy-vocabulary-specific, not a softness gap.'
+      - 'The #1148 Howley parity bound (same-segment symmetric consent framing, Apple Watch + Meta glasses) shows a different journalist in the same Sep-2026 window does apply the register cross-entity - the m75 family''s journalist-level universality remains bounded, not settled.'
+      verdict: 'directionally_supported_not_proven: within-journalist cross-entity privacy-register gap. Lee''s Sep-16 Phandroid Meta piece (-0.30) carries the ''pervert glasses''/secret-recording privacy register; his Sep-17 Phandroid Snap Specs piece (+0.05) carries zero privacy/surveillance/consent vocabulary in the retrieved excerpt despite four cameras; illustrative Meta-minus-Snap delta -0.35. The finding extends the m75 family to a new journalist/entity pair and contrasts the #1148 Howley parity bound. Peg-driven-register is the strongest confounder. No financial gradient tested; NOT a falsification-family member; ledger holds at 46.'
+      research_method: '11 browser.search query sets, 0 browser.open per #503 (excerpt-bounded): Meta Connect 2026 hands-on bylines - REJECTED (saturated: Pero m806/m818, R. Wong m653, Stein #588; Song saturated; own-repo circular commit pages excluded); Allison Johnson Verge sweep - REJECTED (no named pair surfaced); TechCrunch Meta Connect byline - REJECTED (no pair); Verge ''best smart glasses'' attribution - REJECTED (relay noise); SB 1130 veto author - CONTEXT (Zack Whittaker TechCrunch confirmed via technewstube/memeorandum/buzzsumo; ''pervert glasses'' headline register); Hans Anders Reuters pull - CONTEXT (wire, no named journalist pair; already #1148 context); TechCrunch ''pervert glasses'' byline - CONFIRMED Whittaker; Phandroid ''pervert glasses'' author - SELECTED (archive bylines: Tyler Lee on Sep-16 Meta Luna piece, Sep-17 Snap Specs piece, Sep-24 Meta pieces); Snap Specs Phandroid URL - SELECTED (verbatim URL + excerpt: failure-history and price register, zero privacy vocabulary); Phandroid x Meta financial - CONTEXT NULL (no relationship surfaced); Phandroid x Snap financial - CONTEXT NULL (no relationship surfaced). Pre-commit novelty greps per #715 (see novelty). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      statistical_discipline: 'MANUAL / qualitative checks only. Tone MANUAL_ILLUSTRATIVE; p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the illustrative arms per the Aug 28 2026 standing rule; no significance claimed. NOT artifact-grade. ASCII-only, no em dashes.'
+      falsification_family: 'NOT a falsification-family member (a within-journalist cross-entity privacy-register gap extending the m75 family''s journalist-level scope, not a uniform-prediction contradiction); ledger holds at 46; forty-seventh member-claim form absent repo-wide; thirty-sixth/thirty-seventh direction forms absent repo-wide.'
+      cross_refs:
+      - '#75 (Victoria Song privacy-vocabulary bifurcation: privacy vocabulary on Meta, muted on Apple/Google/Snap - the family this run extends to a new journalist and entity pair)'
+      - '#1008 (Lily Hay Newman WIRED: Meta private-processing vs Apple Watch audio intelligence - the peg-matched cross-entity privacy convention)'
+      - '#1148 (Dan Howley Yahoo Finance Sep-26 consent-register parity bound, m920 - the CONTRAST case: Howley applies the consent register symmetrically across entities in one segment; Lee applies the privacy register asymmetrically across two pieces)'
+      - '#978 (James Pero Gizmodo Meta VR enthusiasm vs Ray-Ban Meta Audio stigma, m818 - within-journalist register-split precedent; category-bounded refinement)'
+      - 'Type E #1166 standing observation (156 cycles Meta-exclusive privacy-pressure framing in press monitoring - the aggregate pattern this run''s journalist-level asymmetry datum is consistent with)'
+      no_analysis_json_update: true
+      background_suite_status: 'CHECKED ONLY per #795 - the #1165-launched full suite (goal hidden_files type_d_1165_full_suite.log) is DEAD/AMBIGUOUS at this run''s check (log 1134 bytes, last write Oct 3 01:22 PDT; one pytest process at ps scan, no m932 markers; verdict belongs to #1170). This run checked only (no Type B #1168 / m932 markers in the suite log); does not touch it.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.'
+      novelty: 'FIRST dedicated Type B mechanism on Tyler Lee in journalists.yaml (zero tyler_lee YAML key pre-commit, per the #643 convention). zero test_type_b_1168 files on disk (glob); no "Type B #1168" in git log (--grep); max numeric mechanism_id 931 in profiles/ pre-commit (m931 Type A #1167, profiles/gizmodo.yaml); zero numeric 932 mechanism_id keys in profiles/ pre-commit; zero underscore-form and dash-form 932 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded); zero underscore-form and dash-form 933 forward-guard needles repo-wide pre-commit (needles format-built per #715); block key zero-hit repo-wide pre-commit (git grep -F; designed keying: iteration 1168 in key, no 932 substring); the two novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); tyler_lee YAML key zero-hit pre-commit; FORTY-SEVENTH member-claim form absent repo-wide pre-commit; THIRTY-SIXTH/THIRTY-SEVENTH direction forms absent repo-wide pre-commit; THIRTY-FIFTH direction present (m915). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
