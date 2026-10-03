@@ -42882,3 +42882,45 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 - anchor: e671ad6d67438443185685c52563ff1f1d7c245c (self-anchor per #565)
 - doc-sync: 25aa947bd2f6fe8bcde10c422188d8aed2e4eda3
 - log-hash: this commit (terminal per #721)
+
+## #1163 Type B: m929 Gurman Bloomberg Sep-27 Power On - Meta VR Glasses praise vs Apple execution skepticism, m593 temporal reversal (Oct 2 2026, 11:00 PM PDT; main commit 4f4159bc / anchor 3b950e0b / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61478/1487 -> 61543/1488 (+65/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+- This run is iteration #1163 Type B, the FOURTH leg of the 1160-1164 window (D #1160 -> E #1161 -> A #1162 -> B #1163 -> C #1164 per the #565 anchor + rotation guard).
+- Committed predecessors verified in history pre-commit: #1160 Type D (main e14beb6f / anchor 2f8a63c7 / doc-sync 5358009b / log-hash 43266898), #1161 Type E (main 9e9d70be / anchor a75fea4c / doc-sync 0ce1314a / log-hash 9386a98b), #1162 Type A (main ae9911ce / anchor e671ad6d / doc-sync 25aa947b / log-hash ea709295). Iteration numbers follow the rotation schedule, not commit order. Next run #1164 Type C closes the window.
+
+### Finding summary
+- m929 (profiles/careers/journalists.yaml, Mark Gurman entry, sibling of the m593 block; YAML mapping key mechanism_1163_mark_gurman_bloomberg_power_on_meta_vr_glasses_vs_apple_execution_skepticism_m593_reversal_sep27 - designed: carries no mechanism-number substring, 1163 is the iteration, plain literal per #715): TEMPORAL REVERSAL BOUND on m593's access-journalism prediction, from Gurman's Sep-27-2026 Power On newsletter (Bloomberg, paywalled; relay-attested this run).
+- META ARM (new): Meta VR Glasses ($1,299, spring 2027) hands-on - "the Vision Pro Apple should have shipped"; "Gurman, who tried the hardware for nearly an hour, described the lighter form as far more comfortable than Vision Pro"; "At $1,299, Meta undercuts Apple's current $3,699 Vision Pro by about two-thirds"; "Meta's bet is that most people will choose something they can actually wear". MANUAL ILLUSTRATIVE +0.35.
+- APPLE ARM (new, same newsletter): Vision Pro as the negative anchor ("the tradeoff Cupertino declined to make at launch"); N224 "on life support", "may never ship", late 2028/2029 at earliest; Apple Glass (N50) delayed to late 2027 ("similar to Meta's Ray-Ban partnership" but no display); conceded strengths ("Vision Pro still leads on field of view, light sealing, and some software polish") plus sympathetic delay framing ("taking its time to ensure it enters the space with a product worth buying"). MANUAL ILLUSTRATIVE +0.10.
+- Scorer (MANUAL ILLUSTRATIVE ONLY, engine NOT run, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven): illustrative Meta-minus-Apple delta +0.25, SIGN-REVERSED vs m593's -0.55 (Meta spec-critical -0.15 vs Apple insider-aspirational +0.40 avg, Oct 2025 to Jul 2026 camera-glasses lane). The access-predicted direction (Apple aspirational, Meta spec-critical) does not replicate; the within-piece direction flips to Meta-favoring.
+- NOT a falsification-family member: no financial gradient is under test (Bloomberg financial-null per #85/m593 - Terminal revenue, zero AI licensing deals - makes the deal-softness prediction NULL, not failed). The reversal binds the ACCESS driver class: access dependence did not produce the Apple-favoring register here. Ledger holds at 46 (FORTY-SIXTH in profiles/the-verge.yaml m907 x2; forty-seventh absent by design). THIRTY-FIFTH relationship direction present (m915); thirty-sixth/thirty-seventh absent.
+
+### Method
+- 22 browser.search query sets this run across two phases: 20 in the journalist-candidate sweep, 2 in the Gurman verification phase. 0 browser.open (excerpt-bounded per #503; Power On paywalled, relay-attested). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed.
+- REJECTED candidates (documented in the YAML research_method): Goode (#436), Karissa Bell (m113/m722/m764/m773), Cherlynn Low (m150), Adrienne So (#380), Brian Heater (m602; left TechCrunch early 2025, no fresh pair), Samuel Axon (m688), Lisa Eadicicco (m123), Raymond Wong (m653), Florence Ion (m690), James Pero (m746/m791/m806/m818), Victoria Song (m112/m827), Sean Keach (#1018), Ina Fried (m638/m926), Jessica Conditt (m923), Dan Howley (m920), Nicole Nguyen (m893/m896), Cristina Criddle (#1143); Alex Cranz / Wes Davis / Andrew Lanxon (no clean pair surfaced, no selection-silence claim per #492); Gurman FIRST rejected because m593 exists (extension per the #1153/#1158 precedent, not a repeat).
+- SELECTED: Gurman Sep-27 Power On via six verbatim relay URLs (macdailynews article + substack mirror, appleinsider, tweaktown, gagadget, mixed-news), all zero-hit repo-wide pre-commit; the verbatim headline "what Apple Vision Pro should have been" zero-hit repo-wide pre-commit.
+- In-gate: 65 tests collected; 51 green pre-commit with 14 deselected/by-design (+1 skipped anchor placeholder). One real defect caught and fixed in-gate: the headline-case assertion used the paraphrase instead of the verbatim relay headline (fixed before commit). Tests: tests/test_type_b_1163_mark_gurman_bloomberg_power_on_meta_vr_glasses_vs_apple_execution_skepticism_m593_reversal_sep27_oct02_11pm.py (65 tests, 13 classes).
+
+### New Type B files
+- Tests: tests/test_type_b_1163_mark_gurman_bloomberg_power_on_meta_vr_glasses_vs_apple_execution_skepticism_m593_reversal_sep27_oct02_11pm.py (65 tests, 13 classes; 51 green pre-commit via venv python; post-anchor re-run: full file green with the 2 by-design post-commit red pins deselected; novelty pin + anchor-placeholder pin deselected by design).
+
+### Doc-sync ratchet
+- README `| Tests |` line: 61478 -> 61543; test-file table: 1487 -> 1488 rows; #1163 row appended after the #1162 row.
+- ARCHITECTURE.md counts synced; #1163 row appended to the test tree after the #1162 row.
+- iteration-log.md: this ## #1163 Type B entry appended at the tail (post-#1149 convention).
+- doc-sync 61478/1487 -> 61543/1488 (+65/+1).
+- Test-file constants patched per #719 with the true collected count (README_TEST_COUNT 61543, README_FILE_COUNT 1488).
+
+### Rotation guard
+- Rotation: this run is iteration #1163 Type B, the FOURTH leg of the 1160-1164 window (D #1160 -> E #1161 -> A #1162 -> B #1163 -> C #1164, per the #565 anchor + rotation guard). Next run #1164 closes the window as Type C, inheriting the zero next-number nine-three-zero forward guards and the no-thirty-sixth/seventh-direction / no-forty-seventh-member guards from this run's TestGuardLifecycle1163 pins (via this run's test file staleness class, still green this run).
+- Guard lifecycle (BY DESIGN): #1162's zero-929 numeric pin flips at this run (the landed mechanism_id: 929 field trips it; recorded via subprocess in this run's TestForwardLookingStaleness1163); #1162's underscore/dash 929 pins STAY GREEN (no contiguous underscore/dash-form 929 literal exists repo-wide - designed keying per #715); #1162's no-thirty-sixth/seventh-direction and no-forty-seventh-member pins stay green (asserted in this run's TestGuardLifecycle1163).
+- Forward-looking staleness (expected, BY DESIGN): this file's TestNovelty1163 git-log pins are red pre-commit (deselected in pre-commit runs); TestTypeBAnchor1163 is skip-marked pre-anchor (green post-anchor); TestTypeBDocSync1163 and TestTypeBIterationLog1163 assert the pre-doc-sync state (patched per #719 / flipped green once this doc-sync lands).
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only (asserted in TestInflightIsolation1163). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
+
+### Log-hash followup (per #721, terminal)
+- main: 4f4159bc1232c646df9ea7192ac88548232f46fc
+- anchor: 3b950e0ba0b47807452fee6336e154d1f24196cb (self-anchor per #565)
+- doc-sync: TBD
+- log-hash: TBD (terminal per #721)
