@@ -42653,12 +42653,12 @@ Push status (this run, Oct 2 2026 ~06:1x PDT): main + anchor followup pushed and
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson.
 ---
 
-## #1158 Type B: m926 Ina Fried (Axios) Sep-25 "Meta needs you to believe it cares about privacy" privacy-virtue DOUBT vs carried m638 Apple ambient-AI privacy-virtue GRANT - temporal extension of m638 (illustrative Meta-minus-Apple delta -0.55, gap widens vs m638's +0.20; within-Meta register shift -0.35; MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT a falsification-family member, ledger holds at 46; SECOND dedicated Type B mechanism on Fried) - Type B FOURTH leg of the 1155-1159 window (Oct 2 2026, 07:00 PM PDT; main commit 9aee0edc / anchor 90dccba4 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61097/1482 -> 61161/1483 (+64/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1158 Type B: m926 Ina Fried (Axios) Sep-25 "Meta needs you to believe it cares about privacy" privacy-virtue DOUBT vs carried m638 Apple ambient-AI privacy-virtue GRANT - temporal extension of m638 (illustrative Meta-minus-Apple delta -0.55, gap widens vs m638's +0.20; within-Meta register shift -0.35; MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT a falsification-family member, ledger holds at 46; SECOND dedicated Type B mechanism on Fried) - Type B FOURTH leg of the 1155-1159 window (Oct 2 2026, 07:00 PM PDT; main commit 9aee0edc / anchor 90dccba4 / doc-sync 3bf3c9f8; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61097/1482 -> 61161/1483 (+64/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `9aee0edc` (9aee0edcfe632fbac53537fee76941ba8c6cb9f7) - verified via git rev-parse
 - Anchor followup `90dccba4` (90dccba4582c22ce683eea729ee0d0de9715b6d2; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD (README 61097/1482 -> 61161/1483; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `3bf3c9f8` (3bf3c9f8a9977476014749243166e9591d4badcf; README 61097/1482 -> 61161/1483; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
