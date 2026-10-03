@@ -42568,3 +42568,46 @@ Push status (this run, Oct 2 2026 ~03:2x PDT): main + anchor followup pushed and
 ### Concurrency
 - In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
 ---
+## #1156 Type E: podcast sentiment 154th verification cycle - GF episode 502 holds newest (21st verification, ~102h; no 503); GF pure-re-surface streak ENDS at four (ONE new GF URL key: goloudnow 362-pivot old-episode directory key, NOT a new episode); EHE 53-day hold (same-day hold as #1151); Attention Sphere 154th no-match (f904d7e9 present, dec56140 absent 3rd consecutive); press 7 rows ALL re-surfaces, frontier HOLDS at Oct 2; ledger holds at 46 - Type E SECOND leg of the 1155-1159 window (Oct 2 2026, 05:00 PM PDT; main commit e7180bb3 / anchor 98d22959 / doc-sync DOCSYNC_SHA / log-hash followup registers all hashes here per #721 (this commit); doc-sync 60979/1480 -> 61042/1481 (+63/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `e7180bb3` (e7180bb354f20ddfb19e803270ef4ef4069b7b36) - verified via git rev-parse
+- Anchor followup `98d22959` (98d229591d4dba8d6794ef514d56469ab65da7ea; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `DOCSYNC_SHA` (README 60979/1480 -> 61042/1481; test-table row; ARCHITECTURE tree row; podcast-sentiment.md 154th-cycle section + Tracked Sources 153->154 in main commit; iteration-log #1156 entry; test-file constants patched per #719)
+- Log-hash followup: this commit (terminal per #721)
+
+### Rotation transparency
+- This run is iteration #1156 Type E, the SECOND leg of the 1155-1159 window (D #1155 -> E #1156 -> A #1157 -> B #1158 -> C #1159 per the #565 anchor + rotation guard).
+- Committed predecessor verified pre-commit: #1155 Type D (main 72a638f1 / anchor f4ad78e9 / doc-sync 4a33a092 / log-hash 4638c381), present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1157 Type A continues the window.
+
+### Finding summary
+- Guilty Feminist: episode 502 holds as newest (twenty-first Type E verification since the Sep 28 11:00am release, ~102 hours after publication); NO 503 surfaced. Two-directory corroboration: listennotes main (crawled 9h; 502 Homophobia, 762 episodes), podscan.fm main (crawled 9h). 6 GF rows = 5 re-surfaces (chortle Fringe-2026 show page, listennotes main, podscan main, ivy.fm directory, podscan 499 transcript page) + ONE NEW verbatim GF URL key: the goloudnow 362-pivot directory page (crawled 6d; episode 362 "Pivot with Chloe Petts and special guest Laura Lexx"; zero pre-commit corpus hits via git grep -F; old-episode directory-mirror key, NOT a new episode). The GF pure-re-surface streak ENDS at four (restarted at one at #1136, two at #1141, three at #1146, four at #1151). The one new key breaks the streak but documents an old episode; the no-new-episode streak is unbroken. ZERO own-repo GitHub URLs in the GF set. ZERO Meta/wearables content in any GF episode across all 154 cycles (bounded search-result absence, tone NOT_SCORED).
+- Everyone Hates Elon (activist group, NOT a podcast): 53-day hold (Aug 10 Epstein spoof -> Oct 2; same-day hold as #1151). 5 logged keys re-surfaced (huckmag crawled 3h; linkedin whats-up-privacy roundup crawled <1h; feminist.org archive crawled 3h; linkedin kayvan-mirza op-ed crawled 3d; techtimes amnesty-boxes crawled 3h). 2 own-repo GitHub URLs rejected as circular (podcast-sentiment.md HEAD blob + examples sample_output strand blob; git-ls-tree-verified). "Glasses for people who don't do consent." remains the primary motif. ZERO new EHE URL keys. No competitor-equivalent guerrilla campaign in any of the 154 cycles (bounded search-result absence).
+- Attention Sphere: one-hundred-fifty-fourth quoted-search no-match as a podcast. 6 results, all this repository's own GitHub commit URLs (40d6e7b0, 5e238e78, d4618aae, 0d9132c6, bf0cbbf1, f904d7e9 the #891 Type E 101st-cycle commit; dec56140 absent - third consecutive absence after #1146/#1151; each git-cat-file-verified, circular-rejected, not ingested). podcast-sentiment.md blob did NOT surface; 16611229 absent. Tracked Sources 153->154. Task-spec name remains misidentified as a podcast; real-world identity stands per #591 (Kendall Schrohe).
+- Press: SEVEN result rows, ALL re-surfaces, ZERO new URL keys this run (northlandnewsradio relay, reuters Oct-2 original, techspot 113968, particle Dutch-retail-pull, techcentral SA launch, usnewsbreak Sep-18 lawsuit piece, wisevoter Oct-2 slug - the strand's newest original). Recency frontier HOLDS at Oct 2 (no Oct-3+ surface). Meta-exclusive privacy-pressure framing continues across all 154 cycles; the wisevoter piece's neutral Snap mention ("Sept. 18 Snap Launched New Augmented Reality Glasses") carries zero privacy-pressure framing.
+- Statistical discipline: MONITORING-ONLY per the Aug 28 2026 standing rule (tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, falsification ledger holds at 46, NOT artifact-grade, verdict directionally_supported_not_proven, no_analysis_json_update true). 4 browser.search query sets, 0 browser.open (excerpt-bounded per #503). 26 result rows / 18 non-circular distinct URL keys / ONE new verbatim URL key this run. 8 distinct own-repo GitHub URLs rejected as circular. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_e_1156 files on disk (glob); no Type E #1156 in git log (--grep); max numeric mechanism_id 924 in-tree pre-commit (m921/m922/m923/m924 landed by the 1150-1154 window, verified at #1155 Type D; Type E adds no mechanisms); zero numeric/underscore/dash next-number nine-two-five mechanism key forms repo-wide pre-commit (needles format-built, own file excluded; the "mechanism_id: 925" grep hits are iteration #925 test-file references, not mechanism keys); the one new GF URL key zero pre-commit corpus hits via git grep -F; no #1156 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 60979/1480 pre-commit.
+- YAML-parsed discipline assertions (63 tests, 13 classes): anchor (post-commit per #565), rotation guard, mechanism novelty, GF findings, EHE findings, Attention Sphere findings, press surfaces, research method, statistical discipline, staleness pins (#1155 guard lifecycle still green), doc-sync, iteration log, in-flight isolation.
+- In-gate defects fixed: one (sed anchor-patch pattern missed the literal 40-zero placeholder on first attempt; re-ran with the exact literal, verified patched state before committing the anchor followup). Pre-commit gate: 63/63 green via system python3, zero initial test defects otherwise.
+- Background-suite status per #795: the #1155-launched full suite (goal hidden_files type_d_1155_full_suite.log) is IN FLIGHT at this run's check (pytest alive at this run's pgrep scan; 1804-byte log, mtime Oct 2 16:51 PDT); its verdict belongs to #1160 per #795. This run checked only; does not touch it.
+
+### New Type E files
+tests/test_type_e_1156_podcast_sentiment_154th_verification_oct02_5pm.py - 13 classes, 63 tests (anchor placeholder pre-commit per #565; the GF new-key zero-hits pin flips red post-main-commit by design per the #1141 precedent; doc-sync + iteration-log + novelty pins flip green/red by design as documented).
+
+### Doc-sync ratchet
+README `| Tests |` line: 60979 -> 61042; test-file table: 1480 -> 1481 rows; #1156 row appended after the #1155 row.
+ARCHITECTURE.md: #1156 tree row appended after the #1155 row.
+podcast-sentiment.md: 154th-cycle section appended in the main commit; Tracked Sources 153->154.
+iteration-log #1156 entry (this entry); test-file constants patched per #719.
+doc-sync 60979/1480 -> 61042/1481 (+63/+1).
+
+### Rotation guard
+- Rotation: this run is iteration #1156 Type E, the SECOND leg of the 1155-1159 window (D #1155 -> E #1156 -> A #1157 -> B #1158 -> C #1159, per the #565 anchor + rotation guard). Next: #1157 Type A continues the window.
+- Forward-looking staleness (expected, BY DESIGN): this file's TestRotationGuard novelty pin is red post-main-commit (deselected in post-commit runs); the GF-new-key zero-hits pin flips red post-main-commit (deselected per #1141 precedent); #1155's zero-925 numeric pin and guard-lifecycle class stay GREEN (Type E lands no mechanism); #1154's zero-925 forward guards stay GREEN; TestDocSync and TestIterationLog pins flip green once this doc-sync lands (they assert the post-doc-sync state).
+
+### Concurrency
+- In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk, uncommitted), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending - not an assistant repair task).
+---
