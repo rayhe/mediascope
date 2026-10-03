@@ -20555,6 +20555,91 @@ journalists:
     research_method: 'browser.search query sets this run: (1) Ina Fried Axios September 2026 Muse (surfaced the flipboard author listing attesting the Axios/Ina Fried byline); (2) Ina Fried Axios OpenAI Anthropic September 2026 (surfaced the Muck Rack author page); (3) Ina Fried Axios Apple iPhone event September 2026; (4) quoted-phrase search on the Apple ambient-AI headline. browser.open first-hand reads: the full Muck Rack ina-fried author page (both arms'' headlines and deks), the Benton Institute verbatim Axios reprint of the Muse piece, the Slashdot verbatim Axios reprint of the Muse piece (full text). browser.open on axios.com FAILED (policy-blocked) this run; no axios.com URLs constructed or invented. No zero-coverage claims. No em dashes; ASCII-only.'
     novelty: 'FIRST dedicated Type B mechanism on Ina Fried; no Ina Fried journalist entry pre-commit (grep verified: only mention-notes inside other entries); mechanism_id 638 next free pre-commit (max 637); no test_type_b_673 files pre-commit; Apple ambient-AI piece new-to-corpus (zero repo-wide hits for "always-recording" pre-commit, grep verified). Overrides the prior not-pursued notes with new evidence as documented in cross_references.'
     artifact_readiness: 'No analysis.json update warranted: illustrative headline-register pair only, manual tones, no empirical significance.'
+  mechanism_1158_ina_fried_axios_meta_privacy_virtue_doubt_vs_apple_privacy_virtue_grant_m638_extension_sep25:
+    mechanism_id: 926
+    type: B
+    journalist: 'Ina Fried'
+    publication: axios
+    iteration: 1158
+    iteration_type: B
+    iteration_time: '2026-10-02 19:00 PDT'
+    discovery_date: '2026-10-02'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    block_key: type_b_1158_ina_fried_axios_meta_privacy_virtue_doubt_vs_apple_privacy_virtue_grant_m638_extension_sep25_oct02_7pm
+    window: '1155-1159 window FOURTH leg (D #1155 -> E #1156 -> A #1157 -> B #1158 -> C #1159)'
+    pattern: 'Same Axios journalist, fifteen days later: Meta privacy pivot framed through a privacy-claim skepticism register (virtue DOUBTED) vs the carried m638 Apple arm framing ambient-AI features through a privacy-virtue headline register (virtue GRANTED). Temporal extension of m638 adding the privacy-register pair the original launch-register pair implied.'
+    new_meta_privacy_arm:
+      piece: 'Axios Sep 25 2026 "Meta needs you to believe it cares about privacy", byline Ina Fried'
+      date: '2026-09-25'
+      date_attestation: 'Date pinned via the TechNews database listing ("September 25 - By Ina Fried", verbatim search result this run); the piece sits at the top of Fried''s Muck Rack author page, above the Sep-23/24 Connect-week "Hands-on with Meta''s next VR headset" items, consistent with a Sep-25 slot.'
+      byline: 'Ina Fried'
+      register: privacy_claim_skepticism_accountability
+      tone_illustrative: -0.25
+      evidence_quotes:
+        - 'Headline (Muck Rack ina-fried author page, first-hand this run): "Meta needs you to believe it cares about privacy"'
+        - 'Dek (same, first-hand): "Meta is seeking to make privacy protections a centerpiece of new products including its viral assistant Muse, marking a major shift for a company built on extensive use of customer data."'
+        - 'Dek continued (same): "Why it matters: The radical turnaround is an acknowledgment that the winner of AI''s new assistant race will have to reassure users that they can turn over their emails, finances, health data and other sensitive information."'
+        - 'Body relay (inlandnewstoday, verbatim this run): EPIC executive director Alan Butler - "Meta''s products that embed microphones and cameras in everyday devices pose serious privacy risks to people just trying to live their lives and go about their day without being recorded or surveilled"; "Confidential processing doesn''t solve the problem of pushing embedded surveillance systems out into the world."'
+        - 'Body relay (same): Axios thought bubble - "There''s still a trust gap based on Meta''s years of gobbling up nearly all the data it could. That can''t be addressed with words, but requires establishing a new track record."'
+        - 'Business-model context (same relay): Meta funding Muse through transaction fees rather than ad targeting; Muse has $20- and $100-per-month paid tiers; default setting allows interactions to be used for training, opt-out available; not all privacy changes apply to Meta AI accessed via Facebook/Instagram apps.'
+      source_urls:
+        - 'https://muckrack.com/inafried/articles'
+        - 'https://www.technews.io/database'
+        - 'https://inlandnewstoday.com/story.php?s=81081'
+      source_note: 'axios.com direct fetch policy-blocked (m638 precedent; no axios.com URLs constructed). New-arm body via the inlandnewstoday verbatim Axios relay (search-result text this run); headline/dek via the first-hand Muck Rack author-page read this run; date via the TechNews database listing. Evidence tier: headline/dek first-hand via author page; body via verbatim relay.'
+    carried_meta_launch_arm:
+      piece: 'Axios Sep 8 2026 Meta Muse launch, byline Ina Fried (m638, un-rescored per #807)'
+      register: executive_access_business_launch
+      tone_illustrative: 0.10
+      note: 'Carried from m638; NOT re-scored this run per the #807 standing rule.'
+    carried_apple_arm:
+      piece: 'Axios circa Sep 10 2026 "Apple bets on ''ambient AI'' without the always-recording baggage", byline Ina Fried (m638, un-rescored per #807)'
+      register: privacy_virtue_headline
+      tone_illustrative: 0.30
+      note: 'Carried from m638; NOT re-scored this run per the #807 standing rule. Headline-and-dek bounded (body never recovered, m638 limitation).'
+    asymmetry_scorer:
+      new_meta_tone: -0.25
+      carried_apple_tone: 0.30
+      illustrative_delta_meta_minus_apple: -0.55
+      within_meta_register_shift_new_privacy_arm_vs_carried_launch_arm: -0.35
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      statistical_contract: degenerate_n1_per_arm
+      tone_basis: 'MANUAL ILLUSTRATIVE hand-assigned this run; new arm scored on headline/dek plus verbatim body relay; carried arms un-rescored per #807'
+      verdict: 'Privacy-virtue register inversion in the m638 family: the same Axios journalist who granted Apple the privacy-virtue headline ("aiming to show it can be more private and useful") doubts Meta''s privacy pivot as a credibility problem ("needs you to believe"; "trust gap"; "gobbling up nearly all the data it could"). Directionally consistent with m638''s Apple-minus-Meta +0.20; the gap WIDENS to -0.55 Meta-minus-Apple when the peg moves from launch-access to privacy-claims. NOT a falsification-family member (no falsifiable prediction tested; gradient-absent per the #663 family). Correlation only, not causation. Hypothesis-generating only.'
+      no_analysis_json_update: true
+      artifact_grade: false
+    confounders_ranked:
+      strong:
+        - 'News-peg asymmetry: the Meta arm is a privacy-pivot accountability piece anchored on a real track record (the piece itself names "a company built on extensive use of customer data" and a "trust gap"); the Apple arm is event-feature coverage. The register gap may be peg-justified, not entity-driven.'
+        - 'Carried-arm excerpt bound: the Apple arm rests on headline-and-dek (body never recovered, m638 limitation); the inversion claim cannot be verified below the Apple headline.'
+        - 'The new Meta piece''s own reporting includes substantive pro-privacy facts (confidential processing on a dedicated VM, transaction-fee business model, opt-out training toggle): the skepticism is framed around credibility, not fabricated from omission.'
+      moderate:
+        - 'Temporal spread: circa Sep 10 (Apple) to Sep 25 (Meta), 15 days; register drift across the gap cannot be ruled out.'
+        - 'Sourcing confound: the Sep-8 Meta launch arm''s business register followed a direct Wang interview; the privacy piece''s accountability register follows advocacy-group sourcing (EPIC); register follows sources, not just entity.'
+      weak:
+        - 'n=1 per arm: directional only, degenerate statistical contract.'
+        - 'Axios house "Why it matters" style constrains all three arms.'
+    counterevidence:
+      - 'Fried''s "Hands-on with Meta''s next VR headset" (same Muck Rack profile, same window): product-forward ("take a big step toward being something an average person might be willing to wear", "ditching much of the bulk") - she writes positive Meta hardware pieces.'
+      - 'Fried''s "OpenAI discloses six new AI safety incidents" (same profile): the accountability register applies to OpenAI too; scrutiny is not Meta-exclusive.'
+      - 'Fried''s "Meta gives Muse more power, teases handheld AI device" (same profile): straight business-news register on Meta ("counting on convergence as a key part of making that bet pay off").'
+      - 'The m638 OpenAI control arm ("Welcome to the AGI era", "generational leap", Brockman interview) shows the coronation register is entity-neutral.'
+    financial_context: 'The corpus holds no verified AI-lab licensing or payment leg for Axios and none is asserted here, so no one-sided financial gradient predicts a Meta-vs-Apple privacy-register gap: gradient-absent per the #663 family. The peg and sourcing confounds are stronger than any money story. Correlation, not causation.'
+    falsification_family: 'NOT a falsification-family member (no falsifiable prediction tested; no Axios AI-lab deal in corpus; the forty-seventh member-claim form absent repo-wide; the thirty-sixth/thirty-seventh direction forms absent repo-wide). Ledger holds at 46.'
+    cross_references:
+      - 'm638 (this file, mechanism_638_ina_fried_axios_meta_muse_vs_apple_ambient_ai_register_sep08_sep10): temporal extension; carried arms un-rescored per #807.'
+      - '#807 (carried-score discipline precedent).'
+      - '#503 (excerpt-tier evidence precedent).'
+      - '#663 (gradient-absent control-case family).'
+      - '#565 (anchor convention); #715 (novelty-grep discipline); #719 (doc-sync constants); #721 (log-hash followup); #795 (background-suite ownership).'
+    research_method: 'browser.search query sets this run: (1) Lily Hay Newman WIRED October 2026 Meta glasses AI (Connect-week relay context, no new pair); (2) Karissa Bell Engadget Meta smart glasses October 2026 (surfaced the m722 commit and Bell''s Sep-24 Gen-3/hologram-avatar news pieces, no new pair); (3) Boone Ashworth WIRED Meta glasses review October 2026 (surfaced m431/m442/m830 commits, no new Oct pair); (4) Cristina Criddle Financial Times FTC probe October 2026 (FTC-probe relay context, no Criddle byline); (5) Victoria Song The Verge smart glasses Meta October 2026 (surfaced m827 commit context, no new pair); (6) Ina Fried Axios Meta glasses AI October 2026 (surfaced the Muck Rack author page with the NEW "Meta needs you to believe it cares about privacy" headline); (7) quoted-phrase search on the headline (pinned the Sep-25 date via the TechNews database listing "September 25 - By Ina Fried" and the inlandnewstoday verbatim relay with body details). browser.open first-hand read: the full Muck Rack ina-fried author page (new Meta headline + dek, VR-headset hands-on, OpenAI safety-incidents item, Muse-power business item, carried Apple ambient-AI headline). 7 browser.search query sets + 1 browser.open. axios.com direct fetch policy-blocked (m638 precedent); no axios.com URLs constructed. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    novelty: 'SECOND dedicated Type B mechanism on Ina Fried (first: m638, iteration #673); FIRST m638 temporal-extension block on her journalists.yaml entry. Zero test_type_b_1158 files on disk (glob); no "Type B #1158" in git log (--grep); max numeric mechanism_id 925 in profiles/ pre-commit; zero numeric 926 mechanism keys in profiles/ pre-commit; zero underscore-form and dash-form 926 mechanism key strings repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1158 in key, no 926 substring); the "Meta needs you to believe it cares about privacy" headline zero-hit repo-wide pre-commit; two novel URLs zero-hit repo-wide pre-commit (technews.io database, inlandnewstoday relay); no #1158 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 61097/1482 pre-commit. FORTY-SEVENTH member-claim form absent repo-wide pre-commit; THIRTY-SIXTH/THIRTY-SEVENTH direction forms absent repo-wide pre-commit.'
+    artifact_readiness: 'No analysis.json update warranted: illustrative register pair only, manual tones, no empirical significance.'
   notes: 'Axios chief technology correspondent; see career block. Analytical value: Fried runs a dedicated consumer-AI-privacy series ("What They Know About You") covering OpenAI, Anthropic, Meta, and Google symmetrically, which makes her cross-entity register choices a clean Type B target once evidence cleared the first-party-URL bar.'
 
 
