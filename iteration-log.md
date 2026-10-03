@@ -42836,12 +42836,12 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 - doc-sync: 0ce1314a8f60dbb7d644099dfe282b1e04464acf
 - log-hash: this commit (terminal per #721)
 
-## #1162 Type A: m928 Gizmodo x Snap-vs-Xreal Sep-23-2026 comparison hands-on (Kyle Barr, Snapdragon Summit) vs carried Gizmodo x Meta arms - comparative sobriety register; Xreal arm +0.10 vs m577 Meta band -0.617 -> +0.717 illustrative (same magnitude as m748's Snap-minus-Meta +0.717); Xreal arm +0.10 vs m748 Snap +0.10 -> 0.00 near-null (symmetric non-Meta wearable band); explicit Qualcomm vendor-paid-travel disclosure extends m919 descriptively on the PRESENT-disclosure side; NOT a falsification-family member (temporal replication per #1143); ledger holds at 46 - Type A THIRD leg of the 1160-1164 window (Oct 2 2026, 10:00 PM PDT; main commit ae9911ce / anchor e671ad6d / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61421/1486 -> 61478/1487 (+55/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1162 Type A: m928 Gizmodo x Snap-vs-Xreal Sep-23-2026 comparison hands-on (Kyle Barr, Snapdragon Summit) vs carried Gizmodo x Meta arms - comparative sobriety register; Xreal arm +0.10 vs m577 Meta band -0.617 -> +0.717 illustrative (same magnitude as m748's Snap-minus-Meta +0.717); Xreal arm +0.10 vs m748 Snap +0.10 -> 0.00 near-null (symmetric non-Meta wearable band); explicit Qualcomm vendor-paid-travel disclosure extends m919 descriptively on the PRESENT-disclosure side; NOT a falsification-family member (temporal replication per #1143); ledger holds at 46 - Type A THIRD leg of the 1160-1164 window (Oct 2 2026, 10:00 PM PDT; main commit ae9911ce / anchor e671ad6d / doc-sync 25aa947b; log-hash followup registers all hashes here per #721 (this commit); doc-sync 61421/1486 -> 61478/1487 (+55/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - main: ae9911cef7da1b39aa3352b3a86442efc73fae71
 - anchor: e671ad6d67438443185685c52563ff1f1d7c245c (self-anchor per #565)
-- doc-sync: TBD
+- doc-sync: 25aa947bd2f6fe8bcde10c422188d8aed2e4eda3
 - log-hash: TBD (terminal per #721)
 
 ### Rotation transparency
@@ -42880,5 +42880,5 @@ Push status (this run, Oct 2 2026 ~09:xx PDT): main + anchor followup pushed and
 ### Log-hash followup (per #721, terminal)
 - main: ae9911cef7da1b39aa3352b3a86442efc73fae71
 - anchor: e671ad6d67438443185685c52563ff1f1d7c245c (self-anchor per #565)
-- doc-sync: TBD
+- doc-sync: 25aa947bd2f6fe8bcde10c422188d8aed2e4eda3
 - log-hash: this commit (terminal per #721)
