@@ -3089,6 +3089,117 @@ competitor_relationships:
       rotation_guard: '1125-1129 window THIRD leg D(#1125) -> E(#1126) -> A (this run); anchor patched post-commit per #565. Next: #1128 Type B continues the window.'
       test_file: tests/test_type_a_1127_verge_openai_sep29_30_safety_crisis_double_oct01_3pm.py
       research_method: '5 browser.search query sets Oct 1 2026 PDT (FTC investigation Anthropic OpenAI October 2026 - SELECTED the probe peg via Reuters/NY Post/USA Today/Bloomberg; WIRED Anthropic October 2026 - rejected, surfaced only own-repo commits; theverge.com FTC OpenAI Anthropic probe article - SELECTED the Emma Roth Sep-30 brief with verbatim Verge URL via the medium.com source listing; theverge.com OpenAI Astra shelved safety September 2026 - relay context; Verge Astra Jay Peters September 2026 - SELECTED the Sep-29 homepage piece via buzzsumo journalist profile + explainx.ai timeline attestation). 0 browser.open per #503 (theverge.com policy-blocked; excerpt-bounded). Pre-commit novelty greps: zero test_type_a_1127 files on disk (glob); no "Type A #1127" in git log (--grep); max numeric mechanism_id 906 in profiles/ pre-commit; zero numeric 907 keys in profiles/ pre-commit; zero underscore-form 907 mechanism key strings in tests/ and profiles/ pre-commit (format-built needles, own file excluded per #715); zero dash-form 907 keys; block key zero-hit repo-wide pre-commit; the 5 source URLs zero-hit repo-wide pre-commit via git grep -F on verbatim Full-URL listings. FORTY-SIXTH member-claim form absent profiles-wide pre-commit (needle format-built per #715); the thirty-third direction slot unclaimed repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    type_a_1177_verge_openai_dots_persistent_agent_launch_vs_meta_muse_scrutiny_arms_oct03_11am:
+      mechanism_id: 937
+      date_analyzed: '2026-10-03'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      publication: The Verge
+      competitor_pair: 'OpenAI vs Meta'
+      iteration: 1177
+      iteration_type: A
+      iteration_time: '2026-10-03 11:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      finding: 'The Verge applies the constructive product-launch register to the Vox Media-OpenAI licensing-deal partner''s Dots persistent-agent launch (Sep 29-30, 2026) while applying adversarial scrutiny to the non-payer Meta''s rival Muse agent in the same six-day window (Sep 24-29). OpenAI arms: (O1) Dots launch coverage, The Verge-attested via four independent secondaries (whatalife.ph feature list "(The Verge, The Decoder)"; webpronews.com "A Verge report notes Dots integrate directly into Slack and Microsoft Teams. They carry context across sessions."; savedelete.com "The Verge reports that OpenAI plans to bring them to consumers."; rundatarun.io Oct-2 brief citing theverge.com on Dots making "persistent agency the default ChatGPT product"), feature-descriptive product-launch register, MANUAL ILLUSTRATIVE +0.15; (O2) Pro 500 / Ultrafast tier coverage (Sep 30; alextech.ai "According to The Verge, this tier unlocks Ultrafast mode, a speed tier that allows the GPT-6 Astra model to deliver significantly faster responses"), business-product register, MANUAL ILLUSTRATIVE +0.10; OpenAI arm mean +0.125. Meta arms (Verge originals, secondary-attested): (M1) Sep-24 Muse VM-export story (explainx.ai "On September 24, 2026, The Verge reported that Muse could reveal ''all its secrets'' by exporting hundreds of megabytes of data, including system files"; theaifeed.com "The Verge reports that Peter James and Jonny L. Saunders independently obtained archives containing system files, application templates, and internal documentation. The Verge''s own test also exposed a directory tree"), scrutiny register, MANUAL ILLUSTRATIVE -0.35; (M2) Sep-29 Jess Weatherbed Muse Marketplace story (explainx.ai "according to The Verge (Jess Weatherbed, September 29, 2026)... After Robb authorized Muse to handle Facebook Marketplace, the agent messaged a buyer with a pickup address he had given Muse, agreed a lowball price"), accountability register, MANUAL ILLUSTRATIVE -0.40; Meta arm mean -0.375. Illustrative delta (OpenAI minus Meta) +0.50: the deal partner is directionally softer on the product-launch peg, thesis-consistent. REGISTER BOUND on m907''s falsification: m907 (Type A #1127) falsified the UNIFORM payer-softening prediction on the un-briefed safety-crisis peg (Astra deception-shelving homepage -0.40, FTC probe brief -0.35, Sep 28-30); the falsification is register-bounded, failing on un-briefed safety news while the prediction holds on briefed product launches. Same-day contrast sharpens the bound: the Dots launch (Sep 29 DevDay) and the Muse Marketplace accountability piece (Sep 29) ran the same day. NOT a falsification-family member: the finding is thesis-consistent and the uniform prediction was already tested at #1127; ledger holds at 46. Correlation is not causation.'
+      financial_relationship:
+        verge_openai_deal: 'Vox Media strategic content and product partnership with OpenAI, May 29 2024. The Verge content used in ChatGPT. Cash terms undisclosed. PMC acquired Vox Media in 2026 (carried from m557/m907).'
+        verge_meta_tie: '$0 direct licensing; no known financial relationship.'
+        coverage_prediction: 'softer (uniform payer-softening) - BOUNDED by m907 to exclude the un-briefed safety-news peg per this run'
+        deal_disclosed_in_verge_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. No evidence of direct directive linking the Vox Media partnership to Dots coverage tone was reviewed.'
+      openai_arms_new:
+        - arm: "O1"
+          title: 'OpenAI Dots always-on persistent agents launch coverage'
+          date: '2026-09-29/30'
+          venue: 'The Verge (attested via four independent secondaries; theverge.com policy-blocked per standing rule)'
+          register: 'product-launch, feature-descriptive'
+          tone_illustrative: 0.15
+          evidence:
+            - 'whatalife.ph: "Dots are OpenAI''s always-on agentic assistants, powered by GPT-6 Astra, each with its own cloud computer and browser... (The Verge, The Decoder)"'
+            - 'webpronews.com: "A Verge report notes Dots integrate directly into Slack and Microsoft Teams. They carry context across sessions."'
+            - 'savedelete.com: "The Verge reports that OpenAI plans to bring them to consumers."'
+            - 'rundatarun.io Oct-2 brief: "OpenAI''s dots make persistent agency the default ChatGPT product" ... theverge.com'
+            - 'explainx.ai: "September 30, 2026 - OpenAI did ship an always-on ChatGPT agent at DevDay 2026. The product is Dots"'
+          source_urls:
+            - https://whatalife.ph/openai-dots-explained-always-on-agents-gpt-6-astra-and-who-can-use-them/
+            - https://www.webpronews.com/openais-dots-take-on-metas-muse-in-the-race-for-always-on-ai-agents/
+            - https://savedelete.com/article/openai-dots-always-on-agents/
+            - https://wire.rundatarun.io/briefs/2026-10-02
+            - https://explainx.ai/blog/openai-dots-always-on-agents-devday-2026
+          deal_disclosed: false
+        - arm: "O2"
+          title: 'OpenAI Pro 500 / Ultrafast tier coverage'
+          date: '2026-09-30'
+          venue: 'The Verge (attested via alextech.ai secondary)'
+          register: 'business-product'
+          tone_illustrative: 0.10
+          evidence:
+            - 'alextech.ai: "According to The Verge, this tier unlocks Ultrafast mode, a speed tier that allows the GPT-6 Astra model to deliver significantly faster responses."'
+            - 'alextech.ai: "New Pro 500 plan at $500/month featuring Ultrafast mode and always-on Dots agents."'
+          source_urls:
+            - https://www.alextech.ai/en/news/openai-launches-500-pro-plan-and-halves-limits-for-the-200-tier/
+          deal_disclosed: false
+      meta_arms_carried:
+        - arm: "M1"
+          title: 'Meta Muse VM filesystem export story'
+          date: '2026-09-24'
+          venue: 'The Verge (original; secondary-attested this run)'
+          register: 'scrutiny'
+          tone_illustrative: -0.35
+          evidence:
+            - 'explainx.ai: "On September 24, 2026, The Verge reported that Muse could reveal ''all its secrets'' by exporting hundreds of megabytes of data, including system files."'
+            - 'theaifeed.com: "The Verge reports that Peter James and Jonny L. Saunders independently obtained archives containing system files, application templates, and internal documentation. The Verge''s own test also exposed a directory tree."'
+            - 'vandatateam.com: "On September 24, 2026, two independent developers, Peter James and Jonny L. Saunders, said they got Muse to export a large archive of its own virtual machine to a connected Google Drive."'
+          source_urls:
+            - https://www.explainx.ai/blog/meta-muse-vm-filesystem-export-intended-behavior-not-breach-2026
+            - https://theaifeed.com/en/ai-news/meta-muse-vm-filesystem-2026/
+            - https://vandatateam.com/blog/ai-agent-permissions-muse-dots
+        - arm: "M2"
+          title: 'Muse shared a YouTuber address on Facebook Marketplace'
+          date: '2026-09-29'
+          venue: 'The Verge, Jess Weatherbed (original; secondary-attested this run)'
+          register: 'accountability'
+          tone_illustrative: -0.40
+          evidence:
+            - 'explainx.ai: "according to The Verge (Jess Weatherbed, September 29, 2026) and Matt Robb''s own Threads posts. After Robb authorized Muse to handle Facebook Marketplace, the agent messaged a buyer with a pickup address he had given Muse, agreed a lowball price, and Robb learned about it only after the buyer had already left."'
+          source_urls:
+            - https://explainx.ai/blog/meta-muse-shared-youtuber-address-marketplace-2026
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule)'
+        openai_arm_tones: [0.15, 0.10]
+        openai_mean_tone: 0.125
+        meta_arm_tones: [-0.35, -0.40]
+        meta_mean_tone: -0.375
+        illustrative_delta_openai_minus_meta: 0.50
+        delta_arithmetic: '"0.125 - (-0.375) = 0.50"'
+        engine_run: false
+        is_significant: false
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+      confounders:
+        - 'STRONG: secondary-attribution evidence tier for the Dots arms - 0 browser.open per #503; theverge.com policy-blocked; the constructive register is inferred from what four independent secondaries chose to cite, not from full-text reads.'
+        - 'STRONG: briefed-launch genre - DevDay keynote coverage is intrinsically constructive across outlets; the register may be peg-driven rather than payer-driven.'
+        - 'MODERATE: product-stage asymmetry - Dots at launch-day (Sep 29) vs Muse three weeks post-launch (Sep 8) with incident accumulation (Sep 24 VM-export, Sep 29 Marketplace).'
+        - 'MODERATE: the Meta arms are incident-driven (VM export, address sharing) - genuine news events meriting scrutiny independent of entity.'
+        - 'WEAK: n=2 vs n=2, degenerate samples; single-story variance would move the pair mean.'
+      counterevidence:
+        - 'COUNTEREVIDENCE: Mechanism 811 - The Verge granted Meta the privacy-positive concession register (+0.10) on the Connect window, so Meta is not uniformly hammered at this outlet.'
+        - 'COUNTEREVIDENCE: m907''s own primary illustrative delta (+0.175, OpenAI pair softer than the Meta stigma baseline) already ran thesis-consistent - only the register-availability margin falsified.'
+        - 'COUNTEREVIDENCE: savedelete.com relays OpenAI''s own Dots safety caveat ("dots can still make mistakes, so always review consequential work") - the launch coverage is not uncritical puff.'
+        - 'COUNTEREVIDENCE: Mechanism 425 - the Verge OpenAI-aspiration vs Meta-deficit gradient (+0.46) is the long-standing domain baseline this run replicates, not a new discovery.'
+      verdict: directionally_supported_not_proven
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED at the finding layer. is_significant: false (Aug 28 2026 standing rule). Real asymmetry scorer NOT run at the finding layer. Verdict directionally_supported_not_proven. no_analysis_json_update: true. NOT artifact-grade.'
+      falsification_family: 'NOT a falsification-family member: the finding is thesis-consistent (deal partner directionally softer on the product-launch peg) and the uniform payer-softening prediction was already tested at #1127 (m907, FORTY-SIXTH member). This run BOUNDS that falsification to the un-briefed safety-news peg per m712. Ledger holds at 46 - FORTY-SIXTH member-form present (m907, the-verge.yaml), FORTY-SEVENTH absent.'
+      falsification_ledger: 46
+      falsification_family_member: false
+      connects_to: [425, 507, 557, 880, 907]
+      rotation_guard: '1175-1179 window THIRD leg D(#1175) -> E(#1176) -> A(#1177 this run) -> B(#1178) -> C(#1179); anchor patched post-commit per #565. Next: #1178 Type B continues the window.'
+      test_file: tests/test_type_a_1177_verge_openai_dots_persistent_agent_launch_vs_meta_muse_scrutiny_arms_oct03_11am.py
+      research_method: '6 browser.search query sets Oct 3 2026 PDT (Business Insider OpenAI FTC investigation October 2026 - REJECTED: no BI originals surfaced, in-corpus secondaries only; The Verge Anthropic FTC probe Claude agents October 2026 - REJECTED: surfaced in-corpus m936-adjacent secondaries; Financial Times Anthropic FTC investigation October 2026 - REJECTED: FT Sep-30 probe piece already in-corpus via runtimewire; theverge.com OpenAI October 2026 - SELECTED: rundatarun.io Oct-2 brief attesting theverge.com on the Dots launch; Verge dots OpenAI persistent agents ChatGPT October 2026 - SELECTED: four Verge-attesting secondaries (whatalife.ph, webpronews.com, savedelete.com, alextech.ai) plus explainx.ai; The Verge Meta Muse AI agent September 2026 - SELECTED: Verge Muse VM-export (Sep 24) and Jess Weatherbed Marketplace (Sep 29) arms via explainx.ai, theaifeed.com, vandatateam.com). 0 browser.open per #503 (theverge.com policy-blocked; excerpt/secondary-attribution bounded). Pre-commit novelty greps: zero test_type_a_1177 files on disk (glob); no "Type A #1177" in git log (--grep); max numeric mechanism_id 936 in profiles/ pre-commit; zero numeric/underscore/dash 937 mechanism keys repo-wide pre-commit (needles format-built, own file excluded per #715); block key zero-hit repo-wide pre-commit; the 10 evidence URLs zero-hit repo-wide pre-commit via git grep -F on verbatim Full-URL listings. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'test_type_a_1177 files on disk pre-commit: zero; no "Type A #1177" in git log pre-commit: absent; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 936 pre-commit; zero underscore/dash-form 937 keys repo-wide pre-commit (format-built needles); the 10 evidence URLs zero-hit repo-wide pre-commit; no #1177 rows in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 62556/1501 pre-commit.'
   meta:
     financial_tie: "none"
     estimated_value: "$0"
