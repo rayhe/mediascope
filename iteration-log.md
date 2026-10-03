@@ -43169,5 +43169,5 @@ still pending).
 Commits (pushed to rayhe/mediascope-asymmetry, each ls-remote-verified):
 - main: 65428346 - Type A #1167: m931 (test file + profiles/gizmodo.yaml)
 - anchor: c10765bf - ANCHORED_SHA pinned to 65428346 per #565
-- doc-sync: this commit (README + ARCHITECTURE + iteration-log + constants per #719)
-- log-hash: terminal followup per #721 (space-form title)
+- doc-sync: 007587e3 - README + ARCHITECTURE + iteration-log + constants per #719
+- log-hash: this commit (terminal per #721)
