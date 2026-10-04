@@ -44630,8 +44630,8 @@ Push status (this run, Oct 4 2026 ~08:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `db210690` (db210690da329590d30fd9dafc7eb264b4e06b0c) - verified via git rev-parse
 - Anchor followup `66691ddd` (66691ddd; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `DOCSYNC_SHORT` (README 64524/1527 -> 64599/1528; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: LOGHASH_SHORT (terminal per #721) - registers main db210690 / anchor 66691ddd / doc-sync DOCSYNC_SHORT here
+- Doc-sync `d2c5a1ab` (README 64524/1527 -> 64599/1528; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Log-hash followup: this commit (terminal per #721) - registers main db210690 / anchor 66691ddd / doc-sync d2c5a1ab here
 
 ### Rotation transparency
 - This run is iteration #1203 Type B, the FOURTH leg of the 1200-1204 window (D #1200 -> E #1201 -> A #1202 -> B #1203 -> C #1204).
