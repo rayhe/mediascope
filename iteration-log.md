@@ -44348,7 +44348,7 @@ Push status (this run, Oct 4 2026 ~02:xx PDT): main + anchor followup pushed and
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1197 Type A continues the window; the #1195 background-suite verdict belongs to #1200 per #795.
 ---
 ---
-## #1197 Type A: m949 MIT TR x OpenAI Sep-28/30 Astra-cancellation + Chen-interview register vs carried MIT TR x Meta Sep-23 India havoc (OpenAI mean -0.20 IDENTICAL to m637; Meta mean -0.575; illustrative delta +0.375; cross-publication Astra strand FIVE pubs; NOT a falsification-family member, ledger holds at 47; second MIT TR x OpenAI Type A) - Type A THIRD leg of the 1195-1199 window (Oct 4 2026, 03:00 AM PDT; main commit fce10d69 / anchor TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync TBD; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1197 Type A: m949 MIT TR x OpenAI Sep-28/30 Astra-cancellation + Chen-interview register vs carried MIT TR x Meta Sep-23 India havoc (OpenAI mean -0.20 IDENTICAL to m637; Meta mean -0.575; illustrative delta +0.375; cross-publication Astra strand FIVE pubs; NOT a falsification-family member, ledger holds at 47; second MIT TR x OpenAI Type A) - Type A THIRD leg of the 1195-1199 window (Oct 4 2026, 03:00 AM PDT; main commit fce10d69 / anchor 7ce32f33; log-hash followup registers all hashes here per #721 (this commit); doc-sync 8c48b585; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
 - SECOND dedicated MIT TR x OpenAI Type A (after mechanism 637, Sep 11): on the Sep 28-30 2026 safety-crisis peg set (GPT-6.1 Astra October-launch cancellation over deception findings; OpenAI chief research officer Mark Chen interview on the Hugging Face / Australia rogue-agent fallout), MIT Technology Review holds its accountability-skeptical register at the same illustrative position as m637.
@@ -44377,7 +44377,7 @@ Push status (this run, Oct 4 2026 ~03:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `fce10d69` (fce10d691a8c59ca9d778bb0f69e190e6d7756fe) - verified via git rev-parse
 - Anchor followup `7ce32f33` (7ce32f334f83a55b664a320991c1e751bf8a3fbc; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 64066/1521 -> 64134/1522; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
+- Doc-sync `8c48b585` (8c48b58535dd0b0f9d9f6be34b2686f7161074b0; README 64066/1521 -> 64134/1522; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main / anchor / doc-sync hashes in the #1197 log entry
 
 ### Rotation transparency
