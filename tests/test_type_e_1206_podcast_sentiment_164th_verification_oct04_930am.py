@@ -484,14 +484,18 @@ class TestMechanismNovelty:
 
     def test_no_type_e_1206_in_git_log_pre_commit(self):
         # Pre-commit this grep was empty (verified in the in-gate).
-        # Post-commit the ONLY matches are this run's own commits
-        # (main/anchor/doc-sync/log-hash/corrective), whose messages
-        # carry the run's own iteration subject - the #1191-class
-        # self-trip. The pin's substance - no PRIOR run committed this
-        # run's iteration - holds. Re-pinned post-main-commit in the
-        # corrective followup per #721 to the own-commit-set form.
+        # Post-commit the ONLY matches are this run's own four commits
+        # (main/anchor/doc-sync/log-hash), whose messages carry the
+        # run's own iteration subject - the #1191-class self-trip. The
+        # pin's substance - no PRIOR run committed this run's iteration
+        # - holds. Re-pinned post-main-commit in the corrective
+        # followup per #721 to the own-commit-set form.
         out = _git("log", "--format=%H %s", "--grep=Type E #1206").stdout
-        assert out.strip() == "", out.strip()
+        own = {"be56e254", "9314bab6", "a4870804", "390d4a56"}
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own, line
 
     def test_zero_next_number_keys_all_forms(self):
         # Numeric (profiles/ scope), underscore and dash (profiles/ +
@@ -536,10 +540,11 @@ class TestGuiltyFeminist:
         # The verbatim key carries 35 pre-commit hits (the #1196-file
         # family + the #1201 file, verified in the in-gate): it
         # canonicalizes to the scheme-stripped in-corpus form per the
-        # #1151 precedent - a re-surface, not a new key. Pre-commit
-        # form asserted here; re-pinned post-main-commit in the
-        # corrective followup per #721 to the post-main-commit file
-        # set (the pre-commit four + this run's own file).
+        # #1151 precedent - a re-surface, not a new key. Re-pinned
+        # post-main-commit in the corrective followup per #721 to the
+        # post-main-commit file set (the pre-commit four + this run's
+        # own file, whose docstring quotes the verbatim form for
+        # logging).
         hits = _tracked_grep_files(SXSW_VERBATIM)
         assert sorted(hits) == sorted([
             "HEAD:podcast-sentiment.md",
@@ -548,6 +553,7 @@ class TestGuiltyFeminist:
             "162nd_verification_oct04_2am.py",
             "HEAD:tests/test_type_e_1201_podcast_sentiment_"
             "163rd_verification_oct04_7am.py",
+            "HEAD:tests/" + OWN_BASENAME,
         ]), hits
         assert _corpus_hit_count("youtube.com/watch?v=IVVk2wTR5xE") >= 1
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
@@ -677,11 +683,13 @@ class TestPressSurfaces:
         # The swapupdate.in Hans Anders mirror is new-to-corpus: ZERO
         # pre-commit hits (verified in the in-gate). New outlet
         # mirror of the in-corpus Oct-2 Reuters story, not a new
-        # story. Pre-commit form asserted here; re-pinned
-        # post-main-commit in the corrective followup per #721 (this
-        # run's own file becomes the committed hit).
+        # story. Re-pinned post-main-commit in the corrective
+        # followup per #721: this run's own file is the only committed
+        # hit for the new key (the zero pre-commit hit count was
+        # verified in the in-gate).
         assert len(PRESS_NEW_KEYS) == 1
-        assert _corpus_hit_count(PRESS_NEW_KEYS[0]) == 0
+        assert _tracked_grep_files(PRESS_NEW_KEYS[0]) == [
+            "HEAD:tests/" + OWN_BASENAME]
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "ENDS this run" in src
 
@@ -849,16 +857,19 @@ class TestStalenessPins:
         # predecessor-file presence pin, and the next-leg pin. ALL
         # EIGHT pass pre-commit (verified in the in-gate: 8 passed).
         # Re-pinned post-main-commit in the corrective followup per
-        # #721 to the #1191-class self-trip form (1 failed, 7 passed;
-        # the single failure is the no-Type-E-#1206-in-git-log pin
-        # tripping on this run's own main commit, by design - the
-        # #1205 block is read-only to this run).
+        # #721 to the #1191-class self-trip form: 7 of the 8 pass; the
+        # eighth, test_no_type_e_1206_in_git_log_pin, fails BY DESIGN
+        # on this run's own main commit (the #1205 block is read-only
+        # to this run).
         res = self._class_run(
             D1205_FILE,
             "TestGuardLifecycle1205",
         )
-        assert res.returncode == 0, res.stdout[-2000:]
-        assert "8 passed" in res.stdout, res.stdout[-2000:]
+        assert res.returncode != 0, res.stdout[-2000:]
+        assert "1 failed, 7 passed" in res.stdout, res.stdout[-2000:]
+        assert (
+            "test_no_type_e_1206_in_git_log_pin" in res.stdout
+        ), res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
