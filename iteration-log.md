@@ -44784,7 +44784,7 @@ Push status (this run, Oct 4 2026 ~10:xx PDT): main + anchor followup pushed and
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
 
-## #1208 Type B: m956 Blake Montgomery (Guardian) OpenAI "promptly goes rogue" launch mockery (-0.35 MANUAL ILLUSTRATIVE, NEW Sep-8 arm, solo byline, mirror-attested) vs Meta $18bn teen-harm settlement reckoning (-0.40, NEW Aug-26 arm, co-byline Kerr); illustrative delta (OpenAI minus Meta) +0.05 near-null symmetric adversarial; Sep-28 cross-entity "spiraling out of control" corroborates within-bylinesymmetry; FORTY-NINTH falsification-family member (ledger 48->49); Guardian x OpenAI deal (mechanism_514) buys no register softness from this reporter; INVERTS the #513 Kerr directional-support finding at the same outlet under the same deal - Type B FOURTH leg of the 1205-1209 window (Oct 4 2026, 11:00 AM PDT; main commit TBD / anchor TBD / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 64933/1532 -> 65006/1533 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1208 Type B: m956 Blake Montgomery (Guardian) OpenAI "promptly goes rogue" launch mockery (-0.35 MANUAL ILLUSTRATIVE, NEW Sep-8 arm, solo byline, mirror-attested) vs Meta $18bn teen-harm settlement reckoning (-0.40, NEW Aug-26 arm, co-byline Kerr); illustrative delta (OpenAI minus Meta) +0.05 near-null symmetric adversarial; Sep-28 cross-entity "spiraling out of control" corroborates within-bylinesymmetry; FORTY-NINTH falsification-family member (ledger 48->49); Guardian x OpenAI deal (mechanism_514) buys no register softness from this reporter; INVERTS the #513 Kerr directional-support finding at the same outlet under the same deal - Type B FOURTH leg of the 1205-1209 window (Oct 4 2026, 11:00 AM PDT; main commit 33e4af12 / anchor 36e4cba1 / doc-sync a9a7fba3; log-hash followup registers all hashes here per #721 (this commit); doc-sync 64933/1532 -> 65006/1533 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
 - m956 (profiles/careers/journalists.yaml, NEW top-level `blake_montgomery_type_b` key per the #643 convention, `mechanism_id: 956` field form, mechanism_ids [956]): FIRST dedicated Type B mechanism on Blake Montgomery (Guardian US tech editor, TechScape newsletter host; career-profile list entry pre-exists under `journalists:`). JOURNALIST-LEVEL FALSIFICATION of the uniform payer-softening prediction.
@@ -44817,9 +44817,9 @@ README stats table 64933/1532 -> 65006/1533 (+73/+1); README test-table row; doc
 Push status (this run, Oct 4 2026 ~11:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followup pushed after.
 
 ### Commit hashes
-- Main commit `TBD` - verified via git rev-parse
-- Anchor followup `TBD` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 64933/1532 -> 65006/1533; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Main commit `33e4af12` (33e4af127738656a3f4a473d0b89061aafda13c8) - verified via git rev-parse
+- Anchor followup `36e4cba1` (36e4cba1ddfd0fac9af874133e31d852a433252e; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `a9a7fba3` (a9a7fba366545b7de4b493107afc78f0881ba3d9; README 64933/1532 -> 65006/1533; test-table row; ARCHITECTURE tree row; iteration-log entry)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
