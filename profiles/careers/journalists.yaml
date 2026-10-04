@@ -26990,3 +26990,98 @@ eli_tan:
       artifact_readiness: 'No analysis.json update warranted. Manual-illustrative journalist-level within-piece pin; descriptive only, not artifact-grade.'
       background_suite_status: 'CHECKED ONLY per #795 - the #1185-launched full suite (goal hidden_files type_d_1185_full_suite.log) is RUNNING at this run''s check (log 6950 bytes, last write Oct 3 20:03 PDT, progress 9%, live pytest processes at ps scan). This run checked only (no Type B #1188 / m944 markers in the suite log); does not touch it. Verdict belongs to #1190 per #795.'
       in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.'
+
+jeff_meyer:
+  name: Jeff Meyer
+  current_role: Website Editor
+  current_publication: Camera Jabber
+  publication_owner: Jabber Digital Media Ltd
+  beat: [photography, cameras, wearables]
+  career_history: 'Camera Jabber website editor (Bath, UK; Jabber Digital Media Ltd). Photography Week editor since 2012 (per the camerajabber photography-books guide). Runs the camerajabber.com/author/jeff/ page (490 articles at the Oct-4-2026 check); muckrack profile attests Camera Jabber contributor plus freelance content-strategy and editor roles.'
+  notes: 'Type B #1193 (Oct 4 2026): mechanism 947 within-piece cross-entity register divergence - Camera Jabber Sep-24-2026 Snap Specs piece: Meta Ray-Ban disguise-critique arm (-0.30 MANUAL ILLUSTRATIVE) vs Snap Specs conspicuous-design-praise arm (+0.25), illustrative delta (Snap minus Meta) +0.55. Register follows the design peg (concealment vs conspicuousness), not money: no-deal outlet. NOT a falsification-family member; ledger holds at 46.'
+  mechanism_ids: [947]
+  source_urls:
+  - https://camerajabber.com/photography-news/snaps-chunky-specs-ar-glasses-take-a-different-line-on-the-camera-glasses-backlash/
+  - https://muckrack.com/jeff-meyer/articles
+  - https://camerajabber.com/author/jeff/
+  competitor_coverage:
+    type_b_1193_jeff_meyer_camerajabber_snap_specs_conspicuous_vs_meta_rayban_disguise_within_piece:
+      iteration: 1193
+      mechanism_id: 947
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-04 00:00 PDT'
+      block_key: type_b_1193_jeff_meyer_camerajabber_snap_specs_conspicuous_vs_meta_rayban_disguise_within_piece
+      test_file: tests/test_type_b_1193_jeff_meyer_camerajabber_snap_specs_conspicuous_vs_meta_rayban_disguise_within_piece_oct04_12am.py
+      author: Kit (with Ray)
+      journalist: Jeff Meyer
+      publication: camera-jabber
+      window: '1190-1194 window FOURTH leg (D #1190 -> E #1191 -> A #1192 -> B #1193 -> C #1194)'
+      design: 'Type B journalist cross-entity tracking: FIRST dedicated Type B on Jeff Meyer (Camera Jabber website editor). Within-piece cross-entity register divergence: one piece, one journalist, one date - the Meta Ray-Ban arm carries privacy-backlash vocabulary (disguise is the problem) while the Snap Specs arm carries design-praise vocabulary (conspicuousness is the answer). Peg, genre, date, and reviewer all held constant; only the entity''s design philosophy varies.'
+      piece:
+        title: 'Snap''s chunky Specs AR glasses take a different line on the camera-glasses backlash'
+        url: https://camerajabber.com/photography-news/snaps-chunky-specs-ar-glasses-take-a-different-line-on-the-camera-glasses-backlash/
+        date: '2026-09-24'
+        date_note: 'Page body carries no visible date; search index attested Last Updated ~10 days before the Oct-4-2026 check; piece references Specs pre-orders (opened Sep 16-17 2026). Date disclosed as index-attested, never filled by guessing.'
+        byline: 'Jeff Meyer (byline attested via muckrack.com/jeff-meyer/articles + camerajabber.com/author/jeff/ author page; 490 articles at the Oct-4-2026 check)'
+        evidence_tier: 'FIRST-HAND full-text read via browser.open this run (1 browser.open; no paywall); arms quoted verbatim below.'
+      meta_arm:
+        entity: meta
+        product: 'Ray-Ban Meta smart glasses'
+        key_quotes:
+        - '"Camera glasses have had a rough time of it lately. Meta''s Ray-Bans work well but have drawn a steady backlash over the discomfort of not knowing when someone''s filming you."'
+        - '"Meta''s glasses look like ordinary sunglasses, which is exactly the problem for anyone standing in front of them - there''s no obvious sign a camera is running."'
+        register_notes: 'Privacy-backlash register: the product''s virtue (ordinary-sunglasses disguise) is re-read as the vice (covert filming). "work well" concedes function before the backlash clause lands.'
+        tone_MANUAL_ILLUSTRATIVE: -0.30
+        tone_basis: 'hand-assigned this run from first-hand read, MANUAL ILLUSTRATIVE'
+      snap_arm:
+        entity: snap
+        product: 'Snap Specs AR glasses ($2,195, pre-order)'
+        key_quotes:
+        - '"Snap''s answer, with its new Specs AR glasses now on pre-order, is a rather different one, and it''s not just the eye-watering price."'
+        - '"The Specs are unapologetically chunky, visibly a piece of technology on your face, and that''s the point: they announce themselves."'
+        - '"Rather than disguising the tech, Snap is making it conspicuous - the social contract being that if you can see the glasses, you know what they can do."'
+        - '"But as a statement about where wearable cameras and AR are heading - and about the privacy backlash the whole category is now having to answer - the Specs are worth knowing about."'
+        register_notes: 'Design-praise register: chunkiness (the aesthetic negative) is re-read as the privacy virtue (conspicuousness as honest social contract). The price caveat ("eye-watering" $2,195, 100k first run) is disclosed but carries no privacy vocabulary.'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        tone_basis: 'hand-assigned this run from first-hand read, MANUAL ILLUSTRATIVE'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule); engine NOT run at the finding layer; NOT artifact-grade'
+        meta_arm_tone: -0.30
+        snap_arm_tone: 0.25
+        illustrative_delta_snap_minus_meta: 0.55
+        delta_calc: '+0.25 - (-0.30) = +0.55'
+        engine_run: false
+        is_significant: false
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        note: 'Within one piece and one journalist, the privacy register lands harder on Meta (disguise-framed) than on Snap (conspicuousness-framed) - the register follows the design-philosophy peg, not the entity.'
+      financial_context: 'Camera Jabber: Jabber Digital Media Ltd (Bath, UK); a "three photographers" ad-supported operation per the site footer. Bounded searches this run surfaced NO Camera Jabber x Meta and NO Camera Jabber x Snap financial relationship (no content-licensing deal, no ad-revenue dependency documented). No payer-softening prediction is testable at this outlet.'
+      finding: 'Journalist-level BOUNDARY pin: within a single piece, Meyer applies privacy-backlash vocabulary to Meta''s disguise and design-praise vocabulary to Snap''s conspicuousness. The divergence is peg-driven (concealment vs conspicuousness is a genuine design-philosophy difference), not money-driven. This BOUNDS the financial theory at the journalist level: where a real non-financial differentiator exists, the register follows it. Joins the reporter-level boundary family (m593, #538).'
+      confounders:
+      - 'STRONG: within-piece co-production - the arms are not independent bylined pieces; the divergence is vocabulary selection inside one article, so the delta is a within-piece bound, not a cross-piece gradient.'
+      - 'STRONG: genuine product difference - Meta''s glasses are designed to look ordinary; Snap''s are deliberately conspicuous. The register maps to a real design fact, which is the boundary reading''s whole point.'
+      - 'MODERATE: single-author niche outlet - Camera Jabber is a three-photographer enthusiast site, not a mass-market publication; generalizability is bounded.'
+      - 'MODERATE: date attestation - index-attested ~Sep 24 2026, not page-body attested; disclosed.'
+      - 'WEAK: n=1 piece - one article, two arms; illustrative tones hand-assigned.'
+      counter_evidence:
+      - 'COUNTEREVIDENCE: The Meta arm opens with "work well" - function is conceded before the backlash clause; the register is not uniformly hostile.'
+      - 'COUNTEREVIDENCE: The Snap arm carries real caveats ($2,195 "eye-watering", 100k first run, "nobody''s had proper hands-on time yet") - the praise is bounded, not a puff piece.'
+      - 'COUNTEREVIDENCE: The piece''s "Why a photography site should note this" section frames the backlash as a category-wide problem ("the privacy backlash the whole category is now having to answer"), not a Meta-exclusive one.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; scorer: none; engine NOT run on the finding layer per the Aug 28 2026 standing rule.'
+      verdict: 'directionally_supported_not_proven: journalist-level within-piece register divergence. Meyer''s Sep-24-2026 Camera Jabber piece (-0.30 Meta / +0.25 Snap, MANUAL ILLUSTRATIVE, delta +0.55) applies privacy-backlash vocabulary to Meta''s disguise and design-praise to Snap''s conspicuousness, with peg, genre, date, and reviewer held constant.'
+      cautious_language_required: true
+      correlational_note: 'Correlation does not establish causation. The design-philosophy difference is the honest confound and the boundary reading''s basis.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'Ledger holds at 46. FORTY-SIXTH member-form present (m907, profiles/the-verge.yaml). FORTY-SEVENTH member-claim form absent repo-wide; FORTY-EIGHTH member-claim form absent repo-wide. Not a falsification-family member: no uniform payer-softening prediction is tested (no financial gradient at this outlet); this is a journalist-level boundary pin.'
+      connects_to: [935, 809, 731, 944, 920, 593, 538]
+      novelty: 'FIRST dedicated Type B mechanism on Jeff Meyer in journalists.yaml (zero jeff_meyer YAML key pre-commit, per the #643 convention).'
+      research_method: '14 browser.search query sets + 2 browser.open Oct 4 2026 PDT: (1) WIRED Meta-glasses review journalist - surfaced the repo''s own #528 Chokkattu commit (saturated) + the Sep-15 Parham "I Felt Super Violated" piece; (2-3) Parham byline attested via technewstube metadata; (4) Parham corpus check: culture beat, no competitor arms - REJECTED; (5-6) Snap Specs review byline hunt - Jay Peters saturated (m731), Hamish Hector saturated (m809), no clean bylined WIRED original; (7) BBC privacy-nightmare piece - no byline surfaced, REJECTED; (8-9) Chris Haslam WIRED reviewer surfaced (best-smart-glasses guide + Even G2 review) but no tracked-competitor arm - REJECTED; (10) Swedish Sama/Nairobi investigation - Svenska Dagbladet + Goteborgs-Posten, no single byline, REJECTED; (11-12) Dan Howley temporal-extension check - m920''s Sep-26 segment evidence RE-SURFACED (both URLs already in m920 source_urls), no fresh arm - REJECTED; (13) camerajabber Specs piece surfaced, SELECTED; (14) Jeff Meyer attested via muckrack + camerajabber.com/author/jeff/. browser.open: full-text first-hand read of the piece (throttled once on the WIRED gallery; 404 on a guessed camerajabber about URL - no evidence constructed from it). Pre-commit novelty greps per #715 as pinned in novelty.'
+      artifact_readiness: 'No analysis.json update warranted. Manual-illustrative journalist-level boundary pin; descriptive only.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1190-launched full suite (goal hidden_files type_d_1190_full_suite.log) is ALIVE at this run''s check (7865 bytes, last write Oct 4 00:05:08 PDT, progress ~11%, 2 F markers); NOT touched; its verdict belongs to #1195.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging only. Do NOT touch #1024 m846 (decision pending).'
