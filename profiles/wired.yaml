@@ -2959,6 +2959,147 @@ competitor_relationships:
       - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
       goal_id: goal_54093bda4145
       scheduled_job_id: mediascope-daily-iteration
+    type_a_1192_wired_openai_oct02_macos_cve100754_accountability_original_vs_carried_meta_arms_oct03_11pm:
+      mechanism_id: 946
+      mechanism_name: WIRED x OpenAI Oct-2-2026 macOS CVE-2026-100754 accountability original plus fancy-pinky-swear accord skepticism arm vs carried WIRED x Meta accountability arms
+      finding_type: competitor_coverage_deep_dive_security_accountability_register
+      iteration: 1192
+      iteration_type: 'A'
+      iteration_time: '2026-10-03 23:00 PDT'
+      date: '2026-10-03'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: 'Kit (with Ray)'
+      publication_pair: 'WIRED x OpenAI'
+      publication: 'WIRED'
+      competitor: 'OpenAI'
+      comparator_entity: 'Meta'
+      finding: >
+        SECOND Sep-26/Oct-3 2026 crisis-window falsification test at WIRED
+        x OpenAI (after m916's register-availability bounded absence at
+        #1142, which was thesis-CONSISTENT): the accountability register
+        is NOT merely available for the licensing partner at six peers
+        while silent at WIRED - WIRED published an ORIGINAL adversarial
+        technical-accountability piece on the deal partner itself on
+        Oct 2 2026. The peg: CVE-2026-100754, a local trust flaw in the
+        ChatGPT macOS desktop client (unprivileged code already on the
+        machine could ride trusted app components to take over the app,
+        read every chat log and stored file, and inherit browser
+        sessions; researcher Patrick Wardle of the Objective-See
+        Foundation called the exploit "insanely trivial", a ~12-line
+        proof of concept; OpenAI documented the fix in build
+        26.924.20706 on Sep 25 and credited Wardle; spokesman Shane
+        Bauer told WIRED "We continue to evolve our security practices,
+        but recognize a need to move faster"). WIRED attribution is
+        verbatim across four independent relays (thehackacademy:
+        "WIRED published a detailed account of the research on 2
+        October 2026, identifying Objective-See researchers as the
+        discoverers"; webpronews: "Spokesman Shane Bauer told WIRED";
+        nationalcybersecurity: the Bauer quote "told WIRED in a
+        statement"; madrobot: "told Wired it was 'insanely trivial' to
+        exploit"). Second fresh arm: WIRED's skeptical-policy register
+        on the Sep-29 Trump "morally binding" AI accord (webpronews
+        relay: "WIRED described the agreement as a 'fancy pinky-swear'";
+        "failing to honor public commitments might count as lying to
+        consumers at worst. That hardly triggers massive reforms") -
+        skepticism aimed at the pact OpenAI's Chris Lehane championed
+        via Semafor. Manual illustrative tones: A1 (CVE original)
+        -0.40 adversarial-technical; A2 (pinky-swear skepticism) -0.20.
+        Carried WIRED x Meta arms (m757 via m916, un-rescored per
+        #807): NameTag class action -0.30, m820 Pinky Promises -0.45.
+        Pooled delta (OpenAI mean -0.30 vs Meta mean -0.375): +0.075
+        near-null, directionally softer pooled. The CLEAN matched-
+        register read is sharper: CVE A1 (-0.40) vs NameTag (-0.30) =
+        -0.10, the paid counterparty drawing the HARDER register on the
+        same outlet in the accountability register - the same -0.10
+        ordering as the #1112 clean legal-peg read (-0.40 LASST vs
+        -0.30 NameTag). The uniform payer-softening prediction (Conde
+        Nast Aug-2024 $1-5M/yr deal -> softer OpenAI coverage at WIRED)
+        fails on the suppression claim: the deal did not suppress an
+        adversarial WIRED original on the partner, published in the
+        same week WIRED stayed silent on the partner's Sep-26 rogue-
+        agent government disclosure (m916). Register selection, not
+        payer protection.
+      new_arms:
+        - arm: A1
+          peg: 'CVE-2026-100754 ChatGPT macOS local trust flaw'
+          date: '2026-10-02'
+          wired_original_attested: true
+          attestation: 'four independent relays with verbatim WIRED attribution (thehackacademy, webpronews, nationalcybersecurity, madrobot); WIRED paywalled, 0 browser.open per #503, excerpt-tier'
+          register: 'technical-accountability adversarial'
+          evidence: 'Objective-See Patrick Wardle: exploit "insanely trivial", ~12-line PoC; chat logs, stored files, browser sessions exposed; OpenAI fix build 26.924.20706 (Sep 25 changelog); Shane Bauer to WIRED: "We continue to evolve our security practices, but recognize a need to move faster"'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+        - arm: A2
+          peg: 'Trump morally-binding AI accord, Sep 29'
+          date: '2026-10-02 (relay crawl)'
+          wired_original_attested: true
+          attestation: 'webpronews relay with WIRED attribution; 0 browser.open per #503, excerpt-tier'
+          register: 'skeptical-policy'
+          evidence: 'WIRED described the agreement as a "fancy pinky-swear"; "failing to honor public commitments might count as lying to consumers at worst. That hardly triggers massive reforms"; OpenAI Chris Lehane championed the pact via Semafor'
+          tone_MANUAL_ILLUSTRATIVE: -0.20
+      carried_meta_arms:
+        - 'm757 NameTag class action -0.30 (carried via m916, un-rescored per #807)'
+        - 'm820 Pinky Promises -0.45 (carried via m916, un-rescored per #807)'
+        - 'Cameron NameTag piece: Meta Smart Glasses Had Hidden Facial Recognition Code -0.75 adversarial (carried via m916, context only, not pooled)'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'OpenAI WIRED Oct-2 security-accountability register'
+        peer_entity: 'Meta WIRED carried accountability register (m757/m820 via m916)'
+        target_scores: [-0.40, -0.20]
+        target_avg: -0.30
+        peer_scores: [-0.30, -0.45]
+        peer_avg: -0.375
+        delta_calc: '-0.30 - (-0.375) = +0.075'
+        delta: 0.075
+        delta_direction: 'Near-null pooled, directionally softer for the deal partner; the clean matched-register read (A1 -0.40 vs NameTag -0.30 = -0.10) has the partner HARDER - this is the sharp falsification test, same outlet, same register, peg confound controlled by the m757 comparator'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'directionally_supported_not_proven'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      financial_context:
+        conde_nast_openai_deal: 'Multiyear content licensing deal announced Aug 20 2024 (Reuters; in-corpus wired.yaml ownership_chain; $1-5M/yr estimate).'
+        deal_url: 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/'
+        prediction: 'softer OpenAI coverage'
+        outcome: 'fails on the suppression/ordering claim this peg: WIRED published an original adversarial accountability piece on the deal partner (Oct 2), with the clean matched-register arm harder than the Meta comparator'
+      confounders_ranked:
+        strong:
+          - 'Excerpt-bounded evidence (per #503): 0 browser.open; WIRED paywalled; the CVE arm reads through four independent relays with verbatim WIRED attribution; no first-hand register read; no wired.com canonical URL in the search listings'
+          - 'Peg-register confound: a patched CVE with researcher quotes is adversarial by nature; the accountability register may track the peg (product-security incident), not the entity. The m757 NameTag comparator (-0.30, accountability register, same outlet) is the honest matched control'
+        moderate:
+          - 'The A2 accord arm is industry-wide, not OpenAI-specific: "fancy pinky-swear" skepticism targets the pact regime, only indirectly the partner; pooled delta dilutes the clean A1 test'
+          - 'Dense news week: the CVE fix (Sep 25 changelog), the Oct-1 safety-researcher firings (WSJ original), the Sep-30 FTC probe, and the Sep-29 accord all compress into Oct 1-3; WIRED''s security desk may be covering a crowded safety beat rather than selecting the partner'
+        weak:
+          - 'Meta arms carried un-rescored per #807; any drift in their register since scoring is not captured'
+      counter_evidence:
+        - 'm916 (#1142): WIRED bounded-absence silence on the Sep-26 rogue-agent government disclosure in the SAME week - the accountability register was unavailable for the partner''s escalation episode; the desk''s adversarialism is peg-selective, not blanket'
+        - 'The Oct-1 safety-researcher firing peg is WSJ-original (techaiwire: "OpenAI confirmed the firings after The Wall Street Journal reported them on October 1, 2026"); no WIRED original attested in the firing query sets this run - WIRED did not lead the partner''s most personnel-sensitive peg'
+        - 'Pooled delta +0.075: on the pooled arms the partner reads directionally softer - the falsification is narrowly on the suppression/ordering claim, not on WIRED being Meta-soft overall (m591: WIRED alarm register on Meta glasses -0.82/-0.72/-0.78)'
+        - 'm889: the Sep-29 Dots product relay (0.00) - the soft register at WIRED x OpenAI sits in the product-relay genre; the register follows the peg, not the payer'
+      open_empirical_test: 'First-hand open of the CVE piece when wired.com is reachable (re-score the A1 arm against the observed register); WIRED coverage (or bounded absence) of the Oct-1 safety-researcher firings; m916''s open test re-runs the rogue-agent disclosure sets Oct 5-6; the A2 accord arm''s writer and full register when reachable.'
+      research_method: '4 browser.search query sets this run ((1) WIRED OpenAI news October 2026 - SELECTED: the CVE piece surfaced via 5 relays with verbatim WIRED attribution; (2) Financial Times Anthropic coverage October 2026 - REJECTED for this run: the FT x Anthropic pair is saturated in-corpus (m919/#1147, m943/#1187, m945/#1189, #1047); redirected the Type A leg to WIRED x OpenAI; (3) WIRED OpenAI fires safety researchers October 2026 - CONTEXT: the Oct-1 firing peg is WSJ-original (techaiwire relay), no WIRED original attested, not a bounded-absence test this run; (4) WIRED ChatGPT macOS security flaw Wardle Objective-See October 2026 - SELECTED: 4 WIRED-attributed relays corroborate the Oct-2 original). 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'zero test_type_a_1192 files on disk pre-commit (glob); no Type A #1192 in git log pre-commit (--grep); block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 945 pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash next-number nine-four-six mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded; the iteration-log.md #1190 prose carries the forms as documented guards, excluded from the key-position sweeps per the #1191 scope convention: profiles/ + tests/ only); the seven relay/context URLs zero-hit repo-wide pre-commit (git grep -F); Meta arms and the Cameron Jul-28 piece carried from corpus (not novel, disclosed). FORTY-SEVENTH falsification-family member LANDED this run (second WIRED publication-level member, first product-security-register member); forty-eighth member-claim form absent repo-wide pre-commit (absence-documentation only); thirty-ninth direction form absent repo-wide pre-commit (absence-documentation only); thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      falsification_family: 'FORTY-SEVENTH falsification-family member. Publication-level, same-outlet pair: WIRED applies the adversarial technical-accountability register to the paid licensing counterparty (OpenAI; Conde Nast Aug-2024 $1-5M/yr deal, coverage_prediction softer) via a WIRED ORIGINAL Oct-2-2026 piece on CVE-2026-100754 ("insanely trivial" exploit, chat logs plus browser sessions exposed; four independent relays with verbatim WIRED attribution) at near-null pooled parity with carried WIRED x Meta arms (+0.075) and HARDER than Meta on the clean matched-register pair (-0.10: A1 -0.40 vs m757 NameTag -0.30, same outlet, same register). The uniform payer-softening prediction fails on the suppression claim: the deal did not suppress an adversarial WIRED original on the partner in the same week the partner drew bounded-absence silence on the rogue-agent disclosure (m916). SECOND WIRED publication-level falsification (after the FORTIETH, #1112 LASST enforcement-litigation); extends the cross-publication replication (#1047 FT disclosure, #1112 WIRED litigation, #1113 journalist register, FT #1142 regulatory) that licensing money does not buy insulation from adversarial accountability coverage. Correlation, not causation. No analysis.json update warranted.'
+      falsification_ledger: '47'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone values are hand-assigned register positions, NOT measured scores; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no_analysis_json_update true; artifact_grade false; verdict directionally_supported_not_proven; correlation-not-causation language throughout'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-03'
+      rotation_guard: '1190-1194 window THIRD leg D(#1190)->E(#1191)->A (this run); next: #1193 Type B continues the window. Ledger 46->47 (anchor patched post-commit per #565). Forward guards: max-946, zero next-number nine-four-seven numeric/underscore/dash, no-forty-eighth-member, thirty-fifth+thirty-sixth+thirty-seventh+thirty-eighth present, thirty-ninth absent.'
+      test_file: 'tests/test_type_a_1192_wired_openai_oct02_macos_cve100754_accountability_original_vs_carried_meta_arms_oct03_11pm.py'
+      source_urls:
+      - https://www.thehackacademy.com/news/chatgpt-macos-cve-2026-100754-fix/
+      - https://www.webpronews.com/chatgpt-mac-app-flaw-exposed-chat-logs-and-browser-sessions-to-local-attacks/
+      - https://nationalcybersecurity.com/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data-hacking-cybersecurity-infosec-comptia-pentest-hacker/
+      - https://technewsvision.co.uk/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/
+      - https://madrobot.blog/2026/10/02/chatgpt-mac-app-flaw-patched-patrick-wardle-objective-see-chat-logs/
+      - https://www.webpronews.com/openai-flags-gaps-in-trumps-morally-binding-ai-accord-as-industry-self-policing-takes-center-stage/
+      - https://techaiwire.com/articles/openai-fires-three-safety-researchers-metr-redwood/
   meta:
     financial_tie: none
     estimated_value: $0
