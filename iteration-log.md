@@ -44782,3 +44782,51 @@ Push status (this run, Oct 4 2026 ~10:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+
+## #1208 Type B: m956 Blake Montgomery (Guardian) OpenAI "promptly goes rogue" launch mockery (-0.35 MANUAL ILLUSTRATIVE, NEW Sep-8 arm, solo byline, mirror-attested) vs Meta $18bn teen-harm settlement reckoning (-0.40, NEW Aug-26 arm, co-byline Kerr); illustrative delta (OpenAI minus Meta) +0.05 near-null symmetric adversarial; Sep-28 cross-entity "spiraling out of control" corroborates within-bylinesymmetry; FORTY-NINTH falsification-family member (ledger 48->49); Guardian x OpenAI deal (mechanism_514) buys no register softness from this reporter; INVERTS the #513 Kerr directional-support finding at the same outlet under the same deal - Type B FOURTH leg of the 1205-1209 window (Oct 4 2026, 11:00 AM PDT; main commit TBD / anchor TBD / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 64933/1532 -> 65006/1533 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Finding summary
+- m956 (profiles/careers/journalists.yaml, NEW top-level `blake_montgomery_type_b` key per the #643 convention, `mechanism_id: 956` field form, mechanism_ids [956]): FIRST dedicated Type B mechanism on Blake Montgomery (Guardian US tech editor, TechScape newsletter host; career-profile list entry pre-exists under `journalists:`). JOURNALIST-LEVEL FALSIFICATION of the uniform payer-softening prediction.
+- Meta arm (NEW, Aug 26 2026): "Meta agrees to major changes to Facebook and Instagram as it settles US trial over teen addiction for up to $18bn" (co-byline Blake Montgomery and Dara Kerr; https://www.theguardian.com/technology/2026/aug/26/meta-social-media-addiction-trial-settlement). Key quotes: "Dozens of US states had accused the tech giant of addicting and harming children with dangerous products." / "The agreement curtails a major trial in California and will require the social media company to pay up to $18bn." / "This is the first time in the US that Meta has been forced to change key features of the experience of everyday users." / "the social media company regularly collected data on children under the age of 13 without parental permission in violation of federal and state laws." MANUAL ILLUSTRATIVE -0.40 (hard adversarial accountability, legal-reckoning register).
+- OpenAI arm (NEW, Sep 8 2026): "OpenAI releases new AI agent - which promptly goes rogue" (solo Montgomery byline; Guardian mirror https://thedailybreakingnews.com/news/technology/openai-releases-new-ai-agent-which-promptly-goes-rogue-17oacip; canonical theguardian.com URL not surfaced, none constructed). The headline fuses launch and failure in a single mocking clause. MANUAL ILLUSTRATIVE -0.35 (adversarial launch mockery; denies the deal partner the neutral business-news register that launch pegs conventionally draw).
+- Corroborating arm (NEW, Sep 28 2026): "The AI agents are spiraling out of control" (Montgomery; https://www.theguardian.com/global/2026/sep/28/ai-agents-spiral): "As OpenAI discloses multiple incidents of its technology going rogue and the UN warns of uncontrollable agents, Meta is putting an AI agent in the hands of millions" - symmetric alarm within a single byline, in-window.
+- Scorer (MANUAL ILLUSTRATIVE ONLY): illustrative delta (OpenAI minus Meta) = (-0.35) - (-0.40) = +0.05, near-null symmetric adversarial. The uniform payer-softening prediction expects a positive softening gap (deal partner notably softer); observed +0.05 is indistinguishable from parity.
+- Financial context: Guardian x OpenAI strategic partnership Feb 14 2025 (mechanism_514, in-corpus); Guardian-Meta $0. The naive prediction: softer OpenAI coverage. Observed: no softness.
+- THE INVERSION: #513 Dara Kerr (SAME outlet, SAME Guardian-OpenAI deal) found directional SUPPORT for softening (adversarial Meta -0.70 avg vs neutral OpenAI business news). Montgomery, under the identical deal, shows symmetric adversarial. The deal effect is journalist-contingent, not outlet-uniform. The uniform theory fails; a reporter-level theory is required.
+- FORTY-NINTH falsification-family member (ledger 48->49). Journalist-level analogue of m952 (FT x OpenAI, FORTY-EIGHTH, publication-level). Replication of the #472 Bhuiyan Guardian x OpenAI journalist-level pattern with an independent reporter.
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=1 per arm; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no analysis.json update).
+- Background-suite status per #795: the #1205-launched full suite (goal hidden_files type_d_1205_full_suite.log) observed ALIVE at this run's check (33178 bytes, mtime Oct 4 2026 11:02 PDT, pytest processes alive, ~11% progress); CHECKED ONLY - this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1210 (next Type D).
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1208 files on disk (glob); no "Type B #1208" in git log; max numeric mechanism_id 955; zero 956 key forms (numeric/underscore/dash, needles format-built); block key zero-hit repo-wide (designed keying: iteration 1208 in key, no 956 substring); 3/3 source URLs zero-hit repo-wide (git grep -F); "promptly goes rogue" zero-hit repo-wide; zero dedicated Montgomery type_b key pre-commit; no #1208 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 64933/1532 pre-commit.
+- Delegated research (subagent) + main-run verification: 6 browser.search query sets this run, 0 browser.open per #503. Researcher screened 30+ journalists; selected Montgomery as the sole fresh candidate with a clean Sep-Oct cross-entity pair. Main-run verified all novelty claims and corrected the researcher's corpus-miss (a `blake_montgomery` career-profile list entry pre-exists under `journalists:`; no dedicated type_b key existed - the #643 new-key path was taken).
+- Rejected: Sean Hollister (saturated), Hugh Langley (Meta arm out of window), Richard Lawler (peg-absent), plus 25 screened-and-dropped (saturated/peg-absent/no-clean-pair).
+- Tests: tests/test_type_b_1208_blake_montgomery_guardian_openai_rogue_vs_meta_18bn_falsification_oct04_11am.py
+- Forward guards for #1209: max-956; zero nine-five-seven keys all forms (profiles/ + tests/ scope); no-Type-C-#1209-in-git-log; fortieth direction absent; fiftieth member absent (forty-ninth LANDED this run).
+- In-gate: 67 passed + 6 deselected by design (TestDocSync 4 + TestIterationLog 2 per #719/#721); 4 in-gate defects found and fixed (missing top-level statistical_discipline YAML field; 2 contiguous forty-ninth needle forms in test-file docstring/comment; url-construction assertion phrasing; ascii-only scope vs pre-existing non-ASCII; scorer p_value field).
+
+### New Type B files
+tests/test_type_b_1208_blake_montgomery_guardian_openai_rogue_vs_meta_18bn_falsification_oct04_11am.py (73 tests, 13 classes)
+profiles/careers/journalists.yaml (new top-level `blake_montgomery_type_b` key + m956 block under competitor_coverage, 113 insertions)
+
+### Doc-sync ratchet
+README stats table 64933/1532 -> 65006/1533 (+73/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (log-hash followup registers main/anchor/doc-sync here).
+
+### Push status
+Push status (this run, Oct 4 2026 ~11:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followup pushed after.
+
+### Commit hashes
+- Main commit `TBD` - verified via git rev-parse
+- Anchor followup `TBD` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 64933/1532 -> 65006/1533; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1208 Type B, the FOURTH leg of the 1205-1209 window (D #1205 -> E #1206 -> A #1207 -> B #1208 -> C #1209 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1205 Type D (main 829b8a8b / anchor 8a542a9e / doc-sync 65166ef2 / log-hash 65a316d2), #1206 Type E (main be56e254 / anchor 9314bab6 / doc-sync a4870804 / log-hash 390d4a56 + corrective f0e3aaeb), #1207 Type A (main ec95a251 / anchor 58d2f189 / doc-sync 503bea7b / log-hash da2492ea).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1209 Type C closes the window; the #1205 background-suite verdict belongs to #1210 per #795.
+- Guard lifecycle note: #1207's test_forty_ninth_absent pin flips BY DESIGN at this run (m956 lands the forty-ninth member-claim form); #1207's test_no_forty_ninth_member_guard stays green (this file format-builds the needle).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
