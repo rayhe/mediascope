@@ -16,9 +16,9 @@
 - ASCII-only, no em dashes. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed.
 
 ### Commit hashes
-- Main commit `PENDING` - verified via git rev-parse
-- Anchor followup `PENDING` (ANCHORED_SHA patched per #565)
-- Doc-sync `PENDING` (README 64599/1528 -> 64682/1529; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Main commit `5015a4af` - verified via git rev-parse
+- Anchor followup `c7de0677` (ANCHORED_SHA patched per #565)
+- Doc-sync `89da7e00` (README 64599/1528 -> 64682/1529; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
