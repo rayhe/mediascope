@@ -73,9 +73,8 @@ PROFILES_DIR = os.path.join(REPO_ROOT, "profiles")
 TESTS_DIR = os.path.join(REPO_ROOT, "tests")
 OWN_BASENAME = os.path.basename(__file__)
 
-# Anchor: zero placeholder pre-commit; patched to the main-commit SHA in
-# the anchor followup per #565.
-ANCHORED_SHA = "0" * 40
+# Anchor: patched to the main-commit SHA in the anchor followup per #565.
+ANCHORED_SHA = "cea0168f83451e8539a5cb259c5fc8dbc5a42766"
 
 # Rotation: predecessor #1186 Type E commits (verified in git log).
 P1186_MAIN = "cf9220e6"
