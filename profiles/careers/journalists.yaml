@@ -27085,3 +27085,92 @@ jeff_meyer:
       artifact_readiness: 'No analysis.json update warranted. Manual-illustrative journalist-level boundary pin; descriptive only.'
       background_suite_status: 'CHECKED ONLY per #795 - the #1190-launched full suite (goal hidden_files type_d_1190_full_suite.log) is ALIVE at this run''s check (7865 bytes, last write Oct 4 00:05:08 PDT, progress ~11%, 2 F markers); NOT touched; its verdict belongs to #1195.'
       in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging only. Do NOT touch #1024 m846 (decision pending).'
+
+rita_el_khoury:
+  name: Rita El Khoury
+  current_role: Senior Writer (Features)
+  current_publication: Android Police
+  publication_owner: Valnet Inc.
+  beat: [wearables, smart-home, mobile]
+  career_history: 'Android Police senior writer (features); wearables and smart-home beat; Paris-based; 15+ years covering tech (per the talkingbiznews.com re-hire notice, verbatim URL in source_urls). Wearables/watch coverage on her Muck Rack profile (Moto Watch Ultra, Pixel Watch) but no Meta-glasses byline as of Oct 4 2026.'
+  notes: 'Type B #1198 (Oct 4 2026): mechanism 950 single-arm WATCH - Google Android XR arm documented (Sep-17-2026 hands-on, +0.55 illustrative, excerpt-attested); Meta-glasses arm ABSENT after bounded search (Muck Rack profile carries no Meta byline; Android Police Meta coverage in-window is Boxall/Steele). NOT a divergence finding. Re-check in 2-4 weeks: if a Meta arm appears, this becomes a genuine two-arm mechanism extending the Valnet incentive structure (mechanism 145).'
+  mechanism_ids: [950]
+  source_urls:
+  - https://www.androidpolice.com/hour-with-android-xr-xreal-aura-glasses/
+  - https://wesearch.press/s/after-an-hour-with-android-xr-glasses-i-understand-why-googl-e4a3654b
+  - https://muckrack.com/rita-el-khoury
+  - https://talkingbiznews.com/media-news/android-police-hires-el-khoury-as-a-senior-writer/
+  competitor_coverage:
+    type_b_1198_rita_el_khoury_android_police_google_xr_arm_only_meta_arm_absent_watch:
+      iteration: 1198
+      mechanism_id: 950
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-04 04:00 PDT'
+      block_key: type_b_1198_rita_el_khoury_android_police_google_xr_arm_only_meta_arm_absent_watch
+      test_file: tests/test_type_b_1198_rita_el_khoury_android_police_google_xr_single_arm_meta_absent_watch_oct04_4am.py
+      author: Kit (with Ray)
+      journalist: Rita El Khoury
+      publication: android-police
+      window: '1195-1199 window FOURTH leg (D #1195 -> E #1196 -> A #1197 -> B #1198 -> C #1199)'
+      design: 'Type B journalist cross-entity tracking, NEGATIVE-RESULT landing: FIRST dedicated Type B on Rita El Khoury (Android Police senior writer, wearables/smart-home beat). A systematic both-entities search (15 query sets: 13 delegated + 2 main-run; 2 first-hand page reads) surfaced exactly ONE attributable arm - her Sep-17-2026 Android XR hands-on - and ZERO attributable Meta-glasses bylines. The mechanism pins the single arm, documents the bounded absence, and sets a dated re-check (2-4 weeks). If a Meta arm appears, the watch converts to a genuine two-arm mechanism testing whether the Valnet incentive structure (mechanism 145) predicts a register delta.'
+      google_arm:
+        entity: google
+        product: 'Android XR on Xreal Aura glasses'
+        piece:
+          title: 'After an hour with Android XR glasses, I understand why Google is betting everything on this'
+          url: https://www.androidpolice.com/hour-with-android-xr-xreal-aura-glasses/
+          date: '2026-09-17'
+          byline: 'Rita El Khoury (byline confirmed via search index; WeSearch mirror attests title + excerpt)'
+          evidence_tier: 'EXCERPT-ATTESTED this run (0 browser.open on the androidpolice.com page by the main run; delegated-research excerpt-attested via the wesearch.press mirror). No full-text read; quotes below are search-excerpt quotes, disclosed as such.'
+        key_quotes:
+        - '"Glasses are the perfect solution for me; they are light, they are unobtrusive"'
+        - '"I was more than simply impressed."'
+        register_notes: 'Hands-on enthusiasm register: unobtrusiveness framed as a virtue (contrast the Camera Jabber m947 register where Meta''s unobtrusiveness is the vice). Zero privacy/surveillance vocabulary in the excerpt-attested quotes.'
+        tone_MANUAL_ILLUSTRATIVE: 0.55
+        tone_basis: 'hand-assigned from excerpt-attested quotes, MANUAL ILLUSTRATIVE'
+      meta_arm_absent:
+        status: 'ABSENT - bounded search negative'
+        search_terms_used: ['androidpolice.com Rita El Khoury Ray-Ban Meta', 'Rita El Khoury Meta glasses', 'muckrack.com/rita-el-khoury Meta']
+        muck_rack_note: 'Her Muck Rack profile (verbatim URL in source_urls) shows wearables/watch coverage (Moto Watch Ultra, Pixel Watch) but no Meta-glasses byline as of Oct 4 2026.'
+        outlet_note: 'Android Police Meta smart-glasses coverage in the Sep-Oct 2026 window belongs to Andy Boxall and Chandra Steele (both corpus-saturated; mechanism 145 family) - no El Khoury Meta arm exists to pair.'
+        recheck: 'Re-check in 2-4 weeks (target ~Oct 18 - Nov 1 2026): if an attributable El Khoury Meta-glasses piece appears, convert this watch to a two-arm mechanism.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule); engine NOT run at the finding layer; NOT artifact-grade'
+        google_arm_tone: 0.55
+        meta_arm_tone: N/A (arm absent - no delta computable)
+        illustrative_delta: NOT_COMPUTABLE (single-arm watch)
+        engine_run: false
+        is_significant: false
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        note: 'A single-arm watch admits no cross-entity delta. The +0.55 is documented for the future two-arm conversion, not as a finding.'
+      financial_context: 'Android Police is owned by Valnet Inc. The Valnet incentive structure is corpus-documented at mechanism 145: Press Gazette (Jun 2026) reported Valnet''s move to per-click freelancer compensation; Google is the primary ad-revenue source (AdSense/AdX + Discover/Search); Samsung-Google co-develop Android XR. Zero documented Meta financial relationship with Valnet. If the watch converts to two arms, the testable prediction is the mechanism-145 one: Valnet/Google revenue dependence predicts a softer register on the Google arm than on the Meta arm. No prediction is testable on a single arm.'
+      finding: 'Single-arm WATCH, NOT a divergence finding: Rita El Khoury''s only attributable Sep-Oct 2026 wearables arm is a +0.55 (illustrative, excerpt-attested) Android XR hands-on with unobtrusiveness-as-virtue framing and zero privacy vocabulary. No attributable Meta-glasses arm exists after bounded search. The honest corpus record is the pinned absence + dated re-check, not a divergence claim.'
+      confounders:
+      - 'STRONG: single-arm design - with no Meta arm, no cross-entity comparison exists; the watch is a placeholder, not evidence.'
+      - 'STRONG: genre inflation - the Google arm is a pre-launch hands-on demo piece; hands-on genre inflates tone independent of entity.'
+      - 'STRONG: excerpt-tier evidence - no full-text read; quotes are search-excerpt quotes and may miss caveats deeper in the piece.'
+      - 'MODERATE: self-described Pixel fandom - her bio notes she is a huge Pixel fan; personal ecosystem preference is an independent confound.'
+      - 'MODERATE: outlet-level pattern - any future delta could reflect Android Police''s mechanism-145 Valnet structure rather than the journalist.'
+      - 'WEAK: date attestation - Sep 17 date via search index; page body not read this run.'
+      counter_evidence:
+      - 'COUNTEREVIDENCE: the absence may be beat-allocation (editors assign Meta pieces to Boxall/Steele), not avoidance - absence of a byline is not evidence of a stance.'
+      - 'COUNTEREVIDENCE: one hands-on does not establish a journalist-level register; El Khoury''s watch coverage may carry skepticism elsewhere.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant False; engine NOT run. Verdict watch_pinned_not_a_finding: the single arm is documented, no delta is claimed, no artifact-grade inference is drawn. no_analysis_json_update true. artifact_grade false. Correlation is not causation; hypothesis-generating only.'
+      verdict: 'watch_pinned_not_a_finding: single Google arm documented (+0.55 illustrative, excerpt-attested); Meta arm absent after bounded search; dated re-check set. NOT a divergence finding and NOT a falsification-family member.'
+      cautious_language_required: true
+      correlational_note: 'A watch is not a finding. No cross-entity claim is made; the pinned absence must not be cited as evidence of asymmetric coverage.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 47
+      ledger_note: 'Ledger holds at 47. FORTY-SEVENTH member-form present (m946, profiles/wired.yaml). FORTY-EIGHTH member-claim form absent repo-wide.'
+      connects_to: [145]
+      novelty: 'FIRST dedicated Type B mechanism on Rita El Khoury in journalists.yaml (zero rita_el_khoury YAML key pre-commit; zero Rita El Khoury prose hits pre-commit); all four source URLs zero-hit repo-wide pre-commit (git grep -F); max numeric mechanism_id 949 pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash nine-five-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); no Type B #1198 in git log pre-commit (--grep); no test_type_b_1198 files on disk pre-commit (glob). All URLs copied verbatim from tool Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '15 browser.search query sets (13 delegated-research + 2 main-run) + 2 first-hand browser.open reads Oct 4 2026 PDT. Main-run queries: (1) Meta smart glasses privacy concerns journalist October 2026 Ray-Ban Meta camera; (2) Hans Anders suspends Ray-Ban Meta glasses sales Netherlands Belgium covert recording October 2026. Near-miss 2 (Justin Duino, How-To Geek, May-20-2025 within-piece Google +0.60 vs Meta -0.20 divergence, first-hand read) documented in the iteration log; rejected for recency (outside the Sep-Oct 2026 window).'
+      artifact_readiness: 'No analysis.json update warranted. Single-arm watch; descriptive corpus record only.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1195-launched full suite (goal hidden_files type_d_1195_full_suite.log) is DEAD at this run''s check (1108 bytes, mtime Oct 4 02:23 PDT, zero pytest processes alive at ps scan, progress 1%; would-be thirty-second consecutive death; verdict and tombstone belong to #1200 per #795). This run checked only (no m950 markers in the suite log); does not touch it.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m950 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
