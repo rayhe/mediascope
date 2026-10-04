@@ -27389,3 +27389,106 @@ blake_montgomery_type_b:
       - https://thedailybreakingnews.com/news/technology/openai-releases-new-ai-agent-which-promptly-goes-rogue-17oacip
       - https://www.theguardian.com/global/2026/sep/28/ai-agents-spiral
       - https://muckrack.com/blake-montgomery/articles
+
+kaitlyn_huamani_type_b:
+  name: Kaitlyn Huamani
+  publication: associated-press
+  mechanism_ids: [959]
+  notes: 'Type B #1213 (Oct 4 2026): mechanism 959 journalist-level FIFTIETH falsification-family member - FIRST dedicated Type B mechanism on Kaitlyn Huamani in journalists.yaml (zero dedicated type_b key pre-commit, per the #643 convention; name appears only in examples/sample_output/ Feb-2026 Mosseri files). AP Technology Writer.'
+  competitor_coverage:
+    type_b_1213_kaitlyn_huamani_ap_meta_connect_vs_openai_devday_falsification:
+      block_key: type_b_1213_kaitlyn_huamani_ap_meta_connect_vs_openai_devday_falsification
+      mechanism_id: 959
+      iteration: 1213
+      type: B
+      date: '2026-10-04 14:00 PDT'
+      test_file: tests/test_type_b_1213_kaitlyn_huamani_ap_meta_connect_vs_openai_devday_falsification_oct04_2pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Kaitlyn Huamani
+      publication: associated-press
+      window: '1210-1214 window FOURTH leg (D #1210 -> E #1211 -> A #1212 -> B #1213 -> C #1214)'
+      design: 'Type B journalist cross-entity tracking: Kaitlyn Huamani (AP Technology Writer) on Meta vs OpenAI, 5 days apart on the same agent-launch news peg. Tests the uniform payer-softening prediction at a deal-holding outlet: the OpenAI x AP content-licensing partnership (Jul 13 2023, in-corpus in profiles/competitor-entities.yaml OpenAI notable_partners) predicts softer AP coverage of the deal partner (OpenAI) relative to the non-partner (Meta). Two arms: a Meta Connect launch piece (Sep 24, co-byline Huamani and Barbara Ortutay) and an OpenAI DevDay launch piece (Sep 29, solo Huamani byline). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Meta bets big on wearable AI, new AI agent as Zuckerberg denies AI doom'
+        date: '2026-09-24'
+        outlet: associated-press
+        author_byline: 'Kaitlyn Huamani and Barbara Ortutay'
+        entity: meta
+        url: https://www.akronnewsreporter.com/2026/09/24/meta-conference-zuckerberg-ai/
+        url_note: 'AP affiliate relay (akronnewsreporter.com); apnews.com canonical not surfaced in search output, none constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-indexed relay text; relay URL recovered verbatim from Full-URL listing, none constructed)'
+        key_quotes:
+        - 'Celebratory lede: "Meta is going all in on a consumer-friendly AI agent and pushing forward with AI-powered wearable devices during a moment in the industry when its CEO Mark Zuckerberg acknowledged it is a ''wild time to be building.''"'
+        - 'Unchallenged optimism frame: "But at Meta, he said, ''we are optimists because we believe in people.''"'
+        - 'Company-line safety posture relayed without interrogation: "arguing that individual labs can and should ensure their technology is safe."'
+        - 'Wearables line with zero trust interrogation: "the company unveiled a slew of updates to its smart glasses and virtual reality goggles" - no privacy or trust questioning of the wearables line despite the ongoing Ray-Ban Meta privacy backlash.'
+        tone_MANUAL_ILLUSTRATIVE: 0.30
+        tone_reading: 'Celebratory launch register; Zuckerberg optimism framing relayed unchallenged; no privacy or trust interrogation of the wearables line.'
+        status: 'NEW this run (zero corpus hits pre-commit; URL + headline zero-hit repo-wide pre-commit)'
+      openai_arm:
+        title: 'OpenAI CEO announces new AI agent, avoids mention of security concerns'
+        date: '2026-09-29'
+        outlet: associated-press
+        author_byline: 'Kaitlyn Huamani (solo)'
+        entity: openai
+        url: https://www.akronnewsreporter.com/2026/09/29/openai-new-agent-dot/
+        url_note: 'AP affiliate relay (akronnewsreporter.com); apnews.com canonical not surfaced in search output, none constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-indexed relay text; relay URL recovered verbatim from Full-URL listing, none constructed)'
+        key_quotes:
+        - 'Headline as accusation (verbatim): "OpenAI CEO announces new AI agent, avoids mention of security concerns"'
+        - 'Security-critical lede: "OpenAI CEO Sam Altman introduced a ''remarkably capable, always-on'' artificial intelligence agent at an appearance Tuesday, a day after the company halted the rollout of a more advanced model over safety concerns."'
+        - 'Omission frame: "where he avoided any reference to security concerns around the company''s most advanced models."'
+        - 'Cross-entity comparator inside the piece: "designed to complete ongoing tasks proactively on behalf of users, are a competitor of Meta''s personal agent Muse, which exploded in popularity after Meta''s own conference last week."'
+        tone_MANUAL_ILLUSTRATIVE: -0.30
+        tone_reading: 'Adversarial security-critical accountability; the launch is framed against the shelved model (Astra/GPT-6.1 safety concerns); the omission frame denies the deal partner the neutral launch-news register.'
+        status: 'NEW this run (zero corpus hits pre-commit; URL + headline zero-hit repo-wide pre-commit)'
+      scorer:
+        meta_tone: 0.30
+        openai_tone: -0.30
+        illustrative_delta_openai_minus_meta: -0.60
+        delta_calc: '(-0.30) - (0.30) = -0.60'
+        delta_reading: 'Hard inversion of the uniform payer-softening prediction: the deal partner (OpenAI) draws the adversarial register while the non-partner (Meta) draws the celebratory register. The prediction expects a positive softening gap (OpenAI notably softer); the observed gap is -0.60, the opposite sign at large magnitude.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned, n=1 per arm; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no_analysis_json_update true; verdict falsification_member_confirmed (ledger advance 49 -> 50), not an empirical discovery.'
+      financial_context: 'OpenAI x Associated Press content-licensing partnership, Jul 13 2023 (in-corpus: profiles/competitor-entities.yaml OpenAI notable_partners "Associated Press (Jul 2023)"): OpenAI licenses part of the AP text archive (dating to 1985) for model training; AP receives OpenAI technology and product expertise; WSJ-reported most-favored-nation/first-mover safeguard (PYMNTS, Jul 28 2023). Initial term 2 years; renewal terms undisclosed in surfaced reporting (bounded absence per the iteration-492 rule). AP-Meta: no known AI content-licensing relationship (bounded absence). The naive uniform-incentive prediction: the deal partner (OpenAI) receives softer AP coverage than the non-partner (Meta). Correlation is not causation.'
+      finding: 'JOURNALIST-LEVEL FALSIFICATION of the uniform payer-softening prediction. Huamani applies the adversarial register to the paid licensing counterparty (OpenAI) and the celebratory register to the non-partner (Meta): "avoids mention of security concerns" DevDay accountability (-0.30) vs "bets big on wearable AI" Connect celebration (+0.30), illustrative delta -0.60. The OpenAI x AP Jul-2023 deal bought no register softness from this reporter; the observed gap runs the opposite sign at large magnitude. The fiftieth family member extends the m956 journalist-contingent inversion pattern (Montgomery, Guardian x OpenAI) to a second deal-holding outlet and the first AP byline in the family.'
+      confounders:
+        strong:
+        - 'Co-byline attribution: the Meta arm is co-bylined with Barbara Ortutay (AP Technology Writer; prior Type B subject, #343 settlement-week register bifurcation). The celebratory voice may be joint or Ortutay''s. Counter: Huamani''s SOLO OpenAI arm carries the adversarial register under her own byline alone; the member claim rests on Huamani''s solo payer-arm, with the co-bylined Meta arm as the comparator.'
+        - 'Correction to the omission premise: a FastCompany relay of the same AP story carries "This story has been corrected to reflect that Altman discussed security concerns during a question-and-answer session." The headline''s "avoids mention" premise was factually corrected; the adversarial frame choice remains Huamani''s, but its factual basis is weakened.'
+        - 'Peg asymmetry: Connect keynote (company-controlled launch event, Sep 23) vs DevDay (product launch one day after a safety-driven model shelving, Sep 29). The OpenAI arm''s adversarial register is partly event-driven: the shelved-model news broke the day before DevDay, giving any reporter a security peg.'
+        moderate:
+        - 'Deal-term currency: the AP x OpenAI deal''s initial 2-year term (Jul 2023) lapsed Jul 2025; renewal terms are undisclosed in surfaced reporting. The "current payer" inference is bounded; the documented relationship is the Jul-2023 deal, in-corpus.'
+        - 'Evidence tier: both arms excerpt-bounded (0 browser.open per #503) via AP affiliate relays, not apnews.com canonicals. Bounded absence of softening language in the excerpt is not proven absence in the full piece.'
+        weak:
+        - 'n=1 per arm; single-reporter design; 5-day arm gap (Sep 24 vs Sep 29); wire-service house style may compress byline-level register differences.'
+      counter_evidence:
+      - '#343 Barbara Ortutay (SAME outlet, SAME AP-OpenAI deal): settlement-week accountability vocabulary bifurcation - directional evidence on AP register behavior under the same deal. The falsification is journalist-level (Huamani), not publication-level (AP); narrowly scoped.'
+      - 'The uniform theory''s defenders can note the lapsed initial term: if the Jul-2023 deal was not renewed on comparable terms, AP''s current payer status is ambiguous, and the test''s premise weakens. The member claim stands on the documented in-corpus deal relationship.'
+      - 'Huamani''s Feb 2026 Mosseri-testimony AP sample (in-corpus, examples/sample_output/) shows accountability-register reporting on Meta too; Huamani is not uniformly soft on Meta. The register tracks the peg (launch vs accountability event), consistent with the journalist-contingent refinement.'
+      connects_to: [343, 513, 952, 956, 957]
+      verdict: 'falsification_member_confirmed'
+      falsification_family: 'FIFTIETH falsification-family member. Journalist-level, deal-holding outlet: Kaitlyn Huamani (AP Technology Writer) applies the adversarial register to the paid licensing counterparty (OpenAI; Jul-13-2023 content-licensing partnership, in-corpus in profiles/competitor-entities.yaml OpenAI notable_partners, coverage_prediction softer) and the celebratory register to the non-partner (Meta): "avoids mention of security concerns" DevDay accountability (-0.30) vs "bets big on wearable AI" Connect celebration (+0.30), illustrative delta -0.60. The uniform payer-softening prediction fails at this reporter with the opposite sign. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: true
+      falsification_ledger: 50
+      ledger_note: 'Ledger advances 49 -> 50 this run (new member m959). FORTY-EIGHTH member-form present in profiles/financial-times.yaml (m952, 2 occurrences); FORTY-NINTH member-claim form present in profiles/careers/journalists.yaml (m956, 3 occurrences); FIFTIETH member-claim form LANDED this run (m959, profiles/careers/journalists.yaml); fifty-first member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. The ledger advance (49 -> 50) is the corpus-level state change.'
+      research_method: 'Delegated research (subagent) + main-run verification: 23 browser.search query sets this run (delegated candidate-screening sweep) + 3 main-run verification sets (Meta-arm byline/quote attestation, OpenAI-arm byline/quote attestation, AP-OpenAI deal terms), 0 browser.open per #503. SELECTED: Kaitlyn Huamani (fresh; zero dedicated type_b key pre-commit; name appears only in examples/sample_output/ Feb-2026 Mosseri files). REJECTED: Sarah Perez (saturated #638/#778); William Gavin (saturated #330); Victoria Song (saturated #813/#978); Julian Chokkattu (saturated #528); Ina Fried (rejected #643, axios policy-blocked); Todd Bishop (beat-boundary confound, no competitor arm); Reuters wire (no byline); CNN Muse/Amazon piece (byline unattributable); Kylie Robison (no in-window pair); Cherlynn Low (stale Oct-2025 XR); Bobby Allyn (media-about-media, weak comparator); Shirin Ghaffary (byline unconfirmed); Juli Clover (Apple-beat, no Meta arm); Christine Ji (MarketWatch, strong alternate HELD not run: Anthropic arm canonical unverified). Main-run novelty greps: 2/2 URLs zero-hit repo-wide (git grep -F); both headlines zero-hit repo-wide; zero dedicated Huamani type_b block pre-commit; max numeric mechanism_id 958 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B mechanism on Kaitlyn Huamani (m959); zero test_type_b_1213 files on disk pre-commit (glob); no "Type B #1213" in git log pre-commit (--grep); max numeric mechanism_id 958 pre-commit; zero numeric/underscore/dash nine-five-nine mechanism key forms in profiles/ + tests/ pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1213 in key, no 959 substring); 2/2 source URLs zero-hit repo-wide pre-commit (git grep -F); both headlines zero-hit repo-wide pre-commit; no #1213 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 65342/1537 pre-commit. FIFTIETH falsification-family member LANDED this run (journalist-level AP x OpenAI, extends the m956 journalist-contingent inversion to a second deal-holding outlet); fifty-first member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit; thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) + thirty-ninth (m948) directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1210-launched full suite (goal hidden_files type_d_1210_full_suite.log) observed at this run''s check (10636 bytes, mtime Oct 4 2026 12:59 PDT, no pytest process visible in ps scan - an observation, not a verdict, ~3% progress). This run checked only; does not touch it. Verdict and tombstone belong to #1215 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m959 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://www.akronnewsreporter.com/2026/09/24/meta-conference-zuckerberg-ai/
+      - https://www.akronnewsreporter.com/2026/09/29/openai-new-agent-dot/
+      - https://www.pymnts.com/news/artificial-intelligence/2023/associated-press-licensing-deal-openai-includes-first-mover-safeguard/
