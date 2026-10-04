@@ -234,6 +234,41 @@ def _git_grep_tracked(needle, *paths):
     return [line for line in out.stdout.split("\n") if line.strip()]
 
 
+def _iter_source_files():
+    """Yield paths for profile + test source files.
+
+    Scoped to profiles/ + tests/ per the #1191 convention (the
+    iteration-log.md prose carries next-number needle forms as
+    documented guards; the log is not a mechanism-key position).
+    Excludes this file (sweep carrier per #715) and __pycache__
+    artifacts.
+    """
+    for root, dirs, files in os.walk(PROFILES_DIR):
+        dirs[:] = [d for d in dirs if d != "__pycache__"]
+        for f in files:
+            yield os.path.join(root, f)
+    for root, dirs, files in os.walk(TESTS_DIR):
+        dirs[:] = [d for d in dirs if d != "__pycache__"]
+        for f in files:
+            if f == OWN_BASENAME:
+                continue
+            yield os.path.join(root, f)
+
+
+def _sweep_underscore_mechanism(n):
+    needle = "mechanism" + "_%d" % n
+    return [p for p in _iter_source_files()
+            if needle in open(p, encoding="utf-8",
+                              errors="replace").read()]
+
+
+def _sweep_dash_mechanism(n):
+    needle = "mechanism" + "-%d" % n
+    return [p for p in _iter_source_files()
+            if needle in open(p, encoding="utf-8",
+                              errors="replace").read()]
+
+
 def _max_numeric_mechanism_id_in_profiles():
     ids = []
     for dirpath, _, files in os.walk(PROFILES_DIR):
@@ -331,9 +366,12 @@ class TestNovelty1195:
         assert _git_grep_tracked(_mech_id_colon(NEXT_NUM),
                                  "profiles/") == []
 
-    def test_zero_949_underscore_dash_forms_repo_wide(self):
-        assert _git_grep_tracked(_mech_underscore(NEXT_NUM)) == []
-        assert _git_grep_tracked(_mech_dash(NEXT_NUM)) == []
+    def test_zero_949_underscore_dash_forms_scoped(self):
+        # Scoped to profiles/ + tests/ per the #1191 convention (the
+        # iteration-log.md prose carries next-number needle forms as
+        # documented guards; the log is not a mechanism-key position).
+        assert _sweep_underscore_mechanism(NEXT_NUM) == []
+        assert _sweep_dash_mechanism(NEXT_NUM) == []
 
     def test_no_type_e_1196_in_git_log(self):
         out = subprocess.run(
@@ -422,10 +460,13 @@ class TestTypeDCorpusIntegrity1195:
     def test_max_mechanism_id_is_948(self):
         assert _max_numeric_mechanism_id_in_profiles() == 948
 
-    def test_zero_949_forms_repo_wide(self):
+    def test_zero_949_forms_scoped(self):
+        # Numeric scoped to profiles/; underscore/dash scoped to
+        # profiles/ + tests/ per the #1191 convention (iteration-log.md
+        # prose carries the forms as documented guards).
         assert _git_grep_tracked(_mech_id_colon(949), "profiles/") == []
-        assert _git_grep_tracked(_mech_underscore(949)) == []
-        assert _git_grep_tracked(_mech_dash(949)) == []
+        assert _sweep_underscore_mechanism(949) == []
+        assert _sweep_dash_mechanism(949) == []
 
     def test_no_new_mechanisms_below_max(self):
         ids = []
