@@ -28800,3 +28800,83 @@ type_c_1179_meta_600b_us_pledge_voluntary_regulatory_bargaining_oct03_1pm:
   concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
   yaml_parse_clean: true
   ascii_only: true
+type_c_1184_stability_ai_big_three_labels_invest_and_license_thirty_seventh_direction_oct03_5pm:
+  block_key: type_c_1184_stability_ai_big_three_labels_invest_and_license_thirty_seventh_direction_oct03_5pm
+  mechanism_id: 942
+  mechanism_name: 'Stability AI $76M Series B (announced Aug 25 2026): Universal Music Group + Sony Music Group + Warner Music Group take equity in the same AI company for the first time WHILE simultaneously licensing their catalogs for training as part of the deal - INVEST-AND-LICENSE, the THIRTY-SEVENTH relationship direction'
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1184
+  iteration_type: 'C'
+  iteration_time: '2026-10-03 17:00 PDT'
+  goal_id: goal_54093bda4145
+  scheduled_job_id: mediascope-daily-iteration
+  window: '1180-1184 window FIFTH and CLOSING leg (D #1180 -> E #1181 -> A #1182 -> B #1183 -> C #1184)'
+  connects_to:
+  - 804
+  - 391
+  - 663
+  relationship_direction_taxonomy: 'THIRTY-SEVENTH relationship direction: INVEST-AND-LICENSE. The rights-holder takes a minority equity stake in the AI company while simultaneously licensing its catalog for training - the license and the equity close in the SAME round (the labels "also licensed their catalogs for training as part of the deal", TechCrunch Oct 2 2026). The licensor incentive converts from extractive (maximize the fee) to aligned (maximize the licensee valuation): the content owner is paid twice - once for the content (license), once for the company upside (equity) - and the equity upside is powered by the licensed content itself. The same counterparty sits on BOTH sides of the table: licensor AND shareholder. Distinct from m804 (Noxtua: MAJORITY ownership, publisher-owns-AI - the ownership IS the instrument, no simultaneous catalog-license leg); from m391 (Comet Plus 80/20: revenue SHARE - the publisher gets a cut of revenue, not a stake in the company); from the m594-family flat-fee licenses and m663 Perplexity premium-data licensing (cash-for-content, no ownership); and from the train-first-settle-later pattern (Suno/Udio: train first, get sued, settle, license - adversarial then transactional). Here the sequence is license-first-then-invest (UMG+EA product partnership Oct 2025, WMG Nov 2025, converted into equity at the Aug 2026 Series B). The thirty-eighth direction stays absent by design; the thirty-fifth (m915, METER-THEN-INVITE) and thirty-sixth (m933, REGULATORY-PREEMPTION) stand per the m807 enumeration.'
+  finding: 'Seven legs document the Stability AI x Big Three music labels invest-and-license. (1) Round leg (temperature2; aiweekly via Variety; TechTimes): $76M Series B announced Aug 25 2026; $232M total raised under CEO Prem Akkaraju (since Jun 2024); the prior raise was $50M in 2024 (TechCrunch: "last raised two years ago in 2024 with a $50 million injection"). Investors: Universal Music Group, Sony Music Group, Warner Music Group (first time all three majors took equity in the same AI company, TechTimes), Electronic Arts, AMD Ventures, Pacific Alliance Ventures; returning: Coatue, Greycroft, Kadmos Capital, Sean Parker, Eric Schmidt. Coatue co-founder Thomas Laffont joined the board. (2) License leg (TechCrunch Oct 2 2026): the three labels "also licensed their catalogs for training as part of the deal" - the license is a term OF the round, not a separate transaction; fee terms undisclosed. (3) Conversion leg (temperature2): UMG + EA partnered with Stability in Oct 2025, WMG in Nov 2025 - the Series B converts those product partners into equity holders ("have also made those labels equity holders in the company", TechTimes). Sony joined with no announced prior partnership (reason unexplained, temperature2) - Sony leg may be pure financial optionality. (4) Napster-inversion leg (TechCrunch Oct 2 2026): Sean Parker (Napster co-founder, executive chairman) and Akkaraju are "rebuilding Stability AI around music"; "this feels like such a 180 from Napster" - the piracy-era actor now builds the licensed model (the company "previously trained models on pirated data" per the same piece). (5) Artist-exclusion leg (TechTimes: "Music Labels Get Equity; Artists Still Get Nothing"): the leverage (catalogs aggregated from artists) converts to label-held equity; the artists whose music trains the models do not share the equity upside - the settlement of the label-AI conflict happens above the artist. (6) Adversarial-context leg (IQMA): the same three labels sued Suno and Udio (UMG settled Udio late Oct 2025; WMG settled Suno + Udio mid-Nov 2025; Sony v Udio remains active; UMG/Sony v Suno no trial date) - invest-and-license is the license-first alternative to train-first-settle-later; Warner told shareholders its AI agreements use terms letting it "grow as its partners grow" (IQMA). Getty v Stability: won the UK case, US case continues (temperature2). (7) Corpus-positioning leg: FIRST dedicated corpus mechanism on invest-and-license; the coverage-softening prediction is NOT tested (labels are not tracked publications) - Type A follow-up, not this run.'
+  money_flow: 'EQUITY IN: $76M Series B from the labels (per-label check sizes and governance rights undisclosed, IQMA). LICENSE FEES OUT: catalog-training licenses to the labels as part of the deal (fee terms undisclosed). The same counterparty is paid twice - once for the content (license), once for the company upside (equity) - and the equity upside is powered by the licensed content itself; net direction unquantified (both legs undisclosed). Total company raise $232M under Akkaraju. Distinct from the licensing money-flows (flat-fee m594, pay-per-use): there the payer buys publisher forbearance with cash; here the rights-holder buys INTO the payer while selling to it.'
+  confounders:
+  - strength: STRONG
+    text: 'Excerpt-tier evidence: 0 browser.open per #503 this run; all claims bounded by the excerpts; scraped-snippet dates are unreliable (all date claims bounded by excerpt context).'
+  - strength: STRONG
+    text: 'Both money legs undisclosed: per-label check sizes, governance rights, and catalog license fee terms are all undisclosed (IQMA: "terms were not publicly disclosed") - the "paid twice" framing is geometric, not sized; the net transfer direction is unquantified.'
+  - strength: MODERATE
+    text: 'Sony leg may differ: Sony had no announced prior product partnership (temperature2: reason for joining unexplained) - Sony stake may be pure financial optionality, not aligned-product; the invest-and-license geometry is cleanest for UMG/WMG.'
+  - strength: MODERATE
+    text: 'Minority stakes: the labels take minority equity (no majority control claimed); governance rights undisclosed - the alignment incentive is real but the control is not.'
+  - strength: MODERATE
+    text: 'Artist-exclusion is editorial framing: the TechTimes "artists get nothing" read is the outlet framing; artist-level compensation terms (if any) are not disclosed in the excerpts.'
+  - strength: WEAK
+    text: 'Music labels are not tracked publications: the corpus core prediction (financial relationship predicts coverage tone) is not tested here; this is incentive-geometry mapping per the #609/#614 qualitative boundary, not a coverage experiment.'
+  coverage_nexus: 'The round is the financial-event peg for AI-music-industry-structure coverage: the Aug 25 2026 announcement peg and the Oct 2 2026 TechCrunch Parker-interview peg ("rebuilding Stability AI around music", the Napster-180 frame). Tracked-publication coverage tone was NOT scored this run (Type C, no tone arms). Type A follow-up: whether music-trade press (MusicBusinessWorldwide round-up) vs general tech press (TechCrunch, TechTimes) frame the artist-exclusion angle differently (trade structural vs tech moral). Bounded absence per the iteration-492 rule: no tracked-publication invest-and-license framing arms are claimed in this run bounded sets - not a finding.'
+  sources:
+  - url: 'https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/'
+    what: 'TechCrunch (Oct 2 2026, Parker interview): $76M from Sony/Warner/Universal "which also licensed their catalogs for training as part of the deal"; Series B announced August; Parker executive chairman + Prem Akkaraju CEO since Jun 2024; last raised $50M in 2024; "rebuilding Stability AI around music"; Napster co-founder 180 ("this feels like such a 180 from Napster"); Suno/Udio suit context. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  - url: 'https://temperature2.com/p/2026-08-26-stability-ai-76-million-label-investors/'
+    what: 'temperature2 (Aug 26 2026): full investor roster (UMG, SMG, WMG, EA, AMD Ventures, Pacific Alliance Ventures; returning Coatue, Greycroft, Kadmos Capital, Parker, Eric Schmidt); UMG+EA Oct 2025 and WMG Nov 2025 partnerships converted to equity; Sony reason unexplained; $232M total under Akkaraju; Big-Three-vs-Suno/Udio contrast; Getty v Stability UK win / US ongoing. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  - url: 'https://www.techtimes.com/articles/325673/20260826/stability-ai-raises-76m-music-labels-get-equity-artists-still-get-nothing.htm'
+    what: 'TechTimes (Aug 26 2026): first time all three majors took equity in the same AI company; Thomas Laffont (Coatue co-founder) joined the board; Oct/Nov 2025 partnerships converted to equity; "Artists Still Get Nothing" artist-exclusion frame. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  - url: 'https://www.musicbusinessworldwide.com/from-the-major-labels-76m-stability-ai-bet-to-universal-and-sonys-suno-stream-ripping-claim-its-mbws-weekly-round-up/'
+    what: 'MusicBusinessWorldwide (weekly round-up): trade-press peg corroboration for the $76M Stability AI bet. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  - url: 'https://www.woostermag.com/universal-sony-warner-stability-ai-funding-round'
+    what: 'WoosterMag (Aug 27 2026): round corroboration. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  - url: 'https://news.iqmaglobal.org/articles/universal-sony-and-warner-become-equity-backers-of-a-generative-ai-company/'
+    what: 'IQMA (Aug 31 2026): terms undisclosed (per-label stakes, governance rights); Warner "grow as partners grow" shareholder terms; Suno/Udio settlement/litigation ledger (UMG-Udio late Oct 2025; WMG-Suno/Udio mid-Nov 2025; Sony v Udio active; UMG/Sony v Suno no trial date). URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  - url: 'https://aiweekly.co/alerts/stability-ai-raises-76m-series-b-from-ea-sony-music-umg-wmg-amd-ventures-at'
+    what: 'AI Weekly (alerts, cites Variety original): investor-list corroboration (EA, Sony Music, UMG, WMG, AMD Ventures). URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  - url: 'https://singulism.com/en/2026-10-03-stability-ai-music-pivot/'
+    what: 'Singulism (Oct 3 2026): fresh music-pivot corroboration. URL zero-hit repo-wide pre-commit.'
+    accessed: '2026-10-03'
+    novel: true
+  browser_opens: 0
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  verdict: directionally_supported_not_proven
+  no_analysis_json_update: true
+  artifact_grade: false
+  falsification_family_member: false
+  falsification_family: 'NOT a member (ledger holds at 46 per the #754 convention; financial-incentive mapping of the invest-and-license geometry per the #609/#614 qualitative boundary; no coverage-tone pair scored, so no uniform-prediction test; the labels are not tracked publications; FORTY-SEVENTH member-claim form absent repo-wide; THIRTY-SEVENTH relationship direction LANDED this run (m942, INVEST-AND-LICENSE); thirty-eighth direction form absent repo-wide; thirty-fifth (m915, METER-THEN-INVITE) and thirty-sixth (m933, REGULATORY-PREEMPTION) stand).'
+  novelty: 'FIRST dedicated corpus mechanism on the Stability AI x Big Three music labels invest-and-license ($76M Series B announced Aug 25 2026; UMG+SMG+WMG equity AND catalog-training licenses in the same deal): zero Stability-AI-label-investor hits in profiles/competitor-entities.yaml pre-commit; the 8 source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); zero "invest-and-license" / "licensed their catalogs" hits repo-wide pre-commit; THIRTY-SEVENTH relationship direction LANDED this run (first invest-and-license form; distinct from m804 Noxtua majority-ownership-no-license, m391 Comet Plus 80/20 revenue-share-no-equity, m594-family flat-fee cash licenses, and m663 Perplexity premium-data licensing); thirty-eighth direction form absent repo-wide pre-commit (absence-documentation only); thirty-fifth + thirty-sixth directions present. Method MANUAL / qualitative-only per the Aug 28 2026 standing rule (3 browser.search calls / 5 queries, 0 browser.open per #503; no corpus queries executed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: 'Iteration #1184 Type C is the FIFTH and CLOSING leg of the 1180-1184 window (D #1180 -> E #1181 -> A #1182 -> B #1183 -> C #1184 per #565 anchor + rotation guard; #1180 Type D main f8d8356e/anchor a3503d51/doc-sync f18343d0/log-hash f3d16b13, #1181 Type E main 7db1d62b/anchor be097edd/doc-sync 0e2192fa/log-hash 4e0cd3dc, #1182 Type A main f0844481/anchor 62d35290/doc-sync 753aec68/log-hash b01ef6e0, #1183 Type B main faa3b001/anchor 38d15b62/doc-sync 09496c47/log-hash 6403ee05; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_c_1184 files on disk (glob); no "Type C #1184" in git log (--grep); max numeric mechanism_id 941 pre-commit; zero numeric/underscore/dash 942 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit (designed keying: iteration 1184 in key, no 942 substring); 8 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); no #1184 row in README/ARCHITECTURE test tables pre-commit (sole iteration-log.md hit is #1183 "Next: #1184 Type C closes the window" prose, documented); README stats 63065/1508 pre-commit; forty-seventh member-claim form absent repo-wide pre-commit; thirty-seventh/thirty-eighth direction forms absent repo-wide pre-commit (this run LANDS the thirty-seventh); thirty-fifth + thirty-sixth directions present. Rejected candidates: (1) Microsoft x HarperCollins Bloomberg Law piece is a re-crawl of the Nov 2024 deal already in-corpus as m524 (not a new deal); (2) OpenAI content-licensing with Google/Microsoft/Amazon yielded no new disclosed deal (no corpus addition). Guard lifecycle: #1183''s max-941 + zero-942-numeric + no-Type-C-#1184-in-git-log + no-thirty-seventh-direction pins fail BY DESIGN at this run (pinned as forward-looking staleness in the #1184 test file); #1183''s zero-942 underscore/dash, no-thirty-eighth, no-forty-seventh/forty-eighth, and thirty-fifth/thirty-sixth-intact guards stay green (verified via supersession pins in the #1184 test file). This run lands mechanism 942 and the THIRTY-SEVENTH relationship direction (INVEST-AND-LICENSE). Next window 1185-1189 opens with Type D #1185; the #1180 background-suite verdict belongs to #1185 per #795.'
+  concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+  yaml_parse_clean: true
+  ascii_only: true
