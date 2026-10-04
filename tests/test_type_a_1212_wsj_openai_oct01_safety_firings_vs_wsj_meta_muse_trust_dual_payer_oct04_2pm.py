@@ -92,7 +92,7 @@ BLOCK_KEY = (
 
 # Pre-commit values. ANCHORED_SHA is patched to the main-commit hash in the
 # anchor followup (git rev-parse HEAD after the main commit), per #565.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "9f4eb1a9fa616614dc696412777b779416398da2"  # patched per #565
 # Post-first-run values per #719: N tests collected; README ratchets
 # 65265/1536 -> (65265+N)/1537 in the doc-sync followup.
 README_TEST_COUNT = 65265 + 77  # patched post-first-run per #719
