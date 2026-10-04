@@ -43980,7 +43980,7 @@ README stats table 63377/1512 -> 63451/1513 (+74/+1); README test-table row; doc
 ### Commit hashes
 - Main commit `e4e7305b` (e4e7305b85d57c41d4a1a19d1de8ca4f03a93fd1) - verified via git rev-parse
 - Anchor followup `edcf2ea4` (edcf2ea4f5884cfb3dde01c034089f3fe47fcb85; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `PENDING` (README 63377/1512 -> 63451/1513; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
+- Doc-sync `52ad4f36` (52ad4f36da9d87ca0006593b2f455f2dff4bac3a; README 63377/1512 -> 63451/1513; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main e4e7305b / anchor edcf2ea4 / doc-sync hashes in the #1188 log entry
 
 ### Push status
