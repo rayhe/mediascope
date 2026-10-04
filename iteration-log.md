@@ -43942,8 +43942,8 @@ README stats table 63316/1511 -> 63377/1512 (+61/+1); README test-table row; doc
 ### Commit hashes
 - Main commit `cea0168f` (cea0168f83451e8539a5cb259c5fc8dbc5a42766) - verified via git rev-parse
 - Anchor followup `759b3aec` (759b3aecf7e2aaafd06f9e354927a0197c68712e; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `PENDING` (README 63316/1511 -> 63377/1512; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
-- Log-hash followup: PENDING (terminal per #721) - registers main cea0168f / anchor 759b3aec / doc-sync hashes in the #1187 log entry
+- Doc-sync `a0cbaaf5` (a0cbaaf5edadfda339d273956659cc40b620014d; README 63316/1511 -> 63377/1512; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main cea0168f / anchor 759b3aec / doc-sync hashes in the #1187 log entry
 
 ### Push status
 Push status (this run, Oct 3 2026 ~19:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
