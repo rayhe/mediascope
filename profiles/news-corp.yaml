@@ -2217,6 +2217,103 @@ competitor_relationships:
     artifact_grade: 'NOT artifact-grade'
     no_analysis_json_update: true
     correlation_not_causation: true
+  type_a_1187_nypost_anthropic_oct01_ipo_hypocrisy_register_vs_carried_meta_openai_arms_oct03_7pm:
+    mechanism_id: 943
+    mechanism_name: 'NY Post x Anthropic Oct-1-2026 IPO-Hypocrisy Original (Bloomberg-Relayed, -0.35) vs Carried NY Post x Meta / OpenAI Arms - Tabloid Register Extends to the $0-Licensing Third Lab Within 24 Hours'
+    iteration: 1187
+    iteration_type: 'A'
+    type: competitor_coverage_deep_dive
+    type_label: 'Competitor Coverage Deep Dive'
+    rotation: 'Type A'
+    date_analyzed: '2026-10-03'
+    time_pdt: '19:00'
+    job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    publication_focus: 'New York Post (News Corp)'
+    competitor_pair: 'Anthropic vs Meta (OpenAI carried as second comparator; temporal extension of m925 #1157)'
+    incentive_attribution: 'NOT a new falsification-family member: temporal replication (24 hours) of the m925 same-publication tabloid register pattern per the #1143 precedent (same-publication temporal replication is not a new prediction test). The uniform-softening prediction was already tested and counted at the tabloid register by m763 (TWENTY-NINTH member, #887). The third lab carries a $0 AI licensing tie, so no incentive-side prediction is under test here; the run documents register continuity onto a new entity and peg. Ledger holds at 46.'
+    overview: >
+      FIRST dedicated NY Post x Anthropic mechanism in the corpus (m925's
+      Sep-30 FTC piece co-named Anthropic but sits on the OpenAI axis). On
+      Oct 1 2026 the New York Post published an original business-desk piece
+      headlined 'Anthropic plans blockbuster IPO before Thanksgiving despite
+      its warnings of ''existential risks to humanity'': report', relaying
+      Bloomberg's Oct-1 IPO-timeline scoop (Investor Day Oct 14 at SF HQ;
+      formal marketing week of Nov 9; trading before Thanksgiving Nov 26;
+      $1.8-2T valuation talk) and layering the tabloid hypocrisy frame: the
+      'blockbuster IPO' against the prospectus's own 'existential risks to
+      humanity' warnings ($518B cloud/compute/infra obligations; ~$42B 2025
+      net loss on ~$4.6B revenue, ~12x growth; Amodei White House lunch
+      photo). MANUAL ILLUSTRATIVE -0.35: hypocrisy-juxtaposition
+      accountability register, softer than the m925 FTC-enforcement arm
+      (-0.40) and the m763 triad mean (-0.483) but firmly adversarial. The
+      frame is peg-merited: both sides of the juxtaposition come from the
+      same prospectus document. Relay chain: Bloomberg (Oct-1 IPO timeline;
+      Oct-2 $60B Broadcom chip-financing assembly, $42B senior tranche plus
+      $18B Blackstone-led junior, "lender is borrowing to lend" angle) as
+      the uncredited source layer, the Post as the framing layer.
+    articles_new:
+      - title: 'Anthropic plans blockbuster IPO before Thanksgiving despite its warnings of ''existential risks to humanity'': report'
+        publication: 'New York Post'
+        desk: business
+        date: '2026-10-01'
+        url: 'https://nypost.com/2026/10/01/business/anthropic-plans-blockbuster-ipo-before-thanksgiving-despite-its-warnings-of-existential-risks-to-humanity-report/'
+        url_status: 'novel this run - zero hits repo-wide pre-commit (git grep -F on verbatim Full-URL listing)'
+        research_method: 'excerpt-tier via search-result original (0 browser.open per #503; nypost.com not paywalled, excerpt-bounded by run convention)'
+        register: 'ipo_hypocrisy_juxtaposition_accountability'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        tone_basis: 'MANUAL ILLUSTRATIVE, hand-assigned this run from the surfaced excerpt'
+        evidence_tier: 'excerpt-tier search-result-attributed per #503 (NY Post original not opened; 0 browser.open)'
+        attestation_urls:
+          - 'https://www.ajupress.com/view/20261002091670282'
+          - 'https://stocktwits.com/news-articles/markets/equity/anthropic-could-go-public-in-november-with-2-trillion-valuation-in-sight-says-report/cZD0ghpRB0O'
+          - 'https://cellcog.ai/blog/anthropic-ipo-prospectus/'
+          - 'https://www.findarticles.com/anthropic-reportedly-targets-mid-november-ipo-debut/'
+          - 'https://coincentral.com/anthropic-targets-mid-november-ipo-that-could-value-company-at-2-trillion/'
+        attestation_status: 'all NOVEL this run - zero hits repo-wide pre-commit (git grep -F on verbatim Full-URL listings)'
+        key_quotes:
+          - 'Anthropic is reportedly targeting mid-November for its IPO - plowing ahead despite a warning its technology could pose ''existential risks to humanity''.'
+          - 'The AI giant headed by CEO Dario Amodei could begin formal marketing for the IPO by as soon as the week of Nov. 9, Bloomberg reported, citing people with knowledge of the matter. That would put Anthropic on track to start public trading before Thanksgiving.'
+          - 'Anthropic detailed some eye-popping financials - and AI doomsday warnings - in its S-1 prospectus filing, a copy of which was obtained by Reuters earlier this week.'
+          - 'The Calif.-based firm said it plans to spend $518 billion on cloud, computing and infrastructure obligations in coming years. For 2025, the company lost more than $8 billion on an operating basis, as well as a net loss of $42 billion.'
+          - 'Anthropic''s revenue in 2025 hit nearly $4.6 billion - a 12-fold increase over the previous year, according to the prospectus.'
+        tone_observations:
+          - 'The adversarial charge is frame-level, not fact-level: the Post carries Bloomberg''s IPO-timeline facts straight (Nov 9 marketing, pre-Thanksgiving debut, $1.8-2T) and does the damage in the headline juxtaposition (''blockbuster IPO'' vs ''existential risks to humanity'').'
+          - 'Both sides of the juxtaposition are prospectus-sourced - the Post did not import outside dirt; the frame is document-internal, which makes it peg-merited rather than manufactured.'
+          - 'Unlike m925 (Post first to report the FTC probe), this piece is Bloomberg-relayed: the Post originates the frame but not the facts.'
+          - 'The piece co-names OpenAI only as the halted-IPO comparator (OpenAI reportedly seeking $30B instead); the adversarial register lands on Anthropic alone.'
+        framing: 'Prospectus-as-confession: the lab that warns of doomsday still wants the blockbuster listing'
+    carried_arms_per_807:
+      - mechanism: 'm763 (#887 triad) Meta arm, un-rescored'
+        arms: '[-0.50 Sep-18 Meta glasses California lawsuit]'
+      - mechanism: 'm763 (#887 triad) OpenAI arms, un-rescored'
+        arms: '[-0.40 Sep-19 insiders, -0.50 Sep-10 Senate probe, -0.55 Sep-9 math scoop], mean -0.483'
+      - mechanism: 'm925 (#1157) NY Post x OpenAI FTC-probe original, un-rescored'
+        arms: '[-0.40 Sep-30]'
+    scorer_MANUAL_ILLUSTRATIVE_ONLY: 'New Anthropic arm -0.35 vs carried Meta arm -0.50: illustrative delta +0.15 (the $0-licensing third lab reads SOFTER than the ~$50M/yr Meta leg on this window''s pegs). New Anthropic arm -0.35 vs carried OpenAI FTC arm -0.40: illustrative delta +0.05, near-null; 24-hour tabloid register continuity across two AI labs. Three-way tabloid band Sep 18 - Oct 1: Meta -0.50, OpenAI -0.40, Anthropic -0.35; range 0.15. p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run.'
+    disclosure_observation: 'The Post Oct-1 piece shows NO licensing-tie disclosure line in the surfaced excerpt (carried pattern from m925; UNVERIFIED for the full page per the #492 lesson). The Anthropic leg is $0 AI licensing, so disclosure is not the operative variable on this arm; recorded for strand continuity only.'
+    ledger: 'Ledger holds at 46 (per the #754 convention: latest ledger member present in the profiles corpus, no later member - the block records the count only, never the next-member literal).'
+    falsification_family: 'NOT a member. The News Corp x OpenAI uniform-softening prediction was already tested and counted at the tabloid register by m763 (TWENTY-NINTH member, #887); per the #1143 precedent, a same-publication temporal replication on a new peg is not a new prediction test. The Anthropic leg carries $0 licensing, so no incentive-side prediction is under test. Ledger holds at 46 (FORTY-SIXTH member-form in profiles/the-verge.yaml m907, 2 occurrences; forty-seventh absent by design).'
+    confounders_strong_first:
+      - 'STRONG: tabloid-register confound - the Post house style is adversarial across entities (triad OpenAI avg -0.483 vs Meta -0.50); the Anthropic -0.35 sits inside the house band, so register continuity may reflect house style rather than incentive structure.'
+      - 'STRONG: replication not discovery - m763 already counted the publication-plus-partner test; this run adds a peg and a third entity, not a new test.'
+      - 'STRONG: peg-severity mismatch - the Meta arm is a 70-plaintiff lawsuit piece (secret capture of sex/nudity/bathroom footage allegations); the Anthropic arm is a prospectus-juxtaposition frame on Bloomberg-relayed facts. The +0.15 delta may be peg-grade, not entity-grade: the enforcement/lawsuit peg is intrinsically harder than the IPO-hypocrisy peg.'
+      - 'MODERATE: excerpt-tier evidence only (0 browser.open per #503); full-page disclosure status unverified; headline tone weight vs body tone unverified.'
+      - 'MODERATE: Bloomberg-relayed, not Post-originated - the Post owns the hypocrisy frame but not the underlying facts; continuity with m925 (Post broke the FTC probe) is partial.'
+      - 'WEAK: n=1 fresh arm; hand-assigned tone; single-day window.'
+    counterevidence:
+      - 'The Post carries Bloomberg''s IPO-timeline facts straight (Nov 9 marketing, pre-Thanksgiving debut, $1.8-2T) - the neutral factual core sits under the adversarial headline; the hard register is frame-level.'
+      - 'Both sides of the juxtaposition are prospectus-sourced: the Post did not import outside allegations; the hypocrisy frame is document-internal, limiting the adversarial-charge reading.'
+      - 'The +0.15 softness of the $0-licensing lab vs the $50M/yr Meta leg runs the OPPOSITE direction from any licensing-incentive prediction (a crude incentive model would predict the non-payer hardest). No incentive prediction is staked here, but the observed direction leaves no room for a residual softening read.'
+      - 'm763 dual-payer symmetry already established near-null (+0.017); this run''s three-way band (range 0.15) extends the symmetry read to the third lab rather than breaking it.'
+    statistical_discipline: 'MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule: tone MANUAL_ILLUSTRATIVE; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; engine NOT run; verdict directionally_supported_not_proven; no_analysis_json_update true; NOT artifact-grade.'
+    research_method: '12 browser.search query sets this run ((1) WIRED Anthropic news October 2026 - surfaced the Coxon-resignation relay and the Altman religious-force cluster; (2) wired.com Anthropic story this week - surfaced the LinkedIn Plastic-Corals essay carrying WIRED Astra-delay/Australia attributions; (3) wired.com Sam Altman religious force AI consciousness October 2026 - surfaced the the-decoder/aistockwire relays, no WIRED original; (4) WIRED OpenAI Astra delayed safety Australia - surfaced aob-news/walletinvestor/bravenewcoin relays; (5) WIRED Isabella Ward OpenAI agent Australia - surfaced the wesearch.press mirror of the Sep-24 Ward original; (6) quoted Ward headline plus wired.com/story - surfaced mcgauleylabs/news with the verbatim WIRED URL in body text; (7) WIRED Delays Release Astra Saachi Jain - surfaced eletiofe/aob-news/wdcnews6 mirrors; directions (4)-(7) REJECTED as the pair: the Sep-29 Astra-cancellation arm is in corpus (m877 #1077) and the Sep-24 Ward Australia arm plus the Sep-26 disclosure strand are in corpus (m916 #1142); (8) WIRED NSW fifth-incident October 2026 - surfaced the Guardian-broken Oct-1 parks disclosure with no WIRED original; (9) theverge.com Anthropic Frontier Academy - CNBC-attributed relays only, no Verge original; (10) WIRED Altman religious-force scholars - relays only; (11) Bloomberg Anthropic IPO November - SELECTED the NY Post Oct-1 Anthropic original via the verbatim Full-URL listing; (12) Bloomberg Anthropic Broadcom $42B - corroborating relay chain for the uncredited source layer). 0 browser.open (excerpt-bounded per #503; nypost.com not paywalled, excerpt-bounded by run convention). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    novelty: 'Zero test_type_a_1187 files on disk pre-commit (glob); no "Type A #1187" in git log (--grep) pre-commit; max numeric mechanism_id 942 in-tree pre-commit; zero numeric/underscore/dash next-number 943 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded; __pycache__ excluded per #715); block key zero-hit repo-wide pre-commit (designed keying: iteration 1187 in key, no 943 substring); the nypost Oct-1 Anthropic URL zero-hit repo-wide pre-commit (git grep -F); the 5 relay URLs zero-hit repo-wide pre-commit; no #1187 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 63316/1511 pre-commit; forty-seventh member-claim form absent repo-wide pre-commit; thirty-eighth/thirty-ninth direction forms absent repo-wide pre-commit; thirty-fifth + thirty-sixth + thirty-seventh directions present.'
+    rotation_guard: "1185-1189 window THIRD leg: D (#1185) -> E (#1186) -> A (#1187, this run) -> B (#1188) -> C (#1189) per the #565 anchor + rotation guard; the 1180-1184 window verified closed (D #1180, E #1181, A #1182, B #1183, C #1184 as a consecutive newest-first sequence in git history; main/anchor/doc-sync/log-hash hashes verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1187 files on disk (glob); no 'Type A #1187' in git log (--grep); max numeric mechanism_id 942 pre-commit; zero numeric/underscore/dash 943 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; the 6 URLs zero-hit repo-wide pre-commit; no #1187 rows in README/ARCHITECTURE test tables pre-commit (sole iteration-log.md hit is #1186's 'Next: #1188 Type B continues the window' prose, documented); README stats 63316/1511 pre-commit; forty-seventh member-claim form absent repo-wide pre-commit; thirty-eighth/thirty-ninth direction forms absent repo-wide pre-commit; thirty-fifth + thirty-sixth + thirty-seventh directions present. Guard lifecycle: #1186's max-942 + zero-943-numeric + no-Type-A-#1187-in-git-log pins fail BY DESIGN at this run (pinned as forward-looking staleness in the #1187 test file); #1186's zero-943 underscore/dash, no-thirty-eighth/thirty-ninth, no-forty-seventh/forty-eighth, and thirty-fifth/thirty-sixth/thirty-seventh-intact guards stay green (verified via supersession pins in the #1187 test file); #1185's TestGuardLifecycle1185 fails BY DESIGN (max 943 landed; pinned in the #1187 staleness suite). This run lands mechanism 943; no new relationship direction (thirty-eighth absent by design). Next run is #1188 Type B, continuing the 1185-1189 window; do NOT touch #1024 m846."
+    key_design_note: 'Descriptive block key carries the iteration number 1187 but no underscore-form key substring for mechanism 943, per the #723/#738/#739/#747 designed-keying convention: keeps the zero-943 profile sweep instruments green while mechanism_id advances in colon form.'
+    no_analysis_json_update: true
+    correlation_not_causation: true
   perplexity:
     financial_tie: lawsuit_active
     estimated_value: $0 (litigated, not licensed)
