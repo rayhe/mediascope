@@ -26880,3 +26880,113 @@ vlad_savov:
       artifact_readiness: 'No analysis.json update warranted. Manual-illustrative journalist-level boundary pin; descriptive only, not artifact-grade.'
       background_suite_status: 'CHECKED ONLY per #795 - the #1180-launched full suite (goal hidden_files type_d_1180_full_suite.log) is STALLED at this run''s check (log 3233 bytes, last write Oct 3 14:56 PDT, progress frozen at 4%, no live pytest process at ps scan; ~70 min stale). This run checked only (no Type B #1183 / m941 markers in the suite log); does not touch it. Verdict belongs to #1185 per #795.'
       in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.'
+
+eli_tan:
+  name: Eli Tan
+  current_role: Technology reporter
+  current_publication: The New York Times
+  publication_owner: The New York Times Company
+  beat: [meta, wearables, AI]
+  career_history: 'CoinDesk (2021-2023, NFTs/gaming/metaverse) -> Columbia Journalism School -> Washington Post (business reporter, 2024) -> NYT fellow (2025, data centers, AI dating, gig economy) -> NYT technology reporter (2026); NYT''s newest dedicated Meta reporter alongside Mike Isaac (in-corpus profile notes; editorial_changes.yaml).'
+  notes: 'Type B #1188 (Oct 3 2026): mechanism 944 within-piece cross-entity stigma pin - FIRST dedicated Type B mechanism on Eli Tan in journalists.yaml (zero eli_tan YAML top-level key pre-commit, per the #643 convention; the journalists-list profile entry exists but carries no dedicated Type B mechanism). Question: in a single NYT column co-bylined by Tan, does the stigmatizing nickname attach to Meta''s product while competitors get the sanitized neutral frame? NEW META ARM (Sep-24-2026): NYT ''Complaints About Meta''s ''Pervert Glasses'' Won''t Slow Tech''s Wearable Gadgets Drive'' (co-byline Brian X. Chen and Eli Tan; Sep 24 2026 date attested via the NYT Headlines podcast Sep-25 episode listing; NYT original paywalled) - the HEADLINE brands Meta''s Ray-Bans ''Pervert Glasses''; the syndicated lede reports ''The Ray-Bans gained an unflattering nickname: ''Pervert glasses'''' and ''the cringe-inducing stories rolled in.'' COMPETITOR ARM (same piece, same date, same bylines): the dek frames the rest of the industry neutrally - ''That''s not stopping other companies from creating similar devices'' - no stigma nickname attaches to any competitor''s hardware. Illustrative delta (Meta minus other-companies) -0.50: the stigma vocabulary is entity-selective. Co-byline caveat per #678: the register is the piece''s, not isolable to Tan alone; Chen already carries his own Type B (mechanism_662, #713). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule.'
+  mechanism_ids: [944]
+  source_urls:
+  - https://muckrack.com/eli-tan
+  - https://aiweekly.co/alerts/meta-pushes-wearables-forward-despite-pervert-glasses-backlash
+  - https://www.youtube.com/watch?v=W9e0PHDseH4
+  competitor_coverage:
+    type_b_1188_eli_tan_nyt_pervert_glasses_stigma_vs_other_companies_neutral_within_piece:
+      iteration: 1188
+      mechanism_id: 944
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-03 20:00 PDT'
+      block_key: type_b_1188_eli_tan_nyt_pervert_glasses_stigma_vs_other_companies_neutral_within_piece
+      test_file: tests/test_type_b_1188_eli_tan_nyt_pervert_glasses_stigma_vs_other_companies_neutral_within_piece_oct03_8pm.py
+      author: Kit (with Ray)
+      journalist: Eli Tan
+      publication: The New York Times
+      window: '1185-1189 window FOURTH leg (D #1185 -> E #1186 -> A #1187 -> B #1188 -> C #1189)'
+      design: 'Type B journalist cross-entity tracking: FIRST dedicated Type B on Eli Tan (NYT technology reporter; NYT''s newest dedicated Meta reporter alongside Mike Isaac, CoinDesk -> Columbia -> WaPo -> NYT pipeline). WITHIN-PIECE cross-entity pair: both arms are the same Sep-24-2026 NYT column (''Complaints About Meta''s ''Pervert Glasses'' Won''t Slow Tech''s Wearable Gadgets Drive'', co-byline Brian X. Chen and Eli Tan), which CONTROLS for peg, genre, date, desk, and co-byline - the only variation is the entity being framed. Tests the financial-deal gradient at NYT: documented AI licensing deals with Google, Apple, Amazon (in-corpus Kang notes) and the reported-but-unverified NYT-Anthropic confidential settlement tie (per #1007); no documented NYT AI licensing deal with Meta; NYT sued OpenAI/Microsoft (adversarial tie). The deal gradient predicts stigma vocabulary lands on the non-counterparty. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. ASCII-only, no em dashes.'
+      new_meta_arm:
+        entity: meta
+        title: 'Complaints About Meta''s ''Pervert Glasses'' Won''t Slow Tech''s Wearable Gadgets Drive'
+        url: https://muckrack.com/eli-tan
+        publication: The New York Times (NYT original paywalled; relay/excerpt-bounded)
+        date: '2026-09-24'
+        byline: 'Brian X. Chen and Eli Tan (co-byline; byline attested via the muckrack author page ''By Brian Chen, Eli Tan'' and the NYT Headlines podcast Sep-25-2026 episode listing ''by Brian X. Chen and Eli Tan''; the stigma register is the piece''s, not isolable to Tan alone - co-byline caveat per the #678 convention)'
+        genre: analysis column
+        register: stigma
+        key_quotes:
+        - 'Headline: ''Complaints About Meta''s ''Pervert Glasses'' Won''t Slow Tech''s Wearable Gadgets Drive'' - the stigmatizing nickname is attached to Meta''s product in the headline itself.'
+        - '''The Ray-Bans gained an unflattering nickname: ''Pervert glasses.'''' (syndicated lede, The Star Malaysia)'
+        - '''So much can change in a year. As sales of the US$300 glasses grew, the cringe-inducing stories rolled in.'' (syndicated lede)'
+        register_notes: 'Stigma register on Meta''s wearables: the column''s own headline applies the ''Pervert Glasses'' nickname to Meta''s Ray-Bans, and the lede carries ''unflattering nickname'' plus ''cringe-inducing stories.'' The thesis (complaints will not slow the industry drive) is industry-constructive, but the stigma vocabulary is entity-selective to Meta.'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        tone_basis: 'hand-assigned this run from relay/excerpt reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'relay-bounded per #503 (0 browser.open on the NYT paywalled original; muckrack dek + Star syndication lede + aiweekly relay summary; 1 browser.open on the muckrack author page for byline/portfolio attestation)'
+        source_urls:
+        - https://muckrack.com/eli-tan
+        - https://aiweekly.co/alerts/meta-pushes-wearables-forward-despite-pervert-glasses-backlash
+        - https://www.youtube.com/watch?v=W9e0PHDseH4
+      other_companies_arm:
+        entity: other_companies
+        title: 'Complaints About Meta''s ''Pervert Glasses'' Won''t Slow Tech''s Wearable Gadgets Drive'
+        url: https://muckrack.com/eli-tan
+        publication: The New York Times (same piece)
+        date: '2026-09-24'
+        byline: 'Brian X. Chen and Eli Tan (same co-byline; same-piece control)'
+        genre: analysis column
+        register: industry-momentum neutral
+        key_quotes:
+        - '''Meta''s smart glasses are the latest in a line of products to raise eyebrows over privacy. That''s not stopping other companies from creating similar devices.'' (NYT dek via muckrack)'
+        - '''The New York Times argues that consumer complaints about covert recording will not slow the broader industry''s push into face-worn hardware.'' (aiweekly relay summary)'
+        register_notes: 'Neutral industry-momentum register for every non-Meta wearable maker: competitors'' functionally similar devices are ''similar devices'' with no nickname, no ''cringe-inducing'' vocabulary, no privacy-alarm framing attached to them. The dek positions the industry as unstoppable innovation; the stigma stays on Meta.'
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        tone_basis: 'hand-assigned this run from relay/excerpt reads, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'relay-bounded per #503 (same relay set as the Meta arm)'
+        source_urls:
+        - https://muckrack.com/eli-tan
+        - https://aiweekly.co/alerts/meta-pushes-wearables-forward-despite-pervert-glasses-backlash
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY (Aug 28 2026 standing rule); engine NOT run at the finding layer; NOT artifact-grade'
+        new_meta_arm_tone: -0.45
+        other_companies_arm_tone: 0.05
+        illustrative_delta_meta_minus_others: -0.50
+        delta_calc: '-0.45 - 0.05 = -0.50'
+        engine_run: false
+        is_significant: false
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        note: 'Within-piece design: peg, genre, date, desk, and co-byline are all HELD CONSTANT - the only variation is the entity framed. The illustrative gap (-0.50) is therefore pure vocabulary selection: the column''s stigma nickname brands Meta''s product in the headline while competitors'' similar devices get the sanitized neutral frame. n=1 per arm; directional only.'
+      financial_context: 'NYT: documented AI content-licensing deals with Google ($100M+), Apple, and Amazon (in-corpus Kang notes); the reported-but-unverified NYT-Anthropic confidential settlement/licensing tie (per #1007, single-source FinancialContent Dec 29 2025); adversarial tie with OpenAI/Microsoft (NYT sued both for copyright infringement). Meta: no documented NYT AI licensing deal. The financial-deal gradient predicts stigma vocabulary lands on the non-counterparty (Meta) and stays off the counterparties - which is what the column shows. Correlation, not causation.'
+      finding: 'WITHIN-PIECE cross-entity stigma pin at the journalist level: Eli Tan''s Sep-24-2026 NYT column (co-bylined with Brian X. Chen) applies the ''Pervert Glasses'' stigma nickname to Meta''s Ray-Bans in the headline and ''cringe-inducing stories'' in the lede, while the dek frames every other company''s functionally similar devices neutrally (''That''s not stopping other companies from creating similar devices''). Illustrative delta (Meta minus others) -0.50 with peg/genre/date/desk/co-byline all held constant - the asymmetry is pure vocabulary selection. Theory-CONSISTENT with the financial-deal gradient (stigma on the non-counterparty; NYT holds documented AI licensing ties with Google/Apple/Amazon). Extends m484 (Chen''s Meta-vs-Apple privacy vocabulary bifurcation) and mechanism_662 (Chen Duo vs Ray-Ban register gradient) to Tan''s own byline, and joins the within-piece asymmetry family. NOT a falsification-family member: no uniform payer-softening prediction is refuted here; single-column pin with a co-byline. Ledger holds at 46.'
+      confounders:
+      - 'STRONG: Co-byline attribution - the column is Chen + Tan; the stigma register is the piece''s register, not isolable to Tan alone (co-byline caveat per the #678 convention). Tan''s personal voice cannot be separated from Chen''s in this unit.'
+      - 'STRONG: Headline vs body register split - the column''s THESIS is industry-constructive (complaints will not slow the drive), which is arguably Meta-favorable in substance; the stigma is concentrated in the headline and lede. The tone score weights headline vocabulary, a defensible but contestable choice.'
+      - 'MODERATE: Nickname is pre-existing - ''Pervert Glasses'' is a circulating public nickname, not coined by the column; the column reports it. Attaching the circulating nickname in the headline is still an editorial vocabulary choice.'
+      - 'MODERATE: Evidence tier - relay-bounded (muckrack dek, Star syndication lede, aiweekly relay summary, podcast listing); NYT original paywalled, 0 browser.open on it per #503. Register inferred from relays and excerpts, not full-text reads.'
+      - 'WEAK: n=1 per arm - one column only, illustrative tones hand-assigned; no generalization to Tan''s full portfolio.'
+      counter_evidence:
+      - 'COUNTEREVIDENCE: The column''s thesis (the industry drive continues despite complaints) is substantively constructive for Meta''s wearables business - a reader could leave the piece bullish on Meta glasses, bounding any ''NYT is hostile to Meta'' inference.'
+      - 'COUNTEREVIDENCE: Tan''s own Sep-23 Connect relay (''Meta Unveils 3 Smart Glasses With Built-In A.I.'', +0.10 in-corpus at m835) is factual-neutral on Meta, bounding the stigma finding to the column register, not the journalist.'
+      - 'COUNTEREVIDENCE: Tan''s ''I Gave My Life Over to Meta''s A.I. Agent and Was Blown Away'' hands-on is constructive on Meta''s AI agent - his register varies by peg, consistent with peg-merited variation rather than entity targeting.'
+      - 'COUNTEREVIDENCE: Chen''s mechanism_662 (#713) already paired Chen''s Ray-Ban privacy-alarm register against his Google Duo value review - the stigma-gradient finding at this byline is partially pre-established; the new work is Tan''s attribution and the within-piece control design.'
+      - 'COUNTEREVIDENCE: ''Other companies'' are unnamed in the dek - the neutral frame could reflect vagueness rather than softening; a named-competitor piece might carry different vocabulary.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED; is_significant false; engine NOT run at the finding layer per the Aug 28 2026 standing rule; no significance claimed. NOT artifact-grade. ASCII-only, no em dashes.'
+      verdict: 'directionally_supported_not_proven: journalist-level within-piece cross-entity stigma pin. Tan''s Sep-24 column brands Meta''s Ray-Bans ''Pervert Glasses'' in the headline while framing competitors'' similar devices neutrally; illustrative delta -0.50 with all contextual variables held constant. Theory-consistent with the financial-deal gradient (stigma on the non-counterparty). NOT a falsification-family member; ledger holds at 46.'
+      cautious_language_required: true
+      correlational_note: 'Correlation does not establish causation. NYT''s AI licensing deals are structural facts; the observed vocabulary gap is attributed to editorial framing choices, not to the deals. No evidence of editorial direction was reviewed.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 46
+      ledger_note: 'Ledger holds at 46. FORTY-SIXTH member-form present (m907, profiles/the-verge.yaml). FORTY-SEVENTH member-claim form absent repo-wide; FORTY-EIGHTH member-claim form absent repo-wide. This run claims no falsification-family slot.'
+      connects_to: [484, 662, 835, 416, 558]
+      novelty: 'FIRST dedicated Type B mechanism on Eli Tan in journalists.yaml (zero eli_tan YAML top-level key pre-commit, per the #643 convention; the journalists-list profile entry carries no dedicated Type B mechanism). The Sep-24 Chen+Tan ''Pervert Glasses'' column is a fresh in-corpus peg (Sep 24 2026). Pre-commit novelty greps per #715: zero test_type_b_1188 files on disk (glob); no "Type B #1188" in git log (--grep); max numeric mechanism_id 943 in profiles/ pre-commit; zero numeric/underscore/dash 944 mechanism keys repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1188 in key, no 944 substring); the 3 evidence URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); eli_tan YAML top-level key zero-hit pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '7 browser.search query sets + 1 browser.open Oct 3 2026 PDT: (1) Ray-Ban Meta Audio review journalist - CONTEXT (surfaced the Audio discourse); (2) Julian Chokkattu WIRED Connect 2026 - REJECTED (saturated: m39/m252/m354/m362/m426); (3) Joanna Stern WSJ Meta glasses - REJECTED (saturated: corpus Type B Aug 7); (4) FTC probe Oct-1 byline - REJECTED (no clean journalist pair; wire/relay coverage); (5) Steve Kovach CNBC Connect 2026 - REJECTED (no Kovach byline surfaced); (6) Tim Bradshaw FT Meta - REJECTED (saturated: m558, Type B #558); (7) NYT "Meta Unveils 3 Smart Glasses" byline - SELECTED (surfaced Eli Tan via muckrack) + Eli Tan "pervert glasses" - SELECTED (Chen+Tan co-byline, Sep 24 2026, attested via muckrack dek, Star syndication lede, aiweekly relay, Headlines podcast listing) + Eli Tan portfolio sweep - CONTEXT (rejected as competitor-arm sources: fellow-era and Meta-centered pieces). 1 browser.open: the muckrack author page (relay-tier excerpt recovery for byline/dek/portfolio). 0 browser.open on the NYT paywalled original per #503. Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted. Manual-illustrative journalist-level within-piece pin; descriptive only, not artifact-grade.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1185-launched full suite (goal hidden_files type_d_1185_full_suite.log) is RUNNING at this run''s check (log 6950 bytes, last write Oct 3 20:03 PDT, progress 9%, live pytest processes at ps scan). This run checked only (no Type B #1188 / m944 markers in the suite log); does not touch it. Verdict belongs to #1190 per #795.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson. Do NOT touch #1024 m846.'
