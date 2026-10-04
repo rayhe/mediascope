@@ -91,7 +91,7 @@ MAX_ID = 946
 NEXT_NUM = 947
 
 # Patched by the anchor followup commit per #565 (post-main-commit).
-ANCHORED_SHA = "0" * 40  # placeholder; patched per #565 in the anchor followup
+ANCHORED_SHA = "8370c39e07051012a094579286a7763e871c76a5"  # patched per #565 in the anchor followup
 
 # Doc-sync constants per #719 (patched post-first-run with the true
 # collected count).
