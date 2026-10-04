@@ -69,7 +69,7 @@ ANCHORED_SHA = "2f5cb0c944d31e225170eda92a30a1926797229e"
 # patched to the post-sync-positive values after the first collection run
 # (README ratchets 63065/1508 -> 63065+N/1509 in the doc-sync followup).
 README_TEST_COUNT = 63140
-README_FILE_COUNT = 1508
+README_FILE_COUNT = 1509
 
 # Forward guards for the next landing. MECH_NUM=942 is THIS run's landed
 # mechanism; NEXT_NUM=943 stays forward.

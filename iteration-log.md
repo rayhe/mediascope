@@ -43793,3 +43793,48 @@ Push status (this run, Oct 3 2026 ~16:xx PDT): main + anchor followup pushed and
 - This run is iteration #1183 Type B, the FOURTH leg of the 1180-1184 window (D #1180 -> E #1181 -> A #1182 -> B #1183 -> C #1184 per the #565 anchor + rotation guard).
 - Committed predecessors verified pre-commit: #1182 Type A (main f0844481 / anchor 62d35290 / doc-sync 753aec68 / log-hash b01ef6e0), #1181 Type E (main 7db1d62b / anchor be097edd / doc-sync 0e2192fa / log-hash 4e0cd3dc), #1180 Type D (main f8d8356e / anchor a3503d51 / doc-sync f18343d0 / log-hash f3d16b13), all present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1184 Type C closes the window.
+
+
+## #1184 Type C: Stability AI x Big Three music labels invest-and-license (m942, THIRTY-SEVENTH relationship direction) - CLOSES the 1180-1184 window
+
+### Finding summary
+- m942 (profiles/competitor-entities.yaml, NEW top-level `type_c_1184_...` key per the Type C convention, `mechanism_id: 942` numeric colon-form): FIRST dedicated corpus mechanism on the Stability AI x Big Three music labels INVEST-AND-LICENSE - lands the THIRTY-SEVENTH relationship direction.
+- $76M Series B announced Aug 25 2026; Universal Music Group + Sony Music Group + Warner Music Group take equity in the same AI company for the first time (TechTimes) WHILE simultaneously licensing their catalogs for training "as part of the deal" (TechCrunch Oct 2 2026). $232M total raised under CEO Prem Akkaraju (since Jun 2024); last raise $50M in 2024. Investors: UMG/SMG/WMG, Electronic Arts, AMD Ventures, Pacific Alliance Ventures; returning Coatue, Greycroft, Kadmos Capital, Sean Parker, Eric Schmidt; Coatue co-founder Thomas Laffont joins the board.
+- The geometry: the rights-holder takes a minority equity stake while licensing its catalog - license and equity close in the SAME round; the licensor is paid twice (content license + company upside) and the upside is powered by the licensed content. License-first-then-invest: UMG+EA Oct 2025 / WMG Nov 2025 product partnerships converted into equity at the Series B; Sony joined with no announced prior partnership (pure optionality).
+- Napster inversion: Sean Parker (Napster co-founder, executive chairman) + Akkaraju "rebuilding Stability AI around music" (TechCrunch Oct 2 2026, "180 from Napster"); the company previously trained models on pirated data.
+- Artist exclusion (TechTimes "Artists Still Get Nothing"): catalog leverage converts to label-held equity; artists don't share the upside.
+- Adversarial context (IQMA): the same three labels sued Suno and Udio (UMG-Udio late Oct 2025; WMG-Suno/Udio mid-Nov 2025; Sony v Udio active; UMG/Sony v Suno no trial date); Warner "grow as partners grow" shareholder terms. Getty v Stability: UK win, US ongoing.
+- Distinct from m804 (Noxtua majority-ownership, no license leg), m391 (Comet Plus 80/20 revenue-share, not equity), m594-family flat-fee cash licenses, m663 Perplexity premium-data licensing. Coverage-softening NOT tested (labels are not tracked publications) - Type A follow-up. NOT a falsification-family member; ledger holds at 46.
+- Confounders (strong-first): (1) STRONG: excerpt-tier evidence, 0 browser.open per #503. (2) STRONG: both money legs undisclosed (per-label stakes, governance, license fees) - "paid twice" is geometric, not sized. (3) MODERATE: Sony leg may be pure optionality. (4) MODERATE: minority stakes, governance undisclosed. (5) MODERATE: artist-exclusion is TechTimes editorial framing. (6) WEAK: labels are not tracked publications - incentive-geometry mapping per #609/#614, not a coverage experiment.
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (tone NOT_SCORED, engine NOT run, is_significant False, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade). 3 browser.search calls / 5 queries, 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_c_1184 files on disk (glob); no "Type C #1184" in git log (--grep); max numeric mechanism_id 941 in profiles/ pre-commit; zero numeric/underscore/dash 942 mechanism keys repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1184 in key, no 942 substring); the 8 evidence URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); FORTY-SEVENTH/FORTY-EIGHTH member-claim forms absent repo-wide; THIRTY-FIFTH + THIRTY-SIXTH directions present; THIRTY-SEVENTH/THIRTY-EIGHTH direction forms absent repo-wide (this run LANDS the thirty-seventh).
+- Research path: 3 browser.search calls / 5 queries - (1) sean-parker-stability-ai-music-pivot (TechCrunch Oct-2 Parker interview + temperature2 full roster SELECTED); (2) stability-ai-76m-series-b follow-up (TechTimes artist-exclusion + MBW round-up + AI Weekly/Variety corroboration); (3) MBW weekly round-up corroboration. REJECTED: Microsoft x HarperCollins Bloomberg Law piece (re-crawl of the Nov 2024 deal already in-corpus as m524, not a new deal); OpenAI content-licensing with Google/Microsoft/Amazon (no new disclosed deal).
+- Tests: tests/test_type_c_1184_stability_ai_big_three_labels_invest_and_license_thirty_seventh_direction_oct03_5pm.py - 75 tests collected, 13 classes. Pre-commit in-gate: 63 passed + 12 deselected by design (TestAnchor 4 per #565 + TestDocSync 5 + TestIterationLog 3 per #719); 1 in-gate defect fixed (contiguous landed thirty-seventh form in test source replaced with the format-built needle per #715).
+- Forward guards for #1185: zero-943 keys all forms; max 942; no forty-seventh/forty-eighth member-claim; thirty-fifth + thirty-sixth + thirty-seventh directions present; no thirty-eighth direction-claim.
+- Background-suite status per #795: the #1180-launched full suite (goal hidden_files type_d_1180_full_suite.log) checked only this run - STALLED (log 3233 bytes, last write Oct 3 14:56 PDT, progress frozen at 4%, no live pytest process at ps scan, ~2h12m stale; byte-identical to #1183's check); NOT touched; its verdict belongs to #1185 per #795.
+
+### New Type C files
+tests/test_type_c_1184_stability_ai_big_three_labels_invest_and_license_thirty_seventh_direction_oct03_5pm.py (new, 75 tests, 13 classes)
+profiles/competitor-entities.yaml (m942 block appended at end of file)
+
+### Doc-sync ratchet
+README stats table 63065/1508 -> 63140/1509 (+75/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry (this entry); test-file constants already in post-sync-positive form per #719 (README_TEST_COUNT=63140, README_FILE_COUNT=1509 patched pre-doc-sync).
+
+### Push status
+Push status (this run, Oct 3 2026 ~17:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson (competitor-entities.yaml + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+
+### Commit hashes
+- Main commit `2f5cb0c9` (2f5cb0c944d31e225170eda92a30a1926797229e) - verified via git rev-parse
+- Anchor followup `5733916b` (5733916ba9f4bc56e870b61ed85394ec1a559d4c; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `<pending>` (<pending>; README 63065/1508 -> 63140/1509; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main 2f5cb0c9 / anchor 5733916b / doc-sync <pending> hashes in the #1184 log entry
+
+### Rotation transparency
+- This run is iteration #1184 Type C, the FIFTH and CLOSING leg of the 1180-1184 window (D #1180 -> E #1181 -> A #1182 -> B #1183 -> C #1184 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1183 Type B (main faa3b001 / anchor 38d15b62 / doc-sync 09496c47 / log-hash 6403ee05), #1182 Type A (main f0844481 / anchor 62d35290 / doc-sync 753aec68 / log-hash b01ef6e0), #1181 Type E (main 7db1d62b / anchor be097edd / doc-sync 0e2192fa / log-hash 4e0cd3dc), #1180 Type D (main f8d8356e / anchor a3503d51 / doc-sync f18343d0 / log-hash f3d16b13), all present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1185 Type D opens the 1185-1189 window.
