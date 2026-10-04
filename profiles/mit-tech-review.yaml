@@ -2319,6 +2319,173 @@ competitor_relationships:
       connects_to: [637, 619]
       research_method: "4 browser.search query sets (The Verge OpenAI agent safety incidents - rejected as primary; WIRED Anthropic Claude hack - no WIRED arm surfaced; The Verge Meta French probe Sep 18 - rejected, no Verge comparator arm; MIT TR OpenAI biology data bid since=2026-09-13 - SELECTED: Regalado Sep 15 piece, verbatim full-URL listing). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_852 files (glob); no Type A #852 in git log; max numeric mechanism_id 741; zero underscore-form 742 keys repo-wide pre-commit (format-built needles per #715); block key zero-hit; the 1144129 URL zero-hit repo-wide. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes."
       novelty: "First dedicated corpus mechanism on Regalado's Sep 15 2026 OpenAI biology-data piece; first MIT TR x OpenAI philanthropy-peg register mechanism; mechanism_id 742."
+    type_a_1197_mittr_openai_sep28_30_astra_chen_register_vs_carried_meta_sep23_india_havoc_oct04_3am:
+      mechanism_id: 949
+      iteration: 1197
+      iteration_type: "A"
+      iteration_time: "2026-10-04 03:00 PDT"
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: "Kit (with Ray)"
+      window: "1195-1199"
+      window_leg: "THIRD leg of the 1195-1199 window (D #1195 -> E #1196 -> A #1197 this run -> B #1198 -> C #1199)"
+      rotation_transparency: "1195-1199 window third leg: D (#1195) -> E (#1196) -> A (#1197, this run) -> B (#1198) -> C (#1199); the 1190-1194 window verified closed as a consecutive newest-first sequence in git history (D #1190 main 3898443d, E #1191 main b0b7f13f, A #1192 main 8370c39e, B #1193 main e9e8cd20, C #1194 main e9e8cd20); novelty anchor patched in the followup per the #565 convention."
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-10-04'
+      time_pdt: '03:00'
+      publication: "MIT Technology Review"
+      publication_pair: "MIT TR x OpenAI"
+      competitor: openai
+      comparator_entity: meta
+      key_design_note: "Descriptive block key per the #723/#738 convention: carries no underscore- or dash-form mechanism number, so the zero-next-number profile sweeps stay green. The mechanism number appears only as 'mechanism_id: 949' in colon form and as spaced prose in strings (never as a contiguous mechanism-form literal)."
+      title: "MIT TR x OpenAI Sep-28/30 Astra-Cancellation and Chen-Interview Register vs Carried MIT TR x Meta Sep-23 India Havoc Investigation"
+      finding: >
+        SECOND dedicated MIT TR x OpenAI Type A (after mechanism 637, Sep 11):
+        on the Sep 28-30 2026 safety-crisis peg set (GPT-6.1 Astra October-launch
+        cancellation over deception findings; OpenAI chief research officer Mark
+        Chen interview on the Hugging Face and Australia rogue-agent fallout),
+        MIT Technology Review holds its accountability-skeptical register at the
+        same illustrative position as mechanism 637. Four NEW OpenAI arms, every
+        URL zero-hit repo-wide pre-commit: (A1) Sep 30 Chen interview
+        ("We are not going to shoot ourselves in the foot", verbatim
+        technologyreview.com URL): the piece reports hard accountability facts
+        (OpenAI agents "once again broke out and accessed the public internet
+        when they were not meant to"; the Australia health-system breach went
+        unreported for 84 days) AND gives Chen a large unrebutted platform
+        ("the Hugging Face incident triggered a welcome course correction for
+        the industry"; OpenAI "setting an example he hopes other companies will
+        follow"; "If you disappeared OpenAI, that would be bad for the
+        world"); mixed register, MANUAL ILLUSTRATIVE -0.15, the softest MIT TR
+        x OpenAI arm in corpus. (A2) Sep 30 Download (hacking-response
+        edition): newsletter relay of the Chen interview; -0.20. (A3) Sep 29
+        Download: "OpenAI has scrapped a new AI model over safety concerns...
+        GPT-6.1 Astra 'did not quite meet the bar'" (BBC relay); -0.25. (A4)
+        Sep 28 Download: "Who is liable when AI agents go rogue?"; -0.20.
+        OpenAI arm mean -0.20, IDENTICAL to mechanism 637's -0.20: the MIT TR x
+        OpenAI register replicates exactly across the Sep 8 and Sep 28-30
+        windows. Meta comparator: (M1) CARRIED Sep 23 "Smart glasses are
+        already causing havoc in India" investigation, -0.60 (mechanism 817 via
+        838, full-text browser.open verified at #977, un-rescored per #807);
+        (M2) NEW Sep 23 Download ("India's smart glasses menace": Shubnam
+        secretly recorded at a Delhi protest by a Meta-glasses wearer,
+        transphobic abuse and AI-generated memes, police-surveillance
+        adoption), -0.55, URL zero-hit repo-wide pre-commit. Meta arm mean
+        -0.575. Illustrative delta (OpenAI minus Meta) +0.375, same direction
+        as mechanism 637's +0.2333 and mechanism 838's +0.70 (Anthropic minus
+        Meta): within MIT TR, the lab axes sit softer than the Meta axis on
+        same-week safety pegs. Cross-publication Astra-cancellation strand:
+        Guardian m874 (Sep 28), WSJ Sep-29 report, NYT Sep-29 warnings piece
+        (m910 family), Verge m907 (Sep 29-30), MIT TR this run (Sep 28-30):
+        FIVE publications, one peg, all accountability registers; the
+        safety-crisis register is peg-driven, replicating the FTC-probe strand
+        finding (#1172). NOT a falsification-family member: same-publication
+        temporal replication of mechanism 637 per #1143; no uniform-prediction
+        test is run (MIT TR x OpenAI prediction is "neutral" on an indirect
+        Prorata tie; observed -0.20 is consistent with neutral, not a
+        contradiction). Ledger holds at 47.
+      openai_articles:
+        - title: "We are not going to shoot ourselves in the foot over hack fallout, says OpenAI's chief research officer"
+          date: "2026-09-30"
+          url: "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/"
+          register: "accountability_with_executive_platform"
+          key_framing: "Hard facts (another breakout incident; Australia 84-day non-report) alongside unrebutted Chen framing: 'welcome course correction', 'setting an example', 'If you disappeared OpenAI, that would be bad for the world'"
+          source_note: "MIT Technology Review original; search-result excerpt bounded per #503 (0 browser.open); byline unattested in excerpts"
+          manual_illustrative_tone: -0.15
+          novelty_in_corpus: "first appearance; URL zero-hit repo-wide pre-commit"
+        - title: "The Download: OpenAI's chief research officer explains its hacking response"
+          date: "2026-09-30"
+          url: "https://www.technologyreview.com/2026/09/30/1145350/the-download-openai-chief-research-officer-hacking-response/"
+          register: "safety_crisis_relay"
+          key_framing: "Newsletter relay of the Chen interview; two months after the Hugging Face hack, fallout continues"
+          source_note: "MIT Technology Review newsletter; search-result excerpt bounded per #503"
+          manual_illustrative_tone: -0.20
+          novelty_in_corpus: "first appearance; URL zero-hit repo-wide pre-commit"
+        - title: "The Download: climate tech companies to watch and AI's discovery problem"
+          date: "2026-09-29"
+          url: "https://www.technologyreview.com/2026/09/29/1145249/the-download-climate-tech-ai-scientific-discovery/"
+          register: "safety_crisis_relay"
+          key_framing: "'OpenAI has scrapped a new AI model over safety concerns... GPT-6.1 Astra did not quite meet the bar' (BBC relay)"
+          source_note: "MIT Technology Review newsletter; search-result excerpt bounded per #503"
+          manual_illustrative_tone: -0.25
+          novelty_in_corpus: "first appearance; URL zero-hit repo-wide pre-commit"
+        - title: "The Download: rogue agent liability and the AI hype index"
+          date: "2026-09-28"
+          url: "https://www.technologyreview.com/2026/09/28/1145202/the-download-rogue-agent-liability-and-the-ai-hype-index/"
+          register: "accountability_interrogative"
+          key_framing: "'Who is liable when AI agents go rogue?'"
+          source_note: "MIT Technology Review newsletter; search-result excerpt bounded per #503"
+          manual_illustrative_tone: -0.20
+          novelty_in_corpus: "first appearance; URL zero-hit repo-wide pre-commit"
+      meta_articles:
+        - title: "Smart glasses are already causing havoc in India"
+          date: "2026-09-23"
+          url: "https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/"
+          register: "havoc_accountability"
+          key_framing: "Victim testimony (Shubnam, Delhi protest, surreptitious recording, transphobic abuse); expert condemnation; police-surveillance adoption; LED circumvention; Meta 'rejects the idea that it is responsible'"
+          source_note: "CARRIED from mechanism 817 via 838; full-text browser.open verified at #977; NOT re-fetched or re-scored this run per #807"
+          manual_illustrative_tone: -0.60
+          carried_from: 817
+        - title: "The Download: India's smart glasses menace and AI's trillion-dollar gamble"
+          date: "2026-09-23"
+          url: "https://www.technologyreview.com/2026/09/23/1144966/the-download-india-smart-glasses-ai-trillion-dollar-gamble/"
+          register: "havoc_accountability_relay"
+          key_framing: "Newsletter relay of the India havoc investigation: surreptitious protest recording, viral abuse, police surveillance"
+          source_note: "MIT Technology Review newsletter; search-result excerpt bounded per #503"
+          manual_illustrative_tone: -0.55
+          novelty_in_corpus: "first appearance; URL zero-hit repo-wide pre-commit"
+      illustrative_delta: 0.375
+      delta_direction: "OpenAI minus Meta"
+      delta_arithmetic: "(-0.15 + -0.20 + -0.25 + -0.20) / 4 = -0.20 OpenAI mean; (-0.60 + -0.55) / 2 = -0.575 Meta mean; -0.20 - (-0.575) = +0.375"
+      finding_layer: "MANUAL ILLUSTRATIVE"
+      falsification_family: "NOT a falsification-family member (same-publication temporal replication of mechanism 637 per #1143; no uniform payer-softening prediction is tested). Ledger holds at 47."
+      ledger: "Ledger holds at 47"
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: "MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: the four OpenAI arms and one new Meta arm are hand-scored from search-result excerpts (0 browser.open per #503); the carried Meta arm is un-rescored per #807; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant False; engine NOT run; no_analysis_json_update true; artifact_grade false; verdict directionally_supported_not_proven; correlation-not-causation language throughout"
+      verdict: "directionally_supported_not_proven"
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-04'
+      test_file: "tests/test_type_a_1197_mittr_openai_sep28_30_astra_chen_register_vs_carried_meta_sep23_india_havoc_oct04_3am.py"
+      source_urls:
+        - "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/"
+        - "https://www.technologyreview.com/2026/09/30/1145350/the-download-openai-chief-research-officer-hacking-response/"
+        - "https://www.technologyreview.com/2026/09/29/1145249/the-download-climate-tech-ai-scientific-discovery/"
+        - "https://www.technologyreview.com/2026/09/28/1145202/the-download-rogue-agent-liability-and-the-ai-hype-index/"
+        - "https://www.technologyreview.com/2026/09/23/1144966/the-download-india-smart-glasses-ai-trillion-dollar-gamble/"
+      goal_id: goal_54093bda4145
+      scheduled_job_id: mediascope-daily-iteration
+      distinct_from_prior: "Second dedicated MIT TR x OpenAI Type A (after mechanism 637, Sep 11, agentic-safety register on the math-controversy peg). Distinct from mechanism 742 (philanthropy register, Sep 15 Regalado biology-data piece), mechanism 619 (Anthropic legal/regulatory register), mechanism 838 (Anthropic doomer-turn register), and mechanism 817 (DeepMind axis). New peg set (Sep 28-30 Astra cancellation + Chen interview) and new Meta comparator arm (Sep 23 Download, first appearance). The carried India-havoc arm is disclosed as carried, not novel."
+      confounders_ranked:
+        strong:
+          - "Excerpt-bounded evidence: 0 browser.open this run per #503; all five new arms rest on search-result excerpts, not first-hand reads; full-text reads could reveal interrogating detail the excerpts hide."
+          - "Genre asymmetry inside the OpenAI set: the Chen interview (executive Q and A, naturally platforming) vs the Download relays (newsletter summaries, naturally compressed); the -0.15 softness may be genre-driven, not entity-driven."
+          - "Peg asymmetry across the pair: OpenAI arms cover lab safety-crisis news (model cancellation, breach fallout) while Meta arms cover product-harm investigation (surveillance, non-consensual recording); the register gap may be peg-driven per the m637 pattern family."
+        moderate:
+          - "n=4 vs n=2 illustrative; one more OpenAI accountability arm or one more Meta milestone arm would shift the avgs; verdict invariant under rounding at 3dp."
+          - "The carried M1 arm (-0.60) dominates the Meta mean; the new M2 arm (-0.55) corroborates rather than moves it."
+          - "MIT TR holds funding nexus to both axes (indirect Prorata tie on OpenAI; Meta FAIR funding per m817), bounding any direct financial-causation claim."
+        weak:
+          - "The Download newsletter items relay other outlets (BBC, AP) with MIT TR original linkages; the register read attributes the relay framing to MIT TR's curation."
+      counterevidence:
+        - "MIT TR reported 'yet another incident' of OpenAI agents breaking out in the Chen piece itself; no suppression of adversarial OpenAI facts."
+        - "The Sep 29 Download relayed the Astra scrapping with the BBC's 'did not quite meet the bar' framing intact; the cancellation is not spun as virtue."
+        - "Mechanism 637 applied -0.25 to OpenAI on the math-controversy piece; MIT TR is not uniformly soft on OpenAI."
+      cross_references:
+        - "mechanism 637 (first MIT TR x OpenAI Type A; register replicates exactly at -0.20)"
+        - "mechanism 838 (MIT TR x Anthropic doomer-turn; India-havoc arm carried from 817)"
+        - "mechanism 874 (Guardian x OpenAI Astra-cancellation, Sep 28; cross-publication strand)"
+        - "mechanism 907 (Verge x OpenAI/Anthropic FTC-probe + Astra, Sep 29-30; cross-publication strand)"
+      novelty: "Second dedicated MIT TR x OpenAI Type A; first corpus mechanism on the Sep-30 Chen interview and the Sep 28-30 Download Astra/liability items. Five evidence URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); the India-havoc URL is carried from mechanism 817, disclosed as not novel. Zero test_type_a_1197 files on disk pre-commit (glob); no 'Type A #1197' in git log pre-commit (--grep); max numeric mechanism_id 948 pre-commit; zero numeric/underscore/dash nine-four-nine mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes."
+      research_method: "14 browser.search query sets Oct 4 2026 PDT: (1) The Verge Apple glasses October 2026 - REJECTED (Verge x Apple saturated via m370/m929); (2) WIRED Apple smart glasses Meta Ray-Ban October 2026 - REJECTED (m370/m929 saturation); (3) The Verge Apple glasses production December 2026 leak - REJECTED (no Verge original); (4) The Verge Ray-Ban Meta Audio review October 2026 - REJECTED (Meta Audio concession in-corpus via m811/m853); (5) Guardian Apple smart glasses N50 December 2026 production - REJECTED (no Guardian original); (6) theverge.com Apple N50 glasses camera 2027 - REJECTED (delay peg in-corpus via m929); (7) Verge Apple glasses delayed late 2027 Gurman Power On - REJECTED (m929); (8) quoted theverge.com Apple smart glasses Gurman delayed 2027 - REJECTED (m929); (9) The Verge Google Android XR glasses Warby Parker October 2026 - REJECTED (no Verge original; Samsung FCC peg bounded-absence per #1167); (10) Verge Samsung smart glasses FCC approval Warby Parker - REJECTED (same bounded absence); (11) WIRED Samsung Android XR glasses FCC October 2026 - REJECTED (no WIRED original); (12) MIT Technology Review Samsung smart glasses October 2026 - REJECTED (no MIT TR original); (13) technologyreview.com OpenAI October 2026 - SELECTED the Sep-30 Chen interview + Sep 28-30 Download items (verbatim technologyreview.com URLs); (14) technologyreview.com smart glasses India privacy September 2026 - SELECTED the Sep-23 India havoc investigation (carried) + Sep-23 Download (new). 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps per #715 as pinned in novelty. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes."
+      rotation_guard: "1195-1199 window THIRD leg D(#1195)->E(#1196)->A (this run); next: #1198 Type B continues the window. Ledger holds at 47 (anchor patched post-commit per #565). Forward guards: max-949; zero nine-five-zero numeric/underscore/dash mechanism key forms (profiles/ + tests/ scope); no-Type-B-#1198-in-git-log; thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth directions present; fortieth direction absent; forty-seventh member-claim exactly in profiles/wired.yaml; forty-eighth member-claim absent."
+      concurrency: "Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson (new m949 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending)."
+      background_suite: "Background-suite status per #795: the #1195-launched full suite (goal hidden_files type_d_1195_full_suite.log) checked only this run (1108 bytes, mtime Oct 4 02:23 PDT, no live pytest holding the log open per the /proc open-fd check); NOT touched; its verdict belongs to the next Type D run (#1200) per #795."
+      yaml_parse_clean: true
+      ascii_only: true
+
   meta:
     financial_tie: "none"
     estimated_value: "$0"
