@@ -44388,3 +44388,49 @@ Push status (this run, Oct 4 2026 ~03:xx PDT): main + anchor followup pushed and
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson (m949 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
 ---
+
+
+## #1198 Type B: m950 Rita El Khoury (Android Police) single-arm WATCH - Google Android XR Sep-17 hands-on arm (+0.55 illustrative, excerpt-attested); Meta arm ABSENT after bounded search; dated re-check 2-4 weeks; NOT a divergence finding, NOT a falsification-family member, ledger holds at 47 - Type B FOURTH leg of the 1195-1199 window (Oct 4 2026, 04:00 AM PDT; main commit de27d475 / anchor f098fcb3 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 64134/1522 -> 64211/1523 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Finding summary
+- m950 (profiles/careers/journalists.yaml, NEW top-level `rita_el_khoury` key per the #643 convention, 4-space `competitor_coverage` block, `mechanism_id: 950` field form): FIRST dedicated Type B mechanism on Rita El Khoury (Android Police senior writer, wearables/smart-home beat). NEGATIVE-RESULT landing: a systematic both-entities search (15 browser.search query sets: 13 delegated-research + 2 main-run; 2 first-hand browser.open reads, Oct 4 2026) surfaced exactly ONE attributable arm and ZERO attributable Meta-glasses bylines. The byline is clean in the corpus (zero rita_el_khoury key/prose hits pre-commit).
+- GOOGLE ARM: Sep-17-2026 "After an hour with Android XR glasses, I understand why Google is betting everything on this" (https://www.androidpolice.com/hour-with-android-xr-xreal-aura-glasses/; excerpt-attested via the WeSearch mirror https://wesearch.press/s/after-an-hour-with-android-xr-glasses-i-understand-why-googl-e4a3654b; 0 browser.open on the androidpolice.com page by the main run). Search-excerpt quotes: "Glasses are the perfect solution for me; they're light, they're unobtrusive"; "I was more than simply impressed." MANUAL ILLUSTRATIVE +0.55. Unobtrusiveness framed as a virtue - the mirror image of the m947 Camera Jabber register (Meta's unobtrusiveness as the vice). Zero privacy/surveillance vocabulary in the excerpt-attested quotes.
+- META ARM: ABSENT. Bounded search negative: her Muck Rack profile (https://muckrack.com/rita-el-khoury) shows wearables/watch coverage (Moto Watch Ultra, Pixel Watch) but no Meta-glasses byline; Android Police's Meta smart-glasses coverage in the Sep-Oct 2026 window belongs to Andy Boxall and Chandra Steele (both corpus-saturated; mechanism 145 family). Search terms: 'androidpolice.com Rita El Khoury Ray-Ban Meta', 'Rita El Khoury Meta glasses', 'muckrack.com/rita-el-khoury Meta'.
+- WATCH: re-check in 2-4 weeks (target ~Oct 18 - Nov 1 2026). If an attributable El Khoury Meta-glasses piece appears, this converts to a genuine two-arm mechanism testing the Valnet incentive structure (mechanism 145: Press Gazette Jun-2026 per-click freelancer compensation reporting; Google as primary ad-revenue source; Samsung-Google Android XR co-development; zero documented Meta-Valnet financial relationship).
+- Near-miss 2 (documented, rejected): Justin Duino (How-To Geek, now Valnet Commerce Director) - first-hand read of "Google Android XR Glasses Hands On: Extremely Impressive" (https://www.howtogeek.com/google-android-xr-glasses-hands-on/) shows a genuine within-piece divergence (Google +0.60 vs Meta -0.20, illustrative delta +0.80; "prepared to throw out my Meta glasses" vs Meta Ray-Bans "primarily used as sunglasses with built-in Bluetooth headphones while walking my dog"; zero privacy vocabulary on Google's camera-equipped prototype). REJECTED for recency: dated May 20, 2025 (Google I/O 2025), outside the Sep-Oct 2026 window; no Sep-Oct 2026 Duino wearables piece surfaced.
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone MANUAL_ILLUSTRATIVE on the single arm, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, verdict watch_pinned_not_a_finding, no_analysis_json_update true, NOT artifact-grade). A single-arm watch admits no cross-entity delta; the +0.55 is documented for the future two-arm conversion, not as a finding. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Confounders (strong-first): (1) single-arm design - no cross-entity comparison exists, the watch is a placeholder not evidence; (2) genre inflation - pre-launch hands-on demo piece inflates tone independent of entity; (3) excerpt-tier evidence - no full-text read; (4) self-described Pixel fandom; (5) outlet-level Valnet pattern could explain any future delta at outlet level; (6) beat-allocation as the absence explanation - absence of a byline is not evidence of a stance (counterevidence documented).
+- NOT a falsification-family member: no two-arm comparison exists, so no payer-softening prediction is testable; ledger holds at 47.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1198 files on disk (glob); no "Type B #1198" in git log (--grep); max numeric mechanism_id 949 in profiles pre-commit; zero numeric/underscore/dash nine-five-zero mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); rita_el_khoury YAML key + Rita El Khoury prose zero-hit repo-wide pre-commit; all four source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings).
+- #1197's forward guards verified GREEN pre-commit this run: max-949; zero nine-five-zero keys all forms (profiles/ + tests/ scope); no-Type-B-#1198-in-git-log; thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth directions present; fortieth direction absent; forty-seventh member-claim exactly in profiles/wired.yaml; forty-eighth member-claim absent; ledger 47.
+- Tests: tests/test_type_b_1198_rita_el_khoury_android_police_google_xr_single_arm_meta_absent_watch_oct04_4am.py - 77 tests collected, 13 classes.
+- In-gate defects fixed: test_no_full_read_claim was repo-wide but the m947 jeff_meyer block legitimately carries the phrase for its own first-hand read (scoped to the rita_el_khoury entry); test_no_fortieth_direction_guard was repo-wide but the #1197 test file carries the contiguous fortieth needle in its own constant definition (scoped to profiles/, matching #1197's own fortieth test).
+- Forward guards for #1199: max-950; zero nine-five-one keys all forms (profiles/ + tests/ scope); no-Type-C-#1199-in-git-log; thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth present; fortieth direction absent; forty-seventh member-claim exactly in profiles/wired.yaml; forty-eighth member-claim absent; ledger 47.
+- Background-suite status per #795: the #1195-launched full suite (goal hidden_files type_d_1195_full_suite.log) is DEAD at this run's check (1108 bytes, mtime Oct 4 02:23 PDT, zero pytest processes alive at ps scan, progress 1%; would-be thirty-second consecutive death; verdict and tombstone belong to #1200 per #795). This run checked only (no m950 markers in the suite log); does not touch it.
+
+### New Type B files
+tests/test_type_b_1198_rita_el_khoury_android_police_google_xr_single_arm_meta_absent_watch_oct04_4am.py (new, 77 tests, 13 classes)
+profiles/careers/journalists.yaml (rita_el_khoury top-level key appended at end of file, m950 block)
+
+### Doc-sync ratchet
+README stats table 64134/1522 -> 64211/1523 (+77/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry (this entry); test-file constants patched post-first-run per #719
+
+### Push status
+Push status (this run, Oct 4 2026 ~04:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Commit hashes
+- Main commit `de27d475` (de27d4753483539b302c737cf8aa5881143bd5c1) - verified via git rev-parse
+- Anchor followup `f098fcb3` (f098fcb39f645ec5fdf35f7d836c4130a25f4287; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 64134/1522 -> 64211/1523; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-first-run per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main de27d475 / anchor f098fcb3 / doc-sync hashes in the #1198 log entry
+
+### Rotation transparency
+- This run is iteration #1198 Type B, the FOURTH leg of the 1195-1199 window (D #1195 -> E #1196 -> A #1197 -> B #1198 -> C #1199 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1195 Type D (main b8696f35 / anchor 9161abc4 / doc-sync d36d11f4 / log-hash 82fe4111), #1196 Type E (main d58d57fc / anchor 054b2238 / doc-sync 48006e67 / log-hash dfcb4990), #1197 Type A (main fce10d69 / anchor 7ce32f33 / doc-sync 8c48b585 / log-hash 6a280fbb), all present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1199 Type C closes the window; the #1195 background-suite verdict belongs to #1200 per #795.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m950 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.
+---
