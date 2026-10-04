@@ -43999,7 +43999,7 @@ Push status (this run, Oct 3 2026 ~20:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `80eef294` (80eef294e14e8c17684ed23190a4d7a985734076) - verified via git rev-parse
 - Anchor followup `872d45c6` (872d45c6486471b0115440a45852779ccd15f447; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 63451/1513 -> 63528/1514; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719)
+- Doc-sync `07df0564` (07df056436d7a3ab75835d1c0908f54e2a230ee0; README 63451/1513 -> 63528/1514; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main 80eef294 / anchor 872d45c6 / doc-sync hashes in the #1189 log entry
 
 ### Rotation transparency
@@ -44042,7 +44042,7 @@ Push status (this run, Oct 3 2026 ~21:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `80eef294` (80eef294e14e8c17684ed23190a4d7a985734076) - verified via git rev-parse
 - Anchor followup `872d45c6` (872d45c6486471b0115440a45852779ccd15f447; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 63451/1513 -> 63528/1514; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719)
+- Doc-sync `07df0564` (07df056436d7a3ab75835d1c0908f54e2a230ee0; README 63451/1513 -> 63528/1514; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main 80eef294 / anchor 872d45c6 / doc-sync hashes in the #1189 log entry
 
 ### Rotation transparency
