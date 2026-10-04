@@ -44772,7 +44772,7 @@ Push status (this run, Oct 4 2026 ~10:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `ec95a251` (ec95a251fa8d96a120d9b47597c9ea0d5be24383) - verified via git rev-parse
 - Anchor followup `58d2f189` (58d2f1897bf369f8487fbb72b04ce3eefd3f5ba5; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 64858/1531 -> 64933/1532; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Doc-sync `503bea7b` (503bea7b42bf6c96470ea178304b327ad35daeda; README 64858/1531 -> 64933/1532; test-table row; ARCHITECTURE tree row; iteration-log entry)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
