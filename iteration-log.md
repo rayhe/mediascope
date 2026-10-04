@@ -43993,3 +43993,59 @@ Push status (this run, Oct 3 2026 ~20:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+
+## #1189 Type C: OpenAI x Synopsys GPT-Synopsys license-and-co-build (m945, THIRTY-EIGHTH relationship direction) - CLOSES the 1185-1189 window
+
+### Commit hashes
+- Main commit `80eef294` (80eef294e14e8c17684ed23190a4d7a985734076) - verified via git rev-parse
+- Anchor followup `872d45c6` (872d45c6486471b0115440a45852779ccd15f447; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 63451/1513 -> 63528/1514; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main 80eef294 / anchor 872d45c6 / doc-sync hashes in the #1189 log entry
+
+### Rotation transparency
+- This run is iteration #1189 Type C, the FIFTH and CLOSING leg of the 1185-1189 window (D #1185 -> E #1186 -> A #1187 -> B #1188 -> C #1189 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1185 Type D (main cb8749eb / anchor 0a8e92ab / doc-sync eea51960 / log-hash 934bf2d4), #1186 Type E (main cf9220e6 / anchor cd9bbd51 / doc-sync 27855a84 / log-hash 47a9c499), #1187 Type A (main cea0168f / anchor 759b3aec / doc-sync a0cbaaf5 / log-hash 75da089a), #1188 Type B (main e4e7305b / anchor edcf2ea4 / doc-sync 52ad4f36 / log-hash aafb79d0), all present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1190 Type D opens the 1190-1194 window; the #1185 background-suite verdict belongs to #1190 per #795.
+
+### Finding summary
+- m945 (profiles/competitor-entities.yaml, NEW top-level `type_c_1189_...` key per the Type C convention, `mechanism_id: 945` numeric colon-form): FIRST dedicated corpus mechanism on the OpenAI x Synopsys GPT-Synopsys LICENSE-AND-CO-BUILD - lands the THIRTY-EIGHTH relationship direction. Zero synopsys hits repo-wide pre-commit.
+- Announced Sep 30 2026 (PRNewswire via HPCWire Oct 2; Reuters Sep 30 original): expansive multi-year agreement to jointly develop GPT-Synopsys, a specialized model optimized to use Synopsys EDA tools to perform semiconductor design workflows; revenue sharing arrangement + go-to-market collaboration worldwide; announced at a Synopsys investor summit.
+- License-in leg (Reuters/Ghazi interview; AIDailyPost Oct 1): OpenAI licenses Synopsys EDA tools directly rather than building its own; OpenAI pays Synopsys a training subscription fee for learning to use the tools; model runs on OpenAI infrastructure; customer data encrypted, not used for training.
+- Performance-gated split leg (Reuters): when Synopsys customers use the product, Synopsys and OpenAI share revenue based on how well the model improves chip design - the split is gated by measured improvement, not a flat fee or fixed ratio (both undisclosed).
+- Non-cannibalization leg (Reuters/Ghazi): "structured the agreement in a way that it will not be cannibalizing our business... upside to our business given we are delivering more value"; the model's work is double-checked by Synopsys sign-off tools ("the need for validating with the highest level of fidelity, what we call sign-off or ground truth, is essential") - the verification layer is the retained moat.
+- Market leg (Reuters): FY27 guidance raised to 15% (vs 11.19% LSEG consensus) at the same summit; shares up as much as 7% - the guide confound means the pop is not a clean deal-read.
+- Native-tool-use leg (PRNewswire; Upgrade Feeling Oct 2): the leap beyond agentic AI - the frontier model becomes a native expert user (model -> EDA tool -> measured result -> next action); Brockman path-to-better-chips framing; service package = compute + model access + licenses via Synopsys.ai/Autopilot/customer agent frameworks; no release date; early customers testing.
+- The geometry: the vendor licenses tools INTO the lab (lab pays a training subscription), they co-build the model, and split the co-built product's revenue - the vendor incentive converts from defensive to offensive, with sign-off/verification as the retained moat. Distinct from m594 flat-fee cash licenses and m663 premium-data licensing (no co-build, no split); from m391 Comet Plus 80/20 (revenue share without joint development); from m942 invest-and-license (Synopsys takes NO equity); from m804 majority-ownership; from m807 vendor-embed (here the lab's model embeds the vendor's tools, then jointly sold); from train-first-settle-later. Coverage-softening NOT tested (Synopsys is not a tracked publication; Reuters original out-of-corpus) - Type A follow-up. NOT a falsification-family member; ledger holds at 46.
+- Confounders (strong-first): (1) STRONG: excerpt-tier evidence, 0 browser.open per #503. (2) STRONG: both money legs unsized (fee amount, split ratio, improvement metric all undisclosed). (3) MODERATE: announcement-timed guidance - the +7% may reflect the guide more than the deal. (4) MODERATE: relay corroboration (Shafaqna/Wesearch relay Reuters/PRNewswire). (5) MODERATE: vendor not a tracked publication - incentive-geometry mapping per #609/#614, not a coverage experiment. (6) WEAK: non-cannibalization is the CEO's own framing; no shipped product.
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (tone NOT_SCORED, engine NOT run, is_significant False, verdict directionally_supported_not_proven, no_analysis_json_update true, NOT artifact-grade). 2 browser.search calls / 2 queries, 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_c_1189 files on disk (glob); no "Type C #1189" in git log (--grep); max numeric mechanism_id 944 in profiles/ pre-commit; zero numeric/underscore/dash 945 mechanism keys repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1189 in key, no 945 substring); the 8 evidence URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); zero license-and-co-build hits repo-wide pre-commit; FORTY-SEVENTH/FORTY-EIGHTH member-claim forms absent repo-wide; THIRTY-FIFTH + THIRTY-SIXTH + THIRTY-SEVENTH directions present; THIRTY-EIGHTH/THIRTY-NINTH direction forms absent repo-wide (this run LANDS the thirty-eighth).
+- Research path: 2 browser.search calls / 2 queries - (1) OpenAI publisher licensing deal October 2026 (surfaced BCCL/Indian Express attribution deals, Hearst, Disney-Sora relay, SPUR standard - all in-corpus or non-deal); (2) AI company publisher licensing October 2026 (surfaced Google AI Contribution Pilot - m891 in-corpus; Firecrawl Alexandria - thin single-relay evidence, rejected; OpenAI x Synopsys GPT-Synopsys - SELECTED, zero corpus hits). REJECTED: Firecrawl $75M + Alexandria (Sep 29) - single LinkedIn-pulse relay as primary evidence, too thin; Google AI Contribution Pilot Oct-1 figures - m891 TWENTY-SEVENTH already, temporal extension; SPUR Oct-2 telemetry standard - Guardian/FT SPUR already in-corpus, temporal extension.
+- Tests: tests/test_type_c_1189_openai_synopsys_gpt_synopsys_license_and_cobuild_thirty_eighth_direction_oct03_9pm.py - 77 tests collected, 13 classes. Pre-commit in-gate: 65 passed + 12 deselected by design (TestAnchor 4 per #565 + TestDocSync 5 + TestIterationLog 3, post-commit/post-sync-positive per #719); 0 in-gate defects. Post-first-run per #719: README_TEST_COUNT patched to 63451+77 (=63528), README_FILE_COUNT to 1514. Needle audit: zero contiguous numeric/underscore/dash 946 forms, thirty-eighth/thirty-ninth direction forms, forty-seventh/forty-eighth member forms in test source; ASCII-only verified.
+- Forward guards for #1190: max-945, zero-946 keys all forms; thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth directions present; thirty-ninth direction form absent; forty-seventh/forty-eighth member forms absent.
+- Background-suite status per #795: the #1185-launched full suite (goal hidden_files type_d_1185_full_suite.log) CHECKED ONLY this run (log 11188 bytes, last write Oct 3 20:56:35 PDT, progress at 15% with xfail markers, NO live pytest process at the 21:05 PDT ps scan, ~8 min stale - up from 2% at #1186's 18:45 check, so it progressed then went quiet; NOT declared dead by this run); NOT touched; its verdict belongs to #1190 per #795.
+
+### New Type C files
+tests/test_type_c_1189_openai_synopsys_gpt_synopsys_license_and_cobuild_thirty_eighth_direction_oct03_9pm.py (new, 77 tests, 13 classes)
+profiles/competitor-entities.yaml (m945 block appended at end of file)
+
+### Doc-sync ratchet
+README stats table 63451/1513 -> 63528/1514 (+77/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719 (README_TEST_COUNT=63451+77, README_FILE_COUNT=1514 patched pre-main).
+
+### Push status
+Push status (this run, Oct 3 2026 ~21:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson (competitor-entities.yaml + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+
+### Commit hashes
+- Main commit `80eef294` (80eef294e14e8c17684ed23190a4d7a985734076) - verified via git rev-parse
+- Anchor followup `872d45c6` (872d45c6486471b0115440a45852779ccd15f447; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 63451/1513 -> 63528/1514; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main 80eef294 / anchor 872d45c6 / doc-sync hashes in the #1189 log entry
+
+### Rotation transparency
+- This run is iteration #1189 Type C, the FIFTH and CLOSING leg of the 1185-1189 window (D #1185 -> E #1186 -> A #1187 -> B #1188 -> C #1189 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1185 Type D (main cb8749eb / anchor 0a8e92ab / doc-sync eea51960 / log-hash 934bf2d4), #1186 Type E (main cf9220e6 / anchor cd9bbd51 / doc-sync 27855a84 / log-hash 47a9c499), #1187 Type A (main cea0168f / anchor 759b3aec / doc-sync a0cbaaf5 / log-hash 75da089a), #1188 Type B (main e4e7305b / anchor edcf2ea4 / doc-sync 52ad4f36 / log-hash aafb79d0), all present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1190 Type D opens the 1190-1194 window; the #1185 background-suite verdict belongs to #1190 per #795.
