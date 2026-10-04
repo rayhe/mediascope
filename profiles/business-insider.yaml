@@ -793,6 +793,158 @@ competitor_relationships:
       - 542
       - 730
       - 739
+    type_a_1207_bi_anthropic_ipo_prospectus_smart_people_financial_skeptical_vs_meta_execution_neutral_sep29:
+      mechanism_id: 955
+      date_analyzed: '2026-10-04'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1207
+      iteration_type: A
+      iteration_time: '2026-10-04 10:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: business-insider
+      competitor_pair: 'Anthropic vs Meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '10:00'
+      job_id: mediascope-daily-iteration
+      block_key: 'type_a_1207_bi_anthropic_ipo_prospectus_smart_people_financial_skeptical_vs_meta_execution_neutral_sep29'
+      test_file: 'tests/test_type_a_1207_bi_anthropic_ipo_prospectus_smart_people_financial_skeptical_vs_meta_execution_neutral_sep29_oct04_10am.py'
+      window: '1205-1209 window THIRD leg (D #1205 -> E #1206 -> A #1207 -> B #1208 -> C #1209)'
+      design: 'Same-publication register comparison: BI''s Sep-29-2026 Anthropic IPO-prospectus "smart people" roundup (NEW arm, relay-attested) vs carried BI Meta product-execution triad (m399, un-rescored per #807). Cross-lab extension: m399''s OpenAI arm (the deal partner, -0.42) vs this Anthropic arm (no tie, -0.30) tests whether the financial-skepticism register follows the peg or the payer.'
+      distinct_from_prior: 'FIRST dedicated corpus mechanism on BI''s Sep-29 Anthropic IPO-prospectus "smart people" piece. Distinct from m745 (BI x Anthropic Sep-13 Nasdaq-choice banking-milestone scoop, +0.4167 aspirational; different peg: milestone-validation vs prospectus-skepticism); distinct from m420 (BI x Anthropic Apr-14 $800B valuation-exuberance, different peg and window); distinct from m399 (BI x OpenAI Feb-10 profitability skepticism, different entity); distinct from m883 (Verge x Anthropic IPO-prospectus, different publication). Note: m745''s confounders already carried the $42B-loss / $517B-commitment figures as subordinated negatives in the relay chain - this run promotes the BI-authored "smart people" treatment of the same filing to a dedicated arm. Zero "akoners"/"smart people"/"gobsmacking" hits repo-wide pre-commit.'
+      finding: 'BI''s Sep-29-2026 "What smart people are saying about Anthropic''s leaked IPO prospectus numbers" applies a financial-skeptical register to the non-deal lab''s IPO paper: "Anthropic''s IPO math is staggering", "truly eye-watering numbers", "$42 billion net loss", "$7.33 billion on compute and infrastructure", "$518 billion in future cloud, computing, and infrastructure obligations", "gobsmacking numbers". Third-party voices carry the sharpest lines: Akoner (eToro) - "a lot of work to do", "more meaningful figure is the $8.1 billion operating loss", "long way from proving it can turn rapid revenue growth into sustainable profits"; Marcus - "-50 times 2025 losses", "The more they lose, the more they win!"; Hendricks - "The shareholder dilution on this will be something to behold"; Williams - "Siri, is it good when huge chunks of my revenue come from only two companies?" BI''s own voice adds the accountability close: "The company didn''t immediately respond to a request for comment from Business Insider." MANUAL ILLUSTRATIVE -0.30 (adversarial-financial-skeptical, hedged one notch softer than m399''s -0.42 direct investor-alarm via the roundup format). Carried Meta triad (m399, un-rescored per #807): Phoenix delay as polishing, Ray-Ban Display scarcity as demand-positive, retail expansion as strategic growth; avg +0.08, no financial-viability questioning. Illustrative delta (Anthropic minus Meta) -0.38. Cross-lab: m399''s OpenAI arm (deal partner) -0.42 vs this Anthropic arm (no tie) -0.30 - the same financial-skepticism register family lands 0.12 apart; the register follows the financial peg, not the payer. TEMPORAL REPLICATION of m399''s deal-partner-hardness at the non-deal lab; the Axel Springer deal buys no stable softness (m399''s own control-case verdict extended). NOT a falsification-family member (control-case extension, no uniform-prediction test); ledger holds at 48. Correlation is not causation.'
+      financial_relationship:
+        anthropic_direct: '$0 direct BI-Anthropic licensing (carried from competitor_relationships.anthropic financial metadata: no Axel Springer-Anthropic deal)'
+        axel_springer_openai_deal: 'Axel Springer x OpenAI global licensing partnership, Dec 2023; tens of millions of euros over 3 years (carried from the competitor_relationships.openai financial metadata)'
+        meta_financial: '$0'
+        deal_disclosed_in_bi_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Direct financial predictor is ABSENT for this pair (no Axel Springer-Anthropic tie), so the skeptical register cannot be attributed to a direct licensing incentive working in reverse. This mechanism is a control-case extension against financial determinism, continuing m399, m420, and m745.'
+        editorial_independence_note: 'No evidence of direct directive linking any commercial relationship to Anthropic coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      anthropic_arm:
+        title: 'What smart people are saying about Anthropic''s leaked IPO prospectus numbers'
+        date: '2026-09-29'
+        url_source: 'Relay-attested BI original: five independent mirrors (postgoo.com, cncbnews.com, misryoum.com, collector.com.tr, biztoc.com) confirm "This story appeared on businessinsider.com"; biztoc timestamps the BI original 2026-09-29 17:18:17; verbatim businessinsider.com URL not recovered in this run''s excerpts, none constructed per policy; excerpt-bounded, no first-hand browser.open per #503 (BI paywalled).'
+        framing: 'ipo_prospectus_financial_skeptical_smart_people_roundup'
+        tone_MANUAL_ILLUSTRATIVE: -0.30
+        entity: anthropic
+        key_quotes:
+          - 'Anthropic''s IPO math is staggering.'
+          - 'truly eye-watering numbers'
+          - 'gobsmacking numbers'
+          - '$42 billion net loss'
+          - '$7.33 billion on compute and infrastructure'
+          - '$518 billion in future cloud, computing, and infrastructure obligations'
+          - 'Akoner (eToro): "a lot of work to do"'
+          - 'Akoner: "more meaningful figure is the $8.1 billion operating loss"'
+          - 'Akoner: "long way from proving it can turn rapid revenue growth into sustainable profits"'
+          - 'Marcus: "-50 times 2025 losses" / "The more they lose, the more they win!"'
+          - 'Hendricks: "The shareholder dilution on this will be something to behold"'
+          - 'Williams: "Siri, is it good when huge chunks of my revenue come from only two companies?"'
+          - '"The company didn''t immediately respond to a request for comment from Business Insider."'
+        notes: 'Financial-skeptical adversarial register on the non-deal lab''s own IPO paper; skepticism hedged through named third-party voices while BI''s own voice stays in framing adjectives plus the accountability close. Relay-attested per #503; URLs zero-hit repo-wide pre-commit.'
+        evidence_tier: 'EXCERPT-TIER: five-mirror relay attestation with verbatim excerpts; not first-hand read (BI paywalled); bounded per #503.'
+        deal_disclosed: false
+      meta_arm:
+        title: 'BI Meta product-execution triad (carried from m399, un-rescored per #807)'
+        date: '2025-12-06 to 2026-04-23'
+        url_source: 'carried per the m399 register-continuity pattern (no re-search this run): Phoenix delay memo (Dec 6 2025, Reuters citing BI), Ray-Ban Display supply-shortage pause (Jan 6 2026), retail expansion (Apr 23 2026, Road to VR citing BI); band mean +0.08 from m399 (scores 0.05/0.10/0.08), un-rescored per #807.'
+        framing: 'product_execution_neutral'
+        tone_MANUAL_ILLUSTRATIVE: 0.08
+        entity: meta
+        status: 'CARRIED from m399 (un-rescored per #807)'
+        key_quotes:
+          - 'delaying the release until 2027, aiming to get the details right'
+          - 'high demand'
+          - 'waitlists extending into 2026'
+          - 'could mirror Apple''s retail strategy'
+        notes: 'Neutral-to-positive execution framing; delay as polishing, scarcity as success signal, expansion as strategic growth; no financial-viability questioning despite Reality Labs $60B+ cumulative losses. Carried, not novel.'
+        deal_disclosed: false
+      register_analysis: 'BI''s financial-skepticism register is peg-conditional, not payer-conditional: it fires on fundraising/IPO-loss pegs at BOTH labs (OpenAI m399 -0.42, Anthropic m955 -0.30) while the same publication runs aspirational registers on milestone pegs at the non-deal lab (m420 +0.34 valuation-exuberance, m745 +0.4167 Nasdaq-scoop) and mitigation-credit on recovery pegs at the deal lab (m799 +0.3167). The "smart people" roundup format is a hedging device: the sharpest skepticism is voiced by named third parties (Akoner, Marcus, Hendricks, Williams) while BI''s own voice stays in framing adjectives ("staggering", "eye-watering", "gobsmacking") plus the accountability close. Meta''s carried triad (+0.08) shows the product-execution register BI reserves for shipping-hardware pegs - the Anthropic-vs-Meta gap (-0.38) is a genre gap (IPO-paper vs shipping-product), not evidence of entity favoritism. The 0.12 gap between the deal lab (-0.42) and the non-deal lab (-0.30) on the same register family is near-parity: the Axel Springer deal buys no hardness discount and no softness premium.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE not empirical; n=1 vs n=3 (triad avg) insufficient for inferential significance'
+        target_entity: 'Meta BI carried register'
+        peer_entity: 'Anthropic BI Sep-29 IPO-prospectus register'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.05, 0.10, 0.08]
+        target_avg: 0.08
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.30]
+        peer_avg: -0.30
+        delta: -0.38
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule'
+        engine_run: false
+        is_significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        illustrative_delta_anthropic_minus_meta: -0.38
+        meta_tone_MANUAL_ILLUSTRATIVE: 0.08
+        anthropic_tone_MANUAL_ILLUSTRATIVE: -0.30
+        cross_lab_deal_vs_nodeal: 'm399 OpenAI (deal partner) -0.42 vs m955 Anthropic (no tie) -0.30: 0.12 apart, near-parity on the financial-skepticism register family'
+      confounders:
+        strong:
+          - 'Beat assignment: BI finance/tech beats do numbers-driven skepticism as a genre norm; the "smart people" roundup is a markets-beat format, not an entity-targeted investigation.'
+          - 'IPO-prospectus genre: S-1/prospectus coverage is inherently financial-skeptical regardless of entity; the peg (leaked $42B-loss filing) selects the register before any entity effect.'
+        moderate:
+          - 'Roundup hedging: third-party voices carry the sharpest claims, so the -0.30 is one notch softer than m399''s direct investor-alarm (-0.42); the format, not the entity, may explain the 0.12 gap.'
+          - 'Paywall: BI paywalled; relay-attested per #503; the full text may contain interrogating detail or balancing context the excerpts hide.'
+          - 'Timing: Sep 29 same-day as m871''s OpenAI safety-crisis arms; news-cycle clustering may amplify the skeptical register market-wide.'
+        weak:
+          - 'Single-story variance: n=1 for the new arm; one more Anthropic financial arm would shift the illustrative avg.'
+      counterevidence:
+        - 'COUNTEREVIDENCE: m420/m745 - BI gave Anthropic aspirational registers on valuation/IPO-milestone pegs (+0.34/+0.4167); the skepticism is peg-scoped (prospectus-loss), not entity-scoped.'
+        - 'COUNTEREVIDENCE: m799 - BI gave the deal partner (OpenAI) mitigation credit on recovery-week pegs (+0.3167); accountability is peg-scoped on both sides of the payer line.'
+        - 'COUNTEREVIDENCE: m871 - BI applied safety-crisis accountability to the deal partner (OpenAI, -0.30 avg) the same week; no softness purchased by the licensing deal on any peg class this window.'
+      verdict: 'mechanism_refinement_not_a_discovery: temporal replication of m399''s deal-partner-hardness finding at the non-deal lab; the BI financial-skepticism register is peg-conditional (fundraising/IPO scrutiny genre), not payer-conditional. The Axel Springer licensing deal predicts neither softness (violated at m399/m871) nor hardness - it predicts nothing stable.'
+      cautious_language_required: 'Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No causal claim. No assertion of editorial direction. Beat assignment, prospectus genre, roundup hedging, paywall, timing, and genuine newsworthiness ($42B loss / $518B commitments are objectively newsworthy) are strong confounders. Illustrative scores manual estimates. Requires Welch t-test plus Cohen d plus bootstrap CI on observed BI corpus for empirical validation. Axel Springer deal is parent-level licensing, not BI newsroom payment, and does not prove BI editorial influence.'
+      correlational_note: 'Correlation is not causation. This note must accompany any citation of this mechanism. The $0 direct BI-Anthropic tie means the skeptical register cannot be attributed to a licensing incentive; the m399 OpenAI arm shows the same register WITH a licensing tie present. The register tracks the financial peg, not the payer.'
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict mechanism_refinement_not_a_discovery. no_analysis_json_update true. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 48
+      ledger_note: 'NOT a falsification-family member (control-case extension per the #609/#614 qualitative boundary; no uniform-prediction test scored). Ledger holds at 48 - FORTY-EIGHTH member-claim form present (financial-times.yaml m952, 2 occurrences); FORTY-NINTH member-claim form absent repo-wide.'
+      connects_to:
+      - 399
+      - 420
+      - 745
+      - 790
+      - 799
+      - 871
+      novelty: 'FIRST dedicated corpus mechanism on BI''s Sep-29 Anthropic IPO-prospectus "smart people" piece: zero "akoners"/"smart people"/"gobsmacking" hits repo-wide pre-commit (case-insensitive); the 5 mirror URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); block key zero-hit repo-wide pre-commit (designed keying: iteration 1207 in key, no 955 substring); zero test_type_a_1207 files on disk pre-commit (glob); no "Type A #1207" in git log pre-commit (--grep); max numeric mechanism_id 954 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash 955 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); no #1207 row in README/ARCHITECTURE test tables pre-commit; README stats 64858/1531 pre-commit. Method MANUAL / qualitative-only per the Aug 28 2026 standing rule (17 browser.search query sets; 0 browser.open; no corpus queries executed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: '17 browser.search query sets this run (OpenAI publisher licensing 2026; Anthropic publisher licensing Sep 2026; Nippan Anthropic Project Panama; Snap SPECS launch Oct 2026; theverge.com Snap Specs hands-on; Snap SPECS First Look Westfield; wired.com Snap Specs Oct 2026; Apple Vision Pro Oct 2026; theverge.com Apple Vision Pro life support Gurman; gizmodo.com Apple Vision Pro N224; businessinsider.com Snap Specs Oct 2026; Gizmodo Apple Taction $5.7B verdict; Verge Anthropic IPO $2T; Verge Anthropic IPO filing catastrophic risks Sep 29; theverge.com Anthropic IPO filing quote; BI Anthropic IPO prospectus $42B Sep 29 - SELECTED; "What smart people are saying" BI Akoner - SELECTED). 0 browser.open this turn per #503; BI paywalled; the BI arm relay-attested via five independent mirrors with verbatim excerpts and a biztoc timestamp attestation (businessinsider.com, 2026-09-29 17:18:17). REJECTED: Verge Sep-29 Anthropic IPO-prospectus arm (in corpus m883); Guardian Sep-29 Anthropic existential-risks arm (in corpus m886); Snap SPECS First Look (no tracked originals); Apple Gurman N224 (no tracked originals); Apple Taction $5.7B (no tracked originals); BI x Anthropic Nasdaq scoop (in corpus m745). Pre-commit novelty greps per #715 as documented in the novelty field.'
+      rotation_transparency: 'Iteration #1207 Type A is the THIRD leg of the 1205-1209 window (D #1205 -> E #1206 -> A #1207 -> B #1208 -> C #1209 per #565 anchor + rotation guard; #1205 Type D main 829b8a8b/anchor 8a542a9e/doc-sync 65166ef2/log-hash 65a316d2, #1206 Type E main be56e254/anchor 9314bab6/doc-sync a4870804/log-hash 390d4a56 + corrective f0e3aaeb; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1207 files on disk (glob); no "Type A #1207" in git log (--grep); max numeric mechanism_id 954 pre-commit; zero numeric/underscore/dash 955 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 5 novel mirror URLs zero-hit repo-wide pre-commit (git grep -F); no #1207 row in README/ARCHITECTURE test tables pre-commit; README stats 64858/1531 pre-commit; fortieth direction-claim form absent repo-wide pre-commit (this run does NOT land it); thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth directions present. Guard lifecycle: #1206''s max-954 + zero-955 + no-Type-A-#1207-in-git-log pins flip BY DESIGN at this run (recorded, not repaired); #1206''s zero-956 underscore/dash, thirty-fifth/thirty-sixth/thirty-seventh/thirty-eighth/thirty-ninth-intact, forty-eighth-intact, no-forty-ninth guards stay green (verified via supersession pins in the #1207 test file). This run lands mechanism 955 as a CONTROL-CASE EXTENSION (no new direction). Next window leg #1208 Type B.'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (business-insider.yaml m955 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1205-launched full suite (goal hidden_files type_d_1205_full_suite.log) observed ALIVE at this run''s check (16600 bytes, mtime Oct 4 2026 10:15 PDT, ~5% progress, pytest processes alive); this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1210 (next Type D).'
+      in_flight: '#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched (this run appends to profiles/business-insider.yaml, not competitor-entities.yaml).'
+      source_urls:
+      - url: 'https://postgoo.com/posts/6abc750e5eb878472d47bed0?type=article'
+        what: 'postgoo.com mirror (5 days ago): verbatim BI piece "What smart people are saying about Anthropic''s leaked IPO prospectus numbers" - Akoner/Marcus/Hendricks/Williams quotes, "gobsmacking numbers", "didn''t immediately respond to a request for comment from Business Insider". URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      - url: 'https://cncbnews.com/article/2026/09/what-smart-people-are-saying-about-anthropics-leaked-ipo-prospectus-numbers'
+        what: 'cncbnews.com mirror (5 days ago): verbatim BI piece with section headers (Akoner eToro, Marcus NYU, Hendricks, Williams). URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      - url: 'https://misryoum.com/what-smart-people-are-saying-about-anthropics-leaked-ipo-prospectus-numbers'
+        what: 'misryoum.com mirror (4 days ago): "Anthropic''s IPO math is staggering... $42 billion net loss... $518 billion in future cloud, computing, and infrastructure obligations... 80 of the IPO''s 261 pages to risk factors, per the Financial Times". URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      - url: 'https://www.collector.com.tr/1017818011'
+        what: 'collector.com.tr mirror (4 days ago): "Business Insider put together a list of what smart people are saying about those numbers" with Benjamin Fanjoy/Getty Images credit. URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      - url: 'https://biztoc.com/x/a10989637617ed19'
+        what: 'biztoc.com mirror (5 days ago): "This story appeared on businessinsider.com, 2026-09-29 17:18:17" - timestamp attestation for the BI original. URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      browser_opens: 0
+      tone_scored: false
+      engine_run: false
+      is_significant: false
+      artifact_grade: false
+      yaml_parse_clean: true
+      ascii_only: true
   meta:
     financial_tie: "none"
     estimated_value: "$0"
