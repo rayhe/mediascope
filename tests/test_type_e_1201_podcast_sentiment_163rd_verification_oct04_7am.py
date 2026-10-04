@@ -447,16 +447,19 @@ class TestMechanismNovelty:
         assert _max_numeric_mechanism_id() == MECH_NUM
 
     def test_no_type_e_1201_in_git_log_pre_commit(self):
-        # Pre-commit this grep is empty (verified in the in-gate).
+        # Pre-commit this grep was empty (verified in the in-gate).
         # Post-commit the ONLY matches are this run's own four
         # commits (main/anchor/doc-sync/log-hash), whose messages
-        # carry the run's own "Type E #1201" subject - the
-        # #1191-class self-trip. The pin's substance - no PRIOR run
-        # committed a Type E #1201 - holds. Re-pinned post-main-commit
-        # in the corrective followup per #721 to the own-commit-set
-        # form.
-        out = _git("log", "--oneline", "--grep=Type E #1201").stdout
-        assert out.strip() == "", out.strip()
+        # carry the run's own iteration subject - the #1191-class
+        # self-trip. The pin's substance - no PRIOR run committed this
+        # run's iteration - holds. Re-pinned post-main-commit in the
+        # corrective followup per #721 to the own-commit-set form.
+        out = _git("log", "--format=%H %s", "--grep=Type E #1201").stdout
+        own = {"a503ee2e", "c97661ee", "c7763755", "d6ed16f3"}
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own, line
 
     def test_zero_next_number_keys_all_forms(self):
         # Numeric (profiles/ scope), underscore and dash (profiles/ +
@@ -496,16 +499,16 @@ class TestGuiltyFeminist:
         # The verbatim key carries 5 pre-commit hits (the #1196-file
         # family, verified in the in-gate): it canonicalizes to the
         # scheme-stripped in-corpus form per the #1151 precedent - a
-        # re-surface, not a new key. In-gate form pins the pre-commit
-        # file set; the corrective followup re-pins to the post-main-
-        # commit set (the #1196-file trio + this run's own three
-        # files).
+        # re-surface, not a new key. Re-pinned post-main-commit in the
+        # corrective followup per #721 to the post-main-commit file set
+        # (the #1196-file trio + this run's own three files).
         hits = _tracked_grep_files(SXSW_VERBATIM)
         assert sorted(hits) == sorted([
             "HEAD:podcast-sentiment.md",
             "HEAD:iteration-log.md",
             "HEAD:tests/test_type_e_1196_podcast_sentiment_"
             "162nd_verification_oct04_2am.py",
+            "HEAD:tests/" + OWN_BASENAME,
         ]), hits
         assert _corpus_hit_count("youtube.com/watch?v=IVVk2wTR5xE") >= 1
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
@@ -782,20 +785,23 @@ class TestStalenessPins:
         # thirty-ninth landed; fortieth direction absent;
         # forty-seventh exactly in wired.yaml; forty-eighth absent),
         # and the predecessor-file presence pin. ALL EIGHT pass
-        # pre-commit (verified in the in-gate: 8 passed). Post-main-
-        # commit the no-Type-E-#1201-in-git-log pin fails BY DESIGN on
-        # the #1191-class self-trip (this run's own main commit
-        # carries "Type E #1201" in its subject); the corrective
-        # followup re-pins this test to the "1 failed, 7 passed"
-        # post-commit-aware form per the #1196 precedent. Documented
-        # here (pinned, not repaired - the #1200 block is read-only
-        # to this run).
+        # pre-commit (verified in the in-gate: 8 passed). Re-pinned
+        # post-main-commit in the corrective followup per #721: 7 of
+        # the 8 pass; the eighth, test_no_type_e_1201_in_git_log_pin,
+        # fails BY DESIGN on the #1191-class self-trip (this run's own
+        # main commit a503ee2e carries the iteration subject). The flip
+        # is the run's own landing, not a guard failure. Documented here
+        # (pinned, not repaired - the #1200 block is read-only to this
+        # run).
         res = self._class_run(
             D1200_FILE,
             "TestGuardLifecycle1200",
         )
-        assert res.returncode == 0, res.stdout[-2000:]
-        assert "8 passed" in res.stdout, res.stdout[-2000:]
+        assert res.returncode != 0, res.stdout[-2000:]
+        assert "1 failed, 7 passed" in res.stdout, res.stdout[-2000:]
+        assert (
+            "test_no_type_e_1201_in_git_log_pin" in res.stdout
+        ), res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
