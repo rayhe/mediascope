@@ -43955,3 +43955,41 @@ Push status (this run, Oct 3 2026 ~19:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+
+## #1188 Type B: m944 Eli Tan (NYT) FIRST dedicated Type B - Sep-24 Chen+Tan "Pervert Glasses" column within-piece cross-entity stigma pin (-0.45 vs +0.05, illustrative delta -0.50; theory-consistent with the financial-deal gradient) - Type B FOURTH leg of the 1185-1189 window (Oct 3 2026, 08:00 PM PDT)
+
+### Finding summary
+- The piece: NYT Sep-24-2026 analysis column "Complaints About Meta's 'Pervert Glasses' Won't Slow Tech's Wearable Gadgets Drive" - co-byline Brian X. Chen and Eli Tan (byline attested via the muckrack author page and the NYT Headlines podcast Sep-25 episode listing; NYT original paywalled). FIRST dedicated Type B mechanism on Eli Tan in journalists.yaml (zero eli_tan YAML top-level key pre-commit per the #643 convention; the journalists-list profile entry exists but carries no dedicated Type B mechanism).
+- WITHIN-PIECE cross-entity pair: both arms are the same column, which CONTROLS for peg, genre, date, desk, and co-byline. The only variation is the entity being framed. NEW Meta arm: the HEADLINE brands Meta's Ray-Bans "Pervert Glasses"; the syndicated lede reports "The Ray-Bans gained an unflattering nickname: 'Pervert glasses.'" and "the cringe-inducing stories rolled in." - stigma register, MANUAL ILLUSTRATIVE -0.45. Other-companies arm: the dek frames the rest of the industry neutrally - "Meta's smart glasses are the latest in a line of products to raise eyebrows over privacy. That's not stopping other companies from creating similar devices." - no stigma nickname attaches to any competitor's functionally similar hardware, +0.05.
+- Illustrative delta (Meta minus other-companies) -0.50: the stigma vocabulary is entity-selective; the asymmetry is pure vocabulary selection. Theory-CONSISTENT with the financial-deal gradient: NYT holds documented AI content-licensing deals with Google ($100M+), Apple, and Amazon (in-corpus Kang notes) plus the reported-but-unverified NYT-Anthropic confidential settlement tie (per #1007); no documented NYT AI licensing deal with Meta; NYT sued OpenAI/Microsoft (adversarial tie). The stigma vocabulary lands on the non-counterparty.
+- NOT a falsification-family member, by design: no uniform payer-softening prediction is refuted here; single-column pin with a co-byline. Extends m484 (Chen's Meta-vs-Apple privacy vocabulary bifurcation) and mechanism_662 (Chen Duo vs Ray-Ban register gradient, #713) to Tan's own byline. Ledger holds at 46.
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone manual, p_value/cohens_d/ci_95 NOT_CALCULATED, is_significant False, engine NOT run, no_analysis_json_update true, correlation_not_causation true, NOT artifact-grade, verdict directionally_supported_not_proven). 7 browser.search query sets + 1 browser.open (muckrack author page; 0 browser.open on the NYT paywalled original per #503). Rejected directions: Julian Chokkattu (saturated m39/m252/m354/m362/m426); Joanna Stern (saturated corpus Type B Aug 7); Tim Bradshaw (saturated m558, Type B #558); FTC Oct-1 probe (no clean journalist pair; wire/relay coverage); Steve Kovach CNBC (no byline surfaced). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1188 files on disk (glob); no 'Type B #1188' in git log (--grep); max numeric mechanism_id 943 in profiles/ pre-commit (m943, profiles/news-corp.yaml, Type A #1187); zero numeric/underscore/dash 944 mechanism keys repo-wide pre-commit (needles format-built, own file excluded); block key (carries iteration number 1188, no 944 substring, per the #715 keying lesson) zero-hit repo-wide pre-commit; the 3 URLs (muckrack author page, aiweekly relay, Headlines podcast listing) zero-hit repo-wide pre-commit via git grep -F on verbatim Full-URL listings; eli_tan YAML top-level key zero-hit pre-commit; no #1188 rows in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 63377/1512 pre-commit.
+- Tests: tests/test_type_b_1188_eli_tan_nyt_pervert_glasses_stigma_vs_other_companies_neutral_within_piece_oct03_8pm.py - 74 tests collected, 13 classes. In-gate: 65 passed + 9 deselected by design (TestAnchor 4 per #565 + TestDocSync 3 + TestIterationLog 2 post-sync/post-commit-positive per #719); 0 in-gate defects. NEW_TEST_COUNT patched to the true collected count 74 pre-doc-sync per #719; README_FILES_POST 1513. Post-sync classes verified green after these doc edits.
+- Staleness: #1187's TestMechanismNovelty (max id 943, zero-944 guards) and #1187's TestGuardLifecycle1185-style forward pins (max-943, zero-944 numeric, no-Type-B-#1188-in-git-log) all FLIP BY DESIGN on the landed 944, recorded, not repaired. #1187's underscore/dash-form 944 guards STAY GREEN by the designed keying; direction and forty-seventh/forty-eighth guards stay green. Forward guards pin zero-945 numeric/underscore/dash and max 944 for the next run (#1189 Type C).
+- Background-suite status per #795: the #1185-launched full suite (goal hidden_files type_d_1185_full_suite.log) is checked only at the next Type D run (#1190); NOT touched this run - observed RUNNING at the 20:0x PDT check (log 6950 bytes, last write Oct 3 20:03 PDT, progress 9%, live pytest processes).
+
+### New Type B files
+tests/test_type_b_1188_eli_tan_nyt_pervert_glasses_stigma_vs_other_companies_neutral_within_piece_oct03_8pm.py (new, 74 tests, 13 classes)
+
+### Doc-sync ratchet
+README stats table 63377/1512 -> 63451/1513 (+74/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719 (NEW_TEST_COUNT=74 patched pre-main; README_FILES_POST=1513).
+
+### Commit hashes
+- Main commit `e4e7305b` (e4e7305b85d57c41d4a1a19d1de8ca4f03a93fd1) - verified via git rev-parse
+- Anchor followup `edcf2ea4` (edcf2ea4f5884cfb3dde01c034089f3fe47fcb85; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `PENDING` (README 63377/1512 -> 63451/1513; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants already post-sync-positive per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main e4e7305b / anchor edcf2ea4 / doc-sync hashes in the #1188 log entry
+
+### Push status
+Push status (this run, Oct 3 2026 ~20:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Rotation transparency
+- This run is iteration #1188 Type B, the FOURTH leg of the 1185-1189 window (D #1185 -> E #1186 -> A #1187 -> B #1188 -> C #1189 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1187 Type A (main cea0168f / anchor 759b3aec / doc-sync a0cbaaf5 / log-hash 75da089a), #1186 Type E (main cf9220e6 / anchor cd9bbd51 / doc-sync 27855a84 / log-hash 47a9c499), #1185 Type D (main cb8749eb / anchor 0a8e92ab / doc-sync eea51960 / log-hash 934bf2d4), all present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1189 Type C continues the window.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging only. Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
