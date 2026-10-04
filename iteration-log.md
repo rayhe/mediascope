@@ -44597,3 +44597,46 @@ Push status (this run, Oct 4 2026 ~08:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson (m952 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846 (Ray's revert/leave/rebuild decision pending).
+
+## #1203 Type B: m953 Emma Roth (The Verge) OpenAI Dots neutral launch-news register (+0.05 MANUAL ILLUSTRATIVE, NEW Sep-29-2026 arm, excerpt-attested) vs carried Meta Muse adversarial creep hands-on (-0.4, m782 #918 un-rescored per #807); illustrative delta (Meta minus OpenAI) -0.45; FIRST Roth OpenAI comparator arm (m782's counterevidence noted its absence); refinement of m782/m860 into a (register x entity) model - the creep toolkit requires the Meta entity even when the behavioral peg is identical (Dots: always-on, "learning your preferences over time", "carry over the context", "before you even think to ask" with zero of the toolkit: no creep headline, no track-record anchor, no comment-seeking, no suspicion conclusion); launch-news parity (m860 Meta Charms neutral vs Dots neutral) rules out a blanket entity effect; genre (hands-on vs launch news) remains the dominant confound; Vox Media x OpenAI payer-consistency noted as correlation-not-causation; NOT a falsification-family member, ledger holds at 48; MANUAL ILLUSTRATIVE only per Aug 28 standing rule, engine NOT run, NOT artifact-grade, no analysis.json update; doc-sync (64524/1527 -> 64599/1528; +75/+1); 1200-1204 window FOURTH leg D->E->A->B->C (anchor per #565); concurrency: #899/#938/#900/#1012-wt untouched, do NOT touch #1024 m846 - Oct 4 2026 08:00 AM PDT - 75 tests, 13 classes
+
+### Finding summary
+- NEW arm: Emma Roth (The Verge) Sep-29-2026 "OpenAI launches Dots, its Muse competitor" - neutral product-news relay (+0.05 MANUAL ILLUSTRATIVE, excerpt-attested via verbatim mirrors; canonical theverge.com URL not recovered, none constructed per policy). Key behavioral pegs: always-on agents that "learn your preferences over time", "carry over the context from your sessions on other apps and devices", come up with tasks "before you even think to ask"; "Like Muse, OpenAI's Dots are represented by cute, customizable avatars."
+- Carried Meta arm (m782 #918, un-rescored per #807): Roth's Sep-10 "Meta's Muse AI works and creeps me out" hands-on (-0.4) - full adversarial creep toolkit: creep headline, "the unnerving amount of information it autonomously gleaned about me", "given Meta's track record on privacy over the years", comment-seeking, suspicion-as-conclusion.
+- The Dots piece's behavioral pegs are the FUNCTIONAL TWIN of the Muse behaviors that triggered the toolkit, yet the toolkit stays entirely idle: no creep headline, no "given OpenAI's track record" anchor (despite the Hugging Face agent hack and scrapped Astra-model launch over safety concerns the same week), no comment-seeking, no suspicion conclusion. Illustrative delta -0.45.
+- Refinement (not a discovery): (register x entity)-conditional creep toolkit. m860 (Roth neutral on Meta Charms launch news) vs this arm (neutral on OpenAI Dots launch news) shows launch-news parity, ruling out a blanket entity effect; the toolkit fired only on the Meta hands-on. Genre remains the dominant confound; no Dots hands-on exists to complete the square.
+- Financial context: Vox Media x OpenAI licensing (May 29 2024, ACTIVE per m425) makes the pair's direction payer-CONSISTENT (unlike m782's inversion) - correlation, not causation; genre/evidence confounds dominate.
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=1 per arm; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no analysis.json update).
+- Background-suite status per #795: the #1200-launched full suite (goal hidden_files type_d_1200_full_suite.log) observed DEAD at this run's check (31226 bytes, mtime Oct 4 2026 07:59:29 PDT, zero live pytest processes, ~10% progress). CHECKED ONLY; verdict and tombstone belong to #1205 (next Type D).
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1203 files on disk (glob); no "Type B #1203" in git log; max numeric mechanism_id 952; zero 953 key forms (numeric/underscore/dash, needles format-built); source URLs zero-hit repo-wide ("dots-its-muse-competitor", "OpenAI launches Dots"); zero emma_roth Dots blocks pre-commit.
+- #1202's forward guards verified GREEN pre-commit this run: max-952; zero nine-five-three keys all forms (profiles/ + tests/ scope); no-Type-B-#1203-in-git-log.
+- 11 browser.search query sets, 0 browser.open reads per #503. Rejected as corpus-saturated: Victoria Song Sep-24 Vergecast (#993/m827), Joanna Stern Sep-2026 Zuckerberg interview (#1113), Philip Berne TechRadar city piece (m725 block), Karissa Bell (m722/m764), Andy Boxall Sep-24 Audio "PR stunt" (m824/m935), James Pero (m858/m933/m1003). WIRED Sep-15 "I Felt Super Violated" dating piece investigated; byline unattributable from bounded search; no mechanism built.
+- Tests: tests/test_type_b_1203_emma_roth_verge_openai_dots_neutral_vs_meta_muse_creep_register_x_entity_oct04_8am.py
+- Forward guards for #1204: max-953; zero nine-five-four keys all forms (profiles/ + tests/ scope); no-Type-C-#1204-in-git-log.
+- Background-suite status per #795: the #1200-launched full suite (goal hidden_files type_d_1200_full_suite.log) observed DEAD at this run's check; CHECKED ONLY.
+
+### New Type B files
+tests/test_type_b_1203_emma_roth_verge_openai_dots_neutral_vs_meta_muse_creep_register_x_entity_oct04_8am.py (75 tests, 13 classes)
+profiles/careers/journalists.yaml (m953 block appended under emma_roth_type_b/competitor_coverage, 4-space indent, sibling of m782/m860; mechanism_ids [782, 860] -> [782, 860, 953])
+
+### Doc-sync ratchet
+README stats table 64524/1527 -> 64599/1528 (+75/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (log-hash followup registers main/anchor/doc-sync here).
+
+### Push status
+Push status (this run, Oct 4 2026 ~08:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followup pushed after.
+
+### Commit hashes
+- Main commit `db210690` (db210690da329590d30fd9dafc7eb264b4e06b0c) - verified via git rev-parse
+- Anchor followup `66691ddd` (66691ddd; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `DOCSYNC_SHORT` (README 64524/1527 -> 64599/1528; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Log-hash followup: LOGHASH_SHORT (terminal per #721) - registers main db210690 / anchor 66691ddd / doc-sync DOCSYNC_SHORT here
+
+### Rotation transparency
+- This run is iteration #1203 Type B, the FOURTH leg of the 1200-1204 window (D #1200 -> E #1201 -> A #1202 -> B #1203 -> C #1204).
+- Committed predecessors verified pre-commit: #1200 Type D, #1201 Type E, #1202 Type A (main 0ecb1582 / anchor 5e909a88 / doc-sync febddb42).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next run is #1204 Type C.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
