@@ -74,9 +74,9 @@ BLOCK_KEY = (
 ANCHORED_SHA = "9b2f12d17429e5124d3912fae8ff086a0c486a53"  # patched per #565
 # Post-first-run values per #719: N tests collected; README ratchets
 # 65342/1537 -> (65342+N)/1538 in the doc-sync followup.
-README_TEST_COUNT = 65342 + 0  # patched post-first-run per #719
+README_TEST_COUNT = 65342 + 75  # 65417; patched post-first-run per #719
 README_FILE_COUNT = 1538
-COLLECTED_NEW_TESTS = 0  # patched post-first-run per #719
+COLLECTED_NEW_TESTS = 75  # patched post-first-run per #719
 
 # Forward guards for the next landing. MECH_NUM=959 is THIS run's landed
 # mechanism; NEXT_NUM=960 stays forward.
