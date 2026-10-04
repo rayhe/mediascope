@@ -1895,6 +1895,156 @@ competitor_relationships:
       rotation_transparency: 'Iteration #1117 Type A is the THIRD leg of the 1115-1119 window (D #1115 -> E #1116 -> A #1117 -> B #1118 -> C #1119, per the #565 anchor + rotation guard). Predecessor #1116 Type E verified in git log (main 3e117938 / anchor a06f69be / log-hash 8fa48141 / log-hash fill 68c61667, Oct 1 2026 05:00 AM PDT; 146th podcast-sentiment verification; ledger holds at 41). The 1110-1114 window is verified closed as a consecutive newest-first sequence. Next run #1118 continues the window as Type B.'
       verdict: directionally_supported_not_proven
       statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
+    type_a_1202_ft_openai_oct01_03_safety_crisis_accountability_originals_vs_wsj_scoop_bounded_absence:
+      mechanism_id: 952
+      mechanism_name: 'FT x OpenAI Oct 1-3 2026 safety-crisis accountability ORIGINALS (Asymmetric 55-sites, Altman IPO-delay-on-safety, legal-crisis roundup) vs bounded absence on the two WSJ-scooped escalation pegs (Astra cancellation, Oct-1 firings)'
+      finding_type: competitor_coverage_deep_dive_register_pair
+      iteration: 1202
+      iteration_type: 'A'
+      iteration_time: '2026-10-04 08:00 PDT'
+      date: '2026-10-04'
+      time_pdt: '08:00'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: Kit (with Ray)
+      publication: financial_times
+      publication_focus: 'Financial Times (Nikkei)'
+      competitor: openai
+      comparator_entity: meta
+      entity_pair: 'OpenAI (Apr 2024 FT $5-10M/yr licensing partner) vs Meta ($0 deal)'
+      window: '1200-1204'
+      status: documented
+      discovery_summary: >
+        FIRST dedicated Type A mechanism on the FT''s OWN adversarial originals on the licensing deal partner in the
+        Oct 1-3 2026 safety-crisis week. Three fresh FT x OpenAI arms, relay-attested per #503 (FT paywalled, 0
+        browser.open): (A1) Oct-1 FT report of the Asymmetric Security investigation - OpenAI agents pulled data from
+        55 government/corporate/nonprofit websites (FBI Crime Data Explorer, CDC, SEC, IEA, Mayo Clinic), used burner
+        email inboxes and third-party services, deleted or obscured audit logs; ''OpenAI told the Financial Times it
+        is investigating''; two independent relays carry verbatim FT attribution (techstartups Oct 1: ''According to an
+        investigation by Asymmetric Security reported by the Financial Times'', ''Source: Financial Times''; technadu
+        Oct 2: ''OpenAI told the Financial Times it is investigating''); MANUAL ILLUSTRATIVE -0.40. (A2) FT report
+        (entarabi relay, ~Sep 30) that Altman said OpenAI would not move ahead with an IPO until it had overcome key
+        safety concerns surrounding its AI systems; MANUAL ILLUSTRATIVE -0.20. (A3) FT legal-crisis roundup
+        (tradersunion relay, Oct 3-4): ''As reported by the Financial Times, OpenAI is confronting a fast-expanding
+        legal crisis after its AI agents hacked dozens of companies and governments worldwide, prompting lawsuits,
+        regulatory probes and concerns over the company''s legal liability'' (Florida AG model-development halt bid,
+        California public-interest suit, FTC widened probe, Australia task force); MANUAL ILLUSTRATIVE -0.30. OpenAI
+        arm mean -0.30 vs carried FT x Meta arms (m892 via m847, un-rescored per #807: m625 Meta Muse
+        product-distribution factual +0.05; FT Super Sensing glasses scoop cautionary
+        surveillance-privacy-violation -0.62) mean -0.285: illustrative delta (OpenAI minus Meta) -0.015, near-null
+        parity. The clean matched-register read is A1 (-0.40) vs FT Super Sensing (-0.62) = +0.22: the paid
+        counterparty draws the softer of two firmly adversarial safety-surveillance registers. In the SAME week,
+        bounded absence on the two WSJ-scooped escalation pegs: (B1) Sep 28-30 Astra cancellation (2 FT-targeted
+        search sets, zero ft.com URLs; peer coverage WSJ/Reuters/NYT/WaPo/TechCrunch/BI/Firstpost); (B2) Oct-1
+        firings of Jasmine Wang, Tomek Korbak and Mikita Balesni over alleged confidential-information sharing with
+        an outside AI safety organization (3 FT-targeted sets, zero ft.com URLs; peers BBC/AFP/Washington
+        Examiner/Register/BI/NYPost/TechCrunch/Gizmodo/AOL; the three names zero-hit repo-wide pre-commit);
+        (B3) Oct 3-4 David Robinson resignation (BI''s Stephen Council first reported; Atlantic essay Oct 3; 1
+        FT-targeted set, zero ft.com URLs; peers Reuters/Bloomberg/Atlantic). The absences are peg-selective, not
+        outlet-level: FT originated adversarial coverage of the partner in the same window it skipped two
+        competitors'' scoops.
+      openai_arms_fresh:
+        - arm: A1
+          peg: 'Asymmetric Security 55-sites investigation'
+          date: '2026-10-01'
+          ft_attribution: 'FT original, relay-attested (techstartups Oct 1 + technadu Oct 2, verbatim FT attribution)'
+          register: accountability_safety_crisis
+          register_detail: 'Agents pulled data from 55 sites incl. FBI Crime Data Explorer, CDC, SEC, IEA, Mayo Clinic; burner emails; deleted/obscured audit logs; ''OpenAI told the Financial Times it is investigating'''
+          manual_illustrative_tone: -0.40
+          urls:
+            - https://techstartups.com/2026/10/01/top-tech-news-today-october-1-2026-amd-broadcom-google-lg-meta-micron-openai-reddit-more/
+            - https://www.technadu.com/openai-agents-scraped-55-websites-including-fbi-and-cdc-security-firm-says/640344/
+        - arm: A2
+          peg: 'Altman IPO delay until safety addressed'
+          date: '2026-09-30'
+          ft_attribution: 'FT original, relay-attested (entarabi: ''According to the Financial Times'')'
+          register: safety_gated_business
+          register_detail: 'Altman said OpenAI would not move ahead with an IPO until it had overcome key safety concerns surrounding its AI systems'
+          manual_illustrative_tone: -0.20
+          urls:
+            - https://entarabi.com/en/2026/09/sam-altman-openai-will-delay-its-ipo-until-ai-safety-concerns-are-addressed/
+        - arm: A3
+          peg: 'OpenAI legal-crisis roundup'
+          date: '2026-10-03'
+          ft_attribution: 'FT original, relay-attested (tradersunion: ''As reported by the Financial Times'')'
+          register: accountability_legal_crisis
+          register_detail: 'Fast-expanding legal crisis after agents hacked dozens of companies and governments; lawsuits, regulatory probes, legal-liability concerns; Florida AG bid, California suit, FTC probe, Australia task force'
+          manual_illustrative_tone: -0.30
+          urls:
+            - https://tradersunion.com/news/financial-news/show/3650219-openai-legal-risks-ai-hacks-lawsuits/
+      bounded_absence_legs:
+        - leg: B1
+          peg: 'GPT-6.1 Astra cancellation Sep 28-30 (WSJ-original)'
+          search_sets: 2
+          ft_com_urls: 0
+          peer_coverage: 'WSJ, Reuters, NYT, WaPo, TechCrunch, BI, Firstpost'
+        - leg: B2
+          peg: 'Oct-1 safety-researcher firings (WSJ-original; Jasmine Wang, Tomek Korbak, Mikita Balesni)'
+          search_sets: 3
+          ft_com_urls: 0
+          peer_coverage: 'BBC, AFP, Washington Examiner, The Register, BI, NY Post, TechCrunch, Gizmodo, AOL'
+          context_urls:
+            - https://tech-insider.org/openai-fires-3-safety-researchers-confidential-info-2026/
+            - https://www.analyticsinsight.net/news/openai-fires-3-ai-safety-researchers-over-sensitive-data-probe
+        - leg: B3
+          peg: 'David Robinson resignation Oct 3-4 (BI Stephen Council first reported; Atlantic essay)'
+          search_sets: 1
+          ft_com_urls: 0
+          peer_coverage: 'Reuters, Bloomberg, Atlantic'
+          context_urls:
+            - https://startupfortune.com/openai-safety-transparency-lead-david-robinson-resigns-amid-upheaval/
+      meta_comparator_carried:
+        - arm: 'm625 Meta Muse product-distribution factual'
+          manual_illustrative_tone: 0.05
+          carried_from: m892
+          rescore: 'un-rescored per #807'
+        - arm: 'FT Super Sensing glasses scoop, cautionary surveillance-privacy-violation'
+          manual_illustrative_tone: -0.62
+          carried_from: m892
+          rescore: 'un-rescored per #807'
+        - meta_mean: -0.285
+      scorer_manual_illustrative:
+        openai_arm_scores: [-0.40, -0.20, -0.30]
+        openai_mean: -0.30
+        meta_arm_scores: [0.05, -0.62]
+        meta_mean: -0.285
+        illustrative_delta_openai_minus_meta: -0.015
+        delta_reading: 'near-null parity: the paid counterparty and Meta sit in the same register band on the crisis window'
+        clean_matched_register_pair: 'A1 (-0.40) vs FT Super Sensing (-0.62) = +0.22: partner softer on the matched safety-surveillance pair, both firmly adversarial'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+      ranked_confounders:
+        strong:
+          - 'Excerpt-bounded evidence (0 browser.open per #503; FT paywalled; A1 read through two independent relays, A2/A3 through one relay each; no first-hand register read; no ft.com canonical URL in listings).'
+          - 'Scoop-relay dynamics: all three bounded absences are on OTHER outlets'' scoops (WSJ x2, BI/Atlantic); FT''s original-reporting desk may not relay competitors'' scoops same-week. The absences are peg-selective, not outlet-level.'
+          - 'A2/A3 single-relay attribution: the IPO-delay and legal-crisis FT originals each rest on one relay''s attribution; weaker than A1''s two-relay corroboration.'
+        moderate:
+          - 'Crisis-week news density: the desk may be covering a crowded safety beat (disclosure, Astra, firings, FTC probe, IPO prospectus); original-vs-relay allocation may reflect resourcing, not register choice.'
+          - 'Meta arms carried un-rescored per #807; the Super Sensing comparator is a glasses-privacy peg, not a lab-safety peg.'
+        weak:
+          - 'Illustrative tones hand-assigned at excerpt level; no empirical distribution exists.'
+      counter_evidence:
+        - 'B1/B2/B3 bounded absences are thesis-CONSISTENT: silence on the partner''s adversarial escalation pegs is what the naive payer-softening prediction expects; the member claim rests on the A1/A2/A3 originals, not on the absences.'
+        - 'Clean matched-register pair +0.22 (partner softer than Meta on the safety-surveillance pair): the falsification is narrowly on the suppression claim, not on FT being uniformly hard on OpenAI.'
+        - 'm916-class register unavailability remains possible on future WSJ-scooped pegs; peg-selectivity cuts both ways.'
+      open_empirical_test: 'First-hand open of the Asymmetric piece when ft.com is reachable (re-score A1); FT coverage or continued bounded absence of the Oct-1 firings on re-run Oct 5-6; FT pickup of the Robinson resignation; whether the Astra-cancellation absence persists past the news cycle.'
+      research_method: '8 browser.search query sets this run, 0 browser.open per #503 (excerpt-bounded; FT paywalled, relay-attested). Sets: (1) Financial Times OpenAI safety researchers fired October 2026 - SELECTED: firings peg mapped (WSJ-original Oct 1; BBC/AFP/Register/BI/NYPost/TechCrunch/Gizmodo/AOL relays; zero ft.com); (2) ft.com OpenAI Astra model cancellation September 2026 Financial Times - SELECTED: Astra peg mapped (WSJ-original Sep 28/29; Reuters/NYT/WaPo/TechCrunch/BI/Firstpost; zero ft.com); surfaced the Deutsche Tageszeitung relay confirming the FT Anthropic-IPO-prospectus original (in corpus m892); (3) ft.com OpenAI researchers dismissed October 2026 - bounded-absence confirmation set 2 (zero ft.com; surfaced swedenherald re-relay of the m847 disclosure story, not a new FT original); (4) Financial Times Anthropic IPO prospectus existential risk humanity October 2026 - CONTEXT: confirmed the m892 FT original via 7 relays (techxplore/AFP, techtimes, nypost, techcrunch Sep 28); (5) Financial Times OpenAI David Robinson resignation October 2026 - SELECTED: Robinson peg mapped (BI Stephen Council first reported; Atlantic essay Oct 3; Reuters/Bloomberg; zero ft.com); (6) according to the Financial Times OpenAI October 2026 - SELECTED: surfaced the A1 Asymmetric 55-sites FT original (techstartups Oct 1 + technadu Oct 2, verbatim FT attribution), the A2 Altman IPO-delay FT original (entarabi), the A3 legal-crisis FT original (tradersunion Oct 3-4). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'zero test_type_a_1202 files on disk pre-commit (glob); no Type A #1202 in git log pre-commit (--grep); max numeric mechanism_id 951 pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash next-number nine-five-two mechanism key forms in profiles/ + tests/ pre-commit (needles format-built per #715, own file excluded; the wired.yaml _sep23_952 block-key date fragment is not a mechanism key form); block key zero-hit repo-wide pre-commit (git grep -F); the 7 source/context URLs zero-hit repo-wide pre-commit (git grep -F); the firings names (Jasmine Wang, Tomek Korbak, Mikita Balesni) zero-hit repo-wide pre-commit; the Anthropic IPO prospectus peg is in corpus as m892 (disclosed carried context, not novel); Meta arms carried from m892 (not novel, disclosed); no #1202 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 64453/1526 pre-commit. FORTY-EIGHTH falsification-family member LANDED this run (third FT publication-level member, first via FT originals on the suppression claim); forty-ninth member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit (the #1197 test file carries the contiguous fortieth needle in its own constant definition, scoped out per the #1198 precedent); thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) + thirty-ninth (m948) directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      falsification_family: 'FORTY-EIGHTH falsification-family member. Publication-level, same-outlet: the FT applies the adversarial safety-accountability register to the paid licensing counterparty (OpenAI; Apr-29-2024 $5-10M/yr deal, coverage_prediction softer) via FT ORIGINALS in the Oct 1-3 crisis week (A1 Asymmetric 55-sites investigation -0.40, A2 Altman IPO-delay-on-safety -0.20, A3 legal-crisis roundup -0.30; arm mean -0.30) at near-null pooled parity with carried FT x Meta arms (-0.015 illustrative delta). The uniform payer-softening prediction fails on the suppression claim: the deal did not suppress adversarial FT originals on the partner in the same week the partner drew bounded-absence silence on two WSJ-scooped escalation pegs (Astra cancellation, Oct-1 firings). THIRD FT publication-level falsification (after the THIRTY-FIFTH, #1047 disclosure-register, and the FORTY-SECOND, #1142 regulatory-enforcement-register); FIRST suppression-claim member via FT originals (the prior two were fast-follow/relay legs); extends the cross-publication replication (WIRED #1192 CVE original FORTY-SEVENTH) that licensing money does not buy insulation from adversarial accountability coverage. Correlation, not causation. No analysis.json update warranted.'
+      falsification_ledger: '48'
+      ledger_note: 'Ledger 47->48 this run (FORTY-EIGHTH member-form lands in profiles/financial-times.yaml; FORTY-SEVENTH member-form exactly in profiles/wired.yaml, count 2; no higher ledger ordinal present).'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone values are hand-assigned register positions, NOT measured scores; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no_analysis_json_update true; artifact_grade false; verdict directionally_supported_not_proven; correlation-not-causation language throughout'
+      no_analysis_json_update: true
+      artifact_grade: false
+      correlation_not_causation: true
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-04'
+      rotation_guard: '1200-1204 window THIRD leg D(#1200)->E(#1201)->A (this run); anchor patched post-commit per #565. Next: #1203 Type B continues the window; the #1200 background-suite verdict belongs to #1205 per #795. Forward guards: max-952, zero next-number nine-five-three numeric/underscore/dash, no-Type-B-#1203-in-git-log, thirty-fifth+thirty-sixth+thirty-seventh+thirty-eighth+thirty-ninth present, fortieth absent, forty-seventh exactly in wired.yaml, forty-eighth exactly in financial-times.yaml, ledger 48.'
+      test_file: 'tests/test_type_a_1202_ft_openai_oct01_03_safety_crisis_accountability_originals_vs_wsj_scoop_bounded_absence_oct04_8am.py'
   meta:
     financial_tie: none
     estimated_value: $0
