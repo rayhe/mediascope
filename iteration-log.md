@@ -44390,7 +44390,7 @@ Push status (this run, Oct 4 2026 ~03:xx PDT): main + anchor followup pushed and
 ---
 
 
-## #1198 Type B: m950 Rita El Khoury (Android Police) single-arm WATCH - Google Android XR Sep-17 hands-on arm (+0.55 illustrative, excerpt-attested); Meta arm ABSENT after bounded search; dated re-check 2-4 weeks; NOT a divergence finding, NOT a falsification-family member, ledger holds at 47 - Type B FOURTH leg of the 1195-1199 window (Oct 4 2026, 04:00 AM PDT; main commit de27d475 / anchor f098fcb3 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 64134/1522 -> 64211/1523 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1198 Type B: m950 Rita El Khoury (Android Police) single-arm WATCH - Google Android XR Sep-17 hands-on arm (+0.55 illustrative, excerpt-attested); Meta arm ABSENT after bounded search; dated re-check 2-4 weeks; NOT a divergence finding, NOT a falsification-family member, ledger holds at 47 - Type B FOURTH leg of the 1195-1199 window (Oct 4 2026, 04:00 AM PDT; main commit de27d475 / anchor f098fcb3 / doc-sync 79064d96; log-hash followup registers all hashes here per #721 (this commit); doc-sync 64134/1522 -> 64211/1523 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
 - m950 (profiles/careers/journalists.yaml, NEW top-level `rita_el_khoury` key per the #643 convention, 4-space `competitor_coverage` block, `mechanism_id: 950` field form): FIRST dedicated Type B mechanism on Rita El Khoury (Android Police senior writer, wearables/smart-home beat). NEGATIVE-RESULT landing: a systematic both-entities search (15 browser.search query sets: 13 delegated-research + 2 main-run; 2 first-hand browser.open reads, Oct 4 2026) surfaced exactly ONE attributable arm and ZERO attributable Meta-glasses bylines. The byline is clean in the corpus (zero rita_el_khoury key/prose hits pre-commit).
@@ -44423,7 +44423,7 @@ Push status (this run, Oct 4 2026 ~04:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `de27d475` (de27d4753483539b302c737cf8aa5881143bd5c1) - verified via git rev-parse
 - Anchor followup `f098fcb3` (f098fcb39f645ec5fdf35f7d836c4130a25f4287; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 64134/1522 -> 64211/1523; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-first-run per #719)
+- Doc-sync `79064d96` (79064d9627d88c741828cd22dcb5e0569ad89cb8; (README 64134/1522 -> 64211/1523; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry); test-file constants post-first-run per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main de27d475 / anchor f098fcb3 / doc-sync hashes in the #1198 log entry
 
 ### Rotation transparency
