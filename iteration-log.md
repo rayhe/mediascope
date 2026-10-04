@@ -1,9 +1,9 @@
-## #1210 Type D: m955/m956/m957 qualitative-discipline corpus-integrity verification + #1205 background-suite verdict (THIRTY-SIXTH consecutive death; tombstone ONE-HUNDREDTH -> ONE-HUNDRED-FIRST) + full suite re-launched - Type D FIRST and OPENING leg of the 1210-1214 window (Oct 4 2026, 12:00 PM PDT; main commit 42ef40b0 / anchor e6d38e98 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 65091/1534 -> 65192/1535 (+101/+1); in-gate: 101 passed + 13 deselected by design (TestAnchor 4 per #565 + TestDocSync 5 + TestIterationLog 3 + tombstone-log 1 per #719/#721), 2 in-gate defects found and fixed; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1210 Type D: m955/m956/m957 qualitative-discipline corpus-integrity verification + #1205 background-suite verdict (THIRTY-SIXTH consecutive death; tombstone ONE-HUNDREDTH -> ONE-HUNDRED-FIRST) + full suite re-launched - Type D FIRST and OPENING leg of the 1210-1214 window (Oct 4 2026, 12:00 PM PDT; main commit 42ef40b0 / anchor e6d38e98 / doc-sync e7e9aba7; log-hash followup registers all hashes here per #721 (this commit); doc-sync 65091/1534 -> 65192/1535 (+101/+1); in-gate: 101 passed + 13 deselected by design (TestAnchor 4 per #565 + TestDocSync 5 + TestIterationLog 3 + tombstone-log 1 per #719/#721), 2 in-gate defects found and fixed; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `42ef40b0` (42ef40b085a6a44126a439bbbf89aa20ceaa892a) - verified via git rev-parse
 - Anchor followup `e6d38e98` (e6d38e98abdaedc4e684ac59caae19f707f4c427; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD
+- Doc-sync `e7e9aba7` (README 65091/1534 -> 65192/1535; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721)
 
 ### Rotation transparency
