@@ -469,16 +469,19 @@ class TestMechanismNovelty:
     def test_max_numeric_mechanism_id_960(self):
         assert _max_numeric_mechanism_id() == MECH_NUM
 
-    def test_no_type_e_1216_in_git_log_pre_commit(self):
-        # Pre-commit this grep was empty (verified in the in-gate).
-        # Post-commit the ONLY matches are this run's own four commits
+    def test_no_type_e_1216_in_git_log_pin(self):
+        # Post-main-commit form (re-pinned in the corrective followup
+        # per #721): the ONLY matches are this run's own four commits
         # (main/anchor/doc-sync/log-hash), whose messages carry the
         # run's own iteration subject - the #1191-class self-trip. The
-        # pin's substance - no PRIOR run committed this run's iteration
-        # - holds. Re-pinned post-main-commit in the corrective
-        # followup per #721 to the own-commit-set form.
-        out = _git("log", "--oneline", "--grep=Type E #1216").stdout
-        assert out.strip() == "", out.strip()
+        # pin's substance - no PRIOR run committed this run's
+        # iteration - holds.
+        out = _git("log", "--format=%H %s", "--grep=Type E #1216").stdout
+        own = {"40757141", "3bb795d7", "d54b215b", "c4299b80"}
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own, line
 
     def test_zero_next_number_keys_all_forms(self):
         # Numeric (profiles/ scope), underscore and dash (profiles/ +
@@ -859,26 +862,24 @@ class TestStalenessPins:
         )
         return res
 
-    def test_1215_guard_lifecycle_still_green(self):
-        # The #1215 Type D file's guard-lifecycle class pins max id
-        # 960 and the zero next-number nine-six-one forward guards
-        # (numeric), the no-Type-E-#1216-in-git-log pin, the
-        # no-fortieth-direction pin, the forty-ninth member intact
-        # pin, the fiftieth member intact pin, the no-fifty-first
-        # member pin, the predecessor-file presence pin, and the
-        # next-leg pin. ALL NINE pass pre-commit (verified in the
-        # in-gate). Re-pinned post-main-commit in the corrective
-        # followup per #721 to the #1191-class self-trip form: 8 of
-        # the 9 pass; the ninth,
-        # test_no_type_e_1216_in_git_log_pin, fails BY DESIGN on this
-        # run's own main commit (the #1215 block is read-only to this
-        # run).
+    def test_1215_guard_lifecycle_post_commit_self_trip(self):
+        # Post-main-commit form (re-pinned in the corrective followup
+        # per #721 to the #1191-class self-trip form): 8 of the 9 pass;
+        # the ninth, test_no_type_e_1216_in_git_log_pin, fails BY
+        # DESIGN on this run's own main commit (the #1215 block is
+        # read-only to this run). The #1215 forward guards (max-960,
+        # zero-961 all forms, fortieth absent, forty-ninth intact +
+        # fiftieth intact in careers/journalists.yaml, fifty-first
+        # absent) stay GREEN.
         res = self._class_run(
             D1215_FILE,
             "TestGuardLifecycle1215",
         )
-        assert res.returncode == 0, res.stdout[-2000:]
-        assert "9 passed" in res.stdout, res.stdout[-2000:]
+        assert res.returncode != 0, res.stdout[-2000:]
+        assert "1 failed, 8 passed" in res.stdout, res.stdout[-2000:]
+        assert (
+            "test_no_type_e_1216_in_git_log_pin" in res.stdout
+        ), res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
