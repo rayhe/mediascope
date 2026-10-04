@@ -44185,3 +44185,42 @@ Push status (this run, Oct 3 2026 ~23:xx PDT): main + anchor followup pushed and
 - This run is iteration #1192 Type A, the THIRD leg of the 1190-1194 window (D #1190 -> E #1191 -> A #1192 -> B #1193 -> C #1194 per the #565 anchor + rotation guard).
 - Committed predecessors verified pre-commit: #1190 Type D (main 3898443d / anchor c747ecb1 / doc-sync 2fd8c400 / log-hash 123e5d73), #1191 Type E (main b0b7f13f / anchor 8e052a5f / doc-sync ebe1a3c7 / log-hash a27ca0db), all present in history.
 - Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1193 Type B continues the window; the #1190 background-suite verdict belongs to #1195 per #795.
+
+## #1193 Type B: Jeff Meyer (Camera Jabber) within-piece Meta-vs-Snap register divergence - BOUNDARY pin (m947) - FOURTH leg of the 1190-1194 window
+
+### Finding summary
+- m947 (Type B #1193, profiles/careers/journalists.yaml top-level jeff_meyer key, competitor_coverage block type_b_1193_jeff_meyer_camerajabber_snap_specs_conspicuous_vs_meta_rayban_disguise_within_piece, mechanism_id: 947): FIRST dedicated Type B on Jeff Meyer (Camera Jabber website editor, Bath UK; Jabber Digital Media Ltd). Within-piece cross-entity register divergence in the Sep-24-2026 Camera Jabber piece "Snap's chunky Specs AR glasses take a different line on the camera-glasses backlash" (FIRST-HAND full-text read via browser.open this run): Meta Ray-Ban arm carries privacy-backlash vocabulary - "drawn a steady backlash over the discomfort of not knowing when someone's filming you", "look like ordinary sunglasses, which is exactly the problem... there's no obvious sign a camera is running" (-0.30 MANUAL ILLUSTRATIVE) - while the Snap Specs arm in the SAME piece carries design-praise vocabulary - "unapologetically chunky, visibly a piece of technology on your face, and that's the point: they announce themselves", "Rather than disguising the tech, Snap is making it conspicuous - the social contract being that if you can see the glasses, you know what they can do" (+0.25). Illustrative delta (Snap minus Meta) +0.55; peg, genre, date, and reviewer all held constant.
+- BOUNDARY pin for the financial theory, not a falsification: Camera Jabber is a no-deal outlet (three-photographer ad-supported operation; no Meta/Snap financial relationship surfaced in bounded searches), and the register follows the genuine design-philosophy peg (concealment vs conspicuousness is a real product difference), not money. This BOUNDS the theory at the journalist level - where a real non-financial differentiator exists, the register follows it. Joins the m593/#538 reporter-level boundary family. NOT a falsification-family member; ledger holds at 46. Statistical discipline: MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run, is_significant False, NOT artifact-grade, verdict directionally_supported_not_proven, no_analysis_json_update true).
+- Rejection trail this run (14 browser.search + 2 browser.open): Jason Parham "I Felt Super Violated" (WIRED Sep-15) REJECTED (culture beat, no competitor arm); Jay Peters saturated (m731); Hamish Hector saturated (m809); BBC privacy-nightmare piece REJECTED (no byline); Chris Haslam WIRED reviewer surfaced but no tracked-competitor arm - REJECTED; Swedish Sama/Nairobi investigation REJECTED (no single byline); Dan Howley temporal-extension check - m920's Sep-26 evidence RE-SURFACED (both URLs already in m920 source_urls), no fresh arm - REJECTED.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1193 files on disk (glob); no "Type B #1193" in git log (--grep); max numeric mechanism_id 946 in profiles/ pre-commit (m946, Type A #1192); zero numeric/underscore/dash 947 mechanism keys repo-wide pre-commit (needles format-built, own file excluded); block key (carries iteration number 1193, no 947 substring, per the #715 keying lesson) zero-hit repo-wide pre-commit; the piece URL zero-hit repo-wide pre-commit (git grep -F; the camerajabber domain only appeared in #983's REJECTED-research note); jeff_meyer YAML top-level key zero-hit pre-commit; no #1193 rows in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 63752/1517 pre-commit.
+- Tests: tests/test_type_b_1193_jeff_meyer_camerajabber_snap_specs_conspicuous_vs_meta_rayban_disguise_within_piece_oct04_12am.py - 75 tests collected, 13 classes. Pre-commit in-gate: 63 passed + 12 deselected by design (TestAnchor 4 per #565 + TestDocSync 5 + TestIterationLog 3); zero in-gate defects. Post-doc-sync/post-anchor: full green expected.
+- Staleness: #1192's forward guards (max-946, zero-947 keys all forms, no-Type-B-#1193-in-git-log) FLIP BY DESIGN on the landed 947; recorded, not repaired. #1192's thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth present / thirty-ninth absent / forty-eighth absent pins all hold; this run re-pins them forward (thirty-ninth direction form absent repo-wide, format-built needle).
+- Forward guards for #1194: max-947; zero nine-four-eight keys all forms; no-Type-C-#1194-in-git-log; thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth present; thirty-ninth direction absent; forty-seventh/forty-eighth member forms absent.
+- Background-suite status per #795: the #1190-launched full suite (goal hidden_files type_d_1190_full_suite.log) is ALIVE at this run's check (7865 bytes, last write Oct 4 00:05:08 PDT, progress ~11%, 2 F markers); checked only, NOT touched; its verdict belongs to #1195 per #795.
+
+### New Type B files
+tests/test_type_b_1193_jeff_meyer_camerajabber_snap_specs_conspicuous_vs_meta_rayban_disguise_within_piece_oct04_12am.py (new, 75 tests, 13 classes)
+profiles/careers/journalists.yaml (jeff_meyer top-level key appended at end of file, m947 block)
+
+### Doc-sync ratchet
+README stats table 63752/1517 -> 63827/1518 (+75/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry (this entry); test-file constants post-sync-positive per #719 (README_TEST_COUNT=63752+75, README_FILE_COUNT=1518, COLLECTED_NEW_TESTS=75 patched pre-main)
+
+### Push status
+Push status (this run, Oct 4 2026 ~00:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync pushed after this update; log-hash followup pushed after this update (see followup).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run's index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml jeff_meyer hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (decision pending).
+
+### Commit hashes
+- Main commit `e1efcca3` (e1efcca3ef0a33982a8ced80e2e9a82758b5835c) - verified via git rev-parse
+- Anchor followup `2fd01d86` (2fd01d86015c21431b0a1ca637a693ec3390b834; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync: this commit (hash registered in the terminal log-hash followup per #721)
+- Log-hash followup: terminal per #721 - registers main e1efcca3 / anchor 2fd01d86 / doc-sync hashes in the #1193 log entry
+
+### Rotation transparency
+- This run is iteration #1193 Type B, the FOURTH leg of the 1190-1194 window (D #1190 -> E #1191 -> A #1192 -> B #1193 -> C #1194 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1190 Type D (main 3898443d / anchor c747ecb1 / doc-sync 2fd8c400 / log-hash 123e5d73), #1191 Type E (main b0b7f13f / anchor 8e052a5f / doc-sync ebe1a3c7 / log-hash a27ca0db), #1192 Type A (main 8370c39e / anchor 1f1bc87f / doc-sync ccb6a8b7 / log-hash 7300ccb9), all present in history.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1194 Type C closes the window; the #1190 background-suite verdict belongs to #1195 per #795.
+---
