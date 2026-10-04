@@ -167,7 +167,7 @@ SUITE_LOG = os.path.join(
 
 # Patched post-first-run with the true collected count per #719.
 # Pre-sync: 65500 tests / 1539 files. Patched post-first-run: N collected.
-README_TEST_COUNT = 65500 + 0  # post-doc-sync total; patched per #719
+README_TEST_COUNT = 65500 + 100  # post-doc-sync total; patched per #719
 README_FILE_COUNT = 1540  # post-doc-sync total (pre-sync 1539 + 1)
 TEST_BASENAME = OWN_BASENAME
 
@@ -1144,4 +1144,4 @@ class TestAnchor1215:
 
 
 # Collected count patch (post-first-run per #719).
-COLLECTED_COUNT = 0
+COLLECTED_COUNT = 100
