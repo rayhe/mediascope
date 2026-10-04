@@ -476,16 +476,19 @@ class TestMechanismNovelty:
     def test_max_numeric_mechanism_id_957(self):
         assert _max_numeric_mechanism_id() == MECH_NUM
 
-    def test_no_type_e_1211_in_git_log_pre_commit(self):
-        # Pre-commit this grep was empty (verified in the in-gate).
-        # Post-commit the ONLY matches are this run's own four commits
+    def test_no_type_e_1211_in_git_log_pin(self):
+        # Post-main-commit form (re-pinned in the corrective followup
+        # per #721): the ONLY matches are this run's own four commits
         # (main/anchor/doc-sync/log-hash), whose messages carry the
         # run's own iteration subject - the #1191-class self-trip. The
-        # pin's substance - no PRIOR run committed this run's iteration
-        # - holds. Re-pinned post-main-commit in the corrective
-        # followup per #721 to the own-commit-set form.
-        out = _git("log", "--oneline", "--grep=Type E #1211").stdout
-        assert out.strip() == "", out.strip()
+        # pin's substance - no PRIOR run committed this run's
+        # iteration - holds.
+        out = _git("log", "--format=%H %s", "--grep=Type E #1211").stdout
+        own = {"03c1ac95", "12a9231f", "f53d8f59", "0b6d30ba"}
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own, line
 
     def test_zero_next_number_keys_all_forms(self):
         # Numeric (profiles/ scope), underscore and dash (profiles/ +
@@ -569,14 +572,15 @@ class TestEveryoneHatesElon:
         for key in EHE_KEYS:
             assert _corpus_hit_count(key) >= 1, "missing corpus hit for %s" % key
 
-    def test_two_new_ehe_keys_zero_pre_commit_hits(self):
-        # The two new-to-corpus verbatim EHE URL keys (the third-party
-        # hn-digest relay + the hyperallergic betye-saar roundup page)
-        # carry ZERO pre-commit corpus hits (verified in the in-gate).
-        # Re-pinned post-main-commit in the corrective followup per
-        # #721 to the own-file-committed-hit form.
+    def test_two_new_ehe_keys_committed_hit_is_own_file(self):
+        # Post-main-commit form (re-pinned in the corrective followup
+        # per #721): this run's own file is the only committed hit for
+        # each new EHE key (the zero pre-commit hit count was verified
+        # in the in-gate).
+        assert len(EHE_NEW_KEYS) == 2
         for key in EHE_NEW_KEYS:
-            assert _tracked_grep_files(key) == [], key
+            assert _tracked_grep_files(key) == [
+                "HEAD:tests/" + OWN_BASENAME], key
 
     def test_55_day_hold_arithmetic(self):
         days = (datetime.date(2026, 10, 4) - datetime.date(2026, 8, 10)).days
@@ -660,16 +664,15 @@ class TestPressSurfaces:
         for key in PRESS_RESURFACE_KEYS:
             assert _corpus_hit_count(key) >= 1, "missing corpus hit for %s" % key
 
-    def test_three_new_press_keys_zero_pre_commit_hits(self):
-        # The three new-to-corpus verbatim press URL keys (bbc.bm,
-        # devdiscourse, dainiknewslive.in - all Hans Anders mirrors of
-        # the in-corpus Oct-2 Reuters story) carry ZERO pre-commit
-        # corpus hits (verified in the in-gate). Re-pinned
-        # post-main-commit in the corrective followup per #721 to the
-        # own-file-committed-hit form.
+    def test_three_new_press_keys_committed_hit_is_own_file(self):
+        # Post-main-commit form (re-pinned in the corrective followup
+        # per #721): this run's own file is the only committed hit for
+        # each new press key (the zero pre-commit hit count was
+        # verified in the in-gate).
         assert len(PRESS_NEW_KEYS) == 3
         for key in PRESS_NEW_KEYS:
-            assert _tracked_grep_files(key) == [], key
+            assert _tracked_grep_files(key) == [
+                "HEAD:tests/" + OWN_BASENAME], key
 
     def test_recency_frontier_holds_at_oct_3(self):
         # No Oct-4-event surface this run; the frontier holds at Oct 3
@@ -832,25 +835,23 @@ class TestStalenessPins:
         )
         return res
 
-    def test_1210_guard_lifecycle_still_green(self):
-        # The #1210 Type D file's guard-lifecycle class pins max id
-        # 957 and the zero next-number nine-five-eight forward guards
-        # (numeric), the no-Type-E-#1211-in-git-log pin, the
-        # no-fortieth-direction pin, the forty-ninth member intact pin,
-        # the no-fiftieth member pin, the predecessor-file presence
-        # pin, and the next-leg pin. ALL EIGHT pass pre-commit
-        # (verified in the in-gate). Re-pinned post-main-commit in the
-        # corrective followup per #721 to the #1191-class self-trip
-        # form: 7 of the 8 pass; the eighth,
-        # test_no_type_e_1211_in_git_log_pin, fails BY DESIGN on this
-        # run's own main commit (the #1210 block is read-only to this
-        # run).
+    def test_1210_guard_lifecycle_post_commit_self_trip(self):
+        # Post-main-commit form (re-pinned in the corrective followup
+        # per #721 to the #1191-class self-trip form): 7 of the 8 pass;
+        # the eighth, test_no_type_e_1211_in_git_log_pin, fails BY
+        # DESIGN on this run's own main commit (the #1210 block is
+        # read-only to this run). The #1210 forward guards (max-957,
+        # zero-958 all forms, fortieth absent, forty-ninth intact in
+        # careers/journalists.yaml, fiftieth absent) stay GREEN.
         res = self._class_run(
             D1210_FILE,
             "TestGuardLifecycle1210",
         )
-        assert res.returncode == 0, res.stdout[-2000:]
-        assert "8 passed" in res.stdout, res.stdout[-2000:]
+        assert res.returncode != 0, res.stdout[-2000:]
+        assert "1 failed, 7 passed" in res.stdout, res.stdout[-2000:]
+        assert (
+            "test_no_type_e_1211_in_git_log_pin" in res.stdout
+        ), res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
