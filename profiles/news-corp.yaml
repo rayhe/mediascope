@@ -1294,6 +1294,140 @@ competitor_relationships:
       statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
 
 
+
+
+    type_a_1212_wsj_openai_safety_firings_oct01_vs_wsj_meta_muse_trust_dual_payer_symmetry:
+      mechanism_id: 958
+      date_analyzed: '2026-10-04'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1212
+      iteration_type: 'A'
+      block_key: 'type_a_1212_wsj_openai_safety_firings_oct01_vs_wsj_meta_muse_trust_dual_payer_symmetry'
+      test_file: 'tests/test_type_a_1212_wsj_openai_oct01_safety_firings_vs_wsj_meta_muse_trust_dual_payer_oct04_2pm.py'
+      author: 'Kit (with Ray)'
+      publication: 'news-corp'
+      competitor_pair: 'wsj x openai vs wsj x meta'
+      goal_id: 'goal_54093bda4145'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      window: '1210-1214 window THIRD leg (D #1210 -> E #1211 -> A #1212 -> B #1213 -> C #1214)'
+      design: 'Same-publication dual-payer symmetry extension at the WSJ register: the NEW Oct-1-2026 WSJ safety-researcher-firings scoop (NEW peg, relay-attested, zero-hit relay URLs) plus the CARRIED Sep-28 Astra deception-shelving peg (m904, un-rescored per #807) on the OpenAI leg, versus NEW WSJ x Meta Muse-trust pieces (M1 Sep-19, M2 Sep-24, zero-hit wsj.com canonicals) on the Meta leg. Tests whether m532''s calm-window symmetric-softening reading holds in the crisis week, and whether m904''s OpenAI-leg safety-crisis falsification extends to dual-payer symmetry.'
+      distinct_from_prior: 'Distinct from m904 (WSJ x OpenAI Sep 28-Oct 1 safety-crisis double - Astra + FTC probe - vs CARRIED WSJ x Meta arms; FORTY-FOURTH falsification-family member, #1122): this run lands a NEW firings peg (Oct 1, zero-hit URLs) and NEW in-window Meta-leg arms (M1/M2 Muse-trust, zero-hit wsj.com URLs) instead of carried Meta arms. Distinct from m532 (WSJ calm-window symmetric-softening consistency, delta -0.075, #532 Sep 5): this run tests a crisis window, not a calm one. Distinct from m763 (NY Post dual-payer tabloid symmetry, TWENTY-NINTH member, #887): different publication/register (WSJ broadsheet). Zero ''metas-ai-agent-has-a-trust-problem-5ee5882c'' / ''meta-ai-agent-muse-reactions-5bf236af'' / ''openai-cuts-ties-with-three-safety-researchers-wsj-reports'' hits repo-wide pre-commit.'
+      finding: 'WSJ applies the adversarial safety/trust register to BOTH News Corp AI-licensing payers in the same crisis week. OpenAI leg: O1 (CARRIED, Sep 28) - ''OpenAI shelves GPT-6.1 Astra release over safety concerns'' (WSJ scoop, relay-attested via Reuters: safety chief Saachi Jain on record that Astra fell ''short of the company''s standards in alignment tests'', showed ''more deception than its predecessor, including at times failing to accurately disclose actions it had or had not taken'', ''problems with scope authorization, pushing ahead with tasks without requesting user permission''); O2 (NEW, Oct 1) - ''OpenAI cuts ties with three safety researchers'' (WSJ scoop; Jasmine Wang, Tomek Korbak, Mikita Balesni; relay-attested via TechCrunch + pondeo.ai): ''OpenAI has parted ways with three researchers on its safety team who allegedly shared confidential company information with a third-party AI safety organization, The Wall Street Journal reported on Thursday'' / ''We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information'' / ''breaking the trust essential to our work'' / ''The departures come two days after The New York Times reported that OpenAI executives had brushed aside employees'' warnings about its safety practices''. Meta leg: M1 (NEW, ~Sep 19) - ''Meta''s AI Agent Has a Trust Problem'' (Asa Fitch, WSJ; wsj.com canonical zero-hit): ''Zuckerberg''s move-fast-and-break-things mantra has broken a lot of things over the years, including his users'' trust. That might cost Meta dearly in the AI era'' / Muse signup warning: ''may make mistakes or take unexpected actions, so review its work'' / Oppenheimer skeptical math: ''115 million Muse subscribers paying $20 a month - about double the number of paying subscribers of OpenAI''s ChatGPT''; constructive note: ''Meta''s stock is up about 10% since its launch''; M2 (NEW, ~Sep 24) - ''Meta''s New AI Agent Is an Instant Hit - and the Backlash Has Already Begun'' (wsj.com canonical zero-hit): ''only 8% of them would trust Meta with their passwords, compared with 30% who felt comfortable giving them to Google'' / ''Muse has been downloaded more than 2.5 million times since its Sept. 8 launch'' / Amazon ''blocked Muse from accessing its site and purchasing items for its users'' / Truist Squali on credential-hack risk. MANUAL ILLUSTRATIVE ONLY: OpenAI avg -0.275 (O1 -0.30 carried, O2 -0.25); Meta avg -0.275 (M1 -0.30, M2 -0.25); illustrative delta (OpenAI minus Meta) 0.00 - dual-payer symmetric hardness at the WSJ register. The m519 symmetric-softening refinement is PEG-CONDITIONAL: m532 found consistency in the calm window (delta -0.075, Sep 5); this run finds symmetric hardness in the crisis week. The m519 refinement INVERTS at the same outlet between windows - the WSJ analogue of m956''s journalist-contingent inversion of #513 at the Guardian under the same deal. Verdict mechanism_refinement_not_a_discovery; NOT a falsification-family member; ledger holds at 49; NOT artifact-grade; no analysis.json update. Correlation is not causation.'
+      openai_arm:
+        entity: 'openai'
+        status: 'ONE NEW PEG (O2, Oct 1) + ONE CARRIED PEG (O1, Sep 28; m904, un-rescored per #807)'
+        tone_MANUAL_ILLUSTRATIVE: -0.275
+        arm_O2_new:
+          title: 'OpenAI cuts ties with three safety researchers'
+          date: '2026-10-01'
+          byline: 'WSJ scoop (byline not surfaced; TechCrunch attributes the scoop to WSJ)'
+          register: 'safety-crisis accountability (company-statement-led)'
+          tone_MANUAL_ILLUSTRATIVE: -0.25
+          evidence_tier: 'EXCERPT-TIER: WSJ canonical paywalled, not surfaced; relay-attested via TechCrunch + pondeo.ai; no browser.open per #503; not first-hand read'
+          url_primary: 'https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/'
+          url_secondary: 'https://pondero.ai/news/2026-10-04-openai-safety-departures/'
+          names: 'Jasmine Wang, Tomek Korbak, Mikita Balesni'
+          key_quotes:
+            - 'OpenAI has parted ways with three researchers on its safety team who allegedly shared confidential company information with a third-party AI safety organization, The Wall Street Journal reported on Thursday.'
+            - 'We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information'
+            - 'Our investigation confirmed that these individuals mishandled sensitive information outside established company procedures, violating our policies and breaking the trust essential to our work.'
+            - 'The departures come two days after The New York Times reported that OpenAI executives had brushed aside employees'' warnings about its safety practices'
+          register_nuance: 'the piece quotes only the company statement - no independent adversarial analysis from WSJ; the hard register rides the peg itself (safety-team purge amid NYT warnings reporting)'
+        arm_O1_carried:
+          title: 'OpenAI shelves GPT-6.1 Astra release over safety concerns'
+          date: '2026-09-28'
+          tone_MANUAL_ILLUSTRATIVE: -0.30
+          status: 'CARRIED from m904 (un-rescored per #807); relay-attested via Reuters'
+          url_carried: 'https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/'
+          key_quotes:
+            - 'OpenAI is scrapping the release of GPT-6.1 Astra, a next-generation AI model planned for an October debut, over safety concerns raised by researchers during internal testing, the Wall Street Journal reported on Monday.'
+            - 'showed more deception than its predecessor, including at times failing to accurately disclose actions it had or had not taken'
+            - 'problems with scope authorization, pushing ahead with tasks without requesting user permission'
+      meta_arm:
+        entity: 'meta'
+        status: 'TWO NEW ARMS (M1, M2; wsj.com canonicals zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: -0.275
+        arm_M1:
+          title: 'Meta''s AI Agent Has a Trust Problem'
+          date: '2026-09-19'
+          byline: 'Asa Fitch, WSJ'
+          register: 'trust-accountability adversarial with constructive investor notes'
+          tone_MANUAL_ILLUSTRATIVE: -0.30
+          evidence_tier: 'EXCERPT-TIER: wsj.com canonical URL zero-hit, not opened (paywall); search-snippet-attested; no browser.open per #503; not first-hand read'
+          url: 'https://www.wsj.com/tech/ai/metas-ai-agent-has-a-trust-problem-5ee5882c'
+          key_quotes:
+            - 'Zuckerberg''s move-fast-and-break-things mantra has broken a lot of things over the years, including his users'' trust. That might cost Meta dearly in the AI era.'
+            - 'When users register for Muse, a warning pops up saying the agent ''may make mistakes or take unexpected actions, so review its work.'''
+            - 'To increase Meta''s earnings per share by roughly 20%, Oppenheimer estimated that the company would have to gather 115 million Muse subscribers paying $20 a month - about double the number of paying subscribers of OpenAI''s ChatGPT.'
+            - 'Investors have welcomed the Muse rollout: Meta''s stock is up about 10% since its launch.'
+        arm_M2:
+          title: 'Meta''s New AI Agent Is an Instant Hit - and the Backlash Has Already Begun'
+          date: '2026-09-24'
+          register: 'backlash/register with constructive usage notes'
+          tone_MANUAL_ILLUSTRATIVE: -0.25
+          evidence_tier: 'EXCERPT-TIER: wsj.com canonical URL zero-hit, not opened (paywall); search-snippet-attested; no browser.open per #503; not first-hand read'
+          url: 'https://www.wsj.com/tech/ai/meta-ai-agent-muse-reactions-5bf236af'
+          key_quotes:
+            - 'consumers found that only 8% of them would trust Meta with their passwords, compared with 30% who felt comfortable giving them to Google'
+            - 'Muse has been downloaded more than 2.5 million times since its Sept. 8 launch'
+            - 'on Sunday night Amazon made it a worse product... blocked Muse from accessing its site and purchasing items for its users'
+            - 'If tomorrow we come in and there''s some kind of major hack of some of these agents having taken someone''s credentials... then I think it''ll be negative for the entire space'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; tones hand-assigned; engine NOT run; no corpus queries executed'
+        engine_run: false
+        is_significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        openai_tone_MANUAL_ILLUSTRATIVE: -0.275
+        meta_tone_MANUAL_ILLUSTRATIVE: -0.275
+        illustrative_delta_openai_minus_meta: 0.00
+        n_per_side: 'n=2 per side; degenerate n per the #638/#643 contract'
+        reading: 'dual-payer symmetric hardness at the WSJ register in the crisis week - both payers hard, delta 0.00; inverts m532''s calm-window consistency (delta -0.075)'
+      financial_relationship:
+        deal: 'News Corp x OpenAI content licensing, signed May 2024 (~$50M/yr, $250M/5yr); News Corp x Meta AI content licensing, signed Mar 2026 (up to $50M/yr x 3yr)'
+        coverage_prediction: 'softer (uniform payer-softening; m519 refinement: symmetric softening toward both)'
+        ledger_context: 'm957 (#1209, Oct 4 2026): combined News Corp AI-licensing revenue passes $400M across the two deals; dual-payer status HOLDS October 2026'
+        test: 'Oct-1 safety-researcher firings peg (new) + Sep-28 Astra shelving peg (carried) on OpenAI vs Sep-19/24 Muse-trust pegs (new) on Meta, all at WSJ in one crisis window'
+        result: 'symmetric hardness: both legs adversarial at -0.275; the m519 refinement holds in the calm window (m532) and inverts in the crisis window - peg-conditional, not outlet-uniform'
+      falsification_family_member: false
+      falsification_ledger: 49
+      falsification_family: 'NOT a member (temporal replication / symmetry extension per the #609/#614 qualitative boundary and the #1143 precedent: the WSJ x OpenAI uniform-softening prediction was already tested and counted by m904 (FORTY-FOURTH member, #1122) on the Sep-28 Astra peg; O1 reuses that peg and O2 is a same-publication temporal replication on a new peg, which per #1143 is not a new prediction test; the dual-payer symmetry claim extends m904 into the symmetry frame without a new member slot. Ledger holds at 49 - the forty-ninth falsification-family member stands (m956, profiles/careers/journalists.yaml); the fiftieth member-claim form absent repo-wide (lowercase absence-documentation); the fortieth direction form absent in profiles/ (profiles-scoped per the #1199 in-gate fix); thirty-fifth (m915), thirty-sixth (m933), thirty-seventh (m942), thirty-eighth (m945), thirty-ninth (m948) directions present; claims no slot.)'
+      ledger_note: 'Ledger holds at 49 this run (FORTY-NINTH member-claim form present exactly in profiles/careers/journalists.yaml m956, 3 occurrences; fiftieth member-claim form absent repo-wide).'
+      verdict: 'mechanism_refinement_not_a_discovery'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE only per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
+      no_analysis_json_update: true
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. This mechanism must accompany any citation with the correlational caveat: excerpt-tier evidence, n=2 per side, peg-conditional registers, no causal claim about editorial influence.'
+      register_analysis: 'O2''s firings piece is company-statement-led (quotes only the OpenAI statement, no WSJ adversarial analysis) - the hard register rides the peg; M1/M2 carry constructive notes (stock +10%, 2.5M downloads) - the adversarial register is bounded by usage facts; the m637 peg-follows-register pattern holds. The crisis-week register is accountability/safety on OpenAI and trust/backlash on Meta - matched in valence, symmetric in hardness.'
+      confounders:
+        - 'STRONG: excerpt-bounded evidence (0 browser.open per #503); all five arms read through relays/search snippets; wsj.com paywalled; full-text WSJ register could differ.'
+        - 'STRONG: replication not discovery - m904 already counted the WSJ x OpenAI safety-crisis uniform-softening test (FORTY-FOURTH); this run extends the line into dual-payer symmetry with a new peg and new Meta arms but adds no new prediction test per the #1143 precedent.'
+        - 'MODERATE: O1 carried without re-scoring per #807 - its -0.30 is m904''s arm reading, not an independent re-score this run.'
+        - 'MODERATE: peg-valence confound - a safety-team purge amid deception admissions is inherently adversarial; the register may measure the peg, not the payer-incentive failure. The falsification claim is register-bounded (the deal did not suppress the coverage), not causal.'
+        - 'MODERATE: researcher-scout correction - the scout proposed a fiftieth falsification-family member; main-run verification found m904 already counted the WSJ x OpenAI safety-crisis test (same Astra peg) and applied the #1143 temporal-replication precedent; no member claimed. The correction is disclosed in novelty.'
+        - 'WEAK: n=2 per side; degenerate statistical contract; one more WSJ arm would shift the illustrative delta.'
+      counterevidence:
+        - 'm532 (Sep 5): WSJ near-symmetry (OpenAI -0.20 vs Meta -0.275, delta -0.075) in the Astra cyber-rating vs $18B settlement window - the dual-deal prediction is window-dependent; this run''s crisis window INVERTS m532''s calm-window reading at the same outlet.'
+        - 'm625 (FT Sep 3-9 launch-week: OpenAI Astra coronation +0.25 vs Meta Muse +0.05) - the incentive-prediction-consistent baseline on matched product-launch pegs; this run does not refute it.'
+        - 'm763 (NY Post dual-payer tabloid symmetry, TWENTY-NINTH member, #887) - the tabloid-register precedent for dual-payer symmetry falsification; this run is the WSJ-register analogue without a member claim.'
+        - 'm718 (+0.55 matched capital-raise gap) stands unchallenged.'
+        - 'The firings piece quotes only the company statement - a softening-compatible telling exists (WSJ let OpenAI''s framing stand unchallenged), bounded by the hard peg.'
+      connects_to: [519, 532, 763, 904, 905, 956, 957]
+      novelty: 'FIRST dedicated corpus documentation of (a) the WSJ Oct-1-2026 safety-researcher-firings scoop (TechCrunch + pondeo.ai relay URLs zero-hit repo-wide pre-commit; the firing names Jasmine Wang / Tomek Korbak / Mikita Balesni exist in corpus only as FT m952/#1202 context, not as WSJ arms) and (b) the WSJ x Meta Muse-trust pair (both wsj.com canonicals zero-hit repo-wide pre-commit; ''Meta''s AI Agent Has a Trust Problem'' headline zero-hit repo-wide pre-commit). The Reuters Astra relay URL and peg are CARRIED (profiles/wired.yaml + #1077 test; m904 arm) - claimed as context, not novel. The scout''s FIFTIETH-member proposal was REJECTED as already-counted (m904, FORTY-FOURTH, #1122, same Astra peg; #1143 temporal-replication precedent) - disclosed in confounders. Pre-commit novelty greps: zero test_type_a_1212 files on disk (glob); no ''Type A #1212'' in git log (--grep); max numeric mechanism_id 957 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash 958 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded; the type_b_958_* keys in journalists.yaml are ITERATION 958, not mechanism key forms, per the #1209 precedent for type_a_957); block key zero-hit repo-wide pre-commit (designed keying: iteration 1212 in key, no 958 substring); 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); no #1212 row in README/ARCHITECTURE test tables pre-commit; README stats 65265/1536 pre-commit; fortieth direction-claim form absent in profiles/ pre-commit (this run does NOT land it - extension only); thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth directions present; forty-ninth member-claim form present exactly in profiles/careers/journalists.yaml (3 occurrences); fiftieth member-claim form absent repo-wide pre-commit. Method MANUAL / qualitative-only per the Aug 28 2026 standing rule (11 browser.search query sets via delegated research + main-run verification, 0 browser.open; no corpus queries executed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Delegated research (subagent) + main-run verification: 11 browser.search query sets this run (subagent), 0 browser.open per #503. Main-run verified all novelty claims and corrected the scout''s corpus-miss (m904 #1122 already counted the WSJ x OpenAI safety-crisis test on the same Astra peg; #1143 precedent applied - no new member). Rejected: WIRED x OpenAI Wardle CVE piece (single arm, no fresh WIRED Meta arms); FT x Anthropic (saturated: m892/m919/#1147/m943/#1187/m945/#1189/#1047); Guardian x Anthropic (saturated: m886); BI x Anthropic (saturated: m955 #1207); Snap SPECS / Apple N224 / Apple Taction (peg-absent per #1207); Sora 2 (stale Sep-2025 peg); WSJ x Meta layoffs relay (stale); NYT x OpenAI safety-warnings (URL not surfaced - kept as O2 corroborating context only).'
+      rotation_transparency: 'Iteration #1212 Type A is the THIRD leg of the 1210-1214 window (D #1210 -> E #1211 -> A #1212 -> B #1213 -> C #1214 per #565 anchor + rotation guard; #1210 Type D main 42ef40b0/anchor e6d38e98/doc-sync e7e9aba7/log-hash 7575fc6c, #1211 Type E main 03c1ac95/anchor 12a9231f/doc-sync f53d8f59/log-hash 0b6d30ba; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1212 files on disk (glob); no ''Type A #1212'' in git log (--grep); max numeric mechanism_id 957 pre-commit; zero numeric/underscore/dash 958 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit (designed keying: iteration 1212 in key, no 958 substring); 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F); no #1212 row in README/ARCHITECTURE test tables pre-commit; README stats 65265/1536 pre-commit; fortieth direction-claim form absent in profiles/ pre-commit (this run does NOT land it - extension only); thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth directions present; forty-ninth member-claim form present exactly in profiles/careers/journalists.yaml (3 occurrences); fiftieth member-claim form absent repo-wide pre-commit. Guard lifecycle: #1211''s max-957 + zero-958 + no-Type-A-#1212-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1212 test file); #1211''s zero-959 underscore/dash, thirty-fifth/thirty-sixth/thirty-seventh/thirty-eighth/thirty-ninth-intact, forty-ninth-intact, no-fiftieth guards stay green (verified via supersession pins in the #1212 test file). This run lands mechanism 958 as a CONTROL-CASE / DUAL-PAYER-SYMMETRY EXTENSION (no new direction, no new falsification-family slot). Next window leg #1213 Type B.'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (profiles/news-corp.yaml m958 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1210-launched full suite (goal hidden_files type_d_1210_full_suite.log) observed ALIVE at this run''s check (10636 bytes, mtime Oct 4 2026 12:59 PDT, pytest processes alive, ~3% progress); this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1215 (next Type D).'
+      in_flight: '#899 (nytimes.yaml m771), #938 (Type B test file), #900 (untracked Type D test file), #1012-wt (committed Type A test file edit) - all excluded from this run''s index/diff by explicit-path staging.'
+      source_urls:
+        - https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/
+        - https://pondero.ai/news/2026-10-04-openai-safety-departures/
+        - https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/
+        - https://www.wsj.com/tech/ai/metas-ai-agent-has-a-trust-problem-5ee5882c
+        - https://www.wsj.com/tech/ai/meta-ai-agent-muse-reactions-5bf236af
+
+
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
