@@ -1,3 +1,46 @@
+## #1216 Type E: podcast sentiment 166th verification cycle - GF 502 HOLDS (33rd verification, ~149h post Sep-28 release; NO 503; pure re-surface streak ADVANCES to five); EHE 55-day hold (5 re-surfaces + 2 circular own-repo GitHub URLs, ZERO new keys; #1211 new keys did NOT surface); Attention Sphere 166th no-match (6 circular commit URLs, same six as #1211; dec56140 absent 15th consecutive; Tracked Sources 165->166); press 7 re-surfaces + ZERO new keys (press pure re-surface streak RESTARTS at one; #1206/#1121/#1211 prior new keys re-surfaced; frontier HOLDS at Oct 3; Meta-exclusive privacy-pressure framing 166 cycles); tone NOT_SCORED per Aug 28 standing rule; ledger holds at 50; 1215-1219 window SECOND leg D->E->A->B->C (anchor per #565); in-gate: 67 passed + 10 deselected by design (TestAnchor 4 per #565 + TestDocSync 3 + TestIterationLog 3 per #719/#721), 0 in-gate defects; background suite checked only (verdict belongs to #1220 per #795); concurrency: #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846 - Oct 4 2026 04:00 PM PDT - 77 tests, 14 classes (Oct 4 2026, 04:00 PM PDT; main commit 40757141 / anchor 3bb795d7 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `40757141` (40757141b056673846a9a35afdbaef0d8684ef18) - verified via git rev-parse
+- Anchor followup `3bb795d7` (3bb795d7a06b6cc7ee07efffd91954ef54358af5; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync TBD
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1216 Type E, the SECOND leg of the 1215-1219 window (D #1215 -> E #1216 -> A #1217 -> B #1218 -> C #1219 per the #565 anchor + rotation guard).
+- Committed predecessor verified pre-commit: #1215 Type D (main 23a8a5ea / anchor 07eb7208 / doc-sync 70203f90 / log-hash fea5dc23); the 1215-1219 window is OPEN (A #1217, B #1218, C #1219 to go).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1217 Type A continues the window.
+- Guard lifecycle note: #1215's max-960 + zero-961 + no-Type-E-#1216-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1216 test file); #1215's fortieth-absent, forty-ninth-intact, fiftieth-intact, no-fifty-first guards stay green (verified via supersession pins in the #1216 test file).
+
+### Finding summary
+- GF: 502 HOLDS (thirty-third verification since the Sep 28 11:00am release, ~149h; NO 503). 7 rows = 7 re-surfaces (chortle Edinburgh-Fringe-2026 show page, listennotes main, podscan.fm main, youtube SXSW London panel, podscan.fm 499 episode transcript page, youtube episode-500 upload, listennotes TH stale locale variant); ZERO new GF keys; pure-re-surface streak ADVANCES to five (#1196 restarted at one, #1201 to two, #1206 to three, #1211 to four). ZERO Meta/wearables content across all 166 cycles (bounded search-result absence).
+- EHE: 55-day hold (Aug 10 Epstein spoof -> Oct 4). 7 rows = 5 re-surfaces (huckmag pervert-glasses piece, linkedin whats-up-privacy roundup, feminist.org author archive, linkedin kayvan-mirza op-ed, techtimes amnesty-boxes piece; all >=1 pre-commit corpus hit) + 2 circular own-repo GitHub URLs (strand blob git-ls-tree-verified + commit 36592f8f git-cat-file-verified). ZERO new EHE keys. The #1211 new keys (quantum-pilot/hn-digest HN relay + hyperallergic betye-saar roundup) did NOT surface this run; the afrotech ethics/consent piece did NOT surface this run either. "Glasses for people who don't do consent." remains the primary motif. No new primary campaign phase. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 166 cycles.
+- AS: one-hundred-sixty-sixth quoted-search no-match as a podcast. 6 own-repo commit URLs circular-rejected (919eb54a #771, 9253dd41 #791, a3a96668 #901, 2f9a4a27 #731, d9288ceb #731, ca75e30b #1011 - the same six as #1211; each git-cat-file-verified present, still circular as evidence). dec56140 absent fifteenth consecutive (after #1146 through #1211). podcast-sentiment.md blob did NOT surface (present at #1191; absent at #1181, #1186, #1196, #1201, #1206, #1211). 16611229 absent. Task-spec name remains misidentified; real-world identity stands per #591 (Kendall Schrohe). Tracked Sources 165->166.
+- Press: 7 rows = 7 re-surfaces (swapupdate.in Hans Anders mirror via #1206; khelja.in Ranveer Singh ambassador-backlash via #1176; reuters Hans Anders Oct-2 original via #1151/#1201/#1206/#1211; metapress mirror via #1161; techspot news 113968 camera-free piece via #981; techspot community forums mirror via #1121; bbc.bm Hans Anders mirror via #1211). ZERO new press keys; the press pure re-surface streak RESTARTS at one (after #1206 ended it and #1211 landed three new keys). The #1211 new keys (devdiscourse mirror + dainiknewslive.in piece) did NOT surface this run. No Oct-4-event surface; recency frontier HOLDS at Oct 3. Meta-exclusive privacy-pressure framing continues across all 166 cycles.
+- Tally: 27 result rows / 19 non-circular distinct URL keys / ZERO new verbatim URL keys this run / 8 distinct own-repo GitHub URLs rejected as circular.
+- Statistical discipline: monitoring-only per the Aug 28 2026 standing rule (tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, ledger holds at 50, NOT artifact-grade, verdict directionally_supported_not_proven, no_analysis_json_update true). Correlation is not causation. Hypothesis-generating only.
+- Background-suite status per #795: the #1215-launched full suite (goal hidden_files type_d_1215_full_suite.log) checked ONLY this run (1603 bytes, mtime Oct 4 16:25 PDT at this run's check; NOT touched; its verdict belongs to #1220).
+
+### Method
+- 4 browser.search query sets, 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.
+- Pre-commit novelty greps per #715: zero test_type_e_1216 files on disk (glob); no Type E #1216 in git log; max numeric mechanism_id 960; zero 961 mechanism key forms (numeric/underscore/dash, needles format-built, own file excluded); 19 re-surface keys at >=1 pre-commit corpus hit (7 GF + 5 EHE + 7 press) plus ZERO new keys; 8 circular URLs verified (2 EHE: blob git-ls-tree + commit git-cat-file; 6 AS commits git-cat-file); fortieth direction-claim form absent in profiles/; forty-ninth member-claim form exactly in profiles/careers/journalists.yaml; fiftieth member-claim form 3x in profiles/careers/journalists.yaml; fifty-first member-claim form absent repo-wide; ledger 50; no #1216 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 65600/1540 pre-commit.
+- Tests: tests/test_type_e_1216_podcast_sentiment_166th_verification_oct04_4pm.py
+- In-gate: 67 passed + 10 deselected by design (TestAnchor 4 per #565 + TestDocSync 3 + TestIterationLog 3 per #719/#721); 0 in-gate defects found and fixed (none found).
+- Forward guards for #1217: max-960; zero nine-six-one keys all forms (profiles/ + tests/); no-Type-A-#1217-in-git-log; fortieth direction absent (profiles/); forty-ninth member intact + fiftieth member intact in profiles/careers/journalists.yaml; fifty-first member absent (repo-wide); ledger 50.
+
+### New Type E files
+tests/test_type_e_1216_podcast_sentiment_166th_verification_oct04_4pm.py (77 tests, 14 classes)
+podcast-sentiment.md (166th cycle section appended)
+
+### Doc-sync ratchet
+README stats table 65600/1540 -> 65677/1541 (+77/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (log-hash followup registers main/anchor/doc-sync here).
+
+### Push status
+Push status (this run, Oct 4 2026 ~16:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
 ## #1215 Type D: m958/m959/m960 qualitative-discipline corpus-integrity verification + #1210 background-suite verdict (THIRTY-SEVENTH consecutive death; tombstone ONE-HUNDRED-FIRST -> ONE-HUNDRED-SECOND) + full suite re-launched - Type D FIRST and OPENING leg of the 1215-1219 window (Oct 4 2026, 04:00 PM PDT; main commit 23a8a5ea / anchor 07eb7208 / doc-sync 70203f90; log-hash followup registers all hashes here per #721 (this commit); doc-sync 65500/1539 -> 65600/1540 (+100/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
