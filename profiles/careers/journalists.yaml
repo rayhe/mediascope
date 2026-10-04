@@ -27276,3 +27276,116 @@ rita_el_khoury:
       artifact_readiness: 'No analysis.json update warranted. Single-arm watch; descriptive corpus record only.'
       background_suite_status: 'CHECKED ONLY per #795 - the #1195-launched full suite (goal hidden_files type_d_1195_full_suite.log) is DEAD at this run''s check (1108 bytes, mtime Oct 4 02:23 PDT, zero pytest processes alive at ps scan, progress 1%; would-be thirty-second consecutive death; verdict and tombstone belong to #1200 per #795). This run checked only (no m950 markers in the suite log); does not touch it.'
       in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m950 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+
+blake_montgomery_type_b:
+  name: Blake Montgomery
+  publication: the-guardian
+  mechanism_ids: [956]
+  notes: 'Type B #1208 (Oct 4 2026): mechanism 956 journalist-level FORTY-NINTH falsification-family member - FIRST dedicated Type B mechanism on Blake Montgomery in journalists.yaml (career-profile list entry pre-exists under journalists:; zero dedicated type_b key pre-commit, per the #643 convention). Guardian US tech editor; TechScape newsletter host.'
+  competitor_coverage:
+    type_b_1208_blake_montgomery_guardian_openai_rogue_vs_meta_18bn_falsification:
+      block_key: type_b_1208_blake_montgomery_guardian_openai_rogue_vs_meta_18bn_falsification
+      mechanism_id: 956
+      iteration: 1208
+      type: B
+      date: '2026-10-04 11:00 PDT'
+      test_file: tests/test_type_b_1208_blake_montgomery_guardian_openai_rogue_vs_meta_18bn_falsification_oct04_11am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Blake Montgomery
+      publication: the-guardian
+      window: '1205-1209 window FOURTH leg (D #1205 -> E #1206 -> A #1207 -> B #1208 -> C #1209)'
+      design: 'Type B journalist cross-entity tracking: Blake Montgomery (Guardian US tech editor) on OpenAI vs Meta. Tests the uniform payer-softening prediction at a deal-holding outlet: the Guardian x OpenAI strategic content-licensing partnership (Feb 14 2025, mechanism_514) predicts softer Guardian coverage of the deal partner (OpenAI) relative to the non-partner (Meta). Two arms, 13 days apart: a Meta trial-settlement accountability piece (Aug 26, co-byline Montgomery and Dara Kerr) and an OpenAI product-launch piece (Sep 8, solo Montgomery byline). A Sep 28 Montgomery cross-entity AI-agents piece corroborates the register symmetry within a single byline. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Meta agrees to major changes to Facebook and Instagram as it settles US trial over teen addiction for up to $18bn'
+        date: '2026-08-26'
+        outlet: the-guardian
+        author_byline: 'Blake Montgomery and Dara Kerr'
+        entity: meta
+        url: https://www.theguardian.com/technology/2026/aug/26/meta-social-media-addiction-trial-settlement
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-indexed mirror text; canonical theguardian.com URL recovered verbatim from Full-URL listing, none constructed)'
+        key_quotes:
+        - 'Accountability lede: "Dozens of US states had accused the tech giant of addicting and harming children with dangerous products."'
+        - 'Settlement scale: "The agreement curtails a major trial in California and will require the social media company to pay up to $18bn."'
+        - 'First-time compulsion: "This is the first time in the US that Meta has been forced to change key features of the experience of everyday users."'
+        - 'Child-data violation: "the social media company regularly collected data on children under the age of 13 without parental permission in violation of federal and state laws. As part of the settlement, the company denies wrongdoing."'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+        tone_reading: 'Hard adversarial accountability; legal-reckoning register; no exculpatory framing for Meta.'
+        status: 'NEW this run (zero corpus hits pre-commit)'
+      openai_arm:
+        title: 'OpenAI releases new AI agent - which promptly goes rogue'
+        date: '2026-09-08'
+        outlet: the-guardian
+        author_byline: 'Blake Montgomery (solo)'
+        entity: openai
+        url: https://thedailybreakingnews.com/news/technology/openai-releases-new-ai-agent-which-promptly-goes-rogue-17oacip
+        url_note: 'Guardian mirror via thedailybreakingnews.com (Technology desk, by Blake Montgomery, Sep 8 2026 1:29 PM per TDBN entry); canonical theguardian.com URL not surfaced in search output, none constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; headline + desk/byline/date attested via mirror index entry)'
+        key_quotes:
+        - 'Headline as framing (verbatim): "OpenAI releases new AI agent - which promptly goes rogue"'
+        - 'The headline treats the launch as self-discrediting: the product announcement and the failure are fused in a single mocking clause.'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        tone_reading: 'Adversarial launch mockery; the "promptly goes rogue" frame denies the deal partner the neutral business-news register that launch pegs conventionally draw.'
+        status: 'NEW this run (zero corpus hits pre-commit; "promptly goes rogue" zero-hit repo-wide pre-commit)'
+      corroborating_arm:
+        title: 'The AI agents are spiraling out of control'
+        date: '2026-09-28'
+        outlet: the-guardian
+        author_byline: 'Blake Montgomery'
+        url: https://www.theguardian.com/global/2026/sep/28/ai-agents-spiral
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503)'
+        key_quotes:
+        - 'Symmetric alarm (verbatim): "As OpenAI discloses multiple incidents of its technology going rogue and the UN warns of uncontrollable agents, Meta is putting an AI agent in the hands of millions"'
+        tone_reading: 'Within-piece cross-entity symmetry: "technology going rogue" (OpenAI) and "putting an AI agent in the hands of millions" (Meta) share one alarm register; neither entity gets the softer frame.'
+        status: 'NEW this run (zero corpus hits pre-commit); corroborates the two-arm symmetry within a single Montgomery byline, in-window (Sep 28).'
+      scorer:
+        meta_tone: -0.40
+        openai_tone: -0.35
+        illustrative_delta_openai_minus_meta: 0.05
+        delta_calc: '(-0.35) - (-0.40) = +0.05'
+        delta_reading: 'Near-null symmetric adversarial: the deal partner (OpenAI) draws essentially the same adversarial register as the non-partner (Meta). The uniform payer-softening prediction expects a positive softening gap (OpenAI notably softer); observed gap is +0.05, indistinguishable from parity.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned, n=1 per arm; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no_analysis_json_update true; verdict falsification_member_confirmed (ledger advance 48 -> 49), not an empirical discovery.'
+      financial_context: 'Guardian x OpenAI strategic partnership, Feb 14 2025 (mechanism_514, in-corpus in profiles/guardian.yaml): Guardian reporting/archive in ChatGPT with attribution; Guardian rolls out ChatGPT Enterprise; terms undisclosed. Guardian-Meta: $0, no licensing relationship. The naive uniform-incentive prediction: the deal partner (OpenAI) receives softer Guardian coverage than the non-partner (Meta). Correlation is not causation.'
+      finding: 'JOURNALIST-LEVEL FALSIFICATION of the uniform payer-softening prediction. Montgomery applies the adversarial register to the paid licensing counterparty (OpenAI) at near-parity with Meta: a mocking "promptly goes rogue" launch frame (-0.35) against a $18bn teen-harm legal-reckoning frame (-0.40), illustrative delta +0.05. The Sep 28 cross-entity piece distributes the agent-safety alarm evenly within one byline. The Guardian-OpenAI deal (mechanism_514) bought no register softness from this reporter. This INVERTS the #513 Dara Kerr finding at the SAME outlet under the SAME deal (Kerr: adversarial Meta vs neutral OpenAI business news, directional support for softening): the deal effect is journalist-contingent, not outlet-uniform. The uniform theory fails; a reporter-level theory is required.'
+      confounders:
+        strong:
+        - 'Genre asymmetry favoring the falsification reading: the OpenAI arm is a PRODUCT LAUNCH peg, which conventionally draws neutral business-news; Montgomery chose the adversarial "goes rogue" frame anyway. If genre drove the register, the launch peg should have been the softest arm; it is not. This confound cuts against the naive reading and for the member claim.'
+        - 'Co-byline attribution: the Meta arm is co-bylined with Dara Kerr, whose own #513 register runs adversarial-on-Meta. The $18bn piece''s adversarial voice may be Kerr''s rather than Montgomery''s. Counter: Montgomery''s SOLO OpenAI arm (Sep 8) and SOLO cross-entity arm (Sep 28) are independently adversarial/symmetric; the member claim rests on Montgomery''s own bylines, with the co-bylined Meta arm as the comparator.'
+        - 'Peg asymmetry: trial-settlement (legal reckoning) vs product launch are different news events 13 days apart (Aug 26 vs Sep 8); the Meta arm''s adversarial register is partly event-driven. The test is whether the DEAL softens the partner''s coverage relative to its own peg baseline, not whether the two pegs match.'
+        moderate:
+        - 'Evidence tier: all three arms excerpt-bounded (0 browser.open per #503); the OpenAI arm reads through a mirror index entry (headline + desk/byline/date), not a full-text read. Bounded absence of softening language in the excerpt is not proven absence in the full piece.'
+        - 'Temporal: 13-day arm gap (Aug 26 to Sep 8); post-settlement news-cycle density may elevate the adversarial baseline for all Big Tech coverage in that window.'
+        weak:
+        - 'n=1 per arm; single-reporter design; no cross-reporter replication within the Guardian tech desk this run.'
+      counter_evidence:
+      - '#513 Dara Kerr (SAME outlet, SAME Guardian-OpenAI deal): adversarial Meta (-0.70 avg) vs neutral OpenAI business news - directional SUPPORT for the softening prediction. The deal coincides with softer OpenAI coverage from Kerr, so the falsification is journalist-level (Montgomery), not publication-level (Guardian). The member claim is narrowly scoped.'
+      - 'Montgomery''s Jun 8 2026 OpenAI IPO-filing piece (co-byline Kerr, in-corpus in the #513 block): neutral business news ("ChatGPT maker expected to be valued at more than $850bn" relayed unchallenged). Montgomery does not always fire the adversarial register on OpenAI; the register tracks the peg (rogue-agent launch draws adversarial; IPO filing draws business news).'
+      - 'The #472 Bhuiyan Guardian x OpenAI discipline check (same-day pair, accountability markers on OpenAI comparable to Meta): direction-consistent with this member; independent reporter, same outlet, same deal - replication of the journalist-level pattern.'
+      - 'm952 (FT x OpenAI, FORTY-EIGHTH member): publication-level falsification via FT originals. This member is the journalist-level analogue at a second deal-holding outlet.'
+      connects_to: [472, 513, 514, 532, 952]
+      verdict: 'falsification_member_confirmed'
+      falsification_family: 'FORTY-NINTH falsification-family member. Journalist-level, same-outlet: Blake Montgomery (Guardian US tech editor) applies the adversarial register to the paid licensing counterparty (OpenAI; Feb-14-2025 strategic partnership, mechanism_514, coverage_prediction softer) at near-parity with the non-partner (Meta): "promptly goes rogue" launch mockery (-0.35) vs $18bn teen-harm legal reckoning (-0.40), illustrative delta +0.05. The Sep 28 cross-entity piece confirms within-bylinesymmetry. The uniform payer-softening prediction fails at this reporter; INVERTS the #513 Kerr directional-support finding at the same outlet under the same deal. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: true
+      falsification_ledger: 49
+      ledger_note: 'Ledger advances 48 -> 49 this run (new member m956). FORTY-EIGHTH member-form present in profiles/financial-times.yaml (m952, 2 occurrences); FORTY-NINTH member-claim form LANDED this run (m956, profiles/careers/journalists.yaml); fiftieth member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, carried manual tones, no empirical significance. The ledger advance (48 -> 49) is the corpus-level state change.'
+      research_method: 'Delegated research (subagent) + main-run verification: 6 browser.search query sets this run (2 delegated candidate-screening sweeps + 4 main-run verification sets), 0 browser.open per #503. SELECTED: Blake Montgomery (fresh; zero dedicated type_b key pre-commit; career-profile list entry pre-exists). REJECTED: Sean Hollister (saturated test_sean_hollister_cross_entity.py); Hugh Langley (Meta arm Aug 27, out of window); Richard Lawler (no Sep-Oct Meta byline, peg-absent); Cristina Criddle (#878), Samuel Gibbs (#628), Johana Bhuiyan (#472), Dara Kerr (#513), Dominic Preston (#503/#840/#938), Tim Bradshaw (#558), Alex Hern (#598), Kyle Barr, Cade Metz, Wes Davis (#643), Terrence O''Brien (#1038), Jay Peters (#833), Stevie Bonifield (#1138), Ece Yildirim (#808), Brenda Stolyar (#788), Florence Ion (#763), Tripp Mickle (#467), Karen Weise (#482), Ina Fried (#673/#1158), Erin Griffith (#518), George Hammond (in-corpus FT), Cameron Faulkner, James Whitbrook, Dua Rashid, Antonio Di Benedetto, Polly Thompson, Ross Andersen, Tim Higgins, Robert Booth (all saturated/peg-absent/no-clean-pair). Main-run novelty greps: 3/3 URLs zero-hit repo-wide (git grep -F); "promptly goes rogue" zero-hit repo-wide; zero dedicated Montgomery type_b block pre-commit; max numeric mechanism_id 955 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B mechanism on Blake Montgomery (m956); zero test_type_b_1208 files on disk pre-commit (glob); no "Type B #1208" in git log pre-commit (--grep); max numeric mechanism_id 955 pre-commit; zero numeric/underscore/dash nine-five-six mechanism key forms in profiles/ + tests/ pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1208 in key, no 956 substring); 3/3 source URLs zero-hit repo-wide pre-commit (git grep -F); "promptly goes rogue" zero-hit repo-wide pre-commit; no #1208 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 64933/1532 pre-commit. FORTY-NINTH falsification-family member LANDED this run (journalist-level Guardian x OpenAI, inverts #513); fiftieth member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit; thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) + thirty-ninth (m948) directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1205-launched full suite (goal hidden_files type_d_1205_full_suite.log) is ALIVE at this run''s check (33178 bytes, mtime Oct 4 2026 11:02 PDT, pytest processes alive at ps scan, progress ~11%). This run checked only (no m956 markers in the suite log); does not touch it. Verdict and tombstone belong to #1210 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file anchor edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m956 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://www.theguardian.com/technology/2026/aug/26/meta-social-media-addiction-trial-settlement
+      - https://thedailybreakingnews.com/news/technology/openai-releases-new-ai-agent-which-promptly-goes-rogue-17oacip
+      - https://www.theguardian.com/global/2026/sep/28/ai-agents-spiral
+      - https://muckrack.com/blake-montgomery/articles
