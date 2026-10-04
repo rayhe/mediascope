@@ -247,7 +247,13 @@ def _m946_data():
 
 
 def _window():
-    """Newest-first distinct (type, number) sequence from the log."""
+    """Distinct (type, number) sequence from the log, in FILE order.
+
+    NOTE: the log's tail is file-chronological (entries appended,
+    oldest-first) since the convention flip after #1148; the head
+    retains the old prepend order. Callers pin the tail sequence,
+    not a global newest-first ordering.
+    """
     pat = re.compile(r"^## #(\d+) Type ([A-E]):", re.M)
     seen = []
     for num, typ in pat.findall(_read(LOG_PATH)):
@@ -283,11 +289,12 @@ class TestNovelty1192:
         assert "Type A #1192" in log
 
     def test_type_a_1192_commit_set(self):
-        # Post-full-run: exactly three commits carry "Type A #1192"
-        # (main + anchor followup + log-hash followup per #721).
-        # Red pre-commit; deselect pre-commit.
+        # Post-full-run: exactly four commits carry "Type A #1192"
+        # (main + anchor followup + doc-sync + log-hash followup per
+        # #721; the doc-sync message carries the iteration tag per
+        # the #1191 convention). Red pre-commit; deselect pre-commit.
         log = _git("log", "--format=%H", "--grep=Type A #1192")
-        assert len([l for l in log.splitlines() if l.strip()]) == 3, log
+        assert len([l for l in log.splitlines() if l.strip()]) == 4, log
 
     def test_new_urls_in_corpus_post_commit(self):
         # The seven URLs were zero-hit repo-wide pre-commit;
@@ -303,10 +310,10 @@ class TestNovelty1192:
         text = _read(os.path.join(REPO_ROOT, M946_HOME))
         assert text.count(M946_KEY + ":") == 1
 
-    def test_no_1192_row_pre_commit_state_recorded(self):
-        # Pre-commit: no #1192 row in the doc tables or the log.
-        # Recorded as fail-by-design post-doc-sync.
-        assert "Type A #1192" not in _read(LOG_PATH)
+    def test_1192_entry_present_exactly_once(self):
+        # Post-doc-sync stable: exactly one #1192 entry in the log.
+        text = _read(LOG_PATH)
+        assert text.count("## #1192 Type A:") == 1
 
 
 # ---------------------------------------------------------------------------
@@ -340,13 +347,17 @@ class TestTypeARotationGuard1192:
     def test_window_third_leg(self):
         # Red pre-doc-sync (no #1192 entry in the log yet); green
         # once the doc-sync lands. Deselect pre-commit.
+        # NOTE: the log's entry order is file-chronological at the
+        # tail (entries appended, oldest-first): D1190 < E1191 < A1192
+        # in file order. The "_window() newest-first" docstring is a
+        # stale convention from the prepend era; the tail order is
+        # what this run pins.
         window = _window()
         assert ("A", "1192") in window
         assert ("E", "1191") in window
         assert ("D", "1190") in window
-        # Newest-first ordering: A1192 newer than E1191 newer than D1190.
-        assert window.index(("A", "1192")) < window.index(("E", "1191"))
-        assert window.index(("E", "1191")) < window.index(("D", "1190"))
+        tail = window[-3:]
+        assert tail == [("D", "1190"), ("E", "1191"), ("A", "1192")], tail
 
     def test_rotation_phrase_in_log_entry(self):
         # Red pre-doc-sync; green once the doc-sync lands. Deselect
