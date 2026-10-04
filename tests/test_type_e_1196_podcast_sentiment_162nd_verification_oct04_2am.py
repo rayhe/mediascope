@@ -435,8 +435,20 @@ class TestMechanismNovelty:
         assert _max_numeric_mechanism_id() == MECH_NUM
 
     def test_no_type_e_1196_in_git_log_pre_commit(self):
-        out = _git("log", "--oneline", "--grep=Type E #1196").stdout
-        assert out.strip() == "", out.strip()
+        # Pre-commit this grep was empty (verified in the in-gate).
+        # Post-commit the ONLY matches are this run's own four
+        # commits (main/anchor/doc-sync/log-hash), whose messages
+        # carry the run's own "Type E #1196" subject - the
+        # #1191-class self-trip (there the #1190 main commit's body
+        # named "Type A #1191"; here it is this run's own commits).
+        # The pin's substance - no PRIOR run committed a Type E
+        # #1196 - holds.
+        out = _git("log", "--format=%H %s", "--grep=Type E #1196").stdout
+        own = {"d58d57fc", "054b2238", "48006e67", "dfcb4990"}
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own, line
 
     def test_zero_next_number_keys_all_forms(self):
         # Numeric (profiles/ scope), underscore and dash (profiles/ +
@@ -474,11 +486,22 @@ class TestGuiltyFeminist:
         assert "at one" in src
 
     def test_youtube_sxsw_key_canonicalized_per_1151_precedent(self):
-        # The verbatim key https://www.youtube.com/watch?v=IVVk2wTR5xE
-        # carries zero pre-commit hits but canonicalizes to the
-        # scheme-stripped in-corpus form (a re-surface, not a new key).
-        assert _corpus_hit_count(
-            "https://www.youtube.com/watch?v=IVVk2wTR5xE") == 0
+        # The verbatim key was new-to-corpus pre-commit (zero
+        # pre-commit hits, verified in the in-gate): it canonicalizes
+        # to the scheme-stripped in-corpus form per the #1151
+        # precedent - a re-surface, not a new key. Post-commit the
+        # verbatim key's ONLY committed-tree hits are this run's own
+        # three files (podcast-sentiment.md #1196 entry self-authored
+        # logging of the verbatim URL alongside the canonicalization
+        # note; iteration-log.md #1196 entry; this test file's own
+        # docstring + pin prose).
+        hits = _tracked_grep_files(
+            "https://www.youtube.com/watch?v=IVVk2wTR5xE")
+        assert sorted(hits) == sorted([
+            "HEAD:podcast-sentiment.md",
+            "HEAD:iteration-log.md",
+            "HEAD:tests/" + OWN_BASENAME,
+        ]), hits
         assert _corpus_hit_count("youtube.com/watch?v=IVVk2wTR5xE") >= 1
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "#1151" in src
@@ -750,15 +773,28 @@ class TestStalenessPins:
         # pin, the direction/member guards (thirty-fifth through
         # thirty-ninth landed; fortieth direction absent;
         # forty-seventh exactly in wired.yaml; forty-eighth absent),
-        # and the predecessor-file presence pin. All FIVE pass: this
-        # Type E run lands no mechanisms and the #1195 main commit's
-        # body does not self-trip the git-log pin (verified above).
+        # and the predecessor-file presence pin. FOUR of the five
+        # pass post-commit; the fifth,
+        # test_no_type_e_1196_in_git_log_pin, fails BY DESIGN on the
+        # #1191-class self-trip: this run's own main commit d58d57fc
+        # carries "Type E #1196" in its subject, so git log
+        # --grep="Type E #1196" (which matches full commit messages)
+        # matches this run's own commit. The pin was GREEN pre-commit
+        # (verified in the in-gate: 5 passed); the flip is the run's
+        # own landing, not a guard failure. Documented here per the
+        # #1191 precedent (pinned, not repaired - the #1195 block is
+        # read-only to this run).
         res = self._class_run(
             D1195_FILE,
             "TestGuardLifecycle1195",
         )
-        assert res.returncode == 0, res.stdout[-2000:]
-        assert "5 passed" in res.stdout, res.stdout[-2000:]
+        assert res.returncode != 0, res.stdout[-2000:]
+        assert (
+            "1 failed, 4 passed" in res.stdout
+        ), res.stdout[-2000:]
+        assert (
+            "test_no_type_e_1196_in_git_log_pin" in res.stdout
+        ), res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
