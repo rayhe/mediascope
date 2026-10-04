@@ -44741,3 +44741,44 @@ Push status (this run, Oct 4 2026 ~08:xx PDT): main + anchor followup pushed and
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
 
+
+## #1207 Type A: m955 BI x Anthropic Sep-29 IPO-prospectus "smart people" financial-skeptical register (-0.30 MANUAL ILLUSTRATIVE, NEW Sep-29 arm, relay-attested via 5 mirrors) vs carried BI Meta product-execution neutral triad (+0.08, m399 un-rescored per #807); illustrative delta (Anthropic minus Meta) -0.38; cross-lab m399 OpenAI (deal partner) -0.42 vs m955 Anthropic (no tie) -0.30 near-parity - register follows the financial peg, not the payer; TEMPORAL REPLICATION of m399 deal-partner-hardness at the non-deal lab; EXTENDS the BI control case; NOT a falsification-family member, ledger holds at 48 - Type A THIRD leg of the 1205-1209 window (Oct 4 2026, 10:00 AM PDT; main commit ec95a251 / anchor 58d2f189 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 64858/1531 -> 64933/1532 (+75/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Finding summary
+- NEW arm: Business Insider Sep-29-2026 "What smart people are saying about Anthropic's leaked IPO prospectus numbers" - financial-skeptical register (-0.30 MANUAL ILLUSTRATIVE, relay-attested via five independent mirrors: postgoo.com, cncbnews.com, misryoum.com, collector.com.tr, biztoc.com; biztoc timestamps the BI original 2026-09-29 17:18:17; canonical businessinsider.com URL not recovered, none constructed per policy). Key language: "Anthropic's IPO math is staggering", "truly eye-watering numbers", "$42 billion net loss", "$7.33 billion on compute and infrastructure", "$518 billion in future cloud, computing, and infrastructure obligations", "gobsmacking numbers"; third-party voices carry the sharpest lines (Akoner/eToro: "a lot of work to do", "more meaningful figure is the $8.1 billion operating loss", "long way from proving it can turn rapid revenue growth into sustainable profits"; Marcus: "-50 times 2025 losses" / "The more they lose, the more they win!"; Hendricks: "The shareholder dilution on this will be something to behold"; Williams: "Siri, is it good when huge chunks of my revenue come from only two companies?"); BI's own accountability close: "The company didn't immediately respond to a request for comment from Business Insider."
+- Carried Meta arms (m399, un-rescored per #807): BI's Meta product-execution triad (Dec 2025 - Apr 2026, +0.08 avg) - Phoenix delay framed as polishing ("aiming to get the details right"), Ray-Ban Display scarcity as demand-positive ("high demand", "waitlists extending into 2026"), retail expansion as strategic growth ("could mirror Apple's retail strategy"); no financial-viability questioning.
+- Illustrative delta (Anthropic minus Meta) -0.38. Cross-lab: m399's OpenAI arm (the Axel Springer deal partner) scored -0.42 on the same financial-skepticism register family; the non-deal lab (Anthropic, $0 Axel Springer tie) draws -0.30 on its own IPO paper - 0.12 apart, near-parity. The "smart people" roundup format hedges one notch softer than m399's direct investor-alarm ("cash incinerator") register; same family.
+- Analytical read (refinement, not a discovery): the BI financial-skepticism register is peg-conditional (fundraising/IPO scrutiny genre), not payer-conditional. It fires on financial pegs at BOTH labs while the same publication runs aspirational registers on milestone pegs at the non-deal lab (m420 +0.34, m745 +0.4167) and mitigation-credit on recovery pegs at the deal lab (m799 +0.3167). TEMPORAL REPLICATION of m399's deal-partner-hardness finding at the non-deal lab; EXTENDS the BI control case (m399's own verdict: the Axel Springer deal buys no stable softness).
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=1 vs triad-avg; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no analysis.json update).
+- Background-suite status per #795: the #1205-launched full suite (goal hidden_files type_d_1205_full_suite.log) observed ALIVE at this run's check (16600 bytes, mtime Oct 4 2026 10:15 PDT, ~5% progress, pytest processes alive); CHECKED ONLY - this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1210 (next Type D).
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_a_1207 files on disk (glob); no "Type A #1207" in git log; max numeric mechanism_id 954; zero 955 key forms (numeric/underscore/dash, needles format-built); 5 mirror source URLs zero-hit repo-wide; zero "akoners"/"smart people"/"gobsmacking" hits repo-wide (case-insensitive); block key zero-hit repo-wide (designed keying: iteration 1207 in key, no 955 substring).
+- 17 browser.search query sets, 0 browser.open reads per #503. Rejected as corpus-saturated: Verge Sep-29 Anthropic IPO-prospectus risk-factor arm (m883, Type A #1087); Guardian Sep-29 Anthropic existential-risks IPO-document arm (m886, Type A #1092); BI x Anthropic Sep-13 Nasdaq-choice scoop (m745, Type A #857). Rejected as peg-absent (bounded absence per the iteration-492 rule): Snap SPECS First Look Oct 1-2 (no tracked-publication originals - Reuters/BusinessWire/roadtovr relays only); Apple Gurman Sep-28 Vision Pro N224 "life support" + 2027 smart glasses (no theverge.com/wired.com/gizmodo.com originals - MacRumors/AppleInsider/Gadgets360 relays only); Apple $5.7B Taction haptics verdict Sep 25 (no gizmodo.com original - notebookcheck/gadgets360/techrepublic relays only).
+- Tests: tests/test_type_a_1207_bi_anthropic_ipo_prospectus_smart_people_financial_skeptical_vs_meta_execution_neutral_sep29_oct04_10am.py
+- Forward guards for #1208: max-955; zero nine-five-six keys all forms (profiles/ + tests/ scope); no-Type-B-#1208-in-git-log.
+- In-gate: 67 passed + 8 deselected by design (TestDocSync 5 + TestIterationLog 3 per #719/#721); 3 in-gate defects found and fixed (source_urls list-of-dicts extraction x2, next-leg window assertion).
+
+### New Type A files
+tests/test_type_a_1207_bi_anthropic_ipo_prospectus_smart_people_financial_skeptical_vs_meta_execution_neutral_sep29_oct04_10am.py (75 tests, 13 classes)
+profiles/business-insider.yaml (m955 block appended under competitor_relationships.anthropic, 4-space indent, sibling of m420/m745, before the `meta:` key)
+
+### Doc-sync ratchet
+README stats table 64858/1531 -> 64933/1532 (+75/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (log-hash followup registers main/anchor/doc-sync here).
+
+### Push status
+Push status (this run, Oct 4 2026 ~10:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followup pushed after.
+
+### Commit hashes
+- Main commit `ec95a251` (ec95a251fa8d96a120d9b47597c9ea0d5be24383) - verified via git rev-parse
+- Anchor followup `58d2f189` (58d2f1897bf369f8487fbb72b04ce3eefd3f5ba5; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 64858/1531 -> 64933/1532; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1207 Type A, the THIRD leg of the 1205-1209 window (D #1205 -> E #1206 -> A #1207 -> B #1208 -> C #1209 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1205 Type D (main 829b8a8b / anchor 8a542a9e / doc-sync 65166ef2 / log-hash 65a316d2), #1206 Type E (main be56e254 / anchor 9314bab6 / doc-sync a4870804 / log-hash 390d4a56 + corrective f0e3aaeb).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1208 Type B continues the window; the #1205 background-suite verdict belongs to #1210 per #795.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
