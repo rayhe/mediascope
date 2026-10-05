@@ -1,11 +1,11 @@
-## #1237 Type A: m973 Barron's x OpenAI FTC-probe enforcement register (-0.40/-0.15, avg -0.275) vs Barron's x Meta Connect investor-forward baseline (+0.05/+0.10, avg +0.075); illustrative delta -0.35; FIFTY-FIRST falsification-family member (ledger 50->51); FIRST Barron's publication-line mechanism; enforcement-register replication of the m904 WSJ News Corp line at a second News Corp title; dual-payer payment-scale inversion (5:1 larger payer gets harder register); cross-peg confound disclosed - Type A THIRD leg of the 1235-1239 window (Oct 5 2026, 11:00 AM PDT; main commit e0da8e28 / anchor c3fdbb9f / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67311/1561 -> 67389/1562 (+78/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main e0da8e28 / anchor c3fdbb9f / doc-sync TBD / log-hash this commit
+## #1237 Type A: m973 Barron's x OpenAI FTC-probe enforcement register (-0.40/-0.15, avg -0.275) vs Barron's x Meta Connect investor-forward baseline (+0.05/+0.10, avg +0.075); illustrative delta -0.35; FIFTY-FIRST falsification-family member (ledger 50->51); FIRST Barron's publication-line mechanism; enforcement-register replication of the m904 WSJ News Corp line at a second News Corp title; dual-payer payment-scale inversion (5:1 larger payer gets harder register); cross-peg confound disclosed - Type A THIRD leg of the 1235-1239 window (Oct 5 2026, 11:00 AM PDT; main commit e0da8e28 / anchor c3fdbb9f / doc-sync bfb9dc92; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67311/1561 -> 67389/1562 (+78/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main e0da8e28 / anchor c3fdbb9f / doc-sync bfb9dc92 / log-hash this commit
 
 ### Commit hashes
 - Main commit `e0da8e28` (e0da8e28bee3e3bb284021b4768b1ef618428457) - verified via git rev-parse
 - Anchor followup `c3fdbb9f` (c3fdbb9fe0d937b74e8d3a56e270aa33bffe8e90; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD (patched by the log-hash followup; this commit)
-- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_a_1237_in_git_log_pin to the own-set form
+- Doc-sync `bfb9dc92` (bfb9dc92bfe54144f7cde5b9f1f7b8205af33748; README 67311/1561 -> 67389/1562; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_a_1237_in_git_log_pin to the own-set form (HEAD admitted)
 
 ### Rotation transparency
 - This run is iteration #1237 Type A, the THIRD leg of the 1235-1239 window (D #1235 -> E #1236 -> A #1237 -> B #1238 -> C #1239 per the #565 anchor + rotation guard).
