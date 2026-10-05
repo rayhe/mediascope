@@ -1,3 +1,46 @@
+## #1233 Type B: m971 Ben Lovejoy (9to5Mac) Muse Mac-access op-ed (-0.65 MANUAL ILLUSTRATIVE, NEW Sep-28 arm) vs Siri agentic-AI op-eds (+0.45 May-18 arm, +0.40 Jun-4 corroborating arm) - illustrative delta (Apple minus Meta) +1.10; CONFIRMING EXTENSION of m223 (camera-feature differential prior replicates in the agentic-AI device-access class); same writer/outlet/genre/capability class; intra-article Apple contrast inside the Meta arm; NOT a falsification-family member (no documented 9to5Mac x Apple financial tie); ledger holds at 50 - Type B FOURTH leg of the 1230-1234 window (Oct 5 2026, 07:00 AM PDT; main commit 882a1284 / anchor 88329e37 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66958/1557 -> 67048/1558 (+90/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 882a1284 / anchor 88329e37 / doc-sync TBD / log-hash this commit
+
+### Commit hashes
+- Main commit `882a1284` (882a12848dd9a5ae5a34a2e723a8e7b9ccecbcdb) - verified via git rev-parse
+- Anchor followup `88329e37` (88329e37847c71429a0865d8109e9075ec98c52a) - verified via git rev-parse; ANCHORED_SHA patched per #565 (self-anchor)
+- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1233 Type B, the FOURTH leg of the 1230-1234 window (D #1230 -> E #1231 -> A #1232 -> B #1233 -> C #1234 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1232 Type A (main 9f74c6ee / anchor bb211ca8 / doc-sync ade7a8de / log-hash 196377eb + correctives 74c48e44/e29dbc40), #1231 Type E (main 9f4fdafe / anchor 5d933b11 / doc-sync c0d7f479 / log-hash 2ba700c2), #1230 Type D (main 3d4a7a89 / anchor 23de2781 / doc-sync 6f62b9a7 / log-hash 407016dd), #1229 Type C (main 26d31741 / anchor 5d0bb9a9 / doc-sync 4896cb01 / log-hash e3d70845); the 1225-1229 window is VERIFIED CLOSED.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1234 Type C closes the window; the #1230 background-suite verdict belongs to #1235 per #795.
+- Guard lifecycle note: #1232's max-970 + zero-971 + no-Type-B-#1233-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1233 test file); #1232's fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact, no-fifty-first guards stay green (verified via the staleness pin in the #1233 test file).
+
+### Finding summary
+- m971 (profiles/careers/journalists.yaml, NEW top-level ben_lovejoy_type_b key per #643; competitor_coverage sub-key, 2-space indent): Ben Lovejoy (9to5Mac opinion columnist, Apple beat) applies the distrust-maximal register to Meta Muse agentic Mac access (-0.65 MANUAL ILLUSTRATIVE: "9to5Mac's Take on Muse: Nope.", "unquestionably be the first entry" on the least-trusted list, "abysmal privacy record") while granting Apple affirmative trust priors on the identical capability class (+0.45: "the most privacy-respecting AI chatbot out there"; corroborating Jun-4 arm +0.40: "privacy may still rescue the company's tarnished reputation in AI"). Illustrative delta (Apple minus Meta) +1.10.
+- The Meta arm itself carries the intra-article Apple contrast ("I'm inclined to trust the privacy and safety safeguards Apple has put into place"), so the differential prior is extractable within the single Sep-28 piece; the May-18/Jun-4 Siri arms confirm it cross-article.
+- Verdict: CONFIRMING EXTENSION of m223 (Lovejoy camera-feature advocacy inversion, Aug 2026) - the differential-prior direction replicates in the agentic-AI device-access class (temporal + class extension). NOT a falsification-family member (no documented 9to5Mac x Apple financial tie in the corpus; the deal-partner prediction is untested, not falsified). Ledger holds at 50. Extends the m956/m959 journalist-contingent refinement: the prior is writer-level, present without a deal partner.
+- Statistical discipline: the finding layer stays MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned; engine NOT run; is_significant false; NOT artifact-grade; no analysis.json update).
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1233 files on disk (glob, own file only); no "Type B #1233" in git log; max numeric mechanism_id 970; zero numeric/underscore/dash nine-seven-one mechanism key forms repo-wide pre-commit (needles format-built, sweep-carrier excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1233 in key, no 971 substring); 4/4 source URLs zero-hit repo-wide pre-commit (git grep -F); both arm headlines zero-hit repo-wide pre-commit; no #1233 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 66958/1557 pre-commit.
+- Verification-layer run: delegated scout (12 browser.search query sets across ~10 candidates; SELECTED Lovejoy as the tightest controlled pair; REJECTED Karissa Bell, Rebecca Bellan, Shirin Ghaffary, Stephen Council, Will Shanklin, Hayden Field as saturated/beat-moved; fallbacks held: Ian Carlos Campbell, Anthony Ha, Marcus Mendes, Ashley Belanger, Scott Younker) + 3 main-run browser.search verification sets (exact-headline searches returning all three canonical 9to5mac URLs verbatim from Full-URL listings); 0 browser.open per #503. Main-run corrected the scout's corpus characterization (m223 pre-exists on Lovejoy; novelty is the agentic-AI device-access pair) and rejected its "zero known corpus hits" claim.
+- Literal discipline per #715: the forward-guard needles (next-number 972 forms, the fifty-first member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed-claim literals (FIFTIETH member, FORTY-NINTH member, FORTY-EIGHTH member) are permitted.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 79 passed + 11 deselected by design (TestAnchor 4 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins 1 per #565/#719/#721); 0 in-gate defects at final gate (5 found and fixed across two passes: yaml-block ASCII scoping to own block, p_value needle self-match in assert line, forty-ninth/fiftieth nowhere-else staleness vs doc-sync surfaces).
+- Tests: tests/test_type_b_1233_ben_lovejoy_9to5mac_muse_mac_access_vs_siri_privacy_trust_oct05_7am.py (90 tests, 13 classes).
+- Forward guards for #1234: max-971; zero nine-seven-two keys all forms (profiles/ + tests/ scope); no-Type-C-#1234-in-git-log; fortieth direction absent; forty-eighth/forty-ninth/fiftieth members intact; fifty-first member absent (fiftieth LANDED at #1213, holds).
+
+### New Type B files
+tests/test_type_b_1233_ben_lovejoy_9to5mac_muse_mac_access_vs_siri_privacy_trust_oct05_7am.py (90 tests, 13 classes)
+(profiles/careers/journalists.yaml appended: NEW top-level ben_lovejoy_type_b key, mechanism_ids [971]; no profiles/ changes beyond the block - Type B adds no mechanisms to publication profiles)
+
+### Doc-sync ratchet
+README stats table 66958/1557 -> 67048/1558 (+90/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup); test-file constants post-sync-positive per #719 (90 collected, 13 classes).
+
+### Push status
+Push status (this run, Oct 5 2026 ~07:xx PDT): main + anchor followup pushed and rev-parse-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (targeted staging by explicit path). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
 ## #1231 Type E: podcast sentiment 169th verification cycle (GF 502 HOLDS 36th verification ~161h, NO 503; GF pure re-surface streak ADVANCES to eight; EHE 56-day hold; AS 169th no-match, dec56140 absence streak ADVANCES to two, Tracked Sources 168->169; press 7 re-surfaces ZERO new keys, press streak ADVANCES to two, frontier HOLDS at Oct 3; monitoring-only per the Aug 28 2026 standing rule, NOT artifact-grade; ledger holds at 50) - Type E SECOND leg of the 1230-1234 window (Oct 5 2026, 05:00 AM PDT; main commit 9f4fdafe / anchor 5d933b11 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66818/1555 -> 66895/1556 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 - Hash chain: main 9f4fdafe / anchor 5d933b11 / doc-sync c0d7f479 / log-hash this commit
 
