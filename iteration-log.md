@@ -1,3 +1,49 @@
+## #1230 Type D: m967/m968/m969 qualitative-discipline corpus-integrity verification + #1225 background-suite verdict (FORTIETH consecutive death; tombstone ONE-HUNDRED-FOURTH -> ONE-HUNDRED-FIFTH) + full suite re-launched - Type D FIRST and OPENING leg of the 1230-1234 window (Oct 5 2026, 04:00 AM PDT; main commit 3d4a7a89 / anchor 23de2781 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66719/1554 -> 66818/1555 (+99/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 3d4a7a89 / anchor 23de2781 / doc-sync TBD / log-hash this commit
+
+### Commit hashes
+- Main commit `3d4a7a89` (3d4a7a8945ab7ba6fde9c8f1e82cf1a44eb84215) - verified via git rev-parse
+- Anchor followup `23de2781` (23de2781db6b6c2beea088081b5fc4ec78ae422a; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1230 Type D, the FIRST and OPENING leg of the 1230-1234 window (D #1230 -> E #1231 -> A #1232 -> B #1233 -> C #1234 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1225 Type D (main 1ada50f9 / anchor d69b3b53 / doc-sync 3f0d4d84 / log-hash 9b61c858), #1226 Type E (main 0b151dc1 / anchor 6d030566 / doc-sync 6ac702a5 / log-hash d28923b1), #1227 Type A (main 6b01b97a / anchor 49651ebf / doc-sync fc586f18 / log-hash d490a209), #1228 Type B (main c814454e / anchor 53ac9eaf / doc-sync 0da1fa9d / log-hash 19e32817 + corrective e5f97fec + whitelist-2 b766cdd0), #1229 Type C (main 26d31741 / anchor 5d0bb9a9 / doc-sync 4896cb01 / log-hash e3d70845); the 1225-1229 window is VERIFIED CLOSED.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1231 Type E continues the window; the #1230 background-suite verdict belongs to #1235 per #795.
+- Guard lifecycle note: #1229's max-969 + zero-970 + no-Type-D-#1230-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1230 test file); #1229's fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact, no-fifty-first guards stay green (verified via supersession pins in the #1230 test file).
+
+### Finding summary
+- m967 (Type A #1227, profiles/business-insider.yaml competitor_relationships/openai): mechanism_refinement_not_a_discovery - temporal replication of m399's deal-partner-hardness finding + extension of m871's safety-accountability line at the October escalation peg (named-insider resignation exclusive; -0.35 scoop to -0.50 exclusive). The Axel Springer licensing deal predicts neither softness nor hardness - it predicts nothing stable. NOT a falsification-family member per the #1143 temporal-replication precedent; connects_to [399, 871, 952, 799, 955]; ledger holds at 50.
+- m968 (Type B #1228, profiles/careers/journalists.yaml jess_weatherbed_type_b/competitor_coverage): boundary_control_case_journalist_contingent_not_a_discovery - same-day symmetric-adversarial boundary/control pair (Meta Muse -0.55 vs Anthropic -0.50, illustrative delta +0.05 near-null). In-outlet contrast with m965 extends the m956/m959 journalist-contingent refinement. NOT a falsification-family member (Anthropic is not the deal partner); connects_to [494, 952, 956, 959, 965, 462, 56]; ledger holds at 50.
+- m969 (Type C #1229, profiles/competitor-entities.yaml top-level): directionally_supported_not_proven - STATUS-CHECK EXTENSION of the m843 line (first dated enforcement of the Reddit free-tier shutdown); NO NEW MONEY FACTS; NOT a falsification-family member; connects_to [843, 417, 427]; ledger holds at 50.
+- LEDGER STATE: fiftieth member claim intact (m959, profiles/careers/journalists.yaml, 3 occurrences); forty-ninth member claim intact (m956, same file, 3 occurrences); forty-eighth member claim intact (m952, profiles/financial-times.yaml, 2 occurrences); m967/m968/m969 claim NO slot (falsification_family_member false on all three); fifty-first member-claim form absent repo-wide; fortieth direction absent in profiles/; thirty-fifth through thirty-ninth directions present. Ledger HOLDS at 50.
+- #1226 Type E 168th podcast-sentiment verification-cycle discipline verified: monitoring-only per the Aug 28 2026 standing rule (tone NOT_SCORED, engine NOT run, no mechanisms added, NOT artifact-grade); GF 502 HOLDS (35th verification, ~158h post Sep-28 release; NO 503); GF pure-re-surface streak ADVANCES to seven; EHE 56-day hold (7 re-surfaces, ZERO new keys); Attention Sphere 168th no-match (6 circular commit URLs, dec56140 absence streak RESTARTS at one, Tracked Sources 167->168); press 7 re-surfaces ZERO new keys (press streak RESTARTS at one); recency frontier HOLDS at Oct 3; ZERO new verbatim URL keys; Meta-exclusive privacy-pressure framing across 168 cycles.
+- #1225 background-suite verdict per #795: the #1225-launched full suite DIED (8145 bytes / [ 10%] progress, last write Oct 5 03:19 PDT, ~1h stale at this run's 04:2x check, zero summary tokens, no process holding the log open per the /proc open-fd check, zero live pytest processes) - FORTIETH consecutive background-suite death of the new streak (the 57-run streak ENDED at #1085 when the #1080 suite completed). Tombstone lineage advances ONE-HUNDRED-FOURTH -> ONE-HUNDRED-FIFTH. Re-launched this run to goal hidden_files type_d_1230_full_suite.log (WITHOUT -x; dots accumulating at doc-sync, suite alive); the next Type D run (#1235) checks its verdict per #795.
+- Statistical discipline: the finding layer stays MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (no corpus mechanisms landed this run; engine NOT run on corpus; is_significant never asserted on corpus data; NOT artifact-grade; no analysis.json update).
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_d_1230 files on disk (glob, own file only); no "Type D #1230" in git log; max numeric mechanism_id 969; zero numeric/underscore/dash 970 mechanism key forms repo-wide pre-commit (needles format-built, sweep-carrier excluded); "OPENING leg of the 1230-1234 window" zero-hit in iteration-log pre-commit; "## #1230" zero-hit in iteration-log pre-commit; README stats 66719/1554 pre-commit; no #1230 row in README/ARCHITECTURE test tables pre-commit.
+- Verification-layer run: 0 browser.search query sets this run (all arms already in corpus via #1227-#1229); 0 browser.open per #503.
+- Literal discipline per #715: the forward-guard needles (next-number 970 forms, the fifty-first member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed-claim literals (fiftieth member, FORTIETH death, ONE-HUNDRED-FIFTH tombstone) are permitted.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 89 passed + 10 deselected by design (TestDocSync 5 + TestIterationLog 4 + tombstone-in-log node 1 per #719/#721 + #795); 0 in-gate defects.
+- Tests: tests/test_type_d_1230_m967_m968_m969_qualitative_corpus_integrity_oct05_4am.py (99 tests, 19 classes).
+- Forward guards for #1231: max-969; zero nine-seven-zero keys all forms (profiles/ + tests/ scope); no-Type-E-#1231-in-git-log; fortieth direction absent; fifty-first member absent (fiftieth LANDED at #1213, holds).
+
+### New Type D files
+tests/test_type_d_1230_m967_m968_m969_qualitative_corpus_integrity_oct05_4am.py (99 tests, 19 classes)
+(profiles verified only, not modified: profiles/business-insider.yaml, profiles/careers/journalists.yaml, profiles/competitor-entities.yaml)
+
+### Doc-sync ratchet
+README stats table 66719/1554 -> 66818/1555 (+99/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants post-sync-positive per #719 (99 collected, 19 classes).
+
+### Push status
+Push status (this run, Oct 5 2026 ~04:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (targeted staging by explicit path). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
 ## #1229 Type C: m969 Reddit free-tier shutdown enforcement event (Sep 30 2026) - four-deadline closure of the free data tier (Oct 31 2026 new-API-request stop; Nov 13 2026 RSS end; Jan 12 2027 unregistered-app cutoff; March 2027 public API close) with paid Google (~$60M/yr) and OpenAI (~$70M/yr press-reconstructed) deals explicitly preserved; FIRST dated enforcement of the m843 pay-or-take-a-hike posture; STATUS-CHECK EXTENSION of the m843 line, NOT a new direction (fortieth absent by design; 35th-39th stand), NOT a falsification-family member (ledger holds at 50); NO NEW MONEY FACTS - Type C FIFTH and CLOSING leg of the 1225-1229 window (Oct 5 2026, 04:00 AM PDT; main commit 26d31741 / anchor 5d0bb9a9 / doc-sync 4896cb01; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66646/1553 -> 66719/1554 (+73/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
