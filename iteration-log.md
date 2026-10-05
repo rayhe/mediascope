@@ -1,9 +1,11 @@
-## #1226 Type E: podcast sentiment 168th verification cycle (GF 502 HOLDS 35th verification ~158h, NO 503, GF pure re-surface streak ADVANCES to seven; EHE 56-day hold 7 re-surfaces ZERO new keys; AS 168th no-match 6 circular commit URLs, dec56140 absence streak RESTARTS at one, Tracked Sources 167->168; press 7 re-surfaces ZERO new keys, press streak RESTARTS at one, frontier HOLDS at Oct 3) - Type E SECOND leg of the 1225-1229 window (Oct 5 2026, 02:00 AM PDT; main commit 0b151dc1 / anchor 6d030566 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1226 Type E: podcast sentiment 168th verification cycle (GF 502 HOLDS 35th verification ~158h, NO 503, GF pure re-surface streak ADVANCES to seven; EHE 56-day hold 7 re-surfaces ZERO new keys; AS 168th no-match 6 circular commit URLs, dec56140 absence streak RESTARTS at one, Tracked Sources 167->168; press 7 re-surfaces ZERO new keys, press streak RESTARTS at one, frontier HOLDS at Oct 3) - Type E SECOND leg of the 1225-1229 window (Oct 5 2026, 02:00 AM PDT; main commit 0b151dc1 / anchor 6d030566 / doc-sync 6ac702a5; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+- Hash chain: main 0b151dc1 / anchor 6d030566 / doc-sync 6ac702a5 / log-hash this commit
 
 ### Commit hashes
 - Main commit `0b151dc1` (0b151dc1369e226ec734d12141a6d0fc164c7044) - verified via git rev-parse (message amended post-push to fix the class count 18 -> 14; force-pushed with lease, ls-remote-verified)
 - Anchor followup `6d030566` (6d030566149d1324e78ef7af8cf549d78afc4431; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup per #721)
+- Doc-sync `6ac702a5` (6ac702a5cdcf0b4b9b47db37dcfe8c2cc13e70d4; README 66384/1550 -> 66461/1551; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
