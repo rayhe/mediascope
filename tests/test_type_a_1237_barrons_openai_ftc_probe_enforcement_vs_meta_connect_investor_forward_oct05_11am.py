@@ -93,7 +93,7 @@ OWN_BASENAME = (
 PROFILE_FILE = os.path.join(PROFILES_DIR, "news-corp.yaml")
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "e0da8e28bee3e3bb284021b4768b1ef618428457"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
