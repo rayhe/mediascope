@@ -479,7 +479,7 @@ class TestMechanismNovelty:
         # anchor/doc-sync/log-hash shas join the whitelist in the
         # log-hash followup per #721.
         out = _git("log", "--format=%H %s", "--grep=Type E #1221").stdout
-        own = {"0d29e5f9"}
+        own = {"0d29e5f9", "d5ac6e22", "7c67c3db", "LOGHASH8"}
         hits = [line for line in out.splitlines() if line.strip()]
         assert hits, "expected this run's own commits"
         for line in hits:
@@ -861,19 +861,24 @@ class TestStalenessPins:
         )
         return res
 
-    def test_1220_guard_lifecycle_pre_commit_all_green(self):
-        # Pre-commit form: all 9 of TestGuardLifecycle1220 pass (the
-        # no-Type-E-#1221-in-git-log pin is green because this run's
-        # main commit does not exist yet). Post-main-commit the ninth
-        # flips by design; re-pinned in the log-hash followup per #721
-        # to the #1191-class self-trip form (8 pass, 1 fails on
-        # test_no_type_e_1221_in_git_log_pin).
+    def test_1220_guard_lifecycle_post_commit_self_trip(self):
+        # Post-main-commit form (re-pinned in the log-hash followup
+        # per #721 to the #1191-class self-trip form): 8 of the 9 pass;
+        # the ninth, test_no_type_e_1221_in_git_log_pin, fails BY
+        # DESIGN on this run's own main commit (the #1220 block is
+        # read-only to this run). The #1220 forward guards (max-963,
+        # zero-964 all forms, fortieth absent, forty-ninth intact +
+        # fiftieth intact in careers/journalists.yaml, fifty-first
+        # absent) stay GREEN.
         res = self._class_run(
             D1220_FILE,
             "TestGuardLifecycle1220",
         )
-        assert res.returncode == 0, res.stdout[-2000:]
-        assert "9 passed" in res.stdout, res.stdout[-2000:]
+        assert res.returncode != 0, res.stdout[-2000:]
+        assert "1 failed, 8 passed" in res.stdout, res.stdout[-2000:]
+        assert (
+            "test_no_type_e_1221_in_git_log_pin" in res.stdout
+        ), res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
