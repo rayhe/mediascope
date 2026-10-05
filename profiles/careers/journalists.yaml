@@ -27492,3 +27492,104 @@ kaitlyn_huamani_type_b:
       - https://www.akronnewsreporter.com/2026/09/24/meta-conference-zuckerberg-ai/
       - https://www.akronnewsreporter.com/2026/09/29/openai-new-agent-dot/
       - https://www.pymnts.com/news/artificial-intelligence/2023/associated-press-licensing-deal-openai-includes-first-mover-safeguard/
+
+christine_ji_type_b:
+  name: Christine Ji
+  publication: marketwatch
+  mechanism_ids: [962]
+  notes: 'Type B #1218 (Oct 4 2026): mechanism 962 CONTROL-CASE / register-symmetry - FIRST dedicated Type B mechanism on Christine Ji in journalists.yaml (zero dedicated type_b key pre-commit, per the #643 convention; name appears only in the #1213 held-alternate line, a Jul-2026 examples/sample_output/ byline, and the iteration-log). MarketWatch Big Tech reporter (joined Aug 11, 2026 from Business Insider). Ledger HOLDS at 50; not a falsification-family member. FIRST committed MarketWatch mechanism in corpus.'
+  competitor_coverage:
+    type_b_1218_christine_ji_marketwatch_meta_fda_hearing_vs_google_alpha_strategy:
+      block_key: type_b_1218_christine_ji_marketwatch_meta_fda_hearing_vs_google_alpha_strategy
+      mechanism_id: 962
+      iteration: 1218
+      type: B
+      date: '2026-10-04 19:00 PDT'
+      test_file: tests/test_type_b_1218_christine_ji_marketwatch_meta_fda_hearing_vs_google_alpha_strategy_oct04_7pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Christine Ji
+      publication: marketwatch
+      window: '1215-1219 window FOURTH leg (D #1215 -> E #1216 -> A #1217 -> B #1218 -> C #1219)'
+      design: 'Type B journalist cross-entity tracking: Christine Ji (MarketWatch) on Meta wearables vs Google/Alphabet, 7 days apart on investor-facing tech coverage. The Dow Jones x OpenAI content-licensing partnership is in-corpus, but OpenAI is not an arm in this pair; no payer asymmetry exists between the Meta and Google arms, so the naive test is register symmetry across entities at the same outlet, not payer-softening. Two arms: a Meta Connect live-coverage piece (Sep 23, Ji byline attested via muckrack profile) and an Alphabet AI-strategy analysis piece (Sep 16, "By Christine Ji" attested on the Morningstar Dow Jones relay). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Meta joins Apple in bringing FDA-approved hearing support to its wearables'
+        date: '2026-09-23'
+        outlet: marketwatch
+        author_byline: 'Christine Ji'
+        entity: meta
+        url: https://www.marketwatch.com/livecoverage/meta-connect-stock-mark-zuckerberg-keynote-ai/card/meta-joins-apple-in-bringing-fda-approved-hearing-support-to-its-wearables-bMAPnkFEcGxy78T9KwzI
+        url_note: 'MarketWatch Connect live-coverage card URL recovered verbatim from Full-URL listing (search index 1), none constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-indexed marketwatch.com result text; byline attested via muckrack.com/christine-ji/articles profile listing, 0 browser.open)'
+        key_quotes:
+        - 'Prestige-parity headline (verbatim): "Meta joins Apple in bringing FDA-approved hearing support to its wearables" - Meta granted standing alongside Apple as the category peer.'
+        - 'Legitimacy frame: "Meta glasses will be able to double as an FDA-approved hearing aid, Mark Zuckerberg revealed."'
+        - 'Prior-work continuity: "This builds upon Meta''s earlier work in hearing enhancement capabilities and ambient-noise reduction."'
+        - 'Zero privacy interrogation: "Users can take a guided assessment and add the hearing-enhancement features to their Meta glasses for a fee." - no surveillance or data-collection questioning of the wearables line.'
+        tone_MANUAL_ILLUSTRATIVE: 0.15
+        tone_reading: 'Neutral-positive launch-news register; Meta granted prestige parity with Apple and an FDA legitimacy frame; zero privacy interrogation of the wearables line.'
+        status: 'NEW this run (zero corpus hits pre-commit; URL + headline zero-hit repo-wide pre-commit)'
+      google_arm:
+        title: 'Google is playing a different AI game than everyone else, and Wall Street may be missing the point'
+        date: '2026-09-16'
+        outlet: marketwatch
+        author_byline: 'Christine Ji'
+        entity: google
+        url: https://www.marketwatch.com/story/google-is-playing-a-different-ai-game-than-everyone-else-and-wall-street-may-be-missing-the-point-e91077a3
+        url_note: 'MarketWatch canonical URL recovered verbatim from Full-URL listing (search index 5), none constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-indexed marketwatch.com result text; "By Christine Ji" byline attested on the Morningstar Dow Jones Newswires relay, 0 browser.open)'
+        key_quotes:
+        - 'Analyst-relay headline (verbatim): "Google is playing a different AI game than everyone else, and Wall Street may be missing the point" - bullish against-consensus framing.'
+        - 'Scrutiny acknowledged, then deflected: "Shares of Alphabet have fallen 15% off their May highs as the company''s artificial-intelligence capabilities come under scrutiny."'
+        - 'Different-game defense: "Nathanson, though, believes that Alphabet is playing a different game than competitors like OpenAI and Anthropic."'
+        - 'Bullish close: "That''s because Alphabet''s large cloud-computing business may hold the key to its success in the AI era, rather than whether or not the company has the most high-performance AI model."'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        tone_reading: 'Bullish analyst-relay register; Alphabet defended against AI-capability scrutiny (DeepMind departures, delayed Gemini 3.5 Pro) with the cloud-first strategy framed as the smarter play.'
+        status: 'NEW this run (zero corpus hits pre-commit; URL + headline zero-hit repo-wide pre-commit)'
+      scorer:
+        meta_tone: 0.15
+        google_tone: 0.25
+        illustrative_delta_google_minus_meta: 0.10
+        delta_calc: '(0.25) - (0.15) = +0.10'
+        delta_reading: 'Near-null symmetric benign registers: the launch-news Meta arm and the analyst-defense Alphabet arm both draw positive registers at indistinguishable magnitude. No cross-entity register gap exists for the incentive theory to explain; the pair is register-symmetric within one byline.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned, n=1 per arm; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no_analysis_json_update true; verdict control_case_register_symmetry (ledger holds at 50), not an empirical discovery.'
+      financial_context: 'Dow Jones x OpenAI content-licensing partnership exists in corpus (competitor-entities.yaml), but OpenAI is not an arm in this pair; no payer asymmetry separates the Meta arm from the Google arm at MarketWatch. Dow Jones-Meta: no known content-licensing relationship (bounded absence). Dow Jones-Google/Alphabet: no known content-licensing relationship (bounded absence). The naive test is register symmetry across entities, not payer-softening. Correlation is not causation.'
+      finding: 'CONTROL-CASE / REGISTER-SYMMETRY: Christine Ji applies the benign launch-news register to Meta wearables (FDA hearing-support parity with Apple, +0.15) and the bullish analyst-defense register to Alphabet (cloud-first strategy, +0.25): illustrative delta +0.10, near-null. No adversarial register appears on either arm; the register tracks the peg (product launch, analyst upgrade note), consistent with the journalist-contingent refinement from m956/m959 but without an inversion to falsify the uniform theory at this outlet-pair. FIRST committed MarketWatch mechanism in corpus. Ledger HOLDS at 50. No analysis.json update warranted.'
+      confounders:
+        strong:
+        - 'Peg-register confound: both arms sit in launch/analyst-note registers (Connect keynote; MoffettNathanson upgrade note), which default benign. The symmetric benignity may reflect the pegs, not a reporter trait; a Ji adversarial-register arm (e.g., Meta privacy accountability) would test the bound.'
+        - 'Apple-as-benchmark inside the Meta arm: the headline''s prestige-parity frame uses Apple as the category standard. The arm''s entity is Meta (wearables); Apple is comparator, not subject. Counter: the quote set and scorer read the arm as Meta-framed throughout.'
+        moderate:
+        - 'Muckrack byline attestation: the Meta arm''s Ji byline rests on the muckrack.com/christine-ji/articles profile listing the Connect live-coverage card; the marketwatch.com result surfaced no visible byline. Bounded byline-certainty on the Meta arm; the Google arm carries "By Christine Ji" on the Morningstar Dow Jones relay.'
+        - 'Evidence tier: both arms excerpt-bounded (0 browser.open per #503). Bounded absence of adversarial language in the excerpts is not proven absence in the full pieces.'
+        weak:
+        - 'n=1 per arm; single-reporter design; 7-day arm gap (Sep 16 vs Sep 23); financial-press house style (analyst-relay) may compress cross-entity register differences.'
+      counter_evidence:
+      - '#1213 held Christine Ji as a strong alternate for an Anthropic arm that was never run; this pair lands Ji with verified-novel Meta + Google arms instead. The held alternate is superseded, not duplicated.'
+      - 'Ji''s muckrack profile lists additional Connect live-coverage cards ("Mark Zuckerberg puts Muse in the spotlight"; "champions an AI device for every scenario"; "Muse is outpacing early download benchmarks") - a Ji adversarial-register arm remains a live open bound on this byline.'
+      - 'The uniform theory''s defenders can note this pair does not test the theory at all (no payer asymmetry between arms); the control-case strengthens the research design without moving the ledger.'
+      connects_to: [343, 513, 952, 956, 959, 961]
+      verdict: 'control_case_register_symmetry'
+      falsification_family: 'NOT a falsification-family member. Near-null symmetric benign registers: Meta FDA-hearing-support launch coverage (+0.15) vs Alphabet cloud-strategy defense (+0.25), illustrative delta +0.10 (Google minus Meta). Forty-eighth (m952), forty-ninth (m956), fiftieth (m959) member-claim forms intact in corpus; fifty-first member-claim form absent repo-wide. Ledger HOLDS at 50. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 50
+      ledger_note: 'Ledger HOLDS at 50 this run (m962 control-case, no new member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. The ledger hold (50) is the corpus-level state change (none).'
+      research_method: 'Delegated research (subagent) + main-run verification: delegated candidate-screening sweep (26+ journalists screened; corpus-miss on #1213 held-alternate verified: the #1213 alternate was an Anthropic arm, different from this pair) + 2 main-run browser.search verification sets (Meta-arm byline/quote attestation via muckrack profile + marketwatch.com result; Google-arm byline/quote attestation via Morningstar Dow Jones relay + marketwatch.com canonical), 0 browser.open per #503. SELECTED: Christine Ji (fresh; zero dedicated type_b key pre-commit; FIRST committed MarketWatch mechanism). REJECTED: Barbara Ortutay (co-byline proximity to #1213); Kurt Wagner (no in-window originals); Maxwell Zeff (moved outlets, stale arms); Ryan Mac (no in-window Meta originals); Hayden Field (saturated #557); Cade Metz (saturated #471/m538); Mia Sato (saturated #215); Makena Kelly (no in-window pair); Reece Rogers (saturated #385); Jeffrey Dastin (Meta arm out of window); Krystal Hu (OpenAI arms only); Katie Paul (saturated #667/m634); Stephen Nellis (mixed-entity peg); Kyle Wiggers (OpenAI only); Jennifer Elias (no in-window pair); Tom Gerken (game reviews); Ron Amadeo (no Meta arm, scouted #758); Corbin Davenport/Ryne Hager (beat-boundary); David Imel (no originals); Ian Hamilton (no in-window pair); Joe Maring (stale bylines); Lauren Feiner (no clean competitor arm); Umar Shakir (no in-window pair). Main-run novelty greps: 2/2 URLs zero-hit repo-wide (git grep -F); both headlines zero-hit repo-wide; "FDA-approved" zero-hit repo-wide; zero dedicated Ji type_b block pre-commit; max numeric mechanism_id 961 pre-commit. Alternate Ji Meta arm (Muse spotlight card, afdcAESe2HpiXP00f4zU) verified novel but not landed; held as open bound. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B mechanism on Christine Ji (m962); zero test_type_b_1218 files on disk pre-commit (glob); no "Type B #1218" in git log pre-commit (--grep); max numeric mechanism_id 961 pre-commit; zero numeric/underscore/dash nine-six-two mechanism key forms in profiles/ + tests/ pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1218 in key, no 962 substring); 2/2 source URLs zero-hit repo-wide pre-commit (git grep -F); both headlines zero-hit repo-wide pre-commit; "FDA-approved" zero-hit repo-wide pre-commit; no #1218 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 65757/1542 pre-commit. CONTROL-CASE (not a falsification-family member, ledger holds at 50); fifty-first member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit; thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) + thirty-ninth (m948) directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1215-launched full suite (goal hidden_files type_d_1215_full_suite.log) observed at this run''s check (9224 bytes, mtime Oct 4 2026 18:17 PDT, stalled at ~12% progress, no pytest process alive - an observation, not a verdict). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1220 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m962 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://www.marketwatch.com/livecoverage/meta-connect-stock-mark-zuckerberg-keynote-ai/card/meta-joins-apple-in-bringing-fda-approved-hearing-support-to-its-wearables-bMAPnkFEcGxy78T9KwzI
+      - https://www.marketwatch.com/story/google-is-playing-a-different-ai-game-than-everyone-else-and-wall-street-may-be-missing-the-point-e91077a3
