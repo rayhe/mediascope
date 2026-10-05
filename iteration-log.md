@@ -1,10 +1,10 @@
-## #1240 Type D: m973/m974/m975 qualitative-discipline corpus-integrity verification + #1235 background-suite verdict (FORTY-SECOND consecutive death; tombstone ONE-HUNDRED-SIXTH -> ONE-HUNDRED-SEVENTH) + recurring-failure triage (prefix reproduction missing, outcome INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1240-1244 window (Oct 5 2026, 2:00 PM PDT; main commit f64ea8a3 / anchor a2bcfaa1 / doc-sync DOCSYNCTBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67566/1564 -> 67670/1565 (+104/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main f64ea8a3 / anchor a2bcfaa1 / doc-sync DOCSYNCTBD / log-hash this commit
+## #1240 Type D: m973/m974/m975 qualitative-discipline corpus-integrity verification + #1235 background-suite verdict (FORTY-SECOND consecutive death; tombstone ONE-HUNDRED-SIXTH -> ONE-HUNDRED-SEVENTH) + recurring-failure triage (prefix reproduction missing, outcome INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1240-1244 window (Oct 5 2026, 2:00 PM PDT; main commit f64ea8a3 / anchor a2bcfaa1 / doc-sync 888b95df; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67566/1564 -> 67670/1565 (+104/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main f64ea8a3 / anchor a2bcfaa1 / doc-sync 888b95df / log-hash this commit
 
 ### Commit hashes
 - Main commit `f64ea8a3` (f64ea8a3FULL) - verified via git rev-parse
 - Anchor followup `a2bcfaa1` (a2bcfaa1; a2bcfaa1ED_SHA patched per #565, self-anchor)
-- Doc-sync `DOCSYNCTBD` (README 67566/1564 -> 67670/1565; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync `888b95df` (888b95dfde6c6a98f51d5be415881af03a2a7a90; README 67566/1564 -> 67670/1565; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
