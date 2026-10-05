@@ -1,11 +1,11 @@
-## #1228 Type B: m968 Jess Weatherbed (The Verge) Meta Muse address-leak vs Anthropic $42B-loss IPO-leak, same-day symmetric-adversarial boundary/control case - MANUAL ILLUSTRATIVE -0.55 vs -0.50, illustrative delta +0.05 near-null; in-outlet contrast with m965 (Allison Johnson, same outlet, same Vox x OpenAI deal, confirming payer-softening direction) extends the m956/m959 journalist-contingent refinement; NOT a falsification-family member (Anthropic is not the deal partner; Weatherbed's OpenAI arm untested); ledger holds at 50 - Type B FOURTH leg of the 1225-1229 window (Oct 5 2026, 03:00 AM PDT; main commit c814454e / anchor 53ac9eaf / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66552/1552 -> 66646/1553 (+94/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1228 Type B: m968 Jess Weatherbed (The Verge) Meta Muse address-leak vs Anthropic $42B-loss IPO-leak, same-day symmetric-adversarial boundary/control case - MANUAL ILLUSTRATIVE -0.55 vs -0.50, illustrative delta +0.05 near-null; in-outlet contrast with m965 (Allison Johnson, same outlet, same Vox x OpenAI deal, confirming payer-softening direction) extends the m956/m959 journalist-contingent refinement; NOT a falsification-family member (Anthropic is not the deal partner; Weatherbed's OpenAI arm untested); ledger holds at 50 - Type B FOURTH leg of the 1225-1229 window (Oct 5 2026, 03:00 AM PDT; main commit c814454e / anchor 53ac9eaf / doc-sync 0da1fa9d; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66552/1552 -> 66646/1553 (+94/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main c814454e / anchor 53ac9eaf / doc-sync TBD / log-hash this commit
+- Hash chain: main c814454e / anchor 53ac9eaf / doc-sync 0da1fa9d / log-hash this commit
 
 ### Commit hashes
 - Main commit `c814454e` (c814454e461753680f1ec6813d41326a42c9e163) - verified via git rev-parse
 - Anchor followup `53ac9eaf` (53ac9eaf1665d2d3cdad9f7cf4f303217f9cd3e0; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup per #721)
+- Doc-sync `0da1fa9d` (0da1fa9da27f2fd4786d5ba51f761b76cea60f68; README 66552/1552 -> 66646/1553; test-table row; ARCHITECTURE tree row; iteration-log entry)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
