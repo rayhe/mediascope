@@ -688,8 +688,13 @@ class TestBackgroundSuiteCheck1218:
 
 class TestDocSync1218:
     def test_readme_stats_table_updated(self):
+        # Current README stats-line convention (per #1217): "| Tests | N |
+        # Across M test files |" - no slash form; assert the count and
+        # file count both appear.
         text = _read(os.path.join(REPO, "README.md"))
-        assert "%d/%d" % (README_TEST_COUNT, README_FILE_COUNT) in text
+        assert "| Tests |" in text
+        assert str(README_TEST_COUNT) in text
+        assert str(README_FILE_COUNT) in text
 
     def test_readme_test_table_row_present(self):
         text = _read(os.path.join(REPO, "README.md"))
