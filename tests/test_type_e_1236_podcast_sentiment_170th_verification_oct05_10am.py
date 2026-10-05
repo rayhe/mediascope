@@ -167,7 +167,7 @@ OWN_BASENAME = (
 )
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "a403518ba58ee33103d69c9227ff6dee994afacd"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -429,7 +429,7 @@ class TestAnchor:
         # Post-commit form: ANCHORED_SHA patched to this run's main
         # commit sha per #565 in the anchor followup (both this
         # expected value and the ANCHORED_SHA constant are patched).
-        assert ANCHORED_SHA == "0000000000000000000000000000000000000000"
+        assert ANCHORED_SHA == "a403518ba58ee33103d69c9227ff6dee994afacd"
         assert len(ANCHORED_SHA) == 40
 
     def test_anchor_sha_format(self):
