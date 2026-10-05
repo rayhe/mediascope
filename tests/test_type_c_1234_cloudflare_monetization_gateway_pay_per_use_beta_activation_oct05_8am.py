@@ -409,11 +409,22 @@ class TestMechanismNovelty1234:
         assert "waitlist-to-beta" not in text[:block_start]
 
     def test_no_type_c_1234_in_git_log_pin(self):
-        # Pre-commit form: no prior run committed this run's iteration
-        # subject. Re-pinned to the own-set form in the log-hash
-        # followup per #721.
-        out = _git("log", "--oneline", "--grep=Type C #1234").stdout
-        assert out.strip() == "", out.strip()
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the log-hash followup per #721): the ONLY matches are this
+        # run's own commits, whose messages carry the run's own
+        # iteration subject (the followup commits match the grep, so
+        # they join the own set; HEAD is admitted for any same-run
+        # followup). The pin's substance - no PRIOR run committed this
+        # run's iteration - holds.
+        out = _git("log", "--format=%H %s", "--grep=Type C #1234").stdout
+        own = {
+            "f08c364a", "3e1f3155", "6930c139",
+        }
+        head = _git("rev-parse", "HEAD").stdout.strip()[:8]
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own or line.split()[0][:8] == head, line
 
 
 # ---------------------------------------------------------------------------

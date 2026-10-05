@@ -1,10 +1,10 @@
-## #1234 Type C: m972 Cloudflare Monetization Gateway + Pay Per Use beta activation (Sep 30 2026) - STATUS-CHECK EXTENSION of the m786 tollbooth-operator stack (waitlist-to-beta transition with concrete settlement mechanics: 402 + x402 + USDC-on-Base on the gateway, buyer-defined use + self-reported JSON lines + monthly dashboard settlement on Pay Per Use); opposite control arrows inside one launch (seller designs the gateway meter, payer designs the Pay Per Use meter); no new direction (fortieth absent by design; 35th-39th stand); NOT a falsification-family member, ledger holds at 50 - Type C FIFTH and CLOSING leg of the 1230-1234 window (Oct 5 2026, 08:00 AM PDT; main commit f08c364a / anchor 3e1f3155 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67048/1558 -> 67131/1559 (+83/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main f08c364a / anchor 3e1f3155 / doc-sync TBD / log-hash this commit
+## #1234 Type C: m972 Cloudflare Monetization Gateway + Pay Per Use beta activation (Sep 30 2026) - STATUS-CHECK EXTENSION of the m786 tollbooth-operator stack (waitlist-to-beta transition with concrete settlement mechanics: 402 + x402 + USDC-on-Base on the gateway, buyer-defined use + self-reported JSON lines + monthly dashboard settlement on Pay Per Use); opposite control arrows inside one launch (seller designs the gateway meter, payer designs the Pay Per Use meter); no new direction (fortieth absent by design; 35th-39th stand); NOT a falsification-family member, ledger holds at 50 - Type C FIFTH and CLOSING leg of the 1230-1234 window (Oct 5 2026, 08:00 AM PDT; main commit f08c364a / anchor 3e1f3155 / doc-sync 6930c139; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67048/1558 -> 67131/1559 (+83/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main f08c364a / anchor 3e1f3155 / doc-sync 6930c139 / log-hash this commit
 
 ### Commit hashes
 - Main commit `f08c364a` (f08c364ab10bf4780460ad5ecf8bce61a8c371a2) - verified via git rev-parse
 - Anchor followup `3e1f3155` (3e1f31552847680f194a2d7929f60659562b88f4) - verified via git rev-parse; ANCHORED_SHA patched per #565 (self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Doc-sync `6930c139` (6930c139bfe9dbbdeefcd8296caaa7a6dc892c75; README 67048/1558 -> 67131/1559; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_c_1234_in_git_log_pin to the own-set form
 
 ### Finding summary
