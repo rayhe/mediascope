@@ -366,9 +366,12 @@ class TestRotationGuard1237:
 
 class TestMechanismNovelty1237:
     def test_barrons_line_new_at_head(self):
-        # FIRST dedicated Barron's publication-line mechanism: no
-        # barrons_openai block key in tracked profiles/ at HEAD.
-        assert _git_grep_tracked_source("barrons_openai", "profiles/") == []
+        # FIRST dedicated Barron's publication-line mechanism: the only
+        # tracked profiles/ file carrying a barrons_openai block key at
+        # HEAD is this run's own landing (the #1191-class self-trip on
+        # the own commit; no PRIOR run had the line).
+        assert _git_grep_tracked_source("barrons_openai", "profiles/") == [
+            os.path.join("profiles", "news-corp.yaml")]
 
     def test_openai_section_found(self):
         sec = _openai_section()
