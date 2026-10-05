@@ -1,3 +1,42 @@
+## #1242 Type A: m976 CNN x OpenAI Sep-28 Uthmeier temporary-injunction bounded absence at profiled nationals (temporal extension of mechanism #347; NOT a falsification-family member; ledger holds at 52) - Type A THIRD leg of the 1240-1244 window (Oct 5 2026, 04:00 PM PDT; main commit 9d35d369 / anchor cb788aa2 / doc-sync DOCSYNC_SHA; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67749/1566 -> 67823/1567 (+74/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 9d35d369 / anchor cb788aa2 / doc-sync DOCSYNC_SHA / log-hash this commit
+
+### Commit hashes
+- Main commit `9d35d369` (9d35d3691368a569720e29028e15ff9ed7d26e9f) - verified via git rev-parse
+- Anchor followup `cb788aa2` (cb788aa2b2fc0b67c3a47124ada5de9986a54014; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `DOCSYNC_SHA` (DOCSYNC_FULL; README 67749/1566 -> 67823/1567; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_cnn_injunction_line_new_at_head and test_no_type_a_1242_in_git_log_pin to the own-set form
+
+### Rotation transparency
+- This run is iteration #1242 Type A, the THIRD leg of the 1240-1244 window (D #1240 -> E #1241 -> A #1242 -> B #1243 -> C #1244 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1241 Type E (main 600b3a8b / anchor 1c8b10c1 / doc-sync e58d7a64 / log-hash 19c97dfd), #1240 Type D (main f64ea8a3 / anchor a2bcfaa1 / doc-sync 888b95df / log-hash bf11f510); the 1235-1239 window is VERIFIED CLOSED.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1243 Type B continues the window; the #1240 background-suite verdict belongs to #1245 per #795.
+- Guard lifecycle note: #1241's max-975 + zero-976 (all forms) + no-Type-E-#1241-in-git-log + fortieth-absent + forty-eighth-intact + forty-ninth-intact + fiftieth-intact + fifty-first-intact + fifty-second-intact + no-fifty-third pins verified GREEN pre-commit this run (Type A lands no new falsification member); the no-Type-E-#1241-in-git-log pin flips BY DESIGN at the main commit (the #1191-class self-trip, re-pinned in the log-hash followup).
+
+### Finding summary
+- Sep-28-2026 Uthmeier temporary-injunction motion (10th Judicial Circuit, Highlands County; case 26000295GCAXMX per Bloomberg Law): six prohibitions including prior authorization for new-model training; underlying June-1 FDUTPA/negligence/public-nuisance suit; Hugging Face + Medicare breaches cited, "waited months to tell them".
+- Coverage: 13 trade/regional outlets (PYMNTS, Bloomberg Law, cybersecuritynews, mixed-news, AI Daily Post, American Star News, Floridian Press, NeoTeo, Zubiqo, ISPR, AI Policy Desk tracker, ExplainX Sep-28 digest, Change.org petition); ZERO profiled-national originals across 3 search sets (site: cnn.com/nytimes.com/wsj.com/washingtonpost.com; ft.com/theguardian.com/businessinsider.com/theverge.com; "major newspaper" framing) in the Sep-28 to Oct-5 window; bounded absence per the iteration-492 rule (search-index-limited, not proven).
+- #347 extension, other direction: CNN covered the Jun-1 OpenAI suit (cnn.com/2026/06/01/business/florida-sues-chatgpt-openai-sam-altman) and quoted Uthmeier adversarially on Meta Aug 26-27 (institutional awareness proven); the same AG's escalated OpenAI remedy (the most aggressive state-level AI-development restraint sought to date) drew no CNN original in the 8-day window.
+- Scorer NOT RUN on the new peg (absence yields no fresh arm); #347's carried arms and delta unchanged.
+- LEDGER STATE: forty-eighth (m952, profiles/financial-times.yaml) through fifty-second (m974, profiles/careers/journalists.yaml) member-claim forms intact; fifty-third member-claim form absent repo-wide; fortieth direction form absent in profiles/. Ledger HOLDS at 52. NOT a falsification-family member (absence cannot adjudicate hardness/softness; the standing bar requires a same-peg or near-peg hardness adjudication).
+- #1240 background-suite verdict per #795: OBSERVED only this run (alive, ~2% at check; this run neither re-launches, kills, nor writes to the suite); the verdict belongs to #1245.
+- Statistical discipline: MONITORING/QUALITATIVE ONLY per the Aug 28 2026 standing rule (no tone asserted on absent coverage; p_value/cohens_d NOT_CALCULATED; engine NOT run; is_significant False; NOT artifact-grade; verdict directionally_supported_not_proven; no_analysis_json_update true). Correlation is not causation; hypothesis-generating only.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_a_1242 files on disk (glob, own file only); no "Type A #1242" in git log; max numeric mechanism_id 975 in profiles/ pre-commit; zero underscore/dash/numeric 976 key forms repo-wide pre-commit (needles format-built, sweep-carrier excluded); block key zero-hit repo-wide pre-commit; 8 novel source URLs zero-hit repo-wide pre-commit (git grep -F); case number 26000295GCAXMX zero-hit pre-commit; "## #1242" zero-hit in iteration-log pre-commit; README stats 67749/1566 pre-commit; no #1242 row in README/ARCHITECTURE test tables pre-commit.
+- Verification-layer run: 4 browser.search query sets this run (Florida AG Uthmeier sues OpenAI Altman guardrails; site: cnn.com/nytimes.com/wsj.com/washingtonpost.com Uthmeier OpenAI injunction; Florida halt OpenAI model development major newspaper; Florida Uthmeier injunction ft.com/theguardian.com/businessinsider.com/theverge.com); 0 browser.open per #503.
+- Literal discipline per #715: the forward-guard needles (977 forms, the fifty-third member-claim form, the fortieth direction form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed ordinals live as short lowercase forms in the test-file prose.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 63 passed + 11 deselected by design (TestAnchor 4 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins 1 per #565/#719/#721); 9 in-gate defects found and fixed (at-HEAD pin pre-commit form; git-log pin pre-commit form; in-flight isolation direction x3; member-pin targets x2; bounded-absence field; block-key iteration); test-file constants post-sync-positive per #719 (74 collected, 13 classes).
+- Tests: tests/test_type_a_1242_cnn_openai_sep28_uthmeier_injunction_bounded_absence_oct05_4pm.py (74 tests, 13 classes).
+- Forward guards for #1243: max-976; zero nine-seven-seven keys all forms (profiles/ + tests/ scope); no-Type-B-#1243-in-git-log; fortieth direction absent; fifty-third member absent (ledger holds at 52).
+
+### Doc-sync ratchet
+README stats table 67749/1566 -> 67823/1567 (+74/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (log-hash followup registers main/anchor/doc-sync here).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
 ## #1241 Type E: podcast sentiment 171st verification cycle (GF episode 503 HOLDS - second full verification since its #1236 first surfacing, ~4h after the Oct-5 11:00am publication, thirty-eighth verification since the Sep-28 11:00am 502 release, ~172h; 7 GF rows = 7 re-surfaces, ZERO new keys, GF pure-re-surface streak ADVANCES to ten; EHE 56-day hold, 7 re-surfaces, ZERO new keys; AS 171st no-match, 6 circular own-repo commit URLs rejected, dec56140 absence streak ADVANCES to four, Tracked Sources 170->171; press 7 re-surfaces ZERO new keys, press streak ADVANCES to four, frontier HOLDS at Oct 3; monitoring-only per the Aug 28 2026 standing rule, NOT artifact-grade; ledger holds at 52) - Type E SECOND leg of the 1240-1244 window (Oct 5 2026, 03:00 PM PDT; main commit 600b3a8b / anchor 1c8b10c1 / doc-sync e58d7a64; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67670/1565 -> 67749/1566 (+79/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 - Hash chain: main 600b3a8b / anchor 1c8b10c1 / doc-sync e58d7a64 / log-hash this commit
 
