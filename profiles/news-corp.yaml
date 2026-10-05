@@ -1428,6 +1428,166 @@ competitor_relationships:
         - https://www.wsj.com/tech/ai/meta-ai-agent-muse-reactions-5bf236af
 
 
+    type_a_1237_barrons_openai_ftc_probe_enforcement_vs_meta_connect_investor_forward_oct05_11am:
+      mechanism_id: 973
+      date_analyzed: '2026-10-05'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1237
+      iteration_type: 'A'
+      iteration_time: '2026-10-05 11:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: 'news-corp'
+      publication_line: 'Barron''s'
+      competitor_pair: 'barrons x openai vs barrons x meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '11:00'
+      job_id: mediascope-daily-iteration
+      block_key: 'type_a_1237_barrons_openai_ftc_probe_enforcement_vs_meta_connect_investor_forward_oct05_11am'
+      test_file: 'tests/test_type_a_1237_barrons_openai_ftc_probe_enforcement_vs_meta_connect_investor_forward_oct05_11am.py'
+      window: '1235-1239 window THIRD leg (D #1235 -> E #1236 -> A #1237 -> B #1238 -> C #1239)'
+      design: 'Same-publication dual-payer register comparison at Barron''s (Dow Jones / News Corp): the title''s Oct-1-2026 FTC-probe enforcement coverage of OpenAI (NEW B1 arm - first use as a primary arm; in-corpus only as a #1147 corroborating relay) plus its Sep-30 Daily-roundup Astra-cancellation card (NEW B2 arm) versus Barron''s in-window Meta Connect/Muse investor-forward pair (NEW M1/M2 arms, Sep 23-24). Tests whether m904''s WSJ enforcement-register falsification (FORTY-FOURTH) replicates at a second News Corp title, and whether the dual-payer payment scale (OpenAI $250M/5yr vs Meta $50M/yr, 5:1) predicts the register ordering.'
+      distinct_from_prior: 'FIRST dedicated corpus mechanism on the Barron''s publication line (zero barrons block keys repo-wide pre-commit; no Barron''s-dedicated test file in git log). Distinct from m904 (WSJ x OpenAI Sep 28-Oct 1 safety-crisis double, #1122, FORTY-FOURTH: different publication, different bylines, WSJ originals vs Barron''s fast-follow/roundup register). Distinct from m958 (WSJ dual-payer symmetry, #1212, NOT admitted: same-outlet symmetric hardness, delta 0.00; this run finds asymmetric hardness at Barron''s, delta -0.35). Distinct from #1147 (WSJ x Anthropic FTC-probe disclosure asymmetry: the Barron''s FTC URL appears there only as a corroborating relay, never as a primary arm). Distinct from m959 (AP Huamani journalist-level FIFTIETH, #1213: different outlet and level; same directional inversion pattern). Zero ''barrons_openai'' block-key hits repo-wide pre-commit.'
+      finding: 'Barron''s runs enforcement-accountability on its parent''s largest AI-licensing partner. B1 (Oct 1, Anita Hamilton) - ''FTC Reportedly Probes OpenAI and Anthropic as Trump Backs AI Self-Regulation'': the FTC ''is investigating both Anthropic and OpenAI over whether they misled consumers about their models'' safety'', civil subpoenas planned, ''The FTC, Anthropic, and OpenAI did not immediately respond to Barron''s request for comment'' (comment-seeking), IPO-overhang framing. B2 (Sep 30, Barron''s Daily) - ''OpenAI cancels latest model release ahead of its developer''s day'': ''OpenAI scrapped the release of its most advanced artificial intelligence model due to safety concerns.'' MANUAL ILLUSTRATIVE -0.40 (B1) / -0.15 (B2); OpenAI arm avg -0.275. The same title''s in-window Meta coverage runs investor-forward: M1 (Sep 24) - ''Meta Puts Apple Firmly in Its Sights With New VR Glasses'' (+0.05, product-forward Connect keynote, ''new emphasis on private and secure interactions''); M2 (Sep 23) - ''Muse AI Makes Meta Connect a Must Watch for Investors'' (+0.10, ''Muse AI personal assistant has been a hit'', ''most-downloaded free app'', ''shares have surged about 20%''). Meta arm avg +0.075. Illustrative delta (OpenAI minus Meta) -0.35. The naive uniform payer-softening prediction (competitor_relationships.openai coverage_prediction ''softer'', from the May 2024 News Corp-OpenAI $250M/5yr deal) FAILS at Barron''s, and the dual-payer payment-scale prediction fails with it: the 5:1 larger payer (OpenAI $250M/5yr) gets the harder register than the $50M/yr Meta deal partner. FIFTY-FIRST falsification-family member (ledger 50->51); FIRST Barron''s publication-level member; enforcement-register replication of the m904 WSJ News Corp line at a second News Corp title (after #1142''s FT enforcement-register FORTY-SECOND). The cross-peg confound is disclosed: enforcement peg vs product-launch pegs, so the register gap partly tracks peg valence; bounded absence of an in-window Barron''s Meta enforcement-scale peg. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_family_member: true
+      falsification_ledger: 51
+      falsification_family: 'FIFTY-FIRST falsification-family member. Publication-level, same-outlet: Barron''s (Dow Jones / News Corp) applies the regulatory-enforcement accountability register to the paid licensing counterparty (OpenAI; May-2024 $250M/5yr News Corp deal, coverage_prediction softer) at -0.275 arm avg while the smaller deal partner (Meta; Mar-2026 up-to-$50M/yr deal) gets the investor-forward register at +0.075 arm avg in the same window; illustrative delta -0.35. The 5:1 larger payer gets the harder register: dual-payer payment-scale inversion. The uniform payer-softening prediction fails at a second News Corp title (replicates m904''s WSJ FORTY-FOURTH in the enforcement register; cf. #1142''s FT enforcement-register FORTY-SECOND). FIRST Barron''s publication-level member. Correlation, not causation. No analysis.json update warranted.'
+      verdict: 'falsification_member_confirmed'
+      financial_relationship:
+        newscorp_openai_deal: 'News Corp x OpenAI content-licensing partnership, May 2024: $250M over 5 years (~$50M/yr); WSJ, NY Post, Barron''s, MarketWatch, Times/Sunday Times, Australian titles; content used for ChatGPT training and retrieval. OpenAI''s largest reported publisher deal. Sources: https://www.webpronews.com/openais-publisher-deals-fuel-chatgpt-while-news-corp-chases-1-billion-ebitda/ ; https://sherwood.news/snacks/tech/openais-mega-wsj-licensing-deal-could-reshape-news-as-publishers-choose/'
+        newscorp_meta_deal: 'News Corp x Meta multiyear content-licensing deal, March 2026: up to $50M/yr, 3-year term; US and UK content for Meta AI training and retrieval. Source: https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244 (in-corpus, news-corp.yaml revenue_relationships)'
+        payment_scale_ratio: '5:1 OpenAI:Meta (annualized)'
+        deal_disclosed_in_barrons_coverage: 'No inline deal disclosure surfaced in the B1/B2 excerpts (excerpt-tier; full text paywalled).'
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. The naive payer-softening prediction expects the deal partner softest; observed ordering (OpenAI -0.275 vs Meta +0.075) inverts the prediction. This mechanism documents the ordering; it does not prove the deal caused the hardness or the absence of softness.'
+        editorial_independence_note: 'No evidence of direct directive linking the News Corp x OpenAI licensing deal to Barron''s OpenAI coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      openai_arm:
+        entity: 'openai'
+        status: 'TWO NEW ARMS (B1 first use as primary arm; B2 novel)'
+        tone_MANUAL_ILLUSTRATIVE: -0.275
+        arm_B1:
+          title: 'FTC Reportedly Probes OpenAI and Anthropic as Trump Backs AI Self-Regulation'
+          date: '2026-10-01'
+          byline: 'Anita Hamilton, Barron''s'
+          register: 'regulatory-enforcement accountability'
+          tone_MANUAL_ILLUSTRATIVE: -0.40
+          evidence_tier: 'EXCERPT-TIER: barrons.com paywalled; search-snippet-attested; no browser.open per #503; not first-hand read'
+          url_primary: 'https://www.barrons.com/articles/ftc-openai-anthropic-ai-safety-investigation-8eb4be96'
+          url_status: 'RE-SURFACE: in-corpus as #1147 corroborating relay (profiles/news-corp.yaml; test_type_a_1147 file); FIRST use as a primary arm'
+          key_quotes:
+            - 'the Federal Trade Commission is investigating both Anthropic and OpenAI over whether they misled consumers about their models'' safety'
+            - 'The FTC, Anthropic, and OpenAI did not immediately respond to Barron''s request for comment'
+            - 'That threat creates an overhang for Anthropic''s upcoming public offering'
+          date_note: 'Search crawl metadata (Last Updated: 4 days ago from Oct 5) suggests Oct 1; internal text (On Wednesday, news broke) points to a Sep-30 newsbreak; using Oct 1 with the ambiguity disclosed.'
+          deal_disclosed: false
+        arm_B2:
+          title: 'OpenAI cancels latest model release ahead of its developer''s day'
+          date: '2026-09-30'
+          byline: 'Barron''s Daily (roundup card)'
+          register: 'market-news factual relay'
+          tone_MANUAL_ILLUSTRATIVE: -0.15
+          evidence_tier: 'EXCERPT-TIER: search-snippet-attested; no browser.open per #503; not first-hand read'
+          url_primary: 'https://www.barrons.com/articles/stock-market-things-to-know-today-oura-anthropic-openai-ipo-ce6267d0'
+          url_status: 'NOVEL: zero-hit repo-wide pre-commit (git grep -F)'
+          key_quotes:
+            - 'OpenAI scrapped the release of its most advanced artificial intelligence model due to safety concerns'
+          deal_disclosed: false
+      meta_arm:
+        entity: 'meta'
+        status: 'TWO NEW ARMS (M1/M2 novel)'
+        tone_MANUAL_ILLUSTRATIVE: 0.075
+        arm_M1:
+          title: 'Meta Puts Apple Firmly in Its Sights With New VR Glasses'
+          date: '2026-09-24'
+          byline: 'Barron''s'
+          register: 'product-forward keynote coverage'
+          tone_MANUAL_ILLUSTRATIVE: 0.05
+          evidence_tier: 'EXCERPT-TIER: search-snippet-attested; no browser.open per #503; not first-hand read'
+          url_primary: 'https://www.barrons.com/articles/meta-vr-glasses-muse-ai-apple-64b98241'
+          url_status: 'NOVEL: zero-hit repo-wide pre-commit (git grep -F)'
+          key_quotes:
+            - 'Meta Puts Apple Firmly in Its Sights With New VR Glasses'
+            - 'a new emphasis on private and secure interactions that even Meta will not be able to see'
+          date_note: 'Search crawl metadata (Last Updated: 11 days ago from Oct 5) suggests Sep 24; piece covers the Wednesday (Sep 23) Connect keynote.'
+        arm_M2:
+          title: 'Muse AI Makes Meta Connect a Must Watch for Investors'
+          date: '2026-09-23'
+          byline: 'Barron''s'
+          register: 'investor-forward preview'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          evidence_tier: 'EXCERPT-TIER: search-snippet-attested; no browser.open per #503; not first-hand read'
+          url_primary: 'https://www.barrons.com/articles/meta-connect-2026-muse-ai-1c069cf1'
+          url_status: 'NOVEL: zero-hit repo-wide pre-commit (git grep -F)'
+          key_quotes:
+            - 'Muse AI personal assistant has been a hit since launching in the U.S. on Sept. 8'
+            - 'becoming the Apple App Store''s most-downloaded free app each of the last five days'
+            - 'shares have surged about 20%'
+          date_note: 'Search crawl metadata (Last Updated: 11 days ago from Oct 5) suggests Sep 24; preview-tense (takes the stage Wednesday) indicates pre-keynote publication; using Sep 23 with the ambiguity disclosed.'
+      register_analysis: 'Barron''s register is peg-driven, not payer-driven: on the enforcement peg the $250M/5yr deal partner gets ''misled consumers'' accountability with comment-seeking (B1, -0.40); on the market-news peg the same partner''s safety cancellation gets straight factual relay (B2, -0.15); on product-launch pegs the $50M/yr Meta partner gets investor-forward coverage (M1 +0.05, M2 +0.10). The register follows the peg within each arm, but the ACROSS-arm ordering inverts the payment-scale prediction: the 5:1 larger payer never gets the softer register in-window. The comparison that would sharpen the adjudication - a Barron''s Meta arm on an enforcement-scale peg in-window - is a bounded absence (the Aug-26 $18bn settlement predates the window by five weeks).'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned; engine NOT run.'
+        target_entity: 'OpenAI'
+        peer_entity: 'Meta'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.40, -0.15]
+        target_avg: -0.275
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.05, 0.10]
+        peer_avg: 0.075
+        delta: -0.35
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=2 vs n=2; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no analysis.json update)'
+        engine_run: false
+        is_significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        illustrative_delta_openai_minus_meta: -0.35
+        meta_tone_MANUAL_ILLUSTRATIVE: 0.075
+        openai_tone_MANUAL_ILLUSTRATIVE: -0.275
+      engine_run: false
+      is_significant: false
+      no_analysis_json_update: true
+      artifact_grade: false
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=2 vs n=2; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no_analysis_json_update true)'
+      confounders:
+        strong:
+          - 'STRONG: excerpt-bounded evidence (0 browser.open per #503); all four arms read through search snippets; barrons.com paywalled; full-text register could differ.'
+          - 'STRONG: cross-peg comparison - enforcement peg (B1) vs product-launch pegs (M1/M2); the register gap partly tracks peg valence, not demonstrably the payer-incentive failure. The falsification claim is register-bounded (the deal did not suppress the coverage), not causal.'
+          - 'STRONG: B1 URL is a re-surface (in-corpus as #1147 corroborating relay); only its use as a primary arm is new.'
+        moderate:
+          - 'MODERATE: date ambiguity on B1 (Oct 1 vs Sep 30) and M2 (Sep 23 vs Sep 24) from crawl metadata; does not affect the register reading.'
+          - 'MODERATE: different bylines across arms (Hamilton vs Barron''s staff/market desk) - publication-level, not journalist-level, symmetry.'
+          - 'MODERATE: n=2 per side; degenerate statistical contract; one more Barron''s arm would shift the illustrative delta.'
+        weak:
+          - 'WEAK: no inline deal disclosure surfaced in excerpts; full text might carry one (the WSJ FTC original carried the News Corp x OpenAI disclosure per m904).'
+      counterevidence:
+        - 'm958 (WSJ dual-payer symmetry, #1212): the same parent''s flagship title applied symmetric hardness to both payers (delta 0.00) in the crisis week - the News Corp register is outlet-contingent, not uniformly inverted.'
+        - 'm532 (WSJ calm-window, #532): dual-deal near-symmetry (delta -0.075) - the payment-scale inversion is window/register-conditional.'
+        - 'm625 (FT launch-week): incentive-consistent baseline on matched product-launch pegs (OpenAI Astra coronation +0.25 vs Meta Muse +0.05) - this run does not refute it.'
+        - 'The B1 piece names Anthropic alongside OpenAI (dual-lab peg dilutes entity-specific adversarialness, cf. #1147 tone_basis -0.40 vs Astra arm).'
+        - 'Barron''s is an investor title; its register structurally favors market-forward framing, which flatters product-launch pegs (M1/M2) independent of any deal.'
+      connects_to: [904, 958, 1147, 952, 956, 959, 532, 519]
+      novelty: 'FIRST dedicated corpus mechanism on the Barron''s publication line (zero barrons block keys repo-wide pre-commit; no Barron''s-dedicated test file in git log; git log --grep=arron shows only incidental mentions). B2/M1/M2 URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); B1 URL in-corpus as #1147 corroborating relay (re-surface, disclosed). Block key zero-hit repo-wide pre-commit. Pre-commit novelty greps: zero test_type_a_1237 files on disk (glob); no ''Type A #1237'' in git log (--grep); max numeric mechanism_id 972 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash 973 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); fortieth direction-claim form absent in profiles/ pre-commit; thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) + thirty-ninth (m948) directions present; forty-eighth (m952, financial-times.yaml) + forty-ninth (m956, journalists.yaml) + fiftieth (m959, journalists.yaml, 3 occurrences) member-claim forms present; fifty-first member-claim form absent repo-wide pre-commit; fifty-second member-claim form absent repo-wide pre-commit. Method MANUAL / qualitative-only per the Aug 28 2026 standing rule (delegated scout + 4 main-run browser.search query sets, 0 browser.open per #503; no corpus queries executed). Research: delegated scout proposed WSJ x OpenAI on the Astra peg - REJECTED on main-run verification (m904 #1122 already counted the WSJ x OpenAI safety-crisis test on the same peg; #1143 temporal-replication precedent; scout''s verbatim URLs confirmed real but the pair was saturated). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Delegated scout (browser.search across candidate pairs; SELECTED Barron''s x OpenAI after rejecting the scout''s first proposal, WSJ x OpenAI, as saturated per m904/#1122 + #1143; REJECTED Time x OpenAI and Guardian x Anthropic for failing verbatim-URL discipline - no citable time.com/theguardian.com originals surfaced) + 4 main-run browser.search verification sets (B1/B2/M1/M2 URLs confirmed verbatim from Full-URL listings; B1 re-surface confirmed in-corpus via git grep). 0 browser.open per #503 (excerpt-bounded; barrons.com paywalled).'
+      rotation_transparency: 'Iteration #1237 Type A is the THIRD leg of the 1235-1239 window (D #1235 -> E #1236 -> A #1237 -> B #1238 -> C #1239 per #565 anchor + rotation guard; #1235 Type D main 933e69a7/anchor 8ca2b606/doc-sync 8ac95ab1/log-hash 76e92dd9, #1236 Type E main a403518b/anchor 19ae4fc2/doc-sync d1350466/log-hash a5e8af23; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1237 files on disk (glob); no ''Type A #1237'' in git log (--grep); max numeric mechanism_id 972 pre-commit; zero numeric/underscore/dash 973 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F) + 1 re-surface (B1, disclosed); no #1237 row in README/ARCHITECTURE test tables pre-commit; README stats 67311/1561 pre-commit; fortieth direction-claim form absent in profiles/ pre-commit; forty-eighth + forty-ninth + fiftieth member-claim forms present; fifty-first + fifty-second member-claim forms absent pre-commit. Guard lifecycle: #1236''s max-972 + zero-973 + no-Type-A-#1237-in-git-log + no-fifty-first pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1237 test file); #1236''s fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact guards stay green. This run lands mechanism 973 as the FIFTY-FIRST falsification-family member (ledger 50->51). Next window leg #1238 Type B.'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (profiles/news-corp.yaml m973 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1235-launched full suite (goal hidden_files type_d_1235_full_suite.log) observed ALIVE at this run''s check (4129 bytes, mtime Oct 5 2026 17:39 PDT, mid-run progress output); this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1240 (next Type D).'
+      in_flight: '#899 (nytimes.yaml m771), #938 (Type B test file), #900 (untracked Type D test file), #1012-wt (committed Type A test file edit) - all excluded from this run''s index/diff by explicit-path staging.'
+      source_urls:
+        - url: 'https://www.barrons.com/articles/ftc-openai-anthropic-ai-safety-investigation-8eb4be96'
+          role: 'OpenAI arm B1 (FTC probe enforcement piece; RE-SURFACE as primary arm)'
+        - url: 'https://www.barrons.com/articles/stock-market-things-to-know-today-oura-anthropic-openai-ipo-ce6267d0'
+          role: 'OpenAI arm B2 (Daily roundup Astra-cancellation card; NOVEL)'
+        - url: 'https://www.barrons.com/articles/meta-vr-glasses-muse-ai-apple-64b98241'
+          role: 'Meta arm M1 (VR glasses Connect piece; NOVEL)'
+        - url: 'https://www.barrons.com/articles/meta-connect-2026-muse-ai-1c069cf1'
+          role: 'Meta arm M2 (Connect preview; NOVEL)'
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. This mechanism must accompany any citation with the correlational caveat: excerpt-tier evidence, n=2 per side, cross-peg comparison, no causal claim about editorial influence.'
+      yaml_parse_clean: true
+      ascii_only: true
+
+
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr
