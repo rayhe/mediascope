@@ -1,10 +1,10 @@
-## #1242 Type A: m976 CNN x OpenAI Sep-28 Uthmeier temporary-injunction bounded absence at profiled nationals (temporal extension of mechanism #347; NOT a falsification-family member; ledger holds at 52) - Type A THIRD leg of the 1240-1244 window (Oct 5 2026, 04:00 PM PDT; main commit 9d35d369 / anchor cb788aa2 / doc-sync DOCSYNC_SHA; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67749/1566 -> 67823/1567 (+74/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 9d35d369 / anchor cb788aa2 / doc-sync DOCSYNC_SHA / log-hash this commit
+## #1242 Type A: m976 CNN x OpenAI Sep-28 Uthmeier temporary-injunction bounded absence at profiled nationals (temporal extension of mechanism #347; NOT a falsification-family member; ledger holds at 52) - Type A THIRD leg of the 1240-1244 window (Oct 5 2026, 04:00 PM PDT; main commit 9d35d369 / anchor cb788aa2 / doc-sync 926b6f7b; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67749/1566 -> 67823/1567 (+74/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 9d35d369 / anchor cb788aa2 / doc-sync 926b6f7b / log-hash this commit
 
 ### Commit hashes
 - Main commit `9d35d369` (9d35d3691368a569720e29028e15ff9ed7d26e9f) - verified via git rev-parse
 - Anchor followup `cb788aa2` (cb788aa2b2fc0b67c3a47124ada5de9986a54014; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `DOCSYNC_SHA` (DOCSYNC_FULL; README 67749/1566 -> 67823/1567; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `926b6f7b` (926b6f7b26b9a7fb10ac0fac073890c24b569fd3; README 67749/1566 -> 67823/1567; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_cnn_injunction_line_new_at_head and test_no_type_a_1242_in_git_log_pin to the own-set form
 
 ### Rotation transparency

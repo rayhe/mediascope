@@ -379,14 +379,14 @@ class TestRotationGuard1242:
 
 class TestMechanismNovelty1242:
     def test_cnn_injunction_line_new_at_head(self):
-        # FIRST dedicated Sep-28-injunction mechanism: pre-commit, no
-        # block-key prefix in tracked profiles/ at HEAD (no PRIOR run
-        # had the line). Post-commit this self-trips on the own
-        # landing (the #1191-class self-trip); re-pinned to the
-        # own-set form in the terminal log-hash followup per #721.
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the terminal log-hash followup per #721): the ONLY
+        # tracked profiles/ file carrying the block-key prefix at HEAD
+        # is this run's own landing; no PRIOR run had the line.
         needle = BLOCK_KEY[:20]  # fragment-built prefix
         hits = _git_grep_tracked_source(needle, "profiles/")
-        assert hits == [], hits
+        assert hits == [os.path.join(
+            "profiles", "competitor-coverage-research.yaml")], hits
 
     def test_findings_section_found(self):
         # The block is a top-level key (0-indent), matching the recent
@@ -455,13 +455,23 @@ class TestMechanismNovelty1242:
         assert text.count("26000295GCAXMX") >= 1
 
     def test_no_type_a_1242_in_git_log_pin(self):
-        # Pre-commit form: no "Type A #1242" in git log (this run has
-        # not committed yet). Post-main-commit this flips BY DESIGN
-        # (the #1191-class self-trip); re-pinned to the own-set form
-        # in the terminal log-hash followup per #721.
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the terminal log-hash followup per #721): the ONLY
+        # matches are this run's own commits, whose messages carry the
+        # run's own iteration subject (the followup commits match the
+        # grep, so they join the own set; HEAD is admitted for any
+        # same-run followup). The pin's substance - no PRIOR run
+        # committed this run's iteration - holds.
         out = _git("log", "--format=%H %s", "--grep=Type A #1242").stdout
+        own = {
+            "9d35d369", "cb788aa2", "926b6f7b",
+        }
+        head = _git("rev-parse", "HEAD").stdout.strip()[:8]
         hits = [line for line in out.splitlines() if line.strip()]
-        assert hits == [], hits
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert (line.split()[0][:8] in own
+                    or line.split()[0][:8] == head), line
 
 
 # ---------------------------------------------------------------------------
