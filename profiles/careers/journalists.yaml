@@ -27593,3 +27593,108 @@ christine_ji_type_b:
       source_urls:
       - https://www.marketwatch.com/livecoverage/meta-connect-stock-mark-zuckerberg-keynote-ai/card/meta-joins-apple-in-bringing-fda-approved-hearing-support-to-its-wearables-bMAPnkFEcGxy78T9KwzI
       - https://www.marketwatch.com/story/google-is-playing-a-different-ai-game-than-everyone-else-and-wall-street-may-be-missing-the-point-e91077a3
+
+allison_johnson_type_b:
+  name: Allison Johnson
+  publication: the-verge
+  mechanism_ids: [965]
+  notes: 'Type B #1223 (Oct 4 2026): mechanism 965 CONFIRMING case of the payer-softening direction - FIRST dedicated Type B mechanism on Allison Johnson in journalists.yaml (zero dedicated type_b key pre-commit, per the #643 convention; name appears only in three provisional rejection notes inside other journalists'' blocks, all "no clean pair surfaced" - now resolved by the Oct 2 OpenAI Dots piece). The Verge senior reviewer (phones/consumer tech/wearables beat). Ledger HOLDS at 50; not a falsification-family member.'
+  competitor_coverage:
+    type_b_1223_allison_johnson_verge_meta_muse_vs_openai_dots_oct04_11pm:
+      block_key: type_b_1223_allison_johnson_verge_meta_muse_vs_openai_dots_oct04_11pm
+      mechanism_id: 965
+      iteration: 1223
+      type: B
+      date: '2026-10-04 23:00 PDT'
+      test_file: tests/test_type_b_1223_allison_johnson_verge_meta_muse_vs_openai_dots_oct04_11pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Allison Johnson
+      publication: the-verge
+      window: '1220-1224 window FOURTH leg (D #1220 -> E #1221 -> A #1222 -> B #1223 -> C #1224)'
+      design: 'Type B journalist cross-entity tracking: Allison Johnson (The Verge senior reviewer) on Meta Muse AI agent vs OpenAI Dots agent, 9 days apart, same solo byline, same first-person hands-on review genre. The Vox Media x OpenAI strategic content and product partnership (May 29 2024, mechanism 494, owner-level tie to The Verge) makes OpenAI the deal partner and Meta the non-deal entity (Vox Media is OpenAI-only per the corpus line at competitor-entities.yaml:2798; Meta pays Vox $0). The naive test is directional payer-softening: softer coverage of the deal partner, harder of the non-deal entity. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Meta''s AI agent is a cute little guy who''s great at spending my money'
+        date: '2026-09-23'
+        outlet: the-verge
+        author_byline: 'Allison Johnson'
+        entity: meta
+        url: https://wesearch.press/s/metas-ai-agent-is-a-cute-little-guy-whos-great-at-spending-m-87fc3267
+        url_note: 'WeSearch listing recovered verbatim from this run''s Full-URL listing (search index 1): "Allison Johnson, Sep 23, 2026, 7:00 PM UTC", The Verge attribution; theverge.com canonical not in this run''s Full-URL listings, so not landed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-indexed relay text; byline attested via muckrack.com/allison-johnson-4 profile + flipboard "The Verge - Allison Johnson" attribution + "Photography by Allison Johnson / The Verge" photo credit, 0 browser.open)'
+        key_quotes:
+        - 'Diminutive headline register (verbatim): "Meta''s AI agent is a cute little guy who''s great at spending my money" - the agent sits in the toy/novelty register.'
+        - 'Spending-risk frame: "It is shockingly easy to spend money when a cute little guy is running around the internet with your credit card."'
+        - 'Trust caveat: "If you''re willing to give a lot of information and trust to Meta - a massive caveat! - Muse can genuinely help you get things done."'
+        - 'Diminishment close: "I didn''t spend the hours that followed doing anything consequential. In fact, I spent that time chatting with Marley... inside talking to a robot, cute little guy or otherwise."'
+        tone_MANUAL_ILLUSTRATIVE: -0.20
+        tone_reading: 'Playful-diminutive consumer skepticism; the agent works but is framed as a toy with a credit card and a privacy trust caveat; competence narrated as spending risk, not capability.'
+        status: 'NEW this run (zero corpus hits pre-commit; URL + headline zero-hit repo-wide pre-commit)'
+      openai_arm:
+        title: 'OpenAI''s Dot agent is enterprise software that can also order your dinner'
+        date: '2026-10-02'
+        outlet: the-verge
+        author_byline: 'Allison Johnson'
+        entity: openai
+        url: https://aifuture.org/news/openai-s-dot-agent-is-enterprise-software-that-can-also-order-your-dinner-15015
+        url_note: 'AIFuture relay recovered verbatim from this run''s Full-URL listing (search index 1): "Industry The Verge, October 2, 2026"; theverge.com canonical not in this run''s Full-URL listings, so not landed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-indexed relay text; byline attested via "Photo: Allison Johnson / The Verge" photo credit on the relay + first-person hands-on voice matching the Sep 23 piece, 0 browser.open; bounded byline-certainty, stated as confounder)'
+        key_quotes:
+        - 'Enterprise register (verbatim): "OpenAI''s Dot agent is enterprise software that can also order your dinner" - professional legitimacy granted in the headline.'
+        - 'Explicit in-text cross-entity comparison by the journalist herself: "But unlike the ultra-approachable Meta Muse, Dots feel very much like using workplace software that happens to be able to order you a burrito - emphasis on work."'
+        - 'Professional-legitimacy frame: "these are not playful companions in the vein of Meta''s Muse, but work tools with a friendly skin."'
+        - 'Competence metric: "the agent''s value is measured in completed tasks, not charm."'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        tone_reading: 'Enterprise-competent register; Dots granted workplace legitimacy with dinner-ordering as the headline grabber, not the core function; the journalist explicitly contrasts against Meta Muse.'
+        status: 'NEW this run (zero corpus hits pre-commit; URL + headline zero-hit repo-wide pre-commit)'
+      scorer:
+        meta_tone: -0.20
+        openai_tone: 0.25
+        illustrative_delta_openai_minus_meta: 0.45
+        delta_calc: '(0.25) - (-0.20) = +0.45'
+        delta_reading: 'Directional payer-softening: the deal partner (OpenAI) draws the enterprise-competent register (+0.25) while the non-deal entity (Meta) draws the playful-diminutive register (-0.20). The journalist herself performs the contrast in-text, which both attests the asymmetry and bounds its interpretation (product-differentiation framing).'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned, n=1 per arm; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no_analysis_json_update true; verdict confirming_extension_of_m494 (ledger holds at 50), not an empirical discovery.'
+      financial_context: 'Vox Media x OpenAI strategic content and product partnership (May 29 2024, mechanism 494, competitor-entities.yaml): content + archive licensed for training, product collaboration, ad-tech (Forte) collaboration; amount/terms undisclosed. Owner-level tie to The Verge. Vox Media is OpenAI-only among AI-lab payers (corpus line at competitor-entities.yaml:2798: "single-deal owners (Conde Nast, Atlantic, Vox Media, Guardian - OpenAI-only)"). Vox Media-Meta: no known content-licensing relationship (bounded absence). Meta pays Vox $0. Payer asymmetry separates the arms: OpenAI is the deal partner, Meta the non-deal entity. Correlation is not causation.'
+      finding: 'CONFIRMING CASE of the directional payer-softening prediction at the journalist level: Allison Johnson (The Verge) applies the playful-diminutive register to Meta Muse (-0.20: "cute little guy", spending-risk frame, trust caveat) and the enterprise-competent register to OpenAI Dots (+0.25: "enterprise software", "work tools with a friendly skin"); illustrative delta +0.45 favoring the deal partner. Extends mechanism 494 (Vox Media x OpenAI deal) from the owner-level mapping into the journalist-level register; FIRST Allison Johnson mechanism in corpus. NOT a falsification-family member; ledger HOLDS at 50. No analysis.json update warranted.'
+      confounders:
+        strong:
+        - 'Peg-register confound: OpenAI itself positioned Dots as enterprise (launch framing "workplace software"), Meta positioned Muse as approachable. The register gap may track vendor positioning rather than journalist bias; a Johnson adversarial-register arm on OpenAI would test the bound.'
+        - 'Explicit in-text comparison: Johnson herself writes the Meta-vs-OpenAI contrast ("unlike the ultra-approachable Meta Muse"), which attests the asymmetry she perceives but also frames it as product differentiation - the register gap is her stated read of the products, not necessarily a payer effect.'
+        moderate:
+        - 'OpenAI-arm byline certainty: attested via "Photo: Allison Johnson / The Verge" photo credit on the aifuture.org relay plus first-person hands-on voice; theverge.com canonical URL did not surface in this run''s Full-URL listings. Bounded byline-certainty on the OpenAI arm; the Meta arm carries direct byline attribution (muckrack + flipboard).'
+        - 'Evidence tier: both arms excerpt-bounded (0 browser.open per #503). Bounded absence of harsher/softer language in the excerpts is not proven absence in the full pieces.'
+        weak:
+        - 'n=1 per arm; single-reporter design; 9-day arm gap (Sep 23 vs Oct 2); same-genre (first-person hands-on review) which helps, but review-voice idiosyncrasy is a reporter trait, not necessarily an incentive effect.'
+      counter_evidence:
+      - 'The corpus already holds two Robert Hart (The Verge) journalist-level mechanisms (m599 constancy: OpenAI -0.65 vs Meta -0.50; m626 launch-register differentiation) in which the SAME publication''s reporter applied adversarial registers to the deal partner OpenAI - the payer-softening direction is not uniform across The Verge bylines, consistent with the journalist-contingent refinement from m956/m959.'
+      - 'Three prior runs rejected Allison Johnson only for "no clean pair surfaced" (provisional, not substantive) - this run resolves the condition; the rejection history is not counter-evidence.'
+      connects_to: [494, 599, 626, 644, 952, 956, 959]
+      verdict: 'confirming_extension_of_m494_not_a_discovery'
+      falsification_family: 'NOT a falsification-family member. Directional payer-softening prediction holds: Meta Muse (-0.20, non-deal entity) vs OpenAI Dots (+0.25, deal partner), illustrative delta +0.45 (OpenAI minus Meta) favoring the deal partner. Forty-eighth (m952), forty-ninth (m956), fiftieth (m959) member-claim forms intact in corpus; fifty-first member-claim form absent repo-wide. Ledger HOLDS at 50. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 50
+      ledger_note: 'Ledger HOLDS at 50 this run (m965 confirming case, no new member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. The ledger hold (50) is the corpus-level state change (none).'
+      research_method: 'Delegated research (subagent) + main-run verification: delegated candidate-screening sweep (18 journalists screened; corpus-novelty on Allison Johnson verified: zero dedicated type_b key, three provisional "no clean pair" rejection notes in other blocks now resolved) + 2 main-run browser.search verification sets (Meta-arm byline/quote attestation via muckrack profile + wesearch.press listing + relay quote text; OpenAI-arm byline/quote attestation via aifuture.org relay with "Photo: Allison Johnson / The Verge" credit + remotestake desk analysis), 0 browser.open per #503. SELECTED: Allison Johnson (fresh; zero dedicated type_b key pre-commit; FIRST committed Verge-reviewer mechanism). REJECTED: Lauren Goode (saturated 436/447); Victoria Song (saturated #599/827/test_type_b_1088); Mark Gurman (saturated 593/test_type_b_1163); Lisa Eadicicco (saturated #123); Adi Robertson (saturated f7d18760); Deepa Seetharaman (saturated #57, mid-window outlet move); Benj Edwards (fired Mar 2026); Priya Anand (left journalism); Anna Tong (mid-window outlet move); Salvador Rodriguez (no in-window pair); Tomas Franzese (beat-boundary); Eugene Kim (Amazon-beat-bound); Tom Dotan (no in-window pair); Rachel Metz (no Meta arm); Shirin Ghaffary (no Meta arm); Julia Love (no Meta arm); Kenrick Cai (no clean Meta arm); Davey Alba (arms outside window). Main-run novelty greps: 6/6 URLs zero-hit repo-wide (git grep -F); both headlines zero-hit repo-wide; zero dedicated Johnson type_b block pre-commit; max numeric mechanism_id 964 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B mechanism on Allison Johnson (m965); zero test_type_b_1223 files on disk pre-commit (glob); no "Type B #1223" in git log pre-commit (--grep); max numeric mechanism_id 964 pre-commit; zero numeric/underscore/dash nine-six-five mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1223 in key, no 965 substring); 6/6 source URLs zero-hit repo-wide pre-commit (git grep -F); both headlines zero-hit repo-wide pre-commit; no #1223 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 66148/1547 pre-commit. CONFIRMING case (not a falsification-family member, ledger holds at 50); fifty-first member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit; thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) + thirty-ninth (m948) directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1220-launched full suite (goal hidden_files type_d_1220_full_suite.log) observed at this run''s check (336 bytes, mtime Oct 4 2026 21:15 PDT, ~105 min stale at the ~23:00 check, no pytest process alive, zero processes holding the log open per the /proc open-fd check - an observation, not a verdict). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1225 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m965 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://wesearch.press/s/metas-ai-agent-is-a-cute-little-guy-whos-great-at-spending-m-87fc3267
+      - https://www.todayintabs.com/p/meta-s-new-a-i-agent-for-losers
+      - https://remotestake.com/news/meta-s-ai-agent-is-a-cute-little-guy-who-s-great-at-spending-my-money-94f7e
+      - https://breakingnewstoday.eu/tech/metas-ai-agent-is-a-cute-little-guy-whos-great-at-spending-my-money/
+      - https://muckrack.com/allison-johnson-4
+      - https://aifuture.org/news/openai-s-dot-agent-is-enterprise-software-that-can-also-order-your-dinner-15015
+      - https://remotestake.com/news/openai-s-dot-agent-is-enterprise-software-that-can-also-order-your-dinner-84461
