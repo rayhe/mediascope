@@ -1,11 +1,11 @@
-## #1220 Type D: m961/m962/m963 qualitative-discipline corpus-integrity verification + #1215 background-suite verdict (THIRTY-EIGHTH consecutive death; tombstone ONE-HUNDRED-SECOND -> ONE-HUNDRED-THIRD) + full suite re-launched - Type D FIRST and OPENING leg of the 1220-1224 window (Oct 4 2026, 09:00 PM PDT; main commit eec4bc91 / anchor bafd0a06 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1220 Type D: m961/m962/m963 qualitative-discipline corpus-integrity verification + #1215 background-suite verdict (THIRTY-EIGHTH consecutive death; tombstone ONE-HUNDRED-SECOND -> ONE-HUNDRED-THIRD) + full suite re-launched - Type D FIRST and OPENING leg of the 1220-1224 window (Oct 4 2026, 09:00 PM PDT; main commit eec4bc91 / anchor bafd0a06 / doc-sync 0ae3a92f; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `eec4bc91` (eec4bc919694a08a3ea53c99b8cb2b84e6de3ce0) - verified via git rev-parse
 - Anchor followup `bafd0a06` (bafd0a0634f77a5cd61d12fedf05ed51f3be11bc; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 65901/1544 -> 65989/1545; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; #1219 entry misplacement repaired)
+- Doc-sync `0ae3a92f` (0ae3a92f0a70cf5dd34584f6d9f6c077fe9018ed) (README 65901/1544 -> 65989/1545; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; #1219 entry misplacement repaired)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
-- Hash chain: main eec4bc91 / anchor bafd0a06 / doc-sync TBD / log-hash this commit
+- Hash chain: main eec4bc91 / anchor bafd0a06 / doc-sync 0ae3a92f / log-hash this commit
 
 ### Rotation transparency
 - This run is iteration #1220 Type D, the FIRST and OPENING leg of the 1220-1224 window (D #1220 -> E #1221 -> A #1222 -> B #1223 -> C #1224 per the #565 anchor + rotation guard).
