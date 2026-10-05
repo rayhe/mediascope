@@ -1,3 +1,49 @@
+## #1227 Type A: m967 BI x OpenAI Oct-2 Robinson "culture is broken" resignation exclusive (Stephen Council, relay-attested) vs carried BI Meta execution triad (m399, un-rescored per #807) - MANUAL ILLUSTRATIVE -0.50 vs +0.08, illustrative delta -0.58; CONFIRMING EXTENSION of m871 / TEMPORAL REPLICATION of m399 deal-partner-hardness; NOT a falsification-family member per #1143; ledger holds at 50 - Type A THIRD leg of the 1225-1229 window (Oct 5 2026, 02:00 AM PDT; main commit 6b01b97a / anchor 49651ebf / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66461/1551 -> 66552/1552 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+- Hash chain: main 6b01b97a / anchor 49651ebf / doc-sync TBD / log-hash this commit
+
+### Commit hashes
+- Main commit `6b01b97a` (6b01b97a2eb870e58f49c514d563638cad7f8dd3) - verified via git rev-parse
+- Anchor followup `49651ebf` (49651ebf9cd4e25d3179e779c6dadc501f732646; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (patched by the log-hash followup per #721)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1227 Type A, the THIRD leg of the 1225-1229 window (D #1225 -> E #1226 -> A #1227 -> B #1228 -> C #1229 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1225 Type D (main 1ada50f9 / anchor d69b3b53 / doc-sync 3f0d4d84 / log-hash 9b61c858), #1226 Type E (main 0b151dc1 / anchor 6d030566 / doc-sync 6ac702a5 / log-hash d28923b1 + correctives 7bc53501/259e2ee7); the 1220-1224 window is VERIFIED CLOSED.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1228 Type B continues the window; the #1225 background-suite verdict belongs to #1230 per #795.
+- Guard lifecycle note: #1226's max-966 + zero-967 + no-Type-A-#1227-in-git-log pins flip BY DESIGN at this run (m967 landed; recorded in the #1227 test file's staleness pin, not repaired); #1226's fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact, fifty-first-absent guards stay green (verified via supersession pins in the #1227 test file).
+
+### Finding summary
+- m967 (profiles/business-insider.yaml competitor_relationships.openai, FIRST dedicated corpus mechanism on the peg): BI's Stephen Council breaks the David Robinson resignation as an exclusive on Oct 2 2026 - a Safety Systems leader who drafted the Preparedness Framework and oversaw safety reports for 12 frontier launches walks out four days after OpenAI fired three safety researchers (Jasmine Wang, Tomek Korbak, Mikita Balesni); Robinson's Atlantic essay Oct 3 is titled "I Quit OpenAI Because Its Culture Is Broken". BI's editorial act is the exclusive itself: landing a named insider's governance indictment on the licensing-deal partner (Axel Springer x OpenAI, Dec 2023, tens of millions of euros) at the peak of the crisis week. MANUAL ILLUSTRATIVE -0.50 (adversarial safety-governance exclusive, one notch harder than m871's -0.35 scoop: the peg is a "culture is broken" indictment, not a test-result leak).
+- Relay attestation per #503 (BI paywalled, 0 browser.open; no canonical businessinsider.com URL constructed): biztoc techmeme-attribution "Stephen Council / Business Insider" (techmeme 2026-10-02 23:58:16); startupfortune "according to Business Insider's Stephen Council, who first reported the departure"; TechCrunch "Robinson's departure was first reported by Business Insider"; progressiverobot "Business Insider's confirmation came the same day". Essay payload (Robinson's voice, not BI copy): "guarantees periodic failures"; "The smarter the industry lets models grow while these problems remain unsolved, the more dangerous our situation becomes"; "as the company sprints from one launch to the next, it is failing to achieve the level of care that I believe is needed".
+- Carried Meta comparator (m399, un-rescored per #807): Phoenix delay as polishing, Ray-Ban Display scarcity as demand-positive, retail expansion as strategic growth; avg +0.08. Illustrative delta (OpenAI minus Meta) -0.58, the widest in the BI x OpenAI line (m399 -0.50, m871 -0.38). In-window bounded absence: no verbatim businessinsider.com Meta original surfaced Oct 1-5 (scout's 14 sets + 1 main-run set); the telegra.ph/HN secondhand attribution of a BI Oct-1 Meta datacenter-tax story is too thin for a scorer input, not ingested.
+- THE LINE: m399 (Aug 30, -0.42 profitability skepticism) -> m871 (Sep 28/29, -0.30 Astra-scoop accountability) -> m967 (Oct 2, -0.50 resignation exclusive). The BI safety register on the licensed counterparty hardens with the crisis peg; the Axel Springer deal buys no softness at any step. EXTENSION of m871, TEMPORAL REPLICATION of m399.
+- NOT a falsification-family member per the #1143 temporal-replication precedent (m399 already counted the BI x OpenAI deal-partner-hardness test; the scout's new-member proposal was rejected at main-run verification the same way #1212's was). Ledger HOLDS at 50 (forty-eighth m952 FT, forty-ninth m956 Guardian, fiftieth m959; fifty-first absent).
+- Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=1 vs n=3; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no analysis.json update).
+- Background-suite status per #795: the #1225-launched full suite (goal hidden_files type_d_1225_full_suite.log) observed ALIVE at this run's check (2752 bytes / [  3%] progress, last write Oct 5 02:00 PDT, dots accumulating); CHECKED ONLY - this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1230 (next Type D).
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_a_1227 files on disk (glob, own file only); no "Type A #1227" in git log; max numeric mechanism_id 966; zero numeric/underscore/dash 967 mechanism key forms repo-wide pre-commit (needles format-built, sweep-carrier excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1227 in key, no 967 substring); 4/4 source URLs zero-hit repo-wide pre-commit (git grep -F); "David Robinson resigns" zero-hit repo-wide pre-commit; no #1227 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 66461/1551 pre-commit.
+- Delegated research (subagent scout, 14 browser.search query sets across 8 candidate pairs; SELECTED BI x OpenAI; REJECTED Guardian/Verge/FT/Bloomberg/WaPo/Forbes x Anthropic and Verge x Apple as saturated or thin) + 1 main-run browser.search verification set (confirmed the BI-first-reported attribution across 4 independent relays, verified essay quotes); 0 browser.open per #503.
+- Literal discipline per #715: the forward-guard needles (next-number 968 forms, the fifty-first member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed-claim literals (FIFTIETH member, FORTY-NINTH member, FORTY-EIGHTH member) are permitted.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate defects: 1 found and fixed pre-commit (ascii-only test rescoped to this run's YAML block; the file's e-acute is pre-existing in HEAD).
+- Tests: tests/test_type_a_1227_bi_openai_robinson_resignation_exclusive_vs_meta_execution_triad_oct05_2am.py
+
+### New Type A files
+tests/test_type_a_1227_bi_openai_robinson_resignation_exclusive_vs_meta_execution_triad_oct05_2am.py (91 tests, 14 classes)
+profiles/business-insider.yaml (new m967 block under competitor_relationships.openai, 150 insertions)
+
+### Doc-sync ratchet
+README stats table 66461/1551 -> 66552/1552 (+91/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants post-sync-positive per #719 (91 collected, 14 classes).
+
+### Push status
+Push status (this run, Oct 5 2026 ~02:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (targeted staging by explicit path). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
 ## #1226 Type E: podcast sentiment 168th verification cycle (GF 502 HOLDS 35th verification ~158h, NO 503, GF pure re-surface streak ADVANCES to seven; EHE 56-day hold 7 re-surfaces ZERO new keys; AS 168th no-match 6 circular commit URLs, dec56140 absence streak RESTARTS at one, Tracked Sources 167->168; press 7 re-surfaces ZERO new keys, press streak RESTARTS at one, frontier HOLDS at Oct 3) - Type E SECOND leg of the 1225-1229 window (Oct 5 2026, 02:00 AM PDT; main commit 0b151dc1 / anchor 6d030566 / doc-sync 6ac702a5; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 - Hash chain: main 0b151dc1 / anchor 6d030566 / doc-sync 6ac702a5 / log-hash this commit

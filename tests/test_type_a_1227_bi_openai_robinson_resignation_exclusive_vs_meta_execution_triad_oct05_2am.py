@@ -833,14 +833,19 @@ class TestInflightIsolation1227:
         assert "Type A #1227" not in text
 
     def test_only_intended_paths_differ(self):
-        # The working tree may only differ from HEAD on this run's two
-        # paths plus the four pre-existing in-flight paths (pre-commit
-        # the run's own paths are uncommitted; post-commit they drop out
-        # of the status, which stays within the allowed set).
+        # The working tree may only differ from HEAD on this run's paths
+        # (the two main-commit paths plus the three doc-sync paths) and
+        # the four pre-existing in-flight paths. Pre-main-commit the
+        # run's own main paths are uncommitted; in the doc-sync phase the
+        # doc-sync paths are uncommitted; post-sequence all drop out of
+        # the status, which stays within the allowed set throughout.
         out = _git("status", "--short").stdout
         allowed = {
             "profiles/business-insider.yaml",
             "tests/" + OWN_BASENAME,
+            "README.md",
+            os.path.join("docs", "ARCHITECTURE.md"),
+            "iteration-log.md",
             "profiles/nytimes.yaml",
             "tests/test_type_b_938_dominic_preston_verge_pixel_watch_"
             "gemini_personalization_vs_meta_luna_stigma_sep16.py",
