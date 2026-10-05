@@ -88,7 +88,7 @@ OWN_BASENAME = (
 TOP_KEY = "ben_lovejoy_type_b"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "882a12848dd9a5ae5a34a2e723a8e7b9ccecbcdb"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
