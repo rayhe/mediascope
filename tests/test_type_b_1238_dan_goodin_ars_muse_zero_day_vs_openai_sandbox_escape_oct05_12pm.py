@@ -90,7 +90,7 @@ OWN_BASENAME = (
 TOP_KEY = "dan_goodin_type_b"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "f66f3f4b894db734be1f710065d652f06fd40339"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
