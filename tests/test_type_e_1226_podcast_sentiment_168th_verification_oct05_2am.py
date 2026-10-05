@@ -482,7 +482,7 @@ class TestMechanismNovelty:
         # run committed this run's iteration - holds. The log-hash sha
         # is filled by the corrective commit per #721.
         out = _git("log", "--format=%H %s", "--grep=Type E #1226").stdout
-        own = {"0b151dc1", "6d030566", "6ac702a5", "d28923b1"}
+        own = {"0b151dc1", "6d030566", "6ac702a5", "d28923b1", "7bc53501"}
         hits = [line for line in out.splitlines() if line.strip()]
         assert hits, "expected this run's own commits"
         for line in hits:
