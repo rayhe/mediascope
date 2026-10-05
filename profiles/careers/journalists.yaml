@@ -27812,3 +27812,103 @@ jess_weatherbed_type_b:
       - https://technewsvision.co.uk/metas-muse-ai-sent-a-youtubers-address-to-a-stranger/
       - http://muckrack.com/jess-weatherbed/articles
       - https://techseen.com/story/anthropic-s-ipo-filing-shows-soaring-revenue-mounting-costs-and-existe-6ce54d1
+ben_lovejoy_type_b:
+  name: Ben Lovejoy
+  publication: 9to5mac
+  mechanism_ids: [971]
+  notes: 'Type B #1233 (Oct 5 2026): mechanism 971 CONFIRMING EXTENSION of m223 - FIRST dedicated Type B differential-prior pair on Ben Lovejoy in the agentic-AI device-access capability class (zero dedicated type_b key pre-commit, per the #643 convention; prior Lovejoy mechanism m223 is the camera-feature class, Aug 2026). The 9to5Mac opinion columnist applies the distrust-maximal register to Meta Muse Mac access (-0.65 MANUAL ILLUSTRATIVE, Sep-28 arm: "9to5Mac''s Take on Muse: Nope.") while granting Apple affirmative trust priors on the identical capability class (+0.45, May-18 Siri arm: "the most privacy-respecting AI chatbot out there"; corroborating Jun-4 arm +0.40: "privacy may still rescue the company''s tarnished reputation in AI"). Illustrative delta (Apple minus Meta) +1.10. The Meta arm itself carries the intra-article Apple contrast ("I''m inclined to trust the privacy and safety safeguards Apple has put into place"), so the differential prior is extractable within the single piece. NOT a falsification-family member (no documented 9to5Mac x Apple financial tie in the corpus; the direction CONFIRMS m223); ledger HOLDS at 50. Extends the m956/m959 journalist-contingent refinement: the differential prior is writer-level, present without a deal partner.'
+  competitor_coverage:
+    type_b_1233_ben_lovejoy_9to5mac_muse_mac_access_vs_siri_privacy_trust_oct05_7am:
+      block_key: type_b_1233_ben_lovejoy_9to5mac_muse_mac_access_vs_siri_privacy_trust_oct05_7am
+      mechanism_id: 971
+      iteration: 1233
+      type: B
+      date: '2026-10-05 07:00 PDT'
+      test_file: tests/test_type_b_1233_ben_lovejoy_9to5mac_muse_mac_access_vs_siri_privacy_trust_oct05_7am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Ben Lovejoy
+      publication: 9to5mac
+      window: '1230-1234 window FOURTH leg (D #1230 -> E #1231 -> A #1232 -> B #1233 -> C #1234)'
+      design: 'Type B journalist cross-entity tracking: Ben Lovejoy (9to5Mac opinion columnist, Apple beat) on Meta Muse agentic Mac access vs Apple Siri agentic AI, same writer, same outlet, same opinion genre, same capability class (agentic AI with device-data access). No documented 9to5Mac x Apple AI-licensing financial tie exists in the corpus, so the deal-partner prediction is untested here, not falsified; the pair tests whether the m223 differential-prior direction replicates in a new capability class (temporal + class extension). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Yeah, don''t give Meta''s Muse app access to your Mac'
+        date: '2026-09-28'
+        outlet: 9to5mac
+        author_byline: 'Ben Lovejoy'
+        entity: meta
+        url: https://9to5mac.com/2026/09/28/yeah-dont-give-metas-muse-app-access-to-your-mac/
+        url_note: 'Canonical 9to5mac URL recovered verbatim from this run''s Full-URL listing (search index 0), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline attested via the 9to5mac author archive https://9to5mac.com/author/benlovejoy/ listing the piece, zero-hit repo-wide pre-commit)'
+        key_quotes:
+        - 'Distrust-maximal verdict (verbatim): "9to5Mac''s Take on Muse: Nope."'
+        - 'Least-trusted list (verbatim): "If I were to compile a list of companies I would least trust to give full access to my devices and all of the data stored on them, Meta would unquestionably be the first entry."'
+        - 'Business-model indictment (verbatim): "The company has an abysmal privacy record, and its entire business model is based on sucking up as much of our personal data as possible."'
+        - 'Intra-article Apple contrast (verbatim): "I''m inclined to trust the privacy and safety safeguards Apple has put into place."'
+        tone_MANUAL_ILLUSTRATIVE: -0.65
+        tone_reading: 'Adversarial opinion; maximal distrust priors applied to the identical capability class the writer trusts from Apple. The piece performs the cross-entity comparison internally, anchoring the differential prior within the single article.'
+        status: 'NEW this run (headline + canonical URL zero-hit repo-wide pre-commit)'
+      apple_arm:
+        title: 'Here''s why I won''t be switching on auto-deleting Siri chats'
+        date: '2026-05-18'
+        outlet: 9to5mac
+        author_byline: 'Ben Lovejoy'
+        entity: apple
+        url: https://9to5mac.com/2026/05/18/heres-why-i-wont-be-switching-on-auto-deleting-siri-chats/
+        url_note: 'Canonical 9to5mac URL recovered verbatim from this run''s Full-URL listing (search index 0), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline attested via the 9to5mac author archive listing the piece)'
+        key_quotes:
+        - 'Affirmative trust prior (verbatim): "Whenever the new Siri *finally* launches, it is going to be the most privacy-respecting AI chatbot out there."'
+        - 'Trust extended past Apple silicon (verbatim): "Apple has said that it will instead run AI functions on-device wherever possible and the Gemini model on its own Private Cloud Compute servers where required."'
+        - 'Cook privacy pledge relayed without skepticism (verbatim): "We will continue to run on the device and run in Private Cloud Compute, and maintain our industry-leading privacy standards in doing so."'
+        tone_MANUAL_ILLUSTRATIVE: 0.45
+        tone_reading: 'Aspirational opinion; affirmative trust priors granted to the identical capability class (agentic AI with device-data access, third-party model backend included). No adversarial vocabulary anywhere in the excerpts.'
+        status: 'NEW this run (headline + canonical URL zero-hit repo-wide pre-commit)'
+      corroborating_arm:
+        title: 'Privacy may still be Apple''s savior when it comes to delayed AI features'
+        date: '2026-06-04'
+        outlet: 9to5mac
+        author_byline: 'Ben Lovejoy'
+        entity: apple
+        url: https://9to5mac.com/2026/06/04/privacy-may-still-be-apples-savior-when-it-comes-to-delayed-ai-features/?extended-comments=1
+        url_note: 'Canonical 9to5mac URL recovered verbatim from this run''s Full-URL listing (search index 2), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline attested via the 9to5mac author archive listing the piece)'
+        key_quotes:
+        - 'Privacy-as-savior frame (verbatim): "privacy may still rescue the company''s tarnished reputation in AI."'
+        - 'Payoff-worth-it thesis (verbatim): "while the wait for the new Siri is frustrating, the privacy payoff would be worth it."'
+        tone_MANUAL_ILLUSTRATIVE: 0.40
+        tone_reading: 'Aspirational opinion; Apple''s AI delays are redeemed by the privacy payoff, the mirror image of the Meta arm''s distrust verdict.'
+        status: 'NEW this run (headline + canonical URL zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 1.10
+      delta_reading: 'Illustrative delta (Apple minus Meta) +1.10: the same writer''s trust prior swings from maximal distrust (-0.65) to affirmative trust (+0.45) across the identical capability class. The gap CONFIRMS the m223 differential-prior direction in a new class.'
+      confounders:
+        strong:
+        - 'Temporal gap: the Apple arm (May 18 2026) predates the Meta arm (Sep 28 2026) by ~4 months. Mitigated by the Jun-4 corroborating arm and, decisively, by the intra-article Apple contrast inside the Sep-28 Meta piece itself, which makes the differential prior contemporaneous with the Meta verdict.'
+        moderate:
+        - 'Opinion genre measures priors by design; that is what Type B tracks, but it bounds generalizability to the news register.'
+        weak:
+        - 'n=1 per arm (n=2 Apple-side with the corroborating arm); single-writer design.'
+      counter_evidence:
+      - 'The corpus holds m223 (Ben Lovejoy, 9to5Mac, mechanism 223, Aug 2026): the SAME writer already demonstrated the camera-feature advocacy inversion (adversarial on Meta camera glasses, advocacy for Apple camera glasses). m971 is therefore a replication/extension of a known writer prior in a new capability class, not a first discovery of the asymmetry; the verdict is confirming-extension, which strengthens rather than weakens the journalist-contingent account.'
+      - 'No documented 9to5Mac x Apple financial tie exists in the corpus, so a deal-driven reading of the softness is unavailable; the differential prior exists without a documented payer, bounding the deal-prediction to writer-level priors.'
+      connects_to: [223, 956, 959]
+      verdict: 'confirming_extension_of_m223_replication_not_a_discovery'
+      falsification_family: 'NOT a falsification-family member. Confirming extension: Ben Lovejoy (9to5Mac) applies the distrust-maximal register to Meta Muse Mac access (-0.65 MANUAL ILLUSTRATIVE) and the affirmative-trust register to Apple Siri (+0.45), illustrative delta +1.10 (Apple minus Meta), replicating the m223 differential-prior direction in the agentic-AI device-access class. No documented 9to5Mac x Apple financial tie, so the deal-partner prediction is untested, not falsified. Forty-eighth (m952), forty-ninth (m956), fiftieth (m959) member-claim forms intact in corpus; fifty-first member-claim form absent repo-wide. Ledger HOLDS at 50. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 50
+      ledger_note: 'Ledger HOLDS at 50 this run (m971 confirming extension of m223, no new member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. The ledger hold (50) is the corpus-level state change (none).'
+      research_method: 'Delegated research (subagent scout, 12 browser.search query sets across ~10 candidates; SELECTED Lovejoy as the tightest controlled pair: same writer/outlet/genre/capability class, in-window Meta peg; REJECTED Karissa Bell, Rebecca Bellan, Shirin Ghaffary, Stephen Council, Will Shanklin, Hayden Field as saturated/beat-moved; Ian Carlos Campbell / Anthony Ha / Marcus Mendes / Ashley Belanger / Scott Younker held as fallbacks) + 3 main-run browser.search verification sets (exact-headline Meta-arm search returning the canonical 9to5mac URL verbatim; exact-headline Siri-arm search returning the canonical URL verbatim; exact-headline corroborating-arm search returning the canonical URL verbatim), 0 browser.open per #503. Main-run corrected the scout''s corpus characterization (m223 pre-exists on Lovejoy, so the novelty is the agentic-AI device-access pair, not a first look at the journalist) and rejected the scout''s "zero known corpus hits" claim. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B differential-prior pair on Ben Lovejoy in the agentic-AI device-access class (m971); zero test_type_b_1233 files on disk pre-commit (glob); no "Type B #1233" in git log pre-commit (--grep); max numeric mechanism_id 970 pre-commit; zero numeric/underscore/dash nine-seven-one mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1233 in key, no 971 substring); 4/4 source URLs zero-hit repo-wide pre-commit (git grep -F); both arm headlines zero-hit repo-wide pre-commit; no #1233 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 66958/1557 pre-commit. CONFIRMING EXTENSION of m223 (not a falsification-family member, ledger holds at 50); fifty-first member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1230-launched full suite (goal hidden_files type_d_1230_full_suite.log) observed at this run''s check (9175 bytes, mtime Oct 5 2026 06:36 PDT, ~12% progress, one pytest process alive - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1235 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m971 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://9to5mac.com/2026/09/28/yeah-dont-give-metas-muse-app-access-to-your-mac/
+      - https://9to5mac.com/2026/05/18/heres-why-i-wont-be-switching-on-auto-deleting-siri-chats/
+      - https://9to5mac.com/2026/06/04/privacy-may-still-be-apples-savior-when-it-comes-to-delayed-ai-features/?extended-comments=1
+      - https://9to5mac.com/author/benlovejoy/
