@@ -1,10 +1,10 @@
 ## #1231 Type E: podcast sentiment 169th verification cycle (GF 502 HOLDS 36th verification ~161h, NO 503; GF pure re-surface streak ADVANCES to eight; EHE 56-day hold; AS 169th no-match, dec56140 absence streak ADVANCES to two, Tracked Sources 168->169; press 7 re-surfaces ZERO new keys, press streak ADVANCES to two, frontier HOLDS at Oct 3; monitoring-only per the Aug 28 2026 standing rule, NOT artifact-grade; ledger holds at 50) - Type E SECOND leg of the 1230-1234 window (Oct 5 2026, 05:00 AM PDT; main commit 9f4fdafe / anchor 5d933b11 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66818/1555 -> 66895/1556 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 9f4fdafe / anchor 5d933b11 / doc-sync TBD / log-hash this commit
+- Hash chain: main 9f4fdafe / anchor 5d933b11 / doc-sync c0d7f479 / log-hash this commit
 
 ### Commit hashes
 - Main commit `9f4fdafe` (9f4fdafe081b415d9c88fa4668930a3648f835d8) - verified via git rev-parse
-- Anchor followup `5d933b11` (5d933b11...) - verified via git rev-parse; ANCHORED_SHA patched per #565 (self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Anchor followup `5d933b11` (5d933b11beb0cbe18f4b698216902e00fabecdd8) - verified via git rev-parse; ANCHORED_SHA patched per #565 (self-anchor)
+- Doc-sync `c0d7f479` (c0d7f4798a4730595ca32f86a3fa05578aa9e9ed; patched by the log-hash followup; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
@@ -37,7 +37,7 @@ tests/test_type_e_1231_podcast_sentiment_169th_verification_oct05_5am.py (77 tes
 (podcast-sentiment.md appended + Tracked Sources Attention Sphere row re-confirmed 168->169; no profiles/ changes - Type E adds no mechanisms)
 
 ### Doc-sync ratchet
-README stats table 66818/1555 -> 66895/1556 (+77/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants post-sync-positive per #719 (77 collected, 14 classes).
+README stats table 66818/1555 -> 66895/1556 (+77/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup); test-file constants post-sync-positive per #719 (77 collected, 14 classes).
 
 ### Push status
 Push status (this run, Oct 5 2026 ~05:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
