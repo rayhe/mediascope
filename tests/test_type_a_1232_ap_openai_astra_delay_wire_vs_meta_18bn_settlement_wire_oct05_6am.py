@@ -89,7 +89,7 @@ OWN_BASENAME = (
 PROFILE_FILE = os.path.join(PROFILES_DIR, "ap.yaml")
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+ANCHORED_SHA = "9f74c6eef01113e5f8ccce4cb518d5c4399a9d1f"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
