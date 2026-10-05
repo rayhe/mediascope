@@ -479,7 +479,7 @@ class TestMechanismNovelty:
         # anchor/doc-sync/log-hash shas join the whitelist in the
         # log-hash followup per #721.
         out = _git("log", "--format=%H %s", "--grep=Type E #1221").stdout
-        own = {"0d29e5f9", "d5ac6e22", "7c67c3db", "LOGHASH8"}
+        own = {"0d29e5f9", "d5ac6e22", "7c67c3db", "db692701"}
         hits = [line for line in out.splitlines() if line.strip()]
         assert hits, "expected this run's own commits"
         for line in hits:
@@ -577,12 +577,19 @@ class TestEveryoneHatesElon:
 
     def test_one_new_ehe_key_this_run(self):
         # 7 rows = 6 re-surfaces + 1 NEW key (the creativebloq
-        # subvertising retrospective; ZERO pre-commit corpus hits;
-        # new outlet retrospective, NOT a new story or campaign
-        # phase). The afrotech ethics/consent piece RE-SURFACED this
-        # run (did NOT surface at #1216).
+        # subvertising retrospective; new outlet retrospective, NOT a
+        # new story or campaign phase). The afrotech ethics/consent
+        # piece RE-SURFACED this run (did NOT surface at #1216).
+        # Post-commit form: the new key's ONLY tracked-file hits are
+        # this run's own test file (the pre-commit zero-hit claim
+        # holds modulo the run's own landing - the #1191-class
+        # self-trip).
         assert len(EHE_NEW_KEYS) == 1
-        assert _corpus_hit_count(EHE_NEW_KEYS[0]) == 0
+        others = [
+            f for f in _tracked_grep_files(EHE_NEW_KEYS[0])
+            if "test_type_e_1221" not in f
+        ]
+        assert others == [], others
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "1 NEW key" in src
 
@@ -678,9 +685,17 @@ class TestPressSurfaces:
         # this run. The #1216 re-surfaces (metapress, techspot news
         # 113968, techspot forums mirror, bbc.bm mirror) did NOT
         # surface this run.
+        # Post-commit form: each new key's ONLY tracked-file hits are
+        # this run's own test file (the pre-commit zero-hit claim
+        # holds modulo the run's own landing - the #1191-class
+        # self-trip).
         assert len(PRESS_NEW_KEYS) == 3
         for key in PRESS_NEW_KEYS:
-            assert _corpus_hit_count(key) == 0, "expected novel key %s" % key
+            others = [
+                f for f in _tracked_grep_files(key)
+                if "test_type_e_1221" not in f
+            ]
+            assert others == [], (key, others)
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "ENDS this run" in src
 
