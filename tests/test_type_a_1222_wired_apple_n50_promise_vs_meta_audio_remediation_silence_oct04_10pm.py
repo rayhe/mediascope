@@ -818,11 +818,16 @@ class TestInflightIsolation1222:
         assert "Type A #1222" not in text
 
     def test_wired_yaml_has_no_other_uncommitted_hunks(self):
-        # profiles/wired.yaml carries no in-flight hunks: the working-tree
-        # diff for this file must contain only this run's block.
+        # Post-commit re-pin per the #1191-class pattern: the working tree
+        # is clean after the four-commit sequence, so the pre-commit
+        # "uncommitted diff contains the block" form is vacuous. The
+        # post-commit form asserts the tree is clean and the landed block
+        # is present exactly once as a block key.
         out = _git("diff", "--", "profiles/wired.yaml").stdout
-        assert BLOCK_KEY in out
-        assert "1222" in out
+        out_staged = _git("diff", "--cached", "--", "profiles/wired.yaml").stdout
+        assert out.strip() == "", out.strip()
+        assert out_staged.strip() == "", out_staged.strip()
+        assert _block_text().count(BLOCK_KEY + ":") == 1
 
     def test_only_intended_paths_changed(self):
         # The working tree may only differ from HEAD on this run's two
