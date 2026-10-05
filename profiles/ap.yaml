@@ -1,0 +1,181 @@
+# MediaScope Publication Profile: The Associated Press
+# FIRST dedicated corpus mechanism on this publication line: mechanism 970 (Type A #1232, Oct 5 2026).
+# Wire-service register: AP is itself the Jul-13-2023 OpenAI archive-licensing
+# counterparty (financial relationship documented below), which makes its
+# wire register on OpenAI the direct payer-register test the corpus was missing.
+
+name: "The Associated Press"
+slug: "ap"
+url: "https://apnews.com"
+
+ownership_chain:
+  - name: "The Associated Press"
+    entity_type: "publisher"
+    description: >
+      Nonprofit news cooperative founded 1846; owned by its contributing
+      member newspapers, radio and television stations in the United States.
+      Operates as a wire service: member and subscriber outlets republish AP
+      copy verbatim, which makes the AP wire register genre-constrained
+      neutral by design. No paywall; AP text circulates via thousands of
+      carriers (NPR affiliates, local papers, aggregators).
+
+revenue_relationships:
+  - partner: "OpenAI"
+    relationship_type: "licensing"
+    estimated_value: "undisclosed"
+    description: >
+      Jul 13 2023: OpenAI licenses part of AP's text archive (back to 1985)
+      for model training; AP gains access to OpenAI technology and product
+      expertise. Two-year, nonexclusive term. Unlike later publisher deals,
+      no summarization or link rights to AP stories (AP is unpaywalled).
+      Financial terms not disclosed.
+    date_established: "2023-07-13"
+    source_url: "https://www.reuters.com/business/media-telecom/associated-press-openai-partner-explore-generative-ai-use-news-2023-07-13/"
+
+known_conflicts:
+  - type: "licensing"
+    description: >
+      AP is the licensing counterparty in the Jul-13-2023 OpenAI archive
+      deal above. No Meta licensing or revenue tie ($0). The deal is never
+      disclosed inside AP's OpenAI coverage reviewed for mechanism 970.
+
+competitor_relationships:
+  openai:
+    financial_metadata:
+      ap_openai_deal: 'AP x OpenAI archive-licensing agreement, Jul 13 2023: OpenAI licenses part of AP''s text archive (back to 1985) for training; financial terms undisclosed; AP gains access to OpenAI technology and product expertise; two-year nonexclusive term per deeplearning.ai summary. Unlike other publisher deals, no summarization/link rights to AP stories (AP is unpaywalled). Sources: Reuters Jul-13-2023 original; pressgazette AI-deals roundup.'
+      meta_financial: '$0 - no AP x Meta licensing, advertising, or revenue relationship in corpus'
+      deal_disclosed_in_coverage: false
+      non_causal_note: 'Financial relationship is a structural incentive predictor, not proof of editorial control.'
+    type_a_1232_ap_openai_astra_delay_wire_vs_meta_18bn_settlement_wire:
+      mechanism_id: 970
+      date_analyzed: '2026-10-05'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1232
+      iteration_type: A
+      iteration_time: '2026-10-05 06:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: associated-press
+      competitor_pair: 'OpenAI vs Meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '06:00'
+      job_id: mediascope-daily-iteration
+      block_key: 'type_a_1232_ap_openai_astra_delay_wire_vs_meta_18bn_settlement_wire'
+      test_file: 'tests/test_type_a_1232_ap_openai_astra_delay_wire_vs_meta_18bn_settlement_wire_oct05_6am.py'
+      window: '1230-1234 window THIRD leg (D #1230 -> E #1231 -> A #1232 -> B #1233 -> C #1234)'
+      design: 'Same-publication register comparison: AP''s Sep-28/29-2026 Astra safety-delay wire (NEW arm, relay-attested via NPR affiliates) vs AP''s Aug-26-2026 Meta $18bn teen-harm settlement wire (NEW arm, relay-attested via AP Business SummaryBrief carriers). FIRST dedicated corpus mechanism on the AP publication line. AP is itself the Jul-13-2023 OpenAI archive-licensing counterparty, so this is the direct payer-register test the corpus was missing: does the licensing counterparty''s own wire soften the safety-crisis peg?'
+      distinct_from_prior: 'FIRST dedicated corpus mechanism on the AP publication line (zero prior Type A on AP in git log; no profiles/ap.yaml pre-commit; 2 aggregate-corpus "associated press" mentions only). Distinct from m952 (FT x OpenAI Astra peg, #1202: different outlet and genre - FT adversarial originals vs AP neutral wire on the same safety peg). Distinct from m871 (BI x OpenAI Astra-cancellation scoop, #1202-era line: different outlet; BI first-reported scoop register vs AP wire register). Distinct from m967 (BI x OpenAI Robinson resignation, #1227: different peg - named-insider resignation exclusive vs model-delay wire). Distinct from m956 (Guardian x OpenAI rogue vs Meta $18bn, #1208: different outlet; shares the $18bn settlement EVENT for the Meta arm, but this run''s Meta arm is AP''s own Oakland-dateline wire register, not the Guardian''s). Zero "Astra-delay wire" / "apnews wire register" hits repo-wide pre-commit.'
+      finding: 'AP wires the Astra safety delay (Sep 28-29 2026) in a neutral news-service register on the licensing-deal counterparty itself: "security concerns voiced by its researchers" is the accountability content, but the lead frame adopts OpenAI''s own deceleration narrative ("the latest in the company''s effort to decelerate the pace of the technology''s advance") and the wire carries no adversarial vocabulary, no named critic, no comment-seeking. The same wire service''s Aug-26 Meta settlement wire (OAKLAND, Calif. dateline) is settlement-factual with adversarial substance: "landmark legal settlement", "$18 billion", "teen social media addiction", "undermining children''s mental health". MANUAL ILLUSTRATIVE -0.10 (OpenAI arm) vs -0.45 (Meta arm); illustrative delta (OpenAI minus Meta) +0.35. The delta runs WITH the naive payer-softening prediction (the Jul-13-2023 AP x OpenAI archive-licensing counterparty reads softer), but the comparison is cross-peg: a model-delay wire vs a teen-harm settlement wire, and both arms are straight wire-service copy, so the register gap tracks peg valence and the wire genre, not editorial modulation. NOT a falsification-family member. Ledger holds at 50. Correlation is not causation.'
+      financial_relationship:
+        ap_openai_deal: 'AP x OpenAI archive-licensing agreement, Jul 13 2023: OpenAI licenses part of AP''s text archive (back to 1985) for training; financial terms undisclosed; AP gains access to OpenAI technology and product expertise; two-year nonexclusive term. Sources: https://www.reuters.com/business/media-telecom/associated-press-openai-partner-explore-generative-ai-use-news-2023-07-13/ ; https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/'
+        meta_financial: '$0'
+        deal_disclosed_in_ap_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. The naive payer-softening prediction expects the deal partner softest; observed ordering (OpenAI -0.10 vs Meta -0.45) runs with the prediction, but the cross-peg comparison cannot adjudicate it. This mechanism documents the ordering; it does not prove the deal caused the softness or the absence of hardness.'
+        editorial_independence_note: 'No evidence of direct directive linking the AP x OpenAI licensing deal to AP OpenAI coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      openai_arm:
+        title: 'OpenAI delays latest model over security concerns, as industry faces pressure'
+        date: '2026-09-28'
+        byline: 'The Associated Press'
+        url_source: 'verbatim AP text via NPR affiliates: https://www.wextradio.org/npr-news/2026-09-29/openai-delays-latest-model-over-security-concerns-as-industry-faces-pressure and https://www.kcsm.org/npr-news/2026-09-28/openai-delays-latest-model-over-security-concerns-as-industry-faces-pressure'
+        framing: 'Neutral news-service register on the licensing counterparty''s safety-crisis peg: the accountability content ("security concerns voiced by its researchers") is wrapped in OpenAI''s own deceleration frame ("the latest in the company''s effort to decelerate the pace of the technology''s advance"); no adversarial vocabulary, no named critic, no comment-seeking, no governance indictment.'
+        tone_MANUAL_ILLUSTRATIVE: -0.10
+        entity: 'OpenAI'
+        key_quotes:
+          - 'OpenAI said Monday it was delaying the release of a new artificial intelligence model out of security concerns voiced by its researchers'
+          - 'the latest in the company''s effort to decelerate the pace of the technology''s advance'
+        notes: 'Same Astra safety peg as m952 (FT adversarial originals, -0.40), m871 (BI scoop, -0.30), m967 (BI resignation exclusive, -0.50); AP''s wire is the softest register on the shared peg, but wire-vs-originals is the genre confound.'
+        evidence_tier: 'relay-attested (verbatim AP text on NPR-affiliate carriers; no canonical apnews.com URL constructed per #503)'
+        deal_disclosed: false
+      meta_arm:
+        title: 'Meta reaches landmark $18 billion settlement with states in trial over teen social media addiction'
+        date: '2026-08-26'
+        url_source: 'verbatim AP wire (OAKLAND, Calif. dateline) via carriers: https://www.ftimes.com/news/wire/ap-business-summarybrief-at-7-23-p-m-edt/article_2994cee1-89c2-54f7-b73c-4b2847a22a93.html and https://firstamendment.mtsu.edu/post/meta-reaches-landmark-18-billion-settlement-with-states-in-trial-over-teen-social-media-addiction/'
+        framing: 'Settlement-factual wire with adversarial substance: "landmark legal settlement", "$18 billion", "teen social media addiction", "undermining children''s mental health". The adversarial vocabulary is the litigation''s own; the wire register transmits it straight.'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        entity: 'Meta'
+        status: 'NEW arm (no carried AP x Meta arm exists; AP publication line is new to corpus)'
+        key_quotes:
+          - 'Meta agreed yesterday (Aug. 26) to pay up to $18 billion and add stronger child-safety measures to its Facebook and Instagram platforms as part of a landmark legal settlement'
+          - 'sought to hold the tech giant accountable for the role its platforms played in undermining children''s mental health'
+        notes: 'Same $18bn settlement event as the #1208 Montgomery Guardian arm; this run''s arm is AP''s own Oakland-dateline wire register, not the Guardian''s. Copyright 2026 The Associated Press carried on both relays.'
+        deal_disclosed: false
+      register_analysis: 'AP''s wire register is event-driven, not entity-driven: the Astra-delay wire (-0.10) stays inside the company''s own deceleration frame while the settlement wire (-0.45) carries the litigation''s adversarial substance verbatim. The register follows the peg, not the payer: on the safety peg the licensing counterparty gets neutral process copy; the $0-tie entity''s settlement gets the settlement''s own vocabulary. The wire genre admits no byline-level modulation on either side. The comparison that would adjudicate payer influence - an AP wire on an OpenAI settlement-scale adverse event, or an AP wire on a Meta product-delay - does not exist in-window (bounded absence).'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned; engine NOT run.'
+        target_entity: 'OpenAI'
+        peer_entity: 'Meta'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.10]
+        target_avg: -0.10
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.45]
+        peer_avg: -0.45
+        delta: 0.35
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=1 vs n=1; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no analysis.json update)'
+        engine_run: false
+        is_significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        illustrative_delta_openai_minus_meta: 0.35
+        meta_tone_MANUAL_ILLUSTRATIVE: -0.45
+        openai_tone_MANUAL_ILLUSTRATIVE: -0.10
+        temporal_line: 'm952 FT OpenAI Astra peg (Oct 1-3, adversarial originals, -0.40) vs mechanism 970 AP OpenAI Astra peg (Sep 28-29, neutral wire, -0.10): the same peg draws the softest register in the corpus from the licensing counterparty''s own wire; genre (wire vs originals) is the dominant confound'
+      confounders:
+        strong:
+          - 'STRONG cross-peg valence confound: the Meta arm is a settlement wire (inherently adversarial-substantive) and the OpenAI arm is a model-delay wire (inherently process-neutral); the +0.35 delta may be entirely peg-valence, zero payer effect (same confounder structure as m399/m967).'
+          - 'STRONG wire-register genre: AP wire copy is genre-constrained neutral; neither arm shows byline-level editorial modulation, so a null finding is the genre default, not evidence about the deal.'
+          - 'STRONG relay attestation: the OpenAI arm is verbatim AP text via NPR affiliates; the Meta arm via ftimes + MTSU carriers; no canonical apnews.com URLs constructed; AP body register unverified at the canonical URL either side.'
+        moderate:
+          - 'MODERATE temporal mismatch: Sep-28/29 OpenAI arm vs Aug-26 Meta arm; the settlement is five weeks older but is the nearest AP-wire Meta adverse-event arm in corpus.'
+        weak:
+          - 'WEAK n=1 vs n=1 on the scored pair: directional only; degenerate statistical contract per the #638/#643 convention.'
+          - 'WEAK deal-age: the Jul-2023 AP x OpenAI agreement''s two-year term may have lapsed or renewed; current status unverified.'
+      counterevidence:
+        - 'COUNTEREVIDENCE: m952 (FT x OpenAI Oct 1-3, #1202) applied an adversarial -0.40 register to the SAME Astra peg via FT originals; the peg admits adversarial treatment, so AP''s -0.10 neutrality is a publication/genre choice, not peg-forced.'
+        - 'COUNTEREVIDENCE: m956 (Guardian x OpenAI, #1208) showed symmetric adversarial (-0.35 vs -0.40) on the same settlement event family; the $18bn event does not force a +0.35 softening gap - AP''s gap is its own register configuration.'
+      verdict: 'mechanism_documentation_not_a_discovery: first AP publication-line mechanism (mechanism 970) mapping the wire register on both entities at adjacent safety pegs. The +0.35 illustrative delta is directionally consistent with payer softening but is cross-peg and genre-confounded; it neither confirms nor falsifies the uniform prediction. NOT a falsification-family member per the standing bar (a member requires a same-peg or near-peg hardness/softness adjudication, e.g. m952''s FT originals or m956''s symmetric-adversarial pair); this run''s arms do not meet it. Ledger holds at 50.'
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. The AP x OpenAI licensing deal is a structural incentive; this mechanism documents register ordering only.'
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run on the arms; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; verdict directionally_supported_not_proven; NOT artifact-grade; no_analysis_json_update true; hypothesis-generating only'
+      falsification_family_member: false
+      falsification_ledger: 50
+      ledger_note: 'Ledger holds at 50 this run (no new member; the fiftieth member-form in profiles/careers/journalists.yaml remains the latest). Mechanism documentation, not a uniform-prediction test.'
+      connects_to:
+        - 'm952 (FT x OpenAI Astra peg: same safety peg, adversarial originals register - the genre contrast pole)'
+        - 'm871 (BI x OpenAI Astra-cancellation scoop: same safety peg, scoop register)'
+        - 'm967 (BI x OpenAI Robinson resignation: safety-crisis escalation peg)'
+        - 'm956 (Guardian x OpenAI rogue vs Meta $18bn: shares the settlement event; different outlet)'
+      novelty: 'FIRST dedicated corpus mechanism on the AP publication line (zero prior Type A on AP in git log; no profiles/ap.yaml pre-commit; 2 aggregate-corpus "associated press" mentions only). FIRST same-window AP wire register pair on OpenAI vs Meta. Block key zero-hit repo-wide pre-commit; 5 source URLs zero-hit repo-wide pre-commit (git grep -F); the pressgazette AI-deals roundup is an in-corpus deal source (re-surface).'
+      research_method: 'Delegated scout (17 browser.search query sets across 11 candidate pairs; SELECTED AP x OpenAI; REJECTED Bloomberg/Verge/NYT/Atlantic x OpenAI|Anthropic as saturated, WaPo x OpenAI for failing verbatim-URL discipline, Forbes x OpenAI as peg-absent, CNBC x OpenAI as near-miss with no citable URLs, WSJ x Anthropic as thin/out-of-window) + 2 main-run browser.search verification sets (AP x OpenAI Jul-13-2023 deal confirmed via Reuters/pressgazette; AP Meta $18bn wire confirmed via ftimes/MTSU carriers with OAKLAND, Calif. (AP) Aug-26 dateline). 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical apnews.com URLs constructed. ASCII-only, no em dashes.'
+      rotation_transparency: 'Iteration #1232 Type A is the THIRD leg of the 1230-1234 window (D #1230 -> E #1231 -> A #1232 -> B #1233 -> C #1234 per #565 anchor + rotation guard; #1230 Type D main 3d4a7a89/anchor 23de2781/doc-sync 6f62b9a7/log-hash 407016dd, #1231 Type E main 9f4fdafe/anchor 5d933b11/doc-sync c0d7f479/log-hash 2ba700c2; each verified in git log pre-commit; the 1225-1229 window is VERIFIED CLOSED). Pre-commit novelty greps: zero test_type_a_1232 files on disk (glob); no "Type A #1232" in git log (--grep); max numeric mechanism_id 969 pre-commit; zero numeric/underscore/dash 970 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 5 source URLs zero-hit repo-wide pre-commit (git grep -F; the pressgazette AI-deals roundup is an in-corpus deal source, re-surface); no #1232 row in README/ARCHITECTURE test tables pre-commit; README stats 66895/1556 pre-commit; fiftieth member intact, fifty-first absent, fortieth direction absent pre-commit (this run lands NO member and NO direction). Guard lifecycle: #1231''s max-969 + zero-970 + no-Type-A-#1232-in-git-log pins flip BY DESIGN at this run (recorded in the staleness pin, not repaired); #1231''s fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact, no-fifty-first guards stay green (verified via supersession pins in the #1232 test file). This run lands mechanism 970 as MECHANISM DOCUMENTATION (no new direction, no new falsification-family member). Next window leg #1233 Type B; the #1230 background-suite verdict belongs to #1235 per #795.'
+      concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run''s index/diff (targeted staging by explicit path). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray''s revert/leave/rebuild decision pending.'
+      background_suite_status: 'Per #795: the #1230-launched full suite (goal hidden_files type_d_1230_full_suite.log) observed ALIVE at this run''s check (7121 bytes, [9%] progress, last write Oct 5 2026 06:03 PDT, pytest process alive) - observation only, NOT a verdict; this run neither re-launches, kills, nor writes to it. Its verdict belongs to #1235.'
+      in_flight:
+        - '#899: profiles/nytimes.yaml m771 hunk - untouched'
+        - '#938: Type B test file working-tree edit - untouched'
+        - '#900: untracked Type D test file - untouched'
+        - '#1012-wt: working-tree edit on the committed Type A #1012 file - untouched'
+        - '#1024: m846 in profiles/competitor-entities.yaml - NOT touched (revert/leave/rebuild decision pending)'
+      source_urls:
+        - url: 'https://www.wextradio.org/npr-news/2026-09-29/openai-delays-latest-model-over-security-concerns-as-industry-faces-pressure'
+          role: 'OpenAI arm carrier 1 (verbatim AP text, NPR affiliate)'
+        - url: 'https://www.kcsm.org/npr-news/2026-09-28/openai-delays-latest-model-over-security-concerns-as-industry-faces-pressure'
+          role: 'OpenAI arm carrier 2 (verbatim AP text, NPR affiliate)'
+        - url: 'https://firstamendment.mtsu.edu/post/meta-reaches-landmark-18-billion-settlement-with-states-in-trial-over-teen-social-media-addiction/'
+          role: 'Meta arm carrier 1 (verbatim AP wire, OAKLAND dateline)'
+        - url: 'https://www.ftimes.com/news/wire/ap-business-summarybrief-at-7-23-p-m-edt/article_2994cee1-89c2-54f7-b73c-4b2847a22a93.html'
+          role: 'Meta arm carrier 2 (AP Business SummaryBrief, Copyright 2026 The Associated Press)'
+        - url: 'https://www.reuters.com/business/media-telecom/associated-press-openai-partner-explore-generative-ai-use-news-2023-07-13/'
+          role: 'AP x OpenAI deal source (Reuters Jul-13-2023 original)'
+        - url: 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/'
+          role: 'AP x OpenAI deal corroboration (pressgazette AI-deals roundup: Jul 13 2023, archive back to 1985)'
+      browser_opens: 0
+      tone_scored: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+      engine_run: false
+      is_significant: false
+      artifact_grade: false
+      yaml_parse_clean: true
+      ascii_only: true
