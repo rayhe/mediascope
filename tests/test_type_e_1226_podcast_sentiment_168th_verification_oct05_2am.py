@@ -166,7 +166,7 @@ OWN_BASENAME = (
 
 # Pre-commit this is a zero placeholder; the anchor followup patches it
 # to this run's main commit sha per #565.
-ANCHORED_SHA = "0000000000000000000000000000000000000000"  # patched per #565 in the anchor followup
+ANCHORED_SHA = "0b151dc1369e226ec734d12141a6d0fc164c7044"  # patched per #565 in the anchor followup
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -427,7 +427,7 @@ class TestAnchor:
         # Post-commit form: ANCHORED_SHA patched to this run's main
         # commit sha per #565 in the anchor followup (both this
         # expected value and the ANCHORED_SHA constant are patched).
-        assert ANCHORED_SHA == "MAIN_SHA_PLACEHOLDER_PATCH_IN_ANCHOR_FOLLOWUP"
+        assert ANCHORED_SHA == "0b151dc1369e226ec734d12141a6d0fc164c7044"
         assert len(ANCHORED_SHA) == 40
 
     def test_anchor_sha_format(self):
