@@ -1,11 +1,11 @@
-## #1227 Type A: m967 BI x OpenAI Oct-2 Robinson "culture is broken" resignation exclusive (Stephen Council, relay-attested) vs carried BI Meta execution triad (m399, un-rescored per #807) - MANUAL ILLUSTRATIVE -0.50 vs +0.08, illustrative delta -0.58; CONFIRMING EXTENSION of m871 / TEMPORAL REPLICATION of m399 deal-partner-hardness; NOT a falsification-family member per #1143; ledger holds at 50 - Type A THIRD leg of the 1225-1229 window (Oct 5 2026, 02:00 AM PDT; main commit 6b01b97a / anchor 49651ebf / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66461/1551 -> 66552/1552 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1227 Type A: m967 BI x OpenAI Oct-2 Robinson "culture is broken" resignation exclusive (Stephen Council, relay-attested) vs carried BI Meta execution triad (m399, un-rescored per #807) - MANUAL ILLUSTRATIVE -0.50 vs +0.08, illustrative delta -0.58; CONFIRMING EXTENSION of m871 / TEMPORAL REPLICATION of m399 deal-partner-hardness; NOT a falsification-family member per #1143; ledger holds at 50 - Type A THIRD leg of the 1225-1229 window (Oct 5 2026, 02:00 AM PDT; main commit 6b01b97a / anchor 49651ebf / doc-sync fc586f18; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66461/1551 -> 66552/1552 (+91/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main 6b01b97a / anchor 49651ebf / doc-sync TBD / log-hash this commit
+- Hash chain: main 6b01b97a / anchor 49651ebf / doc-sync fc586f18 / log-hash this commit
 
 ### Commit hashes
 - Main commit `6b01b97a` (6b01b97a2eb870e58f49c514d563638cad7f8dd3) - verified via git rev-parse
 - Anchor followup `49651ebf` (49651ebf9cd4e25d3179e779c6dadc501f732646; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup per #721)
+- Doc-sync `fc586f18` (fc586f1895187f6fb306ded71b4c825b4a176243; README 66461/1551 -> 66552/1552; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency

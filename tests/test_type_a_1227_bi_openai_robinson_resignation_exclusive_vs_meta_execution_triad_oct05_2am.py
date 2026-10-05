@@ -382,12 +382,18 @@ class TestMechanismNovelty1227:
         assert b["openai_arm"]["byline"] == "Stephen Council"
 
     def test_no_type_a_1227_in_git_log_pin(self):
-        # Pre-commit form: no prior run committed this iteration. Post-
-        # main-commit this trips on this run's own commits (the
-        # #1191-class self-trip, BY DESIGN) and is re-pinned to the
-        # whitelist form in the log-hash followup per #721.
-        out = _git("log", "--oneline", "--grep=Type A #1227").stdout
-        assert out.strip() == "", out.strip()
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the log-hash followup per #721): the ONLY matches so far
+        # are this run's own commits, whose messages carry the run's
+        # own iteration subject. The pin's substance - no PRIOR run
+        # committed this run's iteration - holds. The log-hash sha is
+        # filled by the corrective commit per #721.
+        out = _git("log", "--format=%H %s", "--grep=Type A #1227").stdout
+        own = {"6b01b97a", "49651ebf", "fc586f18", "LOGHASH8"}
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own, line
 
 
 # ---------------------------------------------------------------------------
