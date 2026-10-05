@@ -4212,6 +4212,151 @@ competitor_relationships:
         mechanism_670_distinct: 670 is the FIRST publication-level WIRED mechanism on Apple AUDIO always-listening (Siri Recap conversation summaries + Live Rewind 15-second buffer + Shazam background listening) - audio-sensor Apple strand, first mechanism where WIRED PUBLISHED on Apple always-listening and carried the company privacy pitch rather than going silent; adds the bystander-consent-register gradient (EFF via The Register for Apple vs WIRED itself for Meta) and the falsification-adjacent note that the naive payer-softening prediction does NOT fail on this leg (unlike m633/m648/m552)
       coverage_prediction: WIRED will continue pitch-carrying neutral coverage for Apple always-listening wearables (Audio Intelligence, future Apple smart glasses) while sustaining adversarial privacy-alarm register for Meta glasses, because Conde Nast Apple AI licensing negotiations (potential $50M plus multi-year) plus the OpenAI deal ($1-5M/yr) vs $0 Meta is a standing structural incentive; correlation not causation; requires primary-source verification against SEC filings earnings calls publisher statements for empirical validation no causal claim illustrative scores manual estimates synthetic tone arrays illustrative only requires Welch t-test plus Cohen d plus bootstrap CI per standing rule MANUAL ILLUSTRATIVE labeling compliance per project standing rule Aug 28
       test_file: tests/test_type_a_727_wired_apple_audio_intelligence_always_listening_register_sep13_3pm.py
+    type_a_1222_wired_apple_n50_promise_vs_meta_audio_remediation_silence_october:
+      mechanism_id: 964
+      date_analyzed: '2026-10-04'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1222
+      iteration_type: A
+      iteration_time: '2026-10-04 22:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: WIRED
+      competitor_pair: 'Apple vs Meta (promise-vs-shipment remediation register, October 2026)'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '22:00'
+      job_id: mediascope-daily-iteration
+      block_key: 'type_a_1222_wired_apple_n50_promise_vs_meta_audio_remediation_silence_october'
+      key_design_note: 'Descriptive block key carries the iteration number (1222); no underscore/dash/numeric 964 mechanism-key substring per #715.'
+      test_file: 'tests/test_type_a_1222_wired_apple_n50_promise_vs_meta_audio_remediation_silence_oct04_10pm.py'
+      window: '1220-1224 window THIRD leg (D #1220 -> E #1221 -> A #1222 -> B #1223 -> C #1224)'
+      design: 'Same-publication promise-vs-shipment comparison: WIRED''s carried Jul-26-2026 Apple N50 privacy-delay coverage (a promise, no shipped product) vs WIRED''s Sep-24 to Oct-4-2026 Meta Ray-Ban Audio camera-free launch window (a shipped hardware remediation, $349, ships Oct 13). Tests whether the m134 remediation-coverage-selection-silence persists into October: does Apple''s unshipped privacy promise still draw coverage while Meta''s shipping hardware remediation draws silence.'
+      distinct_from_prior: 'FIRST dedicated corpus mechanism on the WIRED Audio-launch coverage-selection question. Distinct from m134 (#492-era, mechanism_id 134): that mechanism-ized the July contrast (Meta v26 LED software fix shipped Jul 7 vs Apple N50 privacy-delay promise reported Jul 26) - this mechanism-izes the OCTOBER state (Meta camera-free hardware SHIPPING Oct 13 vs the same unshipped Apple promise). Distinct from m207/m446 (WIRED Apple camera-AirPods leak silence, Aug): different Apple peg (N50 glasses delay, not AirPods leak), different silence window (Sep-24-Oct-4, not Aug 18-Sep 01). Distinct from m670 (#727, Sep 13): that mechanism-ized WIRED''s pitch-carrying register on Apple''s SHIPPED Audio Intelligence (Sep 9); this mechanism-izes WIRED''s coverage of Apple''s UNSHIPPED glasses promise vs Meta''s shipped remediation. Distinct from m820 (WIRED x Meta Pinky Promises, Sep 23): that is the Meta-arm skeptical-register piece, carried here as the Meta-arm context, not the finding. The Audio launch itself is tracked in Type E press arms (techspot 113968, 19 corpus hits) - the novelty is the WIRED-specific coverage-selection analysis, not the launch.'
+      finding: 'The m134 promise-vs-shipment contrast PERSISTS into October 2026 and sharpens. APPLE ARM (CARRIED, Jul 26 2026): Gurman (Bloomberg) reports Apple delayed the N50 smart glasses to WWDC 2027 with privacy as "priority No. 1"; three camera configs tested (full camera with new privacy restrictions, Siri-only visual input with no saving or sharing, no camera at all); most likely outcome a camera with added restrictions; Apple has not decided on the camera question. No shipped product, no actual fix. Per m134, Apple''s promise "received extensive coverage" including WIRED. Fresh relay attestation this run: dataconomy Jul 27 ("Apple Delays Smart Glasses Over Privacy Concerns", zero-hit novel URL): "Teams developing the glasses within Apple''s Vision hardware group and elsewhere in the company view privacy as ''priority No. 1''" and "Apple is working on hardware and software privacy features that are not available on its current products." MANUAL ILLUSTRATIVE +0.10: neutral product-delay register, Apple framed as privacy-cautious. META ARM (NEW, Sep 24 - Oct 4 2026): Meta announced Ray-Ban Meta Audio at Connect 2026 - camera-free smart glasses, $349, ships Oct 13, 12-hour battery (triple the camera Gen 3), open-ear speakers, six microphones, Meta AI plus the new Muse assistant, FDA-cleared Hearing Enhancement mode. A shipped hardware remediation that removes the camera entirely - the exact "pervert glasses" bystander-recording concern WIRED documented in "The Rise of the Ray-Ban Meta Creep" and the NameTag investigation. Seven outlets covered the launch in the window: hiconsumption (Sep 24, Ryan Calder: "removed the camera entirely, and the result is the Ray-Ban Meta Audio"), themodems ("I Tried Meta''s Camera-Free Smart Glasses", "start shipping on 13 October"), techxplore (AFP: "amid global concerns about privacy and the filming of women and girls without their consent"), plus thesun.ie (Sean Keach hands-on at Connect), techspot 113968 (Type E tracked), gizmodo (James Pero, m806/m818), techradar (Hamish Hector). WIRED published ZERO Audio-hardware originals in the Sep-24-Oct-4 window (bounded absence, m207-lineage discipline: 0 WIRED vs 7+ outlets). WIRED''s Connect-week Meta original stayed in the skeptical register: m820 "Meta Pinky Promises Its Smart Glasses Will Be Private Soon" (-0.45, carried, Ashworth). Illustrative read: Apple''s unshipped promise draws coverage at +0.10; Meta''s shipping remediation draws 0 WIRED articles while its camera hardware draws the adversarial register. In July the contrast was a software patch (v26) vs a promise; in October it is a shipping hardware product vs the same unshipped promise - and the coverage pattern did not move. CONFIRMING EXTENSION of m134''s remediation_coverage_selection_silence; NOT a falsification-family member (the directional payer-softening prediction holds); ledger holds at 50. MANUAL ILLUSTRATIVE ONLY, engine NOT run, no analysis.json update, NOT artifact-grade, verdict directionally_supported_not_proven. Correlation is not causation; hypothesis-generating only.'
+      financial_relationship:
+        conde_nast_apple_tie: 'AI content licensing negotiations opened Dec 2023, potential $50M+ multi-year (carried, wired.yaml apple section: "negotiating")'
+        conde_nast_openai_deal: 'Aug 2024 content licensing, $1-5M/yr (carried)'
+        conde_nast_meta_tie: '$0 - no AI licensing deal; Meta is Conde Nast''s single largest advertising competitor (carried, m134 financial_context)'
+        deal_disclosed_in_wired_coverage: false
+        incentive_read: 'The naive payer-softening prediction (softer Apple coverage from the negotiating publisher, harder Meta coverage of the $0-tie ad competitor) is directionally consistent with the observed October state: Apple''s promise covered neutrally (+0.10), Meta''s shipped remediation uncovered (0 articles). The prediction does not fail on this leg - hence NOT a falsification-family member. Structural incentive only, not proof of editorial control.'
+        non_causal_language: 'Correlation does not establish causation. Financial relationships are structural incentive predictors, not proof of editorial control. No causal claim that any tie drives coverage.'
+        editorial_independence_note: 'No evidence of direct directive linking any commercial posture to coverage tone was reviewed. Incentives are correlational, not causal proof.'
+      apple_arm:
+        title: 'Apple N50 smart glasses delayed to WWDC 2027 over privacy concerns (Gurman/Bloomberg, Jul 26 2026)'
+        date: '2026-07-26'
+        url_source: 'Carried from m134; fresh relay attestation this run: dataconomy Jul 27 2026 ("Apple Delays Smart Glasses Over Privacy Concerns"), zero-hit novel URL pre-commit. Verbatim wired.com URL of WIRED''s own N50 coverage not recovered in this run''s excerpts; none constructed per policy; excerpt-bounded, no first-hand browser.open per #503.'
+        framing: 'product_delay_privacy_promise'
+        tone_MANUAL_ILLUSTRATIVE: 0.10
+        entity: apple
+        status: 'CARRIED from m134 (mechanism_id 134) - disclosed; fresh dataconomy relay attestation is NEW this run'
+        key_quotes:
+          - 'Apple has delayed its planned smart glasses launch in part because of privacy concerns, with a reveal now expected at WWDC in 2027 (dataconomy relay of Gurman)'
+          - 'Teams developing the glasses within Apple''s Vision hardware group and elsewhere in the company view privacy as "priority No. 1"'
+          - 'Apple is working on hardware and software privacy features that are not available on its current products'
+          - 'One option would exclude a camera entirely. Another would include a full camera system but prevent users from taking photos or recording video'
+          - 'Meta''s AI glasses were recently named in a class-action lawsuit as Apple considers how to address similar privacy concerns in its own product'
+        notes: 'Promise register: no shipped product, no actual fix; the privacy posture is stated intent. WIRED covered the delay per m134 ("received extensive coverage, including WIRED").'
+        evidence_tier: 'EXCERPT-TIER: carried finding (m134) plus one fresh relay attestation; not first-hand read; bounded per #503.'
+        deal_disclosed: false
+      meta_arm:
+        title: 'Ray-Ban Meta Audio camera-free smart glasses (Connect 2026 launch, ships Oct 13 2026)'
+        date: '2026-09-24'
+        url_source: 'NEW this run - first WIRED coverage-selection mechanism on the Audio launch. Relay-attested via hiconsumption (Sep 24), themodems (Oct 2026), techxplore/AFP (Sep 2026); all three URLs zero-hit repo-wide pre-commit (git grep -F). Corroborating in-corpus: techspot 113968 (Type E press arm, 19 hits), thesun.ie hands-on (1 hit), gizmodo Pero (m806/m818), techradar Hector. Verbatim wired.com Audio-hardware URL: none surfaced in four bounded search sets (bounded absence per m207 discipline); none constructed per policy; 0 browser.open per #503.'
+        framing: 'remediation_coverage_selection_silence'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        entity: meta
+        status: 'NEW this run - the shipped-remediation arm; the -0.45 is the carried m820 skeptical-register tone for WIRED''s Connect-week Meta original (Pinky Promises, Ashworth, Sep 23); the Audio-hardware silence itself is unscored (0 articles)'
+        key_quotes:
+          - 'So at Connect 2026, Meta and EssilorLuxottica tried something refreshingly simple. They removed the camera entirely, and the result is the Ray-Ban Meta Audio (hiconsumption, Ryan Calder, Sep 24)'
+          - 'There is no lens pointed at anyone, no ambiguity, and no explaining yourself at the gym (hiconsumption)'
+          - 'Meta''s newest pair of smart glasses has lost its most controversial feature. Meet Ray-Ban Meta Audio: smart glasses with no camera at all (themodems)'
+          - 'start shipping on 13 October (themodems)'
+          - 'Meta unveiled several new wearables powered by its AI models Wednesday, including an audio-only, camera-free version of its smart glasses, amid global concerns about privacy and the filming of women and girls without their consent (techxplore, AFP)'
+        notes: 'Shipped-remediation register: the camera - the exact hardware WIRED''s adversarial coverage targeted - is removed in a $349 shipping product. Seven outlets covered the launch; WIRED published zero Audio-hardware originals in the Sep-24-Oct-4 window. WIRED''s Connect-week Meta original (m820) applied the skeptical register to Meta''s privacy PROMISE (Private Processing) while the shipped hardware remediation went uncovered - the silence is remediation-specific, not Meta-blanket.'
+        evidence_tier: 'EXCERPT-TIER: three-relay attestation with verbatim excerpts; bounded-absence claim per m207 discipline (0 WIRED vs 7+ outlets across four search sets); not first-hand read; bounded per #503.'
+        deal_disclosed: false
+      register_analysis: 'The WIRED remediation register is promise-vs-shipment asymmetric across entities. Apple''s N50: an unshipped promise ("priority No. 1", undecided camera) draws neutral product-delay coverage (+0.10). Meta''s Audio: a shipping $349 camera-free product that removes the exact harm WIRED documented draws 0 WIRED articles, while WIRED''s Meta original for the week applies skepticism to Meta''s privacy promise (m820, -0.45). The register does not track shipment (shipped Meta remediation < unshipped Apple promise in coverage); it tracks the entity. The October state sharpens m134''s July read: then a software patch vs a promise, now a hardware product vs the same promise - same coverage pattern. The naive payer-softening prediction (Conde Nast-Apple $50M+ negotiations vs $0 Meta) is directionally consistent; no falsification scored.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE not empirical; carried-vs-new arms; silence arm unscored by construction'
+        target_entity: 'Apple WIRED Jul-26 N50 privacy-delay coverage (carried)'
+        peer_entity: 'Meta WIRED Sep-24-Oct-4 Audio-launch coverage-selection (new)'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.10]
+        target_avg: 0.10
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.45]
+        peer_avg: -0.45
+        peer_note: 'Peer score is the carried m820 skeptical-register tone for WIRED''s Connect-week Meta original; the Audio-hardware silence (0 articles vs 7+ outlets) is the selection finding, unscored'
+        delta: 0.55
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule'
+        engine_run: false
+        is_significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        illustrative_delta_apple_minus_meta: 0.55
+        meta_tone_MANUAL_ILLUSTRATIVE: -0.45
+        apple_tone_MANUAL_ILLUSTRATIVE: 0.10
+        silence_read: 'The selection margin (0 WIRED vs 7+ outlets on a shipping remediation) is the finding; the tone delta (+0.10 vs -0.45) is the register context.'
+      confounders:
+        strong:
+          - 'Newsworthiness asymmetry: an unannounced-product delay (Apple) and a variant launch (Meta Audio) are different news pegs; editors may judge the delay more newsworthy than the variant independent of entity - the selection may be peg-driven, not tie-driven.'
+          - 'Bounded-absence evidence: the 0-WIRED-Audio claim rests on four excerpt-bounded search sets per #503 (0 browser.open); a WIRED Audio piece behind an unindexed URL or print-only would be missed - the absence is bounded, not proven.'
+        moderate:
+          - 'Apple arm carried from July (2.5 months old): WIRED''s N50 coverage tone is m134''s characterization, re-attested but not re-reported this run; the October Apple-glasses news state may have moved.'
+          - 'Desk/genre: WIRED''s N50 coverage sits in the news-desk product pipeline while the Audio silence sits at the Gear-desk review-selection level; desk norms may drive the selection.'
+          - 'Meta promise-vs-shipment split: WIRED DID cover Meta''s Connect privacy promise (m820, skeptically) - the silence targets the shipped remediation, which complicates a pure entity-bias read and is disclosed as counterevidence.'
+        weak:
+          - 'Single-launch variance: n=1 launch event on the Meta arm; one WIRED Audio piece next week would erase the silence finding - it is a windowed claim (Sep-24-Oct-4).'
+      counterevidence:
+        - 'COUNTEREVIDENCE: WIRED covered Meta''s Connect-week privacy promise (m820 Pinky Promises, -0.45) - the outlet does not blanket-silence Meta; the silence is remediation-specific, which bounds the finding to the m134 mechanism class rather than a general anti-Meta claim.'
+        - 'COUNTEREVIDENCE: m670 - WIRED published ON Apple always-listening hardware (Sep 9 Audio Intelligence) carrying the company privacy pitch; WIRED is not uniformly silent on Apple either - the outlet covers Apple hardware promises and shipped features while silencing Meta''s shipped remediations.'
+        - 'COUNTEREVIDENCE: seven outlets (hiconsumption, thesun.ie, themodems, techspot, techxplore, gizmodo, techradar) found the Audio launch newsworthy - the broader press does not share WIRED''s selection, isolating the silence to WIRED rather than the peg.'
+      verdict: 'confirming_extension_of_m134_not_a_discovery: October 2026 window shows the m134 promise-vs-shipment remediation-silence persisting and sharpening - Apple''s unshipped N50 privacy promise (carried Jul-26 arm, +0.10 neutral) retains coverage while Meta''s shipping $349 camera-free hardware remediation draws 0 WIRED articles vs 7+ outlets (bounded absence, m207 discipline). Extends m134''s remediation_coverage_selection_silence from the July software-patch state to the October hardware-shipment state. No new direction; no falsification-family member; ledger holds at 50.'
+      cautious_language_required: 'Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No causal claim. No assertion of editorial direction. Newsworthiness asymmetry, bounded-absence evidence limits, carried-Apple-arm staleness, desk/genre, and the Meta promise-vs-shipment split are strong confounders. Illustrative scores manual estimates. Requires Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation. The Conde Nast-Apple licensing status is "negotiating" (not a signed deal) and does not prove coverage influence in either direction.'
+      correlational_note: 'Correlation is not causation. This note must accompany any citation of this mechanism. The directional payer-softening prediction is consistent with the observed October state; consistency is not proof. The silence finding is windowed (Sep-24-Oct-4) and bounded (#503).'
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict confirming_extension_of_m134_not_a_discovery. no_analysis_json_update true. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 50
+      ledger_note: 'NOT a falsification-family member (confirming extension per the #609/#614 qualitative boundary; the directional prediction holds, no uniform-prediction test scored). Ledger holds at 50 - FORTY-NINTH member-claim form present (m956, profiles/careers/journalists.yaml, 3 occurrences); FIFTIETH member-claim form present (m959, same file, 3 occurrences); fifty-first member-claim form absent repo-wide; fortieth direction-claim form absent in profiles/ (profiles-scoped per #1199); thirty-fifth through thirty-ninth directions present.'
+      connects_to:
+      - 134
+      - 207
+      - 446
+      - 670
+      - 820
+      novelty: 'FIRST dedicated corpus mechanism on the WIRED Audio-launch coverage-selection question: zero "ray-ban audio" hits in profiles/wired.yaml pre-commit; the 3 Meta-arm relay URLs (hiconsumption, themodems, techxplore) zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); the fresh Apple-arm dataconomy relay URL zero-hit repo-wide pre-commit. The Audio launch itself is tracked in Type E press arms (techspot 113968, 19 hits) and the m820 Pinky Promises piece is carried - the novelty is the WIRED-specific remediation-silence analysis, disclosed. Block key zero-hit repo-wide pre-commit (designed keying: iteration 1222 in key, no 964 substring); zero test_type_a_1222 files on disk pre-commit (glob); no "Type A #1222" in git log pre-commit (--grep); max numeric mechanism_id 963 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash 964 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); no #1222 row in README/ARCHITECTURE test tables pre-commit; README stats 66066/1546 pre-commit. Method MANUAL / qualitative-only per the Aug 28 2026 standing rule (main-run research: 6 browser.search query sets across the run; 0 browser.open; no corpus queries executed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Main-run research per the standing pattern (no delegated subagent this run). 6 browser.search query sets: (1) WIRED Apple smart glasses October 2026 - surfaced the N50 delay relay cluster (Jul 26 Gurman origin) and the Meta Connect Audio coverage; (2) WIRED Meta smart glasses Connect privacy October 2026 - surfaced the Audio launch relay cluster (techspot/techxplore/technewsvision) and WIRED''s Pritam Shah Private Processing piece (m820, carried); (3) wired.com Apple smart glasses privacy delay Gurman - confirmed the Jul-26 N50 delay as the current Apple-glasses peg, no October WIRED Apple-glasses original surfaced; (4) WIRED Apple facial recognition smart glasses - confirmed the June NameTag removal is not October-fresh (event was June 2026, already in corpus via m134); (5) WIRED iPhone 17 review September 2026 - surfaced WIRED''s iPhone 17 line reviews (Sep 2025-Mar 2026, not October-fresh; #528 covers the 2025 iPhone 17 at journalist level) - REJECTED as the Apple arm (stale, journalist-level saturated); (6) WIRED Ray-Ban Audio glasses review Meta Connect - surfaced the 7-outlet Audio launch cluster with zero WIRED Audio-hardware originals (bounded absence) - SELECTED as the Meta arm. 0 browser.open per #503. REJECTED: iPhone-17-review Apple arm (stale Sep 2025-Mar 2026, #528 saturated); Ashworth Gen-2 "creepy vibes" as a fresh Meta arm (2025-era, not October-fresh); October WIRED NameTag follow-up (no such piece - the removal was June 2026); Apple M5 Vision Pro October launch (leak-stage, no WIRED original surfaced). Pre-commit novelty greps per #715 as documented in the novelty field.'
+      rotation_transparency: 'Iteration #1222 Type A is the THIRD leg of the 1220-1224 window (D #1220 -> E #1221 -> A #1222 -> B #1223 -> C #1224 per #565 anchor + rotation guard; #1220 Type D main eec4bc91/anchor bafd0a06/doc-sync 0ae3a92f/log-hash 5b327918, #1221 Type E main 0d29e5f9/anchor d5ac6e22/doc-sync 7c67c3db/log-hash db692701 + post-commit corrective d5b111df; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1222 files on disk (glob); no "Type A #1222" in git log (--grep); max numeric mechanism_id 963 pre-commit; zero numeric/underscore/dash 964 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 4 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); no #1222 row in README/ARCHITECTURE test tables pre-commit; README stats 66066/1546 pre-commit; fiftieth member-claim form present (m959, 3x journalists.yaml); forty-ninth member-claim form present (m956, 3x journalists.yaml); fifty-first member-claim form absent repo-wide pre-commit; fortieth direction-claim form absent in profiles/ pre-commit (profiles-scoped per #1199); thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth directions present. Guard lifecycle: #1221''s max-963 + zero-964 + no-Type-A-#1222-in-git-log pins flip BY DESIGN at this run (recorded, not repaired); #1221''s zero-965 underscore/dash, fiftieth/forty-ninth-intact, fifty-first-absent, fortieth-absent guards stay green (verified via supersession pins in the #1222 test file). This run lands mechanism 964 as a CONFIRMING EXTENSION of m134 (no new direction; ledger holds at 50). Next window leg #1223 Type B.'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; this run appends to profiles/wired.yaml (no in-flight hunks on that file - verified via git status pre-commit) plus the new test file, staged by explicit path. Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending; profiles/competitor-entities.yaml untouched).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1220-launched full suite (goal hidden_files type_d_1220_full_suite.log) observed at 336 bytes, mtime Oct 4 2026 21:15 PDT (~51 min stale at this run''s 22:06 check), zero processes holding the log open per the /proc open-fd check - no verdict declared; this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1225 (next Type D).'
+      in_flight: '#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched (this run appends to profiles/wired.yaml competitor_relationships.apple, not competitor-entities.yaml).'
+      source_urls:
+      - url: 'https://hiconsumption.com/tech/ray-ban-meta-audio-glasses/'
+        what: 'hiconsumption relay (Sep 24 2026, Ryan Calder): "So at Connect 2026, Meta and EssilorLuxottica tried something refreshingly simple. They removed the camera entirely, and the result is the Ray-Ban Meta Audio"; "There is no lens pointed at anyone, no ambiguity, and no explaining yourself at the gym"; 12-hour battery triple the camera Gen 3. URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      - url: 'https://themodems.com/tech/ray-ban-meta-audio-glasses-no-camera/'
+        what: 'themodems relay (Oct 2026): "Meta''s newest pair of smart glasses has lost its most controversial feature. Meet Ray-Ban Meta Audio: smart glasses with no camera at all"; "start shipping on 13 October"; $349 US. URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      - url: 'https://techxplore.com/news/2026-09-meta-camera-free-ai-glasses.html'
+        what: 'techxplore/AFP relay (Sep 2026): "Meta unveiled several new wearables powered by its AI models Wednesday, including an audio-only, camera-free version of its smart glasses, amid global concerns about privacy and the filming of women and girls without their consent." URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      - url: 'https://dataconomy.com/2026/07/27/apple-delays-smart-glasses-over-privacy-concerns/'
+        what: 'dataconomy relay (Jul 27 2026) of Gurman/Bloomberg: "Apple has delayed its planned smart glasses launch in part because of privacy concerns, with a reveal now expected at WWDC in 2027"; ''"priority No. 1"'' privacy posture; camera-free variants considered. Fresh attestation for the carried Apple arm. URL zero-hit repo-wide pre-commit.'
+        accessed: '2026-10-04'
+        novel: true
+      browser_opens: 0
+      tone_scored: false
+      engine_run: false
+      is_significant: false
+      artifact_grade: false
+      yaml_parse_clean: true
+      ascii_only: true
   google:
     financial_tie: adversarial_litigation
     estimated_value: $0 (seeking unspecified damages)
