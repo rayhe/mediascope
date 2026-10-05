@@ -1,9 +1,10 @@
-## #1225 Type D: m964/m965/m966 qualitative-discipline corpus-integrity verification + #1220 background-suite verdict (THIRTY-NINTH consecutive death; tombstone ONE-HUNDRED-THIRD -> ONE-HUNDRED-FOURTH) + full suite re-launched - Type D FIRST and OPENING leg of the 1225-1229 window (Oct 5 2026, 01:00 AM PDT; main commit 1ada50f9 / anchor d69b3b53 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1225 Type D: m964/m965/m966 qualitative-discipline corpus-integrity verification + #1220 background-suite verdict (THIRTY-NINTH consecutive death; tombstone ONE-HUNDRED-THIRD -> ONE-HUNDRED-FOURTH) + full suite re-launched - Type D FIRST and OPENING leg of the 1225-1229 window (Oct 5 2026, 01:00 AM PDT; main commit 1ada50f9 / anchor d69b3b53 / doc-sync 3f0d4d84; log-hash followup registers all hashes here per #721 (this commit); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 1ada50f9 / anchor d69b3b53 / doc-sync 3f0d4d84 / log-hash this commit
 
 ### Commit hashes
 - Main commit `1ada50f9` (1ada50f9e804fdb514e9b0bfb1124b45f931fbc7) - verified via git rev-parse
 - Anchor followup `d69b3b53` (d69b3b53d78fdcebbc11479b7669c271f547efaa; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup per #721)
+- Doc-sync `3f0d4d84` (3f0d4d84a996df3ad25dc20480d535138dbed17c; README 66286/1549 -> 66384/1550; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
