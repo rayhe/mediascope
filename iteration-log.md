@@ -1,5 +1,5 @@
-## #1230 Type D: m967/m968/m969 qualitative-discipline corpus-integrity verification + #1225 background-suite verdict (FORTIETH consecutive death; tombstone ONE-HUNDRED-FOURTH -> ONE-HUNDRED-FIFTH) + full suite re-launched - Type D FIRST and OPENING leg of the 1230-1234 window (Oct 5 2026, 04:00 AM PDT; main commit 3d4a7a89 / anchor 23de2781 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66719/1554 -> 66818/1555 (+99/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 3d4a7a89 / anchor 23de2781 / doc-sync TBD / log-hash this commit
+## #1230 Type D: m967/m968/m969 qualitative-discipline corpus-integrity verification + #1225 background-suite verdict (FORTIETH consecutive death; tombstone ONE-HUNDRED-FOURTH -> ONE-HUNDRED-FIFTH) + full suite re-launched - Type D FIRST and OPENING leg of the 1230-1234 window (Oct 5 2026, 04:00 AM PDT; main commit 3d4a7a89 / anchor 23de2781 / doc-sync 6f62b9a7; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66719/1554 -> 66818/1555 (+99/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 3d4a7a89 / anchor 23de2781 / doc-sync 6f62b9a7 / log-hash this commit
 
 ### Commit hashes
 - Main commit `3d4a7a89` (3d4a7a8945ab7ba6fde9c8f1e82cf1a44eb84215) - verified via git rev-parse
