@@ -157,9 +157,8 @@ OWN_BASENAME = (
     "test_type_e_1231_podcast_sentiment_169th_verification_oct05_5am.py"
 )
 
-# Pre-commit this is a zero placeholder; the anchor followup patches it
-# to this run's main commit sha per #565.
-ANCHORED_SHA = "0000000000000000000000000000000000000000"
+# Patched per #565 in the anchor followup (main commit sha).
+ANCHORED_SHA = "9f4fdafe081b415d9c88fa4668930a3648f835d8"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -420,7 +419,7 @@ class TestAnchor:
         # Post-commit form: ANCHORED_SHA patched to this run's main
         # commit sha per #565 in the anchor followup (both this
         # expected value and the ANCHORED_SHA constant are patched).
-        assert ANCHORED_SHA == "0000000000000000000000000000000000000000"
+        assert ANCHORED_SHA == "9f4fdafe081b415d9c88fa4668930a3648f835d8"
         assert len(ANCHORED_SHA) == 40
 
     def test_anchor_sha_format(self):
