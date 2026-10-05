@@ -514,6 +514,156 @@ competitor_relationships:
         - 'Distinct from mechanism 399 (BI x OpenAI profitability skepticism vs Meta product framing, Aug 30): m399 supplies the carried Meta comparator triad and the BI-quad baseline (deal partner hardest); m871 adds two NEW-TO-CORPUS Sep-28/29 safety-crisis arms, not a re-score of m399.'
         - 'Distinct from mechanism 799 (BI x OpenAI recovery-week Astra/AGI mitigation credit, Sep 23): different peg class (cancellation-scoop accountability vs recovery-week mitigation credit); m799 is counterevidence, not a predecessor.'
         - 'Distinct from mechanism 745 (BI x Anthropic Nasdaq IPO milestone register, Sep 19): different entity (OpenAI vs Anthropic) and different register question (safety-crisis accountability vs IPO-milestone aspiration); m745 is counterevidence, not a predecessor.'
+    type_a_1227_bi_openai_robinson_culture_broken_resignation_exclusive_oct02:
+      mechanism_id: 967
+      date_analyzed: '2026-10-05'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1227
+      iteration_type: A
+      iteration_time: '2026-10-05 02:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: business-insider
+      competitor_pair: 'OpenAI vs Meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '02:00'
+      job_id: mediascope-daily-iteration
+      block_key: 'type_a_1227_bi_openai_robinson_culture_broken_resignation_exclusive_oct02'
+      test_file: 'tests/test_type_a_1227_bi_openai_robinson_resignation_exclusive_vs_meta_execution_triad_oct05_2am.py'
+      window: '1225-1229 window THIRD leg (D #1225 -> E #1226 -> A #1227 -> B #1228 -> C #1229)'
+      design: 'Same-publication register comparison: BI''s Oct-2-2026 David Robinson resignation exclusive (NEW arm, relay-attested) vs carried BI Meta product-execution triad (m399, un-rescored per #807). Temporal extension: m399''s OpenAI arm (deal partner, -0.42 profitability skepticism, Aug 30) and m871''s OpenAI arms (deal partner, -0.30 safety-crisis accountability, Sep 28/29) established the BI deal-partner-hardness line; this run tests whether the October escalation peg (a named safety leader quitting over broken culture, four days after the three-firings story) softens or hardens it.'
+      distinct_from_prior: 'FIRST dedicated corpus mechanism on BI''s Oct-2 Robinson resignation exclusive. Distinct from m871 (BI x OpenAI Sep-28/29 Astra-cancellation scoop, different peg: model-cancellation vs named-insider resignation; m871 is the predecessor line this run extends); distinct from m399 (BI x OpenAI Feb-10 profitability skepticism, different peg class: investor-viability vs safety-governance); distinct from m952''s B3 leg (FT x OpenAI #1202, which recorded the Robinson resignation only as a bounded-absence leg for FT with the BI first-reported attribution - this run promotes the BI side to a dedicated mechanism); distinct from m955 (BI x Anthropic, different entity). Zero "David Robinson resigns" / "safety-leader-david-robinson" hits repo-wide pre-commit.'
+      finding: 'Business Insider breaks the David Robinson resignation as an exclusive (Stephen Council, Oct 2 2026) and frames it inside the safety-crisis week: a Safety Systems leader who drafted the Preparedness Framework and oversaw safety reports for 12 frontier launches walks out four days after OpenAI fired three safety researchers, then publishes "I Quit OpenAI Because Its Culture Is Broken" (The Atlantic, Oct 3). BI''s editorial act is the exclusive itself - choosing to land a named insider''s governance indictment on the licensing-deal partner (Axel Springer x OpenAI, Dec 2023, tens of millions of euros) at the peak of the crisis week. MANUAL ILLUSTRATIVE -0.50 (adversarial safety-governance exclusive, one notch harder than m871''s -0.35 scoop: the peg is a named insider''s "culture is broken" indictment, not a test-result leak). Carried Meta comparator (m399, un-rescored per #807): Phoenix delay as polishing, Ray-Ban Display scarcity as demand-positive, retail expansion as strategic growth; avg +0.08. Illustrative delta (OpenAI minus Meta) -0.58. The deal partner sits at the HARD end of the register for the third consecutive safety peg (m399 financial, m871 cancellation-scoop, m967 resignation-exclusive). EXTENSION of m871 and TEMPORAL REPLICATION of m399''s deal-partner-hardness at the October escalation peg. NOT a falsification-family member per the #1143 temporal-replication precedent (m399 already counted the BI x OpenAI hardness test; the scout''s new-member proposal was rejected the same way #1212''s was). Ledger holds at 50. Correlation is not causation.'
+      financial_relationship:
+        axel_springer_openai_deal: 'Axel Springer x OpenAI global licensing partnership, Dec 2023; tens of millions of euros over 3 years (carried from the competitor_relationships.openai financial metadata)'
+        meta_financial: '$0'
+        deal_disclosed_in_bi_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. The naive payer-softening prediction expects the deal partner softest; observed ordering is the deal partner hardest across three safety pegs (m399, m871, m967). This mechanism documents the ordering; it does not prove the deal caused the hardness or the absence of softness.'
+        editorial_independence_note: 'No evidence of direct directive linking the Axel Springer licensing deal to BI OpenAI coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      openai_arm:
+        title: 'OpenAI safety leader David Robinson resigns (BI exclusive, Oct 2 2026)'
+        date: '2026-10-02'
+        byline: 'Stephen Council'
+        url_source: 'Relay-attested BI exclusive per #503 (BI paywalled, 0 browser.open this run; no canonical businessinsider.com URL constructed): biztoc techmeme-attribution "Stephen Council / Business Insider" (techmeme 2026-10-02 23:58:16); startupfortune: "according to Business Insider''s Stephen Council, who first reported the departure"; TechCrunch: "Robinson''s departure was first reported by Business Insider"; progressiverobot: "Business Insider''s confirmation came the same day".'
+        framing: 'safety_governance_resignation_exclusive'
+        tone_MANUAL_ILLUSTRATIVE: -0.50
+        entity: openai
+        key_quotes:
+          - 'David Robinson, who worked on OpenAI''s Safety Systems team and had previously led policy planning, left OpenAI last week (biztoc, attributed Stephen Council / Business Insider)'
+          - 'according to Business Insider''s Stephen Council, who first reported the departure (startupfortune)'
+          - 'Robinson''s departure was first reported by Business Insider (TechCrunch)'
+          - 'OpenAI''s David Robinson has resigned, BI can confirm. He led safety transparency at the company, working on system cards, and left last week. (Stephen Council X post, Oct 2 2026, via relay)'
+          - 'Four days after OpenAI dismissed Jasmine Wang, Tomek Korbak and Mikita Balesni on October 1, 2026 ... Robinson resigned from the company''s Safety Systems team last week (startupfortune, BI-attributed)'
+        notes: 'BI''s editorial act is breaking the resignation as an exclusive in the safety-crisis week. The "culture is broken" indictment itself is Robinson''s voice (Atlantic essay Oct 3), not BI''s copy; BI''s register choice is landing the exclusive and framing the departure inside the firings-plus-exodus sequence. Relay-attested per #503; excerpt-bounded; no first-hand BI read (paywalled).'
+        evidence_tier: 'EXCERPT-TIER: four-mirror relay attestation with verbatim excerpts; not first-hand read (BI paywalled); bounded per #503.'
+        deal_disclosed: false
+        essay_arm:
+          title: 'I Quit OpenAI Because Its Culture Is Broken (The Atlantic, Oct 3 2026)'
+          author_voice: 'David Robinson (resigning insider), not BI copy; surfaced by BI''s Oct-2 exclusive'
+          key_quotes:
+            - 'guarantees periodic failures (Robinson on iterative deployment, via relay)'
+            - 'The smarter the industry lets models grow while these problems remain unsolved, the more dangerous our situation becomes (TechCrunch quoting the essay)'
+            - 'as the company sprints from one launch to the next, it is failing to achieve the level of care that I believe is needed (Robinson, via relay)'
+            - 'He hired a PR firm. But he insisted, "The decision to speak out is mine alone." (TechCrunch)'
+          notes: 'The essay is the payload BI''s exclusive surfaced; its adversarial content corroborates the -0.50 register read on the exclusive. Not scored separately.'
+      meta_arm:
+        title: 'BI Meta product-execution triad (carried from m399, un-rescored per #807)'
+        date: '2025-12-06 to 2026-04-23'
+        url_source: 'carried per the m399 register-continuity pattern (no re-search this run): Phoenix delay memo (Dec 6 2025, Reuters citing BI), Ray-Ban Display supply-shortage pause (Jan 6 2026), retail expansion (Apr 23 2026, Road to VR citing BI); band mean +0.08 from m399 (scores 0.05/0.10/0.08), un-rescored per #807.'
+        framing: 'product_execution_neutral'
+        tone_MANUAL_ILLUSTRATIVE: 0.08
+        entity: meta
+        status: 'CARRIED from m399 (un-rescored per #807)'
+        in_window_bounded_absence: 'No verbatim businessinsider.com Meta original surfaced in the Oct 1-5 window across this run''s query sets (the scout''s 14 sets plus 1 main-run verification set); a telegra.ph week-in-AI roundup''s secondhand attribution of a BI Oct-1 Meta datacenter-tax story (via an HN post) is too thin for a scorer input and is not ingested.'
+        key_quotes:
+          - 'delaying the release until 2027, aiming to get the details right'
+          - 'high demand'
+          - 'waitlists extending into 2026'
+          - 'could mirror Apple''s retail strategy'
+        notes: 'Neutral-to-positive execution framing; delay as polishing, scarcity as success signal, expansion as strategic growth; no financial-viability questioning despite Reality Labs $60B+ cumulative losses. Carried, not novel.'
+        deal_disclosed: false
+      register_analysis: 'BI''s safety-accountability register on the deal partner hardens across the escalation sequence: m871''s Astra-cancellation scoop (-0.35) to m967''s named-insider resignation exclusive (-0.50). The register is peg-escalating, not payer-softening: each step up the crisis ladder (test-result leak, then a safety leader quitting over broken culture) draws a harder BI register on the licensed counterparty. The carried Meta triad (+0.08) holds the product-execution register on the $0-tie entity. The -0.58 illustrative delta is the widest in the BI x OpenAI line (m399 -0.50, m871 -0.38), driven by the exclusive''s insider-indictment peg. Register follows the crisis peg, not the payer.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        note: 'MANUAL ILLUSTRATIVE not empirical; n=1 vs n=3 (triad avg) insufficient for inferential significance'
+        target_entity: 'Meta BI carried register'
+        peer_entity: 'OpenAI BI Oct-2 Robinson-exclusive register'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.05, 0.10, 0.08]
+        target_avg: 0.08
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.50]
+        peer_avg: -0.50
+        delta: -0.58
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule'
+        engine_run: false
+        is_significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        illustrative_delta_openai_minus_meta: -0.58
+        meta_tone_MANUAL_ILLUSTRATIVE: 0.08
+        openai_tone_MANUAL_ILLUSTRATIVE: -0.50
+        temporal_line: 'm399 OpenAI (deal partner, Aug 30) -0.42 vs m871 OpenAI (deal partner, Sep 28/29) -0.30 vs m967 OpenAI (deal partner, Oct 2) -0.50: hardness persists and escalates with the peg across three windows; the Axel Springer deal buys no softness at any step'
+      confounders:
+        strong:
+          - 'Safety-crisis news-peg genre default: resignation-during-crisis is an accountability beat where adversarial vocabulary is the genre norm; the register gap may track what the peg IS, not who the entity is (same confounder structure as m399 and m871).'
+          - 'Excerpt-tier evidence: BI is paywalled; the exclusive is relay-attested (biztoc, startupfortune, TechCrunch, progressiverobot); BI body register unverified; no canonical businessinsider.com URL constructed.'
+          - 'Voice attribution: the sharpest lines ("culture is broken", "guarantees periodic failures") are Robinson''s essay voice, not BI''s copy; BI''s scored act is the exclusive break plus crisis-week framing, one inferential step from the quoted indictment.'
+        moderate:
+          - 'Temporal mismatch: Oct-2 OpenAI arm vs Dec-2025-to-Apr-2026 Meta arms (m399); the in-window bounded absence of a fresh BI Meta original means the comparator is stale by 5-10 months.'
+          - 'n=1 vs n=3 on the scored pair: directional only; degenerate statistical contract per the #638/#643 convention.'
+          - 'Beat incentive: Council breaking a resignation exclusive is a scoop beat; the adversarial register may reward the scoop''s news value rather than an entity stance.'
+        weak:
+          - 'Single-reporter variance: the exclusive is one reporter''s (Council''s) break; newsroom-wide BI stance on the partner is not established by one byline.'
+      counterevidence:
+        - 'COUNTEREVIDENCE: m799 - BI gave the deal partner (OpenAI) mitigation credit on recovery-week pegs (+0.3167, Sep 23); accountability is peg-scoped, not entity-scoped, even inside the BI x OpenAI line.'
+        - 'COUNTEREVIDENCE: m871''s own counterevidence - tech-insider.org (Sep 25) relays BI reporting that Meta "beat OpenAI to the punch on announcing an AI gadget" (Meta Charm, Sep 23): BI attribution on a Meta-positive first-mover peg; the deal partner is not uniformly punished in BI''s newsroom.'
+        - 'COUNTEREVIDENCE: m955 - BI applied financial-skeptical registers to the non-deal lab (Anthropic, -0.30) on IPO-paper pegs; the skepticism register fires without any payer tie, so the m967 hardness does not need the deal to explain it either.'
+      verdict: 'mechanism_refinement_not_a_discovery: temporal replication of m399''s deal-partner-hardness finding and extension of m871''s safety-accountability line at the October escalation peg (named-insider resignation exclusive). The BI safety register on the licensed counterparty hardens with the crisis (-0.35 scoop to -0.50 exclusive); the Axel Springer licensing deal predicts neither softness (violated at m399/m871/m967) nor hardness - it predicts nothing stable. NOT a falsification-family member per the #1143 temporal-replication precedent.'
+      cautious_language_required: 'Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No causal claim. No assertion of editorial direction. Beat assignment, crisis-peg genre, excerpt-tier relay attestation, voice attribution (Robinson''s essay vs BI''s copy), temporal mismatch, and genuine newsworthiness (a safety leader resigning over broken culture days after three firings is objectively newsworthy) are strong confounders. Illustrative scores manual estimates. Requires Welch t-test plus Cohen d plus bootstrap CI on observed BI corpus for empirical validation. Axel Springer deal is parent-level licensing, not BI newsroom payment, and does not prove BI editorial influence.'
+      correlational_note: 'The deal-partner-hardness ordering is documented as correlation, not causation; the mechanism makes no causal claim about the licensing deal''s editorial effect.'
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict mechanism_refinement_not_a_discovery. no_analysis_json_update: true. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 50
+      ledger_note: 'Ledger holds at 50 - FORTY-EIGHTH member-claim form present in profiles/financial-times.yaml (m952); FORTY-NINTH member-claim form present in profiles/careers/journalists.yaml (m956, 3 occurrences); FIFTIETH member-claim form present in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form absent repo-wide. This run lands no member (temporal replication per #1143).'
+      connects_to:
+      - 399
+      - 871
+      - 952
+      - 799
+      - 955
+      novelty: 'FIRST dedicated Type A mechanism on BI''s Oct-2 Robinson resignation exclusive; zero test_type_a_1227 files on disk pre-commit (glob); no "Type A #1227" in git log pre-commit (--grep); max numeric mechanism_id 966 pre-commit; zero numeric/underscore/dash nine-six-seven mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1227 in key, no 967 substring); 4/4 source URLs zero-hit repo-wide pre-commit (git grep -F); "David Robinson resigns" zero-hit repo-wide pre-commit; no #1227 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 66461/1551 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Delegated research (subagent scout, 14 browser.search query sets across 8 candidate pairs; SELECTED BI x OpenAI, REJECTED Guardian/Verge/FT/Bloomberg/WaPo/Forbes x Anthropic and Verge x Apple as saturated or thin) + 1 main-run browser.search verification set (Business Insider David Robinson resigns OpenAI Stephen Council - confirmed the BI-first-reported attribution across 4 independent relays, verified essay quotes); 0 browser.open per #503 (excerpt-bounded; BI paywalled). Pre-commit novelty greps per #715 listed in the novelty field.'
+      rotation_transparency: 'Iteration #1227 Type A is the THIRD leg of the 1225-1229 window (D #1225 -> E #1226 -> A #1227 -> B #1228 -> C #1229 per #565 anchor + rotation guard; #1225 Type D main 1ada50f9/anchor d69b3b53/doc-sync 3f0d4d84/log-hash 9b61c858, #1226 Type E main 0b151dc1/anchor 6d030566/doc-sync 6ac702a5/log-hash d28923b1 + correctives 7bc53501/259e2ee7, each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1227 files on disk (glob); no "Type A #1227" in git log (--grep); max numeric mechanism_id 966 pre-commit; zero numeric/underscore/dash 967 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 4 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); no #1227 row in README/ARCHITECTURE test tables pre-commit; README stats 66461/1551 pre-commit; fortieth direction-claim form absent repo-wide pre-commit (this run does NOT land it); thirty-fifth + thirty-sixth + thirty-seventh + thirty-eighth + thirty-ninth directions present. Guard lifecycle: #1226''s max-966 + zero-967 + no-Type-A-#1227-in-git-log pins flip BY DESIGN at this run (recorded, not repaired); #1226''s fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact, fifty-first-absent guards stay green (verified via supersession pins in the #1227 test file). This run lands mechanism 967 as a CONFIRMING EXTENSION (no new direction, no new member). Next window leg #1228 Type B.'
+      concurrency: 'In-flight during this run: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) - all untouched; targeted staging by explicit path only. Do NOT touch #1024 m846 (profiles/competitor-entities.yaml) - Ray''s revert/leave/rebuild decision pending.'
+      background_suite_status: 'Per #795: this run only CHECKS the #1225-launched background suite (goal hidden_files type_d_1225_full_suite.log); CHECKED ONLY per #795 - this run neither re-launches, kills, nor writes to it; no verdict declared; its verdict and tombstone belong to #1230 (next Type D).'
+      in_flight: '#899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846.'
+      source_urls:
+      - url: 'https://biztoc.com/x/4b14a2ecae51e639'
+        novel: true
+        accessed: '2026-10-05'
+        note: 'biztoc techmeme-attribution: "David Robinson, who worked on OpenAI''s Safety Systems team and had previously led policy planning, left OpenAI last week (Stephen Council/Business Insider)"; techmeme 2026-10-02 23:58:16'
+      - url: 'https://startupfortune.com/openai-safety-leader-david-robinson-resigns-days-after-three-researchers-were-fired/'
+        novel: true
+        accessed: '2026-10-05'
+        note: '"according to Business Insider''s Stephen Council, who first reported the departure"'
+      - url: 'https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/'
+        novel: true
+        accessed: '2026-10-05'
+        note: '"Robinson''s departure was first reported by Business Insider"; essay quotes: "guarantees periodic failures", "The smarter the industry lets models grow while these problems remain unsolved, the more dangerous our situation becomes"'
+      - url: 'https://www.progressiverobot.com/2026/10/03/openai-safety-culture-david-robinson-quits-atlantic-essay/'
+        novel: true
+        accessed: '2026-10-05'
+        note: '"Business Insider''s confirmation came the same day"'
+      browser_opens: 0
+      tone_scored: 'MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule'
+      engine_run: false
+      is_significant: false
+      artifact_grade: false
+      yaml_parse_clean: true
+      ascii_only: true
   anthropic:
     financial_tie: "none"
     estimated_value: "$0"
