@@ -27698,3 +27698,117 @@ allison_johnson_type_b:
       - https://muckrack.com/allison-johnson-4
       - https://aifuture.org/news/openai-s-dot-agent-is-enterprise-software-that-can-also-order-your-dinner-15015
       - https://remotestake.com/news/openai-s-dot-agent-is-enterprise-software-that-can-also-order-your-dinner-84461
+jess_weatherbed_type_b:
+  name: Jess Weatherbed
+  publication: the-verge
+  mechanism_ids: [968]
+  notes: 'Type B #1228 (Oct 5 2026): mechanism 968 BOUNDARY/CONTROL case - FIRST dedicated Type B same-day symmetric-adversarial pair on Jess Weatherbed in journalists.yaml (zero dedicated type_b key pre-commit, per the #643 convention; prior Weatherbed mechanisms m56/m462 are different pegs). The Verge news writer applies the adversarial register to Meta Muse (-0.55 MANUAL ILLUSTRATIVE) and to Anthropic (-0.50) 88 minutes apart on Sep 29 2026; illustrative delta (Anthropic minus Meta) +0.05 near-null. NOT a falsification-family member (Anthropic is not the deal partner; Weatherbed''s OpenAI arm untested); ledger HOLDS at 50. Extends the m956/m959 journalist-contingent refinement: at the same outlet under the same Vox x OpenAI deal, Johnson (m965) confirms the payer-softening direction while Weatherbed applies symmetric adversarial to Meta and the leading non-deal lab.'
+  competitor_coverage:
+    type_b_1228_jess_weatherbed_verge_meta_muse_address_vs_anthropic_42bn_loss_oct05_3am:
+      block_key: type_b_1228_jess_weatherbed_verge_meta_muse_address_vs_anthropic_42bn_loss_oct05_3am
+      mechanism_id: 968
+      iteration: 1228
+      type: B
+      date: '2026-10-05 03:00 PDT'
+      test_file: tests/test_type_b_1228_jess_weatherbed_verge_meta_muse_address_vs_anthropic_42bn_loss_oct05_3am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Jess Weatherbed
+      publication: the-verge
+      window: '1225-1229 window FOURTH leg (D #1225 -> E #1226 -> A #1227 -> B #1228 -> C #1229)'
+      design: 'Type B journalist cross-entity tracking: Jess Weatherbed (The Verge news writer, creative industries / computing / internet culture beat) on Meta Muse AI agent vs Anthropic IPO-leak financials, 88 minutes apart on Sep 29 2026, same solo byline, same adversarial-news genre. The Vox Media x OpenAI strategic content and product partnership (May 29 2024, mechanism 494, owner-level tie to The Verge) makes OpenAI the deal partner; Meta is the non-deal entity (Meta pays Vox $0). Anthropic is NEITHER the deal partner NOR a known Vox payer, which bounds this pair as a boundary/control case rather than a direct deal-partner test. The naive outlet-uniform reading predicts a softened register for AI labs vs Meta; the journalist-contingent refinement (m956/m959) predicts reporter-level variance. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Meta''s Muse AI sent a YouTuber''s address to a stranger'
+        date: '2026-09-29'
+        outlet: the-verge
+        author_byline: 'Jess Weatherbed'
+        entity: meta
+        url: https://wesearch.press/s/metas-muse-ai-sent-a-youtubers-address-to-a-stranger-80434392
+        url_note: 'WeSearch record recovered verbatim from this run''s Full-URL listing (search index 4): "Jess Weatherbed - Sep 29, 2026 - 2:08 PM UTC - 4 min read", The Verge attribution; theverge.com canonical not in this run''s Full-URL listings, so not landed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via four search-indexed relay mirrors: technewsvision.co.uk, canadian-reviews.ca, dailyguardian.ca, wilsonsmedia.com; byline attested via WeSearch author metadata + thetechstreetnow.com author-bio block ("Jess Weatherbed is a news writer focused on creative industries, computing, and internet culture"), 0 browser.open)'
+        key_quotes:
+        - 'Privacy-failure lede (verbatim): "Tech YouTuber Matt Robb says that Muse gave out his home address to a total stranger this weekend, after authorizing the bot to handle his Facebook Marketplace account."'
+        - 'Deficit frame (verbatim): "That''s despite Meta placing great emphasis on the security features of Muse when it launched the personal AI agent earlier this month as it tries to catch up with competing AI providers like Anthropic and OpenAI."'
+        - 'Victim voice (verbatim): "Just found out it told people my address and agreed a lowball price and then they showed up without it even telling me until late tonight that it messed up," Robb said on Threads, providing a screenshot of Muse''s admission.'
+        - 'Accountability close (verbatim): "It seems that Robb also never explicitly forbade the bot from sharing the information he''d provided it with either. Still, it''s an oversight for Meta if Muse didn''t automatically register that a home address is sensitive information that shouldn''t be freely handed out without express permission."'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+        tone_reading: 'Adversarial privacy-failure news; victim-voice lede, explicit deficit frame positioning Meta as catching up to Anthropic and OpenAI, accountability close assigning the oversight to Meta. The deal partner''s category is invoked as the standard Meta fails to meet.'
+        status: 'NEW this run (headline + wesearch URL zero-hit repo-wide pre-commit)'
+      anthropic_arm:
+        title: 'Anthropic made $4.6 billion in revenue last year, but lost $42 billion.'
+        date: '2026-09-29'
+        outlet: the-verge
+        author_byline: 'Jess Weatherbed'
+        entity: anthropic
+        url: http://muckrack.com/jess-weatherbed/articles
+        url_note: 'Byline-attestation source ONLY (pre-existing corpus URL, career-profile block): the author''s own Muck Rack profile lists the piece "Posted Sep 29, 2026 at 12:40 PM UTC" with verbatim excerpt; the canonical theverge.com URL did not surface in this run''s Full-URL listings, so not landed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via the Muck Rack author-profile excerpt surfaced in this run''s search; byline attested via the profile listing itself; bounded byline-certainty stated as confounder - the canonical URL is unpinned)'
+        key_quotes:
+        - 'Loss-multiplier headline (verbatim): "Anthropic made $4.6 billion in revenue last year, but lost $42 billion."'
+        - 'Leak attribution (verbatim): "That''s according to a leaked IPO filing seen by Reuters, with $8.06 billion specifically highlighted in operating losses for 2025, more than double the $2.98 billion it reported in 2024."'
+        - 'Editorial closer (verbatim): "The AI startup spent $7.33 billion on compute and infrastructure in 2025, and plans to spend a further $518 billion over the coming years, so profitability seems a long, long way off for Anthropic."'
+        tone_MANUAL_ILLUSTRATIVE: -0.50
+        tone_reading: 'Adversarial-leaning financial news; the loss figure leads the revenue figure in the headline, operating-loss doubling is foregrounded, and the piece closes with an editorial profitability verdict ("a long, long way off").'
+        status: 'NEW this run (headline zero-hit repo-wide pre-commit; URL is a pre-existing corpus byline-attestation source)'
+      corroborating_arm:
+        title: 'Anthropic warns of ''catastrophic'' AI risks in its own IPO filing'
+        date: '2026-09-29'
+        outlet: the-verge
+        author_byline: 'Jess Weatherbed'
+        entity: anthropic
+        url: https://techseen.com/story/anthropic-s-ipo-filing-shows-soaring-revenue-mounting-costs-and-existe-6ce54d1
+        url_note: 'Techseen story record recovered verbatim from this run''s Full-URL listing (search index 1): "Attributed report: The Verge" with the Verge piece''s verbatim lede; theverge.com canonical not surfaced, so not landed per policy'
+        key_quotes:
+        - 'Risk-framing lede (verbatim, via relay): "As Anthropic gears up for its greatly anticipated public debut, a preview of the company''s IPO filing reportedly details its mounting losses, leadership proposals to retain power, and how its AI development plans could "further increase the risk that our models cause harm.""'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        tone_reading: 'Second same-day adversarial Anthropic piece on the same profile; corroborates within-byline register constancy on Sep 29 (two hard Anthropic pieces bookending the Meta piece).'
+        status: 'CORROBORATING this run (headline zero-hit repo-wide pre-commit; not a separate mechanism)'
+      scorer:
+        meta_tone: -0.55
+        anthropic_tone: -0.50
+        illustrative_delta_anthropic_minus_meta: 0.05
+        delta_calc: '(-0.50) - (-0.55) = +0.05'
+        delta_reading: 'Near-null symmetric adversarial: the same reporter applies the hard register to Meta (privacy failure, -0.55) and to Anthropic (loss multiplier, -0.50) 88 minutes apart. No register softness is extended to the AI lab; if anything the Meta arm is marginally harder. The uniform outlet-level softening prediction finds no support in this byline.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        engine_run: false
+        statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tones hand-assigned, n=1 per arm; p_value/cohens_d/ci_95 NOT_CALCULATED; engine NOT run; is_significant false; NOT artifact-grade; no_analysis_json_update true; verdict boundary_control_case (ledger holds at 50), not an empirical discovery.'
+      financial_context: 'Vox Media x OpenAI strategic content and product partnership (May 29 2024, mechanism 494, competitor-entities.yaml): content + archive licensed for training, product collaboration, ad-tech (Forte) collaboration; amount/terms undisclosed. Owner-level tie to The Verge. Vox Media is OpenAI-only among AI-lab payers (corpus line at competitor-entities.yaml:2798: "single-deal owners (Conde Nast, Atlantic, Vox Media, Guardian - OpenAI-only)"). Vox Media-Meta: no known content-licensing relationship (bounded absence). Meta pays Vox $0. Anthropic-Vox: no known content-licensing relationship (bounded absence). Payer asymmetry separates OpenAI (deal partner) from Meta and Anthropic (both non-deal entities) - but Anthropic is NOT the deal partner, so this pair cannot test the deal-partner prediction directly; it tests the outlet-uniformity auxiliary. Correlation is not causation.'
+      finding: 'BOUNDARY/CONTROL CASE at the journalist level: Jess Weatherbed (The Verge) applies symmetric adversarial register to Meta Muse (-0.55: privacy-failure news, victim voice, "catch up with competing AI providers" deficit frame) and Anthropic (-0.50: $42B-loss-multiplier financial news, "a long, long way off" editorial closer) on the same day, 88 minutes apart; illustrative delta +0.05 near-null. A same-day companion piece ("Anthropic warns of ''catastrophic'' AI risks in its own IPO filing", -0.45) corroborates within-byline register constancy. The in-outlet contrast with m965 (Allison Johnson, same outlet, same deal: Meta -0.20 vs OpenAI +0.25, confirming the payer-softening direction) is the analytic payload: under the identical Vox x OpenAI deal, one byline confirms and another shows symmetric adversarial. The deal effect is journalist-contingent, not outlet-uniform. NOT a falsification-family member (Anthropic is not the deal partner; Weatherbed''s OpenAI arm is untested - her OpenAI Dots piece was rejected as circular per the #1177 research note); ledger HOLDS at 50. No analysis.json update warranted.'
+      confounders:
+        strong:
+        - 'Comparator-is-not-the-deal-partner: Anthropic holds no known Vox deal, so the strict deal-partner prediction (softer OpenAI coverage) is untested in this pair. The mechanism tests outlet-uniformity, not the payer-softening direction itself. A Weatherbed OpenAI arm would be needed for the direct test.'
+        - 'Peg asymmetry: the Meta arm is a privacy-incident news peg (victim voice, address leak) while the Anthropic arm is a leaked-financials news peg (Reuters-sourced numbers). Both are adversarial news, but the incident peg carries inherent victim-sympathy weight the financials peg does not.'
+        moderate:
+        - 'Anthropic-arm byline certainty: attested via the author''s Muck Rack profile listing only; the canonical theverge.com URL did not surface in this run''s Full-URL listings. The Meta arm carries stronger byline attestation (WeSearch author metadata + author-bio block + four mirrors).'
+        - 'Evidence tier: both arms excerpt-bounded (0 browser.open per #503). Bounded absence of softer language in the excerpts is not proven absence in the full pieces.'
+        weak:
+        - 'n=1 per arm; single-reporter design; 88-minute arm gap is a strength (same news cycle), but same-day filing pressure may compress register variance.'
+      counter_evidence:
+      - 'The corpus holds m965 (Allison Johnson, The Verge, Type B #1223): the SAME outlet''s reporter applied the enterprise-competent register to OpenAI Dots (+0.25, deal partner) vs the playful-diminutive register to Meta Muse (-0.20), confirming the payer-softening direction. m968 does not overturn m965; it bounds the direction to the byline level, consistent with the m956/m959 journalist-contingent refinement.'
+      - 'Weatherbed''s Meta arm names the deal partner''s category favorably ("competing AI providers like Anthropic and OpenAI") as the standard Meta fails to meet - consistent with deal-adjacent framing, but as a deficit frame on Meta rather than softness on the partner.'
+      connects_to: [494, 952, 956, 959, 965, 462, 56]
+      verdict: 'boundary_control_case_journalist_contingent_not_a_discovery'
+      falsification_family: 'NOT a falsification-family member. Boundary/control: Meta Muse (-0.55) vs Anthropic (-0.50), illustrative delta +0.05 (Anthropic minus Meta), near-null symmetric adversarial from the same byline on the same day. Anthropic is not the deal partner, so the strict deal-partner prediction is untested; the in-outlet contrast with m965 (same outlet, same deal, confirming direction) extends the journalist-contingent refinement (m956/m959). Forty-eighth (m952), forty-ninth (m956), fiftieth (m959) member-claim forms intact in corpus; fifty-first member-claim form absent repo-wide. Ledger HOLDS at 50. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 50
+      ledger_note: 'Ledger HOLDS at 50 this run (m968 boundary/control case, no new member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. The ledger hold (50) is the corpus-level state change (none).'
+      research_method: 'Delegated research (subagent scout, ~18 browser.search query sets across 16 candidates; SELECTED Weatherbed as the sole survivor with a clean same-day Sep-29 cross-entity pair; REJECTED Caroline Haskins, Mitchell Clark, Umar Shakir, David Pierce, Lakshmi Varanasi, Dan Milmo, Hayden Field, Kylie Robison, Matt O''Brien, Thalia Beaty, Aaron Mok, Will Knight, Jake Kastrenakes, Stephen Council, Benedict Collins as saturated/peg-absent/out-of-window/beat-moved) + 4 main-run browser.search verification sets (Meta-arm byline/quote attestation via WeSearch record + thetechstreetnow author-bio block + 4 relay mirrors; Anthropic-arm byline/quote attestation via the author''s Muck Rack profile listing; companion-piece relay via techseen; exact-headline searches for both arms), 0 browser.open per #503. SELECTED: Jess Weatherbed (zero dedicated type_b key pre-commit; prior Weatherbed mechanisms m56/m462 are different pegs). Main-run corrected the scout''s corpus characterization (m56/m462 pre-exist, so not a "first look at the journalist" - the novelty is the same-day symmetric-adversarial pair) and rejected the scout''s lean toward a falsification-family claim (Anthropic is not the deal partner; boundary/control verdict). Pre-commit novelty greps: zero test_type_b_1228 files on disk (glob); no "Type B #1228" in git log; max numeric mechanism_id 967; zero numeric/underscore/dash nine-six-eight mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1228 in key, no 968 substring); 4/5 source URLs zero-hit repo-wide pre-commit (git grep -F; the muckrack profile URL is a pre-existing corpus URL cited as byline-attestation source only); both arm headlines zero-hit repo-wide pre-commit; no #1228 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 66552/1552 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B same-day symmetric-adversarial pair on Jess Weatherbed (m968); zero test_type_b_1228 files on disk pre-commit (glob); no "Type B #1228" in git log pre-commit (--grep); max numeric mechanism_id 967 pre-commit; zero numeric/underscore/dash nine-six-eight mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1228 in key, no 968 substring); 4/5 source URLs zero-hit repo-wide pre-commit (git grep -F; muckrack profile URL pre-existing, byline-attestation only); both headlines zero-hit repo-wide pre-commit; no #1228 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 66552/1552 pre-commit. BOUNDARY/CONTROL case (not a falsification-family member, ledger holds at 50); fifty-first member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit; thirty-fifth (m915) + thirty-sixth (m933) + thirty-seventh (m942) + thirty-eighth (m945) + thirty-ninth (m948) directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1225-launched full suite (goal hidden_files type_d_1225_full_suite.log) observed at this run''s check (7104 bytes, mtime Oct 5 2026 03:01 PDT, ~9% progress, pytest processes alive - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1230 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m968 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://wesearch.press/s/metas-muse-ai-sent-a-youtubers-address-to-a-stranger-80434392
+      - https://thetechstreetnow.com/metas-muse-ai-sent-a-youtubers-address-to-a-stranger/
+      - https://technewsvision.co.uk/metas-muse-ai-sent-a-youtubers-address-to-a-stranger/
+      - http://muckrack.com/jess-weatherbed/articles
+      - https://techseen.com/story/anthropic-s-ipo-filing-shows-soaring-revenue-mounting-costs-and-existe-6ce54d1
