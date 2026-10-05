@@ -423,11 +423,22 @@ class TestMechanismNovelty1233:
         assert "NEW" in b["corroborating_arm"]["status"]
 
     def test_no_type_b_1233_in_git_log_pin(self):
-        # Pre-commit form: no prior run committed this iteration.
-        # Re-pinned to the post-commit own-set form in the log-hash
-        # followup per #721 (the #1191-class self-trip).
-        out = _git("log", "--oneline", "--grep=Type B #1233").stdout
-        assert out.strip() == "", out.strip()
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the log-hash followup per #721): the ONLY matches are this
+        # run's own commits, whose messages carry the run's own
+        # iteration subject (the followup commits match the grep, so
+        # they join the own set; HEAD is admitted for any same-run
+        # followup). The pin's substance - no PRIOR run committed this
+        # run's iteration - holds.
+        out = _git("log", "--format=%H %s", "--grep=Type B #1233").stdout
+        own = {
+            "882a1284", "88329e37", "0ecb502a",
+        }
+        head = _git("rev-parse", "HEAD").stdout.strip()[:8]
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own or line.split()[0][:8] == head, line
 
 
 # ---------------------------------------------------------------------------

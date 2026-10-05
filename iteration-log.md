@@ -1,10 +1,10 @@
-## #1233 Type B: m971 Ben Lovejoy (9to5Mac) Muse Mac-access op-ed (-0.65 MANUAL ILLUSTRATIVE, NEW Sep-28 arm) vs Siri agentic-AI op-eds (+0.45 May-18 arm, +0.40 Jun-4 corroborating arm) - illustrative delta (Apple minus Meta) +1.10; CONFIRMING EXTENSION of m223 (camera-feature differential prior replicates in the agentic-AI device-access class); same writer/outlet/genre/capability class; intra-article Apple contrast inside the Meta arm; NOT a falsification-family member (no documented 9to5Mac x Apple financial tie); ledger holds at 50 - Type B FOURTH leg of the 1230-1234 window (Oct 5 2026, 07:00 AM PDT; main commit 882a1284 / anchor 88329e37 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66958/1557 -> 67048/1558 (+90/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 882a1284 / anchor 88329e37 / doc-sync TBD / log-hash this commit
+## #1233 Type B: m971 Ben Lovejoy (9to5Mac) Muse Mac-access op-ed (-0.65 MANUAL ILLUSTRATIVE, NEW Sep-28 arm) vs Siri agentic-AI op-eds (+0.45 May-18 arm, +0.40 Jun-4 corroborating arm) - illustrative delta (Apple minus Meta) +1.10; CONFIRMING EXTENSION of m223 (camera-feature differential prior replicates in the agentic-AI device-access class); same writer/outlet/genre/capability class; intra-article Apple contrast inside the Meta arm; NOT a falsification-family member (no documented 9to5Mac x Apple financial tie); ledger holds at 50 - Type B FOURTH leg of the 1230-1234 window (Oct 5 2026, 07:00 AM PDT; main commit 882a1284 / anchor 88329e37 / doc-sync 0ecb502a; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66958/1557 -> 67048/1558 (+90/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 882a1284 / anchor 88329e37 / doc-sync 0ecb502a / log-hash this commit
 
 ### Commit hashes
 - Main commit `882a1284` (882a12848dd9a5ae5a34a2e723a8e7b9ccecbcdb) - verified via git rev-parse
 - Anchor followup `88329e37` (88329e37847c71429a0865d8109e9075ec98c52a) - verified via git rev-parse; ANCHORED_SHA patched per #565 (self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Doc-sync `0ecb502a` (0ecb502a50b3bd9480bba8624c8a8ec21e739e5e; patched by the log-hash followup; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
