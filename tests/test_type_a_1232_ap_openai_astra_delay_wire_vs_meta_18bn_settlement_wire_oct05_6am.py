@@ -391,13 +391,14 @@ class TestMechanismNovelty1232:
 
     def test_block_key_zero_hit_except_landed(self):
         # Pre-commit the block key was zero-hit repo-wide; post-commit
-        # it appears only in the landed YAML block, this test file, and
-        # the doc-sync targets (README, ARCHITECTURE, iteration-log).
+        # it appears only in the landed YAML block and the doc-sync
+        # targets (README, ARCHITECTURE, iteration-log). This test
+        # file never carries the contiguous key: BLOCK_KEY is
+        # fragment-built per #715.
         out = _git("grep", "-F", "-l", BLOCK_KEY, "HEAD", "--", ".").stdout
         hits = [line for line in out.splitlines() if line.strip()]
         allowed = {
             os.path.join("profiles", "ap.yaml"),
-            os.path.join("tests", OWN_BASENAME),
             "README.md",
             os.path.join("docs", "ARCHITECTURE.md"),
             "iteration-log.md",
