@@ -45838,3 +45838,29 @@ Push status (this run, Oct 4 2026 ~11:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1232 Type A: FIRST AP x OpenAI mechanism (m970) - AP Sep-28/29 Astra-delay wire (-0.10 MANUAL ILLUSTRATIVE, NEW arm, relay-attested via NPR affiliates) vs AP Aug-26 Meta $18bn settlement wire (-0.45, NEW arm, relay-attested); illustrative delta (OpenAI minus Meta) +0.35 runs WITH payer-softening but cross-peg + wire-genre confounded; AP is the Jul-13-2023 OpenAI archive-licensing counterparty (direct payer-register test); mechanism DOCUMENTATION, NOT a uniform-prediction test, NOT a falsification-family member; ledger holds at 50) - Type A THIRD leg of the 1230-1234 window (Oct 5 2026, 06:00 AM PDT; main commit 9f74c6ee / anchor bb211ca8 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 66895/1556 -> 66958/1557 (+63/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Research method
+- Delegated scout (17 browser.search query sets across 11 candidate publication x competitor pairs): SELECTED AP x OpenAI (first Type A on AP in git history; zero prior AP profile; only 2 aggregate-corpus "associated press" mentions); REJECTED Bloomberg x OpenAI (Wire vs Paywalls m921, Sep 25-26), The Verge x OpenAI (Frontiers of Learning m955), NYT x OpenAI (Muse paywall m940), The Atlantic x Anthropic, WaPo x OpenAI (failed verbatim-URL discipline), Forbes x OpenAI (peg-absent), CNBC x OpenAI (near-miss, no citable URLs), WSJ x Anthropic (thin/out-of-window).
+- 2 main-run browser.search verification sets: (a) AP x OpenAI Jul-13-2023 archive-licensing deal confirmed (Reuters 2023-07-13; pressgazette AI-deals roundup, in-corpus deal source, re-surface); (b) AP Aug-26-2026 Meta $18bn teen-harm settlement wire confirmed (ftimes carrier + MTSU First Amendment carrier, OAKLAND, Calif. (AP) Aug-26 dateline). 0 browser.open per #503 (excerpt-bounded, relay attestation, no canonical apnews.com URLs constructed).
+- Both arms relay-attested via verbatim AP wire carriers: NPR affiliates wextradio.org (Sep 29) + kcsm.org (Sep 28) for the Astra-delay wire; firstamendment.mtsu.edu + ftimes.com AP Business SummaryBrief for the settlement wire. 5 of 6 source URLs zero-hit repo-wide pre-commit (pressgazette roundup in-corpus, re-surface).
+
+### Findings
+- m970 (profiles/ap.yaml, NEW file this run; competitor_relationships.openai sub-key, 4-space indent): AP's own wire register on the shared Sep-28/29 Astra safety peg is neutral (-0.10 MANUAL ILLUSTRATIVE: "security concerns voiced by its researchers" wrapped in OpenAI's own deceleration frame, no adversarial vocabulary, no named critic) while the same wire service's Meta settlement wire at the Aug-26 peg is settlement-factual with adversarial substance (-0.45: "landmark legal settlement", "$18 billion", "teen social media addiction"). Illustrative delta (OpenAI minus Meta) +0.35 runs WITH the naive payer-softening prediction but is cross-peg (model-delay wire vs settlement wire) and wire-genre-confounded, so the gap tracks peg valence and genre, not editorial modulation.
+- Verdict: mechanism DOCUMENTATION of a new publication line, NOT a uniform-prediction test, NOT a falsification-family member (the standing bar requires a same-peg or near-peg hardness/softness adjudication, e.g. m952's FT originals or m956's symmetric-adversarial pair). Ledger holds at 50. Statistical discipline: MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run, not significant, NOT artifact-grade, no analysis.json update).
+
+### Pre-commit novelty greps
+- Zero test_type_a_1232 files on disk (glob); no "Type A #1232" in git log (--grep).
+- Max numeric mechanism_id 969; zero numeric/underscore/dash 970 mechanism key forms repo-wide (the underscore sweep excludes this run's own test file, sweep carrier per #715).
+- Block key type_a_1232_ap_openai_astra_delay_wire_vs_meta_18bn_settlement_wire zero-hit repo-wide; no #1232 row in README/ARCHITECTURE test tables; README stats 66895/1556 pre-commit.
+- Fiftieth member intact (m959 x3 in careers/journalists.yaml), fifty-first absent repo-wide, fortieth direction absent in profiles/, forty-eighth/forty-ninth intact - all GREEN pre-commit; #1231's max-969, zero-970, and no-Type-A-#1232-in-git-log pins flip BY DESIGN at the main commit (the #1191-class self-trip, pinned post-commit by TestStalenessPins1232 expecting "2 failed, 9 passed").
+
+### Rotation transparency
+- THIRD leg of the 1230-1234 window (D #1230 -> E #1231 -> A #1232 -> B #1233 -> C #1234 per #565 anchor + rotation guard). Next: #1233 Type B, then #1234 Type C closes the window.
+- Type A lands one mechanism (m970); the Type E predecessor added none.
+- The #795 background suite (type_d_1230_full_suite.log, #1230-launched, observed alive at check) is CHECKED ONLY this run - neither re-launched, killed, nor written to; verdict belongs to #1235 (next Type D). This run launches no background suite.
+- 4 in-gate defects found and fixed: _git_grep_tracked_source missing the HEAD: prefix strip on `git grep ... HEAD` output (defeated the 48/49 intact pins).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
