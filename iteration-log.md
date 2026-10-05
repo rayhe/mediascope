@@ -1,10 +1,10 @@
-## #1236 Type E: podcast sentiment 170th verification cycle (GF episode 503 SURFACED - FIRST appearance across all cycles, thirty-seventh Type E verification since the Sep 28 11:00am 502 release, ~167 hours after publication; 502 hold ENDS; 7 GF rows = 7 re-surfaces, ZERO new keys, GF pure-re-surface streak ADVANCES to nine; EHE 56-day hold, 7 re-surfaces, ZERO new keys; AS 170th no-match, 6 circular own-repo commit URLs rejected, dec56140 absence streak ADVANCES to three, Tracked Sources 169->170; press 7 re-surfaces ZERO new keys, press streak ADVANCES to three, frontier HOLDS at Oct 3; monitoring-only per the Aug 28 2026 standing rule, NOT artifact-grade; ledger holds at 50) - Type E SECOND leg of the 1235-1239 window (Oct 5 2026, 10:00 AM PDT; main commit TBD / anchor TBD / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67234/1560 -> 67311/1561 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main TBD / anchor TBD / doc-sync TBD / log-hash this commit
+## #1236 Type E: podcast sentiment 170th verification cycle (GF episode 503 SURFACED - FIRST appearance across all cycles, thirty-seventh Type E verification since the Sep 28 11:00am 502 release, ~167 hours after publication; 502 hold ENDS; 7 GF rows = 7 re-surfaces, ZERO new keys, GF pure-re-surface streak ADVANCES to nine; EHE 56-day hold, 7 re-surfaces, ZERO new keys; AS 170th no-match, 6 circular own-repo commit URLs rejected, dec56140 absence streak ADVANCES to three, Tracked Sources 169->170; press 7 re-surfaces ZERO new keys, press streak ADVANCES to three, frontier HOLDS at Oct 3; monitoring-only per the Aug 28 2026 standing rule, NOT artifact-grade; ledger holds at 50) - Type E SECOND leg of the 1235-1239 window (Oct 5 2026, 10:00 AM PDT; main commit a403518b / anchor 19ae4fc2 / doc-sync d1350466; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67234/1560 -> 67311/1561 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main a403518b / anchor 19ae4fc2 / doc-sync d1350466 / log-hash this commit
 
 ### Commit hashes
-- Main commit `TBD` (TBD) - verified via git rev-parse
-- Anchor followup `TBD` (TBD; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (TBD; README 67234/1560 -> 67311/1561; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Main commit `a403518b` (a403518ba58ee33103d69c9227ff6dee994afacd) - verified via git rev-parse
+- Anchor followup `19ae4fc2` (19ae4fc206897e19b449e2ee769f92068a5f031c; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `d1350466` (d13504666efaa91ada3a4edf1da6d6caf08516f7; README 67234/1560 -> 67311/1561; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_e_1236_in_git_log_pin to the own-set form
 
 ### Rotation transparency
