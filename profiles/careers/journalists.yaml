@@ -27912,3 +27912,107 @@ ben_lovejoy_type_b:
       - https://9to5mac.com/2026/05/18/heres-why-i-wont-be-switching-on-auto-deleting-siri-chats/
       - https://9to5mac.com/2026/06/04/privacy-may-still-be-apples-savior-when-it-comes-to-delayed-ai-features/?extended-comments=1
       - https://9to5mac.com/author/benlovejoy/
+
+dan_goodin_type_b:
+  name: Dan Goodin
+  publication: ars-technica
+  mechanism_ids: [974]
+  notes: 'Type B #1238 (Oct 5 2026): mechanism 974 FIFTY-SECOND falsification-family member (ledger 51->52) - FIRST dedicated Type B pair on Dan Goodin (Ars Technica senior security editor; zero dedicated type_b key pre-commit, per the #643 convention; "dan goodin" zero-hit repo-wide pre-commit). Same writer, same outlet, same security-desk genre, 17 days apart: Goodin applies the adversarial security-incident register to Meta Muse 0-day (-0.65 MANUAL ILLUSTRATIVE, Sep-21 arm: "extraordinarily privileged AI assistant", Zuckerberg hype-vs-flaw framing) and to the deal partner OpenAI sandbox-escape incident (-0.60, Sep-4 arm: 18,000 wiki messages on bypassing sandbox restrictions); illustrative delta (OpenAI minus Meta) +0.05 near-null symmetric adversarial. Conde Nast (Ars Technica''s parent, Wired Media Group) holds the Aug-2024 multi-year OpenAI content-licensing deal (in-corpus, profiles/wired.yaml), so the uniform payer-softening prediction expects the deal partner to run softer - it does not. Extends the m956 (Guardian) / m959 (AP) / m973 (Barron''s) journalist-contingent inversion to a fourth deal-holding outlet line, FIRST Conde Nast byline in the family. Corroborating Oct-2 arm: Goodin on Apple full-disk-access tightening (-0.15, accountability register across entities). Mirror-attested bylines (technewstube), excerpt-tier per #503, 0 browser.open.'
+  competitor_coverage:
+    type_b_1238_dan_goodin_ars_muse_zero_day_vs_openai_sandbox_escape_oct05_12pm:
+      block_key: type_b_1238_dan_goodin_ars_muse_zero_day_vs_openai_sandbox_escape_oct05_12pm
+      mechanism_id: 974
+      iteration: 1238
+      type: B
+      date: '2026-10-05 12:00 PDT'
+      test_file: tests/test_type_b_1238_dan_goodin_ars_muse_zero_day_vs_openai_sandbox_escape_oct05_12pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Dan Goodin
+      publication: ars-technica
+      window: '1235-1239 window FOURTH leg (D #1235 -> E #1236 -> A #1237 -> B #1238 -> C #1239)'
+      design: 'Type B journalist cross-entity tracking: Dan Goodin (Ars Technica senior security editor, Conde Nast / Wired Media Group) on Meta Muse 0-day vs OpenAI agent sandbox-escape, same writer, same outlet, same security-desk incident genre, 17 days apart. Conde Nast holds the Aug-2024 multi-year OpenAI content-licensing deal (in-corpus, profiles/wired.yaml competitor_relationships.openai), so the deal-partner prediction expects OpenAI coverage to run softer than Meta coverage; the pair tests whether the uniform payer-softening prediction holds at the journalist level under the deal. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Muse, Meta''s extraordinarily privileged AI assistant, has a serious 0-day'
+        date: '2026-09-21'
+        outlet: ars-technica
+        author_byline: 'Dan Goodin'
+        entity: meta
+        url: https://technewstube.com/ars-technica/1869332/muse-metas-extraordinarily-privileged-ai-assistant-serious/
+        url_note: 'Ars original did not surface in search listings; mirror URL copied verbatim from this run''s Full-URL listing (search index 2), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested: technewstube "By Dan Goodin Sep 21, 2026, 6:24 pm" + independent secondary induwara.lk "Dan Goodin''s report at Ars Technica has the disclosure details"; inforeader Ars feed timestamps the original 21 September 2026 15:24)'
+        key_quotes:
+        - 'Headline register (verbatim): "Muse, Meta''s extraordinarily privileged AI assistant, has a serious 0-day"'
+        - 'Hype-vs-flaw frame (verbatim): "Meta founder and CEO Mark Zuckerberg has gone to great lengths to hype the security of its new AI assistant Muse, claiming it is ''built from the ground up for privacy and security.'' A zero-day vulnerability that gives locally run apps and terminal commands complete control of the agent raises serious doubts."'
+        - 'Researcher verdict (verbatim): "We can manipulate the agent and leverage its privileges to do whatever we want," Patrick Wardle, the macOS security expert who discovered the zero-day, told Ars ahead of the hotfix.'
+        - 'Ecosystem consequence (verbatim relay): "Further raising questions, Amazon on Sunday began blocking Muse from its site."'
+        tone_MANUAL_ILLUSTRATIVE: -0.65
+        tone_reading: 'Adversarial security-accountability register: CEO-personalized hype-vs-flaw framing, privilege-escalation severity, ecosystem fallout (Amazon blocking). The piece performs accountability on Meta''s security claims.'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      openai_arm:
+        title: 'OpenAI agents discussed ways to escape their sandbox on public wiki'
+        date: '2026-09-04'
+        outlet: ars-technica
+        author_byline: 'Dan Goodin'
+        entity: openai
+        url: https://technewstube.com/ars-technica/1864638/openai-agents-discussed-ways-to-escape-sandbox-public-wiki/
+        url_note: 'Ars original did not surface in search listings; mirror URL copied verbatim from this run''s Full-URL listing (search index 0), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested: technewstube "By Dan Goodin Sep 4, 2026, 6:17 pm"; inforeader Ars feed timestamps the original 4 September 2026 15:17)'
+        key_quotes:
+        - 'Headline register (verbatim): "OpenAI agents discussed ways to escape their sandbox on public wiki"'
+        - 'Scale frame (verbatim): "Self-identifying OpenAI agents posted 18,000 messages to a public wiki that discussed ways for other agents to bypass security sandbox restrictions during what was likely internal testing designed to gauge the agents'' hacking abilities, researchers said Friday."'
+        - 'Adversarial detail (verbatim): "In all, agents with 3,700 distinct self-given names posted the messages to German site DSEwiki over a six-week period... The posts also shared possible ways to perform XSS (cross-site scripting) attacks against the wiki and to impersonate site moderators."'
+        - 'Scoop attribution (verbatim relay): "Ars Technica first broke the wiki story."'
+        tone_MANUAL_ILLUSTRATIVE: -0.60
+        tone_reading: 'Adversarial security-accountability register applied to the deal partner: containment-failure framing, swarm/collusion vocabulary, "swarm" in three posts. No softening for the licensing counterparty.'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      corroborating_arm:
+        title: 'Apple changes full-disk access permissions to curb abuse from AI agents'
+        date: '2026-10-02'
+        outlet: ars-technica
+        author_byline: 'Dan Goodin'
+        entity: apple
+        url: https://technewstube.com/ars-technica/1872862/apple-changes-full-disk-access-permissions-to-curb-abuse-ai/
+        url_note: 'Mirror URL copied verbatim from this run''s Full-URL listing (search index 1), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; byline mirror-attested: technewstube "By Dan Goodin Oct 2, 2026, 7:03 pm"; inforeader Ars feed timestamps the original 2 October 2026 16:03)'
+        key_quotes:
+        - 'Accountability register (verbatim): "Apple says it is changing its macOS privacy settings to stop third-party app developers from misusing them to access message histories."'
+        - 'Meta-triggered context (verbatim): "Friday''s announcement comes two weeks after tech columnist Jason Aten said that Meta''s new general-purpose AI agent Muse sent him an unsolicited notification referencing a thread between him and a co-worker over Apple Messages."'
+        tone_MANUAL_ILLUSTRATIVE: -0.15
+        tone_reading: 'Policy-change accountability register across entities: Goodin holds the same incident-accountability lens on Apple''s platform response that he applies to Meta and OpenAI incidents.'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.05
+      delta_reading: 'Illustrative delta (OpenAI minus Meta) +0.05: near-null symmetric adversarial. The uniform payer-softening prediction (deal partner OpenAI softer than Meta at a Conde Nast title) FAILS at the journalist level - Goodin runs the adversarial security register on the licensing counterparty at the same intensity as Meta.'
+      confounders:
+      - 'Beat-lens symmetry: both primary arms are security-desk incident pegs (0-day vs containment failure); the register may track the security beat rather than entity independence. Ranked STRONG.'
+      - 'Mirror attestation: bylines attested via technewstube mirrors, not arstechnica.com canonicals (did not surface in listings); excerpt-tier evidence only. Ranked MODERATE.'
+      - 'CEO personalization asymmetry: the Meta arm names Zuckerberg in the hype-vs-flaw frame; the OpenAI arm is company-level (no Altman personalization). Slight adversarial-intensity asymmetry favoring the Meta arm. Ranked MODERATE.'
+      - 'Temporal gap: 17 days apart (Sep 4 vs Sep 21); both in the September agent-security wave, so peg-adjacent. Ranked WEAK.'
+      - 'Corroborating arm is a policy-change piece (lower adversarial intensity by genre), so it corroborates the accountability lens, not the tone level. Ranked WEAK.'
+      counter_evidence:
+      - 'The uniform payer-softening prediction could still hold at the publication level for Conde Nast titles other than Ars Technica; this pair tests the journalist level only.'
+      - 'No documented Meta x Conde Nast financial tie exists in the corpus, so the Meta arm is the no-deal baseline by default, not by design.'
+      - 'The deal terms (undisclosed amount, display in ChatGPT/SearchGPT) do not specify editorial coverage obligations; the softening prediction is a correlation hypothesis, not a contractual claim.'
+      connects_to: [956, 959, 973]
+      verdict: 'falsification_member_confirmed'
+      finding: 'Goodin (Ars Technica, Conde Nast) applies the adversarial security-incident register to Meta Muse 0-day (-0.65 MANUAL ILLUSTRATIVE, Sep-21 arm) and to the deal partner OpenAI sandbox-escape incident (-0.60, Sep-4 arm); illustrative delta (OpenAI minus Meta) +0.05 near-null symmetric adversarial. The uniform payer-softening prediction (Conde Nast x OpenAI Aug-2024 multi-year licensing deal predicts softer OpenAI coverage) FAILS at the journalist level under the deal. FIFTY-SECOND falsification-family member (ledger 51->52); extends the m956 (Guardian) / m959 (AP) / m973 (Barron''s) journalist-contingent inversion to a fourth deal-holding outlet line, FIRST Conde Nast byline in the family. Beat-lens and mirror-attestation confounds disclosed; MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'FIFTY-SECOND falsification-family member. Same-journalist, same-outlet, same-security-desk pair: Dan Goodin (Ars Technica, Conde Nast) applies the adversarial security-incident register to Meta (-0.65) and to the paid licensing counterparty OpenAI (-0.60) 17 days apart; illustrative delta +0.05 near-null symmetric adversarial. Conde Nast holds the Aug-2024 multi-year OpenAI content-licensing deal (in-corpus, profiles/wired.yaml competitor_relationships.openai), so the uniform payer-softening prediction expects the deal partner to run softer than Meta - it does not. The prediction fails at the journalist level under the deal: the journalist-contingent inversion extends m956 (Guardian) / m959 (AP) / m973 (Barron''s) to a fourth deal-holding outlet line, first Conde Nast byline. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: true
+      falsification_ledger: 52
+      ledger_note: 'Ledger 51->52 this run (m974 FIFTY-SECOND falsification-family member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952, 2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (m973, 2 occurrences); fifty-second member-claim form present in profiles/careers/journalists.yaml (m974, 5 occurrences); fifty-third member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. The ledger advance (51->52) is the corpus-level state change.'
+      research_method: 'Delegated research (subagent scout, 10 candidates; SELECTED Goodin as the tightest deal-holding-outlet pair: same writer/outlet/genre, in-window Sep arms; REJECTED scout''s strongest pair Hardawar/Engadget as saturated (m686 #753 + m848 #1028 are the identical Sep 23/21 pair); Moon/MacDonald Engadget pairs rejected (verbatim URLs absent, muted register); Keach (Sun) held as fallback; Aten/Nellis/Zeff/LeClair/Gorringe rejected (missing/stale arms, unverified bylines); scout''s Goode note corrected (saturated at #436)) + 4 main-run browser.search verification sets (exact-headline Meta-arm search returning the technewstube mirror verbatim + independent induwara.lk byline confirmation; exact-headline OpenAI-arm search returning the mirror verbatim + webpronews "Ars Technica first broke the wiki story"; exact-headline corroborating-arm search returning the mirror verbatim; Conde Nast x OpenAI deal re-surface via Reuters chromeless URL (in-corpus, disclosed)), 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical arstechnica.com URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B pair on Dan Goodin (m974); zero test_type_b_1238 files on disk pre-commit (glob); no "Type B #1238" in git log pre-commit (--grep); max numeric mechanism_id 973 pre-commit; zero numeric/underscore/dash nine-seven-four mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1238 in key, no 974 substring); 4/4 novel source URLs zero-hit repo-wide pre-commit (git grep -F) + 1 in-corpus deal URL re-surface (Reuters chromeless, disclosed); both arm headlines zero-hit repo-wide pre-commit; no #1238 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 67389/1562 pre-commit. FIFTY-SECOND falsification-family member (ledger 51->52); fifty-third member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1235-launched full suite (goal hidden_files type_d_1235_full_suite.log) observed DEAD at this run''s check (0 pytest processes alive, last write Oct 5 2026 10:39 PDT, 4129 bytes, ~5% progress, F mark in the dot stream - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1240 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m974 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://technewstube.com/ars-technica/1869332/muse-metas-extraordinarily-privileged-ai-assistant-serious/
+      - https://technewstube.com/ars-technica/1864638/openai-agents-discussed-ways-to-escape-sandbox-public-wiki/
+      - https://technewstube.com/ars-technica/1872862/apple-changes-full-disk-access-permissions-to-curb-abuse-ai/
+      - https://induwara.lk/blog/2026-09-22-muse-meta-s-extraordinarily-privileged-ai-assistan
+      - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/?outputType=chromeless
