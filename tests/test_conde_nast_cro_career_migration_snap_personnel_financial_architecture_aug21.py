@@ -233,11 +233,19 @@ class TestCareerMigrationAsymmetry(unittest.TestCase):
         self.assertGreater(len(pub_rel), 0)
 
     def test_snap_has_perplexity_chain(self):
-        """Snap has Perplexity financial chain to Condé Nast."""
+        """Snap-Perplexity chain documented as TERMINATED (Q1 2026).
+
+        The $400M Perplexity integration deal was amicably dissolved in
+        Q1 2026 before any revenue was recognized; the profile now
+        carries the chain as BROKEN rather than live. Repaired #1235:
+        the old assertion expected the live-chain key, which the
+        termination update retired.
+        """
         perplexity = self.snap.get('ai_partnerships', {}).get('perplexity', {})
-        self.assertIn('perplexity_publisher_chain', perplexity)
-        chain = perplexity.get('perplexity_publisher_chain', '')
-        self.assertIn('Condé Nast', chain)
+        self.assertEqual(perplexity.get('deal_status'), 'TERMINATED')
+        status = perplexity.get('perplexity_publisher_chain_status', '')
+        self.assertTrue(status.startswith('BROKEN'))
+        self.assertIn('Condé Nast', status)
 
     def test_cross_references_include_key_mechanisms(self):
         """Cross-references include mechanisms #8, #43, #133, #199."""
