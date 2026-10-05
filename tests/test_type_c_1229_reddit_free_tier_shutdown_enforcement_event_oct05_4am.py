@@ -90,9 +90,9 @@ ANCHORED_SHA = "26d317415e9b35713f16a3cc449ed501e876c094"  # patched per #565 in
 # COLLECTED_NEW_TESTS are patched to the post-sync-positive values after the
 # first collection run (README ratchets 66646/1553 -> 66646+N/1554 in the
 # doc-sync followup).
-README_TEST_COUNT = 66646  # patched post-first-run per #719 (66646+N)
-README_FILE_COUNT = 1553  # patched post-first-run per #719
-COLLECTED_NEW_TESTS = 0  # patched post-first-run per #719
+README_TEST_COUNT = 66719  # patched post-first-run per #719 (66646+73)
+README_FILE_COUNT = 1554  # patched post-first-run per #719
+COLLECTED_NEW_TESTS = 73  # patched post-first-run per #719
 
 # Forward guards for the next landing. MECH_NUM=969 is THIS run's landed
 # mechanism; NEXT_NUM=970 stays forward.
