@@ -1,10 +1,10 @@
-## #1235 Type D: m970/m971/m972 qualitative-discipline corpus-integrity verification + #1230 background-suite verdict (FORTY-FIRST consecutive death; tombstone ONE-HUNDRED-FIFTH -> ONE-HUNDRED-SIXTH) + recurring-failure triage (one real defect repaired: test_snap_has_perplexity_chain) + full suite re-launched - Type D FIRST and OPENING leg of the 1235-1239 window (Oct 5 2026, 09:00 AM PDT; main commit 933e69a7 / anchor 8ca2b606 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67131/1559 -> 67234/1560 (+103/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 933e69a7 / anchor 8ca2b606 / doc-sync TBD / log-hash this commit
+## #1235 Type D: m970/m971/m972 qualitative-discipline corpus-integrity verification + #1230 background-suite verdict (FORTY-FIRST consecutive death; tombstone ONE-HUNDRED-FIFTH -> ONE-HUNDRED-SIXTH) + recurring-failure triage (one real defect repaired: test_snap_has_perplexity_chain) + full suite re-launched - Type D FIRST and OPENING leg of the 1235-1239 window (Oct 5 2026, 09:00 AM PDT; main commit 933e69a7 / anchor 8ca2b606 / doc-sync 8ac95ab1; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67131/1559 -> 67234/1560 (+103/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 933e69a7 / anchor 8ca2b606 / doc-sync 8ac95ab1 / log-hash this commit
 
 ### Commit hashes
 - Main commit `933e69a7` (933e69a79fd345140111425dd53ccb0e13c375cc) - verified via git rev-parse
 - Anchor followup `8ca2b606` (8ca2b6064e3535ce7819ac741c6315b09999b569; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Doc-sync `8ac95ab1` (8ac95ab185b3e21cf29504ecf0a52610a83e69d9; README 67131/1559 -> 67234/1560; test-table row; ARCHITECTURE tree row; iteration-log entry)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_d_1235_in_git_log_pin to the own-set form (HEAD admitted)
 
 ### Rotation transparency
@@ -184,7 +184,7 @@ Push status (this run, Oct 5 2026 ~05:xx PDT): main + anchor followup pushed and
 ### Commit hashes
 - Main commit `3d4a7a89` (3d4a7a8945ab7ba6fde9c8f1e82cf1a44eb84215) - verified via git rev-parse
 - Anchor followup `23de2781` (23de2781db6b6c2beea088081b5fc4ec78ae422a; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Doc-sync `8ac95ab1` (8ac95ab185b3e21cf29504ecf0a52610a83e69d9; README 67131/1559 -> 67234/1560; test-table row; ARCHITECTURE tree row; iteration-log entry)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency

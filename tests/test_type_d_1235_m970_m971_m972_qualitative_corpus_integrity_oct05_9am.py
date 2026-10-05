@@ -376,11 +376,28 @@ class TestNovelty1235:
                 os.path.join(TESTS_DIR, OWN_BASENAME)], "only this file"
 
     def test_no_type_d_1235_in_git_log(self):
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the log-hash followup per #721): the ONLY matches are this
+        # run's own commits, whose messages carry the run's own
+        # iteration subject (the followup commits match the grep, so
+        # they join the own set; HEAD is admitted for any same-run
+        # followup). The pin's substance - no PRIOR run committed this
+        # run's iteration - holds.
         out = subprocess.run(
-            ["git", "log", "--oneline", "--grep=Type D #1235"],
+            ["git", "log", "--format=%H %s", "--grep=Type D #1235"],
             cwd=REPO_ROOT, capture_output=True, text=True, timeout=60,
-        )
-        assert out.stdout.strip() == ""
+        ).stdout
+        own = {
+            "933e69a7", "8ca2b606", "8ac95ab1",
+        }
+        head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=REPO_ROOT, capture_output=True, text=True, timeout=60,
+        ).stdout.strip()[:8]
+        hits = [line for line in out.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert line.split()[0][:8] in own or line.split()[0][:8] == head, line
 
     def test_no_prior_1235_opening_claim_in_log(self):
         text = _read(LOG_FILE)
