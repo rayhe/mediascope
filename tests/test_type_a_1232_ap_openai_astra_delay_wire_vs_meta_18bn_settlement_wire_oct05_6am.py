@@ -396,7 +396,13 @@ class TestMechanismNovelty1232:
         # file never carries the contiguous key: BLOCK_KEY is
         # fragment-built per #715.
         out = _git("grep", "-F", "-l", BLOCK_KEY, "HEAD", "--", ".").stdout
-        hits = [line for line in out.splitlines() if line.strip()]
+        hits = []
+        for line in out.splitlines():
+            line = line.strip()
+            if line.startswith("HEAD:"):
+                line = line[len("HEAD:"):]
+            if line.strip():
+                hits.append(line.strip())
         allowed = {
             os.path.join("profiles", "ap.yaml"),
             "README.md",
@@ -427,13 +433,15 @@ class TestMechanismNovelty1232:
     def test_no_type_a_1232_in_git_log_pin(self):
         # Post-main-commit form (the #1191-class self-trip, re-pinned
         # in the log-hash followup per #721): the ONLY matches are this
-        # run's own four commits, whose messages carry the run's own
-        # iteration subject (the followup commit itself matches the
-        # grep, so HEAD is admitted alongside the three known shas).
-        # The pin's substance - no PRIOR run committed this run's
-        # iteration - holds.
+        # run's own commits, whose messages carry the run's own
+        # iteration subject (the followup/corrective commits match the
+        # grep, so they join the own set; HEAD is admitted for any
+        # same-run followup). The pin's substance - no PRIOR run
+        # committed this run's iteration - holds.
         out = _git("log", "--format=%H %s", "--grep=Type A #1232").stdout
-        own = {"9f74c6ee", "bb211ca8", "ade7a8de"}
+        own = {
+            "9f74c6ee", "bb211ca8", "ade7a8de", "196377eb", "74c48e44",
+        }
         head = _git("rev-parse", "HEAD").stdout.strip()[:8]
         hits = [line for line in out.splitlines() if line.strip()]
         assert hits, "expected this run's own commits"
