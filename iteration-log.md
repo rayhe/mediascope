@@ -47417,3 +47417,45 @@ README stats table 70012/1591 -> 70084/1592 (+72/+1); README test-table row; doc
 
 ### Push status
 Push status (this run, Oct 6 2026 ~2:0x PM PDT): all four commits pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip 3af8e551 -> local tip, verified match post-push).
+
+## #1268 Type B: m992 Marcus Mendes (9to5Mac) Meta Sep-23 Connect launch privacy-scrutiny insertion (-0.15 MANUAL ILLUSTRATIVE, NEW canonical arm) vs Apple Aug-20 Vision layoff corporate-defense carrying (+0.20, NEW canonical arm); illustrative delta (Apple minus Meta) +0.35 Meta-hard direction; CONTROL-CASE (no documented 9to5 Networks tie to any compared entity), NOT a falsification-family member (ledger holds at 54); FIRST dedicated Type B pair on Mendes (prior mentions #1138/#1233 research notes only); 2 novel canonical URLs zero-hit pre-commit; peg-asymmetry + outlet-enthusiast confounds STRONG - Type B FOURTH leg of the 1265-1269 window (Oct 6 2026, 02:00 PM PDT; main commit 84a03ed1 / anchor d05f5045 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70084/1592 -> 70173/1593 (+89/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 84a03ed1 / anchor d05f5045 / doc-sync TBD / log-hash this commit
+
+### Commit hashes
+- Main commit `84a03ed1` (84a03ed18f9267a1db621f6741576d9aaf7f6c8b) - verified via git rev-parse
+- Anchor followup `d05f5045` (d05f50453353a26648497c1e53ced5bbcf0d7a64; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 70084/1592 -> 70173/1593; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_b_1268_in_git_log_pin to the own-set form (HEAD admitted)
+
+### Rotation transparency
+- This run is iteration #1268 Type B, the FOURTH leg of the 1265-1269 window (D #1265 -> E #1266 -> A #1267 -> B #1268 -> C #1269 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1267 Type A (main 4e5f2404 / anchor f610f0f7 / doc-sync e2f3cf13 / log-hash d6ac56a1), #1266 Type E (main d1eeac3a / anchor 1f0243be / doc-sync 700c0909 / log-hash 3af8e551).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1269 Type C closes the window; the #1265 background-suite verdict belongs to #1270 per #795.
+- Guard lifecycle note: #1267's max-991 + zero-992 (all forms) + no-Type-B-#1268-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1268 test file, expecting the 2-failed/15-passed flip pattern on TestGuardLifecycle1267); #1267's fortieth-absent, forty-eighth-through-fifty-fourth-intact, no-fifty-fifth guards stay green (m992 is a control-case observation, not a member).
+
+### Finding summary
+- m992 (profiles/careers/journalists.yaml, NEW top-level marcus_mendes_type_b key per #643; FIRST dedicated Type B pair on Mendes): same writer/outlet, 34 days apart, same product category (smart glasses / spatial computing strategy). Meta Sep-23 arm (9to5mac.com canonical, NEW): launch-news relay with an editorial privacy-scrutiny paragraph inserted mid-piece (-0.15 MANUAL ILLUSTRATIVE: "Meta's camera-equipped glasses have faced growing scrutiny over privacy and ethics"). Apple Aug-20 arm (9to5mac.com canonical, NEW): corporate-defense carrying on negative Vision layoff news (+0.20: Sinclair "It's still early innings for spatial computing... we are invested in this platform"; "Apple has not confirmed nor commented"). Illustrative delta (Apple minus Meta) +0.35 Meta-hard direction. CONTROL-CASE per #1243: no documented 9to5 Networks/9to5Mac financial tie to Meta, Apple, OpenAI, Anthropic, Google, or Snap in the corpus (9to5Google is the corpus's independent control, mechanism #131); the uniform payer-softening prediction is not adjudicated - the pair measures the base rate of register asymmetry absent incentives. Direction thesis-consistent but a control case can neither confirm nor falsify the thesis. NOT a falsification-family member; ledger holds at 54. Peg asymmetry (launch vs layoff valence) and outlet-enthusiast genre (9to5Mac is Apple-enthusiast) are STRONG confounds; temporal 34 days MODERATE.
+- Scout rejections (numbered audit in the block): Goode/Song/Gurman/Heater/Pierce/Ashworth saturated; Amadeo/Calore no verifiable pair; Engadget bylines unattributable; Lovejoy hard-excluded (#1233); Chokkattu corpus-saturated. #1138's Mendes Apple-Watch pair not re-litigated (different peg; byline was unverified then; this pair carries verified bylines).
+- Verdict: control_case_observation; MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update). Correlation is not causation; hypothesis-generating only.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1268 files on disk (glob, own file only); no "Type B #1268" in git log; max numeric mechanism_id 991 in profiles/ pre-commit; zero numeric/underscore/dash nine-nine-two mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1268 in key, no 992 substring); "marcus_mendes_type_b" zero-hit pre-commit (prior "Marcus Mendes" mentions are #1138/#1233 research notes only); 2/2 novel canonical URLs zero-hit repo-wide pre-commit (git grep -F); "## #1268" zero-hit in iteration-log pre-commit; README stats 70084/1592 pre-commit; no #1268 row in README/ARCHITECTURE test tables pre-commit.
+- Verification-layer run: 1 delegated scout (10 candidate angles, ranked, SELECTED Mendes) + 3 main-run browser.search verification sets (exact-headline Meta-arm search returning the 9to5mac.com canonical verbatim with the privacy-scrutiny paragraph in its indexed excerpt; exact-headline Apple-arm search returning the 9to5mac.com canonical verbatim with Sinclair's full defense quote; Mendes Apple-critical counterpoint search - bounded absence, archive shows enthusiast register). 0 browser.open per #503 (excerpt-bounded).
+- Literal discipline per #715: the forward-guard needles (next-number 993 forms, the fifty-fifth member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed ordinals live as short lowercase forms in the test-file prose.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 77 passed + 12 deselected by design (TestAnchor1268 5 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins1268 1 per #565/#719/#721); 0 in-gate defects found; test-file constants post-sync-positive per #719 (89 collected, 13 classes).
+- Tests: tests/test_type_b_1268_marcus_mendes_9to5mac_meta_connect_launch_vs_apple_vision_layoffs_oct06_2pm.py (89 tests, 13 classes).
+- Forward guards for #1269: max-992; zero nine-nine-three keys all forms (profiles/ + tests/ scope); no-Type-C-#1269-in-git-log; fortieth direction absent; forty-eighth-through-fifty-fourth intact; no fifty-fifth member (repo-wide); ledger 54.
+
+### Doc-sync ratchet
+README stats table 70084/1592 -> 70173/1593 (+89/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants post-sync-positive per #719 (89 collected, 13 classes).
+
+### Background suite (per #795)
+- The #1265-launched full suite is OBSERVED this run only (verdict belongs to #1270): goal hidden_files type_d_1265_full_suite.log at 1510 bytes, last write Oct 6 2026 18:59:55 UTC (~2h stale at this run's ~14:0x PDT check), zero live pytest processes - NOT-ALIVE (observation, not a verdict). This run neither re-launches, kills, nor writes to the suite.
+- TestGuardLifecycle1267 staleness verification (this run, post-main-commit): 15 passed, 2 failed - the no-Type-B-#1268-in-git-log pin flips BY DESIGN at the main commit (the #1191-class self-trip) and the zero-992-numeric pin trips on the landed m992 block; the zero-992-underscore/dash pins stay green (no contiguous 992 key forms in the new files per the #715 literal discipline). Documented in TestStalenessPins1268.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
+
+### Push status
+Push status: pending at doc-sync time; patched by the log-hash followup after the atomic push (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
