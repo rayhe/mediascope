@@ -194,6 +194,10 @@ PRED_ANCHOR_1255 = "50d8c984"
 PRED_DOCSYNC_1255 = "d53069f3"
 PRED_FINAL_1255 = "fe08152c"
 
+# This run's main commit (full sha), for the ancestor-form
+# no-Type-E-#1256 pin.
+PRED_MAIN_1256 = "09867f9d9cfb5a9097741962663e3b343097d865"
+
 # The #1255 window-opener file, for the staleness pin on its
 # guard-lifecycle class (max id 984; zero next-number nine-eight-five
 # / no-Type-E-#1256-in-git-log (flips BY DESIGN at this run's main
@@ -525,23 +529,21 @@ class TestMechanismNovelty:
 
     def test_no_type_e_1256_in_git_log_pin(self):
         # Post-main-commit form (the #1191-class self-trip, re-pinned
-        # in the terminal log-hash followup per #721): the ONLY
-        # matches are this run's own commits, whose messages carry
-        # the run's own iteration subject (the followup commits match
-        # the grep, so they join the own set; HEAD is admitted for
-        # any same-run followup). The pin's substance - no PRIOR run
-        # committed this run's iteration - holds.
-        out = _git("log", "--format=%H %s", "--grep=Type E #1256")
-        own = {
-            "09867f9d", "bed56aa5", "fb224e86", "8971b183",
-            "cb1e04f9",
-        }
-        head = _git("rev-parse", "HEAD").stdout.strip()[:8]
-        hits = [line for line in out.stdout.splitlines() if line.strip()]
+        # in the terminal log-hash followup per #721): every commit
+        # whose message matches "Type E #1256" must be this run's
+        # main commit or a descendant of it - i.e., no PRIOR run
+        # committed this run's iteration. The ancestor check (not an
+        # enumerated own-set) is robust to any number of same-run
+        # followup commits: each followup is a descendant of main by
+        # construction, so the pin is stable and terminal.
+        out = _git("log", "--format=%H", "--grep=Type E #1256")
+        hits = [line.strip() for line in out.stdout.splitlines()
+                if line.strip()]
         assert hits, "expected this run's own commits"
-        for line in hits:
-            assert (line.split()[0][:8] in own
-                    or line.split()[0][:8] == head), line
+        main = _git("rev-parse", PRED_MAIN_1256).stdout.strip()
+        for h in hits:
+            r = _git("merge-base", "--is-ancestor", main, h)
+            assert r.returncode == 0, h
 
     def test_zero_next_number_keys_all_forms(self):
         # Numeric (profiles/ scope), underscore and dash (profiles/ +
