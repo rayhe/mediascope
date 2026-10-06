@@ -44158,3 +44158,75 @@ cnn_wbd_uthmeier_openai_sep28_injunction_bounded_absence_1242:
     ascii_only: true
     goal_id: "goal_54093bda4145"
     job_id: "mediascope-daily-iteration"
+
+type_a_1247_oct_financial_peg_coverage_landscape_bounded_absence_audit:
+  mechanism_id: 979
+  iteration: 1247
+  iteration_type: A
+  type: competitor_coverage_deep_dive
+  type_label: Competitor Coverage Deep Dive
+  rotation: 'Type A'
+  date_analyzed: '2026-10-05'
+  time_pdt: '20:00'
+  job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  mechanism_name: 'October financial-peg coverage-landscape audit: three Oct 1-5 2026 financial pegs (Anthropic x Broadcom $42B vendor financing; OpenAI $30B-at-$1.4T bridge round; Anthropic Pentagon supply-chain fight) draw zero originals from the seven profiled publications - bounded absence per the iteration-492 rule'
+  block_key: type_a_1247_oct_financial_peg_coverage_landscape_bounded_absence_audit
+  key_design_note: 'Iteration-form block key carries no underscore-form 979 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-979 profile sweep instruments green while mechanism_id advances in colon form.'
+  financial_pegs:
+  - label: 'Anthropic x Broadcom $42B vendor financing (Reuters exclusive Oct 1 2026)'
+    date: '2026-10-01'
+    originator: 'Reuters (Echo Wang, Milana Vinn, Max A. Cherney)'
+    url: 'https://www.reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01/'
+    facts: 'Anthropic IPO prospectus: Broadcom to lend up to $42B in convertible notes covering ~1/3 of the $125.2B five-year TPU lease; Anthropic flags the conflict of interest itself; reciprocal-spending frame (Rothschild: concentrated bet).'
+  - label: 'OpenAI $30B-at-$1.4T bridge round (Bloomberg Sep 29 2026)'
+    date: '2026-09-29'
+    originator: 'Bloomberg (relayed by TechCrunch Sep 29)'
+    url: 'https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/'
+    url_relay: 'https://www.reuters.com/legal/transactional/openai-targets-30-billion-funding-14-trillion-valuation-bloomberg-news-reports-2026-09-29/'
+    facts: 'Early-stage talks for at least $30B at ~$1.4T pre-money as a pre-IPO bridge; follows the $122B March raise at $852B; Altman ruled out a 2026 IPO on safety grounds.'
+  - label: 'Anthropic Pentagon supply-chain fight / government-attitude warning (Reuters Oct 2 2026)'
+    date: '2026-10-02'
+    originator: 'Reuters'
+    url: 'https://www.reuters.com/business/media-telecom/anthropic-warns-government-attitudes-may-hurt-customer-ties-ipo-prospectus-shows-2026-10-02/'
+    facts: 'Prospectus warns US government attitudes may hurt commercial customer ties; Feb Trump order to stop federal use; DoD supply-chain-risk designation; Jun Commerce export restrictions on Fable 5 / Mythos 5 (later lifted).'
+  coverage_landscape:
+    profiled_originals_count: 0
+    originator_wire: 'Reuters (Broadcom peg, Pentagon peg) and Bloomberg (the $30B round) originated all three pegs.'
+    trade_relays: 'Trade-press relays only beyond the wires: aistockwire, metirai, PYMNTS, bitsminds, the-decoder, LA Post, SRN News, hottea.ai, actsofevolution, coincentral, vestedfinance, toptech.news.'
+    bounded_absence: 'Zero originals from WIRED, The Verge, NYT, FT, Guardian, Business Insider, or Atlantic across 19 query sets (bounded per the iteration-492 rule: search-index-limited, not proven). The FT Anthropic-IPO-prospectus original is in corpus as m892 (carried context, not novel); the Broadcom $42B is a sub-peg of that prospectus.'
+  scout_rejections:
+  - candidate: 'Atlantic x OpenAI Robinson resignation essay (Oct 3)'
+    corpus_location: '#1227/m967 (BI x OpenAI Oct-2 exclusive; peg saturated; #1143 temporal-replication precedent rejects a new member)'
+    reason: 'The Robinson peg is saturated: #1227 landed m967 on the BI Oct-2 exclusive with the Atlantic essay named in its finding; re-scoring the essay would re-litigate a settled peg.'
+  - candidate: 'Verge x OpenAI Dot hands-on (Allison Johnson, Oct 2)'
+    corpus_location: 'profiles/careers/journalists.yaml (Type B Allison Johnson pair: Meta Muse -0.20 vs OpenAI Dot +0.25, exact title in corpus)'
+    reason: 'The exact article is already a scored arm in the Type B journalist mechanism; a Type A re-score would double-count.'
+  - candidate: 'WIRED x OpenAI Astra cancellation (Isabella Ward, Sep 29)'
+    corpus_location: 'm877/#1077 (WIRED x OpenAI Sep-29 Astra-cancellation accountability register, -0.35)'
+    reason: 'FIRST dedicated Type A mechanism on the WIRED Astra original already landed at #1077; this run''s relay finds are the same piece.'
+  query_sets_total: 19
+  query_sets_detail: '1 delegated scout (10 browser.search query sets across 8 angles) + 9 main-run sets: Atlantic Robinson quoted title; David Robinson Atlantic essay; WIRED Astra; OpenAI $30B round; Anthropic IPO Broadcom; FT Anthropic IPO; Broadcom Anthropic BI/Verge/WIRED; Anthropic Pentagon; Snap/Apple/Google XR. 0 browser.open per #503 (excerpt-bounded).'
+  tone_scores: 'NOT_SCORED'
+  p_value: 'NOT_CALCULATED'
+  cohens_d: 'NOT_CALCULATED'
+  ci_95: 'NOT_CALCULATED'
+  is_significant: false
+  artifact_grade: false
+  analysis_json_update: false
+  falsification_family_member: false
+  asymmetry_scorer: 'NOT RUN on the new pegs: bounded absence yields no fresh arm to score. Carried arms and deltas unchanged. Per the Aug 28 2026 standing rule no tone is asserted on absent coverage; engine NOT run on corpus.'
+  verdict: 'bounded_absence_documented: temporal extension of #1242 m976 from the legal peg to the financial pegs. Three major Oct 1-5 financial pegs drew zero profiled-publication originals in the 4-6 day window; coverage is originator-wire plus trade relays. NOT a falsification-family member: absence cannot adjudicate hardness/softness, and the standing bar requires a same-peg or near-peg hardness adjudication. Ledger holds at 52. Correlation is not causation. Hypothesis-generating only. NOT artifact-grade. No analysis.json update.'
+  novelty: 'FIRST dedicated corpus mechanism mapping the October financial-peg coverage landscape (zero hits repo-wide pre-commit for all four source URLs via git grep -F; zero test_type_a_1247 files on disk; no Type A #1247 in git log; max numeric mechanism_id 978 in profiles/ pre-commit; zero 979 key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit). The scout-rejection audit pins exact corpus locations for three would-be duplicate pegs.'
+  research_method: 'Delegated scout (10 browser.search query sets across 8 candidate pairs; SELECTED none - all three top candidates rejected on main-run verification) + 9 main-run browser.search query sets (listed in query_sets_detail). 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps per #715 as pinned in the test file. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: '1245-1249 window THIRD leg: D (#1245, Oct 5 7:00 PM PDT) -> E (#1246, Oct 5 7:00 PM PDT) -> A (#1247, this run) -> B (#1248) -> C (#1249), CONTINUING the window (per #565: D->E->A->B->C). Committed predecessors #1246 Type E (main bedd352b / anchor d17d4980 / doc-sync 47fb34bc / log-hash 96011698) and #1245 Type D (main 64153de0) verified present via git rev-parse before this run''s commit. The #1245 background-suite verdict belongs to #1250 per #795 (observed ALIVE only this run). Novelty anchor patched post-commit in the anchor followup per #565.'
+  concurrency: 'The in-flight runs are the #899 Type C block (m771, uncommitted hunk in profiles/nytimes.yaml), the #938 Type B test file (uncommitted working-tree edit), the #900 Type D test file (untracked, on disk) and the #1012 working-tree edit of the committed Type A #1012 test file - all UNCOMMITTED. This run does NOT touch the in-flight files (the m979 block lands in profiles/competitor-coverage-research.yaml); targeted staging only. Do NOT touch #1024''s m846 (profiles/competitor-entities.yaml): Ray''s revert/leave/rebuild decision still pending.'
+  in_flight: '#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched.'
+  verification:
+    iteration: 1247
+    type: 'A'
+    date: '2026-10-05 20:00 PDT'
+    yaml_parse_clean: true
+    ascii_only: true
+    goal_id: 'goal_54093bda4145'
+    job_id: 'mediascope-daily-iteration'
