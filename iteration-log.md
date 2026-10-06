@@ -46510,7 +46510,7 @@ README stats table 68189/1571 -> 68266/1572 (+77/+1); README test-table row; doc
 ### Commit hashes
 - Main commit `9712e519` (9712e519175dff234d9b7558f4386213e039a83e) - verified via git rev-parse
 - Anchor followup `dda21050` (dda21050f9c7bad018d4f00543bf4b695ee6448d; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 68266/1572 -> 68343/1573; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync `eb4b52a0` (eb4b52a08e177da1e28623349b8f3832bd816d4c; README 68266/1572 -> 68343/1573; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
