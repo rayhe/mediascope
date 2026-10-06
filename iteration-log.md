@@ -46897,12 +46897,12 @@ Push status (this run, Oct 6 2026 ~03:xx PDT): main + anchor followup pushed and
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
-## #1256 Type E: podcast sentiment 174th verification cycle (GF episode 503 HOLDS - fifth full verification since its #1236 first surfacing, ~17h after the Oct-5 11:00am publication; forty-first verification since the Sep-28 502 release, ~184h; GF pure-re-surface streak ADVANCES to thirteen; EHE 57-day hold; AS 174th no-match, dec56140 absence streak ADVANCES to seven, Tracked Sources 173->174; Press 6 re-surfaces + 1 NEW verbatim key (outlookbusiness.com recording-light analysis, Oct-4-dated); recency frontier ADVANCES Oct 3 -> Oct 4; monitoring-only per the Aug 28 2026 standing rule; NOT artifact-grade; ledger holds at 53) - Type E SECOND leg of the 1255-1259 window (Oct 6 2026, 03:00 AM PDT; main commit 09867f9d / anchor bed56aa5 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68975/1580 -> 69064/1581 (+89/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1256 Type E: podcast sentiment 174th verification cycle (GF episode 503 HOLDS - fifth full verification since its #1236 first surfacing, ~17h after the Oct-5 11:00am publication; forty-first verification since the Sep-28 502 release, ~184h; GF pure-re-surface streak ADVANCES to thirteen; EHE 57-day hold; AS 174th no-match, dec56140 absence streak ADVANCES to seven, Tracked Sources 173->174; Press 6 re-surfaces + 1 NEW verbatim key (outlookbusiness.com recording-light analysis, Oct-4-dated); recency frontier ADVANCES Oct 3 -> Oct 4; monitoring-only per the Aug 28 2026 standing rule; NOT artifact-grade; ledger holds at 53) - Type E SECOND leg of the 1255-1259 window (Oct 6 2026, 03:00 AM PDT; main commit 09867f9d / anchor bed56aa5 / doc-sync fb224e86; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68975/1580 -> 69064/1581 (+89/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `09867f9d` (09867f9d9cfb5a9097741962663e3b343097d865) - verified via git rev-parse
 - Anchor followup `bed56aa5` (bed56aa58aa00c60887f9111e74375f103b27088; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 68975/1580 -> 69064/1581; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync `fb224e86` (fb224e866c7118f3380507d72af1fee417b87b7c; README 68975/1580 -> 69064/1581; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_e_1256_in_git_log_pin to the own-set form (HEAD admitted)
 
 ### Research method
@@ -46927,7 +46927,7 @@ Push status (this run, Oct 6 2026 ~03:xx PDT): main + anchor followup pushed and
 
 ### Rotation transparency
 - This run is iteration #1256 Type E, the SECOND leg of the 1255-1259 window (D #1255 -> E #1256 -> A #1257 -> B #1258 -> C #1259 per the #565 anchor + rotation guard).
-- Committed predecessors verified pre-commit: #1255 Type D (main 09867f9d / anchor bed56aa5 / doc-sync TBD / log-hash TBD).
+- Committed predecessors verified pre-commit: #1255 Type D (main 09867f9d / anchor bed56aa5 / doc-sync fb224e86 / log-hash TBD).
 - Rotation guard: this run's main commit is the anchor per #565; bed56aa5 ANCHORED_SHA patched post-commit. Next: #1257 Type A continues the window; the #1255-launched background-suite verdict belongs to #1260 per #795.
 - Guard lifecycle note: #1255's no-Type-E-#1256-in-git-log pin flips BY DESIGN at this run's main commit (the main commit's subject carries "Type E #1256"); the other 15 TestGuardLifecycle1255 pins stay green (verified post-commit by TestStalenessPins1256 expecting "15 passed, 1 failed"). This run lays forward pins for #1257: no-Type-A-#1257-in-git-log, max-984, zero-985 all forms, fortieth absent, forty-eighth-through-fifty-third intact, no-fifty-fourth, ledger 53.
 

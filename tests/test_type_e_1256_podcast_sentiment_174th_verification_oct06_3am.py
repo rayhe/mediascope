@@ -524,13 +524,23 @@ class TestMechanismNovelty:
         assert _max_numeric_mechanism_id() == MECH_NUM
 
     def test_no_type_e_1256_in_git_log_pin(self):
-        # Pre-commit pin form: no "Type E #1256" in the git log
-        # before this run's main commit lands. The #1191-class
-        # self-trip flips this pin BY DESIGN at the main commit; the
-        # log-hash followup re-pins it to the post-commit own-set
-        # form per #721.
-        out = _git("log", "--oneline", "--grep=Type E #1256")
-        assert out.stdout.strip() == ""
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the terminal log-hash followup per #721): the ONLY
+        # matches are this run's own commits, whose messages carry
+        # the run's own iteration subject (the followup commits match
+        # the grep, so they join the own set; HEAD is admitted for
+        # any same-run followup). The pin's substance - no PRIOR run
+        # committed this run's iteration - holds.
+        out = _git("log", "--format=%H %s", "--grep=Type E #1256")
+        own = {
+            "09867f9d", "bed56aa5", "fb224e86",
+        }
+        head = _git("rev-parse", "HEAD").stdout.strip()[:8]
+        hits = [line for line in out.stdout.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert (line.split()[0][:8] in own
+                    or line.split()[0][:8] == head), line
 
     def test_zero_next_number_keys_all_forms(self):
         # Numeric (profiles/ scope), underscore and dash (profiles/ +
