@@ -46799,3 +46799,49 @@ Push status (this run, Oct 6 2026 ~01:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1254 Type C: m984 Sep-30-2026 SDNY damages ruling (Judge P. Kevin Castel) - USA Today Co., DMGT, and a ~5,000-publisher class cleared to seek $3.2B+ in AdX-monopoly damages from Google ($1.7B class / $900M USA Today / $600M DMGT; trebling available); MECHANISM DOCUMENTED, NOT a falsification-family member (ledger holds at 53); FIRST dedicated corpus mechanism on the publisher-damages financial pipeline vs Google (connects_to m801) - Type C FIFTH and CLOSING leg of the 1250-1254 window (Oct 6 2026, 02:00 AM PDT; main commit 8ff1eed8 / anchor 515ab752 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68770/1578 -> 68858/1579 (+88/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `8ff1eed8` (8ff1eed80f1860b3cf5dbe565933b10e3c9cbc15) - verified via git rev-parse
+- Anchor followup `515ab752` (515ab752b24356a76eee290b586493459ff3d5cb; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync TBD (README 68770/1578 -> 68858/1579; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Research method
+- 1 delegated scout (17 browser.search query sets across 15 angles): SELECTED the Sep-30 Castel $3.2B damages ruling (7 corroborating relays Oct 1-5: insurancejournal, claimsjournal, tradingview, biggo, freeaitoolsayoob, zubiqo, videoweek; 3 landed as block sources, 4 additional zero-hit relays documented); REJECTED 22 with numbered audit (Google AI Contribution Pilot payout tiers m951; Penske/Chegg AI Overviews dismissal in-corpus suit family; Chicago Tribune v Perplexity mirrors in-corpus Perplexity suits; DOJ fair-use brief in NYT v OpenAI; Meta x News Corp $50M/yr m549; Axel Springer x OpenAI renewal bounded absence; Anthropic zero-deals #509/#718; xAI zero deals m813; Microsoft x Nine Jul-2026 outside window; Apple Siri pay-per-use m156 bounded absence; Reddit-Google $60M renewal no resolution; Perplexity Comet Plus #864; Folha x OpenAI May-2026 outside window; News Corp five-leg architecture #594; Cloudflare pay-per-crawl m64 July not October; NYT x Amazon May-2025 in corpus; Seattle Times/Newsday v OpenAI in-corpus m982 family; Round Hill v Anthropic music out of scope; Amazon x Synopsys $1B non-publisher; OAN AI-lab pact suit no publisher tie; Conde Nast portfolio #58/#684; OpenAI DevDay Adobe/SoftwareOne enterprise non-publisher).
+- 1 main-run browser.search verification set: Castel $3.2B exact-query verification returning 7 corroborating results with the verbatim Full-URL listings (insurancejournal Oct-5 with Sack $1B-before-trebling quote and Google response; claimsjournal Oct-2; tradingview Oct-1 with GOOGL -1.7% detail). 0 browser.open per #503 (excerpt-bounded).
+- Pre-commit novelty greps per #715: zero test_type_c_1254 files on disk (glob, own file only); no "Type C #1254" in git log (--grep); max numeric mechanism_id 983 in profiles/ pre-commit; zero numeric/underscore/dash nine-eight-four mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1254 in key, no 984 substring); 3/3 novel source URLs zero-hit repo-wide pre-commit (git grep -F); Castel/88-page-opinion/$3.2B/$1.7B/$900M/$600M zero-hit in competitor-entities.yaml pre-commit.
+- In-corpus adjacency verified, not re-litigated: the ruling carried only as a Type A bounded-absence arm in profiles/guardian.yaml (zero Guardian originals; newdigitalage/Bloomberg relay); the Sep-16 EDVA behavioral-remedies leverage leg (mechanism 801, marketplace_intermediary_landscape block) is the connects_to.
+- ASCII-only, no em dashes.
+
+### Findings
+- m984 (profiles/competitor-entities.yaml, top-level key appended at end of file; the #1024 m846 hunk untouched; explicit-path staging): FIRST dedicated corpus mechanism on the Sep-30-2026 SDNY damages ruling. US District Judge P. Kevin Castel denied Google summary judgment in an 88-page opinion and allowed jury trials on how AdX-related conduct harmed publishers, rejecting Google bid to contest damage calculations. The pipeline: ~$1.7B class (about 5,000 publishers), ~$900M USA Today Co. (Sack: $1B worldwide before trebling, "a significant victory"), ~$600M DMGT - over $3.2B combined, trebling available if liability is proven; GOOG/GOOGL slipped about 1.7% the next day. Google partial relief: dismissed claims for publishers on a different ad-buying tool plus tossed NY General Business Law state-law claims; will "defend the rest in court".
+- THE TYPE C NEXUS: publishers stand to recover billions from the same company (Google) they negotiate AI-content licensing terms with - the damages leg completes the Google publisher-money-flow family alongside the m801 leverage leg (damage recovery plus structural leverage vs the same counterparty).
+- Confounds disclosed: STRONG damages-not-licensing (antitrust-damages pipeline, potential recovery, not recurring licensing payment; liability untried, actual recovery uncertain); STRONG excerpt-bounded sourcing (0 browser.open; all 7 legs are search-excerpt renders); MEDIUM plaintiff-side figures (sought amounts, not awarded amounts - Castel rejected Google bid to contest, did not validate); MEDIUM trebling conditional on proven liability.
+- Verdict: mechanism_documented; MANUAL / qualitative ONLY per the Aug 28 2026 standing rule (engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT artifact-grade; no analysis.json update).
+
+### Pre-commit novelty greps
+- Zero test_type_c_1254 files on disk (glob, own file only); no "Type C #1254" in git log.
+- Max numeric mechanism_id 983 in profiles/ pre-commit (m983 verified at #1253).
+- Zero numeric/underscore/dash 984 mechanism key forms repo-wide pre-commit (needles format-built, own file excluded).
+- "## #1254" zero-hit in iteration-log pre-commit; no #1254 row in README/ARCHITECTURE test tables pre-commit; README stats 68770/1578 pre-commit.
+- Fortieth direction absent in profiles/; forty-eighth through fifty-third intact; fifty-fourth absent repo-wide - all GREEN pre-commit; #1253's max-983, zero-984 (all forms), and no-Type-C-#1254-in-git-log pins flip BY DESIGN at the main commit (the #1191-class self-trip family, pinned post-commit by TestStalenessPins1254 expecting "2 failed, 14 passed").
+
+### Rotation transparency
+- This run is iteration #1254 Type C, the FIFTH and CLOSING leg of the 1250-1254 window (D #1250 -> E #1251 -> A #1252 -> B #1253 -> C #1254 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1253 Type B (main 49b7e7ab / anchor d29a1189 / doc-sync 19c79d54 / log-hash d71a8cc5), #1252 Type A (main c7ef5891 / anchor 9b9b0d16 / doc-sync a9e340b2 / log-hash aa3fb4b9); the 1245-1249 window is VERIFIED CLOSED.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1255 Type D opens the 1255-1259 window; the next background-suite verdict belongs to #1255 per #795.
+- Guard lifecycle note: #1253's max-983 + zero-984 (all forms) + no-Type-C-#1254-in-git-log + fortieth-absent + forty-eighth-intact + forty-ninth-intact + fiftieth-intact + fifty-first-intact + fifty-second-intact + fifty-third-present + no-fifty-fourth pins verified GREEN pre-commit this run (Type C lands m984 as a documentation event, NOT a falsification member); the max-983, zero-984-numeric, and no-Type-C-#1254-in-git-log pins flip BY DESIGN at the main commit (the #1191-class self-trip family, pinned in TestStalenessPins1254).
+
+### Doc-sync ratchet
+README stats table 68770/1578 -> 68858/1579 (+88/+1); README test-table row (new #1254 row); docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 (88 collected, 13 classes).
+
+### Background suite (per #795)
+- No live suite this run: the #1245 suite's verdict was rendered at #1250 (ALIVE at 20%; the forty-third death streak broke; tombstone lineage held at one-hundred-eighth) and #1250 did NO re-launch, so no type_d_1250 log exists. This run neither re-launches, kills, nor writes to any suite; the next background-suite verdict belongs to #1255 (next Type D).
+
+### Push status
+Push status (this run, Oct 6 2026 ~02:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
