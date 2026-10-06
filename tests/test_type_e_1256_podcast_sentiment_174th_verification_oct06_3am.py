@@ -1042,7 +1042,7 @@ class TestStalenessPins1256:
             "TestGuardLifecycle1255",
         )
         out = res.stdout + res.stderr
-        assert "15 passed, 1 failed" in out, out[-2000:]
+        assert "1 failed, 15 passed" in out, out[-2000:]
         assert "no_type_e_1256_in_git_log" in out, out[-2000:]
 
 
