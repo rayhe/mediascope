@@ -46846,13 +46846,13 @@ Push status (this run, Oct 6 2026 ~02:xx PDT): main + anchor followup pushed and
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
-## #1255 Type D: m982/m983/m984 qualitative-discipline corpus-integrity verification + #1245 background-suite verdict (DEAD at 27%; FIRST consecutive background-suite death of the new streak; tombstone lineage ONE-HUNDRED-EIGHTH -> ONE-HUNDRED-NINTH) + full suite re-launched + recurring-failure triage (deterministic F-prefix 5/6 in the dead log; 3807 absent, same deviation as #1250; INDETERMINATE, pinned as missing evidence) - Type D FIRST and OPENING leg of the 1255-1259 window (Oct 6 2026, 03:00 AM PDT; main commit c5d035d8 / anchor 50d8c984 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68858/1579 -> 68975/1580 (+117/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main c5d035d8 / anchor 50d8c984 / doc-sync TBD / log-hash this commit
+## #1255 Type D: m982/m983/m984 qualitative-discipline corpus-integrity verification + #1245 background-suite verdict (DEAD at 27%; FIRST consecutive background-suite death of the new streak; tombstone lineage ONE-HUNDRED-EIGHTH -> ONE-HUNDRED-NINTH) + full suite re-launched + recurring-failure triage (deterministic F-prefix 5/6 in the dead log; 3807 absent, same deviation as #1250; INDETERMINATE, pinned as missing evidence) - Type D FIRST and OPENING leg of the 1255-1259 window (Oct 6 2026, 03:00 AM PDT; main commit c5d035d8 / anchor 50d8c984 / doc-sync d53069f3; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68858/1579 -> 68975/1580 (+117/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main c5d035d8 / anchor 50d8c984 / doc-sync d53069f3 / log-hash this commit
 
 ### Commit hashes
 - Main commit `c5d035d8` (c5d035d88a7aaea30f73b1fc07fd69a65788dbf4) - verified via git rev-parse
 - Anchor followup `50d8c984` (50d8c984f442bb9dc459b22a740a9902c3095027; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD (README 68858/1579 -> 68975/1580; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync `d53069f3` (d53069f3218e0e3935bed025b8e42897a10f33e5; README 68858/1579 -> 68975/1580; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
