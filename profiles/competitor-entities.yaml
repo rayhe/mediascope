@@ -29871,3 +29871,59 @@ type_c_1264_prorata_dpcmo_collective_licensing_deal_oct06_10am:
   verdict_detail: mechanism_documented
   yaml_parse_clean: true
   ascii_only: true
+
+type_c_1269_poland_uokik_google_publisher_remuneration_charges_oct06_3pm:
+  mechanism_id: 993
+  type: 'financial_incentive_mapping'
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1269
+  iteration_type: 'C'
+  date_analyzed: '2026-10-06'
+  time_pdt: '15:00'
+  scheduled_job_id: 'mediascope-daily-iteration'
+  goal_id: 'goal_54093bda4145'
+  job_id: 'mediascope-meta-wearables-press-analysis'
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'UOKiK Google publisher-remuneration abuse charges (Oct 5, 2026) - FIRST dedicated corpus mechanism on regulatory adjudication of remuneration TERMS: Poland''s antitrust watchdog charges Google with abusing dominance in press-publisher remuneration negotiations (Search/News/Discover); information-imbalance / "illusory negotiations" theory; 70+ Polish publications licensed; fine up to 10% of turnover'
+  block_key: 'type_c_1269_poland_uokik_google_publisher_remuneration_charges_oct06_3pm'
+  key_design_note: 'colon-form top-level key, no numeric mechanism-id substring (no 993 string per #715)'
+  finding: 'FIRST dedicated corpus mechanism on regulatory adjudication of publisher-remuneration TERMS: on Oct 5 2026 Poland''s Office of Competition and Consumer Protection (UOKiK) charged Google with abusing its dominant market position while negotiating content payments with domestic media publishers. THE CHARGES: the remuneration Google pays for displaying articles and snippets in search results, Google News, and Discover; the named companies are Alphabet Inc, Google LLC, Google Ireland Limited, and Google Poland. THE THEORY: Google failed to provide publishers with the data needed to assess offers, creating an information imbalance that made negotiations illusory and tended toward Google imposing terms (UOKiK President Tomasz Chrostny: "Big tech companies cannot place themselves above the law"). GOOGLE''S DEFENSE: reviewing the decision; licensing deals with over 70 publications in Poland; "the only platform with a structured approach to remunerating news publishers at scale." THE LAW: a 2024 Polish copyright amendment implementing the EU directive under which online services may use press publishers content in return for remuneration. THE STAKES: maximum fine 10% of company turnover. THE SEPARATION: UOKiK says the probe is separate from the European Commission''s December 2025 investigation into whether Google used publishers'' content in its AI services without adequate compensation or a right to object, and is being carried out independently following an agreement with the Commission. CONTEXT: in December 2024 Polish e-commerce group Allegro''s Ceneo price-comparison platform sued Alphabet for 2.33 billion zlotys ($568 million) over alleged anti-competitive behaviour. THE TYPE C NEXUS: a third documented leg of the Google-publisher money-flow family (with m801''s ad-tech remedies leverage and the m984/m987 AdX damages pipeline): here the money flow is statutory remuneration for press publishers, and the mechanism is a national regulator adjudicating the fairness of the negotiation TERMS, not the existence of the right. Distinct from #12 regulatory-bargaining (m834: the state sets the negotiation BATNA as a levy) and from the individual licensing deals in the corpus: UOKiK polices HOW the price is negotiated. No coverage-tone pair scored; tone NOT_SCORED. MANUAL / qualitative ONLY per the Aug 28 2026 standing rule. NOT a falsification-family member (ledger holds at 54). No new direction (fortieth absent by design; thirty-fifth through thirty-ninth stand).'
+  verdict: 'mechanism_documented'
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  falsification_family_member: false
+  falsification_family: 'NOT a member (ledger holds at 54 per the #754 convention; regulatory terms-adjudication documentation claims no slot; no coverage-tone pair scored, so no uniform-prediction test; the forty-eighth member-claim form present (profiles/financial-times.yaml); the forty-ninth (m956) and fiftieth (m959) present 3x each (profiles/careers/journalists.yaml); the fifty-first (m973) present 3x (profiles/news-corp.yaml); the fifty-second (m974) present 5x (profiles/careers/journalists.yaml); the fifty-third (m982) present 2x (profiles/the-verge.yaml); the fifty-fourth (m985) member-claim form present (profiles/guardian.yaml); the fifty-fifth member-claim form absent repo-wide)'
+  novelty: 'FIRST dedicated corpus mechanism on the UOKiK publisher-remuneration charges (Oct 5, 2026). Pre-existing corpus state: zero UOKiK / Chrostny hits repo-wide pre-commit; Poland/Polish hits repo-wide are all unrelated (product-polish adjective forms, e.g. journalists.yaml Gear-desk review titles); zero remuneration-terms-adjudication hits; the regulatory-bargaining direction (m834) covers state-set levy BATNAs, not terms adjudication; 3/3 source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). Pre-commit greps per #715: zero test_type_c_1269 files on disk (glob); no "Type C #1269" in git log (--grep); max numeric mechanism_id 992 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash 993 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1269 in key, no 993 substring); forty-eighth member-claim form present (profiles/financial-times.yaml); forty-ninth + fiftieth present 3x each (profiles/careers/journalists.yaml); fifty-first present 3x (profiles/news-corp.yaml); fifty-second present 5x (profiles/careers/journalists.yaml); fifty-third present 2x (profiles/the-verge.yaml); fifty-fourth present (profiles/guardian.yaml); fifty-fifth member-claim form absent repo-wide pre-commit; fortieth direction-claim form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. Method MANUAL / qualitative-only per the Aug 28 2026 standing rule (delegated 10-angle scout + 2 main-run browser.search verification sets: (a) UOKiK charges confirmation via Reuters wire + independent re-hosts, (b) 70+ publications / 10% turnover / EC-probe separation corroboration; 0 browser.open; excerpt-bounded per #503). Scout rejections on main-run verification: Google-EU-court DMA Art 6(11) search-data-sharing suspension bid -> REJECTED (no money flow; access regime, not a financial relationship); UK CMA choice-screen fair-attribution proposals -> REJECTED (attribution obligation, no financial transfer); SPUR publisher usage-proof standard -> REJECTED (measurement infrastructure, no disclosed money); CommBank x Copyright Agency GenAI licence -> REJECTED (counterparty out of scope: bank licensee, no AI lab); OpenAI India publisher pipeline -> SATURATED (in-corpus #709/#759 template; outside the window); News Corp v Perplexity -> SATURATED (no new development; Oct 2024 filing re-indexes); Chegg/Penske AI Overviews dismissal -> SATURATED (explicit saturation list); Google AI-contribution pilot -> SATURATED (explicit saturation list); DOJ fair-use brief / Everything-PR tracker / OpenAI visual ads -> SATURATED (explicit saturation list). SELECTED: UOKiK x Google publisher-remuneration charges (Oct 5). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: 'Iteration #1269 Type C is the FIFTH and CLOSING leg of the 1265-1269 window (D #1265 -> E #1266 -> A #1267 -> B #1268 -> C #1269 per the #565 anchor + rotation guard). Committed predecessors verified pre-commit: #1268 Type B (main 84a03ed1 / anchor d05f5045 / doc-sync ea7100bb / log-hash 82d9992c), #1267 Type A (main 4e5f2404 / anchor f610f0f7 / doc-sync e2f3cf13 / log-hash d6ac56a1), #1266 Type E (main d1eeac3a / anchor 1f0243be / doc-sync 700c0909 / log-hash 3af8e551). Next: #1270 Type D opens the 1270-1274 window and renders the #1265-launched background-suite verdict per #795; the 1260-1264 window is VERIFIED CLOSED. Rotation guard: this run''s main commit is the anchor per #565; ANCHORED_SHA patched post-commit. The #1265 background suite is OBSERVED this run only (goal hidden_files type_d_1265_full_suite.log at 1510 bytes, last write Oct 6 2026 18:59:55 UTC (~3h stale at this run''s ~15:00 PDT check), zero live pytest processes - NOT-ALIVE (observation, not a verdict). This run neither re-launches, kills, nor writes to the suite.'
+  concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (competitor-entities.yaml m993 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+  connects_to: [834, 801]
+  confounders:
+  - strength: strong
+    text: 'Excerpt-bounded sourcing per #503: 0 browser.open this run; all facts are search-excerpt renders (Reuters wire via re-hosts + techresearchonline independent coverage + Euronext financial-news re-host); the UOKiK statement original was not read in full.'
+  - strength: strong
+    text: 'Charges are allegations (suspected), not findings; Google disputes the framing via its 70+ licensing-deals claim and the structured-approach defense.'
+  - strength: medium
+    text: 'The 10% figure is the statutory maximum fine for abuse of dominance, not an imposed or proposed quantum.'
+  - strength: medium
+    text: 'Reuters is the single wire source re-hosted across the index; the three landed URLs are not three independent newsroom investigations.'
+  sources:
+  - url: https://www.reuters.com/legal/litigation/polish-regulator-suspects-google-abused-dominant-position-publisher-payment-2026-10-05/
+    what: 'Reuters (Marta Maciag and Rafal Wojciech Nowak, Oct 5 2026): UOKiK charges - remuneration for articles and snippets in search results, Google News, Discover; Alphabet Inc / Google LLC / Google Ireland Limited / Google Poland named; Google Poland: licensing deals with over 70 publications in Poland, the only platform with a structured approach to remunerating news publishers at scale; information imbalance makes negotiations illusory, tending toward Google imposing terms; Chrostny: Big tech companies cannot place themselves above the law; 2024 Polish copyright amendment implementing the EU directive; max fine 10% of turnover; separate from the EC December-2025 AI-services probe; probe independent following agreement with the Commission'
+    accessed: '2026-10-06'
+    novel: true
+  - url: https://techresearchonline.com/news/google-poland-publisher-payment-antitrust-probe/
+    what: 'techresearchonline.com independent coverage: UOKiK statement of Oct 5 2026 - Google failed to share necessary data with news publishers when negotiating remuneration for displaying articles and snippets, producing an information imbalance that made negotiations unfair and illusory and leaned toward Google''s terms'
+    accessed: '2026-10-06'
+    novel: true
+  - url: https://live.euronext.com/en/financial-news/polish-regulator-suspects-google-abused-dominant-position-publisher-payment-talks
+    what: 'Euronext financial-news re-host of the Reuters wire: full charge-sheet render (named entities, 70+ publications, 10% turnover maximum, EC-probe separation, Ceneo/Allegro $568M damages-suit context)'
+    accessed: '2026-10-06'
+    novel: true
+  browser_opens: 0
+  verdict_detail: 'mechanism_documented'
+  yaml_parse_clean: true
+  ascii_only: true
