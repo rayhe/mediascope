@@ -534,6 +534,7 @@ class TestMechanismNovelty:
         out = _git("log", "--format=%H %s", "--grep=Type E #1256")
         own = {
             "09867f9d", "bed56aa5", "fb224e86", "8971b183",
+            "cb1e04f9",
         }
         head = _git("rev-parse", "HEAD").stdout.strip()[:8]
         hits = [line for line in out.stdout.splitlines() if line.strip()]
