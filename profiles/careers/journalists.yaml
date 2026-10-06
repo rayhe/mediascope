@@ -28184,3 +28184,89 @@ mike_isaac_type_b:
       source_urls:
       - https://biztoc.com/x/6411946169c44995
       - https://portside.org/2026-09-18/microsoft-and-openai-workers-worry-about-largest-theft-labor-history
+
+kelsey_vlamis_type_b:
+  name: Kelsey Vlamis
+  publication: business-insider
+  mechanism_ids: [983]
+  notes: 'Type B #1253 (Oct 6 2026): mechanism 983 THESIS-CONSISTENT observation, NOT a falsification-family member (ledger holds at 53) - FIRST dedicated Type B pair on Kelsey Vlamis (Business Insider senior reporter; zero dedicated type_b key pre-commit per the #643 convention). Same writer, same outlet, about one month apart: Vlamis covers Meta''s Muse shopping agent through a trust-skepticism consumer-risk register (-0.30 MANUAL ILLUSTRATIVE, Sep-29 arm, address-leak lead + 53%-distrust stat) and covers OpenAI''s cyber-defense open letter through a good-faith steward service register (+0.25, circa Aug-30 arm, "not marketing... really concerned" expert validation). Illustrative delta (OpenAI minus Meta) +0.55: directionally softer on the deal partner. The outlet holds a documented OpenAI financial tie via its parent (Axel Springer x OpenAI content-licensing deal, tens of millions euros, 3-year, in-corpus business-insider.yaml, verified 2026-08-30), so the direction MATCHES the uniform payer-softening prediction - it does not falsify it. Genre mismatch (service explainer vs trust-survey news) is the STRONG confound; topic asymmetry and mirror attestation MODERATE; date estimate WEAK. BI''s own m399 (Feb-2026 OpenAI profitability-skepticism mechanism, in-corpus) is the intra-outlet counterpoint: the outlet is not uniformly soft on OpenAI. Excerpt-tier per #503, 0 browser.open. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+  competitor_coverage:
+    type_b_1253_kelsey_vlamis_bi_muse_shopping_trust_vs_openai_cyber_defense_oct06_1am:
+      block_key: type_b_1253_kelsey_vlamis_bi_muse_shopping_trust_vs_openai_cyber_defense_oct06_1am
+      mechanism_id: 983
+      iteration: 1253
+      type: B
+      date: '2026-10-06 01:00 PDT'
+      test_file: tests/test_type_b_1253_kelsey_vlamis_bi_muse_shopping_trust_vs_openai_cyber_defense_oct06_1am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Kelsey Vlamis
+      publication: business-insider
+      window: '1250-1254 window FOURTH leg (D #1250 -> E #1251 -> A #1252 -> B #1253 -> C #1254)'
+      design: 'Type B journalist cross-entity tracking: Kelsey Vlamis (Business Insider senior reporter) on Meta''s Muse shopping agent vs OpenAI''s cyber-defense open letter, same writer, same outlet, about one month apart (Sep 29 vs circa Aug 30, 2026). The outlet holds a documented OpenAI financial tie via its parent (Axel Springer x OpenAI content-licensing deal, tens of millions euros over 3 years, in-corpus business-insider.yaml, verification_date 2026-08-30), so the pair ADJUDICATES the uniform payer-softening prediction at the journalist level: the prediction expects the payer (OpenAI) to draw the softer register. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'AI agents are ready to shop for you - if you can trust them'
+        title_note: 'Headline em dash rendered as hyphen per the repo ASCII rule; verbatim headline uses an em dash.'
+        date: '2026-09-29'
+        outlet: business-insider
+        author_byline: 'Kelsey Vlamis'
+        entity: meta
+        url: https://biztoc.com/x/88cb79d5977ed493
+        url_note: 'BI canonical did not surface in search listings; mirror URL copied verbatim from this run''s Full-URL listing (search index 3); headline-attributed via the dejavu.org BI author-page mirror (Kelsey Vlamis "Latest", Sep 29, 2026) and the biztoc timestamp "appeared on businessinsider.com, 2026-09-29 08:11:01"; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline author-page-attested: dejavu BI author mirror lists the piece under Kelsey Vlamis "Latest")'
+        key_quotes:
+        - 'Trust-incident lead (verbatim): "A tech reviews YouTuber said Muse gave his address to a potential buyer on Facebook Marketplace and arranged a pickup without his knowledge."'
+        - 'Distrust stat (verbatim): "A survey found 53% of respondents were uncomfortable with an AI agent making a purchase for them."'
+        - 'Company response (verbatim): "While Muse can make purchases on users'' behalf, Meta says the agent will always ask for approval first."'
+        tone_MANUAL_ILLUSTRATIVE: -0.30
+        tone_reading: 'Trust-skepticism consumer-risk register: leads with an address-leak incident and a majority-distrust stat; Meta''s approval-first response is carried but the frame is consumer risk, not capability celebration.'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      openai_arm:
+        title: 'OpenAI says we''re running out of time to act on cyber defense. Here''s what you can actually do about it.'
+        date: '2026-08-30 (estimated)'
+        outlet: business-insider
+        author_byline: 'Kelsey Vlamis'
+        entity: openai
+        url: https://zittrex.com/openai-says-were-running-out-of-time-to-act-on-cyber-defense-heres-what-you-can-actually-do-about-it/
+        url_note: 'BI canonical did not surface in search listings; mirror URL copied verbatim from this run''s Full-URL listing (search index 3); byline aggregator-attested (three Flipboard excerpts carry "Business Insider - Kelsey Vlamis" for the exact headline); date estimated from crawl-relative timestamps (glideslope "Business Insider - 5d ago" on a circa Sep-4 crawl; Flipboard crawls circa 37 days before Oct 6); zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline aggregator-attested: 3x Flipboard "Business Insider - Kelsey Vlamis")'
+        key_quotes:
+        - 'Steward frame (verbatim): "OpenAI published an open letter on Thursday, joined by over 100 organizations, warning that the window to shore up cyber defenses was quickly closing as AI-enabled attacks become more sophisticated and widespread."'
+        - 'Service frame (verbatim, em dash rendered as hyphen): "This week brought another warning from tech leaders about the growing threat of AI cyber attacks - and I am once again asking what I, a regular person, am supposed to do about it."'
+        - 'Sincerity validation (verbatim): "I don''t think they''re coming out to do marketing," Kevin Powers, faculty director for cybersecurity, risk and governance at Boston College Law School, said. "I think they''re really concerned."'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        tone_reading: 'Good-faith steward service register: OpenAI is cast as a responsible industry steward issuing a collective warning; a third-party expert explicitly validates sincerity ("not marketing... really concerned"); first-person service framing ("what I, a regular person, am supposed to do").'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.55
+      delta_reading: 'Illustrative delta (OpenAI minus Meta) +0.55: directionally softer on the deal partner. At an outlet whose parent holds a documented OpenAI content-licensing deal (Axel Springer x OpenAI, tens of millions euros, 3-year, in-corpus business-insider.yaml, verification_date 2026-08-30), the uniform payer-softening prediction points exactly this way - the observation MATCHES the prediction rather than failing it. Genre mismatch is the STRONG confound: a first-person service explainer and a trust-survey news piece run different editorial registers by genre, not necessarily by entity.'
+      confounders:
+      - 'Genre/register mismatch: the OpenAI arm is a first-person service explainer ("what can I do about it") while the Meta arm is trust-survey news; editorial registers are genre-conditioned, not necessarily entity-conditioned. Ranked STRONG.'
+      - 'Topic asymmetry: cybersecurity collective-action open letter vs shopping-agent consumer trust; different news pegs with different intrinsic valences. Ranked MODERATE.'
+      - 'Mirror attestation: no canonical businessinsider.com URLs surfaced in any Full-URL listing; Meta-arm byline author-page-attested (dejavu BI author mirror), OpenAI-arm byline aggregator-attested (3x Flipboard); excerpt-tier evidence only. Ranked MODERATE.'
+      - 'Parent-level deal: the Axel Springer x OpenAI licensing tie sits at the parent, not the BI newsroom; newsroom independence may attenuate any incentive. Ranked MODERATE for causal purposes.'
+      - 'Date estimate: the OpenAI arm date (circa 2026-08-30) is estimated from crawl-relative timestamps, not a published timestamp; arms about one month apart. Ranked WEAK.'
+      - 'Single-pair n=1 per arm: Vlamis''s full register range on either entity is untested by this pair. Ranked WEAK.'
+      counter_evidence:
+      - 'BI''s own m399 (Feb-2026, in-corpus business-insider.yaml): the same outlet ran rigorous OpenAI profitability-skepticism framing ("$143B projected losses", "cash incinerator") - the outlet is not uniformly soft on OpenAI, bounding any incentive read of this pair.'
+      - 'The pair could invert on a different peg: Vlamis''s harder OpenAI coverage (security-failure or valuation-skepticism pegs) is untested here.'
+      - 'No documented BI x Meta financial tie exists in the corpus, so the Meta arm is the no-deal baseline by default.'
+      connects_to: [399]
+      verdict: 'thesis_consistent_not_proven'
+      finding: 'Vlamis (BI) covers Meta''s Muse shopping agent through a trust-skepticism consumer-risk register (-0.30 MANUAL ILLUSTRATIVE, Sep-29 arm, address-leak lead + 53%-distrust stat) and covers OpenAI''s cyber-defense open letter through a good-faith steward service register (+0.25, circa Aug-30 arm, "not marketing... really concerned" expert validation); illustrative delta (OpenAI minus Meta) +0.55, directionally softer on the deal partner. THESIS-CONSISTENT observation, NOT a falsification-family member: BI''s parent Axel Springer holds a documented OpenAI content-licensing deal (tens of millions euros, 3-year, in-corpus, verified 2026-08-30), so the uniform payer-softening prediction points exactly this way - the observation matches the prediction rather than failing it. Genre mismatch is the STRONG confound; BI''s own m399 profitability-skepticism mechanism is the intra-outlet counterpoint. Ledger holds at 53. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'NOT a falsification-family member. Same-journalist, same-outlet pair at a deal-holding outlet (Axel Springer x OpenAI licensing deal, in-corpus): the OpenAI arm (+0.25) runs softer than the Meta arm (-0.30), illustrative delta +0.55 - the direction the uniform payer-softening prediction expects, so the prediction is matched, not failed. A falsification requires the deal partner to draw the harder register (the m982/m974 pattern); that did not happen here. Confounds (genre STRONG, topic/mirror/parent-level MODERATE, date/single-pair WEAK) block any confirming claim; verdict thesis_consistent_not_proven. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 53
+      ledger_note: 'Ledger holds at 53 this run (m983 thesis-consistent observation, NOT a falsification-family member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (1 file); forty-ninth intact in profiles/careers/journalists.yaml (1 file); fiftieth intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first intact in profiles/news-corp.yaml (3 occurrences); fifty-second intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. Thesis-consistent direction noted with STRONG genre confound. No ledger advance (holds at 53).'
+      research_method: 'Delegated scout (20 browser.search queries across candidate journalists; SELECTED Vlamis as the tightest in-window same-journalist pair with URL-complete arms; 15 candidates rejected with numbered audit: Ashworth novelty-saturated; Johnson/Lawler/Gibbs/Bradshaw/Murphy/Gurman/Stein/Song/Zeff/Chokkattu hard-excluded or mechanismed; Reuters wire no named journalist; Dot hands-on byline excluded; "move on" piece byline unattested; Amazon-blocks-Muse URL incomplete) + 2 main-run browser.search verification sets (exact-headline Meta-arm search returning the biztoc mirror verbatim with businessinsider.com 2026-09-29 08:11:01 timestamp and dejavu BI author-page attestation; exact-headline OpenAI-arm search returning the zittrex mirror verbatim with 3x Flipboard "Business Insider - Kelsey Vlamis" byline attestation; corpus saturation greps: zero kelsey_vlamis_type_b key, both URLs zero-hit repo-wide, both headlines zero-hit repo-wide, no "Type B #1253" in git log; METHODS CORRECTION: the scout reported no BI-OpenAI financial tie, but the main-run corpus check surfaced the documented Axel Springer x OpenAI licensing deal in business-insider.yaml (tens of millions euros, 3-year, verification_date 2026-08-30) - the pair reclassifies from scout-proposed control-case to thesis-consistent observation), 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical businessinsider.com URLs constructed. ASCII-only, no em dashes (headline em dashes rendered as hyphens, noted).'
+      novelty: 'FIRST dedicated Type B pair on Kelsey Vlamis (m983); zero test_type_b_1253 files on disk pre-commit (glob, own file only); no "Type B #1253" in git log pre-commit (--grep); max numeric mechanism_id 982 pre-commit; zero numeric/underscore/dash nine-eight-three mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1253 in key, no 983 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); both arm headlines zero-hit repo-wide pre-commit; no #1253 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 68685/1577 pre-commit. NOT a falsification-family member (thesis-consistent observation); fifty-fourth member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; forty-eighth through fifty-third member forms intact. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1245-launched full suite (goal hidden_files type_d_1245_full_suite.log) observed NOT-ALIVE at this run''s check (0 pytest processes; last write Oct 5 2026 11:04 PM PDT, about 2h before this run''s 01:02 AM PDT check; dot stream stalled at about 27% with F marks per the known recurring-failure pattern - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1255 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m983 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://biztoc.com/x/88cb79d5977ed493
+      - https://zittrex.com/openai-says-were-running-out-of-time-to-act-on-cyber-defense-heres-what-you-can-actually-do-about-it/
