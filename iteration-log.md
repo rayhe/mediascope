@@ -47329,12 +47329,12 @@ README stats table 69796/1589 -> 69919/1590 (+123/+1); README test-table row; do
 ### Push status
 Push status (this run, Oct 6 2026 ~12:xx PDT): doc-sync + log-hash followup pushed and ls-remote-verified (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
 
-## #1266 Type E: podcast sentiment 176th verification cycle (GF episode 503 HOLDS - seventh full verification since its #1236 first surfacing, ~25h after the Oct-5 11:00am publication; forty-third verification since the Sep-28 502 release, ~193h; GF pure-re-surface streak BREAKS at fourteen - moon.fm directory NEW verbatim URL key; EHE 57-day hold (same calendar day as #1256/#1261); AS 176th no-match, ca75e30b RE-SURFACES + 95903853 NEW to surface set, dec56140 absence streak ADVANCES to nine, Tracked Sources 175->176; Press 7 re-surfaces + ZERO new keys (streak RESTARTS at one); recency frontier HOLDS at Oct 4; monitoring-only per the Aug 28 2026 standing rule; NOT artifact-grade; ledger holds at 54; no analysis.json update) - Type E SECOND leg of the 1265-1269 window (Oct 6 2026, 12:00 PM PDT; main commit d1eeac3a / anchor 1f0243be / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69919/1590 -> 70012/1591 (+93/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1266 Type E: podcast sentiment 176th verification cycle (GF episode 503 HOLDS - seventh full verification since its #1236 first surfacing, ~25h after the Oct-5 11:00am publication; forty-third verification since the Sep-28 502 release, ~193h; GF pure-re-surface streak BREAKS at fourteen - moon.fm directory NEW verbatim URL key; EHE 57-day hold (same calendar day as #1256/#1261); AS 176th no-match, ca75e30b RE-SURFACES + 95903853 NEW to surface set, dec56140 absence streak ADVANCES to nine, Tracked Sources 175->176; Press 7 re-surfaces + ZERO new keys (streak RESTARTS at one); recency frontier HOLDS at Oct 4; monitoring-only per the Aug 28 2026 standing rule; NOT artifact-grade; ledger holds at 54; no analysis.json update) - Type E SECOND leg of the 1265-1269 window (Oct 6 2026, 12:00 PM PDT; main commit d1eeac3a / anchor 1f0243be / doc-sync 700c0909; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69919/1590 -> 70012/1591 (+93/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
 - Main commit `d1eeac3a` (d1eeac3afc6a95755fd8f9e9bb5a3ed75b7b30dc) - verified via git rev-parse
 - Anchor followup `1f0243be` (1f0243be...; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup; README 69919/1590 -> 70012/1591; test-table row; ARCHITECTURE tree row; iteration-log entry; podcast-sentiment.md #1266 entry (176th cycle); test-file constants patched per #719)
+- Doc-sync `700c0909` (700c0909005763c6277fc204cb23d5a3239d3a31; README 69919/1590 -> 70012/1591; test-table row; ARCHITECTURE tree row; iteration-log entry; podcast-sentiment.md #1266 entry (176th cycle); test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
@@ -47373,5 +47373,5 @@ README stats table 69919/1590 -> 70012/1591 (+93/+1); README test-table row; doc
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run, Oct 6 2026 ~12:5x PDT): PENDING - updated in the log-hash followup after the atomic push + ls-remote verification (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
+Push status (this run, Oct 6 2026 ~12:5x PDT): doc-sync + log-hash followup pushed and ls-remote-verified (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
 
