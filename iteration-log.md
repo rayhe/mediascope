@@ -47014,7 +47014,7 @@ Push status (this run, Oct 6 2026 ~04:xx PDT): main + anchor followup pushed and
 README stats table 69150/1582 -> 69238/1583 (+88/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 (88 collected, 13 classes).
 
 ### Background suite (per #795)
-- The #1255-launched full suite verdict belongs to #1260: this run OBSERVES only. Observed ALIVE at this run's check (~10% progress, F marks per the known recurring-failure pattern, pytest processes live). This run neither re-launches, kills, nor writes to the suite.
+- The #1255-launched full suite verdict belongs to #1260: this run OBSERVES only. Observed ALIVE at this run's ~12:05 UTC check (~10% progress, F marks per the known recurring-failure pattern, pytest processes live). RE-CHECKED at this run's ~12:19 UTC close-out: NOT-ALIVE (zero live pytest processes; pid 161564 gone; last log write 12:11:25 UTC, ~8 min before the check; dot stream stalled at ~10%). State change within the run is recorded as observation only. This run neither re-launches, kills, nor writes to the suite.
 - #1257's TestGuardLifecycle1257 run post-main-commit: 15 passed, 2 failed (the no-Type-B-#1258-in-git-log and zero-986-numeric pins flip BY DESIGN - the #1191-class self-trip; documented in TestStalenessPins1258).
 
 ### Push status
