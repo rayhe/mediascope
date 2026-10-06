@@ -46739,3 +46739,63 @@ Push status (this run, Oct 6 2026 ~01:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+### Doc-sync ratchet
+README stats table 68608/1576 -> 68685/1577 (+77/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 (77 collected, 14 classes).
+
+### Background suite (per #795)
+- The #1245-launched full suite verdict belongs to #1255: this run OBSERVES only. This run neither re-launches, kills, nor writes to the suite.
+- Observed NOT-ALIVE at this run's check (0 pytest processes; last write Oct 5 2026 11:04 PM PDT, about 2h before this run's 01:02 AM PDT check; dot stream stalled at about 27% with F marks per the known recurring-failure pattern - observed, not adjudicated).
+
+### Push status
+Push status (incoming, Oct 6 2026 ~01:xx PDT): main 49b7e7ab + anchor followup d29a1189 pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1253 Type B: m983 Kelsey Vlamis (BI) Meta Muse shopping-agent trust-skepticism (-0.30 MANUAL ILLUSTRATIVE, NEW Sep-29 arm, mirror-attested) vs OpenAI cyber-defense open-letter good-faith steward (+0.25, NEW circa Aug-30 arm, mirror-attested); illustrative delta (OpenAI minus Meta) +0.55 directionally softer on the deal partner; THESIS-CONSISTENT observation, NOT a falsification-family member (BI parent Axel Springer x OpenAI licensing deal, tens of millions euros, 3-year, in-corpus business-insider.yaml, verified 2026-08-30; ledger holds at 53); FIRST dedicated Type B pair on Vlamis; METHODS CORRECTION: scout reported no BI-OpenAI tie, main-run corpus check surfaced the in-corpus Axel Springer deal (reclassifies scout-proposed control-case to thesis-consistent observation); genre mismatch STRONG confound; BI m399 profitability-skepticism intra-outlet counterpoint; MANUAL ILLUSTRATIVE ONLY per Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update - Type B FOURTH leg of the 1250-1254 window (Oct 6 2026, 01:00 AM PDT; main commit 49b7e7ab / anchor d29a1189 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68685/1577 -> 68770/1578 (+85/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `49b7e7ab` (49b7e7aba2ac8328a24101e3e97de2656009ba7e) - verified via git rev-parse
+- Anchor followup `d29a1189` (d29a11895ff419924934f12ccc6155249224a6ae; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 68685/1577 -> 68770/1578; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Research method
+- 1 delegated scout (20 browser.search queries across candidate journalists): SELECTED Vlamis as the tightest in-window same-journalist pair with URL-complete arms; REJECTED 15 with numbered audit (Ashworth novelty-saturated; Johnson/Lawler/Gibbs/Bradshaw/Murphy/Gurman/Stein/Song/Zeff/Chokkattu hard-excluded or mechanismed; Reuters wire no named journalist; Dot hands-on byline excluded; "move on" piece byline unattested; Amazon-blocks-Muse URL incomplete).
+- 2 main-run browser.search verification sets: (a) exact-headline "AI agents are ready to shop for you" returning the biztoc mirror verbatim with businessinsider.com 2026-09-29 08:11:01 timestamp and dejavu BI author-page attestation (Kelsey Vlamis "Latest", Sep 29, 2026); (b) exact-headline "OpenAI says we're running out of time to act on cyber defense" returning the zittrex mirror verbatim with 3x Flipboard "Business Insider - Kelsey Vlamis" byline attestation. 0 browser.open per #503 (excerpt-bounded).
+- METHODS CORRECTION: the scout reported no BI-OpenAI financial tie, but the main-run corpus check surfaced the documented Axel Springer x OpenAI content-licensing deal in business-insider.yaml (tens of millions euros, 3-year, verification_date 2026-08-30; "Creates structural incentive to maintain deal. Does not prove editorial direction."). The pair reclassifies from scout-proposed control-case to thesis-consistent observation. Scout's financial-tie miss is logged here as a methods audit note.
+- Pre-commit novelty greps per #715: zero test_type_b_1253 files on disk (glob, own file only); no "Type B #1253" in git log (--grep); max numeric mechanism_id 982 in profiles/ pre-commit; zero numeric/underscore/dash nine-eight-three mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1253 in key, no 983 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); both arm headlines zero-hit repo-wide pre-commit.
+- ASCII-only, no em dashes (headline em dashes rendered as hyphens, noted in block).
+
+### Findings
+- m983 (profiles/careers/journalists.yaml, NEW top-level kelsey_vlamis_type_b key per the #643 convention): Vlamis covers Meta's Muse shopping agent through a trust-skepticism consumer-risk register (-0.30 MANUAL ILLUSTRATIVE, Sep-29 arm: address-leak lead + 53%-distrust stat, Meta approval-first response carried) and covers OpenAI's cyber-defense open letter through a good-faith steward service register (+0.25, circa Aug-30 arm, date estimated from crawl-relative timestamps: "not marketing... really concerned" expert validation, first-person service framing). Illustrative delta (OpenAI minus Meta) +0.55.
+- The uniform payer-softening prediction EXPECTS this direction at a deal-holding outlet (Axel Springer x OpenAI licensing deal, in-corpus): the observation MATCHES the prediction rather than failing it. m983 is therefore NOT a falsification-family member; ledger holds at 53. Verdict thesis_consistent_not_proven.
+- Confounds disclosed: STRONG genre/register mismatch (first-person service explainer vs trust-survey news); MODERATE topic asymmetry, mirror attestation (no canonical businessinsider.com URLs; Meta-arm byline author-page-attested, OpenAI-arm byline aggregator-attested), parent-level deal (newsroom independence may attenuate); WEAK date estimate (circa Aug-30), single-pair n=1.
+- Counter-evidence: BI's own m399 (Feb-2026, in-corpus) ran rigorous OpenAI profitability-skepticism framing ("$143B projected losses", "cash incinerator") - the outlet is not uniformly soft on OpenAI, bounding any incentive read.
+- MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant False; NOT artifact-grade; no analysis.json update). Correlation is not causation; hypothesis-generating only.
+
+### Pre-commit novelty greps
+- Zero test_type_b_1253 files on disk (glob, own file only); no "Type B #1253" in git log.
+- Max numeric mechanism_id 982 in profiles/ pre-commit (m982 verified at #1252).
+- Zero numeric/underscore/dash 983 mechanism key forms repo-wide pre-commit (needles format-built, own file excluded).
+- "## #1253" zero-hit in iteration-log pre-commit; no #1253 row in README/ARCHITECTURE test tables pre-commit; README stats 68685/1577 pre-commit.
+- Fortieth direction absent in profiles/; forty-eighth through fifty-third intact; fifty-fourth absent repo-wide - all GREEN pre-commit; #1252's max-982, zero-983 (all forms), and no-Type-B-#1253-in-git-log pins flip BY DESIGN at the main commit (the #1191-class self-trip family, pinned post-commit by TestStalenessPins1253 expecting the flips).
+
+### Rotation transparency
+- This run is iteration #1253 Type B, the FOURTH leg of the 1250-1254 window (D #1250 -> E #1251 -> A #1252 -> B #1253 -> C #1254 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1252 Type A (main c7ef5891 / anchor 9b9b0d16 / doc-sync a9e340b2 / log-hash aa3fb4b9), #1251 Type E (main ff9f8723 / anchor ffbc7210 / doc-sync e1d22ee5 / log-hash 0f53fde7).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1254 Type C closes the window; the #1245-launched background-suite verdict belongs to #1255 per #795.
+- Guard lifecycle note: #1252's max-982 + zero-983 (all forms) + no-Type-B-#1253-in-git-log + fortieth-absent + forty-eighth-intact + forty-ninth-intact + fiftieth-intact + fifty-first-intact + fifty-second-intact + fifty-third-present + no-fifty-fourth pins verified GREEN pre-commit this run (Type B lands m983 as a thesis-consistent observation, NOT a falsification member); the max-982, zero-983-numeric, and no-Type-B-#1253-in-git-log pins flip BY DESIGN at the main commit (the #1191-class self-trip family, pinned in TestStalenessPins1253).
+
+### Doc-sync ratchet
+README stats table 68685/1577 -> 68770/1578 (+85/+1); README test-table row (new #1253 row; #1252 row collapsed); docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 (85 collected, 13 classes).
+
+### Background suite (per #795)
+- The #1245-launched full suite verdict belongs to #1255: this run OBSERVES only. Observed NOT-ALIVE at this run's check (0 pytest processes; last write Oct 5 2026 11:04 PM PDT, about 2h before this run's 01:02 AM PDT check; dot stream stalled at about 27% with F marks per the known recurring-failure pattern - observed, not adjudicated). This run neither re-launches, kills, nor writes to the suite.
+
+### Push status
+Push status (this run, Oct 6 2026 ~01:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.

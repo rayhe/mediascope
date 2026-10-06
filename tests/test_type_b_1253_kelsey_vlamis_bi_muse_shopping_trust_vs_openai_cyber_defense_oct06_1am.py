@@ -775,5 +775,5 @@ class TestInFlightIsolation1253:
         assert set(staged) <= allowed, staged
 
 
-README_TEST_COUNT = 68685  # patched post-sync per #719
-README_FILE_COUNT = 1577  # patched post-sync per #719
+README_TEST_COUNT = 68770  # patched post-sync per #719
+README_FILE_COUNT = 1578  # patched post-sync per #719
