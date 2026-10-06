@@ -95,7 +95,7 @@ MECH_NUM = 979
 NEXT_NUM = 980  # integer only; key-form needles are format-built
 ITERATION = 1247
 
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "413a6731e686ae7d0988a35331945d830cd57bba"
 
 # Predecessor #1246 chain (verified via git rev-parse pre-commit).
 PRED_MAIN_1246 = "bedd352bbbbbf01049521dc1638fd67b98e320e4"
