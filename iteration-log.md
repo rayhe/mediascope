@@ -47376,13 +47376,13 @@ README stats table 69919/1590 -> 70012/1591 (+93/+1); README test-table row; doc
 Push status (this run, Oct 6 2026 ~12:5x PDT): doc-sync + log-hash followup pushed and ls-remote-verified (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
 
 
-## #1267 Type A: m991 WIRED Sep-29 Dots launch product-relay register (Reece Rogers, always-on agents as the answer to Meta Muse, +0.10 MANUAL ILLUSTRATIVE) vs carried WIRED x Meta Muse-dossier accountability register (-0.58, m988); illustrative delta (OpenAI minus Meta) +0.68 clean / +0.543 pooled, thesis_consistent_observation, NOT a falsification-family member (genre/peg confound STRONG); ledger holds at 54; scout #1 Verge Dots rejected (m965 double-count, #1247 precedent); 2 novel relay URLs zero-hit pre-commit - Type A THIRD leg of the 1265-1269 window (Oct 6 2026, 01:00 PM PDT; main commit 4e5f2404 / anchor f610f0f7 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70012/1591 -> 70084/1592 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 4e5f2404 / anchor f610f0f7 / doc-sync TBD / log-hash this commit
+## #1267 Type A: m991 WIRED Sep-29 Dots launch product-relay register (Reece Rogers, always-on agents as the answer to Meta Muse, +0.10 MANUAL ILLUSTRATIVE) vs carried WIRED x Meta Muse-dossier accountability register (-0.58, m988); illustrative delta (OpenAI minus Meta) +0.68 clean / +0.543 pooled, thesis_consistent_observation, NOT a falsification-family member (genre/peg confound STRONG); ledger holds at 54; scout #1 Verge Dots rejected (m965 double-count, #1247 precedent); 2 novel relay URLs zero-hit pre-commit - Type A THIRD leg of the 1265-1269 window (Oct 6 2026, 01:00 PM PDT; main commit 4e5f2404 / anchor f610f0f7 / doc-sync e2f3cf13; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70012/1591 -> 70084/1592 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 4e5f2404 / anchor f610f0f7 / doc-sync e2f3cf13 / log-hash this commit
 
 ### Commit hashes
 - Main commit `4e5f2404` (4e5f2404d38d7e3c761d7341805f46551ae76d65) - verified via git rev-parse
 - Anchor followup `f610f0f7` (f610f0f75d0b7b763edf1706539e3dd510a35164; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 70012/1591 -> 70084/1592; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync `e2f3cf13` (e2f3cf1369f3090949dde6a120ce9eb2fe95c65b; README 70012/1591 -> 70084/1592; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_a_1267_in_git_log_pin to the own-set form (HEAD admitted)
 
 ### Rotation transparency
@@ -47410,10 +47410,10 @@ README stats table 70012/1591 -> 70084/1592 (+72/+1); README test-table row; doc
 
 ### Background suite (per #795)
 - The #1265-launched full suite is OBSERVED this run only (verdict belongs to #1270): goal hidden_files type_d_1265_full_suite.log at 1510 bytes, last write Oct 6 2026 18:59:55 UTC (~1h50m stale at this run's ~13:50 PDT check), zero live pytest processes - NOT-ALIVE (observation, not a verdict). This run neither re-launches, kills, nor writes to the suite.
-- TestGuardLifecycle1266 staleness verification belongs to the log-hash followup (post-main-commit): the no-Type-A-#1267-in-git-log and zero-991 pins flip BY DESIGN at the main commit.
+- TestGuardLifecycle1266 staleness verification (this run, post-main-commit): 15 passed, 2 failed - the no-Type-A-#1267-in-git-log pin flips BY DESIGN at the main commit (the #1191-class self-trip) and the zero-991-numeric pin trips on the landed m991 block; the zero-991-underscore/dash pins stay green (no contiguous 991 key forms in the new files per the #715 literal discipline). Documented in TestStalenessPins1267.
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run, Oct 6 2026 ~1:xx PM PDT): TBD in the log-hash followup (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
+Push status (this run, Oct 6 2026 ~2:0x PM PDT): all four commits pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip 3af8e551 -> local tip, verified match post-push).
