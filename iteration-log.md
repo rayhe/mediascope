@@ -1,3 +1,42 @@
+## #1243 Type B: m977 Richard Lawler (The Verge, Vox Media) Meta 'attorney/client privilege' hats teen-safety accountability (-0.50 MANUAL ILLUSTRATIVE, NEW Sep-24 arm, mirror-attested) vs Apple John Ternus CEO-succession straight news (+0.05, NEW Sep-1 arm, mirror-attested); illustrative delta (Apple minus Meta) +0.55 register asymmetry in the Meta-hard direction; CONTROL-CASE, NOT a falsification-family member (ledger holds at 52); FIRST dedicated Type B pair on Lawler (m646 #687 was piece-level use only); Vox Media x OpenAI May-2024 deal disclosed as deal-holding context, comparator is Apple so the uniform payer-softening prediction is not adjudicated; peg asymmetry (misconduct-litigation vs CEO-succession) STRONG confound - Type B FOURTH leg of the 1240-1244 window (Oct 5 2026, 05:00 PM PDT; main commit f574d850 / anchor 14f2a13c / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67823/1567 -> 67920/1568 (+97/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main f574d850 / anchor 14f2a13c / doc-sync TBD / log-hash this commit
+
+### Commit hashes
+- Main commit `f574d850` (f574d8503446cdfa5c563cd20168950e988814a1) - verified via git rev-parse
+- Anchor followup `14f2a13c` (14f2a13c; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (patched by the log-hash followup; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_b_1243_in_git_log_pin to the own-set form (HEAD admitted)
+
+### Rotation transparency
+- This run is iteration #1243 Type B, the FOURTH leg of the 1240-1244 window (D #1240 -> E #1241 -> A #1242 -> B #1243 -> C #1244 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1242 Type A (main 9d35d369 / anchor cb788aa2 / doc-sync 926b6f7b / log-hash c0a4236c), #1241 Type E (main 600b3a8b / anchor 1c8b10c1 / doc-sync e58d7a64 / log-hash 19c97dfd), #1240 Type D (main f64ea8a3 / anchor a2bcfaa1 / doc-sync 888b95df / log-hash this-commit-verified).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1244 Type C closes the window; the #1240 background-suite verdict belongs to #1245 per #795.
+- Guard lifecycle note: #1242's max-976 + zero-977 + no-Type-B-#1243-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1243 test file, expecting "3 failed, 5 passed" on TestGuardLifecycle1242); #1242's fortieth-absent, forty-eighth-through-fifty-second-intact, and no-fifty-third guards stay green (m977 is a CONTROL-CASE, not a member).
+
+### Research method
+- Delegated scout (10-candidate sweep): SELECTED Richard Lawler (The Verge) - tightest in-window same-journalist pair with URL-complete arms (Sep-24 Meta / Sep-1 Apple, 23 days apart); REJECTED the scout's #1 Hugh Langley (BI) on main-run verification - already screened and rejected at #1208 ("Meta arm Aug 27, out of window"); re-selecting the identical arms would re-litigate a settled rejection. Scout #3 Feiner and #4 Belanger rejected (URL gaps on the Meta arms); scout's Lawler note corrected (m646 #687 was piece-level use, not journalist-level saturation).
+- 4 main-run browser.search verification sets: (a) exact-headline Meta-arm search - technewstube mirror verbatim (index 3) with "By Richard Lawler Sep 24, 2026, 7:50 pm" byline; (b) exact-headline Apple-arm search - technewstube mirror verbatim (index 2) with "By Richard Lawler Sep 1, 2026, 6:04 am" byline; (c) corpus saturation greps - zero richard_lawler_type_b key, both mirror URLs zero-hit repo-wide (git grep -F); (d) Vox Media x OpenAI deal re-surface (Reuters 2024-05-29 URL, in-corpus via profiles/the-verge.yaml, disclosed as re-surface). 0 browser.open per #503 (excerpt-bounded; theverge.com canonicals bot-blocked, did not surface).
+
+### Findings
+- m977 (profiles/careers/journalists.yaml, NEW top-level richard_lawler_type_b key per #643; competitor_coverage sub-key): Lawler runs the adversarial legal-accountability register on Meta's "attorney/client privilege" hats maneuver in the teen-safety lawsuits (-0.50 MANUAL ILLUSTRATIVE: "applied far too broadly") and straight succession news on Apple's CEO change (+0.05, Sep-1 arm: "For the first time since 2011"); illustrative delta (Apple minus Meta) +0.55 register asymmetry in the Meta-hard direction. Vox Media (The Verge's parent) holds the May-2024 OpenAI content-licensing deal (in-corpus), but the comparator is Apple rather than the deal partner, so the uniform payer-softening prediction is NOT adjudicated - CONTROL-CASE per the #1218 precedent, NOT a falsification-family member, ledger holds at 52. Peg asymmetry (misconduct-litigation vs CEO-succession) is the STRONG confound; mirror attestation MODERATE; 23-day gap WEAK. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.
+- Verdict: directionally_supported_not_proven.
+
+### Pre-commit novelty greps
+- Zero test_type_b_1243 files on disk (glob); no "Type B #1243" in git log (--grep).
+- Max numeric mechanism_id 976 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash 977 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded).
+- "richard_lawler_type_b" zero top-level key pre-commit; both mirror URLs zero-hit repo-wide pre-commit (git grep -F).
+- Block key zero-hit repo-wide pre-commit; no #1243 row in README/ARCHITECTURE test tables pre-commit; README stats 67823/1567 pre-commit.
+- Fortieth direction absent in profiles/; 35th-39th present; 48th (m952, 2x) + 49th (m956, 3x) + 50th (m959, 3x) + 51st (m973, 2x) + 52nd (m974, 5x) member forms present; 53rd absent pre-commit - all GREEN pre-commit; #1242's max-976, zero-977, and no-Type-B-#1243-in-git-log pins flip BY DESIGN at the main commit (the #1191-class self-trip, pinned post-commit by TestStalenessPins1243 expecting "3 failed, 5 passed").
+
+### In-gate defects (0 found)
+- In-gate: 86 passed + 11 deselected by design (TestAnchor 4 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins 1 per #565/#719/#721). 0 defects.
+
+### Background suite (per #795)
+- The #1240-launched full suite OBSERVED ONLY this run: 0 live pytest processes (3 pgrep hits were transient phantoms, gone on re-check), last write Oct 5 2026 14:59 PDT (~1.6h stale at this run's ~17:00 check), 2129 bytes, F mark in the dot stream - the suite is DEAD (observation, not a verdict). This run neither re-launches, kills, nor writes to it. Verdict and tombstone belong to #1245 (next Type D).
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
 ## #1242 Type A: m976 CNN x OpenAI Sep-28 Uthmeier temporary-injunction bounded absence at profiled nationals (temporal extension of mechanism #347; NOT a falsification-family member; ledger holds at 52) - Type A THIRD leg of the 1240-1244 window (Oct 5 2026, 04:00 PM PDT; main commit 9d35d369 / anchor cb788aa2 / doc-sync 926b6f7b; log-hash followup registers all hashes here per #721 (this commit); doc-sync 67749/1566 -> 67823/1567 (+74/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 - Hash chain: main 9d35d369 / anchor cb788aa2 / doc-sync 926b6f7b / log-hash this commit
 
