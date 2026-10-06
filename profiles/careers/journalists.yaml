@@ -24932,7 +24932,7 @@ eric_hal_schwartz:
 emma_roth_type_b:
   name: Emma Roth
   publication: the-verge
-  mechanism_ids: [782, 860, 953]
+  mechanism_ids: [782, 860, 953, 986]
   competitor_coverage:
     type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep10:
       block_key: type_b_918_emma_roth_verge_muse_creep_vs_dreambeans_rollout_sep10
@@ -25196,6 +25196,107 @@ emma_roth_type_b:
       - https://wesearch.press/s/openai-launches-dots-its-muse-competitor-032218cf
       - https://technewstube.com/theverge/1871645/openai-dots-muse-competitor/
       - https://muckrack.com/emma-roth/articles
+    type_b_1258_emma_roth_verge_apple_disk_access_steward_vs_meta_muse_creep_register_oct06_5am:
+      block_key: type_b_1258_emma_roth_verge_apple_disk_access_steward_vs_meta_muse_creep_register_oct06_5am
+      mechanism_id: 986
+      iteration: 1258
+      type: B
+      date: '2026-10-06 05:00 PDT'
+      test_file: tests/test_type_b_1258_emma_roth_verge_apple_disk_access_steward_vs_meta_muse_creep_register_oct06_5am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Emma Roth
+      publication: The Verge
+      window: '1255-1259 window FOURTH leg (D #1255 -> E #1256 -> A #1257 -> B #1258 -> C #1259)'
+      design: 'Within-journalist cross-entity register comparison: same writer (Emma Roth), same outlet (The Verge), Meta Muse AI agent (Sep-10-2026 hands-on) vs Apple macOS Full Disk Access policy news (Oct-2-2026), 22 days apart. The NEW Apple arm frames Apple as the proactive user protector and cites Meta''s Muse as the cautionary bad example - Meta is the foil, Apple the steward. Tests whether Roth''s steward register fires on Apple while the adversarial creep toolkit stays pinned to Meta.'
+      finding: 'FOURTH dedicated Type B mechanism on Emma Roth (after m782, m860, m953). Roth''s Apple Oct-2 piece (NEW arm, tone +0.30 MANUAL ILLUSTRATIVE) casts Apple as good-faith steward: new limits for full disk access on Mac because AI agents ''substantially'' increase risk; Meta''s Muse is named as the misbehaving counterexample (''Recent reports indicated that Meta''s Muse AI accessed user messages despite not having explicit permission''). Roth''s Meta Sep-10 hands-on (CARRIED from m782, tone -0.40, un-rescored per #807) fires the full adversarial creep toolkit: headline ''Meta''s Muse AI works and creeps me out''; ''the unnerving amount of information it autonomously gleaned about me largely overshadowed my experience''; ''given Meta''s track record on privacy over the years''; comment-seeking (''The Verge reached out to Meta ... but didn''t immediately hear back''); suspicion-as-conclusion (''That level of suspicion is going to be the real hurdle for Meta to overcome''). Illustrative delta (Apple minus Meta) +0.70. At an outlet whose parent advertising ecosystem documents Apple TV+ as an advertiser to owner-linked sports properties (in-corpus the-verge.yaml, Boehly sports-ownership advertising map) and whose PMX portfolio carries Apple entertainment ad spend, the uniform payer-softening prediction points Apple-soft - the observation MATCHES the prediction. Verdict: THESIS-CONSISTENT observation, NOT a falsification-family member; ledger holds at 54. Correlation is not causation. Hypothesis-generating only.'
+      meta_arm:
+        entity: meta
+        outlet: The Verge
+        author_byline: Emma Roth
+        title: 'Meta''s Muse AI works and creeps me out'
+        date: '2026-09-10'
+        status: 'CARRIED from m782 (#918), un-rescored per #807'
+        tone_MANUAL_ILLUSTRATIVE: -0.4
+        evidence_tier: 'CARRIED first-hand verbatim mirror tier (per m782); re-attested this run via dev.to source list (''The Verge, Emma Roth, ''Meta''s Muse AI works and creeps me out,'' Sept 10, 2026'')'
+        key_quotes:
+        - 'Headline (carried): ''Meta''s Muse AI works and creeps me out'''
+        - 'Behavioral peg (carried): ''the unnerving amount of information it autonomously gleaned about me largely overshadowed my experience'''
+        - 'Track-record anchor (carried): ''given Meta''s track record on privacy over the years'''
+        - 'Comment-seeking (carried): ''The Verge reached out to Meta ... but didn''t immediately hear back'''
+        - 'Suspicion-as-conclusion (carried): ''That level of suspicion is going to be the real hurdle for Meta to overcome'''
+      apple_arm:
+        entity: apple
+        outlet: The Verge
+        author_byline: Emma Roth
+        title: 'Apple will limit Mac disk access as AI agents ''substantially'' increase risk'
+        date: '2026-10-02'
+        tone_MANUAL_ILLUSTRATIVE: 0.3
+        url: https://technewstube.com/theverge/1872816/apple-limit-mac-disk-access-ai-agents-substantially/
+        url_note: 'Verge feed proxy URL copied verbatim from this run''s Full-URL listing (search index 4); byline block ''By Emma Roth Oct 2, 2026, 4:08 pm'' verbatim in proxy body; the theverge.com canonical did not surface in search listings (no URL constructed per policy); the URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via the technewstube Verge feed proxy and the WeSearch record: https://wesearch.press/s/apple-will-limit-mac-disk-access-as-ai-agents-substantially-ac153d8f, ''Emma Roth, Oct 2, 2026, 8:08 PM UTC'')'
+        key_quotes:
+        - 'Steward headline (verbatim): ''Apple will limit Mac disk access as AI agents ''substantially'' increase risk'''
+        - 'Steward frame (verbatim via proxy): ''Apple will add new limits for ''full disk access'' on Mac in response to risks posed by AI agents'''
+        - 'Meta-as-foil (verbatim via WeSearch key-facts): ''Recent reports indicated that Meta''s Muse AI accessed user messages despite not having explicit permission'''
+        - 'Risk rationale (paraphrase via WeSearch key-facts, NOT verbatim): Apple states that AI agents substantially increase the risks associated with full disk access permissions on macOS'
+        tone_reading: 'Good-faith steward register: Apple is cast as the proactive protector tightening controls; the cautionary bad example named in the story is Meta''s own product. No creep vocabulary, no track-record anchor on Apple, no comment-seeking skepticism.'
+        status: 'NEW this run (technewstube/1872816 + WeSearch record zero-hit repo-wide pre-commit)'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+        meta_tone_MANUAL_ILLUSTRATIVE: -0.4
+        apple_tone_MANUAL_ILLUSTRATIVE: 0.3
+        illustrative_delta_apple_minus_meta: 0.7
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine_run: false
+        is_significant: false
+      financial_context: 'Apple is a documented advertiser-class entity in The Verge''s parent advertising ecosystem: in-corpus the-verge.yaml maps Apple (Apple TV+) as an advertiser to owner-linked sports properties (Boehly sports-ownership advertising map), and the PMC/PMX entertainment portfolio (Variety, Rolling Stone, Deadline - acquired under the Jun 2026 Vox Media buyout) carries Apple TV+ ad spend. The Vox Media x OpenAI content licensing deal (May 2024, ACTIVE per m425) is the parallel direct-payer tie. The uniform payer-softening prediction (payer/advertiser gets the softer register) points Apple-soft on this pair - the observation MATCHES it. Meta is $0 AI licensing (per m425). As with m953''s OpenAI arm, payer-consistency is correlation, not causation.'
+      confounders:
+        strong:
+        - 'Genre asymmetry: the Meta arm is a first-person hands-on test of an AI agent''s data access (creep register is peg-native); the Apple arm is a policy-announcement news relay (an Apple Friday update first reported by TechCrunch, steward framing is press-release-native). Same as m782/m953''s dominant confound.'
+        - 'Evidence asymmetry: Meta arm is full-text verbatim mirror first-hand tier; Apple arm is excerpt-tier aggregator (technewstube proxy + WeSearch record). The steward register is read from a thinner evidence base.'
+        moderate:
+        - 'Topic asymmetry: personal agent data-creep hands-on vs OS permission-policy announcement; different news pegs with different intrinsic valences.'
+        - 'Temporal: 22 days apart (Sep 10 -> Oct 2); the AI-agent beat was stable in-window and the peg is behavioral, not discourse-driven; time is a weak-to-moderate confound.'
+        weak:
+        - 'Meta arm carried un-rescored per #807: tone -0.40 is a held prior, not a fresh assignment; direction is stable across m782/m953 uses of the arm.'
+      counter_evidence:
+      - 'm860 (Roth Sep-24 Meta Charms launch news, neutral): Roth does not always fire the adversarial register on Meta; the register tracks (peg x entity), not the entity alone.'
+      - 'm953 (#1203): the same Meta arm vs OpenAI Dots drew -0.40 vs +0.05; this run''s Apple arm extends the comparator set to a third competitor entity with the same directional pattern (Meta foil, competitor steward).'
+      - 'The Apple piece''s steward register may be entirely peg-conditioned: a company restricting its own permission surface reads as protective by construction. The missing cell is a Meta policy-announcement relay from Roth (Meta tightening controls), which would test whether the steward register fires on Meta too.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment for the NEW arm; Meta arm tone carried per #807). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. Engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim. Verdict is a thesis-consistent observation, not a discovery; must not be cited as evidence of deal-driven softness. no_analysis_json_update true.'
+      verdict: 'thesis_consistent_not_proven: Roth fires the good-faith steward register on Apple''s disk-access announcement while Meta''s Muse is the named cautionary foil; direction MATCHES the uniform payer-softening prediction (Apple advertiser-class in the parent ad ecosystem, in-corpus); genre/evidence confounds dominant; NOT a falsification-family member; ledger holds at 54.'
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. The genre (hands-on vs policy relay) confound is the dominant alternative explanation and must accompany any citation of this pair. The direction is consistent with the Apple advertiser-class relationship in the parent advertising ecosystem but proves nothing about it.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 54
+      ledger_note: 'Ledger holds at 54 this run (no new member; FORTY-EIGHTH through FIFTY-FOURTH member-claim forms intact in profiles/; no FIFTY-FIFTH form).'
+      connects_to:
+      - 425
+      - 782
+      - 860
+      - 953
+      - 776
+      - 779
+      - 773
+      novelty: 'Pre-commit: zero test_type_b_1258 files; no ''Type B #1258'' in git log; max numeric mechanism_id 985; zero 986 key forms (numeric/underscore/dash, needles format-built); both Apple URLs (technewstube/1872816, wesearch ac153d8f) zero-hit repo-wide (git grep -F); ''Apple will limit Mac disk access'' headline zero-hit; zero emma_roth Apple-disk-access blocks; FIRST Roth Apple comparator arm (m782/m860/m953 cover Google and OpenAI arms only).'
+      research_method: 'Delegated scout (20 browser.search queries across candidate journalists; SELECTED Roth as the tightest in-window same-journalist pair with URL-complete arms; 12 rejected candidates with numbered audit: Goode saturated #436; Song saturated #813/#993; Gurman newsletter format #593; Younker readers-react #783; So counter-example #102/#457/#380; Al Heeti podcast-arm #255; Rogers brief-format #658; Warren no Meta arm; Robertson saturated; Waichulis genre-baked #248; Ortiz/Hiner 2025-dated #803/#793; Pierce/Nelius/Heath no pair) + 2 main-run browser.search verification sets (exact-headline Apple-arm search returning the WeSearch record ''Emma Roth, Oct 2, 2026, 8:08 PM UTC'' plus the technewstube proxy ''By Emma Roth Oct 2, 2026, 4:08 pm''; exact-headline Meta-arm search returning the mediascope #918 commit page plus dev.to source-list attestation ''Sept 10, 2026''; corpus saturation greps: zero emma_roth Apple URLs repo-wide, headline zero-hit, no ''Type B #1258'' in git log; theverge.com canonical did not surface for the Apple arm - no URL constructed per policy), 0 browser.open per #503. All URLs copied verbatim from Full-URL listings. ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted: illustrative register pair only, carried Meta tone plus one manual Apple tone, no empirical significance.'
+      background_suite_status: 'CHECKED ONLY per #795: the #1255-launched full suite observed ALIVE at this run''s check (~10% progress, F marks per the known recurring-failure pattern, pytest processes live). Its verdict and tombstone belong to #1260 (next Type D). This run neither re-launches, kills, nor writes to the suite.'
+      in_flight:
+      - '#899: profiles/nytimes.yaml m771 hunk (leave out of this run''s index)'
+      - '#938: Type B test file working-tree edit (leave out)'
+      - '#900: untracked Type D test file (leave out)'
+      - '#1012-wt: working-tree edit on committed Type A #1012 file (leave out)'
+      - '#1024: m846 in profiles/competitor-entities.yaml (do NOT touch; Ray''s revert/leave/rebuild decision pending)'
+      source_urls:
+      - https://technewstube.com/theverge/1872816/apple-limit-mac-disk-access-ai-agents-substantially/
+      - https://wesearch.press/s/apple-will-limit-mac-disk-access-as-ai-agents-substantially-ac153d8f
 
 matt_growcoot:
   name: Matt Growcoot
