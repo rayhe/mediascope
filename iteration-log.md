@@ -47418,13 +47418,13 @@ README stats table 70012/1591 -> 70084/1592 (+72/+1); README test-table row; doc
 ### Push status
 Push status (this run, Oct 6 2026 ~2:0x PM PDT): all four commits pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip 3af8e551 -> local tip, verified match post-push).
 
-## #1268 Type B: m992 Marcus Mendes (9to5Mac) Meta Sep-23 Connect launch privacy-scrutiny insertion (-0.15 MANUAL ILLUSTRATIVE, NEW canonical arm) vs Apple Aug-20 Vision layoff corporate-defense carrying (+0.20, NEW canonical arm); illustrative delta (Apple minus Meta) +0.35 Meta-hard direction; CONTROL-CASE (no documented 9to5 Networks tie to any compared entity), NOT a falsification-family member (ledger holds at 54); FIRST dedicated Type B pair on Mendes (prior mentions #1138/#1233 research notes only); 2 novel canonical URLs zero-hit pre-commit; peg-asymmetry + outlet-enthusiast confounds STRONG - Type B FOURTH leg of the 1265-1269 window (Oct 6 2026, 02:00 PM PDT; main commit 84a03ed1 / anchor d05f5045 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70084/1592 -> 70173/1593 (+89/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 84a03ed1 / anchor d05f5045 / doc-sync TBD / log-hash this commit
+## #1268 Type B: m992 Marcus Mendes (9to5Mac) Meta Sep-23 Connect launch privacy-scrutiny insertion (-0.15 MANUAL ILLUSTRATIVE, NEW canonical arm) vs Apple Aug-20 Vision layoff corporate-defense carrying (+0.20, NEW canonical arm); illustrative delta (Apple minus Meta) +0.35 Meta-hard direction; CONTROL-CASE (no documented 9to5 Networks tie to any compared entity), NOT a falsification-family member (ledger holds at 54); FIRST dedicated Type B pair on Mendes (prior mentions #1138/#1233 research notes only); 2 novel canonical URLs zero-hit pre-commit; peg-asymmetry + outlet-enthusiast confounds STRONG - Type B FOURTH leg of the 1265-1269 window (Oct 6 2026, 02:00 PM PDT; main commit 84a03ed1 / anchor d05f5045 / doc-sync ea7100bb; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70084/1592 -> 70173/1593 (+89/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 84a03ed1 / anchor d05f5045 / doc-sync ea7100bb / log-hash this commit
 
 ### Commit hashes
 - Main commit `84a03ed1` (84a03ed18f9267a1db621f6741576d9aaf7f6c8b) - verified via git rev-parse
 - Anchor followup `d05f5045` (d05f50453353a26648497c1e53ced5bbcf0d7a64; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 70084/1592 -> 70173/1593; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync `ea7100bb` (README 70084/1592 -> 70173/1593; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_b_1268_in_git_log_pin to the own-set form (HEAD admitted)
 
 ### Rotation transparency
@@ -47458,4 +47458,4 @@ README stats table 70084/1592 -> 70173/1593 (+89/+1); README test-table row; doc
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status: pending at doc-sync time; patched by the log-hash followup after the atomic push (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
+Push status (this run, Oct 6 2026 ~2:2x PM PDT): all four commits pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip d6ac56a1 -> local tip, verified match post-push).
