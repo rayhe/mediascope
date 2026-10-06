@@ -46504,3 +46504,45 @@ README stats table 68189/1571 -> 68266/1572 (+77/+1); README test-table row; doc
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1248 Type B: m980 Mike Isaac (NYT) Meta AG-settlement competitive-maneuvering (-0.35 MANUAL ILLUSTRATIVE, NEW Aug-27 arm, solo byline, mirror-attested) vs Microsoft/OpenAI unsealed "largest theft of labor" (-0.55, NEW Sep-18 arm, co-byline Weise + Isaac, mirror-attested); illustrative delta (OpenAI minus Meta) -0.20 near-symmetric adversarial with the litigation adversary drawing the harder register; CONTROL-CASE, NOT a falsification-family member (NYT x OpenAI is litigation not a deal, ledger holds at 52); FIRST dedicated Type B pair on Isaac - Type B FOURTH leg of the 1245-1249 window (Oct 5 2026, 08:00 PM PDT; main commit 9712e519 / anchor dda21050 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68266/1572 -> 68343/1573 (+77/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `9712e519` (9712e519175dff234d9b7558f4386213e039a83e) - verified via git rev-parse
+- Anchor followup `dda21050` (dda21050f9c7bad018d4f00543bf4b695ee6448d; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 68266/1572 -> 68343/1573; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1248 Type B, the FOURTH leg of the 1245-1249 window (D #1245 -> E #1246 -> A #1247 -> B #1248 -> C #1249 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1247 Type A (main 413a6731 / anchor 24f0c246 / doc-sync 0d2d1c8d / log-hash 956d6fa0 + corrective).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1249 Type C closes the window; the #1245 background-suite verdict belongs to #1250 per #795.
+- Guard lifecycle note: #1247's max-979 + zero-980 (all forms) + no-Type-B-#1248-in-git-log + fortieth-absent + forty-eighth-intact + forty-ninth-intact + fiftieth-intact + fifty-first-intact + fifty-second-intact + no-fifty-third pins verified GREEN pre-commit this run (Type B lands no falsification member); the no-Type-B-#1248-in-git-log pin flips BY DESIGN at the main commit (the #1191-class self-trip, pinned in TestStalenessPins1248 as "1 failed, 14 passed" post-commit).
+
+### Finding summary
+- m980 (Type B #1248, profiles/careers/journalists.yaml mike_isaac_type_b/competitor_coverage): FIRST dedicated Type B pair on Mike Isaac (NYT Silicon Valley correspondent, formerly Meta beat; zero dedicated type_b key pre-commit per the #643 convention). Same writer, same outlet, 22 days apart: Isaac reports Meta's AG settlement as competitive maneuvering aimed at YouTube/TikTok (-0.35 MANUAL ILLUSTRATIVE, Aug-27 arm, solo byline, biztoc mirror-attested) and runs the hard legal-accountability register on Microsoft/OpenAI's unsealed "largest theft of labor" documents (-0.55, Sep-18 arm, co-byline Karen Weise and Mike Isaac, portside mirror-attested, Muck Rack-confirmed). Illustrative delta (OpenAI minus Meta) -0.20: near-symmetric adversarial, with the litigation adversary drawing the harder register. CONTROL-CASE: the NYT x OpenAI relationship is litigation (NYT Co. sued OpenAI and Microsoft for copyright infringement Dec 2023, in-corpus competitor-entities.yaml), NOT a licensing deal, so the uniform payer-softening prediction is not adjudicated and m980 is NOT a falsification-family member; ledger holds at 52. STRONG confounds: employer-litigation alignment, co-byline (Weise likely lead, cf. the #538 exclusion convention), peg asymmetry (court-filings expose vs settlement-strategy reporting). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.
+- Scout-rejection audit: the delegated scout's #2 (Peter Kafka, BI) died on URL incompleteness (Apple arm was a LinkedIn self-post, no canonical BI URL - same bar as the #1243 Feiner/Belanger rejections); the Kashmir Hill half-pair died on a truncated Meta-arm URL + no clean competitor arm; all other probes collided with existing Type B mechanisms or lacked pairs. The scout-miss pattern (cf. #1244 C3/C5, #1247) is pinned as corpus-hygiene evidence.
+- LEDGER STATE: fifty-second member-claim form present (m974, profiles/careers/journalists.yaml, 5 occurrences); fifty-first present (m973, profiles/news-corp.yaml); fiftieth present (m959, same file); forty-ninth present (m956, same file); forty-eighth present (m952, profiles/financial-times.yaml); fifty-third member-claim form absent repo-wide; fortieth direction absent in profiles/. Ledger HOLDS at 52. NOT a falsification-family member (absence cannot adjudicate hardness/softness).
+- #1245 background-suite verdict per #795: OBSERVED only this run (ALIVE at this run's check: live pytest processes 138406/138407, log at ~10% with fresh writes at 20:02 PDT); this run neither re-launches, kills, nor writes to the suite; the verdict belongs to #1250.
+- Statistical discipline: MONITORING/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tones hand-assigned, n=1 per arm; p_value/cohens_d NOT_CALCULATED; engine NOT run; is_significant False; NOT artifact-grade; verdict symmetric_adversarial_not_proven; no_analysis_json_update true). Correlation is not causation; hypothesis-generating only.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_b_1248 files on disk (glob, own file only); no "Type B #1248" in git log; max numeric mechanism_id 979 pre-commit; zero numeric/underscore/dash 980 mechanism key forms repo-wide pre-commit (needles format-built, sweep-carrier excluded); block key zero-hit repo-wide pre-commit; 2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); "## #1248" zero-hit in iteration-log pre-commit; README stats 68266/1572 pre-commit; no #1248 row in README/ARCHITECTURE test tables pre-commit.
+- Verification-layer run: 1 delegated scout (60 browser.search queries across 15 batches) + 2 main-run browser.search verification sets (exact-headline Meta-arm search returning the biztoc mirror verbatim with "(Mike Isaac/New York Times)" byline and techmeme 2026-08-27 timestamp; exact-headline OpenAI-arm search returning the portside mirror verbatim with "By Karen Weise and Mike Isaac" byline plus Muck Rack profile confirmation); 0 browser.open per #503 (excerpt-bounded).
+- Literal discipline per #715: the forward-guard needles (next-number 981 forms, the fifty-third member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed ordinals live as short lowercase forms in the test-file prose.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 66 passed + 11 deselected by design (TestAnchor1248 4 + TestDocSync1248 3 + TestIterationLog1248 3 + TestStalenessPins1248 1 per #565/#719/#721); 0 in-gate defects; test-file constants post-sync-positive per #719 (77 collected, 13 classes).
+- Tests: tests/test_type_b_1248_mike_isaac_nyt_meta_ag_settlement_vs_openai_theft_of_labor_oct05_8pm.py (77 tests, 13 classes).
+- Forward guards for #1249: max-980; zero nine-eight-one keys all forms (profiles/ + tests/ scope); no-Type-C-#1249-in-git-log; fortieth direction absent; fifty-third member absent (fifty-second LANDED at #1238, holds; ledger holds at 52).
+
+### Doc-sync ratchet
+README stats table 68266/1572 -> 68343/1573 (+77/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 (77 collected, 13 classes).
+
+### Background suite (per #795)
+- The #1245-launched full suite OBSERVED ONLY this run: ALIVE at this run's check (live pytest processes 138406/138407, log type_d_1245_full_suite.log at ~10% with fresh writes at 20:02 PDT). This run neither re-launches, kills, nor writes to it. Verdict and tombstone belong to #1250 (next Type D).
+
+### Push status
+Push status (this run, Oct 5 2026 ~20:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
