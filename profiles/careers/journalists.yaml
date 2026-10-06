@@ -28477,3 +28477,103 @@ stephen_nellis_type_b:
       - https://wixx.com/2026/07/09/exclusive-meta-to-put-ai-chip-into-production-in-september-as-it-looks-to-double-computing-capacity-memo-shows/
       - https://srnnews.com/apple-says-it-will-flag-ai-requests-for-mac-data-after-metas-muse-draws-complaints/
       - https://srnnews.com/rave-files-antitrust-lawsuit-against-apple-over-removal-of-video-sharing-app/
+
+marcus_mendes_type_b:
+  name: Marcus Mendes
+  publication: 9to5mac
+  mechanism_ids: [992]
+  competitor_coverage:
+    type_b_1268_marcus_mendes_9to5mac_meta_connect_launch_vs_apple_vision_layoffs_oct06_2pm:
+      block_key: type_b_1268_marcus_mendes_9to5mac_meta_connect_launch_vs_apple_vision_layoffs_oct06_2pm
+      mechanism_id: 992
+      iteration: 1268
+      type: B
+      date: '2026-10-06 14:00 PDT'
+      test_file: tests/test_type_b_1268_marcus_mendes_9to5mac_meta_connect_launch_vs_apple_vision_layoffs_oct06_2pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Marcus Mendes
+      publication: 9to5Mac
+      window: '1265-1269 window FOURTH leg (D #1265 -> E #1266 -> A #1267 -> B #1268 -> C #1269)'
+      design: 'Within-journalist cross-entity register comparison: same writer (Marcus Mendes, 9to5Mac), same outlet, Meta Connect 2026 launch-news (Sep-23-2026) vs Apple Vision layoff-news (Aug-20-2026), 34 days apart, same product category (smart glasses / spatial computing strategy). Tests whether the Meta-hard / Apple-soft register asymmetry appears at a deal-free outlet: CONTROL case (no documented 9to5 Networks financial tie to any compared entity), so the uniform payer-softening prediction is not adjudicated - the pair measures the base rate of register asymmetry absent incentives.'
+      finding: 'FIRST dedicated Type B mechanism on Marcus Mendes (prior corpus mentions only as a rejected candidate in #1138 - Apple Watch Series 12 byline unverified - and a held fallback in #1233; no marcus_mendes_type_b key pre-commit). Mendes''s Meta Sep-23 arm runs launch-news relay with an editorial privacy-scrutiny paragraph inserted mid-piece (-0.15 MANUAL ILLUSTRATIVE): "Meta''s camera-equipped glasses have faced growing scrutiny over privacy and ethics." His Apple Aug-20 arm runs corporate-defense carrying on negative layoff news (+0.20 MANUAL ILLUSTRATIVE): Apple Senior Director Steve Sinclair quoted at length - "It''s still early innings for spatial computing... we are invested in this platform"; "Apple has not confirmed nor commented on the report." Illustrative delta (Apple minus Meta) +0.35 in the Meta-hard direction. CONTROL-CASE per the #1243 precedent: no documented financial relationship between 9to5 Networks/9to5Mac and Meta, Apple, OpenAI, Anthropic, Google, or Snap exists in the corpus (the corpus treats 9to5Google as an independent control, mechanism #131), so the uniform payer-softening prediction is NOT adjudicated. Direction is thesis-consistent (Meta-hard asymmetry with no deal on either side), but a control case can neither confirm nor falsify the financial-incentive thesis. NOT a falsification-family member; ledger holds at 54. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; NOT artifact-grade; no analysis.json update. Correlation is not causation. Hypothesis-generating only.'
+      meta_arm:
+        entity: meta
+        outlet: 9to5Mac
+        author_byline: 'Marcus Mendes (byline attested via the 9to5mac.com author archive page listing the piece under his byline, plus Flipboard "9to5Mac - Marcus Mendes" attribution)'
+        title: 'Meta announces camera-free glasses, dedicated Muse AI gadget, more'
+        date: '2026-09-23'
+        status: 'NEW this run (9to5mac.com canonical URL zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: -0.15
+        url: https://9to5mac.com/2026/09/23/meta-announces-camera-free-glasses-dedicated-muse-ai-gadget-more/
+        url_note: '9to5mac.com canonical URL copied verbatim from this run''s Full-URL listing (search index 0); corroborated verbatim in a second listing (YouTube description index 6); the URL zero-hit repo-wide pre-commit (git grep -F); no URL constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via the 9to5mac.com canonical page rendering in search)'
+        key_quotes:
+        - 'Privacy-scrutiny insertion (verbatim via canonical excerpt): "Meta''s camera-equipped glasses have faced growing scrutiny over privacy and ethics"'
+        - 'Launch relay (verbatim): "Meta announced the Ray-Ban Meta Audio, its first pair of camera-free smart glasses, which starts at $349"'
+        tone_reading: 'Launch-news relay with an editorial accountability insertion: the product news itself is neutral-positive (new glasses, Muse Charm gadget), but Mendes inserts the privacy-and-ethics scrutiny paragraph mid-piece - the accountability frame is his editorial choice on positive Meta news.'
+      apple_arm:
+        entity: apple
+        outlet: 9to5Mac
+        author_byline: 'Marcus Mendes (byline attested via the 9to5mac.com author archive page listing the piece under his byline, plus Flipboard "9to5Mac - Marcus Mendes" attribution)'
+        title: 'Apple reportedly lays off 60 Vision employees amid shifting priorities'
+        date: '2026-08-20'
+        status: 'NEW this run (9to5mac.com canonical URL zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: 0.2
+        url: https://9to5mac.com/2026/08/20/apple-reportedly-lays-off-60-vision-employees-amid-shifting-priorities/
+        url_note: '9to5mac.com canonical URL copied verbatim from this run''s Full-URL listing (search index 2); corroborated verbatim by two independent relays citing 9to5Mac (zerx-lab daily-tech-news-2026-08-22, m1k.tech); the URL zero-hit repo-wide pre-commit (git grep -F); no URL constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via the 9to5mac.com canonical page rendering in search)'
+        key_quotes:
+        - 'Corporate-defense carrying (verbatim Sinclair quote): "It''s still early innings for spatial computing... we are invested in this platform"'
+        - 'No-comment (verbatim): "Apple has not confirmed nor commented on the report"'
+        - 'Layoff lead (verbatim): "Apple has laid off at least 60 employees tied to Apple''s VR team, the Apple Vision Group, and similar positions"'
+        tone_reading: 'Corporate-defense carrying on negative news: the layoff peg is bad news for Apple, but Mendes gives Apple the last and longest word - Sinclair''s full "early innings / invested in this platform" defense plus Gurman''s "remained committed to visionOS" context. No accountability vocabulary, no track-record anchor on Apple.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+        meta_tone_MANUAL_ILLUSTRATIVE: -0.15
+        apple_tone_MANUAL_ILLUSTRATIVE: 0.2
+        illustrative_delta_apple_minus_meta: 0.35
+        delta_calc: '0.20 - (-0.15) = +0.35'
+        delta_direction: 'Meta-hard direction: the Meta arm carries an accountability insertion on positive news; the Apple arm carries corporate defense on negative news. Directionally thesis-consistent, observed at a deal-free outlet (control case).'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine_run: false
+        is_significant: false
+      financial_context: '9to5Mac is published by 9to5 Networks (independent publisher; no documented AI content-licensing deal with Meta, Apple, OpenAI, Anthropic, Google, or Snap anywhere in the corpus - the competitor-coverage-research.yaml 9to5 hits are incidental URL citations only, plus mechanism #131''s explicit treatment of 9to5Google as an independent control outlet). There is no profiles/9to5mac.yaml. Unlike Conde Nast (OpenAI licensing), Vox Media (OpenAI licensing), Axel Springer (OpenAI licensing), or Thomson Reuters (Meta licensing), 9to5 Networks has no mapped payer relationship to either compared entity - this pair is a CONTROL case by construction, measuring the base rate of register asymmetry absent financial incentives. Correlation is not causation.'
+      confounders:
+        strong:
+        - 'Peg asymmetry: product-launch news (positive valence, Sep 23) vs layoff news (negative valence, Aug 20). The register contrast is extracted across different story types; the defense-carrying on the Apple arm is partly layoff-story-native (right-of-reply convention).'
+        - 'Outlet-enthusiast genre: 9to5Mac is an Apple-enthusiast publication; an Apple-soft register is outlet-native, which bounds the journalist-level attribution of the Apple-arm softness to Mendes specifically.'
+        moderate:
+        - 'Temporal: 34 days apart (Aug 20 vs Sep 23); different news cycles, though the same product-category event cycle (pre-launch retreat vs launch).'
+        weak:
+        - 'Evidence tier symmetric (both 9to5mac.com canonical excerpts, 0 browser.open per #503); no evidence-tier gap to discount.'
+      counter_evidence:
+      - 'Bounded absence of a Mendes Apple-adversarial arm in the bounded search: his author archive in-window shows the enthusiast register on Apple (Emmy nominations record, IDC Mac shipment growth, Tata supplier-breach relay) - no located piece where Mendes runs accountability on Apple. Absence is bounded by the search window, not a proven zero.'
+      - 'The Sep-28 9to5Mac op-ed "Yeah, don''t give Meta''s Muse app access to your Mac" (Meta-hard, Apple-trusting: "I''m inclined to trust the privacy and safety safeguards Apple has put into place") is Ben Lovejoy''s byline per #1233, NOT Mendes''s - explicitly not attributed to Mendes; it cannot serve as his intra-journalist counterpoint.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. Engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim. Verdict is a bounded control-case observation, not a discovery; must not be cited as evidence of deal-driven anything. no_analysis_json_update true.'
+      verdict: 'control_case_observation: Mendes (9to5Mac) inserts a privacy-scrutiny paragraph into positive Meta launch news (-0.15) while carrying Apple''s corporate defense at length on negative Vision layoff news (+0.20); illustrative delta (Apple minus Meta) +0.35 in the Meta-hard direction. Observed at a deal-free outlet (no documented 9to5 Networks tie to any compared entity), so the uniform payer-softening prediction is not adjudicated - CONTROL-CASE per the #1243 precedent. Direction is thesis-consistent (asymmetry without incentives), but a control case can neither confirm nor falsify the financial-incentive thesis. NOT a falsification-family member. Ledger holds at 54.'
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. The peg-asymmetry confound is dominant (launch vs layoff news valence differs), and the outlet-enthusiast genre confound bounds journalist-level attribution of the Apple-arm softness. The direction is thesis-consistent but proves nothing about financial incentives - by construction, there are none here.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 54
+      ledger_note: 'Ledger holds at 54 this run (no new member; forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth intact in profiles/careers/journalists.yaml; fiftieth intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first intact in profiles/news-corp.yaml (3 occurrences); fifty-second intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth intact in profiles/guardian.yaml (2 occurrences); no fifty-fifth member-claim form repo-wide; fortieth direction form absent in profiles/).'
+      connects_to:
+      - 223
+      novelty: 'Pre-commit: zero test_type_b_1268 files on disk (glob, own file only); no "Type B #1268" in git log (--grep); max numeric mechanism_id 991 in profiles/; zero numeric/underscore/dash nine-nine-two mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1268 in key, no 992 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); "marcus_mendes_type_b" key zero-hit pre-commit (prior "Marcus Mendes" mentions are rejected-candidate/fallback notes in #1138/#1233 research_method fields only); "## #1268" zero-hit in iteration-log pre-commit; README stats 70084/1592 pre-commit; no #1268 row in README/ARCHITECTURE test tables pre-commit. NOT a falsification-family member (control case); fifty-fifth member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; forty-eighth through fifty-fourth member forms intact. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Delegated scout (10 candidate angles: WIRED Goode/Chokkattu/Hall/Calore, Verge Song/Pierce, Bloomberg Gurman, TechCrunch Heater, Ars Amadeo, Engadget writers; SELECTED Mendes as the tightest in-window same-journalist same-outlet pair with byline-complete canonical arms; numbered rejection audit: Goode/Song/Gurman/Heater/Pierce/Ashworth saturated; Amadeo/Calore no verifiable pair; Engadget bylines unattributable; Lovejoy hard-excluded #1233; Chokkattu corpus-saturated) + 3 main-run browser.search verification sets (exact-headline Meta-arm search returning the 9to5mac.com canonical verbatim with the privacy-scrutiny paragraph in its indexed excerpt; exact-headline Apple-arm search returning the 9to5mac.com canonical verbatim with Sinclair''s full defense quote in its indexed excerpt; Mendes Apple-critical counterpoint search - bounded absence, archive shows enthusiast register); corpus saturation greps: both canonical URLs zero-hit repo-wide, marcus_mendes zero-hit repo-wide, no marcus_mendes_type_b key pre-commit (prior mentions are #1138/#1233 research notes only); 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. Control-case direction noted (Meta-hard asymmetry absent incentives) with STRONG peg-asymmetry and outlet-enthusiast confounds. No ledger advance (holds at 54).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1265-launched full suite (goal hidden_files type_d_1265_full_suite.log) observed NOT-ALIVE at this run''s check (1510 bytes, last write Oct 6 18:59:55 UTC / 11:59:55 PDT, ~2h stale at this run''s ~14:0x PDT check; zero live pytest processes at check time; dot stream stalled in the first file - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1270 (next Type D).'
+      in_flight:
+      - '#899: profiles/nytimes.yaml m771 hunk (leave out of this run''s index)'
+      - '#938: Type B test file working-tree edit (leave out)'
+      - '#900: untracked Type D test file (leave out)'
+      - '#1012-wt: working-tree edit on committed Type A #1012 file (leave out)'
+      - '#1024: m846 in profiles/competitor-entities.yaml (do NOT touch; Ray''s revert/leave/rebuild decision pending)'
+      source_urls:
+      - https://9to5mac.com/2026/09/23/meta-announces-camera-free-glasses-dedicated-muse-ai-gadget-more/
+      - https://9to5mac.com/2026/08/20/apple-reportedly-lays-off-60-vision-employees-amid-shifting-priorities/
