@@ -47274,3 +47274,57 @@ Push status (this run, Oct 6 2026 ~10:xx PDT): main 6a70fe80 + anchor 04efef5f p
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1265 push-chain repair (main agent, 2026-10-06 ~12:03 PDT)
+- Run f181c064 timed out before the atomic push; b2cceb48 (main) + 344914ff (anchor) were local-only.
+- Main agent pushed both to rayhe/mediascope-asymmetry.git via explicit HTTPS (IPv6-literal proxy recipe); ls-remote tip matches 344914ff. Remote was 9d93eaff before.
+- NOT done (left for next hourly run): doc-sync commit (README stats 69796/1589 -> 69919/1590, README/ARCHITECTURE rows, #1265 iteration-log entry), TestGuardLifecycle1264 staleness verification, log-hash followup commit.
+- Uncommitted working tree (profiles/nytimes.yaml, 2 test files, 1 untracked test) is in-flight #899/#938/#900 work — intentionally left untouched.
+
+## #1265 Type D: m988/m989/m990 qualitative-discipline corpus-integrity verification + #1260 background-suite verdict (DEAD at 4%; THIRD consecutive death of the new streak; tombstone lineage ONE-HUNDRED-TENTH -> ONE-HUNDRED-ELEVENTH) + recurring-failure triage (F at canonical 1884 reproduces, 1 of 6; later positions out of range, early-death range artifact; INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1265-1269 window (Oct 6 2026, 11:00 AM PDT; main commit b2cceb48 / anchor 344914ff / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69796/1589 -> 69919/1590 (+123/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+- Hash chain: main b2cceb48 / anchor 344914ff / doc-sync TBD / log-hash this commit
+
+### Commit hashes
+- Main commit `b2cceb48` (b2cceb48c87b81a4172be081f4cb6ae6120ab365) - verified via git rev-parse
+- Anchor followup `344914ff` (344914ff29613793d45fd739bd3c7b2151f94fe3; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync TBD (README 69796/1589 -> 69919/1590; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1265 Type D, the FIRST and OPENING leg of the 1265-1269 window (D #1265 -> E #1266 -> A #1267 -> B #1268 -> C #1269 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1264 Type C (main 6a70fe80 / anchor 04efef5f / doc-sync c977dabb / log-hash 9d93eaff); the 1260-1264 window is VERIFIED CLOSED.
+- Rotation guard: this run's main commit is the anchor per #565; 344914ff ANCHORED_SHA patched post-commit. Next: #1266 Type E continues the window; the next background-suite verdict belongs to #1270 per #795.
+- Guard lifecycle note: #1264's no-Type-C-#1265-in-git-log pin stays GREEN at this run (the main commit subject carries "Type D #1265", not "Type C #1265" - no #1191-class self-trip this run); #1264's max-990, zero-991 (all forms), fortieth-absent, forty-eighth-through-fifty-fourth-intact, no-fifty-fifth guards stay green (Type D lands no mechanisms). Verified post-commit by TestStalenessPins1265 expecting all 17 green (this run: 17 passed, 0 failed).
+- Chain note: the #1265 main run (f181c064) timed out before its atomic push; the main agent pushed b2cceb48 + 344914ff to rayhe/mediascope-asymmetry.git (ls-remote tip matched 344914ff; explicit-https IPv6-literal proxy recipe). This completion run delivers the deferred chain: doc-sync commit, TestGuardLifecycle1264 staleness verification (17 passed), and the log-hash followup.
+
+### Finding summary
+- m988 (Type A #1262, profiles/wired.yaml competitor_relationships meta): WIRED Oct-4/5 Muse dossier accountability original (Karan Joshi system-prompt extraction; -0.58 MANUAL ILLUSTRATIVE, NEW arm) vs carried WIRED x Apple steward register (m670 0.0, #1222 +0.10); illustrative delta (Apple minus Meta) +0.63, Meta draws the harder register; thesis_consistent_observation EXTENDING the m670/#1222 strand into the October agent-safety peg; NOT a falsification-family member; ledger holds at 54; MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.
+- m989 (Type B #1263, profiles/careers/journalists.yaml stephen_nellis_type_b competitor_coverage): Stephen Nellis (Reuters) covers the payer Meta through a neutral business-scoop register (+0.05 MANUAL ILLUSTRATIVE, Jul-9 chip arm, co-byline) and Apple through a steward register (+0.30, Oct-2 disk-access arm) naming Meta as the cautionary foil; illustrative delta (Apple minus Meta) +0.25 runs COUNTER to the uniform payer-softening prediction (Thomson Reuters x Meta deal) at headline level; BOUNDED thesis-challenging observation; NOT a falsification-family member; ledger holds at 54; MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.
+- m990 (Type C #1264, profiles/competitor-entities.yaml top-level): FIRST dedicated corpus mechanism on a SIGNED collective AI licensing deal - ProRata.ai x DPCMO (99% of the Danish news industry, opt-in pre-negotiated agreement; Gist Answers RAG-only attribution engine, no training, full removability; 50/50 ad-revenue share split proportionally per cited publisher); extends #5 pool-and-license (m720) to signed instance; answers m624 (#649) ASCAP/BMI clearinghouse note; mechanism_documented; NOT a falsification-family member; ledger holds at 54; MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.
+- LEDGER STATE: fifty-fourth member-claim form present 2x (m985, profiles/guardian.yaml); fifty-third present 2x (m982, profiles/the-verge.yaml); fifty-second present 5x (m974, profiles/careers/journalists.yaml); fifty-first present 3x (m973, profiles/news-corp.yaml); fiftieth present 3x (m959, profiles/careers/journalists.yaml); forty-ninth present (m956, profiles/careers/journalists.yaml); forty-eighth present (m952, profiles/financial-times.yaml); fifty-fifth member-claim form absent repo-wide; fortieth direction absent in profiles/; thirty-fifth through thirty-ninth present. Ledger HOLDS at 54.
+- #1260 background-suite verdict per #795: the #1260-launched full suite DIED (3658 bytes / [ 4%] progress, last write Oct 6 2026 15:18:42 UTC, ~3h47m stale at this run's ~11:06 PDT check, zero summary tokens, zero live pytest processes, no process holding the log open per the /proc open-fd check) - THIRD consecutive background-suite death of the new streak. Tombstone lineage advances ONE-HUNDRED-TENTH -> ONE-HUNDRED-ELEVENTH. Re-launched by the main run to goal hidden_files type_d_1265_full_suite.log (venv python per the Sep 7 2026 convention; dots accumulating at commit); the #1270 Type D run owns the next verdict per #795.
+- Recurring-failure triage: the deterministic F reproduces at the canonical first-series position 1884 (1 of 6) in the now-dead log; 3690/3807/5386/6932/7476 out of range (the stream ends before them; the suite died at 4% before reaching them - a range artifact of the earlier death, not a new deviation). The one confirmed real defect (test_snap_has_perplexity_chain, repaired #1235) still passes. Outcome INDETERMINATE, pinned as missing evidence.
+- Statistical discipline: the finding layer stays MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (no corpus mechanisms landed this run; engine NOT run on corpus; is_significant never asserted on corpus data; NOT artifact-grade; no analysis.json update). Fresh synthetic engine calibration this run (engine-layer contract, never a finding).
+
+### Method
+- Pre-commit novelty greps per #715 (main run): zero test_type_d_1265 files on disk (glob, own file only); no "Type D #1265" in git log; max numeric mechanism_id 990 in profiles/ pre-commit; zero numeric/underscore/dash 991 mechanism key forms repo-wide pre-commit (needles format-built, sweep-carrier excluded); "## #1265" zero-hit in iteration-log pre-commit; README stats 69796/1589 pre-commit; no #1265 row in README/ARCHITECTURE test tables pre-commit.
+- Verification-layer run: 0 browser.search query sets this run (all arms already in corpus via #1262-#1264); 0 browser.open per #503.
+- Literal discipline per #715: the forward-guard needles (next-number 991 forms, the fifty-fifth member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed-claim literals (ONE-HUNDRED-ELEVENTH tombstone) are permitted.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 109 passed + 14 deselected by design (TestAnchor1265 5 + TestTypeDDocSync1265 3 + TestTypeDIterationLog1265 4 + TestStalenessPins1265 1 + tombstone-in-log node 1 per #565/#719/#721); 0 in-gate defects at gate time; test-file constants post-sync-positive per #719 (123 collected, 19 classes).
+- Tests: tests/test_type_d_1265_m988_m989_m990_qualitative_corpus_integrity_oct06_11am.py (123 tests, 19 classes).
+- Forward guards for #1266: max-990; zero nine-nine-one keys all forms (profiles/ + tests/ scope); no-Type-E-#1266-in-git-log; fortieth direction absent; forty-eighth-through-fifty-fourth intact; no fifty-fifth member (repo-wide); ledger 54.
+
+### Doc-sync ratchet
+README stats table 69796/1589 -> 69919/1590 (+123/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants post-sync-positive per #719 (123 collected, 19 classes).
+
+### Background suite (per #795)
+- The #1265-launched full suite is OBSERVED this run only (verdict belongs to #1270): goal hidden_files type_d_1265_full_suite.log at 1510 bytes / [ 0%] progress (70024 items collected, dot stream stalled at the first file), last write Oct 6 2026 18:59:55 UTC (~66m stale at this run's ~12:05 PDT check), zero live pytest processes, no process holding the log open per the /proc open-fd check - NOT-ALIVE. Fourth consecutive death of the new streak is PENDING the #1270 verdict; this run neither re-launches, kills, nor writes to the suite.
+- TestGuardLifecycle1264 staleness verification (deferred to this completion run): 17 passed, 0 failed - all #1264 forward pins stay green post-#1265-main-commit (no #1191-class self-trip; Type D lands no mechanisms), documented in TestStalenessPins1265.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+### Push status
+Push status (this run, Oct 6 2026 ~12:xx PDT): doc-sync + log-hash followup pushed and ls-remote-verified (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
