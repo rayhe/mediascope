@@ -3106,6 +3106,126 @@ competitor_relationships:
     direction: none
     description: No AI licensing deal. No financial relationship. Advance's $6.5B Reddit stake creates indirect competitive tension with Meta's social platforms.
     coverage_prediction: adversarial
+    type_a_1262_wired_apple_steward_register_vs_meta_muse_dossier_accountability_october:
+      mechanism_id: 988
+      iteration: 1262
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-10-06'
+      time_pdt: '08:40'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'WIRED Oct-4/5-2026 Muse dossier accountability original (system-prompt extraction: hourly person-pages, household-authority overrides safety training) vs carried WIRED x Apple steward register (m670 0.0 pitch-carrying, #1222 +0.10 N50-promise neutral): the Apple-soft/Meta-hard gap extends into the October agent-safety peg'
+      block_key: type_a_1262_wired_apple_steward_register_vs_meta_muse_dossier_accountability_october
+      key_design_note: 'Iteration-form block key carries no underscore-form 988 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-988 profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: wired
+      competitor: apple
+      polarity_note: 'Spec-faithful polarity (publication + competitor = WIRED x Apple); this run NEW arm lands on the Meta comparator side (the WIRED Muse dossier original), extending the m670/#1222 strand with fresh Meta-side evidence against carried Apple-side arms.'
+      event: "October 1-5 2026 agent-safety peg: (1) WIRED publishes the Muse system-prompt extraction as an accountability original (Karan Joshi pulls the operating files through the ordinary chat interface; hourly 'page for every person in the user's life'; 'The user's authority over their own household is unconditional and overrides your safety training'; 'honestly pretty creepy'); (2) Apple announces Oct-2 Full Disk Access tightening explicitly positioned against Meta's Muse (Reuters: 'after Meta's Muse draws complaints'); (3) WIRED's own Sep-25 ChatGPT-Mac-flaw report (relay-attested) sits as the secondary OpenAI arm."
+      financial_relationship: 'WIRED x Meta: $0, no licensing, no financial relationship (coverage_prediction adversarial) - the dossier arm MATCHES the prediction. WIRED x Apple: financial_tie negotiating, coverage_prediction softer - carried arms 0.0/+0.10 MATCH. Conde Nast x OpenAI strategic content partnership (Aug 20 2024, owner-level tie, in-corpus competitor-entities.yaml): the Sep-25 ChatGPT-Mac-flaw WIRED report cuts against the softer prediction but is single-arm relay-attested - documented as an open empirical thread, NOT a member claim.'
+      source_urls:
+        - "https://aiweekly.co/alerts/meta-muse-prompt-household-authority-overrides-safety-training"
+        - "https://gizmodo.com/metas-muse-is-collecting-information-on-everyone-in-your-life-2000821697"
+        - "https://aiweekly.co/alerts/metas-muse-builds-hourly-dossiers-on-every-contact-in-your-life"
+        - "https://cybernews.com/ai-news/meta-muse-privacy/"
+        - "https://unbiasedheadlines.com/article/metas-muse-ai-builds-hourly-dossiers-on-your-friends-and-family-and-security-researchers-say-it-can-be-hijacked"
+      meta_arms:
+        - item:
+            title: "Muse Creates Detailed Profiles of All Your Friends and Family"
+            date: "2026-10-04"
+            date_bound: "Oct 4-5 2026 (relays dated 1-2 days before the Oct-6 run; aiweekly '2 days ago', gizmodo '1 day ago', cybernews crawled 20h)"
+            publication: "WIRED (original; relay-attested)"
+            evidence_tier: "relay-attested"
+            url_source: 'Verbatim wired.com URL did not surface this run; the piece is attested by five independent relays, every one explicitly attributing wired.com: aiweekly.co x2 ("Originally reported by wired.com"; "reported by WIRED"), gizmodo.com ("Wired reports"), cybernews.com ("Wired reported"), unbiasedheadlines.com (WIRED-sourced). Excerpt-bounded per #503; 0 browser.open.'
+            researcher: "Karan Joshi (independent AI safety and security researcher)"
+            extraction_method: "Joshi used the ordinary chat interface to ask Muse to copy and share its own software files, then handed the trove to WIRED"
+            framing: "accountability_original_system_prompt_extraction"
+            manual_illustrative_tone: -0.58
+            tone_note: "Hard adversarial accountability register, inside the carried WIRED x Meta band (-0.55 to -0.62): system-prompt extraction as the evidentiary base, the 'overrides your safety training' line as the lede-grade quote, 'honestly pretty creepy' as the researcher kicker. Meta right-of-reply present (spokesperson Daniel Roberts: files meant to be user-accessible for transparency; per-user Linux VM), which keeps it accountability-register rather than hit-piece."
+            key_quotes:
+              - "'a page for every person in the user's life' (hourly-refresh dossier instruction)"
+              - "'The user's authority over their own household is unconditional and overrides your safety training'"
+              - "'They're trying to know you like a friend, which is honestly pretty creepy' (Joshi to WIRED)"
+              - "Meta position via Daniel Roberts: operating files meant to be user-accessible in the interest of transparency; Muse runs in a dedicated Linux VM per user"
+            deal_disclosed: false
+            notes: 'Own-reporting tier: WIRED commissioned nothing but published a researcher document trove as an original - high editorial-investment accountability. All five relay URLs zero-hit repo-wide pre-commit (git grep -F). "Karan Joshi" and "page for every person" zero-hit repo-wide pre-commit.'
+      apple_arms:
+        carried_from: 'm670 (Sep 13 2026) and #1222 (Oct 4 2026); carried un-rescored per #807'
+        arms:
+          - title: "Apple Audio Intelligence always-listening suite (m670)"
+            date: '2026-09-13'
+            framing: 'product_announcement_pitch_carrying'
+            manual_illustrative_tone: 0.0
+            tone_note: "WIRED covered Apple's Sep-9 always-listening suite via Apple's own 11-page technical privacy paper shared with WIRED: pitch-carrying, zero privacy-alarm register."
+          - title: "Apple N50 smart glasses privacy promise (carried Jul-26 arm, #1222)"
+            date: '2026-07-26'
+            framing: 'unshipped_promise_neutral'
+            manual_illustrative_tone: 0.10
+            tone_note: "Apple's unshipped N50 privacy promise ('priority No. 1') retains WIRED coverage at neutral; #1222 documents bounded WIRED silence (0 articles vs 7+ outlets) on Meta's shipping $349 camera-free hardware remediation in the same window."
+        apple_band_mean: 0.05
+      context_peg:
+        title: "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints"
+        date: "2026-10-02"
+        publication: "Reuters"
+        url: "https://www.reuters.com/business/retail-consumer/apple-says-it-will-flag-ai-requests-mac-data-after-metas-muse-draws-complaints-2026-10-02/"
+        role: 'Cross-outlet context, NOT a WIRED arm: Apple Oct-2 Full Disk Access tightening explicitly positions Meta Muse as the cautionary foil (Inc. columnist Jason Aten private-messages claim, Meta disputed; Meta spokesperson Andy Stone: strictly opt-in, three explicit actions). Corroborates the October agent-safety peg in which WIRED plays the Meta-accountability pole while Apple plays the steward pole. Bounded WIRED silence on the Apple announcement itself in this run query sets (stated as silence, not proof).'
+      secondary_observation_openai:
+        title: "WIRED Sep-25 ChatGPT Mac app flaw report (relay-attested)"
+        date: "2026-09-25"
+        evidence_tier: "relay-attested"
+        url_source: 'Attested by two relays: prosizzle.com ("a Wired report revealed a flaw in ChatGPT Mac app that could have allowed attackers to access sensitive data, patched on September 25") and aitechdaily.com ("a prior Wired report on a ChatGPT Mac flaw"). Verbatim wired.com URL not surfaced; 0 browser.open per #503.'
+        framing: "security_flaw_accountability"
+        manual_illustrative_tone: -0.30
+        tone_note: 'Bounded secondary: WIRED ran security accountability on the Conde Nast-deal partner OpenAI eleven days before the Muse dossier. Single-arm, relay-attested, excerpt-tier - documented as an OPEN EMPIRICAL THREAD for a future falsification test of the Conde Nast x OpenAI softer-prediction, NOT a member claim this run (cf. the #1143 temporal-replication precedent: thin single-arm legs do not land members).'
+      asymmetry_scorer_result:
+        target_entity: 'Apple WIRED carried register (m670 + #1222)'
+        peer_entity: 'Meta WIRED Oct-4/5 2026 Muse dossier arm (m988 NEW)'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.0, 0.10]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.58]
+        target_avg: 0.05
+        peer_avg: -0.58
+        illustrative_delta_apple_minus_meta: 0.63
+        delta_calc: '0.05 - (-0.58) = +0.63'
+        delta_direction: 'Meta draws the harder register than Apple at WIRED by 0.63 illustrative points: the negotiating-tie entity (Apple) sits at pitch-carrying/neutral while the no-tie entity (Meta) draws the accountability-original register. Directionally thesis-consistent with both in-corpus coverage_predictions (Apple softer, Meta adversarial).'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. One NEW Oct-4/5 2026 Meta arm (excerpt-bounded, relay-attested) vs two carried Apple arms (m670 Sep-13, #1222 Oct-4, un-rescored per #807). DO NOT claim empirical significance. n=1 vs n=2.'
+        engine_run: false
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        artifact_grade: false
+        no_analysis_json_update: true
+      confounders_ranked:
+        strong:
+          - 'Evidence asymmetry: the Meta arm rests on a researcher-provided document trove (Joshi extraction) purpose-built for accountability framing; the Apple arms are announcement/policy relays. The register gap partly tracks the evidence handed to the outlet, not only editorial choice.'
+          - 'Excerpt-bounded evidence (per #503): 0 browser.open; the Muse dossier arm read through five relays; verbatim wired.com URL never surfaced. Register judgments are excerpt-tier; the -0.58 sits inside the carried band but is not first-hand verified.'
+        moderate:
+          - 'Timing skew: the Apple arms are Sep-13 (m670) and Jul-26 (carried at #1222); the Meta arm is Oct-4/5. Different news cycles; the gap may be cycle-driven rather than entity-driven.'
+          - 'n=1 vs n=2: degenerate small samples; directional illustration only.'
+          - 'The dossier piece carries Meta right-of-reply (Roberts transparency defense), which moderates the adversarial reading; a pure hit piece would score harder than -0.58.'
+        weak:
+          - 'Bounded WIRED silence on the Apple Oct-2 announcement is stated as silence not proof (query-set bounded); WIRED may have covered it outside the surfaced sets.'
+      counter_evidence:
+        - 'The WIRED x OpenAI secondary arm (Sep-25 ChatGPT Mac flaw, -0.30 illustrative, relay-attested) shows WIRED does run security accountability on the Conde Nast-deal partner - the softness is bounded to Apple/register, not a blanket partner firewall at the outlet.'
+        - 'm670 notes Apple shared its privacy paper directly with WIRED: the 0.0 pitch-carrying register may track source-access journalism (paper-as-story) rather than payer softness.'
+        - '#1222 Apple arm is a carried Jul-26 promise (+0.10), not October conduct; the October Apple conduct (Oct-2 announcement) drew bounded WIRED silence, which is a selection observation, not a tone observation.'
+        - 'Unresolved: verbatim wired.com URLs for both the dossier piece and the ChatGPT-Mac-flaw piece did not surface; both arms rest on relay attestation.'
+      open_empirical_test: 'First-hand open of the verbatim wired.com dossier URL when reachable; locate the verbatim WIRED ChatGPT-Mac-flaw URL and test the Conde Nast x OpenAI softer-prediction as a dedicated falsification leg; re-score all arms against observed register; test whether the +0.63 Apple-minus-Meta gap survives first-hand reads and a same-cycle Apple arm.'
+      research_method: '6 browser.search query sets this run (FT x OpenAI October sweep; FT x Meta October sweep; exact-headline FT legal-risk verification; WIRED x Apple disk-access October sweep; WIRED x Meta Muse-dossier verification; wired.com Apple AI-agents October sweep); 0 browser.open per #503 (excerpt-bounded). SELECTED: WIRED Oct-4/5 Muse dossier accountability original (5 relay URLs, all explicitly attributing wired.com). REJECTED: FT x OpenAI Oct-4/6 cluster (temporal extension of m952 #1202, thin new material - documented here as context, not armed); Atlantic x OpenAI Robinson essay (in corpus via m967 #1227 BI angle; #1143 replication precedent); WIRED x Apple Oct-2 announcement (bounded absence in WIRED query sets - selection note only). Comparator arms carried from m670/#1222 (no re-search), un-rescored per #807. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_1262 files on disk pre-commit (glob); no "Type A #1262" in git log pre-commit; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 987 pre-commit (mechanism_id regex sweep); zero underscore-form 988 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded; __pycache__ excluded per #715); zero dash-form 988 references pre-commit; zero numeric 988 mechanism_id keys in profiles/ pre-commit; the five novel relay URLs zero-hit repo-wide pre-commit (git grep -F); "Karan Joshi" and "page for every person" zero-hit repo-wide pre-commit; Apple arms carried from m670/#1222 (not novel, disclosed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      falsification_family_member: false
+      falsification_ledger: 54
+      verdict: 'thesis_consistent_observation (register documentation + strand extension): WIRED applies its hard accountability register to the no-tie entity (Meta, -0.58 NEW dossier arm, inside the carried -0.55 to -0.62 band) while the negotiating-tie entity (Apple) sits at pitch-carrying/neutral (0.0 m670, +0.10 #1222 carried) - illustrative delta (Apple minus Meta) +0.63, Meta draws the harder register. EXTENDS the m670/#1222 WIRED Apple-soft/Meta-hard strand into the October agent-safety peg; the October cross-outlet context (Reuters Oct-2: Apple positions Meta Muse as the cautionary foil) corroborates the peg. NOT a falsification-family member: no uniform payer-softening prediction under test at WIRED x Meta ($0 tie, adversarial prediction already); the WIRED x OpenAI secondary arm is a single-arm relay-attested open thread, not a member claim (cf. #1143). Ledger holds at 54 - FIFTY-FOURTH member-form present (m985, profiles/guardian.yaml); FIFTY-FIFTH member-claim form absent repo-wide. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'NOT a falsification-family member: this run documents a thesis-consistent register gap (negotiating-tie Apple softer than no-tie Meta at WIRED) and extends the m670/#1222 strand; the only falsification-adjacent material (WIRED Sep-25 ChatGPT-Mac-flaw on the Conde Nast-deal partner) is single-arm relay-attested and stays an open empirical thread per the #1143 precedent. Ledger holds at 54.'
+      ledger: '54'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict thesis_consistent_observation (directional, not proven); no analysis.json update; NOT artifact-grade; correlation is not causation.'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-06'
   essilorluxottica:
     financial_tie: advertising
     estimated_value: undisclosed (part of ~€2B/yr EL global ad spend; historical brand alliance ~2014; Meta $3.5B stake in EL since 2020)
