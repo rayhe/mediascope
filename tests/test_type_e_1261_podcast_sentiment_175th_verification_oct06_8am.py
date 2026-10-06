@@ -216,6 +216,10 @@ PRED_FINAL_1260 = "c3992ad4"
 # #721.
 PRED_MAIN_1261 = "19b153f21f1a62a9c12f198d5c59f5bd6778b4f1"  # patched in the log-hash followup per #721 (main commit sha)
 
+# #1262's main commit (full sha), for the ancestor-form no-Type-A-#1262
+# pin. Patched in #1262's terminal log-hash followup per #721.
+PRED_MAIN_1262 = "2637d58ce2aea540e984598a108345ba440efd45"  # patched in #1262's log-hash followup per #721 (main commit sha)
+
 # The #1260 window-opener file, for the staleness pin on its
 # guard-lifecycle class (max id 987; zero next-number nine-eight-eight
 # / no-Type-E-#1261-in-git-log (flips BY DESIGN at this run's main
@@ -963,8 +967,22 @@ class TestGuardLifecycle1261:
         assert "NEXT_NUM = 988" in src
 
     def test_no_type_a_1262_in_git_log_pin(self):
-        out = _git("log", "--oneline", "--grep=Type A #1262")
-        assert out.stdout.strip() == ""
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in #1262's terminal log-hash followup per #721): every commit
+        # whose message matches "Type A #1262" must be #1262's main
+        # commit or a descendant of it - i.e., no PRIOR run committed
+        # this iteration. The ancestor check (not an enumerated own-set)
+        # is robust to any number of same-run followup commits: each
+        # followup is a descendant of main by construction, so the pin
+        # is stable and terminal.
+        out = _git("log", "--format=%H", "--grep=Type A #1262")
+        hits = [line.strip() for line in out.stdout.splitlines()
+                if line.strip()]
+        assert hits, "expected #1262's own commits"
+        main = _git("rev-parse", PRED_MAIN_1262).stdout.strip()
+        for h in hits:
+            r = _git("merge-base", "--is-ancestor", main, h)
+            assert r.returncode == 0, h
 
     def test_988_numeric_absent_in_profiles(self):
         assert _repo_grep_numeric_mechanism_id(NEXT_NUM) == []
