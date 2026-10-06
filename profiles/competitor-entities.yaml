@@ -29579,3 +29579,62 @@ type_c_1239_m909_falsifiability_checkpoint_candidate_saturation_audit_oct05_1pm:
   concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (competitor-entities.yaml m975 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
   yaml_parse_clean: true
   ascii_only: true
+
+type_c_1244_softbank_openai_30b_followon_completion_oct05_6pm:
+  mechanism_id: 978
+  type: financial_incentive_mapping
+  type_label: 'Financial Incentive Mapping'
+  iteration: 1244
+  iteration_type: C
+  date_analyzed: '2026-10-05'
+  time_pdt: '18:00'
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  job_id: mediascope-meta-wearables-press-analysis
+  researcher: 'Kit (with Ray)'
+  author: 'Kit (with Ray)'
+  mechanism_name: 'SoftBank x OpenAI $30B follow-on COMPLETION (Oct 1 2026): third/final $10B tranche closes the Feb-2026 program via Vision Fund 2; $64.6B cumulative, ~13% ownership; bridge-to-bond refinancing complete - FIRST dedicated corpus mechanism on SoftBank x OpenAI'
+  block_key: type_c_1244_softbank_openai_30b_followon_completion_oct05_6pm
+  key_design_note: 'colon-form top-level key, no numeric mechanism-id substring (no 978 string per #715)'
+  finding: 'FIRST dedicated corpus mechanism on SoftBank x OpenAI (prior corpus coverage: list lines only - e.g. the Nvidia Series F co-investor line carrying the $30B / $64.6B / 13% figures; zero SoftBank mechanism_name hits repo-wide pre-commit). THE COMPLETION (SoftBank Group official release, Oct 1 2026 Japan time): third and final $10.0B tranche of the $30.0B follow-on investment (announced Feb 27 2026) executed via SoftBank Vision Fund 2; the $30B program is now fully funded and fully transferred capital. Cumulative SBG investment in OpenAI: $64.6B; ownership interest approximately 13%. Securities are preferred shares converting to common on IPO or related listing. THE FINANCING (same official release): the final tranche was funded with proceeds from the Sep 24 foreign-currency senior-notes issuance ($10B USD + EUR 1B; the $11.1B high-yield sale); the $40.0B bridge facility (Mar 27 2026) is fully repaid with the remaining $10.0B undrawn capacity canceled effective Sep 30 - the bridge-to-bond refinancing is complete. VALUATION CONTEXT (carried, not re-verified): $730B pre-money on the Feb agreement; OpenAI wider round $122B committed at $852B post-money (Mar 31). THE GEOMETRY: debt-funded equity completion - the investor borrowed at record high-yield scale to close an equity commitment, then termed out the bridge; the $30B moved from promise (Feb) to fully transferred capital (Oct 1). Parallel-tranche note (NeoTeo Oct 4, relay-tier, not company-confirmed): a $10B Nvidia final tranche reportedly wired alongside. No coverage-tone pair scored; tone NOT_SCORED. MANUAL / qualitative ONLY per the Aug 28 2026 standing rule. NOT a falsification-family member (ledger holds at 52). No new direction (fortieth absent by design; thirty-fifth through thirty-ninth stand).'
+  verdict: completion_documented
+  no_analysis_json_update: true
+  artifact_grade: false
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  falsification_family_member: false
+  falsification_family: 'NOT a member (ledger holds at 52 per the #754 convention; completion-event documentation on the SoftBank $30B follow-on; no coverage-tone pair scored, so no uniform-prediction test; the forty-eighth member-claim form present (financial-times.yaml); the forty-ninth (m956) and fiftieth (m959) present 3x each (profiles/careers/journalists.yaml); the fifty-first (m973) present 3x (profiles/news-corp.yaml); the fifty-second (m974) present 5x (profiles/careers/journalists.yaml); the fifty-third member-claim form absent repo-wide (lowercase absence-documentation); the fortieth direction form absent in profiles/ (profiles-scoped per the #1199 convention); thirty-fifth (m915, METER-THEN-INVITE), thirty-sixth (m933, REGULATORY-PREEMPTION), thirty-seventh (m942, INVEST-AND-LICENSE), thirty-eighth (m945, LICENSE-AND-ADOPT), and thirty-ninth (m948, LICENSE-AND-ADOPT) stand; this run lands no new direction and claims no slot).'
+  novelty: 'FIRST dedicated corpus mechanism on SoftBank x OpenAI and FIRST dedicated mechanism on the Oct-1-2026 $30B follow-on completion event. Pre-existing corpus state: the $30B / $64.6B / 13% figures appear only as list lines (Nvidia Series F co-investor block); zero SoftBank mechanism_name hits; zero dedicated mechanism on the Feb-2026 $30B announcement or any tranche. Pre-commit greps per #715: zero test_type_c_1244 files on disk (glob); no "Type C #1244" in git log (--grep); max numeric mechanism_id 977 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash 978 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1244 in key, no 978 substring); forty-eighth member-claim form present (financial-times.yaml); forty-ninth + fiftieth present 3x each (profiles/careers/journalists.yaml); fifty-first present 3x (profiles/news-corp.yaml); fifty-second present 5x (profiles/careers/journalists.yaml); fifty-third member-claim form absent repo-wide pre-commit; fortieth direction-claim form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present; 3/3 source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings). Method MANUAL / qualitative-only per the Aug 28 2026 standing rule (delegated 16-query-set scout across 12 angles + 3 main-run browser.search sets: SoftBank completion verification, Google-pilot-payout saturation check, Nvidia-stall saturation check; 0 browser.open; excerpt-bounded per #503). Scout rejections documented: C3 Google AI Contribution Pilot payout tiers -> in-corpus (27th-direction mechanism, line 27619); C5 OpenAI India $5M/$3M deals + pipeline -> in-corpus (line 27377); C4 Reddit free-API shutdown -> m969 #1229; C9 Amazon $50B OpenAI -> saturated; C2 Nvidia $100B stall -> corpus-rejected as Jan-2026 stale (line 27110); C7 Axel Springer renewal -> bounded absence, no news; C8 DevDay -> zero publisher-licensing items; Akamai $12B -> re-report of #1009 Sep-24 $11.6B deal. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: 'Iteration #1244 Type C is the FIFTH and CLOSING leg of the 1240-1244 window (D #1240 -> E #1241 -> A #1242 -> B #1243 -> C #1244 per #565 anchor + rotation guard; #1240 Type D main f64ea8a3/anchor a2bcfaa1/doc-sync 888b95df/log-hash cd18fe12-verify, #1241 Type E main 600b3a8b/anchor 1c8b10c1/doc-sync e58d7a64/log-hash 19c97dfd, #1242 Type A main 9d35d369/anchor cb788aa2/doc-sync 926b6f7b/log-hash c0a4236c, #1243 Type B main f574d850/anchor 14f2a13c/doc-sync 843bc28a/log-hash cd18fe12; each verified in git log pre-commit). The 1235-1239 window is VERIFIED CLOSED. Pre-commit novelty greps: zero test_type_c_1244 files on disk (glob); no "Type C #1244" in git log (--grep); max numeric mechanism_id 977 pre-commit; zero numeric/underscore/dash 978 mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit (designed keying: iteration 1244 in key, no 978 substring); forty-eighth member intact (financial-times.yaml); forty-ninth + fiftieth intact 3x each (journalists.yaml); fifty-first intact 3x (news-corp.yaml); fifty-second intact 5x (journalists.yaml); fifty-third absent; fortieth direction absent in profiles/. Guard lifecycle: #1243''s max-977 + zero-978 + no-Type-C-#1244-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1244 test file); #1243''s fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact, fifty-first-intact, fifty-second-intact, no-fifty-third guards stay green (verified via supersession pins in the #1244 test file). This run lands mechanism 978 as a COMPLETION event (no new direction; ledger holds at 52). The 1240-1244 window CLOSES with this run; next window 1245-1249 opens with Type D #1245; the #1240 background-suite verdict belongs to #1245 per #795.'
+  concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (competitor-entities.yaml m978 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+  connects_to: [873]
+  confounders:
+  - strength: strong
+    text: 'Excerpt-bounded sourcing per #503: 0 browser.open this run; the SoftBank official release was not read first-hand (excerpt via search-result rendering); unite.ai, barsacross, and NeoTeo legs are secondary relays.'
+  - strength: strong
+    text: 'Company-disclosed figures: the $64.6B cumulative, ~13% ownership, and tranche amounts are SoftBank self-reported (preferred-share cost basis across rounds, not a marked valuation); the ~$497B naive quotient ($64.6B / 13%) is a blended cost basis, not an OpenAI valuation.'
+  - strength: medium
+    text: 'Parallel Nvidia $10B final-tranche report (NeoTeo Oct 4) is relay-tier, not company-confirmed; carried as context, not claimed.'
+  - strength: medium
+    text: 'Investor-lab money, not publisher-lab: the mechanism documents capital-structure completion, not a publication financial relationship; the Type C nexus is the incentive-geometry (debt-funded equity at record scale into the leading lab), not coverage-tone prediction.'
+  sources:
+  - url: https://group.softbank/en/news/press/20261001
+    what: 'SoftBank Group official release (Oct 1 2026, Japan time): third/final $10.0B tranche via Vision Fund 2; $30.0B follow-on complete; cumulative $64.6B; ~13% ownership; preferred shares converting on IPO; funded from Sep 24 foreign-currency senior notes; $40B bridge fully repaid, $10B undrawn canceled Sep 30. URL VERIFIED this run via search Full-URL listing; zero-hit repo-wide pre-commit. novel:true.'
+    accessed: '2026-10-05'
+    novel: true
+  - url: https://www.unite.ai/softbank-closes-third-10b-openai-tranche-using-senior-notes-proceeds/
+    what: 'Unite.AI (Oct 1 2026): $10B third/final tranche; $30B program complete; $64.6B cumulative / ~13%; Vision Fund 2; JPY 1,579.6B at 157.96; Feb 27 2026 definitive agreement ($730B pre-money; three tranches Apr 1 / Jul 1 / Oct 1); preferred-to-common on IPO; tranche dates subject to listing acceleration. URL VERIFIED this run via search Full-URL listing; zero-hit repo-wide pre-commit. novel:true.'
+    accessed: '2026-10-05'
+    novel: true
+  - url: https://www.barsacross.com/softbank-30-billion-openai-follow-on-funding
+    what: 'barsacross (Oct 2026): $10B final tranche closes Feb-2026 $30B commitment; $64.6B cumulative / ~13%; preferred shares converting on IPO; $730B pre-money; OpenAI wider round $122B at $852B post-money (Mar 31); final tranche funded from Sep foreign-currency senior notes ($10B USD + EUR 1B). URL VERIFIED this run via search Full-URL listing; zero-hit repo-wide pre-commit. novel:true.'
+    accessed: '2026-10-05'
+    novel: true
+  browser_opens: 0
+  tone_scored: false
+  engine_run: false
+  is_significant: false
+  verdict_detail: completion_documented
+  yaml_parse_clean: true
+  ascii_only: true
