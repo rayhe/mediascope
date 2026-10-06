@@ -338,9 +338,16 @@ class TestMechanismNovelty1247:
     def test_peg_urls_novel(self):
         for url in PEG_URLS:
             hits = _worktree_grep_files(url)
-            # Post-commit each URL lives in the profile block only.
-            assert len(hits) == 1, (url, hits)
-            assert hits[0].endswith("competitor-coverage-research.yaml")
+            # Post-commit each URL lives in the profile block and in
+            # this file's PEG_URLS constant (the novelty carrier).
+            assert any(
+                h.endswith("competitor-coverage-research.yaml")
+                for h in hits
+            ), (url, hits)
+            assert set(hits) <= {
+                "profiles/competitor-coverage-research.yaml",
+                "tests/" + OWN_BASENAME,
+            }, (url, hits)
 
 
 # ---------------------------------------------------------------------------
