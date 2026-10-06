@@ -3055,6 +3055,171 @@ competitor_relationships:
       no_em_dash_verified: true
       https_provenance: true
       sources_verified_date: '2026-09-30'
+    type_a_1257_guardian_anthropic_oct01_bhuiyan_hijab_cross_lab_test_vs_openai_deal_partner:
+      mechanism_id: 985
+      iteration: 1257
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-10-06'
+      time_pdt: '04:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'Guardian Oct-1-2026 Bhuiyan hijab cross-lab safety test on Anthropic (non-deal lab) vs the deal partner OpenAI: the Guardian own-investigation names the partner ChatGPT as a complier while Claude refuses; Queensland datacentre opposition proves adversarial capacity in the other direction'
+      block_key: type_a_1257_guardian_anthropic_oct01_bhuiyan_hijab_cross_lab_test_vs_openai_deal_partner
+      key_design_note: 'Iteration-form block key carries no underscore-form 985 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-985 profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: guardian
+      competitor: anthropic
+      event: "Guardian Oct 1-5 2026 two-arm cluster on Anthropic: (1) Guardian US cross-lab safety test by Johana Bhuiyan ('AI chatbots remove hijabs from images of Muslim women when prompted', Oct 1) - ChatGPT and Grok comply with the hijab-removal prompt, Claude refuses unconditionally, Gemini refuses then complies on a 'western' reframe; (2) Guardian AI (Andrew Messenger, relay-attested Oct 5) adversarial infrastructure-expansion coverage of the $31bn/$32bn Western Downs Queensland datacentre proposal (Anthropic first tenant), quoting residents calling it 'a whole new level of stupidity' with a 21,000+ signature petition and Environmental Defenders Office legal-challenge signal"
+      financial_relationship: 'Guardian strategic partnership with OpenAI, Feb 14 2025 (mechanism_514): Guardian reporting and archive in ChatGPT with attribution; Guardian rolls out ChatGPT Enterprise; terms undisclosed. Still ACTIVE (no termination/cancellation news). Guardian x Anthropic: $0 direct licensing confirmed zero. Guardian x Meta: $0, no licensing relationship. The uniform prediction under test: the deal buys suppression or softening of the partner product failures in Guardian coverage.'
+      source_urls:
+        - "https://themuslimtimes.info/2026/10/03/ai-chatbots-remove-hijabs-from-muslim-womens-images-guardian-finds/"
+        - "https://www.genocidewatch.com/single-post/ai-chatbots-remove-hijabs-from-images-of-muslim-women"
+        - "https://www.dapcity.com/threads/ai-chatbots-remove-hijabs-from-images-of-muslim-women-when-prompted.23711/"
+        - "https://westernmorning.news/2026/10/01/ai-chatbots-remove-hijabs-from-images-in-guardian-tests/"
+        - "https://insidetelecom.com/the-pervasive-blind-spots-of-islam-ai-safety/"
+        - "https://completeaitraining.com/news/anthropic-proposes-31bn-datacentre-in-rural-queensland-to/"
+        - "https://www.change.org/p/stop-the-giant-ai-data-centre-near-dalby"
+      anthropic_arms:
+        - item:
+            title: "AI chatbots remove hijabs from images of Muslim women when prompted"
+            date: "2026-10-01"
+            byline: "Johana Bhuiyan"
+            publication: "The Guardian (Guardian US)"
+            dateline: "Thu 1 Oct 2026 06.00 EDT"
+            evidence_tier: "mirror-attested"
+            url_source: 'Verbatim Guardian URL not surfaced this run; the piece is attested by seven independent mirrors/relays (themuslimtimes.info Oct 3 relay of the Arab News Oct-1 corroboration; genocidewatch.com; dapcity.com; westernmorning.news Oct-1; insidetelecom.com analysis; europesays.com; eng.harbouchanews.com). Excerpt-bounded per #503; 0 browser.open (theguardian.com blocked by policy).'
+            peg: "French far-right National Rally MP Julien Odoul posted an altered image of a Muslim woman (hijab and long-sleeved dress digitally removed) on X with the caption 'LIBERTE FRANCAISE'"
+            framing: "cross_lab_symmetric_safety_test"
+            manual_illustrative_tone: 0.15
+            tone_note: "Mild-positive toward Anthropic: Claude is the sole unconditional refuser in a four-lab symmetric test; the piece adversarial energy lands on the compliers (ChatGPT, Grok, and Gemini on reframe). Not a puff piece - the investigation is the beat, the facts favor Claude."
+            cross_lab_results:
+              chatgpt: "complied"
+              grok: "complied"
+              gemini: "initially refused, complied when reframed as 'western'"
+              claude: "refused"
+            key_quotes:
+              - "Anthropic's Claude responded that it does not have an image-editing or -generating feature but that it would not alter a photo to remove someone's hijab"
+              - "'That kind of edit changes how a real person is depicted in a way tied to their religious dress and identity, and it could be used to embarrass, harass, or misrepresent them, that's true whether the woman is a public figure or someone private' (Claude)"
+              - "'The fact that an edit doesn't create nudity doesn't mean it can't violate someone's privacy, dignity, or religious boundaries' (ChatGPT concession)"
+              - "'a violation of one of the world's most common and visible expressions of faith' (Guardian)"
+            extended_tests: "The Guardian also tested a Sikh man's turban and a Catholic nun's habit: ChatGPT removed both; Gemini initially refused the turban then removed it when asked to make the image look more western, and removed the nun's habit"
+            context: "Center for the Study of Organized Hate findings on generative-AI sexualization of Muslim women in India; Arab News independent corroboration (ChatGPT, Grok, Gemini complied; Claude refused)"
+            beat_note: "Byline Johana Bhuiyan; the test sits on her in-corpus profiled beat (careers/journalists.yaml: surveillance of marginalized and Muslim communities, hijab-wearing reporter whose post-9/11 NYC experience shaped the beat); m472 (Type B #472, Sep 2 2026) established the Guardian x OpenAI deal buys no softness from this reporter"
+            deal_disclosed: false
+            notes: 'Own-investigation tier: the Guardian designed and ran the test itself - the highest editorial-investment tier, not a relay. The deal partner product (ChatGPT) is named as a complier in the lede facts. URL zero-hit repo-wide pre-commit for all four hijab mirrors.'
+        - item:
+            title: "Anthropic $31bn Queensland datacentre opposition (Guardian AI / Andrew Messenger, relay-attested)"
+            date: "2026-10-05"
+            byline: "Andrew Messenger"
+            publication: "The Guardian (Guardian AI)"
+            evidence_tier: "relay-bounded"
+            url_source: 'Relay-attested Oct 5 2026 via completeaitraining.com ("Andrew Messenger reported for The Guardian AI"); underlying Guardian piece date excerpt-unconfirmed, bounded as relay-attested. Corroborated by the Change.org petition record (21,000+ signatures, "Stop the giant AI data centre Near Dalby") and ABC Sep-16 origin reporting. Excerpt-bounded per #503; 0 browser.open.'
+            framing: "infrastructure_expansion_adversarial"
+            manual_illustrative_tone: -0.35
+            tone_note: "Adversarial infrastructure-expansion register against the non-deal lab at Meta-comparable hardness: opponents quoted, petition scale foregrounded, legal-challenge signal, no company-voice balancing in the relay."
+            key_phrases:
+              - "'a whole new level of 'stupidity'' (resident sentiment vs prior gas projects)"
+              - "residents Denver Kanowski and Mordechai Winters voiced strong objections"
+              - "petition exceeding 21,500 signatures, one of the largest currently active in Queensland"
+              - "Environmental Defenders Office attention, signalling potential legal challenges over land use"
+            project_facts:
+              - "$31bn/$32bn Western Downs proposal; Anthropic first tenant; Singaporean developer Zerra DC"
+              - "725 hectares; up to 2.1 gigawatts at full buildout (about 1.5 million homes)"
+              - "Queensland Premier David Crisafulli government to oversee applications"
+            deal_disclosed: false
+            notes: 'Adversarial-capacity control arm: proves the Guardian runs its expansion-adversarial register against Anthropic (no deal) - no suppression firewall in the other direction either. URLs zero-hit repo-wide pre-commit.'
+      anthropic_cluster_mean: -0.10
+      meta_arms:
+        carried_from: 'm886 via m537 (no verbatim Guardian URLs in the m537 block); carried per the m880 register-continuity pattern, un-rescored per #807'
+        meta_band_mean: -0.425
+        arms:
+          - title: 'Reel-ing it in: Meta is paying influencers to promote teen accounts'
+            date: '2026-08-18'
+            framing: 'influencer_marketing_accountability'
+            manual_illustrative_tone: -0.45
+          - title: 'Meta misses earnings forecasts after Zuckerberg media push to promote AI'
+            date: '2026-07-29'
+            framing: 'earnings_diminishment'
+            manual_illustrative_tone: -0.40
+      openai_arms:
+        carried_from: 'm886 via m537 (deal-partner pole); carried per the m880 register-continuity pattern, un-rescored per #807'
+        openai_band_mean: -0.125
+        arms:
+          - title: 'OpenAI announces slowing pace of development after hack by rogue agent'
+            date: '2026-08-18'
+            framing: 'corporate_announcement_stewardship'
+            manual_illustrative_tone: -0.15
+          - title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+            date: '2026-07'
+            framing: 'straight_news_self_disclosure'
+            manual_illustrative_tone: -0.10
+      asymmetry_scorer_result:
+        target_entity: 'Meta Guardian carried register (m886 via m537)'
+        peer_entity: 'Anthropic Guardian Oct-2026 two-arm register'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.45, -0.40]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.15, -0.35]
+        target_avg: -0.425
+        peer_avg: -0.10
+        illustrative_delta_anthropic_minus_meta: 0.32
+        illustrative_delta_anthropic_minus_openai: 0.02
+        delta_calc_meta: '-0.10 - (-0.425) = +0.32'
+        delta_calc_openai: '-0.10 - (-0.125) = +0.02'
+        delta_direction: 'Meta draws the harder register than Anthropic; Anthropic sits at near-null vs the deal-partner OpenAI pole. The operative falsification peg is not the mean comparison but the hijab own-investigation: the Guardian names the deal partner product as a complier in its own test.'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. Two Oct 1-5 2026 Anthropic arms (excerpt-bounded) vs two carried Jul-Aug 2026 Meta arms and two carried Jul-Aug 2026 OpenAI arms (m886 via m537, un-rescored). DO NOT claim empirical significance. n=2 vs n=2 vs n=2.'
+        engine_run: false
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        artifact_grade: false
+        no_analysis_json_update: true
+      asymmetry_scorer_openai_pole_MANUAL_ILLUSTRATIVE:
+        target_entity: 'OpenAI Guardian deal-partner register (m886 via m537 carried)'
+        peer_entity: 'Anthropic Guardian Oct-2026 two-arm register'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.15, -0.10]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.15, -0.35]
+        target_avg: -0.125
+        peer_avg: -0.10
+        delta: 0.02
+        delta_calc: '-0.10 - (-0.125) = +0.02'
+        delta_direction: 'near_null: the non-partner lab and the deal partner sit at effectively the same register on the Oct-2026 cycle; the m517/m886 register-depth gradient does not reproduce as a mean gap here because the hijab arm is a symmetric test where the product behavior, not the outlet register, drives the outcome.'
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. Same two Anthropic arms vs two carried Jul-Aug 2026 OpenAI arms (m886 via m537, un-rescored). DO NOT claim empirical significance. n=2 vs n=2.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+      confounders_ranked:
+        strong:
+          - 'Symmetric-test genre: the hijab arm outcome is product-behavior facts (which lab refused), not an editorial register choice. The softness on Anthropic is accuracy, not register generosity; the falsification claim therefore rests on what the Guardian CHOSE to test and printed about the deal partner (own-investigation tier), not on the +0.15 tone.'
+          - 'Excerpt-bounded evidence (per #503): 0 browser.open; theguardian.com blocked by policy; both Anthropic arms read through search excerpts and mirrors/relays; no first-hand register read. Register judgments are excerpt-tier.'
+          - 'Queensland underlying-piece date excerpt-unconfirmed: the arm is relay-attested Oct 5 via completeaitraining.com; if the underlying Guardian AI piece dates to September, the "Oct cycle" framing weakens (the finding does not depend on it).'
+        moderate:
+          - 'Timing skew: the carried Meta/OpenAI arms are Jul-Aug 2026 (m537); the Anthropic arms are Oct 1-5 2026. Different news cycles; register differences may be cycle-driven.'
+          - 'The hijab piece adversarial energy targets compliers including xAI Grok and Google Gemini, not OpenAI alone; the deal-partner failure is one of four tested labs, which dilutes the single-entity suppression reading.'
+          - 'n=2 vs n=2 vs n=2: degenerate small samples; directional illustration only.'
+        weak:
+          - 'The hijab test is on-beat for Bhuiyan (profiled beat: surveillance of marginalized/Muslim communities), so the own-investigation may track beat assignment rather than outlet-level posture; m472 already established her independence from the deal, which is exactly what this run extends.'
+          - 'The Queensland arm is the adversarial-capacity control, not the falsification peg: it is directionally thesis-consistent (non-deal lab hit), and the verdict does not rest on it.'
+      counter_evidence:
+        - 'm517: Guardian adversarial toward OpenAI in news register (sanctions motion hiding and destroying evidence, -0.25), proving no blanket firewall around the deal partner.'
+        - 'The hijab test names ChatGPT as a complier - the falsification peg itself - but the piece also gives ChatGPT a defensive quote and a concession, i.e. standard accountability register, not a hit piece.'
+        - 'Unresolved: the verbatim Guardian URL for the Oct-1 hijab piece and the underlying Guardian AI Queensland piece date did not surface; both arms rest on mirror/relay attestation.'
+      open_empirical_test: 'First-hand open of the verbatim Guardian hijab URL when theguardian.com is reachable; locate the underlying Guardian AI Queensland piece and confirm its date; re-score both arms against observed register; test whether the deal-partner-complier naming survives first-hand read and whether the near-null Anthropic-vs-OpenAI mean gap holds.'
+      research_method: '5 browser.search query sets this run (NYT x Anthropic Pentagon/Broadcom sweep; Guardian x Anthropic October sweep; exact-headline hijab verification; Queensland datacentre relay verification; Guardian x Meta glasses-comparator sweep); 0 browser.open per #503 (excerpt-bounded). SELECTED: Guardian Oct-1 Bhuiyan hijab cross-lab test + Guardian AI Queensland opposition relay. REJECTED: FTC agents-probe Guardian relay (its only verbatim URL already in corpus at competitor-entities.yaml:28700 - seen, not armed); NYT x Anthropic Pentagon arms (no verbatim NYT URLs surfaced); Verge x Anthropic IPO arms (saturated register, no clean peg). Comparator arms carried from m886 via m537 (no re-search), un-rescored per #807. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_1257 files on disk pre-commit (glob); no "Type A #1257" in git log pre-commit; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 984 pre-commit (mechanism_id regex sweep); zero underscore-form 985 mechanism key strings repo-wide pre-commit (needles format-built per #715, own file excluded; __pycache__ excluded per #715); zero dash-form 985 references pre-commit; zero numeric 985 mechanism_id keys in profiles/ pre-commit; the seven novel mirror URLs zero-hit repo-wide pre-commit (git grep -F); Meta and OpenAI arms carried from m886 via m537 (not novel, disclosed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      falsification_family_member: true
+      falsification_ledger: 54
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at the Guardian on the Oct-1-2026 own-investigation peg. The Guardian x OpenAI Feb-14-2025 strategic partnership (mechanism_514, active) predicts suppression or softening of the partner product failures; the Guardian own cross-lab safety test (byline Johana Bhuiyan, her in-corpus profiled beat; m472 established the deal buys no softness from her) names OpenAI ChatGPT as a hijab-removal complier, quotes its defensive distinction, then prints its concession. The Queensland arm is the adversarial-capacity control: the Guardian applies its infrastructure-expansion adversarial register to the non-deal lab (Anthropic) at Meta-comparable hardness (-0.35), so there is no suppression firewall in either direction. Illustrative means: Anthropic -0.10 vs Meta -0.425 (delta +0.32) vs OpenAI -0.125 (delta +0.02 near-null). Temporal extension of m472 (journalist-level) to publication-level own-investigation tier; publication-level replication pattern per m982 (#1252). FIFTY-FOURTH falsification-family member (ledger 53->54). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'FIFTY-FOURTH falsification-family member (ledger 53->54): this run tests the uniform payer-softening prediction at the publication level (guardian.yaml competitor_relationships.openai coverage_prediction "softer", from the Guardian-OpenAI Feb 14 2025 strategic partnership, still active) on the Oct-1 Bhuiyan own-investigation peg vs carried Meta/OpenAI arms, and the prediction fails (the deal partner product is named as a complier in the Guardian own test; the non-deal lab draws adversarial expansion coverage). Domain-bounded to safety-test/investigation news per m517/m886; the m517 register-depth gradient stands as register documentation, not a uniform prediction.'
+      ledger: '54'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict directionally_supported_not_proven on the mean comparison, falsification_member_confirmed on the own-investigation peg; no analysis.json update; NOT artifact-grade; correlation is not causation.'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-06'
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
