@@ -46644,3 +46644,51 @@ Push status (this run, Oct 5 2026 ~22:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1251 Type E: podcast sentiment 173rd verification cycle (GF episode 503 HOLDS - fourth full verification since its #1236 first surfacing, ~12h after the Oct-5 11:00am publication, fortieth verification since the Sep-28 502 release, ~180h; 7 GF rows = 7 re-surfaces ZERO new keys, GF pure-re-surface streak ADVANCES to twelve; listennotes TH stale locale variant surfaces a second consecutive run; podscan 499 transcript page absent; EHE 56-day hold, 7 re-surfaces, ZERO new keys; AS 173rd no-match, 6 circular own-repo commit URLs rejected (ca75e30b #1011 RE-SURFACES replacing 90bad2df #796), dec56140 absence streak ADVANCES to six, Tracked Sources 172->173; press 7 re-surfaces ZERO new keys, press streak ADVANCES to six, frontier HOLDS at Oct 3; monitoring-only per the Aug 28 2026 standing rule, NOT artifact-grade; ledger holds at 52) - Type E SECOND leg of the 1250-1254 window (Oct 5 2026, 11:00 PM PDT; main commit ff9f8723 / anchor ffbc7210 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68522/1575 -> 68608/1576 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `ff9f8723` (ff9f872385c27141f2f1ca4a966ba71df8a73dc6) - verified via git rev-parse
+- Anchor followup `ffbc7210` (ffbc7210a14a8a86e8ce6261bc45e993bf8613dc; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync TBD (this commit; README 68522/1575 -> 68608/1576; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_e_1251_in_git_log_pin to the own-set form (HEAD admitted)
+
+### Research method
+- 4 browser.search query sets this run (The Guilty Feminist Deborah Frances-White latest episode October 2026; quoted "Everyone Hates Elon" Meta Ray-Ban glasses campaign; quoted "Attention Sphere" podcast Meta tech analysis; Meta Ray-Ban smart glasses privacy backlash news October 2026). 0 browser.open per #503 (excerpt-bounded).
+- Pre-commit novelty greps per #715: zero test_type_e_1251 files on disk (glob); no "Type E #1251" in git log (--grep); max numeric mechanism_id 981 pre-commit; zero numeric/underscore/dash next-number nine-eight-two mechanism key forms repo-wide pre-commit (needles format-built, own file excluded; verified clean by direct sweep, no iteration-#1251 test-file reference collisions); "## #1251" zero-hit in iteration-log pre-commit; README stats 68522/1575 pre-commit; no #1251 row in README/ARCHITECTURE test tables pre-commit.
+- 21 surfaced distinct non-circular verbatim URL keys all at >=1 pre-commit corpus hit via git grep -F (7 GF re-surfaces, 7 EHE, 7 press; min 5 hits on archyde/techspot); 6 distinct own-repo GitHub URLs rejected as circular (6 AS commits git-cat-file-verified; each present in the repo git log, still circular as evidence).
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 74 passed + 12 deselected by design (TestAnchor1251 5 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins1251 1 per #565/#719/#721); 1 in-gate defect found and fixed (test_no_type_e_1251_in_git_log_pin carried the post-commit own-set form pre-commit; reverted to the pre-commit pin form, re-pin deferred to the log-hash followup); test-file constants post-sync-positive per #719 (86 collected, 14 classes).
+
+### Findings
+- GF: episode 503 HOLDS (fourth full verification since its #1236 first surfacing, ~12h after the Oct-5 11:00am publication; fortieth Type E verification since the Sep-28 11:00am 502 release, ~180h after publication). Two-directory corroboration: podscan.fm main carries 503 (crawled <1h); goloudnow.com directory re-surface (crawled 9h) carries the same 503 content; podscan.fm-1 503-carrier page (crawled 12h); listennotes main still lists 502 (crawled 3d, stale). The listennotes TH stale locale variant surfaces a second consecutive run (crawled 188d; in corpus; surfaced at #1246, did NOT surface at #1236/#1241). The podscan.fm 499 episode transcript page did NOT surface this run (in corpus; surfaced at #1241). ZERO own-repo GitHub URLs in the GF set. ZERO Meta/wearables content in any GF episode across all 173 cycles (bounded search-result absence). GF pure-re-surface streak ADVANCES to twelve. ZERO new verbatim URL keys.
+- EHE: 56-day hold continues (Aug 10 Epstein spoof -> Oct 5; date(2026,10,5)-date(2026,8,10) = 56 days). 7 rows = 7 re-surfaces, ZERO new keys. "Glasses for people who don't do consent." remains the primary motif. No new primary campaign phase (circa Aug 24 amnesty-boxes strand alongside the Aug 10 Epstein poster). No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 173 cycles (bounded search-result absence). ZERO own-repo GitHub URLs in the EHE set.
+- AS: one-hundred-seventy-third quoted-search no-match as a podcast. 6 result rows, 6 verbatim full URLs, all this repository's own GitHub commit URLs (919eb54a #771, 9253dd41 #791, a3a96668 #901, 2f9a4a27 #731, d9288ceb #731 page, ca75e30b #1011 RE-SURFACES this run replacing 90bad2df #796), rejected as circular, not ingested. dec56140 did NOT surface - absence streak ADVANCES to six. The podcast-sentiment.md blob did NOT surface (present at #1191, absent since). 16611229 absent. Real-world identity stands per #591 (advocacy group, named ED Kendall Schrohe). Tracked Sources advanced 172->173.
+- Press: SEVEN rows = SEVEN re-surfaces, ZERO new keys (press pure re-surface streak ADVANCES to six). The metapress.net Hans Anders mirror did NOT surface (in corpus). No Oct-4/Oct-5 press-event surface; the recency frontier HOLDS at Oct 3. Meta-exclusive privacy-pressure framing continues across all 173 cycles: every press row's backlash framing concerns Meta glasses only - competitor camera wearables remain unscrutinized. Snippet-bounded, tone NOT_SCORED.
+- Verdict: monitoring-only per the Aug 28 2026 standing rule (tone NOT_SCORED, p_value/cohens_d NOT_CALCULATED, is_significant False, engine NOT run, no mechanisms added, falsification ledger holds at 52, NOT artifact-grade, verdict directionally_supported_not_proven, no_analysis_json_update true). Correlation is not causation. Hypothesis-generating only.
+
+### Pre-commit novelty greps
+- Zero test_type_e_1251 files on disk (glob); no "Type E #1251" in git log (--grep).
+- Max numeric mechanism_id 981; zero numeric/underscore/dash next-number nine-eight-two mechanism key forms repo-wide (needles format-built, own file excluded).
+- "## #1251" zero-hit in iteration-log pre-commit; no #1251 row in README/ARCHITECTURE test tables pre-commit; README stats 68522/1575 pre-commit.
+- Fortieth direction absent in profiles/; thirty-fifth through thirty-ninth intact - all GREEN pre-commit; #1250's max-981, zero-982, fortieth-absent, forty-eighth-through-fifty-second-intact, and no-fifty-third guards stay green (Type E lands no mechanisms; the #1250 no-Type-A-#1251-in-git-log pin stays green by rotation, never trips).
+
+### Rotation transparency
+- This run is iteration #1251 Type E, the SECOND leg of the 1250-1254 window (D #1250 -> E #1251 -> A #1252 -> B #1253 -> C #1254 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1250 Type D (main 3f986128 / anchor 5bee1864 / doc-sync 11827f60 / log-hash 431dd0f1).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1252 Type A continues the window; the #1245-launched background-suite verdict belongs to #1255 per #795 (this run observes only).
+- Guard lifecycle note: #1250's no-Type-A-#1251-in-git-log pin does NOT self-trip at this run (documented in TestStalenessPins1251): the #1250 file greps "Type A #1251" but this run lands as Type E #1251 per the D->E->A->B->C window order - the #1250 file misnamed the next leg, a read-only template quirk, not a guard failure. This run lays correct forward pins for #1252: no-Type-A-#1252-in-git-log, max-981, zero-982 all forms, fortieth absent, forty-eighth-through-fifty-second intact, no-fifty-third, ledger 52.
+- The 1245-1249 window was VERIFIED CLOSED pre-commit.
+
+### Doc-sync ratchet
+README stats table 68522/1575 -> 68608/1576 (+86/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 (86 collected, 14 classes).
+
+### Background suite (per #795)
+- The #1245-launched full suite verdict belongs to #1255: this run OBSERVES only. This run neither re-launches, kills, nor writes to the suite.
+- #1250's TestGuardLifecycle1250 run post-main-commit: all 15 green (no self-trip; the no-Type-A-#1251 pin stays green by rotation).
+
+### Push status
+Push status (this run, Oct 5 2026 ~23:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
