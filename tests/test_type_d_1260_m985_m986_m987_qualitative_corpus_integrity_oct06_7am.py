@@ -196,8 +196,8 @@ NON_D_SUITE_LOGS = [
 
 # Patched pre-main with the true collected count per #719.
 # Pre-sync: 69325 tests / 1584 files. PATCH TARGET (in-gate count).
-README_TEST_COUNT = 69325  # pre-sync; patched per #719 in doc-sync
-README_FILE_COUNT = 1584  # pre-sync; patched per #719 in doc-sync
+README_TEST_COUNT = 69445  # post-doc-sync total; patched per #719 (69325+120=69445)
+README_FILE_COUNT = 1585  # post-doc-sync total (pre-sync 1584 + 1)
 TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
