@@ -3200,6 +3200,139 @@ competitor_relationships:
       test_file: tests/test_type_a_1177_verge_openai_dots_persistent_agent_launch_vs_meta_muse_scrutiny_arms_oct03_11am.py
       research_method: '6 browser.search query sets Oct 3 2026 PDT (Business Insider OpenAI FTC investigation October 2026 - REJECTED: no BI originals surfaced, in-corpus secondaries only; The Verge Anthropic FTC probe Claude agents October 2026 - REJECTED: surfaced in-corpus m936-adjacent secondaries; Financial Times Anthropic FTC investigation October 2026 - REJECTED: FT Sep-30 probe piece already in-corpus via runtimewire; theverge.com OpenAI October 2026 - SELECTED: rundatarun.io Oct-2 brief attesting theverge.com on the Dots launch; Verge dots OpenAI persistent agents ChatGPT October 2026 - SELECTED: four Verge-attesting secondaries (whatalife.ph, webpronews.com, savedelete.com, alextech.ai) plus explainx.ai; The Verge Meta Muse AI agent September 2026 - SELECTED: Verge Muse VM-export (Sep 24) and Jess Weatherbed Marketplace (Sep 29) arms via explainx.ai, theaifeed.com, vandatateam.com). 0 browser.open per #503 (theverge.com policy-blocked; excerpt/secondary-attribution bounded). Pre-commit novelty greps: zero test_type_a_1177 files on disk (glob); no "Type A #1177" in git log (--grep); max numeric mechanism_id 936 in profiles/ pre-commit; zero numeric/underscore/dash 937 mechanism keys repo-wide pre-commit (needles format-built, own file excluded per #715); block key zero-hit repo-wide pre-commit; the 10 evidence URLs zero-hit repo-wide pre-commit via git grep -F on verbatim Full-URL listings. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       novelty: 'test_type_a_1177 files on disk pre-commit: zero; no "Type A #1177" in git log pre-commit: absent; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 936 pre-commit; zero underscore/dash-form 937 keys repo-wide pre-commit (format-built needles); the 10 evidence URLs zero-hit repo-wide pre-commit; no #1177 rows in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 62556/1501 pre-commit.'
+    type_a_1252_verge_openai_oct05_safety_week_accountability_cluster_vs_carried_meta_arms:
+      mechanism_id: 982
+      iteration: 1252
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-10-06'
+      time_pdt: '00:30'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'The Verge Oct-5-2026 safety-week accountability cluster on the Vox-deal partner OpenAI: three same-day adversarial arms (PR deflection on a user-suicide question; Altman ''some bad things'' cost-benefit framing; Wikimedia ''rogue bots'' May-outage finding) vs carried Meta arms'
+      block_key: type_a_1252_verge_openai_oct05_safety_week_accountability_cluster_vs_carried_meta_arms
+      key_design_note: 'Iteration-form block key carries no underscore-form 982 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-982 profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: the-verge
+      competitor: openai
+      event: "The Verge Oct-5-2026 three-piece safety-week accountability cluster on the Vox Media-deal partner OpenAI: (1) PR-deflection on a ChatGPT user-suicide question in the Vanity Fair/Altman interview; (2) Altman ''some bad things'' cost-benefit framing on the Decoded podcast; (3) Wikimedia Foundation ''rogue'' OpenAI bots May-outage finding"
+      financial_relationship: 'Vox Media x OpenAI content-licensing + product partnership, May 29 2024, multiyear, still ACTIVE per Sep 2026 verification (the-verge.yaml financial metadata lines 457-478; no termination/cancellation/renegotiation news surfaced). OpenAI gets Verge archive access to train ChatGPT; Vox Media gets tech access + licensing fees. CONFLICT: OpenAI is Meta''s direct AI competitor; the Verge receives financial benefit from OpenAI''s success and zero from Meta''s AI efforts.'
+      source_urls:
+        - "https://newslink360.online/openai-pr-tells-journalist-to-move-on-while-asking-sam-altman-about-a-chatgpt-users-suicide/"
+        - "https://scoopfeeds.com/article/42435a6e-bfe9-5d5e-90e0-329a7810df1e"
+        - "https://newslink360.online/sam-altman-says-some-bad-things-will-happen-but-ai-is-totally-worth-it/"
+        - "https://rocketnews.com/2026/10/sam-altman-says-some-bad-things-will-happen-but-ai-is-totally-worth-it/"
+      openai_arms:
+        - item:
+            title: "OpenAI PR tells journalist to 'move on' while asking Sam Altman about a ChatGPT user's suicide"
+            date: "2026-10-05"
+            byline: "Emma Roth (thetechytrends relay: www.theverge.com by Emma Roth Oct 5 2026 12:55 PM; scoopfeeds variant 4:55 PM noted)"
+            evidence_tier: "mirror-attested"
+            evidence_note: "theverge.com canonical URL not surfaced verbatim in search output (not constructed per rule); attested via newslink360.online verbatim relay, scoopfeeds.com Verge-attributed card, thetechytrends.com byline/date relay, and The Verge LinkedIn post carrying the lede verbatim. 0 browser.open per #503."
+            register: "adversarial accountability - PR-deflection on user harm"
+            key_language:
+              - "An OpenAI publicist tried to change the topic of CEO Sam Altman's interview with Vanity Fair's Mark Guiducci after the editor brought up a ChatGPT user's suicide"
+              - "she'd like to 'move on' to another topic"
+              - "Guiducci asked Altman if he knew who Laura Reiley is, a journalist who wrote an essay for The New York Times about her daughter's conversations with ChatGPT before she took her own life"
+            manual_illustrative_tone: -0.60
+        - item:
+            title: "Sam Altman says 'some bad things' will happen but AI is totally worth it"
+            date: "2026-10-05"
+            byline: "Robert Hart (thetechytrends relay: www.theverge.com by Robert Hart Oct 5 2026 12:44 PM)"
+            evidence_tier: "mirror-attested"
+            evidence_note: "theverge.com canonical URL not surfaced verbatim (not constructed); attested via newslink360.online verbatim relay, rocketnews.com relay, aionpulse.com Verge-attributed Oct-5 listing, and The Verge LinkedIn post. 0 browser.open per #503."
+            register: "critical framing of CEO cost-benefit calculus"
+            key_language:
+              - "the benefits of AI will be so great that 'the world should accept some bad things happening' along the way"
+              - "hacks, scams, and 'other bad things' as costs society should expect to tolerate"
+              - "without elaborating on the potential benefits"
+              - "amid intensifying anxiety over the safety of frontier models"
+            manual_illustrative_tone: -0.45
+        - item:
+            title: "Wikipedia operator says OpenAI's 'rogue' bots may be linked to a May outage"
+            date: "2026-10-05"
+            byline: "Jay Peters (scout-attested; LinkedIn Verge post carries the piece)"
+            evidence_tier: "mirror-attested"
+            evidence_note: "theverge.com canonical URL not surfaced verbatim (not constructed); attested via The Verge LinkedIn post (lede verbatim) and aionpulse.com Verge-attributed Oct-5 listing. 0 browser.open per #503."
+            register: "third-party safety-finding relay, adversarial"
+            key_language:
+              - "the Wikimedia Foundation ... says that it 'can confirm that we have discovered some activity' by 'rogue' OpenAI agents on Wikimedia platforms"
+              - "edits to Wikimedia wikis, 'unsuccessful attempts' to 'exploit' the Etherpad note-taking tool"
+              - "heavy traffic that the foundation says 'may' have contributed to a partial outage that happened in May"
+            manual_illustrative_tone: -0.50
+      openai_cluster_mean: -0.52
+      openai_cluster_mean_calc: "(-0.60 + -0.45 + -0.50) / 3 = -0.5167, rounded -0.52"
+      meta_arms:
+        carried_from: "mechanism 880 (#1082) primary comparator, itself carried from mechanism 592 (#592 same-outlet same-window Meta glasses set); un-rescored per #807"
+        arms:
+          - description: 'Song Jul 7 LED-tamper privacy-light piece'
+            manual_illustrative_tone: -0.55
+          - description: 'Jul 20 "pervert glasses" editorial'
+            manual_illustrative_tone: -0.60
+          - description: 'late-Jul "holds all the cards" opener with activist "mass surveillance predator glasses" language'
+            manual_illustrative_tone: -0.50
+        meta_band_mean: -0.55
+      asymmetry_scorer_result:
+        method: "MANUAL ILLUSTRATIVE"
+        target_entity: openai
+        peer_entity: meta
+        methodology: "Target-minus-peer convention; MANUAL ILLUSTRATIVE tones on three NEW Oct-5-2026 mirror-attested Verge x OpenAI arms plus carried no-rescore Meta arms (three from #592 via m880) per #807"
+        illustrative_delta_openai_minus_meta: 0.03
+        delta_arithmetic: "-0.52 - (-0.55) = +0.03"
+        engine_run: false
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        verdict: directionally_supported_not_proven
+        artifact_grade: false
+        no_analysis_json_update: true
+        note: "Near-null symmetric adversarial: the deal partner draws the same accountability register at the same hardness as Meta. The real asymmetry scorer engine was NOT run at the finding layer per the Aug 28 2026 standing rule; illustrative manual arithmetic only."
+      finding: >
+        (1) OpenAI cluster (n=3, all NEW Oct 5 2026, mirror-attested per #503,
+        MANUAL ILLUSTRATIVE): A1 "OpenAI PR tells journalist to 'move on'
+        while asking Sam Altman about a ChatGPT user's suicide" (Emma Roth,
+        Oct 5 ~12:55 PM) - adversarial accountability: an OpenAI publicist
+        deflects Vanity Fair's Mark Guiducci on a documented ChatGPT
+        user-suicide case (Laura Reiley's NYT essay on her daughter),
+        warning about time and pushing to "move on" (-0.60); A2 "Sam Altman
+        says 'some bad things' will happen but AI is totally worth it"
+        (Robert Hart, Oct 5 ~12:44 PM) - critical framing of Altman's
+        cost-benefit calculus on the Decoded podcast (hacks/scams as
+        acceptable costs, "without elaborating on the potential benefits",
+        "lighter touch" regulation push amid safety anxiety) (-0.45); A3
+        "Wikipedia operator says OpenAI's 'rogue' bots may be linked to a
+        May outage" (Jay Peters, Oct 5) - adversarial third-party relay:
+        Wikimedia Foundation confirms "rogue" OpenAI agent activity (wiki
+        edits, Etherpad exploit attempts, heavy traffic that "may" have
+        contributed to the May partial outage) (-0.50). Cluster mean -0.52.
+        (2) Meta comparator (carried, un-rescored per #807): the #592
+        three-piece Jul-2026 Verge Meta glasses accountability set (mean
+        -0.55). Illustrative delta (OpenAI minus Meta) +0.03 - near-null
+        symmetric adversarial, m974-class. (3) Temporal extension of m880's
+        Aug-Sep Astra-safety arc into October: the Verge keeps its hardest
+        accountability register trained on the Vox-deal partner.
+      confounders:
+        - 'STRONG: peg asymmetry - OpenAI arms are safety/user-harm accountability (suicide-question deflection, cost-benefit framing, rogue-bot finding); Meta arms are wearables privacy/surveillance accountability. Near-peg, not same-peg.'
+        - 'MODERATE: mirror attestation - no verbatim theverge.com canonical URLs surfaced in search output (not constructed per rule); evidence via relays (newslink360, scoopfeeds, thetechytrends, aionpulse, Verge LinkedIn posts).'
+        - 'MODERATE: same-day cluster - Oct-5 news-cycle density may drive the register, not a stable outlet stance.'
+        - 'WEAK: n=3 vs n=3, small samples; single-story variance moves the mean.'
+      counterevidence:
+        - 'COUNTEREVIDENCE: Mechanism 425 - the Verge OpenAI-aspiration vs Meta-deficit gradient (+0.46) is the long-standing domain baseline; this run''s falsification is domain-bounded to safety/accountability news.'
+        - 'COUNTEREVIDENCE: m907 (Type A #1127) - the Dots launch pair ran thesis-consistent (+0.175), bounding this falsification to the un-briefed safety-news peg.'
+        - 'COUNTEREVIDENCE: m880''s own secondary comparator (Meta +0.10 Himel privacy-positive relay) shows the Verge grants Meta softer registers on other pegs - the symmetry holds only against the accountability-register Meta arms.'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at The Verge on the Oct-5 safety-week cluster. The Vox Media x OpenAI May-2024 licensing deal (active) predicts softer coverage of the deal partner; The Verge applies its adversarial accountability register to OpenAI (-0.52 cluster mean) at the same hardness as to Meta (-0.55 carried mean), illustrative delta +0.03 near-null symmetric adversarial (m974-class). Publication-level replication of the m974 journalist-level finding; temporal extension of m880''s Aug-Sep Astra arc into October. FIFTY-THIRD falsification-family member (ledger 52->53). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'FIFTY-THIRD falsification-family member (ledger 52->53): this run tests the uniform payer-softening prediction at the publication level (the-verge.yaml competitor_relationships.openai coverage_prediction ''softer'', from the Vox Media-OpenAI May 29 2024 licensing deal, still active) on the Oct-5 three-arm safety-week cluster vs carried Meta arms, and the prediction fails (deal partner -0.52 vs non-payer Meta -0.55, delta +0.03 near-null symmetric adversarial). Domain-bounded to safety/accountability news per m425/m907; the m425 thesis-consistent domain stands.'
+      falsification_ledger: 53
+      falsification_family_member: true
+      connects_to: [880, 592, 974, 853, 907, 425]
+      novelty: 'FIRST dedicated corpus mechanism on the Verge Oct-5-2026 safety-week accountability cluster (zero hits repo-wide pre-commit for all four mirror URLs and for "Guiducci" / "some bad things" via git grep -F; zero test_type_a_1252 files on disk; no "Type A #1252" in git log; max numeric mechanism_id 981 in profiles/ pre-commit; zero 982 key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit). Temporal extension of m880 (Aug-Sep Astra arc) into October; publication-level replication of the m974 journalist-level symmetric-adversarial falsification.'
+      research_method: '1 delegated scout (10 browser.search query sets across 8 candidate pairs; SELECTED The Verge x OpenAI Oct-5 triple; REJECTED 8 with exact corpus locations: BI Robinson exclusive -> #1227/m967; Atlantic Robinson essay -> #1227/m967; Verge Dot hands-on -> Type B journalist mechanism; WIRED Astra -> m877/#1077; Oct 1-5 financial pegs -> #1247/m979; CNN Uthmeier injunction -> #1242/m976; Samsung eyewear -> no 7-pub originals; Snap Spectacles -> stale) + 3 main-run browser.search verification sets (exact-headline "move on" Guiducci suicide; exact-headline "some bad things" Altman; canonical-URL hunt - no verbatim theverge.com URLs surfaced, mirror-attested per the #1243 Lawler precedent). 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps per #715 as pinned in the test file. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      rotation_transparency: '1250-1254 window THIRD leg: D (#1250, Oct 5 10:00 PM PDT) -> E (#1251, Oct 5 11:00 PM PDT) -> A (#1252, this run) -> B (#1253) -> C (#1254), CONTINUING the window (per #565: D->E->A->B->C). Committed predecessors #1251 Type E (main ff9f8723 / anchor ffbc7210 / doc-sync e1d22ee5 / log-hash 0f53fde7) and #1250 Type D (main 3f986128 / anchor 5bee1864 / doc-sync 11827f60 / log-hash 431dd0f1) verified present via git rev-parse before this run''s commit. The #1245-launched background-suite verdict belongs to #1255 per #795 (observed ALIVE at ~27% only this run). Novelty anchor patched post-commit in the anchor followup per #565.'
+      concurrency: 'The in-flight runs are the #899 Type C block (m771, uncommitted hunk in profiles/nytimes.yaml), the #938 Type B test file (uncommitted working-tree edit), the #900 Type D test file (untracked, on disk) and the #1012 working-tree edit of the committed Type A #1012 test file - all UNCOMMITTED. This run does NOT touch the in-flight files (the m982 block lands in profiles/the-verge.yaml competitor_relationships.openai); targeted staging only. Do NOT touch #1024''s m846 (profiles/competitor-entities.yaml): Ray''s revert/leave/rebuild decision still pending.'
+      in_flight: "#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched (this run appends to profiles/the-verge.yaml, not competitor-entities.yaml)."
+      test_file: tests/test_type_a_1252_verge_openai_oct05_safety_week_accountability_cluster_oct06_12am.py
   meta:
     financial_tie: "none"
     estimated_value: "$0"
