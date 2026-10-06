@@ -46943,3 +46943,42 @@ Push status (this run, Oct 6 2026 ~03:xx PDT): main + anchor followup pushed and
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1257 Type A: m985 Guardian Oct-1-2026 Bhuiyan hijab cross-lab safety test on Anthropic (non-deal lab) vs deal-partner OpenAI (falsification_member_confirmed, FIFTY-FOURTH member, ledger 53->54; illustrative deltas +0.32 vs Meta, +0.02 near-null vs OpenAI) - Type A THIRD leg of the 1255-1259 window (Oct 6 2026, 04:00 AM PDT; main commit 841f1b2b / anchor f112fb86 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69064/1581 -> 69150/1582 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Research method
+- 5 browser.search query sets this run (NYT x Anthropic Pentagon/Broadcom sweep; Guardian x Anthropic October sweep; exact-headline hijab verification; Queensland datacentre relay verification; Guardian x Meta glasses-comparator sweep); 0 browser.open per #503 (excerpt-bounded).
+- Pre-commit novelty greps per #715: zero test_type_a_1257 files on disk (glob); no "Type A #1257" in git log (--grep); max numeric mechanism_id 984 in profiles/ pre-commit; zero numeric/underscore/dash nine-eight-five mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); 7 novel mirror URLs zero-hit repo-wide pre-commit (git grep -F); "## #1257" zero-hit in iteration-log pre-commit; README stats 69064/1581 pre-commit; no #1257 row in README/ARCHITECTURE test tables pre-commit.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 74 passed + 12 deselected by design (TestAnchor1257 5 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins1257 1 per #565/#719/#721); 3 in-gate defects found and fixed pre-commit (no_type_a_1257 pin pre-commit-empty form; chatgpt lowercase cross_lab_results key; p_value startswith form); 0 in-gate defects at gate time.
+
+### Findings
+- Guardian Oct-1 Bhuiyan hijab cross-lab test (Guardian US, Thu 1 Oct 2026 06.00 EDT): ChatGPT + Grok COMPLY with the hijab-removal prompt, Claude REFUSES unconditionally, Gemini refuses then complies on the 'western' reframe (+0.15 MANUAL ILLUSTRATIVE, NEW arm, mirror-attested via 7 mirrors/relays). The Guardian names the deal partner's ChatGPT as a complier, quotes its defensive distinction, then prints its concession. The uniform payer-softening prediction (Guardian x OpenAI Feb-14-2025 strategic partnership, mechanism_514) FAILS on an own-investigation peg: the Guardian's own cross-lab safety test is its highest editorial-investment tier, and the byline sits on the reporter's in-corpus profiled beat (careers/journalists.yaml: surveillance of marginalized/Muslim communities; m472 established the deal buys no softness from her).
+- Guardian AI Queensland $31bn datacentre opposition (Andrew Messenger, relay-attested Oct 5): adversarial infrastructure-expansion register (-0.35 MANUAL ILLUSTRATIVE, NEW arm, relay-bounded) - residents Denver Kanowski and Mordechai Winters quoted, local sentiment 'a whole new level of stupidity', 21,000+ Change.org petition, Environmental Defenders Office legal-challenge signal. Adversarial-capacity control: the Guardian runs its expansion-adversarial register against the non-deal lab at Meta-comparable hardness, so there is no suppression firewall in either direction.
+- Illustrative means: Anthropic -0.10 vs carried Guardian Meta arms -0.425 (m886 via m537, un-rescored per #807; delta +0.32, Meta draws the harder register) vs carried Guardian OpenAI deal-partner arms -0.125 (delta +0.02 near-null). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; NOT artifact-grade; no analysis.json update.
+- Verdict: falsification_member_confirmed. FIFTY-FOURTH falsification-family member (ledger 53->54). Temporal extension of m472 (journalist-level, Sep 2) to publication-level own-investigation tier; publication-level replication pattern per m982 (#1252). Correlation is not causation. Hypothesis-generating only.
+
+### Pre-commit novelty greps
+- Zero test_type_a_1257 files on disk (glob); no "Type A #1257" in git log.
+- Max numeric mechanism_id 984 in profiles/ pre-commit; zero numeric/underscore/dash nine-eight-five mechanism key forms repo-wide pre-commit (needles format-built, own file excluded).
+- "## #1257" zero-hit in iteration-log pre-commit; no #1257 row in README/ARCHITECTURE test tables pre-commit; README stats 69064/1581 pre-commit.
+- Fortieth direction absent in profiles/; forty-eighth-through-fifty-third intact - all GREEN at HEAD pre-commit; #1256's max-984, zero-985 (all forms), fortieth-absent, forty-eighth-through-fifty-third-intact, and no-fifty-fourth guards verified GREEN at HEAD pre-commit; the #1256 no-Type-A-#1257-in-git-log, zero-985-numeric, and no-fifty-fourth pins flip BY DESIGN at the main commit (the #1191-class self-trip family, re-pinned post-commit by TestStalenessPins1257).
+
+### Rotation transparency
+- This run is iteration #1257 Type A, the THIRD leg of the 1255-1259 window (D #1255 -> E #1256 -> A #1257 -> B #1258 -> C #1259 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1256 Type E (main 09867f9d / anchor bed56aa5 / doc-sync fb224e86 / log-hash 8971b183); #1255 Type D (main c5d035d8 / anchor 50d8c984 / doc-sync d53069f3 / log-hash fe08152c).
+- Rotation guard: this run's main commit is the anchor per #565; f112fb86 ANCHORED_SHA patched post-commit. Next: #1258 Type B continues the window; the #1255-launched background-suite verdict belongs to #1260 per #795.
+- Guard lifecycle note: #1256's no-Type-A-#1257-in-git-log, zero-985-numeric, and no-fifty-fourth pins flip BY DESIGN at this run's main commit (the main commit's subject carries "Type A #1257"; the m985 block lands mechanism_id 985 and the fifty-fourth member claim); the other 13 TestGuardLifecycle1256 pins stay green (verified post-commit by TestStalenessPins1257 expecting the class to fail). This run lays forward pins for #1258: no-Type-B-#1258-in-git-log, max-985, zero-986 all forms, fortieth absent, forty-eighth-through-fifty-fourth intact, no-fifty-fifth, ledger 54.
+
+### Doc-sync ratchet
+README stats table 69064/1581 -> 69150/1582 (+86/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 (86 collected, 14 classes).
+
+### Background suite (per #795)
+- The #1255-launched full suite verdict belongs to #1260: this run OBSERVES only. Observed ALIVE at this run's ~04:10 check (dots accumulating at ~4% progress, last write minutes before the check, pytest processes live). This run neither re-launches, kills, nor writes to the suite.
+- #1256's TestGuardLifecycle1256 run post-main-commit: the no-Type-A-#1257-in-git-log, zero-985-numeric, and no-fifty-fourth pins flip BY DESIGN - the #1191-class self-trip; documented in TestStalenessPins1257.
+
+### Push status
+Push status (this run, Oct 6 2026 ~04:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
