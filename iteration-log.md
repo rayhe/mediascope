@@ -47375,3 +47375,45 @@ README stats table 69919/1590 -> 70012/1591 (+93/+1); README test-table row; doc
 ### Push status
 Push status (this run, Oct 6 2026 ~12:5x PDT): doc-sync + log-hash followup pushed and ls-remote-verified (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
 
+
+## #1267 Type A: m991 WIRED Sep-29 Dots launch product-relay register (Reece Rogers, always-on agents as the answer to Meta Muse, +0.10 MANUAL ILLUSTRATIVE) vs carried WIRED x Meta Muse-dossier accountability register (-0.58, m988); illustrative delta (OpenAI minus Meta) +0.68 clean / +0.543 pooled, thesis_consistent_observation, NOT a falsification-family member (genre/peg confound STRONG); ledger holds at 54; scout #1 Verge Dots rejected (m965 double-count, #1247 precedent); 2 novel relay URLs zero-hit pre-commit - Type A THIRD leg of the 1265-1269 window (Oct 6 2026, 01:00 PM PDT; main commit 4e5f2404 / anchor f610f0f7 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70012/1591 -> 70084/1592 (+72/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 4e5f2404 / anchor f610f0f7 / doc-sync TBD / log-hash this commit
+
+### Commit hashes
+- Main commit `4e5f2404` (4e5f2404d38d7e3c761d7341805f46551ae76d65) - verified via git rev-parse
+- Anchor followup `f610f0f7` (f610f0f75d0b7b763edf1706539e3dd510a35164; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `TBD` (README 70012/1591 -> 70084/1592; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_a_1267_in_git_log_pin to the own-set form (HEAD admitted)
+
+### Rotation transparency
+- This run is iteration #1267 Type A, the THIRD leg of the 1265-1269 window (D #1265 -> E #1266 -> A #1267 -> B #1268 -> C #1269 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1266 Type E (main d1eeac3a / anchor 1f0243be / doc-sync 700c0909 / log-hash 3af8e551), #1265 Type D (main b2cceb48 / anchor 344914ff / doc-sync a54c9bff / log-hash 849afa5a).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1268 Type B continues the window; the #1265 background-suite verdict belongs to #1270 per #795.
+- Guard lifecycle note: #1266's max-990 + zero-991 (all forms) + no-Type-A-#1267-in-git-log pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1267 test file, expecting "3 failed, 13 passed"-class flips on TestGuardLifecycle1266); #1266's fortieth-absent, forty-eighth-intact, forty-ninth-intact, fiftieth-intact, fifty-first-intact, fifty-second-intact, fifty-third-intact, fifty-fourth-intact, no-fifty-fifth guards stay green (m991 is a thesis-consistent observation, not a member).
+
+### Finding summary
+- m991 (profiles/wired.yaml competitor_relationships.openai, NEW block): WIRED Gear's Sep-29-2026 Dots launch original (Reece Rogers, 1:15 PM) runs the soft-positive product-launch relay on the deal partner's consumer agent (+0.10 MANUAL ILLUSTRATIVE: "cute agents" dek, "always-on" as the core selling point, headline positioning Dots as the answer to Meta's Muse) vs WIRED's hard accountability register on Meta's Muse five days later (m988, -0.58, system-prompt dossier). Illustrative delta (OpenAI minus Meta) +0.68 clean (n=1 vs n=1), +0.543 pooled (n=1 vs n=3 against m988 + m877-family arms). Directionally softer for the Condé Nast x OpenAI deal partner, matching the softer-prediction. EXTENDS the m889 Dots product-relay strand (Sep-29 messaging-expansion relay, 0.00) to the launch-day original. NOT a falsification-family member: the genre/peg confound is STRONG (launch relay vs accountability original; register-follows-peg per m877/m889/m916), and #1192 already falsified blanket payer-softening at WIRED x OpenAI. Ledger HOLDS at 54.
+- Scout rejections (documented in the block): #1 Verge x OpenAI Dots (Allison Johnson Oct 2) REJECTED on main-run verification - the exact arm is already scored in Type B #1223/m965 (journalists.yaml; aifuture.org URL in corpus); a Type A re-score would double-count per the #1247 precedent. #2 TechCrunch pair REJECTED - TechCrunch is not a profiled publication (no profiles/techcrunch.yaml). #3 WIRED Astra-delay REJECTED - same peg as m877/#1077, saturated. #4-9 (Bloomberg xAI, FT Anthropic, Reuters Hans Anders, Barron's, THN Google, TC Muse-dispute) REJECTED for URL gaps, missing comparator arms, or out-of-window pegs.
+- Verdict: thesis_consistent_observation; MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update). Correlation is not causation; hypothesis-generating only.
+
+### Method
+- Pre-commit novelty greps per #715: zero test_type_a_1267 files on disk (glob, own file only); no "Type A #1267" in git log; max numeric mechanism_id 990 in profiles/ pre-commit; zero numeric/underscore/dash nine-nine-one mechanism key forms repo-wide pre-commit (needles format-built, sweep-carrier excluded); "## #1267" zero-hit in iteration-log pre-commit; README stats 70012/1591 pre-commit; no #1267 row in README/ARCHITECTURE test tables pre-commit; 2 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); the headline phrase "Always-On AI Agents" zero-hit repo-wide pre-commit; distinct from m889's Dots messaging-expansion relay (different piece, different peg, different URL, verified in corpus).
+- Verification-layer run: 1 delegated scout (9 ranked candidate pairs; SELECTED none) + 4 main-run browser.search query sets (exact-headline Verge Dots search confirming m965 saturation; Verge Muse-gadgets search; exact-headline WIRED Dots search selecting the Rogers Sep-29 WIRED Gear original via 4 WIRED-attributed relays; WIRED Dots byline/date verification). 0 browser.open per #503 (excerpt-bounded).
+- Literal discipline per #715: the forward-guard needles (next-number 992 forms, the fifty-fifth member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed ordinals live as short lowercase forms in the test-file prose.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 72 passed + 12 deselected by design (TestAnchor1267 5 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins1267 1 per #565/#719/#721); 0 in-gate defects found; test-file constants post-sync-positive per #719 (72 collected, 14 classes).
+- Tests: tests/test_type_a_1267_wired_openai_dots_launch_vs_meta_muse_dossier_oct06_1pm.py (72 tests, 14 classes).
+- Forward guards for #1268: max-991; zero nine-nine-two keys all forms (profiles/ + tests/ scope); no-Type-B-#1268-in-git-log; fortieth direction absent; forty-eighth-through-fifty-fourth intact; no fifty-fifth member (repo-wide); ledger 54.
+
+### Doc-sync ratchet
+README stats table 70012/1591 -> 70084/1592 (+72/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants post-sync-positive per #719 (72 collected, 14 classes).
+
+### Background suite (per #795)
+- The #1265-launched full suite is OBSERVED this run only (verdict belongs to #1270): goal hidden_files type_d_1265_full_suite.log at 1510 bytes, last write Oct 6 2026 18:59:55 UTC (~1h50m stale at this run's ~13:50 PDT check), zero live pytest processes - NOT-ALIVE (observation, not a verdict). This run neither re-launches, kills, nor writes to the suite.
+- TestGuardLifecycle1266 staleness verification belongs to the log-hash followup (post-main-commit): the no-Type-A-#1267-in-git-log and zero-991 pins flip BY DESIGN at the main commit.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
+
+### Push status
+Push status (this run, Oct 6 2026 ~1:xx PM PDT): TBD in the log-hash followup (explicit https URL, IPv6 proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
