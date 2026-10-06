@@ -46944,7 +46944,7 @@ Push status (this run, Oct 6 2026 ~03:xx PDT): main + anchor followup pushed and
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
-## #1257 Type A: m985 Guardian Oct-1-2026 Bhuiyan hijab cross-lab safety test on Anthropic (non-deal lab) vs deal-partner OpenAI (falsification_member_confirmed, FIFTY-FOURTH member, ledger 53->54; illustrative deltas +0.32 vs Meta, +0.02 near-null vs OpenAI) - Type A THIRD leg of the 1255-1259 window (Oct 6 2026, 04:00 AM PDT; main commit 841f1b2b / anchor f112fb86 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69064/1581 -> 69150/1582 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1257 Type A: m985 Guardian Oct-1-2026 Bhuiyan hijab cross-lab safety test on Anthropic (non-deal lab) vs deal-partner OpenAI (falsification_member_confirmed, FIFTY-FOURTH member, ledger 53->54; illustrative deltas +0.32 vs Meta, +0.02 near-null vs OpenAI) - Type A THIRD leg of the 1255-1259 window (Oct 6 2026, 04:00 AM PDT; main commit 841f1b2b / anchor f112fb86 / doc-sync a048dc32; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69064/1581 -> 69150/1582 (+86/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Research method
 - 5 browser.search query sets this run (NYT x Anthropic Pentagon/Broadcom sweep; Guardian x Anthropic October sweep; exact-headline hijab verification; Queensland datacentre relay verification; Guardian x Meta glasses-comparator sweep); 0 browser.open per #503 (excerpt-bounded).
@@ -46975,7 +46975,7 @@ README stats table 69064/1581 -> 69150/1582 (+86/+1); README test-table row; doc
 
 ### Background suite (per #795)
 - The #1255-launched full suite verdict belongs to #1260: this run OBSERVES only. Observed ALIVE at this run's ~04:10 check (dots accumulating at ~4% progress, last write minutes before the check, pytest processes live). This run neither re-launches, kills, nor writes to the suite.
-- #1256's TestGuardLifecycle1256 run post-main-commit: the no-Type-A-#1257-in-git-log, zero-985-numeric, and no-fifty-fourth pins flip BY DESIGN - the #1191-class self-trip; documented in TestStalenessPins1257.
+- #1256's TestGuardLifecycle1256 run post-main-commit: 13 passed, 3 failed (the no-Type-A-#1257-in-git-log, zero-985-numeric, and no-fifty-fourth pins flip BY DESIGN - the #1191-class self-trip; documented in TestStalenessPins1257). The 985 underscore/dash pins stay green (designed keying held).
 
 ### Push status
 Push status (this run, Oct 6 2026 ~04:xx PDT): main + anchor followup pushed and ls-remote-verified; doc-sync + log-hash followups pushed after.

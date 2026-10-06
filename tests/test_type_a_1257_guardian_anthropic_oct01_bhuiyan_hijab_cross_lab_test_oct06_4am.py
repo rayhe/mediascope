@@ -139,7 +139,7 @@ PRED_FINAL_1256 = "8971b183"
 # This run's own main commit (full sha). Pre-commit placeholder per
 # #721; patched to the main commit full sha in the terminal log-hash
 # followup.
-PRED_MAIN_1257 = "0" * 40
+PRED_MAIN_1257 = "841f1b2b098836e167fe8d113fe4feddc661782d"
 
 # The #1256 window-continuation file, for the staleness pin on its
 # guard-lifecycle class.
