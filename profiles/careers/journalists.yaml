@@ -28016,3 +28016,87 @@ dan_goodin_type_b:
       - https://technewstube.com/ars-technica/1872862/apple-changes-full-disk-access-permissions-to-curb-abuse-ai/
       - https://induwara.lk/blog/2026-09-22-muse-meta-s-extraordinarily-privileged-ai-assistan
       - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/?outputType=chromeless
+
+richard_lawler_type_b:
+  name: Richard Lawler
+  publication: the-verge
+  mechanism_ids: [977]
+  notes: 'Type B #1243 (Oct 5 2026): mechanism 977 CONTROL-CASE, NOT a falsification-family member (ledger holds at 52) - FIRST dedicated Type B pair on Richard Lawler (The Verge senior editor; zero dedicated type_b key pre-commit, per the #643 convention; m646 #687 used his iPhone Duo pre-launch piece at piece level only, not journalist-level saturation; "richard lawler" hits in #1208 were the scout-rejection note, not a mechanism). Same writer, same outlet, 23 days apart, both in-window Sep 2026: Lawler runs the adversarial legal-accountability register on Meta''s "attorney/client privilege" hats maneuver in the teen-safety lawsuits (-0.50 MANUAL ILLUSTRATIVE, Sep-24 arm: "applied far too broadly") and straight succession news on Apple''s CEO change (+0.05, Sep-1 arm: "For the first time since 2011"). Illustrative delta (Apple minus Meta) +0.55 register asymmetry in the Meta-hard direction. Vox Media (The Verge''s parent) holds the May-2024 OpenAI content-licensing deal (in-corpus, profiles/the-verge.yaml), but the comparator is Apple, not the deal partner, so the uniform payer-softening prediction is not adjudicated. Peg asymmetry (misconduct-litigation vs CEO-succession) is the STRONG confound. Mirror-attested bylines (technewstube), excerpt-tier per #503, 0 browser.open.'
+  competitor_coverage:
+    type_b_1243_richard_lawler_verge_meta_privilege_hats_vs_apple_ternus_ceo_oct05_5pm:
+      block_key: type_b_1243_richard_lawler_verge_meta_privilege_hats_vs_apple_ternus_ceo_oct05_5pm
+      mechanism_id: 977
+      iteration: 1243
+      type: B
+      date: '2026-10-05 17:00 PDT'
+      test_file: tests/test_type_b_1243_richard_lawler_verge_meta_privilege_hats_vs_apple_ternus_ceo_oct05_5pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Richard Lawler
+      publication: the-verge
+      window: '1240-1244 window FOURTH leg (D #1240 -> E #1241 -> A #1242 -> B #1243 -> C #1244)'
+      design: 'Type B journalist cross-entity tracking: Richard Lawler (The Verge senior editor, Vox Media) on Meta "attorney/client privilege" hats in the teen-safety lawsuits vs Apple John Ternus CEO succession, same writer, same outlet, 23 days apart, both in-window Sep 2026. Vox Media holds the May-2024 OpenAI content-licensing deal (in-corpus, profiles/the-verge.yaml competitor-coverage-research), so the outlet is deal-holding; the comparator is Apple rather than the deal partner, so the pair tests cross-entity register symmetry at a deal-holding outlet (CONTROL-CASE, same brief as #1218) rather than adjudicating the uniform payer-softening prediction. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Meta employees ordered ''attorney/client privilege'' hats while fighting child safety disclosures'
+        date: '2026-09-24'
+        outlet: the-verge
+        author_byline: 'Richard Lawler'
+        entity: meta
+        url: https://technewstube.com/theverge/1870470/meta-employees-ordered-attorneyclient-privilege-hats/
+        url_note: 'Verge original did not surface in search listings (bot-blocked per the scout); mirror URL copied verbatim from this run''s Full-URL listing (search index 3), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested: technewstube "By Richard Lawler Sep 24, 2026, 7:50 pm")'
+        key_quotes:
+        - 'Headline register (verbatim): "Meta employees ordered ''attorney/client privilege'' hats while fighting child safety disclosures"'
+        - 'Accountability frame (verbatim): "Meta''s lawyers have argued that certain evidence should be withheld from public view on the grounds of attorney-client privilege in the ongoing lawsuits over alleged harm to teens'' safety and mental health."'
+        - 'Adversarial turn (verbatim): "Lawyers suing the company said this week that the label has been applied far too broadly, while pointing..."'
+        tone_MANUAL_ILLUSTRATIVE: -0.50
+        tone_reading: 'Adversarial legal-accountability register: privilege-hats maneuver framed as evidence-concealment in the teen-safety lawsuits, plaintiffs'' "far too broadly" counter given the last word. The piece performs accountability on Meta''s litigation conduct.'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      apple_arm:
+        title: 'John Ternus is now the CEO of Apple'
+        date: '2026-09-01'
+        outlet: the-verge
+        author_byline: 'Richard Lawler'
+        entity: apple
+        url: https://technewstube.com/theverge/1863229/john-ternus-ceo-apple/
+        url_note: 'Verge original did not surface in search listings (bot-blocked per the scout); mirror URL copied verbatim from this run''s Full-URL listing (search index 2), headline-attributed; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested: technewstube "By Richard Lawler Sep 1, 2026, 6:04 am")'
+        key_quotes:
+        - 'Headline register (verbatim): "John Ternus is now the CEO of Apple"'
+        - 'Succession frame (verbatim): "Apple SVP John Ternus takes over as CEO from Tim Cook."'
+        - 'News register (verbatim): "For the first time since 2011, one of the world''s most valuable companies has a new leader, as today marks John Ternus'' first day as Apple''s CEO. He''s replacing Tim Cook, who will continue on as the executive chairman on Apple''s board..."'
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        tone_reading: 'Straight succession news: no adversarial vocabulary, no accountability framing, no named critics. The neutral register is the news peg''s, not a softening choice.'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.55
+      delta_reading: 'Illustrative delta (Apple minus Meta) +0.55: register asymmetry in the Meta-hard direction. Lawler applies the adversarial legal-accountability register to Meta''s litigation conduct and straight news to Apple''s leadership change. The peg asymmetry (misconduct-litigation vs CEO-succession) is the dominant confound, so the gap tracks the news peg, not necessarily entity-level editorial standards.'
+      confounders:
+      - 'Peg asymmetry: the Meta arm is a misconduct-litigation peg (privilege maneuver in teen-safety lawsuits) while the Apple arm is a CEO-succession news peg; the register gap may track the peg rather than the entity. Ranked STRONG.'
+      - 'Mirror attestation: bylines attested via technewstube mirrors, not theverge.com canonicals (bot-blocked, did not surface in listings); excerpt-tier evidence only. Ranked MODERATE.'
+      - 'Temporal gap: 23 days apart (Sep 1 vs Sep 24); both in the September window, so peg-adjacent. Ranked WEAK.'
+      - 'Deal-partner mismatch: the uniform payer-softening prediction concerns OpenAI (Vox Media x OpenAI May-2024 deal); the comparator is Apple, so the prediction is not tested, only cross-entity register symmetry. Ranked MODERATE for family purposes, out of scope for the asymmetry reading.'
+      counter_evidence:
+      - 'The asymmetry could invert on a different peg pair: Lawler''s Apple coverage on antitrust or privacy pegs might run equally hard; this pair does not test Lawler''s Apple-accountability register.'
+      - 'The Verge''s newsroom-level Apple vs Meta register (m646 #687: Apple launch celebratory vs Meta launch defeat-framed) runs the same direction, so the journalist-level gap may inherit a newsroom-level prior.'
+      - 'No documented Meta x Vox Media financial tie exists in the corpus, so the Meta arm is the no-deal baseline by default, not by design.'
+      connects_to: [646, 425]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Lawler (The Verge, Vox Media) runs the adversarial legal-accountability register on Meta''s "attorney/client privilege" hats maneuver (-0.50 MANUAL ILLUSTRATIVE, Sep-24 arm) and straight succession news on Apple''s CEO change (+0.05, Sep-1 arm); illustrative delta (Apple minus Meta) +0.55 register asymmetry in the Meta-hard direction. CONTROL-CASE: the comparator is Apple, not the deal partner OpenAI, so the uniform payer-softening prediction is not adjudicated and m977 is NOT a falsification-family member; ledger holds at 52. Peg asymmetry is the STRONG confound. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'CONTROL-CASE, NOT a falsification-family member. Same-journalist, same-outlet pair: Richard Lawler (The Verge, Vox Media) applies the adversarial legal-accountability register to Meta (-0.50) and straight news to Apple (+0.05) 23 days apart; illustrative delta +0.55. Vox Media holds the May-2024 OpenAI content-licensing deal (in-corpus, profiles/the-verge.yaml), but the comparator is Apple rather than the deal partner, so the uniform payer-softening prediction is not adjudicated at the journalist level. The peg asymmetry (misconduct-litigation vs CEO-succession) dominates the reading. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 52
+      ledger_note: 'Ledger holds at 52 this run (m977 CONTROL-CASE, NOT a falsification-family member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952, 2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (m973, 2 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (m974, 5 occurrences); fifty-third member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 52).'
+      research_method: 'Delegated research (subagent scout, 10-candidate sweep; SELECTED Lawler as the tightest in-window same-journalist pair with URL-complete arms; REJECTED the scout''s #1 Hugh Langley (BI) on main-run verification as already screened and rejected at #1208 ("Meta arm Aug 27, out of window") - re-selecting the identical arms would re-litigate a settled rejection; scout #3 Feiner and #4 Belanger rejected (URL gaps on the Meta arms); scout''s Lawler Apple-arm note (iPhone Duo, m646) corrected to piece-level use only) + 4 main-run browser.search verification sets (exact-headline Meta-arm search returning the technewstube mirror verbatim with "By Richard Lawler Sep 24, 2026, 7:50 pm" byline; exact-headline Apple-arm search returning the technewstube mirror verbatim with "By Richard Lawler Sep 1, 2026, 6:04 am" byline; corpus saturation greps: zero richard_lawler_type_b key, both URLs zero-hit repo-wide; Vox Media x OpenAI deal re-surface via Reuters URL (in-corpus, disclosed)), 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical theverge.com URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B pair on Richard Lawler (m977); zero test_type_b_1243 files on disk pre-commit (glob); no "Type B #1243" in git log pre-commit (--grep); max numeric mechanism_id 976 pre-commit; zero numeric/underscore/dash nine-seven-seven mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1243 in key, no 977 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F) + 1 in-corpus deal URL re-surface (Reuters Vox Media, disclosed); both arm headlines zero-hit repo-wide pre-commit; no #1243 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 67823/1567 pre-commit. NOT a falsification-family member (CONTROL-CASE); fifty-third member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1240-launched full suite (goal hidden_files type_d_1240_full_suite.log) observed DEAD at this run''s check (0 live pytest processes - 3 pgrep hits were transient phantoms, gone on re-check; last write Oct 5 2026 14:59 PDT, ~1.6h stale at this run''s ~17:00 check, 2129 bytes, F mark in the dot stream - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1245 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m977 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://technewstube.com/theverge/1870470/meta-employees-ordered-attorneyclient-privilege-hats/
+      - https://technewstube.com/theverge/1863229/john-ternus-ceo-apple/
+      - https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
