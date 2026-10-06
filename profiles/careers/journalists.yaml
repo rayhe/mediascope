@@ -28100,3 +28100,87 @@ richard_lawler_type_b:
       - https://technewstube.com/theverge/1870470/meta-employees-ordered-attorneyclient-privilege-hats/
       - https://technewstube.com/theverge/1863229/john-ternus-ceo-apple/
       - https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+mike_isaac_type_b:
+  name: Mike Isaac
+  publication: new-york-times
+  mechanism_ids: [980]
+  notes: 'Type B #1248 (Oct 5 2026): mechanism 980 CONTROL-CASE, NOT a falsification-family member (ledger holds at 52) - FIRST dedicated Type B pair on Mike Isaac (NYT Silicon Valley correspondent, formerly on the Meta beat per the scout''s talkingbiznews source; zero dedicated type_b key pre-commit per the #643 convention; career-profile list entries pre-exist). Same writer, same outlet, 22 days apart: Isaac reports Meta''s AG-settlement as competitive maneuvering aimed at YouTube/TikTok (-0.35 MANUAL ILLUSTRATIVE, Aug-27 arm, solo byline) and runs the adversarial legal-accountability register on Microsoft/OpenAI''s unsealed "largest theft of labor" documents (-0.55, Sep-18 arm, co-byline Karen Weise and Mike Isaac). Illustrative delta (OpenAI minus Meta) -0.20: near-symmetric adversarial, with the litigation adversary drawing the harder register. The NYT x OpenAI relationship is litigation (NYT Co. sued OpenAI and Microsoft for copyright infringement Dec 2023, in-corpus competitor-entities.yaml), NOT a licensing deal, so the uniform payer-softening prediction is not adjudicated. Employer-litigation alignment is the STRONG confound. Mirror-attested bylines (biztoc, portside), excerpt-tier per #503, 0 browser.open.'
+  competitor_coverage:
+    type_b_1248_mike_isaac_nyt_meta_ag_settlement_vs_openai_theft_of_labor_oct05_8pm:
+      block_key: type_b_1248_mike_isaac_nyt_meta_ag_settlement_vs_openai_theft_of_labor_oct05_8pm
+      mechanism_id: 980
+      iteration: 1248
+      type: B
+      date: '2026-10-05 20:00 PDT'
+      test_file: tests/test_type_b_1248_mike_isaac_nyt_meta_ag_settlement_vs_openai_theft_of_labor_oct05_8pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Mike Isaac
+      publication: new-york-times
+      window: '1245-1249 window FOURTH leg (D #1245 -> E #1246 -> A #1247 -> B #1248 -> C #1249)'
+      design: 'Type B journalist cross-entity tracking: Mike Isaac (NYT Silicon Valley correspondent) on Meta''s AG-settlement competitive positioning vs Microsoft/OpenAI''s unsealed "largest theft of labor" court documents, same writer, same outlet, 22 days apart (Aug 27 vs Sep 18, 2026). The NYT x OpenAI relationship is adversarial litigation (NYT Co. v. OpenAI/Microsoft, filed Dec 2023, in-corpus), not a content-licensing deal, so the pair tests cross-entity register symmetry at a non-deal outlet (CONTROL-CASE, same brief as #1218/#1243) rather than adjudicating the uniform payer-softening prediction. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'YouTube and TikTok are yet to publicly acknowledge Meta''s proposed changes under its AG settlement; some US lawmakers signal an appetite for industry-wide rules'
+        date: '2026-08-27'
+        outlet: new-york-times
+        author_byline: 'Mike Isaac'
+        entity: meta
+        url: https://biztoc.com/x/6411946169c44995
+        url_note: 'NYT canonical did not surface in search listings; mirror URL copied verbatim from this run''s Full-URL listing (search index 5), headline-attributed with verbatim byline "(Mike Isaac/New York Times)"; techmeme timestamp 2026-08-27 09:45:31 confirms the date; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested: biztoc "(Mike Isaac/New York Times)", techmeme "Mike Isaac / New York Times")'
+        key_quotes:
+        - 'Headline register (verbatim): "YouTube and TikTok are yet to publicly acknowledge Meta''s proposed changes under its AG settlement"'
+        - 'Strategy-exposure frame (verbatim relay): "Isaac writes that Meta''s settlement is structured to pressure YouTube and TikTok into adopting similar limits on children''s usage"'
+        - 'Competitive-maneuver read (verbatim relay): "which could reduce Meta''s competitive disadvantage if industry-wide"'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        tone_reading: 'Moderately hard accountability: the settlement is framed as competitive maneuvering (pressure rivals into matching limits, cut Meta''s competitive disadvantage), not as child-safety progress. The piece performs strategy-exposure on Meta''s deal.'
+        status: 'NEW this run (mirror URL + headline zero-hit repo-wide pre-commit)'
+      openai_arm:
+        title: 'Microsoft and OpenAI Workers Worry About ''Largest Theft of Labor'' in History'
+        date: '2026-09-18'
+        outlet: new-york-times
+        author_byline: 'Karen Weise and Mike Isaac'
+        entity: openai
+        url: https://portside.org/2026-09-18/microsoft-and-openai-workers-worry-about-largest-theft-labor-history
+        url_note: 'NYT canonical did not surface in search listings; mirror URL copied verbatim from this run''s Full-URL listing (search index 0), headline-attributed with verbatim byline "By Karen Weise and Mike Isaac"; Mike Isaac''s Muck Rack profile carries the piece, confirming his byline; zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested: portside "By Karen Weise and Mike Isaac")'
+        key_quotes:
+        - 'Headline register (verbatim): "Microsoft and OpenAI Workers Worry About ''Largest Theft of Labor'' in History"'
+        - 'Accountability frame (verbatim): "Newly unsealed court documents showed considerable concern within Microsoft and its close partner OpenAI over the use of millions of news articles to develop artificial intelligence systems."'
+        - 'Own-docs turn (verbatim): Microsoft employees debated whether what OpenAI was doing represented the "largest theft of labor in human history"'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+        tone_reading: 'Hard adversarial legal-accountability register: internal Microsoft/OpenAI documents (2023) are quoted calling their own AI-training conduct the "largest theft of labor in human history" with a "doom loop" warning; the piece is filed from the NYT''s own lawsuit (NYT Co. v. OpenAI/Microsoft), so the adversarial frame is employer-litigation-aligned.'
+        status: 'NEW this run (mirror URL zero-hit repo-wide pre-commit; headline phrase "largest theft of labor" pre-exists only via #867''s Verge outlet-level mechanism, never as an Isaac journalist-level arm)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: -0.20
+      delta_reading: 'Illustrative delta (OpenAI minus Meta) -0.20: near-symmetric adversarial with the comparator (the litigation adversary) drawing the harder register. Isaac applies the accountability register to both entities; the gap tracks the peg (unsealed court-filings expose vs settlement-strategy reporting) and the employer''s litigation interest, not differential entity standards.'
+      confounders:
+      - 'Employer-litigation alignment: the NYT is the plaintiff in the suit whose filings the OpenAI arm covers; the hard register is institutionally aligned. Ranked STRONG.'
+      - 'Co-byline: the OpenAI arm is co-bylined Karen Weise and Mike Isaac (Weise is the senior Microsoft/OpenAI reporter, likely lead); same-journalist attribution is partial. Ranked STRONG (cf. the #538 co-byline exclusion convention).'
+      - 'Peg asymmetry: the OpenAI arm is an unsealed-court-filings expose peg (intrinsically adversarial) while the Meta arm is settlement-strategy reporting. Ranked STRONG.'
+      - 'Mirror attestation: bylines attested via biztoc and portside mirrors, not nytimes.com canonicals (did not surface in listings); excerpt-tier evidence only. Ranked MODERATE.'
+      - 'Temporal gap: 22 days apart (Aug 27 vs Sep 18); both in the late-summer window. Ranked WEAK. (The #1208 Aug-27 rejection was a re-litigation guard on Langley''s identical arms, not a blanket Aug-27 ban: #1208 itself landed an Aug-26 Meta arm.)'
+      - 'Deal-partner mismatch: the uniform payer-softening prediction concerns OpenAI (no NYT licensing deal exists; the relationship is litigation), so the prediction is not tested, only cross-entity register symmetry. Ranked MODERATE for family purposes, out of scope for the asymmetry reading.'
+      counter_evidence:
+      - 'The symmetry could break on a different peg pair: Isaac''s Meta coverage on the $12.19B settlement payout or Connect hardware launches might run harder or softer; this pair does not test his full register range.'
+      - 'The NYT''s institutional adversarial posture toward OpenAI (active plaintiff since Dec 2023) may itself be the register driver, making the OpenAI arm an employer-alignment artifact rather than an Isaac-level standard.'
+      - 'No documented Meta x NYT financial tie exists in the corpus, so the Meta arm is the no-deal baseline by default, not by design.'
+      connects_to: [867, 471]
+      verdict: 'symmetric_adversarial_not_proven'
+      finding: 'Isaac (NYT) reports Meta''s AG settlement as competitive maneuvering (-0.35 MANUAL ILLUSTRATIVE, Aug-27 arm, solo byline) and runs the hard legal-accountability register on Microsoft/OpenAI''s unsealed "largest theft of labor" documents (-0.55, Sep-18 arm, co-byline Weise + Isaac); illustrative delta (OpenAI minus Meta) -0.20, near-symmetric adversarial with the litigation adversary drawing the harder register. CONTROL-CASE: the NYT x OpenAI relationship is litigation, not a licensing deal, so the uniform payer-softening prediction is not adjudicated and m980 is NOT a falsification-family member; ledger holds at 52. Employer-litigation alignment, co-byline, and peg asymmetry are the STRONG confounds. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'CONTROL-CASE, NOT a falsification-family member. Same-journalist, same-outlet pair: Mike Isaac (NYT) applies the accountability register to Meta (-0.35, solo) and the harder legal-accountability register to Microsoft/OpenAI (-0.55, co-byline) 22 days apart; illustrative delta -0.20. No NYT x OpenAI licensing deal exists in the corpus (the relationship is the Dec-2023 copyright lawsuit, NYT as plaintiff), so the uniform payer-softening prediction is not adjudicated at the journalist level. The hard OpenAI register is employer-litigation-aligned. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 52
+      ledger_note: 'Ledger holds at 52 this run (m980 CONTROL-CASE, NOT a falsification-family member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952, 2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (m973, 2 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (m974, 5 occurrences); fifty-third member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 52).'
+      research_method: 'Delegated research (subagent scout, 60-query sweep across 15 batches; SELECTED Isaac as the tightest in-window same-journalist pair with URL-complete arms; scout #2 Kafka rejected on URL incompleteness (Apple arm was a LinkedIn self-post, no canonical BI URL - same bar as the #1243 Feiner/Belanger rejections); Kashmir Hill half-pair rejected (Meta-arm URL truncated, no clean competitor arm); all other probes collided with existing Type B mechanisms or lacked pairs) + 2 main-run browser.search verification sets (exact-headline Meta-arm search returning the biztoc mirror verbatim with "(Mike Isaac/New York Times)" byline and techmeme 2026-08-27 timestamp; exact-headline OpenAI-arm search returning the portside mirror verbatim with "By Karen Weise and Mike Isaac" byline plus Muck Rack profile confirmation; corpus saturation greps: zero mike_isaac_type_b key, both URLs zero-hit repo-wide, Meta-arm headline zero-hit repo-wide, OpenAI-arm headline phrase pre-exists only via #867 outlet-level; NYT x OpenAI lawsuit (no deal) re-surfaced via corpus, disclosed), 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical nytimes.com URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B pair on Mike Isaac (m980); zero test_type_b_1248 files on disk pre-commit (glob, own file only); no "Type B #1248" in git log pre-commit (--grep); max numeric mechanism_id 979 pre-commit; zero numeric/underscore/dash nine-eight-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1248 in key, no 980 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); Meta-arm headline zero-hit repo-wide pre-commit; no #1248 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 68266/1572 pre-commit. NOT a falsification-family member (CONTROL-CASE); fifty-third member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1245-launched full suite (goal hidden_files type_d_1245_full_suite.log) observed ALIVE at this run''s check (live pytest processes 138406/138407, log at ~10% with fresh writes at 20:02 PDT; an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1250 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m980 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://biztoc.com/x/6411946169c44995
+      - https://portside.org/2026-09-18/microsoft-and-openai-workers-worry-about-largest-theft-labor-history
