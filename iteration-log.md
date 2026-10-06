@@ -47493,12 +47493,12 @@ Push status (this run, Oct 6 2026 ~3:1x PM PDT): all four commits pushed and ls-
 
 ## #1270 Type D: m991/m992/m993 qualitative-discipline corpus-integrity verification + #1265 background-suite verdict (DEAD at [ 0%]; FOURTH consecutive death of the new streak; tombstone lineage ONE-HUNDRED-ELEVENTH -> ONE-HUNDRED-TWELFTH) + recurring-failure triage (zero F marks in the dead stream; all pinned positions out of range; INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1270-1274 window (Oct 6 2026, 04:00 PM PDT; main commit 13ce7c10 / anchor c55355f6 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70262/1594 -> 70386/1595 (+124/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main 13ce7c10 / anchor c55355f6 / doc-sync TBD / log-hash this commit
+- Hash chain: main 13ce7c10 / anchor c55355f6 / doc-sync 07c5dbee / log-hash this commit
 
 ### Commit hashes
 - Main commit `13ce7c10` (13ce7c1036ffa83a2d725da51a025c812f1c4395) - verified via git rev-parse
 - Anchor followup `c55355f6` (c55355f6...; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD (README 70262/1594 -> 70386/1595; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `07c5dbee` (07c5dbee...; README 70262/1594 -> 70386/1595; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
