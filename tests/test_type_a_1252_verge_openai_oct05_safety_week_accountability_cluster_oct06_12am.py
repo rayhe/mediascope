@@ -419,9 +419,24 @@ class TestMechanismNovelty1252:
         text = _read(VERGE_PATH)
         assert text.count(_T53) == 2, text.count(_T53)
 
-    def test_no_type_a_1252_in_git_log_pre_commit(self):
-        out = _git("log", "--oneline", "--grep=Type A #1252")
-        assert out.stdout.strip() == "", out.stdout.strip()
+    def test_no_type_a_1252_in_git_log_pin(self):
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the terminal log-hash followup per #721): the ONLY
+        # matches are this run's own commits, whose messages carry
+        # the run's own iteration subject (the followup commits match
+        # the grep, so they join the own set; HEAD is admitted for
+        # any same-run followup). The pin's substance - no PRIOR run
+        # committed this run's iteration - holds.
+        out = _git("log", "--format=%H %s", "--grep=Type A #1252")
+        own = {
+            "c7ef5891", "9b9b0d16", "a9e340b2",
+        }
+        head = _git("rev-parse", "HEAD").stdout.strip()[:8]
+        hits = [line for line in out.stdout.splitlines() if line.strip()]
+        assert hits, "expected this run's own commits"
+        for line in hits:
+            assert (line.split()[0][:8] in own
+                    or line.split()[0][:8] == head), line
 
     def test_1251_forward_guards_green_pre_commit(self):
         # #1251's forward pins for this run hold pre-commit: max-981
