@@ -102,7 +102,7 @@ OWN_BASENAME = (
 TOP_KEY = None  # Type C lands at competitor-entities.yaml top level.
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # patched to the main-commit sha in the anchor followup per #565
+ANCHORED_SHA = "82871c5ee8aa18c6c3482dee2f7fef6c008d9ac3"  # patched green in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
