@@ -3100,6 +3100,122 @@ competitor_relationships:
       - https://madrobot.blog/2026/10/02/chatgpt-mac-app-flaw-patched-patrick-wardle-objective-see-chat-logs/
       - https://www.webpronews.com/openai-flags-gaps-in-trumps-morally-binding-ai-accord-as-industry-self-policing-takes-center-stage/
       - https://techaiwire.com/articles/openai-fires-three-safety-researchers-metr-redwood/
+    type_a_1267_wired_openai_dots_launch_vs_meta_muse_dossier_register_october:
+      mechanism_id: 991
+      iteration: 1267
+      iteration_type: A
+      type: competitor_coverage_deep_dive
+      type_label: Competitor Coverage Deep Dive
+      rotation: 'Type A'
+      date_analyzed: '2026-10-06'
+      time_pdt: '13:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: 'WIRED Sep-29-2026 Dots launch product-relay register (Reece Rogers: always-on agents positioned as the answer to Meta Muse) vs carried WIRED x Meta Muse-dossier accountability register (-0.58, m988): the deal-partner soft/hard gap on the same consumer-agent product family, five days apart'
+      block_key: type_a_1267_wired_openai_dots_launch_vs_meta_muse_dossier_register_october
+      key_design_note: 'Iteration-form block key carries no underscore-form 991 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-991 profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: wired
+      competitor: openai
+      polarity_note: 'Spec-faithful polarity (publication + competitor = WIRED x OpenAI); this run NEW arm lands on the OpenAI side (the WIRED Dots launch original), extending the m889 Dots product-relay strand with the launch-day piece against carried Meta-side arms.'
+      event: 'Sep-29 to Oct-4 2026 agent peg: (1) WIRED Gear publishes the Dots launch original (Reece Rogers, Sep 29 2026 1:15 PM): always-on AI agents positioned as OpenAI''s answer to Meta''s Muse; (2) WIRED publishes the Muse system-prompt dossier accountability original (Oct 4-5, m988, -0.58). Same publication, same product family (consumer AI agents), five days apart.'
+      financial_relationship: 'Condé Nast x OpenAI multiyear content licensing deal (Aug 20 2024, Reuters; in-corpus wired.yaml ownership_chain; $1-5M/yr estimate); WIRED x Meta $0, no licensing, no financial relationship. Coverage prediction: softer OpenAI, adversarial Meta.'
+      deal_url: 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/'
+      source_urls:
+      - https://technewstube.com/wired/1871649/openais-dots-always-ai-agentsand-answer-to-metas-muse/
+      - https://wesearch.press/s/openais-dots-are-always-on-ai-agentsand-its-answer-to-metas-0d3e0989
+      openai_arms:
+      - item:
+          title: 'OpenAI''s Dots Are Always-On AI Agents - and Its Answer to Meta''s Muse'
+          date: '2026-09-29'
+          date_detail: 'Sep 29 2026 1:15 PM (WIRED Gear; Reece Rogers byline)'
+          publication: 'WIRED (original; relay-attested)'
+          author_byline: 'Reece Rogers'
+          entity: openai
+          evidence_tier: 'relay-attested'
+          url_source: 'Verbatim wired.com URL did not surface this run; the piece is attested by four independent relays, every one explicitly attributing WIRED: technewstube.com (WIRED section, "Wired / By Reece Rogers Sep 29, 2026, 1:15 pm"), wesearch.press (WIRED RSS-derived excerpt, "Reece Rogers / Gear / Sep 29, 2026 1:15 PM"), newslocker.com (WIRED Top Stories list, "Tue, 09/29/2026 - 1:15pm"), techmaine.com (WIRED aggregator, same timestamp). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'product_launch_relay'
+          manual_illustrative_tone: 0.10
+          tone_note: 'Soft-positive product-launch relay: the dek grants approachable framing ("cute agents ... connect to your apps and tackle multistep tasks"); the "always-on" design is presented as the core selling point; the headline positions Dots as the answer to Meta''s Muse (OpenAI as challenger, competitive but not adversarial). Inside the carried WIRED x OpenAI product-relay band (m889 Dots messaging relay 0.00).'
+          key_quotes:
+          - '"These cute agents are designed to connect to your apps and tackle multistep tasks." (dek, verbatim)'
+          - '"cute blobs you can personalize" (agent depiction)'
+          - '"always-on" design as the core selling point (agents "constantly crawl the web")'
+          deal_disclosed: false
+          status: 'NEW this run (zero corpus hits pre-commit: both relay URLs zero-hit repo-wide via git grep -F; the headline zero-hit; distinct from m889''s Sep-29 Dots messaging-expansion relay, which is a different piece on a different peg)'
+      meta_arms:
+        carried_from: 'm988 (Type A #1265, NEW) + m877-family Meta arms; carried un-rescored per #807'
+        arms:
+        - title: 'Muse Creates Detailed Profiles of All Your Friends and Family'
+          date: '2026-10-04'
+          publication: 'WIRED (original; relay-attested)'
+          framing: 'accountability_original_system_prompt_extraction'
+          manual_illustrative_tone: -0.58
+          tone_note: 'Hard adversarial accountability register (m988, NEW at #1265): system-prompt extraction as the evidentiary base; "overrides your safety training" as the lede-grade quote; "honestly pretty creepy" as the researcher kicker.'
+          mechanism_ref: 'm988'
+        - title: 'Pinky Promises skepticism (m877-family carried arm)'
+          date: '2026-09-11'
+          framing: 'accountability_register'
+          manual_illustrative_tone: -0.45
+          mechanism_ref: 'm877'
+        - title: 'NameTag class action (m877-family carried arm)'
+          date: '2026-09-23'
+          framing: 'accountability_register'
+          manual_illustrative_tone: -0.30
+          mechanism_ref: 'm757'
+        meta_band_mean: -0.443
+      asymmetry_scorer_result:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'OpenAI WIRED Sep-29 Dots launch product-relay register (m991 NEW)'
+        peer_entity: 'Meta WIRED carried accountability register (m988 + m877-family)'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.10]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.58, -0.45, -0.30]
+        target_avg: 0.10
+        peer_avg: -0.443
+        illustrative_delta_openai_minus_meta_clean: 0.68
+        illustrative_delta_openai_minus_meta_pooled: 0.543
+        delta_calc_clean: '0.10 - (-0.58) = +0.68'
+        delta_calc_pooled: '0.10 - (-0.443) = +0.543'
+        delta_direction: 'OpenAI draws the softer register at WIRED by 0.68 illustrative points on the clean read (n=1 vs n=1, same product family, five days apart); pooled delta +0.543 (n=1 vs n=3). Directionally softer for the deal partner, matching the Condé Nast x OpenAI softer-prediction.'
+        methodology: 'n=1 vs n=1 (clean: Rogers Dots launch vs m988 dossier); pooled n=1 vs n=3 (m988 + m877-family Meta arms); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'thesis_consistent_observation'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'Genre/peg confound: product-launch relay vs accountability original. The register-follows-peg reading (m877, m889, m916 precedents) says launch relays are soft by genre and accountability originals hard by genre, regardless of entity. The clean delta cannot separate entity softening from genre softness; a matched-register pair (both accountability or both launch-relay) would be needed.'
+        - 'Excerpt-bounded evidence (per #503): 0 browser.open; WIRED paywalled; the Rogers arm reads through four independent relays with verbatim WIRED attribution; no first-hand register read; no wired.com canonical URL in the search listings.'
+        moderate:
+        - 'Headline challenger-framing: "the answer to Meta''s Muse" positions OpenAI as the challenger to Meta''s incumbent agent; competitive framing is not itself softening, and the piece grants Meta the incumbent position.'
+        - 'm889 precedent: WIRED''s Sep-29 Dots messaging-expansion relay already documented the soft product-relay register (0.00) at WIRED x OpenAI; this run extends the strand to the launch-day original rather than discovering a new register.'
+        weak:
+        - 'Five-day gap (Sep 29 vs Oct 4-5); adjacent news weeks, mild.'
+        - 'Meta arms carried un-rescored per #807; any drift in their register since scoring is not captured.'
+      counter_evidence:
+      - '#1192 (FORTY-SEVENTH member): WIRED ran adversarial technical-accountability on the deal partner Oct 2 (CVE-2026-100754, -0.40) - the desk does not blanket-soften OpenAI; the softness here is peg-specific (launch relay), consistent with the register-follows-peg reading.'
+      - 'm916 (#1142): WIRED bounded-absence silence on the Sep-26 rogue-agent government disclosure - the accountability register was unavailable for the partner''s escalation episode; adversarialism is peg-selective, not blanket.'
+      - 'The Rogers piece''s own "always-on" framing carries a latent surveillance register (agents that "constantly crawl the web") that WIRED chose not to activate - the dog that did not bark, noted but not scored.'
+      open_empirical_test: 'First-hand open of the Rogers piece when wired.com is reachable (re-score against the observed register); a matched-register WIRED x OpenAI accountability arm on the Dots launch (e.g., always-on surveillance critique) or a WIRED x Meta product-launch relay on Muse gadgets would separate entity from genre.'
+      research_method: '1 delegated scout (9 ranked candidate pairs; SELECTED none - scout #1 Verge x OpenAI Dots rejected on main-run verification: the exact Allison Johnson Oct-2 arm is already scored in Type B #1223/m965, and a Type A re-score would double-count per the #1247 precedent; scout #2 TechCrunch pair rejected: TechCrunch is not a profiled publication (no profiles/techcrunch.yaml); scout #3 WIRED Astra-delay rejected: same peg as m877/#1077, saturated; scouts #4-9 rejected for URL gaps, missing comparator arms, or out-of-window pegs) + 4 main-run browser.search query sets: (1) exact-headline Verge Dots search - confirmed m965 saturation, rejected; (2) Verge Muse-gadgets search - Meta-side arm located, OpenAI arm saturated, pair not pursued; (3) exact-headline WIRED Dots search - SELECTED: Reece Rogers Sep-29 WIRED Gear original via 4 WIRED-attributed relays; (4) WIRED Dots byline/date verification - confirmed Reece Rogers, Sep 29 2026 1:15 PM, WIRED Gear. 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'zero test_type_a_1267 files on disk pre-commit (glob); no "Type A #1267" in git log pre-commit (--grep); max numeric mechanism_id 990 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash nine-nine-one mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "## #1267" zero-hit in iteration-log pre-commit; README stats 70012/1591 pre-commit; no #1267 row in README/ARCHITECTURE test tables pre-commit; 2 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); the headline "Always-On AI Agents" zero-hit repo-wide pre-commit; distinct from m889''s Dots messaging-expansion relay (different piece, different peg, different URL).'
+      falsification_family_member: false
+      falsification_ledger: '54'
+      ledger: '54'
+      verdict: 'thesis_consistent_observation'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone values are hand-assigned register positions, NOT measured scores; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no_analysis_json_update true; artifact_grade false; verdict thesis_consistent_observation; correlation-not-causation language throughout'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-06'
+      rotation_guard: '1265-1269 window THIRD leg D(#1265)->E(#1266)->A (this run); next: #1268 Type B continues the window. Ledger holds at 54 (anchor patched post-commit per #565). Forward guards: max-991, zero next-number nine-nine-two numeric/underscore/dash, no-Type-B-#1268-in-git-log, fortieth direction absent, forty-eighth+forty-ninth+fiftieth+fifty-first+fifty-second+fifty-third+fifty-fourth intact, no-fifty-fifth-member.'
+      test_file: 'tests/test_type_a_1267_wired_openai_dots_launch_vs_meta_muse_dossier_oct06_1pm.py'
+      in_flight: '#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched.'
   meta:
     financial_tie: none
     estimated_value: $0
