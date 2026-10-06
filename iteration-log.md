@@ -46371,14 +46371,14 @@ Push status (this run, Oct 4 2026 ~11:xx PDT): main + anchor followup pushed and
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff. #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
-## #1245 Type D: m976/m977/m978 qualitative-discipline corpus-integrity verification + #1240 background-suite verdict (FORTY-THIRD consecutive death; tombstone ONE-HUNDRED-SEVENTH -> ONE-HUNDRED-EIGHTH) + recurring-failure triage (prefix reproduction missing, outcome INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1245-1249 window (Oct 5 2026, 07:00 PM PDT; main commit 64153de0 / anchor 33c4962b / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68001/1569 -> 68105/1570 (+104/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 64153de0 / anchor 33c4962b / doc-sync TBD / log-hash this commit
+## #1245 Type D: m976/m977/m978 qualitative-discipline corpus-integrity verification + #1240 background-suite verdict (FORTY-THIRD consecutive death; tombstone ONE-HUNDRED-SEVENTH -> ONE-HUNDRED-EIGHTH) + recurring-failure triage (prefix reproduction missing, outcome INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1245-1249 window (Oct 5 2026, 07:00 PM PDT; main commit 64153de0 / anchor 33c4962b / doc-sync a80725d7; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68001/1569 -> 68105/1570 (+104/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 64153de0 / anchor 33c4962b / doc-sync a80725d7 / log-hash this commit
 
 ### Commit hashes
 - Main commit `64153de0` (64153de0FULL) - verified via git rev-parse
 - Anchor followup `33c4962b` (33c4962b; 33c4962bED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (patched by the log-hash followup; this commit)
-- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+- Doc-sync `a80725d7` (a80725d7; README 68001/1569 -> 68105/1570; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_d_1245_in_git_log_pin to the own-set form (HEAD admitted)
 
 ### Rotation transparency
 - This run is iteration #1245 Type D, the FIRST and OPENING leg of the 1245-1249 window (D #1245 -> E #1246 -> A #1247 -> B #1248 -> C #1249 per the #565 anchor + rotation guard).
