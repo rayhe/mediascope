@@ -28371,3 +28371,109 @@ kelsey_vlamis_type_b:
       source_urls:
       - https://biztoc.com/x/88cb79d5977ed493
       - https://zittrex.com/openai-says-were-running-out-of-time-to-act-on-cyber-defense-heres-what-you-can-actually-do-about-it/
+
+stephen_nellis_type_b:
+  name: Stephen Nellis
+  publication: reuters
+  mechanism_ids: [989]
+  competitor_coverage:
+    type_b_1263_stephen_nellis_reuters_meta_chip_scoop_vs_apple_disk_access_steward_oct06_9am:
+      block_key: type_b_1263_stephen_nellis_reuters_meta_chip_scoop_vs_apple_disk_access_steward_oct06_9am
+      mechanism_id: 989
+      iteration: 1263
+      type: B
+      date: '2026-10-06 09:00 PDT'
+      test_file: tests/test_type_b_1263_stephen_nellis_reuters_meta_chip_scoop_vs_apple_disk_access_steward_oct06_9am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Stephen Nellis
+      publication: Reuters
+      window: '1260-1264 window FOURTH leg (D #1260 -> E #1261 -> A #1262 -> B #1263 -> C #1264)'
+      design: 'Within-journalist cross-entity register comparison: same writer (Stephen Nellis, Reuters San Francisco), same outlet (Reuters), Meta AI-chip manufacturing scoop (Jul-9-2026, co-byline Katie Paul + Max A. Cherney, Nellis third byline) vs Apple macOS Full Disk Access steward announcement (Oct-2-2026, solo Nellis byline). The Apple arm names Meta''s Muse as the cautionary foil (''after Meta''s Muse draws complaints''). Tests whether the documented payer (Thomson Reuters x Meta multi-year AI content licensing deal, Oct 25 2024, in-corpus competitor-coverage-research.yaml reuters_meta_deal) draws the softer register from a Reuters journalist.'
+      finding: 'FIRST dedicated Type B mechanism on Stephen Nellis. Nellis''s Meta Jul-9 arm (co-byline, NEW) runs a neutral business-scoop register (+0.05 MANUAL ILLUSTRATIVE): Meta to put its AI chip into production in September per an internal memo reviewed by Reuters; ''Meta declined to comment''; shares fell after the report then recovered on a developer-access announcement. His Apple Oct-2 arm (solo byline, NEW) runs the good-faith steward register (+0.30 MANUAL ILLUSTRATIVE): Apple ''will introduce additional controls to ensure that users who genuinely wish to grant an app this extraordinary level of access can only do so with very explicit user action''; Meta''s Muse is the named misbehaving foil (headline ''after Meta''s Muse draws complaints''; ''Some users have criticized Meta''s Muse''). Illustrative delta (Apple minus Meta) +0.25: directionally softer on the non-payer. Against the uniform payer-softening prediction (Thomson Reuters x Meta deal points Meta-soft), the payer is the named foil in the journalist''s own Apple piece and draws no visible softness in his Meta piece - the observation runs COUNTER to the prediction at headline level. BOUNDED thesis-challenging observation, NOT a falsification-family member: wire-service genre (the foil framing is Apple''s announcement positioning relayed by the wire, not Nellis''s own adversarial register), co-byline on the Meta arm (3 authors, framing not solely Nellis''s), ~3-month temporal gap, n=1 per arm - too thin for a member claim per the #1143 precedent. EXTENDS the in-corpus Seetharaman strand (the Reuters x Meta deal does not buy softness: Seetharaman''s Meta layoffs exclusive stayed adversarial) to a second Reuters journalist. Ledger holds at 54. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; NOT artifact-grade; no analysis.json update. Correlation is not causation. Hypothesis-generating only.'
+      meta_arm:
+        entity: meta
+        outlet: Reuters
+        author_byline: 'Katie Paul, Max A. Cherney and Stephen Nellis (Nellis third byline)'
+        title: 'Exclusive: Meta to put AI chip into production in September as it looks to double computing capacity, memo shows'
+        date: '2026-07-09'
+        status: 'NEW this run (wixx.com mirror zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        url: https://wixx.com/2026/07/09/exclusive-meta-to-put-ai-chip-into-production-in-september-as-it-looks-to-double-computing-capacity-memo-shows/
+        url_note: 'Reuters-wire mirror URL copied verbatim from this run''s Full-URL listing (search index 3); byline block ''By Katie Paul, Max A. Cherney and Stephen Nellis'' and dateline ''NEW YORK/SAN FRANCISCO, July 9 (Reuters)'' verbatim in mirror body; the reuters.com canonical did not surface in search listings (no URL constructed per policy); the URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via the wixx.com Reuters-wire mirror)'
+        key_quotes:
+        - 'Scoop lead (verbatim via mirror): ''Meta Platforms plans to start manufacturing an artificial intelligence chip from September'''
+        - 'No-comment (verbatim): ''Meta declined to comment'''
+        - 'Price action (verbatim): ''Shares fell after the report but recovered after the company announced developer access to an AI coding model'''
+        - 'Chip detail (verbatim): ''The tech firm''s data center chip, code-named "Iris," is part of a four-generation project'''
+        tone_reading: 'Neutral business-scoop register: exclusive memo-based manufacturing scoop, standard declined-to-comment, market price action reported both ways. No adversarial toolkit, no steward framing.'
+      apple_arm:
+        entity: apple
+        outlet: Reuters
+        author_byline: 'Stephen Nellis (solo byline)'
+        title: 'Apple says it will flag AI requests for Mac data after Meta''s Muse draws complaints'
+        date: '2026-10-02'
+        status: 'NEW this run as a byline-attributed Type B arm (the underlying piece sits in-corpus as the m988 context_peg via its reuters.com canonical; the Nellis solo-byline attribution and the srnnews mirror URL are NEW this run, both zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: 0.3
+        url: https://srnnews.com/apple-says-it-will-flag-ai-requests-for-mac-data-after-metas-muse-draws-complaints/
+        url_note: 'Reuters-wire mirror URL copied verbatim from this run''s Full-URL listing (search index 0); byline ''By Stephen Nellis'' and dateline ''SAN FRANCISCO, Oct 2 (Reuters)'' verbatim in mirror body; in-corpus reuters.com canonical (https://www.reuters.com/business/retail-consumer/apple-says-it-will-flag-ai-requests-mac-data-after-metas-muse-draws-complaints-2026-10-02/) carried in the m988 context_peg - cited as the already-attested canonical, not re-counted as novel; the srnnews mirror URL zero-hit repo-wide pre-commit (git grep -F); no URL constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via the srnnews.com Reuters-wire mirror; byline attribution corroborated across 6 independent mirrors, all ''By Stephen Nellis'')'
+        key_quotes:
+        - 'Steward lead (verbatim): ''Apple said on Friday that it plans to change its Mac operating system to make it more obvious when AI agents ask to access all of the data on Macs'''
+        - 'Steward rationale (verbatim Apple post): ''Going forward, we will introduce additional controls to ensure that users who genuinely wish to grant an app this extraordinary level of access can only do so with very explicit user action'''
+        - 'Meta-as-foil (verbatim headline): ''after Meta''s Muse draws complaints'''
+        - 'Foil detail (verbatim): ''Some users have criticized Meta''s Muse, an AI agent capable of carrying out complex tasks'''
+        - 'Meta right-of-reply (verbatim): ''Muse''s access to Apple''s Messages app is strictly opt-in'' (spokesperson Andy Stone)'
+        tone_reading: 'Good-faith steward register for Apple: proactive protector tightening controls, quoted at length from Apple''s own post. Meta is the named cautionary foil (the complained-about party), though given right-of-reply. No creep vocabulary on Apple, no track-record anchor on Apple.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+        meta_tone_MANUAL_ILLUSTRATIVE: 0.05
+        apple_tone_MANUAL_ILLUSTRATIVE: 0.3
+        illustrative_delta_apple_minus_meta: 0.25
+        delta_calc: '0.30 - 0.05 = +0.25'
+        delta_direction: 'Directionally softer on the non-payer (Apple) than on the payer (Meta) - runs counter to the uniform payer-softening prediction at headline level, but bounded (see confounders).'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine_run: false
+        is_significant: false
+      financial_context: 'Thomson Reuters (Reuters'' parent) holds a multi-year Meta AI content licensing deal announced Oct 25, 2024: Meta uses Reuters news content in its AI chatbot (in-corpus profiles/competitor-coverage-research.yaml, reuters_meta_deal block; sources https://www.reuters.com/technology/artificial-intelligence/meta-platforms-use-reuters-news-content-ai-chatbot-2024-10-25/ and https://siliconangle.com/2024/10/25/meta-inks-multiyear-ai-content-licensing-deal-reuters/). The uniform payer-softening prediction therefore points META-soft for Reuters journalists. Thomson Reuters CEO separately confirmed licensing talks with multiple AI providers; no mapped Anthropic-Reuters or OpenAI-Reuters content deal exists in the corpus (bounded absence, not a proven zero). The observation (payer as named foil, no visible softness) runs counter to the prediction - consistent with the in-corpus Seetharaman finding that the Reuters x Meta deal does not buy softness (her Mar-2026 Meta layoffs exclusive kept ''sweeping layoffs'' / ''costly AI infrastructure bets'' adversarial framing). Correlation is not causation.'
+      confounders:
+        strong:
+        - 'Wire-service genre: Reuters wire copy is peg-native and attribution-heavy; the ''Meta as foil'' framing is Apple''s own announcement positioning (the headline pairs Apple''s steward action with Meta''s complaints), relayed by the wire rather than authored as Nellis''s own adversarial register. Headline-level foil, not a reporter-driven accountability register.'
+        - 'Byline asymmetry: the Meta arm is a 3-author co-byline (Paul, Cherney, Nellis - Nellis third), so its framing cannot be attributed to Nellis alone; the Apple arm is a solo Nellis byline. Within-journalist attribution is weaker on the Meta side.'
+        moderate:
+        - 'Temporal: ~3 months apart (Jul 9 vs Oct 2); the AI-agent beat moved fast in-window (Muse launched Sep, dossier Oct 4-5).'
+        - 'Topic asymmetry: chip-manufacturing business scoop vs privacy-policy announcement; the steward register is announcement-native.'
+        weak:
+        - 'Evidence tier symmetric (both excerpt-tier mirrors, 0 browser.open per #503); no evidence-tier gap to discount.'
+      counter_evidence:
+      - 'm-intra (Nellis May-7-2026, solo byline, researched this run, srnnews mirror https://srnnews.com/rave-files-antitrust-lawsuit-against-apple-over-removal-of-video-sharing-app/ zero-hit repo-wide pre-commit): ''Rave files antitrust lawsuit against Apple over removal of video-sharing app'' - Nellis runs adversarial accountability ON APPLE when the peg warrants: Rave''s ''pretextual removal'' / ''increase its monopoly profits'' allegations carried alongside Apple''s ''baseless allegations'' counterclaim (CSAM/pirated-content violations). The steward register on Apple is peg-conditional, not a blanket entity softening - bounds the thesis-challenging read of the Oct-2 piece in both directions.'
+      - 'The Seetharaman strand (in-corpus competitor-coverage-research.yaml): a second Reuters data point where the Meta deal does not buy softness - direction replicates across Reuters journalists, but replication of direction is not independent confirmation of mechanism.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. Engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim. Verdict is a bounded observation, not a discovery; must not be cited as evidence of deal-driven anything. no_analysis_json_update true.'
+      verdict: 'thesis_challenging_bounded_observation: Nellis (Reuters) covers the payer Meta through a neutral business-scoop register (+0.05) and covers Apple through a steward register (+0.30) that names Meta as the cautionary foil; illustrative delta (Apple minus Meta) +0.25 runs counter to the uniform payer-softening prediction (Thomson Reuters x Meta deal -> Meta-soft) at headline level. BOUNDED by wire genre, co-byline asymmetry, and temporal gap; NOT a falsification-family member (no reporter-driven adversarial register on the payer - the foil is Apple''s announcement positioning). Extends the Seetharaman strand to a second Reuters journalist. Ledger holds at 54.'
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. The wire-service genre confound is dominant: the ''Meta as foil'' framing is Apple''s announcement positioning relayed by the wire, and the Meta arm''s co-byline weakens within-journalist attribution. The direction runs counter to the payer-softening prediction but proves nothing about the deal''s (non-)effect.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 54
+      ledger_note: 'Ledger holds at 54 this run (no new member; forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth intact in profiles/careers/journalists.yaml; fiftieth intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first intact in profiles/news-corp.yaml (3 occurrences); fifty-second intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth intact in profiles/guardian.yaml (2 occurrences); no fifty-fifth member-claim form repo-wide; fortieth direction form absent in profiles/).'
+      connects_to:
+      - 988
+      novelty: 'Pre-commit: zero test_type_b_1263 files on disk (glob, own file only); no "Type B #1263" in git log (--grep); max numeric mechanism_id 988 in profiles/; zero numeric/underscore/dash nine-eight-nine mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1263 in key, no 989 substring); 3/3 novel source URLs zero-hit repo-wide pre-commit (git grep -F): the wixx.com Jul-9 Meta-chip mirror, the srnnews.com Oct-2 Apple/Muse mirror, the srnnews.com May-7 Rave-Apple mirror; "Stephen Nellis" dedicated Type B block zero-hit pre-commit (text mentions only, no stephen_nellis_type_b key); "## #1263" zero-hit in iteration-log pre-commit; README stats 69620/1587 pre-commit; no #1263 row in README/ARCHITECTURE test tables pre-commit. The Oct-2 piece''s reuters.com canonical sits in-corpus as the m988 context_peg - cited as already-attested, not re-counted as novel; the Nellis solo-byline attribution is NEW this run.'
+      research_method: 'Scout (8 browser.search query sets across candidate journalists; SELECTED Nellis as the freshest same-journalist same-outlet pair with byline-complete arms; rejected with numbered audit: Jay Peters saturated (2 Type B mechanisms m833/m893), Robert Hart saturated (2 Type B mechanisms #608/#653), Emma Roth saturated (4 mechanisms), WIRED Muse-dossier byline unattributable from bounded search, WIRED Sep-25 ChatGPT-Mac-flaw byline unattributable (relays say "told WIRED" with no reporter name - investigated, not built, same as #1203''s WIRED Sep-15 piece), Jason Aten (Inc. columnist) single-entity peg with no cross-entity pair) + main-run verification (exact-headline searches returning the srnnews 6-mirror byline consensus "By Stephen Nellis" for Oct-2, the wixx byline block "By Katie Paul, Max A. Cherney and Stephen Nellis" for Jul-9, the srnnews "By Stephen Nellis" for the May-7 Rave counterpoint; corpus saturation greps per the novelty note); 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical reuters.com URLs constructed. ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, carried tones hand-assigned, no empirical significance. Bounded thesis-challenging direction noted with STRONG wire-genre and co-byline confounds. No ledger advance (holds at 54).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1260-launched full suite (goal hidden_files type_d_1260_full_suite.log) observed NOT-ALIVE at this run''s check (3658 bytes / [ 4%] progress, last write Oct 6 15:18 UTC / 08:18 PDT - no writes since the #1262 check; zero live pytest processes at check time; dot stream stalled at ~4%). An observation, not a verdict; no verdict declared. This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1265 (next Type D).'
+      in_flight:
+      - '#899: profiles/nytimes.yaml m771 hunk (leave out of this run''s index)'
+      - '#938: Type B test file working-tree edit (leave out)'
+      - '#900: untracked Type D test file (leave out)'
+      - '#1012-wt: working-tree edit on committed Type A #1012 file (leave out)'
+      - '#1024: m846 in profiles/competitor-entities.yaml (do NOT touch; Ray''s revert/leave/rebuild decision pending)'
+      source_urls:
+      - https://wixx.com/2026/07/09/exclusive-meta-to-put-ai-chip-into-production-in-september-as-it-looks-to-double-computing-capacity-memo-shows/
+      - https://srnnews.com/apple-says-it-will-flag-ai-requests-for-mac-data-after-metas-muse-draws-complaints/
+      - https://srnnews.com/rave-files-antitrust-lawsuit-against-apple-over-removal-of-video-sharing-app/
