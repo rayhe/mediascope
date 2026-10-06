@@ -46758,7 +46758,7 @@ Push status (incoming, Oct 6 2026 ~01:xx PDT): main 49b7e7ab + anchor followup d
 ### Commit hashes
 - Main commit `49b7e7ab` (49b7e7aba2ac8328a24101e3e97de2656009ba7e) - verified via git rev-parse
 - Anchor followup `d29a1189` (d29a11895ff419924934f12ccc6155249224a6ae; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `TBD` (README 68685/1577 -> 68770/1578; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync `19c79d54` (19c79d545e9abc72306d2222f63c38f7b6abd5f0; README 68685/1577 -> 68770/1578; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Research method
