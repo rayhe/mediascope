@@ -46594,13 +46594,13 @@ Push status (this run, Oct 5 2026 ~21:xx PDT): #1248's four commits pushed first
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
-## #1250 Type D: m979/m980/m981 qualitative-discipline corpus-integrity verification + #1245 background-suite verdict (ALIVE at 20%; FORTY-THIRD death streak BREAKS; tombstone lineage HOLDS at ONE-HUNDRED-EIGHTH) + recurring-failure triage (deterministic F-prefix 5/6 canonical positions in the LIVE log; 3807 absent - new deviation; INDETERMINATE, pinned as missing evidence) + NO suite re-launch - Type D FIRST and OPENING leg of the 1250-1254 window (Oct 5 2026, 10:00 PM PDT; main commit 3f986128 / anchor 5bee1864 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68414/1574 -> 68522/1575 (+108/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main 3f986128 / anchor 5bee1864 / doc-sync TBD / log-hash this commit
+## #1250 Type D: m979/m980/m981 qualitative-discipline corpus-integrity verification + #1245 background-suite verdict (ALIVE at 20%; FORTY-THIRD death streak BREAKS; tombstone lineage HOLDS at ONE-HUNDRED-EIGHTH) + recurring-failure triage (deterministic F-prefix 5/6 canonical positions in the LIVE log; 3807 absent - new deviation; INDETERMINATE, pinned as missing evidence) + NO suite re-launch - Type D FIRST and OPENING leg of the 1250-1254 window (Oct 5 2026, 10:00 PM PDT; main commit 3f986128 / anchor 5bee1864 / doc-sync 11827f60; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68414/1574 -> 68522/1575 (+108/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 3f986128 / anchor 5bee1864 / doc-sync 11827f60 / log-hash this commit
 
 ### Commit hashes
 - Main commit `3f986128` (3f986128ebfc413a8fd84fb0ea35bce28c745413) - verified via git rev-parse
 - Anchor followup `5bee1864` (5bee1864; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD (README 68414/1574 -> 68522/1575; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Doc-sync 11827f60 (README 68414/1574 -> 68522/1575; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_d_1250_in_git_log_pin to the own-set form (HEAD admitted)
 
 ### Rotation transparency
