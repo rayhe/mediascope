@@ -46547,13 +46547,13 @@ Push status (this run, Oct 5 2026 ~20:xx PDT): main + anchor followup pushed and
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
 
-## #1249 Type C: m981 OpenAI visual-ads expansion (Oct 5 2026) - first visual ChatGPT ad format announced at Advertising Week New York (visual display ads alongside image-generation results, US-only test later October); expanded measurement/attribution partner stack (AppsFlyer/Triple Whale/Adjust/Rockerbox/Northbeam/Branch/Singular/Kochava/Airbridge/Tenjin; Fospha/Measured/INCRMNTAL; Haus/Measured/WorkMagic; DV + IAS brand-suitability pilots); $1B annualized run rate (Aug 31, Dugan via CNBC); $25B end-2026 / $100B 2030 targets (Digiday Sep 29); MILESTONE DOCUMENTED, NOT a falsification-family member, ledger holds at 52; no new direction; FIRST dedicated corpus mechanism on the Oct-5 milestone (connects_to m286) - Type C FIFTH and CLOSING leg of the 1245-1249 window (Oct 5 2026, 09:00 PM PDT; main commit MAIN8 / anchor ANCHOR8 / doc-sync DOCSYNC8; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68343/1573 -> 68414/1574 (+71/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
-- Hash chain: main MAIN8 / anchor ANCHOR8 / doc-sync DOCSYNC8 / log-hash this commit
+## #1249 Type C: m981 OpenAI visual-ads expansion (Oct 5 2026) - first visual ChatGPT ad format announced at Advertising Week New York (visual display ads alongside image-generation results, US-only test later October); expanded measurement/attribution partner stack (AppsFlyer/Triple Whale/Adjust/Rockerbox/Northbeam/Branch/Singular/Kochava/Airbridge/Tenjin; Fospha/Measured/INCRMNTAL; Haus/Measured/WorkMagic; DV + IAS brand-suitability pilots); $1B annualized run rate (Aug 31, Dugan via CNBC); $25B end-2026 / $100B 2030 targets (Digiday Sep 29); MILESTONE DOCUMENTED, NOT a falsification-family member, ledger holds at 52; no new direction; FIRST dedicated corpus mechanism on the Oct-5 milestone (connects_to m286) - Type C FIFTH and CLOSING leg of the 1245-1249 window (Oct 5 2026, 09:00 PM PDT; main commit 82871c5e / anchor 2f26605b / doc-sync 25522e79; log-hash followup registers all hashes here per #721 (this commit); doc-sync 68343/1573 -> 68414/1574 (+71/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+- Hash chain: main 82871c5e / anchor 2f26605b / doc-sync 25522e79 / log-hash this commit
 
 ### Commit hashes
-- Main commit `MAIN8` (MAINFULL) - verified via git rev-parse
-- Anchor followup `ANCHOR8` (ANCHORFULL; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `DOCSYNC8` (DOCSYNCFULL; README 68343/1573 -> 68414/1574; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Main commit `82871c5e` (82871c5ee8aa18c6c3482dee2f7fef6c008d9ac3) - verified via git rev-parse
+- Anchor followup `2f26605b` (2f26605bbbd00bd38f88d6c137a6d3ef095ff5d7; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `25522e79` (25522e79a7991ff0e89a47173dd5a89a6a32d7cd; README 68343/1573 -> 68414/1574; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
