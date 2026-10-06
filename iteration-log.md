@@ -47281,14 +47281,14 @@ Push status (this run, Oct 6 2026 ~10:xx PDT): main 6a70fe80 + anchor 04efef5f p
 - NOT done (left for next hourly run): doc-sync commit (README stats 69796/1589 -> 69919/1590, README/ARCHITECTURE rows, #1265 iteration-log entry), TestGuardLifecycle1264 staleness verification, log-hash followup commit.
 - Uncommitted working tree (profiles/nytimes.yaml, 2 test files, 1 untracked test) is in-flight #899/#938/#900 work — intentionally left untouched.
 
-## #1265 Type D: m988/m989/m990 qualitative-discipline corpus-integrity verification + #1260 background-suite verdict (DEAD at 4%; THIRD consecutive death of the new streak; tombstone lineage ONE-HUNDRED-TENTH -> ONE-HUNDRED-ELEVENTH) + recurring-failure triage (F at canonical 1884 reproduces, 1 of 6; later positions out of range, early-death range artifact; INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1265-1269 window (Oct 6 2026, 11:00 AM PDT; main commit b2cceb48 / anchor 344914ff / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69796/1589 -> 69919/1590 (+123/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1265 Type D: m988/m989/m990 qualitative-discipline corpus-integrity verification + #1260 background-suite verdict (DEAD at 4%; THIRD consecutive death of the new streak; tombstone lineage ONE-HUNDRED-TENTH -> ONE-HUNDRED-ELEVENTH) + recurring-failure triage (F at canonical 1884 reproduces, 1 of 6; later positions out of range, early-death range artifact; INDETERMINATE, pinned as missing evidence) + full suite re-launched - Type D FIRST and OPENING leg of the 1265-1269 window (Oct 6 2026, 11:00 AM PDT; main commit b2cceb48 / anchor 344914ff / doc-sync a54c9bff; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69796/1589 -> 69919/1590 (+123/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main b2cceb48 / anchor 344914ff / doc-sync TBD / log-hash this commit
+- Hash chain: main b2cceb48 / anchor 344914ff / doc-sync a54c9bff / log-hash this commit
 
 ### Commit hashes
 - Main commit `b2cceb48` (b2cceb48c87b81a4172be081f4cb6ae6120ab365) - verified via git rev-parse
 - Anchor followup `344914ff` (344914ff29613793d45fd739bd3c7b2151f94fe3; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync TBD (README 69796/1589 -> 69919/1590; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync `a54c9bff` (a54c9bffed23659aa1f43143a4349a908d641500; README 69796/1589 -> 69919/1590; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
