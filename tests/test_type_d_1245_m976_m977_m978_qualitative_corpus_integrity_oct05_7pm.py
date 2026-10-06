@@ -63,7 +63,7 @@ window; the #1245 background-suite verdict belongs to #1250 per #795.
 
 Guard lifecycle note: #1244's no-Type-D-#1245-in-git-log pin flips BY
 DESIGN at this run (pinned as forward-looking staleness in this file,
-expecting "1 failed, 11 passed" on TestGuardLifecycle1244
+expecting "1 failed, 14 passed" on TestGuardLifecycle1244
 post-commit); #1244's max-978, zero-979 (all forms), fortieth-absent,
 forty-eighth-intact, forty-ninth-intact, fiftieth-intact,
 fifty-first-intact, fifty-second-intact, no-fifty-third guards stay
@@ -1011,15 +1011,15 @@ class TestTypeDIterationLog1245:
 
 class TestStalenessPins1245:
     def test_1244_guard_lifecycle_post_commit_self_trip(self):
-        # Post-main-commit form: 11 of the 12 pass; the one that fails
+        # Post-main-commit form: 14 of the 15 pass; the one that fails
         # BY DESIGN is test_no_type_d_1245_in_git_log_pin (this run's
         # own main commit carries "Type D #1245"). Type D lands no
         # mechanisms, so the zero-979 pins stay GREEN (no second
         # tripper this run). The #1244 block is read-only to this
-        # run. Deselected pre-commit (all 12 pass pre-commit).
+        # run. Deselected pre-commit (all 15 pass pre-commit).
         res = _class_run(C1244_FILE, "TestGuardLifecycle1244")
         assert res.returncode != 0, res.stdout[-2000:]
-        assert "1 failed, 11 passed" in res.stdout, res.stdout[-2000:]
+        assert "1 failed, 14 passed" in res.stdout, res.stdout[-2000:]
         assert (
             "test_no_type_d_1245_in_git_log_pin" in res.stdout
         ), res.stdout[-2000:]
