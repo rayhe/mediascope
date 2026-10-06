@@ -47537,4 +47537,4 @@ README stats table 70262/1594 -> 70386/1595 (+124/+1); README test-table row; do
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run, Oct 6 2026 ~4:xx PDT): TBD - doc-sync + log-hash followup pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip matched post-push).
+Push status (this run, Oct 6 2026 ~4:35 PDT): all four commits pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip d2c14012 -> b613ced9, verified match post-push).
