@@ -47022,3 +47022,45 @@ Push status (this run, Oct 6 2026 ~05:xx PDT): main 2c40dc1b + anchor 92a18e76 p
 
 ### Concurrency
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
+
+## #1259 Type C: m987 Castel AdX trial-evidence leg (Oct 1-3 2026 trade press) - SECOND dedicated corpus leg on the Sep-30-2026 SDNY damages pipeline; damages-model mechanics pricing the $3.2B+ publisher recovery (MDL 3010, Elhauge model through Mar 2024, Hortacsu/Shengwu Li expert gates, EDA $348.9M to Gannett, $599,955,198/$900,771,489 precise quanta, Act 1/Act 2 tying survival, fraudulent-concealment finding) - MECHANISM DOCUMENTED, NOT a falsification-family member, ledger holds at 54 - Type C FIFTH and CLOSING leg of the 1255-1259 window (Oct 6 2026, 06:00 AM PDT; main commit c15af6b7 / anchor 96c094df / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 69238/1583 -> 69325/1584 (+87/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+### Commit hashes
+- Main commit `c15af6b7` (c15af6b75c3afdfeea52d4039c9d2b5f413f2742) - verified via git rev-parse
+- Anchor followup `96c094df` (96c094df09cd01cf4ee6af9f233c6044975a7520; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync TBD (this commit; README 69238/1583 -> 69325/1584; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719 pre-main)
+- Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; re-pins test_no_type_c_1259_in_git_log_pin to the own-set form (HEAD admitted)
+
+### Research method
+- Delegated scout (16 browser.search query sets across 16 angles): SELECTED the Castel trial-evidence leg; REJECTED C1 Broadcom $42B Anthropic chip-lease (in-corpus: #1247 Type A + competitor-coverage-research.yaml), C2 Meta One link-limit gate (in-corpus: dedicated mechanism at competitor-entities.yaml line 25788), C3 Reddit/Perplexity seven-suit inventory (suit predates window; HP preload in-corpus line 27971), C4 Microsoft-OpenAI recast (outside window), C5 Everything-PR tracker (verification surface only).
+- 4 main-run browser.search verification sets: (a) October licensing-deal sweep - Digiday Google pay-per-value pilot (in-corpus m951), stockmoguls roundup (in-corpus figures); (b) October publisher-suit sweep - WSJ existential-threat piece (in-corpus test_type_c_879), Press Gazette deals roundup (in-corpus ap.yaml), Editorial Perfil suit (in-corpus), Thomson Reuters v Ross Intelligence (in-corpus), Seattle Times/Newsday v OpenAI (in-corpus m982 family), Anthropic $1.5B settlement (in-corpus); (c) Castel appeal/trial follow-up - SELECTED (ppc.land Oct 3 + Editor and Publisher Oct 1 + OpenClassActions Oct 2; 5/5 candidate URLs zero-hit repo-wide, 3 landed as block sources, 2 documented as relays); (d) Elhauge/Hortacsu corroboration - OpenClassActions Act 1/Act 2 tying + Sutton substack per-trick granulars. 0 browser.open per #503 (excerpt-bounded).
+- Pre-commit novelty greps per #715: zero test_type_c_1259 files on disk (glob); no "Type C #1259" in git log (--grep); max numeric mechanism_id 986 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash 987 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1259 in key, no 987 substring); 3/3 source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); 2 additional zero-hit relay URLs documented (rickysutton.substack.com granular per-trick pricing; kapualabs remedies-margin context).
+
+### Findings
+- m987 (profiles/competitor-entities.yaml, top-level key appended at end of file; the #1024 m846 hunk untouched): SECOND dedicated corpus leg on the Sep-30-2026 Castel publisher-damages pipeline. Oct 1-3 2026 trade/vertical press surfaces the trial-evidence mechanics that price the recovery: MDL No. 3010 (In re Google Digital Advertising Antitrust Litigation, SDNY; E&P: Document 2041); precise jury-presentable quanta - Daily Mail $599,955,198 ($216,880,035 U.S.), Gannett $900,771,489 ($797,831,266 U.S.), AdX publisher class $1.72B on the Elhauge damages model through Mar 2024; expert gates cleared (Hortacsu, Shengwu Li - expert exclusion is how cases of this shape usually die); Enhanced Dynamic Allocation internal quote ("with EDA on we set the reserve price at $1, and any AdX buyer including GDN can win") with Hortacsu $348.9M Gannett attribution; per-trick pricing ($234M rival-bidder exclusion; 20%-vs-5% fee = $81M Mail / $106M USA Today); Act 1 tying survives (EDVA issue preclusion on DFP-AdX tie), Act 2 tying survives (DA/EDA/DRS/UPR as unlawful tie); timeliness defense rejected; $152M foreign-website damages cut rejected; NY GBL state-law claims, Inform federal claims, and Progressive claims die; fraudulent-concealment finding ("took steps to fraudulently conceal", "cherry-pick higher revenue impressions"); no trial date yet. THE TYPE C NEXUS: m984 priced the path; this leg prices the recovery mechanics - expert-gated damages models plus named auction mechanisms with per-trick dollar attributions are the financial-quantum layer of the publisher-money-flow family (connects_to m984, m801).
+- Verdict: mechanism_documented; MANUAL/qualitative ONLY per Aug 28 2026 standing rule (engine NOT run, not significant, NOT artifact-grade, no analysis.json update).
+
+### Pre-commit novelty greps
+- Zero test_type_c_1259 files on disk (glob); no "Type C #1259" in git log (--grep).
+- Max numeric mechanism_id 986 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash 987 mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded).
+- Block key type_c_1259_castel_google_adx_trial_evidence_damages_model_oct06_6am zero-hit repo-wide pre-commit (designed keying: iteration 1259 in key, no 987 substring); no #1259 row in README/ARCHITECTURE test tables; README stats 69238/1583 pre-commit.
+- Fortieth direction absent in profiles/; forty-eighth-through-fifty-fourth intact - all GREEN pre-commit; #1258's max-986, zero-987 (all forms), fortieth-absent, forty-eighth-through-fifty-fourth-intact, and no-fifty-fifth guards verified GREEN at HEAD pre-commit; the #1258 no-Type-C-#1259-in-git-log and zero-987-numeric pins flip BY DESIGN at the main commit (the #1191-class self-trip, pinned post-commit by TestStalenessPins1259 expecting "2 failed, 15 passed").
+
+### Rotation transparency
+- This run is iteration #1259 Type C, the FIFTH and CLOSING leg of the 1255-1259 window (D #1255 -> E #1256 -> A #1257 -> B #1258 -> C #1259 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1258 Type B (main 2c40dc1b / anchor 92a18e76 / doc-sync 2c40dc1b (folded into main) / log-hash 1423f9ea); #1257 Type A (main 841f1b2b / anchor f112fb86 / doc-sync a048dc32 / log-hash b67d591f); #1256 Type E (main 09867f9d).
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit. Next: #1260 Type D opens the 1260-1264 window; the #1255-launched background-suite verdict belongs to #1260 per #795.
+- Guard lifecycle note: #1258's max-986 + zero-987 + no-Type-C-#1259-in-git-log pins flip BY DESIGN at this run's main commit (the #1191-class self-trip, pinned post-commit by TestStalenessPins1259 expecting "2 failed, 15 passed"); #1258's fortieth-absent, forty-eighth-through-fifty-fourth-intact, and no-fifty-fifth guards stay green (m987 is a DOCUMENTATION event, not a member).
+- The 1255-1259 window is now CLOSED. The 1250-1254 window was VERIFIED CLOSED pre-commit.
+
+### Doc-sync ratchet
+README stats table 69238/1583 -> 69325/1584 (+87/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync hash patched by the log-hash followup; this commit); test-file constants patched per #719 pre-main (87 collected, 13 classes); in-gate 75 passed + 12 deselected by design, zero defects.
+
+### Background suite (per #795)
+- The #1255-launched full suite verdict belongs to #1260: this run OBSERVES only. Observed NOT-ALIVE at this run's check (zero live pytest processes; log 8118 bytes, last write Oct 6 12:11 UTC, dot stream stalled at ~10% - unchanged since #1258's close-out observation). This run neither re-launches, kills, nor writes to the suite.
+
+### Push status
+Push status (this run, Oct 6 2026 ~06:xx PDT): TBD - filled by the log-hash followup.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray's revert/leave/rebuild decision pending.
