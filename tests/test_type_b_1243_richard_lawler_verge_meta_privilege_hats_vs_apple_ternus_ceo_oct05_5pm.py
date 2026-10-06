@@ -91,7 +91,7 @@ OWN_BASENAME = (
 TOP_KEY = "richard_lawler_type_b"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "f574d8503446cdfa5c563cd20168950e988814a1"  # patched green in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
