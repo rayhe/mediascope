@@ -214,7 +214,7 @@ PRED_FINAL_1260 = "c3992ad4"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-E-#1261 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1261 = "0" * 40
+PRED_MAIN_1261 = "19b153f21f1a62a9c12f198d5c59f5bd6778b4f1"  # patched in the log-hash followup per #721 (main commit sha)
 
 # The #1260 window-opener file, for the staleness pin on its
 # guard-lifecycle class (max id 987; zero next-number nine-eight-eight
@@ -1085,13 +1085,13 @@ class TestStalenessPins1261:
         return res
 
     def test_1260_guard_lifecycle_all_green_post_commit(self):
-        # Post-main-commit form: 19 tests in the class, all pass,
+        # Post-main-commit form: 17 tests in the class, all pass,
         # EXCEPT the no_type_e_1261_in_git_log pin, which flips BY
         # DESIGN when this run's main commit lands (its subject
         # carries "Type E #1261") - the #1191-class self-trip. The pin
         # is re-pinned to the post-commit own-set form in the terminal
         # log-hash followup per #721; the class run below therefore
-        # expects the 18 surviving pins green and documents the one
+        # expects the 16 surviving pins green and documents the one
         # designed flip. The #1260 block is read-only to this run;
         # the quirk is documented here, not repaired.
         res = self._class_run(
@@ -1099,7 +1099,7 @@ class TestStalenessPins1261:
             "TestGuardLifecycle1260",
         )
         out = res.stdout + res.stderr
-        assert "1 failed, 18 passed" in out, out[-2000:]
+        assert "1 failed, 16 passed" in out, out[-2000:]
         assert "no_type_e_1261_in_git_log" in out, out[-2000:]
 
 
