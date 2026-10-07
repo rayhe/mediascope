@@ -28577,3 +28577,106 @@ marcus_mendes_type_b:
       source_urls:
       - https://9to5mac.com/2026/09/23/meta-announces-camera-free-glasses-dedicated-muse-ai-gadget-more/
       - https://9to5mac.com/2026/08/20/apple-reportedly-lays-off-60-vision-employees-amid-shifting-priorities/
+kalley_huang_type_b:
+  name: Kalley Huang
+  publication: nytimes
+  mechanism_ids: [995]
+  competitor_coverage:
+    type_b_1273_kalley_huang_nyt_meta_anthropic_spend_vs_apple_foldable_oct06_8pm:
+      block_key: type_b_1273_kalley_huang_nyt_meta_anthropic_spend_vs_apple_foldable_oct06_8pm
+      mechanism_id: 995
+      iteration: 1273
+      type: B
+      date: '2026-10-06 20:00 PDT'
+      test_file: tests/test_type_b_1273_kalley_huang_nyt_meta_anthropic_spend_vs_apple_foldable_oct06_8pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Kalley Huang
+      publication: The New York Times
+      window: '1270-1274 window FOURTH leg (D #1270 -> E #1271 -> A #1272 -> B #1273 -> C #1274)'
+      design: 'Within-journalist cross-entity register comparison: same writer (Kalley Huang, NYT), same outlet, Meta Anthropic-spend scoop (co-byline Eli Tan + Kalley Huang, ~Aug-30-2026) vs Apple foldable-iPhone product news (solo Huang byline, Sep-8-2026), ~9 days apart. Tests whether the Meta-hard / Apple-soft register asymmetry appears at a deal-free outlet: CONTROL case (no documented NYT financial tie to Meta or Apple in the corpus - the NYT x OpenAI relationship is litigation, in-corpus), so the uniform payer-softening prediction is not adjudicated - the pair measures the base rate of register asymmetry absent incentives.'
+      finding: 'FIRST dedicated Type B mechanism on Kalley Huang (prior corpus mentions are co-byline credits only: the Feb-2026 NameTag expose at #623 as Hill + Huang + Isaac, and nytimes.yaml prose notes; no kalley_huang_type_b key pre-commit). Huang''s Meta ~Aug-30 arm runs an accountability-exposure register on a business scoop (-0.35 MANUAL ILLUSTRATIVE): Meta secretly projected spending up to $10B a year on rival Anthropic''s AI models while Zuckerberg publicly attacked Anthropic. Her Apple Sep-8 arm runs innovation-positive product news (+0.05 MANUAL ILLUSTRATIVE): the foldable iPhone as the biggest iPhone design change in nearly two decades, a bid to regain Apple''s innovator reputation. Illustrative delta (Apple minus Meta) +0.40 in the Meta-hard direction. CONTROL-CASE per the #1243/#1248/#1268 precedent: no documented financial relationship between NYT and Meta or Apple exists in the corpus, so the uniform payer-softening prediction is NOT adjudicated. Direction is thesis-consistent (Meta-hard asymmetry with no deal on either side), but a control case can neither confirm nor falsify the financial-incentive thesis. NOT a falsification-family member; ledger holds at 54. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; NOT artifact-grade; no analysis.json update. Correlation is not causation. Hypothesis-generating only.'
+      meta_arm:
+        entity: meta
+        outlet: The New York Times
+        author_byline: 'Eli Tan and Kalley Huang (byline attested via the europesays.com relay: "Eli Tan and Kalley Huang reported the figures")'
+        title: 'Meta projected spending up to $10bn a year on Anthropic''s AI models (relay headline)'
+        date: '~2026-08-30 (relay-dated; 37 days before the Oct-6-2026 search)'
+        status: 'NEW this run (europesays.com relay URL zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        url: https://www.europesays.com/people/208390/
+        url_note: 'europesays.com relay URL copied verbatim from this run''s Full-URL listing (search index 2); the URL zero-hit repo-wide pre-commit (git grep -F); no canonical nytimes.com URL constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via the relay page rendering in search)'
+        key_quotes:
+        - 'Accountability frame (verbatim relay excerpt): "Meta has become one of Anthropic''s largest customers, at the same time as Mark Zuckerberg has been attacking the company in public."'
+        - 'Entanglement (verbatim): "What has not been reported before is how far their finances are entangled while they do it."'
+        - 'Byline (verbatim): "Eli Tan and Kalley Huang reported the figures."'
+        tone_reading: 'Accountability-exposure register: the scoop''s news value is the gap between Zuckerberg''s public attacks on Anthropic and Meta''s private $10B-a-year dependence on its models - a hypocrisy-exposure frame, adversarial in the business-accountability sense.'
+      apple_arm:
+        entity: apple
+        outlet: The New York Times
+        author_byline: 'Kalley Huang (byline attested via the instrumentalcomms.com roundup: "Kalley Huang of The New York Times reported")'
+        title: 'Apple to Make First Big Change to iPhones in Years (relay headline)'
+        date: '2026-09-08 (explicit in the relay excerpt)'
+        status: 'NEW this run (instrumentalcomms.com roundup URL zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        url: https://www.instrumentalcomms.com/blog/foldable-iphone-mifepristone
+        url_note: 'instrumentalcomms.com roundup URL copied verbatim from this run''s Full-URL listing (search index 6); the URL zero-hit repo-wide pre-commit (git grep -F); no canonical nytimes.com URL constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via the roundup page rendering in search)'
+        key_quotes:
+        - 'Product news (verbatim relay excerpt): "Kalley Huang of The New York Times reported that Apple is expected to unveil a foldable smartphone at its annual product event in Cupertino, California."'
+        - 'Innovation frame (verbatim): "This marks a significant design change for the iPhone, which has remained largely the same since its introduction in 2007."'
+        - 'Reputation frame (verbatim): "This development could signal Apple''s attempt to reinvigorate its product line and regain its reputation as an innovator in the tech industry."'
+        tone_reading: 'Innovation-positive product news: the foldable is framed as Apple regaining its innovator reputation - no accountability vocabulary, no track-record anchor, no skepticism about the $2,000+ price or foldable durability questions.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+        meta_tone_MANUAL_ILLUSTRATIVE: -0.35
+        apple_tone_MANUAL_ILLUSTRATIVE: 0.05
+        illustrative_delta_apple_minus_meta: 0.4
+        delta_calc: '0.05 - (-0.35) = +0.40'
+        delta_direction: 'Meta-hard direction: the Meta arm exposes a public/private gap as the story''s news value; the Apple arm celebrates a product launch as innovation. Directionally thesis-consistent, observed at a deal-free outlet (control case).'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine_run: false
+        is_significant: false
+      financial_context: 'No documented financial relationship between The New York Times and Meta or Apple exists in the corpus. The NYT x OpenAI relationship is litigation (NYT Co. sued OpenAI and Microsoft Dec 2023, in-corpus per #1248), NOT a licensing deal. Unlike Conde Nast (OpenAI licensing), Vox Media (OpenAI licensing), Axel Springer (OpenAI licensing), or Thomson Reuters (Meta licensing), NYT has no mapped payer relationship to either compared entity - this pair is a CONTROL case by construction, measuring the base rate of register asymmetry absent financial incentives. Correlation is not causation.'
+      confounders:
+        strong:
+        - 'Peg asymmetry: investigative business scoop (adversarial valence, exposes hypocrisy) vs product-launch news (positive valence, innovation frame). The register contrast is extracted across different story types; the Meta-hard read is partly scoop-native.'
+        - 'Co-byline on the Meta arm: Eli Tan (dedicated NYT Meta-beat reporter, in-corpus) shares the byline; the accountability register may be Tan-driven rather than Huang-driven, which bounds the journalist-level attribution to Huang specifically.'
+        moderate:
+        - 'Evidence tier: both arms are relay-attested excerpts (europesays.com aggregation; instrumentalcomms.com weekly roundup), not NYT canonical text - the register read is excerpt-bounded per #503 and thinner than canonical-excerpt pairs.'
+        - 'Temporal: ~9 days apart (late Aug vs Sep 8); same news cycle, both pre-Connect-2026.'
+        weak:
+        - 'Illustrative tones subjective; n=1 per arm; relay headlines may differ from NYT originals.'
+      counter_evidence:
+      - 'Bounded absence of a Huang Meta-soft arm in the bounded search: her in-window Meta bylines located are the Anthropic-spend scoop (this run) and the NameTag co-byline (#623, adversarial) - no located piece where Huang runs soft/celebratory on Meta. Absence is bounded by the search window, not a proven zero.'
+      - 'The Sep-25-2026 NYT "pervert glasses" piece ("Complaints About Meta''s Pervert Glasses Won''t Slow Tech''s Wearable Gadgets Drive") is co-bylined Brian X. Chen + Eli Tan - Huang is NOT on that byline; it cannot serve as her Meta arm and is explicitly not attributed to her.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. Engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim. Verdict is a bounded control-case observation, not a discovery; must not be cited as evidence of deal-driven anything. no_analysis_json_update true.'
+      verdict: 'control_case_observation: Huang (NYT) runs an accountability-exposure register on Meta''s secret Anthropic spend (-0.35) while running innovation-positive product news on Apple''s foldable (+0.05); illustrative delta (Apple minus Meta) +0.40 in the Meta-hard direction. Observed at a deal-free outlet pair (no documented NYT tie to either entity), so the uniform payer-softening prediction is not adjudicated - CONTROL-CASE per the #1243/#1248/#1268 precedent. Direction is thesis-consistent (asymmetry without incentives), but a control case can neither confirm nor falsify the financial-incentive thesis. NOT a falsification-family member. Ledger holds at 54.'
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. The peg-asymmetry confound is dominant (scoop vs launch-news valence differs), and the Tan co-byline confound bounds journalist-level attribution of the Meta-arm hardness to Huang specifically. The direction is thesis-consistent but proves nothing about financial incentives - by construction, there are none here.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 54
+      ledger_note: 'Ledger holds at 54 this run (no new member; forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth intact in profiles/careers/journalists.yaml; fiftieth intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first intact in profiles/news-corp.yaml (3 occurrences); fifty-second intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth intact in profiles/guardian.yaml (2 occurrences); no fifty-fifth member-claim form repo-wide; fortieth direction form absent in profiles/).'
+      connects_to:
+      - 623
+      - 1248
+      - 1268
+      novelty: 'Pre-commit: zero test_type_b_1273 files on disk (glob, own file only); no "Type B #1273" in git log (--grep); max numeric mechanism_id 994 in profiles/; zero numeric/underscore/dash nine-nine-six mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1273 in key, no 995 substring); 2/2 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); "kalley_huang_type_b" key zero-hit pre-commit (prior "Kalley Huang" mentions are co-byline credits in #623 and nytimes.yaml prose only); "## #1273" zero-hit in iteration-log pre-commit; README stats 70564/1597 pre-commit; no #1273 row in README/ARCHITECTURE test tables pre-commit. NOT a falsification-family member (control case); fifty-fifth member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; forty-eighth through fifty-fourth member forms intact. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Main-run browser.search verification sets (Meta-arm exact-headline search returning the europesays.com relay verbatim with "Eli Tan and Kalley Huang reported the figures" plus the $10B/yr figure; Apple-arm search returning the instrumentalcomms.com roundup verbatim with "Kalley Huang of The New York Times reported" plus the Sep-8-2026 date; candidate-rejection audit: Brian X. Chen saturated (#458), Eli Tan Meta-beat-only with no competitor arm, Cade Metz saturated, Mike Isaac saturated (#1248), Kashmir Hill half-pair rejected per #1248, Gurman/Stern/Stein/Peters/Perez saturated, Wayne Ma no verifiable pair); corpus saturation greps: both relay URLs zero-hit repo-wide, no kalley_huang_type_b key pre-commit (prior mentions are #623 co-byline + nytimes.yaml prose), Meta-arm headline zero-hit repo-wide, Apple-arm headline zero-hit repo-wide; 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. Control-case direction noted (Meta-hard asymmetry absent incentives) with STRONG peg-asymmetry and Tan co-byline confounds. No ledger advance (holds at 54).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1270-launched full suite (goal hidden_files type_d_1270_full_suite.log) observed NOT-ALIVE at this run''s check (~8.75h stale, last write Oct 6 18:12 UTC; zero live pytest processes at check time - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1275 (next Type D).'
+      in_flight:
+      - '#899: profiles/nytimes.yaml m771 hunk (leave out of this run''s index)'
+      - '#938: Type B test file working-tree edit (leave out)'
+      - '#900: untracked Type D test file (leave out)'
+      - '#1012-wt: working-tree edit on committed Type A #1012 file (leave out)'
+      - '#1024: m846 in profiles/competitor-entities.yaml (do NOT touch; decision pending)'
+      source_urls:
+      - https://www.europesays.com/people/208390/
+      - https://www.instrumentalcomms.com/blog/foldable-iphone-mifepristone
