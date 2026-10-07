@@ -28680,3 +28680,105 @@ kalley_huang_type_b:
       source_urls:
       - https://www.europesays.com/people/208390/
       - https://www.instrumentalcomms.com/blog/foldable-iphone-mifepristone
+
+kris_holt_type_b:
+  name: Kris Holt
+  publication: engadget
+  mechanism_ids: [998]
+  competitor_coverage:
+    type_b_1278_kris_holt_engadget_meta_connect_roundup_vs_google_eu_fine_oct07_4am:
+      block_key: type_b_1278_kris_holt_engadget_meta_connect_roundup_vs_google_eu_fine_oct07_4am
+      mechanism_id: 998
+      iteration: 1278
+      type: B
+      date: '2026-10-07 04:00 PDT'
+      test_file: tests/test_type_b_1278_kris_holt_engadget_meta_connect_roundup_vs_google_eu_fine_oct07_4am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Kris Holt
+      publication: Engadget
+      window: '1275-1279 window FOURTH leg (D #1275 -> E #1276 -> A #1277 -> B #1278 -> C #1279)'
+      design: 'Within-journalist cross-entity register comparison: same writer (Kris Holt, Engadget), same outlet, Meta Connect 2026 launch roundup (Sep-23-2026) vs Google EU location-data fine news (Sep-21-2026), 2 days apart. Tests whether a Meta-hard / competitor-soft register asymmetry appears at a deal-free outlet: CONTROL case (no documented Yahoo/Engadget AI content-licensing deal with Meta or Google anywhere in the corpus - competitor-coverage-research.yaml documents the absence explicitly), so the uniform payer-softening prediction is NOT adjudicated - the pair measures the base rate of register asymmetry absent incentives.'
+      finding: 'FIRST dedicated Type B mechanism on Kris Holt (no kris_holt_type_b key pre-commit; prior "Kris Holt" corpus mentions are #1153 research-note prose only - Connect-week Engadget smart-glasses byline attribution, never a mechanism). Holt''s Meta Sep-23 arm runs a neutral product-launch roundup with zero privacy vocabulary in the surfaced text (0.00 MANUAL ILLUSTRATIVE): "Everything announced at Meta Connect 2026" - VR glasses, Aviator-style Ray-Ban Meta specs, Ace Attorney in VR. His Google Sep-21 arm runs an accountability register on the EU $463M location-data fine (-0.50 MANUAL ILLUSTRATIVE): the dek "Hardly the first time it''s run afoul of EU regulations" frames Google as a repeat offender; the body closes "This is hardly the first time Google has been in hot water in the EU" after citing the $4.7B Android antitrust fine. Illustrative delta (Google minus Meta) -0.50 in the Meta-SOFT direction: Google draws the harder register. CONTROL-CASE per the #1243/#1268 precedent: no documented financial relationship between Yahoo/Engadget and Meta or Google exists in the corpus, so the uniform payer-softening prediction is NOT adjudicated. Direction is thesis-agnostic (a control case can neither confirm nor falsify the financial-incentive thesis). NOT a falsification-family member; ledger holds at 55. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; NOT artifact-grade; no analysis.json update. Correlation is not causation. Hypothesis-generating only.'
+      meta_arm:
+        entity: meta
+        outlet: Engadget
+        author_byline: 'Kris Holt (byline attested via the engadget.com Meta category page listing "Everything announced at Meta Connect 2026 ... By Kris Holt" and the engadget.com Kris Holt author page listing "Meta By Kris Holt ... Everything announced at Meta Connect 2026")'
+        title: 'Everything announced at Meta Connect 2026'
+        date: '2026-09-23'
+        status: 'NEW this run (relay URLs zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: 0.0
+        url: https://briefly.co/anchor/Wearables/story/everything-announced-at-meta-connect-2026---engadget
+        url_note: 'briefly.co relay URL copied verbatim from this run''s Full-URL listing (search index 0); corroborated by the technewstube relay (https://technewstube.com/engadget/1870122/everything-announced-meta-connect-2026/) and the engadget.com canonical rendering in search (https://www.engadget.com/2267230/everything-announced-at-meta-connect-2026/); all three zero-hit repo-wide pre-commit (git grep -F); no URL constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via search-indexed relay and category/author pages)'
+        key_quotes:
+        - 'Roundup dek (verbatim via search): "VR glasses, Aviator-style Ray-Ban Meta specs, Ace Attorney in virtual reality and much more"'
+        - 'Launch relay (verbatim via canonical excerpt): "The company showed off two new types of wearables at Meta Connect, virtual reality glasses and an audio-only set, as well as the third-gen Ray-Ban Meta AI specs"'
+        tone_reading: 'Neutral product-launch roundup: straight announcement relay across VR glasses, audio glasses, Ray-Ban Display updates, hearing assistance, Beat Saber, and Muse-on-glasses. Zero privacy vocabulary in the surfaced text - no scrutiny paragraph, no accountability frame on positive Meta news.'
+      google_arm:
+        entity: google
+        outlet: Engadget
+        author_byline: 'Kris Holt (byline attested via the theairmedia aggregator listing "Google fined $463 million for breaching EU location data rules ... 1 week ago ... staff@engadget.com (Kris Holt)" with the "Hardly the first time it''s run afoul of EU regulations" dek)'
+        title: 'Google fined $463 million for breaching EU location data rules'
+        date: '2026-09-21'
+        status: 'NEW this run (relay URLs zero-hit repo-wide pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: -0.5
+        url: https://theairmedia.passproevents.in/story/795792
+        url_note: 'theairmedia aggregator URL copied verbatim from this run''s Full-URL listing (search index 2); corroborated by the engadget.com canonical rendering in search (https://WWW.Engadget.com/2263850/google-fined-dollar463-million-for-breaching-eu-location-data-rules/); both zero-hit repo-wide pre-commit (git grep -F); no URL constructed per policy'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim excerpts via search-indexed aggregator and canonical rendering)'
+        key_quotes:
+        - 'Repeat-offender dek (verbatim via aggregator): "Hardly the first time it''s run afoul of EU regulations"'
+        - 'Repeat-offender close (verbatim via canonical excerpt): "This is hardly the first time Google has been in hot water in the EU. This summer, the company lost its final appeal over a $4.7 billion Android antitrust fine that the bloc imposed in 2018"'
+        - 'Fine lead (verbatim): "Google has been handed a hefty fine for breaching European Union privacy rules over its handling of location data. The company will have to pay 403 million euros ($463 million)"'
+        tone_reading: 'Accountability register on regulatory news: the fine peg is negative for Google, and Holt adds the repeat-offender frame in both dek and close - "hardly the first time" does editorial work beyond the fine facts, anchoring Google''s track record. No corporate-defense carrying; Google''s "historical policies" statement is carried once via AP.'
+      scorer:
+        method: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+        meta_tone_MANUAL_ILLUSTRATIVE: 0.0
+        google_tone_MANUAL_ILLUSTRATIVE: -0.5
+        illustrative_delta_google_minus_meta: -0.5
+        delta_calc: '-0.50 - 0.00 = -0.50'
+        delta_direction: 'Meta-soft direction: the Google arm carries a repeat-offender accountability frame on fine news; the Meta arm is a neutral product roundup with no scrutiny vocabulary. Directionally thesis-agnostic - observed at a deal-free outlet (control case).'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        engine_run: false
+        is_significant: false
+      financial_context: 'Engadget is published by Yahoo (Apollo-owned). The corpus explicitly documents the absence: "No documented AI content-licensing deal between Yahoo/Engadget and Meta, Apple, or Google in the corpus" (competitor-coverage-research.yaml). Unlike Conde Nast (OpenAI licensing), Vox Media (OpenAI licensing), Axel Springer (OpenAI licensing), Thomson Reuters (Meta licensing), FT (OpenAI licensing), or the Atlantic (OpenAI licensing), Yahoo/Engadget has no mapped payer relationship to either compared entity - this pair is a CONTROL case by construction, measuring the base rate of register asymmetry absent financial incentives. Correlation is not causation.'
+      confounders:
+        strong:
+        - 'Peg asymmetry: product-launch roundup (neutral-positive valence, Sep 23) vs regulatory fine news (negative valence, Sep 21). The register contrast is extracted across different story types; the repeat-offender framing on the Google arm is partly fine-story-native (track-record anchoring is conventional on regulatory beats).'
+        moderate:
+        - 'Temporal: 2 days apart (Sep 21 vs Sep 23); tight window, same news cycle - weaker than usual.'
+        weak:
+        - 'Evidence tier symmetric (both excerpt-tier via search-indexed relays/canonical renderings, 0 browser.open per #503); no evidence-tier gap to discount.'
+      counter_evidence:
+      - 'Bounded absence of a Holt Meta-adversarial arm in the bounded search: his author page in-window shows the same neutral product-news register on Meta (Connect roundup) with no located piece where Holt runs accountability on Meta wearables. Absence is bounded by the search window, not a proven zero.'
+      - 'The #1153 bounded-absence finding places Holt among the Connect-week Engadget smart-glasses bylines (with Karissa Bell, Cherlynn Low, Mariella Moon) - his Meta arm here is the roundup, not a deep accountability piece; the comparison is register-across-pegs, not register-on-same-peg.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only (n=1 per arm, single-run hand assignment). p_value NOT_CALCULATED; cohens_d NOT_CALCULATED; ci_95 NOT_CALCULATED. Engine NOT run (n=1 per arm cannot support inference). NOT artifact-grade. No significance claim. Verdict is a bounded control-case observation, not a discovery; must not be cited as evidence of deal-driven anything. no_analysis_json_update true.'
+      verdict: 'control_case_observation: Holt (Engadget) runs a neutral product roundup on Meta Connect launch news (0.00) while applying a repeat-offender accountability frame to Google EU fine news (-0.50); illustrative delta (Google minus Meta) -0.50 in the Meta-soft direction. Observed at a deal-free outlet (no documented Yahoo/Engadget tie to Meta or Google - corpus documents the absence), so the uniform payer-softening prediction is not adjudicated - CONTROL-CASE per the #1243/#1268 precedent. Direction is thesis-agnostic; a control case can neither confirm nor falsify the financial-incentive thesis. NOT a falsification-family member. Ledger holds at 55.'
+      cautious_language_required: true
+      correlational_note: 'Correlation is not causation. The peg-asymmetry confound is dominant (launch roundup vs fine news valence differs), and the repeat-offender framing is partly fine-story-native. The direction proves nothing about financial incentives - by construction, there are none here.'
+      no_analysis_json_update: true
+      falsification_family_member: false
+      falsification_ledger: 55
+      ledger_note: 'Ledger holds at 55 this run (no new member; forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth intact in profiles/careers/journalists.yaml; fiftieth intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first intact in profiles/news-corp.yaml (3 occurrences); fifty-second intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth intact in profiles/guardian.yaml (2 occurrences); fifty-fifth intact in profiles/atlantic.yaml (2 occurrences); no fifty-sixth member-claim form repo-wide; fortieth direction form absent in profiles/).'
+      connects_to:
+      - 733
+      - 1153
+      - 1268
+      - 1273
+      novelty: 'Pre-commit: zero test_type_b_1278 files on disk (glob, own file only); no "Type B #1278" in git log (--grep); max numeric mechanism_id 997 in profiles/; zero numeric/underscore/dash nine-nine-eight mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1278 in key, no 998 substring); 2/2 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); "kris_holt_type_b" key zero-hit pre-commit (prior "Kris Holt" mentions are #1153 research-note prose only - Connect-week Engadget smart-glasses byline attribution, never a mechanism); "## #1278" zero-hit in iteration-log pre-commit; README stats 71039/1602 pre-commit; no #1278 row in README/ARCHITECTURE test tables pre-commit. NOT a falsification-family member (control case); fifty-sixth member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; forty-eighth through fifty-fifth member forms intact. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Delegated scout (ranked 3 candidate pairs: SELECTED #1 Holt/Engadget Meta-Connect-roundup vs Google-EU-fine - tightest 2-day same-journalist same-outlet window with byline-complete arms; #2 Anna Washenko/Engadget held as backup - OpenAI arm 41 days stale; #3 Nicholas Sutrich/Android Central held - Google-arm relay missing; numbered rejection audit: 15 prior Type B journalists saturated, Deepa Seetharaman outlet-mid-cycle, Steven Tweedie single-piece dual-entity, plus 8 no-clean-pair discards) + 2 main-run browser.search verification sets (exact-headline Meta-arm search returning the engadget.com Meta category page verbatim with "Everything announced at Meta Connect 2026 ... By Kris Holt" plus the author page "Meta By Kris Holt ... Everything announced at Meta Connect 2026"; exact-headline Google-arm search returning the theairmedia aggregator verbatim with "staff@engadget.com (Kris Holt)" and the "Hardly the first time" dek plus the engadget.com canonical rendering); corpus saturation greps: both relay URLs zero-hit repo-wide, no kris_holt_type_b key pre-commit (prior mentions are #1153 research notes only), Meta-arm headline relay zero-hit repo-wide, Google-arm headline relay zero-hit repo-wide; 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. Control-case direction noted (Meta-soft asymmetry absent incentives) with STRONG peg-asymmetry confound. No ledger advance (holds at 55).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1275-launched full suite (goal hidden_files type_d_1275_full_suite.log) observed NOT-ALIVE at this run''s check (1779 bytes, last write Oct 7 02:01 PDT; zero live pytest processes at check time - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1280 (next Type D).'
+      in_flight:
+      - '#899: profiles/nytimes.yaml m771 hunk (leave out of this run''s index)'
+      - '#938: Type B test file working-tree edit (leave out)'
+      - '#900: untracked Type D test file (leave out)'
+      - '#1012-wt: working-tree edit on committed Type A #1012 file (leave out)'
+      - '#1024: m846 in profiles/competitor-entities.yaml (do NOT touch; decision pending)'
+      source_urls:
+      - https://briefly.co/anchor/Wearables/story/everything-announced-at-meta-connect-2026---engadget
+      - https://theairmedia.passproevents.in/story/795792
