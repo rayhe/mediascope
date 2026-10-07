@@ -1,11 +1,11 @@
 ## #1289 Type C: m1005 Redpine x six academic publishers pay-per-use licensed corpus rail (Oct 6 2026) - FIRST dedicated corpus mechanism on the broker-cleared publisher-set per-token pricing rail (Redpine announces Oct-6 partnerships with BMJ Group, Sage, IOP Publishing, IGI Global Scientific Publishing, Wanfang Data, RCNi covering 20M+ peer-reviewed articles; licensed full-text access for AI agents via API + MCP named for Claude/Cursor/ChatGPT; publishers set permitted uses and transaction pricing; Redpine shares the vast majority of revenue with publishers; $1 per 1,000 tokens pay-per-use, no upfront subscription; Sage pilot across 400+ medical/life-sciences journals); MECHANISM DOCUMENTED, NOT a falsification-family member (ledger holds at 57); no new direction (fortieth absent by design; 35th-39th stand)
 
-- Hash chain: main FILL_ME_MAIN / anchor FILL_ME_ANCHOR / doc-sync FILL_ME_DOCSYNC / log-hash (this commit)
+- Hash chain: main 14d29a78 / anchor 3d142f04 / doc-sync b27fa617 / log-hash (this commit)
 
 ### Commit hashes
-- Main commit `FILL_ME_MAIN` - verified via git rev-parse
-- Anchor followup `FILL_ME_ANCHOR` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `FILL_ME_DOCSYNC` (README 71976/1613 -> 72001/1614; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Main commit `14d29a78` - verified via git rev-parse
+- Anchor followup `3d142f04` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `b27fa617` (README 71976/1613 -> 72001/1614; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1289 re-pinned to the main sha per #721 in the #1288 test file (the no-Type-C-#1289-in-git-log pin flips green post-repin) and in the #1289 test file per #721
 
 ### Finding summary

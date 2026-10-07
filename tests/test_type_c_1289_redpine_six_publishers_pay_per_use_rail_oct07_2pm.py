@@ -160,7 +160,7 @@ PRED_FINAL_1285 = "f362c54c"
 
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40).
-PRED_MAIN_1289 = "0" * 40
+PRED_MAIN_1289 = "14d29a7811045e76b678e48350ded147da9edce5"  # re-pinned to main sha per #721
 
 # Forward guard for the next leg: #1290 Type D. Re-pinned by #1290's
 # log-hash followup per #721 (starts as 0*40; placeholder-only per the
