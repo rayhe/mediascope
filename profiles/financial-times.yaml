@@ -2187,6 +2187,114 @@ competitor_relationships:
         - "https://globaladvisors.biz/2026/08/27/global-advisors-news-brief-2026-08-27/"
         - "https://www.ft.com/content/21dcbd96-ee57-445c-a9ba-0938c49b91c0"
       distinct_from_prior: "Zero test_type_a files pair FT with Google on the leadership-transition event (verified via ls grep). The Aug 5 FT x Google Type A (test_ft_google_coverage_asymmetry.py) is the glasses-framing dimension, a different analytical unit. #487 is Guardian x Google, a different publication. First FT x Google Type A on the dual-payer portfolio prediction (#437). Not Microsoft PCM related."
+    type_a_1292_ft_google_oct04_oct07_regulatory_accountability_register_vs_carried_meta_arms:
+      mechanism_id: 1006
+      block_key: type_a_1292_ft_google_oct04_oct07_regulatory_accountability_register_vs_carried_meta_arms
+      key_design_note: 'Iteration-form block key carries no underscore-form one-zero-zero-six mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-one-zero-zero-six profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: 'Financial Times'
+      competitor: google
+      polarity_note: 'Spec-faithful polarity (publication + competitor = FT x Google); this run NEW arms land on the Google side (the Oct-1 EU-meetings analysis, the Oct-4 Play Store lawsuit Companies-desk piece, the Oct-7 Brussels-tax scoop - all FT-originated, relay/mirror-attested), against the carried FT x Meta arms (m441).'
+      event: 'Oct 1-7 2026: a 72-hour regulatory-accountability register lands on Google at the Financial Times. Oct 1: FT analysis (via WeSearch/Techmeme) data-frames Google, Apple and Amazon as each holding more meetings with EU parliament/commission officials than any individual European company. Oct 4: FT Companies desk runs ''Google Defends 1.2bn UK Lawsuit Over App Download Charges'' (20M UK consumers, Liz Coll, CAT trial opened Oct 6). Oct 7: FT scoops Brussels'' redesigned big-tech tax (CORE levy redesign, EUR100M threshold) with Google named an explicit target alongside Apple and Meta, relayed by Reuters the same day. All three pegs land roughly eight months after the Feb-2026 FT x Google News AI pilot commercial partnership - a sustained adversarial posture on the payer, not a one-off.'
+      financial_relationship: 'FT x Google ''News AI pilot'' commercial partnership (Feb 2026, Jon Slade announcement; Press Gazette Aug 3 2026 reports single-figure millions GBP/yr for the FT and Guardian 2-year deals; in-profile, competitor_relationships.google coverage_prediction ''softer'', verified 2026-09-01). Google: PAYER. Meta: $0 tie (competitor_relationships.meta financial_tie none, restored by Type D 459). Coverage prediction: softer Google vs harder-or-equal Meta.'
+      deal_url: 'https://talkingbiznews.com/media-news/ft-signs-ai-deal-with-google/'
+      source_urls:
+      - https://headlinesbriefing.com/market/ft-companies/google-defends-12bn-uk-lawsuit-over-app-download-charges-b8e2c952
+      - https://wesearch.press/s/analysis-google-apple-and-amazon-each-have-more-meetings-wit-dd263072
+      - https://www.reuters.com/business/retail-consumer/brussels-looks-capture-big-tech-through-tax-large-corporations-ft-reports-2026-10-07/
+      google_arms:
+      - item:
+          title: 'Google Defends 1.2bn UK Lawsuit Over App Download Charges'
+          date: '2026-10-04'
+          date_detail: 'Oct 4 2026 (FT Companies desk; HeadlinesBriefing summary of the paywalled FT original; trial opened Oct 6 at the Competition Appeal Tribunal)'
+          publication: 'Financial Times (original; mirror-attested)'
+          author_byline: 'FT Companies desk (byline not visible in excerpt)'
+          entity: google
+          evidence_tier: 'mirror-attested'
+          url_source: 'Verbatim ft.com canonical URL did not arrive in any search Full-URL listing this run (NOT used per the no-construction rule); the piece is attested by the HeadlinesBriefing summary page (https://headlinesbriefing.com/market/ft-companies/google-defends-12bn-uk-lawsuit-over-app-download-charges-b8e2c952) carrying the FT Companies-desk framing, corroborated this run by webpronews (''Google''s 30% Play Store Tax Faces 1.2 Billion Reckoning in UK Court'', Oct-6 trial opening), insurancejournal and claimsjournal (Oct-6/7 CAT trial reports: 20M consumers, Liz Coll class representative, ''abused its dominant position''). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'accountability_litigation_register'
+          manual_illustrative_tone: -0.40
+          tone_note: 'Litigation-accountability register on the deal partner: the headline verb is ''defends''; the frame is a 1.2bn-pound consumer class action over ''excessive'' Play Store charges (30 percent commission, 20M UK consumers). Adversarial substance is the lawsuit''s own, but the Companies desk chooses the accountability headline and the ''defends'' verb for the payer.'
+          key_quotes:
+          - '"Google Defends 1.2bn UK Lawsuit Over App Download Charges" (FT headline, verbatim via HeadlinesBriefing)'
+          - '"abused its dominant position in Android app distribution" (claim framing, verbatim via insurancejournal relay of the Oct-6 filing)'
+          deal_disclosed: false
+          status: 'NEW this run (headline zero-hit repo-wide via git grep -F pre-commit; URL zero-hit pre-commit)'
+      - item:
+          title: 'Google, Apple and Amazon each hold more meetings with EU officials than any individual European company'
+          date: '2026-10-01'
+          date_detail: 'Oct 1 2026 (FT analysis via WeSearch/Techmeme)'
+          publication: 'Financial Times (original; aggregator-attested)'
+          author_byline: 'FT analysis desk (attribution via WeSearch)'
+          entity: google
+          evidence_tier: 'aggregator-attested'
+          url_source: 'Attested by the WeSearch/Techmeme-indexed FT analysis item (https://wesearch.press/s/analysis-google-apple-and-amazon-each-have-more-meetings-wit-dd263072); excerpt-bounded per #503; 0 browser.open.'
+          framing: 'adversarial_data_framing_lobbying_footprint'
+          manual_illustrative_tone: -0.30
+          tone_note: 'Data-framing of the partner''s lobbying footprint: the analysis turns Google''s EU access into the story (more meetings than any European company), an accountability frame on influence rather than a neutral access log.'
+          key_quotes:
+          - '"Google, Apple, and Amazon each hold more meetings with EU parliament/commission officials than any individual European company" (FT analysis, verbatim via WeSearch)'
+          deal_disclosed: false
+          status: 'NEW this run (URL zero-hit repo-wide via git grep -F pre-commit)'
+      - item:
+          title: 'Brussels looks to capture Big Tech through tax on large corporations, FT reports'
+          date: '2026-10-07'
+          date_detail: 'Oct 7 2026 (FT scoop, relayed same-day by Reuters; six officials cited)'
+          publication: 'Financial Times (original; relay-attested via Reuters)'
+          author_byline: 'FT Brussels bureau (via Reuters relay)'
+          entity: google
+          evidence_tier: 'relay-attested'
+          url_source: 'Reuters Oct-7 relay (https://www.reuters.com/business/retail-consumer/brussels-looks-capture-big-tech-through-tax-large-corporations-ft-reports-2026-10-07/; verbatim URL from this run''s Full-URL listing) plus five same-day corroborating relays (wixx, yall1067, lapost, europesays, q106fm) all carrying ''the Financial Times reported on Wednesday'' attribution and the six-officials sourcing. Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'accountability_regulatory_targeting_register'
+          manual_illustrative_tone: -0.35
+          tone_note: 'The FT names its licensing partner an explicit target of Brussels'' redesigned big-tech tax: the Commission is ''working on new ways to capture more income from tech groups such as Apple, Meta and Google'' (CORE levy redesign, EUR100M revenue threshold). The scoop frame is capture-and-tax on the payer; Trump''s 100 percent tariff threat is carried as context.'
+          key_quotes:
+          - '"Brussels is considering taxing big US tech companies through a broad levy on large corporations" (verbatim via Reuters relay)'
+          - '"The European Commission was working on new ways to capture more income from tech groups such as Apple, Meta and Google" (verbatim via Reuters relay)'
+          deal_disclosed: false
+          status: 'NEW this run (headline and URL zero-hit repo-wide via git grep -F pre-commit)'
+      meta_arms:
+        carried_from: 'm441 (Type A #1047, NEW) - FT x Meta carried arms; carried un-rescored per #807'
+        arms:
+        - title: 'Meta equity-raise desperation framing'
+          date: '2026-06-05'
+          publication: 'Financial Times'
+          framing: 'capital_stress_desperation'
+          manual_illustrative_tone: -0.55
+        - title: 'Meta glasses surveillance framing'
+          date: '2026-07-08'
+          publication: 'Financial Times'
+          framing: 'surveillance_accountability'
+          manual_illustrative_tone: -0.62
+        - title: 'Meta smartglasses flooding framing'
+          date: '2026-08-26'
+          publication: 'Financial Times'
+          framing: 'market_saturation_critical'
+          manual_illustrative_tone: -0.58
+        meta_mean: -0.5833333333333333
+      illustrative_scoring:
+        google_arms: [-0.40, -0.30, -0.35]
+        google_mean: -0.35
+        meta_mean_carried: -0.5833
+        illustrative_delta_google_minus_meta: 0.23
+        delta_note: 'The payer draws a slightly less-negative register than the $0-tie comparator, but the thesis test is the uniform payer-softening prediction, not the delta: the Feb-2026 deal predicts a muted/constructive register on Google; the FT instead runs three adversarial regulatory-accountability pegs on the payer in 72 hours, eight months post-deal.'
+      falsification_family_member: true
+      falsification_family: 'FIFTY-EIGHTH falsification-family member (ledger 57->58): this run tests the uniform payer-softening prediction at the publication level (financial-times.yaml competitor_relationships.google coverage_prediction ''softer'', from the Feb-2026 FT x Google News AI pilot commercial partnership, single-figure millions GBP/yr, Press Gazette Aug 3 2026) on the Oct-1/Oct-4/Oct-7 regulatory pegs, and the prediction FAILS at the regulatory register: the FT runs a litigation-accountability headline (''Google Defends 1.2bn UK Lawsuit''), adversarial lobbying-footprint data-framing, and a Brussels-tax scoop naming Google an explicit target - all on the licensing partner, all within 72 hours, eight months after the deal. The deal bought no visible softening for the payer. FOURTH FT publication-level member (after the THIRTY-FIFTH #1047 disclosure-register, the FORTY-SECOND #1142 regulatory-enforcement-register, and the FORTY-EIGHTH #1202 suppression-claim member); FIRST falsification pin on the FT x GOOGLE pair (the #1143 temporal-replication precedent does not block: m497 was a tone test, not a counted adversarial-on-partner observation). Domain-bounded to FT''s regulatory register on Google in the Oct-1/Oct-7 window; the carried FT x Meta arms stand as the adversarial comparator pole. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_ledger: '58'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at the FT on the Oct-1/Oct-4/Oct-7 regulatory pegs. The Feb-2026 FT x Google News AI pilot deal (in-profile, single-figure millions GBP/yr, coverage_prediction ''softer'') predicts a muted register on Google; the FT instead runs the litigation-accountability register (-0.40), the lobbying-footprint data frame (-0.30), and the Brussels-tax scoop (-0.35, Google an explicit target) on the payer within 72 hours, eight months post-deal (arm mean -0.35 vs carried FT x Meta mean -0.5833; illustrative delta +0.23). FIFTY-EIGHTH falsification-family member (ledger 57->58). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      ledger: '58'
+      connects_to: [952, 497, 441, 437]
+      novelty: 'FIRST dedicated corpus mechanism on the FT x Google regulatory-accountability pegs (zero test_type_a_1292 files on disk pre-commit; no Type A #1292 in git log pre-commit (--grep); max numeric mechanism_id 1005 in profiles/ pre-commit; zero numeric/underscore/dash one-zero-zero-six mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1292 in key, no 1006 substring, per the #723/#738/#739 convention); all 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F); all 3 novel headlines zero-hit repo-wide pre-commit (git grep -F); Meta arms carried from m441 (not novel, disclosed); no #1292 row in README/ARCHITECTURE test tables pre-commit; README stats 72182/1616 pre-commit; fortieth direction absent in profiles/ pre-commit; forty-eighth through fifty-seventh members intact pre-commit; no fifty-eighth member repo-wide pre-commit; ledger 57 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Delegated scout (saturation sweep across 10 publication profiles + ~10 candidate pairs; SELECTED FT x Google as the only FRESH pair with a documented deal leg, verbatim relay URLs, and a clean adversarial-on-payer design; REJECTED The Verge x Anthropic (no verbatim theverge.com URL), The Verge x Google (relays only), MIT TR x Google (zero in-window hits), Atlantic x Anthropic (zero Atlantic-original hits), NYT x Google (Sep-24 Suncatcher, outside window), Guardian x Anthropic (saturated: m985), Atlantic x Google (no hits), News Corp x Google (Sep-21, outside window), FT x Anthropic (Aug/Sep relays; m676 covered Sep 13)) + 2 main-run browser.search verification sets ((1) Oct-7 Brussels-tax FT scoop - reuters.com verbatim (index 3) with ''the Financial Times reported on Wednesday'' attribution + six officials, 5 corroborating relays; (2) Oct-4 FT Play Store 1.2bn piece - webpronews/insurancejournal/claimsjournal verbatim with Oct-6 CAT trial corroboration, Liz Coll, 20M consumers). 0 browser.open per #503. All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      rotation_transparency: 'Iteration #1292 Type A is the THIRD leg of the 1290-1294 window (D #1290 -> E #1291 -> A #1292 -> B #1293 -> C #1294 per #565 anchor + rotation guard; #1290 Type D main 0545f246/anchor 7d6623c4/doc-sync c9feb331/log-hash 91137e06, #1291 Type E main 4f33ce6a/anchor 17773f8a/doc-sync 041cda51/log-hash 939e19d6, each verified in git log pre-commit; the 1285-1289 window is VERIFIED CLOSED). This run lands mechanism 1006 as the FIFTY-EIGHTH falsification-family member (ledger 57->58). Next window leg #1293 Type B; the #1295 Type D run owns the next background-suite verdict per #795.'
+      concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run''s index/diff (targeted staging by explicit path). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray''s revert/leave/rebuild decision pending.'
+      background_suite_status: 'Per #795: the #1290-launched full suite (goal hidden_files type_d_1290_full_suite.log) OBSERVED this run (2117 bytes, [2%] progress, last write Oct 7 2026 04:17 PM PDT, live pytest processes at this run''s check - genuine full-suite process, zero F marks in the stream) - observation only, NOT a verdict; this run neither re-launches, kills, nor writes to it. Its verdict belongs to #1295.'
+      browser_opens: 0
+      tone_scored: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+      engine_run: false
+      is_significant: false
+      artifact_grade: false
+      yaml_parse_clean: true
+      ascii_only: true
   anthropic:
     financial_tie: none_direct_indirect_via_google
     estimated_value: $0 direct FT to Anthropic, indirect via FT Google commercial partnership single figure millions GBP/yr plus Google up to $40B investment in Anthropic and Amazon up to $25B
