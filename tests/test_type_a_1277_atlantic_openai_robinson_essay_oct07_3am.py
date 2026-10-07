@@ -150,7 +150,7 @@ PRED_MAIN_1277 = "eee6dfc46080a0abc0c3bd21d5126c0ec08b1643"  # patched in the lo
 
 # #1278's main commit (full sha), for the ancestor-form no-Type-B-#1278
 # pin. Patched in #1278's terminal log-hash followup per #721.
-PRED_MAIN_1278 = "0" * 40  # patched in #1278's log-hash followup per #721 (main commit sha)
+PRED_MAIN_1278 = "41843930d9bd270d4c24182dd0dce4dec67531e3"  # patched in #1278's log-hash followup per #721 (main commit sha)
 
 # The #1276 Type E file, for the staleness pin on its guard-lifecycle
 # class (the no-fifty-fifth-member pin flips at this run's main commit
