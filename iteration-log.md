@@ -47931,14 +47931,14 @@ README stats table 71117/1603 -> 71208/1604 (+91/+1); README test-table row; doc
 ### Push status
 Push status (this run): DONE - four commits pushed and ls-remote-verified at the end of this run (102fbeba main + b2b4cee9 anchor + 1b62c10e doc-sync + 1fafda66 log-hash; remote main tip 1fafda66156cb6d9295e6a486476c34712d0e22f matches local HEAD; explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846.
 
-## #1280 Type D: m997/m998/m999 qualitative-discipline corpus-integrity verification + #1275 background-suite verdict (DEAD at [ 2%]; SIXTH consecutive death of the new streak; tombstone lineage ONE-HUNDRED-THIRTEENTH -> ONE-HUNDRED-FOURTEENTH) + recurring-failure triage (ZERO F marks in the dead stream - nothing to triage, DETERMINATE-vacuous) + broader regression sweep (139 passed, 0 defects) + full suite re-launched - Type D FIRST and OPENING leg of the 1280-1284 window (Oct 7 2026, 06:00 AM PDT; main commit b8695266 / anchor a9cade12 / doc-sync FILL_ME_DOCSYNC; log-hash followup registers all hashes here per #721 (this commit); doc-sync 71208/1604 -> 71287/1605 (+79/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1280 Type D: m997/m998/m999 qualitative-discipline corpus-integrity verification + #1275 background-suite verdict (DEAD at [ 2%]; SIXTH consecutive death of the new streak; tombstone lineage ONE-HUNDRED-THIRTEENTH -> ONE-HUNDRED-FOURTEENTH) + recurring-failure triage (ZERO F marks in the dead stream - nothing to triage, DETERMINATE-vacuous) + broader regression sweep (139 passed, 0 defects) + full suite re-launched - Type D FIRST and OPENING leg of the 1280-1284 window (Oct 7 2026, 06:00 AM PDT; main commit b8695266 / anchor a9cade12 / doc-sync cc4c74bbeeef6a11a17bcfe71471b942dba51d68; log-hash followup registers all hashes here per #721 (this commit); doc-sync 71208/1604 -> 71287/1605 (+79/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main b8695266 / anchor a9cade12 / doc-sync FILL_ME_DOCSYNC / log-hash (this commit)
+- Hash chain: main b8695266 / anchor a9cade12 / doc-sync cc4c74bbeeef6a11a17bcfe71471b942dba51d68 / log-hash (this commit)
 
 ### Commit hashes
 - Main commit `b8695266` (b8695266909c9b2a1b4a18019d27725aa3d31cb2) - verified via git rev-parse
 - Anchor followup `a9cade12` (a9cade128c72d247e60af37677a68343e5b8c30c; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync FILL_ME_DOCSYNC (README 71208/1604 -> 71287/1605; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
+- Doc-sync cc4c74bbeeef6a11a17bcfe71471b942dba51d68 (README 71208/1604 -> 71287/1605; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1280 re-pinned in the #1279 test file per #721 (the no-Type-D-#1280-in-git-log ancestor pin flips green post-repin; TestGuardLifecycle1279 settles at 18 passed / 0 failed)
 
 ### Rotation transparency
