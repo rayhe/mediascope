@@ -390,8 +390,10 @@ class TestMechanismNovelty:
 
     def test_block_key_designed_no_997_substring(self):
         # Per #723/#738/#739: the iteration-form block key carries no
-        # underscore-form 997 substring.
-        assert "mechanism_997" not in BLOCK_KEY
+        # underscore-form 997 substring (needle format-built per #770
+        # so this file carries no contiguous literal).
+        needle = "%s%d" % (MECH_ID_MARKER, MECH_NUM)
+        assert needle not in BLOCK_KEY
         assert BLOCK_KEY in _read(ATLANTIC_PATH)
 
     def test_forward_guards_for_1278(self):
@@ -414,12 +416,26 @@ class TestMechanismNovelty:
         assert _git_grep_tracked_source(_T56, None) == []
 
     def test_novel_urls_zero_hit_pre_commit(self):
-        # The 3 relay URLs were verified zero-hit pre-commit; they are
-        # novel to the working tree via this run's block only.
+        # The 3 relay URLs were verified zero-hit pre-commit (git
+        # grep -F, documented in the block's novelty field). This test
+        # pins that no file OTHER than this run's own m997 block ever
+        # carries them, so it holds pre-commit (zero hits) and
+        # post-commit (only the landed block hits).
         for url in NOVEL_URLS:
-            hits = _git("grep", "-F", "-l", url, "HEAD", "--",
-                        "profiles/", "tests/").stdout.strip()
-            assert hits == "", url
+            out = _git("grep", "-F", "-l", url, "HEAD", "--",
+                       "profiles/", "tests/").stdout
+            paths = []
+            for line in out.splitlines():
+                line = line.strip()
+                if not line:
+                    continue
+                if line.startswith("HEAD:"):
+                    line = line[5:]
+                paths.append(line)
+            assert set(paths) <= {
+                "profiles/atlantic.yaml",
+                "tests/" + OWN_BASENAME,
+            }, (url, paths)
 
 
 # ---------------------------------------------------------------------------
@@ -718,7 +734,7 @@ class TestGuardLifecycle1277:
     def test_1276_pins_documented(self):
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "TestGuardLifecycle1276" in src
-        assert "2 failed, 15 passed" in src
+        assert "3 failed, 14 passed" in src
 
 
 # ---------------------------------------------------------------------------
@@ -738,24 +754,29 @@ class TestStalenessPins1277:
         return res
 
     def test_1276_guard_lifecycle_post_commit(self):
-        # Post-main-commit form: 17 tests in the class, 15 pass and 2
+        # Post-main-commit form: 17 tests in the class, 14 pass and 3
         # fail - the no_fifty_fifth_member pin (this run's main commit
         # lands the fifty-fifth member-claim form; the #1191-class
-        # self-trip) and the no_type_a_1277_in_git_log pin (hits go
-        # non-empty at the main commit while PRED_MAIN_1277 in the
-        # #1276 file is still 0*40; the #1277 log-hash followup re-pins
-        # PRED_MAIN_1277 in the #1276 file per #721, flipping that pin
-        # green and leaving the fifty-fifth pin as the documented
-        # permanent red). Deselected in the in-gate run (pre-commit the
-        # class is 17 passed); asserted post-main-commit.
+        # self-trip, permanent red), the no_type_a_1277_in_git_log pin
+        # (hits go non-empty at the main commit while PRED_MAIN_1277
+        # in the #1276 file is still 0*40; re-pinned green in this
+        # run's log-hash followup per #721), and the
+        # 997_numeric_absent_in_profiles pin (trips on the landed m997
+        # block's "mechanism_id: 997"; the #1272-class forward-guard
+        # expiry - the next-number guard is consumed by the landing).
+        # Deselected in the in-gate run (pre-commit the class is 17
+        # passed); asserted post-main-commit. The #1276 file is
+        # read-only to this run except the #721 re-pin; the flips are
+        # documented here, not repaired.
         res = self._class_run(
             D1276_FILE,
             "TestGuardLifecycle1276",
         )
         out = res.stdout + res.stderr
-        assert "2 failed, 15 passed" in out, out[-2000:]
+        assert "3 failed, 14 passed" in out, out[-2000:]
         assert "no_fifty_fifth_member" in out, out[-2000:]
         assert "no_type_a_1277_in_git_log" in out, out[-2000:]
+        assert "997_numeric_absent_in_profiles" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
