@@ -227,7 +227,7 @@ TEST_BASENAME = OWN_BASENAME
 
 # Anchor placeholder per #565: patched to the main commit's 40-char SHA in the
 # anchor followup. The shape test is placeholder-or-main tolerant pre-commit.
-ANCHORED_SHA = "0" * 40  # patched in the anchor followup per #565
+ANCHORED_SHA = "5485dd23d80d6dd944e1cb289c5a892d8f364e41"  # patched in the anchor followup per #565
 
 MECH_NUM = 996
 NEXT_NUM = 997
