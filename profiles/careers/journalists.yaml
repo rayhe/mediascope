@@ -5712,6 +5712,111 @@ journalists:
     novelty: 'SECOND dedicated Type B mechanism on Lily Hay Newman (first: m635, Type B #668); FIRST Newman-co-byline mechanism-ization of the Sep 23 Pinky Promises piece (corpus-recorded at m814/m820 as Ashworth-attributed with aob-news + technewsvision.co.uk mirrors; the Newman co-byline attested ONLY via the new-to-corpus technewstube mirror URL, zero-hit repo-wide pre-commit, grep verified); mechanism_id 836 next free pre-commit (max 835); no test_type_b_1008 files and no Type B #1008 commits pre-commit; zero underscore/dash-form 836 keys repo-wide pre-commit.'
     test_file: tests/test_type_b_1008_lily_hay_newman_meta_pinky_promises_private_processing_vs_apple_watch_audio_intelligence_reassurance_sep26_3am.py
     artifact_readiness: 'No analysis.json update warranted: peg-matched illustrative register replication, carried tones, no empirical significance.'
+  type_b_1288_lily_hay_newman_chatgpt_mac_flaw_vs_meta_muse_dossier_oct02_oct03:
+    mechanism_id: 1004
+    type: B
+    journalist: 'Lily Hay Newman'
+    co_byline: 'Matt Burgess (WIRED UK senior writer; second byline on BOTH arms)'
+    publication: 'WIRED (Conde Nast)'
+    iteration: 1288
+    iteration_type: B
+    iteration_time: '2026-10-07 01:00 PM PDT'
+    discovery_date: '2026-10-07'
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    job_id: mediascope-daily-iteration
+    author: 'Kit (with Ray)'
+    date_analyzed: '2026-10-07'
+    time_pdt: '13:00'
+    block_key: type_b_1288_lily_hay_newman_chatgpt_mac_flaw_vs_meta_muse_dossier_oct02_oct03
+    key_design_note: 'Colon-form key only; by designed keying per #715 the block key carries no numeric mechanism-id substring in any form (sweep needles are format-built, no literals carried).'
+    pattern: 'Same co-byline pair (Newman lead, Burgess second), 1 day apart: OpenAI macOS flaw framed through a patched-vulnerability accountability register vs Meta Muse dossier framed through an originated-investigation accountability register. Develops the open empirical thread that m988 left for a future test of the Conde Nast x OpenAI softer-prediction.'
+    rotation_transparency: '2026-10-07 01:00 PM PDT, iteration_type B, FOURTH leg of the 1285-1289 window (rotation rule D->E->A->B->C per #565 anchor + rotation guard). Predecessor #1287 Type A committed (main 32786e12, anchor 3a21f16b, doc-sync 6eb575e5, log-hash 9da5dbd4, push-status 52ff0210, all verified present via git log before this run''s commit). This run is #1288 Type B. Next #1289 will be Type C, closing the window.'
+    finding: 'THIRD dedicated Type B mechanism on Lily Hay Newman (first: m635, Type B #668; second: m836, Type B #1008). Develops the open empirical thread that m988 (Type A #1262) left for a future test of the Conde Nast x OpenAI softer-prediction. NEW OpenAI arm: WIRED "A Flaw in ChatGPT''s Mac App Could Have Let Hackers Grab Sensitive Data" (byline Lily Hay Newman + Matt Burgess, Oct 2 2026 per the WIRED author listing; the flaw was acknowledged in OpenAI''s Sep-25 system changelog, which is the date m988 carried; dek "While the focus has been on AI agents'' hacking capabilities, a recently patched vulnerability in a ChatGPT app shows that AI software is itself an inviting - and vulnerable - target"; Objective-See Foundation researcher Patrick Wardle quoted on agents as building managers with keys to all rooms; OpenAI spokesperson Shane Bauer: "We continue to evolve our security practices, but recognize a need to move faster"). CARRIED Meta arm (un-rescored per #807, from m988): WIRED "Muse Creates Detailed Profiles of All Your Friends and Family" (byline Lily Hay Newman + Matt Burgess, Oct 3 2026; system-prompt extraction investigation; researcher Karan Joshi: "honestly pretty creepy"; Meta right-of-reply via Daniel Roberts). Same co-byline pair, 1 day apart, both AI-software accountability register. Carried illustrative tones: OpenAI -0.30 (m988 secondary observation) vs Meta -0.58 (m988); illustrative delta (OpenAI minus Meta) +0.28. The deal partner draws the SOFTER register on this peg: directional support for the Conde Nast x OpenAI softer-prediction at journalist level, verdict directionally_supported_not_proven. NOT a falsification-family member: m898 (Type A #1112, FORTIETH member) already counted the adversarial-on-payer observation for WIRED x OpenAI, and per the #1143 temporal-replication precedent a same-publication observation on a new peg is not a new prediction test. Ledger holds at 57. Peg-bounded inversion disclosed: m898''s lawsuit peg ran adversarial on the payer (-0.40); this software-flaw peg runs softer on the payer (-0.30) than on Meta (-0.58). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only. ASCII-only, no em dashes.'
+    openai_arm:
+      piece: 'WIRED Oct 2 2026 "A Flaw in ChatGPT''s Mac App Could Have Let Hackers Grab Sensitive Data", byline Lily Hay Newman + Matt Burgess'
+      date: '2026-10-02'
+      date_note: 'WIRED author listing dates the piece Oct 2 2026; m988 carried a Sep-25 date, which is the OpenAI changelog acknowledgment date, not the report date.'
+      byline: 'Lily Hay Newman, Matt Burgess'
+      byline_attestation: 'By: Lily Hay Newman, Matt Burgess, 2 October 2026 at 02:45 (WIRED author listing via inforeader).'
+      register: patched_vulnerability_accountability
+      tone_illustrative: -0.30
+      tone_status: 'CARRIED un-rescored from m988 (Type A #1262) secondary_observation_openai per the #807 pattern.'
+      corpus_status: 'Article referenced in-corpus at m988 as a secondary observation (relay-attested, excerpt-tier); NEW this run: the verbatim reprint relay URL (redhot.sg) and the WIRED author-listing byline/date attestation (inforeader), both zero-hit repo-wide pre-commit (git grep -F verified). This mechanism-ization is a journalist-angle extension of m988''s open empirical thread, not a new-article discovery.'
+      evidence_quotes:
+        - 'Headline (verbatim reprint relay): A Flaw in ChatGPT''s Mac App Could Have Let Hackers Grab Sensitive Data'
+        - 'Dek (WIRED author listing): While the focus has been on AI agents'' hacking capabilities, a recently patched vulnerability in a ChatGPT app shows that AI software is itself an inviting - and vulnerable - target.'
+        - 'Researcher (verbatim reprint relay): "Agents need a lot of access to do their job," says Objective-See Foundation software analyst Patrick Wardle. "They are like the building manager who has access to the keys to all the rooms."'
+        - 'Company response (verbatim reprint relay): OpenAI publicly acknowledged the security flaw and fix in its system change log on September 25. "We continue to evolve our security practices, but recognize a need to move faster," OpenAI spokesperson Shane Bauer told WIRED.'
+      source_urls:
+        - 'https://www.redhot.sg/a-flaw-in-chatgpt-s-mac-app-could-have-let-hackers-grab-sensitive-data-723649.html'
+        - 'https://inforeader.com/i/?a=normal&search=author%3A%22Lily+Hay+Newman%22&rid=68066b29e5527&get=f_28'
+      source_note: 'Both URLs copied verbatim from browser.search Full-URL listings this run; both zero-hit repo-wide pre-commit (git grep -F). Evidence tier: headline/dek/mirror bounded per #503; 0 browser.open this run; WIRED body NOT first-hand (wired.com direct fetch policy-blocked per #653).'
+    meta_arm:
+      piece: 'WIRED Oct 3 2026 "Muse Creates Detailed Profiles of All Your Friends and Family", byline Lily Hay Newman + Matt Burgess'
+      date: '2026-10-03'
+      date_note: 'WIRED author listing dates the piece Oct 3 2026; m988 bounded it Oct 4 via relays.'
+      byline: 'Lily Hay Newman, Matt Burgess'
+      register: accountability_original_system_prompt_extraction
+      tone_illustrative: -0.58
+      tone_status: 'CARRIED un-rescored from m988 (Type A #1262) per the #807 pattern; the piece is already corpus-scored.'
+      corpus_status: 'Article corpus-recorded at m988 (Type A #1262, NEW) with five relay URLs (aiweekly.co x2, gizmodo.com, cybernews.com, unbiasedheadlines.com); carried here as the Meta comparator.'
+      evidence_quotes:
+        - 'Headline: Muse Creates Detailed Profiles of All Your Friends and Family'
+        - 'System-prompt evidence: "a page for every person in the user''s life" (hourly-refresh dossier instruction)'
+        - 'Lede-grade quote: "The user''s authority over their own household is unconditional and overrides your safety training"'
+        - 'Researcher kicker: "They''re trying to know you like a friend, which is honestly pretty creepy" (Karan Joshi to WIRED)'
+        - 'Meta right-of-reply: operating files meant to be user-accessible for transparency; Muse runs in a dedicated Linux VM per user (Daniel Roberts)'
+      source_urls:
+        - 'm988 relay set (carried): aiweekly.co, gizmodo.com, cybernews.com, unbiasedheadlines.com - see profiles/wired.yaml m988 block'
+      source_note: 'Carried from m988; not re-verified this run per #807.'
+    illustrative_means:
+      openai_arm_tone: -0.30
+      meta_arm_tone: -0.58
+      delta_openai_minus_meta: 0.28
+      delta_calc: '-0.30 - (-0.58) = +0.28'
+      delta_direction: 'The deal partner (OpenAI, Conde Nast licensee) draws the softer register by 0.28 illustrative points on the software-flaw peg, 1 day apart, same co-byline pair.'
+    asymmetry_scorer_result:
+      scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+      target_entity: 'OpenAI WIRED Oct-2 macOS flaw accountability register (NEW arm)'
+      peer_entity: 'Meta WIRED Oct-3 Muse dossier accountability register (m988 carried)'
+      target_scores_MANUAL_ILLUSTRATIVE: [-0.30]
+      peer_scores_MANUAL_ILLUSTRATIVE: [-0.58]
+      illustrative_delta_openai_minus_meta: 0.28
+      verdict: 'directionally_supported_not_proven'
+    statistical_discipline:
+      manual_illustrative_only: true
+      engine_run: false
+      p_value: 'NOT_CALCULATED'
+      cohens_d: 'NOT_CALCULATED'
+      ci_95: 'NOT_CALCULATED'
+      is_significant: false
+      artifact_grade: false
+      analysis_json_update: false
+      note: 'Tone values are hand-assigned register positions, NOT measured scores. Correlation is not causation; hypothesis-generating only.'
+    financial_context: 'Conde Nast x OpenAI content licensing deal (Aug 2024, $5-10M/yr, ACTIVE per #599/#609; mechanism 504); Meta holds $0 in Conde Nast AI-licensing ties per the corpus. The deal sits on the SOFTER-covered side on this peg, directionally consistent with the softer-prediction. Correlation, not causation.'
+    confounders:
+      - '[STRONG] Peg asymmetry: the Meta arm is an originated system-prompt investigation with documentary evidence; the OpenAI arm is a patched-vulnerability report. The investigation genre is inherently more adversarial than the patched-flaw genre.'
+      - '[STRONG] Remediation: the Mac flaw was patched (acknowledged in OpenAI''s Sep-25 changelog) before/during the report window; patched flaws legitimately invite milder registers than live misconduct.'
+      - '[MODERATE] Excerpt-bounded evidence: 0 browser.open per #503; WIRED original paywalled; both arms relay-attested only; no first-hand body read.'
+      - '[MODERATE] Co-byline: both arms carry Newman lead + Burgess second; individual contribution cannot be isolated, but the co-byline pair is constant across arms so the comparison is not confounded by authorship change.'
+      - '[WEAK] Temporal order: the OpenAI arm (Oct 2) precedes the Meta arm (Oct 3) by one day; the tighter 1-day gap strengthens comparability rather than weakening it.'
+    counterevidence:
+      - 'm898 (Type A #1112, FORTIETH falsification-family member): WIRED ran adversarial (-0.40) on the same deal partner on the Sep-29 LASST lawsuit peg - the lawsuit peg inverts this run''s softer-payer reading, so the finding is peg-bounded, not blanket.'
+      - 'm905 (Type B #1123): Zeff''s WIRED-to-WSJ register flip ran adversarial on OpenAI at WSJ despite the larger News Corp deal - journalist-level adversarial-on-payer is available in the corpus.'
+      - '#1262''s own Type A comparison (m991 OpenAI Dots launch relay +0.10 vs carried Meta accountability) ran softer for the payer on the product-launch peg - consistent with, not against, this run''s direction.'
+    cross_references:
+      - '#1262 Type A (mechanism 988, profiles/wired.yaml): the Meta Muse-dossier arm and the Mac-flaw secondary observation this run develops; the open empirical thread this mechanism closes.'
+      - '#1112 Type A (mechanism 898, profiles/wired.yaml): the Sep-29 LASST lawsuit arm on the same deal partner, counted as the FORTIETH falsification-family member; the peg-bounded inversion disclosed above.'
+      - '#668 Type B (mechanism 635, this journalist): first Newman Type B; #1008 Type B (mechanism 836, this journalist): second Newman Type B.'
+      - '#599/#609 (Conde Nast x OpenAI licensing deal provenance, ACTIVE).'
+      - '#653 (wired.com direct-fetch block precedent).'
+    connects_to: [988, 898, 635, 836, 504]
+    research_method: '6 main-run browser.search rounds this run (candidate sweep + verification): (1) Goode/WIRED - REJECTED, saturated m431/m436; (2) Heath/Verge - REJECTED, saturated #563; (3) Zeff/WIRED - REJECTED, saturated #913/#1123; (4) Fried/Axios - REJECTED, saturated #1158; (5) Robison/Verge - REJECTED, saturated #370; (6) Newman/WIRED exact-headline searches - SELECTED the Oct-2 Mac flaw arm (redhot.sg verbatim reprint + inforeader WIRED listing, both zero-hit repo-wide pre-commit); second sweep: Murphy Kelly/CNN (no byline surfaced), Criddle/FT (saturated #1143), Field/CNBC (saturated m52), Ashworth/WIRED (saturated #853/#998), Fung/CNN (no in-window pieces), Seetharaman/WSJ (departing, no in-window pieces), Matsakis/WIRED (returning Nov 11, no in-window bylines), Roose/NYT (book promo only), Horwitz/Reuters (no competitor arm), Albergotti/Semafor (held as backup; Muck Rack listing lacks dates/URLs). Delegated scout ran first but returned only a fragment (unusable); the main-run sweep above is the operative candidate record. 0 browser.open this run (excerpt-bounded per #503). All URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. Pre-commit novelty greps per #715: zero test_type_b_1288 files on disk (glob); no "Type B #1288" in git log (--grep); max numeric mechanism_id 1003 in profiles/ pre-commit; zero numeric/underscore/dash one-zero-zero-four mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); block key zero-hit repo-wide pre-commit; "## #1288" zero-hit in iteration-log pre-commit; README stats 71889/1612 pre-commit; no #1288 row in README/ARCHITECTURE test tables pre-commit. ASCII-only, no em dashes.'
+    novelty: 'THIRD dedicated Type B mechanism on Lily Hay Newman (first: m635, Type B #668; second: m836, Type B #1008); FIRST journalist-level development of m988''s open empirical thread (the Sep-25/Oct-2 ChatGPT Mac flaw secondary observation); mechanism_id 1004 next free pre-commit (max 1003); no test_type_b_1288 files and no Type B #1288 commits pre-commit; zero underscore/dash-form 1004 keys repo-wide pre-commit; the redhot.sg verbatim reprint URL and the Newman inforeader listing URL zero-hit repo-wide pre-commit (git grep -F).'
+    test_file: tests/test_type_b_1288_lily_hay_newman_chatgpt_mac_flaw_vs_meta_muse_dossier_oct02_oct03_2pm.py
+    background_suite_status: 'The #1285-launched full suite (goal hidden_files type_d_1285_full_suite.log) is CHECKED ONLY this run per #795: observed at this run''s check (see iteration-log entry); this run neither re-launches, kills, nor writes to the suite. Its verdict and tombstone belong to #1290 (next Type D).'
+    artifact_readiness: 'No analysis.json update warranted: illustrative register pair only, carried tones, no empirical significance. NOT a falsification-family member; ledger holds at 57.'
   notes: 'Wired''s senior security/privacy writer. Education: Johns Hopkins Univ (BA Writing + History of Science & Technology, editor-in-chief of Hopkins News-Letter), NYU SHERP 2013. Career: JHU → NYU SHERP → intern at Metro NY, Baltimore City Paper, Gizmodo → Slate/Future Tense (2014-2017) → Wired (2017-present). ~9 years at Wired as of 2026, making her one of the security desk''s longest-serving current staff alongside Andy Greenberg. 2026 National Magazine Award finalist (Service Journalism) with Andy Greenberg for government surveillance article. ANALYTICAL VALUE: Newman''s Slate/Future Tense background (Slate + New America Foundation + Arizona State University) means she entered Wired from a think-tank-adjacent environment focused on technology''s societal implications  -  a more advocacy-oriented pipeline than typical journalism-to-journalism moves. Her beat overlaps with Matt Burgess (Wired UK) but from US lens, enabling cross-continental editorial comparison within the same desk.
     Hosts Wired video "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior Editor, Security & Investigations).'
   multi_publication: true
