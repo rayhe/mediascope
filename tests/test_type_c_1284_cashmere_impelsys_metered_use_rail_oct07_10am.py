@@ -169,7 +169,7 @@ PRED_MAIN_1284 = "7325305f"  # re-pinned to main sha per #721
 # Forward guard for the next leg: #1285 Type D. Re-pinned by #1285's
 # log-hash followup per #721 (starts as 0*40; the forward pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1285 = "0" * 40
+PRED_MAIN_1285 = "137ca235"  # re-pinned to #1285 main sha per #721
 
 # The #1283 window-continuation file, for the staleness pin on its
 # guard-lifecycle class (max id 1001; zero one-zero-zero-three keys all

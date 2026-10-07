@@ -864,14 +864,20 @@ class TestStalenessPins1285:
     def test_1284_classes_stable_across_main_commit(self):
         # #1284's 25 tests (4 classes, no guard-lifecycle forward
         # pins) are expected to survive this run's main commit with
-        # ZERO by-design flips: Type D lands no mechanisms (the
-        # max-1002 and 1002-form pins stay green) and the file pins
-        # no #1285 git-log forms. The pin runs the file as-is; the
-        # class run below therefore expects the full set green.
-        # Documented here, not repaired.
+        # ZERO by-design flips from this run: Type D lands no
+        # mechanisms (the max-1002 and 1002-form pins stay green) and
+        # the file pins no #1285 git-log forms. The single expected
+        # failure is the #565 anchor-duality pin
+        # (TestAnchor1284::test_anchor_sha_placeholder_pre_commit),
+        # which fails BY DESIGN ever since the #1284 anchor followup
+        # patched ANCHORED_SHA - pre-existing, not a flip from this
+        # run. The pin runs the file as-is; the class run below
+        # therefore expects "1 failed, 24 passed" with the failure
+        # named. Documented here, not repaired.
         res = _class_run(B1284_FILE, "")
         out = res.stdout + res.stderr
-        assert "25 passed" in out, out[-2000:]
+        assert "1 failed, 24 passed" in out, out[-2000:]
+        assert "test_anchor_sha_placeholder_pre_commit" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
