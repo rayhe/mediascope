@@ -134,7 +134,7 @@ ANCHORED_SHA = "982ca183773272571d41195d40b18a487eaeb917"  # patched per #565 in
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1272 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1272 = "0" * 40  # patched in the log-hash followup per #721 (main commit sha)
+PRED_MAIN_1272 = "982ca183773272571d41195d40b18a487eaeb917"  # re-pinned in the #1272 repair log-hash followup per #721 (main commit sha)
 
 # #1273's main commit (full sha), for the ancestor-form no-Type-B-#1273
 # pin. Patched in #1273's terminal log-hash followup per #721.

@@ -47583,3 +47583,50 @@ README stats table 70386/1595 -> 70479/1596 (+93/+1); README test-table row; doc
 
 ### Push status
 Push status (this run, Oct 6 2026 ~5:1x PM PDT): all five commits pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip bcd1206f -> 33006eae, verified match post-push).
+
+## #1272 Type A: m994 Guardian Oct-3-2026 Robinson resignation straight-news register (Dan Milmo: safety leader quits, "culture is broken", -0.30 MANUAL ILLUSTRATIVE) vs carried Guardian x Meta accountability register (m687 police-warnings -0.55 + teen-accounts -0.45, mean -0.50); illustrative delta (OpenAI minus Meta) +0.25 clean / +0.20 pooled, thesis_consistent_observation, temporal replication of m934's +0.167, NOT a falsification-family member (ledger holds at 54); scout #1 Guardian framing SELECTED (FRESH), Verge x Apple LG + MIT TR x Google held as backups; 3 novel relay URLs zero-hit pre-commit - Type A THIRD leg of the 1270-1274 window (Oct 6 2026, 06:00 PM PDT; main commit 982ca183 / anchor cbe557f1 / doc-sync DOCSYNCSHA1272 / log-hash followup registers all hashes here per #721 (this commit); doc-sync 70479/1596 -> 70564/1597 (+85/+1); main run interrupted after the anchor followup - doc-sync + log-hash completed by this repair; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+- Hash chain: main 982ca183 / anchor cbe557f1 / doc-sync DOCSYNCSHA1272 / log-hash this commit
+
+### Commit hashes
+- Main commit `982ca183` (982ca183773272571d41195d40b18a487eaeb917) - verified via git rev-parse
+- Anchor followup `cbe557f1` (cbe557f132784b14f39e979e199f4ebfc08d7103; ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync repair `DOCSYNCSHA1272` (README 70479/1596 -> 70564/1597; test-table row; ARCHITECTURE tree row; iteration-log entry; PRED_MAIN_1272 re-pinned to the main sha per #721)
+- Log-hash repair followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
+
+### Rotation transparency
+- This run is iteration #1272 Type A, the THIRD leg of the 1270-1274 window (D #1270 -> E #1271 -> A #1272 -> B #1273 -> C #1274 per the #565 anchor + rotation guard).
+- Committed predecessors verified pre-commit: #1271 Type E (main 2a299281 / anchor c4669ea2 / doc-sync 5c41406e / log-hash 33006eae); #1270 Type D (main 13ce7c10 / anchor c55355f6 / doc-sync 07c5dbee / log-hash b613ced9). The 1265-1269 window is VERIFIED CLOSED.
+- Rotation guard: this run's main commit is the anchor per #565; ANCHORED_SHA patched post-commit (cbe557f1). Next: #1273 Type B continues the window; the next background-suite verdict belongs to #1275 per #795.
+- Guard lifecycle note: #1271's forward guards held GREEN pre-commit (max-993, zero nine-nine-four keys all forms, no-Type-A-#1272-in-git-log, fortieth absent, forty-eighth-through-fifty-fourth intact, no fifty-fifth member, ledger 54). The no-Type-A-#1272-in-git-log pin flipped BY DESIGN at the main commit (the #1191-class self-trip); the zero-994-numeric pin trips on the landed m994 block; the zero-994-underscore/dash pins stay green per the #715 literal discipline. The #1271 file's own test_no_type_a_1272_in_git_log_pin keeps its failing placeholder form BY DESIGN (the #1271 block is read-only to this run); the #1272 file's test_no_type_a_1272_in_git_log_pin is re-pinned to the ancestor form by this repair's log-hash followup per #721. Documented in TestStalenessPins1272.
+- Repair note: the #1272 main run was interrupted after the anchor followup; this repair completes the deferred doc-sync + log-hash chain with no findings changed. The in-gate verdict (71 passed + 14 deselected, 0 defects) stands as committed.
+
+### Finding summary
+- m994 (profiles/guardian.yaml, competitor_relationships meta; NEW Guardian x OpenAI arm, relay-attested, excerpt-bounded per #503): The Guardian's original "OpenAI safety leader quits, warning AI company's culture is 'broken'" (Dan Milmo, Global technology editor, Oct 3 2026) - adversarial content ("culture is broken" as headline and lede; "not being nearly careful enough") in an even-handed straight-news register with an OpenAI spokesperson rebuttal printed. MANUAL ILLUSTRATIVE -0.30 (inside the carried Guardian x OpenAI enforcement-week band: m934 arms -0.30/-0.40/-0.30).
+- Carried Guardian x Meta comparator arms (un-rescored per #807): m687 - police-warnings documents investigation -0.55, teen-accounts influencer payouts -0.45; Meta pooled mean -0.50.
+- Illustrative delta (OpenAI minus Meta): +0.25 clean (n=1 vs n=1) / +0.20 pooled (n=1 vs n=2). OpenAI draws the softer register at the Guardian, directionally matching the Feb-14-2025 licensing coverage_prediction (softer). TEMPORAL REPLICATION of m934's +0.167 (same publication, same comparator family, same direction).
+- Verdict: thesis_consistent_observation (register documentation + temporal replication). NOT a falsification-family member: the peg/genre confound is STRONG (resignation straight news vs investigation originals), the piece does NOT suppress the adversarial content, and m985 (#1257, FIFTY-FOURTH member) already falsified blanket payer-softening at the Guardian on the own-investigation peg. Ledger holds at 54.
+- LEDGER STATE: fifty-fourth member-claim form present 2x (m985, profiles/guardian.yaml); fifty-third present 2x (m982, profiles/the-verge.yaml); fifty-second present 5x (m974, profiles/careers/journalists.yaml); fifty-first present 3x (m973, profiles/news-corp.yaml); fiftieth present 3x (m959, profiles/careers/journalists.yaml); forty-ninth present (m956, profiles/careers/journalists.yaml); forty-eighth present (m952, profiles/financial-times.yaml); fifty-fifth member-claim form absent repo-wide; fortieth direction absent in profiles/; thirty-fifth through thirty-ninth present. Ledger HOLDS at 54.
+- Statistical discipline: MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update). Correlation is not causation; hypothesis-generating only.
+
+### Method
+- Pre-commit novelty greps per #715 (main run): zero test_type_a_1272 files on disk (glob, own file only); no "Type A #1272" in git log (--grep); max numeric mechanism_id 993 in profiles/ pre-commit; zero numeric/underscore/dash nine-nine-four mechanism key forms repo-wide pre-commit (needles format-built, own file excluded); "## #1272" zero-hit in iteration-log pre-commit; README stats 70479/1596 pre-commit; no #1272 row in README/ARCHITECTURE test tables pre-commit; 3 novel relay URLs zero-hit repo-wide pre-commit (git grep -F).
+- Verification-layer run: 1 delegated scout (20 browser.search query sets; 10 ranked candidate pairs; SELECTED #1 Guardian x OpenAI Robinson resignation - FRESH Guardian framing; scout #2 Verge x Apple LG smart-home held as backup; scout #3 MIT TR x Google Gemini 4 Argon digest held as backup; rejections documented in the test-file docstring) + 1 main-run browser.search verification set (exact-headline Guardian Milmo search: Dan Milmo Global technology editor byline, Oct 3 2026 date, 3 verbatim Full-URL relay listings; 0 browser.open per #503, excerpt-bounded; no canonical URLs constructed).
+- Literal discipline per #715: the forward-guard needles (next-number nine-nine-five forms, the fifty-fifth member-claim form, the fortieth direction-claim form) are all format-built at runtime in the new test file; no contiguous forms anywhere in the new files or this entry's prose (prose uses lowercase forms). The landed ordinals live as short lowercase forms in the test-file prose.
+- ASCII-only, no em dashes. All hashes copied from git rev-parse / git log output.
+- In-gate: 71 passed + 14 deselected by design (TestAnchor1272 5 + TestDocSync 3 + TestIterationLog 3 + TestStalenessPins1272 1 + the two ancestor-form pins per #565/#719/#721); 0 in-gate defects found; test-file constants post-sync-positive per #719 (85 collected, 14 classes).
+- Tests: tests/test_type_a_1272_guardian_openai_robinson_resignation_oct06_6pm.py (85 tests, 14 classes).
+- Forward guards for #1273: max-994; zero nine-nine-five keys all forms (profiles/ + tests/ scope); no-Type-B-#1273-in-git-log; fortieth direction absent; forty-eighth-through-fifty-fourth intact; no fifty-fifth member (repo-wide); ledger 54.
+
+### Doc-sync ratchet
+README stats table 70479/1596 -> 70564/1597 (+85/+1); README test-table row; docs/ARCHITECTURE.md tree row; iteration-log entry carries hashes per #721 (doc-sync + log-hash hashes patched by this repair's followup; terminal here); test-file constants post-sync-positive per #719 (85 collected, 14 classes).
+
+### Background suite (per #795)
+- The #1270-launched full suite is OBSERVED only (verdict belongs to #1275): goal hidden_files type_d_1270_full_suite.log at 26161 bytes / [ 7%] progress, last write Oct 6 2026 18:12 UTC (~2h stale at this run's ~20:20 PDT check), zero live pytest processes - NOT-ALIVE (observation, not a verdict). This run neither re-launches, kills, nor writes to the suite.
+- TestGuardLifecycle1271 staleness verification (this repair, post-doc-sync): 15 passed, 2 failed - the no-Type-A-#1272-in-git-log pin flips BY DESIGN at the main commit (the #1191-class self-trip; the #1271 file's pin keeps the failing placeholder form) and the zero-994-numeric pin trips on the landed m994 block; all other #1271 forward pins stay green. Documented in TestStalenessPins1272.
+
+### Concurrency
+#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
+
+### Push status
+Push status (this run): repair commits pushed together with the #1273 Type B chain at the end of this run (see the #1273 entry); all commits ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
