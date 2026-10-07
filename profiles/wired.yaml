@@ -4099,6 +4099,95 @@ competitor_relationships:
       - "Distinct from all prior WIRED Type A mechanisms (#430, #440 OpenAI; #446 Apple; #451 Anthropic): new competitor-event pair and selection-speed dimension, not tone framing."
       - "Novelty verified per Aug 31 standing rule: grep of iteration-log and profiles shows no prior mechanism on the Aug 31 2026 FTC Amazon advertiser lawsuit."
       rotation_transparency: "Previous entry #465 Type E at 07:00 PDT Sep 2 2026. Per rotation A-B-C-D-E, next after E is A. This is Type A #466 at 08:00 PDT Sep 2 2026."
+    type_a_1282_wired_amazon_oct02_datacenter_nda_accountability_vs_carried_meta_arms:
+      mechanism_id: 1000
+      block_key: type_a_1282_wired_amazon_oct02_datacenter_nda_accountability_vs_carried_meta_arms
+      key_design_note: 'Iteration-form block key carries no underscore-form one-zero-zero-zero mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-one-zero-zero-zero profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: 'WIRED (Conde Nast)'
+      competitor: amazon
+      polarity_note: 'Spec-faithful polarity (publication + competitor = WIRED x Amazon); this run NEW arm lands on the Amazon side (the Oct-2 NDA accountability piece, WIRED-original), against carried Meta-side arms.'
+      event: 'Oct 2 2026 data-center NDA peg: WIRED (Molly Taft) reports Amazon has stopped using secret NDAs with county officials for data-center projects and acknowledged community backlash is driving 100+ proposed data-center moratoriums nationwide; the piece documents shell-company secrecy and officials unable to answer residents, and presses Amazon on unanswered questions (contractor NDAs reportedly not covered; existing agreements not released). Context: Rep. Raskin investigation into data-center secrecy pacts; Amazon pairs the NDA shift with a $1B community-investment pledge. Carried WIRED x Meta Muse-dossier accountability arm (m988, Oct 4-5). Same publication, same week.'
+      financial_relationship: 'Conde Nast x Amazon Rufus AI licensing deal (Jul 2025, multi-year, terms undisclosed; m564; Amazon is the second AI-lab payer of WIRED''s owner after the OpenAI Aug-2024 partnership); Conde Nast x Meta $0 AI licensing (per corpus). Coverage prediction: softer Amazon (wired.yaml competitor_relationships.amazon coverage_prediction).'
+      deal_url: 'https://www.digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/'
+      source_urls:
+      - https://www.webpronews.com/amazons-1-billion-bet-to-quiet-data-center-backlash-and-secure-ai-dominance/
+      - https://novaknown.com/2026/10/03/amazon-drops-ndas-after-keeping-county-talks-secret/
+      - https://bitcoinversus.tech/2026/10/04/data-centers-amazon-drops-ndas-government-agencies/
+      amazon_arms:
+      - item:
+          title: 'Amazon Drops Government NDAs After Keeping County Data-Center Talks Secret'
+          date: '2026-10-02'
+          date_detail: 'Oct 2 2026 (webpronews relay: "wrote Molly Taft on Oct. 2"; novaknown Oct 3 and bitcoinversus Oct 4 relays)'
+          publication: 'WIRED (original; relay-attested)'
+          author_byline: 'Molly Taft'
+          entity: amazon
+          evidence_tier: 'relay-attested'
+          url_source: 'Verbatim wired.com canonical URL did not arrive in any search Full-URL listing this run (NOT used per the no-construction rule); the piece is attested by three independent relays, every one explicitly attributing WIRED: webpronews.com ("The WIRED report captured the timing... wrote Molly Taft on Oct. 2"), novaknown.com ("WIRED reported an NDA signed with a contractor on an Amazon project"), bitcoinversus.tech ("WIRED reports that Amazon''s policy change arrives as community opposition... intensifies"). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'accountability_investigation_corporate_secrecy'
+          manual_illustrative_tone: -0.45
+          tone_note: 'Firm adversarial accountability register on the licensing payer: secret-agreement documentation (shell companies hiding Amazon''s identity; officials unable to answer residents), the "acknowledged that community backlash is leading to data center moratoriums" concession, plus comment-seeking with unanswered questions (contractor NDA coverage; existing agreements). The -0.13 moderation from the carried Meta dossier band reflects the peg (policy-concession accountability, not system-extraction), not softness: the unanswered-questions framing is the accountability signal.'
+          key_quotes:
+          - '"The company announced it has stopped using secret agreements with county officials and acknowledged that community backlash is leading to data center moratoriums across the country," wrote Molly Taft on Oct. 2. (verbatim via webpronews)'
+          - '"WIRED reported an NDA signed with a contractor on an Amazon project and said Amazon did not answer whether contractors negotiating on its behalf are covered. Nor has Amazon said whether existing agency agreements are released." (verbatim via novaknown)'
+          - '"WIRED reports that Amazon''s policy change arrives as community opposition to large data centers intensifies and NDA use becomes a recurring complaint in local permitting battles." (verbatim via bitcoinversus)'
+          deal_disclosed: false
+          status: 'NEW this run (3 source URLs zero-hit repo-wide via git grep -F; the NDA piece zero-hit in profiles/wired.yaml pre-commit; "Molly Taft" carries 2 pre-commit repo hits - career records in profiles/careers/journalists.yaml and editorial_changes.yaml, not coverage; distinct from m466 (bounded absence on the Aug-31 FTC ad-auction lawsuit, not a tone finding) and the surveillance_parity_paradox (Aug-8 Meta-hard/Amazon-silent observation, disclosed as peg-bounded counterevidence))'
+      meta_arms:
+        carried_from: 'm988 (Type A #1262, NEW) - WIRED x Meta Muse-dossier accountability arm; carried un-rescored per #807'
+        arms:
+        - title: 'Muse Creates Detailed Profiles of All Your Friends and Family'
+          date: '2026-10-04'
+          publication: 'WIRED (accountability original)'
+          framing: 'accountability_original_system_prompt_extraction'
+          manual_illustrative_tone: -0.58
+          tone_note: 'Hard adversarial accountability register (m988, NEW at #1262): system-prompt extraction as evidentiary base; "overrides your safety training" lede-grade quote; "honestly pretty creepy" researcher kicker; Meta right-of-reply present.'
+          mechanism_ref: 'm988'
+        meta_band_mean: -0.58
+      asymmetry_scorer_result:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'Amazon WIRED Oct-2 NDA accountability investigation, corporate-secrecy register (m1000 NEW)'
+        peer_entity: 'Meta WIRED carried Muse-dossier accountability register (m988)'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.45]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.58]
+        target_avg: -0.45
+        peer_avg: -0.58
+        illustrative_delta_amazon_minus_meta: 0.13
+        delta_calc: '-0.45 - (-0.58) = +0.13'
+        delta_direction: 'Near-null illustrative delta: WIRED runs an adversarial accountability investigation on its owner''s second AI-lab payer (Amazon; Conde Nast x Amazon Rufus deal, Jul 2025) at nearly the same hardness as its carried Meta dossier (-0.58). The uniform payer-softening prediction FAILS on this peg: the deal bought no suppression and no visible softening at the corporate-secrecy accountability tier.'
+        methodology: 'n=1 vs n=1 (WIRED NDA piece vs m988 Muse dossier); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'falsification_member_confirmed'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'Excerpt-bounded evidence (0 browser.open per #503; WIRED original paywalled/metered and not in search listings; the NDA piece read through three independent relays; no first-hand register read; no wired.com canonical URL in listings).'
+        - 'Peg-bounded inversion: the surveillance_parity_paradox (Aug 8, this same amazon section) documented WIRED running a multi-part investigation on Meta''s dormant NameTag code while silent on Amazon''s Ring Familiar Faces - the opposite pattern on the surveillance peg. The member claim is narrowly on the corporate-secrecy accountability register, not on WIRED being uniformly hard on Amazon.'
+        moderate:
+        - 'News-value confound: the Raskin investigation plus the $1B pledge plus 100+ moratoriums made the NDA shift a major accountability story; spiking it would be a bigger editorial anomaly than running it. The deal predicts marginal-case softening, and this is not a marginal case.'
+        - 'Second-payer attenuation: the Conde Nast x Amazon Rufus terms are undisclosed (m564 estimates $3-10M/yr) vs the OpenAI first-payer deal; a smaller second-payer check may buy less deference. The test is Amazon-specific and does not generalize to the OpenAI leg.'
+        - 'Comparator peg differs (AI-agent trust vs data-center NDAs); both sit in the accountability-investigative register, but the evidentiary bases differ (system-prompt extraction vs secrecy documentation).'
+        weak:
+        - 'Illustrative tones hand-assigned at excerpt level; no empirical distribution exists.'
+      counterevidence:
+      - 'surveillance_parity_paradox (Aug 8 2026, this amazon section): WIRED''s multi-part NameTag investigation on Meta''s dormant code vs editorial silence on Amazon''s Ring Familiar Faces class action the same month - thesis-CONSISTENT for Amazon softness on the surveillance peg. The falsification is peg-bounded; WIRED is not uniformly hard on the payer.'
+      - 'm466 (Sep 2, this amazon section): bounded 44-hour search-index absence of WIRED on the Aug-31 FTC $20B ad-auction lawsuit against Amazon - selection-level softness signal, not a tone finding. Stands as the contrasting pole.'
+      falsification_family_member: true
+      falsification_family: 'FIFTY-SIXTH falsification-family member (ledger 55->56): this run tests the uniform payer-softening prediction at the publication level (wired.yaml competitor_relationships.amazon coverage_prediction "softer", from the Conde Nast x Amazon Rufus AI licensing deal, Jul 2025, multi-year, terms undisclosed; Amazon is the second AI-lab payer of WIRED''s owner after OpenAI Aug 2024) on the Oct-2 data-center NDA accountability peg, and the prediction FAILS at the corporate-secrecy register: WIRED ran an adversarial investigation documenting Amazon''s secret county-official NDAs, shell-company secrecy, and officials unable to answer residents, pressing Amazon on unanswered contractor/existing-agreement questions. Domain-bounded to the corporate-secrecy accountability tier; the surveillance_parity_paradox (Meta-hard/Amazon-silent on the surveillance peg) and m466 (bounded absence on the FTC lawsuit) stand as the contrasting poles. The #1143 temporal-replication precedent does not block: no adversarial-on-partner observation has been counted for the WIRED x Amazon pair (m466 was a bounded-absence selection observation, verdict None; the parity paradox is thesis-consistent). FIRST Amazon-leg member; FIRST non-OpenAI-competitor member. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_ledger: '56'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at WIRED on the Oct-2-2026 NDA peg. The Conde Nast x Amazon Rufus deal (Jul 2025, in-corpus, active) predicts softer adversarial Amazon content; WIRED instead ran an adversarial accountability investigation on the payer''s secret data-center NDAs at near-Meta hardness (illustrative delta +0.13 vs the carried m988 dossier). Domain-bounded to the corporate-secrecy accountability tier per the confounders; the parity-paradox and m466 poles stand. FIFTY-SIXTH falsification-family member (ledger 55->56). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      ledger: '56'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (tone values hand-assigned register positions; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict falsification_member_confirmed on the domain-bounded peg; NOT artifact-grade; no_analysis_json_update true). Correlation does not establish causation; hypothesis-generating only.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      research_method: '1 delegated scout (fresh publication+competitor pair discovery; dispatched this run) + 2 main-run browser.search verification sets (WIRED Amazon investigation October 2026; wired.com Amazon Ring privacy lawsuit October 2026), 0 browser.open per #503. Pre-commit novelty greps: the 3 relay URLs zero-hit repo-wide via git grep -F; "Molly Taft" 2 pre-commit hits are career records (profiles/careers/journalists.yaml, editorial_changes.yaml), not coverage; the NDA piece zero-hit in profiles/wired.yaml pre-commit; max numeric mechanism_id 999 pre-commit; zero numeric/underscore/dash one-zero-zero-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit. The #1143 temporal-replication precedent does not block (no counted adversarial-on-partner observation for WIRED x Amazon). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed (the WIRED original URL is NOT used per the no-construction rule). ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_1282 files on disk pre-commit (glob); no "Type A #1282" in git log pre-commit (--grep); max numeric mechanism_id 999 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-zero-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "## #1282" zero-hit in iteration-log pre-commit; README stats 71384/1606 pre-commit; no #1282 row in README/ARCHITECTURE test tables pre-commit; 3 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); "Molly Taft" 2 pre-commit hits are career records, not coverage; block key zero-hit repo-wide pre-commit; distinct from m466 (bounded absence, not a tone finding) and the surveillance_parity_paradox (thesis-consistent counterevidence, disclosed).'
+      rotation_transparency: 'Iteration #1282 Type A is the THIRD leg of the 1280-1284 window (D #1280 -> E #1281 -> A #1282 -> B #1283 -> C #1284 per #565 anchor + rotation guard; #1281 Type E main 3c53f5f9/anchor 7ef464d2/doc-sync b23ffee6/log-hash 10d64db0, #1280 Type D main b8695266/anchor a9cade12/doc-sync cc4c74bb/log-hash b0cc067f; each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1282 files on disk; no "Type A #1282" in git log; max numeric mechanism_id 999 pre-commit; zero numeric/underscore/dash one-zero-zero-zero mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 3 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); no #1282 row in README/ARCHITECTURE test tables pre-commit; README stats 71384/1606 pre-commit; fortieth direction-claim form absent in profiles/ pre-commit; forty-eighth through fifty-fifth member-claim forms present; fifty-sixth member-claim form absent pre-commit. Guard lifecycle: #1281''s max-999 + zero-one-zero-zero-zero + no-Type-A-#1282-in-git-log + no-fifty-sixth pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1282 test file); #1281''s fortieth-absent and forty-eighth-through-fifty-fifth-intact guards stay green. This run lands mechanism 1000 as the fifty-sixth falsification-family member (ledger 55->56). Next window leg #1283 Type B.'
   apple:
     financial_tie: negotiating
     estimated_value: potential $50M+ multi-year
