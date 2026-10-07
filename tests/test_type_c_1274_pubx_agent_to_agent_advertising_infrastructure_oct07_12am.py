@@ -114,7 +114,7 @@ OWN_BASENAME = (
 TOP_KEY = None  # Type C lands at competitor-entities.yaml top level.
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "856e8b86edd9508d88e956e0552f1c21ed5085ab"  # patched in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -775,7 +775,7 @@ class TestIterationLog1274:
 
 class TestStalenessPins1274:
     def test_1273_guard_lifecycle_post_commit_self_trip(self):
-        # Post-main-commit form: 15 of the 17 pass; the two that fail
+        # Post-main-commit form: 16 of the 18 pass; the two that fail
         # BY DESIGN are test_no_type_c_1274_in_git_log_pin (this run's
         # own main commit carries "Type C #1274") and
         # test_996_numeric_absent_in_profiles (mechanism 996 lands in
@@ -783,7 +783,7 @@ class TestStalenessPins1274:
         # run. Deselected pre-commit (both pins pass pre-commit).
         res = _class_run(B1273_FILE, "TestGuardLifecycle1273")
         assert res.returncode != 0, res.stdout[-2000:]
-        assert "2 failed, 15 passed" in res.stdout, res.stdout[-2000:]
+        assert "2 failed, 16 passed" in res.stdout, res.stdout[-2000:]
         assert (
             "test_no_type_c_1274_in_git_log_pin" in res.stdout
         ), res.stdout[-2000:]
