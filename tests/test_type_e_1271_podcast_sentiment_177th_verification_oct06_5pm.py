@@ -208,7 +208,7 @@ PRED_FINAL_1270 = "b613ced9"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-E-#1271 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1271 = "0" * 40  # patched in the log-hash followup per #721 (main commit sha)
+PRED_MAIN_1271 = "2a299281e1817b7900f8c2816f0f1889386fa929"  # patched in the log-hash followup per #721 (main commit sha)
 
 # #1272's main commit (full sha), for the ancestor-form no-Type-A-#1272
 # pin. Patched in #1272's terminal log-hash followup per #721.
@@ -1112,7 +1112,7 @@ class TestStalenessPins1271:
 
     def test_1270_guard_lifecycle_post_commit(self):
         # Post-main-commit form: 17 tests in the class, 16 pass and
-        # the no_type_d_1270_in_git_log pin flips BY DESIGN when this
+        # the no_type_e_1271_in_git_log pin flips BY DESIGN when this
         # run's main commit lands (its subject carries "Type E
         # #1271") - the #1191-class self-trip. The pin is re-pinned
         # to the post-commit own-set form in the terminal log-hash
@@ -1126,7 +1126,7 @@ class TestStalenessPins1271:
         )
         out = res.stdout + res.stderr
         assert "1 failed, 16 passed" in out, out[-2000:]
-        assert "no_type_d_1270_in_git_log" in out, out[-2000:]
+        assert "no_type_e_1271_in_git_log" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
