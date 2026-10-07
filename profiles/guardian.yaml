@@ -2652,6 +2652,104 @@ competitor_relationships:
       statistical_discipline: "MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true"
       keying_note: "Block key carries no 934 mechanism-number substring, keeping the #1171 zero-934 profile sweeps green by designed keying per #715; mechanism_id advances in colon form only. The #1171 max-933 and zero-934 sweeps fail by designed supersession per the #710/#720 convention (staleness recorded, not repaired)."
       distinct_from_prior: "First dedicated corpus mechanism on the Guardian's Sep-30/Oct-3 enforcement-week OpenAI coverage. Distinct from mechanism 874 (#1072, Sep-28 Astra-cancellation single peg), mechanism 862 (#1052, Sep-26 AP-wire training-halt), mechanism 901 (#1117, FT x OpenAI FTC-probe - different publication), and mechanism 517 (Guardian x Anthropic piracy editorial, different competitor). New arms: A1 Sep-30 FTC probe (Guardian-carried Reuters wire), A2 Oct-1 California AG subpoena (Guardian Tech ORIGINAL, verbatim theguardian.com URL), A3 Oct-3 $500k/day hack-review (Guardian RSS, ~7.5h old at run time - freshest Guardian x OpenAI datum in corpus)."
+    type_a_1272_guardian_openai_robinson_resignation_culture_broken_october:
+      mechanism_id: 994
+      block_key: type_a_1272_guardian_openai_robinson_resignation_culture_broken_october
+      key_design_note: 'Iteration-form block key carries no underscore-form 994 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-994 profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: 'The Guardian'
+      competitor: openai
+      polarity_note: 'Spec-faithful polarity (publication + competitor = Guardian x OpenAI); this run NEW arm lands on the OpenAI side (the Oct-3 Milmo resignation original), against carried Meta-side arms.'
+      event: 'Oct 3 2026 resignation peg: (1) The Guardian publishes Dan Milmo''s original "OpenAI safety leader quits, warning AI company''s culture is ''broken''" (Oct 3 2026, Global technology editor): David Robinson, who led the writing of safety reports accompanying OpenAI product releases, resigns via the Atlantic essay "I quit OpenAI because its culture is broken", warning AI firms are not "being nearly careful enough" and urging nuclear-plant/airport-grade redundancy for frontier labs; (2) carried Guardian x Meta accountability arms (m687: police-warnings documents investigation -0.55, teen-accounts influencer payouts -0.45). Same publication, adjacent news weeks.'
+      financial_relationship: 'Guardian Media Group x OpenAI strategic content-licensing partnership (Feb 14 2025, mechanism_514; in-corpus guardian.yaml; Guardian journalism appears in ChatGPT with attribution; Guardian adopted ChatGPT Enterprise internally); Guardian x Meta $0, no licensing, no financial relationship. Coverage prediction: softer OpenAI, adversarial Meta.'
+      deal_url: 'http://openai.com/index/openai-and-guardian-media-group-launch-content-partnership/'
+      source_urls:
+      - https://wesearch.press/s/openai-safety-leader-quits-warning-ai-companys-culture-is-br-902a8fe9
+      - https://thedailybreakingnews.com/news/technology/openai-safety-leader-quits-warning-ai-company-s-culture-is-broken-3gqj0h
+      - https://ricochet.com/2018904/another-safety-engineer-quits-ai-giant-with-a-deaf-warning/
+      openai_arms:
+      - item:
+          title: 'OpenAI safety leader quits, warning AI company''s culture is ''broken'''
+          date: '2026-10-03'
+          date_detail: 'Oct 3 2026 (WeSearch publisher record: Oct 3 2026 12:41 PM Los Angeles; Global technology editor byline)'
+          publication: 'The Guardian (original; relay-attested)'
+          author_byline: 'Dan Milmo'
+          entity: openai
+          evidence_tier: 'relay-attested'
+          url_source: 'Verbatim theguardian.com canonical URL did not arrive in any search Full-URL listing this run (quoted verbatim inside relay excerpts only - NOT used per the no-construction rule); the piece is attested by three independent relays, every one explicitly attributing The Guardian: wesearch.press publisher record (verbatim Full-URL listing; "https://www.theguardian.com/profile/danmilmo - Oct 3, 2026"; WeSearch summary of the Robinson warning), thedailybreakingnews.com relay (verbatim Full-URL listing; "By Dan Milmo Global technology editor"; "Main source: The Guardian Technology"), ricochet.com relay (verbatim Full-URL listing; quotes the canonical guardian.com URL and the essay headline). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'straight_news_resignation_accountability'
+          manual_illustrative_tone: -0.30
+          tone_note: 'Adversarial content in an even-handed straight-news register: the "culture is broken" charge runs as the headline and lede, Robinson''s critique gets full airtime ("not being nearly careful enough"; nuclear-plant/airport redundancy remedy; the relay-quoted 50%-chance-of-doom warning), but an OpenAI spokesperson rebuttal is printed ("continues to strengthen security practices") and no Guardian editorializing is excerpted. Inside the carried Guardian x OpenAI enforcement-week band (m934 arms -0.30/-0.40/-0.30); harder than the Bhuiyan-test OpenAI arm (-0.125, m985) because an insider quitting is adversarial by content, not by test design.'
+          key_quotes:
+          - '"A safety leader at OpenAI has quit the company, warning that its culture was broken and that AI firms were not ''being nearly careful enough'' about developing the technology." (lede, verbatim via relays)'
+          - '"I quit OpenAI because its culture is broken" (Robinson essay headline, quoted)'
+          - '"continues to strengthen security practices" (OpenAI spokesperson rebuttal, printed)'
+          deal_disclosed: false
+          status: 'NEW this run (zero corpus hits pre-commit: all 3 relay URLs zero-hit repo-wide via git grep -F; the headline zero-hit; the Robinson resignation EVENT was scored at #1227 as BI x OpenAI - BI broke it first - but the Guardian FRAMING is the NEW arm; distinct from the Atlantic essay, saturated per task)'
+      meta_arms:
+        carried_from: 'm687 (Type A #757, NEW) - Guardian x Meta accountability arms; carried un-rescored per #807'
+        arms:
+        - title: 'US police fear Meta smart glasses could be used to secretly record them'
+          date: '2026-09'
+          publication: 'The Guardian (relay-attested)'
+          framing: 'documents_investigation'
+          manual_illustrative_tone: -0.55
+          tone_note: 'Hard adversarial documents-based register (m687, NEW at #757): law-enforcement memos; Meta glasses as covert-surveillance and terrorism-facilitation risk; facial-recognition doxing of officers.'
+          mechanism_ref: 'm687'
+        - title: 'Reel-ing it in: Meta is paying influencers to promote teen accounts'
+          date: '2026-08-18'
+          publication: 'The Guardian (relay-attested)'
+          framing: 'accountability_register'
+          manual_illustrative_tone: -0.45
+          tone_note: 'Adversarial payout-accountability register (m687, NEW at #757): Meta paying influencers to promote teen accounts.'
+          mechanism_ref: 'm687'
+        meta_band_mean: -0.50
+      asymmetry_scorer_result:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'OpenAI Guardian Oct-3 Robinson resignation straight-news register (m994 NEW)'
+        peer_entity: 'Meta Guardian carried accountability register (m687 police-warnings + teen-accounts)'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.30]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.55, -0.45]
+        target_avg: -0.30
+        peer_avg: -0.50
+        illustrative_delta_openai_minus_meta_clean: 0.25
+        illustrative_delta_openai_minus_meta_pooled: 0.20
+        delta_calc_clean: '-0.30 - (-0.55) = +0.25'
+        delta_calc_pooled: '-0.30 - (-0.50) = +0.20'
+        delta_direction: 'OpenAI draws the softer register at the Guardian by 0.25 illustrative points on the clean read (n=1 vs n=1, resignation straight news vs documents investigation); pooled delta +0.20 (n=1 vs n=2). Directionally softer for the Feb-2025 licensing partner, matching the softer-prediction.'
+        methodology: 'n=1 vs n=1 (clean: Milmo resignation vs m687 police-warnings); pooled n=1 vs n=2 (both m687 Meta arms); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'thesis_consistent_observation'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'Peg asymmetry: insider-resignation straight news vs documents-based investigation (police warnings) and payout accountability (teen accounts). The register-follows-peg reading says resignation news is even-handed by genre and investigation originals hard by genre, regardless of entity; the clean delta cannot separate entity softening from genre softness.'
+        - 'Excerpt-bounded evidence (per #503): 0 browser.open; theguardian.com paywalled/policy-blocked; the Milmo arm reads through three independent relays with verbatim Guardian attribution; no first-hand register read; no verbatim guardian.com canonical URL in any search Full-URL listing.'
+        moderate:
+        - 'The piece does NOT suppress the adversarial content: the "culture is broken" charge is the headline and lede, and the relay-quoted 50%-doom warning is printed. Softness here is register-level (even-handed straight news with rebuttal), not story suppression - which bounds the softening claim.'
+        - 'm985 precedent (#1257, FIFTY-FOURTH member): the Guardian''s own cross-lab investigation named the deal partner''s ChatGPT a hijab-removal complier - the uniform payer-softening prediction already FAILED at the Guardian on the own-investigation peg, so this run''s softer read is peg-bounded, not a blanket vindication of the prediction.'
+        weak:
+        - 'News-week adjacency (Oct 3 vs Sep carried arms); mild.'
+        - 'Meta arms carried un-rescored per #807; any drift in their register since scoring is not captured.'
+      counter_evidence:
+      - 'm985 (#1257, FIFTY-FOURTH member): Guardian own-investigation adversarial on the deal partner - the desk does not blanket-soften OpenAI.'
+      - 'm934 (#1172): Guardian enforcement-week triple register on OpenAI (mean -0.333) - the desk runs enforcement news on the partner at near-Meta hardness.'
+      - 'The Milmo piece''s own lede carries the hardest content (a safety chief quitting over "broken" culture) the Guardian has printed on the deal partner since the Astra-cancellation wire - the dog that did not bark is suppression, and it did not happen.'
+      open_empirical_test: 'First-hand open of the Milmo piece when theguardian.com is reachable (re-score against the observed register); a matched-register Guardian x OpenAI own-investigation arm on the Robinson resignation (e.g., newsroom follow-up reporting beyond the straight-news relay) vs a Guardian x Meta straight-news resignation arm would separate entity from genre.'
+      research_method: '1 delegated scout (20 browser.search query sets; 10 ranked candidate pairs; SELECTED #1 Guardian x OpenAI Robinson resignation - FRESH Guardian framing; scout #2 Verge x Apple LG smart-home (mirror URL only) and #3 MIT TR x Google Gemini 4 digest held as backups; scout rejections: Verge Dots hands-on (m965 double-count, #1247 precedent), Gizmodo Snap comparisons (#1162/#862 saturated), NYT Anthropic Dias (#1182 saturated), BI x OpenAI Robinson (event saturated at #1227 - BI broke it; Guardian framing is the NEW arm), Atlantic essay (saturated per task)) + 1 main-run browser.search verification set (exact-headline Guardian Milmo search: confirmed Dan Milmo Global technology editor byline, Oct 3 2026 date via WeSearch publisher record, 3 verbatim Full-URL relay listings; 0 browser.open per #503, excerpt-bounded; no canonical URLs constructed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'zero test_type_a_1272 files on disk pre-commit (glob); no "Type A #1272" in git log pre-commit (--grep); max numeric mechanism_id 993 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash nine-nine-four mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "## #1272" zero-hit in iteration-log pre-commit; README stats 70479/1596 pre-commit; no #1272 row in README/ARCHITECTURE test tables pre-commit; 3 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); the headline "OpenAI safety leader quits" zero-hit repo-wide pre-commit; distinct from #1227''s BI x OpenAI event score (different publication, different framing, different URLs).'
+      falsification_family_member: false
+      falsification_ledger: '54'
+      verdict: 'thesis_consistent_observation'
+      ledger: '54'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   meta:
     financial_tie: "none"
     estimated_value: "$0"
