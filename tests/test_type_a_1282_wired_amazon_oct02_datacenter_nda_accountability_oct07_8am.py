@@ -134,7 +134,7 @@ PRED_FINAL_1281 = "10d64db01266d4d89ee0bae31d38ba29161ba571"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1282 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1282 = "0" * 40
+PRED_MAIN_1282 = "915f95cdecda806f4951109e22693e74f6238072"  # re-pinned in the log-hash followup per #721 (main commit sha)
 
 # #1283's main commit (full sha), for the ancestor-form no-Type-B-#1283
 # pin. Patched in #1283's terminal log-hash followup per #721.

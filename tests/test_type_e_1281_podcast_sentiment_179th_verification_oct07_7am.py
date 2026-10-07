@@ -183,7 +183,7 @@ PRED_MAIN_1281 = "3c53f5f98c3b6b53443d507d02a206f4a07afde6"  # re-pinned in the 
 
 # #1282's main commit (full sha), for the ancestor-form no-Type-A-#1282
 # pin. Patched in #1282's terminal log-hash followup per #721.
-PRED_MAIN_1282 = "0" * 40
+PRED_MAIN_1282 = "915f95cdecda806f4951109e22693e74f6238072"  # re-pinned in #1282's log-hash followup per #721 (main commit sha)
 
 # The #1280 window-opener file, for the staleness pin on its
 # guard-lifecycle class (max id 999; zero next-number one-zero-zero-zero
