@@ -95,7 +95,7 @@ OWN_BASENAME = (
 JOURNALIST_NAME = "Lily Hay Newman"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "30ef8867191d2a89688200b083df440cb0c22c4e"  # patched post-commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
