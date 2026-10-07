@@ -28782,3 +28782,96 @@ kris_holt_type_b:
       source_urls:
       - https://briefly.co/anchor/Wearables/story/everything-announced-at-meta-connect-2026---engadget
       - https://theairmedia.passproevents.in/story/795792
+lisa_eadicicco_type_b:
+  name: Lisa Eadicicco
+  publication: cnn
+  mechanism_ids: [1001]
+  notes: 'Type B #1283 (Oct 7 2026): mechanism 1001 CONTROL-CASE, NOT a falsification-family member (ledger holds at 56) - FIRST dedicated Type B pair on Lisa Eadicicco (CNN (CNN Business); zero dedicated type_b key pre-commit, per the #643 convention; prior "Lisa Eadicicco" mentions are inside Raymond Wongs career record (wearables-beat comparison notes), never a mechanism). Same writer, same outlet, 5 days apart, both in-window Sep 24-29 2026: Lisa Eadicicco runs the skeptical privacy-pushback launch on Meta''s Connect Muse launch (-0.35 MANUAL ILLUSTRATIVE, Sep-24 arm: "widely panned discreet-recording glasses") and leaked-filing scandal on Anthropic''s leaked IPO filing (-0.45, Sep-29 arm: "resist shutdown / resembling blackmail"). Illustrative delta (Anthropic minus Meta) -0.10 register asymmetry in the Meta-soft direction. CNN holds the Dec-2025 Meta AI content-licensing deal (in-corpus mechanism 539); Meta is the payer, Anthropic is in the zero-deal set. Peg asymmetry (Connect Muse launch vs leaked IPO filing) is the STRONG confound. Mirror-attested bylines (KION), excerpt-tier per #503, 0 browser.open.'
+  competitor_coverage:
+    type_b_1283_lisa_eadicicco_cnn_meta_muse_blitz_vs_anthropic_ipo_leak_oct07_9am:
+      block_key: type_b_1283_lisa_eadicicco_cnn_meta_muse_blitz_vs_anthropic_ipo_leak_oct07_9am
+      mechanism_id: 1001
+      iteration: 1283
+      type: B
+      date: '2026-10-07 09:00 PDT'
+      test_file: tests/test_type_b_1283_lisa_eadicicco_cnn_meta_muse_blitz_vs_anthropic_ipo_leak_oct07_9am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Lisa Eadicicco
+      publication: cnn
+      window: '1280-1284 window FOURTH leg (D #1280 -> E #1281 -> A #1282 -> B #1283 -> C #1284)'
+      design: 'Type B journalist cross-entity tracking: Lisa Eadicicco (CNN (CNN Business)) on Meta Muse AI agent Connect launch under privacy-pushback framing vs Anthropic leaked IPO filing ("existential risk") under scandal framing, same writer, same outlet, 5 days apart, both in-window Sep 24-29 2026. CNN holds the Dec 5 2025 Meta AI content-licensing deal (in-corpus, profiles/competitor-entities.yaml mechanism 539; Reuters Dec-5-2025 URL re-surfaced, disclosed); Meta is the payer here and Anthropic sits in mechanism 539''s zero-deal entity set, so the pair tests payer-softening at the journalist level - the near-null delta does not adjudicate it (CONTROL-CASE, same brief as #1218). MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'Meta is betting big on its Muse AI agent with a blitz of new gadgets'
+        date: '2026-09-24'
+        outlet: cnn
+        author_byline: 'Lisa Eadicicco'
+        entity: meta
+        url: https://kioncentralcoast.com/money/cnn-business-consumer/2026/09/23/meta-is-betting-big-on-its-muse-ai-agent-with-a-blitz-of-new-gadgets/
+        url_note: 'KION mirror copied verbatim from this runs Full-URL listing (search index 0), byline-carrying ("By Lisa Eadicicco, CNN"); the cnn.com canonical is in-corpus via #966/#971 press tracking - re-surfaced, disclosed; mirror URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested: KION "By Lisa Eadicicco, CNN"; canonical cnn.com URL path /2026/09/24/ confirms date)'
+        key_quotes:
+        - 'Headline register (verbatim): "Meta is betting big on its Muse AI agent with a blitz of new gadgets"'
+        - 'Skeptical lede (verbatim): "As concerns over AI''s rapid advancement continue to mount"'
+        - 'Privacy pushback (verbatim): "Meta''s initial AI glasses ... have been widely panned for their ability to discreetly record users without their consent"'
+        - 'AI-weariness frame (verbatim): "consumers are growing increasingly weary of AI"'
+
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        tone_reading: 'Skeptical launch coverage: the Connect Muse blitz is framed through mounting AI concern, consumer AI-weariness, and the "widely panned" discreet-recording history of Metas glasses. Pointed but not an accountability investigation; the product news itself is relayed straight.'
+        status: 'NEW this run (KION mirror URL + headline zero-hit repo-wide pre-commit; cnn.com canonical in-corpus via #966, re-surfaced)'
+      anthropic_arm:
+        title: 'Anthropic says its AI models pose ''existential risk to humanity'' in leaked IPO filing: report'
+        date: '2026-09-29'
+        outlet: cnn
+        author_byline: 'Lisa Eadicicco'
+        entity: anthropic
+        url: https://www.cnn.com/2026/09/29/tech/anthropic-ipo-details-leak?cid=external-feeds_iluminar_meta
+        url_note: 'cnn.com canonical copied verbatim from this runs Full-URL listing (search index 0); byline mirror-attested (KION "By Chris Isidore, Lisa Eadicicco, CNN"; lapost "September 29, 2026, Chris Isidore, Lisa Eadicicco - CNN"); zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; verbatim quotes via search-result excerpts; byline mirror-attested via KION + lapost; co-bylined with Chris Isidore - register attribution muddied, disclosed as confound)'
+        key_quotes:
+        - 'Headline register (verbatim): "Anthropic says its AI models pose ''existential risk to humanity'' in leaked IPO filing: report"'
+        - 'Risk frame (verbatim): "could pose a ''catastrophic or existential risk to humanity'' and can ''resist shutdown''"'
+        - 'Scandal vocabulary (verbatim): "self-preserving behaviors" ... "resembling blackmail"'
+        - 'Stark-hazards turn (verbatim): "the hazards are never this stark"'
+        - 'Valuation context (verbatim): "cash-hungry company" pursuing an IPO "many expect to value ... at approximately $2 trillion"'
+
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        tone_reading: 'Leaked-filing scandal frame: the prospectus risk disclosures ("resist shutdown", "resembling blackmail") are played as the story, with "the hazards are never this stark" as the editorial turn. Adversarial-leaning, but the peg (a leaked IPO filing) is inherently scandal-flavored.'
+        status: 'NEW this run (cnn.com canonical + headline zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: -0.10
+      delta_reading: 'Illustrative delta (Anthropic minus Meta) -0.10: register asymmetry in the Meta-soft direction. Lisa Eadicicco applies the skeptical privacy-pushback launch to Meta''s Connect Muse launch and leaked-filing scandal to Anthropic''s leaked IPO filing. The peg asymmetry (Connect Muse launch vs leaked IPO filing) is the dominant confound, so the gap tracks the news peg, not necessarily entity-level editorial standards.'
+      confounders:
+      - 'Peg asymmetry: the Meta arm is a product-launch news peg (Connect Muse blitz) while the Anthropic arm is a leaked-IPO-filing scandal peg; the register gap tracks the peg rather than the entity. Ranked STRONG.'
+      - 'Co-byline: the Anthropic arm is co-bylined Chris Isidore + Lisa Eadicicco; Eadicicco''s individual register cannot be isolated from Isidore''s. Ranked MODERATE.'
+      - 'Excerpt-bounded evidence: 0 browser.open per #503; both arms read via search-result excerpts and byline-carrying mirrors only. Ranked MODERATE.'
+      - 'Temporal gap: 5 days apart (Sep 24 vs Sep 29); both in the late-September window. Ranked WEAK.'
+      - 'Deal-partner direction: the documented payer here is Meta (Dec 5 2025 bundle, mechanism 539), not a competitor; the near-null delta (-0.10, marginally Meta-soft) is thesis-consistent in direction but too small to adjudicate, and the peg asymmetry dominates. Ranked MODERATE for family purposes.'
+
+      counter_evidence:
+      - 'The asymmetry could invert on a different peg pair: Eadicicco''s July-2026 multi-device hands-on review (Meta Ray-Ban glasses vs Amazon Bee vs Plaud, noted in Raymond Wong''s in-corpus career record) ran experiential and balanced, suggesting her register follows the assignment, not the entity.'
+      - 'The Anthropic arm''s harder register may be Isidore''s: as CNN''s business reporter he typically writes the markets-facing IPO copy, so the scandal frame may not be Eadicicco''s choice.'
+      - 'CNN''s Meta deal (Dec 2025) is AI-training content licensing, not editorial; no evidence in the corpus ties it to coverage decisions.'
+
+      connects_to: [539, 519]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Lisa Eadicicco (CNN (CNN Business)) runs the skeptical privacy-pushback launch on Meta''s Connect Muse launch (-0.35 MANUAL ILLUSTRATIVE, Sep-24 arm) and leaked-filing scandal on Anthropic''s leaked IPO filing (-0.45, Sep-29 arm); illustrative delta (Anthropic minus Meta) -0.10 register asymmetry in the Meta-soft direction. CONTROL-CASE: the near-null illustrative delta (-0.10) and the STRONG peg asymmetry (product-launch vs leaked-IPO-filing) do not adjudicate payer-softening at the journalist level, so the uniform payer-softening prediction is not adjudicated and m1001 is NOT a falsification-family member; ledger holds at 56. Peg asymmetry is the STRONG confound. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'CONTROL-CASE, NOT a falsification-family member. Same-journalist, same-outlet pair: Lisa Eadicicco (CNN (CNN Business)) applies the skeptical privacy-pushback launch to Meta (-0.35) and leaked-filing scandal to Anthropic (-0.45) 5 days apart; illustrative delta -0.10. CNN holds the Dec 5 2025 Meta AI content-licensing deal (in-corpus, profiles/competitor-entities.yaml mechanism 539; Reuters Dec-5-2025 URL re-surfaced, disclosed); Meta is the payer here and Anthropic sits in mechanism 539''s zero-deal entity set, so the pair tests payer-softening at the journalist level - the near-null delta does not adjudicate it (CONTROL-CASE, same brief as #1218). The peg asymmetry (Connect Muse launch vs leaked IPO filing) dominates the reading. Correlation, not causation. No analysis.json update warranted.'
+      falsification_family_member: false
+      falsification_ledger: 56
+      ledger_note: 'Ledger holds at 56 this run (m1001 CONTROL-CASE, NOT a falsification-family member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952, 2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (m973, 2 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (m974, 5 occurrences); fifty-third member-claim form intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form intact in profiles/guardian.yaml (2 occurrences); fifty-fifth member-claim form intact in profiles/atlantic.yaml (2 occurrences); fifty-sixth member-claim form intact in profiles/wired.yaml (m1000, 2 occurrences); fifty-seventh member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 56).'
+      research_method: 'Delegated scout (~55 searches, 0 browser.open): SELECTED Eadicicco as the only fully-verified in-window same-journalist pair with URL-complete arms (CNN Sep 24 / Sep 29, 5 days apart); REJECTED the scouts #2 Vanian/CNBC on main-run verification (the OpenAI-arm verbatim CNBC URL never surfaced), #3 Chen/NYT and #4 Gurman/Bloomberg (verbatim outlet URLs missing), #5 Perez/TechCrunch (no competitor arm found) + 2 main-run browser.search verification sets (exact-headline Meta-arm search returning the KION mirror with "By Lisa Eadicicco, CNN" byline and the cnn.com canonical; exact-headline Anthropic-arm search returning the cnn.com canonical with co-byline attested via KION "By Chris Isidore, Lisa Eadicicco, CNN" and lapost "September 29, 2026, Chris Isidore, Lisa Eadicicco - CNN"), corpus saturation greps (zero lisa_eadicicco_type_b key; both novel URLs zero-hit repo-wide; cnn.com Meta canonical in-corpus via #966/#971 press tracking, disclosed as re-surface; Reuters Dec-2025 deal URL in-corpus via mechanism 539, disclosed as re-surface), 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FIRST dedicated Type B pair on Lisa Eadicicco (m1001); zero test_type_b_1283 files on disk pre-commit (glob); no "Type B #1283" in git log pre-commit (--grep); max numeric mechanism_id 1000 pre-commit; zero numeric/underscore/dash one-zero-zero-one mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1283 in key, no 1001 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F) + 2 in-corpus re-surfaces disclosed (cnn.com Meta canonical via #966 press tracking; Reuters Dec-2025 Meta-deal URL via mechanism 539); both arm headlines zero-hit repo-wide pre-commit; no #1283 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 71468/1607 pre-commit. NOT a falsification-family member (CONTROL-CASE); fifty-seventh member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1280-launched full suite (goal hidden_files type_d_1280_full_suite.log) observed STALLED at this run''s check (0 live pytest processes - pgrep hits were transient phantoms, gone on re-check; last write Oct 7 07:01 PDT, ~2.3h stale at this run''s ~09:25 check, 2592 bytes, [3%] progress - an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1285 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1001 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://kioncentralcoast.com/money/cnn-business-consumer/2026/09/23/meta-is-betting-big-on-its-muse-ai-agent-with-a-blitz-of-new-gadgets/
+      - https://www.cnn.com/2026/09/29/tech/anthropic-ipo-details-leak?cid=external-feeds_iluminar_meta
+      - https://www.cnn.com/2026/09/24/tech/meta-muse-ai-glasses-connect?cid=external-feeds_iluminar_meta
+      - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
+
