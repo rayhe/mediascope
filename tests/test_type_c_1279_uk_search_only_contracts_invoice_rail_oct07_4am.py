@@ -135,6 +135,10 @@ PRED_ANCHOR_1278 = "0989d150"
 PRED_DOCSYNC_1278 = "bbda63d5"
 PRED_FINAL_1278 = "f212c7b0"
 
+# Placeholder for the NEXT leg's main commit sha per #721; re-pinned
+# to #1280's main commit in #1280's terminal log-hash followup.
+PRED_MAIN_1280 = "0" * 40
+
 # The #1278 window-continuation file, for the staleness pin on its
 # guard-lifecycle class (max id 998; zero next-number forms /
 # no-Type-C-#1279-in-git-log / fortieth direction absent /
@@ -627,8 +631,19 @@ class TestGuardLifecycle1279:
         assert "NEXT_NUM = 1000" in src
 
     def test_no_type_d_1280_in_git_log_pin(self):
-        out = _git("log", "--oneline", "--grep=Type D #1280").stdout
-        assert out.strip() == "", out.strip()
+        # Post-main-commit form for the NEXT leg (the #1191-class
+        # self-trip, re-pinned in #1280's terminal log-hash followup
+        # per #721): every commit whose message matches "Type D #1280"
+        # must be #1280's main commit or a descendant of it.
+        # Deselected in the in-gate run (fails pre-commit by design).
+        out = _git("log", "--format=%H", "--grep=Type D #1280")
+        hits = [line.strip() for line in out.stdout.splitlines()
+                if line.strip()]
+        assert hits, "expected #1280's own commits"
+        main = _git("rev-parse", PRED_MAIN_1280).stdout.strip()
+        for h in hits:
+            r = _git("merge-base", "--is-ancestor", main, h)
+            assert r.returncode == 0, h
 
     def test_1000_numeric_absent_in_profiles(self):
         assert _repo_grep_numeric_mechanism_id(NEXT_NUM) == []
