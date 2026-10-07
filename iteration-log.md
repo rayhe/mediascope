@@ -47631,9 +47631,9 @@ README stats table 70479/1596 -> 70564/1597 (+85/+1); README test-table row; doc
 ### Push status
 Push status (this run): repair commits pushed together with the #1273 Type B chain at the end of this run (see the #1273 entry); all commits ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname).
 
-## #1273 Type B: m995 Kalley Huang (NYT) Meta Anthropic-spend accountability-exposure register vs Apple foldable-iPhone product-innovation register (Oct 6 2026, 08:00 PM PDT; main commit 4b9d81ba / anchor 9aa84bf5 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70564/1597 -> 70642/1598 (+78/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846)
+## #1273 Type B: m995 Kalley Huang (NYT) Meta Anthropic-spend accountability-exposure register vs Apple foldable-iPhone product-innovation register (Oct 6 2026, 08:00 PM PDT; main commit 4b9d81ba / anchor 9aa84bf5 / doc-sync 8e2e24c9; log-hash followup registers all hashes here per #721 (this commit); doc-sync 70564/1597 -> 70642/1598 (+78/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846)
 
-- Hash chain: main 4b9d81ba (4b9d81ba42f43840ab16e3eeb00f72b7e89ae6d8 - verified via git rev-parse) / anchor 9aa84bf5 (9aa84bf50746865b41ab3fa3f8df27df56e2f4dc; ANCHORED_SHA patched per #565, self-anchor) / doc-sync TBD (this commit) / log-hash followup TBD (terminal per #721)
+- Hash chain: main 4b9d81ba / anchor 9aa84bf5 / doc-sync 8e2e24c9 / log-hash this commit
 
 ### Finding summary
 - m995 (profiles/careers/journalists.yaml, kalley_huang_type_b key, NEW top-level key per the #643 convention, appended at end of file; relay-attested, excerpt-bounded per #503): Kalley Huang (NYT) co-bylines the ~Aug-30-2026 scoop that Meta secretly projected spending up to $10B a year on rival Anthropic's AI models while Zuckerberg publicly attacked Anthropic (-0.35 MANUAL ILLUSTRATIVE, accountability-exposure register), and solos the Sep-8-2026 foldable-iPhone product-news piece framing Apple's first foldable as the biggest iPhone design change in nearly two decades (+0.05, innovation-positive product-news register). Illustrative delta (Apple minus Meta) +0.40 in the Meta-hard direction.

@@ -112,7 +112,7 @@ PRED_DOCSYNC_1272 = "d2a66b6b66775040587226be005888c63abd9d90"
 PRED_FINAL_1272 = "d2a66b6b66775040587226be005888c63abd9d90"
 # This run's own main sha: patched in the terminal log-hash followup
 # per #721.
-PRED_MAIN_1273 = "0" * 40
+PRED_MAIN_1273 = "4b9d81ba42f43840ab16e3eeb00f72b7e89ae6d8"  # re-pinned in the terminal log-hash followup per #721 (main commit sha)
 # Next leg's main sha: patched in #1274's log-hash followup per #721.
 PRED_MAIN_1274 = "0" * 40
 
