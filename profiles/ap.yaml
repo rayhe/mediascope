@@ -179,3 +179,137 @@ competitor_relationships:
       artifact_grade: false
       yaml_parse_clean: true
       ascii_only: true
+  anthropic:
+    financial_metadata:
+      ap_openai_deal: 'AP x OpenAI archive-licensing agreement, Jul 13 2023: OpenAI licenses part of AP''s text archive (back to 1985) for training; financial terms undisclosed; AP gains access to OpenAI technology and product expertise; two-year nonexclusive term (renewal status unverified as of Oct 2026 - confounder carried). Sources: Reuters Jul-13-2023 original; pressgazette AI-deals roundup. In-corpus via m970 (#1232).'
+      anthropic_financial: '$0 - no AP x Anthropic licensing, advertising, or revenue relationship in corpus; Anthropic is the NON-PAYER pole of this pair'
+      meta_financial: '$0 - no AP x Meta licensing, advertising, or revenue relationship in corpus'
+      deal_disclosed_in_coverage: false
+      non_causal_note: 'Financial relationship is a structural incentive predictor, not proof of editorial control. The naive payer-softening prediction expects the deal partner (OpenAI) softest; this run tests that prediction within AP''s own wire on dual-lab pegs.'
+    type_a_1287_ap_anthropic_sep27_oct01_dual_lab_safety_pegs_vs_carried_meta_arms:
+      mechanism_id: 1003
+      block_key: type_a_1287_ap_anthropic_sep27_oct01_dual_lab_safety_pegs_vs_carried_meta_arms
+      key_design_note: 'Iteration-form block key carries no underscore-form one-zero-zero-three mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-one-zero-zero-three profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: 'The Associated Press (wire service)'
+      competitor: anthropic
+      polarity_note: 'Spec-faithful polarity (publication + competitor = AP x Anthropic); this run NEW arms land on the Anthropic side (the Sep-27 Burke analytical wire and the Oct-1 FTC enforcement wire, both dual-lab pieces covering Anthropic AND the payer OpenAI in the same article), against the carried AP x Meta arm (m970).'
+      event: 'Sep 27 2026: AP (Garance Burke) analytical wire on Anthropic + OpenAI safety-rhetoric-as-positioning (''What do they have to gain?''; pre-IPO midterm politicking frame). Oct 1 2026: AP enforcement wire on the FTC investigating OpenAI + Anthropic over consumer AI risks (Section 5 unfair/deceptive practices; agent overreach incidents). Both wires name the licensing counterparty (OpenAI) and the non-payer (Anthropic) symmetrically in the same article - the cleanest within-article payer/non-payer comparison in the corpus. Carried AP x Meta arm: Aug-26 $18bn teen-addiction settlement wire (-0.45, m970).'
+      financial_relationship: 'AP x OpenAI archive-licensing agreement (Jul 13 2023, two-year nonexclusive, renewal unverified; m970; ap.yaml competitor_relationships.openai coverage_prediction ''softer''). Anthropic: $0 tie (non-payer). Meta: $0 tie. Coverage prediction: softer OpenAI vs harder-or-equal Anthropic/Meta.'
+      deal_url: 'https://www.reuters.com/business/media-telecom/associated-press-openai-partner-explore-generative-ai-use-news-2023-07-13/'
+      source_urls:
+      - https://businessmirror.com.ph/2026/09/28/anthropic-openai-sound-the-alarm-on-ai-safety-seek-to-shape-how-its-controlled/
+      - https://bytewatchr.com/articles/ftc-openai-anthropic-consumer-risk-investigation/
+      anthropic_arms:
+      - item:
+          title: 'Anthropic and OpenAI sound the alarm on AI safety - and seek to shape how it is controlled'
+          date: '2026-09-27'
+          date_detail: 'Sep 27 2026, 7:23 AM PT (businessmirror relay; techxplore Sep 28; eriusmag Sep 27 11:51 PM UTC)'
+          publication: 'The Associated Press (original; relay-attested)'
+          author_byline: 'Garance Burke'
+          entity: anthropic
+          evidence_tier: 'relay-attested'
+          url_source: 'Verbatim apnews.com canonical URL did not arrive in any search Full-URL listing this run (NOT used per the no-construction rule); the piece is attested by five independent relays, every one carrying the SAN FRANCISCO (AP) dateline and Garance Burke byline: businessmirror.com.ph (''Garance Burke | The Associated Press''), theanswerorlando.com, eriusmag.pp.ua (''By GARANCE BURKE Sun, September 27, 2026 at 11:51 PM UTC''), europesays.com (San Diego Union-Tribune carrier), techxplore.com (''September 28 2026, by Garance Burke''). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'analytical_wire_skeptical_safety_rhetoric_as_positioning'
+          manual_illustrative_tone: -0.30
+          tone_note: 'Skeptical-analytical register on BOTH labs symmetrically: the lede question ''What do they have to gain?'' applies to Anthropic and OpenAI jointly; ''the companies appear to be seeking public favor and to set the terms for their own safety protocols''; safety rhetoric framed as pre-IPO capital-raising positioning (''just when they need fresh capital before going public on Wall Street'') and midterm politicking. Jacob Coxon resignation carried as the contrast pole. The skepticism is bylined analytical modulation, not genre-default neutrality - and it lands identically on the payer and the non-payer.'
+          key_quotes:
+          - '"What do they have to gain?" (lede question, verbatim via businessmirror)'
+          - '"the companies appear to be seeking public favor and to set the terms for their own safety protocols in the unregulated market" (verbatim via businessmirror)'
+          - '"just when they need fresh capital before going public on Wall Street" (verbatim via businessmirror)'
+          within_article_openai_register: 'Identical skeptical register: OpenAI named jointly throughout (''The CEOs of Anthropic and OpenAI''); Liz Bourgeois (OpenAI spokesperson) quoted alongside the Anthropic spokesperson with parallel non-responses. Within-article OpenAI-vs-Anthropic illustrative delta: 0.00.'
+          deal_disclosed: false
+          status: 'NEW this run (businessmirror URL zero-hit repo-wide via git grep -F; ''Garance Burke'' zero-hit in profiles/ pre-commit; the Burke Sep-27 piece zero-hit in profiles/ap.yaml pre-commit; distinct from m970 (AP x OpenAI Astra-delay wire, different peg and single-lab); distinct from #682 (FT x Anthropic Mythos scoop, different outlet))'
+      - item:
+          title: 'FTC Investigates OpenAI and Anthropic Over Consumer AI Risks'
+          date: '2026-10-01'
+          date_detail: 'Oct 1 2026 (AP report date; bytewatchr analysis Oct 4: ''The Associated Press reported on October 1'')'
+          publication: 'The Associated Press (original; relay-attested)'
+          author_byline: 'The Associated Press (wire; no individual byline on relays)'
+          entity: anthropic
+          evidence_tier: 'relay-attested'
+          url_source: 'Verbatim apnews.com canonical URL did not arrive in any search Full-URL listing this run (NOT used per the no-construction rule); attested by bytewatchr.com (''The Associated Press reported on October 1 that the Federal Trade Commission is investigating OpenAI and Anthropic''; ''Source: AP: FTC investigates OpenAI and Anthropic over consumer risks'') plus six corroborating relays (ajupress, tech-insider.org, demokratis.co.id, ediscoverytoday, openclassactions) all describing the same AP-originated Oct-1 FTC probe story. Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'enforcement_wire_neutral_process'
+          manual_illustrative_tone: -0.20
+          tone_note: 'Straight enforcement-process wire: the FTC ''is investigating OpenAI and Anthropic over potential consumer risks''; Section 5 unfair/deceptive practices framing; agent-overreach incidents as the trigger. Both labs named symmetrically; neither singled out. Mild negative valence is the investigation peg itself, not editorial modulation.'
+          key_quotes:
+          - '"The Associated Press reported on October 1 that the Federal Trade Commission is investigating OpenAI and Anthropic" (verbatim via bytewatchr)'
+          - '"whether AI companies misled consumers about risks, according to the Associated Press" (verbatim via bytewatchr)'
+          within_article_openai_register: 'Identical neutral-process register: OpenAI and Anthropic named jointly in every relay; no differential treatment. Within-article OpenAI-vs-Anthropic illustrative delta: 0.00.'
+          deal_disclosed: false
+          status: 'NEW this run (bytewatchr URL zero-hit repo-wide via git grep -F; ''bytewatchr'' zero-hit repo-wide pre-commit; the FTC Oct-1 probe zero-hit in profiles/ap.yaml pre-commit)'
+      meta_arms:
+        carried_from: 'm970 (Type A #1232, NEW) - AP x Meta $18bn settlement wire; carried un-rescored per #807'
+        arms:
+        - title: 'Meta reaches landmark $18 billion settlement with states in trial over teen social media addiction'
+          date: '2026-08-26'
+          publication: 'The Associated Press (OAKLAND, Calif. dateline; relay-attested)'
+          framing: 'settlement_factual_wire_adversarial_substance'
+          manual_illustrative_tone: -0.45
+          tone_note: 'Settlement-factual wire with adversarial substance (m970, NEW at #1232): ''landmark legal settlement'', ''$18 billion'', ''teen social media addiction'', ''undermining children''s mental health''. The adversarial vocabulary is the litigation''s own; the wire register transmits it straight.'
+          mechanism_ref: 'm970'
+        meta_band_mean: -0.45
+      asymmetry_scorer_result:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'Anthropic AP Sep-27 analytical wire + Oct-1 enforcement wire, dual-lab safety pegs (m1003 NEW)'
+        peer_entity: 'Meta AP carried $18bn settlement wire (m970)'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.30, -0.20]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.45]
+        target_avg: -0.25
+        peer_avg: -0.45
+        illustrative_delta_anthropic_minus_meta: 0.20
+        delta_calc: '-0.25 - (-0.45) = +0.20'
+        delta_direction: 'Meta draws the harder register (+0.20), but the adjudicating comparison is WITHIN-ARTICLE: AP applies the identical register to the licensing counterparty (OpenAI) and the non-payer (Anthropic) on both dual-lab pegs (within-article illustrative delta 0.00 on each). The uniform payer-softening prediction FAILS at the wire register: the Jul-2023 licensing deal bought OpenAI no visible softening against the non-payer in AP''s own analytical or enforcement wire.'
+        methodology: 'n=2 vs n=1 (AP Anthropic dual-lab arms vs carried m970 Meta arm); within-article OpenAI-vs-Anthropic n=2 paired comparisons at 0.00; MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'falsification_member_confirmed'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'Excerpt-bounded evidence (0 browser.open per #503; no apnews.com canonical URLs in listings; both arms read through relays carrying verbatim AP datelines/bylines; AP body register unverified at the canonical URL).'
+        - 'Wire-genre symmetry default: AP wire copy is genre-constrained; symmetric naming of both labs may be the genre default rather than a deliberate equal-treatment decision. The Burke piece mitigates this (bylined analytical modulation, ''What do they have to gain?''), but the FTC arm does not.'
+        moderate:
+        - 'Deal-age: the Jul-2023 AP x OpenAI agreement''s two-year nonexclusive term may have lapsed; renewal status unverified. If lapsed, the ''payer'' premise weakens and the symmetric treatment is over-determined.'
+        - 'Cross-peg Meta comparator: the $18bn settlement wire (-0.45) is a settlement peg vs safety-rhetoric/enforcement pegs; the +0.20 Meta delta is peg-valence, not the adjudicating comparison (the within-article 0.00 is).'
+        weak:
+        - 'Illustrative tones hand-assigned at excerpt level; no empirical distribution exists.'
+        - 'n=2 vs n=1 on the scored pair; degenerate statistical contract per the #638/#643 convention.'
+      counterevidence:
+      - 'm970 (this openai section, #1232): AP''s Astra-delay wire on the payer ran -0.10 vs the Meta settlement wire -0.45 (illustrative delta +0.35 WITH the payer-softening prediction) - but cross-peg confounded (model-delay vs settlement), verdict mechanism_documentation_not_a_discovery. The within-article design of m1003 is the cleaner adjudication the m970 block called for (''an AP wire on an OpenAI settlement-scale adverse event... does not exist in-window'').'
+      - 'The Burke piece''s skepticism is mild (-0.30); a harder register on either lab would have separated them. The null could be floor effects in wire analytical copy, not equal editorial intent.'
+      falsification_family_member: true
+      falsification_family: 'FIFTY-SEVENTH falsification-family member (ledger 56->57): this run tests the uniform payer-softening prediction at the publication level (ap.yaml competitor_relationships.openai coverage_prediction ''softer'', from the Jul-13-2023 AP x OpenAI archive-licensing agreement, two-year nonexclusive, renewal unverified) on the Sep-27/Oct-1 dual-lab safety pegs, and the prediction FAILS at the wire register: AP applies the identical register to the licensing counterparty (OpenAI) and the non-payer (Anthropic) within the same articles - Burke Sep-27 skeptical-analytical (''What do they have to gain?'', pre-IPO positioning frame, both labs) and FTC Oct-1 enforcement-process (both labs named symmetrically), within-article illustrative delta 0.00 on each. The deal bought no visible softening for the payer against the non-payer. Domain-bounded to AP''s wire register on dual-lab safety pegs; the m970 cross-peg +0.35 stands as the contrasting pole (different design, not overturned). The #1143 temporal-replication precedent does not block: no adversarial-on-partner observation has been counted for the AP x Anthropic pair (first mechanism) or the AP x OpenAI pair (m970 was documentation, verdict mechanism_documentation_not_a_discovery). FIRST AP-leg member. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_ledger: '57'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at AP on the Sep-27/Oct-1 dual-lab safety pegs. The Jul-2023 AP x OpenAI licensing deal (in-corpus, m970) predicts softer OpenAI coverage vs the non-payer Anthropic; AP instead applies the identical skeptical-analytical (Burke, -0.30) and enforcement-process (FTC, -0.20) registers to both labs within the same articles (within-article delta 0.00). Domain-bounded to AP''s wire register on dual-lab safety pegs; the m970 cross-peg pole stands. FIFTY-SEVENTH falsification-family member (ledger 56->57). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      ledger: '57'
+      connects_to: [970, 952, 871, 967, 956, 682]
+      novelty: 'FIRST dedicated corpus mechanism on the AP x Anthropic pair (zero ''AP x Anthropic'' hits in iteration-log pre-commit; no anthropic key in ap.yaml competitor_relationships pre-commit; zero test_type_a_1287 files on disk pre-commit; no ''Type A #1287'' in git log pre-commit; max numeric mechanism_id 1002 in profiles/ pre-commit; zero numeric/underscore/dash one-zero-zero-three mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit; 2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); ''Garance Burke'' zero-hit in profiles/ pre-commit; ''bytewatchr'' zero-hit repo-wide pre-commit; no #1287 row in README/ARCHITECTURE test tables pre-commit; README stats 71783/1611 pre-commit; fortieth direction absent in profiles/ pre-commit; forty-eighth through fifty-sixth members intact pre-commit; no fifty-seventh member repo-wide pre-commit; ledger 56 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      research_method: 'Delegated scout (saturation sweep across 10 publication profiles + ~15 candidate pairs; SELECTED AP x Anthropic as the only FRESH pair with verbatim relay URLs and a clean payer/non-payer design; REJECTED WIRED x Amazon (m1000), Atlantic x Anthropic (m769/m829), Verge x Anthropic (#2284), NYT x Anthropic (m940), Guardian x Anthropic (m985), BI x Anthropic (m955), FT x OpenAI (m901/m952), Verge x OpenAI (m937/m982), WIRED x OpenAI (m946/m991), MIT TR x OpenAI (m949), AP x OpenAI (m970), Guardian x OpenAI (m934/m994), Atlantic x OpenAI (m997), NY Post x Anthropic (m943), CNN x Anthropic (m1001) as saturated; Verge x xAI / NYT x xAI / Guardian x xAI held as backups) + 2 main-run browser.search verification sets ((1) exact-headline Burke Sep-27 search - businessmirror verbatim (index 2) with ''Garance Burke | The Associated Press'' byline + SAN FRANCISCO (AP) dateline, 5 relays; (2) exact-headline FTC Oct-1 search - bytewatchr verbatim (index 0) with ''The Associated Press reported on October 1'' attribution, 6 corroborating relays). 0 browser.open per #503. ASCII-only, no em dashes.'
+      rotation_transparency: 'Iteration #1287 Type A is the THIRD leg of the 1285-1289 window (D #1285 -> E #1286 -> A #1287 -> B #1288 -> C #1289 per #565 anchor + rotation guard; #1285 Type D main 137ca235/anchor d9e1f0ea/doc-sync 22162b86/log-hash f362c54c, #1286 Type E main 7b75118a/anchor 954b6788/doc-sync d2048a8e/log-hash 90708117, each verified in git log pre-commit; the 1280-1284 window is VERIFIED CLOSED). This run lands mechanism 1003 as the FIFTY-SEVENTH falsification-family member (ledger 56->57). Next window leg #1288 Type B; the #1285 background-suite verdict belongs to #1290 per #795.'
+      concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run''s index/diff (targeted staging by explicit path). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - Ray''s revert/leave/rebuild decision pending.'
+      background_suite_status: 'Per #795: the #1285-launched full suite (goal hidden_files type_d_1285_full_suite.log) OBSERVED this run (1662 bytes, [2%] progress, last write Oct 7 2026 11:59 PDT, zero live pytest processes at this run''s check - the earlier pgrep hit was a transient phantom) - observation only, NOT a verdict; this run neither re-launches, kills, nor writes to it. Its verdict belongs to #1290.'
+      in_flight:
+        - '#899: profiles/nytimes.yaml m771 hunk - untouched'
+        - '#938: Type B test file working-tree edit - untouched'
+        - '#900: untracked Type D test file - untouched'
+        - '#1012-wt: working-tree edit on the committed Type A #1012 file - untouched'
+        - '#1024: m846 in profiles/competitor-entities.yaml - NOT touched (revert/leave/rebuild decision pending)'
+      source_urls:
+        - url: 'https://businessmirror.com.ph/2026/09/28/anthropic-openai-sound-the-alarm-on-ai-safety-seek-to-shape-how-its-controlled/'
+          role: 'Anthropic arm 1 carrier (verbatim AP Burke Sep-27 text, SAN FRANCISCO (AP) dateline)'
+        - url: 'https://bytewatchr.com/articles/ftc-openai-anthropic-consumer-risk-investigation/'
+          role: 'Anthropic arm 2 carrier (AP Oct-1 FTC probe report attribution)'
+        - url: 'https://www.reuters.com/business/media-telecom/associated-press-openai-partner-explore-generative-ai-use-news-2023-07-13/'
+          role: 'AP x OpenAI deal source (Reuters Jul-13-2023 original; in-corpus via m970, re-surface)'
+      browser_opens: 0
+      tone_scored: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule'
+      engine_run: false
+      is_significant: false
+      artifact_grade: false
+      yaml_parse_clean: true
+      ascii_only: true
