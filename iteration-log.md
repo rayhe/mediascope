@@ -47584,14 +47584,14 @@ README stats table 70386/1595 -> 70479/1596 (+93/+1); README test-table row; doc
 ### Push status
 Push status (this run, Oct 6 2026 ~5:1x PM PDT): all five commits pushed and ls-remote-verified (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname; remote tip bcd1206f -> 33006eae, verified match post-push).
 
-## #1272 Type A: m994 Guardian Oct-3-2026 Robinson resignation straight-news register (Dan Milmo: safety leader quits, "culture is broken", -0.30 MANUAL ILLUSTRATIVE) vs carried Guardian x Meta accountability register (m687 police-warnings -0.55 + teen-accounts -0.45, mean -0.50); illustrative delta (OpenAI minus Meta) +0.25 clean / +0.20 pooled, thesis_consistent_observation, temporal replication of m934's +0.167, NOT a falsification-family member (ledger holds at 54); scout #1 Guardian framing SELECTED (FRESH), Verge x Apple LG + MIT TR x Google held as backups; 3 novel relay URLs zero-hit pre-commit - Type A THIRD leg of the 1270-1274 window (Oct 6 2026, 06:00 PM PDT; main commit 982ca183 / anchor cbe557f1 / doc-sync DOCSYNCSHA1272 / log-hash followup registers all hashes here per #721 (this commit); doc-sync 70479/1596 -> 70564/1597 (+85/+1); main run interrupted after the anchor followup - doc-sync + log-hash completed by this repair; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1272 Type A: m994 Guardian Oct-3-2026 Robinson resignation straight-news register (Dan Milmo: safety leader quits, "culture is broken", -0.30 MANUAL ILLUSTRATIVE) vs carried Guardian x Meta accountability register (m687 police-warnings -0.55 + teen-accounts -0.45, mean -0.50); illustrative delta (OpenAI minus Meta) +0.25 clean / +0.20 pooled, thesis_consistent_observation, temporal replication of m934's +0.167, NOT a falsification-family member (ledger holds at 54); scout #1 Guardian framing SELECTED (FRESH), Verge x Apple LG + MIT TR x Google held as backups; 3 novel relay URLs zero-hit pre-commit - Type A THIRD leg of the 1270-1274 window (Oct 6 2026, 06:00 PM PDT; main commit 982ca183 / anchor cbe557f1 / doc-sync d2a66b6b / log-hash followup registers all hashes here per #721 (this commit); doc-sync 70479/1596 -> 70564/1597 (+85/+1); main run interrupted after the anchor followup - doc-sync + log-hash completed by this repair; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main 982ca183 / anchor cbe557f1 / doc-sync DOCSYNCSHA1272 / log-hash this commit
+- Hash chain: main 982ca183 / anchor cbe557f1 / doc-sync d2a66b6b / log-hash this commit
 
 ### Commit hashes
 - Main commit `982ca183` (982ca183773272571d41195d40b18a487eaeb917) - verified via git rev-parse
 - Anchor followup `cbe557f1` (cbe557f132784b14f39e979e199f4ebfc08d7103; ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync repair `DOCSYNCSHA1272` (README 70479/1596 -> 70564/1597; test-table row; ARCHITECTURE tree row; iteration-log entry; PRED_MAIN_1272 re-pinned to the main sha per #721)
+- Doc-sync repair `d2a66b6b` (README 70479/1596 -> 70564/1597; test-table row; ARCHITECTURE tree row; iteration-log entry; PRED_MAIN_1272 re-pinned to the main sha per #721)
 - Log-hash repair followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here
 
 ### Rotation transparency
