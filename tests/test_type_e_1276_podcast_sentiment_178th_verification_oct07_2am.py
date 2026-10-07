@@ -223,7 +223,7 @@ PRED_MAIN_1276 = "5d511a0e70bdcce1202ea38a8037844f92b57462"  # patched in the lo
 
 # #1277's main commit (full sha), for the ancestor-form no-Type-A-#1277
 # pin. Patched in #1277's terminal log-hash followup per #721.
-PRED_MAIN_1277 = "0" * 40  # patched in #1277's log-hash followup per #721 (main commit sha)
+PRED_MAIN_1277 = "eee6dfc46080a0abc0c3bd21d5126c0ec08b1643"  # patched in #1277's log-hash followup per #721 (main commit sha)
 
 # The #1275 window-opener file, for the staleness pin on its
 # guard-lifecycle class (max id 996; zero next-number nine-nine-seven
