@@ -778,10 +778,11 @@ class TestGuardLifecycle1288:
         # no-Type-B-#1288-in-git-log pins flip post-main-commit on
         # this run's own landing (the #1191-class self-trip and the
         # #1272-class forward-guard expiry, by design, documented in
-        # the staleness pin below).
+        # the staleness pin below; the self-trip is re-pinned green
+        # by the log-hash followup's PRED_MAIN_1288 re-pin per #721).
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "TestStalenessPins1288" in src
-        assert "2 failed, 17 passed" in src
+        assert "1 failed, 19 passed" in src
 
 
 # ---------------------------------------------------------------------------
@@ -852,27 +853,26 @@ class TestIterationLog1288:
 
 class TestStalenessPins1288:
     def test_1287_guard_lifecycle_post_commit_self_trip(self):
-        # Post-main-commit form: 17 of the 19 pass; the two that fail
-        # BY DESIGN are test_no_type_b_1288_in_git_log_pin (this run's
-        # own main commit carries "Type B #1288" while PRED_MAIN_1288
-        # in the #1287 file is still 0*40; the #1191-class self-trip,
-        # re-pinned green in this run's log-hash followup per #721)
-        # and test_1004_numeric_absent_in_profiles (mechanism 1004
-        # lands in profiles/ this run; the #1272-class forward-guard
-        # expiry - the next-number guard is consumed by the landing).
-        # test_pins_on_mechanism_landing stays GREEN (asserts on the
-        # #1287 file's own constants, untouched by this run); the
+        # Post-log-hash-followup form: 19 of the 20 pass; the one
+        # that fails BY DESIGN is test_1004_numeric_absent_in_profiles
+        # (mechanism 1004 lands in profiles/ this run; the
+        # #1272-class forward-guard expiry - the next-number guard is
+        # consumed by the landing). test_no_type_b_1288_in_git_log_pin
+        # (the #1191-class self-trip: this run's own main commit
+        # carries "Type B #1288") is re-pinned GREEN here by the
+        # log-hash followup's PRED_MAIN_1288 re-pin per #721.
+        # test_pins_on_one_mechanism_landing stays GREEN (asserts on
+        # the #1287 file's own constants, untouched by this run); the
         # member and direction pins stay GREEN (m1004 is a
         # directional case, not a family member). Deselected pre-commit
-        # (both pins pass pre-commit).
+        # (the numeric pin passes pre-commit; the git-log pin fails
+        # pre-commit on the empty-match assert).
         res = _class_run(E1287_FILE, "TestGuardLifecycle1287")
         assert res.returncode != 0, res.stdout[-2000:]
-        assert "2 failed, 17 passed" in res.stdout, res.stdout[-2000:]
-        for name in (
-            "test_no_type_b_1288_in_git_log_pin",
-            "test_1004_numeric_absent_in_profiles",
-        ):
-            assert name in res.stdout, res.stdout[-2000:]
+        assert "1 failed, 19 passed" in res.stdout, res.stdout[-2000:]
+        assert (
+            "test_1004_numeric_absent_in_profiles" in res.stdout
+        ), res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
