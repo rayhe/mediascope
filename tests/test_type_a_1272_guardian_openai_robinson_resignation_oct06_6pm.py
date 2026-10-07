@@ -129,7 +129,7 @@ OWN_BASENAME = (
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40  # patched per #565 in the anchor followup (main commit sha)
+ANCHORED_SHA = "982ca183773272571d41195d40b18a487eaeb917"  # patched per #565 in the anchor followup (main commit sha)
 
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1272 pin. Patched in the terminal log-hash followup per
