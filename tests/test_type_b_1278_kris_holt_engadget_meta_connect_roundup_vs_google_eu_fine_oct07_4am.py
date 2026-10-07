@@ -119,7 +119,7 @@ PRED_FINAL_1277 = "8ce5bf681e1382a02b810466a5873b3e3a301d9e"
 # per #721.
 PRED_MAIN_1278 = "41843930d9bd270d4c24182dd0dce4dec67531e3"  # re-pinned in the terminal log-hash followup per #721 (main commit sha)
 # Next leg's main sha: patched in #1279's log-hash followup per #721.
-PRED_MAIN_1279 = "0" * 40
+PRED_MAIN_1279 = "102fbeba0f590da40e98ecdcec71c2eed4043323"  # re-pinned in #1279's terminal log-hash followup per #721 (main commit sha)
 
 # The #1277 window-continuation file, for the staleness pin on its
 # guard-lifecycle class (max id 997; zero next-number nine-nine-nine
