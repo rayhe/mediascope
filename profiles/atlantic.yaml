@@ -1573,6 +1573,110 @@ competitor_relationships:
       source_urls:
         - "https://www.newslocker.com/en-us/news/social-media-news/openais-2017-plan-to-auction-agi-to-china-and-russia-per-the-atlantic/"
         - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+    type_a_1277_atlantic_openai_robinson_essay_culture_broken_october:
+      mechanism_id: 997
+      block_key: type_a_1277_atlantic_openai_robinson_essay_culture_broken_october
+      key_design_note: 'Iteration-form block key carries no underscore-form 997 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-997 profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: 'The Atlantic'
+      competitor: openai
+      polarity_note: 'Spec-faithful polarity (publication + competitor = Atlantic x OpenAI); this run NEW arm lands on the OpenAI side (the Oct-3 Robinson resignation essay, Atlantic-original), against carried Meta-side arms.'
+      event: 'Oct 3 2026 resignation-essay peg: The Atlantic publishes David Robinson''s first-person "I Quit OpenAI Because Its Culture Is Broken" (Oct 3 2026, 7am ET): Robinson, who led the writing of safety reports accompanying OpenAI product releases (3.5 years, 12 frontier launches, helped draft the Preparedness Framework), resigns warning the culture is broken, the sprint from launch to launch fails the level of care needed, "the time for trial and error is over", urging nuclear-plant/aviation-grade redundancy; OpenAI spokesperson rebuttal printed. Carried Atlantic x Meta AI Watchdog accountability arms (m481: Strike-3 porn-lawsuit investigation -0.75, pirated-books investigation -0.55). Same publication, adjacent weeks.'
+      financial_relationship: 'The Atlantic x OpenAI strategic content-licensing partnership (May 29 2024, in-corpus atlantic.yaml; Atlantic archive used for training, articles discoverable in ChatGPT with attribution; terms undisclosed); Atlantic x Meta $0, no licensing, no financial relationship. Coverage prediction: softer OpenAI, adversarial Meta.'
+      deal_url: 'https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media'
+      source_urls:
+      - https://hamirev.com/openai-safety-report-lead-quits/
+      - https://cellcog.ai/blog/openai-safety-lead-resigns/
+      - https://www.signalstack.news/blog/openai-safety-leader-resignation-culture-essay/
+      openai_arms:
+      - item:
+          title: 'I Quit OpenAI Because Its Culture Is Broken'
+          date: '2026-10-03'
+          date_detail: 'Oct 3 2026, 7am ET (cellcog.ai relay: "published at 7 a.m. Eastern on October 3, 2026"; Adrienne LaFrance shared the piece)'
+          publication: 'The Atlantic (original; relay-attested)'
+          author_byline: 'David Robinson'
+          entity: openai
+          evidence_tier: 'relay-attested'
+          url_source: 'Verbatim theatlantic.com canonical URL did not arrive in any search Full-URL listing this run (the scout-supplied candidate URL is NOT used per the no-construction rule); the essay is attested by seven independent relays, every one explicitly attributing The Atlantic: hamirev.com, cellcog.ai, signalstack.news, factinface.com ("Writing in The Atlantic magazine"), hrkatha.com ("In his Atlantic essay"), dev.to ("an essay in The Atlantic published on October 3, 2026"), ai-tldr.dev ("was published in The Atlantic on October 3, 2026"). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'first_person_insider_resignation_essay'
+          manual_illustrative_tone: -0.65
+          tone_note: 'Maximally adversarial CONTENT in a first-person ideas-essay register: the "culture is broken" charge is the headline; the sprint-from-launch-to-launch indictment, "the time for trial and error is over", and the nuclear-plant/aviation remedy are all printed at full strength with no visible softening by the licensing partner. The -0.10 moderation from the carried Meta Watchdog band reflects genre, not softness: the charges are the author''s first-person account, not newsroom-reported findings, and an OpenAI spokesperson rebuttal is printed (per relays). The publication-level signal is gatekeeping: the deal partner gave flagship placement to an insider takedown of the payer.'
+          key_quotes:
+          - '"I resigned this week from OpenAI." (essay open, verbatim via cellcog.ai)'
+          - '"As the company sprints from one launch to the next, it is failing to achieve the level of care that I believe is needed." (verbatim via relays)'
+          - '"The time for trial and error is over." (verbatim via relays)'
+          - '"pause training or hold back models when we need to slow down" (OpenAI spokesperson rebuttal, verbatim via relays)'
+          deal_disclosed: false
+          status: 'NEW this run (3 source URLs zero-hit repo-wide via git grep -F; the essay as an Atlantic x OpenAI primary arm zero-hit in profiles/atlantic.yaml pre-commit; the essay headline carries 2 pre-commit repo hits - the m967 finding/title in profiles/business-insider.yaml and the #1227 iteration-log entry - both BI x OpenAI event coverage, a different publication x competitor pair; the Robinson resignation EVENT was scored at #1227 as BI x OpenAI (BI broke the departure Oct 2) and at #1272 as Guardian x OpenAI (Milmo straight-news relay Oct 3); the ATLANTIC ESSAY ITSELF, platformed by the licensing partner, is the NEW arm; distinct from #1272''s Guardian framing per the m994 status note)'
+      meta_arms:
+        carried_from: 'm481 (Type A #481, NEW) - Atlantic x Meta AI Watchdog accountability arms; carried un-rescored per #807'
+        arms:
+        - title: 'Why Would Meta Download So Much Porn?'
+          date: '2026-07-24'
+          publication: 'The Atlantic (AI Watchdog)'
+          framing: 'accountability_investigation'
+          manual_illustrative_tone: -0.75
+          tone_note: 'Hard adversarial Watchdog investigation (m481, NEW at #481): Meta named in headline; Strike 3 lawsuit training-data allegations.'
+          mechanism_ref: 'm481'
+        - title: 'The Unbelievable Scale of AI''s Pirated-Books Problem'
+          date: '2025-03-20'
+          publication: 'The Atlantic (AI Watchdog)'
+          framing: 'accountability_investigation'
+          manual_illustrative_tone: -0.55
+          tone_note: 'Adversarial Watchdog investigation (m481): unsealed Meta internal comms on LibGen; Meta foregrounded though OpenAI also used LibGen.'
+          mechanism_ref: 'm481'
+        meta_band_mean: -0.65
+      asymmetry_scorer_result:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'OpenAI Atlantic Oct-3 Robinson resignation essay, first-person insider register (m997 NEW)'
+        peer_entity: 'Meta Atlantic carried AI Watchdog accountability register (m481 Strike-3 + pirated-books)'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.65]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.75, -0.55]
+        target_avg: -0.65
+        peer_avg: -0.65
+        illustrative_delta_openai_minus_meta_clean: 0.10
+        illustrative_delta_openai_minus_meta_pooled: 0.00
+        delta_calc_clean: '-0.65 - (-0.75) = +0.10'
+        delta_calc_pooled: '-0.65 - (-0.65) = 0.00'
+        delta_direction: 'Near-null illustrative delta: the Atlantic platformed an insider "culture is broken" takedown of its May-2024 licensing partner at essentially the same adversarial hardness as its carried Meta Watchdog band (pooled delta 0.00; clean +0.10 vs the hardest Meta arm). The uniform payer-softening prediction FAILS on this peg: the deal bought no suppression and no visible softening at the ideas-essay gatekeeping tier.'
+        methodology: 'n=1 vs n=1 (clean: Robinson essay vs m481 Strike-3); pooled n=1 vs n=2 (both m481 Meta arms); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'falsification_member_confirmed'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'First-person genre: the adversarial CONTENT is Robinson''s, not the Atlantic newsroom''s. The publication-level test is gatekeeping (flagship placement of the takedown), not reporting. A softer-predicted outlet could still run a blockbuster resignation essay while softening its own reporting; the essay alone does not falsify softening at the newsroom-reporting tier.'
+        - 'News-value confound: the longest-serving safety lead''s resignation manifesto is inherently blockbuster; spiking it would be a bigger editorial anomaly than running it. The deal predicts marginal-case softening, and this is not a marginal case.'
+        moderate:
+        - 'Industry-wide framing: the essay indicts "frontier labs" and "the companies building this technology" alongside OpenAI; the headline names OpenAI and the lede is the OpenAI resignation, but the remedy is industry-wide.'
+        - 'Excerpt-bounded evidence (per #503): 0 browser.open; theatlantic.com paywalled/policy-blocked; the essay reads through seven independent relays with verbatim Atlantic attribution; no first-hand register read; no verbatim theatlantic.com canonical URL in any search Full-URL listing this run.'
+        weak:
+        - 'm913 tension: m913 documented bounded-absence silence on Sep-26/Oct-1 straight-news crisis pegs; m997 bounds that claim to the straight-news tier - the Ideas desk platformed the takedown. The silence was peg-specific, not blanket suppression.'
+        - 'Meta arms carried un-rescored per #807; any drift in their register since scoring is not captured.'
+      counter_evidence:
+      - 'm913 (#1137): Atlantic bounded-absence silence on four Sep-26/Oct-1 crisis pegs - the desk does not blanket-cover the partner adversarially; the essay is the exception that bounds the silence claim, not its refutation.'
+      - 'm481 (#481): Atlantic AI Watchdog entity selection - Meta-targeted investigations vs OpenAI context-only; the Watchdog tier still shows the thesis-consistent pattern.'
+      - 'm829 (Type A #997, Sep 25 2026): Atlantic doomsday-scenarios philosophical essay - frontier-lab safety conduct gets the Ideas wonder register; the register-selection strand stands for the non-crisis pegs.'
+      - 'The essay prints OpenAI''s rebuttal posture (per relays: "pause training or hold back models when we need to slow down"); platforming is not pile-on.'
+      open_empirical_test: 'First-hand open of the Atlantic essay when theatlantic.com is reachable (re-score against the observed register; check for editor''s framing/dek softening); a matched-register Atlantic x Meta first-person insider-resignation essay would separate entity from genre - no such Meta arm exists in the corpus.'
+      research_method: '1 delegated scout (ranked 3 candidate pairs; SELECTED #1 Atlantic x OpenAI Robinson essay - FRESH, unworked deal-partner pair for the falsification test, distinct from #1227''s BI x OpenAI and #1272''s Guardian x OpenAI per the #1143 precedent; scout #2 AP x OpenAI and #3 BI x OpenAI held as backups; scout rejections: WIRED x OpenAI (#1267 done), Guardian x OpenAI (#1272 done), WIRED x Meta (#1262 done), NYT x Kalley Huang (#1273 done), Verge x OpenAI (#1127 done), WSJ x OpenAI (#1122 done)) + 2 main-run browser.search verification sets (exact-headline essay search: 7 relays with verbatim Atlantic attribution, Oct 3 2026 7am ET; Robinson-bio search: 3.5 years, 12 frontier launches, Preparedness Framework drafter, confirmed; 0 browser.open per #503, excerpt-bounded; the scout-supplied theatlantic.com candidate URL NOT used per the no-construction rule - no verbatim Atlantic URL in my Full-URL listings). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'zero test_type_a_1277 files on disk pre-commit (glob); no "Type A #1277" in git log pre-commit (--grep); max numeric mechanism_id 996 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash nine-nine-seven mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "## #1277" zero-hit in iteration-log pre-commit; README stats 70954/1601 pre-commit; no #1277 row in README/ARCHITECTURE test tables pre-commit; 3 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); the essay headline carries 2 pre-commit repo hits (m967 finding/title in profiles/business-insider.yaml + #1227 iteration-log entry, both BI x OpenAI event coverage - a different publication x competitor pair); the essay as an Atlantic x OpenAI primary arm zero-hit in profiles/atlantic.yaml pre-commit; distinct from #1227''s BI x OpenAI event score (different publication, different financial tie, breaking-news exclusive vs platformed primary essay) and #1272''s Guardian x OpenAI Milmo relay (different publication, straight-news relay vs the primary insider essay).'
+      falsification_family_member: true
+      falsification_family: 'FIFTY-FIFTH falsification-family member (ledger 54->55): this run tests the uniform payer-softening prediction at the publication level (atlantic.yaml competitor_relationships.openai coverage_prediction "softer", from the Atlantic-OpenAI May 29 2024 strategic content-licensing partnership, still active) on the Oct-3 Robinson resignation-essay peg, and the prediction FAILS at the ideas-essay gatekeeping tier: the licensing partner gave flagship placement to a first-person insider essay headlined "I Quit OpenAI Because Its Culture Is Broken", printing the sprint-from-launch-to-launch indictment and the "time for trial and error is over" charge at full strength. Domain-bounded to the ideas/essay tier and to gatekeeping (the adversarial content is the author''s, not newsroom-reported); the m913 bounded-silence finding stands for the straight-news crisis tier and the m481 Watchdog entity-selection pattern stands for the investigation tier. The #1143 temporal-replication precedent does not block: no adversarial-on-partner observation has been counted for the Atlantic x OpenAI pair (m481/m694/m829/m913 are all thesis-consistent), unlike BI x OpenAI where m399 already counted the hardness test. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_ledger: '55'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at the Atlantic on the Oct-3-2026 resignation-essay peg. The Atlantic x OpenAI May-2024 strategic partnership (in-corpus, active) predicts suppression or softening of adversarial payer content; the Atlantic instead platformed the payer''s own safety-report lead''s "culture is broken" resignation essay at flagship placement. Illustrative means: OpenAI essay -0.65 vs Meta Watchdog band -0.65 (delta 0.00 pooled; +0.10 clean vs the hardest Meta arm). Domain-bounded to the ideas/essay gatekeeping tier per the confounders; the m913 straight-news silence and m481 Watchdog selection patterns stand as the contrasting poles. FIFTY-FIFTH falsification-family member (ledger 54->55). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      ledger: '55'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE scores only; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false (Aug 28 2026 standing rule); engine NOT run; verdict falsification_member_confirmed on the resignation-essay gatekeeping peg (domain-bounded); no analysis.json update; NOT artifact-grade; correlation is not causation.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-07'
   meta:
     financial_tie: "none"
     estimated_value: "$0"
