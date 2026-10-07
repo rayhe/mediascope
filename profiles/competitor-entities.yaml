@@ -19328,6 +19328,12 @@ relationship_types:
     No direct financial tie to the entity, but indirect exposure via a
     third party (e.g. FT-Anthropic via Google channel) - added Sep 2026,
     Type A #441
+  personnel_career_migration: >-
+    Key personnel moved between the entity and the publisher's parent
+    (e.g. WIRED x Snap: Conde Nast CRO Elizabeth Herbst-Brady held senior
+    revenue roles at Snap before Sep 2024; the CRO controls advertising
+    revenue decisions) - added Oct 2026, Type D #1275, mechanism 727
+    (Type A #827)
 coverage_predictions:
   softer: Financial incentive predicts measurably softer coverage tone
   softer_than_expected: Coverage softer than editorial stance would predict, given

@@ -1573,6 +1573,7 @@ competitor_relationships:
       source_urls:
         - "https://www.newslocker.com/en-us/news/social-media-news/openais-2017-plan-to-auction-agi-to-china-and-russia-per-the-atlantic/"
         - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+  meta:
     financial_tie: "none"
     estimated_value: "$0"
     direction: "none"

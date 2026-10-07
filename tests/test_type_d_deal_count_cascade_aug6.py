@@ -108,7 +108,12 @@ class TestXAIIntegration:
 
     def test_xai_valuation_documented(self, entities):
         xai = entities['entities']['xai']
-        assert '$50B' in xai.get('market_cap_approx', '')
+        # Repinned Oct 2026, Type D #1275: the standalone $50B pin went
+        # stale against the corpus-documented SpaceX triangular merger
+        # (Feb 2026; xAI as wholly owned SpaceX subsidiary; xai_valuation_b
+        # 250, market_cap_approx $250B at merger). Pin the current
+        # documented valuation; intent ("valuation documented") unchanged.
+        assert '$250B' in xai.get('market_cap_approx', '')
 
     def test_total_entities_at_least_9(self, entities):
         """Floor check: started at 8, grew to 9 (Samsung), 11 (Microsoft, Snowflake).

@@ -316,12 +316,41 @@ class TestInfrastructureCountSync:
         self.arch = load_text(os.path.join(DOCS_DIR, 'ARCHITECTURE.md'))
 
     def _extract_test_count(self, text):
-        """Extract the most prominent test count from a document."""
+        """Extract the current test count from a document.
+
+        Prefers the stats-table row (| Tests | N |), then the latest
+        doc-sync tree range (-> N/M); falls back to the legacy
+        max-prose heuristic. Repaired Oct 2026, Type D #1275: the
+        legacy max-prose heuristic matched stale historical prose
+        (README's #1115 row "57811 tests" vs ARCHITECTURE's Sep-26
+        tree header "52473 tests"), failing since Oct 1 2026 while
+        the true counts (README stats table, ARCHITECTURE's latest
+        tree row) agreed."""
+        m = re.search(r'\|\s*Tests\s*\|\s*(\d+)\s*\|', text)
+        if m:
+            return int(m.group(1))
+        ranges = re.findall(r'->\s*(\d+)/(\d+)', text)
+        if ranges:
+            return int(ranges[-1][0])
         matches = re.findall(r'(\d{3,5})\s*(?:tests|test cases)', text, re.IGNORECASE)
         return max(int(m) for m in matches) if matches else None
 
     def _extract_file_count(self, text):
-        """Extract the most prominent file count from a document."""
+        """Extract the current test-file count from a document.
+
+        Prefers "Across N test files" (stats table), then the latest
+        doc-sync tree range (-> N/M); falls back to the legacy
+        heuristic. Repaired Oct 2026, Type D #1275, same stale-prose
+        root cause as _extract_test_count. The latest doc-sync tree
+        range is preferred over "Across N test files" because
+        ARCHITECTURE's tree header ("across 1346 test files", Sep 26)
+        is staler than its latest tree row."""
+        ranges = re.findall(r'->\s*(\d+)/(\d+)', text)
+        if ranges:
+            return int(ranges[-1][1])
+        m = re.search(r'Across\s+(\d+)\s+test files', text, re.IGNORECASE)
+        if m:
+            return int(m.group(1))
         matches = re.findall(r'(\d{2,4})\s*(?:test files|files)', text, re.IGNORECASE)
         return max(int(m) for m in matches) if matches else None
 
