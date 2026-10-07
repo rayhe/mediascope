@@ -136,7 +136,7 @@ PRED_FINAL_1286 = "90708117"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1287 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1287 = "0" * 40
+PRED_MAIN_1287 = "32786e1270efb5b27b4234ccab5b82827b9ebc88"  # re-pinned in the terminal log-hash followup per #721
 
 # #1288's main commit (full sha), for the ancestor-form no-Type-B-#1288
 # pin. Patched in #1288's terminal log-hash followup per #721.
@@ -891,22 +891,26 @@ class TestGuardLifecycle1287:
 
 class TestStalenessPins1287:
     def test_1286_guard_lifecycle_post_commit_self_trip(self):
-        # Post-main-commit form: 19 tests in the class; the
-        # no_type_a_1287_in_git_log ancestor pin flips BY DESIGN when
-        # this run's main commit lands (its PRED_MAIN_1287 is still
-        # the 0*40 placeholder until this run's terminal log-hash
-        # followup re-pins it per #721) - the #1191-class self-trip -
-        # and the three zero-one-zero-zero-three-form pins
-        # (numeric/underscore/dash) flip BY DESIGN as the m1003
-        # landing consumes them - the #1272-class forward-guard
-        # expiry. The class run below therefore expects 4 failed /
-        # 15 passed and documents the designed flips. The #1286 block
-        # is read-only to this run; the quirk is documented here, not
-        # repaired.
+        # Post-main-commit form: 19 tests in the class; TWO flip BY
+        # DESIGN when this run's main commit lands and STAY flipped:
+        # the test_1003_numeric_absent_in_profiles pin (the m1003
+        # landing carries "mechanism_id: 1003" in colon form - the
+        # #1272-class forward-guard expiry; the underscore/dash pins
+        # stay green by the #723/#738/#739 designed keying) and the
+        # test_no_fifty_seventh_member_pin (the fifty-seventh member
+        # lands this run - the #1191-class self-trip on the member
+        # pin). The no_type_a_1287_in_git_log ancestor pin ALSO flips
+        # at the main commit but is re-pinned green in this terminal
+        # log-hash followup per #721 (its PRED_MAIN_1287 now holds
+        # this run's main sha). The class run below therefore expects
+        # 2 failed / 17 passed and documents the designed flips. The
+        # #1286 block is read-only to this run; the flips are
+        # documented here, not repaired.
         res = _class_run(D1286_FILE, "TestGuardLifecycle1286")
         out = res.stdout + res.stderr
-        assert "4 failed, 15 passed" in out, out[-2000:]
-        assert "no_type_a_1287_in_git_log" in out, out[-2000:]
+        assert "2 failed, 17 passed" in out, out[-2000:]
+        assert "test_1003_numeric_absent_in_profiles" in out, out[-2000:]
+        assert "test_no_fifty_seventh_member_pin" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------

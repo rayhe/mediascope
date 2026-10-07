@@ -165,7 +165,7 @@ PRED_MAIN_1286 = "0" * 40
 
 # #1287's main commit (full sha), for the ancestor-form no-Type-A-#1287
 # pin. Patched in #1287's terminal log-hash followup per #721.
-PRED_MAIN_1287 = "0" * 40
+PRED_MAIN_1287 = "32786e1270efb5b27b4234ccab5b82827b9ebc88"  # re-pinned in #1287 terminal log-hash followup per #721
 
 # The #1285 window-opener file, for the staleness pin on its
 # guard-lifecycle class (max id 1002; zero next-number
