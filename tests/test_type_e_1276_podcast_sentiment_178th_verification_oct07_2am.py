@@ -219,7 +219,7 @@ PRED_FINAL_1275 = "df2c74e8"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-E-#1276 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1276 = "0" * 40  # patched in the log-hash followup per #721 (main commit sha)
+PRED_MAIN_1276 = "5d511a0e70bdcce1202ea38a8037844f92b57462"  # patched in the log-hash followup per #721 (main commit sha)
 
 # #1277's main commit (full sha), for the ancestor-form no-Type-A-#1277
 # pin. Patched in #1277's terminal log-hash followup per #721.
