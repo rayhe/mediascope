@@ -173,7 +173,7 @@ PRED_FINAL_1285 = "f362c54c"
 
 # Placeholder for the NEXT leg's main commit sha per #721; re-pinned
 # to #1291's main commit in #1291's terminal log-hash followup.
-PRED_MAIN_1291 = "0" * 40
+PRED_MAIN_1291 = "4f33ce6a988d55e85a255b59f6fede790422fda3"  # re-pinned in #1291 terminal log-hash followup per #721
 
 # The #1289 window-closing file, for the staleness pin on its test
 # classes (#1289 staged no guard-lifecycle forward pins for this run;
