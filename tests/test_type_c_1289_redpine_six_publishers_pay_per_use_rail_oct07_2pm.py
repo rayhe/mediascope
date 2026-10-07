@@ -165,7 +165,7 @@ PRED_MAIN_1289 = "14d29a7811045e76b678e48350ded147da9edce5"  # re-pinned to main
 # Forward guard for the next leg: #1290 Type D. Re-pinned by #1290's
 # log-hash followup per #721 (starts as 0*40; placeholder-only per the
 # Type C precedent - the #1284 file carries no forward git-log pin).
-PRED_MAIN_1290 = "0" * 40
+PRED_MAIN_1290 = "0545f246"  # re-pinned in #1290 terminal log-hash followup per #721 (main commit sha)
 
 # The #1288 window-continuation file, for the predecessor reference
 # (max id 1004; zero one-zero-zero-five keys all forms /

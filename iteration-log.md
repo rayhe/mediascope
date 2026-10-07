@@ -1,9 +1,9 @@
-## #1290 Type D: m1003/m1004/m1005 qualitative-discipline corpus-integrity verification + #1285 background-suite verdict (DEAD at [  2%]; EIGHTH consecutive death of the new streak; tombstone lineage ONE-HUNDRED-FIFTEENTH -> ONE-HUNDRED-SIXTEENTH) + recurring-failure triage (ZERO F marks in the dead stream - nothing to triage, DETERMINATE-vacuous) + broader regression sweep (166 passed, 0 defects) + full suite re-launched - Type D FIRST and OPENING leg of the 1290-1294 window (Oct 7 2026, 03:00 PM PDT; main commit FILL_ME_MAIN / anchor FILL_ME_ANCHOR / doc-sync FILL_ME_DOCSYNC; log-hash followup registers all hashes here per #721 (this commit); doc-sync 72001/1614 -> 72085/1615 (+84/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+## #1290 Type D: m1003/m1004/m1005 qualitative-discipline corpus-integrity verification + #1285 background-suite verdict (DEAD at [  2%]; EIGHTH consecutive death of the new streak; tombstone lineage ONE-HUNDRED-FIFTEENTH -> ONE-HUNDRED-SIXTEENTH) + recurring-failure triage (ZERO F marks in the dead stream - nothing to triage, DETERMINATE-vacuous) + broader regression sweep (166 passed, 0 defects) + full suite re-launched - Type D FIRST and OPENING leg of the 1290-1294 window (Oct 7 2026, 03:00 PM PDT; main commit 0545f246 / anchor 7d6623c4 / doc-sync c9feb331; log-hash followup registers all hashes here per #721 (this commit); doc-sync 72001/1614 -> 72085/1615 (+84/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Commit hashes
-- Main commit `FILL_ME_MAIN` - verified via git rev-parse
-- Anchor followup `FILL_ME_ANCHOR` (ANCHORED_SHA patched per #565, self-anchor)
-- Doc-sync `FILL_ME_DOCSYNC` (README 72001/1614 -> 72085/1615; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
+- Main commit `0545f246` - verified via git rev-parse
+- Anchor followup `7d6623c4` (ANCHORED_SHA patched per #565, self-anchor)
+- Doc-sync `c9feb331` (README 72001/1614 -> 72085/1615; test-table row; ARCHITECTURE tree row; iteration-log entry; test-file constants patched per #719; this commit)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1290 re-pinned to the main sha in the #1289 test file per #721 (placeholder-only; the #1289 file carries no no-Type-D-#1290-in-git-log pin)
 
 ### Rotation transparency
