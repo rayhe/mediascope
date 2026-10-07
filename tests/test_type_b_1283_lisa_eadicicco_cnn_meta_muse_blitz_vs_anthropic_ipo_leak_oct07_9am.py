@@ -77,7 +77,7 @@ OWN_BASENAME = (
 TOP_KEY = "lisa_eadicicco_type_b"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # patched green in the anchor followup per #565
+ANCHORED_SHA = "9d6803cf85b2c8811e5e3f146d93c71a67494648"  # patched green in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
