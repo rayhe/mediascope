@@ -120,7 +120,7 @@ PRED_PUSH_1310 = "34e26cae"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the no-Type-D-#1315 own-run pin
 # flips green post-repin).
-PRED_MAIN_1315 = "0" * 40  # re-pinned to main sha per #721
+PRED_MAIN_1315 = "137d1a952e65889587a464db7d9e96a584078717"  # re-pinned to main sha per #721
 
 # Forward guard for the next leg: #1316 Type E. Re-pinned by #1316's
 # terminal log-hash followup per #721 (starts as 0*40;
@@ -1006,24 +1006,24 @@ class TestGuardLifecycle1315:
 
 class TestStalenessPins1315:
     def test_1314_guard_lifecycle_post_terminal_self_trip(self):
-        # Post-terminal-followup form: 22 tests in the class; ONE flips
-        # BY DESIGN when this run's main commit lands and is then
-        # re-pinned green in the terminal log-hash followup per #721
-        # (PRED_MAIN_1315 re-pinned to this run's main sha in BOTH
-        # this file and the #1314 file per the #1292 precedent), and
-        # ONE stays flipped: the test_1020_numeric_absent_in_profiles
-        # pin (the m1020 landing carries "mechanism_id: 1020" in colon
-        # form - the #1272-class forward-guard expiry; the
-        # underscore/dash pins stay green by the #723/#738/#739
-        # designed keying). The class run below therefore expects 1
-        # failed / 21 passed and documents the designed flips. The
-        # #1314 block is read-only to this run; the flips are
-        # documented here, not repaired. Deselected in the in-gate
-        # run (fails pre-commit by design).
+        # Post-terminal-followup form: 22 tests in the class, ALL
+        # GREEN. The no_type_d_1315_in_git_log pin flips BY DESIGN
+        # when this run's main commit lands and is re-pinned green in
+        # the terminal log-hash followup per #721 (PRED_MAIN_1315
+        # re-pinned to this run's main sha in BOTH this file and the
+        # #1314 file per the #1292 precedent). The 1021-form pins stay
+        # green throughout (Type D lands no mechanisms; the
+        # #723/#738/#739 designed keying holds). (The
+        # test_1020_numeric_absent_in_profiles pin that stays red
+        # permanently BY DESIGN - the #1272-class expiry - lives in
+        # the #1313 file's guard lifecycle, not here.) The class run
+        # below therefore expects 22 passed. The #1314 block is
+        # read-only to this run; the flips are documented here, not
+        # repaired. Deselected in the in-gate run (fails pre-commit
+        # by design).
         res = _class_run(E1314_FILE, "TestGuardLifecycle1314")
         out = res.stdout + res.stderr
-        assert "1 failed, 21 passed" in out, out[-2000:]
-        assert "test_1020_numeric_absent_in_profiles" in out, out[-2000:]
+        assert "22 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------

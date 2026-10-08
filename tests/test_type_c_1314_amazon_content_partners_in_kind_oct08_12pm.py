@@ -124,7 +124,7 @@ PRED_MAIN_1314 = "944d5510174c894fa4d1fec6c9e9a679e93a4b8f"  # re-pinned to main
 # log-hash followup per #721 (starts as 0*40; placeholder-only per
 # the Type C precedent - this file carries no forward git-log pin of
 # its own beyond the lifecycle class form).
-PRED_MAIN_1315 = "0" * 40  # re-pinned by #1315 terminal log-hash followup per #721
+PRED_MAIN_1315 = "137d1a952e65889587a464db7d9e96a584078717"  # re-pinned by #1315 terminal log-hash followup per #721
 
 # The #1313 window-continuation file, for the staleness pin on its
 # guard-lifecycle class (max id 1019; zero one-zero-two-zero keys all
