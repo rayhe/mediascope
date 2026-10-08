@@ -29182,3 +29182,94 @@ nicholas_sutrich_type_b:
       no_analysis_json_update: true
       background_suite_status: 'CHECKED ONLY per #795 - the #1295-launched full suite (goal hidden_files type_d_1295_full_suite.log) observed at this run''s check; an observation, not a verdict; this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1300 (next Type D).'
       in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted explicit-path staging only. Do NOT touch #1024 m846.'
+kelvin_chan_type_b:
+  name: Kelvin Chan
+  publication: ap
+  mechanism_ids: [1013]
+  notes: 'Type B #1303 (Oct 8 2026): mechanism 1013, NOT a falsification-family member (ledger holds at 59) - FIRST dedicated Type B pair on Kelvin Chan (AP Business Writer, London; zero "Kelvin Chan" hits repo-wide pre-commit, grep-verified this run; his Aug-26 $18bn-settlement co-byline with Ortutay/Huamani is not mechanism-ized under his name, disclosed). Same writer, same wire, ~3 months apart: Chan runs the adversarial regulatory-enforcement register on Meta''s Jun-9 EU WhatsApp interim-measures order (-0.40 MANUAL ILLUSTRATIVE) vs the voluntary-disclosure responsibility register on OpenAI''s Sep-17 misalignment-tracking framework (+0.10 MANUAL ILLUSTRATIVE). Illustrative delta (OpenAI minus Meta) +0.50. AP holds the Jul-13-2023 OpenAI archive-licensing deal (in-corpus, m970/m1003 lineage); OpenAI IS the payer in the compared pair and AP x Meta is $0 in-corpus, so the delta runs WITH the naive payer-softening prediction: thesis-consistent observation, NOT a falsification. Peg asymmetry (antitrust enforcement order vs voluntary corporate disclosure) and contributor-byline asymmetry on the OpenAI arm are the STRONG confounds. Mirror-attested bylines, excerpt-tier per #503, 0 browser.open.'
+  competitor_coverage:
+    type_b_1303_kelvin_chan_ap_meta_whatsapp_eu_order_vs_openai_disclosure_oct08_2am:
+      block_key: type_b_1303_kelvin_chan_ap_meta_whatsapp_eu_order_vs_openai_disclosure_oct08_2am
+      mechanism_id: 1013
+      iteration: 1303
+      iteration_type: B
+      type: B
+      date: '2026-10-08 02:00 PDT'
+      test_file: tests/test_type_b_1303_kelvin_chan_ap_meta_whatsapp_eu_order_vs_openai_disclosure_oct08_2am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Kelvin Chan
+      publication: ap
+      window: '1300-1304 window FOURTH leg (D #1300 -> E #1301 -> A #1302 -> B #1303 -> C #1304)'
+      design: 'Type B journalist cross-entity tracking: Kelvin Chan (AP Business Writer, London) on Meta''s Jun-9-2026 EU WhatsApp interim-measures order under the adversarial regulatory-enforcement register vs OpenAI''s Sep-17-2026 voluntary misalignment-disclosure framework under the responsibility register, same writer, same wire, ~3 months apart. AP holds the Jul-13-2023 OpenAI archive-licensing deal (in-corpus, profiles/ap.yaml, m970/m1003 lineage: OpenAI licenses part of AP''s text archive back to 1985 for training; terms undisclosed); AP x Meta is $0 in-corpus and AP x Anthropic is $0. OpenAI IS the payer in the compared pair, so the +0.50 illustrative delta (OpenAI minus Meta) runs WITH the naive payer-softening prediction - a thesis-consistent journalist-level observation, NOT a falsification-family member. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      meta_arm:
+        title: 'EU orders Meta to restore WhatsApp access for rival AI chatbots'
+        date: '2026-06-09'
+        outlet: ap
+        author_byline: 'Kelvin Chan'
+        entity: meta
+        url: https://techxplore.com/news/2026-06-eu-meta-whatsapp-access-rival.pdf
+        url_note: 'techxplore.com PDF mirror copied verbatim from this run''s Full-URL listing (search index 0), byline-carrying ("June 9 2026, by Kelvin Chan"; AP Photo/Martin Meissner credit); the barchart.com mirror ("Kelvin Chan - AP - Tue Jun 9, 11:01AM CDT") corroborates the byline; the apnews.com canonical did not surface in search listings, none constructed per policy; mirror URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; short verbatim phrases via search-result excerpts; byline mirror-attested via techxplore + barchart)'
+        key_quotes:
+        - 'Headline register (short phrase): "restore WhatsApp access for rival AI chatbots"'
+        - 'Enforcement verb (short phrase): "ordered Meta Platforms to restore access"'
+        - 'Breach frame (short phrase): "breaching EU law"'
+        - 'Harm frame (short phrase): "prevent harm to competition"'
+        - 'Meta pushback (short phrase): "regulatory overreach"'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+        tone_reading: 'Adversarial regulatory-enforcement register: the Commission''s interim measures are the story''s spine (order, breach of EU law, harm to competition), Meta''s appeal-and-pushback response is carried but framed as the losing side of an enforcement action. The piece names OpenAI as the aggrieved rival beneficiary inside the Meta arm itself.'
+        status: 'NEW this run (techxplore PDF mirror URL + barchart mirror URL + headline zero-hit repo-wide pre-commit)'
+      openai_arm:
+        title: 'OpenAI flags more concerning new AI behavior, vows to track it more closely'
+        date: '2026-09-17'
+        outlet: ap
+        author_byline: 'Kelvin Chan (contributing; with Kaitlyn Huamani)'
+        entity: openai
+        url: https://www.wvlt.tv/2026/09/17/openai-flags-more-concerning-new-ai-behavior-vows-track-it-more-closely/
+        url_note: 'wvlt.tv mirror copied verbatim from this run''s Full-URL listing (search index 1); contributing-credit byline "AP Business Writers Kelvin Chan in London and Kaitlyn Huamani in Los Angeles contributed to this report" (Chan is a contributor, not the lead byline - disclosed as confound; co-contributor Huamani is saturated m959/#1213, disclosed); dated 09/17/2026 18:54 -0400 in the mirror; mirror URL zero-hit repo-wide pre-commit (git grep -F); distinct from the saturated Sep-29 DevDay piece (fiftieth journalist-level member, Huamani lead) and from m862''s gov-sites training-pause wire (#1052)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; short verbatim phrases via search-result excerpts; contributing-credit byline mirror-attested via wvlt.tv + netscape/srnnews mirrors)'
+        key_quotes:
+        - 'Headline register (short phrase): "flags more concerning new AI behavior"'
+        - 'Disclosure verb (short phrase): "disclosed six reports"'
+        - 'Behavior frame (short phrase): "unexpected or concerning"'
+        - 'Analyst praise (short phrase): "step in the right direction"'
+        - 'Consensus frame (short phrase): "broader and better-informed consensus"'
+        tone_MANUAL_ILLUSTRATIVE: 0.10
+        tone_reading: 'Voluntary-disclosure responsibility register: OpenAI''s self-reported misalignment cases are relayed as proactive transparency (the company "flags" and "vows to track"), with an outside analyst praising the framework as a step in the right direction. No adversarial interrogation of why the concerning behaviors occurred; the disclosure itself is the virtue.'
+        status: 'NEW this run (wvlt.tv mirror URL + headline zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.50
+      delta_reading: 'Illustrative delta (OpenAI minus Meta) +0.50: the payer (OpenAI, Jul-13-2023 AP archive-licensing deal) receives the responsibility register (+0.10) while the non-payer (Meta, $0 AP tie) receives the adversarial enforcement register (-0.40). The delta runs WITH the naive payer-softening prediction at the journalist level - thesis-consistent, not falsifying. The peg asymmetry (a Commission interim-measures order vs a voluntary corporate disclosure) dominates the reading: the registers track the news peg''s valence at least as much as the entity.'
+      confounders:
+      - 'Peg asymmetry: the Meta arm is an antitrust enforcement order (adversarial by genre); the OpenAI arm is a voluntary corporate disclosure (responsibility-framed by genre). The register gap tracks the peg''s valence, not necessarily entity-level editorial standards. Ranked STRONG.'
+      - 'Contributor-vs-lead byline asymmetry: Chan is the sole byline on the Meta arm but only a contributing credit ("contributed to this report") on the OpenAI arm alongside Kaitlyn Huamani (saturated m959/#1213); the OpenAI register cannot be cleanly attributed to Chan alone. Ranked STRONG.'
+      - 'Temporal gap: ~3 months apart (Jun 9 vs Sep 17 2026), across different news cycles (EU enforcement season vs AI-safety disclosure season). Ranked MODERATE.'
+      - 'Excerpt-bounded evidence: 0 browser.open per #503; both arms read via search-result excerpts and byline-carrying mirrors only; no apnews.com canonical recovered. Ranked MODERATE.'
+      - 'Wire-genre register constraint: AP wire copy is institutionally neutral; the observed gap lives in framing verbs and source selection, a narrow band. Ranked MODERATE.'
+      - 'The Meta arm names OpenAI as the aggrieved rival beneficiary, so the pair is not entity-isolated: the payer appears inside the non-payer''s negative piece. Ranked WEAK for family purposes.'
+      counter_evidence:
+      - 'Chan''s Aug-26 $18bn-settlement co-byline (with Ortutay/Huamani) covered Meta''s settlement as straight wire news, showing he does not run a stable anti-Meta writer trait across assignments.'
+      - 'The OpenAI arm''s softness may be Huamani''s: as the Los Angeles-based co-contributor she may have written the disclosure-relay passages, so the responsibility register may not be Chan''s choice.'
+      - 'AP''s OpenAI deal (Jul 2023) is archive licensing for training, not editorial; no evidence in the corpus ties it to coverage decisions, and AP ran the adversarial m1003 AP x Anthropic dual-peg wires against another non-payer in the same period.'
+      connects_to: [970, 1003]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Kelvin Chan (AP Business Writer, London) runs the adversarial regulatory-enforcement register on Meta''s Jun-9 EU WhatsApp interim-measures order (-0.40 MANUAL ILLUSTRATIVE) and the voluntary-disclosure responsibility register on OpenAI''s Sep-17 misalignment-tracking framework (+0.10 MANUAL ILLUSTRATIVE); illustrative delta (OpenAI minus Meta) +0.50. AP holds the Jul-13-2023 OpenAI archive-licensing deal (m970/m1003 lineage) while AP x Meta is $0 in-corpus, so the delta runs WITH the naive payer-softening prediction at the journalist level: thesis-consistent observation, NOT a falsification-family member. The peg asymmetry (enforcement order vs voluntary disclosure) and the contributor-byline asymmetry are the STRONG confounds; the gap tracks the peg at least as much as the entity. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction''s FAILURES, and the +0.50 illustrative delta runs WITH the prediction here (payer OpenAI receives the softer register). This is a thesis-consistent journalist-level observation, peg-dominated by the STRONG confounds above. Correlation, not causation. No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 59). NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 59
+      ledger_note: 'Ledger holds at 59 this run (m1013 NOT a falsification-family member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952, 2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (m973, 3 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (m974, 5 occurrences); fifty-third member-claim form intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form intact in profiles/guardian.yaml (2 occurrences); fifty-fifth member-claim form intact in profiles/atlantic.yaml (2 occurrences); fifty-sixth member-claim form intact in profiles/wired.yaml (m1000, 2 occurrences); fifty-seventh member-claim form intact in profiles/ap.yaml (m1003, 3 occurrences); fifty-eighth member-claim form intact in profiles/financial-times.yaml (m1006, 3 occurrences); fifty-ninth member-claim form intact in profiles/news-corp.yaml (m1012, 3 occurrences); sixtieth member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 59).'
+      research_method: 'Delegated scout (~29 searches, 0 browser.open): SELECTED Chan as the only fully-verified same-writer pair with URL-complete arms (AP wire Jun 9 / Sep 17 2026, ~3 months apart); REJECTED 40+ candidates in a numbered audit (saturated 21, structural 6, prior-run rejections 7, no clean pair 10); backups Rollet/BI (no verbatim article URLs) and Rosenberg/Axios (no clean Meta arm) + 2 main-run browser.search verification sets (exact-headline Meta-arm search returning the techxplore PDF mirror with "June 9 2026, by Kelvin Chan" byline and the barchart mirror with "Kelvin Chan - AP" byline; exact-headline OpenAI-arm search returning the wvlt.tv mirror with the contributing-credit byline and 09/17/2026 datestamp), corpus saturation greps (zero "Kelvin Chan" hits repo-wide; all 3 mirror URLs zero-hit repo-wide; Reuters Jul-13-2023 AP-OpenAI deal URL in-corpus via m970, disclosed as re-surface), 0 browser.open per #503. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Verbatim quotation limited to short phrases per the copyright-brief-quotation rule.'
+      novelty: 'FIRST dedicated Type B pair on Kelvin Chan (m1013); zero test_type_b_1303 files on disk pre-commit (glob); no "Type B #1303" in git log pre-commit (--grep); max numeric mechanism_id 1012 pre-commit; zero numeric/underscore/dash one-zero-one-three mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1303 in key, no 1013 substring); 3/3 novel source URLs zero-hit repo-wide pre-commit (git grep -F) + 1 in-corpus re-surface disclosed (Reuters Jul-13-2023 deal URL via m970); both arm headlines zero-hit repo-wide pre-commit; no #1303 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 73086/1627 pre-commit. NOT a falsification-family member (thesis-consistent observation); sixtieth member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1300-launched full suite (goal hidden_files type_d_1300_full_suite.log) observed at this run''s check (last write Oct 8 00:51 PDT, ~5% progress, zero live pytest processes - appears stalled; an observation, not a verdict; no verdict declared). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1305 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1013 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://techxplore.com/news/2026-06-eu-meta-whatsapp-access-rival.pdf
+      - https://www.wvlt.tv/2026/09/17/openai-flags-more-concerning-new-ai-behavior-vows-track-it-more-closely/
+      - https://www.barchart.com/story/news/2382257/eu-orders-meta-to-restore-whatsapp-access-for-rival-ai-chatbots
+      - https://www.reuters.com/business/media-telecom/associated-press-openai-partner-explore-generative-ai-use-news-2023-07-13/
