@@ -199,7 +199,7 @@ PRED_MAIN_1296 = "14af9fecd0d7dcc93eced86ab065e9114f685226"  # patched in the te
 # #1297's main commit (full sha), for the ancestor-form no-Type-A-#1297
 # pin. Staged 0*40 placeholder-only per #721; re-pinned in #1297's
 # terminal log-hash followup per #721.
-PRED_MAIN_1297 = "0" * 40  # placeholder-only per #721
+PRED_MAIN_1297 = "a8bd4c5dc8708c4f8604762175446526b29dcad4"  # re-pinned in the #1297 terminal log-hash followup per #721
 
 # The #1295 window-opener file, for the staleness pin on its
 # guard-lifecycle class (max id 1008; zero next-number
