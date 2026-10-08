@@ -112,7 +112,7 @@ BLOCK_KEY = (
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "7009064e750fd2ecb3a0940ebabeb954dee5a789"  # patched in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
