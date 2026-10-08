@@ -150,7 +150,7 @@ TOP_KEY = "will_shanklin_type_b"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "71c2cc5219e7a00986312a1278b6bb2caf7d0bb2"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
