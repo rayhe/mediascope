@@ -147,7 +147,7 @@ PRED_FINAL_1316 = "4867ff1c0bfa89b469f794c0220f9c295dd40c4f"
 # no-Type-A-#1317 pin. Patched in the terminal log-hash followup
 # per #721 (re-pinned in BOTH this file and the #1316 file per the
 # #1292 re-pin-both-copies precedent).
-PRED_MAIN_1317 = "0" * 40  # re-pinned to #1317 main sha per #721
+PRED_MAIN_1317 = "7749f95d8d5b36031bba2bf11ddc92636d48b753"  # re-pinned to #1317 main sha per #721
 
 # The #1318 main commit (full sha), for the ancestor-form
 # no-Type-B-#1318 pin. Patched in #1318's terminal log-hash followup
