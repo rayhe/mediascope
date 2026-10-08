@@ -136,7 +136,7 @@ PRED_FINAL_1301 = "9c61ea8b3e0c0bc733f0c9bea6364e8a722f00dc"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the own-run git-log pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1303 = "0" * 40
+PRED_MAIN_1303 = "0078dd5d043b2b47276a5a19d5e7f89919b9975e"  # re-pinned to #1303 main sha in the terminal log-hash followup per #721
 
 # Forward guard for the next leg: #1304 Type C. Re-pinned by #1304's
 # log-hash followup per #721 (starts as 0*40; the forward pin is
@@ -961,14 +961,15 @@ class TestGuardLifecycle1303:
         # intact, no sixtieth member, ledger 59) verified GREEN
         # pre-commit this run via the subprocess staleness pin (Type
         # B lands mechanism 1013 as a thesis-consistent observation,
-        # not a family member); the max-1012, zero one-zero-one-three,
-        # and no-Type-B-#1303-in-git-log pins flip post-main-commit on
-        # this run's own landing (the #1191-class self-trip and the
-        # #1272-class forward-guard expiry, by design, documented in
-        # the staleness pin below).
+        # not a family member); the max-1012 and zero one-zero-one-three
+        # pins flip post-main-commit on this run's own landing (the
+        # #1191-class self-trip on no-Type-B-#1303-in-git-log, re-pinned
+        # green in the terminal followup, and the #1272-class
+        # forward-guard expiry on 1013-numeric-absent, permanent), by
+        # design, documented in the staleness pin below).
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "TestStalenessPins1303" in src
-        assert "2 failed, 20 passed" in src
+        assert "1 failed, 21 passed" in src
 
 
 # ---------------------------------------------------------------------------
@@ -1039,27 +1040,25 @@ class TestIterationLog1303:
 
 class TestStalenessPins1303:
     def test_1302_guard_lifecycle_post_commit_self_trip(self):
-        # Post-main-commit form: 20 of the 22 pass; the two that fail
-        # BY DESIGN are test_no_type_b_1303_in_git_log_pin (this run's
-        # own main commit carries "Type B #1303" while PRED_MAIN_1303
-        # in the #1302 file is still 0*40; the #1191-class self-trip,
-        # re-pinned green in this run's log-hash followup per #721)
-        # and test_1013_numeric_absent_in_profiles (mechanism 1013
-        # lands in profiles/ this run; the #1272-class forward-guard
-        # expiry - the next-number guard is consumed by the landing).
-        # test_pins_on_one_mechanism_landing stays GREEN (asserts on
-        # the #1302 file's own constants, untouched by this run); the
-        # member and direction pins stay GREEN (m1013 is a
-        # thesis-consistent observation, not a family member).
-        # Deselected pre-commit (both pins pass pre-commit).
+        # Post-terminal-followup form: 21 of the 22 pass; the one that
+        # fails BY DESIGN is test_1013_numeric_absent_in_profiles
+        # (mechanism 1013 lands in profiles/ this run; the #1272-class
+        # forward-guard expiry - the next-number guard is consumed by
+        # the landing; stays red permanently). The second flip,
+        # test_no_type_b_1303_in_git_log_pin (the #1191-class
+        # self-trip: this run's own main commit carries "Type B
+        # #1303"), is re-pinned green in the terminal log-hash
+        # followup per #721 (its PRED_MAIN_1303 now holds this run's
+        # main sha). test_pins_on_one_mechanism_landing stays GREEN
+        # (asserts on the #1302 file's own constants, untouched by
+        # this run); the member and direction pins stay GREEN (m1013
+        # is a thesis-consistent observation, not a family member).
+        # Deselected pre-commit (the pin passes pre-commit).
         res = _class_run(D1302_FILE, "TestGuardLifecycle1302")
         assert res.returncode != 0, res.stdout[-2000:]
-        assert "2 failed, 20 passed" in res.stdout, res.stdout[-2000:]
-        for name in (
-            "test_no_type_b_1303_in_git_log_pin",
-            "test_1013_numeric_absent_in_profiles",
-        ):
-            assert name in res.stdout, res.stdout[-2000:]
+        assert "1 failed, 21 passed" in res.stdout, res.stdout[-2000:]
+        assert "test_1013_numeric_absent_in_profiles" in res.stdout, \
+            res.stdout[-2000:]
 
 
 # ---------------------------------------------------------------------------
