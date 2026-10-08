@@ -115,7 +115,7 @@ PRED_FINAL_1301 = "9c61ea8b3e0c0bc733f0c9bea6364e8a722f00dc"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1302 pin in the #1301 file. Patched in the terminal
 # log-hash followup per #721.
-PRED_MAIN_1302 = "0" * 40  # re-pinned in the terminal log-hash followup per #721
+PRED_MAIN_1302 = "b8859fbc369d47ba937b5f4e33ed3686f65c94f8"  # re-pinned in the terminal log-hash followup per #721
 
 # #1303's main commit (full sha), for the ancestor-form no-Type-B-#1303
 # pin. Patched in #1303's terminal log-hash followup per #721.
@@ -882,24 +882,23 @@ class TestGuardLifecycle1302:
 class TestStalenessPins1302:
     def test_1301_guard_lifecycle_post_commit_self_trip(self):
         # Post-terminal-followup form: 21 tests in the class; THREE
-        # flip BY DESIGN when this run's main commit lands and STAY
-        # flipped: test_no_type_a_1302_in_git_log_pin (the
-        # #1191-class self-trip - re-pinned green in the terminal
-        # log-hash followup per #721, its PRED_MAIN_1302 now holds
-        # this run's main sha), test_1012_numeric_absent_in_profiles
+        # flip BY DESIGN when this run's main commit lands, and TWO
+        # STAY flipped permanently: test_1012_numeric_absent_in_profiles
         # (the #1272-class forward-guard expiry - the m1012 landing
         # carries "mechanism_id: 1012" in colon form; the
         # underscore/dash pins stay green by the #723/#738/#739
-        # designed keying), and test_no_fifty_ninth_member_pin (the
+        # designed keying) and test_no_fifty_ninth_member_pin (the
         # #1191-class self-trip - this run lands the fifty-ninth
-        # member; the pin stays red BY DESIGN). The class run below
-        # therefore expects 3 failed / 18 passed and documents the
-        # designed flips. The #1301 block is read-only to this run;
-        # the flips are documented here, not repaired.
+        # member). The third flip, test_no_type_a_1302_in_git_log_pin
+        # (the #1191-class self-trip), is re-pinned green in the
+        # terminal log-hash followup per #721 (its PRED_MAIN_1302 now
+        # holds this run's main sha). The class run below therefore
+        # expects 2 failed / 19 passed and documents the designed
+        # flips. The #1301 block is read-only to this run; the flips
+        # are documented here, not repaired.
         res = _class_run(D1301_FILE, "TestGuardLifecycle1301")
         out = res.stdout + res.stderr
-        assert "3 failed, 18 passed" in out, out[-2000:]
-        assert "test_no_type_a_1302_in_git_log_pin" in out, out[-2000:]
+        assert "2 failed, 19 passed" in out, out[-2000:]
         assert "test_1012_numeric_absent_in_profiles" in out, out[-2000:]
         assert "test_no_fifty_ninth_member_pin" in out, out[-2000:]
 
