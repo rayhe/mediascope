@@ -43341,6 +43341,119 @@ publications:
       relationship: Extends same-week ad-monetization asymmetry to publication-level
         financial architecture
     test_file: tests/test_sara_fischer_axios_cross_entity_settlement_openai_ad_revenue_publication_funding_deal_vocabulary_bifurcation_aug27.py
+
+  type_a_1317_semafor_microsoft_suleyman_exec_platform_vs_meta_led_tampering_exclusive_oct08_3pm:
+    mechanism_id: 1021
+    iteration: 1317
+    iteration_type: A
+    type: competitor_coverage_deep_dive
+    date: '2026-10-08'
+    date_analyzed: '2026-10-08'
+    time_pdt: '15:00'
+    publication: Semafor
+    entity: Microsoft
+    goal_id: 'goal_54093bda4145'
+    author: 'Kit (with Ray)'
+    title: 'Semafor x Microsoft: Suleyman executive-platform interviews (+0.25 mean) vs Semafor x Meta LED-tampering accountability exclusive (-0.30); the pair #1312 rejected as thin-armed now lands; thesis-consistent, ledger holds at 59'
+    description: 'FIRST dedicated corpus mechanism on the Semafor x Microsoft pair. #1312''s scout rejected this pair ("thin arms on both sides, no dedicated recent Semafor-on-Meta piece surfaced"); this run supersedes the rejection with new main-run evidence: TWO Semafor-attributed Microsoft executive-platform arms (Suleyman MAI-Transcribe-1 interview ~Apr 2026; Suleyman MAI-Voice-1/MAI-1-preview interview Aug 28 2026) and ONE Semafor-attributed Meta accountability arm (Sep-1-2026 LED-tampering exclusive). The naive uniform payer-softening prediction (Microsoft sponsors Semafor''s flagship Signals newsroom product for a "substantial" sum since Feb 5 2024) is MET on the executive-platform register: the sponsor''s AI CEO gets repeated long-form interview space to frame the MAI independence narrative; Meta gets an adversarial privacy-accountability exclusive. Verdict thesis_consistent_observation; NOT a falsification-family member; ledger holds at 59.'
+    novelty_verification: 'Pre-commit novelty greps per #715: zero test_type_a_1317 files on disk (glob); no "Type A #1317" in git log (--grep); max numeric mechanism_id 1020 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-two-one mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded, __pycache__ excluded per the #715 pattern-rescope lesson); block key zero-hit repo-wide pre-commit (designed keying: iteration 1317 in key, no 1021 substring, per the #723/#738/#739 convention); "## #1317" zero-hit in iteration-log pre-commit; README stats 74493/1641 pre-commit; no #1317 row in README/ARCHITECTURE test tables pre-commit; 8 novel URLs zero-hit repo-wide pre-commit (git grep -F): the Bloomberg Law Semafor-interview relay, the Engadget Suleyman-interview relay, the Semafor Tech YouTube interview video, the PYMNTS Signals-deal relay, the Engadget Signals-deal relay, the digitalinformationworld Signals-deal relay, the biometricupdate Meta-LED frame relay, the techhelp.ca Meta-LED relay. The Startup Fortune Meta-LED URL is a RE-SURFACE (Type E press surface since #576, 29 in-corpus hits); the Semafor-authorship reading is the new element. The scout''s Nscale relay URL never surfaced in main-run Full-URL listings and was dropped per the #1312 TollBit precedent. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    research_method: '1 delegated scout (ranked 3 pairs: Semafor x Microsoft SELECTED - supersedes the #1312 rejection with new arm evidence; AP x Google REJECTED - arm-attribution ambiguity, AP-authorship of the Meta comparator unconfirmed; Guardian x xAI REJECTED - zero-publisher-deal posture makes it a zero-gradient control, weaker thesis fit; the m1019 BBC control already banks that design) + 8 main-run browser.search verification sets (Copilot-redesign Semafor-attribution hunt: no Semafor attribution surfaced, arm dropped; semafor.com-scoped Meta query: zero results, the index carries semafor.com poorly - confirmed gap; Suleyman Semafor-interview relay attestation: VERIFIED via Bloomberg Law + Engadget + Semafor Tech YouTube; Semafor Meta LED-exclusive relay attestation: VERIFIED via Startup Fortune + techhelp.ca + biometricupdate + theoverspill; Nscale Semafor-attribution hunt: FAILED - the scout''s relay URL never surfaced in main-run listings, arm dropped per the TollBit precedent; Signals-deal verification: 7-relay attestation incl. the FT "substantial" quote and the NYT-lawsuit timing texture), 0 browser.open per #503. Excerpt-bounded; Semafor originals not in the search index, so arms are relay-attested with explicit provenance. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+    arms:
+      arm_msft_1_suleyman_mai_transcribe_interview:
+        title: Semafor interviews Microsoft AI CEO Mustafa Suleyman on MAI-Transcribe-1 (~Apr 2026)
+        date: '2026-04-01'
+        register: executive_platform_interview
+        tone_MANUAL_ILLUSTRATIVE: 0.2
+        entity_target: Microsoft (the payer; Semafor grants the AI CEO long-form interview space on the in-house model launch)
+        excerpts:
+        - '"there''s still a lot of work to be done to get computers to understand us" (Suleyman, via Bloomberg Law on the Semafor interview)'
+        - 'MAI-Transcribe-1 discussed as the critical early step for voice-driven assistants (via TradingView relay of the Semafor interview)'
+        note: 'The platform grant is the soft act; the content carries Suleyman''s own candor about voice-AI limits, which moderates the softness reading (disclosed as a confound). Relay-attested: Semafor original not in the search index.'
+        outlet_role: Semafor as executive interviewer; relay via Bloomberg Law, TradingView, Seeking Alpha
+        url_status: 'zero-hit repo-wide pre-commit (git grep -F); verbatim from Full-URL listings; relay-attested per #503'
+        urls:
+        - https://News.Bloomberglaw.Com/artificial-intelligence/microsoft-says-ai-voice-command-needs-more-work-semafor
+      arm_msft_2_suleyman_mai_voice_models_interview:
+        title: Semafor interviews Mustafa Suleyman on MAI-Voice-1 and MAI-1-preview (Reed Albergotti, Aug 28 2026)
+        date: '2026-08-28'
+        register: executive_platform_interview
+        tone_MANUAL_ILLUSTRATIVE: 0.3
+        entity_target: Microsoft (the payer; the AI CEO frames the OpenAI-independence narrative on Semafor''s platform)
+        excerpts:
+        - '"We are one of the largest companies in the world. We have to be able to have the in-house expertise to create the strongest models in the world." (Suleyman to Semafor''s Reed Albergotti, via Semafor Tech YouTube)'
+        - '"We''re committed to optionality - using OpenAI, open source, or our own as needed" (Suleyman to Semafor, via thetip.ai relay)'
+        - '"an enormous five-year roadmap that we''re investing in quarter after quarter" (Suleyman to Semafor, via Engadget relay)'
+        note: 'Second long-form Suleyman platform in five months; the independence-from-OpenAI framing runs unchallenged in the excerpted record. Albergotti named Semafor SF bureau chief (Oct 7 2026 announcement).'
+        outlet_role: Semafor as executive interviewer; relay via Engadget, Semafor Tech YouTube
+        url_status: 'zero-hit repo-wide pre-commit (git grep -F); verbatim from Full-URL listings; relay-attested per #503'
+        urls:
+        - https://www.engadget.com/ai/microsoft-introduces-a-pair-of-in-house-ai-models-193003900.html
+        - https://www.youtube.com/watch?v=Zo-ZtQPkzhU
+    meta_comparator:
+      title: Semafor exclusive - Meta disables cameras on thousands of tampered smart glasses (Sep 1 2026)
+      date: '2026-09-01'
+      register: privacy_accountability_exclusive
+      tone_MANUAL_ILLUSTRATIVE: -0.3
+      entity_target: Meta (the non-payer on this pair; adversarial privacy-accountability frame with Meta-exec damage-control quotes)
+      excerpts:
+      - '"Meta has disabled the photo- and video-taking abilities for thousands of its Glasses users after detecting they had tampered with the light that discloses that the device''s camera is on" (Startup Fortune relay of the Semafor exclusive)'
+      - '"Meta told Semafor that less than 0.1% of all glasses sold have been tampered with" (Startup Fortune relay)'
+      - '"It''s been a little bit of a cat and mouse game" (Alex Himel, Meta VP wearables, to Semafor, via theoverspill relay)'
+      note: 'The exclusive IS the Himel interview: Meta gets access, but the register is adversarial accountability (covert-recording backlash, "pervert glasses" context), not roadmap framing. URL is a re-surface (Type E press surface since #576); the Semafor-authorship attribution is the new analytical element this run.'
+      outlet_role: Semafor as accountability investigator; relay via Startup Fortune, techhelp.ca, biometricupdate, theoverspill
+      url_status: 'RE-SURFACE: verbatim URL in-corpus since #576 Type E press surface (29 hits); Semafor-authorship reading new this run'
+      urls:
+      - https://startupfortune.com/meta-permanently-disables-cameras-on-thousands-of-tampered-smart-glasses/
+      - https://www.biometricupdate.com/202609/metas-smart-glasses-privacy-defense-falters-when-ai-can-use-camera-without-recording-light
+      - https://techhelp.ca/smart-glasses-privacy-backlash-meta-audio/
+    microsoft_arm_scores: [0.2, 0.3]
+    microsoft_arm_avg: 0.25
+    meta_arm_score: -0.3
+    illustrative_delta_microsoft_minus_meta: 0.55
+    delta_calc: '0.25 - (-0.30) = +0.55'
+    delta_direction: 'Payer-favoring: the sponsor''s AI CEO gets repeated executive-platform interviews (+0.25 mean); Meta gets adversarial privacy-accountability (-0.30). n=2 vs n=1 degenerate sample disclosed.'
+    methodology: 'n=2 (Semafor Microsoft Suleyman interviews ~Apr 2026, Aug 2026) vs n=1 (Semafor Meta LED-tampering exclusive Sep 1 2026); MANUAL ILLUSTRATIVE ONLY; degenerate-sample contract disclosed; excerpt-bounded per #503 (0 browser.open); Semafor originals not in the search index, relay-attested.'
+    engine_run: false
+    p_value: NOT_CALCULATED
+    cohens_d: NOT_CALCULATED
+    ci_95: NOT_CALCULATED
+    is_significant: false
+    verdict: thesis_consistent_observation
+    incentive_attribution: 'The naive uniform payer-softening prediction (Microsoft x Semafor Signals sponsorship, Feb 5 2024, "substantial" sum) is MET on the executive-platform register: the sponsor''s AI CEO is granted repeated long-form interview space to frame the MAI independence narrative, while Meta receives an adversarial privacy-accountability exclusive. INCONCLUSIVE for outlet-level capture: access is symmetric (Himel also got exclusive-quote space); the register differs. Correlation is not causation.'
+    confounders_ranked:
+      strong:
+      - 'Excerpt-bounded evidence (no first-hand Semafor reads; semafor.com absent from the search index; all arms relay-attested via Bloomberg Law, Engadget, YouTube, Startup Fortune).'
+      - 'Unmatched pegs: in-house model-launch interviews (Microsoft) vs wearables privacy-crisis accountability (Meta). The comparison is register-level (platform access vs accountability), not same-story.'
+      moderate:
+      - 'n=2 vs n=1 degenerate sample; single-outlet pair; the Semafor x Microsoft line is one mechanism old.'
+      - 'Temporal skew: Microsoft arms ~Apr and Aug 2026 vs Meta arm Sep 2026; different news cycles.'
+      weak:
+      - 'A1''s embedded candor (Suleyman admits voice-AI limits in the Semafor interview) moderates the platform-softness reading.'
+    counter_evidence:
+    - 'A1''s embedded candor: Suleyman tells Semafor that voice AI "still has a lot of work to be done" - the executive platform is not pure puff; the sponsor''s CEO volunteers limitations on the record.'
+    - 'Symmetric access: the Meta arm IS the Himel exclusive - Meta''s VP of wearables got the same interview access; the asymmetry is in the register (roadmap framing vs crisis accountability), not in access.'
+    - '#1312''s scout rejection of this pair ("thin arms") is superseded by this run''s arm evidence, not contradicted in principle: the rejection was an evidence-gap call, and the gap has closed.'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only. p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026 standing rule). Engine NOT run. Verdict thesis_consistent_observation. no_analysis_json_update: true. NOT artifact-grade. Correlation is not causation. Hypothesis-generating only.'
+    falsification_family: 'NOT a falsification-family member: register-local thesis-consistent observation on the first Semafor x Microsoft mechanism, not a uniform-prediction test. Ledger holds at 59. Fortieth direction absent by design.'
+    test_file: tests/test_type_a_1317_semafor_microsoft_suleyman_exec_platform_vs_meta_led_tampering_exclusive_oct08_3pm.py
+    extends: 'Supersedes the #1312 scout rejection of Semafor x Microsoft ("thin arms on both sides") with new main-run arm evidence; FIRST dedicated Semafor x Microsoft mechanism; first mechanism-corpus documentation of the Feb-2024 Signals sponsorship (no prior mechanism).'
+    cross_references:
+    - mechanism_id: 1018
+      description: '#1312 scout rejection of Semafor x Microsoft (superseded by this run''s arm evidence)'
+    financial_relationship:
+      partner: Microsoft
+      outlet: Semafor
+      deal: Signals AI-assisted breaking-news feed sponsorship
+      announced: '2024-02-05'
+      terms: undisclosed, "substantial" to Semafor's business (Financial Times sourcing, via PYMNTS and Engadget relays)
+      tooling: Semafor journalists use Microsoft and OpenAI tools (custom MISO bot on OpenAI's platform + Bing)
+      timing_texture: announced weeks after the NYT's Dec 2023 copyright lawsuit against Microsoft/OpenAI (noted in the PYMNTS piece itself)
+      status: ongoing commercial relationship; no split reported (bounded absence)
+      urls:
+      - https://www.pymnts.com/news/artificial-intelligence/2024/microsoft-forms-ai-partnership-with-news-startup-semafor/
+      - http://engadget.com/microsoft-is-teaming-up-with-semafor-on-ai-assisted-news-stories-124320277.html
+      - https://www.digitalinformationworld.com/2024/02/news-startup-rolls-out-ai-editorial.html
+
 google_news_ai_pilot_two_year_nda_no_sue_deal_structure_cma_neutralization:
   mechanism_id: 355
   title: Google News AI Pilot Two-Year NDA/No-Sue Deal Structure as Showcase Replacement
