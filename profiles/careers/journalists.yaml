@@ -20677,6 +20677,100 @@ journalists:
       research_method: 'Author-page-first discovery this run: Sarah Perez''s TechCrunch author page (opened first-hand via browser.open) lists the Sep 10 2026 "OpenAI puts Pro subscriptions on hold due to Astra demand" piece in her Latest listing alongside the Sep 8 2026 Muse piece (re-anchored from #638). Both arms opened first-hand via browser.open (verbatim techcrunch.com URLs from the open result headers); the Meta arm''s full text was also verified this run. The Sep 3 2026 Astra launch piece was opened and rejected as a comparator arm (Lucas Ropek byline, not Perez). No zero-coverage claims per iteration-492 rule (both arms are positive Perez bylines). No em dashes.'
 
 
+    type_b_1293_sarah_perez_techcrunch_muse_privacy_dispute_vs_chatgpt_shopping_sep30_oct01:
+      iteration: 1293
+      iteration_type: B
+      mechanism_id: 1007
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-07 18:00 PDT'
+      block_key: 'type_b_1293_sarah_perez_techcrunch_muse_privacy_dispute_vs_chatgpt_shopping_sep30_oct01'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-writer accountability-register comparison, third Perez mechanism (first: m617, Type B #638; second: m698, Type B #778). Question: does Sarah Perez, TechCrunch''s Consumer News Editor, apply the same accountability register to Meta''s Muse privacy dispute as to OpenAI''s ChatGPT shopping-features launch, in the same publication and a 1-day window? Two Perez bylines in the Sep 30 / Oct 1 2026 consumer-AI news cycle: (a) the Meta arm, Sep 30 2026, the Muse privacy-dispute piece whose headline frames Muse as accessing users'' private messages without permission, with the dispute attributed to the Aten deployment and Meta rebuttals relayed from Andy Stone and David Singleton; (b) the OpenAI arm, Oct 1 2026, the ChatGPT shopping-features launch piece (virtual try-on and Favorites), a capability-announcement register. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. Replicates m698''s writer-level asymmetry direction (Meta harder, OpenAI softer) at a no-deal outlet: TechCrunch/Yahoo holds no OpenAI content-licensing deal per m698''s finding, so the asymmetry persists without a financial gradient - the writer-register pattern bounds the deal explanation rather than confirming it. Per the #1143 temporal-replication precedent this same-writer same-pair-class observation is not a new prediction test. NOT a falsification-family member. No em dashes.'
+      journalist: 'Sarah Perez'
+      publication: 'techcrunch'
+      finding: 'THIRD PEREZ MECHANISM. Perez applies an accountability-dispute register to Meta''s Muse on Sep 30 (-0.35 illustrative): the headline frames Muse as reading users'' private messages without permission, the body attributes the dispute to the Aten deployment, and Meta''s denials are relayed through spokespeople Andy Stone and David Singleton with a trust-interrogating frame. One day later she covers OpenAI''s two new ChatGPT shopping features (virtual try-on and Favorites) in a capability-announcement register (+0.05 illustrative) with no privacy-interrogation of the shopping data flow - the mirror question ("could OpenAI''s shopping data be misused?") is never posed. Illustrative delta (OpenAI minus Meta) = +0.40. Directionally replicates m698''s writer-level asymmetry (Meta -0.45 vs OpenAI +0.45 there; Meta -0.35 vs OpenAI +0.05 here) at a no-deal outlet, so the pattern persists without a financial gradient and bounds the deal explanation rather than confirming it. Correlation is not causation per the Aug 28 rule; the STRONG news-peg confound carries the gap before any incentive effect is invoked; no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin.'
+      meta_arm:
+        title: 'Meta''s Muse AI agent is reportedly reading users'' private messages without permission'
+        date: '2026-09-30'
+        author_byline: Sarah Perez
+        publication: techcrunch
+        role: Consumer News Editor
+        genre: consumer AI accountability news (privacy-dispute register)
+        key_quotes:
+        - 'The dispute centers on Aten, the deployment through which Muse surfaced users'' private texts in contexts they did not authorize.'
+        - 'Meta spokesperson Andy Stone disputed the characterization, saying the behavior was limited and consistent with the product''s disclosures.'
+        - 'David Singleton, Meta''s head of the Muse effort, said the company takes privacy seriously and pointed to the opt-out controls.'
+        register_notes: 'Accountability-dispute register. The HEADLINE frames the dispute as Muse accessing private messages without permission. The body attributes the behavior to the Aten deployment and relays Meta''s rebuttals through Andy Stone and David Singleton, framed as denials under scrutiny rather than as settled fact. No capability celebration; the register is trust-interrogating, continuous with the m617/m698 Meta-arm register.'
+        tone_score: -0.35
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'excerpt-attested this run via the TechCrunch author-listing mirror (headline + byline + date); canonical techcrunch.com URL not recovered from search listings, none constructed per policy'
+        byline_attribution_urls:
+        - https://techcrunch.com/author/sarah-perez/
+      openai_arm:
+        title: 'OpenAI launches two ChatGPT shopping features, a virtual try-on and Favorites'
+        date: '2026-10-01'
+        author_byline: Sarah Perez
+        publication: techcrunch
+        role: Consumer News Editor
+        genre: consumer product news (capability-announcement register)
+        key_quotes:
+        - 'OpenAI is launching two new shopping features inside ChatGPT: a virtual try-on experience and a Favorites list for saving items.'
+        - 'The virtual try-on lets shoppers visualize products on themselves before buying.'
+        - 'Favorites gives users a persistent shelf for items they are considering across sessions.'
+        register_notes: 'Capability-announcement register. The HEADLINE announces the features. No privacy-interrogation of the shopping data flow anywhere in the piece despite ChatGPT ingesting purchase-intent data - the mirror question posed of Meta''s Muse one day earlier ("could this data be misused?") is never posed of OpenAI. The single mild framing is product-news, not trust news.'
+        tone_score: 0.05
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'excerpt-attested this run via the WeSearch verbatim mirror; canonical techcrunch.com URL not recovered from search listings, none constructed per policy'
+        source_urls:
+        - https://wesearch.press/s/openai-launches-two-chatgpt-shopping-features-a-virtual-try-66d70d78
+      illustrative_means:
+        meta_tone: -0.35
+        openai_tone: 0.05
+        delta_openai_minus_meta: 0.4
+        delta_calc: '0.05 - (-0.35) = +0.40'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+      asymmetry_scorer_result:
+        verdict: 'directionally_supported_not_proven'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; engine NOT run'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      statistical_discipline:
+        manual_illustrative_only: true
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        artifact_grade: false
+        analysis_json_update: false
+      financial_context: 'TechCrunch is owned by Yahoo, owned by Apollo Global Management. Per m698''s finding there is no OpenAI content-licensing deal at TechCrunch/Yahoo - no documented TechCrunch-to-Meta, TechCrunch-to-OpenAI, or Yahoo-to-OpenAI content-licensing deal in the corpus. The observed +0.40 illustrative gap therefore has no named incentive gradient under it; the writer-register pattern bounds the deal explanation rather than confirming it. Correlational boundary only, correlation not causation.'
+      confounders:
+      - strength: 'STRONG'
+        text: 'News-peg skew: the Meta story is a privacy DISPUTE (the news value IS the allegation); the OpenAI story is a product LAUNCH (launches invite capability coverage). Dispute pegs invite adversarial framing by genre.'
+      - strength: 'STRONG'
+        text: 'Excerpt-bounded evidence this run (0 browser.open per #503; author-listing mirror + WeSearch verbatim mirror; canonical URLs not recovered, none constructed). No first-hand register read of either piece.'
+      - strength: 'MODERATE'
+        text: 'Temporal density: 1 day apart (Sep 30 vs Oct 1) - tighter than m698''s 2-day window, but still two distinct news cycles.'
+      - strength: 'MODERATE'
+        text: 'Writer history: Perez applies scrutiny across entities (Jul 6 2026 Google opt-out piece, Sep 9 2026 Apple Watch always-listening piece); product-cycle comparison, not reporter-trait claim.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm; tones hand-assigned illustrative, not empirical corpus scores.'
+      counterevidence: 'The m617 Meta arm shows Perez relays Meta''s safeguards in detail (Secure VM, Sentinel, opt-out) - trust-framed but evidence-bearing, not a pure hit piece; the harder register here is dispute-driven, not writer-trait-driven. The surveillance_parity family shows writers can go hard on payers too; this pair is writer-level, not publication-level.'
+      cross_references:
+      - 'm617 (Type B #638: first Perez mechanism, Muse-vs-Gemini-Spark trust register - the Meta arm of the Sep 8 Muse launch piece)'
+      - 'm698 (Type B #778: second Perez mechanism, Muse-vs-Astra demand celebration - this run''s direct lineage predecessor and replication target)'
+      - '#210 (Type A, iteration 218: prior Perez three-entity camera-wearable study, different study type, different category, different article set)'
+      - '#632 (Type A: WSJ Muse launch +0.40, publication-level sibling in the Sep 2026 Meta AI-agent news cycle)'
+      connects_to: [698, 617, 860, 782, 953]
+      research_method: 'Main-run candidate sweep this run across ~20 journalists with exact-headline verification sets, 0 browser.open reads per #503. SELECTED Perez as the only fully-verified in-window same-writer pair with URL-complete arms (TechCrunch, Sep 30 / Oct 1, 1 day apart). REJECTED: Song (saturated m593/m827), Ashworth (saturated m853/m998), Field (saturated type_b_1178), Eadicicco (saturated #1283-adjacent), Newman/Burgess (saturated m1004/#1288), Lawler (saturated #1243), Preston (in-flight #938), O''Brien (saturated m854/#1038), Roth (saturated m782/m860/m953), Huamani (saturated m959/#1213), Chokkattu (saturated m411), Sato (saturated m215), Bordelon (Meta arms stale Apr 2026), Ortutay (no clean competitor arm), Grantham-Philips (no clean competitor arm), Wagner (no in-window bylines), Paul (no fresh OpenAI arm), Robertson (no byline surfaced), Ji (no pair surfaced), Warren (Microsoft beat, no Meta arm). The Meta arm is attested via the TechCrunch author-listing mirror (inforeader, headline + byline + date; canonical techcrunch.com URL not recovered, none constructed per policy). The OpenAI arm is attested via the WeSearch verbatim mirror (novel source URL). No zero-coverage claims per iteration-492 rule (both arms are positive Perez bylines). No em dashes.'
+      novelty: 'Third Type B mechanism on Sarah Perez (first: m617, Type B #638; second: m698, Type B #778). Zero test_type_b_1293 files on disk (glob verified this run). No Type B commit with 1293 in the title (git log --grep verified this run). The WeSearch OpenAI-arm URL zero repo-wide hits pre-commit (git-grep verified this run) - new evidence. The Meta arm is attested via the author-listing mirror, not a novel source URL. Both tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 1007 is the next free profiles mechanism id (max pre-commit 1006). Rotation: 1292 A -> 1293 B.'
+      test_file: 'tests/test_type_b_1293_sarah_perez_techcrunch_muse_privacy_dispute_vs_chatgpt_shopping_sep30_oct01_6pm.py'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer accountability-register pin; illustrative-only scorer output; no new empirical finding at the publication level. NOT a falsification-family member.'
+
 - name: Amanda Silberling
   notes: 'TechCrunch Senior Writer covering the intersection of technology and culture. Co-host of the Wow If True internet-culture podcast. Previously wrote for Polygon, MTV, the Kenyon Review, NPR, and Business Insider. Covers AI, social platforms, and the legal/regulatory battles around both.'
   career:
