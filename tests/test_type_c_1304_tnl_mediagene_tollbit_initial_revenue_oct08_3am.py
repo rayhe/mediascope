@@ -185,7 +185,7 @@ PRED_PUSH_1300 = "91a83617918d9aabdbff79701a25029122472a5f"
 
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40).
-PRED_MAIN_1304 = "0" * 40  # re-pinned to main sha in the terminal log-hash followup per #721
+PRED_MAIN_1304 = "dbacdeb6a0f58bc1d3c5a22a33920c6e2146cf4e"  # re-pinned to main sha in the terminal log-hash followup per #721
 
 # Forward guard for the next leg: #1305 Type D. Re-pinned by #1305's
 # log-hash followup per #721 (starts as 0*40; placeholder-only per

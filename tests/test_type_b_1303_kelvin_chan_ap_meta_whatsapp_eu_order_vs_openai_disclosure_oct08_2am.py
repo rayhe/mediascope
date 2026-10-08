@@ -141,7 +141,7 @@ PRED_MAIN_1303 = "0078dd5d043b2b47276a5a19d5e7f89919b9975e"  # re-pinned to #130
 # Forward guard for the next leg: #1304 Type C. Re-pinned by #1304's
 # log-hash followup per #721 (starts as 0*40; the forward pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1304 = "0" * 40
+PRED_MAIN_1304 = "dbacdeb6a0f58bc1d3c5a22a33920c6e2146cf4e"  # re-pinned to #1304 main sha in the terminal log-hash followup per #721
 
 # The #1302 window-continuation file, for the staleness pin on its
 # guard-lifecycle class (max id 1012; zero one-zero-one-three keys all
