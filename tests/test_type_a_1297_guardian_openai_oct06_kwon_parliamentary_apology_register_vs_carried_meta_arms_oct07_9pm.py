@@ -156,7 +156,7 @@ PRED_FINAL_1296 = "953ddaaa62a7f16ba13c2b6889aa900fcc57b7c0"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1297 pin in the #1296 file. Patched in the terminal
 # log-hash followup per #721.
-PRED_MAIN_1297 = "0" * 40  # placeholder-only per #721
+PRED_MAIN_1297 = "a8bd4c5dc8708c4f8604762175446526b29dcad4"  # re-pinned in the terminal log-hash followup per #721
 
 # #1298's main commit (full sha), for the ancestor-form no-Type-B-#1298
 # pin. Patched in #1298's terminal log-hash followup per #721.
