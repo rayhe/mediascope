@@ -134,7 +134,7 @@ OWN_BASENAME = (
 
 # Pre-commit placeholder per #565; patched to the main-commit sha in
 # the anchor followup (post-anchor this fails BY DESIGN).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "99b14c1637813fad0b3d58c8d3f632f81e8e341d"  # patched in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
