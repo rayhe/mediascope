@@ -109,7 +109,7 @@ TOP_KEY = "kelvin_chan_type_b"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "0078dd5d043b2b47276a5a19d5e7f89919b9975e"  # patched to main commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
