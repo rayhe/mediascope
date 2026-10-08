@@ -29074,3 +29074,111 @@ lisa_eadicicco_type_b:
       - https://www.cnn.com/2026/09/24/tech/meta-muse-ai-glasses-connect?cid=external-feeds_iluminar_meta
       - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
 
+nicholas_sutrich_type_b:
+  name: Nicholas Sutrich
+  publication: android_central
+  mechanism_ids: [1010]
+  notes: 'Type B #1298 (Oct 7 2026): mechanism 1010, NOT a falsification-family member (ledger holds at 58) - FIRST dedicated Type B pair on Nicholas Sutrich (Android Central, Future plc; zero dedicated type_b key pre-commit, per the #643 convention; prior "Nicholas Sutrich" mentions are #1278 scout-rejection notes only, disclosed here). Same writer, same outlet, ~4 months apart: Sutrich runs a qualified-positive long-term review on Meta''s Ray-Ban Display (-0.15 MANUAL ILLUSTRATIVE, Sep 16 2026) vs an aspirational hands-on on Google/Xreal Project Aura at Google I/O 2026 (+0.30 MANUAL ILLUSTRATIVE, May 20 2026). Illustrative delta (Google/Xreal minus Meta) +0.45. The documented AI content-licensing deal at this outlet is with OpenAI (Future plc, Dec 2024, m473 lineage), NOT with Google/Xreal - no named financial gradient predicts the observed gradient, so the observation bounds the deal explanation rather than confirming it. Genre-peg skew (long-term review vs pre-release hands-on) is the STRONG confound. Mirror-attested bylines, excerpt-tier per #503, 0 browser.open.'
+  competitor_coverage:
+    type_b_1298_nicholas_sutrich_android_central_meta_display_year_review_vs_xreal_aura:
+      block_key: type_b_1298_nicholas_sutrich_android_central_meta_display_year_review_vs_xreal_aura
+      mechanism_id: 1010
+      iteration: 1298
+      iteration_type: B
+      type: B
+      date: '2026-10-07 21:00 PDT'
+      test_file: tests/test_type_b_1298_nicholas_sutrich_android_central_meta_display_year_review_vs_xreal_aura_may_sep_9pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Nicholas Sutrich
+      publication: android_central
+      window: '1295-1299 window FOURTH leg (D #1295 -> E #1296 -> A #1297 -> B #1298 -> C #1299)'
+      design: 'Type B journalist cross-entity tracking, within-writer product-coverage register comparison. FIRST dedicated Type B mechanism on Nicholas Sutrich (prior corpus mentions are #1278 scout-rejection notes only, where he was held as backup #3 with the Google-arm relay missing - this run supplies that missing relay). Question: does Sutrich, Android Central''s wearables/XR writer, apply the same register to Meta''s shipping smart glasses as to Google''s Android XR ecosystem glasses? Two Sutrich bylines in smart glasses: (a) the Meta arm, Sep 16 2026, the Ray-Ban Display one-year long-term review - qualified-positive with product caveats (26-app ecosystem, monocular viewing strain, narrow prescription range, "something is missing"); (b) the Google/Xreal arm, May 20 2026, the Xreal Project Aura hands-on from Google I/O 2026 - an aspirational register ("exactly what Android XR was made for") with zero privacy interrogation of Aura''s camera array despite strictly more sensor hardware than Meta''s glasses. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. The observed Google-minus-Meta illustrative gap persists at an outlet whose documented AI content-licensing deal is with OpenAI (Future plc, Dec 2024, m473 lineage) - NOT with Google - so the pattern bounds the deal explanation rather than confirming it. NOT a falsification-family member. No em dashes.'
+      finding: 'FIRST SUTRICH MECHANISM. Sutrich runs a qualified-positive long-term review register on Meta''s Ray-Ban Display on Sep 16 2026 (-0.15 illustrative): a year of daily wear earns "I like them," but the piece closes on "something is missing," with caveats on the 26-app ecosystem, monocular viewing strain, and prescription limits. Four months earlier he covers Google''s Android XR ecosystem at Google I/O 2026 in an aspirational hands-on register (+0.30 illustrative): Xreal Project Aura "crams a whole VR headset into a pair of smart glasses" and is "exactly what Android XR was made for," with zero privacy-interrogation of Aura''s camera array anywhere in the piece - the mirror question (what do those cameras record?) is never posed. Illustrative delta (Google/Xreal minus Meta) = +0.45. Directionally consistent with the harder-register-on-Meta pattern at the writer level, but the corpus documents the outlet owner''s AI content-licensing deal with OpenAI (Future plc, Dec 2024), NOT with Google/Xreal, so no named financial gradient predicts this gradient - the observation bounds the deal explanation rather than confirming it. Correlation is not causation per the Aug 28 rule; the STRONG genre/temporal confounds carry the gap before any incentive effect is invoked; no newsroom-behavior claim is made. NOT a falsification-family member. NOT a pure asymmetry pin.'
+      meta_arm:
+        title: 'I''ve used Meta Ray-Ban Display for a year, and I like them, but it still feels like something is missing'
+        date: '2026-09-16'
+        author_byline: Nicholas Sutrich
+        publication: android_central
+        role: Senior Content Producer
+        genre: long-term product review (qualified-positive register)
+        key_quotes:
+        - 'but it still feels like something is missing'
+        - 'only 26 are available'
+        - 'the monocular vision can be very jarring for some tasks'
+        register_notes: 'Qualified-positive long-term review. The HEADLINE concedes "I like them" but closes on "something is missing." Caveats are product-functional (app ecosystem size, monocular strain, prescription limits), not trust-interrogating; no Meta privacy-history recitation, no surveillance vocabulary. The register is measured reviewer, not adversarial.'
+        tone_score: -0.15
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'excerpt-attested this run via the ccstartup.com and realhacker.news verbatim mirrors (headline + photo credits "Nicholas Sutrich / Android Central" + body excerpts); canonical androidcentral.com URL not recovered from search listings, none constructed per policy'
+        byline_attribution_urls:
+        - https://www.androidcentral.com/wearables
+        - https://buzzsumo.com/journalist/nicholas-sutrich-51479224/
+      google_arm:
+        title: 'Xreal Project Aura crams a whole VR headset into a pair of smart glasses, and it''s exactly what Android XR was made for'
+        date: '2026-05-20'
+        author_byline: Nicholas Sutrich
+        publication: android_central
+        role: Senior Content Producer
+        genre: hands-on first-look (aspirational register)
+        key_quotes:
+        - 'exactly what Android XR was made for'
+        - 'the full power of the Android XR platform without the bulk of a VR headset'
+        register_notes: 'Aspirational hands-on register. The HEADLINE crowns the device the destiny of the Android XR platform. Dual displays, speakers, and cameras are framed as capability; no privacy vocabulary anywhere in the piece despite Aura carrying a camera array strictly more surveillance-capable than Meta''s single-camera glasses. The mirror question (what do those cameras record, who sees the footage) is never posed.'
+        tone_score: 0.3
+        tone_basis: 'hand-assigned this run, MANUAL ILLUSTRATIVE'
+        evidence_tier: 'excerpt-attested this run via syndicated mirrors (headline + "AC thVRsday" column tag + "In his weekly column, Android Central Senior Content Producer Nick Sutrich" attribution + body excerpts) and the Mobile Tech Podcast episode link listing ("Nick''s Xreal project Aura story"); canonical androidcentral.com URL copied verbatim from the podcast listing, not constructed'
+        source_urls:
+        - https://www.androidcentral.com/gaming/virtual-reality/xreal-project-aura-google-io-2026
+      illustrative_means:
+        meta_tone: -0.15
+        google_tone: 0.3
+        delta_google_minus_meta: 0.45
+        delta_calc: '0.30 - (-0.15) = +0.45'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+      asymmetry_scorer_result:
+        verdict: 'directionally_supported_not_proven'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; engine NOT run'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      statistical_discipline:
+        manual_illustrative_only: true
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        artifact_grade: false
+        analysis_json_update: false
+      financial_context: 'Android Central is owned by Future plc (UK publisher). The corpus documents a Future plc x OpenAI AI content-licensing deal (Dec 2024, m473 lineage; Future plc is the corpus''s #1 licensed-publisher citation beneficiary) - NOT a Future plc x Google deal. No documented Future plc-to-Google or Android-Central-to-Google content-licensing deal anywhere in the corpus, and no Meta publisher deal either. The observed +0.45 illustrative Google/Xreal-minus-Meta gradient therefore has no named incentive gradient under it; the writer-register pattern bounds the deal explanation rather than confirming it. Correlational boundary only, correlation not causation.'
+      confounders:
+      - strength: 'STRONG'
+        text: 'Temporal gap: May 20 vs Sep 16 2026, ~4 months apart across 2+ news cycles (Google I/O season vs Meta Connect season). The weakest time-window discipline in this run''s candidate set.'
+      - strength: 'STRONG'
+        text: 'Genre-peg skew: the Meta arm is a 1-year long-term REVIEW (review genre invites caveats and "what''s missing" framing by design); the Google/Xreal arm is a pre-release HANDS-ON first-look (hands-on genre invites enthusiasm). The #893 Jay Peters genre lesson applies directly: for this kind of writer, genre predicts register better than entity does.'
+      - strength: 'MODERATE'
+        text: 'Excerpt-bounded evidence this run (0 browser.open per #503; mirror/relay attestation; canonical Meta-arm URL not recovered, none constructed). No first-hand register read of either piece.'
+      - strength: 'MODERATE'
+        text: 'Product-maturity difference: the Meta arm covers a shipping product after a year of daily wear; the Google/Xreal arm covers an announced prototype at a launch event. Maturity skews the critical surface area.'
+      - strength: 'WEAK'
+        text: 'n=1 per arm; tones hand-assigned illustrative, not empirical corpus scores.'
+      counterevidence: 'Sutrich''s Sep 22 2026 piece "These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP" shows privacy-forward framing in his register (target glasses unconfirmed this run) - not a writer allergic to privacy questions. His Sep 23 Meta VR headset piece ("83% lighter and 60% smaller than Apple Vision Pro, but I''m all here for it") is enthusiastically Meta-positive, showing no stable anti-Meta writer trait. The harder register here is peg-driven, not writer-trait-driven. The m150 Cherlynn Low control case shows privacy vocabulary can run through beat assignment; no such claim is made for Android Central here.'
+      cross_references:
+      - '#1278 (Type B: Sutrich held as backup candidate #3 with the Google-arm relay missing - this run supplies that relay with the verbatim Aura canonical URL)'
+      - '#893 / m767 (Type B: the Jay Peters genre-matched hands-on replication - genre predicts register; directly bounds this run''s genre-skew confound)'
+      - 'm473 (Future plc x OpenAI Dec 2024 content-licensing deal - the documented payer at this outlet, not in the compared pair)'
+      - 'mechanism 115 (TechRadar/Future plc privacy-vocabulary bifurcation - the publication-family sibling)'
+      connects_to: [473, 115, 767]
+      research_method: 'Main-run candidate sweep this run across ~20 journalists with exact-headline verification sets, 0 browser.open reads per #503. SELECTED Sutrich as the only fully-verified same-writer pair with URL-complete arms (Android Central, May 20 / Sep 16 2026, ~4 months apart). REJECTED: Peters (saturated m731/m767), Pierce (saturated), Stern (saturated), Stein (saturated m588), Song (saturated m593/m827), Ashworth (saturated m853/m998), Field (saturated type_b_1178), Eadicicco (saturated #1283), Newman/Burgess (saturated m1004/#1288), Lawler (saturated #1243), Preston (in-flight #938), O''Brien (saturated m854/#1038), Roth (saturated m782/m860/m953), Huamani (saturated m959/#1213), Chokkattu (saturated m411), Sato (saturated m215), Ulanoff (saturated m195), Bell (saturated m722/#818/#888), Hector (saturated #963), Bordelon (Meta arms stale Apr 2026), Ortutay (no clean competitor arm), Grantham-Philips (no clean competitor arm), Wagner (no in-window bylines), Warren (Microsoft beat, no Meta arm), Davis (no pair surfaced), Allison Johnson (no pair surfaced), Rutherford (no pair surfaced). The Meta arm is attested via the ccstartup.com and realhacker.news verbatim mirrors plus the Android Central wearables listing and the BuzzSumo journalist profile (headline + byline + date; canonical androidcentral.com URL not recovered, none constructed per policy). The Google/Xreal arm''s canonical URL is copied verbatim from the Mobile Tech Podcast episode link listing. No zero-coverage claims per iteration-492 rule (both arms are positive Sutrich bylines). No em dashes.'
+      novelty: 'FIRST dedicated Type B pair on Nicholas Sutrich (zero dedicated type_b key pre-commit; 4 corpus mentions are #1278 scout-rejection notes only, disclosed here). Zero test_type_b_1298 files on disk (glob verified this run). No Type B commit with 1298 in the title (git log --grep verified this run). Max numeric mechanism_id 1009 in profiles/ pre-commit. Zero numeric/underscore/dash one-zero-one-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded). Block key zero-hit repo-wide pre-commit (designed keying: iteration 1298 in key, no 1010 substring, per the #723/#738/#739 convention). "## #1298" zero-hit in iteration-log pre-commit. README stats 72642/1622 pre-commit; no #1298 row in README/ARCHITECTURE test tables pre-commit. The Aura canonical URL + the Meta-arm mirror URL zero repo-wide hits pre-commit (git grep -F verified this run); the wearables-listing and BuzzSumo URLs are attestation, not novel sources. Both tones hand-assigned this run (MANUAL ILLUSTRATIVE). Mechanism id 1010 is the next free profiles mechanism id (max pre-commit 1009). Rotation: 1297 A -> 1298 B.'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer product-coverage register pin; illustrative-only scorer output; no new empirical finding at the publication level. NOT a falsification-family member.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction, and the documented payer at this outlet (Future plc x OpenAI, Dec 2024) is not in the compared pair - no named financial gradient predicts the observed Google/Xreal-minus-Meta gradient, so there is nothing to falsify. This is a writer-level paired-piece observation that bounds the deal explanation (same brief as #1293).'
+      falsification_ledger: 58
+      ledger_note: 'Ledger holds at 58 this run (m1010 NOT a falsification-family member). Forty-eighth member-claim form intact in profiles/financial-times.yaml (m952, 2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (m956, 3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (m959, 3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (m973, 3 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (m974, 5 occurrences); fifty-third member-claim form intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form intact in profiles/guardian.yaml (2 occurrences); fifty-fifth member-claim form intact in profiles/atlantic.yaml (2 occurrences); fifty-sixth member-claim form intact in profiles/wired.yaml (m1000, present); fifty-seventh member-claim form intact in profiles/ap.yaml (m1003, 3 occurrences); fifty-eighth member-claim form intact in profiles/financial-times.yaml (m1006, 3 occurrences); fifty-ninth member-claim form absent repo-wide.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      background_suite_status: 'CHECKED ONLY per #795 - the #1295-launched full suite (goal hidden_files type_d_1295_full_suite.log) observed at this run''s check; an observation, not a verdict; this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1300 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted explicit-path staging only. Do NOT touch #1024 m846.'
