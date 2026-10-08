@@ -2274,7 +2274,7 @@ competitor_relationships:
       illustrative_scoring:
         google_arms: [-0.40, -0.30, -0.35]
         google_mean: -0.35
-        meta_mean_carried: -0.5833
+        meta_mean_carried: -0.5833333333333333
         illustrative_delta_google_minus_meta: 0.23
         delta_note: 'The payer draws a slightly less-negative register than the $0-tie comparator, but the thesis test is the uniform payer-softening prediction, not the delta: the Feb-2026 deal predicts a muted/constructive register on Google; the FT instead runs three adversarial regulatory-accountability pegs on the payer in 72 hours, eight months post-deal.'
       falsification_family_member: true

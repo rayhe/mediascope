@@ -164,7 +164,7 @@ PRED_FINAL_1290 = "91137e06"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-E-#1291 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1291 = "0" * 40
+PRED_MAIN_1291 = "4f33ce6a988d55e85a255b59f6fede790422fda3"  # re-pinned by #1295 Type D per #721 (the #1291 run re-pinned the #1290 file's ancestor pin but missed its own file; repaired here)
 
 # #1292's main commit (full sha), for the ancestor-form no-Type-A-#1292
 # pin. Patched in #1292's terminal log-hash followup per #721.
