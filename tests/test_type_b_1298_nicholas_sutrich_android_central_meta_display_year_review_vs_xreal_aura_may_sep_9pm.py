@@ -103,7 +103,7 @@ JOURNALIST_NAME = "Nicholas Sutrich"
 ENTRY_KEY = "nicholas_sutrich_type_b"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # placeholder-only per #565 pre-commit
+ANCHORED_SHA = "10c95ef2485322273883714cb319516d58c18f79"  # patched to main commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
