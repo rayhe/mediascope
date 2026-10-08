@@ -116,7 +116,7 @@ OWN_BASENAME = (
 )
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "110bb68ff5016102177b4d93ada4aca3d6c7f659"  # patched to main commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -152,7 +152,7 @@ PRED_FINAL_1290 = "91137e06"
 
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40).
-PRED_MAIN_1294 = "0" * 40
+PRED_MAIN_1294 = "110bb68ff5016102177b4d93ada4aca3d6c7f659"  # re-pinned to main sha per #721
 
 # Forward guard for the next leg: #1295 Type D. Re-pinned by #1295's
 # log-hash followup per #721 (starts as 0*40; placeholder-only per the
