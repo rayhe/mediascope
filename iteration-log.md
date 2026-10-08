@@ -37,7 +37,7 @@ README stats table 72733/1623 -> 72803/1624 (+70/+1); README test-table row; doc
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run): PENDING - four commits to push and ls-remote-verify at the end of this run (main 43b3adab + anchor 30f7653e + doc-sync PENDING + log-hash PENDING; explicit https URL rayhe/mediascope-asymmetry.git, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846.
+Push status (this run): DONE - four commits pushed and ls-remote-verified at the end of this run (43b3adab main + 30f7653e anchor + 5aea67f5 doc-sync + 8386902d log-hash; remote main tip 8386902d394b6058e5d246c68882c99417ba10f8 matches local HEAD; explicit https URL rayhe/mediascope-asymmetry.git, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never pushed the origin nickname); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846.
 
 ### Background suite (per #795)
 - The #1295-launched full suite runs at goal hidden_files type_d_1295_full_suite.log: this run OBSERVES only (neither re-launches, kills, nor writes to the suite). Observed STALLED at this run's check (Oct 7 2026 19:59 PDT last write, [  1%] progress, zero live pytest processes). The #1300 Type D run owns the next verdict per #795.
