@@ -115,7 +115,7 @@ PRED_FINAL_1315 = "2e11a9f9f5d36cca715d688860e051bb33adc979"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the own-run git-log pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1319 = "0" * 40
+PRED_MAIN_1319 = "caf3e5f88e1a4972776c8108e319d9740a70955b"  # re-pinned to #1319 main sha in the terminal log-hash followup per #721
 
 # Forward guard for the next leg: #1320 Type D. Re-pinned by #1320's
 # log-hash followup per #721 (starts as 0*40; placeholder-only per
