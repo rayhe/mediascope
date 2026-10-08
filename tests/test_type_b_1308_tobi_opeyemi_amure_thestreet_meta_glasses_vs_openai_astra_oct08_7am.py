@@ -121,7 +121,7 @@ TOP_KEY = "tobi_opeyemi_amure_type_b"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "5b997970b53d4a9e687a2f9a1a99e2cd2b558891"  # patched to main commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
