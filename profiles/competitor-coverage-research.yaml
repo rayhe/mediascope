@@ -39570,6 +39570,267 @@ publications:
     - mechanism_id: 697
       description: MarketWatch x OpenAI slowdown-week register set (same news
         week; register-selection dominance analogue)
+  type_a_1312_politico_openai_decoded_debut_altman_marquee_platform_vs_meta_dahlkamp_lobbying_exposure_oct08_11am:
+    mechanism_id: 1018
+    iteration: 1312
+    iteration_type: A
+    type: competitor_coverage_deep_dive
+    date: '2026-10-08'
+    date_analyzed: '2026-10-08'
+    time_pdt: '11:00'
+    publication: Politico (Axel Springer)
+    entity: OpenAI
+    goal_id: goal_54093bda4145
+    author: 'Kit (with Ray)'
+    title: 'Politico x OpenAI Decoded Debut: Marquee CEO Platform for the Licensing
+      Partner (+0.30) vs Dahlkamp Lobbying Expose with Meta as Accountability Foil
+      (+0.05); Scoop Channel Stays Symmetric (m703 Continuity)'
+    description: 'SECOND dedicated Politico x OpenAI mechanism; FIRST dedicated
+      Politico x Meta arm observation. Arm O1 (Oct 5 2026): Politico launches
+      "Decoded by Politico" - a flagship daily newsletter + podcast tech-policy
+      franchise ("Playbook meets DealBook", ~50 journalists, eventually paywalled)
+      - and anchors the DEBUT edition with a long-form Sam Altman interview by
+      Brendan Bordelon (27 min podcast episode; Politico YouTube "Sam Altman on
+      Trump''s AI rebrand and the industry''s perception problem"). Altman gets an
+      uncritical platform to set terms on the week''s defining story: the world
+      "should accept some bad things happening" for AI''s benefits; "a lot of
+      daylight" between OpenAI and Anthropic on regulation; rejects concentrating
+      frontier AI in one lab; declines to promise zero hacks/scams/misuse; draws
+      his line at "really catastrophic risks" ("a serious loss of control to AI").
+      The interview lands days after OpenAI fired three safety researchers (Oct 1)
+      and BI broke the David Robinson resignation (Oct 2; m967) - the licensed
+      partner''s CEO is handed the marquee to reframe the crisis week on his terms.
+      MANUAL ILLUSTRATIVE +0.30 (marquee-platform soft register). Arm O2 (Sep 24
+      2026): "White House asks OpenAI, Anthropic to hold models from British
+      testers" - Politico scoop via Reuters relay; neutral policy-process register
+      +0.05; both labs named, scoop-channel continuity with m703''s symmetry. Meta
+      comparator M1 (Oct 4 2026): Owen Dahlkamp''s "Sources: Apple and Google pitch
+      state bills with self-attested age checks and no private lawsuits; Meta backs
+      ones making app stores, not platforms, verify ages" - a sources-based
+      lobbying exposé (draft bill text, internal emails, seven interviews)
+      adversarial on Apple/Google ("phantom child safety legislation"), with Meta
+      positioned as the accountability-side counterparty backing the ASAA. The
+      adversarial register lands on Apple/Google; Meta is the foil, neutral
+      +0.05. Illustrative delta (OpenAI minus Meta) +0.125 on n=2 vs n=1. The naive
+      uniform payer-softening prediction (Axel Springer x OpenAI Dec 13 2023
+      licensing deal, tens of millions EUR, Politico content included, mechanism
+      597/#604; renewal unresolved, ~Dec 2026 expiry; plus Microsoft x Axel
+      Springer Apr 29 2024 four-channel partnership making Axel Springer a
+      DUAL-AI-PAYER owner) is MET on the marquee-launch register, NOT falsified on
+      this peg. Counterevidence bound: m703''s scoop-channel symmetry STANDS -
+      O2 replicates it (both labs get identical neutral scoop treatment); the
+      softness is register-local to the marquee launch, NOT outlet-level. The
+      Verge''s adversarial "bad things" backlash coverage (in corpus via
+      the-verge.yaml) shows the interview''s content was contested elsewhere -
+      Politico''s soft act was the platform grant, not the content. Tension note
+      carried from m703: Politico is BOTH an OpenAI licensee AND a plaintiff in
+      the News/Media Alliance-organized Cohere copyright suit. Extends m703''s
+      Politico x OpenAI line into the marquee-platform register. Thesis-consistent
+      observation; NOT a falsification-family member; ledger holds at 59. NOT
+      artifact-grade. Correlation is not causation.'
+    novelty_verification: 'Zero test_type_a_1312 files on disk pre-commit (glob);
+      no "Type A #1312" in git log pre-commit (--grep); max numeric mechanism_id
+      1017 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric /
+      underscore / dash one-zero-one-eight mechanism key forms repo-wide pre-commit
+      (needles format-built per #715, own file excluded, __pycache__ excluded per
+      the #715 pattern-rescope lesson); block key zero-hit repo-wide pre-commit
+      (designed keying: iteration 1312 in key, no 1018 substring, per the
+      #723/#738/#739 convention); "## #1312" zero-hit in iteration-log pre-commit;
+      README stats 73956/1636 pre-commit; no #1312 row in README/ARCHITECTURE test
+      tables pre-commit; 7 novel URLs zero-hit repo-wide pre-commit (git grep -F):
+      the two Reuters relays (Oct-4 Altman Decoded; Sep-24 White House/UK testers),
+      the Politico YouTube Decoded episode URL, the Plink Decoded episode page, the
+      biztoc Dahlkamp relay, the mysteriumvpn Dahlkamp relay, the biometricupdate
+      Dahlkamp relay. "Owen Dahlkamp" zero-hit repo-wide pre-commit. All URLs
+      copied verbatim from Full-URL listings; no canonical URLs constructed.
+      ASCII-only, no em dashes.'
+    research_method: '1 delegated scout (ranked 3 pairs: BI x OpenAI REJECTED -
+      saturated: m967 (#1227) already the FIRST dedicated mechanism on the Oct-2
+      Robinson resignation exclusive and the pair carries 5 mechanisms
+      (m399/m790/m799/m871/m967); Semafor x Microsoft REJECTED - thin arms on both
+      sides, no dedicated recent Semafor-on-Meta piece surfaced; WaPo x Amazon
+      REJECTED for this hour - single arm (Oct-1 DC $8.25M settlement, adversarial
+      despite ownership; kept as a future Type A negative-case candidate), no
+      same-publication Meta comparator found; Politico x OpenAI SELECTED - the
+      Decoded debut is a novel marquee-platform register on the documented pair) +
+      3 main-run browser.search verification sets (Decoded/Altman canonical-URL
+      hunt; Dahlkamp Oct-4 piece relay attestation; TollBit/BI arm considered and
+      rejected - the Oct-6 ABC testimony cites 2024 TollBit work, not a new BI
+      original), 0 browser.open per #503. Excerpt-bounded; Politico originals
+      paywalled/newsletter-walled, so arms are relay-attested (Reuters, Politico
+      YouTube, Plink, biztoc/techmeme) with explicit provenance per #503; no
+      canonical politico.com URLs constructed. ASCII-only, no em dashes.'
+    arms:
+      arm_o1_decoded_debut_altman_marquee_platform:
+        title: 'Decoded by Politico debuts with long-form Sam Altman interview
+          (Brendan Bordelon)'
+        date: '2026-10-05'
+        outlet_role: 'Politico as marquee platform granter; flagship franchise
+          launch ("Playbook meets DealBook"); relay via Reuters, Politico YouTube,
+          Plink'
+        urls:
+        - https://www.reuters.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-2026-10-04/
+        - https://www.youtube.com/watch?v=2OOHnaGTQFg
+        - https://plinkhq.com/i/1500970749/e/1000793231520
+        url_status: 'zero-hit repo-wide pre-commit (git grep -F); verbatim from
+          Full-URL listings; relay-attested per #503 (Politico paywalled/
+          newsletter-walled; no canonical politico.com URL constructed)'
+        register: marquee_launch_ceo_platform
+        tone_MANUAL_ILLUSTRATIVE: 0.30
+        excerpts:
+        - '"We believe the world should accept some bad things happening for the
+          benefits of this technology." (Altman, via Reuters on the Decoded
+          interview)'
+        - '"I wouldn''t take a trade of saying we will make sure there''s no major
+          hacks, there''s no misuse of this technology, there''s zero scams."
+          (Altman, via Fast Company on the Decoded interview)'
+        - '"a lot of daylight" between OpenAI and Anthropic on regulation
+          (Altman, via Reuters)'
+        - '27-min episode: Altman on rogue AI, Anthropic, getting money out of
+          politics; "doesn''t think a rebrand to super intelligence will help"
+          (Politico YouTube description, verbatim)'
+        entity_target: 'OpenAI (the payer; Politico grants the CEO the flagship
+          launch platform at the peak of the safety-crisis week)'
+        note: 'The soft act is the platform grant, not the content: the interview
+          lets Altman reframe the crisis week (Oct-1 firings, Oct-2 Robinson
+          resignation per m967) on his terms, with no adversarial challenge in the
+          excerpted record. The Verge''s adversarial backlash coverage (in corpus)
+          bounds any claim that the content went uncontested industry-wide.'
+      arm_o2_white_house_uk_testers_scoop:
+        title: 'White House asks OpenAI, Anthropic to hold models from British
+          testers (Politico scoop)'
+        date: '2026-09-24'
+        outlet_role: 'Politico as scoop source; relay via Reuters'
+        url: https://www.reuters.com/world/white-house-asks-openai-anthropic-hold-models-british-testers-politico-reports-2026-09-24/
+        url_status: 'zero-hit repo-wide pre-commit (git grep -F); verbatim from
+          Full-URL listing; relay-attested per #503'
+        register: policy_process_scoop_transmission
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        entity_target: 'OpenAI AND Anthropic (both labs named; scoop-channel
+          continuity with m703''s symmetry - the channel stays payer-blind)'
+        note: 'Replicates m703''s scoop-channel symmetry: the payer and the
+          non-payer get identical neutral process-scoop treatment. This arm is the
+          counterevidence bound inside the mechanism - the outlet''s softness on
+          the marquee register does not extend to the scoop register.'
+    meta_comparator:
+      status: first_dedicated_politico_x_meta_arm
+      note: 'FIRST dedicated Politico x Meta arm observation in the corpus (m703
+        recorded a bounded absence, iteration-492).'
+      arm_m1_dahlkamp_kids_safety_lobbying_expose:
+        title: 'Sources: Apple and Google pitch state bills with self-attested age
+          checks and no private lawsuits; Meta backs ones making app stores, not
+          platforms, verify ages (Owen Dahlkamp/Politico)'
+        date: '2026-10-04'
+        outlet_role: 'Politico as lobbying-investigation venue; relay via
+          biztoc/techmeme (techmeme 2026-10-04 18:58:41)'
+        urls:
+        - https://biztoc.com/x/a99422227d565aee
+        - https://www.mysteriumvpn.com/blog/news/apple-google-age-verification-lawsuit-shield
+        - https://www.biometricupdate.com/202610/apple-google-lobby-lawmakers-to-remove-liability-from-draft-online-safety-bills
+        url_status: 'zero-hit repo-wide pre-commit (git grep -F); verbatim from
+          Full-URL listings; relay-attested per #503 (Politico paywalled)'
+        register: lobbying_exposure_investigation
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        excerpts:
+        - 'Apple and Google lobbyists "pitch state lawmakers to adopt kids'' online
+          safety laws that would shield the tech giants from lawsuits" (Politico,
+          via nationalcybersecurity relay)'
+        - 'Child safety advocates describe Apple and Google''s proposed bills as
+          "phantom child safety legislation that has no real teeth"
+          (mysteriumvpn relay of the Politico piece)'
+        - 'Meta backs ones making app stores, not platforms, verify ages
+          (headline, via techmeme)'
+        entity_target: 'Meta (positioned as the accountability-side counterparty
+          backing the ASAA; the adversarial register lands on Apple/Google)'
+        note: 'The exposé''s hard edge targets Apple/Google liability-dodging;
+          Meta''s presence is as the foil backing the tougher bill. Scored neutral
+          +0.05 with the Apple/Google-hard confounder disclosed: the delta reads
+          payer-soft on the OpenAI arms partly because the Meta arm''s adversarial
+          energy is spent on other entities.'
+    openai_arm_scores: [0.30, 0.05]
+    openai_arm_avg: 0.175
+    meta_arm_score: 0.05
+    illustrative_delta_openai_minus_meta: 0.125
+    delta_calc: '0.175 - 0.05 = +0.125'
+    delta_direction: 'Payer-favoring but modest: the licensed partner''s CEO gets
+      the marquee launch platform (+0.30); Meta gets neutral lobbying-exposure
+      treatment (+0.05). n=2 vs n=1 - degenerate sample, disclosed.'
+    methodology: 'n=2 (Politico OpenAI Oct-5 Decoded debut, Sep-24 UK-testers
+      scoop) vs n=1 (Politico Meta Oct-4 Dahlkamp exposé); MANUAL ILLUSTRATIVE
+      ONLY; degenerate-sample contract disclosed'
+    engine_run: false
+    p_value: 'NOT_CALCULATED'
+    cohens_d: 'NOT_CALCULATED'
+    ci_95: 'NOT_CALCULATED'
+    is_significant: false
+    verdict: thesis_consistent_observation
+    incentive_attribution: 'The naive uniform payer-softening prediction is MET on
+      the marquee-launch register (the deal partner''s CEO anchors the flagship
+      franchise debut) and NOT tested on the scoop register (which stays symmetric
+      per m703/O2). INCONCLUSIVE for outlet-level incentive claims: Politico treats
+      OpenAI and Anthropic identically on the scoop channel while granting OpenAI''s
+      CEO the marquee platform. Channel-local softness, not outlet-level capture.
+      Correlation is not causation.'
+    confounders_ranked:
+      strong:
+      - 'Register-locality: the softness is bounded to the marquee-launch
+        register; the scoop register stays payer-blind (m703/O2). Outlet-level
+        softness is NOT claimed.'
+      - 'Excerpt-bounded evidence (no first-hand Politico reads; Decoded sits
+        behind newsletter/paywall walls); the interview characterization rests on
+        Reuters/Fast Company/YouTube/Plink relays.'
+      - 'n=2 vs n=1 degenerate sample; single-week peg; the Decoded franchise is
+        one edition old, so no Anthropic-debut comparator exists yet.'
+      moderate:
+      - 'Meta-arm register confound: the Dahlkamp exposé''s adversarial energy
+        targets Apple/Google; Meta is the accountability foil, which compresses the
+        delta relative to a Meta-adversarial comparator.'
+      - 'Launch-news peg: flagship product launches structurally favor soft
+        registers; the Decoded debut would likely be celebratory whoever the guest
+        was. The payer-relevant fact is WHO was chosen to anchor it.'
+      weak:
+      - 'Politico US vs Politico Europe editions may carry different registers;
+        all three arms are US-policy.'
+    counter_evidence:
+    - 'm703''s scoop-channel symmetry STANDS and is replicated by O2: the outlet
+      whose parent is an OpenAI licensee gives the non-payer lab (Anthropic)
+      identical first-report treatment. The marquee-softness finding is bounded by
+      this symmetry, not in tension with it - different channels, different
+      registers.'
+    - 'The Verge''s adversarial "bad things" backlash coverage (in corpus via
+      the-verge.yaml) shows the Decoded content was contested industry-wide; the
+      softness documented here is the platform grant, not narrative control.'
+    - 'Politico is a plaintiff in the News/Media Alliance-organized Cohere
+      copyright suit while licensing content to OpenAI - the outlet litigates
+      against AI companies on one channel and licenses to them on another
+      (carried from m703).'
+    statistical_discipline: 'MANUAL ILLUSTRATIVE scores only.
+      p_value/cohens_d/ci_95 NOT_CALCULATED. is_significant: false (Aug 28 2026
+      standing rule). Engine NOT run. Verdict thesis_consistent_observation.
+      no_analysis_json_update: true. NOT artifact-grade. Correlation is not
+      causation. Hypothesis-generating only.'
+    falsification_family: 'NOT a falsification-family member: register-local
+      thesis-consistent observation extending m703''s Politico x OpenAI line, not a
+      uniform-prediction test. Ledger holds at 59. Fortieth direction absent by
+      design.'
+    test_file: tests/test_type_a_1312_politico_openai_decoded_debut_altman_marquee_platform_vs_meta_dahlkamp_lobbying_exposure_oct08_11am.py
+    extends: 'm703 (#787 Type A: Politico x OpenAI slowdown-week scoop-channel
+      symmetry) - second dedicated Politico x OpenAI mechanism; marquee-platform
+      register vs scoop-channel register'
+    cross_references:
+    - mechanism_id: 597
+      description: OpenAI x Axel Springer 3-year licensing deal Dec 13 2023
+        (Politico content included; renewal unresolved, ~Dec 2026 expiry; #604)
+    - mechanism_id: 604
+      description: Axel Springer dual-AI-payer architecture (OpenAI + Microsoft
+        four-channel partnership Apr 29 2024; #604 Type C)
+    - mechanism_id: 703
+      description: Politico x OpenAI slowdown-week scoop-channel symmetry (#787
+        Type A; the counterevidence-bound line this run extends)
+    - mechanism_id: 967
+      description: BI x OpenAI Oct-2 Robinson resignation exclusive (#1227 Type A;
+        the crisis-week peg the Decoded debut reframes - scout Rank 1 rejected as
+        saturated by this mechanism)
   verge_apple_duo_launch_week_staff_react_register_sep16:
     mechanism_id: 706
     iteration: 792
