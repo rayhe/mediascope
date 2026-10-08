@@ -230,7 +230,7 @@ PRED_FINAL_1315 = "2e11a9f9"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-E-#1316 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in this run's terminal log-hash followup per #721.
-PRED_MAIN_1316 = "0" * 40  # staged 0*40 placeholder-only per #721;
+PRED_MAIN_1316 = "5d160c6cc9a8d68e863499b4e5fc142845c21060"  # re-pinned to main commit per #721;
 # re-pinned in this run's terminal log-hash followup per #721
 
 # #1317's main commit (full sha), for the ancestor-form no-Type-A-#1317
