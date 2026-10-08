@@ -822,23 +822,23 @@ class TestGuardLifecycle1296:
 
 class TestStalenessPins1296:
     def test_1295_guard_lifecycle_post_commit_self_trip(self):
-        # Post-main-commit form: 22 tests in the class, 21 pass and
-        # ONE flips BY DESIGN when this run's main commit lands: the
-        # no_type_e_1296_in_git_log ancestor pin (its PRED_MAIN_1296
-        # is still the 0*40 placeholder until this run's terminal
-        # log-hash followup re-pins it per #721) - the #1191-class
-        # self-trip. Type E lands no mechanisms, so the
-        # one-zero-zero-nine forward-guard pins stay green. The pin
-        # is re-pinned to the post-commit own-set form in the
-        # terminal log-hash followup per #721; the class run below
-        # therefore expects the 21 surviving pins green and
-        # documents the one designed flip. The #1295 block is
-        # read-only to this run; the quirk is documented here, not
-        # repaired.
+        # Post-#1300-repair form: 22 tests in the class, 21 pass and
+        # ONE stays red BY DESIGN: the test_1009_numeric_absent_in_
+        # profiles pin (the #1272-class forward-guard expiry - m1009
+        # landed in #1297; permanent). The no_type_e_1296_in_git_log
+        # ancestor pin (the #1191-class self-trip) was red at this
+        # run's commit time because this run's terminal followup
+        # re-pinned only its own file's PRED_MAIN_1296 copy; the
+        # #1300 Type D run repaired the predecessor's copy per the
+        # #1297/#1298 "re-pin both copies" precedent and the #721
+        # re-pin rule, flipping it green. The class run below
+        # therefore expects the 21 surviving pins green and the one
+        # permanent #1272-class expiry red. Documented here; the
+        # repair lives in the #1300 iteration-log entry.
         res = _class_run(B1295_FILE, "TestGuardLifecycle1295")
         out = res.stdout + res.stderr
         assert "1 failed, 21 passed" in out, out[-2000:]
-        assert "no_type_e_1296_in_git_log" in out, out[-2000:]
+        assert "test_1009_numeric_absent_in_profiles" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------

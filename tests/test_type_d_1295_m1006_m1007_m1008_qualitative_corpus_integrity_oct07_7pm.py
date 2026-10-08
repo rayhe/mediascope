@@ -176,7 +176,12 @@ PRED_MAIN_1295 = "99b14c1637813fad0b3d58c8d3f632f81e8e341d"  # re-pinned to main
 # Forward guard for the next leg: #1296 Type E. Re-pinned by #1296's
 # terminal log-hash followup per #721 (starts as 0*40;
 # placeholder-only).
-PRED_MAIN_1296 = "0" * 40
+# Repaired #1300 Type D: the #1296 terminal followup re-pinned only its
+# own file's copy (verified in the #1300 regression sweep:
+# TestGuardLifecycle1295::test_no_type_e_1296_in_git_log_pin red);
+# per the #1292 precedent (434fb01b re-pins both copies) the
+# predecessor's copy is re-pinned here to #1296's main sha.
+PRED_MAIN_1296 = "14af9fecd0d7dcc93eced86ab065e9114f685226"
 
 # The #1294 window-closing file, for the staleness pin on its test
 # classes (#1294 staged no guard-lifecycle forward pins for this run;
