@@ -40,7 +40,7 @@ README stats table 73684/1633 -> 73762/1634 (+78/+1); README test-table row; doc
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run): PENDING - four commits to be pushed and ls-remote-verified at the end of this run (explicit https URL, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never push the origin nickname); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846.
+Push status (this run): DONE - four commits pushed and ls-remote-verified at the end of this run (5cd42648 main + 490b9490 anchor + b8ada6a0 doc-sync + e2d2418b log-hash; remote main tip e2d2418bfcc6fb5b0f1bfdf6060b80e9d5219bd8 matches local HEAD; explicit https URL rayhe/mediascope-asymmetry.git, IPv6-literal proxy recipe; origin is SSH under the insteadOf - never pushed the origin nickname); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846.
 
 
 
