@@ -2750,6 +2750,112 @@ competitor_relationships:
       statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
       no_analysis_json_update: true
       correlation_not_causation: true
+    type_a_1297_guardian_openai_oct06_kwon_rebuild_trust_parliamentary_register_vs_carried_meta_arms:
+      mechanism_id: 1009
+      iteration: 1297
+      iteration_type: "A"
+      iteration_time: "2026-10-07 21:00 PDT"
+      date: "2026-10-07"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      block_key: type_a_1297_guardian_openai_oct06_kwon_rebuild_trust_parliamentary_register_vs_carried_meta_arms
+      key_design_note: 'Iteration-form block key carries no underscore-form 1009 mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-1009 profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: 'The Guardian'
+      competitor: openai
+      entity_pair: 'OpenAI (Feb 2025 licensing partner) vs Meta ($0 deal)'
+      polarity_note: 'Spec-faithful polarity (publication + competitor = Guardian x OpenAI); this run NEW arm lands on the OpenAI side (the Oct-6 Kwon parliamentary-apology original), against carried Meta-side arms.'
+      event: 'Oct 6 2026 parliamentary-accountability peg: (1) Guardian Australia puts OpenAI chief strategy officer Jason Kwon before the Joint Select Committee on Artificial Intelligence in Sydney over the June Medicare-portal agent breach and the 84-day notification gap (the 2:42am-email notification the prime minister publicly shamed), headlined "OpenAI has ''work to do to rebuild trust'' in Australia, executive tells AI inquiry"; (2) carried Guardian x Meta accountability arms (m687: police-warnings documents investigation -0.55, teen-accounts influencer payouts -0.45). Same publication, adjacent news weeks.'
+      financial_relationship: 'Guardian Media Group x OpenAI strategic content-licensing partnership (Feb 14 2025, mechanism_514; in-corpus guardian.yaml; Guardian journalism appears in ChatGPT with attribution; Guardian adopted ChatGPT Enterprise internally); Guardian x Meta $0, no licensing, no financial relationship. Coverage prediction: softer OpenAI, adversarial Meta.'
+      deal_url: 'http://openai.com/index/openai-and-guardian-media-group-launch-content-partnership/'
+      source_urls:
+      - https://www.youtube.com/watch?v=ztNkqArWCxk
+      - https://aitopics.org/class/Country/Oceania/Australia
+      - https://aipolicydaily.org/archive/daily/2026-10-06/
+      openai_arms:
+      - item:
+          title: 'OpenAI has ''work to do to rebuild trust'' in Australia, executive tells AI inquiry'
+          date: '2026-10-06'
+          date_detail: 'Oct 6 2026 (Guardian Australia video original; aitopics relay stamps "The Guardian Oct-6-2026")'
+          publication: 'Guardian Australia (original video; article relay-attested)'
+          entity: openai
+          evidence_tier: 'original_plus_relay'
+          url_source: 'Guardian Australia YouTube channel original (verbatim Full-URL listing: https://www.youtube.com/watch?v=ztNkqArWCxk): "OpenAI admits misstep in handling AI agent interactions with Australian government sites". The Oct-6 article ("OpenAI has ''work to do to rebuild trust'' in Australia, executive tells AI inquiry") reads through two independent relays with verbatim Guardian attribution: aitopics.org (verbatim Full-URL listing: https://aitopics.org/class/Country/Oceania/Australia; "The Guardian Oct-6-2026") and aipolicydaily.org (verbatim Full-URL listing: https://aipolicydaily.org/archive/daily/2026-10-06/; Kwon apology "per The Guardian"). The verbatim theguardian.com canonical URL did not arrive in any search Full-URL listing this run (NOT used per the no-construction rule). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'parliamentary_accountability'
+          manual_illustrative_tone: -0.30
+          tone_note: 'Adversarial content in an even-handed straight-news register: the partner''s chief strategy officer is put in the parliamentary witness chair over the Medicare-portal breach, the 84-day notification gap, and the 2:42am-email notification method the prime minister publicly called unacceptable; Kwon concedes the process was "not good enough". Inside the carried Guardian x OpenAI enforcement-week band (m934 arms -0.30/-0.40/-0.30); at parity with the Milmo-test OpenAI arm (-0.30, m994) because a parliamentary apology is adversarial by content, even-handed by register.'
+          key_quotes:
+          - '"We are sorry, and we know we have work to do to rebuild trust with the Australian people." (Kwon, opening apology, via relays)'
+          - '"not good enough" (Kwon on the notification process, via Guardian Australia video description)'
+          deal_disclosed: false
+          status: 'NEW this run (zero corpus hits pre-commit: kwon/Kwon/"rebuild trust"/parliamentary all zero-hit in guardian.yaml; all 3 source URLs zero-hit repo-wide via git grep -F). The Sep-27 training-halt original is saturated (m862, #1052, directionally_supported_not_proven) and the Oct-3 Robinson resignation original is saturated (m994, #1272, thesis_consistent_observation): both deliberately excluded from the NEW arm set; this run scores the Oct-6 peg only.'
+      meta_arms:
+        carried_from: 'm687 (Type A #757, NEW) - Guardian x Meta accountability arms; carried un-rescored per #807'
+        arms:
+        - title: 'US police fear Meta smart glasses could be used to secretly record them'
+          date: '2026-09'
+          publication: 'The Guardian (relay-attested)'
+          framing: 'documents_investigation'
+          manual_illustrative_tone: -0.55
+          tone_note: 'Hard adversarial documents-based register (m687, NEW at #757): law-enforcement memos; Meta glasses as covert-surveillance and terrorism-facilitation risk; facial-recognition doxing of officers.'
+          mechanism_ref: 'm687'
+        - title: 'Reel-ing it in: Meta is paying influencers to promote teen accounts'
+          date: '2026-08-18'
+          publication: 'The Guardian (relay-attested)'
+          framing: 'accountability_register'
+          manual_illustrative_tone: -0.45
+          tone_note: 'Adversarial payout-accountability register (m687, NEW at #757): Meta paying influencers to promote teen accounts.'
+          mechanism_ref: 'm687'
+        meta_band_mean: -0.50
+      asymmetry_scorer_result:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'OpenAI Guardian Oct-6 Kwon parliamentary-apology register (m1009 NEW)'
+        peer_entity: 'Meta Guardian carried accountability register (m687 police-warnings + teen-accounts)'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.30]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.55, -0.45]
+        target_avg: -0.30
+        peer_avg: -0.50
+        illustrative_delta_openai_minus_meta_clean: 0.25
+        illustrative_delta_openai_minus_meta_pooled: 0.20
+        delta_calc_clean: '-0.30 - (-0.55) = +0.25'
+        delta_calc_pooled: '-0.30 - (-0.50) = +0.20'
+        delta_direction: 'OpenAI draws the softer register at the Guardian by 0.25 illustrative points on the clean read (n=1 vs n=1, Kwon parliamentary apology vs police-warnings documents investigation); pooled delta +0.20 (n=1 vs n=2). Directionally softer for the Feb-2025 licensing partner, matching the softer-prediction.'
+        methodology: 'n=1 vs n=1 (clean: Kwon apology vs m687 police-warnings); pooled n=1 vs n=2 (both m687 Meta arms); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'thesis_consistent_observation'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'Peg asymmetry: parliamentary-apology straight news vs documents-based investigation (police warnings) and payout accountability (teen accounts). The register-follows-peg reading says apology coverage is even-handed by genre and investigation originals hard by genre, regardless of entity; the clean delta cannot separate entity softening from genre softness.'
+        - 'Excerpt-bounded evidence (per #503): 0 browser.open; the Oct-6 article reads through two independent relays with verbatim Guardian attribution plus the Guardian Australia video original; no first-hand register read of the article text; no verbatim theguardian.com canonical URL in any search Full-URL listing.'
+        moderate:
+        - 'The piece does NOT suppress the adversarial content: the Medicare-portal breach, the 84-day notification gap, and the prime minister''s public shaming are all printed. Softness here is register-level (even-handed straight news with the apology), not story suppression - which bounds the softening claim, exactly as in m994.'
+        - 'm985 precedent (#1257, fifty-fourth member): the Guardian''s own cross-lab investigation named the deal partner''s ChatGPT a hijab-removal complier - the uniform payer-softening prediction already FAILED at the Guardian on the own-investigation peg, so this run''s softer read is peg-bounded, not a blanket vindication of the prediction.'
+        weak:
+        - 'News-week adjacency (Oct 6 vs Sep carried arms); mild.'
+        - 'Meta arms carried un-rescored per #807; any drift in their register since scoring is not captured.'
+      counter_evidence:
+      - 'm985 (#1257, fifty-fourth member): Guardian own-investigation adversarial on the deal partner - the desk does not blanket-soften OpenAI.'
+      - 'm934 (#1172): Guardian enforcement-week triple register on OpenAI (mean -0.333) - the desk runs enforcement news on the partner at near-Meta hardness.'
+      - 'The Kwon piece''s own headline carries the institutional-failure frame ("work to do to rebuild trust") the Guardian has printed on the deal partner across the crisis week - the dog that did not bark is suppression, and it did not happen.'
+      open_empirical_test: 'First-hand open of the Oct-6 Kwon piece when theguardian.com is reachable (re-score against the observed register); a matched-register Guardian x OpenAI own-investigation arm on the parliamentary inquiry (e.g., newsroom follow-up reporting beyond the straight-news relay) vs a Guardian x Meta straight-news apology arm would separate entity from genre.'
+      research_method: '4 main-run browser.search verification sets (2 initial pair-discovery sets: Guardian OpenAI October 2026 coverage; 2 targeted sets: the Robinson-resignation relay attestation and the Kwon inquiry attestation), 0 browser.open per #503. Excerpt-bounded; the Guardian Australia video is the original (Guardian Australia YouTube channel); the Oct-6 article reads through two independent relays with verbatim Guardian attribution. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'zero test_type_a_1297 files on disk pre-commit (glob); no "Type A #1297" in git log pre-commit (--grep); max numeric mechanism_id 1008 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-zero-nine mechanism key forms repo-wide pre-commit in source scope (needles format-built per #715, own file excluded, __pycache__ excluded per the #715 pattern-rescope lesson); "## #1297" zero-hit in iteration-log pre-commit; README stats 72548/1621 pre-commit; no #1297 row in README/ARCHITECTURE test tables pre-commit; 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F); kwon/Kwon/"rebuild trust"/parliamentary zero-hit in guardian.yaml pre-commit; the Sep-27 training-halt URL and the Oct-3 Robinson URL zero-hit but their EVENTS saturated (m862 #1052, m994 #1272) - excluded from the NEW arm set by design; no counted adversarial-on-partner observation for the Kwon peg pre-commit (the #1143 check: m985 counted the pair''s falsification on the own-investigation peg).'
+      forward_guards_for_1298: 'max-1009; zero one-zero-one-zero keys all forms (profiles/ + tests/ scope); no-Type-B-#1298-in-git-log; fortieth direction absent; forty-eighth through fifty-eighth members intact; no fifty-ninth member (repo-wide); ledger 58.'
+      falsification_family_member: false
+      falsification_ledger: 58
+      verdict: 'thesis_consistent_observation'
+      ledger: 58
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true'
+      no_analysis_json_update: true
+      correlation_not_causation: true
   meta:
     financial_tie: "none"
     estimated_value: "$0"
