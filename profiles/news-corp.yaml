@@ -3074,6 +3074,90 @@ competitor_relationships:
         (Bobrowsky covers Meta, not Google). Moderate: confidential terms limit reporting.
         Counter-confounders: YouTube's LONGER COPPA violation history not acknowledged,
         $5B contingency makes YouTube material to story.
+    type_a_1302_wsj_google_eu_dma_fine_enforcement_vs_carried_meta_arms_oct08_1am:
+      mechanism_id: 1012
+      mechanism_name: 'WSJ x Google Jul-24-2026 EU DMA $1.02B fine enforcement-accountability register vs carried WSJ x Meta arms - FIFTY-NINTH falsification-family member'
+      iteration: 1302
+      hour_type: 'A'
+      iteration_type: 'A'
+      window: '1300-1304, THIRD leg (D #1300 -> E #1301 -> A #1302 -> B #1303 -> C #1304 per #565)'
+      date: '2026-10-08 01:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: 'Wall Street Journal'
+      competitor_pair: 'Google vs Meta'
+      author: 'Kit (with Ray)'
+      type_label: 'Competitor Coverage Deep Dive'
+      rotation: 'Type A'
+      time_pdt: '01:00'
+      job_id: mediascope-daily-iteration
+      block_key: 'type_a_1302_wsj_google_eu_dma_fine_enforcement_vs_carried_meta_arms_oct08_1am'
+      test_file: 'tests/test_type_a_1302_wsj_google_eu_dma_fine_enforcement_vs_carried_meta_arms_oct08_1am.py'
+      design: 'Same-publication register comparison: WSJ''s Jul-24-2026 EU DMA $1.02B fine enforcement piece on Google (NEW arm, excerpt-attested via search, 0 browser.open per #503) vs WSJ''s carried Aug-26-2026 Meta arms (m532 via m904, un-rescored per #807). FIRST dedicated corpus mechanism on the WSJ/News Corp x Google pair. News Corp is the Feb-17-2021 Google commercial-agreement counterparty, so this is the direct payer-register test on the Google leg: does the commercial counterparty''s own paper soften the enforcement peg on Google?'
+      distinct_from_prior: 'FIRST dedicated Type A mechanism on the WSJ/News Corp x Google pair (zero prior Type A on this pair in git log; no counted member on the pair). Distinct from m904 (WSJ x OpenAI, #1122: different deal partner, different licensing deal). Distinct from m1006 (FT x Google, #1292: different publication, different Google deal). Distinct from m342 (News Corp x Google child-safety coverage: different peg and register, YouTube-subordinate framing, not a falsification member). Distinct from the scout-rejected AP x OpenAI arms (DevDay piece saturated as the fiftieth journalist-level member; gov-sites training-pause wire saturated as m862''s event, #1052).'
+      finding: 'WSJ runs the EU''s $1.02B DMA fine on Google in the enforcement-accountability register: fine-forwarding headline, yearslong-investigation frame, 60-day compliance deadline, Google''s compliance-burden quote carried, and the inline disclosure ''News Corp, owner of The Wall Street Journal, has a commercial agreement to supply content on Google platforms.'' MANUAL ILLUSTRATIVE -0.35 (regulatory-enforcement accountability on the deal partner, set at the m904 FTC-probe arm peg). Carried WSJ x Meta arms (m532 via m904, un-rescored per #807): the Aug-26 $18B settlement wire (-0.30) and the teen-safety skeptical product analysis (-0.25), mean -0.275. Illustrative delta (Google minus Meta): -0.075, near-null with Google marginally harder. The naive uniform payer-softening prediction (the Feb-2021 News Corp x Google commercial agreement predicts softer Google coverage) FAILS on the enforcement register: the Journal covers its own commercial counterparty adversarially, with the agreement disclosed in-article. FIFTY-NINTH falsification-family member (ledger 58->59). FIRST falsification pin on the WSJ/News Corp x Google pair; the #1143 temporal-replication precedent does not block (no counted member on this pair). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      google_arm:
+        title: 'EU Fines Google $1 Billion for Favoring Its Own Services'
+        date: '2026-07-24'
+        bylines: 'Edith Hancock and Kim Mackrael'
+        url: 'https://www.wsj.com/tech/google-fined-1-02-billion-under-eus-tech-antitrust-rules-7e8ae1fb'
+        url_status: 'novel this run - zero-hit repo-wide pre-commit via git grep -F'
+        register: 'regulatory_enforcement_accountability'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        key_facts: 'EU DMA non-compliance fine of $1.02B for favoring Google''s own services (shopping/flights/hotels self-preferencing); culmination of a yearslong compliance investigation; 60 days to address concerns or risk additional fines; Google compliance-burden quote carried; inline disclosure of the News Corp x Google commercial agreement.'
+      meta_arms_carried:
+        carried_from: 'm532 via m904 (Type A #1122), un-rescored per #807'
+        arms:
+          - 'WSJ Meta reaches $18 billion settlement with 48 states over child-safety claims (Aug 26 2026): -0.30'
+          - 'WSJ Meta teen-safety measures skeptical product analysis (Aug 26 2026): -0.25'
+        meta_mean: -0.275
+      scorer:
+        google_mean_tone: -0.35
+        meta_mean_tone: -0.275
+        illustrative_delta_google_minus_meta: -0.075
+        method: 'MANUAL ILLUSTRATIVE ONLY; engine NOT run; degenerate n=1-vs-2 per the #638/#643 contract (t/p/d NOT_CALCULATED, is_significant False)'
+        reading: 'deal partner covered marginally harder than the multi-payer comparator on the enforcement peg; the uniform softening prediction fails on ordering and on suppression'
+      financial_relationship:
+        deal: 'News Corp x Google global commercial agreement, Feb 17 2021: three-year term, reported >AU$150M; News Showcase content licensing + Google ad-tech revenue sharing + YouTube video-journalism investment; extended ~2024 (News Corp Australia investor call); April 2024 reported $5-6M/yr AI-content development deal (Cryptopolitan relay of FT reporting, second-hand, flagged)'
+        meta_financial: 'News Corp x Meta publisher bundle, up to $50M/yr (per corpus) - multi-payer confound disclosed'
+        openai_financial: 'News Corp x OpenAI $250M/5yr (May 2024) - multi-payer confound disclosed'
+        deal_disclosed_in_google_coverage: true
+        disclosure_quote: 'News Corp, owner of The Wall Street Journal, has a commercial agreement to supply content on Google platforms.'
+        coverage_prediction: 'softer (naive uniform payer-softening); profile standing prediction ''mixed'' (dual-dependency hedge)'
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. The naive uniform prediction expects the deal partner softest; observed ordering (Google -0.35 vs Meta -0.275) runs against it on the enforcement register. This mechanism documents the ordering; it does not prove the deal caused the hardness.'
+      statistical_discipline:
+        scores: 'MANUAL ILLUSTRATIVE only'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        engine_run: false
+        verdict: 'falsification_member_confirmed'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+        hypothesis_generating_only: true
+      falsification_family: 'FIFTY-NINTH falsification-family member (ledger 58->59): this run tests the naive uniform payer-softening prediction at the publication level (the Feb-2021 News Corp x Google commercial agreement predicts softer Google coverage) on the Jul-24 EU DMA $1.02B fine enforcement peg, and the prediction fails: the Journal runs enforcement accountability (-0.35 MANUAL ILLUSTRATIVE) on the commercial counterparty with the agreement disclosed in-article, at a marginally harder register than the carried WSJ x Meta arms (-0.275 mean). Domain-bounded to the regulatory-enforcement register. The #1143 temporal-replication precedent does not block (no counted member on WSJ x Google). Ledger holds at 59 - FIFTY-NINTH member-form present (m1012, news-corp.yaml), SIXTIETH absent.'
+      falsification_ledger: 59
+      falsification_family_member: true
+      confounders:
+        - 'STRONG: News Corp is multi-payer - OpenAI $250M/5yr (May 2024) and Meta publisher bundle (up to $50M/yr per corpus) alongside the Google commercial agreement; the incentive gradient is not Google-specific, so the naive uniform prediction is tested on the Google leg only and the comparator is itself a payer.'
+        - 'STRONG: excerpt-bounded evidence (0 browser.open per #503); wsj.com paywalled; the EU-fine arm reads through the search excerpt; the full-text WSJ register could differ.'
+        - 'MODERATE: the April-2024 $5-6M/yr AI-content deal is relay-sourced (Cryptopolitan relay of FT reporting), not primary; the Feb-2021 deal''s post-2024-extension status is unresolved from primary sources.'
+        - 'MODERATE: temporal - Google arm Jul 24 2026, carried Meta arms Aug 26 2026 (un-rescored per #807); the enforcement peg is not matched on the Meta side.'
+        - 'MODERATE: the profile''s standing coverage_prediction for google is ''mixed'' (dual-dependency hedge); the naive uniform prediction is what the falsification family tests.'
+        - 'WEAK: n=1 new arm; degenerate sample; one more WSJ Google arm would shift the illustrative delta.'
+      counterevidence:
+        - 'm1006 (FT x Google, #1292, FIFTY-EIGHTH member): FT ran adversarial enforcement on its Feb-2026 News AI pilot licensing partner - consistent direction, different publication and deal.'
+        - 'm904 (WSJ x OpenAI, #1122, FORTY-FOURTH member): same-outlet precedent - the Journal ran safety-crisis and enforcement accountability on its $50M/yr OpenAI licensing partner with the deal disclosed in-article.'
+        - '#532 (Sep 5): near-symmetry in the Astra cyber-rating vs $18B settlement window - the dual-deal prediction is window-dependent.'
+        - 'm718 (+0.55 matched capital-raise gap) stands unchallenged.'
+      research_method: '1 delegated scout (ranked 3 pairs: AP x OpenAI rejected - DevDay arm saturated as the fiftieth journalist-level member, gov-sites training-pause wire saturated as m862''s event #1052; AP x Google rejected - single relay arm; WSJ x Google SELECTED) + 4 main-run browser.search verification sets (2 scout-corroboration sets: DevDay exact-headline, training-pause exact-headline; 2 fresh: AP-October sweep, WSJ-Google-October sweep), 0 browser.open per #503. Excerpt-bounded; the WSJ EU-fine URL is verbatim from the Full-URL listing; no canonical URLs constructed. Pre-commit novelty greps per #715: zero test_type_a_1302 files on disk (glob); no ''Type A #1302'' in git log (--grep); max numeric mechanism_id 1011 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-one-two mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded, __pycache__ excluded per the #715 pattern-rescope lesson); block key zero-hit repo-wide pre-commit (designed keying: iteration 1302 in key, no 1012 substring, per the #723/#738/#739 convention); ''## #1302'' zero-hit in iteration-log pre-commit; README stats 72992/1626 pre-commit; no #1302 row in README/ARCHITECTURE test tables pre-commit; the WSJ EU-fine URL zero-hit repo-wide pre-commit (git grep -F); the akronnewsreporter DevDay URL and the lapost training-pause URL hit pre-commit (saturated, excluded by design). ASCII-only, no em dashes.'
+      source_urls:
+        - 'https://www.wsj.com/tech/google-fined-1-02-billion-under-eus-tech-antitrust-rules-7e8ae1fb'
+      test_file: 'tests/test_type_a_1302_wsj_google_eu_dma_fine_enforcement_vs_carried_meta_arms_oct08_1am.py'
+      connects_to: [342, 532, 904, 1006]
+      rotation_transparency: 'Iteration #1302 Type A is the THIRD leg of the 1300-1304 window (D #1300 -> E #1301 -> A #1302 -> B #1303 -> C #1304, per the #565 anchor + rotation guard). Predecessor #1301 Type E verified in git log (main 68be73fa / anchor deb96ee6 / doc-sync 8dc0404d / log-hash 9c61ea8b, Oct 8 2026 ~12:00 AM PDT; 183rd podcast-sentiment verification; ledger holds at 58). The 1295-1299 window is VERIFIED CLOSED. This run''s main commit is the anchor per #565; ANCHORED_SHA patched post-commit. The #1301 forward guards verified GREEN pre-commit this run (max-1011; zero one-zero-one-two keys all forms; no-Type-A-#1302-in-git-log; fortieth direction absent; forty-eighth through fifty-eighth intact; no fifty-ninth member; ledger 58). Next: #1303 Type B continues the window; the #1300-launched background-suite verdict belongs to #1305 per #795.'
   x_twitter:
     financial_tie: none
     estimated_value: $0
