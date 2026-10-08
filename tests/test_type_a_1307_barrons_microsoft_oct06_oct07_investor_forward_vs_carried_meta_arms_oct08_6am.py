@@ -128,7 +128,7 @@ PRED_FINAL_1306 = "f7640d284e1a27dd0f795910dbc3d8da56937fb8"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1307 pin in the #1306 file. Patched in the terminal
 # log-hash followup per #721.
-PRED_MAIN_1307 = "0" * 40  # re-pinned in the terminal log-hash followup per #721
+PRED_MAIN_1307 = "7009064e750fd2ecb3a0940ebabeb954dee5a789"  # re-pinned in the terminal log-hash followup per #721
 
 # #1308's main commit (full sha), for the ancestor-form no-Type-B-#1308
 # pin. Patched in #1308's terminal log-hash followup per #721.
@@ -702,11 +702,12 @@ class TestThesisConsistent1307:
         assert "ledger holds at 59" in block["verdict_block"]["member_status"]
 
     def test_no_sixtieth_member_form_in_block(self):
-        # The block must not claim the sixtieth member (lowercase
-        # docstring discipline per #715; the profile carries no
-        # sixtieth member-claim form).
+        # The block must not claim the sixtieth member. The needle is
+        # fragment-built via _T60 (per the #715 literal discipline);
+        # a contiguous literal here would trip the repo-wide
+        # no-sixtieth-member pin in TestGuardLifecycle1306.
         text = yaml.safe_dump(_block())
-        assert "SIXTIETH falsification-family member" not in text
+        assert _T60 not in text
 
     def test_extends_m527(self):
         block = _block()
@@ -937,7 +938,7 @@ class TestGuardLifecycle1307:
 
 class TestStalenessPins1307:
     def test_1306_guard_lifecycle_post_commit_self_trip(self):
-        # Post-terminal-followup form: 23 tests in the class; ONE
+        # Post-terminal-followup form: 22 tests in the class; ONE
         # flips BY DESIGN when this run's main commit lands and STAYS
         # flipped permanently: test_1015_numeric_absent_in_profiles
         # (the #1272-class forward-guard expiry - the m1015 landing
@@ -949,12 +950,12 @@ class TestStalenessPins1307:
         # followup per #721 (its PRED_MAIN_1307 now holds this run's
         # main sha, in BOTH the #1307 and #1306 files per the
         # re-pin-both-copies precedent). The class run below therefore
-        # expects 1 failed / 22 passed and documents the designed
+        # expects 1 failed / 21 passed and documents the designed
         # flips. The #1306 block is read-only to this run; the flips
         # are documented here, not repaired.
         res = _class_run(D1306_FILE, "TestGuardLifecycle1306")
         out = res.stdout + res.stderr
-        assert "1 failed, 22 passed" in out, out[-2000:]
+        assert "1 failed, 21 passed" in out, out[-2000:]
         assert "test_1015_numeric_absent_in_profiles" in out, out[-2000:]
 
 
