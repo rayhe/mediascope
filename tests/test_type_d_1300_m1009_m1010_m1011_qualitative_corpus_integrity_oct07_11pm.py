@@ -183,7 +183,7 @@ PRED_MAIN_1300 = "73eae8b27c3de34e37602f5562c7dae2987d3c7f"  # re-pinned to main
 # Forward guard for the next leg: #1301 Type E. Re-pinned by #1301's
 # terminal log-hash followup per #721 (starts as 0*40;
 # placeholder-only).
-PRED_MAIN_1301 = "0" * 40
+PRED_MAIN_1301 = "68be73fa52f911ddd45760980e5a08c47fec15d7"  # re-pinned in #1301 terminal log-hash followup per #721 (re-pin-both-copies precedent)
 
 # The #1299 window-closing file, for the staleness pin on its guard
 # lifecycle (21 tests; post-terminal-followup form is 21 passed - the
