@@ -128,7 +128,7 @@ PRED_PUSH_1300 = "91a83617"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the no-Type-D-#1305 own-run pin
 # flips green post-repin).
-PRED_MAIN_1305 = "0" * 40
+PRED_MAIN_1305 = "df99a8be9332a4d8861eff86c046acb13c5f5f10"  # re-pinned to main sha per #721
 
 # Forward guard for the next leg: #1306 Type E. Re-pinned by #1306's
 # terminal log-hash followup per #721 (starts as 0*40;
@@ -136,7 +136,7 @@ PRED_MAIN_1305 = "0" * 40
 PRED_MAIN_1306 = "0" * 40
 
 # The #1304 window-closing file, for the staleness pin on its guard
-# lifecycle (21 tests; post-terminal-followup form is 21 passed - the
+# lifecycle (22 tests; post-terminal-followup form is 22 passed - the
 # no-Type-D-#1305 pin flips at this run's main commit and is re-pinned
 # green in the terminal log-hash followup per #721, its PRED_MAIN_1305
 # re-pinned in BOTH files per the #1292 precedent; the 1015-form pins
@@ -973,7 +973,7 @@ class TestGuardLifecycle1305:
 
 class TestStalenessPins1305:
     def test_1304_guard_lifecycle_post_terminal_self_trip(self):
-        # Post-terminal-followup form: 21 tests in the class; ONE flips
+        # Post-terminal-followup form: 22 tests in the class; ONE flips
         # BY DESIGN when this run's main commit lands (the
         # no_type_d_1305_in_git_log pin - the #1191-class self-trip)
         # and flips back green in the terminal log-hash followup per
@@ -987,7 +987,7 @@ class TestStalenessPins1305:
         # no commits to match yet).
         res = _class_run(E1304_FILE, "TestGuardLifecycle1304")
         out = res.stdout + res.stderr
-        assert "21 passed" in out, out[-2000:]
+        assert "22 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------

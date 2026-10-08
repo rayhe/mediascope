@@ -190,7 +190,7 @@ PRED_MAIN_1304 = "dbacdeb6a0f58bc1d3c5a22a33920c6e2146cf4e"  # re-pinned to main
 # Forward guard for the next leg: #1305 Type D. Re-pinned by #1305's
 # log-hash followup per #721 (starts as 0*40; placeholder-only per
 # the Type C precedent - this file carries no forward git-log pin).
-PRED_MAIN_1305 = "0" * 40  # re-pinned by #1305 terminal log-hash followup per #721
+PRED_MAIN_1305 = "df99a8be9332a4d8861eff86c046acb13c5f5f10"  # re-pinned in #1305 terminal log-hash followup per #721 (re-pin-both-copies precedent)  # re-pinned by #1305 terminal log-hash followup per #721
 
 # The #1303 window-continuation file, for the staleness pin on its
 # guard-lifecycle class (max id 1013; zero one-zero-one-four keys all
