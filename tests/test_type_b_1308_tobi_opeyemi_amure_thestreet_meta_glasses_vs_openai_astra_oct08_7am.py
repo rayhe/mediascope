@@ -148,7 +148,7 @@ PRED_FINAL_1306 = "f7640d284e1a27dd0f795910dbc3d8da56937fb8"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the own-run git-log pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1308 = "0" * 40
+PRED_MAIN_1308 = "5b997970b53d4a9e687a2f9a1a99e2cd2b558891"  # re-pinned to #1308 main sha in the terminal log-hash followup per #721
 
 # Forward guard for the next leg: #1309 Type C. Re-pinned by #1309's
 # log-hash followup per #721 (starts as 0*40; the forward pin is
@@ -422,15 +422,19 @@ class TestMechanismNovelty1308:
         assert len(_repo_grep_numeric_mechanism_id(MECH_NUM)) >= 1
 
     def test_no_type_b_1308_in_git_log_own_run(self):
-        # Pre-commit form: no "Type B #1308" commits exist yet.
-        # Deselected in the in-gate run (fails pre-commit by design:
-        # PRED_MAIN_1308 is 0*40). Post-main-commit it flips to the
-        # post-commit form (re-pinned in the terminal log-hash
-        # followup per #721).
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the terminal log-hash followup per #721): every commit
+        # whose message matches "Type B #1308" must be #1308's main
+        # commit or a descendant of it. Deselected in the in-gate run
+        # (fails pre-commit by design: PRED_MAIN_1308 is 0*40).
         out = _git("log", "--format=%H", "--grep=Type B #1308")
         hits = [line.strip() for line in out.stdout.splitlines()
                 if line.strip()]
-        assert hits == [], hits
+        assert hits, "expected #1308's own commits"
+        main = _git("rev-parse", PRED_MAIN_1308).stdout.strip()
+        for h in hits:
+            r = _git("merge-base", "--is-ancestor", main, h)
+            assert r.returncode == 0, h
 
     def test_novel_urls_zero_hit_pre_commit(self):
         # All three novel URLs verified zero-hit repo-wide pre-commit

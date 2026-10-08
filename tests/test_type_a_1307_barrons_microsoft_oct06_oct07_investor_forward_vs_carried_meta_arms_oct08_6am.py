@@ -132,7 +132,7 @@ PRED_MAIN_1307 = "7009064e750fd2ecb3a0940ebabeb954dee5a789"  # re-pinned in the 
 
 # #1308's main commit (full sha), for the ancestor-form no-Type-B-#1308
 # pin. Patched in #1308's terminal log-hash followup per #721.
-PRED_MAIN_1308 = "0" * 40  # re-pinned to #1308 main sha per #721
+PRED_MAIN_1308 = "5b997970b53d4a9e687a2f9a1a99e2cd2b558891"  # re-pinned to #1308 main sha in the terminal log-hash followup per #721  # re-pinned to #1308 main sha per #721
 
 # The #1306 predecessor file, for the staleness pin on its
 # guard-lifecycle class (max id 1014; zero next-number
