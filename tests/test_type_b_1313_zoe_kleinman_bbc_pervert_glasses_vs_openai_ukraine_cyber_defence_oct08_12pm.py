@@ -138,7 +138,7 @@ TOP_KEY = "zoe_kleinman_type_b"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40  # patched to the main commit sha in the anchor followup per #565
+ANCHORED_SHA = "fc747c1346a12167eaf28ac461ab2ae5546c7e04"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
