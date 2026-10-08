@@ -1959,6 +1959,110 @@ competitor_relationships:
       artifact_readiness: 'No analysis.json update warranted. Directional, n.s. scorer output on manual illustrative tones; no new artifact-grade tone data.'
       verification_date: '2026-09-09'
       author: 'Kit (with Ray)'
+    type_a_1307_barrons_microsoft_oct06_oct07_investor_forward_vs_carried_meta_arms_oct08_6am:
+      mechanism_id: 1015
+      mechanism_name: 'Barron''s x Microsoft Oct-6/Oct-7 2026 Investor-Forward Register - m527 Cushioning-Line Extension (Safety-Fear Inversion)'
+      iteration: 1307
+      iteration_type: 'A'
+      date: '2026-10-08'
+      summary: 'FIRST dedicated corpus mechanism on the Barron''s x Microsoft investor-forward register: two fresh Barron''s Microsoft arms (Oct 6, Oct 7) run the cushioned register on the licensing payer at MANUAL ILLUSTRATIVE +0.30/+0.20 (mean +0.25) vs carried Barron''s x Meta arms (+0.05/+0.10, mean +0.075, #1237 un-rescored per #807): illustrative delta (Microsoft minus Meta) +0.175, symmetric investor-forward softness. The naive uniform payer-softening prediction (competitor_relationships.microsoft coverage_prediction softer, Nov-2024 HarperCollins book-licensing deal) is MET on the fresh peg, not falsified: the Oct-6 AI-safety news moment - which the FT ran adversarially on its own payer OpenAI the same day (saturated member line) - Barron''s inverts into a Microsoft bull case (safety fears as a selling point, 98% analyst Buy, $4T approach). Extends m527''s financially-scrutinized-but-cushioned line into the safety-fear-inversion register. Thesis-consistent observation; NOT a falsification-family member; ledger holds at 59.'
+      financial_relationship:
+        deal: 'News Corp x Microsoft HarperCollins book-licensing deal, Nov 2024: Microsoft trains an undisclosed AI model on HarperCollins titles; $5,000 per title 50/50 author/publisher split, 3-year term, aggregate undisclosed; Bloomberg-reported via anonymous sources, never officially confirmed by either party (mechanism 524).'
+        transmission_note: 'Book-division deal means owner-to-newsroom incentive transmission is attenuated vs the Dow Jones news legs (OpenAI $250M/5yr, Meta up to $50M/yr); the prediction is structural (correlation, not causation).'
+        openai_financial: 'News Corp x OpenAI May-2024 $250M/5yr licensing deal (OpenAI leg).'
+        meta_financial: 'News Corp x Meta Mar-2026 up-to-$50M/yr licensing deal (Meta leg).'
+        coverage_prediction: 'softer (uniform payer-softening; book-leg attenuation disclosed)'
+        prediction_outcome: 'MET_not_falsified'
+        non_causal_language: 'Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control. Hypothesis-generating only.'
+      microsoft_arms:
+        - title: 'Microsoft Nears $4 Trillion as AI Safety Fears Become a Selling Point'
+          publication: 'Barron''s'
+          date: '2026-10-06'
+          byline: 'Mariapaula Gonzalez (per search snippet)'
+          url: 'https://www.barrons.com/articles/microsoft-stock-buy-ai-security-4c4c7383'
+          url_status: 'zero-hit repo-wide pre-commit (git grep -F); verbatim from Full-URL listing; excerpt-bounded per #503 (Barron''s paywalled)'
+          register: 'safety_fear_inversion_bull_case'
+          tone_MANUAL_ILLUSTRATIVE: 0.30
+          key_facts:
+            - 'AI safety fears framed as a Microsoft selling point (enterprise trust/governance demand)'
+            - 'Microsoft nears $4 Trillion market cap'
+            - '98% of 59 analysts polled rate the stock Buy-equivalent'
+            - 'Piper Sandler: Microsoft 365 E7 tier ($99/user/month) as AI-agent control plane'
+          note: 'The cushioning register inverts the adversity: the same Oct-6 AI-safety news moment (rogue-agent liability, insurer D&O exposure) that the FT ran adversarially on its own payer OpenAI is, at Barron''s, a reason to buy the Microsoft payer.'
+        - title: 'Microsoft and Nvidia Unveil AI-Centric Laptop and ''Hybrid Intelligence'''
+          publication: 'Barron''s'
+          date: '2026-10-07'
+          byline: 'not captured in excerpt'
+          url: 'https://www.barrons.com/articles/microsoft-and-nvidia-will-present-new-ai-centric-laptop-today-why-it-matters-1a5fb9e9'
+          url_status: 'zero-hit repo-wide pre-commit (git grep -F); verbatim from Full-URL listing; excerpt-bounded per #503 (Barron''s paywalled)'
+          register: 'product_forward_event'
+          tone_MANUAL_ILLUSTRATIVE: 0.20
+          key_facts:
+            - 'Surface Laptop Ultra unveiled at Oct-7 San Francisco keynote (Nadella + Huang on stage)'
+            - 'Nvidia RTX Spark chip; preorder $2,599, ships Oct 16'
+            - '"birth of the next generation of Windows agentic platforms" (Nadella, via Barron''s)'
+            - 'Surface RTX Spark Dev Box $5,999 for open-weight models'
+          note: 'Straight product-forward event coverage; zero adversarial framing of the payer on its own launch.'
+      microsoft_mean_tone: 0.25
+      meta_arms_carried:
+        carried_from: 'Barron''s x Meta arms from #1237 (M1 Sep-24 Connect keynote +0.05, M2 Sep-23 Muse investor piece +0.10), un-rescored per #807'
+        arms:
+          - 'M1 (Sep 24): Meta Puts Apple Firmly in Its Sights With New VR Glasses (+0.05, product-forward Connect keynote)'
+          - 'M2 (Sep 23): Muse AI Makes Meta Connect a Must Watch for Investors (+0.10, investor-forward)'
+        meta_mean: 0.075
+      tabloid_register_counterpoint:
+        title: 'Microsoft, OpenAI workers privately worried their work is ''largest theft of labor in human history'''
+        publication: 'NY Post'
+        date: '2026-09-18'
+        url: 'https://nypost.com/2026/09/18/business/microsoft-openai-workers-privately-worried-their-work-is-largest-theft-of-labor-in-human-history/'
+        url_status: 'zero-hit repo-wide pre-commit (git grep -F); novel to the corpus this run'
+        note: 'Bounding counterpoint, not a fresh arm (19 days old): the tabloid register goes adversarial on BOTH payers (Microsoft and OpenAI) symmetrically - consistent with the 29th member''s dual-payer tabloid symmetry. The softness documented here is title-local to Barron''s investor register, not parent-level.'
+      scorer:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'Microsoft Barron''s Oct-6/Oct-7 investor-forward register (m1015 NEW)'
+        peer_entity: 'Meta Barron''s carried investor-forward arms (M1/M2, #1237)'
+        target_scores_MANUAL_ILLUSTRATIVE: [0.30, 0.20]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.05, 0.10]
+        microsoft_mean_tone: 0.25
+        meta_mean_tone: 0.075
+        illustrative_delta_microsoft_minus_meta: 0.175
+        delta_calc: '0.25 - 0.075 = +0.175'
+        delta_direction: 'Symmetric investor-forward softness: both payers (Microsoft via HarperCollins book leg, Meta via Mar-2026 Dow Jones news leg) receive the cushioned register at Barron''s; Microsoft marginally more positive (+0.175). The uniform payer-softening prediction is MET at this title on this peg.'
+        methodology: 'n=2 vs n=2 (Barron''s Microsoft Oct-6/Oct-7 vs carried Barron''s Meta Sep-23/Sep-24); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        reading: 'prediction_MET_symmetric_softness'
+        verdict: 'thesis_consistent_observation'
+        no_analysis_json_update: true
+        artifact_grade: false
+      research_method: '1 delegated scout (ranked 3 pairs; FT x OpenAI + WIRED x OpenAI held as saturated backups; NY Post x Microsoft Sep-18 noted as novel counterpoint) + 3 main-run browser.search verification sets (2 scout-corroboration + 1 fresh), 0 browser.open per #503. Excerpt-bounded; the Barron''s URLs are verbatim from the Full-URL listings; no canonical URLs constructed.'
+      scout_rejections: 'FT x OpenAI Oct-6 rogue-agent liability arms: adversarial but saturated (FT x OpenAI member line). WIRED x OpenAI Oct-6 arms: mild, saturated (40th/47th member line). WSJ x OpenAI Sep-28/Oct-1 safety-crisis double: saturated (m904 44th member). NY Post x Microsoft Sep-18: novel URL but 19-day-old peg; carried as bounding counterpoint only.'
+      novelty: 'zero test_type_a_1307 files on disk (glob); no "Type A #1307" in git log (--grep); max numeric mechanism_id 1014 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-one-five mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded, __pycache__ excluded per the #715 pattern-rescope lesson); block key zero-hit repo-wide pre-commit (designed keying: iteration 1307 in key, no 1015 substring, per the #723/#738/#739 convention); "## #1307" zero-hit in iteration-log pre-commit; README stats 73473/1631 pre-commit; no #1307 row in README/ARCHITECTURE test tables pre-commit; the 3 novel URLs zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      verdict_block:
+        verdict: 'thesis_consistent_observation'
+        member_status: 'NOT a falsification-family member (ledger holds at 59)'
+        extends: 'm527 (Sep-4 WSJ x Microsoft woo-side register, financially-scrutinized-but-cushioned +0.07)'
+        new_register: 'safety_fear_inversion_bull_case - the Oct-6 AI-safety news moment inverted into a Microsoft buy thesis'
+        scope_bound: 'title-local to Barron''s investor register; NOT parent-level (the NY Post tabloid register runs adversarial on both payers)'
+        counterpoint_bound: 'NY Post Sep-18 dual-payer adversarial piece is consistent with the 29th member''s tabloid symmetry; it bounds rather than breaks the Barron''s finding'
+        distinct_from_prior: 'm904 (WSJ x OpenAI 44th member, safety-crisis register on the OpenAI leg); m527 (WSJ x Microsoft woo-side, thesis-consistent predecessor on this pair)'
+      statistical_discipline:
+        scores: 'MANUAL ILLUSTRATIVE only'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        artifact_grade: false
+        no_analysis_json_update: true
+        verdict: 'thesis_consistent_observation'
+        correlation_not_causation: true
+        hypothesis_generating_only: true
+      rotation_transparency: 'Iteration #1307 Type A is the THIRD leg of the 1305-1309 window (D #1305 -> E #1306 -> A #1307 -> B #1308 -> C #1309, per the #565 anchor + rotation guard). Predecessor #1306 Type E verified in git log pre-commit (main 0ac1044d / anchor 69dadafb / doc-sync dbed9dbc / log-hash f7640d28, Oct 8 2026 ~05:00 AM PDT; 184th podcast-sentiment verification; ledger holds at 59). The 1300-1304 window is VERIFIED CLOSED. This run''s main commit is the anchor per #565; ANCHORED_SHA patched post-commit. The #1306 forward guards verified GREEN pre-commit this run (max-1014; zero one-zero-one-five keys all forms; no-Type-A-#1307-in-git-log; fortieth direction absent; forty-eighth through fifty-ninth members intact; no sixtieth member; ledger 59). Next: #1308 Type B continues the window; the #1305-launched background-suite verdict belongs to #1310 per #795.'
+
   anthropic:
     financial_tie: settlement_revenue
     estimated_value: share of $1.5B class-action settlement (Bartz v. Anthropic)
