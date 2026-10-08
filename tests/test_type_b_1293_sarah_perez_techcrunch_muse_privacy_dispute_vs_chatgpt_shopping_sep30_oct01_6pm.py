@@ -97,7 +97,7 @@ OWN_BASENAME = (
 JOURNALIST_NAME = "Sarah Perez"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # patched post-commit per #565
+ANCHORED_SHA = "5e8b08a4229694d4bb932c67727caa7842b3e4df"  # patched to main commit per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
