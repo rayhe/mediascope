@@ -124,7 +124,7 @@ PRED_FINAL_1291 = "939e19d6"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the own-run git-log pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1293 = "0" * 40
+PRED_MAIN_1293 = "5e8b08a4229694d4bb932c67727caa7842b3e4df"  # re-pinned in the terminal log-hash followup per #721
 
 # Forward guard for the next leg: #1294 Type C. Re-pinned by #1294's
 # log-hash followup per #721 (starts as 0*40; the forward pin is
@@ -425,13 +425,20 @@ class TestMechanismNovelty1293:
         assert hits == [JOURNALISTS_PATH], hits
 
     def test_no_type_b_1293_in_git_log_pin(self):
-        # Pre-commit form: no commit message carries "Type B #1293"
-        # (the #1191-class self-trip; this run's own main commit flips
-        # it post-commit, re-pinned green in the log-hash followup per
-        # #721). Deselected in the in-gate run (fails post-main-commit
-        # by design).
+        # Post-main-commit form (the #1191-class self-trip, re-pinned
+        # in the terminal log-hash followup per #721): every commit
+        # whose message matches "Type B #1293" must be this run's
+        # main commit or a descendant of it - i.e., no PRIOR run
+        # committed this run's iteration. Deselected in the in-gate
+        # run (fails pre-commit by design).
         out = _git("log", "--format=%H", "--grep=Type B #1293")
-        assert out.stdout.strip() == "", out.stdout
+        hits = [line.strip() for line in out.stdout.splitlines()
+                if line.strip()]
+        assert hits, "expected this run's own commits"
+        main = _git("rev-parse", PRED_MAIN_1293).stdout.strip()
+        for h in hits:
+            r = _git("merge-base", "--is-ancestor", main, h)
+            assert r.returncode == 0, h
 
 
 # ---------------------------------------------------------------------------
