@@ -98,7 +98,7 @@ TOP_KEY = "type_c_1324_openai_atlassian_reciprocal_enterprise_embed_oct08_8pm"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "ea330ddebc4d9c3d715d9ecd1532add85274c0db"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
