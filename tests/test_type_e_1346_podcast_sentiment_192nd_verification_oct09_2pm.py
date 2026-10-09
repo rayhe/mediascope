@@ -224,7 +224,7 @@ PRED_FINAL_1345 = "07a9a2819261818242f5e9b785523955171512c9"
 # no-Type-E-#1346 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in the anchor followup per #721 (PRED_MAIN_1346 re-pinned
 # in BOTH this file and the #1345 file per the #1292 precedent).
-PRED_MAIN_1346 = "0" * 40
+PRED_MAIN_1346 = "9adb96df467924dbb9295f8c3dc3ac8c299c00c1"
 
 # #1347's main commit (full sha), for the ancestor-form no-Type-A-#1347
 # pin. Staged 0*40 placeholder-only per #721; re-pinned in #1347's

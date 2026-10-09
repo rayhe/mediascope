@@ -160,7 +160,7 @@ PRED_MAIN_1345 = "fbd9c635e81575717ac42b1124d8f99484fd5749"
 
 # Forward guard for the next leg: #1346 Type E. Re-pinned by #1346's
 # anchor followup per #721 (starts as 0*40; placeholder-only).
-PRED_MAIN_1346 = "0" * 40
+PRED_MAIN_1346 = "9adb96df467924dbb9295f8c3dc3ac8c299c00c1"
 
 # The #1344 window-closing file, for the staleness pin on its guard
 # lifecycle (26 tests; post-terminal-followup form is 26 passed - the
