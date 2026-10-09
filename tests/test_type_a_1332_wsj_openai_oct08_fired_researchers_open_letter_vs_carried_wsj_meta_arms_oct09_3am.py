@@ -967,22 +967,25 @@ class TestGuardLifecycle1332:
 
 class TestStalenessPins1332:
     def test_1331_guard_lifecycle_post_commit_self_trip(self):
-        # Post-terminal-followup form: 24 tests in the class; 23 pass,
-        # 1 fails BY DESIGN and permanently - the #1272-class
-        # forward-guard expiry (test_1030_numeric_absent_in_profiles
-        # trips on this run's landed m1030 block). The
-        # no_type_a_1332_in_git_log ancestor pin (the #1191-class
-        # self-trip) was red at this run's main-commit time; this
-        # run's terminal log-hash followup re-pins PRED_MAIN_1332 in
-        # BOTH its own file's copy and the #1331 predecessor file's
-        # copy per the #1292 re-pin-both-copies precedent and the
-        # #721 re-pin rule, flipping it green. The 1030-underscore
-        # and 1030-dash pins stay green (no one-zero-three-zero
-        # mechanism-key forms landed). Deselected in the in-gate run
-        # (fails pre-commit by design); verified post-terminal.
+        # Post-terminal-followup form: 24 tests in the class; 22 pass,
+        # 2 fail BY DESIGN and permanently - the #1191-class
+        # self-trip (test_no_sixty_second_member_pin flips at this
+        # run's main commit on the landed m1030 SIXTY-SECOND claim)
+        # and the #1272-class forward-guard expiry
+        # (test_1030_numeric_absent_in_profiles trips on the landed
+        # m1030 block). The no_type_a_1332_in_git_log ancestor pin
+        # (the other #1191-class self-trip) was red at this run's
+        # main-commit time; the anchor followup re-pinned
+        # PRED_MAIN_1332 in BOTH its own file's copy and the #1331
+        # predecessor file's copy per the #1292 re-pin-both-copies
+        # precedent and the #721 re-pin rule, flipping it green. The
+        # 1030-underscore and 1030-dash pins stay green (no
+        # one-zero-three-zero mechanism-key forms landed).
+        # Deselected in the in-gate run (fails pre-commit by
+        # design); verified post-terminal.
         res = _class_run(B1331_FILE, "TestGuardLifecycle1331")
         out = res.stdout + res.stderr
-        assert "1 failed, 23 passed" in out, out[-2000:]
+        assert "2 failed, 22 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
