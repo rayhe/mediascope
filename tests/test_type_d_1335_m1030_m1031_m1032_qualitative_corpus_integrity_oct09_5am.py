@@ -174,7 +174,7 @@ E1334_FILE = "test_type_c_1334_perplexity_reuters_multiyear_archive_licensing_oc
 # Doc-sync constants per #719: post-doc-sync values from the start.
 # Patched pre-main once the in-gate collection count is known.
 README_TEST_COUNT = 76427  # patched pre-main: pre-sync 76328 + 99 collected
-README_FILE_COUNT = 1659  # patched pre-main: pre-sync 1658 + 1 (this file)
+README_FILE_COUNT = 1660  # patched pre-main: pre-sync 1659 + 1 (this file)
 
 # m846 block region in profiles/competitor-entities.yaml at HEAD (the
 # #1024 m846 decision-pending block; byte-identity pin in the
