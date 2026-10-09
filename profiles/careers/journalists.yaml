@@ -29630,3 +29630,94 @@ katie_paul_type_b:
       in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1025 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
       source_urls:
       - https://wixx.com/2026/09/22/exclusive-meta-testing-a-human-concierge-for-its-new-personal-ai-agent-muse/
+
+matt_swider_type_b:
+  name: Matt Swider
+  publication: the-shortcut
+  mechanism_ids: [1028]
+  notes: 'Type B #1328 (Oct 8 2026): mechanism 1028, NOT a falsification-family member (ledger holds at 61) - FIRST dedicated Type B pair on Matt Swider (The Shortcut founder/editor-in-chief; zero matt_swider_type_b keyed entry pre-commit; zero "matt swider" hits repo-wide pre-commit - fully novel journalist; The Shortcut outlet zero-hit repo-wide pre-commit). ZERO-GRADIENT control on the payer axis: no documented Shortcut x Meta/Apple licensing deal in-corpus; the pair cannot test the payer-softening prediction (the #1313/#1318 control-case precedent). Sep-30-2026 Meta Ray-Ban Gen-3 / VR-glasses launch piece (+0.25 MANUAL ILLUSTRATIVE, spec-forward first-look) vs Sep-9-2026 Apple iPhone Duo launch piece (+0.15, launch-enthusiastic with a skeptical kicker, co-bylined Swider/Buondonno/Lee); illustrative delta (Apple minus Meta) -0.10 - register constancy, same outlet, 21 days apart, both flagship-launch first-looks. Qualcomm Snapdragon Summit sponsorship is a STRONG confound on the Meta arm, not a payer leg. Excerpt-tier per #503, 2 browser.open reads (Muck Rack listing + pre-order page, attribution intelligence only).'
+  competitor_coverage:
+    type_b_1328_matt_swider_shortcut_meta_rayban_gen3_vs_apple_iphone_duo_oct08_11pm:
+      block_key: type_b_1328_matt_swider_shortcut_meta_rayban_gen3_vs_apple_iphone_duo_oct08_11pm
+      mechanism_id: 1028
+      iteration: 1328
+      iteration_type: B
+      type: B
+      date: '2026-10-08 23:00 PDT'
+      test_file: tests/test_type_b_1328_matt_swider_shortcut_meta_rayban_gen3_vs_apple_iphone_duo_oct08_11pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Matt Swider
+      publication: the-shortcut
+      window: '1325-1329 window FOURTH leg (D #1325 -> E #1326 -> A #1327 -> B #1328 -> C #1329)'
+      design: 'Type B journalist tracking, within-journalist cross-entity pair: Matt Swider (The Shortcut founder/editor-in-chief) on Meta''s Sep-30-2026 Ray-Ban Gen-3 / VR-glasses launch (sole byline) vs Apple''s Sep-9-2026 iPhone Duo launch (co-bylined Swider/Buondonno/Lee), 21 days apart, both flagship-launch first-look pieces at the same Substack outlet. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      financial_context: 'ZERO-GRADIENT control: no documented The Shortcut x Meta, x Apple, or x Snap AI content licensing deal in-corpus (bounded absence per iteration-492) - the pair cannot test the payer-softening prediction; it joins the #1313 Kleinman / #1318 Shanklin control-case family. Confound (not a payer leg): Qualcomm sponsored The Shortcut''s Snapdragon Summit Maui week during which the Meta arm was filed ("Qualcomm is hosting The Shortcut''s Substack and our live stream for the entire week in Maui"; "Qualcomm''s XR chief named every chip live on our show") - the spec-forward register on the Meta arm may track the sponsored-junket context. Ranked STRONG as a confound.'
+      meta_arm:
+        title: 'Meta''s new $349 Ray-Bans ditch the camera, spawn a VR headset - and all run on Snapdragon'
+        date: '2026-09-30'
+        outlet: the-shortcut
+        author_byline: 'Matt Swider'
+        entity: meta
+        url: https://www.theshortcut.com/p/meta-glasses-camera-free-first-look
+        url_note: 'URL copied verbatim from this run''s Full-URL listing (search index 1); byline "Sep 30 - Matt Swider" attested via The Shortcut Substack author listing; the piece also appears on Swider''s Muck Rack articles page; URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpts + Substack author listing; byline attested, no canonical construction)'
+        key_quotes:
+        - 'Launch frame (short phrase): "Meta''s new $349 Ray-Bans ditch the camera"'
+        - 'Spec-forward verdict (short phrase): "nice improvements here"'
+        - 'Design register (short phrases): "Design upgrade", "Battery boost", "Magic mics", "More styles"'
+        - 'Apple comparison inside the Meta piece (short phrase): "Like Apple Vision Pro went on a diet"'
+        tone_MANUAL_ILLUSTRATIVE: 0.25
+        tone_reading: 'Spec-forward launch register: the piece reads as a first-look spec rundown with upgrade framing on every axis (design, battery, mics, styles), the Gen 3 $449 on sale now, and the new Meta VR glasses framed as an Apple-Vision-Pro diet. The register is product-enthusiastic, not accountability.'
+        status: 'NEW this run (headline "ditch the camera" + URL zero-hit repo-wide pre-commit)'
+      apple_arm:
+        title: 'iPhone Duo: Our take on Apple''s first $2,000 foldable phone'
+        date: '2026-09-09'
+        outlet: the-shortcut
+        author_byline: 'Max Buondonno, Matt Swider, and Kevin Lee'
+        entity: apple
+        url: https://www.theshortcut.com/p/iphone-duo-first-look
+        url_note: 'URL copied verbatim from the Mobile Tech Podcast episode-links listing ("Matt''s Apple iPhone Duo and iPhone 18 Pro/Pro Max first impressions"); bylines "Sep 9 - Max Buondonno, Matt Swider, and Kevin Lee" attested via The Shortcut Substack author listing; URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpts + Substack author listing; co-byline attested)'
+        key_quotes:
+        - 'Launch frame (short phrase): "Apple''s answer to the Samsung Galaxy Z Fold 8 is finally here"'
+        - 'Enthusiastic register (short phrase): "most radical change to the iPhone design in its nearly 20-year history"'
+        - 'Skeptical kicker (short phrase): "whether the price can possibly be justified"'
+        - 'Skeptical kicker (short phrase): "or if we also just love all of Apple''s marketing tricks"'
+        tone_MANUAL_ILLUSTRATIVE: 0.15
+        tone_reading: 'Launch-enthusiastic register with a skeptical kicker: the foldable iPhone gets the historic-design-change framing, but the piece asks whether the $2,000 price can be justified and whether readers are falling for Apple marketing tricks. The enthusiasm is checked, not a puff piece.'
+        status: 'NEW this run (headline "Our take on Apple''s first $2,000 foldable phone" + URL zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: -0.1
+      illustrative_delta_apple_minus_meta: -0.1
+      delta_reading: 'Illustrative delta (Apple minus Meta) -0.10: register constancy. Swider runs a spec-forward launch register on Meta''s Sep-30 glasses (+0.25: upgrade framing on every axis) and a launch-enthusiastic-but-kicker-checked register on Apple''s Sep-9 foldable (+0.15). Same outlet, 21 days apart, both flagship-launch first-looks; no entity-selective softening or hardening in the pair.'
+      confounders:
+      - 'Co-byline asymmetry on the Apple arm (three bylines: Buondonno/Swider/Lee vs sole Swider byline on the Meta arm): the Apple register is a three-writer product, so a pure within-writer reading is diluted. Ranked STRONG.'
+      - 'Qualcomm sponsorship context on the Meta arm: the piece was filed from The Shortcut''s Snapdragon Summit Maui week ("Qualcomm is hosting The Shortcut''s Substack and our live stream for the entire week in Maui"); the spec-forward register may track the sponsored-junket context rather than a writer trait. Ranked STRONG.'
+      - 'Topic mismatch: smart glasses / VR headset launch vs foldable phone launch - different product categories, though both are flagship-launch first-look pieces at the same outlet in the same month. Ranked MODERATE.'
+      - 'Date gap: 21 days (Sep 9 vs Sep 30) - news cycles moved, but both are launch-window pieces. Ranked MODERATE.'
+      - 'Excerpt-bounded evidence: rendered Substack pages do not expose bylines in text; bylines attested via the Substack author listings and Muck Rack; the 2 browser.open reads were attribution-intelligence only. Ranked MODERATE.'
+      - 'Co-bylined Apple kicker: the skeptical "marketing tricks" line may be a co-author''s voice, not Swider''s. Ranked WEAK (unfavorable to the constancy reading - if the skepticism is not Swider''s, the Apple arm reads more enthusiastic and the delta shrinks further).'
+      counter_evidence:
+      - 'The Apple arm carries a genuine skeptical kicker (price justification, "marketing tricks") - the pair does not show Apple getting a free pass; the constancy is on the launch-register axis, not uniform softness.'
+      - 'The Meta arm contains the only cross-entity comparison in the pair ("Like Apple Vision Pro went on a diet") - favorable to Meta''s VR glasses against Apple''s headset inside the Meta piece itself, which bounds a pro-Apple-writer reading.'
+      - 'Swider''s AWE-2026 Snap coverage (Muck Rack-attested "Snapchat''s $2,195 AR glasses ship this fall") shows the same launch-register treatment of a third entity; the wearables beat is covered as product news across entities.'
+      connects_to: [1019, 1022]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Matt Swider (The Shortcut) runs a spec-forward launch register on Meta''s Sep-30-2026 Ray-Ban Gen-3 / VR-glasses piece (+0.25 MANUAL ILLUSTRATIVE: "nice improvements here", "Design upgrade", "Battery boost", "Magic mics", "More styles", Gen 3 $449 on sale now, Meta VR glasses "like Apple Vision Pro went on a diet") and a launch-enthusiastic-but-kicker-checked register on Apple''s Sep-9-2026 iPhone Duo piece (+0.15: "most radical change to the iPhone design in its nearly 20-year history" against "whether the price can possibly be justified" and "or if we also just love all of Apple''s marketing tricks"). Illustrative delta (Apple minus Meta) -0.10 - register constancy across entities: no entity-selective softening or hardening in the pair. ZERO-GRADIENT control (no documented Shortcut x Meta/Apple licensing deal in-corpus; the pair cannot test the payer-softening prediction; joins the #1313/#1318 control-case family). FIRST dedicated Type B pair on Swider (fully novel journalist; The Shortcut outlet zero-hit pre-commit). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction''s FAILURES, and this pair is a zero-gradient control - no documented The Shortcut x Meta or x Apple AI content licensing deal exists in-corpus (bounded absence per iteration-492), so there is no payer leg whose prediction could fail. The finding is a journalist-level register-constancy observation (Swider covers both Meta and Apple launches in the same spec-forward first-look register, 21 days apart), directionally consistent with the thesis but not a prediction test. The ledger holds at 61. Correlation, not causation. No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 61
+      ledger_note: 'Ledger holds at 61 this run (m1028 NOT a falsification-family member - zero-gradient control, joins the #1313/#1318 control-case family). Forty-eighth member-claim form intact in profiles/financial-times.yaml (2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (3 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third member-claim form intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form intact in profiles/guardian.yaml (2 occurrences); fifty-fifth member-claim form intact in profiles/atlantic.yaml (2 occurrences); fifty-sixth member-claim form intact in profiles/wired.yaml (2 occurrences); fifty-seventh member-claim form intact in profiles/ap.yaml (3 occurrences); fifty-eighth member-claim form intact in profiles/financial-times.yaml (3 occurrences); fifty-ninth member-claim form intact in profiles/news-corp.yaml (3 occurrences); sixtieth member-claim form intact in profiles/financial-times.yaml (3 occurrences); sixty-first member-claim form intact in profiles/wired.yaml (2 occurrences); sixty-second member-claim form absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 61).'
+      research_method: 'Main-run candidate screening (David Pierce REJECTED - dedicated Type B commit f51bb3d7 (2026-08-08) in-corpus, the delegated scout''s novelty check was defective and was caught by main-run git-log --grep verification; Kurt Wagner REJECTED - parental leave since Aug 2026, #508 saturated; Michael Calore REJECTED - podcast-only 2026 output; Brenda Stolyar REJECTED - #788/m704 saturated; Sean Hollister REJECTED - dedicated Type B commit 650aaeb + recused from Apple; Brian Heater REJECTED - Type B #613; Lucas Ropek REJECTED - four dedicated Type Bs; Patel/Gibbs and the scout''s saturation list stand; the Snap Sep-17 pre-order piece REJECTED as a Swider arm - absent from Swider''s Muck Rack author page; the Snap June AWE piece REJECTED - Swider-authorship Muck Rack-attested but no verbatim URL recoverable in search listings; Emilia David novel but not pursued this run, watchlist; Swider SELECTED - fully novel journalist, same outlet, 21-day flagship-launch first-look pair, sole-byline Meta arm) + 3 main-run browser.search verification sets (Swider Meta glasses; Swider Apple coverage; Snap Specs byline checks) + 2 browser.open reads (Muck Rack author listing byline attestation; the pre-order piece page - attribution intelligence only). 0 browser.open reads of article bodies for scoring (excerpt-tier per #503). Corpus novelty greps (zero matt_swider_type_b keyed entry; "matt swider" zero-hit; "the shortcut" outlet zero-hit; both URLs git grep -F zero-hit; both headlines zero-hit). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Verbatim quotation limited to short phrases per the copyright-brief-quotation rule.'
+      rejection_audit: 'Main-run screening: David Pierce REJECTED (dedicated Type B commit f51bb3d7 in-corpus - the scout''s #1 pick was defective); Kurt Wagner REJECTED (parental leave since Aug 2026; #508 saturated); Michael Calore REJECTED (podcast-only 2026 output); Brenda Stolyar REJECTED (#788/m704 saturated); Sean Hollister REJECTED (commit 650aaeb + Apple recusal); Brian Heater REJECTED (#613); Lucas Ropek REJECTED (4x saturated); the Snap Sep-17 pre-order piece REJECTED as Swider arm (not on his Muck Rack page); the Snap June AWE piece REJECTED (no verbatim URL). SELECTED: Matt Swider (fully novel journalist, same outlet, 21-day launch-piece pair, sole-byline Meta arm, co-bylined Apple arm documented as STRONG confound). Prior-run rejection lists stand.'
+      novelty: 'FIRST dedicated Type B pair on Matt Swider (m1028); zero test_type_b_1328 files on disk pre-commit (glob); no "Type B #1328" in git log pre-commit (--grep); max numeric mechanism_id 1027 pre-commit; zero numeric/underscore/dash one-zero-two-eight mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); zero matt_swider_type_b keyed entry pre-commit ("matt swider" zero-hit repo-wide pre-commit - fully novel journalist; "the shortcut" outlet zero-hit repo-wide pre-commit); block key zero-hit repo-wide pre-commit (designed keying: iteration 1328 in key, no 1028 or 1029 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); both arm headlines zero-hit repo-wide pre-commit ("ditch the camera"; "Our take on Apple''s first $2,000 foldable phone"); no #1328 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 75620/1652 pre-commit. NOT a falsification-family member (zero-gradient control); sixty-second member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1325-launched full suite (goal hidden_files type_d_1325_full_suite.log) observed at this run''s check (last write Oct 8 21:59 PDT, [ 2%], zero live pytest processes - appears dead; was ALIVE at #1326''s check, DEAD at #1327''s check). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1330 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1028 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://www.theshortcut.com/p/meta-glasses-camera-free-first-look
+      - https://www.theshortcut.com/p/iphone-duo-first-look
