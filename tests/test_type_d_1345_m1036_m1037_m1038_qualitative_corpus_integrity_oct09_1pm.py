@@ -156,7 +156,7 @@ PRED_FINAL_1340 = "e568e59f"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the no-Type-D-#1345 own-run pin
 # flips green post-repin).
-PRED_MAIN_1345 = "0" * 40
+PRED_MAIN_1345 = "fbd9c635e81575717ac42b1124d8f99484fd5749"
 
 # Forward guard for the next leg: #1346 Type E. Re-pinned by #1346's
 # anchor followup per #721 (starts as 0*40; placeholder-only).
