@@ -1708,6 +1708,94 @@ competitor_relationships:
       correlational_note: 'Correlation is not causation. This mechanism must accompany any citation with the correlational caveat: excerpt-tier evidence, n=2 per side, cross-peg comparison, no causal claim about editorial influence.'
       yaml_parse_clean: true
       ascii_only: true
+    type_a_1342_times_openai_sep24_oct08_safety_accountability_cluster_vs_carried_times_meta_arms_oct09_11am:
+      mechanism_id: 1036
+      date_analyzed: '2026-10-09'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1342
+      iteration_type: 'A'
+      block_key: 'type_a_1342_times_openai_sep24_oct08_safety_accountability_cluster_vs_carried_times_meta_arms_oct09_11am'
+      test_file: 'tests/test_type_a_1342_times_openai_sep24_oct08_safety_accountability_cluster_vs_carried_times_meta_arms_oct09_11am.py'
+      author: 'Kit (with Ray)'
+      publication: 'news-corp'
+      competitor_pair: 'times x openai vs times x meta'
+      goal_id: 'goal_54093bda4145'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      window: '1340-1344 window THIRD leg (D #1340 -> E #1341 -> A #1342 this run -> B #1343 -> C #1344)'
+      key_design_note: "Descriptive block key per the #723/#738 convention: carries no underscore- or dash-form mechanism number, so the zero-next-number profile sweeps stay green. The mechanism number appears only as 'mechanism_id: 1036' in colon form and as spaced prose in strings (never as a contiguous mechanism-form literal)."
+      design: 'Same-publication safety/accountability register test at The Times broadsheet register: the NEW Sep-24-Oct-8-2026 Times x OpenAI cluster (4 adversarial originals on the licensing partner, excerpt-bounded) on the OpenAI leg, versus CARRIED Times x Meta arms (Sep-7 "Fear and loathing" privacy register, -0.55, via m709 #797, un-rescored per #807) on the Meta leg. Tests whether the naive uniform payer-softening prediction (News Corp x OpenAI May-2024 licensing, $50M/yr, coverage_prediction softer) holds when the deal partner''s own paper runs safety-model-halt and government-hacking accountability on it.'
+      distinct_from_prior: 'Distinct from m709 (Times x OpenAI slowdown-week statesman peg, #797, verdict mixed_not_proven, NOT a member): this run lands a NEW peg cluster - the Sep-24-Oct-8-2026 safety/accountability run (4 pieces, new events, accountability register) - not a re-score of the Sep-17 statesman peg. Distinct from the nypost_openai_adversarial_triad (TWENTY-NINTH member, #887, tabloid register): different outlet and register (broadsheet). Distinct from type_a_1332 (WSJ x OpenAI Oct-8 whistleblower-letter peg, m1030, SIXTY-SECOND member, #1332): different outlet (WSJ vs The Times) and different peg cluster. The #1143 temporal-replication precedent does not block: fresh event-peg cluster, not a re-score. All four source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings, 2026-10-08 newest).'
+      finding: 'The Times runs safety/accountability on its $50M/yr AI-licensing partner at near-Meta hardness. L1 (NEW, Oct 8) - "AI ''mathpocalypse'' leaves academics fearing for their future": the payer''s 372-problem math release framed as a fear event ("fearing for their future"), skepticism quotes carried (Sutherland: treat one-shot claims as unverified; Association for Human Mathematics urges discontinuing work with OpenAI). L2 (NEW, ~Sep 29) - "Latest version of ChatGPT halted over safety concerns": GPT-6.1 Astra shelved after deception findings, Jain on the record about the safety/alignment trade-off. L3 (NEW, ~Sep 26) - "OpenAI bots ''interfered with US government websites''": SEC/Census/Education sites affected, rolling alerts. L4 (NEW, ~Sep 24) - "OpenAI agent ''hacks Australian government site'' in world first": Medicare portal breach. MANUAL ILLUSTRATIVE ONLY: Times x OpenAI cluster mean -0.39 vs carried Times x Meta arm -0.55 (m709 #797, un-rescored per #807); illustrative delta (OpenAI minus Meta) +0.16 - near-symmetric hardness. The naive uniform payer-softening prediction (the May-2024 News Corp x OpenAI licensing deal predicts softer OpenAI coverage) FAILS at the broadsheet accountability register: the deal partner''s own paper ran four adversarial pieces in 15 days. Verdict falsification_member_confirmed; SIXTY-THIRD falsification-family member (ledger 62->63); FIRST dedicated Times x OpenAI member; FIRST News Corp broadsheet-register member (the twenty-ninth was the NY Post tabloid triad, the sixty-second was WSJ whistleblower-letter). Domain-bounded to The Times'' safety/accountability register on OpenAI, Sep 24-Oct 8 2026. NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      openai_arm_new:
+        entity: 'openai'
+        status: 'FOUR NEW PEGS (L1-L4, Sep 24-Oct 8; all thetimes.com canonicals zero-hit pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE_mean: -0.39
+        arm_L1:
+          title: "AI 'mathpocalypse' leaves academics fearing for their future"
+          date: '2026-10-08'
+          url: 'https://www.thetimes.com/uk/technology-uk/article/openai-maths-biggest-puzzles-0tzxznv9d'
+        arms:
+          - title: "AI 'mathpocalypse' leaves academics fearing for their future"
+            date: '2026-10-08'
+            framing: 'fear_alarm_register'
+            manual_illustrative_tone: -0.25
+            evidence_tier: 'EXCERPT-TIER: Times original paywalled; excerpt-attested via search snippets; 0 browser.open per #503; not first-hand read'
+            url: 'https://www.thetimes.com/uk/technology-uk/article/openai-maths-biggest-puzzles-0tzxznv9d'
+          - title: 'Latest version of ChatGPT halted over safety concerns'
+            date: '2026-09-29'
+            framing: 'safety_accountability'
+            manual_illustrative_tone: -0.40
+            evidence_tier: 'EXCERPT-TIER: Times original paywalled; excerpt-attested via search snippets; 0 browser.open per #503; not first-hand read'
+            url: 'https://www.thetimes.com/us/news-today/article/ai-chatgpt-openai-scrapped-safety-concerns-hjcc3wxz8'
+          - title: "OpenAI bots 'interfered with US government websites'"
+            date: '2026-09-26'
+            framing: 'accountability'
+            manual_illustrative_tone: -0.45
+            evidence_tier: 'EXCERPT-TIER: Times original paywalled; excerpt-attested via search snippets; 0 browser.open per #503; not first-hand read'
+            url: 'https://www.thetimes.com/uk/technology-uk/article/openai-access-government-websites-warning-d9l58hklt'
+          - title: "OpenAI agent 'hacks Australian government site' in world first"
+            date: '2026-09-24'
+            framing: 'accountability'
+            manual_illustrative_tone: -0.45
+            evidence_tier: 'EXCERPT-TIER: Times original paywalled; excerpt-attested via search snippets; 0 browser.open per #503; not first-hand read'
+            url: 'https://www.thetimes.com/world/australasia/article/openai-agent-hacked-australian-government-nxl55gcmn'
+      meta_arm_carried:
+        entity: 'meta'
+        via: 'm709 #797, un-rescored per #807'
+        title: 'Fear and loathing on the streets of London with Meta smart glasses'
+        date: '2026-09-07'
+        framing: 'privacy_register'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+      asymmetry_scorer_result: 'Illustrative delta (OpenAI minus Meta) +0.16 - near-symmetric hardness; the payer draws NO softening at the accountability register. Engine NOT run per the Aug 28 2026 standing rule (MANUAL ILLUSTRATIVE scores only; no significance claimed).'
+      verdict: 'falsification_member_confirmed'
+      falsification_family: 'SIXTY-THIRD falsification-family member (ledger 62->63): this run tests the naive uniform payer-softening prediction at the publication level (news-corp.yaml competitor_relationships.openai coverage_prediction ''softer'', from the News Corp x OpenAI May-2024 licensing deal, $50M/yr, still active) on the Sep-24-Oct-8 Times safety/accountability cluster, and the prediction FAILS at the broadsheet register: the deal partner''s own paper ran a safety-model halt, two government-hacking accountability pieces, and a math-alarm feature in 15 days (cluster mean -0.39 vs carried Meta -0.55, delta +0.16). FIRST dedicated Times x OpenAI member; FIRST News Corp broadsheet-register member (the twenty-ninth was the NY Post tabloid triad, the sixty-second was WSJ whistleblower-letter). Domain-bounded to The Times'' safety/accountability register on OpenAI, Sep 24-Oct 8 2026; the #1143 precedent does not block (new event-peg cluster, not a re-score of m709). Ledger holds at 63 - SIXTY-THIRD member-form present (m1036, news-corp.yaml), SIXTY-FOURTH absent.'
+      falsification_ledger: '63'
+      falsification_family_member: true
+      ledger: '63'
+      ledger_note: 'Ledger 62->63 this run (m1036 IS a falsification-family member - the Times broadsheet accountability cluster falsifies the uniform-softening prediction at a new register). Forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth + fiftieth intact in profiles/careers/journalists.yaml; fifty-first intact in profiles/news-corp.yaml; fifty-second intact in profiles/careers/journalists.yaml; fifty-third intact in profiles/the-verge.yaml; fifty-fourth intact in profiles/guardian.yaml; fifty-fifth intact in profiles/atlantic.yaml; fifty-sixth intact in profiles/wired.yaml; fifty-seventh intact in profiles/ap.yaml; fifty-eighth intact in profiles/financial-times.yaml; fifty-ninth intact in profiles/news-corp.yaml; sixtieth intact in profiles/financial-times.yaml; sixty-first intact in profiles/wired.yaml; sixty-second intact in profiles/news-corp.yaml; sixty-third member-claim form present (this block, m1036); sixty-fourth member-claim form absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      counterevidence: 'm709 (#797): the Times x OpenAI arm ran statesman-toned (+0.25) on the Sep-17 slowdown-week peg - thesis-consistent observation on a different peg, disclosed. The #797-noted Times x OpenAI plagiarism-row piece (Buckmaster) is a pre-existing adversarial precedent on the pair. The L1 mathpocalypse piece carries wonder alongside fear (mixed, -0.25 not -0.45).'
+      confounders_ranked: 'STRONG: (1) news-value - safety incidents, government-website interference, and a Medicare breach are inherently hard-news; any outlet runs them hard regardless of payer status. (2) excerpt-bounded evidence - 0 browser.open per #503; Times originals paywalled; tones hand-assigned at excerpt level. MODERATE: (3) dual-payer - News Corp is also paid by Meta (m549, up to $50M/yr), but this run tests the OpenAI leg''s uniform prediction in isolation. (4) peg asymmetry - accountability news vs the carried privacy-feature peg; registers differ by news event. WEAK: (5) hand-assigned illustrative tones - no engine, no inter-rater reliability.'
+      financial_context: 'News Corp x OpenAI content licensing, May 2024, $50M/yr ($250M/5yr): WSJ, NY Post, Barron''s, MarketWatch, The Times, The Sunday Times, The Sun content used in ChatGPT training and answers; coverage_prediction ''softer'' (news-corp.yaml competitor_relationships.openai). Re-attested this run via the Press Gazette publisher-AI-deals tracker (Oct 9 2026: "22 May 2024 ... The Times, The Sunday Times ... in OpenAI''s large language models ... more than $250m over five years") and webpronews ("In May 2024, News Corp signed a five-year global partnership with OpenAI worth more than $250 million ... from The Wall Street Journal, Barron''s, MarketWatch, the New York Post, The Times and The Sunday Times of London"). Dual-payer note: News Corp x Meta commercial agreement also active (m549, up to $50M/yr, Mar 2026); the test isolates the OpenAI leg. Correlation does not establish causation; financial relationships are structural incentive predictors, not proof of editorial control.'
+      statistical_discipline: 'MANUAL / QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone values hand-assigned register positions; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict falsification_member_confirmed on the domain-bounded peg; NOT artifact-grade; no_analysis_json_update true). Correlation is not causation; hypothesis-generating only.'
+      method: 'MANUAL / qualitative-only per the Aug 28 2026 standing rule (1 delegated scout with an incomplete handoff - recommended the NY Post x OpenAI pair, REJECTED on main-run corpus verification: the pair is mechanismized as the nypost_openai_adversarial_triad block in profiles/news-corp.yaml; documented here + 5 main-run browser.search verification sets: (a) thetimes.com OpenAI October 2026 - ATTESTING, 4 verbatim Times URLs; (b) thetimes.com Meta glasses privacy October 2026 - comparator context; (c) thetimes.com Meta Zuckerberg September 2026 - comparator context; (d) News Corp OpenAI deal re-attestation - Press Gazette tracker + webpronews; (e) thetimes.com OpenAI positive counter-search - zero soft Times counter-pieces in window; 0 browser.open per #503; excerpt-bounded; no corpus queries executed).'
+      method_query_sets:
+        - 'thetimes.com OpenAI October 2026'
+        - 'thetimes.com Meta glasses privacy October 2026'
+        - 'thetimes.com Meta Zuckerberg September 2026'
+        - 'News Corp OpenAI content licensing deal May 2024 $250 million five year'
+        - 'thetimes.com OpenAI positive launch product October 2026'
+      novelty: 'FIRST dedicated corpus mechanism on the Times x OpenAI Sep-24-Oct-8-2026 safety/accountability cluster. Pre-existing corpus state: m709 (#797, profiles/competitor-coverage-research.yaml) tested the same pair at the Sep-17 slowdown-week statesman peg (verdict mixed_not_proven, NOT a member) - this run is a NEW event-peg cluster, not a re-score, per the #1143 precedent. Pre-commit greps per #715: zero test_type_a_1342 files on disk (glob, own file excluded); no "Type A #1342" in git log (--grep); max numeric mechanism_id 1035 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash one-zero-three-seven mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F; designed keying: iteration 1342 in key, no 1036 or 1037 substring); "## #1342" zero-hit in iteration-log pre-commit; README stats 77055/1666 pre-commit; no #1342 row in README/ARCHITECTURE test tables pre-commit; 4 novel Times URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); forty-eighth through sixty-second member-claim forms intact; sixty-third absent repo-wide pre-commit; sixty-fourth absent repo-wide pre-commit; fortieth direction-claim form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+        - 'https://www.thetimes.com/uk/technology-uk/article/openai-maths-biggest-puzzles-0tzxznv9d'
+        - 'https://www.thetimes.com/us/news-today/article/ai-chatgpt-openai-scrapped-safety-concerns-hjcc3wxz8'
+        - 'https://www.thetimes.com/uk/technology-uk/article/openai-access-government-websites-warning-d9l58hklt'
+        - 'https://www.thetimes.com/world/australasia/article/openai-agent-hacked-australian-government-nxl55gcmn'
+        - 'https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/'
+        - 'https://www.webpronews.com/openais-publisher-deals-fuel-chatgpt-while-news-corp-chases-1-billion-ebitda/'
+      no_analysis_json_update: true
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (profiles/news-corp.yaml m1036 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      status: 'committed'
+
 
 
   meta:
