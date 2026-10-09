@@ -2045,6 +2045,104 @@ competitor_relationships:
       sources_verified_date: '2026-10-04'
       rotation_guard: '1200-1204 window THIRD leg D(#1200)->E(#1201)->A (this run); anchor patched post-commit per #565. Next: #1203 Type B continues the window; the #1200 background-suite verdict belongs to #1205 per #795. Forward guards: max-952, zero next-number nine-five-three numeric/underscore/dash, no-Type-B-#1203-in-git-log, thirty-fifth+thirty-sixth+thirty-seventh+thirty-eighth+thirty-ninth present, fortieth absent, forty-seventh exactly in wired.yaml, forty-eighth exactly in financial-times.yaml, ledger 48.'
       test_file: 'tests/test_type_a_1202_ft_openai_oct01_03_safety_crisis_accountability_originals_vs_wsj_scoop_bounded_absence_oct04_8am.py'
+    type_a_1322_ft_openai_oct08_revenue_scoop_accountability_vs_carried_meta_arms:
+      mechanism_id: 1024
+      mechanism_name: 'FT x OpenAI Oct-8-2026 revenue-scoop accountability original (annualized revenue approaching $50B, ~$20B below the $70B signaled; Nasdaq -1.25%) vs carried FT x Meta adversarial arms (-0.5833 mean)'
+      finding_type: competitor_coverage_deep_dive_register_pair
+      iteration: 1322
+      iteration_type: 'A'
+      iteration_time: '2026-10-08 20:00 PDT'
+      date: '2026-10-08'
+      time_pdt: '20:00'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      author: Kit (with Ray)
+      publication: financial_times
+      publication_focus: 'Financial Times (Nikkei)'
+      competitor: openai
+      comparator_entity: 'Meta'
+      event: 'Oct 8 2026 financial-scoop peg: the FT breaks an adverse, market-moving revenue story on its own Apr-29-2024 licensing partner. OpenAI told investors its annualized revenue was approaching $50 billion at the end of September, about $20 billion below the $70 billion previously signaled; the FT reports the discrepancy arose from OpenAI investors'' own attempts to force comparability with Anthropic''s differently-calculated run rate. Market impact: Nasdaq -1.25% (worst day since mid-August), Oracle -5.5%, Nvidia -2.9%. OpenAI declined to comment.'
+      financial_relationship: 'FT x OpenAI content licensing deal, Apr 29 2024 (Reuters primary; terms undisclosed). Secondary valuation $5-10M/yr (WSJ via Digiday). FT content appears in ChatGPT with attribution and is licensed for model development. coverage_prediction softer (in-profile). FT x Meta: $0, no licensing, no financial relationship (coverage_prediction adversarial).'
+      source_urls:
+        - "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/"
+        - "https://www.reuters.com/business/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-2026-10-08/"
+        - "https://www.morningstar.com/news/dow-jones/202610087175/oracle-amd-others-slide-after-report-of-revision-to-openai-revenue-estimate"
+        - "https://www.cnn.com/2026/10/08/investing/openai-nasdaq-stocks?cid=external-feeds_iluminar_meta"
+      openai_arms:
+        - item:
+            title: 'FT Oct-8-2026 OpenAI revenue scoop: annualized revenue approaching $50B, ~$20B below signaled'
+            date: '2026-10-08'
+            publication: 'Financial Times (original; relay-attested)'
+            evidence_tier: 'relay-attested'
+            url_source: 'Verbatim ft.com URL did not surface this run; the FT original is attested by four independent relays, every one explicitly attributing the FT: TechCrunch (Oct 8, 11:19 AM PDT: "The Financial Times reports"), Reuters (Oct 8: "the Financial Times reported on Thursday, citing financial documents shared with investors"), Morningstar/Dow Jones (Oct 8: "The Financial Times on Thursday reported"), CNN (Oct 8: "according to the Financial Times"). Excerpt-bounded per #503; 0 browser.open; no canonical URLs constructed.'
+            framing: 'financial_scoop_accountability'
+            manual_illustrative_tone: -0.35
+            tone_note: 'Adversarial financial-scoop register on the licensing partner: the FT publishes investor-documents-sourced reporting that OpenAI''s annualized revenue is about $20B below what was signaled, moving the Nasdaq. OpenAI declined to comment (Reuters, CNN). The piece notes the $70B figure came from investors'' comparability attempts, not from OpenAI itself - the FT reports the discrepancy without accusing fraud.'
+            key_quotes:
+              - '"approaching $50 billion" (FT, via TechCrunch/Reuters relays)'
+              - '"about $20 billion less than has been previously signaled" (Reuters relay of FT)'
+              - '"OpenAI declined to comment" (Reuters, CNN)'
+            deal_disclosed: false
+            market_impact:
+              - 'Nasdaq -1.25%, worst day since mid-August (CNN)'
+              - 'Oracle -5.5%, Nvidia -2.9% (CNN, Morningstar)'
+      meta_arms:
+        carried_from: 'type_a_1292 block (m1006 run); carried un-rescored per #807'
+        arms:
+          - title: 'Meta capital stress desperation framing'
+            publication: 'Financial Times'
+            framing: 'capital_stress_desperation'
+            manual_illustrative_tone: -0.55
+          - title: 'Meta glasses surveillance framing'
+            date: '2026-07-08'
+            publication: 'Financial Times'
+            framing: 'surveillance_accountability'
+            manual_illustrative_tone: -0.62
+          - title: 'Meta smartglasses flooding framing'
+            date: '2026-08-26'
+            publication: 'Financial Times'
+            framing: 'market_saturation_critical'
+            manual_illustrative_tone: -0.58
+        meta_mean: -0.5833333333333333
+      asymmetry_scorer_result:
+        target_entity: 'OpenAI FT Oct-8 revenue scoop arm (-0.35)'
+        peer_entity: 'Meta carried FT arms (-0.5833 mean)'
+        illustrative_delta_openai_minus_meta: 0.23
+        delta_direction: 'Positive illustrative delta: the payer draws a slightly less-negative register than the $0-tie comparator. But the thesis test is the uniform payer-softening prediction, not the delta: the Apr-2024 $5-10M/yr deal predicts a muted/constructive register on OpenAI; the FT instead breaks a market-moving adverse revenue scoop on the payer. The uniform softening prediction FAILS on the financial-scoop register.'
+        methodology: 'n=1 vs n=3 (carried); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED per the Aug 28 2026 standing rule'
+        cohens_d: 'NOT_CALCULATED per the Aug 28 2026 standing rule'
+        ci_95: 'NOT_CALCULATED per the Aug 28 2026 standing rule'
+        is_significant: false
+        artifact_grade: false
+        verdict: 'falsification_member_confirmed'
+      falsification_family: 'SIXTIETH falsification-family member (ledger 59->60). Publication-level, same-outlet: the FT applies the adversarial financial-scoop register to the paid licensing counterparty (OpenAI; Apr-29-2024 $5-10M/yr deal, coverage_prediction softer) via an FT ORIGINAL market-moving scoop on Oct 8 2026 (annualized revenue approaching $50B, ~$20B below signaled; Nasdaq -1.25%). The uniform payer-softening prediction fails on the financial-scoop register: the deal bought no suppression of adverse financial reporting on the partner. FIFTH FT publication-level falsification (after the THIRTY-FIFTH #1047 disclosure-register, the FORTY-SECOND #1142 regulatory-enforcement-register, the FORTY-EIGHTH #1202 suppression-claim, and the FIFTY-EIGHTH #1292 FT x Google regulatory-register); FIRST falsification pin on the financial-scoop register. Domain-bounded to FT''s financial-scoop register on OpenAI in the Oct-8 window. The #1143 temporal-replication precedent does not block: this is a fresh adverse-scoop peg (four independent relays), not a re-score. Correlation is not causation. No analysis.json update warranted.'
+      falsification_family_member: true
+      falsification_ledger: '60'
+      ledger: '60'
+      ledger_note: 'Ledger 59->60 this run (SIXTIETH member-form lands in profiles/financial-times.yaml; FIFTY-NINTH member-form exactly in profiles/news-corp.yaml; no higher ledger ordinal present).'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at the FT on the Oct-8 financial-scoop peg. The Apr-2024 FT x OpenAI licensing deal ($5-10M/yr, coverage_prediction softer) predicts a muted register on OpenAI; the FT instead breaks the $50B-vs-$70B revenue scoop on the payer, moving the Nasdaq 1.25%. SIXTIETH falsification-family member (ledger 59->60). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      counterevidence:
+        - 'm625 (FT Sep 3-9 launch-week: OpenAI Astra AGI-era coronation +0.25 vs Meta Muse distribution +0.05) - the incentive-prediction-CONSISTENT baseline on matched product-launch pegs: the FT ran a softer register on the payer when the peg was a product launch. The member claim is register-bounded to financial-scoop accountability, not blanket.'
+        - 'The openai section description documents constructive FT OpenAI coverage Jun-Jul 2026 ($100B funding round growth narrative, $34B spending milestone, 5% gov stake benefit-sharing) - thesis-consistent legs on the growth-narrative register, disclosed as peg-bounded counterevidence.'
+      confounders:
+        - 'STRONG: news-value - a $20B revenue miss on the eve of a potential early-2027 IPO, moving the Nasdaq 1.25%, is a major financial story; a financial paper spiking it would be anomalous.'
+        - 'STRONG: excerpt-bounded evidence - 0 browser.open per #503; the FT original is paywalled and did not surface in search listings; four-relay read; no first-hand register read.'
+        - 'MODERATE: beat-fit - revenue scoops are the FT''s core beat; the paper would run this on any company.'
+        - 'MODERATE: the $70B figure came from investors'' own comparability attempts, not from OpenAI - the FT reports a discrepancy, not an accusation; the adversarial read is bounded.'
+        - 'WEAK: illustrative tones hand-assigned at excerpt level.'
+      research_method: '1 delegated scout (fresh publication+competitor pair discovery; 3 ranked candidates returned; SELECTED the FT x OpenAI Oct-8 revenue scoop: direct deal relationship, adverse market-moving coverage of the payer, verbatim relay URLs, clean novelty greps, ready carried Meta comparator; runner-up Verge x Microsoft Oct-7 Copilot event rejected: no verbatim verge.com URL surfaced; third WIRED x Microsoft bounded-absence rejected: weakest peg) + 1 main-run browser.search verification set (FT OpenAI annualized revenue $50 billion October 2026 - confirmed the FT original via 4 independent relays: TechCrunch, Reuters, Morningstar/Dow Jones, CNN). 0 browser.open per #503 (excerpt-bounded). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. The #1143 temporal-replication precedent is satisfied: this is a fresh adverse-scoop peg with four independent relays, not a thin single-arm re-score.'
+      novelty: 'zero test_type_a_1322 files on disk pre-commit (glob); no Type A #1322 in git log pre-commit (--grep); max numeric mechanism_id 1023 in-tree pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash next-number one-zero-two-four mechanism key forms in profiles/ + tests/ pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F); the 4 relay URLs zero-hit repo-wide pre-commit (git grep -F); "approaching $50 billion" zero-hit repo-wide pre-commit; Meta arms carried from the type_a_1292 block (not novel, disclosed); no #1322 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 75027/1646 pre-commit. SIXTIETH falsification-family member LANDED this run (fifth FT publication-level member); sixty-first member-claim form absent repo-wide pre-commit (absence-documentation only); fortieth direction form absent in profiles/ pre-commit; forty-eighth through fifty-ninth members present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone values are hand-assigned register positions, NOT measured scores; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no_analysis_json_update true; NOT artifact-grade; verdict falsification_member_confirmed on the domain-bounded peg; correlation-not-causation language throughout'
+      no_analysis_json_update: true
+      artifact_grade: false
+      correlation_not_causation: true
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-08'
+      rotation_guard: '1320-1324 window THIRD leg D(#1320)->E(#1321)->A (this run); anchor patched post-commit per #565. Next: #1323 Type B continues the window; the #1325 Type D run owns the next background-suite verdict per #795. Forward guards: max-1024, zero next-number one-zero-two-five numeric/underscore/dash, no-Type-A-#1323-in-git-log, fortieth direction absent, forty-eighth through sixtieth members intact, no sixty-first member, ledger 60.'
+      test_file: 'tests/test_type_a_1322_ft_openai_oct08_revenue_scoop_vs_carried_meta_arms_oct08_8pm.py'
   meta:
     financial_tie: none
     estimated_value: $0
