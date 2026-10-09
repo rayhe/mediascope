@@ -133,7 +133,7 @@ PRED_FINAL_1321 = "a283839e1585807d605ac42423206a0f5e4d1f3f"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1322 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1322 = "0" * 40  # re-pinned in the log-hash followup per #721
+PRED_MAIN_1322 = "237e0a1e2f21b114e11a1c0405c2905ea31f9eba"  # re-pinned in the log-hash followup per #721
 
 # #1323's main commit (full sha), for the ancestor-form no-Type-B-#1323
 # pin. Patched in #1323's terminal log-hash followup per #721.
@@ -799,27 +799,26 @@ class TestStalenessPins1322:
 
     def test_1321_guard_lifecycle_post_commit(self):
         # Post-main-commit form: the #1321 guard-lifecycle class has
-        # 23 tests; 21 pass and 2 fail - the no_sixtieth_member pin
+        # 22 tests; 20 pass and 2 fail - the no_sixtieth_member pin
         # (this run's main commit lands the sixtieth member-claim
         # form; the #1191-class self-trip, permanent red), and the
-        # no_type_a_1322_in_git_log pin (hits go non-empty at the main
-        # commit while PRED_MAIN_1322 in the #1321 file is still 0*40;
-        # re-pinned green in this run's log-hash followup per #721).
-        # The 1024_numeric_absent_in_profiles pin trips on the landed
-        # m1024 block's "mechanism_id: 1024" (the #1272-class
+        # 1024_numeric_absent_in_profiles pin (trips on the landed
+        # m1024 block's "mechanism_id: 1024"; the #1272-class
         # forward-guard expiry - the next-number guard is consumed by
-        # the landing). Deselected in the in-gate run (pre-commit the
-        # class is 22 passed); asserted post-main-commit. The #1321
-        # file is read-only to this run except the #721 re-pin; the
-        # flips are documented here, not repaired.
+        # the landing). The no_type_a_1322_in_git_log pin flips green
+        # at the #721 re-pin (done pre-commit of the log-hash
+        # followup, so it never shows red in this check). Deselected
+        # in the in-gate run (pre-commit the class is 22 passed);
+        # asserted post-main-commit. The #1321 file is read-only to
+        # this run except the #721 re-pin; the flips are documented
+        # here, not repaired.
         res = self._class_run(
             E1321_FILE,
             "TestGuardLifecycle1321",
         )
         out = res.stdout + res.stderr
-        assert "3 failed, 19 passed" in out, out[-2000:]
+        assert "2 failed, 20 passed" in out, out[-2000:]
         assert "no_sixtieth_member" in out, out[-2000:]
-        assert "no_type_a_1322_in_git_log" in out, out[-2000:]
         assert "1024_numeric_absent_in_profiles" in out, out[-2000:]
 
 
