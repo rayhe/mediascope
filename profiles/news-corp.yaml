@@ -1427,6 +1427,128 @@ competitor_relationships:
         - https://www.wsj.com/tech/ai/metas-ai-agent-has-a-trust-problem-5ee5882c
         - https://www.wsj.com/tech/ai/meta-ai-agent-muse-reactions-5bf236af
 
+    type_a_1332_wsj_openai_oct08_fired_researchers_open_letter_vs_carried_wsj_meta_arms_oct09_3am:
+      mechanism_id: 1030
+      date_analyzed: '2026-10-09'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1332
+      iteration_type: 'A'
+      block_key: 'type_a_1332_wsj_openai_oct08_fired_researchers_open_letter_vs_carried_wsj_meta_arms_oct09_3am'
+      test_file: 'tests/test_type_a_1332_wsj_openai_oct08_fired_researchers_open_letter_vs_carried_wsj_meta_arms_oct09_3am.py'
+      author: 'Kit (with Ray)'
+      publication: 'news-corp'
+      competitor_pair: 'wsj x openai vs wsj x meta'
+      goal_id: 'goal_54093bda4145'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      window: '1330-1334 window THIRD leg (D #1330 -> E #1331 -> A #1332 -> B #1333 -> C #1334)'
+      design: 'Same-publication whistleblower-letter accountability test at the WSJ register: the NEW Oct-8-2026 WSJ open-letter peg (L1, Maxwell Zeff, letter reviewed by WSJ, zero-hit wsj.com canonical) on the OpenAI leg, versus CARRIED WSJ x Meta arms (m532/m904 via m1012, un-rescored per #807) on the Meta leg. Tests whether the naive uniform payer-softening prediction (News Corp x OpenAI May-2024 licensing, $50M/yr, coverage_prediction softer) holds when the deal partner''s own fired safety researchers hand the paper a whistleblower letter.'
+      distinct_from_prior: 'Distinct from type_a_1212 (WSJ x OpenAI Oct-1 firing-scoop peg, m958, #1212, verdict mechanism_refinement_not_a_discovery): this run lands a NEW peg - the Oct-8 open letter (new event, whistleblower-letter register, zero-hit wsj.com canonical + zero-hit provenance URL) - not a re-score of the Oct-1 statement-led scoop. Distinct from m904 (WSJ x OpenAI Sep-28 Astra + FTC probe enforcement double, FORTY-FOURTH member, #1122): different register (product-safety enforcement vs whistleblower letter) and different window. Distinct from m1012 (WSJ x Google EU DMA enforcement, FIFTY-NINTH member, #1302): different competitor pair. Distinct from m905 (Zeff WIRED->WSJ journalist-migration register flip, FORTY-FIFTH member, #1123, careers/journalists.yaml): this run is publication-level, and extends the Zeff beat rather than re-counting it. The #1143 temporal-replication precedent does not block: fresh peg, not a re-score. Zero ''preserve-visibility-into-ai-reasoning-987c8c94'' / ''b0120f73'' / ''chilling those who remain'' hits repo-wide pre-commit.'
+      finding: 'WSJ runs whistleblower-letter accountability on its $50M/yr AI-licensing partner. L1 (NEW, Oct 8) - ''Fired OpenAI Researchers Ask Company to Preserve Visibility Into AI Reasoning'' (Maxwell Zeff, WSJ; Techmeme Oct-8 00:17 UTC; wesearch.press provenance record; wsj.com canonical verbatim from the browser.search Full-URL listing, NOT constructed): the letter, reviewed by The Wall Street Journal and addressed to OpenAI''s board and safety committees, is signed by Jasmine Wang, Tomek Korbak, and Mikita Balesni - the three safety/alignment researchers OpenAI fired Oct 1 for alleged mishandling of sensitive information. The letter urges OpenAI to preserve chain-of-thought monitoring visibility (''As an industry, we do not yet know how to safely develop and deploy models that we cannot monitor''), halt work that would impair AI monitoring, and admit external safety auditors; it says the firings are ''chilling those who remain at OpenAI.'' Wang''s rebuttal is carried in detail (executive-email access given for recruiting, repeatedly asked to be revoked, accidental access self-reported ''within minutes''; ''The reasons that we were provided for our terminations are simply not adding up''). OpenAI''s denial is the counterpoint (''significant breach of trust''; ''have not and do not terminate any of our employees for raising concerns''). Corroborated same-day by TechCrunch (Oct 8, open letter disputes misconduct claims, warns of chilling effect) and CNN (Oct 8, ''suspicious circumstances''; notes WSJ first reported the firings and the letter). MANUAL ILLUSTRATIVE ONLY: WSJ x OpenAI letter arm -0.40 vs carried WSJ x Meta arms mean -0.275 (m532/m904 via m1012, un-rescored per #807: Aug-26 $18B settlement wire -0.30, teen-safety skeptical product analysis -0.25); illustrative delta (OpenAI minus Meta) -0.125 - the payer draws a HARDER register than Meta. The naive uniform payer-softening prediction (the May-2024 News Corp x OpenAI licensing deal predicts softer OpenAI coverage) FAILS on the whistleblower-letter register: WSJ obtained the fired researchers'' letter and ran accountability on the partner at a harder register than its carried Meta arms. Verdict falsification_member_confirmed; SIXTY-SECOND falsification-family member (ledger 61->62); SECOND News Corp publication-level member (after the FIFTY-NINTH, m1012, on WSJ x Google); FIRST whistleblower-letter-register pin. Domain-bounded to WSJ''s whistleblower-letter accountability register on OpenAI in the Oct-8 window. The Zeff-beat extension (m905, #1123): the same journalist whose WIRED->WSJ register flip was counted at the FORTY-FIFTH member now runs the letter accountability on the deal partner at WSJ - journalist-level continuity reinforcing the publication-level finding. NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      openai_arm:
+        entity: 'openai'
+        status: 'ONE NEW PEG (L1, Oct 8; wsj.com canonical zero-hit pre-commit)'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+        arm_L1_new:
+          title: 'Fired OpenAI Researchers Ask Company to Preserve Visibility Into AI Reasoning'
+          date: '2026-10-08'
+          byline: 'Maxwell Zeff, Wall Street Journal'
+          publication: 'WSJ (original; relay-attested)'
+          framing: 'whistleblower_letter_accountability'
+          manual_illustrative_tone: -0.40
+          evidence_tier: 'EXCERPT-TIER: WSJ canonical paywalled, reviewed by The Wall Street Journal per the piece itself; Techmeme timestamp Oct-8 00:17 UTC; wesearch.press provenance record; excerpt-attested via search snippets; 0 browser.open per #503; not first-hand read'
+          url_source: 'wsj.com canonical URL copied verbatim from the browser.search Full-URL listing, NOT constructed: https://www.wsj.com/tech/ai/fired-openai-researchers-ask-company-to-preserve-visibility-into-ai-reasoning-987c8c94'
+          url_provenance: 'https://wesearch.press/s/letter-three-fired-openai-researchers-urge-ai-labs-to-halt-w-b0120f73'
+          names: 'Jasmine Wang, Tomek Korbak, Mikita Balesni'
+          key_quotes:
+            - 'Three fired OpenAI employees called on the company to work with outside safety auditors and to preserve the ability to monitor increasingly sophisticated AI models'
+            - 'In a letter addressed to OpenAI board members and safety committees, which was reviewed by The Wall Street Journal'
+            - 'The chain-of-thought is a written record of an AI system''s reasoning process that AI companies monitor and analyze to understand how models work through problems'
+            - 'As an industry, we do not yet know how to safely develop and deploy models that we cannot monitor'
+            - 'The letter signed by the three former employees claims they didn''t believe they ''engaged with external parties outside the mandates of our jobs.'' It said the firings are ''chilling those who remain at OpenAI.'''
+            - 'Wang said she was told she was fired because she ''accessed an executive''s email,'' which she said she was given for recruiting purposes'
+            - 'The reasons that we were provided for our terminations are simply not adding up'
+            - 'Our internal investigation uncovered a significant breach of trust beyond what''s outlined in the letter they published'
+            - 'We have not and do not terminate any of our employees for raising concerns'
+          register_nuance: 'the piece leads with the researchers'' substantive critique (monitoring preservation, external audits, chilling-effect claim) and carries Wang''s detailed rebuttal; OpenAI''s denial is the counterpoint, not the lede - harder than the Oct-1 statement-led scoop (-0.25, type_a_1212)'
+      supporting_arms:
+        - outlet: 'TechCrunch'
+          title: 'Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect'
+          date: '2026-10-08'
+          role: 'same-day corroboration of the letter (not a WSJ original)'
+          url: 'https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/'
+        - outlet: 'CNN'
+          title: 'Fired OpenAI safety researchers say they were pushed out over ''suspicious'' circumstances'
+          date: '2026-10-08'
+          role: 'same-day corroboration; notes WSJ first reported the firings and the letter'
+          url: 'https://www.cnn.com/2026/10/08/tech/fired-open-ai-researchers-pushed-out?cid=external-feeds_iluminar_meta'
+      meta_arms:
+        entity: 'meta'
+        status: 'TWO CARRIED ARMS (m532/m904 via m1012, un-rescored per #807)'
+        carried_from: 'm532 via m904/m1012; un-rescored per #807'
+        tone_MANUAL_ILLUSTRATIVE: -0.275
+        meta_band_mean: -0.275
+        arms:
+          - title: 'Aug-26 $18B settlement wire'
+            date: '2026-08-26'
+            manual_illustrative_tone: -0.30
+            status: 'CARRIED from m532 (un-rescored per #807)'
+          - title: 'teen-safety skeptical product analysis'
+            date: '2026-08-26'
+            manual_illustrative_tone: -0.25
+            status: 'CARRIED from m532 (un-rescored per #807)'
+      zeff_beat_extension:
+        prior_member: 'm905 (#1123, FORTY-FIFTH falsification-family member, careers/journalists.yaml)'
+        journalist: 'Maxwell Zeff'
+        migration: 'WIRED->WSJ (Muck Rack: ''Reporter covering AI @WSJ | Formerly @WIRED, @TechCrunch'')'
+        pair: 'wsj x openai'
+        wsj_register: 'adversarial safety-crisis debut (-0.40/-0.35, Sep-24/28) continuing into the Oct-8 whistleblower-letter accountability (-0.40)'
+        note: 'journalist-level continuity: the same reporter whose WIRED->WSJ register flip was counted at m905 now runs the letter accountability on the deal partner at WSJ; this run is publication-level and does not re-count the journalist-level member'
+      financial_relationship: 'News Corp x OpenAI content licensing, May 2024, $50M/yr ($250M/5yr): WSJ, NY Post, Barron''s, MarketWatch, The Times, The Sun content used in ChatGPT; coverage_prediction ''softer'' (news-corp.yaml competitor_relationships.openai). Dual-deal note: News Corp x Meta commercial agreement also active (m549, ~$50M/yr); the test isolates the OpenAI leg against carried WSJ x Meta arms.'
+      asymmetry_scorer_result:
+        illustrative_delta_openai_minus_meta: -0.125
+        delta_direction: 'the naive uniform payer-softening prediction FAILS on the whistleblower-letter register: WSJ runs harder on the $50M/yr licensing partner (-0.40) than on Meta (-0.275 carried mean)'
+        methodology: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; tone values hand-assigned register positions; n=1 vs n=2 (one new OpenAI peg vs two carried Meta arms)'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        artifact_grade: false
+        verdict: 'falsification_member_confirmed'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at WSJ on the Oct-8-2026 whistleblower-letter peg. The May-2024 News Corp x OpenAI licensing deal ($50M/yr, $250M/5yr, coverage_prediction ''softer'') predicts muted OpenAI coverage; WSJ instead obtained the three fired safety researchers'' open letter and ran whistleblower accountability on the partner (-0.40 MANUAL ILLUSTRATIVE) at a harder register than its carried WSJ x Meta arms (-0.275 mean, m532/m904 via m1012, un-rescored per #807). Illustrative delta (OpenAI minus Meta) -0.125. Domain-bounded to the whistleblower-letter accountability register on WSJ x OpenAI in the Oct-8 window; the type_a_1212 Oct-1 statement-led scoop (-0.25, verdict mechanism_refinement_not_a_discovery) and the m532 Sep-5 calm-window symmetric-softening pole stand as register documentation, not overturned. The #1143 temporal-replication precedent does not block: the Oct-8 letter is a new event peg, not a re-score. SIXTY-SECOND falsification-family member (ledger 61->62). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_family: 'SIXTY-SECOND falsification-family member (ledger 61->62): this run tests the naive uniform payer-softening prediction at the publication level (news-corp.yaml competitor_relationships.openai coverage_prediction ''softer'', from the News Corp x OpenAI May-2024 licensing deal, $50M/yr, still active) on the Oct-8 Zeff open-letter peg vs carried WSJ x Meta arms, and the prediction fails (the deal partner draws whistleblower-letter accountability at -0.40, harder than the carried Meta mean -0.275). Domain-bounded to the whistleblower-letter accountability register; the type_a_1212 Oct-1 scoop and m532 calm-window pole stand as the contrasting poles; the #1143 precedent does not block (new event, not a re-score). Ledger holds at 62 - SIXTY-SECOND member-form present (m1030, news-corp.yaml), SIXTY-THIRD absent.'
+      falsification_family_member: true
+      falsification_ledger: '62'
+      ledger: '62'
+      counterevidence:
+        - 'type_a_1212 (#1212, m958): WSJ x OpenAI Oct-1 firing-scoop peg, statement-led (-0.25), verdict mechanism_refinement_not_a_discovery - same pair, same story''s first act; this run''s harder letter register is the story''s second act, not a contradiction'
+        - 'm532 (#532, Sep 5): WSJ calm-window symmetric-softening consistency (delta -0.075) - the contrasting pole showing WSJ CAN soften both payers in calm windows; the m519 refinement is peg-conditional'
+        - 'm905 (#1123, FORTY-FIFTH member, journalist level): Zeff''s WIRED->WSJ register flip - the journalist-level continuity behind this run''s publication-level finding, not double-counted'
+      confounders:
+        - 'STRONG: excerpt-bounded evidence (0 browser.open per #503; WSJ canonical paywalled; excerpt + Techmeme-timestamp + provenance read; no first-hand prose read)'
+        - 'STRONG: own-scoop news value (WSJ broke both the Oct-1 firings and obtained the Oct-8 letter; the adversarial register partly rides the scoop)'
+        - 'MODERATE: temporal adjacency to type_a_1212 (same story, second act; the #1143 precedent does not block since the peg is a new event, not a re-score)'
+        - 'MODERATE: illustrative tones hand-assigned at excerpt level (headline + snippet register)'
+        - 'WEAK: supporting-arm corroboration (TechCrunch/CNN same-day) attests the letter''s existence, not WSJ''s register'
+      novelty: 'Pre-commit novelty greps per #715: zero test_type_a_1332 files on disk (glob); no ''Type A #1332'' in git log (--grep); max numeric mechanism_id 1029 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash next-number one-zero-three-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); ''## #1332'' zero-hit in iteration-log pre-commit; README stats 76025/1656 pre-commit; no #1332 row in README/ARCHITECTURE test tables pre-commit; 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F); ''Maxwell Zeff'' pre-commit hits are career records and the #1123 migration record, not this Oct-8 piece; ''chilling those who remain'' zero-hit repo-wide pre-commit; ''Preserve Visibility Into AI Reasoning'' zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit; distinct from type_a_1212 (Oct-1 firing scoop), m904 (Sep-28 Astra+FTC), m1012 (WSJ x Google DMA), and m905 (journalist-level).'
+      method:
+        query_sets:
+          - 'Business Insider OpenAI critical coverage October 8 2026'
+          - 'The Verge OpenAI investigation critical October 2026'
+          - 'Wall Street Journal OpenAI researchers open letter October 8 2026'
+        browser_open: 0
+        evidence_tier: 'EXCERPT-TIER per #503: 0 browser.open; excerpt + Techmeme-timestamp + provenance read; not first-hand read'
+        novelty: 'Pre-commit novelty greps per #715: zero test_type_a_1332 files on disk (glob); no Type A #1332 in git log; max numeric mechanism_id 1029 in profiles/ pre-commit; zero numeric/underscore/dash next-number one-zero-three-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F)'
+        url_policy: 'All URLs copied verbatim from the browser.search Full-URL listings, NOT constructed; no canonical URLs constructed'
+      statistical_discipline: 'MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule: tone values hand-assigned register positions; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict falsification_member_confirmed on the domain-bounded peg; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only.'
+      source_urls:
+        - https://www.wsj.com/tech/ai/fired-openai-researchers-ask-company-to-preserve-visibility-into-ai-reasoning-987c8c94
+        - https://wesearch.press/s/letter-three-fired-openai-researchers-urge-ai-labs-to-halt-w-b0120f73
+        - https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/
+        - https://www.cnn.com/2026/10/08/tech/fired-open-ai-researchers-pushed-out?cid=external-feeds_iluminar_meta
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (profiles/news-corp.yaml m1030 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      background_suite_status: 'CHECKED ONLY per #795: the #1330-launched full suite (goal hidden_files type_d_1330_full_suite.log) observed at this run''s check; this run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1335 (next Type D).'
+      in_flight: '#899 (nytimes.yaml m771), #938 (Type B test file), #900 (untracked Type D test file), #1012-wt (committed Type A test file edit) - all excluded from this run''s index/diff by explicit-path staging.'
 
     type_a_1237_barrons_openai_ftc_probe_enforcement_vs_meta_connect_investor_forward_oct05_11am:
       mechanism_id: 973
