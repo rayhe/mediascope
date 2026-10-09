@@ -151,7 +151,7 @@ TOP_KEY = "matt_swider_type_b"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "086130d2e75b2297a100be11273d652d93aa890e"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -177,7 +177,7 @@ PRED_FINAL_1326 = "1e92534e92a1d95574484fa8cb622d1feb0db755"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the own-run git-log pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1328 = "0" * 40
+PRED_MAIN_1328 = "086130d2e75b2297a100be11273d652d93aa890e"  # re-pinned to #1328 main sha in the terminal log-hash followup per #721
 
 # Forward guard for the next leg: #1329 Type C. Re-pinned by #1329's
 # log-hash followup per #721 (starts as 0*40; the forward pin is
