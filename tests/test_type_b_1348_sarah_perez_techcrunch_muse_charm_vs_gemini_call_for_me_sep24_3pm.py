@@ -171,7 +171,7 @@ PRED_MAIN_1348 = "a78d889cdf5f4cd8a10f48529284af6dfd89602e"  # staged placeholde
 # #1349's main commit (full sha), for the ancestor-form no-Type-C-#1349
 # pin. Staged 0*40 placeholder-only per #721; re-pinned in #1349's
 # terminal log-hash followup per #721.
-PRED_MAIN_1349 = "0" * 40  # staged placeholder per #721; re-pinned in #1349's terminal log-hash followup
+PRED_MAIN_1349 = "0537ff47210203bcc0395c233dc5992b4a350918"  # re-pinned to #1349 main sha in the terminal log-hash followup per #721/#1292  # staged placeholder per #721; re-pinned in #1349's terminal log-hash followup
 
 # The #1347 window-predecessor file, for the staleness pin on its
 # guard-lifecycle class (max id 1039; zero next-number
