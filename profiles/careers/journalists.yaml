@@ -29721,3 +29721,90 @@ matt_swider_type_b:
       source_urls:
       - https://www.theshortcut.com/p/meta-glasses-camera-free-first-look
       - https://www.theshortcut.com/p/iphone-duo-first-look
+
+maggie_harrison_dupre_type_b:
+  name: Maggie Harrison Dupre
+  publication: futurism
+  mechanism_ids: [1031]
+  notes: 'Type B #1333 (Oct 9 2026): mechanism 1031, NOT a falsification-family member (ledger holds at 62) - FIRST dedicated Type B pair on Maggie Harrison Dupre (Futurism senior staff writer; zero maggie_harrison_dupre_type_b keyed entry pre-commit; zero "maggie harrison" hits repo-wide pre-commit - fully novel journalist; futurism.com article URLs zero-hit in profiles/ + tests/ pre-commit). ZERO-GRADIENT control on the payer axis: no documented Futurism x Meta / x Anthropic / x OpenAI AI content licensing deal in-corpus; the pair cannot test the payer-softening prediction (the #1313/#1318/#1328 control-case precedent). TEMPORAL register-constancy design per the #1323 Katie Paul precedent: Oct-8-2026 Meta AI-glasses dupes / blinking-light piece (-0.40 MANUAL ILLUSTRATIVE, NEW arm, adversarial privacy register) vs Sep-11-2026 Meta AI suggested-prompts piece (-0.40, EARLIER arm, adversarial privacy register); illustrative delta (new minus earlier) 0.00 - register constancy, same writer, same outlet, 27 days apart. Excerpt-tier per #503, 0 browser.open; relay-attested bylines.'
+  competitor_coverage:
+    type_b_1333_maggie_harrison_dupre_futurism_dupes_blinking_light_vs_meta_ai_prompts_oct09_3am:
+      block_key: type_b_1333_maggie_harrison_dupre_futurism_dupes_blinking_light_vs_meta_ai_prompts_oct09_3am
+      mechanism_id: 1031
+      iteration: 1333
+      iteration_type: B
+      type: B
+      date: '2026-10-09 03:00 PDT'
+      test_file: tests/test_type_b_1333_maggie_harrison_dupre_futurism_dupes_blinking_light_vs_meta_ai_prompts_oct09_3am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Maggie Harrison Dupre
+      publication: futurism
+      window: '1330-1334 window FOURTH leg (D #1330 -> E #1331 -> A #1332 -> B #1333 -> C #1334)'
+      design: 'Type B journalist tracking, within-journalist temporal register-constancy pair (the #1323 precedent): Maggie Harrison Dupre (Futurism senior staff writer) on Meta''s Oct-8-2026 AI-glasses dupes / blinking-light piece (NEW arm) vs her Sep-11-2026 Meta AI suggested-prompts piece (EARLIER arm), same writer, same outlet, 27 days apart, both adversarial-privacy pegs on Meta. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      financial_context: 'ZERO-GRADIENT control: no documented Futurism x Meta, x Anthropic, or x OpenAI AI content licensing deal in-corpus (bounded absence: futurism.com article URLs zero-hit in profiles/ + tests/; no futurism publication profile; no deal records in competitor-entities.yaml) - the pair cannot test the payer-softening prediction; it joins the #1313 Kleinman / #1318 Shanklin / #1328 Swider control-case family.'
+      new_arm:
+        title: 'Influencers Are Promoting Cheap Dupes of Meta AI Glasses that Don''t Have the "Annoying Blinking Light" When They Record'
+        date: '2026-10-08'
+        outlet: futurism
+        author_byline: 'Maggie Harrison Dupre'
+        entity: meta
+        url: https://flipboard.com/@Slashgear/3-cheaper-alternatives-to-meta-smart-glasses/a-nnHncWuyRY2kkua67RZK_A%3Aa%3A131778153-8c7b00c251%2Fslashgear.com
+        url_note: 'Relay URL copied verbatim from this run''s Full-URL listing (search index 1); attributes "futurism.com - Maggie Harrison Dupre"; the futurism.com canonical did not surface in search listings (no-construction rule); URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpts + relay byline attribution; 0 browser.open per #503)'
+        key_quotes:
+        - 'Privacy-evasion frame (short phrase): "don''t have that annoying blinking light"'
+        - 'Covert-recording pitch (short phrase): "I''m recording you right now and you probably can''t even tell"'
+        - 'Dupe-market frame (short phrase): "cheaper AI and wireless camera glasses marketed as Meta alternatives"'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+        tone_reading: 'Adversarial privacy register: the piece covers TikTok Shop influencers promoting cheap Meta AI-glasses dupes whose pitch centers on evading the recording indicator - Meta''s own safety light is framed through the influencers'' "annoying blinking light" complaint, and the dupe market is presented as the workaround. The register is surveillance-accountability, not product coverage.'
+        status: 'NEW this run (headline "Cheap Dupes" + URL zero-hit repo-wide pre-commit)'
+      earlier_arm:
+        title: 'Meta says it is making changes to Meta AI''s suggested prompts after a viral Instagram video showed it posing invasive questions about a woman''s young daughters'
+        date: '2026-09-11'
+        outlet: futurism
+        author_byline: 'Maggie Harrison Dupre'
+        entity: meta
+        url: https://www.techmeme.com/260911/p20
+        url_note: 'Relay URL copied verbatim from this run''s Full-URL listing (search index 2); attested "Maggie Harrison Dupre/Futurism"; URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpt + relay byline attribution; 0 browser.open per #503)'
+        key_quotes:
+        - 'Accountability peg (short phrase): "posing invasive questions about a woman''s young daughters"'
+        - 'Company response (short phrase): "making changes to Meta AI''s suggested prompts"'
+        - 'Viral-video trigger (short phrase): "after a viral Instagram video showed it"'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+        tone_reading: 'Hard accountability register: a viral video shows Meta AI''s suggested prompts posing invasive questions about a woman''s young daughters, and Meta says it is making changes - the company is the accountability target on a child-safety-adjacent AI failure. The register matches the NEW Oct-8 arm exactly.'
+        status: 'NEW this run (headline "invasive questions about a woman" + URL zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.0
+      illustrative_delta_new_minus_earlier: 0.0
+      delta_reading: 'Illustrative delta (new minus earlier) 0.00: register constancy. Dupre runs an adversarial privacy register on Meta in both the Sep-11 suggested-prompts piece (-0.40: invasive questions about a woman''s young daughters, Meta making changes) and the Oct-8 dupes piece (-0.40: TikTok Shop dupes evading the "annoying blinking light"). Same writer, same outlet, 27 days apart; no register drift across the window.'
+      confounders:
+      - 'Excerpt-bounded evidence: both arms are relay-attested (Flipboard / Techmeme) with 0 browser.open per #503; no first-hand Futurism page read was possible, and the block says so plainly. Ranked STRONG.'
+      - 'Canonical-URL absence: the futurism.com canonicals for both pieces did not surface in search listings; the no-construction rule forbids linking them. Ranked STRONG.'
+      - 'No cross-entity leg: both arms are Meta arms (temporal register-constancy design per the #1323 precedent) - this run establishes a novel journalist''s baseline register; it does not test cross-entity asymmetry. Ranked STRONG (bounds the finding).'
+      - 'Date gap: 27 days (Sep 11 vs Oct 8) - news cycles moved, but both are adversarial-privacy pegs on the same entity at the same outlet. Ranked MODERATE.'
+      - 'Byline attestation is relay-level: "futurism.com - Maggie Harrison Dupre" (Flipboard) and "Maggie Harrison Dupre/Futurism" (Techmeme); no Muck Rack author-page read this run. Ranked MODERATE.'
+      counter_evidence:
+      - 'The Oct-8 piece''s adversarial target is partly the dupe sellers and TikTok Shop influencers, not Meta alone - but the frame still wounds Meta: its flagship safety feature (the recording light) is the "annoying" thing being evaded.'
+      - 'A single 27-day pair cannot establish a writer-level trait; the constancy reading is baseline-setting for future Type B cross-entity pairs on Dupre, not a concluded pattern - and both arms are relay-attested, so a first-hand read could shift the tones.'
+      connects_to: [1323]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Maggie Harrison Dupre (Futurism) runs an adversarial privacy register on Meta twice in 27 days: the Sep-11-2026 Meta AI suggested-prompts piece (-0.40 MANUAL ILLUSTRATIVE: "posing invasive questions about a woman''s young daughters", "making changes to Meta AI''s suggested prompts") and the NEW Oct-8-2026 AI-glasses dupes piece (-0.40 MANUAL ILLUSTRATIVE: TikTok Shop "cheap dupes of Meta AI glasses" pitched on not having "that annoying blinking light", "I''m recording you right now and you probably can''t even tell"). Illustrative delta (new minus earlier) 0.00 - register constancy. TEMPORAL register-constancy baseline per the #1323 Katie Paul precedent (NOT a new falsification-family member; ledger holds at 62): both arms are Meta arms, so no cross-entity prediction test is run. ZERO-GRADIENT control (no documented Futurism x Meta/Anthropic/OpenAI AI content licensing deal in-corpus; joins the #1313/#1318/#1328 control-case family). FIRST dedicated Type B pair on Dupre (fully novel journalist). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction''s FAILURES, and this pair is a zero-gradient control - no documented Futurism x Meta, x Anthropic, or x OpenAI AI content licensing deal exists in-corpus, so there is no payer leg whose prediction could fail; both arms are Meta arms (temporal register-constancy design per the #1323 precedent), so no cross-entity prediction test is run either. The finding is a journalist-level register-constancy baseline for a novel journalist (Dupre covers Meta''s privacy failures in the same adversarial register 27 days apart), directionally consistent with the thesis but not a prediction test. The ledger holds at 62. Correlation, not causation. No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 62
+      ledger_note: 'Ledger holds at 62 this run (m1031 NOT a falsification-family member - zero-gradient control + temporal register-constancy baseline, joins the #1313/#1318/#1328 control-case family). Forty-eighth member-claim form intact in profiles/financial-times.yaml (2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (3 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third member-claim form intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form intact in profiles/guardian.yaml (2 occurrences); fifty-fifth member-claim form intact in profiles/atlantic.yaml (2 occurrences); fifty-sixth member-claim form intact in profiles/wired.yaml (2 occurrences); fifty-seventh member-claim form intact in profiles/ap.yaml (3 occurrences); fifty-eighth member-claim form intact in profiles/financial-times.yaml (3 occurrences); fifty-ninth member-claim form intact in profiles/news-corp.yaml (3 occurrences); sixtieth member-claim form intact in profiles/financial-times.yaml (3 occurrences); sixty-first member-claim form intact in profiles/wired.yaml (2 occurrences); sixty-second member-claim form intact in profiles/news-corp.yaml (3 occurrences); sixty-third member-claim form absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 62).'
+      research_method: 'Delegated scout (10 browser.search queries: ruled out Goode, Chokkattu, Pero, Ashworth, Schiffer, Rogers, Ropek, Bell, Keach as in-corpus via journalists.yaml/iteration-log greps; surfaced 3 novel leads - Schroeder/Mashable, Dupre/Futurism, Phelan/Gizmodo) + main-run screening (Schroeder REJECTED - no clean Sep-20-Oct-9 Meta arm by byline; Phelan REJECTED - no clean Meta arm, date unverified; Dupre SELECTED - fully novel journalist, same outlet, 27-day adversarial-privacy pair, relay-verbatim URLs) + 9 main-run browser.search verification sets (2 pre-scout Zeff/Meta; Schroeder/Mashable Meta; Dupre/Futurism; Phelan/Gizmodo Meta; Dupre + OpenAI/Anthropic; dupes headline; Anthropic headline; futurism.com dupes URL), 0 browser.open per #503. Corpus novelty greps (zero maggie_harrison_dupre_type_b keyed entry; "maggie harrison" zero-hit; futurism.com article URLs zero-hit in profiles/ + tests/ via git grep -F; 2/2 relay URLs zero-hit; both headlines zero-hit). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Verbatim quotation limited to short phrases per the copyright-brief-quotation rule.'
+      rejection_audit: 'Scout-level: Lauren Goode REJECTED (3+ Type B commits, #436 etc.); Julian Chokkattu REJECTED (#351/#411/#426/#528); James Pero REJECTED (Type B #1063); Boone Ashworth REJECTED (extensive corpus records); Zoe Schiffer REJECTED (Type B mechanism #357); Reece Rogers, Lucas Ropek, Karissa Bell, Sean Keach REJECTED (corpus entries). Main-run: Stan Schroeder (Mashable) REJECTED - Xreal Aura arm exists but no clean Sep-20-Oct-9 Meta arm by byline surfaced; Matthew Phelan (Gizmodo) REJECTED - Anthropic CRISPR arm exists but no clean Meta arm and date unverified. SELECTED: Maggie Harrison Dupre (fully novel journalist, same outlet, 27-day adversarial-privacy pair, sole byline both arms, relay-verbatim URLs).'
+      novelty: 'FIRST dedicated Type B pair on Maggie Harrison Dupre (m1031); zero test_type_b_1333 files on disk pre-commit (glob); no "Type B #1333" in git log pre-commit (--grep); max numeric mechanism_id 1030 pre-commit; zero numeric/underscore/dash one-zero-three-one mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); zero maggie_harrison_dupre_type_b keyed entry pre-commit ("maggie harrison" zero-hit repo-wide pre-commit - fully novel journalist; futurism.com article URLs zero-hit in profiles/ + tests/ pre-commit); block key zero-hit repo-wide pre-commit (designed keying: iteration 1333 in key, no 1031 or 1032 substring); 2/2 novel relay URLs zero-hit repo-wide pre-commit (git grep -F); both arm headlines zero-hit repo-wide pre-commit ("Cheap Dupes"; "invasive questions about a woman"); no #1333 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 76121/1657 pre-commit. NOT a falsification-family member (zero-gradient control + temporal register-constancy baseline per #1323); sixty-third member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1330-launched full suite (goal hidden_files type_d_1330_full_suite.log) observed at this run''s check (last write Oct 9 01:59 PDT, [ 2%], one live pytest process - ALIVE). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1335 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1031 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://flipboard.com/@Slashgear/3-cheaper-alternatives-to-meta-smart-glasses/a-nnHncWuyRY2kkua67RZK_A%3Aa%3A131778153-8c7b00c251%2Fslashgear.com
+      - https://www.techmeme.com/260911/p20
