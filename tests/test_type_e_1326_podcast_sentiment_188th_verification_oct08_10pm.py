@@ -218,7 +218,7 @@ OWN_BASENAME = (
 )
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # patched to main commit in the anchor followup per #565
+ANCHORED_SHA = "ed8d865209d95c75c6427fbd658b10ec0e140711"  # patched to main commit ed8d8652 per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
