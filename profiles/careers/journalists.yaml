@@ -29899,3 +29899,86 @@ alfonso_maruccia_type_b:
       - https://www.techspot.com/community/topics/norway-wants-to-temporarily-ban-smart-glasses-in-parks-beaches-and-schools.299058/
       - https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html
       - https://www.techspot.com/community/staff/alfonso-maruccia.491138/
+ariel_zilber_type_b:
+  name: Ariel Zilber
+  publication: nypost
+  mechanism_ids: [1037]
+  notes: 'Type B #1343 (Oct 9 2026): mechanism 1037, NOT a falsification-family member (ledger holds at 63) - FIRST dedicated Type B pair on Ariel Zilber (NY Post business reporter; zero ariel_zilber_type_b keyed entry pre-commit; zero "ariel zilber" hits repo-wide pre-commit - fully novel journalist; both nypost.com article URLs zero-hit in profiles/ + tests/ pre-commit). Cross-entity register-constancy at a DEAL-HOLDING outlet: News Corp x OpenAI May-2024 content licensing deal is in-corpus, but the pair carries NO OpenAI arm (Meta Sep-16 vs Anthropic Oct-8), so the uniform payer-softening prediction is not adjudicated. Sep-16-2026 Meta arm (-0.55 MANUAL ILLUSTRATIVE, adversarial privacy register: "creep glasses" stigma, "super violated", "latest privacy headache for Meta") vs Oct-8-2026 Anthropic arm (-0.40 MANUAL ILLUSTRATIVE, mock-adversarial register: "even though it is not, ya know, actually alive", "oddball corners of Silicon Valley insist the tech has a soul"); illustrative delta (anthropic minus meta) +0.15 - near-symmetric adversarial, the Post tabloid register runs hard on both labs. Consistent with the nypost_openai_adversarial_triad (twenty-ninth member): the Post''s adversarial AI-lab register extends to a second lab. Excerpt-tier per #503, 0 browser.open; Meta-arm byline BuzzSumo-profile-attested; Anthropic-arm byline flipboard-attested (x2).'
+  competitor_coverage:
+    type_b_1343_ariel_zilber_nypost_creep_glasses_vs_anthropic_claude_policy_oct09_11am:
+      block_key: type_b_1343_ariel_zilber_nypost_creep_glasses_vs_anthropic_claude_policy_oct09_11am
+      mechanism_id: 1037
+      iteration: 1343
+      iteration_type: B
+      type: B
+      date: '2026-10-09 11:00 PDT'
+      test_file: tests/test_type_b_1343_ariel_zilber_nypost_creep_glasses_vs_anthropic_claude_policy_oct09_11am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      journalist: Ariel Zilber
+      publication: nypost
+      window: 'FOURTH leg of the 1340-1344 window (D #1340, E #1341, A #1342, B #1343, C #1344); 1335-1339 window VERIFIED CLOSED; next leg is C #1344'
+      meta_arm:
+        entity: meta
+        outlet: nypost
+        title: "'Violated' singles say dates secretly filmed them with Meta Ray-Bans - as 'creep glasses' trend sparks outrage"
+        author_byline: Ariel Zilber
+        date: '2026-09-16'
+        url: https://nypost.com/2026/09/16/business/women-say-dates-secretly-filmed-them-with-meta-ray-bans-as-creep-glasses-trend-sparks-outrage/
+        url_note: 'URL copied verbatim from this run''s Full-URL listing (main-run search index 1); byline attested at the author''s BuzzSumo journalist profile (verbatim https://buzzsumo.com/journalist/ariel-zilber-103986242/ - "Women say dates secretly filmed them with Meta Ray-Bans as ''creep glasses'' trend sparks outrage", Sep 16, 2026, nypost.com, listed under his articles); URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpts + BuzzSumo-profile byline attribution; 0 browser.open per #503)'
+        key_quotes:
+        - 'Stigma dek (short phrase): "creep glasses" trend'
+        - 'Victim voice (short phrase): left feeling "super violated"'
+        - 'Meta-blame frame (short phrase): "latest privacy headache for Meta"'
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+        tone_reading: 'Adversarial privacy register: dates secretly filming women with Meta Ray-Bans - non-consensual recording on dates, the "creep glasses" stigma dek, a woman "super violated" after being told the recording "would be on the Internet", Meta''s indicator-light consent defense undercut by expert rebuttal, closed as the "latest privacy headache for Meta". The tabloid privacy-outrage register runs at full volume on the Meta peg.'
+        status: 'NEW this run (headline + dek + URL zero-hit repo-wide pre-commit)'
+      anthropic_arm:
+        entity: anthropic
+        outlet: nypost
+        title: "Anthropic to users: be nice to Claude AI - new policy bars 'abusive or cruel behavior' to tech"
+        author_byline: Ariel Zilber
+        date: '2026-10-08'
+        url: https://nypost.com/2026/10/08/business/anthropic-to-users-be-nice-to-claude-ai-new-policy-bars-abusive-or-cruel-behavior-to-tech/
+        url_note: 'URL copied verbatim from this run''s Full-URL listing (main-run search index 1); byline attested twice via flipboard listings ("New York Post - Ariel Zilber", Oct 8 2026); URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpts + flipboard byline attribution x2; 0 browser.open per #503)'
+        key_quotes:
+        - 'Mock-adversarial frame (short phrase): "even though it is not, ya know, actually alive"'
+        - 'Silicon Valley mockery (short phrase): "oddball corners of Silicon Valley insist the tech has a soul"'
+        - 'Policy-target frame (short phrase): bars "abusive or cruel behavior" toward Claude'
+        tone_MANUAL_ILLUSTRATIVE: -0.40
+        tone_reading: 'Mock-adversarial register: Anthropic''s usage-policy update is framed as an absurdity - "even though it is not, ya know, actually alive", the "oddball corners of Silicon Valley" who "insist the tech has a soul", the co-founder''s year of meetings with religious leaders treated as a punchline. Adversarial load is tabloid mockery rather than accountability, but it is adversarial all the same - the Post does not flatter the AI lab.'
+        status: 'NEW this run (headline + dek + URL zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.15
+      illustrative_delta_anthropic_minus_meta: 0.15
+      delta_reading: 'Illustrative delta (anthropic minus meta) +0.15: register constancy across entities with a register-kind asymmetry. Zilber runs the Post''s tabloid register hard on both labs 22 days apart - adversarial privacy-outrage on Meta (-0.55: "creep glasses", "super violated") and mock-adversarial on Anthropic (-0.40: "actually alive", "oddball corners"). Same journalist, same outlet; both pieces apply the adversarial posture, but the KIND of adversarial load differs (privacy-outrage vs tabloid mockery), so the near-symmetric delta is a constancy-of-posture observation, not a constancy-of-register observation. No differential editorial standard is observable in this pair.'
+      confounders:
+      - 'Excerpt-bounded evidence: both arms are aggregator/profile-attested with 0 browser.open per #503; no first-hand nypost.com article read was possible, and the block says so plainly. Ranked STRONG.'
+      - 'Register-kind asymmetry: privacy-outrage (Meta) vs tabloid mockery (Anthropic) - different adversarial loads on different pegs; the constancy reading is about adversarial POSTURE, not identical register. Ranked MODERATE.'
+      - 'Byline attestation is profile/aggregator level: BuzzSumo journalist profile listing (Meta arm); flipboard listings x2 (Anthropic arm); no nypost.com author-page read this run. Ranked MODERATE.'
+      - 'Date gap: 22 days (Sep 16 vs Oct 8) - temporal confounder; the news cycle between the arms (Dutch cascade, Paris probe, Kathmann motion) may have shifted the AI-privacy register. Ranked WEAK.'
+      counter_evidence:
+      - 'The twenty-ninth falsification-family member (nypost_openai_adversarial_triad, m826 at #1117-class) already established the Post running an adversarial register on the PAYER (OpenAI) - so the Post''s adversarial Anthropic arm is consistent with, not in tension with, the triad: the outlet''s adversarial AI-lab register spans Meta, OpenAI, and Anthropic.'
+      - 'A single two-piece pair cannot establish a writer-level trait; the constancy reading is baseline-setting for future Type B pairs on Zilber (e.g., a future OpenAI arm - which WOULD adjudicate the payer-softening prediction at this outlet), not a concluded pattern - and both arms are aggregator-attested, so a first-hand read could shift the tones.'
+      connects_to: [1338]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Ariel Zilber (NY Post business reporter, fully novel to the corpus) runs the Post''s tabloid register adversarially on two AI labs 22 days apart: the Sep-16-2026 Meta "creep glasses" dating-surveillance piece (-0.55 MANUAL ILLUSTRATIVE: "creep glasses" stigma, "super violated", "latest privacy headache for Meta") and the Oct-8-2026 Anthropic "be nice to Claude" usage-policy piece (-0.40 MANUAL ILLUSTRATIVE: "even though it is not, ya know, actually alive", "oddball corners of Silicon Valley insist the tech has a soul"). Illustrative delta (anthropic minus meta) +0.15 - near-symmetric adversarial, constancy of adversarial posture with a register-kind asymmetry (privacy-outrage vs tabloid mockery). NOT a falsification-family member (ledger HOLDS at 63): the pair carries no OpenAI arm, so the uniform payer-softening prediction (News Corp x OpenAI May-2024 deal) is not adjudicated. Consistent with the twenty-ninth member (nypost_openai_adversarial_triad): the Post''s adversarial AI-lab register now spans a second lab. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      design: 'Cross-entity register-constancy Type B pair on a fully novel journalist at a deal-holding outlet (NY Post / News Corp; News Corp x OpenAI May-2024 content licensing deal in-corpus). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: both tones hand-assigned from search-result excerpts, the asymmetry engine was not run, and no empirical significance is claimed. The falsification family tests the uniform payer-softening prediction''s FAILURES, and this pair is a register-constancy observation that cannot adjudicate that prediction (no OpenAI arm) - the ledger holds at 63. Verdict directionally_supported_not_proven. Correlation, not causation.'
+      financial_context: 'News Corp x OpenAI content licensing deal (May 2024) is documented in-corpus; the NY Post is a News Corp property. This pair is Meta vs Anthropic - neither arm is the deal partner - so the payer-softening prediction is not adjudicated by this pair, and the block says so plainly. The outlet''s adversarial posture toward AI labs (including, per the twenty-ninth member, the payer OpenAI itself) is disclosed as context.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction''s FAILURES, and this pair is a journalist-level cross-entity register-constancy observation at a deal-holding outlet (NY Post / News Corp x OpenAI May-2024 deal) that cannot adjudicate that prediction because it carries no OpenAI arm; the finding is near-symmetric adversarial posture (Meta -0.55, Anthropic -0.40, illustrative delta +0.15) with a register-kind asymmetry, directionally consistent with the thesis but not a prediction test. The ledger holds at 63. Correlation, not causation. No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 63
+      ledger_note: 'Ledger holds at 63 this run (m1037 NOT a falsification-family member - cross-entity register-constancy observation at a deal-holding outlet, no OpenAI arm, payer-softening prediction not adjudicated). Forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth + fiftieth intact in profiles/careers/journalists.yaml; fifty-first intact in profiles/news-corp.yaml; fifty-second intact in profiles/careers/journalists.yaml; fifty-third intact in profiles/the-verge.yaml; fifty-fourth intact in profiles/guardian.yaml; fifty-fifth intact in profiles/atlantic.yaml; fifty-sixth intact in profiles/wired.yaml; fifty-seventh intact in profiles/ap.yaml; fifty-eighth intact in profiles/financial-times.yaml; fifty-ninth intact in profiles/news-corp.yaml; sixtieth intact in profiles/financial-times.yaml; sixty-first intact in profiles/wired.yaml; sixty-second intact in profiles/news-corp.yaml; sixty-third intact in profiles/news-corp.yaml; sixty-fourth member-claim form absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      background_suite_status: 'CHECKED ONLY per #795 - the #1340-launched full suite (goal hidden_files type_d_1340_full_suite.log) observed at this run''s check (last write Oct 9 ~11:00 PDT, [  0%], live pytest process - ALIVE). This run neither re-launches, kills, nor writes to the suite. Verdict belongs to #1345.'
+      rejection_audit: 'Delegated scout screened 70+ journalists (10+ browser.search queries; 3 top picks ALL rejected on main-run corpus verification: Dan Goodin saturated #1238 m974; Cristina Criddle saturated #1143; Ashley Belanger in-corpus). Main-run rejections: Brian Chen (mechanismized), Sarah Perez (mechanismized), Lucas Ropek (saturated #1023), Zack Whittaker (no clean competitor arm found in saturation screening), Jamey Keaten (only "contributed" credits, no clean byline pair), Guillermo Flor (not staff journalism). SELECTED: Ariel Zilber (fully novel; same-writer same-outlet cross-entity pair, 22 days apart).'
+      research_method: '1 delegated scout (10+ browser.search queries, saturation screening of 70+ journalists) + 4 main-run browser.search verification sets (nypost Zilber Meta smart-glasses pair screening; "be nice to Claude" byline verification; "Violated singles" byline verification; Anthropic-arm headline identity), 0 browser.open per #503. Pre-commit novelty greps per #715: zero test_type_b_1343 files on disk (glob); no "Type B #1343" in git log (--grep); max numeric mechanism_id 1036 in profiles/ pre-commit; zero numeric/underscore/dash one-zero-three-eight mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "ariel zilber" zero-hit repo-wide pre-commit; 3/3 source URLs zero-hit repo-wide pre-commit (git grep -F); block key zero-hit repo-wide pre-commit (designed keying: iteration 1343 in key, no 1037 or 1038 substring); "## #1343" zero-hit in iteration-log pre-commit; README stats 77157/1667 pre-commit; no #1343 row in README/ARCHITECTURE test tables pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1037 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://nypost.com/2026/09/16/business/women-say-dates-secretly-filmed-them-with-meta-ray-bans-as-creep-glasses-trend-sparks-outrage/
+      - https://nypost.com/2026/10/08/business/anthropic-to-users-be-nice-to-claude-ai-new-policy-bars-abusive-or-cruel-behavior-to-tech/
+      - https://buzzsumo.com/journalist/ariel-zilber-103986242/
