@@ -158,9 +158,8 @@ PRED_PUSH_1330 = "3f86ccab"
 PRED_MAIN_1335 = "a81d6ca5"
 
 # Forward guard for the next leg: #1336 Type E. Re-pinned by #1336's
-# terminal log-hash followup per #721 (starts as 0*40;
-# placeholder-only).
-PRED_MAIN_1336 = "0" * 40
+# anchor followup per #721 (starts as 0*40; placeholder-only).
+PRED_MAIN_1336 = "12d00ec603bbb37715a812c5049f175129593b6a"
 
 # The #1334 window-closing file, for the staleness pin on its guard
 # lifecycle (25 tests; post-terminal-followup form is 25 passed - the
