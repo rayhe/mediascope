@@ -149,7 +149,7 @@ B1342_FILE = (
 
 # Doc-sync constants per #719: post-doc-sync values from the start.
 # Patched pre-main once the in-gate collection count is known.
-README_TEST_COUNT = 77157  # post-doc-sync total (pre-sync 77157 + N) - PATCHED post-collection
+README_TEST_COUNT = 77262  # post-doc-sync total (pre-sync 77157 + N) - PATCHED post-collection
 README_FILE_COUNT = 1668  # pre-sync 1667 + 1 (this file)
 
 # The forward-guard needles are fragment-built per #715 so this file
