@@ -27,7 +27,7 @@ README stats table 77570/1671 -> 77670/1672 (+100/+1); README test-table row; do
 ### Commit hashes
 - Main commit `f027435cbbb44187fe3fe9ae95f5f1c88c71b646` - verified via git rev-parse
 - Anchor followup `aa9da7ad286469be8f9144f7feb1098a6a2c9b9c` (ANCHORED_SHA patched per #565; PRED_MAIN_1347 re-pinned in BOTH files per #721/#1292)
-- Doc-sync `TBD` (this commit)
+- Doc-sync `be9578de4e92c0ecf0cf675118eb91c84de028d0` (this commit)
 - Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1347 re-pinned to the main sha in the #1347 test file per #721 (the no-Type-A-#1347-in-git-log pin flips green post-repin); PRED_MAIN_1347 re-pinned to the main sha in the #1346 test file per #721/#1292 (the #1346 no-Type-A-#1347 pin flips green post-repin; TestStalenessPins1347 expects "3 failed, 23 passed" on TestGuardLifecycle1346 - the no-Type-A-#1347 pin flips BY DESIGN at the main commit (the #1191-class self-trip, re-pinned green in the anchor followup); the 1039-numeric/underscore/dash + no-sixty-fourth-member pins stay green.
 
 ### Rotation transparency
