@@ -142,7 +142,7 @@ PRED_MAIN_1325 = "cc24b13b8c8a22597e5c1c3795a7f3cf1d90d167"  # re-pinned to main
 # Forward guard for the next leg: #1326 Type E. Re-pinned by #1326's
 # terminal log-hash followup per #721 (starts as 0*40;
 # placeholder-only).
-PRED_MAIN_1326 = "0" * 40
+PRED_MAIN_1326 = "ed8d865209d95c75c6427fbd658b10ec0e140711"
 
 # The #1324 window-closing file, for the staleness pin on its guard
 # lifecycle (23 tests; post-main-commit form is 1 failed / 22 passed -
