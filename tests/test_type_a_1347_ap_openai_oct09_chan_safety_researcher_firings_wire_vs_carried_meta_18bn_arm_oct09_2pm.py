@@ -153,8 +153,8 @@ PRED_MAIN_1348 = "0" * 40  # staged placeholder per #721; re-pinned in #1348's t
 # direction absent / forty-eighth through sixty-second members
 # intact / no sixty-third member / ledger 62).
 B1346_FILE = (
-    "test_type_e_1346_podcast_sentiment_191st_"
-    "verification_oct09_10am.py"
+    "test_type_e_1346_podcast_sentiment_192nd_"
+    "verification_oct09_2pm.py"
 )
 
 # Doc-sync constants per #719: post-doc-sync values from the start.
