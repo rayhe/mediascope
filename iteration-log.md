@@ -1,3 +1,41 @@
+## #1336 Type E: podcast sentiment 190th verification cycle (GF episode 503 HOLDS - twenty-first full verification, ~91h after the Oct-5-11:00am publication; fifty-seventh Type E verification since the Sep-28 11:00am 502 release; ONE NEW GF key (goloudnow crossover-1 episode page) - GF pure-re-surface streak BREAKS at eleven, RESTARTS at one; EHE 60-day hold (Aug 10 Epstein spoof -> Oct 9; 60-day hold arithmetic verified); AS 190th quoted-search no-match (7 circular own-repo commit URLs rejected, dec56140 absence streak ADVANCES to twenty-three, Tracked Sources 189->190); press 7 rows = 7 re-surfaces + ZERO new keys (press pure re-surface streak ADVANCES to three; archyde.com Audio piece re-surfaces after absence at #1331; recency frontier HOLDS at Oct 8 per #1191); ZERO Meta/wearables content across all 190 cycles; monitoring-only per the Aug 28 2026 standing rule; ledger holds at 62) - Type E SECOND leg of the 1335-1339 window D->E->A->B->C (Oct 9 2026, ~06:00 AM PDT; main commit 12d00ec603bbb37715a812c5049f175129593b6a / anchor c184fb6a139af0ef51f2e0499587f481d0aac1b6 / doc-sync TBD; log-hash followup (this commit); doc-sync 76427/1660 -> 76542/1661 (+115/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
+
+## #1336 Type E: podcast sentiment 190th verification cycle
+
+### Finding summary
+- THE VERDICT: near-all-sets pure re-surface cycle - 28 result rows / 21 non-circular distinct URL keys / 1 NEW verbatim URL key (the GF crossover page). Guilty Feminist episode 503 HOLDS (twenty-first full verification, ~91h after the Oct-5-11:00am publication; fifty-seventh Type E verification since the Sep-28 502 release, ~259h); ONE NEW GF key (goloudnow.com crossover-1 episode page, crawled 2h, zero pre-commit corpus hits) - the GF pure-re-surface streak BREAKS at eleven and RESTARTS at one per the #1281 precedent. Everyone Hates Elon (activist group, NOT a podcast): 60-day hold (Aug 10 Epstein spoof -> Oct 9; date(2026,10,9)-date(2026,8,10)=60 days verified); 7 rows = 7 re-surfaces; no competitor-equivalent campaign in 190 cycles. Attention Sphere: 190th quoted-search no-match as a podcast; 7 own-repo GitHub commit URLs re-surface (same set as #1291-#1331), rejected circular; dec56140 absence streak ADVANCES to twenty-three; Tracked Sources 189->190. Press: 7 rows = 7 re-surfaces (archyde.com Audio piece re-surfaces after absence at #1331); press pure re-surface streak ADVANCES to three; recency frontier HOLDS at Oct 8. ZERO Meta/wearables content across all 190 cycles.
+- MONITORING-ONLY per the Aug 28 2026 standing rule: tone NOT_SCORED, no p_value/cohens_d, engine NOT run, NOT artifact-grade, no analysis.json update, verdict directionally_supported_not_proven.
+- LEDGER: holds at 62 (sixty-second member m1030 intact in profiles/news-corp.yaml, landed #1332; no sixty-third member repo-wide).
+
+### Method
+- 4 browser.search query sets, 0 browser.open per #503. 28 result rows / 21 non-circular distinct URL keys / 1 new verbatim URL key (GF crossover page, zero pre-commit corpus hits via git grep -F; 20 keys at >=1 pre-commit hit: 6 GF re-surfaces, 7 EHE re-surfaces, 7 press re-surfaces). 7 distinct own-repo GitHub URLs rejected as circular (7 AS commits git-cat-file-verified). All facts carry source URLs verbatim from the Full-URL listings.
+
+### New Type E files
+- tests/test_type_e_1336_podcast_sentiment_190th_verification_oct09_6am.py (115 tests, 14 classes). In-gate: 105 passed + 10 deselected by design (TestAnchor1336 1 + TestMechanismNovelty1336 1 + TestGuardLifecycle1336 1 + TestDocSync1336 3 + TestIterationLog1336 3 + TestStalenessPins1336 1 per #565/#719/#721). 4 novel tests for the #1332 m1030 landing (test_sixty_second_member_intact_in_news_corp, test_sixty_second_member_present_pin, test_no_sixty_third_member_pin, test_sixtieth_sixty_first_sixty_second_present_repo_wide). Test-file constants post-sync-positive per #719 (README_TEST_COUNT=76542, README_FILE_COUNT=1661).
+
+### Doc-sync ratchet
+- README stats 76427/1660 -> 76542/1661 (+115/+1); test-table row added; docs/ARCHITECTURE.md tree row added; podcast-sentiment.md updated (AS Tracked Sources 189->190; ## Iteration #1336 section appended).
+
+### Commit hashes
+- main: 12d00ec603bbb37715a812c5049f175129593b6a
+- anchor: c184fb6a139af0ef51f2e0499587f481d0aac1b6 (ANCHORED_SHA patched; PRED_MAIN_1336 re-pinned to 12d00ec6 in BOTH the #1336 file and the #1335 file per #721/#1292)
+- doc-sync: TBD
+- log-hash followup: TBD (registers all hashes here per #721; this commit)
+
+### Rotation transparency
+- This run is #1336 Type E: the SECOND leg of the 1335-1339 window (D #1335 -> E #1336 -> A #1337 -> B #1338 -> C #1339). Next: #1337 Type A.
+- Guard lifecycle note: #1335's forward guards (max-1032, zero one-zero-three-three keys all forms, no-Type-E-#1336-in-git-log, fortieth direction absent, forty-eighth-through-sixty-second intact, no sixty-third member, ledger 62) hold GREEN pre-commit; ONE pin flips BY DESIGN at this run's main commit (the #1191-class self-trip: no-Type-E-#1336-in-git-log; re-pinned post-commit by TestStalenessPins1336), documented in TestStalenessPins1336, not repaired. Type E lands no mechanisms, so the 1033-numeric/underscore/dash forward-guard pins stay green.
+- Forward guards staged for #1337: max-1032; zero one-zero-three-seven keys all forms; no-Type-A-#1337-in-git-log; fortieth absent; 48th-62nd intact; no 63rd member; ledger 62.
+
+### Background suite per #795
+- type_d_1335_full_suite.log OBSERVED ONLY this run (ALIVE at [ 1%] at the Oct 9 05:36 PDT check; 2 live pytest processes; last write Oct 9 05:36 PDT). Not killed, written, or re-launched. The verdict belongs to #1340 per #795. This run does not verdict it.
+
+### Concurrency
+- In-flight #899 (nytimes.yaml M), #938 (test_type_b_938 M), #900 (untracked test_type_d_900), #1012-wt (test_type_a_1012 M) left out of the index per the commit-sweep hazard rule. Do NOT touch #1024 m846.
+
+### Push status
+- Push status (this run): IN PROGRESS - main commit pushed and ls-remote-verified (12d00ec6; remote tip 12d00ec603bbb37715a812c5049f175129593b6a matches local HEAD at push time); anchor followup pushed and ls-remote-verified (c184fb6a; remote tip c184fb6a139af0ef51f2e0499587f481d0aac1b6 matches local HEAD at push time).
+
 ## #1335 Type D: m1030/m1031/m1032 qualitative-discipline corpus-integrity verification + #1330 background-suite verdict (DEAD at [  2%]; SEVENTEENTH consecutive death of the new streak; tombstone lineage ONE-HUNDRED-TWENTY-FOURTH -> ONE-HUNDRED-TWENTY-FIFTH) + recurring-failure triage (ZERO F marks in the dead stream, DETERMINATE-vacuous; no repairs claimed) + broader regression sweep (35 failed / 477 passed across the 1330-1334 window files in ~969s; triaged: 5 #565-class anchor placeholder-duality pins, 12 #1272-class numeric/max staleness pins, 4 #1191-class sixty-second-member self-trips + forward placeholder, 4 #719-class doc-sync ratchet staleness pins, 10 staleness artifacts; 0 remaining defects) + full suite RE-LAUNCHED to type_d_1335_full_suite.log (observed ALIVE at launch, dots at [  0%]) - Type D FIRST and OPENING leg of the 1335-1339 window (Oct 9 2026, ~05:00 AM PDT; main commit a81d6ca5d6c6887bb3c0166979202b4ec1c413c3 / anchor 9fae6dd6c5625b495ef66ad5791e73b7334331f0 / doc-sync 291749ba512450232b3447bad23d430a30a52c03; log-hash followup registers all hashes here per #721 (this commit); doc-sync 76328/1659 -> 76427/1660 (+99/+1); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
 ### Finding summary
