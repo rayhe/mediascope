@@ -29808,3 +29808,94 @@ maggie_harrison_dupre_type_b:
       source_urls:
       - https://flipboard.com/@Slashgear/3-cheaper-alternatives-to-meta-smart-glasses/a-nnHncWuyRY2kkua67RZK_A%3Aa%3A131778153-8c7b00c251%2Fslashgear.com
       - https://www.techmeme.com/260911/p20
+
+alfonso_maruccia_type_b:
+  name: Alfonso Maruccia
+  publication: techspot
+  mechanism_ids: [1034]
+  notes: 'Type B #1338 (Oct 9 2026): mechanism 1034, NOT a falsification-family member (ledger holds at 62) - FIRST dedicated Type B pair on Alfonso Maruccia (TechSpot staff journalist; zero alfonso_maruccia_type_b keyed entry pre-commit; zero "alfonso maruccia" hits repo-wide pre-commit - fully novel journalist; techspot.com article URLs zero-hit in profiles/ + tests/ pre-commit). ZERO-GRADIENT control on the payer axis: no documented TechSpot x Meta / x Google / x Anthropic / x OpenAI AI content licensing deal in-corpus (in-corpus TechSpot mentions are reporter attributions only: Cloudflare stats relay, Sora/Disney shutdown relay, Reddit-publisher-blocking relay; no techspot publication profile); the pair cannot test the payer-softening prediction (the #1313/#1318/#1328/#1333 control-case precedent). CROSS-ENTITY register-constancy design: Oct-6-2026 Norway smart-glasses temporary-ban piece (-0.35 MANUAL ILLUSTRATIVE, adversarial privacy register, "The Worst Spectacle" dek) vs Oct-5-2026 Google Finland data-center forest-clearing piece (-0.35, adversarial environmental-accountability register, "Cutting corners" dek); illustrative delta (google minus meta) 0.00 - register constancy, same writer, same outlet, one day apart. Excerpt-tier per #503, 0 browser.open; Meta-arm byline relay-attested (WeSearch), Google-arm byline staff-page-attested.'
+  competitor_coverage:
+    type_b_1338_alfonso_maruccia_techspot_norway_glasses_ban_vs_google_finland_forest_oct09_8am:
+      block_key: type_b_1338_alfonso_maruccia_techspot_norway_glasses_ban_vs_google_finland_forest_oct09_8am
+      mechanism_id: 1034
+      iteration: 1338
+      iteration_type: B
+      type: B
+      date: '2026-10-09 08:00 PDT'
+      test_file: tests/test_type_b_1338_alfonso_maruccia_techspot_norway_glasses_ban_vs_google_finland_forest_oct09_8am.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Alfonso Maruccia
+      publication: techspot
+      window: '1335-1339 window FOURTH leg (D #1335 -> E #1336 -> A #1337 -> B #1338 -> C #1339)'
+      design: 'Type B journalist tracking, within-journalist cross-entity register-constancy pair: Alfonso Maruccia (TechSpot staff journalist) on the Oct-6-2026 Norway smart-glasses temporary-ban piece (META arm) vs his Oct-5-2026 Google Finland data-center forest-clearing piece (GOOGLE arm), same writer, same outlet, one day apart, both adversarial-accountability registers with punny critical deks. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      financial_context: 'ZERO-GRADIENT control: no documented TechSpot x Meta, x Google, x Anthropic, or x OpenAI AI content licensing deal in-corpus (bounded absence: in-corpus TechSpot mentions are reporter attributions - Cloudflare stats relay, Sora/Disney shutdown relay, Reddit-publisher-blocking relay; no deal records in competitor-entities.yaml; no techspot publication profile) - the pair cannot test the payer-softening prediction; it joins the #1313 Kleinman / #1318 Shanklin / #1328 Swider / #1333 Dupre control-case family.'
+      meta_arm:
+        title: 'Norway wants to temporarily ban smart glasses in parks, beaches, and schools'
+        dek: 'The Worst Spectacle: Smart glasses are becoming an increasingly popular wearable for use in public, and privacy is paying the price.'
+        date: '2026-10-06'
+        outlet: techspot
+        author_byline: 'Alfonso Maruccia'
+        entity: meta
+        entity_note: 'The piece covers camera smart glasses generally; Meta''s Ray-Ban/Oakley glasses are the named hardware in the wider Norway discourse (TechCrunch relay names Meta and Snap); the TechSpot dek prices privacy as the casualty.'
+        url: https://wesearch.press/s/norway-wants-to-temporarily-ban-smart-glasses-in-parks-beach-c1a15fa0
+        url_note: 'Relay URL copied verbatim from this run''s Full-URL listing (search index 1); attested "By Alfonso Maruccia October 6, 2026, 16:56" with the "The Worst Spectacle" dek; the TechSpot forum topic URL (search index 6, verbatim) https://www.techspot.com/community/topics/norway-wants-to-temporarily-ban-smart-glasses-in-parks-beaches-and-schools.299058/ carries the same dek; the techspot.com canonical article URL did not surface in search listings (no-construction rule); both URLs zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpts + relay byline attribution; 0 browser.open per #503)'
+        key_quotes:
+        - 'Stigma-pun dek (short phrase): "The Worst Spectacle"'
+        - 'Privacy-cost frame (short phrase): "privacy is paying the price"'
+        - 'Unwelcome-guest frame (short phrase): "unwelcome guest in certain public places"'
+        - 'Unwilling-subject frame (short phrase): "unwilling guests in photos and video clips"'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        tone_reading: 'Adversarial privacy register: Norway''s temporary-ban proposal on AI smart glasses (parks, beaches, schools) is headlined with a spectacle/spectacles stigma pun; the dek prices privacy as the casualty ("privacy is paying the price"); the devices are "unwelcome guests" and bystanders "unwilling guests". The register is surveillance-accountability, not product coverage.'
+        status: 'NEW this run (headline + dek + URLs zero-hit repo-wide pre-commit)'
+      google_arm:
+        title: 'Google cleared 300 hectares of Finnish forest for a data center, and regulators want answers'
+        dek: 'Cutting corners: Google recently announced a major expansion of its data center footprint in Finland. The US company plans to invest billions in the new infrastructure but is allegedly moving a bit too quickly with its forest-clearing plans.'
+        date: '2026-10-05'
+        outlet: techspot
+        author_byline: 'Alfonso Maruccia'
+        entity: google
+        url: https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html
+        url_note: 'URL copied verbatim from this run''s Full-URL listing (search index 3); byline attested at the author''s TechSpot staff page (search index 0, verbatim https://www.techspot.com/community/staff/alfonso-maruccia.491138/ - "Cutting corners" listed under his articles, Monday at 1:38 PM); URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search-result excerpts + staff-page byline attribution; 0 browser.open per #503)'
+        key_quotes:
+        - 'Corner-cutting pun dek (short phrase): "Cutting corners"'
+        - 'Rushed-clearing frame (short phrase): "moving a bit too quickly with its forest-clearing plans"'
+        - 'Bulldozer frame (short phrase): "began bulldozing large swaths of forest before the required environmental review"'
+        - 'Scale frame (short phrase): "300 hectares of Finnish forest, roughly 420 football fields"'
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        tone_reading: 'Adversarial environmental-accountability register: Google''s EUR13B Finland AI expansion is framed through premature forest clearing - the "Cutting corners" pun dek, bulldozers before the environmental review, Finland''s LVV regulator demanding answers, 300 hectares / 420 football fields of scale. The company''s "fully complied" defense is carried but undercut by the conservation chair''s rebuttal. The register matches the Meta arm''s adversarial posture exactly, on a different accountability peg.'
+        status: 'NEW this run (headline + dek + URL zero-hit repo-wide pre-commit)'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.0
+      illustrative_delta_google_minus_meta: 0.0
+      delta_reading: 'Illustrative delta (google minus meta) 0.00: register constancy across entities. Maruccia runs an adversarial accountability register on both Meta (Oct 6: Norway smart-glasses ban, "The Worst Spectacle" stigma pun, -0.35) and Google (Oct 5: Finland forest-clearing, "Cutting corners" pun, -0.35). Same writer, same outlet, one day apart; both pieces use punny critical deks and regulator-scrutiny framing. No differential editorial standard is observable in this pair.'
+      confounders:
+      - 'Excerpt-bounded evidence: both arms are relay/staff-page-attested with 0 browser.open per #503; no first-hand TechSpot article read was possible, and the block says so plainly. Ranked STRONG.'
+      - 'Peg asymmetry: privacy/surveillance (Meta) vs environmental compliance (Google) - different accountability domains; the constancy reading is about register posture (adversarial + punny dek + regulator scrutiny), not topic. Ranked MODERATE.'
+      - 'Byline attestation is relay/staff-page level: WeSearch "By Alfonso Maruccia October 6, 2026, 16:56" (Meta arm); staff-page listing under his articles (Google arm); no Muck Rack author-page read this run. Ranked MODERATE.'
+      - 'Date gap: 1 day (Oct 5 vs Oct 6) - minimal; same news week, same author desk. Ranked WEAK.'
+      counter_evidence:
+      - 'Maruccia''s Sep-30 Facebook/Cambridge-Analytica jury-verdict piece ("A jury found Facebook guilty of 43 million privacy violations, and Meta could owe billions") and his Connect 2026 audio-glasses piece ("Meta''s new smart glasses skip the cameras, and the privacy backlash that came with them") show the adversarial-Meta register predates this pair - but that strengthens, not weakens, the constancy reading: his baseline register is adversarial regardless of entity.'
+      - 'A single one-day pair cannot establish a writer-level trait; the constancy reading is baseline-setting for future Type B pairs on Maruccia (e.g., a future OpenAI or Apple arm), not a concluded pattern - and both arms are relay-attested, so a first-hand read could shift the tones.'
+      connects_to: [1333]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Alfonso Maruccia (TechSpot staff journalist) runs an adversarial accountability register on both Meta and Google one day apart: the Oct-6-2026 Norway smart-glasses temporary-ban piece (-0.35 MANUAL ILLUSTRATIVE: "The Worst Spectacle" stigma pun, "privacy is paying the price", "unwelcome guest" devices and "unwilling guests" bystanders) and the Oct-5-2026 Google Finland data-center forest-clearing piece (-0.35: "Cutting corners" pun, "began bulldozing large swaths of forest before the required environmental review", "300 hectares of Finnish forest, roughly 420 football fields", Finland''s LVV regulator demanding answers). Illustrative delta (google minus meta) 0.00 - cross-entity register constancy, same writer, same outlet, one day apart. CROSS-ENTITY register-constancy baseline for a fully novel journalist (NOT a new falsification-family member; ledger holds at 62): no documented TechSpot x Meta / x Google / x Anthropic / x OpenAI AI content licensing deal in-corpus, so no payer leg whose prediction could fail (zero-gradient control, joins the #1313/#1318/#1328/#1333 control-case family). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction''s FAILURES, and this pair is a zero-gradient control - no documented TechSpot x Meta, x Google, x Anthropic, or x OpenAI AI content licensing deal exists in-corpus, so there is no payer leg whose prediction could fail; the finding is a journalist-level cross-entity register-constancy baseline for a novel journalist (Maruccia is equally adversarial on Meta and Google one day apart), directionally consistent with the thesis but not a prediction test. The ledger holds at 62. Correlation, not causation. No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 62
+      ledger_note: 'Ledger holds at 62 this run (m1034 NOT a falsification-family member - zero-gradient control + cross-entity register-constancy baseline, joins the #1313/#1318/#1328/#1333 control-case family). Forty-eighth member-claim form intact in profiles/financial-times.yaml (2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (3 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third member-claim form intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form intact in profiles/guardian.yaml (2 occurrences); fifty-fifth member-claim form intact in profiles/atlantic.yaml (3 occurrences); fifty-sixth member-claim form intact in profiles/wired.yaml (2 occurrences); fifty-seventh member-claim form intact in profiles/ap.yaml (3 occurrences); fifty-eighth member-claim form intact in profiles/financial-times.yaml (3 occurrences); fifty-ninth member-claim form intact in profiles/news-corp.yaml (3 occurrences); sixtieth member-claim form intact in profiles/financial-times.yaml (3 occurrences); sixty-first member-claim form intact in profiles/wired.yaml (2 occurrences); sixty-second member-claim form intact in profiles/news-corp.yaml (3 occurrences); sixty-third member-claim form absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      background_suite_status: 'CHECKED ONLY per #795 - the #1335-launched full suite (goal hidden_files type_d_1335_full_suite.log) observed at this run''s check (last write Oct 9 ~08:00 PDT, [  1%], live pytest process - ALIVE). This run neither re-launches, kills, nor writes to the suite. Verdict belongs to #1340 (next Type D).'
+      rejection_audit: 'Delegated scout screened 30+ journalists (14 browser.search queries): ruled out Goode, Chokkattu, Pero, Ashworth, Schiffer, Rogers, Ropek, Bell, Keach (in-corpus); Maggie Harrison Dupre, Schroeder, Phelan, Zeff, Dominic Preston, Katie Paul, Newton (pre-screened); Lily Hay Newman, Jason Aten, Shane Bauer, Wardle, Victoria Song, David Imel, Allison Johnson, Karan Joshi, Eli Tan, Andy Stone, David Singleton, Stephen Robles (exploratory, in-corpus); Matt J. Robb (novel but a tech YouTuber, not a journalist - REJECTED). SELECTED: Alfonso Maruccia (fully novel; same-writer same-outlet cross-entity pair, one day apart).'
+      research_method: '1 delegated scout (14 browser.search queries, saturation screening) + 3 main-run browser.search verification sets (Maruccia Norway "Worst Spectacle" identity confirmation via WeSearch relay + TechSpot forum topic; Maruccia Google Finland "Cutting corners" via staff page + article excerpt; in-corpus TechSpot licensing-deal absence check), 0 browser.open per #503. Pre-commit novelty greps per #715: zero test_type_b_1338 files on disk (glob); no "Type B #1338" in git log (--grep); max numeric mechanism_id 1033 in profiles/ pre-commit; zero numeric/underscore/dash one-zero-three-five mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "alfonso maruccia" zero-hit repo-wide pre-commit; 4/4 source URLs zero-hit repo-wide pre-commit (git grep -F); block key zero-hit repo-wide pre-commit (designed keying: iteration 1338 in key, no 1033 or 1034 substring); "## #1338" zero-hit in iteration-log pre-commit; README stats 76646/1662 pre-commit; no #1338 row in README/ARCHITECTURE test tables pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1034 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://wesearch.press/s/norway-wants-to-temporarily-ban-smart-glasses-in-parks-beach-c1a15fa0
+      - https://www.techspot.com/community/topics/norway-wants-to-temporarily-ban-smart-glasses-in-parks-beaches-and-schools.299058/
+      - https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html
+      - https://www.techspot.com/community/staff/alfonso-maruccia.491138/
