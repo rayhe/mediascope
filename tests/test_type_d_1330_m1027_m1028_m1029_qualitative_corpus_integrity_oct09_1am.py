@@ -153,7 +153,7 @@ PRED_PUSH_1325 = "1834287b"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the no-Type-D-#1330 own-run pin
 # flips green post-repin).
-PRED_MAIN_1330 = "0" * 40
+PRED_MAIN_1330 = "0f8f289923d4dcee0a96137a50b4231c75c64c83"  # re-pinned to main sha per #721
 
 # Forward guard for the next leg: #1331 Type E. Re-pinned by #1331's
 # terminal log-hash followup per #721 (starts as 0*40;
@@ -1089,24 +1089,23 @@ class TestGuardLifecycle1330:
 
 
 class TestStalenessPins1330:
-    def test_1329_guard_lifecycle_post_main_commit(self):
-        # Post-main-commit form (pre-terminal-followup): 33 tests in
-        # the class, 1 failed / 32 passed. The no_type_d_1330_in_git_log
-        # pin flips BY DESIGN when this run's main commit lands and is
-        # re-pinned green in the terminal log-hash followup per #721
-        # (PRED_MAIN_1330 re-pinned to this run's main sha in BOTH this
-        # file and the #1329 file per the #1292 precedent; the class
-        # then settles at 33 passed). The 1030-form pins stay green
+    def test_1329_guard_lifecycle_post_terminal_followup(self):
+        # Post-terminal-followup form: all 24 pass. The
+        # no_type_d_1330_in_git_log pin (the #1191-class self-trip:
+        # this run's main commit carries "Type D #1330") flipped BY
+        # DESIGN at this run's main commit and is re-pinned green in
+        # the terminal log-hash followup per #721 (PRED_MAIN_1330 now
+        # holds this run's main sha in BOTH this file and the #1329
+        # file per the #1292 precedent). The 1030-form pins stay green
         # throughout (Type D lands no mechanisms; the #723/#738/#739
         # designed keying holds); the member and direction pins stay
         # green (no member, no direction landed this run). The #1329
-        # block is read-only to this run; the flips are documented
-        # here, not repaired. Deselected in the in-gate run (fails
-        # pre-commit by design - the pin is still in placeholder form
-        # pre-commit).
+        # block is read-only to this run; the flip is documented here,
+        # not repaired. Deselected pre-commit (verified only
+        # post-terminal-followup).
         res = _class_run(E1329_FILE, "TestGuardLifecycle1329")
         out = res.stdout + res.stderr
-        assert "1 failed" in out and "32 passed" in out, out[-2000:]
+        assert "24 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
