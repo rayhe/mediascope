@@ -1042,25 +1042,24 @@ class TestIterationLog1328:
 
 class TestStalenessPins1328:
     def test_1327_guard_lifecycle_post_commit(self):
-        # Post-terminal-followup form: 34 of the 36 pass; the two that
-        # fail BY DESIGN are test_no_type_b_1328_in_git_log_pin (the
-        # #1191-class self-trip: this run's own main commit carries
-        # "Type B #1328", re-pinned green in the terminal log-hash
-        # followup per #721 in BOTH files per the #1292 precedent) and
-        # test_1028_numeric_absent_in_profiles (the #1272-class
+        # Post-terminal-followup form: 35 of the 36 pass; the one that
+        # fails BY DESIGN is test_1028_numeric_absent_in_profiles
+        # (mechanism 1028 lands in profiles/ this run; the #1272-class
         # forward-guard expiry - the next-number guard is consumed by
-        # the m1028 landing; stays red permanently). The
-        # test_1028_underscore_absent_repo_wide and
-        # test_1028_dash_absent_repo_wide pins stay GREEN (Type B lands
-        # one mechanism in colon form only per #715/#770); the member
-        # and direction pins stay GREEN (m1028 is a zero-gradient
-        # control, not a family member).
+        # the landing; stays red permanently). The second flip,
+        # test_no_type_b_1328_in_git_log_pin (the #1191-class
+        # self-trip: this run's own main commit carries "Type B
+        # #1328"), is re-pinned green in the terminal log-hash
+        # followup per #721 (its PRED_MAIN_1328 now holds this run's
+        # main sha, in BOTH the #1328 and #1327 files per the #1292
+        # precedent). test_pins_on_1028_landing stays GREEN (asserts on
+        # the #1328 file's own constants); the member and direction
+        # pins stay GREEN (m1028 is a zero-gradient control, not a
+        # family member).
         # Deselected pre-commit (the pin passes pre-commit).
         res = _class_run(A1327_FILE, "TestGuardLifecycle1327")
         assert res.returncode != 0, res.stdout[-2000:]
-        assert "2 failed, 34 passed" in res.stdout, res.stdout[-2000:]
-        assert "test_no_type_b_1328_in_git_log_pin" in res.stdout, \
-            res.stdout[-2000:]
+        assert "1 failed, 35 passed" in res.stdout, res.stdout[-2000:]
         assert "test_1028_numeric_absent_in_profiles" in res.stdout, \
             res.stdout[-2000:]
 
