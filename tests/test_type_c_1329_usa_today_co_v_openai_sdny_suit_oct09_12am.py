@@ -88,7 +88,7 @@ TOP_KEY = "type_c_1329_usa_today_co_v_openai_sdny_suit_oct09_12am"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "e64c14d5f45144dff91bd8a7286d314dab4abbd0"
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
