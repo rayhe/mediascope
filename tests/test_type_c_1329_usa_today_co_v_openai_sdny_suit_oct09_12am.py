@@ -119,7 +119,7 @@ PRED_MAIN_1330 = "0" * 40
 # Own-run main-commit placeholder per #721: 0*40 pre-commit, re-pinned
 # to this run's main sha in the terminal log-hash followup (in BOTH
 # this file and the #1328 file per the #1292 precedent).
-PRED_MAIN_1329 = "0" * 40
+PRED_MAIN_1329 = "e64c14d5f45144dff91bd8a7286d314dab4abbd0"
 
 # #1328's test file (for the guard-lifecycle staleness pins).
 A1328_FILE = (
