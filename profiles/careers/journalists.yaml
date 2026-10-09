@@ -20771,6 +20771,120 @@ journalists:
       test_file: 'tests/test_type_b_1293_sarah_perez_techcrunch_muse_privacy_dispute_vs_chatgpt_shopping_sep30_oct01_6pm.py'
       artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer accountability-register pin; illustrative-only scorer output; no new empirical finding at the publication level. NOT a falsification-family member.'
 
+    type_b_1348_sarah_perez_techcrunch_muse_charm_vs_gemini_call_for_me_sep24:
+      iteration: 1348
+      iteration_type: B
+      mechanism_id: 1040
+      type: B
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      date: '2026-10-09 15:00 PDT'
+      block_key: 'type_b_1348_sarah_perez_techcrunch_muse_charm_vs_gemini_call_for_me_sep24'
+      author: 'Kit (with Ray)'
+      design: 'Type B journalist cross-entity tracking, within-writer register comparison, FOURTH Perez mechanism (first: m617, Type B #638; second: m698, Type B #778; third: m1007, Type B #1293). Question: does the Perez writer-level asymmetry (Meta-harder registers on dispute/accountability pegs: m617 delta -0.50, m698 replicated direction, m1007 delta +0.40 openai-minus-meta) persist on a same-day matched-capability pair? Two Perez bylines, SAME DAY Sep 24 2026, consumer AI agent features: (a) the Meta arm, the Muse Charm wearable launch coverage; (b) the Google arm, the Gemini "Call for Me" agentic-calling feature. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule. No em dashes.'
+      journalist: 'Sarah Perez'
+      publication: 'techcrunch'
+      window: '1345-1349 window FOURTH leg (D #1345 -> E #1346 -> A #1347 -> B #1348 -> C #1349)'
+      finding: 'TEMPORAL NON-REPLICATION of the Perez writer-level asymmetry. On the Sep-24-2026 same-day matched-capability pair, Perez runs register constancy: the Meta Muse Charm piece (+0.05 illustrative: product-curious with flop-history skepticism, Gen Z bag-charm trend framing, no trust-interrogation) and the Google Gemini "Call for Me" piece (+0.10 illustrative: capability-news register with Duplex/Hold-for-Me history context) read within 0.05 of each other. The harder-on-Meta register observed at m617/m698/m1007 is peg-driven (accountability/dispute pegs vs launch pegs), not a stable writer trait. NOT a falsification-family member (no payer gradient; per the #1143 temporal-replication precedent a same-writer observation is not a new prediction test). Ledger holds at 64.'
+      meta_arm:
+        title: 'Meta''s Muse Charm looks like a Tamagotchi, but it''s tapping into a much newer trend'
+        date: '2026-09-24'
+        outlet: techcrunch
+        author_byline: 'Sarah Perez'
+        entity: meta
+        url: https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/
+        url_note: 'URL copied verbatim from the delegated scout''s Full-URL listing and re-attested in this run''s exact-headline search (romandycto.org citation block: TechCrunch, Sarah Perez, 24 September 2026, verbatim URL); byline and date attested via Perez''s TechCrunch author page ("Latest from Sarah Perez", both arms listed Sep 24, 2026); URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (author-page listing + search excerpts; 0 browser.open per #503)'
+        key_quotes:
+        - 'Product-curious frame (short phrase): "a playful device that will make AI more approachable to everyday consumers"'
+        - 'Flop-history skepticism (short phrase): "yet another flop in a long list of AI hardware gadgets"'
+        - 'Comparators named (short phrase): "AI Pin, Rabbit, or Friend pendant"'
+        - 'Trend frame (short phrases): "appeal to Gen Z consumers", "dangling items from keychains and bags"'
+        - 'Availability (short phrase): "ready for shipping by the holiday season in December"'
+        tone_MANUAL_ILLUSTRATIVE: 0.05
+        tone_reading: 'Product-curious register with flop-history skepticism: the piece weighs the Charm''s playful approachability against the AI Pin / Rabbit / Friend pendant graveyard and frames the form factor as a Gen Z bag-charm trend play. No trust-interrogation register visible - the #638 "Will consumers trust it?" frame is absent on this peg.'
+        status: 'NEW this run (headline + URL zero-hit repo-wide pre-commit)'
+      google_arm:
+        title: 'Google tests letting Gemini call businesses for you'
+        date: '2026-09-24'
+        outlet: techcrunch
+        author_byline: 'Sarah Perez'
+        entity: google
+        url: https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/?utm_source=implicator.ai&utm_medium=techcrunch&utm_campaign=2026_09_nl_2026_09_25&utm_content=news
+        url_note: 'URL copied verbatim from this run''s exact-headline browser.search Full-URL listing (search index 4; wesearch.press + greensborotimes + toptech.news independently attribute the piece to Sarah Perez / TechCrunch); the utm query params are verbatim from the listing, not stripped; URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (search excerpts; 0 browser.open per #503)'
+        key_quotes:
+        - 'Category trigger (short phrase): "With AI agents like Meta''s Muse and Instinct now able to make calls on users'' behalf"'
+        - 'Feature frame (short phrase): "Call for Me"'
+        - 'Rollout scope (short phrase): "Pixel 11 owners who pay for a Gemini subscription in the U.S."'
+        - 'Capability detail (short phrase): "navigate automated phone menus, wait on hold"'
+        - 'History context (short phrases): "Hold for Me", "Ask for Me", 2018 Duplex demo'
+        tone_MANUAL_ILLUSTRATIVE: 0.1
+        tone_reading: 'Capability-news register: the piece announces the "Call for Me" experiment, scopes the rollout (Pixel 11, paid Gemini subscription, beta Phone app), and contextualizes against Google''s Duplex / Hold for Me / Ask for Me lineage. No trust-interrogation of Gemini''s access to user data - the mirror question is never posed, but neither was it posed of Meta on the same day''s matched peg.'
+        status: 'NEW this run (headline + URL zero-hit repo-wide pre-commit)'
+      illustrative_means:
+        meta_tone: 0.05
+        google_tone: 0.1
+        delta_google_minus_meta: 0.05
+        delta_calc: '0.1 - 0.05 = +0.05'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule'
+      delta_reading: 'Illustrative delta (Google minus Meta) +0.05: near-null register constancy. Same writer, same outlet, same day, both consumer-AI-agent feature pieces - Perez runs a product-news register on both, with no entity-selective trust interrogation. The m617/m698/m1007 harder-on-Meta pattern does not survive the matched-peg test.'
+      asymmetry_scorer_result:
+        verdict: 'temporal_non_replication'
+        method: 'MANUAL ILLUSTRATIVE per the Aug 28 2026 standing rule; engine NOT run'
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        is_significant: false
+      verdict: 'temporal_non_replication'
+      statistical_discipline:
+        manual_illustrative_only: true
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        artifact_grade: false
+        analysis_json_update: false
+      financial_context: 'ZERO-GRADIENT control on the payer axis: no documented TechCrunch/Yahoo x Meta or x Google AI content licensing deal in-corpus (per m698 and #1293 findings) - the pair cannot test the payer-softening prediction; it joins the #1313 Kleinman / #1318 Shanklin / #1328 Swider control-case family. The finding is writer-level, not publication-level.'
+      confounders:
+      - strength: 'STRONG'
+        text: 'Excerpt-bounded evidence: 0 browser.open per #503; both arms read via search-result excerpts and the TechCrunch author-page listing; no first-hand register read of either piece body.'
+      - strength: 'MODERATE'
+        text: 'Hand-assigned illustrative tones, n=1 per arm; the +0.05/+0.10 positions are register judgments, not empirical corpus scores.'
+      - strength: 'WEAK (favorable)'
+        text: 'Same-day matched pegs: both pieces are Sep-24 consumer-AI-agent feature news at the same outlet by the same writer - the genre and timing confounds are controlled, which favors the constancy reading.'
+      - strength: 'WEAK (favorable)'
+        text: 'The Google piece names Meta''s Muse as the category trigger ("With AI agents like Meta''s Muse and Instinct now able to make calls"), so the cross-entity pairing is native to the coverage, not imposed by this run.'
+      - strength: 'WEAK'
+        text: 'The Google URL carries utm query params (verbatim from the search listing); the Meta URL is the clean canonical. Cosmetic difference only.'
+      counterevidence: 'The three prior Perez mechanisms all ran Meta-harder registers (m617 illustrative delta Meta-minus-Google -0.50; m698 replicated the direction; m1007 illustrative delta OpenAI-minus-Meta +0.40) - this run''s near-null delta does not erase those observations; it bounds them to accountability/dispute pegs. Perez also runs scrutiny across entities in other windows (Jul-6-2026 Google opt-out piece, Sep-9-2026 Apple Watch always-listening piece, per #1293).'
+      cross_references:
+      - 'm617 (Type B #638: first Perez mechanism, Muse-vs-Gemini-Spark trust register, Sep 8 / Sep 4)'
+      - 'm698 (Type B #778: second Perez mechanism, Muse trust interrogation vs Astra demand celebration, Sep 15)'
+      - 'm1007 (Type B #1293: third Perez mechanism, Muse privacy dispute vs ChatGPT shopping, Sep 30 / Oct 1)'
+      - '#210 (Type A, iteration 218: prior Perez three-entity camera-wearable study, different study type and article set)'
+      - '#305 (Kim Bellan, TechCrunch saturated - outlet-level)'
+      connects_to: [617, 698, 1007]
+      research_method: 'Delegated scout (3-candidate sweep) + 3 main-run browser.search exact-headline verification sets, 0 browser.open per #503. SELECTED: Sarah Perez (scout #2) - the only clean in-window same-writer same-day pair with verbatim techcrunch.com canonical URLs on both arms (Meta URL re-attested in this run''s exact-headline search via the romandycto.org citation block; Google URL verbatim from this run''s Full-URL listing at search index 4; both bylines attested via Perez''s TechCrunch author-page "Latest from Sarah Perez" listing showing both headlines dated Sep 24, 2026). REJECTED: Hugh Langley (scout #1, Business Insider) - settled rejection at #1208/#1243 (Meta arm Aug-27 out of window); re-selecting the identical arms would re-litigate it. REJECTED: Amanda Caswell (scout #3, Tom''s Guide) - within-story comparison design (weaker than across-stories) plus mention-level corpus hits. Main-run screening also rejected: Lauren Goode (dedicated Type B in-corpus), Simon Hill (dedicated #395/#452), Will Knight (no clean Meta/competitor pair surfaced), Mike Isaac (no clean in-window pair). Main-run novelty greps: both URLs zero-hit repo-wide (git grep -F); both headlines zero-hit repo-wide; zero test_type_b_1348 files on disk; no "Type B #1348" in git log; max numeric mechanism_id 1039 pre-commit; zero numeric/underscore/dash one-zero-four-zero mechanism key forms repo-wide pre-commit; "## #1348" zero-hit in iteration-log pre-commit; README stats 77670/1672 pre-commit. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'FOURTH Type B mechanism on Sarah Perez (first: m617, Type B #638; second: m698, Type B #778; third: m1007, Type B #1293); FIRST same-day matched-peg pair on Perez. Zero test_type_b_1348 files on disk pre-commit (glob); no "Type B #1348" in git log pre-commit (--grep); max numeric mechanism_id 1039 pre-commit; zero numeric/underscore/dash one-zero-four-zero mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (designed keying: iteration 1348 in key, no 1040 substring); 2/2 novel source URLs zero-hit repo-wide pre-commit (git grep -F); both arm headlines zero-hit repo-wide pre-commit; no #1348 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 77670/1672 pre-commit. NOT a falsification-family member (temporal non-replication of the Perez writer-level asymmetry per the #1143 precedent - same-writer observation, not a new prediction test); sixty-fifth member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      test_file: 'tests/test_type_b_1348_sarah_perez_techcrunch_muse_charm_vs_gemini_call_for_me_sep24_3pm.py'
+      artifact_readiness: 'No analysis.json update warranted. Journalist-level within-writer register pin; illustrative-only scorer output; no new empirical finding at the publication level. NOT a falsification-family member. Ledger holds at 64.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction''s FAILURES, and this run tests no payer gradient (TechCrunch/Yahoo x Meta and x Google licensing deals are $0 in-corpus - zero-gradient control per the #1313/#1318/#1328 family). Per the #1143 temporal-replication precedent, a same-writer observation is not a new prediction test; this run''s observation is a non-replication that bounds the m617/m698/m1007 writer-level asymmetry to accountability/dispute pegs rather than extending it. The ledger holds at 64; the finding bounds rather than advances the count. Correlation, not causation. No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: '64'
+      ledger: '64'
+      ledger_note: 'Ledger holds at 64 this run (m1040 NOT a falsification-family member - temporal non-replication of the Perez writer-level asymmetry per the #1143 precedent; the harder-on-Meta register does not persist on the same-day matched-capability pair). Forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth + fiftieth intact in profiles/careers/journalists.yaml; fifty-first intact in profiles/news-corp.yaml; fifty-second intact in profiles/careers/journalists.yaml; fifty-third intact in profiles/the-verge.yaml; fifty-fourth intact in profiles/guardian.yaml; fifty-fifth intact in profiles/atlantic.yaml; fifty-sixth intact in profiles/wired.yaml; fifty-seventh intact in profiles/ap.yaml; fifty-eighth intact in profiles/financial-times.yaml; fifty-ninth intact in profiles/news-corp.yaml; sixtieth intact in profiles/financial-times.yaml; sixty-first intact in profiles/wired.yaml; sixty-second intact in profiles/news-corp.yaml; sixty-third intact in profiles/news-corp.yaml; sixty-fourth intact in profiles/ap.yaml; sixty-fifth member-claim form absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      background_suite_status: 'CHECKED ONLY per #795 - the #1345-launched full suite (goal hidden_files type_d_1345_full_suite.log) observed at this run''s check (last write Oct 9 15:01 PDT, [ 5%], 4 live pytest processes - RUNNING). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1350 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1040 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      distinct_from_prior: 'Not a re-score of m617 (#638, Sep-8 Muse launch vs Sep-4 Gemini Spark trust-register pair - 4-day window, different arms); not m698 (#778, Muse trust interrogation vs Astra demand celebration - different competitor, different peg); not m1007 (#1293, Sep-30 Muse privacy dispute vs Oct-1 ChatGPT shopping - later-dated arms, accountability-vs-launch peg skew). This run''s arms (Sep-24 Muse Charm vs Sep-24 Gemini Call-for-Me, same-day matched capability pegs) are novel evidence; the #1143 temporal-replication precedent does not block (new arms, new peg, FIRST same-day matched-peg test of the Perez pattern).'
+      source_urls:
+      - https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/
+      - https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/?utm_source=implicator.ai&utm_medium=techcrunch&utm_campaign=2026_09_nl_2026_09_25&utm_content=news
+
 - name: Amanda Silberling
   notes: 'TechCrunch Senior Writer covering the intersection of technology and culture. Co-host of the Wow If True internet-culture podcast. Previously wrote for Polygon, MTV, the Kenyon Review, NPR, and Business Insider. Covers AI, social platforms, and the legal/regulatory battles around both.'
   career:
