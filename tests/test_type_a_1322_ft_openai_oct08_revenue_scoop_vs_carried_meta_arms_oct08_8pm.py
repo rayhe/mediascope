@@ -137,7 +137,7 @@ PRED_MAIN_1322 = "237e0a1e2f21b114e11a1c0405c2905ea31f9eba"  # re-pinned in the 
 
 # #1323's main commit (full sha), for the ancestor-form no-Type-B-#1323
 # pin. Patched in #1323's terminal log-hash followup per #721.
-PRED_MAIN_1323 = "0" * 40
+PRED_MAIN_1323 = "6fae5cd614267592c77100188b6e956bb6d7ed34"  # re-pinned by #1323 terminal log-hash followup per #721
 
 # The #1321 Type E file, for the staleness pin on its guard-lifecycle
 # class (max id 1023; zero next-number one-zero-two-four /
