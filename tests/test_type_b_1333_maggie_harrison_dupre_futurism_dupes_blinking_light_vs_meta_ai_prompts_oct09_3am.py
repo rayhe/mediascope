@@ -133,7 +133,7 @@ TOP_KEY = "maggie_harrison_dupre_type_b"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "8ecaff72e61b8f6567a7bc186fa3cf42f810e865"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -159,7 +159,7 @@ PRED_FINAL_1331 = "b6a99d6ac42003c119246645bf627e627b0e1ca6"
 # This run's own main-commit sha, re-pinned per #721 in the terminal
 # log-hash followup (starts as 0*40; the own-run git-log pin is
 # deselected in the in-gate run and fails pre-commit by design).
-PRED_MAIN_1333 = "0" * 40
+PRED_MAIN_1333 = "8ecaff72e61b8f6567a7bc186fa3cf42f810e865"  # re-pinned to #1333 main sha in the anchor followup per #721/#1292
 
 # Forward guard for the next leg: #1334 Type C. Re-pinned by #1334's
 # log-hash followup per #721 (starts as 0*40; the forward pin is
