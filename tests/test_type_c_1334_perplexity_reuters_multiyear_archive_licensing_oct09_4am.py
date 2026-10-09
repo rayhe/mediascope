@@ -95,7 +95,7 @@ TOP_KEY = "type_c_1334_perplexity_reuters_multiyear_archive_licensing_oct09_4am"
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "059c612b67177afde506c1509f6cefe0db495d8b"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -126,7 +126,7 @@ PRED_MAIN_1335 = "0" * 40
 # Own-run main-commit placeholder per #721: 0*40 pre-commit, re-pinned
 # to this run's main sha in the terminal log-hash followup (in BOTH
 # this file and the #1333 file per the #1292 precedent).
-PRED_MAIN_1334 = "0" * 40
+PRED_MAIN_1334 = "059c612b67177afde506c1509f6cefe0db495d8b"  # re-pinned to #1334 main sha per #721 (#1292 both-copies)
 
 # #1333's test file (for the guard-lifecycle staleness pins).
 A1333_FILE = (
