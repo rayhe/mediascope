@@ -153,7 +153,7 @@ PRED_FINAL_1326 = "2413fc66754021b448572ca8592bb7224d7fc55a"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-A-#1327 pin. Patched in the terminal log-hash followup per
 # #721.
-PRED_MAIN_1327 = "0" * 40  # re-pinned in the log-hash followup per #721
+PRED_MAIN_1327 = "7e011cb6297df622d3d89d36950b38ba45fc1a15"  # re-pinned in the log-hash followup per #721
 
 # #1328's main commit (full sha), for the ancestor-form no-Type-B-#1328
 # pin. Patched in #1328's terminal log-hash followup per #721.
