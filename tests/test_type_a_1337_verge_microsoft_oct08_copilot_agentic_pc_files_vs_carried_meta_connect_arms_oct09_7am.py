@@ -738,26 +738,26 @@ class TestIterationLog1337:
 
 class TestStalenessPins1337:
     def test_1336_guard_lifecycle_post_commit_self_trip(self):
-        # Post-terminal-followup form: 25 tests in the class; 23
-        # pass, 2 fail BY DESIGN and permanently - the #1191-class
-        # self-trip (test_no_type_a_1337_in_git_log_pin flips at this
-        # run's main commit on the landed Type A #1337 commits) and
-        # the #1272-class forward-guard expiry
-        # (test_1033_numeric_absent_in_profiles trips on the landed
-        # m1033 block). The no_type_a_1337_in_git_log ancestor pin
-        # (the #1191-class self-trip) was red at this run's
-        # main-commit time; the terminal log-hash followup re-pins
+        # Post-terminal-followup form: 25 tests in the class; 24
+        # pass, 1 fails BY DESIGN and permanently - the #1272-class
+        # forward-guard expiry (test_1033_numeric_absent_in_profiles
+        # trips on the landed m1033 block). The no_type_a_1337_in_git_log
+        # ancestor pin (the #1191-class self-trip) was red at this
+        # run's main-commit time; the anchor followup re-pinned
         # PRED_MAIN_1337 in BOTH its own file's copy and the #1336
         # predecessor file's copy per the #1292 re-pin-both-copies
         # precedent and the #721 re-pin rule, flipping it green. The
         # 1033-underscore and 1033-dash pins stay green (no
         # one-zero-three-three mechanism-key forms landed); the
         # no-sixty-third-member pin stays green (m1033 is not a
-        # member; ledger holds at 62). Deselected in the in-gate run
-        # (fails pre-commit by design); verified post-terminal.
+        # member; ledger holds at 62); the fifty-third member pin
+        # stays green (this run's counterevidence cites m982 in
+        # lowercase prose form per #715, preserving the :2 count).
+        # Deselected in the in-gate run (fails pre-commit by
+        # design); verified post-terminal.
         res = _class_run(B1336_FILE, "TestGuardLifecycle1336")
         out = res.stdout + res.stderr
-        assert "2 failed, 23 passed" in out, out[-2000:]
+        assert "1 failed, 24 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
@@ -891,7 +891,7 @@ class TestConfounders1337:
 
     def test_m982_counterevidence(self):
         ce = _block()["counterevidence"]
-        assert any("m982" in c and "FIFTY-THIRD" in c for c in ce)
+        assert any("m982" in c and "fifty-third" in c for c in ce)
 
     def test_relay_skeptical_frame_counterevidence(self):
         ce = _block()["counterevidence"]

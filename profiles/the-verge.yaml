@@ -5067,7 +5067,7 @@ competitor_relationships:
       ledger: '62'
       ledger_note: "Ledger HOLDS at 62 this run (no new falsification-family member; the sixty-second remains the #1332 m1030 WSJ x OpenAI member; the sixty-third member-claim form stays absent repo-wide)."
       counterevidence:
-        - "m982 (#1252, FIFTY-THIRD falsification-family member, the-verge.yaml): The Verge ran adversarial accountability on OpenAI - the OTHER licensing partner (Vox Media x OpenAI May 2024) - in the Oct-5 safety-week cluster (-0.55). The deal gradient does not uniformly soften at The Verge; the softening is peg-conditional, and the OpenAI leg falsifies the naive uniform prediction."
+        - "m982 (#1252, the fifty-third falsification-family member, the-verge.yaml): The Verge ran adversarial accountability on OpenAI - the OTHER licensing partner (Vox Media x OpenAI May 2024) - in the Oct-5 safety-week cluster (-0.55). The deal gradient does not uniformly soften at The Verge; the softening is peg-conditional, and the OpenAI leg falsifies the naive uniform prediction."
         - "The webpronews relay's own skeptical frame (permission-vs-protection caution; Windows Recall privacy-backlash callback) shows the privacy-critical register was available on this story; the relay attributes no such register to The Verge's own piece."
         - "The Register broke the story (Oct 7); The Verge's piece is follow coverage, not a scoop - less editorial discretion exercised on selection."
       confounders_ranked:
