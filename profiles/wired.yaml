@@ -3216,6 +3216,111 @@ competitor_relationships:
       rotation_guard: '1265-1269 window THIRD leg D(#1265)->E(#1266)->A (this run); next: #1268 Type B continues the window. Ledger holds at 54 (anchor patched post-commit per #565). Forward guards: max-991, zero next-number nine-nine-two numeric/underscore/dash, no-Type-B-#1268-in-git-log, fortieth direction absent, forty-eighth+forty-ninth+fiftieth+fifty-first+fifty-second+fifty-third+fifty-fourth intact, no-fifty-fifth-member.'
       test_file: 'tests/test_type_a_1267_wired_openai_dots_launch_vs_meta_muse_dossier_oct06_1pm.py'
       in_flight: '#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched.'
+
+    type_a_1327_wired_openai_oct07_chatgpt_intelligent_ui_review_vs_carried_meta_dossier:
+      mechanism_id: 1027
+      block_key: type_a_1327_wired_openai_oct07_chatgpt_intelligent_ui_review_vs_carried_meta_dossier
+      key_design_note: 'Iteration-form block key carries no underscore-form one-zero-two-seven mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-one-zero-two-seven profile sweep instruments green while mechanism_id advances in colon form.'
+      publication_focus: 'WIRED (Conde Nast)'
+      competitor: openai
+      polarity_note: 'Spec-faithful polarity (publication + competitor = WIRED x OpenAI); this run NEW arm lands on the OpenAI side (the Oct-7 intelligent-UI product-review original, WIRED-original), against carried Meta-side arms.'
+      event: 'Oct 6-7 2026 product-review peg: WIRED runs THREE originals applying critical/adversarial registers to its Aug-2024 licensing partner OpenAI within 48 hours: (1) Oct 7 "The New ChatGPT Is More Show Than Tell" (intelligent-UI redesign review; publication time Oct 7 2026 18:00 UTC; canonical URL verbatim from the third-party provenance record); (2) Oct 6 "OpenAI Is Pissing Off a Bunch of Mathematicians - Again" (Isabella Ward; OpenAI plans to dump hundreds of unsolved-problem results to GitHub against the mathematicians'' request for proper papers); (3) Oct 6 "Artificial Roasts AI''s Creators - and Sends a Dark Warning About Its Dangers" (John Semley; Guadagnino film depicting OpenAI leaders as reckless). Carried WIRED x Meta Muse-dossier accountability arm (m988, Oct 4-5). Same publication, same week.'
+      financial_relationship: 'Conde Nast x OpenAI multi-year content licensing deal (Aug 20 2024, Reuters; in-corpus wired.yaml ownership_chain; $1-5M/yr estimate; wired.yaml competitor_relationships.openai coverage_prediction "softer"); Conde Nast x Meta $0 AI licensing (per corpus). Coverage prediction: softer OpenAI.'
+      deal_url: 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/'
+      source_urls:
+      - https://wesearch.press/s/the-new-chatgpt-is-more-show-than-tell-5e50f5e6
+      - https://wesearch.press/s/openai-is-pissing-off-a-bunch-of-mathematiciansagain-8600e6ec
+      - https://gokawiil.com/article/352173
+      openai_arms:
+      - item:
+          title: 'The New ChatGPT Is More Show Than Tell'
+          date: '2026-10-07'
+          date_detail: 'Oct 7 2026 18:00 UTC (third-party provenance record: publication time from the publisher record, retrieval 2026-10-07T20:57:28Z)'
+          publication: 'WIRED (original; relay-attested)'
+          entity: openai
+          evidence_tier: 'relay-attested'
+          url_source: 'Verbatim wired.com canonical URL copied verbatim from a third-party provenance record (wesearch.press record table, publisher-attributed canonical URL https://www.wired.com/story/openai-chatgpt-intelligent-ui-is-more-show-than-tell/) - NOT constructed from the domain; the URL did not arrive in any search Full-URL listing this run. Relay attested via wesearch.press (1,087 WIRED stories carried; publisher-attributed excerpt method). Excerpt-bounded per #503; 0 browser.open.'
+          framing: 'product_review_accountability'
+          manual_illustrative_tone: -0.30
+          tone_note: 'Adversarial product-review register on the licensing payer: the headline frames the flagship redesign as style over substance ("more show than tell"), inverting the aspiration the same desk applied to OpenAI hardware 24 hours earlier (the Oct-6 Altman/Ive dev-day piece, in-corpus via #365 at +0.85 illustrative). Title-implied register; no first-hand prose read.'
+          key_quotes:
+          - '"More Show Than Tell" (headline-implied: the new ChatGPT UI is presentation over substance)'
+          deal_disclosed: false
+          status: 'NEW this run (4 source URLs zero-hit repo-wide via git grep -F; "More Show Than Tell" zero-hit repo-wide; "intelligent-ui" zero-hit repo-wide; "John Semley" zero-hit repo-wide; "Isabella Ward" 10 pre-commit hits are career records (careers/journalists.yaml, editorial_changes.yaml) and Type B #1078 / Type A #1077 Sep-29 coverage records, not this Oct-6 piece; distinct from m991 (#1267, Sep-29 Dots launch product-relay soft register - opposite register, different peg), m916 (#1142, Sep-26 rogue-agent bounded absence - selection not tone), m946 (#1192, Oct-2 macOS CVE security-flaw register - different register), m1000 (#1282, Oct-2 Amazon datacenter NDA - different competitor and peg))'
+      supporting_arms:
+      - title: 'OpenAI Is Pissing Off a Bunch of Mathematicians - Again'
+        author: 'Isabella Ward'
+        date: '2026-10-06'
+        publication: 'WIRED (original; relay-attested)'
+        framing: 'research_ethics_accountability'
+        manual_illustrative_tone: -0.45
+        tone_note: 'Excerpt-attested adversarial register: OpenAI told mathematicians it plans to dump hundreds of unsolved-problem results to GitHub after the group asked for proper papers so results could be absorbed and used; the piece says the input was ignored.'
+      - title: 'Artificial Roasts AI''s Creators - and Sends a Dark Warning About Its Dangers'
+        author: 'John Semley'
+        date: '2026-10-06'
+        publication: 'WIRED (original; relay-attested)'
+        framing: 'culture_review_adversarial'
+        manual_illustrative_tone: -0.40
+        tone_note: 'Headline-implied adversarial culture register: the Guadagnino film depicts OpenAI leaders as reckless; the headline carries "roasts" and "dark warning".'
+      meta_arms:
+        carried_from: 'm988 (Type A #1262, NEW) - WIRED x Meta Muse-dossier accountability arm; carried un-rescored per #807'
+        arms:
+        - title: 'Muse Creates Detailed Profiles of All Your Friends and Family'
+          date: '2026-10-04'
+          publication: 'WIRED (accountability original)'
+          framing: 'accountability_original_system_prompt_extraction'
+          manual_illustrative_tone: -0.58
+          tone_note: 'Hard adversarial accountability register (m988, NEW at #1262): system-prompt extraction as evidentiary base; "overrides your safety training" lede-grade quote; "honestly pretty creepy" researcher kicker; Meta right-of-reply present.'
+          mechanism_ref: 'm988'
+        meta_band_mean: -0.58
+      asymmetry_scorer_result:
+        scorer: 'none (MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; scorer engine NOT run)'
+        target_entity: 'OpenAI WIRED Oct-7 intelligent-UI product-review original, product-review register (m1027 NEW)'
+        peer_entity: 'Meta WIRED carried Muse-dossier accountability register (m988)'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.30]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.58]
+        target_avg: -0.30
+        peer_avg: -0.58
+        illustrative_delta_openai_minus_meta: 0.28
+        delta_calc: '-0.30 - (-0.58) = +0.28'
+        delta_direction: 'The uniform payer-softening prediction FAILS on the product-review register: WIRED ran an adversarial product-review original (plus two more critical Oct-6 originals) on its Aug-2024 licensing partner within 48 hours. The illustrative delta (+0.28) shows the payer drawing a less-negative register than Meta, but the thesis test is the uniform softening prediction, not the delta: the deal predicts muted/critical-free OpenAI coverage; WIRED instead ran "More Show Than Tell" on the flagship product.'
+        methodology: 'n=1 vs n=1 (WIRED intelligent-UI review vs m988 Muse dossier); MANUAL ILLUSTRATIVE ONLY'
+        engine_run: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        is_significant: false
+        verdict: 'falsification_member_confirmed'
+        no_analysis_json_update: true
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'Excerpt-bounded evidence (0 browser.open per #503; WIRED originals paywalled/metered and not in search listings; the three pieces read through relay/provenance records; the Oct-7 register is title-implied; no first-hand prose read).'
+        - 'Register-follows-peg: the corpus holds the in-corpus Oct-6 Altman/Ive dev-day aspirational piece (+0.85, #365 Type B) and the Sep-29 Dots launch product-relay (0.00, m991) - WIRED is NOT uniformly hard on the payer. The member claim is narrowly on the product-review/culture register, not on WIRED being adversarial to OpenAI overall.'
+        moderate:
+        - 'News-value: the flagship ChatGPT redesign is among the world''s most-used consumer AI products; a critical review is core tech-press beat work. The deal predicts marginal-case softening; a flagship redesign review is not a marginal case.'
+        - 'Headline-implied scoring: the -0.30 rests on the headline register, not first-hand prose; the body may moderate or sharpen.'
+        - 'Comparator peg differs (consumer-agent trust vs product-design review); both sit in the accountability-critical register.'
+        weak:
+        - 'Illustrative tones hand-assigned at excerpt level; no empirical distribution exists.'
+      counterevidence:
+      - 'm991 (#1267): WIRED Sep-29 Dots launch product-relay on OpenAI (0.00, soft constructor register) - thesis-CONSISTENT for payer softness on the product-relay peg. The falsification is register-bounded (product-review/culture), not blanket.'
+      - '#365 Type B: WIRED Oct-6 Altman/Ive AI-device dev-day aspirational piece (+0.85 illustrative) - WIRED applies therapeutic/superlative register to OpenAI hardware on the launch-day peg. Second pole of register-selective coverage.'
+      - 'm916 (#1142): WIRED bounded-absence silence on the Sep-26 rogue-agent government disclosure - selection-level softness on the partner''s escalation episode. Stands as the contrasting selection pole.'
+      falsification_family_member: true
+      falsification_family: 'SIXTY-FIRST falsification-family member (ledger 60->61): this run tests the uniform payer-softening prediction at the publication level (wired.yaml competitor_relationships.openai coverage_prediction "softer", from the Conde Nast x OpenAI multi-year content licensing deal, Aug 20 2024, Reuters; $1-5M/yr estimate) on the Oct-6/7 product-review peg, and the prediction FAILS on the product-review register: WIRED ran an adversarial product-review original on the flagship ChatGPT redesign ("The New ChatGPT Is More Show Than Tell", Oct 7) plus two more critical Oct-6 originals (Isabella Ward mathematicians GitHub-dump; John Semley Artificial film roast) on the deal partner within 48 hours. Domain-bounded to WIRED''s product-review/culture register on OpenAI in the Oct-6/7 window; m991 (Sep-29 Dots product-relay, 0.00) and the #365 aspirational dev-day piece (+0.85) stand as the register-bounded counterevidence (register-follows-peg, not blanket adversarialism). The #1143 temporal-replication precedent does not block: three WIRED originals on a fresh product-review peg, not a re-score. SECOND WIRED publication-level member (after the FIFTY-SIXTH, m1000 #1282 Amazon datacenter-NDA); FIRST falsification pin on the product-review register. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      falsification_ledger: '61'
+      verdict: 'falsification_member_confirmed: the naive uniform payer-softening prediction FAILS at WIRED on the Oct-6/7-2026 product-review peg. The Conde Nast x OpenAI licensing deal (Aug 2024, in-corpus, active) predicts softer/critical-free OpenAI coverage; WIRED instead ran an adversarial product-review original on the flagship ChatGPT redesign at less-than-half the carried Meta-dossier hardness (illustrative delta +0.28 vs the carried m988 -0.58), plus two more critical Oct-6 originals on the partner. Domain-bounded to the product-review/culture register per the confounders; m991 and #365 stand as the register-bounded counterevidence. SIXTY-FIRST falsification-family member (ledger 60->61). MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      ledger: '61'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule (tone values hand-assigned register positions; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict falsification_member_confirmed on the domain-bounded peg; NOT artifact-grade; no_analysis_json_update true). Correlation does not establish causation; hypothesis-generating only.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      research_method: '4 browser.search query sets this run (The Verge OpenAI annualized-revenue sweep - no Verge original surfaced; The Verge OpenAI x Atlassian sweep - no Verge original surfaced; Verge OpenAI October 2026 sweep - Sora pieces only, no payer publication+competitor pair selected; "wired.com" OpenAI October 2026 article - SELECTED: the Oct-7 intelligent-UI review via the wesearch.press provenance record plus the Oct-6 mathematicians and Artificial pieces), 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps: 4 source URLs zero-hit repo-wide via git grep -F; "More Show Than Tell" zero-hit repo-wide; "intelligent-ui" zero-hit repo-wide; "John Semley" zero-hit repo-wide; "Isabella Ward" 10 pre-commit hits are career records and Type B #1078 / Type A #1077 Sep-29 coverage records, not this Oct-6 piece; max numeric mechanism_id 1026 pre-commit; zero numeric/underscore/dash one-zero-two-seven mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit. The #1143 temporal-replication precedent does not block (three WIRED originals on a fresh product-review peg, not a re-score). All URLs copied verbatim from Full-URL listings; the wired.com canonical URL is verbatim-copied from the third-party provenance record (NOT constructed); no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_1327 files on disk pre-commit (glob); no "Type A #1327" in git log pre-commit (--grep); max numeric mechanism_id 1026 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-two-seven mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "## #1327" zero-hit in iteration-log pre-commit; README stats 75530/1651 pre-commit; no #1327 row in README/ARCHITECTURE test tables pre-commit; 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F); "More Show Than Tell" zero-hit repo-wide pre-commit; "intelligent-ui" zero-hit repo-wide pre-commit; "John Semley" zero-hit repo-wide pre-commit; block key zero-hit repo-wide pre-commit; distinct from m991 (#1267, Sep-29 Dots launch product-relay soft register - opposite register), m916 (#1142, Sep-26 rogue-agent bounded absence - selection not tone), m946 (#1192, Oct-2 macOS CVE security-flaw register - different register), m1000 (#1282, Oct-2 Amazon datacenter NDA - different competitor and peg), and #1078/#1077 (Sep-29 Isabella Ward coverage, different peg).'
+      rotation_transparency: 'Iteration #1327 Type A is the THIRD leg of the 1325-1329 window (D #1325 -> E #1326 -> A #1327 -> B #1328 -> C #1329 per #565 anchor + rotation guard; #1326 Type E main ed8d8652/anchor 2e6c1bf2/doc-sync 9d374ff1/log-hash 2413fc66, #1325 Type D main cc24b13b/anchor 54a68697/doc-sync fa04cdb2/log-hash 00385ffd, each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1327 files on disk; no "Type A #1327" in git log; max numeric mechanism_id 1026 pre-commit; zero numeric/underscore/dash one-zero-two-seven mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F); no #1327 row in README/ARCHITECTURE test tables pre-commit; README stats 75530/1651 pre-commit; fortieth direction-claim form absent in profiles/ pre-commit; forty-eighth through sixtieth member-claim forms present; sixty-first member-claim form absent pre-commit. Guard lifecycle: #1326''s max-1026 + zero-one-zero-two-seven + no-Type-A-#1327-in-git-log + no-sixty-first pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1327 test file); #1326''s fortieth-absent and forty-eighth-through-sixtieth-intact guards stay green. This run lands mechanism 1027 as the sixty-first falsification-family member (ledger 60->61). Next window leg #1328 Type B.'
+      test_file: 'tests/test_type_a_1327_wired_openai_oct07_chatgpt_intelligent_ui_review_vs_carried_meta_dossier_oct08_11pm.py'
+      in_flight: '#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched.'
   meta:
     financial_tie: none
     estimated_value: $0
