@@ -938,23 +938,24 @@ class TestIterationLog1349:
 
 class TestStalenessPins1349:
     def test_1348_guard_lifecycle_post_commit(self):
-        # Post-terminal-followup form: 23 of the 25 pass; the two that
-        # fail BY DESIGN are test_no_type_c_1349_in_git_log_pin (the
-        # #1191-class self-trip: this run's own main commit carries
-        # "Type C #1349"; re-pinned green in the terminal log-hash
-        # followup per #721, in BOTH the #1349 and #1348 files per the
-        # #1292 precedent) and test_1041_numeric_absent_in_profiles
-        # (mechanism 1041 lands in profiles/ this run; the #1272-class
-        # forward-guard expiry - the next-number guard is consumed by
-        # the landing; stays red permanently). The underscore/dash
-        # 1041 pins stay green (the landed number appears only as the
-        # colon form per the designed keying). test_ledger_holds_at_64-
-        # _in_block stays GREEN (m1041 is a verification leg, not a
-        # family member). The member and direction pins stay GREEN.
+        # Post-terminal-followup form: 24 of the 25 pass; the one that
+        # fails BY DESIGN and permanently is
+        # test_1041_numeric_absent_in_profiles (mechanism 1041 lands in
+        # profiles/ this run; the #1272-class forward-guard expiry -
+        # the next-number guard is consumed by the landing; stays red
+        # permanently). The #1191-class self-trip
+        # (test_no_type_c_1349_in_git_log_pin) flips GREEN post-repin:
+        # PRED_MAIN_1349 holds this run's main sha in BOTH the #1349
+        # and #1348 files per #721/#1292, and every "Type C #1349"
+        # commit is a descendant of it. The underscore/dash 1041 pins
+        # stay green (the landed number appears only as the colon form
+        # per the designed keying). test_ledger_holds_at_64_in_block
+        # stays GREEN (m1041 is a verification leg, not a family
+        # member). The member and direction pins stay GREEN.
         # Deselected pre-commit (verified only post-terminal-followup).
         res = _class_run(A1348_FILE, "TestGuardLifecycle1348")
         assert res.returncode != 0, res.stdout[-2000:]
-        assert "2 failed, 23 passed" in res.stdout, res.stdout[-2000:]
+        assert "1 failed, 24 passed" in res.stdout, res.stdout[-2000:]
         assert "test_1041_numeric_absent_in_profiles" in res.stdout, \
             res.stdout[-2000:]
 
