@@ -18588,3 +18588,11 @@ SEVEN result rows = SEVEN re-surfaces, ZERO new-to-corpus verbatim URL keys this
 ### Test file
 
 - tests/test_type_e_1341_podcast_sentiment_191st_verification_oct09_10am.py
+
+### Correction addendum - #1341 scout EHE set reconciliation (post-hoc, Oct 9 ~10:15 AM PDT)
+
+The delegated scout's EHE track returned 8 distinct URLs. Post-hoc corpus verification (git grep -F) shows the scout's "all re-surfaces" characterization was WRONG for three of them - all three are NEW-to-corpus verbatim URL keys (zero hits pre-#1341):
+- https://www.techradar.com/vpn/vpn-privacy-security/we-dont-want-another-damaged-generation-inside-the-grassroots-campaign-demanding-a-ban-on-smart-glasses (TechRadar feature on the grassroots smart-glasses ban campaign, uses EHE images; crawled ~Sep 13)
+- https://www.snapchat.com/@tmzsnap/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYZWV2ZWJieWVsAaCSV58BAaCSV57SAAAAAQ (TMZ Snapchat Spotlight repost of EHE Underground ad photos; ~3 weeks old per comment timestamps)
+- https://worldartutopia.com/smart-glasses-protest-london/ (World Art Utopia photo page, 3 Underground sticker photos shared by EHE Sep 11)
+The other five scout URLs were correctly in-corpus (huckmag pervert-glasses campaign piece, engadget bus-stop campaign, softonic Epstein-poster piece, designtaxi 33476 Kylie-lenticular thread, LinkedIn privacy roundup). All three new keys are secondary coverage or reposts of the September Underground sticker campaign - no new primary campaign motif, no new campaign phase; the 60-day hold and "no new primary campaign phase" conclusions from the main run stand. Lesson recorded: the scout asserted re-surface status without running the corpus novelty grep; future scouts must verify each surfaced URL with git grep -F before characterizing it as re-surface vs new.
