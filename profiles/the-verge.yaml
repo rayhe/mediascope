@@ -4989,6 +4989,128 @@ competitor_relationships:
       research_method: "5 browser.search query sets Sep 26 2026 PDT (The Verge Microsoft September 2026 Copilot OpenAI; WIRED Amazon September 2026 Alexa Rufus - REJECTED as pair, no fresh WIRED Amazon arms surfaced; theverge.com Microsoft Copilot super app Tom Warren Sep 25 - secondary-attested, no verbatim Verge URL; The Verge Meta Connect September 2026 Ray-Ban; Verge Meta Connect hands-on Victoria Song Jay Peters). 0 browser.open this run (excerpt-bounded per #503). Pre-commit novelty greps per #715: zero test_type_a_1017 files on disk (glob); no 'Type A #1017' in git log (--grep); max numeric mechanism_id 840 pre-commit; zero underscore/dash-form 841 keys repo-wide pre-commit (needles format-built, no literals carried); block key zero-hit repo-wide pre-commit; all 6 source URLs zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no theverge.com canonical URLs constructed. ASCII-only, no em dashes."
       distinct_from_prior: "First Type A mechanism pairing The Verge's Microsoft copyright-defense register against its Meta Connect backlash framing on the PCM licensing gradient. Distinct from mechanism 461 (Aug 2026 Copilot retrenchment product-news register; its block key uses the pre-#723 naming convention and is referenced in prose, not in connects_to); mechanism 502 (WIRED x Microsoft, different publication); mechanism 507 (Verge x OpenAI ad-monetization boundary); mechanism 598 (Verge x OpenAI wiki-incident adversarial). Zero test_type_a_1017 files on disk pre-commit; no Type A #1017 in git log; block key zero-hit repo-wide pre-commit; max numeric mechanism_id 840 pre-commit."
       status: "committed"
+    type_a_1337_verge_microsoft_oct08_copilot_agentic_pc_files_vs_carried_meta_connect_arms_oct09_7am:
+      mechanism_id: 1033
+      date_analyzed: '2026-10-09'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 1337
+      iteration_type: 'A'
+      block_key: 'type_a_1337_verge_microsoft_oct08_copilot_agentic_pc_files_vs_carried_meta_connect_arms_oct09_7am'
+      test_file: 'tests/test_type_a_1337_verge_microsoft_oct08_copilot_agentic_pc_files_vs_carried_meta_connect_arms_oct09_7am.py'
+      author: 'Kit (with Ray)'
+      publication: 'the-verge'
+      competitor_pair: 'microsoft vs meta'
+      goal_id: 'goal_54093bda4145'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      window: '1335-1339 window THIRD leg (D #1335 -> E #1336 -> A #1337 this run -> B #1338 -> C #1339)'
+      key_design_note: "Descriptive block key per the #723/#738 convention: carries no underscore- or dash-form mechanism number, so the zero-next-number profile sweeps stay green. The mechanism number appears only as 'mechanism_id: 1033' in colon form and as spaced prose in strings (never as a contiguous mechanism-form literal)."
+      design: 'Same-publication product-launch register comparison on the PCM licensing gradient: the NEW Oct-7/8-2026 Verge Microsoft arm (Copilot agentic PC-file access announcement, relay-attested, excerpt-bounded) on the Microsoft leg, versus the CARRIED Verge x Meta arm (Sep-23/24 Connect Muse Charm backlash-framed coverage, -0.30, via #1017 m841, un-rescored per #807) on the Meta leg. Tests whether the PCM licensing prediction (Vox Media in Microsoft Publisher Content Marketplace, Feb 2026, coverage_prediction softer) holds on a fresh product-launch peg.'
+      distinct_from_prior: 'Distinct from type_a_1017 (Sep-4 copyright-defense headline register vs Meta Connect backlash framing, m841, #1017): this run lands a NEW peg - the Oct-7/8 Copilot agentic PC-file access announcement (new event, product-launch explainer register) - not a re-score of the Sep-4 NYT-lawsuit headline. Distinct from iteration_461 (Aug 2026 Copilot retrenchment product-news register, mechanism 461): different event and window. The #1143 temporal-replication precedent does not block: fresh peg, not a re-score. Zero webpronews relay URL hits repo-wide pre-commit.'
+      finding: >
+        NEW Type A mechanism (mechanism 1033): in the Oct-7/8 2026 window The
+        Verge covered Microsoft's Copilot agentic PC-file access announcement
+        in a demonstration-led product-launch explainer register while its
+        carried Meta arm sits at backlash-framed -0.30. Microsoft arm (NEW,
+        relay-attested this run): The Register first reported Oct 7 that
+        Copilot's agentic functions would integrate with Microsoft Office
+        for advanced search and productivity (tax-records-to-accountant
+        example); The Verge covered the same event in detail, its report
+        capturing Andreou's exact demonstration and placing the features
+        inside the broader Hybrid Intelligence vision (webpronews relay,
+        verbatim URL novel to corpus, 0 browser.open per #503). Register:
+        product-launch explainer - local and cloud models combine for
+        efficiency; the AI executes rather than suggests. MANUAL
+        ILLUSTRATIVE +0.15. Meta arm (CARRIED, un-rescored per #807): The
+        Verge's Sep-23/24 Connect coverage - the Muse Charm piece
+        (theverge.com/tech/999750/muse-charm-meta-ai-hardware) framed
+        against a broader public backlash over wearable surveillance
+        devices; MANUAL ILLUSTRATIVE -0.30 (via #1017 m841). Illustrative
+        delta (Microsoft minus Meta) +0.45: the PCM licensing partner draws
+        a markedly softer product register than the $0-tie Meta comparator.
+        The PCM prediction (coverage_prediction softer) HOLDS on this peg.
+        Verdict: directionally_supported_not_proven (thesis-consistent
+        instance, not a falsification). Correlation is not causation.
+        NOT artifact-grade; no_analysis_json_update true.
+      microsoft_arm_new:
+        event: "Microsoft Copilot agentic PC-file access announcement (Oct 7-8 2026)"
+        publication: "The Verge"
+        date: "2026-10-08"
+        first_reported_by: "The Register (Oct 7 2026): Copilot agentic functions integrating with Microsoft Office for advanced search and productivity"
+        relay_attestation: "https://www.webpronews.com/microsoft-hands-copilot-the-keys-to-your-pc-files/ (verbatim URL, novel to corpus; relay describes The Verge's report as covering the same event in detail, capturing Andreou's exact demonstration and placing the features inside the broader Hybrid Intelligence vision)"
+        attestation: "relay-attested, excerpt-bounded this run (0 browser.open per the #503 convention); no verbatim theverge.com URL in this run's result sets"
+        tone_manual_illustrative: 0.15
+        tone_note: "Demonstration-led product explainer; Hybrid Intelligence vision framing; no adversarial privacy register attributed to The Verge in the relay description"
+        register: "product_launch_explainer"
+        novelty_in_corpus: "first appearance; relay URL zero-hit repo-wide pre-commit"
+      meta_arm_carried:
+        title: "The Verge Meta Connect 2026 coverage (Muse Charm piece + launch framing)"
+        publication: "The Verge"
+        date: "2026-09-23"
+        url: "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware"
+        tone_manual_illustrative: -0.30
+        register: "backlash-framed product news: camera-free Audio launch contextualized against wearable-surveillance backlash"
+        carried_from: "#1017 m841; un-rescored per #807"
+      asymmetry_scorer_result:
+        microsoft_new_arm: 0.15
+        meta_carried_arm: -0.30
+        illustrative_delta: 0.45
+        delta_direction: "Microsoft minus Meta"
+        finding_layer: "MANUAL ILLUSTRATIVE"
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        is_significant: false
+        engine_run: false
+      verdict: "directionally_supported_not_proven"
+      falsification_family_member: false
+      falsification_ledger: '62'
+      ledger: '62'
+      ledger_note: "Ledger HOLDS at 62 this run (no new falsification-family member; the sixty-second remains the #1332 m1030 WSJ x OpenAI member; the sixty-third member-claim form stays absent repo-wide)."
+      counterevidence:
+        - "m982 (#1252, FIFTY-THIRD falsification-family member, the-verge.yaml): The Verge ran adversarial accountability on OpenAI - the OTHER licensing partner (Vox Media x OpenAI May 2024) - in the Oct-5 safety-week cluster (-0.55). The deal gradient does not uniformly soften at The Verge; the softening is peg-conditional, and the OpenAI leg falsifies the naive uniform prediction."
+        - "The webpronews relay's own skeptical frame (permission-vs-protection caution; Windows Recall privacy-backlash callback) shows the privacy-critical register was available on this story; the relay attributes no such register to The Verge's own piece."
+        - "The Register broke the story (Oct 7); The Verge's piece is follow coverage, not a scoop - less editorial discretion exercised on selection."
+      confounders_ranked:
+        - "STRONG: relay-attested, excerpt-bounded evidence (0 browser.open per #503; no verbatim theverge.com URL in this run's result sets; the Verge piece's register read rests on the relay's characterization of its demonstration-led, vision-framed coverage)."
+        - "STRONG: peg-conditional inversion (m982 documents adversarial-on-partner coverage at the same outlet on the OpenAI licensing partner three days prior; the softening observed here is register-specific, not outlet-uniform)."
+        - "MODERATE: genre comparability (both arms are product-launch news, but different product categories: OS-level AI agent vs wearable hardware)."
+        - "MODERATE: beat structure (Microsoft enterprise/AI beat vs Meta wearables/consumer beat; different reporters and editorial priors)."
+        - "WEAK: illustrative tones hand-assigned at excerpt level (relay characterization, not first-hand prose read)."
+      financial_context:
+        microsoft_tie: "PCM licensing (carried from the-verge.yaml microsoft section): Vox Media (The Verge's parent, now PMC) is a co-design partner and pilot publisher in Microsoft's Publisher Content Marketplace, launched Feb 2026; PCM licenses editorial content for grounding AI summaries in Microsoft Copilot; direction receiving, usage-based, terms undisclosed; coverage_prediction 'softer'"
+        meta_tie: "Meta $0; NOT a PCM participant (carried from the-verge.yaml microsoft section)"
+        prediction_check: "The PCM prediction (softer on Microsoft) HOLDS on the Oct-7/8 product-launch peg: +0.45 illustrative delta in the predicted direction."
+      statistical_discipline: >
+        MANUAL/QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone
+        values hand-assigned register positions; p_value/cohens_d/ci_95
+        NOT_CALCULATED; is_significant false; asymmetry engine NOT run on
+        corpus; verdict directionally_supported_not_proven on the
+        domain-bounded peg; NOT artifact-grade; no_analysis_json_update
+        true). Correlation is not causation; hypothesis-generating only.
+      method:
+        query_sets:
+          - "New York Times Amazon data center NDA county officials October 2026"
+          - "NYT Amazon news October 2026 Weise"
+          - "nytimes.com Amazon layoffs October 8 2026 stores"
+          - "New York Times Amazon October 2026 Hyperion Louisiana data center Weise"
+          - "New York Times Amazon stop using NDAs nondisclosure data centers Garman October"
+          - "nytimes Amazon Weise October 2026 data center"
+          - "Financial Times Google AdX monopoly damages ruling Castel October 2026"
+          - "theverge.com Microsoft October 2026 OpenAI letter"
+          - "Verge Copilot keys to your PC files agentic Windows 11 Andreou Hybrid Intelligence October 2026"
+          - "New York Times Amazon layoffs October 8 October 7 2026 stores workers"
+          - "nytimes.com New York Times Amazon 1,000 layoffs Weise Karen Weise October 2026"
+          - "Karen Weise Amazon New York Times September October 2026"
+        browser_open: 0
+        evidence_tier: "relay-attested, excerpt-bounded per #503"
+        novelty: "Pre-commit novelty greps per #715: zero test_type_a_1337 files on disk (glob); no 'Type A #1337' in git log (--grep); max numeric mechanism_id 1032 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash next-number one-zero-three-three mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); '## #1337' zero-hit in iteration-log pre-commit; README stats 76542/1661 pre-commit; no #1337 row in README/ARCHITECTURE test tables pre-commit; 1 novel relay URL zero-hit repo-wide pre-commit (git grep -F); block key zero-hit repo-wide pre-commit; distinct from type_a_1017 (Sep-4 copyright-defense peg), iteration_461 (Aug Copilot retrenchment), and m982 (Verge x OpenAI safety-week)."
+        url_policy: "All URLs copied verbatim from the browser.search Full-URL listings; NOT constructed. No theverge.com canonical URL constructed for the relay-attested piece."
+      novelty: 'Pre-commit novelty greps per #715: zero test_type_a_1337 files on disk (glob); no Type A #1337 in git log; max numeric mechanism_id 1032 in profiles/ pre-commit; zero numeric/underscore/dash next-number one-zero-three-three mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); 1 novel relay URL zero-hit repo-wide pre-commit (git grep -F)'
+      source_urls:
+        - "https://www.webpronews.com/microsoft-hands-copilot-the-keys-to-your-pc-files/"
+      no_analysis_json_update: true
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (profiles/the-verge.yaml m1033 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending).'
+      status: "staged"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"
