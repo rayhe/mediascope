@@ -453,12 +453,13 @@ class TestRotationGuard1341:
 
     def test_window_legs_in_order(self):
         # Only the committed predecessors are asserted here: #1340
-        # Type D OPENED the 1340-1344 window (pre-commit novelty: no
-        # Type E #1341 commit exists yet). #1341 is this run; #1342
-        # Type A is the next leg.
+        # Type D OPENED the 1340-1344 window. #1341 is this run; #1342
+        # Type A is the next leg. (The #1191-class self-trip for this
+        # run's own commits lives in TestGuardLifecycle1341's
+        # ancestor-form pin, re-pinned in the terminal log-hash
+        # followup per #721.)
         out = _git("log", "--format=%s").stdout
         assert "Type D #1340" in out
-        assert "Type E #1341" not in out
 
     def test_single_test_type_e_1341_file(self):
         files = [
