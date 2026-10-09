@@ -235,9 +235,8 @@ OWN_BASENAME = (
     "verification_oct08_6pm.py"
 )
 
-# Staged 0*40 placeholder-only per #565; patched to the main-commit
-# sha in the anchor followup.
-ANCHORED_SHA = "0" * 40
+# Patched per #565 in the anchor followup (main commit sha).
+ANCHORED_SHA = "a8ac5238faadeed657069bc3b3c01729207b8165"  # patched to main commit a8ac5238 per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
