@@ -135,7 +135,7 @@ PRED_MAIN_1343 = "d3252af1d0ee6bb0e25aa8690c8ad86d47211969"  # re-pinned to #134
 # #1344's main commit (full sha), for the ancestor-form no-Type-C-#1344
 # pin. Staged 0*40 placeholder-only per #721; re-pinned in #1344's
 # terminal log-hash followup per #721.
-PRED_MAIN_1344 = "0" * 40  # re-pinned to #1344 main sha in the anchor followup per #721/#1292
+PRED_MAIN_1344 = "df15141d6a0276a1779bf4ecf7c6352f93423408"  # re-pinned to #1344 main sha in the anchor followup per #721/#1292
 
 # The #1342 window-predecessor file, for the staleness pin on its
 # guard-lifecycle class (max id 1036; zero next-number

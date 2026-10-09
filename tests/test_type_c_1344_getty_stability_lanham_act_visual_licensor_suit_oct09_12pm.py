@@ -105,7 +105,7 @@ TOP_KEY = (
 
 # Pre-commit placeholder per #565; patched to the main commit sha in
 # the anchor followup.
-ANCHORED_SHA = "0" * 40  # 0*40 pre-commit; patched to the main-commit sha in the anchor followup per #565
+ANCHORED_SHA = "df15141d6a0276a1779bf4ecf7c6352f93423408"  # 0*40 pre-commit; patched to the main-commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -135,7 +135,7 @@ PRED_MAIN_1345 = "0" * 40
 # Own-run main-commit placeholder per #721: 0*40 pre-commit, re-pinned
 # to this run's main sha in the terminal log-hash followup (in BOTH
 # this file and the #1343 file per the #1292 precedent).
-PRED_MAIN_1344 = "0" * 40  # re-pinned to #1344 main sha in the terminal log-hash followup per #721/#1292
+PRED_MAIN_1344 = "df15141d6a0276a1779bf4ecf7c6352f93423408"  # re-pinned to #1344 main sha in the anchor followup per #721/#1292
 
 # #1343's test file (for the guard-lifecycle staleness pins).
 A1343_FILE = (
