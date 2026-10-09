@@ -29544,3 +29544,89 @@ will_shanklin_type_b:
       source_urls:
       - https://www.engadget.com/2267210/meta-muse-ai-agent-smart-glasses/
       - https://www.engadget.com/2254121/the-iphone-duo-lacks-variable-aperture-and-a-dedicated-telephoto-camera/
+katie_paul_type_b:
+  name: Katie Paul
+  publication: reuters
+  mechanism_ids: [1025]
+  notes: 'Type B #1323 (Oct 8 2026): mechanism 1025, NOT a falsification-family member (ledger holds at 60) - FIRST dedicated Type B pair on Katie Paul (Reuters; zero katie_paul_type_b keyed entry pre-commit; mention-level hits only: the #664/#667 publication-level mechanisms m633/m634, the Jul-2 add-5-journalists profile entry, one scout-rejection note, disclosed). TEMPORAL REPLICATION of the thirteenth member''s writer-level pattern per the #1143 precedent: Paul''s Sep-22-2026 "human concierge" Muse accountability exclusive (-0.45 MANUAL ILLUSTRATIVE) runs the same adversarial-on-payer register as her carried Sep-8-2026 Muse-launch accountability arm (-0.45, m633, un-rescored per #807), 14 days apart, same writer, same outlet. Illustrative delta 0.00 - register constancy. The same writer/partner prediction test (Reuters, paid by Meta under the Oct-25-2024 multiyear AI licensing deal m633, goes softer on payer Meta) was already counted at #664 as the thirteenth member; a same-writer temporal replication is not a new prediction test. The finding STRENGTHENS the thirteenth member. Excerpt-tier per #503, 0 browser.open.'
+  competitor_coverage:
+    type_b_1323_katie_paul_reuters_human_concierge_vs_muse_launch_oct08_7pm:
+      block_key: type_b_1323_katie_paul_reuters_human_concierge_vs_muse_launch_oct08_7pm
+      mechanism_id: 1025
+      iteration: 1323
+      iteration_type: B
+      type: B
+      date: '2026-10-08 19:00 PDT'
+      test_file: tests/test_type_b_1323_katie_paul_reuters_human_concierge_vs_muse_launch_oct08_7pm.py
+      author: 'Kit (with Ray)'
+      goal_id: goal_54093bda4145
+      job_id: mediascope-daily-iteration
+      scheduled_job_id: mediascope-daily-iteration
+      journalist: Katie Paul
+      publication: reuters
+      window: '1320-1324 window FOURTH leg (D #1320 -> E #1321 -> A #1322 -> B #1323 -> C #1324)'
+      design: 'Type B journalist tracking, within-journalist within-entity register-constancy pair (the #978 precedent): Katie Paul (Reuters, primary Meta beat) on Meta''s Sep-22-2026 "human concierge" Muse accountability exclusive (NEW arm) vs her carried Sep-8-2026 Muse-launch accountability arm (m633, #664, un-rescored per #807), same writer, same outlet, 14 days apart, both accountability-scoop pegs on the payer. Reuters is PAID BY Meta under the Oct-25-2024 multiyear AI news licensing deal (m633, thirteenth member at #664, fourteenth at #667 publication level, ACTIVE per #599/#609); the naive prediction (paid counterparty goes softer on payer) FAILS at the writer level twice. MANUAL ILLUSTRATIVE scoring only per the Aug 28 2026 standing rule.'
+      financial_context: 'PAYER LEG: Meta PAYS Reuters under the Oct-25-2024 multiyear AI news licensing deal (m633, formalized Type C #664 as the thirteenth falsification-family member; #667 added the fourteenth at publication level; ACTIVE per the #599/#609 convention - bounded absence of renewal/termination reporting per iteration-492). No Reuters x OpenAI/competitor AI licensing deal on record (bounded absence). The naive payer-softening prediction (Reuters goes softer on payer Meta) is the live prediction on this pair - and it FAILS: Paul runs hard accountability on the payer in both arms. This run does not re-test the prediction for ledger purposes (already counted at #664); it temporally replicates the writer-level pattern.'
+      new_arm:
+        title: 'Exclusive: Meta testing a ''human concierge'' for its new personal AI agent, Muse'
+        date: '2026-09-22'
+        outlet: reuters
+        author_byline: 'Katie Paul'
+        entity: meta
+        url: https://wixx.com/2026/09/22/exclusive-meta-testing-a-human-concierge-for-its-new-personal-ai-agent-muse/
+        url_note: 'wixx.com Reuters-wire relay URL copied verbatim from this run''s Full-URL listing (search index 0); byline "By Katie Paul" and dateline "NEW YORK, Sept 22 (Reuters)" verbatim in relay body; the reuters.com canonical did not surface in search listings (no URL constructed per policy); URL zero-hit repo-wide pre-commit (git grep -F)'
+        evidence_tier: 'EXCERPT-TIER (0 browser.open per #503; short verbatim phrases via search-result excerpts; byline and dateline attested via relay body)'
+        key_quotes:
+        - 'Scoop frame (short phrase): "testing a ''human concierge'' for its new personal AI agent, Muse"'
+        - 'Undisclosed handling (short phrase): "having human contractors quietly handle some of the phone calls"'
+        - 'Employee privacy concern (short phrase): "We are one bug away from unnecessary information being leaked to human callers"'
+        - 'Company admission (short phrase): "it was a miss"'
+        - 'Rollback (short phrase): "rolled back this feature"'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        tone_reading: 'Hard accountability register: a Reuters exclusive built on internal company posts, documenting undisclosed human handling of Muse phone calls, employee privacy concerns, a racist-reference incident, a VP admission ("it was a miss"), and a rollback. The payer (Meta) is the accountability target; the register matches the carried Sep-8 arm exactly.'
+        status: 'NEW this run (headline "human concierge" + URL zero-hit repo-wide pre-commit)'
+      carried_arm:
+        title: 'Meta launches personal AI agent Muse (Reuters Sep-8 accountability register)'
+        date: '2026-09-08'
+        outlet: reuters
+        author_byline: 'Katie Paul'
+        entity: meta
+        carried_from: 'm633'
+        carry_note: 'Carried un-rescored per #807 from the Type C #664 block (thirteenth falsification-family member); tone -0.45 MANUAL ILLUSTRATIVE as banked at #664.'
+        key_quotes:
+        - 'Accountability frame (short phrase): "despite internal concerns that the technology mismanages its access to sensitive personal data"'
+        - 'Safety stakes (short phrase): "RAISING THE STAKES FOR SAFETY"'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        tone_reading: 'Hard accountability register per #664: the Muse-launch piece leads with internal concerns about sensitive personal data and frames the launch as raising safety stakes - adversarial on the payer at launch.'
+        status: 'CARRIED from m633 (#664), un-rescored per #807'
+      scorer_delta_MANUAL_ILLUSTRATIVE: 0.0
+      illustrative_delta_new_minus_carried: 0.0
+      delta_reading: 'Illustrative delta (new minus carried) 0.00: register constancy. Paul runs the hard accountability register on Meta''s Muse in both the Sep-8 launch arm (-0.45: internal data-mismanagement concerns, safety stakes) and the Sep-22 "human concierge" exclusive (-0.45: undisclosed contractor call handling, employee privacy concerns, "it was a miss", rollback). Same writer, same outlet, 14 days apart, both accountability scoops on the payer. The paid counterparty''s lead Meta reporter does not soften across the launch window.'
+      confounders:
+      - 'Within-entity design: both arms cover Meta, so the pair tests register constancy, not a cross-entity differential - it cannot speak to whether Paul treats competitors differently. Ranked STRONG (design boundary).'
+      - 'Same-news-cycle: both arms are Muse-launch-window scoops 14 days apart; the adversarial register may track the story type (undisclosed human handling is inherently accountability news) rather than a stable writer trait. Ranked STRONG.'
+      - 'Excerpt-bounded evidence: 0 browser.open per #503; the new arm read via search-result excerpts and the wixx.com relay body only; the Reuters canonical was not read first-hand. Ranked MODERATE.'
+      - 'Carried-arm discipline: the Sep-8 tone is carried un-rescored per #807 from #664''s excerpt read; any drift in the #664 reading propagates. Ranked MODERATE.'
+      - 'Wire-service genre: both arms are straight-news accountability scoops (not opinion, not reviews) - the genre confound is favorable here. Ranked WEAK (favorable).'
+      counter_evidence:
+      - 'The Sep-22 piece carries Meta''s response (the VP acknowledged "it was a miss" and the feature was rolled back) - balanced accountability reporting, not a one-sided hit piece; the register is adversarial but the piece is fair.'
+      - 'Paul also runs neutral/product Meta coverage (e.g., the Jun-8 "Meta funds skilled trades jobs program for AI data center buildout" corporate-news relay) - the accountability register is peg-driven, not a fixed anti-Meta writer trait, bounding a writer-bias reading.'
+      - 'Reuters'' Sep 4-10 OpenAI arms (#667, publication level, different writers) ran softer - the outlet-level cross-entity differential exists, but it is not Paul''s byline; this pair makes no claim about it.'
+      connects_to: [633, 634]
+      verdict: 'directionally_supported_not_proven'
+      finding: 'Katie Paul (Reuters) runs the hard accountability register on payer Meta twice in 14 days: the carried Sep-8-2026 Muse-launch arm (-0.45 MANUAL ILLUSTRATIVE, m633: "despite internal concerns that the technology mismanages its access to sensitive personal data", "RAISING THE STAKES FOR SAFETY") and the NEW Sep-22-2026 "human concierge" exclusive (-0.45 MANUAL ILLUSTRATIVE: "having human contractors quietly handle some of the phone calls", "We are one bug away from unnecessary information being leaked to human callers", "it was a miss", rollback). Illustrative delta 0.00 - register constancy. TEMPORAL REPLICATION of the thirteenth member''s writer-level pattern per the #1143 precedent (NOT a new falsification-family member; ledger holds at 60): the same writer/partner prediction test was already counted at #664. The finding STRENGTHENS the thirteenth member - the paid counterparty''s lead Meta reporter ran hard accountability twice in the Muse launch window. MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; NOT artifact-grade; no analysis.json update.'
+      falsification_family: 'NOT a falsification-family member: the falsification family tests the uniform payer-softening prediction''s FAILURES, and this run''s prediction test (Reuters, paid by Meta under m633, goes softer on payer Meta) was already counted at #664 as the thirteenth member, with Paul''s Sep-8 piece as the falsification pin. Per the #1143 precedent, a same-writer temporal replication is not a new prediction test - Paul''s Sep-22 "human concierge" exclusive is a second instance of the same writer-level pattern (adversarial accountability on the payer), 14 days later. The ledger holds at 60; the finding strengthens the thirteenth member rather than advancing the count. Correlation, not causation. No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 60). NOT artifact-grade.'
+      falsification_family_member: false
+      falsification_ledger: 60
+      ledger_note: 'Ledger holds at 60 this run (m1025 NOT a falsification-family member - temporal replication of the thirteenth member per the #1143 precedent). Forty-eighth member-claim form intact in profiles/financial-times.yaml (2 occurrences); forty-ninth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fiftieth member-claim form intact in profiles/careers/journalists.yaml (3 occurrences); fifty-first member-claim form intact in profiles/news-corp.yaml (3 occurrences); fifty-second member-claim form intact in profiles/careers/journalists.yaml (5 occurrences); fifty-third member-claim form intact in profiles/the-verge.yaml (2 occurrences); fifty-fourth member-claim form intact in profiles/guardian.yaml (2 occurrences); fifty-fifth member-claim form intact in profiles/atlantic.yaml (2 occurrences); fifty-sixth member-claim form intact in profiles/wired.yaml (2 occurrences); fifty-seventh member-claim form intact in profiles/ap.yaml (3 occurrences); fifty-eighth member-claim form intact in profiles/financial-times.yaml (3 occurrences); fifty-ninth member-claim form intact in profiles/news-corp.yaml (3 occurrences); sixtieth member-claim form intact in profiles/financial-times.yaml (3 occurrences); sixty-first member-claim form absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      is_significant: false
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      artifact_readiness: 'No analysis.json update warranted: illustrative journalist-level pair only, hand-assigned tones, no empirical significance. No ledger advance (holds at 60).'
+      research_method: 'Main-run candidate screening (Criddle REJECTED - saturated: #1143 m917 temporal replication already covers her Sep-16 OpenAI/Anthropic arm, and the FT Muse-launch headline is in-corpus in profiles/financial-times.yaml; Bellan REJECTED - saturated m305 at #289; Stern REJECTED - dedicated Type B cross-entity test in-corpus; Chokkattu REJECTED - saturated m362/#351, #411, #528; Aisha Malik REJECTED - novel but no clean cross-entity comparator arm, Meta/social beat only in-window; Paul SELECTED - cleanest surviving pair: same writer, same outlet, both accountability-scoop pegs 14 days apart, novel journalist, sole byline, verbatim relay URL) + 2 main-run browser.search verification sets (exact-headline new-arm search - wixx.com relay URL verbatim, "By Katie Paul" byline and "NEW YORK, Sept 22 (Reuters)" dateline in relay body; carried-arm attestation via #664/m633 in-corpus), 0 browser.open per #503. Corpus novelty greps (zero katie_paul_type_b keyed entry; new headline "human concierge" zero-hit; novel URL zero-hit via git grep -F). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes. Verbatim quotation limited to short phrases per the copyright-brief-quotation rule.'
+      rejection_audit: 'Main-run screening: Criddle REJECTED (saturated - #1143 m917 covers the Sep-16 OpenAI/Anthropic arm; FT Muse headline in-corpus); Bellan REJECTED (m305 at #289); Stern REJECTED (dedicated Type B in-corpus); Chokkattu REJECTED (m362/#351, #411, #528); Aisha Malik REJECTED (no clean cross-entity comparator arm). SELECTED: Katie Paul (same writer, same outlet, 14-day accountability-scoop pair, novel dedicated Type B journalist, sole byline). Prior-run rejection lists stand.'
+      novelty: 'FIRST dedicated Type B pair on Katie Paul (m1025); zero test_type_b_1323 files on disk pre-commit (glob); no "Type B #1323" in git log pre-commit (--grep); max numeric mechanism_id 1024 pre-commit; zero numeric/underscore/dash one-zero-two-five mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); zero katie_paul_type_b keyed entry pre-commit (mention-level hits only: #664/#667 m633/m634, the Jul-2 profile entry, one scout-rejection note, disclosed); block key zero-hit repo-wide pre-commit (designed keying: iteration 1323 in key, no 1025 substring); 1/1 novel source URL zero-hit repo-wide pre-commit (git grep -F); new arm headline "human concierge" zero-hit repo-wide pre-commit; carried arm (m633) in-corpus by design; no #1323 row in README/ARCHITECTURE test tables or iteration-log pre-commit; README stats 75115/1647 pre-commit. NOT a falsification-family member (temporal replication of the thirteenth member per #1143); sixty-first member-claim form absent repo-wide pre-commit; fortieth direction form absent in profiles/ pre-commit; thirty-fifth through thirty-ninth directions present. All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      background_suite_status: 'CHECKED ONLY per #795 - the #1320-launched full suite (goal hidden_files type_d_1320_full_suite.log) observed at this run''s check (last write Oct 8 17:59 PDT, [ 1%], zero live pytest processes - appears dead). This run neither re-launches, kills, nor writes to the suite. Verdict and tombstone belong to #1325 (next Type D).'
+      in_flight: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (journalists.yaml m1025 block + new test file + doc-sync files staged by explicit path). Do NOT touch #1024 m846.'
+      source_urls:
+      - https://wixx.com/2026/09/22/exclusive-meta-testing-a-human-concierge-for-its-new-personal-ai-agent-muse/
