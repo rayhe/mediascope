@@ -469,10 +469,19 @@ class TestScoutCorpusBlindness1369:
         assert "m539" in src
 
     def test_scout_pick2_micro1_novel_but_deferred(self):
-        # micro1 is genuinely novel (zero corpus hits) but DEFERRED,
-        # not landed: the money-flow taxonomy's home is off-limits.
-        out = _git("grep", "-F", "-il", "micro1", "HEAD")
+        # micro1 has no corpus mechanism: zero hits in profiles/ at
+        # HEAD, and zero hits in any test file other than this run's
+        # own (which documents it as the deferred candidate). The
+        # doc-sync artifacts (README/ARCHITECTURE rows, log entry)
+        # are this run's own documentation, not prior corpus
+        # coverage, so the sweep is scoped to profiles/ + tests/.
+        out = _git("grep", "-F", "-il", "micro1", "HEAD", "--",
+                   "profiles/")
         assert out.stdout.strip() == "", out.stdout
+        out = _git("grep", "-F", "-l", "micro1", "HEAD", "--", "tests/")
+        hits = [l.strip() for l in out.stdout.splitlines()
+                if l.strip() and OWN_BASENAME not in l]
+        assert hits == [], hits
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "DEFERRED" in src
         assert "off-limits" in src or "OFF-LIMITS" in src
