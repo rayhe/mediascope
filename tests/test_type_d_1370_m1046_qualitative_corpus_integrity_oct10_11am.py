@@ -301,22 +301,31 @@ def _ft_block_1046():
     return data["competitor_relationships"]["openai"][BLOCK_1046]
 
 
-def _live_pytest_processes():
-    """Return cmdlines of live processes running pytest."""
-    procs = []
+def _prior_log_holders():
+    """Return pids of live processes holding the PRIOR suite log open.
+
+    Scoped to the prior log's basename (the #1365 _proc_holds_log
+    approach): this run's own re-launched suite writes to the NEW
+    log, so it must not trip the verdict-time pin.
+    """
+    holders = []
+    base = os.path.basename(PRIOR_SUITE_LOG)
     for pid in os.listdir("/proc"):
         if not pid.isdigit():
             continue
+        fd_dir = os.path.join("/proc", pid, "fd")
         try:
-            with open(os.path.join("/proc", pid, "cmdline"),
-                      "rb") as fh:
-                raw = fh.read().replace(b"\x00", b" ").decode(
-                    "utf-8", errors="replace")
+            for fd in os.listdir(fd_dir):
+                try:
+                    target = os.readlink(os.path.join(fd_dir, fd))
+                except OSError:
+                    continue
+                if target.endswith(base):
+                    holders.append(pid)
+                    break
         except OSError:
             continue
-        if "pytest" in raw and "type_d_1370" not in raw:
-            procs.append("%s: %s" % (pid, raw.strip()[:120]))
-    return procs
+    return holders
 
 
 def _prior_suite_stream():
@@ -613,7 +622,13 @@ class TestBackgroundSuiteVerdict1370:
         assert "last write Oct 10 07:59:54 PDT" in text
 
     def test_no_live_pytest_holds_prior_log(self):
-        assert _live_pytest_processes() == []
+        # Verdict-time pin: no live process held the prior suite log
+        # open at this run's ~11:05 AM PDT check. Scoped to the prior
+        # log's basename per the #1365 _proc_holds_log approach - this
+        # run's own re-launched suite writes to the NEW log and must
+        # not trip the pin (the unscoped live-pytest scan did, a
+        # self-interference artifact fixed here).
+        assert _prior_log_holders() == []
 
     def test_zero_summary_tokens_in_dead_stream(self):
         stream = _prior_suite_stream()
