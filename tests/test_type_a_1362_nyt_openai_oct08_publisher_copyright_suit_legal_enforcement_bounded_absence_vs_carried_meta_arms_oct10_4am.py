@@ -159,8 +159,8 @@ PRED_MAIN_1363 = "0" * 40
 # direction absent / forty-eighth through sixty-fourth members
 # intact / no sixty-fifth member / ledger holds at 64).
 B1361_FILE = (
-    "test_type_e_1356_podcast_sentiment_194th_"
-    "verification_oct09_11pm.py"
+    "test_type_e_1361_podcast_sentiment_195th_"
+    "verification_oct10_4am.py"
 )
 
 # Doc-sync constants per #719: post-doc-sync values from the start.
@@ -397,7 +397,7 @@ class TestAnchor1362:
         assert "1355-1359" in src
         assert "VERIFIED CLOSED" in src
 
-    def test_next_leg_is_1358_type_b(self):
+    def test_next_leg_is_1363_type_b(self):
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "B #1363" in src
 
@@ -700,19 +700,19 @@ class TestGuardLifecycle1362:
 
 class TestStalenessPins1362:
     def test_1361_guard_lifecycle_post_commit_expiry(self):
-        # Post-terminal-followup form: 25 tests in the class; 23
-        # pass, 2 fail BY DESIGN - ONE #1272-class forward-guard
+        # Post-terminal-followup form: 25 tests in the class; 24
+        # pass, 1 fails BY DESIGN - ONE #1272-class forward-guard
         # expiry (test_1045_numeric_absent_in_profiles trips on the
         # landed m1045 block in profiles/nytimes.yaml; the max-1044
         # pins stay green because they assert the file's own
         # constants, and the 1045-underscore/dash pins stay green -
-        # no one-zero-four-five mechanism-key forms landed) and ONE
-        # #1191-class self-trip (the no_type_a_1362_in_git_log
-        # ancestor pin, red at this run's main-commit time; the
-        # terminal log-hash followup re-pins PRED_MAIN_1362 in BOTH
+        # no one-zero-four-five mechanism-key forms landed).
+        # The no_type_a_1362_in_git_log ancestor pin (the #1191-class
+        # self-trip) was red at this run's main-commit time; the
+        # terminal log-hash followup re-pinned PRED_MAIN_1362 in BOTH
         # its own file's copy and the #1361 predecessor file's copy
         # per the #1292 re-pin-both-copies precedent and the #721
-        # re-pin rule, flipping it green). The forty-eighth through
+        # re-pin rule, flipping it green. The forty-eighth through
         # sixty-fourth member pins stay green; the no-sixty-fifth pin
         # stays green (m1045 is not a member); the ledger-holds-at-64
         # pin stays green.
@@ -720,7 +720,7 @@ class TestStalenessPins1362:
         # verified post-terminal.
         res = _class_run(B1361_FILE, "TestGuardLifecycle1361")
         out = res.stdout + res.stderr
-        assert "2 failed, 23 passed" in out, out[-2000:]
+        assert "1 failed, 24 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
@@ -1074,18 +1074,21 @@ class TestInFlightIsolation1362:
             assert tag in block["concurrency"]
 
     def test_nytimes_hunk_isolation(self):
-        # profiles/nytimes.yaml carries TWO working-tree hunks: the
-        # in-flight #899 m771 hunk (dirty before this run) and this
-        # run's m1045 hunk. Isolation = this run's insert is a pure
-        # addition that does not modify the #899 hunk: the nytimes.yaml
-        # working-tree diff contains this run's block key, and the
-        # diff has ZERO removed lines (no existing line touched).
-        # The main commit stages ONLY the m1045 hunk via a filtered
-        # patch (git apply --cached); the #899 hunk stays uncommitted.
-        out = _git("diff", "--", "profiles/nytimes.yaml").stdout
+        # profiles/nytimes.yaml carries this run's m1045 hunk (staged
+        # via a filtered patch, git apply --cached, so the in-flight
+        # #899 m771 hunk never entered this run's index) alongside the
+        # still-uncommitted #899 hunk. Isolation proof: the main
+        # commit's nytimes.yaml diff is a pure addition (zero removed
+        # lines) containing BLOCK_KEY, and the #899 block key remains
+        # present in the working-tree file unmodified.
+        assert BLOCK_KEY in _read(NYT_PATH)
+        assert "spur_licensing_market_exists_coalition_founder_datum" in \
+            _read(NYT_PATH)
+        main = _git("rev-parse", PRED_MAIN_1362).stdout.strip()
+        assert len(main) == 40 and main != "0" * 40
+        out = _git("show", main, "--format=", "--",
+                   "profiles/nytimes.yaml").stdout
         assert BLOCK_KEY in out
-        assert "spur_licensing_market_exists_coalition_founder_datum" \
-            in out
         removed = [l for l in out.splitlines()
                    if l.startswith("-") and not l.startswith("---")]
         assert removed == [], removed[:5]
