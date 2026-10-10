@@ -3321,6 +3321,92 @@ competitor_relationships:
       rotation_transparency: 'Iteration #1327 Type A is the THIRD leg of the 1325-1329 window (D #1325 -> E #1326 -> A #1327 -> B #1328 -> C #1329 per #565 anchor + rotation guard; #1326 Type E main ed8d8652/anchor 2e6c1bf2/doc-sync 9d374ff1/log-hash 2413fc66, #1325 Type D main cc24b13b/anchor 54a68697/doc-sync fa04cdb2/log-hash 00385ffd, each verified in git log pre-commit). Pre-commit novelty greps: zero test_type_a_1327 files on disk; no "Type A #1327" in git log; max numeric mechanism_id 1026 pre-commit; zero numeric/underscore/dash one-zero-two-seven mechanism key forms repo-wide pre-commit; block key zero-hit repo-wide pre-commit; 4 novel source URLs zero-hit repo-wide pre-commit (git grep -F); no #1327 row in README/ARCHITECTURE test tables pre-commit; README stats 75530/1651 pre-commit; fortieth direction-claim form absent in profiles/ pre-commit; forty-eighth through sixtieth member-claim forms present; sixty-first member-claim form absent pre-commit. Guard lifecycle: #1326''s max-1026 + zero-one-zero-two-seven + no-Type-A-#1327-in-git-log + no-sixty-first pins flip BY DESIGN at this run (pinned as forward-looking staleness in the #1327 test file); #1326''s fortieth-absent and forty-eighth-through-sixtieth-intact guards stay green. This run lands mechanism 1027 as the sixty-first falsification-family member (ledger 60->61). Next window leg #1328 Type B.'
       test_file: 'tests/test_type_a_1327_wired_openai_oct07_chatgpt_intelligent_ui_review_vs_carried_meta_dossier_oct08_11pm.py'
       in_flight: '#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched.'
+    type_a_1352_wired_openai_oct08_09_governance_accountability_bounded_absence_vs_carried_meta_arms:
+      mechanism_id: 1042
+      block_key: type_a_1352_wired_openai_oct08_09_governance_accountability_bounded_absence_vs_carried_meta_arms
+      key_design_note: 'Iteration-form block key carries no underscore-form one-zero-four-two mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-one-zero-four-two profile sweep instruments green while mechanism_id advances in colon form.'
+      date_analyzed: '2026-10-09'
+      type: 'Type A - Competitor Coverage Deep Dive - WIRED x OpenAI governance-accountability selection'
+      iteration: 1352
+      iteration_type: 'A'
+      publication_focus: 'WIRED (Conde Nast)'
+      publication: 'WIRED'
+      competitor: openai
+      competitor_pair: 'WIRED x OpenAI'
+      goal_id: 'goal_54093bda4145'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      author: 'Kit (with Ray)'
+      window: '1350-1354 window, THIRD leg (D #1350 -> E #1351 -> A #1352 -> B #1353 -> C #1354 per the #565 anchor + rotation guard)'
+      design: 'Selection-asymmetry test on the governance-accountability register: does WIRED select the licensing partner''s biggest governance-accountability pegs of the week (Oct-8/9-2026) the way it selects Meta''s? Bounded-absence instrument: 1 delegated scout (2 searches) + 3 main-run browser.search verification sets (0 browser.open per #503, excerpt-bounded); absence claimed only inside that bounded surface, never as proof of non-publication.'
+      distinct_from_prior: 'Not a re-score of m1027 (#1327, Oct-6/7 product-review adversarial originals, SIXTY-FIRST member, tone axis); not m946 (#1192, Oct-2 macOS CVE security-flaw register, tone on a published original); not m916 (#1142, Sep-26 rogue-agent bounded absence, different peg); not m1039 (#1347, AP x OpenAI firings leg, different publication, opposite verdict). The #1143 temporal-replication precedent does not block: fresh pegs (Oct-8/9 governance-accountability) and the FIRST WIRED-leg selection test on the firings story.'
+      finding: 'WIRED runs ZERO originals on the two biggest OpenAI governance-accountability pegs of Oct 8-9 2026 inside the bounded surface: (A) the safety-researcher firings escalation - the trio''s Oct-8 open letter charging "prioritizing safety over the near-term interests of OpenAI", plus OpenAI''s Oct-9 X response alleging "a significant breach of trust" - covered by WSJ (scoop-origin originals), FT, BI, the AP wire (m1039 #1347), and The Verge; (B) the Oct-8 three-preprint math pull (a sign error collapsing one proof and two dependents; 722 -> 719 manuscripts; only ~42% Lean-formalized), covered by NYT (primary), Retraction Watch, aiweekly and others - notable because WIRED ran the adversarial Oct-6/7 Isabella Ward mathematicians original (m1027 #1327) on the SAME story thread and skipped the follow-up where the release was shown to contain errors. The same publication selects Meta governance-accountability pegs aggressively in the same window (carried arms: m988 Oct 4-5 Muse dossier; the Oct-3 WIRED profiles original, third-party-referenced; m970 Aug-26 $18bn settlement wire). Selection asymmetry on the governance register: the deal partner''s governance crisis goes unselected while the non-deal entity''s governance pegs are selected. The finding BOUNDS the m1027 adversarialism (register-follows-peg: hard on product/culture, unselected on governance-accountability) rather than extending any pattern.'
+      openai_arm_new:
+        arm_A1:
+          peg: 'Oct-8/9-2026 safety-researcher firings escalation'
+          date: '2026-10-08/2026-10-09'
+          detail: 'Trio''s open letter ("prioritizing safety over the near-term interests of OpenAI"); OpenAI Oct-9 X response ("a significant breach of trust"); WSJ scoop-origin; FT/BI originals; AP wire (m1039); The Verge response coverage.'
+          covered_by: 'Wall Street Journal (scoop-origin), Financial Times, Business Insider, Associated Press wire (m1039 #1347), The Verge'
+          wired_originals: 0
+        arm_A2:
+          peg: 'Oct-8-2026 three-preprint math pull'
+          date: '2026-10-08'
+          detail: 'Sign error collapses one proof and two dependents; 722 -> 719 manuscripts; 14 more revised; only ~42% Lean-formalized; NYT primary; Retraction Watch; aiweekly.'
+          covered_by: 'New York Times (primary), Retraction Watch, aiweekly, oossa, usecarly'
+          wired_originals: 0
+        wired_originals: 0
+        bounded_surface: '5-search bounded surface (2 scout + 3 main-run): ~30 result rows, zero wired.com URLs, zero WIRED bylines. Absence is bounded to the search surface, not proof of non-publication.'
+      meta_arm_carried:
+        arm_M1:
+          mechanism: 'm988 (#1327 carried arm, Oct 4-5 WIRED x Meta Muse dossier accountability)'
+          register: 'governance-accountability, adversarial'
+        arm_M2:
+          mechanism: 'WIRED Oct-3 "muse-creates-detailed-profiles" original'
+          register: 'governance-accountability, adversarial'
+          provenance_note: 'third-party-referenced (implicator.ai snippet citing "a WIRED report published October 3"); the wired.com path form is unverified and NOT constructed.'
+        arm_M3:
+          mechanism: 'm970 (#1232, Aug-26 AP x Meta $18bn teen-addiction settlement wire, carried)'
+          register: 'governance-accountability wire'
+      asymmetry_scorer_result: 'Selection delta: WIRED selects 0 of 2 OpenAI governance-accountability pegs (Oct-8/9 firings escalation; Oct-8 math-preprint pull) inside the bounded surface, vs sustained selection of Meta governance pegs in the same window (m988 dossier, Oct-3 profiles original, m970 settlement wire). Tone delta NOT_SCORED (no WIRED OpenAI original to score; tone NOT_SCORED per the Aug 28 2026 standing rule). Engine NOT run per the standing rule (MANUAL/qualitative ONLY; no significance claimed).'
+      verdict: 'mechanism_documented'
+      falsification_family: 'NOT a falsification-family member. The silence is consistent with the wired.yaml competitor_relationships.openai coverage_prediction "softer" (Conde Nast x OpenAI multi-year content licensing deal, Aug 20 2024, Reuters; $1-5M/yr estimate) on the SELECTION axis for the governance register - but the AP x OpenAI leg of the SAME firings peg ran HARD (m1039 #1347, SIXTY-FOURTH falsification-family member), so the deal alone does not determine selection; candidate drivers include WSJ scoop-ownership, WIRED''s weekly cadence, and the #507 domain boundary (genre and access drive register). The uniform payer-softening prediction was already falsified at WIRED on the product-review register (m1027); this run documents the register boundary of that falsification. Ledger holds at 64 - the sixty-fourth member stays m1039 (ap.yaml); the sixty-fifth member-claim form stays absent repo-wide.'
+      falsification_ledger: '64'
+      falsification_family_member: false
+      ledger: '64'
+      ledger_note: 'Ledger holds at 64 this run (m1042 is mechanism_documented, NOT a falsification-family member - the WIRED-leg bounded absence on the Oct-8/9 governance pegs is consistent-with-prediction on the selection axis, and the AP leg''s hardness on the same peg blocks any payer-gradient claim). Forty-eighth member-claim form intact in profiles/financial-times.yaml; forty-ninth + fiftieth intact in profiles/careers/journalists.yaml; fifty-first intact in profiles/news-corp.yaml; fifty-second intact in profiles/careers/journalists.yaml; fifty-third intact in profiles/the-verge.yaml; fifty-fourth intact in profiles/guardian.yaml; fifty-fifth intact in profiles/atlantic.yaml; fifty-sixth intact in profiles/wired.yaml; fifty-seventh intact in profiles/ap.yaml; fifty-eighth intact in profiles/financial-times.yaml; fifty-ninth intact in profiles/news-corp.yaml; sixtieth intact in profiles/financial-times.yaml; sixty-first intact in profiles/wired.yaml; sixty-second intact in profiles/news-corp.yaml; sixty-third intact in profiles/news-corp.yaml; sixty-fourth member-claim form present (m1039, profiles/ap.yaml); sixty-fifth member-claim form stays absent repo-wide; fortieth direction absent by design; thirty-fifth through thirty-ninth directions stand.'
+      counterevidence:
+      - 'm1027 (#1327): the same WIRED desk ran THREE adversarial OpenAI originals 48 hours earlier (Oct-6/7 product-review/culture register) - the absence is peg-specific, not a uniform-softness trait.'
+      - 'm1039 (#1347): the AP x OpenAI leg of the SAME firings peg ran HARD at near-Meta hardness (-0.35 vs -0.45, delta +0.10) - the licensing deal does not determine selection even on this peg.'
+      - 'The Verge covered the Oct-9 OpenAI response (per the Tech Brew Ride Home roundup) - the peg is selectable by tech press on the day.'
+      confounders_ranked:
+        strong:
+        - 'Excerpt-bounded (0 browser.open per #503): the absence is bounded to the search surface; a WIRED piece could exist outside it (paywalled, poorly indexed).'
+        - 'm1027 adversarialism 48 hours prior: the same desk is not uniformly soft on the partner; the silence is register/peg-specific.'
+        - 'AP-leg hardness on the same peg (m1039): a second licensing-deal publication ran the story hard, so the deal alone cannot explain WIRED''s silence.'
+        moderate:
+        - 'WSJ scoop-ownership: the firings story is WSJ-led; WIRED may defer to the scoop owner on fast-moving accountability stories.'
+        - 'Weekly cadence: the Oct-8 letter to Oct-9 response unfolded inside 48 hours; WIRED''s production rhythm may not have caught it by the Oct-9 7pm PDT check.'
+        weak:
+        - 'WIRED paywall degrades search indexing: bounded-absence instruments undercount paywalled originals.'
+      financial_context: 'Conde Nast x OpenAI multi-year content licensing deal (Aug 20 2024, Reuters; in-corpus wired.yaml ownership_chain; $1-5M/yr estimate; wired.yaml competitor_relationships.openai coverage_prediction "softer"); Conde Nast x Meta $0 AI licensing (per corpus). Coverage prediction: softer OpenAI.'
+      deal_url: 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/'
+      statistical_discipline: 'MANUAL / QUALITATIVE ONLY per the Aug 28 2026 standing rule (tone values hand-assigned register positions; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict mechanism_documented on the domain-bounded pegs; NOT artifact-grade; no_analysis_json_update true). Correlation is not causation; hypothesis-generating only.'
+      no_analysis_json_update: true
+      correlation_not_causation: true
+      method: '1 delegated scout (2 searches: WIRED firings leg, WIRED ChatGPT Mac-app vulnerability; both returned bounded absence on wired.com URLs; the scout returned raw verbatim URLs WITHOUT novelty characterization per the #1341 post-hoc lesson - the main run verified corpus novelty via git grep -F) + 3 main-run browser.search verification sets (WIRED OpenAI news October 2026 - attesting, zero wired.com firings URLs; exact-phrase WIRED/OpenAI/fired search - attesting, The Verge Oct-9 response coverage noted via roundup; WIRED OpenAI math proofs pull - attesting, NYT-primary/Retraction Watch coverage, zero WIRED originals), 0 browser.open per #503 (excerpt-bounded). 5-search bounded surface: ~30 result rows, zero wired.com URLs, zero WIRED bylines.'
+      method_query_sets:
+      - 'WIRED OpenAI news October 2026'
+      - '"WIRED" OpenAI "fired" safety researchers October 2026'
+      - 'WIRED OpenAI math proofs pulled sign error October 2026'
+      research_method: '1 delegated scout (2 searches) + 3 main-run browser.search query sets this run, 0 browser.open per #503 (excerpt-bounded). Pre-commit novelty greps: zero test_type_a_1352 files on disk (glob); no "Type A #1352" in git log (--grep); max numeric mechanism_id 1041 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-four-three mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); block key zero-hit repo-wide pre-commit (git grep -F; designed keying: iteration 1352 in key, no 1042 or 1043 substring); "## #1352" zero-hit in iteration-log pre-commit; README stats 78082/1676 pre-commit; no #1352 row in README/ARCHITECTURE test tables pre-commit; "governance-accountability bounded absence" framing zero-hit repo-wide pre-commit. The #1143 temporal-replication precedent does not block (fresh pegs, first WIRED-leg selection test on the firings story). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      novelty: 'Zero test_type_a_1352 files on disk pre-commit (glob); no "Type A #1352" in git log pre-commit (--grep); max numeric mechanism_id 1041 in profiles/ pre-commit; zero numeric/underscore/dash one-zero-four-three mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); "## #1352" zero-hit in iteration-log pre-commit; README stats 78082/1676 pre-commit; no #1352 row in README/ARCHITECTURE test tables pre-commit; 3 novel source URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); block key zero-hit repo-wide pre-commit (git grep -F); "governance-accountability bounded absence" framing zero-hit repo-wide pre-commit; distinct from m1027 (#1327, tone axis, product-review register), m946 (#1192, tone on a published original), m916 (#1142, different peg), m1039 (#1347, different publication, opposite verdict). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+      source_urls:
+      - 'https://www.wsj.com/tech/ai/openai-parts-ways-with-researchers-who-allegedly-shared-confidential-information-aebac528'
+      - 'https://www.primetimer.com/news/we-are-deeply-sad-about-this-outcome-openai-says-decision-to-fire-researchers-was-not-about-raising-safety-concerns-or-speaking-out'
+      - 'https://retractionwatch.com/2026/10/08/openai-withdraws-preprints-722-manuscripts-unsolved-math-problems/'
+      - 'https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (profiles/wired.yaml m1042 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending; profiles/competitor-entities.yaml untouched).'
+      test_file: 'tests/test_type_a_1352_wired_openai_oct08_09_governance_accountability_bounded_absence_vs_carried_meta_arms_oct09_7pm.py'
+      status: 'landed'
   meta:
     financial_tie: none
     estimated_value: $0
