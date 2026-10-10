@@ -167,7 +167,7 @@ PRED_MAIN_1367 = "14901df4fb5297b912f752909e1180997635f5d0"
 
 # Forward guard for the next leg: #1368 Type B. Re-pinned by #1368's
 # anchor followup per #721 (starts as 0*40; placeholder-only).
-PRED_MAIN_1368 = "0" * 40
+PRED_MAIN_1368 = "e994f9cbae3754e7564dbfff878d965e6dc945cf"  # re-pinned to the #1368 main sha in #1368's terminal log-hash followup per #721/#1292
 
 # The #1366 Type E file, for the staleness pin on its guard lifecycle.
 E1366_FILE = (

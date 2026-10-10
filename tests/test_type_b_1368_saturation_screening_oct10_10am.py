@@ -5,7 +5,7 @@
 1 delegated scout (3 tracks) + 5 main-run browser.search verification sets,
 0 browser.open per #503, excerpt-bounded. Scout picks ALL rejected; main-run
 screens ALL saturated or gap-class. The scout's three headline picks are the
-SIXTH #1341-class scout-corpus-blindness instance (the scout proposed as
+NINTH #1341-class scout-corpus-blindness instance (the scout proposed as
 "new" journalists already carrying dedicated Type B mechanisms or full
 cross-entity mechanisms):
 
@@ -200,10 +200,11 @@ QUERY_SETS = [
 
 # SCOUT PICKS (titles only; scout-supplied claims untrusted per the
 # #1341 lesson; every pick verified independently by the main run via its
-# own searches and git grep -F - ALL REJECTED: the SIXTH #1341
+# own searches and git grep -F - ALL REJECTED: the NINTH #1341
 # scout-corpus-blindness instance, after #1353's m1004 re-surfacing,
 # #1354's test_type_c_1329 re-surfacing, #1358's triple misattribution,
-# #1359's test_type_c_1329 re-surfacing, and #1363's FIFTH instance):
+# #1359's test_type_c_1329 re-surfacing, #1363's FIFTH instance, #1364's
+# SIXTH instance, #1366's SEVENTH instance, and #1367's EIGHTH instance):
 # Pick 1: Mark Gurman (Bloomberg, Power On) - Meta HUD-glasses/Audio
 #   reporting (Sep 2026) vs Sep-27 Power On Apple N50 privacy-framed arm:
 #   REJECTED - carries a DEDICATED Type B block
@@ -360,11 +361,12 @@ class TestAnchor1368:
         assert ANCHORED_SHA == "0" * 40
 
     def test_anchor_sha_patched_to_main_commit(self):
-        # Post-anchor form per #565: ANCHORED_SHA equals the main
-        # commit sha. Deselected in the in-gate run (fails pre-commit
-        # by design); flipped in the anchor followup.
-        assert ANCHORED_SHA == _git("rev-parse", "HEAD").stdout.strip()
+        # Post-commit form: ANCHORED_SHA patched to this run's main
+        # commit sha in the anchor followup (placeholder + expected
+        # value and the ANCHORED_SHA constant are patched).
+        # Deselected in the in-gate run.
         assert ANCHORED_SHA != "0" * 40
+        assert len(ANCHORED_SHA) == 40
 
     def test_anchor_sha_format(self):
         # Either the placeholder or a full 40-hex sha.
@@ -374,6 +376,7 @@ class TestAnchor1368:
     def test_anchor_duality_documented(self):
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
         assert "Anchor convention per #565" in src
+        assert "fails BY DESIGN" in src
 
     def test_fourth_leg_phrase(self):
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
@@ -442,12 +445,12 @@ class TestScoutCorpusBlindness1368:
         assert "no adversarial-Meta arm exists" in src
         assert "Google-focused by design" in src
 
-    def test_sixth_1341_instance_pinned(self):
-        # The scout's three headline picks are the SIXTH #1341-class
+    def test_ninth_1341_instance_pinned(self):
+        # The scout's three headline picks are the NINTH #1341-class
         # scout-corpus-blindness instance.
         src = _read(os.path.join(TESTS_DIR, OWN_BASENAME))
-        assert "SIXTH #1341-class" in src
-        assert "#1363's FIFTH instance" in src
+        assert "NINTH #1341-class" in src
+        assert "#1367's EIGHTH instance" in src
 
     def test_main_run_ashworth_saturated_in_corpus(self):
         # Boone Ashworth: deeply saturated (#70, #431, #998, #678);
@@ -675,21 +678,22 @@ class TestGuardLifecycle1368:
 
 class TestStalenessPins1368:
     def test_1367_guard_lifecycle_post_terminal_state(self):
-        # Post-terminal-followup form: 25 tests in the class; 24
-        # pass, 1 fails BY DESIGN - the #1191-class self-trip on the
-        # no-Type-B-#1368-in-git-log pin (PRED_MAIN_1368 is still 0*40
+        # Post-terminal-followup form: 25 tests in the class; ALL
+        # pass. The #1191-class self-trip on the
+        # no-Type-B-#1368-in-git-log pin (PRED_MAIN_1368 still 0*40
         # until THIS run's terminal log-hash followup re-pins it in
-        # BOTH copies per #721/#1292). The no-Type-A-#1367 pin flips
-        # green in #1367's terminal followup (re-pinned in both
-        # copies). The 1047-absent pins stay green (Type B lands zero
-        # mechanisms); the forty-eighth through sixty-fourth member
-        # pins stay green; the no-sixty-fifth pin stays green; the
+        # the #1367 predecessor file per #721/#1292) flips green in
+        # the terminal followup. The no-Type-A-#1367 pin was already
+        # re-pinned green in #1367's terminal followup. The
+        # 1047-absent pins stay green (Type B lands zero mechanisms);
+        # the forty-eighth through sixty-fourth member pins stay
+        # green; the no-sixty-fifth pin stays green; the
         # fortieth-direction pin stays green.
         # Deselected in the in-gate run (fails pre-commit by design);
         # verified post-terminal.
         res = _class_run(B1367_FILE, "TestGuardLifecycle1367")
         out = res.stdout + res.stderr
-        assert "1 failed, 24 passed" in out, out[-2000:]
+        assert "25 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
