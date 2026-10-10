@@ -148,7 +148,7 @@ PRED_MAIN_1359 = "7795bebf6e978c513a9ebbd76cc823bb03747154"  # re-pinned to #135
 # per #795). Staged 0*40 placeholder-only per #721; re-pinned in
 # #1360's terminal log-hash followup per #721. Type-correct per the
 # #1352 type-mismatch lesson.
-PRED_MAIN_1360 = "0" * 40  # re-pinned to #1360 main sha in the terminal log-hash followup per #721/#1292
+PRED_MAIN_1360 = "c135fc21895a315287bd4fad0c84622d4206b141"  # re-pinned to #1360 main sha in the terminal log-hash followup per #721/#1292
 
 # The #1358 window-predecessor file, for the staleness pin on its
 # guard-lifecycle class (max id 1044; zero next-number

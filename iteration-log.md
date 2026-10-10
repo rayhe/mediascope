@@ -5,7 +5,7 @@
 ### Commit hashes
 - Main commit `c135fc21895a315287bd4fad0c84622d4206b141` - verified via git rev-parse
 - Anchor followup `01aeb797d555472d6ce18807ce8b9f8ce98435ef` (ANCHORED_SHA patched per #565; PRED_MAIN_1360 re-pinned in own file per #721; the #1359 predecessor file's copy re-pinned in the terminal log-hash followup per the #1292 re-pin-both-copies precedent)
-- Doc-sync DOCSYNC_SHA (README 78788/1684 -> 78873/1685; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Doc-sync b6ab96ff (README 78788/1684 -> 78873/1685; test-table row; ARCHITECTURE tree row; iteration-log entry)
 - Log-hash followup: this commit (terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1360 re-pinned to the main sha in the #1359 predecessor file per #721/#1292 (the no-Type-D-#1360-in-git-log pin flips green post-repin; TestStalenessPins1360 expects 25 passed on TestGuardLifecycle1359 post-terminal)
 
 ### Rotation transparency
