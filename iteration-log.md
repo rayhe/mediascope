@@ -6,7 +6,7 @@
 - Main commit `0412f642` - verified via git rev-parse (full 0412f64205403436d0b2313963b86eb1814baa6e)
 - Anchor followup `df98b88a` (ANCHORED_SHA patched per #565; PRED_MAIN_1374 re-pinned to 0412f64205403436d0b2313963b86eb1814baa6e in own file per #721/#1292)
 - Doc-sync `8693a889` (README 80047/1698 -> 80115/1699; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1374 re-pinned to 0412f64205403436d0b2313963b86eb1814baa6e in the #1373 predecessor file per #721/#1292 (the #1373 no-Type-C-#1374-in-git-log pin flips green post-repin; TestStalenessPins1374 expects "30 passed" on TestGuardLifecycle1373 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1374 re-pinned to 0412f64205403436d0b2313963b86eb1814baa6e in the #1373 predecessor file per #721/#1292 (the #1373 no-Type-C-#1374-in-git-log pin flips green post-repin; TestStalenessPins1374 expects "30 passed" on TestGuardLifecycle1373 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1374 Type C, the FIFTH and CLOSING leg of the 1370-1374 window (D #1370 -> E #1371 -> A #1372 -> B #1373 -> C #1374 per the #565 anchor + rotation guard).
@@ -54,7 +54,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (0412f
 - Main commit `9cb2b6cd` - verified via git rev-parse (full 9cb2b6cd92de9faef3bf0bb2a31b904947ffea85)
 - Anchor followup `6c4fa32f` (ANCHORED_SHA patched per #565; PRED_MAIN_1373 re-pinned to 9cb2b6cd92de9faef3bf0bb2a31b904947ffea85 in own file per #721/#1292)
 - Doc-sync `bdaa6c70` (full bdaa6c70e68c458e8a4fa023e201a8361bf60bad) (README 79976/1697 -> 80047/1698; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1373 re-pinned to 9cb2b6cd92de9faef3bf0bb2a31b904947ffea85 in the #1372 predecessor file per #721/#1292 (the #1372 no-Type-B-#1373-in-git-log pin flips green post-repin; TestStalenessPins1373 expects "30 passed" on TestGuardLifecycle1372 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1373 re-pinned to 9cb2b6cd92de9faef3bf0bb2a31b904947ffea85 in the #1372 predecessor file per #721/#1292 (the #1372 no-Type-B-#1373-in-git-log pin flips green post-repin; TestStalenessPins1373 expects "30 passed" on TestGuardLifecycle1372 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1373 Type B, the FOURTH leg of the 1370-1374 window (D #1370 -> E #1371 -> A #1372 -> B #1373 -> C #1374 per the #565 anchor + rotation guard).
@@ -102,7 +102,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (9cb2b
 - Main commit `e162b718` - verified via git rev-parse (full e162b718eaebe64f28146d7d9c0585e7a3c81e4a)
 - Anchor followup `673ddcf9` (ANCHORED_SHA patched per #565; PRED_MAIN_1372 re-pinned to e162b718eaebe64f28146d7d9c0585e7a3c81e4a in own file per #721/#1292)
 - Doc-sync TBD (README 79870/1696 -> 79976/1697; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1372 re-pinned to e162b718eaebe64f28146d7d9c0585e7a3c81e4a in the #1371 predecessor file per #721/#1292 (the #1371 no-Type-A-#1372-in-git-log pin flips green post-repin; TestStalenessPins1372 expects "2 failed, 23 passed" on TestGuardLifecycle1371 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1372 re-pinned to e162b718eaebe64f28146d7d9c0585e7a3c81e4a in the #1371 predecessor file per #721/#1292 (the #1371 no-Type-A-#1372-in-git-log pin flips green post-repin; TestStalenessPins1372 expects "2 failed, 23 passed" on TestGuardLifecycle1371 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1372 Type A, the THIRD leg of the 1370-1374 window (D #1370 -> E #1371 -> A #1372 -> B #1373 -> C #1374 per the #565 anchor + rotation guard).
@@ -151,7 +151,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (e162b
 - Main commit `021a0f7c` - verified via git rev-parse (full 021a0f7cc6b9549817ab7a6acc4bd260ef40675a)
 - Anchor followup `ee03fa81` (ANCHORED_SHA patched per #565; PRED_MAIN_1371 re-pinned to 021a0f7cc6b9549817ab7a6acc4bd260ef40675a in own file per #721/#1292)
 - Doc-sync `75e3e3e7` - verified via git rev-parse (full 75e3e3e7c27779f354b40ef28aec11318c56cb5f) (README 79759/1695 -> 79870/1696; test-table row; ARCHITECTURE tree row; iteration-log entry; podcast-sentiment.md 197th-cycle section)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1371 re-pinned to 021a0f7cc6b9549817ab7a6acc4bd260ef40675a in the #1370 predecessor file per #721/#1292 (the #1370 no-Type-E-#1371-in-git-log pin flips green post-repin; TestStalenessPins1371 expects "9 passed" on TestGuardLifecycle1370 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1371 re-pinned to 021a0f7cc6b9549817ab7a6acc4bd260ef40675a in the #1370 predecessor file per #721/#1292 (the #1370 no-Type-E-#1371-in-git-log pin flips green post-repin; TestStalenessPins1371 expects "9 passed" on TestGuardLifecycle1370 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1371 Type E, the SECOND leg of the 1370-1374 window (D #1370 -> E #1371 -> A #1372 -> B #1373 -> C #1374 per the #565 anchor + rotation guard).
@@ -198,7 +198,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (021a0
 - Main commit `2e3db3cf` - verified via git rev-parse (full 2e3db3cf877cef21ab609f0a582a35a2731da1ec)
 - Anchor followup `ceea0d4f` (ANCHORED_SHA patched per #565; PRED_MAIN_1370 re-pinned to 2e3db3cf877cef21ab609f0a582a35a2731da1ec in own file per #721/#1292; NOTE: the anchor commit's message carries a placeholder-form full-sha tail - the file patch and this entry carry the verified full sha)
 - Doc-sync `c55df675` (full c55df67521655b31bde6b6417fbfb5fdd40889f3) (README 79665/1694 -> 79759/1695; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1370 re-pinned to 2e3db3cf877cef21ab609f0a582a35a2731da1ec in BOTH this run's file (anchor followup) and the #1369 predecessor file (this commit) per #721/#1292 (the no-Type-D-#1370-in-git-log pin flips green post-repin in both copies; TestStalenessPins1370 expects 26 passed on TestGuardLifecycle1369 post-terminal - VERIFIED 26 passed this run)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1370 re-pinned to 2e3db3cf877cef21ab609f0a582a35a2731da1ec in BOTH this run's file (anchor followup) and the #1369 predecessor file (this commit) per #721/#1292 (the no-Type-D-#1370-in-git-log pin flips green post-repin in both copies; TestStalenessPins1370 expects 26 passed on TestGuardLifecycle1369 post-terminal - VERIFIED 26 passed this run)
 
 ### Rotation transparency
 - This run is iteration #1370 Type D, the FIRST and OPENING leg of the 1370-1374 window (D #1370 -> E #1371 -> A #1372 -> B #1373 -> C #1374 per the #565 anchor + rotation guard).
@@ -245,7 +245,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (2e3db
 - Main commit `a3062ef4` - verified via git rev-parse (full a3062ef48eb3fd032339198c7ebc33173253a061)
 - Anchor followup `4a5d8507` (ANCHORED_SHA patched per #565; PRED_MAIN_1369 re-pinned to a3062ef48eb3fd032339198c7ebc33173253a061 in own file per #721/#1292)
 - Doc-sync (this commit) (README 79590/1693 -> 79665/1694; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1369 re-pinned to a3062ef48eb3fd032339198c7ebc33173253a061 in the #1368 predecessor file per #721/#1292 (the #1368 no-Type-C-#1369-in-git-log pin flips green post-repin; TestStalenessPins1369 expects "26 passed" on TestGuardLifecycle1368 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1369 re-pinned to a3062ef48eb3fd032339198c7ebc33173253a061 in the #1368 predecessor file per #721/#1292 (the #1368 no-Type-C-#1369-in-git-log pin flips green post-repin; TestStalenessPins1369 expects "26 passed" on TestGuardLifecycle1368 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1369 Type C, the FIFTH and CLOSING leg of the 1365-1369 window (D #1365 -> E #1366 -> A #1367 -> B #1368 -> C #1369 per the #565 anchor + rotation guard).
@@ -293,7 +293,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (a3062
 - Main commit `e994f9cb` - verified via git rev-parse (full e994f9cbae3754e7564dbfff878d965e6dc945cf)
 - Anchor followup `24e5568e` (ANCHORED_SHA patched per #565; PRED_MAIN_1368 re-pinned to e994f9cbae3754e7564dbfff878d965e6dc945cf in own file per #721/#1292)
 - Doc-sync (this commit) (README 79521/1692 -> 79590/1693; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1368 re-pinned to e994f9cbae3754e7564dbfff878d965e6dc945cf in the #1367 predecessor file per #721/#1292 (the #1367 no-Type-B-#1368-in-git-log pin flips green post-repin; TestStalenessPins1368 expects "25 passed" on TestGuardLifecycle1367 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1368 re-pinned to e994f9cbae3754e7564dbfff878d965e6dc945cf in the #1367 predecessor file per #721/#1292 (the #1367 no-Type-B-#1368-in-git-log pin flips green post-repin; TestStalenessPins1368 expects "25 passed" on TestGuardLifecycle1367 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1368 Type B, the FOURTH leg of the 1365-1369 window (D #1365 -> E #1366 -> A #1367 -> B #1368 -> C #1369 per the #565 anchor + rotation guard).
@@ -341,7 +341,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (e994f
 - Main commit `14901df4` - verified via git rev-parse (full 14901df4fb5297b912f752909e1180997635f5d0)
 - Anchor followup `230bc8f9` (ANCHORED_SHA patched per #565; PRED_MAIN_1367 re-pinned to 14901df4fb5297b912f752909e1180997635f5d0 in own file per #721/#1292)
 - Doc-sync `9ba68e5a` (full 9ba68e5a69795b36bb88114ad3cbb318d82d3ebf) (README 79416/1691 -> 79521/1692; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1367 re-pinned to 14901df4fb5297b912f752909e1180997635f5d0 in BOTH this run's file (anchor followup) and the #1366 predecessor file (this commit) per #721/#1292 (the no-Type-A-#1367-in-git-log pin flips green post-repin in both copies; TestStalenessPins1367 expects "1 failed, 24 passed" on TestGuardLifecycle1366 post-terminal - the #1272-class expiry on the landed m1046 block)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1367 re-pinned to 14901df4fb5297b912f752909e1180997635f5d0 in BOTH this run's file (anchor followup) and the #1366 predecessor file (this commit) per #721/#1292 (the no-Type-A-#1367-in-git-log pin flips green post-repin in both copies; TestStalenessPins1367 expects "1 failed, 24 passed" on TestGuardLifecycle1366 post-terminal - the #1272-class expiry on the landed m1046 block)
 
 ### Rotation transparency
 - This run is iteration #1367 Type A, the THIRD leg of the 1365-1369 window (D #1365 -> E #1366 -> A #1367 -> B #1368 -> C #1369 per the #565 anchor + rotation guard).
@@ -389,7 +389,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (306f1
 - Main commit `6e7eefb2` - verified via git rev-parse (full 6e7eefb2d13a4e92411c2d669c88c0d2ccd8608f)
 - Anchor followup `73365c81` (ANCHORED_SHA patched per #565; PRED_MAIN_1366 re-pinned to 6e7eefb2d13a4e92411c2d669c88c0d2ccd8608f in own file per #721/#1292)
 - Doc-sync (this commit) (README 79302/1690 -> 79416/1691; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1366 re-pinned to 6e7eefb2d13a4e92411c2d669c88c0d2ccd8608f in BOTH this run's file (anchor followup) and the #1365 predecessor file (this commit) per #721/#1292 (the no-Type-E-#1366-in-git-log pin flips green post-repin in both copies; TestStalenessPins1366 expects "9 passed" on TestGuardLifecycle1365 post-terminal - VERIFIED 9 passed this run)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1366 re-pinned to 6e7eefb2d13a4e92411c2d669c88c0d2ccd8608f in BOTH this run's file (anchor followup) and the #1365 predecessor file (this commit) per #721/#1292 (the no-Type-E-#1366-in-git-log pin flips green post-repin in both copies; TestStalenessPins1366 expects "9 passed" on TestGuardLifecycle1365 post-terminal - VERIFIED 9 passed this run)
 
 ### Rotation transparency
 - This run is iteration #1366 Type E, the SECOND leg of the 1365-1369 window (D #1365 -> E #1366 -> A #1367 -> B #1368 -> C #1369 per the #565 anchor + rotation guard).
@@ -436,7 +436,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (6e7ee
 - Main commit `57c663e2` - verified via git rev-parse (full 57c663e26827fe33a3ee327ab1f5727ecde53564)
 - Anchor followup `18942de0` (ANCHORED_SHA patched per #565; PRED_MAIN_1365 re-pinned to 57c663e26827fe33a3ee327ab1f5727ecde53564 in own file per #721/#1292)
 - Doc-sync (this commit) (README 79216/1689 -> 79302/1690; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1365 re-pinned to 57c663e26827fe33a3ee327ab1f5727ecde53564 in BOTH this run's file (anchor followup) and the #1364 predecessor file (this commit) per #721/#1292 (the no-Type-D-#1365-in-git-log pin flips green post-repin in both copies; TestStalenessPins1365 expects 25 passed on TestGuardLifecycle1364 post-terminal - VERIFIED 25 passed this run)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1365 re-pinned to 57c663e26827fe33a3ee327ab1f5727ecde53564 in BOTH this run's file (anchor followup) and the #1364 predecessor file (this commit) per #721/#1292 (the no-Type-D-#1365-in-git-log pin flips green post-repin in both copies; TestStalenessPins1365 expects 25 passed on TestGuardLifecycle1364 post-terminal - VERIFIED 25 passed this run)
 
 ### Rotation transparency
 - This run is iteration #1365 Type D, the FIRST and OPENING leg of the 1365-1369 window (D #1365 -> E #1366 -> A #1367 -> B #1368 -> C #1369 per the #565 anchor + rotation guard).
@@ -482,7 +482,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (33b80
 - Main commit `3d37f36c` - verified via git rev-parse (full 3d37f36cb816981e4e2f297634f342e7b3fc2034)
 - Anchor followup `54b6e31c` (ANCHORED_SHA patched per #565; PRED_MAIN_1364 re-pinned to 3d37f36cb816981e4e2f297634f342e7b3fc2034 in own file per #721/#1292)
 - Doc-sync `da5317a8` (README 79148/1688 -> 79216/1689; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1364 re-pinned to 3d37f36cb816981e4e2f297634f342e7b3fc2034 in BOTH this run's file (anchor followup) and the #1363 predecessor file (this commit) per #721/#1292 (the no-Type-C-#1364-in-git-log pin flips green post-repin in both copies; TestStalenessPins1364 expects 25 passed on TestGuardLifecycle1363 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1364 re-pinned to 3d37f36cb816981e4e2f297634f342e7b3fc2034 in BOTH this run's file (anchor followup) and the #1363 predecessor file (this commit) per #721/#1292 (the no-Type-C-#1364-in-git-log pin flips green post-repin in both copies; TestStalenessPins1364 expects 25 passed on TestGuardLifecycle1363 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1364 Type C, the FIFTH and CLOSING leg of the 1360-1364 window (D #1360 -> E #1361 -> A #1362 -> B #1363 -> C #1364 per the #565 anchor + rotation guard).
@@ -544,7 +544,7 @@ README stats table 79085/1687 -> 79148/1688 (+63/+1); README test-table row; doc
 - Main commit `8074ebdc` - verified via git rev-parse (full 8074ebdc9f41667975b6a28858afd8c8d72f79eb)
 - Anchor followup `410a0a60` (ANCHORED_SHA patched per #565; PRED_MAIN_1363 re-pinned to 8074ebdc9f41667975b6a28858afd8c8d72f79eb in own file per #721/#1292)
 - Doc-sync `a3e01fec` (README 79085/1687 -> 79148/1688; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1363 re-pinned to 8074ebdc9f41667975b6a28858afd8c8d72f79eb in the #1362 predecessor file per #721/#1292 (the no-Type-B-#1363-in-git-log pin flips green post-repin in both copies; TestStalenessPins1363 expects 25 passed on TestGuardLifecycle1362 post-terminal)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1363 re-pinned to 8074ebdc9f41667975b6a28858afd8c8d72f79eb in the #1362 predecessor file per #721/#1292 (the no-Type-B-#1363-in-git-log pin flips green post-repin in both copies; TestStalenessPins1363 expects 25 passed on TestGuardLifecycle1362 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1363 Type B, the FOURTH leg of the 1360-1364 window (D #1360 -> E #1361 -> A #1362 -> B #1363 -> C #1364 per the #565 anchor + rotation guard).
@@ -704,7 +704,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified at the
 - Main commit `7795bebf` - verified via git rev-parse (full 7795bebf6e978c513a9ebbd76cc823bb03747154)
 - Anchor followup `96d6f00e` (ANCHORED_SHA patched per #565; PRED_MAIN_1359 re-pinned to 7795bebf in BOTH this run's file and the #1358 predecessor file in the anchor followup per #721/#1292 - the no-Type-C-#1359-in-git-log pin flips green post-repin in both copies; PRED_MAIN_1360 stays 0*40 by design, staged for #1360's re-pin)
 - Doc-sync faaba040 (README 78721/1683 -> 78788/1684; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; TestStalenessPins1359 expects 25 passed on TestGuardLifecycle1358 post-terminal (zero mechanisms landed this run, so every #1358 forward guard stays green: max-1044, zero-1045 all forms, fortieth absent, 48th-64th members intact, no sixty-fifth member, ledger holds at 64; the no-Type-C-#1359 pin flips green post-repin)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); TestStalenessPins1359 expects 25 passed on TestGuardLifecycle1358 post-terminal (zero mechanisms landed this run, so every #1358 forward guard stays green: max-1044, zero-1045 all forms, fortieth absent, 48th-64th members intact, no sixty-fifth member, ledger holds at 64; the no-Type-C-#1359 pin flips green post-repin)
 
 ### Rotation transparency
 - This run is iteration #1359 Type C, the FIFTH and CLOSING leg of the 1355-1359 window (D #1355 -> E #1356 -> A #1357 -> B #1358 -> C #1359 per the #565 anchor + rotation guard).
@@ -749,7 +749,7 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified (7795b
 - Main commit `908543be` - verified via git rev-parse (full 908543be62bb67b02516ad7cd13422ee6078bb4f)
 - Anchor followup `9f937a37` (ANCHORED_SHA patched per #565; PRED_MAIN_1358 re-pinned to 908543be in BOTH this run's file and the #1357 predecessor file per #721/#1292 - the no-Type-B-#1358-in-git-log pin flips green post-repin in both copies; PRED_MAIN_1359 stays 0*40 by design, staged for #1359's re-pin)
 - Doc-sync `0e527cd7` (README 78660/1682 -> 78721/1683; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; TestStalenessPins1358 expects 25 passed on TestGuardLifecycle1357 post-terminal (zero mechanisms landed this run, so every #1357 forward guard stays green: max-1044, zero-1045 all forms, fortieth absent, 48th-64th members intact, no sixty-fifth member, ledger holds at 64; the no-Type-B-#1358 pin flips green post-repin)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); TestStalenessPins1358 expects 25 passed on TestGuardLifecycle1357 post-terminal (zero mechanisms landed this run, so every #1357 forward guard stays green: max-1044, zero-1045 all forms, fortieth absent, 48th-64th members intact, no sixty-fifth member, ledger holds at 64; the no-Type-B-#1358 pin flips green post-repin)
 
 ### Rotation transparency
 - This run is iteration #1358 Type B, the FOURTH leg of the 1355-1359 window (D #1355 -> E #1356 -> A #1357 -> B #1358 -> C #1359 per the #565 anchor + rotation guard).
@@ -1003,7 +1003,7 @@ README stats table 78178/1677 -> 78247/1678 (+69/+1); README test-table row; doc
 - Main commit `93d015a7cf1c72a1caaff6cced5f1c7aefaddb88` - verified via git rev-parse
 - Anchor followup `542bc5e9` (ANCHORED_SHA patched per #565; PRED_MAIN_1353 re-pinned in own file per #721; the #1352 predecessor file's copy re-pinned in the terminal log-hash followup per #721/#1292)
 - Doc-sync `4e70ae40` (this commit)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1353 re-pinned to the main sha in the #1353 test file per #721 (the no-Type-B-#1353 pin flips green post-repin); PRED_MAIN_1353 re-pinned to the main sha in the #1352 test file per #721/#1292 (the #1352 no-Type-A-#1353 pin stays red BY DESIGN - type-mismatched, unsatisfiable since #1353 is Type B per the rotation; TestStalenessPins1353 expects "1 failed, 24 passed" on TestGuardLifecycle1352, verified empirically pre-commit). Type B lands zero mechanisms, so the 1043-numeric/underscore/dash + no-sixty-fifth-member pins stay green.
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1353 re-pinned to the main sha in the #1353 test file per #721 (the no-Type-B-#1353 pin flips green post-repin); PRED_MAIN_1353 re-pinned to the main sha in the #1352 test file per #721/#1292 (the #1352 no-Type-A-#1353 pin stays red BY DESIGN - type-mismatched, unsatisfiable since #1353 is Type B per the rotation; TestStalenessPins1353 expects "1 failed, 24 passed" on TestGuardLifecycle1352, verified empirically pre-commit). Type B lands zero mechanisms, so the 1043-numeric/underscore/dash + no-sixty-fifth-member pins stay green.
 
 ### Rotation transparency
 - This run is iteration #1353 Type B, the FOURTH leg of the 1350-1354 window (D #1350 -> E #1351 -> A #1352 -> B #1353 -> C #1354 per the #565 anchor + rotation guard).
@@ -1049,7 +1049,7 @@ README stats table 78082/1676 -> 78178/1677 (+96/+1); README test-table row; doc
 - Main commit 2b33a0406fd0eca02c75cac70086bb9f9d5dab5a - verified via git rev-parse
 - Anchor followup b12cace553e7d9281ad5980ab9a2a691822feb83 (ANCHORED_SHA patched per #565; PRED_MAIN_1352 re-pinned in own file per #721; the #1351 predecessor file's copy re-pinned in the terminal log-hash followup per the #1292 re-pin-both-copies precedent)
 - Doc-sync d162dbc79693395db169730abb2bbcaa125f3e4b
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1352 re-pinned to the main sha in the #1351 test file per #721/#1292 (the #1351 no-Type-A-#1352 forward pin flips green post-repin; TestStalenessPins1352 expects 2 failed, 25 passed on TestGuardLifecycle1351 - the two #1272-class expiries: max-1041 and 1042-numeric-absent-in-profiles; the #1191-class self-trip flips green post-repin; the 1042-underscore/dash + no-sixty-fifth-member + ledger-holds-at-64 pins stay green).
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1352 re-pinned to the main sha in the #1351 test file per #721/#1292 (the #1351 no-Type-A-#1352 forward pin flips green post-repin; TestStalenessPins1352 expects 2 failed, 25 passed on TestGuardLifecycle1351 - the two #1272-class expiries: max-1041 and 1042-numeric-absent-in-profiles; the #1191-class self-trip flips green post-repin; the 1042-underscore/dash + no-sixty-fifth-member + ledger-holds-at-64 pins stay green).
 
 ### Rotation transparency
 - This run is iteration #1352 Type A, the THIRD leg of the 1350-1354 window (D #1350 -> E #1351 -> A #1352 -> B #1353 -> C #1354 per the #565 anchor + rotation guard).
@@ -1096,7 +1096,7 @@ README stats table 77973/1675 -> 78082/1676 (+113/+1); README test-table row; do
 - Main commit 2de722956f7e8186d66dfe097403f659c050d06e - verified via git rev-parse
 - Anchor followup 47f671e5fd62b97cf6573abce56c617b4eaad9e0 (ANCHORED_SHA patched per #565; PRED_MAIN_1351 re-pinned in own file per #721)
 - Doc-sync d71063b5 (README 77973/1675 -> 78082/1676; test-table row; ARCHITECTURE tree row; iteration-log entry; podcast-sentiment.md updates)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1351 re-pinned to the main sha in the #1351 test file per #721 (the no-Type-E-#1351-in-git-log own-run pin flips green post-repin); PRED_MAIN_1351 re-pinned to the main sha in the #1350 test file per #721/#1292 (the #1350 no-Type-E-#1351 forward pin flips green post-repin; TestStalenessPins1351 expects 28 passed on TestGuardLifecycle1350)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1351 re-pinned to the main sha in the #1351 test file per #721 (the no-Type-E-#1351-in-git-log own-run pin flips green post-repin); PRED_MAIN_1351 re-pinned to the main sha in the #1350 test file per #721/#1292 (the #1350 no-Type-E-#1351 forward pin flips green post-repin; TestStalenessPins1351 expects 28 passed on TestGuardLifecycle1350)
 
 ### Rotation transparency
 - This run is iteration #1351 Type E, the SECOND leg of the 1350-1354 window (D #1350 -> E #1351 -> A #1352 -> B #1353 -> C #1354 per the #565 anchor + rotation guard).
@@ -1146,7 +1146,7 @@ README stats table 77870/1674 -> 77973/1675 (+103/+1); README test-table row; do
 - Main commit 238da12bf7f4d163204cfc7ddccd377616ec0e52 - verified via git rev-parse
 - Anchor followup ad150bc905c327835fdc11c9813bc2b4cf8cff7e (ANCHORED_SHA patched per #565; PRED_MAIN_1350 re-pinned in BOTH files per #721/#1292)
 - Doc-sync d021c8f695e57e8452c13f1aecaaa44199c05114
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1350 re-pinned to the main sha in the #1350 test file per #721 (the no-Type-D-#1350-in-git-log own-run pin flips green post-repin); PRED_MAIN_1350 re-pinned to the main sha in the #1349 test file per #721/#1292 (the #1349 no-Type-D-#1350 forward pin flips green post-repin; TestStalenessPins1350 expects 27 passed on TestGuardLifecycle1349 - the no-Type-D-#1350 pin flips GREEN post-repin (the #1191-class self-trip, PRED_MAIN_1350 holds the main sha per #721/#1292); the 1042-numeric/underscore/dash + no-sixty-fifth-member pins stay green. Correction: the pre-commit draft expected "1 failed, 26 passed" (wrong Type C model); the Type D correct form is all-green per the #1345 precedent; fixed in the #1350 fixup commit.
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1350 re-pinned to the main sha in the #1350 test file per #721 (the no-Type-D-#1350-in-git-log own-run pin flips green post-repin); PRED_MAIN_1350 re-pinned to the main sha in the #1349 test file per #721/#1292 (the #1349 no-Type-D-#1350 forward pin flips green post-repin; TestStalenessPins1350 expects 27 passed on TestGuardLifecycle1349 - the no-Type-D-#1350 pin flips GREEN post-repin (the #1191-class self-trip, PRED_MAIN_1350 holds the main sha per #721/#1292); the 1042-numeric/underscore/dash + no-sixty-fifth-member pins stay green. Correction: the pre-commit draft expected "1 failed, 26 passed" (wrong Type C model); the Type D correct form is all-green per the #1345 precedent; fixed in the #1350 fixup commit.
 
 ### Rotation transparency
 - This run is iteration #1350 Type D, the FIRST and OPENING leg of the 1350-1354 window (D #1350 -> E #1351 -> A #1352 -> B #1353 -> C #1354 per the #565 anchor + rotation guard).
@@ -1195,7 +1195,7 @@ README stats table 77769/1673 -> 77870/1674 (+101/+1); README test-table row; do
 - Main commit TBD - verified via git rev-parse
 - Anchor followup TBD (ANCHORED_SHA patched per #565; PRED_MAIN_1349 re-pinned in BOTH files per #721/#1292)
 - Doc-sync TBD (this commit)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1349 re-pinned to the main sha in the #1349 test file per #721 (the no-Type-C-#1349-in-git-log own-run pin flips green post-repin); PRED_MAIN_1349 re-pinned to the main sha in the #1348 test file per #721/#1292 (the #1348 no-Type-C-#1349 forward pin flips green post-repin; TestStalenessPins1349 expects 1 failed, 24 passed on TestGuardLifecycle1348 - the no-Type-C-#1349 pin flips GREEN post-repin (the #1191-class self-trip, PRED_MAIN_1349 holds the main sha per #721/#1292); the 1041-numeric pin stays red BY DESIGN (the #1272-class forward-guard expiry, consumed by the m1041 landing); the 1042-numeric/underscore/dash + no-sixty-fifth-member pins stay green.
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1349 re-pinned to the main sha in the #1349 test file per #721 (the no-Type-C-#1349-in-git-log own-run pin flips green post-repin); PRED_MAIN_1349 re-pinned to the main sha in the #1348 test file per #721/#1292 (the #1348 no-Type-C-#1349 forward pin flips green post-repin; TestStalenessPins1349 expects 1 failed, 24 passed on TestGuardLifecycle1348 - the no-Type-C-#1349 pin flips GREEN post-repin (the #1191-class self-trip, PRED_MAIN_1349 holds the main sha per #721/#1292); the 1041-numeric pin stays red BY DESIGN (the #1272-class forward-guard expiry, consumed by the m1041 landing); the 1042-numeric/underscore/dash + no-sixty-fifth-member pins stay green.
 
 ### Rotation transparency
 - This run is iteration #1349 Type C, the FIFTH and CLOSING leg of the 1345-1349 window (D #1345 -> E #1346 -> A #1347 -> B #1348 -> C #1349 per the #565 anchor + rotation guard).
@@ -1242,7 +1242,7 @@ README stats table 77670/1672 -> 77769/1673 (+99/+1); README test-table row; doc
 - Main commit `a78d889cdf5f4cd8a10f48529284af6dfd89602e` - verified via git rev-parse
 - Anchor followup `fbcb8b7b` (ANCHORED_SHA patched per #565; PRED_MAIN_1348 re-pinned in BOTH files per #721/#1292)
 - Doc-sync TBD (this commit)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1348 re-pinned to the main sha in the #1348 file and the #1347 file per #721 (the no-Type-B-#1348 pin flips green post-repin; TestStalenessPins1348 expects 2 failed, 23 passed on TestGuardLifecycle1347); PRED_MAIN_1348 re-pinned to the main sha in the #1347 test file per #721/#1292 (the #1347 no-Type-B-#1348 pin flips green post-repin; the 1040-numeric pin stays red BY DESIGN at the main commit (the #1272-class forward-guard expiry, documented in TestStalenessPins1348), not repaired). Type B lands one mechanism, so the 1041-numeric/underscore/dash forward-guard pins stay green.
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1348 re-pinned to the main sha in the #1348 file and the #1347 file per #721 (the no-Type-B-#1348 pin flips green post-repin; TestStalenessPins1348 expects 2 failed, 23 passed on TestGuardLifecycle1347); PRED_MAIN_1348 re-pinned to the main sha in the #1347 test file per #721/#1292 (the #1347 no-Type-B-#1348 pin flips green post-repin; the 1040-numeric pin stays red BY DESIGN at the main commit (the #1272-class forward-guard expiry, documented in TestStalenessPins1348), not repaired). Type B lands one mechanism, so the 1041-numeric/underscore/dash forward-guard pins stay green.
 
 ### Rotation transparency
 - This run is iteration #1348 Type B, the FOURTH leg of the 1345-1349 window (D #1345 -> E #1346 -> A #1347 -> B #1348 -> C #1349 per the #565 anchor + rotation guard).
@@ -1289,7 +1289,7 @@ README stats table 77570/1671 -> 77670/1672 (+100/+1); README test-table row; do
 - Main commit `f027435cbbb44187fe3fe9ae95f5f1c88c71b646` - verified via git rev-parse
 - Anchor followup `aa9da7ad286469be8f9144f7feb1098a6a2c9b9c` (ANCHORED_SHA patched per #565; PRED_MAIN_1347 re-pinned in BOTH files per #721/#1292)
 - Doc-sync `be9578de4e92c0ecf0cf675118eb91c84de028d0` (this commit)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1347 re-pinned to the main sha in the #1347 test file per #721 (the no-Type-A-#1347-in-git-log pin flips green post-repin); PRED_MAIN_1347 re-pinned to the main sha in the #1346 test file per #721/#1292 (the #1346 no-Type-A-#1347 pin flips green post-repin; TestStalenessPins1347 expects "3 failed, 23 passed" on TestGuardLifecycle1346 - the no-Type-A-#1347 pin flips BY DESIGN at the main commit (the #1191-class self-trip, re-pinned green in the anchor followup); the 1039-numeric/underscore/dash + no-sixty-fourth-member pins stay green.
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1347 re-pinned to the main sha in the #1347 test file per #721 (the no-Type-A-#1347-in-git-log pin flips green post-repin); PRED_MAIN_1347 re-pinned to the main sha in the #1346 test file per #721/#1292 (the #1346 no-Type-A-#1347 pin flips green post-repin; TestStalenessPins1347 expects "3 failed, 23 passed" on TestGuardLifecycle1346 - the no-Type-A-#1347 pin flips BY DESIGN at the main commit (the #1191-class self-trip, re-pinned green in the anchor followup); the 1039-numeric/underscore/dash + no-sixty-fourth-member pins stay green.
 
 ### Rotation transparency
 - This run is iteration #1347 Type A, the THIRD leg of the 1345-1349 window (D #1345 -> E #1346 -> A #1347 -> B #1348 -> C #1349 per the #565 anchor + rotation guard).
@@ -1335,7 +1335,7 @@ README stats table 77463/1670 -> 77570/1671 (+107/+1); README test-table row; do
 - Main commit `9adb96df467924dbb9295f8c3dc3ac8c299c00c1` - verified via git rev-parse
 - Anchor followup `fe70ef530f13017ec8a1a6967b096f9dfdc56721` (ANCHORED_SHA patched per #565, self-anchor)
 - Doc-sync `5c0591b72a6b31b093d64bb68043d73d3ba870e5` (README 77463/1670 -> 77570/1671; test-table row; ARCHITECTURE tree row; iteration-log entry; podcast-sentiment.md AS 191->192 + ## Iteration #1346 section)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1346 re-pinned to the main sha in the #1346 file per #721 (the no-Type-E-#1346-in-git-log own-run pin flips green at the re-pin, verified); PRED_MAIN_1346 re-pinned to the main sha in the #1345 file per #721/#1292 (the #1345 no-Type-E-#1346 forward pin flips green post-repin; TestGuardLifecycle1345 settles at 27 passed - the no-Type-E-#1346 forward pin re-pinned green, verified); the no-Type-A-#1347 forward pin stays red BY DESIGN until #1347's terminal followup.
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1346 re-pinned to the main sha in the #1346 file per #721 (the no-Type-E-#1346-in-git-log own-run pin flips green at the re-pin, verified); PRED_MAIN_1346 re-pinned to the main sha in the #1345 file per #721/#1292 (the #1345 no-Type-E-#1346 forward pin flips green post-repin; TestGuardLifecycle1345 settles at 27 passed - the no-Type-E-#1346 forward pin re-pinned green, verified); the no-Type-A-#1347 forward pin stays red BY DESIGN until #1347's terminal followup.
 
 ### Rotation transparency
 - This run is iteration #1346 Type E, the SECOND leg of the 1345-1349 window (D #1345 -> E #1346 -> A #1347 -> B #1348 -> C #1349 per the #565 anchor + rotation guard).
@@ -1380,7 +1380,7 @@ README stats table 77362/1669 -> 77463/1670 (+101/+1); README test-table row; do
 - Main commit `fbd9c635e81575717ac42b1124d8f99484fd5749` - verified via git rev-parse
 - Anchor followup `ab258f7810740e80a7bfbba8b1be107319d092c4` (ANCHORED_SHA patched per #565; PRED_MAIN_1345 re-pinned in BOTH files per #721/#1292 in the terminal followup)
 - Doc-sync `418eac94cbcdaeef01446f9a803bf18d12c9c577` (this commit)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1345 re-pinned to the main sha in the #1345 test file per #721 (the no-Type-D-#1345-in-git-log pin flips green post-repin); PRED_MAIN_1345 re-pinned to the main sha in the #1344 test file per #721/#1292 (the #1344 no-Type-D-#1345 pin flips green post-repin; TestStalenessPins1345 expects 26 passed on TestGuardLifecycle1344 - the no-Type-D-#1345 pin flips BY DESIGN at the main commit (the #1191-class self-trip, re-pinned green in the terminal followup); the 1039-form pins stay green because Type D lands no mechanisms; the member and direction pins stay green (no member, no direction landed this run)); 1039-numeric/underscore/dash + no-sixty-fourth-member pins stay green.
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1345 re-pinned to the main sha in the #1345 test file per #721 (the no-Type-D-#1345-in-git-log pin flips green post-repin); PRED_MAIN_1345 re-pinned to the main sha in the #1344 test file per #721/#1292 (the #1344 no-Type-D-#1345 pin flips green post-repin; TestStalenessPins1345 expects 26 passed on TestGuardLifecycle1344 - the no-Type-D-#1345 pin flips BY DESIGN at the main commit (the #1191-class self-trip, re-pinned green in the terminal followup); the 1039-form pins stay green because Type D lands no mechanisms; the member and direction pins stay green (no member, no direction landed this run)); 1039-numeric/underscore/dash + no-sixty-fourth-member pins stay green.
 
 ### Rotation transparency
 - This run is iteration #1345 Type D, the FIRST and OPENING leg of the 1345-1349 window (D #1345 -> E #1346 -> A #1347 -> B #1348 -> C #1349 per the #565 anchor + rotation guard).
@@ -52178,13 +52178,13 @@ Push status (this run): DONE - four commits pushed and ls-remote-verified at the
 
 ## #1375 Type D: m1047 qualitative-discipline corpus-integrity verification + #1370 background-suite verdict (DEAD at [  2%] - TWENTY-FIFTH consecutive death of the new streak, tombstone lineage ONE-HUNDRED-THIRTY-SECOND -> ONE-HUNDRED-THIRTY-THIRD) + regression sweep (26 failed / 424 passed, 1370-1374 window files, all triaged by-design, 0 remaining defects) + fresh engine-layer synthetic calibration + suite re-launch - Type D FIRST and OPENING leg of the 1375-1379 window (Oct 10 2026, ~3:15 PM PDT; main commit 4f883f95 / anchor ec1f5de5 / doc-sync TBD; log-hash followup registers all hashes here per #721 (this commit); doc-sync 80115/1699 -> 80209/1700 (+94/+1); in-gate: 81 passed + 13 deselected per the file's own per-test deselect set (TestAnchor1375 2 + TestGuardLifecycle1375 2 + TestBackgroundSuiteVerdict1375 1 + TestDocSync1375 3 + TestIterationLog1375 3 + TestStalenessPins1375 1 + TestSuiteRelaunch1375 1; 3 in-gate defects found and fixed - anchor patched-form deselect, tombstone appended to prior log, last-write method rename); 94 tests, 13 classes; test-file constants post-sync-positive per #719 (README_TEST_COUNT=80209, README_FILE_COUNT=1700 patched pre-main); #1376 forward guard staged (PRED_MAIN_1376 0*40 placeholder per #721, no-Type-E-#1376 pin - #1376 continues the 1375-1379 window as Type E, correct type per the #1352 type-mismatch lesson); background-suite verdict belongs to #1380 per #795 (the #1375-launched suite RE-LAUNCHED this run - observed ALIVE at launch, dots accumulating); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main 4f883f95 / anchor ec1f5de5 / doc-sync TBD / log-hash (this commit)
+- Hash chain: main 4f883f95 / anchor ec1f5de5 / doc-sync 0f304213 / log-hash (this commit)
 
 ### Commit hashes
 - Main commit `4f883f95` - verified via git rev-parse (full 4f883f9557ea526016198ae1d4405b24e58e4ed8)
 - Anchor followup `ec1f5de5` (full ec1f5de5fcbabbb019eaf5396cbce2168bc5f8f4) (ANCHORED_SHA patched per #565; PRED_MAIN_1375 re-pinned to 4f883f9557ea526016198ae1d4405b24e58e4ed8 in own file per #721/#1292; NOTE: the anchor commit's message carries no placeholder tail - the file patch and this entry carry the verified full sha)
-- Doc-sync TBD (full TBD) (README 80115/1699 -> 80209/1700; test-table row; ARCHITECTURE tree row; iteration-log entry)
-- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1375 re-pinned to 4f883f9557ea526016198ae1d4405b24e58e4ed8 in the #1374 predecessor file per #721/#1292 (the no-Type-D-#1375-in-git-log pin flips green post-repin in both copies; TestStalenessPins1375 expects 30 passed on TestGuardLifecycle1374 post-terminal)
+- Doc-sync `0f304213` (full 0f304213ad6f842f969cfc7af38854b536ee6445) (README 80115/1699 -> 80209/1700; test-table row; ARCHITECTURE tree row; iteration-log entry)
+- Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here (4f883f95 / ec1f5de5 / 0f304213); PRED_MAIN_1375 re-pinned to 4f883f9557ea526016198ae1d4405b24e58e4ed8 in the #1374 predecessor file per #721/#1292 (the no-Type-D-#1375-in-git-log pin flips green post-repin in both copies; TestStalenessPins1375 expects 30 passed on TestGuardLifecycle1374 post-terminal)
 
 ### Rotation transparency
 - This run is iteration #1375 Type D, the FIRST and OPENING leg of the 1375-1379 window (D #1375 -> E #1376 -> A #1377 -> B #1378 -> C #1379 per the #565 anchor + rotation guard).
@@ -52220,7 +52220,7 @@ README stats table 80115/1699 -> 80209/1700 (+94/+1); README test-table row; doc
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging: README.md + docs/ARCHITECTURE.md + iteration-log.md in doc-sync). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run): PENDING - four commits staged for push (4f883f95 main + ec1f5de5 anchor + TBD doc-sync + TBD log-hash); explicit https URL rayhe/mediascope-asymmetry.git, IPv6-literal proxy recipe; URL-embedded PAT fallback per the #1371 rc-128 lesson; pushed the local-HEAD refspec per the #1364 precedent; origin is SSH under the insteadOf - never pushed the origin nickname; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846
+Push status (this run): PENDING - four commits staged for push (4f883f95 main + ec1f5de5 anchor + 0f304213 doc-sync + TBD log-hash); explicit https URL rayhe/mediascope-asymmetry.git, IPv6-literal proxy recipe; URL-embedded PAT fallback per the #1371 rc-128 lesson; pushed the local-HEAD refspec per the #1364 precedent; origin is SSH under the insteadOf - never pushed the origin nickname; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846
 
 ---
 
