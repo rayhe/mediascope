@@ -112,7 +112,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = "test_type_c_1359_financial_incentive_saturation_oct10_2am.py"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "7795bebf6e978c513a9ebbd76cc823bb03747154"  # patched to the main-commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -141,7 +141,7 @@ PRED_LOGHASH_1357 = "830034627613eb81ce19b6d75e073ad1d06bb7b9"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-C-#1359 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in #1359's terminal log-hash followup per #721.
-PRED_MAIN_1359 = "0" * 40  # re-pinned to #1359 main sha in the terminal log-hash followup per #721/#1292
+PRED_MAIN_1359 = "7795bebf6e978c513a9ebbd76cc823bb03747154"  # re-pinned to #1359 main sha in the anchor followup per #721/#1292 (own-file copy; the #1358 file copy re-pinned in the same followup)
 
 # #1360's main commit (full sha), for the ancestor-form no-Type-D-#1360
 # pin (the #1191-class self-trip; #1360 is Type D per the rotation and
