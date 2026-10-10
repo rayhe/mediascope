@@ -153,7 +153,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = "test_type_b_1373_saturation_screening_oct10_2pm.py"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "9cb2b6cd92de9faef3bf0bb2a31b904947ffea85"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -176,7 +176,7 @@ PRED_PUSH_1372 = "8cb0bc7229adfaf7c8c9df45b1731957ead653f2"
 # no-Type-B-#1373 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in the anchor followup per #721 (PRED_MAIN_1373 re-pinned
 # in BOTH this file and the #1372 file per the #1292 precedent).
-PRED_MAIN_1373 = "0" * 40
+PRED_MAIN_1373 = "9cb2b6cd92de9faef3bf0bb2a31b904947ffea85"  # re-pinned to the #1373 main sha in the anchor followup per #721/#1292
 
 # #1374's main commit (full sha), for the ancestor-form no-Type-C-#1374
 # pin (the #1191-class self-trip; #1374 is Type C per the rotation).
