@@ -152,7 +152,7 @@ PRED_FINAL_1352 = "011098483230968dbdc1c53b2bdd4cffcf6eacab"
 
 # Forward guard for #1355 (Type D): placeholder per #721; re-pinned to
 # the main sha in the terminal log-hash followup of the #1355 run.
-PRED_MAIN_1355 = "0" * 40
+PRED_MAIN_1355 = "9fd89cb4b8559a4258f354a247cf58fc74d69d4d"
 
 # Own-run main-commit placeholder per #721: 0*40 pre-commit, re-pinned
 # to this run's main sha in the terminal log-hash followup (in BOTH
