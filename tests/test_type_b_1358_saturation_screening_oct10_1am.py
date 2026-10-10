@@ -105,7 +105,7 @@ JOURNALISTS_PATH = os.path.join(PROFILES_DIR, "careers", "journalists.yaml")
 OWN_BASENAME = "test_type_b_1358_saturation_screening_oct10_1am.py"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # 0*40 pre-commit; patched to the main-commit sha in the anchor followup per #565
+ANCHORED_SHA = "908543be62bb67b02516ad7cd13422ee6078bb4f"  # patched to the main-commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -128,7 +128,7 @@ PRED_PUSH_1357 = "69e20bb0534da97249dd15f114d3911142e2a128"
 # This run's main commit (full sha), for the ancestor-form
 # no-Type-B-#1358 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in #1358's terminal log-hash followup per #721.
-PRED_MAIN_1358 = "0" * 40  # re-pinned to the #1358 main sha in the terminal log-hash followup per #721/#1292
+PRED_MAIN_1358 = "908543be62bb67b02516ad7cd13422ee6078bb4f"  # re-pinned to the #1358 main sha in the anchor followup per #721/#1292
 
 # #1359's main commit (full sha), for the ancestor-form no-Type-C-#1359
 # pin (the #1191-class self-trip; #1359 is Type C per the rotation).
