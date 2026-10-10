@@ -675,12 +675,20 @@ class TestGuardLifecycle1366:
 
 
 class TestStalenessPins1366:
-    def test_guard_lifecycle_1365_at_head(self):
-        # The #1365 forward pins at HEAD: 7 passed, 1 failed - the
-        # no-Type-E-#1366 pin trips BY DESIGN pre-commit (the
-        # #1191-class forward-pin self-trip; re-pinned green in this
-        # run's terminal log-hash followup per #721/#1292), not
-        # repaired. Documented, not fixed.
+    def test_1365_guard_lifecycle_post_terminal_followup(self):
+        # Post-terminal-followup form: all 9 pass. The
+        # no_type_e_1366_in_git_log pin (the #1191-class self-trip:
+        # this run's main commit carries "Type E #1366") flipped BY
+        # DESIGN at this run's main commit and is re-pinned green in
+        # the terminal log-hash followup per #721 (PRED_MAIN_1366 now
+        # holds this run's main sha in BOTH this file (anchor
+        # followup) and the #1365 file (this followup) per the #1292
+        # precedent). The 1046-form pins stay green throughout (Type E
+        # lands no mechanisms); the member and direction pins stay
+        # green (no member, no direction landed this run). The #1365
+        # block is read-only to this run; the flip is documented here,
+        # not repaired. Deselected pre-commit (verified only
+        # post-terminal-followup).
         r = subprocess.run(
             ["python3", "-m", "pytest",
              os.path.join(TESTS_DIR, E1365_FILE)
@@ -689,7 +697,7 @@ class TestStalenessPins1366:
             capture_output=True, text=True, timeout=300, cwd=REPO_ROOT,
         )
         tail = r.stdout.strip().splitlines()[-1]
-        assert "1 failed, 8 passed" in tail, tail
+        assert "9 passed" in tail, tail
 
 
 # ---------------------------------------------------------------------------
