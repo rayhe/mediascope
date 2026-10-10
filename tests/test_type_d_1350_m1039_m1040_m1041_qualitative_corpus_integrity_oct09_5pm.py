@@ -1167,7 +1167,7 @@ class TestGuardLifecycle1350:
 
 class TestStalenessPins1350:
     def test_1349_guard_lifecycle_post_terminal_followup(self):
-        # Post-terminal-followup form: 26 passed, 1 failed. The
+        # Post-terminal-followup form: all 27 pass. The
         # no_type_d_1350_in_git_log pin (the #1191-class self-trip:
         # this run's main commit carries "Type D #1350") flipped BY
         # DESIGN at this run's main commit and is re-pinned green in
@@ -1180,9 +1180,17 @@ class TestStalenessPins1350:
         # block is read-only to this run; the flip is documented here,
         # not repaired. Deselected pre-commit (verified only
         # post-terminal-followup).
+        #
+        # Correction note: the pre-commit draft of this pin asserted
+        # "1 failed, 26 passed", modeled on #1349's Type C staleness
+        # pin (where the 1041-numeric #1272-class expiry stays red by
+        # design). That model was wrong for a Type D run: Type D
+        # lands no mechanisms, so no #1272-class expiry exists and
+        # the correct post-terminal form is the #1345 precedent -
+        # all green. Fixed in the #1350 fixup commit.
         res = _class_run(E1349_FILE, "TestGuardLifecycle1349")
         out = res.stdout + res.stderr
-        assert "1 failed, 26 passed" in out, out[-2000:]
+        assert "27 passed" in out, out[-2000:]
 
 
 # ---------------------------------------------------------------------------
