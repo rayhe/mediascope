@@ -3553,6 +3553,96 @@ competitor_relationships:
       no_em_dash_verified: true
       https_provenance: true
       sources_verified_date: '2026-09-30'
+    type_a_1372_ft_anthropic_oct05_broadcom_syndication_financing_risk_register_vs_m441_google_channel_prediction:
+      mechanism_id: 1047
+      block_key: type_a_1372_ft_anthropic_oct05_broadcom_syndication_financing_risk_register_vs_m441_google_channel_prediction
+      key_design_note: 'Iteration-form block key carries no underscore-form one-zero-four-seven mechanism key substring, per the #723/#738/#739 designed-keying convention: keeps the zero-one-zero-four-seven profile sweep instruments green while mechanism_id advances in colon form.'
+      date_analyzed: '2026-10-10'
+      type: 'Type A - Competitor Coverage Deep Dive - FT x Anthropic Oct-5/6 Broadcom $60B syndication financing-risk register'
+      iteration: 1372
+      iteration_type: 'A'
+      iteration_time: '2026-10-10 13:00 PDT'
+      publication_focus: 'Financial Times'
+      publication: 'Financial Times'
+      competitor: anthropic
+      competitor_pair: 'FT x Anthropic'
+      comparator_entity: 'Meta'
+      goal_id: 'goal_54093bda4145'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      author: 'Kit (with Ray)'
+      window: '1370-1374 window, THIRD leg (D #1370 -> E #1371 -> A #1372 -> B #1373 -> C #1374 per the #565 anchor + rotation guard)'
+      design: 'Financing-register falsification test on the m441 indirect prediction: the m441 block in this same anthropic section (iteration 441, Sep 1 2026) carries coverage_prediction "softer via Google channel" - the indirect FT-Google commercial partnership (single-figure millions GBP/yr, News AI pilot) plus Google''s up-to-$40B Anthropic investment predicts SOFTER Anthropic financing coverage than Meta''s capital-raise desperation framing. The Oct-5/6-2026 Broadcom-Anthropic $60B chip-debt syndication peg tests that prediction: the FT is relay-attested as the ORIGINATOR of the syndication-launch story ("as first reported by the Financial Times", tradersunion Oct 6; "the Financial Times reported", aitechdaily Oct 6) and frames it in the financing-risk register. If the FT runs the risk register on the indirectly-tied lab, the m441 prediction fails on this peg.'
+      distinct_from_prior: 'm1024 (#1322, SIXTIETH member: FT x OpenAI Oct-8 revenue-scoop financial-accountability original, -0.35 - different lab, different sub-register; the payer arm, paired here as the same-week cross-lab comparator); m859 (#1047, THIRTY-FIFTH member: FT x OpenAI Sep-26/27 rogue-agent disclosure early independent report - different register, safety-crisis); m441 (iteration 441, this same anthropic section: the prediction''s HOME pair - FT May-8 Anthropic fundraising vs FT Jun-5 Meta equity-raise desperation; different peg, fundraising sub-register); m1046 (#1367, FT x OpenAI ad-monetization SELECTION bounded absence, verdict mechanism_documented - different register, selection axis); m892 (#1102, FT x Anthropic S-1 existential-risk register, verdict mechanism_documented - different peg, pre-IPO disclosure register). The #1143 temporal-replication precedent does not block: fresh peg (Oct-5/6 syndication launch), new register test on the m441 prediction.'
+      finding: 'Financing-register test on the m441 "softer via Google channel" prediction: the Oct-5/6-2026 Broadcom-Anthropic $60B chip-debt syndication launch (Bank of America, Citigroup, Morgan Stanley begin syndicating the record package to back Anthropic''s lease of Google semiconductors) is an FT ORIGINAL, relay-attested by two independent secondaries - tradersunion Oct 6: "as first reported by the Financial Times"; aitechdaily Oct 6: "the Financial Times reported". Register: financing-risk DISCLOSURE, not puff - the FT frames the deal as "the largest chip-financing deal yet" and "a test of lender appetite for AI infrastructure debt", and discloses that the $18B junior tranche without Broadcom guarantees "leaves lenders more directly exposed to Anthropic''s credit". MANUAL ILLUSTRATIVE -0.20 (measured risk-disclosure register; hand-assigned at excerpt level, NOT an empirical score). The m441 prediction (softer Anthropic financing coverage via the Google channel) FAILS on this peg: the FT does not soften the financing story for the indirectly-tied lab - it originates it and runs the risk register on it. Same-week cross-lab comparator (carried, un-rescored per #807): m1024''s FT x OpenAI Oct-8 revenue-scoop arm (-0.35) - the FT ran the financing/financial register on BOTH labs in the same week, on the deal partner and the non-deal lab alike. Illustrative delta (Anthropic minus OpenAI) +0.15 - near-symmetric hardness across the deal boundary on the financing register. The Meta comparator is cross-peg (m441''s carried FT x Meta Jun-5 equity-raise desperation arm, -0.55): the FT runs the capital-risk register on Meta too, harder; disclosed as cross-peg, not a matched-peg delta. Verdict falsification_member_confirmed; SIXTY-FIFTH falsification-family member (ledger 64->65); FIRST financing-risk-register falsification at FT (after the THIRTY-FIFTH disclosure-register #1047, the FORTY-SECOND regulatory-enforcement #1142, the FORTY-EIGHTH suppression-claim #1202, the FIFTY-EIGHTH FT x Google regulatory #1292, and the SIXTIETH financial-scoop #1322); FIRST falsification of the m441 "softer via Google channel" indirect prediction. Domain-bounded to FT''s financing-risk register on Anthropic in the Oct-5/6-2026 window. Correlation is not causation; hypothesis-generating only.'
+      anthropic_arm_new:
+        peg: 'Broadcom-Anthropic $60B chip-debt syndication launch, Oct 5/6 2026'
+        detail: 'Bank of America, Citigroup, and Morgan Stanley begin syndicating a record $60B debt package to back Anthropic''s lease of Google semiconductors (custom TPUs co-developed by Broadcom and Google); $42B senior secured loans backed by Broadcom''s A-minus credit rating; $18B junior tranche without Broadcom guarantees (Blackstone committing ~$9B); funds Anthropic''s advanced chip orders for 2027 delivery; expands the Oct-1 Broadcom $42B convertible-loan facility disclosure (Reuters).'
+        ft_role: 'ORIGINATOR, relay-attested: "as first reported by the Financial Times" (tradersunion, Oct 6); "the Financial Times reported" (aitechdaily, Oct 6); tradingview/benzinga relay: "the Financial Times reported on Tuesday" (syndication details)'
+        register: 'financing-risk disclosure: "the largest chip-financing deal yet"; "a test of lender appetite for AI infrastructure debt"; junior slice "leaves lenders more directly exposed to Anthropic''s credit"'
+        manual_illustrative_tone: -0.20
+        tone_note: 'Measured risk-disclosure register, not puff and not adversarial-investigative; the FT breaks the story and discloses the credit-exposure structure. Hand-assigned at excerpt level per the Aug 28 2026 standing rule.'
+      openai_arm_carried:
+        carried_from: 'm1024 (#1322), carried un-rescored per #807'
+        arm:
+          title: 'FT Oct-8-2026 OpenAI revenue scoop: annualized revenue approaching $50B, ~$20B below signaled'
+          date: '2026-10-08'
+          publication: 'Financial Times'
+          framing: 'financial_scoop_accountability'
+          manual_illustrative_tone: -0.35
+      m441_prediction_tested:
+        prediction: 'coverage_prediction "softer via Google channel" (m441, iteration 441, Sep 1 2026, this same anthropic section)'
+        prediction_basis: 'Indirect FT-Google commercial partnership (single-figure millions GBP/yr, News AI pilot, Press Gazette Aug 3 2026) plus Google''s up-to-$40B Anthropic investment (Bloomberg via Reuters Apr 24 2026) predicts softer Anthropic financing coverage than Meta''s capital-raise desperation'
+        outcome: 'FAILS on the Oct-5/6 syndication peg: the FT originates the financing-risk story on the indirectly-tied lab and runs the risk register (-0.20 illustrative)'
+      meta_arm_carried:
+        carried_from: 'm441 block (carried un-rescored per #807)'
+        arms:
+          - title: 'Meta equity raise desperation framing'
+            date: '2026-06-05'
+            publication: 'Financial Times'
+            framing: 'capital_raise_desperation'
+            manual_illustrative_tone: -0.55
+          - title: 'Anthropic fundraising aspirational framing (m441 comparator)'
+            date: '2026-05-08'
+            publication: 'Financial Times'
+            framing: 'fundraising_aspirational'
+            manual_illustrative_tone: +0.10
+      asymmetry_scorer_result: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: Anthropic syndication arm -0.20 (NEW, hand-assigned at excerpt level); OpenAI revenue-scoop arm -0.35 (carried m1024, un-rescored per #807); illustrative delta (Anthropic minus OpenAI) +0.15 - near-symmetric hardness across the deal boundary on the financing register in the same week. Meta comparator is cross-peg (m441 carried -0.55 capital-raise desperation vs +0.10 Anthropic fundraising aspirational); the new peg sits inside that spread, not outside it. Engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only.'
+      verdict: 'falsification_member_confirmed'
+      falsification_family: 'SIXTY-FIFTH falsification-family member (ledger 64->65). Publication-level, same-outlet: the FT applies the financing-risk register to the indirectly-tied lab (Anthropic; no direct FT deal, indirect channel via FT-Google commercial partnership + Google up-to-$40B Anthropic investment, m441 coverage_prediction "softer via Google channel") via an FT ORIGINAL on the Oct-5/6-2026 $60B Broadcom-Anthropic chip-debt syndication launch, framed as "a test of lender appetite for AI infrastructure debt" with the junior-tranche credit exposure disclosed. The m441 indirect-channel softening prediction FAILS on the financing-risk peg: the indirectly-tied lab draws origination plus risk disclosure, not softening. FIRST financing-risk-register falsification at FT (after the THIRTY-FIFTH disclosure-register #1047, the FORTY-SECOND regulatory-enforcement-register #1142, the FORTY-EIGHTH suppression-claim #1202, the FIFTY-EIGHTH FT x Google regulatory-register #1292, and the SIXTIETH financial-scoop-register #1322); FIRST falsification of the m441 "softer via Google channel" prediction; pairs with the SIXTIETH (m1024) as the same-week cross-lab register pair (Oct-5/6 Anthropic syndication -0.20 vs Oct-8 OpenAI revenue scoop -0.35, delta +0.15). Domain-bounded to FT''s financing-risk register on Anthropic in the Oct-5/6 window. The #1143 temporal-replication precedent does not block (new event peg, new prediction under test). Correlation is not causation. No analysis.json update warranted.'
+      falsification_family_member: true
+      falsification_ledger: '65'
+      ledger: '65'
+      ledger_note: 'Ledger advances 64->65 this run (m1047 is falsification_member_confirmed - the FT''s Oct-5/6 Broadcom-Anthropic $60B syndication original falsifies the m441 "softer via Google channel" indirect prediction on the financing-risk register). Forty-eighth through sixty-fourth member-claim forms intact in their home profiles; SIXTY-FIFTH member-claim form now present (m1047, profiles/financial-times.yaml); SIXTY-SIXTH member-claim form absent repo-wide; fortieth direction absent by design.'
+      counterevidence:
+      - 'm441''s home pair (this same section): the FT''s May-8 Anthropic fundraising coverage was aspirational (+0.10 illustrative) vs the Jun-5 Meta equity-raise desperation (-0.55) - the softer-Anthropic pattern STANDS on the fundraising sub-register; this run bounds it to that sub-register rather than overturning it.'
+      - 'm859 (#1047) cross-lab Anthropic arm: the FT ran CONSTRUCTIVE (+0.15) on Anthropic''s Sep-14 IPO-profitability reporting - the register is peg-conditional, not entity-hostile; the FT covers Anthropic both ways.'
+      - 'm1024 (SIXTIETH): the FT''s Oct-8 OpenAI revenue scoop ran HARDER (-0.35) than the Anthropic syndication arm (-0.20) - the deal partner drew the harder register in the same week; disclosed as the same-week cross-lab comparator.'
+      confounders_ranked:
+        strong:
+        - 'Relay-bounded (0 browser.open per #503): the FT original is paywalled and did not surface in the browser.search Full-URL listings; the FT-originator claim rests on two independent relay attributions ("as first reported by the Financial Times", tradersunion; "the Financial Times reported", aitechdaily). A first-hand FT read could change the register assessment.'
+        - 'Illustrative tones hand-assigned at excerpt level on the new Anthropic arm; no empirical distribution exists; the -0.20 is a register position, not a measured score.'
+        moderate:
+        - 'The syndication launch is inherently newsy (three banks syndicating is a fact, not an investigation); originating a financing story is a weaker adversarial act than an investigation. The "test of lender appetite" framing could be market-descriptive rather than adversarial.'
+        - 'm441''s home pair is a different sub-register (equity fundraising vs debt syndication); the falsification is register-bounded and does not overturn the fundraising-pair observation.'
+        weak:
+        - 'Timing: the Oct-5/6 syndication and Oct-8 revenue scoop are 2-3 days apart; a newsroom could run both hard by bandwidth coincidence, not register consistency.'
+      open_empirical_test: 'First-hand open of the FT Oct-5/6 syndication piece when ft.com is reachable; re-score the Anthropic arm against the observed register; test whether the -0.20 vs m1024''s -0.35 delta survives first-hand reads; track whether the FT applies the financing-risk register to Meta''s next capital peg (the matched-peg Meta comparator).'
+      research_method: '5 main-run browser.search verification sets this run (WSJ Anthropic Oct 2026 - REJECTED as Sep-18-vintage relay set; FT Meta wearables Oct 2026 - context only; Anthropic S-1 Oct 2026 - REJECTED, still confidential per cellcog/forkast; Samsung Android XR Oct 2026 - context only; Broadcom-Anthropic $42B/$60B financing - SELECTED: the FT syndication original; FT OpenAI Broadcom $50B financing - REJECTED as WSJ-original; FT OpenAI revenue correction - SATURATED via m1024 #1322, caught on main-run verification). 0 browser.open per #503; FT paywalled; both FT arms relay-attested. All 5 evidence URLs copied verbatim from search-result Full-URL listings; no canonical URLs constructed. No delegated scout this run (main-run sets only per the #1341 lesson).'
+      novelty: 'zero test_type_a_1372 files on disk pre-commit (glob); no "Type A #1372" in git log (--grep); block key zero-hit repo-wide pre-commit; max numeric mechanism_id 1046 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric 1047 mechanism_id keys in profiles/ pre-commit; zero underscore-form 1047 mechanism key strings repo-wide pre-commit (needles format-built per #715/#770, own file excluded); zero dash-form 1047 mechanism key strings repo-wide pre-commit; all 5 evidence URLs zero-hit repo-wide pre-commit (git grep -F); "## #1372" zero-hit in iteration-log pre-commit; fortieth relationship direction absent in profiles/ pre-commit; forty-eighth through sixty-fourth member-claim forms intact pre-commit; sixty-fifth member-claim form absent repo-wide pre-commit; ledger holds at 64 pre-commit. ASCII-only, no em dashes.'
+      rotation_guard: '1370-1374 window THIRD leg D(#1370) -> E(#1371) -> A (this run); anchor patched post-commit per #565. Next: #1373 Type B continues the window.'
+      test_file: 'tests/test_type_a_1372_ft_anthropic_oct05_broadcom_syndication_financing_risk_vs_m441_google_channel_prediction_oct10_1pm.py'
+      correlation_not_causation: true
+      no_analysis_json_update: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule: tone values are hand-assigned register positions, NOT measured scores; p_value / cohens_d / ci_95 NOT_CALCULATED; is_significant false; engine NOT run; no_analysis_json_update true; artifact_grade false; verdict falsification_member_confirmed on the domain-bounded peg; correlation-not-causation language throughout'
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: '2026-10-10'
+      source_urls:
+      - 'https://www.aitechdaily.com/broadcom-anthropic-60b-chip-debt-syndication/'
+      - 'https://tradersunion.com/news/financial-news/show/3672083-broadcom-ai-chip-financing-60bn/'
+      - 'https://www.tradingview.com/news/benzinga:0f49076c0094b:0-challenging-nvidia-s-dominance-broadcom-pairs-custom-tpu-chips-with-60-billion-debt-package/'
+      - 'https://www.hokanews.com/2026/10/broadcom-wall-street-firms-line-up-over.html'
+      - 'https://www.neoteo.com/en/banks-began-syndicating-broadcom-backed-debt-for-anthropics-chip-lease'
   x_twitter:
     financial_tie: none
     estimated_value: $0
