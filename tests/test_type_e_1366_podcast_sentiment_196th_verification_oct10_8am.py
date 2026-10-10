@@ -229,7 +229,7 @@ PRED_MAIN_1366 = "6e7eefb2d13a4e92411c2d669c88c0d2ccd8608f"
 
 # Forward guard for the next leg: #1367 Type A. Re-pinned by #1367's
 # anchor followup per #721 (starts as 0*40; placeholder-only).
-PRED_MAIN_1367 = "0" * 40
+PRED_MAIN_1367 = "14901df4fb5297b912f752909e1180997635f5d0"
 
 # The #1365 Type D file, for the staleness pin on its guard
 # lifecycle (pre-commit form at this run is "1 failed, 8 passed" -
