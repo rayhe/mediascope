@@ -205,7 +205,7 @@ OWN_BASENAME = (
 # Pre-commit placeholder per #565; patched to the main-commit sha in
 # the anchor followup (post-anchor the placeholder pin fails BY
 # DESIGN).
-ANCHORED_SHA = "0" * 40  # patched to the main-commit sha in the anchor followup per #565
+ANCHORED_SHA = "6e7eefb2d13a4e92411c2d669c88c0d2ccd8608f"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -213,13 +213,19 @@ MECH_NUM = 1045
 NEXT_NUM = 1046  # integer only; key-form needles are format-built
 
 # Predecessor chain: #1365 Type D opened the 1365-1369 window. Its
-# six commits (main/anchor/doc-sync/log-hash/push-status/correction)
-# are pushed and ls-remote-verified.
+# five commits (main/anchor/doc-sync/log-hash/push-status) are
+# pushed and ls-remote-verified.
 PRED_MAIN_1365 = "57c663e26827fe33a3ee327ab1f5727ecde53564"
 PRED_ANCHOR_1365 = "18942de0cff33bbdd9afb6ddf51e719d4b927063"
 PRED_DOCSYNC_1365 = "01373aa74b3ccce5b845abbef635588ead96cd3f"
 PRED_FINAL_1365 = "b5ed446d28486d42b2055d3d2ffb428b5e6a2433"
 PRED_PUSH_1365 = "ec9e2a18f5fd25914036e4db0d8c9f65b1b808e4"
+
+# This run's own main-commit sha, re-pinned per #721 in the anchor
+# followup (the #1365-staged PRED_MAIN_1366 forward guard, 0*40
+# placeholder; the #1365 predecessor file's copy is re-pinned in the
+# terminal log-hash followup per #721/#1292).
+PRED_MAIN_1366 = "6e7eefb2d13a4e92411c2d669c88c0d2ccd8608f"
 
 # Forward guard for the next leg: #1367 Type A. Re-pinned by #1367's
 # anchor followup per #721 (starts as 0*40; placeholder-only).
