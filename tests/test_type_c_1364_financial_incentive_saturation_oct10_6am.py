@@ -153,7 +153,7 @@ PRED_MAIN_1364 = "3d37f36cb816981e4e2f297634f342e7b3fc2034"  # re-pinned to the 
 # log-hash followup per #721. (Type-correct per the #1352
 # type-mismatch lesson: #1365 is Type D, so the pin greps
 # "Type D #1365".)
-PRED_MAIN_1365 = "0" * 40
+PRED_MAIN_1365 = "57c663e26827fe33a3ee327ab1f5727ecde53564"
 
 # The #1363 window-predecessor file, for the staleness pin on its
 # guard-lifecycle class (max id 1045; zero next-number 1046 all forms;
