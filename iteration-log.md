@@ -52220,7 +52220,7 @@ README stats table 80115/1699 -> 80209/1700 (+94/+1); README test-table row; doc
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging: README.md + docs/ARCHITECTURE.md + iteration-log.md in doc-sync). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run): PENDING - four commits staged for push (4f883f95 main + ec1f5de5 anchor + 0f304213 doc-sync + TBD log-hash); explicit https URL rayhe/mediascope-asymmetry.git, IPv6-literal proxy recipe; URL-embedded PAT fallback per the #1371 rc-128 lesson; pushed the local-HEAD refspec per the #1364 precedent; origin is SSH under the insteadOf - never pushed the origin nickname; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846
+Push status (this run): DONE - four commits pushed and ls-remote-verified (4f883f95..2b05d597 HEAD -> main; remote main tip 2b05d59746df823f27ac8e314a633475ab0ed44a matches local HEAD at push time); iteration-log ## #1375 Push status section updated from PENDING to DONE; explicit https URL rayhe/mediascope-asymmetry.git; AUTH NOTE: URL-embedded PAT (built in-script from the clean git-credentials line, never logged) per the #1371 rc-128 lesson - pushed first attempt after the stripped-env TLS failure (retry with proxy env intact); pushed the local-HEAD refspec per the #1364 precedent; origin is SSH under the insteadOf - never pushed the origin nickname; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846
 
 ---
 
