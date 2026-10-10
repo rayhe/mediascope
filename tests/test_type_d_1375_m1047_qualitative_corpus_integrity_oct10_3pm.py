@@ -150,7 +150,7 @@ PRED_MAIN_1375 = "4f883f9557ea526016198ae1d4405b24e58e4ed8"
 
 # Forward guard for the next leg: #1376 Type E. Re-pinned by #1376's
 # anchor followup per #721 (starts as 0*40; placeholder-only).
-PRED_MAIN_1376 = "0" * 40  # re-pinned to the #1376 main sha in #1376's terminal log-hash followup per #721/#1292
+PRED_MAIN_1376 = "1f9d1dd6c56e1fb881cec44eea95ce8e819d1773"  # re-pinned by #1376 terminal log-hash followup per #721/#1292
 
 # The #1374 window-closing file, for the staleness pin on its guard
 # lifecycle (30 tests; post-terminal-followup form is 30 passed - the
