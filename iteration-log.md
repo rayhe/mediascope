@@ -1,11 +1,11 @@
 ## #1364 Type C: financial-incentive saturation screening - NO novel money leg, NO mechanism landed (verdict saturation_screening_no_novel_mechanism) - Type C FIFTH and CLOSING leg of the 1360-1364 window (Oct 10 2026, ~6:00 AM PDT; main commit 3d37f36c / anchor 54b6e31c; doc-sync (this commit); log-hash followup registers all hashes here per #721 (this commit); doc-sync 79148/1688 -> 79216/1689 (+68/+1); in-gate: 58 passed + 10 deselected per the file's own per-test deselect set (TestAnchor1364 1 + TestScoutCorpusBlindness1364 1 + TestGuardLifecycle1364 1 + TestDocSync1364 3 + TestIterationLog1364 3 + TestStalenessPins1364 1; 0 in-gate defects); 68 tests, 10 classes; test-file constants post-sync-positive per #719 (README_TEST_COUNT=79216, README_FILE_COUNT=1689 patched pre-main); #1365 forward guard staged (PRED_MAIN_1365 0*40 placeholder per #721, no-Type-D-#1365 pin - correct type per the #1352 type-mismatch lesson); background-suite verdict belongs to #1365 per #795 (the #1360-launched suite CHECKED ONLY this run - last write Oct 10 03:59 PDT at [3%], zero live pytest processes at this run's ~6:0x AM PDT check; neither re-launched, killed, nor written to); in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846).
 
-- Hash chain: main 3d37f36c / anchor 54b6e31c / doc-sync (this commit) / log-hash (this commit)
+- Hash chain: main 3d37f36c / anchor 54b6e31c / doc-sync da5317a8 / log-hash (this commit)
 
 ### Commit hashes
 - Main commit `3d37f36c` - verified via git rev-parse (full 3d37f36cb816981e4e2f297634f342e7b3fc2034)
 - Anchor followup `54b6e31c` (ANCHORED_SHA patched per #565; PRED_MAIN_1364 re-pinned to 3d37f36cb816981e4e2f297634f342e7b3fc2034 in own file per #721/#1292)
-- Doc-sync (this commit): README 79148/1688 -> 79216/1689; test-table row; ARCHITECTURE tree row; iteration-log entry (this entry)
+- Doc-sync `da5317a8` (README 79148/1688 -> 79216/1689; test-table row; ARCHITECTURE tree row; iteration-log entry)
 - Log-hash followup: (this commit, terminal per #721) - registers main/anchor/doc-sync hashes here; PRED_MAIN_1364 re-pinned to 3d37f36cb816981e4e2f297634f342e7b3fc2034 in BOTH this run's file (anchor followup) and the #1363 predecessor file (this commit) per #721/#1292 (the no-Type-C-#1364-in-git-log pin flips green post-repin in both copies; TestStalenessPins1364 expects 25 passed on TestGuardLifecycle1363 post-terminal)
 
 ### Rotation transparency
