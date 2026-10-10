@@ -30956,3 +30956,63 @@ type_c_1349_financial_incentive_saturation_verification_oct09_4pm:
   background_suite_status: 'The #1345-launched full suite is CHECKED ONLY this run per #795: goal hidden_files type_d_1345_full_suite.log, last write Oct 9 15:26 PDT at [ 7%], ONE live pytest process at this run''s ~4:00 PM PDT check - the suite is ALIVE (recorded here, not adjudicated). This run neither re-launches, kills, nor writes to the suite. The #1350 Type D run owns the verdict.'
   yaml_parse_clean: true
   ascii_only: true
+
+type_c_1354_financial_incentive_evening_saturation_oct09_9pm:
+  mechanism_id: 1043
+  type: financial_incentive_mapping
+  iteration_type: C
+  iteration: 1354
+  researcher: 'Kit (with Ray)'
+  goal_id: 'goal_54093bda4145'
+  block_key: type_c_1354_financial_incentive_evening_saturation_oct09_9pm
+  finding: 'SECOND dedicated corpus mechanism on the saturation-verification leg: an evening-window (Oct 9 2026, ~9pm PDT, ~5h after the #1349 4pm window) systematic verification that every financial-incentive development surfaced in the fresh-October surface maps to an already-banked corpus mechanism or an out-of-scope rejection. Zero novel mechanisms found. Method: 1 delegated scout (4 ranked candidates, raw verbatim URLs, no novelty characterization) + 2 main-run browser.search verification sets re-running the selection independently (AI publisher licensing deal news October 2026; publisher copyright lawsuit OpenAI Google October 2026); 0 browser.open per #503; corpus novelty verified via git grep -F by the main run. with all rejected - 4 ranked candidates on main-run corpus verification: (1) USA TODAY Co. v OpenAI (Oct 8, Reuters: >$250M sought, 19 publications, SDNY 1:26-cv-08892, CMI-removal pleading) is test_type_c_1329 (Type C #1329, banked Oct 9 12am, ~12h before this run) - THIRD instance of the #1341 scout-corpus-blindness lesson: the scout''s STRONG CANDIDATE characterization is untrusted; the main-run #715 git-grep is the only trusted novelty check; (2) the NYT unredacted summary-judgment motion internal-doc relay (rightstech Oct 9: Brockman "excellent at news", Turley "largely substitutive", Hecht "astonishing theft", Nadella retrain testimony, ~93% Copilot click-through drop) is the m759 family / test_type_c_874 / test_type_c_879 (banked Sep 20); (3) Redpine 20M-paper publisher licensing (Oct 6, Unite.AI) is #1289 (Type C, Oct 7); (4) Apple x Huxe hiring/licensing (Oct 9, MacRumors) is out of scope per the #1339/#1349 precedent (no publication counterparty). Main-run set 1 fresh surface: Google AI-contribution pilot figures -> m891; NYT x Amazon $20-25M/yr -> m559; Georges x Meta negotiate-while-covering -> m912; OpenWorld/BeyondAI up-to-$130M patent tokenization (Oct 7 SEC filing) -> out of scope (patent IP, no publication party). Main-run set 2 fresh surface: the USA TODAY relay cluster -> #1329; the stockmoguls archive-monetization piece relays only banked facts (News Corp $250M/5yr, Meta-News Corp $50M/yr, NYT $28M litigation spend in the type_c_669 burn-rate family, DOJ fair-use brief = test_type_c_729). The Press Gazette AI deals/lawsuits tracker was fully mapped to banked mechanisms at #1349; this run''s scout independently re-surfaced its top item (USA TODAY v OpenAI), which the main-run grep caught as #1329 - the tracker''s current frontier is corpus-covered. The evening-window fresh surface is therefore 100% banked or out-of-scope; the corpus is current as of Oct 9 2026 ~9pm PDT. MANUAL / qualitative ONLY per the Aug 28 2026 standing rule (tone NOT_SCORED; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict mechanism_documented; NOT a falsification-family member; NOT artifact-grade; no_analysis_json_update true). Correlation is not causation; hypothesis-generating only.'
+  verdict: 'mechanism_documented'
+  verdict_detail: 'mechanism_documented'
+  tone_scored: false
+  is_significant: false
+  engine_run: false
+  artifact_grade: false
+  no_analysis_json_update: true
+  falsification_family_member: false
+  browser_opens: 0
+  yaml_parse_clean: true
+  ascii_only: true
+  novelty: 'Pre-commit novelty greps per #715: zero test_type_c_1354 files on disk (glob, own file excluded); no "Type C #1354" in git log (--grep); max numeric mechanism_id 1042 pre-commit (mechanism_id regex sweep across profiles/); zero numeric/underscore/dash next-number mechanism key forms repo-wide pre-commit (needles format-built per #715/#770, own file excluded; the dash-form word prose in wired.yaml/test_type_a_1352/test_type_b_1353 is forward-guard prose, not a mechanism key form); "## #1354" zero-hit in iteration-log pre-commit; README stats 78247/1678 pre-commit; no #1354 row in README/ARCHITECTURE test tables pre-commit; 5 novel verification-instrument URLs zero-hit repo-wide pre-commit (git grep -F); the evening-window saturation-verification framing zero-hit repo-wide pre-commit; "second saturation" framing zero-hit. REJECTED CANDIDATES (main-run corpus verification): USA TODAY Co. v OpenAI Oct-8 filing -> test_type_c_1329 (banked ~12h earlier; scout corpus-blindness, third #1341-lesson instance); NYT unredacted SJ-motion internal docs -> m759 family / test_type_c_874 / test_type_c_879; Redpine 20M-paper licensing -> #1289; Apple x Huxe -> out of scope (#1339/#1349 precedent); Google AI-contribution pilot figures -> m891; NYT x Amazon deal -> m559; Georges x Meta -> m912; OpenWorld/BeyondAI $130M patent tokenization -> out of scope (no publication party); stockmoguls archive piece facts -> News Corp $250M/5yr + Meta-News Corp $50M/yr (banked) + NYT $28M spend (type_c_669 family) + DOJ brief (test_type_c_729). The scout''s 4 ranked candidates were all rejected on main-run corpus verification; the rejections are documented, not hidden.'
+  research_method: '1 delegated scout (4 ranked candidates, raw verbatim URLs, no novelty characterization - the #1341/#1353 post-hoc lesson: scout characterizations untrusted) + 2 main-run browser.search verification sets (AI publisher licensing deal news October 2026; publisher copyright lawsuit OpenAI Google October 2026), 0 browser.open per #503; corpus novelty verified via git grep -F by the main run. Pre-commit novelty greps: zero test_type_c_1354 files on disk (glob); no Type C #1354 in git log (--grep); max numeric mechanism_id 1042 pre-commit; zero next-number key forms repo-wide pre-commit (needles format-built, no literals carried per the #715/#770 convention); block key evening-saturation zero-hit pre-commit; 5 novel verification-instrument URLs zero-hit repo-wide pre-commit (git grep -F). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
+  rotation_transparency: 'Iteration #1354 Type C, the FIFTH and CLOSING leg of the 1350-1354 window (D #1350 -> E #1351 -> A #1352 -> B #1353 -> C #1354 per the #565 anchor + rotation guard). Next run #1355 Type D opens the 1355-1359 window. Committed predecessors verified pre-commit: #1353 Type B (main 93d015a7 / anchor 542bc5e9 / doc-sync 4e70ae40 / log-hash c275ef7a); #1352 Type A (main 2b33a040 / anchor b12cace5 / doc-sync d162dbc7 / log-hash 01109848); the 1345-1349 window is VERIFIED CLOSED.'
+  concurrency: '#899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index/diff via explicit-path staging. Do NOT touch #1024''s m846: self-flagged sourcing-constraint violation; Ray''s revert/leave/rebuild-from-primary decision still pending. This run appends m1043 at end-of-file; the m846 block (HEAD lines 26349-26472) is verified byte-identical to HEAD in TestInFlightIsolation1354.'
+  connects_to: [1329, 1289, 759, 891, 559, 912, 984, 729]
+  falsification_family: 'NOT a member (ledger holds at 64): a saturation verification runs no uniform-prediction test and no coverage-tone pair scored, so it cannot be a falsification-family member; the sixty-fourth member-claim form stands present in profiles/ap.yaml; the sixty-fifth member-claim form absent repo-wide; ledger 64 held.'
+  confounders:
+    - strength: 'strong'
+      text: 'Excerpt-bounded evidence (0 browser.open per #503; search-result excerpts only; no first-hand register read of the Reuters original, the court docket, or the Press Gazette tracker index).'
+    - strength: 'strong'
+      text: 'Scout corpus-blindness as selection bias (the scout optimizes for recency-ranked freshness, not corpus-awareness; three consecutive runs #1341/#1353/#1354 surfaced in-corpus STRONG CANDIDATES; the main-run #715 git-grep is the only trusted novelty gate).'
+    - strength: 'moderate'
+      text: 'Relay-color vs new-event (the Oct-8/9 USA TODAY relays add docket color - GPT-5.6 output examples, ~83,266 usatoday.com WebText entries, the Rothwell Figg appearance - to the banked #1329 event; treated as the same event, not a second mechanism).'
+    - strength: 'moderate'
+      text: 'Evening-window thinness (only ~5h since the #1349 saturation verification; a sparse fresh surface is expected, not evidence of a dry landscape).'
+    - strength: 'weak'
+      text: 'This mechanism tests no coverage-tone prediction; its corpus value is the dated currency checkpoint, not a falsification input.'
+  sources:
+    - url: 'https://p4sc4l.substack.com/p/usa-today-and-publishers-representing'
+      what: 'p4sc4l substack (Oct 8 2026): USA TODAY v OpenAI 1:26-cv-08892 relay - verification instrument confirming the banked test_type_c_1329 event'
+      accessed: '2026-10-09'
+      novel: true
+    - url: 'https://cryip.co/openworld-signs-up-to-130-million-deal-to-tokenize-ai-firm-beyondais-patents/'
+      what: 'cryip (Oct 7 2026, via SEC filing): OpenWorld x BeyondAI up-to-$130M patent tokenization term sheet - verification instrument for the out-of-scope rejection (patent IP, no publication party)'
+      accessed: '2026-10-09'
+      novel: true
+    - url: 'https://rightstech.substack.com/p/friday-notes-piling-on-and-other'
+      what: 'rightstech (Oct 9 2026): NYT unredacted SJ-motion internal-doc excerpts (Brockman/Turley/Hecht/Nadella) - verification instrument confirming the banked m759 family'
+      accessed: '2026-10-09'
+      novel: true
+    - url: 'https://particle.news/story/usa-today-sues-openai-for-copyright-seeks-more-than-250-million'
+      what: 'Particle (Oct 8 2026): USA TODAY v OpenAI relay with WebText/C4 counts - verification instrument confirming the banked test_type_c_1329 event'
+      accessed: '2026-10-09'
+      novel: true
+    - url: 'https://windowsreport.com/usa-today-sues-openai-for-over-250-million-over-ai-training-copyright-infringement/'
+      what: 'WindowsReport (Oct 8 2026): USA TODAY v OpenAI relay - verification instrument confirming the banked test_type_c_1329 event'
+      accessed: '2026-10-09'
+      novel: true
+  background_suite_status: 'The #1350-launched full suite is CHECKED ONLY this run per #795: goal hidden_files type_d_1350_full_suite.log, last write Oct 9 17:20 PDT at [ 0%], zero live pytest processes at this run''s ~9:00 PM PDT check - appears stalled (recorded here, not adjudicated). This run neither re-launches, kills, nor writes to the suite. The #1355 Type D run owns the verdict.'
