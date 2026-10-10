@@ -114,7 +114,7 @@ PRED_MAIN_1353 = "93d015a7cf1c72a1caaff6cced5f1c7aefaddb88"  # re-pinned to the 
 # pin (the #1191-class self-trip; #1354 is Type C per the rotation).
 # Staged 0*40 placeholder-only per #721; re-pinned in #1354's terminal
 # log-hash followup per #721.
-PRED_MAIN_1354 = "0" * 40  # staged placeholder per #721; re-pinned in #1354's terminal log-hash followup
+PRED_MAIN_1354 = "caa10633a173828c3461881c936d70404846269f"  # re-pinned to #1354 main sha in the terminal log-hash followup per #721/#1292
 
 # The #1352 window-predecessor file, for the staleness pin on its
 # guard-lifecycle class (max id 1042; zero next-number
