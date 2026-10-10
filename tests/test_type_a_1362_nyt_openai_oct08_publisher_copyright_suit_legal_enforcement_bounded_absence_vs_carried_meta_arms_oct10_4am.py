@@ -128,7 +128,7 @@ OWN_BASENAME = (
 )
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # patched to the main-commit sha in the anchor followup per #565
+ANCHORED_SHA = "330f55d0660e3b7686c8abb07b64f5310845b3b8"  # patched to the main-commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -144,7 +144,7 @@ PRED_DOCSYNC_1361 = "fc74675b"
 # no-Type-A-#1362 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in the anchor followup per #721 (PRED_MAIN_1362 re-pinned
 # in BOTH this file and the #1361 file per the #1292 precedent).
-PRED_MAIN_1362 = "bc362a9bf6becb8350bcfe7884f17d1c46500669"
+PRED_MAIN_1362 = "330f55d0660e3b7686c8abb07b64f5310845b3b8"
 
 # #1363's main commit (full sha), for the ancestor-form no-Type-B-#1363
 # pin. Staged 0*40 placeholder-only per #721; re-pinned in #1363's
