@@ -183,7 +183,7 @@ PRED_MAIN_1383 = "47493cff35df503be4b02893acd8300cd852c1b6"  # re-pinned to the 
 # log-hash followup per #721. (Type-correct per the #1352
 # type-mismatch lesson: #1384 is Type C, so the pin greps
 # "Type C #1384".)
-PRED_MAIN_1384 = "0" * 40  # forward guard for #1384 Type C; re-pinned to the #1384 main sha in #1384's terminal log-hash followup per #721
+PRED_MAIN_1384 = "fd5275768304e483d852c2ec4dbc9db7811abd14"  # re-pinned to the #1384 main sha in #1384's terminal log-hash followup per #721/#1292
 
 # The #1382 window-predecessor file, for the staleness pin on its
 # guard-lifecycle class (max id 1049; zero next-number 1050 all forms;
