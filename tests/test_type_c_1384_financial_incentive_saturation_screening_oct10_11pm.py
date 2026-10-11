@@ -131,7 +131,7 @@ OWN_BASENAME = (
 )
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40  # placeholder pre-commit; patched in the anchor followup
+ANCHORED_SHA = "fd5275768304e483d852c2ec4dbc9db7811abd14"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -157,7 +157,7 @@ PRED_PUSH_1383 = "43c8d58c7ab58a86516f7b00cf0eb498a2229be6"
 # no-Type-C-#1384 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in the anchor followup per #721 (PRED_MAIN_1384 re-pinned
 # in BOTH this file and the #1383 file per the #1292 precedent).
-PRED_MAIN_1384 = "0" * 40  # placeholder pre-commit; re-pinned in the anchor followup per #721
+PRED_MAIN_1384 = "fd5275768304e483d852c2ec4dbc9db7811abd14"  # re-pinned to the #1384 main sha in the anchor followup per #721
 
 # #1385's main commit (full sha), for the ancestor-form no-Type-D-#1385
 # pin (the #1191-class self-trip; #1385 opens the 1385-1389 window as
