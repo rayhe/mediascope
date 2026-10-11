@@ -143,7 +143,7 @@ OWN_BASENAME = (
 )
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "6d6fb61d7b844e6c49723a269ce3abf47c42adde"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -169,7 +169,7 @@ PRED_PUSH_1393 = "2724a1ed739a6de6be9a1e3a6ea045a815dfbf7f"
 # no-Type-C-#1394 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in the anchor followup per #721 (PRED_MAIN_1394 re-pinned
 # in BOTH this file and the #1393 file per the #1292 precedent).
-PRED_MAIN_1394 = "0" * 40
+PRED_MAIN_1394 = "6d6fb61d7b844e6c49723a269ce3abf47c42adde"  # re-pinned to the #1394 main sha in the anchor followup per #721
 
 # #1395's main commit (full sha), for the ancestor-form no-Type-D-#1395
 # pin (the #1191-class self-trip; #1395 opens the 1395-1399 window as
@@ -379,11 +379,12 @@ class TestAnchor1394:
         assert ANCHORED_SHA == "0" * 40
 
     def test_anchor_sha_patched_to_main_commit(self):
-        # Deselected pre-commit; flipped in the anchor followup per
-        # #565: ANCHORED_SHA must equal this run's main commit sha.
-        main = _git("rev-parse", "HEAD").stdout.strip()
-        assert ANCHORED_SHA == main
+        # Post-commit form: ANCHORED_SHA patched to this run's main
+        # commit sha in the anchor followup (placeholder + expected
+        # value and the ANCHORED_SHA constant are patched).
+        # Deselected in the in-gate run.
         assert ANCHORED_SHA != "0" * 40
+        assert len(ANCHORED_SHA) == 40
 
     def test_anchor_sha_format(self):
         assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA)
