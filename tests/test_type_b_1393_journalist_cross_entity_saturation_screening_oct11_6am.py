@@ -68,7 +68,7 @@ OWN_BASENAME = ("test_type_b_1393_journalist_cross_entity_"
                 "saturation_screening_oct11_6am.py")
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "6ff79d844bc5255950379dc8f454ee4587fb2aad"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -91,7 +91,7 @@ PRED_PUSH_1392 = "49b6f5dbc3cb5737c7fe43d90d22c917580a531b"
 # no-Type-B-#1393 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in the anchor followup per #721 (PRED_MAIN_1393 re-pinned
 # in BOTH this file and the #1392 file per the #1292 precedent).
-PRED_MAIN_1393 = "0" * 40
+PRED_MAIN_1393 = "6ff79d844bc5255950379dc8f454ee4587fb2aad"  # re-pinned to the #1393 main sha in the anchor followup per #721/1292
 
 # #1394's main commit (full sha), for the ancestor-form no-Type-C-#1394
 # pin (the #1191-class self-trip; #1394 is Type C per the rotation).
