@@ -4777,6 +4777,119 @@ competitor_relationships:
         - "When Samsung/Google glasses ship (fall 2026), watch whether The Verge publishes a standalone privacy investigation: escalation test of the gradient."
         - "If a Google-glasses misuse incident occurs, Verge escalation vocabulary should match Meta's if the driver is news-peg rather than entity."
       artifact_readiness: "No analysis.json update warranted. Single-article correction with significant=false defines no new artifact-grade tone data."
+    type_a_1377_verge_google_oct08_xreal_aura_android_xr_product_register_vs_carried_meta_arms:
+      mechanism_id: 1048
+      iteration: 1377
+      iteration_type: "A"
+      iteration_time: "2026-10-10 17:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      entity_pair: "Google vs Meta"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        FIRST dedicated Type A mechanism on The Verge's Oct-8-2026 Xreal Aura
+        pre-order launch coverage (Google-built Android XR glasses, $1,279;
+        relay-attested Verge original URL). The piece runs a product-news
+        register: pre-order pricing, configurations, shipping window, and
+        head-to-head positioning against Meta's VR Glasses (spring 2027),
+        with zero privacy or surveillance vocabulary in any relay excerpt,
+        despite camera-equipped AI glasses being the subject. MANUAL
+        ILLUSTRATIVE +0.15. Carried Verge x Meta arm (m841, #1017: Sep-23/24
+        Connect Muse Charm backlash-framed coverage, -0.30, un-rescored per
+        #807): illustrative delta (Google minus Meta) +0.45. The standing
+        coverage_prediction for Verge x Google is ADVERSARIAL (PMC dual
+        Google lawsuits, adversarial_litigation); the adversarial prediction
+        does NOT manifest on the product-launch register. EXTENDS m590 (the
+        adversarial-posture boundary, #592 Sep-7) into the Oct-2026 XR
+        shipping window and ANSWERS m492's testable prediction (no
+        privacy-vocabulary escalation on the shipping peg). Verdict:
+        directionally_supported_not_proven. NOT a falsification-family
+        member: the family is defined on softer-predictions failing; this is
+        an adversarial-prediction non-manifestation on the product register,
+        a distinct lineage. Ledger holds at 65.
+      new_evidence:
+        title: "Xreal Aura pre-order launch (Verge Oct-8-2026)"
+        publication: "The Verge"
+        date: "2026-10-08"
+        url_verbatim: "https://www.theverge.com/news/1006207/google-xreal-aura-glasses-price-release-date-preorder"
+        attestation: "Relay-attested via https://genainews.tech/xreal-opens-aura-pre-orders-at-1-279-undercutting-meta-vr-glasses/ (verbatim URL citation: Source reference https://www.theverge.com/news/1006207/google-xreal-aura-glasses-price-release-date-preorder; prepared in original wording using reporting and materials published by The Verge). Corroborating relays: https://playtechdeep.blog/2026/10/08/vr-news-for-october-08-2026-meta-is-working-on-a-virtual-cinema-environment-for-quest-vr-glasses/ (The Verge's supplied headline positions it for a head-to-head comparison with Meta's VR Glasses); https://www.iphoneincanada.ca/2026/10/08/xreal-aura-xr-glasses-pre-orders/ (developed alongside Google and Qualcomm; Google's Android XR platform, Gemini AI). 0 browser.open per #503. Byline unattested in relay excerpts (gap noted)."
+        novelty: "URL zero-hit repo-wide pre-commit (git grep -F). FIRST Verge-original on the Oct-8 Aura launch in corpus (m928 is Gizmodo Sep-23; the Sep-17 androidpolice Aura hands-on is carried in profiles/careers/journalists.yaml)."
+        register: "Product-news: pricing ($1,279 base / $1,499 16GB+512GB), pre-order gating (paid reservations before Oct 7), shipping window, head-to-head vs Meta VR Glasses positioning. Zero privacy or surveillance vocabulary in all relay excerpts."
+        tone_manual_illustrative: 0.15
+      carried_meta_arms:
+        - "m841 (#1017): Verge Sep-23/24-2026 Connect Muse Charm backlash-framed coverage, MANUAL ILLUSTRATIVE -0.30, un-rescored per #807"
+        - "m628 (#657): Verge Snap Specs shipping-phase vs Meta LED-tamper surveillance register (the Verge surveillance-register precedent on Meta)"
+      asymmetry_scoring_manual_illustrative:
+        target_entity: "Google (Xreal Aura Android XR launch, Verge Oct-8)"
+        target_score_manual_illustrative: 0.15
+        peer_entity: "Meta (Connect Muse Charm, Verge Sep-23/24)"
+        peer_score_manual_illustrative: -0.30
+        delta_manual_illustrative: 0.45
+        direction: "target softer than peer by 0.45"
+        scorer: "mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative"
+        significant: false
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        empirical_required: true
+        note: "MANUAL ILLUSTRATIVE not empirical: n=1 fresh target arm vs carried peer arms; illustrative only per the Aug 28 2026 standing rule. Engine NOT run at the finding layer."
+      statistical_discipline: "MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; verdict monitoring_only; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only."
+      verdict: "directionally_supported_not_proven"
+      falsification_family: "NOT a member - adversarial-prediction non-manifestation on the product register (distinct lineage from the softer-prediction falsification family); ledger holds at 65; SIXTY-SIXTH member-form absent repo-wide"
+      distinct_from_prior: >
+        Distinct from m590 (#592, Sep-7: May-Jul 2026 Verge Google arms,
+        adversarial-posture boundary) - new event peg (Oct-8 Aura launch),
+        temporal extension per the #1143 precedent (fresh peg, not a
+        re-score). Distinct from m492 (#492: Jul-22 Preston Samsung/Google
+        dek privacy equivalence) - new peg and register (shipping-phase
+        product news vs dek correction); answers m492's testable prediction
+        (no privacy-vocabulary escalation on the shipping peg). Distinct from
+        m928 (Gizmodo Sep-23 Aura/Specs comparison) and the Sep-17
+        androidpolice Aura hands-on (different publications).
+      confounders:
+        strong:
+          - "Relay attestation only: no verbatim Verge body; characterization bounded to relay excerpts per #503."
+          - "Entity attribution: Aura hardware is Xreal-built; Google supplies Android XR plus Gemini. Claim bounded to Google-as-platform."
+          - "Genre and peg mismatch: product-launch news (Google) vs Connect backlash framing (Meta); register follows peg (m637/m852 precedent)."
+        moderate:
+          - "Byline unattested in relay excerpts; cannot test journalist-level variance."
+          - "Single fresh target arm (n=1); no time series on the Aura peg."
+        weak:
+          - "Hand-assigned illustrative tones."
+      counter_evidence:
+        - "m492's Jul-22 dek DID name privacy problems for Google/Samsung glasses - the product register is not uniformly privacy-silent."
+        - "PMC's dual Google lawsuits are active; litigation-domain coverage remains adversarial by plaintiff position (m590 domain bound)."
+      financial_context: >
+        Verge x Google: adversarial_litigation (PMC v. Google AI Overviews
+        D.D.C. Sep 2025; PMC/SheMedia v. Google adtech SDNY Jan 2026);
+        coverage_prediction adversarial. Observed: product-neutral register
+        on Google's Android XR launch vehicle, markedly softer than the Meta
+        comparator. The adversarial posture does not bleed into the
+        product-launch register. Correlation only, not proof of editorial
+        influence.
+      cross_references:
+        - "m590 (#592: adversarial-posture boundary; this run extends it)"
+        - "m492 (#492: dek privacy equivalence; testable prediction answered)"
+        - "m841 (#1017: carried Verge x Meta arm, -0.30)"
+        - "m628 (#657: Verge surveillance-register precedent on Meta)"
+        - "m928 (Gizmodo x Snap Aura/Specs comparison, distinct publication)"
+      testable_predictions:
+        - "When Samsung's Warby Parker/Gentle Monster Android XR glasses launch (November 2026 per Korea Herald relay), watch the Verge register: product-news vs privacy-vocabulary."
+        - "If an Aura/XR misuse incident occurs, Verge escalation vocabulary should match Meta's if the driver is news-peg rather than entity (m492 prediction restated)."
+      artifact_readiness: "No analysis.json update warranted. Single fresh arm, significant=false, relay-attested; defines no new artifact-grade tone data."
+      author: "Kit (with Ray)"
+      cautious_language:
+        manual_illustrative_label: "MANUAL ILLUSTRATIVE"
+        correlation_not_causation: true
+        no_editorial_control_claim: true
+        no_statistical_significance_claim: true
+        significant_empirical_false: true
+        significant_false: true
+        p_value_not_calculated: true
+        ci_not_calculated: true
+        cohens_d_not_calculated: true
+        requires_empirical_validation: "Full Verge body text plus human annotation; Welch t-test on observed article-level tone scores"
   microsoft:
     financial_tie: "licensing"
     estimated_value: "usage-based (undisclosed)"
