@@ -99,7 +99,7 @@ OWN_BASENAME = (
 # Pre-commit placeholder per #565; patched to the main-commit sha in
 # the anchor followup (post-anchor the placeholder pin fails BY
 # DESIGN).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "eb474941dc0dce1e7b6ee3fa189f63e2c69e2c5b"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -124,7 +124,7 @@ PRED_PUSH_1391 = "bc753ab37cfa39ff516b9eaf91b36b9507c3b877"
 # This run's own main-commit sha, re-pinned per #721 in the anchor
 # followup (the #1391 predecessor file's copy is re-pinned in the
 # terminal log-hash followup per #721/#1292).
-PRED_MAIN_1392 = "0" * 40  # re-pinned by #1392 anchor followup per #721
+PRED_MAIN_1392 = "eb474941dc0dce1e7b6ee3fa189f63e2c69e2c5b"  # re-pinned by #1392 anchor followup per #721
 
 # Forward guard for the next leg: #1393 Type B. Re-pinned by #1393's
 # anchor followup per #721 (starts as 0*40; placeholder-only).
