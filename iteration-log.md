@@ -42,7 +42,7 @@ README stats table 80321/1701 -> 80438/1702 (+117/+1); README test-table row; do
 #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all left out of this run's index/diff (explicit-path staging: test file + the-verge.yaml in main; anchor followup test file only; README.md + docs/ARCHITECTURE.md + iteration-log.md in doc-sync). #1024 m846 (profiles/competitor-entities.yaml) NOT touched - decision pending.
 
 ### Push status
-Push status (this run): PENDING
+Push status (this run): DONE - four commits pushed and ls-remote-verified (f324251e..efa8c243 HEAD -> main; remote main tip efa8c2439d02e26438f881016c2fe30f7e852d4d matches local HEAD at push time); iteration-log ## #1377 Push status section updated from PENDING to DONE; explicit https URL rayhe/mediascope-asymmetry.git; AUTH NOTE: URL-embedded PAT (built in-script from the clean git-credentials line, never logged) per the #1371 rc-128 lesson - pushed first attempt (proxy env intact); pushed the local-HEAD refspec per the #1364 precedent; origin is SSH under the insteadOf - never pushed the origin nickname; in-flight #899/#938/#900/#1012-wt untouched; do NOT touch #1024 m846
 
 ---
 
