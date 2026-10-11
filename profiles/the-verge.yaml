@@ -3881,6 +3881,129 @@ competitor_relationships:
       research_method: '4 browser.search query sets this run (theverge.com Anthropic September 2026 IPO Claude; The Verge Anthropic slowdown Amodei September 2026; The Verge Claude Cowork launch Anthropic agent September 2026; theverge.com Anthropic IPO $2 trillion September 2026). 0 browser.open (excerpt-bounded per #503). Pre-commit novelty greps: zero test_type_a_1087 files on disk (glob); no "Type A #1087" in git log (--grep); block key zero-hit repo-wide pre-commit; max numeric mechanism_id 882 pre-commit; zero underscore-form and dash-form 883 mechanism key strings repo-wide pre-commit (format-built needles per #715, __pycache__ excluded); zero numeric 883 mechanism_id keys in profiles/ pre-commit; both Anthropic URLs zero-hit repo-wide pre-commit; Meta arms carried per the m880 register-continuity pattern (not novel, disclosed). All URLs copied verbatim from Full-URL listings; no canonical URLs constructed. ASCII-only, no em dashes.'
       novelty: 'test_type_a_1087 files on disk pre-commit: zero; no "Type A #1087" in git log pre-commit: absent; block key unique repo-wide pre-commit: zero hits; max numeric mechanism_id 882 pre-commit; zero underscore-form 883 keys repo-wide pre-commit (format-built needles); zero dash-form 883 references pre-commit; zero numeric 883 mechanism_id keys in profiles/ pre-commit; both Anthropic URLs zero-hit repo-wide pre-commit; Meta arms carried per the m880 register-continuity pattern (not novel, disclosed).'
       new_test_file: 'tests/test_type_a_1087_verge_anthropic_pacing_policy_register_extension_sep30_midnight.py'
+    type_a_1382_verge_anthropic_sep29_ipo_filing_pair_publication_level_control_case_vs_carried_meta_arms:
+      mechanism_id: 1049
+      iteration: 1382
+      iteration_type: "A"
+      iteration_time: "2026-10-10 21:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      entity_pair: "Anthropic vs Meta"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        FIRST publication-level Type A mechanism on The Verge's Sep-29-2026
+        Anthropic IPO-filing pair (Jess Weatherbed): (A1) the $4.6B-revenue /
+        $42B-loss piece (loss-multiplier headline, $8.06B operating losses
+        foregrounded, editorial closer on profitability, MANUAL ILLUSTRATIVE
+        -0.50); (A2) the catastrophic-risk-filing piece (risk-framing lede:
+        mounting losses, leadership proposals to retain power, the filing's
+        own harm-risk admission, MANUAL ILLUSTRATIVE -0.45). Relay-attested
+        (0 browser.open per #503); the canonical theverge.com URLs did not
+        surface, not landed per policy. Carried Verge x Meta arms (m841 #1017
+        Sep-23/24 Connect Muse Charm -0.30; m628 #657 surveillance register),
+        un-rescored per #807. Illustrative Anthropic arm mean -0.475 vs Meta
+        -0.30: delta (Anthropic minus Meta) -0.175 - the $0-tie non-deal lab
+        draws the HARDER register. Publication-level control-case extension
+        of m557's neutral-prediction finding (aspirational register on
+        milestones, hard register on adversarial pegs; peg valence drives
+        register, not the financial tie) and of m968's journalist-level
+        boundary case to the publication level. NOT a falsification-family
+        member; ledger holds at 65; SIXTY-SIXTH member-form absent repo-wide.
+      new_evidence:
+        title: "Anthropic Sep-29-2026 IPO-filing pair (Verge, Jess Weatherbed)"
+        publication: "The Verge"
+        date: "2026-09-29"
+        attestation: "Relay-attested. A1 byline and excerpts via http://muckrack.com/jess-weatherbed/articles (the author's own Muck Rack profile lists the piece 'Posted Sep 29, 2026 at 12:40 PM UTC' with verbatim excerpt; the canonical theverge.com URL did not surface, not landed per policy). A2 verbatim Verge lede via https://techseen.com/story/anthropic-s-ipo-filing-shows-soaring-revenue-mounting-costs-and-existe-6ce54d1 (story record: 'Attributed report: The Verge'). Corroborating relays: https://www.ainformed.dev/articles/2026-09-29-anthropic-warns-of-catastrophic-ai-risks-in-ipo-filing (dual-class share structure detail) and https://saascity.io/blog/anthropic-ipo-prospectus-saas-founders-2026 (Sep-29 date, internal-testing behaviors). 0 browser.open per #503. Byline Jess Weatherbed attested via the Muck Rack profile listing; bounded byline-certainty stated as confounder."
+        novelty: "ainformed.dev and saascity.io URLs zero-hit repo-wide pre-commit (git grep -F). The techseen URL is in-corpus via m968 (journalist-level, profiles/careers/journalists.yaml) but absent from the-verge.yaml publication profile pre-commit - FIRST publication-level landing. The muckrack profile URL is a pre-existing corpus byline-attestation source (m968), cited as attestation only."
+        arm_a1:
+          title: "Anthropic made $4.6 billion in revenue last year, but lost $42 billion."
+          byline: "Jess Weatherbed"
+          date: "2026-09-29"
+          key_quotes: "Loss-multiplier headline: 'Anthropic made $4.6 billion in revenue last year, but lost $42 billion.' Leak attribution: 'according to a leaked IPO filing seen by Reuters, with $8.06 billion specifically highlighted in operating losses for 2025, more than double the $2.98 billion it reported in 2024.' Editorial closer: 'The AI startup spent $7.33 billion on compute and infrastructure in 2025, and plans to spend a further $518 billion over the coming years, so profitability seems a long, long way off for Anthropic.'"
+          tone_manual_illustrative: -0.50
+          register: "Adversarial-leaning financial news; the loss figure leads the revenue figure in the headline, operating-loss doubling is foregrounded, and the piece closes with an editorial profitability verdict."
+        arm_a2:
+          title: "Anthropic warns of 'catastrophic' AI risks in its own IPO filing"
+          byline: "Jess Weatherbed"
+          date: "2026-09-29"
+          key_quotes: "Risk-framing lede: 'As Anthropic gears up for its greatly anticipated public debut, a preview of the company's IPO filing reportedly details its mounting losses, leadership proposals to retain power, and how its AI development plans could further increase the risk that our models cause harm.' Corroborated: dual-class share structure proposals to retain control over AI safety decisions (ainformed.dev); internal-testing disturbing behaviors - resist shutdown, conceal or manipulate information, resembling blackmail, sabotaged code (saascity.io)."
+          tone_manual_illustrative: -0.45
+          register: "Safety-scrutiny news; the filing's own risk admissions are foregrounded with loss and governance framing."
+      carried_meta_arms:
+        - "m841 (#1017): Verge Sep-23/24-2026 Connect Muse Charm backlash-framed coverage, MANUAL ILLUSTRATIVE -0.30, un-rescored per #807"
+        - "m628 (#657): Verge Snap Specs shipping-phase vs Meta LED-tamper surveillance register (the Verge surveillance-register precedent on Meta)"
+      asymmetry_scoring_manual_illustrative:
+        target_entity: "Anthropic (Sep-29 IPO-filing pair, Verge Weatherbed)"
+        target_score_manual_illustrative: -0.475
+        peer_entity: "Meta (Connect Muse Charm, Verge Sep-23/24)"
+        peer_score_manual_illustrative: -0.30
+        delta_manual_illustrative: -0.175
+        direction: "target harder than peer by 0.175"
+        scorer: "mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative"
+        significant: false
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci_95: "NOT_CALCULATED"
+        empirical_required: true
+        note: "MANUAL ILLUSTRATIVE not empirical: n=2 fresh target arms vs carried peer arms; illustrative only per the Aug 28 2026 standing rule. Engine NOT run at the finding layer."
+      statistical_discipline: "MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; engine NOT run; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; verdict monitoring_only; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only."
+      verdict: "directionally_supported_not_proven"
+      falsification_family: "NOT a member - control-case temporal and register extension of m557 (neutral prediction; peg valence drives register) and publication-level extension of m968 (journalist-level boundary case); the uniform payer-softening prediction is untested here (Anthropic is not the deal partner); ledger holds at 65; SIXTY-SIXTH member-form absent repo-wide"
+      distinct_from_prior: >
+        Distinct from m557 (#557, Sep-6: Verge Anthropic milestone arms -
+        IPO filing Jun-1, Pentagon solidarity, EU watermarking - aspirational
+        register) - new adversarial peg (Sep-29 leaked financials) and hard
+        register; temporal and register extension, not a re-score. Distinct
+        from m968 (#1228, journalist-level: Weatherbed same-day symmetric
+        adversarial pair, boundary/control, ledger held at 50) - this run
+        lifts the pair to the publication level. Distinct from m517
+        (#517, Guardian x Anthropic piracy editorial) - different
+        publication, different peg.
+      extends_prior: >
+        Extends m968 (Type B #1228) from the journalist level to the
+        publication level: the same Sep-29 Weatherbed Anthropic pair now
+        carries a publication-level control-case mechanism. Extends m557's
+        neutral-prediction control case onto the adversarial peg.
+      confounders:
+        strong:
+          - "Relay attestation only: no verbatim Verge body; characterization bounded to relay excerpts per #503."
+          - "Peg asymmetry: the Anthropic arms are leaked-financials news while the carried Meta arms are product-launch/backlash news; register follows peg valence."
+          - "Single byline: both Anthropic arms carry the Jess Weatherbed byline, so outlet-level variance is untested beyond m968's journalist-level finding."
+        moderate:
+          - "Canonical theverge.com URLs did not surface; byline attested via the author's Muck Rack profile listing only."
+          - "n=2 target arms vs carried peer arms; single-day design."
+        weak:
+          - "The $2T valuation figure is investor-projection, not company guidance; register reading is unaffected."
+      counter_evidence:
+        - "m965 (Allison Johnson, The Verge, Type B #1223): the same outlet's reporter applied the enterprise-competent register to OpenAI Dots (+0.25, deal partner) vs the playful-diminutive register to Meta Muse (-0.20), confirming the payer-softening direction at the byline level - the deal effect is journalist-contingent, consistent with m968's refinement."
+        - "m557's milestone arms (IPO filing +0.25, Pentagon solidarity +0.30) show the same outlet running an aspirational register on Anthropic when the peg is a milestone - the hard register here is peg-contingent, not entity-fixed."
+      financial_context: >
+        Verge-Anthropic direct financial tie: $0 (no known content-licensing
+        relationship; bounded absence). Vox Media x OpenAI strategic content
+        and product partnership (May 29 2024) is with Anthropic's chief
+        rival, not Anthropic. Meta-Vox: $0. The outlet-level
+        coverage_prediction for anthropic is neutral (m557 control case).
+        No financial predictor is under test in this pair; the mechanism is
+        a control-case extension against financial determinism. The standing
+        coverage_prediction neutral for the anthropic entity holds.
+      cross_references: [557, 968, 841, 628, 517, 965, 494, 766, 880]
+      testable_predictions:
+        - "When Anthropic's November 2026 IPO marketing begins, the Verge's register on Anthropic should track peg valence (milestone/aspirational vs adversarial/hard) rather than shifting uniformly softer or harder."
+        - "A Weatherbed OpenAI arm on the same leaked-financials peg would test the deal-partner prediction directly; m968 noted it as the missing direct test."
+      artifact_readiness: "No analysis.json update warranted. Illustrative-only pair, significant=false, relay-attested; defines no new artifact-grade tone data."
+      author: "Kit (with Ray)"
+      cautious_language:
+        manual_illustrative_label: "MANUAL ILLUSTRATIVE"
+        correlation_not_causation: true
+        no_editorial_control_claim: true
+        no_statistical_significance_claim: true
+        significant_empirical_false: true
+        significant_false: true
+        p_value_not_calculated: true
+        ci_not_calculated: true
+        cohens_d_not_calculated: true
+        requires_empirical_validation: "Full Verge body text plus human annotation; Welch t-test on observed article-level tone scores"
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
