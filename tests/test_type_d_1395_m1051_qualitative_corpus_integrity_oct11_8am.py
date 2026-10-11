@@ -413,15 +413,16 @@ class TestAnchor1395:
 
     def test_anchor_sha_patched_to_main_commit(self):
         # Post-commit form: ANCHORED_SHA patched to this run's main
-        # commit (asserted against git rev-parse once the constant is
-        # patched; pre-commit this is the 0*40 placeholder).
-        # Deselected in the in-gate run (fails pre-commit by design).
-        main = _git("rev-parse", "HEAD").stdout.strip()
-        assert ANCHORED_SHA == main
+        # commit sha in the anchor followup (placeholder + expected
+        # value and the ANCHORED_SHA constant are patched; asserts
+        # patched non-placeholder, not HEAD equality, per the
+        # #1392/#1393/#1394 corrected form).
+        # Deselected in the in-gate run.
+        assert ANCHORED_SHA != "0" * 40
         assert len(ANCHORED_SHA) == 40
 
     def test_anchor_sha_format(self):
-        assert len(ANCHORED_SHA) == 40
+        assert re.fullmatch(r"[0-9a-f]{40}", ANCHORED_SHA)
 
     def test_anchor_duality_documented(self):
         # The placeholder/patched duality is documented in the
