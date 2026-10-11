@@ -178,7 +178,7 @@ PRED_MAIN_1376 = "1f9d1dd6c56e1fb881cec44eea95ce8e819d1773"  # re-pinned by #137
 # Forward guard for the next leg: #1377 Type A (starts as 0*40;
 # placeholder-only; re-pinned to the #1377 main sha in #1377's
 # terminal log-hash followup per #721/#1292).
-PRED_MAIN_1377 = "0" * 40
+PRED_MAIN_1377 = "f324251e7223d7337fff25071477e7ac376bb87a"
 
 # The #1375 Type D file, for the staleness pin on its guard
 # lifecycle (post-terminal form at this run is "9 passed" - the

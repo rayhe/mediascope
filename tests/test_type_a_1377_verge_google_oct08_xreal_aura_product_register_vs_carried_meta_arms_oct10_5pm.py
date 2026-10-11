@@ -710,9 +710,9 @@ class TestIterationLog1377:
         src = _read(ITERLOG_PATH)
         assert "log-hash" in src
 
-    def test_log_mentions_mechanism_1048(self):
+    def test_log_mentions_m1048(self):
         src = _read(ITERLOG_PATH)
-        assert "m1048" in src or "mechanism 1048" in src
+        assert "m1048" in src
 
 
 # ---------------------------------------------------------------------------
@@ -776,13 +776,17 @@ class TestConfounders1377:
 
 class TestStalenessPins1377:
     def test_1376_guard_lifecycle_post_terminal_followup(self):
-        # Post-terminal-followup form: all 26 pass. The
+        # Post-terminal-followup form: 25 passed, 1 failed. The
         # no_type_a_1377_in_git_log forward pin flips green in this
         # run's terminal log-hash followup per #721/#1292 (PRED_MAIN_1377
-        # re-pinned in the #1376 file). The 1049-form pins stay green
+        # re-pinned in the #1376 file). The ONE failure is the
+        # #1272-class forward-guard expiry, DOCUMENTED not repaired
+        # per precedent: test_1048_numeric_absent_in_profiles trips on
+        # the landed m1048 block (mechanism_id: 1048 now committed in
+        # profiles/the-verge.yaml). The 1049-form pins stay green
         # throughout (this run lands m1048, not m1049); the member and
         # direction pins stay green (no member, no direction landed this
-        # run). The #1376 block is read-only to this run; the flip is
+        # run). The #1376 block is read-only to this run; the expiry is
         # documented here, not repaired. Deselected pre-commit
         # (verified only post-terminal-followup).
         r = subprocess.run(
@@ -793,7 +797,8 @@ class TestStalenessPins1377:
             capture_output=True, text=True, timeout=300, cwd=REPO_ROOT,
         )
         tail = r.stdout.strip().splitlines()[-1]
-        assert "26 passed" in tail, tail
+        assert "25 passed" in tail and "1 failed" in tail, tail
+        assert "test_1048_numeric_absent_in_profiles" in r.stdout
 
 
 # ---------------------------------------------------------------------------
