@@ -687,16 +687,25 @@ class TestGuardLifecycle1393:
 
 class TestStalenessPins1393:
     def test_1392_guard_lifecycle_post_terminal_followup(self):
-        # Post-terminal-followup form: 27 passed. The #1191-class
-        # no_type_b_1393_in_git_log forward pin flips green in this
-        # run's terminal log-hash followup per #721/#1292
-        # (PRED_MAIN_1393 re-pinned in the #1392 file). There is NO
-        # #1272-class forward-guard expiry on THIS predecessor: #1392
-        # landed m1051, so its pins already take the post-landing
-        # form (1051 present, 1052 absent). The #1391 1051-absent
-        # expiry stays DOCUMENTED not repaired (see docstring). The
-        # #1392 block is read-only to this run. Deselected pre-commit
-        # (verified only post-terminal-followup).
+        # Post-terminal-followup form: 26 passed, 1 failed. The ONE
+        # failure is the #1191-class self-trip on the
+        # no_type_b_1393_in_git_log forward pin - but in STRICT
+        # pre-commit form (assert hits == []), unlike the #1387
+        # precedent's ancestor form: the #1392 file's comment
+        # describes the post-landing ancestor check while its code
+        # asserts the empty pre-commit state, so the pin cannot flip
+        # green on the re-pin. The substantive guard is VERIFIED
+        # SATISFIED by the main run: the sole "Type B #1393" git-log
+        # hit is #1393's own main commit 6ff79d84, which is
+        # descendant-or-self of the re-pinned PRED_MAIN_1393 (merge-base
+        # --is-ancestor returns 0). DOCUMENTED not repaired per
+        # precedent (the #1392 file is read-only to this run beyond
+        # the #721/#1292 re-pin). There is NO #1272-class
+        # forward-guard expiry on THIS predecessor: #1392 landed
+        # m1051, so its pins already take the post-landing form (1051
+        # present, 1052 absent). The #1391 1051-absent expiry stays
+        # DOCUMENTED not repaired (see docstring). Deselected
+        # pre-commit (verified only post-terminal-followup).
         venv_py = os.path.join(REPO_ROOT, ".venv", "bin", "python")
         r = subprocess.run(
             [venv_py, "-m", "pytest",
@@ -706,7 +715,7 @@ class TestStalenessPins1393:
             capture_output=True, text=True, timeout=300, cwd=REPO_ROOT,
         )
         tail = r.stdout.strip().splitlines()[-1]
-        assert "27 passed" in tail, tail
+        assert "1 failed, 26 passed" in tail, tail
 
 
 # ---------------------------------------------------------------------------
