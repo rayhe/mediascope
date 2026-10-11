@@ -177,7 +177,7 @@ PRED_MAIN_1394 = "6d6fb61d7b844e6c49723a269ce3abf47c42adde"  # re-pinned to the 
 # re-pinned in #1395's terminal log-hash followup per #721. (Type-
 # correct per the #1352 type-mismatch lesson: #1395 is Type D, so the
 # pin greps "Type D #1395".)
-PRED_MAIN_1395 = "0" * 40
+PRED_MAIN_1395 = "2573f3c5e1a4cbd869ec9743358b54cc08a9f008"  # re-pinned to the #1395 main sha in #1395 terminal log-hash followup per #721/#1292
 
 # The #1393 Type B file, for the staleness pin on its guard-lifecycle
 # class (max id 1051 landed; zero next-number 1052 all forms;
