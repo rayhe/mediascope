@@ -656,7 +656,7 @@ class TestStalenessPins1397:
             capture_output=True, text=True, timeout=300, cwd=REPO_ROOT,
         )
         tail = r.stdout.strip().splitlines()[-1]
-        assert "25 passed, 2 failed" in tail, tail
+        assert "2 failed, 25 passed" in tail, tail
         # Substantive-guard verification for the two strict-form
         # self-trips (the run-time receipts, not just documentation).
         for needle, pred in (("Type E #1396", "PRED_MAIN_1396"),
