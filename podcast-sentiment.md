@@ -18839,3 +18839,27 @@ Two-hundred-first quoted-search no-match as a podcast: the quoted query returned
 ### Test file
 
 - tests/test_type_e_1391_podcast_sentiment_201st_verification_oct11_5am.py
+
+## Iteration #1396 - Two-hundred-second Cycle (Oct 11 2026, ~8:35 AM PDT)
+
+### The Guilty Feminist
+
+EPISODE 503 HOLDS as newest - thirty-third full verification since its first surfacing at #1236 (~142 hours after the Oct-5-11:00am publication; sixty-ninth Type E verification since the Sep-28 11:00am 502 release, ~310 hours after publication). The 7-row GF search set = 5 re-surface rows + 2 new-to-corpus verbatim URL keys, every key verified zero pre-commit corpus hits via git grep -F repo-wide: the podbay.fm/p/the-guilty-feminist episode page (a June 2024 episode - new URL, no new fact) and the new TikTok video ID 7644829508314369313 (promo clip - new URL, no new fact; the other TikTok video ID in the set re-surfaced via the video-ID check per the #1381 precedent; the e-space.mmu.ac.uk thesis PDF re-surfaced via #1381). No 504 anywhere. The GF pure-re-surface streak, which ADVANCED to three at #1391, BREAKS at three and RESTARTS at one at #1396 (per the #1336 precedent).
+
+ZERO Meta/wearables content in any GF episode across all 202 cycles (bounded search-result absence).
+
+### Everyone Hates Elon
+
+63-day hold continues (Aug 10 Epstein spoof -> Oct 11; date(2026,10,11)-date(2026,8,10)=63 days). The 7 main-run rows: the techtimes.co.uk amnesty-boxes piece (in corpus), the singulism.com bus-stop piece (in corpus), the community.designtaxi.com 34124 Epstein-ad thread (in corpus), the en.softonic.com Epstein-image piece (in corpus), the thetimes.com spoof-Epstein piece (in corpus), the walletinvestor.com NYT-stock piece (in corpus - the EHE mention in the "Meta draws heat on two fronts" sidebar), and the community.designtaxi.com 33476 Kylie-hijack piece (in corpus). 7 main-run rows, all in corpus. ZERO new-to-corpus verbatim URL keys this run. "Glasses for people who don't do consent." remains the primary motif. No new primary campaign phase. No competitor-equivalent guerrilla campaign against Apple/Google/Samsung/Snap camera wearables in any of the 202 cycles (bounded search-result absence).
+
+### Attention Sphere
+
+Two-hundred-second quoted-search no-match as a podcast: the quoted query returned no matching podcast; 7 result rows this run, all this repository's own GitHub commit URLs (a2b656f0 the #566 Type E 36th-cycle commit, 15a0edae the #666 Type E 56th-cycle commit, fe4528b5 the #561 Type E 35th-cycle commit, d5c8f702 the #711 Type E 65th-cycle commit, cc60b6e1 the #626 Type E 48th-cycle commit, 3d16eacf the #536 Type E 30th-cycle commit, ee24bc1 the #1031 Type E 129th-cycle diff commit - the #1346-family variant surface set; each git-cat-file-verified present in the repo git log, still circular as evidence), rejected as circular, not ingested. No delegated scout this run (retry attempt; main-run sets only per the #1376 retry precedent - nothing to distrust, everything main-run verified per the #1341 lesson). dec56140 did NOT surface this run - its absence streak ADVANCES to thirty-five (surfaced at #1221, ending the fifteenth consecutive absence streak at 15; #1226 restarted the streak at one; #1321 advanced it to twenty; #1326 to twenty-one; #1331 to twenty-two; #1336 to twenty-three; #1341 to twenty-four; #1346 to twenty-five; #1351 to twenty-six; #1356 to twenty-seven; #1361 to twenty-eight; #1366 to twenty-nine; #1371 to thirty; #1376 to thirty-one; #1381 to thirty-two; #1386 to thirty-three; #1391 to thirty-four). The podcast-sentiment.md blob did NOT surface this run. 16611229 absent. Task-spec name remains misidentified as a podcast. Real-world identity stands per #591 (advocacy group, named ED Kendall Schrohe). Tracked Sources advanced 201->202.
+
+### Press surfaces
+
+7 main-run rows = 6 re-surfaces + 1 new-to-corpus verbatim URL key, the new key verified zero pre-commit corpus hits via git grep -F repo-wide. The 6 re-surfaces: the arcane-refraction.net Norway Storting piece (in corpus via #1366 - the #1366 NEW key re-surfacing), the recul.ai Norway piece (in corpus via #1391 - the #1391 NEW key re-surfacing), the myprivacy.blog Norway piece (in corpus via #1391 - the #1391 NEW key re-surfacing), the thenyledger.com/markets/ Norway piece (in corpus via #1361 - the #1361 NEW key re-surfacing), the bworldonline.com Norway Reuters-syndication piece (in corpus via #1371 - the #1371 NEW key re-surfacing), and the losangelesweeklytimes.com Norway piece (in corpus via the #1301 in-corpus variant - the #1301 NEW key re-surfacing). The 1 new key: https://srnnews.com/norway-to-propose-temporary-ban-on-ai-glasses-in-some-public-places/ (the SRN News Oct-5 Reuters relay by Stine Jacobsen - relays the Oct-5 proposal; new URL, no new fact). All snippet-bounded. The press pure-re-surface streak, which BROKE at one at #1391 and RESTARTED at one at #1391, BREAKS at one at #1396 and RESTARTS at one at #1396 (per the #1336 precedent). The recency frontier HOLDS at Oct 11 (per the #1191 precedent - the new key is an Oct-5-era relay, not newer than the Oct 11 frontier). The ~Oct-13 convergence holds: Consumentenbond ~Oct-13 ultimatum, Ray-Ban Meta Audio Oct-13 ship date, WA school ban Oct-12 start. Meta-exclusive privacy-pressure framing continues across all 202 cycles: competitor camera wearables remain unscrutinized. Snippet-bounded, tone NOT_SCORED per the standing rule.
+
+### Test file
+
+- tests/test_type_e_1396_podcast_sentiment_202nd_verification_oct11_8am.py
