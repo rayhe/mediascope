@@ -133,7 +133,7 @@ LOG_PATH = os.path.join(REPO_ROOT, "iteration-log.md")
 OWN_BASENAME = "test_type_b_1378_journalist_cross_entity_saturation_screening_oct10_6pm.py"
 
 # Patched per #565 in the anchor followup (main commit sha).
-ANCHORED_SHA = "0" * 40
+ANCHORED_SHA = "606ca07822b406280840567e044ff02e70576a4f"  # patched to the main commit sha in the anchor followup per #565
 
 MECH_ID_MARKER = "mechanism" + "_"  # built at runtime per #770
 
@@ -156,7 +156,7 @@ PRED_PUSH_1377 = "22550b66aeab4053aba01c7f3acc2b7887100e97"
 # no-Type-B-#1378 pin. Staged 0*40 placeholder-only per #721;
 # re-pinned in the anchor followup per #721 (PRED_MAIN_1378 re-pinned
 # in BOTH this file and the #1377 file per the #1292 precedent).
-PRED_MAIN_1378 = "0" * 40
+PRED_MAIN_1378 = "606ca07822b406280840567e044ff02e70576a4f"  # re-pinned to the #1378 main sha in the anchor followup per #721/#1292
 
 # #1379's main commit (full sha), for the ancestor-form no-Type-C-#1379
 # pin (the #1191-class self-trip; #1379 is Type C per the rotation).
