@@ -36,6 +36,7 @@ README stats table 82178/1720 -> 82275/1721 (+97/+1); README test-table row; doc
 
 ### Background suite (per #795)
 - The #1395-launched full suite runs at goal hidden_files type_d_1395_full_suite.log: this run OBSERVES only (neither re-launches, kills, nor writes to the suite). Observed at this run's check (dots accumulating, 1 live pytest process at the ~8:35 AM PDT check - alive and progressing, not adjudicated). The verdict and tombstone belong to #1400 per #795.
+- Addendum (~8:50 AM PDT, post-terminal): at the post-terminal verification check the suite is OBSERVED likely-dead - last write Oct 11 08:38 PDT at [ 1%], zero live pytest processes at the ~8:50 AM PDT check (~12 min stale, no summary tokens). NOT adjudicated this run (verdict and tombstone belong to #1400 per #795); the stale-stream recurring-failure triage belongs to #1400's Type D run. The observed pytest-adjacent process at 15:46 UTC belongs to a different cron (ig-glasses-abuse monitor), not this suite.
 - TestStalenessPins1396 (this run, post-terminal): "9 passed" on TestGuardLifecycle1395 - both the #1191-class self-trip pins (the no_type_d_1395 own pin and the no_type_e_1396 forward pin, both ancestor-form per #1395) flip green post-repin per #721/#1292. All 1052-absent pins green; forty-eighth through sixty-fifth member pins green; no-sixty-sixth pin green; ledger-65 pin green.
 
 ### Concurrency
