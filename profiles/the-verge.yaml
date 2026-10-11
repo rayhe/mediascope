@@ -3333,6 +3333,87 @@ competitor_relationships:
       concurrency: 'The in-flight runs are the #899 Type C block (m771, uncommitted hunk in profiles/nytimes.yaml), the #938 Type B test file (uncommitted working-tree edit), the #900 Type D test file (untracked, on disk) and the #1012 working-tree edit of the committed Type A #1012 test file - all UNCOMMITTED. This run does NOT touch the in-flight files (the m982 block lands in profiles/the-verge.yaml competitor_relationships.openai); targeted staging only. Do NOT touch #1024''s m846 (profiles/competitor-entities.yaml): Ray''s revert/leave/rebuild decision still pending.'
       in_flight: "#899/#938/#900/#1012-wt in-flight untouched; #1024 m846 not touched (this run appends to profiles/the-verge.yaml, not competitor-entities.yaml)."
       test_file: tests/test_type_a_1252_verge_openai_oct05_safety_week_accountability_cluster_oct06_12am.py
+    type_a_1392_verge_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms:
+      mechanism_id: 1051
+      block_key: type_a_1392_verge_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms
+      key_design_note: 'Designed keying per #723/#738/#739: the block key carries the iteration (1392), never the mechanism number; keeps the numeric/underscore/dash one-zero-five-two sweep instruments green while mechanism_id advances in colon form.'
+      date_analyzed: '2026-10-11'
+      type: 'Type A - Competitor Coverage Deep Dive'
+      iteration: 1392
+      iteration_type: 'A'
+      iteration_time: '2026-10-11 06:00 PDT'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      publication_focus: 'The Verge'
+      publication: 'The Verge'
+      competitor: 'openai'
+      competitor_pair: 'The Verge x OpenAI'
+      entity_pair: 'OpenAI vs Meta'
+      author: 'Kit (with Ray)'
+      window: '1390-1394 window, THIRD leg (D #1390 -> E #1391 -> A #1392 -> B #1393 -> C #1394 per the #565 anchor + rotation guard)'
+      design: 'Product-launch register comparison on a fresh peg: The Verge covers its licensing-deal partner OpenAI on the Oct-7/8-2026 GPT-6 Intelligent UI launch with a straight product-news register, versus the carried backlash-framed register on Meta (m841, -0.30). Relay-attested only (0 browser.open per #503, excerpt-bounded); the verbatim theverge.com canonical URL arrived inside two independent relay snippets, landed per the m1048 precedent with provenance disclosed, not repaired.'
+      distinct_from_prior: 'Not m1050 (#1387, WIRED x OpenAI on the SAME Oct-7/8 GPT-6 Intelligent UI peg) - this run is the cross-publication replication on the second deal-partner outlet (Vox/The Verge x OpenAI May-2024 deal), testing whether the soft product-launch register is WIRED-house-style or deal-partner-wide. Not the Verge Astra-safety arc (Aug-7-to-Sep-6-2026, this file lines 2783+, adversarial safety register on the payer - that arc is carried here as counter-evidence bounding the softening to the product-launch register). Not m1049 (#1382, Verge x Anthropic Sep-29 IPO-filing pair, different entity, harder register -0.475). Not m1048 (#1377, Verge x Google Oct-8 Xreal Aura, different entity). Not m1252 (Verge x OpenAI Oct-5 safety-week cluster, falsification member, different peg and register). The #1143 temporal-replication precedent does not block: fresh outlet-peg combination, unbanked pre-commit.'
+      extends_prior: 'Extends the m1050 product-launch register line (WIRED x OpenAI GPT-6 vs Meta) onto the second deal-partner publication; extends m841 as the standing Verge x Meta comparator.'
+      discovery_summary: 'FIRST Verge-leg product-launch register comparison on the Oct-7/8 GPT-6 Intelligent UI peg: straight product-news register (+0.10 MANUAL ILLUSTRATIVE) vs carried Meta -0.30 (m841); illustrative delta +0.40, payer softer; cross-publication replication of m1050.'
+      finding: 'The Verge applies a straight product-news register to its licensing-deal partner on the Oct-7/8-2026 GPT-6 Intelligent UI launch, materially softer than its carried backlash-framed register on Meta. A1 (NEW): The Verge Oct-7 piece headlined "ChatGPT''s ''Intelligent UI'' update fills its responses with pictures, charts, and buttons" (relay-attested via five relays + the verbatim canonical URL quoted in two independent snippets): rollout mechanics (GPT-6 Sol for paid tiers Oct 7, GPT-6 Luna for Free/Go Oct 8, 1.2B weekly users), competitive context ("more graphics-heavy and colorful" than Google''s Gemini generative interface), and a stronger-safety-training note - zero adversarial vocabulary, zero skepticism about OpenAI''s claims, zero privacy or surveillance framing. MANUAL ILLUSTRATIVE ONLY: OpenAI arm +0.10 vs carried Verge x Meta Connect Muse Charm arm -0.30 (m841 #1017, un-rescored per #807); illustrative delta (OpenAI minus Meta) +0.40 - the payer draws the softer register on the product peg. The naive uniform payer-softening prediction (Vox Media x OpenAI May-2024 licensing deal predicts softer OpenAI coverage) is MET, not falsified, on the product-launch register; the cross-publication replication (m1050 WIRED +0.53, this run Verge +0.40, same peg) suggests the softness is deal-partner-wide, not WIRED-house-style. Verdict thesis_consistent_observation; NOT a falsification-family member; ledger holds at 65; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      verdict: 'thesis_consistent_observation'
+      falsification_family: 'NOT a member of the falsification family (payer-softening prediction met on the product-launch register; straight product-news register with no adversarial elements; cross-publication replication of m1050); ledger holds at 65; sixty-sixth member-claim form absent repo-wide; fortieth direction absent.'
+      new_evidence:
+        attestation: 'Relay attestation only, 0 browser.open per #503 (excerpt-bounded). A1: The Verge Oct-7-2026 GPT-6 Intelligent UI piece - headline and verbatim canonical URL https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6 quoted in the https://www.youtube.com/shorts/po-OAKfcuUU description snippet ("The Verge, ''ChatGPT''s ''Intelligent UI'' update fills its responses with pictures, charts, and buttons'' (Oct. 7, 2026)") and independently in the https://github.com/guzus/ai-research-arm/blob/HEAD/research/2026-10-08-ai-news.md digest snippet (canonical URL landed per the m1048 precedent: verbatim in two independent snippets, zero corpus hits pre-commit, not in this run''s Full-URL listings - provenance disclosed, not repaired). Register excerpts: "The Verge reported that this arrives alongside two tuned versions of GPT-6. Paid plans receive GPT-6 Sol. Free and Go tiers get the lighter GPT-6 Luna" and "The Verge noted the rollout targets ChatGPT''s weekly audience of more than 1.2 billion users" via https://www.webpronews.com/openais-gpt-6-overhauls-chatgpt-with-interactive-visual-answers-2/ (RE-SURFACE, in corpus via m1050); "One OpenAI example, as The Verge reports it: ask about a seven-speed bicycle and ChatGPT draws a diagram with buttons that highlight different parts" and "Mid-range is The Verge''s word for Sol" via https://badsignal.ai/stories/chatgpt-intelligent-ui-gpt6 (NEW); "The Verge reports that OpenAI trained GPT-6 on when to produce interactive visuals instead of text" via https://fairgatereport.com/openai-brings-gpt-6-to-chatgpt-with-new-intelligent-ui-for-visual-answers (NEW); "The Verge noted that OpenAI''s version appears more graphics-heavy and colorful. It also arrives with stronger safety training" via the webpronews relay (competitive-context framing, not adversarial); "Photo: The Verge" credit via https://letsdatascience.com/news/openai-brings-gpt-6-and-intelligent-ui-to-chatgpt-4f0d797c (NEW). Corroborating relay: https://tech-insider.org/gpt-6-intelligent-ui-rollout-2026/ (RE-SURFACE via m1050: "The Verge''s reporting on the update noted that this pairs GPT-6 Sol and GPT-6 Luna with the new interface layer"). All Full-URL-listed URLs copied verbatim; bounded search-result absence, not proof.'
+        arm_a1:
+          label: 'Verge Oct-7 Intelligent UI launch piece (product-news)'
+          key_quotes: 'ChatGPT''s ''Intelligent UI'' update fills its responses with pictures, charts, and buttons; The Verge reported that this arrives alongside two tuned versions of GPT-6; GPT-6 Sol for paid tiers; GPT-6 Luna for Free and Go; The Verge noted the rollout targets ChatGPT''s weekly audience of more than 1.2 billion users; more graphics-heavy and colorful; stronger safety training; Mid-range is The Verge''s word for Sol'
+          score_manual_illustrative: 0.10
+        novelty: '5 relay URLs zero-hit repo-wide pre-commit (git grep -F at HEAD): badsignal.ai, fairgatereport.com, youtube.com/shorts/po-OAKfcuUU, guzus/ai-research-arm 2026-10-08 digest URL, letsdatascience.com. 2 re-surfaces (webpronews -2 and tech-insider.org, both in corpus via m1050 #1387). The verbatim theverge.com canonical URL zero-hit repo-wide pre-commit. The Oct-7/8 GPT-6 Intelligent UI Verge-leg peg unbanked pre-commit; block key zero-hit repo-wide pre-commit.'
+      asymmetry_scoring_manual_illustrative:
+        target_score_manual_illustrative: 0.10
+        peer_score_manual_illustrative: -0.30
+        delta_manual_illustrative: 0.40
+        direction: 'target softer than peer by 0.40'
+        significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py (manual illustrative scores only; engine NOT run per the Aug-28 standing rule)'
+      carried_meta_arms:
+        - 'm841 #1017 -0.30 Verge Sep-23/24-2026 Connect Muse Charm backlash-framed coverage (un-rescored per #807)'
+        - 'm628 #657 Verge Snap Specs shipping-phase vs Meta LED-tamper surveillance register (the Verge surveillance-register precedent on Meta)'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; tone NOT_SCORED by engine; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict monitoring_only; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only.'
+      artifact_readiness: 'No analysis.json update warranted: single product-register observation on a relay-attested peg; monitoring-only.'
+      cautious_language:
+        correlation_not_causation: true
+        no_editorial_control_claim: true
+        no_statistical_significance_claim: true
+        significant_false: true
+        p_value_not_calculated: true
+        ci_not_calculated: true
+        cohens_d_not_calculated: true
+      confounders:
+        strong:
+          - 'Peg asymmetry: product-launch register (OpenAI) vs backlash-event register (Meta m841) - the delta partly reflects peg valence, not just the financial tie.'
+          - 'Relay attestation only: no direct Verge text read; the register is reconstructed from five third-party relay excerpts, which may select quotes.'
+          - 'Single fresh arm (n=1): one Verge piece on the peg; single-story variance moves the mean.'
+        moderate:
+          - 'Launch-week timing: day-1/2 coverage skews positive across outlets; the carried Meta arm is not launch-week.'
+          - 'Byline unattested in the relay excerpts (gap noted).'
+        weak:
+          - 'Canonical URL arrived via relay snippets, not the Full-URL listings (provenance disclosed per the m1048 precedent).'
+      counter_evidence:
+        - 'The Verge Astra-safety arc (Aug-7-to-Sep-6-2026, this file): the outlet ran skeptical pause reportage, safety-disaster alarm, and messy-rollout execution critique on the SAME deal partner - the softening is bounded to the product-launch register, not blanket.'
+        - 'm1252 (#1252): the Verge Oct-5 safety-week cluster on OpenAI ran adversarial (-0.52) symmetric with Meta (-0.55) - falsification member; the payer-softening prediction FAILS on safety/accountability pegs at this outlet.'
+        - 'm1049 (#1382): the same outlet scored Anthropic (non-payer) -0.475 on the IPO-filing peg - harder than the Meta arm; peg valence drives register at The Verge.'
+      financial_context: 'Vox Media x OpenAI content licensing deal (May 2024, VentureBeat; in-corpus the-verge.yaml competitor_relationships.openai; coverage_prediction "softer"); PMC acquired Vox Media in 2026 (deal status carried). Meta $0 tie, coverage_prediction adversarial on the surveillance register.'
+      cross_references: [1050, 1049, 1048, 841, 628, 880, 1252, 907]
+      testable_predictions:
+        - 'If The Verge publishes a Meta product-launch piece in the next window, the Meta arm should score harder (more negative) than -0.20 on the comparable launch register.'
+        - 'If The Verge follows up the GPT-6 launch with an accountability-peg original (accuracy audit), the tone should converge toward the Astra-arc adversarial register, narrowing the +0.40 delta.'
+      research_method: '3 main-run browser.search verification sets (The Verge OpenAI GPT-6 launch October 2026; WIRED Anthropic October 2026 - REJECTED, own-repo circular + third-party relays, no WIRED original; quoted Verge GPT-6 Intelligent UI October 7 2026 reporting - SELECTED the Oct-7 Verge piece via five relays) + git grep -F novelty verification on every candidate URL, 0 browser.open per #503. Snippet-bounded; Full-URL-listed URLs copied verbatim; the canonical theverge.com URL quoted verbatim in two independent relay snippets (landed per the m1048 precedent); bounded search-result absence, not proof.'
+      novelty: 'Zero test_type_a_1392 files on disk pre-commit (glob); no "Type A #1392" in git log pre-commit (--grep); max numeric mechanism_id 1050 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-five-two mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F; designed keying: iteration 1392 in key, no 1051 substring); 5 relay URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); 2 re-surfaces disclosed (webpronews -2, tech-insider.org via m1050); "## #1392" zero-hit in iteration-log pre-commit; README stats 81768/1716 pre-commit; no #1392 row in README/ARCHITECTURE test tables pre-commit; fortieth direction form absent in profiles/ pre-commit; 48th-65th members intact; no 66th member; ledger 65. ASCII-only, no em dashes.'
+      new_test_file: 'tests/test_type_a_1392_verge_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms_oct11_6am.py'
+      test_file: 'tests/test_type_a_1392_verge_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms_oct11_6am.py'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging (profiles/the-verge.yaml m1051 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (profiles/competitor-entities.yaml untouched).'
+      status: 'landed'
   meta:
     financial_tie: "none"
     estimated_value: "$0"
