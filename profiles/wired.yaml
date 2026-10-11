@@ -3407,6 +3407,90 @@ competitor_relationships:
       concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging per the repo-wide traversal lesson (profiles/wired.yaml m1042 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (Ray''s revert/leave/rebuild decision pending; profiles/competitor-entities.yaml untouched).'
       test_file: 'tests/test_type_a_1352_wired_openai_oct08_09_governance_accountability_bounded_absence_vs_carried_meta_arms_oct09_7pm.py'
       status: 'landed'
+    type_a_1387_wired_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms:
+      mechanism_id: 1050
+      block_key: type_a_1387_wired_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms
+      key_design_note: 'Designed keying per #723/#738/#739: the block key carries the iteration (1387), never the mechanism number; keeps the numeric/underscore/dash one-zero-five-zero sweep instruments green while mechanism_id advances in colon form.'
+      date_analyzed: '2026-10-11'
+      type: 'Type A - Competitor Coverage Deep Dive'
+      iteration: 1387
+      iteration_type: 'A'
+      iteration_time: '2026-10-11 01:00 PDT'
+      scheduled_job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      publication_focus: 'WIRED'
+      publication: 'WIRED'
+      competitor: 'openai'
+      competitor_pair: 'WIRED x OpenAI'
+      entity_pair: 'OpenAI vs Meta'
+      author: 'Kit (with Ray)'
+      window: '1385-1389 window, THIRD leg (D #1385 -> E #1386 -> A #1387 -> B #1388 -> C #1389 per the #565 anchor + rotation guard)'
+      design: 'Product-launch register comparison on a fresh peg: WIRED covers its licensing-deal partner OpenAI on the Oct-7/8-2026 GPT-6 Intelligent UI launch with a mixed register (positive hands-on plus skeptical analysis), versus the carried hard-accountability register on Meta (m988, -0.58). Relay-attested only (0 browser.open per #503, excerpt-bounded); no WIRED canonical URL surfaced in the bounded surface, disclosed not repaired.'
+      distinct_from_prior: 'Not m1042 (#1352, WIRED x OpenAI Oct-8/9 governance-accountability bounded-absence selection test, different peg and different axis); not m991 (#1267, WIRED x OpenAI Dots agent-launch register, different launch peg); not m1027 (#1327, WIRED x OpenAI Oct-6/7 product-review adversarial originals, tone on published originals not launch-register comparison); not m988 (#1262, WIRED x Meta arm - that is the carried comparator here, not the finding). The #1143 temporal-replication precedent does not block: fresh peg (Oct-7/8 GPT-6 Intelligent UI launch, unbanked pre-commit) and first WIRED-leg launch-register comparison on this peg.'
+      extends_prior: 'Extends the m991 product-launch register line (WIRED x OpenAI Dots vs Meta Muse dossier) onto the Oct-2026 GPT-6 Intelligent UI peg; extends m988''s WIRED x Meta hard-accountability arm as the standing comparator.'
+      discovery_summary: 'FIRST WIRED-leg product-launch register comparison on the Oct-7/8 GPT-6 Intelligent UI peg: mixed register (hands-on +0.10, analysis -0.20, mean -0.05) vs carried Meta -0.58 (m988); illustrative delta +0.53, payer softer; extends m991.'
+      finding: 'WIRED applies a mixed-to-soft product-launch register to its licensing-deal partner on the Oct-7/8-2026 GPT-6 Intelligent UI launch, materially softer than its carried hard-accountability register on Meta. A1 (NEW): Reece Rogers hands-on, headlined "The New ChatGPT Is More Show Than Tell" (relay-attested via the Muck Rack byline listing + webpronews + findskill.ai): positive hands-on verdict - "These visual elements felt like a welcome change" - on the seat-explorer and apartment-affordability demos; the relay notes WIRED is the only outlet so far with a published hands-on test, and reads it as "a short qualitative try-out, not an accuracy audit". A2 (NEW): WIRED launch analysis questioning "how much of Intelligent UI is genuine capability versus presentation polish" (relay-attested via tech-insider.org), a skepticism the relay says is "worth keeping in mind alongside the rollout numbers". MANUAL ILLUSTRATIVE ONLY: OpenAI arm mean -0.05 (A1 +0.10, A2 -0.20) vs carried WIRED x Meta Muse dossier arm -0.58 (m988 #1262, un-rescored per #807); illustrative delta (OpenAI minus Meta) +0.53 - the payer draws the softer register on the product peg. The naive uniform payer-softening prediction (Conde Nast x OpenAI Aug-2024 licensing deal predicts softer OpenAI coverage) is MET, not falsified, on the product-launch register; the skeptical headline and the polish-questioning bound the softening as relative (vs Meta''s -0.58), not absolute. Verdict thesis_consistent_observation; NOT a falsification-family member; ledger holds at 65; NOT artifact-grade; no analysis.json update. Correlation is not causation; hypothesis-generating only.'
+      verdict: 'thesis_consistent_observation'
+      falsification_family: 'NOT a member of the falsification family (payer-softening prediction met on the product register; mixed register with genuine skeptical elements, not a clean failure of the prediction); ledger holds at 65; sixty-sixth member-claim form absent repo-wide; fortieth direction absent.'
+      new_evidence:
+        attestation: 'Relay attestation only, 0 browser.open per #503 (excerpt-bounded). A1: Reece Rogers WIRED hands-on "The New ChatGPT Is More Show Than Tell" - headline via https://muckrack.com/reece-rogers/articles ; hands-on verdict "These visual elements felt like a welcome change" via https://www.webpronews.com/openais-gpt-6-overhauls-chatgpt-with-interactive-visual-answers-2/ ; "the only outlet that has so far published a hands-on test" and "a short qualitative try-out, not an accuracy audit" via https://findskill.ai/blog/chatgpt-gpt-6-free-intelligent-ui-what-changed-2026/ . A2: WIRED analysis questioning "how much of Intelligent UI is genuine capability versus presentation polish" via https://tech-insider.org/gpt-6-intelligent-ui-rollout-2026/ . No WIRED canonical URL surfaced in the bounded 4-set surface; canonical-URL gap disclosed, not repaired. All URLs copied verbatim from the browser.search Full-URL listings; bounded search-result absence, not proof.'
+        arm_a1:
+          label: 'Rogers hands-on (positive)'
+          key_quotes: 'These visual elements felt like a welcome change; The New ChatGPT Is More Show Than Tell; the only outlet that has so far published a hands-on test'
+          score_manual_illustrative: 0.10
+        arm_a2:
+          label: 'WIRED launch analysis (skeptical)'
+          key_quotes: 'how much of Intelligent UI is genuine capability versus presentation polish; worth keeping in mind alongside the rollout numbers'
+          score_manual_illustrative: -0.20
+        novelty: 'All 4 relay URLs zero-hit repo-wide pre-commit (git grep -F at HEAD); the Oct-7/8 GPT-6 Intelligent UI launch peg unbanked pre-commit (no gpt-6 sol/luna or intelligent-ui peg in profiles/); block key zero-hit repo-wide pre-commit.'
+      asymmetry_scoring_manual_illustrative:
+        target_score_manual_illustrative: -0.05
+        peer_score_manual_illustrative: -0.58
+        delta_manual_illustrative: 0.53
+        direction: 'target softer than peer by 0.53'
+        significant: false
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci_95: 'NOT_CALCULATED'
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py (manual illustrative scores only; engine NOT run per the Aug-28 standing rule)'
+      carried_meta_arms:
+        - 'm988 #1262 -0.58 WIRED x Meta Muse dossier accountability (un-rescored per #807)'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY per the Aug 28 2026 standing rule; tone NOT_SCORED by engine; p_value/cohens_d/ci_95 NOT_CALCULATED; is_significant false; engine NOT run; verdict monitoring_only; NOT artifact-grade; no_analysis_json_update true. Correlation is not causation; hypothesis-generating only.'
+      artifact_readiness: 'No analysis.json update warranted: single mixed-register observation on a relay-attested peg; monitoring-only.'
+      cautious_language:
+        correlation_not_causation: true
+        no_editorial_control_claim: true
+        no_statistical_significance_claim: true
+        significant_false: true
+        p_value_not_calculated: true
+        ci_not_calculated: true
+        cohens_d_not_calculated: true
+      confounders:
+        strong:
+          - 'Peg asymmetry: product-launch register (OpenAI) vs accountability-dossier register (Meta m988) - the delta partly reflects peg valence, not just the financial tie.'
+          - 'Relay attestation only: no WIRED canonical URL surfaced; the skeptical-vs-positive balance is read through third-party relays, which may select quotes.'
+          - 'Single-outlet pair: WIRED-only comparison; no cross-publication control on the GPT-6 launch peg in this run.'
+        moderate:
+          - 'Rogers hands-on exclusivity (only outlet with a hands-on) may reflect access journalism dynamics rather than softening.'
+          - 'Launch-week timing: day-1/2 coverage skews positive across outlets (embargoed demos); the Meta arm is not launch-week.'
+        weak:
+          - 'GPT-6 Sol vs Luna tiering nuance absent from the relay excerpts.'
+      counter_evidence:
+        - 'm1027 (#1327): WIRED ran adversarial originals on OpenAI Oct-6/7 (Isabella Ward mathematicians piece) - the outlet does go hard on the payer on other registers, bounding the softening claim to the product-launch register.'
+        - 'm1042 (#1352): WIRED ran a bounded-absence selection test on the OpenAI firings - selection asymmetry, not tone softening; the two findings coexist on different axes.'
+        - 'The "More Show Than Tell" headline and polish-questioning are genuinely skeptical elements inside the OpenAI arm itself.'
+      financial_context: 'Conde Nast x OpenAI multi-year content licensing deal (Aug 20 2024, Reuters; in-corpus wired.yaml ownership_chain; $1-5M/yr estimate); wired.yaml competitor_relationships.openai coverage_prediction "softer"; Meta $0 tie, coverage_prediction "adversarial".'
+      cross_references: [1042, 991, 988, 1027, 946, 916]
+      testable_predictions:
+        - 'If WIRED publishes a Meta product-launch piece in the next window, the Meta arm should score harder (more negative) than -0.30 on the comparable launch register.'
+        - 'If WIRED follows up the GPT-6 launch with an accountability-peg original (accuracy audit), the tone should converge toward the m1027 adversarial register, narrowing the +0.53 delta.'
+      research_method: '4 main-run browser.search verification sets (WIRED GPT-6 OpenAI launch; Reece Rogers GPT-6 Intelligent UI hands-on; WIRED GPT-6 analysis presentation polish; Anthropic IPO November 2026 - rejected, stale peg + #1382 saturation) + git grep -F novelty verification on every candidate URL, 0 browser.open per #503. Snippet-bounded; all URLs copied verbatim from the browser.search Full-URL listings; bounded search-result absence, not proof.'
+      novelty: 'Zero test_type_a_1387 files on disk pre-commit (glob); no "Type A #1387" in git log pre-commit (--grep); max numeric mechanism_id 1049 in profiles/ pre-commit (mechanism_id regex sweep); zero numeric/underscore/dash one-zero-five-one mechanism key forms repo-wide pre-commit (needles format-built per #715, own file excluded); block key zero-hit repo-wide pre-commit (git grep -F; designed keying: iteration 1387 in key, no 1050 substring); 4 relay URLs zero-hit repo-wide pre-commit (git grep -F on verbatim Full-URL listings); "## #1387" zero-hit in iteration-log pre-commit; README stats 81270/1711 pre-commit; no #1387 row in README/ARCHITECTURE test tables pre-commit; fortieth direction form absent in profiles/ pre-commit; 48th-65th members intact; no 66th member; ledger 65. ASCII-only, no em dashes.'
+      new_test_file: 'tests/test_type_a_1387_wired_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms_oct11_1am.py'
+      test_file: 'tests/test_type_a_1387_wired_openai_oct07_08_gpt6_intelligent_ui_launch_register_vs_carried_meta_arms_oct11_1am.py'
+      concurrency: 'Concurrency: #899 (profiles/nytimes.yaml m771 hunk), #938 (Type B test file working-tree edit), #900 (untracked Type D test file), #1012-wt (working-tree edit on the committed Type A #1012 file) all stay out of this run''s index and diff; targeted staging (profiles/wired.yaml m1050 hunk + new test file staged by explicit path). Do NOT touch #1024 m846 (profiles/competitor-entities.yaml untouched).'
+      status: 'landed'
   meta:
     financial_tie: none
     estimated_value: $0
