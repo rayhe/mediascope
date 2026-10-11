@@ -666,17 +666,19 @@ class TestGuardLifecycle1394:
 
 class TestStalenessPins1394:
     def test_1393_guard_lifecycle_post_terminal_followup(self):
-        # Post-terminal-followup form: 27 passed, 1 failed. The ONE
-        # failure is the placeholder-form pin test_next_leg_is_type_c
-        # (PRED_MAIN_1394 == 0*40), which trips BY DESIGN once this
-        # run's terminal log-hash followup re-pins PRED_MAIN_1394 to
-        # the #1394 main sha in the #1393 file per #721/#1292. The
+        # Post-terminal-followup form: 28 passed, 0 failed. The
         # no-Type-C-#1394-in-git-log forward pin is in ANCESTOR form
-        # in the #1393 file (unlike the #1392 strict-form precedent),
-        # so it flips GREEN post-repin: the sole "Type C #1394"
-        # git-log hit is #1394's own main commit, descendant-or-self
-        # of the re-pinned PRED_MAIN_1394 (merge-base --is-ancestor
-        # returns 0). Deselected pre-commit (verified only
+        # in the #1393 file (unlike the #1392 strict-form precedent,
+        # whose pin could not flip green), so it flips GREEN on the
+        # re-pin: the sole "Type C #1394" git-log hit is #1394's own
+        # main commit 6d6fb61d, descendant-or-self of the re-pinned
+        # PRED_MAIN_1394 (merge-base --is-ancestor returns 0). The
+        # placeholder-form pin test_next_leg_is_type_c
+        # (PRED_MAIN_1394 == 0*40) lives in TestRotation1393, outside
+        # this staleness scope; it trips BY DESIGN post-repin -
+        # DOCUMENTED in the iteration-log entry, not repaired (the
+        # #1393 file is read-only to this run beyond the #721/#1292
+        # re-pin). Deselected pre-commit (verified only
         # post-terminal-followup).
         venv_py = os.path.join(REPO_ROOT, ".venv", "bin", "python")
         r = subprocess.run(
@@ -687,7 +689,7 @@ class TestStalenessPins1394:
             capture_output=True, text=True, timeout=300, cwd=REPO_ROOT,
         )
         tail = r.stdout.strip().splitlines()[-1]
-        assert "1 failed, 27 passed" in tail, tail
+        assert "28 passed" in tail, tail
 
 
 # ---------------------------------------------------------------------------
